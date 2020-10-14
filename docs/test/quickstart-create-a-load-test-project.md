@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d883d531737caf32ec202955ff951382b5ff9009
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75566409"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928579"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Schnellstart: Erstellen eines Auslastungstestprojekts
 
@@ -78,7 +78,7 @@ In diesem Abschnitt wird das Erstellen eines Auslastungstestprojekts in C# erlä
 
    Der **Assistent für neuen Auslastungstest** wird geöffnet.
 
-1. Wählen Sie die Option **Lokaler Auslastungstest** aus, und klicken Sie dann auf **Weiter**. Weitere Informationen über cloudbasierte Auslastungstests finden Sie [hier](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+1. Wählen Sie die Option **Lokaler Auslastungstest** aus, und klicken Sie dann auf **Weiter**. Weitere Informationen über cloudbasierte Auslastungstests finden Sie [hier](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
    ![Erste Seite des Assistenten für neuen Auslastungstest](media/load-test-wizard-page-1.png)
 

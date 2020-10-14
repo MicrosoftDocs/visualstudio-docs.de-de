@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950609"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862436"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installieren von Visual Studio 2017 für Mac
 
@@ -68,7 +68,7 @@ Damit Visual Studio unter iOS funktioniert, benötigen Sie Folgendes:
       - Vollständig plattformübergreifende Xamarin-Apps: Wählen Sie die Plattformen **Android**, **iOS** und **macOS** aus.
    * **.NET Core-Anwendungen**: Wählen Sie die **.NET Core**-Plattform aus.
    * **ASP.NET Core-Webanwendungen**: Wählen Sie die **.NET Core**-Plattform aus.
-   * **Entwicklung von plattformübergreifenden Unity-Spielen**: Neben Visual Studio für Mac müssen keine zusätzlichen Plattformen installiert werden. Weitere Informationen zur Installation der Unity-Erweiterung finden Sie im [Leitfaden zur Einrichtung von Unity](/visualstudio/mac/setup-vsmac-tools-unity).
+   * **Entwicklung von plattformübergreifenden Unity-Spielen**: Neben Visual Studio für Mac müssen keine zusätzlichen Plattformen installiert werden. Weitere Informationen zur Installation der Unity-Erweiterung finden Sie im [Leitfaden zur Einrichtung von Unity](./setup-vsmac-tools-unity.md).
 
    Auf dieser Installationsseite wird die Version und Größe jeder einzelnen Komponente angezeigt. Sie können auf jede Komponente klicken, um eine Liste mit deren Abhängigkeiten (für Android), zusätzliche heruntergeladenen Pakete (für .NET Core) oder zusätzliche erforderliche Anwendungen (für iOS und macOS) anzuzeigen.
 
@@ -120,7 +120,7 @@ Die Installation von Visual Studio für Mac ermöglicht Ihnen das Schreiben von 
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Entwicklung von .NET Core-Apps, ASP.NET Core-Web-Apps und Unity-Spielen
 
-Informationen zu anderen Workloads finden Sie auf der Seite zu den [Workloads](/visualstudio/mac/workloads).
+Informationen zu anderen Workloads finden Sie auf der Seite zu den [Workloads](./workloads.md).
 
 ## <a name="related-video"></a>Zugehörige Videos
 

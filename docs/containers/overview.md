@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916567"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829868"
 ---
 # <a name="container-tools-in-visual-studio"></a>Containertools in Visual Studio
 
@@ -29,7 +29,7 @@ Die in Visual Studio enthaltenen Tools für die Entwicklung mit Containern sind 
 
 Docker-Unterstützung ist für ASP.NET-Projekte, ASP.NET Core-Projekte sowie .NET Core- und .NET Framework-Konsolenprojekte verfügbar.
 
-Die Unterstützung für Docker in Visual Studio hat sich im Verlauf einer Reihe von Versionen aufgrund von Kundenanforderungen geändert. Es gibt zwei Stufen der Docker-Unterstützung, die Sie einem Projekt hinzufügen können, und die unterstützten Optionen unterscheiden sich je nach Projekttyp und Visual Studio-Version. Bei einigen unterstützten Projekttypen können Sie in dem Fall, dass Sie nur einen Container für ein einzelnes Projekt ohne Verwendung der Orchestrierung wünschen, die Docker-Unterstützung hinzufügen.  Die nächste Stufe ist die Unterstützung der Containerorchestrierung, bei der entsprechende Unterstützungsdateien für den jeweils ausgewählten Orchestrator hinzugefügt werden.  
+Die Unterstützung für Docker in Visual Studio hat sich im Verlauf einer Reihe von Versionen aufgrund von Kundenanforderungen geändert. Es gibt zwei Stufen der Docker-Unterstützung, die Sie einem Projekt hinzufügen können, und die unterstützten Optionen unterscheiden sich je nach Projekttyp und Visual Studio-Version. Bei einigen unterstützten Projekttypen können Sie in dem Fall, dass Sie nur einen Container für ein einzelnes Projekt ohne Verwendung der Orchestrierung wünschen, die Docker-Unterstützung hinzufügen.  Die nächste Stufe ist die Unterstützung der Containerorchestrierung, bei der entsprechende Unterstützungsdateien für den jeweils ausgewählten Orchestrator hinzugefügt werden.
 
 Bei Visual Studio 2017 können Sie Docker Compose und Service Fabric als Containerorchestrierungsdienste verwenden.  Sie können auch Kubernetes verwenden, wenn Sie die [Visual Studio-Tools für Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes) installieren.
 
@@ -51,7 +51,7 @@ Bei Visual Studio 2017 können Sie Docker Compose und Service Fabric als Contain
 
 Docker-Unterstützung ist für ASP.NET-Projekte, ASP.NET Core-Projekte sowie .NET Core- und .NET Framework-Konsolenprojekte verfügbar.
 
-Die Unterstützung für Docker in Visual Studio hat sich im Verlauf einer Reihe von Versionen aufgrund von Kundenanforderungen geändert. Es gibt zwei Stufen der Docker-Unterstützung, die Sie einem Projekt hinzufügen können, und die unterstützten Optionen unterscheiden sich je nach Projekttyp und Visual Studio-Version. Bei einigen unterstützten Projekttypen können Sie in dem Fall, dass Sie nur einen Container für ein einzelnes Projekt ohne Verwendung der Orchestrierung wünschen, die Docker-Unterstützung hinzufügen.  Die nächste Stufe ist die Unterstützung der Containerorchestrierung, bei der entsprechende Unterstützungsdateien für den jeweils ausgewählten Orchestrator hinzugefügt werden.  
+Die Unterstützung für Docker in Visual Studio hat sich im Verlauf einer Reihe von Versionen aufgrund von Kundenanforderungen geändert. Es gibt zwei Stufen der Docker-Unterstützung, die Sie einem Projekt hinzufügen können, und die unterstützten Optionen unterscheiden sich je nach Projekttyp und Visual Studio-Version. Bei einigen unterstützten Projekttypen können Sie in dem Fall, dass Sie nur einen Container für ein einzelnes Projekt ohne Verwendung der Orchestrierung wünschen, die Docker-Unterstützung hinzufügen.  Die nächste Stufe ist die Unterstützung der Containerorchestrierung, bei der entsprechende Unterstützungsdateien für den jeweils ausgewählten Orchestrator hinzugefügt werden.
 
 Bei Visual Studio 2019 können Sie Docker Compose, Kubernetes und Service Fabric als Containerorchestrierungsdienste verwenden.
 
@@ -140,11 +140,11 @@ Weitere Informationen zu Azure Service Fabric finden Sie unter [Service Fabric](
 
 ## <a name="continuous-delivery-and-continuous-integration-cicd"></a>Continuous Delivery und Continuous Integration (CI/CD)
 
-Visual Studio lässt sich problemlos in Azure Pipelines integrieren, um eine automatisierte und kontinuierliche Integration und Bereitstellung von Änderungen an Ihrem Servicecode und Ihrer Konfiguration zu ermöglichen. Informationen zu den ersten Schritten finden Sie unter [Erstellen Ihrer ersten Pipeline](/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2).
+Visual Studio lässt sich problemlos in Azure Pipelines integrieren, um eine automatisierte und kontinuierliche Integration und Bereitstellung von Änderungen an Ihrem Servicecode und Ihrer Konfiguration zu ermöglichen. Informationen zu den ersten Schritten finden Sie unter [Erstellen Ihrer ersten Pipeline](/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2&preserve-view=true).
 
 Informationen zu Service Fabric finden Sie unter [Tutorial: Bereitstellen einer ASP.NET Core-App in Azure Service Fabric mithilfe von Azure DevOps Projects](/azure/devops-project/azure-devops-project-service-fabric).
 
-Informationen zu Kubernetes finden Sie unter [Bereitstellen einer Docker-Container-App in Azure Kubernetes Service](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops).
+Informationen zu Kubernetes finden Sie unter [Bereitstellen einer Docker-Container-App in Azure Kubernetes Service](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&preserve-view=true).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

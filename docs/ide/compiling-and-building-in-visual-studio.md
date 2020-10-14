@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809032"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928540"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilieren und Erstellen in Visual Studio
 
@@ -32,7 +32,7 @@ Sie können mit der Visual Studio-IDE, MSBuild-Befehlszeilentools und Azure Pipe
 | MSBuild-Befehlszeile| - Erstellen von Projekten, ohne Visual Studio zu installieren<br />- Ausführen von Multiprozessorbuilds für alle Projekttypen<br />- Anpassen der meisten Bereiche des Buildsystems|
 | Azure Pipelines | - Automatisieren des Buildprozesses als Teil einer fortlaufenden Integration oder einer fortlaufenden Zustellpipeline<br />- Anwenden von automatisierten Tests mit jedem Build<br />– Verwenden der nahezu unbegrenzten cloudbasierten Ressourcen für Buildprozesse<br />- Anpassen des Buildworkflows und Erstellen von Buildaktivitäten zum Ausführen benutzerdefinierter Aufgaben|
 
-Die Dokumentation in diesem Bereich geht näher auf den IDE-basierten Buildprozess ein. Weitere Informationen zu den anderen Methoden finden Sie unter [MSBuild](../msbuild/msbuild.md) und [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Die Dokumentation in diesem Bereich geht näher auf den IDE-basierten Buildprozess ein. Weitere Informationen zu den anderen Methoden finden Sie unter [MSBuild](../msbuild/msbuild.md) und [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Kompilieren und Generieren in Visual Studio für Mac](/visualstudio/mac/compiling-and-building).

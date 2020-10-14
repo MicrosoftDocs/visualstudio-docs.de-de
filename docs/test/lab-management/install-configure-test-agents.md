@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286895"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928605"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installieren von Test-Agents und Testcontrollern
 
@@ -83,7 +83,7 @@ In der folgenden Tabelle werden die von Agents für Visual Studio 2013 unterstü
 
 | Szenarios, die von Agents für Visual Studio 2013 unterstützt werden | Alternativen in TFS und Azure Test Plans |
 | - | - |
-| Erstellen-Bereitstellen-Testen-Workflow in Visual Studio | Benutzer können eine [Buildpipeline](/azure/devops/pipelines/index?view=vsts) (kein XAML-Build) für Szenarios zum Erstellen, Bereitstellen und Testen in TFS verwenden. |
+| Erstellen-Bereitstellen-Testen-Workflow in Visual Studio | Benutzer können eine [Buildpipeline](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (kein XAML-Build) für Szenarios zum Erstellen, Bereitstellen und Testen in TFS verwenden. |
 | Auslastungstests (Leistungstests) mit lokalen Remotecomputern | Verwenden Sie das Testcontroller und Test-Agents 2013 Update 5, um Auslastungstests lokal auszuführen. |
 | Remoteausführung von automatisierten Tests von Microsoft Test Manager mit einer Laborumgebung (ab Visual Studio 2017 veraltet) | Es gibt aktuell keine Alternative für dieses Szenario. Es wird empfohlen, dass Sie den Task „Funktionstests ausführen“ in Build- und Releasedefinitionen verwenden (nicht in XAML-Builds), um Tests remote auszuführen. |
 | Entwickler, die Remotetests in Visual Studio ausführen | Wird nicht mehr unterstützt. |

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249215"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959860"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 
@@ -182,16 +182,16 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem .
 3. Wählen Sie **Suchen...** aus, um das **Verbindungsziel** über das Dialogfeld **Docker-Container auswählen** festzulegen.
 
     Sie können einen Docker-Containerprozess entweder lokal oder remote debuggen.
-    
+
     **So debuggen Sie einen Docker-Containerprozess lokal**
     1. Legen Sie **Docker-CLI-Host** auf **Lokaler Computer** fest.
     1. Wählen Sie einen aktiven Container zum Anfügen aus der Liste aus, und klicken Sie auf **OK**.
-    
+
     ![Menü „Docker-Container auswählen“](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
- 
+
     **B. So debuggen Sie einen Docker-Containerprozess remote**
-    
-    > [!NOTE] 
+
+    > [!NOTE]
     > Es gibt zwei Möglichkeiten, eine Remoteverbindung mit einem aktiven Prozess in einem Docker-Container herzustellen. Die erste Option, die Verwendung von SSH, ist ideal, wenn Sie keine Docker-Tools auf Ihrem lokalen Computer installiert haben.  Wenn Sie die Docker-Tools lokal installiert haben und Sie über einen Docker-Daemon verfügen, der so konfiguriert ist, dass er Remoteanforderungen akzeptiert, probieren Sie die zweite Option mit einem Docker-Daemon aus.
 
     1. ***So stellen Sie über SSH eine Verbindung mit einem Remotecomputer her***
@@ -205,7 +205,7 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem .
 
 4. Wählen Sie den entsprechenden Containerprozess aus der Liste der **Verfügbaren Prozesse** und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses in Visual Studio zu beginnen.
 
-    ![Abgeschlossenes Menü „Anfügen“ für Docker](../debugger/media/docker-attach-complete.png "Abgeschlossenes Menü „Anfügen“ für Linux-Docker")    
+    ![Abgeschlossenes Menü „Anfügen“ für Docker](../debugger/media/docker-attach-complete.png "Abgeschlossenes Menü „Anfügen“ für Linux-Docker")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Anfügen an einen Prozess, der in einem Windows-Docker-Container ausgeführt wird
 
@@ -225,14 +225,14 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem W
 
     > [!IMPORTANT]
     > Der Zielprozess muss dieselbe Prozessorarchitektur aufweisen wie der Windows-Docker-Container, in dem er ausgeführt wird.
-    
+
    Das Festlegen des Ziels auf einen Remotecontainer über SSH ist derzeit nicht verfügbar und kann nur über einen Docker-Daemon erfolgen.
-    
+
     ***So legen Sie das Ziel auf einen Remotecontainer fest, der einen Prozess über einen [Docker-Daemon ausführt](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-    1. Geben Sie die Daemonadresse (d. h. über TCP, IP usw.) unter **Docker-Host (Optional)** an, und klicken Sie auf den Link „Aktualisieren“. 
+    1. Geben Sie die Daemonadresse (d. h. über TCP, IP usw.) unter **Docker-Host (Optional)** an, und klicken Sie auf den Link „Aktualisieren“.
 
     1. Wählen Sie einen aktiven Container zum Anfügen aus, nachdem die Verbindung mit dem Daemon erfolgreich hergestellt wurde, und wählen Sie „OK“ aus.
-    
+
 4. Wählen Sie den entsprechenden Containerprozess aus der Liste der **Verfügbaren Prozesse** und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses zu beginnen.
 
     ![Abgeschlossenes Menü „Anfügen“ für Docker](../debugger/media/docker-attach-complete-windows.png "Abgeschlossenes Menü „Anfügen“ für Windows-Docker")
@@ -263,7 +263,7 @@ Um schnell einen aktiven Prozess zum Anhängen auszuwählen, geben Sie in Visual
 |Szenario|Debugmethode|Prozessname|Hinweise und Links|
 |-|-|-|-|
 |Remotedebuggen von ASP.NET 4 oder 4.5 auf einem IIS-Server|Verwenden von Remotetools und **An den Prozess anhängen**|*w3wp.exe*|Weitere Informationen finden Sie unter [Remotedebuggen von ASP.NET auf einem IIS-Remotecomputer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Remotedebuggen von ASP.NET Core auf einem IIS-Server|Verwenden von Remotetools und **An den Prozess anhängen**|*w3wp.exe* oder *dotnet.exe*|Ab .NET Core 3 wird der Prozess *w3wp.exe* für das standardmäßige [In-App-Hostingmodell](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) verwendet. Informationen zur Bereitstellung von Apps finden Sie unter [Veröffentlichen in IIS](/aspnet/core/host-and-deploy/iis/). Ausführlichere Informationen finden Sie unter [Remotedebuggen von ASP.NET Core auf einem IIS-Remotecomputer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|Remotedebuggen von ASP.NET Core auf einem IIS-Server|Verwenden von Remotetools und **An den Prozess anhängen**|*w3wp.exe* oder *dotnet.exe*|Ab .NET Core 3 wird der Prozess *w3wp.exe* für das standardmäßige [In-App-Hostingmodell](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) verwendet. Informationen zur Bereitstellung von Apps finden Sie unter [Veröffentlichen in IIS](/aspnet/core/host-and-deploy/iis/). Ausführlichere Informationen finden Sie unter [Remotedebuggen von ASP.NET Core auf einem IIS-Remotecomputer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
 |Debuggen clientseitiger Skripts auf einem lokalen IIS-Server, für unterstützte App-Typen |Verwenden von **An den Prozess anhängen**|*chrome.exe*, *MicrosoftEdgeCP.exe* oder *iexplore.exe*|Skriptdebugging muss aktiviert sein. Für Chrome müssen Sie Chrome auch im Debugmodus ausführen (geben Sie `chrome.exe --remote-debugging-port=9222` von der Befehlszeile aus ein) und **JavaScript (Chrome)** im Feld **Anfügen** auswählen.|
 |Debuggen einer C#-, Visual Basic- oder C++-App auf dem lokalen Computer|Verwenden Sie entweder das Standarddebuggen (**F5**) oder **An den Prozess anhängen**.|*\<appname>.exe*|Verwenden Sie in den meisten Szenarien das Standarddebuggen und nicht **An den Prozess anhängen**.|
 |Remotedebuggen einer Windows-Desktop-App|Remotetools|Nicht zutreffend| Weitere Informationen finden Sie unter [Remotedebuggen einer C#- oder Visual Basic-App](../debugger/remote-debugging-csharp.md) oder [Remotedebuggen einer C++-App](../debugger/remote-debugging-cpp.md).|

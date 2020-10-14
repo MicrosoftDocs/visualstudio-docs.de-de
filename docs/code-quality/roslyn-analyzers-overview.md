@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658437"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860488"
 ---
 # <a name="overview-of-source-code-analysis"></a>Übersicht über Quellcode-Analyse
 
@@ -77,7 +77,7 @@ Wenn Sie Analysetools als Visual Studio-Erweiterung installieren, werden diese a
 
 Damit zur Erstellungszeit Regeln erzwungen werden, auch über die Befehlszeile oder als Teil eines Continuous Integration-Builds (CI), können Sie eine der folgenden Optionen wählen:
 
-- Erstellen Sie ein .NET 5.0-Projekt, das im .NET SDK standardmäßig Analysetools enthält. Die Codeanalyse ist für Projekte, die auf .NET 5.0 oder höher ausgerichtet sind, standardmäßig aktiviert. Sie können die Codeanalyse für Projekte aktivieren, die auf frühere Versionen von .NET abzielen, indem Sie die Eigenschaft [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) auf „True“ festlegen.
+- Erstellen Sie ein .NET 5.0-Projekt, das im .NET SDK standardmäßig Analysetools enthält. Die Codeanalyse ist für Projekte, die auf .NET 5.0 oder höher ausgerichtet sind, standardmäßig aktiviert. Sie können die Codeanalyse für Projekte aktivieren, die auf frühere Versionen von .NET abzielen, indem Sie die Eigenschaft [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) auf „True“ festlegen.
 
 - Installieren von Analysetools als NuGet-Paket. Warnungen und Fehler der Analysetools erscheinen nicht im Buildbericht, wenn Sie die Analysetools als Erweiterung installieren.
 

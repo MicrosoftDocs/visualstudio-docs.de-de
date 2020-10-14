@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 943c0567e3726d014f7dae01915916864e09ed9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801645"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928683"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
@@ -38,7 +38,7 @@ Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Python-Projekt und
 - Im Fenster [Ausgabe](../ide/reference/output-window.md) (unten in der Mitte) zeigt Visual Studio Benachrichtigungen, z. B. Debug- und Fehlermeldungen, Warnungen und Nachrichten zum Veröffentlichungsstatus an. Jede Nachrichtenquelle verfügt über eine eigene Registerkarte.
   - Ein [interaktives REPL-Fenster für Python](python-interactive-repl-in-visual-studio.md) wird im gleichen Bereich wie das Ausgabefenster angezeigt.
 
-- Im [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (unten rechts) können Sie Arbeitselemente nachverfolgen und Code mithilfe von Techniken zur Versionskontrolle, wie etwa [Git](https://git-scm.com/) und [Team Foundation-Versionskontrolle (Team Foundation Version Control, TFVC)](/azure/devops/repos/tfvc/overview?view=vsts), mit anderen teilen.
+- Im [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (unten rechts) können Sie Arbeitselemente nachverfolgen und Code mithilfe von Techniken zur Versionskontrolle, wie etwa [Git](https://git-scm.com/) und [Team Foundation-Versionskontrolle (Team Foundation Version Control, TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true), mit anderen teilen.
 
 ## <a name="editions"></a>Editionen
 

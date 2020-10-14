@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286842"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928592"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Verwenden von Azure Test Plans anstelle von Lab Management für automatisierte Tests
 
-Wenn Sie Microsoft Test Manager und Lab Management für automatisierte Tests oder für automatisiertes Erstellen, Bereitstellen und Testen verwenden, erfahren Sie in diesem Artikel, wie Sie mit den [Build und Release](/azure/devops/pipelines/index?view=vsts)-Features in Azure Pipelines und Team Foundation Server (TFS) das gleiche Ergebnis erzielen können.
+Wenn Sie Microsoft Test Manager und Lab Management für automatisierte Tests oder für automatisiertes Erstellen, Bereitstellen und Testen verwenden, erfahren Sie in diesem Artikel, wie Sie mit den [Build und Release](/azure/devops/pipelines/index?view=vsts&preserve-view=true)-Features in Azure Pipelines und Team Foundation Server (TFS) das gleiche Ergebnis erzielen können.
 
 > [!NOTE]
 > Microsoft Test Manager ist seit Visual Studio 2017 veraltet und wurde in Visual Studio 2019 entfernt.
@@ -31,7 +31,7 @@ Microsoft Test Manager und Lab Management verwenden zum automatischen Erstellen,
 |-------|----------------------|-----------------|
 | Identifizieren der Computer, auf denen der Build bereitgestellt und Tests ausgeführt werden sollen. | Erstellen Sie mit diesen Computern eine Standard-Lab-Umgebung in Microsoft Test Manager. | n/v |
 | Identifizieren der auszuführenden Tests. | Erstellen Sie eine Testsammlung in Microsoft Test Manager, erstellen Sie Testfälle, und ordnen Sie für jeden Testfall eine Automatisierung zu. Erstellen Sie Testeinstellungen in Microsoft Test Manager, die die Rolle der Computer in der Lab-Umgebung identifizieren, auf denen die Tests ausgeführt werden sollen. | Erstellen Sie auf die gleiche Weise eine automatisierte Testsammlung in Microsoft Test Manager, wenn Sie Ihre Tests über Testpläne verwalten möchten. Alternativ können Sie diesen Schritt überspringen, wenn Sie die Tests direkt aus den von Ihren Builds erzeugten Testbinärdateien ausführen möchten. In keinem der Fälle ist es notwendig, Testeinstellungen zu erstellen. |
-| Automatisieren von Bereitstellung und Testen. | Erstellen Sie eine XAML-Builddefinition mit LabDefaultTemplate.*.xaml. Geben Sie Build, Testsammlungen und Lab-Umgebung in der Builddefinition an. | Erstellen Sie eine [Build- oder Releasepipeline](/azure/devops/pipelines/index?view=vsts) mit einer einzigen Umgebung. Führen Sie das gleiche Bereitstellungsskript (aus der XAML-Builddefinition) mit dem Befehlszeilentask aus, und führen Sie automatische Tests mit den Tasks „Test Agent-Bereitstellung“ und „Funktionstests ausführen“ aus. Geben Sie die Liste der Computer und deren Anmeldeinformationen als Eingaben für diese Tasks an. |
+| Automatisieren von Bereitstellung und Testen. | Erstellen Sie eine XAML-Builddefinition mit LabDefaultTemplate.*.xaml. Geben Sie Build, Testsammlungen und Lab-Umgebung in der Builddefinition an. | Erstellen Sie eine [Build- oder Releasepipeline](/azure/devops/pipelines/index?view=vsts&preserve-view=true) mit einer einzigen Umgebung. Führen Sie das gleiche Bereitstellungsskript (aus der XAML-Builddefinition) mit dem Befehlszeilentask aus, und führen Sie automatische Tests mit den Tasks „Test Agent-Bereitstellung“ und „Funktionstests ausführen“ aus. Geben Sie die Liste der Computer und deren Anmeldeinformationen als Eingaben für diese Tasks an. |
 
 Nachfolgend werden einige der Vorteile aufgeführt, die eine Nutzung von Azure Pipelines oder TFS für dieses Szenario bietet:
 
@@ -46,7 +46,7 @@ Nachfolgend werden einige der Vorteile aufgeführt, die eine Nutzung von Azure P
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Self-Service-Verwaltung von SCVMM-Umgebungen
 
-Das [Test-Center in Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts) unterstützt die Fähigkeit, eine Bibliothek von Umgebungsvorlagen zu verwalten und Umgebungen bei Bedarf mit einem [SCVMM-Server](/system-center/vmm/overview?view=sc-vmm-1801) bereitzustellen.
+Das [Test-Center in Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts&preserve-view=true) unterstützt die Fähigkeit, eine Bibliothek von Umgebungsvorlagen zu verwalten und Umgebungen bei Bedarf mit einem [SCVMM-Server](/system-center/vmm/overview?view=sc-vmm-1801&preserve-view=true) bereitzustellen.
 
 Die Self-Service-Bereitstellungsfunktion von Lab Center verfolgt zwei unterschiedliche Ziele:
 
@@ -76,4 +76,4 @@ Azure Pipelines und TFS können allerdings in Kombination mit der SCVMM-Build- u
 * um virtuelle Computer zu starten oder zu beenden.
 * um benutzerdefinierte PowerShell-Skripts für SCVMM auszuführen.
 
-Weitere Informationen finden Sie unter [Create a virtual network isolated environment for build-deploy-test scenarios (Erstellen einer virtuellen netzwerkisolierten Umgebung für Build-, Bereitstellungs- und Testszenarios)](/azure/devops/pipelines/targets/create-virtual-network?view=vsts).
+Weitere Informationen finden Sie unter [Create a virtual network isolated environment for build-deploy-test scenarios (Erstellen einer virtuellen netzwerkisolierten Umgebung für Build-, Bereitstellungs- und Testszenarios)](/azure/devops/pipelines/targets/create-virtual-network?view=vsts&preserve-view=true).

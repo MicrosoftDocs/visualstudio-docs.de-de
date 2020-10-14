@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641672"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830772"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -50,7 +50,7 @@ Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwend
 
 - **ASP.NET**, **ASP.NET Core**, **Python** und **Node.js:** Mithilfe einer der folgenden Methoden können Sie Apps in Azure App Service oder Azure App Service Linux (mit Containern) veröffentlichen.
 
-  - Verwenden Sie Azure DevOps mit [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops) für die kontinuierliche (oder automatisierte) Bereitstellung von Apps.
+  - Verwenden Sie Azure DevOps mit [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true) für die kontinuierliche (oder automatisierte) Bereitstellung von Apps.
 
   - Verwenden Sie das Tool zum **Veröffentlichen** in Visual Studio für die einmalige (oder manuelle) Bereitstellung von Apps.
 
@@ -107,7 +107,7 @@ Wenn Sie eine komplexere Installation einer Desktop-Anwendung benötigen als [Cl
 
 - Mithilfe der [WiX-Toolset-Erweiterung für Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) kann ein MSI-basiertes Installer-Paket erstellt werden. Dabei handelt es sich um ein Befehlszeilentoolset.
 
-- MSI- oder EXE-Installer-Pakete können mithilfe von [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software erstellt werden. InstallShield kann mit Visual Studio 2017 und höheren Versionen verwendet werden (Community Edition wird nicht unterstützt). 
+- MSI- oder EXE-Installer-Pakete können mithilfe von [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) von Flexera Software erstellt werden. InstallShield kann mit Visual Studio 2017 und höheren Versionen verwendet werden (Community Edition wird nicht unterstützt).
 
   > [!NOTE]
   > InstallShield Limited Edition ist nicht mehr in Visual Studio enthalten und wird in Visual Studio 2017 und höheren Versionen nicht unterstützt. Bei Fragen zur zukünftigen Verfügbarkeit wenden Sie sich an [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
@@ -122,7 +122,7 @@ Stellen Sie die Anwendungen in virtuellen Umgebungen bereit, um ausgereiftere En
 
 ## <a name="continuous-deployment"></a>Continuous Deployment
 
-Sie können Azure Pipelines verwenden um Continuous Deployment (kontinuierliche Bereitstellung) für Ihre App zu ermöglichen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) und [Bereitstellen in Azure](/azure/devops/deploy-azure/index?view=vsts).
+Sie können Azure Pipelines verwenden um Continuous Deployment (kontinuierliche Bereitstellung) für Ihre App zu ermöglichen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) und [Bereitstellen in Azure](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true).
 
 ## <a name="deploy-a-sql-database"></a>Bereitstellen einer SQL-Datenbank
 

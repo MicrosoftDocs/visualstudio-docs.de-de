@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588654"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928501"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
@@ -217,7 +217,7 @@ Sie können weitere Komponententests für Ihren C#- oder Visual Basic-Code ermit
 
 1. Navigieren Sie zum Anwendungscode, der über zugehörigen [Komponententestcode](../test/unit-test-your-code.md) verfügt.
 
-2. Falls Sie Ihre Anwendung noch nicht erstellt haben, holen Sie dies nach, um die CodeLens-Testindikatoren zu laden. 
+2. Falls Sie Ihre Anwendung noch nicht erstellt haben, holen Sie dies nach, um die CodeLens-Testindikatoren zu laden.
 
 3. Überprüfen Sie die Tests für den Code, indem Sie **ALT**+**3** drücken.
 
@@ -268,7 +268,7 @@ Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe de
 
 - Wenn Ihr Code in TFS gespeichert ist, stellen Sie sicher, dass die Codeindizierung aktiviert ist. Verwenden Sie hierzu den [CodeIndex-Befehl](../ide/codeindex-command.md) mit dem [TFSConfig-Befehl](/azure/devops/server/command-line/tfsconfig-cmd).
 
-- DevOps-bezogene Indikatoren werden nur angezeigt, wenn Arbeitselemente mit dem Code verknüpft sind und Sie über Berechtigungen zum Öffnen verknüpfter Arbeitselemente verfügen. Stellen Sie sicher, dass Sie über [Teammitgliedsberechtigungen](/azure/devops/organizations/security/view-permissions?view=vsts) verfügen.
+- DevOps-bezogene Indikatoren werden nur angezeigt, wenn Arbeitselemente mit dem Code verknüpft sind und Sie über Berechtigungen zum Öffnen verknüpfter Arbeitselemente verfügen. Stellen Sie sicher, dass Sie über [Teammitgliedsberechtigungen](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true) verfügen.
 
 - Komponententestindikatoren werden nicht angezeigt, wenn der Anwendungscode nicht über Komponententests verfügt. Teststatusindikatoren werden automatisch in Testprojekten angezeigt. Wenn Sie wissen, dass der Anwendungscode über Komponententests verfügt, die Testindikatoren jedoch nicht angezeigt werden, versuchen Sie, die Projektmappe zu erstellen (**STRG**+**UMSCHALT**+**B**).
 

@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: fbb3cfe6453c68079cb4b4cc6b57f8494f45c0cc
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845922"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829877"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funktionsweise von Bridge to Kubernetes
 
@@ -40,7 +40,7 @@ Wenn Bridge to Kubernetes eine Verbindung mit Ihrem Cluster herstellt, geschieht
 * Der Container im Pod im Cluster wird durch einen Remote-Agent-Container ersetzt, der Datenverkehr an Ihren Entwicklungscomputer umleitet.
 * [kubectl port-forward][kubectl-port-forward] wird auf dem Entwicklungscomputer ausgeführt, um Datenverkehr vom Entwicklungscomputer an den Remote-Agent weiterzuleiten, der im Cluster ausgeführt wird.
 * Es werden Umgebungsinformationen von Ihrem Cluster mithilfe des Remote-Agents erfasst. Zu diesen Umgebungsinformationen zählen Umgebungsvariablen, sichtbare Dienste, Volumeeinbindungen und Geheimniseinbindungen.
-* Richten Sie die Umgebung in Visual Studio so ein, dass der Dienst auf Ihrem Entwicklungscomputer auf dieselben Variablen zugreifen kann, wie wenn er auf dem Cluster ausgeführt werden würde.  
+* Richten Sie die Umgebung in Visual Studio so ein, dass der Dienst auf Ihrem Entwicklungscomputer auf dieselben Variablen zugreifen kann, wie wenn er auf dem Cluster ausgeführt werden würde.
 * Die Hostdatei wird aktualisiert, um Dienste auf Ihrem Cluster lokalen IP-Adressen auf dem Entwicklungscomputer zuzuordnen. Diese Hostdateieinträge ermöglichen, dass Code, der auf dem Entwicklungscomputer ausgeführt wird, Anforderungen an andere Dienste senden kann, die in Ihrem Cluster ausgeführt werden. Zum Aktualisieren Ihrer Hostdatei fordert Bridge to Kubernetes beim Herstellen einer Verbindung mit Ihrem Cluster den Administratorzugriff auf Ihren Entwicklungscomputer an.
 * Startet die Ausführung und das Debuggen Ihres Codes auf Ihrem Entwicklungscomputer. Bei Bedarf gibt Bridge to Kubernetes erforderliche Ports auf Ihrem Entwicklungscomputer frei, indem Dienste oder Prozesse beendet werden, die diese Ports derzeit verwenden.
 
@@ -72,7 +72,7 @@ Wenn Sie die isolierte Entwicklung ermöglichen, führt Bridge to Kubernetes zus
 Wenn Bridge to Kubernetes ermittelt, dass Azure Dev Spaces auf Ihrem Kubernetes-Cluster aktiviert ist, werden Sie dazu aufgefordert, Azure Dev Spaces zu deaktivieren, bevor Sie Bridge to Kubernetes verwenden können.
 
 Der Routing-Manager ergreift folgende Aktionen, wenn er gestartet wird:
-* Er dupliziert alle Eingänge im Namespace mithilfe von *GENERATED_NAME* für die Unterdomäne. 
+* Er dupliziert alle Eingänge im Namespace mithilfe von *GENERATED_NAME* für die Unterdomäne.
 * Er erstellt einen Envoy-Pod für jeden Dienst, der einem duplizierten Eingang mit der Unterdomäne *GENERATED_NAME* zugeordnet ist.
 * Er erstellt einen zusätzlichen Envoy-Pod für den Dienst, an dem Sie isoliert arbeiten. Dies ermöglicht das Weiterleiten von Anforderungen mit der Unterdomäne an Ihren Entwicklungscomputer.
 * Er konfiguriert Routingregeln für jeden Envoy-Pod, um das Routing für Dienste mit der Unterdomäne zu verarbeiten.
@@ -92,7 +92,7 @@ Wenn eine Anforderung ohne die Unterdomäne *GENERATED_NAME* vom Cluster empfang
 > [!IMPORTANT]
 > Jeder Dienst auf Ihrem Cluster muss den Header *kubernetes-route-as=GENERATED_NAME* weiterleiten, wenn zusätzliche Anforderungen gestellt werden. Wenn *serviceA* beispielsweise eine Anforderung empfängt, wird eine Anforderung an *serviceB* gestellt, bevor eine Antwort zurückgegeben wird. In diesem Beispiel muss *serviceA* den Header *kubernetes-route-as=GENERATED_NAME* in der Anforderung an *serviceB* weiterleiten. Einige Sprachen, z. B. [ASP.NET][asp-net-header], verfügen möglicherweise über Methoden zum Verarbeiten der Headerweitergabe.
 
-Wenn Sie die Verbindung mit Ihrem Cluster trennen, entfernt Bridge to Kubernetes standardmäßig alle Envoy-Pods und den duplizierten Dienst. 
+Wenn Sie die Verbindung mit Ihrem Cluster trennen, entfernt Bridge to Kubernetes standardmäßig alle Envoy-Pods und den duplizierten Dienst.
 
 > [!NOTE]
 > Die Bereitstellung und der Dienst des Routing-Managers werden weiterhin in Ihrem Namespace ausgeführt. Führen Sie die folgenden Befehle für Ihren Namespace aus, um die Bereitstellung und den Dienst zu entfernen.
@@ -126,7 +126,7 @@ Informationen zu den ersten Schritten bei der Verwendung von Bridge to Kubernete
 [asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
-[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest
+[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true
 [bridge-to-kubernetes-vs]: bridge-to-kubernetes.md
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/

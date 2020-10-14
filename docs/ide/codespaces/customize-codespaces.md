@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f63dc4989a59256a0a3ad59491b2290912ffd2f8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862326"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862220"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Anpassen eines Codespace (Vorschau)
 
@@ -92,7 +92,7 @@ GitHub Codespaces-Instanzen unterstützen die folgenden *devcontainer.json*-Eige
 
 Während Sie die `devinit`-Befehlszeile direkt ausführen können, wird empfohlen, die [*devinit.json*](../../devinit/devinit-json.md)-Konfigurationsdateien zu erstellen, in denen die `devinit`-Tools beschrieben werden, die ausgeführt werden sollen. 
 
-Für die Installation des [.NET Core SDK](https://docs.microsoft.com/dotnet/core/sdk) würde eine *.devinit.json*-Datei beispielsweise folgendermaßen aussehen:
+Für die Installation des [.NET Core SDK](/dotnet/core/sdk) würde eine *.devinit.json*-Datei beispielsweise folgendermaßen aussehen:
 
 ```json
 {
