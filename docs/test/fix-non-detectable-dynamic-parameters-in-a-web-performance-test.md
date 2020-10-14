@@ -119,7 +119,7 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 13. Speichern Sie das Projekt.
 
-14. Legen Sie im **Projektmappen-Explorer***Querystring.aspx* als Startseite fest.
+14. Legen Sie im **Projektmappen-Explorer** *Querystring.aspx* als Startseite fest.
 
      ![Startseite auf Querystring.aspx festlegen](../test/media/web_test_dynamicparameter_setstartpage.png)
 
