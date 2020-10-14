@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485137"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829898"
 ---
 # <a name="deploy-to-docker-hub"></a>Bereitstellen in Docker Hub
 
@@ -40,7 +40,7 @@ Wenn Sie über kein Docker Hub-Repository verfügen, erstellen Sie ein Konto in 
 
    ![Screenshot: Docker Hub-Dialogfeld](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. Wenn Sie eine Verbindung zu Ihrem eigenen Repository herstellen (das nicht zu einer Organisation gehört), lassen Sie das Kontrollkästchen **Publish to a personal repository** (In einem persönlichen Repository veröffentlichen) aktiviert. Wenn sich das Repository im Besitz einer Organisation befindet, deaktivieren Sie das Kontrollkästchen, und geben Sie den Namen der Organisation ein. Geben Sie Ihren Benutzernamen und Ihr Kennwort für Ihr Docker-Konto ein, das über die Berechtigungen für den Zugriff auf das Repository verfügt, zu dem Sie eine Verbindung herstellen, und klicken Sie dann auf **Speichern**.  
+1. Wenn Sie eine Verbindung zu Ihrem eigenen Repository herstellen (das nicht zu einer Organisation gehört), lassen Sie das Kontrollkästchen **Publish to a personal repository** (In einem persönlichen Repository veröffentlichen) aktiviert. Wenn sich das Repository im Besitz einer Organisation befindet, deaktivieren Sie das Kontrollkästchen, und geben Sie den Namen der Organisation ein. Geben Sie Ihren Benutzernamen und Ihr Kennwort für Ihr Docker-Konto ein, das über die Berechtigungen für den Zugriff auf das Repository verfügt, zu dem Sie eine Verbindung herstellen, und klicken Sie dann auf **Speichern**.
 
    Visual Studio versucht, Ihr Image in Docker Hub bereitzustellen.  Bei erfolgreicher Ausführung wird die Anzeige **Veröffentlichen** mit der URL für das Repositoryimage, dem Imagetag, dem Repository und der Buildkonfiguration (z. B. **Release**) angezeigt.
 
@@ -52,7 +52,7 @@ Wenn Sie über kein Docker Hub-Repository verfügen, erstellen Sie ein Konto in 
 
 Führen Sie für die Veröffentlichung in [Azure Container Registry](/azure/container-registry/) die Schritte unter [Bereitstellen in Azure Container Registry](hosting-web-apps-in-docker.md) aus.
 
-Richten Sie Continuous Integration und Continuous Delivery (CI/CD) mit [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops) ein.
+Richten Sie Continuous Integration und Continuous Delivery (CI/CD) mit [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true) ein.
 
 ## <a name="see-also"></a>Siehe auch
 

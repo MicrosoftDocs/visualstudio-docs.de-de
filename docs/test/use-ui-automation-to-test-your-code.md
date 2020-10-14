@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035741"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928094"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Testen Ihres Codes mit dem Test der programmierten UI
 
@@ -444,7 +444,7 @@ Sie können Tests der programmierten UI mithilfe von Testprotokollen der program
 
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
 
-- [Run tests in your build process (Ausführen von Tests im Buildprozess)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Run tests in your build process (Ausführen von Tests im Buildprozess)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 
 - [How to: Set up your test agent to run tests that interact with the desktop (Vorgehensweise: Einrichten Ihres Test-Agents zum Ausführen von Tests, die mit dem Desktopcomputer interagieren)](/previous-versions/ee291332(v=vs.140))
 
@@ -458,7 +458,7 @@ Tests der programmierten UI werden häufig verwendet, um manuelle Tests zu autom
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Record and play back manual tests (Aufzeichnen und Wiedergeben von manuellen Tests)](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
+- [Record and play back manual tests (Aufzeichnen und Wiedergeben von manuellen Tests)](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

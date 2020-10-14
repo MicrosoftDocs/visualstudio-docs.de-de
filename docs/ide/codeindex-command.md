@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591163"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928488"
 ---
 # <a name="codeindex-command"></a>CodeIndex-Befehl
 
@@ -25,7 +25,7 @@ Mit dem **CodeIndex**-Befehl können Sie die Codeindizierung für Team Foundatio
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 
-Zum Verwenden des **CodeIndex**-Befehls müssen Sie Mitglied der Sicherheitsgruppe **Team Foundation-Administratoren** sein. Weitere Informationen finden Sie unter [Permissions and groups defined for Azure DevOps Services and TFS (Für Azure DevOps Services und TFS definierte Berechtigungen und Gruppen)](/azure/devops/organizations/security/permissions?view=vsts).
+Zum Verwenden des **CodeIndex**-Befehls müssen Sie Mitglied der Sicherheitsgruppe **Team Foundation-Administratoren** sein. Weitere Informationen finden Sie unter [Permissions and groups defined for Azure DevOps Services and TFS (Für Azure DevOps Services und TFS definierte Berechtigungen und Gruppen)](/azure/devops/organizations/security/permissions?view=vsts&preserve-view=true).
 
 > [!NOTE]
 > Sie müssen auch dann ein Fenster für die Eingabeaufforderung mit erhöhten Rechten öffnen, wenn Sie sich mit Administratoranmeldeinformationen anmelden, um diesen Befehl auszuführen. Sie müssen diesen Befehl außerdem auf der Logikschicht für Team Foundation ausführen.

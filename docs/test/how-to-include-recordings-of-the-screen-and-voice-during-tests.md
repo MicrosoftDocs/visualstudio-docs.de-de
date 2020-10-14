@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4fb186c97126d843cc47c16fa16a836914ed2e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2366e77b0b66e2a31ce17e1aefb9240e4f45df2d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287765"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928644"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Vorgehensweise: Einschließen von Bildschirm- und Stimmenaufzeichnungen während der Tests mit Testeinstellungen
 
@@ -28,7 +28,7 @@ Die Bildschirm- und Stimmenaufzeichnung kann sowohl für manuelle als auch für 
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>So konfigurieren Sie Bildschirm- und Stimmenaufzeichnung für Ihre Testeinstellungen
 
-1. Öffnen Sie die Testeinstellungen, die Sie für die Bildschirm- und Stimmenaufzeichnung konfigurieren möchten. Weitere Informationen finden Sie unter [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts) oder [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
+1. Öffnen Sie die Testeinstellungen, die Sie für die Bildschirm- und Stimmenaufzeichnung konfigurieren möchten. Weitere Informationen finden Sie unter [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true) oder [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md).
 
 2. Wählen Sie in den Testeinstellungen die **Rolle** aus, die für die Bildschirm- und Stimmaufzeichnung verwendet werden soll.
 
@@ -69,7 +69,7 @@ Die Bildschirm- und Stimmenaufzeichnung kann sowohl für manuelle als auch für 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
+- [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)
-- [Ausführen manueller Tests (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)
+- [Ausführen manueller Tests (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts&preserve-view=true)

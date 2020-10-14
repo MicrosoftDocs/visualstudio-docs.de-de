@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: ff2e78698bb9180a50a4c2c8014b88dfd07b0b77
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181052"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829907"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Herstellen einer Verbindung mit Projekten in Team Explorer
 
@@ -45,4 +45,4 @@ So stellen Sie eine Verbindung mit einem Projekt her:
 - [Tutorial: Öffnen eines Projekts von einem Repository aus](../get-started/tutorial-open-project-from-repo.md)
 - [Team Explorer reference (Referenz für Team Explorer)](reference/team-explorer-reference.md)
 - [Connect to a project (Azure DevOps) (Herstellen einer Verbindung mit einem Projekt in Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
-- [Behandeln von Problemen beim Herstellen einer Verbindung mit einem Projekt](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
+- [Behandeln von Problemen beim Herstellen einer Verbindung mit einem Projekt](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops&preserve-view=true)

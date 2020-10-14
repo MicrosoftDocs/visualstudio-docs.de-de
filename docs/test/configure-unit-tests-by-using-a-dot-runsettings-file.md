@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038438"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928670"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
 Komponententests in Visual Studio können mithilfe einer *RUNSETTINGS*-Datei konfiguriert werden. Beispielsweise können Sie die .NET-Version, in der die Tests ausgeführt werden, das Verzeichnis für die Testergebnisse sowie die während eines Testlaufs erfassten Daten ändern. *RUNSETTINGS*-Dateien werden häufig verwendet, um die [Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md) anzupassen.
 
-Laufzeiteinstellungsdateien können verwendet werden, um Tests zu konfigurieren, die über die [Befehlszeile](vstest-console-options.md), in der IDE oder in einem [Buildworkflow ](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) mit Azure Test Plans oder Team Foundation Server (TFS) ausgeführt werden.
+Laufzeiteinstellungsdateien können verwendet werden, um Tests zu konfigurieren, die über die [Befehlszeile](vstest-console-options.md), in der IDE oder in einem [Buildworkflow ](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) mit Azure Test Plans oder Team Foundation Server (TFS) ausgeführt werden.
 
 Testlaufeinstellungsdateien sind optional. Wenn keine spezielle Konfiguration erforderlich sein soll, benötigen Sie keine *RUNSETTINGS*-Datei.
 
@@ -35,7 +35,7 @@ Testlaufeinstellungsdateien sind optional. Wenn keine spezielle Konfiguration er
 
    - [Visual Studio-IDE](#specify-a-run-settings-file-in-the-ide)
    - [Befehlszeile](#specify-a-run-settings-file-from-the-command-line)
-   - [Buildflow](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) mithilfe von Azure Test Plans oder Team Foundation Server (TFS)
+   - [Buildflow](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) mithilfe von Azure Test Plans oder Team Foundation Server (TFS)
 
 4. Führen Sie die Komponententests aus, damit die benutzerdefinierten Laufzeiteinstellungen verwendet werden.
 
@@ -83,20 +83,20 @@ Es gibt drei Möglichkeiten, in Visual Studio 2019, Version 16.4 und höher, e
 Für eine automatische Erkennung der Laufzeiteinstellungsdatei platzieren Sie sie im Stammverzeichnis Ihrer Projektmappe.
 
 Wenn die automatische Erkennung der Datei mit Laufzeiteinstellungen aktiviert ist, werden die Einstellungen in dieser Datei auf alle ausgeführten Tests angewendet. Sie können die automatische Erkennung der Datei mit Laufzeiteinstellungen über zwei Methoden aktivieren:
-  
+
 - Klicken Sie auf **Extras** > **Optionen** > **Test** > **RUNSETTINGS-Dateien automatisch ermitteln**.
 
    ![Option zum automatischen Erkennen einer RUNSETTINGS-Datei in Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
-      
+
 - Klicken Sie auf **Test** > **Laufzeiteinstellungen konfigurieren** > **RUNSETTINGS-Dateien automatisch ermitteln**.
-    
+
    ![Menü für das automatisch Erkennen einer RUNSETTINGS-Datei in Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>Manuelles Auswählen der Laufzeiteinstellungsdatei
 
 Wählen Sie in der IDE **Test** > **Laufzeiteinstellungen konfigurieren** > **Lösungsweite RUNSETTINGS-Datei auswählen** und anschließend die *RUNSETTINGS*-Datei aus.
 
-   - Diese Datei überschreibt die *RUNSETTINGS*-Datei im Stammverzeichnis der Projektmappe, sofern diese vorhanden ist, und wird auf alle ausgeführten Testläufe angewendet.  
+   - Diese Datei überschreibt die *RUNSETTINGS*-Datei im Stammverzeichnis der Projektmappe, sofern diese vorhanden ist, und wird auf alle ausgeführten Testläufe angewendet.
    - Diese Dateiauswahl wird nur lokal beibehalten.
 
 ![Menü „Lösungsweite RUNSETTINGS-Datei auswählen“ in Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
@@ -107,10 +107,10 @@ Fügen Sie entweder über die Projektdatei oder eine Directory.Build.props-Datei
 
 - Laufzeiteinstellungen auf Projektebene werden zurzeit in C#-, VB-, C++- und F#-Projekten unterstützt.
 - Eine für ein Projekt angegebene Datei setzt alle anderen in der Projektmappe angegebenen Laufzeiteinstellungen außer Kraft.
-- Mithilfe [dieser MSBuild-Eigenschaften](../msbuild/msbuild-reserved-and-well-known-properties.md) können Sie den Pfad zur RUNSETTINGS-Datei angeben. 
+- Mithilfe [dieser MSBuild-Eigenschaften](../msbuild/msbuild-reserved-and-well-known-properties.md) können Sie den Pfad zur RUNSETTINGS-Datei angeben.
 
 Beispiel für die Angabe einer *RUNSETTINGS*-Datei für ein Projekt:
-    
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -186,7 +186,7 @@ Das **RunConfiguration**-Element kann folgende Elemente enthalten:
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Ein oder mehrere Pfade zu dem Verzeichnis, in dem die Testadapter gespeichert sind.|
 |**TestSessionTimeout**||Ermöglicht Benutzern, eine Testsitzung zu beenden, wenn sie ein angegebenes Timeout überschreitet. Die Einstellung eines Timeouts stellt sicher, dass die Ressourcen gut ausgenutzt werden und Testsitzungen auf einen bestimmten Zeitraum beschränkt bleiben. Diese Einstellung ist in **Visual Studio 2017 Version 15.5** und höher verfügbar.|
-|**DotnetHostPath**||Legen Sie einen benutzerdefinierten Pfad zum Dotnet-Host fest, der zum Ausführen des Testhosts verwendet wird. Dies ist hilfreich, wenn Sie Ihren eigenen Dotnet-Host erstellen, z. B. beim Erstellen des Repositorys „dotnet/runtime“. Wenn Sie diese Option festlegen, wird die Suche nach der Datei „testhost.exe“ übersprungen, und stattdessen wird die Datei „testhost.dll“ verwendet. 
+|**DotnetHostPath**||Legen Sie einen benutzerdefinierten Pfad zum Dotnet-Host fest, der zum Ausführen des Testhosts verwendet wird. Dies ist hilfreich, wenn Sie Ihren eigenen Dotnet-Host erstellen, z. B. beim Erstellen des Repositorys „dotnet/runtime“. Wenn Sie diese Option festlegen, wird die Suche nach der Datei „testhost.exe“ übersprungen, und stattdessen wird die Datei „testhost.dll“ verwendet.
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors-Element (Adapter für diagnostische Daten)
 
@@ -231,7 +231,7 @@ Um andere Typen von Adaptern für diagnostische Daten anzupassen, verwenden Sie 
 
 ### <a name="blame-data-collector"></a>Datensammlung mit blame
 
-Mit dieser Option können Sie einen problematischen Test isolieren, der zu einem Absturz des Testhosts führt. Wenn Sie den Collector ausführen, wird eine Ausgabedatei (*Sequence.xml*) in *TestResults* generiert, in der die Ausführungsreihenfolge des Tests vor dem Absturz erfasst wird. 
+Mit dieser Option können Sie einen problematischen Test isolieren, der zu einem Absturz des Testhosts führt. Wenn Sie den Collector ausführen, wird eine Ausgabedatei (*Sequence.xml*) in *TestResults* generiert, in der die Ausführungsreihenfolge des Tests vor dem Absturz erfasst wird.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -268,7 +268,7 @@ Der Abschnitt `LoggerRunSettings` definiert eine oder mehrere Protokollierungen,
 
 ```xml
 <LoggerRunSettings>
-    <Loggers>        
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -392,10 +392,10 @@ Alle Elemente der Datei sind optional, da sie einen Standardwert enthalten.
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
-  
+
   <!-- Configuration for loggers -->
   <LoggerRunSettings>
-    <Loggers>      
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -462,4 +462,4 @@ Der Knoten **RunConfiguration** muss einen **EnvironmentVariables**-Knoten entha
 
 - [Konfigurieren eines Testlaufs](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio-Testaufgabe (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio-Testaufgabe (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts&preserve-view=true)
