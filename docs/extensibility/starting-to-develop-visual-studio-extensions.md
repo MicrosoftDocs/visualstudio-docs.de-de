@@ -11,19 +11,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286192"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099387"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Beginnen mit der Entwicklung von Visual Studio-Erweiterungen
 
 Wenn Sie noch nie eine Visual Studio-Erweiterung geschrieben haben, haben Sie wahrscheinlich einige Fragen. Wir haben hier einige der gängigsten aufgelistet. Wenn Ihnen die gesuchten Informationen nicht angezeigt werden, verwenden Sie die Feedback Schaltflächen (**ist diese Seite hilfreich?** in der oberen rechten Ecke des Bildschirms), um zu Fragen, was Sie möchten.
 
 > [!NOTE]
-> Dieser Artikel bezieht sich auf Visual Studio unter Windows. Visual Studio für Mac finden Sie unter [Erweitern von Visual Studio für Mac](/visualstudio/mac/extending-visual-studio-mac). Visual Studio Code finden Sie unter [Visual Studio Code Extension-API](https://code.visualstudio.com/api).
+> Dieser Artikel gilt für Visual Studio unter Windows. Visual Studio für Mac finden Sie unter [Erweitern von Visual Studio für Mac](/visualstudio/mac/extending-visual-studio-mac). Visual Studio Code finden Sie unter [Visual Studio Code Extension-API](https://code.visualstudio.com/api).
 
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Welche Software benötige ich zum Entwickeln von Visual Studio-Erweiterungen?
 
@@ -91,9 +91,9 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die die meisten Benut
 ## <a name="how-can-i-distribute-my-extension"></a>Wie kann ich meine Erweiterung verteilen?
  Sie können Ihre Erweiterung auf einem anderen Computer installieren oder Sie als vsix-Datei an Ihre Freunde senden, indem Sie darauf doppelklicken. Weitere Informationen zu VSIX-Paketen finden Sie unter " [Versand von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)".
 
- Sie können Ihre Erweiterung auch auf dem Visual Studio Marketplace veröffentlichen, wodurch Sie für eine große Anzahl von Visual Studio-Kunden sichtbar wird. Ein Beispiel für das Packen einer Erweiterung in den Marketplace finden Sie unter Exemplarische Vorgehensweise [: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen zu den Voraussetzungen für die Veröffentlichung im Marketplace finden Sie unter [Produkte und Erweiterungen für Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Sie können Ihre Erweiterung auch auf dem Visual Studio Marketplace veröffentlichen, wodurch Sie für eine große Anzahl von Visual Studio-Kunden sichtbar wird. Ein Beispiel für das Packen einer Erweiterung in den Marketplace finden Sie unter Exemplarische Vorgehensweise [: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Weitere Informationen zu den Voraussetzungen für die Veröffentlichung im Marketplace finden Sie unter [Produkte und Erweiterungen für Visual Studio](/azure/devops/extend/overview?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Extending Visual Studio for Mac (Erweitern von Visual Studio für Mac)](/visualstudio/mac/extending-visual-studio-mac)
 - [Erweitern von Visual Studio Code](https://code.visualstudio.com/api)

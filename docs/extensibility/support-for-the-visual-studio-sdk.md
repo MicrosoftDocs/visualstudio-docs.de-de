@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b10e4b211bb1a187f51f95aa6eb78d2de451516
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699641"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099374"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Unterstützung für das Visual Studio SDK
 Für Kunden, die Fragen zur Erweiterung der integrierten Entwicklungsumgebung (IDE) von Visual Studio haben, stehen verschiedene Supportoptionen zur Verfügung.
@@ -30,7 +30,7 @@ Für Kunden, die Fragen zur Erweiterung der integrierten Entwicklungsumgebung (I
  Mitglieder des Visual Studio-Entwicklungsteams und andere Entwickler, die Visual Studio erweitern, nehmen häufig an der Newsgroup Microsoft. public. vstudio. Extensibility Teil. Diese Newsgroup ist eine verwaltete Newsgroup. Wenn Sie ein universeller MSDN-Abonnent sind, stellen Sie sicher, dass Sie einen No-Spam-alias registrieren, damit Microsoft Antworten kann.
 
 ### <a name="msdn-forums"></a>MSDN-Foren
- Die [MSDN-Foren](https://social.msdn.microsoft.com/Forums/en-US/home) bieten eine weitere Möglichkeit, mit Peers und Experten zu chatten. Die grafische Benutzeroberfläche (User Interface, UI) der Foren ist so konzipiert, dass Sie einfacher zu verwenden sind als Newsgroups. Das [Visual Studio-Erweiterbarkeits Forum](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) ist ein guter Ausgangspunkt für die Suche nach Antworten auf Fragen zur Erweiterbarkeit. Suchen Sie immer, bevor Sie eine Frage stellen, weil eine andere Person möglicherweise bereits dieselbe Frage gestellt hat.
+ Die [MSDN-Foren](https://social.msdn.microsoft.com/Forums/en-US/home) bieten eine weitere Möglichkeit, mit Peers und Experten zu chatten. Die grafische Benutzeroberfläche (User Interface, UI) der Foren ist so konzipiert, dass Sie einfacher zu verwenden sind als Newsgroups. Das [Visual Studio-Erweiterbarkeits Forum](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) ist ein guter Ausgangspunkt für die Suche nach Antworten auf Fragen zur Erweiterbarkeit. Suchen Sie immer, bevor Sie eine Frage stellen, weil eine andere Person möglicherweise bereits dieselbe Frage gestellt hat.
 
 ### <a name="visual-studio-gallery"></a>Visual Studio Gallery
  Der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ist der Ort für Erweiterungen und Beispielcode. Sie finden Tools, die Ihre Produktivität und Benutzer Leistung mit Visual Studio verbessern, Beispielanwendungen, die zeigen, wie VSPackages und die Managed Extensibility Framework (MEF) und andere Arten von Beispielen verwendet werden.
@@ -62,6 +62,6 @@ Fragen zu Premier Support angeboten in Verbindung mit dem VSIP-Programm können 
 
 Informationen zu einzelnen Supportanfragen finden Sie unter [individuelle Supportanfragen](https://support.microsoft.com/supportforbusiness/productselection).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sprechen Sie mit uns](../ide/feedback-options.md)
