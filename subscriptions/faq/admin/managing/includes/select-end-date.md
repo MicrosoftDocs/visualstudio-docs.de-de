@@ -1,18 +1,18 @@
 ---
 title: Wie kann ich ein Enddatum für ein Abonnement auswählen?
 description: Abonnements werden immer unter Verwendung des besten verfügbaren Enddatums zugewiesen. Wenn Ihr Vertrag beispielsweise Bestellungen mit einem Enddatum von...
-ms.faqid: group1_7
+ms.faqid: group1_8
 ms.topic: include
 ms.assetid: 387800f0-e420-496b-af7e-4f0cd7e4898b
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: efb6d2b7abfc145bb7cca3b092ae360a670db41d
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 30ed8269681a46650197f41664904c8aeac063a5
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386379"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157945"
 ---
 ## <a name="how-can-i-select-an-end-date-for-a-subscription"></a>Wie kann ich ein Enddatum für ein Abonnement auswählen?
 
