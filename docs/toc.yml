@@ -178,6 +178,8 @@
       href: ide/index-writing-code.yml
     - name: Navigieren in der IDE
       href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: Verwenden der Suche in Visual Studio
+      href: ide/visual-studio-search.md
     - name: Projektmappen und Projekte
       items:
         - name: Arbeiten mit Projektmappen und Projekten
@@ -964,7 +966,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Verweis
+- name: Referenz
   items:
     - name: Tastenkombinationen
       items:
