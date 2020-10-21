@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037223"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928107"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -45,7 +45,7 @@ Im Folgenden finden Sie Beispiele von allgemeinen Lab-Umgebungstopologien:
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Verwenden der Cloud mit Azure Pipelines oder Build und Release in Team Foundation Server
 
-Sie können automatisierte Tests und das automatisierte Erstellen, Bereitstellen und Testen mit den [Build und Release](/azure/devops/pipelines/index?view=vsts)-Features von Team Foundation Server (TFS) und Azure Test Plans durchführen. Vorteile sind unter anderem:
+Sie können automatisierte Tests und das automatisierte Erstellen, Bereitstellen und Testen mit den [Build und Release](/azure/devops/pipelines/index?view=vsts&preserve-view=true)-Features von Team Foundation Server (TFS) und Azure Test Plans durchführen. Vorteile sind unter anderem:
 
 * Sie benötigen keinen Buildcontroller oder Testcontroller.
 * Der Test-Agent wird über einen Task als Teil des Builds oder des Releases installiert.
@@ -94,7 +94,7 @@ Es gibt zwei Lab-Umgebungstypen, die Sie mit Visual Studio Lab Management erstel
 > [!NOTE]
 > Lab Management unterstützt SCVMM 2016 nicht.
 
-Informationen zu SCVMM finden Sie unter [Virutal Machine Manager](/azure/devops/pipelines/?view=vsts).
+Informationen zu SCVMM finden Sie unter [Virutal Machine Manager](/azure/devops/pipelines/?view=vsts&preserve-view=true).
 
 Standard- und SCVMM-Umgebungen unterstützen viele derselben Funktionen. Es müssen jedoch wichtige Unterschiede berücksichtigt werden. In der folgenden Tabelle werden die Features verglichen, die für Standard- und SCVMM-Umgebungen verfügbar sind.
 

@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536785"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298749"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Remotedebuggen von ASP.NET Core in IIS in Azure in Visual Studio
 
@@ -255,7 +255,7 @@ Laden Sie die Version der Remotetools herunter, die mit Ihrer Version von Visual
 
 6. Geben Sie den ersten Buchstaben des Namens Ihres Prozesses ein, um Ihre App schnell zu suchen.
 
-    * Wenn Sie das [prozessinterne Hostingmodell](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) unter IIS verwenden, wählen Sie den richtigen **w3wp.exe**-Prozess aus. Ab .NET Core 3 ist dies der Standardprozess.
+    * Wenn Sie das [prozessinterne Hostingmodell](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) unter IIS verwenden, wählen Sie den richtigen **w3wp.exe**-Prozess aus. Ab .NET Core 3 ist dies der Standardprozess.
 
     * Wählen Sie andernfalls den Prozess **dotnet.exe** aus. (Dies ist das prozessexterne Hostingmodell.)
 
