@@ -1,5 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer in Visual Studio | Microsoft-Dokumentation'
+title: 'Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer | Microsoft-Dokumentation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015698"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298029"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer in Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer
+
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein in SharePoint Designer 2010 erstellter wiederverwendbarer Workflow in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflow Projekt importiert wird.
 
  Workflows, die in SharePoint Designer oder *deklarativen Workflows*erstellt wurden, bestehen aus [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Anweisungen anstelle von Code. SharePoint Designer 2010 führt wieder *verwendbare Workflows*ein, bei denen es sich um Portable, deklarative Workflows handelt, die von verschiedenen Listen in SharePoint-Websites verwendet werden können.
@@ -186,7 +188,7 @@ ms.locfileid: "86015698"
 
      Dadurch wird die Liste sofort angezeigt, wenn Sie das Projekt Debuggen.
 
-11. Da durch die wieder **verwendbare SharePoint 2010-Workflow Vorlage importieren** nicht die Zuordnungs Eigenschaftswerte für den importierten Workflow importiert werden, müssen Sie diese eingeben. Gehen Sie dazu wie folgt vor:
+11. Da durch die wieder **verwendbare SharePoint 2010-Workflow Vorlage importieren** nicht die Zuordnungs Eigenschaftswerte für den importierten Workflow importiert werden, müssen Sie diese eingeben. Gehen Sie dazu folgendermaßen vor:
 
     1. Wählen Sie in **Projektmappen-Explorer**den Knoten **SPD_Workflow_TestFT** aus.
 
@@ -263,4 +265,4 @@ ms.locfileid: "86015698"
 ## <a name="see-also"></a>Weitere Informationen
 - [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
-- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

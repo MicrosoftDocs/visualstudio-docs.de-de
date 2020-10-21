@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543467"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298441"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Gewusst wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML
   Das Element " **Menüband (visueller Designer)** " unterstützt nicht alle möglichen Typen der Menü Band Anpassung. Um das Menüband auf Erweiterte Weise anzupassen, können Sie das Menüband aus dem Designer in Menüband-XML exportieren und den XML-Code direkt bearbeiten.
@@ -66,7 +67,7 @@ ms.locfileid: "85543467"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
-- [Menüband-Designer](../vsto/ribbon-designer.md)
+- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

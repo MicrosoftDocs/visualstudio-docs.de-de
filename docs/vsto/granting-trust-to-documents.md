@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d245ddf00e4005b763bcd4437d3f8c18d05291e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a631e8d8cffe6bfde925dfbae4a7350e6a0ef95a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986043"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298615"
 ---
 # <a name="grant-trust-to-documents"></a>Gewähren von Vertrauenswürdigkeit für Dokumente
   Ein Projekt auf Dokumentebene verfügt über die gleichen Sicherheitsanforderungen wie Projekte auf Anwendungsebene: Signieren der Manifeste mit einem Zertifikat oder durch Klicken auf die vertrauenswürdige Eingabeaufforderung. Darüber hinaus muss sich das Dokument oder die Arbeitsmappe in einem Verzeichnis befinden, das als vertrauenswürdiger Speicherort festgelegt ist.
@@ -41,7 +41,7 @@ ms.locfileid: "72986043"
 
 - Obwohl das Dokument selbst durch die Verwendung der vertrauenswürdigen Speicherorte vertrauenswürdig ist, sind zusätzliche Berechtigungen erforderlich, damit die Anpassung als vertrauenswürdig eingestuft wird. Sie können der Anpassung volle Vertrauenswürdigkeit gewähren, indem Sie die Manifeste mit einem Zertifikat signieren, auf die Vertrauensstellungs Aufforderung klicken oder die Office-Projekt Mappe im Verzeichnis " *Programme* " installieren.
 
-- Sie können das Dokument oder die Arbeitsmappe einer Projektmappe auf Dokumentebene im selben Verzeichnis wie die Assembly oder in einem anderen Verzeichnis speichern. Beispielsweise könnte sich das Dokument auf einem SharePoint-Server befinden, und die Assembly könnte auf einer Dateifreigabe im Netzwerk vorhanden sein. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer Office-Projekt Mappe auf Dokument Ebene auf einem SharePoint-Server mithilfe von ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Sie können das Dokument oder die Arbeitsmappe einer Projektmappe auf Dokumentebene im selben Verzeichnis wie die Assembly oder in einem anderen Verzeichnis speichern. Beispielsweise könnte sich das Dokument auf einem SharePoint-Server befinden, und die Assembly könnte auf einer Dateifreigabe im Netzwerk vorhanden sein. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer Office-Projekt Mappe auf Dokument Ebene auf einem SharePoint-Server mithilfe von ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Gewähren von Vertrauenswürdigkeit für Office-Lösungen](../vsto/granting-trust-to-office-solutions.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255336"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298053"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit
 
@@ -295,13 +296,13 @@ Weitere Informationen zum Anpassen der Office-Benutzeroberfläche finden Sie in 
 
 - Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu Outlook. Weitere Informationen finden Sie unter [benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)
 - [Gewusst wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Menüband-Designer](../vsto/ribbon-designer.md)
+- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Übersicht über das Ribbon-Objektmodell](../vsto/ribbon-object-model-overview.md)
 - [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)

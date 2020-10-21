@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951180"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298460"
 ---
 # <a name="custom-document-properties-overview"></a>Übersicht über benutzerdefinierte Dokumenteigenschaften
 
@@ -55,5 +55,5 @@ Diese Eigenschaft enthält eine Zeichenfolge, die Details zum Bereitstellungs Ma
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md)
 - [Anwendungs-und Bereitstellungs Manifeste in Office-Lösungen](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Gewusst wie: Veröffentlichen einer Office-Projekt Mappe mit ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Gewusst wie: Veröffentlichen einer Office-Projekt Mappe mit ClickOnce](/previous-versions/bb386095(v=vs.110))
 - [Gewusst wie: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften](../vsto/how-to-create-and-modify-custom-document-properties.md)

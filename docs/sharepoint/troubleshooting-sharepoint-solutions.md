@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661889"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298391"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Problembehandlung bei SharePoint-Lösungen
-  Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow Lösungen](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow Lösungen](/previous-versions/bb386166(v=vs.100)).
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Tokeneinschränkungen in visuellen Sandkasten-Webparts
  Visuelle Webparts in Sandkastenlösungen können Standardtokens wie $SPUrl, die die SharePoint-Laufzeit unterstützt, nicht verarbeiten. Daher wird die URL nicht ausgelöst, und Sie können den Inhalt nicht in der Entwurfsansicht im visuellen Webpartdesigner anzeigen, wenn Sie wie im folgenden Beispiel in einem Skriptelement direkt auf ihn verweisen:
@@ -99,7 +99,7 @@ ms.locfileid: "73661889"
  Nachdem Sie eine Standort Definition mithilfe einer nicht englischen Version von erstellt und bereitgestellt [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] haben (d. h. eine Version mit einem [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] anderen Gebiets Schema als 1033), wird die Registerkarte **SharePoint-Anpassungen** nicht im Feld **Vorlagen Auswahl** angezeigt, und die neue Website Vorlage wird nicht auf der Seite **neue SharePoint-Website** angezeigt.
 
 ### <a name="error-message"></a>Fehlermeldung
- Keine
+ Keine.
 
 ### <a name="resolution"></a>Lösung
  Dieses Problem tritt aufgrund eines falschen Werts in der **Pfad** -Eigenschaft für die webtemp-Site Definitions Konfigurationsdatei auf, z. b. *webtemp_SiteDefinitionProject1.xml*. Ändern Sie in der Eigenschaft **Pfad** für die webtemp-Datei, die sich unter dem **Bereitstellungs Speicherort**befindet, 1033 in das entsprechende Gebiets Schema [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Soll also beispielsweise das Gebietsschema für Japanisch verwendet werden, ändern Sie den Wert zu "1041". Weitere Informationen finden Sie unter [Von Microsoft zugewiesene Gebietsschemabezeichner (LCIDs)](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
@@ -139,7 +139,7 @@ ms.locfileid: "73661889"
  Wenn Sie ein Ereignisempfängerprojekt erstellen und Sie bestimmte Webereignisse auswählen, z. B. "eine Website wird gelöscht", tritt das Ereignis nie ein.
 
 ### <a name="error-message"></a>Fehlermeldung
- Keine
+ Keine.
 
 ### <a name="resolution"></a>Lösung
  Dieses Problem tritt auf, da der Funktionsbereich „Site“ sein muss, um Ereignisse auf Websiteebene zu behandeln, der Standardfunktionsbereich für Ereignisempfängerprojekte ist jedoch „Internet“. Die betroffenen Webereignisse sind:
@@ -263,7 +263,7 @@ ms.locfileid: "73661889"
  Wenn Sie eine SharePoint-Lösung exportieren, die Projektmappe in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] importieren und dann wieder auf der gleichen Website bereitstellen, von der sie exportiert wurde, wird die ursprüngliche SharePoint-Lösung ersetzt. Dieses Problem tritt nicht auf, wenn Sie die Projektmappe auf einem Server bereitstellen, auf dem die ursprüngliche Projektmappe nicht aktiviert ist.
 
 ### <a name="error-message"></a>Fehlermeldung
- Keine
+ Keine.
 
 ### <a name="resolution"></a>Lösung
  Um zu verhindern, dass eine Projektmappe auf der Website überschreiben wird, von der sie exportiert wurde, ändern Sie die GUIDS der SolutionID und der Funktions-IDs aller importierten Funktionen im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Projekt.

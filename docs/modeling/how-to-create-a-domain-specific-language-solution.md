@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541790"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298655"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
 Eine domänenspezifische Sprache (DSL) wird mithilfe einer spezialisierten Visual Studio-Projekt Mappe erstellt.
@@ -33,7 +33,7 @@ Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Kompo
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer domänenspezifischen Sprachlösung
+## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer Domain-Specific-Sprachlösung
 
 1. Starten Sie den DSL-Assistenten, indem Sie ein neues **Domänen spezifisches sprach-Designer** -Projekt erstellen.
 
@@ -48,9 +48,9 @@ Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Kompo
 
 2. Wählen Sie eine DSL-Vorlage aus.
 
-    Wählen Sie auf der Seite **Optionen für domänenspezifische Sprache auswählen** eine der Lösungs Vorlagen aus, z. b. **minimale Sprache**. Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt.
+    Wählen Sie auf der Seite Optionen für die **Domain-Specific Sprache auswählen** eine der Lösungs Vorlagen aus, z. b. **minimale Sprache**. Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt.
 
-    Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Lösungs Vorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Domain-Specific-sprach Lösungs Vorlage](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
 3. Geben Sie auf der Seite **Dateierweiterung** eine Dateierweiterung ein. Sie muss auf Ihrem Computer und auf allen Computern, auf denen Sie die DSL installieren möchten, eindeutig sein. Die Meldung " **keine Anwendungen oder Visual Studio-Editoren" sollte diese Erweiterung verwenden**.
 
@@ -70,7 +70,7 @@ Bevor Sie dieses Verfahren starten können, installieren Sie die folgenden Kompo
 
 ### <a name="solution-settings-page"></a>Seite "Lösungs Einstellungen"
  **Auf welcher Vorlage möchten Sie Ihre domänenspezifische Sprache aufbauen?**
-Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt. Die verschiedenen Vorlagen bieten praktische Ausgangspunkte. Wenn Sie eine Projektmappenvorlage auswählen, zeigt der Assistent eine Beschreibung an. Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Lösungs Vorlage für eine domänenspezifische Sprache](../modeling/choosing-a-domain-specific-language-solution-template.md).
+Wählen Sie eine Vorlage aus, die der zu erstellenden DSL ähnelt. Die verschiedenen Vorlagen bieten praktische Ausgangspunkte. Wenn Sie eine Projektmappenvorlage auswählen, zeigt der Assistent eine Beschreibung an. Weitere Informationen zu Lösungs Vorlagen finden Sie unter [Auswählen einer Domain-Specific-sprach Lösungs Vorlage](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Wie möchten Sie Ihre domänenspezifische Sprache benennen?**
 Der Standardwert ist der Projektmappenname. Der Code wird aus diesem Wert generiert. Er muss als c#-Klassenname gültig sein.
@@ -114,9 +114,9 @@ Standardmäßig wird ein Name verwendet, der aus Ihrem Unternehmen und ihren Pro
 
  **Vorhandenen Schlüssel mit starkem Namen verwenden** Verwenden Sie diese Option, wenn Sie Ihre DSL in eine andere Assembly integrieren möchten.
 
- Weitere Informationen zu starken Namen finden Sie unter [Erstellen und verwenden](/dotnet/standard/assembly/create-use-strong-named)von Assemblys mit starkem Namen.
+ Weitere Informationen zu starken Namen finden Sie unter [Erstellen und Verwenden von Strong-Named](/dotnet/standard/assembly/create-use-strong-named)Assemblys.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
-- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

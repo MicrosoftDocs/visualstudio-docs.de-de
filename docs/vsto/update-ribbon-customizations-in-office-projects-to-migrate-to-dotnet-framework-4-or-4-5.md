@@ -1,5 +1,6 @@
 ---
-title: Aktualisieren von Menü Band Anpassungen in Office-Projekten, die zu .NET Framework 4, 4,5 migriert wurden
+title: Aktualisieren von Multifunktionsleisten-Anpassungen zu .NET Framework 4,5 migriert
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254351"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298600"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualisieren von Menü Band Anpassungen in Office-Projekten, die Sie zum .NET Framework 4 oder zum .NET Framework 4,5 migrieren
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Aktualisieren von Multifunktionsleisten-Anpassungen zu .NET Framework 4,5 migriert
+
   Wenn das Projekt eine Menü Band Anpassung enthält, die mit dem Projekt Element **Menüband (visueller Designer)** erstellt wurde, müssen Sie die folgenden Änderungen am Projekt Code vornehmen, wenn das Ziel Framework in oder höher geändert wird [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] .
 
 - Ändern Sie den generierten Menübandcode.
@@ -183,6 +185,6 @@ Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Migrieren von Office-Projektmappen zu den .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
-- [Menüband-Designer](../vsto/ribbon-designer.md)
+- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)

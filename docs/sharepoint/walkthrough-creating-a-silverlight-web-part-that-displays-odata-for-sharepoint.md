@@ -1,5 +1,6 @@
 ---
 title: Erstellen eines Silverlight-Webparts, das odata für SharePoint anzeigt
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017168"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298500"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das odata für SharePoint anzeigt
   SharePoint 2010 macht seine Listen Daten mithilfe von odata verfügbar. In SharePoint wird der odata-Dienst vom Rest-Dienst listData. svc implementiert. Diese exemplarische Vorgehensweise veranschaulicht, wie ein SharePoint-Webpart erstellt wird, das eine Silverlight-Anwendung hostet. Die Silverlight-Anwendung zeigt die SharePoint-Ankündigungs Listen Informationen mithilfe von "listData. svc" an. Weitere Informationen finden Sie unter [SharePoint Foundation-Rest-Schnittstelle](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) und [Open Data Protocol](https://www.odata.org/).
@@ -68,7 +69,7 @@ ms.locfileid: "86017168"
 
 #### <a name="to-customize-the-silverlight-application"></a>So passen Sie die Silverlight-Anwendung an
 
-1. Fügen Sie in der Silverlight-Anwendung einen Assemblyverweis auf System. Windows. Data hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen oder Entfernen von verweisen mithilfe des Dialog Felds "Verweis hinzufügen](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)".
+1. Fügen Sie in der Silverlight-Anwendung einen Assemblyverweis auf System. Windows. Data hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen oder Entfernen von verweisen mithilfe des Dialog Felds "Verweis hinzufügen](/previous-versions/wkze6zky(v=vs.140))".
 
 2. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für **Verweise**, und wählen Sie dann **Dienstverweis hinzufügen**aus.
 

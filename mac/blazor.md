@@ -51,7 +51,7 @@ Was ist Blazor? Blazor ist ein Framework zum Erstellen von interaktiven, clients
 
    Visual Studio startet [Kestrel](/aspnet/core/fundamentals/servers/kestrel), öffnet `https://localhost:5001` in einem Browser und zeigt Ihre Blazor-Web-App an.
 
-   ![Blazor-Web-App in Microsoft-Edge](media/blazor-new-app-in-edge.png)
+   ![Blazor-Web-App in Microsoft Edge](media/blazor-new-app-in-edge.png)
 
 ## <a name="creating-a-new-no-locblazor-server-project"></a>Erstellen eines neuen Blazor Server-Projekts
 
@@ -71,7 +71,7 @@ Was ist Blazor? Blazor ist ein Framework zum Erstellen von interaktiven, clients
 
    Visual Studio startet [Kestrel](/aspnet/core/fundamentals/servers/kestrel), öffnet `https://localhost:5001` in einem Browser und zeigt Ihre Blazor-Web-App an.
 
-   ![Blazor-Web-App in Microsoft-Edge](media/blazor-new-app-in-edge.png)
+   ![Blazor-Web-App in Microsoft Edge](media/blazor-new-app-in-edge.png)
 
 ## <a name="no-locblazor-support-in-visual-studio-for-mac"></a>Blazor-Unterstützung in Visual Studio für Mac
 

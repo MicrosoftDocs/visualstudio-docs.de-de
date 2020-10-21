@@ -1,5 +1,6 @@
 ---
 title: Erstellen einer Website Spalte, eines Inhaltstyps und einer Liste für SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -19,14 +20,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015270"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298374"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websites palte, eines Inhaltstyps und einer Liste für SharePoint
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint
   Die folgenden Verfahren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Website Spalten – oder *Felder*– sowie einen Inhaltstyp erstellen, der die Websites Palten verwendet. Außerdem wird gezeigt, wie eine Liste erstellt wird, in der der neue Inhaltstyp verwendet wird.
 
  Diese exemplarische Vorgehensweise umfasst die folgenden Aufgaben:
@@ -239,7 +240,7 @@ ms.locfileid: "86015270"
      Der neue Datensatz wird in der Liste angezeigt.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Erstellen von Websites Palten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
+- [Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
 - [Gewusst wie: Erstellen eines benutzerdefinierten Feldtyps](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
 - [Inhaltstypen](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))
