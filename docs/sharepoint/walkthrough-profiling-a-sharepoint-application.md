@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017107"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298632"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Mit dem Visual Studio-Profiler können Sie den teuersten (langsamsten) Teil des Projekts suchen und eliminieren, auch bekannt als Langsamster *Pfad*.
@@ -275,4 +275,4 @@ ms.locfileid: "86017107"
 ## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Leistungs Sitzungen](../profiling/performance-session-overview.md)
 - [Einführung in die Leistungsprofil Erstellung](../profiling/beginners-guide-to-performance-profiling.md)
-- [Aufspüren von Anwendungsengpässen mit Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Aufspüren von Anwendungsengpässen mit Visual Studio Profiler](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

@@ -1,5 +1,6 @@
 ---
 title: Zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt wird
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15cfb7ebf2f4f71e892820206f0dd1d006639992
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14c468a806160fd31c84b164a4b995f904e71fc6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547510"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298489"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Gewusst wie: zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt wird
   Sie können die Funktion Information Rights Management (unm) von Microsoft Office verwenden, um die Berechtigungen für ein Dokument oder eine Arbeitsmappe einzuschränken. Standardmäßig darf der Code hinter einem eingeschränkten Microsoft Office Word-Dokument oder Microsoft Office Excel-Arbeitsmappe nicht ausgeführt werden. Sie können den Standardwert ändern, sodass die Erweiterungen des verwalteten Codes auf das Objektmodell zugreifen können und die Lösung funktioniert.

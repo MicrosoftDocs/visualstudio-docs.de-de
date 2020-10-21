@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Abrufen von Code aus VBA in einem Visual Basic Projekt'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841262"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298263"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Exemplarische Vorgehensweise: Abrufen von Code aus VBA in einem Visual Basic Projekt
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Microsoft Office Word aus VBA-Code (Visual Basic for Applications) im Dokument aufgerufen wird. Das Verfahren umfasst drei grundlegende Schritte: Hinzufügen einer Methode zur `ThisDocument` -Hostelementklasse, Verfügbarmachen der Methode für VBA-Code und Aufrufen der Methode aus VBA-Code im Dokument.
@@ -88,7 +89,7 @@ ms.locfileid: "90841262"
 
 7. Speichern Sie das Dokument, und beenden Sie Word.
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  Jetzt können Sie ein Projekt auf Dokumentebene für Word erstellen, das das zuvor erstellte Dokument mit Makros verwendet.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt

@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dccff7206aa9ef71596816d34a863695a10aff6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416548"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298508"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Verbessern der Leistung eines VSTO-Add-ins
   Sie können die Benutzererfahrung verbessern, indem Sie VSTO-Add-Ins optimieren, die Sie für Office-Anwendungen erstellen, sodass diese schnell gestartet und heruntergefahren, Elemente schnell geöffnet und andere Aufgaben rasch ausgeführt werden können. Wenn das VSTO-Add-In für Outlook bestimmt ist, können Sie das Risiko senken, dass das VSTO-Add-In aufgrund schwacher Leistung deaktiviert wird. Sie können die Leistung des VSTO-Add-Ins mithilfe der folgenden Strategien steigern:
@@ -113,8 +113,8 @@ ms.locfileid: "79416548"
 > [!NOTE]
 > Der gesamte Code, der das Office-Objektmodell aufruft, muss im Hauptthread ausgeführt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Bedarfs gesteuertes Laden von VSTO-Add-ins](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
-- [Verzögertes Laden der CLR in Office-Add-Ins](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
+- [Bedarfs gesteuertes Laden von VSTO-Add-ins](/archive/blogs/andreww/demand-loading-vsto-add-ins)
+- [Verzögertes Laden der CLR in Office-Add-Ins](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)
 - [Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)

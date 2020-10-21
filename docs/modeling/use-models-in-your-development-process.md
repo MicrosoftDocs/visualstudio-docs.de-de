@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4a15a6cd0d38ca06b1a0ae25be69a24d42ba8cb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115054"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298094"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -138,7 +138,7 @@ Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sic
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Verwenden von Modellen in der Agile-Entwicklung](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Verwenden von Modellen in der Agile-Entwicklung](/previous-versions/ff398061(v=vs.140))
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
 - [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)
 - [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)

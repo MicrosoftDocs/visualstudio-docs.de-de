@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841029"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297948"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Exemplarische Vorgehensweise: Abrufen von Code aus VBA in einem Visual c#-Projekt
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Microsoft Office Excel aus VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird. Das Verfahren umfasst drei grundlegende Schritte: Hinzufügen einer Methode zur `Sheet1` -Hostelementklasse, Verfügbarmachen der Methode für VBA-Code und Aufrufen der Methode aus VBA-Code in der Arbeitsmappe.
@@ -66,7 +66,7 @@ ms.locfileid: "90841029"
 
 1. Starten Sie Excel.
 
-2. Speichern Sie das aktive Dokument als **Excel-Arbeitsmappe mit Makros ( \* . xlsm)** mit dem Namen **WorkbookWithVBA**. Speichern Sie es an einem geeigneten Speicherort, z. B. auf dem Desktop.
+2. Speichern Sie das aktive Dokument als **Excel-Macro-Enabled Arbeitsmappe ( \* . xlsm)** mit dem Namen **WorkbookWithVBA**. Speichern Sie es an einem geeigneten Speicherort, z. B. auf dem Desktop.
 
 3. Klicken Sie im Menüband auf die Registerkarte **Entwickler** .
 
@@ -90,7 +90,7 @@ ms.locfileid: "90841029"
 
 7. Speichern Sie das Dokument, und beenden Sie Excel.
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  Jetzt können Sie ein Projekt auf Dokumentebene für Excel erstellen, das die zuvor erstellte Arbeitsmappe mit Makros verwendet.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
@@ -161,7 +161,7 @@ ms.locfileid: "90841029"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Fügen Sie der `Sheet1`-Klasse die folgende Methode hinzu. Mit dieser Methode wird die <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> -Methode überschrieben, um die aktuelle Instanz der `Sheet1` -Klasse zurückzugeben.
+3. Fügen Sie der `Sheet1`-Klasse die folgende Methode hinzu. Mit dieser Methode wird die <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> -Methode überschrieben, um die aktuelle Instanz der `Sheet1` -Klasse zurückzugeben.
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
