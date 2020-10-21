@@ -8,19 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe6811f4deaa5958b050a8f93f74e48e2dc73f38
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4e9aea22a63f2eee8f83ee597ed11c90df7f6b1a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809288"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099400"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Übersicht von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
 Visual Studio kann eine simulierte Auslastung für Ihre App mithilfe von physischen oder virtuellen Computern generieren. Diese Computer müssen als einzelne Testcontroller und Test-Agents eingerichtet werden. Mithilfe des Testcontrollers und der Test-Agents können Sie eine größere Auslastung generieren als mit nur einem Computer.
 
 > [!NOTE]
-> Sie können ebenfalls cloudbasierte Auslastungstests verwenden, um virtuelle Computer bereitzustellen, die die Auslastung vieler Benutzer generieren, die gleichzeitig auf Ihre Website zugreifen. Die Verwendung des Setups mit Testcontroller/Test-Agent auf in der Cloud gehosteten virtuellen Computern wird jedoch nicht unterstützt. Weitere Informationen zu cloudbasierten Auslastungstests finden Sie unter [Run load tests using Azure Test Plans (Ausführen von Auslastungstests mithilfe von Azure Test Plans)](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> Sie können ebenfalls cloudbasierte Auslastungstests verwenden, um virtuelle Computer bereitzustellen, die die Auslastung vieler Benutzer generieren, die gleichzeitig auf Ihre Website zugreifen. Die Verwendung des Setups mit Testcontroller/Test-Agent auf in der Cloud gehosteten virtuellen Computern wird jedoch nicht unterstützt. Weitere Informationen zu cloudbasierten Auslastungstests finden Sie unter [Run load tests using Azure Test Plans (Ausführen von Auslastungstests mithilfe von Azure Test Plans)](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570556"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099348"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Toolboxelemente auswählen, WPF-Komponenten
 
@@ -41,7 +41,7 @@ Listet die Namen der WPF-Steuerelemente auf, für die Einträge in der Registrie
 
 **Namespace**
 
-Zeigt die Hierarchie des [.NET-API](/dotnet/api/?view=netframework-4.7)-Namespaces an, der die Struktur der Komponente definiert. Wenn Sie nach dieser Spalte sortieren, werden die verfügbaren Komponenten innerhalb der einzelnen auf dem Computer installierten .NET-Namespaces aufgeführt.
+Zeigt die Hierarchie des [.NET-API](/dotnet/api/?view=netframework-4.7&preserve-view=true)-Namespaces an, der die Struktur der Komponente definiert. Wenn Sie nach dieser Spalte sortieren, werden die verfügbaren Komponenten innerhalb der einzelnen auf dem Computer installierten .NET-Namespaces aufgeführt.
 
 **Assemblyname**
 

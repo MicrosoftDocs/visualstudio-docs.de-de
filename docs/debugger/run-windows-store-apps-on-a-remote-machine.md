@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348118"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "92298710"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debuggen von UWP-Apps auf Remotecomputern in Visual Studio
 
@@ -108,5 +108,5 @@ Das Remotedebuggen funktioniert wie das lokale Debuggen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Advanced remote deployment options (Erweiterte Optionen für die Remotebereitstellung)](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
-- [Testen von UWP-Apps mit Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)
+- [Testen von UWP-Apps mit Visual Studio](../test/unit-test-your-code.md)
 - [Debuggen von UWP-Apps in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

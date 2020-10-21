@@ -9,12 +9,12 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a9b6880b2f71079b6b70eeb6c2e9f7b4e81fc19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65d311ec522e5ba5b5c92193a8af3e53a9e9eb35
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288740"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099322"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testcomputers
 
@@ -39,7 +39,7 @@ In den folgenden Themen wird veranschaulicht, wie Sie Adapter für diagnostische
 |Aufgaben|Verwandte Themen|
 |-|-----------------------|
 |**Erstellen eines Adapters für diagnostische Daten:** Sie erstellen einen Adapter für diagnostische Daten, indem Sie eine Klassenbibliothek erstellen, und Sie können dann die APIs des Adapters für diagnostische Daten verwenden, um die gewünschten Informationen zu sammeln oder das Testsystem zu beeinflussen, das Sie zum Ausführen der Tests verwenden.|-   [Vorgehensweise: Erstellen eines Adapters für diagnostische Daten](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Auswählen eines benutzerdefinierten Adapters für diagnostische Daten, der beim Ausführen der Tests verwendet wird:** Sie können den Adapter für diagnostische Daten auswählen, der für die Testeinstellungen verwendet werden soll, d. h. den Adapter, der zum Ausführen der Tests verwendet wird.|-   [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Auswählen eines benutzerdefinierten Adapters für diagnostische Daten, der beim Ausführen der Tests verwendet wird:** Sie können den Adapter für diagnostische Daten auswählen, der für die Testeinstellungen verwendet werden soll, d. h. den Adapter, der zum Ausführen der Tests verwendet wird.|-   [Collect diagnostic data while testing (Azure Test Plans) (Sammeln von Diagnosedaten beim Testen (Azure Test Plans))](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)<br />-   [Collect diagnostic data in manual tests (Azure Test Plans) (Sammeln von Diagnosedaten in manuellen Tests (Azure Test Plans))](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)|
 
 ## <a name="see-also"></a>Siehe auch
 

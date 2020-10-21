@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1f81c665bc742daf7e2b0e34a849aad566362a28
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75755574"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099335"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Schritt 6: Verwenden der Django-Webprojektvorlage für Umfragen
 
@@ -376,4 +376,4 @@ Die Ausführung einer Web-App auf Ihrem Entwicklungscomputer ist nur ein Schritt
 
 - Ändern Sie die App von SQLite in einen Datenspeicher auf Produktionsebene, wie z.B. MySQL, PostgreSQL und SQL Server (können alle in Azure gehostet werden). Wie in [When to use SQLite (Empfohlene Verwendung von SQLite)](https://www.sqlite.org/whentouse.html) (sqlite.org) beschrieben, ist SQLite hervorragend für Standorte mit niedrigem bis mittleren Verkehrsaufkommen und weniger als 100.000 Treffern/Tag geeignet, wird aber bei einem höheren Verkehrsaufkommen nicht empfohlen. Da SQLite zudem auf einen einzelnen Computer beschränkt ist, kann es nicht in jedem Szenario mit mehreren Servern, z.B. Lastenausgleich und geografische Replikation, verwendet werden. Informationen über die Unterstützung von Django für andere Datenbanken finden Sie unter [Database setup (Datenbankeinrichtung)](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Sie können auch die [Azure SDK für Python](/azure/python/) verwenden, um mit Azure-Speicherdiensten wie Tabellen und Blobs zu arbeiten.
 
-- Richten Sie eine CI/CD-Pipeline für einen Dienst wie Azure DevOps ein. Zusätzlich zur Arbeit mit der Quellcodeverwaltung (in Azure Repos, GitHub oder anderweitig) können Sie ein Azure DevOps-Projekt automatisch Ihre Komponententests als Voraussetzung für das Release ausführen lassen und die Pipeline so konfigurieren, dass vor der Bereitstellung in der Produktionsumgebung die Bereitstellung auf dem Stagingserver erfolgt, wodurch weitere Tests ermöglicht werden. Azure DevOps wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter [Erstellen einer CI/CD-Pipeline für Python mit dem Azure DevOps-Projekt](/azure/devops-project/azure-devops-project-python?view=vsts) sowie in der allgemeinen [Azure DevOps-Dokumentation](/azure/devops/?view=vsts).
+- Richten Sie eine CI/CD-Pipeline für einen Dienst wie Azure DevOps ein. Zusätzlich zur Arbeit mit der Quellcodeverwaltung (in Azure Repos, GitHub oder anderweitig) können Sie ein Azure DevOps-Projekt automatisch Ihre Komponententests als Voraussetzung für das Release ausführen lassen und die Pipeline so konfigurieren, dass vor der Bereitstellung in der Produktionsumgebung die Bereitstellung auf dem Stagingserver erfolgt, wodurch weitere Tests ermöglicht werden. Azure DevOps wird zudem in Ihre Überwachungslösungen, wie z.B. App Insights, integriert und schließt den gesamten Zyklus mit agilen Planungstools ab. Weitere Informationen finden Sie unter [Erstellen einer CI/CD-Pipeline für Python mit dem Azure DevOps-Projekt](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true) sowie in der allgemeinen [Azure DevOps-Dokumentation](/azure/devops/?view=vsts&preserve-view=true).
