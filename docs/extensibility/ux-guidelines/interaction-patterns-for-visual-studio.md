@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184405"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467647"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Interaktionsmuster für Visual Studio
 ## <a name="overview"></a>Übersicht
  Ein Entwurfsmuster ist im Allgemeinen der Kern eines Entwurfs, der in bestimmten Situationen angewendet werden kann, um Probleme mit ähnlichen Sätzen von Einschränkungen zu lösen. Funktions-und System-Designer verwenden diese Entwurfsmuster als Ausgangspunkte, die dann an ihre jeweilige Situation angepasst werden können.
 
- Visual Studio verfügt über eine Bibliothek mit allgemeinen Interaktionsmustern, die beim Aufbau neuer Features berücksichtigt werden sollten. Es gibt zwei Kern Kontexte für unsere Entwurfsmuster: Visual Studio Client (devenv) und Visual Studio Code Spaces (früher Visual Studio Online). Für einige Entwurfs Probleme gibt es ein allgegenwärtiges Muster, das in allen Situationen gut funktioniert. In vielen Fällen kann die Lösung jedoch für die Benutzeroberfläche, die in einem Browser angezeigt wird und die in einer Client Anwendung gehostet wird, unterschiedlich sein.
+ Visual Studio verfügt über eine Bibliothek mit allgemeinen Interaktionsmustern, die beim Aufbau neuer Features berücksichtigt werden sollten. Es gibt zwei Kern Kontexte für unsere Entwurfsmuster: Visual Studio-Client (devenv) und GitHub-codespaces (früher Visual Studio Online). Für einige Entwurfs Probleme gibt es ein allgegenwärtiges Muster, das in allen Situationen gut funktioniert. In vielen Fällen kann die Lösung jedoch für die Benutzeroberfläche, die in einem Browser angezeigt wird und die in einer Client Anwendung gehostet wird, unterschiedlich sein.
 
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio-Client Mustertypen
 
@@ -40,7 +40,7 @@ ms.locfileid: "84184405"
 
   - [Fenster Interaktionen](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
 
-  - [Toolfenster](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
+  - [Tool Fenster](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
   - [Konventionen für Dokument-Editor](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 

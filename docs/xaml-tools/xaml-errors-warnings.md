@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b740f0882edb2eae9f00bd7826543e7fe1b4597f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817267"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467556"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML-Fehler und -Warnungen
 
@@ -23,11 +23,14 @@ Bei der Erstellung von XAML analysiert Visual Studio den Code während Sie tippe
 
 Im Hintergrund analysieren mehrere Tools gleichzeitig die XAML. XAML-Fehler werden in einen der folgenden drei Typen unterteilt, je nach Tool, mit dem der Fehler erkannt wurde:
 
-|**Fehler erkannt von**|**Fehlercodeformat**|
-| - |-----------------|
-|XAML-Sprachdienst (XAML-Editor)|XLSxxxx|
-|XAML-Designer|XDGxxxx|
-|Bearbeiten und Fortfahren – XAML|XECxxxx|
+|**Fehler erkannt von**|**Fehlercodeformat**|**Visual Studio-Version**|
+| - |-----------------| - |
+|XAML-Sprachdienst (XAML-Editor)|XLSxxxx| Alle Versionen |
+|XAML-Designer|XDGxxxx| Alle Versionen | 
+|XAML – Bearbeiten und Fortfahren|XECxxxx| Visual Studio 2019 Version 16,1 oder früher |
+|Neuladen von XAML im laufenden Betrieb | Xhrxxxx | Visual Studio 2019 Version 16,2 oder höher |
+
+Weitere Informationen zum erneuten Branding der XAML-Bearbeitung & als XAML-Hot-Upload fortsetzen, finden Sie in den Anmerkungen zu dieser [Version](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling) .
 
 > [!Note]
 > Nicht alle Fehler oder Warnungen verfügen über einen entsprechenden Code. Solche Fehler sind in der Regel Fehler des XAML-Designers.
