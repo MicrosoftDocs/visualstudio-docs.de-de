@@ -1,5 +1,6 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
+description: Zeigen Sie das Änderungsprotokoll für Visual Studio-Tools für Unity (Windows) an. Sie erhalten eine Übersicht von Version 1.0.0.0 bis 4.7.0.0 und höher.
 ms.custom: ''
 ms.date: 7/30/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.openlocfilehash: f745cca14202c87386dc276b00e89fb70b399404
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87471518"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039437"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 
@@ -568,7 +569,7 @@ am 13. November 2018 veröffentlicht
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Rollback der Problemumgehung für ein Leistungsproblem von Unity, da Unity dieses behoben hat.
 
@@ -626,7 +627,7 @@ Veröffentlichung: 24. Juli 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - (Aus 3.9.0.0 bereitgestellt) Rollback der Problemumgehung für ein Leistungsproblem von Unity, da Unity dieses behoben hat.
 
@@ -636,7 +637,7 @@ Veröffentlichung: 7. Juli 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Vorübergehende Problemumgehung für ein Leistungsproblem von Unity: Zwischenspeichern von MonoIslands beim Generieren von Projekten.
 
@@ -676,7 +677,7 @@ Veröffentlichung: 30. Mai 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Konvertieren Sie keine portablen PDB-Dateien mehr in MDB-Dateien, wenn Sie die neue Unity-Runtime verwenden.
 
@@ -766,7 +767,7 @@ Veröffentlichung: 23. Februar 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Erkennung von Unity-Zielframework korrigiert.
 
@@ -826,7 +827,7 @@ Veröffentlichung: 10. Januar 2018
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Projekt-GUID-Berechnung für Playerprojekte korrigiert.
 
@@ -920,7 +921,7 @@ Veröffentlichung: 15. August 2017
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- **Projektgenerierung:**
+- **Project Generation:**
 
   - Korrigiert: Die Visual Studio-Projektmappengenerierung in Unity 5.5 und vorherigen Versionen.
 
@@ -1668,7 +1669,7 @@ Veröffentlichung: 25. März 2013
 
 - Vereinfachung des Remotedebuggens, da für Unity kein freigegebener Ordner mehr konfiguriert werden muss. Sie können jetzt aus Windows auf das Unity-Projekt zugreifen.
 
-- Installation eines benutzerdefinierten Unity-Profil als standardmäßiges .NET-Zielprofil. Dies behebt alle falsch positiven Ergebnisse, die ReSharper anzeigen könnte.
+- Installation eines benutzerdefinierten Unity-Profils als .NET-Standardzielprofil. Dies behebt alle falsch positiven Ergebnisse, die ReSharper anzeigen könnte.
 
 - Umgehung eines Unity-Skript-Engine-Fehlers, damit der Debugger bei nicht ordnungsgemäß registrierten Threads nicht unterbricht.
 
@@ -1678,7 +1679,7 @@ Veröffentlichung: 25. März 2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
-- Korrektur unseres benutzerdefinierten .NET-Profils.
+- Korrektur des benutzerdefinierten .NET-Profils
 
 - Korrektur der Designintegration, wodurch unsere Probleme mit dem dunklen Visual Studio 2012-Design behoben werden.
 
@@ -1751,7 +1752,7 @@ Veröffentlichung: 3. Januar 2013
 
 - Korrektur einer Ausnahme, die auftreten könnte, wenn UnityScript- und Boo-Ausdrücke ausgewertet werden.
 
-- Korrektur einer Regression, bei der beim Ändern der .NET-API-Ebene in Unity keine Aktualisierung der Projektdateien ausgelöst würde.
+- Korrektur einer Regression, bei der beim Ändern der .NET-API-Ebene in Unity keine Aktualisierung der Projektdateien ausgelöst wurde
 
 - Korrektur eines API-Fehlers, bei dem Benutzercode nicht am Handler des Protokollrückrufs teilnehmen kann.
 
@@ -1776,7 +1777,7 @@ Veröffentlichung: 28. November 2012
 
 - Korrektur einer Regression im Hintergrund von Unity-Projekt-Explorer in Visual Studio 2012.
 
-- Korrektur der Projekterstellung für Benutzer des vollständigen .NET-Profils.
+- Korrektur der Projekterstellung für Benutzer des vollständigen .NET-Profils
 
 - Korrektur der Projekterstellung für Benutzer des Ziels "Web".
 

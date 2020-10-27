@@ -1,5 +1,7 @@
 ---
 title: Dateieigenschaften, JavaScript
+description: Hier erfahren Sie, wie Sie Dateieigenschaften verwenden können, um anzugeben, welche Aktionen das Projektsystem für die Dateien ausführen soll.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -26,18 +28,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68926236"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947790"
 ---
 # <a name="file-properties-javascript"></a>Dateieigenschaften, JavaScript
 
 Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Projektsystem für die Dateien ausführen soll. Sie können Dateieigenschaften z.B. festlegen, um anzugeben, ob eine Datei als Ressourcendatei zum Paket hinzugefügt werden soll.
 
-Sie können eine beliebige Datei im Projektmappen-Explorer auswählen und deren Eigenschaften im Eigenschaftenfenster überprüfen. JavaScript-Dateien haben vier Eigenschaften: **In Ausgabeverzeichnis kopieren**, **Package Action**, **Dateiname** und **Dateipfad**.
+Sie können eine beliebige Datei im Projektmappen-Explorer auswählen und deren Eigenschaften im Eigenschaftenfenster überprüfen. JavaScript-Dateien haben vier Eigenschaften: **In Ausgabeverzeichnis kopieren** , **Package Action** , **Dateiname** und **Dateipfad** .
 
 ## <a name="file-properties"></a>Dateieigenschaften
 Dieser Abschnitt beschreibt die Eigenschaften, die JavaScript-Dateien gemeinsam haben.
@@ -48,13 +50,13 @@ Diese Eigenschaft gibt die Bedingungen an, unter denen die ausgewählte Quelldat
 ### <a name="package-action"></a>Paketaktion
 Die Eigenschaft **Paketaktion** gibt an, welche Aktionen Visual Studio für eine Datei durchführt, wenn ein Build ausgeführt wird. **Paketaktion** kann einen der folgenden Werte haben:
 
-- **Keine**: Die Datei ist nicht im Paketmanifest enthalten. Ein Beispiel ist eine Textdatei, die Dokumentation enthält, z.B. eine Readme-Datei.
+- **Keine** : Die Datei ist nicht im Paketmanifest enthalten. Ein Beispiel ist eine Textdatei, die Dokumentation enthält, z.B. eine Readme-Datei.
 
-- **Inhalt**: Die Datei ist im Paketmanifest enthalten. Dies ist z.B. der Standardwert für eine HTM-, JS, CSS, Image, Audio- oder Video-Datei.
+- **Inhalt** : Die Datei ist im Paketmanifest enthalten. Dies ist z.B. der Standardwert für eine HTM-, JS, CSS, Image, Audio- oder Video-Datei.
 
-- **Manifest**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird die Datei für die Eingabe verwendet, während das Paketmanifest generiert wird. Dies ist der Standardwert für die Datei „package.appxmanifest“.
+- **Manifest** : Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird die Datei für die Eingabe verwendet, während das Paketmanifest generiert wird. Dies ist der Standardwert für die Datei „package.appxmanifest“.
 
-- **Ressource**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird der Inhalt der Datei in der Indexdatei der Paketressource (Package Resource Index, PRI) indiziert, die in das Paketmanifest aufgenommen wird. Sie wird normalerweise für Ressourcendateien verwendet.
+- **Ressource** : Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird der Inhalt der Datei in der Indexdatei der Paketressource (Package Resource Index, PRI) indiziert, die in das Paketmanifest aufgenommen wird. Sie wird normalerweise für Ressourcendateien verwendet.
 
 Der Standardwert für **Paketaktion** richtet sich nach der Erweiterung der Datei, die Sie der Projektmappe hinzufügen.
 
@@ -76,10 +78,10 @@ Zeigt den Dateityp des Verweises an.
 ### <a name="file-version"></a>Dateiversion
 Zeigt die Dateiversion des Verweises an.
 
-### <a name="identity"></a>Identität
+### <a name="identity"></a>Identity
 Zeigt die Identität des Verweises an, der im Projekt verwendet wird, die in der Projektdatei gespeichert wird.
 
-### <a name="package"></a>Package
+### <a name="package"></a>Paket
 Zeigt den Namen des Paketmanifests an, das dem Verweis zugeordnet ist.
 
 ### <a name="resolved-path"></a>Aufgelöster Pfad
@@ -88,12 +90,12 @@ Zeigt den Pfad zum Verweis an, der im Projekt verwendet wird.
 ### <a name="sdk-path"></a>SDK-Pfad
 Zeigt den Pfad zur SDK-Datei an, auf die verwiesen wird.
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
 Zeigt den URI an, der in den HTML- oder JavaScript-Dateien enthalten sein muss, um die Datei als Quelldatei zu enthalten.
 
 ### <a name="version"></a>Version
 Zeigt die Version des Verweises an.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwalten von Projekt- und Projektmappeneigenschaften](../../ide/managing-project-and-solution-properties.md)
