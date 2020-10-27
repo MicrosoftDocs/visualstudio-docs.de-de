@@ -1,5 +1,7 @@
 ---
 title: Grundlagen zu Buildplattformen
+description: Hier erfahren Sie, wie Sie verschiedene Versionen von Projektmappen- und Projekteigenschaften speichern, die für verschiedene Zielplattformen in Visual Studio gelten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115066"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136653"
 ---
 # <a name="understand-build-platforms"></a>Grundlagen zu Buildplattformen
 
@@ -30,10 +32,10 @@ Sie können verschiedene Versionen von Projektmappen- und Projekteigenschaften s
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-[How to: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Vorgehensweise: Konfigurieren von Projekten für Zielplattformen](../ide/how-to-configure-projects-to-target-platforms.md)\
 Erläutert, wie ein Projekt für eine bestimmte Zielplattform konfiguriert wird.
 
-[How to: Konfigurieren von Projekten für mehrere Zielplattformen](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Erläutert, wie ein Projekt für mehrere Zielplattformen konfiguriert wird.
 
 ## <a name="see-also"></a>Siehe auch

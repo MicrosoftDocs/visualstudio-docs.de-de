@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290886"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136861"
 ---
 # <a name="how-msbuild-builds-projects"></a>So erstellt MSBuild Projekte
 
@@ -38,11 +38,11 @@ Informationen zum Erweitern des Projektmappenbuilds finden Sie unter [Anpassen d
 
 Bei Projekten, die in Visual Studio erstellt werden, müssen gegenüber einem direkten Aufruf von MSBuild (über die ausführbare MSBuild-Datei oder bei Verwendung des MSBuild-Objektmodells zum Starten eines Builds) einige wichtige Unterschiede berücksichtigt werden. Visual Studio verwaltet die Projektbuildreihenfolge für Visual Studio-Builds. MSBuild wird nur auf Ebene der einzelnen Projekte aufgerufen. Bei einem solchen Aufruf werden eine Reihe von booleschen Eigenschaften (`BuildingInsideVisualStudio`, `BuildProjectReferences`) festgelegt, die sich erheblich auf die Abläufe von MSBuild auswirken. Innerhalb der einzelnen Projekte erfolgt die Ausführung auf dieselbe Weise wie bei einem Aufruf über MSBuild. Die Unterschiede treten jedoch bei referenzierten Projekten auf. Wenn in MSBuild referenzierte Projekte erforderlich sind, erfolgt tatsächlich ein Build. Es werden also Aufgaben und Tools ausgeführt, und die Ausgabe wird generiert. Wenn ein Visual Studio-Build ein referenziertes Projekt findet, gibt MSBuild lediglich die erwarteten Ausgaben des referenzierten Projekts zurück. Die Erstellung der anderen Projekte wird Visual Studio überlassen. Visual Studio bestimmt die Buildreihenfolge und Aufrufe von MSBuild separat (nach Bedarf). Der gesamte Vorgang wird von Visual Studio gesteuert.
 
-Ein weiterer Unterschied tritt auf, wenn MSBuild mit einer Projektmappendatei aufgerufen wird. MSBuild analysiert die Projektmappendatei, erstellt eine standardmäßige XML-Eingabedatei, wertet diese Datei aus und führt sie als Projekt aus. Der Projektmappenbuild wird vor den Projekten ausgeführt. Bei der Erstellung über Visual Studio werden diese Schritte nicht ausgeführt. MSBuild hat zu keinem Zeitpunkt Zugang zur Projektmappendatei. Folglich gilt die Anpassung von Projektmappenbuilds (über *before.SolutionName.sln.targets* und *after.SolutionName.sln.targets*) nur für Builds, die über MSBuild.exe oder ein Objektmodell gestartet werden, nicht jedoch für Visual Studio-Builds.
+Ein weiterer Unterschied tritt auf, wenn MSBuild mit einer Projektmappendatei aufgerufen wird. MSBuild analysiert die Projektmappendatei, erstellt eine standardmäßige XML-Eingabedatei, wertet diese Datei aus und führt sie als Projekt aus. Der Projektmappenbuild wird vor den Projekten ausgeführt. Bei der Erstellung über Visual Studio werden diese Schritte nicht ausgeführt. MSBuild hat zu keinem Zeitpunkt Zugang zur Projektmappendatei. Folglich gilt die Anpassung von Projektmappenbuilds (über *before.SolutionName.sln.targets* und *after.SolutionName.sln.targets* ) nur für Builds, die über MSBuild.exe oder ein Objektmodell gestartet werden, nicht jedoch für Visual Studio-Builds.
 
 ### <a name="project-sdks"></a>Projekt-SDKs
 
-Das SDK-Feature für MSBuild-Projektdateien ist recht neu. Vor dieser Änderung wurden die *.targets*- und *.props*-Dateien, die den Buildprozess für einen bestimmten Projekttyp definiert haben, explizit von Projektdateien importiert.
+Das SDK-Feature für MSBuild-Projektdateien ist recht neu. Vor dieser Änderung wurden die *.targets* - und *.props* -Dateien, die den Buildprozess für einen bestimmten Projekttyp definiert haben, explizit von Projektdateien importiert.
 
 .NET Core-Projekte importieren die Version des jeweils geeigneten .NET SDK. Weitere Informationen finden Sie in der Übersicht [.NET Core-Projekt-SDKs](/dotnet/core/project-sdk/overview) und in der Referenz zu den [Eigenschaften](/dotnet/core/project-sdk/msbuild-props).
 
@@ -50,7 +50,7 @@ Das SDK-Feature für MSBuild-Projektdateien ist recht neu. Vor dieser Änderung 
 
 In diesem Abschnitt wird erläutert, wie die Eingabedateien verarbeitet und analysiert werden, um Objekte im Arbeitsspeicher zu erzeugen, die bestimmen, was erstellt wird.
 
-Zweck der Auswertungsphase ist die Erstellung der Objektstrukturen im Arbeitsspeicher basierend auf den XML-Eingabedateien und der lokalen Umgebung. Diese Phase umfasst fünf Durchläufe, in denen die Eingabedateien verarbeitet werden. Dazu zählen z. B. die XML-Projektdateien oder die importierten XML-Dateien, bei denen es sich üblicherweise um *.props*- oder *.targets*-Dateien handelt (abhängig davon, ob sie primär zum Festlegen von Eigenschaften oder zum Definieren der Buildziele dienen). Bei jedem Durchlauf wird ein Teil der Objekte im Arbeitsspeicher erstellt, die später in der Ausführungsphase zum Erstellen der Projekte verwendet werden. Tatsächliche Erstellungsaktionen werden während der Auswertungsphase jedoch nicht durchgeführt. Innerhalb der einzelnen Durchläufe werden Elemente in der Reihenfolge verarbeitet, in der sie auftauchen.
+Zweck der Auswertungsphase ist die Erstellung der Objektstrukturen im Arbeitsspeicher basierend auf den XML-Eingabedateien und der lokalen Umgebung. Diese Auswertungsphase umfasst sechs Durchläufe, in denen die Eingabedateien verarbeitet werden. Dazu zählen z. B. die XML-Projektdateien oder die importierten XML-Dateien, bei denen es sich üblicherweise um *PROPS* - oder *TARGETS* -Dateien handelt (abhängig davon, ob sie primär zum Festlegen von Eigenschaften oder zum Definieren der Buildziele dienen). Bei jedem Durchlauf wird ein Teil der Objekte im Arbeitsspeicher erstellt, die später in der Ausführungsphase zum Erstellen der Projekte verwendet werden. Tatsächliche Erstellungsaktionen werden während der Auswertungsphase jedoch nicht durchgeführt. Innerhalb der einzelnen Durchläufe werden Elemente in der Reihenfolge verarbeitet, in der sie auftauchen.
 
 Die Auswertungsphase umfasst die folgenden Durchläufe:
 
@@ -131,7 +131,7 @@ Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projek
 
 ## <a name="standard-imports"></a>Standardimporte
 
-*Microsoft.Common.props* und *Microsoft.Common.targets* werden von .NET-Projektdateien importiert (explizit oder implizit in SDK-Projekten) und befinden sich in einer Visual Studio-Installation im Ordner *MSBuild\Current\bin*. C++-Projekte verfügen über eine eigene Hierarchie für Importe. Weitere Informationen finden Sie unter [MSBuild-Interna für C++-Projekte](/cpp/build/reference/msbuild-visual-cpp-overview).
+*Microsoft.Common.props* und *Microsoft.Common.targets* werden von .NET-Projektdateien importiert (explizit oder implizit in SDK-Projekten) und befinden sich in einer Visual Studio-Installation im Ordner *MSBuild\Current\bin* . C++-Projekte verfügen über eine eigene Hierarchie für Importe. Weitere Informationen finden Sie unter [MSBuild-Interna für C++-Projekte](/cpp/build/reference/msbuild-visual-cpp-overview).
 
 Mit der Datei *Microsoft.Common.props* werden Standardwerte festgelegt, die Sie außer Kraft setzen können. Sie wird (explizit oder implizit) am Anfang einer Projektdatei importiert. Dadurch erscheinen die Einstellungen Ihres Projekts nach den Standardeinstellungen, sodass diese außer Kraft gesetzt werden können.
 
@@ -215,7 +215,7 @@ Diese Ziele sind in der folgenden Tabelle beschrieben. Einige Ziele gelten nur f
 | IncrementalClean | Entfernen von Dateien, die in einem vorherigen Build, jedoch nicht im aktuellen Build erzeugt wurden. Dies ist erforderlich, damit `Clean` in inkrementellen Builds funktioniert. |
 | PostBuildEvent | Erweiterungspunkt für Projekte, um Aufgaben zu definieren, die nach dem Build ausgeführt werden sollen. |
 
-Viele der in der obigen Tabelle aufgeführten Ziele befinden sich in sprachspezifischen Importen wie *Microsoft.CSharp.targets*. Dadurch werden die Schritte im Standardbuildprozess für C# .NET-Projekte definiert. Beispielsweise ist das Ziel `Compile` enthalten, mit dem der C#-Compiler aufgerufen wird.
+Viele der in der obigen Tabelle aufgeführten Ziele befinden sich in sprachspezifischen Importen wie *Microsoft.CSharp.targets* . Dadurch werden die Schritte im Standardbuildprozess für C# .NET-Projekte definiert. Beispielsweise ist das Ziel `Compile` enthalten, mit dem der C#-Compiler aufgerufen wird.
 
 ## <a name="user-configurable-imports"></a>Vom Benutzer konfigurierbare Importe
 
@@ -230,9 +230,9 @@ Da die Datei *Directory.Build.props* von *Microsoft.Common.props* importiert wir
 
 ## <a name="customizations-in-a-project-file"></a>Anpassungen in Projektdateien
 
-Wenn Sie im **Projektmappen-Explorer**, im Fenster **Eigenschaften** oder unter **Projekteigenschaften** Änderungen vornehmen, aktualisiert Visual Studio Ihre Projektdateien. Sie können die Projektdatei jedoch auch direkt bearbeiten, um Änderungen vorzunehmen.
+Wenn Sie im **Projektmappen-Explorer** , im Fenster **Eigenschaften** oder unter **Projekteigenschaften** Änderungen vornehmen, aktualisiert Visual Studio Ihre Projektdateien. Sie können die Projektdatei jedoch auch direkt bearbeiten, um Änderungen vorzunehmen.
 
-Viele Buildverhaltensweisen können durch das Festlegen von MSBuild-Eigenschaften konfiguriert werden. Dieser Schritt kann für lokale Projekteinstellungen in der Projektdatei erfolgen oder, wie im vorherigen Abschnitt beschrieben, durch das Erstellen einer *Directory.Build.props*-Datei, um Eigenschaften global für einen vollständigen Ordner mit Projekten und Projektmappen festzulegen. Für Ad-hoc-Builds in der Befehlszeile oder in Skripts können Sie außerdem die Option `/p` in der Befehlszeile verwenden, um Eigenschaften für einen bestimmten Aufruf von MSBuild festzulegen. Informationen zu den Eigenschaften, die Sie festlegen können, finden Sie unter [Gemeinsame MSBuild-Projekteigenschaften](common-msbuild-project-properties.md).
+Viele Buildverhaltensweisen können durch das Festlegen von MSBuild-Eigenschaften konfiguriert werden. Dieser Schritt kann für lokale Projekteinstellungen in der Projektdatei erfolgen oder, wie im vorherigen Abschnitt beschrieben, durch das Erstellen einer *Directory.Build.props* -Datei, um Eigenschaften global für einen vollständigen Ordner mit Projekten und Projektmappen festzulegen. Für Ad-hoc-Builds in der Befehlszeile oder in Skripts können Sie außerdem die Option `/p` in der Befehlszeile verwenden, um Eigenschaften für einen bestimmten Aufruf von MSBuild festzulegen. Informationen zu den Eigenschaften, die Sie festlegen können, finden Sie unter [Gemeinsame MSBuild-Projekteigenschaften](common-msbuild-project-properties.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

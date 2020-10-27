@@ -9,16 +9,17 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 26562268167abdfc5ee643618ec1610da231f9f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283163"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92298219"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debuggen von Apps in einem lokalen Docker-Container
 
-Visual Studio bietet eine zuverlässige Möglichkeit der Entwicklung in Docker-Containern und der lokalen Überprüfung Ihrer Anwendung. Sie können Ihre Anwendungen in Linux- oder Windows-Containern ausführen und debuggen, die auf Ihrem lokalen Windows-Desktop mit installiertem Docker ausgeführt werden, und Sie müssen den Container nicht jedes Mal neu starten, wenn Sie eine Codeänderung vornehmen.
+Visual Studio bietet eine zuverlässige Möglichkeit der Entwicklung in Docker-Containern und der lokalen Überprüfung Ihrer Anwendung.
+Sie können Ihre Anwendungen in Linux- oder Windows-Containern ausführen und debuggen, die auf Ihrem lokalen Windows-Desktop mit installiertem Docker ausgeführt werden, und Sie müssen den Container nicht jedes Mal neu starten, wenn Sie eine Codeänderung vornehmen.
 
 In diesem Artikel erfahren Sie, wie Sie das Feature zum Bearbeiten und Aktualisieren nutzen, um eine App in einem lokalen Docker-Container zu starten, die erforderlichen Änderungen vorzunehmen und den Browser dann zu aktualisieren, um die Änderungen anzuzeigen. Außerdem erfahren Sie in diesem Artikel, wie Sie Haltepunkte für das Debuggen für die sich in Containern befindenden Apps festlegen. Zu den unterstützten Projekttypen gehören .NET Framework- und .NET Core Web- sowie Konsolen-Apps. In diesem Artikel verwenden wir ASP.NET Core-Web-Apps und .NET Framework-Konsolen-Apps.
 
@@ -40,7 +41,7 @@ Zum Debuggen von Apps in einem lokalen Docker-Container müssen die folgenden To
 
 ::: moniker-end
 
-Sie benötigen einen lokalen Docker-Client, um Docker-Container lokal ausführen zu können. Sie können die [Docker-Toolbox](https://www.docker.com/products/docker-toolbox) verwenden, für die Hyper-V deaktiviert werden muss. Sie können auch [Docker für Windows](https://www.docker.com/get-docker) verwenden. Diese Anwendung verwendet Hyper-V und erfordert Windows 10.
+Sie benötigen einen lokalen Docker-Client, um Docker-Container lokal ausführen zu können. Sie können [Docker für Windows](https://www.docker.com/get-docker) verwenden. Diese Anwendung verwendet Hyper-V und erfordert Windows 10.
 
 Docker-Container sind für .NET Framework- und .NET Core-Projekte verfügbar. Nachfolgend sehen Sie zwei Beispiele. Zunächst sehen wir uns eine .NET Core-Web-App an. Dann sehen wir uns eine .NET Framework-Konsolen-App an.
 
@@ -65,18 +66,18 @@ Sie können die Anwendung in einem Container starten, um Änderungen schnell zu 
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
-    
+
     public void ConfigureServices(IServiceCollection services)
     {
         IMvcBuilder builder = services.AddRazorPages();
-    
+
     #if DEBUG
         if (Env.IsDevelopment())
         {
             builder.AddRazorRuntimeCompilation();
         }
     #endif
-    
+
         // code omitted for brevity
     }
     ```
@@ -91,14 +92,14 @@ Sie können die Anwendung in einem Container starten, um Änderungen schnell zu 
     }
     ```
 
-   Weitere Informationen finden Sie unter [Kompilieren einer Razor-Datei in ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1).
+   Weitere Informationen finden Sie unter [Kompilieren einer Razor-Datei in ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true).
 
-1. Legen Sie die **Lösungskonfiguration** auf **Debuggen** fest. Drücken Sie dann **STRG**+**F5**, um Ihr Docker-Image zu erstellen und lokal auszuführen.
+1. Legen Sie die **Lösungskonfiguration** auf **Debuggen** fest. Drücken Sie dann **STRG**+**F5** , um Ihr Docker-Image zu erstellen und lokal auszuführen.
 
     Wenn das Containerimage erstellt wurde und in einem Docker-Container ausgeführt wird, startet Visual Studio die Web-App in Ihrem Standardbrowser.
 
-1. Wechseln Sie zur *Index*-Seite. Wir nehmen auf dieser Seite Änderungen vor.
-1. Kehren Sie zu Visual Studio zurück, und öffnen Sie *Index.cshtml*.
+1. Wechseln Sie zur *Index* -Seite. Wir nehmen auf dieser Seite Änderungen vor.
+1. Kehren Sie zu Visual Studio zurück, und öffnen Sie *Index.cshtml* .
 1. Fügen Sie den folgenden HTML-Inhalt am Ende der Datei hinzu, und speichern Sie dann die Änderungen.
 
     ```html
@@ -136,7 +137,7 @@ Häufig ist für Änderungen eine weitere Überprüfung erforderlich. Sie könne
 Wenn Sie Projekte der .NET Framework-Konsolen-App verwenden, wird die Option, Docker-Unterstützung ohne Orchestrierung hinzuzufügen, nicht unterstützt. Sie können weiterhin das folgende Verfahren verwenden, auch wenn Sie nur ein einzelnes Docker-Projekt verwenden.
 
 1. Erstellen Sie ein neues .NET Framework-Konsolen-App-Projekt.
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Hinzufügen** > **Unterstützung für Containerorchestrierung** aus.  Klicken Sie im angezeigten Dialogfeld auf **Docker Compose**. Dem Projekt wird eine Dockerfile-Datei hinzugefügt, und es wird ein Docker Compose-Projekt mit zugeordneten Unterstützungsdateien hinzugefügt.
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Hinzufügen** > **Unterstützung für Containerorchestrierung** aus.  Klicken Sie im angezeigten Dialogfeld auf **Docker Compose** . Dem Projekt wird eine Dockerfile-Datei hinzugefügt, und es wird ein Docker Compose-Projekt mit zugeordneten Unterstützungsdateien hinzugefügt.
 
 ### <a name="debug-with-breakpoints"></a>Debuggen mit Haltepunkten
 
@@ -169,7 +170,7 @@ Weitere Informationen finden Sie unter [Wie Visual Studio Containeranwendungen e
 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Weitere Informationen zu Docker mit Visual Studio, Windows und Azure
 
-* Nähere Informationen zur [Containerentwicklung mit Visual Studio](/visualstudio/containers).
+* Nähere Informationen zur [Containerentwicklung mit Visual Studio](./index.yml).
 * Informationen zum Erstellen und Bereitstellen eines Docker-Containers finden Sie unter [Docker-Integration für Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
 * Einen Index von Windows Server- und Nano Server-Artikeln finden Sie unter [Informationen zu Windows-Containern](/virtualization/windowscontainers/).
 * Erfahren Sie mehr über den [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) und überprüfen Sie die [Dokumentation zum Azure Kubernetes Service](/azure/aks).

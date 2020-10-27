@@ -1,5 +1,6 @@
 ---
 title: Application Lifecycle Management (ALM) mit Unity-Apps | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über das Application Lifecycle Management (ALM) mit Unity-Apps. Informieren Sie sich über Agile-Tools sowie die Modellierung, Code, Builds, Tests sowie das Verbessern der Codequalität.
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 17cfe2dd0a1ba25eeab6b0bb31ad849303207a02
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509041"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039923"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps mit Unity-Apps
 
@@ -26,7 +27,7 @@ Die folgenden Tabellen geben an, wie DevOps-Features in Visual Studio bei der Ar
 
 ## <a name="agile-tools"></a>Agile-Tools
 
-Referenzlink: [About Agile tools and Agile project management (Informationen zu Agile-Tools und zur Agile-Projektverwaltung)](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (mit Azure Boards oder TFS, einschließlich Team Explorer Everywhere)
+Referenzlink: [About Agile tools and Agile project management (Informationen zu Agile-Tools und zur Agile-Projektverwaltung)](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true) (mit Azure Boards oder TFS, einschließlich Team Explorer Everywhere)
 
 Allgemeiner Kommentar: alle Planungs- und Nachverfolgungsfunktionen sind vom Projekttyp und den Programmiersprachen unabhängig.
 
@@ -59,8 +60,8 @@ Allgemeiner Hinweis: Obwohl diese Entwurfsfunktionen entweder unabhängig von de
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|
-|[Verwenden der Team Foundation-Versionskontrolle (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) oder Azure Repos|Ja|Unity-Projekte sind einfach eine Sammlung von Dateien, die wie jedes andere Projekt in Versionskontrollsysteme eingefügt werden können, jedoch gibt es einige spezielle Überlegungen, die nach dieser Tabelle aufgeführt sind.|
-|[Erste Schritte mit Git in Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Ja|Siehe Hinweise nach der Tabelle.|
+|[Verwenden der Team Foundation-Versionskontrolle (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) oder Azure Repos|Ja|Unity-Projekte sind einfach eine Sammlung von Dateien, die wie jedes andere Projekt in Versionskontrollsysteme eingefügt werden können, jedoch gibt es einige spezielle Überlegungen, die nach dieser Tabelle aufgeführt sind.|
+|[Erste Schritte mit Git in Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|Ja|Siehe Hinweise nach der Tabelle.|
 |[Verbessern der Codequalität](../test/improve-code-quality.md)|Ja||
 |[Ermitteln von Änderungen am Code und andere Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md)|Ja||
 |[Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)|Ja||
@@ -75,12 +76,12 @@ Besondere Überlegungen für die Versionskontrolle mit Unity:
 
 ## <a name="build"></a>Build
 
-Referenzlink: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+Referenzlink: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|
 |Lokaler Team Foundation Server (TFS)|Möglich|Unity-Projekte werden über die Unity-Umgebung und nicht über das Visual Studio-Buildsystem erstellt (durch das Erstellen innerhalb der Visual Studio-Tools für Unity kompilieren Sie die Skripts, jedoch wird keine ausführbare Datei erzeugt). Es ist möglich, Unity-Projekte über die Befehlszeile  zu [erstellen (Unity-Dokumentation)](https://docs.unity3d.com/Manual/CommandLineArguments.html). Damit ist es möglich, einen MSBuild-Prozess auf einem TFS-Server zum Ausführen der entsprechenden Unity-Befehle zu konfigurieren, sofern Unity selbst auf diesem Computer installiert ist.<br /><br /> Unity bietet darüber hinaus [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), welches ein Git- oder SVN-Repository überwacht und regelmäßige Builds ausführt. Zurzeit kann dieser Dienst nicht mit TFVC oder Azure DevOps Services verwendet werden.|
-|Lokaler Buildserver mit Verbindung zu Azure DevOps Services|Möglich|Unter den obigen Bedingungen ist es zudem möglich, über Azure DevOps Services ausgelöste Builds einen lokalen TFS-Computer verwenden zu lassen. Anweisungen finden Sie unter [Build and release agents (Build- und Release-Agents)](/azure/devops/pipelines/agents/agents?view=vsts).|
+|Lokaler Buildserver mit Verbindung zu Azure DevOps Services|Möglich|Unter den obigen Bedingungen ist es zudem möglich, über Azure DevOps Services ausgelöste Builds einen lokalen TFS-Computer verwenden zu lassen. Anweisungen finden Sie unter [Build and release agents (Build- und Release-Agents)](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true).|
 |Gehosteter Controllerdienst von Azure DevOps Services|Nein|Builds von Unity werden derzeit nicht unterstützt.|
 |Builddefinitionen mit Vor- und Nachskripts|Ja|Eine benutzerdefinierte Builddefinition, die einen Build über die Unity-Befehlszeile ausführt, kann ebenfalls für Prä- und Postbuildskripts konfiguriert werden.|
 |Fortlaufende Integration einschließlich abgegrenzter Eincheckvorgänge|Ja|Abgegrenzte Eincheckvorgänge für TFVC, nur wenn Git auf einem Pull-Request-Modell statt mit Eincheckvorgängen arbeitet.|
@@ -110,7 +111,7 @@ Referenzlink: **[Improve code quality (Verbessern der Codequalität)](../test/im
 
 ## <a name="release-management"></a>Release Management:
 
-Referenzlink: [Build and release in Azure Pipelines and TFS (Build und Release in Azure Pipelines und TFS)](/azure/devops/pipelines/overview?view=vsts)
+Referenzlink: [Build and release in Azure Pipelines and TFS (Build und Release in Azure Pipelines und TFS)](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|
 |-------------|--------------------------|-------------------------|

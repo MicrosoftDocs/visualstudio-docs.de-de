@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Angeben von Buildereignissen (Visual Basic)'
+description: Hier erfahren Sie, wie Buildereignisse in Visual Basic für das Ausführen von Skripts, Makros oder anderen Aktionen als Teil des Kompilierungsprozesses verwendet werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283969"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136926"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Vorgehensweise: Angeben von Buildereignissen (Visual Basic)
 
@@ -35,23 +37,23 @@ Buildereignisse werden im Dialogfeld **Buildereignisse** angegeben, das über di
 
 ### <a name="to-specify-a-build-event"></a>Angeben eines Buildereignisses
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften** .
 
-2. Klicken Sie auf die Registerkarte **Kompilieren**.
+2. Klicken Sie auf die Registerkarte **Kompilieren** .
 
-3. Klicken Sie auf die Schaltfläche **Buildereignisse**, um das Dialogfeld **Buildereignisse** zu öffnen.
+3. Klicken Sie auf die Schaltfläche **Buildereignisse** , um das Dialogfeld **Buildereignisse** zu öffnen.
 
-4. Geben Sie die Befehlszeilenargumente für Ihre Prä- oder Postbuildaktion ein, und klicken Sie dann auf **OK**.
+4. Geben Sie die Befehlszeilenargumente für Ihre Prä- oder Postbuildaktion ein, und klicken Sie dann auf **OK** .
 
     > [!NOTE]
-    > Fügen Sie allen Postbuildbefehlen, die *BAT*-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Fügen Sie allen Postbuildbefehlen, die *BAT* -Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Wenn Ihr Prä- oder Postbuildereignis nicht erfolgreich abgeschlossen wird, können Sie den Build abschließen, indem Sie Ihre Ereignisaktion mit einem Code, der nicht 0 (null) ist, beenden. Dies gibt eine erfolgreiche Aktion an.
 
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Beispiel: Ändern von Manifestinformationen unter Verwendung eines Postbuildereignisses
 
-In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderliche Betriebssystem im Anwendungsmanifest mit einem *EXE*-Befehl festlegen, der von einem Postbuildereignis aufgerufen wird (die *EXE.MANIFEST*-Datei im Projektverzeichnis). Das mindestens erforderliche Betriebssystem ist eine Zahlenfolge mit vier Teilen wie z.B. 4.10.0.0. Um dies zu erreichen, ändert der Befehl den `<dependentOS>`-Abschnitt des Manifests:
+In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderliche Betriebssystem im Anwendungsmanifest mit einem *EXE* -Befehl festlegen, der von einem Postbuildereignis aufgerufen wird (die *EXE.MANIFEST* -Datei im Projektverzeichnis). Das mindestens erforderliche Betriebssystem ist eine Zahlenfolge mit vier Teilen wie z.B. 4.10.0.0. Um dies zu erreichen, ändert der Befehl den `<dependentOS>`-Abschnitt des Manifests:
 
 ```xml
 <dependentOS>
@@ -63,9 +65,9 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>So erstellen Sie einen EXE-Befehl zum Ändern des Anwendungsmanifests
 
-1. Erstellen Sie eine Konsolenanwendung für den Befehl. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
+1. Erstellen Sie eine Konsolenanwendung für den Befehl. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt** .
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows**, und wählen Sie dann die Vorlage **Konsolenanwendung** aus. Benennen Sie das Projekt mit `ChangeOSVersionVB`.
+2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows** , und wählen Sie dann die Vorlage **Konsolenanwendung** aus. Benennen Sie das Projekt mit `ChangeOSVersionVB`.
 
 3. Fügen Sie in *Module1.vb* die folgende Zeile in die anderen `Imports`-Anweisungen am Anfang der Datei ein:
 
@@ -116,26 +118,26 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
    End Sub
    ```
 
-   Der Befehl benötigt zwei Argumente. Beim ersten Argument handelt es sich um den Pfad zum Anwendungsmanifest (also den Ordner, in dem der Buildprozess das Manifest erstellt, in der Regel *\<ProjectName>.publish*). Beim zweiten Argument handelt es sich um die neue Version des Betriebssystems.
+   Der Befehl benötigt zwei Argumente. Beim ersten Argument handelt es sich um den Pfad zum Anwendungsmanifest (also den Ordner, in dem der Buildprozess das Manifest erstellt, in der Regel *\<ProjectName>.publish* ). Beim zweiten Argument handelt es sich um die neue Version des Betriebssystems.
 
-5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen** .
 
-6. Kopieren Sie die *EXE*-Datei z.B. in das Verzeichnis *C:\TEMP\ChangeOSVersionVB.exe*.
+6. Kopieren Sie die *EXE* -Datei z.B. in das Verzeichnis *C:\TEMP\ChangeOSVersionVB.exe* .
 
    Rufen Sie anschließend den Befehl in einem Postbuildereignis auf, um das Anwendungsmanifest zu ändern.
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aufrufen eines Postbuildereignisses zum Ändern des Anwendungsmanifests
 
-1. Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
+1. Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt** .
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Benennen Sie das Projekt mit `VBWinApp`.
-3. Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften**.
+2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop** , und wählen Sie dann die Vorlage **Windows Forms-App** aus. Benennen Sie das Projekt mit `VBWinApp`.
+3. Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften** .
 
-4. Navigieren Sie im **Projekt-Designer** zu der Seite **Veröffentlichen**, und legen Sie den **Veröffentlichungsort** auf *C:\TEMP* fest.
+4. Navigieren Sie im **Projekt-Designer** zu der Seite **Veröffentlichen** , und legen Sie den **Veröffentlichungsort** auf *C:\TEMP* fest.
 
 5. Veröffentlichen Sie das Projekt, indem Sie auf **Jetzt veröffentlichen** klicken.
 
-     Dann wird die Manifestdatei erstellt und unter *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest* gespeichert. Klicken Sie mit der rechten Maustaste auf die Datei, und klicken Sie dann auf **Öffnen mit** > **Programm aus einer Liste auswählen** und anschließend auf **Editor**, um das Manifest anzuzeigen.
+     Dann wird die Manifestdatei erstellt und unter *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest* gespeichert. Klicken Sie mit der rechten Maustaste auf die Datei, und klicken Sie dann auf **Öffnen mit** > **Programm aus einer Liste auswählen** und anschließend auf **Editor** , um das Manifest anzuzeigen.
 
      Durchsuchen Sie die Datei nach dem `<osVersionInfo>`-Element. Die Version kann z.B. folgende sein:
 
@@ -143,7 +145,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. Navigieren Sie im **Projekt-Designer** zu der Registerkarte **Kompilieren**, und klicken Sie auf die Schaltfläche **Buildereignisse**, um das Dialogfeld **Buildereignisse** zu öffnen.
+6. Navigieren Sie im **Projekt-Designer** zu der Registerkarte **Kompilieren** , und klicken Sie auf die Schaltfläche **Buildereignisse** , um das Dialogfeld **Buildereignisse** zu öffnen.
 
 7. Geben Sie im Feld **Befehlszeile für Postbuildereignis** den folgenden Befehl ein:
 
@@ -151,11 +153,11 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
      Wenn Sie das Projekt erstellen, ändert dieser Befehl das mindestens erforderliche Betriebssystem im Anwendungsmanifest in 5.1.2600.0.
 
-     Das `$(TargetPath)`-Makro gibt den vollständigen Pfad für die ausführbare Datei an, die erstellt wird. Deshalb gibt *$(TargetPath).manifest* das Anwendungsmanifest an, das im *bin*-Verzeichnis erstellt wird. Durch die Veröffentlichung wird dieses Manifest an den Veröffentlichungsspeicherort kopiert, den Sie in einem vorherigen Schritt festgelegt haben.
+     Das `$(TargetPath)`-Makro gibt den vollständigen Pfad für die ausführbare Datei an, die erstellt wird. Deshalb gibt *$(TargetPath).manifest* das Anwendungsmanifest an, das im *bin* -Verzeichnis erstellt wird. Durch die Veröffentlichung wird dieses Manifest an den Veröffentlichungsspeicherort kopiert, den Sie in einem vorherigen Schritt festgelegt haben.
 
-8. Veröffentlichen Sie das Projekt erneut. Wechseln Sie zur Seite **Veröffentlichen**, und klicken Sie anschließen auf **Jetzt veröffentlichen**.
+8. Veröffentlichen Sie das Projekt erneut. Wechseln Sie zur Seite **Veröffentlichen** , und klicken Sie anschließen auf **Jetzt veröffentlichen** .
 
-     Zeigen Sie das Manifest erneut an. Klicken Sie mit der rechten Maustaste auf die Datei, wechseln Sie zum Veröffentlichungsverzeichnis, und klicken Sie auf **Öffnen mit** > **Programm aus einer Liste auswählen** und anschließend auf **Editor**, um das Manifest anzuzeigen.
+     Zeigen Sie das Manifest erneut an. Klicken Sie mit der rechten Maustaste auf die Datei, wechseln Sie zum Veröffentlichungsverzeichnis, und klicken Sie auf **Öffnen mit** > **Programm aus einer Liste auswählen** und anschließend auf **Editor** , um das Manifest anzuzeigen.
 
      Jetzt sollte die Version folgendermaßen lauten:
 

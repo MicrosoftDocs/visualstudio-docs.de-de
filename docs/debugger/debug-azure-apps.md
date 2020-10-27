@@ -10,28 +10,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: fad1a7d1f07009b169480a9e071c5cae8498f600
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18635e4ecbbdb3c3c52be20b197c01168cdb12ff
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350757"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878734"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Debuggen von Azure-Diensten in Visual Studio
 
 Sie können Visual Studio zum Debuggen von Azure-Diensten in verschiedenen Szenarios verwenden:
 
-- Informationen zum Debuggen einer in Azure App Service gehosteten Produktions-App finden Sie unter [Debuggen von aktiven ASP.NET Azure-Apps mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md).
+So debuggen Sie eine Produktions-App mit den folgenden Hosts:
 
-- Informationen zum Debuggen einer auf einem virtuellen Azure-Computer gehosteten Produktions-App finden Sie unter [Debuggen von aktiven virtuellen ASP.NET-Azure-Computern und Azure-VM-Skalierungsgruppen mithilfe des Momentaufnahmedebuggers](../debugger/debug-live-azure-virtual-machines.md).
+- Azure App Service mit Visual Studio Enterprise (weitere Informationen unter [Debuggen von aktiven ASP.NET Azure-Apps mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md))
 
-- Informationen zum Debuggen einer in Azure Kubernetes Service gehosteten Produktions-App finden Sie unter [Debuggen von aktiven ASP.NET Azure Kubernetes Services mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-kubernetes.md).
+- Azure App Service oder Service Fabric mit Application Insights (weitere Informationen unter [Debugmomentaufnahmen von Ausnahmen in .NET-Apps](/azure/application-insights/app-insights-snapshot-debugger))
 
-- Informationen zum Debuggen einer in Azure App Service oder Service Fabric gehosteten Produktions-App mit Application Insights finden Sie unter [Debugmomentaufnahmen von Ausnahmen in .NET-Apps](/azure/application-insights/app-insights-snapshot-debugger).
+- Azure-VM oder Azure-VM-Skalierungsgruppe (weitere Informationen unter [Debuggen von aktiven ASP.NET-Apps auf Azure-VMs und Azure-VMSS mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-virtual-machines.md))
 
-- Informationen zum Remotedebuggen von ASP.NET in IIS (Azure App Service oder eine Azure-VM) finden Sie unter [Remotedebuggen von ASP.NET Core in IIS in Azure in Visual Studio](remote-debugging-azure.md).
+- Azure Kubernetes Service (weitere Informationen unter [Debuggen von aktiven ASP.NET Azure Kubernetes Services mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-kubernetes.md))
 
-- Informationen zum Remotedebuggen von ASP.NET in Azure Service Fabric finden Sie unter [Debuggen einer Service Fabric-Remoteanwendung](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
+Remotedebuggen:
+
+- ASP.NET in IIS (Azure App Service oder Azure-VM; weitere Informationen unter [Remotedebuggen von ASP.NET Core in IIS in Azure in Visual Studio](remote-debugging-azure.md))
+
+- ASP.NET in Azure Service Fabric (weitere Informationen unter [Debuggen einer Service Fabric-Remoteanwendung](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application))
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld "Erweiterte Buildeinstellungen" (C#)
+description: Hier erfahren Sie, wie Sie Visual Studio verwenden können, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418846"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136744"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogfeld „Erweiterte Buildeinstellungen“ (C#)
 
-Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Designers**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld kann nur für C#-Projekte verwendet werden.
+Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Designers** , um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld kann nur für C#-Projekte verwendet werden.
 
 ## <a name="general"></a>Allgemein
 
@@ -64,7 +66,7 @@ Die folgenden Optionen geben Ihnen die Möglichkeit, erweiterte Ausgabeoptionen 
 
 Gibt den Typ der Debuginformationen an, die vom Compiler generiert werden. Informationen zur Konfiguration der Leistung einer Anwendung beim Debuggen finden Sie unter [Erleichtern des Debuggens für ein Image](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Diese Einstellung hat folgende Optionen:
 
-- **none**
+- **keine**
 
    Gibt an, das keine Debuginformationen generiert werden
 
@@ -88,13 +90,13 @@ Weitere Informationen finden Sie unter [/debug (C# Compiler Options)](/dotnet/cs
 
 **Dateianordnung**
 
-Gibt die Größe der Abschnitte in der Ausgabedatei an. Gültige Werte sind **512**, **1024**, **2048**, **4096** und **8192**. Diese Werte werden in Bytes angegeben. Jeder Abschnitt wird auf einer Grenze angeordnet, die ein Mehrfaches des Werts ist, wodurch die Größe der Ausgabedatei beeinflusst wird. Weitere Informationen finden Sie unter [/filealign (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Gibt die Größe der Abschnitte in der Ausgabedatei an. Gültige Werte sind **512** , **1024** , **2048** , **4096** und **8192** . Diese Werte werden in Bytes angegeben. Jeder Abschnitt wird auf einer Grenze angeordnet, die ein Mehrfaches des Werts ist, wodurch die Größe der Ausgabedatei beeinflusst wird. Weitere Informationen finden Sie unter [/filealign (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Basisadresse der Bibliothek**
 
 Gibt die bevorzugte Basisadresse an, unter der eine DLL geladen werden soll. Die Standard-Basisadresse für eine DLL-Datei wird durch die Common Language Runtime von .NET Framework festgelegt. Weitere Informationen finden Sie unter [/baseaddress (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [C#-Compileroptionen](/dotnet/csharp/language-reference/compiler-options/index)
 - [Seite „Erstellen“, Projekt-Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md)

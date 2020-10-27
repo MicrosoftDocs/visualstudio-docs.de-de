@@ -1,5 +1,6 @@
 ---
 title: Anpassen mit VSTU erstellter Projektdateien | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie von Visual Studio-Tools für Unity (VSTU) erstellte Projektdateien anpassen. Sie überprüfen ein C#-Codebeispiel.
 ms.custom: ''
 ms.date: 07/26/2018
 ms.technology: vs-unity-tools
@@ -10,17 +11,17 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2e4abb707f07e0a781460e5efe6996325e5ca00
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62819528"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039424"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Anpassen von mit VSTU erstellten Projektdateien
 Visual Studio-Tools für Unity bieten während der Generierung der Projektdatei einen Rückruf im Unity-Stil. Registrieren Sie das `VisualStudioIntegration.ProjectFileGeneration`-Ereignis, um die Projektdatei zu ändern, immer wenn sie neu erstellt wird.
 
-## <a name="demonstrates"></a>Veranschaulicht
+## <a name="demonstrates"></a>Zeigt
  Anpassen der von Visual Studio-Tools für Unity generierten Visual Studio-Projektdateien.
 
 ## <a name="example"></a>Beispiel
@@ -69,5 +70,5 @@ public class ProjectFileHook
 #endif
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
  [Beispiel: Protokollrückruf](../cross-platform/share-the-unity-log-callback-with-vstu.md)

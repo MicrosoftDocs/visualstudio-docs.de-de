@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425393"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136913"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 
@@ -81,9 +81,15 @@ Stellt einen Verweis auf ein anderes Projekt dar. `ProjectReference`-Elemente we
 |Elementmetadatenname|Beschreibung|
 |---------------|-----------------|
 |name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|
+|GlobalPropertiesToRemove|Optionale `string[]`. Dies sind die Namen der Eigenschaften, die beim Erstellen des Projekts, auf das verwiesen wird, entfernt werden sollen (z. B. `RuntimeIdentifier;PackOnBuild`). Ist standardmäßig leer.|
 |Projekt|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|
-|Package|Optionale Zeichenfolge. Der Pfad der Projektdatei, auf die verwiesen wird.|
+|OutputItemType|Optionale Zeichenfolge. Dies ist der Elementtyp, in dem Zielausgaben ausgegeben werden sollen. Der Standardwert ist leer. Wenn die Verweismetadaten auf „true“ (Standardeinstellung) festgelegt sind, werden Zielausgaben zu Verweisen für den Compiler.|
 |ReferenceOutputAssembly|Optionaler boolescher Wert. Bei Festlegung auf `false` ist die Ausgabe des referenzierten Projekts als [Verweis](#reference) dieses Projekts nicht eingeschlossen, aber dennoch wird sichergestellt, dass das andere Projekt vor diesem Projekt erstellt wird. Wird standardmäßig auf `true` festgelegt.|
+|SetConfiguration|Optionale Zeichenfolge. Hiermit wird die globale Eigenschaft `Configuration` für das Projekt festgelegt, auf das verwiesen wird (z. B. `Configuration=Release`).|
+|SetPlatform|Optionale Zeichenfolge. Hiermit wird die globale Eigenschaft `Platform` für das Projekt festgelegt, auf das verwiesen wird (z. B. `Platform=AnyCPU`).|
+|SetTargetFramework|Optionale Zeichenfolge. Hiermit wird die globale Eigenschaft `TargetFramework` für das Projekt festgelegt, auf das verwiesen wird (z. B. `TargetFramework=netstandard2.0`).|
+|SkipGetTargetFrameworkProperties|Optionaler boolescher Wert. Im Falle von `true` wird das Projekt, auf das verwiesen wird, ohne die Aushandlung des Werts `TargetFramework` mit der höchsten Kompatibilität erstellt. Wird standardmäßig auf `false` festgelegt.|
+|Ziele|Optionale `string[]`. Dies ist eine durch Semikolons getrennte Liste von Zielen in den zu erstellenden Projekten, auf die verwiesen wird. Der Standardwert ist der Wert von `$(ProjectReferenceBuildTargets)`, der standardmäßig leer ist und die Standardziele angibt.|
 
 ### <a name="compile"></a>Compile
 

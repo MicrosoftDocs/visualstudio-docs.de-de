@@ -2,8 +2,9 @@
 title: Ändern von Visual Studio 2017
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern.
-ms.date: 02/10/2019
+ms.date: 10/12/2020
 ms.topic: how-to
+ms.custom: contperfq2
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -17,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2ec3ae3f253997b86c2403ce57d5e8db6e9920b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dad71e4f52350357106ee9a9ef9ce90d18204bfb
+ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419184"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92157374"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 
@@ -54,7 +55,7 @@ Gehen Sie folgendermaßen vor:
 
 1. Suchen Sie den Visual Studio-Installer auf Ihrem Computer.
 
-     Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
+     Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V** , wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
 
      ![Visual Studio-Installer](media/locate-the-visual-studio-installer.png "Suchen des Microsoft Visual Studio-Installers")
 
@@ -66,7 +67,7 @@ Gehen Sie folgendermaßen vor:
      ![Starten oder Ändern von Visual Studio](media/modify-visual-studio.png "Ändern von Visual Studio 2017")
 
      > [!IMPORTANT]
-     > Bei einem ausstehenden Update befindet sich die Schaltfläche „Ändern“ an einer anderen Stelle. Auf diese Weise können Sie bei Bedarf Visual Studio ohne Aktualisierung ändern. Klicken Sie auf **Mehr**, und wählen Sie dann **Ändern**.
+     > Bei einem ausstehenden Update befindet sich die Schaltfläche „Ändern“ an einer anderen Stelle. Auf diese Weise können Sie bei Bedarf Visual Studio ohne Aktualisierung ändern. Klicken Sie auf **Mehr** , und wählen Sie dann **Ändern** .
      >
      > ![Aktualisieren oder Ändern von Visual Studio](media/modify-or-update-visual-studio.png "Aktualisieren oder Ändern von Visual Studio 2017")
 
@@ -74,11 +75,11 @@ Gehen Sie folgendermaßen vor:
 
 ::: moniker range="vs-2019"
 
-1. Suchen Sie den Visual Studio-Installer auf Ihrem Computer.
+1. Suchen Sie den **Visual Studio-Installer** auf Ihrem Computer.
 
-     Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
+     Hierzu können Sie im Windows-Startmenü nach „Installer“ suchen.
 
-     ![Öffnen des Visual Studio-Installers unter Windows](media/vs-2019/vs-installer-windows-start.png "Öffnen des Visual Studio-Installers")
+     ![Visual Studio-Installer](media/vs-2019/visual-studio-installer.png "Suchen nach dem Visual Studio-Installer")
 
      > [!NOTE]
      > Sie können den Visual Studio-Installer auch an folgendem Speicherort finden:
@@ -87,9 +88,9 @@ Gehen Sie folgendermaßen vor:
 
     Möglicherweise müssen Sie den Installer aktualisieren, bevor Sie fortfahren. Wenn dies der Fall ist, befolgen Sie die Anweisungen.
 
-1. Suchen Sie im Installer nach der Edition von Visual Studio, die Sie installiert haben, und klicken Sie dann auf **Ändern**.
+1. Suchen Sie im Installer nach der Edition von Visual Studio, die Sie installiert haben, und klicken Sie dann auf **Ändern** .
 
-     ![Aktualisieren oder Ändern von Visual Studio](media/vs-2019/vs-installer-modify.png "Aktualisieren oder Ändern von Visual Studio 2019")
+     ![Auswählen der Visual Studio-Edition und anschließende Bearbeitung](media/vs-2019/vs-installer-modify.png "Auswählen der Visual Studio 2019-Edition und anschließende Bearbeitung")
 
      > [!IMPORTANT]
      > Bei einem ausstehenden Update befindet sich die Schaltfläche „Ändern“ an einer anderen Stelle. Auf diese Weise können Sie bei Bedarf Visual Studio ohne Aktualisierung ändern. Wählen Sie **Mehr** und dann **Ändern** aus.
@@ -114,9 +115,9 @@ Gehen Sie folgendermaßen vor:
 
     Die Option „Alle herunterladen und dann installieren“ ist praktisch, wenn Sie zuerst alle Dateien herunterladen und die Installation später durchführen möchten.
 
-1. Klicken Sie auf **Ändern**.
+1. Klicken Sie auf **Ändern** .
 
-1. Klicken Sie im Visual Studio-Installer auf **Starten**, nachdem die neuen Workloads installiert wurden, um Visual Studio zu öffnen.
+1. Klicken Sie im Visual Studio-Installer auf **Starten** , nachdem die neuen Workloads installiert wurden, um Visual Studio zu öffnen.
 
 ::: moniker-end
 
@@ -137,9 +138,9 @@ Gehen Sie folgendermaßen vor:
 
     Die Option „Alle herunterladen und dann installieren“ ist praktisch, wenn Sie zuerst alle Dateien herunterladen und die Installation später durchführen möchten.
 
-1. Klicken Sie auf **Ändern**.
+1. Klicken Sie auf **Ändern** .
 
-1. Klicken Sie im Visual Studio-Installer auf **Starten**, nachdem die neuen Workloads installiert wurden, um Visual Studio zu öffnen.
+1. Klicken Sie im Visual Studio-Installer auf **Starten** , nachdem die neuen Workloads installiert wurden, um Visual Studio zu öffnen.
 
 ::: moniker-end
 
@@ -148,7 +149,7 @@ Gehen Sie folgendermaßen vor:
 Wenn Sie keine Workloads zum Anpassen der Visual Studio-Installation verwenden möchten, wählen Sie die Registerkarte **Individuelle Komponenten** im Visual Studio-Installer und dann die gewünschten Komponenten aus. Anschließend befolgen Sie die Eingabeaufforderungen.
 
 >[!TIP]
-> Weitere Informationen zur SQL Server Data Tools-Komponente finden Sie unter [Herunterladen und Installieren von SQL Server Data Tools (SSDT) für Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
+> Weitere Informationen zur SQL Server Data Tools-Komponente finden Sie unter [Herunterladen und Installieren von SQL Server Data Tools (SSDT) für Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true).
 
 ## <a name="modify-language-packs"></a>Ändern von Sprachpaketen
 

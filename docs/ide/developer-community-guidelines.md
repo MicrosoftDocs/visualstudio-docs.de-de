@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810118"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116149"
 ---
 # <a name="developer-community-guidelines"></a>Richtlinien für die Entwicklercommunity
 
@@ -42,7 +42,7 @@ Wenn Ihr Fehler oder Vorschlag in keinem vorhandenen Issue beschrieben wird, ers
 - Ihr Issue sollte Folgendes enthalten:
 
   - Reproduzierbare Schritte (1... 2... 3...) sowie das erwartete und das tatsächliche Ergebnis
-  - Bilder, Animationen oder ein Link zu einem Video: Bilder und Animationen veranschaulichen die reproduzierbaren Schritte, ersetzen diese jedoch _nicht_.
+  - Bilder, Animationen oder ein Link zu einem Video: Bilder und Animationen veranschaulichen die reproduzierbaren Schritte, ersetzen diese jedoch _nicht_ .
   - Gegebenenfalls einen Codeausschnitt, in dem das Problem veranschaulicht wird, oder einen Link zu einem Coderepository, das wir einfach auf unserem Computer verwenden können, um den Fehler zu reproduzieren
 
 - Vergessen Sie nicht, die folgenden Schritte durchzuführen:
@@ -59,11 +59,13 @@ Das Selektieren eines Issues ist ein mehrstufiger Prozess, der innerhalb des Fea
 
 Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo sich Ihre Übermittlung in ihrem Lebenszyklus gerade befindet. Wenn sich die Visual Studio-Produktteams Ihr Feedback ansehen, wird es mit einem geeigneten Status versehen. Verfolgen Sie den Status Ihrer Problemberichte unter Bezugnahme auf den [Problemstatus und die häufig gestellten Fragen](./report-a-problem.md).
 
+### <a name="prioritizing-which-issues-to-fix"></a>Priorisieren zu behebender Probleme
+
+Es können nicht alle gemeldeten Probleme behoben werden. Einige sind zu aufwändig oder könnten andere Funktionsbereiche beeinträchtigen, während wieder andere nur geringe Auswirkungen haben. Dies kann natürlich enttäuschend sein, wenn Sie sich die Zeit genommen haben, einen Problembericht zu senden. Jeder war schon einmal in einer solchen Situation, entweder im Zusammenhang mit diesem oder einem anderen Projekt. Wenn ein Problem geschlossen wurde und Sie der Meinung sind, dass der angegebene Grund nicht zufriedenstellend ist, können Sie Ihren Anwendungsfall noch genauer beschreiben und anfordern, dass das Problem im Rahmen einer wiederholten Untersuchung reaktiviert wird. An diesem Punkt werden Sie möglicherweise aufgefordert, weitere Informationen bereitzustellen.
+
+### <a name="missing-important-information"></a>Fehlende wichtige Informationen
+
 Wenn bei einem Issue wichtige Informationen fehlen, weisen wir den Status _Needs More Info_ (Mehr Info nötig) zu. Wir schreiben einen Kommentar zum Issue mit den genauen erforderlichen Informationen, und Sie erhalten eine Benachrichtigung per E-Mail. Wenn wir die Informationen nicht innerhalb von sieben Tagen erhalten, schicken wir Ihnen eine Erinnerung. Nach weiteren 14 Tagen ohne Aktivität schließen wir das Ticket.
-
-### <a name="wont-fix-bugs"></a>Keine Fehlerbehebung
-
-Wir schließen einige Fehlertickets, wenn das Kosten-Nutzen-Verhältnis schlecht ist. Wenn die Fehlerbehebung beispielsweise so komplex ist, dass Regressionen für viele Benutzer riskiert werden, ist diese möglicherweise nicht sinnvoll. Wenn wir ein solches Fehlerticket schließen, erläutern wir die Gründe dafür.
 
 ### <a name="other-product"></a>Anderes Produkt
 
@@ -83,7 +85,7 @@ In einem solchen Fall schließen wir das Issue und bitten Sie, es für das ander
 
 ## <a name="managing-feature-suggestions"></a>Verwalten von Featurevorschlägen
 
-Featurevorschläge sind ein Mittel der Kommunikation zwischen uns und den Mitgliedern der Entwicklercommunity. Theoretisch könnten wir alle Featureanfragen unbegrenzt offen lassen. Würden wir die Issues jedoch offen lassen, würde dies den Einblick der Community in den jeweiligen Status eines Features einschränken. Daher schließen wir Featureanfragen, die wir nicht umsetzen werden. Features, die möglicherweise umgesetzt werden, versehen wir mit dem Status _In Bearbeitung_.
+Featurevorschläge sind ein Mittel der Kommunikation zwischen uns und den Mitgliedern der Entwicklercommunity. Theoretisch könnten wir alle Featureanfragen unbegrenzt offen lassen. Würden wir die Issues jedoch offen lassen, würde dies den Einblick der Community in den jeweiligen Status eines Features einschränken. Daher schließen wir Featureanfragen, die wir nicht umsetzen werden. Features, die möglicherweise umgesetzt werden, versehen wir mit dem Status _In Bearbeitung_ .
 
 Wenn Sie ein Feature vorschlagen, sind Sie möglicherweise enttäuscht, dass wir nicht planen, Ihren Vorschlag umzusetzen. Das verstehen wir natürlich. Wir alle haben dies schon einmal erlebt – entweder in diesem Projekt oder in anderen, an denen wir mitgearbeitet haben. Daher können Sie sicher sein, dass wir alle Beiträge sehr schätzen. Nehmen Sie es nicht persönlich, wenn wir Ihren Vorschlag schließen oder diesen mit dem Status _In Bearbeitung_ versehen. Wenn Sie der Meinung sind, dass Ihr Featurevorschlag offen bleiben sollte, verdeutlichen Sie den Anwendungsfall, und kontaktieren Sie uns, oder sammeln Sie mehr Stimmen.
 
@@ -97,7 +99,7 @@ Folgendes beeinflusst unseren Entscheidungsfindungsprozess in Bezug auf Featurev
 
 Wenn wir keine dieser Fragen mit „Ja“ beantworten können, schließen wir die Anfrage. In vielen Fällen bleibt der Vorschlag jedoch mit dem Status _In Bearbeitung_ offen, um mehr Feedback von der Community zu sammeln.
 
-Wenn ein Vorschlag nicht mit unserer allgemeinen Produktrichtung übereinstimmt, schließen wir ihn als *Außerhalb des gültigen Bereichs*. Beispielsweise haben wir möglicherweise ähnliche Investitionen in andere Elemente der Visual Studio-Produktfamilie getätigt. Oder das vorgeschlagene Feature könnte nur für einige wenige Personen relevant sein, weshalb dafür eine Erweiterung besser geeignet ist.
+Wenn ein Vorschlag nicht mit unserer allgemeinen Produktrichtung übereinstimmt, schließen wir ihn als *Außerhalb des gültigen Bereichs* . Beispielsweise haben wir möglicherweise ähnliche Investitionen in andere Elemente der Visual Studio-Produktfamilie getätigt. Oder das vorgeschlagene Feature könnte nur für einige wenige Personen relevant sein, weshalb dafür eine Erweiterung besser geeignet ist.
 
 Verfolgen Sie den Status Ihres Featurevorschlags unter Bezugnahme auf den [Status und die häufig gestellten Fragen](./report-a-problem.md).
 

@@ -1,5 +1,7 @@
 ---
 title: JavaScript und TypeScript in Visual Studio 2019
+description: Hier erfahren Sie, wie Visual Studio 2019 umfassende Unterstützung für die JavaScript-Entwicklung bereitstellt, wobei sowohl JavaScript direkt als auch die TypeScript-Programmiersprache verwendet werden.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 03/16/2020
 ms.technology: vs-javascript
@@ -12,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6598f018147a025b93ea2e9dd81ae5eceacb4829
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5063e0fe369615af51db9da3016d2afef49789ac
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852464"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947764"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript und TypeScript in Visual Studio 2019
 
@@ -44,4 +46,4 @@ Visual Studio 2019 bietet mehrere Optionen zur Integration der TypeScript-Kompil
 
 ## <a name="projects"></a>Projekte
 
-UWP-JavaScript-Apps werden in Visual Studio 2019 nicht mehr unterstützt. Sie können keine JavaScript-UWP-Projekte erstellen oder öffnen (Dateien mit der Erweiterung *.jsproj*). Weitere Informationen finden Sie in unserer [Dokumentation zum Erstellen von progressiven Web-Apps (PWAs), die sich gut unter Windows ausführen lassen](/microsoft-edge/progressive-web-apps/get-started).
+UWP-JavaScript-Apps werden in Visual Studio 2019 nicht mehr unterstützt. Sie können keine JavaScript-UWP-Projekte erstellen oder öffnen (Dateien mit der Erweiterung *.jsproj* ). Weitere Informationen finden Sie in unserer [Dokumentation zum Erstellen von progressiven Web-Apps (PWAs), die sich gut unter Windows ausführen lassen](/microsoft-edge/progressive-web-apps/get-started).

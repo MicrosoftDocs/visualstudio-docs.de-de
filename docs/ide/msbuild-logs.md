@@ -1,5 +1,7 @@
 ---
 title: Behandeln von MSBuild-Problemen und Erstellen von Protokollen
+description: Hier erfahren Sie, wie Sie Buildprobleme in Ihrem Visual Studio-Projekt diagnostizieren und ggf. ein Protokoll erstellen können, das zur Untersuchung an Microsoft gesendet wird.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
@@ -15,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235068"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136575"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Behandeln von MSBuild-Problemen und Erstellen von Protokollen
 
@@ -116,8 +118,8 @@ Eine Datei „Msbuild.binlog“ wird in dem Verzeichnis erstellt, von dem aus Si
 
 ## <a name="create-a-detailed-log"></a>Erstellen eines detaillierten Protokolls
 
-1. Wechseln Sie im Visual Studio-Hauptmenü zu **Extras** > **Optionen** > **Projekte und Projektmappen** >**Erstellen und ausführen**.
-1. Legen Sie **Ausführlichkeit der Protokolldatei des MSBuild-Projektbuilds** in beiden Kombinationsfeldern auf **Detailliert** fest. Das erste steuert die Buildausführlichkeit im **Ausgabefenster**, und das zweite steuert die Buildausführlichkeit in der Datei „\<projectname\>.log“, die während des Buildvorgangs im Zwischenverzeichnis der einzelnen Projekte erstellt wird.
+1. Wechseln Sie im Visual Studio-Hauptmenü zu **Extras** > **Optionen** > **Projekte und Projektmappen** >**Erstellen und ausführen** .
+1. Legen Sie **Ausführlichkeit der Protokolldatei des MSBuild-Projektbuilds** in beiden Kombinationsfeldern auf **Detailliert** fest. Das erste steuert die Buildausführlichkeit im **Ausgabefenster** , und das zweite steuert die Buildausführlichkeit in der Datei „\<projectname\>.log“, die während des Buildvorgangs im Zwischenverzeichnis der einzelnen Projekte erstellt wird.
 2. Geben Sie an einer Visual Studio Developer-Eingabeaufforderung einen der folgenden Befehle ein, und setzen Sie dabei die tatsächlichen Werte für Pfad und Konfiguration ein:
 
     ```cmd

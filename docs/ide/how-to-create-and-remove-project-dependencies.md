@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten'
+description: Hier erfahren Sie, wie Sie Visual Studio zum Erstellen und Entfernen der Abhängigkeit Ihres Projekts von Code aus anderen Projekten verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b2a99e297b4ce7291c0dd94947155794cf8c3d4
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284463"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137024"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten
 
@@ -33,7 +35,7 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
 
 1. Wählen Sie im **Projektmappen-Explorer** ein Projekt aus.
 
-2. Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.
+2. Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten** .
 
     Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.
 
@@ -50,7 +52,7 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
 
 1. Wählen Sie im **Projektmappen-Explorer** ein Projekt aus.
 
-2. Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.
+2. Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten** .
 
      Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.
 
@@ -61,7 +63,7 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
 
 4. Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)

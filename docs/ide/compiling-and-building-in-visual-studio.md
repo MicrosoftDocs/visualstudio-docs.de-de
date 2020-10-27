@@ -1,5 +1,7 @@
 ---
 title: Kompilieren und Erstellen
+description: Hier erfahren Sie, wie Sie die Buildmethoden der Visual Studio-IDE, MSBuild-Befehlszeilentools oder von Azure Pipelines verwenden, um eine Anwendung zu erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ac65fa9eaaf8e318e99e134957b335141f07577c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928540"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136588"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilieren und Erstellen in Visual Studio
 
@@ -53,7 +55,7 @@ Eine Vielzahl weiterer Aufgaben finden Sie hier:
 - [Festlegen von Buildoptionen](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Build Multiple Projects in Parallel (Paralleles Erstellen mehrerer Projekte)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Websites](/previous-versions/hwxa5aha(v=vs.140))
 - [Kompilieren und Erstellen (Visual Studio für Mac)](/visualstudio/mac/compiling-and-building)

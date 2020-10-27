@@ -1,5 +1,6 @@
 ---
 title: Problembehandlung und bekannte Probleme (VS-Tools für Unity)
+description: Hier erfahren Sie mehr über die Problembehandlung in Visual Studio-Tools für Unity. Lesen Sie die Beschreibungen bekannter Probleme, und informieren Sie sich über deren Lösungen.
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: d096a431b7a345d2218c46969dc1a1a21af1f45a
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235081"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039832"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
 
@@ -128,19 +129,19 @@ Versuchen Sie, Ihre Version von Visual Studio 2015 auf Update 3 zu aktualisieren
 
 1. Öffnen Sie eine Instanz von Visual Studio.
 
-1. Öffnen Sie das Dialogfeld "An den Prozess anhängen". Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen**, **An den Prozess anhängen**.
+1. Öffnen Sie das Dialogfeld "An den Prozess anhängen". Wählen Sie in der neuen Instanz von Visual Studio im Hauptmenü **Debuggen** , **An den Prozess anhängen** .
 
 1. Hängen Sie den Debugger an die eingefrorene Instanz von Visual Studio an. Wählen Sie im Dialogfeld **An den Prozess anhängen** die eingefrorene Instanz von Visual Studio in der Tabelle **Verfügbare Prozesse** aus, und klicken Sie dann auf die Schaltfläche **Anhängen** .
 
-1. Halten Sie den Debugger an. Klicken Sie in der neuen Instanz von Visual Studio im Hauptmenü auf **Debuggen**, **Alle unterbrechen**, oder drücken Sie **STRG+ALT+UNTRBR**.
+1. Halten Sie den Debugger an. Klicken Sie in der neuen Instanz von Visual Studio im Hauptmenü auf **Debuggen** , **Alle unterbrechen** , oder drücken Sie **STRG+ALT+UNTRBR** .
 
-1. Erstellen Sie einen Thread-Dump. Geben Sie im Befehlsfenster den folgenden Befehl ein, und drücken Sie die **EINGABETASTE**:
+1. Erstellen Sie einen Thread-Dump. Geben Sie im Befehlsfenster den folgenden Befehl ein, und drücken Sie die **EINGABETASTE** :
 
     ```powershell
     Debug.ListCallStack /AllThreads /ShowExternalCode
     ```
 
-    Möglicherweise müssen Sie zuerst das Fenster **Befehl** einblenden. Wählen Sie in Visual Studio im Hauptmenü **Ansicht**, **Weitere Fenster**, **Befehlsfenster**.
+    Möglicherweise müssen Sie zuerst das Fenster **Befehl** einblenden. Wählen Sie in Visual Studio im Hauptmenü **Ansicht** , **Weitere Fenster** , **Befehlsfenster** .
 
 *Unter Mac:*
 

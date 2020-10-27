@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/29/2020
+ms.date: 10/20/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
-ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
+ms.openlocfilehash: 8bbaf2435202293d1580083d42a145f590c5e02d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91544799"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298673"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,8 +29,13 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Preview 5 | 20. Oktober 2020 | 16.8.30615.102 |
+| 16.7.6 | Release | 13. Oktober 2020 | 16.7.30611.23 |
+| 16.8.0 | Preview 4 | 13. Oktober 2020 | 16.8.30608.117 |
+| 16.0.19 | Release | 13. Oktober 2020 | 16.0.28803.846 |
+| 16.4.14 | Release | 13. Oktober 2020 | 16.4.30607.51 |
 | 16.8.0 | Preview 3.2 | 29. September 2020 | 16.8.30524.135 |
-| 16.7.5 | Release | 29. September 2020 |  16.7.30523.141 |
+| 16.7.5 | Freigabe | 29. September 2020 |  16.7.30523.141 |
 | 16.8.0 | Preview 3.1 | 22. September 2020 | 16.8.30516.212 |
 | 16.7.4 | Release | 21. September 2020 | 16.7.30517.126 |
 | 16.8.0 | Preview 3 | 14. September 2020 | 16.8.30509.190 |
@@ -180,6 +185,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.28 | Freigabe | 13. Oktober 2020 | 15.9.28307.1274 |
 | 15.9.27 | Freigabe | 8\. September 2020 | 15.9.28307.1259 |
 | 15.9.26 | Freigabe | 11. August 2020 | 15.9.28307.1234 |
 | 15.9.25 | Freigabe | 14. Juli 2020 | 15.9.28307.1216 |
@@ -352,7 +358,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 | 15.0.0 | Freigabe | 7\. März 2017 | 15.0.26228.4 |
 
 > [!NOTE]
-> Weitere Informationen zu Buildnummern und Veröffentlichungsterminen für die nächste Version von Visual Studio finden Sie auf der Seite mit den [ Buildnummern und Veröffentlichungsterminen für Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true).
+> Weitere Informationen zu Buildnummern und Veröffentlichungsterminen für die nächste Version von Visual Studio finden Sie auf der Seite mit den [ Buildnummern und Veröffentlichungsterminen für Visual Studio 2019](?preserve-view=true&view=vs-2019).
 
 ::: moniker-end
 

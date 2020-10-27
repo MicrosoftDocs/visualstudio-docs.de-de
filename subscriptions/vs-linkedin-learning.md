@@ -2,17 +2,17 @@
 title: LinkedIn Learning-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 04/17/2020
+ms.date: 10/06/2020
 ms.topic: how-to
 description: Erfahren Sie mehr über den LinkedIn Learning-Vorteil, der in einem LinkedIn Premium-Abonnement enthalten ist, das in ausgewählten Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 6f0f500d092bb17e1bb81f0d35f2b12dc5c18183
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
+ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006292"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805889"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Der LinkedIn Learning-Vorteil in Visual Studio-Abonnements
 
@@ -29,14 +29,14 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
    > [!div class="mx-imgBorder"]
    > ![Kachel des Vorteils „LinkedIn Learning“](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
 
-3. Wenn Sie bereits über ein LinkedIn-Konto verfügen und automatisch angemeldet wurden, werden Sie sofort zur Aktivierungsseite für den LinkedIn Learning-Vorteil weitergeleitet.  Wenn Sie über ein LinkedIn-Konto verfügen, aber nicht automatisch angemeldet wurden, geben Sie einfach Benutzername und Kennwort ein, und klicken Sie anschließend auf **Anmelden**.  Fahren Sie mit [diesem Schritt](#activate-your-offer) fort, um Ihr Angebot zu aktivieren.
+3. Wenn Sie bereits über ein LinkedIn-Konto verfügen und automatisch angemeldet wurden, werden Sie sofort zur Aktivierungsseite für den LinkedIn Learning-Vorteil weitergeleitet.  Wenn Sie über ein LinkedIn-Konto verfügen, aber nicht automatisch angemeldet wurden, geben Sie einfach Benutzername und Kennwort ein, und klicken Sie anschließend auf **Anmelden** .  Fahren Sie mit [diesem Schritt](#activate-your-offer) fort, um Ihr Angebot zu aktivieren.
 
 ### <a name="create-a-linkedin-account"></a>Erstellen eines LinkedIn-Kontos
-4. Wenn Sie noch kein LinkedIn-Konto besitzen, klicken Sie auf **Jetzt Mitglied werden**.
+4. Wenn Sie noch kein LinkedIn-Konto besitzen, klicken Sie auf **Jetzt Mitglied werden** .
 
-5. Geben Sie Ihre persönlichen Daten, wählen Sie einen Benutzernamen und ein Kennwort, und klicken Sie auf **Jetzt Mitglied werden**.
+5. Geben Sie Ihre persönlichen Daten, wählen Sie einen Benutzernamen und ein Kennwort, und klicken Sie auf **Jetzt Mitglied werden** .
 
-6. Geben Sie Ihr Land/Ihre Region und Ihre Postleitzahl an, und klicken Sie auf **Weiter**.
+6. Geben Sie Ihr Land/Ihre Region und Ihre Postleitzahl an, und klicken Sie auf **Weiter** .
 
 7. Geben Sie als Nächstes für Ihr Profil einige persönliche Informationen an.  Geben Sie an, ob Sie Student sind, und geben Sie Ihre letzte Berufsbezeichnung, das Unternehmen und die Branche an.
 
@@ -44,13 +44,13 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 
 9. Wenn Sie Ihre E-Mail-Adresse angegeben haben, wurde Ihnen eine Nachricht mit einem Bestätigungscode gesendet.  Die Nachricht wurde von „LinkedIn Messages“ gesendet.  Wenn sich diese nicht in Ihrem Posteingang befindet, überprüfen Sie bitte den Junk-E-Mail-Ordner.  Geben Sie den Code aus der Nachricht ein, und klicken Sie auf **Verify** (Prüfen).
 
-10. Falls Sie Ihre Kontakte aus dem zuvor angegebenen E-Mail-Konto importieren möchten, können Sie dies jetzt tun.  Klicken Sie andernfalls auf **Überspringen**. (Wenn Sie diesen Schritt überspringen, werden Sie gebeten, Ihre Auswahl zu bestätigen.  Klicken Sie auf **Ja**.)
+10. Falls Sie Ihre Kontakte aus dem zuvor angegebenen E-Mail-Konto importieren möchten, können Sie dies jetzt tun.  Klicken Sie andernfalls auf **Überspringen** . (Wenn Sie diesen Schritt überspringen, werden Sie gebeten, Ihre Auswahl zu bestätigen.  Klicken Sie auf **Ja** .)
 
 11. Die Option „Job alert“ (Jobalarm) ermöglicht es Ihnen, zu Stellen in Ihrer Region benachrichtigt zu werden, die für Sie möglicherweise geeignet wären.  Sie können den Jobalarm jetzt aktivieren oder diesen Schritt überspringen, um das Erstellen Ihres Kontos fortzusetzen.
 
 12. Basierend auf Ihren bisherigen Einstellungen und den persönlichen Informationen, die Sie bisher eingegeben haben, sehen Sie eine Auswahl empfohlener Kontakte, was Ihnen den Aufbau Ihres beruflichen Netzwerks erleichtern soll.  Sie können Verbindungen hinzufügen oder diesen Schritt überspringen.
 
-13. Klicken Sie auf **Foto hochladen**, wenn Sie ein Foto zu Ihrem Profil hinzufügen möchten.  Andernfalls können Sie diesen Schritt überspringen.  (Sie können auch später noch ein Foto hinzufügen.)
+13. Klicken Sie auf **Foto hochladen** , wenn Sie ein Foto zu Ihrem Profil hinzufügen möchten.  Andernfalls können Sie diesen Schritt überspringen.  (Sie können auch später noch ein Foto hinzufügen.)
 
 14. Sie können die LinkedIn-App auf Ihr Handy herunterladen, um von überall aus Zugriff auf Ihr Netzwerk zu haben.  Sie können sich einen Link an Ihr Handy senden lassen oder die App direkt im App Store oder von Google Play herunterladen.  Sie können auch auf **Weiter** klicken, um diesen Schritt jetzt zu überspringen und die App später herunterzuladen.
 
@@ -59,7 +59,7 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning: Aktivieren](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-16. Sie können sich nun die Fertigkeiten genauer ansehen, die Sie interessieren.  Wählen Sie Fertigkeiten aus der Liste der Empfehlungen aus, suchen Sie nach weiteren Fertigkeiten, oder klicken Sie auf **Überspringen**, um den Vorgang ohne Auswahl von Fertigkeiten fortzusetzen.
+16. Sie können sich nun die Fertigkeiten genauer ansehen, die Sie interessieren.  Wählen Sie Fertigkeiten aus der Liste der Empfehlungen aus, suchen Sie nach weiteren Fertigkeiten, oder klicken Sie auf **Überspringen** , um den Vorgang ohne Auswahl von Fertigkeiten fortzusetzen.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning: Fertigkeiten](_img/vs-linkedin/vs-linkedin-skills.png)
 
@@ -71,7 +71,7 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup> | 6 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail<sup>1</sup> | 6 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
 | Visual Studio Enterprise mit GitHub Enterprise   | VL | 6 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 Monate                                                            |Nein.  Nur für neue Abonnenten verfügbar         |
 | Visual Studio Professional mit GitHub Enterprise | VL | 3 Monate      | Nein.  Nur für neue Abonnenten verfügbar         |
@@ -79,7 +79,7 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              | NA         |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
+<sup>1</sup>   *Umfasst nicht:  NFR, Visual Studio Industry Partner, Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

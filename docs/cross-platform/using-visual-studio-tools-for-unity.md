@@ -1,5 +1,6 @@
 ---
 title: Verwenden von Visual Studio Tools für Unity | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie die Integrations- und Produktivitätsfeatures der Visual Studio-Tools für Unity verwenden. Verwenden Sie auch den Visual Studio-Debugger für die Unity-Entwicklung.
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d8a0db05788682bf08f9899cebb517370a1627b6
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: d6bf19060d029ee20b4c5c06d594e3b16cb391a3
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508963"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039858"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Verwenden von Visual Studio-Tools für Unity
 
@@ -33,7 +34,7 @@ Alternativ können Sie Visual Studio öffnen, während kein Skript im Quellcode-
 
 Sie können in Visual Studio schnell auf die Dokumentation zur Erstellung von Unity-Skripts zugreifen. Wenn Visual Studio-Tools für Unity die API-Dokumentation lokal nicht finden kann, wird versucht, sie online zu finden.
 
-- Platzieren Sie in Visual Studio den Cursor über der Unity-API, zu der Sie Informationen wünschen, oder markieren Sie sie, und drücken Sie dann **STRG**+**ALT**+**M** > **STRG**+**H**.
+- Platzieren Sie in Visual Studio den Cursor über der Unity-API, zu der Sie Informationen wünschen, oder markieren Sie sie, und drücken Sie dann **STRG**+**ALT**+**M** > **STRG**+**H** .
 
 ## <a name="intellisense-for-unity-api-messages"></a>API-Nachrichten von IntelliSense für Unity
 
@@ -59,7 +60,7 @@ Die Codevervollständigung von IntelliSense erleichtert das Implementieren von U
 
     - Durch Drücken der **TAB-TASTE**
 
-    - Durch Drücken der **EINGABETASTE**.
+    - Durch Drücken der **EINGABETASTE** .
 
     - Durch Doppelklicken auf das ausgewählte Element
 
@@ -71,7 +72,7 @@ Sie können den MonoBehavior-Assistenten verwenden, um eine Liste aller Unity-AP
 
 So erstellen Sie mit dem MonoBehavior-Assistenten leere MonoBehavior-Methodendefinitionen:
 
-1. Positionieren Sie den Cursor in Visual Studio an der Stelle, an der die Methoden eingefügt werden sollen, und drücken Sie **STRG**+**UMSCHALT**+**M**, um den MonoBehavior-Assistenten zu starten.
+1. Positionieren Sie den Cursor in Visual Studio an der Stelle, an der die Methoden eingefügt werden sollen, und drücken Sie **STRG**+**UMSCHALT**+**M** , um den MonoBehavior-Assistenten zu starten.
 
 2. Aktivieren Sie im Fenster **Create script methods** (Skriptmethoden erstellen) die Kontrollkästchen neben den Namen der einzelnen Methoden, die Sie hinzufügen möchten.
 
@@ -79,9 +80,9 @@ So erstellen Sie mit dem MonoBehavior-Assistenten leere MonoBehavior-Methodendef
 
 4. Standardmäßig werden die Methoden an der Position des Cursors eingefügt. Alternativ können Sie sie nach jeder Methode, die bereits in Ihrer Klasse implementiert ist, durch Ändern des Werts der Dropdownliste **Insertion point** (Einfügemarke) an der gewünschten Stelle einfügen.
 
-5. Wenn Sie möchten, dass der Assistent Kommentare für die Methoden generiert, die Sie ausgewählt haben, markieren Sie das Kontrollkästchen **Methodenkommentare generieren**. Diese Kommentare sollen Ihnen helfen zu verstehen, wann die Methode aufgerufen wird und was ihre allgemeinen Aufgaben sind.
+5. Wenn Sie möchten, dass der Assistent Kommentare für die Methoden generiert, die Sie ausgewählt haben, markieren Sie das Kontrollkästchen **Methodenkommentare generieren** . Diese Kommentare sollen Ihnen helfen zu verstehen, wann die Methode aufgerufen wird und was ihre allgemeinen Aufgaben sind.
 
-6. Klicken Sie auf die Schaltfläche **OK**, um den Assistenten zu beenden und die Methoden in Ihren Code einzufügen.
+6. Klicken Sie auf die Schaltfläche **OK** , um den Assistenten zu beenden und die Methoden in Ihren Code einzufügen.
 
    ![Dialogfeld des MonoBehavior-Assistenten](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
@@ -103,11 +104,11 @@ Mit Visual Studio-Tools für Unity können Sie Editor- und Spielskripts für Ihr
 
 #### <a name="start-debugging"></a>Debugging starten
 
-1. Stellen Sie eine Verbindung von Visual Studio mit Unity her, indem Sie auf die **Wiedergabeschaltfläche** mit der Bezeichnung **An Unity anfügen** klicken, oder verwenden Sie die Taste **F5**.
+1. Stellen Sie eine Verbindung von Visual Studio mit Unity her, indem Sie auf die **Wiedergabeschaltfläche** mit der Bezeichnung **An Unity anfügen** klicken, oder verwenden Sie die Taste **F5** .
 
    ![In Visual Studio auf „Wiedergeben“ klicken](media/vstu_play-button.png)
 
-2. Wechseln Sie zu Unity, und klicken Sie auf **Play**, um das Spiel im Editor auszuführen.
+2. Wechseln Sie zu Unity, und klicken Sie auf **Play** , um das Spiel im Editor auszuführen.
 
    ![In Unity auf „Wiedergeben“ klicken](media/vstu_unity-play-button.png)
 
@@ -115,7 +116,7 @@ Mit Visual Studio-Tools für Unity können Sie Editor- und Spielskripts für Ihr
 
 #### <a name="stop-debugging"></a>Beenden des Debuggens
 
-- Klicken Sie in Visual Studio auf die Schaltfläche **Beenden**, oder verwenden Sie die Tastenkombination **UMSCHALT + F5**.
+- Klicken Sie in Visual Studio auf die Schaltfläche **Beenden** , oder verwenden Sie die Tastenkombination **UMSCHALT + F5** .
 
   ![In Visual Studio auf „Beenden“ klicken](media/vstu_stop-debugger.png)
 
@@ -125,13 +126,13 @@ Weitere Informationen zum Debuggen in Visual Studio finden Sie unter [Ein erster
 
 Der Einfachheit halber können Sie die Schaltfläche **An Unity anfügen** in den Modus **An Unity anfügen und wiedergeben** ändern.
 
-1. Klicken Sie auf den kleinen **Pfeil nach unten** neben der Schaltfläche **An Unity anfügen**.
+1. Klicken Sie auf den kleinen **Pfeil nach unten** neben der Schaltfläche **An Unity anfügen** .
 
 1. Wählen Sie **An Unity anfügen und wiedergeben** aus dem Dropdownmenü aus.
 
     ![Anfügen und wiedergeben](media/vstu_attach-and-play.png)
 
-Die Wiedergabeschaltfläche erhält die Bezeichnung **An Unity anfügen und wiedergeben**. Wenn Sie auf diese Schaltfläche klicken oder die Taste **F5** verwenden, erfolgt zusätzlich zum Anfügen des Visual Studio-Debuggers automatisch der Wechsel zum Unity-Editor und wird das Spiel im Editor ausgeführt.
+Die Wiedergabeschaltfläche erhält die Bezeichnung **An Unity anfügen und wiedergeben** . Wenn Sie auf diese Schaltfläche klicken oder die Taste **F5** verwenden, erfolgt zusätzlich zum Anfügen des Visual Studio-Debuggers automatisch der Wechsel zum Unity-Editor und wird das Spiel im Editor ausgeführt.
 
 Wenn Sie in Visual Studio auf die Schaltfläche **Beenden** klicken oder die Tasten **UMSCHALT**+**F5** drücken, wird das Spiel im Unity-Editor automatisch beendet.
 
@@ -163,7 +164,7 @@ Sie können Entwicklungsbuilds verschiedener Unity-Player mit Visual Studio debu
 
    **Computer** Der Name des Computers oder Geräts, auf dem diese Unity-Instanz ausgeführt wird.
 
-   **Typ**-**Editor**, wenn diese Unity-Instanz als Teil des Unity-Editors ausgeführt wird; **Player**, wenn diese Unity-Instanz ein eigenständiger Player ist.
+   **Typ** - **Editor** , wenn diese Unity-Instanz als Teil des Unity-Editors ausgeführt wird; **Player** , wenn diese Unity-Instanz ein eigenständiger Player ist.
 
    **Port** Die Portnummer für den UDP-Socket, über den diese Instanz von Unity kommuniziert.
 

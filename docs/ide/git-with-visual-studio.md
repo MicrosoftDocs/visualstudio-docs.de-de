@@ -8,12 +8,12 @@ ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e8bc35a6434ab619e7232b5351ba95aae68db2cd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
+ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005140"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92082056"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Neue Git-Funktionen in Visual Studio (Vorschau)
 
@@ -24,19 +24,19 @@ Ab [Version 16.6](/visualstudio/releases/2019/release-notes-v16.6) bietet Visua
 
 ## <a name="how-to-start-using-git-in-visual-studio"></a>Einstieg in die Verwendung von Git in Visual Studio
 
-Navigieren Sie zu **Extras** > **Optionen** > **Umgebung** > **Vorschaufeatures**, und aktivieren Sie dann das Kontrollkästchen **New Git user experience** (Neue Git-Benutzeroberfläche), um die neue Git-Benutzeroberfläche zu verwenden.
+Navigieren Sie zu **Extras** > **Optionen** > **Umgebung** > **Vorschaufeatures** , und aktivieren Sie dann das Kontrollkästchen **New Git user experience** (Neue Git-Benutzeroberfläche), um die neue Git-Benutzeroberfläche zu verwenden.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
 Es gibt drei Möglichkeiten, Git in Visual Studio 2019 zu verwenden:
 
-- [Öffnen eines vorhandenen Git-Repositorys:](#open-an-existing-local-repository) Wenn sich Ihr Code bereits auf Ihrem Computer befindet, können Sie ihn über **Datei** > **Öffnen** > **Projekt/Projektmappe** (oder **Ordner**) öffnen. Visual Studio erkennt automatisch, ob ein initialisiertes Git-Repository verfügbar ist.
+- [Öffnen eines vorhandenen Git-Repositorys:](#open-an-existing-local-repository) Wenn sich Ihr Code bereits auf Ihrem Computer befindet, können Sie ihn über **Datei** > **Öffnen** > **Projekt/Projektmappe** (oder **Ordner** ) öffnen. Visual Studio erkennt automatisch, ob ein initialisiertes Git-Repository verfügbar ist.
 - [Erstellen eines neuen Git-Repositorys:](#create-a-new-git-repository) Wenn Ihr Code Git nicht zugeordnet ist, können Sie ein neues Git-Repository erstellen.
 - [Klonen eines vorhandenen Git-Repositorys:](#clone-an-existing-git-repository) Wenn sich der Code, mit dem Sie arbeiten möchten, nicht auf Ihrem Computer befindet, können Sie jedes beliebige Remoterepository klonen.
 
 ## <a name="create-a-new-git-repository"></a>Erstellen eines neuen Git-Repositorys
 
-Wenn Ihr Code Git nicht zugeordnet ist, können Sie zunächst ein neues Git-Repository erstellen. Klicken Sie hierzu in der Menüleiste auf **Git** > **Git-Repository erstellen**. Geben Sie dann in im Dialogfeld **Neues Git-Repository erstellen** Ihre Informationen ein.
+Wenn Ihr Code Git nicht zugeordnet ist, können Sie zunächst ein neues Git-Repository erstellen. Klicken Sie hierzu in der Menüleiste auf **Git** > **Git-Repository erstellen** . Geben Sie dann in im Dialogfeld **Neues Git-Repository erstellen** Ihre Informationen ein.
 
 :::image type="content" source="media/git-create-repository.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
@@ -89,13 +89,16 @@ Während Ihrer Arbeit werden Änderungen an Dateien in Ihrem Projekt von Visual 
 
 Wenn Sie bereit sind, Änderungen zu stagen, klicken Sie für jede zu stagende Datei auf die Schaltfläche **+** (Pluszeichen). Alternativ können Sie mit der rechten Maustaste auf eine Datei und dann auf **Stufe** klicken. Sie können auch alle geänderten Dateien mit einem Mausklick stagen, indem Sie die Schaltfläche **+** (Pluszeichen) oben im Abschnitt **Änderungen** zum Stagen aller Dateien verwenden.
 
-Wenn Sie eine Änderung stagen, erstellt Visual Studio den Abschnitt **Gestagete Änderungen**. Nur Änderungen im Abschnitt **Gestagete Änderungen** werden beim nächsten Commit hinzugefügt. Klicken Sie hierzu auf **Gestageter Commit**. Sie können Änderungen auch unstagen, indem Sie auf die Schaltfläche **–** (Minuszeichen) klicken. Der entsprechende Befehl für diese Aktion ist `git commit -m "Your commit message"`.
+Wenn Sie eine Änderung stagen, erstellt Visual Studio den Abschnitt **Gestagete Änderungen** . Nur Änderungen im Abschnitt **Gestagete Änderungen** werden beim nächsten Commit hinzugefügt. Klicken Sie hierzu auf **Gestageter Commit** . Sie können Änderungen auch unstagen, indem Sie auf die Schaltfläche **–** (Minuszeichen) klicken. Der entsprechende Befehl für diese Aktion ist `git commit -m "Your commit message"`.
 
-Sie können sich auch dazu entscheiden, Ihre geänderten Dateien nicht zu stagen, indem Sie den Stagingbereich überspringen. In diesem Fall ermöglicht Visual Studio das Committen Ihrer Änderungen direkt ohne Staging. Geben Sie einfach Ihre Commitnachricht ein, und klicken Sie auf **Alle committen**. Der entsprechende Befehl für diese Aktion ist `git commit -a`.
+Sie können sich auch dazu entscheiden, Ihre geänderten Dateien nicht zu stagen, indem Sie den Stagingbereich überspringen. In diesem Fall ermöglicht Visual Studio das Committen Ihrer Änderungen direkt ohne Staging. Geben Sie einfach Ihre Commitnachricht ein, und klicken Sie auf **Alle committen** . Der entsprechende Befehl für diese Aktion ist `git commit -a`.
 
 Visual Studio erleichtert mithilfe der Verknüpfungen **Commit für alle und Push** und **Commit für alle und Sync** auch das Committen und Synchronisieren mit nur einem Mausklick. Wenn Sie in den Abschnitten **Änderungen** und **Gestagete Änderungen** auf eine beliebige Datei doppelklicken, wird ein zeilenweiser Vergleich mit der nicht geänderten Version der Datei angezeigt.
 
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
+
+> [!TIP]
+> Wenn Sie eine Verbindung mit dem Azure DevOps-Repository hergestellt haben, können Sie das Azure DevOps-Arbeitselement mit einem Commit mithilfe des Zeichens „#“ zuordnen. Sie können Ihr Azure DevOps-Repository über „Team Explorer > Verbindungen verwalten“ verbinden.
 
 ### <a name="select-an-existing-branch"></a>Auswählen eines vorhandenen Branchs
 
@@ -121,7 +124,7 @@ Sie können einen vorhandenen lokalen Branch oder einen Remotebranch als Basis v
 
 ## <a name="git-repository-window"></a>Fenster „Git-Repository“
 
-Visual Studio verfügt über das neue Fenster **Git-Repository**, bei dem es sich um eine konsolidierte Ansicht aller Details in Ihrem Repository einschließlich aller Verläufe in Bezug auf Branches, Remoterepositorys und Commits handelt. Sie können entweder über die Optionen **Git** oder **Ansicht** auf der Menüleiste oder über die Statusleiste direkt auf dieses Fenster zugreifen.
+Visual Studio verfügt über das neue Fenster **Git-Repository** , bei dem es sich um eine konsolidierte Ansicht aller Details in Ihrem Repository einschließlich aller Verläufe in Bezug auf Branches, Remoterepositorys und Commits handelt. Sie können entweder über die Optionen **Git** oder **Ansicht** auf der Menüleiste oder über die Statusleiste direkt auf dieses Fenster zugreifen.
 
 ### <a name="manage-branches"></a>Verwalten von Branches
 
@@ -133,13 +136,13 @@ Wenn Sie einen Branch fetchen, verfügt das Fenster **Git-Änderungen** unter de
 
 :::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
-Der Indikator fungiert auch als Verlinkung zum Commitverlauf des Branchs im Fenster **Git-Repository**. Oben im Verlauf werden nun die Details dieser eingehenden und ausgehenden Commits angezeigt. Von hier aus können Sie die Commits auch pullen oder mithilfe von Push übertragen.
+Der Indikator fungiert auch als Verlinkung zum Commitverlauf des Branchs im Fenster **Git-Repository** . Oben im Verlauf werden nun die Details dieser eingehenden und ausgehenden Commits angezeigt. Von hier aus können Sie die Commits auch pullen oder mithilfe von Push übertragen.
 
 :::image type="content" source="media/git-branch-commit-history.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
 #### <a name="commit-details"></a>Commitdetails
 
-Wenn Sie auf einen **Commit** doppelklicken, zeigt Visual Studio die entsprechenden Details in einem separaten Toolfenster an. Von hier aus können Sie den Commit rückgängig machen, zurücksetzen, die Commitnachricht ändern oder ein Tag für den Commit erstellen. Wenn Sie auf eine geänderte Datei im Commit klicken, öffnet Visual Studio die parallele **Diff**-Ansicht des Commits und des übergeordneten Elements.
+Wenn Sie auf einen **Commit** doppelklicken, zeigt Visual Studio die entsprechenden Details in einem separaten Toolfenster an. Von hier aus können Sie den Commit rückgängig machen, zurücksetzen, die Commitnachricht ändern oder ein Tag für den Commit erstellen. Wenn Sie auf eine geänderte Datei im Commit klicken, öffnet Visual Studio die parallele **Diff** -Ansicht des Commits und des übergeordneten Elements.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
@@ -177,7 +180,7 @@ Sie können auch die Umschaltflächen zum Anzeigen bzw. Ausblenden von Unterschi
 
 ## <a name="personalize-your-git-settings"></a>Personalisieren der Git-Einstellungen
 
-Navigieren Sie auf der Menüleiste entweder zu **Git** > **Einstellungen** oder zu **Extras** > **Optionen** > **Quellcodeverwaltung**, um Ihre Git-Einstellungen sowohl auf Repositoryebene als auch auf globaler Ebene zu personalisieren und anzupassen. Wählen Sie anschließend die gewünschten Optionen aus.
+Navigieren Sie auf der Menüleiste entweder zu **Git** > **Einstellungen** oder zu **Extras** > **Optionen** > **Quellcodeverwaltung** , um Ihre Git-Einstellungen sowohl auf Repositoryebene als auch auf globaler Ebene zu personalisieren und anzupassen. Wählen Sie anschließend die gewünschten Optionen aus.
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 

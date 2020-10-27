@@ -10,12 +10,12 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: f3f122c4603cd388d5ea73d8044504daf28342d1
-  ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+  ms.openlocfilehash: 9879f8709aea87a72c10319de4e0c5fdb6f3ff3e
+  ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/19/2020
-  ms.locfileid: "90810105"
+  ms.lasthandoff: 10/19/2020
+  ms.locfileid: "92197464"
 landingContent:
 - title: Öffnen oder Erstellen eines Projekts
   linkLists:
@@ -29,11 +29,13 @@ landingContent:
     links:
     - text: Verwenden von Visual Studio ohne Projekte oder Projektmappen
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
+    - text: Verwenden der Visual Studio-Suche
+      url: visual-studio-search.md
 - title: Verwenden von Bearbeitungsfunktionen
   linkLists:
   - linkListType: overview
     links:
-    - text: Codeeditor verwenden
+    - text: Verwenden des Code-Editors
       url: writing-code-in-the-code-and-text-editor.md
     - text: Navigieren durch den Code
       url: navigating-code.md

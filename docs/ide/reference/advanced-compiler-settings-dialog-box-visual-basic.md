@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
+description: Hier erfahren Sie, wie Sie das Dialogfeld „Erweiterte Compilereinstellungen“ verwenden können, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,26 +15,26 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0e6e9d41bb1d4bd7446bb77306ca5a4551906f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0335ee8ef1c385da13c2043ffcfa94c264a5934a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419106"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137037"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
 
-Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** des **Projekt-Designers**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte.
+Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** des **Projekt-Designers** , um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte.
 
 ## <a name="to-access-this-dialog-box"></a>So öffnen Sie das Dialogfeld
 
-1. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappe**) aus.
+1. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappe** ) aus.
 
-2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Kompilieren**.
+2. Klicken Sie im Menü **Projekt** auf **Eigenschaften** . Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Kompilieren** .
 
 3. Wählen Sie auf der Seite [„Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) die **Konfiguration** und **Plattform** aus. In vereinfachten Buildkonfigurationen werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4. Klicken Sie auf **Erweiterte Kompilierungsoptionen**.
+4. Klicken Sie auf **Erweiterte Kompilierungsoptionen** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -72,13 +74,13 @@ In der Standardeinstellung ist diese Kontrollkästchen aktiviert und gibt an, da
 
  **Benutzerdefinierte Konstanten**
 
-Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Einträge sind durch Kommas getrennt in der folgenden Form anzugeben: **Name1="Value1",Name2="Value2",Name3="Value3"** .
+Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Die Einträge müssen durch Kommas getrennt sein und folgendes Format vorweisen: **Name1="Wert1",Name2="Wert2",Name3="Wert3"**
 
 ## <a name="other-settings"></a>Weitere Einstellungen
 
 **Serialisierungsassemblys generieren**
 
-Diese Einstellung gibt an, ob der Compiler XML-Serialisierungsassemblys erstellen wird. Serialisierungsassemblys können die Startleistung von <xref:System.Xml.Serialization.XmlSerializer> verbessern, sofern Sie diese Klasse zum Serialisieren von Typen im Code verwendet haben. Der Standardwert für diese Option ist **Auto**. **Auto** gibt an, dass nur dann Serialisierungsassemblys generiert werden, wenn Sie <xref:System.Xml.Serialization.XmlSerializer> verwendet haben, um Typen in Ihrem Code in XML zu codieren. **Aus** gibt an, dass grundsätzlich keine Serialisierungsassemblys generiert werden, unabhängig davon, ob im Code <xref:System.Xml.Serialization.XmlSerializer> verwendet wird. **Ein** gibt an, dass immer Serialisierungsassemblys generiert werden. Serialisierungsassemblys tragen den Namen `TypeName`.XmlSerializers.dll.
+Diese Einstellung gibt an, ob der Compiler XML-Serialisierungsassemblys erstellen wird. Serialisierungsassemblys können die Startleistung von <xref:System.Xml.Serialization.XmlSerializer> verbessern, sofern Sie diese Klasse zum Serialisieren von Typen im Code verwendet haben. Der Standardwert für diese Option ist **Auto** . **Auto** gibt an, dass nur dann Serialisierungsassemblys generiert werden, wenn Sie <xref:System.Xml.Serialization.XmlSerializer> verwendet haben, um Typen in Ihrem Code in XML zu codieren. **Aus** gibt an, dass grundsätzlich keine Serialisierungsassemblys generiert werden, unabhängig davon, ob im Code <xref:System.Xml.Serialization.XmlSerializer> verwendet wird. **Ein** gibt an, dass immer Serialisierungsassemblys generiert werden. Serialisierungsassemblys tragen den Namen `TypeName`.XmlSerializers.dll.
 
 ## <a name="see-also"></a>Siehe auch
 
