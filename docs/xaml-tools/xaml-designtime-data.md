@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659462"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298480"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Verwenden von Entwurfszeitdaten mit dem XAML-Designer in Visual Studio
 
@@ -135,6 +135,43 @@ xmlns:models="clr-namespace:Cities.Models"
 [![Tatsächliches Modell in Entwurfszeitdaten mit einem ListView-Element](media\xaml-design-time-listview-models.png "Tatsächliches Modell in Entwurfszeitdaten mit einem ListView-Element")](media\xaml-design-time-listview-models.png#lightbox)
 
 Der Vorteil dieser Vorgehensweise ist, dass Sie Ihre Steuerelemente an eine statische Entwurfszeitversion Ihres Modells binden können.
+
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>Verwenden von Entwurfszeitdaten mit benutzerdefinierten Typen und Eigenschaften
+
+Dieses Feature funktioniert standardmäßig nur mit Plattformsteuerelementen und -eigenschaften. In diesem Abschnitt werden die Schritte beschrieben, die erforderlich sind, damit Sie Ihre eigenen benutzerdefinierten Steuerelemente als Designzeit-Steuerelemente verwenden können. Dies ist eine neue Funktion, die Kunden in der Vorschauversion [16.8](/visualstudio/releases/2019/preview-notes) oder höher von Visual Studio 2019 zur Verfügung steht. Es gibt drei Anforderungen, um diese Funktion nutzen zu können:
+
+- benutzerdefinierter xmlns-Namespace 
+
+    ```xml
+    xmlns:myControls="http://MyCustomControls"
+    ```
+
+- Entwurfszeitversion des Namespace: Fügen Sie hierzu einfach „/design“ an das Ende an.
+
+     ```xml
+    xmlns:myDesignTimeControls="http://MyCustomControls/design"
+    ```
+
+- Hinzufügen des Entwurfszeitpräfixes zu „mc:Ignorable“
+
+    ```xml
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d myDesignTimeControls"
+    ```
+
+Nachdem Sie alle Schritte ausgeführt haben, können Sie das Präfix `myDesignTimeControls` verwenden, um die Designzeit-Steuerelemente zu erstellen.
+
+```xml
+<myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
+```
+
+### <a name="creating-a-custom-xmlns-namespace"></a>Erstellen eines benutzerdefinierten xmlns-Namespace
+
+Sie müssen den benutzerdefinierten XML-Namespace dem CLR-Namespace zuordnen, in dem sich die Steuerelemente befinden, um einen benutzerdefinierten xmlns-Namespace in WPF .NET Core zu erstellen. Dies erreichen Sie, indem Sie das `XmlnsDefinition`-Attribut auf Assemblyebene in Ihrer `AssemblyInfo.cs`-Datei hinzufügen. Die Datei befindet sich im Stammverzeichnis des Projekts.
+
+   ```C#
+[assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
+   ```
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

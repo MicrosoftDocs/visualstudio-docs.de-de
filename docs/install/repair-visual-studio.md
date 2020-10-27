@@ -2,7 +2,7 @@
 title: Reparieren Sie Visual Studio.
 titleSuffix: ''
 description: Hier erfahren Sie, wie Sie eine Installation von Visual Studio 2017 reparieren.
-ms.date: 06/15/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 author: ornellaalt
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418963"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007121"
 ---
 # <a name="repair-visual-studio"></a>Reparieren Sie Visual Studio.
 
@@ -39,7 +39,7 @@ Es kann vorkommen, dass Ihre Visual Studio-Installation beschädigt wird oder fe
 
 1. Suchen Sie den **Visual Studio-Installer** auf Ihrem Computer.
 
-     Auf einem Computer mit Windows 10 Anniversary Update oder höher klicken Sie beispielsweise auf **Start** und scrollen dann zum Buchstaben **V**. Dort wird das Installationsprogramm als **Visual Studio-Installer** angezeigt.
+     Auf einem Computer mit Windows 10 Anniversary Update oder höher klicken Sie beispielsweise auf **Start** und scrollen dann zum Buchstaben **V** . Dort wird das Installationsprogramm als **Visual Studio-Installer** angezeigt.
 
    > [!NOTE]
    > Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.
@@ -63,9 +63,9 @@ Es kann vorkommen, dass Ihre Visual Studio-Installation beschädigt wird oder fe
 
 1. Suchen Sie den **Visual Studio-Installer** auf Ihrem Computer.
 
-     Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
+     Hierzu können Sie im Windows-Startmenü nach „Installer“ suchen.
 
-     ![Öffnen des Visual Studio-Installers](media/vs-2019/vs-installer-windows-start.png "Öffnen des Visual Studio-Installers")
+     ![Visual Studio-Installer](media/vs-2019/visual-studio-installer.png "Suchen nach dem Visual Studio-Installer")
 
      > [!NOTE]
      > Sie können den Visual Studio-Installer auch an folgendem Speicherort finden:

@@ -1,5 +1,7 @@
 ---
 title: Parallele Installation mehrerer Visual Studio-Versionen
+description: Hier erfahren Sie, wie Sie Visual Studio auf einem Computer installieren, auf dem bereits eine frühere oder spätere Version von Visual Studio installiert ist.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211312"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928631"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 
@@ -51,7 +53,7 @@ Bevor Sie Versionen parallel installieren, sollten Sie sich mit folgenden Beding
 Beim Durchführen eines Upgrades von einer Visual Studio-Nebenversion zur nächsten, aktualisiert das Visual Studio-Installationsprogramm Ihre aktuelle Installation standardmäßig auf die nächste Version dieses Kanals. Wenn Sie beispielsweise Preview 16.6.4 installieren, versucht das Installationsprogramm, Ihre aktuelle Installation von Preview 16.6.3 zu ersetzen, da beide Versionen sich im Previewkanal 16.6 befinden. Dadurch wird sichergestellt, dass ältere Versionen von Visual Studio keinen Speicherplatz auf Ihrem Computer belegen. In einigen spezifischen Fällen kann es hilfreich sein, Nebenversionen parallel zu installieren. Im genannten Beispiel bedeutet dies, dass sich die Versionen 16.6.3 und 16.6.4 auf dem gleichen Computer befinden.
 
 1. Laden Sie die [Visual Studio-Bootstrapperdatei](/visualstudio/releases/2019/history#installing-an-earlier-release) für die Nebenversion herunter, die Sie parallel mit Ihren vorhandenen Versionen von Visual Studio installieren möchten.
-2. Öffnen Sie die Eingabeaufforderung im Administratormodus. Hierzu öffnen Sie das Windows-Startmenü, geben Sie „cmd“ ein, klicken Sie mit der rechten Maustaste auf die gefundene Eingabeaufforderung, und wählen Sie dann die Option **Als Administrator ausführen** aus. Ändern Sie in der Eingabeaufforderung das Verzeichnis in den Ordner, in dem sich Ihre Visual Studio-Bootstrapperdatei befindet.
+2. Öffnen Sie die Eingabeaufforderung im Administratormodus. Hierzu öffnen Sie das Windows-Startmenü, geben Sie „cmd“ ein, klicken Sie mit der rechten Maustaste auf die gefundene Eingabeaufforderung, und klicken Sie dann auf **Als Administrator ausführen** . Ändern Sie in der Eingabeaufforderung das Verzeichnis in den Ordner, in dem sich Ihre Visual Studio-Bootstrapperdatei befindet.
 3. Führen Sie den folgenden Befehl aus, legen Sie einen neuen Ordnerpfad für den Installationsspeicherort fest, und ersetzen Sie den Namen der EXE-Datei durch den Namen der entsprechenden Bootstrapperdatei für die Version von Visual Studio, die Sie installieren. Der Name der EXE-Datei sollte mit einer der folgenden Dateien übereinstimmen oder ähneln:
    * „vs_community.exe“ für Visual Studio Community
    * „vs_professional.exe“ für Visual Studio Professional
@@ -65,7 +67,7 @@ Beim Durchführen eines Upgrades von einer Visual Studio-Nebenversion zur nächs
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework-Versionen und parallele Installationen
 
-Visual Basic-, Visual C#- und Visual F#-Projekte nutzen die Option **Zielframework** im **Projekt-Designer**, um festzulegen, welche Version des .NET Frameworks ein Projekt verwendet. Für ein C++-Projekt können Sie das Zielframework durch Bearbeiten der Projektdatei (.vcxproj) ändern. Weitere Informationen finden Sie unter [Kompatibilität von .NET Framework-Versionen](/dotnet/framework/migration-guide/version-compatibility).
+Visual Basic-, Visual C#- und Visual F#-Projekte nutzen die Option **Zielframework** im **Projekt-Designer** , um festzulegen, welche Version des .NET Frameworks ein Projekt verwendet. Für ein C++-Projekt können Sie das Zielframework durch Bearbeiten der Projektdatei (.vcxproj) ändern. Weitere Informationen finden Sie unter [Kompatibilität von .NET Framework-Versionen](/dotnet/framework/migration-guide/version-compatibility).
 
 Wenn Sie ein Projekt erstellen, können Sie angeben, auf welche Version von .NET Framework das Projekt in der Liste **.NET Framework** im Dialogfeld **Neues Projekt** abzielt.
 

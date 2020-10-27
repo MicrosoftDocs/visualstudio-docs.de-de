@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, JavaScript, Projekt
+description: Hier erfahren Sie, wie Sie die Seite „Projekt“ des Dialogfelds „Optionen“ verwenden, um JavaScript- und TypeScript-Projektoptionen im Code-Editor anzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 06/19/2020
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e4f5ff4e1081bbbe6aced4465afb40318048a5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285360"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947699"
 ---
 # <a name="options-text-editor-javascript-project"></a>Optionen, Text-Editor, JavaScript, Projekt
 
-Verwenden Sie die Seite **Projekt** des Dialogfelds **Optionen**, um JavaScript- und TypeScript-Projektoptionen im Code-Editor anzugeben. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Projekt** erweitern.
+Verwenden Sie die Seite **Projekt** des Dialogfelds **Optionen** , um JavaScript- und TypeScript-Projektoptionen im Code-Editor anzugeben. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Projekt** erweitern.
 
 ## <a name="project-analysis-options"></a>Projektanalyseoptionen
 
@@ -54,7 +56,7 @@ Aktivieren Sie das Kontrollkästchen und wählen Sie dann die Art der Codegeneri
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>ECMAScript-Version für Dateien verwenden, die nicht Teil eines Projekts sind
 
-Mit diesen Optionen können Sie die ECMAScript-Version für Dateien auswählen, die nicht Teil eines Projekts sind. Sie können zwischen **ECMAScript 3**, **ECMAScript 5** oder **ECMAScript 6** auswählen.
+Mit diesen Optionen können Sie die ECMAScript-Version für Dateien auswählen, die nicht Teil eines Projekts sind. Sie können zwischen **ECMAScript 3** , **ECMAScript 5** oder **ECMAScript 6** auswählen.
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>JSX-Ausgabe für TSX-Dateien, die nicht Teil eines Projekts sind
 
@@ -64,8 +66,8 @@ Diese Optionen bestimmen, wie der Editor TypeScript-Dateien behandelt, die nicht
 
 |Option|Beschreibung|
 |------------|-----------------|
-|**React-Framework**|Wenn diese Option aktiviert ist, gibt der Code-Editor eine *JS*-Dateierweiterung aus.|
-|**Preserve**|Wenn diese Option ausgewählt ist, behält der Code-Editor das JSX als Teil der Ausgabe bei und sendet eine *JSX*-Dateierweiterung.|
+|**React-Framework**|Wenn diese Option aktiviert ist, gibt der Code-Editor eine *JS* -Dateierweiterung aus.|
+|**Preserve**|Wenn diese Option ausgewählt ist, behält der Code-Editor das JSX als Teil der Ausgabe bei und sendet eine *JSX* -Dateierweiterung.|
 
 ## <a name="see-also"></a>Siehe auch
 

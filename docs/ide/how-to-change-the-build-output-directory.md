@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Ändern des Buildausgabeverzeichnisses'
+description: Hier erfahren Sie, wie Sie den Speicherort der von Ihrem Projekt generierten Ausgabe auf Basis der Konfiguration („Debug“, „Release“ oder beides) angeben.
+ms.custom: SEO-VS-2020
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c2f2445bc7139c5bbc80a35905e24c319c9dfa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2512836781b0bf8c269f296066b25722b58be1fb
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284645"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136887"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Vorgehensweise: Ändern des Buildausgabeverzeichnisses
 
@@ -30,9 +32,9 @@ Sie können den Speicherort der von Ihrem Projekt generierten Ausgabe auf Basis 
 
    - Wählen Sie für C# die Registerkarte **Erstellen** aus.
    - Wählen Sie für Visual Basic die Registerkarte **Kompilieren** aus.
-   - Wählen Sie für C++ oder JavaScript die Registerkarte **Allgemein**.
+   - Wählen Sie für C++ oder JavaScript die Registerkarte **Allgemein** .
 
-3. Wählen Sie in der Konfigurationen-Dropdownliste am oberen Rand die Konfiguration aus, deren Speicherort der Ausgabedatei Sie ändern möchten (**Debug**, **Release** oder **Alle Konfigurationen**).
+3. Wählen Sie in der Konfigurationen-Dropdownliste am oberen Rand die Konfiguration aus, deren Speicherort der Ausgabedatei Sie ändern möchten ( **Debug** , **Release** oder **Alle Konfigurationen** ).
 
 4. Suchen Sie auf der Seite den Eintrag des Ausgabepfads. Er unterscheidet sich je nach Projekttyp:
 
@@ -40,7 +42,7 @@ Sie können den Speicherort der von Ihrem Projekt generierten Ausgabe auf Basis 
    - **Buildausgabepfad** für Visual Basic-Projekte
    - **Ausgabeverzeichnis** für Visual C++-Projekte
 
-   Geben Sie den Pfad zum Generieren der Ausgabe (absolut oder relativ zum Stammverzeichnis des Projekts) ein, oder wählen Sie **Durchsuchen**, um stattdessen zu diesem Ordner zu navigieren.
+   Geben Sie den Pfad zum Generieren der Ausgabe (absolut oder relativ zum Stammverzeichnis des Projekts) ein, oder wählen Sie **Durchsuchen** , um stattdessen zu diesem Ordner zu navigieren.
 
    ![Ausgabepfadeigenschaft für ein Visual Studio C#-Projekt](media/output-path.png)
    
@@ -54,11 +56,11 @@ Sie können den Speicherort der von Ihrem Projekt generierten Ausgabe auf Basis 
    > ```
 
 > [!TIP]
-> Wenn die Ausgabe nicht an dem festgelegten Speicherort generiert wird, müssen Sie in der Menüleiste von Visual Studio die entsprechende Konfiguration (z. B. **Debuggen** oder **Version**) erstellen.
+> Wenn die Ausgabe nicht an dem festgelegten Speicherort generiert wird, müssen Sie in der Menüleiste von Visual Studio die entsprechende Konfiguration (z. B. **Debuggen** oder **Version** ) erstellen.
 >
 > ![Auswahl der Buildkonfiguration in Visual Studio 2019](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Seite „Erstellen“, Projekt-Designer (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [Allgemeine Eigenschaftenseite (Projekt)](/cpp/build/reference/general-property-page-project)

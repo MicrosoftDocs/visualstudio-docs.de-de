@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, JavaScript, Linting
+description: Hier erfahren Sie, wie Sie die Seite „Linting“ (Linten) des Dialogfelds „Optionen“ verwenden, um Optionen zur Analyse von Code im Code-Editor festzulegen.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605971"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947712"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Dialogfeld „Optionen“: Text-Editor \> JavaScript/TypeScript \> Linting
 
-Verwenden Sie die Seite **Linting** im Dialogfeld **Optionen**, um Optionen zur Analyse von Code im Code-Editor festzulegen. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Linting** erweitern.
+Verwenden Sie die Seite **Linting** im Dialogfeld **Optionen** , um Optionen zur Analyse von Code im Code-Editor festzulegen. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Linting** erweitern.
 
 ## <a name="eslint-settings"></a>ESLint-Einstellungen
 
@@ -30,7 +32,7 @@ Mit diesen Optionen können Sie die statische JavaScript- TypeScript-Codeanalyse
 
 ### <a name="uielement-list"></a>UIElement-Liste
 
-|Option|Beschreibung|
+|Option|BESCHREIBUNG|
 |------------|-----------------|
 |**ESLint aktivieren**|Wenn diese Option ausgewählt ist, ermöglicht der Code-Editor eine statische Analyse des Codes.|
 |**Lint für alle (auch geschlossene) Dateien im Projekt durchführen**|Wenn diese Option ausgewählt ist, werden geschlossene Dateien analysiert, es sei denn, es wird eine Diagnose nur für offene Dateien gemeldet.|

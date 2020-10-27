@@ -1,5 +1,7 @@
 ---
 title: Anzeigen der zuletzt verwendeten Aufträge
+description: Sie erfahren, dass Sie die Liste der Aufträge einsehen können, um deren Status, Dauer und vieles mehr anzuzeigen, sobald die Aufträge übermittelt wurden.
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,19 +10,19 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e404d6a258ebb480b3eb02e615097872714db03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d67ee5810c1776176e1370839f0f7f43b9d0c55e
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371546"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099218"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Anzeigen aktueller Auftragsergebnisse und Details
 
 Sobald die Aufträge übermittelt wurden, können Sie die Liste der Aufträge einsehen, um deren Status, Dauer und vieles mehr anzuzeigen.
 
 1. Erweitern Sie im **Server-Explorer** den bestimmten Computekontext.
-2. Doppelklicken Sie auf **Aufträge**.
+2. Doppelklicken Sie auf **Aufträge** .
 3. Die Liste der an diesen Computekontext übermittelten Aufträge wird angezeigt.
 4. Wählen Sie einen bestimmten **Auftrag** in der Liste aus, um Details anzuzeigen.
 

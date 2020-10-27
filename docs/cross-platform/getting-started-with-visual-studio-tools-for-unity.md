@@ -1,5 +1,6 @@
 ---
 title: Erste Schritte mit Visual Studio-Tools für Unity | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zu den ersten Schritten mit Visual Studio-Tools für Unity. Außerdem erfahren Sie, wie Sie Visual Studio installieren und Unity für die Verwendung mit Visual Studio konfigurieren, und Sie erhalten Informationen zur Unterstützung für ältere Versionen.
 ms.custom: ''
 ms.date: 05/11/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 223458a448a4b32c3e9480f7189d5dc636ce8375
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250095"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039450"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
 
@@ -55,7 +56,7 @@ Wenn Sie Visual Studio bereits installiert haben oder eine manuelle Installation
 
 1. Klicken Sie für die gewünschte Version von Visual Studio auf **Ändern** (sofern bereits installiert) oder **Installieren** (für neue Installationen).
 
-1. Scrollen Sie auf der Registerkarte **Workloads** zum Abschnitt **Mobil und Gaming**, und wählen Sie die Workload **Spieleentwicklung mit Unity** aus.
+1. Scrollen Sie auf der Registerkarte **Workloads** zum Abschnitt **Mobil und Gaming** , und wählen Sie die Workload **Spieleentwicklung mit Unity** aus.
 
    :::moniker range="vs-2017"
    ![Unity-Workload](media/vs-2017/vstu-unity-workload.png)
@@ -85,7 +86,7 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
    ![Auswählen von Einstellungen](media/vs-2019/vstu-unity-preferences.png)
    :::moniker-end
 
-2. Klicken Sie im Dialogfeld "Einstellungen" auf die Registerkarte **Externe Tools**.
+2. Klicken Sie im Dialogfeld "Einstellungen" auf die Registerkarte **Externe Tools** .
 
 3. Wählen Sie in der Dropdownliste **Externer Skript-Editor** Ihre gewünschte Version von Visual Studio aus, falls diese aufgelistet ist, oder andernfalls **Durchsuchen...**
 
@@ -96,7 +97,7 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
    ![Auswählen von Visual Studio](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-4. Navigieren Sie bei Auswahl von **Durchsuchen...** zum Verzeichnis **Common7/IDE** in Ihrem Visual Studio-Installationsverzeichnis, und wählen Sie **devenv.exe** aus. Klicken Sie dann auf **Öffnen**.
+4. Navigieren Sie bei Auswahl von **Durchsuchen...** zum Verzeichnis **Common7/IDE** in Ihrem Visual Studio-Installationsverzeichnis, und wählen Sie **devenv.exe** aus. Klicken Sie dann auf **Öffnen** .
 
    :::moniker range="vs-2017"
    ![Auswählen von „Öffnen“](media/vs-2017/vstu-browse-for-application.png)
@@ -107,7 +108,7 @@ Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Edito
 
 5. Sobald Visual Studio in der Liste **Externer Skript-Editor** ausgewählt ist, überprüfen Sie, ob das Kontrollkästchen **Editoranhängen** aktiviert ist.
 
-6. Schließen Sie das Dialogfeld **Einstellungen**, um die Konfiguration abzuschließen.
+6. Schließen Sie das Dialogfeld **Einstellungen** , um die Konfiguration abzuschließen.
 
 ## <a name="support-for-older-versions"></a>Unterstützung älterer Versionen
 

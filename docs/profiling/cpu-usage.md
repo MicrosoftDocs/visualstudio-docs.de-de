@@ -1,6 +1,5 @@
 ---
-title: Analysieren der CPU-Auslastung | Microsoft-Dokumentation
-ms.custom: seodec18
+title: Analysieren der CPU-Auslastung im Leistungs-Profiler
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -9,31 +8,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543389"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007093"
 ---
-# <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
+# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analysieren der CPU-Auslastung ohne Debuggen im Leistungs-Profiler
 
 Ein guter Ausgangspunkt für die Untersuchung von Leistungsproblemen in Ihrer App ist die CPU-Auslastung. Das Leistungstool für die **CPU-Auslastung** zeigt die CPU-Zeit und den prozentualen Anteil an, der für die Ausführung von Code in C++, C#/Visual Basic und JavaScript-Apps verwendet wird.
 
-Das Tool für die **CPU-Auslastung** kann auf einem geöffneten Visual Studio-Projekt oder auf einer installierten Microsoft Store-App ausgeführt oder an eine laufende App oder einen laufenden Prozess angefügt werden. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Das Tool für die CPU-Auslastung kann auf einem geöffneten Visual Studio-Projekt oder auf einer installierten Microsoft Store-App ausgeführt oder an eine laufende App oder einen laufenden Prozess angefügt werden. Sie können das Tool für die CPU-Auslastung mit oder ohne Debuggen ausführen. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Sie können das Tool für die **CPU-Auslastung** mit oder ohne Debuggen ausführen. Im Debugger können Sie die CPU-Profilerstellung aktivieren bzw. deaktivieren sowie sich eine funktionsbezogene Aufschlüsselung der CPU-Auslastung ansehen. Sie können die Ergebnisse für die CPU-Auslastung anzeigen, wenn die Ausführung angehalten wurde, zum Beispiel an einem Breakpoint.
+Die folgenden Anweisungen zeigen, wie Sie das Tool für die CPU-Auslastung ohne den Debugger mit dem Visual Studio-Leistungsprofiler verwenden. In den Beispielen wird ein Releasebuild verwendet, der auf einem lokalen Computer erstellt wurde. Releasebuilds bieten die beste Ansicht der tatsächlichen App-Leistung. Informationen zur Analyse der CPU-Auslastung mit Debugbuilds (Debugger angefügt) finden Sie unter [Messen der Anwendungsleistung durch Analyse der CPU-Nutzung](../profiling/beginners-guide-to-performance-profiling.md).
 
-Die folgenden Anweisungen zeigen, wie Sie das Tool für die **CPU-Auslastung** ohne den Debugger mit dem Visual Studio-**Leistungsprofiler** verwenden. In den Beispielen wird ein Releasebuild verwendet, der auf einem lokalen Computer erstellt wurde. Releasebuilds bieten die beste Ansicht der tatsächlichen App-Leistung. Informationen zur Analyse der CPU-Auslastung mit Debugbuilds finden Sie unter [Profilerstellung für die Anwendungsleistung in Visual Studio](../profiling/beginners-guide-to-performance-profiling.md).
-
-In der Regel repliziert der lokale Computer die Ausführung der installierten App am besten. Bei Windows Phone-Apps bietet das Sammeln von Daten direkt vom Gerät die genauesten Daten. Führen Sie die App direkt auf dem Gerät und nicht über eine Remotedesktopverbindung aus, um Daten von einem Remotegerät zu sammeln.
+In der Regel repliziert der lokale Computer die Ausführung der installierten App am besten. Führen Sie die App direkt auf dem Gerät und nicht über eine Remotedesktopverbindung aus, um Daten von einem Remotegerät zu sammeln.
 
 >[!NOTE]
 >Für die Verwendung des [Leistungsprofilers](../profiling/profiling-feature-tour.md) ist Windows 7 oder höher erforderlich.
 
 ## <a name="collect-cpu-usage-data"></a>Erfassen von CPU-Auslastungsdaten
 
-1. Legen Sie im Visual Studio-Projekt die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Windows-Debugger** (oder **Lokaler Computer**) aus.
+1. Legen Sie im Visual Studio-Projekt die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Windows-Debugger** (oder **Lokaler Computer** ) aus.
 
     ![Auswählen von Release und lokalem Computer](../profiling/media/cpuuse_selectreleaselocalmachine.png "Auswählen von Release und lokalem Computer")
 
@@ -43,7 +40,7 @@ In der Regel repliziert der lokale Computer die Ausführung der installierten Ap
 
     ![Auswählen von CPU-Auslastung](../profiling/media/cpuuse_lib_choosecpuusage.png "Auswählen von CPU-Auslastung")
 
-4. Nach dem Start der App beginnt die Diagnosesitzung, und es werden die CPU-Auslastungsdaten angezeigt. Wenn Sie mit dem Sammeln der Daten fertig sind, klicken Sie auf **Sammlung beenden**.
+4. Nach dem Start der App beginnt die Diagnosesitzung, und es werden die CPU-Auslastungsdaten angezeigt. Wenn Sie mit dem Sammeln der Daten fertig sind, klicken Sie auf **Sammlung beenden** .
 
    ![Beenden der Datensammlung zur CPU-Auslastung](../profiling/media/cpu_use_wt_stopcollection.png "Beenden der Datensammlung zur CPU-Auslastung")
 
@@ -53,7 +50,7 @@ In der Regel repliziert der lokale Computer die Ausführung der installierten Ap
 
 ## <a name="analyze-the-cpu-usage-report"></a>Analysieren des CPU-Auslastungsberichts
 
-Der Diagnosebericht wird nach **CPU gesamt** vom höchsten zum niedrigsten Wert sortiert. Ändern Sie die Sortierreihenfolge oder sortieren Sie eine Spalte, indem Sie auf die Spaltenüberschrift klicken. Verwenden Sie die Dropdownliste **Filter**, um das Anzeigen von Threads zu aktivieren bzw. deaktivieren. Verwenden Sie das Feld **Suchen**, um nach einem bestimmten Thread oder Knoten zu suchen.
+Der Diagnosebericht wird nach **CPU gesamt** vom höchsten zum niedrigsten Wert sortiert. Ändern Sie die Sortierreihenfolge oder sortieren Sie eine Spalte, indem Sie auf die Spaltenüberschrift klicken. Verwenden Sie die Dropdownliste **Filter** , um das Anzeigen von Threads zu aktivieren bzw. deaktivieren. Verwenden Sie das Feld **Suchen** , um nach einem bestimmten Thread oder Knoten zu suchen.
 
 ::: moniker range=">=vs-2019"
 Ab Visual Studio 2019 können Sie auf die Schaltflächen **Langsamsten Pfad erweitern**  und **Langsamsten Pfad anzeigen** klicken, um die Funktionsaufrufe anzuzeigen, die den höchsten Prozentsatz der CPU in der Ansicht der Aufrufstruktur verwenden.
@@ -63,13 +60,13 @@ Ab Visual Studio 2019 können Sie auf die Schaltflächen **Langsamsten Pfad erwe
 
 |name|Beschreibung|
 |-|-|
-|**CPU gesamt [Einheit, %]**|![Gesamt % Datengleichung](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Die Millisekunden und der prozentuale CPU-Anteil, der im ausgewählten Zeitbereich durch Aufrufe der Funktion und die von der Funktion aufgerufenen Funktionen verwendet wurde. Dies unterscheidet sich vom Zeitachsendiagramm **CPU-Auslastung**, das die gesamte CPU-Aktivität in einem Zeitbereich mit der insgesamt verfügbaren CPU vergleicht.|
+|**CPU gesamt [Einheit, %]**|![Gesamt % Datengleichung](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Die Millisekunden und der prozentuale CPU-Anteil, der im ausgewählten Zeitbereich durch Aufrufe der Funktion und die von der Funktion aufgerufenen Funktionen verwendet wurde. Dies unterscheidet sich vom Zeitachsendiagramm **CPU-Auslastung** , das die gesamte CPU-Aktivität in einem Zeitbereich mit der insgesamt verfügbaren CPU vergleicht.|
 |**Eigen-CPU [Einheit, %]**|![Selbst % Gleichung](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Die Millisekunden und der prozentuale CPU-Anteil, der im ausgewählten Zeitbereich durch Aufrufe der Funktion verwendet wurde. Die von der Funktion aufgerufenen Funktionen sind dabei ausgeschlossen.|
 |**Modul**|Der Name des Moduls, das die Funktion enthält.
 
 ### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a> Die Aufrufstruktur der CPU-Auslastung
 
-Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knoten aus. Es öffnet sich die Seite **CPU-Auslastung** in der Ansicht **Aufrufer/Aufgerufener**. Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Option **Aufrufstruktur** aus.
+Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knoten aus. Es öffnet sich die Seite **CPU-Auslastung** in der Ansicht **Aufrufer/Aufgerufener** . Wählen Sie in der Dropdownliste **Aktuelle Ansicht** die Option **Aufrufstruktur** aus.
 
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> Struktur der Aufrufstruktur
 
@@ -91,7 +88,7 @@ Wählen Sie zum Anzeigen der Aufrufstruktur im Bericht den übergeordneten Knote
 
 System- und Frameworkfunktionen, die von Ihrem Code ausgeführt werden, werden als *externer Code* bezeichnet. Funktionen mit externem Code starten und beenden die App, zeichnen die Benutzeroberfläche, steuern das Threading und stellen der App weitere Dienste auf unterer Ebene bereit. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb die Aufrufstruktur „CPU-Auslastung“ die externen Funktionen einer Benutzermethode in einem **[Externer Code]** -Knoten sammelt.
 
-Wählen Sie zum Anzeigen der Aufrufpfade von externem Code auf der Hauptseite des Diagnoseberichts (rechter Bereich) in der Dropdownliste **Filter** die Option **Externen Code anzeigen** aus, und klicken Sie dann auf **Anwenden**. In der Ansicht **Aufrufstruktur** der Seite **CPU-Auslastung** werden dann die externen Codeaufrufe erweitert. (Die Dropdownliste **Filter** finden Sie auf der Hauptdiagnoseseite, nicht in den Detailansichten.)
+Wählen Sie zum Anzeigen der Aufrufpfade von externem Code auf der Hauptseite des Diagnoseberichts (rechter Bereich) in der Dropdownliste **Filter** die Option **Externen Code anzeigen** aus, und klicken Sie dann auf **Anwenden** . In der Ansicht **Aufrufstruktur** der Seite **CPU-Auslastung** werden dann die externen Codeaufrufe erweitert. (Die Dropdownliste **Filter** finden Sie auf der Hauptdiagnoseseite, nicht in den Detailansichten.)
 
 ![Externen Code anzeigen](../profiling/media/cpu_use_wt_filterview.png "Externen Code anzeigen")
 

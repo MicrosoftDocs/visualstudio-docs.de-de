@@ -1,5 +1,7 @@
 ---
 title: Grundlagen der Buildkonfiguration
+description: Hier erfahren Sie, dass Sie Buildkonfigurationen benötigen, wenn Sie Ihre Projekte mit unterschiedlichen Einstellungen in Visual Studio kompilieren müssen.
+ms.custom: SEO-VS-2020
 ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -26,12 +28,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77904164"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136679"
 ---
 # <a name="understand-build-configurations"></a>Grundlagen der Buildkonfiguration
 
@@ -42,22 +44,22 @@ Sie benötigen Buildkonfigurationen, wenn Sie Ihre Projekte mit unterschiedliche
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Buildkonfigurationen in Visual Studio für Mac](/visualstudio/mac/configurations).
 
-Konfiguration und Plattform steuern, wo die kompilierten Ausgabedateien gespeichert werden. Wenn Visual Studio ein Projekt kompiliert, wird die Ausgabe in der Regel in einem Projektunterordner platziert, der gemäß der aktiven Konfiguration benannt ist (z. B. *bin/Debug/x86*). Dieses Verhalten kann jedoch geändert werden.
+Konfiguration und Plattform steuern, wo die kompilierten Ausgabedateien gespeichert werden. Wenn Visual Studio ein Projekt kompiliert, wird die Ausgabe in der Regel in einem Projektunterordner platziert, der gemäß der aktiven Konfiguration benannt ist (z. B. *bin/Debug/x86* ). Dieses Verhalten kann jedoch geändert werden.
 
 Sie können eigene Buildkonfigurationen auf Projektmappen- und Projektebene erstellen. Die Projektmappenkonfiguration bestimmt, welche Projekte im Build enthalten sind, wenn diese Konfiguration aktiv ist. Es werden nur diejenigen Projekte kompiliert, die in der aktiven Projektmappenkonfiguration angegeben sind. Wenn im Konfigurations-Manager mehrere Plattformen ausgewählt werden, werden alle Projekte für diese Plattform kompiliert. Die Projektkonfiguration bestimmt, welche Buildeinstellungen und Compileroptionen beim Kompilieren des Projekts verwendet werden.
 
-Konfiguration können mit **Configuration Manager** ausgewählt, geändert oder gelöscht werden. Wählen Sie zum Öffnen in der Menüleiste **Erstellen** > **Konfigurations-Manager** aus, oder geben Sie im Suchfeld einfach den Begriff **Konfiguration** ein. Sie können auch die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** zum Auswählen einer Konfiguration verwenden, oder Sie öffnen den **Configuration Manager**.
+Konfiguration können mit **Configuration Manager** ausgewählt, geändert oder gelöscht werden. Wählen Sie zum Öffnen in der Menüleiste **Erstellen** > **Konfigurations-Manager** aus, oder geben Sie im Suchfeld einfach den Begriff **Konfiguration** ein. Sie können auch die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** zum Auswählen einer Konfiguration verwenden, oder Sie öffnen den **Configuration Manager** .
 
 ![Konfigurations-Manager](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Falls auf der Symbolleiste keine Einstellungen für Projektmappenkonfigurationen enthalten sind und Sie nicht auf den **Configuration Manager** zugreifen können, sind möglicherweise [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Entwicklungseinstellungen aktiviert. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten von Buildkonfigurationen mit aktivierten Visual Basic Developer-Einstellungen](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Standardmäßig sind die Konfigurationen **Debug** und **Release** in Projekten, die mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Vorlagen erstellt werden, enthalten. Eine **Debug**-Konfiguration unterstützt das Debuggen einer App, und mit einer **Release**-Konfiguration wird eine Version der App kompiliert, die bereitgestellt werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Sie können zudem benutzerdefinierte Projektmappenkonfigurationen und Projektkonfigurationen erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
+Standardmäßig sind die Konfigurationen **Debug** und **Release** in Projekten, die mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Vorlagen erstellt werden, enthalten. Eine **Debug** -Konfiguration unterstützt das Debuggen einer App, und mit einer **Release** -Konfiguration wird eine Version der App kompiliert, die bereitgestellt werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Sie können zudem benutzerdefinierte Projektmappenkonfigurationen und Projektkonfigurationen erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Projektmappenkonfigurationen
 
-Mit einer Projektmappenkonfiguration wird festgelegt, wie bestimmte Projekte in der Projektmappe erstellt und bereitgestellt werden. Um eine Projektmappenkonfiguration zu ändern oder eine neue, in **Configuration Manager**, unter **Konfiguration der aktuellen Projektmappe** zu definieren, wählen Sie **Neu** oder **Bearbeiten** aus.
+Mit einer Projektmappenkonfiguration wird festgelegt, wie bestimmte Projekte in der Projektmappe erstellt und bereitgestellt werden. Um eine Projektmappenkonfiguration zu ändern oder eine neue, in **Configuration Manager** , unter **Konfiguration der aktuellen Projektmappe** zu definieren, wählen Sie **Neu** oder **Bearbeiten** aus.
 
 Jeder Eintrag im Feld **Projektkontexte** in einer Projektmappenkonfiguration stellt ein Projekt der Projektmappe dar. Für jede Kombination von **Konfiguration der aktuellen Projektmappe** und **Aktive Projektmappenplattform** können Sie die Verwendungsart des Projekts festlegen. (Weitere Informationen zu Projektmappenplattformen finden Sie unter [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md).)
 
@@ -67,15 +69,15 @@ Die aktive Projektmappenkonfiguration stellt der IDE auch Kontext bereit. Wenn S
 
 ## <a name="project-configurations"></a>Projektkonfigurationen
 
-Die Konfiguration und die Plattform, auf die ein Projekt ausgerichtet ist, legen gemeinsam fest, welche Buildeinstellungen und Compileroptionen beim Kompilieren verwendet werden sollen. Ein Projekt kann für jede Kombination aus Konfiguration und Plattform über unterschiedliche Einstellungen verfügen. Um die Eigenschaften eines Projekts zu ändern, öffnen Sie das Kontextmenü für das Projekt im **Projektmappen-Explorer**, und klicken Sie dann auf **Eigenschaften**.  Wählen Sie im Projekt-Designer oben auf der Registerkarte **Build** eine aktive Konfiguration aus, um die zugehörigen Buildeinstellungen zu bearbeiten.
+Die Konfiguration und die Plattform, auf die ein Projekt ausgerichtet ist, legen gemeinsam fest, welche Buildeinstellungen und Compileroptionen beim Kompilieren verwendet werden sollen. Ein Projekt kann für jede Kombination aus Konfiguration und Plattform über unterschiedliche Einstellungen verfügen. Um die Eigenschaften eines Projekts zu ändern, öffnen Sie das Kontextmenü für das Projekt im **Projektmappen-Explorer** , und klicken Sie dann auf **Eigenschaften** .  Wählen Sie im Projekt-Designer oben auf der Registerkarte **Build** eine aktive Konfiguration aus, um die zugehörigen Buildeinstellungen zu bearbeiten.
 
 ![Konfigurationen im Projekt-Designer](media/understanding-build-configurations/project-designer-configuration.png)
 
 ## <a name="building-multiple-configurations"></a>Erstellen mehrerer Konfigurationen
 
-Wenn Sie eine Projektmappe mit dem Befehl **Erstellen** > **Projektmappe erstellen** kompilieren, erstellt Visual Studio nur die aktive Konfiguration. Alle in dieser Projektmappenkonfiguration angegebenen Projekte werden erstellt, und die einzige erstellte Projektkonfiguration ist die in der aktiven Projektmappenkonfiguration und der aktiven Projektmappenplattform angegebene Konfiguration, die in der Symbolleiste von Visual Studio angezeigt wird. Beispielsweise **Debug** und **x86**. Weitere definierte Konfigurationen und Plattformen werden nicht erstellt.
+Wenn Sie eine Projektmappe mit dem Befehl **Erstellen** > **Projektmappe erstellen** kompilieren, erstellt Visual Studio nur die aktive Konfiguration. Alle in dieser Projektmappenkonfiguration angegebenen Projekte werden erstellt, und die einzige erstellte Projektkonfiguration ist die in der aktiven Projektmappenkonfiguration und der aktiven Projektmappenplattform angegebene Konfiguration, die in der Symbolleiste von Visual Studio angezeigt wird. Beispielsweise **Debug** und **x86** . Weitere definierte Konfigurationen und Plattformen werden nicht erstellt.
 
-Wenn Sie mehrere Konfigurationen und Plattformen in einer Aktion erstellen möchten, können Sie die Option **Erstellen** > **Batch erstellen** in Visual Studio verwenden. Um auf dieses Feature zuzugreifen, drücken Sie **STRG**+**Q**, um das Suchfeld zu öffnen, und geben `Batch build` ein. Der Befehl „Batch erstellen“ ist nicht für alle Projekttypen verfügbar. Weitere Informationen finden Sie unter [How to: Gleichzeitiges Erstellen mehrerer Konfigurationen](how-to-build-multiple-configurations-simultaneously.md)
+Wenn Sie mehrere Konfigurationen und Plattformen in einer Aktion erstellen möchten, können Sie die Option **Erstellen** > **Batch erstellen** in Visual Studio verwenden. Um auf dieses Feature zuzugreifen, drücken Sie **STRG**+**Q** , um das Suchfeld zu öffnen, und geben `Batch build` ein. Der Befehl „Batch erstellen“ ist nicht für alle Projekttypen verfügbar. Weitere Informationen finden Sie unter [How to: Gleichzeitiges Erstellen mehrerer Konfigurationen](how-to-build-multiple-configurations-simultaneously.md)
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Zuweisen von Projektkonfigurationen in Visual Studio
 

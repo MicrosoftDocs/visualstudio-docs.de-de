@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88507955"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197477"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: Erweitern einer einfachen C#-Konsolen-App
 
@@ -32,17 +32,17 @@ Wenn Sie den [ersten Teil](tutorial-console.md) dieser Reihe abgeschlossen haben
 
 In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarbeiten. Als Nächstes fügen Sie ein weiteres Projekt zur Calculator-App hinzu. Dabei handelt es sich um eine Klassenbibliothek, die einige der Rechnerfunktionen bereitstellt.
 
-1. In Visual Studio können Sie den allgemeinen Menübefehl **Datei** > **Hinzufügen** > **Neues Projekt** verwenden, um ein neues Projekt hinzuzufügen, jedoch können Sie auch mit der rechten Maustaste auf den Namen des vorhandenen Projekts klicken (der „Projektknoten“), um das Kontextmenü des Projekts zu öffnen. Dieses Kontextmenü enthält mehrere Möglichkeiten, mit denen Sie Funktionen zu Ihren Projekten hinzufügen können. Klicken Sie also mit der rechten Maustaste auf Ihren Projektknoten im **Projektmappen-Explorer**, und wählen Sie dann **Hinzufügen** > **Neues Projekt** aus.
+1. In Visual Studio können Sie den allgemeinen Menübefehl **Datei** > **Hinzufügen** > **Neues Projekt** verwenden, um ein neues Projekt hinzuzufügen, jedoch können Sie auch mit der rechten Maustaste auf den Namen des vorhandenen Projekts klicken (der „Projektknoten“), um das Kontextmenü des Projekts zu öffnen. Dieses Kontextmenü enthält mehrere Möglichkeiten, mit denen Sie Funktionen zu Ihren Projekten hinzufügen können. Klicken Sie also mit der rechten Maustaste auf Ihren Projektknoten im **Projektmappen-Explorer** , und wählen Sie dann **Hinzufügen** > **Neues Projekt** aus.
 
 1. Wählen Sie die C#-Projektvorlage **Klassenbibliothek (.NET Standard)** aus.
 
    ![Screenshot: Auswahl der Projektvorlage „Klassenbibliothek“](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Geben Sie den Projektnamen **CalculatorLibrary** ein, und klicken Sie dann auf **Erstellen**. Visual Studio erstellt das neue Projekt und fügt es zur Projektmappe hinzu.
+1. Geben Sie den Projektnamen **CalculatorLibrary** ein, und klicken Sie dann auf **Erstellen** . Visual Studio erstellt das neue Projekt und fügt es zur Projektmappe hinzu.
 
    ![Screenshot: Projektmappen-Explorer mit hinzugefügtem Klassenbibliotheksprojekt „CalculatorLibrary“](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. Benennen Sie die Datei *Class1.cs* in **CalculatorLibrary.cs** um. Sie können im **Projektmappen-Explorer** auf den Namen klicken, um diesen zu ändern, oder klicken Sie mit der rechten Maustaste auf den Namen, und wählen Sie dann **Umbenennen** aus, oder drücken Sie **F2**.
+1. Benennen Sie die Datei *Class1.cs* in **CalculatorLibrary.cs** um. Sie können im **Projektmappen-Explorer** auf den Namen klicken, um diesen zu ändern, oder klicken Sie mit der rechten Maustaste auf den Namen, und wählen Sie dann **Umbenennen** aus, oder drücken Sie **F2** .
 
    Möglicherweise werden Sie gefragt, ob Sie Verweise auf `Class1` in der Datei umbenennen möchten. Es spielt keine Rolle, wie Sie antworten, da Sie den Code in einem zukünftigen Schritt ersetzen.
 
@@ -54,11 +54,11 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
 
    ![Screenshot: Dialogfeld „Verweis-Manager“](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. Aktivieren Sie im Dialogfeld **Verweis-Manager** das Kontrollkästchen für das Projekt **CalculatorLibrary**, und klicken Sie dann auf **OK**.  Der Projektverweis wird unter dem Knoten **Projekte** im **Projektmappen-Explorer** angezeigt.
+1. Aktivieren Sie im Dialogfeld **Verweis-Manager** das Kontrollkästchen für das Projekt **CalculatorLibrary** , und klicken Sie dann auf **OK** .  Der Projektverweis wird unter dem Knoten **Projekte** im **Projektmappen-Explorer** angezeigt.
 
    ![Screenshot: Projektmappen-Explorer mit Projektverweis](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. Wählen Sie in der Datei *Program.cs* die Klasse `Calculator` und ihren gesamten Code aus, und drücken Sie **STRG+X**, um diesen aus der Datei auszuschneiden. Fügen Sie den Code dann in **CalculatorLibrary** in der Datei *CalculatorLibrary.cs* in den Namespace `CalculatorLibrary` ein. Erstellen Sie dann die Calculator-Klasse `public`, um ihn außerhalb der Bibliothek zur Verfügung zu stellen. Der Code in der Datei *CalculatorLibrary.cs* sollte nun dem folgenden Code ähneln:
+1. Wählen Sie in der Datei *Program.cs* die Klasse `Calculator` und ihren gesamten Code aus, und drücken Sie **STRG+X** , um diesen aus der Datei auszuschneiden. Fügen Sie den Code dann in **CalculatorLibrary** in der Datei *CalculatorLibrary.cs* in den Namespace `CalculatorLibrary` ein. Erstellen Sie dann die Calculator-Klasse `public`, um ihn außerhalb der Bibliothek zur Verfügung zu stellen. Der Code in der Datei *CalculatorLibrary.cs* sollte nun dem folgenden Code ähneln:
 
    ```csharp
    using System;
@@ -120,9 +120,10 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Referenzieren von .NET-Bibliotheken: Schreiben in ein Protokoll
 
-1. Angenommen, Sie möchten nun ein Protokoll aller Vorgänge hinzufügen und dieses in eine Textdatei schreiben. Die .NET-Klasse `Trace` stellt diese Funktionalität bereit. (Dies eignet auch für grundlegende Debugverfahren mit Ablaufverfolgung.)  Die Trace-Klasse befindet sich in System.Diagnostics, daher fügen Sie zunächst eine using-Anweisung hinzu:
+1. Angenommen, Sie möchten nun ein Protokoll aller Vorgänge hinzufügen und dieses in eine Textdatei schreiben. Die .NET-Klasse `Trace` stellt diese Funktionalität bereit. (Dies eignet auch für grundlegende Debugverfahren mit Ablaufverfolgung.)  Die „Trace“-Klasse befindet sich in „System.Diagnostics“, und Sie benötigen „System.IO“-Klassen wie `StreamWriter`, weshalb Sie zunächst die using-Anweisungen hinzufügen:
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -192,7 +193,7 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-1. Führen Sie das Programm noch mal aus. Klicken Sie anschließend mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Ordner im Datei-Explorer öffnen** aus. Navigieren Sie dann im Datei-Explorer nach unten zum Ausgabeordner. Dabei handelt es sich möglicherweise um *bin/Debug/netcoreapp3.1*. Öffnen Sie die Datei *calculator.log*.
+1. Führen Sie das Programm noch mal aus. Klicken Sie anschließend mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Ordner im Datei-Explorer öffnen** aus. Navigieren Sie dann im Datei-Explorer nach unten zum Ausgabeordner. Dabei handelt es sich möglicherweise um *bin/Debug/netcoreapp3.1* . Öffnen Sie die Datei *calculator.log* .
 
     ```output
     Starting Calculator Log
@@ -211,13 +212,13 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
 
    ![Screenshot: NuGet-Paket-Manager](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. Suchen Sie nach dem Paket „Newtonsoft.Json“, und klicken Sie auf **Installieren**.
+1. Suchen Sie nach dem Paket „Newtonsoft.Json“, und klicken Sie auf **Installieren** .
 
    ![Screenshot: Informationen zum NuGet-Paket „Newtonsoft“](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
    Das Paket wird heruntergeladen und zu Ihrem Projekt hinzugefügt, außerdem wird im **Projektmappen-Explorer** im Knoten „Verweise“ ein neuer Eintrag angezeigt.
 
-1. Fügen Sie eine using-Anweisung für das Paket „Newtonsoft.Json“ am Anfang der Datei *CalculatorLibrary.cs* hinzu.
+1. Fügen Sie eine using-Anweisung für die Pakete „System.IO“ und „Newtonsoft.Json“ am Anfang der Datei *CalculatorLibrary.cs* hinzu.
 
    ```csharp
    using Newtonsoft.Json;
@@ -307,7 +308,7 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
         }
    ```
 
-1. Erstellen Sie die App, und führen Sie sie aus. Nachdem Sie einige Vorgänge eingegeben haben, schließen Sie die App ordnungsgemäß mithilfe des Befehls „n“.  Öffnen Sie nun die Datei „consolelog.json“. Dort sollten Sie etwas sehen, das dem folgenden Beispiel ähnelt:
+1. Erstellen Sie die App, und führen Sie sie aus. Nachdem Sie einige Vorgänge eingegeben haben, schließen Sie die App ordnungsgemäß mithilfe des Befehls „n“.  Öffnen Sie nun die Datei „calculatorlog.json“. Es sollte in etwa Folgendes angezeigt werden:
 
    ```json
    {

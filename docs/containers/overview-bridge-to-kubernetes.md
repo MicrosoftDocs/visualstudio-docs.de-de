@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829877"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116102"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funktionsweise von Bridge to Kubernetes
 
@@ -112,6 +112,8 @@ Bridge to Kubernetes unterliegt den folgenden Einschränkungen:
 
 * Ein Dienst muss von einem einzelnen Pod unterstützt werden, um eine Verbindung mit diesem Dienst herzustellen. Sie können keine Verbindung mit einem Dienst mit mehreren Pods herstellen, z. B. einem Dienst mit Replikaten.
 * In einem Pod darf nur ein einzelner Container ausgeführt werden, damit Bridge to Kubernetes erfolgreich eine Verbindung herstellen kann. Bridge to Kubernetes kann keine Verbindung mit Diensten mit Pods herstellen, die über zusätzliche Container verfügen, wie z. B. Sidecar-Container, die von Dienstgittermodellen eingefügt werden.
+* Derzeit müssen Bridge to Kubernetes-Pods Linux-Container sein. Windows-Container werden nicht unterstützt.
+* Die Isolation kann nicht mit HTTPS verwendet werden.
 * Bridge to Kubernetes benötigt erhöhte Rechte, damit die Erweiterung auf Ihrem Entwicklungscomputer ausgeführt werden kann, um Ihre Hostdatei zu bearbeiten.
 * Bridge to Kubernetes kann nicht auf Clustern verwendet werden, auf denen Azure Dev Spaces aktiviert ist.
 

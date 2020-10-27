@@ -1,5 +1,7 @@
 ---
 title: Seite "Buildereignisse", Projekt-Designer (C#)
+description: Hier erfahren Sie, wie Sie Anweisungen für Buildkonfigurationen angeben. Außerdem können Sie die Bedingungen angeben, unter denen sämtliche Postbuildereignisse ausgeführt werden.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,20 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419054"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136848"
 ---
 # <a name="build-events-page-project-designer-c"></a>Seite "Buildereignisse", Projekt-Designer (C#)
 
-Verwenden Sie die Seite **Buildereignisse** des **Projekt-Designers**, um die Anweisungen der Buildkonfiguration anzugeben. Außerdem können Sie die Bedingungen angeben, unter denen sämtliche Postbuildereignisse ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md) und [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Verwenden Sie die Seite **Buildereignisse** des **Projekt-Designers** , um die Anweisungen der Buildkonfiguration anzugeben. Außerdem können Sie die Bedingungen angeben, unter denen sämtliche Postbuildereignisse ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md) und [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-**Konfiguration**
+**Configuration**
 
 Dieses Steuerelement kann auf dieser Seite nicht bearbeitet werden. Eine Beschreibung dieses Steuerelements finden Sie unter [Seite „Erstellen“, Projekt-Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
@@ -49,7 +51,7 @@ Gibt sämtliche Befehle an, die vor dem Start des Buildvorgangs ausgeführt werd
 Gibt sämtliche Befehle an, die nach dem Abschluss des Buildvorgangs ausgeführt werden sollen. Klicken Sie auf **Postbuild bearbeiten...** , um das **Dialogfeld „Befehlszeile für Präbuildereignis“/„Befehlszeile für Postbuildereignis“** anzuzeigen. In dieses Feld können Sie lange Befehle eingeben.
 
 > [!NOTE]
-> Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu. Zum Beispiel: `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Postbuildereignis ausführen**
 
@@ -57,7 +59,7 @@ Gibt die folgenden Bedingungen für das auszuführende Postbuildereignis an, wie
 
 |Option|Ergebnis|
 |------------|------------|
-|**Immer**|Das Postbuildereignis wird ausgeführt, unabhängig davon, ob der Buildvorgang erfolgreich ist.|
+|**Always**|Das Postbuildereignis wird ausgeführt, unabhängig davon, ob der Buildvorgang erfolgreich ist.|
 |**Bei erfolgreichem Erstellen**|Das Postbuildereignis wird ausgeführt, wenn der Buildvorgang erfolgreich ist. Deshalb wird das Ereignis sogar für ein aktuelles Projekt ausgeführt, solange der Buildvorgang erfolgreich ist.|
 |**Wenn der Build die Projektausgabe aktualisiert**|Das Postbuildereignis wird nur ausgeführt, wenn sich die Ausgabedatei des Compilers (.exe or .dll) von der vorherigen Ausgabedatei des Compilers unterscheidet. Deshalb wird kein Postbuildereignis ausgeführt, wenn das Projekt aktuell ist.|
 
@@ -77,7 +79,7 @@ dann ist die Projektdateieinstellung wie folgt:
 </PropertyGroup>
 ```
 
-Für .NET Core-Projekte fügt Visual Studio 2019 (und Visual Studio 2017 mit den neuesten Updates) den Einstellungen **PreBuildEvent** und **PostBuildEvent** ein MSBuild-Ziel namens `PreBuild` oder `PostBuild` hinzu. Diese Ziele verwenden die **BeforeTargets**- und **AfterTargets**-Attribute, die von MSBuild erkannt werden. Beispielsweise generiert Visual Studio für das vorherige Beispiel nun den folgenden Code:
+Für .NET Core-Projekte fügt Visual Studio 2019 (und Visual Studio 2017 mit den neuesten Updates) den Einstellungen **PreBuildEvent** und **PostBuildEvent** ein MSBuild-Ziel namens `PreBuild` oder `PostBuild` hinzu. Diese Ziele verwenden die **BeforeTargets** - und **AfterTargets** -Attribute, die von MSBuild erkannt werden. Beispielsweise generiert Visual Studio für das vorherige Beispiel nun den folgenden Code:
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
@@ -98,7 +100,7 @@ Verwenden Sie für ein Ereignis nach dem Buildvorgang den Namen `PostBuild`, und
 
 ## <a name="see-also"></a>Siehe auch
 
-- [How to: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [How to: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Gewusst wie: Festlegen von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Gewusst wie: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)
 - [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwendet werden.
-ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006214"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298187"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 Abhängig vom für die Anmeldung verwendeten Kontotyp werden verfügbare Abonnements möglicherweise nicht ordnungsgemäß angezeigt, wenn Benutzer sich bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) anmelden. Eine mögliche Ursache ist die Verwendung von „Aliasen“ oder „Anzeigenamen“ anstelle der Anmeldeidentität, der das Abonnement zugewiesen ist. Dieser Vorgang wird als „Aliasing“ bezeichnet.
@@ -33,10 +33,10 @@ Wenn in einem Unternehmen Active Directory eingerichtet ist und der Benutzerprin
 
 1. Melden Sie sich unter Verwendung der Anmelde-E-Mail-Adresse bei https://my.visualstudio.com/subscriptions an, die in der E-Mail mit Ihrer Abonnementzuweisung genannt ist.
 
-2. Stellen Sie sicher, dass die Anmelde-E-Mail-Adresse oben rechts auf der Seite mit der Adresse übereinstimmt, die Sie zur Anmeldung verwendet haben.  Andernfalls liegt ein UPN-Konflikt vor, und Sie sind nicht in der Lage, Ihr Abonnement anzuzeigen. 
+2. Klicken Sie in der oberen rechten Ecke der Seite auf Ihren Namen.  Hiermit wird Ihr Profil geöffnet.  Stellen Sie sicher, dass die Anmelde-E-Mail-Adresse in Ihrem Profil mit der Adresse übereinstimmt, die Sie zur Anmeldung verwendet haben.  Andernfalls liegt ein UPN-Konflikt vor, und Sie sind nicht in der Lage, Ihr Abonnement anzuzeigen. 
 
 > [!div class="mx-imgBorder"]
-> ![Anmelde-E-Mail-Adresse](_img//aliasing/sign-in-email.png "Stellen Sie sicher, dass die oben rechts angezeigte E-Mail-Adresse mit der übereinstimmt, die Sie zum Anmelden verwenden.")
+> ![Anmelde-E-Mail-Adresse](_img//aliasing/sign-in-email.png "Stellen Sie sicher, dass die E-Mail-Adresse in Ihrem Profil mit jener übereinstimmt, die Sie zum Anmelden verwenden.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Beheben eines UPN-Konflikts
 
@@ -64,9 +64,9 @@ Bei persönlichen Abonnementkonten können ebenfalls Probleme auftreten, wenn di
 
 Die Visual Studio-Plattform priorisiert den primären Alias, um Abonnementdetails anzuzeigen. 
 
-1. Navigieren Sie zu **Anmeldung bei Microsoft verwalten**. Melden Sie sich in Ihrem Microsoft-Konto an, wenn Sie dazu aufgefordert werden. 
+1. Navigieren Sie zu **Anmeldung bei Microsoft verwalten** . Melden Sie sich in Ihrem Microsoft-Konto an, wenn Sie dazu aufgefordert werden. 
 
-2. Klicken Sie unter Kontoaliase neben der E-Mail-Adresse, die für die Zuweisung des Abonnements verwendet wurde, auf die Option **Als primär festlegen**. 
+2. Klicken Sie unter Kontoaliase neben der E-Mail-Adresse, die für die Zuweisung des Abonnements verwendet wurde, auf die Option **Als primär festlegen** . 
 
 > [!div class="mx-imgBorder"]
 > ![Festlegen der primären E-Mail-Adresse](_img//aliasing/account-aliases.png "Verwenden Sie den Link „Als primär festlegen“, um den primären Alias für Ihre Abonnements auszuwählen.")

@@ -1,5 +1,7 @@
 ---
 title: Einführung in die Visual Studio-IDE
+description: Hier erfahren Sie mehr über die integrierte Entwicklungsumgebung (IDE) von Visual Studio einschließlich der Fenster, Menüs und anderen Benutzeroberflächenfeatures, die am häufigsten verwendet werden.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/05/2019
 ms.topic: quickstart
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41d5d40cc7951f09a8106426f603d42628c61846
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f80dd85e1cc8f93784ed938ef1788730b3c926e8
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238867"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947816"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Einführung in die Visual Studio-IDE
 
@@ -41,7 +43,7 @@ Das erste, was Sie nach dem Start von Visual Studio sehen, ist das Startfenster.
 
 Wenn Sie Visual Studio zum ersten Mal benutzen, bleibt die Liste zuletzt geöffneter Projekte leer.
 
-Wenn Sie mit einer nicht auf MSBuild basierenden Codebasis arbeiten, verwenden Sie die Option **Lokalen Ordner öffnen**, um Ihren Code in Visual Studio zu öffnen. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](develop-javascript-code-without-solutions-projects.md). Andernfalls können Sie ein neues Projekt erstellen oder ein Projekt von einem Quellenanbieter wie GitHub oder Azure DevOps klonen.
+Wenn Sie mit einer nicht auf MSBuild basierenden Codebasis arbeiten, verwenden Sie die Option **Lokalen Ordner öffnen** , um Ihren Code in Visual Studio zu öffnen. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](develop-javascript-code-without-solutions-projects.md). Andernfalls können Sie ein neues Projekt erstellen oder ein Projekt von einem Quellenanbieter wie GitHub oder Azure DevOps klonen.
 
 Die Option **Ohne Code fortfahren** öffnet einfach nur die Entwicklungsumgebung von Visual Studio, ohne dass spezielle Projekte oder Code geladen würden. Sie können diese Option auch dazu verwenden, um einer [Live Share](/visualstudio/liveshare/)-Sitzung beizutreten, oder Anfügungen an einen Prozess zum Debuggen durchzuführen. Sie können auch **Esc** drücken, um das Startfenster zu schließen, und die IDE zu öffnen.
 
@@ -51,7 +53,7 @@ Die Option **Ohne Code fortfahren** öffnet einfach nur die Entwicklungsumgebung
 
 ## <a name="start-page"></a>Startseite
 
-Das erste, was Sie nach dem Start von Visual Studio sehen, ist wahrscheinlich die **Startseite**. Die **Startseite** ist als „Hub“ konzipiert, um Ihnen zu helfen, die benötigten Befehle und Projektdateien schneller zu finden. Der Abschnitt **Aktuell** zeigt Projekte und Ordner an, an denen Sie zuletzt gearbeitet haben. Unter **Neues Projekt** können Sie auf einen Link klicken, um das Dialogfeld **Neues Projekt** aufzurufen, oder Sie können unter **Öffnen** ein vorhandenes Codeprojekt oder einen Codeordner öffnen. Auf der rechten Seite befindet sich ein Feed mit den neuesten Entwicklernews.
+Das erste, was Sie nach dem Start von Visual Studio sehen, ist wahrscheinlich die **Startseite** . Die **Startseite** ist als „Hub“ konzipiert, um Ihnen zu helfen, die benötigten Befehle und Projektdateien schneller zu finden. Der Abschnitt **Aktuell** zeigt Projekte und Ordner an, an denen Sie zuletzt gearbeitet haben. Unter **Neues Projekt** können Sie auf einen Link klicken, um das Dialogfeld **Neues Projekt** aufzurufen, oder Sie können unter **Öffnen** ein vorhandenes Codeprojekt oder einen Codeordner öffnen. Auf der rechten Seite befindet sich ein Feed mit den neuesten Entwicklernews.
 
 ![Startseite in Visual Studio](media/start-page.png)
 
@@ -73,9 +75,9 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
    ![Suchen von Projektvorlagen im Visual Studio-Startfenster](media/vs-2019/create-new-project.png)
 
-1. Wählen Sie die Projektvorlage **Leere Node.js-Webanwendung** aus, und klicken Sie dann auf **Weiter**.
+1. Wählen Sie die Projektvorlage **Leere Node.js-Webanwendung** aus, und klicken Sie dann auf **Weiter** .
 
-1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt konfigurieren** den Standardprojektnamen, und klicken Sie anschließend auf **Erstellen**.
+1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt konfigurieren** den Standardprojektnamen, und klicken Sie anschließend auf **Erstellen** .
 
 ::: moniker-end
 
@@ -87,7 +89,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
    Visual Studio stellt mehrere Arten von Projektvorlagen bereit, durch die Sie schnell mit dem Programmieren beginnen können. Wählen Sie die Projektvorlage **Leere Node.js-Webanwendung** aus. (Alternativ können Sie das Projekt auch in TypeScript erstellen, wenn Sie damit vertraut sind. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
 
-1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt** den Standardprojektnamen, und klicken Sie anschließend auf **OK**.
+1. Übernehmen Sie im angezeigten Dialogfeld **Neues Projekt** den Standardprojektnamen, und klicken Sie anschließend auf **OK** .
 ::: moniker-end
 
    Das Projekt wird erstellt, und eine Datei namens *server.js* wird im Fenster **Editor** geöffnet. Der **Editor** zeigt den Inhalt von Dateien an und ist der Ort, an dem Sie den Großteil Ihrer Codierungsaufgaben in Visual Studio erledigen.
@@ -96,7 +98,7 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 ## <a name="solution-explorer"></a>Projektmappen-Explorer
 
-Im **Projektmappen-Explorer**, der sich in Visual Studio üblicherweise auf der rechten Seite befindet, wird eine grafische Darstellung der Hierarchie von Dateien und Ordnern in Ihrem Projekt-, Projektmappen- oder Codeordner angezeigt. Sie können die Hierarchie durchsuchen und im **Projektmappen-Explorer** zu einer Datei navigieren.
+Im **Projektmappen-Explorer** , der sich in Visual Studio üblicherweise auf der rechten Seite befindet, wird eine grafische Darstellung der Hierarchie von Dateien und Ordnern in Ihrem Projekt-, Projektmappen- oder Codeordner angezeigt. Sie können die Hierarchie durchsuchen und im **Projektmappen-Explorer** zu einer Datei navigieren.
 
 ![Projektmappen-Explorer in Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
@@ -106,7 +108,7 @@ Die Menüleiste am oberen Rand der Visual Studio-Gruppen gruppiert Befehle in Ka
 
 ![Menüleiste in Visual Studio](media/quickstart-IDE-menu-bar.png)
 
-Öffnen Sie das Fenster **Fehlerliste**, indem Sie erst auf das Menü **Ansicht** und dann auf **Fehlerliste** klicken.
+Öffnen Sie das Fenster **Fehlerliste** , indem Sie erst auf das Menü **Ansicht** und dann auf **Fehlerliste** klicken.
 
 ## <a name="error-list"></a>Fehlerliste
 
@@ -118,7 +120,7 @@ Die **Fehlerliste** zeigt Fehler, Warnungen und Meldungen zum aktuellen Zustand 
 
 Im **Ausgabefenster** werden Ausgabemeldungen von der Erstellung Ihres Projekts sowie vom Anbieter der Quellcodeverwaltung angezeigt.
 
-Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus. Das Fenster **Ausgabe** erhält den Fokus automatisch und zeigt eine Meldung zu einem erfolgreichen Buildvorgang an.
+Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen** aus. Das Fenster **Ausgabe** erhält den Fokus automatisch und zeigt eine Meldung zu einem erfolgreichen Buildvorgang an.
 
 ![Ausgabefenster in Visual Studio](media/build-output-minimal.png)
 
@@ -126,13 +128,13 @@ Erstellen Sie das Projekt, um die Buildausgaben anzuzeigen. Wählen Sie im Menü
 
 Das Suchfeld bietet eine schnelle und einfache Möglichkeit, fast alle Aufgaben in Visual Studio auszuführen. Sie können Text eingeben, der sich auf die gewünschte Aufgabe bezieht. Dann wird eine Liste von Optionen angezeigt, die sich für den Text eignen. Angenommen, Sie möchten z.B. die Ausführlichkeit der Buildausgabe erhöhen, um Details dazu anzuzeigen, was genau im Build geschieht. Sie könnten folgendermaßen vorgehen:
 
-1. Geben Sie im Suchfeld den Suchbegriff **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen**.
+1. Geben Sie im Suchfeld den Suchbegriff **Ausführlichkeit** ein. Klicken Sie in den angezeigten Ergebnissen unter der Kategorie **Optionen** auf **Projekte und Projektmappen > Erstellen und ausführen** .
 
    ![Suchfeld in Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    Das Dialogfeld **Optionen** wird mit der Seite **Erstellen und ausführen** geöffnet.
 
-1. Wählen Sie unter **Ausführlichkeit der MSBuild-Projektbuildausgabe** die Option **Normal** aus, und klicken Sie dann auf die Schaltfläche **OK**.
+1. Wählen Sie unter **Ausführlichkeit der MSBuild-Projektbuildausgabe** die Option **Normal** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
 1. Erstellen Sie das Projekt erneut, indem Sie mit der rechten Maustaste auf das Projekt **NodejsWebApp1** im **Projektmappen-Explorer** klicken und **Neu erstellen** aus dem Kontextmenü auswählen.
 

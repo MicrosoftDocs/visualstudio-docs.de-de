@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454617"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927925"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Kompilieren von TypeScript-Code (ASP.NET Core)
 
@@ -31,7 +31,7 @@ Wenn Visual Studio installiert ist, wird die enthaltene node.exe-Datei von Visua
 
 1. Öffnen Sie Ihr ASP.NET Core-Projekt in Visual Studio.
 
-1. Im Projektmappen-Explorer (rechter Bereich) klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **NuGet-Pakete verwalten** aus. Suchen Sie auf der Registerkarte **Durchsuchen** nach **Microsoft.TypeScript.MSBuild**, und klicken Sie dann rechts auf **Installieren**, um das Paket zu installieren.
+1. Im Projektmappen-Explorer (rechter Bereich) klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **NuGet-Pakete verwalten** aus. Suchen Sie auf der Registerkarte **Durchsuchen** nach **Microsoft.TypeScript.MSBuild** , und klicken Sie dann rechts auf **Installieren** , um das Paket zu installieren.
 
    ![Hinzufügen des NuGet-Pakets](../javascript/media/aspnet-core-ts-nuget.png)
 
@@ -44,13 +44,13 @@ Wenn Visual Studio installiert ist, wird die enthaltene node.exe-Datei von Visua
    </PackageReference>
    ```
 
-1. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript JSON-Konfigurationsdatei** aus und klicken Sie dann auf **Hinzufügen**.
+1. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript JSON-Konfigurationsdatei** aus und klicken Sie dann auf **Hinzufügen** .
 
    Visual Studio fügt die Datei *tsconfig.json* zum Projektstamm hinzu. Sie können mit dieser Datei für den TypeScript-Compiler [Optionen konfigurieren](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-1. Öffnen Sie die Datei *tsconfig.json*, und legen Sie die von Ihnen gewünschten Compileroptionen fest.
+1. Öffnen Sie die Datei *tsconfig.json* , und legen Sie die von Ihnen gewünschten Compileroptionen fest.
 
-   Im folgenden Beispiel wird eine einfache *tsconfig.json*-Datei dargestellt.
+   Im folgenden Beispiel wird eine einfache *tsconfig.json* -Datei dargestellt.
 
    ```json
    {
@@ -71,13 +71,13 @@ Wenn Visual Studio installiert ist, wird die enthaltene node.exe-Datei von Visua
    In diesem Beispiel:
    - *include* informiert den Compiler darüber, wo sich die TypeScript-Dateien (*.ts) befinden.
    - Die Option *outDir* gibt den Ausgabeordner für die einfachen JavaScript-Dateien an, die vom TypeScript-Compiler transpiliert werden.
-   - *sourceMap* gibt an, ob der Compiler *sourceMap*-Dateien generiert.
+   - *sourceMap* gibt an, ob der Compiler *sourceMap* -Dateien generiert.
 
    Die oben genannte Konfiguration bietet nur eine grundlegende Einführung in die Konfiguration von TypeScript. Informationen zu weiteren Optionen finden Sie unter [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 ### <a name="build-the-application"></a>Erstellen der Anwendung
 
-1. Fügen Sie TypeScript-Dateien ( *.ts*) oder TypeScript JSX-Dateien ( *.tsx*) zu Ihrem Projekt hinzu, und fügen Sie dann TypeScript-Code hinzu. Hier sehen Sie ein einfaches Beispiel für TypeScript:
+1. Fügen Sie TypeScript-Dateien ( *.ts* ) oder TypeScript JSX-Dateien ( *.tsx* ) zu Ihrem Projekt hinzu, und fügen Sie dann TypeScript-Code hinzu. Hier sehen Sie ein einfaches Beispiel für TypeScript:
 
    ```typescript
    let message: string = 'Hello World';
@@ -90,7 +90,7 @@ Wenn Visual Studio installiert ist, wird die enthaltene node.exe-Datei von Visua
 
    Obwohl die App bei der Ausführung automatisch kompiliert wird, sollten Sie sich etwas ansehen, das während des Buildvorgangs geschieht:
 
-   Wenn Sie Quellzuordnungsdateien generiert haben, öffnen Sie den in der *outDir*-Option angegebenen Ordner. Dort finden Sie die generierten *.js-Dateien sowie die generierten *js.map-Dateien.
+   Wenn Sie Quellzuordnungsdateien generiert haben, öffnen Sie den in der *outDir* -Option angegebenen Ordner. Dort finden Sie die generierten *.js-Dateien sowie die generierten *js.map-Dateien.
 
    Für die Fehlersuche werden Quellzuordnungsdateien benötigt.
 
@@ -108,6 +108,10 @@ Ein Beispiel für die Verwendung von gulp mit der Aufgabenausführung zum Kompil
 
 Wenn Visual Studio eine Node.js-Version oder Drittanbieteranwendung verwendet, die sich von der erwarteten Version unterscheidet, und dadurch Probleme auftreten, müssen Sie möglicherweise den Pfad festlegen, den Visual Studio verwenden soll. Wählen Sie **Tools** > **Optionen** aus. Wählen Sie unter **Projekte und Projektmappen** die Option **Webpaketverwaltung** > **Externe Webtools** aus.
 
+### <a name="run-the-application"></a>Ausführen der Anwendung
+
+Eine Anleitung zum Ausführen der App nach ihrer Kompilierung finden Sie unter [Schnellstart: Erstellen einer ersten Node.js-App mit Visual Studio](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
+
 ### <a name="nuget-package-structure-details"></a>Details zur Struktur des NuGet-Pakets
 
 `Microsoft.TypeScript.MSBuild.nupkg` enthält zwei Hauptordner:
@@ -119,7 +123,7 @@ Wenn Visual Studio eine Node.js-Version oder Drittanbieteranwendung verwendet, d
 
     1. *Microsoft.TypeScript.MSBuild.targets*
 
-        Diese Datei legt Variablen zur Angabe der Laufzeitplattform fest, z. B. einen Pfad zu *TypeScript.Tasks.dll*, bevor *Microsoft.TypeScript.targets* aus dem Ordner *tools* importiert wird.
+        Diese Datei legt Variablen zur Angabe der Laufzeitplattform fest, z. B. einen Pfad zu *TypeScript.Tasks.dll* , bevor *Microsoft.TypeScript.targets* aus dem Ordner *tools* importiert wird.
 
     2. *Microsoft.TypeScript.MSBuild.props*
 
@@ -147,7 +151,7 @@ Wenn Visual Studio eine Node.js-Version oder Drittanbieteranwendung verwendet, d
         Dieser Ordner enthält `tsc.js`, `tsserver.js` und alle Abhängigkeitsdateien, die zum Ausführen als node-Skripts erforderlich sind.
 
         > [!NOTE]
-        > Wenn Visual Studio installiert ist, wird die enthaltene *node.exe*-Datei automatisch ausgewählt. Andernfalls muss Node.js auf dem Computer installiert werden.
+        > Wenn Visual Studio installiert ist, wird die enthaltene *node.exe* -Datei automatisch ausgewählt. Andernfalls muss Node.js auf dem Computer installiert werden.
 
         Versionen vor 3.1 enthielten eine ausführbare `tsc.exe`-Datei, um die Kompilierung auszuführen. In Version 3.1 wurde diese zugunsten von `node.exe` entfernt.
 
