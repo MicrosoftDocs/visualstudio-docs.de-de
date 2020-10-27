@@ -1,6 +1,7 @@
 ---
 title: Fehlerbehebung beim Visual Studio-Emulator für Android | Microsoft-Dokumentation
-ms.custom: ''
+description: Hier erhalten Sie Informationen, die Ihnen beim Lösen von Problemen während der Verwendung des Visual Studio-Emulators für Android helfen können.
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -12,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfcae9ac15292a52a79c97b5b67e758b9dc0dcde
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386302"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878916"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Problembehandlung beim Visual Studio-Emulator für Android
 Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen helfen, die bei der Verwendung des Visual Studio-Emulators für Android auftreten können.
@@ -181,7 +182,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   6. Stellen Sie sicher, dass Sie Windows 8 Professional oder höher einsetzen (Windows Server 2008 wird nicht unterstützt). Windows Server 2012 wird unterstützt, Sie müssen jedoch die Desktopdarstellung aktivieren.
 
-     Sie können die Ereignisanzeige prüfen, um festzustellen, ob Hypervisor-Fehler vorliegen. Öffnen Sie dazu die Ereignisanzeige (drücken Sie **START**+**R**, und geben Sie anschließend `eventvwr` ein), klicken Sie auf **Windows-Protokolle** > **System**. Filtern Sie das Protokoll anschließend nach Ereignisquelle, indem Sie die Quelle auf **Hyper-V-Hypervisor**setzen. Führen Sie eine Fehlerprüfung durch, um die Ursache zu ermitteln.
+     Sie können die Ereignisanzeige prüfen, um festzustellen, ob Hypervisor-Fehler vorliegen. Öffnen Sie dazu die Ereignisanzeige (drücken Sie **START**+**R** , und geben Sie anschließend `eventvwr` ein), klicken Sie auf **Windows-Protokolle** > **System** . Filtern Sie das Protokoll anschließend nach Ereignisquelle, indem Sie die Quelle auf **Hyper-V-Hypervisor** setzen. Führen Sie eine Fehlerprüfung durch, um die Ursache zu ermitteln.
 
      Wenn Ihr Prozessor die Mindestanforderungen erfüllt, der Hypervisor jedoch weiterhin einen Fehler erzeugt, bringen Sie in Erfahrung, ob ein BIOS-Upgrade für Ihren Computer verfügbar ist. Sofern vorhanden, und Sie sich für eine Aktualisierung entscheiden, vergewissern Sie sich, dass Sie dabei alle Vorsichtsmaßnahmen des Herstellers beachten (z. B. indem Sie dafür sorgen, dass die BIOS-Firmware-Aktualisierung nicht durch einen Stromausfall unterbrochen wird, der dauerhaft zur Beschädigung des BIOS führen kann).
 
@@ -241,7 +242,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
      Nach der Deinstallation der Drittanbieterprodukte müssen Sie möglicherweise den internen Switch des Windows Phone-Emulators wiederherstellen. Vorgehensweise:
 
-  - Öffnen Sie Hyper-V und wechseln Sie zum Manager für virtuelle Switches. Erstellen Sie einen virtuellen Switch mit dem Namen „Windows Phone-Emulator, interner Switch“, und setzen Sie den Verbindungstyp auf **internes Netzwerk**.
+  - Öffnen Sie Hyper-V und wechseln Sie zum Manager für virtuelle Switches. Erstellen Sie einen virtuellen Switch mit dem Namen „Windows Phone-Emulator, interner Switch“, und setzen Sie den Verbindungstyp auf **internes Netzwerk** .
 
      ![Manager für virtuelle Switches](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_V_Switch_Man")
 
@@ -261,9 +262,9 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 ## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt
  Wenn der Emulator ausgeführt wird, jedoch anscheinend nicht mit der ADB (Android Debug Bridge) verbunden ist oder in Android-Tools nicht angezeigt wird, die ADB verwenden (z. B. Android Studio oder Eclipse), müssen Sie möglicherweise den Ort anpassen, an dem der Emulator nach ADB sucht. Der Emulator verwendet zum Ermitteln des Speicherorts Ihres Android SDK einen Registrierungsschlüssel und sucht in dem Verzeichnis nach der \platform-tools\adb.exe-Datei. So ändern Sie den vom Emulator verwendeten Android-SDK-Pfad:
 
-- Öffnen Sie den Registrierungs-Editor, indem Sie im Kontextmenü der Startschaltfläche **Ausführen** auswählen, im Dialogfeld `regedit` eingeben und **OK**auswählen.
+- Öffnen Sie den Registrierungs-Editor, indem Sie im Kontextmenü der Startschaltfläche **Ausführen** auswählen, im Dialogfeld `regedit` eingeben und **OK** auswählen.
 
-- Navigieren Sie links in der Ordnerstruktur zu *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools*.
+- Navigieren Sie links in der Ordnerstruktur zu *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* .
 
 - Ändern Sie die **Pfad** -Registrierungsvariable, damit Sie mit dem Pfad Ihres Android-SDK übereinstimmt.
 
@@ -289,11 +290,11 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
 3. Wählen Sie **Settings...** (Einstellungen...).
 
-4. Erweitern Sie den Prozessorknoten und wählen Sie **Kompatibilität**.
+4. Erweitern Sie den Prozessorknoten und wählen Sie **Kompatibilität** .
 
 5. Aktivieren Sie **Migrate to a physical computer with a different processor version** (Zu einem physischen Computer mit einer anderen Prozessorversion migrieren).
 
-6. Starten Sie den Dienst neu (unter **Actions**(Aktionen)) und versuchen Sie es erneut.
+6. Starten Sie den Dienst neu (unter **Actions** (Aktionen)) und versuchen Sie es erneut.
 
 ## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> Fehler beim Ausführen einer App, die Google Play-Dienste benötigt, durch den Emulator
  Der Emulator wird nicht mit den Bibliotheken für Google Play-Dienste bereitgestellt. Der Emulator unterstützt jedoch die Drag-and-Drop-Installation von flashbaren ZIP-Dateien.
@@ -302,7 +303,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
  Der Emulator verwendet die ADB.exe, um die Dateiübertragung beim Ausführen von Drag & Drop einer Datei auf dem Bildschirm zu vereinfachen. Wenn beim Drag & Drop einer Datei ein Fehler auftritt, liegt das wahrscheinlich daran, dass der Emulator nicht mit der ADB.exe verbunden ist. Führen Sie zum Beheben des Fehlers die Schritte unter [Visual Studio hängt bei dem Versuch, die App auf dem Emulator bereitzustellen, oder der Emulator wird in anderen IDEs nicht als Debugziel angezeigt](#ADB).
 
 ## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> Auflösung des Screenshots ist falsch
- Wenn Sie mit der Registerkarte „Screenshot“ im Fenster **zusätzliche Tools** einen Screenshot ersteleln und die erzeugte Datei eine unerwartete Größe besitzt, müssen Sie möglicherweise die Zoomstufe des Bildschirms anpassen, bevor Sie auf **Aufnehmen**klicken. Der Emulator erstellt Screenshots in der Auflösung des Bildschirms auf Ihrem Host-PC-Monitor.
+ Wenn Sie mit der Registerkarte „Screenshot“ im Fenster **zusätzliche Tools** einen Screenshot ersteleln und die erzeugte Datei eine unerwartete Größe besitzt, müssen Sie möglicherweise die Zoomstufe des Bildschirms anpassen, bevor Sie auf **Aufnehmen** klicken. Der Emulator erstellt Screenshots in der Auflösung des Bildschirms auf Ihrem Host-PC-Monitor.
 
 ## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> Beim Rendern der OpenGL-Inhalte durch den Emulator ist ein Fehler aufgetreten
  Der Emulator rendert OpenGL-Inhalte mithilfe des GPU des Host-Computers und verwendet das ANGLE-Projekt zum Konvertieren dieser Aufrufe in und aus DirectX. Wenn die Anwendung auf einem Gerät ordnungsgemäß, jedoch im Emulator falsch rendert, liegt das wahrscheinlich daran, dass das Gerät den falschen OpenGL-Aufruf (z. B. anhand von Shader-Variablen, die nicht übereinstimmen) mindert.
