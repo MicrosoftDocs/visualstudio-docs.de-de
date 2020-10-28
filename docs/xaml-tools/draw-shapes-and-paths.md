@@ -1,6 +1,7 @@
 ---
 title: Zeichnen von Formen und Pfaden
-description: Verwenden Sie Blend für Visual Studio, um Formen und Pfaden weitere Details hinzuzufügen.
+description: Verwenden Sie die Funktionen des XAML-Designer in Blend für Visual Studio, um Pfade und Formen zu zeichnen, zu ändern und zu kombinieren.
+ms.custom: SEO-VS-2020
 titleSuffix: Blend for Visual Studio
 ms.date: 09/22/2020
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022506"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796796"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
 
@@ -25,9 +26,9 @@ Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hohe
 
 ## <a name="draw-a-shape"></a>Zeichnen einer Form
 
-Formen finden Sie im Fenster **Objekte**.
+Formen finden Sie im Fenster **Objekte** .
 
-:::image type="content" source="media/blend-shapes.png" alt-text="Screenshot der Kategorie Formen im Fenster Objekte in Blend für Visual Studio":::
+:::image type="content" source="media/blend-shapes.png" alt-text="Screenshot der Kategorie &quot;Formen&quot; im Fenster &quot;Objekte&quot; in Blend für Visual Studio":::
 
 Ziehen Sie die gewünschte Form auf die Zeichenfläche. Anschließend können Sie die Handles an der Form verwenden, um die Form zu skalieren, zu drehen, zu verschieben oder zu neigen.
 
@@ -37,11 +38,11 @@ Ziehen Sie die gewünschte Form auf die Zeichenfläche. Anschließend können Si
 
 Ein Pfad besteht aus einer Reihe von miteinander verbundenen Linien und Kurven. Verwenden Sie einen Pfad, um interessante Formen zu erstellen, die nicht im Fenster **Objekte** verfügbar sind.
 
-Sie können einen Pfad mit einer Linie, einem Stift oder einem Zeichenstift zeichnen. Diese Tools finden Sie im Fenster **Tools**.
+Sie können einen Pfad mit einer Linie, einem Stift oder einem Zeichenstift zeichnen. Diese Tools finden Sie im Fenster **Tools** .
 
 ### <a name="draw-a-straight-line"></a>Zeichnen einer geraden Linie
 
-Verwenden Sie das Tool **Stift** oder die **Linie**.
+Verwenden Sie das Tool **Stift** oder die **Linie** .
 
 **Verwenden des Tools „Stift“**
 
@@ -53,7 +54,7 @@ Ziehen Sie auf der Zeichenfläche vom gewünschten Anfangspunkt der Linie, und l
 
 ### <a name="draw-a-curve"></a>Zeichnen einer Kurve
 
-Verwenden Sie das Tool **Stift**.
+Verwenden Sie das Tool **Stift** .
 
 Klicken Sie einmal auf die Zeichenfläche, um den Ausgangspunkt einer Linie zu definieren, und ziehen Sie dann bei gedrückter Maustaste den Mauszeiger, um die gewünschte Kurve zu erstellen.
 
@@ -61,33 +62,33 @@ Wenn Sie den Pfad schließen möchten, klicken Sie auf den ersten Punkt der Lini
 
 ### <a name="change-the-shape-of-a-curve"></a>Ändern der Form einer Kurve
 
-Verwenden Sie das Tool **Direktauswahl**.
+Verwenden Sie das Tool **Direktauswahl** .
 
 Klicken Sie auf die Form, und ziehen Sie dann einen beliebigen Punkt der Form, um die Kurvenformen zu ändern.
 
 ### <a name="draw-a-free-form-path"></a>Zeichnen eines Freihandformpfads
 
-Verwenden Sie das Tool **Zeichenstift**.
+Verwenden Sie das Tool **Zeichenstift** .
 
 Zeichnen Sie auf der Zeichenfläche einen Freihandformpfad genau so, als würden Sie einen echten Zeichenstift verwenden.
 
 ### <a name="remove-part-of-a-path"></a>Entfernen eines Pfadsegments
 
-Verwenden Sie das Tool **Direktauswahl**.
+Verwenden Sie das Tool **Direktauswahl** .
 
 Wählen Sie den Pfad aus, der das Segment enthält, das Sie löschen möchten, und klicken Sie dann auf die Schaltfläche **Löschen** .
 
 ### <a name="remove-a-point-in-a-path"></a>Entfernen eines Punkts in einem Pfad
 
-Verwenden Sie das Tool **Auswahl**, um den Pfad auszuwählen. Verwenden Sie dann den **Stift**, um auf den Punkt zu klicken, den Sie entfernen möchten.
+Verwenden Sie das Tool **Auswahl** , um den Pfad auszuwählen. Verwenden Sie dann den **Stift** , um auf den Punkt zu klicken, den Sie entfernen möchten.
 
 ### <a name="add-a-point-to-a-path"></a>Hinzufügen eines Punkts zu einem Pfad
 
-Verwenden Sie das Tool **Auswahl**, um den Pfad auszuwählen. Verwenden Sie den **Stift**, um an eine beliebige Stelle auf dem Pfad zu klicken, an der Sie den Punkt hinzufügen möchten.
+Verwenden Sie das Tool **Auswahl** , um den Pfad auszuwählen. Verwenden Sie den **Stift** , um an eine beliebige Stelle auf dem Pfad zu klicken, an der Sie den Punkt hinzufügen möchten.
 
 ## <a name="convert-a-shape-to-a-path"></a>Konvertieren von Formen in Pfade
 
-Um eine Form auf die gleiche Weise wie einen Pfad zu ändern, konvertieren Sie die Form in einen Pfad. Wählen Sie die Form aus, und wählen Sie dann **Format**  >  **Pfad**  >  **in Pfad konvertieren**aus.
+Um eine Form auf die gleiche Weise wie einen Pfad zu ändern, konvertieren Sie die Form in einen Pfad. Wählen Sie die Form aus, und wählen Sie dann **Format**  >  **Pfad**  >  **in Pfad konvertieren** aus.
 
 **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Konvertieren von Formen in einen Pfad](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)
 
@@ -100,7 +101,7 @@ Sie können Pfade und Formen zu einem einzelnen Pfad kombinieren.
 
 ![Kombinieren von Pfaden](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Nr.|Aktion|
+|Number|Aktion|
 |-|-|
 |![Zwei Formen vor dem Vereinen](../designers/media/b1_1.png)|Zwei Formen vor dem Vereinen|
 |![Vereinigen](../designers/media/b1_2.png)|Vereinigen|
