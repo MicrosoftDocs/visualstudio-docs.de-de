@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "89561337"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Protokollieren von Informationen im Ausgabefenster mithilfe von Ablaufverfolgungspunkten in Visual Studio
@@ -39,7 +39,7 @@ Sie können Ablaufverfolgungspunkte festlegen, indem Sie eine Ausgabezeichenfolg
 
    ![Haltepunktfenster](../debugger/media/breakpointwindow.png "Haltepunktfenster")
 
-4. Aktivieren Sie das Kontrollkästchen **Aktion**.
+4. Aktivieren Sie das Kontrollkästchen **Aktion** .
 
    ![Aktivierte Kontrollkästchen unter „Aktion“](../debugger/media/checkedactionsbox.png "Aktivierte Kontrollkästchen unter „Aktion“")
 
@@ -49,11 +49,11 @@ Sie können Ablaufverfolgungspunkte festlegen, indem Sie eine Ausgabezeichenfolg
 
    Der Ablaufverfolgungspunkt ist damit festgelegt. Klicken Sie auf die Schaltfläche &quot;Schließen&quot;, wenn Sie nur einige Informationen im Ausgabefenster protokollieren möchten.
 
-6. Wenn Sie Bedingungen hinzufügen möchten, die bestimmen, ob und wann Ihre Meldung angezeigt wird, aktivieren Sie das Kontrollkästchen **Bedingungen**.
+6. Wenn Sie Bedingungen hinzufügen möchten, die bestimmen, ob und wann Ihre Meldung angezeigt wird, aktivieren Sie das Kontrollkästchen **Bedingungen** .
 
    ![Aktiviertes Kontrollkästchen „Bedingungen“](../debugger/media/checkedconditionsbox.png "Aktiviertes Kontrollkästchen „Bedingungen“")
 
-   Es gibt drei mögliche Bedingungen: **Bedingter Ausdruck**, **Filter** und **Trefferanzahl**.
+   Es gibt drei mögliche Bedingungen: **Bedingter Ausdruck** , **Filter** und **Trefferanzahl** .
 
 ## <a name="actions-menu"></a>Menü „Aktionen“
 
@@ -63,7 +63,7 @@ Wenn Sie z. B. den Wert der Variablen `counter` in der Ausgabekonsole anzeigen 
 
 ![Ausgabemeldung des Zählers](../debugger/media/counteroutputmessage.png "Ausgabemeldung des Zählers")
 
-Wenn Sie auf **Schließen** klicken und anschließend den Debugger für das Programm starten (**F5**), wird im Ausgabefenster die folgende Ausgabe angezeigt:
+Wenn Sie auf **Schließen** klicken und anschließend den Debugger für das Programm starten ( **F5** ), wird im Ausgabefenster die folgende Ausgabe angezeigt:
 
 ![Aktionsmeldung im Ausgabefenster](../debugger/media/actionsmessageinoutputwindow.png "Aktionsmeldung im Ausgabefenster")
 

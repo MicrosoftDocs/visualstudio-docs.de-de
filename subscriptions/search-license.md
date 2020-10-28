@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren einzelne Abonnenten oder Gruppen im Verwaltungsportal suchen können.
 ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022234"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Suchen und Filtern von Abonnenten in Visual Studio-Abonnements
@@ -22,7 +22,7 @@ Mithilfe des Portals für die Verwaltung von Visual Studio-Abonnements können S
    > [!div class="mx-imgBorder"]
    > ![Auf „Filter“ klicken, um eine Abonnentenliste zu durchsuchen](_img/search-filter/filter-list.png "Klicken Sie auf „Filter“, um Kriterien zum Einschränken der angezeigten Abonnements einzugeben.")
 
-2. Geben Sie die Kriterien ein, anhand derer Sie suchen möchten, und klicken Sie auf **Filter**.
+2. Geben Sie die Kriterien ein, anhand derer Sie suchen möchten, und klicken Sie auf **Filter** .
    > [!div class="mx-imgBorder"]
    > ![Verfügbare Felder zum Filtern der Abonnentendaten verwenden](media/filter-subscribers.png "Geben Sie Werte in die verschiedenen Felder in, um die Suchergebnisse einzuschränken. Beispielsweise können Sie nach „@contoso.com“ suchen, um eine Liste aller Abonnenten mit E-Mail-Adressen mit „@contoso.com“ zu erhalten.")
 
@@ -32,7 +32,7 @@ Mithilfe des Portals für die Verwaltung von Visual Studio-Abonnements können S
 
    Das **Filtersymbol** wird hervorgehoben. Das bedeutet, dass ein Filter angewendet wird.  Auch die Option **Filter löschen** wird angezeigt. In diesem Beispiel wurde die Liste der Abonnenten gefiltert, um die Abonnenten mit @outlook.com-E-Mail-Adressen zu finden. 
 
-3. Um den Filter zu löschen und die ungefilterte Liste wiederherzustellen, klicken Sie oben rechts auf **Filter löschen**. 
+3. Um den Filter zu löschen und die ungefilterte Liste wiederherzustellen, klicken Sie oben rechts auf **Filter löschen** . 
    > [!div class="mx-imgBorder"]
    > ![Löschen des Filters von der Abonnentenliste](_img/search-filter/clear-filter.png "Klicken Sie auf „Filter löschen“, um den Filter zu entfernen und wieder alle zugewiesenen Abonnements anzuzeigen.")
 

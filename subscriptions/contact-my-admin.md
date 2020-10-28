@@ -8,10 +8,10 @@ ms.date: 09/08/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie Ihren Abonnementadministrator bei Fragen oder Problemen kontaktieren können.
 ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005687"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Anfordern von Unterstützung durch einen Abonnementadministrator
@@ -27,7 +27,7 @@ Angesichts der Größe und Komplexität vieler Organisationen wissen Sie möglic
    > ![Contact my Admin](_img/contact-my-admin/contact-my-admin-button.png "Wählen Sie die Schaltfläche „Administrator kontaktieren“ aus, geben Sie Ihre Nachricht ein, und wählen Sie dann „Senden“ aus.") (Administrator kontaktieren)
 4. Geben Sie die Nachricht ein, die an den Administrator gesendet werden soll.
 5. Wenn Sie eine Kopie der Nachricht erhalten möchten, die an Ihren Administrator gesendet wird, wählen Sie das Kontrollkästchen neben **Send me a copy** (Kopie an mich senden) aus. 
-6. Klicken Sie abschließend auf **Senden**.
+6. Klicken Sie abschließend auf **Senden** .
 
 > [!NOTE]
 > **Superadministratoren:**  Legen Sie die E-Mail-Adresse in [Agreement Preferences](admin-prefs.md#contact-email-address) (Vertragseinstellungen) fest, an die Anforderungen für „Contact my Admin“ (Administrator kontaktieren) gesendet werden sollen.

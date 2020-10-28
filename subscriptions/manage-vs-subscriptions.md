@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
 ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005897"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
@@ -69,10 +69,10 @@ Im Abonnementportal haben Sie die Möglichkeit, ein Profil zu erstellen und zu v
 Sie können die Kontaktinformationen und Einstellungen in Ihrem Profil auf einfache Weise ändern.
 
 1. Wählen Sie in der oberen rechten Ecke des Abonnentenportals Ihren Namen aus.
-2. Klicken Sie auf die Schaltfläche **Profil bearbeiten**.
+2. Klicken Sie auf die Schaltfläche **Profil bearbeiten** .
 3. Sie können auf der Registerkarte **Info** Namen, E-Mail-Adresse, Land/Region, Profilbild und Kontakteinstellungen ändern. Sie können auf der Registerkarte **Einstellungen** Ihre bevorzugte Sprache, Datums- und Uhrzeitmuster, die Zeitzone und das Design der Benutzeroberfläche auswählen.
 4. Wählen Sie **Speichern** aus, wenn Sie die Änderungen abgeschlossen haben.
-5. Klicken Sie in Ihrem Browser auf die Schaltfläche **Zurück**, um zur Seite „Vorteile“ zurückzukehren.
+5. Klicken Sie in Ihrem Browser auf die Schaltfläche **Zurück** , um zur Seite „Vorteile“ zurückzukehren.
 
 ### <a name="setting-communications-preferences"></a>Festlegen von Kommunikationseinstellungen
 Wenn Sie regelmäßige Updates zu Ihrem Abonnement und Ihren Vorteilen sowie den monatlichen Newsletter zu Visual Studio-Abonnements erhalten möchten, [aktualisieren Sie Ihre Einstellungen](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), in dem Sie in Ihrem Visual Studio-Profil das Kontrollkästchen für Visual Studio-Abonnements aktivieren. Sie können diese Einstellungen jederzeit ändern und die Updates kündigen. 
@@ -90,7 +90,7 @@ So fügen Sie ein alternatives Konto hinzu:
 1. Melden Sie sich mit Ihrem Microsoft-Konto (Microsoft Account, MSA) beim [Abonnentenportal](https://my.visualstudio.com?wt.mc_id=o~msft~docs) an.
 2. Wählen Sie die Registerkarte **Abonnements** aus.
 3. Wählen Sie unter **Verwandte Links** den Eintrag **Alternatives Konto hinzufügen** aus.
-4. Geben Sie die E-Mail-Adresse Ihres Geschäfts-, Schul- oder Unikontos ein, und klicken Sie auf **Hinzufügen**.
+4. Geben Sie die E-Mail-Adresse Ihres Geschäfts-, Schul- oder Unikontos ein, und klicken Sie auf **Hinzufügen** .
 
 Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit aktualisieren oder entfernen, indem Sie die Registerkarte **Abonnements** und dann die entsprechende Option im Abschnitt **Verwandte Links** auswählen.
 
