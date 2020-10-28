@@ -1,6 +1,8 @@
 ---
 title: Visualisieren von Beispieldaten in einer XAML-Benutzeroberfläche
 titleSuffix: Blend for Visual Studio
+description: Erfahren Sie, wie Sie Stichprobendaten von Grund auf neu oder in einer vorhandenen Klasse in Blend für Visual Studio generieren.
+ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c71ca21e0d346561435c9cbe079d17dac1d0b5
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 927779e6d58de9eeaacd43b6b03f837dbc3281e2
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959847"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796679"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Anzeigen von Daten in Blend für Visual Studio
 
@@ -41,10 +43,10 @@ Wenn die Beispieldaten beim Ausführen der Anwendung auf Ihren Seiten angezeigt 
 
 Wenn Sie bereits Klassen erstellt haben, die die Struktur Ihrer Daten beschreiben, können Sie hieraus die Beispieldaten generieren.
 
-Öffnen Sie zum Generieren von Beispieldaten aus einer Klasse ein XAML-Dokument, klicken Sie im Bereich **Daten** auf die Schaltfläche **Beispieldaten erstellen** ![Beispieldaten erstellen Symbol](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) und anschließend auf **Beispieldaten aus Klasse erstellen**.
+Öffnen Sie zum Generieren von Beispieldaten aus einer Klasse ein XAML-Dokument, klicken Sie im Bereich **Daten** auf die Schaltfläche **Beispieldaten erstellen** ![Beispieldaten erstellen Symbol](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) und anschließend auf **Beispieldaten aus Klasse erstellen** .
 
 **Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zusammenführen von Datenbindungen mit Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

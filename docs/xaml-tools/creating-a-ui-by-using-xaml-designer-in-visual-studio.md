@@ -1,5 +1,7 @@
 ---
 title: Übersicht über den XAML-Designer
+description: Erfahren Sie mehr über die Benutzeroberfläche und die Features des XAML-Designer in Blend für Visual Studio, das eine visuelle Oberfläche bereitstellt, die Sie beim Entwerfen von XAML-basierten Apps unterstützt.
+ms.custom: SEO-VS-2020
 ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507962"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796783"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer
 
@@ -31,7 +33,7 @@ Fortgeschrittene Benutzer können den [XAML-Designer](https://github.com/microso
 
 ## <a name="xaml-designer-workspace"></a>XAML-Designer-Arbeitsbereich
 
-Der Arbeitsbereich im XAML-Designer besteht aus mehreren visuellen Schnittstellenelementen. Dazu gehören die *Zeichenfläche* (die visuelle Designoberfläche), der XAML-Editor, das Fenster „Dokumentgliederung“ (Fenster „Objekte und Zeitachse“ in Blend for Visual Studio) und das Eigenschaftenfenster. Um den XAML-Designer zu öffnen, klicken Sie mit der rechten Maustaste auf eine XAML-Datei im **Projektmappen-Explorer** und wählen Sie **Ansicht-Designer**aus.
+Der Arbeitsbereich im XAML-Designer besteht aus mehreren visuellen Schnittstellenelementen. Dazu gehören die *Zeichenfläche* (die visuelle Designoberfläche), der XAML-Editor, das Fenster „Dokumentgliederung“ (Fenster „Objekte und Zeitachse“ in Blend for Visual Studio) und das Eigenschaftenfenster. Um den XAML-Designer zu öffnen, klicken Sie mit der rechten Maustaste auf eine XAML-Datei im **Projektmappen-Explorer** und wählen Sie **Ansicht-Designer** aus.
 
 Der XAML-Designer stellt eine XAML-Ansicht und eine synchronisierte Entwurfsansicht des gerenderten XAML-Markups Ihrer App bereit. Mit einer XAML-Datei, die in Visual Studio oder Blend für Visual Studio geöffnet ist, können Sie zwischen Designansicht und XAML-Ansicht wechseln, indem Sie die Registerkarten **Entwurf** und **XAML** verwenden. Sie können die Schaltfläche **Bereiche austauschen**![Schaltfläche „Bereiche austauschen“ im XAML-Designer](media/swap-panes.PNG) verwenden, um festzulegen, welches Fenster im Vordergrund angezeigt wird: entweder die Zeichenfläche oder der XAML-Editor.
 
@@ -107,7 +109,7 @@ Deaktiviert den [Projektcode](debugging-or-disabling-project-code-in-xaml-design
 
 ### <a name="xaml-view"></a>XAML-Ansicht
 
-In der **XAML**-Ansicht ist das Fenster mit dem XAML-Editor das aktive Fenster, und der XAML-Editor ist Ihr primäres Entwicklungstool. Die Extensible Application Markup Language (XAML) stellt ein deklaratives, auf XML basierendes Vokabular bereit, mit dem die Benutzeroberfläche einer Anwendung festgelegt werden kann. Die XAML-Ansicht enthält IntelliSense und automatische Formatierung, Syntaxhervorhebung und Tagnavigation. In der folgenden Abbildung wird die XAML-Ansicht mit einem geöffneten IntelliSense-Menü dargestellt:
+In der **XAML** -Ansicht ist das Fenster mit dem XAML-Editor das aktive Fenster, und der XAML-Editor ist Ihr primäres Entwicklungstool. Die Extensible Application Markup Language (XAML) stellt ein deklaratives, auf XML basierendes Vokabular bereit, mit dem die Benutzeroberfläche einer Anwendung festgelegt werden kann. Die XAML-Ansicht enthält IntelliSense und automatische Formatierung, Syntaxhervorhebung und Tagnavigation. In der folgenden Abbildung wird die XAML-Ansicht mit einem geöffneten IntelliSense-Menü dargestellt:
 
 ![XAML-Ansicht](media/xaml-editor.png)
 
@@ -123,8 +125,8 @@ Das Fenster „Dokumentgliederung“ in Visual Studio ist ähnelt dem Fenster [O
 
 - [Erstellen von Animationen](animate-objects-in-xaml-designer.md) (nur Blend für Visual Studio).
 
-Um das Dokument Gliederungs Fenster in Visual Studio anzuzeigen, wählen Sie in **View**der Menüleiste die Option  >  **Weitere Windows**-  >  **Dokument**Gliederung anzeigen aus.
-Um das Fenster Objekte und Zeitachsen in Blend für Visual Studio anzuzeigen, wählen Sie in der Menüleiste Dokument Gliederung **anzeigen**aus  >  **Document Outline**.
+Um das Dokument Gliederungs Fenster in Visual Studio anzuzeigen, wählen Sie in **View** der Menüleiste die Option  >  **Weitere Windows** -  >  **Dokument** Gliederung anzeigen aus.
+Um das Fenster Objekte und Zeitachsen in Blend für Visual Studio anzuzeigen, wählen Sie in der Menüleiste Dokument Gliederung **anzeigen** aus  >  **Document Outline** .
 
 ![Screenshot: Fenster „Dokumentgliederung“ in Visual Studio](media/document-outline-window.png)
 
@@ -136,7 +138,7 @@ Zeigt Zeichenflächenelemente an oder blendet sie aus. Wird als Auges dargestell
 
 **Sperren/Entsperren**
 
-Sperrt oder entsperrt Zeichenflächenelemente. Gesperrte Elemente können nicht geändert werden. Es wird ein Vorhängeschloss angezeigt, wenn ein Element gesperrt ist. Sie können auch **STRG** + **l** drücken, um ein Element zu sperren, und **UMSCHALT**Taste + **STRG** + **l** , um es zu entsperren.
+Sperrt oder entsperrt Zeichenflächenelemente. Gesperrte Elemente können nicht geändert werden. Es wird ein Vorhängeschloss angezeigt, wenn ein Element gesperrt ist. Sie können auch **STRG** + **l** drücken, um ein Element zu sperren, und **UMSCHALT** Taste + **STRG** + **l** , um es zu entsperren.
 
 **Bereich zurücksetzen auf**
 
@@ -152,8 +154,8 @@ Am oberen Rand des Fensters " **Eigenschaften** " befinden sich verschiedene Opt
 
 - Sie können den Namen des aktuell ausgewählten Elements im Feld **Name** ändern.
 - In der linken oberen Ecke gibt es ein Symbol, welches das aktuell ausgewählte Element darstellt.
-- Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie**, **Name**oder auf **Quelle** in der Liste **Anordnen nach** .
-- Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse**. Es wird ein Blitz angezeigt.
+- Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie** , **Name** oder auf **Quelle** in der Liste **Anordnen nach** .
+- Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse** . Es wird ein Blitz angezeigt.
 - Wenn Sie nach einer Eigenschaft suchen möchten, beginnen Sie mit der Eingabe des Namens der Eigenschaft im Suchfeld. Im Fenster **Eigenschaften** werden die Eigenschaften angezeigt, die mit Ihrer Suche übereinstimmen, während Sie Ihre Eingabe vornehmen.
 
 Einige Eigenschaften ermöglichen es Ihnen, erweiterte Eigenschaften festzulegen, indem Sie eine Nach-Unten-Schaltfläche auswählen.
@@ -162,7 +164,7 @@ Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der
 
 Weitere Informationen zur Verwendung von Eigenschaften und zur Behandlung von Ereignissen finden Sie unter [Einführung in Steuerelemente und Muster](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Arbeiten mit Elementen im XAML-Designer](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [So erstellen Sie eine Ressource und wenden Sie an](../xaml-tools/how-to-create-and-apply-a-resource.md)
