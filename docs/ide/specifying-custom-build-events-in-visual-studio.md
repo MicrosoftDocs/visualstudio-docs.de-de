@@ -1,5 +1,7 @@
 ---
 title: Angeben benutzerdefinierter Buildereignisse
+description: Hier erfahren Sie, wie Sie Befehle in Visual Studio vor dem Starten eines Builds oder nach dem Beenden automatisch ausführen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f1d339f9bbf170d2df545e69c698f786198695ad
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115339"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136783"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Festlegen von benutzerdefinierten Buildereignissen in Visual Studio
 
@@ -24,7 +26,7 @@ Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Sta
 
 Spezifische Informationen zu den verwendeten Programmiersprachen finden Sie in den folgenden Themen:
 
-- Visual Basic: [Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic: [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 
 - C# und F#: [Vorgehensweise: Festlegen von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md).
 
@@ -55,7 +57,7 @@ Um optimale Ergebnisse zu erhalten, befolgen Sie diese Tipps zur Formatierung:
   > [!NOTE]
   > `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
 - [Pre-build Event/Post-build Event command line dialog box (Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
