@@ -8,10 +8,10 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 description: Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten?
 ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022652"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio-Abonnements: Warum werden persönliche Konten für meine Abonnenten angezeigt?
@@ -42,7 +42,7 @@ Sie können auch die Option **Verzeichnis durchsuchen** nutzen, um Fehler zu beh
 > [!div class="mx-imgBorder"]
 > ![Flyout für „Connect Emails“ (E-Mail-Adressen verknüpfen)](_img/connect-emails/connect-emails-flyout.png "Wählen Sie aus, welche Abonnenten ihren Azure AD-Identitäten zugeordnet werden sollen, und klicken Sie auf „Weiter“.")
 
-Klicken Sie auf **Weiter**. Hierdurch werden Sie zu einer Liste der anstehenden Änderungen weitergeleitet. Klicken Sie auf **Speichern**, wenn Sie mit diesen einverstanden sind. Die Änderungen werden anschließend umgesetzt. Ihre Abonnenten werden bei der nächsten Anmeldung bei ihrem Abonnement über die Änderung benachrichtigt.  Beachten Sie, dass nur die zwei Abonnenten, die in der Azure Active Directory-Instanz als übereinstimmend ermittelt wurden, in dieser Liste angezeigt werden.  Da Frederick in diesem Beispiel über keine Adresse in Azure AD verfügt, konnte sein Microsoft-Konto keinem Geschäftskonto zugeordnet werden. 
+Klicken Sie auf **Weiter** . Hierdurch werden Sie zu einer Liste der anstehenden Änderungen weitergeleitet. Klicken Sie auf **Speichern** , wenn Sie mit diesen einverstanden sind. Die Änderungen werden anschließend umgesetzt. Ihre Abonnenten werden bei der nächsten Anmeldung bei ihrem Abonnement über die Änderung benachrichtigt.  Beachten Sie, dass nur die zwei Abonnenten, die in der Azure Active Directory-Instanz als übereinstimmend ermittelt wurden, in dieser Liste angezeigt werden.  Da Frederick in diesem Beispiel über keine Adresse in Azure AD verfügt, konnte sein Microsoft-Konto keinem Geschäftskonto zugeordnet werden. 
 
 > [!div class="mx-imgBorder"]
 > ![Bestätigung für „Connect Emails“ (E-Mail-Adressen verknüpfen)](_img/connect-emails/connect-emails-confirm.png "Klicken Sie auf „Weiter“, um die vorgeschlagenen Änderungen zu implementieren, und klicken Sie auf „Speichern“.") 

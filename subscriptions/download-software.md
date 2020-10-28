@@ -8,10 +8,10 @@ ms.date: 07/29/2020
 ms.topic: conceptual
 description: Informationen zum Suchen und Herunterladen von Microsoft-Softwaretiteln in Visual Studio-Abonnements
 ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005599"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Herunterladen von Softwaretiteln in Visual Studio-Abonnements
@@ -33,7 +33,7 @@ Wenn Sie z. B. **Visual Studio 2019** aus der Liste mit den Entwicklertools aus
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019: Downloads](_img/subscriber-downloads/vs2019-product-list.png "Wenn Sie ein Produkt auswählen, wird eine Liste der verfügbaren Versionen angezeigt.")
 
-Mithilfe der verfügbaren Dropdownmenüs können Sie ganz einfach eine Architektur, Ihre bevorzugte Sprache und den Dateityp auswählen. Wählen Sie Ihre bevorzugten Optionen aus, und klicken Sie dann auf **Herunterladen**, um mit dem Herunterladen des Produkts zu beginnen.
+Mithilfe der verfügbaren Dropdownmenüs können Sie ganz einfach eine Architektur, Ihre bevorzugte Sprache und den Dateityp auswählen. Wählen Sie Ihre bevorzugten Optionen aus, und klicken Sie dann auf **Herunterladen** , um mit dem Herunterladen des Produkts zu beginnen.
 
 > [!NOTE]
 > Nicht alle Titel sind in allen Architekturen, Sprachen oder Dateiformaten verfügbar.  

@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: how-to
 description: Einrichten von Administratoren für Monatsabonnements
 ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91006110"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Einrichten von Administratoren für Visual Studio-Monatsabonnements
@@ -41,16 +41,16 @@ So fügen Sie Administratoren hinzu
    > [!div class="mx-imgBorder"]
    > ![Auswählen des Abonnements](_img/cloud-admin/subscription-list.png "Wählen Sie das Azure-Abonnement aus, das Sie für den Kauf verwenden möchten.")
 5. Klicken Sie im oberen Bereich der Liste im linken Navigationsbereich auf **Zugriffssteuerung (IAM)** .
-6. Klicken Sie oben auf der Seite auf die Registerkarte **Hinzufügen**.
-7. Klicken Sie auf **Rollenzuweisung hinzufügen**.
+6. Klicken Sie oben auf der Seite auf die Registerkarte **Hinzufügen** .
+7. Klicken Sie auf **Rollenzuweisung hinzufügen** .
    > [!div class="mx-imgBorder"]
    > ![Auswahl der Option „Zugriffssteuerung > Hinzufügen > Rollenzuweisung hinzufügen“](_img/cloud-admin/access-control-add.png "Wählen Sie aus der Liste auf der linken Seite die Option „Zugriffssteuerung“ aus, und klicken Sie auf „Hinzufügen“.")
-8. Klicken Sie oben rechts auf die Dropdownliste **Rolle**, scrollen Sie nach unten, und wählen Sie **Benutzerzugriffsadministrator** aus.
+8. Klicken Sie oben rechts auf die Dropdownliste **Rolle** , scrollen Sie nach unten, und wählen Sie **Benutzerzugriffsadministrator** aus.
 9. Scrollen Sie in der Benutzerliste zu dem Benutzer, den Sie als Administrator festlegen möchten, und wählen Sie ihn aus. 
    > [!div class="mx-imgBorder"]
    > ![Auswahl der Option „Rolle > Benutzerzugriffsadministrator“](_img/cloud-admin/add-role-user-access-admin.png "Wählen Sie „Rolle“ und „Benutzerzugriffsadministrator“ aus, und wählen Sie dann den Namen des Benutzers aus, um diesen zum Administrator zu machen.")
-10. Klicken Sie auf **Speichern**.
-11. Klicken Sie auf die Registerkarte **Rollenzuweisungen**, um zu überprüfen, ob der ausgewählte Benutzer nun als Benutzerzugriffsadministrator aufgeführt wird.
+10. Klicken Sie auf **Speichern** .
+11. Klicken Sie auf die Registerkarte **Rollenzuweisungen** , um zu überprüfen, ob der ausgewählte Benutzer nun als Benutzerzugriffsadministrator aufgeführt wird.
 
 Der neue Administrator kann sich jetzt beim [Verwaltungsportal](https://manage.visualstudio.com) anmelden. Anschließend muss er oben links auf der Seite das Azure-Abonnement auswählen, das zum Kauf der Monatsabonnements verwendet wurde, und kann mit der Verwaltung der Abonnements beginnen.
 

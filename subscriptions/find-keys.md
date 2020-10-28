@@ -8,10 +8,10 @@ ms.date: 07/30/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Suchen, Beanspruchen und Exportieren Ihrer Product Keys in Visual Studio-Abonnements.
 ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91004966"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Suchen und Beanspruchen von Product Keys in Visual Studio-Abonnements
