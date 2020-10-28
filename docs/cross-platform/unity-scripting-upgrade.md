@@ -1,5 +1,6 @@
 ---
 title: Verwenden von .NET 4.x in Unity
+description: Hier erfahren Sie, wie Sie .NET 4.x in Unity verwenden. Aktivieren Sie die .NET 4.x-Skripterstellungsruntime. Nutzen Sie die .NET-Kompatibilität. Überprüfen Sie neue Syntax- und Sprachenfeatures.
 author: therealjohn
 ms.author: johmil
 ms.date: 08/29/2018
@@ -8,12 +9,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 06efbe9d346cbbe8b9e81d95be257742b659cf8f
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508976"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039845"
 ---
 # <a name="using-net-4x-in-unity"></a>Verwenden von .NET 4.x in Unity
 
@@ -38,11 +39,11 @@ Um die .NET 4.x-Skriptlaufzeit zu aktivieren, führen Sie die folgenden Schritte
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Auswahl zwischen .NET 4.x- und .NET Standard 2.0-Profilen
 
-Nachdem Sie zur .NET 4.x entsprechenden Skriptlaufzeit gewechselt haben, können Sie den **Api Compatibility Level** (API-Kompatibilitätsgrad) in den PlayerSettings über das Dropdownmenü (**Edit > Project Settings > Player** (Bearbeiten > Projekteinstellungen > Player)) festlegen. Es gibt zwei Möglichkeiten:
+Nachdem Sie zur .NET 4.x entsprechenden Skriptlaufzeit gewechselt haben, können Sie den **Api Compatibility Level** (API-Kompatibilitätsgrad) in den PlayerSettings über das Dropdownmenü ( **Edit > Project Settings > Player** (Bearbeiten > Projekteinstellungen > Player)) festlegen. Es gibt zwei Optionen:
 
-* **.NET Standard 2.0**. Dieses Profil entspricht dem von der .NET Foundation veröffentlichten [.NET Standard 2.0-Profil](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md). Für neue Projekte empfiehlt Unity die Verwendung von .NET Standard 2.0. Das Profil hat einen kleineren Umfang als .NET 4.x, was für Plattformen mit Größenbeschränkungen von Vorteil ist. Darüber hinaus hat sich Unity verpflichtet, dieses Profil auf allen von Unity unterstützten Plattformen zu unterstützen.
+* **.NET Standard 2.0** . Dieses Profil entspricht dem von der .NET Foundation veröffentlichten [.NET Standard 2.0-Profil](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md). Für neue Projekte empfiehlt Unity die Verwendung von .NET Standard 2.0. Das Profil hat einen kleineren Umfang als .NET 4.x, was für Plattformen mit Größenbeschränkungen von Vorteil ist. Darüber hinaus hat sich Unity verpflichtet, dieses Profil auf allen von Unity unterstützten Plattformen zu unterstützen.
 
-* **.NET 4.x**. Dieses Profil bietet Zugriff auf die neueste .NET 4-API. Es enthält den gesamten Code, der in den .NET Framework-Klassenbibliotheken verfügbar ist, und unterstützt zudem .NET Standard 2.0-Profile. Verwenden Sie das .NET 4.x-Profil, wenn es für Ihr Projekt erforderlich ist, dass ein Teil der API nicht im .NET Standard 2.0-Profil enthalten ist. Es kann jedoch sein, dass einige Teile dieser API nicht auf allen Plattformen von Unity unterstützt werden.
+* **.NET 4.x** . Dieses Profil bietet Zugriff auf die neueste .NET 4-API. Es enthält den gesamten Code, der in den .NET Framework-Klassenbibliotheken verfügbar ist, und unterstützt zudem .NET Standard 2.0-Profile. Verwenden Sie das .NET 4.x-Profil, wenn es für Ihr Projekt erforderlich ist, dass ein Teil der API nicht im .NET Standard 2.0-Profil enthalten ist. Es kann jedoch sein, dass einige Teile dieser API nicht auf allen Plattformen von Unity unterstützt werden.
 
 Weitere Informationen zu diesen Optionen finden Sie im [Blogbeitrag](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/) von Unity.
 
@@ -58,7 +59,7 @@ Wenn Sie beispielsweise das .NET 4.x-Profil nutzen und `HttpClient` verwenden m�
 
 Jedes Mal, wenn Sie Unity-Projekte öffnen, werden in Visual Studio .csproj- und .sln-Dateien generiert. Folglich können Sie Assemblyverweise nicht direkt in Visual Studio hinzufügen, da sie beim erneuten Öffnen des Projekts verloren gehen. Stattdessen muss eine spezielle Textdatei namens **mcs.rsp** verwendet werden:
 
-1. Erstellen Sie im Stammverzeichnis **Assets** Ihres Unity-Projekts eine neue Textdatei namens **mcs.rsp**.
+1. Erstellen Sie im Stammverzeichnis **Assets** Ihres Unity-Projekts eine neue Textdatei namens **mcs.rsp** .
 
 1. Geben Sie in der ersten Zeile der leeren Textdatei Folgendes ein: `-r:System.Net.Http.dll`. Speichern Sie anschließend die Datei. Sie können „System.Net.Http.dll“ durch jede enthaltene Assembly ersetzen, der möglicherweise ein Verweis fehlt.
 
@@ -74,19 +75,19 @@ Zusätzlich zu den neuen C#-Syntax- und Sprachfunktionen bietet die .NET 4.x-Skr
 
 1. Durchsuchen Sie NuGet nach einem kompatiblen Paket, das Sie hinzufügen möchten (.NET Standard 2.0 oder .NET 4.x). Dieses Beispiel zeigt das Hinzufügen von [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/), einem beliebten Paket für die Arbeit mit JSON, zu einem .NET Standard 2.0-Projekt.
 
-1. Klicken Sie auf die Schaltfläche **Herunterladen**:
+1. Klicken Sie auf die Schaltfläche **Herunterladen** :
 
     ![Schaltfläche zum Herunterladen](media/vstu_nuget-download.png)
 
-1. Suchen Sie die heruntergeladene Datei, und ändern Sie die Erweiterung von **.nupkg** in **.zip**.
+1. Suchen Sie die heruntergeladene Datei, und ändern Sie die Erweiterung von **.nupkg** in **.zip** .
 
-1. Navigieren Sie innerhalb der ZIP-Datei zum Verzeichnis **lib/netstandard2.0**, und kopieren Sie die Datei **Newtonsoft.Json.dll**.
+1. Navigieren Sie innerhalb der ZIP-Datei zum Verzeichnis **lib/netstandard2.0** , und kopieren Sie die Datei **Newtonsoft.Json.dll** .
 
-1. Erstellen Sie im Stammordner **Assets** Ihres Unity-Projekts einen neuen Ordner mit dem Namen **Plugins**. In Unity ist „Plugins“ ein spezieller Ordnername. Weitere Informationen finden Sie in der [Unity-Dokumentation](https://docs.unity3d.com/Manual/Plugins.html).
+1. Erstellen Sie im Stammordner **Assets** Ihres Unity-Projekts einen neuen Ordner mit dem Namen **Plugins** . In Unity ist „Plugins“ ein spezieller Ordnername. Weitere Informationen finden Sie in der [Unity-Dokumentation](https://docs.unity3d.com/Manual/Plugins.html).
 
 1. Fügen Sie die Datei **Newtonsoft.Json.dll** in das Verzeichnis **Plugins** Ihres Unity-Projekts ein.
 
-1. Erstellen Sie im Verzeichnis **Assets** Ihres Unity-Projekts eine Datei namens **link.xml**, und fügen Sie folgenden XML-Code hinzu.  Dadurch wird sichergestellt, dass der Unity-Prozess zum Entfernen von Bytecode beim Export auf eine IL2CPP-Plattform nicht die benötigten Daten entfernt.  Obwohl dieser Schritt nur für diese Bibliothek gilt, können auch Probleme mit anderen Bibliotheken auftreten, die auf ähnliche Weise eine Reflektion verwenden.  Weitere Informationen finden Sie in den [Unity-Dokumenten](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html) zu diesem Thema.
+1. Erstellen Sie im Verzeichnis **Assets** Ihres Unity-Projekts eine Datei namens **link.xml** , und fügen Sie folgenden XML-Code hinzu.  Dadurch wird sichergestellt, dass der Unity-Prozess zum Entfernen von Bytecode beim Export auf eine IL2CPP-Plattform nicht die benötigten Daten entfernt.  Obwohl dieser Schritt nur für diese Bibliothek gilt, können auch Probleme mit anderen Bibliotheken auftreten, die auf ähnliche Weise eine Reflektion verwenden.  Weitere Informationen finden Sie in den [Unity-Dokumenten](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html) zu diesem Thema.
 
     ```xml
     <linker>
@@ -144,7 +145,7 @@ public int Health { get; set; } // Health has to be initialized somewhere else, 
 public int Health { get; set; } = 100;
 ```
 
-### <a name="string-interpolation"></a>Zeichenfolgeninterpolation
+### <a name="string-interpolation"></a>Zeichenfolgeninterpolierung
 
 Mit der älteren .NET 3.5-Laufzeit erforderte die Zeichenfolgenverkettung eine umständliche Syntax. Jetzt mit der .NET 4.x-Laufzeit lassen sich dank des Features für die [`$`-Zeichenfolgeninterpolation](/dotnet/csharp/language-reference/tokens/interpolated) Ausdrücke in Zeichenfolgen in einer direkteren und besser lesbaren Syntax einfügen:
 

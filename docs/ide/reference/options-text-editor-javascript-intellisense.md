@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, JavaScript, IntelliSense
+description: In diesem Artikel erhalten Sie Informationen zur Verwendung der IntelliSense-Seite des Dialogfelds „Optionen“, um Einstellungen zu bearbeiten, die das Verhalten von IntelliSense für JavaScript beeinflussen.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,22 +15,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605980"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947725"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Dialogfeld „Optionen“: Text-Editor \> JavaScript \> IntelliSense
 
-Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einstellungen zu ändern, die das Verhalten von IntelliSense für JavaScript beeinflussen. Sie erreichen die Seite **IntelliSense**, indem Sie in der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** > **JavaScript/TypeScript** > **IntelliSense** erweitern.
+Verwenden Sie die Seite **IntelliSense** des Dialogfelds **Optionen** , um Einstellungen zu ändern, die das Verhalten von IntelliSense für JavaScript beeinflussen. Sie erreichen die Seite **IntelliSense** , indem Sie in der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** > **JavaScript/TypeScript** > **IntelliSense** erweitern.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 Die Seite **IntelliSense** enthält folgende Abschnitte:
 
-## <a name="statement-completion"></a>Anweisungsvervollständigung
+## <a name="statement-completion"></a>Anweisungsabschluss
 
 Sie können diese Optionen verwenden, um das Verhalten der IntelliSense-Anweisungsvervollständigung zu ändern.
 
@@ -38,7 +40,7 @@ Sie können diese Optionen verwenden, um das Verhalten der IntelliSense-Anweisun
 
 Wenn Sie dieses Kontrollkästchen aktivieren, erweitert der JavaScript-Code-Editor Anweisungen nur dann mit Elementen, die Sie in der Vervollständigungsliste ausgewählt haben, wenn Sie auf die **TAB-TASTE** oder die **EINGABETASTE** drücken. Wenn Sie dieses Kontrollkästchen deaktivieren, können auch andere Zeichen wie Punkt, Komma, Doppelpunkt, öffnende runde Klammer und öffnende geschweifte Klammer ({) Anweisungen mit den ausgewählten Elementen erweitern.
 
-## <a name="references"></a>Verweise
+## <a name="references"></a>References
 
 Sie können diese Optionen verwenden, um die Typen von IntelliSense-JS-Dateien anzugeben, die für verschiedene JavaScript-Projekttypen verfügbar sind. Die IntelliSense-Verweise werden normalerweise verwendet, um die IntelliSense-Unterstützung für globale Objekte bereitzustellen. Sie können diese Seite auch verwenden, um die Ladereihenfolge für Skripts festlegen, die zur Laufzeit geladen werden müssen, und um IntelliSense-Erweiterungsdateien hinzuzufügen.
 
@@ -50,7 +52,7 @@ Diese Option gibt den Verweisgruppentyp an. Drei Verweisgruppen werden unterstü
 
 Sie können vordefinierte Verweisgruppen verwenden, um anzugeben, dass bestimmte IntelliSense-JS-Dateien für verschiedene JavaScript-Projekte verfügbar sind. Vier Verweisgruppen sind verfügbar:
 
-- Implizit (Windows- *Version*) für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] -Apps, die JavaScript verwenden. Die in dieser Gruppe enthalten Dateien sind für jede im Code-Editor geöffnete JS-Datei für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-Apps mit JavaScript verfügbar.
+- Implizit (Windows- *Version* ) für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] -Apps, die JavaScript verwenden. Die in dieser Gruppe enthalten Dateien sind für jede im Code-Editor geöffnete JS-Datei für [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-Apps mit JavaScript verfügbar.
 
 - Implizit (Internet), für HTML5-Projekte. Die Dateien, die in dieser Gruppe enthalten sind, sind im Bereich für jede JS-Datei, die im Code-Editor für die Projekttypen geöffnet ist.
 
@@ -60,7 +62,7 @@ Sie können vordefinierte Verweisgruppen verwenden, um anzugeben, dass bestimmte
 
 **Eingeschlossene Dateien**
 
-Diese Option gibt die Reihenfolge an, in der Dateien in den Kontext des Sprachdiensts geladen werden. Sie können die Reihenfolge konfigurieren, indem Sie die Schaltflächen **Entfernen**, **Nach oben**und **Nach unten** verwenden. Damit IntelliSense ordnungsgemäß funktioniert, muss eine Datei, die von einer anderen abhängig ist, im Anschluss an diese geladen werden.
+Diese Option gibt die Reihenfolge an, in der Dateien in den Kontext des Sprachdiensts geladen werden. Sie können die Reihenfolge konfigurieren, indem Sie die Schaltflächen **Entfernen** , **Nach oben** und **Nach unten** verwenden. Damit IntelliSense ordnungsgemäß funktioniert, muss eine Datei, die von einer anderen abhängig ist, im Anschluss an diese geladen werden.
 
 > [!CAUTION]
 > Wenn ein Objekt ohne Einschränkung in zwei oder mehr impliziten Verweisen definiert ist, wird der letzte Verweis in dieser Liste verwendet, um das Objekt zu definieren.
