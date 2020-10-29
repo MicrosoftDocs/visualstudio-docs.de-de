@@ -48,6 +48,8 @@
       href: contact-my-admin.md
     - name: Vorteile
       items:
+        - name: Informationen zu Vorteilen
+          href: about-benefits.md
         - name: Tools
           items:
             - name: Einzelguthaben für Azure DevTest
