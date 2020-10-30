@@ -1,6 +1,8 @@
 ---
 title: Ändern des Stils von Objekten
 titleSuffix: Blend for Visual Studio
+description: Erfahren Sie, wie Sie den Stil von Objekten in Blend für Visual Studio ändern, indem Sie Pinsel anwenden, visuelle Zustände festlegen und wiederverwendbare Stile und Vorlagen anwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfe54db27a16d95904412b5e1181d589ed2fcde8
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82921124"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046786"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Ändern des Stils von Objekten in Blend für Visual Studio
 
-Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eigenschaften im Bereich **Eigenschaften**.
+Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eigenschaften im Bereich **Eigenschaften** .
 
-Wenn Sie Einstellungen oder Gruppen von Einstellungen erneut verwendet werden, erstellen Sie eine wieder verwendbare Ressource. Dies könnte ein *Stil*, eine *Vorlage* oder etwas so einfaches wie eine benutzerdefinierte Farbe sein. Sie können auch ein Steuerelement unterschiedlich basierend auf seine Status anzeigen. Beispielsweise wird eine Schaltfläche grün, wenn der Benutzer darauf klickt.
+Wenn Sie Einstellungen oder Gruppen von Einstellungen erneut verwendet werden, erstellen Sie eine wieder verwendbare Ressource. Dies könnte ein *Stil* , eine *Vorlage* oder etwas so einfaches wie eine benutzerdefinierte Farbe sein. Sie können auch ein Steuerelement unterschiedlich basierend auf seine Status anzeigen. Beispielsweise wird eine Schaltfläche grün, wenn der Benutzer darauf klickt.
 
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinsel: Ändern des Erscheinungsbilds einen Objekts
 
@@ -27,9 +29,9 @@ Anwenden eines Pinsels bei einem Objekt, dessen Darstellung geändert werden sol
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Zeichnen Sie ein sich wiederholendes Bild oder ein Muster für ein Objekt
 
-Zeichnen Sie ein sich wiederholendes Bild oder ein Muster für ein Objekt mithilfe des *Kacheleffekts*.
+Zeichnen Sie ein sich wiederholendes Bild oder ein Muster für ein Objekt mithilfe des *Kacheleffekts* .
 
-Zum Erstellen eines Kacheleffekts erstellen Sie zunächst die Ressourcen *Bildpinsel*, *Zeichenpinsel* oder *visueller Pinsel*.
+Zum Erstellen eines Kacheleffekts erstellen Sie zunächst die Ressourcen *Bildpinsel* , *Zeichenpinsel* oder *visueller Pinsel* .
 
 Erstellen Sie einen Bildpinsel mithilfe eines Bildes. Die folgenden Abbildungen zeigen den Bildpinsel, den Bildpinsel mit Kacheleffekt und den gekippten Bildpinsel.
 
@@ -47,25 +49,25 @@ Erstellen Sie einen visuellen Pinsel aus einem Steuerelement, z. B. einer Schalt
 
 Sie entwerfen die Darstellung und das Verhalten eines Steuerelements einmal und wenden diesen Entwurf auf andere Steuerelemente an, sodass Sie sie nicht einzeln verwalten müssen.
 
-**Sollten Sie einen Stil verwenden?** Wenn Sie nur die Standardeigenschaften (beispielsweise die Farbe einer Schaltfläche) festlegen möchten, verwenden Sie einen *Stil*. Auch wenn Sie einen Stil angewendet haben, können Sie ein Steuerelement ändern.
+**Sollten Sie einen Stil verwenden?** Wenn Sie nur die Standardeigenschaften (beispielsweise die Farbe einer Schaltfläche) festlegen möchten, verwenden Sie einen *Stil* . Auch wenn Sie einen Stil angewendet haben, können Sie ein Steuerelement ändern.
 
-**Sollten Sie eine Vorlage verwenden?** Wenn Sie die Struktur des Steuerelements ändern möchten, verwenden Sie eine *Vorlage*. Stellen Sie sich vor, Grafiken oder Logos in eine Schaltfläche zu konvertieren. Ein Steuerelement kann nicht geändert werden, nachdem Sie eine Vorlage angewendet haben.
+**Sollten Sie eine Vorlage verwenden?** Wenn Sie die Struktur des Steuerelements ändern möchten, verwenden Sie eine *Vorlage* . Stellen Sie sich vor, Grafiken oder Logos in eine Schaltfläche zu konvertieren. Ein Steuerelement kann nicht geändert werden, nachdem Sie eine Vorlage angewendet haben.
 
 ### <a name="create-a-template-or-style"></a>Erstellen einer Vorlage oder eines Stils
 
 Es gibt zwei Möglichkeiten, eine Vorlage zu erstellen. Sie können ein Objekt auf der Zeichenfläche in ein Steuerelement konvertieren oder Sie können Ihre Vorlage auf ein vorhandenes Steuerelement stützen.
 
-Um jedes Objekt in eine Steuerelementvorlage zu konvertieren, wählen Sie das Objekt, und klicken Sie dann auf das Menü **Extras** und wählen Sie **In Steuerelement konvertieren**.
+Um jedes Objekt in eine Steuerelementvorlage zu konvertieren, wählen Sie das Objekt, und klicken Sie dann auf das Menü **Extras** und wählen Sie **In Steuerelement konvertieren** .
 
-Wenn Sie Ihre Vorlage basierend auf einem vorhandenen Steuerelement erstellen möchten, wählen Sie ein Objekt auf der Zeichenfläche. Klicken Sie dann oben auf der Zeichenfläche auf die Breadcrumb-Schaltfläche, wählen Sie dann **Vorlage bearbeiten** und danach **Kopie bearbeiten** oder **Leere erstellen**.
+Wenn Sie Ihre Vorlage basierend auf einem vorhandenen Steuerelement erstellen möchten, wählen Sie ein Objekt auf der Zeichenfläche. Klicken Sie dann oben auf der Zeichenfläche auf die Breadcrumb-Schaltfläche, wählen Sie dann **Vorlage bearbeiten** und danach **Kopie bearbeiten** oder **Leere erstellen** .
 
 ![Menü „Vorlage bearbeiten“](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
 
-Um einen Stil zu erstellen, wählen Sie das Objekt, und wählen Sie dann im Menü **Objekt****Stil bearbeiten** und dann **Eine Kopie bearbeiten** oder **Leer erstellen**.
+Um einen Stil zu erstellen, wählen Sie das Objekt, und wählen Sie dann im Menü **Objekt****Stil bearbeiten** und dann **Eine Kopie bearbeiten** oder **Leer erstellen** .
 
-- Wählen Sie **Kopie bearbeiten**, um mit dem Standardstil oder der Vorlage des Steuerelements zu beginnen.
+- Wählen Sie **Kopie bearbeiten** , um mit dem Standardstil oder der Vorlage des Steuerelements zu beginnen.
 
-- Wählen Sie **Leere erstellen**, um von Grund auf neu zu starten.
+- Wählen Sie **Leere erstellen** , um von Grund auf neu zu starten.
 
 Die Option **aktuelle bearbeiten** wird nur angezeigt, wenn Sie einen Stil oder eine Vorlage bearbeiten, die Sie bereits erstellt haben. Sie erscheint nicht für ein Steuerelement, das immer noch eine Standardvorlage für das System verwendet.
 
@@ -85,7 +87,7 @@ Klicken Sie mit der rechten Maustaste auf ein Objekt im Fenster [Objekte und Zei
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements
 
-Wählen Sie das Steuerelement aus, und suchen Sie im **Eigenschaftenfenster** ** die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** und dann auf **Zurücksetzen** im Kontextmenü.
+Wählen Sie das Steuerelement aus, und suchen Sie im **Eigenschaftenfenster** ** die Eigenschaft **Stil** oder **Vorlage** . Klicken Sie auf **Erweiterte Optionen** und dann auf **Zurücksetzen** im Kontextmenü.
 
 ## <a name="visual-states"></a>Visueller Zustand
 
