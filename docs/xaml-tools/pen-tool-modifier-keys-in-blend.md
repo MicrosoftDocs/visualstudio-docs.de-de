@@ -1,6 +1,8 @@
 ---
 title: Stifttool-Zusatztasten
 titleSuffix: Blend for Visual Studio
+description: Hier finden Sie Informationen zu den modifiziererschlüsseln des Stift Tools in Blend für Visual Studio, die auf Befehle zum Ändern eines Pfads zugreifen, während Sie ihn mit dem Stift Werkzeug erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 104e52619a34f1f2fd5b7aedbac98eafd7fdc189
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328366"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049253"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Stifttool-Zusatztasten in Blend für Visual Studio
 
@@ -24,7 +26,7 @@ In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie ein
 | - |-------------|-------------|
 |Einen Punkt erstellen, um ein gerades Liniensegment zu beginnen|Klicken Sie hier, um den neuen Punkt zu erstellen.|![Einen Punkt erstellen, um ein gerades Liniensegment zu beginnen](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Stiftzeiger|
 |Einen Punkt erstellen, um ein gekrümmtes Liniensegment zu beginnen|Klicken Sie hier, um den neuen Punkt zu erstellen, und ziehen Sie anschließend, um die Tangentensteuerpunkte anzupassen, bevor Sie die Maustaste loslassen.|![Einen Punkt erstellen, um ein gekrümmtes Liniensegment zu beginnen](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Stiftzeiger|
-|Die letzte Tangente mit deaktivierter Abrundungseinschränkung anpassen, sodass Sie spitze Ecken zeichnen können|Klicken Sie, um den neuen Punkt zu erstellen, und drücken Sie anschließend **ALT**, bevor Sie die Maustaste loslassen|![Anpassen der letzten Tangente ohne die Abrundungseinschränkung](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Stiftzeiger zum Anpassen|
+|Die letzte Tangente mit deaktivierter Abrundungseinschränkung anpassen, sodass Sie spitze Ecken zeichnen können|Klicken Sie, um den neuen Punkt zu erstellen, und drücken Sie anschließend **ALT** , bevor Sie die Maustaste loslassen|![Anpassen der letzten Tangente ohne die Abrundungseinschränkung](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Stiftzeiger zum Anpassen|
 |Die letzte Tangente teilen, sodass die Tangentenendpunkte unabhängig voneinander funktionieren, wodurch Sie spitze Ecken zeichnen können|Klicken Sie, um den neuen Punkt zu erstellen, halten Sie anschließend **ALT** gedrückt, und ziehen Sie, bevor Sie die Maustaste loslassen.|![Teilen Sie die letzte Tangente, sodass die Tangentenendpunkte unabhängig voneinander agieren.](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Stiftzeiger zum Anpassen|
 |Den Tangentenendpunkt um den neuen Punkt in Schritten von 15 Grad bewegen|Klicken Sie, um den neuen Punkt zu erstellen, halten Sie **UMSCHALT** + **alt** gedrückt, und ziehen Sie, bevor Sie die Maustaste loslassen.|![Den Tangentenendpunkt um den neuen Punkt in Schritten von 15 Grad bewegen](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Stiftzeiger zum Anpassen|
 |Die Länge der Tangente an einem Endpunkt auf Null reduzieren|Klicken Sie auf den Endpunkt.|![Die Länge der Tangente an einem Endpunkt auf Null reduzieren](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Stiftzeiger zum Anpassen|
@@ -32,8 +34,8 @@ In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie ein
 |Einen Punkt von einem Pfad entfernen|Bewegen Sie den Mauszeiger über einen vorhandenen Punkt, und klicken Sie mit der Maustaste auf diesen.|![Einen Punkt vom Pfad entfernen](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Stiftzeiger zum Löschen|
 |Einen Pfad mit einer spitzen Ecke schließen|Klicken Sie auf den Startpunkt.|![Einen Pfad mit einer spitzen Ecke schließen](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Stiftzeiger zum Schließen|
 |Einen Pfad mit einer glatten Kurve an der Ecke schließen|Klicken Sie auf den Startpunkt und ziehen Sie ihn, um den Tangentenziehpunkt zu ändern, bevor Sie die Maustaste loslassen.|![Einen Pfad mit einer glatten Kurve an der Ecke schließen](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Stiftzeiger zum Schließen|
-|Bei der Verbindung zweier Pfade eine spitze Ecke erstellen|Wählen Sie zwei Pfade aus, klicken Sie auf das Tool **Stift**, klicken Sie auf einen Endpunkt einer der Pfade, und anschließend auf einen Endpunkt des anderen Pfads.|![Bei der Verbindung zweier Pfade eine spitze Ecke erstellen](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Stiftzeiger zum Verbinden|
-|Bei der Verbindung zweier Pfade eine abgerundete Ecke erstellen|Wählen Sie zwei Pfade aus, klicken Sie auf das Tool **Stift**, klicken Sie auf einen Endpunkt einer der Pfade, und ziehen Sie anschließend einen Endpunkt des anderen Pfads|![Bei der Verbindung zweier Pfade eine abgerundete Ecke erstellen](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Stiftzeiger zum Verbinden|
+|Bei der Verbindung zweier Pfade eine spitze Ecke erstellen|Wählen Sie zwei Pfade aus, klicken Sie auf das Tool **Stift** , klicken Sie auf einen Endpunkt einer der Pfade, und anschließend auf einen Endpunkt des anderen Pfads.|![Bei der Verbindung zweier Pfade eine spitze Ecke erstellen](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Stiftzeiger zum Verbinden|
+|Bei der Verbindung zweier Pfade eine abgerundete Ecke erstellen|Wählen Sie zwei Pfade aus, klicken Sie auf das Tool **Stift** , klicken Sie auf einen Endpunkt einer der Pfade, und ziehen Sie anschließend einen Endpunkt des anderen Pfads|![Bei der Verbindung zweier Pfade eine abgerundete Ecke erstellen](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Stiftzeiger zum Verbinden|
 |Erstellt einen neuen Pfad.|Halten Sie **STRG** gedrückt, und klicken Sie außerhalb des vorigen Pfads, damit diesem keine Punkte mehr hinzugefügt werden, und klicken oder ziehen Sie dort, wo der neue Pfad beginnen soll|![Erstellt einen neuen Pfad.](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Stiftzeiger zum Starten|
 
 ## <a name="see-also"></a>Weitere Informationen
