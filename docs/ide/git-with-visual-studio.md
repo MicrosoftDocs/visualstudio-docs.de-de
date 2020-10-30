@@ -152,11 +152,11 @@ Während eines Mergevorgangs können Konflikte auftreten, wenn zwei Entwickler d
 
 Visual Studio erleichtert das Identifizieren und Lösen von Mergekonflikten. Zuerst zeigt das Fenster **Git-Repository** am oberen Rand eine goldene Infoleiste an.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot: Abschnitt Vorschaufeatures des Dialogfelds Optionen in Visual Studio":::
 
 Das Fenster **Git-Änderungen** zeigt auch die Meldung *"Merge wird mit Konflikten ausgeführt."* mit den nicht gemergten Dateien in einem separaten Abschnitt darunter an.
 
-:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
+:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Screenshot: Abschnitt Vorschaufeatures des Dialogfelds Optionen in Visual Studio":::
 
 Wenn keines dieser Fenster geöffnet ist und Sie stattdessen zu der Datei mit Mergekonflikten navigieren, müssen Sie nicht nach dem folgenden Text suchen:
 
@@ -168,7 +168,7 @@ Wenn keines dieser Fenster geöffnet ist und Sie stattdessen zu der Datei mit Me
 
 Stattdessen zeigt Visual Studio oben auf der Seite eine goldene Infoleiste an, die angibt, dass im Zusammenhang mit der geöffneten Datei Konflikte bestehen. Anschließend können Sie auf die Verlinkung klicken, um den **Merge-Editor** zu öffnen.
 
-:::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
+:::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Screenshot: Abschnitt Vorschaufeatures des Dialogfelds Optionen in Visual Studio":::
 
 ### <a name="the-merge-editor"></a>Merge-Editor
 
