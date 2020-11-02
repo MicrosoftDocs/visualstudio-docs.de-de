@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Angeben des zuerst zu erstellenden Ziels | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie anfängliche Ziele oder Standardziele angeben, die in MSBuild-Projektdateien zuerst erstellt werden sollen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: a9ce8f17e70344445f95e8b4742838e40a92fe88
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072527"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436189"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Vorgehensweise: Angeben des zuerst zu erstellenden Ziels
 
@@ -74,7 +76,7 @@ Das `InitialTargets`-Attribut des `Project`-Elements gibt ein Ziel an, das zuers
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Ziele](../msbuild/msbuild-targets.md)

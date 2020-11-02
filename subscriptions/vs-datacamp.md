@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgewählten Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006331"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435889"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 Berechtigte Visual Studio-Abonnements enthalten Abonnements für DataCamp.  Mit DataCamp können Sie über Ihren Browser alle Data Science-Fähigkeiten erwerben, die Sie benötigen. Sie können auswählen, wann Sie lernen und was Sie lernen. Da keine Software installiert werden muss und keine besonderen Hardwareanforderungen vorliegen, ist das Erlernen von Data Science einfacher als je zuvor.
@@ -20,14 +20,14 @@ Berechtigte Visual Studio-Abonnements enthalten Abonnements für DataCamp.  Mit 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2. Suchen Sie in der Kategorie „Professional Development“ (Professionelle Entwicklung) nach der Kachel des DataCamp-Vorteils, und klicken Sie auf **Aktivieren**.
+2. Suchen Sie in der Kategorie „Professional Development“ (Professionelle Entwicklung) nach der Kachel des DataCamp-Vorteils, und klicken Sie auf **Aktivieren** .
    > [!div class="mx-imgBorder"]
-   > ![Kachel „DataCamp-Vorteil“](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![Kachel „DataCamp-Vorteil“](_img/vs-datacamp/vs-datacamp-tile-2.png "Klicken Sie auf „Aktivieren“, um den Vorgang zu starten.")
 
-3. Auf der DataCamp-Seite können Sie ein neues Konto erstellen.  Sie können entweder eine E-Mail-Adresse und ein Kennwort eingeben, um sich anzumelden, oder ein vorhandenes Facebook-, LinkedIn- oder Google-Konto verwenden.  Nachdem Sie Ihre Anmeldeinformationen eingegeben haben, klicken Sie auf **Erste Schritte**.
+3. Auf der DataCamp-Seite können Sie ein neues Konto erstellen.  Sie können entweder eine E-Mail-Adresse und ein Kennwort eingeben, um sich anzumelden, oder ein vorhandenes Facebook-, LinkedIn- oder Google-Konto verwenden.  Nachdem Sie Ihre Anmeldeinformationen eingegeben haben, klicken Sie auf **Erste Schritte** .
 
    > [!NOTE]
-   > Wenn Sie Ihr Konto erstellen, erhalten Sie möglicherweise folgende Fehlermeldung:  „OOPS! Your promo code is invalid or expired.“ („Hoppla! Ihr Angebotscode ist ungültig oder abgelaufen.“)  Dies liegt daran, dass der Angebotscode einige Minuten nach der Erstellung abläuft.  Wenn Sie diese Meldung erhalten, kehren Sie zur Seite [Vorteile](https://my.visualstudio.com/benefits) zurück, und klicken Sie auf der Kachel mit dem DataCamp-Vorteil auf den Link **Aktivieren**.
+   > Wenn Sie Ihr Konto erstellen, erhalten Sie möglicherweise folgende Fehlermeldung:  „OOPS! Your promo code is invalid or expired.“ („Hoppla! Ihr Angebotscode ist ungültig oder abgelaufen.“)  Dies liegt daran, dass der Angebotscode einige Minuten nach der Erstellung abläuft.  Wenn Sie diese Meldung erhalten, kehren Sie zur Seite [Vorteile](https://my.visualstudio.com/benefits) zurück, und klicken Sie auf der Kachel mit dem DataCamp-Vorteil auf den Link **Aktivieren** .
 
 4. Sobald Ihr Konto erstellt wurde, können Sie einen Lernpfad auswählen.  Zu den Optionen gehören:
     - Das Erlernen von R für Data Science
@@ -36,25 +36,25 @@ Berechtigte Visual Studio-Abonnements enthalten Abonnements für DataCamp.  Mit 
 
    Klicken Sie einfach auf den von Ihnen ausgewählten Pfad, um zu beginnen.
    > [!div class="mx-imgBorder"]
-   > ![Auswählen eines Pfads in DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![Auswählen eines Pfads in DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png "Wählen Sie einen Lernpfad aus, für den Sie sich interessieren.")
 
 5. Nachdem Sie Ihren Pfad ausgewählt haben, können Sie Ihren Lernpfad festlegen, indem Sie ein Ziel auswählen.  Wenn Sie beispielsweise den Pfad „Develop your Data Science Skillset“ (Erwerben von Data Science-Fähigkeiten) ausgewählt haben, werden Ihnen folgende Optionen angezeigt. Wählen Sie eine Option aus, oder klicken Sie auf **I am not sure.  Show me all career paths** (Ich bin mir nicht sicher. Alle Karrierepfade anzeigen), um einen umfassenderen Pfad zu erstellen.
    > [!div class="mx-imgBorder"]
-   > ![DataScience-Fähigkeiten in DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![DataScience-Fähigkeiten in DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png "Klicken Sie auf „Ich bin mir nicht sicher.  Alle Karrierepfade anzeigen“, um die gesamte Liste anzuzeigen.")
 
-6. Basierend auf dem Pfad und den Optionen, die Sie ausgewählt haben, wird Ihnen eine Auswahl von Karrierepfaden angezeigt.  Klicken Sie beim Pfad Ihrer Wahl auf **Registrieren**.
+6. Basierend auf dem Pfad und den Optionen, die Sie ausgewählt haben, wird Ihnen eine Auswahl von Karrierepfaden angezeigt.  Klicken Sie beim Pfad Ihrer Wahl auf **Registrieren** .
    > [!div class="mx-imgBorder"]
-   > ![DataCamp-Lernfortschritt](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![DataCamp-Lernfortschritt](_img/vs-datacamp/vs-datacamp-all-tracks.png "Klicken Sie auf die Schaltfläche „Registrieren“ für den ausgewählten Pfad, um fortzufahren.")
 
-7. Sobald Sie sich für Ihren Pfad registriert haben, wird der erste Kurs in diesem Pfad geöffnet.  Ihnen wird ein Tutorial angezeigt, das die Interaktion mit dem Kurs erläutert, einschließlich der Navigation und dem Abschließen der Übungen des Kurses.
+7. Nachdem Sie sich für Ihren Pfad registriert haben, wird der erste Kurs in diesem Pfad geöffnet.  Ihnen wird ein Tutorial angezeigt, das die Interaktion mit dem Kurs erläutert, einschließlich der Navigation und dem Abschließen der Übungen des Kurses.
 
    > [!div class="mx-imgBorder"]
-   > ![Erste Schritte mit DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![Erste Schritte mit DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png "Sehen Sie sich das Tutorial an, um zu erfahren, wie Sie innerhalb der Kurse navigieren.")
 
 Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetzen.  Besuchen Sie [https://www.datacamp.com](https://www.datacamp.com), und melden Sie sich an.  Zunächst wird Ihnen Ihr Dashboard angezeigt, und Sie können Ihr Training dort fortsetzen, wo Sie es angehalten haben. Klicken Sie einfach auf **Continue Track** (Pfad fortsetzen).
 
 > [!div class="mx-imgBorder"]
-> ![Fortsetzen des DataCamp-Trainings](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![Fortsetzen des DataCamp-Trainings](_img/vs-datacamp/vs-datacamp-continue-training.png "Klicken Sie auf „Pfad fortsetzen“, um das Training zu einem späteren Zeitpunkt fortzusetzen.")
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
@@ -68,7 +68,7 @@ Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetz
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-<sup>1</sup> *Enthält:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Enthält:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800241"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467634"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -134,11 +134,11 @@ Um sicherzustellen, dass Sie bei der Verwendung von Visual Studio oder Azure-Die
 | Entwicklercommunity | sendvsfeedback2.azurewebsites.net/api | https/443 | Wird zum Aufrufen von Developer Community Feedback Tool-APIs verwendet (Meine Probleme, Suchen, Abstimmungen, Kommentare, gegebenes Feedback, Uploads, Lebenslauf) |
 | Intellicode | \*.intellicode.vsengsaas.visualstudio.com | https/443 | Wird zum Aufrufen von Intellicode-APIs verwendet |
 | Live Share | \*.liveshare.vsengsaas.visualstudio.com| https/443 | Wird zum Aufrufen von Live Share-APIs verwendet |
-| Visual Studio Codespaces | \*.online.visualstudio.com | https/443 | Wird zum Aufrufen von Visual Studio Codespaces-APIs verwendet |
-| Automatische Typerfassung für JavaScript | registry.npmjs.org | https/443 | Wird verwendet zum Installieren von TypeScript-Typdefinitionen, um IntelliSense für häufig verwendete JavaScript-Bibliotheken zur Verfügung zu stellen |
+| GitHub Codespaces | \*.online.visualstudio.com | https/443 | Wird zum Aufrufen von GitHub-Codespaces-APIs verwendet |
+| Automatische Typerfassung für JavaScript | registry.npmjs.org | https/443 | Wird zum Installieren von TypeScript-Typdefinitionen verwendet, um IntelliSense für häufig verwendete JavaScript-Bibliotheken zur Verfügung zu stellen |
 | Lizenzierungsdienst für Visual Studio-Abonnements | app.vssps.visualstudio.com/apis/<br/>Licensing/ClientRights | https/443 | Lizenzierung für Online-Aktivierung |
 | Debugger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Wird zum Herunterladen von Debuggerbits für das .NET Core-Debuggen unter Unix oder macOS über SSH verwendet <br><br>2. <br>Wird zum Herunterladen von Debuggerbits für das Debuggen von Docker für Windows-Remotecontainer verwendet<br><br> 3. Wird für das Durchlaufen des .NET Framework-Quellcodes verwendet <br><br> 4. <br>(Bei Benutzeranmeldung) Wird für das Herunterladen von Symbolen verwendet, die für NuGet.org-Symbolserver veröffentlicht wurden<br><br> 5. (Bei Benutzeranmeldung) Wird für das Herunterladen von Microsoft-Symbolen und Binärdateien verwendet, und möglicherweise für das Debuggen von verwaltetem Code in Speicherabbildern |
-| Visual Studio Codespaces| \*.online.visualstudio.com | https/443 | Wird zum Aufrufen von Visual Studio Codespaces-APIs verwendet |
+| GitHub Codespaces| \*.online.visualstudio.com | https/443 | Wird zum Aufrufen von GitHub-Codespaces-APIs verwendet |
 | Veröffentlichen von Xamarin Android-Apps | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Wird für die Interaktion mit dem Google Play Store-Dienst zum Veröffentlichen/Hochladen von Xamarin Android-Anwendungen direkt in Visual Studio verwendet |
 | Azure Container Registry | *.azurecr.io | https/443 | Zugriff für auf Azure gehostete Containerregistrierungen für die Konfiguration von CI/CD-Pipelines |
 | | | | |

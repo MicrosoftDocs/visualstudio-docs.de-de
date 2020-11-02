@@ -2,18 +2,18 @@
 title: Neue Git-Funktionen in Visual Studio (Vorschau)
 titleSuffix: ''
 description: Hier erfahren Sie mehr über die neue integrierte Git-Benutzeroberfläche in Visual Studio 2019.
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082056"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334206"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Neue Git-Funktionen in Visual Studio (Vorschau)
 
@@ -98,7 +98,7 @@ Visual Studio erleichtert mithilfe der Verknüpfungen **Commit für alle und Pus
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
 > [!TIP]
-> Wenn Sie eine Verbindung mit dem Azure DevOps-Repository hergestellt haben, können Sie das Azure DevOps-Arbeitselement mit einem Commit mithilfe des Zeichens „#“ zuordnen. Sie können Ihr Azure DevOps-Repository über „Team Explorer > Verbindungen verwalten“ verbinden.
+> Wenn Sie eine Verbindung mit dem Azure DevOps-Repository hergestellt haben, können Sie das Azure DevOps-Arbeitselement mit einem Commit mithilfe des Zeichens „#“ zuordnen. Sie können Ihr Azure DevOps-Repository über **Team Explorer** > **Verbindungen verwalten** verbinden.
 
 ### <a name="select-an-existing-branch"></a>Auswählen eines vorhandenen Branchs
 
@@ -152,11 +152,11 @@ Während eines Mergevorgangs können Konflikte auftreten, wenn zwei Entwickler d
 
 Visual Studio erleichtert das Identifizieren und Lösen von Mergekonflikten. Zuerst zeigt das Fenster **Git-Repository** am oberen Rand eine goldene Infoleiste an.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot: Abschnitt Vorschaufeatures des Dialogfelds Optionen in Visual Studio":::
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
 Das Fenster **Git-Änderungen** zeigt auch die Meldung *"Merge wird mit Konflikten ausgeführt."* mit den nicht gemergten Dateien in einem separaten Abschnitt darunter an.
 
-:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Screenshot: Abschnitt Vorschaufeatures des Dialogfelds Optionen in Visual Studio":::
+:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
 Wenn keines dieser Fenster geöffnet ist und Sie stattdessen zu der Datei mit Mergekonflikten navigieren, müssen Sie nicht nach dem folgenden Text suchen:
 
@@ -168,7 +168,7 @@ Wenn keines dieser Fenster geöffnet ist und Sie stattdessen zu der Datei mit Me
 
 Stattdessen zeigt Visual Studio oben auf der Seite eine goldene Infoleiste an, die angibt, dass im Zusammenhang mit der geöffneten Datei Konflikte bestehen. Anschließend können Sie auf die Verlinkung klicken, um den **Merge-Editor** zu öffnen.
 
-:::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Screenshot: Abschnitt Vorschaufeatures des Dialogfelds Optionen in Visual Studio":::
+:::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 
 ### <a name="the-merge-editor"></a>Merge-Editor
 

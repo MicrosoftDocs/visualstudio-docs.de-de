@@ -1,21 +1,21 @@
 ---
-title: Nachverfolgen von Benutzerzuweisungen und Verarbeiten von Bestellungen| Visual Studio Marketplace
+title: Nachverfolgen der Zuweisungen und Verarbeitung von Aufträgen in Visual Studio-Abonnements | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Verantwortung von Administratoren hinsichtlich des Nachverfolgens von Benutzerzuweisungen und des Verarbeitens von Aufträgen.
-ms.openlocfilehash: bfb45b7beae45a0c90bf0a860c84a5b1b6f5830a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 90de1c426a387cb27fe35990394a41d34c1172ce
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005752"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467413"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Nachverfolgen der Benutzerzuweisungen und der Verarbeitung von Aufträgen
-Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie die Nutzung von Visual Studio und die Verarbeitung von Aufträgen nachverfolgen und darauf achten, ob die Nutzung im Vergleich zu dem Zeitplan angestiegen ist, der in der Volumenlizenzierungsvereinbarung oder der Microsoft Produkt- und Servicevereinbarung festgelegt wurde. Das neue Administrationsportal für Visual Studio-Abonnements hat zur Vereinfachung dieser Aufgabe einen einfachen, hilfreichen Tracker implementiert, der die verfügbaren und bereits verwendeten Lizenzen anzeigt.
+Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie die Nutzung von Visual Studio und die Verarbeitung von Aufträgen nachverfolgen und darauf achten, ob die Nutzung im Vergleich zu dem Zeitplan angestiegen ist, der in der Volumenlizenzierungsvereinbarung oder der Microsoft Produkt- und Servicevereinbarung festgelegt wurde. Das neue Administrationsportal für Visual Studio-Abonnements hat zur Vereinfachung dieser Aufgabe einen einfachen, hilfreichen Tracker implementiert, der die verfügbaren und bereits verwendeten Lizenzen anzeigt.
 
 ## <a name="maximum-usage"></a>Maximale Nutzung
 **Ihr Unternehmen ist dazu verpflichtet, Visual Studio-Abonnements unmittelbar zu erwerben, wenn:**
@@ -25,8 +25,8 @@ Es wird von Administratoren für Visual Studio-Abonnements erwartet, dass sie di
 Die Verpflichtung zum Kauf wird anhand der maximalen Anzahl an Abonnements festgelegt, die Sie Benutzern zuweisen. Diese Ebene der Abonnementzuweisung gilt entweder für die täglichen Zuweisungen an Benutzer oder für die Anzahl der Benutzer, die mit Visual Studio-Software interagieren. Dabei gilt immer der höhere der beiden Werte.
 
 - Das Zuweisen von Visual Studio-Abonnements zu weiteren Benutzern erhöht die maximale Nutzungsebene.  
-- Administratoren für Visual Studio-Abonnements können die zugewiesene Abonnementstufe für eine Einzelperson unter Umständen ändern. Dabei wird die Abonnementstufe des einen Benutzers erhöht und dafür die des anderen herabgestuft. Wenn Sie das Abonnement eines zugewiesenen Abonnenten herabstufen, muss diese Person alle Produkte, die nur im höheren Abonnement enthalten sind, beenden und deinstallieren. 
-- Administratoren für Visual Studio-Abonnements können Abonnements nach 90 Tagen ab der ursprünglichen Zuweisung erneut von einem Benutzer an einen anderen übertragen. 
+- Administratoren von Visual Studio-Abonnements können die zugewiesene Abonnementstufe für eine Einzelperson unter Umständen ändern. Dabei wird die Abonnementstufe des einen Benutzers erhöht und dafür die des anderen herabgestuft. Wenn Sie das Abonnement eines zugewiesenen Abonnenten herabstufen, muss diese Person alle Produkte, die nur im höheren Abonnement enthalten sind, beenden und deinstallieren. 
+- Administratoren von Visual Studio-Abonnements können Abonnements nach 90 Tagen ab der ursprünglichen Zuweisung erneut von einem Benutzer an einen anderen übertragen. 
     > [!NOTE]
     > Dafür müssen sie zunächst das bereits vorhandene Abonnement entfernen und ein neues hinzufügen, um zu vermeiden, dass die maximale Nutzungsebene künstlich in die Höhe getrieben wird. 
 - Der Bericht [Maximale Auslastung](maximum-usage.md) im [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) bietet Unterstützung beim Überwachen der maximalen Auslastung Ihrer Organisation. 
@@ -35,7 +35,7 @@ Die Verpflichtung zum Kauf wird anhand der maximalen Anzahl an Abonnements festg
 Möglicherweise weisen Sie Abonnements monatlich über Programme wie „Open License“ und „Open Value“ oder über den Visual Studio Marketplace zu. Wenn dies der Fall ist, müssen Sie Ihre Bestellung für zusätzliche Benutzer in dem Monat verarbeiten, in dem diese (Mitarbeiter oder externe Vertragspartner) mit der Interaktion mit lizenzierter Visual Studio-Software beginnen.
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Enterprise, MPSA und ausgewählte Vereinbarungen
-Microsoft Enterprise Agreements (EA), MPSA und Select Plus-Verträge bieten Ihnen Flexibilität im Hinblick auf die Verwendung und Lizenzierung von Visual Studio-Software über einen gewissen Zeitraum hinweg. Visual Studio-Administratoren müssen eine jährliche True Up-Bestellung aufgeben, um die Anzahl ihrer Softwarelizenzen entsprechend dem maximalen Nutzungswert aufzustocken, der für die Dauer der Vereinbarung festgelegt wurde.
+Microsoft Enterprise Agreements (EA), MPSA und Select Plus-Verträge bieten Ihnen Flexibilität im Hinblick auf die Verwendung und Lizenzierung von Visual Studio-Software über einen gewissen Zeitraum hinweg. Visual Studio-Administratoren müssen eine jährliche True Up-Bestellung aufgeben, um die Anzahl ihrer Softwarelizenzen entsprechend dem maximalen Nutzungswert aufzustocken, der für die Dauer der Vereinbarung festgelegt wurde.
 
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](/visualstudio/)

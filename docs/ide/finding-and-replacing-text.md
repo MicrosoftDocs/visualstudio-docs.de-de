@@ -1,7 +1,6 @@
 ---
 title: Suchen und Ersetzen von Text sowie Auswählen mehrerer Caretzeichen
-description: Hier erfahren Sie, wie Sie die „Suchen und Ersetzen“-Funktion im Visual Studio-Code-Editor verwenden.
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298571"
+ms.locfileid: "92334193"
 ---
 # <a name="find-and-replace-text"></a>Suchen und Ersetzen von Text
 
@@ -123,9 +122,9 @@ Mit den folgenden Tasten und Aktionen werden unterschiedliche Verhalten für das
 |**STRG-TASTE**+**ALT-TASTE** +Doppelklick|Eine zweite Wortauswahl wird hinzugefügt.|
 |**STRG-TASTE**+**ALT-TASTE** +Klick+Ziehen|Eine zweite Auswahl wird hinzugefügt.|
 |**UMSCHALTTASTE**+**ALT-TASTE**+ **.**|Der nächsten übereinstimmende Text wird als Auswahl hinzugefügt.|
-|**STRG-TASTE**+**UMSCHALTTASTE**+**ALT-TASTE**+ **,**|Alle übereinstimmenden Texte werden als Auswahl hinzugefügt.|
+|**UMSCHALT**+**ALT**+ **;**|Alle übereinstimmenden Texte werden als Auswahl hinzugefügt.|
 |**UMSCHALTTASTE**+**ALT-TASTE**+ **,**|Das letzte Ereignis wird entfernt.|
-|**STRG-TASTE**+**UMSCHALTTASTE**+**ALT-TASTE**+ **.**|Die nächste Übereinstimmung wird übersprungen.|
+|**UMSCHALT**+**ALT**+ **/**|Die nächste Übereinstimmung wird übersprungen.|
 |**ALT-TASTE** +Klick|Eine Feldauswahl wird hinzugefügt.|
 |**ESC-Taste** oder Klick|Die gesamte Auswahl wird aufgehoben.|
 

@@ -1,5 +1,7 @@
 ---
 title: Delete-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Parameter und Überlegungen bei Verwendung der MSBuild-Aufgabe „Delete“ zum Löschen angegebener Dateien.
+ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288909"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796484"
 ---
 # <a name="delete-task"></a>Delete-Aufgabe
 
@@ -31,7 +33,7 @@ Löscht die angegebene Datei.
 
 ## <a name="parameters"></a>Parameter
 
-In der folgenden Tabelle werden die Parameter der `Delete`-Aufgabe beschrieben.
+In der folgenden Tabelle werden die Parameter der `Delete` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|

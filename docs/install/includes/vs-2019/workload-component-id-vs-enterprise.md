@@ -10,12 +10,12 @@ ms.date: 08/05/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 204777b0209b2ca0b1c88717e9908828743087d9
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.openlocfilehash: bd31c04569b373591647cf3601d9afa4e63be882
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805779"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92470762"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio-Kern-Editor (in Visual Studio Enterprise 2019 enthalten)
 
@@ -640,7 +640,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Entwicklungszeit-IIS-Unte
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Beschreibung:** Erstellen Sie skalierbare Netzwerkanwendungen mithilfe von Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Runtime. 
+**Beschreibung:** Erstellen Sie skalierbare Netzwerkanwendungen mithilfe von Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Runtime.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
@@ -888,7 +888,7 @@ Microsoft.Net.Core.Component.SDK.3.0 | .NET Core 3.0-Runtime (nicht mehr unters
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Entwicklungstools mit .NET Core 2.1 | 16.3.29207.166
 Microsoft.NetCore.ComponentGroup.Web.2.1 | Webentwicklungstools mit .NET Core 2.1 | 16.3.29207.166
 Microsoft.VisualStudio.Component.AzureDevOps.OfficeIntegration | Azure DevOps-Integration in Office | 16.0.28625.61
-Microsoft.VisualStudio.Component.Debugger.VSOnline | Debugger für Visual Studio Codespaces | 16.7.30310.162
+Microsoft.VisualStudio.Component.Debugger.VSOnline | Debugger für GitHub-Codespaces | 16.7.30310.162
 Microsoft.VisualStudio.Component.Git | Git für Windows | 16.0.28625.61
 Microsoft.VisualStudio.Component.LinqToSql | LINQ to SQL-Tools | 16.0.28625.61
 Microsoft.VisualStudio.Component.TestTools.CodedUITest | Test der codierten UI | 16.0.28327.66

@@ -1,5 +1,7 @@
 ---
 title: CallTarget-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die MSBuild-Aufgabe „CallTarget“ verwenden, um die angegebenen Ziele in der Projektdatei aufzurufen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094557"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353290"
 ---
 # <a name="calltarget-task"></a>CallTarget-Aufgabe
 
@@ -67,7 +69,7 @@ Bei Verwendung von `CallTarget` wertet MSBuild das aufgerufene Ziel in einem neu
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Ziele](../msbuild/msbuild-targets.md)

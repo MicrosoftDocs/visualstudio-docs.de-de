@@ -1,5 +1,6 @@
 ---
 title: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
+description: Erfahren Sie, wie Sie unterschiedliche MSBuild-Buildkonfigurationen erstellen, um dieselben Quelldateien mit unterschiedlichen Optionen zu erstellen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037594"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436920"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 
@@ -56,7 +57,7 @@ Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt,
 
 ### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest
 
-- Verwenden Sie den Schalter **-property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:
+- Verwenden Sie den Schalter **-property** mit der Eigenschaft und dem Eigenschaftswert. Beispiel:
 
   ```cmd
   msbuild file.proj -property:Flavor=Debug
@@ -70,7 +71,7 @@ Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt,
 
 ### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>So geben Sie mehr als eine Projekteigenschaft in der Befehlszeile an
 
-- Verwenden Sie mehrmals den Schalter **-property** oder **-p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **-property** bzw. **-p** und unterteilen mehrere Eigenschaft mithilfe von Semikolons (;). Zum Beispiel:
+- Verwenden Sie mehrmals den Schalter **-property** oder **-p** mit der Eigenschaft und den Eigenschaftswerten, oder verwenden Sie einen Schalter **-property** bzw. **-p** und unterteilen mehrere Eigenschaft mithilfe von Semikolons (;). Beispiel:
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86
@@ -88,7 +89,7 @@ Nachdem die Projektdatei geschrieben wurde und mehrere Konfigurationen zulässt,
 
   Sie können dieses Verhalten ändern, indem Sie das Attribut `TreatAsLocalProperty` in einem Projekttag verwenden. Der Eigenschaftswert, der auf der Befehlszeile angegeben wurde, hat für Eigenschaftsnamen, die mit diesem Attribut aufgeführt sind, kein Vorrang vor dem Wert in der Projektdatei. Sie finden ein Beispiel weiter unten in diesem Thema.
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
 
 Das folgende Codebeispiel, das Projekt „Hello World“, enthält zwei neue Eigenschaftengruppen, die verwendet werden können, um ein Debugbuild und ein Releasebuild zu erstellen.
 
@@ -156,9 +157,9 @@ msbuild consolehwcs1.proj -p:flavor=retail
 </Project>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
 
-Das folgende Beispiel veranschaulicht, wie das Attribut `TreatAsLocalProperty` verwendet wird. Die Eigenschaft `Color` hat den Wert `Blue` in der Projektdatei und `Green` in der Befehlszeile. Mit `TreatAsLocalProperty="Color"` im Projekttag setzt die Befehlszeileneigenschaft (`Green`) nicht die Eigenschaft außer Kraft, die in der Projektdatei definiert ist (`Blue`).
+Das folgende Beispiel veranschaulicht, wie das `TreatAsLocalProperty`-Attribut verwendet wird. Die Eigenschaft `Color` hat den Wert `Blue` in der Projektdatei und `Green` in der Befehlszeile. Mit `TreatAsLocalProperty="Color"` im Projekttag setzt die Befehlszeileneigenschaft (`Green`) nicht die Eigenschaft außer Kraft, die in der Projektdatei definiert ist (`Blue`).
 
 Geben Sie zum Erstellen des Projekts den folgenden Befehl ein:
 
@@ -188,7 +189,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild](../msbuild/msbuild.md)
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

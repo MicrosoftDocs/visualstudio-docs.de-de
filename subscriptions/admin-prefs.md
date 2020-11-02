@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Einstellungen u. a. für Sprachen, Kontakte und die Abonnementebene im Verwaltungsportal festlegen.
-ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022609"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467439"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Festlegen der Vertragseinstellungen im Verwaltungsportal
-Superadministratoren können bestimmte Einstellungen im Verwaltungsportal festlegen, die global auf alle Verträge angewendet werden.  Diese Einstellungen füllen automatisch die Abonnementdaten für Ihre Administratoren aus, wenn diese Abonnenten hinzufügen, und können nur von Superadministratoren global geändert werden.  
+Superadministratoren können bestimmte Einstellungen im Verwaltungsportal festlegen, die global auf alle Verträge angewendet werden.  Diese Einstellungen füllen automatisch die Abonnementdaten für Ihre Administratoren aus, wenn diese Abonnenten hinzufügen, und können ausschließlich von Superadministratoren global geändert werden.  
 
 ## <a name="access-preferences"></a>Zugriffseinstellungen
 Wenn Sie sich die Einstellungen anzeigen lassen oder diese ändern möchten, müssen Sie beim [Verwaltungsportal](https://manage.visualstudio.com) mit einer ID angemeldet sein, der Superadministratorberechtigungen entsprechend dem Vertrag zugewiesen sind.  
@@ -60,8 +60,8 @@ Wenn Sie diese Einstellung aktivieren (was der Standardeinstellung entspricht), 
 
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>Frage:  Kann ich die Einstellung **Contact email address** (E-Mail-Adresse des Kontakts) deaktivieren, damit Abonnenten keine Administratoren kontaktieren können?
-Antwort:  Nein. Sie können zwar mit einer Sicherheitsgruppe, einem E-Mail-Alias für eine Gruppe oder mit einer einzelnen E-Mail-Adresse festlegen, welche Administratoren kontaktiert werden. Das Feature können Sie jedoch nicht deaktivieren.
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>Frage:  Kann ich die Einstellung **Contact email address** (E-Mail-Adresse des Kontakts) deaktivieren, damit Abonnenten keine Administratoren kontaktieren können?
+Antwort:  Nein. Sie können zwar mit einer Sicherheitsgruppe, einem E-Mail-Alias für eine Gruppe oder mit einer einzelnen E-Mail-Adresse festlegen, welche Administratoren kontaktiert werden, das Feature können Sie jedoch nicht deaktivieren.
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>Frage: Können Abonnenten, deren E-Mail ich beantworte, meine E-Mail-Adresse sehen?
 Antwort:  Da Ihre Antwort von einem bestimmten E-Mail-Client gesendet wird, wird dem Abonnenten auch Ihre verwendete E-Mail-Adresse in der Antwort angezeigt.  Wenn Sie für Ihre Antwort einen Gruppenalias nutzen, wird den Abonnenten dieser angezeigt.  Wenn Sie Ihre eigene E-Mail-Adresse für die Antwort verwenden, wird diese Adresse angezeigt.  

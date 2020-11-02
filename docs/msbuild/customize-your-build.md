@@ -1,5 +1,7 @@
 ---
 title: Anpassen Ihres Builds | Microsoft-Dokumentation
+description: Erfahren Sie mehr über verschiedene Erweiterungsmöglichkeiten, mit denen Sie MSBuild-Projekte anpassen können, die den Standardbuildprozess verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 708b6bc57b53ab2c52f9e8fda51db5b5c60225f3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288935"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796523"
 ---
 # <a name="customize-your-build"></a>Anpassen Ihres Builds
 
@@ -24,13 +26,13 @@ MSBuild-Projekte, die den Standardbuildprozess verwenden und *Microsoft.Common.p
 
 ## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Hinzufügen von Argumenten zu MSBuild-Aufrufen Ihres Projekts über die Befehlszeile
 
-Es wird eine *Directory.Build.rsp*-Datei innerhalb oder oberhalb des Quellverzeichnisses auf die Builds des Projekts über die Befehlszeile angewendet. Weitere Einzelheiten finden Sie unter [MSBuild-Antwortdateien](../msbuild/msbuild-response-files.md#directorybuildrsp).
+Es wird eine *Directory.Build.rsp* -Datei innerhalb oder oberhalb des Quellverzeichnisses auf die Builds des Projekts über die Befehlszeile angewendet. Weitere Einzelheiten finden Sie unter [MSBuild-Antwortdateien](../msbuild/msbuild-response-files.md#directorybuildrsp).
 
 ## <a name="directorybuildprops-and-directorybuildtargets"></a>„Directory.Build.props“ und „Directory.Build.targets“
 
-Wenn Sie vor Version 15 von MSBuild eine neue benutzerdefinierte Eigenschaft für Projekte in Ihrer Projektmappe bereitstellen wollten, mussten Sie zu jeder Projektdatei in der Projektmappe manuell einen Verweis auf diese Eigenschaft hinzufügen. Alternativ dazu konnten Sie unter anderem die Eigenschaft in einer *PROPS*-Datei definieren und diese dann explizit in jedes Projekt der Projektmappe importieren.
+Wenn Sie vor Version 15 von MSBuild eine neue benutzerdefinierte Eigenschaft für Projekte in Ihrer Projektmappe bereitstellen wollten, mussten Sie zu jeder Projektdatei in der Projektmappe manuell einen Verweis auf diese Eigenschaft hinzufügen. Alternativ dazu konnten Sie unter anderem die Eigenschaft in einer *PROPS* -Datei definieren und diese dann explizit in jedes Projekt der Projektmappe importieren.
 
-Jetzt hingegen können Sie in einem Schritt jedem Projekt eine neue Eigenschaft hinzufügen, indem Sie sie in einer einzigen Datei mit dem Namen *Directory.Build.props* im Stammverzeichnis der Quelle definieren. Beim Ausführen von MSBuild durchsucht *Microsoft.Common.props* die Verzeichnisstruktur nach der Datei *Directory.Build.props* (und *Microsoft.Common.targets* sucht nach *Directory.Build.targets*). Wenn eine Datei gefunden wird, wird die Eigenschaft importiert. Bei *Directory.Build.props* handelt es sich um eine benutzerdefinierte Datei, die Anpassungen für Projekte in einem Verzeichnis bereitstellt.
+Jetzt hingegen können Sie in einem Schritt jedem Projekt eine neue Eigenschaft hinzufügen, indem Sie sie in einer einzigen Datei mit dem Namen *Directory.Build.props* im Stammverzeichnis der Quelle definieren. Beim Ausführen von MSBuild durchsucht *Microsoft.Common.props* die Verzeichnisstruktur nach der Datei *Directory.Build.props* (und *Microsoft.Common.targets* sucht nach *Directory.Build.targets* ). Wenn eine Datei gefunden wird, wird die Eigenschaft importiert. Bei *Directory.Build.props* handelt es sich um eine benutzerdefinierte Datei, die Anpassungen für Projekte in einem Verzeichnis bereitstellt.
 
 > [!NOTE]
 > Bei Linux-basierten Dateisystemen wird zwischen Groß- und Kleinschreibung unterschieden. Stellen Sie sicher, dass die Schreibweise des Dateinamens „Directory.Build.props“ genau übereinstimmt, sonst wird die Datei während des Buildvorgangs nicht erkannt.
@@ -41,7 +43,7 @@ Jetzt hingegen können Sie in einem Schritt jedem Projekt eine neue Eigenschaft 
 
 Wenn Sie beispielsweise für alle Ihre Projekte den Zugriff auf die neue Roslyn-Funktion **/deterministic** (die im `CoreCompile`-Ziel von Roslyn durch die Eigenschaft `$(Deterministic)` verfügbar gemacht wird) aktivieren möchten, können Sie wie folgt vorgehen.
 
-1. Erstellen Sie im Stammverzeichnis Ihres Repositorys eine neue Datei mit dem Namen *Directory.Build.props*.
+1. Erstellen Sie im Stammverzeichnis Ihres Repositorys eine neue Datei mit dem Namen *Directory.Build.props* .
 2. Fügen Sie der Datei das folgende XML hinzu.
 
    ```xml
@@ -75,7 +77,7 @@ Der Speicherort der Projektmappendatei ist für *Directory.Build.props* ohne Bed
 
 Eigenschaften, die in *Directory.Build.props* festgelegt werden, können an anderer Stelle in der Projektdatei oder in importierten Dateien überschrieben werden, daher sollten Sie sich die Einstellungen in *Directory.Build.props* als Angabe der Standardeinstellungen für Ihre Projekte vorstellen.
 
-*Directory.Build.targets* wird aus *Microsoft.Common.targets* importiert, nachdem *TARGETS*-Dateien aus NuGet-Paketen importiert wurden. Die Datei kann also Eigenschaften und Ziele, die in den meisten Buildlogiken definiert sind, außer Kraft setzen oder Eigenschaften für alle Ihre Projekte festlegen, und zwar unabhängig davon, was die einzelnen Projekte festlegen.
+*Directory.Build.targets* wird aus *Microsoft.Common.targets* importiert, nachdem *TARGETS* -Dateien aus NuGet-Paketen importiert wurden. Die Datei kann also Eigenschaften und Ziele, die in den meisten Buildlogiken definiert sind, außer Kraft setzen oder Eigenschaften für alle Ihre Projekte festlegen, und zwar unabhängig davon, was die einzelnen Projekte festlegen.
 
 Wenn Sie eine Eigenschaft festlegen oder ein Ziel für ein einzelnes Projekt definieren müssen, das alle vorherigen Einstellungen überschreibt, platzieren Sie diese Logik nach dem letzten Import in der Projektdatei. In einem SDK-Projekt müssen Sie dazu müssen zuerst das Attribut im SDK-Stil durch die entsprechenden Importe ersetzen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von MSBuild-Projekt-SDKs](how-to-use-project-sdk.md).
 
@@ -100,30 +102,30 @@ Für diesen Anwendungsfall wird beispielhaft davon ausgegangen, dass Sie die fol
     \Project2Tests
 ```
 
-Es kann sinnvoll sein, gemeinsame Eigenschaften für alle Projekte *(1)* , für *src*-Projekte *(2-src)* und für *test*-Projekte *(2-test)* zu verwenden.
+Es kann sinnvoll sein, gemeinsame Eigenschaften für alle Projekte *(1)* , für *src* -Projekte *(2-src)* und für *test* -Projekte *(2-test)* zu verwenden.
 
-Damit MSBuild die „inneren“ Dateien (*2-src* und *2-test*) mit der „äußeren“ Datei (*1*) korrekt zusammenführen kann, müssen Sie berücksichtigen, dass MSBuild nach der ersten gefundenen Datei *Directory.Build.props* den Suchvorgang abbricht. Zum Fortsetzen des Suchvorgangs und des Zusammenführens in der äußeren Datei ist es erforderlich, diesen Code in beide inneren Dateien einzufügen:
+Damit MSBuild die „inneren“ Dateien ( *2-src* und *2-test* ) mit der „äußeren“ Datei ( *1* ) korrekt zusammenführen kann, müssen Sie berücksichtigen, dass MSBuild nach der ersten gefundenen Datei *Directory.Build.props* den Suchvorgang abbricht. Zum Fortsetzen des Suchvorgangs und des Zusammenführens in der äußeren Datei ist es erforderlich, diesen Code in beide inneren Dateien einzufügen:
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
 Der allgemeine Ansatz von MSBuild lässt sich folgendermaßen zusammenfassen:
 
-- MSBuild sucht die erste Datei *Directory.Build.props*, die in der Projektmappenstruktur oberhalb der aktuellen Datei gefunden wird, führt diese mit den Standardeinstellungen zusammen und beendet anschließend den Suchvorgang.
+- MSBuild sucht die erste Datei *Directory.Build.props* , die in der Projektmappenstruktur oberhalb der aktuellen Datei gefunden wird, führt diese mit den Standardeinstellungen zusammen und beendet anschließend den Suchvorgang.
 - Wenn mehrere Ebenen gefunden und zusammengeführt werden sollen, importieren Sie wie oben gezeigt mit [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove) die äußere Datei aus der inneren.
 - Wenn die äußere Datei nicht ebenfalls Dateien importiert, die sich in der Projektstruktur oberhalb der äußeren Datei befinden, wird der Suchvorgang an dieser Stelle beendet.
 - Verwenden Sie zum Konfigurieren des Such- und Zusammenführungsprozesses `$(DirectoryBuildPropsPath)` und `$(ImportDirectoryBuildProps)`.
 
-Oder in einem Satz ausgedrückt: MSBuild beendet den Suchvorgang, sobald eine *Directory.Build.props*-Datei gefunden wurde, durch die keine weiteren Dateien importiert werden.
+Oder in einem Satz ausgedrückt: MSBuild beendet den Suchvorgang, sobald eine *Directory.Build.props* -Datei gefunden wurde, durch die keine weiteren Dateien importiert werden.
 
 ### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>Wählen zwischen dem Hinzufügen von Eigenschaften zu einer PROPS- oder TARGETS-Datei
 
 MSBuild ist von der Importreihenfolge abhängig, sodass die letzte Definition einer Eigenschaft (oder von `UsingTask` oder eines Ziels) die verwendete Definition ist.
 
-Wenn Sie explizite Importe verwenden, können Sie Daten jederzeit aus einer *PROPS*- oder *TARGETS*-Datei importieren. Hier ist die weit verbreitete Konvention:
+Wenn Sie explizite Importe verwenden, können Sie Daten jederzeit aus einer *PROPS* - oder *TARGETS* -Datei importieren. Hier ist die weit verbreitete Konvention:
 
-- *PROPS*-Dateien werden zu einem frühen Zeitpunkt in der Importreihenfolge importiert.
+- *PROPS* -Dateien werden zu einem frühen Zeitpunkt in der Importreihenfolge importiert.
 
-- *TARGETS*-Dateien werden später in der Buildreihenfolge importiert.
+- *TARGETS* -Dateien werden später in der Buildreihenfolge importiert.
 
 Diese Konvention wird durch `<Project Sdk="SdkName">`-Importe erzwungen (d.h. der Import von *Sdk.props* erfolgt zuerst vor dem gesamten Inhalt der Datei. *Sdk.targets* kommt zuletzt nach dem gesamten Inhalt der Datei).
 
@@ -131,17 +133,17 @@ Befolgen Sie bei der Entscheidung, wo Sie die Eigenschaften platzieren möchten,
 
 - Bei vielen Eigenschaften spielt es keine Rolle, wo sie definiert werden, da sie nicht überschrieben und nur zur Ausführungszeit gelesen werden.
 
-- Für Verhalten, die in einem einzelnen Projekt angepasst werden können, legen Sie in *PROPS*-Dateien Standardwerte fest.
+- Für Verhalten, die in einem einzelnen Projekt angepasst werden können, legen Sie in *PROPS* -Dateien Standardwerte fest.
 
-- Vermeiden Sie es, abhängige Eigenschaften in *PROPS*-Dateien festzulegen, indem Sie den Wert einer möglicherweise angepassten Eigenschaft lesen, da die Anpassung erst erfolgt, wenn MSBuild das Projekt des Benutzers liest.
+- Vermeiden Sie es, abhängige Eigenschaften in *PROPS* -Dateien festzulegen, indem Sie den Wert einer möglicherweise angepassten Eigenschaft lesen, da die Anpassung erst erfolgt, wenn MSBuild das Projekt des Benutzers liest.
 
-- Legen Sie abhängige Eigenschaften in *TARGETS*-Dateien fest, da bei ihnen Anpassungen aus einzelnen Projekten übernommen werden.
+- Legen Sie abhängige Eigenschaften in *TARGETS* -Dateien fest, da bei ihnen Anpassungen aus einzelnen Projekten übernommen werden.
 
-- Wenn Sie Eigenschaften überschreiben müssen, tun Sie dies in einer *TARGETS*-Datei, nachdem alle Anpassungen am Benutzerprojekt wirksam werden konnten. Seien Sie vorsichtig bei der Verwendung abgeleiteter Eigenschaften, da diese möglicherweise ebenfalls überschrieben werden müssen.
+- Wenn Sie Eigenschaften überschreiben müssen, tun Sie dies in einer *TARGETS* -Datei, nachdem alle Anpassungen am Benutzerprojekt wirksam werden konnten. Seien Sie vorsichtig bei der Verwendung abgeleiteter Eigenschaften, da diese möglicherweise ebenfalls überschrieben werden müssen.
 
-- Fügen Sie Elemente in *PROPS*-Dateien (abhängig von einer Eigenschaft) ein. Alle Eigenschaften werden vor jedem Element berücksichtigt. Deshalb werden Anpassungen der Eigenschaften des Benutzerprojekts übernommen. Dies gibt dem Projekt des Benutzers die Möglichkeit, die Vorgänge `Remove` oder `Update` auf jedes durch den Import eingeführte Element anzuwenden.
+- Fügen Sie Elemente in *PROPS* -Dateien (abhängig von einer Eigenschaft) ein. Alle Eigenschaften werden vor jedem Element berücksichtigt. Deshalb werden Anpassungen der Eigenschaften des Benutzerprojekts übernommen. Dies gibt dem Projekt des Benutzers die Möglichkeit, die Vorgänge `Remove` oder `Update` auf jedes durch den Import eingeführte Element anzuwenden.
 
-- Definieren Sie Ziele in *TARGETS*-Dateien. Wenn die *TARGETS*-Datei jedoch durch ein SDK importiert wird, denken Sie daran, dass dieses Szenario das Überschreiben des Ziels erschwert, da das Projekt des Benutzers standardmäßig keine Möglichkeit hat, es zu überschreiben.
+- Definieren Sie Ziele in *TARGETS* -Dateien. Wenn die *TARGETS* -Datei jedoch durch ein SDK importiert wird, denken Sie daran, dass dieses Szenario das Überschreiben des Ziels erschwert, da das Projekt des Benutzers standardmäßig keine Möglichkeit hat, es zu überschreiben.
 
 - Bevorzugen Sie nach Möglichkeit die Anpassung von Eigenschaften zur Evaluierungszeit gegenüber der Änderung von Eigenschaften innerhalb eines Ziels. Diese Leitlinie erleichtert das Laden eines Projekts und das Verstehen seiner Aktivitäten.
 
@@ -149,7 +151,7 @@ Befolgen Sie bei der Entscheidung, wo Sie die Eigenschaften platzieren möchten,
 
 Standardmäßig importiert *Microsoft.Common.props*`$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`, und *Microsoft.Common.targets* importiert `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Der Standardwert von `MSBuildProjectExtensionsPath` ist `$(BaseIntermediateOutputPath)`, `obj/`. NuGet verwendet diesen Mechanismus, um einen Verweis auf die mit Paketen bereitgestellte Buildlogik herzustellen. D.h., NuGet erstellt während der Wiederherstellung `{project}.nuget.g.props`-Dateien, die auf die Paketinhalte verweisen.
 
-Sie können diesen Erweiterbarkeitsmechanismus deaktivieren, indem Sie die Eigenschaft `ImportProjectExtensionProps` in einer *Directory.Build.props*-Datei oder vor dem Import von *Microsoft.Common.props* auf `false` festlegen.
+Sie können diesen Erweiterbarkeitsmechanismus deaktivieren, indem Sie die Eigenschaft `ImportProjectExtensionProps` in einer *Directory.Build.props* -Datei oder vor dem Import von *Microsoft.Common.props* auf `false` festlegen.
 
 > [!NOTE]
 > Wenn Sie MSBuildProjectExtensionsPath-Importe deaktivieren, wird die Buildlogik, die in NuGet-Paketen enthalten ist, nicht auf Ihr Projekt angewendet. Für einige NuGet-Pakete ist es erforderlich, dass die Buildlogik ausgeführt wird. Sie werden daher unnötig gerendert, wenn diese Option deaktiviert ist.
@@ -177,7 +179,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 
 danach. Dank dieser Konvention können installierte SDKs die Buildlogik häufig verwendeter Projekttypen erweitern.
 
-In `$(MSBuildUserExtensionsPath)` wird nach der gleichen Verzeichnisstruktur (je nach Benutzerordner *%LOCALAPPDATA%\Microsoft\MSBuild*) gesucht. Dateien, die in diesem Ordner platziert werden, werden für alle Builds des jeweiligen Projekttyps importiert, die mit den Anmeldeinformationen des Benutzers ausgeführt werden. Sie können die Benutzererweiterungen deaktivieren, indem Sie die Eigenschaften festlegen, die nach der Importdatei im Muster `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` benannt werden. Wenn Sie beispielsweise `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` auf `false` festlegen, wird `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*` nicht importiert.
+In `$(MSBuildUserExtensionsPath)` wird nach der gleichen Verzeichnisstruktur (je nach Benutzerordner *%LOCALAPPDATA%\Microsoft\MSBuild* ) gesucht. Dateien, die in diesem Ordner platziert werden, werden für alle Builds des jeweiligen Projekttyps importiert, die mit den Anmeldeinformationen des Benutzers ausgeführt werden. Sie können die Benutzererweiterungen deaktivieren, indem Sie die Eigenschaften festlegen, die nach der Importdatei im Muster `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` benannt werden. Wenn Sie beispielsweise `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` auf `false` festlegen, wird `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*` nicht importiert.
 
 ## <a name="customize-the-solution-build"></a>Anpassen des Projektmappenbuilds
 
@@ -219,7 +221,7 @@ Sie können die Speicherorte dieser Dateien mithilfe der folgenden MSBuild-Eigen
 - CustomAfterMicrosoftCSharpTargets
 - CustomAfterMicrosoftVisualBasicTargets
 
-Die *Common*-Versionen dieser Eigenschaften wirken sich sowohl auf C#- als auch auf Visual Basic-Projekte aus. Sie können diese Eigenschaften über die MSBuild-Befehlszeile festlegen.
+Die *Common* -Versionen dieser Eigenschaften wirken sich sowohl auf C#- als auch auf Visual Basic-Projekte aus. Sie können diese Eigenschaften über die MSBuild-Befehlszeile festlegen.
 
 ```cmd
 msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
@@ -234,9 +236,9 @@ Wenn Sie über einen dedizierten Buildserver verfügen und sicherstellen möchte
 
 ## <a name="customize-c-builds"></a>Anpassen von C++-Builds
 
-Für C++-Projekte können die zuvor erwähnten benutzerdefinierten *TARGETS*- und *PROPS*-Dateien nicht auf dieselbe Weise verwendet werden, um Standardeinstellungen zu überschreiben. *Directory.Build.props* wird von *Microsoft.Common.props* importiert. Diese Datei wird in `Microsoft.Cpp.Default.props` importiert, während die meisten Standardeinstellungen in *Microsoft.Cpp.props* definiert werden und für eine Reihe von Eigenschaften eine „wenn noch nicht definiert“-Bedingung nicht verwendet werden kann, da die Eigenschaft bereits definiert ist, aber der Standardwert für bestimmte Projekteigenschaften, die in `PropertyGroup` mit `Label="Configuration"` definiert sind, anders sein muss (siehe [VCXPROJ- und PROPS-Dateistruktur](/cpp/build/reference/vcxproj-file-structure)).
+Für C++-Projekte können die zuvor erwähnten benutzerdefinierten *TARGETS* - und *PROPS* -Dateien nicht auf dieselbe Weise verwendet werden, um Standardeinstellungen zu überschreiben. *Directory.Build.props* wird von *Microsoft.Common.props* importiert. Diese Datei wird in `Microsoft.Cpp.Default.props` importiert, während die meisten Standardeinstellungen in *Microsoft.Cpp.props* definiert werden und für eine Reihe von Eigenschaften eine „wenn noch nicht definiert“-Bedingung nicht verwendet werden kann, da die Eigenschaft bereits definiert ist, aber der Standardwert für bestimmte Projekteigenschaften, die in `PropertyGroup` mit `Label="Configuration"` definiert sind, anders sein muss (siehe [VCXPROJ- und PROPS-Dateistruktur](/cpp/build/reference/vcxproj-file-structure)).
 
-Sie können jedoch die folgenden Eigenschaften verwenden, um mindestens eine *PROPS*-Datei anzugeben, die vor/nach *Microsoft.Cpp\** -Dateien automatisch importiert werden soll:
+Sie können jedoch die folgenden Eigenschaften verwenden, um mindestens eine *PROPS* -Datei anzugeben, die vor/nach *Microsoft.Cpp\** -Dateien automatisch importiert werden soll:
 
 - ForceImportAfterCppDefaultProps
 - ForceImportBeforeCppProps
@@ -244,7 +246,7 @@ Sie können jedoch die folgenden Eigenschaften verwenden, um mindestens eine *PR
 - ForceImportBeforeCppTargets
 - ForceImportAfterCppTargets
 
-Wenn Sie die Standardwerte der Eigenschaften für alle C++-Builds anpassen möchten, erstellen Sie eine weitere *PROPS*-Datei (z. B. *MyProps.props*), und definieren Sie die `ForceImportAfterCppProps`-Eigenschaft in `Directory.Build.props`, die darauf verweist:
+Wenn Sie die Standardwerte der Eigenschaften für alle C++-Builds anpassen möchten, erstellen Sie eine weitere *PROPS* -Datei (z. B. *MyProps.props* ), und definieren Sie die `ForceImportAfterCppProps`-Eigenschaft in `Directory.Build.props`, die darauf verweist:
 
 <PropertyGroup> <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
 </PropertyGroup>
@@ -255,7 +257,7 @@ Wenn Sie die Standardwerte der Eigenschaften für alle C++-Builds anpassen möch
 
 Das Anpassen der Visual Studio-Installation wird nicht empfohlen, da es nicht einfach ist, solche Anpassungen nachzuverfolgen. Wenn Sie Visual Studio jedoch erweitern, um C++-Builds für eine bestimmte Plattform anzupassen, können Sie `.targets`-Dateien für jede Plattform erstellen und sie als Teil einer Visual Studio-Erweiterung in den entsprechenden Importordnern für diese Plattformen speichern.
 
-Die `.targets`-Datei für die Win32-Plattform, *Microsoft.Cpp.Win32.targets*, enthält das folgende `Import`-Element:
+Die `.targets`-Datei für die Win32-Plattform, *Microsoft.Cpp.Win32.targets* , enthält das folgende `Import`-Element:
 
 ```xml
 <Import Project="$(VCTargetsPath)\Platforms\Win32\ImportBefore\*.targets"

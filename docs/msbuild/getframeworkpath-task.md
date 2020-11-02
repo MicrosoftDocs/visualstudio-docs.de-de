@@ -1,5 +1,7 @@
 ---
 title: GetFrameworkPath-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die MSBuild-Aufgabe „GetFrameworkPath“ verwenden, um den Pfad zu den .NET Framework-Assemblys abzurufen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634005"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436842"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath-Aufgabe
 
@@ -65,7 +67,7 @@ Im folgenden Beispiel wird mit dem Task `GetFrameworkPath` der Pfad zu .NET Fram
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

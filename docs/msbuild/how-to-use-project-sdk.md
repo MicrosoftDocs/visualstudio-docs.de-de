@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Verweis auf MSBuild-Projekt-SDK | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie MSBuild-Projekt-SDKs nutzen, um die Verwendung von Software Development Kits zu vereinfachen, für die Eigenschaften und Ziele importiert werden müssen.
+ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: bddf5e46fe066a79beb64570d6bf6ec1fedda68c
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136835"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436117"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Vorgehensweise: Verwenden von MSBuild-Projekt SDKs
 

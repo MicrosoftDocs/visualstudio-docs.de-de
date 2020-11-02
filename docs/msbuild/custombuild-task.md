@@ -1,5 +1,7 @@
 ---
 title: CustomBuild-Aufgabe | Microsoft-Dokumentation
+description: In diesem Artikel wird die MSBuild-Aufgabe „CustomBuild“ beschrieben, die von MSBuild verwendet wird, um die Anpassung des C++-Buildprozesses zu unterstützen.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 640c1e6ae286b45f8700709829140093452a9491
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595344"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796549"
 ---
 # <a name="custombuild-task"></a>CustomBuild-Aufgabe
 
@@ -34,9 +36,9 @@ In der folgenden Tabelle werden die Parameter der **CustomBuild-Aufgabe** beschr
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|**BuildSuffix**|Optionaler **string**-Parameter|
+|**BuildSuffix**|Optionaler **string** -Parameter|
 |**Sources**|Erforderlicher **ITaskItem[]** -Parameter.|
-|**TrackerLogDirectory**|Optionaler **string**-Parameter|
+|**TrackerLogDirectory**|Optionaler **string** -Parameter|
 
 ## <a name="see-also"></a>Weitere Informationen
 

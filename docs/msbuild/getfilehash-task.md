@@ -1,5 +1,7 @@
 ---
 title: GetFileHash-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die MSBuild-Aufgabe „GetFileHash“ verwenden, um Prüfsummen der Inhalte einer oder mehrerer Dateien zu berechnen.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e9e6e30cf8a224bfdfbde2c728545092bd1494b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578651"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436855"
 ---
 # <a name="getfilehash-task"></a>GetFileHash-Aufgabe
 
@@ -30,7 +32,7 @@ Diese Aufgabe wurde in Version 15.8 hinzugefügt, für die Verwendung für MSBui
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
- In der folgenden Tabelle werden die Parameter der `GetFileHash`-Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `GetFileHash` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -65,6 +67,6 @@ Im folgenden Beispiel wird die Aufgabe `GetFileHash` verwendet, um die Prüfsumm
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

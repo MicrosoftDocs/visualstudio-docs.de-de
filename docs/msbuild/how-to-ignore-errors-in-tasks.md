@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Ignorieren von Fehlern in Aufgaben | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie Fehler in MSBuild-Aufgaben ignorieren und steuern, ob ein Build bei einem Fehler in einer Aufgabe angehalten oder fortgesetzt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 97a2666b32ad7e6bc93865fa36529377652b6453
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633823"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436255"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Vorgehensweise: Ignorieren von Fehlern in Aufgaben
 
@@ -26,9 +28,9 @@ Das Attribut `ContinueOnError` des Elements `Task` steuert, ob ein Build beendet
 
 Das Attribut `ContinueOnError` kann einen oder mehrere der folgenden Werte enthalten:
 
-- **WarnAndContinue** oder **TRUE**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.
+- **WarnAndContinue** oder **TRUE** . Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.
 
-- **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.
+- **ErrorAndContinue** . Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.
 
 - **ErrorAndStop** oder **FALSE** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.
 
@@ -38,7 +40,7 @@ Der Standardwert von `ContinueOnError` ist `ErrorAndStop`. Wenn Sie das Attribut
 
 #### <a name="to-ignore-an-error-in-a-task"></a>So ignorieren Sie Fehler in einer Aufgabe
 
-Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Beispiel:
+Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Zum Beispiel:
 
 ```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
@@ -68,4 +70,4 @@ Im folgenden Codebeispiel wird veranschaulicht, dass das `Build`-Ziel weiter aus
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)

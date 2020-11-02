@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: Informationen für Cloudlösungsanbieter zum Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden.
-ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 632e407aa4455b7c2a87299cc8811bc996c8d5b6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006227"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353264"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kaufen und Verwalten von Visual Studio-Cloudabonnements für Ihre Kunden
 Partner im [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)-Programm (CSP) können Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements für ihre Kunden kaufen.
@@ -33,13 +33,13 @@ Jeder Benutzer mit [Zugriffsrechten als Eigentümer oder Mitwirkender](https://n
 ## <a name="how-to-buy"></a>Informationen zum Kauf
 
 1. Melden Sie sich im [Microsoft Partner Center](https://partnercenter.microsoft.com) an.
-0. Klicken Sie auf **Kunden**, und wählen Sie einen Kunden aus, für den Sie einen Kauf durchführen möchten.
-0. Klicken Sie auf **Dienstverwaltung**.
-0. Klicken Sie auf **Visual Studio Marketplace**.
+0. Klicken Sie auf **Kunden** , und wählen Sie einen Kunden aus, für den Sie einen Kauf durchführen möchten.
+0. Klicken Sie auf **Dienstverwaltung** .
+0. Klicken Sie auf **Visual Studio Marketplace** .
 0. Versichern Sie sich, dass der Name des Kunden in der oberen rechten Ecke angezeigt wird.
-0. Klicken Sie auf **Abonnements**.
+0. Klicken Sie auf **Abonnements** .
 0. Wählen Sie „Enterprise“ oder „Professional“ für Visual Studio aus.
-0. Klicken Sie auf **Kaufen**.
+0. Klicken Sie auf **Kaufen** .
 0. Wählen Sie das Azure-Abonnement aus, dem der Kauf in Rechnung gestellt wird.
 0. Geben Sie die Anzahl von Benutzern ein, die Ihr Kunde benötigt.
 0. Überprüfen Sie die Bestellung, und **bestätigen** Sie diese.
@@ -47,25 +47,25 @@ Jeder Benutzer mit [Zugriffsrechten als Eigentümer oder Mitwirkender](https://n
 >[!NOTE]
 > Sie müssen diese Schritte jedes Mal befolgen, wenn Sie Visual Studio-Abonnements als CSP kaufen. Derzeit gibt es keine API zur Automatisierung der Käufe.
 
-Sobald Sie den Kauf bestätigt haben, können Sie auf **Verwalten** klicken, um die Abonnements den Endbenutzern des Kunden zuzuweisen.  Sie können ebenfalls über Partner Center auf das Verwaltungsportal für Abonnements zugreifen, indem Sie auf **Dienstverwaltung** klicken.  Befolgen Sie dort die angezeigten Schritte, oder sehen Sie sich das unten stehende Video an.
+Sobald Sie den Kauf bestätigt haben, können Sie auf **Verwalten** klicken, um die Abonnements den Endbenutzern des Kunden zuzuweisen.  Sie können auch über Partner Center auf das Verwaltungsportal für Abonnements zugreifen. Klicken Sie dazu auf **Dienstverwaltung** .  Befolgen Sie dort die angezeigten Schritte, oder sehen Sie sich das unten stehende Video an.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Verwalten von Visual Studio-Cloudabonnements für Ihren Kunden
 
 1. Melden Sie sich in [Microsoft Partner Center](https://partnercenter.microsoft.com) an.
 0. Klicken Sie auf **Kunden** und dann auf den Namen des Kunden.
-0. Klicken Sie auf **Dienstverwaltung**.
+0. Klicken Sie auf **Dienstverwaltung** .
 0. Klicken Sie auf **Manage Visual Studio Subscriptions** (Visual Studio-Abonnements verwalten).
 
 Wenn mehr als ein Azure-Abonnement für diesen Kunden vorhanden ist, verwenden Sie das Dropdownmenü, um das Azure-Abonnement auszuwählen, über das Sie den Kauf getätigt haben.  Die **Lizenzzusammenfassung** zeigt Ihnen die Anzahl der Abonnements an, die zugewiesen wurden, und wie viele für jede Visual Studio-Cloudabonnementoption verfügbar sind.  Über die Zusammenfassung können Sie ebenfalls weitere Abonnements erwerben oder die Anzahl von Abonnements verringern.
 
-Klicken Sie auf **Hinzufügen**, um ein Abonnement einem neuen Benutzer zuzuweisen.  Die angezeigte Anzahl wird aktualisiert, und der Endbenutzer erhält eine E-Mail-Benachrichtigung. Der Endbenutzer kann sich dann mithilfe der E-Mail-Adresse anmelden, die von Ihnen bereitgestellt wurde, um das Visual Studio-Abonnement im [Visual Studio-Portal für Abonnenten](https://my.visualstudio.com?wt.mc_id=o~msft~docs) zu aktivieren.
+Klicken Sie auf **Hinzufügen** , um ein Abonnement einem neuen Benutzer zuzuweisen.  Die angezeigte Anzahl wird aktualisiert, und der Endbenutzer erhält eine E-Mail-Benachrichtigung. Der Endbenutzer kann sich dann mithilfe der E-Mail-Adresse anmelden, die von Ihnen bereitgestellt wurde, um das Visual Studio-Abonnement im [Visual Studio-Portal für Abonnenten](https://my.visualstudio.com?wt.mc_id=o~msft~docs) zu aktivieren.
 
 Sie können den aktuellen Abonnenten löschen und einen neuen Abonnenten hinzufügen, um ein Visual Studio-Abonnent einem anderen Benutzer zuzuweisen.
 
 Wenn ein Abonnent sein Visual Studio-Abonnement nicht aktiviert hat, ist dies möglicherweise darauf zurückzuführen, dass die Einladungs-E-Mail fehlt.  Sie können über das Visual Studio-Verwaltungsportal ebenfalls anfordern, dass die Einladung zur Aktivierung erneut an den Benutzer gesendet wird.
 
 ## <a name="view-visual-studio-pricing-for-csp-partners"></a>Anzeigen der Visual Studio-Preise für CSP-Partner
-Melden Sie sich in [Partner Center](https://partnercenter.microsoft.com) an, um die Visual Studio-Preise für CSP-Partner anzuzeigen.  Klicken Sie im linken Navigationsbereich auf **Pricing and offers** (Preise und Angebote).  Wählen Sie die Preisdatei des aktuellen Monats unter **usage-based services** (Nutzungsbasierte Dienste) im oberen rechten Bereich aus. Sobald die Excel-Arbeitsmappe heruntergeladen wurde, wechseln Sie zum Blatt **Azure Price List** (Azure-Preisliste), und filtern Sie die Spalte **Meter Category** (Kategorie für Messung) nach **Visual Studio**.
+Melden Sie sich in [Partner Center](https://partnercenter.microsoft.com) an, um die Visual Studio-Preise für CSP-Partner anzuzeigen.  Klicken Sie im linken Navigationsbereich auf **Pricing and offers** (Preise und Angebote).  Wählen Sie die Preisdatei des aktuellen Monats unter **usage-based services** (Nutzungsbasierte Dienste) im oberen rechten Bereich aus. Sobald die Excel-Arbeitsmappe heruntergeladen wurde, wechseln Sie zum Blatt **Azure Price List** (Azure-Preisliste), und filtern Sie die Spalte **Meter Category** (Kategorie für Messung) nach **Visual Studio** .
 
 So sind die Inhalte der Arbeitsmappe zu interpretieren:
 

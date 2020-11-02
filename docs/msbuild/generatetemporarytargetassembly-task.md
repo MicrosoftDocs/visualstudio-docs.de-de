@@ -1,5 +1,7 @@
 ---
 title: GenerateTemporaryTargetAssembly-Aufgabe | Microsoft-Dokumentation
+description: Verwenden Sie die MSBuild-Aufgabe „GenerateTemporaryTargetAssembly“, um eine Assembly zu erzeugen, wenn ein Projekt auf einen Typ verweist, der lokal deklariert ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69333b87720513244e90c131f052d11099b62e35
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634044"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436765"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly-Aufgabe
 
@@ -33,15 +35,15 @@ Mit der Aufgabe <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssem
 
 | Parameter | Beschreibung |
 |--------------------------| - |
-| `AssemblyName` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Kurznamen der Assembly an, die für ein Projekt generiert wird, und ist auch der Name der temporär generierten Zielassembly. Wenn ein Projekt z. B. eine ausführbare Windows-Datei mit dem Namen *WinExeAssembly.exe* generiert, weist der **AssemblyName**-Parameter den Wert **WinExeAssembly** auf. |
-| `CompileTargetName` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Namen des MSBuild-Ziels an, das zum Generieren von Assemblys aus Quellcodedateien verwendet wird. Der typische Wert für **CompileTargetName** ist **CoreCompile**. |
-| `CompileTypeName` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Typ der Kompilierung an, die vom Ziel ausgeführt wird, das durch den **CompileTargetName**-Parameter angegeben wird. Für das **CoreCompile**-Ziel ist dieser Wert **Compile**. |
-| `CurrentProject` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den vollständigen Pfad der MSBuild-Projektdatei für das Projekt an, das eine temporäre Zielassembly erfordert. |
+| `AssemblyName` | Erforderlicher **String** -Parameter.<br /><br /> Gibt den Kurznamen der Assembly an, die für ein Projekt generiert wird, und ist auch der Name der temporär generierten Zielassembly. Wenn ein Projekt z. B. eine ausführbare Windows-Datei mit dem Namen *WinExeAssembly.exe* generiert, weist der **AssemblyName** -Parameter den Wert **WinExeAssembly** auf. |
+| `CompileTargetName` | Erforderlicher **String** -Parameter.<br /><br /> Gibt den Namen des MSBuild-Ziels an, das zum Generieren von Assemblys aus Quellcodedateien verwendet wird. Der typische Wert für **CompileTargetName** ist **CoreCompile** . |
+| `CompileTypeName` | Erforderlicher **String** -Parameter.<br /><br /> Gibt den Typ der Kompilierung an, die vom Ziel ausgeführt wird, das durch den **CompileTargetName** -Parameter angegeben wird. Für das **CoreCompile** -Ziel ist dieser Wert **Compile** . |
+| `CurrentProject` | Erforderlicher **String** -Parameter.<br /><br /> Gibt den vollständigen Pfad der MSBuild-Projektdatei für das Projekt an, das eine temporäre Zielassembly erfordert. |
 | `GeneratedCodeFiles` | Optionaler **ITaskItem[]** -Parameter.<br /><br /> Gibt die Liste der sprachspezifischen verwalteten Codedateien an, die mit der [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)-Aufgabe generiert wurden. |
-| `IntermediateOutputPath` | Erforderlicher **String**-Parameter.<br /><br /> Gibt das Verzeichnis an, in dem die temporäre Zielassembly generiert wird. |
-| `MSBuildBinPath` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Speicherort von *MSBuild.exe* an, die zum Kompilieren der temporären Zielassembly erforderlich ist. |
+| `IntermediateOutputPath` | Erforderlicher **String** -Parameter.<br /><br /> Gibt das Verzeichnis an, in dem die temporäre Zielassembly generiert wird. |
+| `MSBuildBinPath` | Erforderlicher **String** -Parameter.<br /><br /> Gibt den Speicherort von *MSBuild.exe* an, die zum Kompilieren der temporären Zielassembly erforderlich ist. |
 | `ReferencePath` | Optionaler **ITaskItem[]** -Parameter.<br /><br /> Gibt eine Liste von Assemblys nach Pfad und Namen an, auf die die Typen verweisen, die in die temporäre Zielassembly kompiliert werden. |
-| `ReferencePathTypeName` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Parameter an, der vom Kompilierungszielparameter (**CompileTargetName**) verwendet wird, der die Liste der Assemblyverweise (**ReferencePath**) angibt. Der entsprechende Wert ist **ReferencePath**. |
+| `ReferencePathTypeName` | Erforderlicher **String** -Parameter.<br /><br /> Gibt den Parameter an, der vom Kompilierungszielparameter ( **CompileTargetName** ) verwendet wird, der die Liste der Assemblyverweise ( **ReferencePath** ) angibt. Der entsprechende Wert ist **ReferencePath** . |
 
 ## <a name="remarks"></a>Hinweise
 

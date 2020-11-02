@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie MSBuild verwenden, um eine durch Trennzeichen getrennte Elementliste anzuzeigen oder andere Trennzeichen für eine Elementliste anzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da2a38041a8fa4092e0167e60b00e35a7187866b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633901"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436427"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste
 
@@ -28,7 +30,7 @@ MSBuild verwendet standardmäßig Semikolons zum Trennen von Elementen in einer 
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-Wenn die `@(TXTFile)`-Elementliste die Elemente *App1.txt*, *App2.txt* und *App3.txt* enthält, lautet die Meldung:
+Wenn die `@(TXTFile)`-Elementliste die Elemente *App1.txt* , *App2.txt* und *App3.txt* enthält, lautet die Meldung:
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
