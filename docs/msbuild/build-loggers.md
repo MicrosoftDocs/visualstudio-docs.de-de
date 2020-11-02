@@ -1,5 +1,7 @@
 ---
 title: Buildprotokollierungen | Microsoft-Dokumentation
+description: Verwenden Sie MSBuild-Protokollierungen, um die Ausgabe Ihres Builds zu verwalten und anzupassen und bei bestimmten Buildereignissen Meldungen, Fehler oder Warnungen anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634525"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353199"
 ---
 # <a name="build-loggers"></a>Buildprotokollierungen
 
@@ -50,7 +52,7 @@ In einigen Fällen möchten Sie möglicherweise nur Informationen von einem Erei
 
 ## <a name="specify-a-logger"></a>Festlegen einer Protokollierung
 
-Nachdem die Protokollierung in eine Assembly kompiliert worden ist, müssen Sie MSBuild mitteilen, diese Protokollierung während der Builderstellung zu verwenden. Dies erfolgt mithilfe des Schalters **-logger** von *MSBuild.exe*. Weitere Informationen zu den verfügbaren Schaltern für *MSBuild.exe* finden Sie in der [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).
+Nachdem die Protokollierung in eine Assembly kompiliert worden ist, müssen Sie MSBuild mitteilen, diese Protokollierung während der Builderstellung zu verwenden. Dies erfolgt mithilfe des Schalters **-logger** von *MSBuild.exe* . Weitere Informationen zu den verfügbaren Schaltern für *MSBuild.exe* finden Sie in der [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).
 
 Die folgende Befehlszeile erstellt das Projekt *MyProject.csproj* und verwendet die in *SimpleLogger.dll* implementierte Protokollierungsklasse. Der Schalter **-nologo** blendet Banner und Copyrightmeldung aus, und **-noconsolelogger** deaktiviert die standardmäßige MSBuild-Konsolenprotokollierung.
 
@@ -64,7 +66,7 @@ Die folgende Befehlszeile erstellt das Projekt mit der gleichen Protokollierung,
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
 
 ### <a name="description"></a>Beschreibung
 
@@ -74,7 +76,7 @@ Das folgende Beispiel enthält den vollständigen Code für die Protokollierung.
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
 
 ### <a name="description"></a>Beschreibung
 

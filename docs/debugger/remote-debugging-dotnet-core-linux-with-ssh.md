@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bc0fa990a79b1855ec382f42248a0f847c3c9c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: 2d66181f5e6720348e18c34b735ef29e24c0111a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78200866"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796302"
 ---
 # <a name="remote-debug-net-core-on-linux-using-ssh"></a>Remotedebuggen von .NET Core unter Linux mit SSH
 
@@ -34,7 +34,7 @@ sudo apt-get install openssh-server unzip curl
 
 Bereiten Sie Ihre Anwendung wie folgt für das Debuggen vor:
 
-- Verwenden Sie beim Erstellen der Anwendung ggf. eine Debugkonfiguration. Das Debuggen einer Releasekonfiguration ist weitaus schwieriger als von Code, der für das Debuggen kompiliert wurde. Wenn Sie eine Releasekonfiguration verwenden müssen, deaktivieren Sie zuerst „Nur eigenen Code“. Um diese Einstellung zu deaktivieren, wählen Sie **Tools** > **Optionen** > **Debuggen** aus, und deaktivieren Sie dann **Nur meinen Code aktivieren**.
+- Verwenden Sie beim Erstellen der Anwendung ggf. eine Debugkonfiguration. Das Debuggen einer Releasekonfiguration ist weitaus schwieriger als von Code, der für das Debuggen kompiliert wurde. Wenn Sie eine Releasekonfiguration verwenden müssen, deaktivieren Sie zuerst „Nur eigenen Code“. Um diese Einstellung zu deaktivieren, wählen Sie **Tools** > **Optionen** > **Debuggen** aus, und deaktivieren Sie dann **Nur meinen Code aktivieren** .
 
 - Stellen Sie sicher, dass Ihr Projekt für die Erstellung [portabler PDB-Dateien](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (Standardeinstellung) konfiguriert ist, und stellen Sie sicher, dass sich die PDB-Dateien am gleichen Speicherort wie die DLL befinden. Um dies in Visual Studio zu konfigurieren, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften** > **Build** > **Erweitert** > **Debuginformationen** aus.
 
@@ -42,7 +42,7 @@ Sie können mehrere Methoden verwenden, um die App vor dem Debuggen bereitzustel
 
 - Kopieren Sie die Quellen auf den Zielcomputer, und kompilieren Sie mit ```dotnet build``` auf dem Linux-Computer.
 
-- Erstellen Sie die App unter Windows, und übertragen Sie die Buildartefakte dann auf den Linux-Computer. (Die Buildartefakte bestehen aus der Anwendung selbst, allen Laufzeitbibliotheken, von denen sie abhängig sein kann, und der Datei *.deps.json*.)
+- Erstellen Sie die App unter Windows, und übertragen Sie die Buildartefakte dann auf den Linux-Computer. (Die Buildartefakte bestehen aus der Anwendung selbst, allen Laufzeitbibliotheken, von denen sie abhängig sein kann, und der Datei *.deps.json* .)
 
 ## <a name="attach-the-debugger"></a>Fügen Sie den Debugger an.
 
@@ -56,13 +56,13 @@ Nachdem die Computer konfiguriert sind, starten Sie die Anwendung auf dem Linux-
 
 1. Suchen Sie den Prozess, den Sie debuggen möchten.
 
-   Der Code wird entweder in einem eindeutigen Prozessnamen oder in einem Prozess mit dem Namen „dotnet“ ausgeführt. Um den gewünschten Prozess zu finden, überprüfen Sie die Spalte **Titel**, in der die Befehlszeilenargumente für den Prozess angezeigt werden.
+   Der Code wird entweder in einem eindeutigen Prozessnamen oder in einem Prozess mit dem Namen „dotnet“ ausgeführt. Um den gewünschten Prozess zu finden, überprüfen Sie die Spalte **Titel** , in der die Befehlszeilenargumente für den Prozess angezeigt werden.
 
    Im folgenden Beispiel sehen Sie eine Liste der Prozesse von einem Linux-Remotecomputer über einen SSH-Transport, die im Dialogfeld **An Prozess anfügen** angezeigt wird.
 
    ![Anfügen an einen Linux-Prozess](media/remote-debug-linux-over-ssh-attach.png)
 
-1. Wählen Sie **Anfügen**aus.
+1. Wählen Sie **Anfügen** aus.
 
 1. Wählen Sie im angezeigten Dialogfeld den Codetyp aus, den Sie debuggen möchten. Wählen Sie **Verwaltet (.NET Core für Unix)** aus.
 

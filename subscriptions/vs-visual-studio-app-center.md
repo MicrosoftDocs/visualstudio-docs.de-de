@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Erfahren Sie mehr über den Visual Studio App Center-Vorteil, der in Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005726"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435736"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center in Visual Studio-Abonnements
 
@@ -26,17 +26,17 @@ App Center ist die Schaltzentrale für Ihre Apps.
 Der Einstieg in Visual Studio App Center ist ganz einfach.
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2. Suchen Sie die Kachel „Visual Studio App Center“, und klicken Sie auf **Los geht‘s**.
+2. Suchen Sie die Kachel „Visual Studio App Center“, und klicken Sie auf **Los geht‘s** .
     > [!div class="mx-imgBorder"]
-    > ![Kachel für „VS App Center“](_img/vs-app-center/vs-app-center-tile.png)
+    > ![Kachel für „VS App Center“](_img/vs-app-center/vs-app-center-tile.png "Klicken Sie auf der Visual Studio App Center-Kachel auf „Erste Schritte“.")
 
-3. Erstellen Sie als Nächstes ein Konto.  Sie können ein vorhandenes Google-, GitHub- oder Facebook-Konto für die Anmeldung verwenden oder ein neues Konto erstellen, indem Sie einen Benutzernamen, Ihre E-Mail-Adresse und ein Kennwort eingeben.  Klicken Sie auf **Konto erstellen**, um den Vorgang fortzusetzen.
+3. Erstellen Sie als Nächstes ein Konto.  Sie können ein vorhandenes Google-, GitHub- oder Facebook-Konto für die Anmeldung verwenden oder ein neues Konto erstellen, indem Sie einen Benutzernamen, Ihre E-Mail-Adresse und ein Kennwort eingeben.  Klicken Sie auf **Konto erstellen** , um den Vorgang fortzusetzen.
     > [!div class="mx-imgBorder"]
-    > ![VS App Center: Konto erstellen](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![VS App Center: Konto erstellen](_img/vs-app-center/vs-app-center-create-account.png "Wählen Sie aus, wie Sie sich anmelden möchten.")
 
-4. Das ist auch schon alles.  Klicken Sie einfach auf **Neue Organisation hinzufügen** oder **Neue App hinzufügen**, um loszulegen!
+4. Das ist auch schon alles.  Klicken Sie einfach auf **Neue Organisation hinzufügen** oder **Neue App hinzufügen** , um loszulegen!
     > [!div class="mx-imgBorder"]
-    > ![VS App Center: Portal](_img/vs-app-center/vs-app-center-portal.png)
+    > ![VS App Center: Portal](_img/vs-app-center/vs-app-center-portal.png "Sie sind jetzt startbereit.  Klicken Sie einfach auf „Neue Organisation hinzufügen“ oder „Neue App hinzufügen“, um den Vorgang zu starten.")
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -50,7 +50,7 @@ Der Einstieg in Visual Studio App Center ist ganz einfach.
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Included                                                            |Ja |
 ||
 
-<sup>1</sup> *Enthält:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD).*
+<sup>1</sup>  *Enthält:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD).*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
@@ -63,7 +63,7 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 Antwort:  App Center erfordert neuere Funktionen, die von einigen älteren Browsern möglicherweise nicht bereitgestellt werden.  Wenn Ihr Browser nicht unterstützt wird, führen Sie die folgenden Schritte aus:
 1. Öffnen Sie einen anderen Browser, z.B. Microsoft Edge oder die neueste Version von Google Chrome, Firefox oder Safari.
 2. Stellen Sie eine Verbindung zur Visual Studio-Website [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) her, und melden Sie sich an.
-3. Klicken Sie jetzt auf der Visual Studio App Center-Kachel auf den Link **Los geht‘s**.
+3. Klicken Sie jetzt auf der Visual Studio App Center-Kachel auf den Link **Los geht‘s** .
 
 Jetzt sollten Sie auf das App Center-Portal zugreifen und Ihr Konto erstellen können.
 

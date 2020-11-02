@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren von Zielen und Aufgaben | Microsoft-Dokumentation
+description: Konfigurieren Sie MSBuild-Ziele und -Aufgaben so, dass sie prozessextern mit MSBuild ausgeführt werden. Dadurch können Sie Kontexte als Ziele wählen, die vom eigentlichen Kontext der Ausführung abweichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a3d6ba3eff6a01c2d0ff68b4132d883eadb90f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 46f1f96708af6f5d99affead4d47c1f35db5dc4a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634395"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796236"
 ---
 # <a name="configure-targets-and-tasks"></a>Konfigurieren von Zielen und Aufgaben
 
@@ -29,6 +31,6 @@ Sie können MSBuild-Ziele und -Aufgaben so konfigurieren, dass sie prozessextern
 
  Wenn Sie eigene Zielkontext erstellen möchten, müssen Sie diese Argumente und Parameter entsprechend festlegen. In der .NET Framework 4.5-Datei *Microsoft.Common.targets* und in der Datei *Microsoft.Common.Tasks* finden Sie einige Beispiele.  Informationen zum Erstellen einer benutzerdefinierten Aufgabe, die mehrere Zielkontexte verwenden kann, oder zum Ändern vorhandener Aufgaben finden Sie unter [Vorgehensweise: Konfigurieren von Zielen und Aufgaben](../msbuild/how-to-configure-targets-and-tasks.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)

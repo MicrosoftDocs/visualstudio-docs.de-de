@@ -1,5 +1,7 @@
 ---
 title: GenerateApplicationManifest-Aufgabe | Microsoft-Dokumentation
+description: Verwenden Sie die MSBuild-Aufgabe „GenerateApplicationManifest“, um ein ClickOnce-Anwendungsmanifest oder ein natives Manifest zu generieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634096"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436547"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 
@@ -84,7 +86,7 @@ Die Eingaben für Abhängigkeiten und Dateien können um Elementmetadaten ergän
 |`TargetPath`|Gibt an, wie der Pfad im generierten Manifest definiert werden soll. Dieses Attribut ist für alle Dateien gültig. Wenn dieses Attribut nicht angegeben wird, wird die Elementspezifikation verwendet. Dieses Attribut gilt für alle Dateien und Abhängigkeiten, bei denen `DependencyType` den Wert `Install` aufweist.|
 |`IsDataFile`|Ein `Boolean`-Metadatenwert, der angibt, ob die Datei eine Datendatei ist. Eine Datendatei ist insofern ein Sonderfall, als sie bei Anwendungsupdates migriert wird. Diese Metadaten gelten nur für Dateien. Der Standardwert lautet `False`.|
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
 
 Im folgenden Beispiel wird mithilfe der `GenerateApplicationManifest`-Aufgabe ein ClickOnce-Anwendungsmanifest und mithilfe der `GenerateDeploymentManifest`-Aufgabe ein Bereitstellungsmanifest für eine Anwendung mit einer einzigen Assembly generiert. Anschließend wird die `SignFile`-Aufgabe verwendet, um die Manifeste zu signieren.
 
@@ -138,7 +140,7 @@ Dies ist das einfachste mögliche Szenario für das Generieren von Manifesten, i
 </Project>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
 
 Im folgenden Beispiel werden die `GenerateApplicationManifest`-Aufgabe und die `GenerateDeploymentManifest`-Aufgabe verwendet, um ein ClickOnce-Anwendungsmanifest und Bereitstellungsmanifeste für eine Anwendung mit einer einzelnen Assembly zu generieren und jeweils den Namen und die Identität der Manifeste anzugeben.
 
@@ -199,7 +201,7 @@ Dieses Beispiel ist mit dem vorherigen Beispiel vergleichbar und unterscheidet s
 </Project>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-3"></a>Beispiel 3
 
 Im folgenden Beispiel werden die `GenerateApplicationManifest`-Aufgabe und die `GenerateDeploymentManifest`-Aufgabe verwendet, um ein ClickOnce-Anwendungsmanifest und Bereitstellungsmanifeste für eine Anwendung mit mehreren Dateien und Assemblys zu generieren.
 
@@ -318,7 +320,7 @@ Im folgenden Beispiel werden die `GenerateApplicationManifest`-Aufgabe und die `
 </Project>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-4"></a>Beispiel 4
 
 Im folgenden Beispiel wird die `GenerateApplicationManifest`-Aufgabe verwendet, um ein natives Manifest für die Anwendung *Test.exe* zu generieren, in dem auf die native Komponente *Alpha.dll* und eine isolierte COM-Komponente mit dem Namen *Bravo.dll* verwiesen wird.
 
@@ -356,7 +358,7 @@ In diesem Beispiel wird *Test.exe.manifest* erstellt, wodurch die Anwendung mit 
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md)

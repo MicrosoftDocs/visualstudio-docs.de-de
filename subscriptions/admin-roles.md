@@ -1,20 +1,20 @@
 ---
-title: Superadministrator- und Administratorrolle im Verwaltungsportal
+title: Superadministrator- und Administratorrolle für Visual Studio-Abonnements
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Superadministrator- und Administratorrolle und das Zuweisen von Administratoren.
-ms.openlocfilehash: fc44845ed403e9bf942761203b75c2277fd1aff2
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022699"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467374"
 ---
-# <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Superadministratoren und Administratoren für Visual Studio-Abonnementverträge
+# <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Superadministratoren und Administratoren für Visual Studio-Abonnementverträge
 
 Im neuen Portal zur Verwaltung von Visual Studio-Abonnements für Kunden mit Volumenlizenzen gibt es zwei verschiedene Rollen. Diese entsprechen den Rollen „Primary/Notices Contact“ (Hauptkontakt) und „Subscriptions Manager“ (Abonnementverwalter), die früher im VLSC verfügbar waren.
 
@@ -25,21 +25,21 @@ Im neuen Portal zur Verwaltung von Visual Studio-Abonnements für Kunden mit Vol
 Sehen Sie sich eine Demonstration zum Verwalten von Administratoren an. 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
-## <a name="assigning-administrators"></a>Zuweisen von Administratoren
+## <a name="assigning-admins"></a>Zuweisen von Administratoren
 So weisen Sie neue Administratoren zu:
 1. Melden Sie sich bei https://manage.visualstudio.com mit einer E-Mail-Adresse an, der die Rolle des Superadministrators entsprechend dem Vertrag zugewiesen ist, über den die Abonnements erworben wurden.
-2. Klicken Sie auf die Registerkarte **Administratoren verwalten**.
-3. Klicken Sie auf **Hinzufügen**.
+2. Klicken Sie auf die Registerkarte **Administratoren verwalten** .
+3. Klicken Sie auf **Hinzufügen** .
    > [!div class="mx-imgBorder"]
-   > ![Hinzufügen von Administratoren](_img/admin-roles/add-admins.png "Klicken Sie auf das Blatt „Administratoren verwalten“, und klicken Sie dann auf „Hinzufügen“, um neue Administratoren hinzuzufügen.")
+   > ![Add admins (Administratoren hinzufügen)](_img/admin-roles/add-admins.png "Klicken Sie auf das Blatt „Administratoren verwalten“, und klicken Sie dann auf „Hinzufügen“, um neue Administratoren hinzuzufügen.")
 4. Füllen Sie das Formular mit den Informationen des neuen Administrators aus.  
    > [!div class="mx-imgBorder"]
-   > ![Formular „Administrator hinzufügen“](_img/admin-roles/add-form.png "Geben Sie die Anmeldedaten für den neuen Administrator ein, und entscheiden Sie, ob dieser ein Superadministrator sein soll.  Klicken Sie anschließend auf „Hinzufügen“.")
+   > ![Formular zum Hinzufügen von Administratoren](_img/admin-roles/add-form.png "Geben Sie die Anmeldedaten für den neuen Administrator ein, und entscheiden Sie, ob dieser ein Superadministrator sein soll.  Klicken Sie anschließend auf „Hinzufügen“.")
 
    > [!NOTE]
    > Wenn dieser Administrator in der Lage sein soll, weitere Administratoren zuzuweisen, müssen Sie das Kontrollkästchen neben **Super Admin** (Superadministrator) aktivieren.
 
-5. Klicken Sie auf **Hinzufügen**, um den neuen Administrator zuzuweisen. Dieser erhält dann eine E-Mail, in der er aufgefordert wird, sich beim Portal anzumelden.  
+5. Klicken Sie auf **Hinzufügen** , um den neuen Administrator zuzuweisen. Dieser erhält dann eine E-Mail, in der er aufgefordert wird, sich beim Portal anzumelden.  
 
 ## <a name="resources"></a>Ressourcen
 - [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)

@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Escapesonderzeichen in MSBuild | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie Escapezeichen für Sonderzeichen verwenden, damit diese Zeichen als Literale in MSBuild-Projektdateien verwendet werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 923c517653c42dd0362b398c420c99454ccf4034
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633875"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436402"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Vorgehensweise: Escapesonderzeichen in MSBuild
 
@@ -28,7 +30,7 @@ Um diese Sonderzeichen als Literale in einer Projektdatei zu verwenden, müssen 
 
 ## <a name="msbuild-special-characters"></a>MSBuild-Sonderzeichen
 
-Ein Beispiel, in dem Sonderzeichen verwendet werden, ist im Attribut `Include` von Elementlisten. Die folgende Liste deklariert z. B. zwei Elemente: *MyFile.cs* und *MyClass.cs*.
+Ein Beispiel, in dem Sonderzeichen verwendet werden, ist im Attribut `Include` von Elementlisten. Die folgende Liste deklariert beispielsweise zwei Elemente: *MyFile.cs* und *MyClass.cs* .
 
 ```xml
 <Compile Include="MyFile.cs;MyClass.cs"/>

@@ -1,5 +1,7 @@
 ---
 title: AssignCulture-Aufgabe | Microsoft-Dokumentation
+description: Verwenden Sie die MSBuild-Aufgabe „AssignCulture“, um ein Element zu erzeugen, das Metadaten mit dem Namen „Culture“ aufweist, die den entsprechenden Kulturbezeichner enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 94a587ca1395aebaf4af71d04b2f1454ec2702f0
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634564"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353342"
 ---
 # <a name="assignculture-task"></a>AssignCulture-Aufgabe
 
@@ -31,7 +33,7 @@ Diese Aufgabe akzeptiert eine Liste von Elementen, die eine gültige .NET-Kultur
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
-In der folgenden Tabelle werden die Parameter der `AssignCulture`-Aufgabe beschrieben.
+In der folgenden Tabelle werden die Parameter der `AssignCulture` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -41,7 +43,7 @@ In der folgenden Tabelle werden die Parameter der `AssignCulture`-Aufgabe beschr
 |`CultureNeutralAssignedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält dieselben Elemente, die im `AssignedFiles`-Parameter erzeugt werden. Der einzige Unterschied ist, dass die Kultur aus dem Dateinamen entfernt wurde.<br /><br /> Die Aufgabe entfernt nur die Kultur aus dem Dateinamen, wenn der Kulturbezeichner gültig ist.|
 |`Files`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Liste der Dateien mit eingebetteten Kulturnamen an, denen eine Kultur zugewiesen werden soll|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
@@ -74,7 +76,7 @@ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter vo
 
 In der folgenden Tabelle wird der Wert der Ausgabeelemente nach der Ausführung der Aufgabe beschrieben. Elementmetadaten werden in Klammern nach dem Element angezeigt.
 
-|Elementauflistung|Inhalt|
+|Elementauflistung|Inhalte|
 |---------------------|--------------|
 |`OutAssignedFiles`|*MyResource1.fr.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (keine zusätzlichen Metadaten)|
 |`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (Culture="fr")|
@@ -83,5 +85,5 @@ In der folgenden Tabelle wird der Wert der Ausgabeelemente nach der Ausführung 
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

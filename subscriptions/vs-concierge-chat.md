@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Weitere Informationen zum Concierge Chat-Vorteil, der in Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006318"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353381"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat in Visual Studio-Abonnements
 Der Concierge Chat-Dienst bietet Hilfe beim Auffinden von Produktinformationen und technischen Dokumenten sowie Unterstützung bei der Nutzung Ihrer Visual Studio-Abonnementvorteile.
@@ -23,17 +23,17 @@ Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch ange
 Über den Concierge Chat-Dienst können Sie sehr einfach Hilfe erhalten.
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Support“ die Kachel „Concierge Chat“, und klicken Sie auf **Jetzt chatten**.
+2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt „Support“ die Kachel „Concierge Chat“, und klicken Sie auf **Jetzt chatten** .
     > [!div class="mx-imgBorder"]
-    > ![Concierge Chat-Kachel](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Concierge Chat-Kachel](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Klicken Sie auf „Jetzt chatten“, um eine neue Chatsitzung zu starten.")
 
-3. Klicken Sie auf **Weiter**.
+3. Klicken Sie auf **Weiter** .
 
 4. Es wird ein Chatfenster geöffnet, und Sie sehen einen Zähler, der Ihre Position in der Warteschlange anzeigt.
 
 5. Wenn ein Mitarbeiter verfügbar ist, beginnt der Chat.
     > [!div class="mx-imgBorder"]
-    > ![Concierge Chat-Sitzung](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Concierge Chat-Sitzung](_img/vs-concierge-chat/vs-concierge-chat-session.png "Sobald ein Mitarbeiter der Sitzung beitritt, wird das Fenster für die Chatsitzung angezeigt.")
 
 ## <a name="eligibility"></a>Berechtigung
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
@@ -46,7 +46,7 @@ Der Dienst ist rund um die Uhr verfügbar und wird derzeit nur auf Englisch ange
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Ja          |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Umfasst nicht:  FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>  *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Umfasst nicht:  FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Imagine.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

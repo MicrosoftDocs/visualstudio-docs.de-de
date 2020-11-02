@@ -1,5 +1,7 @@
 ---
 title: Dateinachverfolgung | Microsoft-Dokumentation
+description: Verwenden Sie die MSBuild-Dateinachverfolgungsfunktionen, um Aufrufe an das Windows-Dateisystem für einen Prozess und seine untergeordneten Prozesse zu protokollieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9335ca6608d36edbd17e47a441e13aecaa41c890
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2fafae7cce22cc41fdd51a4bc727ac6bfb791b9
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634200"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436625"
 ---
 # <a name="file-tracking"></a>Dateinachverfolgung
 

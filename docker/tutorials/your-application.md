@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739979"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046191"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Erstellen und Ausführen der Aufgabenlisten-Beispiel-App
 
@@ -27,6 +27,8 @@ Aktuell ist Ihr Entwicklungsteam recht klein, und Sie entwickeln einfach eine Ap
 ## <a name="get-the-app"></a>Abrufen der App
 
 Bevor Sie die Anwendung ausführen können, benötigen Sie den Anwendungsquellcode auf Ihrem Computer. Für tatsächliche Projekte klonen Sie hierzu in der Regel das Repository. Für dieses Tutorial wird jedoch eine ZIP-Datei bereitgestellt, die die Anwendung enthält.
+
+1. Stellen Sie sicher, dass auf dem lokalen Computer Docker für Windows oder die Docker Community Edition installiert ist. Weitere Informationen finden Sie in der [Dokumentation zu Docker für Windows](https://docs.docker.com/docker-for-windows/install/). Beim Installationsvorgang wird die ZIP-Datei mit dem Beispiel unter der localhost-Adresse verfügbar gemacht.
 
 1. [Laden Sie die ZIP-Datei herunter](http://localhost/assets/app.zip). Öffnen Sie die ZIP-Datei, und extrahieren Sie die Inhalte.
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/06/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Erfahren Sie mehr über den LinkedIn Learning-Vorteil, der in einem LinkedIn Premium-Abonnement enthalten ist, das in ausgewählten Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805889"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435852"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Der LinkedIn Learning-Vorteil in Visual Studio-Abonnements
 
@@ -27,7 +27,7 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 
 2. Suchen Sie in der Kategorie „Education“ (Bildung) die Kachel „LinkedIn Learning“, und klicken Sie auf den Link **Get code** (Code abrufen).
    > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „LinkedIn Learning“](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
+   > ![Kachel des Vorteils „LinkedIn Learning“](_img/vs-linkedin/vs-linkedin-6-month-tile.png "Klicken Sie auf „Code abrufen“, um Ihren Code abzurufen und mit dem Vorgang fortzufahren.")
 
 3. Wenn Sie bereits über ein LinkedIn-Konto verfügen und automatisch angemeldet wurden, werden Sie sofort zur Aktivierungsseite für den LinkedIn Learning-Vorteil weitergeleitet.  Wenn Sie über ein LinkedIn-Konto verfügen, aber nicht automatisch angemeldet wurden, geben Sie einfach Benutzername und Kennwort ein, und klicken Sie anschließend auf **Anmelden** .  Fahren Sie mit [diesem Schritt](#activate-your-offer) fort, um Ihr Angebot zu aktivieren.
 
@@ -57,15 +57,15 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 ### <a name="activate-your-offer"></a>Testzugang aktivieren
 15. Da Sie sich nun bei Ihrem LinkedIn-Konto angemeldet haben oder eines erstellt haben, können Sie nun Ihr Premiumabonnement aktivieren und die Vorteile von LinkedIn Learning genießen.  Klicken Sie auf **Activate your offer** (Testzugang aktivieren).
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Aktivieren](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![LinkedIn Learning: Aktivieren](_img/vs-linkedin/vs-linkedin-Activate1.png "Klicken Sie auf „Testzugang aktivieren“, um die Lerninhalte aufzurufen.")
 
 16. Sie können sich nun die Fertigkeiten genauer ansehen, die Sie interessieren.  Wählen Sie Fertigkeiten aus der Liste der Empfehlungen aus, suchen Sie nach weiteren Fertigkeiten, oder klicken Sie auf **Überspringen** , um den Vorgang ohne Auswahl von Fertigkeiten fortzusetzen.
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Fertigkeiten](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![LinkedIn Learning: Fertigkeiten](_img/vs-linkedin/vs-linkedin-skills.png "Wählen Sie die Fähigkeiten aus, für die Sie sich interessieren.")
 
 17. Sie haben Ihren Testzugang zum Premiumabonnement erfolgreich aktiviert und können nun LinkedIn Learning sowie alle weiteren Vorteile des Premiumabonnements nutzen.
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: Startseite](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![LinkedIn Learning: Startseite](_img/vs-linkedin/vs-linkedin-learning-home.png "Willkommen bei LinkedIn Premium mit LinkedIn Learning!")
 
 ## <a name="eligibility"></a>Berechtigung
 

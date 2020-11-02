@@ -1,5 +1,7 @@
 ---
 title: GetWinFXPath-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die MSBuild-Aufgabe „GetWinFXPath“ verwenden, die das Verzeichnis der aktuellen .NET-Laufzeit zurückgibt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 820ca103d88cde941fe558e59ed1c78622adccd4
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633966"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436766"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath-Aufgabe
 
@@ -33,17 +35,17 @@ Die Aufgabe <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> gibt das Verzeichn
 
 | Parameter | Beschreibung |
 |-------------------| - |
-| `WinFXPath` | Optionaler **String**-Ausgabeparameter.<br /><br /> Gibt den tatsächlichen Pfad zur .NET-Runtime an. |
-| `WinFXNativePath` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Pfad zur nativen .NET-Runtime an. |
-| `WinFXWowPath` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Pfad zu den .NET-Assemblys im 32-Bit-**Windows on Windows**-Modul auf 64-Bit-Systemen an. |
+| `WinFXPath` | Optionaler **String** -Ausgabeparameter.<br /><br /> Gibt den tatsächlichen Pfad zur .NET-Runtime an. |
+| `WinFXNativePath` | Erforderlicher **String** -Parameter.<br /><br /> Gibt den Pfad zur nativen .NET-Runtime an. |
+| `WinFXWowPath` | Erforderlicher **String** -Parameter.<br /><br /> Gibt den Pfad zu den .NET-Assemblys im 32-Bit- **Windows on Windows** -Modul auf 64-Bit-Systemen an. |
 
 ## <a name="remarks"></a>Hinweise
 
- Wenn der <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath>-Task auf einem 64-Bit-Prozessor ausgeführt wird, wird der **WinFXPath**-Parametersatz auf den Pfad festgelegt, der im **WinFXWowPath**-Parameter gespeichert ist. Andernfalls wird der **WinFXPath**-Parameter auf den Pfad festgelegt, der im **WinFXNativePath**-Parameter gespeichert ist.
+ Wenn der <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath>-Task auf einem 64-Bit-Prozessor ausgeführt wird, wird der **WinFXPath** -Parametersatz auf den Pfad festgelegt, der im **WinFXWowPath** -Parameter gespeichert ist. Andernfalls wird der **WinFXPath** -Parameter auf den Pfad festgelegt, der im **WinFXNativePath** -Parameter gespeichert ist.
 
 ## <a name="example"></a>Beispiel
 
- Das folgende Beispiel zeigt, wie Sie die **GetWinFXPath**-Aufgabe verwenden, um den nativen Pfad zur .NET-Runtime zu ermitteln.
+ Das folgende Beispiel zeigt, wie Sie die **GetWinFXPath** -Aufgabe verwenden, um den nativen Pfad zur .NET-Runtime zu ermitteln.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

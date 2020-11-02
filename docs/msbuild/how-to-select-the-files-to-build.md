@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Auswählen von Dateien für den Buildvorgang | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie die Dateien für den Buildvorgang in der MSBuild-Projektdatei auswählen, indem Sie die Dateien einzeln oder separat mit Platzhaltern auflisten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633810"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436206"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 
@@ -40,7 +42,7 @@ Damit Dateien für einen Build eingeschlossen werden können, müssen sie in ein
     `<VBFile Include="form1.vb"/>`
 
     > [!NOTE]
-    > Wenn sich Elemente in einer Elementauflistung nicht im gleichen Verzeichnis wie die Projektdatei befinden, müssen Sie den vollständigen oder relativen Pfad des Elements angeben. Beispiel: `Include="..\..\form2.cs"`.
+    > Wenn sich Elemente in einer Elementauflistung nicht im gleichen Verzeichnis wie die Projektdatei befinden, müssen Sie den vollständigen oder relativen Pfad des Elements angeben. Ein Beispiel für die Camel-Case-Schreibweise lautet: `Include="..\..\form2.cs"`.
 
 #### <a name="to-declare-multiple-items"></a>So deklarieren Sie mehrere Elemente
 
@@ -64,13 +66,13 @@ Die folgenden Beispiele basieren auf einem Projekt, das Grafikdateien in den fol
 
 *Project\Images\ImgJpgs\Img1*
 
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle *JPG*-Dateien im Verzeichnis *Images* bzw. in Unterverzeichnissen ein
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle *JPG* -Dateien im Verzeichnis *Images* bzw. in Unterverzeichnissen ein
 
 - Verwenden Sie das folgende `Include`-Attribut:
 
     `Include="Images\**\*.jpg"`
 
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle *JPG*-Dateien ein, die mit *img* beginnen
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle *JPG* -Dateien ein, die mit *img* beginnen
 
 - Verwenden Sie das folgende `Include`-Attribut:
 
@@ -105,7 +107,7 @@ Sie können in einer Projektdatei die Notation „@()“ in Aufgaben verwenden, 
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
 
 Das folgende Codebeispiel zeigt ein Projekt, das alle Eingabedateien separat einschließt.
 
@@ -140,9 +142,9 @@ Das folgende Codebeispiel zeigt ein Projekt, das alle Eingabedateien separat ein
 </Project>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
 
-Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS*-Dateien einzuschließen.
+Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS* -Dateien einzuschließen.
 
 ```xml
 <Project DefaultTargets="Compile"
@@ -175,7 +177,7 @@ Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS*-Dateien einz
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [How to: Ausschließen von Dateien aus dem Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md).
 - [Elemente](../msbuild/msbuild-items.md)

@@ -1,5 +1,7 @@
 ---
 title: AssignTargetPath-Aufgabe | Microsoft-Dokumentation
+description: Verwenden Sie die MSBuild-Aufgabe „AssignTargetPath“, um eine Liste mit Dateien zu akzeptieren und TargetPath-Attribute hinzuzufügen, sofern diese nicht bereits angegeben wurden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e56bb8817551e24d1b5aceef2f571e35f1db43e
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634538"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353329"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath-Aufgabe
 
@@ -26,7 +28,7 @@ Diese Aufgabe akzeptiert eine Liste von Dateien und fügt `<TargetPath>`-Attribu
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
-In der folgenden Tabelle werden die Parameter der `AssignTargetPath`-Aufgabe beschrieben.
+In der folgenden Tabelle werden die Parameter der `AssignTargetPath` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -34,7 +36,7 @@ In der folgenden Tabelle werden die Parameter der `AssignTargetPath`-Aufgabe bes
 |`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Eingabeparameter.<br /><br /> Enthält die eingehende Liste von Dateien.|
 |`AssignedFiles`|Optional<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]`-Ausgabeparameter.<br /><br /> Enthält die resultierende Liste von Dateien.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
@@ -57,5 +59,5 @@ RootFolder="Resources"
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

@@ -1,21 +1,21 @@
 ---
-title: Zuweisen von Lizenzen für Visual Studio-Abonnements | Microsoft-Dokumentation
+title: Zuweisen von Visual Studio-Abonnements zu Benutzern | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
-description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen können.
-ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: Erfahren Sie, wie Administratoren Abonnenten Lizenzen zuweisen können.
+ms.openlocfilehash: 044cf4e9df3eb2ebf1d10aa8c08be804ca98f393
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022195"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467530"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Zuweisen von Lizenzen im Verwaltungsportal für Visual Studio-Abonnements
-Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.
+Als Administrator für Visual Studio-Abonnements können Sie das Verwaltungsportal verwenden, um einzelnen Benutzern und Benutzergruppen Abonnements zuzuweisen.
 
 Für Benutzergruppen haben Sie die Wahl, wie Sie Abonnements zuweisen.  
 - Sie können Abonnements entweder einzeln zuweisen, oder
@@ -32,7 +32,7 @@ Sehen Sie sich das Video an, oder lesen Sie den Artikel, um zu erfahren, wie Sie
 
 
 1. Melden Sie sich beim [Verwaltungsportal](https://manage.visualstudio.com) an.
-2. Um einem einzelnen Visual Studio-Abonnenten eine Lizenz zuzuweisen, wählen Sie im oberen Bereich der Tabelle die Option **Hinzufügen** aus und klicken auf **Einzelner Abonnent**.
+2. Um einem einzelnen Visual Studio-Abonnenten eine Lizenz zuzuweisen, wählen Sie im oberen Bereich der Tabelle die Option **Hinzufügen** aus und klicken auf **Einzelner Abonnent** .
    > [!div class="mx-imgBorder"]
    > ![Einzelnen Abonnenten hinzufügen](_img/assign-license-add/add-subscriber-individual.png "Wählen Sie „Hinzufügen“ und dann individuelle Abonnenten aus, denen ein Einzelabonnement zugewiesen werden soll.")
 3. Geben Sie die Informationen in die Formularfelder für den neuen Abonnenten ein. Wenn Ihre Organisation Azure Active Directory verwendet, dient das Feld **Name** als Suchfunktion. Mit dieser Funktion können Sie Personen in Ihrem aktuellen Verzeichnis finden und aus den Suchergebnissen den richtigen Benutzer auswählen. Nach der Auswahl werden die E-Mail-Adressen der entsprechenden Person für die Anmeldung und die Benachrichtigung automatisch aufgefüllt.

@@ -1,5 +1,6 @@
 ---
 title: Verweisen auf den Namen oder Speicherort der Projektdatei
+description: Erfahren Sie, wie Sie reservierte Eigenschaften in MSBuild verwenden, um auf einen Projektdateinamen oder Speicherort zu verweisen, ohne eigene Eigenschaften erstellen zu müssen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036456"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436348"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Vorgehensweise: Verweisen auf den Namen oder Speicherort der Projektdatei
 
@@ -34,7 +35,7 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 
 #### <a name="to-use-the-project-properties"></a>So verwenden Sie die Projekteigenschaften
 
-- Verweisen Sie die Eigenschaft in der Projektdatei mit der $()-Notation genau so, wie Sie es mit anderen Eigenschaften machen würden. Zum Beispiel:
+- Verweisen Sie die Eigenschaft in der Projektdatei mit der $()-Notation genau so, wie Sie es mit anderen Eigenschaften machen würden. Beispiel:
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -49,7 +50,7 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 > [!NOTE]
 > Reservierte Eigenschaften können nicht in der Projektdatei neu definiert werden.
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
 
  Die folgende Beispiel-Projektdatei verweist den Projektnamen als reservierte Eigenschaft, um den Namen für die Ausgabe anzugeben.
 
@@ -78,7 +79,7 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 </Project>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
 
  Die folgende Beispielprojektdatei verwendet die reservierte Eigenschaft `MSBuildProjectDirectory`, um den vollständigen Pfad zu einer Datei im Speicherort der Projektdatei zu erstellen.
 
@@ -94,7 +95,7 @@ Sie können den Namen oder Speicherort des Projekts in der Projektdatei verwende
 
 Das Beispiel verwendet die Syntax der [Eigenschaftenfunktion](property-functions.md), um die statische .NET Framework-Methode <xref:System.IO.Path.Combine*?displayProperty=fullName> aufzurufen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

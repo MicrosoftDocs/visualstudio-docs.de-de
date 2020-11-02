@@ -1,18 +1,18 @@
 ---
 title: Visual Studio- und GitHub Enterprise-Angebot | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 09/29/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Verwalten von Abonnements im Visual Studio- und GitHub Enterprise-Angebot
-ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584125"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467582"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Verwalten von Visual Studio-Abonnements mit GitHub Enterprise
 Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnement zu erwerben, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist die einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
@@ -40,7 +40,7 @@ Sobald Ihr Unternehmen ein GitHub Enterprise-Konto eingerichtet hat, erhalten Ab
 Weitere Details zur Einrichtung von GitHub Enterprise finden Sie unter [Einführung von Visual Studio-Abonnements mit GitHub Enterprise](access-github.md).   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>Verwalten von GitHub Enterprise-Abonnements
-Beim Kauf von GitHub Enterprise-Abonnements geht GitHub eine Partnerschaft mit den Kunden ein, um beim Erstellen und Konfigurieren der Organisationen zu helfen, die auf GitHub zugreifen werden, sowie beim Identifizieren der Administratoren.  Diese Administratoren erhalten dann eine Benachrichtigung, dass sie als Administratoren eingerichtet wurden.  
+Beim Kauf von GitHub Enterprise-Abonnements geht GitHub eine Partnerschaft mit den Kunden ein, um beim Erstellen und Konfigurieren der Organisationen zu helfen, die auf GitHub zugreifen werden, sowie beim Bestimmen der Administratoren.  Diese Administratoren erhalten dann eine Benachrichtigung, dass sie als Administratoren eingerichtet wurden.  
 
 Da dieser Prozess komplex ist, kann es nach dem Kauf von Abonnements mehrere Tage dauern, bis die Organisationen und Administratoren vollständig eingerichtet sind.
 

@@ -1,20 +1,20 @@
 ---
-title: 'Angebot: Visual Studio kombiniert mit GitHub | Microsoft-Dokumentation'
+title: Visual Studio mit GitHub Enterprise | Microsoft-Dokumentation
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 02/17/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: Lernen Sie unser neues Angebot für Visual Studio in Kombination mit GitHub kennen.
-ms.openlocfilehash: 1cbc1822498dacf3b5e5c5292db28425ced16357
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: Hier erhalten Sie Informationen zum Zugriff auf GitHub Enterprise als Teil von Visual Studio-Abonnements.
+ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006097"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467517"
 ---
-# <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Einführung von Visual Studio-Abonnements mit GitHub Enterprise  
+# <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio mit GitHub Enterprise-Abonnements
 
 Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues Abonnement zu erwerben, das Visual Studio-Standardabonnements und GitHub Enterprise zusammenbringt. Es ist eine einfache und kostengünstige Möglichkeit für Visual Studio-Abonnenten, um GitHub Enterprise zu erhalten. 
 
@@ -24,65 +24,76 @@ Kunden mit Enterprise Agreements (EA) bei Microsoft sind berechtigt, ein neues A
 
 ## <a name="whats-available"></a>Was ist verfügbar? 
 
-Wenn Ihre Organisation ein neues Enterprise Agreement eingeht oder ein vorhandenes verlängert, sind die folgenden Optionen verfügbar:
+Die folgenden Optionen sind verfügbar:
 
 - Visual Studio Enterprise mit GitHub Enterprise
 - Visual Studio Professional mit GitHub Enterprise
 
-Wenn Ihre Organisation über ein Enterprise Agreement verfügt, dessen Verlängerung noch nicht ansteht, können Sie die „Step-Up“-SKU kaufen, um Ihren vorhandenen Visual Studio Enterprise- oder Visual Studio Professional-Abonnements GitHub Enterprise hinzuzufügen. Wenn Ihr Vertrag dann zur Verlängerung ansteht, können Sie das Angebot wahrnehmen.
+Visual Studio Enterprise, Visual Studio Professional und GitHub Enterprise bleiben auch weiterhin eigenständig verfügbar. 
 
-Vorhandene SKUs für Visual Studio Enterprise, Visual Studio Professional und GitHub Enterprise bleiben auch weiterhin separat verfügbar. 
+Weitere Informationen zum Nutzen und zu Optionen finden Sie unter <https://visualstudio.microsoft.com/subscriptions/visual-studio-github>. 
 
-Weitere Informationen zum Nutzen und zu Optionen finden Sie unter https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Wie funktioniert der Einrichtungsvorgang für Visual Studio mit GitHub Enterprise?
 
-## <a name="getting-your-subscriptions"></a>So erhalten Sie Ihre Abonnements
-
-Visual Studio- und GitHub Enterprise-Abonnements werden in zwei Teilen zugewiesen:
+Visual Studio- und GitHub Enterprise-Abonnements werden in zwei Teilen verwaltet:
 1. Das Visual Studio-Abonnement (Enterprise oder Professional)
-2. Das GitHub Enterprise-Abonnement
+2. GitHub Enterprise 
 
-Wenn Ihre Organisation Abonnements kauft, werden diese von Administratoren zugewiesen. Die Visual Studio- und GitHub Enterprise-Abonnements werden gesondert zugewiesen.  
+Wenn Ihnen ein Visual Studio- und GitHub-Abonnement zugewiesen wird, erhalten Sie eine E-Mail, in der Ihnen mitgeteilt wird, dass Ihr Visual Studio-Abonnementadministrator Ihnen ein Abonnement zugewiesen hat.  An diesem Punkt können Sie die verfügbaren Abonnementvorteile unter <https://my.visualstudio.com/benefits> anzeigen.  Darunter ist auch der GitHub Enterprise-Vorteil wie unten dargestellt enthalten.
 
-Wenn Ihnen ein Visual Studio- und GitHub-Abonnement zugewiesen werden, erhalten Sie eine E-Mail, in der Ihnen mitgeteilt wird, dass Ihr Visual Studio-Abonnementadministrator Ihnen ein Abonnement zugewiesen hat.  Zu diesem Zeitpunkt können Sie es unter https://my.visualstudio.com/subscriptions anzeigen.  
+   > [!div class="mx-imgBorder"]
+   > ![Einrichten eines Enterprise-Kontos in GitHub Enterprise ausstehend](_img/access-github/pending-account-setup.png "Ihre Organisation muss zuerst ein Enterprise-Konto einrichten.")  
 
-Da die GitHub Enterprise-Abonnements gesondert zugewiesen werden, erhalten Sie eventuell eine Benachrichtigung von einem anderen Administrator, je nachdem, wie sich Ihre Organisieren entschieden hat, ihre Abonnements zu organisieren.  Es kann auch zu einer Verzögerung zwischen der Zuweisung des Visual Studio-Abonnements und des GitHub Enterprise-Abonnements kommen. Seien Sie also unbesorgt, wenn nicht beide sofort verfügbar sind.  Der Zuweisungsprozesses für das GitHub-Abonnement ist komplexer und kann mehrere Werktage dauern.  
+GitHub Enterprise wird von einem GitHub-Administrator getrennt von den Visual Studio-Abonnements verwaltet.  Wenn Ihr Unternehmen ein GitHub Enterprise-Konto eingerichtet hat, erhalten Sie eine E-Mail von GitHub, in der Sie benachrichtigt werden, dass Ihr Visual Studio-Abonnement verknüpft wurde und die Kachel „Vorteil“ wie unten gezeigt aktualisiert wird.  Die Einrichtung dieses Kontos kann einige Zeit in Anspruch nehmen und ist von Ihrem Unternehmen abhängig, das den Einrichtungsvorgang abschließt. Sobald Sie die E-Mail erhalten haben, können Sie sich an den Administrator der entsprechenden GitHub-Organisation wenden, um eine Einladung für die Organisation und/oder das Repository anzufordern.  
 
-## <a name="getting-started-with-github"></a>Erste Schritte mit GitHub
+   > [!div class="mx-imgBorder"]
+   > ![Ausstehende GitHub-Einladung in GitHub Enterprise](_img/access-github/pending-invite.png "Wenden Sie sich an Ihren GitHub-Administrator, um eine Einladung für eine GitHub-Organisation anzufordern.")  
 
-Wenn Sie mit GitHub noch nicht vertraut sind, finden Sie hier einige Ressourcen, die für Sie hilfreich sein können:
+Wenn der Administrator Ihrer GitHub-Organisation die Einladung versendet, empfangen Sie eine E-Mail von GitHub, und die Kachel des Vorteils wird nochmals aktualisiert:
+
+   > [!div class="mx-imgBorder"]
+   > ![Ausstehende Annahme der GitHub Enterprise-Einladung](_img/access-github/pending-acceptance.png "Nehmen Sie die Einladung an, die Sie in der E-Mail von GitHub erhalten.")  
+
+Nachdem Sie die GitHub-Organisationseinladung angenommen haben, wird der auf der Kachel angezeigte Status von „Ausstehend“ in „Aktiviert“ geändert.
+
+   > [!div class="mx-imgBorder"]
+   > ![GitHub Enterprise-Status „Aktiviert“](_img/access-github/activated.png "Nach Annahme der Einladung finden Sie auf der Kachel die Information, dass Ihr Abonnement aktiviert wurde.")  
+
+## <a name="get-started-with-github"></a>Erste Schritte mit GitHub
+
+Wenn Sie mit GitHub noch nicht vertraut sind, finden Sie hier einige hilfreiche Ressourcen:
 
 | Betreff                                  | GitHub-Hilfethema                                     |
 |------------------------------------------|-------------------------------------------------------|
-| Allgemeine Fragen/Informationen          | [GitHub-Hilfe](https://help.github.com/en)             |
-| Was ist GitHub?  Wie kann ich mehr erfahren?  | [Informationen zu GitHub](https://help.github.com/en/categories/about-github)                                       |
-| Wie fange ich mit der Verwendung von GitHub an?     | [Bootcamp](https://help.github.com/en/categories/bootcamp)                                              |
-| Wie verwalte ich mein Benutzerkonto und Profil?       | [Einrichten und Verwalten Ihres GitHub-Benutzerkontos](https://help.github.com/en/categories/setting-up-and-managing-your-github-user-account)    |
-| Wie verwalte ich meinen Zugriff auf GitHub?   | [Authentifizierung bei GitHub](https://help.github.com/en/categories/authenticating-to-github)                           |
-| Wie verwendet und schützt GitHub meine Daten? | [Grundlegendes dazu, wie GitHub Ihre Daten verwendet und schützt](https://help.github.com/en/categories/understanding-how-github-uses-and-protects-your-data)|
+| Allgemeine Fragen/Informationen          | [GitHub-Hilfe](https://help.github.com)             |
+| Was ist GitHub?  Wie kann ich mehr erfahren?  | [Informationen zu GitHub](https://help.github.com/categories/about-github)                                       |
+| Wie fange ich mit der Verwendung von GitHub an?     | [Bootcamp](https://help.github.com/categories/bootcamp)                                              |
+| Wie verwalte ich mein Benutzerkonto und Profil?       | [Einrichten und Verwalten Ihres GitHub-Benutzerkontos](https://help.github.com/categories/setting-up-and-managing-your-github-user-account)    |
+| Wie verwalte ich meinen Zugriff auf GitHub?   | [Authentifizierung bei GitHub](https://help.github.com/categories/authenticating-to-github)                           |
+| Wie verwendet und schützt GitHub meine Daten? | [Grundlegendes dazu, wie GitHub Ihre Daten verwendet und schützt](https://help.github.com/categories/understanding-how-github-uses-and-protects-your-data)|
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="q--where-is-my-github-subscription"></a>Frage:  Wo befindet sich mein GitHub-Abonnement?
-Antwort:  Der Prozess zum Einrichten des GitHub-Abonnements kann eine Weile dauern.  Wenn Sie schon länger warten und nichts gehört haben, können Sie sich an Ihren GitHub-Administrator wenden.  Es ist möglich, dass Ihr Administrator noch daran arbeitet oder sich entschieden hat, Ihnen kein GitHub-Abonnement zuzuweisen. 
+Antwort:  Der Einrichtungsprozess für ein GitHub Enterprise-Konto kann eine Weile dauern.  Wenn Sie schon länger warten und nichts gehört haben, können Sie sich an Ihren GitHub-Administrator wenden.  Es ist möglich, dass Ihr Administrator noch daran arbeitet oder sich entschieden hat, kein GitHub Enterprise-Konto zu erstellen. 
 
-### <a name="q--how-do-i-reach-my-github-administrator"></a>Frage:  Wie erreiche ich meinen GitHub-Administrator?
-Antwort:  Wenn Sie GitHub Enterprise Server verwenden, wählen Sie den Link **Support** am unteren Rand des Clients aus, um eine Verbindung mit Ihrem Administrator herzustellen.
-
-### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Frage: Erhalte ich das vollständige Visual Studio-Abonnement (Professional oder Enterprise), oder erhalte ich lediglich die IDE mit diesem Angebot?
-Antwort:  Zusammen mit einem GitHub Enterprise-Abonnement erhalten Sie ein vollständiges Visual Studio-Abonnement.  Sie erhalten alle Vorteile wie Softwaredownloads, Clouddienste, technischen Support und Partnervorteile im Rahmen dieses Abonnements, genau so, als ob das Abonnement separat erworben worden wäre.
+### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>Frage: Erhalte ich alle Vorteile eines Visual Studio-Abonnements?
+Antwort:  Sie erhalten mit GitHub Enterprise alle Vorteile eines Visual Studio-Standardabonnements wie Softwaredownloads, Clouddienste, technischen Support und Partnervorteile im Rahmen dieses Abonnements, genau so, als ob das Abonnement separat erworben worden wäre.
 
 ## <a name="support-resources"></a>Supportressourcen
-- Antworten auf Fragen zu einer Vielzahl von GitHub-Themen finden Sie unter [GitHub-Hilfe](https://help.github.com/en).
+- Weitere Informationen zur GitHub-Zuweisung finden Sie unter [GitHub Docs](https://docs.github.com/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle).
+- Antworten auf Fragen zu einer Vielzahl von GitHub-Themen finden Sie unter [GitHub-Hilfe](https://help.github.com).
+- Benötigen Sie weitere Hilfe?  Wenden Sie sich an den [GitHub-Support](https://support.github.com/).
 - Hilfe von anderen GitHub-Benutzern finden Sie im [GitHub-Community-Forum](https://github.community/).
-- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Wenn Sie Unterstützung beim Vertrieb, bei Abonnements und Konten sowie bei der Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport für Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 - Erhalten Sie [technischen Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) für GitHub Enterprise.   
 
 ## <a name="see-also"></a>Siehe auch
-- [Dokumentation zu Visual Studio](/visualstudio/)
-- [Dokumentation zu Azure DevOps](/azure/devops/)
-- [Azure-Dokumentation](/azure/)
-- [Dokumentation zu Microsoft 365](/microsoft-365/)
+- [Dokumentation zu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentation zu Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Azure-Dokumentation](https://docs.microsoft.com/azure/)
+- [Dokumentation zu Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Wenn Sie mit GitHub noch nicht vertraut sind, sehen Sie sich das [GitHub Learning Lab](https://lab.github.com/) an, das Sie durch eine Reihe lehrreicher und praktischer Projekte führt und dabei hilfreiches Feedback an Sie weitergibt.

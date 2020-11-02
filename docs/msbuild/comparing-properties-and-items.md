@@ -1,5 +1,7 @@
 ---
 title: Vergleich von Eigenschaften und Elementen | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild-Eigenschaften und -Elemente Informationen an Aufgaben übergeben, Bedingungen auswerten und Werte speichern, auf die von der Projektdatei verwiesen werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634408"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796770"
 ---
 # <a name="compare-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 
@@ -111,7 +113,7 @@ Das stimmt allerdings nicht ganz. Wenn eine Eigenschaft, eine Elementdefinition 
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Geringfügige Auswirkungen der Auswertungsreihenfolge
 
-In der Auswertungsphase eines Builds erfolgt die Auswertung von Eigenschaften vor der Auswertung von Elementen. Trotzdem können Eigenschaften Werte besitzen, die scheinbar von Elementwerten abhängen. Sehen Sie sich das folgende Skript an.
+In der Auswertungsphase eines Builds erfolgt die Auswertung von Eigenschaften vor der Auswertung von Elementen. Trotzdem können Eigenschaften Werte besitzen, die scheinbar von Elementwerten abhängen. Betrachten Sie folgendes Skript.
 
 ```xml
 <ItemGroup>
@@ -185,6 +187,6 @@ Der Wert von `KeyFileVersion` wird auf „1.0.0.3“ und nicht auf „\@(Schlüs
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Weiterführende Konzepte](../msbuild/msbuild-advanced-concepts.md)

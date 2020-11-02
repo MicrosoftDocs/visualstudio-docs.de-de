@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie neu erworbene Visual Studio-Monatsabonnements zum Verwaltungsportal für Abonnements hinzufügen
-ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005098"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467595"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Hinzufügen neuer Visual Studio-Monatsabonnements zum Verwaltungsportal für Abonnements
 Wenn Sie unter Verwendung eines Azure-Abonnements neue Visual Studio-Monatsabonnements erwerben, müssen Sie diese gegebenenfalls zum Verwaltungsportal für Abonnements hinzufügen, um sie Benutzern zuweisen zu können.  
@@ -39,7 +39,7 @@ Ob bzw. welche Schritte zum Hinzufügen von Monatsabonnements ausgeführt werden
 
 ## <a name="things-to-keep-in-mind"></a>Bitte beachten
 - Die Option zum Hinzufügen neuer Monatsabonnements ist erst verfügbar, wenn Sie erstmalig ein solches Abonnement erwerben.  Nachdem Sie Monatsabonnements hinzugefügt haben, überprüfen wir jedes Mal, wenn Sie sich beim Portal anmelden, ob neue Abonnements vorhanden sind. 
-- Wenn neue Abonnements gefunden werden, sind diese möglicherweise bereits Abonnenten zugewiesen.  Der Grund dafür ist, dass auch andere Administratoren auf das Azure-Abonnement zugreifen können, und diese Administratoren die neuen Visual Studio-Abonnements bereits Benutzern zugewiesen haben.  Nachdem Sie die Abonnements zu Ihrem Portal hinzugefügt haben, können Sie sie verwalten. 
+- Wenn neue Abonnements gefunden werden, sind diese möglicherweise bereits Abonnenten zugewiesen.  Der Grund dafür ist, dass auch andere Administratoren auf das Azure-Abonnement zugreifen können, und diese Administratoren die neuen Visual Studio-Abonnements bereits Benutzern zugewiesen haben.  Nachdem Sie die Abonnements zu Ihrem Portal hinzugefügt haben, können Sie sie verwalten. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nachdem Sie Abonnements hinzugefügt haben, können Sie sie Benutzern zuweisen.  Dazu haben Sie verschiedene Möglichkeiten:

@@ -1,24 +1,24 @@
 ---
-title: Verantwortlichkeiten des Administrators | Visual Studio Marketplace
+title: Administratoraufgaben bei Visual Studio-Abonnements | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 09/03/2019
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: Erfahren Sie mehr über die Verantwortlichkeiten von Abonnementadministratoren.
-ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: Erfahren Sie mehr über die Aufgaben von Abonnementadministratoren.
+ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006136"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467465"
 ---
-# <a name="overview-of-administrator-responsibilities"></a>Übersicht über die Verantwortlichkeiten des Administrators
+# <a name="overview-of-admin-responsibilities"></a>Übersicht über die Aufgaben eines Administrators
 Als Administrator können Sie Abonnements für Ihre Organisation verwalten.  Die Administratorrolle trägt auch die Verantwortung dafür, dass die Abonnements in Übereinstimmung mit den Lizenzbedingungen verwaltet werden. In diesem Artikel werden die Verantwortlichkeiten, Vorteile und Einschränkungen der Administratorrolle beschrieben.
 
 ## <a name="roles--responsibilities"></a>Rollen und Zuständigkeiten
-Ein Administrator für Visual Studio-Abonnements ist hauptsächlich für vier Aufgaben zuständig:
+Ein Administrator von Visual Studio-Abonnements ist hauptsächlich für vier Aufgaben zuständig:
 
 1. **Verstehen Sie die Vorteile und Einschränkungen von Visual Studio-Abonnements.** Wenn Sie die Vorteile in vollem Umfang verstehen, kann Ihnen das dabei helfen, die Hardwarekosten einzuschränken, indem Sie Clouddienste verwenden, und Softwarekosten mithilfe von Lizenzen pro Benutzer für Präproduktionsumgebungen zu reduzieren. 
 2. **Weisen Sie die Visual Studio-Abonnements bestimmten Personen zu, und fordern Sie sie zur Nutzung auf.** In ihrem Vertrag ist festgehalten, dass Visual Studio-Abonnements bestimmten Personen zugewiesen werden müssen. Bleiben Sie mit Ihren Abonnenten in Kontakt, um zu gewährleisten, dass diese die Vorteile ihres Visual Studio-Abonnements in vollem Umfang nutzen.

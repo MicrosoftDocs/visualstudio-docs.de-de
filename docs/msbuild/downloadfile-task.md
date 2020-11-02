@@ -1,5 +1,7 @@
 ---
 title: DownloadFile-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Parameter der MSBuild-Aufgabe „DownloadFile“, mit der angegebene Dateien unter Verwendung von HTTP heruntergeladen werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fda3edcd1c8bf173e1b70d8bf2d76d58f6e10d8d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634252"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436650"
 ---
 # <a name="downloadfile-task"></a>DownloadFile-Aufgabe
 
@@ -38,7 +40,7 @@ Diese Aufgabe lädt die angegebenen Dateien mithilfe des Hypertext Transfer-Prot
 
 ## <a name="parameters"></a>Parameter
 
-In der folgenden Tabelle werden die Parameter der `DownloadFile`-Aufgabe beschrieben.
+In der folgenden Tabelle werden die Parameter der `DownloadFile` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -50,7 +52,7 @@ In der folgenden Tabelle werden die Parameter der `DownloadFile`-Aufgabe beschri
 |`SkipUnchangedFiles`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true` festgelegt ist, wird das Herunterladen der unveränderten Dateien übersprungen. Wird standardmäßig auf `true` festgelegt. In der `DownloadFile`-Aufgabe werden Dateien als unverändert betrachtet, wenn sie laut dem Remoteserver dieselbe Größe aufweisen und zur selben Zeit zuletzt geändert wurden. <br /><br />**Hinweis:** Nicht alle HTTP-Server geben das letzte Änderungsdatum von Dateien an. Dadurch wird die Datei erneut heruntergeladen.|
 |`SourceUrl`|Erforderlicher `String`-Parameter.<br /><br /> Gibt die URL für den Download an.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
@@ -78,5 +80,5 @@ In folgendem Beispiel wird eine Datei heruntergeladen und in die `Content`-Eleme
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

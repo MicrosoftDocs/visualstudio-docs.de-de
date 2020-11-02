@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: overview
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
-ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005315"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353446"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“** .
@@ -36,7 +36,7 @@ Um Cloudabonnements zu erwerben, müssen Sie in einem Azure-Abonnement, das für
 
 3. Wählen Sie das Azure-Abonnement, über das abgerechnet werden soll. Wenn Sie noch nicht über ein Azure-Abonnement verfügen, können Sie ein neues erstellen.
     > [!div class="mx-imgBorder"]
-    > ![Auswählen eines Azure-Abonnements für die Rechnungsstellung](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
+    > ![Auswählen eines Azure-Abonnements für die Rechnungsstellung](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png "Wählen Sie das Azure-Abonnement aus, das zum Kauf Ihrer Abonnements verwendet werden soll.")
 
 4. Wählen Sie die Anzahl der zu erwerbenden Abonnements aus.
     > [!div class="mx-imgBorder"]
@@ -47,18 +47,21 @@ Um Cloudabonnements zu erwerben, müssen Sie in einem Azure-Abonnement, das für
 5. Bestätigen Sie Ihren Kauf, und schließen Sie diesen ab. Wenn Sie sich selbst ein Abonnement zugewiesen haben, können Sie das [Portal für Visual Studio-Abonnenten](https://my.visualstudio.com) besuchen, um die Software herunterzuladen und andere Vorteile des Abonnements zu nutzen.
 
 > [!div class="mx-imgBorder"]
-> ![Kauf erfolgreich abgeschlossen](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
+> ![Kauf erfolgreich abgeschlossen](_img/buy-vs-subscriptions/buy-vs-sub-success.png "Sie erhalten eine Bestätigung, dass der Kaufvorgang erfolgreich war.")
+
+0. Klicken Sie auf **Mein Abonnement anzeigen** , um das Abonnentenportal zu öffnen und Ihr Abonnent zu verwenden.
 
 > [!div class="mx-imgBorder"]
-> ![Wechseln zum Visual Studio-Portal für Abonnenten](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
+> ![Wechseln zum Visual Studio-Portal für Abonnenten](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png "Im Visual Studio-Abonnementportal können Sie Ihr Abonnement anzeigen und die verfügbaren Vorteile nutzen.")
 
-Wenn Sie mehr als ein Abonnement erworben haben, können Sie im [Portal zur Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) anderen Personen Abonnements zuweisen.  Möglicherweise [müssen Sie Ihre neuen Abonnements dem Administrationsportal hinzufügen](add-monthly-subs.md), wenn Sie sie erstmals erworben haben.
-
-> [!div class="mx-imgBorder"]
-> ![Zuweisen von Abonnements zu anderen](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
+Wenn Sie mehr als ein Abonnement erworben haben, können Sie im [Portal zur Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) anderen Personen Abonnements zuweisen.  Möglicherweise [müssen Sie Ihre neuen Abonnements dem Verwaltungsportal hinzufügen](add-monthly-subs.md), wenn Sie sie erstmalig erworben haben.
 
 > [!div class="mx-imgBorder"]
-> ![Anzeigen von Abonnements](_img/buy-vs-subscriptions/assign-subscriptions.png)
+> ![Zuweisen von Abonnements zu anderen](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png "Klicken Sie auf „Benutzern zuweisen“, um Ihren Benutzern Abonnements zuzuweisen.")
+
+
+> [!div class="mx-imgBorder"]
+> ![Anzeigen von Abonnements](_img/buy-vs-subscriptions/assign-subscriptions.png "Klicken Sie auf „Hinzufügen“, um Benutzern Abonnements zuzuweisen")
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Abbrechen der Erneuerungen von erworbenen Cloudabonnements
 
@@ -121,7 +124,7 @@ Antwort:  Ihr Administrator kann die Anzahl der Abonnements weiterhin reduzieren
 Antwort:  Sie können zwar kein weiteres jährliches Cloudabonnement erwerben, aber es gibt viele andere Optionen für den Erwerb von Visual Studio-Abonnements.  Weitere Informationen finden Sie unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
-- [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com/)
+- [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com/)
 - [Support für Visual Studio-Abonnements](https://visualstudio.microsoft.com/vs/support/)
 - [Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements](vscloud-billing-faq.md)
 - [Visual Studio cloud subscription purchasing for CSPs (Erwerben von Visual Studio-Cloudabonnements für CSPs)](vscloud-csp.md)

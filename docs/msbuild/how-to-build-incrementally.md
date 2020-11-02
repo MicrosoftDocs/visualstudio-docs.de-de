@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Inkrementelles Erstellen | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie MSBuild für inkrementelle Builds verwenden, damit zuvor erstellte Komponenten, die noch immer aktuell sind, nicht neu erstellt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b7d54db50b4f28277a81d149b4c0c5140b002b0
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634161"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436010"
 ---
 # <a name="how-to-build-incrementally"></a>Vorgehensweise: Inkrementelles Erstellen
 
@@ -29,7 +31,7 @@ Ein Ziel kann inkrementell erstellt werden, wenn die Eingaben und Ausgaben in de
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>So geben Sie Eingaben und Ausgaben für ein Ziel an
 
-- Verwenden Sie die `Inputs`- und `Outputs`-Attribute des `Target`-Elements an. Zum Beispiel:
+- Verwenden Sie die `Inputs`- und `Outputs`-Attribute des `Target`-Elements an. Beispiel:
 
   ```xml
   <Target Name="Build"
@@ -37,7 +39,7 @@ Ein Ziel kann inkrementell erstellt werden, wenn die Eingaben und Ausgaben in de
       Outputs="hello.exe">
   ```
 
-MSBuild kann die Zeitstempel der Eingabedatei mit den Zeitstempeln der Ausgabedateien vergleichen und bestimmen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Wenn im folgenden Beispiel eine Datei in der `@(CSFile)`-Elementauflistung neuer als die *hello.exe*-Datei ist, führt MSBuild das Ziel aus; andernfalls wird es übersprungen:
+MSBuild kann die Zeitstempel der Eingabedatei mit den Zeitstempeln der Ausgabedateien vergleichen und bestimmen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Wenn im folgenden Beispiel eine Datei in der `@(CSFile)`-Elementauflistung neuer als die *hello.exe* -Datei ist, führt MSBuild das Ziel aus; andernfalls wird es übersprungen:
 
 ```xml
 <Target Name="Build"
@@ -59,11 +61,11 @@ Aufgaben, in denen Sie eine direkte Zuordnung zwischen den Aus- und Eingaben erk
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel verwendet ein Projekt, das Hilfedateien für ein hypothetisches Hilfesystem erstellt. Das Projekt arbeitet, indem *TXT*-Quelldateien in *CONTENT*-Zwischendateien konvertiert werden, die dann mit XML-Metadatendateien kombiniert werden, um die finale *HELP*-Datei zu erstellen, die vom Hilfesystem verwendet wird. Das Projekt verwendet die folgenden hypothetischen Aufgaben:
+Das folgende Beispiel verwendet ein Projekt, das Hilfedateien für ein hypothetisches Hilfesystem erstellt. Das Projekt arbeitet, indem *TXT* -Quelldateien in *CONTENT* -Zwischendateien konvertiert werden, die dann mit XML-Metadatendateien kombiniert werden, um die finale *HELP* -Datei zu erstellen, die vom Hilfesystem verwendet wird. Das Projekt verwendet die folgenden hypothetischen Aufgaben:
 
-- `GenerateContentFiles`: Konvertiert *TXT*-Dateien in *CONTENT*-Dateien.
+- `GenerateContentFiles`: Konvertiert *TXT* -Dateien in *CONTENT* -Dateien.
 
-- `BuildHelp`: Kombiniert *CONTENT*-Dateien und XML-Metadatendateien, um die finale *HELP*-Datei zu erstellen.
+- `BuildHelp`: Kombiniert *CONTENT* -Dateien und XML-Metadatendateien, um die finale *HELP* -Datei zu erstellen.
 
 Das Projekt verwendet Transformationen, um eine 1:1-Zuordnung zwischen Eingaben und Ausgaben in der `GenerateContentFiles`-Ausgabe zu erstellen. Weitere Informationen finden Sie unter [Transformationen](../msbuild/msbuild-transforms.md). Es wird ebenso festgelegt, dass das `Output`-Element automatisch die Ausgaben der `GenerateContentFiles`-Aufgabe als Eingaben für die `BuildHelp`-Aufgabe verwendet.
 

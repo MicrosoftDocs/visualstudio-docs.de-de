@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 03/26/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Informationen zum Power BI-Abonnement, das in ausgewählten Visual Studio-Abonnements enthalten ist
-ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005025"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435786"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro in Visual Studio-Abonnements
 
@@ -27,35 +27,35 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
 
 2. Suchen Sie auf der Seite „Vorteile“ im Abschnitt“ Tools“ die Kachel „Power BI Pro“. Klicken Sie unten auf der Vorteil-Kachel auf den Link **Get Code** (Code anfordern).   Sie erhalten daraufhin die Benachrichtigung, dass der Code erfolgreich abgerufen wurde.  Klicken Sie auf **Activate** (Aktivieren).
    > [!div class="mx-imgBorder"]
-   > ![Kachel des Vorteils „Power BI Pro“](_img/vs-pbi/vs-pbi-tile.png)
+   > ![Kachel des Vorteils „Power BI Pro“](_img/vs-pbi/vs-pbi-tile.png "Klicken Sie auf der Power BI Pro-Kachel auf „Code abrufen“ und dann auf „Aktivieren“, um mit der Aktivierung fortzufahren.")
 
 3. Wenn Sie bereits andere Abonnementvorteile wie das Microsoft 365-Entwicklerabonnement oder Enterprise Mobility + Security aktiviert haben, haben Sie möglicherweise schon ein Konto eingerichtet.  Wenn ein Konto gefunden wird, können Sie entscheiden, ob Sie Ihr Power BI Pro-Abonnement zu Ihrem Konto hinzufügen oder ein neues Konto erstellen möchten.  Es wird dringend empfohlen, das Abonnement zu Ihrem Konto hinzuzufügen, damit Sie nur über eine einzige Benutzer-ID auf die verschiedenen Vorteile zugreifen können.
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro-Vorteil: vorhandenes Konto](_img/vs-pbi/vs-pbi-existing-account.png)
+   > ![Power BI Pro-Vorteil: vorhandenes Konto](_img/vs-pbi/vs-pbi-existing-account.png "Fügen Sie Power BI Pro zu Ihrem vorhandenen Konto hinzu (sofern Sie bereits über ein Konto verfügen).")
 
-4. Geben Sie Ihre Kontaktinformationen an, um ein neues Konto zu erstellen, und klicken sie anschließend auf **Weiter**.
+4. Geben Sie Ihre Kontaktinformationen an, um ein neues Konto zu erstellen, und klicken sie anschließend auf **Weiter** .
 
 5. Erstellen Sie anschließend Ihre Benutzer-ID und ein Kennwort.  Wenn Sie bereits ein Konto haben und trotzdem ein Neues erstellen möchten, müssen Sie einen anderen Unternehmensnamen verwenden.  Klicken Sie auf **Create my account** (Mein Konto erstellen).
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro-Vorteil: Benutzer-ID erstellen](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
+   > ![Power BI Pro-Vorteil: Benutzer-ID erstellen](_img/vs-pbi/vs-pbi-create-user-id-cropped.png "Bei neuen Konten geben Sie eine Benutzer-ID und ein Kennwort ein.")
 
 6. Sie werden aufgefordert, einen Bestätigungscode einzufügen, um sicherzustellen, dass das Konto von einem Menschen erstellt wird.  Bitte geben Sie eine Telefonnummer an, und wählen Sie aus, ob Sie den Code über einen Anruf oder per SMS erhalten möchten.  Klicken Sie auf **Text me** (SMS) oder **Call me** (Anruf).
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro-Vorteil: kein Bot](_img/vs-pbi/vs-pbi-robot1-cropped.png)
+   > ![Power BI Pro-Vorteil: kein Bot](_img/vs-pbi/vs-pbi-robot1-cropped.png "Wählen Sie die SMS- oder Anrufoption aus, um Ihren Bestätigungscode zu erhalten.")
 
-7. Geben Sie den Code ein, den Sie erhalten haben, und klicken Sie auf **Weiter**.
+7. Geben Sie den Code ein, den Sie erhalten haben, und klicken Sie auf **Weiter** .
 
-8. Geben Sie Ihre Kontaktinformationen an, und klicken sie anschließend auf **Weiter**.
+8. Geben Sie Ihre Kontaktinformationen an, und klicken sie anschließend auf **Weiter** .
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro-Vorteil: Kontaktinformationen](_img/vs-pbi/vs-pbi-contact-cropped.png)
+   > ![Power BI Pro-Vorteil: Kontaktinformationen](_img/vs-pbi/vs-pbi-contact-cropped.png "Geben Sie Ihre Kontaktinformationen für das Konto an.")
 
-9. Auf der nächsten Seite wird bestätigt, dass Ihr Power BI Pro Developer-Konto (MSDN) kostenlos ist.  Klicken Sie auf **Weiter**.
+9. Auf der nächsten Seite wird bestätigt, dass Ihr Power BI Pro Developer-Konto (MSDN) kostenlos ist.  Klicken Sie auf **Weiter** .
 
-10. Zuletzt werden Sie um Zahlungsinformationen gebeten.  Sie brauchen dabei aber keine Bedenken haben: Wir buchen kein Geld von ihrem Konto ab.  Beachten Sie, dass das Abonnement immer noch kostenlos ist.  Sie können eine Kreditkarte, ein Bankkonto oder „Rechnung“ als Zahlungsmethode auswählen.  Wenn Sie **Rechnung** auswählen, werden Sie möglicherweise gefragt, warum Sie diese Zahlungsmethode bevorzugen.  Bitte stellen Sie die erforderlichen Informationen zu Ihrer bevorzugten Zahlungsmethode bereit, und klicken Sie auf **Bestellung aufgeben**.
+10. Zuletzt werden Sie um Zahlungsinformationen gebeten.  Sie brauchen dabei aber keine Bedenken haben: Wir buchen kein Geld von ihrem Konto ab.  Beachten Sie, dass das Abonnement immer noch kostenlos ist.  Sie können eine Kreditkarte, ein Bankkonto oder „Rechnung“ als Zahlungsmethode auswählen.  Wenn Sie **Rechnung** auswählen, werden Sie möglicherweise gefragt, warum Sie diese Zahlungsmethode bevorzugen.  Bitte stellen Sie die erforderlichen Informationen zu Ihrer bevorzugten Zahlungsmethode bereit, und klicken Sie auf **Bestellung aufgeben** .
     > [!div class="mx-imgBorder"]
-    > ![Power BI Pro-Vorteil: Kontaktinformationen](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
+    > ![Power BI Pro-Vorteil: Zahlungsinformationen](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png "Wählen Sie eine Zahlungsmethode aus.  Für dieses Angebot fallen keine Gebühren an.")
 
-11. Auf der nächsten Seite erhalten Sie eine Bestätigung, dass Sie Power BI Pro jetzt verwenden können.  Auf der Seite wird ein Link zur Anmeldeseite angegeben.  Es wird empfohlen, den Link zu der Anmeldeseite sowie Ihre Benutzer-ID zu speichern.  (Außerdem wird eine Begrüßungs-E-Mail an die Adresse gesendet, die Sie beim Einrichten des Kontos angegeben haben.)  Es wird möglicherweise automatisch ein Fenster des Microsoft 365-Assistenten angezeigt, das Sie bei Fragen nutzen können.  Klicken Sie auf **Los geht's**, um fortzufahren.
+11. Auf der nächsten Seite erhalten Sie eine Bestätigung, dass Sie Power BI Pro jetzt verwenden können.  Auf der Seite wird ein Link zur Anmeldeseite angegeben.  Es wird empfohlen, den Link zu der Anmeldeseite sowie Ihre Benutzer-ID zu speichern.  (Außerdem wird eine Begrüßungs-E-Mail an die Adresse gesendet, die Sie beim Einrichten des Kontos angegeben haben.)  Es wird möglicherweise automatisch ein Fenster des Microsoft 365-Assistenten angezeigt, das Sie bei Fragen nutzen können.  Klicken Sie auf **Los geht's** , um fortzufahren.
 
 12. Mit der erfolgreichen Einrichtung Ihres Power BI Pro-Kontos haben Sie Zugriff auf das Microsoft 365-Administratorzentrum, in dem Sie Benutzer und Domänen verwalten, Office-Software installieren und mehr über Microsoft 365 erfahren können.  Das ist alles!  Jetzt sind Sie startbereit.
 
@@ -72,7 +72,7 @@ Sie müssen ein Konto einrichten oder sich mit einem bereits vorhandenen anmelde
 | Visual Studio Enterprise (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                  |NA|
 ||
 
-<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup>  *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, Imagine.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
@@ -91,10 +91,10 @@ Antwort:  Ja, Sie können ihn unter zwei wichtigen Voraussetzungen in einer Prod
 - Dieser Power BI Pro-Vorteil kann nicht für Behördenmandanten genutzt werden.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Frage:  Beim Versuch, Power BI Pro zu aktivieren, erhalte ich folgende Meldung: „You already have an account through work“ (Sie verfügen bereits über ein Arbeitskonto.).  Kann ich den Vorteil dennoch nutzen?
-Antwort:  Ja.  Die Meldung weist darauf hin, dass Sie bei einer Domäne mit aktiven Microsoft 365-Mandanten angemeldet sind, für die Sie nicht als Administrator fungieren.  Um Power BI Pro zu einem Mandanten hinzuzufügen, müssen Sie als Administrator für diesen Mandanten fungieren.  Um dieses Problem zu lösen, führen Sie diese Schritte aus, um Ihren eigenen Mandanten zu erstellen.
-1. Wenn die Meldung angezeigt wird, dass Sie bereits über die Arbeit ein Konto besitzen, klicken Sie auf **Neues Konto erstellen**.
+Antwort:  Ja.  Die Meldung weist darauf hin, dass Sie bei einer Domäne mit aktiven Microsoft 365-Mandanten angemeldet sind, für die Sie nicht als Administrator fungieren.  Um Power BI Pro zu einem Mandanten hinzuzufügen, müssen Sie als Administrator für diesen Mandanten fungieren.  Um dieses Problem zu lösen, führen Sie diese Schritte aus, um Ihren eigenen Mandanten zu erstellen.
+1. Wenn die Meldung angezeigt wird, dass Sie bereits über die Arbeit ein Konto besitzen, klicken Sie auf **Neues Konto erstellen** .
 
-2. Geben Sie im nächsten Bildschirm Ihre Kontaktinformationen ein, und klicken Sie auf **Weiter**.
+2. Geben Sie im nächsten Bildschirm Ihre Kontaktinformationen ein, und klicken Sie auf **Weiter** .
 
 3. Erstellen Sie Ihre Benutzer-ID und ein Kennwort.  Um das kostenlose Angebot zu nutzen, müssen Sie **.onmicrosoft.com** als Domäne auswählen. Klicken Sie auf **Create my account** (Mein Konto erstellen).
     > [!div class="mx-imgBorder"]
