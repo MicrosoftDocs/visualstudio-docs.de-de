@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Weiterleitungsprotokollierungen | Microsoft-Dokumentation
+description: Erstellen Sie MSBuild-Weiterleitungsprotokollierungen, um die Protokollierungseffizienz zu verbessern. Dazu wählen Sie die Ereignisse aus, die Sie beim Erstellen von Projekten überwachen möchten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634304"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796575"
 ---
 # <a name="create-forwarding-loggers"></a>Erstellen von Weiterleitungsprotokollierungen
 
@@ -42,7 +44,7 @@ Weiterleitungsprotokollierungen verbessern die Protokollierungseffizienz, da Sie
 
  Wenn Sie ein Projekt auf einem System mit mehreren Prozessoren erstellen, überlappen die Buildmeldungen der Prozessoren nicht automatisch in einer einheitlichen Sequenz. Stattdessen müssen Sie mit der <xref:Microsoft.Build.Framework.BuildEventContext>-Klasse, die an jede Meldung angefügt wird, das Gruppieren von Meldungen als Priorität festlegen. Weitere Informationen zur Builderstellung mit mehreren Prozessoren finden Sie unter [Logging in a Multi-Processor Environment (Protokollierung in einer Umgebung mit mehreren Prozessoren)](../msbuild/logging-in-a-multi-processor-environment.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Buildprotokollierungen](../msbuild/build-loggers.md)
