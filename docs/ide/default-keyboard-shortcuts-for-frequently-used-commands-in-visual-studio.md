@@ -1,5 +1,6 @@
 ---
-title: Standardtastenkombinationen für häufig verwendete Befehle
+title: Tastenkombinationen für häufig verwendete Befehle
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596722"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045661"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Beliebte Tastenkombinationen für Visual Studio
 
@@ -57,9 +58,9 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------| - |
 |Edit.BreakLine|**EINGABETASTE** [Text-Editor, Berichts-Designer, Windows Forms-Designer]<br /><br />oder **UMSCHALT+EINGABETASTE** [Text-Editor]|
-|Edit.CollapseToDefinitions|**STRG+M**, **STRG+O** [Text-Editor]|
-|Edit.CommentSelection|**STRG+K**, **STRG+C** [Text-Editor]|
-|Edit.CompleteWord|**ALT+NACH-RECHTS-TASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+K**, **W** [Workflow-Designer]<br /><br />oder **STRG+K, STRG+W** [Workflow-Designer]|
+|Edit.CollapseToDefinitions|**STRG+M** , **STRG+O** [Text-Editor]|
+|Edit.CommentSelection|**STRG+K** , **STRG+C** [Text-Editor]|
+|Edit.CompleteWord|**ALT+NACH-RECHTS-TASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+K** , **W** [Workflow-Designer]<br /><br />oder **STRG+K, STRG+W** [Workflow-Designer]|
 |Edit.Copy|**STRG+C** [Global]<br /><br />oder **STRG+EINFG** [Global]|
 |Edit.Cut|**STRG+X** [Global]<br /><br />oder **UMSCHALT+ENTF** [Global]|
 |Edit.Delete|**ENTF** [Global, Team Explorer]<br /><br />oder **UMSCHALT+ENTF** [Sequenzdiagramm, UML-Aktivitäts-Diagramm, Ebenendiagramm]<br /><br />oder **STRG+ENTF** [Klassendiagramm]|
@@ -75,7 +76,7 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**STRG+D** [Global]|
 |Edit.GoToNextLocation|**F8** [Global]|
-|Edit.InsertSnippet|**STRG+K**, **STRG+X** [Global]|
+|Edit.InsertSnippet|**STRG+K** , **STRG+X** [Global]|
 |Edit.InsertTab|**TAB** [Berichts-Designer, Windows Forms-Designer, Text-Editor]|
 |Edit.LineCut|**STRG+L** [Text-Editor]|
 |Edit.LineDownExtendColumn|**UMSCHALT+ALT+NACH-UNTEN-TASTE** [Text-Editor]|

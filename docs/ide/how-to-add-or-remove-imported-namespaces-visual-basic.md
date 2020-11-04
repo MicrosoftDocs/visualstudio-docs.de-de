@@ -1,5 +1,6 @@
 ---
-title: 'Vorgehensweise: Hinzufügen oder Entfernen von importierten Namespaces (Visual Basic)'
+title: Hinzufügen und Entfernen von importierten Namespaces (Visual Basic)
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a50fdb643029bed8a44ce6999d4a8ce062ba3dcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff6b63db07d515e85c4c756f8d302d292c62dd50
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284738"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047100"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Vorgehensweise: Hinzufügen oder Entfernen von importierten Namespaces (Visual Basic)
 
 Das Importieren eines Namespace ermöglicht Ihnen die Verwendung von Elementen aus diesem Namespace in Ihrem Code. Es ist nicht notwendig, das Element vollzuqualifizieren. Wenn Sie beispielsweise in der Klasse `System.Messaging.MessageQueue` auf die Methode `Create` zugreifen möchten, können Sie den `System.Messaging`-Namespace importieren und auf das benötigte Element im Code als `MessageQueue.Create` verweisen.
 
-Importierte Namespaces werden auf der Seite **Verweise** des **Projekt-Designers** verwaltet. Die Importe, die Sie in diesem Dialogfeld angeben, werden direkt an den Compiler ( */imports*) weitergegeben und gelten für alle Dateien in Ihrem Projekt. Verwenden Sie die `Imports`-Anweisung, um einen Namespace in einer einzelnen Quellcodedatei zu verwenden.
+Importierte Namespaces werden auf der Seite **Verweise** des **Projekt-Designers** verwaltet. Die Importe, die Sie in diesem Dialogfeld angeben, werden direkt an den Compiler ( */imports* ) weitergegeben und gelten für alle Dateien in Ihrem Projekt. Verwenden Sie die `Imports`-Anweisung, um einen Namespace in einer einzelnen Quellcodedatei zu verwenden.
 
 ### <a name="to-add-an-imported-namespace"></a>So fügen Sie einen importierten Namespace hinzu
 
@@ -59,7 +60,7 @@ Wenn Sie Ihre Meinung später ändern und feststellen, dass Sie doch die Klasse 
 
 3. Geben Sie im Textfeld unter der Liste **Importierte Namespaces** den vollständigen Namen des Namespace inklusive Stammnamespace ein, den Sie importieren möchten.
 
-4. Klicken Sie auf die Schaltfläche **Benutzerimport hinzufügen**, um den Namespace der Liste **Importierte Namespaces** hinzuzufügen.
+4. Klicken Sie auf die Schaltfläche **Benutzerimport hinzufügen** , um den Namespace der Liste **Importierte Namespaces** hinzuzufügen.
 
     > [!NOTE]
     > Die Schaltfläche **Benutzerimport hinzufügen** wird deaktiviert, wenn der Namespace mit einem Namespace übereinstimmt, der sich bereits auf der Liste befindet, da Sie einen Import nicht zweimal hinzufügen können.
@@ -74,7 +75,7 @@ Wenn Sie Ihre Meinung später ändern und feststellen, dass Sie doch die Klasse 
 
 4. Geben Sie im Textfeld unter der Liste **Importierte Namespaces** den Namen für den neuen Namespace ein.
 
-5. Klicken Sie auf die Schaltfläche **Benutzerimport aktualisieren**, um den Namespace in der Liste **Importierte Namespaces** zu aktualisieren.
+5. Klicken Sie auf die Schaltfläche **Benutzerimport aktualisieren** , um den Namespace in der Liste **Importierte Namespaces** zu aktualisieren.
 
 ## <a name="see-also"></a>Weitere Informationen
 
