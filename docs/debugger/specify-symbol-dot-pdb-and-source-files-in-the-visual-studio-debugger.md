@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89599587"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Angeben von Symboldateien (PDB-Dateien) und Quelldateien im Visual Studio Debugger (C#, C++, Visual Basic, F#)
@@ -123,8 +123,8 @@ Auf der Seite **Extras** > **Optionen** > **Debuggen** > **Symbole** können Sie
      1. Wählen Sie auf der Symbolleiste das Symbol ![Extras &#47; Optionen &#47; Debuggen &#47; Symbole neuer Server](media/dbg_tools_options_foldersicon.png "Neues Serversymbol „Extras &#45; Optionen &#45; Debuggen &#45; Symbole“") aus.
      1. Wählen Sie im Dialogfeld **Verbindung mit VSTS-Symbolserver herstellen** einen der verfügbaren Symbolserver aus, und wählen Sie dann **Verbinden** aus.
 
-   - Um die Ladereihenfolge für die Symbolspeicherorte zu ändern, verwenden Sie **STRG**+**NACH-OBEN** und **STRG**+**NACH-UNTEN** oder die Symbole **Pfeil-nach-oben** oder **Pfeil-nach-unten** .
-   - Zum Bearbeiten einer URL oder eines Pfads doppelklicken Sie auf den Eintrag, oder wählen Sie ihn aus, und drücken Sie dann **F2** .
+   - Um die Ladereihenfolge für die Symbolspeicherorte zu ändern, verwenden Sie **STRG**+**NACH-OBEN** und **STRG**+**NACH-UNTEN** oder die Symbole **Pfeil-nach-oben** oder **Pfeil-nach-unten**.
+   - Zum Bearbeiten einer URL oder eines Pfads doppelklicken Sie auf den Eintrag, oder wählen Sie ihn aus, und drücken Sie dann **F2**.
    - Um einen Eintrag zu entfernen, wählen Sie ihn aus, und wählen Sie dann das Symbol **-** aus.
 
 3. (Optional) Um die Symbolladeleistung zu verbessern, geben Sie unter **Symbole in diesem Verzeichnis zwischenspeichern** einen lokalen Ordnerpfad ein, in den Symbolserver Symbole kopieren können.
@@ -141,7 +141,7 @@ Auf der Seite **Extras** > **Optionen** > **Debuggen** > **Symbole** können Sie
 
    - Wenn Sie nur angegebene Module aus dem Symboldatei-Speicherort laden möchten, wählen Sie **Nur angegebene Module laden** aus. Wählen Sie **Eingeschlossene Module angeben** aus, wählen Sie das Symbol **+** aus, geben Sie die Namen der einzuschließenden Module ein, und wählen Sie dann **OK** aus. Die Symboldateien für andere Module werden nicht geladen.
 
-5. Klicken Sie auf **OK** .
+5. Klicken Sie auf **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Weitere Symboloptionen für das Debuggen
 
@@ -161,7 +161,7 @@ Sie können zusätzliche Symboloptionen unter **Extras** > **Optionen** > **Debu
 
   Verwendet den Quellserver, um das Debuggen einer Anwendung zu unterstützen, wenn auf dem lokalen Computer kein Quellcode vorhanden ist oder die *PDB* -Datei nicht mit dem Quellcode übereinstimmt. Der Quellserver nimmt Dateianforderungen entgegen und gibt die entsprechenden Dateien aus der Quellcodeverwaltung zurück. Der Quellserver wird mithilfe einer DLL mit dem Namen *srcsrv.dll* ausgeführt, um die *PDB* -Datei der App zu lesen. Die *PDB* -Datei enthält Verweise auf das Quellcoderepository sowie Befehle zum Abrufen von Quellcode aus dem Repository.
 
-  Sie können die Befehle einschränken, die *srcsrv.dll* aus der *PDB* -Datei der App ausführen kann, indem Sie die zulässigen Befehle in einer Datei namens *srcsrv.ini* auflisten. Platzieren Sie die Datei *srcsrv.ini* in demselben Ordner wie *srcsrv.dll* und *devenv.exe* .
+  Sie können die Befehle einschränken, die *srcsrv.dll* aus der *PDB* -Datei der App ausführen kann, indem Sie die zulässigen Befehle in einer Datei namens *srcsrv.ini* auflisten. Platzieren Sie die Datei *srcsrv.ini* in demselben Ordner wie *srcsrv.dll* und *devenv.exe*.
 
   >[!IMPORTANT]
   >In der *PDB* -Datei einer App können beliebige Befehle eingebettet sein. Deshalb sollten Sie sicherstellen, dass Sie der Datei *srcsrv.ini* nur die Befehle hinzufügen, die ausführt werden sollen. Beim Versuch, einen nicht in der Datei *srcsvr.ini* enthaltenen Befehl auszuführen, wird ein Bestätigungsdialogfeld geöffnet. Weitere Informationen finden Sie unter [Sicherheitswarnung: Der Debugger muss diesen nicht vertrauenswürdigen Befehl ausführen](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
@@ -188,13 +188,13 @@ Erstellen Sie die App mit **/debug** , um eine *PDB* -Datei zu erstellen. Sie k�
 
   Wird Sie die C/C++-Anwendung mithilfe eines Makefile erstellen und **/ZI** oder **/Zi** ohne **/Fd** angegeben, erstellt der Compiler zwei *PDB* -Dateien:
 
-  - *VC\<x>.pdb* , wobei *\<x>* die Version des Microsoft C++-Compilers darstellt, beispielsweise *VC11.pdb* .
+  - *VC\<x>.pdb* , wobei *\<x>* die Version des Microsoft C++-Compilers darstellt, beispielsweise *VC11.pdb*.
 
-    In der Datei *VC\<x>-pdb* werden alle Debuginformationen für die einzelnen Objektdateien gespeichert. Sie wird im selben Verzeichnis wie das Makefile des Projekts gespeichert. Wenn eine Objektdatei erstellt wird, mergt der C/C++-Compiler Debuginformationen in *VC\<x>.pdb* . Selbst wenn jede Quelldatei allgemeine Headerdateien, z. B. *\<windows.h>* enthält, werden die Typdefinitionen aus diesen Headerdateien nur ein Mal anstatt in jeder einzelnen Objektdatei gespeichert. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch wie Funktionsdefinitionen keine Symbolinformationen.
+    In der Datei *VC\<x>-pdb* werden alle Debuginformationen für die einzelnen Objektdateien gespeichert. Sie wird im selben Verzeichnis wie das Makefile des Projekts gespeichert. Wenn eine Objektdatei erstellt wird, mergt der C/C++-Compiler Debuginformationen in *VC\<x>.pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien, z. B. *\<windows.h>* enthält, werden die Typdefinitionen aus diesen Headerdateien nur ein Mal anstatt in jeder einzelnen Objektdatei gespeichert. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch wie Funktionsdefinitionen keine Symbolinformationen.
 
   - *\<project>.pdb*
 
-    Die Datei *\<project>.pdb* speichert alle Debuginformationen für die *EXE* -Datei des Projekts und befindet sich im Unterverzeichnis *\debug* . Die Datei *\<project>.pdb* enthält nicht nur die in *VC\<x>.pdb* gespeicherten Typinformationen, sondern die vollständigen Debuginformationen (einschließlich der Funktionsprototypen).
+    Die Datei *\<project>.pdb* speichert alle Debuginformationen für die *EXE* -Datei des Projekts und befindet sich im Unterverzeichnis *\debug*. Die Datei *\<project>.pdb* enthält nicht nur die in *VC\<x>.pdb* gespeicherten Typinformationen, sondern die vollständigen Debuginformationen (einschließlich der Funktionsprototypen).
 
   Sowohl die Datei *VC\<x>.pdb* als auch die Datei *\<project>.pdb* ermöglicht inkrementelle Aktualisierungen. Der Linker bettet den Pfad zu den *PDB* -Dateien in die erstellte *EXE* - bzw. *DLL* -Datei ein.
 
@@ -236,7 +236,7 @@ Es gibt mehrere Methoden, damit der Debugger im Code unterbrochen wird, der kein
 - Einzelschritt.
 - Unterbrechen im Code von einem Breakpoint oder einer Ausnahme.
 - Wechseln zu einem anderen Thread.
-- Ändern des Stapelrahmens durch Doppelklicken auf einen Rahmen im Fenster **Aufrufliste** .
+- Ändern des Stapelrahmens durch Doppelklicken auf einen Rahmen im Fenster **Aufrufliste**.
 
 Wenn dies geschieht, wird im Debugger die Seite **Keine Symbole geladen** oder **Keine Quelle geladen** angezeigt, auf der Sie die erforderlichen Symbole oder die Quelle suchen und laden können.
 
@@ -248,7 +248,7 @@ Wenn dies geschieht, wird im Debugger die Seite **Keine Symbole geladen** oder *
 - Wählen Sie **Nach \<executable-name> suchen** aus, um alle Symboloptionen zu überschreiben und einen Wiederholungsversuch für die Suchpfade auszuführen. Die Symboldatei wird geladen, sofern sie gefunden wird, oder der **Datei-Explorer** wird geöffnet, damit Sie die Symboldatei manuell auswählen können.
 - Um die Seite **Optionen** > **Debuggen** > **Symbole** zu öffnen, wählen Sie **Symboleinstellungen ändern** aus.
 - Um die Disassemblierung einmalig in einem neuen Fenster anzuzeigen, wählen Sie **Disassemblierung anzeigen** aus, oder wählen Sie das **Dialogfeld „Optionen“** aus, um die Option festzulegen, die Disassemblierung immer anzuzeigen, wenn Quell- oder Symboldateien nicht gefunden wurden.
-- Um die durchsuchten Speicherorte und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen** .
+- Um die durchsuchten Speicherorte und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen**.
 
 Wenn der Debugger die *PDB* -Datei findet, nachdem Sie eine der Optionen ausgeführt haben, und die Quelldatei anhand der Informationen in der *PDB* -Datei abrufen kann, zeigt er die Quelle an. Andernfalls wird eine Seite **Keine Quelle geladen** angezeigt, die das Problem beschreibt und Links zu Aktionen bereitstellt, die das Problem möglicherweise beheben.
 
