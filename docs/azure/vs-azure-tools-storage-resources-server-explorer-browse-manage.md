@@ -1,7 +1,7 @@
 ---
 title: Durchsuchen und Verwalten von Speicherressourcen
 description: Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 059145dbce95ade9f628f26afe4f70e1d6a065e9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036443"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398864"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
@@ -24,7 +24,7 @@ ms.locfileid: "90036443"
 
 Wenn Sie die Azure-Tools für Microsoft Visual Studio installiert haben, können Sie Blob-, Warteschlangen- und Tabellendaten von Ihren Speicherkonten für Azure aus anzeigen. Der Knoten Azure **Storage** in Server-Explorer zeigt Daten an, die sich in Ihrem lokalen speicheremulatorkonto und ihren anderen Azure-Speicher Konten befinden.
 
-Um Server-Explorer in Visual Studio anzuzeigen, wählen Sie in der Menüleiste **View**die Option  >  **Server-Explorer**anzeigen aus. Der Knoten **Storage** zeigt alle Speicherkonten an, die unter jedem Azure-Abonnement oder -Zertifikat vorhanden sind, mit dem Sie verbunden sind. Wird das Speicherkonto nicht angezeigt, befolgen Sie die Anweisungen am [Ende des Artikels](#add-storage-accounts-by-using-server-explorer), um das Konto hinzuzufügen.
+Um Server-Explorer in Visual Studio anzuzeigen, wählen Sie in der Menüleiste **View** die Option  >  **Server-Explorer** anzeigen aus. Der Knoten **Storage** zeigt alle Speicherkonten an, die unter jedem Azure-Abonnement oder -Zertifikat vorhanden sind, mit dem Sie verbunden sind. Wird das Speicherkonto nicht angezeigt, befolgen Sie die Anweisungen am [Ende des Artikels](#add-storage-accounts-by-using-server-explorer), um das Konto hinzuzufügen.
 
 Ab dem Azure SDK 2.7 können Sie auch den Cloud-Explorer zum Anzeigen und Verwalten von Azure-Ressourcen verwenden. Weitere Informationen finden Sie unter [Verwalten von Azure-Ressourcen mit Cloud-Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
@@ -34,7 +34,7 @@ Der Server-Explorer zeigt automatisch eine Liste von Blobs, Warteschlangen und T
 
 Erweitern Sie zum Anzeigen der Ressourcen des Speicheremulatorkontos den Knoten **Entwicklung** . Wenn der Speicheremulator nicht gestartet wurde, wird er automatisch gestartet, wenn Sie den Knoten **Entwicklung** erweitern. Dieser Prozess kann mehrere Sekunden dauern. Sie können weiterhin in anderen Bereichen von Visual Studio arbeiten, während der Speicheremulator gestartet wird.
 
-Erweitern Sie zum Anzeigen von Ressourcen in einem Speicherkonto den Knoten des Speicherkontos im Server-Explorer. Dort werden die Knoten **Blobs**, **Warteschlagen** und **Tabellen** angezeigt.
+Erweitern Sie zum Anzeigen von Ressourcen in einem Speicherkonto den Knoten des Speicherkontos im Server-Explorer. Dort werden die Knoten **Blobs** , **Warteschlagen** und **Tabellen** angezeigt.
 
 ## <a name="work-with-blob-resources"></a>Arbeiten mit Blobressourcen
 
@@ -42,7 +42,7 @@ Der Knoten **Blobs** zeigt eine Liste der Container für das ausgewählte Speich
 
 ### <a name="to-create-a-blob-container"></a>So erstellen Sie einen Blobcontainer
 
-1. Öffnen Sie das Kontextmenü für den Knoten **Blobs**, und wählen Sie dann **Blobcontainer erstellen**.
+1. Öffnen Sie das Kontextmenü für den Knoten **Blobs** , und wählen Sie dann **Blobcontainer erstellen**.
 1. Geben Sie im Dialogfeld **Blobcontainer erstellen** den Namen des neuen Containers ein.
 1. Drücken Sie die EINGABETASTE auf der Tastatur, oder klicken bzw. tippen Sie außerhalb des Namensfelds, um den Blobcontainer zu speichern.
 
@@ -72,9 +72,9 @@ Sie können die folgenden Vorgänge für Blobs mithilfe der Schaltflächen in de
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>So erstellen Sie einen Ordner oder Unterordner in einem Blobcontainer
 
-1. Wählen Sie in **Cloud-Explorer**den BlobContainer aus. Wählen Sie im Containerfenster die Schaltfläche **Blob hochladen** aus.
+1. Wählen Sie in **Cloud-Explorer** den BlobContainer aus. Wählen Sie im Containerfenster die Schaltfläche **Blob hochladen** aus.
 
-1. Wählen Sie im Dialogfeld **Neue Datei hochladen** die Schaltfläche **Durchsuchen**, um die Datei anzugeben, die Sie hochladen möchten. Geben Sie dann einen Ordnernamen im Feld **Ordner (optional)** ein.
+1. Wählen Sie im Dialogfeld **Neue Datei hochladen** die Schaltfläche **Durchsuchen** , um die Datei anzugeben, die Sie hochladen möchten. Geben Sie dann einen Ordnernamen im Feld **Ordner (optional)** ein.
 
    ![Hochladen einer Datei in einen Blobordner](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ Da es sich bei Ordnern in Blobcontainern um virtuelle Ordner handelt, ist es nic
 
 Sie können die angezeigten Blobs filtern, indem Sie ein gemeinsames Präfix angeben.
 
-Wenn Sie beispielsweise das Präfix **hello** in das Filtertextfeld eingeben und dann die Schaltfläche **Ausführen** (**!**) wählen, werden nur Blobs angezeigt, die mit „hello“ beginnen.
+Wenn Sie beispielsweise das Präfix **hello** in das Filtertextfeld eingeben und dann die Schaltfläche **Ausführen** ( **!** ) wählen, werden nur Blobs angezeigt, die mit „hello“ beginnen.
 
 ![Filtertextfeld](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,7 +102,7 @@ Beim Filtertextfeld muss die Groß-/Kleinschreibung beachtet werden. Filtervorg�
 
 ### <a name="to-download-blob-data"></a>So laden Sie Blobdaten herunter
 
-Verwenden Sie in **Cloud-Explorer**eine der folgenden Methoden:
+Verwenden Sie in **Cloud-Explorer** eine der folgenden Methoden:
 
 * Öffnen Sie das Kontextmenü für ein oder mehrere Blobs, und wählen Sie dann **Öffnen**.
 * Wählen Sie den Blobnamen und anschließend die Schaltfläche **Öffnen** aus.
@@ -118,7 +118,7 @@ Standardmäßig wird ein Blob in ein temporäres Verzeichnis heruntergeladen. Um
 
 ### <a name="to-upload-blobs"></a>So laden Sie Blobs hoch
 
-Klicken Sie zum Hochladen von Blobs auf die Schaltfläche **Blob hochladen**, wenn der Container für die Anzeige in der Blobcontaineransicht geöffnet ist.
+Klicken Sie zum Hochladen von Blobs auf die Schaltfläche **Blob hochladen** , wenn der Container für die Anzeige in der Blobcontaineransicht geöffnet ist.
 
 Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswählen. Im Fenster **Azure-Aktivitätsprotokoll** wird der Uploadstatus angezeigt. Weitere Informationen zum Arbeiten mit Blobdaten finden Sie unter [Erste Schritte mit Azure Blob Storage mit .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
@@ -166,12 +166,12 @@ Mit Azure Table Storage können Sie große Mengen strukturierter Daten speichern
 
 ### <a name="to-create-a-table"></a>So erstellen Sie eine Tabelle
 
-1. Wählen Sie in **Cloud-Explorer**den Knoten **Tabellen** des Speicher Kontos aus, und klicken Sie dann auf **Tabelle erstellen**.
+1. Wählen Sie in **Cloud-Explorer** den Knoten **Tabellen** des Speicher Kontos aus, und klicken Sie dann auf **Tabelle erstellen**.
 1. Geben Sie im Dialogfeld **Tabelle erstellen** einen Namen für die Tabelle ein.
 
 ### <a name="to-view-table-data"></a>So zeigen Sie Tabellendaten an
 
-1. Öffnen Sie in **Cloud-Explorer**den Knoten **Azure** , und öffnen Sie dann den Knoten **Speicher** .
+1. Öffnen Sie in **Cloud-Explorer** den Knoten **Azure** , und öffnen Sie dann den Knoten **Speicher** .
 1. Öffnen Sie den für Sie relevanten Speicherkontoknoten, und öffnen Sie dann den Knoten **Tabellen** , um eine Liste der Tabellen für das Speicherkonto anzuzeigen.
 1. Öffnen Sie das Kontextmenü für eine Tabelle, und wählen Sie dann **Tabelle anzeigen**.
 
@@ -181,7 +181,7 @@ Die Tabelle ist in Entitäten (Anzeige in Zeilen) und Eigenschaften (Anzeige in 
 
 ### <a name="to-edit-table-data"></a>So bearbeiten Sie Tabellendaten
 
-Öffnen Sie in **Tabellen-Designer**das Kontextmenü für eine Entität (eine einzelne Zeile) oder eine Eigenschaft (eine einzelne Zelle), und wählen Sie dann **Bearbeiten**aus.
+Öffnen Sie in **Tabellen-Designer** das Kontextmenü für eine Entität (eine einzelne Zeile) oder eine Eigenschaft (eine einzelne Zelle), und wählen Sie dann **Bearbeiten** aus.
 
 ![Hinzufügen oder Bearbeiten einer Tabellenentität](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
@@ -194,11 +194,11 @@ Entitäten in einer einzelnen Tabelle müssen nicht denselben Eigenschaftensatz 
 
 ### <a name="to-add-entities"></a>So fügen Sie Entitäten hinzu
 
-1. Wählen Sie in **Tabellen-Designer**die Schaltfläche **Entität hinzufügen** aus.
+1. Wählen Sie in **Tabellen-Designer** die Schaltfläche **Entität hinzufügen** aus.
 
     ![Schaltfläche „Entität hinzufügen“](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Geben Sie im Dialogfeld **Entität hinzufügen** die Werte der **PartitionKey**- und **RowKey**-Eigenschaften ein.
+1. Geben Sie im Dialogfeld **Entität hinzufügen** die Werte der **PartitionKey** - und **RowKey** -Eigenschaften ein.
 
     ![Dialogfeld „Entität hinzufügen“](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -235,7 +235,7 @@ Wenn der Server-Explorer eine Verbindung mit einem Speicherkonto herstellt oder 
 ### <a name="to-refresh-table-data"></a>So aktualisieren Sie Tabellendaten
 
 * Wählen Sie unter **Storage** den Knoten **Tabellen** und dann auf der Symbolleiste des Server-Explorers die Schaltfläche **Aktualisieren**.
-* Um die Liste der Entitäten zu aktualisieren, die in **Tabellen-Designer**angezeigt wird, wählen Sie die Schaltfläche **Ausführen** in Tabellen-Designer aus.
+* Um die Liste der Entitäten zu aktualisieren, die in **Tabellen-Designer** angezeigt wird, wählen Sie die Schaltfläche **Ausführen** in Tabellen-Designer aus.
 
 ### <a name="to-refresh-queue-data"></a>So aktualisieren Sie Warteschlangendaten
 
@@ -251,7 +251,7 @@ Es gibt zwei Möglichkeiten, Speicherkonten mithilfe des Server-Explorers hinzuz
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>So erstellen Sie ein Speicherkonto mit dem Server-Explorer
 
-1. Öffnen Sie im Server-Explorer das Kontextmenü für den Knoten **Speicher**, und wählen Sie dann **Speicherkonto erstellen**.
+1. Öffnen Sie im Server-Explorer das Kontextmenü für den Knoten **Speicher** , und wählen Sie dann **Speicherkonto erstellen**.
 
 1. Wählen Sie im Dialogfeld **Speicherkonto erstellen** die folgenden Informationen aus, oder geben Sie sie ein:
 
@@ -268,7 +268,7 @@ Das neue Speicherkonto wird im Projektmappen-Explorer in der Liste **Speicher** 
 
 ### <a name="to-attach-an-existing-storage-account-by-using-server-explorer"></a>So fügen Sie ein vorhandenes Speicherkonto mithilfe des Server-Explorers an
 
-1. Öffnen Sie im Server-Explorer das Kontextmenü für den Azure **Storage**-Knoten, und wählen Sie dann **Externen Speicher anfügen** aus.
+1. Öffnen Sie im Server-Explorer das Kontextmenü für den Azure **Storage** -Knoten, und wählen Sie dann **Externen Speicher anfügen** aus.
 
     ![Hinzufügen eines vorhandenen Speicherkontos](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
 1. Wählen Sie im Dialogfeld **Speicherkonto erstellen** die folgenden Informationen aus, oder geben Sie sie ein:

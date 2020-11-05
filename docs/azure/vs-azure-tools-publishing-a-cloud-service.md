@@ -4,17 +4,16 @@ description: Sie erhalten Informationen dazu, wie Sie Azure-Clouddienstprojekte 
 author: ghogen
 manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8aa31189a04dace088f1bcf8cc7ad88e0b20ac
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313301"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399317"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Veröffentlichen eines Clouddiensts mit Visual Studio
 
@@ -45,7 +44,7 @@ Wenn Sie Ihre Azure-Anwendung veröffentlichen, können Sie eine der folgenden A
 
    b. Wählen Sie im Dialogfeld **Azure-Anwendung verpacken** die Dienstkonfiguration aus, für die Sie ein Paket erstellen möchten, und wählen Sie dann die Buildkonfiguration.
 
-   c. (Optional) Um Remotedesktop für den Clouddienst nach dem Veröffentlichen zu aktivieren, aktivieren Sie **Remotedesktop für alle Rollen aktivieren** und klicken dann auf **Einstellungen**, um die Anmeldeinformationen für Remotedesktop zu konfigurieren. Weitere Informationen finden Sie unter [Aktivieren einer Remotedesktopverbindung für eine Rolle in Azure Cloud Services mit Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+   c. (Optional) Um Remotedesktop für den Clouddienst nach dem Veröffentlichen zu aktivieren, aktivieren Sie **Remotedesktop für alle Rollen aktivieren** und klicken dann auf **Einstellungen** , um die Anmeldeinformationen für Remotedesktop zu konfigurieren. Weitere Informationen finden Sie unter [Aktivieren einer Remotedesktopverbindung für eine Rolle in Azure Cloud Services mit Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
       Wenn Sie Ihren Cloud-Dienst nach der Veröffentlichung debuggen möchten, aktivieren Sie Remotedebuggen, indem Sie **Remotedebugger für alle Rollen aktivieren** auswählen.
 
@@ -67,13 +66,13 @@ Wenn die Back-End-Infrastruktur Ihrer App stabil ist, aber die Webrollen eine h�
 
 ### <a name="requirements-for-using-web-deploy"></a>Anforderungen für die Verwendung von Web Deploy
 
-- **Nur für Entwicklungs-und Testzwecke**: die Änderungen werden direkt an dem virtuellen Computer vorgenommen, auf dem die webrolle ausgeführt wird. Wenn dieser virtuelle Computer recycelt werden muss, gehen die Änderungen verloren, da das von Ihnen veröffentlichte Originalpaket zum Neuerstellen des virtuellen Computers für die Rolle verwendet wird. Veröffentlichen Sie Ihre Anwendung erneut, um die aktuellen Änderungen für die Webrolle zu erhalten.
+- **Nur für Entwicklungs-und Testzwecke** : die Änderungen werden direkt an dem virtuellen Computer vorgenommen, auf dem die webrolle ausgeführt wird. Wenn dieser virtuelle Computer recycelt werden muss, gehen die Änderungen verloren, da das von Ihnen veröffentlichte Originalpaket zum Neuerstellen des virtuellen Computers für die Rolle verwendet wird. Veröffentlichen Sie Ihre Anwendung erneut, um die aktuellen Änderungen für die Webrolle zu erhalten.
 
-- **Nur Webrollen können aktualisiert werden**: workerrollen können nicht aktualisiert werden. Darüber hinaus kann `RoleEntryPoint` in `web role.cs` nicht aktualisiert werden.
+- **Nur Webrollen können aktualisiert werden** : workerrollen können nicht aktualisiert werden. Darüber hinaus kann `RoleEntryPoint` in `web role.cs` nicht aktualisiert werden.
 
-- **Unterstützt nur eine einzelne Instanz einer webrolle**: in ihrer Bereitstellungs Umgebung können nicht mehrere Instanzen einer webrolle vorhanden sein. Mehrere Webrollen jeweils mit einer Instanz werden aber unterstützt.
+- **Unterstützt nur eine einzelne Instanz einer webrolle** : in ihrer Bereitstellungs Umgebung können nicht mehrere Instanzen einer webrolle vorhanden sein. Mehrere Webrollen jeweils mit einer Instanz werden aber unterstützt.
 
-- **Remote Desktop Verbindungen aktivieren**: bei dieser Anforderung können Web deploy den Benutzer und das Kennwort verwenden, um eine Verbindung mit dem virtuellen Computer herzustellen, um die Änderungen auf dem Server bereitzustellen, auf dem Internetinformationsdienste (IIS) ausgeführt wird. Außerdem kann es erforderlich sein, eine Verbindung mit dem virtuellen Computer herzustellen, um auf diesem virtuellen Computer ein vertrauenswürdiges Zertifikat für IIS hinzuzufügen. (Mit diesem Zertifikat wird sichergestellt, dass die von Web Deploy verwendete Remoteverbindung für IIS sicher ist.)
+- **Remote Desktop Verbindungen aktivieren** : bei dieser Anforderung können Web deploy den Benutzer und das Kennwort verwenden, um eine Verbindung mit dem virtuellen Computer herzustellen, um die Änderungen auf dem Server bereitzustellen, auf dem Internetinformationsdienste (IIS) ausgeführt wird. Außerdem kann es erforderlich sein, eine Verbindung mit dem virtuellen Computer herzustellen, um auf diesem virtuellen Computer ein vertrauenswürdiges Zertifikat für IIS hinzuzufügen. (Mit diesem Zertifikat wird sichergestellt, dass die von Web Deploy verwendete Remoteverbindung für IIS sicher ist.)
 
 Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azure-Anwendung veröffentlichen** verwenden.
 
@@ -85,7 +84,7 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azur
 
     Als Warnung wird ein gelbes Dreieck angezeigt. Für Web Deploy wird standardmäßig ein nicht vertrauenswürdiges, selbstsigniertes Zertifikat verwendet. Dies wird nicht zum Hochladen von vertraulichen Daten empfohlen. Wenn Sie diesen Prozess für vertrauliche Daten schützen möchten, können Sie ein SSL-Zertifikat hinzufügen, das für Web Deploy-Verbindungen verwendet wird. Dieses Zertifikat muss ein vertrauenswürdiges Zertifikat sein. Weitere Informationen finden Sie unter [Schützen von Web Deploy](#make-web-deploy-secure).
 
-1. Wählen Sie **Weiter** aus, um den Bildschirm **Zusammenfassung** anzuzeigen, und dann **Veröffentlichen**, um den Clouddienst bereitzustellen.
+1. Wählen Sie **Weiter** aus, um den Bildschirm **Zusammenfassung** anzuzeigen, und dann **Veröffentlichen** , um den Clouddienst bereitzustellen.
 
     Der Clouddienst wird veröffentlicht. Für den virtuellen Computer, der erstellt wird, sind Remoteverbindungen für IIS aktiviert, damit Web Deploy zum Aktualisieren Ihrer Webrollen verwendet werden kann, ohne dass sie erneut veröffentlicht werden müssen.
 
@@ -100,13 +99,13 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azur
 
 1. Zum Verwenden von Web Deploy werden für den Veröffentlichungsmechanismus der Benutzername und das Kennwort benötigt, den bzw. das Sie beim ersten Veröffentlichen des Pakets für die Remotedesktopverbindung eingerichtet haben.
 
-   a. Geben Sie unter **Benutzername**den Benutzernamen ein.
+   a. Geben Sie unter **Benutzername** den Benutzernamen ein.
 
-   b. Geben Sie unter **Kennwort**das Kennwort ein.
+   b. Geben Sie unter **Kennwort** das Kennwort ein.
 
-   c. (Optional) Wählen Sie **Kennwort speichern**, wenn Sie dieses Kennwort in diesem Profil speichern möchten.
+   c. (Optional) Wählen Sie **Kennwort speichern** , wenn Sie dieses Kennwort in diesem Profil speichern möchten.
 
-1. Wählen Sie **Veröffentlichen**, um die Änderungen an der Webrolle zu veröffentlichen.
+1. Wählen Sie **Veröffentlichen** , um die Änderungen an der Webrolle zu veröffentlichen.
 
     Die Statuszeile zeigt **Veröffentlichungsvorgang wurde gestartet** an. Wenn die Veröffentlichung abgeschlossen ist, wird **Veröffentlichen erfolgreich** angezeigt. Die Änderungen wurden auf dem virtuellen Computer für die Webrolle bereitgestellt. Sie können die Azure-Anwendung jetzt in der Azure-Umgebung starten, um die Änderungen zu testen.
 
@@ -120,7 +119,7 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie den Assistenten **Azur
 
    a. Klicken Sie zum Herstellen einer Verbindung mit dem virtuellen Computer, auf dem die Webrolle ausgeführt wird, unter **Cloud-Explorer** oder **Server-Explorer** auf die Instanz der Webrolle. Wählen Sie anschließend den Befehl **Mithilfe von Remotedesktop verbinden**. Ausführliche Schritte zum Herstellen einer Verbindung mit dem virtuellen Computer finden Sie unter [Aktivieren einer Remotedesktopverbindung für eine Rolle in Azure Cloud Services mit Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). Im Browser wird eine Aufforderung zum Herunterladen einer `.rdp`-Datei angezeigt.
 
-   b. Öffnen Sie den Verwaltungsdienst im IIS-Manager, um ein SSL-Zertifikat hinzuzufügen. Aktivieren Sie in IIS-Manager SSL, indem Sie den Link **Bindungen** im Bereich **Aktion** öffnen. Das Dialogfeld **Sitebindung hinzufügen** wird angezeigt. Wählen Sie **Hinzufügen**aus, und wählen Sie dann in der Dropdown Liste **Typ** die Option HTTPS aus. Wählen Sie in der Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das von einer Zertifizierungsstelle signiert wurde und das Sie in das Azure-Portal hochgeladen haben. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungseinstellungen für den Verwaltungsdienst](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
+   b. Öffnen Sie den Verwaltungsdienst im IIS-Manager, um ein SSL-Zertifikat hinzuzufügen. Aktivieren Sie in IIS-Manager SSL, indem Sie den Link **Bindungen** im Bereich **Aktion** öffnen. Das Dialogfeld **Sitebindung hinzufügen** wird angezeigt. Wählen Sie **Hinzufügen** aus, und wählen Sie dann in der Dropdown Liste **Typ** die Option HTTPS aus. Wählen Sie in der Liste **SSL-Zertifikat** das SSL-Zertifikat aus, das von einer Zertifizierungsstelle signiert wurde und das Sie in das Azure-Portal hochgeladen haben. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungseinstellungen für den Verwaltungsdienst](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > Wenn Sie ein vertrauenswürdiges SSL-Zertifikat hinzufügen, wird das gelbe Warndreieck nicht mehr im **Webpublishing-Assistenten** angezeigt.
@@ -132,14 +131,14 @@ Unter Umständen müssen Sie bestimmte Dateien in Ihr Dienstpaket einschließen,
 1. Führen Sie die folgenden Schritte aus, um einem Dienstpaket eine Assembly hinzuzufügen:
 
    a. Öffnen Sie im **Projektmappen-Explorer** den Projektknoten für das Projekt, für das die referenzierte Assembly fehlt.
-   b. Öffnen Sie zum Hinzufügen der Assembly zum Projekt das Kontextmenü für den Ordner **References**, und wählen Sie dann **Verweis hinzufügen** aus. Das Dialogfeld „Verweis hinzufügen“ wird angezeigt.
+   b. Öffnen Sie zum Hinzufügen der Assembly zum Projekt das Kontextmenü für den Ordner **References** , und wählen Sie dann **Verweis hinzufügen** aus. Das Dialogfeld „Verweis hinzufügen“ wird angezeigt.
    c. Wählen Sie den Verweis, den Sie hinzufügen möchten, und dann **OK**. Der Verweis wird der Liste unter dem Ordner **References** hinzugefügt.
    d. Öffnen Sie das Kontextmenü für die Assembly, die Sie hinzugefügt haben, und wählen Sie dann **Eigenschaften** aus. Das Fenster **Eigenschaften** wird angezeigt.
 
-      Um diese Assembly in das Dienst Paket einzuschließen, wählen Sie in der **Liste lokale Kopie** den Wert **true**aus.
+      Um diese Assembly in das Dienst Paket einzuschließen, wählen Sie in der **Liste lokale Kopie** den Wert **true** aus.
 1. Öffnen Sie in **Projektmappen-Explorer** den Projekt Knoten für das Projekt, für das die Assembly, auf die verwiesen wird, fehlt.
 
-1. Öffnen Sie zum Hinzufügen der Assembly zum Projekt das Kontextmenü für den Ordner **References**, und wählen Sie dann **Verweis hinzufügen** aus. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
+1. Öffnen Sie zum Hinzufügen der Assembly zum Projekt das Kontextmenü für den Ordner **References** , und wählen Sie dann **Verweis hinzufügen** aus. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
 1. Wählen Sie den Verweis aus, das Sie hinzufügen möchten, und klicken Sie dann auf die Schaltfläche **OK**.
 
