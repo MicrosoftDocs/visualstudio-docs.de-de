@@ -1,7 +1,7 @@
 ---
 title: Beibehalten einer Konstanten virtuellen IP für den Azure-clouddienst
 description: Erfahren Sie, wie Sie sicherstellen können, dass die virtuelle IP-Adresse (VIP) Ihres Azure-Clouddiensts beibehalten wird.
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 0ebd709e77e88ef1ed81b6a01735a5eed5be7508
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 95d6a695c31dc62bbe12c2e7aec217aeac8403d8
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035949"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399838"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Beibehalten einer konstanten virtuellen IP-Adresse für einen Azure-Clouddienst
 Wenn Sie einen in Azure gehosteten Clouddienst aktualisieren, müssen Sie möglicherweise sicherstellen, dass die virtuelle IP-Adresse (VIP) des Diensts unverändert bleibt. Viele Domänenverwaltungsdienste nutzen DNS (Domain Name System) für die Registrierung der Domänennamen. DNS funktioniert nur, wenn die VIP unverändert bleibt. Mithilfe des **Veröffentlichungs-Assistenten** in Azure Tools können Sie sicherstellen, dass die VIP Ihres Clouddiensts beibehalten wird, wenn Sie den Dienst aktualisieren. Weitere Informationen zur Verwendung der DNS-Domänenverwaltung für Clouddienste finden Sie unter [Konfigurieren eines benutzerdefinierten Domänennamens für einen Azure-Clouddienst](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -35,15 +35,15 @@ Sie können im **Veröffentlichungs-Assistenten** die entsprechenden Bereitstell
 
     ![Azure-Anwendung veröffentlichen – Seite „Anmelden“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Überprüfen Sie auf der Registerkarte **Allgemeine Einstellungen** , ob der Name des clouddiensts, für den Sie bereitstellen, die **Umgebung**, die **Buildkonfiguration**und die **Dienst Konfiguration** richtig sind.
+4. Überprüfen Sie auf der Registerkarte **Allgemeine Einstellungen** , ob der Name des clouddiensts, für den Sie bereitstellen, die **Umgebung** , die **Buildkonfiguration** und die **Dienst Konfiguration** richtig sind.
 
     ![Azure-Anwendung veröffentlichen – Registerkarte „Allgemeine Einstellungen“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. Vergewissern Sie sich auf der Registerkarte **Erweiterte Einstellungen**, dass die Angaben für **Bereitstellungsbezeichnung** und **Speicherkonto** korrekt sind. Stellen Sie sicher, dass das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktiviert und das Kontrollkästchen **Bereitstellungsaktualisierung** aktiviert ist. Wenn Sie das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktivieren, stellen Sie sicher, dass die VIP nicht verloren geht, wenn während der Bereitstellung ein Fehler auftritt. Durch Aktivierung des Kontrollkästchens **Bereitstellungsaktualisierung** wird sichergestellt, dass die Bereitstellung nicht gelöscht und die VIP beibehalten wird, wenn Sie die Anwendung erneut veröffentlichen.
+5. Vergewissern Sie sich auf der Registerkarte **Erweiterte Einstellungen** , dass die Angaben für **Bereitstellungsbezeichnung** und **Speicherkonto** korrekt sind. Stellen Sie sicher, dass das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktiviert und das Kontrollkästchen **Bereitstellungsaktualisierung** aktiviert ist. Wenn Sie das Kontrollkästchen **Bereitstellung bei Fehler löschen** deaktivieren, stellen Sie sicher, dass die VIP nicht verloren geht, wenn während der Bereitstellung ein Fehler auftritt. Durch Aktivierung des Kontrollkästchens **Bereitstellungsaktualisierung** wird sichergestellt, dass die Bereitstellung nicht gelöscht und die VIP beibehalten wird, wenn Sie die Anwendung erneut veröffentlichen.
 
     ![Azure-Anwendung veröffentlichen – Registerkarte „Erweiterte Einstellungen“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 
-6. Um festzulegen, wie die Rollen aktualisiert werden sollen, klicken Sie neben **Bereitstellungsaktualisierung** auf **Einstellungen**. Wählen Sie entweder **Inkrementelle Aktualisierung** oder **Gleichzeitige Aktualisierung** und anschließend **OK** aus. Aktivieren Sie **Inkrementelle Aktualisierung**, um die Instanzen der Anwendung nacheinander zu aktualisieren. Die Verfügbarkeit der Anwendung wird somit nicht unterbrochen. Aktivieren Sie **Gleichzeitige Aktualisierung**, um alle Instanzen der Anwendung gleichzeitig zu aktualisieren. Gleichzeitige Updates sind schneller, der Dienst ist während der Aktualisierung jedoch möglicherweise nicht verfügbar. Wenn Sie fertig sind, klicken Sie auf **Weiter**.
+6. Um festzulegen, wie die Rollen aktualisiert werden sollen, klicken Sie neben **Bereitstellungsaktualisierung** auf **Einstellungen**. Wählen Sie entweder **Inkrementelle Aktualisierung** oder **Gleichzeitige Aktualisierung** und anschließend **OK** aus. Aktivieren Sie **Inkrementelle Aktualisierung** , um die Instanzen der Anwendung nacheinander zu aktualisieren. Die Verfügbarkeit der Anwendung wird somit nicht unterbrochen. Aktivieren Sie **Gleichzeitige Aktualisierung** , um alle Instanzen der Anwendung gleichzeitig zu aktualisieren. Gleichzeitige Updates sind schneller, der Dienst ist während der Aktualisierung jedoch möglicherweise nicht verfügbar. Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
     ![Azure-Anwendung veröffentlichen – Seite „Bereitstellungseinstellungen“](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-deployment-update-settings.png)
 

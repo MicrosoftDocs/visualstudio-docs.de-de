@@ -1,7 +1,7 @@
 ---
 title: Migrieren und Veröffentlichen einer Webanwendung in einem clouddienst
 description: Sie erfahren, wie Sie Ihre Webanwendung mit Visual Studio zu einem Azure-Clouddienst migrieren und veröffentlichen.
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036534"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399818"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-clouddienst aus Visual Studio
 
@@ -61,12 +61,12 @@ Wenn Sie über eine Verbindungszeichenfolge für Ihre Webanwendung verfügen, di
 1. Wählen Sie auf der Registerkarte **Einstellungen > Allgemeine Einstellungen** in der Dropdownliste **Clouddienst** den Zielclouddienst zusammen mit der gewünschten Umgebung und den gewünschten Konfigurationen aus.
 1. Wählen Sie in **Einstellungen > Erweiterte Einstellungen** das zu verwendende Speicherkonto aus, und wählen Sie dann **Weiter >**.
 1. Legen Sie **Diagnose** fest, ob Informationen an Application Insights gesendet werden.
-1. Wählen Sie **Weiter >** um eine Zusammenfassung anzuzeigen, und wählen Sie dann **Veröffentlichen**, um die Bereitstellung zu starten.
+1. Wählen Sie **Weiter >** um eine Zusammenfassung anzuzeigen, und wählen Sie dann **Veröffentlichen** , um die Bereitstellung zu starten.
 1. Visual Studio öffnet ein Aktivitätsprotokollfenster, in dem Sie den Fortschritt verfolgen können:
 
     ![VST_AzureActivityLog](./media/vs-azure-tools-migrate-publish-web-app-to-cloud-service/IC744149.png)
 
-1. (Optional) Zum Abbrechen des Bereitstellungsprozesses klicken Sie mit der rechten Maustaste auf die Position im Aktivitätsprotokoll und wählen **Abbrechen und entfernen**aus. Mit diesem Befehl wird der Bereitstellungsprozess beendet und die Bereitstellungsumgebung aus Azure gelöscht. Hinweis: Sie müssen das [Azure-Portal](https://portal.azure.com)verwenden, um diese Umgebung nach der Bereitstellung zu entfernen.
+1. (Optional) Zum Abbrechen des Bereitstellungsprozesses klicken Sie mit der rechten Maustaste auf die Position im Aktivitätsprotokoll und wählen **Abbrechen und entfernen** aus. Mit diesem Befehl wird der Bereitstellungsprozess beendet und die Bereitstellungsumgebung aus Azure gelöscht. Hinweis: Sie müssen das [Azure-Portal](https://portal.azure.com)verwenden, um diese Umgebung nach der Bereitstellung zu entfernen.
 1. (Optional) Nach dem Starten Ihrer Rolleninstanzen wird die Bereitstellungsumgebung in Visual Studio im Server-Explorer automatisch unter dem Knoten **Server-Explorer > Cloud Services** angezeigt. Hier können Sie den Status der einzelnen Rolleninstanzen anzeigen.
 1. Um nach der Bereitstellung auf Ihre Anwendung zuzugreifen, wählen Sie den Pfeil neben Ihrer Bereitstellung aus, wenn der Status **Abgeschlossen** zusammen mit der URL im **Azure-Aktivitätsprotokoll** angezeigt wird. Die folgende Tabelle enthält die Details zum Starten eines bestimmten Typs von Webanwendung unter Azure.
 

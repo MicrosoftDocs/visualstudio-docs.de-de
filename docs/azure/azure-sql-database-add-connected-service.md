@@ -3,18 +3,17 @@ title: Hinzufügen einer Verbindung mit Azure SQL-Datenbank | Microsoft-Dokument
 description: Hinzufügen einer Azure SQL-Datenbankverbindung zu ihrer App mithilfe von Visual Studio verbundene Dienste
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e1594ea4239b4200bf72ec4a2ef2c558839ef95c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09ae5768e55ae3e08ec2549faeb7cefa70a5edd1
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643135"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399046"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Hinzufügen einer Verbindung mit der Azure SQL-Datenbank
 
@@ -43,13 +42,13 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
 1. Öffnen Sie Ihr Projekt in Visual Studio.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen** aus.
 
-1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten**aus.
+1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten** aus.
 
     ![Dienst Abhängigkeit hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure SQL-Datenbank**aus.
+1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure SQL-Datenbank** aus.
 
     ![Azure SQL-Datenbankdienst hinzufügen](./media/azure-sql-database-add-connected-service/azure-sql-database.png)
 
@@ -75,11 +74,11 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
    ![Verbindungs Zeichenfolge angeben](./media/azure-sql-database-add-connected-service/connection-string.png)
 
-1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig**stellen.
+1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig** stellen.
 
    ![Zusammenfassung der Änderungen](./media/azure-sql-database-add-connected-service/summary-of-changes.png)
 
-   Wenn Sie zum Festlegen von Firewallregeln aufgefordert werden, wählen Sie **Ja**aus.
+   Wenn Sie zum Festlegen von Firewallregeln aufgefordert werden, wählen Sie **Ja** aus.
 
    ![Firewallregeln](./media/azure-sql-database-add-connected-service/firewall-rules.png)
 

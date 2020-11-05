@@ -5,17 +5,16 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: how-to
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: cd55ebd9171a7f9cd2157194da8876f47aa22ece
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508482"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398695"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio
 
@@ -33,7 +32,7 @@ Der Emulator simuliert den Azure-Computedienst und wird in Ihrer lokalen Umgebun
 
     ![Azure-Emulator in der Taskleiste](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
-2. Zeigen Sie die Benutzeroberfläche des Serveremulators an, indem Sie im Infobereich das Kontextmenü für das Azure-Symbol öffnen und dann auf **Benutzeroberfläche des Serveremulators anzeigen**klicken.
+2. Zeigen Sie die Benutzeroberfläche des Serveremulators an, indem Sie im Infobereich das Kontextmenü für das Azure-Symbol öffnen und dann auf **Benutzeroberfläche des Serveremulators anzeigen** klicken.
 
     Im linken Bereich der Benutzeroberfläche werden die Dienste angezeigt, die zurzeit im Serveremulator bereitgestellt sind, sowie die Rolleninstanzen, die in jedem Dienst ausgeführt werden. Sie können den Dienst oder die Rollen auswählen, um Lebenszyklus-, Protokollierungs- und Diagnoseinformationen im rechten Bereich anzuzeigen. Wenn Sie den Fokus in den oberen Rand eines enthaltenen Fensters setzen, wird es erweitert und füllt den rechten Bereich aus.
 
@@ -49,7 +48,7 @@ Um einen Clouddienst über einen Remotecomputer zu debuggen, müssen Sie diese F
 Wenn Sie das Remotedebuggen für einen Clouddienst aktivieren, führt dies nicht zu einer Leistungsverschlechterung oder zu zusätzlichen Gebühren. Verwenden Sie das Remotedebuggen nicht für einen Produktionsdienst, da sich dies negativ auf Clients auswirken kann, die den Dienst nutzen.
 
 > [!NOTE]
-> Wenn Sie einen Clouddienst über Visual Studio veröffentlichen, können Sie **IntelliTrace** für alle Rollen in diesem Dienst aktivieren, die für .NET Framework 4 oder .NET Framework 4.5 ausgelegt sind. Mit **IntelliTrace**können Sie Ereignisse untersuchen, die in einer Rolleninstanz in der Vergangenheit aufgetreten sind, und den Kontext zum jeweiligen Zeitpunkt reproduzieren. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) und [Visual Studio und Verwenden von IntelliTrace](../debugger/intellitrace.md).
+> Wenn Sie einen Clouddienst über Visual Studio veröffentlichen, können Sie **IntelliTrace** für alle Rollen in diesem Dienst aktivieren, die für .NET Framework 4 oder .NET Framework 4.5 ausgelegt sind. Mit **IntelliTrace** können Sie Ereignisse untersuchen, die in einer Rolleninstanz in der Vergangenheit aufgetreten sind, und den Kontext zum jeweiligen Zeitpunkt reproduzieren. Weitere Informationen finden Sie unter [Debuggen eines veröffentlichten Clouddiensts mit IntelliTrace](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) und [Visual Studio und Verwenden von IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>So aktivieren Sie das Remotedebuggen für einen Clouddienst
 
@@ -79,7 +78,7 @@ Wenn Sie das Remotedebuggen für einen Clouddienst aktivieren, führt dies nicht
 
     ![Dialogfeld "Codetyp auswählen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Zum Identifizieren der Prozesse, an die der Debugger angefügt ist, wählen Sie in der Menüleiste die Option Windows-Prozesse **Debuggen**aus  >  **Windows**  >  **Processes**, und öffnen Sie das Dialogfeld **Prozesse** . (Tastatur: Strg+Alt+Z) Um einen bestimmten Prozess zu trennen, öffnen Sie dessen Kontextmenü, und klicken Sie dann auf **Prozess abtrennen**. Sie können auch den Instanzknoten im Server-Explorer suchen, dann den Prozess suchen, das Kontextmenü öffnen und auf **Prozess abtrennen**klicken.
+4. Zum Identifizieren der Prozesse, an die der Debugger angefügt ist, wählen Sie in der Menüleiste die Option Windows-Prozesse **Debuggen** aus  >  **Windows**  >  **Processes** , und öffnen Sie das Dialogfeld **Prozesse** . (Tastatur: Strg+Alt+Z) Um einen bestimmten Prozess zu trennen, öffnen Sie dessen Kontextmenü, und klicken Sie dann auf **Prozess abtrennen**. Sie können auch den Instanzknoten im Server-Explorer suchen, dann den Prozess suchen, das Kontextmenü öffnen und auf **Prozess abtrennen** klicken.
 
     ![Prozesse debuggen](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -124,7 +123,7 @@ Sie können Programme debuggen, die auf virtuellen Computern in Azure ausgeführ
 
     ![Befehl "Debugger anfügen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-4. Klicken Sie im Dialogfeld **An den Prozess anhängen** auf **Auswählen**, um die Ergebnisliste einzuschränken, sodass nur die Codetypen angezeigt werden, die Sie debuggen möchten. Sie können verwalteten 32- oder 64-Bit-Code und/oder systemeigenen Code debuggen.
+4. Klicken Sie im Dialogfeld **An den Prozess anhängen** auf **Auswählen** , um die Ergebnisliste einzuschränken, sodass nur die Codetypen angezeigt werden, die Sie debuggen möchten. Sie können verwalteten 32- oder 64-Bit-Code und/oder systemeigenen Code debuggen.
 
     ![Dialogfeld "Codetyp auswählen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -179,7 +178,7 @@ Visual Studio ASP.NET-Projekte bieten eine Option, einen praktischen virtuellen 
 
     ![Befehl "Debugger anfügen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-9. Klicken Sie im Dialogfeld **An den Prozess anhängen** auf **Auswählen**, um die Ergebnisliste einzuschränken, sodass nur die Codetypen angezeigt werden, die Sie debuggen möchten. Sie können verwalteten 32- oder 64-Bit-Code und/oder systemeigenen Code debuggen.
+9. Klicken Sie im Dialogfeld **An den Prozess anhängen** auf **Auswählen** , um die Ergebnisliste einzuschränken, sodass nur die Codetypen angezeigt werden, die Sie debuggen möchten. Sie können verwalteten 32- oder 64-Bit-Code und/oder systemeigenen Code debuggen.
 
     ![Dialogfeld "Codetyp auswählen"](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 

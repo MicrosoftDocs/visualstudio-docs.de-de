@@ -3,18 +3,17 @@ title: Fügen Sie Azure cosmosdb hinzu, indem Sie verbundene Dienste | Microsoft
 description: Hinzufügen von Azure cosmosdb-Unterstützung zu ihrer App mithilfe von Visual Studio zum Hinzufügen eines verbundenen Dienstanbieter
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2d23081f541fbc12581450c60c6eb4b09f20c64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bdf07824c7a06a692a81a93eaa5a0fd0536705d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643143"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398370"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>Fügen Sie Azure Cosmos DB ihrer App mithilfe von Visual Studio hinzu verbundene Dienste
 
@@ -43,13 +42,13 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
 1. Öffnen Sie Ihr Projekt in Visual Studio.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen** aus.
 
-1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten**aus.
+1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten** aus.
 
     ![Dienst Abhängigkeit hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure Cosmos DB**aus.
+1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure Cosmos DB** aus.
 
     ![Azure Cosmos DB hinzufügen](./media/azure-cosmosdb-add-connected-service/azure-cosmosdb.png)
 
@@ -75,7 +74,7 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
    ![Verbindungs Zeichenfolge angeben](./media/azure-cosmosdb-add-connected-service/connection-string.png)
 
-1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig**stellen.
+1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig** stellen.
 
    ![Zusammenfassung der Änderungen](./media/azure-cosmosdb-add-connected-service/summary-of-changes.png)
 

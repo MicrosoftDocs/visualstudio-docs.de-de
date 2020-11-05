@@ -3,18 +3,17 @@ title: Fügen Sie Azure-Anwendung Insights mithilfe verbundene Dienste | Microso
 description: Hinzufügen von Azure-Anwendung Insights zu ihrer App mithilfe von Visual Studio zum Hinzufügen eines verbundenen Dienstanbieter
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643187"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398669"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Fügen Sie Azure-Anwendung Insights mithilfe von Visual Studio hinzu verbundene Dienste
 
@@ -43,13 +42,13 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
 1. Öffnen Sie Ihr Projekt in Visual Studio.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen** aus.
 
-1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten**aus.
+1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten** aus.
 
     ![Dienst Abhängigkeit hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure-Anwendung Insights**aus.
+1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure-Anwendung Insights** aus.
 
     ![Hinzufügen von Azure-Anwendung Insights](./media/azure-app-insights-add-connected-service/azure-app-insights.png)
 
@@ -75,7 +74,7 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
    ![Verbindungs Zeichenfolge angeben](./media/azure-app-insights-add-connected-service/connection-string.png)
 
-1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig**stellen.
+1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig** stellen.
 
    ![Zusammenfassung der Änderungen](./media/azure-app-insights-add-connected-service/summary-of-changes.png)
 

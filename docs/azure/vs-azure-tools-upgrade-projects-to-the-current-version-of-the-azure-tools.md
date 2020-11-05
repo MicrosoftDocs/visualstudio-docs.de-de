@@ -4,17 +4,16 @@ description: Erfahren Sie, wie Sie ein Upgrade von Projekten auf die aktuelle Ve
 author: ghogen
 manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ece853aacc2af48ec89af510a055486b9dded7ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cd9ffac5f668a9f6cd6ab266d38b90658ce9336
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66260581"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398578"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Upgrade von Projekten auf die aktuelle Version von Azure Tools für Visual Studio
 ## <a name="overview"></a>Übersicht
@@ -40,5 +39,5 @@ Wenn ein Projekt automatisch aktualisiert oder angegeben wird, dass es aktualisi
 2. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für den Projektknoten, wählen Sie **Eigenschaften** aus, und wählen Sie dann im angezeigten Dialogfeld die Registerkarte **Anwendung** aus.
 
     Auf der Registerkarte **Anwendung** wird die Tools-Version angezeigt, die dem Projekt zugeordnet ist. Wenn die aktuelle Version von Azure Tools angezeigt wird, wurde das Projekt bereits aktualisiert. Wenn Sie eine neuere Version der Tools installiert haben, als auf der Registerkarte angezeigt wird, wird die Schaltfläche **Aktualisieren** angezeigt.
-3. Klicken Sie auf die Schaltfläche **Aktualisieren**, um ein Projekt auf die aktuelle Version der Tools zu aktualisieren.
+3. Klicken Sie auf die Schaltfläche **Aktualisieren** , um ein Projekt auf die aktuelle Version der Tools zu aktualisieren.
 4. Erstellen Sie das Projekt, und beheben Sie Fehler, die sich aus Änderungen an der API ergeben können. Informationen dazu, wie Sie den Code zur Anpassung an die neue Version ändern, finden Sie in der Dokumentation zur jeweiligen API.

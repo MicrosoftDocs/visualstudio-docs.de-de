@@ -4,17 +4,16 @@ description: Erfahren Sie, wie Rollen für Azure-Clouddienste mithilfe von Visua
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 6b34a61bb0353bbbd4405b7f642bc63758dfa096
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740044"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399278"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurieren von Rollen für Azure-Clouddienste mit Visual Studio
 Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. Für jede Rolle müssen Sie definieren, wie die Rolle eingerichtet ist, und konfigurieren, wie die Rolle ausgeführt wird. Weitere Informationen zu Rollen in Clouddiensten erhalten Sie im Video [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)(in englischer Sprache).
@@ -22,7 +21,7 @@ Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. 
 Die Informationen für Ihren Clouddienst werden in den folgenden Dateien gespeichert:
 
 - Service **Definition. csdef** : die Dienst Definitionsdatei definiert die Lauf Zeit Einstellungen für Ihren clouddienst, einschließlich der erforderlichen Rollen, Endpunkte und der Größe des virtuellen Computers. Die in `ServiceDefinition.csdef` gespeicherten Daten können während der Ausführung der Rolle nicht geändert werden.
-- **ServiceConfiguration.cscfg**: Die Dienstkonfigurationsdatei konfiguriert, wie viele Instanzen einer Rolle ausgeführt werden, und die Werte der für eine Rolle definierten Einstellungen. Die in `ServiceConfiguration.cscfg` gespeicherten Daten können während der Ausführung der Rolle geändert werden.
+- **ServiceConfiguration.cscfg** : Die Dienstkonfigurationsdatei konfiguriert, wie viele Instanzen einer Rolle ausgeführt werden, und die Werte der für eine Rolle definierten Einstellungen. Die in `ServiceConfiguration.cscfg` gespeicherten Daten können während der Ausführung der Rolle geändert werden.
 
 Um verschiedene Werte für die Einstellungen zur Ausführungsweise der Rolle zu speichern, können mehrere Dienstkonfigurationen definiert werden. Sie können unterschiedliche Dienstkonfigurationen für die einzelnen Bereitstellungsumgebungen verwenden. Beispielsweise können Sie die Verbindungs Zeichenfolge für das Speicherkonto so festlegen, dass der lokale Azure Storage Emulator in einer lokalen Dienst Konfiguration verwendet wird, und eine weitere Dienst Konfiguration erstellen, um Azure Storage in der Cloud zu verwenden.
 
@@ -56,7 +55,7 @@ Um die Leistung des Clouddiensts zu verbessern, können Sie die Anzahl der ausge
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
+1. Erweitern Sie in **Projektmappen-Explorer** den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
 
     ![Azure-Rollenkontextmenü im Projektmappen-Explorer](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -66,13 +65,13 @@ Um die Leistung des Clouddiensts zu verbessern, können Sie die Anzahl der ausge
 
 1. Wählen Sie in der Liste **Dienstkonfiguration** die Dienstkonfiguration aus, die Sie aktualisieren möchten.
 
-    ![Liste „Dienstkonfiguration“](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
+    ![Dienst Konfigurations Liste 1](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
 1. Geben Sie im Textfeld **Instanzenanzahl** die Anzahl der Instanzen ein, die Sie für diese Rolle starten möchten. Jede Instanz wird auf einem separaten virtuellen Computer ausgeführt, wenn Sie den Clouddienst in Azure veröffentlichen.
 
     ![Aktualisieren der Anzahl der Instanzen](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern**aus.
+1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern** aus.
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>Verwalten von Verbindungszeichenfolgen für Speicherkonten
 Sie können Verbindungszeichenfolgen für Ihre Dienstkonfigurationen hinzufügen, entfernen oder ändern. Beispielsweise möchten Sie eine lokale Verbindungszeichenfolge für eine lokale Dienstkonfiguration mit dem Wert `UseDevelopmentStorage=true`festlegen. Sie können auch eine Clouddienstkonfiguration konfigurieren, die ein Speicherkonto in Azure verwendet.
@@ -86,7 +85,7 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
+1. Erweitern Sie in **Projektmappen-Explorer** den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
 
     ![Azure-Rollenkontextmenü im Projektmappen-Explorer](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -106,19 +105,19 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
     ![Neue Verbindungszeichenfolge](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **Name**: Geben Sie den Namen ein, den Sie für die Verbindungszeichenfolge verwenden möchten.
-    - **Typ**: Wählen Sie in der Dropdownliste **Verbindungszeichenfolge** aus.
-    - **Wert**: Sie können die Verbindungszeichenfolge entweder direkt in die Zelle **Wert** eingeben oder die Auslassungspunkte (...) auswählen, um im Dialogfeld **Verbindungszeichenfolge für den Speicher erstellen** zu arbeiten.
+    - **Name** : Geben Sie den Namen ein, den Sie für die Verbindungszeichenfolge verwenden möchten.
+    - **Typ** : Wählen Sie in der Dropdownliste **Verbindungszeichenfolge** aus.
+    - **Wert** : Sie können die Verbindungszeichenfolge entweder direkt in die Zelle **Wert** eingeben oder die Auslassungspunkte (...) auswählen, um im Dialogfeld **Verbindungszeichenfolge für den Speicher erstellen** zu arbeiten.
 
 1. Wählen Sie im Dialogfeld **Verbindungszeichenfolge für den Speicher erstellen** eine Option für **Herstellen einer Verbindung mit** aus. Befolgen Sie dann die Anweisungen für die ausgewählte Option:
 
     - **Microsoft Azure-Speicheremulator** : Wenn Sie diese Option auswählen, werden die restlichen Einstellungen im Dialogfeld deaktiviert, da Sie nur für Azure gelten. Klicken Sie auf **OK**.
-    - **Ihr Abonnement**: Wenn Sie diese Option auswählen, verwenden Sie entweder die Dropdownliste, um ein Microsoft-Konto auszuwählen und sich anzumelden, oder fügen Sie ein Microsoft-Konto hinzu. Wählen Sie ein Azure-Abonnement- und -Speicherkonto aus. Klicken Sie auf **OK**.
-    - **Manuell eingegebene Anmeldeinformationen**: Geben Sie den Speicherkontonamen und dann entweder den primären oder den sekundären Schlüssel ein. Wählen Sie eine Option für die **Verbindung** aus (HTTPS wird in den meisten Szenarien empfohlen). Wählen Sie **OK**aus.
+    - **Ihr Abonnement** : Wenn Sie diese Option auswählen, verwenden Sie entweder die Dropdownliste, um ein Microsoft-Konto auszuwählen und sich anzumelden, oder fügen Sie ein Microsoft-Konto hinzu. Wählen Sie ein Azure-Abonnement- und -Speicherkonto aus. Klicken Sie auf **OK**.
+    - **Manuell eingegebene Anmeldeinformationen** : Geben Sie den Speicherkontonamen und dann entweder den primären oder den sekundären Schlüssel ein. Wählen Sie eine Option für die **Verbindung** aus (HTTPS wird in den meisten Szenarien empfohlen). Wählen Sie **OK** aus.
 
 1. Um eine Verbindungszeichenfolge zu löschen, wählen Sie die Verbindungszeichenfolge aus, und wählen Sie dann **Einstellung entfernen** aus.
 
-1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern**aus.
+1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern** aus.
 
 ## <a name="programmatically-access-a-connection-string"></a>Programmgesteuerter Zugriff auf eine Verbindungszeichenfolge
 
@@ -148,7 +147,7 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
+1. Erweitern Sie in **Projektmappen-Explorer** den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
 
     ![Azure-Rollenkontextmenü im Projektmappen-Explorer](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -158,7 +157,7 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
 1. Wählen Sie in der Liste **Dienstkonfiguration** die Dienstkonfiguration aus, die Sie aktualisieren möchten.
 
-    ![Liste „Dienstkonfiguration“](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
+    ![Dienst Konfigurations Liste 2](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
 1. Zum Hinzufügen einer benutzerdefinierten Einstellung wählen Sie **Einstellung hinzufügen** aus.
 
@@ -168,13 +167,13 @@ Wenn Sie verschiedene Werte für die einzelnen Dienstkonfigurationen verwenden, 
 
     ![Neue benutzerdefinierte Einstellung](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **Name**: Geben Sie den Namen der Einstellung ein.
-    - **Typ**: Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
-    - **Wert**: Geben Sie den Wert der Einstellung ein. Sie können den Wert entweder direkt in die Zelle **Wert** eingeben oder die Auslassungspunkte (...) auswählen, um den Wert im Dialogfeld **Zeichenfolge bearbeiten** einzugeben.
+    - **Name** : Geben Sie den Namen der Einstellung ein.
+    - **Typ** : Wählen Sie in der Dropdownliste **Zeichenfolge** aus.
+    - **Wert** : Geben Sie den Wert der Einstellung ein. Sie können den Wert entweder direkt in die Zelle **Wert** eingeben oder die Auslassungspunkte (...) auswählen, um den Wert im Dialogfeld **Zeichenfolge bearbeiten** einzugeben.
 
 1. Um eine benutzerdefinierte Einstellung zu löschen, wählen Sie die Einstellung aus, und wählen Sie dann **Einstellung entfernen** aus.
 
-1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern**aus.
+1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern** aus.
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>Programmgesteuerter Zugriff auf den Wert einer benutzerdefinierten Einstellung
 
@@ -199,7 +198,7 @@ Sie können lokalen Dateisystemspeicher für jede Instanz einer Rolle hinzufüge
 
 1. Erstellen oder öffnen Sie ein Azure-Clouddienstprojekt in Visual Studio.
 
-1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
+1. Erweitern Sie in **Projektmappen-Explorer** den Projekt Knoten. Klicken Sie unter dem Knoten **Rollen** mit der rechten Maustaste auf die Rolle, die Sie aktualisieren möchten, und wählen Sie im Kontextmenü **Eigenschaften** aus.
 
     ![Azure-Rollenkontextmenü im Projektmappen-Explorer](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -209,7 +208,7 @@ Sie können lokalen Dateisystemspeicher für jede Instanz einer Rolle hinzufüge
 
 1. Stellen Sie sicher, dass in der Liste **Dienstkonfiguration** der Eintrag **Alle Konfigurationen** ausgewählt ist, da sich die Einstellungen für den lokalen Speicher auf alle Dienstkonfigurationen beziehen. Jeder andere Wert führt dazu, dass alle Eingabefelder auf der Seite deaktiviert werden.
 
-    ![Liste „Dienstkonfiguration“](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
+    ![Dienst Konfigurations Liste 3](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
 1. Um einen lokalen Speichereintrag hinzuzufügen, wählen Sie **Lokalen Speicher hinzufügen** aus.
 
@@ -219,13 +218,13 @@ Sie können lokalen Dateisystemspeicher für jede Instanz einer Rolle hinzufüge
 
     ![Neuer lokaler Speichereintrag](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
-    - **Name**: Geben Sie den Namen ein, den Sie für den neuen lokalen Speicher verwenden möchten.
-    - **Größe (MB)**: Geben Sie die benötigte Größe in MB für den neuen lokalen Speicher ein.
-    - **Bei Wiederverwendung der Rolle bereinigen**: Aktivieren Sie diese Option, um die Daten im neuen lokalen Speicher zu entfernen, wenn der virtuelle Computer für die Rolle wiederverwendet wird.
+    - **Name** : Geben Sie den Namen ein, den Sie für den neuen lokalen Speicher verwenden möchten.
+    - **Größe (MB)** : Geben Sie die benötigte Größe in MB für den neuen lokalen Speicher ein.
+    - **Bei Wiederverwendung der Rolle bereinigen** : Aktivieren Sie diese Option, um die Daten im neuen lokalen Speicher zu entfernen, wenn der virtuelle Computer für die Rolle wiederverwendet wird.
 
 1. Um einen lokalen Speichereintrag zu löschen, wählen Sie den Eintrag aus, und wählen Sie dann **Lokalen Speicher entfernen** aus.
 
-1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern**aus.
+1. Wählen Sie in der Visual Studio-Symbolleiste die Option **Speichern** aus.
 
 ## <a name="programmatically-accessing-local-storage"></a>Programmgesteuerter Zugriff auf lokalen Speicher
 
