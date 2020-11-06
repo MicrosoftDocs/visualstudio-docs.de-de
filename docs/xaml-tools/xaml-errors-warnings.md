@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049224"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414476"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML-Fehler und -Warnungen
 
@@ -32,7 +32,7 @@ Im Hintergrund analysieren mehrere Tools gleichzeitig die XAML. XAML-Fehler werd
 |XAML – Bearbeiten und Fortfahren|XECxxxx| Visual Studio 2019 Version 16,1 oder früher |
 |Neuladen von XAML im laufenden Betrieb | Xhrxxxx | Visual Studio 2019 Version 16,2 oder höher |
 
-Weitere Informationen zum erneuten Branding der XAML-Bearbeitung & als XAML-Hot-Upload fortsetzen, finden Sie in den Anmerkungen zu dieser [Version](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling) .
+Weitere Informationen zum erneuten Branding der XAML-Bearbeitung & als XAML-Hot-Upload fortsetzen, finden Sie in den Anmerkungen zu dieser [Version](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling) .
 
 > [!Note]
 > Nicht alle Fehler oder Warnungen verfügen über einen entsprechenden Code. Solche Fehler sind in der Regel Fehler des XAML-Designers.

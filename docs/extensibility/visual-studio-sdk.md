@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aceed2833d0083beccf197c4c681f92270a1f9a4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583657"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414383"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue Funktionen in Visual Studio integrieren. Sie können Ihre Erweiterungen sowohl an andere Benutzer als auch an den Visual Studio Marketplace verteilen. Im Folgenden werden einige Möglichkeiten für die Erweiterung von Visual Studio vorgestellt:
@@ -77,7 +77,7 @@ Mit dem Visual Studio SDK können Sie Visual Studio-Features erweitern oder neue
 
 - [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Häufig gestellte Fragen: Umrechnen von Add-Ins in VSPackage-Erweiterungen](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015&preserve-view=true)
+- [Häufig gestellte Fragen: Umrechnen von Add-Ins in VSPackage-Erweiterungen](/previous-versions/visualstudio/visual-studio-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions?preserve-view=true&view=vs-2015)
 - [Verwalten mehrerer Threads in verwaltetem Code](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
 - [Hinzufügen von Befehlen zu Symbolleisten](../extensibility/adding-commands-to-toolbars.md)

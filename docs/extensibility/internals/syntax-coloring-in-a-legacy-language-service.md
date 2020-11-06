@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d3b125737162146af954ad8561eb41e5ee8f2e8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7d0cc0dcf40ab9231e3af6208ab2f844c69f3398
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584528"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414554"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Syntaxfarben in einem Legacysprachdienst
 
@@ -28,7 +28,7 @@ Visual Studio verwendet einen Farbgebung-Dienst, um Elemente der Sprache zu iden
  ![Grafik zur SVC-Farbdarstellung](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
-> Der Syntax Farb Dienst ist von dem allgemeinen Visual Studio-Mechanismus zum Einfärben von Text getrennt. Weitere Informationen zum allgemeinen Mechanismus zur [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Unterstützung der Farbgebung finden [Sie unter Verwenden von Schriftarten und Farben](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true).
+> Der Syntax Farb Dienst ist von dem allgemeinen Visual Studio-Mechanismus zum Einfärben von Text getrennt. Weitere Informationen zum allgemeinen Mechanismus zur [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Unterstützung der Farbgebung finden [Sie unter Verwenden von Schriftarten und Farben](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
  Neben der farbliche Farbgebung kann der Sprachdienst benutzerdefinierte kolorierbare Elemente bereitstellen, die vom Editor verwendet werden, indem er darauf anweist, dass er benutzerdefinierte kolorierbare Elemente bereitstellt. Hierzu können Sie die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> Schnittstelle für das gleiche Objekt implementieren, das die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle implementiert. Sie gibt die Anzahl der benutzerdefinierten Kolon-Elemente zurück, wenn der Editor die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> Methode aufruft, und gibt ein einzelnes benutzerdefinierbares Element zurück, wenn der Editor die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> Methode aufruft.
 
@@ -60,7 +60,7 @@ Visual Studio verwendet einen Farbgebung-Dienst, um Elemente der Sprache zu iden
     3. Verwenden Sie die von der-Methode zurückgegebenen farbliche Informationen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> , um den markierten Text anzuzeigen.
 
 > [!NOTE]
-> Zusätzlich zur Verwendung der Farbauswahl eines sprach Dienstanbieter kann ein VSPackage auch den allgemeinen Text Farb Mechanismus von Visual Studio verwenden. Weitere Informationen zu diesem Mechanismus finden Sie unter [Verwenden von Schriftarten und Farben](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true).
+> Zusätzlich zur Verwendung der Farbauswahl eines sprach Dienstanbieter kann ein VSPackage auch den allgemeinen Text Farb Mechanismus von Visual Studio verwenden. Weitere Informationen zu diesem Mechanismus finden Sie unter [Verwenden von Schriftarten und Farben](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Implementieren von Syntaxfarben](../../extensibility/internals/implementing-syntax-coloring.md)

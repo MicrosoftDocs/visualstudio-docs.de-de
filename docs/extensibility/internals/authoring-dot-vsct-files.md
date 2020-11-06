@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583683"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413908"
 ---
 # <a name="author-vsct-files"></a>Vsct-Dateien erstellen
 In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von Menü Elementen, Symbolleisten und anderen Elementen der Benutzeroberfläche zur integrierten Entwicklungsumgebung (IDE) von Visual Studio erstellen. Gehen Sie folgendermaßen vor, wenn Sie einem Visual Studio-Paket (VSPackage), das noch keine *vsct* -Datei enthält, Benutzeroberflächen Elemente hinzufügen.
@@ -51,9 +51,9 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
 
 1. Fügen Sie am oberen Rand des- `CommandTable` Elements `Extern` für jede externe Datei, auf die verwiesen werden soll, ein-Element hinzu, und legen Sie das- `href` Attribut auf den Namen der Datei fest. Sie können auf die folgenden Header Dateien verweisen, um auf Visual Studio-Ressourcen zuzugreifen:
 
-   - *Stdidcmd. h*: definiert IDs für alle Befehle, die von Visual Studio verfügbar gemacht werden.
+   - *Stdidcmd. h* : definiert IDs für alle Befehle, die von Visual Studio verfügbar gemacht werden.
 
-   - *Vsshlids. h*: enthält Befehls-IDs für Visual Studio-Menüs.
+   - *Vsshlids. h* : enthält Befehls-IDs für Visual Studio-Menüs.
 
 2. Wenn das Paket Befehle aufruft, die von Visual Studio oder anderen Paketen definiert werden, fügen Sie `UsedCommands` nach dem-Element ein-Element hinzu `Commands` . Füllen Sie dieses Element mit einem [usedcommand](../../extensibility/usedcommand-element.md) -Element für jeden aufzurufenden Befehl auf, der nicht Teil des Pakets ist. Legen `guid` Sie die `id` Attribute und der `UsedCommand` Elemente auf die GUID-und ID-Werte der aufzurufenden Befehle fest.
 
@@ -64,7 +64,7 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
 
 #### <a name="to-declare-ui-elements"></a>So deklarieren Sie Benutzeroberflächen Elemente
 
-1. `Symbols`Fügen Sie im-Element drei [guidsymbol](../../extensibility/guidsymbol-element.md) -Elemente hinzu. Jedes `GuidSymbol` Element verfügt über ein `name` -Attribut und ein- `value` Attribut. Legen Sie das- `name` Attribut so fest, dass es den Zweck des-Elements widerspiegelt. Das `value` Attribut nimmt eine GUID an. (Um eine GUID zu generieren, wählen Sie **im Menü Extras** die Option **GUID erstellen**, und wählen Sie dann **Registrierungs Format**aus.)
+1. `Symbols`Fügen Sie im-Element drei [guidsymbol](../../extensibility/guidsymbol-element.md) -Elemente hinzu. Jedes `GuidSymbol` Element verfügt über ein `name` -Attribut und ein- `value` Attribut. Legen Sie das- `name` Attribut so fest, dass es den Zweck des-Elements widerspiegelt. Das `value` Attribut nimmt eine GUID an. (Um eine GUID zu generieren, wählen Sie **im Menü Extras** die Option **GUID erstellen** , und wählen Sie dann **Registrierungs Format** aus.)
 
      Das erste `GuidSymbol` Element stellt das Paket dar und hat in der Regel keine untergeordneten Elemente. Das zweite `GuidSymbol` Element stellt den Befehlssatz dar und enthält alle Symbole, mit denen die Menüs, Gruppen und Befehle definiert werden. Das dritte `GuidSymbol` Element stellt den Image Speicher dar und enthält Symbole für alle Symbole für die Befehle. Wenn Sie über keine Befehle verfügen, die Symbole verwenden, können Sie das dritte `GuidSymbol` Element weglassen.
 
@@ -108,7 +108,7 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
        > [!NOTE]
        > Symbolleisten-Schaltflächen müssen Symbole aufweisen.
 
-   Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 4. Wenn für einen ihrer Befehle Symbole erforderlich sind, fügen Sie dem-Element ein [Bitmaps](../../extensibility/bitmaps-element.md) -Element hinzu `Commands` . Fügen Sie dann für jedes Symbol dem-Element ein [Bitmap](../../extensibility/bitmap-element.md) -Element hinzu `Bitmaps` . Hier geben Sie den Speicherort der Bitmap-Ressource an. Weitere Informationen finden Sie unter [Hinzufügen von Symbolen zu Menübefehlen](../../extensibility/adding-icons-to-menu-commands.md).
 

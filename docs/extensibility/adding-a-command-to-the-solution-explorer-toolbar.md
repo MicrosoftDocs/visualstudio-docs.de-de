@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32b7de4d3e62c2f1d9de5126217ccede48dfca8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583696"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414099"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zum Projektmappen-Explorer Symbolleiste
 In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche zur **Projektmappen-Explorer** Symbolleiste erläutert.
@@ -27,13 +27,13 @@ In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche
  Weitere Informationen zu Menüs, Symbolleisten Befehlen und *vsct* -Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Verwenden Sie XML-Befehls Tabellen Dateien (*vsct*) anstelle von Befehls Tabellen Konfigurationsdateien (*. CTC*), um zu definieren, wie Menüs und Befehle in ihren VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Verwenden Sie XML-Befehls Tabellen Dateien ( *vsct* ) anstelle von Befehls Tabellen Konfigurationsdateien ( *. CTC* ), um zu definieren, wie Menüs und Befehle in ihren VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
  Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-menu-command"></a>Erstellen einer Erweiterung mit einem Menübefehl
- Erstellen Sie ein VSIX-Projekt mit dem Namen `SolutionToolbar` . Fügen Sie eine Menübefehls Element-Vorlage mit dem Namen **ToolBarButton**hinzu. Weitere Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+ Erstellen Sie ein VSIX-Projekt mit dem Namen `SolutionToolbar` . Fügen Sie eine Menübefehls Element-Vorlage mit dem Namen **ToolBarButton** hinzu. Weitere Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Hinzufügen einer Schaltfläche zur Projektmappen-Explorer Symbolleiste
  In diesem Abschnitt der exemplarischen Vorgehensweise wird gezeigt, wie Sie der **Projektmappen-Explorer** Symbolleiste eine Schaltfläche hinzufügen. Wenn auf die Schaltfläche geklickt wird, wird der Code in der Rückruf Methode ausgeführt.
@@ -80,7 +80,7 @@ In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>So zeigen Sie eine Schaltfläche an, wenn ein oder mehrere Projekte geöffnet sind
 
-1. `<Buttons>`Fügen Sie im-Abschnitt von *toolbarbuttonpackage. vsct*dem vorhandenen `<Button>` -Element zwischen den Tags und zwei Befehlsflags hinzu `<Strings>` `<Icons>` .
+1. `<Buttons>`Fügen Sie im-Abschnitt von *toolbarbuttonpackage. vsct* dem vorhandenen `<Button>` -Element zwischen den Tags und zwei Befehlsflags hinzu `<Strings>` `<Icons>` .
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>
@@ -114,7 +114,7 @@ In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche
 
 5. Klicken Sie im Menü **Datei** auf **Projektmappe schließen**. Die Schaltfläche wird nicht mehr auf der Symbolleiste angezeigt.
 
-   Die Sichtbarkeit der Schaltfläche wird von gesteuert, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bis das VSPackage geladen wurde. Nachdem das VSPackage geladen wurde, wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   Die Sichtbarkeit der Schaltfläche wird von gesteuert, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bis das VSPackage geladen wurde. Nachdem das VSPackage geladen wurde, wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

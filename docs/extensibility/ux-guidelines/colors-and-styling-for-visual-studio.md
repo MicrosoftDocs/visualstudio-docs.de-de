@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584268"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414268"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 
@@ -49,13 +49,13 @@ Wählen Sie die Methode aus, die für Ihre Benutzeroberflächen Elemente am best
 | Sie verfügen über eingebettete oder eigenständige Dialogfelder. | **System Farben** | System Namen, mit denen das Betriebssystem die Farbe und Darstellung der Benutzeroberflächen Elemente, wie z. b. allgemeine Dialogfeld Steuerelemente, definieren kann. |
 | Sie haben benutzerdefinierte Benutzeroberfläche, die mit der gesamten vs-Umgebung konsistent sein soll, und Sie verfügen über Benutzeroberflächen Elemente, die mit der Kategorie und der semantischen Bedeutung der freigegebenen Token übereinstimmen. | **Gemeinsame gemeinsame Farben** | Vorhandene vordefinierte farbtokennamen für bestimmte Elemente der Benutzeroberfläche |
 | Sie verfügen über ein einzelnes Feature oder eine Gruppe von Features, und für ähnliche Elemente gibt es keine gemeinsame Farbe. | **Benutzerdefinierte Farben** | Farbtokennamen, die spezifisch für einen Bereich sind und nicht für die gemeinsame Verwendung mit anderen Benutzeroberflächen vorgesehen sind |
-| Sie möchten, dass der Endbenutzer die Benutzeroberfläche oder den Inhalt anpassen kann (z. b. für Text-Editoren oder spezielle Designer Fenster). | **Anpassung des Endbenutzers**<br /><br />**(Tools &gt; Dialogfeld "Optionen"** | Einstellungen, die auf der Seite "Schriftarten und Farben" des Dialog Felds "Extras ** &gt; Optionen** " oder einer speziellen, speziell für ein UI-Feature spezifischen Seite definiert sind. |
+| Sie möchten, dass der Endbenutzer die Benutzeroberfläche oder den Inhalt anpassen kann (z. b. für Text-Editoren oder spezielle Designer Fenster). | **Anpassung des Endbenutzers**<br /><br />**(Tools &gt; Dialogfeld "Optionen"** | Einstellungen, die auf der Seite "Schriftarten und Farben" des Dialog Felds "Extras **&gt; Optionen** " oder einer speziellen, speziell für ein UI-Feature spezifischen Seite definiert sind. |
 
 ### <a name="visual-studio-themes"></a>Visual Studio-Designs
 
 Visual Studio bietet drei verschiedene Farbschemas: hell, dunkel und blau. Außerdem wird hoher Kontrast Modus erkannt, bei dem es sich um ein systemweites Farbschema handelt, das für die Barrierefreiheit konzipiert ist.
 
-Benutzer werden bei der ersten Verwendung von Visual Studio aufgefordert, ein Design auszuwählen. Sie können die Designs später ändern, indem Sie zu Extras ** &gt; Optionen &gt; Umgebung &gt; Allgemein** wechseln und ein neues Design aus dem Dropdown Menü "Farbschema" auswählen.
+Benutzer werden bei der ersten Verwendung von Visual Studio aufgefordert, ein Design auszuwählen. Sie können die Designs später ändern, indem Sie zu Extras **&gt; Optionen &gt; Umgebung &gt; Allgemein** wechseln und ein neues Design aus dem Dropdown Menü "Farbschema" auswählen.
 
 Benutzer können auch die Systemsteuerung verwenden, um Ihre gesamten Systeme in eines von mehreren hoher Kontrast Designs zu wechseln. Wenn ein Benutzer ein hoher Kontrast Design auswählt, wirkt sich das Visual Studio Color Design Selector nicht mehr auf die Farben in Visual Studio aus. es werden jedoch alle Designänderungen gespeichert, wenn der Benutzer hoher Kontrast Modus verlässt. Weitere Informationen zum hoher Kontrast Modus finden Sie unter [auswählen hoher Kontrast Farben](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors).
 
@@ -81,7 +81,7 @@ Vergewissern Sie sich vor der Verwendung gemeinsamer gemeinsamer Farben, dass Si
 
 Siehe: verfügbar machen [von Farben für Endbenutzer](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-Manchmal empfiehlt es sich, den Endbenutzern das Anpassen Ihrer Benutzeroberfläche zu ermöglichen, z. b. Wenn Sie einen Code-Editor oder eine Entwurfs Oberfläche erstellen. Anpassbare UI-Komponenten finden Sie im Abschnitt **Schriftarten und Farben** des Dialog Felds Extras ** &gt; Optionen** , in dem Benutzer die Vordergrundfarbe, die Hintergrundfarbe oder beides ändern können.
+Manchmal empfiehlt es sich, den Endbenutzern das Anpassen Ihrer Benutzeroberfläche zu ermöglichen, z. b. Wenn Sie einen Code-Editor oder eine Entwurfs Oberfläche erstellen. Anpassbare UI-Komponenten finden Sie im Abschnitt **Schriftarten und Farben** des Dialog Felds Extras **&gt; Optionen** , in dem Benutzer die Vordergrundfarbe, die Hintergrundfarbe oder beides ändern können.
 
 ![Dialogfeld " &gt; Optionen"](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />Dialogfeld " &gt; Optionen"
 
@@ -285,7 +285,7 @@ Nur eine Handvoll Systemfarben können für hoher Kontrast Designs verwendet wer
 
 Die Tabelle im [WPF-Teamblog: SystemColors Reference](/archive/blogs/wpf/systemcolors-reference) gibt den kompletten Satz von System Farbnamen und die entsprechenden Schattierungen an, die in jedem Design angezeigt werden.
 
-Wenn Sie diese begrenzte Anzahl von Farben auf die Benutzeroberfläche anwenden, wird *davon ausgegangen, dass Sie die in den "normalen" Designs enthaltenen*, geringfügigen Details verlieren. Im folgenden finden Sie ein Beispiel für eine Benutzeroberfläche mit subtilen grauen Farben, die zur Unterscheidung von Bereichen in einem Tool Fenster verwendet werden. Wenn Sie mit dem gleichen Fenster gekoppelt sind, das im hoher Kontrast Modus angezeigt wird, können Sie sehen, dass alle Hintergründe denselben Farbton haben und die Rahmen dieser Bereiche allein durch Border angegeben werden:
+Wenn Sie diese begrenzte Anzahl von Farben auf die Benutzeroberfläche anwenden, wird *davon ausgegangen, dass Sie die in den "normalen" Designs enthaltenen* , geringfügigen Details verlieren. Im folgenden finden Sie ein Beispiel für eine Benutzeroberfläche mit subtilen grauen Farben, die zur Unterscheidung von Bereichen in einem Tool Fenster verwendet werden. Wenn Sie mit dem gleichen Fenster gekoppelt sind, das im hoher Kontrast Modus angezeigt wird, können Sie sehen, dass alle Hintergründe denselben Farbton haben und die Rahmen dieser Bereiche allein durch Border angegeben werden:
 
 ![Beispiel für den Verlust von geringfügigen Details in hoher Kontrast](../../extensibility/ux-guidelines/media/030303-a_propertieswindow.png "030303-a_PropertiesWindow")<br />Beispiel für den Verlust von geringfügigen Details in hoher Kontrast
 
@@ -334,13 +334,13 @@ Viele allgemeine Benutzeroberflächen Elemente haben bereits hoher Kontrast Farb
 
 ### <a name="overview"></a>Übersicht
 
-Manchmal empfiehlt es sich, den Endbenutzern das Anpassen Ihrer Benutzeroberfläche zu ermöglichen, z. b. Wenn Sie einen Code-Editor oder eine Entwurfs Oberfläche erstellen. Die gängigste Methode hierfür ist die Verwendung des Dialog Felds Extras- ** &gt; Optionen** . Wenn Sie nicht über eine hochgradig spezialisierte Benutzeroberfläche verfügen, die spezielle Steuerelemente erfordert, ist die einfachste Möglichkeit zur Darstellung der Anpassung über die Seite **Schriftarten und Farben** im Abschnitt **Umgebung** des Dialog Felds. Für jedes Element, das Sie für die Anpassung verfügbar machen, kann der Benutzer die Vordergrundfarbe, die Hintergrundfarbe oder beides ändern.
+Manchmal empfiehlt es sich, den Endbenutzern das Anpassen Ihrer Benutzeroberfläche zu ermöglichen, z. b. Wenn Sie einen Code-Editor oder eine Entwurfs Oberfläche erstellen. Die gängigste Methode hierfür ist die Verwendung des Dialog Felds Extras- **&gt; Optionen** . Wenn Sie nicht über eine hochgradig spezialisierte Benutzeroberfläche verfügen, die spezielle Steuerelemente erfordert, ist die einfachste Möglichkeit zur Darstellung der Anpassung über die Seite **Schriftarten und Farben** im Abschnitt **Umgebung** des Dialog Felds. Für jedes Element, das Sie für die Anpassung verfügbar machen, kann der Benutzer die Vordergrundfarbe, die Hintergrundfarbe oder beides ändern.
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Ein VSPackage für Ihre anpassbaren Farben wird aufgebaut
 
 Ein VSPackage kann die Schriftarten und Farben mithilfe von benutzerdefinierten Kategorien steuern und Elemente auf der Eigenschaften Seite Schriftarten und Farben anzeigen. Bei Verwendung dieses Mechanismus müssen VSPackages die [ivsfontandcolordefaultsprovider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) -Schnittstelle und die zugehörigen Schnittstellen implementieren.
 
-Im Prinzip kann dieser Mechanismus verwendet werden, um alle vorhandenen Anzeigeelemente und die Kategorien zu ändern, in denen Sie enthalten sind. Es sollte jedoch nicht zum Ändern der Kategorie Text-Editor oder seiner Anzeigeelemente verwendet werden. Weitere Informationen zur Kategorie Text-Editor finden Sie unter [Übersicht über Schriftart und Farben](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true).
+Im Prinzip kann dieser Mechanismus verwendet werden, um alle vorhandenen Anzeigeelemente und die Kategorien zu ändern, in denen Sie enthalten sind. Es sollte jedoch nicht zum Ändern der Kategorie Text-Editor oder seiner Anzeigeelemente verwendet werden. Weitere Informationen zur Kategorie Text-Editor finden Sie unter [Übersicht über Schriftart und Farben](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015).
 
 Ein VSPackage muss Folgendes durchführen, um benutzerdefinierte Kategorien oder Elemente anzuzeigen:
 
@@ -423,7 +423,7 @@ Zu diesem Zweck muss ein VSPackage folgende Aktionen ausführen:
 
   **OR**
 
-- **Abfragen der IDE auf Änderungen**. Dies kann über die vom System implementierte [ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) -Schnittstelle durchgeführt werden. Obwohl die [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) -Methode in erster Linie zur Unterstützung der Persistenz dient, kann Sie Schriftart-und Farbinformationen für Anzeigeelemente abrufen. Weitere Informationen zu Schriftart-und Farbeinstellungen finden Sie im MSDN-Artikel [zugreifen auf gespeicherte Schriftart-und Farbeinstellungen](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true).
+- **Abfragen der IDE auf Änderungen**. Dies kann über die vom System implementierte [ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) -Schnittstelle durchgeführt werden. Obwohl die [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) -Methode in erster Linie zur Unterstützung der Persistenz dient, kann Sie Schriftart-und Farbinformationen für Anzeigeelemente abrufen. Weitere Informationen zu Schriftart-und Farbeinstellungen finden Sie im MSDN-Artikel [zugreifen auf gespeicherte Schriftart-und Farbeinstellungen](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015).
 
 > [!NOTE]
 > Um sicherzustellen, dass die Abruf Ergebnisse richtig sind, verwenden Sie die [ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) -Schnittstelle, um zu bestimmen, ob eine Cache Leerung und ein Update erforderlich sind, bevor die Abruf Methoden der [ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) -Schnittstelle aufgerufen werden.
