@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583670"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414190"
 ---
 # <a name="checklist-create-new-project-types"></a>Prüfliste: Erstellen neuer Projekttypen
 Um einen neuen Projekttyp zu erstellen, müssen Sie mehrere Aufgaben ausführen. Die folgende Checkliste enthält eine Anleitung für diese Aufgaben:
@@ -25,7 +25,7 @@ Um einen neuen Projekttyp zu erstellen, müssen Sie mehrere Aufgaben ausführen.
 
 2. Bestimmen Sie, welche Editoren für Code und andere Projekt Elemente verwendet werden. Sie können die Core-oder Standard-Editoren verwenden, oder Sie können projektspezifische Editoren erstellen und verwenden. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Editoren und Designern](../../extensibility/creating-custom-editors-and-designers.md) und Gewusst [wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md).
 
-3. Bestimmen Sie den Grad der Teilnahme, den Ihre Projekt Elemente in der **Klassenansicht** und der **Objektkatalog**haben. Weitere Informationen finden Sie [unter unterstützen von Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md)zum Durchsuchen von Symbolen.
+3. Bestimmen Sie den Grad der Teilnahme, den Ihre Projekt Elemente in der **Klassenansicht** und der **Objektkatalog** haben. Weitere Informationen finden Sie [unter unterstützen von Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md)zum Durchsuchen von Symbolen.
 
 4. Leiten Sie neue Klassen auf der Grundlage von Entwurfsentscheidungen ab, die Sie zuvor für das Projekt und die Projekt Elemente erstellt haben.
 
@@ -33,7 +33,7 @@ Um einen neuen Projekttyp zu erstellen, müssen Sie mehrere Aufgaben ausführen.
 
     - Projektfactory, um das Erstellen neuer Projekte und das Öffnen vorhandener Projekte zu verwalten. Weitere Informationen finden Sie unter [Erstellen von Projekt Instanzen mithilfe von projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Projekt Hierarchie und Befehls Verarbeitung. Weitere Informationen finden Sie unter [Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](/previous-versions/bb166212(v=vs.100)), [Elemente eines Projekt Modells](../../extensibility/internals/elements-of-a-project-model.md), [Projekt Modell-Kernkomponenten](../../extensibility/internals/project-model-core-components.md)und [MenuCommands im Vergleich zu olemenucommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+    - Projekt Hierarchie und Befehls Verarbeitung. Weitere Informationen finden Sie unter [Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](/previous-versions/bb166212(v=vs.100)), [Elemente eines Projekt Modells](../../extensibility/internals/elements-of-a-project-model.md), [Projekt Modell-Kernkomponenten](../../extensibility/internals/project-model-core-components.md)und [MenuCommands im Vergleich zu olemenucommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
     - Verwaltung von Projekt Elementen, einschließlich Hinzufügen des Projekts zum Dialogfeld " **Neues Projekt** ". Weitere Informationen finden Sie unter [Hinzufügen von Projekt-und Projekt Element Vorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md) und [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md).
 
@@ -49,13 +49,13 @@ Um einen neuen Projekttyp zu erstellen, müssen Sie mehrere Aufgaben ausführen.
 
     - Objekte oder von abgeleitete Klassen `IDispatch` sind für die Automatisierung verfügbar.
 
-    - XML-Befehls Tabellen Dateien (*vsct*). Weitere Informationen finden Sie unter [Visual Studio-Befehls Tabellen Dateien (vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+    - XML-Befehls Tabellen Dateien ( *vsct* ). Weitere Informationen finden Sie unter [Visual Studio-Befehls Tabellen Dateien (vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 6. Testen, Debuggen und starten Sie den Projekttyp.
 
 7. Zeigen Sie das Projekt im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Projekt** an, indem Sie `VARIANT_TRUE` als Wert für festlegen `VSHPROPID_ShowProjInSolutionPage` . Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Erstellen Sie die Microsoft Installer-Datei (*MSI*-Datei) zum Installieren der VSPackages. Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [Registrieren eines Projekt Typs](../../extensibility/internals/registering-a-project-type.md)und [VSPackages](../../extensibility/internals/vspackages.md).
+8. Erstellen Sie die Microsoft Installer-Datei ( *MSI* -Datei) zum Installieren der VSPackages. Weitere Informationen finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [Registrieren eines Projekt Typs](../../extensibility/internals/registering-a-project-type.md)und [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 155c703ebbeb2705ac7abbba5cd2c095f520c698
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584554"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413943"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Erweitern des Editors und der Sprachdienste
 Sie können einem eigenen Editor Sprachdienst Funktionen (z. b. IntelliSense) hinzufügen und die meisten Funktionen des Visual Studio Code-Editors erweitern.  Eine vollständige Liste der Erweiterungen, die Sie erweitern können, finden Sie unter [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md).
@@ -36,7 +36,7 @@ Sie können einem eigenen Editor Sprachdienst Funktionen (z. b. IntelliSense) hi
 |[Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)|Listet die Erweiterungs Punkte des Editors auf. Erweiterungs Punkte stellen die Editor-Funktionen dar, die erweitert werden können.|
 |[Exemplarische Vorgehensweise: Erstellen eines Ansichts Zusatz Elements, von Befehlen und Einstellungen (Spalten Handbücher)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Führt Sie durch und erläutert die Entwicklung eines Ansichts Zusatz Elements, das Spalten Führungslinien zeichnet, damit Sie Code in einer bestimmten Anzeigebreite behalten können.  Außerdem werden Lese-und Schreib Einstellungen sowie das Deklarieren und Implementieren von Befehlen angezeigt, die Sie über das Befehlsfenster aufrufen können.|
 |[Editor Importe](../extensibility/editor-imports.md)|Listet die Dienste auf, die eine Erweiterung importieren kann.|
-|[Anpassen von Legacy Code an den Editor](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015&preserve-view=true)|Erläutert verschiedene Möglichkeiten zum Anpassen von Legacy Code (Pre-Visual Studio 2010), um den Editor zu erweitern.|
+|[Anpassen von Legacy Code an den Editor](/previous-versions/visualstudio/visual-studio-2015/extensibility/adapting-legacy-code-to-the-editor?preserve-view=true&view=vs-2015)|Erläutert verschiedene Möglichkeiten zum Anpassen von Legacy Code (Pre-Visual Studio 2010), um den Editor zu erweitern.|
 |[Migrieren eines Legacy sprach Dienstanbieter](../extensibility/internals/migrating-a-legacy-language-service.md)|Erläutert, wie ein VSPackage-basierter Sprachdienst migriert wird.|
 |[Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Zeigt, wie Sie einen Inhaltstyp mit einer Dateinamenerweiterung verknüpfen.|
 |[Exemplarische Vorgehensweise: Erstellen eines Rand Symbols](../extensibility/walkthrough-creating-a-margin-glyph.md)|Zeigt, wie ein Symbol zu einem Rand hinzugefügt wird.|

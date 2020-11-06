@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dec1cf1e3ec4301b1f219f7345957877ea420528
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 72749d3a58b4adae149baefff9e9ae77f6b05f18
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585640"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414177"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Syntaxfarben in benutzerdefinierten Editoren
 Visual Studio-Umgebungs-SDK-Editoren, einschließlich des Kern-Editors, verwenden Sprachdienste, um bestimmte syntaktische Elemente zu identifizieren und diese mit den angegebenen Farben für eine bestimmte Dokument Ansicht anzuzeigen.
@@ -52,7 +52,7 @@ Visual Studio-Umgebungs-SDK-Editoren, einschließlich des Kern-Editors, verwende
 3. Verwenden Sie die von zurückgegebenen farbliche Informationen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> , um den Text neu zu zeichnen und anzuzeigen.
 
 > [!NOTE]
-> Zusätzlich zur Verwendung der Farbgebung eines sprach Dienstanbieter kann ein VSPackage auswählen, dass der Text Farb Mechanismus für das allgemeine Visual Studio-Umgebungs-SDK verwendet werden soll. Weitere Informationen zu diesem Mechanismus finden Sie unter [Verwenden von Schriftarten und Farben](../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true).
+> Zusätzlich zur Verwendung der Farbgebung eines sprach Dienstanbieter kann ein VSPackage auswählen, dass der Text Farb Mechanismus für das allgemeine Visual Studio-Umgebungs-SDK verwendet werden soll. Weitere Informationen zu diesem Mechanismus finden Sie unter [Verwenden von Schriftarten und Farben](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Weitere Informationen
 
