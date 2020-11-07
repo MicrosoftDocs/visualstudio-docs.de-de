@@ -1,6 +1,8 @@
 ---
 title: Code Analysis Policy Errors
 ms.date: 11/04/2016
+description: Erfahren Sie mehr über Fehler bei der Code Analyse Richtlinie in Visual Studio. Zeigt Beschreibungen von Fehlern an, die auftreten, wenn die Richtlinie beim Einchecken von Code nicht erfüllt wird.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587744"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349099"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -47,11 +49,11 @@ Die Codeanalyserichtlinie setzt voraus, dass alle eingecheckten Dateien in der a
 
 **Die Version von ' {0} ' ist nicht richtig. Der in der Richtlinie angegebene starke Name ist " {1} ".**
 
-Dieser Fehler bezieht sich auf .NET-Projekte. Eine für die Codeanalyserichtlinie erforderliche Regel-DLL ist auf dem lokalen Computer vorhanden, aber die Version/der öffentliche Schlüssel stimmt nicht überein. Um diesen Fehler zu beheben, muss der Richtlinien Ersteller die DLLs im Verzeichnis " *c:\Programme\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\ * " auf dem Computer aktualisieren.
+Dieser Fehler bezieht sich auf .NET-Projekte. Eine für die Codeanalyserichtlinie erforderliche Regel-DLL ist auf dem lokalen Computer vorhanden, aber die Version/der öffentliche Schlüssel stimmt nicht überein. Um diesen Fehler zu beheben, muss der Richtlinien Ersteller die DLLs im Verzeichnis " *c:\Programme\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* " auf dem Computer aktualisieren.
 
 **die {0} in der Richtlinie angegebene Assembly ist nicht vorhanden.**
 
-Dieser Fehler bezieht sich auf .NET-Projekte. Für eine für die Codeanalyserichtlinie erforderliche Regel ist die entsprechende DLL nicht auf dem Clientcomputer installiert. Um diesen Fehler zu beheben, muss der Richtlinien Ersteller die dll im Verzeichnis " *c:\Programme\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\ * " auf dem Computer aktualisieren.
+Dieser Fehler bezieht sich auf .NET-Projekte. Für eine für die Codeanalyserichtlinie erforderliche Regel ist die entsprechende DLL nicht auf dem Clientcomputer installiert. Um diesen Fehler zu beheben, muss der Richtlinien Ersteller die dll im Verzeichnis " *c:\Programme\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* " auf dem Computer aktualisieren.
 
 **{0}Die Projekt Regel Einstellungen stimmen nicht mit der Code Analyse Richtlinie überein.**
 

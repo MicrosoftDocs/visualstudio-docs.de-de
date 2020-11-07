@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren des Verhaltens der ClickOnce-Vertrauens Aufforderung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die ClickOnce-Vertrauensstellungs-Eingabeaufforderung konfigurieren, um zu steuern, ob Endbenutzern die Option zum Installieren von ClickOnce-Anwendungen
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852230"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350061"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit
 Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu steuern, ob Endbenutzer die Möglichkeit haben, ClickOnce-Anwendungen zu installieren, z. b. Windows Forms Anwendungen, Windows Presentation Foundation Anwendungen, Konsolen Anwendungen, WPF-Browser Anwendungen und Office-Projektmappen. Sie konfigurieren die Vertrauensstellungs-Eingabeaufforderung, indem Sie auf jedem Computer des Endbenutzers Registrierungsschlüssel festlegen.
@@ -38,7 +40,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
  In der folgenden Tabelle wird das Standardverhalten für jede Zone angezeigt. Die Spalte Anwendungen bezieht sich auf Windows Forms Anwendungen, Windows Presentation Foundation Anwendungen, WPF-Browser Anwendungen und Konsolen Anwendungen.
 
-|Zone|Applications|Office-Projektmappen|
+|Zone|Anwendungen|Office-Projektmappen|
 |----------|------------------|----------------------|
 |`MyComputer`|`Enabled`|`Enabled`|
 |`LocalIntranet`|`Enabled`|`Enabled`|
@@ -55,7 +57,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
 1. Öffnen Sie den Registrierungs-Editor:
 
-    1. Klicken Sie im **Startmenü**auf **Ausführen**.
+    1. Klicken Sie im **Startmenü** auf **Ausführen**.
 
     2. Geben Sie im Feld **Öffnen** ein `regedit` , und klicken Sie dann auf **OK**.
 
@@ -65,7 +67,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn.
 
-3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert** hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
 
     |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|
@@ -114,7 +116,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
 1. Öffnen Sie den Registrierungs-Editor:
 
-    1. Klicken Sie im **Startmenü**auf **Ausführen**.
+    1. Klicken Sie im **Startmenü** auf **Ausführen**.
 
     2. Geben Sie im Feld **Öffnen** ein `regedit` , und klicken Sie dann auf **OK**.
 
@@ -124,7 +126,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn.
 
-3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert** hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
 
     |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|
@@ -171,7 +173,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
 1. Öffnen Sie den Registrierungs-Editor:
 
-    1. Klicken Sie im **Startmenü**auf **Ausführen**.
+    1. Klicken Sie im **Startmenü** auf **Ausführen**.
 
     2. Geben Sie im Feld **Öffnen** ein `regedit` , und klicken Sie dann auf **OK**.
 
@@ -181,7 +183,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn.
 
-3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert** hinzu, wenn Sie nicht bereits vorhanden sind, und geben Sie die zugehörigen Werte in der folgenden Tabelle ein.
 
     |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|

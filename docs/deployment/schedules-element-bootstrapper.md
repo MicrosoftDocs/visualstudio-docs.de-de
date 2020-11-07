@@ -1,5 +1,7 @@
 ---
 title: '&lt;Zeitpläne- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
+description: Das Schedule-Element enthält Zeit Plan Elemente, die bestimmte Zeiten definieren, zu denen die vom Command-Element definierten Befehle ausgeführt werden sollen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927331"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349359"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Zeitpläne- &gt; Element (Boots Trapper)
 Das- `Schedules` Element enthält- `Schedule` Elemente, mit denen bestimmte Zeiten definiert werden, in denen die vom-Element definierten Befehle `Command` ausgeführt werden sollen.

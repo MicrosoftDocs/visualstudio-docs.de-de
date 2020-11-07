@@ -1,5 +1,6 @@
 ---
 title: Alternativen Speicherort für Bereitstellungs Updates angeben
+description: Erfahren Sie, wie Sie in Ihrem Bereitstellungs Manifest einen alternativen Speicherort für Updates für Ihre ClickOnce-Anwendung angeben.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808749"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349645"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen
 Sie können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung anfänglich von einer CD oder einer Dateifreigabe installieren, aber die Anwendung muss sich auf regelmäßige Updates im Web überprüfen. Sie können einen alternativen Speicherort für Updates im Bereitstellungs Manifest angeben, damit Ihre Anwendung nach der Erstinstallation aus dem Web aktualisiert werden kann.
@@ -39,7 +40,7 @@ Sie können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
 
 3. Wählen Sie die Registerkarte **Bereitstellungsoptionen** aus.
 
-4. Geben Sie im Textfeld mit dem Namen **Launch Location**die URL zu dem Verzeichnis ein, das das Bereitstellungs Manifest für Anwendungs Updates enthalten soll.
+4. Geben Sie im Textfeld mit dem Namen **Launch Location** die URL zu dem Verzeichnis ein, das das Bereitstellungs Manifest für Anwendungs Updates enthalten soll.
 
 5. Speichern Sie das Bereitstellungs Manifest.
 
@@ -51,17 +52,17 @@ Sie können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
 
     **Mage-Update HelloWorld.exe. Application-providerUrl http: \/ /adatum.com/Update/Path**
 
-3. Speichern Sie die Datei.
+3. Speichern Sie die Datei .
 
    > [!NOTE]
-   > Sie müssen die Datei jetzt mit *Mage.exe*neu signieren. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+   > Sie müssen die Datei jetzt mit *Mage.exe* neu signieren. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit
  Wenn Sie die Anwendung von einem Offline Medium, z. b. einer CD, installieren und der Computer online ist, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] prüft zunächst die `<deploymentProvider>` im Bereitstellungs Manifest angegebene URL, um festzustellen, ob der Aktualisierungs Speicherort eine neuere Version der Anwendung enthält. Wenn dies der Fall ist, wird [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] die Anwendung direkt von dort aus installiert, anstatt aus dem ursprünglichen Installationsverzeichnis, und der Common Language Runtime (CLR) bestimmt die Vertrauens Ebene Ihrer Anwendung mithilfe von `<deploymentProvider>` . Wenn der Computer offline ist oder `<deploymentProvider>` nicht erreichbar ist, wird [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] von der CD installiert, und die CLR gewährt basierend auf dem Installations Punkt eine Vertrauensstellung. bei einer CD-Installation erhält die Anwendung volle Vertrauenswürdigkeit. Alle nachfolgenden Updates erben diese Vertrauens Ebene.
 
  Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen, die verwenden, `<deploymentProvider>` sollten explizit die Berechtigungen deklarieren, die Sie in Ihrem Anwendungs Manifest benötigen, damit die Anwendung nicht unterschiedliche Vertrauens Ebenen auf verschiedenen Computern erhält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)

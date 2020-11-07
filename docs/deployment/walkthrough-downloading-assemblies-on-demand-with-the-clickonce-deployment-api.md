@@ -1,5 +1,6 @@
 ---
 title: Assemblys bei Bedarf herunterladen (ClickOnce-API)
+description: Erfahren Sie, wie Sie bestimmte Assemblys in der ClickOnce-Anwendung als optional markieren und Sie herunterladen, wenn Sie vom Common Language Runtime benötigt werden.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8452bec3443b93737e4799a8f09c8e342f011976
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809249"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349259"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Bedarfs gesteuertes herunterladen von Assemblys mit der ClickOnce-
 Standardmäßig werden alle in einer-Anwendung enthaltenen Assemblys [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] heruntergeladen, wenn die Anwendung zum ersten Mal ausgeführt wird. Allerdings haben Sie möglicherweise Teile der Anwendung, die von einer kleinen Gruppe von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application>-Namespace verwenden, wenn diese von der Common Language Runtime (CLR) angefordert werden.
@@ -58,7 +59,7 @@ Standardmäßig werden alle in einer-Anwendung enthaltenen Assemblys [!INCLUDE[n
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
 
-6. Speichern Sie den Text in Abhängigkeit von der verwendeten Sprache als Datei mit dem Namen *ClickOnceLibrary.cs* oder *ClickOnceLibrary. vb*im Verzeichnis *ClickOnceOnDemand* .
+6. Speichern Sie den Text in Abhängigkeit von der verwendeten Sprache als Datei mit dem Namen *ClickOnceLibrary.cs* oder *ClickOnceLibrary. vb* im Verzeichnis *ClickOnceOnDemand* .
 
 7. Kompilieren Sie die Datei in eine Assembly.
 
@@ -101,15 +102,15 @@ Standardmäßig werden alle in einer-Anwendung enthaltenen Assemblys [!INCLUDE[n
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>So markieren Sie Assemblys in der ClickOnce-Anwendung mithilfe MageUI.exe als optional
 
-1. Erstellen Sie mithilfe *MageUI.exe*ein Anwendungs Manifest, wie in Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)beschrieben. Verwenden Sie die folgenden Einstellungen für das Anwendungs Manifest:
+1. Erstellen Sie mithilfe *MageUI.exe* ein Anwendungs Manifest, wie in Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)beschrieben. Verwenden Sie die folgenden Einstellungen für das Anwendungs Manifest:
 
     - Benennen Sie das Anwendungs Manifest `ClickOnceOnDemand` .
 
-    - Legen Sie auf der Seite **Dateien** in der Zeile *ClickOnceLibrary.dll* die Spalte **Dateityp** auf **keine**fest.
+    - Legen Sie auf der Seite **Dateien** in der Zeile *ClickOnceLibrary.dll* die Spalte **Dateityp** auf **keine** fest.
 
     - Geben Sie auf der Seite **Dateien** in der Zeile *ClickOnceLibrary.dll* `ClickOnceLibrary.dll` in die Spalte **Gruppe** ein.
 
-2. Erstellen Sie mithilfe *MageUI.exe*ein Bereitstellungs Manifest, wie in Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)beschrieben. Verwenden Sie für das Bereitstellungs Manifest die folgenden Einstellungen:
+2. Erstellen Sie mithilfe *MageUI.exe* ein Bereitstellungs Manifest, wie in Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)beschrieben. Verwenden Sie für das Bereitstellungs Manifest die folgenden Einstellungen:
 
     - Benennen Sie das Bereitstellungs Manifest `ClickOnceOnDemand` .
 
@@ -127,5 +128,5 @@ Standardmäßig werden alle in einer-Anwendung enthaltenen Assemblys [!INCLUDE[n
 
 3. Wenn das Hauptformular angezeigt wird, drücken Sie die <xref:System.Windows.Forms.Button>. Daraufhin sollte eine Zeichenfolge in einem Meldungsfeldfenster angezeigt werden, die „Hello, World!“ lautet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:System.Deployment.Application.ApplicationDeployment>

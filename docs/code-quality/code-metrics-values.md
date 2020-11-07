@@ -1,6 +1,8 @@
 ---
 title: Berechnen von Codemetriken
 ms.date: 11/02/2018
+description: Erfahren Sie mehr über die zyklomatische Komplexität, Klassen Kopplung und andere Visual Studio-Codemetriken. Erfahren Sie, wie Metriken den Entwicklungsfortschritt verfolgen und Risiken identifizieren können.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599457"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348644"
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
 
@@ -46,7 +48,7 @@ In der folgenden Liste sind die Code Metrikergebnisse aufgeführt, die von Visua
 
 - **Zeilen des Quellcodes** : gibt die genaue Anzahl von Quell Codezeilen an, die in der Quelldatei vorhanden sind, einschließlich leerer Zeilen. Diese Metrik ist ab Visual Studio 2019 Version 16,4 und Microsoft. Code Analysis. Metrics (2.9.5) verfügbar.
 
-- **Zeilen des ausführbaren Codes** : gibt die ungefähre Anzahl von ausführbaren Codezeilen oder Vorgängen an. Dies ist eine Anzahl von Vorgängen in ausführbarem Code. Diese Metrik ist ab Visual Studio 2019 Version 16,4 und Microsoft. Code Analysis. Metrics (2.9.5) verfügbar. Der Wert ist in der Regel eine genaue Entsprechung zur vorherigen Metrik, **Code Zeilen**, bei der es sich um die auf MSIL-Anweisungen basierende Metrik handelt, die im Legacy Modus verwendet wird.
+- **Zeilen des ausführbaren Codes** : gibt die ungefähre Anzahl von ausführbaren Codezeilen oder Vorgängen an. Dies ist eine Anzahl von Vorgängen in ausführbarem Code. Diese Metrik ist ab Visual Studio 2019 Version 16,4 und Microsoft. Code Analysis. Metrics (2.9.5) verfügbar. Der Wert ist in der Regel eine genaue Entsprechung zur vorherigen Metrik, **Code Zeilen** , bei der es sich um die auf MSIL-Anweisungen basierende Metrik handelt, die im Legacy Modus verwendet wird.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

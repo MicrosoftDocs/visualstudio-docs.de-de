@@ -1,6 +1,8 @@
 ---
 title: 'Gewusst wie: Anpassen des Codeanalysewörterbuchs'
 ms.date: 11/04/2016
+description: Erfahren Sie mehr über das Code Analyse Wörterbuch zur Identifizierung von Rechtschreib-und Benennungs Konventionen. Weitere Informationen finden Sie unter Erstellen eines benutzerdefinierten Wörterbuchs und Anwenden dieses Wörterbuchs auf ein Projekt.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis dictionary
@@ -12,18 +14,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453641"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348735"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Gewusst wie: Anpassen des Codeanalysewörterbuchs
 
 Bei der Code Analyse wird ein integriertes Wörterbuch verwendet, um Bezeichner in Ihrem Code auf Fehler in der Schreibweise, in grammatischem Fall und in anderen Benennungs Konventionen der .net-Entwurfs Richtlinien zu überprüfen. Sie können eine benutzerdefinierte Wörterbuch-XML-Datei erstellen, um Begriffe, Abkürzungen und Akronyme zum integrierten Wörterbuch hinzuzufügen, zu entfernen oder zu ändern.
 
-Angenommen, Ihr Code enthielt eine Klasse mit dem Namen " **doorklokker**". Bei der Code Analyse wird der Name als Verbund mit zwei Wörtern identifiziert: **Door** und **klokker**. Anschließend wird eine Warnung ausgegeben, dass " **klokker** " nicht richtig geschrieben wurde. Um die Code Analyse zu erzwingen, um die Rechtschreibprüfung zu erkennen, können Sie dem Benutzerwörterbuch den Begriff " **klokker** " hinzufügen
+Angenommen, Ihr Code enthielt eine Klasse mit dem Namen " **doorklokker** ". Bei der Code Analyse wird der Name als Verbund mit zwei Wörtern identifiziert: **Door** und **klokker**. Anschließend wird eine Warnung ausgegeben, dass " **klokker** " nicht richtig geschrieben wurde. Um die Code Analyse zu erzwingen, um die Rechtschreibprüfung zu erkennen, können Sie dem Benutzerwörterbuch den Begriff " **klokker** " hinzufügen
 
 ## <a name="to-create-a-custom-dictionary"></a>So erstellen Sie ein Benutzerwörterbuch
 
@@ -264,14 +266,14 @@ Begriffe im Knoten "Dictionary/acronyme/CasingExceptions" werden auf die folgend
 
 ## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> So verwenden Sie ein benutzerdefiniertes Wörterbuch auf ein Projekt
 
-1. Verwenden Sie in **Projektmappen-Explorer**eines der folgenden Verfahren:
+1. Verwenden Sie in **Projektmappen-Explorer** eines der folgenden Verfahren:
 
     - Klicken Sie mit der rechten Maustaste auf den Projektnamen, und klicken Sie dann auf **Vorhandenes Element hinzufügen**. Geben Sie die Datei im Dialogfeld **Vorhandenes Element hinzufügen** an.
   
-    - Wenn Sie ein Wörterbuch hinzufügen möchten, das von zwei oder mehr Projekten gemeinsam verwendet wird, suchen Sie im Dialogfeld **Vorhandenes Element hinzufügen** die Datei, die Sie freigeben möchten, klicken Sie auf die Schaltfläche **Hinzufügen** und dann auf **als Link hinzu**fügen.
+    - Wenn Sie ein Wörterbuch hinzufügen möchten, das von zwei oder mehr Projekten gemeinsam verwendet wird, suchen Sie im Dialogfeld **Vorhandenes Element hinzufügen** die Datei, die Sie freigeben möchten, klicken Sie auf die Schaltfläche **Hinzufügen** und dann auf **als Link hinzu** fügen.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Dateinamen **CustomDictionary.xml** , und klicken Sie auf **Eigenschaften**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Dateinamen **CustomDictionary.xml** , und klicken Sie auf **Eigenschaften**.
 
-3. Wählen Sie in **der Liste** Buildvorgang die Option **codeanalysisdictionary**aus.
+3. Wählen Sie in **der Liste** Buildvorgang die Option **codeanalysisdictionary** aus.
 
-4. Wählen Sie **in der Liste in Ausgabeverzeichnis kopieren** die Option **nicht kopieren**aus.
+4. Wählen Sie **in der Liste in Ausgabeverzeichnis kopieren** die Option **nicht kopieren** aus.

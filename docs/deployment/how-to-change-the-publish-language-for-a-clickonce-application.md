@@ -1,5 +1,7 @@
 ---
 title: Ändern der Veröffentlichungs Sprache für die ClickOnce-Anwendung
+description: Erfahren Sie, wie Sie eine Sprache/Kultur für eine lokalisieren-Anwendung in ClickOnce angeben, anstatt die Sprache bzw. Kultur Ihres Entwicklungs Computers zu verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,25 +18,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7fed8c137b5bce225d8a231bb5a263b87c2bf361
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382587"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350165"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Vorgehensweise: Ändern der Sprache für die Veröffentlichung einer ClickOnce-Anwendung
 
 Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung wird die Benutzeroberfläche, die während der Installation angezeigt wird, standardmäßig auf die Sprache und Kultur Ihres Entwicklungs Computers angewendet. Wenn Sie eine lokalisierte Anwendung veröffentlichen, müssen Sie eine Sprache und eine Kultur angeben, die mit der lokalisierten Version verglichen werden soll. Dies wird durch die- `Publish language` Eigenschaft für Ihr Projekt festgelegt.
 
-Die- `Publish language` Eigenschaft kann im Dialogfeld **Veröffentlichungs Optionen** festgelegt werden, das über die Seite **veröffentlichen** des **Projekt-Designers**zugänglich ist.
+Die- `Publish language` Eigenschaft kann im Dialogfeld **Veröffentlichungs Optionen** festgelegt werden, das über die Seite **veröffentlichen** des **Projekt-Designers** zugänglich ist.
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-change-the-publish-language"></a>So ändern Sie die Veröffentlichungs Sprache
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 

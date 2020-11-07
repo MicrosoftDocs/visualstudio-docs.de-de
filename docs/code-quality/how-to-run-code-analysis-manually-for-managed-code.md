@@ -1,6 +1,8 @@
 ---
 title: Manuelles Ausführen der Code Analyse für .net
 ms.date: 09/02/2020
+description: Erfahren Sie, wie Sie die Code Analyse in Visual Studio 2019 Version 16,5 oder höheren Versionen manuell ausführen. Weitere Informationen finden Sie unter Ausführen von Roslyn-Analyzern in c# oder Visual Basic-Code.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
@@ -11,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c24fa8e835dced8332aa4c50870d6251bdd43e63
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2eb4beff76d602bb4ce6182fab6091c7cd2a0096
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037158"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348722"
 ---
 # <a name="run-code-analysis-manually-for-net"></a>Manuelles Ausführen der Code Analyse für .net
 Standardmäßig analysieren .NET Compiler Platform ("Roslyn")-Analysen ihren c#-oder Visual Basic Code bei der Typisierungs Erstellung, indem Sie Live Analysen und während des Builds ausführen. Daher ist es normalerweise nicht erforderlich, die Code Analyse manuell zu initiieren. Es gibt jedoch einige Szenarien, in denen Sie ggf. die Code Analyse manuell auslassen möchten:
@@ -29,8 +31,8 @@ Standardmäßig analysieren .NET Compiler Platform ("Roslyn")-Analysen ihren c#-
 
 ### <a name="run-code-analysis-manually"></a>Manuelles Ausführen der Codeanalyse
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt aus.
+1. Wählen Sie in **Projektmappen-Explorer** das Projekt aus.
 
-2. Klicken Sie im Menü **analysieren** **auf Code Analyse für** *Projekt Name*ausführen.
+2. Klicken Sie im Menü **analysieren** **auf Code Analyse für** *Projekt Name* ausführen.
 
-Die Code Analyse wird im Hintergrund gestartet. In der Visual Studio-Statusleiste in der linken unteren Ecke wird die Meldung angezeigt, **dass die Code Analyse für \<project> ... ausgeführt** wird. Wenn die Code Analyse abgeschlossen ist, wird die Statusmeldung in die **Code Analyse \<project> abgeschlossen für **geändert. Die Fehlerliste wird in Kürze mit der gesamten Code Analyse Diagnose aktualisiert.
+Die Code Analyse wird im Hintergrund gestartet. In der Visual Studio-Statusleiste in der linken unteren Ecke wird die Meldung angezeigt, **dass die Code Analyse für \<project> ... ausgeführt** wird. Wenn die Code Analyse abgeschlossen ist, wird die Statusmeldung in die **Code Analyse \<project> abgeschlossen für** geändert. Die Fehlerliste wird in Kürze mit der gesamten Code Analyse Diagnose aktualisiert.

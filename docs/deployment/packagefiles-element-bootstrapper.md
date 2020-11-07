@@ -1,5 +1,7 @@
 ---
 title: '&lt;PackageFiles- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
+description: Erfahren Sie mehr über das PackageFiles-Element, das PackageFile-Elemente enthält, die die Installationspakete definieren, die als Ergebnis des Command-Elements ausgeführt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747509"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349541"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles- &gt; Element (Boots Trapper)
 Das- `PackageFiles` Element enthält- `PackageFile` Elemente, die die Installationspakete definieren, die als Ergebnis des-Elements ausgeführt werden `Command` .
@@ -46,7 +48,7 @@ Das- `PackageFiles` Element enthält- `PackageFile` Elemente, die die Installati
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|Optional. Wenn der Wert auf festgelegt `false` ist, lädt der Installer nur Dateien herunter, auf die vom-Element verwiesen wird `Command` Wenn diese Einstellung auf festgelegt `true` ist, werden alle Dateien heruntergeladen.<br /><br /> Wenn der Wert auf festgelegt `IfNotHomesite` ist, verhält sich das Installationsprogramm wie `False` , wenn `ComponentsLocation` auf festgelegt ist `HomeSite` , und andernfalls verhält sich wie if `True` . Diese Einstellung kann nützlich sein, um zu ermöglichen, dass Pakete, die selbst Bootstrapper sind, Ihr eigenes Verhalten in einem HomeSite-Szenario ausführen.<br /><br /> Der Standardwert lautet `true`.|
+|`CopyAllPackageFiles`|Optional. Wenn der Wert auf festgelegt `false` ist, lädt der Installer nur Dateien herunter, auf die vom-Element verwiesen wird `Command` Wenn diese Einstellung auf festgelegt `true` ist, werden alle Dateien heruntergeladen.<br /><br /> Wenn der Wert auf festgelegt `IfNotHomesite` ist, verhält sich das Installationsprogramm wie `False` , wenn `ComponentsLocation` auf festgelegt ist `HomeSite` , und andernfalls verhält sich wie if `True` . Diese Einstellung kann nützlich sein, um zu ermöglichen, dass Pakete, die selbst Bootstrapper sind, Ihr eigenes Verhalten in einem HomeSite-Szenario ausführen.<br /><br /> Der Standardwert ist `true`.|
 
 ## <a name="packagefile"></a>PackageFile
  Das- `PackageFile` Element ist ein untergeordnetes `PackageFiles` Element des-Elements. Ein- `PackageFiles` Element muss über mindestens ein- `PackageFile` Element verfügen.

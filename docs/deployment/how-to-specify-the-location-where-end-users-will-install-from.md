@@ -1,5 +1,6 @@
 ---
 title: Angeben des Speicher Orts, von dem die Endbenutzer installieren
+description: Erfahren Sie, wie Sie die Eigenschaft für die Installations-URL festlegen, wo eine veröffentlichte ClickOnce-Anwendung für die Installation gehostet wird.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba02b1cf8947fa2d1907d6316e36af8f8f54a77
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808723"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349619"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Vorgehensweise: Angeben des Speicherorts für die Installation durch Endbenutzer
 
@@ -31,20 +32,20 @@ Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 
 In diesem Fall können Sie die- `Installation URL` Eigenschaft verwenden, um den Webserver anzugeben, auf dem Benutzer die Anwendung herunterladen. Dies ist erforderlich, damit das Anwendungs Manifest weiß, wo nach Updates gesucht werden soll.
 
-Die- `Installation URL` Eigenschaft kann auf der Seite **veröffentlichen** des Projekt- **Designers**festgelegt werden.
+Die- `Installation URL` Eigenschaft kann auf der Seite **veröffentlichen** des Projekt- **Designers** festgelegt werden.
 
 > [!NOTE]
-> Die- `Installation URL` Eigenschaft kann auch mit dem **PublishWizard**festgelegt werden. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+> Die- `Installation URL` Eigenschaft kann auch mit dem **PublishWizard** festgelegt werden. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-specify-an-installation-url"></a>So geben Sie eine Installations-URL an
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
 3. Geben Sie im Feld Installations-URL den Installations Speicherort unter Verwendung einer voll qualifizierten URL im Format ein `https://www.contoso.com/ApplicationName` , oder verwenden Sie einen UNC-Pfad im Format `\Server\ApplicationName` .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Angeben des Speicherorts, an den Visual Studio die Dateien kopiert](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
 - [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

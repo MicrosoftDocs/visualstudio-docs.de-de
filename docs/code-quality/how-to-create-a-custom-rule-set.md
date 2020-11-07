@@ -1,6 +1,8 @@
 ---
 title: Erstellen eines benutzerdefinierten Regelsatzes für die Code Analyse
 ms.date: 11/02/2018
+description: Erfahren Sie, wie Sie Code Analyse-Regelsätze in Visual Studio anpassen. Weitere Informationen finden Sie unter Erstellen neuer Sätze von Grund auf oder vorhandener Sätze. Verstehen der Regel Rangfolge.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860504"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348813"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
@@ -24,9 +26,9 @@ Sie können einen benutzerdefinierten Regelsatz erstellen, um bestimmte Projekta
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Erstellen eines benutzerdefinierten Regelsatzes aus einem vorhandenen Regelsatz
 
-Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integrierten Regelsatz im **Regelsatz-Editor**öffnen. Von dort aus können Sie bestimmte Regeln hinzufügen oder entfernen, und Sie können die Aktion ändern, die auftritt, wenn eine Regel verletzt wird &mdash; , z. b. eine Warnung oder einen Fehler.
+Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integrierten Regelsatz im **Regelsatz-Editor** öffnen. Von dort aus können Sie bestimmte Regeln hinzufügen oder entfernen, und Sie können die Aktion ändern, die auftritt, wenn eine Regel verletzt wird &mdash; , z. b. eine Warnung oder einen Fehler.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften** aus.
 
 2. Wählen Sie auf den **Eigenschaften** Seiten die Registerkarte **Code Analyse** aus.
 
@@ -51,17 +53,17 @@ Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integriert
 4. Wählen Sie **Öffnen** aus, um die Regeln im Regelsatz-Editor anzuzeigen.
 
 > [!NOTE]
-> Wenn Sie über ein .net Core-oder .NET Standard-Projekt verfügen, ist der Prozess ein wenig anders, da keine **Code Analyse** -Eigenschaften Registerkarte vorhanden ist. Führen Sie die Schritte zum [Kopieren eines vordefinierten Regelsatzes in das Projekt aus, und legen Sie ihn als aktiven Regelsatz fest](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Nachdem Sie einen Regelsatz kopiert haben, können Sie [ihn im Visual Studio-Regelsatz-Editor bearbeiten](working-in-the-code-analysis-rule-set-editor.md) , indem Sie ihn aus **Projektmappen-Explorer**öffnen.
+> Wenn Sie über ein .net Core-oder .NET Standard-Projekt verfügen, ist der Prozess ein wenig anders, da keine **Code Analyse** -Eigenschaften Registerkarte vorhanden ist. Führen Sie die Schritte zum [Kopieren eines vordefinierten Regelsatzes in das Projekt aus, und legen Sie ihn als aktiven Regelsatz fest](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Nachdem Sie einen Regelsatz kopiert haben, können Sie [ihn im Visual Studio-Regelsatz-Editor bearbeiten](working-in-the-code-analysis-rule-set-editor.md) , indem Sie ihn aus **Projektmappen-Explorer** öffnen.
 
 ## <a name="create-a-new-rule-set"></a>Erstellen eines neuen Regelsatzes
 
 Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstellen:
 
-1. Wählen Sie **Datei**  >  **neue**  >  **Datei**aus, oder drücken Sie **STRG** + **N**.
+1. Wählen Sie **Datei**  >  **neue**  >  **Datei** aus, oder drücken Sie **STRG** + **N**.
 
-2. Wählen Sie im Dialogfeld **neue Datei** auf der linken Seite die Kategorie **Allgemein** aus, und wählen Sie dann **Code Analyse-Regelsatz**aus.
+2. Wählen Sie im Dialogfeld **neue Datei** auf der linken Seite die Kategorie **Allgemein** aus, und wählen Sie dann **Code Analyse-Regelsatz** aus.
 
-3. Wählen Sie **Öffnen** aus.
+3. Klicken Sie auf **Öffnen**.
 
    Die neue *RuleSet* -Datei wird im Regelsatz-Editor geöffnet.
 
@@ -70,19 +72,19 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 > [!NOTE]
 > Das folgende Verfahren gilt nicht für .net Core-Projekte, die nicht über eine Registerkarte für die **Code Analyse** Eigenschaft verfügen.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften** aus.
 
 2. Wählen Sie auf den **Eigenschaften** Seiten die Registerkarte **Code Analyse** aus.
 
 ::: moniker range="vs-2017"
 
-3. Wählen Sie **\<Choose multiple rule sets>** aus **diesen Regelsatz ausführen**aus.
+3. Wählen Sie **\<Choose multiple rule sets>** aus **diesen Regelsatz ausführen** aus.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Wählen Sie **\<Choose multiple rule sets>** aus den **aktiven Regeln**aus.
+3. Wählen Sie **\<Choose multiple rule sets>** aus den **aktiven Regeln** aus.
 
 ::: moniker-end
 
@@ -90,7 +92,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
    ![Dialogfeld "Regelsätze hinzufügen oder entfernen"](media/add-remove-rule-sets.png)
 
-5. Wählen Sie **Speichern**unter aus, geben Sie einen Namen für die *RuleSet* -Datei ein, und klicken Sie dann auf **Speichern**.
+5. Wählen Sie **Speichern** unter aus, geben Sie einen Namen für die *RuleSet* -Datei ein, und klicken Sie dann auf **Speichern**.
 
    Der neue Regelsatz wird in der Liste **diesen Regelsatz ausführen** ausgewählt.
 
@@ -109,7 +111,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
    </RuleSet>
    ```
 
-- Wenn dieselbe Regel mindestens zwei Mal in einem Regelsatz mit *demselben* Schweregrad aufgelistet ist, wird im **Fehlerliste**möglicherweise die folgende Warnung angezeigt:
+- Wenn dieselbe Regel mindestens zwei Mal in einem Regelsatz mit *demselben* Schweregrad aufgelistet ist, wird im **Fehlerliste** möglicherweise die folgende Warnung angezeigt:
 
    **CA0063: Fehler beim Laden der Regel Satz Datei " \[ your]. RuleSet" oder einer der abhängigen Regel Satz Dateien. Die Datei entspricht nicht dem Regel Satz Schema.**
 
@@ -136,7 +138,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 ## <a name="name-and-description"></a>Name und Beschreibung
 
-Um den anzeigen Amen eines Regelsatzes zu ändern, der im Editor geöffnet ist, öffnen Sie das **Eigenschaften** Fenster, **View**indem Sie  >  in der Menüleiste die Option**Eigenschaften Fenster** anzeigen auswählen. Geben Sie den anzeigen Amen in das Feld **Name** ein. Sie können auch eine Beschreibung für den Regelsatz eingeben.
+Um den anzeigen Amen eines Regelsatzes zu ändern, der im Editor geöffnet ist, öffnen Sie das **Eigenschaften** Fenster, **View** indem Sie  >  in der Menüleiste die Option **Eigenschaften Fenster** anzeigen auswählen. Geben Sie den anzeigen Amen in das Feld **Name** ein. Sie können auch eine Beschreibung für den Regelsatz eingeben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,16 +1,18 @@
 ---
 title: Legacy Code Analyse deaktivieren
 ms.date: 10/04/2019
+description: Erfahren Sie, wie Sie die binäre Code Analyse in Visual Studio aktivieren und deaktivieren. Weitere Informationen finden Sie unter Konfigurieren dieses Features in Projekten mit verwaltetem Code.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801021"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348748"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Gewusst wie: Aktivieren und Deaktivieren der binären Code Analyse für verwalteten Code
 
@@ -21,11 +23,11 @@ Sie können die Legacy-Code Analyse (binäre Analyse) so konfigurieren, dass Sie
 
 So aktivieren oder deaktivieren Sie die Legacy Code Analyse:
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt aus, halten Sie es (oder klicken Sie mit der rechten Maustaste darauf), und wählen Sie **Eigenschaften**aus.
+1. Wählen Sie in **Projektmappen-Explorer** das Projekt aus, halten Sie es (oder klicken Sie mit der rechten Maustaste darauf), und wählen Sie **Eigenschaften** aus.
 
 2. Wechseln Sie im Dialogfeld Eigenschaften für das Projekt zur Registerkarte **Code Analyse** .
 
-3. Geben Sie den Buildtyp in der **Konfiguration** und die Zielplattform in der **Plattform**an. (Nur Non-.net Core/. NET Standard-Projekte.)
+3. Geben Sie den Buildtyp in der **Konfiguration** und die Zielplattform in der **Plattform** an. (Nur Non-.net Core/. NET Standard-Projekte.)
 
 ::: moniker range="vs-2017"
 

@@ -1,5 +1,7 @@
 ---
 title: '&lt;Signature- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+description: Das Signature-Element enthält die erforderlichen Informationen zum digitalen Signieren dieses Bereitstellungs Manifests. Das Signieren eines Bereitstellungs Manifests ist optional, wird jedoch empfohlen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7a86236087bdbff8cf82ca4821573f9f799d019
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85835419"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349281"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature- &gt; Element (ClickOnce-Bereitstellung)
 Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.
@@ -28,12 +30,12 @@ Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digita
 
 ```xml
 
-<Signature> 
-   XML signature information 
+<Signature> 
+   XML signature information 
 </Signature>
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Das Signieren eines Bereitstellungs Manifests mithilfe einer Umschlag Signatur ist optional, wird jedoch empfohlen. Weitere Informationen zum Signieren von XML-Dateien finden Sie in der World Wide Web Consortium Empfehlung "Syntax und Verarbeitung von XML-Signaturen" unter [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .
 
  Wenn Sie das Manifest signieren möchten, müssen Sie Hashes für alle Dateien bereitstellen. Ein Manifest mit Dateien, die nicht als Hash verwendet werden, kann nicht signiert werden, da Benutzer den Inhalt von Dateien ohne Hash überprüfen können.
