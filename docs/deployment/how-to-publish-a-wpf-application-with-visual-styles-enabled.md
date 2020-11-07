@@ -1,5 +1,6 @@
 ---
 title: Veröffentlichen einer WPF-App mit aktivierten visuellen Stilen
+description: Erfahren Sie, wie Sie eine WPF-Anwendung mit aktivierten visuellen Stilen veröffentlichen, sodass die Darstellung von Steuerelementen basierend auf dem vom Benutzer ausgewählten Design geändert werden kann.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd463fa5253d204ad4025958025235c9b75aa29e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810457"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349853"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Designs
 
@@ -50,7 +51,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
 
     **So öffnen Sie die Manifestdatei in einem Visual Basic-Projekt**
 
-    1. Wählen Sie in der Menüleiste **Projekt, Projekt** *Name* **Eigenschaften**aus, wobei *ProjectName* der Name des WPF-Projekts ist.
+    1. Wählen Sie in der Menüleiste **Projekt, Projekt** *Name* **Eigenschaften** aus, wobei *ProjectName* der Name des WPF-Projekts ist.
 
          Die Eigenschaftenseiten für das WPF-Projekt werden angezeigt.
 
@@ -60,7 +61,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
 
     **So öffnen Sie die Manifestdatei in einem C#-Projekt**
 
-    1. Wählen Sie in der Menüleiste **Projekt, Projekt** *Name* **Eigenschaften**aus, wobei *ProjectName* der Name des WPF-Projekts ist.
+    1. Wählen Sie in der Menüleiste **Projekt, Projekt** *Name* **Eigenschaften** aus, wobei *ProjectName* der Name des WPF-Projekts ist.
 
          Die Eigenschaftenseiten für das WPF-Projekt werden angezeigt.
 
@@ -98,11 +99,11 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
 
 2. Klicken Sie im Editor auf **Datei** und dann auf **Speichern unter**.
 
-3. Klicken Sie im Dialogfeld **Speichern unter** auf die Dropdownliste **Dateityp**, und wählen Sie **Alle Dateien** aus.
+3. Klicken Sie im Dialogfeld **Speichern unter** auf die Dropdownliste **Dateityp** , und wählen Sie **Alle Dateien** aus.
 
 4. Geben Sie im Feld **Dateiname** einen Namen für die Datei ein, und fügen Sie dem Ende des Namens *.manifest* an. Beispiel: *themes.manifest*.
 
-5. Klicken Sie auf die Schaltfläche **Ordner durchsuchen**, wählen Sie einen beliebigen Ordner aus, und klicken Sie dann auf **Speichern**.
+5. Klicken Sie auf die Schaltfläche **Ordner durchsuchen** , wählen Sie einen beliebigen Ordner aus, und klicken Sie dann auf **Speichern**.
 
     > [!NOTE]
     > Im verbleibenden Verfahren wird davon ausgegangen, dass der Name dieser Datei *themes.manifest* ist und auf dem Computer im Verzeichnis *C:\temp* gespeichert wird.
@@ -111,7 +112,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
 
 1. Öffnen Sie die **Visual Studio-Eingabeaufforderung**.
 
-    Weitere Informationen zum Öffnen der **Visual Studio-Eingabeaufforderung**finden Sie unter [Eingabe Aufforderungen](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Weitere Informationen zum Öffnen der **Visual Studio-Eingabeaufforderung** finden Sie unter [Eingabe Aufforderungen](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > In den verbleibenden Schritten werden die folgenden Annahmen über die Projektmappe gemacht:
@@ -176,7 +177,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
 
    Nachdem Sie diese Schritte ausgeführt haben, können Sie die veröffentlichten Dateien an den Speicherort verschieben, von dem aus Endbenutzer die Anwendung installieren sollen. Wenn Sie beabsichtigen, die Projektmappe häufig zu aktualisieren, können Sie diese Befehle in ein Skript übernehmen und das Skript jedes Mal ausführen, wenn Sie eine neue Version veröffentlichen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 -[Problembehandlung bei bestimmten Fehlern in ClickOnce-bereit Stellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Übersicht über visuelle Stile](/windows/desktop/Controls/visual-styles-overview)

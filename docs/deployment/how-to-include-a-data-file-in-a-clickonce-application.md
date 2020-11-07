@@ -1,5 +1,6 @@
 ---
 title: Einschließen einer Datendatei in eine ClickOnce-App
+description: Erfahren Sie, wie Sie eine Datendatei eines beliebigen Typs zu ihrer ClickOnce-Anwendung hinzufügen, die in einem Datenverzeichnis auf dem lokalen Datenträger des Ziel Computers gespeichert werden soll.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809145"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349944"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Vorgehensweise: Hinzufügen einer Datendatei in eine ClickOnce-Anwendung
-Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die Sie installieren, wird ein Datenverzeichnis auf dem lokalen Datenträger des Ziel Computers zugewiesen, auf dem die Anwendung die eigenen Daten verwalten kann. Datendateien können Dateien eines beliebigen Typs enthalten: Textdateien, XML-Dateien oder sogar Microsoft Access-Datenbankdateien (*MDB*). In den folgenden Verfahren wird gezeigt, wie Sie eine Datendatei eines beliebigen Typs Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung hinzufügen.
+Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, die Sie installieren, wird ein Datenverzeichnis auf dem lokalen Datenträger des Ziel Computers zugewiesen, auf dem die Anwendung die eigenen Daten verwalten kann. Datendateien können Dateien eines beliebigen Typs enthalten: Textdateien, XML-Dateien oder sogar Microsoft Access-Datenbankdateien ( *MDB* ). In den folgenden Verfahren wird gezeigt, wie Sie eine Datendatei eines beliebigen Typs Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung hinzufügen.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>So fügen Sie eine Datendatei mit Mage.exe ein
 
@@ -73,7 +74,7 @@ Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
 
      Die Datendatei wird im Raster angezeigt.
 
-6. Legen Sie den **Dateityp** Wert der Datendatei auf **Daten**fest.
+6. Legen Sie den **Dateityp** Wert der Datendatei auf **Daten** fest.
 
 7. Speichern Sie das Anwendungs Manifest, und Signieren Sie die Datei dann erneut.
 
@@ -83,5 +84,5 @@ Jede [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
 
      Das Bereitstellungs Manifest muss neu signiert werden, da sich der Hashwert des Anwendungs Manifests geändert hat.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

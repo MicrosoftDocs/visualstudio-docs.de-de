@@ -1,5 +1,6 @@
 ---
 title: Sicherheits-/Versions-/manierprobleme (ClickOnce)
+description: Erfahren Sie mehr über Probleme mit der ClickOnce-Sicherheit, der Anwendungs Versionsverwaltung und der Manifestressourcen-und Semantik, die eine ClickOnce-Bereitstellung bewirken können.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a0f9d5062e335fb7e03653bde11e032f89aca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811246"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349372"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
 
@@ -95,7 +96,7 @@ Wenn Sie eine Anwendung verschieben oder kopieren möchten, müssen Sie auch den
 > [!NOTE]
 > Jedes Mal, wenn Sie das Manifest aktualisieren, müssen Sie es auch erneut signieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 Problembehandlung bei [ClickOnce-bereit Stellungen](../deployment/troubleshooting-clickonce-deployments.md) 
  [Sichere ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md) 

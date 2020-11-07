@@ -1,6 +1,8 @@
 ---
 title: Unterdrücken von Codeanalyseverletzungen
 ms.date: 08/27/2020
+description: Erfahren Sie, wie Sie Code Analyse Verletzungen in Visual Studio unterdrücken. Erfahren Sie, wie Sie das SuppressMessageAttribute-Attribut für die Quell Unterdrückung verwenden.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -14,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658515"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348696"
 ---
 # <a name="suppress-code-analysis-violations"></a>Unterdrücken von Codeanalyseverletzungen
 
@@ -35,7 +37,7 @@ Verwenden Sie in C++/CLI die Makros-ZS-unter \_ drückt- \_ Nachricht oder die \
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie **analysieren**  >  **Code Analyse ausführen und aktive Probleme unterdrücken**auswählen.
+> Wenn Sie ein Projekt zu Visual Studio 2017 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie **analysieren**  >  **Code Analyse ausführen und aktive Probleme unterdrücken** auswählen.
 >
 > ![Ausführen der Code Analyse und unterdrücken von Problemen in Visual Studio](media/suppress-active-issues.png)
 
@@ -44,13 +46,13 @@ Verwenden Sie in C++/CLI die Makros-ZS-unter \_ drückt- \_ Nachricht oder die \
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Wenn Sie ein Projekt zu Visual Studio 2019 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie die Option Build **analysieren**  >  **und aktive Probleme unterdrücken**auswählen.
+> Wenn Sie ein Projekt zu Visual Studio 2019 migrieren, kann es vorkommen, dass Sie mit einer großen Anzahl von Code Analyse Warnungen konfrontiert werden. Wenn Sie die Warnungen nicht beheben können, können Sie alle unterdrücken, indem Sie die Option Build **analysieren**  >  **und aktive Probleme unterdrücken** auswählen.
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage-Attribut
 
-Wenn Sie im **Fehlerliste**die Option unter **drücken** im Kontext oder im Kontextmenü einer Code Analyse Warnung auswählen, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> wird entweder im Code oder in der globalen Unterdrückungs Datei des Projekts ein-Attribut hinzugefügt.
+Wenn Sie im **Fehlerliste** die Option unter **drücken** im Kontext oder im Kontextmenü einer Code Analyse Warnung auswählen, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> wird entweder im Code oder in der globalen Unterdrückungs Datei des Projekts ein-Attribut hinzugefügt.
 
 Das- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut weist das folgende Format auf:
 

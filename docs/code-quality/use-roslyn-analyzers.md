@@ -1,6 +1,8 @@
 ---
 title: Analysetoolkonfiguration
 ms.date: 09/02/2020
+description: Erfahren Sie, wie Sie Roslyn Analyzer-Regeln anpassen. Weitere Informationen finden Sie unter Vorgehensweise beim Anpassen von Analyse Schwergraden, unterdrücken von Verstößen und Festlegen von Dateien als generierter
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 78dc44f4cebbfd245d8e5a8e1a667b422282c7ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659217"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349151"
 ---
 # <a name="overview"></a>Übersicht
 
@@ -26,13 +28,13 @@ Jede Roslyn Analyzer- *Diagnose* oder Regel weist einen Standard Schweregrad und
 
 ::: moniker range=">=vs-2019"
 
-Ab Visual Studio 2019 Version 16,3 können Sie den Schweregrad von Analyse Regeln oder *Diagnosen*in einer [Editor config-Datei](#set-rule-severity-in-an-editorconfig-file), im [Glühbirnen Menü](#set-rule-severity-from-the-light-bulb-menu)und in der Fehlerliste konfigurieren.
+Ab Visual Studio 2019 Version 16,3 können Sie den Schweregrad von Analyse Regeln oder *Diagnosen* in einer [Editor config-Datei](#set-rule-severity-in-an-editorconfig-file), im [Glühbirnen Menü](#set-rule-severity-from-the-light-bulb-menu)und in der Fehlerliste konfigurieren.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Sie können den Schweregrad der Analyzer-Regeln oder der *Diagnose*konfigurieren, wenn Sie [die-Analysen](../code-quality/install-roslyn-analyzers.md) als nuget-Paket installieren. Sie können den Schweregrad einer Regel [von Projektmappen-Explorer](#set-rule-severity-from-solution-explorer) oder [einer Regel Satz Datei](#set-rule-severity-in-the-rule-set-file)aus ändern.
+Sie können den Schweregrad der Analyzer-Regeln oder der *Diagnose* konfigurieren, wenn Sie [die-Analysen](../code-quality/install-roslyn-analyzers.md) als nuget-Paket installieren. Sie können den Schweregrad einer Regel [von Projektmappen-Explorer](#set-rule-severity-from-solution-explorer) oder [einer Regel Satz Datei](#set-rule-severity-in-the-rule-set-file)aus ändern.
 
 ::: moniker-end
 
@@ -57,7 +59,7 @@ Der folgende Screenshot zeigt dieselben drei Verstöße, wie Sie im Fehlerliste 
 
 ![Fehler-, Warn-und Informations Verstoß in Fehlerliste](media/diagnostics-severities-in-error-list.png)
 
-Viele Analysetoolregeln oder *-diagnosen* verfügen über mindestens einen *Codefix*, den Sie zur Korrektur von Regelverstößen anwenden können. Codekorrekturen werden zusammen mit anderen [schnellen Aktionen](../ide/quick-actions.md) im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/quick-actions.md).
+Viele Analysetoolregeln oder *-diagnosen* verfügen über mindestens einen *Codefix* , den Sie zur Korrektur von Regelverstößen anwenden können. Codekorrekturen werden zusammen mit anderen [schnellen Aktionen](../ide/quick-actions.md) im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/quick-actions.md).
 
 ![Verstoß im Analysetool und Codefix mithilfe einer schnellen Aktion](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -95,7 +97,7 @@ Sie können den Schweregrad für eine bestimmte Kategorie von Analyzer-Regeln od
 `dotnet_analyzer_diagnostic.severity = <severity>`
 
 > [!NOTE]
-> Einträge zum gleichzeitigen Konfigurieren mehrerer Analyse Regeln gelten nur für Regeln, die *standardmäßig aktiviert*sind. Analyse Regeln, die im Analyzer-Paket standardmäßig als deaktiviert gekennzeichnet sind, müssen durch explizite `dotnet_diagnostic.<rule ID>.severity = <severity>` Einträge aktiviert werden.
+> Einträge zum gleichzeitigen Konfigurieren mehrerer Analyse Regeln gelten nur für Regeln, die *standardmäßig aktiviert* sind. Analyse Regeln, die im Analyzer-Paket standardmäßig als deaktiviert gekennzeichnet sind, müssen durch explizite `dotnet_diagnostic.<rule ID>.severity = <severity>` Einträge aktiviert werden.
 
 Wenn Sie über mehrere Einträge verfügen, die auf eine bestimmte Regel-ID anwendbar sind, ist Folgendes die Rangfolge, um den entsprechenden Eintrag auszuwählen:
 
@@ -131,9 +133,9 @@ Im vorherigen Beispiel sind alle drei Einträge auf CA1822 anwendbar. Bei Verwen
 
 Visual Studio bietet eine bequeme Möglichkeit, den Schweregrad einer Regel im Glühbirnen Menü [schnell Aktionen](../ide/quick-actions.md) zu konfigurieren.
 
-1. Nachdem eine Verletzung aufgetreten ist, bewegen Sie den Mauszeiger über die Verletzungs Wellenlinie im Editor, und öffnen Sie das Glühbirnen Menü. Oder platzieren Sie den Cursor in der Zeile, und drücken Sie die **STRG**-Taste + **.** (Punkt).
+1. Nachdem eine Verletzung aufgetreten ist, bewegen Sie den Mauszeiger über die Verletzungs Wellenlinie im Editor, und öffnen Sie das Glühbirnen Menü. Oder platzieren Sie den Cursor in der Zeile, und drücken Sie die **STRG** -Taste + **.** (Punkt).
 
-2. Klicken Sie im Glühbirnen Menü auf **Probleme** konfigurieren, und konfigurieren Sie den > ** \<rule ID> Schweregrad**.
+2. Klicken Sie im Glühbirnen Menü auf **Probleme** konfigurieren, und konfigurieren Sie den > **\<rule ID> Schweregrad**.
 
    ![Konfigurieren des schwere Grads von Regeln über das Glühbirnen Menü in Visual Studio](media/configure-rule-severity.png)
 
@@ -152,7 +154,7 @@ Visual Studio bietet auch eine bequeme Möglichkeit zum Konfigurieren des schwer
 
 1. Wenn eine Verletzung auftritt, klicken Sie mit der rechten Maustaste auf den diagnoseeintrag in der Fehlerliste.
 
-2. Wählen Sie im Kontextmenü die Option **Schweregrad festlegen**aus.
+2. Wählen Sie im Kontextmenü die Option **Schweregrad festlegen** aus.
 
    ![Konfigurieren des schwere Grads von Regeln in der Fehlerliste in Visual Studio](media/configure-rule-severity-error-list.png)
 
@@ -167,15 +169,15 @@ Visual Studio bietet auch eine bequeme Möglichkeit zum Konfigurieren des schwer
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Festlegen des schwere Grads der Regel Projektmappen-Explorer
 
-Sie können einen Großteil der Anpassung der Analyzer-Diagnose von **Projektmappen-Explorer**erledigen. Wenn Sie [Analysen](../code-quality/install-roslyn-analyzers.md) als nuget-Paket installieren, wird in **Projektmappen-Explorer**unter dem Knoten **Verweise** oder **Abhängigkeiten** ein **Analysen** -Knoten angezeigt. Wenn Sie **Analyzers**erweitern und dann eine der Analyzer-Assemblys erweitern, werden alle Diagnosen in der Assembly angezeigt.
+Sie können einen Großteil der Anpassung der Analyzer-Diagnose von **Projektmappen-Explorer** erledigen. Wenn Sie [Analysen](../code-quality/install-roslyn-analyzers.md) als nuget-Paket installieren, wird in **Projektmappen-Explorer** unter dem Knoten **Verweise** oder **Abhängigkeiten** ein **Analysen** -Knoten angezeigt. Wenn Sie **Analyzers** erweitern und dann eine der Analyzer-Assemblys erweitern, werden alle Diagnosen in der Assembly angezeigt.
 
 ![Analyzers-Knoten in Projektmappen-Explorer](media/analyzers-expanded-in-solution-explorer.png)
 
-Im **Eigenschaften** Fenster können Sie die Eigenschaften einer Diagnose einschließlich der Beschreibung und des Standard schwere Grads anzeigen. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf die Regel, und wählen Sie **Eigenschaften**aus, oder wählen Sie die Regel aus, und drücken Sie dann **alt** + **Enter**
+Im **Eigenschaften** Fenster können Sie die Eigenschaften einer Diagnose einschließlich der Beschreibung und des Standard schwere Grads anzeigen. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf die Regel, und wählen Sie **Eigenschaften** aus, oder wählen Sie die Regel aus, und drücken Sie dann **alt** + **Enter**
 
 ![Diagnose Eigenschaften in Eigenschaftenfenster](media/analyzer-diagnostic-properties.png)
 
-Um die Online Dokumentation für eine Diagnose anzuzeigen, klicken Sie mit der rechten Maustaste auf die Diagnose und wählen **Hilfe anzeigen**aus.
+Um die Online Dokumentation für eine Diagnose anzuzeigen, klicken Sie mit der rechten Maustaste auf die Diagnose und wählen **Hilfe anzeigen** aus.
 
 Die Symbole neben den einzelnen Diagnose in **Projektmappen-Explorer** entsprechen den Symbolen, die im Regelsatz angezeigt werden, wenn Sie Sie im Editor öffnen:
 
@@ -259,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Festlegen des schwere Grads der Regel Projektmappen-Explorer
 
-1. Erweitern Sie in Projektmappen-Explorer **Verweise**-  >  **Analyzers** (oder **Abhängigkeits**  >  **Analyse** Tools für .net Core-Projekte).
+1. Erweitern Sie in Projektmappen-Explorer **Verweise** -  >  **Analyzers** (oder **Abhängigkeits**  >  **Analyse** Tools für .net Core-Projekte).
 
 2. Erweitern Sie die Assembly, die die Regel enthält, für die Sie den Schweregrad festlegen möchten.
 
@@ -284,13 +286,13 @@ dotnet_diagnostic.CA2231.severity = warning
 
 1. Öffnen Sie die aktive Regel Satz Datei mit einer der folgenden Methoden:
 
-- Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei, klicken Sie mit der rechten Maustaste auf **Verweise**-  >  **Analyzers** -Knoten, und wählen Sie **aktiven Regelsatz öffnen**aus.
+- Doppelklicken Sie in **Projektmappen-Explorer** auf die Datei, klicken Sie mit der rechten Maustaste auf **Verweise** -  >  **Analyzers** -Knoten, und wählen Sie **aktiven Regelsatz öffnen** aus.
 - Wählen Sie auf der Eigenschaften Seite **Code Analyse** für das Projekt die Option **Öffnen** aus.
 
-  Wenn Sie den Regelsatz zum ersten Mal bearbeiten, erstellt Visual Studio eine Kopie der standardmäßigen Regel Satz Datei, benennt Sie " * \<projectname> . RuleSet*" und fügt Sie dem Projekt hinzu. Dieser benutzerdefinierte Regelsatz wird auch zum aktiven Regelsatz für Ihr Projekt.
+  Wenn Sie den Regelsatz zum ersten Mal bearbeiten, erstellt Visual Studio eine Kopie der standardmäßigen Regel Satz Datei, benennt Sie " *\<projectname> . RuleSet* " und fügt Sie dem Projekt hinzu. Dieser benutzerdefinierte Regelsatz wird auch zum aktiven Regelsatz für Ihr Projekt.
 
    > [!NOTE]
-   > .Net Core-und .NET Standard-Projekte unterstützen nicht die Menübefehle für Regelsätze in **Projektmappen-Explorer**, z. b. **Öffnen des aktiven Regelsatzes**. Wenn Sie einen nicht standardmäßigen Regelsatz für ein .net Core-oder .NET Standard-Projekt angeben möchten, [fügen Sie die Eigenschaft " **codeanalysisruleset** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) " manuell zur Projektdatei hinzu. Sie können die Regeln im Regelsatz weiterhin in der Benutzeroberfläche von Visual Studio-Regelsatz-Editor konfigurieren.
+   > .Net Core-und .NET Standard-Projekte unterstützen nicht die Menübefehle für Regelsätze in **Projektmappen-Explorer** , z. b. **Öffnen des aktiven Regelsatzes**. Wenn Sie einen nicht standardmäßigen Regelsatz für ein .net Core-oder .NET Standard-Projekt angeben möchten, [fügen Sie die Eigenschaft " **codeanalysisruleset**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) " manuell zur Projektdatei hinzu. Sie können die Regeln im Regelsatz weiterhin in der Benutzeroberfläche von Visual Studio-Regelsatz-Editor konfigurieren.
 
 1. Navigieren Sie zu der Regel, indem Sie die enthaltende Assembly erweitern.
 
@@ -331,7 +333,7 @@ Es gibt mehrere Möglichkeiten, Regel Verletzungen zu unterdrücken:
 
 - Über das Menü " **analysieren** "
 
-  Wählen **Analyze**Sie  >  in der Menüleiste die Option**Build analysieren und aktive Probleme unterdrücken** , um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
+  Wählen **Analyze** Sie  >  in der Menüleiste die Option **Build analysieren und aktive Probleme unterdrücken** , um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
 
 ::: moniker-end
 
@@ -339,40 +341,40 @@ Es gibt mehrere Möglichkeiten, Regel Verletzungen zu unterdrücken:
 
 - Über das Menü " **analysieren** "
 
-  Wählen **Analyze**Sie  >  in der Menüleiste Analyse**Ausführen Code Analyse und unterdrücken aktiver Probleme** aus, um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
+  Wählen **Analyze** Sie  >  in der Menüleiste Analyse **Ausführen Code Analyse und unterdrücken aktiver Probleme** aus, um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
 
 ::: moniker-end
 
 - Von **Projektmappen-Explorer**
 
-  Legen Sie den Schweregrad der Regel auf **None**fest.
+  Legen Sie den Schweregrad der Regel auf **None** fest.
 
 - Aus dem **Regelsatz-Editor**
 
-  Deaktivieren Sie das Kontrollkästchen neben dem Namen, oder legen Sie die **Aktion** auf **keine**fest.
+  Deaktivieren Sie das Kontrollkästchen neben dem Namen, oder legen Sie die **Aktion** auf **keine** fest.
 
 - Im **Code-Editor**
 
-  Platzieren Sie den Cursor in der Codezeile mit der Verletzung, und drücken Sie die **STRG**- + Taste **(.)** , um das Menü **schnell Aktionen** zu öffnen. Wählen Sie **CAXXXX**  >  **in Quelle/in Unterdrückungs Datei unter**drücken.
+  Platzieren Sie den Cursor in der Codezeile mit der Verletzung, und drücken Sie die **STRG** - + Taste **(.)** , um das Menü **schnell Aktionen** zu öffnen. Wählen Sie **CAXXXX**  >  **in Quelle/in Unterdrückungs Datei unter** drücken.
 
   ![Diagnose über das Menü "schnelle Aktionen" unterdrücken](media/suppress-diagnostic-from-editor.png)
 
 - Aus der **Fehlerliste**
 
-  Wählen Sie die zu unterdrückenden Regeln aus, und klicken Sie dann mit **Suppress**der rechten Maustaste, und wählen Sie  >  **in Quelle unterdrücken/in Unterdrückungs Datei**.
+  Wählen Sie die zu unterdrückenden Regeln aus, und klicken Sie dann mit **Suppress** der rechten Maustaste, und wählen Sie  >  **in Quelle unterdrücken/in Unterdrückungs Datei**.
 
-  - Wenn Sie **in Quelle**unterdrücken, wird das Dialogfeld **Vorschau der Änderungen** geöffnet, in dem eine Vorschau der c#- [#pragma Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warning](/dotnet/visual-basic/language-reference/directives/directives) -Direktive angezeigt wird, die dem Quellcode hinzugefügt wird.
+  - Wenn Sie **in Quelle** unterdrücken, wird das Dialogfeld **Vorschau der Änderungen** geöffnet, in dem eine Vorschau der c#- [#pragma Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warning](/dotnet/visual-basic/language-reference/directives/directives) -Direktive angezeigt wird, die dem Quellcode hinzugefügt wird.
 
     ![Vorschau der Hinzufügung von #pragma Warnung in der Codedatei](media/pragma-warning-preview.png)
 
-  - Wenn Sie **in Unterdrückungs Datei**auswählen, wird das Dialogfeld **Vorschau der Änderungen** geöffnet, und es wird eine Vorschau des Attributs angezeigt, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> das der globalen Unterdrückungs Datei hinzugefügt wird.
+  - Wenn Sie **in Unterdrückungs Datei** auswählen, wird das Dialogfeld **Vorschau der Änderungen** geöffnet, und es wird eine Vorschau des Attributs angezeigt, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> das der globalen Unterdrückungs Datei hinzugefügt wird.
 
     ![Vorschau zum Hinzufügen des SuppressMessage-Attributs zur Unterdrückungs Datei](media/preview-changes-in-suppression-file.png)
 
-  **Wählen Sie**im Dialogfeld **Vorschau der Änderungen** übernehmen aus.
+  **Wählen Sie** im Dialogfeld **Vorschau der Änderungen** übernehmen aus.
 
   > [!NOTE]
-  > Wenn die Option Menü unter **drücken** in **Projektmappen-Explorer**nicht angezeigt wird, wird die Verletzung wahrscheinlich von Build und nicht von Live-Analyse stammt. In der **Fehlerliste** werden Diagnose-oder Regelverstöße sowohl aus der Live Code Analyse als auch aus dem Build angezeigt. Da die builddiagnose beispielsweise veraltet sein kann, wenn Sie z. b. den Code bearbeitet haben, um den Verstoß zu beheben, aber nicht neu erstellt wurde, können Sie diese Diagnose nicht im **Fehlerliste**unterdrücken. Die Diagnose aus Live Analyse oder IntelliSense sind immer auf dem neuesten Stand mit aktuellen Quellen und können vom **Fehlerliste**unterdrückt werden. Um die *builddiagnose von* Ihrer Auswahl auszuschließen, ändern Sie den **Fehlerliste** Quellen Filter von **Build + IntelliSense** **nur in IntelliSense**. Wählen Sie dann die Diagnose aus, die Sie unterdrücken möchten, und fahren Sie wie zuvor beschrieben fort.
+  > Wenn die Option Menü unter **drücken** in **Projektmappen-Explorer** nicht angezeigt wird, wird die Verletzung wahrscheinlich von Build und nicht von Live-Analyse stammt. In der **Fehlerliste** werden Diagnose-oder Regelverstöße sowohl aus der Live Code Analyse als auch aus dem Build angezeigt. Da die builddiagnose beispielsweise veraltet sein kann, wenn Sie z. b. den Code bearbeitet haben, um den Verstoß zu beheben, aber nicht neu erstellt wurde, können Sie diese Diagnose nicht im **Fehlerliste** unterdrücken. Die Diagnose aus Live Analyse oder IntelliSense sind immer auf dem neuesten Stand mit aktuellen Quellen und können vom **Fehlerliste** unterdrückt werden. Um die *builddiagnose von* Ihrer Auswahl auszuschließen, ändern Sie den **Fehlerliste** Quellen Filter von **Build + IntelliSense** **nur in IntelliSense**. Wählen Sie dann die Diagnose aus, die Sie unterdrücken möchten, und fahren Sie wie zuvor beschrieben fort.
   >
   > ![Fehlerliste Quellen Filter in Visual Studio](media/error-list-filter.png)
 
@@ -384,7 +386,7 @@ Wenn Sie das Projekt in der Befehlszeile erstellen, werden Regelverstöße in de
 
 - Mindestens eine Regel wird im Code des Projekts verletzt.
 
-- Der [Schweregrad](#configure-severity-levels) einer verletzten Regel ist auf " **Warnung**" festgelegt. in diesem Fall bewirken Verstöße nicht, dass der Buildvorgang fehlschlägt oder dass ein **Fehler**auftritt.
+- Der [Schweregrad](#configure-severity-levels) einer verletzten Regel ist auf " **Warnung** " festgelegt. in diesem Fall bewirken Verstöße nicht, dass der Buildvorgang fehlschlägt oder dass ein **Fehler** auftritt.
 
 Die Ausführlichkeit der Buildausgabe wirkt sich nicht darauf aus, ob Regelverstöße angezeigt werden. Auch mit der **stillen** Ausführlichkeit werden Regel Verletzungen in der Buildausgabe angezeigt.
 

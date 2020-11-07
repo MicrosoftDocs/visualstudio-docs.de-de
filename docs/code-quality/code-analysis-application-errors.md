@@ -1,6 +1,8 @@
 ---
 title: Anwendungsfehler bei der Codeanalyse
 ms.date: 11/04/2016
+description: Erfahren Sie mehr über die Fehlermeldungen, die das Tool für die Analyse von verwaltetem Code in Visual Studio generiert. Anzeigen von Fehlercodes und entsprechenden Beschreibungen.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85521315"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348501"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 
@@ -39,12 +41,12 @@ Dieser Abschnitt ist ein Verweis auf die Fehlermeldungen, die vom Tool für die 
 |[CA0058](ca0058.md)|Referenzierte Assemblys können nicht geladen werden.|
 |[CA0059](ca0059.md)|Fehler beim Wechseln der Befehlszeile.|
 |[CA0060](ca0060.md)|Die indirekt referenzierten Assemblys können nicht geladen werden.|
-|[CA0061](ca0061.md)|Die Regel "*RuleId*" konnte nicht gefunden werden.|
-|[CA0062](ca0062.md)|Die Regel "*RuleId*", auf die im Regelsatz "*RuleSetName*" verwiesen wird, wurde nicht gefunden.|
+|[CA0061](ca0061.md)|Die Regel " *RuleId* " konnte nicht gefunden werden.|
+|[CA0062](ca0062.md)|Die Regel " *RuleId* ", auf die im Regelsatz " *RuleSetName* " verwiesen wird, wurde nicht gefunden.|
 |[CA0063](ca0063.md)|Fehler beim Laden der Regel Satz Datei oder einer der abhängigen Regel Satz Dateien.|
 |[CA0064](ca0064.md)|Es wurde keine Analyse ausgeführt, da der angegebene Regelsatz keine FxCop-Regeln enthielt.|
-|[CA0065](ca0065.md)|Nicht unterstütztes metadatenkonstrukt: der Typ "*Typname*" enthält sowohl eine Eigenschaft als auch ein Feld mit demselben Namen "*propertyfieldname*".|
-|[CA0066](ca0066.md)|Der für **für/TargetFrameworkVersion entspricht** angegebene Wert "*versionID*" ist keine erkannte Version.|
+|[CA0065](ca0065.md)|Nicht unterstütztes metadatenkonstrukt: der Typ " *Typname* " enthält sowohl eine Eigenschaft als auch ein Feld mit demselben Namen " *propertyfieldname* ".|
+|[CA0066](ca0066.md)|Der für **für/TargetFrameworkVersion entspricht** angegebene Wert " *versionID* " ist keine erkannte Version.|
 |[CA0067](ca0067.md)|Das Verzeichnis wurde nicht gefunden.|
 |[CA0068](ca0068.md)|Für die Zielassembly *"Assemblyname"* konnten keine Debuginformationen gefunden werden.|
 |[CA0069](ca0069.md)|Alternative Plattform verwenden. *FrameworkVersion1* wurde nicht gefunden. Verwenden Sie stattdessen *FrameworkVersion2* . Um optimale Analyseergebnisse zu erzielen, stellen Sie sicher, dass die richtige Framework-Version installiert ist.|

@@ -1,6 +1,8 @@
 ---
 title: Codeanalyse für verwalteten Code
 ms.date: 08/27/2020
+description: Erfahren Sie mehr über .NET Compiler Platform basierte Code Analyse in Visual Studio. Erfahren Sie, warum diese Analytiker die statische FxCop-Analyse verwalteter Assemblys ersetzen.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d13a8afdfcbeb6ae9f91e39779af8b82b2461000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 643e8457dbbe838d593a7bad38064537b6cbe57d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091399"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348527"
 ---
 # <a name="overview-of-code-analysis-for-net-in-visual-studio"></a>Übersicht über die Code Analyse für .net in Visual Studio
 

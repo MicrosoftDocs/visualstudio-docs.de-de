@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Paket Manifests | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Verwendung eines Bootstrapperpakets zum Bereitstellen der erforderlichen Komponenten für die ClickOnce-Anwendung, die ein Paket Manifest für jedes Gebiets Schema enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851709"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350048"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Vorgehensweise: Erstellen eines Paketmanifests
 Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie ein Bootstrapperpaket verwenden. Ein Bootstrapperpaket enthält eine einzelne Produkt Manifest-Datei, aber ein Paket Manifest für jedes Gebiets Schema. Gemeinsam genutzte Funktionen über verschiedene lokalisierte Versionen hinweg sollten in das Produkt Manifest gelangen.
@@ -34,11 +36,11 @@ Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie 
 
 #### <a name="to-create-the-package-manifest"></a>So erstellen Sie das Paket Manifest
 
-1. Erstellen Sie ein Verzeichnis für das Bootstrapperpaket. In diesem Beispiel wird *c:\Package*verwendet.
+1. Erstellen Sie ein Verzeichnis für das Bootstrapperpaket. In diesem Beispiel wird *c:\Package* verwendet.
 
 2. Erstellen Sie ein Unterverzeichnis mit dem Namen des Gebiets Schemas, z. b. " *en* " für Englisch.
 
-3. Erstellen Sie in Visual Studio eine XML-Datei mit dem Namen *package.xml*, und speichern Sie Sie im Ordner *c:\package\en* .
+3. Erstellen Sie in Visual Studio eine XML-Datei mit dem Namen *package.xml* , und speichern Sie Sie im Ordner *c:\package\en* .
 
 4. Fügen Sie XML hinzu, um den Namen des Bootstrapperpakets, die Kultur für dieses lokalisierte Paket Manifest und den optionalen Lizenzvertrag aufzulisten. Der folgende XML-Code verwendet die Variablen `DisplayName` und `Culture` , die in einem späteren Element definiert sind.
 

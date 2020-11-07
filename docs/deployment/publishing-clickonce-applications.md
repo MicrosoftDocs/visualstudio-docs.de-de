@@ -1,5 +1,7 @@
 ---
 title: Veröffentlichen von ClickOnce-Anwendungen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie den Webpublishing-Assistenten zum ersten Mal zum Veröffentlichen einer ClickOnce-Anwendung verwenden. Nehmen Sie spätere Änderungen im Projekt-Designer auf der Seite veröffentlichen vor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f8a790decbd3af20141c1c95fcaed678a2ec6a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641537"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349489"
 ---
 # <a name="publish-clickonce-applications"></a>Veröffentlichen von ClickOnce-Anwendungen
 Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung können Sie die Veröffentlichungseigenschaften mit dem Webpublishing-Assistenten festlegen. Im Assistenten stehen nur wenige Eigenschaften zur Verfügung. Alle anderen Eigenschaften sind auf die Standardwerte eingestellt.
@@ -76,7 +78,7 @@ Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes
 |-|-|
 |[How to: Change the publish language for a ClickOnce application (Vorgehensweise: Ändern der Veröffentlichungssprache einer ClickOnce-Anwendung)](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Beschreibt, wie Sie eine Sprache und eine Kultur angeben, die mit der lokalisierten Version übereinstimmen.|
 |[Vorgehensweise: Angeben eines Namens im Startmenü für eine ClickOnce-Anwendung](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Beschreibt, wie Sie den Anzeigenamen für eine ClickOnce-Anwendung ändern.|
-|[Vorgehensweise: Angeben eines Links für technischen Support](../deployment/how-to-specify-a-link-for-technical-support.md)|Beschreibt, wie Sie die **Support-URL**-Eigenschaft festlegen, die eine Webseite oder Dateifreigabe angibt, von der Benutzer Informationen zur Anwendung abrufen können.|
+|[Vorgehensweise: Angeben eines Links für technischen Support](../deployment/how-to-specify-a-link-for-technical-support.md)|Beschreibt, wie Sie die **Support-URL** -Eigenschaft festlegen, die eine Webseite oder Dateifreigabe angibt, von der Benutzer Informationen zur Anwendung abrufen können.|
 |[Vorgehensweise: Angeben einer Support-URL für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Veranschaulicht, wie ein Anwendungsmanifest manuell geändert wird, um für die jeweilige erforderliche Komponente einzelne Support-URLs aufzunehmen.|
 |[Vorgehensweise: Angeben einer Veröffentlichungsseite für eine ClickOnce-Anwendung](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Beschreibt, wie Sie zusammen mit der Anwendung eine Standardwebseite (publish.htm) generieren und veröffentlichen.|
 |[Gewusst wie: Anpassen der ClickOnce-Standard Webseite](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Beschreibt, wie Sie die Webseite anpassen, die zusammen mit der Anwendung automatisch generiert und veröffentlicht wird.|

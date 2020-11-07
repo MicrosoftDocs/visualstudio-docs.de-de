@@ -1,6 +1,8 @@
 ---
 title: Exemplarische Vorgehensweise zum Analysieren von verwaltetem Code auf Code Fehler | Microsoft-Dokumentation
 ms.date: 01/29/2018
+description: Erfahren Sie, wie Sie die Legacy Code Analyse zum Analysieren von .NET-Assemblys mit verwaltetem Weitere Informationen finden Sie unter Überprüfen auf Fehler und Konformität mit .net-Entwurfs Richtlinien.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659191"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349021"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Exemplarische Vorgehensweise: Verwenden der statischen Code Analyse zum Ermitteln von Code Fehlern
 
@@ -27,7 +29,7 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt aus der Vorlage **Klassenbibliothek (.NET Framework)** .
 
-1. Nennen Sie das Projekt " **CodeAnalysisManagedDemo**".
+1. Nennen Sie das Projekt " **CodeAnalysisManagedDemo** ".
 
 1. Nachdem das Projekt erstellt wurde, öffnen Sie die Datei *Class1.cs* .
 
@@ -51,7 +53,7 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 ## <a name="analyze-the-project-for-code-defects"></a>Analysieren des Projekts auf Code Fehler
 
-1. Wählen Sie das Projekt "CodeAnalysisManagedDemo" in **Projektmappen-Explorer**aus.
+1. Wählen Sie das Projekt "CodeAnalysisManagedDemo" in **Projektmappen-Explorer** aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**.
 
@@ -63,7 +65,7 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 4. Stellen Sie sicher, dass **Code Analyse für Build aktivieren** ausgewählt ist.
 
-5. Wählen Sie in der Dropdown Liste **diesen Regelsatz ausführen** die Option **Microsoft alle Regeln**aus.
+5. Wählen Sie in der Dropdown Liste **diesen Regelsatz ausführen** die Option **Microsoft alle Regeln** aus.
 
 ::: moniker-end
 
@@ -71,11 +73,11 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 4. Stellen Sie sicher, dass im Abschnitt **binäre Analysen** die Option **auf Build ausführen** ausgewählt ist.
 
-5. Wählen Sie in der Dropdown Liste **aktive Regeln** die Option **Microsoft alle Regeln**aus.
+5. Wählen Sie in der Dropdown Liste **aktive Regeln** die Option **Microsoft alle Regeln** aus.
 
 ::: moniker-end
 
-6. Klicken Sie im Menü **Datei** auf **ausgewählte Elemente speichern**, und schließen Sie dann die Eigenschaften Seiten.
+6. Klicken Sie im Menü **Datei** auf **ausgewählte Elemente speichern** , und schließen Sie dann die Eigenschaften Seiten.
 
 7. Klicken Sie im Menü **Erstellen** auf **CodeAnalysisManagedDemo erstellen**.
 
@@ -83,9 +85,9 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 ## <a name="correct-the-code-analysis-issues"></a>Beheben der Code Analyse Probleme
 
-1. Wählen Sie im Menü **Ansicht** die Option **Fehlerliste**aus.
+1. Wählen Sie im Menü **Ansicht** die Option **Fehlerliste** aus.
 
-    Je nachdem, welches Entwickler Profil Sie ausgewählt haben, müssen Sie möglicherweise im Menü **Ansicht** auf **andere Fenster** zeigen und dann **Fehlerliste**auswählen.
+    Je nachdem, welches Entwickler Profil Sie ausgewählt haben, müssen Sie möglicherweise im Menü **Ansicht** auf **andere Fenster** zeigen und dann **Fehlerliste** auswählen.
 
 1. Klicken Sie im **Projektmappen-Explorer** auf **Alle Dateien anzeigen**.
 
@@ -115,7 +117,7 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
    [CA2210: Assemblys müssen gültige starke Namen aufweisen](../code-quality/ca2210.md): Signieren von "CodeAnalysisManagedDemo" mit einem Schlüssel mit starkem Namen:
 
-   1. Wählen Sie im Menü **Projekt** die Option **CodeAnalysisManagedDemo-Eigenschaften**aus.
+   1. Wählen Sie im Menü **Projekt** die Option **CodeAnalysisManagedDemo-Eigenschaften** aus.
 
       Die Projekteigenschaften werden angezeigt.
 
@@ -127,11 +129,11 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
       Das Dialogfeld **Schlüssel mit starkem Namen erstellen** wird geöffnet.
 
-   1. Geben Sie für **Schlüssel Dateiname den Namen** **TestKey**ein.
+   1. Geben Sie für **Schlüssel Dateiname den Namen** **TestKey** ein.
 
-   1. Geben Sie ein Kennwort ein, und wählen Sie dann **OK**aus.
+   1. Geben Sie ein Kennwort ein, und wählen Sie dann **OK** aus.
 
-   1. Wählen Sie im Menü **Datei** die Option **ausgewählte Elemente speichern**aus, und schließen Sie dann die Eigenschaften Seiten.
+   1. Wählen Sie im Menü **Datei** die Option **ausgewählte Elemente speichern** aus, und schließen Sie dann die Eigenschaften Seiten.
 
    Nachdem Sie alle Änderungen vorgenommen haben, sollte die Class1.cs-Datei wie folgt aussehen:
 
@@ -162,9 +164,9 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 1. Führen Sie für jede der verbleibenden Warnungen die folgenden Schritte aus:
 
-    1. Wählen Sie im **Fehlerliste**die Warnung aus.
+    1. Wählen Sie im **Fehlerliste** die Warnung aus.
 
-    1. Wählen Sie im Kontextmenü (Kontextmenü) die Option **Suppress**  >  **in Unterdrückungs Datei**unterdrücken aus.
+    1. Wählen Sie im Kontextmenü (Kontextmenü) die Option **Suppress**  >  **in Unterdrückungs Datei** unterdrücken aus.
 
 1. Erstellen Sie das Projekt neu.
 

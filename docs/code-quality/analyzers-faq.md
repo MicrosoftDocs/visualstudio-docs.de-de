@@ -1,6 +1,8 @@
 ---
 title: Editor config und Analysen
 ms.date: 03/11/2019
+description: Erfahren Sie mehr über die .NET Compiler Platform basierte Code Analyse in Visual Studio. Weitere Informationen finden Sie unter Antworten auf Fragen zu Editor config-Dateien, Regelsätzen und anderen Themen.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 20d566937286743a684ecce2ff54ff2cafe4b3a4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659165"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348392"
 ---
 # <a name="code-analysis-faq"></a>FAQ zur Code Analyse
 
@@ -22,15 +24,15 @@ Diese Seite enthält Antworten auf einige häufig gestellte Fragen zur .NET Comp
 
 ## <a name="code-analysis-versus-editorconfig"></a>Code Analyse im Vergleich zu Editor config
 
-**F**: sollte ich die Code Analyse oder editorconfig zum Überprüfen des Code Formats verwenden?
+**F** : sollte ich die Code Analyse oder editorconfig zum Überprüfen des Code Formats verwenden?
 
-**A**: Code Analyse-und Editor config-Dateien arbeiten Hand in Hand. Wenn Sie Code Stile [in einer editorconfig-Datei](/dotnet/fundamentals/code-analysis/code-style-rule-options) oder auf der [Options Seite Text-Editor](../ide/code-styles-and-code-cleanup.md) definieren, konfigurieren Sie tatsächlich die in Visual Studio integrierten Code-Analysen. Editor config-Dateien können verwendet werden, um Analyzer-Regeln zu aktivieren oder zu deaktivieren sowie um nuget Analyzer-Pakete zu konfigurieren.
+**A** : Code Analyse-und Editor config-Dateien arbeiten Hand in Hand. Wenn Sie Code Stile [in einer editorconfig-Datei](/dotnet/fundamentals/code-analysis/code-style-rule-options) oder auf der [Options Seite Text-Editor](../ide/code-styles-and-code-cleanup.md) definieren, konfigurieren Sie tatsächlich die in Visual Studio integrierten Code-Analysen. Editor config-Dateien können verwendet werden, um Analyzer-Regeln zu aktivieren oder zu deaktivieren sowie um nuget Analyzer-Pakete zu konfigurieren.
 
 ## <a name="editorconfig-versus-rule-sets"></a>Editor config im Vergleich zu Regelsätzen
 
-**F**: sollte ich meine Analysen mithilfe eines Regelsatzes oder einer Editor config-Datei konfigurieren?
+**F** : sollte ich meine Analysen mithilfe eines Regelsatzes oder einer Editor config-Datei konfigurieren?
 
-**A**: Regelsätze und Editor config-Dateien können gleichzeitig vorhanden sein und können zum Konfigurieren von Analysemodulen verwendet werden. Sowohl Editor config-Dateien als auch Regelsätze ermöglichen das Aktivieren und Deaktivieren von Regeln und das Festlegen Ihres schwere Grads.
+**A** : Regelsätze und Editor config-Dateien können gleichzeitig vorhanden sein und können zum Konfigurieren von Analysemodulen verwendet werden. Sowohl Editor config-Dateien als auch Regelsätze ermöglichen das Aktivieren und Deaktivieren von Regeln und das Festlegen Ihres schwere Grads.
 
 Editor config-Dateien bieten jedoch weitere Möglichkeiten zum Konfigurieren von Regeln:
 
@@ -45,29 +47,29 @@ Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen
 
 ## <a name="code-analysis-in-ci-builds"></a>Code Analyse in CI-Builds
 
-**F**: funktioniert die .NET Compiler Platform basierte Code Analyse in Continuous Integration (CI)-Builds?
+**F** : funktioniert die .NET Compiler Platform basierte Code Analyse in Continuous Integration (CI)-Builds?
 
 **A:** Ja. Bei Analysemodulen, die von einem nuget-Paket installiert werden, werden diese Regeln [zur Buildzeit erzwungen](roslyn-analyzers-overview.md#build-errors), einschließlich während eines CI-Builds. Die in CI verwendeten Analyzers erstellen die Regel Konfiguration für Regelsätze und Editor config-Dateien. Derzeit sind die in Visual Studio integrierten Code Analysen nicht als nuget-Paket verfügbar, sodass diese Regeln in einem CI-Build nicht durchsetzbar sind.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>IDE-Analysen im Vergleich zu StyleCop
 
-**F**: Worin besteht der Unterschied zwischen den Visual Studio-IDE-Code-Analyzern und StyleCop-Analyzern?
+**F** : Worin besteht der Unterschied zwischen den Visual Studio-IDE-Code-Analyzern und StyleCop-Analyzern?
 
-**A**: die Visual Studio-IDE enthält integrierte Analysen, die sowohl Code-als auch Qualitätsprobleme suchen. Diese Regeln helfen Ihnen, neue sprach Features zu verwenden, wenn Sie eingeführt werden, und die Wartbarkeit Ihres Codes zu verbessern. IDE-Analysen werden ständig mit jeder Visual Studio-Version aktualisiert.
+**A** : die Visual Studio-IDE enthält integrierte Analysen, die sowohl Code-als auch Qualitätsprobleme suchen. Diese Regeln helfen Ihnen, neue sprach Features zu verwenden, wenn Sie eingeführt werden, und die Wartbarkeit Ihres Codes zu verbessern. IDE-Analysen werden ständig mit jeder Visual Studio-Version aktualisiert.
 
 [StyleCop-Analysen](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) sind Analysen von Drittanbietern, die als nuget-Paket installiert werden und die Stilkonsistenz in Ihrem Code überprüfen. Im Allgemeinen können Sie mit StyleCop-Regeln persönliche Einstellungen für eine Codebasis festlegen, ohne einen Stil über einen anderen zu empfehlen.
 
 ## <a name="code-analyzers-versus-legacy-analysis"></a>Code Analysetools und Legacy Analyse
 
-**F**: Worin besteht der Unterschied zwischen der Legacy Analyse und der .NET Compiler Platform basierten Code Analyse?
+**F** : Worin besteht der Unterschied zwischen der Legacy Analyse und der .NET Compiler Platform basierten Code Analyse?
 
-**A**: die .NET Compiler Platform basierte Code Analyse analysiert den Quellcode in Echtzeit und während der Kompilierung, während die Legacy Analyse Binärdateien analysiert, nachdem der Build abgeschlossen wurde. Weitere Informationen finden Sie unter [.NET Compiler Platform-basierte Analyse und Legacy Analyse](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers).
+**A** : die .NET Compiler Platform basierte Code Analyse analysiert den Quellcode in Echtzeit und während der Kompilierung, während die Legacy Analyse Binärdateien analysiert, nachdem der Build abgeschlossen wurde. Weitere Informationen finden Sie unter [.NET Compiler Platform-basierte Analyse und Legacy Analyse](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers).
 
 ## <a name="treat-warnings-as-errors"></a>Warnungen als Fehler behandeln
 
-**F**: mein Projekt verwendet die Option "Build", um Warnungen als Fehler zu behandeln. Nach der Migration von der Legacy Analyse zur Quell Code Analyse werden alle Code Analyse Warnungen nun als Fehler angezeigt. Wie kann ich dies verhindern?
+**F** : mein Projekt verwendet die Option "Build", um Warnungen als Fehler zu behandeln. Nach der Migration von der Legacy Analyse zur Quell Code Analyse werden alle Code Analyse Warnungen nun als Fehler angezeigt. Wie kann ich dies verhindern?
 
-**A**: um zu verhindern, dass Code Analyse Warnungen als Fehler behandelt werden, führen Sie die folgenden Schritte aus:
+**A** : um zu verhindern, dass Code Analyse Warnungen als Fehler behandelt werden, führen Sie die folgenden Schritte aus:
 
   1. Erstellen Sie eine.-Eigenschaften Datei mit folgendem Inhalt:
 
@@ -90,9 +92,9 @@ Zusätzlich zu den Regelsätzen und Editor config-Dateien werden einige Analysen
 
 ## <a name="code-analysis-solution-property-page"></a>Eigenschaften Seite für die Code Analyselösung
 
-**F**: wo befindet sich die Eigenschaften Seite "Code Analyse" für die Lösung?
+**F** : wo befindet sich die Eigenschaften Seite "Code Analyse" für die Lösung?
 
-**A**: die Code Analyse-Eigenschaften Seite auf Projektmappenebene wurde zugunsten der zuverlässigeren freigegebenen Eigenschaften Gruppe entfernt. Zum Verwalten der Code Analyse auf Projektebene ist die Eigenschaften Seite für die Code Analyse weiterhin verfügbar. (Bei verwalteten Projekten wird auch empfohlen, von RuleSets zu Editor config für die Regel Konfiguration zu migrieren.)  Zum Freigeben von RuleSets für mehrere/alle Projekte in einer Projekt Mappe oder einem Repository empfiehlt es sich, eine Eigenschaften Gruppe mit der codeanalysisruleset-Eigenschaft in einer freigegebenen Datei mit den Eigenschaften/Zielen oder der Datei "Directory.-Eigenschaften/Verzeichnis. targets" zu definieren. Wenn Sie keine gemeinsamen Eigenschaften oder Ziele haben, die von all ihren Projekten importiert werden, sollten Sie [eine solche Eigenschaften Gruppe zu einem Verzeichnis.-Eigenschaften oder zu einem Verzeichnis. targets in einem Projektmappenverzeichnis der obersten Ebene hinzufügen, das automatisch in alle Projektdateien importiert wird, die im Verzeichnis oder seinen Unterverzeichnissen definiert](../msbuild/customize-your-build.md)sind.
+**A** : die Code Analyse-Eigenschaften Seite auf Projektmappenebene wurde zugunsten der zuverlässigeren freigegebenen Eigenschaften Gruppe entfernt. Zum Verwalten der Code Analyse auf Projektebene ist die Eigenschaften Seite für die Code Analyse weiterhin verfügbar. (Bei verwalteten Projekten wird auch empfohlen, von RuleSets zu Editor config für die Regel Konfiguration zu migrieren.)  Zum Freigeben von RuleSets für mehrere/alle Projekte in einer Projekt Mappe oder einem Repository empfiehlt es sich, eine Eigenschaften Gruppe mit der codeanalysisruleset-Eigenschaft in einer freigegebenen Datei mit den Eigenschaften/Zielen oder der Datei "Directory.-Eigenschaften/Verzeichnis. targets" zu definieren. Wenn Sie keine gemeinsamen Eigenschaften oder Ziele haben, die von all ihren Projekten importiert werden, sollten Sie [eine solche Eigenschaften Gruppe zu einem Verzeichnis.-Eigenschaften oder zu einem Verzeichnis. targets in einem Projektmappenverzeichnis der obersten Ebene hinzufügen, das automatisch in alle Projektdateien importiert wird, die im Verzeichnis oder seinen Unterverzeichnissen definiert](../msbuild/customize-your-build.md)sind.
 
 ## <a name="see-also"></a>Weitere Informationen
 

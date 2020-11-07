@@ -1,5 +1,7 @@
 ---
 title: '&lt;TrustInfo- &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+description: Das trustInfo-Element beschreibt die minimalen Sicherheits Berechtigungen, die erforderlich sind, damit die Anwendung auf dem Client Computer ausgeführt wird. Das trustInfo-Element ist erforderlich.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184431"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349216"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;-Element (ClickOnce-Anwendung)
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.
@@ -156,7 +158,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 
    Optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mehr Berechtigungen anfordert, als der Clientcomputer standardmäßig erteilt, fragt der Trust-Manager der Common Language Runtime beim Benutzer nach, ob er der Anwendung die höhere Vertrauensstellung einräumen möchte. Wenn er ablehnt, wird die Anwendung nicht ausgeführt; andernfalls wird sie mit den angeforderten Berechtigungen ausgeführt.
 
  Alle mithilfe von `defaultAssemblyRequest` und `assemblyRequest` angeforderten Berechtigungen werden ohne Nachfrage beim Benutzer erteilt, wenn das Bereitstellungsmanifest eine gültige Vertrauenslizenz aufweist.

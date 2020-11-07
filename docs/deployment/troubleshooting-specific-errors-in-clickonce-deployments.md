@@ -1,5 +1,6 @@
 ---
 title: Problembehandlung bei Fehlern (ClickOnce-bereit Stellungen)
+description: In diesem Artikel werden häufige Fehler beschrieben, die beim Bereitstellen einer ClickOnce-Anwendung auftreten können, und es werden Schritte zum Beheben der einzelnen Probleme beschrieben.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809452"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349262"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung auftreten können, und es werden die Schritte zum Beheben der einzelnen Probleme beschrieben.
@@ -90,7 +91,7 @@ In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei d
  Um privatePath (Fusion-probingpfade) verwenden zu können, muss die Anwendung die Berechtigung "volle Vertrauenswürdigkeit" anfordern. Ändern Sie das Anwendungs Manifest, um volle Vertrauenswürdigkeit anzufordern, und wiederholen Sie dann den Vorgang.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Während der Deinstallation wird die Meldung "Fehler beim Deinstallieren der Anwendung" angezeigt.
- Diese Meldung gibt in der Regel an, dass die Anwendung bereits entfernt wurde oder dass der Speicher beschädigt ist. Nachdem Sie auf " **OK**" geklickt haben, wird der Eintrag " **Programm hinzufügen/entfernen** " entfernt.
+ Diese Meldung gibt in der Regel an, dass die Anwendung bereits entfernt wurde oder dass der Speicher beschädigt ist. Nachdem Sie auf " **OK** " geklickt haben, wird der Eintrag " **Programm hinzufügen/entfernen** " entfernt.
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Während der Installation wird eine Meldung angezeigt, die besagt, dass die Platt Form Abhängigkeiten nicht installiert sind.
  Im globalen Assemblycache (GAC) fehlt eine Voraussetzung, die die Anwendung benötigt, um ausgeführt zu werden.
@@ -113,7 +114,7 @@ In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei d
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Sie haben versucht, sich mit einem Zertifikat in Ihrem Zertifikat Speicher und einem empfangenen leeren Meldungs Feld anzumelden.
  Im Dialogfeld **Signierung** müssen Sie folgende Schritte ausführen:
 
-- Wählen Sie **mit einem gespeicherten Zertifikat signieren**aus.
+- Wählen Sie **mit einem gespeicherten Zertifikat signieren** aus.
 
 - Wählen Sie ein Zertifikat aus der Liste aus. beim ersten Zertifikat handelt es sich nicht um die Standardauswahl.
 
@@ -137,7 +138,7 @@ In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei d
 | Verknüpfungen können nicht über das Netzwerk aktiviert werden. | Verknüpfungen zu einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung können nur auf der lokalen Festplatte gestartet werden. Sie können nicht gestartet werden, indem Sie eine URL öffnen, die auf eine Verknüpfungs Datei auf einem Remote Server verweist. |
 | Die Anwendung ist zu groß, um in teilweiser Vertrauenswürdigkeit online auszuführen. Wenden Sie sich an den Hersteller der Anwendung oder an den Systemadministrator. | Eine Anwendung, die mit teilweiser Vertrauenswürdigkeit ausgeführt wird, darf nicht größer als die Hälfte der Größe des Online Anwendungs Kontingents sein, das standardmäßig 250 MB beträgt. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
 - [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

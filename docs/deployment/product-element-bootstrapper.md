@@ -1,5 +1,7 @@
 ---
 title: '&lt;Product- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
+description: Das Product-Element ist das XML-Element der obersten Ebene in einer Produktdatei. Das Product-Element ist in einer Produktdatei erforderlich.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a46f24adde12415acc20a6afd7298c491a3188c0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747451"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349476"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Product- &gt; Element (Boots Trapper)
 Das `Product` -Element ist das XML-Element der obersten Ebene in einer Produktdatei.

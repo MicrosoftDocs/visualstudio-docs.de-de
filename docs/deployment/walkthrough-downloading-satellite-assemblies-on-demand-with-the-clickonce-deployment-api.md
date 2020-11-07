@@ -1,5 +1,6 @@
 ---
 title: Herunterladen der Satellitenassembly bei Bedarf (ClickOnce-API)
+description: Erfahren Sie, wie Sie Satellitenassemblys als optional kennzeichnen und nur die Assembly herunterladen, die ein Client Computer für die aktuellen Kultur Einstellungen benötigt.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809236"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349294"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Bedarfs gesteuertes herunterladen von Satellitenassemblys mit der ClickOnce
 Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenassemblys konfiguriert werden. Eine *Satellitenassembly* ist eine Assembly, die Anwendungsressourcen für eine andere Kultur als die Standardkultur der Anwendung enthält.
@@ -55,7 +56,7 @@ Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenas
 
 4. Klicken Sie auf die Registerkarte **Dateien** .
 
-5. Klicken Sie auf die Schaltfläche mit den **Auslassungszeichen** (**...**), und wählen Sie das Verzeichnis aus, das alle Assemblys und Dateien der Anwendung enthält, einschließlich der Satellitenassemblys, die Sie mit *Resgen.exe* generiert haben. (Eine Satellitenassembly weist einen Namen in der Form * \<isoCode>\ApplicationName.resources.dll*auf, wobei \<isoCode> eine sprach Kennung im RFC 1766-Format ist.)
+5. Klicken Sie auf die Schaltfläche mit den **Auslassungszeichen** ( **...** ), und wählen Sie das Verzeichnis aus, das alle Assemblys und Dateien der Anwendung enthält, einschließlich der Satellitenassemblys, die Sie mit *Resgen.exe* generiert haben. (Eine Satellitenassembly weist einen Namen in der Form *\<isoCode>\ApplicationName.resources.dll* auf, wobei \<isoCode> eine sprach Kennung im RFC 1766-Format ist.)
 
 6. Klicken Sie auf **Auffüllen** , um die Dateien zu Ihrer Bereitstellung hinzuzufügen.
 
@@ -66,5 +67,5 @@ Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenas
 ## <a name="next-steps"></a>Nächste Schritte
  In einer Produktionsumgebung müssen Sie im Codebeispiel wahrscheinlich die Zeile entfernen, die für <xref:System.Threading.Thread.CurrentUICulture%2A> einen bestimmten Wert festlegt, denn auf Clientcomputern ist standardmäßig der richtige Wert festgelegt. Beim Ausführen der Anwendung auf einem japanischen Clientcomputer ist <xref:System.Threading.Thread.CurrentUICulture%2A> z. B. standardmäßig `ja-JP` . Diesen Wert programmgesteuert festzulegen bietet eine gute Möglichkeit zum Testen Ihrer Satellitenassemblys, bevor Sie Ihre Anwendung bereitstellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Lokalisieren von ClickOnce-Anwendungen](../deployment/localizing-clickonce-applications.md)

@@ -1,6 +1,8 @@
 ---
 title: Konfigurieren der Code Analyse
 ms.date: 04/04/2018
+description: Erfahren Sie, wie Sie den Regelsatz konfigurieren, der von der Legacy Code Analyse von Visual Studio verwendet wird. Weitere Informationen finden Sie unter Anwenden eines Regelsatzes auf ein oder mehrere Projekte in einer Projekt Mappe.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801047"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348800"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Vorgehensweise: Konfigurieren der Legacy Analyse für verwalteten Code
 
@@ -36,15 +38,15 @@ In Visual Studio können Sie aus einer Liste von Code Analyse- [Regelsätzen](..
 
 1. Öffnen Sie die Registerkarte **Code Analyse** auf den Eigenschaften Seiten des Projekts. Dafür stehen folgende Möglichkeiten zur Verfügung:
 
-   - Wählen Sie in **Projektmappen-Explorer**das Projekt aus. **Wählen Sie**in der Menüleiste die Option  >  **Code Analyse konfigurieren**  >  **für aus \<projectname> **.
+   - Wählen Sie in **Projektmappen-Explorer** das Projekt aus. **Wählen Sie** in der Menüleiste die Option  >  **Code Analyse konfigurieren**  >  **für aus \<projectname>**.
 
-   - Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**und dann die Registerkarte **Code Analyse** aus.
+   - Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** und dann die Registerkarte **Code Analyse** aus.
 
 2. Wählen Sie in den Listen **Konfiguration** und **Plattform** die Buildkonfiguration und die Zielplattform aus.
 
 ::: moniker range="vs-2017"
 
-3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, wählen Sie **Code Analyse beim Build aktivieren aus**. Sie können die Code Analyse auch manuell ausführen, indem Sie **Analyse**  >  **Ausführen Code Analyse**  >  **Ausführen Code \<projectname> Analyse ausführen **auswählen.
+3. Wenn Sie die Code Analyse bei jedem Erstellen des Projekts mithilfe der ausgewählten Konfiguration ausführen möchten, wählen Sie **Code Analyse beim Build aktivieren aus**. Sie können die Code Analyse auch manuell ausführen, indem Sie **Analyse**  >  **Ausführen Code Analyse**  >  **Ausführen Code \<projectname> Analyse ausführen** auswählen.
 
 ::: moniker-end
 
@@ -85,7 +87,7 @@ Standardmäßig wird allen verwalteten Projekten einer Projekt Mappe der Code An
 
 2. Wählen Sie im Menü **analysieren** die Option **Code Analyse für Projekt Mappe konfigurieren aus**.
 
-3. Erweitern Sie ggf. **Allgemeine Eigenschaften**, und wählen Sie dann **Code Analyse Einstellungen**aus.
+3. Erweitern Sie ggf. **Allgemeine Eigenschaften** , und wählen Sie dann **Code Analyse Einstellungen** aus.
 
 4. Sie können einen Regelsatz für ein oder mehrere Projekte angeben:
 

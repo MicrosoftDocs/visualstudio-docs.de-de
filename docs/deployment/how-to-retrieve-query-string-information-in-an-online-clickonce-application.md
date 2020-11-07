@@ -1,5 +1,6 @@
 ---
 title: Abrufen von Abfrage Zeichen folgen Informationen in einer Online-ClickOnce-App
+description: Erfahren Sie, wie eine ClickOnce-Anwendung den Abfrage Teil einer URL lesen kann und wie Sie mit MageUI Ihre Anwendung so konfigurieren, dass Sie Abfrage Zeichenfolgen-Parameter akzeptiert.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824d289e0b15938e730657a449ef1566bdb6ee8f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25a1ba70336b54ce2ce4c4df6678984db9de8bf8
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809763"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349918"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Vorgehensweise: Abrufen von Informationen zu Abfragezeichenfolgen in einer ClickOnce-Onlineanwendung
-Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?) beginnt und die willkürliche Informationen im Format *name=value*enthält. Angenommen, Sie verfügen über eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mit dem Namen `WindowsApp1` , die Sie auf `servername`hosten, und Sie möchten einen Wert für die Variable `username` bei Anwendungsstart übergeben. Die URL könnte folgendermaßen aussehen:
+Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?) beginnt und die willkürliche Informationen im Format *name=value* enthält. Angenommen, Sie verfügen über eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mit dem Namen `WindowsApp1` , die Sie auf `servername`hosten, und Sie möchten einen Wert für die Variable `username` bei Anwendungsstart übergeben. Die URL könnte folgendermaßen aussehen:
 
  `http://servername/WindowsApp1.application?username=joeuser`
 
@@ -40,7 +41,7 @@ Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?)
 > [!NOTE]
 > Bevor Sie eine Entscheidung zur Aktivierung dieser Funktion treffen, lesen Sie zuerst den Abschnitt „Sicherheit“ weiter unten in diesem Thema.
 
- Informationen zum Erstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung mithilfe von *Mage.exe* oder *MageUI.exe*finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Informationen zum Erstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung mithilfe von *Mage.exe* oder *MageUI.exe* finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
 > Ab .NET Framework 3.5 SP1 ist es möglich, Befehlszeilenargumente an eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Offlineanwendung zu übergeben. Wenn Sie der Anwendung Argumente bereitstellen möchten, können Sie der Verknüpfungsdatei In-Parameter mit der Erweiterung APPREF-MS übergeben.
@@ -62,14 +63,14 @@ Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?)
    MageUI
    ```
 
-2. Wählen Sie im Menü **Datei** die Option **Öffnen**aus, und öffnen Sie das Bereitstellungsmanifest für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung, die die Dateiendung `.application` aufweist.
+2. Wählen Sie im Menü **Datei** die Option **Öffnen** aus, und öffnen Sie das Bereitstellungsmanifest für Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung, die die Dateiendung `.application` aufweist.
 
 3. Wählen Sie den Bereich **Bereitstellungsoptionen** im linken Navigationsfenster aus, und wählen Sie das Kontrollkästchen **Übergeben von URL-Parametern an die Anwendung zulassen** aus.
 
-4. Wählen Sie im Menü **Datei** die Option **Speichern**aus.
+4. Wählen Sie im Menü **Datei** die Option **Speichern** aus.
 
 > [!NOTE]
-> Sie können alternativ die Übergabe der Abfragezeichenfolge in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]aktivieren. Wählen Sie das Kontrollkästchen **Übergeben von URL-Parametern an die Anwendung zulassen** aus. Dieses Kontrollkästchen finden Sie, indem Sie die **Projekteigenschaften**öffnen und die Schaltfläche **Veröffentlichen** auswählen. Anschließend klicken Sie auf die Schaltfläche **Optionen** und wählen **Manifeste**aus.
+> Sie können alternativ die Übergabe der Abfragezeichenfolge in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]aktivieren. Wählen Sie das Kontrollkästchen **Übergeben von URL-Parametern an die Anwendung zulassen** aus. Dieses Kontrollkästchen finden Sie, indem Sie die **Projekteigenschaften** öffnen und die Schaltfläche **Veröffentlichen** auswählen. Anschließend klicken Sie auf die Schaltfläche **Optionen** und wählen **Manifeste** aus.
 
 ## <a name="robust-programming"></a>Stabile Programmierung
  Wenn Sie Abfragezeichenfolgen-Parameter verwenden, überlegen Sie genau, wie Ihre Anwendung installiert und aktiviert wird. Wenn Ihre Anwendung so konfiguriert ist, dass Sie auf dem Computer des Nutzers aus dem Web oder einer Netzwerkfreigabe installiert wird, dann ist es wahrscheinlich, dass der Benutzer die Anwendung nur einmal über die URL aktivieren wird. Danach aktiviert der Benutzer Ihre Anwendung normalerweise über die Verknüpfung im Menü **Start** . Deshalb ist gewährleistet, dass Ihre Anwendung Argumente für Abfragezeichenfolgen nur einmal im Laufe ihrer Lebensdauer erhält. Wenn Sie diese Argumente auf dem Computer des Benutzers für den zukünftigen Gebrauch speichern möchten, sind Sie dafür verantwortlich, sie auf sichere Weise zu speichern.
@@ -79,5 +80,5 @@ Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?)
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit
  Lassen Sie die Übergabe von URL-Parametern an Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung nur zu, wenn Sie beabsichtigen, die Eingabe von böswilligen Zeichen vor der Verwendung zu bereinigen. Eine Zeichenfolge, die z.B. mit Anführungszeichen, Schrägstrichen oder Semikola als Trennzeichen eingebettet ist, kann möglicherweise willkürliche Datenvorgänge durchführen, wenn sie ungefiltert in einer SQL-Abfrage für eine Datenbank verwendet wird. Weitere Informationen zur Sicherheit von Abfragezeichenfolgen finden Sie in der [Übersicht über Skriptexploits](/previous-versions/w1sw53ds(v=vs.140)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
