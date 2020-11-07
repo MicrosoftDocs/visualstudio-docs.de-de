@@ -1,5 +1,7 @@
 ---
 title: Automatische APP-Updates mit ClickOnce-Bereitstellungs-API
+description: Erfahren Sie, wie Sie Code in ClickOnce schreiben, der die ApplicationDeployment-Klasse verwendet, um basierend auf einem Ereignis, z. b. einer Benutzer Anforderung, nach Updates zu suchen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382574"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351257"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Vorgehensweise: Programmgesteuertes Suchen nach Anwendungsupdates mit der API für die ClickOnce-Bereitstellung
 ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem Sie bereitgestellt wurde. In der ersten Methode können Sie die ClickOnce-Bereitstellung so konfigurieren, dass Sie in bestimmten Intervallen automatisch nach Updates sucht. In der zweiten Methode können Sie Code schreiben, der die- <xref:System.Deployment.Application.ApplicationDeployment> Klasse verwendet, um anhand eines Ereignisses, z. b. einer Benutzer Anforderung, nach Updates zu suchen.
@@ -60,6 +62,6 @@ ClickOnce bietet zwei Möglichkeiten, eine Anwendung zu aktualisieren, nachdem S
  Die Anwendung muss über voll vertrauenswürdige Berechtigungen für die Verwendung Programm gesteuerter Updates verfügen.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Vorgehensweise: Angeben eines anderen Speicherorts für Bereitstellungsaktualisierungen](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
+- [Vorgehensweise: Angeben eines alternativen Speicher Orts für Bereitstellungs Aktualisierungen](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

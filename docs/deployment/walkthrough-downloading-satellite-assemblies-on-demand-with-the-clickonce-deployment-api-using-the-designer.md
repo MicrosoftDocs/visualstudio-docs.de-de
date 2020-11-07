@@ -1,5 +1,7 @@
 ---
 title: Herunterladen der Satellitenassembly bei Bedarf mithilfe des ClickOnce-Designers
+description: Erfahren Sie, wie Sie Satellitenassemblys mit dem-Designer als optional markieren und nur die Assembly herunterladen, die ein Client Computer für die aktuellen Kultur Einstellungen benötigt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263407"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350334"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf mit der ClickOnce-Bereitstellungs-API
 Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenassemblys konfiguriert werden. Eine *Satellitenassembly* ist eine Assembly, die Anwendungsressourcen für eine andere Kultur als die Standardkultur der Anwendung enthält.
@@ -43,11 +45,11 @@ Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenas
 
 2. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektnamen, und klicken Sie dann auf **Eigenschaften**.
 
-3. Klicken Sie auf die Registerkarte **Veröffentlichen**, und klicken Sie dann auf die **Anwendungsdateien**.
+3. Klicken Sie auf die Registerkarte **Veröffentlichen** , und klicken Sie dann auf die **Anwendungsdateien**.
 
-4. Aktivieren Sie das Kontrollkästchen **Alle Dateien anzeigen**, um Satellitenassemblys anzuzeigen. Standardmäßig werden alle Satellitenassemblys in Ihre Bereitstellung aufgenommen und in diesem Dialogfeld angezeigt.
+4. Aktivieren Sie das Kontrollkästchen **Alle Dateien anzeigen** , um Satellitenassemblys anzuzeigen. Standardmäßig werden alle Satellitenassemblys in Ihre Bereitstellung aufgenommen und in diesem Dialogfeld angezeigt.
 
-     Eine Satellitenassembly weist einen Namen in der Form * \<isoCode>\ApplicationName.resources.dll*auf, wobei \<isoCode> eine sprach Kennung im RFC 1766-Format ist.
+     Eine Satellitenassembly weist einen Namen in der Form *\<isoCode>\ApplicationName.resources.dll* auf, wobei \<isoCode> eine sprach Kennung im RFC 1766-Format ist.
 
 5. Klicken Sie in der Liste **Downloadgruppe** für jede Sprachen-ID auf **Neu**. Wenn Sie zur Eingabe eines Downloadgruppennamens aufgefordert werden, geben Sie die Sprach-ID ein. Für eine japanische Satellitenassembly würden Sie z. b. den Download Gruppennamen angeben `ja-JP` .
 

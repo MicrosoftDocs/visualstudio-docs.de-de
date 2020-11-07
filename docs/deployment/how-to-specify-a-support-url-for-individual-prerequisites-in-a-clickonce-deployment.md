@@ -1,5 +1,7 @@
 ---
 title: Support-URL für erforderliche Komponenten in der ClickOnce
+description: Erfahren Sie, wie eine ClickOnce-Bereitstellung die Voraussetzungen für die Anwendung der ClickOnce-Anwendung prüft und wie die Bereitstellung fehlende Voraussetzungen erfüllt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381729"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350945"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Vorgehensweise: Angeben einer Support-URL für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung kann eine Reihe von Voraussetzungen testen, die auf dem Client Computer verfügbar sein müssen, damit die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ausgeführt werden kann. Zu diesen Abhängigkeiten gehören die erforderliche Mindestversion des .NET Framework, die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (Global Assembly Cache, GAC) vorinstalliert werden müssen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]kann jedoch keine dieser erforderlichen Komponenten installieren. Wenn eine Voraussetzung nicht gefunden wird, wird die Installation einfach angehalten, und es wird ein Dialogfeld angezeigt, in dem die Gründe für die Installation
 
  Es gibt zwei Methoden zum Installieren der erforderlichen Komponenten. Sie können Sie mit einer Boots Trapper-Anwendung installieren. Alternativ können Sie eine Support-URL für einzelne erforderliche Komponenten angeben, die Benutzern im Dialogfeld angezeigt wird, wenn die Voraussetzungen nicht gefunden werden. Die Seite, auf die diese URL verweist, kann Links zu Anweisungen für die Installation der erforderlichen Voraussetzungen enthalten. Wenn eine Anwendung keine Unterstützungs-URL für eine einzelne Voraussetzung angibt, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zeigt die im Bereitstellungs Manifest für die Anwendung als Ganzes angegebene Support-URL an, sofern diese definiert ist.
 
- Obwohl [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe*und *MageUI.exe* zum Generieren von bereit Stellungen verwendet werden können [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , unterstützt keines dieser Tools direkt die Angabe einer Support-URL für die einzelnen Voraussetzungen. In diesem Dokument wird beschrieben, wie Sie das Anwendungs Manifest und das Bereitstellungs Manifest für die Bereitstellung so ändern, dass diese unterstützten URLs
+ Obwohl [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe* und *MageUI.exe* zum Generieren von bereit Stellungen verwendet werden können [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , unterstützt keines dieser Tools direkt die Angabe einer Support-URL für die einzelnen Voraussetzungen. In diesem Dokument wird beschrieben, wie Sie das Anwendungs Manifest und das Bereitstellungs Manifest für die Bereitstellung so ändern, dass diese unterstützten URLs
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Geben Sie eine Support-URL für eine einzelne Voraussetzung an
 

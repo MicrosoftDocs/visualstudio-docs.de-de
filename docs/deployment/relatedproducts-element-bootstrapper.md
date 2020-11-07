@@ -1,5 +1,7 @@
 ---
 title: '&lt;RelatedProducts- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
+description: Mit dem RelatedProducts-Element werden andere Produkte definiert, die entweder von oder im aktuellen Produkt enthalten sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747458"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350568"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts- &gt; Element (Boots Trapper)
 Mit dem- `RelatedProducts` Element werden andere Produkte definiert, die entweder von abhängen oder im aktuellen Produkt enthalten sind.

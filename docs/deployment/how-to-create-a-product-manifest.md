@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Produkt Manifests | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie erforderliche Komponenten für Ihre ClickOnce-Anwendung mit einem Paket bereitstellen, das ein einzelnes Produkt Manifest und ein Paket Manifest für jedes Gebiets Schema enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852217"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351218"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Vorgehensweise: Erstellen eines Produktmanifests
 Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelne Produkt Manifest-Datei, aber ein Paket Manifest für jedes Gebiets Schema. Das Paket Manifest enthält Lokalisierungs spezifische Aspekte des Pakets. Hierzu gehören Zeichen folgen, Endbenutzer-Lizenzverträge und Sprachpakete.
@@ -36,7 +38,7 @@ Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie 
 
 1. Erstellen Sie ein Verzeichnis für das Bootstrapperpaket. In diesem Beispiel wird c:\packageverwendet.
 
-2. Erstellen Sie in Visual Studio eine neue XML-Datei mit dem Namen *product.xml*, und speichern Sie Sie im Ordner *c:\Package* .
+2. Erstellen Sie in Visual Studio eine neue XML-Datei mit dem Namen *product.xml* , und speichern Sie Sie im Ordner *c:\Package* .
 
 3. Fügen Sie folgenden XML-Code hinzu, um den XML-Namespace und den Produktcode für das Paket zu beschreiben. Ersetzen Sie den Produktcode durch einen eindeutigen Bezeichner für das Paket.
 
@@ -54,7 +56,7 @@ Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie 
       </RelatedProducts>
     ```
 
-5. Fügen Sie XML hinzu, um alle Dateien aufzulisten, die im Bootstrapperpaket enthalten sind. In diesem Beispiel wird der Name der Paketdatei *CorePackage.msi*verwendet.
+5. Fügen Sie XML hinzu, um alle Dateien aufzulisten, die im Bootstrapperpaket enthalten sind. In diesem Beispiel wird der Name der Paketdatei *CorePackage.msi* verwendet.
 
     ```xml
     <PackageFiles>
@@ -64,7 +66,7 @@ Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie 
 
 6. Kopieren Sie die *CorePackage.msi* Datei, oder verschieben Sie Sie in den Ordner *c:\Package* .
 
-7. Fügen Sie XML hinzu, um das Paket mithilfe von Boots Trapper-Befehlen zu installieren. Der Boots Trapper fügt der *MSI* -Datei automatisch das Flag **/QN** hinzu, das im Hintergrund installiert wird. Wenn es sich bei der Datei um eine *exe*-Datei handelt, führt der Boots Trapper die *exe* -Datei mithilfe der Shell aus. Der folgende XML-Code zeigt keine Argumente für *CorePackage.msi*an, aber Sie können das Befehlszeilenargument in das- `Arguments` Attribut einfügen.
+7. Fügen Sie XML hinzu, um das Paket mithilfe von Boots Trapper-Befehlen zu installieren. Der Boots Trapper fügt der *MSI* -Datei automatisch das Flag **/QN** hinzu, das im Hintergrund installiert wird. Wenn es sich bei der Datei um eine *exe* -Datei handelt, führt der Boots Trapper die *exe* -Datei mithilfe der Shell aus. Der folgende XML-Code zeigt keine Argumente für *CorePackage.msi* an, aber Sie können das Befehlszeilenargument in das- `Arguments` Attribut einfügen.
 
     ```xml
     <Commands>

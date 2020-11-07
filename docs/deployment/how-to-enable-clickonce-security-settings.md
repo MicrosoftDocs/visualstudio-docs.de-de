@@ -1,5 +1,7 @@
 ---
 title: ClickOnce-Sicherheitseinstellungen aktivieren | Microsoft-Dokumentation
+description: Erfahren Sie, wie der Veröffentlichungs-Assistent die Code Zugriffssicherheit für ClickOnce-Anwendungen automatisch aktiviert, um die Anwendung zu veröffentlichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,23 +18,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f407ac42dc9997215bfe6682bb8b974b78c7847
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: db31d0182c598b32933cf2d4260706a2252a9b6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850929"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351166"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen
 Die Code Zugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um die Anwendung zu veröffentlichen. Dies erfolgt automatisch, wenn Sie eine Anwendung mit dem Webpublishing-Assistenten veröffentlichen.
 
  In einigen Fällen kann das Aktivieren der Code Zugriffssicherheit beim entwickeln oder Debuggen der Anwendung die Leistung beeinträchtigen. in diesen Fällen möchten Sie möglicherweise die Sicherheitseinstellungen vorübergehend deaktivieren.
 
- Die ClickOnce-Sicherheitseinstellungen können auf der Seite **Sicherheit** des **Projekt-Designers**aktiviert oder deaktiviert werden.
+ Die ClickOnce-Sicherheitseinstellungen können auf der Seite **Sicherheit** des **Projekt-Designers** aktiviert oder deaktiviert werden.
 
 ### <a name="to-enable-clickonce-security-settings"></a>So aktivieren Sie die ClickOnce-Sicherheitseinstellungen
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Sicherheit** .
 
@@ -45,7 +47,7 @@ Die Code Zugriffssicherheit für ClickOnce-Anwendungen muss aktiviert sein, um d
 
 ### <a name="to-disable-clickonce-security-settings"></a>So deaktivieren Sie die ClickOnce-Sicherheitseinstellungen
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Sicherheit** .
 

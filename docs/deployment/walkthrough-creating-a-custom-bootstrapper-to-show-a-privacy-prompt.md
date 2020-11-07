@@ -1,5 +1,6 @@
 ---
 title: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutz-Eingabeaufforderung
+description: Erfahren Sie, wie Sie ClickOnce-Anwendungen für die automatische Aktualisierung konfigurieren, wenn Assemblys mit neueren Dateiversionen und Assemblyversionen verfügbar werden
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8fbb05fcfdb1a639855ca31e9574d3037559610
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 06effb313dc2b8a247eeeab99290a289717bc960
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809275"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350464"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutz-Eingabeaufforderung
 Sie können ClickOnce-Anwendungen so konfigurieren, dass Sie automatisch aktualisiert werden, wenn Assemblys mit neueren Dateiversionen und Assemblyversionen verfügbar Um sicherzustellen, dass Ihre Kunden diesem Verhalten zustimmen, können Sie Ihnen eine Datenschutz Aufforderung anzeigen. Anschließend können Sie auswählen, ob Sie der Anwendung die Berechtigung zum automatischen Aktualisieren gewähren möchten. Wenn die Anwendung nicht automatisch aktualisiert werden kann, wird Sie nicht installiert.
@@ -42,17 +43,17 @@ Sie können ClickOnce-Anwendungen so konfigurieren, dass Sie automatisch aktuali
 
 #### <a name="to-create-a-consent-dialog-box"></a>So erstellen Sie ein Zustimmungs Dialogfeld
 
-1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
+1. Zeigen Sie im Menü **Datei** auf **Neu** , und klicken Sie dann auf **Projekt**.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt** auf **Fenster**, und klicken Sie dann auf **windowsformsapplication**.
+2. Klicken Sie im Dialogfeld **Neues Projekt** auf **Fenster** , und klicken Sie dann auf **windowsformsapplication**.
 
-3. Geben Sie als **Name den Namen**" **Zustimmung Dialog**" ein, und klicken Sie dann auf **OK**.
+3. Geben Sie als **Name den Namen** " **Zustimmung Dialog** " ein, und klicken Sie dann auf **OK**.
 
 4. Klicken Sie im Designer auf das Formular.
 
 5. Ändern Sie im **Eigenschaften** Fenster die Text-Eigenschaft in das Dialog **Feld** zum **Aktualisieren der Zustimmung**.
 
-6. Erweitern Sie **Toolbox**in der Toolbox **alle Windows Forms**, und ziehen Sie ein **Label** -Steuerelement auf das Formular.
+6. Erweitern Sie **Toolbox** in der Toolbox **alle Windows Forms** , und ziehen Sie ein **Label** -Steuerelement auf das Formular.
 
 7. Klicken Sie im Designer auf das Label-Steuerelement.
 
@@ -60,17 +61,17 @@ Sie können ClickOnce-Anwendungen so konfigurieren, dass Sie automatisch aktuali
 
     Die Anwendung, die Sie installieren möchten, prüft auf die neuesten Updates im Web. Wenn Sie auf "Ich stimme zu" klicken, autorisieren Sie die Anwendung für die automatische Überprüfung und Installation von Updates über das Internet.
 
-9. Ziehen Sie in der **Toolbox**ein **CheckBox** -Steuerelement in die Mitte des Formulars.
+9. Ziehen Sie in der **Toolbox** ein **CheckBox** -Steuerelement in die Mitte des Formulars.
 
-10. Ändern Sie im **Eigenschaften** Fenster die **Text** -Eigenschaft unter **Layout** in **Ich stimme**zu.
+10. Ändern Sie im **Eigenschaften** Fenster die **Text** -Eigenschaft unter **Layout** in **Ich stimme** zu.
 
-11. Ziehen Sie in der **Toolbox**ein **Schalt** Flächen-Steuerelement in die linke untere Ecke des Formulars.
+11. Ziehen Sie in der **Toolbox** ein **Schalt** Flächen-Steuerelement in die linke untere Ecke des Formulars.
 
 12. Ändern Sie im **Eigenschaften** Fenster die **Text** -Eigenschaft unter **Layout** , um **fortzufahren**.
 
 13. Ändern Sie im **Eigenschaften** Fenster die **(Name)** -Eigenschaft unter **Entwurf** in **proceedbutton**.
 
-14. Ziehen Sie in der **Toolbox**ein **Schalt** Flächen-Steuerelement in die untere rechte Ecke des Formulars.
+14. Ziehen Sie in der **Toolbox** ein **Schalt** Flächen-Steuerelement in die untere rechte Ecke des Formulars.
 
 15. Ändern Sie im **Eigenschaften** Fenster die **Text** -Eigenschaft unter **Layout** in **Abbrechen**.
 
@@ -111,19 +112,19 @@ Sie können ClickOnce-Anwendungen so konfigurieren, dass Sie automatisch aktuali
 
      Nur für Visual Basic-Entwickler:
 
-    1. Klicken Sie in **Projektmappen-Explorer**auf das Dialogfeld " **Zustimmung**".
+    1. Klicken Sie in **Projektmappen-Explorer** auf das Dialogfeld " **Zustimmung** ".
 
-    2. Klicken Sie im Menü **Projekt** auf **Modul hinzufügen**, und klicken Sie dann auf **Hinzufügen**.
+    2. Klicken Sie im Menü **Projekt** auf **Modul hinzufügen** , und klicken Sie dann auf **Hinzufügen**.
 
     3. Fügen Sie in der Codedatei " *Module1. vb* " den folgenden Code hinzu.
 
         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
 
-    4. Klicken Sie im Menü **Projekt** auf die Registerkarte **Eigenschaften**, und klicken Sie dann auf die Registerkarte **Anwendung** .
+    4. Klicken Sie im Menü **Projekt** auf die Registerkarte **Eigenschaften** , und klicken Sie dann auf die Registerkarte **Anwendung** .
 
     5. Deaktivieren Sie **Anwendungs Framework aktivieren**.
 
-    6. Wählen Sie im Dropdown Menü **Start Objekt** die Option **Module1**aus.
+    6. Wählen Sie im Dropdown Menü **Start Objekt** die Option **Module1** aus.
 
        > [!NOTE]
        > Durch die Deaktivierung des Anwendungs Frameworks werden Features wie visuelle Windows XP-Stile, Anwendungs Ereignisse, Begrüßungsbildschirm, Einzelinstanzanwendungen und vieles mehr deaktiviert. Weitere Informationen finden Sie unter [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
@@ -233,13 +234,13 @@ Sie können ClickOnce-Anwendungen so konfigurieren, dass Sie automatisch aktuali
 
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>So legen Sie die Update Zustimmungs Anwendung als erforderliche Komponente fest
 
-1. Klicken Sie in **Projektmappen-Explorer**auf den Namen der Anwendung, die Sie bereitstellen möchten.
+1. Klicken Sie in **Projektmappen-Explorer** auf den Namen der Anwendung, die Sie bereitstellen möchten.
 
-2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**von *ProjectName* .
+2. Klicken Sie im Menü **Projekt** auf **Eigenschaften** von *ProjectName* .
 
 3. Klicken Sie auf die Seite **veröffentlichen** , und klicken Sie dann auf **Voraussetzungen**.
 
-4. Wählen Sie die Option **Zustimmung aktualisieren**aus.
+4. Wählen Sie die Option **Zustimmung aktualisieren** aus.
 
     > [!NOTE]
     > Möglicherweise müssen Sie Visual Studio schließen und erneut öffnen, um das Dialogfeld "Zustimmung aktualisieren" im Dialogfeld "Voraussetzungen" anzuzeigen.
@@ -251,9 +252,9 @@ Sie können ClickOnce-Anwendungen so konfigurieren, dass Sie automatisch aktuali
 
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>So erstellen und testen Sie das Setup Programm, indem Sie nicht auf Ich stimme zu klicken
 
-1. Klicken Sie in **Projektmappen-Explorer**auf den Namen der Anwendung, die Sie bereitstellen möchten.
+1. Klicken Sie in **Projektmappen-Explorer** auf den Namen der Anwendung, die Sie bereitstellen möchten.
 
-2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**von *ProjectName* .
+2. Klicken Sie im Menü **Projekt** auf **Eigenschaften** von *ProjectName* .
 
 3. Klicken Sie auf die Seite **veröffentlichen** , und klicken Sie dann auf **Jetzt veröffentlichen**.
 
@@ -277,9 +278,9 @@ Sie können ClickOnce-Anwendungen so konfigurieren, dass Sie automatisch aktuali
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>So erstellen und testen Sie das Setup Programm durch Klicken auf "Ich stimme zu"
 
-1. Klicken Sie in **Projektmappen-Explorer**auf den Namen der Anwendung, die Sie bereitstellen möchten.
+1. Klicken Sie in **Projektmappen-Explorer** auf den Namen der Anwendung, die Sie bereitstellen möchten.
 
-2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**von *ProjectName* .
+2. Klicken Sie im Menü **Projekt** auf **Eigenschaften** von *ProjectName* .
 
 3. Klicken Sie auf die Seite **veröffentlichen** , und klicken Sie dann auf **Jetzt veröffentlichen**.
 
@@ -293,13 +294,13 @@ Sie können ClickOnce-Anwendungen so konfigurieren, dass Sie automatisch aktuali
 
      Die Anwendung Update Consent Dialog wird angezeigt und zeigt den folgenden Text an: die Anwendung, die Sie installieren möchten, prüft, ob die neuesten Updates im Web vorhanden sind. Wenn ich auf "Ich stimme zu" klicke, autorisiere ich die Anwendung für die automatische Suche nach Updates im Internet.
 
-7. Klicken Sie auf **Ich stimme**zu, und klicken Sie dann auf **weiter**.
+7. Klicken Sie auf **Ich stimme** zu, und klicken Sie dann auf **weiter**.
 
      Die Installation der Anwendung wird gestartet.
 
 8. Wenn das Dialogfeld Anwendungs Installation angezeigt wird, klicken Sie auf **Installieren**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)
 - [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md)
 - [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md)

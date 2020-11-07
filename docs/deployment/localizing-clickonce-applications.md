@@ -1,5 +1,7 @@
 ---
 title: Lokalisieren von ClickOnce-Anwendungen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über drei Möglichkeiten, um Ihre ClickOnce-Anwendung auf eine Version zu lokalisieren, die für eine bestimmte Kultur geeignet ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ee263b3bb908daace4bf27f86cff710ae90684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840998"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350828"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalisieren von ClickOnce-Anwendungen
 Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultur anpassen. Dieser Prozess umfasst die Übersetzung des Textes der Benutzeroberfläche in eine regionsspezifische Sprache, die Verwendung der richtigen Datums- und Währungsformate, die Anpassung der Größe von Steuerelementen in einem Formular und, sofern erforderlich, die Spiegelung von Steuerelementen von rechts nach links.
