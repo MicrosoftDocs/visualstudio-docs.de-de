@@ -1,5 +1,7 @@
 ---
 title: '&lt;publisherIdentity- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+description: Das publisherIdentity-Element enthält Informationen zum Verleger, von dem ein Bereitstellungs Manifest signiert wurde. Das-Element ist für signierte Manifeste erforderlich.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1eb4b67bfdca13c63480f3dde82004d87cd4a12a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927538"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350685"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity- &gt; Element (ClickOnce-Bereitstellung)
 Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat.
@@ -38,7 +40,7 @@ Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signi
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das- `publisherIdentity` Element ist für signierte Manifeste erforderlich. In der folgenden Tabelle sind die Attribute aufgeführt, die das- `publisherIdentity` Element unterstützt.
 
-|attribute|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`name`|Erforderlich. Beschreibt die Identität der Partei, die diese Anwendung veröffentlicht hat.|
 |`issuerKeyHash`|Erforderlich. Enthält den SHA-1-Hash des öffentlichen Schlüssels des Zertifikat Ausstellers.|

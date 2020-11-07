@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Aktualisierungen für eine ClickOnce-Anwendung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Optionen zum automatischen oder programmgesteuerten Suchen nach Updates für Ihre ClickOnce-Anwendungen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: bc2fd7b9e58cac0b013c511e17a6a9744e87ca39
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851605"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351179"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Vorgehensweise: Verwalten von Updates für eine ClickOnce-Anwendung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können automatisch oder Programm gesteuert nach Updates suchen. Als Entwickler haben Sie viele Flexibilität bei der Angabe, wann und wie Update Überprüfungen durchgeführt werden, ob Updates obligatorisch sind und wo die Anwendung nach Updates suchen soll.
@@ -41,7 +43,7 @@ ms.locfileid: "90851605"
 
 ### <a name="to-check-for-updates-before-the-application-starts"></a>So suchen Sie nach Updates, bevor die Anwendung gestartet wird
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
@@ -49,11 +51,11 @@ ms.locfileid: "90851605"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** aktiviert ist.
 
-5. Wählen Sie im Abschnitt **Wählen Sie aus, wann die Anwendung nach Updates suchen soll aus** , **bevor die Anwendung gestartet**wird. Dadurch wird sichergestellt, dass Benutzer, die mit dem Netzwerk verbunden sind, immer die Anwendung mit den neuesten Updates ausführen.
+5. Wählen Sie im Abschnitt **Wählen Sie aus, wann die Anwendung nach Updates suchen soll aus** , **bevor die Anwendung gestartet** wird. Dadurch wird sichergestellt, dass Benutzer, die mit dem Netzwerk verbunden sind, immer die Anwendung mit den neuesten Updates ausführen.
 
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Suchen nach Updates im Hintergrund nach dem Start der Anwendung
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
@@ -61,13 +63,13 @@ ms.locfileid: "90851605"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **für die Anwendung auf Updates prüfen** ausgewählt ist.
 
-5. Wählen Sie im **Abschnitt wählen Sie aus, wann die Anwendung nach Updates suchen soll aus**, **nachdem die Anwendung gestartet**wurde. Die Anwendung wird auf diese Weise schneller gestartet, und es wird im Hintergrund nach Updates gesucht, und der Benutzer wird nur benachrichtigt, wenn ein Update verfügbar ist. Nach der Installation werden Updates erst wirksam, wenn die Anwendung neu gestartet wird.
+5. Wählen Sie im **Abschnitt wählen Sie aus, wann die Anwendung nach Updates suchen soll aus** , **nachdem die Anwendung gestartet** wurde. Die Anwendung wird auf diese Weise schneller gestartet, und es wird im Hintergrund nach Updates gesucht, und der Benutzer wird nur benachrichtigt, wenn ein Update verfügbar ist. Nach der Installation werden Updates erst wirksam, wenn die Anwendung neu gestartet wird.
 
 6. Aktivieren Sie im Abschnitt geben Sie an, **wie häufig die Anwendung nach Updates suchen soll** die Option **jedes Mal aktivieren, wenn die Anwendung** ausgeführt wird (Standard), oder **Aktivieren Sie alle** , und geben Sie eine Zahl und ein Zeitintervall ein.
 
 ### <a name="to-specify-a-minimum-required-version-for-the-application"></a>So geben Sie eine mindestens erforderliche Version für die Anwendung an
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
@@ -75,11 +77,11 @@ ms.locfileid: "90851605"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** aktiviert ist.
 
-5. Aktivieren Sie das Kontrollkästchen **mindestens erforderliche Version für diese Anwendung angeben** , und geben Sie dann die Nummern für **Haupt**-und **neben**Version, **Build**und **Revision** für die Anwendung ein.
+5. Aktivieren Sie das Kontrollkästchen **mindestens erforderliche Version für diese Anwendung angeben** , und geben Sie dann die Nummern für **Haupt** -und **neben** Version, **Build** und **Revision** für die Anwendung ein.
 
 ### <a name="to-specify-a-different-update-location"></a>So geben Sie einen anderen Aktualisierungs Speicherort an
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
@@ -87,11 +89,11 @@ ms.locfileid: "90851605"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** aktiviert ist.
 
-5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des Formats *http://Hostname/ApplicationName* oder eines UNC-Pfads im Format * \\ \server\applicationname*ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach dem Aktualisierungs Speicherort zu suchen.
+5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des Formats *http://Hostname/ApplicationName* oder eines UNC-Pfads im Format *\\ \server\applicationname* ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach dem Aktualisierungs Speicherort zu suchen.
 
 ### <a name="to-check-for-updates-programmatically"></a>So suchen Sie Programm gesteuert nach Updates
 
-1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer** im Menü **Projekt** auf **Eigenschaften**.
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
@@ -99,7 +101,7 @@ ms.locfileid: "90851605"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** deaktiviert ist. (Optional können Sie dieses Kontrollkästchen aktivieren, um Programm gesteuert nach Updates zu suchen und die ClickOnce-Laufzeit zu überprüfen, ob Updates automatisch überprüft werden.)
 
-5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des Formats *http://Hostname/ApplicationName* oder eines UNC-Pfads im Format * \\ \server\applicationname*ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach dem Aktualisierungs Speicherort zu suchen. Der Aktualisierungs Speicherort ist der Ort, an dem die Anwendung nach einer aktualisierten Version von sich selbst sucht.
+5. Geben Sie im Feld **Update Speicherort** den Update Speicherort mit einer voll qualifizierten URL unter Verwendung des Formats *http://Hostname/ApplicationName* oder eines UNC-Pfads im Format *\\ \server\applicationname* ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um nach dem Aktualisierungs Speicherort zu suchen. Der Aktualisierungs Speicherort ist der Ort, an dem die Anwendung nach einer aktualisierten Version von sich selbst sucht.
 
 6. Erstellen Sie eine Schaltfläche, ein Menü Element oder eine andere Benutzeroberfläche in einem Windows Form, die Benutzer auswählen, um nach Updates zu suchen. Über den-Ereignishandler dieses Elements können Sie eine Methode zum Suchen und Installieren von Updates abrufen. Ein Beispiel für Visual Basic-und Visual c#-Code für eine solche Methode finden Sie unter Gewusst [wie: Programm gesteuertes suchen nach Anwendungs Updates mithilfe der ClickOnce-Bereitstellungs-API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
 

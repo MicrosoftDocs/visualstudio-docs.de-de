@@ -1,5 +1,6 @@
 ---
 title: Speicherort für benutzerdefinierte Protokolldatei festlegen (ClickOnce-Bereitstellungs Fehler)
+description: Informieren Sie sich über die Aktivierungs Protokolldateien, die von ClickOnce für alle bereit Stellungen verwaltet werden, die Fehler beim Installieren und Initialisieren einer ClickOnce-Bereitstellung dokumentieren.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b5cf73a685eb68e389e6531022200acbefbfd2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3d9c8ce481ab9ca99b7d456f53418641654369ad
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809741"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351036"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Vorgehensweise: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwaltet Aktivierungs Protokolldateien für alle bereit Stellungen. In diesen Protokollen werden alle Fehler im Zusammenhang mit der Installation und Initialisierung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung dokumentiert. Standardmäßig wird [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] für jede Bereitstellungs Aktivierung eine Protokolldatei erstellt. Diese Protokolldateien werden im Ordner "temporäre Internet Dateien" gespeichert. Die Protokolldatei für eine Bereitstellung wird dem Benutzer angezeigt, wenn ein Aktivierungs Fehler auftritt, und der Benutzer klickt im resultierenden Fehler Dialogfeld auf **Details** .
 
- Sie können dieses Verhalten für einen bestimmten Client ändern, indem Sie den Registrierungs-Editor (**regedit.exe**) verwenden, um einen benutzerdefinierten Pfad für die Protokolldatei festzulegen. In diesem Fall [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] protokolliert Aktivierungs Erfolge und-Fehler für alle bereit Stellungen in einer einzelnen Datei.
+ Sie können dieses Verhalten für einen bestimmten Client ändern, indem Sie den Registrierungs-Editor ( **regedit.exe** ) verwenden, um einen benutzerdefinierten Pfad für die Protokolldatei festzulegen. In diesem Fall [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] protokolliert Aktivierungs Erfolge und-Fehler für alle bereit Stellungen in einer einzelnen Datei.
 
 > [!CAUTION]
 > Die fehlerhafte Verwendung des Registrierungs-Editors kann zu schweren Problemen führen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich machen. Sie verwenden den Registrierungs-Editor auf eigene Gefahr.
@@ -45,7 +46,7 @@ ms.locfileid: "90809741"
 
 3. Legen Sie den Zeichen folgen Wert `LogFilePath` auf den vollständigen Pfad und den Dateinamen Ihres bevorzugten benutzerdefinierten Protokoll Speicher Orts fest.
 
-     Dieser Speicherort muss sich in einem Verzeichnis befinden, auf das der Benutzer Schreibzugriff hat. Erstellen Sie beispielsweise unter Windows Vista die folgende Ordnerstruktur, und legen `LogFilePath` Sie auf *c:\Users \\ \<username> \Documents\Logs\ClickOnce\installation.log*fest.
+     Dieser Speicherort muss sich in einem Verzeichnis befinden, auf das der Benutzer Schreibzugriff hat. Erstellen Sie beispielsweise unter Windows Vista die folgende Ordnerstruktur, und legen `LogFilePath` Sie auf *c:\Users \\ \<username> \Documents\Logs\ClickOnce\installation.log* fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)

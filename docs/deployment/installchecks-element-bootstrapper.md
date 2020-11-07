@@ -1,5 +1,7 @@
 ---
 title: '&lt;InstallChecks- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
+description: Das InstallChecks-Element unterstützt das Starten einer Vielzahl von Tests auf dem lokalen Computer, um sicherzustellen, dass alle Voraussetzungen für eine Anwendung installiert wurden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536304"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350867"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks- &gt; Element (Boots Trapper)
 Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests auf dem lokalen Computer, um sicherzustellen, dass alle erforderlichen Voraussetzungen für eine Anwendung installiert wurden.
@@ -103,7 +105,7 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 | `FileName` | Erforderlich. Der Name der zu suchenden Datei. |
 | `SearchPath` | Erforderlich. Der Datenträger oder Ordner, in dem nach der Datei gesucht werden soll. Dabei muss es sich um einen relativen Pfad handeln, wenn `SpecialFolder` zugewiesen wird. andernfalls muss es sich um einen absoluten Pfad handeln. |
 | `SpecialFolder` | Optional. Ein Ordner, der für Windows oder für eine besondere Bedeutung hat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Der Standardwert ist die Interpretation `SearchPath` als absoluter Pfad. Gültige Werte sind:<br /><br /> `AppDataFolder`. Der Anwendungsdatenordner für diese [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, spezifisch für den aktuellen Benutzer.<br /><br /> `CommonAppDataFolder`. Der Ordner "Anwendungsdaten", der von allen Benutzern verwendet wird.<br /><br /> `CommonFilesFolder`. Der Ordner "gemeinsame Dateien" für den aktuellen Benutzer.<br /><br /> `LocalDataAppFolder`. Der Datenordner für nicht roaminganwendungen.<br /><br /> `ProgramFilesFolder`. Der standardmäßige Programmdateien-Ordner für 32-Bit-Anwendungen.<br /><br /> `StartUpFolder`. Der Ordner, der alle Anwendungen enthält, die beim Systemstart gestartet wurden.<br /><br /> `SystemFolder`. Der Ordner, der 32-Bit-System-DLLs enthält.<br /><br /> `WindowsFolder`. Der Ordner, der die Windows-Systeminstallation enthält.<br /><br /> `WindowsVolume`. Laufwerk oder Partition, das die Windows-Systeminstallation enthält. |
-| `SearchDepth` | Optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der von `SpecialFolder` und **SearchPath**angegeben wird. |
+| `SearchDepth` | Optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der von `SpecialFolder` und **SearchPath** angegeben wird. |
 
 ## <a name="msiproductcheck"></a>MsiProductCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `MsiProductCheck` prüft der Boots Trapper, ob die angegebene Microsoft Windows Installer Installation bis zum Abschluss ausgeführt wurde. Der Eigenschafts Wert wird abhängig vom Status des installierten Produkts festgelegt. Ein positiver Wert gibt an, dass das Produkt installiert ist, 0 oder-1 gibt an, dass es nicht installiert ist. (Weitere Informationen finden Sie in der Windows Installer SDK-Funktion MsiQueryFeatureState.) . Wenn Windows Installer nicht auf dem Computer installiert ist, `Property` wird nicht festgelegt.
@@ -140,7 +142,7 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 |`FileName`|Optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass es sich bei dem vom Registrierungsschlüssel erhaltenen Wert um einen Verzeichnispfad handelt und dieser Name angefügt wird. Wenn kein Wert angegeben wird, wird davon ausgegangen, dass der von der Registrierung zurückgegebene Wert der vollständige Pfad zu einer Datei ist.|
 |`SearchDepth`|Optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der durch den Wert des Registrierungsschlüssels angegeben wird.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Während die untergeordneten Elemente die auszuführenden `InstallChecks` Tests definieren, werden Sie nicht ausgeführt. Zum Ausführen der Tests müssen Sie `Command` Elemente unterhalb des- `Commands` Elements erstellen.
 
 ## <a name="example"></a>Beispiel

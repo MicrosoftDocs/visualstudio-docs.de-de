@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei ClickOnce-bereit Stellungen | Microsoft-Dokumentation
+description: Verwenden Sie diesen Artikel, um die häufigsten Probleme bei ClickOnce-bereit Stellungen zu diagnostizieren und zu beheben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae6f4098edf246a4f84533b37e4f9a684d932456
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235172"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350500"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Problembehandlung bei ClickOnce-Bereitstellungen
 Dieses Thema hilft Ihnen bei der Diagnose und Behebung der häufigsten Probleme bei bereit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Stellungen.

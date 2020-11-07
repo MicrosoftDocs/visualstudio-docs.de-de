@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Bereitstellung vertrauenswürdiger Anwendungen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ClickOnce-Anwendungen mit erhöhten Berechtigungen mithilfe der Bereitstellungs Technologie für vertrauenswürdige Anwendungen bereitstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72806825"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350490"
 ---
 # <a name="trusted-application-deployment-overview"></a>Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
 Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen, die mithilfe der Technologie für die Bereitstellung einer vertrauenswürdigen Anwendung erweiterte Berechtigungen aufweisen.
@@ -34,7 +36,7 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
 ## <a name="trusted-application-deployment-basics"></a>Grundlagen der Bereitstellung einer vertrauenswürdigen Anwendung
  Die folgende Tabelle zeigt die Objekte und die Rollen, die an der Bereitstellung einer vertrauenswürdigen Anwendung beteiligt sind.
 
-|Objekt oder Rolle|Beschreibung|
+|Objekt oder Rolle|BESCHREIBUNG|
 |--------------------|-----------------|
 |administrator|Die Entität in der Organisation, die verantwortlich für das Aktualisieren und Verwalten von Clientcomputern ist|
 |trust manager|Das Subsystem innerhalb der Common Language Runtime (CLR), das verantwortlich für das Erzwingen der Anwendungssicherheit auf Clientcomputern ist.|
@@ -77,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um die Bereitstellung einer vertrauensw�
 
 - Der <xref:System.Security.Cryptography?displayProperty=fullName> -Namespace.
 
-- *CertMgr.exe*, die eine Komponente von Internet Explorer ist und daher unter Windows 98 und allen späteren Versionen vorhanden ist. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe* , die eine Komponente von Internet Explorer ist und daher unter Windows 98 und allen späteren Versionen vorhanden ist. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Erstellen einer ClickOnce-Anwendung
  Bei einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung handelt es sich um eine .NET Framework Client Anwendung in Kombination mit Manifest-Dateien, die die Anwendung beschreiben und Installationsparameter angeben Sie können Ihr Programm in eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mithilfe des Befehls **Veröffentlichen** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]verwandeln. Alternativ können Sie alle erforderlichen Dateien für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung mithilfe von Tools, die in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]enthalten sind, generieren. Ausführliche Schritte zur Bereitstellung finden Sie unter Exemplarische Vorgehensweise [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
@@ -101,6 +103,6 @@ Führen Sie die folgenden Schritte aus, um die Bereitstellung einer vertrauensw�
 ## <a name="limitations-of-trusted-application-deployment"></a>Einschränkungen der Bereitstellung einer vertrauenswürdigen Anwendung
  Sie können die Bereitstellung einer vertrauenswürdigen Anwendung verwenden, um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen, die über das Internet oder über eine unternehmensweite Dateifreigabe bereitgestellt werden, eine erhöhte Vertrauensstellung zu gewähren. Sie müssen keine Bereitstellung einer vertrauenswürdigen Anwendung für [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen verwenden, die auf einer CD verteilt werden, da diese Anwendungen standardmäßig die volle Vertrauenswürdigkeit erhalten haben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

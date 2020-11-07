@@ -1,5 +1,7 @@
 ---
 title: Produkt-und Paket Schema Referenz | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Produktdatei, ein XML-Manifest, das die externen Abhängigkeiten beschreibt, die für eine ClickOnce-Anwendung erforderlich sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,19 +27,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745612"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350711"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenz zum Produkt- und Paketschema
 Eine *Produktdatei* ist ein XML-Manifest, in dem alle externen Abhängigkeiten beschrieben werden, die von einer-Anwendung benötigt werden [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Beispiele für externe Abhängigkeiten sind der .NET Framework und die Microsoft Data Access Components (MDAC). Eine Paketdatei ähnelt einer Produktdatei, wird jedoch verwendet, um die Kultur abhängigen Komponenten einer Abhängigkeit zu installieren, z. b. lokalisierte Assemblys, Lizenzverträge und Dokumentation.
 
  Die Produkt-und Paketdatei besteht entweder aus einem-Element oder einem-Element der obersten Ebene `Product` `Package` , die jeweils die folgenden Elemente enthalten.
 
-|Element|Beschreibung|Attributes|
+|Element|BESCHREIBUNG|Attribute|
 |-------------|-----------------|----------------|
 |[\<Product>-Element](../deployment/product-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für Produktdateien.|Keine|
 |[\<Package>-Element](../deployment/package-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für Paketdateien.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
@@ -48,7 +50,7 @@ Eine *Produktdatei* ist ein XML-Manifest, in dem alle externen Abhängigkeiten b
 |[\<Strings>-Element](../deployment/strings-element-bootstrapper.md)|Erforderliches Element. Speichert lokalisierte Versionen des Produkt namens und der Fehler Zeichenfolgen.|Keine|
 
 ## <a name="remarks"></a>Bemerkungen
- Das Paket Schema wird von *Setup.exe*genutzt, einem von der MS Build-Bootstrapping-Aufgabe generierten Stub-Programm, das eine eigene, hart codierte Logik enthält. Das Schema steuert jeden Aspekt des Installationsvorgangs.
+ Das Paket Schema wird von *Setup.exe* genutzt, einem von der MS Build-Bootstrapping-Aufgabe generierten Stub-Programm, das eine eigene, hart codierte Logik enthält. Das Schema steuert jeden Aspekt des Installationsvorgangs.
 
  `InstallChecks` die Tests, die setup.exe, um ein bestimmtes Paket vorhanden zu sein. `PackageFiles` Listet alle Pakete auf, die der Setup Vorgang möglicherweise installiert, wenn ein bestimmter Test fehlschlägt. Jeder Befehls Eintrag Unterbefehle führt einen der von beschriebenen Tests aus `InstallChecks` und gibt an, welche ausgeführt werden soll, `PackageFile` Wenn der Test fehlschlägt. Sie können das `Strings` -Element verwenden, um Produktnamen und Fehlermeldungen zu lokalisieren, damit Sie eine einzelne Installations Binärdatei verwenden können, um die Anwendung für eine beliebige Anzahl von Sprachen zu installieren.
 
