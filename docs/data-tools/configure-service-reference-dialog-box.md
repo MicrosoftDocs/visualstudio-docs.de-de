@@ -1,5 +1,6 @@
 ---
 title: Dienstverweis konfigurieren (Dialogfeld)
+description: Verwenden Sie das Dialogfeld Dienst Verweis konfigurieren in Visual Studio, um das Verhalten der Windows Communication Foundation (WCF)-Dienste zu konfigurieren.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70faee4277625621074b1bd1bfdf667c818e1f46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586925"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382350"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
 
 Im Dialogfeld **Dienst Verweis konfigurieren** können Sie das Verhalten der Windows Communication Foundation (WCF)-Dienste konfigurieren.
 
-Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen-Explorer**, und wählen Sie **Dienstverweis konfigurieren** aus, um auf das Dialogfeld **Dienstverweis konfigurieren** zuzugreifen. Sie können auch auf das Dialogfeld zugreifen, indem Sie im Dialogfeld **Dienstverweis hinzufügen** auf die Schaltfläche **Erweitert** klicken.
+Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen-Explorer** , und wählen Sie **Dienstverweis konfigurieren** aus, um auf das Dialogfeld **Dienstverweis konfigurieren** zuzugreifen. Sie können auch auf das Dialogfeld zugreifen, indem Sie im Dialogfeld **Dienstverweis hinzufügen** auf die Schaltfläche **Erweitert** klicken.
 
 ## <a name="task-list"></a>Aufgabenliste
 
@@ -39,7 +40,7 @@ Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen
 
 - Wählen Sie die Typen aus den Listen **Sammlungstyp** und **Wörterbuchsammlungstyp** aus, um Listen- oder Wörterbuchsammlungstypen für einen WCF-Client anzugeben.
 
-- Deaktivieren Sie das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**, um die Typfreigabe zu deaktivieren. Aktivieren Sie zum Aktivieren der Typfreigabe für eine Teilmenge an referenzierten Assemblys das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**, klicken Sie auf **Typen in folgenden Assemblys, auf die verwiesen wird, wiederverwenden**, und wählen Sie die gewünschten Verweise in der Liste **Assemblys, auf die verwiesen wird** aus.
+- Deaktivieren Sie das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden** , um die Typfreigabe zu deaktivieren. Aktivieren Sie zum Aktivieren der Typfreigabe für eine Teilmenge an referenzierten Assemblys das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden** , klicken Sie auf **Typen in folgenden Assemblys, auf die verwiesen wird, wiederverwenden** , und wählen Sie die gewünschten Verweise in der Liste **Assemblys, auf die verwiesen wird** aus.
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
@@ -91,7 +92,7 @@ Wenn diese Option ausgewählt ist, werden nur die ausgewählten Typen in der Lis
 
 **Liste „Assemblys, auf die verwiesen wird“**
 
-Enthält eine Liste der referenzierten Assemblys für das Projekt oder die Website. Wenn Sie in angegebenen Assemblys, auf die verwiesen wird, **Wiederverwendungs Typen**auswählen, können Sie einzelne Assemblys auswählen
+Enthält eine Liste der referenzierten Assemblys für das Projekt oder die Website. Wenn Sie in angegebenen Assemblys, auf die verwiesen wird, **Wiederverwendungs Typen** auswählen, können Sie einzelne Assemblys auswählen
 
 **Webverweis hinzufügen**
 
@@ -101,9 +102,9 @@ Zeigt das Dialogfeld **Webverweis hinzufügen** an.
 > Diese Option sollte nur für Projekte verwendet werden, die auf die Version 2,0 der .NET Framework abzielen.
 >
 > [!NOTE]
-> Die Schaltfläche **Webverweis hinzufügen** ist nur verfügbar, wenn das Dialogfeld **Dienst Verweis konfigurieren** im Dialog **Feld Dienstverweis hinzufügen**angezeigt wird.
+> Die Schaltfläche **Webverweis hinzufügen** ist nur verfügbar, wenn das Dialogfeld **Dienst Verweis konfigurieren** im Dialog **Feld Dienstverweis hinzufügen** angezeigt wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [How to: Add a reference to a web service (Vorgehensweise: Hinzufügen eines Verweises auf einen Webdienst)](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

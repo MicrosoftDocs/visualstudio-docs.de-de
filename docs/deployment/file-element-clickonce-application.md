@@ -1,5 +1,7 @@
 ---
 title: '&lt;file- &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+description: Das File-Element identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen und verwendet werden. Das File-Element ist optional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900273"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382740"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file- &gt; Element (ClickOnce-Anwendung)
 Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen und verwendet werden.
@@ -86,7 +88,7 @@ Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das `file`-Element ist optional. Das Element weist folgende Attribute auf.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`name`|Erforderlich. Gibt den Namen der Datei an.|
 |`size`|Erforderlich. Gibt die Größe der Datei in Bytes an.|
@@ -97,7 +99,7 @@ Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen 
 ## <a name="typelib"></a>typelib
  Das- `typelib` Element ist ein optionales untergeordnetes Element des file-Elements. Das-Element beschreibt die Typbibliothek, die zur COM-Komponente gehört. Das Element weist folgende Attribute auf.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`tlbid`|Erforderlich. Die der Typbibliothek zugewiesene GUID.|
 |`version`|Erforderlich. Die Versionsnummer der Typbibliothek.|
@@ -108,7 +110,7 @@ Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen 
 ## <a name="comclass"></a>comClass
  Das- `comClass` Element ist ein optionales untergeordnetes Element des- `file` Elements. es ist jedoch erforderlich, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung eine COM-Komponente enthält, die für die Bereitstellung mithilfe des com-Registrierungs freien com Das Element weist folgende Attribute auf.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`clsid`|Erforderlich. Die Klassen-ID der COM-Komponente, ausgedrückt als GUID.|
 |`description`|Optional. Der Name der Klasse.|
@@ -124,7 +126,7 @@ Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen 
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub
  Das- `comInterfaceExternalProxyStub` Element ist ein optionales untergeordnetes Element des- `file` Elements, kann jedoch erforderlich sein, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung eine COM-Komponente enthält, die für die Bereitstellung mithilfe von com registriert werden soll. Das-Element enthält die folgenden Attribute.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`iid`|Erforderlich. Die Schnittstellen-ID (IID), die von diesem Proxy bereitgestellt wird. Die IID muss eine geschweifte Klammer aufweisen.|
 |`baseInterface`|Optional. Die IID der Schnittstelle, von der die Schnittstelle abgeleitet wird, auf die von verwiesen `iid` wird.|
@@ -136,7 +138,7 @@ Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen 
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub
  Das- `comInterfaceProxyStub` Element ist ein optionales untergeordnetes Element des- `file` Elements, kann jedoch erforderlich sein, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung eine COM-Komponente enthält, die für die Bereitstellung mithilfe von com registriert werden soll. Das-Element enthält die folgenden Attribute.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`iid`|Erforderlich. Die Schnittstellen-ID (IID), die von diesem Proxy bereitgestellt wird. Die IID muss eine geschweifte Klammer aufweisen.|
 |`baseInterface`|Optional. Die IID der Schnittstelle, von der die Schnittstelle abgeleitet wird, auf die von verwiesen `iid` wird.|
@@ -149,9 +151,9 @@ Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen 
 ## <a name="windowclass"></a>windowClass
  Das- `windowClass` Element ist ein optionales untergeordnetes Element des- `file` Elements, kann jedoch erforderlich sein, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung eine COM-Komponente enthält, die für die Bereitstellung mithilfe von com registriert werden soll. Das-Element verweist auf eine von der COM-Komponente definierte Fenster Klasse, auf die eine Version angewendet werden muss. Das-Element enthält die folgenden Attribute.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|`versioned`|Optional. Steuert, ob der in der Registrierung verwendete interne Name der Fenster Klasse die Version der Assembly enthält, die die Fenster Klasse enthält. Der Wert dieses Attributs kann `yes` oder sein `no` . Der Standardwert lautet `yes`. Der Wert `no` sollte nur verwendet werden, wenn die gleiche Fenster Klasse durch eine Seite-an-Seite-Komponente und eine äquivalente nicht parallele Komponente definiert ist und Sie diese als dieselbe Fenster Klasse behandeln möchten. Beachten Sie, dass die üblichen Regeln zur Fenster Klassen Registrierung zutreffen – nur die erste Komponente, die die Fenster Klasse registriert, kann Sie registrieren, da auf Sie keine Version angewendet wird.|
+|`versioned`|Optional. Steuert, ob der in der Registrierung verwendete interne Name der Fenster Klasse die Version der Assembly enthält, die die Fenster Klasse enthält. Der Wert dieses Attributs kann `yes` oder sein `no` . Der Standardwert ist `yes`. Der Wert `no` sollte nur verwendet werden, wenn die gleiche Fenster Klasse durch eine Seite-an-Seite-Komponente und eine äquivalente nicht parallele Komponente definiert ist und Sie diese als dieselbe Fenster Klasse behandeln möchten. Beachten Sie, dass die üblichen Regeln zur Fenster Klassen Registrierung zutreffen – nur die erste Komponente, die die Fenster Klasse registriert, kann Sie registrieren, da auf Sie keine Version angewendet wird.|
 
 ## <a name="hash"></a>hash
  Das- `hash` Element ist ein optionales untergeordnetes Element des- `file` Elements. Das `hash` -Element weist keine Attribute auf.
@@ -166,21 +168,21 @@ Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen 
 ## <a name="dsigtransform"></a>dsig:Transform
  Das- `dsig:Transform` Element ist ein erforderliches untergeordnetes Element des- `dsig:Transforms` Elements. Das `dsig:Transform` -Element weist folgende Attribute auf.
 
-| attribute | BESCHREIBUNG |
+| attribute | Beschreibung |
 |-------------| - |
 | `Algorithm` | Der Algorithmus, der verwendet wird, um den Digest für diese Datei zu berechnen. Derzeit ist der einzige Wert, der von verwendet [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird `urn:schemas-microsoft-com:HashTransforms.Identity` . |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  Das- `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:DigestMethod` -Element weist folgende Attribute auf.
 
-| attribute | BESCHREIBUNG |
+| attribute | Beschreibung |
 |-------------| - |
 | `Algorithm` | Der Algorithmus, der verwendet wird, um den Digest für diese Datei zu berechnen. Derzeit ist der einzige Wert, der von verwendet [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird `http://www.w3.org/2000/09/xmldsig#sha1` . |
 
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  Das- `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Dieses Element identifiziert alle nicht Assemblydateien, die die Anwendung bilden, insbesondere die Hashwerte für die Überprüfung der Datei. Dieses Element kann auch Component Object Model (com)-Isolations Daten enthalten, die der Datei zugeordnet sind. Wenn eine Datei geändert wird, muss die Datei des Anwendungs Manifests auch aktualisiert werden, um die Änderung widerzuspiegeln.
 
 ## <a name="example"></a>Beispiel
@@ -198,5 +200,5 @@ Identifiziert alle nicht Assemblydateien, die von der Anwendung heruntergeladen 
 </file>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

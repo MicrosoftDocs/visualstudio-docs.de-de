@@ -1,6 +1,6 @@
 ---
 title: Eigenschafts Typen stimmen nicht ab
-description: Eine Zuordnung kann nicht erstellt werden – die Eigenschaften weisen keine übereinstimmenden Typen auf
+description: Eine Zuordnung kann nicht erstellt werden. die Eigenschafts Typen stimmen nicht ab. Anzeigen von Informationen zu dieser Visual Studio-objektrelationaler Designer Meldung (O/R-Designer).
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: bce5a285f3bccdc2be8004f0eba4546bb7964a42
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743193"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382051"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Die Zuordnung &lt;Zuordnungsname&gt; kann nicht erstellt werden – die Eigenschaften weisen keine übereinstimmenden Typen auf
 
@@ -28,9 +28,9 @@ Die in der Meldung aufgelisteten Eigenschaften haben nicht die gleichen Datentyp
 
 1. Notieren Sie die in der Meldung genannten Eigenschaften.
 
-2. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
+2. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
 
-3. Überprüfen Sie die **Zuordnungseigenschaften**, und wählen Sie Eigenschaften des gleichen Datentyps aus.
+3. Überprüfen Sie die **Zuordnungseigenschaften** , und wählen Sie Eigenschaften des gleichen Datentyps aus.
 
 4. Klicken Sie auf **OK**.
 

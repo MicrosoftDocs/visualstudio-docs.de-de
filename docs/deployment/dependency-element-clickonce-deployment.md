@@ -1,5 +1,7 @@
 ---
 title: '&lt;Abhängigkeits &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+description: Das Abhängigkeits Element identifiziert die Version der zu installierenden Anwendung und den Speicherort des Anwendungs Manifests.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928956"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382961"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Abhängigkeits &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert die Version der zu installierenden Anwendung und den Speicherort des Anwendungs Manifests.
@@ -95,7 +97,7 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 |`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|
 |`publicKeyToken`|Erforderlich. Gibt eine hexadezimale Zeichenfolge mit 16 Zeichen an, die die letzten 8 Bytes des SHA-1-Hashs des öffentlichen Schlüssels darstellt, unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel, der zum Signieren verwendet wird, muss 2048 Bit oder größer sein.|
 |`processorArchitecture`|Erforderlich. Gibt den Mikroprozessor an. Gültige Werte sind `x86` 32-Bit-Windows und `IA64` für 64-Bit-Windows.|
-|`Language`|Optional. Gibt die zwei teiligen Sprachcodes der Assembly an. Beispielsweise en-US, die für Englisch (USA) steht. Der Standardwert lautet `neutral`. Dieses Element befindet sich im- `asmv2` Namespace.|
+|`Language`|Optional. Gibt die zwei teiligen Sprachcodes der Assembly an. Beispielsweise en-US, die für Englisch (USA) steht. Der Standardwert ist `neutral`. Dieses Element befindet sich im- `asmv2` Namespace.|
 |`type`|Optional. Aus Gründen der Abwärtskompatibilität mit der parallelen Installation von Windows. Der einzige zulässige Wert ist `win32` .|
 
 ## <a name="hash"></a>hash
@@ -123,7 +125,7 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  Das- `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Bereitstellungs Manifeste verfügen in der Regel über ein einzelnes- `assemblyIdentity` Element, das den Namen und die Version des Anwendungs Manifests identifiziert.
 
 ## <a name="example"></a>Beispiel
@@ -180,6 +182,6 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 </dependency>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
 - [\<dependency> gewisses](../deployment/dependency-element-clickonce-application.md)

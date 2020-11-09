@@ -1,5 +1,7 @@
 ---
 title: '&lt;AssemblyIdentity- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+description: Das assemblyIdentity-Element ist bei der ClickOnce-Bereitstellung erforderlich. Sie enthält keine untergeordneten Elemente und verfügt über die in diesem Artikel beschriebenen Attribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929066"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383182"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;AssemblyIdentity- &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.
@@ -30,8 +32,8 @@ Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/inc
 
 ```xml
 
-      <assemblyIdentity  
-   name 
+      <assemblyIdentity  
+   name 
    version
    publicKeyToken
    processorArchitecture
@@ -66,6 +68,6 @@ Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/inc
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
 - [\<assemblyIdentity> gewisses](../deployment/assemblyidentity-element-clickonce-application.md)

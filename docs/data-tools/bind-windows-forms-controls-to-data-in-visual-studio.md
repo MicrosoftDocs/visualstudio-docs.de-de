@@ -1,5 +1,6 @@
 ---
 title: Binden von Windows Forms-Steuerelementen an Daten
+description: Binden von Windows Forms-Steuerelementen an Daten in Visual Studio, sodass Sie Daten für Benutzer Ihrer Anwendung anzeigen können.
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508547"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382376"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Binden von Windows Forms-Steuerelementen an Daten in Visual Studio
 
@@ -31,7 +32,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Windo
 ![Datenquellen-Zieh Vorgang](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Wenn das Fenster **Datenquellen** nicht sichtbar ist, können Sie es öffnen, indem **View**Sie  >  **andere Windows**  >  -**Datenquellen**anzeigen auswählen oder **UMSCHALT** + **alt** + **D**drücken. Sie müssen ein Projekt in Visual Studio geöffnet haben, um das Fenster **Datenquellen** anzuzeigen.
+> Wenn das Fenster **Datenquellen** nicht sichtbar ist, können Sie es öffnen, indem **View** Sie  >  **andere Windows**  >  - **Datenquellen** anzeigen auswählen oder **UMSCHALT** + **alt** + **D** drücken. Sie müssen ein Projekt in Visual Studio geöffnet haben, um das Fenster **Datenquellen** anzuzeigen.
 
 Vor dem Ziehen von Elementen können Sie den Steuer Elementtyp festlegen, an den die Bindung erfolgen soll. Abhängig davon, ob Sie die Tabelle selbst oder eine einzelne Spalte auswählen, werden unterschiedliche Werte angezeigt.  Sie können auch benutzerdefinierte Werte festlegen. Für eine **Tabelle bedeutet das** , dass jede Spalte an ein separates Steuerelement gebunden ist.
 
@@ -67,12 +68,12 @@ Sie können auch Elemente aus dem **Datenquellen** Fenster auf Steuerelemente zi
 
 ## <a name="bind-to-data-in-individual-controls"></a>Binden an Daten in einzelnen Steuerelementen
 
-Wenn Sie eine Datenquelle an **Details**binden, wird jede Spalte im DataSet an ein separates Steuerelement gebunden.
+Wenn Sie eine Datenquelle an **Details** binden, wird jede Spalte im DataSet an ein separates Steuerelement gebunden.
 
 ![Datenquelle an Details binden](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
-> Beachten Sie, dass Sie in der vorherigen Abbildung aus der Orders-Eigenschaft der Customers-Tabelle und nicht aus der Orders-Tabelle ziehen. Durch Binden an die- `Customer.Orders` Eigenschaft werden die in der **DataGridView** vorgenommenen Navigations Befehle sofort in den Details-Steuerelementen angezeigt. Wenn Sie die Tabelle "Orders" aus der Tabelle "Orders" gezogen haben, sind die Steuerelemente weiterhin an das DataSet gebunden, aber nicht mit der **DataGridView**synchronisiert.
+> Beachten Sie, dass Sie in der vorherigen Abbildung aus der Orders-Eigenschaft der Customers-Tabelle und nicht aus der Orders-Tabelle ziehen. Durch Binden an die- `Customer.Orders` Eigenschaft werden die in der **DataGridView** vorgenommenen Navigations Befehle sofort in den Details-Steuerelementen angezeigt. Wenn Sie die Tabelle "Orders" aus der Tabelle "Orders" gezogen haben, sind die Steuerelemente weiterhin an das DataSet gebunden, aber nicht mit der **DataGridView** synchronisiert.
 
 Die folgende Abbildung zeigt die standardmäßigen Daten gebundenen Steuerelemente, die dem Formular hinzugefügt werden, nachdem die Orders-Eigenschaft in der Customers-Tabelle an **Details** im **Datenquellen** Fenster gebunden ist.
 
@@ -80,7 +81,7 @@ Die folgende Abbildung zeigt die standardmäßigen Daten gebundenen Steuerelemen
 
 Beachten Sie auch, dass jedes Steuerelement über ein Smarttag verfügt. Dieses Tag ermöglicht Anpassungen, die nur für dieses Steuerelement gelten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binding controls to data in Visual Studio (Binden von Steuerelementen an Daten in Visual Studio)](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Datenbindung in Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

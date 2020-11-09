@@ -1,5 +1,7 @@
 ---
 title: '&lt;Assembly- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+description: Das Assembly-Element ist das Stamm Element und wird bei der ClickOnce-Bereitstellung benötigt. Das erste enthaltene Element muss ein assemblyIdentity-Element sein.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929073"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383234"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;Assembly- &gt; Element (ClickOnce-Bereitstellung)
 Das Element der obersten Ebene für das Bereitstellungs Manifest.
@@ -30,7 +32,7 @@ Das Element der obersten Ebene für das Bereitstellungs Manifest.
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```
@@ -62,6 +64,6 @@ Das Element der obersten Ebene für das Bereitstellungs Manifest.
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
 - [\<assembly> gewisses](../deployment/assembly-element-clickonce-application.md)

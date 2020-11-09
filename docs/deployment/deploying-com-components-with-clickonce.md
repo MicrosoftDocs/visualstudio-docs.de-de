@@ -1,5 +1,7 @@
 ---
 title: Bereitstellen von COM-Komponenten mit ClickOnce | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die erforderlichen Schritte zum Bereitstellen von .NET-Anwendungen in ClickOnce mit älteren COM-Komponenten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,24 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841034"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382922"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
 Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe. Komponenten müssen global registriert werden und können daher unerwünschte Nebeneffekte zwischen überlappenden Anwendungen verursachen. Diese Situation ist in .NET Framework Anwendungen in der Regel kein Problem, da Komponenten vollständig für eine Anwendung isoliert sind oder nebeneinander kompatibel sind. Mit Visual Studio können Sie isolierte COM-Komponenten auf dem Betriebssystem Windows XP oder höher bereitstellen.
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet einen einfachen und sicheren Mechanismus zum Bereitstellen von .NET-Anwendungen. Wenn in Ihren Anwendungen ältere COM-Komponenten verwendet werden, müssen Sie jedoch zusätzliche Schritte für die Bereitstellung ausführen. In diesem Thema wird beschrieben, wie Sie isolierte COM-Komponenten bereitstellen und auf native Komponenten verweisen (z. b. von Visual Basic 6,0 oder Visual C++).
 
- Weitere Informationen zum Bereitstellen isolierter COM-Komponenten finden Sie unter [vereinfachen der APP-Bereitstellung mit ClickOnce und com-Registrierung (com](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)).
+ Weitere Informationen zum Bereitstellen isolierter COM-Komponenten finden Sie unter [vereinfachen der APP-Bereitstellung mit ClickOnce und Registration-Free com](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
 
 ## <a name="registration-free-com"></a>COM ohne Registrierung
  Com (com) ist eine neue Technologie für die Bereitstellung und Aktivierung isolierter COM-Komponenten. Dabei werden die Typbibliothek-und Registrierungsinformationen aller Komponenten, die in der Regel in der Systemregistrierung installiert werden, in eine XML-Datei, die als Manifest bezeichnet wird, in demselben Ordner wie die Anwendung gespeichert.
 
- Das Isolieren einer COM-Komponente erfordert, dass Sie auf dem Computer des Entwicklers registriert ist, aber nicht auf dem Computer des Endbenutzers registriert werden muss. Um eine COM-Komponente zu isolieren, müssen Sie lediglich die **isolierte** Eigenschaft des Verweises auf " **true**" festlegen. Standardmäßig ist diese Eigenschaft auf **false**festgelegt, was darauf hinweist, dass Sie als registrierter com-Verweis behandelt werden soll. Wenn diese Eigenschaft auf **true**gesetzt ist, wird zum Zeitpunkt der Erstellung ein Manifest für diese Komponente generiert. Außerdem bewirkt dies, dass die entsprechenden Dateien während der Installation in den Anwendungsordner kopiert werden.
+ Das Isolieren einer COM-Komponente erfordert, dass Sie auf dem Computer des Entwicklers registriert ist, aber nicht auf dem Computer des Endbenutzers registriert werden muss. Um eine COM-Komponente zu isolieren, müssen Sie lediglich die **isolierte** Eigenschaft des Verweises auf " **true** " festlegen. Standardmäßig ist diese Eigenschaft auf **false** festgelegt, was darauf hinweist, dass Sie als registrierter com-Verweis behandelt werden soll. Wenn diese Eigenschaft auf **true** gesetzt ist, wird zum Zeitpunkt der Erstellung ein Manifest für diese Komponente generiert. Außerdem bewirkt dies, dass die entsprechenden Dateien während der Installation in den Anwendungsordner kopiert werden.
 
  Wenn der Manifest-Generator auf einen isolierten COM-Verweis stößt, listet er alle `CoClass` Einträge in der Typbibliothek der Komponente auf, wobei jeder Eintrag mit den entsprechenden Registrierungsdaten abgeglichen und Manifest-Definitionen für alle COM-Klassen in der Typbibliotheks Datei erzeugt werden.
 
@@ -57,14 +59,14 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
 ##### <a name="to-create-a-native-com-component"></a>So erstellen Sie eine Native COM-Komponente
 
-1. Wenn Sie Visual Basic 6,0 verwenden, klicken Sie im Menü **Datei** auf **neu**und dann auf **Projekt**.
+1. Wenn Sie Visual Basic 6,0 verwenden, klicken Sie im Menü **Datei** auf **neu** und dann auf **Projekt**.
 
 2. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** aus, und wählen Sie ein **ActiveX-DLL** -Projekt aus. Geben Sie im Feld **Name**`VB6Hello`ein.
 
     > [!NOTE]
     > Nur ActiveX-DLL-und ActiveX-Steuerelement-Projekttypen werden mit Registrierungs freiem com unterstützt. ActiveX-EXE-und ActiveX-Dokument Projekttypen werden nicht unterstützt.
 
-3. Doppelklicken Sie in **Projektmappen-Explorer**auf **Class1. vb** , um den Text-Editor zu öffnen.
+3. Doppelklicken Sie in **Projektmappen-Explorer** auf **Class1. vb** , um den Text-Editor zu öffnen.
 
 4. Fügen Sie in Class1. vb nach dem generierten Code für die-Methode den folgenden Code hinzu `New` :
 
@@ -83,11 +85,11 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>So erstellen Sie eine Windows-basierte Anwendung mithilfe einer COM-Komponente
 
-1. Wenn Sie Visual Basic verwenden, klicken Sie im Menü **Datei** auf **neu**und dann auf **Projekt**.
+1. Wenn Sie Visual Basic verwenden, klicken Sie im Menü **Datei** auf **neu** und dann auf **Projekt**.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** aus, und wählen Sie **Windows-Anwendung**aus. Geben Sie im Feld **Name**`RegFreeComDemo`ein.
+2. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** aus, und wählen Sie **Windows-Anwendung** aus. Geben Sie im Feld **Name**`RegFreeComDemo`ein.
 
-3. Klicken Sie in **Projektmappen-Explorer**auf die Schaltfläche **alle Dateien anzeigen** , um die Projekt Verweise anzuzeigen.
+3. Klicken Sie in **Projektmappen-Explorer** auf die Schaltfläche **alle Dateien anzeigen** , um die Projekt Verweise anzuzeigen.
 
 4. Klicken Sie mit der rechten Maustaste auf den Knoten **Verweise** , und wählen Sie im Kontextmenü **Verweis hinzufügen** aus.
 
@@ -95,9 +97,9 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
     Ein **VB6Hello** -Verweis wird in der Verweis Liste angezeigt.
 
-6. Zeigen Sie auf die **Toolbox**, wählen Sie ein **Schalt** Flächen-Steuerelement aus, und ziehen Sie es in das Formular **Form1** .
+6. Zeigen Sie auf die **Toolbox** , wählen Sie ein **Schalt** Flächen-Steuerelement aus, und ziehen Sie es in das Formular **Form1** .
 
-7. Legen Sie im Fenster **Eigenschaften** die **Text** -Eigenschaft der Schaltfläche auf **Hello**fest.
+7. Legen Sie im Fenster **Eigenschaften** die **Text** -Eigenschaft der Schaltfläche auf **Hello** fest.
 
 8. Doppelklicken Sie auf die Schaltfläche, um Handlercode hinzuzufügen, und fügen Sie in der Codedatei Code hinzu, damit der Handler wie folgt aussieht:
 
@@ -116,7 +118,7 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
 ##### <a name="to-isolate-a-com-component"></a>So isolieren Sie eine COM-Komponente
 
-1. Wählen Sie in **Projektmappen-Explorer**im Knoten **Verweise** den Verweis **VB6Hello** aus.
+1. Wählen Sie in **Projektmappen-Explorer** im Knoten **Verweise** den Verweis **VB6Hello** aus.
 
 2. Ändern Sie im Fenster **Eigenschaften** den Wert der **isolierten** Eigenschaft von **false** in **true**.
 
@@ -137,12 +139,12 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
 2. Geben Sie im Veröffentlichungs-Assistenten einen Speicherort auf dem Datenträger des lokalen Computers an, auf den Sie zugreifen und die veröffentlichten Dateien untersuchen können.
 
-3. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.
+3. Klicken Sie auf **Fertig stellen** , um die Anwendung zu veröffentlichen.
 
    Wenn Sie die veröffentlichten Dateien untersuchen, werden Sie feststellen, dass die Datei "sysmon. ocx" enthalten ist. Das-Steuerelement ist vollständig für diese Anwendung isoliert, was bedeutet, dass die Anwendung nicht beeinträchtigt werden kann, wenn der Computer des Endbenutzers eine andere Anwendung verwendet, die eine andere Version des-Steuer Elements verwendet.
 
 ## <a name="reference-native-assemblies"></a>Referenzieren von systemeigenen
- Visual Studio unterstützt Verweise auf systemeigene Visual Basic 6,0-oder C++-Assemblys. solche Verweise werden als Native Verweise bezeichnet. Sie können erkennen, ob ein Verweis System eigen ist, indem Sie überprüfen, ob seine **Dateityp** - **Eigenschaft auf System** eigen oder **ActiveX**festgelegt
+ Visual Studio unterstützt Verweise auf systemeigene Visual Basic 6,0-oder C++-Assemblys. solche Verweise werden als Native Verweise bezeichnet. Sie können erkennen, ob ein Verweis System eigen ist, indem Sie überprüfen, ob seine **Dateityp** - **Eigenschaft auf System** eigen oder **ActiveX** festgelegt
 
  Um einen nativen Verweis hinzuzufügen, verwenden Sie den Befehl **Verweis hinzufügen** , und navigieren Sie dann zum Manifest. Einige Komponenten platzieren das Manifest in der dll. In diesem Fall können Sie einfach die DLL selbst auswählen, und Visual Studio fügt sie als nativen Verweis hinzu, wenn Sie erkennt, dass die Komponente ein eingebettetes Manifest enthält. Visual Studio schließt auch automatisch alle abhängigen Dateien oder Assemblys ein, die im Manifest aufgelistet sind, wenn Sie sich im selben Ordner wie die Komponente befinden, auf die verwiesen wird.
 
@@ -171,5 +173,5 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
   Es gibt verschiedene Szenarien, in denen die com-Registrierung auf dem Computer des Entwicklers erforderlich ist, auch wenn die Bereitstellung der Anwendung keine Registrierung erfordert. Die- `Isolated` Eigenschaft erfordert, dass die COM-Komponente auf dem Computer des Entwicklers registriert wird, um das Manifest während des Builds automatisch zu generieren. Es gibt keine Registrierungs Erfassungs Funktionen, die die Selbstregistrierung während des Builds aufrufen. Außerdem werden alle Klassen, die nicht explizit in der Typbibliothek definiert sind, im Manifest nicht berücksichtigt. Wenn eine COM-Komponente mit einem bereits vorhandenen Manifest verwendet wird, z. b. ein nativer Verweis, muss die Komponente möglicherweise nicht zur Entwicklungszeit registriert werden. Die Registrierung ist jedoch erforderlich, wenn es sich bei der Komponente um ein ActiveX-Steuerelement handelt und Sie Sie in die **Toolbox** und den Windows Forms-Designer einschließen möchten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)

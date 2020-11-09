@@ -1,5 +1,6 @@
 ---
 title: Datenzugriffs Foren
+description: Hier finden Sie Unterstützung bei der Problembehandlung von Fehlern und Warnungen in den öffentlichen Foren. Anzeigen einer Liste von datenbezogenen Foren
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -224,12 +225,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8555a67bf9173767584c2bf37c1ed470548c4157
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587042"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382480"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Problembehandlung bei Datenzugriffs Fehlern in den Foren
 
@@ -251,6 +252,6 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
 
 Informationen zum Beheben von Problemen mit der Verbindung mit SQL Server finden Sie unter Problembehandlung [beim Herstellen einer Verbindung mit der SQL Server Datenbank-Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,5 +1,7 @@
 ---
 title: Auswählen einer Strategie für die ClickOnce-Bereitstellung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Strategien zum Bereitstellen einer ClickOnce-Anwendung und wie Sie eine Strategie auswählen, abhängig von der Art der Anwendung, die Sie bereitstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840858"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383169"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Auswählen einer Strategie für die ClickOnce-Bereitstellung
 Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung. Es hängt primär von der Art der bereitzustellenden Anwendung ab, welche Strategie Sie auswählen. Folgende Strategien sind verfügbar:
@@ -55,7 +57,7 @@ Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndpteccli
 
  Um diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu aktivieren, klicken Sie auf der Seite **Vom Web installieren oder ausführen** des Webpublishing-Assistenten auf **Anwendung nicht installieren**.
 
- Um diese Bereitstellungsstrategie manuell zu aktivieren, ändern Sie das **install**-Tag im Bereitstellungsmanifest. (Sein Wert kann **true** oder **false** sein. Verwenden Sie in *Mage.exe* die Option **Nur online** aus der Liste **Anwendungstyp**.)
+ Um diese Bereitstellungsstrategie manuell zu aktivieren, ändern Sie das **install** -Tag im Bereitstellungsmanifest. (Sein Wert kann **true** oder **false** sein. Verwenden Sie in *Mage.exe* die Option **Nur online** aus der Liste **Anwendungstyp**.)
 
 ## <a name="install-from-a-cd"></a>Installation von einer CD
  Bei dieser Strategie wird die Anwendung auf einem Wechseldatenträger bereitgestellt, z. B. auf einer CD-ROM oder einer DVD. Wenn ein Benutzer die Anwendung installiert, wird sie wie bei der vorausgegangenen Option installiert und gestartet und dem Menü **Start** sowie unter **Software** in der **Systemsteuerung** werden Elemente hinzugefügt.
@@ -64,14 +66,14 @@ Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndpteccli
 
  Um diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu aktivieren, klicken Sie auf der Seite **Installationsart** des Webpublishing-Assistenten auf **Von CD-ROM oder DVD-ROM**.
 
- Um diese Bereitstellungsstrategie manuell zu aktivieren, ändern Sie das **deploymentProvider**-Tag im Bereitstellungsmanifest. (In Visual Studio wird diese Eigenschaft als **Installations-URL** auf der Seite **Veröffentlichen** des Projekt-Designers verfügbar gemacht. In *Mage.exe* lautet sie **Startspeicherort**.)
+ Um diese Bereitstellungsstrategie manuell zu aktivieren, ändern Sie das **deploymentProvider** -Tag im Bereitstellungsmanifest. (In Visual Studio wird diese Eigenschaft als **Installations-URL** auf der Seite **Veröffentlichen** des Projekt-Designers verfügbar gemacht. In *Mage.exe* lautet sie **Startspeicherort**.)
 
 ## <a name="web-browser-support"></a>Webbrowserunterstützung
  Anwendungen, die auf .NET Framework 3.5 ausgerichtet sind, können mit jedem Browser installiert werden.
 
  Anwendungen, die auf .NET Framework 2.0 ausgerichtet sind, erfordern Internet Explorer.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,5 +1,7 @@
 ---
 title: Code Zugriffssicherheit für ClickOnce-Anwendungen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Code Zugriffssicherheit für ClickOnce-Anwendungen und über die Konfiguration der Code Zugriffs Sicherheits Berechtigungen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd2d9b6792cae002967c9000474a825bd3a0651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256a41138a3918dd61d8fd496465bb0230fb9362
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649275"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382571"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Codezugriffssicherheit für ClickOnce-Anwendungen
 ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssicherheits-Einschränkungen. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von ClickOnce-Anwendungen anwenden.
@@ -48,7 +50,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
   Um die Berechtigungen für eine ClickOnce-Anwendung einzuschränken, können Sie die Codezugriffsberechtigungen für Ihre Anwendung so ändern, dass sie die Zone anfordert, die am besten für die Berechtigungen geeignet ist, die Ihre Anwendung erfordert. In den meisten Fällen können Sie die Zone auswählen, aus der die Anwendung bereitgestellt wird. Ist Ihre Anwendung beispielsweise eine Unternehmensanwendung, können Sie die Zone **Lokales Intranet** verwenden. Ist Ihre Anwendung eine Internetanwendung, können Sie die Zone **Internet** verwenden.
 
 ## <a name="configure-security-permissions"></a>Konfigurieren von Sicherheits Berechtigungen
- Sie sollten Ihre ClickOnce-Anwendung immer so konfigurieren, dass sie die entsprechende Zone anfordert, um die Codezugriffsberechtigungen zu beschränken. Sie können Sicherheitsberechtigungen im **Projekt-Designer** auf der Seite **Sicherheit**konfigurieren.
+ Sie sollten Ihre ClickOnce-Anwendung immer so konfigurieren, dass sie die entsprechende Zone anfordert, um die Codezugriffsberechtigungen zu beschränken. Sie können Sicherheitsberechtigungen im **Projekt-Designer** auf der Seite **Sicherheit** konfigurieren.
 
  Die Seite **Sicherheit** im **Projekt-Designer** enthält das Kontrollkästchen **ClickOnce-Sicherheitseinstellungen aktivieren** . Wenn dieses Kontrollkästchen aktiviert ist, werden die Berechtigungsanforderungen für die Sicherheit dem Bereitstellungsmanifest der Anwendung hinzugefügt. Während der Installation wird der Benutzer aufgefordert, Berechtigungen zu erteilen, wenn die angeforderten Berechtigungen über die Standardberechtigungen für die Zone hinausgehen, aus der die Anwendung bereitgestellt wird. Weitere Informationen finden Sie unter Gewusst [wie: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md).
 
@@ -61,7 +63,7 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Debuggen einer Anwendung mit eingeschränkten Berechtigungen
  Als Entwickler führen Sie Ihren Entwicklungscomputer höchstwahrscheinlich mit "Voll vertrauenswürdig"-Berechtigungen aus. Aus diesem Grund sehen Sie beim Debuggen der Anwendung nicht die Sicherheitsausnahmen, die Benutzern angezeigt werden können, wenn diese die Anwendung mit eingeschränkten Berechtigungen ausführen.
 
- Um diese Ausnahmen zu erfassen, müssen Sie die Anwendung mit genau den Berechtigungen debuggen, die ein Endbenutzer hat. Debuggen mit eingeschränkten Berechtigungen kann im **Projekt-Designer** auf der Seite **Sicherheit**aktiviert werden.
+ Um diese Ausnahmen zu erfassen, müssen Sie die Anwendung mit genau den Berechtigungen debuggen, die ein Endbenutzer hat. Debuggen mit eingeschränkten Berechtigungen kann im **Projekt-Designer** auf der Seite **Sicherheit** aktiviert werden.
 
  Wenn Sie eine Anwendung mit eingeschränkten Berechtigungen debuggen, wird für jede Codesicherheitsanforderung, die nicht auf der Seite **Sicherheit** aktiviert ist, eine Ausnahme ausgelöst. Es wird eine Ausnahmen-Hilfe angezeigt, die Vorschläge bereitstellt, wie Sie Ihren Code ändern sollten, um die Ausnahme zu vermeiden.
 
@@ -90,11 +92,11 @@ ClickOnce-Anwendungen basieren auf .NET Framework und unterliegen Codezugriffssi
 
   Im Dialogfeld **Erweiterte Sicherheitseinstellungen** ist das Kontrollkästchen **Diese Anwendung mit dem ausgewählten Berechtigungssatz debuggen** ausgewählt und deaktiviert. Ursache hierfür ist, dass für im Browser gehostete Anwendungen Debuggen in einer Zone nicht deaktiviert werden kann.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Gewusst wie: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](securing-clickonce-applications.md)
-- [Übersicht über das Bereitstellen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
+- [Übersicht über bereit Stellungen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
 - [Seite "Sicherheit", Projekt-Designer](../ide/reference/security-page-project-designer.md)

@@ -1,5 +1,7 @@
 ---
 title: '&lt;Abhängigkeits &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+description: Das Abhängigkeits Element identifiziert eine Plattform-oder Assemblyabhängigkeit, die für die Anwendung erforderlich ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa949aa2f8e718ab0209c54a0ea2160c042a4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7896fa2d39bafc793c5fd74f66f4991cf5e8461
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71252494"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382948"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;Abhängigkeits &gt; Element (ClickOnce-Anwendung)
 Identifiziert eine Plattform-oder Assemblyabhängigkeit, die für die Anwendung erforderlich ist.
@@ -166,7 +168,7 @@ Identifiziert eine Plattform-oder Assemblyabhängigkeit, die für die Anwendung 
 ### <a name="dsigdigestvalue"></a>dsig:DigestValue
  Das- `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Alle von der Anwendung verwendeten Assemblys müssen über ein entsprechendes- `dependency` Element verfügen. Abhängige Assemblys enthalten keine Assemblys, die im globalen Assemblycache als Plattformassemblys vorinstalliert werden müssen.
 
 ## <a name="example"></a>Beispiel

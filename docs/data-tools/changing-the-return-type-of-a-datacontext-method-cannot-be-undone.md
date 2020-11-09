@@ -1,6 +1,6 @@
 ---
 title: Änderungen des Rückgabe Typs können nicht rückgängig gemacht werden
-description: Das Ändern des Rückgabetyps einer DataContext-Methode kann nicht rückgängig gemacht werden.
+description: Eine Änderung des Rückgabetyps einer DataContext-Methode kann nicht rückgängig gemacht werden. Anzeigen von Informationen zu dieser Visual Studio-objektrelationaler Designer Meldung (O/R-Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc0c3d6c1ddeab3ee92414e1264912f8b9d24b22
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c0f3728056f2703dc1c9553a4a165f9654ce5112
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036469"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381817"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Das Ändern des Rückgabetyps einer DataContext-Methode kann nicht rückgängig gemacht werden.
 
@@ -35,10 +35,10 @@ Der Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ist je nachde
 
 1. Wählen Sie die <xref:System.Data.Linq.DataContext>-Methode im [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] aus, und löschen Sie sie.
 
-2. Suchen Sie das Element im **Server-Explorer/Datenbank-Explorer**, und ziehen Sie es auf den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+2. Suchen Sie das Element im **Server-Explorer/Datenbank-Explorer** , und ziehen Sie es auf den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
     Eine <xref:System.Data.Linq.DataContext>-Methode mit dem ursprünglichen Standardrückgabetyp wird erstellt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,5 +1,7 @@
 ---
 title: ClickOnce-Referenz | Microsoft-Dokumentation
+description: Verwenden Sie diese Referenz Artikel, um die Struktur der XML-Dateien zu verstehen, die zum Darstellen von ClickOnce-Anwendungen verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900325"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383026"
 ---
 # <a name="clickonce-reference"></a>ClickOnce-Referenz
 Die folgenden Seiten beschreiben die Struktur der XML-Dateien, die zum Darstellen von ClickOnce-Anwendungen verwendet werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
- [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
  Listet die Elemente und Attribute auf, die ein Anwendungs Manifest bilden, und beschreibt diese.
 

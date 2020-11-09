@@ -1,5 +1,7 @@
 ---
 title: '&lt;Deployment- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+description: Das Bereitstellungs Element identifiziert die Attribute, die für die Bereitstellung von Updates und das verfügbar machen des Systems verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988ce0859ab24377395cc4077f9e6fa42e0487a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70887855"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382857"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Deployment- &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.
@@ -100,7 +102,7 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 |------------| - |
 | `codebase` | Erforderlich. Identifiziert den Speicherort als Uniform Resource Identifier (URI) des Bereitstellungs Manifests, das zum Aktualisieren der Anwendung verwendet wird [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Dieses Element ermöglicht außerdem das Weiterleiten von Update-Speicherorten für CD-basierte Installationen. Muss ein gültiger URI sein. |
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Sie können Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung so konfigurieren, dass Sie beim Start nach Updates sucht, nach Updates nach dem Start Suchen oder nie nach Updates sucht. Um beim Start nach Updates zu suchen, stellen Sie sicher, dass das- `beforeApplicationStartup` Element unter dem-Element vorhanden ist `update` . Stellen Sie sicher, dass das `expiration` -Element unter dem `update` -Element vorhanden ist und dass Aktualisierungsintervalle bereitgestellt werden, um nach dem Start nach Updates zu suchen.
 
  Entfernen Sie das-Element, um die Überprüfung auf Updates zu deaktivieren `subscription` . Wenn Sie im Bereitstellungs Manifest angeben, dass keine Updates überprüft werden sollen, können Sie mithilfe der-Methode trotzdem manuell nach Updates suchen <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> .
@@ -121,5 +123,5 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
   </deployment>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)

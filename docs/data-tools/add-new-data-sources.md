@@ -1,5 +1,6 @@
 ---
 title: Hinzufügen neuer Datenquellen
+description: Fügen Sie neue Datenquellen in Visual Studio hinzu. Eine Datenquelle ist ein .NET-Objekt, das eine Verbindung mit einem Datenspeicher herstellt und die Daten für eine .NET-Anwendung verfügbar macht.
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283046"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382116"
 ---
 # <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 
@@ -51,7 +52,7 @@ Sie erstellen und bearbeiten Datenquellen mithilfe des **Assistenten zum Konfigu
 Nachdem Sie eine Datenquelle erstellt haben, wird Sie im Fenster **Datenquellen** Tool angezeigt.
 
 > [!TIP]
-> Um das Fenster **Datenquellen** zu öffnen, stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann **UMSCHALT** + **alt** + **D** , oder wählen Sie **View**  >  **andere Windows**-  >  **Datenquellen**anzeigen aus.
+> Um das Fenster **Datenquellen** zu öffnen, stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann **UMSCHALT** + **alt** + **D** , oder wählen Sie **View**  >  **andere Windows** -  >  **Datenquellen** anzeigen aus.
 
 Sie können eine Datenquelle aus dem **Datenquellen** Fenster auf eine Formular Entwurfs Oberfläche oder ein Steuerelement ziehen. Dies bewirkt, dass Code Bausteine generiert werden, in dem die Daten aus dem Datenspeicher angezeigt werden.
 
@@ -65,13 +66,13 @@ Sie können ein DataSet oder ein Entity Framework Modell erstellen, das als Date
 
 ### <a name="dataset"></a>Dataset
 
-Um ein DataSet als Datenquelle zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus, indem Sie **Projekt**  >  **neue Datenquelle hinzufügen**auswählen. Wählen Sie den Daten Quellentyp **Datenbank** aus, und befolgen Sie die Anweisungen, um entweder eine neue oder eine vorhandene Datenbankverbindung oder eine Datenbankdatei anzugeben.
+Um ein DataSet als Datenquelle zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus, indem Sie **Projekt**  >  **neue Datenquelle hinzufügen** auswählen. Wählen Sie den Daten Quellentyp **Datenbank** aus, und befolgen Sie die Anweisungen, um entweder eine neue oder eine vorhandene Datenbankverbindung oder eine Datenbankdatei anzugeben.
 
 ### <a name="entity-classes"></a>Entitätsklassen
 
 So erstellen Sie ein Entity Framework Modell als Datenquelle:
 
-1. Führen Sie den **Entity Data Model Assistenten** aus, um die Entitäts Klassen zu erstellen. Wählen Sie **Project**  >  **Add New Item**  >  **ADO.NET Entity Data Model**aus.
+1. Führen Sie den **Entity Data Model Assistenten** aus, um die Entitäts Klassen zu erstellen. Wählen Sie **Project**  >  **Add New Item**  >  **ADO.NET Entity Data Model** aus.
 
    ![Neues Entity Framework Modell-Projekt Element](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
@@ -85,7 +86,7 @@ So erstellen Sie ein Entity Framework Modell als Datenquelle:
 
 ## <a name="data-source-for-a-service"></a>Datenquelle für einen Dienst
 
-Um eine Datenquelle aus einem Dienst zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus, und wählen Sie den Daten Quellentyp **Dienst** aus. Dies ist nur eine Verknüpfung zum Dialogfeld **Dienstverweis hinzufügen** , auf das Sie auch zugreifen können, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und **Dienst Verweis hinzufügen**auswählen.
+Um eine Datenquelle aus einem Dienst zu erstellen, führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus, und wählen Sie den Daten Quellentyp **Dienst** aus. Dies ist nur eine Verknüpfung zum Dialogfeld **Dienstverweis hinzufügen** , auf das Sie auch zugreifen können, indem Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt klicken und **Dienst Verweis hinzufügen** auswählen.
 
 Wenn Sie eine Datenquelle mit einem Dienst erstellen, fügt Visual Studio einen Dienstverweis auf das Projekt hinzu. Visual Studio erstellt auch Proxy Objekte, die den vom Dienst zurückgegebenen Objekten entsprechen. Zum Beispiel wird ein Dienst, der ein Dataset zurückgibt, im Projekt als Dataset dargestellt. Ein Dienst, der einen bestimmten Typ zurückgibt, wird in dem Projekt als der zurückgegebene Typ dargestellt.
 
@@ -95,7 +96,7 @@ Sie können eine Datenquelle mit den folgenden Diensttypen erstellen:
 
 - [WCF-Dienste](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- Webdienste
+- WEB SERVICES
 
     > [!NOTE]
     > Die Elemente, die im **Datenquellen** Fenster angezeigt werden, sind abhängig von den Daten, die vom Dienst zurückgegeben werden. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Wenn der Dienst beispielsweise ein nicht typisiertes DataSet zurückgibt, werden beim Beenden des Assistenten keine Elemente im **Datenquellen** Fenster angezeigt. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
@@ -116,8 +117,8 @@ Wenn Sie an ein Objekt in einer Assembly oder einem Projekt binden möchten, das
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Datenquelle für eine SharePoint-Liste
 
-Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über WCF Data Services verfügbar. Daher ist das Erstellen einer SharePoint-Datenquelle mit dem Erstellen einer Datenquelle aus einem Dienst identisch. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen. Hierfür ist das SharePoint SDK erforderlich.
+Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über WCF Data Services verfügbar. Daher ist das Erstellen einer SharePoint-Datenquelle mit dem Erstellen einer Datenquelle aus einem Dienst identisch. Durch Auswahl des **SharePoint** -Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen. Hierfür ist das SharePoint SDK erforderlich.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

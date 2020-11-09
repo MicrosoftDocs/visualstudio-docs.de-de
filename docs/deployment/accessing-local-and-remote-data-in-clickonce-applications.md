@@ -1,5 +1,6 @@
 ---
 title: Zugreifen auf lokale & Remote Daten (ClickOnce-Apps)
+description: Erfahren Sie mehr über die verschiedenen Optionen, die ClickOnce zum Lesen und Schreiben von Daten bietet, sowohl lokal als auch Remote.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810470"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383260"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.
@@ -38,7 +39,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 ### <a name="clickonce-data-directory"></a>ClickOnce-Datenverzeichnis
  Jede auf einem lokalen Computer installierte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung verfügt über ein Datenverzeichnis, das im Ordner "Dokumente und Einstellungen" des Benutzers gespeichert ist. Jede in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung enthaltene und als "Daten"-Datei gekennzeichnete Datei wird in dieses Verzeichnis kopiert, wenn eine Anwendung installiert wird. Datendateien können einen beliebigen Dateityp aufweisen. Zu den am häufigsten verwendeten gehören Text, XML und Datenbankdateien, z. B. Microsoft Access-MDB-Dateien.
 
- Das Datenverzeichnis ist für anwendungsverwaltete Daten konzipiert, d. h. für Daten, die die Anwendung explizit speichert und verwaltet. Alle statischen, unabhängigen Dateien, die im Anwendungsmanifest nicht als "Daten"gekennzeichnet sind, befinden sich dagegen im Anwendungsverzeichnis. Dieses Verzeichnis ist der Ort, an dem sich die ausführbaren Dateien (*.exe*) und die Assemblys der Anwendung befinden.
+ Das Datenverzeichnis ist für anwendungsverwaltete Daten konzipiert, d. h. für Daten, die die Anwendung explizit speichert und verwaltet. Alle statischen, unabhängigen Dateien, die im Anwendungsmanifest nicht als "Daten"gekennzeichnet sind, befinden sich dagegen im Anwendungsverzeichnis. Dieses Verzeichnis ist der Ort, an dem sich die ausführbaren Dateien ( *.exe* ) und die Assemblys der Anwendung befinden.
 
 > [!NOTE]
 > Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um durch den Endbenutzer verwaltete Daten, wie z.B. Dokumente, zu speichern.

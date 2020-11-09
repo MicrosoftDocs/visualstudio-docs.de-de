@@ -1,5 +1,7 @@
 ---
 title: '&lt;compatibleframe- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+description: Das compatibleframe-Element identifiziert die Versionen der .NET Framework, in denen diese Anwendung installiert und ausgeführt werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746030"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383065"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleframe- &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann.
@@ -31,12 +33,12 @@ Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung instal
 
 ```xml
 <compatibleFrameworks
-      SupportUrl> 
+      SupportUrl> 
    <framework
       targetVersion
       profile
       supportedRuntime
-   /> 
+   /> 
 </ compatibleFrameworks>
 ```
 
@@ -45,14 +47,14 @@ Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung instal
 
  In der folgenden Tabelle werden die Attribute aufgelistet, die das- `compatibleFrameworks` Element unterstützt.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`S` `upportUrl`|Optional. Gibt eine URL an, unter der die bevorzugte kompatible .NET Framework Version heruntergeladen werden kann.|
 
 ## <a name="framework"></a>Framework
  Erforderlich. In der folgenden Tabelle werden die Attribute aufgelistet, die das- `framework` Element unterstützt.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`targetVersion`|Erforderlich. Gibt die Versionsnummer des Ziel .NET Framework an.|
 |`profile`|Erforderlich. Gibt das Profil des Ziel .NET Framework an.|
@@ -72,5 +74,5 @@ Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung instal
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)

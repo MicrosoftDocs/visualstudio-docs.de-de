@@ -1,5 +1,6 @@
 ---
 title: Arbeiten mit Daten in Visual Studio
+description: Arbeiten mit Daten in Visual Studio. Erstellen Sie apps, die eine Verbindung mit Daten in anderen Datenbankprodukten oder-Diensten über lokale Computer, LANs oder öffentliche oder Private Clouds herstellen.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959821"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382090"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Arbeiten mit Daten in Visual Studio
 
@@ -70,13 +71,13 @@ Die meisten anderen in diesem Abschnitt aufgeführten SQL-und nosql-Daten Bankpr
 
 ::: moniker range="vs-2017"
 
-Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio unter**Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für**Projekt Mappe verwalten). Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote im [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen **oder zu Extras**  >  **Erweiterungen und Updates** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio unter **Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für** Projekt Mappe verwalten). Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote im [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen **oder zu Extras**  >  **Erweiterungen und Updates** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio unter**Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für**Projekt Mappe verwalten). Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote im [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen oder zu Erweiterungen Erweiterungen **Extensions**  >  **Verwalten** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio unter **Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für** Projekt Mappe verwalten). Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote im [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen oder zu Erweiterungen Erweiterungen **Extensions**  >  **Verwalten** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
@@ -135,7 +136,7 @@ Installieren [der Python-Unterstützung in Visual Studio](../python/overview-of-
 - [Django und MySQL in Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
 - Arbeiten mit [blobdateien](/azure/storage/blobs/storage-quickstart-blobs-python), [Dateien](/azure/storage/files/storage-python-how-to-use-file-storage), [Warteschlangen](/azure/storage/queues/storage-python-how-to-use-queue-storage)und [Tabellen (Cosmo DB)](/azure/cosmos-db/table-storage-how-to-use-python).
 
-## <a name="related-topics"></a>Zugehörige Themen
+## <a name="related-topics"></a>Verwandte Themen
 
 [Microsoft Ki-Plattform](https://azure.microsoft.com/overview/ai-platform/?v=17.42w) &mdash; Bietet eine Einführung in die Microsoft Intelligent Cloud, einschließlich der Cortana Analytics Suite und der Unterstützung für Internet der Dinge.
 
