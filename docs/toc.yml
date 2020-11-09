@@ -414,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: Feld kapseln
                   href: ide/reference/encapsulate-field.md
+                - name: Extrahieren einer Basisklasse
+                  href: ide/reference/extract-base-class.md
                 - name: Extrahieren einer Schnittstelle
                   href: ide/reference/extract-interface.md
                 - name: Methode extrahieren
                   href: ide/reference/extract-method.md
                 - name: Extrahieren einer lokalen Funktion
                   href: ide/reference/extract-local-function.md
+                - name: Inlinemethode
+                  href: ide/reference/inline-method.md
                 - name: Einbetten einer temporären Variablen
                   href: ide/reference/inline-temporary-variable.md
                 - name: IntelliSense-Vervollständigung für nicht importierte Typen und Erweiterungsmethoden
@@ -428,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Umkehren von if-Anweisungen
                   href: ide/reference/invert-if-statement.md
-                - name: Refactoringoptionen für statische lokale Funktionen
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: Festlegen einer Klasse als abstrakt
+                  href: ide/reference/make-class-abstract.md
                 - name: Festlegen eines Members als statisch
                   href: ide/reference/make-member-static.md
                 - name: Verschieben der Deklaration in Verweisnähe
@@ -456,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: Teilen oder Zusammenführen von if-Anweisungen
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: Refactoringoptionen für statische lokale Funktionen
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Synchronisieren von Namespace und Ordnername
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: Synchronisierung von Typ und Dateinamen
@@ -464,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: Verwenden von Lambdaausdrücken oder Blocktext
                   href: ide/reference/use-block-body-lambda.md
+                - name: Verwenden von „new()“
+                  href: ide/reference/use-new.md
+                - name: Verwenden eines Musterabgleichs
+                  href: ide/reference/use-pattern-matching.md
                 - name: 'Nicht verwendete Wertzuweisungen, Variablen und Parameter'
                   href: ide/reference/unused-values-parameters.md
                 - name: 'Umschließen, Einziehen und Ausrichten von Refactorings'
@@ -966,7 +976,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Referenz
+- name: Verweis
   items:
     - name: Tastenkombinationen
       items:
