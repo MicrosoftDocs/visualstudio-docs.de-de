@@ -1,5 +1,6 @@
 ---
 title: Hinzufügen von Validierungen zu einem N-Tier-Dataset
+description: Hinzufügen von Validierungen zu einem n-Tier-DataSet in Visual Studio Überprüfen Sie die Änderungen an einzelnen Spalten oder ganzen Zeilen.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283020"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382129"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Hinzufügen von Validierungen zu einem N-Tier-Dataset
 Validierungen werden einem DataSet, das in eine N-Tier-Projektmappe aufgeteilt ist, grundsätzlich auf die gleiche Art hinzugefügt wie einem DataSet in einer einzelnen Datei (in einem einzelnen Projekt). Es wird empfohlen, die Datenvalidierung während des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses und/oder des <xref:System.Data.DataTable.RowChanging>-Ereignisses einer Datentabelle auszuführen.
@@ -34,7 +35,7 @@ Das DataSet stellt die Funktionalität zum Erstellen von partiellen Klassen bere
 > Vom DataSet-Designer werden in C# nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. Sie müssen manuell einen Ereignishandler erstellen und den Ereignishandler an das zugrunde liegende Ereignis anschließen. In den folgenden Prozeduren wird beschrieben, wie die erforderlichen Ereignishandler sowohl in Visual Basic als auch in c# erstellt werden.
 
 ## <a name="validate-changes-to-individual-columns"></a>Änderungen an einzelnen Spalten überprüfen
-Validieren Sie die Werte in einzelnen Spalten durch Behandeln des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses. Das- <xref:System.Data.DataTable.ColumnChanging> Ereignis wird ausgelöst, wenn ein Wert in einer Spalte geändert wird. Erstellen Sie einen Ereignishandler für das- <xref:System.Data.DataTable.ColumnChanging> Ereignis, indem Sie in der **DataSet-Designer**auf die gewünschte Spalte doppelklicken.
+Validieren Sie die Werte in einzelnen Spalten durch Behandeln des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses. Das- <xref:System.Data.DataTable.ColumnChanging> Ereignis wird ausgelöst, wenn ein Wert in einer Spalte geändert wird. Erstellen Sie einen Ereignishandler für das- <xref:System.Data.DataTable.ColumnChanging> Ereignis, indem Sie in der **DataSet-Designer** auf die gewünschte Spalte doppelklicken.
 
 Beim ersten Doppelklicken auf eine Spalte wird vom Designer ein Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis erstellt. `If...Then`Außerdem wird eine-Anweisung erstellt, die auf die jeweilige Spalte prüft. Der folgende Code wird beispielsweise generiert, wenn Sie auf die Spalte "Requirements **ddate** " in der Tabelle "Northwind Orders" doppelklicken:
 
@@ -53,7 +54,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>So fügen Sie Validierungen bei Änderung einzelner Spaltenwerte hinzu
 
-1. Öffnen Sie das DataSet, indem Sie in **Projektmappen-Explorer**auf die *XSD* -Datei doppelklicken. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Datasets in der DataSet-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Öffnen Sie das DataSet, indem Sie in **Projektmappen-Explorer** auf die *XSD* -Datei doppelklicken. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Datasets in der DataSet-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Doppelklicken Sie auf die zu validierende Spalte. Durch diese Aktion wird der <xref:System.Data.DataTable.ColumnChanging>-Ereignishandler erstellt.
 
@@ -106,11 +107,11 @@ End Sub
 
 Wenn die Bestellungen eingegeben werden, wird durch die Validierung sichergestellt, dass keine Bestellung mit einem RequiredDate eingegeben wird, das vor dem OrderDate liegt oder mit diesem übereinstimmt. In diesem Beispiel müssen die Werte für die Spalten RequiredDate und OrderDate verglichen werden, es ist daher nicht sinnvoll, eine einzelne Spaltenänderung zu überprüfen.
 
-Erstellen Sie einen Ereignishandler für das- <xref:System.Data.DataTable.RowChanging> Ereignis, indem Sie auf den Tabellennamen in der Titelleiste der Tabelle auf dem **DataSet-Designer**doppelklicken.
+Erstellen Sie einen Ereignishandler für das- <xref:System.Data.DataTable.RowChanging> Ereignis, indem Sie auf den Tabellennamen in der Titelleiste der Tabelle auf dem **DataSet-Designer** doppelklicken.
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>So fügen Sie Validierungen bei Änderung ganzer Zeilen hinzu
 
-1. Öffnen Sie das DataSet, indem Sie in **Projektmappen-Explorer**auf die *XSD* -Datei doppelklicken. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Datasets in der DataSet-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Öffnen Sie das DataSet, indem Sie in **Projektmappen-Explorer** auf die *XSD* -Datei doppelklicken. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Datasets in der DataSet-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Doppelklicken Sie im Designer auf die Titelleiste der Datentabelle.
 
@@ -166,7 +167,7 @@ Erstellen Sie einen Ereignishandler für das- <xref:System.Data.DataTable.RowCha
     }
     ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Exemplarische Vorgehensweise: Erstellen einer N-Tier-Daten Anwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

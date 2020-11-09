@@ -1,5 +1,7 @@
 ---
 title: So führt ClickOnce Anwendungs Updates aus | Microsoft-Dokumentation
+description: Erfahren Sie, wie ClickOnce Datei Versionsinformationen verwendet, um zu entscheiden, ob die Anwendung aktualisiert werden soll. ClickOnce verwendet dateipatching, um Redundanz beim herunterladen zu vermeiden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9217558c68d47ef8f2bf34b10db16463ee76f857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900021"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382666"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Ausführung von Anwendungsupdates durch ClickOnce
 ClickOnce verwendet die Datei Versionsinformationen, die im Bereitstellungs Manifest einer Anwendung angegeben sind, um zu entscheiden, ob die Anwendungs Dateien aktualisiert werden sollen. Nachdem ein Update begonnen hat, verwendet ClickOnce eine Technik namens *dateipatching* , um das redundante herunterladen von Anwendungs Dateien zu vermeiden.
@@ -35,6 +37,6 @@ ClickOnce verwendet die Datei Versionsinformationen, die im Bereitstellungs Mani
 
  Das Patchen von Dateien funktioniert nicht für Dateien, die als Daten gekennzeichnet sind und im Datenverzeichnis gespeichert werden. Diese werden immer heruntergeladen, unabhängig von der Hash Signatur der Datei. Weitere Informationen zum Datenverzeichnis finden Sie unter [zugreifen auf lokale und Remote Daten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

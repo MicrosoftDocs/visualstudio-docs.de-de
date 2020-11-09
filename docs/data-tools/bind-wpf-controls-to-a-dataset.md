@@ -1,5 +1,6 @@
 ---
 title: Binden von WPF-Steuerelementen an ein Dataset
+description: Erstellen Sie eine WPF-Anwendung in Visual Studio, die Daten gebundene Steuerelemente enthält, die an Produktdaten Sätze gebunden sind, die in einem DataSet gekapselt sind.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2344c9331b8fe253077b6bbc8c3cdba01ea9731
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1922df10e331627b0695fb6ea03f4a5101ea0fd1
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713489"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382038"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
@@ -62,11 +63,11 @@ Erstellen Sie ein neues WPF-Projekt, um Produktdaten Sätze anzuzeigen.
 
 2. Wählen Sie im Menü **Datei** die Option **Neues** > **Projekt** aus.
 
-3. Erweitern Sie **Visual Basic** oder** Visual C#**, und wählen Sie dann **Windows** aus.
+3. Erweitern Sie **Visual Basic** oder **Visual C#** , und wählen Sie dann **Windows** aus.
 
 4. Wählen Sie die Projektvorlage **WPF-App** aus.
 
-5. Geben Sie im Feld **Name den Namen** **AdventureWorksProductsEditor** ein, und wählen Sie dann **OK**aus.
+5. Geben Sie im Feld **Name den Namen** **AdventureWorksProductsEditor** ein, und wählen Sie dann **OK** aus.
 
 ::: moniker-end
 
@@ -102,11 +103,11 @@ Ehe Sie datengebundene Steuerelemente erstellen können, müssen Sie ein Datenmo
 
    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „AdventureWorksLT“ verfügbar ist, wählen Sie diese aus, und klicken Sie anschließend auf **Weiter**.
 
-   - Klicken Sie **Neue Verbindung**, und erstellen Sie eine Verbindung zur Datenbank AdventureWorksLT.
+   - Klicken Sie **Neue Verbindung** , und erstellen Sie eine Verbindung zur Datenbank AdventureWorksLT.
 
-6. Wählen Sie auf der Seite **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern** das Kontrollkästchen **Ja, Verbindung speichern unter**, und klicken Sie anschließend auf **Weiter**.
+6. Wählen Sie auf der Seite **Verbindungszeichenfolge in der Anwendungskonfigurationsdatei speichern** das Kontrollkästchen **Ja, Verbindung speichern unter** , und klicken Sie anschließend auf **Weiter**.
 
-7. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Punkt **Tabellen**, und wählen Sie dann die Tabelle **Product (SalesLT)** aus.
+7. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Punkt **Tabellen** , und wählen Sie dann die Tabelle **Product (SalesLT)** aus.
 
 8. Klicken Sie auf **Fertig stellen**.
 
@@ -122,7 +123,7 @@ Verwenden Sie zum Füllen des Datasets die `Fill`-Methode des `ProductTableAdapt
 
      Der DataSet-Designer wird geöffnet.
 
-2. Klicken Sie die Abfrage **Fill**, **GetData()** mit der rechten Maustaste, und wählen Sie **Konfigurieren** aus.
+2. Klicken Sie die Abfrage **Fill** , **GetData()** mit der rechten Maustaste, und wählen Sie **Konfigurieren** aus.
 
      Der **TableAdapter-Konfigurations-Assistent** wird geöffnet.
 
@@ -140,7 +141,7 @@ Fügen Sie dem Fenster eine Reihe von Schaltflächen hinzu, indem Sie XAML im WP
 
 1. Doppelklicken Sie im **Projektmappen-Explorer***MainWindow.xaml*.
 
-    Das Fenster wird im **WPF-Designer**geöffnet.
+    Das Fenster wird im **WPF-Designer** geöffnet.
 
 2. Fügen Sie in der [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]-Ansicht des Designers den folgenden Code zwischen den `<Grid>`-Tags hinzu:
 
@@ -160,11 +161,11 @@ Fügen Sie dem Fenster eine Reihe von Schaltflächen hinzu, indem Sie XAML im WP
 
 Erstellen Sie Steuerelemente, die Kundendaten Sätze anzeigen, indem `Product` Sie die Tabelle aus dem **Datenquellen** Fenster in den WPF-Designer ziehen.
 
-1. Klicken Sie im **Datenquellenfenster** das Dropdownmenü für den Knoten **Product**, und klicken Sie auf **Details**.
+1. Klicken Sie im **Datenquellenfenster** das Dropdownmenü für den Knoten **Product** , und klicken Sie auf **Details**.
 
-2. Erweitern Sie den **Product**-Knoten.
+2. Erweitern Sie den **Product** -Knoten.
 
-3. In diesem Beispiel werden einige Felder nicht angezeigt. Klicken Sie also das Dropdownmenü neben den folgenden Knoten, und wählen Sie **Keine**:
+3. In diesem Beispiel werden einige Felder nicht angezeigt. Klicken Sie also das Dropdownmenü neben den folgenden Knoten, und wählen Sie **Keine** :
 
     - ProductCategoryID
 
@@ -176,10 +177,10 @@ Erstellen Sie Steuerelemente, die Kundendaten Sätze anzeigen, indem `Product` S
 
     - ModifiedDate
 
-4. Klicken Sie auf das Dropdownmenü neben dem Knoten-**ThumbNailPhoto**, und wählen Sie **Bild**.
+4. Klicken Sie auf das Dropdownmenü neben dem Knoten- **ThumbNailPhoto** , und wählen Sie **Bild**.
 
     > [!NOTE]
-    > Standardmäßig haben Elemente im Fenster **Datenquellen**, die Bilder repräsentieren, als Steuerelementsatz **Kein** ausgewählt. Dies ist deshalb so, weil Bilder als Bytearrays in Datenbanken gespeichert werden und alles enthalten können, von einer einfachen Array an Bytes bis zur ausführbaren Datei einer großen Anwendung.
+    > Standardmäßig haben Elemente im Fenster **Datenquellen** , die Bilder repräsentieren, als Steuerelementsatz **Kein** ausgewählt. Dies ist deshalb so, weil Bilder als Bytearrays in Datenbanken gespeichert werden und alles enthalten können, von einer einfachen Array an Bytes bis zur ausführbaren Datei einer großen Anwendung.
 
 5. Ziehen Sie aus dem Fenster **Datenquellen** den Knoten **Product** auf das Raster unter der Zeile, in der die Schaltflächen sind.
 
@@ -258,7 +259,7 @@ Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie 
 
 - Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Anzeige zugehöriger Daten (das heißt, Daten in einer Beziehung zwischen übergeordneten und untergeordneten Daten) in WPF-Steuerelementen verwenden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Anzeigen verwandter Daten in einer WPF-App](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

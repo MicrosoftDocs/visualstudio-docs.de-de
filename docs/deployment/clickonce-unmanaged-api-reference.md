@@ -1,5 +1,7 @@
 ---
 title: Referenz zur nicht verwalteten API für ClickOnce | Microsoft-Dokumentation
+description: Hier finden Sie Informationen zu den nicht verwalteten ClickOnce-APIs von dfshim.dll, einschließlich "CleanOnlineAppCache", "getdeploymentdatafrommanifest" und "launchapplication".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900272"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382610"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referenz zur nicht verwalteten API für ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nicht verwaltete öffentliche APIs aus dfshim.dll.
@@ -44,7 +46,7 @@ ms.locfileid: "62900272"
 ### <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein HRESULT zurückgegeben, das den Fehler darstellt. Wenn eine verwaltete Ausnahme auftritt, gibt 0x80020009 (DISP_E_EXCEPTION) zurück.
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
  Durch Aufrufen von CleanOnlineAppCache wird der Dienst gestartet, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Wenn er nicht bereits ausgeführt wird.
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
@@ -68,7 +70,7 @@ ms.locfileid: "62900272"
 ### <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein HRESULT zurückgegeben, das den Fehler darstellt. Gibt HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) zurück, wenn ein Puffer zu klein ist.
 
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>Hinweise
  Zeiger dürfen nicht NULL sein. `pcwzActivationUrl` und `pcwzPathToDeploymentManifest` dürfen nicht leer sein.
 
  Es liegt in der Verantwortung des Aufrufers, die Aktivierungs-URL zu bereinigen. Beispielsweise das Hinzufügen von Escapezeichen, wenn Sie benötigt werden oder die Abfrage Zeichenfolge entfernt wird.
@@ -89,5 +91,5 @@ ms.locfileid: "62900272"
 ### <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird S_OK zurückgegeben. Andernfalls wird ein HRESULT zurückgegeben, das den Fehler darstellt. Wenn eine verwaltete Ausnahme auftritt, gibt 0x80020009 (DISP_E_EXCEPTION) zurück.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

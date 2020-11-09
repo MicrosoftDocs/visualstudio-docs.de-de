@@ -1,5 +1,7 @@
 ---
 title: '&lt;fileAssociation- &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+description: Das fileAssociation-Element identifiziert eine Dateierweiterung, die der Anwendung zugeordnet werden soll. Das fileAssociation-Element ist optional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928522"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382727"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation- &gt; Element (ClickOnce-Anwendung)
 Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll.
@@ -47,7 +49,7 @@ Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll.
 |`progid`|Erforderlich. Ein Name, der den Dateityp eindeutig identifiziert.|
 |`defaultIcon`|Erforderlich. Gibt das Symbol an, das für Dateien mit dieser Erweiterung verwendet werden soll. Die Symbol Datei muss mithilfe des- [ \<file> Elements](../deployment/file-element-clickonce-application.md) innerhalb des [-Elements angegeben werden, das \<assembly> ](../deployment/assembly-element-clickonce-application.md) dieses Element enthält.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Dieses Element muss einen XML-Namespace Verweis auf "urn: Schemas-Microsoft-com: ClickOnce. v1" enthalten. Wenn das- `<fileAssociation>` Element verwendet wird, muss es hinter dem- `<application>` Element in seinem übergeordneten [ \<assembly> Element](../deployment/assembly-element-clickonce-application.md)stehen.
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vorhandene Dateizuordnungen werden von nicht überschrieben. Allerdings kann eine ClickOnce-Anwendung die Dateierweiterung nur für den aktuellen Benutzer überschreiben. Nachdem diese ClickOnce-Anwendung deinstalliert wurde, löscht ClickOnce die Datei Zuordnung für den Benutzer, und die Zuordnung pro Computer ist wieder aktiv.
@@ -78,5 +80,5 @@ Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll.
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

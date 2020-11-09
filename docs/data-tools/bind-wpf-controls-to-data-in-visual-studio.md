@@ -1,5 +1,6 @@
 ---
 title: Binden von WPF-Steuerelementen an Daten-Teil 1
+description: Binden von WPF-Steuerelementen an Daten. Um diese Daten gebundenen Steuerelemente zu erstellen, ziehen Sie Elemente aus dem Datenquellen Fenster auf den WPF-Designer in Visual Studio.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 27d0c14bcf09a3b0d30cd23dea0f8348c45fcab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 697b5efb172a09f2dcd5512a6301febd7429411f
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282880"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381921"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 
@@ -37,8 +38,8 @@ In der folgenden Tabelle werden die Aufgaben aufgeführt, die durch Ziehen von E
 |----------| - |
 |Erstellen von neuen datengebundenen Steuerelementen<br /><br /> Binden Sie vorhandenen Steuerelemente an Daten.|[Binden von WPF-Steuerelementen an ein Dataset](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Erstellen von Steuerelementen, die verknüpfte Daten in Beziehungen zwischen übergeordneten und untergeordneten Elementen anzeigen: Wenn der Benutzer einen übergeordneten Datensatz in einem Steuerelement auswählt, werden in einem anderen Steuerelement verknüpfte untergeordnete Daten für den ausgewählten Datensatz angezeigt.|[Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)|
-|Erstellen einer *Nachschlagetabelle*, in der Informationen aus einer Tabelle auf der Grundlage des Werts eines Fremdschlüsselfelds in einer anderen Tabelle angezeigt werden.|[Erstellen von Nachschlagetabellen in WPF-Anwendungen](../data-tools/create-lookup-tables-in-wpf-applications.md)|
-|Binden eines Steuerelements an ein Bild in einer Datenbank|[Vorgehensweise: Binden von Steuerelementen an Bilder aus einer Datenbank](../data-tools/bind-controls-to-pictures-from-a-database.md)|
+|Erstellen einer *Nachschlagetabelle* , in der Informationen aus einer Tabelle auf der Grundlage des Werts eines Fremdschlüsselfelds in einer anderen Tabelle angezeigt werden.|[Erstellen von Nachschlagetabellen in WPF-Anwendungen](../data-tools/create-lookup-tables-in-wpf-applications.md)|
+|Binden eines Steuerelements an ein Bild in einer Datenbank|[Binden von Steuerelementen an Bilder aus einer Datenbank](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
 ## <a name="valid-drop-targets"></a>Gültige Ablageziele
 
@@ -55,7 +56,7 @@ In der folgenden Tabelle sind die [!INCLUDE[TLA#tla_titlexaml](../data-tools/inc
 | Dataset | Ja | Ja |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Ja | Ja |
 | Dienst | Ja | Nein |
-| Object | Ja | Nein |
+| Object | Ja | Nein  |
 
 ### <a name="datasets"></a>Datasets
 
@@ -93,7 +94,7 @@ Visual Studio generiert XAML, das folgende Aktionen ausführt:
 
 - Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das Steuerelement, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
-### <a name="objects"></a>erzwingen
+### <a name="objects"></a>Objekte
 
 Wenn Sie ein Objekt oder eine Eigenschaft aus dem **Datenquellen** Fenster in den Designer ziehen, generiert Visual Studio, [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] das ein Daten gebundenes Steuerelement erstellt (oder ein vorhandenes Steuerelement an das Objekt oder die Eigenschaft bindet). Visual Studio generiert jedoch keinen Code, um das Objekt mit Daten zu füllen. Sie müssen diesen Code selbst schreiben.
 

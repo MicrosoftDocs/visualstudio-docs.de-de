@@ -1,5 +1,7 @@
 ---
 title: Entwickeln von ClickOnce-Anwendungen über die Befehlszeile | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Visual Studio-Projekte über die Befehlszeile erstellen, mit der Sie einen Build mithilfe eines automatisierten Prozesses reproduzieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065eea058ffa78c84428e031832e24837eb81d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74797204"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383195"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] können Sie Projekte auch dann über die Befehlszeile erstellen, wenn Sie in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) erstellt werden. Tatsächlich können Sie ein Projekt, das mit erstellt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] wurde, auf einem anderen Computer neu erstellen, auf dem nur die .NET Framework installiert ist. Dadurch können Sie einen Build mithilfe eines automatisierten Prozesses reproduzieren, z. b. in einem zentralen buildlab oder mithilfe erweiterter Skript Erstellungs Verfahren, die über den Umfang der Erstellung des Projekts hinausgehen.
@@ -29,7 +31,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Verwenden von MSBuild zum Reproduzieren von ClickOnce-Anwendungs Bereitstellungen
  Wenn Sie MSBuild/target: Publish in der Befehlszeile aufrufen, weist das MSBuild-System an, das Projekt zu erstellen und eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung im Veröffentlichungs Ordner zu erstellen. Dies entspricht der Auswahl des Befehls **Publish** in der IDE.
 
- Dieser Befehl führt *msbuild.exe*aus, der sich auf dem Pfad in der Visual Studio-Eingabe Aufforderungs Umgebung befindet.
+ Dieser Befehl führt *msbuild.exe* aus, der sich auf dem Pfad in der Visual Studio-Eingabe Aufforderungs Umgebung befindet.
 
  Ein "Ziel" ist ein Indikator für MSBuild zum Verarbeiten des Befehls. Die wichtigsten Ziele sind das Build-Ziel und das "Publish"-Ziel. Das Buildziel entspricht dem Auswählen des Build-Befehls (oder Drücken von F5) in der IDE. Wenn Sie nur das Projekt erstellen möchten, können Sie dies erreichen, indem Sie eingeben `msbuild` . Dieser Befehl funktioniert, da das Build-Ziel das Standardziel für alle Projekte ist, die von generiert werden [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Dies bedeutet, dass Sie das Buildziel nicht explizit angeben müssen. Daher `msbuild` ist die Eingabe der gleiche Vorgang wie die Typisierung `msbuild /target:build` .
 
@@ -51,9 +53,9 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
     Der Webpublishing-Assistent wird angezeigt.
 
-1. Klicken Sie im Veröffentlichungs-Assistenten auf **Fertig**stellen.
+1. Klicken Sie im Veröffentlichungs-Assistenten auf **Fertig** stellen.
 
-    Visual Studio generiert und zeigt die Standard Webseite an, die *Publish.htm*aufgerufen wird.
+    Visual Studio generiert und zeigt die Standard Webseite an, die *Publish.htm* aufgerufen wird.
 
 1. Speichern Sie Ihr Projekt, und notieren Sie sich den Speicherort des Ordners, in dem er gespeichert ist.
 
@@ -63,9 +65,9 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 1. Beenden Sie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. Klicken Sie im Windows- **Startmenü** auf **Alle Programme**, dann auf **Microsoft Visual Studio**und dann auf **Visual Studio-Tools**und dann auf **Visual Studio-Eingabeaufforderung**. Dadurch sollte eine Eingabeaufforderung im Stamm Ordner des aktuellen Benutzers geöffnet werden.
+2. Klicken Sie im Windows- **Startmenü** auf **Alle Programme** , dann auf **Microsoft Visual Studio** und dann auf **Visual Studio-Tools** und dann auf **Visual Studio-Eingabeaufforderung**. Dadurch sollte eine Eingabeaufforderung im Stamm Ordner des aktuellen Benutzers geöffnet werden.
 
-3. Ändern Sie in der **Visual Studio-Eingabeaufforderung**das aktuelle Verzeichnis in den Speicherort des Projekts, das Sie gerade erstellt haben. Geben Sie beispielsweise `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. Ändern Sie in der **Visual Studio-Eingabeaufforderung** das aktuelle Verzeichnis in den Speicherort des Projekts, das Sie gerade erstellt haben. Geben Sie beispielsweise `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Um die vorhandenen Dateien zu entfernen, die in "So erstellen und veröffentlichen Sie ein Projekt" erstellt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] haben, geben Sie ein `rmdir /s publish` .
 
@@ -73,7 +75,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 5. Geben Sie `msbuild /target:publish`ein.
 
-   In den obigen Schritten wird eine vollständige [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Bereitstellung in einem Unterordner des Projekts mit dem Namen " **Publish**" erstellt. *CmdLineDemo. Application* ist das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs Manifest. Der Ordner *CmdLineDemo_1.0.0.0* enthält die Dateien *CmdLineDemo.exe* und *CmdLineDemo.exe. Manifest*, das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifest. *Setup.exe* ist der Boots Trapper, der standardmäßig für die Installation der .NET Framework konfiguriert ist. Der Dotnetfx-Ordner enthält die verteilbaren Dateien für die .NET Framework. Dies ist der gesamte Satz von Dateien, die Sie benötigen, um Ihre Anwendung über das Web oder über UNC oder CD/DVD bereitzustellen.
+   In den obigen Schritten wird eine vollständige [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Bereitstellung in einem Unterordner des Projekts mit dem Namen " **Publish** " erstellt. *CmdLineDemo. Application* ist das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs Manifest. Der Ordner *CmdLineDemo_1.0.0.0* enthält die Dateien *CmdLineDemo.exe* und *CmdLineDemo.exe. Manifest* , das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifest. *Setup.exe* ist der Boots Trapper, der standardmäßig für die Installation der .NET Framework konfiguriert ist. Der Dotnetfx-Ordner enthält die verteilbaren Dateien für die .NET Framework. Dies ist der gesamte Satz von Dateien, die Sie benötigen, um Ihre Anwendung über das Web oder über UNC oder CD/DVD bereitzustellen.
    
 > [!NOTE]
 > Das MSBuild-System verwendet die Option **PublishDir** , um den Speicherort für die Ausgabe anzugeben, z `msbuild /t:publish /p:PublishDir="<specific location>"` . b..
@@ -81,7 +83,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="publish-properties"></a>Eigenschaften veröffentlichen
  Wenn Sie die Anwendung in den oben aufgeführten Prozeduren veröffentlichen, werden die folgenden Eigenschaften durch den Veröffentlichungs-Assistenten in die Projektdatei eingefügt. Diese Eigenschaften beeinflussen direkt die Art und Weise, wie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erstellt wird.
 
- In *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
+ In *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -109,9 +111,9 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- Veröffentlichungs Eigenschaften werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] über die Eigenschaften Seiten **veröffentlichen**, **Sicherheit**und **Signierung** des Projekt- **Designers**gesteuert. Im folgenden finden Sie eine Beschreibung der Veröffentlichungs Eigenschaften sowie einen Hinweis darauf, wie die einzelnen Eigenschaften Seiten des Anwendungs-Designers festgelegt werden:
+ Veröffentlichungs Eigenschaften werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] über die Eigenschaften Seiten **veröffentlichen** , **Sicherheit** und **Signierung** des Projekt- **Designers** gesteuert. Im folgenden finden Sie eine Beschreibung der Veröffentlichungs Eigenschaften sowie einen Hinweis darauf, wie die einzelnen Eigenschaften Seiten des Anwendungs-Designers festgelegt werden:
 
-- `AssemblyOriginatorKeyFile` bestimmt die Schlüsseldatei, die zum Signieren Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifeste verwendet wird. Derselbe Schlüssel kann auch verwendet werden, um Ihren Assemblys einen starken Namen zuzuweisen. Diese Eigenschaft wird auf der Seite **Signierung** des **Projekt-Designers**festgelegt.
+- `AssemblyOriginatorKeyFile` bestimmt die Schlüsseldatei, die zum Signieren Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifeste verwendet wird. Derselbe Schlüssel kann auch verwendet werden, um Ihren Assemblys einen starken Namen zuzuweisen. Diese Eigenschaft wird auf der Seite **Signierung** des **Projekt-Designers** festgelegt.
 
   Die folgenden Eigenschaften werden auf der Seite **Sicherheit** festgelegt:
 
@@ -160,14 +162,14 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL, and UpdateURL
  In der folgenden Tabelle sind die vier URL-Optionen für die ClickOnce-Bereitstellung aufgeführt.
 
-|URL-Option|BESCHREIBUNG|
+|URL-Option|Beschreibung|
 |----------------|-----------------|
 |`PublishURL`|Erforderlich, wenn Sie die ClickOnce-Anwendung auf einer Website veröffentlichen.|
 |`InstallURL`|Optional. Legen Sie diese URL-Option fest, wenn sich die Installations Site vom unterscheidet `PublishURL` . Beispielsweise können Sie `PublishURL` auf einen FTP-Pfad festlegen und `InstallURL` auf eine Web-URL festlegen.|
 |`SupportURL`|Optional. Legen Sie diese URL-Option fest, wenn sich die Support Website von unterscheidet `PublishURL` . Beispielsweise können Sie die auf die `SupportURL` Kundendienst Website Ihres Unternehmens festlegen.|
 |`UpdateURL`|Optional. Legen Sie diese URL-Option fest, wenn sich der Update Speicherort von unterscheidet `InstallURL` . Beispielsweise können Sie `PublishURL` auf einen FTP-Pfad festlegen und `UpdateURL` auf eine Web-URL festlegen.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>

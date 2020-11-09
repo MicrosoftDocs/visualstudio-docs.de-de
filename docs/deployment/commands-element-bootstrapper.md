@@ -1,5 +1,7 @@
 ---
 title: '&lt;Commands- &gt; Element (Boots Trapper) | Microsoft-Dokumentation'
+description: Das Commands-Element implementiert Tests in den Elementen unterhalb von InstallChecks und deklariert das zu installierende Paket, wenn der ClickOnce-bootstrappertest fehlschlägt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900343"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383052"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commands- &gt; Element (Boots Trapper)
 Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des- `InstallChecks` Elements beschrieben werden, und deklariert das Paket, das der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Boots Trapper installieren soll, wenn der Test fehlschlägt.
@@ -70,9 +72,9 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 
 |attribute|Beschreibung|
 |---------------|-----------------|
-|`Reboot`|Optional. Bestimmt, ob das System neu gestartet werden soll, wenn eines der Pakete einen Neustart-Exitcode zurückgibt. In der folgenden Liste werden die gültigen Werte angezeigt:<br /><br /> `Defer`. Der Neustart wird bis zu einem späteren Zeitpunkt verzögert.<br /><br /> `Immediate`. Verursacht einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben hat.<br /><br /> `None`. Bewirkt, dass alle Neustart Anforderungen ignoriert werden.<br /><br /> Der Standardwert lautet `Immediate`.|
+|`Reboot`|Optional. Bestimmt, ob das System neu gestartet werden soll, wenn eines der Pakete einen Neustart-Exitcode zurückgibt. In der folgenden Liste werden die gültigen Werte angezeigt:<br /><br /> `Defer`. Der Neustart wird bis zu einem späteren Zeitpunkt verzögert.<br /><br /> `Immediate`. Verursacht einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben hat.<br /><br /> `None`. Bewirkt, dass alle Neustart Anforderungen ignoriert werden.<br /><br /> Der Standardwert ist `Immediate`.|
 
-## <a name="command"></a>Befehl
+## <a name="command"></a>Get-Help
  Das `Command`-Element ist ein untergeordnetes Element des `Commands`-Elements. Ein- `Commands` Element kann ein oder mehrere- `Command` Elemente aufweisen. Das Element weist folgende Attribute auf.
 
 |attribute|Beschreibung|
@@ -123,7 +125,7 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 |`Value`|Erforderlich. Der Exitcodewert, auf den dieses `ExitCode` Element angewendet wird.|
 |`Result`|Erforderlich. Gibt an, wie die Installation auf diesen Exitcode reagieren soll. In der folgenden Liste werden die gültigen Werte angezeigt:<br /><br /> `Success`. Gibt an, dass das Paket erfolgreich installiert wurde.<br /><br /> `SuccessReboot`. Gibt das Paket als erfolgreich installiert an und weist das System an, neu zu starten.<br /><br /> `Fail`. Markiert das Paket als fehlgeschlagen.<br /><br /> `FailReboot`. Gibt das Paket als fehlerhaft an und weist das System an, neu zu starten.|
 |`String`|Optional. Der Wert, der dem Benutzer als Reaktion auf diesen Exitcode angezeigt werden soll.|
-|`FormatMessageFromSystem`|Optional. Bestimmt, ob die vom System bereitgestellte Fehlermeldung verwendet werden soll, die dem Exitcode entspricht, oder verwendet den in bereitgestellten Wert `String` . Gültige Werte sind. Dies bedeutet, dass `true` der vom System bereitgestellte Fehler verwendet wird, und `false` , was bedeutet, dass die von bereitgestellte Zeichenfolge verwendet wird `String` . Der Standardwert lautet `false`. Wenn diese Eigenschaft ist `false` , aber `String` nicht festgelegt ist, wird der vom System bereitgestellte Fehler verwendet.|
+|`FormatMessageFromSystem`|Optional. Bestimmt, ob die vom System bereitgestellte Fehlermeldung verwendet werden soll, die dem Exitcode entspricht, oder verwendet den in bereitgestellten Wert `String` . Gültige Werte sind. Dies bedeutet, dass `true` der vom System bereitgestellte Fehler verwendet wird, und `false` , was bedeutet, dass die von bereitgestellte Zeichenfolge verwendet wird `String` . Der Standardwert ist `false`. Wenn diese Eigenschaft ist `false` , aber `String` nicht festgelegt ist, wird der vom System bereitgestellte Fehler verwendet.|
 
 ## <a name="example"></a>Beispiel
  Im folgenden Codebeispiel werden Befehle zum Installieren des .NET Framework 2,0 definiert.
@@ -203,6 +205,6 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 </Commands>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)
 - [\<InstallChecks> gewisses](../deployment/installchecks-element-bootstrapper.md)

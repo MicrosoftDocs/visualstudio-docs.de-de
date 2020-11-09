@@ -1,5 +1,7 @@
 ---
 title: '&lt;EntryPoint- &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+description: Das entryPoint-Element identifiziert die Assembly, die ausgeführt werden soll, wenn diese ClickOnce-Anwendung auf einem Client Computer ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928612"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382805"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;EntryPoint- &gt; Element (ClickOnce-Anwendung)
 Identifiziert die Assembly, die ausgeführt werden soll, wenn diese [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung auf einem Client Computer ausgeführt wird.
@@ -89,7 +91,7 @@ Identifiziert die Assembly, die ausgeführt werden soll, wenn diese [!INCLUDE[nd
 
  Eine Anwendung, die das customUX-Element enthält, muss ein benutzerdefiniertes Installationsprogramm bereitstellen, das mithilfe der- <xref:System.Deployment.Application.InPlaceHostingManager> Klasse installations Vorgänge ausführt. Eine Anwendung mit diesem Element kann nicht durch Doppelklicken auf das zugehörige Manifest oder setup.exe erforderliche Boots Trapper installiert werden. Mit dem benutzerdefinierten Installationsprogramm können Einträge im Startmenü, Verknüpfungen und Software Einträge erstellt werden. Wenn das benutzerdefinierte Installationsprogramm den Eintrag "Software" nicht erstellt, muss er den von der-Eigenschaft bereitgestellten Abonnement Bezeichner speichern <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> und dem Benutzer die Möglichkeit geben, die Anwendung später durch Aufrufen der-Methode zu deinstallieren <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> . Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md).
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Dieses Element identifiziert die Assembly und den Einstiegspunkt für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.
 
  Sie können nicht verwenden `commandLine` , um zur Laufzeit Parameter an Ihre Anwendung zu übergeben. Sie können auf Abfrage Zeichenfolgen-Parameter für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung über die der Anwendung zugreifen <xref:System.AppDomain> . Weitere Informationen finden Sie unter Gewusst [wie: Abrufen von Abfrage Zeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).
@@ -110,5 +112,5 @@ Identifiziert die Assembly, die ausgeführt werden soll, wenn diese [!INCLUDE[nd
   </entryPoint>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

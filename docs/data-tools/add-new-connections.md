@@ -1,5 +1,6 @@
 ---
 title: Neue Verbindungen hinzufügen
+description: Fügen Sie eine Verbindung in Visual Studio zu einer Datenbank oder einem Dienst hinzu, und untersuchen Sie Datenbankinhalte und-Schemas, indem Sie Server-Explorer, Cloud-Explorer oder SQL Server-Objekt-Explorer verwenden.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
@@ -7,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f3ef6823ddfae806de11b85cc5bfe6b14c9b19
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283059"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382415"
 ---
 # <a name="add-new-connections"></a>Neue Verbindungen hinzufügen
 
-Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Datenbankinhalte und-Schemas mithilfe von **Server-Explorer**, **Cloud-Explorer**oder **SQL Server-Objekt-Explorer**untersuchen. Die Funktionalität dieser Fenster überschneidet sich in gewisser Weise. Die grundlegenden Unterschiede lauten:
+Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Datenbankinhalte und-Schemas mithilfe von **Server-Explorer** , **Cloud-Explorer** oder **SQL Server-Objekt-Explorer** untersuchen. Die Funktionalität dieser Fenster überschneidet sich in gewisser Weise. Die grundlegenden Unterschiede lauten:
 
 - Server-Explorer
 
@@ -26,13 +27,13 @@ Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Date
 
    Installieren Sie dieses Fenster manuell als Visual Studio-Erweiterung von [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Bietet spezialisierte Funktionen zum untersuchen und verbinden mit Azure-Diensten.
 
-- SQL Server-Objekt-Explorer
+- SQL Server-Objekt-Explorer
 
    Installiert mit SQL Server Data Tools und im Menü **Ansicht** sichtbar. Wenn Sie dort nicht angezeigt wird, navigieren Sie in der Systemsteuerung zu **Programme und Funktionen** , suchen Sie nach Visual Studio, und wählen Sie dann **ändern** aus, um den Installer erneut auszuführen, nachdem Sie das Kontrollkästchen für SQL Server Data Tools ausgewählt haben. Verwenden Sie **SQL Server-Objekt-Explorer** zum Anzeigen von SQL-Datenbanken (wenn Sie über einen ADO.NET-Anbieter verfügen), erstellen Sie neue Datenbanken, ändern Sie Schemas, erstellen Sie gespeicherte Prozeduren, rufen Sie Verbindungs Zeichenfolgen, Daten anzeigen usw. SQL-Datenbanken, die keinen ADO.NET-Anbieter installiert haben, werden hier nicht angezeigt, aber Sie können weiterhin Programm gesteuert eine Verbindung mit Ihnen herstellen.
 
 ## <a name="add-a-connection-in-server-explorer"></a>Hinzufügen einer Verbindung in Server-Explorer
 
-Um eine Verbindung mit der Datenbank herzustellen, klicken Sie in **Server-Explorer**auf das Symbol **Verbindung hinzufügen** , oder klicken Sie mit der rechten Maustaste auf **Server-Explorer** auf dem Knoten **Datenverbindungen** , und wählen Sie **Verbindung hinzufügen**aus. Von hier aus können Sie auch eine Verbindung mit einer Datenbank auf einem anderen Server, einem SharePoint-Dienst oder einem Azure-Dienst herstellen.
+Um eine Verbindung mit der Datenbank herzustellen, klicken Sie in **Server-Explorer** auf das Symbol **Verbindung hinzufügen** , oder klicken Sie mit der rechten Maustaste auf **Server-Explorer** auf dem Knoten **Datenverbindungen** , und wählen Sie **Verbindung hinzufügen** aus. Von hier aus können Sie auch eine Verbindung mit einer Datenbank auf einem anderen Server, einem SharePoint-Dienst oder einem Azure-Dienst herstellen.
 
 ![Symbol "neue Verbindung Server-Explorer"](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
@@ -52,8 +53,8 @@ Nachdem Sie die Datenquelle ausgewählt haben, klicken Sie auf **Verbindung test
 
 ![Testen der Verbindung](../data-tools/media/raddata-test-connection.png)
 
-Wenn der Test erfolgreich ist, können Sie eine *Datenquelle*erstellen, die ein Visual Studio-Begriff ist, der tatsächlich ein *Datenmodell* ist, das auf der zugrunde liegenden Datenbank oder dem zugrunde liegenden Dienst basiert.
+Wenn der Test erfolgreich ist, können Sie eine *Datenquelle* erstellen, die ein Visual Studio-Begriff ist, der tatsächlich ein *Datenmodell* ist, das auf der zugrunde liegenden Datenbank oder dem zugrunde liegenden Dienst basiert.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

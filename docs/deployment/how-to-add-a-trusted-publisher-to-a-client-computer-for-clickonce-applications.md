@@ -1,5 +1,6 @@
 ---
 title: Feld "vertrauenswürdiger Verleger zum Client hinzufügen" (ClickOnce)
+description: Erfahren Sie, wie Sie einem Client Computer ein Zertifikat hinzufügen, damit Ihre ClickOnce-Anwendungen mit einer höheren Vertrauens Ebene ausgeführt werden, ohne dass der Benutzer dazu aufgefordert wird.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809806"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382701"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen
 Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcomputer so konfigurieren, dass Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen mit einer höheren Vertrauensebene ausgeführt werden ohne den Benutzer dazu aufzufordern. Die folgenden Verfahren zeigen, wie das Befehlszeilentool CertMgr.exe verwendet wird, um das Zertifikat des Herausgebers zum Speicher für vertrauenswürdige Herausgeber auf einem Clientcomputer hinzuzufügen.
@@ -39,7 +40,7 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
 
 1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.
 
-2. Exportieren Sie das Zertifikat in das Format Base64 X. 509 (*. CER*). Weitere Informationen zu Zertifikat Formaten finden Sie unter [Exportieren eines Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exportieren Sie das Zertifikat in das Format Base64 X. 509 ( *. CER* ). Weitere Informationen zu Zertifikat Formaten finden Sie unter [Exportieren eines Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:
 
@@ -49,7 +50,7 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
 
 1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.
 
-2. Exportieren Sie das Zertifikat in das Format Base64 X. 509 (*. CER*). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exportieren Sie das Zertifikat in das Format Base64 X. 509 ( *. CER* ). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:
 

@@ -1,5 +1,7 @@
 ---
 title: '&lt;Assembly- &gt; Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
+description: Das Assembly-Element ist das root-Element und ist in der ClickOnce-Anwendung erforderlich. Das erste enthaltene Element muss ein assemblyIdentity-Element sein.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b629243920021adc3833f43f268f05638029dc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3614cd2d4fc0e6a5eebfb8dc6911e6eb183c01
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900759"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383221"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;Assembly- &gt; Element (ClickOnce-Anwendung)
 Das Element der obersten Ebene für das Anwendungs Manifest.
@@ -69,6 +71,6 @@ Das Element der obersten Ebene für das Anwendungs Manifest.
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
 - [\<assembly> gewisses](../deployment/assembly-element-clickonce-deployment.md)

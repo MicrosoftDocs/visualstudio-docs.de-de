@@ -1,5 +1,7 @@
 ---
 title: ClickOnce-Anwendungs Manifest | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das ClickOnce-Anwendungs Manifest, bei dem es sich um eine XML-Datei handelt, die eine mit ClickOnce bereitgestellte Anwendung beschreibt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928963"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383117"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce-Anwendungsmanifest
 Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifest ist eine XML-Datei, in der eine Anwendung beschrieben wird, die mithilfe von bereitgestellt wird [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -37,7 +39,7 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs
 | [\<file>-Element](../deployment/file-element-clickonce-application.md) | Optional. Identifiziert jede nicht Assemblydatei, die von der Anwendung verwendet wird. Kann COM-Isolationsdaten (Component Object Model) enthalten, die der Datei zugeordnet sind. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
 | [\<fileAssociation>-Element](../deployment/fileassociation-element-clickonce-application.md) | Optional. Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifest-Datei identifiziert eine mithilfe von bereitgestellte Anwendung [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Weitere Informationen zu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] finden Sie unter [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md).
 
 ## <a name="file-location"></a>Dateispeicherort
@@ -114,5 +116,5 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs
 </Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

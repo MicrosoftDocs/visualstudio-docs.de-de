@@ -1,5 +1,7 @@
 ---
 title: ClickOnce-apps ohne erneute Signatur bereitstellen
+description: Erfahren Sie mehr über das Bereitstellen von ClickOnce-Anwendungen aus mehreren Netzwerk Standorten, ohne die ClickOnce-Manifeste neu zu signieren
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89e1d7970b26d5ba9bd49090362a6a4e8c09f78d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5644a890a8705c68852cb5f67e4d998e12338dc
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80395325"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382935"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Bereitstellen von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren
 In diesem Artikel wird eine Funktion von ClickOnce beschrieben, die in der .NET Framework Version 3,5 eingeführt wurde, die die Bereitstellung von ClickOnce-Anwendungen von mehreren Netzwerk Standorten aus ermöglicht, ohne dass die ClickOnce-Manifeste neu signiert oder geändert werden

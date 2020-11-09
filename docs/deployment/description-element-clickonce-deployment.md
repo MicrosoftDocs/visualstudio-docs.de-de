@@ -1,5 +1,7 @@
 ---
 title: '&lt;Description- &gt; Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
+description: Das Description-Element identifiziert Anwendungsinformationen, die zum Erstellen einer shellpräsenz und eines Elements "Software" in der Systemsteuerung verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928796"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382831"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Description- &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert Anwendungsinformationen, die verwendet werden, um in der Systemsteuerung eine shellpräsenz und **ein Element "** Software" zu erstellen.
@@ -30,8 +32,8 @@ Identifiziert Anwendungsinformationen, die verwendet werden, um in der Systemste
 
 ```xml
 
-      <description 
-   publisher 
+      <description 
+   publisher 
    product
    suiteName
    supportUrl
@@ -48,7 +50,7 @@ Identifiziert Anwendungsinformationen, die verwendet werden, um in der Systemste
 |`suiteName`|Optional. Identifiziert einen Unterordner innerhalb des `publisher` Ordners im Windows- **Startmenü** .|
 |`supportUrl`|Optional. Gibt eine Support-URL an **, die im Element Software** in der Systemsteuerung angezeigt wird. Eine Verknüpfung zu dieser URL wird auch für die Anwendungsunterstützung im Windows- **Startmenü** erstellt, wenn die Bereitstellung für die Installation konfiguriert ist.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Das Description-Element ist in allen Bereitstellungs Konfigurationen erforderlich.
 
 ## <a name="example"></a>Beispiel
@@ -61,5 +63,5 @@ Identifiziert Anwendungsinformationen, die verwendet werden, um in der Systemste
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)

@@ -1,5 +1,6 @@
 ---
 title: Binden von WPF-Steuerelementen an einen WCF-Datendienst
+description: Binden von WPF-Steuerelementen an einen WCF-Datendienst in Visual Studio. Die Steuerelemente sind an Kundendaten Sätze gebunden, die in einem WCF Data Service gekapselt sind.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7371e08925ad9227cf15a93a339e6e0ed36d11db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c627a9f09d5400e321bcc8a141c36ec46cad7958
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282851"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382207"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 
@@ -62,7 +63,7 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 1. Starten Sie diese exemplarische Vorgehensweise durch Erstellen eines c#-oder Visual Basic **ASP.NET-Webanwendungs** Projekts. Nennen Sie das Projekt **AdventureWorksService**.
 
-2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Default.aspx**, und wählen Sie **Löschen** aus. Diese Datei ist für die exemplarische Vorgehensweise nicht erforderlich.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Default.aspx** , und wählen Sie **Löschen** aus. Diese Datei ist für die exemplarische Vorgehensweise nicht erforderlich.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Erstellen eines Entity Data Model für den Dienst
 
@@ -70,23 +71,23 @@ Zum verfügbar machen von Daten für eine Anwendung mithilfe eines WCF Data Serv
 
 1. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-2. Klicken Sie in der Liste „Installierte Vorlagen“ auf **Daten**, und wählen Sie dann das Projektelement **ADO.NET Entity Data Model** aus.
+2. Klicken Sie in der Liste „Installierte Vorlagen“ auf **Daten** , und wählen Sie dann das Projektelement **ADO.NET Entity Data Model** aus.
 
 3. Ändern Sie den Namen in `AdventureWorksModel.edmx` , und klicken Sie auf **Hinzufügen**.
 
      Der **Assistent für Entity Data Model** wird geöffnet.
 
-4. Klicken Sie auf der Seite **Modellinhalt auswählen** auf **Aus Datenbank generieren**, und klicken Sie auf **Weiter**.
+4. Klicken Sie auf der Seite **Modellinhalt auswählen** auf **Aus Datenbank generieren** , und klicken Sie auf **Weiter**.
 
 5. Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** eine der folgenden Optionen aus:
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "AdventureWorksLT" verfügbar ist, wählen Sie diese aus.
 
-    - Klicken Sie **Neue Verbindung**, und erstellen Sie eine Verbindung zur Datenbank AdventureWorksLT.
+    - Klicken Sie **Neue Verbindung** , und erstellen Sie eine Verbindung zur Datenbank AdventureWorksLT.
 
-6. Achten Sie darauf, dass auf der Seite **Wählen Sie Ihre Datenverbindung aus** die Option **Entitätsverbindungseinstellungen in App.Config speichern unter**, und klicken Sie dann auf **Weiter**.
+6. Achten Sie darauf, dass auf der Seite **Wählen Sie Ihre Datenverbindung aus** die Option **Entitätsverbindungseinstellungen in App.Config speichern unter** , und klicken Sie dann auf **Weiter**.
 
-7. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Punkt **Tabellen**, und wählen Sie dann die Tabelle **SalesOrderHeader** aus.
+7. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Punkt **Tabellen** , und wählen Sie dann die Tabelle **SalesOrderHeader** aus.
 
 8. Klicken Sie auf **Fertig stellen**.
 
@@ -96,7 +97,7 @@ Erstellen Sie einen WCF Data Service, um die Daten in der Entity Data Model für
 
 1. Wählen Sie im Menü **Projekt** den Eintrag **Neues Element hinzufügen** aus.
 
-2. Klicken Sie in der Liste **Installierte Vorlagen** auf **Web**, und wählen Sie dann das Projektelement **WCF Data Service** aus.
+2. Klicken Sie in der Liste **Installierte Vorlagen** auf **Web** , und wählen Sie dann das Projektelement **WCF Data Service** aus.
 
 3. Geben Sie im Feld **Name den Namen** ein `AdventureWorksService.svc` , und klicken Sie auf **Hinzufügen**.
 
@@ -119,9 +120,9 @@ Damit der Dienst mit dem von Ihnen erstellten Entity Data Model funktioniert, mu
 
 Um die Daten aus dem WCF Data Service anzuzeigen, erstellen Sie eine neue WPF-Anwendung mit einer Datenquelle, die auf dem Dienst basiert. Später in dieser exemplarischen Vorgehensweise werden Sie datengebundene Steuerelemente zur Anwendung hinzufügen.
 
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Lösungsknoten, dann auf **Hinzufügen**, und wählen Sie dann **Neues Projekt** aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Lösungsknoten, dann auf **Hinzufügen** , und wählen Sie dann **Neues Projekt** aus.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Punkt **Visual C#** oder **Visual Basic**, und wählen Sie dann **Windows**.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Punkt **Visual C#** oder **Visual Basic** , und wählen Sie dann **Windows**.
 
 3. Wählen Sie die Projektvorlage **WPF-Anwendung** aus.
 
@@ -137,7 +138,7 @@ Um die Daten aus dem WCF Data Service anzuzeigen, erstellen Sie eine neue WPF-An
 
    Der Assistent zum **Konfigurieren von Datenquellen** wird geöffnet.
 
-7. Wählen Sie auf der Seite **Datenquellentyp auswählen** des Assistenten **Dienst**, und klicken Sie auf **Weiter**.
+7. Wählen Sie auf der Seite **Datenquellentyp auswählen** des Assistenten **Dienst** , und klicken Sie auf **Weiter**.
 
 8. Klicken Sie im Dialogfeld **Dienstverweis hinzufügen** auf **Ermitteln**.
 
@@ -179,11 +180,11 @@ Fügen Sie dem Fenster eine Reihe von Schaltflächen hinzu, indem Sie XAML im WP
 
 Erstellen Sie Steuerelemente, die Kundendaten Sätze anzeigen, indem `SalesOrderHeaders` Sie den Knoten aus dem **Datenquellen** Fenster in den Designer ziehen.
 
-1. Klicken Sie im Fenster **Datenquellen** das Dropdownmenü für den Knoten **SalesOrderHeaders**, und wählen Sie **Details**.
+1. Klicken Sie im Fenster **Datenquellen** das Dropdownmenü für den Knoten **SalesOrderHeaders** , und wählen Sie **Details**.
 
 2. Erweitern Sie den Knoten **SalesOrderHeaders**.
 
-3. In diesem Beispiel werden einige Felder nicht angezeigt. Klicken Sie also das Dropdownmenü neben den folgenden Knoten, und wählen Sie **Keine**:
+3. In diesem Beispiel werden einige Felder nicht angezeigt. Klicken Sie also das Dropdownmenü neben den folgenden Knoten, und wählen Sie **Keine** :
 
     - **CreditCardApprovalCode**
 
@@ -271,7 +272,7 @@ Erstellen Sie die Anwendung und führen Sie sie aus; prüfen Sie, ob Sie Kundend
 
 3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **AdventureWorksSalesEditor**.
 
-4. Klicken Sie im Kontextmenü (Kontextmenü) unter **Debuggen**auf **neue Instanz starten**.
+4. Klicken Sie im Kontextmenü (Kontextmenü) unter **Debuggen** auf **neue Instanz starten**.
 
      Die Anwendung wird ausführt. Überprüfen Sie Folgendes:
 

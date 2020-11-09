@@ -1,5 +1,7 @@
 ---
 title: ClickOnce-Bereitstellungs Manifest | Microsoft-Dokumentation
+description: Erfahren Sie mehr über ein Bereitstellungs Manifest, eine XML-Datei, die eine ClickOnce-Bereitstellung beschreibt, einschließlich der aktuellen ClickOnce-Anwendungs Version für die Bereitstellung
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47589b909ee2b7ee367c81684ac53e2b5e4e7d70
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900478"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383091"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce-Bereitstellungsmanifest
 Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung beschreibt, einschließlich der Bestimmung der aktuellen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsversion für die Bereitstellung.
 
  Bereitstellungsmanifeste verfügen über die folgenden Elemente und Attribute.
 
-| Element | BESCHREIBUNG | Attribute |
+| Element | Beschreibung | Attribute |
 | - | - | - |
 | [\<assembly>-Element](../deployment/assembly-element-clickonce-deployment.md) | Erforderlich. Ein Element der obersten Ebene. | `manifestVersion` |
 | [\<assemblyIdentity>-Element](../deployment/assemblyidentity-element-clickonce-deployment.md) | Erforderlich. Identifiziert das Anwendungsmanifest für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
@@ -39,7 +41,7 @@ Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](
 | [\<Signature>-Element](../deployment/signature-element-clickonce-deployment.md) | Optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren. | Keine |
 | [\<customErrorReporting>-Element](../deployment/customerrorreporting-element-clickonce-deployment.md) | Optional. Gibt einen URI an, der bei einem Fehler angezeigt wird. | Uri |
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Die Bereitstellungsmanifestdatei identifiziert eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsbereitstellung einschließlich der aktuellen Version und anderer Bereitstellungseinstellungen. Sie verweist auf das Anwendungsmanifest, in dem die aktuelle Version der Anwendung und alle in der Bereitstellung enthaltenen Dateien beschrieben werden.
 
  Weitere Informationen finden Sie unter [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
@@ -117,5 +119,5 @@ Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](
 </Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

@@ -1,6 +1,6 @@
 ---
 title: Bearbeitbare Änderungen ohne Commit
-description: Commit-Prozess interne Bearbeitung von Daten gebundenen Steuerelementen vor dem Speichern
+description: Commit für Prozess interne Änderungen an Daten gebundenen Windows Forms Steuerelementen vor dem Speichern von Daten ausführen. Aufrufen von EndEdit für alle BindingSource-Komponenten in einem Formular.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e2188e20b2ba36a6ef3805faab9f80c4379f1f7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd50ad6c0e81f337ad922f6fa994f0d900edb8b6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038373"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382389"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Ausführen eines Commits für aktuelle Bearbeitungen von datengebundenen Steuerelementen vor dem Speichern von Daten
 
@@ -52,7 +52,7 @@ Im folgenden Code wird eine [LINQ (Language-Integrated Query)-](/dotnet/csharp/l
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
