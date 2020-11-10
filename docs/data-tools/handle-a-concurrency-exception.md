@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282357"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407665"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 
@@ -49,7 +49,7 @@ Diese exemplarische Vorgehensweise enthält folgende Vorgänge:
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
-1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer** können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
@@ -63,40 +63,40 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
        Nach kurzer Zeit wird die Ausführung der Abfrage abgeschlossen und die Datenbank Northwind erstellt.
 
-## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
 Erstellen Sie zunächst eine neue Windows Forms Anwendung:
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop** aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das **Projekt,** und wählen Sie dann **OK**aus.
+4. Nennen Sie das **Projekt,** und wählen Sie dann **OK** aus.
 
-     Das **Projekt "** Projekt" wird erstellt und zu **Projektmappen-Explorer**hinzugefügt, und im Designer wird ein neues Formular geöffnet.
+     Das **Projekt "** Projekt" wird erstellt und zu **Projektmappen-Explorer** hinzugefügt, und im Designer wird ein neues Formular geöffnet.
 
 ## <a name="create-the-northwind-dataset"></a>Erstellen des Northwind-Datasets
 
-Erstellen Sie als nächstes ein DataSet mit dem Namen **NorthwindDataSet**:
+Erstellen Sie als nächstes ein DataSet mit dem Namen **NorthwindDataSet** :
 
-1. Wählen Sie im Menü **Daten** die Option **neue Datenquelle hinzufügen**aus.
+1. Wählen Sie im Menü **Daten** die Option **neue Datenquelle hinzufügen** aus.
 
    Der Assistent zum Konfigurieren von Datenquellen wird geöffnet.
 
-2. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen** die Option **Datenbank**aus.
+2. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen** die Option **Datenbank** aus.
 
    ![Assistent zum Konfigurieren von Datenquellen in Visual Studio](media/data-source-configuration-wizard.png)
 
-3. Wählen Sie in der Liste der verfügbaren Verbindungen eine Verbindung mit der Beispieldatenbank Northwind aus. Wenn die Verbindung in der Liste der Verbindungen nicht verfügbar ist, wählen Sie **neue Verbindung**aus.
+3. Wählen Sie in der Liste der verfügbaren Verbindungen eine Verbindung mit der Beispieldatenbank Northwind aus. Wenn die Verbindung in der Liste der Verbindungen nicht verfügbar ist, wählen Sie **neue Verbindung** aus.
 
     > [!NOTE]
     > Wenn Sie eine Verbindung mit einer lokalen Datenbankdatei herstellen, wählen Sie **Nein** aus, wenn Sie gefragt werden, ob Sie die Datei dem Projekt hinzufügen möchten.
 
-4. Wählen Sie auf der Seite **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern** die Option **weiter**aus.
+4. Wählen Sie auf der Seite **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern** die Option **weiter** aus.
 
-5. Erweitern Sie den Knoten **Tabellen** , und wählen Sie die Tabelle **Customers** aus. Der Standardname für das DataSet sollte **NorthwindDataSet**lauten.
+5. Erweitern Sie den Knoten **Tabellen** , und wählen Sie die Tabelle **Customers** aus. Der Standardname für das DataSet sollte **NorthwindDataSet** lauten.
 
 6. Wählen Sie **Fertig** stellen aus, um das DataSet dem Projekt hinzuzufügen.
 
@@ -104,7 +104,7 @@ Erstellen Sie als nächstes ein DataSet mit dem Namen **NorthwindDataSet**:
 
 In diesem Abschnitt erstellen Sie einen, <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> indem Sie das **Customers** -Element aus dem **Datenquellen** Fenster auf das Windows Form ziehen.
 
-1. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Daten** die Option **Datenquellen anzeigen**aus.
+1. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Daten** die Option **Datenquellen anzeigen** aus.
 
 2. Erweitern Sie im Fenster **Datenquellen** den Knoten **NorthwindDataSet** , und wählen Sie dann die Tabelle **Customers** aus.
 
@@ -112,7 +112,7 @@ In diesem Abschnitt erstellen Sie einen, <xref:System.Windows.Forms.DataGridView
 
 4. Ziehen Sie die Tabelle auf einen leeren Bereich des Formulars.
 
-     Ein <xref:System.Windows.Forms.DataGridView> Steuerelement mit dem Namen **CustomersDataGridView**und ein mit <xref:System.Windows.Forms.BindingNavigator> dem Namen **CustomersBindingNavigator**werden dem Formular hinzugefügt, das an das-Element gebunden ist <xref:System.Windows.Forms.BindingSource> . Dies wird wiederum an die Customers-Tabelle im NorthwindDataSet gebunden.
+     Ein <xref:System.Windows.Forms.DataGridView> Steuerelement mit dem Namen **CustomersDataGridView** und ein mit <xref:System.Windows.Forms.BindingNavigator> dem Namen **CustomersBindingNavigator** werden dem Formular hinzugefügt, das an das-Element gebunden ist <xref:System.Windows.Forms.BindingSource> . Dies wird wiederum an die Customers-Tabelle im NorthwindDataSet gebunden.
 
 ## <a name="test-the-form"></a>Testen des Formulars
 
@@ -176,14 +176,14 @@ Erstellen Sie die Meldung, indem Sie dem **Code-Editor** folgenden Code hinzufü
 
 ### <a name="process-the-users-response"></a>Verarbeiten der Antwort des Benutzers
 
-Außerdem benötigen Sie Code, um die Antwort des Benutzers auf das Meldungs Feld zu verarbeiten. Die Optionen lauten entweder, um den aktuellen Datensatz in der Datenbank mit der vorgeschlagenen Änderung zu überschreiben, oder die lokalen Änderungen verwerfen und die Datentabelle mit dem Datensatz aktualisieren, der sich derzeit in der Datenbank befindet. Wenn der Benutzer **Ja**auswählt, <xref:System.Data.DataTable.Merge%2A> wird die-Methode aufgerufen, wobei das *preserveChanges* -Argument auf **true**festgelegt ist. Dies bewirkt, dass der Aktualisierungs Versuch erfolgreich ist, da die ursprüngliche Version des Datensatzes jetzt mit dem Datensatz in der Datenbank übereinstimmt.
+Außerdem benötigen Sie Code, um die Antwort des Benutzers auf das Meldungs Feld zu verarbeiten. Die Optionen lauten entweder, um den aktuellen Datensatz in der Datenbank mit der vorgeschlagenen Änderung zu überschreiben, oder die lokalen Änderungen verwerfen und die Datentabelle mit dem Datensatz aktualisieren, der sich derzeit in der Datenbank befindet. Wenn der Benutzer **Ja** auswählt, <xref:System.Data.DataTable.Merge%2A> wird die-Methode aufgerufen, wobei das *preserveChanges* -Argument auf **true** festgelegt ist. Dies bewirkt, dass der Aktualisierungs Versuch erfolgreich ist, da die ursprüngliche Version des Datensatzes jetzt mit dem Datensatz in der Datenbank übereinstimmt.
 
 Fügen Sie unter dem Code, der im vorherigen Abschnitt hinzugefügt wurde, den folgenden Code hinzu:
 
 [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
 [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
-## <a name="test-the-form"></a>Testen des Formulars
+## <a name="test-the-form-behavior"></a>Testen des Formular Verhaltens
 
 Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wie erwartet ausfällt. Um eine Parallelitäts Verletzung zu simulieren, ändern Sie die Daten in der Datenbank nach dem Auffüllen von NorthwindDataSet.
 
@@ -195,16 +195,16 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 4. Erweitern Sie im **Server-Explorer** die Verbindung, die von der Anwendung verwendet wird, und erweitern Sie den Knoten **Tabellen**.
 
-5. Klicken Sie mit der rechten Maustaste auf die Tabelle **Customers** , und wählen Sie dann **Tabellendaten anzeigen**aus.
+5. Klicken Sie mit der rechten Maustaste auf die Tabelle **Customers** , und wählen Sie dann **Tabellendaten anzeigen** aus.
 
-6. Ändern Sie im ersten Datensatz (**ALFKI**) **ContactName** in **Maria Anders2**.
+6. Ändern Sie im ersten Datensatz ( **ALFKI** ) **ContactName** in **Maria Anders2**.
 
     > [!NOTE]
     > Navigieren Sie zu einer anderen Zeile, um einen Commit für die Änderung auszuführen.
 
 7. Wechseln Sie in das laufende Formular von "Configuration Manager Walkthrough".
 
-8. Ändern Sie im ersten Datensatz im Formular (**ALFKI**) **ContactName** in **Maria Anders1**.
+8. Ändern Sie im ersten Datensatz im Formular ( **ALFKI** ) **ContactName** in **Maria Anders1**.
 
 9. Klicken Sie auf die Schaltfläche **Speichern**.
 

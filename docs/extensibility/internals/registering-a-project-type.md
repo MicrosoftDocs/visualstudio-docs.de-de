@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05ac1f393632934f193f5f4efaaf9e5459ffbb14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705871"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407730"
 ---
 # <a name="registering-a-project-type"></a>Registrieren eines Projekttyps
 Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge erstellen, die es ermöglichen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] den Projekttyp zu erkennen und zu bearbeiten. Diese Registrierungseinträge werden in der Regel mithilfe einer Registrierungs Skriptdatei (. rgs) erstellt.
@@ -29,7 +29,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 
  Die folgenden Beispiele stammen aus HKEY_CLASSES_ROOT.
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
 
 ```
 \.figp
@@ -56,14 +56,14 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 |`@`|REG_SZ|`&Open in Visual Studio`|Standardanwendung, in der dieser Projekttyp geöffnet wird.|
 |`@`|REG_SZ|`devenv.exe "%1"`|Der Standardbefehl, der ausgeführt wird, wenn ein Projekt dieses Typs geöffnet wird.|
 
- Die folgenden Beispiele stammen aus HKEY_LOCAL_MACHINE und befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\99.0exp\packages].
+ Die folgenden Beispiele stammen aus HKEY_LOCAL_MACHINE und befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages].
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
 
 ```
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)
    @="FigPrj Project Package"
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"
    "CompanyName"="Microsoft"
    "ProductName"="Figure Project Sample"
    "ProductVersion"="9.0"
@@ -93,21 +93,21 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 |`FigProjectsEvents`|REG_SZ|Siehe Anweisung für Wert.|Bestimmt die für dieses Automatisierungs Ereignis zurückgegebene Text Zeichenfolge.|
 |`FigProjectItemsEvents`|REG_SZ|Siehe Anweisung für Wert.|Bestimmt die für dieses Automatisierungs Ereignis zurückgegebene Text Zeichenfolge.|
 
- Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\projects].
+ Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
-## <a name="example"></a>Beispiel
+## <a name="example-3"></a>Beispiel 3
 
 ```
 \{C061DB26-5833-11D2-96F5-000000000000} (The CLSID for projects of this type)
    @="FigPrj Project"
    "DisplayName"="#2"
    "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"
    "DisplayProjectFileExtensions"="#3"
    "PossibleProjectExtensions"="figp"
    "DefaultProjectExtension"=".figp"
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)
    @="#4"
    "CommonOpenFilesFilter"=dword:00000000
    "CommonFindFilesFilter"=dword:00000000
@@ -126,7 +126,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
    "SortPriority"=dword:000003e8
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)
    @="#6"
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
    "SortPriority"=dword:00000064
 ```
 
@@ -147,7 +147,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 
  In der folgenden Tabelle werden die im vorherigen Codesegment verfügbaren Filteroptionen aufgeführt.
 
-|Filter Option|BESCHREIBUNG|
+|Filter Option|Beschreibung|
 |-------------------|-----------------|
 |`CommonFindFilesFilter`|Gibt an, dass der Filter einer der allgemeinen Filter im Dialogfeld **in Dateien suchen** ist. Die allgemeinen Filter sind in der Filterliste aufgeführt, bevor die Filter als "Allgemein" gekennzeichnet sind.|
 |`CommonOpenFilesFilter`|Gibt an, dass es sich bei dem Filter um einen der allgemeinen Filter im Dialogfeld **Datei öffnen** handelt. Die allgemeinen Filter sind in der Filterliste aufgeführt, bevor die Filter als "Allgemein" gekennzeichnet sind.|
@@ -157,9 +157,9 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 
  Wenn für einen Filter mindestens eines dieser Flags festgelegt ist, wird der Filter standardmäßig im Dialogfeld **Vorhandenes Element hinzufügen** und im Dialogfeld **Datei öffnen** nach dem Auflisten der allgemeinen Filter verwendet. Der Filter wird im Dialogfeld **in Dateien suchen** nicht verwendet.
 
- Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\projects].
+ Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
-## <a name="example"></a>Beispiel
+## <a name="example-4"></a>Beispiel 4
 
 ```
 {FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4} (The CLSID for Enterprise Projects)
@@ -177,9 +177,9 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 |`SortPriority`|REG_DWORD|`41 (x29)`|Legt die Sortierreihenfolge der im Dialogfeld "neue Projekte" angezeigten Projekte fest.|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|der Wert 0 gibt an, dass Projekte dieses Typs nur im Dialogfeld Neues Projekt angezeigt werden.|
 
- Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\projects].
+ Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
-## <a name="example"></a>Beispiel
+## <a name="example-5"></a>Beispiel 5
 
 ```
 \{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3} (CLSID for Miscellaneous Files projects)
@@ -187,7 +187,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1
                                  (CLSID for Figures Project projects)
    @="#6"
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
    "SortPriority"=dword:00000064
 ```
 
@@ -198,9 +198,9 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Standardpfad der Elemente, die im Dialogfeld **Neues Element hinzufügen** angezeigt werden.|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Legt die Sortierreihenfolge für die Anzeige im Struktur Knoten des Dialog Felds **Neues Element hinzufügen** fest.|
 
- Das folgende Beispiel befindet sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\menüs].
+ Das folgende Beispiel befindet sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus].
 
-## <a name="example"></a>Beispiel
+## <a name="example-6"></a>Beispiel 6
 
 ```
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"
@@ -224,10 +224,10 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 |----------|----------|----------|-----------------|
 |% CLSID_Package%|REG_SZ|`,1000,1`|Die Ressource, mit der die Menü Informationen abgerufen werden sollen.|
 
- Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\newprojecttemplates].
+ Alle folgenden Beispiele befinden sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].
 
 ```
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
    @="#7"
    "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"
    "SortPriority"=dword:00000029
@@ -241,7 +241,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 |`SortPriority`|REG_DWORD|`41 (x29)`|Legt die Reihenfolge fest, in der Projekte im Struktur Knoten des Dialog Felds **Neues Projekt** angezeigt werden.|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|der Wert 0 gibt an, dass Projekte dieses Typs nur im Dialogfeld **Neues Projekt** angezeigt werden.|
 
- Das folgende Beispiel befindet sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0exp\installedproducts].
+ Das folgende Beispiel befindet sich in der Registrierung unter dem Schlüssel [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts].
 
 ```
 \FiguresProductSample
@@ -256,11 +256,11 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 
  Die VSZ-Dateien, die neue Projekttypen steuern, enthalten häufig einen RELATIVE_PATH Eintrag. Dieser Pfad ist relativ zum Pfad, der unter "\productdir Entry of the Project Type" im folgenden Setup Schlüssel angegeben ist:
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0exp\setup
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
 
  Die Projektvorlagen für Enterprise Frameworks fügen beispielsweise die folgenden Registrierungseinträge hinzu:
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0exp\setup\ef\productdir = c:\Programme\Microsoft Visual studio\enterpriseframeworks\
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = c:\Programme\Microsoft Visual studio\enterpriseframeworks\
 
  Das heißt, wenn Sie einen PROJECT_TYPE = EF-Eintrag in die VSZ-Datei einschließen, sucht die Umgebung Ihre VSZ-Dateien im zuvor angegebenen productdir-Verzeichnis.
 

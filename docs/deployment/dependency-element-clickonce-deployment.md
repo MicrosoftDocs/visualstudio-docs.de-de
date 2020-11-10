@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382961"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407678"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Abhängigkeits &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert die Version der zu installierenden Anwendung und den Speicherort des Anwendungs Manifests.
@@ -128,7 +128,7 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 ## <a name="remarks"></a>Hinweise
  Bereitstellungs Manifeste verfügen in der Regel über ein einzelnes- `assemblyIdentity` Element, das den Namen und die Version des Anwendungs Manifests identifiziert.
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
  Das folgende Codebeispiel zeigt ein- `dependency` Element in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs Manifest.
 
 ```xml
@@ -147,7 +147,7 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 </dependency>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
  Im folgenden Codebeispiel wird eine Abhängigkeit von einer Assembly angegeben, die bereits im GAC installiert ist.
 
 ```xml
@@ -158,7 +158,7 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 </dependency>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-3"></a>Beispiel 3
  Im folgenden Codebeispiel wird eine Abhängigkeit von einer bestimmten Version des Common Language Runtime angegeben.
 
 ```xml
@@ -169,7 +169,7 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 </dependency>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-4"></a>Beispiel 4
  Das folgende Codebeispiel gibt eine Betriebssystem Abhängigkeit an.
 
 ```xml
@@ -182,6 +182,6 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 </dependency>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
 - [\<dependency> gewisses](../deployment/dependency-element-clickonce-application.md)
