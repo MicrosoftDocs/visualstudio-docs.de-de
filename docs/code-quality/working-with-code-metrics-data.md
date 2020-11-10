@@ -1,6 +1,8 @@
 ---
 title: Codemetrikfenster
 ms.date: 12/12/2017
+description: Erfahren Sie, wie Sie die Analysedaten von Visual Studio-Codemetriken anzeigen, Filtern, neu anordnen und exportieren. Weitere Informationen finden Sie unter Erstellen von Arbeitsaufgaben basierend auf Code metrikergebnissen.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927977"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436809"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Verwenden des Fensters "Code Metrikergebnisse"
 
@@ -30,9 +32,9 @@ Das Fenster **Code Metrikergebnisse** wird automatisch angezeigt, wenn Sie Code 
 
 Sie können das Fenster Code Metrikergebnisse mithilfe einer der folgenden Menü Sequenzen anzeigen:
 
-- Wählen Sie im Menü **analysieren** die Option **Windows**-  >  **Codemetrikergebnisse**aus.
+- Wählen Sie im Menü **analysieren** die Option **Windows** -  >  **Codemetrikergebnisse** aus.
 
-- Wählen Sie im Menü **Ansicht** die Option **andere**Ergebnisse der Windows-  >  **Codemetriken**aus.
+- Wählen Sie im Menü **Ansicht** die Option **andere** Ergebnisse der Windows-  >  **Codemetriken** aus.
 
 Das Fenster **Code Metrikergebnisse** wird geöffnet, auch wenn es keine Ergebnisse enthält.
 
@@ -50,9 +52,9 @@ Das Dropdown Feld **Filter** enthält die Namen der Ergebnis Spalten. Wenn ein F
 
 1. Wählen Sie in der Liste **Filter** den Spaltennamen aus.
 
-2. Geben Sie in **Min**den minimalen Wert ein, der angezeigt werden soll.
+2. Geben Sie in **Min** den minimalen Wert ein, der angezeigt werden soll.
 
-3. Geben Sie in **Max**den Maximalwert ein, der angezeigt werden soll.
+3. Geben Sie in **Max** den Maximalwert ein, der angezeigt werden soll.
 
 4. Klicken Sie auf die Schaltfläche **Filter anwenden** .
 
@@ -66,7 +68,7 @@ Sie können Ergebnis Spalten im Fenster **Code Metrikergebnisse** hinzufügen od
 
 1. Klicken Sie auf die Schaltfläche **Spalten hinzufügen/entfernen** , oder klicken Sie mit der rechten Maustaste auf eine beliebige Spaltenüberschrift, und klicken Sie dann auf **Spalten**
 
-1. Aktivieren bzw. deaktivieren Sie im Dialogfeld **Spalten hinzufügen/entfernen** das Kontrollkästchen für die Spalte, die Sie hinzufügen oder entfernen möchten, und wählen Sie dann **OK**aus.
+1. Aktivieren bzw. deaktivieren Sie im Dialogfeld **Spalten hinzufügen/entfernen** das Kontrollkästchen für die Spalte, die Sie hinzufügen oder entfernen möchten, und wählen Sie dann **OK** aus.
 
 ### <a name="rearrange-columns"></a>Spalten neu anordnen
 
@@ -74,7 +76,7 @@ Sie können Ergebnis Spalten im Fenster **Code Metrikergebnisse** hinzufügen od
 
 1. Wählen Sie im Dialogfeld **Spalten hinzufügen/entfernen** die Spalte aus, die Sie verschieben möchten, und wählen Sie dann entweder den Pfeil nach oben oder den Pfeil nach unten aus.
 
-1. Wenn die Spalte an der gewünschten Position positioniert ist, wählen Sie **OK**aus.
+1. Wenn die Spalte an der gewünschten Position positioniert ist, wählen Sie **OK** aus.
 
 ## <a name="copy-data-to-the-clipboard-or-excel"></a>Kopieren von Daten in die Zwischenablage oder Excel
 
@@ -90,7 +92,7 @@ Weitere Informationen zu Azure Boards Arbeitsaufgaben finden Sie unter [Arbeitse
 
 1. Klicken Sie mit der rechten Maustaste auf das Ergebnis.
 
-2. Zeigen Sie auf **Arbeits Element erstellen**, und klicken Sie dann auf den Typ des Arbeits Elements, das Sie erstellen möchten (**Fehler**, **Aufgabe**usw.).
+2. Zeigen Sie auf **Arbeits Element erstellen** , und klicken Sie dann auf den Typ des Arbeits Elements, das Sie erstellen möchten ( **Fehler** , **Aufgabe** usw.).
 
 3. Vervollständigen Sie das Arbeits Element Formular, indem Sie alle erforderlichen Felder ausfüllen.
 

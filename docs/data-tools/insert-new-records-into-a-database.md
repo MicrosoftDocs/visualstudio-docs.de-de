@@ -1,5 +1,7 @@
 ---
 title: Einfügen neuer Datensätze in eine Datenbank
+description: Einfügen neuer Datensätze in eine Datenbank mithilfe der TableAdapter. Update-Methode, einer der DBDirect-Methoden des TableAdapter oder Befehls Objekten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281993"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436275"
 ---
 # <a name="insert-new-records-into-a-database"></a>Einfügen neuer Datensätze in eine Datenbank
 
@@ -34,7 +36,7 @@ Wenn Ihre Anwendung Datasets verwendet, um Daten zu speichern, verwenden Sie die
 
 Wenn Ihre Anwendung Objekte zum Speichern von Daten verwendet oder Sie eine präzisere Kontrolle über das Erstellen neuer Datensätze in der Datenbank wünschen, verwenden Sie die- `TableAdapter.Insert` Methode.
 
-Wenn der TableAdapter nicht über eine- `Insert` Methode verfügt, bedeutet dies, dass entweder der TableAdapter für die Verwendung gespeicherter Prozeduren konfiguriert ist oder seine- `GenerateDBDirectMethods` Eigenschaft auf festgelegt ist `false` . Legen Sie die-Eigenschaft des TableAdapter in `GenerateDBDirectMethods` `true` der **DataSet-Designer**auf fest, und speichern Sie dann das DataSet. Dadurch wird der TableAdapter neu generiert. Wenn der TableAdapter immer noch nicht über eine- `Insert` Methode verfügt, stellt die Tabelle wahrscheinlich nicht genügend Schema Informationen zur Verfügung, um zwischen einzelnen Zeilen zu unterscheiden (es kann z. b. kein Primärschlüssel für die Tabelle festgelegt werden).
+Wenn der TableAdapter nicht über eine- `Insert` Methode verfügt, bedeutet dies, dass entweder der TableAdapter für die Verwendung gespeicherter Prozeduren konfiguriert ist oder seine- `GenerateDBDirectMethods` Eigenschaft auf festgelegt ist `false` . Legen Sie die-Eigenschaft des TableAdapter in `GenerateDBDirectMethods` `true` der **DataSet-Designer** auf fest, und speichern Sie dann das DataSet. Dadurch wird der TableAdapter neu generiert. Wenn der TableAdapter immer noch nicht über eine- `Insert` Methode verfügt, stellt die Tabelle wahrscheinlich nicht genügend Schema Informationen zur Verfügung, um zwischen einzelnen Zeilen zu unterscheiden (es kann z. b. kein Primärschlüssel für die Tabelle festgelegt werden).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Einfügen neuer Datensätze mithilfe von TableAdapters
 
@@ -84,6 +86,6 @@ Im folgenden Beispiel wird veranschaulicht, wie Datensätze mithilfe des Befehls
 
 Sie müssen Zugriff auf die Datenbank haben, mit der Sie eine Verbindung herstellen möchten, sowie die Berechtigung zum Ausführen von Einfügungen in die gewünschte Tabelle.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

@@ -1,5 +1,7 @@
 ---
 title: Behandeln einer Parallelitätsausnahme
+description: Behandeln Sie eine neben läufigkeits Ausnahme (System. Data. DBAN-cyexception), die ausgelöst wird, wenn zwei Benutzer gleichzeitig versuchen, dieselben Daten in einer Datenbank zu ändern.
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407665"
+ms.locfileid: "94436445"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 
@@ -212,6 +214,6 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
    Wenn Sie **Nein** auswählen, wird das Update abgebrochen, und das DataSet wird mit den Werten aktualisiert, die derzeit in der Datenbank gespeichert sind. Wenn Sie **Ja** auswählen, wird der vorgeschlagene Wert in die Datenbank geschrieben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

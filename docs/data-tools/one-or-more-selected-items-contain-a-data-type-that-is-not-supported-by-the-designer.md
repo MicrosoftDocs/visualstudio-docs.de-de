@@ -1,6 +1,6 @@
 ---
 title: Nicht unterstützte Datentypen
-description: Mindestens eines der ausgewählten Elemente enthält einen Datentyp, der nicht vom Designer unterstützt wird.
+description: Mindestens ein ausgewähltes Element enthält einen Datentyp, der vom Designer nicht unterstützt wird. Informationen zu dieser Visual Studio O/R-Designer-Meldung anzeigen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 167146b9a7938e5498e8db023602b2e13f74379c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034077"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436132"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Mindestens eines der ausgewählten Elemente enthält einen Datentyp, der nicht vom Designer unterstützt wird.
 
-Mindestens eines der aus **Server-Explorer** oder **Datenbank-Explorer** auf den **o/r-Designer** gezogenen Elemente enthält einen Datentyp, der vom **o/r-Designer**nicht unterstützt wird, z. b. [CLR-benutzerdefinierte Typen](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Mindestens eines der aus **Server-Explorer** oder **Datenbank-Explorer** auf den **o/r-Designer** gezogenen Elemente enthält einen Datentyp, der vom **o/r-Designer** nicht unterstützt wird, z. b. [CLR-benutzerdefinierte Typen](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
@@ -27,6 +27,6 @@ Mindestens eines der aus **Server-Explorer** oder **Datenbank-Explorer** auf den
 
 2. Ziehen Sie die Ansicht von **Server-Explorer** oder **Datenbank-Explorer** auf den Designer.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

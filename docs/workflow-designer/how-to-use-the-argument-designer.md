@@ -1,5 +1,7 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Verwenden des Argument-Designers'
+description: Erfahren Sie mehr über den Argument-Designer und die Verwendung des Argument-Designers, um zuzulassen, dass Daten in eine und aus einer Aktivität fließen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3c0fe3de3a9ab74ed09c1be45e0d39a71a5b7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca39eaf94e5dca3159a9f3740dae0f87257d9c1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817449"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437865"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Vorgehensweise: Verwenden des Argument-Designers
 
@@ -28,12 +30,12 @@ Mit dem Argument-Designer können Daten problemlos in eine und aus einer Aktivit
 
 2. Öffnen Sie den Argument-Designer, indem Sie auf die Schaltfläche **Argumente** in der linken unteren Ecke der Entwurfs Canvas klicken. Der Argument-Designer wird angezeigt.
 
-3. Klicken Sie auf die leere Zeile mit der Bezeichnung **Create Argument**. Dadurch wird eine neue Zeile mit einem neuen Argument mit den folgenden Standardwerten hinzugefügt: argumentx für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der automatisch erhöht wird, um eindeutige Argument Namen zu erstellen, **in** für die **Richtung**und **Zeichenfolge** für den **Argumenttyp**. Für den **Standardwert**wird kein Wert hinzugefügt. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.
+3. Klicken Sie auf die leere Zeile mit der Bezeichnung **Create Argument**. Dadurch wird eine neue Zeile mit einem neuen Argument mit den folgenden Standardwerten hinzugefügt: argumentx für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der automatisch erhöht wird, um eindeutige Argument Namen zu erstellen, **in** für die **Richtung** und **Zeichenfolge** für den **Argumenttyp**. Für den **Standardwert** wird kein Wert hinzugefügt. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.
 
     > [!NOTE]
     > Wählen Sie zum Löschen eines Arguments das Argument aus, indem Sie darauf klicken, und drücken Sie dann die ENTF **-Taste.**
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden des Workflow-Designers](developing-applications-with-the-workflow-designer.md)
 - [Variablen und Argumente](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

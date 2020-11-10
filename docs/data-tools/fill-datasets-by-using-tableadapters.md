@@ -1,5 +1,7 @@
 ---
 title: Füllen von Datasets mit TableAdapters
+description: Füllen Sie Datasets mithilfe von TableAdapters. Eine TableAdapter-Komponente füllt ein DataSet mit Daten aus der Datenbank auf Grundlage einer oder mehrerer von Ihnen angegebenen Abfragen oder gespeicherten Prozeduren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282435"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436458"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Füllen von Datasets mit TableAdapters
 
@@ -52,7 +54,7 @@ TableAdapters sind vom Designer generierte Komponenten, die eine Verbindung mit 
 
 ![Datenfluss in einer Clientanwendung](../data-tools/media/clientdatadiagram.gif)
 
-Obwohl TableAdapters mit dem **DataSet-Designer**entworfen wurden, werden die TableAdapter-Klassen nicht als geschsted Klassen von generiert  <xref:System.Data.DataSet> . Sie befinden sich in separaten Namespaces, die für jedes Dataset spezifisch sind. Wenn Sie z. b. ein DataSet mit dem Namen haben `NorthwindDataSet` , befinden sich die TableAdapters, die s in zugeordnet sind,  <xref:System.Data.DataTable> im- `NorthwindDataSet` `NorthwindDataSetTableAdapters` Namespace. Um programmgesteuert auf einen speziellen TableAdapter zuzugreifen, müssen Sie eine neue Instanz des TableAdapter deklarieren. Beispiel:
+Obwohl TableAdapters mit dem **DataSet-Designer** entworfen wurden, werden die TableAdapter-Klassen nicht als geschsted Klassen von generiert  <xref:System.Data.DataSet> . Sie befinden sich in separaten Namespaces, die für jedes Dataset spezifisch sind. Wenn Sie z. b. ein DataSet mit dem Namen haben `NorthwindDataSet` , befinden sich die TableAdapters, die s in zugeordnet sind,  <xref:System.Data.DataTable> im- `NorthwindDataSet` `NorthwindDataSetTableAdapters` Namespace. Um programmgesteuert auf einen speziellen TableAdapter zuzugreifen, müssen Sie eine neue Instanz des TableAdapter deklarieren. Beispiel:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -63,7 +65,7 @@ Wenn Sie einen TableAdapter erstellen, definieren Sie mit der ersten Abfrage ode
 
 ## <a name="tableadapter-update-commands"></a>Aktualisierungsbefehle für TableAdapter
 
-Die Aktualisierungs Funktionalität eines TableAdapters hängt davon ab, wie viele Informationen in der Haupt Abfrage des **TableAdapter-Assistenten**verfügbar sind. Beispielsweise werden TableAdapters, die so konfiguriert sind, dass Sie Werte aus mehreren Tabellen abrufen (mit einem `JOIN` ), skalare Werte, Sichten oder die Ergebnisse von Aggregatfunktionen, nicht anfänglich mit der Möglichkeit erstellt, Aktualisierungen an die zugrunde liegende Datenbank zurückzusenden. Sie können jedoch die `INSERT` `UPDATE` -,-und- `DELETE` Befehle im **Eigenschaften** Fenster manuell konfigurieren.
+Die Aktualisierungs Funktionalität eines TableAdapters hängt davon ab, wie viele Informationen in der Haupt Abfrage des **TableAdapter-Assistenten** verfügbar sind. Beispielsweise werden TableAdapters, die so konfiguriert sind, dass Sie Werte aus mehreren Tabellen abrufen (mit einem `JOIN` ), skalare Werte, Sichten oder die Ergebnisse von Aggregatfunktionen, nicht anfänglich mit der Möglichkeit erstellt, Aktualisierungen an die zugrunde liegende Datenbank zurückzusenden. Sie können jedoch die `INSERT` `UPDATE` -,-und- `DELETE` Befehle im **Eigenschaften** Fenster manuell konfigurieren.
 
 ## <a name="tableadapter-queries"></a>TableAdapter-Abfragen
 
@@ -81,11 +83,11 @@ Jedes Mal, wenn Sie eine Abfrage ausführen, um die Datentabelle eines TableAdap
 
 ## <a name="tableadapter-inheritance"></a>TableAdapter-Vererbung
 
-Mit TableAdapters wird die Funktionalität von Standarddaten Adaptern erweitert, indem eine konfigurierte Klasse gekapselt wird <xref:System.Data.Common.DataAdapter> . Standardmäßig erbt der TableAdapter von der <xref:System.ComponentModel.Component> -Klasse und kann nicht in die- <xref:System.Data.Common.DataAdapter> Klasse umgewandelt werden. Das Umwandeln eines TableAdapter in die <xref:System.Data.Common.DataAdapter> Klasse führt zu einem <xref:System.InvalidCastException> Fehler. Um die Basisklasse eines TableAdapter zu ändern, können Sie eine Klasse angeben, die von <xref:System.ComponentModel.Component> in der **Basisklassen** Eigenschaft des TableAdapter im **DataSet-Designer**abgeleitet ist.
+Mit TableAdapters wird die Funktionalität von Standarddaten Adaptern erweitert, indem eine konfigurierte Klasse gekapselt wird <xref:System.Data.Common.DataAdapter> . Standardmäßig erbt der TableAdapter von der <xref:System.ComponentModel.Component> -Klasse und kann nicht in die- <xref:System.Data.Common.DataAdapter> Klasse umgewandelt werden. Das Umwandeln eines TableAdapter in die <xref:System.Data.Common.DataAdapter> Klasse führt zu einem <xref:System.InvalidCastException> Fehler. Um die Basisklasse eines TableAdapter zu ändern, können Sie eine Klasse angeben, die von <xref:System.ComponentModel.Component> in der **Basisklassen** Eigenschaft des TableAdapter im **DataSet-Designer** abgeleitet ist.
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter-Methoden und -Eigenschaften
 
-Die TableAdapter-Klasse ist kein .NET-Typ. Dies bedeutet, dass Sie Sie nicht in der Dokumentation oder der **Objektkatalog**nachschlagen können. Sie wird zur Entwurfszeit erstellt, wenn Sie einen der zuvor erwähnten Assistenten verwenden. Der Name, der einem TableAdapter bei der Erstellung zugewiesen wird, basiert auf dem Namen der Tabelle, mit der Sie arbeiten. Wenn Sie z. b. einen TableAdapter auf der Grundlage einer Tabelle in einer Datenbank mit dem Namen erstellen `Orders` , wird der TableAdapter benannt `OrdersTableAdapter` . Sie können den Klassennamen für den TableAdapter ändern, indem Sie die **Name**-Eigenschaft im **DataSet-Designer** verwenden.
+Die TableAdapter-Klasse ist kein .NET-Typ. Dies bedeutet, dass Sie Sie nicht in der Dokumentation oder der **Objektkatalog** nachschlagen können. Sie wird zur Entwurfszeit erstellt, wenn Sie einen der zuvor erwähnten Assistenten verwenden. Der Name, der einem TableAdapter bei der Erstellung zugewiesen wird, basiert auf dem Namen der Tabelle, mit der Sie arbeiten. Wenn Sie z. b. einen TableAdapter auf der Grundlage einer Tabelle in einer Datenbank mit dem Namen erstellen `Orders` , wird der TableAdapter benannt `OrdersTableAdapter` . Sie können den Klassennamen für den TableAdapter ändern, indem Sie die **Name** -Eigenschaft im **DataSet-Designer** verwenden.
 
 Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften von TableAdapters:
 
@@ -99,7 +101,7 @@ Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften von T
 
 ## <a name="tableadapter-update-method"></a>TableAdapter-Aktualisierungsmethode
 
-TableAdapters verwenden zum Lesen und Schreiben in Datenbanken Datenbefehle. Verwenden Sie die anfängliche `Fill` (Main)-Abfrage des TableAdapter als Grundlage für das Erstellen des Schemas der zugeordneten Datentabelle sowie der `InsertCommand` Befehle, und, die `UpdateCommand` `DeleteCommand` der Methode zugeordnet sind `TableAdapter.Update` . Durch Aufrufen der-Methode eines TableAdapters `Update` werden die Anweisungen ausgeführt, die beim ursprünglichen Konfigurieren des TableAdapter erstellt wurden, und nicht eine der zusätzlichen Abfragen, die Sie mit dem **Konfigurations-Assistenten für TableAdapter-Abfragen**hinzugefügt haben.
+TableAdapters verwenden zum Lesen und Schreiben in Datenbanken Datenbefehle. Verwenden Sie die anfängliche `Fill` (Main)-Abfrage des TableAdapter als Grundlage für das Erstellen des Schemas der zugeordneten Datentabelle sowie der `InsertCommand` Befehle, und, die `UpdateCommand` `DeleteCommand` der Methode zugeordnet sind `TableAdapter.Update` . Durch Aufrufen der-Methode eines TableAdapters `Update` werden die Anweisungen ausgeführt, die beim ursprünglichen Konfigurieren des TableAdapter erstellt wurden, und nicht eine der zusätzlichen Abfragen, die Sie mit dem **Konfigurations-Assistenten für TableAdapter-Abfragen** hinzugefügt haben.
 
 Wenn Sie einen TableAdapter verwenden, führt er effektiv dieselben Vorgänge mit den Befehlen aus, die Sie normalerweise ausführen würden. Wenn Sie z. b. die-Methode des Adapters aufzurufen `Fill` , führt der Adapter den Daten Befehl in seiner `SelectCommand` -Eigenschaft aus und verwendet einen Daten Reader (z. b <xref:System.Data.SqlClient.SqlDataReader> .), um das Resultset in die Datentabelle zu laden. Wenn Sie die-Methode des Adapters aufzurufen, wird auf ähnliche Weise `Update` der entsprechende Befehl (in den `UpdateCommand` `InsertCommand` Eigenschaften, und `DeleteCommand` ) für jeden geänderten Datensatz in der Datentabelle ausgeführt.
 
@@ -129,14 +131,14 @@ Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften der- 
 |Member|BESCHREIBUNG|
 |------------|-----------------|
 |`UpdateAll`-Methode|Speichert alle Daten aus allen Datentabellen.|
-|`BackUpDataSetBeforeUpdate`-Eigenschaft|Bestimmt, ob vor dem Ausführen der-Methode eine Sicherungskopie des Datasets erstellt wird `TableAdapterManager.UpdateAll` . Booleschen.|
+|`BackUpDataSetBeforeUpdate` -Eigenschaft|Bestimmt, ob vor dem Ausführen der-Methode eine Sicherungskopie des Datasets erstellt wird `TableAdapterManager.UpdateAll` . Booleschen.|
 |*TableName* `TableAdapter` Property|Stellt einen TableAdapter dar. Der generierte TableAdapterManager enthält eine Eigenschaft für jeden, der von `TableAdapter` ihm verwaltet wird. Beispielsweise generiert ein DataSet mit einer Customers-und Orders-Tabelle mit einem TableAdapterManager, der die-Eigenschaft und die-Eigenschaft enthält `CustomersTableAdapter` `OrdersTableAdapter` .|
-|`UpdateOrder`-Eigenschaft|Steuert die Reihenfolge der einzelnen INSERT-, Update-und DELETE-Befehle. Legen Sie diesen Wert auf einen der Werte in der- `TableAdapterManager.UpdateOrderOption` Enumeration fest.<br /><br /> Standardmäßig `UpdateOrder` ist auf **InsertUpdateDelete**festgelegt. Dies bedeutet, dass Einfügungen, Updates und Löschungen für alle Tabellen im DataSet durchgeführt werden.|
+|`UpdateOrder` -Eigenschaft|Steuert die Reihenfolge der einzelnen INSERT-, Update-und DELETE-Befehle. Legen Sie diesen Wert auf einen der Werte in der- `TableAdapterManager.UpdateOrderOption` Enumeration fest.<br /><br /> Standardmäßig `UpdateOrder` ist auf **InsertUpdateDelete** festgelegt. Dies bedeutet, dass Einfügungen, Updates und Löschungen für alle Tabellen im DataSet durchgeführt werden.|
 
 ## <a name="security"></a>Sicherheit
 
 Wenn Sie Daten Befehle verwenden, bei denen eine CommandType-Eigenschaft auf festgelegt <xref:System.Data.CommandType.Text> ist, sollten Sie die von einem Client gesendeten Informationen sorgfältig überprüfen, bevor Sie Sie an die Datenbank übergeben. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in eine Datenbank übertragen, sollten Sie stets überprüfen, ob die Informationen gültig sind. Es wird empfohlen, nach Möglichkeit immer parametrisierte Abfragen oder gespeicherte Prozeduren zu verwenden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Datasettools](../data-tools/dataset-tools-in-visual-studio.md)

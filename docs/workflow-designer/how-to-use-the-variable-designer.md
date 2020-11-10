@@ -1,5 +1,7 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Verwenden des Variablen-Designers'
+description: Erfahren Sie, wie Sie den Variablen-Designer verwenden können, um Variablen zur Verwendung in Daten Bindungs Szenarien und Bedingungs Anweisungen zu erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8dc5e402fcf3bedabe2b0f7fe606dfe807525ab
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817410"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437826"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Vorgehensweise: Verwenden des Variablen-Designers
 
@@ -31,12 +33,12 @@ Der Variablen-Designer dient zum Erstellen von Variablen in Datenbindungsszenari
 
 3. Öffnen Sie den Variablen-Designer, indem Sie auf die Schaltfläche **Variablen** in der unteren linken Ecke der Entwurfs Canvas klicken. Der Variablen-Designer wird angezeigt.
 
-4. Klicken Sie auf die leere Zeile mit der Bezeichnung **Variable erstellen**. Dadurch wird eine neue Zeile mit einer neuen Variablen mit den folgenden Standardwerten hinzugefügt: VariableX für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der automatisch inkrementiert wird, um eindeutige Variablennamen, **Zeichenfolge** für den **Variablentyp**und **Sequenz** für den **Bereich**zu erstellen. Für den **Standard**Wert wird kein Wert hinzugefügt. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.
+4. Klicken Sie auf die leere Zeile mit der Bezeichnung **Variable erstellen**. Dadurch wird eine neue Zeile mit einer neuen Variablen mit den folgenden Standardwerten hinzugefügt: VariableX für den **Namen** , wobei x eine ganze Zahl mit einem Anfangswert von 1 ist, der automatisch inkrementiert wird, um eindeutige Variablennamen, **Zeichenfolge** für den **Variablentyp** und **Sequenz** für den **Bereich** zu erstellen. Für den **Standard** Wert wird kein Wert hinzugefügt. Sie können diese Werte jederzeit während des Workflowentwurfs ändern.
 
     > [!NOTE]
     > Wählen Sie zum Löschen einer Variablen die Variable aus, indem Sie darauf klicken, und drücken Sie dann die ENTF **-Taste.**
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden des Workflow-Designers](developing-applications-with-the-workflow-designer.md)
 - [Variablen und Argumente](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

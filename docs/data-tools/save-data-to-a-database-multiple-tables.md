@@ -1,5 +1,7 @@
 ---
 title: Speichern von Daten in einer Datenbank (mehrere Tabellen)
+description: In dieser exemplarischen Vorgehensweise können Sie Daten aus mehreren Tabellen in einer Datenbank mithilfe von datasettools in Visual Studio speichern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281642"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436041"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Speichern von Daten in einer Datenbank (mehrere Tabellen)
 
@@ -45,7 +47,7 @@ In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranscha
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
-1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer** können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
@@ -67,29 +69,29 @@ Erstellen Sie ein neues **Windows Forms-App** -Projekt für c# oder Visual Basic
 
 In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle aus der Northwind-Datenbank erstellt. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Weitere Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter Gewusst [wie: Installieren von Beispiel Datenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1. Wählen Sie im Menü **Daten** die Option **Datenquellen anzeigen**aus.
+1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
    Das Fenster **Datenquellen** wird geöffnet.
 
 2. Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
-3. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen** die Option **Datenbank**aus, und klicken Sie dann auf **weiter**.
+3. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen** die Option **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
 4. Führen Sie auf dem Bildschirm **Wählen Sie Ihre Datenverbindung** aus einen der folgenden Schritte aus:
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         - oder -
+         \- oder -
 
     - Wählen Sie **Neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen/ändern** zu öffnen.
 
 5. Wenn für die Datenbank ein Kennwort erforderlich ist, wählen Sie die Option zum einschließen sensibler Daten aus, und klicken Sie dann auf **weiter**.
 
-6. Wählen Sie unter **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern**die Option **weiter**aus.
+6. Wählen Sie unter **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern** die Option **weiter** aus.
 
 7. Erweitern Sie auf dem Bildschirm **Wählen Sie Ihre Datenbankobjekte** aus den Knoten **Tabellen** .
 
-8. Wählen Sie die Tabellen **Customers** und **Orders** aus, und klicken Sie dann auf **Fertig**stellen.
+8. Wählen Sie die Tabellen **Customers** und **Orders** aus, und klicken Sie dann auf **Fertig** stellen.
 
      **NorthwindDataSet** wird dem Projekt hinzugefügt. Die Tabellen werden im Fenster **Datenquellen** angezeigt.
 
@@ -144,6 +146,6 @@ Sie können die Datenbank aktualisieren, indem Sie die `Update`-Methoden der Tab
 
 4. Überprüfen Sie die Werte in der Datenbank, um sicherzustellen, dass die Änderungen gespeichert wurden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

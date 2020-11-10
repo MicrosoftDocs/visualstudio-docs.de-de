@@ -1,18 +1,20 @@
 ---
 title: Regelsatz für gemischte empfohlene Mindestregeln
 ms.date: 11/04/2016
+description: Erfahren Sie mehr über den gemischten Regel Satz für empfohlene Regeln in Visual Studio. Siehe Beschreibungen von Regeln für C++-Projekte, die die Common Language Runtime unterstützen.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 324595021a11fb533a1eeb1936df6f4894d4fbce
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: bc30012dc025c5fc92f6d589c8e40740d689a86b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658450"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437069"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Regelsatz für gemischte empfohlene Mindestregeln
 
@@ -38,20 +40,20 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C6201](/cpp/code-quality/c6201)|Index überschreitet maximale Puffergröße|
 |[C6214](/cpp/code-quality/c6214)|Ungültige Umwandlung von HRESULT in bool|
 |[C6215](/cpp/code-quality/c6215)|Ungültige Umwandlung von bool in HRESULT.|
-|[C6216](/cpp/code-quality/c6216)|Ungültige, vom Compiler eingefügte Umwandlung von bool in HRESULT|
+|[C6216](/cpp/code-quality/c6216)|Ungültige Compiler-Inserted Umwandlung von bool in HRESULT|
 |[C6217](/cpp/code-quality/c6217)|Ungültiger HRESULT-Test mit Not|
 |[C6220](/cpp/code-quality/c6220)|Ungültiger HRESULT-Vergleich mit-1.|
 |[C6226](/cpp/code-quality/c6226)|Ungültige HRESULT-Zuweisung zu-1.|
 |[C6230](/cpp/code-quality/c6230)|Ungültige HRESULT-Verwendung als boolescher Wert.|
-|[C6235](/cpp/code-quality/c6235)|Konstante ungleich 0 (null) mit logischem or|
-|[C6236](/cpp/code-quality/c6236)|Logisches OR mit Konstante ungleich 0 (null)|
-|[C6237](/cpp/code-quality/c6237)|NULL mit logischer und verliert Nebeneffekte|
+|[C6235](/cpp/code-quality/c6235)|Konstante ungleich 0 (null) mit Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|Logical-Or mit konstanter Konstante|
+|[C6237](/cpp/code-quality/c6237)|NULL, wenn Logical-And Nebeneffekte verliert|
 |[C6242](/cpp/code-quality/c6242)|Lokale Entladung erzwungen|
 |[C6248](/cpp/code-quality/c6248)|Erstellen einer NULL-DACL|
 |[C6250](/cpp/code-quality/c6250)|Nicht freigegebene Adress Deskriptoren|
 |[C6255](/cpp/code-quality/c6255)|Ungeschützte Verwendung von "Zuweisung"|
 |[C6258](/cpp/code-quality/c6258)|Verwenden des Beendigungs Threads|
-|[C6259](/cpp/code-quality/c6259)|Unzustellbaren Code in einem bitweisen oder eingeschränkten Switch|
+|[C6259](/cpp/code-quality/c6259)|Unzustellbaren Code in Bitwise-Or eingeschränkten Switch|
 |[C6260](/cpp/code-quality/c6260)|Verwendung von Byte-Arithmetik|
 |[C6262](/cpp/code-quality/c6262)|Übermäßige Stapel Verwendung|
 |[C6263](/cpp/code-quality/c6263)|Verwenden von "Zuweisung in Schleife"|
@@ -64,18 +66,18 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C6274](/cpp/code-quality/c6274)|Nicht-Zeichenargument für Formatfunktion|
 |[C6276](/cpp/code-quality/c6276)|Ungültige Zeichenfolgenumwandlung|
 |[C6277](/cpp/code-quality/c6277)|Ungültiger CreateProcess-Aufruf|
-|[C6278](/cpp/code-quality/c6278)|Array-neue skalare Lösch Konflikte|
-|[C6279](/cpp/code-quality/c6279)|Skalar-neues Array-DELETE-Konflikt|
-|[C6280](/cpp/code-quality/c6280)|Nicht übereinstimmende Speicher Belegungs Zuordnung|
+|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete stimmen nicht überein.|
+|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete stimmen nicht überein.|
+|[C6280](/cpp/code-quality/c6280)|Nicht übereinstimmender Arbeitsspeicher Allocation-Deallocation|
 |[C6281](/cpp/code-quality/c6281)|Bitweise Beziehungs Rangfolge|
 |[C6282](/cpp/code-quality/c6282)|Zuweisung ersetzt Test|
-|[C6283](/cpp/code-quality/c6283)|Primitives Array-neue skalare Lösch Konflikte|
+|[C6283](/cpp/code-quality/c6283)|Primitive Array-New Scalar-Delete nicht übereinstimmende|
 |[C6284](/cpp/code-quality/c6284)|Ungültiges Objekt-Argument für Formatfunktion|
-|[C6285](/cpp/code-quality/c6285)|Logisches OR von Konstanten|
-|[C6286](/cpp/code-quality/c6286)|Logischer or-Wert ungleich 0 (null) und keine Nebeneffekte|
+|[C6285](/cpp/code-quality/c6285)|Logical-Or von Konstanten|
+|[C6286](/cpp/code-quality/c6286)|Logical-Or ungleich 0 (null), ohne Nebeneffekte zu verlieren|
 |[C6287](/cpp/code-quality/c6287)|Redundanter Test|
-|[C6288](/cpp/code-quality/c6288)|Gegenseitige Einbindung über logisches and ist false|
-|[C6289](/cpp/code-quality/c6289)|Gegenseitiger Ausschluss über logisches OR ist true|
+|[C6288](/cpp/code-quality/c6288)|Die gegenseitige Einbindung über Logical-And ist false.|
+|[C6289](/cpp/code-quality/c6289)|Gegenseitiger Ausschluss über Logical-Or ist "true"|
 |[C6290](/cpp/code-quality/c6290)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem AND-Operator|
 |[C6291](/cpp/code-quality/c6291)|Logischer NOT-Operator hat Vorrang gegenüber bitweisem OR-Operator|
 |[C6292](/cpp/code-quality/c6292)|Schleife zählt vom Maximum nach oben|
@@ -92,7 +94,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C6308](/cpp/code-quality/c6308)|Rezuweisung-Leck|
 |[C6310](/cpp/code-quality/c6310)|Ungültige Ausnahme Filter Konstante|
 |[C6312](/cpp/code-quality/c6312)|Ausnahme Ausführungs Schleife fortsetzen|
-|[C6314](/cpp/code-quality/c6314)|Bitweiser or-Rangfolge|
+|[C6314](/cpp/code-quality/c6314)|Bitwise-Or Rangfolge|
 |[C6317](/cpp/code-quality/c6317)|Nicht Komplement|
 |[C6318](/cpp/code-quality/c6318)|Ausnahme Suche fortsetzen|
 |[C6319](/cpp/code-quality/c6319)|Durch Komma ignoriert|
@@ -103,7 +105,7 @@ Fügen Sie diesen Regelsatz in einen benutzerdefinierten Regelsatz ein, den Sie 
 |[C6333](/cpp/code-quality/c6333)|Ungültige VirtualFree-Größe|
 |[C6335](/cpp/code-quality/c6335)|Verlust des Prozess Handles|
 |[C6381](/cpp/code-quality/c6381)|Informationen zum Herunterfahren fehlen|
-|[C6383](/cpp/code-quality/c6383)|Element-Anzahl Byte-Anzahl Pufferüberlauf|
+|[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count Pufferüberlauf|
 |[C6384](/cpp/code-quality/c6384)|Zeigergrößendivision|
 |[C6385](/cpp/code-quality/c6385)|Leseüberlauf|
 |[C6386](/cpp/code-quality/c6386)|Schreibüberlauf|

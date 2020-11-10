@@ -1,5 +1,6 @@
 ---
 title: Verwenden von gespeicherten Prozeduren in LINQ to SQL zum Aktualisieren von Daten
+description: Verwenden Sie gespeicherte Prozeduren im LINQ to SQL objektrelationaler Designer (O/R-Designer), um Updates, Einfügungen und Löschungen von Daten auszuführen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036313"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436412"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)
 
@@ -34,9 +35,9 @@ Standardmäßig wird die Logik zum Aktualisieren einer Datenbank (Einfügungen, 
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>So weisen Sie gespeicherte Prozeduren zu, um das Standardverhalten einer Entitätsklasse zu überschreiben
 
-1. Öffnen Sie die **LINQ to SQL**-Datei im Designer. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML**-Datei.)
+1. Öffnen Sie die **LINQ to SQL** -Datei im Designer. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML** -Datei.)
 
-2. Erweitern Sie im **Server-Explorer** oder **Datenbank-Explorer** den Knoten **Gespeicherte Prozeduren**, und suchen Sie die gespeicherten Prozeduren, die für die Einfüge-, Update- und/oder Löschbefehle der Entitätsklasse verwendet werden sollen.
+2. Erweitern Sie im **Server-Explorer** oder **Datenbank-Explorer** den Knoten **Gespeicherte Prozeduren** , und suchen Sie die gespeicherten Prozeduren, die für die Einfüge-, Update- und/oder Löschbefehle der Entitätsklasse verwendet werden sollen.
 
 3. Ziehen Sie die gespeicherte Prozedur in den **O/R-Designer**.
 
@@ -44,15 +45,15 @@ Standardmäßig wird die Logik zum Aktualisieren einer Datenbank (Einfügungen, 
 
 4. Wählen Sie die Entitätsklasse aus, für die die gespeicherte Prozedur zur Durchführung von Updates verwendet werden soll.
 
-5. Wählen Sie im Fenster **Eigenschaften** den Befehl aus, der überschrieben werden soll (**Einfügen**, **Aktualisieren** oder **Löschen**).
+5. Wählen Sie im Fenster **Eigenschaften** den Befehl aus, der überschrieben werden soll ( **Einfügen** , **Aktualisieren** oder **Löschen** ).
 
-6. Klicken Sie auf die Auslassungszeichen (...) neben den Wörtern **Laufzeit verwenden**, um das Dialogfeld **Verhalten konfigurieren** zu öffnen.
+6. Klicken Sie auf die Auslassungszeichen (...) neben den Wörtern **Laufzeit verwenden** , um das Dialogfeld **Verhalten konfigurieren** zu öffnen.
 
 7. Klicken Sie auf **Anpassen**.
 
 8. Wählen Sie die gewünschte gespeicherte Prozedur in der Liste **Anpassen** aus.
 
-9. Untersuchen Sie die Listen **Methodenargumente** und **Klasseneigenschaften**, um zu überprüfen, ob die **Methodenargumente** den entsprechenden **Klasseneigenschaften** zugeordnet sind. Ordnen Sie die ursprünglichen Methodenargumente ( `Original_<ArgumentName>` ) den ursprünglichen Eigenschaften ( `<PropertyName> (Original)` ) für die `Update` Befehle und zu `Delete` .
+9. Untersuchen Sie die Listen **Methodenargumente** und **Klasseneigenschaften** , um zu überprüfen, ob die **Methodenargumente** den entsprechenden **Klasseneigenschaften** zugeordnet sind. Ordnen Sie die ursprünglichen Methodenargumente ( `Original_<ArgumentName>` ) den ursprünglichen Eigenschaften ( `<PropertyName> (Original)` ) für die `Update` Befehle und zu `Delete` .
 
     > [!NOTE]
     > Standardmäßig werden Methodenargumente Klasseneigenschaften zugeordnet, wenn die Namen übereinstimmen. Wenn geänderte Eigenschaftennamen von Tabelle und Entitätsklasse nicht mehr übereinstimmen, kann es notwendig sein, die entsprechende Klasseneigenschaft für die Zuordnung auszuwählen, wenn der Designer die korrekte Zuordnung nicht ermitteln kann.
@@ -60,11 +61,11 @@ Standardmäßig wird die Logik zum Aktualisieren einer Datenbank (Einfügungen, 
 10. Klicken Sie auf **OK** oder **Übernehmen**.
 
     > [!NOTE]
-    > Sie können das Verhalten für jede Kombination aus Klasse und Verhalten weiterhin konfigurieren, **solange Sie auf Übernehmen klicken,** nachdem Sie die Änderungen vorgenommen haben. Wenn Sie die Klasse oder das Verhalten ändern, bevor **Sie auf über**nehmen klicken, wird ein Warn Dialogfeld angezeigt, in dem Sie die Änderungen übernehmen können.
+    > Sie können das Verhalten für jede Kombination aus Klasse und Verhalten weiterhin konfigurieren, **solange Sie auf Übernehmen klicken,** nachdem Sie die Änderungen vorgenommen haben. Wenn Sie die Klasse oder das Verhalten ändern, bevor **Sie auf über** nehmen klicken, wird ein Warn Dialogfeld angezeigt, in dem Sie die Änderungen übernehmen können.
 
-Um zur Verwendung der Standardlaufzeitlogik für Updates zurückzukehren, klicken Sie im Fenster **Eigenschaften** auf die Auslassungszeichen neben dem **Einfüge-**, **Update-** oder **Löschbefehl**, und wählen Sie dann im Dialogfeld **Verhalten konfigurieren** die Option **Laufzeit verwenden** aus.
+Um zur Verwendung der Standardlaufzeitlogik für Updates zurückzukehren, klicken Sie im Fenster **Eigenschaften** auf die Auslassungszeichen neben dem **Einfüge-** , **Update-** oder **Löschbefehl** , und wählen Sie dann im Dialogfeld **Verhalten konfigurieren** die Option **Laufzeit verwenden** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext-Methoden](../data-tools/datacontext-methods-o-r-designer.md)

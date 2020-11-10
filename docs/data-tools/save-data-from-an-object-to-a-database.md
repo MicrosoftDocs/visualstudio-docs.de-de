@@ -1,5 +1,7 @@
 ---
 title: Speichern von Daten aus einem Objekt in einer Datenbank
+description: Speichern von Daten aus einem Objekt in einer Datenbank mithilfe von datasettools in Visual Studio. Erfahren Sie, wie Sie neue Datensätze speichern, vorhandene Datensätze aktualisieren und vorhandene Datensätze löschen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4afa0d376366b154501e1a0e4488af57b4448a32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ee06ef21be4076a1a0dee6319155144c468bafd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281655"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436017"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 
@@ -33,7 +35,7 @@ Standardmäßig `DBDirect` werden Methoden auf einem TableAdapter erstellt, der 
 > [!NOTE]
 > Wenn Sie einen TableAdapter konfigurieren, muss die Haupt Abfrage genügend Informationen für die `DBDirect` zu erstellenden Methoden bereitstellen. Wenn ein TableAdapter z. b. so konfiguriert ist, dass Daten aus einer Tabelle abgefragt werden, für die keine Primärschlüssel Spalte definiert ist, werden keine `DBDirect` Methoden generiert.
 
-|TableAdapter-DBDirect-Methode|Beschreibung|
+|TableAdapter-DBDirect-Methode|BESCHREIBUNG|
 | - |-----------------|
 |`TableAdapter.Insert`|Fügt einer Datenbank neue Datensätze hinzu und ermöglicht es Ihnen, einzelne Spaltenwerte als Methoden Parameter zu übergeben.|
 |`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die `Update` -Methode übernimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die- `TableAdapter.Update` Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem ein <xref:System.Data.DataSet> , <xref:System.Data.DataTable> , <xref:System.Data.DataRow> oder ein Array von <xref:System.Data.DataRow> s als Methoden Parameter verwendet wird.|

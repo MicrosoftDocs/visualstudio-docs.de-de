@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer Interop-Aktivitäts Designer
+description: Erfahren Sie mehr über den Interop-Aktivitäts Designer und wie Sie den Interop-Aktivitäts Designer verwenden können, um eine Interop-Aktivität zu erstellen und zu konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8047df3787c0871e369b6079e4f0cc80f6d93949
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650212"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437774"
 ---
 # <a name="interop-activity-designer"></a>Interop-Aktivitätsdesigner
 
@@ -27,7 +29,7 @@ Die <xref:System.Activities.Statements.Interop>-Aktivität verwaltet die Ausfüh
 
 ### <a name="use-the-interop-activity-designer"></a>Verwenden des Interop-Aktivitäts Designers
 
-Der **Interop** -Aktivitäts Designer befindet sich in der Kategorie **Migration** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X**drücken.
+Der **Interop** -Aktivitäts Designer befindet sich in der Kategorie **Migration** der **Toolbox** , auf die Sie zugreifen können, indem Sie auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X** drücken.
 
 Die Kategorie [Migration](../workflow-designer/migration-activity-designers.md) , in der die- <xref:System.Activities.Statements.Interop> Aktivität enthalten ist, wird nur in **Toolbox** angezeigt, wenn Ihr Projekt auf .NET Framework 4 (Full) oder höher ausgerichtet ist. Falls erforderlich, können Sie die Frameworkversion ändern, auf die Ihr Projekt abzielt.
 
@@ -39,11 +41,11 @@ Klicken Sie entweder im **Interop** -Aktivitäts **ActivityType** Designer oder 
 
 In der folgenden Tabelle <xref:System.Activities.Statements.Interop> werden die Eigenschaften angezeigt, und es wird beschrieben, wie Sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster oder auf der Workflow-Designer-Oberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verbrauch|
+|Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der Anzeigename der <xref:System.Activities.Statements.Interop>-Aktivität. Der Standardwert ist **Interop**. Obwohl der Anzeige Name nicht erforderlich ist, wird empfohlen, einen anzugeben.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Richtig|Gibt den Typ der in der <xref:System.Activities.Statements.Interop>-Aktivität enthaltenen Aktivität an. Der angegebene Typ muss von <xref:System.Workflow.ComponentModel.Activity> abgeleitet sein.|
+|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der Anzeigename der <xref:System.Activities.Statements.Interop>-Aktivität. Der Standardwert ist **Interop**. Obwohl der Anzeige Name nicht erforderlich ist, wird empfohlen, einen anzugeben.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Wahr|Gibt den Typ der in der <xref:System.Activities.Statements.Interop>-Aktivität enthaltenen Aktivität an. Der angegebene Typ muss von <xref:System.Workflow.ComponentModel.Activity> abgeleitet sein.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Migration](../workflow-designer/migration-activity-designers.md)

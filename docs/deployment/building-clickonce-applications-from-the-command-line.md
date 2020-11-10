@@ -18,17 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383195"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437722"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
+
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] können Sie Projekte auch dann über die Befehlszeile erstellen, wenn Sie in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) erstellt werden. Tatsächlich können Sie ein Projekt, das mit erstellt [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] wurde, auf einem anderen Computer neu erstellen, auf dem nur die .NET Framework installiert ist. Dadurch können Sie einen Build mithilfe eines automatisierten Prozesses reproduzieren, z. b. in einem zentralen buildlab oder mithilfe erweiterter Skript Erstellungs Verfahren, die über den Umfang der Erstellung des Projekts hinausgehen.
 
-## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Verwenden von MSBuild zum Reproduzieren von ClickOnce-Anwendungs Bereitstellungen
+## <a name="use-msbuild-to-reproduce-net-framework-clickonce-application-deployments"></a>Verwenden von MSBuild, um .NET Framework ClickOnce-Anwendungs Bereitstellungen zu reproduzieren
+
  Wenn Sie MSBuild/target: Publish in der Befehlszeile aufrufen, weist das MSBuild-System an, das Projekt zu erstellen und eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung im Veröffentlichungs Ordner zu erstellen. Dies entspricht der Auswahl des Befehls **Publish** in der IDE.
 
  Dieser Befehl führt *msbuild.exe* aus, der sich auf dem Pfad in der Visual Studio-Eingabe Aufforderungs Umgebung befindet.
@@ -41,7 +43,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Erstellen und Erstellen einer einfachen ClickOnce-Anwendung mit MSBuild
 
-#### <a name="to-create-and-publish-a-clickonce-project"></a>So erstellen und veröffentlichen Sie ein ClickOnce-Projekt
+### <a name="to-create-and-publish-a-clickonce-project"></a>So erstellen und veröffentlichen Sie ein ClickOnce-Projekt
 
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
@@ -73,15 +75,29 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
     Dieser Schritt ist optional, stellt jedoch sicher, dass alle neuen Dateien vom Befehlszeilenbuild erstellt wurden.
 
-5. Geben Sie `msbuild /target:publish`ein.
+5. Geben Sie `msbuild /target:publish` ein.
 
    In den obigen Schritten wird eine vollständige [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Bereitstellung in einem Unterordner des Projekts mit dem Namen " **Publish** " erstellt. *CmdLineDemo. Application* ist das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs Manifest. Der Ordner *CmdLineDemo_1.0.0.0* enthält die Dateien *CmdLineDemo.exe* und *CmdLineDemo.exe. Manifest* , das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifest. *Setup.exe* ist der Boots Trapper, der standardmäßig für die Installation der .NET Framework konfiguriert ist. Der Dotnetfx-Ordner enthält die verteilbaren Dateien für die .NET Framework. Dies ist der gesamte Satz von Dateien, die Sie benötigen, um Ihre Anwendung über das Web oder über UNC oder CD/DVD bereitzustellen.
-   
+
 > [!NOTE]
 > Das MSBuild-System verwendet die Option **PublishDir** , um den Speicherort für die Ausgabe anzugeben, z `msbuild /t:publish /p:PublishDir="<specific location>"` . b..
 
+::: moniker range=">=vs-2019"
+
+## <a name="build-net-clickonce-applications-from-the-command-line"></a>Erstellen von .net ClickOnce-Anwendungen über die Befehlszeile
+
+Das Erstellen von .net ClickOnce-Anwendungen über die Befehlszeile ist eine ähnliche Vorgehensweise, außer dass Sie eine zusätzliche Eigenschaft für das Veröffentlichungs Profil in der MSBuild-Befehlszeile bereitstellen müssen. Die einfachste Möglichkeit zum Erstellen eines Veröffentlichungs Profils ist die Verwendung von Visual Studio.  Weitere Informationen finden Sie unter Bereitstellen [einer .NET-Windows-Anwendung mit ClickOnce](quickstart-deploy-using-clickonce-folder.md) .
+
+Nachdem Sie das Veröffentlichungs Profil erstellt haben, können Sie die pubxml-Datei als Eigenschaft in der MSBuild-Befehlszeile bereitstellen. Beispiel:
+
+```cmd
+    msbuild /t:publish /p:PublishProfile=<pubxml file> /p:PublishDir="<specific location>"
+```
+::: moniker-end
+
 ## <a name="publish-properties"></a>Eigenschaften veröffentlichen
- Wenn Sie die Anwendung in den oben aufgeführten Prozeduren veröffentlichen, werden die folgenden Eigenschaften durch den Veröffentlichungs-Assistenten in die Projektdatei eingefügt. Diese Eigenschaften beeinflussen direkt die Art und Weise, wie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erstellt wird.
+
+ Wenn Sie die Anwendung in den oben aufgeführten Prozeduren veröffentlichen, werden die folgenden Eigenschaften vom Veröffentlichungs-Assistenten in die Projektdatei oder in der Veröffentlichungs Profil Datei für .net Core 3,1 oder spätere Projekte eingefügt. Diese Eigenschaften beeinflussen direkt die Art und Weise, wie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erstellt wird.
 
  In *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
 
@@ -105,21 +121,36 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 <BootstrapperEnabled>true</BootstrapperEnabled>
 ```
 
- Sie können diese Eigenschaften in der Befehlszeile überschreiben, ohne die Projektdatei selbst zu ändern. Im folgenden Beispiel wird die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Bereitstellung ohne den Boots Trapper erstellt:
+ Für .NET Framework Projekte können Sie jede dieser Eigenschaften in der Befehlszeile überschreiben, ohne die Projektdatei selbst zu ändern. Im folgenden Beispiel wird die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Bereitstellung ohne den Boots Trapper erstellt:
 
 ```cmd
 msbuild /target:publish /property:BootstrapperEnabled=false
-```
+ ```
+
+::: moniker range=">=vs-2019"
+Für .net Core 3,1 oder höher werden diese Einstellungen in der pubxml-Datei bereitgestellt.
 
  Veröffentlichungs Eigenschaften werden in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] über die Eigenschaften Seiten **veröffentlichen** , **Sicherheit** und **Signierung** des Projekt- **Designers** gesteuert. Im folgenden finden Sie eine Beschreibung der Veröffentlichungs Eigenschaften sowie einen Hinweis darauf, wie die einzelnen Eigenschaften Seiten des Anwendungs-Designers festgelegt werden:
 
+> [!NOTE]
+> Für .NET Windows-Desktop Projekte befinden sich diese Einstellungen jetzt im Veröffentlichungs-Assistenten.
+::: moniker-end
+
 - `AssemblyOriginatorKeyFile` bestimmt die Schlüsseldatei, die zum Signieren Ihrer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifeste verwendet wird. Derselbe Schlüssel kann auch verwendet werden, um Ihren Assemblys einen starken Namen zuzuweisen. Diese Eigenschaft wird auf der Seite **Signierung** des **Projekt-Designers** festgelegt.
+::: moniker range=">=vs-2019"
+Für .NET-Windows-Anwendungen verbleibt diese Einstellung in der Projektdatei.
+::: moniker-end
 
   Die folgenden Eigenschaften werden auf der Seite **Sicherheit** festgelegt:
 
 - **ClickOnce-Sicherheitseinstellungen aktivieren** bestimmt, ob [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste generiert werden. Wenn ein Projekt erstmalig erstellt wird, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist die Generierung von Manifesten standardmäßig deaktiviert. Der Assistent schaltet dieses Flag automatisch ein, wenn Sie zum ersten Mal veröffentlichen.
 
 - **TargetZone** bestimmt die Vertrauens Ebene, die in Ihrem Anwendungs Manifest ausgegeben werden soll [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Mögliche Werte sind "Internet", "LocalIntranet" und "Custom". Internet und LocalIntranet bewirken, dass ein Standard Berechtigungs Satz in Ihrem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifest ausgegeben wird. "LocalIntranet" ist die Standardeinstellung, und es bedeutet im Grunde, dass volle Vertrauenswürdigkeit Custom gibt an, dass nur die Berechtigungen, die in der Basisdatei " *app. Manifest* " explizit angegeben werden, in das Anwendungs Manifest ausgegeben werden sollen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Die Datei " *app. Manifest* " ist eine partielle Manifest-Datei, die nur die Definitionen der Vertrauens Informationen enthält. Dabei handelt es sich um eine versteckte Datei, die dem Projekt automatisch hinzugefügt wird, wenn Sie Berechtigungen auf der Seite **Sicherheit** konfigurieren.
+-
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Bei Windows-Desktop Projekten unter .net Core 3,1 oder höher werden diese Sicherheitseinstellungen nicht unterstützt.
+::: moniker-end
 
   Die folgenden Eigenschaften werden auf der Seite " **veröffentlichen** " festgelegt:
 
@@ -140,10 +171,18 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 - `UpdateEnabled` Gibt an, ob die Anwendung nach Updates suchen soll.
 
 - `UpdateMode` Gibt entweder Vordergrund-oder Hintergrund Aktualisierungen an.
-
+::: moniker range=">=vs-2019"
+   Für .net Core 3,1-Projekte oder spätere-Projekte wird der Hintergrund nicht unterstützt.  
+::: moniker-end
 - `UpdateInterval` Gibt an, wie häufig die Anwendung nach Updates suchen soll.
+::: moniker range=">=vs-2019"
+   Für .net Core 3,1 oder höher wird diese Einstellung nicht unterstützt.
+::: moniker-end
 
 - `UpdateIntervalUnits` Gibt an, ob der `UpdateInterval` Wert in Einheiten von Stunden, Tagen oder Wochen liegt.
+::: moniker range=">=vs-2019"
+   Für .net Core 3,1 oder höher wird diese Einstellung nicht unterstützt.
+::: moniker-end
 
 - `UpdateUrl` (nicht angezeigt) ist der Speicherort, von dem die Anwendung Updates empfängt. Wenn angegeben, wird dieser Wert in das Anwendungs Manifest eingefügt.
 
@@ -160,9 +199,10 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 - `IsWebBootstrapper` bestimmt, ob der *setup.exe* Boots Trapper über das Internet oder den Datenträger basierten Modus funktioniert.
 
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL, and UpdateURL
+
  In der folgenden Tabelle sind die vier URL-Optionen für die ClickOnce-Bereitstellung aufgeführt.
 
-|URL-Option|Beschreibung|
+|URL-Option|BESCHREIBUNG|
 |----------------|-----------------|
 |`PublishURL`|Erforderlich, wenn Sie die ClickOnce-Anwendung auf einer Website veröffentlichen.|
 |`InstallURL`|Optional. Legen Sie diese URL-Option fest, wenn sich die Installations Site vom unterscheidet `PublishURL` . Beispielsweise können Sie `PublishURL` auf einen FTP-Pfad festlegen und `InstallURL` auf eine Web-URL festlegen.|
@@ -170,6 +210,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |`UpdateURL`|Optional. Legen Sie diese URL-Option fest, wenn sich der Update Speicherort von unterscheidet `InstallURL` . Beispielsweise können Sie `PublishURL` auf einen FTP-Pfad festlegen und `UpdateURL` auf eine Web-URL festlegen.|
 
 ## <a name="see-also"></a>Siehe auch
+
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>

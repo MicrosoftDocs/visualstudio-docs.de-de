@@ -1,5 +1,6 @@
 ---
 title: Erstellen von Beziehungen zwischen Datasets
+description: Erstellen Sie Beziehungen zwischen Datasets in Visual Studio. Grundlegendes zu DataRelations-Objekten und-Einschränkungen. Manuelles Erstellen einer Daten Beziehung im DataSet-Manager.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037685"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436093"
 ---
 # <a name="create-relationships-between-datasets"></a>Erstellen von Beziehungen zwischen Datasets
-Datasets, die Verwandte Datentabellen enthalten, verwenden- <xref:System.Data.DataRelation> Objekte zum Darstellen einer über-/Unterordnungsbeziehung zwischen den Tabellen und zum Zurückgeben von verknüpften Datensätzen voneinander. Durch das Hinzufügen verknüpfter Tabellen zu Datasets mithilfe des **Assistenten zum Konfigurieren von Datenquellen**oder des **DataSet-Designer**wird das Objekt erstellt und konfiguriert <xref:System.Data.DataRelation> .
+Datasets, die Verwandte Datentabellen enthalten, verwenden- <xref:System.Data.DataRelation> Objekte zum Darstellen einer über-/Unterordnungsbeziehung zwischen den Tabellen und zum Zurückgeben von verknüpften Datensätzen voneinander. Durch das Hinzufügen verknüpfter Tabellen zu Datasets mithilfe des **Assistenten zum Konfigurieren von Datenquellen** oder des **DataSet-Designer** wird das Objekt erstellt und konfiguriert <xref:System.Data.DataRelation> .
 
 Das- <xref:System.Data.DataRelation> Objekt führt zwei Funktionen aus:
 
@@ -69,9 +70,9 @@ Weitere Informationen zu Updates in Dataset-Tabellen finden [Sie unter Speichern
 Wenn Sie ein- <xref:System.Data.DataRelation> Objekt erstellen, können Sie angeben, dass die Beziehung nur verwendet werden soll, um Einschränkungen zu erzwingen, d. –., dass Sie nicht auch für den Zugriff auf verwandte Datensätze verwendet wird. Sie können diese Option verwenden, um ein DataSet zu generieren, das etwas effizienter ist und weniger Methoden als eine mit der Funktion für verbundene Datensätze enthält. Allerdings sind Sie nicht in der Lage, auf zugehörige Datensätze zuzugreifen. Beispielsweise verhindert eine Einschränkung nur Einschränkung, dass ein übergeordneter Datensatz gelöscht wird, der noch über untergeordnete Datensätze verfügt, und Sie können nicht über das übergeordnete Element auf die untergeordneten Datensätze zugreifen.
 
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Manuelles Erstellen einer Daten Beziehung im DataSet-Designer
-Wenn Sie Datentabellen mit den Daten Entwurfs Tools in Visual Studio erstellen, werden die Beziehungen automatisch erstellt, wenn die Informationen aus der Datenquelle erfasst werden können. Wenn Sie Datentabellen manuell von der Registerkarte **DataSet** der **Toolbox**hinzufügen, müssen Sie die Beziehung möglicherweise manuell erstellen. Informationen zum programmgesteuerten Erstellen von <xref:System.Data.DataRelation> Objekten finden Sie unter [Hinzufügen von DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)-Objekten.
+Wenn Sie Datentabellen mit den Daten Entwurfs Tools in Visual Studio erstellen, werden die Beziehungen automatisch erstellt, wenn die Informationen aus der Datenquelle erfasst werden können. Wenn Sie Datentabellen manuell von der Registerkarte **DataSet** der **Toolbox** hinzufügen, müssen Sie die Beziehung möglicherweise manuell erstellen. Informationen zum programmgesteuerten Erstellen von <xref:System.Data.DataRelation> Objekten finden Sie unter [Hinzufügen von DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)-Objekten.
 
-Beziehungen zwischen Datentabellen werden in der **DataSet-Designer**als Zeilen angezeigt, wobei ein Schlüssel-und Unendlichkeits Symbol den 1: n-Aspekt der Beziehung darstellt. Standardmäßig wird der Name der Beziehung nicht auf der Entwurfs Oberfläche angezeigt.
+Beziehungen zwischen Datentabellen werden in der **DataSet-Designer** als Zeilen angezeigt, wobei ein Schlüssel-und Unendlichkeits Symbol den 1: n-Aspekt der Beziehung darstellt. Standardmäßig wird der Name der Beziehung nicht auf der Entwurfs Oberfläche angezeigt.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -105,6 +106,6 @@ Beziehungen zwischen Datentabellen werden in der **DataSet-Designer**als Zeilen 
 
 2. Wählen Sie im Menü **Daten** den Befehl **Relation Labels anzeigen** aus, um den Beziehungs Namen anzuzeigen. Löschen Sie diesen Befehl, um den Beziehungs Namen auszublenden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
