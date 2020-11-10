@@ -32,8 +32,6 @@
   items:
     - name: Anpassen des Erscheinungsbilds und Verhaltens der IDE
       href: customizing-the-ide.md
-    - name: Erweitern von Visual Studio für Mac
-      href: extending-visual-studio-mac.md
 - name: Projekte und Projektmappen
   items:
     - name: Übersicht
