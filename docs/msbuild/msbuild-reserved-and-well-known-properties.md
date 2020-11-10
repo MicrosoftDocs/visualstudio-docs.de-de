@@ -1,5 +1,7 @@
 ---
 title: Reservierte und bekannte Eigenschaften für MSBuild | Microsoft-Dokumentation
+description: Erfahren Sie mehr über reservierte und bekannte MSBuild-Eigenschaften – vordefinierte Eigenschaften zum Speichern von Informationen über die Projektdatei und die MSBuild-Binärdateien.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3d97185446560343b36b22f73e0b320b5a28d6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0480b427b92ca43603deedf84e5fd7cb39e6e065
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289221"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049158"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften für MSBuild
 
@@ -60,7 +62,7 @@ In der folgenden Tabelle sind die vordefinierten MSBuild-Eigenschaften enthalten
 | `MSBuildProjectFullPath` | Reserviert | Der absolute Pfad und der vollständige Dateiname der Projektdatei, einschließlich der Erweiterung, beispielsweise *C:\MyCompany\MyProduct\MyApp.proj*. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj`|
 | `MSBuildProjectName` | Reserviert | Der Dateiname der Projektdatei ohne die Erweiterung, z.B. *MyApp*. | `ConsoleApp1` |
 | `MSBuildRuntimeType` | Reserviert | Der Typ der Laufzeit, der derzeit ausgeführt wird. Eingeführt in MSBuild 15. Der Wert ist möglicherweise nicht definiert (vor MSBuild 15). `Full` gibt an, dass MSBuild auf dem Desktop .NET Framework ausgeführt wird, `Core`, dass MSBuild unter .NET Core ausgeführt wird (z. B. in `dotnet build`) und `Mono`, dass MSBuild unter Mono ausgeführt wird. | `Full` |
-| `MSBuildStartupDirectory` | Reserviert | Der absolute Pfad des Ordners, in dem MSBuild aufgerufen wird. Wenn Sie diese Eigenschaft verwenden, können Sie alles unterhalb eines bestimmten Punkts in einer Projektstruktur erstellen, ohne *\<dirs>.proj*-Dateien in jedem Verzeichnis zu erstellen. Stattdessen haben Sie wie hier gezeigt nur ein Projekt, beispielsweise *C:\traversal.proj*:<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Geben Sie für die Erstellung an einem beliebigen Punkt in der Struktur Folgendes ein:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein. | `c:\Source\Repos\ConsoleApp1` |
+| `MSBuildStartupDirectory` | Reserviert | Der absolute Pfad des Ordners, in dem MSBuild aufgerufen wird. Wenn Sie diese Eigenschaft verwenden, können Sie alles unterhalb eines bestimmten Punkts in einer Projektstruktur erstellen, ohne *\<dirs>.proj* -Dateien in jedem Verzeichnis zu erstellen. Stattdessen haben Sie wie hier gezeigt nur ein Projekt, beispielsweise *C:\traversal.proj* :<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Geben Sie für die Erstellung an einem beliebigen Punkt in der Struktur Folgendes ein:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein. | `c:\Source\Repos\ConsoleApp1` |
 | `MSBuildThisFile` | Reserviert | Der Teil von `MSBuildThisFileFullPath`, der den Dateinamen und die Dateierweiterung angibt. | `ConsoleApp1.csproj` |
 | `MSBuildThisFileDirectory` | Reserviert | Der Teil von `MSBuildThisFileFullPath`, der das Verzeichnis angibt.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich in den Pfad ein. | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\` |
 | `MSBuildThisFileDirectoryNoRoot` | Reserviert | Der Teil von `MSBuildThisFileFullPath`, der das Verzeichnis angibt, ausschließlich des Stammlaufwerks.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich in den Pfad ein. | `Source\Repos\ConsoleApp1\ConsoleApp1\` |

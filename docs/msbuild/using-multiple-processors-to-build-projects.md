@@ -1,5 +1,7 @@
 ---
 title: Verwenden mehrerer Prozessoren für die Erstellung von Projekten | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild Systeme nutzen kann, die mehrere Prozessoren oder Prozessoren mit mehreren Kernen umfassen, indem ein separater Buildprozess für jeden verfügbaren Prozessor erstellt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc62112324f7ad19c47b346ac8c1e3f86570b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631301"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047588"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Verwenden mehrerer Prozessoren für die Erstellung von Projekten
 
@@ -36,7 +38,7 @@ MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit 
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++-Projektdateien (.vcproj) und Projektmappendateien (.sln)
 
- Sowohl C++-Projekt- als auch -Projektmappendateien ( *.vcxproj* und *.sln*) können an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Für C++-Projekte wird VCWrapperProject aufgerufen, und anschließend wird das interne MSBuild-Projekt erstellt. Für C++-Projektmappen wird SolutionWrapperProject, und anschließend wird das interne MSBuild-Projekt erstellt. In beiden Fällen wird das resultierende Projekt auf die gleiche Weise behandelt wie jedes andere MSBuild-Projekt.
+ Sowohl C++-Projekt- als auch -Projektmappendateien ( *.vcxproj* und *.sln* ) können an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Für C++-Projekte wird VCWrapperProject aufgerufen, und anschließend wird das interne MSBuild-Projekt erstellt. Für C++-Projektmappen wird SolutionWrapperProject, und anschließend wird das interne MSBuild-Projekt erstellt. In beiden Fällen wird das resultierende Projekt auf die gleiche Weise behandelt wie jedes andere MSBuild-Projekt.
 
 ## <a name="multi-process-execution"></a>Multiprozessausführung
 
@@ -44,7 +46,7 @@ MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit 
 
  Um dieses Problem zu vermeiden und dennoch Builds mit mehreren Prozessen zu ermöglichen, verwendet MSBuild die „Prozessisolation“. Durch Verwendung der Prozessisolation kann MSBuild maximal `n` Prozesse erstellen, wobei `n` der Anzahl von im System verfügbaren Prozessoren entspricht. Wenn MSBuild zum Beispiel eine Projektmappe auf einem System mit zwei Prozessoren erstellt, werden nur zwei Buildprozesse erstellt. Diese Prozesse werden zum Erstellen aller Projekte der Lösung wiederverwendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 - [Aufgaben](../msbuild/msbuild-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: XslTransformation-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild mithilfe der Aufgabe „XslTransformation“ eine XML-Eingabe unter Verwendung von XSLT transformiert und an ein Ausgabegerät oder eine Ausgabedatei ausgibt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094540"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047194"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation-Aufgabe
 
@@ -56,7 +58,7 @@ Im folgenden Beispiel wird die XML-Datei `$(XmlInputFileName)` durch die XSL-Tra
                        Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [XSLT-Parameter](/dotnet/standard/data/xml/xslt-parameters)
 - [Aufgaben](../msbuild/msbuild-tasks.md)

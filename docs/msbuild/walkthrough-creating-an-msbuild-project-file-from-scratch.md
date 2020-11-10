@@ -1,5 +1,6 @@
 ---
 title: Erstellen einer neuen MSBuild-Projektdatei
+description: Exemplarische Vorgehensweise zum Erstellen einer MSBuild-Projektdatei von Grund auf, um die XML-Struktur kennenzulernen und zu verstehen, wie deren Änderung zur Steuerung eines Builds genutzt werden kann.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b05410c1a9ac36273a43481929a3be463d8af1
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136692"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046060"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 
@@ -143,10 +144,10 @@ Die minimale Projektdatei sollte dem folgenden Code ähneln:
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
-    <Csc Sources="@(Compile)"/>  
+    <Csc Sources="@(Compile)"/>  
   </Target>
 </Project>
 ```
@@ -225,7 +226,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -301,7 +302,7 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -344,13 +345,13 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
 5. Löschen Sie die Anwendung Greetings, indem Sie **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings** eingeben.
 
-     Dadurch wird die Clean-Aufgabe ausgeführt, um die Anwendung mit dem angegebenen **AssemblyName**-Eigenschaftswert `Greetings` zu entfernen.
+     Dadurch wird die Clean-Aufgabe ausgeführt, um die Anwendung mit dem angegebenen **AssemblyName** -Eigenschaftswert `Greetings` zu entfernen.
 
 6. Wenn Sie überprüfen möchten, ob der Ordner *\Bin\\* jetzt leer ist, geben Sie **dir Bin** ein.
 
 7. Typ **msbuild**.
 
-     Zwar ist keine Projektdatei angegeben, doch erstellt MSBuild die Datei *helloworld.csproj*, da der aktuelle Ordner nur eine Projektdatei enthält. Auf diese Weise wird die Anwendung *MSBuildSample* im Ordner *\Bin\\* erstellt.
+     Zwar ist keine Projektdatei angegeben, doch erstellt MSBuild die Datei *helloworld.csproj* , da der aktuelle Ordner nur eine Projektdatei enthält. Auf diese Weise wird die Anwendung *MSBuildSample* im Ordner *\Bin\\* erstellt.
 
      Wenn Sie überprüfen möchten, ob der Ordner *\Bin\\* die Anwendung *MSBuildSample* enthält, geben Sie **dir Bin** ein.
 

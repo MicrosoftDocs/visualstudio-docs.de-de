@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Toolset (ToolsVersion) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie unter Verwendung des Attributs „ToolsVersion“ in der MSBuild-Projektdatei ein Toolset mit Aufgaben, Zielen und Werkzeugen zum Erstellen einer Anwendung angeben.
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: e0b27a1914d85f5fde8ef6c5c467d73197c084ce
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426962"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049020"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 
-MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung einer Anwendung. Ein MSBuild-Toolset umfasst in der Regel eine Datei mit allgemeinen Aufgaben (*microsoft.common.tasks*), eine Datei mit allgemeinen Zielen (*microsoft.common.targets*) und Compiler wie *csc.exe* und *vbc.exe*. Die meisten Toolsets können verwendet werden, um Anwendungen für mehr als eine Version von .NET Framework und mehr als eine Systemplattform zu kompilieren. Das Toolset MSBuild 2.0 kann allerdings nur für .NET Framework 2.0 verwendet werden.
+MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung einer Anwendung. Ein MSBuild-Toolset umfasst in der Regel eine Datei mit allgemeinen Aufgaben ( *microsoft.common.tasks* ), eine Datei mit allgemeinen Zielen ( *microsoft.common.targets* ) und Compiler wie *csc.exe* und *vbc.exe*. Die meisten Toolsets können verwendet werden, um Anwendungen für mehr als eine Version von .NET Framework und mehr als eine Systemplattform zu kompilieren. Das Toolset MSBuild 2.0 kann allerdings nur für .NET Framework 2.0 verwendet werden.
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion-Attribut
 
@@ -55,7 +57,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
 
  Ab Visual Studio 2013 ist die Version des MSBuild-Toolsets die gleiche wie die Visual Studio-Versionsnummer. MSBuild weist standardmäßig dieses Toolset in Visual Studio und in der Befehlszeile auf, unabhängig von der in der Projektdatei angegebenen Toolset-Version.  Dieses Verhalten kann durch Verwendung des -ToolsVersion-Flags überschrieben werden. Weitere Informationen erhalten Sie unter [Überschreiben der ToolsVersion-Einstellungen](../msbuild/overriding-toolsversion-settings.md).
 
- Im folgenden Beispiel findet MSBuild die *Microsoft.CSharp.targets*-Datei mithilfe der reservierten Eigenschaft `MSBuildToolsPath`.
+ Im folgenden Beispiel findet MSBuild die *Microsoft.CSharp.targets* -Datei mithilfe der reservierten Eigenschaft `MSBuildToolsPath`.
 
 ```xml
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

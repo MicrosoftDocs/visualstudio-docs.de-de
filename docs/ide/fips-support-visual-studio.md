@@ -1,5 +1,7 @@
 ---
-title: Visual Studio-Unterstützung des FIPS 140-2-konformen Betriebsmodus
+title: Visual Studio-Unterstützung für FIPS
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 04/14/2020
 ms.topic: conceptual
 author: TerryGLee
@@ -7,18 +9,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56fe4fa2381502f01a952977fe2d506dc7792231
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84180492"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045514"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Visual Studio-Unterstützung des FIPS 140-2-konformen Betriebsmodus
 
 Ab [Version 16.4](/visualstudio/releases/2019/release-notes-v16.4/) unterstützt Visual Studio 2019 den Betriebsmodus für Windows, Azure und .NET gemäß FIPS 140-2 (Federal Information Processing Standard). Ab [Version 16.5](/visualstudio/releases/2019/release-notes-archive-v16.5) unterstützt Visual Studio den Betriebsmodus gemäß FIPS 140-2 auch bei der Entwicklung von [C++-Anwendungen für Linux-Remotesysteme](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
 
-[Installieren Sie .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48), und aktivieren Sie die Gruppenrichtlinieneinstellung **Systemkryptografie: FIPS-konformen Algorithmus für Verschlüsselung, Hashing und Signatur verwenden**, um den FIPS 140-2-konformen Betriebsmodus für Visual Studio zu konfigurieren.
+[Installieren Sie .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48), und aktivieren Sie die Gruppenrichtlinieneinstellung **Systemkryptografie: FIPS-konformen Algorithmus für Verschlüsselung, Hashing und Signatur verwenden** , um den FIPS 140-2-konformen Betriebsmodus für Visual Studio zu konfigurieren.
 
 Weitere Informationen über der den FIPS 140-2-konformen Betriebsmodus und dessen Aktivierung finden Sie unter [FIPS 140-2-Validierung](/windows/security/threat-protection/fips-140-validation/).
 

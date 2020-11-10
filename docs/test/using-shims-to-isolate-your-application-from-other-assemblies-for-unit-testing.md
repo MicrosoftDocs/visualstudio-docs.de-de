@@ -9,18 +9,18 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1a241fa8422a71900312198988dacfe144525b5a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810522"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325926"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Verwenden von Shims zum Isolieren der Anwendung für Unittests
 
 **Shimtypen** sind eine von zwei Technologien, die vom Microsoft Fakes-Framework verwendet werden, um getestete Komponenten von der Umgebung zu isolieren. Shims leiten Aufrufe an bestimmte Methoden für Code um, den Sie im Rahmen Ihres Tests schreiben. Viele Methoden geben abhängig von den externen Bedingungen unterschiedliche Ergebnisse zurück, aber ein Shim wird vom Test kontrolliert und kann bei jedem Aufruf konsistente Ergebnisse zurückgeben. Dadurch ist es einfacher, die Tests zu schreiben.
 
-Verwenden Sie *Shims*, um Ihren Code von Assemblys zu isolieren, die nicht Teil der Projektmappe sind. Verwenden Sie *Stubs*, um Komponenten Ihrer Projektmappe voneinander zu isolieren.
+Verwenden Sie *Shims* , um Ihren Code von Assemblys zu isolieren, die nicht Teil der Projektmappe sind. Verwenden Sie *Stubs* , um Komponenten Ihrer Projektmappe voneinander zu isolieren.
 
 Eine Übersicht und eine Schnellstartanleitung finden Sie unter [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -28,9 +28,9 @@ Eine Übersicht und eine Schnellstartanleitung finden Sie unter [Isolieren von g
 
 - Visual Studio Enterprise
 - Ein .NET Framework-Projekt
-
-> [!NOTE]
-> .NET Standard-Projekte werden nicht unterstützt.
+::: moniker range=">=vs-2019"
+- Die Unterstützung von Projekten im .NET Core- und SDK-Format ist in Visual Studio 2019 Update 6 als Vorschaufeature enthalten und in Update 8 standardmäßig aktiviert. Weitere Informationen finden Sie unter [Microsoft Fakes für .NET Core- und SDK-Projekte](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Beispiel: Der Y2K-Fehler
 
@@ -67,9 +67,12 @@ using (ShimsContext.Create()) {
 
 Fügen Sie zunächst eine Fakes-Assemblys hinzu:
 
-1. Erweitern Sie im **Projektmappen-Explorer** den Knoten für den **Verweis** des Komponententestprojekts.
-
-   - Wenn Sie mit Visual Basic arbeiten, müssen Sie auf der Symbolleiste des **Projektmappen-Explorers** auf **Alle Dateien anzeigen** klicken, um den Knoten **Verweise** zu finden.
+1. Im **Projektmappen-Explorer** : 
+    - Erweitern Sie für ein älteres .NET Framework-Projekt (kein SDK-Format) den Knoten **Verweise** Ihres Projekts für den Komponententest.
+    ::: moniker range=">=vs-2019"
+    - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework oder .NET Core unter **Assemblys** , **Projekte** oder **Pakete** den Knoten **Abhängigkeiten** , um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
+    ::: moniker-end
+    - Wenn Sie in Visual Basic arbeiten, müssen Sie auf der Symbolleiste im **Projektmappen-Explorer** auf **Alle Dateien anzeigen** klicken, um den Knoten **Verweise** anzuzeigen.
 
 2. Wählen Sie die Assembly aus, in der die Klassendefinitionen enthalten sind, für die Sie Shims erstellen möchten. Wenn Sie z.B. einen Shim für **DateTime** erstellen möchten, klicken Sie auf **System.dll**.
 
@@ -504,7 +507,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System.Environment
 
-Fügen Sie den folgenden Inhalt in die Datei „mscorlib.fakes“ nach dem **Assembly**-Element ein, um einen Shim für <xref:System.Environment?displayProperty=fullName> zu erstellen:
+Fügen Sie den folgenden Inhalt in die Datei „mscorlib.fakes“ nach dem **Assembly** -Element ein, um einen Shim für <xref:System.Environment?displayProperty=fullName> zu erstellen:
 
 ```xml
 <ShimGeneration>
@@ -520,7 +523,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Einschränkungen
 
-Shims können nicht für alle Typen in der .NET-Basisklassenbibliothek **mscorlib** und **System** verwendet werden.
+Shims können nicht für alle Typen in der .NET-Basisklassenbibliothek **mscorlib** und **System** in .NET Framework und in **System.Runtime** in .NET Core verwendet werden.
 
 ## <a name="see-also"></a>Weitere Informationen
 

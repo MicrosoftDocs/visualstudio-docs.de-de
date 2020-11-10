@@ -1,5 +1,7 @@
 ---
 title: Task-Element von „UsingTask“ (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Task-Element von „UsingTask“ in MSBuild, das die Daten enthält, die an eine UsingTask TaskFactory übergeben werden.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263187"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047893"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>Task-Element von „UsingTask“ (MSBuild)
 
 Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<Task>
+ \<Project> \<UsingTask>
  \<Task>
 
 ## <a name="syntax"></a>Syntax
@@ -42,7 +44,7 @@ Enthält die Daten, die an `UsingTask` `TaskFactory` übergeben werden. Weitere 
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Evaluate`|Optionales boolesches Attribut.<br /><br /> Bei `true` wertet MSBuild alle inneren Elemente aus und erweitert Elemente und Eigenschaften, bevor die Informationen an `TaskFactory` übergeben werden, wenn die Aufgabe instanziiert wird.|
 

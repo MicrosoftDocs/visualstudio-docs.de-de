@@ -1,5 +1,6 @@
 ---
-title: Konvertieren zwischen regulären und ausführlichen Zeichenfolgenliteralen
+title: Konvertierung zwischen regulären und ausführlichen Zeichenfolgenliteralen
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8e239f53f92727072a2fcd6573d6957b7cd3ec
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f411c0ac56adeb30370cbfc6f0f908ffd25bed05
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290834"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045899"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>Refactoring in Form des Konvertierens zwischen regulären und ausführlichen Zeichenfolgenliteralen
 
@@ -26,7 +27,7 @@ Dieses Refactoring gilt für:
 
 **Hintergrund:** Sie möchten entweder Speicherplatz sparen oder für mehr Klarheit im Code sorgen.
 
-**Vorteile**: Durch das Konvertieren eines ausführlichen Zeichenfolgenliterals in ein reguläres können Sie Speicherplatz sparen. Durch das Konvertieren eines regulären Zeichenfolgenliterals in ein ausführliches können Sie für mehr Klarheit sorgen.
+**Vorteile** : Durch das Konvertieren eines ausführlichen Zeichenfolgenliterals in ein reguläres können Sie Speicherplatz sparen. Durch das Konvertieren eines regulären Zeichenfolgenliterals in ein ausführliches können Sie für mehr Klarheit sorgen.
 
 ## <a name="how-to"></a>Vorgehensweise
 
@@ -34,7 +35,7 @@ Dieses Refactoring gilt für:
 
 2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
 
-3. Wählen Sie eine der folgenden Optionen aus: 
+3. Wählen Sie eine der folgenden Optionen aus:
 
     Klicken Sie auf **In reguläre Zeichenfolge konvertieren**.
 

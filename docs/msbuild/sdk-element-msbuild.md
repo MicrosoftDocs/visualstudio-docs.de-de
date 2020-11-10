@@ -1,5 +1,7 @@
 ---
 title: SDK-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Syntax, Attribute und Elemente für das MSBuild-Element „Sdk“, das auf das SDK einer MSBuild-Projekt verweist.
+ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632471"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048368"
 ---
 # <a name="sdk-element-msbuild"></a>SDK-Element (MSBuild)
 
@@ -43,7 +45,7 @@ Verweist auf ein MSBuild-Projekt SDK.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Projekt-SDK.|
 |`Version`|Optionales Attribut.<br /><br /> Die Version des Projekt-SDK.|
@@ -58,8 +60,8 @@ Verweist auf ein MSBuild-Projekt SDK.
 | - | - |
 | [Projekt](../msbuild/project-element-msbuild.md) | Erforderliches Stammelement einer MSBuild-Projektdatei. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [How to: Verweisen auf ein MSBuild-Projekt SDK](../msbuild/how-to-use-project-sdk.md)
+- [Gewusst wie: Verweis auf ein MSBuild-Projekt-SDK](../msbuild/how-to-use-project-sdk.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

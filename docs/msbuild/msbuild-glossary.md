@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Glossar
+description: MSBuild-Glossarbegriffe zur Beschreibung der Microsoft-Build-Engine und der zugehörigen Komponenten
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f42d7945656a3f0e3cfbe11f80db26b7e5c124d3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633342"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046320"
 ---
 # <a name="msbuild-glossary"></a>MSBuild-Glossar
 
@@ -100,7 +102,7 @@ property, function\
 Als Eigenschaftenfunktion wird eine Systemeigenschaft oder -methode bezeichnet, die zum Auswerten von MSBuild-Skripts verwendet werden kann. Mit Eigenschaftenmethoden ist es möglich, die Systemzeit zu lesen, Zeichenfolgen zu vergleichen, nach regulären Ausdrücke zu suchen und weitere Aktionen auszuführen. Weitere Informationen finden Sie unter [Eigenschaftenfunktionen](../msbuild/property-functions.md).
 
 property function, nested\
-Eigenschaftenfunktionen können zu komplexeren Funktionen kombiniert werden. Ein auf ein Objekt angewendeter
+Eigenschaftenfunktionen können zu komplexeren Funktionen kombiniert werden. Beispiel:
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
@@ -169,6 +171,6 @@ Eine Transformation ist eine 1:1-Konvertierung von einer Elementauflistung in ei
 well-known metadata\
 Siehe *Metadaten, bekannt*.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild](../msbuild/msbuild.md)

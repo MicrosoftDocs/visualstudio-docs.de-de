@@ -1,5 +1,7 @@
 ---
 title: Kontextmenüs in XML-Schema-Explorer
+description: Erfahren Sie mehr über Kontextmenüs im XML-Schema-Explorer, die Elemente zum Ausführen schemaspezifischer Suchläufe und anderer Vorgänge enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592892"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049166"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextmenüs (XML-Schema-Explorer)
 

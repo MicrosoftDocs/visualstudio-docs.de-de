@@ -1,5 +1,7 @@
 ---
 title: Bearbeiten von XSLT-Stylesheets
+description: Erfahren Sie mehr über die XML-Editor-Features zum Bearbeiten von XSLT-Stylesheets, einschließlich von Syntaxfarben, Unterstreichungen und Starten des XSLT-Debuggers aus dem Editor heraus.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31d961de62822bf036a898601ba0125db5a0dafc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592840"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045882"
 ---
 # <a name="edit-xslt-style-sheets"></a>Bearbeiten von XSLT-Stylesheets
 
@@ -29,7 +31,7 @@ XSLT-Schlüsselwörter, z. B. `template` und `match`, werden in der Farbe für 
 
 **Wellenförmige Unterstreichungen**
 
-Der XML-Editor validiert mithilfe der installierten *xslt.xsd*-Datei die XSLT-Stylesheets. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Der XML-Editor kompiliert auch das Stylesheet im Hintergrund und meldet Compilerfehler oder -warnungen mit entsprechenden wellenförmigen Unterstreichungen.
+Der XML-Editor validiert mithilfe der installierten *xslt.xsd* -Datei die XSLT-Stylesheets. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Der XML-Editor kompiliert auch das Stylesheet im Hintergrund und meldet Compilerfehler oder -warnungen mit entsprechenden wellenförmigen Unterstreichungen.
 
 **Unterstützung von Skriptblöcken**
 

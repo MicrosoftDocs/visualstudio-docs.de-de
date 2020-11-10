@@ -1,5 +1,7 @@
 ---
 title: ToolTaskExtension-Basisklasse | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Parameter, die die Basisklasse „Microsoft.Build.Tasks.ToolTaskExtension“ den Aufgaben hinzufügt, die von ihr erben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4b0148a7c42b359906cd316b45dfdf2898e6313
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631691"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047833"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension-Basisklasse
 
@@ -47,7 +49,7 @@ Viele Aufgaben erben aus der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klas
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Optionaler `bool`-Parameter.<br /><br /> Wenn die Festlegung auf `true` gegeben ist, erstellt diese Aufgabe eine Batchdatei für die Befehlszeile und führt sie aus, indem der Befehl nicht direkt ausgeführt wird, sondern der Befehlsprozessor verwendet wird. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Optionaler `bool`-Parameter.<br /><br /> Bei der Festlegung auf `true` ergibt diese Aufgabe den Knoten, wenn dessen Aufgabe ausgeführt wird. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Aufgaben](../msbuild/msbuild-tasks.md)

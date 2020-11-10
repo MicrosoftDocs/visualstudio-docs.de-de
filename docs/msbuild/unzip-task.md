@@ -1,5 +1,7 @@
 ---
 title: Unzip-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Parameter und Verwendung der MSBuild-Aufgabe „Unzip“, mit der ein ZIP-Archiv am angegebenen Speicherort extrahiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,23 +24,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d701f70950bb5a5cb2338007db129ca15d194b77
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631509"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046906"
 ---
 # <a name="unzip-task"></a>Unzip-Aufgabe
 
-Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
+Entzippt ein *ZIP* -Archiv am angegebenen Speicherort.
 
 >[!NOTE]
 >Die `Unzip`-Aufgabe ist nur in MSBuild 15.8 und höher verfügbar.
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der `Unzip`-Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `Unzip` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -47,7 +49,7 @@ Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
 |`SkipUnchangedFiles`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true` festgelegt ist, wird das Entzippen von Dateien übersprungen, die nicht geändert werden. Wird standardmäßig auf `true` festgelegt. In der `Unzip`-Aufgabe werden Dateien als identisch betrachtet, wenn diese dieselbe Größe aufweisen und zur selben Zeit zuletzt geändert wurden.|
 |`SourceFiles`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt eine oder mehrere zu entzippende Dateien an. Wenn mehrere Dateien angegeben werden, werden diese der Reihenfolge nach im selben Ordner entzippt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
@@ -71,5 +73,5 @@ Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

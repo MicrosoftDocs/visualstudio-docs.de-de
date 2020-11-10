@@ -1,7 +1,8 @@
 ---
 title: Integration von Visual Studio (MSBuild)
 titleSuffix: ''
-ms.custom: seodec18
+description: Erfahren Sie, wie Visual Studio Projekte im MSBuild-Format hosten kann, selbst wenn diese über ein anderes Tool erstellt wurden und angepasste Buildprozesse verwenden.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,18 +21,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631197"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046691"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration in Visual Studio (MSBuild)
 
 Visual Studio hostet MSBuild, um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über MSBuild ausgeführt wird, können nahezu alle Projekte im MSBuild-Format erfolgreich in Visual Studio verwendet werden – selbst dann, wenn das Projekt über ein anderes Tool erstellt wurde und einen angepassten Buildprozess verwendet.
 
- Dieser Artikel beschreibt spezifische Aspekte des MSBuild-Hostings von Visual Studio, die beim Anpassen von Projekten und *TARGETS*-Dateien berücksichtigt werden müssen, die Sie in Visual Studio laden und erstellen möchten. So wird sichergestellt, dass Visual Studio-Funktionen wie IntelliSense und das Debuggen für Ihr benutzerdefiniertes Projekt funktionieren.
+ Dieser Artikel beschreibt spezifische Aspekte des MSBuild-Hostings von Visual Studio, die beim Anpassen von Projekten und *TARGETS* -Dateien berücksichtigt werden müssen, die Sie in Visual Studio laden und erstellen möchten. So wird sichergestellt, dass Visual Studio-Funktionen wie IntelliSense und das Debuggen für Ihr benutzerdefiniertes Projekt funktionieren.
 
  Weitere Informationen über C++-Projekte finden Sie unter [Projektdateien](/cpp/build/reference/project-files).
 
@@ -39,7 +40,7 @@ Visual Studio hostet MSBuild, um verwaltete Projekte zu laden und zu erstellen. 
 
  *MSBuild.exe* erkennt jede Projektdateierweiterung, die dem Muster *.\*PROJ* entspricht. Visual Studio hingegen erkennt nur eine Teilmenge dieser Projektdateinamenerweiterungen, die das sprachspezifische Projektsystem zum Laden des Projekts bestimmen. Visual Studio umfasst kein sprachunabhängiges MSBuild-basiertes Projektsystem.
 
- Beispielsweise können über das C#-Projektsystem *CSPROJ*-Dateien geladen werden, Visual Studio kann aber keine *XXPROJ*-Dateien laden. Eine Projektdatei für Quelldateien in einer beliebigen Sprache muss dieselbe Erweiterung wie Visual Basic- oder C#-Projektdateien verwenden, um in Visual Studio geladen zu werden.
+ Beispielsweise können über das C#-Projektsystem *CSPROJ* -Dateien geladen werden, Visual Studio kann aber keine *XXPROJ* -Dateien laden. Eine Projektdatei für Quelldateien in einer beliebigen Sprache muss dieselbe Erweiterung wie Visual Basic- oder C#-Projektdateien verwenden, um in Visual Studio geladen zu werden.
 
 ## <a name="well-known-target-names"></a>Bekannte Zielnamen
 
@@ -51,7 +52,7 @@ Visual Studio hostet MSBuild, um verwaltete Projekte zu laden und zu erstellen. 
 
 ```xml
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "
-Condition=" '$(Configuration)' == 'Release' " 
+Condition=" '$(Configuration)' == 'Release' " 
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "
 ```
 
@@ -59,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>Zusätzliche Buildvorgänge
 
- Mit Visual Studio können Sie den Elementtypnamen einer Datei in einem Projekt über die Eigenschaft **Buildvorgang** im Fenster **Dateieigenschaften** ändern. In diesem Menü werden **Compile**, **EmbeddedResource**, **Content** und **None** sowie alle anderen bereits im Projekt vorhandenen Elementtypnamen aufgeführt. Um sicherzustellen, dass alle benutzerdefinierten Elementtypnamen in diesem Menü immer verfügbar sind, können Sie dem Elementtyp `AvailableItemName`die entsprechenden Namen hinzufügen. Durch Hinzufügen des folgenden Elements zur Projektdatei wird beispielsweise in diesem Menü der benutzerdefinierte Typ **JScript** für alle Projekte eingefügt, die diesen Typ importieren:
+ Mit Visual Studio können Sie den Elementtypnamen einer Datei in einem Projekt über die Eigenschaft **Buildvorgang** im Fenster **Dateieigenschaften** ändern. In diesem Menü werden **Compile** , **EmbeddedResource** , **Content** und **None** sowie alle anderen bereits im Projekt vorhandenen Elementtypnamen aufgeführt. Um sicherzustellen, dass alle benutzerdefinierten Elementtypnamen in diesem Menü immer verfügbar sind, können Sie dem Elementtyp `AvailableItemName`die entsprechenden Namen hinzufügen. Durch Hinzufügen des folgenden Elements zur Projektdatei wird beispielsweise in diesem Menü der benutzerdefinierte Typ **JScript** für alle Projekte eingefügt, die diesen Typ importieren:
 
 ```xml
 <ItemGroup>
@@ -94,11 +95,11 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  In Visual Studio wird die Anordnung der Projektmappendateien und Projektbuilds durch Visual Studio selbst gesteuert. Wenn eine Lösung mit *msbuild.exe* über die Befehlszeile erstellt wird, analysiert MSBuild die Lösungsdatei und ordnet die Projektbuilds an. In beiden Fällen werden die Projekte einzeln in der Reihenfolge der Abhängigkeiten erstellt. Gleichzeitig werden Verweise zwischen Projekten nicht durchlaufen. Wenn hingegen einzelne Projekte mit *msbuild.exe* erstellt werden, werden Verweise zwischen Projekten durchlaufen.
 
- Bei der Kompilierung innerhalb von Visual Studio wird die Eigenschaft `$(BuildingInsideVisualStudio)` auf `true` festgelegt. Damit kann im Projekt oder in den *TARGETS*-Dateien festgelegt werden, dass der Build ein anderes Verhalten aufweist.
+ Bei der Kompilierung innerhalb von Visual Studio wird die Eigenschaft `$(BuildingInsideVisualStudio)` auf `true` festgelegt. Damit kann im Projekt oder in den *TARGETS* -Dateien festgelegt werden, dass der Build ein anderes Verhalten aufweist.
 
 ## <a name="display-properties-and-items"></a>Anzeigen von Eigenschaften und Elementen
 
- Visual Studio erkennt bestimmte Eigenschaftennamen und -werte. Über die folgende Eigenschaft in einem Projekt wird beispielsweise im **Projekt-Designer** im Feld **Anwendungstyp** die Option **Windows-Anwendung**angezeigt.
+ Visual Studio erkennt bestimmte Eigenschaftennamen und -werte. Über die folgende Eigenschaft in einem Projekt wird beispielsweise im **Projekt-Designer** im Feld **Anwendungstyp** die Option **Windows-Anwendung** angezeigt.
 
 ```xml
 <OutputType>WinExe</OutputType>
@@ -135,7 +136,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="debugging"></a>Debuggen
 
- Zum Suchen und Starten der Ausgabeassembly sowie zum Anhängen des Debuggers müssen die Eigenschaften `OutputPath`, `AssemblyName` und `OutputType` in Visual Studio ordnungsgemäß definiert sein. Wenn über den Compiler im Buildprozess keine *PDB*-Datei generiert wurde, kann der Debugger nicht angehängt werden.
+ Zum Suchen und Starten der Ausgabeassembly sowie zum Anhängen des Debuggers müssen die Eigenschaften `OutputPath`, `AssemblyName` und `OutputType` in Visual Studio ordnungsgemäß definiert sein. Wenn über den Compiler im Buildprozess keine *PDB* -Datei generiert wurde, kann der Debugger nicht angehängt werden.
 
 ## <a name="design-time-target-execution"></a>Zielausführung zur Entwurfszeit
 
@@ -147,7 +148,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>So entladen und bearbeiten Sie eine Projektdatei in Visual Studio
 
-1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt , und wählen Sie dann **Projekt entladen**aus.
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt , und wählen Sie dann **Projekt entladen** aus.
 
      Das Projekt ist als **(nicht verfügbar)** gekennzeichnet.
 
@@ -157,7 +158,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 3. Bearbeiten, speichern und schließen Sie dann die Projektdatei.
 
-4. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden**aus.
+4. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden** aus.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense und Validierung
 
@@ -197,7 +198,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="performance-shortcuts"></a>Leistungsoptimierungen
 
- Wenn Sie die Visual Studio-IDE verwenden, um das Debuggen zu starten (entweder durch Drücken der F5-Taste oder in der Menüleiste durch Auswahl von **Debuggen** > **Debugging starten**) oder um das Projekt zu erstellen (z. B **Erstellen** > **Projektmappe erstellen**), wendet der Buildprozess zur Leistungsverbesserung eine schnelle Überprüfung auf Updates an. In einigen Fällen, in denen benutzerdefinierte Builds Dateien erstellen, die ihrerseits erstellt werden, werden die geänderten Dateien von der schnellen Überprüfung auf Updates nicht einwandfrei erkannt. In Projekten, die eine gründlichere Überprüfung auf Updates erfordern, lässt sich die schnelle Überprüfung auf Aktualisierungen deaktivieren, indem die Umgebungsvariable `DISABLEFASTUPTODATECHECK=1`festgelegt wird. Alternativ kann dies als MSBuild-Eigenschaft im Projekt oder in einer vom Projekt importierten Datei festgelegt werden.
+ Wenn Sie die Visual Studio-IDE verwenden, um das Debuggen zu starten (entweder durch Drücken der F5-Taste oder in der Menüleiste durch Auswahl von **Debuggen** > **Debugging starten** ) oder um das Projekt zu erstellen (z. B **Erstellen** > **Projektmappe erstellen** ), wendet der Buildprozess zur Leistungsverbesserung eine schnelle Überprüfung auf Updates an. In einigen Fällen, in denen benutzerdefinierte Builds Dateien erstellen, die ihrerseits erstellt werden, werden die geänderten Dateien von der schnellen Überprüfung auf Updates nicht einwandfrei erkannt. In Projekten, die eine gründlichere Überprüfung auf Updates erfordern, lässt sich die schnelle Überprüfung auf Aktualisierungen deaktivieren, indem die Umgebungsvariable `DISABLEFASTUPTODATECHECK=1`festgelegt wird. Alternativ kann dies als MSBuild-Eigenschaft im Projekt oder in einer vom Projekt importierten Datei festgelegt werden.
 
  Für reguläre Builds in Visual Studio trifft die schnelle Überprüfung auf Updates nicht zu, und das Projekt wird erstellt, als ob Sie den Build an der Eingabeaufforderung aufgerufen hätten.
 

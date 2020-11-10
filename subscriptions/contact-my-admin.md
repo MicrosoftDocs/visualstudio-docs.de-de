@@ -7,15 +7,15 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie Ihren Abonnementadministrator bei Fragen oder Problemen kontaktieren können.
-ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
+ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005687"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93289976"
 ---
-# <a name="get-assistance-from-your-subscriptions-administrator"></a>Anfordern von Unterstützung durch einen Abonnementadministrator
-Wenn Ihr Visual Studio-Abonnement von einem Unternehmen, einer Schule oder einer Universität bereitgestellt wurde, hat Ihnen dieses Abonnement vermutlich ein Abonnementadministrator zugewiesen.  Administratoren können Abonnements zuweisen oder diese Zuweisung rückgängig machen, die E-Mail-Adressen für Anmeldungen ändern, feststellen, ob Sie Software herunterladen können, und weitere abonnementbezogene Funktionen ausführen.
+# <a name="get-assistance-from-your-subscriptions-admin"></a>Anfordern von Unterstützung durch einen Abonnementadministrator
+Wenn Ihr Visual Studio-Abonnement von Ihrem Unternehmen, Ihrer Schule oder Universität bereitgestellt wurde, hat Ihnen dieses Abonnement vermutlich ein Abonnementadministrator zugewiesen.  Administratoren können Abonnements zuweisen oder diese Zuweisung rückgängig machen, die E-Mail-Adressen für Anmeldungen ändern, feststellen, ob Sie Software herunterladen können, und weitere abonnementbezogene Funktionen ausführen.
 
 Angesichts der Größe und Komplexität vieler Organisationen wissen Sie möglicherweise nicht, wer Ihr Administrator ist und wo Sie Unterstützung erhalten.  Das Abonnentenportal wurde daher um ein neues Feature ergänzt, das Ihnen dabei hilft, mit Ihrem Administrator in Kontakt zu treten.   
 
@@ -27,13 +27,13 @@ Angesichts der Größe und Komplexität vieler Organisationen wissen Sie möglic
    > ![Contact my Admin](_img/contact-my-admin/contact-my-admin-button.png "Wählen Sie die Schaltfläche „Administrator kontaktieren“ aus, geben Sie Ihre Nachricht ein, und wählen Sie dann „Senden“ aus.") (Administrator kontaktieren)
 4. Geben Sie die Nachricht ein, die an den Administrator gesendet werden soll.
 5. Wenn Sie eine Kopie der Nachricht erhalten möchten, die an Ihren Administrator gesendet wird, wählen Sie das Kontrollkästchen neben **Send me a copy** (Kopie an mich senden) aus. 
-6. Klicken Sie abschließend auf **Senden** .
+6. Klicken Sie abschließend auf **Senden**.
 
 > [!NOTE]
 > **Superadministratoren:**  Legen Sie die E-Mail-Adresse in [Agreement Preferences](admin-prefs.md#contact-email-address) (Vertragseinstellungen) fest, an die Anforderungen für „Contact my Admin“ (Administrator kontaktieren) gesendet werden sollen.
 
 ## <a name="resources"></a>Ressourcen
-- [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
 
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](/visualstudio/)

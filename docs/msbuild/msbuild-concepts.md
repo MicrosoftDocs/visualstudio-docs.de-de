@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Grundlagen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie unter Verwendung von MSBuild-Eigenschaften, Elementen, Aufgaben und Zielen Buildkomponenten und -prozesse angeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 605b6ff67963c8df3e711c3f0b000c23f82050cd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 1efd2b1344e4523b9428c0eaacb63f93f9f8995f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289247"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046426"
 ---
 # <a name="msbuild-concepts"></a>MSBuild-Grundlagen
 

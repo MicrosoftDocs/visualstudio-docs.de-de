@@ -1,5 +1,7 @@
 ---
 title: ResolveNonMSBuildProjectOutput-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild mithilfe der Aufgabe „ResolveNonMSBuildProjectOutput“ die Ausgabedateien für Nicht-MSBuild-Projektverweise bestimmt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604ed91d32140c3b037e6ddef21e996f72ef8439
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3486788331574aa70874c0deeefa3c553404c166
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632575"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048517"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput-Aufgabe
 
@@ -29,7 +31,7 @@ Bestimmt die Ausgabedateien für Nicht-MSBuild-Projektverweise
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der `ResolveNonMSBuildProjectOutput`-Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `ResolveNonMSBuildProjectOutput` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -38,11 +40,11 @@ Bestimmt die Ausgabedateien für Nicht-MSBuild-Projektverweise
 |`ResolvedOutputPaths`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält eine Liste der aufgelösten Verweispfade und behält die ursprünglichen Projektverweisattribute bei|
 |`UnresolvedProjectReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Liste der Projektverweiselemente, die nicht mithilfe der Liste vorab aufgelöster Ausgaben aufgelöst werden konnten<br /><br /> Da Visual Studio nur Nicht-MSBuild-Projekte vorab auflöst, weisen Projektverweise in dieser Liste das MSBuild-Format auf.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

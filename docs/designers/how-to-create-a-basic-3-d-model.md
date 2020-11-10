@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen eines einfachen 3D-Modells'
+description: Erfahren Sie, wie der Modell-Editor zum Erstellen eines einfachen 3D-Modells verwendet wird, einschließlich des Hinzufügens von Objekten zu einer Szene, des Übertragen einer Auswahl und anderer Aktivitäten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd0b2a092e47eab053d4150fd2139fb0dbdf6ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 924b990e1626842778c0b3577ddb25a53a4eb910
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769267"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134602"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Vorgehensweise: Erstellen eines einfachen 3D-Modells
 
@@ -42,9 +44,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
 
 1. Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten können. Weitere Informationen zum Hinzufügen eines Modells zu Ihren Projekten finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).
 
-2. Fügen Sie einen Würfel in die Szene ein. Wählen Sie im Fenster **Toolbox** unter **Formen** **Würfel** aus und verschieben Sie ihn auf die Entwurfsoberfläche.
+2. Fügen Sie einen Würfel in die Szene ein. Wählen Sie im Fenster **Toolbox** unter **Formen****Würfel** aus und verschieben Sie ihn auf die Entwurfsoberfläche.
 
-3. Wechseln Sie zur Flächenauswahl. Wählen Sie auf der Symbolleiste des Modell-Editors **Fläche auswählen** aus.
+3. Wechseln Sie zur Flächenauswahl. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche auswählen**.
 
 4. Unterteilen Sie die Oberseite des Würfels. Klicken Sie im Flächenauswahlmodus den Würfel einmal an, um ihn auswählen zu können. Klicken Sie anschließend auf die Oberfläche des Würfels, um die Anfangsfläche auszuwählen. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche unterteilen**. Dadurch werden neue Schnittpunkte auf der Oberfläche des Würfels hinzugefügt, die ihn in vier gleichgroße Teile aufteilen.
 

@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Inlinetasks mit RoslynCodeTaskFactory | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die MSBuild-Aufgabe „RoslynCodeTaskFactory“, die den plattformübergreifenden Roslyn-Compiler verwendet, um In-Memory-Aufgabenassemblys für die Verwendung als Inlineaufgaben zu generieren.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289208"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049134"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>MSBuild-Inlineaufgaben mit RoslynCodeTaskFactory
 
@@ -26,7 +28,7 @@ ms.locfileid: "85289208"
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Die Struktur einer Inlineaufgabe mit RoslynCodeTaskFactory
 
- RoslynCodeTaskFactory-Inlineaufgaben werden genau wie bei [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) deklariert. Der einzige Unterschied liegt darin, dass Sie .NET Standard als Ziel verwenden.  Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS*-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
+ RoslynCodeTaskFactory-Inlineaufgaben werden genau wie bei [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) deklariert. Der einzige Unterschied liegt darin, dass Sie .NET Standard als Ziel verwenden.  Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS* -Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

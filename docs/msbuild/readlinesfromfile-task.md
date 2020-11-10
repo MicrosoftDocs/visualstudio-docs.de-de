@@ -1,5 +1,7 @@
 ---
 title: ReadLinesFromFile-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild mithilfe der Aufgabe „ReadLinesFromFile“ eine Liste der Elemente aus einer Textdatei liest. Die Datei muss in jeder Zeile ein Element enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff2c43af40ea429714f0624db67c53fa46eb6427
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632900"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048783"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile-Aufgabe
 
@@ -31,14 +33,14 @@ Liest eine Liste von Elementen aus einer Textdatei
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der `ReadLinesFromFile`-Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `ReadLinesFromFile` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`File`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt die zu lesende Datei an. Die Datei muss in jeder Zeile ein Element enthalten.|
+|`File`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die zu lesende Datei an. Die Datei muss in jeder Zeile ein Element enthalten.|
 |`Lines`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die aus der Datei gelesenen Zeilen|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
@@ -69,4 +71,4 @@ Liest eine Liste von Elementen aus einer Textdatei
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)

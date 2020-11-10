@@ -1,5 +1,7 @@
 ---
 title: WriteCodeFragment-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild mithilfe der Aufgabe „WriteCodeFragment“ eine temporäre Codedatei aus dem angegebenen generierten Codefragment erzeugt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ab604b23a99ab2dd62adca6076168fe264ab1b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc96f804541f780da38776d19b19393eb249a4ec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630691"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047469"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment-Aufgabe
 
@@ -29,7 +31,7 @@ Generiert eine temporäre Codedatei aus dem angegebenen generierten Codefragment
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der `WriteCodeFragment`-Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `WriteCodeFragment` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -38,11 +40,11 @@ Generiert eine temporäre Codedatei aus dem angegebenen generierten Codefragment
 |`OutputDirectory`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt den Zielordner für den generierten Code an. In der Regel ist dies der Zwischenordner.|
 |`OutputFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>-Ausgabeparameter.<br /><br /> Gibt den Pfad der Datei an, die generiert wurde. Wenn dieser Parameter mithilfe eines Dateinamens festgelegt wird, wird dem Dateinamen der Zielordner vorangestellt. Wenn er mit einem Stamm festgelegt wird, wird der Zielordner ignoriert.<br /><br /> Wenn dieser Parameter nicht festgelegt wird, ist der Name der Ausgabedatei der Zielordner, eine willkürliche Datei und das standardmäßige Suffix für die angegebene Sprache.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

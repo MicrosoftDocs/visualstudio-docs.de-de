@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 4f2d5bf573da940c39790d6868a94d588e5efb7b
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197477"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918220"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: Erweitern einer einfachen C#-Konsolen-App
 
@@ -38,11 +38,11 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
 
    ![Screenshot: Auswahl der Projektvorlage „Klassenbibliothek“](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Geben Sie den Projektnamen **CalculatorLibrary** ein, und klicken Sie dann auf **Erstellen** . Visual Studio erstellt das neue Projekt und fügt es zur Projektmappe hinzu.
+1. Geben Sie den Projektnamen **CalculatorLibrary** ein, und klicken Sie dann auf **Erstellen**. Visual Studio erstellt das neue Projekt und fügt es zur Projektmappe hinzu.
 
    ![Screenshot: Projektmappen-Explorer mit hinzugefügtem Klassenbibliotheksprojekt „CalculatorLibrary“](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. Benennen Sie die Datei *Class1.cs* in **CalculatorLibrary.cs** um. Sie können im **Projektmappen-Explorer** auf den Namen klicken, um diesen zu ändern, oder klicken Sie mit der rechten Maustaste auf den Namen, und wählen Sie dann **Umbenennen** aus, oder drücken Sie **F2** .
+1. Benennen Sie die Datei *Class1.cs* in **CalculatorLibrary.cs** um. Sie können im **Projektmappen-Explorer** auf den Namen klicken, um diesen zu ändern, oder klicken Sie mit der rechten Maustaste auf den Namen, und wählen Sie dann **Umbenennen** aus, oder drücken Sie **F2**.
 
    Möglicherweise werden Sie gefragt, ob Sie Verweise auf `Class1` in der Datei umbenennen möchten. Es spielt keine Rolle, wie Sie antworten, da Sie den Code in einem zukünftigen Schritt ersetzen.
 
@@ -54,7 +54,7 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
 
    ![Screenshot: Dialogfeld „Verweis-Manager“](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. Aktivieren Sie im Dialogfeld **Verweis-Manager** das Kontrollkästchen für das Projekt **CalculatorLibrary** , und klicken Sie dann auf **OK** .  Der Projektverweis wird unter dem Knoten **Projekte** im **Projektmappen-Explorer** angezeigt.
+1. Aktivieren Sie im Dialogfeld **Verweis-Manager** das Kontrollkästchen für das Projekt **CalculatorLibrary** , und klicken Sie dann auf **OK**.  Der Projektverweis wird unter dem Knoten **Projekte** im **Projektmappen-Explorer** angezeigt.
 
    ![Screenshot: Projektmappen-Explorer mit Projektverweis](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
@@ -193,7 +193,7 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-1. Führen Sie das Programm noch mal aus. Klicken Sie anschließend mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Ordner im Datei-Explorer öffnen** aus. Navigieren Sie dann im Datei-Explorer nach unten zum Ausgabeordner. Dabei handelt es sich möglicherweise um *bin/Debug/netcoreapp3.1* . Öffnen Sie die Datei *calculator.log* .
+1. Führen Sie das Programm noch mal aus. Klicken Sie anschließend mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Ordner im Datei-Explorer öffnen** aus. Navigieren Sie dann im Datei-Explorer nach unten zum Ausgabeordner. Dabei handelt es sich möglicherweise um *bin/Debug/netcoreapp3.1*. Öffnen Sie die Datei *calculator.log*.
 
     ```output
     Starting Calculator Log
@@ -212,7 +212,7 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
 
    ![Screenshot: NuGet-Paket-Manager](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. Suchen Sie nach dem Paket „Newtonsoft.Json“, und klicken Sie auf **Installieren** .
+1. Suchen Sie nach dem Paket „Newtonsoft.Json“, und klicken Sie auf **Installieren**.
 
    ![Screenshot: Informationen zum NuGet-Paket „Newtonsoft“](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
@@ -328,6 +328,110 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
     ]
    }
    ```
+
+## <a name="debug-set-and-hit-a-breakpoint"></a>Debuggen: Festlegen und Erreichen eines Haltepunkts
+
+Der Visual Studio-Debugger ist ein leistungsstarkes Tool, mit dem Sie Ihren Code Schritt für Schritt durchlaufen und die exakte Position von Programmierfehlern ermitteln können. Anschließend erhalten Sie Informationen darüber, welche Korrekturen im Code erforderlich sind. Visual Studio ermöglicht das Durchführen temporärer Änderungen, damit Sie die Ausführung des Programms fortsetzen können.
+
+1. Klicken Sie in *Program.cs* auf den Rand links neben der folgenden Codezeile (alternativ können Sie das Kontextmenü öffnen und **Haltepunkt** > **Haltepunkt einfügen** auswählen oder **F9** drücken):
+
+   ```csharp
+   result = calculator.DoOperation(cleanNum1, cleanNum2, op);
+   ```
+
+   Der anschließend angezeigte rote Punkt weist darauf hin, dass ein Haltepunkt eingefügt wurde. Mithilfe von Haltepunkten können Sie Ihre App anhalten und den Code untersuchen. Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen.
+
+   ![Screenshot: Festlegen eines Haltepunkts](media/vs-2019/calculator-2-debug-set-breakpoint.png)
+
+1. Erstellen Sie die App, und führen Sie sie aus.
+
+1. Geben Sie in der ausgeführten App einige Werte zur Berechnung ein:
+
+   - Geben Sie als erste Zahl **8** ein, und drücken Sie die EINGABETASTE.
+   - Geben Sie als zweite Zahl **0** ein, und drücken Sie die EINGABETASTE.
+   - Geben Sie als Operator den Wert **d** ein.
+
+   Die App pausiert an der Position des Haltepunkts, dies ist am links angezeigten gelben Pfeil und am hervorgehobenen Code erkennbar. Der hervorgehobene Code wurde noch nicht ausgeführt.
+
+   ![Screenshot: Erreichen eines Haltepunkts](media/vs-2019/calculator-2-debug-hit-breakpoint.png)
+
+   Nun, da die App angehalten wurde, können Sie den Status Ihrer Anwendung untersuchen.
+
+## <a name="debug-view-variables"></a>Debuggen: Anzeigen von Variablen
+
+1. Bewegen Sie im hervorgehobenen Code den Mauszeiger über Variablen wie z. B. `cleanNum1` und `op`. Es werden die aktuellen Werte für diese Variablen eingeblendet (`8` und `d`), die in DataTips angezeigt werden.
+
+   ![Screenshot: Anzeige von DataTips](media/vs-2019/calculator-2-debug-view-datatip.png)
+
+   Beim Debuggen ist es zur Problembehandlung oft entscheidend, zu prüfen, ob Variablen die erwarteten Werte enthalten.
+
+2. Sehen Sie sich im unteren Bereich das Fenster **Lokal** an. (Klicken Sie auf **Debuggen** > **Fenster** > **Lokal** , falls es nicht geöffnet ist.)
+
+   Im Fenster „Lokal“ werden alle Variablen angezeigt, die sich derzeit im Bereich befinden, gemeinsam mit dem zugehörigen Wert und Typ.
+
+   ![Screenshot: Fenster „Lokal“](media/vs-2019/calculator-2-debug-locals-window.png)
+
+3. Sehen Sie sich das Fenster **Auto** an.
+
+   Das Fenster „Auto“ ähnelt dem Fenster **Lokal** , zeigt jedoch die Variablen direkt vor und nach der aktuellen Codezeile, an der Ihre App angehalten wurde.
+
+   Als Nächstes führen Sie den Code im Debugger Anweisung für Anweisung aus. Dieses Vorgehen wird als *Einzelschrittausführung* bezeichnet.
+
+## <a name="debug-step-through-code"></a>Debuggen: Schritt-für-Schritt-Ausführung des Codes
+
+1. Drücken Sie **F11** (oder klicken Sie auf **Debuggen** > **Einzelschritt** ).
+
+   Bei Verwendung des Befehls „Einzelschritt“ führt die App die aktuelle Anweisung aus und wechselt zur nächsten ausführbaren Anweisung (dies ist üblicherweise die nächste Codezeile). Der gelbe Pfeil auf der linken Seiten verweist jeweils auf die aktuelle Anweisung.
+
+   ![Screenshot: Befehl „Einzelschritt“](media/vs-2019/calculator-2-debug-step-into.png)
+
+   Sie haben soeben einen Einzelschritt in die Methode `DoOperation` der Klasse `Calculator` ausgeführt.
+
+1. Betrachten Sie das Fenster **Aufrufliste** , um eine hierarchische Ansicht des Programmflows zu erhalten. (Klicken Sie auf **Debuggen** > **Fenster** > **Aufrufliste** , falls es nicht geöffnet ist.)
+
+   ![Screenshot: Aufrufliste](media/vs-2019/calculator-2-debug-call-stack.png)
+
+   Diese Ansicht zeigt die aktuelle Methode `Calculator.DoOperation`, markiert durch den gelben Pfeil. Die zweite Zeile zeigt die Funktion, die die Methode aus der Methode `Main` in *Program.cs* aufgerufen hat. Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. Zusätzlich bietet es über das Kontextmenü Zugriff auf viele Debuggerfeatures, darunter beispielsweise **Zum Quellcode wechseln**.
+
+1. Drücken Sie wiederholt **F10** (oder **Debuggen** > **Prozedurschritt** ), bis die App an der Anweisung `switch` angehalten wird.
+
+   ```csharp
+   switch (op)
+   {
+   ```
+
+   Der Befehl „Prozedurschritt“ ähnelt dem Befehl „Einzelschritt“, weist aber folgenden Unterschied auf: Wenn die aktuelle Anweisung eine Funktion aufruft, führt der Debugger den Code in der aufgerufenen Funktion auf und hält die Ausführung erst an, wenn die Funktion zurückgegeben wird. Mit dem Befehl „Prozedurschritt“ kann der Code schneller durchlaufen werden, wenn Sie an einer bestimmten Funktion nicht interessiert sind.
+
+1. Drücken Sie noch einmal **F10** , damit die App an der folgenden Codezeile angehalten wird.
+
+   ```csharp
+   if (num2 != 0)
+   {
+   ```
+
+   Dieser Code überprüft, ob eine Division durch 0 durchgeführt wird. Beim Fortsetzen der App wird eine allgemeine Ausnahme (ein Fehler) ausgelöst. Nehmen wir aber an, Sie betrachten dies als Fehler und möchten etwas anderes tun, z. B. den tatsächlichen Rückgabewert in der Konsole anzeigen. Eine Option besteht darin, das Debuggerfeature namens „Bearbeiten und Fortfahren“ zu verwenden, um Änderungen am Code vorzunehmen und das Debuggen fortzusetzen. Es gibt aber noch einen anderen Trick, den Ausführungsflow temporär zu ändern.
+
+## <a name="debug-test-a-temporary-change"></a>Debuggen: Testen einer temporären Änderung
+
+1. Wählen Sie den gelben Pfeil aus, der im angehaltenen Zustand aktuell auf die Anweisung `if (num2 != 0)` zeigt, und ziehen Sie ihn auf die folgende Anweisung.
+
+   ```csharp
+   result = num1 / num2;
+   ```
+
+   Hierdurch überspringt die App die Anweisung `if` vollständig, sodass Sie sehen können, was bei einer Division durch 0 geschieht.
+
+1. Drücken Sie **F10** , um die Codezeile auszuführen.
+
+1. Bewegen Sie den Mauszeiger über die Variable `result`. Sie sehen, dass sie den Wert `Infinity` speichert.
+
+   In C# ist `Infinity` das Ergebnis einer Division durch 0.
+
+1. Drücken Sie **F5** (oder klicken Sie auf **Debuggen** > **Debuggen fortsetzen** ).
+
+   Das Unendlichkeitssymbol wird in der Konsole als Ergebnis der mathematischen Operation angezeigt.
+
+1. Schließen Sie die App ordnungsgemäß, indem Sie den Befehl „n“ verwenden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

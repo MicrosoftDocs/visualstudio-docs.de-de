@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Inlineaufgaben | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild-Inlineaufgaben durch das Kompilieren einer Klasse erstellt werden können, die die Schnittstelle „Microsoft.Build.Framework.ITask“ implementiert.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
+ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "81638045"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046333"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
 
@@ -26,7 +28,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
  In MSBuild 15.8 wurde [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) hinzugefügt, womit plattformübergreifende .NET Standard-Inlineaufgaben erstellt werden können.  Wenn Sie Inlineaufgaben in .NET Core verwenden müssen, müssen Sie RoslynCodeTaskFactory verwenden.
 ## <a name="the-structure-of-an-inline-task"></a>Struktur von Inlineaufgaben
 
- Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elementen enthalten. Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS*-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
+ Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elementen enthalten. Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS* -Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -83,7 +85,7 @@ Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineau
 
 - Wenn der Wert von `Type` auf `Fragment` festgelegt ist, wird im Code der Inhalt der `Execute`-Methode, nicht jedoch die Signatur oder die `return`-Anweisung definiert.
 
-Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z.B. „\<“ oder „>“, nicht mit Escapezeichen versehen.
+Der Code selbst befindet sich in der Regel zwischen einem `<![CDATA[`-Marker und einem `]]>`-Marker. Da sich der Code in einem CDATA-Abschnitt befindet, müssen Sie reservierte Zeichen, z. B. \<" or ">, nicht mit Escapezeichen versehen.
 
 Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type``Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.
 

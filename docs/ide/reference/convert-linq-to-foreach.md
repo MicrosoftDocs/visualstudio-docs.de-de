@@ -1,6 +1,7 @@
 ---
-title: Refactoring von Code zum Konvertieren einer LINQ-Abfrage in eine foreach-Anweisung
-description: Konvertieren einer beliebigen LINQ-Abfrage in einer Abfragesyntax in eine foreach-Anweisung
+title: Konvertieren einer LINQ-Abfrage in eine foreach-Anweisung
+ms.custom: SEO-VS-2020
+description: Führen Sie ein Refactoring für Ihren Code aus, um eine beliebige, in der Abfragesyntax geschriebene LINQ-Abfrage in eine foreach-Anweisung zu konvertieren.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -11,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7abdebf36ab075dfd289069671cf3b6851a72b75
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 832c4160d743ca35dbe41eb0f0cbafd81d60dd26
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659367"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102545"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refactoring zum Konvertieren von LINQ in eine foreach-Anweisung
 

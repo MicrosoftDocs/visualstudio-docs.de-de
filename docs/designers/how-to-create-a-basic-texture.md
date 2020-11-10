@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen einer Basistextur'
+description: Erfahren Sie, wie Sie mit der Bildbearbeitung eine grundlegende Textur erstellen, einschließlich der Festlegung von Texturgröße, Tooleigenschaften und anderer Aktivitäten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b356d8596581b1c289d9b9aa13a3d5b362e39e58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb4a0a66855351e9edbb1b06dbf2aee452cd150
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769095"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134144"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer einfachen Textur
 
@@ -37,7 +39,7 @@ In den folgenden Schritten wird veranschaulicht, wie Sie eine Textur erstellen, 
 
 ![Zielscheibe mit Transparenz in Grün](../designers/media/digit-bullseye-texture-in-editor.png)
 
-Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angezeigt wird. Verwenden Sie während dem Arbeiten das Fenster **Eigenschaften**, um die Bildgröße festzulegen, Tooleigenschaften zu ändern und Farben anzugeben.
+Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angezeigt wird. Verwenden Sie während dem Arbeiten das Fenster **Eigenschaften** , um die Bildgröße festzulegen, Tooleigenschaften zu ändern und Farben anzugeben.
 
 ### <a name="create-a-bullseye-target-texture"></a>Erstellen der Textur „Zielscheibe“
 
@@ -47,7 +49,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angez
 
 3. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllung**. Das Fenster **Eigenschaften** zeigt nun die Eigenschaften des Tools **Füllung** zusammen mit den Bildeigenschaften an.
 
-4. Legen Sie die Vordergrundfarbe auf vollständig transparentes schwarz fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Vordergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** neben dem Farbwähler auf `0` fest.
+4. Legen Sie die Vordergrundfarbe auf vollständig transparentes schwarz fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Vordergrund**. Legen Sie die Werte der Eigenschaften **R** , **G** , **B** und **A** neben dem Farbwähler auf `0` fest.
 
 5. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllen**. Halten Sie anschließend die **UMSCHALTTASTE** gedrückt, und wählen Sie einen beliebigen Punkt im Bild aus. Durch Verwendung der **UMSCHALTTASTE** ersetzt der Alphawert der Füllfarbe die Farbe im Bild. Andernfalls wird der Alphawert verwendet, um die Füllfarbe mit der Farbe im Bild zu vermischen.
 
@@ -56,9 +58,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angez
 
 6. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Ellipse**.
 
-7. Legen Sie die Vordergrundfarbe auf ein vollständig deckendes schwarz fest. Legen Sie die Werte der Eigenschaften **R**, **G** und **B**`0` sowie den Wert der Eigenschaft **A** auf `255` fest.
+7. Legen Sie die Vordergrundfarbe auf ein vollständig deckendes schwarz fest. Legen Sie die Werte der Eigenschaften **R** , **G** und **B**`0` sowie den Wert der Eigenschaft **A** auf `255` fest.
 
-8. Legen Sie die Hintergrundfarbe auf ein vollständig deckendes weiß fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Hintergrund**. Legen Sie die Werte der Eigenschaften **R**, **G**, **B** und **A** auf `255` fest.
+8. Legen Sie die Hintergrundfarbe auf ein vollständig deckendes weiß fest. Klicken Sie in der Eigenschaftengruppe **Farben** im Fenster **Eigenschaften** auf **Hintergrund**. Legen Sie die Werte der Eigenschaften **R** , **G** , **B** und **A** auf `255` fest.
 
 9. Legen Sie die Breite der Kontur der Ellipse fest. Legen Sie in der Eigenschaftengruppe **Aussehen** im Fenster **Eigenschaften** den Wert der Eigenschaft **Breite** auf `8` fest.
 
@@ -73,7 +75,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** angez
 
 13. Zeichnen Sie einen weiteren Kreis von Pixelkoordinate `(64, 64)` bis Pixelkoordinate `(448, 448)`.
 
-14. Ändern Sie die Hintergrundfarbe auf ein vollständig deckendes weiß. Legen Sie **R**, **G**, **B** und **A** auf `255` fest.
+14. Ändern Sie die Hintergrundfarbe auf ein vollständig deckendes weiß. Legen Sie **R** , **G** , **B** und **A** auf `255` fest.
 
 15. Zeichnen Sie einen weiteren Kreis von Pixelkoordinate `(128, 128)` bis Pixelkoordinate `(384, 384)`.
 
@@ -89,4 +91,4 @@ Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weite
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Bildbearbeitung](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)

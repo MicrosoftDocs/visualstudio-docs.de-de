@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält'
+description: Erfahren Sie, wie Sie mithilfe der Pipeline für Bildinhalte Mipmaps aus einem Quellbild als Teil der Buildphase des Projekts generieren können und so sicherstellen, dass die Mipmaps immer aktuell sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b46a353606fc90aa89abf68d1e901675b4880b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3758184a10161d64add37fe1dc231326b90cb53
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768931"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134830"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Vorgehensweise: Erstellen einer Textur, die Mipmaps enthält
 
 Mit der Bildinhaltspipeline können Mipmaps aus einem Quellbild als Teil der Buildphase des Projekts generiert werden. Sie müssen manchmal den Bildinhalt für jede MIP-Ebene manuell angeben, um bestimmte Effekte zu erzielen. Wenn Sie den Bildinhalt jeder MIP-Ebene nicht manuell angeben müssen, stellt das Generieren von Mipmaps zur Buildzeit sicher, dass die Inhalte von Mipmaps stets synchronisiert werden. Dadurch werden ebenfalls die Leistungseinbußen durch das Generieren von Mipmaps zur Laufzeit vermieden.
 
-Dieser Artikel behandelt Folgendes:
+In diesem Artikel wird Folgendes behandelt:
 
 - Konfigurieren des Quellbilds für die Verarbeitung mithilfe der Pipeline für Bildinhalte.
 
@@ -31,9 +33,9 @@ Mipmapping stellt im Bildschirmbereich automatisch die Detailebene für struktur
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>So exportieren Sie eine Textur mit Mipmaps
 
-1. Beginnen Sie mit einer Standardtextur. Laden Sie eine vorhandene Datei, oder erstellen Sie eine, wie in [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben. Um Mipmaps zu unterstützen geben Sie eine Textur mit einer Breite und Höhe an, die beide in der Größe über die gleiche Potenz verfügen, z. B. 64x64, 256x256 oder 512x512.
+1. Beginnen Sie mit einer Standardtextur. Laden Sie eine vorhandene Bilddatei, oder erstellen Sie wie unter [Vorgehensweise: Erstellen einer Basistextur](../designers/how-to-create-a-basic-texture.md) beschrieben eine. Um Mipmaps zu unterstützen geben Sie eine Textur mit einer Breite und Höhe an, die beide in der Größe über die gleiche Potenz verfügen, z. B. 64x64, 256x256 oder 512x512.
 
-2. Konfigurieren Sie die soeben erstellte Texturdatei so, dass sie durch die Pipeline für Bildinhalte verarbeitet wird. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die erstellte Texturdatei, und klicken Sie dann auf **Eigenschaften**. Legen Sie anschließend die Eigenschaft **Elementtyp** auf der Seite **Konfigurationseigenschaften** > **Allgemein** auf **Pipeline für Bildinhalte** fest. Überprüfen Sie, ob die Eigenschaft **Inhalt** auf **Ja** und **Vom Build ausschließen** auf **Nein** festgelegt ist. Klicken Sie auf **Übernehmen**.
+2. Konfigurieren Sie die soeben erstellte Texturdatei so, dass sie durch die Pipeline für Bildinhalte verarbeitet wird. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die erstellte Texturdatei, und klicken Sie dann auf **Eigenschaften**. Legen Sie anschließend die Eigenschaft **Elementtyp** auf der Seite **Konfigurationseigenschaften** > **Allgemein** auf **Pipeline für Bildinhalte** fest. Überprüfen Sie, ob die Eigenschaft **Inhalt** auf **Ja** und **Vom Build ausschließen** auf **Nein** festgelegt ist. Wählen Sie **Übernehmen**.
 
    Die Eigenschaftenseite für die Konfiguration der **Pipeline für Bildinhalte** wird angezeigt.
 

@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren einer vorhandenen Anwendung für MSBuild 15 | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie sicherstellen, dass programmgesteuert erstellte Builds Ihrer Anwendung mit denen übereinstimmen, die in Visual Studio oder „MSBuild.exe“ erstellt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
@@ -7,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c141d1e35db1e5ce334606b255d99ce2c0afc29b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184028"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047641"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualisieren einer vorhandenen Anwendung für MSBuild 15
 
@@ -69,7 +71,7 @@ Verweisen Sie auf das Paket „Microsoft.Build.Locator“, um sicherzustellen, d
 
 ### <a name="ensure-output-is-clean"></a>Sicherstellen einer sauberen Ausgabe
 
-Erstellen Sie Ihr Projekt, und überprüfen Sie das Ausgabeverzeichnis, um sicherzustellen, dass es keine *Microsoft.Build.\*.dll*-Assemblys enthält (außer der im nächsten Schritt hinzugefügten *Microsoft.Build.Locator.dll*).
+Erstellen Sie Ihr Projekt, und überprüfen Sie das Ausgabeverzeichnis, um sicherzustellen, dass es keine *Microsoft.Build.\*.dll* -Assemblys enthält (außer der im nächsten Schritt hinzugefügten *Microsoft.Build.Locator.dll* ).
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Hinzufügen eines Paketverweises für Microsoft.Build.Locator
 

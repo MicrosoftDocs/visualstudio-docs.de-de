@@ -1,5 +1,7 @@
 ---
 title: Best Practices für MSBuild | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Best Practices zum Schreiben von MSBuild-Skripts, z. B. die Verwendung von Condition-Attributen und das Vermeiden von Platzhaltern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2742324f737a4e70221e3cbe4c78cff56fa7e7ca
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263148"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047663"
 ---
 # <a name="msbuild-best-practices"></a>Best Practices für MSBuild
 

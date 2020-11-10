@@ -1,5 +1,7 @@
 ---
 title: UsingTask-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die MSBuild-Aufgabe „UsingTask“, mit der die in einem Aufgabenelement referenzierte Aufgabe der Assembly zugeordnet wird, die die Aufgabenimplementierung enthält.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289156"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046107"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask-Element (MSBuild)
 
@@ -49,7 +51,7 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Architecture`|Optionales Attribut.<br /><br /> Gibt an, dass der Task in einem Prozess mit der angegebenen Bitanzahl ausgeführt werden muss. Wenn der aktuelle Prozess die Anforderung nicht erfüllt, wird der Task in einem Taskhostprozess ausgeführt, der die Anforderung erfüllt.<br /><br /> Unterstützte Werte sind `x86` (32 Bit), `x64` (64 Bit), `CurrentArchitecture`und `*` (beliebige Architektur).|  
 |`AssemblyName`|Entweder ist das Attribut `AssemblyName` oder das Attribut `AssemblyFile` erforderlich.<br /><br /> Der Namen zu ladenden Assembly. Das Attribut `AssemblyName` akzeptiert Assemblys mit sicheren Namen, auch wenn sichere Namen nicht erforderlich sind. Die Verwendung dieses Attributs entspricht dem Laden einer Assembly mit der <xref:System.Reflection.Assembly.Load%2A>-Methode in .NET.<br /><br /> Sie können dieses Attribut nicht verwenden, wenn das `AssemblyFile`-Attribut verwendet wird.|
@@ -77,13 +79,13 @@ Ordnet den in einem [Task](../msbuild/task-element-msbuild.md)-Element referenzi
  Auf Umgebungsvariablen, Befehlszeileneigenschaften sowie auf Eigenschaften und Elemente auf Projektebene kann in den `UsingTask`-Elementen, die in der Projektdatei enthalten sind, entweder direkt oder über eine importierte Projektdatei verwiesen werden. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
-> Eigenschaften und Elemente auf Projektebene haben keine Bedeutung, wenn das `UsingTask`-Element aus einer der *TASKS*-Dateien stammt, die global in der MSBuild-Engine registriert sind. Werte auf Projektebene sind in MSBuild nicht global.
+> Eigenschaften und Elemente auf Projektebene haben keine Bedeutung, wenn das `UsingTask`-Element aus einer der *TASKS* -Dateien stammt, die global in der MSBuild-Engine registriert sind. Werte auf Projektebene sind in MSBuild nicht global.
 
- In MSBuild 4.0 kann das Laden mithilfe von Aufgaben aus *OVERRIDETASK*-Dateien erfolgen.
+ In MSBuild 4.0 kann das Laden mithilfe von Aufgaben aus *OVERRIDETASK* -Dateien erfolgen.
 
 Die Assembly mit der benutzerdefinierten Aufgabe wird bei der ersten Verwendung von `Task` geladen.
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
 
  Im folgenden Beispiel wird die Verwendung des Elements `UsingTask` mit dem Attribut `AssemblyName` gezeigt.
 
@@ -100,7 +102,7 @@ Die Assembly mit der benutzerdefinierten Aufgabe wird bei der ersten Verwendung 
 </UsingTask>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
 
  Im folgenden Beispiel wird die Verwendung des Elements `UsingTask` mit dem Attribut `AssemblyFile` gezeigt.
 

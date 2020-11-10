@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Eigenschaften | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild mithilfe von Name/Wert-Eigenschaftenpaaren Werte an Aufgaben übergeben, Bedingungen auswerten und Werte speichern kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633290"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046138"
 ---
 # <a name="msbuild-properties"></a>MSBuild-Eigenschaften
 
@@ -64,7 +66,7 @@ Eigenschaften sind Name/Wert-Paare, die zur Konfiguration von Builds verwendet w
 
 ## <a name="registry-properties"></a>Registrierungseigenschaften
 
- Systemregistrierungswerte können mit der nachfolgend angegebenen Syntax gelesen werden. Dabei steht `Hive` für den Registrierungshive (z.B. **HKEY_LOCAL_MACHINE**), `MyKey` steht für den Schlüsselnamen, `MySubKey` für den Unterschlüsselnamen, und `Value` ist der Wert des Unterschlüssels.
+ Systemregistrierungswerte können mit der nachfolgend angegebenen Syntax gelesen werden. Dabei steht `Hive` für den Registrierungshive (z.B. **HKEY_LOCAL_MACHINE** ), `MyKey` steht für den Schlüsselnamen, `MySubKey` für den Unterschlüsselnamen, und `Value` ist der Wert des Unterschlüssels.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -88,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Globale Eigenschaften
 
- Mit MSBuild können Sie die Eigenschaften in der Befehlszeile mithilfe des Schalters **-property** (oder **-p**) festlegen. Diese globalen Eigenschaftswerte überschreiben Eigenschaftswerte, die in der Projektdatei festgelegt werden. Dies betrifft auch Umgebungseigenschaften, nicht jedoch reservierte Eigenschaften ein, die nicht geändert werden können.
+ Mit MSBuild können Sie die Eigenschaften in der Befehlszeile mithilfe des Schalters **-property** (oder **-p** ) festlegen. Diese globalen Eigenschaftswerte überschreiben Eigenschaftswerte, die in der Projektdatei festgelegt werden. Dies betrifft auch Umgebungseigenschaften, nicht jedoch reservierte Eigenschaften ein, die nicht geändert werden können.
 
  Im folgenden Beispiel wird die globale `Configuration`-Eigenschaft auf `DEBUG` festgelegt.
 

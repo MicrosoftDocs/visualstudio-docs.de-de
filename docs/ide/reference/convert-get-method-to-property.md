@@ -1,5 +1,6 @@
 ---
-title: Konvertieren einer Get-Methode in eine Eigenschaft und Konvertieren einer Eigenschaft in eine Get-Methode
+title: Konvertieren einer Get-Methode in eine Eigenschaft/aus einer Eigenschaft
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 ms.devlang: csharp
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad628f8727ed16c882129c5642c77748cb767908
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094205"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045777"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konvertieren einer Get-Methode in eine Eigenschaft und Konvertieren einer Eigenschaft in ein Refactoring einer Get-Methode
 
@@ -30,9 +31,9 @@ Diese Refactorings gelten für:
 
 ## <a name="convert-get-method-to-property"></a>Konvertieren einer Get-Methode in eine Eigenschaft
 
-**Beschreibung**: Hiermit können Sie eine Get-Methode in eine Eigenschaft (und optional die Set-Methode) konvertieren.
+**Beschreibung** : Hiermit können Sie eine Get-Methode in eine Eigenschaft (und optional die Set-Methode) konvertieren.
 
-**Hintergrund**: Sie verwenden eine Get-Methode, die keinerlei Logik aufweist.
+**Hintergrund** : Sie verwenden eine Get-Methode, die keinerlei Logik aufweist.
 
 ### <a name="how-to"></a>Vorgehensweise
 
@@ -71,9 +72,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Konvertieren einer Eigenschaft in eine Get-Methode
 
-**Beschreibung**: Hiermit können Sie eine Eigenschaft in eine Get-Methode konvertieren.
+**Beschreibung** : Hiermit können Sie eine Eigenschaft in eine Get-Methode konvertieren.
 
-**Hintergrund**: Sie verwenden eine Eigenschaft, die mehr als das sofortige Festlegen und Abrufen eines Werts erfordert.
+**Hintergrund** : Sie verwenden eine Eigenschaft, die mehr als das sofortige Festlegen und Abrufen eines Werts erfordert.
 
 ### <a name="how-to"></a>Vorgehensweise
 

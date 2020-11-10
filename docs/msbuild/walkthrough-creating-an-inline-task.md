@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe | Microsoft-Dokumentation'
+description: Exemplarische Vorgehensweise zum Erstellen einer MSBuild-Inlineaufgabe in der Projektdatei ohne Notwendigkeit zum Erstellen einer separaten Assembly zum Hosten der Aufgabe
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289143"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046632"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen eines Inlinetasks
 
@@ -48,9 +50,9 @@ Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **
 
 1. Erstellen Sie in Visual Studio ein neues Projekt mit der **Windows Forms-Anwendungsvorlage** für C#. Geben Sie im Feld **Name**`InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** **InlineTasks** lautet.
 
-3. Klicken Sie auf **OK**, um die neue Projektdatei zu erstellen.
+3. Klicken Sie auf **OK** , um die neue Projektdatei zu erstellen.
 
-3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den **InlineTasks**-Projektknoten und anschließend auf **Projekt entladen**.
+3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den **InlineTasks** -Projektknoten und anschließend auf **Projekt entladen**.
 
 4. Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten und anschließend auf **InlineTasks.csproj bearbeiten**.
 
@@ -94,7 +96,7 @@ Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **
 
 ##### <a name="to-run-the-hello-task"></a>So führen Sie die „Hallo“-Aufgabe aus
 
-1. Klicken Sie auf **Start** > **Programme**. Suchen Sie anschließend den Ordner **Visual Studio-Tools**, und klicken Sie auf **Visual Studio-Eingabeaufforderung**.
+1. Klicken Sie auf **Start** > **Programme**. Suchen Sie anschließend den Ordner **Visual Studio-Tools** , und klicken Sie auf **Visual Studio-Eingabeaufforderung**.
 
 2. Suchen Sie im **Eingabeaufforderungsfenster** nach dem Ordner mit der Projektdatei, in diesem Fall *D:\InlineTasks\InlineTasks\\* .
 

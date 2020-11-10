@@ -1,5 +1,7 @@
 ---
 title: ResolveManifestFiles-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild mithilfe der Aufgabe „ResolveManifestFiles“ Elemente im Buildprozess in Dateien für die Manifestgenerierung auflöst.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2628f06ac4eafc7d57123460771793005597b039
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ca5b74b32faba4937a821503af3665d1ec1d72c9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632692"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048551"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles-Aufgabe
 
@@ -29,7 +31,7 @@ Löst folgende Elemente im Buildprozess in Dateien für die Manifestgenerierung 
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der `ResolveManifestFiles`-Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der `ResolveManifestFiles` -Aufgabe beschrieben.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
@@ -48,11 +50,11 @@ Löst folgende Elemente im Buildprozess in Dateien für die Manifestgenerierung 
 |`TargetCulture`|Optionaler `String`-Parameter.<br /><br /> Gibt die Zielkultur für Satellitenassemblys an|
 |`TargetFrameworkVersion`|Optionaler `String`-Parameter.<br /><br /> Gibt die .NET Framework-Zielversion an|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

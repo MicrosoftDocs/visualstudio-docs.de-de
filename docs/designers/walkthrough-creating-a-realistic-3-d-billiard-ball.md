@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel'
+description: Erfahren Sie, wie Sie mithilfe des Shader-Designers und der Bildbearbeitung in Visual Studio durch die Kombination von Shadertechniken und Texturressourcen eine realistische 3D-Billardkugel erstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bebaa8c197d0b0a4447739d900062bef2bda37c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 646522fe5c893508cbe60a0886ba704e6829252f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816656"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134765"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel
 
@@ -119,7 +121,7 @@ Das Phong-Beleuchtungsmodell basiert auf dem Lambert-Beleuchtungsmodell, kann ab
 
     ![Shader-Diagramm mit zusätzlicher spiegelnder Beleuchtung](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
-2. Optional können Sie das Glanzlichtverhalten anpassen, indem Sie die Glanzlichteigenschaften (**MaterialSpecular** und **MaterialSpecularPower**) des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.
+2. Optional können Sie das Glanzlichtverhalten anpassen, indem Sie die Glanzlichteigenschaften ( **MaterialSpecular** und **MaterialSpecularPower** ) des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.
 
    Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).
 
@@ -133,7 +135,7 @@ Wenn Glanzlichter angewendet wurden, sieht die Billardkugel bereits recht überz
 
 Wenn Sie eine echte Billardkugel sorgfältig untersuchen, sehen Sie, dass ihre glatte Oberfläche nicht nur Glanzlichter aufweist, sondern auch Dinge in der Umgebung ganz schwach reflektiert. Sie können diese Reflexion simulieren, indem Sie ein Bild der Umgebung als Textur verwenden und diese mit der Textur des Modells kombinieren, um die endgültige Farbe jedes Pixels zu bestimmen. Je nach Art der gewünschten Oberflächendarstellung können Sie einen größeren oder kleineren Teil der Reflexionstextur mit dem Rest des Shaders kombinieren. Ein Shader, der eine stark reflektierende Oberfläche, wie einen Spiegel, simuliert, verwendet z. B. möglicherweise nur die Reflexionstextur, ein Shader jedoch, der eine subtilere Reflexion simuliert, wie die auf einer Billardkugel, kombiniert dagegen möglicherweise nur einen kleinen Teil des Werts der Reflexionstextur mit dem Rest der Shaderberechnung.
 
-Natürlich können Sie das reflektierte Bild nicht auf die gleiche Weise auf das Modell anwenden wie die Texturmap des Modells. Wenn Sie dies täten, würde sich die Reflexion auf der Billardkugel immer zusammen mit der Kugel bewegen, als wäre sie darauf festgeklebt. Da eine Reflexion aus einer beliebigen Richtung kommen kann, ist eine Methode erforderlich, mit der ein Reflexionsschema für einen beliebigen Winkel bereitgestellt werden kann, sowie eine Methode, mit der das Reflexionsschema an der Umgebung ausgerichtet bleibt. Um diese Anforderungen erfüllen zu können, müssen Sie eine spezielle Texturmap verwenden, eine so genannte *Cubemap*, die sechs Texturen in Form der Seiten eines Würfels liefert. Aus diesem Würfel heraus können Sie in eine beliebige Richtung zeigen, um einen Texturwert zu finden. Wenn die Texturen auf jeder Seite des Würfels Bilder der Umgebung enthalten, können Sie jede Reflexion simulieren, indem Sie den Samplewert der entsprechenden Position auf der Oberfläche verwenden. Dadurch, dass der Würfel an der Umgebung ausgerichtet bleibt, entsteht eine genaue Reflexion der Umgebung. Um festzustellen, wo die Stichprobe am Würfel genommen werden soll, berechnen Sie einfach die Reflexion des Kameravektors an der Oberfläche des Objekts, und verwenden Sie sie dann als 3D-Texturkoordinaten. Das Verwenden von Cubemaps ist eine übliche Vorgehensweise, die als *Umgebungszuordnung* bezeichnet wird.
+Natürlich können Sie das reflektierte Bild nicht auf die gleiche Weise auf das Modell anwenden wie die Texturmap des Modells. Wenn Sie dies täten, würde sich die Reflexion auf der Billardkugel immer zusammen mit der Kugel bewegen, als wäre sie darauf festgeklebt. Da eine Reflexion aus einer beliebigen Richtung kommen kann, ist eine Methode erforderlich, mit der ein Reflexionsschema für einen beliebigen Winkel bereitgestellt werden kann, sowie eine Methode, mit der das Reflexionsschema an der Umgebung ausgerichtet bleibt. Um diese Anforderungen erfüllen zu können, müssen Sie eine spezielle Texturmap verwenden, eine so genannte *Cubemap* , die sechs Texturen in Form der Seiten eines Würfels liefert. Aus diesem Würfel heraus können Sie in eine beliebige Richtung zeigen, um einen Texturwert zu finden. Wenn die Texturen auf jeder Seite des Würfels Bilder der Umgebung enthalten, können Sie jede Reflexion simulieren, indem Sie den Samplewert der entsprechenden Position auf der Oberfläche verwenden. Dadurch, dass der Würfel an der Umgebung ausgerichtet bleibt, entsteht eine genaue Reflexion der Umgebung. Um festzustellen, wo die Stichprobe am Würfel genommen werden soll, berechnen Sie einfach die Reflexion des Kameravektors an der Oberfläche des Objekts, und verwenden Sie sie dann als 3D-Texturkoordinaten. Das Verwenden von Cubemaps ist eine übliche Vorgehensweise, die als *Umgebungszuordnung* bezeichnet wird.
 
 Die Umgebungszuordnung bietet eine effiziente Näherung echter Reflexionen, wie in den vorherigen Abschnitten beschrieben. Sie können umgebungszugeordnete Reflexionen in den Shader mischen, um der Billardkugel eine simulierte Oberflächendarstellung zu verleihen, durch die die Billardkugel sich besser in die Umgebung einfügt.
 
@@ -169,7 +171,7 @@ Zunächst muss eine Cubemaptextur erstellt werden. In den meisten Apps muss der 
 
 4. Laden Sie die Textur, die Sie für die Seite des Texturwürfels erstellt haben, in die Würfelfläche. Klicken Sie im Hauptmenü auf **Datei** > **Open Onto This Cubemap Face** (Auf dieser Cubemapfläche öffnen) aus, wählen Sie die Textur aus, die Sie für die Seite des Würfels erstellt haben, und klicken Sie dann auf **Öffnen**.
 
-5. Wiederholen Sie Schritt 4 für die Würfelflächen **Negative X**, **Positive Z** und **Negative Z**. Hierzu müssen Sie die Fläche sehen, die Sie laden möchten. Wenn eine andere Cubemapfläche angezeigt werden soll, klicken Sie im Hauptmenü auf **Ansicht** > **Cube Map Face** (Cubemapfläche), und wählen Sie dann die gewünschte Fläche aus.
+5. Wiederholen Sie Schritt 4 für die Würfelflächen **Negative X** , **Positive Z** und **Negative Z**. Hierzu müssen Sie die Fläche sehen, die Sie laden möchten. Wenn eine andere Cubemapfläche angezeigt werden soll, klicken Sie im Hauptmenü auf **Ansicht** > **Cube Map Face** (Cubemapfläche), und wählen Sie dann die gewünschte Fläche aus.
 
 6. Laden Sie für die Würfelfläche **Positive Y** die Textur, die Sie für den oberen Bereich des Texturwürfels erstellt haben.
 
@@ -212,5 +214,5 @@ Zunächst muss eine Cubemaptextur erstellt werden. In den meisten Apps muss der 
 - [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
 - [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Shader-Designer](../designers/shader-designer.md)
-- [Bildbearbeitung](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)
 - [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)
