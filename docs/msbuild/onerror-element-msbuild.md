@@ -1,5 +1,7 @@
 ---
 title: OnError-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild das OnError-Element verwendet, um mindestens ein Ziel auszuführen, wenn das Attribut „ContinueOnError“ für eine fehlerhafte Aufgabe als FALSE ausgewertet wird.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c3793dddf62f67d1c2ff75d8df863dadfdadb7a1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633082"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048953"
 ---
 # <a name="onerror-element-msbuild"></a>OnError-Element (MSBuild)
 
 Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-Attribut für eine Aufgabe, bei der ein Fehler aufgetreten ist, `false` ist.
 
- \<Project> \<Target> \<OnError>
+ \<Project> \<Target>
  \<OnError>
 
 ## <a name="syntax"></a>Syntax
@@ -45,9 +47,9 @@ Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-A
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions (Bedingungen)](../msbuild/msbuild-conditions.md).|
+|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 |`ExecuteTargets`|Erforderliches Attribut.<br /><br /> Die Ziele, die ausgeführt werden, wenn bei einer Aufgabe ein Fehler auftritt. Trennen Sie mehrere Ziele durch Semikolons. Mehrere Ziele werden in der angegebenen Reihenfolge ausgeführt.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
@@ -58,7 +60,7 @@ Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-A
 
 | Element | Beschreibung |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | Containerelement für MSBuild-Aufgaben. |
+| [Ziel](../msbuild/target-element-msbuild.md) | Containerelement für MSBuild-Aufgaben. |
 
 ## <a name="remarks"></a>Hinweise
 

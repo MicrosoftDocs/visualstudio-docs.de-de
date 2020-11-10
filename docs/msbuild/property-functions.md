@@ -1,5 +1,7 @@
 ---
 title: Eigenschaftenfunktionen| Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Verwendung von Eigenschaftenfunktionen. Dies sind Aufrufe von .NET Framework-Methoden, die in MSBuild-Eigenschaftsdefinitionen verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183651"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048819"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 
@@ -248,9 +250,9 @@ Die `GetRegistryValue`-Eigenschaftenfunktion in MSBuild gibt den Wert eines Regi
 In den folgenden Beispielen wird veranschaulicht, wie diese Funktion verwendet wird:
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
@@ -263,7 +265,7 @@ Die Syntax für diese Eigenschaftenfunktion ist wie folgt:
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Das Windows-Betriebssystem mit 64 Bit speichert einen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node**-Registrierungsschlüssel, der eine **HKEY_LOCAL_MACHINE\SOFTWARE**-Registrierungsansicht für 32-Bit-Anwendungen darstellt.
+Das Windows-Betriebssystem mit 64 Bit speichert einen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** -Registrierungsschlüssel, der eine **HKEY_LOCAL_MACHINE\SOFTWARE** -Registrierungsansicht für 32-Bit-Anwendungen darstellt.
 
 Eine 32-Bit-Anwendung, die unter WOW64 ausgeführt wird, greift standardmäßig auf die 32-Bit-Registrierungsansicht zu, und eine 64-Bit-Anwendung greift auf die 64-Bit-Registrierungsansicht zu.
 
@@ -281,7 +283,7 @@ Nachfolgend finden Sie ein Beispiel:
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-ruft die **SLRuntimeInstallPath**-Daten des **ReferenceAssemblies**-Schlüssels ab und sucht zuerst in der 64-Bit-Registrierungsansicht und dann in der 32-Bit-Registrierungsansicht.
+ruft die **SLRuntimeInstallPath** -Daten des **ReferenceAssemblies** -Schlüssels ab und sucht zuerst in der 64-Bit-Registrierungsansicht und dann in der 32-Bit-Registrierungsansicht.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 

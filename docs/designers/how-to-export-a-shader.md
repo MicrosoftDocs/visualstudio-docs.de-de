@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Exportieren eines Shaders'
+description: Erfahren Sie, wie Sie mit dem Shader-Designer einen DGSL-Shader (Directed Graph Shader Language) exportieren, um ihn in Ihrer App zu verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9495e5aac16821927f5f61005cd16bd20e82687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768987"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134301"
 ---
 # <a name="how-to-export-a-shader"></a>Vorgehensweise: Exportieren eines Shaders
 
@@ -25,7 +27,7 @@ Nachdem Sie einen Shader mithilfe des Shader-Designers erstellt haben, und bevor
 
 1. Öffnen Sie in Visual Studio eine DGSL-Datei vom Typ **visuelles Shaderdiagramm**.
 
-     Wenn Sie keine **DGSL**-Datei (Visual Shader Graph) zum Öffnen haben, erstellen Sie eine, wie es unter [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md) beschrieben wird.
+     Wenn Sie keine **DGSL** -Datei (Visual Shader Graph) zum Öffnen haben, erstellen Sie eine, wie es unter [Vorgehensweise: Erstellen eines standardmäßigen Farbshaders](../designers/how-to-create-a-basic-color-shader.md) beschrieben wird.
 
 2. Klicken Sie auf der Symbolleiste des **Shader-Designers** auf **Erweitert** > **Exportieren** > **Exportieren als**. Das Dialogfeld **Shader exportieren** wird angezeigt.
 

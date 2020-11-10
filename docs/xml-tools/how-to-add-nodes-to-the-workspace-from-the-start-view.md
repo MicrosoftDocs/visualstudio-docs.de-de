@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Knoten aus der Ausgangsansicht zum Arbeitsbereich im XML-Schema-Designer
+description: Erfahren Sie, wie Sie dem Arbeitsbereich im XML-Schema-Designer durch die Verwendung von Befehlen in der Ausgangsansicht Knoten hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7bf5b2006afa8efc6a6560d99e62244909628f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c456220ecf8fbe17ce65372c4f7904f54181fe2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815226"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049270"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Vorgehensweise: Hinzufügen von Knoten aus der Ausgangsansicht zum Arbeitsbereich
 
@@ -27,7 +29,7 @@ In diesem Thema wird erläutert, wie dem [Arbeitsbereich im XML-Schema-Designer]
 
      Die Ausgangsansicht wird angezeigt.
 
-     Im Abschnitt **Details zum Schemaset** werden zwei (**2**) **globale komplexe Typen** angezeigt.
+     Im Abschnitt **Details zum Schemaset** werden zwei ( **2** ) **globale komplexe Typen** angezeigt.
 
 3. Klicken Sie rechts neben der Überschrift **Globale komplexe Typen** auf den Link **Hinzufügen**.
 

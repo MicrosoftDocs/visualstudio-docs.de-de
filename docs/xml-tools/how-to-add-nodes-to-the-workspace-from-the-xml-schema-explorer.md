@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich
+description: Erfahren Sie, wie Sie dem Arbeitsbereich des XML-Schema-Designers Knoten entweder über das Kontextmenü oder durch das Ziehen und Ablegen von Knoten auf eine Ansicht im XML-Schema-Explorer hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 751e291188e6357343936d61d56f07bd86f97eaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baa4d32d14a85e27bb0bb453c8c81f0bab486379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816396"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045729"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Vorgehensweise: Hinzufügen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich
 
@@ -36,7 +38,7 @@ In diesem Thema wird beschrieben, wie dem [Arbeitsbereich des XML-Schema-Designe
 
      Der Knoten wird im **XML-Schema-Explorer** hervorgehoben.
 
-2. Klicken Sie mit der rechten Maustaste auf den `PurchaseOrderType`-Knoten im **XML-Schema-Explorer**, und wählen Sie **Alle Verweise anzeigen** aus.
+2. Klicken Sie mit der rechten Maustaste auf den `PurchaseOrderType`-Knoten im **XML-Schema-Explorer** , und wählen Sie **Alle Verweise anzeigen** aus.
 
      Der `purchaseOrder`-Knoten wird hervorgehoben.
 

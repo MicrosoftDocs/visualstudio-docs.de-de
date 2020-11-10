@@ -1,5 +1,7 @@
 ---
 title: ParameterGroup-Element | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das MSBuild-Element „ParameterGroup“, das eine optionale Liste mit verfügbaren Parametern für die Aufgabe enthält, die durch eine UsingTask TaskFactory generiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 104a7313104e194a85d9eb4fee00e84a8facb5b5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263074"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048875"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup-Element
 
 Enthält eine optionale Liste von Parametern, die für die Aufgabe vorhanden sein werden, die von `UsingTask` `TaskFactory` generiert wird. Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<ParameterGroup>
+ \<Project> \<UsingTask>
  \<ParameterGroup>
 
 ## <a name="syntax"></a>Syntax
@@ -73,7 +75,7 @@ Enthält eine optionale Liste von Parametern, die für die Aufgabe vorhanden sei
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

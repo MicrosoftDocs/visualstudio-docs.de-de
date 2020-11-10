@@ -1,5 +1,7 @@
 ---
 title: Target-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das MSBuild-Element „Target“, das Aufgaben enthält, die MSBuild sequenziell ausführen soll.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
+ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375549"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048052"
 ---
 # <a name="target-element-msbuild"></a>Target-Element (MSBuild)
 
@@ -57,7 +59,7 @@ Enthält eine Reihe von Aufgaben, die MSBuild sequenziell ausführt.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Ziels. Ein Zielname kann alle Zeichen außer `$@()%*?.` enthalten.|
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Ergibt die Bedingung `false`, führt das Ziel den Hauptteil des Ziels oder alle Ziele nicht aus, die im `DependsOnTargets`-Attribut festgelegt sind. Weitere Informationen zu Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).|

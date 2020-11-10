@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit Texturen und Bildern
+description: Erfahren Sie, wie Sie mit der Bildbearbeitung in Visual Studio Texturen und Bilder erstellen und ändern können – einschließlich von Formaten, die in der Entwicklung von DirectX-Apps zum Einsatz kommen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589863"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134719"
 ---
 # <a name="work-with-textures-and-images"></a>Arbeiten mit Texturen und Bildern
 
@@ -46,11 +48,11 @@ Höhenmaps enthalten Höhenfelddaten. Sie werden verwendet, um einen Typ von geo
 
 ### <a name="cube-maps"></a>Cubemaps
 
-Cubemaps können unterschiedliche Arten von Daten enthalten – wie etwa Farben oder Normale – sind aber in Form von sechs Texturen auf den Flächen eines Würfels organisiert. Daher werden Cubemaps nicht durch die Angabe von Texturkoordinaten sondern durch Angabe eines Vektors dargestellt, dessen Ursprung das Zentrum des Würfels ist. Das Sample wird am Schnittpunkt des Vektors mit dem Würfel erfasst. Mithilfe von Cubemaps kann eine Näherung der Umgebung bereitgestellt werden, die zum Berechnen von Reflexionen dienen kann – das wird als *Environment Mapping*bezeichnet – oder um Texturen auf sphärischen Objekten mit geringerer Verzerrung zu darzustellen, als sie mit einfachen, zweidimensionalen Texturen erreicht werden kann.
+Cubemaps können unterschiedliche Arten von Daten enthalten – wie etwa Farben oder Normale – sind aber in Form von sechs Texturen auf den Flächen eines Würfels organisiert. Daher werden Cubemaps nicht durch die Angabe von Texturkoordinaten sondern durch Angabe eines Vektors dargestellt, dessen Ursprung das Zentrum des Würfels ist. Das Sample wird am Schnittpunkt des Vektors mit dem Würfel erfasst. Mithilfe von Cubemaps kann eine Näherung der Umgebung bereitgestellt werden, die zum Berechnen von Reflexionen dienen kann – das wird als *Environment Mapping* bezeichnet – oder um Texturen auf sphärischen Objekten mit geringerer Verzerrung zu darzustellen, als sie mit einfachen, zweidimensionalen Texturen erreicht werden kann.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[Bildbearbeitung](../designers/image-editor.md)|Beschreibt die Verwendung der Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
+|[Image Editor](../designers/image-editor.md)|Beschreibt die Verwendung der Bildbearbeitung für die Arbeit mit Texturen und Bildern.|
 |[Beispiele für die Bildbearbeitung](../designers/how-to-create-a-basic-texture.md)|Enthält Links zu Themen, in denen die Verwendung der Bildbearbeitung für das Ausführen häufiger Aufgaben der Bildverarbeitung veranschaulicht wird.|

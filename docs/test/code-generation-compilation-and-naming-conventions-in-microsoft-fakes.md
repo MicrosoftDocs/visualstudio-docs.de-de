@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589330"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325939"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 
@@ -22,9 +22,9 @@ In diesem Artikel werden Optionen und Probleme der Fakes-Codegenerierung und -Co
 
 - Visual Studio Enterprise
 - Ein .NET Framework-Projekt
-
-> [!NOTE]
-> .NET Standard-Projekte werden nicht unterstützt.
+::: moniker range=">=vs-2019"
+- Die Unterstützung von Projekten im .NET Core- und SDK-Format ist in Visual Studio 2019 Update 6 als Vorschaufeature enthalten und in Update 8 standardmäßig aktiviert. Weitere Informationen finden Sie unter [Microsoft Fakes für .NET Core- und SDK-Projekte](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Codegenerierung und -kompilierung
 
@@ -42,9 +42,9 @@ Das folgende Beispiel veranschaulicht Stub-Typen, die in *FileSystem.dll* defini
 
 ### <a name="type-filtering"></a>Typfilterung
 
-Es können Filter in der *FAKES*-Datei festgelegt werden, um die Typen einzuschränken, für die ein Stub ausgeführt werden soll. Sie können unter dem StubGeneration-Element eine unbegrenzte Anzahl von "Löschen"-, "Hinzufügen"- und "Entfernen"-Elementen hinzufügen, um die Liste der ausgewählten Typen zu erstellen.
+Es können Filter in der *FAKES* -Datei festgelegt werden, um die Typen einzuschränken, für die ein Stub ausgeführt werden soll. Sie können unter dem StubGeneration-Element eine unbegrenzte Anzahl von "Löschen"-, "Hinzufügen"- und "Entfernen"-Elementen hinzufügen, um die Liste der ausgewählten Typen zu erstellen.
 
-Beispielsweise werden durch die folgende *FAKES*-Datei Stubs für Typen unter dem System- und dem System.IO-Namespace generiert, aber alle Typen ausgeschlossen, in deren System „Handle“ enthalten ist:
+Beispielsweise werden durch die folgende *FAKES* -Datei Stubs für Typen unter dem System- und dem System.IO-Namespace generiert, aber alle Typen ausgeschlossen, in deren System „Handle“ enthalten ist:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -84,7 +84,7 @@ Von den Filterzeichenfolgen wird eine einfache Grammatik verwendet, um zu defini
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Ausführen eines Stubs für konkrete Klassen und virtuelle Methoden
 
-Standardmäßig werden Stub-Typen für alle nicht versiegelte Klassen generiert. Es besteht die Möglichkeit, die Stub-Typen durch die *FAKES*-Konfigurationsdatei auf abstrakte Klassen einzuschränken:
+Standardmäßig werden Stub-Typen für alle nicht versiegelte Klassen generiert. Es besteht die Möglichkeit, die Stub-Typen durch die *FAKES* -Konfigurationsdatei auf abstrakte Klassen einzuschränken:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -102,7 +102,7 @@ Standardmäßig werden Stub-Typen für alle nicht versiegelte Klassen generiert.
 
 ### <a name="internal-types"></a>Interne Typen
 
-Der Fakes-Code-Generator generiert Shim-Typen und Stub-Typen für Typen, die für die generierte Fakes-Assembly sichtbar sind. Um interne Typen einer Shim-Assembly für die Fakes-Assembly und Ihre Testassembly sichtbar zu machen, fügen Sie dem Shim-Assemblycode <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>-Attribute hinzu, durch die die Sichtbarkeit für die generierte Fakes-Assembly und die Testassembly hergestellt wird. Im Folgenden ein Beispiel:
+Der Fakes-Code-Generator generiert Shim-Typen und Stub-Typen für Typen, die für die generierte Fakes-Assembly sichtbar sind. Um interne Typen einer Shim-Assembly für die Fakes-Assembly und Ihre Testassembly sichtbar zu machen, fügen Sie dem Shim-Assemblycode <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>-Attribute hinzu, durch die die Sichtbarkeit für die generierte Fakes-Assembly und die Testassembly hergestellt wird. Hier sehen Sie ein Beispiel:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -116,7 +116,7 @@ Wenn die Shim-Assembly einen starken Namen hat und auf interne Typen der Assembl
 
 - Es müssen sowohl die Testassembly als auch die Fakes-Assembly einen starken Namen haben.
 
-- Fügen Sie den **InternalsVisibleToAttribute**-Attributen in den Shim-Assemblys die öffentlichen Schlüssel der Testassembly und der Fakes-Assembly hinzu. Im Folgenden wird gezeigt, wie die Beispielattribute im Shim-Assemblycode bei einer Shim-Assembly mit einem starken Namen aussehen würden:
+- Fügen Sie den **InternalsVisibleToAttribute** -Attributen in den Shim-Assemblys die öffentlichen Schlüssel der Testassembly und der Fakes-Assembly hinzu. Im Folgenden wird gezeigt, wie die Beispielattribute im Shim-Assemblycode bei einer Shim-Assembly mit einem starken Namen aussehen würden:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -128,13 +128,13 @@ Wenn die Shim-Assembly einen starken Namen hat und auf interne Typen der Assembl
 
 Wenn die Shim-Assembly einen starken Namen hat, wird die generierte Fakes-Assembly automatisch durch das Fakes-Framework stark signiert. Die Testassembly muss von Ihnen stark signiert werden. Weitere Informationen finden Sie unter [Assemblys mit starkem Namen](/dotnet/framework/app-domains/strong-named-assemblies).
 
-Das Fakes-Framework verwendet den gleichen Schlüssel, um alle generierten Assemblys zu signieren, sodass Sie diesen Ausschnitt als Ausgangspunkt verwenden können, um dem Shim-Assemblycode das **InternalsVisibleTo**-Attribut für die Fakes-Assembly hinzuzufügen.
+Das Fakes-Framework verwendet den gleichen Schlüssel, um alle generierten Assemblys zu signieren, sodass Sie diesen Ausschnitt als Ausgangspunkt verwenden können, um dem Shim-Assemblycode das **InternalsVisibleTo** -Attribut für die Fakes-Assembly hinzuzufügen.
 
 ```csharp
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Sie können einen anderen öffentlichen Schlüssel für die Fakes-Assembly angeben, beispielsweise einen Schlüssel, den Sie für die Shim-Assembly erstellt haben, indem Sie den vollständigen Pfad der *SNK*-Datei angeben, die den alternativen Schlüssel als `KeyFile`-Attributwert im `Fakes`\\`Compilation`-Element der *FAKES*-Datei enthält. Zum Beispiel:
+Sie können einen anderen öffentlichen Schlüssel für die Fakes-Assembly angeben, beispielsweise einen Schlüssel, den Sie für die Shim-Assembly erstellt haben, indem Sie den vollständigen Pfad der *SNK* -Datei angeben, die den alternativen Schlüssel als `KeyFile`-Attributwert im `Fakes`\\`Compilation`-Element der *FAKES* -Datei enthält. Beispiel:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -143,7 +143,7 @@ Sie können einen anderen öffentlichen Schlüssel für die Fakes-Assembly angeb
 </Fakes>
 ```
 
-Sie müssen dann im Shim-Assemblycode den öffentlichen Schlüssel der alternativen *SNK*-Datei als zweiten Parameter des InternalVisibleTo-Attributs für die Fakes-Assembly verwenden:
+Sie müssen dann im Shim-Assemblycode den öffentlichen Schlüssel der alternativen *SNK* -Datei als zweiten Parameter des InternalVisibleTo-Attributs für die Fakes-Assembly verwenden:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -165,7 +165,7 @@ Fügen Sie in den Komponententestprojekten einen Verweis auf die kompilierten Fa
 
 2. Fügen Sie Verweise auf alle Systemassemblys und Assemblys von Drittanbietern hinzu, für die Sie Fakes benötigen.
 
-3. Fügen Sie jeder Assembly und jedem Build eine *FAKES*-Datei hinzu.
+3. Fügen Sie jeder Assembly und jedem Build eine *FAKES* -Datei hinzu.
 
 4. Aus dem Testprojekt
 
@@ -177,13 +177,13 @@ Fügen Sie in den Komponententestprojekten einen Verweis auf die kompilierten Fa
 
 ### <a name="avoid-assembly-name-clashing"></a>Vermeiden von Konflikten bei Assemblynamen
 
-In einer Team Build-Umgebung werden alle Buildausgaben in ein Verzeichnis zusammengeführt. Bei mehreren Projekten, die Fakes verwenden, kann es möglicherweise vorkommen, dass sich Fakes-Assemblys aus verschiedenen Versionen gegenseitig überschreiben. Beispielsweise würden sich beide *mscorlib.dll*-Fakes, sowohl für TestProject1 von .NET Framework 2.0 als auch für TestProject2 von .NET Framework 4, aus einer *mscorlib.Fakes.dll*-Fakes-Assembly ergeben.
+In einer Team Build-Umgebung werden alle Buildausgaben in ein Verzeichnis zusammengeführt. Bei mehreren Projekten, die Fakes verwenden, kann es möglicherweise vorkommen, dass sich Fakes-Assemblys aus verschiedenen Versionen gegenseitig überschreiben. Beispielsweise würden sich beide *mscorlib.dll* -Fakes, sowohl für TestProject1 von .NET Framework 2.0 als auch für TestProject2 von .NET Framework 4, aus einer *mscorlib.Fakes.dll* -Fakes-Assembly ergeben.
 
-Wenn Sie dieses Problem vermeiden möchten, sollte Fakes beim Hinzufügen der *FAKES*-Dateien automatisch qualifizierte Versionen der Fakes-Assemblynamen für Verweise erstellen, die sich nicht auf das Projekt beziehen. In einen Fakes-Assemblynamen mit qualifizierter Version wird eine Versionsnummer eingebettet, wenn der Fakes-Assemblyname erstellt wird:
+Wenn Sie dieses Problem vermeiden möchten, sollte Fakes beim Hinzufügen der *FAKES* -Dateien automatisch qualifizierte Versionen der Fakes-Assemblynamen für Verweise erstellen, die sich nicht auf das Projekt beziehen. In einen Fakes-Assemblynamen mit qualifizierter Version wird eine Versionsnummer eingebettet, wenn der Fakes-Assemblyname erstellt wird:
 
 Bei einer Assembly mit dem Namen "MyAssembly" und der Version "1.2.3.4" ist der Fakes-Assemblyname "MyAssembly.1.2.3.4.Fakes".
 
-Sie können diese Version durch die Bearbeitung des Versionsattributs des Assemblyelements in der *FAKES*-Datei ändern oder entfernen:
+Sie können diese Version durch die Bearbeitung des Versionsattributs des Assemblyelements in der *FAKES* -Datei ändern oder entfernen:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -231,13 +231,13 @@ attribute of the Assembly element in the .fakes:
 
 - Wenn die Methode generisch ist, wird `Of`*n* angefügt, wobei *n* für die Anzahl der generischen Methodenargumente steht.
 
-  **Spezielle Methodennamen**, wie beispielsweise Eigenschaften-Getter oder -Setter, werden wie in der folgenden Tabelle beschrieben behandelt:
+  **Spezielle Methodennamen** , wie beispielsweise Eigenschaften-Getter oder -Setter, werden wie in der folgenden Tabelle beschrieben behandelt:
 
 |Wenn die Methode Folgendes ist...|Beispiel|Methodenname angefügt|
 |-|-|-|
 |Ein **Konstruktor**|`.ctor`|`Constructor`|
 |Ein statischer **Konstruktor**|`.cctor`|`StaticConstructor`|
-|Eine **Zugriffsmethode** mit einem Methodennamen, der aus zwei durch „_“ getrennten Teilen besteht (z.B. Eigenschaftengetter)|*kind_name* (kommt häufig vor, wird aber durch ECMA nicht erzwungen)|*NameKind*, in dem beide Teile groß geschrieben und vertauscht werden|
+|Eine **Zugriffsmethode** mit einem Methodennamen, der aus zwei durch „_“ getrennten Teilen besteht (z.B. Eigenschaftengetter)|*kind_name* (kommt häufig vor, wird aber durch ECMA nicht erzwungen)|*NameKind* , in dem beide Teile groß geschrieben und vertauscht werden|
 ||Getter der Eigenschaft `Prop`|`PropGet`|
 ||Setter der Eigenschaft `Prop`|`PropSet`|
 ||Ereignisadder|`Add`|
@@ -259,8 +259,8 @@ attribute of the Assembly element in the .fakes:
 |Ein **out-Parameter**`out T`|`TOut`|
 |Ein **ref-Parameter** `ref T`|`TRef`|
 |Ein **Arraytyp** `T[]`|`TArray`|
-|Ein **mehrdimensionales Array**, Typ `T[ , , ]`|`T3`|
-|Ein **Zeiger**, Typ `T*`|`TPtr`|
+|Ein **mehrdimensionales Array** , Typ `T[ , , ]`|`T3`|
+|Ein **Zeiger** , Typ `T*`|`TPtr`|
 |Ein **generischer Typ**`T<R1, ...>`|`TOfR1`|
 |Ein **generisches Typargument**`!i` des Typs `C<TType>`|`Ti`|
 |Ein **generisches Methodenargument**`!!i` der `M<MMethod>`-Methode|`Mi`|
@@ -274,6 +274,6 @@ Die folgenden Regeln werden rekursiv angewendet:
 
 - Wenn ein resultierender Name einen Konflikt mit einem Mitglied des deklarierenden Typs verursacht, wird ein Nummerierungsschema verwendet, indem ein zweistelliger Indikator angefügt wird, der mit „01“ beginnt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

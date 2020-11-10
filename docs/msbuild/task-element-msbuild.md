@@ -1,5 +1,7 @@
 ---
 title: Task-Element von „Target“ (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Task-Element von „Target“ in MSBuild, das eine Instanz einer MSBuild-Aufgabe erstellt und ausführt.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58ac6b02424da40ba1130d8a1b549886c9efd718
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263172"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047956"
 ---
 # <a name="task-element-of-target-msbuild"></a>Task-Element von „Target“ (MSBuild)
 
@@ -45,7 +47,7 @@ Erstellt und führt eine Instanz einer MSBuild-Aufgabe aus. Der Elementname wird
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Condition`|Optionales Attribut. Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 |`ContinueOnError`|Optionales Attribut. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md).|
@@ -61,7 +63,7 @@ Erstellt und führt eine Instanz einer MSBuild-Aufgabe aus. Der Elementname wird
 
 | Element | Beschreibung |
 | - | - |
-| [Target](../msbuild/target-element-msbuild.md) | Containerelement für MSBuild-Aufgaben. |
+| [Ziel](../msbuild/target-element-msbuild.md) | Containerelement für MSBuild-Aufgaben. |
 
 ## <a name="remarks"></a>Hinweise
 
@@ -87,7 +89,7 @@ Erstellt und führt eine Instanz einer MSBuild-Aufgabe aus. Der Elementname wird
 </Target>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

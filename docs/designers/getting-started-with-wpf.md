@@ -1,5 +1,7 @@
 ---
 title: Was ist WPF?
+description: Erfahren Sie mehr über den Einstieg in Windows Presentation Foundation (WPF), ein Benutzeroberflächen-Framework zum Erstellen von Desktopclientanwendungen, das eine umfangreiche Palette an Entwicklungsfeatures unterstützt.
+ms.custom: SEO-VS-2020
 ms.date: 04/16/2018
 ms.topic: overview
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350b43741ec7e5646eefce225ecd157b6781ada1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8584ec76ce0779421f1151e53f562f66b8789c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328421"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134536"
 ---
 # <a name="get-started-with-wpf"></a>Erste Schritte mit WPF
 
@@ -25,10 +27,10 @@ Dieser Abschnitt enthält Themen, die Sie mit WPF bekannt machen und Ihnen den E
 
 |Betreff|Artikel|
 |-|-|
-|Ich möchte direkt beginnen…|[Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
-|Ich möchte XAML-Designtools vergleichen...|[Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio)](../xaml-tools/designing-xaml-in-visual-studio.md)|
+|Ich möchte direkt beginnen…|[Exemplarische Vorgehensweise: Walkthrough: My first WPF desktop application (Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung)](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
+|Ich möchte XAML-Designtools vergleichen...|[Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md)|
 |Neu bei .NET?|[Leitfaden für .NET](/dotnet/standard/)<br /><br />[Grundlagen der Anwendung](/dotnet/standard/application-essentials)<br /><br />[Erste Schritte mit Visual C#](../ide/quickstart-csharp-console.md)|
-|Weitere Informationen über WPF...|[WPF-Übersicht](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Übersicht über XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Kontrollen](/dotnet/framework/wpf/controls/)<br /><br />[Übersicht über Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[WPF-Datenbindung mit LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
+|Weitere Informationen über WPF...|[WPF-Übersicht](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Übersicht über XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Steuerelemente](/dotnet/framework/wpf/controls/)<br /><br />[Übersicht über Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[WPF-Datenbindung mit LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |Sind Sie ein Windows Forms-Entwickler?|[Windows Forms-Steuerelemente und entsprechende WPF-Steuerelemente](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[Unterstützte Szenarios bei der Zusammenarbeit von WPF und Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
 ## <a name="see-also"></a>Weitere Informationen

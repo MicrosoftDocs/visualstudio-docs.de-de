@@ -1,5 +1,7 @@
 ---
 title: XSD-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild mithilfe der Aufgabe „XSD“ das XML-Schemadefinitionstool (xsd.exe) umschließt, das Schema- oder Klassendateien aus einer Quelle generiert.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -20,29 +22,29 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630781"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047211"
 ---
 # <a name="xsd-task"></a>XSD-Aufgabe
 
-Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassendateien aus einer Quelle generiert.
+Umschließt das XML-Schemadefinitionstool ( *xsd.exe* ), das Schema- oder Klassendateien aus einer Quelle generiert.
 
 > [!NOTE]
 > Ab Visual Studio 2017 ist die Unterstützung von C++-Projekten für *xsd.exe* veraltet. Sie können die APIs **Microsoft.VisualC.CppCodeProvider** weiterhin verwenden, indem Sie die Datei *CppCodeProvider.dll* manuell dem globalen Assemblycache hinzufügen.
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der **XSD**-Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der **XSD** -Aufgabe beschrieben.
 
 - **AdditionalOptions**
 
      Optionaler **String** -Parameter.
 
-     Eine Liste von Optionen, wie in der Befehlszeile angegeben. Beispiel: /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.
+     Eine Liste von Optionen, wie in der Befehlszeile angegeben. Beispiel: /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD** -Aufgabenparameter repräsentiert werden.
 
 - **GenerateFromSchema**
 
@@ -78,7 +80,7 @@ Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassend
 
 - **SuppressStartupBanner**
 
-     Optionaler **Boolean**-Parameter.
+     Optionaler **Boolean** -Parameter.
 
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.
 

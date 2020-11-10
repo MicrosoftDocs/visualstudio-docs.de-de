@@ -1,5 +1,7 @@
 ---
 title: Schreiben von Aufgaben | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eigene Aufgaben erstellen können, um den Code bereitzustellen, der während des MSBuild-Buildprozesses ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631835"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047919"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 
@@ -170,7 +172,7 @@ Eine Aufgabe sollte nicht von der relativen Reihenfolge des Aufrufs von Paramete
 
 In MSBuild erfolgt werden die Eigenschaften vom Typ `string`, `bool`, `ITaskItem` und `ITaskItem[]` nativ verarbeitet. Akzeptiert eine Aufgabe einen Parameter eines anderen Typs, ruft MSBuild <xref:System.Convert.ChangeType%2A> auf, um eine Konvertierung von `string` (mit Erweiterung aller Eigenschaften- und Elementverweise) in den Zieltyp durchzuführen. Ist die Konvertierung für einen Eingabeparameter nicht erfolgreich, gibt MSBuild einen Fehler aus und ruft die Methode `Execute()` der Aufgabe nicht auf.
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
 
 ### <a name="description"></a>Beschreibung
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
 
 ### <a name="description"></a>Beschreibung
 
@@ -231,7 +233,7 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-3"></a>Beispiel 3
 
 ### <a name="description"></a>Beschreibung
 
@@ -241,7 +243,7 @@ Diese C#-Klasse veranschaulicht eine aus der <xref:Microsoft.Build.Utilities.Tas
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>Beispiel
+## <a name="example-4"></a>Beispiel 4
 
 ### <a name="description"></a>Beschreibung
 

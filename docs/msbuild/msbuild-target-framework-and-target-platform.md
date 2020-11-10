@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Zielframework und -Zielplattform | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein MSBuild-Projekt zur Ausführung in einer bestimmten .NET Framework-Zielversion, für eine gewünschte Zielplattform oder Softwarearchitektur erstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
@@ -8,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350835"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049097"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild-Zielframework und -Zielplattform
 
-Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform*, bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 80x86-Prozessorfamilie („x86“) kompatibel ist. Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.
+Ein Projekt kann erstellt werden, um in einem *Zielframework* , bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform* , bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 80x86-Prozessorfamilie („x86“) kompatibel ist. Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.
 
 > [!IMPORTANT]
 > In diesem Artikel wird die alte Methode zum Angeben eines Zielframeworks beschrieben. Projekte im SDK-Format ermöglichen unterschiedliche Zielframeworks wie .NET Standard. Weitere Informationen finden Sie unter [Zielframeworks](/dotnet/standard/frameworks).

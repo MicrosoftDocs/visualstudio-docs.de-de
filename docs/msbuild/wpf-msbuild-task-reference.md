@@ -1,5 +1,7 @@
 ---
 title: Referenz für die WPF-MSBuild-Task |Microsoft-Dokumentation
+description: Aufgabenreferenz für den Buildprozess von Windows Presentation Foundation (WPF), der MSBuild durch zusätzliche Aufgaben erweitert
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630846"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047516"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referenz zu MSBuild-Tasks für WPF
 
@@ -57,7 +59,7 @@ Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch ei
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Bettet mindestens eine Ressource (*JPG*, *ICO*, *BMP*, XAML im Binärformat und andere Erweiterungstypen) in eine *RESOURCES*-Datei ein.
+ Bettet mindestens eine Ressource ( *JPG* , *ICO* , *BMP* , XAML im Binärformat und andere Erweiterungstypen) in eine *RESOURCES* -Datei ein.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,7 +67,7 @@ Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch ei
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Fügt dem Anwendungsmanifest ( *\<projectname>.exe.manifest*) das Element **\<hostInBrowser />** hinzu, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
+ Fügt dem Anwendungsmanifest ( *\<projectname>.exe.manifest* ) das Element **\<hostInBrowser />** hinzu, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,7 @@
 ---
 title: Project-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das MSBuild-Element „Project“, das erforderliche Stammelement einer MSBuild-Projektdatei.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df9eff3e941cc21aaa71c2779a72084e12e8e590
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 223ccd9e823bef4ee458a7aa1ce2d785788c6238
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632978"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048851"
 ---
 # <a name="project-element-msbuild"></a>Project-Element (MSBuild)
 
@@ -56,13 +58,13 @@ Erforderliches Stammelement einer MSBuild-Projektdatei.
 
 ### <a name="attributes"></a>Attribute
 
-| Attribut | Beschreibung |
+| attribute | Beschreibung |
 |------------------------| - |
 | `DefaultTargets` | Optionales Attribut.<br /><br /> Das Standardziel oder die Standardziele, die zum Einstiegspunkt des Builds werden, wenn kein Ziel angegeben wurde. Mehrere Ziele werden durch Semikolons (;) getrennt.<br /><br /> Wenn kein Standardziel im `DefaultTargets`-Attribut oder über die MSBuild-Befehlszeile angegeben wurde, führt die Engine das erste Ziel in der Projektdatei aus, nachdem die [Import](../msbuild/import-element-msbuild.md)-Elemente ausgewertet wurden. |
 | `InitialTargets` | Optionales Attribut.<br /><br /> Die anfänglichen Ziele werden ausgeführt bevor die Ziele im `DefaultTargets`-Attribut oder in der Befehlszeile angegeben werden . Mehrere Ziele werden durch ein Semikolon (`;`) getrennt. Wenn mehrere importierte Dateien `InitialTargets` definieren, werden alle aufgeführten Ziele in der Reihenfolge ausgeführt, in der die Importe ermittelt werden. |
-| `Sdk` | Optionales Attribut. <br /><br /> Der SDK-Name und optional die Version, mit denen implizite Importanweisungen, die der PROJ-Datei hinzugefügt werden, erstellt werden. Wenn keine Version angegeben wird, versucht MSBuild eine Standardversion aufzulösen.  Beispielsweise `<Project Sdk="Microsoft.NET.Sdk" />` oder `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
+| `Sdk` | Optionales Attribut. <br /><br /> Der SDK-Name und optional die Version, mit denen implizite Importanweisungen, die der PROJ-Datei hinzugefügt werden, erstellt werden. Wenn keine Version angegeben wird, versucht MSBuild eine Standardversion aufzulösen.  Zum Beispiel: `<Project Sdk="Microsoft.NET.Sdk" />` oder `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Optionales Attribut.<br /><br /> Die Version des Toolsets, das MSBuild verwendet, um die Werte für $(MSBuildBinPath) und (MSBuildToolsPath) zu bestimmen. |
-| `TreatAsLocalProperty` | Optionales Attribut.<br /><br /> Eigenschaftennamen, die nicht als global betrachtet werden. Dieses Attribut verhindert, dass bestimmte Befehlszeileneigenschaften Eigenschaftswerte überschreiben, die in einer Projekt- oder Zieldatei und allen nachfolgenden Importen festgelegt sind. Mehrere Eigenschaften werden durch Semikolons (;) getrennt.<br /><br /> Diese globalen Eigenschaften überschreiben normalerweise Eigenschaftswerte, die in der Projektdatei oder in Zieldateien festgelegt werden. Wenn die Eigenschaft im `TreatAsLocalProperty`-Wert aufgeführt wird, überschreibt der globale Eigenschaftenwert die Eigenschaftenwerte nicht, die in dieser Datei und allen nachfolgenden Importen festgelegt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Hinweis**:  Sie legen globale Eigenschaften in der Befehlszeile mit dem Switch **-property** (oder **-p**) fest. Globale Eigenschaften können auch für untergeordnete Projekte in einem Build mit mehreren Projekten festgelegt oder geändert werden, indem das `Properties`-Attribut der MSBuild-Aufgabe verwendet wird. Weitere Informationen finden Sie unter [MSBuild-Aufgabe](../msbuild/msbuild-task.md). |
+| `TreatAsLocalProperty` | Optionales Attribut.<br /><br /> Eigenschaftennamen, die nicht als global betrachtet werden. Dieses Attribut verhindert, dass bestimmte Befehlszeileneigenschaften Eigenschaftswerte überschreiben, die in einer Projekt- oder Zieldatei und allen nachfolgenden Importen festgelegt sind. Mehrere Eigenschaften werden durch Semikolons (;) getrennt.<br /><br /> Diese globalen Eigenschaften überschreiben normalerweise Eigenschaftswerte, die in der Projektdatei oder in Zieldateien festgelegt werden. Wenn die Eigenschaft im `TreatAsLocalProperty`-Wert aufgeführt wird, überschreibt der globale Eigenschaftenwert die Eigenschaftenwerte nicht, die in dieser Datei und allen nachfolgenden Importen festgelegt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Hinweis:** Sie legen globale Eigenschaften in der Befehlszeile mit dem Schalter **-property** (oder **-p** ) fest. Globale Eigenschaften können auch für untergeordnete Projekte in einem Build mit mehreren Projekten festgelegt oder geändert werden, indem das `Properties`-Attribut der MSBuild-Aufgabe verwendet wird. Weitere Informationen finden Sie unter [MSBuild-Aufgabe](../msbuild/msbuild-task.md). |
 | `xmlns` | Optionales Attribut.<br /><br /> Wenn das `xmlns`-Attribut angegeben wird, muss als Wert `http://schemas.microsoft.com/developer/msbuild/2003` festgelegt sein. |
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
@@ -77,16 +79,16 @@ Erforderliches Stammelement einer MSBuild-Projektdatei.
 | [ProjectExtensions](../msbuild/projectextensions-element-msbuild.md) | Optionales Element.<br /><br /> Bietet eine Möglichkeit, Nicht-MSBuild-Informationen in einer MSBuild-Projektdatei beizubehalten. Es kann kein oder mehrere `ProjectExtensions`-Elemente in einem Projekt geben. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Optionales Element.<br /><br /> Ein Gruppierungselement für einzelne Eigenschaften. Eigenschaften werden mit dem [Property](../msbuild/property-element-msbuild.md)-Element angegeben. Es kann kein oder mehrere `PropertyGroup`-Elemente in einem Projekt geben. |
 | [Sdk](../msbuild/sdk-element-msbuild.md) | Optionales Element.<br /><br /> Verweist auf ein MSBuild-Projekt SDK.  Dieses Element kann alternativ zum Sdk-Attribut verwendet werden. |
-| [Target](../msbuild/target-element-msbuild.md) | Optionales Element.<br /><br /> Enthält eine Reihe von Aufgaben, die MSBuild sequenziell ausführt. Aufgaben werden mit dem [Aufgaben](../msbuild/task-element-msbuild.md)-Element angegeben. Es kann kein oder mehrere `Target`-Elemente in einem Projekt geben. |
+| [Ziel](../msbuild/target-element-msbuild.md) | Optionales Element.<br /><br /> Enthält eine Reihe von Aufgaben, die MSBuild sequenziell ausführt. Aufgaben werden mit dem [Aufgaben](../msbuild/task-element-msbuild.md)-Element angegeben. Es kann kein oder mehrere `Target`-Elemente in einem Projekt geben. |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Optionales Element.<br /><br /> Bietet eine Möglichkeit, Aufgaben in MSBuild zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
- Keine
+ Keine.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [How to: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md)
 - [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei .NET Framework-Zielversionsfehlern | Microsoft-Dokumentation
+description: Erfahren Sie mehr über MSBuild-Fehler aufgrund von Verweisproblemen und die Behebung dieser Fehler.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c496fd457e80220bb2ea4a2f032cef9508d9dcb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 98c3ba64454ca25b62dc5dbe0964db64b010a7ec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631600"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046986"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Problembehandlung bei .NET Framework-Zielversionsfehlern
 
@@ -36,7 +38,7 @@ Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftre
 
  Wenn Sie die Zielversion von .NET Framework für Ihre Anwendung ändern, ändert Visual Studio einige Verweise, aber Sie müssen möglicherweise einige Verweise manuell aktualisieren. Einer der oben erwähnten Fehler könnte z. B. auftreten, wenn Sie eine Anwendung so ändern, dass sie auf .NET Framework 3.5 Service Pack 1 abzielt, und diese Anwendung Ressourcen oder Einstellungen umfasst, die vom Clientprofil für .NET Framework 4 abhängen.
 
- Um die Anwendungseinstellungen zu umgehen, öffnen Sie den **Projektmappen-Explorer**, wählen Sie **Alle Dateien anzeigen**, und bearbeiten Sie dann die Datei *app.config* im XML-Editor von Visual Studio. Ändern Sie die Version in den Einstellungen auf die entsprechende Version von .NET Framework. Beispielsweise können Sie die Versionseinstellung von 4.0.0.0 in 2.0.0.0 ändern. Öffnen Sie auf ähnliche Weise für eine Anwendung, der Ressourcen hinzugefügt wurden, den **Projektmappen-Explorer**, wählen Sie die Schaltfläche **Alle Dateien anzeigen**, erweitern Sie **Mein Projekt** (Visual Basic) oder **Eigenschaften** (C#), und bearbeiten Sie dann die Datei *Resources.resx* im XML-Editor von Visual Studio. Ändern Sie die Versionseinstellung von 4.0.0.0 in 2.0.0.0.
+ Um die Anwendungseinstellungen zu umgehen, öffnen Sie den **Projektmappen-Explorer** , wählen Sie **Alle Dateien anzeigen** , und bearbeiten Sie dann die Datei *app.config* im XML-Editor von Visual Studio. Ändern Sie die Version in den Einstellungen auf die entsprechende Version von .NET Framework. Beispielsweise können Sie die Versionseinstellung von 4.0.0.0 in 2.0.0.0 ändern. Öffnen Sie auf ähnliche Weise für eine Anwendung, der Ressourcen hinzugefügt wurden, den **Projektmappen-Explorer** , wählen Sie die Schaltfläche **Alle Dateien anzeigen** , erweitern Sie **Mein Projekt** (Visual Basic) oder **Eigenschaften** (C#), und bearbeiten Sie dann die Datei *Resources.resx* im XML-Editor von Visual Studio. Ändern Sie die Versionseinstellung von 4.0.0.0 in 2.0.0.0.
 
  Wenn die Anwendung über Ressourcen wie Symbole oder Bitmaps oder Einstellungen wie Datenverbindungs-Zeichenfolgen verfügt, können Sie die Fehler auch auflösen, indem Sie alle Elemente auf der Seite **Einstellungen** auf der **Projekt-Designers** entfernen und dann die erforderlichen Einstellungen erneut hinzufügen.
 
@@ -57,9 +59,9 @@ Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftre
 > [!NOTE]
 > Nach Schließen und erneutem Öffnen des Projekts sollten Sie es auch neu erstellen, um sicherzustellen, dass alle Verweise ordnungsgemäß aufgelöst werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [How to: .NET Framework-Version als Ziel](../ide/visual-studio-multi-targeting-overview.md)
+- [Vorgehensweise: .NET Framework-Version als Ziel](../ide/visual-studio-multi-targeting-overview.md)
 - [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)
 - [Übersicht über Frameworkziele](../ide/visual-studio-multi-targeting-overview.md)
 - [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)

@@ -1,5 +1,7 @@
 ---
 title: Erhalten von Buildprotokollen mit MSBuild | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mithilfe von Schaltern in MSBuild angeben können, wie viele Builddaten zu überprüfen sind und ob Sie Builddaten in einer oder mehreren Dateien speichern möchten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: cf13e23d69dfeba967e8e971ad2463cef4546567
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238607"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048966"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
 
@@ -35,7 +37,7 @@ Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Buildda
 
 - Eine Übersicht des Build.
 
-Mithilfe des Schalters **-verbosity** ( **-v**) können Sie steuern, wie viele Daten im Ausgabeprotokoll angezeigt werden. Verwenden Sie für die Problembehandlung entweder den Ausführlichkeitsgrad `detailed` (`d`) oder `diagnostic` (`diag`), der die meisten Informationen bietet.
+Mithilfe des Schalters **-verbosity** ( **-v** ) können Sie steuern, wie viele Daten im Ausgabeprotokoll angezeigt werden. Verwenden Sie für die Problembehandlung entweder den Ausführlichkeitsgrad `detailed` (`d`) oder `diagnostic` (`diag`), der die meisten Informationen bietet.
 
 Der Buildprozess ist möglicherweise langsamer, wenn Sie **-verbosity** auf `detailed` festlegen, und sogar noch langsamer, wenn Sie **-verbosity** auf `diagnostic` festlegen.
 
@@ -58,13 +60,13 @@ In der folgenden Tabelle wird gezeigt, wie sich die Ausführlichkeit der Protoko
 
 ## <a name="save-the-build-log-to-a-file"></a>Speichern des Buildprotokolls in einer Datei
 
-Sie können den Schalter **-fileLogger** (**fl**) verwenden, um Builddaten in einer Datei zu speichern. Im folgenden Beispiel werden die Builddaten in einer Datei mit dem Namen *msbuild.log* gespeichert.
+Sie können den Schalter **-fileLogger** ( **fl** ) verwenden, um Builddaten in einer Datei zu speichern. Im folgenden Beispiel werden die Builddaten in einer Datei mit dem Namen *msbuild.log* gespeichert.
 
 ```cmd
 msbuild MyProject.proj -t:go -fileLogger
 ```
 
- Im folgenden Beispiel heißt die Protokolldatei *MyProjectOutput.log*, und der Ausführlichkeitsgrad der Protokollausgabe ist auf `diagnostic` festgelegt. Geben Sie diese beiden Einstellungen mithilfe des Schalters **-fileLoggerParameters** (`flp`) an.
+ Im folgenden Beispiel heißt die Protokolldatei *MyProjectOutput.log* , und der Ausführlichkeitsgrad der Protokollausgabe ist auf `diagnostic` festgelegt. Geben Sie diese beiden Einstellungen mithilfe des Schalters **-fileLoggerParameters** (`flp`) an.
 
 ```cmd
 msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diagnostic
@@ -74,7 +76,7 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
 ## <a name="save-the-log-output-to-multiple-files"></a>Speichern der Protokollausgabe in mehreren Dateien
 
- Im folgenden Beispiel wird das gesamte Protokoll in *msbuild1.log*, nur die Fehler in *JustErrors.log* und nur die Warnungen in *JustWarnings.log* gespeichert. Im Beispiel werden Dateinummern für jede der drei Dateien verwendet. Die Dateinummern werden nach den Schaltern **-fl** und **-flp** angegeben (z.B. `-fl1` und `-flp1`).
+ Im folgenden Beispiel wird das gesamte Protokoll in *msbuild1.log* , nur die Fehler in *JustErrors.log* und nur die Warnungen in *JustWarnings.log* gespeichert. Im Beispiel werden Dateinummern für jede der drei Dateien verwendet. Die Dateinummern werden nach den Schaltern **-fl** und **-flp** angegeben (z.B. `-fl1` und `-flp1`).
 
  Die Schalter **-fileLoggerParameters** (`flp`) für die Dateien 2 und 3 gibt an, wie jede Datei benannt werden und was sie enthalten soll. Es wird kein Name für die Datei 1 angegeben, deshalb wird der Standardname *msbuild1.log* verwendet.
 
@@ -86,7 +88,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>Speichern eines binären Protokolls
 
-Sie können das Protokoll mit dem Parameter **-binaryLogger** (**bl**) in einem komprimierten, binären Format speichern. Dieses Protokoll enthält eine ausführliche Beschreibung vom Buildprozess und kann mithilfe von bestimmten Protokollanalysetools gelesen werden.
+Sie können das Protokoll mit dem Parameter **-binaryLogger** ( **bl** ) in einem komprimierten, binären Format speichern. Dieses Protokoll enthält eine ausführliche Beschreibung vom Buildprozess und kann mithilfe von bestimmten Protokollanalysetools gelesen werden.
 
 Im folgenden Beispiel wird eine binäre Protokolldatei mit dem Namen *binarylogfilename* erstellt.
 

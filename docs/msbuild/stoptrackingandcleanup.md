@@ -1,5 +1,7 @@
 ---
 title: StopTrackingAndCleanup | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild mithilfe von „StopTrackingAndCleanup“ die Nachverfolgung vollständig beendet und Speicherplatz freigibt, der von der Nachverfolgungssitzung belegt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee30bf031761fa7920dadad04d8f17a1bcc0b3a2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 05aec8bc85ac392670469da8073da02888b2f063
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631990"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048103"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 
@@ -40,6 +42,6 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 
  **Header:** *FileTracker.h*
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

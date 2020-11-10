@@ -1,5 +1,7 @@
 ---
 title: PropertyGroup-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das MSBuild-Element „PropertyGroup“, das eine Reihe von benutzerdefinierten Property-Elementen enthält.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632926"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048805"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup-Element (MSBuild)
 
@@ -46,7 +48,7 @@ Enthält eine Reihe von benutzerdefinierten [Eigenschaft](../msbuild/property-el
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |Bedingung|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 
@@ -54,7 +56,7 @@ Enthält eine Reihe von benutzerdefinierten [Eigenschaft](../msbuild/property-el
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[Eigenschaft](../msbuild/property-element-msbuild.md)|Optionales Element.<br /><br /> Ein benutzerdefinierter Eigenschaftenname, der den Wert der Eigenschaft enthält. Es kann kein oder mehrere *Eigenschafts*-Elemente in einem `PropertyGroup`-Element geben.|
+|[Eigenschaft](../msbuild/property-element-msbuild.md)|Optionales Element.<br /><br /> Ein benutzerdefinierter Eigenschaftenname, der den Wert der Eigenschaft enthält. Es kann kein oder mehrere *Eigenschafts* -Elemente in einem `PropertyGroup`-Element geben.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

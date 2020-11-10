@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588589"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045594"
 ---
 # <a name="encodings-and-line-endings"></a>Codierungen und Zeilenenden
 
@@ -49,9 +49,14 @@ Klicken Sie auf **Datei** > **Erweiterte Speicheroptionen**. Über das sich öff
 ![Dialogfeld „Erweiterte Speicheroptionen“](media/line_endings.png)
 
 > [!NOTE]
-> Wenn **Erweiterte Speicheroptionen** im **Dateimenü** nicht angezeigt wird, können Sie dies hinzufügen. Klicken Sie auf **Extras** > **Anpassen** und anschließend auf die Registerkarte **Befehle**. Klicken Sie in der Dropdownliste der **Menüleiste** auf **Datei** und dann auf **Befehl hinzufügen**. Klicken Sie unter **Kategorien** im Dialogfeld **Befehl hinzufügen** auf **Datei**, und klicken Sie dann in der Liste **Befehle** auf **Erweiterte Speicheroptionen**. Klicken Sie auf **OK** und auf **Nach unten verschieben**, um den Befehl an eine beliebige Stelle im Menü zu verschieben. Klicken Sie auf **Schließen**, um das Dialogfeld **Anpassen** zu schließen. Weitere Informationen finden Sie unter [Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Wenn **Erweiterte Speicheroptionen** im **Dateimenü** nicht angezeigt wird, können Sie dies hinzufügen. 
+> 1. Wählen Sie **Extras** > **Anpassen** aus. 
+> 1. Klicken Sie auf die Registerkarte **Befehle** , aktivieren Sie das Kontrollkästchen **Menüleiste** , und wählen Sie in der entsprechenden Dropdownliste den Eintrag **Datei** aus. Klicken Sie auf die Schaltfläche **Befehl hinzufügen**. 
+> 1. Klicken Sie unter **Kategorien** im Dialogfeld **Befehl hinzufügen** auf **Datei** , und klicken Sie dann in der Liste **Befehle** auf **Erweiterte Speicheroptionen**. Klicken Sie auf die Schaltfläche **OK**.
+> 1. Verwenden Sie die Schaltflächen **Nach oben verschieben** und auf **Nach unten verschieben** , um den Befehl an eine beliebige Stelle im Menü zu verschieben. Klicken Sie auf **Schließen** , um das Dialogfeld **Anpassen** zu schließen. 
+> Weitere Informationen finden Sie unter [Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Alternativ können Sie über **Datei** >  **\<file\> speichern unter** das Dialogfeld **Erweiterte Speicheroptionen** öffnen. Klicken Sie im Dialogfeld **Datei speichern unter** auf den Dropdownlistenpfeil neben der Schaltfläche **Speichern**, und klicken Sie auf **Mit Codierung speichern**.
+> Alternativ können Sie über **Datei** >  **\<file\> speichern unter** das Dialogfeld **Erweiterte Speicheroptionen** öffnen. Klicken Sie im Dialogfeld **Datei speichern unter** auf den nach unten weisenden Pfeil neben der Schaltfläche **Speichern** , und klicken Sie auf **Mit Codierung speichern**.
 
 ## <a name="see-also"></a>Siehe auch
 

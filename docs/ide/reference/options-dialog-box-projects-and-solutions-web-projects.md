@@ -1,5 +1,6 @@
 ---
-title: Dialogfeld "Optionen", Projekte und Projektmappen, Webprojekte
+title: Webprojekte im Dialogfeld „Optionen“
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
 f1_keywords:
@@ -10,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114486"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102635"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Dialogfeld "Optionen", Projekte und Projektmappen, Webprojekte
 
-Legt den Webserver fest, den Webprojekte zur Entwicklung innerhalb von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden. Um Zugriff auf diese Optionen zu erhalten, klicken Sie auf **Extras > Optionen**. Erweitern Sie **Projekte und Projektmappen**, und klicken Sie dann auf **Webprojekte**.
+Legt den Webserver fest, den Webprojekte zur Entwicklung innerhalb von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden. Um Zugriff auf diese Optionen zu erhalten, klicken Sie auf **Extras > Optionen**. Erweitern Sie **Projekte und Projektmappen** , und klicken Sie dann auf **Webprojekte**.
 
 Beim Ausführen eines Webprojekts in Visual Studio wird standardmäßig der Visual Studio Development Server verwendet. Weitere Informationen finden Sie unter [Webserver in Visual Studio für ASP.NET-Webprojekte](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 

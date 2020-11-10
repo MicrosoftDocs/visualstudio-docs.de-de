@@ -1,18 +1,18 @@
 ---
-title: Technischer Support-Vorteil
+title: Vorteil „Technischer Support“ in Visual Studio-Abonnements
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 09/02/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 30b47646c26e5bc9fbf9045e2acf59a670aa5e9d
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004545"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918122"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 Mit dem Vorteil „Technischer Support“ in Visual Studio-Abonnements können Probleme bei der Problemlösung für Produkte in **produktionsfernen Umgebungen** gelöst werden, die sich noch in der Standardsupportphase des [Supportlebenszyklus](https://support.microsoft.com/lifecycle/search) befinden. Bei Visual Studio Enterprise-Standardabonnements und jährlichen Cloudabonnements können vier Incidents übermittelt werden; bei Visual Studio Professional-Standardabonnements und jährlichen Cloudabonnements sind es zwei Incidents, geltend 1 Jahr lang ab Aktivierung des Vorteils. Die Aktivierung des Vorteils muss stattfinden, während das Abonnement aktiv ist.
@@ -58,7 +58,7 @@ Beschreibungen auf Produktebene: Erweitern Sie **Nicht verfügbare Supportpläne
    > [!div class="mx-imgBorder"]
    > ![Vorteil „Technischer Support“: Finden der Abonnement-ID](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. Nach diesem Prozess erhalten Sie eine E-Mail mit Ihrer **Vertrags-ID** und **Zugriffs-ID**, die Sie verwenden können, wenn Sie ein Support-Incident erstellen möchten.  Außerdem werden Anweisungen für die Übermittlung von Supportfällen mithilfe ihrer neuen Zugriffs- und Vertrags-ID bereitgestellt. 
+4. Nach diesem Prozess erhalten Sie eine E-Mail mit Ihrer **Vertrags-ID** und **Zugriffs-ID** , die Sie verwenden können, wenn Sie ein Support-Incident erstellen möchten.  Außerdem werden Anweisungen für die Übermittlung von Supportfällen mithilfe ihrer neuen Zugriffs- und Vertrags-ID bereitgestellt. 
 
 > [!NOTE]
 > Wählen Sie Ihr Land/Ihre Region aus [dieser Liste](https://support.microsoft.com/help/14084/activate-support-contract) aus, um Ihr Supportkonto für eine andere Sprache als Englisch zu aktivieren.
@@ -130,9 +130,9 @@ Sie müssen Ihre Vertrags-ID und Ihre Zugriffs-ID mit Ihrem Azure-Abonnement ver
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 ||
 
-<sup>1</sup> *Umfasst: Imagine Premium, BizSpark. Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
+<sup>1</sup>  *Umfasst: Imagine Premium, BizSpark. Umfasst nicht: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
-<sup>2</sup> *Umfasst: Imagine Standard*
+<sup>2</sup>  *Umfasst: Imagine Standard*
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 

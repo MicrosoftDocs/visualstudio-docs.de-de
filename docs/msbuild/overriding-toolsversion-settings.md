@@ -1,5 +1,7 @@
 ---
 title: Überschreiben von ToolsVersion-Einstellungen | Microsoft-Dokumentation
+description: Erfahren Sie, welche Möglichkeiten Sie haben, um den Wert des MSBuild-Toolsets für Projekte und Projektmappen zu ändern oder zu überschreiben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633017"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048908"
 ---
 # <a name="override-toolsversion-settings"></a>Überschreiben von ToolsVersion-Einstellungen
 
@@ -44,7 +46,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
  Die MSBuild-Aufgabe dient einem Projekt primär dazu, ein anderes Projekt zu erstellen. Damit die MSBuild-Aufgabe ein Projekt mit einer anderen ToolsVersion als der im Projekt angegebenen erstellen kann, stellt sie einen optionalen Aufgabenparameter mit dem Namen `ToolsVersion` zur Verfügung. Im folgenden Beispiel wird die Verwendung dieses Parameters veranschaulicht:
 
-1. Erstellen Sie eine Datei namens *projectA.proj*, die den folgenden Code enthält:
+1. Erstellen Sie eine Datei namens *projectA.proj* , die den folgenden Code enthält:
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -62,7 +64,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     </Project>
     ```
 
-2. Erstellen Sie eine weitere Datei namens *projectB.proj*, die den folgenden Code enthält:
+2. Erstellen Sie eine weitere Datei namens *projectB.proj* , die den folgenden Code enthält:
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -113,7 +115,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. Das Attribut `ToolsVersion` des [Project](../msbuild/project-element-msbuild.md)-Elements der Projektdatei. Wenn dieses Attribut nicht vorhanden ist, wird angenommen, dass es sich um die aktuelle Version handelt.
 
-    2. Die standardmäßige Toolsversion in der *MSBuild.exe.config*-Datei.
+    2. Die standardmäßige Toolsversion in der *MSBuild.exe.config* -Datei.
 
     3. Die standardmäßige Toolsversion in der Registrierung. Weitere Informationen finden Sie unter [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md).
 
@@ -127,7 +129,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. Andernfalls verwenden Sie die aktuelle `ToolsVersion`.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

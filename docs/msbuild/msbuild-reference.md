@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Referenz | Microsoft-Dokumentation
+description: Links zu Artikeln mit Referenzinformationen zu MSBuild, dem Buildsystem für Visual Studio
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633264"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046569"
 ---
 # <a name="msbuild-reference"></a>MSBuild-Referenz
 
-MSBuild ist das Buildsystem für Visual Studio. Die folgenden Links verweisen auf MSBuild-Referenzinformationen.
+Bei MSBuild handelt es sich um das Buildsystem für Visual Studio. Die folgenden Links verweisen auf MSBuild-Referenzinformationen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -53,13 +55,13 @@ MSBuild ist das Buildsystem für Visual Studio. Die folgenden Links verweisen au
  Beschreibt die Argumente und Schalter, die mit „MSBuild.exe“ verwendet werden können.
 
 - [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md)\
- Beschreibt die in MSBuild verfügbare *TARGETS*-Datei.
+ Beschreibt die in MSBuild verfügbare *TARGETS* -Datei.
 
 - [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md)\
  Listet die Metadaten auf, die zusammen mit den einzelnen Elementen erstellt werden.
 
 - [MSBuild-Antwortdateien](../msbuild/msbuild-response-files.md)\
- Erläutert die *RSP*-Dateien, die Befehlszeilenschalter enthalten.
+ Erläutert die *RSP* -Dateien, die Befehlszeilenschalter enthalten.
 
 - [Zusätzliche Ressourcen](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
  Enthält Links zu Websites und Newsgroups von MSBuild.

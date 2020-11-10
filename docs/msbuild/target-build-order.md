@@ -1,5 +1,7 @@
 ---
 title: Buildreihenfolge für Ziele |Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Ausführungsreihenfolge für MSBuild-Ziele angeben, wenn die Eingabe für ein Ziel von der Ausgabe eines anderen Ziels abhängt.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585456"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048057"
 ---
 # <a name="target-build-order"></a>Buildreihenfolge für Ziele
 
@@ -73,7 +75,7 @@ Wenn keine ursprünglichen Ziele, Standardziele oder Befehlszeilenziele vorhande
 
 ## <a name="target-dependencies"></a>Zielabhängigkeiten
 
-Ziele können Abhängigkeitsbeziehungen unter Zielen beschreiben. Die `DependsOnTargets`-Attribut gibt an, dass ein Ziel von anderen Zielen abhängig ist. Ein auf ein Objekt angewendeter
+Ziele können Abhängigkeitsbeziehungen unter Zielen beschreiben. Die `DependsOnTargets`-Attribut gibt an, dass ein Ziel von anderen Zielen abhängig ist. Beispiel:
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
@@ -85,7 +87,7 @@ informiert MSBuild, dass das `Serve`-Ziel vom `Chop`-Ziel und dem `Cook`-Ziel ab
 
 In MSBuild 4.0 können Sie die Reihenfolge der Ziele mithilfe der `BeforeTargets`- und `AfterTargets`-Attribute angeben.
 
-Sehen Sie sich das folgende Skript an.
+Betrachten Sie folgendes Skript.
 
 ```xml
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -130,6 +132,6 @@ MSBuild bestimmt die Buildreihenfolge für Ziele wie folgt:
 
 7. Nachdem das Ziel ausgeführt oder übersprungen wurde, wird jedes andere Ziel ausgeführt, das es in einem `AfterTargets`-Attribut auflistet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Ziele](../msbuild/msbuild-targets.md)

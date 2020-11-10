@@ -1,5 +1,6 @@
 ---
-title: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
+title: Test-First-Entwicklung mit „Aus Verwendung generieren“
+ms.custom: SEO-VS-2020
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceed19ab052584ea47629244372af4402835beb5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d12801f4397cbca1e9d4c0334f18908f93aecd
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770808"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102609"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 
 In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage)-Funktion veranschaulicht, die die Test-First-Entwicklung unterstützt.
 
- Die*testgetriebene Entwicklung* ist eine Methode des Softwareentwurfs, bei der zuerst Unittests basierend auf Produktspezifikationen und dann der Quellcode geschrieben wird, der erforderlich ist, damit die Tests erfolgreich ausgeführt werden. Visual Studio unterstützt die testgetriebene Entwicklung, indem neue Typen und Members im Quellcode generiert werden, wenn Sie in Ihren Testfällen auf diese verweisen, noch bevor sie definiert werden.
+ Die *testgetriebene Entwicklung* ist eine Methode des Softwareentwurfs, bei der zuerst Unittests basierend auf Produktspezifikationen und dann der Quellcode geschrieben wird, der erforderlich ist, damit die Tests erfolgreich ausgeführt werden. Visual Studio unterstützt die testgetriebene Entwicklung, indem neue Typen und Members im Quellcode generiert werden, wenn Sie in Ihren Testfällen auf diese verweisen, noch bevor sie definiert werden.
 
 Visual Studio generiert die neuen Typen und Member mit nur minimaler Unterbrechung des Workflows. Sie können Stubs für Typen, Methoden, Eigenschaften, Felder oder Konstruktoren erstellen, ohne die aktuelle Position im Code zu verlassen. Wenn Sie ein Dialogfeld zum Angeben von Optionen für die Typgenerierung öffnen, kehrt der Fokus sofort zur aktuell geöffneten Datei zurück, wenn das Dialogfeld geschlossen wird.
 
@@ -50,22 +51,22 @@ Das Feature **Aus Verwendung generieren** kann mit Testframeworks verwendet werd
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Hinzufügen eines Verweises auf das Klassenbibliotheksprojekt
 
-1. Klicken Sie im **Projektmappen-Explorer** unter Ihrem Komponententestprojekt mit der rechten Maustaste auf den Eintrag **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
+1. Klicken Sie im **Projektmappen-Explorer** unter Ihrem Komponententestprojekt mit der rechten Maustaste auf den Eintrag **Verweise** , und klicken Sie dann auf **Verweis hinzufügen**.
 
 2. Klicken Sie im Dialogfeld **Verweis-Manager** zunächst auf die Option **Projekte** und dann auf das Klassenbibliotheksprojekt.
 
-3. Klicken Sie auf **OK**, um das Dialogfeld **Verweis-Manager** zu schließen.
+3. Klicken Sie auf **OK** , um das Dialogfeld **Verweis-Manager** zu schließen.
 
 4. Speichern Sie die Projektmappe. Sie können nun mit dem Schreiben von Tests beginnen.
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Generieren einer neuen Klasse aus einem Komponententest
 
-1. Das Testprojekt enthält eine Datei mit dem Namen *UnitTest1*. Doppelklicken Sie auf diese Datei im **Projektmappen-Explorer**, um sie im Code-Editor zu öffnen. Eine Testklasse und eine Testmethode wurden generiert.
+1. Das Testprojekt enthält eine Datei mit dem Namen *UnitTest1*. Doppelklicken Sie auf diese Datei im **Projektmappen-Explorer** , um sie im Code-Editor zu öffnen. Eine Testklasse und eine Testmethode wurden generiert.
 
 2. Suchen Sie die Deklaration für die Klasse `UnitTest1` , und benennen Sie sie um in `AutomobileTest`.
 
    > [!NOTE]
-   > IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Drücken Sie **Strg**+**Alt**+**Leertaste**, um bei geöffnetem **IntelliSense**-Fenster zwischen Beendigungs- und Vorschlagsmodus zu wechseln. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md). Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.
+   > IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Drücken Sie **Strg**+**Alt**+**Leertaste** , um bei geöffnetem **IntelliSense** -Fenster zwischen Beendigungs- und Vorschlagsmodus zu wechseln. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md). Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.
 
 3. Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Fehlerglühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.
 
@@ -77,13 +78,13 @@ Das Feature **Aus Verwendung generieren** kann mit Testframeworks verwendet werd
 
 5. Sie können auch auf **Neuen Typ generieren...** klicken, um das Dialogfeld **Typ generieren** zu öffnen. In diesem Dialogfeld werden verschiedene Optionen dargestellt. Dies umfasst u. a. die Typgenerierung in einem anderen Projekt.
 
-6. Klicken Sie in der **Projekt**-Liste auf **GFUDemo\_VB** oder **GFUDemo_CS**, um Visual Studio anzuweisen, anstelle des Testprojekts dem Klassenbibliotheksprojekt die Datei hinzuzufügen. Klicken Sie, falls noch nicht geschehen, auf **Neue Datei erstellen** und nennen Sie diese Datei *Automobile.cs* oder *Automobile.vb*.
+6. Klicken Sie in der **Projekt** -Liste auf **GFUDemo\_VB** oder **GFUDemo_CS** , um Visual Studio anzuweisen, anstelle des Testprojekts dem Klassenbibliotheksprojekt die Datei hinzuzufügen. Klicken Sie, falls noch nicht geschehen, auf **Neue Datei erstellen** und nennen Sie diese Datei *Automobile.cs* oder *Automobile.vb*.
 
      ![Dialogfeld "Neuen Typ generieren"](../ide/media/genotherdialog.png)
 
 7. Klicken Sie auf **OK** , um das Dialogfeld zu schließen und die neue Datei zu erstellen.
 
-8. Überprüfen Sie im **Projektmappen-Explorer** unter dem Projektknoten **GFUDemo_VB** oder **GFUDemo_CS**, ob die neue Datei *Automobile.vb* bzw. *Automobile.cs* vorhanden ist. Im Code-Editor liegt der Fokus noch immer auf `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, wodurch Sie den Test mit so wenigen Unterbrechungen wie möglich weiterschreiben können.
+8. Überprüfen Sie im **Projektmappen-Explorer** unter dem Projektknoten **GFUDemo_VB** oder **GFUDemo_CS** , ob die neue Datei *Automobile.vb* bzw. *Automobile.cs* vorhanden ist. Im Code-Editor liegt der Fokus noch immer auf `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, wodurch Sie den Test mit so wenigen Unterbrechungen wie möglich weiterschreiben können.
 
 ### <a name="generate-a-property-stub"></a>Generieren eines Eigenschaftsstubs
 Angenommen, die Produktspezifikation gibt an, dass die `Automobile` -Klasse über zwei öffentliche Eigenschaften namens `Model` und `TopSpeed`verfügt. Diese Eigenschaften müssen mit den Standardwerten von `"Not specified"` und `-1` durch den Standardkonstruktor initialisiert werden. Im folgenden Unittest wird überprüft, ob der Standardkonstruktor die Eigenschaften auf ihre richtigen Standardwerte festlegt.
@@ -93,7 +94,7 @@ Angenommen, die Produktspezifikation gibt an, dass die `Automobile` -Klasse übe
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Da der Code auf zwei nicht definierte Eigenschaften in `Automobile` verweist, wird unter `Model` und `TopSpeed` eine wellenförmige Unterstreichung angezeigt. Zeigen Sie auf `Model`, klicken Sie auf die Fehlerglühbirne **Schnellaktionen**, und wählen Sie dann **Eigenschaft „Automobile.Model“ generieren** aus.
+2. Da der Code auf zwei nicht definierte Eigenschaften in `Automobile` verweist, wird unter `Model` und `TopSpeed` eine wellenförmige Unterstreichung angezeigt. Zeigen Sie auf `Model`, klicken Sie auf die Fehlerglühbirne **Schnellaktionen** , und wählen Sie dann **Eigenschaft „Automobile.Model“ generieren** aus.
 
 3. Generieren Sie auf dieselbe Weise einen Eigenschaftenstub für die `TopSpeed`-Eigenschaft.
 
@@ -107,7 +108,7 @@ Jetzt möchten wir Ihnen zeigen, wie Sie eine Testmethode erstellen, die einen K
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. Klicken Sie unterhalb der roten Wellenlinie auf die Fehlerglühbirne **Schnellaktionen**, und klicken Sie anschließend auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
+2. Klicken Sie unterhalb der roten Wellenlinie auf die Fehlerglühbirne **Schnellaktionen** , und klicken Sie anschließend auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
 
      In der `Automobile` -Klassendatei hat der neue Konstruktor die Namen der lokalen Variablen geprüft, die im Konstruktoraufruf verwendet werden, Eigenschaften gefunden, die die gleichen Namen in der `Automobile` -Klasse aufweisen, und Code im Konstruktortext zum Speichern der Argumentwerte in den Eigenschaften `Model` und `TopSpeed` bereitgestellt.
 
@@ -153,7 +154,7 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsR
 
 ### <a name="run-the-tests-again"></a>Erneutes Ausführen der Tests
 
-- Zeigen Sie im Menü **Test** auf **Ausführen**, und klicken Sie dann auf **Alle Tests**.
+- Zeigen Sie im Menü **Test** auf **Ausführen** , und klicken Sie dann auf **Alle Tests**.
 
      Dieses Mal werden die Tests bestanden. Das Fenster **Testergebnisse** wird in der folgenden Abbildung gezeigt.
 

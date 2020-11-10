@@ -1,5 +1,7 @@
 ---
 title: Bekannte MSBuild-Elementmetadaten | Microsoft-Dokumentation
+description: Erfahren Sie mehr über MSBuild-Metadaten, die jedem Element bei seiner Erstellung zugewiesen werden, sowie über einige optionale MSBuild-Metadaten, die Sie zum Steuern des Buildverhaltens definieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425380"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049009"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Bekannte MSBuild-Elementmetadaten
 

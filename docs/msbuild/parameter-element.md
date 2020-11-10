@@ -1,5 +1,7 @@
 ---
 title: Parameter-Element | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das MSBuild-Element „Parameter“, das Informationen zu einem bestimmten Parameter für eine Aufgabe enthält, die durch eine UsingTask TaskFactory generiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,18 +19,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e7aa8809cbce8f07e18666afb1734026fdc9694b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263100"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048886"
 ---
 # <a name="parameter-element"></a>Parameter-Element
 
 Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die von einer `UsingTask` `TaskFactory` generiert wird.  Der Name des Elements ist der Name des Parameters.  Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<Project> \<UsingTask>
  \<ParameterGroup>
  \<Parameter>
 
@@ -46,7 +48,7 @@ Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die v
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`ParameterType`|Optionales Attribut.<br /><br /> Der .NET-Typ des Parameters, z.B. „`System.String`“.|
 |`Output`|Optionales boolesches Attribut.<br /><br /> Wenn `true`, ist dieser Parameter ein Ausgabeparameter für die Aufgabe. In der Standardeinstellung ist der Wert `false`.|
@@ -54,7 +56,7 @@ Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die v
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -81,6 +83,6 @@ Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die v
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)

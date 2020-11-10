@@ -1,5 +1,7 @@
 ---
 title: Möglichkeiten zum Debuggen von XSLT-Code
+description: Erfahren Sie, wie Sie in Visual Studio mit dem XSLT-Debugger XSLT-Code debuggen können, indem Sie Code durchlaufen, Haltepunkte festlegen und XSLT-Ausführungszustände anzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815616"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047750"
 ---
 # <a name="debugging-xslt"></a>Debugging von XSLT
 
@@ -33,7 +35,7 @@ Sie können den Debugger starten, wenn Sie entweder ein Stylesheet oder eine XML
 
 1. Öffnen Sie das Stylesheet oder die XML-Datei in Visual Studio.
 
-1. Wählen Sie **XSLT-Debuggen starten** im Menü **XML**, oder drücken Sie **ALT**+**F5**.
+1. Wählen Sie **XSLT-Debuggen starten** im Menü **XML** , oder drücken Sie **ALT**+**F5**.
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Debuggen aus einer App, die XSLT verwendet
 

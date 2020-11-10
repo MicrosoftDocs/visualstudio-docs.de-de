@@ -1,5 +1,7 @@
 ---
 title: MSBuild-Aufgabenverweis | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die in MSBuild enthaltenen Aufgaben, die Code bereitstellen, der während des Buildprozesses ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865322"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049075"
 ---
 # <a name="msbuild-task-reference"></a>Referenz zu MSBuild-Tasks
 
@@ -31,7 +33,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 | Parameter | Beschreibung |
 |-------------------| - |
 | `Condition` | Optionaler `String`-Parameter.<br /><br /> Ein `Boolean`-Ausdruck, mit dem die MSBuild-Engine bestimmt, ob diese Aufgabe ausgeführt wird. Informationen zu den von MSBuild unterstützten Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Optionaler Parameter. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Dieser Parameter ist optional. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -53,7 +55,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [AspNetCompiler-Aufgabe](../msbuild/aspnetcompiler-task.md)
 
- Umfasst *aspnet_compiler.exe*, wobei es sich um ein Hilfsprogramm zum Vorkompilieren von ASP.NET-Anwendungen handelt.
+ Umfasst *aspnet_compiler.exe* , wobei es sich um ein Hilfsprogramm zum Vorkompilieren von ASP.NET-Anwendungen handelt.
 
 - [AssignCulture-Aufgabe](../msbuild/assignculture-task.md)
 
@@ -85,7 +87,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [CreateCSharpManifestResourceName-Aufgabe](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Erstellt einen Manifestnamen im C#-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
+ Erstellt einen Manifestnamen im C#-Stil aus einem angegebenen *RESX* -Dateinamen oder aus einer anderen Ressource.
 
 - [CreateItem-Aufgabe](../msbuild/createitem-task.md)
 
@@ -97,7 +99,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [CreateVisualBasicManifestResourceName-Aufgabe](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Erstellt einen Manifestnamen im Visual Basic-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
+ Erstellt einen Manifestnamen im Visual Basic-Stil aus einem angegebenen *RESX* -Dateinamen oder aus einer anderen Ressource.
 
 - [Csc-Aufgabe](../msbuild/csc-task.md)
 
@@ -111,7 +113,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
  Lädt eine Datei herunter und speichert diese am angegebenen Speicherort.
 
-- [Error-Aufgabe](../msbuild/error-task.md)
+- [Fehleraufgabe](../msbuild/error-task.md)
 
  Beendet einen Build, und protokolliert einen Fehler basierend auf einer ausgewerteten Bedingungsanweisung.
 
@@ -153,11 +155,11 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [GenerateResource-Aufgabe](../msbuild/generateresource-task.md)
 
- Konvertiert *TXT*- und *RESX*-Dateien in binäre *RESOURCES*-Dateien der Common Language Runtime.
+ Konvertiert *TXT* - und *RESX* -Dateien in binäre *RESOURCES* -Dateien der Common Language Runtime.
 
 - [GenerateTrustInfo-Aufgabe](../msbuild/generatetrustinfo-task.md)
 
- Generiert die Anwendungsvertrauensstellung aus dem Basismanifest und aus den `TargetZone`- und `ExcludedPermissions`-Parametern
+ Generiert die Anwendungsvertrauensstellung aus dem Basismanifest und aus den Parametern `TargetZone` und `ExcludedPermissions`
 
 - [GetAssemblyIdentity-Aufgabe](../msbuild/getassemblyidentity-task.md)
 
@@ -181,13 +183,13 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [LC-Aufgabe](../msbuild/lc-task.md)
 
- Generiert eine *LICENSE*-Datei aus einer *LICX*-Datei.
+ Generiert eine *LICENSE* -Datei aus einer *LICX* -Datei.
 
 - [MakeDir-Aufgabe](../msbuild/makedir-task.md)
 
  Erstellt Verzeichnisse und ggf. übergeordnete Verzeichnisse
 
-- [Message-Aufgabe](../msbuild/message-task.md)
+- [Meldungsaufgabe](../msbuild/message-task.md)
 
  Protokolliert eine Meldung während eines Builds
 
@@ -221,7 +223,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - ResGen-Aufgabe
 
- Veraltet. Verwenden Sie die [GenerateResource-Aufgabe](../msbuild/generateresource-task.md), um *TXT*- und *RESX*-Dateien in und aus binären *RESOURCES*-Dateien der Common Language Runtime zu konvertieren.
+ Veraltet. Verwenden Sie die [GenerateResource-Aufgabe](../msbuild/generateresource-task.md), um *TXT* - und *RESX* -Dateien in und aus binären *RESOURCES* -Dateien der Common Language Runtime zu konvertieren.
 
 - [ResolveAssemblyReference-Aufgabe](../msbuild/resolveassemblyreference-task.md)
 
@@ -229,7 +231,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [ResolveComReference-Aufgabe](../msbuild/resolvecomreference-task.md)
 
- Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer *TLB*-Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf.
+ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer *TLB* -Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf.
 
 - [ResolveKeySource-Aufgabe](../msbuild/resolvekeysource-task.md)
 
@@ -265,7 +267,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [Unzip-Aufgabe](../msbuild/unzip-task.md)
 
- Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
+ Entzippt ein *ZIP* -Archiv am angegebenen Speicherort.
 
 - [UpdateManifest-Aufgabe](../msbuild/updatemanifest-task.md)
 
@@ -279,7 +281,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
  Überprüft, ob die Datei mit dem erwarteten Dateihash übereinstimmt.
 
-- [Warning-Aufgabe](../msbuild/warning-task.md)
+- [Warnungsaufgabe](../msbuild/warning-task.md)
 
  Protokolliert während eines Builds eine Warnung, die auf einer ausgewerteten Bedingungsanweisung basiert
 
@@ -305,7 +307,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [ZipDirectory-Aufgabe](../msbuild/zipdirectory-task.md)
 
- Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
+ Erstellt ein *ZIP* -Archiv aus den Inhalten eines Verzeichnisses.
 
 ## <a name="see-also"></a>Siehe auch
 

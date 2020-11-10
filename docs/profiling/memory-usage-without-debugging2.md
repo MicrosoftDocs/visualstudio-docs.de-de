@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: e6e1bd3d38e6303f11ec5da0e88816d56dd43d98
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007203"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918226"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analysieren der Speicherauslastung ohne Debuggen im Leistungs-Profiler
 
 Das **Speicherauslastungstool** überwacht die Speicherauslastung Ihrer App. Mithilfe des Tools können Sie in Echtzeit überwachen, welche Auswirkungen die Szenarios haben, die Sie aktiv in Visual Studio entwickeln. Sie können detaillierte Momentaufnahmen des Speicherzustands der App machen und diese miteinander vergleichen, um die Grundursachen für Speicherprobleme zu bestimmen. Das Speicherauslastungstool wird für .NET-, ASP.NET- und C++-Apps sowie Apps im gemischten Modus (.NET und nativ) unterstützt.
 
-Das Speicherauslastungstool kann [mit oder ohne Debugger ausgeführt werden](../profiling/running-profiling-tools-with-or-without-the-debugger.md). In diesem Artikel wird die Verwendung des Speicherauslastungstools ohne den Debugger im **Leistungs-Profiler** von Visual Studio veranschaulicht.
+Das Speicherauslastungstool kann [mit oder ohne Debugger ausgeführt werden](../profiling/running-profiling-tools-with-or-without-the-debugger.md). In diesem Artikel wird die Verwendung des Speicherauslastungstools ohne Debugger im **Leistungs-Profiler** von Visual Studio veranschaulicht. Dies wird für Releasebuilds empfohlen.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Diagnosesitzungen zur Speicherauslastung
 
@@ -36,9 +36,9 @@ Das Speicherauslastungstool kann [mit oder ohne Debugger ausgeführt werden](../
 
 1. Legen Sie im Debugmenü die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Windows-Debugger** (oder **Lokaler Computer** ) aus.
 
-1. Klicken Sie auf der Menüleiste auf **Debuggen** > **Leistungsprofiler** .
+1. Klicken Sie auf der Menüleiste auf **Debuggen** > **Leistungsprofiler**.
 
-1. Wählen Sie unter **Verfügbare Tools** die Option **Speicherauslastung** aus, und klicken Sie dann auf **Start** .
+1. Wählen Sie unter **Verfügbare Tools** die Option **Speicherauslastung** aus, und klicken Sie dann auf **Start**.
 
    ![Diagnosesitzung zur Speicherauslastung starten](../profiling/media/memuse_start_diagnosticssession.png "Diagnosesitzung zur Speicherauslastung starten")
 
@@ -58,7 +58,7 @@ Klicken Sie auf **Momentaufnahme erstellen** , wenn Sie mit dem Erfassen der Spe
 
 ### <a name="close-the-diagnostic-session"></a><a name="BKMK_Close_a_monitoring_session"></a> Schließen der Diagnosesitzung
 
-Um eine Überwachungssitzung zu schließen, ohne einen Bericht zu erstellen, schließen Sie das Diagnosefenster einfach. Wenn Sie einen Bericht generieren möchten, nachdem Sie genügend Momentaufnahmen erstellt haben, klicken Sie auf **Sammlung beenden** .
+Um eine Überwachungssitzung zu schließen, ohne einen Bericht zu erstellen, schließen Sie das Diagnosefenster einfach. Wenn Sie einen Bericht generieren möchten, nachdem Sie genügend Momentaufnahmen erstellt haben, klicken Sie auf **Sammlung beenden**.
 
 ![Sammlung beenden](../profiling/media/memuse__stopcollection.png "Sammlung beenden")
 
@@ -121,7 +121,7 @@ Die meisten Typen in Apps spielen für App-Entwickler keine große Rolle. Mit de
 
  ![Links zum Snapshot-Bericht in einem Snapshot-Bereich](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Links zum Snapshot-Bericht in einem Snapshot-Bereich")
 
-Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap** -Struktur. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)** . Der Link „Objekte“ ordnet den Bericht nach der Spalte **Anzahl** . Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
+Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap** -Struktur. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Größe (Bytes)** . Der Link „Objekte“ ordnet den Bericht nach der Spalte **Anzahl**. Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
 
 ### <a name="managed-heap-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> „Verwalteter Heap“-Struktur (Bericht mit Momentaufnahmedetails)
  Die Struktur des **verwalteten Heaps** führt die Objekttypen auf, die im Speicher gehalten werden. Sie können den Typennamen erweitern, um die zehn größten Instanzen des Typs nach Größe geordnet anzuzeigen. Wenn Sie einen Typ oder eine Instanz auswählen, wird die **Pfade zum Stamm** - und die **Verweisobjekt** -Struktur für das gewählte Element angezeigt.
@@ -164,7 +164,7 @@ Eine **Verweistypen** -Struktur in einem Bericht mit Momentaufnahmedetails weist
 
 In einem Momentaufnahmenvergleichsbericht werden die Unterschiede zwischen der primären und der zuvor erstellten Momentaufnahme angezeigt. Wenn Sie einen Vergleichsbericht öffnen möchten, klicken Sie auf einen der Vergleichslinks im Momentaufnahmenbereich.
 
-Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap** -Struktur in dem Bericht. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Differenz der Größe (Bytes)** . Der Link „Objekte“ ordnet den Bericht nach der Spalte **Differenz der Anzahl** . Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
+Beide Links führen zum selben Bericht. Der Unterschied besteht lediglich in der Sortierreihenfolge der **Verwalteter Heap** -Struktur in dem Bericht. Der Link „Größe“ ordnet den Bericht nach der Spalte **Inklusive Differenz der Größe (Bytes)** . Der Link „Objekte“ ordnet den Bericht nach der Spalte **Differenz der Anzahl**. Sie können die Sortierspalte oder -reihenfolge ändern, nachdem der Bericht geöffnet wurde.
 
  ![Links zum Unterschiedebericht in einem Snapshot-Bereich](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links zum Unterschiedebericht in einem Snapshot-Bereich")
 
@@ -201,7 +201,7 @@ Die **Verweistypen** - oder die **Verweisobjekte** -Struktur zeigt die Objekte a
 
 ![Referenzierte Typen in einem Unterschiedsbericht](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Referenzierte Typen in einem Unterschiedsbericht")
 
-Eine **Verweistypen** -Struktur in einem Momentaufnahmenvergleichsbericht weist die folgenden Spalten auf. Eine **Verweisobjekte** -Struktur umfasst die folgenden Spalten: **Instanz** , **Größe (Bytes)** , **Inklusive Größe (Bytes)** und **Modul** .
+Eine **Verweistypen** -Struktur in einem Momentaufnahmenvergleichsbericht weist die folgenden Spalten auf. Eine **Verweisobjekte** -Struktur umfasst die folgenden Spalten: **Instanz** , **Größe (Bytes)** , **Inklusive Größe (Bytes)** und **Modul**.
 
 |name|Beschreibung|
 |-|-|

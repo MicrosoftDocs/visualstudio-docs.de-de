@@ -1,5 +1,7 @@
 ---
 title: Inhaltsmodellansicht im XML-Schema-Designer
+description: Erfahren Sie mehr über die Inhaltsmodellansicht im XAML-Schema-Designer, die eine grafische Darstellung lokaler und globaler Schemaknoten und ihrer Komponenten bereitstellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8a3aee0129516b6c7d377fcfff454f949e199eb5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592912"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049201"
 ---
 # <a name="content-model-view"></a>Inhaltsmodellansicht
 
@@ -25,7 +27,7 @@ Das folgende Bild zeigt den **Arbeitsbereich** mit sechs Schemaknoten. Der `purc
 
 ## <a name="workspace-panel"></a>Arbeitsbereich
 
-Nachdem Sie dem Arbeitsbereich Knoten hinzugefügt haben, wird die Liste der Knoten im **Arbeitsbereich** der Inhaltsmodellansicht angezeigt. Wenn Sie im **Arbeitsbereich** Knoten auswählen, werden sie auf der Entwurfsoberfläche der Inhaltsmodellansicht angezeigt. Verwenden Sie die XSD-Designer-Symbolleiste, das Kontextmenü des **Arbeitsbereichs** oder die **ENTF**-TASTE, um Knoten aus dem Arbeitsbereich zu löschen.
+Nachdem Sie dem Arbeitsbereich Knoten hinzugefügt haben, wird die Liste der Knoten im **Arbeitsbereich** der Inhaltsmodellansicht angezeigt. Wenn Sie im **Arbeitsbereich** Knoten auswählen, werden sie auf der Entwurfsoberfläche der Inhaltsmodellansicht angezeigt. Verwenden Sie die XSD-Designer-Symbolleiste, das Kontextmenü des **Arbeitsbereichs** oder die **ENTF** -TASTE, um Knoten aus dem Arbeitsbereich zu löschen.
 
 Informationen zum Hinzufügen von Knoten finden Sie im Abschnitt „Hinzufügen von Knoten zum Arbeitsbereich“ unter [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md).
 
@@ -91,7 +93,7 @@ Die folgenden XSD-Designer-Symbolleistenschaltflächen sind aktiviert, wenn die 
 
 ## <a name="panscroll"></a>Schwenken/Bildlauf
 
-Sie können die Entwurfsoberfläche mit den Bildlaufleisten oder durch Drücken der **STRG**-TASTE und gleichzeitiges Klicken und Ziehen der Maus schwenken. Wenn Sie die Entwurfsoberfläche mittels Klicken und Ziehen schwenken, wird der Cursor als vier sich kreuzende und in unterschiedliche Richtungen weisende Pfeile angezeigt.
+Sie können die Entwurfsoberfläche mit den Bildlaufleisten oder durch Drücken der **STRG** -TASTE und gleichzeitiges Klicken und Ziehen der Maus schwenken. Wenn Sie die Entwurfsoberfläche mittels Klicken und Ziehen schwenken, wird der Cursor als vier sich kreuzende und in unterschiedliche Richtungen weisende Pfeile angezeigt.
 
 ## <a name="undoredo"></a>Rückgängig/Wiederholen
 
@@ -111,11 +113,11 @@ Die Zoomfunktion befindet sich in der unteren rechten Ecke der Inhaltsmodellansi
 
 Der Zoomfaktor kann wie folgt gesteuert werden:
 
-- Halten Sie die **STRG**-TASTE gedrückt, und drehen Sie das Mausrad, während Sie die Maus über die Oberfläche der Inhaltsmodellansicht bewegen.
+- Halten Sie die **STRG** -TASTE gedrückt, und drehen Sie das Mausrad, während Sie die Maus über die Oberfläche der Inhaltsmodellansicht bewegen.
 
 - Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
 
-Der Zoomschieberegler ist nicht transparent, wenn Sie ihn auswählen, mit der Maus darauf zeigen oder mit der **STRG**-TASTE und dem Mausrad zoomen. Ansonsten ist er transparent.
+Der Zoomschieberegler ist nicht transparent, wenn Sie ihn auswählen, mit der Maus darauf zeigen oder mit der **STRG** -TASTE und dem Mausrad zoomen. Ansonsten ist er transparent.
 
 ## <a name="xml-editor-integration"></a>Integration des XML-Editors
 

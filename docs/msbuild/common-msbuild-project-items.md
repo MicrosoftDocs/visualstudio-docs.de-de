@@ -2,7 +2,7 @@
 title: Gemeinsame MSBuild-Projektelemente | Microsoft-Dokumentation
 description: Erfahren Sie mehr über gemeinsame MSBuild-Projektelemente. Bei Elementen handelt es sich um benannte Verweise auf eine oder mehrere Dateien. Sie verfügen über Metadaten wie Dateinamen, Pfade und Versionsnummern.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796393"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238622"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 
@@ -160,7 +160,19 @@ Stellt Assemblyattribute dar, die als `[AssemblyMetadata(key, value)]` generiert
 | Wert | Erforderliche Zeichenfolge. Wird zum zweiten Parameter (Wert) im Attributkonstruktor `AssemblyMetadataAttribute`. |
 
 > [!NOTE]
-> Dies gilt nur für Projekte, die das .NET Core SDK verwenden.
+> Dieses Element gilt für Projekte mit Verwendung des SDK für .NET 5 (und .NET Core) und höhere Versionen.
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+Gibt Assemblys an, die als `[InternalsVisibleTo(..)]`-Assemblyattribute ausgegeben werden sollen.
+
+| Elementmetadatenname | Beschreibung |
+|-----------------------| - |
+| Einschließen | Der Name der Assembly. |
+| Schlüssel | Optionale Zeichenfolge. Der öffentliche Schlüssel der Assembly. |
+
+> [!NOTE]
+> Dieses Element gilt für Projekte mit Verwendung des SDK für .NET 5 (und .NET Core) und höhere Versionen.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 

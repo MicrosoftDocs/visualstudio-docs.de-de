@@ -1,5 +1,6 @@
 ---
-title: Internationale Einstellungen, Umgebung, Dialogfeld "Optionen"
+title: Internationale Einstellungen im Dialogfeld „Optionen“
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1526e1c49636f4883392caa63966714625d066d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595513"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102492"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>Dialogfeld „Optionen“: Umgebung –\> Internationale Einstellungen
 
