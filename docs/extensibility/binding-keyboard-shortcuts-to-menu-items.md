@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94feafbc614be61aaa4eef9e26669c0fbe901ed5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740025"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407717"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menü Elemente
 Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine Tastenkombination an einen benutzerdefinierten Menübefehl zu binden. In diesem Thema wird erläutert, wie einer benutzerdefinierten Schaltfläche, einem Menü Element oder einem Symbolleisten Befehl eine Tastenkombination zugeordnet wird und wie die Tastatur Zuordnung im Standard-Editor angewendet oder auf einen benutzerdefinierten Editor beschränkt wird.
@@ -31,9 +31,9 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>So überprüfen Sie die Verfügbarkeit einer Tastenkombination
 
-1. **Tools**  >  Wählen Sie im Fenster Extras**Optionen**  >  **Umgebung** die Option **Tastatur**aus.
+1. **Tools**  >  Wählen Sie im Fenster Extras **Optionen**  >  **Umgebung** die Option **Tastatur** aus.
 
-2. Stellen Sie sicher, dass **Use New Shortcut in** auf **Global**festgelegt ist.
+2. Stellen Sie sicher, dass **Use New Shortcut in** auf **Global** festgelegt ist.
 
 3. Geben Sie im Feld Tasten **Kombination drücken** die Tastenkombination ein, die Sie verwenden möchten.
 
@@ -42,7 +42,7 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 4. Probieren Sie verschiedene Tastenkombinationen aus, bis Sie eine gefunden haben, die nicht zugeordnet ist.
 
    > [!NOTE]
-   > Tastenkombinationen, die **alt** verwenden, können ein Menü öffnen und keinen Befehl direkt ausführen. Daher kann die **derzeit von Box verwendete Verknüpfung** leer sein, wenn Sie eine Verknüpfung eingeben, die **alt**enthält. Sie können überprüfen, ob die Verknüpfung ein Menü öffnet, indem Sie das Dialogfeld **Optionen** schließen und dann die Tasten drücken.
+   > Tastenkombinationen, die **alt** verwenden, können ein Menü öffnen und keinen Befehl direkt ausführen. Daher kann die **derzeit von Box verwendete Verknüpfung** leer sein, wenn Sie eine Verknüpfung eingeben, die **alt** enthält. Sie können überprüfen, ob die Verknüpfung ein Menü öffnet, indem Sie das Dialogfeld **Optionen** schließen und dann die Tasten drücken.
 
    Bei der folgenden Prozedur wird davon ausgegangen, dass Sie über ein vorhandenes VSPackage mit einem Menübefehl verfügen. Wenn Sie Hilfe benötigen, sehen Sie sich die Schritte zum [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)an.
 
@@ -59,7 +59,7 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 
     Legen `guid`  Sie das-Attribut und das-  `id` Attribut auf die des Befehls fest, den Sie aufrufen möchten.
 
-    Legen Sie das- `mod1` Attribut auf **Control**, **alt**oder **Shift**fest.
+    Legen Sie das- `mod1` Attribut auf **Control** , **alt** oder **Shift** fest.
 
     Der Abschnitt "KeyBinding" sollte in etwa wie folgt aussehen:
 
@@ -81,7 +81,7 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 
    Damit der Befehl nur in einem benutzerdefinierten Editor verfügbar ist, legen `editor` Sie das-Attribut auf den Namen des benutzerdefinierten Editors fest, der von der Paket Vorlage generiert wurde, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] als Sie das VSPackage erstellt haben, das den benutzerdefinierten Editor enthält. Um den namens Wert zu finden, suchen Sie im `<Symbols>` Abschnitt nach einem `<GuidSymbol>` Knoten, dessen `name` Attribut auf " `editorfactory` ." endet. Dies ist der Name des benutzerdefinierten Editors.
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
  In diesem Beispiel wird die Tastenkombination **STRG** + **alt** + **C** an einen Befehl `cmdidMyCommand` mit dem Namen in einem Paket mit dem Namen gebunden `MyPackage` .
 
 ```
@@ -98,12 +98,12 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 </CommandTable>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
  In diesem Beispiel wird die Tastenkombination **STRG** + **B** an einen Befehl `cmdidBold` mit dem Namen in einem Projekt mit dem Namen gebunden `TestEditor` . Der Befehl ist nur im benutzerdefinierten Editor und nicht in anderen Editoren verfügbar.
 
 ```xml
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
