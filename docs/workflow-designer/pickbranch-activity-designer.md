@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-PickBranch-Aktivitäts Designer
+description: Erfahren Sie, wie der PickBranch-Aktivitäts Designer einen ereignisbasierten Ausführungs Pfad innerhalb einer Pick-Aktivität bereitstellt, die von einem eingehenden Ereignis ausgelöst werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876085"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434232"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch-Aktivitätsdesigner
 
@@ -27,11 +29,11 @@ Der <xref:System.Activities.Statements.PickBranch> stellt einen ereignisbasierte
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>So verwenden Sie den Pick-Aktivitätsdesigner
 
-Greifen Sie in der Kategorie **Ablauf Steuerung** der **Toolbox**auf den **PickBranch** -Designer zu.
+Greifen Sie in der Kategorie **Ablauf Steuerung** der **Toolbox** auf den **PickBranch** -Designer zu.
 
 <xref:System.Activities.Statements.PickBranch>Standardmäßig werden zwei leere Objekte mit den anzeigen Amen **Branch1** und **Branch2** als Elemente einer- <xref:System.Activities.Statements.Pick> Aktivität erstellt, wenn der **Pick** -Aktivitäts Designer anfänglich auf dem Workflow-Designer abgelegt wird. Diese entsprechenden <xref:System.Activities.Statements.PickBranch.DisplayName%2A> Eigenschaftswerte können im Header des **PickBranch** -Designers oder innerhalb des **Eigenschaften** Fensters für jede Verzweigung bearbeitet werden.
 
-Es gibt zwei Möglichkeiten, <xref:System.Activities.Statements.PickBranch> Objekte zur-Auflistung eines <xref:System.Activities.Statements.Pick> -Objekts hinzuzufügen: ziehen Sie den **PickBranch** -Designer aus der **Toolbox**, oder verwenden Sie das Kontextmenü in der **Pick** -Entwurfs Oberfläche, um Objekte zu erstellen:
+Es gibt zwei Möglichkeiten, <xref:System.Activities.Statements.PickBranch> Objekte zur-Auflistung eines <xref:System.Activities.Statements.Pick> -Objekts hinzuzufügen: ziehen Sie den **PickBranch** -Designer aus der **Toolbox** , oder verwenden Sie das Kontextmenü in der **Pick** -Entwurfs Oberfläche, um Objekte zu erstellen:
 
 - Der **PickBranch** -Designer erstellt eine, <xref:System.Activities.Statements.PickBranch> Wenn Sie aus der **Toolbox** gezogen und in einer der Verzweigungen eines **Pick** -Aktivitäts Designers auf der Workflow-Designer Oberfläche abgelegt wird. Die neuen <xref:System.Activities.Statements.PickBranch>-Objekte können im <xref:System.Activities.Statements.Pick>-Designer auf der linken oder rechten Seite jedes <xref:System.Activities.Statements.PickBranch>-Elements platziert werden, das bereits in der Auflistung enthalten ist. Wenn ein **PickBranch** -Designer mit der Maus auf den **Pick** -Designer gezogen wird, verwendet der **Pick** -Designer ein vertikales blaues grau, um anzugeben, wo der <xref:System.Activities.Statements.PickBranch> für eine bestimmte Maus Platzierung hinzugefügt wird.
 
@@ -52,13 +54,13 @@ Achten Sie darauf, den **PickBranch** -Designer auszuwählen. Wenn Sie eine der 
 
 In der folgenden Tabelle werden die nützlichsten <xref:System.Activities.Statements.PickBranch> Eigenschaften angezeigt, und es wird beschrieben, wie Sie in der Workflow-Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verbrauch|
+|Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|Falsch|Der Anzeige Name, der im Header des **PickBranch** -Designers angezeigt wird. Der Standardwert lautet Branch.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Richtig|Jedes <xref:System.Activities.Statements.PickBranch>-Objekt enthält eine <xref:System.Activities.Statements.PickBranch.Trigger%2A>-Aktion, die <xref:System.Activities.Statements.PickBranch.Action%2A> aufrufen kann.|
-|<xref:System.Activities.Statements.PickBranch.Action%2A>|Falsch|Jede <xref:System.Activities.Statements.PickBranch>-Objekt enthält eine <xref:System.Activities.Statements.PickBranch.Action%2A>, die ausgeführt wird, sobald sie ausgelöst wird.|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|FALSE|Der Anzeige Name, der im Header des **PickBranch** -Designers angezeigt wird. Der Standardwert lautet Branch.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Wahr|Jedes <xref:System.Activities.Statements.PickBranch>-Objekt enthält eine <xref:System.Activities.Statements.PickBranch.Trigger%2A>-Aktion, die <xref:System.Activities.Statements.PickBranch.Action%2A> aufrufen kann.|
+|<xref:System.Activities.Statements.PickBranch.Action%2A>|FALSE|Jede <xref:System.Activities.Statements.PickBranch>-Objekt enthält eine <xref:System.Activities.Statements.PickBranch.Action%2A>, die ausgeführt wird, sobald sie ausgelöst wird.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
 - [Auswahlaktivität](/dotnet/framework/windows-workflow-foundation/pick-activity)

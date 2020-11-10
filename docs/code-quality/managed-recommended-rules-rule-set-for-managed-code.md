@@ -1,6 +1,8 @@
 ---
 title: Regelsatz für verwaltete empfohlene Regeln für verwalteten Code
 ms.date: 11/04/2016
+description: Erfahren Sie mehr über den Regelsatz für verwaltete Empfohlene Regeln in Visual Studio. Weitere Informationen finden Sie unter Beschreibungen von Regeln, die sich auf Sicherheit, Stabilität und andere wichtige Probleme konzentrieren.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4b82bdd63cd8a32ad38ddf949dfbc3dd5bdc193
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 30874b00f7bca4d66a60e359445c28be686d3269
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658489"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435364"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Regelsatz für verwaltete empfohlene Regeln für verwalteten Code
 

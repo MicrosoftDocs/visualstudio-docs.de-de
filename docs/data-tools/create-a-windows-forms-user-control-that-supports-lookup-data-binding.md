@@ -1,5 +1,6 @@
 ---
 title: Verwenden von Nachschlage Tabellen in Datenbindung-Windows Forms
+description: Erfahren Sie, wie Sie mithilfe der LookupBindingPropertiesAttribute-Klasse in Visual Studio ein Windows Forms Benutzer Steuerelement erstellen, das die Datenbindung für die Suche unterstützt.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe2289a54dba0c3b3e34de54991e9b7cfbee4c93
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037392"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435273"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das Nachschlagedatenbindung unterstützt
 
@@ -59,7 +60,7 @@ In dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
-1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer** können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
@@ -79,11 +80,11 @@ Der erste Schritt besteht darin, ein **Windows Forms Anwendungs** Projekt zu ers
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop** aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **LookupControlWalkthrough**, und wählen Sie dann **OK**aus.
+4. Nennen Sie das Projekt **LookupControlWalkthrough** , und wählen Sie dann **OK** aus.
 
      Das Projekt **LookupControlWalkthrough** wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.
 
@@ -95,7 +96,7 @@ In dieser exemplarischen Vorgehensweise wird aus einem **Benutzersteuerelement**
 
 2. Geben `LookupBox` Sie in den Bereich **Name** ein, und klicken Sie dann auf **Hinzufügen**.
 
-     Das **LookupBox**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
+     Das **LookupBox** -Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
 
 ## <a name="design-the-lookupbox-control"></a>Entwerfen des LookupBox-Steuer Elements
 
@@ -105,14 +106,14 @@ Um das LookupBox-Steuerelement zu entwerfen, ziehen Sie ein <xref:System.Windows
 
 Implementieren Sie für Nachschlagesteuerelemente, die Datenbindung unterstützen, das <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-1. Wechseln Sie für das **LookupBox**-Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** den Befehl **Code** aus.)
+1. Wechseln Sie für das **LookupBox** -Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** den Befehl **Code** aus.)
 
 2. Ersetzen Sie den Code in `LookupBox` durch folgenden Code:
 
      [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
      [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
 
-3. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
+3. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen** aus.
 
 ## <a name="create-a-data-source-from-your-database"></a>Erstellen einer Datenquelle aus der Datenbank
 
@@ -128,7 +129,7 @@ In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen*
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+    - Klicken Sie auf **Neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
 5. Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.
 
@@ -152,7 +153,7 @@ Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Form
 
 4. Klicken Sie im Knoten **Orders** auf den Dropdownpfeil, und wählen Sie in der Steuerelementliste die Option **Details** aus.
 
-5. Klicken Sie in der Spalte **CustomerID** (im Knoten **Orders**) auf den Dropdownpfeil, und wählen Sie **Anpassen** aus.
+5. Klicken Sie in der Spalte **CustomerID** (im Knoten **Orders** ) auf den Dropdownpfeil, und wählen Sie **Anpassen** aus.
 
 6. Wählen Sie im Dialogfeld **Data UI Customization Options** (Optionen für die Anpassung der Datenbenutzeroberfläche) in der Liste **Zugeordnete Steuerelemente** den Eintrag **LookupBox** aus.
 
@@ -174,10 +175,10 @@ Damit wird die Datenbindung so eingerichtet, dass der Wert für `CompanyName` au
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-- Drücken Sie **F5**, um die Anwendung auszuführen.
+- Drücken Sie **F5** , um die Anwendung auszuführen.
 
 - Navigieren Sie durch einige Datensätze, und prüfen Sie, ob im `LookupBox`-Steuerelement der Wert von `CompanyName` angezeigt wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

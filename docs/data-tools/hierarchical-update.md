@@ -1,5 +1,7 @@
 ---
 title: Hierarchisches Update
+description: Überprüfen Sie hierarchische Updates, die das Speichern aktualisierter Daten (aus einem DataSet mit 2 + verknüpften Tabellen) zurück in eine Datenbank erfordern, während Sie die Regeln der referenziellen Integrität beibehalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586574"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435155"
 ---
 # <a name="hierarchical-update"></a>Hierarchisches Update
 
@@ -34,17 +36,17 @@ ms.locfileid: "75586574"
 
 Das hierarchische Update Feature verwendet einen `TableAdapterManager` , um die `TableAdapter` s in einem typisierten DataSet zu verwalten. Bei der `TableAdapterManager` Komponente handelt es sich um eine von Visual Studio generierte Klasse, nicht um einen .NET-Typ. Wenn Sie eine Tabelle aus dem **Datenquellen** Fenster auf eine Windows Form-oder WPF-Seite ziehen, fügt Visual Studio dem Formular oder der Seite eine Variable vom Typ TableAdapterManager hinzu, und Sie sehen Sie im Designer in der Komponenten Leiste. Ausführliche Informationen zur- `TableAdapterManager` Klasse finden Sie im Abschnitt TableAdapterManager-Referenz von [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-Standardmäßig behandelt ein Dataset verknüpfte Tabellen als "Beziehungen", was bedeutet, dass keine FOREIGN KEY-Einschränkungen erzwungen werden. Sie können diese Einstellung zur Entwurfszeit ändern, indem Sie die **DataSet-Designer**verwenden. Wählen Sie die Beziehungs Linie zwischen zwei Tabellen aus, um das Dialogfeld " **Beziehung** " aufzubringen. Die Änderungen, die Sie hier vornehmen, bestimmen `TableAdapterManager` , wie sich verhält, wenn die Änderungen in den verknüpften Tabellen zurück an die Datenbank gesendet werden.
+Standardmäßig behandelt ein Dataset verknüpfte Tabellen als "Beziehungen", was bedeutet, dass keine FOREIGN KEY-Einschränkungen erzwungen werden. Sie können diese Einstellung zur Entwurfszeit ändern, indem Sie die **DataSet-Designer** verwenden. Wählen Sie die Beziehungs Linie zwischen zwei Tabellen aus, um das Dialogfeld " **Beziehung** " aufzubringen. Die Änderungen, die Sie hier vornehmen, bestimmen `TableAdapterManager` , wie sich verhält, wenn die Änderungen in den verknüpften Tabellen zurück an die Datenbank gesendet werden.
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Aktivieren der hierarchischen Aktualisierung in einem DataSet
 
-Standardmäßig wird die hierarchische Aktualisierung für alle neuen DataSets aktiviert, die in einem Projekt hinzugefügt oder erstellt werden. Aktivieren bzw. deaktivieren Sie die hierarchische Aktualisierung, indem Sie die Eigenschaft **hierarchische Aktualisierung** eines typisierten Datasets im DataSet auf **true** oder **false**festlegen:
+Standardmäßig wird die hierarchische Aktualisierung für alle neuen DataSets aktiviert, die in einem Projekt hinzugefügt oder erstellt werden. Aktivieren bzw. deaktivieren Sie die hierarchische Aktualisierung, indem Sie die Eigenschaft **hierarchische Aktualisierung** eines typisierten Datasets im DataSet auf **true** oder **false** festlegen:
 
 ![Einstellung für hierarchische Aktualisierung](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Erstellen einer neuen Beziehung zwischen Tabellen
 
-Wenn Sie eine neue Beziehung zwischen zwei Tabellen erstellen möchten, wählen Sie im DataSet-Designer die Titelleiste der einzelnen Tabellen aus, klicken Sie dann mit der rechten Maustaste, und wählen Sie **Beziehung hinzufügen**aus.
+Wenn Sie eine neue Beziehung zwischen zwei Tabellen erstellen möchten, wählen Sie im DataSet-Designer die Titelleiste der einzelnen Tabellen aus, klicken Sie dann mit der rechten Maustaste, und wählen Sie **Beziehung hinzufügen** aus.
 
 ![Hierarchisches Update Add Relation-Menü](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
@@ -87,7 +89,7 @@ Der generierte Speichern-Code enthält eine Codezeile, die die Methode `Customer
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>So aktualisieren Sie den Code für einen Commit der Änderungen zu den verknüpften Tabellen vor dem Speichern
 
-1. Doppelklicken Sie auf <xref:System.Windows.Forms.BindingNavigator> auf **Speichern**, um **Form1** im Code-Editor zu öffnen.
+1. Doppelklicken Sie auf <xref:System.Windows.Forms.BindingNavigator> auf **Speichern** , um **Form1** im Code-Editor zu öffnen.
 
 2. Fügen Sie eine Codezeile ein, um die `OrdersBindingSource.EndEdit`-Methode nach der Zeile aufzurufen, die die `CustomersBindingSource.EndEdit`-Methode aufruft. Der Code im Click-Ereignis **Speichern** sollte etwa wie folgt aussehen:
 
@@ -121,10 +123,10 @@ Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften der- 
 |Member|BESCHREIBUNG|
 |------------|-----------------|
 |`UpdateAll`-Methode|Speichert alle Daten aus allen Datentabellen.|
-|`BackUpDataSetBeforeUpdate`-Eigenschaft|Bestimmt, ob vor dem Ausführen der-Methode eine Sicherungskopie des Datasets erstellt wird `TableAdapterManager.UpdateAll` . Booleschen.|
+|`BackUpDataSetBeforeUpdate` -Eigenschaft|Bestimmt, ob vor dem Ausführen der-Methode eine Sicherungskopie des Datasets erstellt wird `TableAdapterManager.UpdateAll` . Booleschen.|
 |*TableName* `TableAdapter` Property|Stellt einen dar `TableAdapter` . Der generierte `TableAdapterManager` enthält eine-Eigenschaft für jeden, der von `TableAdapter` ihm verwaltet wird. Beispielsweise wird ein DataSet mit einer Customers-und Orders-Tabelle mit einem generiert, `TableAdapterManager` das die-Eigenschaft und die-Eigenschaft enthält `CustomersTableAdapter` `OrdersTableAdapter` .|
-|`UpdateOrder`-Eigenschaft|Steuert die Reihenfolge der einzelnen INSERT-, Update-und DELETE-Befehle. Legen Sie diesen Wert auf einen der Werte in der- `TableAdapterManager.UpdateOrderOption` Enumeration fest.<br /><br /> Standardmäßig `UpdateOrder` ist auf **InsertUpdateDelete**festgelegt. Dies bedeutet, dass Einfügungen, Updates und Löschungen für alle Tabellen im DataSet durchgeführt werden.|
+|`UpdateOrder` -Eigenschaft|Steuert die Reihenfolge der einzelnen INSERT-, Update-und DELETE-Befehle. Legen Sie diesen Wert auf einen der Werte in der- `TableAdapterManager.UpdateOrderOption` Enumeration fest.<br /><br /> Standardmäßig `UpdateOrder` ist auf **InsertUpdateDelete** festgelegt. Dies bedeutet, dass Einfügungen, Updates und Löschungen für alle Tabellen im DataSet durchgeführt werden.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

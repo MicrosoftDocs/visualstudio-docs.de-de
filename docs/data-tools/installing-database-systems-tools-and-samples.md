@@ -1,5 +1,7 @@
 ---
 title: Daten Bank Kompatibilität
+description: Überprüfen Sie die kompatiblen Datenbanksysteme für Visual Studio, z. b. Microsoft SQL Server, Oracle, MySQL, PostgreSQL, SQLite und Firebird.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586405"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434854"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Kompatible Datenbanksysteme für Visual Studio
 
@@ -39,15 +41,15 @@ Sie können eine kostenpflichtige oder kostenlose Edition der Oracle-Datenbank v
 
 ## <a name="mysql"></a>MySQL
 
-MySQL ist ein gängiges Open-Source-Datenbanksystem, das in Unternehmen und Websites häufig verwendet wird. Downloads für MySQL, MySQL für Visual Studio und Verwandte Produkte finden Sie unter [MySQL unter Windows](https://www.mysql.com/why-mysql/windows/). Drittanbieter bieten verschiedene Visual Studio-Erweiterungen und eigenständige Verwaltungs Anwendungen für MySQL. Sie können die Angebote im nuget-Paket-Manager durch**Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für**Projekt Mappe verwalten).
+MySQL ist ein gängiges Open-Source-Datenbanksystem, das in Unternehmen und Websites häufig verwendet wird. Downloads für MySQL, MySQL für Visual Studio und Verwandte Produkte finden Sie unter [MySQL unter Windows](https://www.mysql.com/why-mysql/windows/). Drittanbieter bieten verschiedene Visual Studio-Erweiterungen und eigenständige Verwaltungs Anwendungen für MySQL. Sie können die Angebote im nuget-Paket-Manager durch **Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für** Projekt Mappe verwalten).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL ist ein kostenloses Open-Source-Objekt für relationale Datenbanken. Um es unter Windows zu installieren, können Sie es von der [PostgreSQL-Downloadseite](https://www.postgresql.org/download/windows/)herunterladen. Sie können PostgreSQL auch aus dem Quellcode erstellen. Das PostgreSQL-Kernsystem umfasst eine Schnittstelle der Programmiersprache C. Viele Drittanbieter stellen nuget-Pakete für die Verwendung von PostgreSQL aus .NET-Anwendungen bereit. Sie können die Angebote im nuget-Paket-Manager durch**Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für**Projekt Mappe verwalten). Möglicherweise wird das beliebteste Paket von [npgsql.org](http://www.npgsql.org)bereitgestellt.
+PostgreSQL ist ein kostenloses Open-Source-Objekt für relationale Datenbanken. Um es unter Windows zu installieren, können Sie es von der [PostgreSQL-Downloadseite](https://www.postgresql.org/download/windows/)herunterladen. Sie können PostgreSQL auch aus dem Quellcode erstellen. Das PostgreSQL-Kernsystem umfasst eine Schnittstelle der Programmiersprache C. Viele Drittanbieter stellen nuget-Pakete für die Verwendung von PostgreSQL aus .NET-Anwendungen bereit. Sie können die Angebote im nuget-Paket-Manager durch **Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für** Projekt Mappe verwalten). Möglicherweise wird das beliebteste Paket von [npgsql.org](http://www.npgsql.org)bereitgestellt.
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite ist eine eingebettete SQL-Datenbank-Engine, die im eigenen Prozess der Anwendung ausgeführt wird. Sie können es von der [SQLite-Downloadseite](https://www.sqlite.org/download.html)herunterladen. Viele nuget-Pakete von Drittanbietern für SQLite sind ebenfalls verfügbar. Sie können die Angebote im nuget-Paket-Manager durch**Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für**Projekt Mappe verwalten).
+SQLite ist eine eingebettete SQL-Datenbank-Engine, die im eigenen Prozess der Anwendung ausgeführt wird. Sie können es von der [SQLite-Downloadseite](https://www.sqlite.org/download.html)herunterladen. Viele nuget-Pakete von Drittanbietern für SQLite sind ebenfalls verfügbar. Sie können die Angebote im nuget-Paket-Manager durch **Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für** Projekt Mappe verwalten).
 
 ## <a name="firebird"></a>Firebird
 

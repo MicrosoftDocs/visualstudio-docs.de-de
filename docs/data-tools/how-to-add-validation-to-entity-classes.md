@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen'
+description: Weitere Informationen finden Sie unter Hinzufügen von Validierung zu Entitäts Klassen. Hinzufügen einer Validierung für Änderungen an einem Wert in einer bestimmten Spalte. Fügen Sie eine Validierung für Updates einer Entitäts Klasse hinzu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282344"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435103"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Vorgehensweise: Hinzufügen von Validierungen zu Entitätsklassen
 Durch den Vorgang der *Validierung* von Entitätsklassen wird bestätigt, dass die in Datenobjekte eingegebenen Werte den Einschränkungen eines Objektschemas oder den bestehenden Regeln für die Anwendung entsprechen. Es dient der Fehlervermeidung, Daten vor dem Senden von Aktualisierungen an zugrunde liegende Datenbanken auf Gültigkeit zu überprüfen. Dadurch wird auch die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank verringert.
@@ -33,7 +35,7 @@ Dieses Verfahren veranschaulicht, wie Daten auf Gültigkeit geprüft werden, wen
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>So validieren Sie Daten während einer Änderung eines Spaltenwerts
 
-1. Öffnen oder erstellen Sie eine neue LINQ to SQL Klassen-Datei (**. dbml** -Datei) im **O/R-Designer**. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML**-Datei.)
+1. Öffnen oder erstellen Sie eine neue LINQ to SQL Klassen-Datei ( **. dbml** -Datei) im **O/R-Designer**. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML** -Datei.)
 
 2. Klicken Sie im **O/R-Designer** mit der rechten Maustaste auf die Klasse, der Sie Validierungen hinzufügen möchten, und klicken Sie dann auf **Code anzeigen**.
 
@@ -45,7 +47,7 @@ Dieses Verfahren veranschaulicht, wie Daten auf Gültigkeit geprüft werden, wen
 
     1. Erweitern Sie die Liste **Methodenname**.
 
-    2. Suchen Sie die **OnSPALTENNNAMEChanging**-Methode für die Spalte, der Sie eine Validierung hinzufügen möchten.
+    2. Suchen Sie die **OnSPALTENNNAMEChanging** -Methode für die Spalte, der Sie eine Validierung hinzufügen möchten.
 
     3. Der partiellen Klasse wird eine `OnCOLUMNNAMEChanging`-Methode hinzugefügt.
 
@@ -79,7 +81,7 @@ Neben der Überprüfung von Werten während Änderungen können Sie auch Daten a
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>So validieren Sie Daten während eines Updates einer Entitätsklasse
 
-1. Öffnen oder erstellen Sie eine neue LINQ to SQL Klassen-Datei (**. dbml** -Datei) im **O/R-Designer**. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML**-Datei.)
+1. Öffnen oder erstellen Sie eine neue LINQ to SQL Klassen-Datei ( **. dbml** -Datei) im **O/R-Designer**. (Doppelklicken Sie im **Projektmappen-Explorer** auf die **DBML** -Datei.)
 
 2. Klicken Sie im **O/R-Designer** mit der rechten Maustaste in einen leeren Bereich, und klicken Sie auf **Code anzeigen**.
 
@@ -119,8 +121,8 @@ Neben der Überprüfung von Werten während Änderungen können Sie auch Daten a
     }
     ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Validieren von Daten](../data-tools/validate-data-in-datasets.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
