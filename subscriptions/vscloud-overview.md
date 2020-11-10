@@ -2,17 +2,17 @@
 title: Erwerben von Visual Studio-Cloudabonnements
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
-ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353446"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92918083"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“** .
@@ -102,7 +102,7 @@ Antwort:  Nein.  Ihre Abonnements bleiben erhalten, und Sie können diese wie ge
 Antwort: In einem bestimmten Monat gekaufte Jahresabonnements werden sofort für ein Jahr berechnet und sind ein Jahr lang gültig. Aus diesem Grund können Sie nur die Anzahl der Lizenzen im aktuellen Monat des Erwerbs ändern (sie sind ein Jahr lang gültig, und die Abrechnung erfolgt für ein Jahr). Außerhalb des Monat des Erwerbs können Sie die Anzahl der Abonnements nicht mehr erhöhen.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Frage: Kann ich die Anzahl der Abonnements reduzieren, die meine Kunden besitzen?
-Antwort: Ihr Administrator kann die Anzahl der Abonnements weiterhin reduzieren, indem er https://manage.visualstudio.com aufruft und die Anweisungen in diesem Artikel zum Reduzieren der Abonnements befolgt. Das System generiert *keine* anteilige Gutschrift. Wenn Sie eine Rückerstattung wünschen, müssen Sie Kontakt zum Azure-Abrechnungsteam aufnehmen.
+Antwort: Ihr Administrator kann die Anzahl von Abonnements weiterhin verringern, indem er https://manage.visualstudio.com aufruft und die Anweisungen in diesem Artikel zum Reduzieren der Abonnements befolgt. Das System generiert *keine* anteilige Gutschrift. Wenn Sie eine Rückerstattung wünschen, müssen Sie Kontakt zum Azure-Abrechnungsteam aufnehmen.
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Frage: Kann ich in Zukunft ein weiteres jährliches Cloudabonnement erwerben, wenn ich mein Abonnement kündigen?
 Antwort:  Sie können zwar kein weiteres jährliches Cloudabonnement erwerben, aber es gibt viele andere Optionen für den Erwerb von Visual Studio-Abonnements.  Weitere Informationen finden Sie unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
@@ -115,10 +115,10 @@ Antwort:  Ihre Kunden können keine neuen jährlichen Cloudabonnements für Visu
 Antwort:  Bestehende Kunden werden nicht beeinträchtigt. Neue Kunden müssen entscheiden, ob sie ein monatliches Abonnement für Visual Studio erwerben oder einen anderen Kanal verwenden möchten (z. B. das Volumenlizenzprogramm), um Visual Studio-Abonnements zu erwerben.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Frage: Kann ich die Anzahl der Abonnements erhöhen, die meine Kunden besitzen?
-Antwort: In einem bestimmten Monat gekaufte Jahresabonnements werden sofort berechnet und sind ein Jahr gültig. Aus diesem Grund kann Ihr Administrator nur die Anzahl der Lizenzen im aktuellen Monat des Erwerbs ändern (sie sind 1 Jahr gültig, und die Abrechnung erfolgt für 1 Jahr). Außerhalb des Monat des Erwerbs können Sie die Anzahl der Abonnements erhöhen.
+Antwort: In einem bestimmten Monat gekaufte Jahresabonnements werden sofort berechnet und sind ein Jahr gültig. Aus diesem Grund kann Ihr Administrator nur die Anzahl von Lizenzen im aktuellen Monat des Erwerbs ändern (die Lizenzen sind 1 Jahr gültig, und es fallen Gebühren für 1 Jahr an). Außerhalb des Monat des Erwerbs können Sie die Anzahl der Abonnements erhöhen.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Frage: Kann ich die Anzahl der Abonnements reduzieren, die meine Kunden besitzen?
-Antwort:  Ihr Administrator kann die Anzahl der Abonnements weiterhin reduzieren, indem er den Artikel [https://manage.visualstudio.com](https://manage.visualstudio.com) aufruft und die Anweisungen zum Reduzieren der Abonnements befolgt. Das System generiert **keine** anteilige Gutschrift. Wenn Sie eine Rückerstattung wünschen, müssen Sie Kontakt zum Azure-Abrechnungsteam aufnehmen.
+Antwort:  Ihr Administrator kann die Anzahl von Abonnements weiterhin verringern, indem er [https://manage.visualstudio.com](https://manage.visualstudio.com) aufruft und die Anweisungen in diesem Artikel zum Reduzieren der Abonnements befolgt. Das System generiert **keine** anteilige Gutschrift. Wenn Sie eine Rückerstattung wünschen, müssen Sie Kontakt zum Azure-Abrechnungsteam aufnehmen.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Frage: Können meine Kunden in Zukunft weitere jährliche Cloudabonnements erwerben, wenn sie ihr Abonnement kündigen?
 Antwort:  Sie können zwar kein weiteres jährliches Cloudabonnement erwerben, aber es gibt viele andere Optionen für den Erwerb von Visual Studio-Abonnements.  Weitere Informationen finden Sie unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
