@@ -14,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e8e4d0e337289e2676dc8eb040ad199ae41a8dbc
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: a5d71b2b20d0723b1809ae78717b64ee43ae2b6b
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947777"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414541"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -252,7 +252,7 @@ VSDoc wird nun nicht mehr unterstützt. Stattdessen kommt die Auszeichnungssprac
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js`-Erweiterungen
 
-Bisher konnten Sie [IntelliSense-Erweiterungen](../vs-2015/ide/extending-javascript-intellisense.md) erstellen, mit denen Sie benutzerdefinierte Vervollständigungsergebnisse für Bibliotheken von Drittanbietern hinzufügen konnten.
+Bisher konnten Sie [IntelliSense-Erweiterungen](/previous-versions/visualstudio/visual-studio-2015/ide/extending-javascript-intellisense) erstellen, mit denen Sie benutzerdefinierte Vervollständigungsergebnisse für Bibliotheken von Drittanbietern hinzufügen konnten.
 Die Entwicklung dieser Erweiterungen war aber eher umständlich. Außerdem war die Installation und die Erstellung von Verweisen mühsam, weswegen der neue Sprachdienst diese Dateien nicht mehr unterstützt.
 Eine einfachere Alternative ist die Erstellung einer TypeScript-Definitionsdatei, mit der Sie von den gleichen Vorteilen von IntelliSense profitieren, die Sie von den vorherigen `.intellisense.js`-Erweiterungen kennen.
 Weitere Informationen zur Erstellung von `.d.ts`-Deklarationsdateien [ finden Sie hier](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

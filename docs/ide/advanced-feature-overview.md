@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099426"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399252"
 ---
 # <a name="features-of-visual-studio"></a>Features von Visual Studio
 
@@ -82,7 +82,7 @@ Sie können mithilfe von Visual Studio Apps und Spiele für macOS, Linux, Window
 
 - Nutzen Sie Standardwebtechnologien wie &mdash;HTML, CSS und JavaScript&mdash;, um unter Verwendung von [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) mobile Apps für iOS, Android und Windows zu entwickeln.
 
-- Entwickeln Sie mit den [Visual Studio-Tools für Unity](../cross-platform/visual-studio-tools-for-unity.md) 2D- und 3D-Spiele in C#.
+- Entwickeln Sie mit den [Visual Studio-Tools für Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) 2D- und 3D-Spiele in C#.
 
 - Erstellen Sie native C++-Apps für iOS-, Android- und Windows-Geräte. Mit [C++ für plattformübergreifende Entwicklung](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development) können Sie allgemeinen Code in Bibliotheken für iOS, Android und Windows freigeben.
 

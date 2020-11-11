@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b200538f7d6bee55d12a79334811c8ba57515a
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: b50edfe91a9b497760c44d3fd548eb6d2a15a049
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959834"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399376"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende Mobile-Entwicklung in Visual Studio
 
@@ -99,7 +99,7 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 
  ![Hybrid-Apps für mehrere Geräte mit JavaScript](../cross-platform/media/multidevicehybridapps.png "Hybrid-Apps für mehrere Geräte mit JavaScript")
 
- Installieren Sie zunächst Visual Studio, und wählen Sie während des Setups die Workload **Mobile-Entwicklung mit JavaScript** . Die Cordova-Tools installieren automatisch sämtliche Drittanbietersoftware, die zum Erstellen der plattformübergreifenden App erforderlich ist.
+ Installieren Sie zunächst Visual Studio, und wählen Sie während des Setups die Workload **Mobile-Entwicklung mit JavaScript**. Die Cordova-Tools installieren automatisch sämtliche Drittanbietersoftware, die zum Erstellen der plattformübergreifenden App erforderlich ist.
 
  Nachdem Sie die Erweiterung installiert haben, öffnen Sie Visual Studio, und erstellen Sie ein Projekt für eine **Leere App (Apache Cordova)** . Anschließend können Sie die App mit JavaScript oder TypeScript entwickeln. Sie können darüber hinaus Plug-Ins zum Erweitern der App-Funktionen hinzufügen. Beim Schreiben von Code werden APIs aus Plug-Ins in IntelliSense angezeigt.
 
@@ -161,8 +161,8 @@ Mithilfe von Visual Studio-Tools für Xamarin können Sie Android, iOS und Windo
 |**Weitere Informationen**|
 |--------------------|
 |[Weitere Informationen über das Erstellen von Unity-Spielen mit Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
-|[Weitere Informationen zu Visual Studio Tools für Unity](../cross-platform/visual-studio-tools-for-unity.md) |
-|[Erste Schritte mit Visual Studio-Tools für Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
+|[Weitere Informationen zu Visual Studio Tools für Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) |
+|[Erste Schritte mit Visual Studio-Tools für Unity](/gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Informationen zu den neusten Verbesserungen von Visual Studio Tools für Unity 2.0 Preview](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio-Blog)|
 |[Videoeinführung in Visual Studio Tools für Unity 2.0 Preview](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (Video)|
 |[Informationen zu Unity](https://unity.com/) (Unity-Website)|

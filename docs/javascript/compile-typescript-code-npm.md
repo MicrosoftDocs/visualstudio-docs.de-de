@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: add67535c0c3c9e4a48b95c2b9d5fe0717511797
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927899"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414372"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Kompilieren von TypeScript-Code (Node.js)
 
@@ -39,7 +39,7 @@ Das [TypeScript-npm-Paket](https://www.npmjs.com/package/typescript) fügt TypeS
 
    Überprüfen Sie die Option **npm** im Fenster **Ausgabe** , um den Fortschritt bei der Paketinstallation anzuzeigen. Das installierte Paket wird im Projektmappen-Explorer unter dem Knoten **npm** angezeigt.
 
-1. Wenn Ihr Projekt noch keine *.tsconfig* -Datei enthält, fügen Sie Ihrem Projektstamm eine solche Datei hinzu. Um die Datei hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript JSON-Konfigurationsdatei** aus und klicken Sie dann auf **Hinzufügen** .
+1. Wenn Ihr Projekt noch keine *.tsconfig* -Datei enthält, fügen Sie Ihrem Projektstamm eine solche Datei hinzu. Um die Datei hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript JSON-Konfigurationsdatei** aus und klicken Sie dann auf **Hinzufügen**.
 
    Visual Studio fügt die Datei *tsconfig.json* zum Projektstamm hinzu. Sie können mit dieser Datei für den TypeScript-Compiler [Optionen konfigurieren](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
@@ -115,7 +115,7 @@ Das [TypeScript-npm-Paket](https://www.npmjs.com/package/typescript) fügt TypeS
 
 ### <a name="run-the-application"></a>Ausführen der Anwendung
 
-Eine Anleitung zum Ausführen der App nach ihrer Kompilierung finden Sie unter [Schnellstart: Erstellen einer ersten Node.js-App mit Visual Studio](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
+Eine Anleitung zum Ausführen der App nach ihrer Kompilierung finden Sie unter [Schnellstart: Erstellen einer ersten Node.js-App mit Visual Studio](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application).
 
 ## <a name="automate-build-tasks"></a>Automatisieren von Buildaufgaben
 
