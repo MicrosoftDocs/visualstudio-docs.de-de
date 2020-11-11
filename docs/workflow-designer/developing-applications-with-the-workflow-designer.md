@@ -1,5 +1,7 @@
 ---
 title: Entwickeln von Anwendungen mit dem Workflow-Designer
+description: Erfahren Sie, wie Sie Anwendungen mit dem Workflow-Designer entwickeln, das Sie für die grafische Erstellung und das Debuggen von WF-Anwendungen in Visual Studio verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88825e5328fc11702a503311b227fde155c79d73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814719"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438073"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Entwickeln von Apps mit dem Workflow-Designer
 
@@ -43,6 +45,6 @@ Wenn Sie Workflow Projektvorlagen in Visual Studio verwenden möchten, installie
 
    Visual Studio installiert die **Windows Workflow Foundation** Komponente.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

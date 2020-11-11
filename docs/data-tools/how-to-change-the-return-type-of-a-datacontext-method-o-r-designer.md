@@ -1,5 +1,6 @@
 ---
 title: Rückgabetyp der DataContext-Methode ändern
+description: Erfahren Sie, wie Sie den Rückgabetyp einer DataContext-Methode ändern, wenn Sie eine gespeicherte Prozedur oder Funktion im objektrelationaler Designer (O/R-Designer) ablegen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,15 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da1dc0437ccd4a7fad2a24b40542a58d8310bf17
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 20ff0e4764acf4f2f0f8dea77ed815a9aa430abe
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036664"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435051"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Vorgehensweise: Ändern des Rückgabetyps für eine DataContext-Methode (O/R-Designer)
-Der Rückgabetyp einer <xref:System.Data.Linq.DataContext> Methode (basierend auf einer gespeicherten Prozedur oder Funktion erstellt) unterscheidet sich abhängig davon, wo Sie die gespeicherte Prozedur oder Funktion im **O/R-Designer**ablegen. Wenn Sie ein Element direkt auf einer vorhandene Entitätsklasse ablegen, wird eine <xref:System.Data.Linq.DataContext>-Methode erstellt, die über den Rückgabetyp dieser Entitätsklasse verfügt (wenn das Schema der Daten, die von der gespeicherten Prozedur oder Funktion zurückgegeben wurden, mit der Form der Entitätsklasse übereinstimmt). Wenn Sie ein Element in einem leeren Bereich des **O/R-Designers**ablegen, <xref:System.Data.Linq.DataContext> wird eine Methode erstellt, die einen automatisch generierten Typ zurückgibt. Sie können den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ändern, wenn Sie sie dem Methodenbereich hinzugefügt haben. Um den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode zu überprüfen oder zu ändern, markieren Sie sie und klicken im Fenster **Eigenschaften** auf die Eigenschaft **Rückgabetyp**.
+Der Rückgabetyp einer <xref:System.Data.Linq.DataContext> Methode (basierend auf einer gespeicherten Prozedur oder Funktion erstellt) unterscheidet sich abhängig davon, wo Sie die gespeicherte Prozedur oder Funktion im **O/R-Designer** ablegen. Wenn Sie ein Element direkt auf einer vorhandene Entitätsklasse ablegen, wird eine <xref:System.Data.Linq.DataContext>-Methode erstellt, die über den Rückgabetyp dieser Entitätsklasse verfügt (wenn das Schema der Daten, die von der gespeicherten Prozedur oder Funktion zurückgegeben wurden, mit der Form der Entitätsklasse übereinstimmt). Wenn Sie ein Element in einem leeren Bereich des **O/R-Designers** ablegen, <xref:System.Data.Linq.DataContext> wird eine Methode erstellt, die einen automatisch generierten Typ zurückgibt. Sie können den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ändern, wenn Sie sie dem Methodenbereich hinzugefügt haben. Um den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode zu überprüfen oder zu ändern, markieren Sie sie und klicken im Fenster **Eigenschaften** auf die Eigenschaft **Rückgabetyp**.
 
 > [!NOTE]
 > <xref:System.Data.Linq.DataContext>-Methoden können nicht wiederhergestellt werden, wenn ein Rückgabetyp auf eine Entitätsklasse festgelegt ist, um so den automatisch generierten Typ mithilfe des Fensters **Eigenschaften** zurückzugeben. Zum Zurücksetzen einer <xref:System.Data.Linq.DataContext> Methode, die einen automatisch generierten Typ zurückgibt, müssen Sie das ursprüngliche Datenbankobjekt erneut auf den **O/R-Designer** ziehen.
@@ -40,7 +41,7 @@ Der Rückgabetyp einer <xref:System.Data.Linq.DataContext> Methode (basierend au
 
 3. Speichern Sie die *DBML* -Datei.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

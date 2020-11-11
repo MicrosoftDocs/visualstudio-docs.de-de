@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-Verzögerungs Aktivitäts Designer
+description: Erfahren Sie mehr über verzögerte Aktivitäten und wie Sie den Delay-Aktivitäts Designer verwenden können, um eine Verzögerungs Aktivität zu erstellen und zu konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876111"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438086"
 ---
 # <a name="delay-activity-designer"></a>Delay-Aktivitätsdesigner
 
@@ -27,7 +29,7 @@ Die <xref:System.Activities.Statements.Delay>-Aktivität verzögert die Ausführ
 
 ### <a name="use-the-delay-activity-designer"></a>Verwenden des Delay-Aktivitäts Designers
 
-Der **Verzögerungs** Aktivitäts Designer befindet sich in der Kategorie **Primitives** der **Toolbox**, auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X**drücken.
+Der **Verzögerungs** Aktivitäts Designer befindet sich in der Kategorie **Primitives** der **Toolbox** , auf die Sie zugreifen können, indem Sie im Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X** drücken.
 
 Der **Verzögerungs** Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence> . Beim Löschen des Aktivitäts Designers wird eine- <xref:System.Activities.Statements.Delay> Aktivität mit dem Standardwert <xref:System.Activities.Activity.DisplayName%2A> Delay erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> kann im Header des **Verzögerungs** Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
 
@@ -35,14 +37,14 @@ Der **Verzögerungs** Aktivitäts Designer kann aus der **Toolbox** gezogen und 
 
 In der folgenden Tabelle sind die Eigenschaften aufgeführt, <xref:System.Activities.Statements.Delay> und es wird beschrieben, wie Sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster bearbeitet werden, und einige von Ihnen können auf der Workflow-Designer Oberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verbrauch|
+|Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der Anzeigename der <xref:System.Activities.Statements.Delay>-Aktivität. Der Standardwert lautet Delay. Obwohl der <xref:System.Activities.Activity.DisplayName%2A> Wert nicht unbedingt erforderlich ist, empfiehlt es sich, eine solche zu verwenden.|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|Richtig|Die Zeitspanne, um die der Workflow verzögert werden soll. Diese Eigenschaft wird im Eigenschaftenraster festgelegt. Geben Sie in entweder einen literalen <xref:System.TimeSpan>-Wert im Format 00:00:00 oder einem Visual Basic-Ausdruck ein, um die Zeitspanne anzugeben.|
+|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der Anzeigename der <xref:System.Activities.Statements.Delay>-Aktivität. Der Standardwert lautet Delay. Obwohl der <xref:System.Activities.Activity.DisplayName%2A> Wert nicht unbedingt erforderlich ist, empfiehlt es sich, eine solche zu verwenden.|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|Wahr|Die Zeitspanne, um die der Workflow verzögert werden soll. Diese Eigenschaft wird im Eigenschaftenraster festgelegt. Geben Sie in entweder einen literalen <xref:System.TimeSpan>-Wert im Format 00:00:00 oder einem Visual Basic-Ausdruck ein, um die Zeitspanne anzugeben.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Grundtypen](../workflow-designer/primitives-activity-designers.md)
+- [Primitive](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Delay-Aktivitätsdesigner](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

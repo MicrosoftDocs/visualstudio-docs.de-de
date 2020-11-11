@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-Write-Aktivität-Designer
+description: Erfahren Sie mehr über die Aktivität "Write teline" und darüber, wie Sie mit dem Schreibweise-Aktivitäts Designer eine "Write teline"-Aktivität erstellen und konfigurieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e3b4da69a2d9154f36e42d3b20657e204767872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03aedaf522924266b0951ec189e96fb3f83c142c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593023"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433660"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine-Aktivitätsdesigner
 
@@ -27,21 +29,21 @@ Die <xref:System.Activities.Statements.WriteLine>-Aktivität schreibt Text in ei
 
 ### <a name="using-the-writeline-activity-designer"></a>Verwenden des WriteLine-Aktivitätsdesigners
 
-Greifen Sie in der Kategorie **primitive** der **Toolbox**auf den **Write** -Aktivität-Designer zu. Der **beschreibbare** Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence> . Daraufhin wird eine <xref:System.Activities.Statements.WriteLine>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert WriteLine erstellt. Das- <xref:System.Activities.Activity.DisplayName%2A> Objekt kann in der Kopfzeile des **Write** -Aktivität-Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
+Greifen Sie in der Kategorie **primitive** der **Toolbox** auf den **Write** -Aktivität-Designer zu. Der **beschreibbare** Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence> . Daraufhin wird eine <xref:System.Activities.Statements.WriteLine>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert WriteLine erstellt. Das- <xref:System.Activities.Activity.DisplayName%2A> Objekt kann in der Kopfzeile des **Write** -Aktivität-Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
 
 ### <a name="the-writeline-properties"></a>Die WriteLine-Eigenschaften
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.WriteLine>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster bearbeitet werden, und einige von Ihnen können auf Workflow-Designer Oberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verbrauch|
+|Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der Anzeigename der <xref:System.Activities.Statements.WriteLine>-Aktivität. Der Standardwert lautet WriteLine. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|Falsch|Der zu schreibende Text. Um die-Eigenschaft festzulegen, geben Sie im **Textfeld** im **Schreib** Weise-Aktivitäts Designer oder im Eigenschaften Raster einen Visual Basic Ausdruck ein.|
-|<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|Falsch|Die <xref:System.IO.TextWriter>-Instanz, an die die <xref:System.Activities.Statements.WriteLine>-Aktivität den <xref:System.Activities.Statements.WriteLine.Text%2A>-Text ausgibt. Der Standardwert ist die Konsole.|
+|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der Anzeigename der <xref:System.Activities.Statements.WriteLine>-Aktivität. Der Standardwert lautet WriteLine. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|FALSE|Der zu schreibende Text. Um die-Eigenschaft festzulegen, geben Sie im **Textfeld** im **Schreib** Weise-Aktivitäts Designer oder im Eigenschaften Raster einen Visual Basic Ausdruck ein.|
+|<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|FALSE|Die <xref:System.IO.TextWriter>-Instanz, an die die <xref:System.Activities.Statements.WriteLine>-Aktivität den <xref:System.Activities.Statements.WriteLine.Text%2A>-Text ausgibt. Der Standardwert ist die Konsole.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Grundtypen](../workflow-designer/primitives-activity-designers.md)
+- [Primitive](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Verzögern](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

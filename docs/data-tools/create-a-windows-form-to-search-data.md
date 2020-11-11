@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Windows Forms zum Suchen von Daten
+description: Hier finden Sie ein Beispiel zum Erstellen eines Windows Forms zum Durchsuchen von Daten. Erstellen Sie die Windows Form-Anwendung, die Datenquelle und das Formular. Parametrisierung hinzufügen. Testen der App.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586808"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435286"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Erstellen eines Windows Forms zum Suchen von Daten
 
@@ -47,11 +49,11 @@ In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranscha
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
-1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer** können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
-    1. Öffnen Sie in Visual Studio das Fenster **SQL Server-Objekt-Explorer** . (SQL Server-Objekt-Explorer wird als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** im **Visual Studio-Installer**installiert.) Erweitern Sie den Knoten **SQL Server** . Klicken Sie mit der rechten Maustaste auf die localdb-Instanz, und wählen Sie **neue Abfrage**.
+    1. Öffnen Sie in Visual Studio das Fenster **SQL Server-Objekt-Explorer** . (SQL Server-Objekt-Explorer wird als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** im **Visual Studio-Installer** installiert.) Erweitern Sie den Knoten **SQL Server** . Klicken Sie mit der rechten Maustaste auf die localdb-Instanz, und wählen Sie **neue Abfrage**.
 
        Ein Abfrage-Editor-Fenster wird geöffnet.
 
@@ -79,7 +81,7 @@ Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei w
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+    - Klicken Sie auf **Neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
 5. Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.
 
@@ -89,7 +91,7 @@ Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei w
 
 8. Wählen Sie die Tabelle **Customers** aus, und klicken Sie anschließend auf **Fertig stellen**.
 
-     **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers**-Tabelle wird im **Datenquellenfenster** angezeigt.
+     **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers** -Tabelle wird im **Datenquellenfenster** angezeigt.
 
 ## <a name="create-the-form"></a> Erstellen eines Formulars
 
@@ -123,7 +125,7 @@ Mit dem Dialogfeld **Suchkriterien** -Generator können Sie der ursprünglichen 
     > [!NOTE]
     > Zugriffs-und OLE DB Datenquellen verwenden das Fragezeichen ('? ') zum Angeben von Parametern, sodass die WHERE-Klausel wie folgt aussieht: `WHERE City = ?` .
 
-4. Klicken Sie auf **OK**, um das Dialogfeld **Suchkriterien-Generator** zu schließen.
+4. Klicken Sie auf **OK** , um das Dialogfeld **Suchkriterien-Generator** zu schließen.
 
      Dem Formular wird ein **FillByCityToolStrip** hinzugefügt.
 
@@ -131,7 +133,7 @@ Mit dem Dialogfeld **Suchkriterien** -Generator können Sie der ursprünglichen 
 
 Wenn Sie die Anwendung ausführen, wird das Formular geöffnet, und der Parameter wird als Eingabe bereit genommen:
 
-1. Drücken Sie **F5**, um die Anwendung auszuführen.
+1. Drücken Sie **F5** , um die Anwendung auszuführen.
 
 2. Geben Sie **London** in das Textfeld **City** ein, und klicken Sie dann auf **FillByCity**.
 
@@ -145,6 +147,6 @@ Je nach den Anforderungen der Anwendung können nach dem Erstellen eines paramet
 
 - Hinzufügen oder Entfernen von Datenbankobjekten aus dem Dataset durch Bearbeiten. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen
+description: Weitere Informationen finden Sie unter Erstellen von Nachschlage Tabellen in Windows Forms Anwendungen. In einer Nachschlage Tabelle werden Steuerelemente beschrieben, die an zwei verknüpfte Datentabellen gebunden sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282656"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435194"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Erstellen von Nachschlagetabellen in Windows Forms-Anwendungen
 
@@ -24,11 +26,11 @@ Die Begriff *Nachschlagetabelle* bezeichnet Steuerelemente, die an zwei zusammen
 
 Sie können Nachschlage Tabellen erstellen, indem Sie den Haupt Knoten einer übergeordneten Tabelle (aus dem [Datenquellen Fenster](add-new-data-sources.md#data-sources-window)) auf ein Steuerelement auf dem Formular ziehen, das bereits an die Spalte in der zugehörigen untergeordneten Tabelle gebunden ist.
 
-Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in der Tabelle `Orders` enthält eine `CustomerID`, die angibt, welcher Kunde den Auftrag erteilt hat. Die `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendatensatz in der Tabelle `Customers` zeigt. In diesem Szenario erweitern Sie die `Orders` Tabelle im **Datenquellen** Fenster und legen den Haupt Knoten auf **Details**fest. Legen `CustomerID` Sie dann für die Spalte die Verwendung eines <xref:System.Windows.Forms.ComboBox> (oder eines beliebigen anderen Steuer Elements, das die Such Bindung unterstützt) fest, und ziehen `Orders` Sie den Knoten auf das Formular. Ziehen Sie schließlich den `Customers` Knoten auf das Steuerelement, das an die zugehörige Spalte gebunden ist – in diesem Fall die <xref:System.Windows.Forms.ComboBox> an die `CustomerID` Spalte gebundene.
+Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in der Tabelle `Orders` enthält eine `CustomerID`, die angibt, welcher Kunde den Auftrag erteilt hat. Die `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendatensatz in der Tabelle `Customers` zeigt. In diesem Szenario erweitern Sie die `Orders` Tabelle im **Datenquellen** Fenster und legen den Haupt Knoten auf **Details** fest. Legen `CustomerID` Sie dann für die Spalte die Verwendung eines <xref:System.Windows.Forms.ComboBox> (oder eines beliebigen anderen Steuer Elements, das die Such Bindung unterstützt) fest, und ziehen `Orders` Sie den Knoten auf das Formular. Ziehen Sie schließlich den `Customers` Knoten auf das Steuerelement, das an die zugehörige Spalte gebunden ist – in diesem Fall die <xref:System.Windows.Forms.ComboBox> an die `CustomerID` Spalte gebundene.
 
 ## <a name="to-databind-a-lookup-control"></a>So stellen Sie die Datenbindung für ein Nachschlagesteuerelement her
 
-1. Öffnen Sie das Fenster **Datenquellen** , während das Projekt geöffnet ist **View**, indem Sie  >  **andere Windows**-  >  **Datenquellen**anzeigen auswählen.
+1. Öffnen Sie das Fenster **Datenquellen** , während das Projekt geöffnet ist **View** , indem Sie  >  **andere Windows** -  >  **Datenquellen** anzeigen auswählen.
 
     > [!NOTE]
     > Für Nachschlagetabellen ist es erforderlich, dass zwei zusammengehörige Tabellen oder Objekte im **Datenquellenfenster** verfügbar sind. Weitere Informationen finden Sie unter [Beziehungen in Datasets](relationships-in-datasets.md).
@@ -38,7 +40,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
     > [!NOTE]
     > Der Knoten der untergeordneten Tabelle ist der Knoten, der in der übergeordneten Tabelle als ein erweiterbarer untergeordneter Knoten angezeigt wird.
 
-3. Ändern Sie den Ablagetyp auf **Details**, indem Sie am Knoten der untergeordneten Tabelle in der Steuerelementliste die Option **Details** auswählen. Weitere Informationen finden Sie unter [Festlegen des Steuer Elements, das beim Ziehen aus dem Datenquellen Fenster erstellt wird](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+3. Ändern Sie den Ablagetyp auf **Details** , indem Sie am Knoten der untergeordneten Tabelle in der Steuerelementliste die Option **Details** auswählen. Weitere Informationen finden Sie unter [Festlegen des Steuer Elements, das beim Ziehen aus dem Datenquellen Fenster erstellt wird](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 4. Suchen Sie den Knoten, der die beiden Tabellen verknüpft (der `CustomerID` Knoten im vorherigen Beispiel). Ändern Sie den Ablagetyp in ein, indem Sie in <xref:System.Windows.Forms.ComboBox> der Steuerelement Liste die Option **ComboBox** auswählen.
 
@@ -57,6 +59,6 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
     |**ValueMember**|Visual Studio legt diese Eigenschaft auf die erste Spalte im Primärschlüssel bzw. – wenn kein Schlüssel definiert ist – auf die erste Spalte in der Tabelle fest.<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie diese auf den Primärschlüssel in der Tabelle mit der Spalte fest, die Sie anzeigen möchten.|
     |**SelectedValue**|Visual Studio legt diese Eigenschaft auf die ursprüngliche, aus dem **Datenquellenfenster** gezogene und abgelegte Spalte fest.<br /><br /> Wenn Sie eine Anpassung vornehmen müssen, legen Sie diese auf die Fremdschlüssel Spalte in der zugehörigen Tabelle fest.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

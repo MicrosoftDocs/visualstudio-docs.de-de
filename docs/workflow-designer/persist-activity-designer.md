@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-persistenzdesigner
+description: Erfahren Sie mehr über die Persistenz-Aktivität und wie Sie den persistenzaktivitäts-Designer zum Erstellen und Konfigurieren einer persistenten Aktivität verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75236d7955cba6b8c62b9a4504f02c66cebe4062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daa7cef76d2448cc7bcda66a967a3406bb2352c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114765"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435572"
 ---
 # <a name="persist-activity-designer"></a>Persist-Aktivitätsdesigners
 
@@ -27,7 +29,7 @@ Wenn möglich, speichert die <xref:System.Activities.Statements.Persist>-Aktivit
 
 ### <a name="using-the-persist-activity-designer"></a>Verwenden des Persist-Aktivitätsdesigners
 
-Der **Persist** persistenzaktivitätsdesigner befindet sich in der Kategorie **Laufzeit** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf die Registerkarte **Toolbox** klicken (Sie können auch im Menü **Ansicht** den Befehl **Toolbox** auswählen oder STRG + ALT + X drücken).
+Der **Persist** persistenzaktivitätsdesigner befindet sich in der Kategorie **Laufzeit** der **Toolbox** , auf die Sie zugreifen können, indem Sie auf die Registerkarte **Toolbox** klicken (Sie können auch im Menü **Ansicht** den Befehl **Toolbox** auswählen oder STRG + ALT + X drücken).
 
 Der **Persist** persistenzaktivitätsdesigner kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence> . Dadurch wird eine- <xref:System.Activities.Statements.Persist> Aktivität mit dem **Display Name** -Standardwert persistent erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> kann in der Kopfzeile des persistenten **Persist** Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
 
@@ -37,9 +39,9 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Persist>-
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.Persist>-Aktivität. Der Standardwert lautet Persist. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der Anzeigename der <xref:System.Activities.Statements.Persist>-Aktivität. Der Standardwert lautet Persist. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

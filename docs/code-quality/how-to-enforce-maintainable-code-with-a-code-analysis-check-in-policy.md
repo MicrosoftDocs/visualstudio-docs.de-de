@@ -1,6 +1,8 @@
 ---
 title: Verwenden einer Eincheck Richtlinie für die Code Analyse
 ms.date: 11/04/2016
+description: Erfahren Sie, wie Sie eine Eincheck Richtlinie für die Code Analyse verwenden, um zu überprüfen, ob der Code den Vererbung, Klassen Kopplung, Wartbarkeit und Komplexitäts Standards entspricht.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371858"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434817"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Gewusst wie: Erzwingen von wart barem Code mit einer Eincheck Richtlinie für die Code Analyse
 
@@ -27,7 +29,7 @@ Administratoren der Versionskontrolle für Team Foundation können den Check-in-
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>So öffnen Sie den Code Analyse Richtlinien-Editor
 
-1. Klicken Sie in **Team Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Projekteinstellungen**und dann auf **Quell**Code Verwaltung.
+1. Klicken Sie in **Team Explorer** mit der rechten Maustaste auf das Projekt, klicken Sie auf **Projekteinstellungen** und dann auf **Quell** Code Verwaltung.
 
      Das Dialogfeld **Quell** Code Verwaltung wird angezeigt.
 
@@ -41,7 +43,7 @@ Administratoren der Versionskontrolle für Team Foundation können den Check-in-
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>So aktivieren Sie die wart barkeits Regeln für die Code Analyse
 
-1. Erweitern Sie im Dialogfeld Editor für die **Code Analyse Richtlinien** unter **Regel Einstellungen**den Knoten **wart barkeits Regeln** .
+1. Erweitern Sie im Dialogfeld Editor für die **Code Analyse Richtlinien** unter **Regel Einstellungen** den Knoten **wart barkeits Regeln** .
 
 2. Aktivieren Sie die Kontrollkästchen für die folgenden Regeln:
 
@@ -57,7 +59,7 @@ Administratoren der Versionskontrolle für Team Foundation können den Check-in-
 
 3. Klicken Sie auf **OK**. Die neue Eincheck Richtlinie gilt jetzt für künftige Eincheck Vorgänge.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)
 - [Erstellen und Verwenden von Eincheck Richtlinien für die Code Analyse](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

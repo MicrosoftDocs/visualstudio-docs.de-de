@@ -1,5 +1,7 @@
 ---
 title: Dialog Feld ' .NET-Typ Workflow-Designer durchsuchen und auswählen
+description: Erfahren Sie, wie Sie das Dialogfeld .NET-Typ suchen und auswählen verwenden können, um einen Typ aus einer Strukturansicht von Assemblys und Projekten auszuwählen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597112"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438177"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 
@@ -39,7 +41,7 @@ Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem ei
 
 1. Geben Sie im Feld **Typname** den Namen des Typs ein, den Sie verwenden möchten.
 
-2. Führen Sie eines der folgenden Verfahren aus:
+2. Führen Sie einen der folgenden Schritte aus:
 
     - Sobald der Name des Typs, den Sie verwenden möchten, in der Struktur im Feld **Typname** angezeigt wird, doppelklicken Sie auf den Typ, um ihn auszuwählen.
 
@@ -55,7 +57,7 @@ Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem ei
 
 ## <a name="types-displayed-in-the-type-browser"></a>Typen, die im Typbrowser angezeigt werden
 
-Welche Typen im Typbrowser angezeigt werden, hängt davon ab, wie der Typbrowser aufgerufen wurde. Wenn der Typbrowser von einem Workflow Projekt in **VS2010**gestartet wurde, werden standardmäßig alle Typen in den Assemblys, auf die verwiesen wird, und referenzierte Projekte angezeigt. Wenn der Typbrowser von außerhalb eines **VS2010** -Projekt Systems gestartet wurde (z. b. in einer neu gehosteten Workflow Anwendung oder in einer eigenständigen Workflow Datei), werden standardmäßig die Typen aus allen in der AppDomain geladenen Assemblys angezeigt.
+Welche Typen im Typbrowser angezeigt werden, hängt davon ab, wie der Typbrowser aufgerufen wurde. Wenn der Typbrowser von einem Workflow Projekt in **VS2010** gestartet wurde, werden standardmäßig alle Typen in den Assemblys, auf die verwiesen wird, und referenzierte Projekte angezeigt. Wenn der Typbrowser von außerhalb eines **VS2010** -Projekt Systems gestartet wurde (z. b. in einer neu gehosteten Workflow Anwendung oder in einer eigenständigen Workflow Datei), werden standardmäßig die Typen aus allen in der AppDomain geladenen Assemblys angezeigt.
 
 Die Typen im Typbrowser können von den Aktivitätsdesignerentwicklern gefiltert werden. Für jede gegebene Aktivität wird möglicherweise nur eine Teilmenge der Typen angezeigt. Zum Beispiel werden in der <xref:System.Activities.Statements.TryCatch>-Aktivität nur die Typen, die von <xref:System.Exception> abgeleitet sind, im Typbrowser angezeigt.
 
@@ -73,6 +75,6 @@ Beispiel:
 
 Beim Auswählen eines Dienstvertragstyps zeigt der Typbrowser nur Typen an, die über das <xref:System.ServiceModel.ServiceContractAttribute>-Attribut verfügen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden der Aktivitätsdesigner](control-flow-activity-designers.md)

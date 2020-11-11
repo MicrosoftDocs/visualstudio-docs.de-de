@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-Kompensierungs Aktivitäts Designer
+description: Erfahren Sie mehr über den Kompensierungs Aktivitäts Designer und wie Sie den Kompensierungs Aktivitäts Designer verwenden können, um eine Kompensierungs Aktivität zu erstellen und zu konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5332b6d9ec087f4e1b127d93563dc0f2fe5fdd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876150"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434323"
 ---
 # <a name="compensate-activity-designer"></a>Compensate-Aktivitätsdesigner
 
@@ -29,7 +31,7 @@ Das vom <xref:System.Activities.Statements.CompensationToken> angegebene <xref:S
 
 ### <a name="using-the-compensate-activity-designer"></a>Verwenden des Compensate-Aktivitätsdesigners
 
-Der **Kompensierungs** Aktivitäts Designer befindet sich in der Kategorie **Transaktion** der **Toolbox**. Um die **Toolbox**zu öffnen, wählen Sie die Registerkarte **Toolbox** auf der linken Seite des Workflow-Designer aus. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X**drücken.
+Der **Kompensierungs** Aktivitäts Designer befindet sich in der Kategorie **Transaktion** der **Toolbox**. Um die **Toolbox** zu öffnen, wählen Sie die Registerkarte **Toolbox** auf der linken Seite des Workflow-Designer aus. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X** drücken.
 
 Der **Kompensierungs** Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence> . Beim Löschen des Aktivitäts Designers wird eine- <xref:System.Activities.Statements.Compensate> Aktivität mit dem Standardwert "kompensieren" erstellt <xref:System.Activities.Activity.DisplayName%2A> . Der <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des **Kompensierungs** Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
 
@@ -37,15 +39,15 @@ Der **Kompensierungs** Aktivitäts Designer kann aus der **Toolbox** gezogen und
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.CancellationScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Die- <xref:System.Activities.Activity.DisplayName%2A> Eigenschaft kann im Eigenschaften Raster oder auf Workflow-Designer-Oberfläche bearbeitet werden. Bearbeiten Sie die- <xref:System.Activities.Statements.Compensate.Target%2A> Eigenschaft im Eigenschaften Raster.
 
-|Eigenschaftenname|Erforderlich|Verbrauch|
+|Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Compensate>-Aktivität an. Der Standardwert lautet Compensate.|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|Richtig|Gibt das <xref:System.Activities.InArgument%601>-Argument an, welches das <xref:System.Activities.Statements.CompensationToken>-Token für diese <xref:System.Activities.Statements.Compensate>-Aktivität enthält.|
+|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Compensate>-Aktivität an. Der Standardwert lautet Compensate.|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|Wahr|Gibt das <xref:System.Activities.InArgument%601>-Argument an, welches das <xref:System.Activities.Statements.CompensationToken>-Token für diese <xref:System.Activities.Statements.Compensate>-Aktivität enthält.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Transaktion](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate-Aktivitätsdesigner](../workflow-designer/compensate-activity-designer.md)
-- [Bekräftigen](../workflow-designer/confirm-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

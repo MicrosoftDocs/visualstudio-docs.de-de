@@ -1,5 +1,7 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Hinzufügen von Aktivitäten zur Toolbox'
+description: Fügen Sie der Toolbox in der Projekt Mappe Aktivitäten hinzu, indem Sie Sie aus dem aktuellen Projekt hinzufügen oder von einem anderen Projekt aus auf Sie verweisen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815824"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437943"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Gewusst wie: Hinzufügen von Aktivitäten zur Toolbox
 
@@ -46,18 +48,18 @@ Aktivitäten können auf verschiedene Arten der **Toolbox** in der Projekt Mappe
 
 1. Öffnen Sie eine Workflowprojektmappe.
 
-2. Wählen Sie **im Menü** Extras die Option **Toolbox Elemente**auswählen aus.
+2. Wählen Sie **im Menü** Extras die Option **Toolbox Elemente** auswählen aus.
 
 3. Wählen Sie im Dialogfeld **Toolbox Elemente auswählen** die Registerkarte **System. Activities-Komponenten** aus, und klicken Sie dann auf **Durchsuchen** , um zu der Assembly mit der benutzerdefinierten Aktivität zu navigieren, die Sie hinzufügen möchten.
 
 4. Wählen Sie die Assembly aus, und klicken Sie auf **OK**. Die benutzerdefinierte Aktivitätskomponente wird der Liste der Komponenten hinzugefügt und automatisch ausgewählt.
 
-    1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
+    1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
 
 5. Um die Toolbox anzuzeigen, wählen Sie im Menü **Ansicht** die Option **Toolbox** aus.
 
 6. Die benutzerdefinierte Aktivität wird in der **Toolbox** unter der Kategorie angezeigt, die sich vor dem Hinzufügen des Elements im Fokus befand. Wenn z. b. die Kategorie **Allgemein** in der **Toolbox** vor dem Hinzufügen des Toolbox Elements ausgewählt wurde, wird die Aktivität unter der Kategorie **Allgemein** angezeigt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden des Workflow-Designers](developing-applications-with-the-workflow-designer.md)

@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-Shellfunktionen
+description: Erfahren Sie, wie die Workflow-Designer Shellfeatures eine Reihe von Schaltflächen zum Verwalten der aktuellen Ansicht enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6b192eae3340c6a3d84bb3ccbcce7cbf8d65b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239a879fbffe67bf54149ba29e98edcd3428410d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816383"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433647"
 ---
 # <a name="workflow-designer-shell-features"></a>Workflow-Designer-Shellfunktionen
 
@@ -33,7 +35,7 @@ Workflow-Designer besteht aus drei Hauptbereichen der Benutzeroberfläche: der D
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopieren und Speichern von Workflows als Bilder
  Workflows können im Bitmapformat kopiert und im Bitmap- oder Vektorformat gespeichert werden. Das Kopieren bzw. Speichern eines Bilds bietet die Möglichkeit, eine Ansicht der gesamten Aktivität des aktuellen Breadcrumb-Stamms in ein anderes Programm zu exportieren, einschließlich aller untergeordneten Elemente und zugehörigen erweiterten untergeordneten Elemente.
 
- Zum Kopieren als Bild klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Designer, und wählen Sie **als Bild kopieren**aus. Zum Speichern als Bild klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Designer, und wählen Sie **als Bild speichern**aus. Workflows können in den Formaten JPG, PNG, GIF und XPS gespeichert werden. Das Format wird im Dialogfeld **Speichern** unter im Dropdown-Listenfeld **Dateityp:** am unteren Rand des Fensters ausgewählt.
+ Zum Kopieren als Bild klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Designer, und wählen Sie **als Bild kopieren** aus. Zum Speichern als Bild klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Designer, und wählen Sie **als Bild speichern** aus. Workflows können in den Formaten JPG, PNG, GIF und XPS gespeichert werden. Das Format wird im Dialogfeld **Speichern** unter im Dropdown-Listenfeld **Dateityp:** am unteren Rand des Fensters ausgewählt.
 
 ## <a name="fonts-and-colors"></a>Schriftarten und Farben
 

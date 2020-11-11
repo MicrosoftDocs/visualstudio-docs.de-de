@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst'
+description: Verbinden Sie Ihre APP mit Daten, die von einem Dienst zurückgegeben werden, indem Sie den Assistenten zum Konfigurieren von Datenquellen ausführen und auf der Seite Daten Quellentyp auswählen die Option Dienst auswählen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b49840a2190abfd223edf5643b8d70da1a59d6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282227"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435012"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst
 
@@ -57,7 +59,7 @@ Nach Abschluss des Assistenten wird dem Projekt ein Dienst Verweis hinzugefügt,
 
 Wenn Sie der Anwendung Funktionen hinzufügen möchten, wählen Sie im Fenster **Datenquellen** ein Element aus, und ziehen Sie es auf ein Formular, um gebundene Steuerelemente zu erstellen. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von WPF-Steuerelementen an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
 - [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

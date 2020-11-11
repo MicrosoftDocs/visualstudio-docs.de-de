@@ -1,5 +1,7 @@
 ---
 title: Datasettools
+description: Überprüfen Sie die in Visual Studio verfügbaren DataSet-Tools. Weitere Informationen finden Sie unter datasetworkflow, Datasets und N-Ebenen-Architektur sowie Datasets und XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
@@ -47,12 +49,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586717"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436484"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
 
@@ -95,6 +97,6 @@ Informationen zu Datasets in n-Tier-Anwendungen finden Sie unter [Arbeiten mit D
 
 Informationen zum Umstellen von Datasets in und aus XML finden [Sie unter Lesen von XML-Daten in ein DataSet](../data-tools/read-xml-data-into-a-dataset.md) und [Speichern eines Datasets als XML](../data-tools/save-a-dataset-as-xml.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

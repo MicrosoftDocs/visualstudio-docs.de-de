@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Speichern von Daten mithilfe einer Transaktion'
+description: Informieren Sie sich über das Speichern von Daten mithilfe einer Transaktion mit datasettools in Visual Studio. Sie speichern Daten in einer Transaktion, indem Sie den System. Transactions-Namespace verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281694"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434583"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Vorgehensweise: Speichern von Daten mithilfe einer Transaktion
 
@@ -39,7 +41,7 @@ Um ein Rollback für die Transaktion auszuführen, lösen Sie eine Ausnahme aus,
 
 1. Wählen Sie im Menü **Projekt** die Option **Verweis hinzufügen** aus.
 
-2. Wählen Sie auf der Registerkarte **.net** (Registerkarte**SQL Server** für SQL Server Projekte) die Option **System. Transactions**aus, und klicken Sie dann auf **OK**.
+2. Wählen Sie auf der Registerkarte **.net** (Registerkarte **SQL Server** für SQL Server Projekte) die Option **System. Transactions** aus, und klicken Sie dann auf **OK**.
 
      Ein Verweis auf *System.Transactions.dll* wird dem Projekt hinzugefügt.
 

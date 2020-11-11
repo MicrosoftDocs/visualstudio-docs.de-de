@@ -1,5 +1,7 @@
 ---
 title: Machine Activity-Designer für Workflow-Designer
+description: Erfahren Sie mehr über die vom System bereitgestellten Aktivitäts Designer, die Sie zum Erstellen und Verwalten von Zustandsautomatworkflows verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 253a634e095bc98311ffb837f4a28949f51b9ad2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876059"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433959"
 ---
 # <a name="state-machine-activity-designers"></a>Zustandsautomatenaktivitäts-Designer
 
@@ -41,7 +43,7 @@ Workflow-Designer enthält eine Reihe von Aktivitäts Designern, die Sie beim Er
 
  [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
- [Grundtypen](../workflow-designer/primitives-activity-designers.md)
+ [Primitive](../workflow-designer/primitives-activity-designers.md)
 
  [Transaktion](../workflow-designer/transaction-activity-designers.md)
 

@@ -1,5 +1,7 @@
 ---
 title: Bearbeiten von Daten in Datasets
+description: Erfahren Sie, wie Sie Daten in Datasets bearbeiten. Sie erfahren, wie Sie datasetzeilen bearbeiten, neue Zeilen in ein DataSet einfügen, ermitteln, ob geänderte Zeilen vorhanden sind, und Zeilen mit Fehlern suchen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe59b30e9af7ee1d98c0aba65339af1d53cba8fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282461"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435090"
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in Datasets
 Sie bearbeiten Daten in Datentabellen, ähnlich wie Sie die Daten in einer Tabelle in einer beliebigen Datenbank bearbeiten. Der Prozess kann das Einfügen, aktualisieren und Löschen von Datensätzen in der Tabelle umfassen. In einem Daten gebundenen Formular können Sie angeben, welche Felder vom Benutzer bearbeitet werden können. In diesen Fällen verarbeitet die Daten Bindungs Infrastruktur die gesamte Änderungs Nachverfolgung, sodass die Änderungen später wieder an die Datenbank gesendet werden können. Wenn Sie Programm gesteuert Änderungen an Daten vornehmen und diese Änderungen an die Datenbank zurücksenden möchten, müssen Sie die Objekte und Methoden verwenden, die die Änderungs Nachverfolgung für Sie ausführen.
@@ -107,6 +109,6 @@ Beim Arbeiten mit einzelnen Spalten und Daten Zeilen können Fehler auftreten. S
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

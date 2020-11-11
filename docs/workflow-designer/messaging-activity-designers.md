@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-Messaging-Aktivitäts Designer
+description: Erfahren Sie, wie Sie mithilfe von Messaging Aktivitäts Designern Messaging Aktivitäten erstellen und konfigurieren, die Windows Communication Foundation (WCF)-Nachrichten senden und empfangen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e82e4cd9f539dea5d0683999413a8371a442a13
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876189"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435650"
 ---
 # <a name="messaging-activity-designers"></a>Aktivitäts-Designer für Messaging
 
@@ -47,7 +49,7 @@ Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folge
 
 - [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
-- [Grundtypen](../workflow-designer/primitives-activity-designers.md)
+- [Primitive](../workflow-designer/primitives-activity-designers.md)
 
 - [Transaktion](../workflow-designer/transaction-activity-designers.md)
 

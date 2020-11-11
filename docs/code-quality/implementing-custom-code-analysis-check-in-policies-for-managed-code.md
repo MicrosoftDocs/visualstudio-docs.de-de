@@ -1,6 +1,8 @@
 ---
 title: Eincheck Richtlinien für benutzerdefinierte Code Analyse für verwalteten Code
 ms.date: 11/04/2016
+description: Erfahren Sie, wie Sie eine angepasste Eincheck Richtlinie für die Code Analyse erstellen. Erfahren Sie, wie Sie sicherstellen, dass verwalteter Code von Visual Studio einer Azure devops-Projekt Richtlinie entspricht.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1404386445d24284a2231ed557a65568fdb1ba2b
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928016"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435423"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 
@@ -38,15 +40,15 @@ Um einen benutzerdefinierten Regelsatz für ein Azure devops-Projekt zu erstelle
 
 ### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>So erstellen Sie den Versions Kontroll Ordner für den Eincheck Richtlinien-Regelsatz
 
-1. Erweitern Sie in Team Explorer den Projekt Knoten, und klicken Sie dann auf **Quell**Code Verwaltung.
+1. Erweitern Sie in Team Explorer den Projekt Knoten, und klicken Sie dann auf **Quell** Code Verwaltung.
 
 2. Klicken Sie im **Ordner** Bereich mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **neuer Ordner**.
 
-3. Klicken Sie im Hauptbereich der Quell Code Verwaltung mit der rechten Maustaste auf **neuer Ordner**, klicken Sie auf **Umbenennen**, und geben Sie einen Namen für den Regelsatz Ordner ein.
+3. Klicken Sie im Hauptbereich der Quell Code Verwaltung mit der rechten Maustaste auf **neuer Ordner** , klicken Sie auf **Umbenennen** , und geben Sie einen Namen für den Regelsatz Ordner ein.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>So erstellen Sie einen Eincheck Richtlinien-Regelsatz
 
-1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Datei**.
+1. Zeigen Sie im Menü **Datei** auf **Neu** , und klicken Sie dann auf **Datei**.
 
 2. Klicken Sie in der Liste **Kategorien** auf **Allgemein**.
 
@@ -56,11 +58,11 @@ Um einen benutzerdefinierten Regelsatz für ein Azure devops-Projekt zu erstelle
 
 ### <a name="to-add-the-rule-set-file-to-version-control"></a>So fügen Sie die Regel Satz Datei zur Versionskontrolle hinzu
 
-1. Klicken Sie in **Quellcodeverwaltungs-Explorer**mit der rechten Maustaste auf den neuen Ordner, und klicken Sie dann **auf Elemente zum Ordner hinzufügen**.
+1. Klicken Sie in **Quellcodeverwaltungs-Explorer** mit der rechten Maustaste auf den neuen Ordner, und klicken Sie dann **auf Elemente zum Ordner hinzufügen**.
 
      Weitere Informationen finden Sie unter [git und Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true).
 
-2. Klicken Sie auf die Regel Satz Datei, die Sie erstellt haben, und klicken Sie auf **Fertig**stellen.
+2. Klicken Sie auf die Regel Satz Datei, die Sie erstellt haben, und klicken Sie auf **Fertig** stellen.
 
      Die Datei wird der Quell Code Verwaltung hinzugefügt und an Sie ausgecheckt.
 
@@ -69,15 +71,15 @@ Um einen benutzerdefinierten Regelsatz für ein Azure devops-Projekt zu erstelle
 4. Im Dialogfeld **Einchecken** haben Sie die Möglichkeit, einen Kommentar hinzuzufügen, und klicken Sie dann auf **Einchecken**.
 
     > [!NOTE]
-    > Wenn Sie bereits eine Eincheck Richtlinie für die Code Analyse für das Azure devops-Projekt konfiguriert haben und das Eincheck Element erzwingen ausgewählt haben, **um nur Dateien zu enthalten, die Teil der aktuellen**Projekt Mappe sind, wird eine Warnung zu einem Richtlinien Fehler ausgegeben. Wählen Sie im Dialogfeld Richtlinien Fehler die Option **Richtlinien Fehler außer Kraft setzen und Eincheck Vorgang fortsetzen aus**. Fügen Sie einen erforderlichen Kommentar hinzu, und klicken Sie dann auf **OK**.
+    > Wenn Sie bereits eine Eincheck Richtlinie für die Code Analyse für das Azure devops-Projekt konfiguriert haben und das Eincheck Element erzwingen ausgewählt haben, **um nur Dateien zu enthalten, die Teil der aktuellen** Projekt Mappe sind, wird eine Warnung zu einem Richtlinien Fehler ausgegeben. Wählen Sie im Dialogfeld Richtlinien Fehler die Option **Richtlinien Fehler außer Kraft setzen und Eincheck Vorgang fortsetzen aus**. Fügen Sie einen erforderlichen Kommentar hinzu, und klicken Sie dann auf **OK**.
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>So geben Sie die Regel Satz Datei als Check-in-Richtlinie an
 
-1. Zeigen Sie im Menü **Team** auf **Projekteinstellungen**, und klicken Sie dann auf **Quell**Code Verwaltung.
+1. Zeigen Sie im Menü **Team** auf **Projekteinstellungen** , und klicken Sie dann auf **Quell** Code Verwaltung.
 
-2. Klicken Sie auf **Eincheck Richtlinie**, und klicken Sie dann auf **Hinzufügen**.
+2. Klicken Sie auf **Eincheck Richtlinie** , und klicken Sie dann auf **Hinzufügen**.
 
-3. Doppelklicken Sie in der Liste **Eincheck Richtlinie** auf **Code Analyse**, und stellen Sie sicher, dass das Kontrollkästchen **Code Analyse für verwalteten Code erzwingen** aktiviert ist.
+3. Doppelklicken Sie in der Liste **Eincheck Richtlinie** auf **Code Analyse** , und stellen Sie sicher, dass das Kontrollkästchen **Code Analyse für verwalteten Code erzwingen** aktiviert ist.
 
 4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Select Rule Set from Source Control>** .
 
@@ -88,7 +90,7 @@ Um einen benutzerdefinierten Regelsatz für ein Azure devops-Projekt zu erstelle
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > Sie können den Pfad mithilfe eines der folgenden Verfahren in **Quellcodeverwaltungs-Explorer**kopieren:
+    > Sie können den Pfad mithilfe eines der folgenden Verfahren in **Quellcodeverwaltungs-Explorer** kopieren:
 
     - Klicken Sie im **Ordner** Bereich auf den Ordner, der die Regel Satz Datei enthält. Kopieren Sie den Versions Kontroll Pfad des Ordners, der im Feld **Quelle** angezeigt wird, und geben Sie den Namen der Regel Satz Datei manuell ein.
 
@@ -102,9 +104,9 @@ Sie geben eine Richtlinien Regel für den Projekt Eincheck Vorgang als Code Anal
 
 1. Rufen Sie ggf. den Regel Satz Ordner und die Datei der Check-in-Richtlinie aus der Versionskontrolle ab.
 
-   Sie können diesen Schritt in **Quellcodeverwaltungs-Explorer** ausführen, indem Sie mit der rechten Maustaste auf den Ordner Regel Satz und dann auf **neueste Version erhalten**klicken.
+   Sie können diesen Schritt in **Quellcodeverwaltungs-Explorer** ausführen, indem Sie mit der rechten Maustaste auf den Ordner Regel Satz und dann auf **neueste Version erhalten** klicken.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
 
 3. **Klicken Sie auf Code Analyse**.
 

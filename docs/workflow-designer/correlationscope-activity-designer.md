@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-CorrelationScope-Aktivitäts Designer
+description: Erfahren Sie, wie Sie den CorrelationScope-Aktivitäts Designer verwenden können, um eine CorrelationScope-Aktivität zu erstellen und zu konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135acfbbaf9fdcbbf219fd50a504cf9262fe4d24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876098"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438112"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope-Aktivitätsdesigner
 
@@ -27,7 +29,7 @@ Die <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>-Eig
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Verwenden des CorrelationScope-Aktivitäts Designers
 
-Der **CorrelationScope** -Aktivitäts Designer befindet sich in der Kategorie **Messaging** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf der linken Seite der Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X**drücken.
+Der **CorrelationScope** -Aktivitäts Designer befindet sich in der Kategorie **Messaging** der **Toolbox** , auf die Sie zugreifen können, indem Sie auf der linken Seite der Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X** drücken.
 
 Der **CorrelationScope** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer Oberfläche abgelegt werden. Dadurch wird eine- <xref:System.ServiceModel.Activities.CorrelationScope> Aktivität mit dem **Display Name** -Standardwert von CorrelationScope erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> kann im Header des **CorrelationScope** -Aktivitäts Designers oder im Feld **Display Name** des **Eigenschaften** Fensters bearbeitet werden.
 
@@ -39,13 +41,13 @@ Die innerhalb der Korrelation enthaltenen Aktivitäten werden durch Löschen Ihr
 
 In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.CorrelationScope>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können entweder im **Eigenschaften** Fenster oder auf der Workflow-Designer Oberfläche und häufig in beiden geändert werden.
 
-|Eigenschaftenname|Erforderlich|Verbrauch|
+|Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der optionale Anzeigename der <xref:System.ServiceModel.Activities.InitializeCorrelation>-Aktivität.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|Falsch|Gibt das <xref:System.ServiceModel.Activities.CorrelationHandle>-Handle an, das zum Verwalten der untergeordneten Messagingaktivitäten verwendet wird. Wenn Sie diese Eigenschaft nicht festlegen, erstellt <xref:System.ServiceModel.Activities.CorrelationScope> automatisch einen impliziten <xref:System.ServiceModel.Activities.CorrelationHandle>.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|Falsch|Gibt die Aktivitäten im Bereich der Korrelation an.|
+|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der optionale Anzeigename der <xref:System.ServiceModel.Activities.InitializeCorrelation>-Aktivität.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|FALSE|Gibt das <xref:System.ServiceModel.Activities.CorrelationHandle>-Handle an, das zum Verwalten der untergeordneten Messagingaktivitäten verwendet wird. Wenn Sie diese Eigenschaft nicht festlegen, erstellt <xref:System.ServiceModel.Activities.CorrelationScope> automatisch einen impliziten <xref:System.ServiceModel.Activities.CorrelationHandle>.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|FALSE|Gibt die Aktivitäten im Bereich der Korrelation an.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [Medizinisch](../workflow-designer/receive-activity-designer.md)

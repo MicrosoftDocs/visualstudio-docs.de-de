@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Workflow Foundation-Projekts
+description: Erfahren Sie, wie Sie Bibliotheken und Anwendungen mit den in Visual Studio verfügbaren Projektvorlagen erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597073"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438099"
 ---
 # <a name="workflow-project-templates"></a>Workflow-Projektvorlagen
 
@@ -36,14 +38,14 @@ Visual Studio bietet vier verschiedene Workflow Projektvorlagen:
 
 Um auf diese Vorlagen zuzugreifen, installieren Sie zunächst die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Nachdem Sie die **Windows Workflow Foundation** Komponente installiert haben, wählen Sie **Datei**  >  **neu**  >  **Projekt**aus.
+1. Nachdem Sie die **Windows Workflow Foundation** Komponente installiert haben, wählen Sie **Datei**  >  **neu**  >  **Projekt** aus.
 
 1. Suchen Sie eine Workflow Projektvorlage, und wählen Sie Sie aus, z. b. die Vorlage **Workflow Konsolenanwendung** .
 
 1. Fahren Sie mit fort, um das Projekt zu erstellen.
 
    > [!NOTE]
-   > Wenn Sie einer vorhandenen Projekt Mappe ein neues Projekt hinzufügen möchten, öffnen Sie die Projekt Mappe in Visual Studio, klicken Sie mit der rechten Maustaste auf **Projektmappen-Explorer**, und wählen Sie **Add**  >  **Neues Projekt**hinzufügen aus.
+   > Wenn Sie einer vorhandenen Projekt Mappe ein neues Projekt hinzufügen möchten, öffnen Sie die Projekt Mappe in Visual Studio, klicken Sie mit der rechten Maustaste auf **Projektmappen-Explorer** , und wählen Sie **Add**  >  **Neues Projekt** hinzufügen aus.
 
 ## <a name="workflow-console-app"></a>Workflow Konsolen-App
 
@@ -69,7 +71,7 @@ Ein Beispiel für das Implementieren eines benutzerdefinierten Aktivitäts Desig
 > [!NOTE]
 > Benutzerdefinierte Aktivitäts Designer können für benutzerdefinierte Aktivitäten und für .net-Standardaktivitäten verwendet werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Workflow Designer verwenden](developing-applications-with-the-workflow-designer.md)
 - [Entwerfen von Workflows (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

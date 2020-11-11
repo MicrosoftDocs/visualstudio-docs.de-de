@@ -1,5 +1,6 @@
 ---
 title: Manuelles Ausführen der Legacy Code Analyse (.net)
+description: Erfahren Sie, wie Sie mögliche Fehler im Quellcode erkennen. Weitere Informationen finden Sie unter Manuelles Ausführen von Legacy Code Analysen für verwalteten Code in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca865b33d59f87453cafc337e1595c9d772b17a2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f61f0823c33478b4482f00541bbfe778fe72ed7e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808612"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434739"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Gewusst wie: Manuelles Ausführen der Legacy Code Analyse für verwalteten Code
 
@@ -30,6 +31,6 @@ Das Code Analysetool enthält Informationen zu möglichen Fehlern im Quellcode. 
 set EnableLegacyCodeAnalysis = true
 ```
 
-2. Klicken Sie in **Projektmappen-Explorer**auf das Projekt.
+2. Klicken Sie in **Projektmappen-Explorer** auf das Projekt.
 
-3. Klicken Sie im Menü **analysieren** auf **Code Analyse für** *Projekt Name*ausführen.
+3. Klicken Sie im Menü **analysieren** auf **Code Analyse für** *Projekt Name* ausführen.

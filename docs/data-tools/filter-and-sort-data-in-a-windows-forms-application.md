@@ -1,5 +1,7 @@
 ---
 title: Filtern und Sortieren von Daten in einer Windows Forms-Anwendung
+description: Filtern und Sortieren von Daten in einer Windows Forms Anwendung. Legen Sie die Eigenschaft Filter auf einen Zeichen folgen Ausdruck fest, der die gewünschten Datensätze zurückgibt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c420896a883146cf60de414100fc41080220e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 076ec70fa3a2aed3ddc65d0a4b50272c824a1cfb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282383"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435064"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtern und Sortieren von Daten in einer Windows Forms-Anwendung
 
@@ -49,6 +51,6 @@ Sie sortieren die Daten, indem Sie die- <xref:System.Windows.Forms.BindingSource
      [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
      [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Erstellen und Konfigurieren eines TableAdapters
+description: Informieren Sie sich über das Erstellen und Konfigurieren eines TableAdapter in Visual Studio. TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Datenbank.
+ms.custom: SEO-VS-2020
 ms.date: 09/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282670"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436757"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 
@@ -41,7 +43,7 @@ Eine Einführung in TableAdapters finden Sie unter [Füllen von Datasets mit Tab
 
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Verwenden des TableAdapter-Konfigurations-Assistenten
 
-Führen Sie den **TableAdapter-Konfigurations-Assistenten** aus, um TableAdapters und die zugehörigen DataTables zu erstellen oder zu bearbeiten. Sie können einen vorhandenen TableAdapter konfigurieren, indem Sie im **DataSet-Designer**mit der rechten Maustaste darauf klicken.
+Führen Sie den **TableAdapter-Konfigurations-Assistenten** aus, um TableAdapters und die zugehörigen DataTables zu erstellen oder zu bearbeiten. Sie können einen vorhandenen TableAdapter konfigurieren, indem Sie im **DataSet-Designer** mit der rechten Maustaste darauf klicken.
 
 ![Assistent zum Konfigurieren von raddata-Tabellen Adaptern](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
@@ -49,7 +51,7 @@ Wenn Sie einen neuen TableAdapter aus der Toolbox ziehen, wenn die **DataSet-Des
 
 - Sie haben die Möglichkeit, eine neue gespeicherte Prozedur in der zugrunde liegenden Datenbank zu erstellen, wenn Sie über die richtigen Berechtigungen für die Datenbank verfügen. Wenn Sie nicht über diese Berechtigungen verfügen, ist dies keine Option.
 
-- Sie können auch vorhandene gespeicherte Prozeduren für die Befehle **Select**, **Insert**, **Update**und **Delete** des TableAdapter ausführen. Die gespeicherte Prozedur, die dem **Update** -Befehl zugewiesen ist, wird z. b. ausgeführt, wenn die- `TableAdapter.Update()` Methode aufgerufen wird.
+- Sie können auch vorhandene gespeicherte Prozeduren für die Befehle **Select** , **Insert** , **Update** und **Delete** des TableAdapter ausführen. Die gespeicherte Prozedur, die dem **Update** -Befehl zugewiesen ist, wird z. b. ausgeführt, wenn die- `TableAdapter.Update()` Methode aufgerufen wird.
 
 Ordnen Sie die Parameter der ausgewählten gespeicherten Prozedur den entsprechenden Spalten in der Datentabelle zu. Wenn Ihre gespeicherte Prozedur z. b. einen Parameter mit dem Namen akzeptiert, der `@CompanyName` an die `CompanyName` Spalte in der Tabelle übergeben wird, legen Sie die **Quell Spalte** des- `@CompanyName` Parameters auf fest `CompanyName` .
 
@@ -82,7 +84,7 @@ Im folgenden Beispiel wird gezeigt, wie Sie eine zusätzliche Abfrage namens abr
 
 1. Öffnen Sie das Dataset im **DataSet-Designer**.
 
-2. Wenn Sie eine neue Abfrage erstellen, ziehen Sie ein **Abfrage** Objekt von der Registerkarte **DataSet** der **Toolbox** auf ein <xref:System.Data.DataTable> , oder wählen Sie im Kontextmenü des TableAdapters die Option **Abfrage hinzufügen** aus. Sie können ein **Abfrage** Objekt auch in einen leeren Bereich der **DataSet-Designer**ziehen, wodurch ein TableAdapter ohne zugeordnete erstellt wird <xref:System.Data.DataTable> . Diese Abfragen können nur einzelne (skalare) Werte zurückgeben oder Update-, INSERT-oder DELETE-Befehle für die Datenbank ausführen.
+2. Wenn Sie eine neue Abfrage erstellen, ziehen Sie ein **Abfrage** Objekt von der Registerkarte **DataSet** der **Toolbox** auf ein <xref:System.Data.DataTable> , oder wählen Sie im Kontextmenü des TableAdapters die Option **Abfrage hinzufügen** aus. Sie können ein **Abfrage** Objekt auch in einen leeren Bereich der **DataSet-Designer** ziehen, wodurch ein TableAdapter ohne zugeordnete erstellt wird <xref:System.Data.DataTable> . Diese Abfragen können nur einzelne (skalare) Werte zurückgeben oder Update-, INSERT-oder DELETE-Befehle für die Datenbank ausführen.
 
 3. Wählen oder erstellen Sie auf dem Bildschirm **Wählen Sie Ihre Datenverbindung** aus die Verbindung, die von der Abfrage verwendet wird.
 
@@ -108,13 +110,13 @@ Im folgenden Beispiel wird gezeigt, wie Sie eine zusätzliche Abfrage namens abr
 
 - Globale Abfragen sind SQL-Abfragen, die entweder einen einzelnen (skalaren) Wert oder keinen Wert zurückgeben. Normalerweise führen globale Funktionen Daten Bank Vorgänge aus, z. b. Einfügungen, Updates und Löschungen. Außerdem aggregieren Sie Informationen, wie z. b. die Anzahl von Kunden in einer Tabelle oder die Gesamtgebühren für alle Elemente in einer bestimmten Reihenfolge.
 
-     Sie fügen globale Abfragen hinzu, indem Sie ein **Abfrage** Objekt von der Registerkarte **DataSet** der **Toolbox** auf einen leeren Bereich der **DataSet-Designer**ziehen.
+     Sie fügen globale Abfragen hinzu, indem Sie ein **Abfrage** Objekt von der Registerkarte **DataSet** der **Toolbox** auf einen leeren Bereich der **DataSet-Designer** ziehen.
 
 - Stellen Sie eine Abfrage bereit, die den gewünschten Task ausführt, z `SELECT COUNT(*) AS CustomerCount FROM Customers` . b..
 
     > [!NOTE]
     > Wenn Sie ein **Abfrage** Objekt direkt auf den **DataSet-Designer** ziehen, wird eine Methode erstellt, die nur einen Skalarwert (Single) zurückgibt. Die von Ihnen ausgewählte Abfrage oder gespeicherte Prozedur gibt möglicherweise mehr als einen einzelnen Wert zurück, die vom Assistenten erstellte Methode gibt jedoch nur einen einzelnen Wert zurück. Beispielsweise kann die Abfrage die erste Spalte der ersten Zeile der zurückgegebenen Daten zurückgeben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

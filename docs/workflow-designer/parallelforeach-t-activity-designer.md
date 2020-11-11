@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer-ParallelForEach &lt; T- &gt; Aktivitäts Designer
+description: Erfahren Sie, wie die ParallelForEach <T> -Aktivität die Elemente einer Auflistung auflistet und parallel eine eingebettete Anweisung für jedes Element der Auflistung ausführt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57c8414637d767a57cf9021d907bfb6e1fe467ef
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876046"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435559"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach-Aktivitätsdesigners
 
 Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität listet die Elemente einer Auflistung auf und führt gleichzeitig, asynchron im gleichen Thread, eine eingebettete Anweisung für jedes Element der Auflistung aus. Verwenden Sie diese Flusssteuerungsaktivität statt der <xref:System.Activities.Statements.Sequence>-Aktivität, wenn von den untergeordneten Aktivitäten dieser Aktivität erwartet werden kann, dass sie in den Leerlauf übergehen.
 
-Die- <xref:System.Activities.Statements.ParallelForEach%601> Aktivität verfügt über eine- <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> Eigenschaft, die einen vom Benutzer angegebenen Visual Basic Ausdruck enthält. Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität wertet diese Eigenschaft aus, nachdem alle Branches abgeschlossen sind. Wenn **true**ausgewertet wird, wird die- <xref:System.Activities.Statements.ParallelForEach%601> Aktivität abgeschlossen, ohne dass die anderen Verzweigungen ausgeführt werden. Wenn das-Element <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> nicht als **true**ausgewertet wird, wird die-Aktivität abgeschlossen, <xref:System.Activities.Statements.ParallelForEach%601> Wenn alle untergeordneten Aktivitäten abgeschlossen sind.
+Die- <xref:System.Activities.Statements.ParallelForEach%601> Aktivität verfügt über eine- <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> Eigenschaft, die einen vom Benutzer angegebenen Visual Basic Ausdruck enthält. Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität wertet diese Eigenschaft aus, nachdem alle Branches abgeschlossen sind. Wenn **true** ausgewertet wird, wird die- <xref:System.Activities.Statements.ParallelForEach%601> Aktivität abgeschlossen, ohne dass die anderen Verzweigungen ausgeführt werden. Wenn das-Element <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> nicht als **true** ausgewertet wird, wird die-Aktivität abgeschlossen, <xref:System.Activities.Statements.ParallelForEach%601> Wenn alle untergeordneten Aktivitäten abgeschlossen sind.
 
 ## <a name="the-parallelforeacht-activity"></a>Die ParallelForEach-<T- \> Aktivität
 
@@ -33,25 +35,25 @@ Wenn aber Aktivitäten im <xref:System.Activities.Statements.ParallelForEach%601
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>Verwenden des ParallelForEach- \<T> Aktivitäts Designers
 
-Greifen Sie in der Kategorie **Ablauf Steuerung** der **Toolbox**auf den ** \<T> ParallelForEach** -Aktivitäts Designer zu.
+Greifen Sie in der Kategorie **Ablauf Steuerung** der **Toolbox** auf den **\<T> ParallelForEach** -Aktivitäts Designer zu.
 
-Der **ParallelForEach \<T> ** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäts Designer normalerweise platziert werden, z. b. innerhalb eines **Sequence** -Aktivitäts Designers. Nach dem Ablegen in der Workflow-Designer wird eine- <xref:System.Activities.Statements.ParallelForEach%601> Aktivität erstellt, die standardmäßig eine <xref:System.Activities.Activity.DisplayName%2A> von **ParallelForEach<Int32 enthält \> .**
+Der **ParallelForEach \<T>** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäts Designer normalerweise platziert werden, z. b. innerhalb eines **Sequence** -Aktivitäts Designers. Nach dem Ablegen in der Workflow-Designer wird eine- <xref:System.Activities.Statements.ParallelForEach%601> Aktivität erstellt, die standardmäßig eine <xref:System.Activities.Activity.DisplayName%2A> von **ParallelForEach<Int32 enthält \> .**
 
 ### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>ParallelForEach<T- \> Eigenschaften im Workflow-Designer
 
 In der folgenden Tabelle werden die nützlichsten Eigenschaften der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verbrauch|
+|Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **ParallelForEach \<Int32> **. Der Wert kann optional im **Eigenschaften** Raster oder direkt im Header des Aktivitäts Designers bearbeitet werden.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Falsch|Die Aktivität, die für jedes Element in der Auflistung ausgeführt werden soll. Um die-Aktivität hinzuzufügen, legen Sie <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> eine Aktivität aus der Toolbox in das Feld **Body** mit dem Hinweis Text "Aktivität hier ablegen" des **ParallelForEach \<T> ** -Aktivitäts Designers ab.|
-|**TypeArgument**|Richtig|Der Typ der Elemente in der Auflistung, die <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> durch den generischen Parameter *T*angegeben werden. Standardmäßig ist **TypeArgument** auf **Int32**festgelegt. Um den Typ T im **ParallelForEach- \><T** -Aktivitäts Designer zu ändern, ändern Sie den Wert des Kombinations Felds **TypeArgument** im Eigenschaften Raster.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Richtig|Die Auflistung, deren Elemente durchlaufen werden. Um den festzulegen, geben Sie im Feld <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> **Werte** des **foreach<T \> ** -Aktivitäts Designers im Feld mit dem Hinweis Text "VB-Ausdruck eingeben" oder im Feld " **Werte** " im Fenster " **Eigenschaften** " einen Visual Basic Ausdruck ein.|
+|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **ParallelForEach \<Int32>**. Der Wert kann optional im **Eigenschaften** Raster oder direkt im Header des Aktivitäts Designers bearbeitet werden.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|FALSE|Die Aktivität, die für jedes Element in der Auflistung ausgeführt werden soll. Um die-Aktivität hinzuzufügen, legen Sie <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> eine Aktivität aus der Toolbox in das Feld **Body** mit dem Hinweis Text "Aktivität hier ablegen" des **ParallelForEach \<T>** -Aktivitäts Designers ab.|
+|**TypeArgument**|Wahr|Der Typ der Elemente in der Auflistung, die <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> durch den generischen Parameter *T* angegeben werden. Standardmäßig ist **TypeArgument** auf **Int32** festgelegt. Um den Typ T im **ParallelForEach- \><T** -Aktivitäts Designer zu ändern, ändern Sie den Wert des Kombinations Felds **TypeArgument** im Eigenschaften Raster.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Wahr|Die Auflistung, deren Elemente durchlaufen werden. Um den festzulegen, geben Sie im Feld <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> **Werte** des **foreach<T \>** -Aktivitäts Designers im Feld mit dem Hinweis Text "VB-Ausdruck eingeben" oder im Feld " **Werte** " im Fenster " **Eigenschaften** " einen Visual Basic Ausdruck ein.|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Die Auswertung erfolgt nach Abschluss der einzelnen Iterationen. Ergibt die Auswertung True, werden die geplanten ausstehenden Iterationen abgebrochen. Wenn diese Eigenschaft nicht festgelegt ist, werden alle geplanten Anweisungen bis zur Beendigung ausgeführt.|
 
-Standardmäßig hat der Schleifeniterator die Bezeichnung "item". Sie können den Namen der Iteratorvariablen im Feld **foreach** des **ParallelForEach \<T> ** -Aktivitäts Designers ändern. Der Schleifeniterator kann in den untergeordneten Elementen der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität in Ausdrücken verwendet werden.
+Standardmäßig hat der Schleifeniterator die Bezeichnung "item". Sie können den Namen der Iteratorvariablen im Feld **foreach** des **ParallelForEach \<T>** -Aktivitäts Designers ändern. Der Schleifeniterator kann in den untergeordneten Elementen der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität in Ausdrücken verwendet werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Sequenz](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

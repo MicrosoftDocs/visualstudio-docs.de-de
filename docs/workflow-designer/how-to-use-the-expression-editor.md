@@ -1,5 +1,7 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Verwenden des Ausdrucks-Editors'
+description: Erfahren Sie, wie der Ausdrucks-Editor ein Workflow-Designer Steuerelement ist, das Sie in vielen Workflow Aktivitäten zum eingeben und Auswerten von Ausdrücken verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 855326085a51ec6590bd1b3f0e1e5565c53396cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817436"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437852"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Vorgehensweise: Verwenden des Ausdrucks-Editors
 
 Der Ausdrucks-Editor ist ein Workflow-Designer Steuerelement, das in vielen Workflow Aktivitäten zum eingeben und Auswerten von Ausdrücken verwendet wird. Der Ausdrucks-Editor bietet eine vollständige IDE-Bearbeitungsumgebung, einschließlich IntelliSense, farbige Farbgebung, paramInfo, Fehler Wellenlinien, zu anderen Features. Der Compiler überprüft den Ausdruck, nachdem er eingegeben wurde. Wenn der Ausdruck ungültig ist, wird ein Fehlersymbol angezeigt. Der Editor kann auch als Dialogfeld **Ausdrucks-Editor** geöffnet werden.
 
-Ausdrücke sind an Argumente oder Eigenschaften gebundene literale Werte oder Visual Basic-Code. Sie enthalten Wert Elemente (z. b. Variablen, Konstanten, Literale, Eigenschaften), die mit Vorgängen kombiniert werden, um einen neuen Wert zu erhalten. Ausdrücke werden mit VB.NET-Syntax geschrieben, auch wenn sie in einem in C# geschriebenen Programm verwendet werden. Dies bedeutet, dass die Groß-/Kleinschreibung keine Rolle spielt, dass der Vergleich mit einem einzelnen Gleichheitszeichen ("=" anstelle von "= =") erfolgt. die booleschen Operatoren sind die Wörter "and" und "or" anstelle der Symbole "&&" und "| |", und anstelle von **null**wird **nichts** verwendet. Weitere Informationen zu Ausdrücken und Operatoren in Visual Basic und einige Beispiele finden Sie unter [Operatoren und Ausdrücke in Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
+Ausdrücke sind an Argumente oder Eigenschaften gebundene literale Werte oder Visual Basic-Code. Sie enthalten Wert Elemente (z. b. Variablen, Konstanten, Literale, Eigenschaften), die mit Vorgängen kombiniert werden, um einen neuen Wert zu erhalten. Ausdrücke werden mit VB.NET-Syntax geschrieben, auch wenn sie in einem in C# geschriebenen Programm verwendet werden. Dies bedeutet, dass die Groß-/Kleinschreibung keine Rolle spielt, dass der Vergleich mit einem einzelnen Gleichheitszeichen ("=" anstelle von "= =") erfolgt. die booleschen Operatoren sind die Wörter "and" und "or" anstelle der Symbole "&&" und "| |", und anstelle von **null** wird **nichts** verwendet. Weitere Informationen zu Ausdrücken und Operatoren in Visual Basic und einige Beispiele finden Sie unter [Operatoren und Ausdrücke in Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
 Der **Ausdrucks-Editor** verhält sich wie folgt:
 
@@ -53,6 +55,6 @@ Der **Ausdrucks-Editor** verhält sich wie folgt:
 
      Eine alternative Möglichkeit, einen Ausdruck einzugeben oder zu bearbeiten, ist das Klicken auf die Auslassungs Punkte neben dem Eigenschaftsnamen im Eigenschaften Raster. Durch Auswahl der Auslassungs Punkte wird der **Ausdrucks-Editor** als Dialogfeld geöffnet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

@@ -1,6 +1,8 @@
 ---
 title: Verwenden des Regelsatz-Editors für die Codeanalyse
 ms.date: 04/04/2018
+description: Erfahren Sie, wie Sie Regelsätze in Visual Studio bearbeiten und anzeigen. Weitere Informationen finden Sie unter Festlegen des Regel schwere Grads, angeben von Regeln in einer benutzerdefinierten Gruppe und Anpassen der Daten im Regelsatz-Raster.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659178"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436822"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Verwenden des Regelsatz-Editors für die Code Analyse
 
@@ -85,6 +87,6 @@ In den Spalten Headern des Regel Satz-Rasters können Sie die Regeln nach den We
 
 - Wenn Sie die Regelsätze nach dem Wert eines Felds filtern möchten, wählen Sie die Filter Schaltfläche in der Spaltenüberschrift des Felds aus, nach dem Sie filtern möchten. Aktivieren Sie die Kontrollkästchen der Werte, die Sie anzeigen möchten, und deaktivieren Sie die Kontrollkästchen der Werte, die Sie ausblenden möchten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen eines benutzerdefinierten Regelsatzes](../code-quality/how-to-create-a-custom-rule-set.md)

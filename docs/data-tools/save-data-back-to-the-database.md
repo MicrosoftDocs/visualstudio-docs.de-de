@@ -1,5 +1,7 @@
 ---
 title: Rückspeichern von Daten in der Datenbank
+description: Verwenden Sie DataSet-Tools, um Daten wieder in der Datenbank zu speichern. Bei dem DataSet handelt es sich um eine Kopie der Daten im Arbeitsspeicher, die in der Datenbank gespeichert werden sollen, wenn Sie geändert wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281746"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436054"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 
@@ -41,16 +43,16 @@ Wenn Sie Dataset-Tabellen an Steuerelemente auf einer Windows Form-oder XAML-Sei
 
 Wenn Sie mit TableAdapters vertraut sind, können Sie direkt zu einem der folgenden Themen springen:
 
-|Thema|Beschreibung|
+|Thema|BESCHREIBUNG|
 |-----------|-----------------|
-|[Gewusst wie: Einfügen neuer Datensätze in eine Datenbank](../data-tools/insert-new-records-into-a-database.md)|Ausführen von Aktualisierungen und Einfügungen mithilfe von TableAdapters oder Befehls Objekten|
-|[Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Ausführen von Updates mit TableAdapters|
+|[Einfügen neuer Datensätze in eine Datenbank](../data-tools/insert-new-records-into-a-database.md)|Ausführen von Aktualisierungen und Einfügungen mithilfe von TableAdapters oder Befehls Objekten|
+|[Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Ausführen von Updates mit TableAdapters|
 |[Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)|Ausführen von Updates aus einem DataSet mit zwei oder mehr verknüpften Tabellen|
 |[Behandeln einer Parallelitätsausnahme](../data-tools/handle-a-concurrency-exception.md)|Behandeln von Ausnahmen, wenn zwei Benutzer gleichzeitig versuchen, dieselben Daten in einer Datenbank zu ändern|
 |[Vorgehensweise: Speichern von Daten mithilfe einer Transaktion](../data-tools/save-data-by-using-a-transaction.md)|Speichern von Daten in einer Transaktion mithilfe des Systems. Transaktionen-Namespace und ein transaktionscope-Objekt|
 |[Speichern von Daten in einer Transaktion](../data-tools/save-data-in-a-transaction.md)|Exemplarische Vorgehensweise, die eine Windows Forms Anwendung erstellt, um das Speichern von Daten in einer Datenbank innerhalb einer Transaktion zu veranschaulichen|
 |[Speichern von Daten in einer Datenbank (mehrere Tabellen)](../data-tools/save-data-to-a-database-multiple-tables.md)|Bearbeiten von Datensätzen und Speichern von Änderungen in mehreren Tabellen in der Datenbank|
-|[Gewusst wie: Speichern von Daten aus einem Objekt in einer Datenbank](../data-tools/save-data-from-an-object-to-a-database.md)|Übergeben von Daten aus einem Objekt, das sich nicht in einem Dataset befindet, an eine Datenbank mithilfe einer TableAdapter-DBDirect-Methode|
+|[Speichern von Daten aus einem Objekt in einer Datenbank](../data-tools/save-data-from-an-object-to-a-database.md)|Übergeben von Daten aus einem Objekt, das sich nicht in einem Dataset befindet, an eine Datenbank mithilfe einer TableAdapter-DBDirect-Methode|
 |[Speichern von Daten mit den TableAdapter-DBDirect-Methoden](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|So verwenden Sie den TableAdapter, um SQL-Abfragen direkt an die Datenbank zu senden|
 |[Speichern eines Datasets als XML](../data-tools/save-a-dataset-as-xml.md)|Vorgehensweise beim Speichern eines Datasets in einem XML-Dokument|
 
@@ -72,21 +74,21 @@ Beim Zusammenführen von Datasets können Sie ein boolesches Argument ( `preserv
 
 |DataRowVersion|Zieldataset|Quelldataset|
 | - | - | - |
-|Ursprünglich|James Wilson|James C. Wilson|
+|Original|James Wilson|James C. Wilson|
 |Aktuell|Jim Wilson|James C. Wilson|
 
 Das Aufrufen der- <xref:System.Data.DataSet.Merge%2A> Methode für die vorherige Tabelle mit `preserveChanges=false targetDataset.Merge(sourceDataset)` führt zu den folgenden Daten:
 
 |DataRowVersion|Zieldataset|Quelldataset|
 | - | - | - |
-|Ursprünglich|James C. Wilson|James C. Wilson|
+|Original|James C. Wilson|James C. Wilson|
 |Aktuell|James C. Wilson|James C. Wilson|
 
 Das Aufrufen der- <xref:System.Data.DataSet.Merge%2A> Methode mit `preserveChanges = true targetDataset.Merge(sourceDataset, true)` führt zu den folgenden Daten:
 
 |DataRowVersion|Zieldataset|Quelldataset|
 | - | - | - |
-|Ursprünglich|James C. Wilson|James C. Wilson|
+|Original|James C. Wilson|James C. Wilson|
 |Aktuell|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
@@ -125,7 +127,7 @@ Die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft eines <xref:System.Data.D
 
 In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.DataRowState>-Enumeration aufgeführt:
 
-|DataRowState-Wert|Beschreibung|
+|DataRowState-Wert|BESCHREIBUNG|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|Die Zeile wurde einer <xref:System.Data.DataRowCollection> als Element hinzugefügt. (Eine Zeile in diesem Zustand hat keine entsprechende ursprüngliche Version, da Sie nicht vorhanden war, als die letzte <xref:System.Data.DataRow.AcceptChanges%2A> Methode aufgerufen wurde).|
 |<xref:System.Data.DataRowState.Deleted>|Die Zeile wurde mit <xref:System.Data.DataRow.Delete%2A> eines <xref:System.Data.DataRow>-Objekts gelöscht.|
@@ -139,7 +141,7 @@ In Datasets werden mehrere Datensatzversionen verwaltet. Die <xref:System.Data.D
 
 In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.DataRowVersion>-Enumeration aufgeführt:
 
-|DataRowVersion-Wert|Beschreibung|
+|DataRowVersion-Wert|BESCHREIBUNG|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|Die aktuelle Version eines Datensatzes enthält alle Änderungen, die seit dem letzten Aufruf des Datensatzes durchgeführt wurden <xref:System.Data.DataRow.AcceptChanges%2A> . Falls die Zeile gelöscht wurde, ist keine aktuelle Version vorhanden.|
 |<xref:System.Data.DataRowVersion.Default>|Der Standardwert eines Datensatzes, wie er durch das Dataset-Schema oder die Datenquelle definiert wurde.|
@@ -276,7 +278,7 @@ In einer Update-Anweisung müssen Sie sowohl die neuen Werte (die in den Datensa
 
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Erstellen und Konfigurieren eines TableAdapters](create-and-configure-tableadapters.md)
-- [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
+- [Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Überprüfen von Daten](validate-data-in-datasets.md)
 - [Vorgehensweise: Hinzufügen, ändern und Löschen von Entitäten (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

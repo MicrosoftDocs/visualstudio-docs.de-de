@@ -1,5 +1,7 @@
 ---
 title: Workflow-Designer Migrations Aktivitäts Designer
+description: Erfahren Sie, wie Sie die Migrations Aktivitäts Designer verwenden, um Workflow 3.0/3.5-Aktivitäten von einem Workflow aufzurufen, der .NET Framework 4 oder höher als Ziel verwendet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
@@ -8,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed5640495c7de8550db63d2fa48d3fab1e67de9a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189733"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435611"
 ---
 # <a name="migration-activity-designers"></a>Aktivitäts-Designer für Migrationen
 
@@ -35,7 +37,7 @@ Informationen zu anderen Typen von Aktivitäts Designern finden Sie in den folge
 
 - [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
-- [Grundtypen](../workflow-designer/primitives-activity-designers.md)
+- [Primitive](../workflow-designer/primitives-activity-designers.md)
 
 - [Transaktion](../workflow-designer/transaction-activity-designers.md)
 

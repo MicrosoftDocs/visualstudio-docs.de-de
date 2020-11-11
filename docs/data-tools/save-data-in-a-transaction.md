@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie Daten in einer Transaktion mithilfe des System. Transactions-Namespace in Visual Studio speichern.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281629"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434544"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion
 
@@ -48,15 +50,15 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
 ## <a name="create-a-windows-forms-application"></a>Erstellen einer Windows Forms-Anwendung
 
-Der erste Schritt besteht darin, eine **Windows Forms Anwendung**zu erstellen.
+Der erste Schritt besteht darin, eine **Windows Forms Anwendung** zu erstellen.
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop** aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **SavingDataInATransactionWalkthrough**, und wählen Sie dann **OK**aus.
+4. Nennen Sie das Projekt **SavingDataInATransactionWalkthrough** , und wählen Sie dann **OK** aus.
 
      Das Projekt **SavingDataInATransactionWalkthrough** wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.
 
@@ -64,27 +66,27 @@ Der erste Schritt besteht darin, eine **Windows Forms Anwendung**zu erstellen.
 
 In diesem Schritt wird mithilfe des **Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle basierend auf den `Customers` `Orders` Tabellen und in der Beispieldatenbank Northwind erstellt.
 
-1. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Daten** die Option **Datenquellen anzeigen**aus.
+1. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Daten** die Option **Datenquellen anzeigen** aus.
 
 2. Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
-3. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen** die Option **Datenbank**aus, und klicken Sie dann auf **weiter**.
+3. Wählen Sie auf dem Bildschirm **Daten Quellentyp auswählen** die Option **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
 4. Führen Sie auf dem Bildschirm **Wählen Sie Ihre Datenverbindung** einen der folgenden Schritte aus:
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         - oder -
+         \- oder -
 
-    - Klicken Sie auf **neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu starten und eine Verbindung mit der Datenbank Northwind herzustellen.
+    - Klicken Sie auf **neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu starten und eine Verbindung mit der Datenbank Northwind herzustellen.
 
 5. Wenn für die Datenbank ein Kennwort erforderlich ist, wählen Sie die Option zum einschließen sensibler Daten aus, und klicken Sie dann auf **weiter**.
 
-6. Wählen Sie auf der Seite **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern** die Option **weiter**aus.
+6. Wählen Sie auf der Seite **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern** die Option **weiter** aus.
 
 7. Erweitern Sie auf dem Bildschirm **Wählen Sie Ihre Datenbankobjekte** aus den Knoten **Tabellen** .
 
-8. Wählen Sie `Customers` die `Orders` Tabellen und aus, und klicken Sie dann auf **Fertig**stellen.
+8. Wählen Sie `Customers` die `Orders` Tabellen und aus, und klicken Sie dann auf **Fertig** stellen.
 
      Das **NorthwindDataSet** wird Ihrem Projekt hinzugefügt, und die Tabellen `Customers` und `Orders` werden im Fenster **Datenquellen** angezeigt.
 
@@ -167,9 +169,9 @@ Der Befehl für das Abgleichen zugehöriger Daten lautet wie folgt:
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-Drücken Sie **F5**, um die Anwendung auszuführen.
+Drücken Sie **F5** , um die Anwendung auszuführen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [How to: save data by using a transaction (Vorgehensweise: Speichern von Daten mithilfe einer Transaktion)](../data-tools/save-data-by-using-a-transaction.md)
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

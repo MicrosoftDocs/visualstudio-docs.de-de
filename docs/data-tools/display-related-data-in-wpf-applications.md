@@ -1,5 +1,7 @@
 ---
 title: Anzeigen zugehöriger Daten in WPF-Anwendungen
+description: Zeigen Sie verwandte Daten in WPF-Anwendungen an. Arbeiten Sie mit Daten aus mehreren Tabellen oder Entitäten, die in einer über-/Unterordnungsbeziehung miteinander verknüpft sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6694d3c1521a6a405323edc33adc44dac0e66829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282552"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436497"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Anzeigen zugehöriger Daten in WPF-Anwendungen
 
@@ -31,9 +33,9 @@ Sie können Daten gebundene Steuerelemente erstellen, die verwandte Daten anzeig
 
 ## <a name="to-create-controls-that-display-related-records"></a>So erstellen Sie Steuerelemente, die verknüpfte Datensätze anzeigen
 
-1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das Fenster **Datenquellen** zu öffnen.
+1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen** , um das Fenster **Datenquellen** zu öffnen.
 
-2. Klicken Sie auf **Neue Datenquelle hinzufügen**, und führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus.
+2. Klicken Sie auf **Neue Datenquelle hinzufügen** , und führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus.
 
 3. Öffnen Sie den WPF-Designer, und stellen Sie sicher, dass der Designer einen Container enthält, bei dem es sich um ein gültiges Ablage Ziel für die Elemente im **Datenquellen** Fenster handelt.
 
@@ -55,7 +57,7 @@ Sie können Daten gebundene Steuerelemente erstellen, die verwandte Daten anzeig
 
      ![Relation im Datenquellenfenster](../data-tools/media/datasources2.gif)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Erstellen von Nachschlagetabellen in WPF-Anwendungen](../data-tools/create-lookup-tables-in-wpf-applications.md)

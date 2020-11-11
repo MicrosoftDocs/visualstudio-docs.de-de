@@ -1,5 +1,7 @@
 ---
 title: Abfragedatasets
+description: Grundlegendes zu Abfrage Datasets. Informationen zur Groß-/Kleinschreibung von Datasets. Suchen einer bestimmten Zeile in einer Datentabelle, suchen nach Zeilen nach Spaltenwerten und Zugreifen auf zugehörige Datensätze.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281863"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436067"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 Um bestimmte Datensätze in einem DataSet zu suchen, verwenden `FindBy` Sie die-Methode für die Datentabelle, schreiben Sie Ihre eigene foreach-Anweisung, um die Zeilen Auflistung der Tabelle zu durchlaufen, oder verwenden Sie [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,7 +72,7 @@ Diese Seite enthält Beispiele für die Verwendung typisierter Datasets. Weitere
 > [!NOTE]
 > Wenn Sie in einer Windows Forms Anwendung arbeiten und die Daten Bindungsfunktionen zum Anzeigen von Daten verwenden, kann das vom Designer generierte Formular ausreichend Funktionalität für Ihre Anwendung bereitstellen. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Informationen hierzu finden Sie unter [Beziehungen in Datasets](relationships-in-datasets.md).
 
-Die folgenden Codebeispiele veranschaulichen, wie Sie in typisierten Datasets nach oben und unten navigieren. In den Codebeispielen werden typisierte <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) und die generierten FindBy-Methoden "*PrimaryKey* ()" verwendet `FindByCustomerID` , um eine gewünschte Zeile zu suchen und die zugehörigen Datensätze zurückzugeben. Die Beispiele werden nur dann ordnungsgemäß kompiliert und ausgeführt, wenn Folgendes vorhanden ist:
+Die folgenden Codebeispiele veranschaulichen, wie Sie in typisierten Datasets nach oben und unten navigieren. In den Codebeispielen werden typisierte <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) und die generierten FindBy-Methoden " *PrimaryKey* ()" verwendet `FindByCustomerID` , um eine gewünschte Zeile zu suchen und die zugehörigen Datensätze zurückzugeben. Die Beispiele werden nur dann ordnungsgemäß kompiliert und ausgeführt, wenn Folgendes vorhanden ist:
 
 - Eine Instanz eines Datasets `NorthwindDataSet` mit dem Namen mit einer `Customers` Tabelle.
 

@@ -1,6 +1,8 @@
 ---
 title: Projekt Regelsätze mit Eincheck Richtlinie synchronisieren
 ms.date: 11/04/2016
+description: Erfahren Sie, wie Sie einen Visual Studio Code-Projekt Regelsatz mit einer Azure devops Project-Eincheck Richtlinie synchronisieren.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371780"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434687"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Vorgehensweise: Synchronisieren von Code Projekt-Regelsätzen mit einer Azure devops-Projekt Eincheck Richtlinie
 
@@ -31,7 +33,7 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>So geben Sie einen Microsoft Standard-Regelsatz an
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
 
 2. Klicken Sie auf **Codeanalyse**.
 
@@ -51,7 +53,7 @@ Die Code Analyse Einstellungen für Code Projekte werden mit der Eincheck Richtl
 
 1. Führen Sie bei Bedarf einen Get-Vorgang für die Regel Satz Datei aus, die die Eincheck Richtlinie angibt.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Code Projekt, und klicken Sie dann auf **Eigenschaften**.
 
 3. Klicken Sie auf **Codeanalyse**.
 

@@ -1,5 +1,7 @@
 ---
 title: Erstellen von parametrisierten TableAdapter-Abfragen
+description: Informationen zum Erstellen von parametrisierten TableAdapter-Abfragen. Eine parametrisierte Abfrage gibt Daten zurück, die den Bedingungen einer WHERE-Klausel in der Abfrage entsprechen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282604"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436666"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
 
@@ -40,7 +42,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der **DataSet-Designer**.
 
 - Erstellen Sie einen neuen TableAdapter und fügen Sie eine WHERE-Klausel mit den gewünschten Parametern zur SQL-Anweisung hinzu. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     - oder -
+     \- oder -
 
 - Fügen Sie eine Abfrage zu einem vorhandenen TableAdapter hinzu und dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung.
 
@@ -48,7 +50,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der **DataSet-Designer**.
 
 1. Wählen Sie ein Steuerelement auf dem Formular, das bereits an ein Dataset gebunden ist. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-2. Wählen Sie im Menü **Daten** die Option **Abfrage hinzufügen**aus.
+2. Wählen Sie im Menü **Daten** die Option **Abfrage hinzufügen** aus.
 
 3. Füllen Sie das Dialogfeld **Suchkriterien-Generator** aus, und fügen Sie dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung hinzu.
 
@@ -65,7 +67,7 @@ Sie erstellen parametrisierte TableAdapter-Abfragen in der **DataSet-Designer**.
 
 4. Geben Sie den Namen in das Feld **Neuer Abfragename** ein, wenn Sie eine neue Abfrage erstellen.
 
-     - oder -
+     \- oder -
 
      Wählen Sie eine Abfrage im Feld **Vorhandener Abfragename** aus.
 
@@ -92,12 +94,12 @@ Wenn es sich um eine Abfrage für einen TableAdapter handelt, könnten Sie alle 
 
 So aktivieren Sie eine Abfrage, um NULL-Werte zu akzeptieren:
 
-1. Wählen Sie im **DataSet-Designer**die TableAdapter-Abfrage aus, die NULL-Parameterwerte akzeptieren muss.
+1. Wählen Sie im **DataSet-Designer** die TableAdapter-Abfrage aus, die NULL-Parameterwerte akzeptieren muss.
 
-2. Wählen Sie im Fenster **Eigenschaften** **die Option** **Parameter**aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten (**...**).
+2. Wählen Sie im Fenster **Eigenschaften** **die Option** **Parameter** aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten ( **...** ).
 
 3. Wählen Sie den Parameter, der NULL-Werte zulässt, und legen Sie die **AllowDBNull** -Eigenschaft auf fest `true` .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

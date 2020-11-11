@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Nachschlagetabellen in WPF-Anwendungen
+description: Erstellen von Nachschlage Tabellen in WPF-apps Eine Nachschlage Tabelle ist ein Steuerelement, das Informationen aus einer Datentabelle anhand eines Fremdschlüssel-Feldwerts in einer anderen Tabelle anzeigt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282617"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436692"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
 
-Der Begriff Nachschlage *Tabelle* (manchmal als *Such Bindung*bezeichnet) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle basierend auf dem Wert eines Fremdschlüssel Felds in einer anderen Tabelle anzeigt. Sie können eine Nachschlage Tabelle erstellen, indem Sie den Haupt Knoten einer übergeordneten Tabelle oder eines Objekts im **Datenquellen** Fenster auf ein Steuerelement ziehen, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.
+Der Begriff Nachschlage *Tabelle* (manchmal als *Such Bindung* bezeichnet) beschreibt ein Steuerelement, das Informationen aus einer Datentabelle basierend auf dem Wert eines Fremdschlüssel Felds in einer anderen Tabelle anzeigt. Sie können eine Nachschlage Tabelle erstellen, indem Sie den Haupt Knoten einer übergeordneten Tabelle oder eines Objekts im **Datenquellen** Fenster auf ein Steuerelement ziehen, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.
 
 Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält. Jeder Datensatz in der `Orders` Tabelle enthält einen `CustomerID` , der angibt, welcher Kunde den Auftrag aufgegeben hat. Der `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendaten Satz in der- `Customers` Tabelle verweist. Wenn Sie eine Liste der Bestellungen aus der `Orders` Tabelle anzeigen, möchten Sie möglicherweise den tatsächlichen Kundennamen anstelle von anzeigen `CustomerID` . Da der Kunden Name in der Tabelle enthalten ist `Customers` , müssen Sie eine Nachschlage Tabelle erstellen, um den Kundennamen anzuzeigen. In der Nachschlage Tabelle wird der `CustomerID` Wert im `Orders` Datensatz verwendet, um in der Beziehung zu navigieren und den Kundennamen zurückzugeben.
 
@@ -42,18 +44,18 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
     > [!NOTE]
     > Bevor Sie eine Nachschlage Tabelle erstellen können, müssen zwei verknüpfte Tabellen oder Objekte als Datenquelle für das Projekt vorhanden sein.
 
-2. Öffnen Sie den **WPF-Designer**, und stellen Sie sicher, dass der Designer einen Container enthält, bei dem es sich um ein gültiges Ablage Ziel für Elemente im **Datenquellen** Fenster handelt.
+2. Öffnen Sie den **WPF-Designer** , und stellen Sie sicher, dass der Designer einen Container enthält, bei dem es sich um ein gültiges Ablage Ziel für Elemente im **Datenquellen** Fenster handelt.
 
      Weitere Informationen zu gültigen Drop-Zielen finden [Sie unterbinden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das Fenster **Datenquellen** zu öffnen.
+3. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen** , um das Fenster **Datenquellen** zu öffnen.
 
 4. Erweitern Sie die Knoten im **Datenquellen** Fenster, bis die übergeordnete Tabelle oder das übergeordnete Objekt und die zugehörige untergeordnete Tabelle oder das zugehörige Objekt angezeigt werden.
 
     > [!NOTE]
     > Die zugehörige untergeordnete Tabelle oder das verbundene Objekt ist der Knoten, der als erweiterbarer untergeordneter Knoten unter der übergeordneten Tabelle oder dem übergeordneten Objekt angezeigt wird
 
-5. Klicken Sie auf das Dropdown Menü für den untergeordneten Knoten, und wählen Sie **Details**aus.
+5. Klicken Sie auf das Dropdown Menü für den untergeordneten Knoten, und wählen Sie **Details** aus.
 
 6. Erweitern Sie den untergeordneten Knoten.
 
@@ -88,7 +90,7 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio bindet diese Eigenschaft an die Spalte oder Eigenschaft der untergeordneten Daten, die Sie in den Designer gezogen haben. Dies ist der Fremdschlüssel für die übergeordneten Daten.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Diese Eigenschaft wird von Visual Studio auf den Pfad der Spalte oder Eigenschaft der untergeordneten Daten festgelegt, die den Fremdschlüssel zu den übergeordneten Daten ist.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)

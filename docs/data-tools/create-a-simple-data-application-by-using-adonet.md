@@ -1,5 +1,6 @@
 ---
 title: Erstellen einer einfachen Datenanwendung mit ADO.NET
+description: Erfahren Sie, wie Sie eine einfache Forms-to-Data-Anwendung erstellen, indem Sie Windows Forms und ADO.net in Visual Studio verwenden.
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037431"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436796"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
@@ -44,15 +45,15 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 
 1. Öffnen Sie in Visual Studio das Fenster **Server-Explorer** .
 
-2. Klicken Sie mit der rechten Maustaste auf **Datenverbindungen** , und wählen Sie **neue SQL Server Datenbank erstellen**aus.
+2. Klicken Sie mit der rechten Maustaste auf **Datenverbindungen** , und wählen Sie **neue SQL Server Datenbank erstellen** aus.
 
-3. Geben Sie im Textfeld **Server Name den Namen** **(localdb) \mssqllocaldb**ein.
+3. Geben Sie im Textfeld **Server Name den Namen** **(localdb) \mssqllocaldb** ein.
 
-4. Geben Sie im Textfeld **Neuer Datenbankname den Namen** **Sales**ein, und klicken Sie dann auf **OK**.
+4. Geben Sie im Textfeld **Neuer Datenbankname den Namen** **Sales** ein, und klicken Sie dann auf **OK**.
 
      Die leere **Sales** -Datenbank wird erstellt und dem Knoten Datenverbindungen in Server-Explorer hinzugefügt.
 
-5. Klicken Sie mit der rechten Maustaste auf die **Verkaufs** Datenverbindung, und wählen Sie **neue Abfrage**aus.
+5. Klicken Sie mit der rechten Maustaste auf die **Verkaufs** Datenverbindung, und wählen Sie **neue Abfrage** aus.
 
      Ein Abfrage-Editor-Fenster wird geöffnet.
 
@@ -87,9 +88,9 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 
 |Steuerelemente für das Navigationsformular|Eigenschaften|
 | - |----------------|
-|Schaltfläche|Name = btnGoToAdd|
-|Schaltfläche|Name = btnGoToFillOrCancel|
-|Schaltfläche|Name = btnExit|
+|Taste|Name = btnGoToAdd|
+|Taste|Name = btnGoToFillOrCancel|
+|Taste|Name = btnExit|
 
 **NewCustomer-Formular**
 
@@ -99,12 +100,12 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
-|Schaltfläche|Name = btnCreateAccount|
+|Taste|Name = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpOrderDate|
-|Schaltfläche|Name = btnPlaceOrder|
-|Schaltfläche|Name = btnAddAnotherAccount|
-|Schaltfläche|Name = btnAddFinish|
+|Taste|Name = btnPlaceOrder|
+|Taste|Name = btnAddAnotherAccount|
+|Taste|Name = btnAddFinish|
 
 **FillOrCancel-Formular**
 
@@ -113,26 +114,26 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 |Steuerelemente für das FillOrCancel-Formular|Eigenschaften|
 | - |----------------|
 |TextBox|Name = txtOrderID|
-|Schaltfläche|Name = btnFindByOrderID|
+|Taste|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|
-|Schaltfläche|Name = btnCancelOrder|
-|Schaltfläche|Name = btnFillOrder|
-|Schaltfläche|Name = btnFinishUpdates|
+|Taste|Name = btnCancelOrder|
+|Taste|Name = btnFillOrder|
+|Taste|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Die Verbindungszeichenfolge speichern
 Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Um zu vermeiden, dass die Zeichenfolge manuell in jedes Formular eingegeben wird, speichern Sie die Zeichenfolge in der *App.config* -Datei im Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode von einem beliebigen Formular in der Anwendung aufgerufen wird.
 
-Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften**auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG** + **A**, **STRG** + **C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
+Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften** auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG** + **A** , **STRG** + **C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
 
-1. Wenn Sie c# verwenden, erweitern Sie in **Projektmappen-Explorer**den Knoten **Eigenschaften** unter dem Projekt, und öffnen Sie dann die Datei **Settings. Settings** .
-    Wenn Sie Visual Basic verwenden, klicken Sie in **Projektmappen-Explorer**auf **alle Dateien anzeigen**, erweitern Sie den Knoten **mein Projekt** , und öffnen Sie dann die Datei **Settings. Settings** .
+1. Wenn Sie c# verwenden, erweitern Sie in **Projektmappen-Explorer** den Knoten **Eigenschaften** unter dem Projekt, und öffnen Sie dann die Datei **Settings. Settings** .
+    Wenn Sie Visual Basic verwenden, klicken Sie in **Projektmappen-Explorer** auf **alle Dateien anzeigen** , erweitern Sie den Knoten **mein Projekt** , und öffnen Sie dann die Datei **Settings. Settings** .
 
 2. Geben Sie in der Spalte **Name den Namen** ein `connString` .
 
 3. Wählen Sie in der Liste **Typ** die Option **(Verbindungs Zeichenfolge)** aus.
 
-4. Wählen Sie in der Liste **Bereich den Bereich** **Anwendung**aus.
+4. Wählen Sie in der Liste **Bereich den Bereich** **Anwendung** aus.
 
 5. Geben Sie in der Spalte **Wert** die Verbindungs Zeichenfolge (ohne äußere Anführungszeichen) ein, und speichern Sie die Änderungen.
 
@@ -151,7 +152,7 @@ Das Navigationsformular wird geöffnet, wenn Sie die Anwendung ausführen. Die S
 
 Wenn Sie C# verwenden, öffnen Sie **Program.cs** im **Projektmappen-Explorer** und ändern die Zeile `Application.Run` in `Application.Run(new Navigation());`.
 
-Wenn Sie Visual Basic verwenden, öffnen Sie in **Projektmappen-Explorer**das Fenster **Eigenschaften** , wählen Sie die Registerkarte **Anwendung** aus, und wählen Sie dann **simpledataapp. Navigation** in der Liste **Start Formular** aus.
+Wenn Sie Visual Basic verwenden, öffnen Sie in **Projektmappen-Explorer** das Fenster **Eigenschaften** , wählen Sie die Registerkarte **Anwendung** aus, und wählen Sie dann **simpledataapp. Navigation** in der Liste **Start Formular** aus.
 
 #### <a name="create-auto-generated-event-handlers"></a>Erstellen von automatisch generierten Ereignis Handlern
 
@@ -232,7 +233,7 @@ Führen Sie die folgenden Schritte aus, um die Formular Logik von "fllorcancel" 
 
 ## <a name="test-your-application"></a>Testen Ihrer Anwendung
 
-Drücken Sie die **F5**-Taste, um die Anwendung zu erstellen und zu testen, nachdem Sie die einzelnen Click-Ereignishandler programmiert und die Programmierung beendet haben.
+Drücken Sie die **F5** -Taste, um die Anwendung zu erstellen und zu testen, nachdem Sie die einzelnen Click-Ereignishandler programmiert und die Programmierung beendet haben.
 
 ## <a name="see-also"></a>Siehe auch
 

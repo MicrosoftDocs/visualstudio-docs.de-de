@@ -1,5 +1,7 @@
 ---
 title: 'Workflow-Designer: ein neues Element zum Workflow Projekt hinzufügen'
+description: Erfahren Sie, wie Sie Ihrem Projekt Workflow Aktivitäten, Designer und andere vertraute Visual Studio-Elemente hinzufügen können, nachdem Sie ein Workflow Projekt erstellt haben.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814615"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437969"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Gewusst wie: Hinzufügen eines neuen Elements zu einem Workflow Projekt
 
@@ -43,6 +45,6 @@ In der folgenden Tabelle sind die Windows Workflow Foundation (WF)-Elemente aufg
 
 1. Wählen Sie **Hinzufügen** aus, um das Element dem Projekt hinzuzufügen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen eines Workflow Projekts](../workflow-designer/creating-a-workflow-project.md)
