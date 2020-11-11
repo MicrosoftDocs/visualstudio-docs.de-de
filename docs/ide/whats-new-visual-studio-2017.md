@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 2c2381211c628a9a405706859b3c80bfc50aa692
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352176"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400220"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Neues in Visual Studio 2017
 
@@ -98,7 +98,7 @@ Visual Studio verschiebt seine Erweiterungen (und arbeitet auch mit Erweiterunge
 
 Es ist einfacher, jede Entwicklungsumgebung mit Ihren bevorzugten Erweiterungen einzurichten, wenn Sie sich bei Visual Studio anmelden. Der neue Roaming-Erweiterungs-Manager verfolgt alle Ihre bevorzugten Erweiterungen nach, indem er eine synchronisierte Liste in der Cloud erstellt.
 
-Um eine Liste Ihrer Erweiterungen in Visual Studio anzuzeigen, klicken Sie auf **Extras** > **Erweiterungen und Updates**, und klicken Sie dann auf den **Roaming-Erweiterungs-Manager**.
+Um eine Liste Ihrer Erweiterungen in Visual Studio anzuzeigen, klicken Sie auf **Extras** > **Erweiterungen und Updates** , und klicken Sie dann auf den **Roaming-Erweiterungs-Manager**.
 
 ![Visual Studio 2017: Dialogfeld „Erweiterungen und Updates“](media/vs2017ide-extensions-and-updates.png)
 
@@ -108,11 +108,11 @@ Der Roaming-Erweiterungs-Manager verfolgt alle von Ihnen installierten Erweiteru
 
 Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie drei Symboltypen in Ihrer Liste bemerken:
 
-* ![Symbol für „Roaming erfolgt“](media/vs2017ide-roamedicon.png) **_Roaming erfolgt_**: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
+* ![Symbol für „Roaming erfolgt“](media/vs2017ide-roamedicon.png) **_Roaming erfolgt_** : Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
   (Erweiterungen dieses Typs können Sie mithilfe der Schaltfläche **Download** herunterladen.)
-* ![Symbol für „Roaming und Installation erfolgt“](media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_**: Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
+* ![Symbol für „Roaming und Installation erfolgt“](media/vs2017ide-roamedinstalledicon.png) **_Roaming und Installation erfolgt_** : Alle Erweiterungen, die in dieser Roamingliste enthalten und in der Entwicklungsumgebung installiert sind.
   (Wenn Sie sich gegen das Roaming entscheiden, können Sie zum Entfernen die Schaltfläche **Roaming beenden** verwenden.)
-* ![Symbol für „Installiert“](media/vs2017ide-installedicon.png) **_Installiert_**: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
+* ![Symbol für „Installiert“](media/vs2017ide-installedicon.png) **_Installiert_** : Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
   (Sie können der Roamingliste Erweiterungen mithilfe der Schaltfläche **Roaming starten** hinzufügen.)
 
 Jede Erweiterung, die Sie herunterladen, während Sie angemeldet sind, wird zu Ihrer Liste als **Roamed & Installed** (Roaming und Installation) hinzugefügt. Die Erweiterung wird dann zu Ihrer Roamingliste hinzugefügt, über die Sie auf diese über Ihren Computer zugreifen können.
@@ -174,19 +174,19 @@ Wenn Sie in Visual Studio an einem Projekt arbeiten, können Sie Ihren Code für
 
 Wir haben die Benutzerfreundlichkeit der Navigation verbessert, sodass Sie mit größerer Sicherheit und weniger Ablenkung von A nach B gelangen.
 
-* **Neues in 15.4:** **Gehe zu Definition** (**STRG**+**Klicken** oder **F12**) &ndash; Mausbenutzer können einfacher zu der Definition eines Members navigieren, indem sie **STRG** drücken und dann auf das Member klicken. Durch das Drücken von **STRG** und das Zeigen auf ein Codesymbol mit der Maus wird dieses unterstrichen und in einen Link umgewandelt. Weitere Informationen finden Sie unter [Go To Definition and Peek Definition (Gehe zu Definition und Definition einsehen)](go-to-and-peek-definition.md).
+* **Neues in 15.4:** **Gehe zu Definition** ( **STRG**+**Klicken** oder **F12** ) &ndash; Mausbenutzer können einfacher zu der Definition eines Members navigieren, indem sie **STRG** drücken und dann auf das Member klicken. Durch das Drücken von **STRG** und das Zeigen auf ein Codesymbol mit der Maus wird dieses unterstrichen und in einen Link umgewandelt. Weitere Informationen finden Sie unter [Go To Definition and Peek Definition (Gehe zu Definition und Definition einsehen)](go-to-and-peek-definition.md).
 
-* **Zur Implementierung wechseln** (**Strg**+**F12**) &ndash; Navigieren Sie von jedem Basistyp oder Member zu dessen verschiedenen Implementierungen.
+* **Zur Implementierung wechseln** ( **Strg**+**F12** ) &ndash; Navigieren Sie von jedem Basistyp oder Member zu dessen verschiedenen Implementierungen.
 
-* **Go To All** (**Strg**+**T** oder **Strg**+ **,** ) &ndash; ( Gehe zu allen) Navigieren Sie direkt zu jeder beliebigen Datei-/Typ-/Member-/Symboldeklaration. Sie können die Ergebnisliste filtern oder die Abfragesyntax verwenden (z.B. „f Suchbegriff“ für Dateien, „t Suchbegriff“ für Typen usw.).
+* **Go To All** ( **Strg**+**T** oder **Strg**+ **,** ) &ndash; ( Gehe zu allen) Navigieren Sie direkt zu jeder beliebigen Datei-/Typ-/Member-/Symboldeklaration. Sie können die Ergebnisliste filtern oder die Abfragesyntax verwenden (z.B. „f Suchbegriff“ für Dateien, „t Suchbegriff“ für Typen usw.).
 
   ![Verbesserte Option „Gehe zu allen“](media/vs2017ide-navigation-go-to.png)
 
-* **Alle Verweise suchen** (**Umschalt**+**F12**) &ndash; Mit Syntaxfarbgebung können Sie „Alle Verweise suchen“-Ergebnisse nach einer Kombination aus Projekt, Definition und Pfad gruppieren. Sie können auch Ergebnisse „sperren“, damit Sie die Suche nach anderen Verweisen fortsetzen können, ohne die ursprünglichen Ergebnisse zu verlieren.
+* **Alle Verweise suchen** ( **Umschalt**+**F12** ) &ndash; Mit Syntaxfarbgebung können Sie „Alle Verweise suchen“-Ergebnisse nach einer Kombination aus Projekt, Definition und Pfad gruppieren. Sie können auch Ergebnisse „sperren“, damit Sie die Suche nach anderen Verweisen fortsetzen können, ohne die ursprünglichen Ergebnisse zu verlieren.
 
   ![Neues Tool „Alle Verweise suchen“](media/vs2017ide-find-all-references.png)
 
-* **Strukturschnellansicht**: Punktierte, graue, vertikale Linien (Einzugsführungslinien) dienen nun als Orientierungshilfen im Code, um Kontext innerhalb Ihres Bezugssystems bereitzustellen. Vielleicht kennen Sie sie von den beliebten Produktivitäts-Power Tools. Damit können Sie jederzeit ohne zu scrollen visuell darstellen und ermitteln, in welchem Codeblock Sie sich befinden. Wenn Sie den Mauszeiger über die Zeilen bewegen, werden QuickInfos angezeigt, die Ihnen die Öffnung dieses Blocks und seine übergeordneten Elemente anzeigen. Dies ist sowohl für alle Sprachen verfügbar, die über TextMate-Grammatiken unterstützt werden, als auch für C#, Visual Basic und XAML.
+* **Strukturschnellansicht** : Punktierte, graue, vertikale Linien (Einzugsführungslinien) dienen nun als Orientierungshilfen im Code, um Kontext innerhalb Ihres Bezugssystems bereitzustellen. Vielleicht kennen Sie sie von den beliebten Produktivitäts-Power Tools. Damit können Sie jederzeit ohne zu scrollen visuell darstellen und ermitteln, in welchem Codeblock Sie sich befinden. Wenn Sie den Mauszeiger über die Zeilen bewegen, werden QuickInfos angezeigt, die Ihnen die Öffnung dieses Blocks und seine übergeordneten Elemente anzeigen. Dies ist sowohl für alle Sprachen verfügbar, die über TextMate-Grammatiken unterstützt werden, als auch für C#, Visual Basic und XAML.
 
   ![Strukturschnellansicht in Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
@@ -218,9 +218,9 @@ Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper 
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Momentaufnahmen und das IntelliTrace-Feature „Step-back“
 
-**Neues in Version 15.5**: Das IntelliTrace-Feature „Schritt zurück“ nimmt automatisch bei jedem Breakpoint und Debuggerschritt eine Momentaufnahme Ihrer Anwendung auf. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
+**Neues in Version 15.5** : Das IntelliTrace-Feature „Schritt zurück“ nimmt automatisch bei jedem Breakpoint und Debuggerschritt eine Momentaufnahme Ihrer Anwendung auf. Durch die erfassten Momentaufnahmen können Sie zu vorherigen Haltepunkten oder Schritten zurückkehren und sich den Zustand der Anwendung so anzeigen lassen, wie er zuvor war. Mit dem IntelliTrace-Feature „Step-back“ können Sie Zeit sparen, wenn Sie den vorherigen Zustand der Anwendung anzeigen oder diesen wiederherstellen, aber das Debuggen nicht erneut starten möchten.
 
-Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vorwärts** in der **Debug**-Symbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden. Wenn Sie mit „Schritt zurück“ oder „Schritt vor“ zu einem Ereignis navigieren, wird das verlaufsbezogene Debuggen für das ausgewählte Ereignis automatisch aktiviert.
+Sie können Momentaufnahmen anzeigen und durch diese navigieren, indem Sie die Schaltflächen **Schritt zurück** und **Schritt vorwärts** in der **Debug** -Symbolleiste verwenden. Mit diesen Schaltflächen können Sie durch die Ereignisse navigieren, die in der Registerkarte **Ereignisse** des Fensters **Diagnosetools** angezeigt werden. Wenn Sie mit „Schritt zurück“ oder „Schritt vor“ zu einem Ereignis navigieren, wird das verlaufsbezogene Debuggen für das ausgewählte Ereignis automatisch aktiviert.
 
 ![Beispiel für das IntelliTrace-Feature „Step back“ in Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Schaltflächen „Schritt zurück“ und „Schritt vorwärts“")
 
@@ -232,7 +232,7 @@ Container bieten eine höhere App-Dichte und niedrigere Bereitstellungskosten so
 
 #### <a name="docker-container-tooling"></a>Tools für Docker-Container
 
-**Neues in Version 15.5**:
+**Neues in Version 15.5** :
 
 * Visual Studio enthält Tools für Docker-Container, die nun mehrstufige Dockerdateien unterstützen, die das Erstellen von optimierten Containerimages vereinfachen.
 * Wenn Sie ein Projekt mit Docker-Unterstützung öffnen, werden von Visual Studio automatisch die erforderlichen Containerimages im Hintergrund abgerufen, erstellt und ausgeführt. Sie können dieses Verhalten über die Einstellung **Container im Hintergrund automatisch starten** in Visual Studio deaktivieren.
@@ -247,7 +247,7 @@ Weitere Informationen finden Sie auf der Seite [Azure Functions-Tools für Visua
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Debuggen von ASP.NET-Live-Apps mithilfe von Andockpunkten und Protokollpunkten in Azure-Live-Apps
 
-**Neues in Version 15.5**: Der Momentaufnahmedebugger erstellt eine Momentaufnahme Ihrer Apps, die sich in der Produktion befinden, wenn Code ausgeführt wird, der für Sie relevant ist. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
+**Neues in Version 15.5** : Der Momentaufnahmedebugger erstellt eine Momentaufnahme Ihrer Apps, die sich in der Produktion befinden, wenn Code ausgeführt wird, der für Sie relevant ist. Legen Sie Andockpunkte und Protokollpunkte in Ihrem Code fest, um den Debugger anzuweisen, eine Momentaufnahme zu erstellen. Der Debugger zeigt Fehler ohne Auswirkungen auf den Datenverkehr Ihrer Produktionsanwendung an. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
 Die Momentaufnahmensammlung ist für folgende Web-Apps verfügbar, die in Azure App Service ausgeführt werden:
 
@@ -266,7 +266,7 @@ Universelle Windows-Plattform (UWP) ist die App-Plattform für Windows 10. Sie k
 
 Wählen Sie aus C#, Visual Basic, C++ oder JavaScript Ihre bevorzugte Entwicklungssprache aus, um eine UWP-App für Windows 10-Geräte zu erstellen. Visual Studio 2017 stellt für jede Sprache eine Vorlage für UWP-Apps bereit, durch die Sie ein einzelnes Projekt für alle Geräte erstellen können. Wenn Ihre Arbeit abgeschlossen ist, können Sie ein App-Paket erstellen und dieses von Visual Studio aus an Microsoft Store übermitteln, um Ihre App für Kunden mit Windows 10-Geräten bereitzustellen.
 
-**Neues in Version 15.5**: Version 15.5 von Visual Studio 2017 bietet eine optimale Unterstützung für das Windows 10 Fall Creators Update SDK (10.0.16299.0). Das Windows 10 Fall Creators Update enthält viele Verbesserungen für UWP-Entwickler. Im Folgenden finden Sie einige der wichtigsten Änderungen: 
+**Neues in Version 15.5** : Version 15.5 von Visual Studio 2017 bietet eine optimale Unterstützung für das Windows 10 Fall Creators Update SDK (10.0.16299.0). Das Windows 10 Fall Creators Update enthält viele Verbesserungen für UWP-Entwickler. Im Folgenden finden Sie einige der wichtigsten Änderungen: 
 
 * **Unterstützung für .NET Standard 2.0**<br/>Zusätzlich zur optimierten App-Entwicklung ist das Windows 10 Fall Creators Update das erste Release von Windows 10, das Unterstützung für .NET Standard 2.0 bietet. [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) ist eine Referenzimplementierung der Basisklassenbibliothek, die jede .NET-Plattform implementieren kann. Das Ziel von .NET Standard besteht darin, das Freigeben von Code für .NET-Entwickler für jede .NET-Plattform, mit der sie arbeiten möchten, so einfach wie möglich zu gestalten.
 * **Das Beste aus UWP und Win32**<br/>Die Windows 10-Plattform wurde durch die [Desktop-Brücke](/windows/uwp/porting/desktop-to-uwp-root) verbessert, um Windows 10 für alle .NET-Entwickler unabhängig davon zu verbessern, ob der derzeitige Fokus auf UWP, WPF, Windows Forms oder Xamarin liegt. Mit dem neuen Projekttyp für das Packen von Apps in Version 15.5 von Visual Studio 2017 können Sie Windows-App-Pakete für Ihre Windows Presentation Foundation- oder Windows Forms-Projekte genau wie für UWP-Projekte erstellen. Nachdem Sie Ihre App gepackt haben, erhalten Sie alle Vorteile von Windows 10 für die App-Entwicklung und können diese über Microsoft Store (bei Verbraucher-Apps) oder Microsoft Store für Unternehmen und Bildungseinrichtungen verteilen. Da gepackte Apps über Zugriff auf die vollständige UWP-API-Oberfläche und auf die Win32-APIs auf dem Desktop verfügen, können Sie Ihre Windows Presentation Foundation- und Windows Forms-Apps nach und nach mit den UWP-APIs und den Windows 10-Features modernisieren. Darüber hinaus können Sie Ihre Win32-Komponenten mit allen Win32-Funktionen in Ihre UWP-Anwendungen integrieren, die auf dem Desktop gekennzeichnet sind.
@@ -283,7 +283,7 @@ Weitere Informationen finden Sie unter [Visual Studio und Xamarin](/xamarin/).
 
 ### <a name="entitlements-editor"></a>Berechtigungs-Editor
 
-**Neues in 15.3:** Für Ihre iOS-Entwicklungsanforderungen haben wir einen eigenständigen Berechtigungs-Editor hinzugefügt. Er enthält eine benutzerfreundliche Benutzeroberfläche, die problemlos durchsucht werden kann. Doppelklicken Sie auf die Datei *entitlements.plist*, um ihn zu starten.
+**Neues in 15.3:** Für Ihre iOS-Entwicklungsanforderungen haben wir einen eigenständigen Berechtigungs-Editor hinzugefügt. Er enthält eine benutzerfreundliche Benutzeroberfläche, die problemlos durchsucht werden kann. Doppelklicken Sie auf die Datei *entitlements.plist* , um ihn zu starten.
 
 ![Berechtigungs-Editor für Xamarin](media/xamarin-entitlements-editor.png)
 
@@ -309,7 +309,7 @@ Weitere Informationen finden Sie unter [Hardwarebeschleunigung für verbesserte 
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-**Neues in Version 15.5**: Visual Studio App Center ist &mdash;nun allgemein für Android, iOS, macOS und Windows-Apps verfügbar&mdash; und enthält alle erforderlichen Komponenten, um den Lebenszyklus Ihrer Apps zu verwalten, einschließlich automatisierter Builds, Tests auf echten Geräten in der Cloud, der Verteilung an Betatester und App-Stores sowie des Überwachens der tatsächlichen Nutzung durch Absturz- und Analysedaten. Bei Apps, die in Objective-C, Swift, Java, C#, Xamarin oder React Native geschrieben wurden, werden sämtliche Features unterstützt.
+**Neues in Version 15.5** : Visual Studio App Center ist &mdash;nun allgemein für Android, iOS, macOS und Windows-Apps verfügbar&mdash; und enthält alle erforderlichen Komponenten, um den Lebenszyklus Ihrer Apps zu verwalten, einschließlich automatisierter Builds, Tests auf echten Geräten in der Cloud, der Verteilung an Betatester und App-Stores sowie des Überwachens der tatsächlichen Nutzung durch Absturz- und Analysedaten. Bei Apps, die in Objective-C, Swift, Java, C#, Xamarin oder React Native geschrieben wurden, werden sämtliche Features unterstützt.
 
   ![Testumgebung von Visual Studio App Center](media/app-center-test-env.png)
 
@@ -350,13 +350,13 @@ Weitere Informationen finden Sie im [Leitfaden für .NET Core](/dotnet/core/inde
 
 Als Teil der Workload „Entwicklung von Spielen für Unity“ haben wir die Tools eingefügt, mit denen Sie plattformübergreifend entwickeln können, um 2D- und 3D-Spiele und interaktiven Inhalt zu erstellen. Sie können ein einmal entwickeltes Spiel auf 21 Plattformen, einschließlich aller mobilen Plattformen, WebGL, Mac, PC- und Linux- Desktops, Web und Konsolen, mit Visual Studio 2017 und Unity 5.6 veröffentlichen.
 
-Weitere Informationen finden Sie unter [Visual Studio Tools für Unity](../cross-platform/visual-studio-tools-for-unity.md).
+Weitere Informationen finden Sie unter [Visual Studio Tools für Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 ## <a name="ai-development"></a>KI-Entwicklung
 
 ### <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
 
-**Neues in Version 15.5**: Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen zu beschleunigen. Verwenden Sie die integrierten Features des Code-Editors wie die Syntaxhervorhebung, IntelliSense und die automatische Textformatierung. Sie können Ihre Deep Learning-Anwendung interaktiv in Ihrer lokalen Umgebung testen, indem Sie das Debuggen in ausführlichen Schritten für lokale Variablen und Modelle verwenden.
+**Neues in Version 15.5** : Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen zu beschleunigen. Verwenden Sie die integrierten Features des Code-Editors wie die Syntaxhervorhebung, IntelliSense und die automatische Textformatierung. Sie können Ihre Deep Learning-Anwendung interaktiv in Ihrer lokalen Umgebung testen, indem Sie das Debuggen in ausführlichen Schritten für lokale Variablen und Modelle verwenden.
 
   ![Deep Learning-IDE](../ai/media/about/ide.png)
 

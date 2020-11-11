@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731507"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407743"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Einschränkungen beim WCF-Debugging
 Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen eines WCF-Diensts zu starten:
@@ -30,7 +30,7 @@ Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen e
 
 - Sie debuggen einen Clientprozess, der eine Anforderung an einen Dienst sendet. Der Dienst muss Teil der Projektmappe sein.
 
-- Sie verwenden die Option **An den Prozess anhängen**, um den Debugger an einen gerade ausgeführten Dienst anzuhängen. Das Debuggen wird im Dienst gestartet.
+- Sie verwenden die Option **An den Prozess anhängen** , um den Debugger an einen gerade ausgeführten Dienst anzuhängen. Das Debuggen wird im Dienst gestartet.
 
   In diesem Thema werden Einschränkungen dieser Szenarien beschrieben.
 
@@ -76,8 +76,7 @@ Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen e
 ## <a name="self-hosting"></a>Lokales Hosten
  Ein *selbstgehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, WCF-Diensthost oder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server ausgeführt wird. Weitere Informationen zum Debuggen eines selbstgehosteten Diensts finden Sie unter [Gewusst wie: Debuggen eines lokal gehosteten WCF-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
-## <a name="self-hosting"></a>Lokales Hosten
- Um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0- oder 3.5-Anwendungen zu aktivieren, muss [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 oder 3.5 vor der Installation von [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installiert werden. Wenn [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] vor [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 oder 3.5 installiert wird, tritt ein Fehler auf, wenn Sie versuchen, eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0- oder 3.5-Anwendung zu debuggen. Die Fehlermeldung lautet: "Automatischer Einzelschritt auf dem Server nicht möglich." Verwenden Sie zum Beheben dieses Problems **Systemsteuerung** > **Programme und Funktionen**, um die [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]-Installation zu reparieren.
+ Um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0- oder 3.5-Anwendungen zu aktivieren, muss [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 oder 3.5 vor der Installation von [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installiert werden. Wenn [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] vor [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 oder 3.5 installiert wird, tritt ein Fehler auf, wenn Sie versuchen, eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0- oder 3.5-Anwendung zu debuggen. Die Fehlermeldung lautet: "Automatischer Einzelschritt auf dem Server nicht möglich." Verwenden Sie zum Beheben dieses Problems **Systemsteuerung** > **Programme und Funktionen** , um die [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]-Installation zu reparieren.
 
 ## <a name="see-also"></a>Siehe auch
 - [Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)

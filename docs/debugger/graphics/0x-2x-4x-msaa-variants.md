@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64816535"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407548"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x-MSAA-Varianten
 Überschreibt die Multi-Sample Anti-Aliasing (MSAA)-Einstellungen auf allen Renderzielen und Swapketten.
@@ -54,7 +54,7 @@ ms.locfileid: "64816535"
 
  Wenn bei der Wiedergabe diese Art von Konflikten erkannt wird, wird versucht, das beabsichtigte Verhalten zu replizieren, aber eventuell können nicht genau die gewünschten Ergebnisse erreicht werden. Obwohl die Leistung und die Wirkung dieser Varianten dadurch im Allgemeinen nicht beeinflusst werden, ist es möglich – z. B. wenn die Ablaufsteuerung in einem Pixelshader vom genauen Inhalt einer Textur bestimmt wird –, dass die replizierter Textur eventuell nicht den völlig gleichen Inhalt hat.
 
-## <a name="example"></a>Beispiel
+## <a name="example-1"></a>Beispiel 1
  Diese Varianten können für mit `ID3D11Device::CreateTexture2D` erstellte Renderziele mithilfe eines Codes, reproduziert werden, der dem folgenden ähnlich ist:
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="example-2"></a>Beispiel 2
  Oder für Swapketten, die mit IDXGISwapChain::CreateSwapChain oder D3D11CreateDeviceAndSwapChain erstellt wurden, durch Verwendung eines Codes, der dem folgenden ähnlich ist:
 
 ```cpp

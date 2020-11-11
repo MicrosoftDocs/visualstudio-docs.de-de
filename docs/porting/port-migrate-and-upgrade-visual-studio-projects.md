@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a361a34458fdf22a988c603145ef6654b944be08
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099439"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414320"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Projektmigration und Upgradereferenz für Visual Studio
 
@@ -43,7 +43,7 @@ Dieser Artikel enthält zurzeit nur Einzelheiten zu Projekttypen, die Visual Stu
 
 In der folgenden Liste wird die Unterstützung in Visual Studio 2017 für Projekte beschrieben, die in früheren Versionen erstellt wurden.
 
-Wenn Sie feststellen, dass ein Projekt oder ein Dateityp hier nicht aufgelistet wird, rufen Sie den [Artikel zu Visual Studio 2015](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015&preserve-view=true) auf, und verwenden Sie die Option **Feedback senden zu** > **Dieser Seite** am unteren Rand der Seite, um Details zu Ihrem Projekt bereitzustellen. (Wenn das anonyme Steuerelement „Is this page helpful?“ (Hilft Ihnen diese Seite weiter?) angezeigt wird, konnten wir Ihr Feedback nicht bearbeiten.)
+Wenn Sie feststellen, dass ein Projekt oder ein Dateityp hier nicht aufgelistet wird, rufen Sie den [Artikel zu Visual Studio 2015](/previous-versions/visualstudio/visual-studio-2015/porting/porting-migrating-and-upgrading-visual-studio-projects?preserve-view=true&view=vs-2015) auf, und verwenden Sie die Option **Feedback senden zu** > **Dieser Seite** am unteren Rand der Seite, um Details zu Ihrem Projekt bereitzustellen. (Wenn das anonyme Steuerelement „Is this page helpful?“ (Hilft Ihnen diese Seite weiter?) angezeigt wird, konnten wir Ihr Feedback nicht bearbeiten.)
 
 | Projekttyp | Support |
 | --- | --- |
@@ -91,7 +91,7 @@ Der Entwicklungsbesitzer des betreffenden Projekttyps prüft diese Kriterien und
 
 Wenn eine solche Kompatibilität nicht möglich ist, wie es für einige in diesem Artikel beschriebenen Projekttypen der Fall ist, öffnet Visual Studio den Upgrade-Assistenten, um die erforderlichen unidirektionalen Änderungen vorzunehmen.
 
-Solche unidirektionalen Änderungen umfassen möglicherweise die Änderung der `ToolsVersion`-Eigenschaft in der Projektdatei. Diese kennzeichnet exakt, welche Version von MSBuild den Quellcode des Projekts nicht in ausführbare und bereitstellbare Elemente konvertieren kann, die Sie letztlich benötigen. Das heißt, dass ein Projekt aufgrund der *MSBuild*-Version gemäß `ToolsVersion` und nicht aufgrund der *Visual Studio*-Version nicht mit früheren Versionen von Visual Studio kompatibel ist. Solange Ihre Version von Visual Studio über die MSBuild-Toolkette verfügt, die `ToolsVersion` in einem Projekt entspricht, kann Visual Studio diese Toolkette anschließend zum Erstellen des Projekts aufrufen.
+Solche unidirektionalen Änderungen umfassen möglicherweise die Änderung der `ToolsVersion`-Eigenschaft in der Projektdatei. Diese kennzeichnet exakt, welche Version von MSBuild den Quellcode des Projekts nicht in ausführbare und bereitstellbare Elemente konvertieren kann, die Sie letztlich benötigen. Das heißt, dass ein Projekt aufgrund der *MSBuild* -Version gemäß `ToolsVersion` und nicht aufgrund der *Visual Studio* -Version nicht mit früheren Versionen von Visual Studio kompatibel ist. Solange Ihre Version von Visual Studio über die MSBuild-Toolkette verfügt, die `ToolsVersion` in einem Projekt entspricht, kann Visual Studio diese Toolkette anschließend zum Erstellen des Projekts aufrufen.
 
 Um maximale Kompatibilität mit den in früheren Versionen erstellten Projekten zu gewährleisten, enthält Visual Studio 2017 die erforderlichen MSBuild-Toolketten zur Unterstützung der `ToolsVersion` 15, 14, 12 und 4. Projekte, die diese `ToolsVersion`-Werte verwenden, sollten zu einem erfolgreichen Build führen. (Abhängig von der Tatsache, ob Visual Studio 2017 den Projekttyp überhaupt unterstützt, wie in [ Zielplattformen und Kompatibilität](/visualstudio/productinfo/vs2017-compatibility-vs) beschrieben.)
 
@@ -185,7 +185,7 @@ Das Entwicklungsteam, das Besitzer des betreffenden Projekttyps ist, prüft dies
 
 Manchmal ist eine Kompatibilität nicht möglich. Anschließend öffnet Visual Studio den Upgrade-Assistenten, um die erforderlichen unidirektionalen Änderungen vorzunehmen. Diese unidirektionalen Änderungen umfassen möglicherweise die Änderung der `ToolsVersion`-Eigenschaft in der Projektdatei. Diese kennzeichnet exakt, welche Version von MSBuild den Quellcode des Projekts nicht in ausführbare und bereitstellbare Elemente konvertieren kann, die Sie benötigen.
 
-Ein Projekt ist aufgrund der *MSBuild*-Version gemäß `ToolsVersion` und nicht aufgrund der *Visual Studio*-Version nicht mit früheren Versionen von Visual Studio kompatibel. Wenn Ihre Version von Visual Studio über die MSBuild-Toolkette verfügt, die `ToolsVersion` in einem Projekt entspricht, kann Visual Studio diese Toolkette anschließend zum Erstellen des Projekts aufrufen.
+Ein Projekt ist aufgrund der *MSBuild* -Version gemäß `ToolsVersion` und nicht aufgrund der *Visual Studio* -Version nicht mit früheren Versionen von Visual Studio kompatibel. Wenn Ihre Version von Visual Studio über die MSBuild-Toolkette verfügt, die `ToolsVersion` in einem Projekt entspricht, kann Visual Studio diese Toolkette anschließend zum Erstellen des Projekts aufrufen.
 
 Um Kompatibilität mit den in früheren Versionen erstellten Projekten zu gewährleisten, enthält Visual Studio 2019 die erforderlichen MSBuild-Toolketten zur Unterstützung der `ToolsVersion` 15, 14, 12 und 4. Projekte, die diese `ToolsVersion`-Werte verwenden, sollten zu einem erfolgreichen Build führen. (Wieder abhängig von der Tatsache, ob Visual Studio 2019 den Projekttyp unterstützt, wie in [ Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility) beschrieben.)
 

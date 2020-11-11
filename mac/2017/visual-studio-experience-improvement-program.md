@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 5e8fa7f740275f416f80827276d74be1f05b0e21
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6668e0b61c541ffc0327120cb6e699ada6f1b690
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984750"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434375"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio
 
@@ -32,10 +32,10 @@ VSCEIP ist standardmäßig aktiviert. Sie können es mithilfe der folgenden Anwe
 
 [!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Programm zur Verbesserung der Benutzerfreundlichkeit (Visual Studio unter Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [Vom System generierte Protokolle, die von Visual Studio gesammelt werden (unter Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Vorgehensweise: Melden eines Problems mit Visual Studio für Mac](report-a-problem.md)
-* [Visual Studio for Mac Developer Community (Visual Studio für Mac-Entwicklercommunity)](https://developercommunity.visualstudio.com/spaces/41/index.html)
+* [Visual Studio for Mac Developer Community (Visual Studio für Mac-Entwicklercommunity)](https://aka.ms/feedback/vsm-home)
 * [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement)
