@@ -1,5 +1,7 @@
 ---
 title: 'Workflow-Designer: XAML Debuggen'
+description: Erfahren Sie, wie Workflows in Bezug auf XAML definiert werden und wie Sie XAML mit dem Workflow-Designer Debuggen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9be7c8da251a9698e0fceba64e3941ba8fbdf803
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24540a6e7a2f99f35edf6018355583b5f9230e1a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817514"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437930"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Vorgehensweise: Debuggen von XAML mit dem Workflow-Designer
 
@@ -28,13 +30,13 @@ Workflows werden in XAML definiert. In der Benutzeroberfläche werden Workflows 
 
 2. Legen Sie einen Haltepunkt für die Aktivität oder die Aktivitäten fest, die Sie debuggen möchten, wie unter Gewusst [wie: Festlegen von Breakpoints in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)beschrieben.
 
-3. Klicken Sie mit der rechten Maustaste auf die XAML-Datei, die die Workflow Definition enthält, und wählen Sie **Code anzeigen**aus. Der Haltepunkt wird in der gleichen Zeile wie die XAML-Elementdeklaration der Aktivität angezeigt, für die Sie den Haltepunkt in der Entwurfsansicht festgelegt haben.
+3. Klicken Sie mit der rechten Maustaste auf die XAML-Datei, die die Workflow Definition enthält, und wählen Sie **Code anzeigen** aus. Der Haltepunkt wird in der gleichen Zeile wie die XAML-Elementdeklaration der Aktivität angezeigt, für die Sie den Haltepunkt in der Entwurfsansicht festgelegt haben.
 
 4. Rufen Sie den Debugger auf, wie in [Debug-Workflows](debugging-workflows-with-the-workflow-designer.md)beschrieben.
 
 5. Wenn die Codeausführung einen der Haltepunkte erreicht, wird das diesem Haltepunkt zugeordnete XAML-Element hervorgehoben dargestellt. Verwenden Sie die Taste **F10** oder **F11** , um zum nächsten Haltepunkt zu gelangen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Gewusst wie: Festlegen von Haltepunkten in Workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [Debuggen von Workflows](debugging-workflows-with-the-workflow-designer.md)

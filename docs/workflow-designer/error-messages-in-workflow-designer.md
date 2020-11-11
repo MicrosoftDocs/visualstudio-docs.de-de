@@ -1,5 +1,7 @@
 ---
 title: Fehlermeldungen im Workflow-Designer
+description: Erfahren Sie mehr über die Arten von Fehlermeldungen, die beim Arbeiten mit Workflow-Designer auftreten können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f3886739cbc6deefd13570ae0f49da7e89ad9b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597047"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438034"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Fehlermeldungen im Workflow-Designer
 
@@ -37,7 +39,7 @@ Fehler in Workflow-Designer in den folgenden Situationen auftreten:
 
 Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Das Entwickeln des Workflows ist erfolgreich, aber eine <xref:System.Activities.InvalidWorkflowException> wird zur Laufzeit ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
 
-Wenn in Visual Studio ein Workflow geladen wird, werden die Fehler in der **Fehlerliste**angezeigt. Um zu der Aktivität zu navigieren, die die Fehlerquelle ist, doppelklicken Sie auf den Fehler in der **Fehlerliste**.
+Wenn in Visual Studio ein Workflow geladen wird, werden die Fehler in der **Fehlerliste** angezeigt. Um zu der Aktivität zu navigieren, die die Fehlerquelle ist, doppelklicken Sie auf den Fehler in der **Fehlerliste**.
 
 ### <a name="expression-errors"></a>Ausdrucksfehler
  Ein ungültiger Ausdruck wird durch einen roten Kreis mit einem weißen Ausrufezeichen neben dem Ausdruck gekennzeichnet. Wenn Sie den Mauszeiger über dieses Symbol bewegen, wird ein QuickInfo angezeigt, in der die Fehlerquelle beschrieben wird. Klicken Sie in Visual Studio auf den Ausdruck, um die Zeile anzuzeigen, die die Fehlerquelle unterstreicht. Wenn Sie den Mauszeiger über den unterstrichenen Text halten, wird ein QuickInfo mit einer Beschreibung der Fehlerquelle angezeigt.

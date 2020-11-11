@@ -1,5 +1,7 @@
 ---
 title: 'Workflow-Designer: Gewusst wie: Verwenden der Breadcrumb-Navigation'
+description: Erfahren Sie, wie Sie die Breadcrumb-Navigation verwenden, um auf eine untergeordnete Aktivität zuzugreifen, zu einer Vorgänger Aktivität zu navigieren oder um Aktivitäten direkt zu erweitern oder zu reduzieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a432d7cfc40ad6116f570d0e7beb4bfc5b40493
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a15f44b33e7109b126b091dcbf7102aa86a649a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817462"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437891"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Vorgehensweise: Verwenden der Brotkrümelnavigation
 
@@ -42,7 +44,7 @@ Es gibt drei Hauptmöglichkeiten, den Satz von Aktivitäten zu ändern, die in W
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Erweitern oder Reduzieren aller Aktivitäten
 
-1. Verwenden Sie die Schaltflächen **Alle erweitern** und **alle** reduzieren der Benutzeroberfläche, um alle Aktivitäten unter dem aktuellen Breadcrumb-Stamm zu erweitern oder zu reduzieren. Beachten Sie, dass es sich bei "Alle erweitern" und "Alle reduzieren" um globale Zustände handelt. Dies bedeutet Folgendes: Wenn Sie die Stamm Aktivität mithilfe der Breadcrumb-Navigation ändern, bleibt der Zustand "Alle erweitern" oder "Alle reduzieren" erhalten, bis Sie auf **Wiederherstellen**klicken
+1. Verwenden Sie die Schaltflächen **Alle erweitern** und **alle** reduzieren der Benutzeroberfläche, um alle Aktivitäten unter dem aktuellen Breadcrumb-Stamm zu erweitern oder zu reduzieren. Beachten Sie, dass es sich bei "Alle erweitern" und "Alle reduzieren" um globale Zustände handelt. Dies bedeutet Folgendes: Wenn Sie die Stamm Aktivität mithilfe der Breadcrumb-Navigation ändern, bleibt der Zustand "Alle erweitern" oder "Alle reduzieren" erhalten, bis Sie auf **Wiederherstellen** klicken
 
 2. Nachdem Sie den Zustand "Alle erweitern" oder "Alle reduzieren" angewendet haben, können Sie auf die Schaltfläche **Wiederherstellen** klicken, um den zuvor auf die jeweilige Aktivität angewendeten Zustand zurückzusehen.
 
@@ -50,4 +52,4 @@ Es gibt drei Hauptmöglichkeiten, den Satz von Aktivitäten zu ändern, die in W
     > Wenn eine Aktivität, z. b. <xref:System.Activities.Statements.Flowchart> , nicht mehr direkt erweitert ist, wird die der Schaltfläche **Alle erweitern** und **alle** reduzieren zugeordnete Funktionalität im **Flussdiagramm** -Designer deaktiviert. Weitere Informationen zum **Flussdiagramm** -Designer finden Sie im Abschnitt [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
-    > "Alle erweitern" wirkt sich auch auf die **Switch** -und **trycatch** -Aktivitäts Designer aus. Wenn Sie auf **Alle erweitern**klicken, werden alle switchfälle und alle try/catch/schließlich-Blöcke angezeigt. Wenn Sie auf " **Wiederherstellen** **" oder "** reduzieren" klicken, werden diese Designer auf ihren Standardzustand zurückversetzt, in dem Sie auf einen einzelnen Fall/Block klicken können, um den Inhalt
+    > "Alle erweitern" wirkt sich auch auf die **Switch** -und **trycatch** -Aktivitäts Designer aus. Wenn Sie auf **Alle erweitern** klicken, werden alle switchfälle und alle try/catch/schließlich-Blöcke angezeigt. Wenn Sie auf " **Wiederherstellen** **" oder "** reduzieren" klicken, werden diese Designer auf ihren Standardzustand zurückversetzt, in dem Sie auf einen einzelnen Fall/Block klicken können, um den Inhalt

@@ -1,5 +1,7 @@
 ---
 title: Dialog Feld "Workflow-Designer-Inhalts Definition"
+description: Erfahren Sie, wie Sie das Dialogfeld Inhalts Definition verwenden können, um die Inhalts Eigenschaften der Aktivitäten Send, Receive, SendReply und receivereply zu konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19e2341d458c98f01d3b58d6f77887ac1cfe6746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2858c179d05645b3e47e6be27e386168392fcb48
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876202"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438164"
 ---
 # <a name="content-definition-dialog-box"></a>Inhaltsdefinition (Dialogfeld)
 
@@ -28,12 +30,12 @@ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Fel
 |**Meldung**|Gibt den Nachrichten Inhalt mit dem Textfeld für den **Nachrichten Daten** Ausdruck und den Typ im Dropdown-Listenfeld **Nachrichtentyp** an. Standardmäßig wird von der **Inhalts Definition** das verwendet <xref:System.ServiceModel.Activities.ReceiveMessageContent> , das einen <xref:System.ServiceModel.Channels.Message> oder einen Nachrichten Vertragstyp in der Workflow Dienst Definition erwartet.|
 |**Parameter**|Klicken Sie auf das Optionsfeld **Parameter** , um zu verwenden <xref:System.ServiceModel.Activities.ReceiveParametersContent> , das einen Datenvertrag erwartet. Legen Sie mithilfe des Datenrasters eine generische Auflistung von <xref:System.Activities.OutArgument>-Schlüssel-Wert-Paaren fest, deren Werte variablen Parametern im aktuellen Workflow zugewiesen werden.|
 
-Das Dialogfeld **Inhalts Definition** wird von den Designern **Send**, **Receive**, **receiveandsendreply**und **sendandreceivereply** verwendet. Auf diese Designer wird auf ähnliche Weise zugegriffen. Zur Veranschaulichung des Verfahrens wird hier der Receive-Fall verwendet.
+Das Dialogfeld **Inhalts Definition** wird von den Designern **Send** , **Receive** , **receiveandsendreply** und **sendandreceivereply** verwendet. Auf diese Designer wird auf ähnliche Weise zugegriffen. Zur Veranschaulichung des Verfahrens wird hier der Receive-Fall verwendet.
 
 Der **Receive** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden. Dadurch wird eine <xref:System.ServiceModel.Activities.Receive>-Aktivität mit dem standardmäßigen <xref:System.Activities.Activity.DisplayName%2A> Receive erstellt. Wählen Sie den **Receive** -Aktivitäts Designer aus, und klicken Sie im Eigenschaften Raster auf die Schaltfläche mit den Auslassungs Zeichen, **damit das Dialog** Feld **Inhalts Definition** angezeigt wird.
 
 Der Inhalt kann im **Nachrichten** Abschnitt für eine- <xref:System.ServiceModel.Activities.ReceiveMessageContent> Aktivität oder innerhalb des **Parameter** Abschnitts für eine-Aktivität angegeben werden <xref:System.ServiceModel.Activities.ReceiveParametersContent> .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Workflow-Designer-Benutzeroberflächenhilfe](browse-and-select-a-dotnet-type-dialog-box.md)
