@@ -1,6 +1,7 @@
 ---
 title: Binden von WPF-Steuerelementen an ein Dataset
 description: Erstellen Sie eine WPF-Anwendung in Visual Studio, die Daten gebundene Steuerelemente enthält, die an Produktdaten Sätze gebunden sind, die in einem DataSet gekapselt sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1922df10e331627b0695fb6ea03f4a5101ea0fd1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382038"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518519"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
@@ -53,7 +54,7 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 - WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über die Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview).
 
-## <a name="create-the-project"></a>Erstellen des Projekts
+## <a name="create-the-project"></a>Erstellen eines Projekts
 
 Erstellen Sie ein neues WPF-Projekt, um Produktdaten Sätze anzuzeigen.
 

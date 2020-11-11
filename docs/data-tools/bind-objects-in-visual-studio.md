@@ -1,6 +1,7 @@
 ---
 title: Datenbindung für benutzerdefinierte Objekte
 description: Binden von Objekten als Datenquellen in Visual Studio. Verwenden Sie Entwurfszeit Tools zum Arbeiten mit benutzerdefinierten Objekten als Datenquelle in der Anwendung.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea36249ecc0cfc266a650ca24d143e053f7fc0d9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ad8b5f502953912e2de7383afa4a86ff749c5724
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382103"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518593"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Binden von Objekten als Datenquellen in Visual Studio
 
@@ -135,7 +136,7 @@ Speichern Sie die Daten wieder in der Datenbank, indem Sie die Werte aus dem-Obj
 
 Visual Studio erstellt DBDirect-Methoden, die direkt für die Datenbank ausgeführt werden können. Für diese Methoden sind keine Datasets oder Daten baren Objekte erforderlich.
 
-|TableAdapter-DBDirect-Methode|Beschreibung|
+|TableAdapter-DBDirect-Methode|BESCHREIBUNG|
 | - |-----------------|
 |`TableAdapter.Insert`|Fügt einer Datenbank neue Datensätze hinzu, sodass einzelne Spaltenwerte als Methoden Parameter übergeben werden können.|
 |`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die Update-Methode nimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter an. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die- `TableAdapter.Update` Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem ein-,-,- <xref:System.Data.DataSet> oder- <xref:System.Data.DataTable> <xref:System.Data.DataRow> Array von <xref:System.Data.DataRow> s als Methoden Parameter verwendet wird.|

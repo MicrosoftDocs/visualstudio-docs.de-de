@@ -1,6 +1,7 @@
 ---
 title: Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen
 description: Fügen Sie den Tabellen Adaptern in n-Tier-Anwendungen Code hinzu. Erstellen Sie eine partielle Klassendatei für TableAdapter, und fügen Sie Ihr Code hinzu (anstelle von DatasetName. DataSet. Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382363"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518699"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen
 Sie können die Funktionalität eines TableAdapters erweitern, indem Sie eine partielle Klassendatei für den TableAdapter erstellen und diesem Code hinzufügen (anstatt der Datei " *DatasetName. DataSet. Designer* " Code hinzuzufügen). Partielle Klassen ermöglichen das Aufteilen von Code für eine bestimmte Klasse in mehrere physische Dateien. Weitere Informationen finden Sie unter [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) oder [Partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
