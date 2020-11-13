@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten von Abonnements im Verwaltungsportal | Microsoft-Dokumentation
+title: Bearbeiten von Visual Studio-Abonnements im Verwaltungsportal | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 09/21/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren Abonnementzuweisungen bearbeiten können.
-ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022541"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904158"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Bearbeiten von Visual Studio-Abonnementzuweisungen
 Als Abonnementadministrator können Sie Änderungen an den Abonnements vornehmen, die Personen innerhalb Ihrer Organisation zugewiesen sind.  Dieser Artikel beschreibt die Arten von Änderungen, die Sie vornehmen können, und enthält die notwendigen Schritte.
@@ -23,7 +23,7 @@ Als Abonnementadministrator können Sie Änderungen an den Abonnements vornehmen
 ## <a name="change-subscriber-information"></a>Eingeben der Abonnenteninformationen
 Sie können die Informationen eines Abonnenten bearbeiten, um Fehler zu beheben und Informationen zu aktualisieren.
 
-Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...), die neben der E-Mail-Adresse des Abonnenten angezeigt werden, wenn Sie mit der Maus darauf zeigen. Eine Dropdownliste wird angezeigt.  Klicken Sie auf **Bearbeiten**, um die Details des Abonnenten zu ändern. 
+Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...), die neben der E-Mail-Adresse des Abonnenten angezeigt werden, wenn Sie mit der Maus darauf zeigen. Eine Dropdownliste wird angezeigt.  Klicken Sie auf **Bearbeiten** , um die Details des Abonnenten zu ändern. 
 > [!div class="mx-imgBorder"]
 > ![Auswählen des zu bearbeitenden Abonnenten](_img/edit-license/select-subscriber.png "Klicken Sie auf die Auslassungspunkte, und wählen Sie „Bearbeiten“ aus.")
 
@@ -48,7 +48,7 @@ Sehen Sie sich dieses Video an, oder lesen Sie weiter, um zu erfahren, wie Sie m
    > [!div class="mx-imgBorder"]
    > ![Bearbeiten einer Lizenz: Exportieren der Massenbearbeitungsliste](_img/edit-license/edit-license-bulk-edit-export.png "Klicken Sie auf „Diese Excel-Datei exportieren“, um eine Liste Ihrer aktuellen Abonnements zu erstellen.")
 
-3. Speichern Sie die Datei lokal, damit Sie diese einfach finden und vor dem Upload erforderliche Änderungen vornehmen können. Für einen erfolgreichen Upload darf die **Abonnementebene oder Abonnement-GUID nicht in der Massenbearbeitungsdatei bearbeitet werden**, da dies zu einem Fehler beim Upload führt.
+3. Speichern Sie die Datei lokal, damit Sie diese einfach finden und vor dem Upload erforderliche Änderungen vornehmen können. Für einen erfolgreichen Upload darf die **Abonnementebene oder Abonnement-GUID nicht in der Massenbearbeitungsdatei bearbeitet werden** , da dies zu einem Fehler beim Upload führt.
 
 4. Wechseln Sie zum Administratorportal für Visual Studio-Abonnements, und klicken Sie im Dialogfeld „Massenbearbeitung“ auf **Durchsuchen**. Wählen Sie die Excel-Datei aus, die Sie gespeichert haben, und klicken Sie auf **OK**. Der Fortschritt des Uploads wird auf dem Bildschirm angezeigt.
    > [!div class="mx-imgBorder"]

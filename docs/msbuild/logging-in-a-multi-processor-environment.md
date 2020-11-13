@@ -1,5 +1,7 @@
 ---
 title: Protokollierung in einer Multiprozessorumgebung | Microsoft-Dokumentation
+description: Lernen Sie die neue mehrprozessorfähige Protokollierung von MSBuild kennen, die die Erstellung benutzerdefinierter „weiterleitender Protokollierungen“ ermöglicht.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633563"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904369"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokollierung in einer Multiprozessorumgebung
 
@@ -75,7 +77,7 @@ Culture=neutral
 
 Ein Sternchen (*) trennt die beiden Protokollierungsnamen im `-dl`-Schalter.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Buildprotokollierungen](../msbuild/build-loggers.md)
 - [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie Endbenutzern (für MPN-Partner) Visual Studio-Abonnements zuweisen.
-ms.openlocfilehash: 75b4b188bcd0a7df9414e430c8a1922f8fda9d5e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b578ed417d2d4ac03dd7472a9cb94958b8d3c7a3
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005884"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904115"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Verwalten von Visual Studio-Abonnements, die über das Microsoft Partner Network (MPN) angeboten werden
 Partner, die eine Kompetenz erwerben oder das Action Pack in MPN kaufen, sind dazu berechtigt, Visual Studio-Abonnements zu verwenden. Diese Abonnements werden pro Benutzer lizenziert und gelten nur, wenn sie einem bestimmten benannten Benutzer zugewiesen sind, der für ein Partnerunternehmen arbeitet.
@@ -21,7 +21,7 @@ Weitere Informationen finden Sie bei den Visual Studio-Abonnements, die Partnern
 
 ## <a name="microsoft-action-pack-subscribers"></a>Microsoft Action Pack-Abonnenten
 Microsoft Action Pack-Abonnent und Visual Studio-Abonnements
-1. Programmadministrator meldet sich bei Partner Membership Center an.
+1. Der Programmadministrator meldet sich bei Partner Membership Center an
 2. Personen über **Anforderungen und Assets** zuordnen.
 3. Einzelpersonen suchen und **Rollen zuweisen**.
 4. Ersten, zweiten oder dritten **Technischen Kontakt** auswählen und **Speichern**.
@@ -67,4 +67,4 @@ Microsoft Action Pack-Abonnent und Visual Studio-Abonnements
 - [Dokumentation zu Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Abonnenten und Programmadministratoren sollten direkt mit dem Microsoft Partner Network-Supportteam zusammenarbeiten, um etwaige Probleme mit Abonnenten, die auf Abonnements zugreifen, zu beheben. Besuchen Sie die Seite [Support für Partner](https://partner.microsoft.com/support), um Unterstützung zu erhalten. (Ihre MPN-Anmeldeinformationen werden benötigt.)
+Abonnenten und Programmadministratoren sollten direkt mit dem Microsoft Partner Network-Supportteam zusammenarbeiten, um etwaige Probleme mit dem Abonnementzugriff zu beheben. Besuchen Sie die Seite [Support für Partner](https://partner.microsoft.com/support), um Unterstützung zu erhalten. (Ihre MPN-Anmeldeinformationen werden benötigt.)

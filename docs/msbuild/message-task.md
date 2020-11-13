@@ -1,5 +1,7 @@
 ---
 title: Message-Aufgabe | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Parameter und Einstellungen für die Message-Aufgabe von MSBuild, die während der Builderstellung Meldungen protokolliert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865361"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903843"
 ---
 # <a name="message-task"></a>Meldungsaufgabe
 
@@ -62,7 +64,7 @@ Protokolliert eine Meldung während eines Builds
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
 - [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)

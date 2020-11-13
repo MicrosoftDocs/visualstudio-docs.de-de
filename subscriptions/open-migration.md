@@ -4,22 +4,22 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Partner Visual Studio-Abonnements für ihre Kunden verwalten.
-ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: ba62a2b3d9920ca145722c137322e4471d110d9e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006058"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903760"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Von Partnern verwaltete Visual Studio-Abonnements für Kunden
 Partner müssen zuerst einige Schritte befolgen, bevor sie Abonnements im [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) verwalten können. 
 
 Der Prozess sieht folgendermaßen aus:
 - Partner geben im Namen eines Kunden eine neue Bestellung auf, wobei sie die geschäftliche E-Mail-Adresse des Kunden verwenden.
-- Der Kunde erhält eine Benachrichtigung, in der er aufgefordert wird, Administratoren zuzuweisen und auf seine Abonnements im [Verwaltungsportal für Visual Studio-Abonnements](https://manage.visualstudio.com) zuzugreifen.
+- Der Kunde erhält eine Benachrichtigung, in der er aufgefordert wird, Administratoren zuzuweisen und im [Portal für die Verwaltung von Visual Studio-Abonnements](https://manage.visualstudio.com) auf die Abonnements zuzugreifen.
 - Damit Partner Abonnements im Namen von Kunden verwalten können, müssen sie sich im Verwaltungsportal registrieren. Die verschiedenen Zugriffsmöglichkeiten sind im Folgenden aufgeführt (und ähneln dem Hinzufügen einer Open License).
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Neue Partner, die das Verwaltungsportal für Visual Studio-Abonnements direkt besuchen

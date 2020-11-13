@@ -1,5 +1,7 @@
 ---
 title: Elementdefinitionen | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild ItemGroup und ItemDefinitionGroup verwendet, um Metadaten für Elemente in Projektdateien zu deklarieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633706"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904656"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
 
 MSBuild 2.0 aktiviert die statische Deklaration von Elementen in Projektdateien mithilfe des Elements [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Metadaten können jedoch nur auf Elementebene hinzugefügt werden, auch wenn die Metadaten für alle Elemente gleich sind. In MSBuild 3.5 wurde das Projektelement [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) eingeführt, das diese Einschränkung aufhebt. Mit *ItemDefinitionGroup* können Sie einen Satz von Elementdefinitionen festlegen, um allen Elementen im benannten Elementtyp Standardwerte für Metadaten hinzuzufügen.
 
-Das *ItemDefinitionGroup*-Element wird unmittelbar nach dem [Project](../msbuild/project-element-msbuild.md)-Element der Projektdatei angezeigt. Elementdefinitionen bieten die folgenden Funktionen:
+Das *ItemDefinitionGroup* -Element wird unmittelbar nach dem [Project](../msbuild/project-element-msbuild.md)-Element der Projektdatei angezeigt. Elementdefinitionen bieten die folgenden Funktionen:
 
 - Sie können globale Standardmetadaten für Elemente außerhalb eines Ziels definieren. Das heißt, für alle Elemente des angegebenen Typs gelten die gleichen Metadaten.
 
@@ -74,7 +76,7 @@ Die Werte der in ItemDefinitionGroup definierten Metadaten können aus verschied
 
 - Umgebungsvariable
 
-- Globale Eigenschaft (aus der *MSBuild.exe*-Befehlszeile)
+- Globale Eigenschaft (aus der *MSBuild.exe* -Befehlszeile)
 
 - Reservierte Eigenschaft
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: In diesem Artikel erfahren Sie etwas über Probleme, die bei der Anmeldung bei Visual Studio-Abonnements auftreten können.
-ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005276"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903451"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Probleme beim Anmelden bei Visual Studio-Abonnements
 Um Ihr Visual Studio-Abonnement zu nutzen, müssen Sie sich zuerst anmelden.  Je nach Abonnement haben Sie es entweder mit einem Microsoft-Konto (MSA) oder einer Azure Active Directory-Identität (AAD) eingerichtet.  In diesem Artikel werden einige der Probleme besprochen, die beim Anmelden bei Ihrem Abonnement auftreten können.
@@ -32,12 +32,12 @@ Die Situation ist besonders verwirrend bei Benutzern, die über zwei Konten mit 
 Wenn Sie versuchen, sich bei einer Microsoft-Verbraucher-App mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse anzumelden, wird die untenstehende Meldung angezeigt.
 
    > [!div class="mx-imgBorder"]
-   > ![Konto kann nicht mit geschäftlicher E-Mail-Adresse erstellt werden](_img/sign-in-issues/cannot-use-work-email.png)
+   > ![Konto kann nicht mit geschäftlicher E-Mail-Adresse erstellt werden](_img/sign-in-issues/cannot-use-work-email.png "Geben Sie zum Erstellen des Kontos einen Benutzernamen und ein Kennwort an.")
 
 Wenn Sie jedoch versuchen, sich bei einer Microsoft-App anzumelden, die persönliche sowie Geschäfts-, Schul- und Uni-Konten unterstützt, sollte folgende Meldung erscheinen:
 
    > [!div class="mx-imgBorder"]
-   > ![Geschäfts-, Schul- und Uni-Konten werden unterstützt](_img/sign-in-issues/existing-account.png)
+   > ![Geschäfts-, Schul- und Uni-Konten werden unterstützt](_img/sign-in-issues/existing-account.png "Eine Anmeldung mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse ist hier nicht möglich.")
 
 ### <a name="are-existing-accounts-affected"></a>Sind bestehende Konten davon betroffen?
 Die hier beschriebene Blockierung der Anmeldung verhindert nur die Erstellung neuer Konten. Sie wirkt sich nicht auf Benutzer aus, die bereits über ein Microsoft-Konto mit einer Geschäfts-, Schul- oder Uni-E-Mail-Adresse verfügen. Falls Sie bereits in dieser Situation sind, haben wir das Umbenennen eines persönlichen Microsoft-Kontos vereinfacht. Dieser [Support-Artikel](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) enthält eine einfache Schritt-für-Schritt-Anleitung. Das Umbenennen Ihres persönlichen Microsoft-Kontos bedeutet, dass der Benutzername geändert wird, und hat keine Auswirkung auf Ihre geschäftlichen E-Mails oder auf die Art und Weise, wie Sie sich bei Unternehmensdiensten wie Microsoft 365 anmelden. Es hat auch keine Auswirkung auf Ihre persönlichen Angelegenheiten. Es ändert sich nur die Art und Weise, wie Sie sich anmelden. Sie können eine andere (persönliche) E-Mail-Adresse verwenden, eine neue @outlook.com-E-Mail-Adresse von Microsoft anfordern oder Ihre Telefonnummer als neuen Benutzernamen verwenden.
@@ -61,7 +61,7 @@ Der Begriff „Aliasing“ bezieht sich auf Benutzer, die über verschiedene Ide
 Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online Service für die Verzeichnisanmeldung verfügt, wie z.B. JohnD@contoso.com, aber Benutzer auf ihre E-Mail-Konten über Aliase oder Anzeigenamen, z.B. John.Doe@contoso.com, zugreifen. Für viele Kunden, die ihre Abonnements über das Volume Licensing Service Center (VLSC) verwalten, kann dies zu einer erfolglosen Anmeldung führen. Dies liegt daran, dass die angegebene E-Mail-Adresse (John.Doe@contoso.com) nicht mit der Verzeichnisadresse (JohnD@contoso.com) übereinstimmt, die für eine erfolgreiche Authentifizierung über die Option „Geschäfts-, Schul- oder Unikonto“ erforderlich ist.
 
 ### <a name="what-options-do-i-have"></a>Welche Optionen stehen mir zur Verfügung?
-Als Abonnent sollten Sie sich zunächst unbedingt an Ihren Administrator wenden, um sich mit dem Identitätskonfiguration für Ihr Unternehmen vertraut zu machen. Gegebenenfalls muss der Administrator Ihre Kontoeinstellungen von seinem Verwaltungsportal aus aktualisieren, oder Sie müssen ein Microsoft-Konto (MSA) mit Ihrer Firmen-E-Mail-Adresse erstellen. Bevor Sie die Schritte zur Erstellung eines MSA ausführen, sprechen Sie mit Ihrem Administrator über Richtlinien oder Probleme bei der Durchführung dieser Aktion. 
+Als Abonnent sollten Sie sich zunächst unbedingt an Ihren Administrator wenden, um sich mit der Identitätskonfiguration Ihres Unternehmen vertraut zu machen. Gegebenenfalls muss der Administrator Ihre Kontoeinstellungen über das Verwaltungsportal aktualisieren, oder Sie müssen ein Microsoft-Konto (MSA) mit Ihrer Unternehmens-E-Mail-Adresse erstellen. Bevor Sie die Schritte zur Erstellung eines MSA ausführen, sprechen Sie mit Ihrem Administrator über Richtlinien oder mögliche Probleme bei dieser Aktion. 
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Dokumentation zu Visual Studio](/visualstudio/)

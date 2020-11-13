@@ -1,5 +1,7 @@
 ---
 title: Protokollierung in MSBuild | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mit der MSBuild-Protokollierung den Buildfortschritt überwachen können, indem Sie Buildereignisse, Meldungen, Warnungen und Fehler in einer Protokolldatei erfassen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9de830003571f1f648cf06be634d9a773b95269f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633550"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904330"
 ---
 # <a name="logging-in-msbuild"></a>Protokollierung in MSBuild
 
@@ -43,6 +45,6 @@ Durch die Protokollierung können Sie den Status eines Builds nachverfolgen. Die
 
  Erläutert, wie Sie benutzerdefinierte Weiterleitungsprotokollierungen erstellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - Unter [Paralleles Erstellen von mehreren Projekten mit MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) wird beschrieben, wie mehrere Projekte schneller erstellt werden können, indem Sie sie parallel ausführen.

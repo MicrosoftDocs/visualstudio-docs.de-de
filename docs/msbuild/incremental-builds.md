@@ -1,5 +1,7 @@
 ---
 title: Inkrementelle Builds | Microsoft-Dokumentation
+description: Lernen Sie inkrementelle Builds von MSBuild kennen, die so optimiert sind, dass aktuelle Ausgabedateien nicht ausgeführt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633719"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904587"
 ---
 # <a name="incremental-builds"></a>Inkrementelle Builds
 
@@ -52,7 +54,7 @@ Drei Fälle werden unterschieden:
 
 - Das Ziel weist keine veralteten Ausgaben auf und wird übersprungen. MSBuild wertet das Ziel aus und nimmt Änderungen an Elementen und Eigenschaften vor, als ob das Ziel ausgeführt worden wäre.
 
-Zur Unterstützung der inkrementellen Kompilierung müssen Aufgaben sicherstellen, dass der `TaskParameter`-Attributwert jedes `Output`-Elements gleich einem Aufgabeneingabeparameter ist. Hier einige Beispiele:
+Zur Unterstützung der inkrementellen Kompilierung müssen Aufgaben sicherstellen, dass der `TaskParameter`-Attributwert jedes `Output`-Elements gleich einem Aufgabeneingabeparameter ist. Im Folgenden finden Sie einige Beispiele:
 
 ```xml
 <CreateProperty Value="123">
@@ -78,6 +80,6 @@ Aufgrund des Ausgaberückschlusses müssen Sie einem Ziel eine `CreateProperty`-
 
 Wenn das Ziel ausgeführt wird, erstellt dieser Code die Eigenschaft „CompileRan“ und weist ihr den Wert `true` zu. Wenn das Ziel übersprungen wird, wird CompileRan nicht erstellt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Ziele](../msbuild/msbuild-targets.md)

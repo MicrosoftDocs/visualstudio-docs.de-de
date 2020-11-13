@@ -1,18 +1,18 @@
 ---
-title: Umgang mit zu viel zugewiesenen Lizenzen | Microsoft-Dokumentation
+title: Umgang mit überbelegten Lizenzen in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
-description: Erfahren Sie, wie Administratoren mit Überbelegungen bei Abonnements umgehen.
-ms.openlocfilehash: 452363d09c6036d7edae5dab94e5d71ef87fb8b5
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: Erfahren Sie, wie Administratoren Überbelegungen bei Abonnements beheben können.
+ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022583"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904299"
 ---
 # <a name="over-allocated-subscriptions"></a>Überbelegte Abonnements
 Teilweise werden Bestellungen geändert, obwohl bereits Abonnenten hinzugefügt wurden, wodurch es dazu kommen kann, dass mehr Abonnements zugewiesen wurden als Lizenzen für Ihr Unternehmen vorhanden sind. Dies wird als „Überbelegung“ bezeichnet.  
@@ -28,13 +28,13 @@ Klicken Sie auf das Symbol oben links, um den Zuweisungsbereich zu öffnen und A
 Beachten Sie, dass überbelegte Abonnements mit einem schraffierten Balken dargestellt werden.  Die Anzahl der überbelegten Abonnements für alle Abonnementtypen wird oben im Bereich „Übersicht“ angegeben. Zudem zeigt jede Abonnementstufe einen eigenen Zuweisungsstatus an.  
 
 ## <a name="resolve-over-allocated-subscriptions"></a>Beheben von Abonnementüberbelegungen
-Es gibt mehrere Möglichkeiten, Überbelegungen zu beheben:
+Es gibt verschiedene Möglichkeiten, Überbelegungen zu beheben:
 - Wenden Sie sich an Ihren Handelspartner, um weitere Abonnements zu erwerben.
-- Warten Sie bis zur jährlichen Abgleichperiode, und bezahlen Sie die zu viel zugewiesenen Abonnements zu diesem Zeitpunkt. 
+- Warten Sie bis zum Ablauf des jährlichen True Up-Zeitraums, und bezahlen Sie die überbelegten Abonnements zu diesem Zeitpunkt. 
 - Löschen Sie einige Abonnementzuweisungen.  (Auch in diesem Fall ist eine Zahlung der Überbelegungen beim jährlichen Abgleich notwendig, da der Abgleich auf der maximalen Anzahl von Abonnements basiert, die zu einem beliebigen Zeitpunkt während des Jahrs zugewiesen waren.)
 
 ## <a name="billing-and-true-up"></a>Abrechnung und True Up
-Wenn Ihre Organisation über ein Enterprise Agreement (EA) verfügt, können Administratoren Abonnements zuweisen, ohne diese zu kaufen, und sie später durch einen Abgleichprozess bezahlen, der auch als „True Up“ bezeichnet wird.  Wenn Sie zu viel zuweisen, wird Ihrer Organisation die maximale Anzahl von Benutzern zugewiesenen Abonnements während des True Up in Rechnung gestellt.  Dies trifft auch zu, wenn Sie zum Zeitpunkt der Vornahme des True Ups nicht mehr die maximale Anzahl von Abonnements zugewiesen haben.  Weitere Informationen zum Überwachen Ihrer maximalen Verwendung finden Sie im Thema [Maximale Nutzung](maximum-usage.md).
+Wenn Ihre Organisation über ein Enterprise Agreement (EA) verfügt, können Administratoren Abonnements zuweisen, ohne diese zu kaufen, und sie später durch einen Abgleichprozess bezahlen, der auch als „True Up“ bezeichnet wird.  Wenn Sie Lizenzen überbelegen, wird Ihrer Organisation beim True Up die maximale Anzahl von Benutzern zugewiesenen Abonnements in Rechnung gestellt.  Dies trifft auch zu, wenn Sie zum Zeitpunkt der Vornahme des True Ups nicht mehr die maximale Anzahl von Abonnements zugewiesen haben.  Weitere Informationen zum Überwachen Ihrer maximalen Verwendung finden Sie im Thema [Maximale Nutzung](maximum-usage.md).
 
 
 ## <a name="see-also"></a>Weitere Informationen

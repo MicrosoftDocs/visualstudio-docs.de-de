@@ -1,5 +1,7 @@
 ---
 title: Item-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild das Item-Element verwendet, um ein benutzerdefiniertes Element und die zugehörigen Metadaten einzugrenzen. Jedes Element muss ein untergeordnetes Element eines ItemGroup-Elements sein.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289013"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904650"
 ---
 # <a name="item-element-msbuild"></a>Item-Element (MSBuild)
 
@@ -70,7 +72,7 @@ Nun können Sie jedoch die `Version`-Metadaten als Attribut übergeben, z.B. die
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Include`|Optionales Attribut.<br /><br /> Die Datei oder der Platzhalter, die bzw. der in die Liste der Elemente eingeschlossen werden soll.|
 |`Exclude`|Optionales Attribut.<br /><br /> Die Datei oder der Platzhalter, die bzw. der aus der Liste der Elemente ausgeschlossen werden soll.|

@@ -2,17 +2,17 @@
 title: Zugreifen auf das Verwaltungsportal für Kunden mit Visual Studio-Volumenlizenzen | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
-description: Erfahren Sie, wie Administratoren, die in Volumenlizenzverträgen festgelegt sind, auf das Verwaltungsportal für Visual Studio-Abonnements zugreifen können.
-ms.openlocfilehash: e5b95d2afcb9aec822b3a1ec63e76562c9d255e6
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+description: Erfahren Sie, wie Administratoren von Kunden mit Volumenlizenzverträgen auf das Verwaltungsportal für Visual Studio-Abonnements zugreifen können.
+ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353433"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904221"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>Zugreifen auf das Verwaltungsportal als Administrator, der in einem Volumenlizenzvertrag festgelegt ist
 
@@ -21,7 +21,7 @@ Wenn Sie der primäre Kontakt für die Vereinbarung Ihrer Organisation sind, erh
    > [!div class="mx-imgBorder"]
    > ![Benachrichtigung für Administrator, der in einem Volumenlizenzvertrag festgelegt ist](_img/volume-license/super-admin-notice-2020.png "Neue Administratoren erhalten eine Willkommensnachricht, um auf das Portal zuzugreifen.")
 
-Sobald Sie angemeldet sind, haben Sie automatisch Berechtigungen als Superadministrator und können Abonnements und andere Administratoren verwalten. Informationen zu den Unterschieden zwischen Superadministratoren und Administratoren finden Sie im Artikel zu [Administratorrollen](admin-roles.md).
+Sobald Sie angemeldet sind, sind Sie automatisch als Superadministrator festgelegt und können Abonnements und andere Administratoren verwalten. Informationen zu den Unterschieden zwischen Superadministratoren und Administratoren finden Sie im Artikel zu [Administratorrollen](admin-roles.md).
 
 Diese Informationen treffen u. a. auf die folgenden Arten von Lizenzverträgen zu: Konzern-, Konzern-Abonnement-, Select-, Select Plus-, Open- und Open License-Verträge sowie Verträge für Regierungsbehörden und Bildungseinrichtungen. 
 
