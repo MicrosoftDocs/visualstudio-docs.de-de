@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Hier erfahren Sie, wie Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Ihrem/Ihren Visual Studio-Abonnement(s) anmelden.
-ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005806"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903389"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Anmelden bei Visual Studio-Abonnement(s) mit dem Geschäfts-, Schul- oder Unikonto 
 
@@ -54,7 +54,7 @@ Sie können auch das aktuell ausgewählte Abonnement in der oberen rechten Ecke 
         > [!NOTE]
         > Dies wird bei vielen Abonnenten der Fall sein, die Visual Studio-Abonnements (früher MSDN) in der Vergangenheit verwendet haben.
 
-    - Wenn ein Weg nicht zum Erfolg führt, versuchen Sie es mit dem anderen.  Abonnementadministratoren könnten Ihr Abonnement geändert haben.
+    - Wenn ein Weg nicht zum Erfolg führt, versuchen Sie es mit dem anderen.  Möglicherweise haben Abonnementadministratoren Ihr Abonnement geändert.
 
 5. Geben Sie Ihr Kennwort ein.
 6. Klicken Sie auf **Anmelden**.

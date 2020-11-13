@@ -7,15 +7,15 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA).
-ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 388c847ce19ca7136efb7757fbc87bffdc35a673
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006084"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903798"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio-Abonnements in einer Microsoft-Vereinbarung für Produkte und Dienste (MPSA)
-Wenn Sie Visual Studio-Abonnements über das MPSA-Programm erworben haben, müssen Sie einige Dinge beachten, bevor Sie ein Administrator von Visual Studio-Abonnements werden und Abonnements für Ihre Benutzer zuweisen können. Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements wechseln.
+Wenn Sie Visual Studio-Abonnements über das MPSA-Programm erworben haben, müssen Sie einige Dinge beachten, bevor Sie Administrator von Visual Studio-Abonnements werden und Ihren Benutzern Abonnements zuweisen können. Wenn Sie bereits Administratorrechte besitzen, können Sie direkt zum [Verwaltungsportal](https://manage.visualstudio.com/) für Visual Studio-Abonnements wechseln.
 
 MPSA-Kunden verwalten ihre per MPSA erworbenen Ressourcen in einem Portal namens [Business Center](https://businessaccount.microsoft.com/Customer), das ähnliche Funktionen unterstützt wie das Volume Licensing Service Center (VLSC). Dazu gehören die Anzeige Ihrer Lizenzzusammenfassung, Aufträge, Downloads, Schlüssel, Benutzer usw. Visual Studio-Abonnements in MPSA verhalten sich jedoch ähnlich wie Clouddienste. Das Business Center verwendet zudem Geschäftskonten statt Microsoft-Konten (MSA) zur Anmeldung. Wenn Ihre Organisation Clouddienste wie Office 365 oder Azure Active Directory verwendet und Ihre E-Mail-Adresse Teil eines dieser beiden Dienste ist, ist es bereits ein Geschäftskonto. Dadurch können Sie sich mit Ihrem vorhandenen Kennwort beim Business Center registrieren. Wenn Ihre Organisation keine Clouddienste verwendet und Ihre E-Mail-Adresse kein Geschäftskonto ist, können Sie die Adresse dennoch für die Registrierung beim Business Center verwenden.
 
@@ -35,11 +35,11 @@ Im Folgenden finden Sie einige Anforderungen/Schritte, die erforderlich sind, um
 - Das Feld „Land oder Region“ in Ihrem Benutzerprofil (sowie für alle anderen Benutzer) in [Azure](https://portal.azure.com/) muss abhängig von Ihrer Region (z.B. USA, Kanada usw.) ausgefüllt sein. 
 
 > [!NOTE]
-> Benutzer, die Sie zu Administratoren für Visual Studio-Abonnements machen möchten, müssen keine Benutzer im Business Center sein, da sie nur die Kriterien 2 und 5 erfüllen müssen.
+> Benutzer, die Sie zu Administratoren für Visual Studio-Abonnements machen möchten, müssen keine Benutzer im Business Center sein, da sie nur die Kriterien 2 und 5 erfüllen müssen.
 
 Sobald Sie die oben genannten Kriterien erfüllen, können Sie damit fortfahren, Ihr Einkaufskonto Ihrem Mandanten zuzuordnen. Führen Sie dazu die folgenden Schritte aus.
 1. Melden Sie sich bei [Business Center](https://businessaccount.microsoft.com/Customer) an.
-2. Klicken Sie auf die Registerkarte **Konto**, und wählen Sie **Domänen zuordnen** aus.
+2. Klicken Sie auf die Registerkarte **Konto** , und wählen Sie **Domänen zuordnen** aus.
 3. Wählen Sie Ihr **Einkaufskonto** aus (falls mehrere vorhanden sind).
 4. Wählen Sie Ihren **Mandanten** aus (z.B. „contoso.onmicrosoft.com“).
 5. Klicken Sie auf **Domäne zuordnen**.
@@ -62,7 +62,7 @@ Eine ausführlichere Erläuterung dieses Prozesses finden Sie in den [Schnellsta
 > [!NOTE]
 > Nach der Domänenübernahme müssen Sie die Kriterien aus den fünf Schritten im Abschnitt „Vorabzuordnung des Mandanten (verwalteter Mandant)“ befolgen. Wenn die Kriterien erfüllt sind, müssen Sie sich nur an den MPSA-Support wenden, um weitere Administratoren für Visual Studio-Abonnements bereitzustellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Dokumentation zu Visual Studio](/visualstudio/)
 - [Dokumentation zu Azure DevOps](/azure/devops/)
 - [Azure-Dokumentation](/azure/)

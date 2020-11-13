@@ -1,5 +1,7 @@
 ---
 title: Elementmetadaten bei der Batchverarbeitung von Zielen | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild Elementmetadaten bei der Batchverarbeitung von Zielen verwendet, um eine Abhängigkeitsanalyse für die Ein- und Ausgaben eines Buildziels auszuführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0436402aa4000841a278497af697985c3a50c812
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633667"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904608"
 ---
 # <a name="item-metadata-in-target-batching"></a>Elementmetadaten bei der Batchverarbeitung von Zielen
 
@@ -67,7 +69,7 @@ Das folgende Beispiel enthält die Elementliste `Res`, die mithilfe der `Culture
 </Project>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [How to: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)
 - [Batchverarbeitung](../msbuild/msbuild-batching.md)

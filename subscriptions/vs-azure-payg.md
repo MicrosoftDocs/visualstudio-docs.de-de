@@ -1,18 +1,18 @@
 ---
-title: Azure PAYG-Vorteil
+title: Der Azure-Vorteil der nutzungsbasierten Zahlung in Visual Studio-Abonnements
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 10/21/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Sie ein Azure-Konto mit nutzungsbasierter Bezahlung einrichten.
-ms.openlocfilehash: 4071b16c56e67bdd86ba95f2ff982758cd23e150
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: cb9d89cc704c8d072e0807189f88ba757d9aad78
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353183"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904570"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest-Abonnements mit nutzungsbasierter Bezahlung
 Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Test Pay-As-You-Go-Abonnements, die Ihnen die Zusammenarbeit mit anderen Abonnenten ermöglichen, und zugleich die Isolation zwischen Teams und Umgebungen gewährleisten.  Sie erhalten exklusive rabattierte Stundensätze für Dev/Test sowie Cloudnutzungsrechte für Ihre Abonnementsoftware auf Azure.
@@ -26,11 +26,11 @@ Arbeiten Sie mit Ihrem Team in der Cloud zusammen.  Erstellen Sie mehrere Dev/Te
 
 3. Auf der Anmeldeseite von Microsoft Azure können Sie entweder das Dev/Test Pay-As-You-Go-Angebot (PAYG) einrichten oder ein Upgrade auf das Visual Studio Enterprise-Angebot durchführen.  Klicken Sie auf **Mit dem aktuellen Angebot (Dev/Test Pay-As-You-Go) fortfahren** , wenn Sie kein Upgrade durchführen möchten.
 
-4. Geben Sie eine Telefonnummer ein, um Ihre Identität zu verifizieren, und wählen Sie „SMS senden“ oder „Anrufen“ aus.  Geben Sie den Code ein, den Sie erhalten.  Klicken Sie auf **Code überprüfen** .
+4. Geben Sie eine Telefonnummer ein, um Ihre Identität zu verifizieren, und wählen Sie „SMS senden“ oder „Anrufen“ aus.  Geben Sie den Code ein, den Sie erhalten.  Klicken Sie auf **Code überprüfen**.
 
-5. Geben Sie dann die Abrechnungsinformationen für Ihr Konto an, und klicken Sie auf **Weiter** .  (Dies stellt die Kreditkarte dar, auf der Ihre Azure-Käufe abgerechnet werden.)
+5. Geben Sie dann die Abrechnungsinformationen für Ihr Konto an, und klicken Sie auf **Weiter**.  (Dies stellt die Kreditkarte dar, auf der Ihre Azure-Käufe abgerechnet werden.)
 
-6. Aktivieren Sie im Abschnitt „Vereinbarung“ das Kontrollkästchen, um den Abonnementvertrag, die Angebotsdetails und die Datenschutzbestimmungen zu akzeptieren, und klicken Sie auf **Kaufen** .
+6. Aktivieren Sie im Abschnitt „Vereinbarung“ das Kontrollkästchen, um den Abonnementvertrag, die Angebotsdetails und die Datenschutzbestimmungen zu akzeptieren, und klicken Sie auf **Kaufen**.
 
 7. Auf der Seite **Willkommen bei Microsoft Azure!** können Sie einen Supportplan erwerben oder damit beginnen, Ihr Abonnement zu nutzen.
 

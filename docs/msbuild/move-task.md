@@ -1,5 +1,7 @@
 ---
 title: Move-Task| Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Parameter und Einstellungen für die Move-Aufgabe von MSBuild, die Dateien an neue Speicherorte verschiebt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05b9f83fa7c80769ea3c584e2885c8fb1db24176
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8714108f7c537d9a50fda453050a54802f14e335
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633459"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903558"
 ---
 # <a name="move-task"></a>Move-Aufgabe
 
@@ -39,9 +41,9 @@ Verschiebt Dateien in einen neuen Speicherort.
 |`OverwriteReadOnlyFiles`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, werden Dateien überschrieben, auch wenn diese als schreibgeschützt gekennzeichnet sind.|
 |`SourceFiles`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die zu verschiebenden Dateien an.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- Es muss entweder der `DestinationFolder`-Parameter oder der `DestinationFiles`-Parameter angegeben werden, jedoch nicht beide. Wenn beide angegeben werden, schlägt die Aufgabe fehl, und ein Fehler wird protokolliert.
+ Es muss entweder der `DestinationFolder`-Parameter oder der `DestinationFiles`-Parameter angegeben werden, jedoch nicht beide. Wenn beide angegeben werden, schlägt der Task fehl, und ein Fehler wird protokolliert.
 
  Der `Move`-Task erstellt Ordner, die für die gewünschten Zieldateien benötigt werden.
 
@@ -49,5 +51,5 @@ Verschiebt Dateien in einen neuen Speicherort.
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
 - [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

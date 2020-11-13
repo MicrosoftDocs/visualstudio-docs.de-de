@@ -1,21 +1,21 @@
 ---
-title: Verwalten großer Teams und externer Vertragspartner | Visual Studio Marketplace
+title: Verwalten von Auftragnehmern und großen Teams in Visual Studio-Abonnements | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: Hier erfahren Sie mehr über die Aufgaben eines Administrators beim Verwalten von Abonnements für große Teams und externe Vertragspartner.
-ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: Hier erfahren Sie mehr über die Aufgaben eines Administrators beim Verwalten von Abonnements für große Teams und externe Auftragnehmer.
+ms.openlocfilehash: 55d2ac2eacaf523503c2593349abbcf561aed3b1
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005560"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904672"
 ---
 # <a name="large-teams-and-external-contractors"></a>Große Teams und externe Auftragnehmer
-Administratoren für Visual Studio-Abonnements sind dafür verantwortlich, sicherzustellen, dass jeder Benutzer, der mit lizenzierter Visual Studio-Software interagiert, angemessen für sein Visual Studio-Abonnement lizenziert ist.
+Administratoren für Visual Studio-Abonnements müssen sicherstellen, dass jeder Benutzer, der mit über Visual Studio lizenzierter Software interagiert, angemessen mit einem eigenen Visual Studio-Abonnement lizenziert ist.
 
 ## <a name="internal-teams"></a>Interne Teams
 Normalerweise umfassen moderne Softwareorganisationen Beteiligte, die verschiedenen Gruppen angehören. Legen Sie Kontaktpersonen für jede Gruppe fest, die Ihnen dabei helfen können, den Benutzerbestand nachzuverfolgen, und Ihnen Änderungen mitteilen.

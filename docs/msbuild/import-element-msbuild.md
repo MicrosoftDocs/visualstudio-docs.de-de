@@ -1,5 +1,7 @@
 ---
 title: Import-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie, wie MSBuild das Import-Element verwendet, um die Inhalte einer Projektdatei in eine andere Projektdatei zu importieren.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094496"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903950"
 ---
 # <a name="import-element-msbuild"></a>Import-Element (MSBuild)
 
@@ -66,7 +68,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
  Mithilfe des `Import` -Elements können Sie Code wiederverwenden, der in vielen Projektdateien verwendet wird. Dies erleichtert die Verwaltung des Codes, da jedes von Ihnen ausgeführte Update für den freigegebenen Code an alle Projekte weitergegeben wird, die ihn importieren.
 
- Gemäß Konvention werden freigegebene importierte Projektdateien als *TARGETS*-Dateien gespeichert, es handelt sich jedoch um MSBuild-Standardprojektdateien. MSBuild hindert Sie nicht daran, ein Projekt zu importieren, das eine andere Dateinamenerweiterung aufweist. Es wird jedoch empfohlen, aus Konsistenzgründen die Erweiterung *TARGETS* zu verwenden.
+ Gemäß Konvention werden freigegebene importierte Projektdateien als *TARGETS* -Dateien gespeichert, es handelt sich jedoch um MSBuild-Standardprojektdateien. MSBuild hindert Sie nicht daran, ein Projekt zu importieren, das eine andere Dateinamenerweiterung aufweist. Es wird jedoch empfohlen, aus Konsistenzgründen die Erweiterung *TARGETS* zu verwenden.
 
  Relative Pfade in importierten Projekten werden relativ zum Verzeichnis des importierenden Projekts interpretiert (mit einigen wenigen Ausnahmen, die weiter unten beschrieben werden). Wenn eine Projektdatei in verschiedene Projektdateien an unterschiedliche Speicherorte importiert wird, werden daher die relativen Pfade in der importierten Projektdatei unterschiedlich für jedes importierte Projekt interpretiert. Dazu gibt es zwei Ausnahmen: In `Import`-Elementen wird der Pfad immer relativ zum Projekt interpretiert, das das `Import`-Element enthält. `UsingTask` interpretiert den relativen Pfad für das `AssemblyFile`-Attribut immer relativ zur Datei, die das `UsingTask`-Element enthält.
 

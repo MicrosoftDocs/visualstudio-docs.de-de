@@ -1,27 +1,27 @@
 ---
-title: 'Vorgehensweise: Verwenden von verbundenen Microsoft-Konten und Azure Active Directory-Identitäten | Microsoft-Dokumentation'
+title: Verwenden von verbundenen Identitäten in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Erfahren Sie, wie Sie mit verbundenen Microsoft-Konten und Azure Active Directory-Identitäten arbeiten.
-ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4c7b72c91c4c1180a5fd888e3afd0a33fa2d81b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005237"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904040"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Verwenden von verbundenen Identitäten in Visual Studio-Abonnements
-Wenn Sie über Ihr Geschäfts-, Schul- oder Unikonto ein Visual Studio-Abonnement erhalten und Ihr Microsoft-Konto (MSA) zum Anmelden verwenden, verknüpft Ihr Abonnementadministrator möglicherweise Ihr MSA mit Ihrer Identität im Azure Active Directory (Azure AD) Ihrer Organisation.  Damit ändert sich der Zugriff auf einige der Vorteile, die in Ihrem Abonnement enthalten sind. 
+Wenn Sie ein Visual Studio-Abonnement über Ihr Geschäfts-, Schul- oder Unikonto erhalten und Ihr Microsoft-Konto (MSA) zum Anmelden verwenden, verknüpft Ihr Abonnementadministrator möglicherweise Ihr MSA mit Ihrer Identität im Azure Active Directory (Azure AD) Ihrer Organisation.  Damit ändert sich der Zugriff auf einige der Vorteile, die in Ihrem Abonnement enthalten sind. 
 
 ## <a name="overview-of-connected-ids"></a>Übersicht über verbundene Identitäten
 Organisationen setzen verstärkt auf Azure AD-basierte Identitäten, um verbesserte Sicherheitsfunktionen und Unterstützung für die automatisierte Verwaltung von Abonnements zu bieten.  Wenn Ihr Abonnement ein MSA wie z. B. @outlook.com oder eine andere persönliche E-Mail-Adresse verwendet, ändert Ihr Administrator möglicherweise die E-Mail-Adresse, mit der Sie sich anmelden, in Ihre Azure AD-Identität.  Damit ändert sich die Art und Weise, in der Sie sich beim Abonnentenportal unter https://my.visualstudio.com anmelden, aber möglicherweise nicht der Zugriff auf all Ihre Vorteile.  
 
-Wenn Ihr Administrator Ihre MSA- und Azure AD-Identitäten verbindet, erhalten Sie eine E-Mail, in der Sie darüber informiert werden, dass Sie statt mit Ihrem MSA mit Ihrer Azure AD-Identität auf Ihr Visual Studio-Abonnement zugreifen müssen. 
+Wenn Ihr Administrator Ihre MSA- und Azure AD-Identitäten verknüpft, erhalten Sie eine E-Mail, in der Sie darüber informiert werden, dass Sie statt mit Ihrem MSA mit Ihrer Azure AD-Identität auf Ihr Visual Studio-Abonnement zugreifen müssen. 
 
 ## <a name="how-to-access-benefits-using-azure-ad-identities"></a>Zugreifen auf Vorteile bei Verwendung von Azure AD-Identitäten
 Nachdem Ihr Administrator Ihr MSA mit Ihrer Azure AD-Identität verbunden hat, müssen Sie sich mit dieser Azure AD-Identität beim Abonnentenportal unter https://my.visualstudio.com anmelden, um auf Vorteile zuzugreifen, die Azure AD erfordern.  Dazu gehören:

@@ -1,5 +1,7 @@
 ---
 title: Übersicht über den O/R Designer für LINQ to SQL
+description: Sie erhalten eine Übersicht zu LINQ to SQL-Tools in Visual Studio. Erfahren Sie mehr über den Object Relational Designer (O/R-Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 55f6fa2ad9eda2d701563d1fa99c76f5cd5c7c1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af394318d18244fc6e20e517d0ff985ca5e5ad1f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282006"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436236"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL-Tools in Visual Studio
 
@@ -21,7 +23,7 @@ LINQ to SQL war die erste objektrelationale Mappingtechnologie, die von Microsof
 
 ## <a name="install-the-linq-to-sql-tools"></a>Installieren der LINQ to SQL-Tools
 
-In Visual Studio werden LINQ to SQL-Klassen, die SQL-Tabellen darstellen, mithilfe des **objektrelationalen Designers** (**O/R-Designer**) erstellt. Der O/R-Designer ist die Benutzeroberfläche, in der Sie DBML-Dateien bearbeiten können. Für die Bearbeitung von DBML-Dateien mit einer Designeroberfläche sind die LINQ to SQL-Tools erforderlich, die nicht im Lieferumfang der Visual Studio-Workloads enthalten sind.
+In Visual Studio werden LINQ to SQL-Klassen, die SQL-Tabellen darstellen, mithilfe des **objektrelationalen Designers** ( **O/R-Designer** ) erstellt. Der O/R-Designer ist die Benutzeroberfläche, in der Sie DBML-Dateien bearbeiten können. Für die Bearbeitung von DBML-Dateien mit einer Designeroberfläche sind die LINQ to SQL-Tools erforderlich, die nicht im Lieferumfang der Visual Studio-Workloads enthalten sind.
 
 Wenn Sie die LINQ to SQL-Tools installieren möchten, müssen Sie den Visual Studio-Installer starten, Sie auf **Ändern** sowie auf die Registerkarte **Einzelne Komponenten** klicken und in der Kategorie **Codetools** die Option **LINQ to SQL-Tools** auswählen.
 
@@ -33,15 +35,15 @@ Der **O/R-Designer** stellt eine visuelle Entwurfsoberfläche zum Erstellen von 
 
 ## <a name="open-the-or-designer"></a>Öffnen des O/R-Designers
 
-Klicken Sie auf **Projekt** > **Neues Element hinzufügen**, und wählen Sie dann aus der Liste der Projektelemente **LINQ to SQL-Klassen** aus:
+Klicken Sie auf **Projekt** > **Neues Element hinzufügen** , und wählen Sie dann aus der Liste der Projektelemente **LINQ to SQL-Klassen** aus:
 
 ![LINQ to SQL-Klassen](../data-tools/media/raddata-linq-to-sql-classes.png)
 
-Visual Studio erstellt eine *DBML*-Datei und fügt sie Ihrer Projektmappe hinzu. Hierbei handelt es sich um die XML-Mappingdatei und die zugehörigen Codedateien.
+Visual Studio erstellt eine *DBML* -Datei und fügt sie Ihrer Projektmappe hinzu. Hierbei handelt es sich um die XML-Mappingdatei und die zugehörigen Codedateien.
 
 ![LINQ to SQL-Klassen im Projektmappen-Explorer](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png)
 
-Wenn Sie die *DBML*-Datei auswählen, zeigt Visual Studio die Benutzeroberfläche des **O/R-Designers** an, in der Sie das Modell visuell erstellen können. Die folgende Abbildung zeigt den Designer, nachdem die Northwind-Tabellen `Customers` und `Orders` aus dem **Server-Explorer** gezogen wurden. Beachten Sie die Beziehung zwischen den Tabellen.
+Wenn Sie die *DBML* -Datei auswählen, zeigt Visual Studio die Benutzeroberfläche des **O/R-Designers** an, in der Sie das Modell visuell erstellen können. Die folgende Abbildung zeigt den Designer, nachdem die Northwind-Tabellen `Customers` und `Orders` aus dem **Server-Explorer** gezogen wurden. Beachten Sie die Beziehung zwischen den Tabellen.
 
 ![LINQ to SQL-Designer](../data-tools/media/raddata-linq-to-sql-designer.png)
 

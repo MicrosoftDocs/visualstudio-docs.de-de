@@ -1,18 +1,18 @@
 ---
-title: Verwenden des Abonnentenportals – https://my.visualstudio.com | Microsoft-Dokumentation
+title: Verwenden des Abonnentenportals in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 07/19/2019
+ms.date: 10/28/2020
 ms.topic: overview
 description: Erfahren Sie mehr über sämtliche Vorteile, die Sie im Portal für Visual Studio-Abonnements nutzen können.
-ms.openlocfilehash: c2b79a1f4bedb9c6e04e7f764befd478e37222e3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d4f65f4c430d585485c388f22664726c848e6d1e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005198"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904582"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Verwenden des Abonnentenportals – „my.visualstudio.com“
 

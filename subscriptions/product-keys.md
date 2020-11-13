@@ -1,18 +1,18 @@
 ---
-title: Verwenden von Product Keys | Microsoft-Dokumentation
+title: Verwenden von Product Keys in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 09/18/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
-ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005845"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92903999"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 

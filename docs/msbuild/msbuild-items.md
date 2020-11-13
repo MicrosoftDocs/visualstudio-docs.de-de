@@ -1,6 +1,6 @@
 ---
 title: MSBuild-Elemente | Microsoft-Dokumentation
-description: Verwenden Sie das MSBuild Include-Attribut der ItemGroup, um Dateien anzugeben, die in einem Build enthalten sein sollen.
+description: Erfahren Sie, wie Sie das Include-Attribut der ItemGroup von MSBuild verwenden, um Dateien anzugeben, die in einem Build enthalten sein sollen.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247586"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904504"
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
 
@@ -45,7 +45,7 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 </ItemGroup>
 ```
 
-Das `Include`-Attribut ist ein Pfad, der relativ zum Ordner der Projektdatei „$(MSBuildProjectPath)“ interpretiert wird. Dies gilt auch dann, wenn sich das Element in einer importierten Datei, wie etwa einer *TARGETS*-Datei, befindet.
+Das `Include`-Attribut ist ein Pfad, der relativ zum Ordner der Projektdatei „$(MSBuildProjectPath)“ interpretiert wird. Dies gilt auch dann, wenn sich das Element in einer importierten Datei, wie etwa einer *TARGETS* -Datei, befindet.
 
 ## <a name="create-items-during-execution"></a>Erstellen von Elementen während der Ausführung
 
@@ -89,7 +89,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 
 ## <a name="use-the-exclude-attribute"></a>Verwenden des Exclude-Attributs
 
- Item-Elemente können das `Exclude`-Attribut enthalten, das bestimmte Elemente (Dateien) aus dem Elementtyp ausschließt. Das `Exclude`-Attribut wird normalerweise zusammen mit Platzhalterzeichen verwendet. Der folgende XML-Code fügt z.B. dem CSFile-Elementtyp alle *CS*-Dateien außer *DoNotBuild.cs* hinzu, die sich im Verzeichnis befinden.
+ Item-Elemente können das `Exclude`-Attribut enthalten, das bestimmte Elemente (Dateien) aus dem Elementtyp ausschließt. Das `Exclude`-Attribut wird normalerweise zusammen mit Platzhalterzeichen verwendet. Der folgende XML-Code fügt z.B. dem CSFile-Elementtyp alle *CS* -Dateien außer *DoNotBuild.cs* hinzu, die sich im Verzeichnis befinden.
 
 ```xml
 <ItemGroup>
@@ -150,7 +150,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 
 ### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> Umwandeln von Elementtypen mithilfe von Metadaten
 
- Elementlisten können mithilfe von Metadaten in neue Elementlisten umgewandelt werden. Sie können z.B. mit dem Ausdruck `@(CppFiles -> '%(Filename).obj')` einen `CppFiles`-Elementtyp, der über Elemente in Form von *CPP*-Dateien verfügt, in eine entsprechende Liste von *OBJ*-Dateien umwandeln.
+ Elementlisten können mithilfe von Metadaten in neue Elementlisten umgewandelt werden. Sie können z.B. mit dem Ausdruck `@(CppFiles -> '%(Filename).obj')` einen `CppFiles`-Elementtyp, der über Elemente in Form von *CPP* -Dateien verfügt, in eine entsprechende Liste von *OBJ* -Dateien umwandeln.
 
  Der folgende Code erstellt einen `CultureResource`-Elementtyp, der Kopien aller `EmbeddedResource`-Elemente mit `Culture`-Metadaten enthält. Der `Culture`-Metadatenwert ist nun der Wert der neuen Metadaten `CultureResource.TargetDirectory`.
 
@@ -195,7 +195,7 @@ Weitere Informationen zu Platzhalterzeichen finden Sie unter [Vorgehensweise: Au
 
  Das `Remove`-Attribut entfernt bestimmte Elemente (Dateien) aus dem Elementtyp. Dieses Attribut wurde in .NET Framework 3.5 eingeführt (nur von Zielen innerhalb). Sowohl die Ziele innerhalb als auch außerhalb werden ab MSBuild 15.0 unterstützt.
 
- Das folgende Beispiel veranschaulicht das Entfernen aller *CONFIG*-Dateien aus dem Compile-Elementtyp.
+ Das folgende Beispiel veranschaulicht das Entfernen aller *CONFIG* -Dateien aus dem Compile-Elementtyp.
 
 ```xml
 <Target>

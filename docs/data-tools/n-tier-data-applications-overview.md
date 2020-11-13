@@ -1,5 +1,7 @@
 ---
 title: Übersicht über n-schichtige Datenanwendungen
+description: Lesen Sie eine Übersicht zur n-schichtigen Datenanwendung. Diese in viele Ebenen unterteilten Datenanwendungen werden auch als verteilte Anwendungen oder Anwendungen mit mehreren Ebenen bezeichnet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426862"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436210"
 ---
 # <a name="n-tier-data-applications-overview"></a>Übersicht über n-schichtige Datenanwendungen
 *n-schichtige* Datenanwendungen sind Datenanwendungen, die in mehrere *Schichten* aufgeteilt sind. Sie werden auch „verteilte Anwendungen“ oder „Anwendungen mit mehreren Ebenen“ genannt, da die Verarbeitung auf voneinander unabhängige, auf Client und Server verteilte Ebenen aufgeteilt wird. Beim Entwickeln einer Anwendung, die auf Daten zugreift, sollten die verschiedenen Ebenen, aus denen die Anwendung besteht, klar getrennt sein.

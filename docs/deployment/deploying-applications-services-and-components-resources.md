@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382971"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434492"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Stellen Sie Ihre App in einem Ordner, in IIS, in Azure oder einem anderen Ziel bereit.
 
@@ -126,7 +126,7 @@ Weitere Informationen finden Sie in dem [detaillierten Vergleich](/azure/archite
 #### <a name="when-to-choose-azure-virtual-machines"></a>Unter welchen Umständen Sie Azure Virtual Machines wählen sollten
 
 - Sie möchten eine über das Internet zugängliche Webanwendung mit vollständiger Kontrolle über die Lebensdauer der zugewiesenen IP-Adressen bereitstellen.
-- Sie benötigen auf den Servern Anpassungen auf Computerebene, einschließlich Software, wie z.B. ein spezielles Datenbanksysten, bestimmte Netzwerkkonfigurationen, Datenträgerpartitionen und so weiter.
+- Sie benötigen auf den Servern Anpassungen auf Computerebene, einschließlich Software, wie z. B. ein spezielles Datenbanksystem, bestimmte Netzwerkkonfigurationen, Datenträgerpartitionen usw.
 - Sie benötigen hochgradige Kontrolle über die Skalierung Ihrer Webanwendung.
 - Sie benötigen aus anderen Gründen direkten Zugriff auf die Server, auf denen Ihre Anwendung gehostet wird.
 
@@ -147,19 +147,29 @@ Weitere Informationen finden Sie unter
 
 ## <a name="folder"></a>Ordner
 
-Bereitstellung im Dateisystem bedeutet einfach, dass Sie die Dateien Ihrer App in einen bestimmten Ordner auf Ihrem eigenen Computer kopieren. Dies erfolgt meistens zu Testzwecken oder zum Bereitstellen der Anwendung für die Verwendung durch eine begrenzte Anzahl von Personen, wenn auf dem Computer auch ein Server ausgeführt wird. Wird der Zielordner in einem Netzwerk freigegeben, können die Webanwendungsdateien durch das Bereitstellen im Dateisystem für andere Personen verfügbar gemacht werden, die diese dann auf bestimmten Servern bereitstellen können.
+Bereitstellung im Dateisystem bedeutet, dass Sie die Dateien Ihrer App in einen bestimmten Ordner auf Ihrem eigenen Computer kopieren. Die Bereitstellung in einem Ordner erfolgt meistens zu Testzwecken oder zum Bereitstellen der Anwendung für die Verwendung durch eine begrenzte Anzahl von Personen, wenn auf dem Computer auch ein Server ausgeführt wird. Wird der Zielordner in einem Netzwerk freigegeben, können die Webanwendungsdateien durch das Bereitstellen im Dateisystem für andere Personen verfügbar gemacht werden, die diese dann auf bestimmten Servern bereitstellen können.
+::: moniker range=">=vs-2019"
+Ab Visual Studio 2019 16.8 beinhaltet das Ordnerziel die Möglichkeit, eine .NET-Windows-Anwendung mithilfe von ClickOnce zu veröffentlichen.
 
+Wenn Sie eine .NET Core 3.1-Windows-Anwendung (oder höher) mit ClickOnce veröffentlichen möchten, finden Sie weitere Informationen unter [Bereitstellen einer .NET-Windows-Anwendung mit ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 Alle lokalen Computer, auf denen ein Server ausgeführt wird, können die App, abhängig von Konfiguration und Netzwerkverbindungen, über das Internet oder ein Intranet zur Verfügung stellen. (Wenn Sie einen Computer direkt mit dem Internet verbinden, müssen Sie ihn besonders vor externen Sicherheitsrisiken schützen.) Da Sie diese Computer verwalten, haben Sie vollständige Kontrolle über die Software- und Hardwarekonfigurationen.
 
-Beachten Sie Folgendes: Wenn die Verwendung von Clouddiensten wie Azure App Service oder Azure Virtual Machines aus irgendeinem Grund (z.B. Computerzugriff) nicht möglich ist, können Sie [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) in Ihrem eigenen Datencenter verwenden. Azure Stack ermöglicht die lokale Verwaltung und Verwendung von Computerressourcen über Azure App Service und Azure Virtual Machines.
+Wenn die Verwendung von Clouddiensten wie Azure App Service oder Azure Virtual Machines aus irgendeinem Grund (z. B. Computerzugriff) nicht möglich ist, können Sie [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) in Ihrem eigenen Rechenzentrum verwenden. Azure Stack ermöglicht die lokale Verwaltung und Verwendung von Computerressourcen über Azure App Service und Azure Virtual Machines.
 
 ### <a name="when-to-choose-file-system-deployment"></a>Wann sollten Sie die Bereitstellung im Dateisystem wählen?
 
 - Sie müssen die Anwendung nur auf einer Dateifreigabe bereitstellen. Von dort werden sie von anderen Benutzern auf verschiedenen Servern bereitgestellt.
+::: moniker range=">=vs-2019"
+- Sie möchten eine .NET-Windows-Anwendung mithilfe von ClickOnce bereitstellen
+::: moniker-end
 - Sie benötigen nur eine lokale Testbereitstellung.
 - Sie möchten Anwendungsdateien einzeln untersuchen und möglicherweise ändern, bevor sie auf ein anderes Bereitstellungsziel gesendet werden.
 
 Weitere Informationen finden Sie unter [Bereitstellen einer App in einem lokalen Ordner mithilfe von Visual Studio](quickstart-deploy-to-local-folder.md).
+::: moniker range=">=vs-2019"
+Weitere Informationen zum Bereitstellen einer .NET-Windows-Anwendung mit ClickOnce finden Sie unter [Bereitstellen einer .NET-Windows-Anwendung mit ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 
 Weitere Hilfe zum Auswählen der Einstellungen finden Sie in den folgenden Themen:
 

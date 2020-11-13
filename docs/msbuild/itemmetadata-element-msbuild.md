@@ -1,5 +1,7 @@
 ---
 title: ItemMetadata-Element (MSBuild) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das ItemMetadata-Element von MSBuild, das einen benutzerdefinierten Elementmetadatenschlüssel mit dem Metadatenwert enthält.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aba274068d8cba4f22526fdefac36d6c75f9f1e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633615"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903589"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata-Element (MSBuild)
 
 Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementmetadatenwert enthält. Ein Element kann über eine beliebige Anzahl von Metadaten-Schlüssel-Wert-Paaren verfügen.
 
- \<Project> \<ItemGroup> \<Item>
+ \<Project> \<ItemGroup>
  \<Item>
 
 ## <a name="syntax"></a>Syntax
@@ -42,13 +44,13 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions (Bedingungen)](../msbuild/msbuild-conditions.md).|
+|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
- Keine.
+ Keine
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -74,7 +76,7 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elemente](../msbuild/msbuild-items.md)
