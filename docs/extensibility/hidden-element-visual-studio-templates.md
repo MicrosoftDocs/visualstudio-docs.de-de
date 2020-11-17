@@ -1,5 +1,7 @@
 ---
 title: Hidden-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das ausgeblendete Element und wie es angibt, ob die Vorlage entweder in den Dialogfeldern Neues Projekt oder neues Element hinzufügen angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711111"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672699"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden-Element (Visual Studio-Vorlagen)
 
@@ -61,7 +63,7 @@ Ein Textwert ist erforderlich.
 
 Der Text muss entweder `true` oder sein `false` , um anzugeben, ob die Vorlage in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 `Hidden` ist ein optionales Element.
 
@@ -96,7 +98,7 @@ Im folgenden Beispiel werden die Metadaten für eine c#-Vorlage veranschaulicht.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Schema Referenz für Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

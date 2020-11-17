@@ -1,5 +1,7 @@
 ---
 title: Files-Element | Microsoft-Dokumentation
+description: Anzeigen von Verweis Informationen über das Files-Element, bei dem es sich um ein Element im SharePoint-Projekt Element Schema handelt.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03473f40bb78c866f3d93dea11a20b8747afad7b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546509"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672807"
 ---
 # <a name="files-element"></a>Files-Element
   Gibt die Dateien an, die mit dem SharePoint-Projekt Element bereitgestellt werden sollen, z. b. featureelementdateien und die Ausgabe abhängiger nicht-SharePoint-Projekte.
@@ -42,14 +44,14 @@ ms.locfileid: "85546509"
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Optionales **projectitemfiletype** -Element.<br /><br /> Stellt eine SharePoint-Datei (z. b. eine featureelementdatei) dar, die beim Bereitstellen in SharePoint in das Projekt Element eingeschlossen werden soll.|
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Optionales **projectoutputfiletype** -Element.<br /><br /> Stellt die Ausgabe eines Projekts dar, das in das Projekt Element aufgenommen werden soll, wenn es in SharePoint bereitgestellt wird.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projekt Element dar. Dieses Element ist das erforderliche Stamm Element der `.spdata` Datei.|
 

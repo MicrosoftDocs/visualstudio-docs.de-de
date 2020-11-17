@@ -1,5 +1,7 @@
 ---
 title: Erweitern von SharePoint-Projekt Elementen | Microsoft-Dokumentation
+description: Überprüfen Sie die Aufgaben zum Erweitern von SharePoint-Projekt Elementen. Verstehen Sie, wie Projekt Element Erweiterungen und Projekt Element Instanzen verknüpft sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967395"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672573"
 ---
 # <a name="extend-sharepoint-project-items"></a>Erweitern von SharePoint-Projekt Elementen
   Erstellen Sie eine Projekt Element Erweiterung, wenn Sie einer Art von SharePoint-Projekt Element, das bereits in Visual Studio installiert ist, Funktionen hinzufügen möchten. Sie können z. b. eine Erweiterung für die integrierten **Ereignis Empfänger** -oder **Listen Definitions** Projekt Elemente in Visual Studio erstellen, oder Sie können eine Erweiterung für einen benutzerdefinierten Projekt Elementtyp erstellen. Sie können auch eine Erweiterung für alle Typen von SharePoint-Projekt Elementen erstellen.
@@ -29,9 +31,9 @@ ms.locfileid: "62967395"
 
  Wenn Sie ein Projekt Element erweitern, können Sie dem Projekt Element auch die folgenden Funktionen hinzufügen:
 
-- Fügen Sie dem Projekt Element ein Kontextmenü Element hinzu. Das Menü Element wird angezeigt, wenn Sie das Kontextmenü für das Projekt Element in **Projektmappen-Explorer**öffnen. Um das Kontextmenü zu öffnen, klicken Sie mit der rechten Maustaste auf das Projekt Element, oder wählen Sie es aus, und wählen Sie dann die **UMSCHALT** + **Taste F10** . Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Kontextmenü Elements zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).
+- Fügen Sie dem Projekt Element ein Kontextmenü Element hinzu. Das Menü Element wird angezeigt, wenn Sie das Kontextmenü für das Projekt Element in **Projektmappen-Explorer** öffnen. Um das Kontextmenü zu öffnen, klicken Sie mit der rechten Maustaste auf das Projekt Element, oder wählen Sie es aus, und wählen Sie dann die **UMSCHALT** + **Taste F10** . Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Kontextmenü Elements zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md).
 
-- Fügen Sie dem Projekt Element eine benutzerdefinierte Eigenschaft hinzu. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie das Projekt Element in **Projektmappen-Explorer**auswählen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).
+- Fügen Sie dem Projekt Element eine benutzerdefinierte Eigenschaft hinzu. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie das Projekt Element in **Projektmappen-Explorer** auswählen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md).
 
   Eine exemplarische Vorgehensweise, die das Erstellen, bereitstellen und Testen einer Projekt Element Erweiterung veranschaulicht, finden Sie unter Exemplarische Vorgehensweise [: Erweitern eines SharePoint-Projekt Elementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md).
 
@@ -64,9 +66,9 @@ ms.locfileid: "62967395"
 |Webpart|Microsoft. VisualStudio. SharePoint. WebPart|
 |Workflow Zuordnungs Formular|Microsoft. VisualStudio. SharePoint. Workflow Association|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Gewusst wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
 - [Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projekt Elementtyps](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
-- [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)

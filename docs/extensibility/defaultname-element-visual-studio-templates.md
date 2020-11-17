@@ -1,5 +1,7 @@
 ---
 title: DefaultName-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das DefaultName-Element und darüber, wie es den Namen angibt, den das Visual Studio-Projekt System für das Projekt oder das Element generiert, wenn es erstellt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712307"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672729"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName-Element (Visual Studio-Vorlagen)
 Gibt den Namen an, den das Visual Studio-Projekt System für das Projekt oder Element generiert, wenn es erstellt wird.
@@ -54,7 +56,7 @@ Gibt den Namen an, den das Visual Studio-Projekt System für das Projekt oder El
 
  Dieser Text gibt den Standardnamen des Projekts oder Elements an.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `DefaultName` ist ein optionales Element.
 
  Bei-Projekten gibt dieses Element den Namen des Verzeichnisses an, in dem das Projekt auf dem Datenträger gespeichert wird. Für-Elemente wird der Dateiname der Quelldatei angegeben.

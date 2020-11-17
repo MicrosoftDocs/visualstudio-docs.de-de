@@ -1,5 +1,7 @@
 ---
 title: FeatureProperties-Element | Microsoft-Dokumentation
+description: Anzeigen von Verweis Informationen über das FeatureProperties-Element, das ein Element im SharePoint-Projekt Element Schema ist.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967330"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672599"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties-Element
   Eine Auflistung von Eigenschafts Werten, die in einer Funktion enthalten sind, wenn Sie in SharePoint bereitgestellt wird. Nachdem eine Funktion bereitgestellt wurde, können Sie auf die Eigenschaftswerte im Code zugreifen.
@@ -48,7 +50,7 @@ ms.locfileid: "62967330"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projekt Element dar. Dieses Element ist das erforderliche Stamm Element der `.spdata` Datei.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Weitere Informationen zu Featureeigenschaften finden Sie unter [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Elementinformationen
@@ -62,4 +64,4 @@ ms.locfileid: "62967330"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Schema Referenz für SharePoint-Projekt Elemente](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

@@ -1,5 +1,7 @@
 ---
 title: Erweitern von SharePoint-Projekten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Projekt Erweiterung erstellen, wenn Sie Features auf Projektebene von SharePoint-Projekten anpassen möchten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6bc92d65ed179c7f2cb2f569a7d254a025887845
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967480"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672638"
 ---
 # <a name="extend-sharepoint-projects"></a>Erweitern von SharePoint-Projekten
   Erstellen Sie eine Projekt Erweiterung, wenn Sie Features auf Projektebene von SharePoint-Projekten anpassen möchten. Beispielsweise können Sie benutzerdefinierte Projekteigenschaften hinzufügen oder auf Ereignisse auf Projektebene reagieren, die ausgelöst werden, wenn der Benutzer eine SharePoint-Projekt Mappe in Visual Studio entwickelt.
@@ -29,9 +31,9 @@ ms.locfileid: "62967480"
 
  Wenn Sie eine Projekt Erweiterung erstellen, können Sie den SharePoint-Projekten auch die folgenden Funktionen hinzufügen:
 
-- Fügen Sie ein Kontextmenü Element hinzu. Das Menü Element wird angezeigt, wenn Sie das Kontextmenü für einen SharePoint-Projekt Knoten in **Projektmappen-Explorer** öffnen, indem Sie mit der rechten Maustaste auf den Knoten klicken oder ihn auswählen und **dann die** + Taste**F10** drücken. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Kontextmenü Elements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).
+- Fügen Sie ein Kontextmenü Element hinzu. Das Menü Element wird angezeigt, wenn Sie das Kontextmenü für einen SharePoint-Projekt Knoten in **Projektmappen-Explorer** öffnen, indem Sie mit der rechten Maustaste auf den Knoten klicken oder ihn auswählen und **dann die** + Taste **F10** drücken. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Kontextmenü Elements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).
 
-- Fügen Sie eine benutzerdefinierte Eigenschaft hinzu. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie ein SharePoint-Projekt in **Projektmappen-Explorer**auswählen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).
+- Fügen Sie eine benutzerdefinierte Eigenschaft hinzu. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie ein SharePoint-Projekt in **Projektmappen-Explorer** auswählen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).
 
   Eine exemplarische Vorgehensweise, die veranschaulicht, wie eine Projekt Erweiterung erstellt, bereitgestellt und getestet wird, finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).
 
@@ -40,7 +42,7 @@ ms.locfileid: "62967480"
 
  Um auf eine bestimmte Projekt Instanz zuzugreifen, behandeln Sie eines der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> Ereignisse des *ProjectService* -Parameters in der Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> Methode. Um z. b. zu ermitteln, wann ein SharePoint-Projekt zu einer Projekt Mappe hinzugefügt wird, behandeln Sie das- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> Ereignis. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
@@ -48,4 +50,4 @@ ms.locfileid: "62967480"
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Erweitern von SharePoint-Projekt Elementen](../sharepoint/extending-sharepoint-project-items.md)
 - [Erweiterte SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)

@@ -1,5 +1,7 @@
 ---
 title: FullClassName-Element (vs-Vorlagen-Assistenten Erweiterung)
+description: Informieren Sie sich über das FullClassName-Element und darüber, wie es der voll qualifizierte Name der Klasse ist, die die IWizard-Schnittstelle implementiert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769608"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672742"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName-Element (Assistenten Erweiterung für Visual Studio-Vorlagen)
 Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle implementiert.
@@ -43,7 +45,7 @@ Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle impleme
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Enthält die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten.|
 
@@ -52,7 +54,7 @@ Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle impleme
 
  Dieser Text gibt die Klasse an, die die- `IWizard` Schnittstelle implementiert. Die angegebene Klasse muss in der Assembly vorhanden sein, die durch das [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) -Element angegeben wird.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `FullClassName` ist ein erforderliches untergeordnetes Element von `WizardExtension`.
 
 ## <a name="example"></a>Beispiel
