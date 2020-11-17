@@ -1,5 +1,7 @@
 ---
 title: ProjectItem-Element (Visual Studio-Element Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das ProjectItem-Element für Element Vorlagen und darüber, wie es verschiedene Attribute annimmt, je nachdem, ob die Vorlage für ein Projekt oder ein Element vorgesehen ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770728"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672332"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem-Element (Visual Studio-Element Vorlagen)
 Gibt eine Datei an, die in der Element Vorlage enthalten ist.
@@ -48,12 +50,12 @@ Gibt eine Datei an, die in der Element Vorlage enthalten ist.
 
 ### <a name="attributes"></a>Attributes
 
-| attribute | Beschreibung |
+| Attribut | Beschreibung |
 |---------------------| - |
 | `SubType` | Optionales Attribut.<br /><br /> Gibt den Untertyp eines Elements in einer Element Vorlage mit mehreren Dateien an. Dieser Wert wird verwendet, um den Editor zu bestimmen, der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Öffnen des Elements verwendet. |
 | `CustomTool` | Optionales Attribut.<br /><br /> Legt das CustomTool für das Element in der Projektdatei fest. |
 | `ItemType` | Optionales Attribut.<br /><br /> Legt den ItemType für das Element in der Projektdatei fest. |
-| `ReplaceParameters` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element über Parameterwerte verfügt, die beim Erstellen eines Projekts aus der Vorlage ersetzt werden müssen. Der Standardwert ist `false`sein. |
+| `ReplaceParameters` | Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob das Element über Parameterwerte verfügt, die beim Erstellen eines Projekts aus der Vorlage ersetzt werden müssen. Der Standardwert ist `false`. |
 | `TargetFileName` | Optionales Attribut.<br /><br /> Gibt den Namen des Elements an, das aus der Vorlage erstellt wird. Dieses Attribut eignet sich für die Verwendung von Parameter Ersetzung zum Erstellen eines Element namens. |
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
@@ -61,7 +63,7 @@ Gibt eine Datei an, die in der Element Vorlage enthalten ist.
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Gibt den Inhalt der Vorlage an.|
 
@@ -70,7 +72,7 @@ Gibt eine Datei an, die in der Element Vorlage enthalten ist.
 
  Ein `string` , der den Namen einer Datei in der *ZIP* -Datei der Vorlage darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `ProjectItem` ist ein optionales untergeordnetes Element von `TemplateContent` .
 
  Das- `TargetFileName` Attribut kann zum Umbenennen von Dateien mit Parametern verwendet werden. Wenn z. b. die Datei " *MyFile. vb* " im Stammverzeichnis der *ZIP* -Datei der Vorlage vorhanden ist, Sie jedoch möchten, dass die Datei basierend auf dem Dateinamen, der vom Benutzer im Dialogfeld " **Neues Element hinzufügen** " angegeben wird, benannt wird, verwenden Sie den folgenden XML-Code:

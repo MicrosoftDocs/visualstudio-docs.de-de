@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89053428"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344493"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Messen der Anwendungsleistung über die Befehlszeile
 
@@ -33,7 +33,7 @@ In dem Beispiel, das in diesem Artikel beschrieben wird, sammeln Sie Leistungsin
 
 * Kenntnisse im Umgang mit Befehlszeilentools
 
-* Installieren Sie die [Leistungstools für Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) auf dem Remotecomputer, um Leistungsinformationen auf einem Remotecomputer zu erfassen, auf dem Visual Studio nicht installiert ist. Die Version der Tools muss mit Ihrer Version von Visual Studio übereinstimmen.
+* Installieren Sie die [Remotetools für Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) auf dem Remotecomputer, um Leistungsinformationen auf einem Remotecomputer zu erfassen, auf dem Visual Studio nicht installiert ist. Die Version der Tools muss mit Ihrer Version von Visual Studio übereinstimmen.
 
 ## <a name="collect-performance-data"></a>Sammeln von Leistungsdaten
 

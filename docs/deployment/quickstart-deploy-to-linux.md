@@ -1,5 +1,7 @@
 ---
 title: Veröffentlichen in App Service unter Linux
+description: In diesem Artikel werden Methoden zum Veröffentlichen von ASP.NET Core-Apps in Azure App Service unter Linux mithilfe von Containern, einschließlich fortlaufender und einmaliger Optionen vorgestellt.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 790e88edcd5d0d77e09cc349c82c242cd3da876d
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830729"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350721"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Veröffentlichen einer ASP.NET Core-App in Azure App Service mit Visual Studio unter Linux
 
@@ -34,7 +36,7 @@ In diesem Artikel wird beschrieben, wie Sie das Tool zum **Veröffentlichen** f�
 
     ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "„Veröffentlichen“ auswählen")
 
-1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird das Fenster **Veröffentlichen** angezeigt. Wählen Sie **Neu**aus.
+1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird das Fenster **Veröffentlichen** angezeigt. Wählen Sie **Neu** aus.
 
 1. Wählen Sie im Fenster **Veröffentlichen** die Option **Azure** aus.
 

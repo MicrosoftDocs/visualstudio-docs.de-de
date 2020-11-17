@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 09/21/2020
+ms.date: 11/09/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren Abonnementzuweisungen bearbeiten können.
-ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904158"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433556"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Bearbeiten von Visual Studio-Abonnementzuweisungen
 Als Abonnementadministrator können Sie Änderungen an den Abonnements vornehmen, die Personen innerhalb Ihrer Organisation zugewiesen sind.  Dieser Artikel beschreibt die Arten von Änderungen, die Sie vornehmen können, und enthält die notwendigen Schritte.
@@ -23,7 +23,7 @@ Als Abonnementadministrator können Sie Änderungen an den Abonnements vornehmen
 ## <a name="change-subscriber-information"></a>Eingeben der Abonnenteninformationen
 Sie können die Informationen eines Abonnenten bearbeiten, um Fehler zu beheben und Informationen zu aktualisieren.
 
-Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...), die neben der E-Mail-Adresse des Abonnenten angezeigt werden, wenn Sie mit der Maus darauf zeigen. Eine Dropdownliste wird angezeigt.  Klicken Sie auf **Bearbeiten** , um die Details des Abonnenten zu ändern. 
+Klicken Sie für das Bearbeiten eines Abonnenten auf die Auslassungspunkte (...), die neben der E-Mail-Adresse des Abonnenten angezeigt werden, wenn Sie mit der Maus darauf zeigen. Eine Dropdownliste wird angezeigt.  Klicken Sie auf **Bearbeiten**, um die Details des Abonnenten zu ändern. 
 > [!div class="mx-imgBorder"]
 > ![Auswählen des zu bearbeitenden Abonnenten](_img/edit-license/select-subscriber.png "Klicken Sie auf die Auslassungspunkte, und wählen Sie „Bearbeiten“ aus.")
 
@@ -39,8 +39,8 @@ Sehen Sie sich dieses Video an, oder lesen Sie weiter, um zu erfahren, wie Sie m
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
-   > [!IMPORTANT]
-   > Abonnementebenen (d. h. Enterprise, Professional usw.) und Abonnement-GUIDs können nicht über eine Massenbearbeitung geändert werden.  Wenn Sie Ihren Benutzern bestimmte Abonnement-GUIDs zuweisen müssen, verwenden Sie den Prozess zum Hinzufügen von Benutzern, indem Sie die Abonnement-ID auswählen. Wenn Sie versuchen, einen Upload auszuführen, bei dem diese Elemente in der Massenbearbeitungsvorlage geändert wurden, kommt es beim Upload zu einem Fehler.
+> [!NOTE]
+> Ändern Sie in der Vorlage nicht die Abonnement-GUIDs. Weitere Informationen finden Sie in unserem Artikel [Zuweisen spezifischer Abonnement-GUIDs](assign-guid.md).
 
 1. Navigieren Sie zur Registerkarte „Abonnenten“, um mehrere Abonnenten gleichzeitig zu bearbeiten. Klicken Sie im oberen Bereich des Menübands auf **Massenbearbeitung**.
 
@@ -48,7 +48,7 @@ Sehen Sie sich dieses Video an, oder lesen Sie weiter, um zu erfahren, wie Sie m
    > [!div class="mx-imgBorder"]
    > ![Bearbeiten einer Lizenz: Exportieren der Massenbearbeitungsliste](_img/edit-license/edit-license-bulk-edit-export.png "Klicken Sie auf „Diese Excel-Datei exportieren“, um eine Liste Ihrer aktuellen Abonnements zu erstellen.")
 
-3. Speichern Sie die Datei lokal, damit Sie diese einfach finden und vor dem Upload erforderliche Änderungen vornehmen können. Für einen erfolgreichen Upload darf die **Abonnementebene oder Abonnement-GUID nicht in der Massenbearbeitungsdatei bearbeitet werden** , da dies zu einem Fehler beim Upload führt.
+3. Speichern Sie die Datei lokal, damit Sie diese einfach finden und vor dem Upload erforderliche Änderungen vornehmen können. 
 
 4. Wechseln Sie zum Administratorportal für Visual Studio-Abonnements, und klicken Sie im Dialogfeld „Massenbearbeitung“ auf **Durchsuchen**. Wählen Sie die Excel-Datei aus, die Sie gespeichert haben, und klicken Sie auf **OK**. Der Fortschritt des Uploads wird auf dem Bildschirm angezeigt.
    > [!div class="mx-imgBorder"]

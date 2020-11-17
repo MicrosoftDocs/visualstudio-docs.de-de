@@ -3,15 +3,15 @@ title: Einschließen eines NuGet-Pakets in Ihr Projekt
 description: In diesem Dokument wird erläutert, wie Sie ein NuGet-Paket mithilfe von Visual Studio für Mac in ein Projekt einfügen. Es veranschaulicht das Suchen und Herunterladen von Paketen und bietet eine Einführung in die IDE-Integrationsfunktionen.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 11/01/2019
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74127242"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493490"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installieren und Verwalten von NuGet-Paketen in Visual Studio für Mac
 
@@ -23,7 +23,7 @@ Eine Einführung in die Verwendung von NuGet in Visual Studio für Mac finden Si
 
 ## <a name="find-and-install-a-package"></a>Suchen und Installieren eines Pakets
 
-1. Klicken Sie bei einem in Visual Studio für Mac geöffneten Projekt im **Lösungspad** mit der rechten Maustaste auf den Ordner **Abhängigkeiten** (**Pakete**, wenn Sie ein Xamarin-Projekt verwenden), und wählen Sie dann **NuGet-Pakete verwalten...** aus.
+1. Klicken Sie bei einem in Visual Studio für Mac geöffneten Projekt im **Projektmappenfenster** mit der rechten Maustaste auf den Ordner **Abhängigkeiten** (bzw. **Pakete**, wenn Sie ein Xamarin-Projekt verwenden), und klicken Sie dann auf **NuGet-Pakete verwalten...** .
 
     ![Kontextaktion für das Hinzufügen eines neuen NuGet-Pakets](media/nuget-walkthrough-packages-menu.png)
 
@@ -63,7 +63,7 @@ Paketupdates können entweder alle auf einmal durchgeführt werden, indem Sie mi
 
 Klicken Sie mit der rechten Maustaste auf **Abhängigkeiten**, um das Kontextmenü anzuzeigen, und wählen Sie **Aktualisieren** aus, um alle Pakete zu aktualisieren:
 
-![Paketmenü](media/nuget-walkthrough-packages-menu-update.png)
+![Kontextmenü für „Abhängigkeiten“ mit hervorgehobener Option „Aktualisieren“](media/nuget-walkthrough-packages-menu-update.png)
 
 * **NuGet-Pakete verwalten:** Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
 * **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.
@@ -71,8 +71,21 @@ Klicken Sie mit der rechten Maustaste auf **Abhängigkeiten**, um das Kontextmen
 
 Die Optionen „Aktualisieren“ und „Wiederherstellen“ sind auch auf Projektmappenebene verfügbar und wirken sich auf alle Projekte in der Projektmappe aus.
 
+### <a name="updating-to-pre-release-versions-of-packages"></a>Aktualisieren auf Vorabversionen von Paketen
+Wenn Sie ein Update auf eine neuere Vorabversion eines Pakets durchführen möchten, können Sie mit der rechten Maustaste auf **Abhängigkeiten** klicken, um das Kontextmenü zu öffnen, und dort auf **NuGet-Pakete verwalten...** klicken.
+
+![Kontextmenü für „Abhängigkeiten“ mit hervorgehobener Option „NuGet-Pakete verwalten...“](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+
+Aktivieren Sie das Kontrollkästchen bei **Vorabversionspakete anzeigen** unten im Dialogfeld.
+
+![Geöffnetes Dialogfeld „NuGet-Pakete verwalten“ mit aktivierter Option „Vorabversionspakete anzeigen“](media/nuget-walkthrough-show-pre-release-packages.png)
+
+Wählen Sie schließlich auf der Registerkarte **Updates** des Dialogfelds das Paket aus, das Sie aktualisieren möchten, wählen Sie in der Dropdownliste bei **Neue Version** die neue Vorabversion aus, und klicken Sie auf **Paket aktualisieren**.
+
+![Auf der Registerkarte „Updates“ geöffnetes Dialogfeld „NuGet-Pakete verwalten“ mit ausgewähltem Paket und geöffneter Dropdownliste bei „Neue Version“](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
+
 ### <a name="locating-outdated-packages"></a>Suchen veralteter Pakete
-Im Lösungspad wird angezeigt, welche Version eines Pakets derzeit installiert ist, und Sie können per Rechtsklick ein Update für das Paket durchführen.
+Im Projektmappenfenster können Sie die derzeit installierte Version eines Pakets anzeigen und per Rechtsklick ein Update für das Paket durchführen.
 
 ![Paketmenü mit den Optionen „Update“, „Entfernen“ und „Aktualisieren“](media/nuget-walkthrough-PackageMenu.png)
 
@@ -121,11 +134,11 @@ Navigieren Sie in Visual Studio für Mac zu **Visual Studio > Einstellungen > Nu
 
 Klicken Sie auf **Hinzufügen**, um eine neue Quelle festzulegen. Geben Sie einen Anzeigenamen und die URL (oder den Dateipfad) zur Paketquelle an. Wenn es sich bei der Quelle um einen sicheren Webserver handelt, geben Sie auch einen Benutzernamen und ein Kennwort an, andernfalls lassen Sie diese Einträge leer:
 
-![Hinzufügen von Paketquellen](media/nuget-walkthrough-PackageSource2.png)
+![Dialogfeld „Paketquelle hinzufügen“ mit Feldern für Name, Speicherort-URL, Benutzername und Kennwort](media/nuget-walkthrough-PackageSource2.png)
 
 Verschiedene Quellen können bei der Suche nach Paketen angegeben werden:
 
-![Hinzufügen von Paketquellen](media/nuget-walkthrough-PackageSource3.png)
+![Dialogfeld „Pakete hinzufügen“ mit Dropdownliste mit Paketquellen](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Quellcodeverwaltung
 

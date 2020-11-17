@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 0b51a41a2b2df5ac685caebbf08606ae86b4230a
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182637"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344526"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Debuggen von C# und C++ in derselben Debugsitzung
 
@@ -44,7 +44,7 @@ Visual Studio muss in den folgenden Workloads installiert sein:
 - **Desktopentwicklung mit C++**
 - Entweder **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung**, je nachdem, welchen App-Typ Sie erstellen möchten
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es unter  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es unter [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
 
 Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Wählen Sie im Visual Studio-Installer die benötigten Workloads aus, und klicken Sie dann auf **Modify** (Anpassen).
 
@@ -177,41 +177,11 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
 ## <a name="configure-mixed-mode-debugging"></a>Konfigurieren des Debuggens im gemischten Modus
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Framework-App
-
 1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten **Mixed_Mode_Calling_App** aus, und klicken Sie auf das **Eigenschaftensymbol**. Klicken Sie alternativ auf den Projektknoten und dann auf **Eigenschaften**.
 
 1. Wählen Sie im rechten Bereich **Debuggen** aus, aktivieren Sie das Kontrollkästchen **Debuggen von nativem Code aktivieren**, und schließen Sie anschließend die Eigenschaftenseite, um die Änderungen zu speichern.
 
     ![Debuggen im gemischten Modus aktivieren](../debugger/media/mixed-mode-enable-native-code-debugging.png)
-
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Core-App
-
-In den meisten Visual Studio Versionen ab Visual Studio 2017 müssen Sie die Datei *launchSettings.json* statt der Projekteigenschaften verwenden, um das Debuggen im gemischten Modus für nativen Code in einer .NET Core-App zu aktivieren. In diesem [GitHub-Issue](https://github.com/dotnet/project-system/issues/1125) finden Sie UI-Updates für dieses Feature.
-
-1. Erweitern Sie im **Projektmappen-Explorer** die **Eigenschaften**, und öffnen Sie die Datei *launchSettings.json*.
-
-   >[!NOTE]
-   >Standardmäßig befindet sich *launchSettings.json* unter *C:\Benutzer\Benutzername\source\repos\Mixed_Mode_Calling_App\Properties*. Wählen Sie das Projekt **Mixed_Mode_Calling_App** aus, und klicken Sie auf im **Projektmappen-Explorer** auf das **Eigenschaftensymbol**, wenn *launchSettings.json* nicht vorhanden ist. Klicken Sie alternativ mit der rechten Maustaste auf das Projekt und dann auf **Eigenschaften**. Nehmen Sie eine vorrübergehende Änderung auf der Registerkarte **Debuggen** vor, und erstellen Sie das Projekt. Dadurch wird die Datei *launchSettings.json* erstellt. Machen Sie die auf der Registerkarte **Debuggen** vorgenommene Änderung rückgängig.
-
-1. Fügen Sie in der Datei *launchsettings.json* die folgende Codezeile hinzu:
-
-    ```csharp
-    "nativeDebugging": true
-    ```
-
-    Der vollständige Code sieht aus wie im folgenden Beispiel:
-
-    ```csharp
-    {
-      "profiles": {
-        "Mixed_Mode_Calling_App": {
-          "commandName": "Project",
-          "nativeDebugging": true
-        }
-      }
-    }
-    ```
 
 ## <a name="set-a-breakpoint-and-start-debugging"></a>Festlegen eines Breakpoints und Starten des Debuggens
 

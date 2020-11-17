@@ -1,5 +1,7 @@
 ---
 title: Kreatanplace-Element (Visual Studio-Vorlagen)
+description: Erfahren Sie mehr über das Element "kreatanplace" und wie es angibt, ob das Projekt erstellt und die Parameter Ersetzung an einem bestimmten oder temporären Speicherort durchgeführt werden soll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739663"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671981"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Kreatanplace-Element (Visual Studio-Vorlagen)
 Gibt an, ob das Projekt erstellt und die Parameter Ersetzung am angegebenen Speicherort durchgeführt werden soll, oder ob die Parameter Ersetzung an einem temporären Speicherort durchgeführt und das Projekt am angegebenen Speicherort gespeichert werden soll.
@@ -53,7 +55,7 @@ Gibt an, ob das Projekt erstellt und die Parameter Ersetzung am angegebenen Spei
 
  Der Text muss entweder `true` oder `false` sein. Gibt `true` an, dass das Projekt erstellt und die Parameter Ersetzung an der im Dialogfeld **Neues Projekt** angegebenen Position ausgeführt wird. Wenn `false` der Wert ist, wird die Parameter Ersetzung an einem temporären Speicherort durchgeführt, und das Projekt wird dann an den angegebenen Speicherort kopiert.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `CreateInPlace` ist ein optionales Element. Standardwert: `true`.
 
 ## <a name="example"></a>Beispiel

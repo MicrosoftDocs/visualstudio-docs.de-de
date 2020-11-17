@@ -3,16 +3,16 @@ title: 'Vorgehensweise: Öffnen mehrerer Projektmappen'
 description: Erfahren Sie, wie Sie in Visual Studio für Mac mehrere Projektmappen und mehrere Instanzen der Anwendung öffnen.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/02/2019
+ms.date: 11/09/2020
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: d90a2a92e2902633e5667e71c5692faa8fa161e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e54f002141379d93a40df69ea070d5a64eba2f7d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950050"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493438"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Öffnen mehrerer Projektmappen oder Instanzen von Visual Studio für Mac
 
@@ -40,7 +40,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie zusätzlich zu Ihrer ersten Pro
 
     ![Screenshot des Dialogfelds „Optionen“ mit deaktiviertem Kontrollkästchen „Aktuellen Arbeitsbereich schließen“](media/open-multiple-solutions-image1.png)
 
-5. Wählen Sie **Öffnen** aus, um die zweite Projektmappe im Lösungspad zu öffnen.
+5. Klicken Sie auf **Öffnen**, um die zweite Projektmappe im Projektmappenfenster zu öffnen.
 
 Alternativ können Sie auch die folgenden Schritte ausführen, wenn Sie die Projektmappe kürzlich geöffnet haben:
 
@@ -48,7 +48,7 @@ Alternativ können Sie auch die folgenden Schritte ausführen, wenn Sie die Proj
 
     ![Screenshot des Menüs „Zuletzt verwendete Projektmappen“](media/open-multiple-solutions-image2.png)
 
-1. Halten Sie die **STRG**-Taste gedrückt, und wählen Sie die Projektmappe aus. Durch diese Kombination wird die zweite Projektmappe im Lösungspad geöffnet.
+1. Halten Sie die **STRG**-Taste gedrückt, und wählen Sie die Projektmappe aus. Durch diese Kombination wird die zweite Projektmappe im Projektmappenfenster geöffnet.
 
 ## <a name="related-video"></a>Zugehörige Videos
 

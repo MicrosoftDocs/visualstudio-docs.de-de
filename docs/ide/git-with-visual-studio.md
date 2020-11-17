@@ -1,36 +1,32 @@
 ---
-title: Neue Git-Funktionen in Visual Studio (Vorschau)
+title: Git-Benutzeroberfläche in Visual Studio
 titleSuffix: ''
-description: Hier erfahren Sie mehr über die neue integrierte Git-Benutzeroberfläche in Visual Studio 2019.
-ms.date: 10/13/2020
+description: In diesem Artikel erfahren Sie, wie Sie mithilfe der neuen integrierten Git-Benutzeroberfläche in Visual Studio 2019 Ihre Produktivität steigern können.
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334206"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493555"
 ---
-# <a name="new-git-experience-in-visual-studio-preview"></a>Neue Git-Funktionen in Visual Studio (Vorschau)
+# <a name="git-productivity-in-visual-studio"></a>Git-Produktivität in Visual Studio
 
-Ab [Version 16.6](/visualstudio/releases/2019/release-notes-v16.6) bietet Visual Studio 2019 jetzt eine neue Git-Benutzeroberfläche, die die Verwendung von Git über die integrierte Entwicklungsumgebung vereinfacht. Git ist das am häufigsten verwendete moderne Versionskontrollsystem. Unabhängig davon, ob Sie ein professioneller Entwickler sind oder erst die Grundsätze des Programmierens erlernen, kann Git für Sie sehr nützlich sein.
+Git ist nun die Standardressource für die Versionskontrolle in Visual Studio 2019. Seit [Version 16.6](/visualstudio/releases/2019/release-notes-v16.6) wurde das Featurespektrum anhand des Benutzerfeedbacks weiter ausgearbeitet und verbessert. Die neue Git-Benutzeroberfläche ist seit dem Release von [Version 16.8](/visualstudio/releases/2019/release-notes/) standardmäßig für alle Benutzer aktiviert.
 
 > [!TIP]
-> Wenn Sie noch nicht mit Git vertraut sind, ist die Website https://git-scm.com/ ein guter Startpunkt. Dort finden Sie ein beliebtes Onlinebuch, Videos zu Git-Grundlagen und Spickzettel.
+> Git ist das am häufigsten verwendete moderne Versionskontrollsystem. Unabhängig davon, ob Sie ein professioneller Entwickler sind oder erst die Grundlagen des Programmierens erlernen, kann Git sehr nützlich für Sie sein. Wenn Sie noch nicht mit Git vertraut sind, ist die Website https://git-scm.com/ ein guter Startpunkt. Dort finden Sie Spickzettel, ein beliebtes E-Book sowie Videos zu den Git-Grundlagen.
 
-## <a name="how-to-start-using-git-in-visual-studio"></a>Einstieg in die Verwendung von Git in Visual Studio
+## <a name="how-to-use-git-in-visual-studio"></a>Verwenden von Git in Visual Studio
 
-Navigieren Sie zu **Extras** > **Optionen** > **Umgebung** > **Vorschaufeatures** , und aktivieren Sie dann das Kontrollkästchen **New Git user experience** (Neue Git-Benutzeroberfläche), um die neue Git-Benutzeroberfläche zu verwenden.
+Es gibt drei Möglichkeiten, Ihre Produktivität mit Git in Visual Studio 2019 zu steigern:
 
-:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
-
-Es gibt drei Möglichkeiten, Git in Visual Studio 2019 zu verwenden:
-
-- [Öffnen eines vorhandenen Git-Repositorys:](#open-an-existing-local-repository) Wenn sich Ihr Code bereits auf Ihrem Computer befindet, können Sie ihn über **Datei** > **Öffnen** > **Projekt/Projektmappe** (oder **Ordner** ) öffnen. Visual Studio erkennt automatisch, ob ein initialisiertes Git-Repository verfügbar ist.
+- [Öffnen eines vorhandenen Git-Repositorys:](#open-an-existing-local-repository) Wenn sich Ihr Code bereits auf Ihrem Computer befindet, können Sie ihn über **Datei** > **Öffnen** > **Projekt/Projektmappe** (oder **Ordner**) öffnen. Visual Studio erkennt automatisch, ob ein initialisiertes Git-Repository verfügbar ist.
 - [Erstellen eines neuen Git-Repositorys:](#create-a-new-git-repository) Wenn Ihr Code Git nicht zugeordnet ist, können Sie ein neues Git-Repository erstellen.
 - [Klonen eines vorhandenen Git-Repositorys:](#clone-an-existing-git-repository) Wenn sich der Code, mit dem Sie arbeiten möchten, nicht auf Ihrem Computer befindet, können Sie jedes beliebige Remoterepository klonen.
 
@@ -98,7 +94,7 @@ Visual Studio erleichtert mithilfe der Verknüpfungen **Commit für alle und Pus
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot: Zeilenweiser Vergleich der Dateiversionen in Visual Studio":::
 
 > [!TIP]
-> Wenn Sie eine Verbindung mit dem Azure DevOps-Repository hergestellt haben, können Sie das Azure DevOps-Arbeitselement mit einem Commit mithilfe des Zeichens „#“ zuordnen. Sie können Ihr Azure DevOps-Repository über **Team Explorer** > **Verbindungen verwalten** verbinden.
+> Wenn Sie eine Verbindung mit dem Azure DevOps-Repository hergestellt haben, können Sie ein Azure DevOps-Arbeitselement mithilfe des Zeichens „#“ committen. Sie können Ihr Azure DevOps-Repository über **Team Explorer** > **Verbindungen verwalten** verbinden.
 
 ### <a name="select-an-existing-branch"></a>Auswählen eines vorhandenen Branchs
 
@@ -124,7 +120,7 @@ Sie können einen vorhandenen lokalen Branch oder einen Remotebranch als Basis v
 
 ## <a name="git-repository-window"></a>Fenster „Git-Repository“
 
-Visual Studio verfügt über das neue Fenster **Git-Repository** , bei dem es sich um eine konsolidierte Ansicht aller Details in Ihrem Repository einschließlich aller Verläufe in Bezug auf Branches, Remoterepositorys und Commits handelt. Sie können entweder über die Optionen **Git** oder **Ansicht** auf der Menüleiste oder über die Statusleiste direkt auf dieses Fenster zugreifen.
+Visual Studio verfügt über das neue Fenster **Git-Repository**, bei dem es sich um eine konsolidierte Ansicht aller Details in Ihrem Repository einschließlich aller Verläufe in Bezug auf Branches, Remoterepositorys und Commits handelt. Sie können entweder über die Optionen **Git** oder **Ansicht** auf der Menüleiste oder über die Statusleiste direkt auf dieses Fenster zugreifen.
 
 ### <a name="manage-branches"></a>Verwalten von Branches
 
@@ -142,7 +138,7 @@ Der Indikator fungiert auch als Verlinkung zum Commitverlauf des Branchs im Fens
 
 #### <a name="commit-details"></a>Commitdetails
 
-Wenn Sie auf einen **Commit** doppelklicken, zeigt Visual Studio die entsprechenden Details in einem separaten Toolfenster an. Von hier aus können Sie den Commit rückgängig machen, zurücksetzen, die Commitnachricht ändern oder ein Tag für den Commit erstellen. Wenn Sie auf eine geänderte Datei im Commit klicken, öffnet Visual Studio die parallele **Diff** -Ansicht des Commits und des übergeordneten Elements.
+Wenn Sie auf einen **Commit** doppelklicken, zeigt Visual Studio die entsprechenden Details in einem separaten Toolfenster an. Von hier aus können Sie den Commit rückgängig machen, zurücksetzen, die Commitnachricht ändern oder ein Tag für den Commit erstellen. Wenn Sie auf eine geänderte Datei im Commit klicken, öffnet Visual Studio die parallele **Diff**-Ansicht des Commits und des übergeordneten Elements.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Screenshot: Dialogfeld „Commitdetails“ in Visual Studio":::
 
@@ -180,20 +176,27 @@ Sie können auch die Umschaltflächen zum Anzeigen bzw. Ausblenden von Unterschi
 
 ## <a name="personalize-your-git-settings"></a>Personalisieren der Git-Einstellungen
 
-Navigieren Sie auf der Menüleiste entweder zu **Git** > **Einstellungen** oder zu **Extras** > **Optionen** > **Quellcodeverwaltung** , um Ihre Git-Einstellungen sowohl auf Repositoryebene als auch auf globaler Ebene zu personalisieren und anzupassen. Wählen Sie anschließend die gewünschten Optionen aus.
+Navigieren Sie auf der Menüleiste entweder zu **Git** > **Einstellungen** oder zu **Extras** > **Optionen** > **Quellcodeverwaltung**, um Ihre Git-Einstellungen sowohl auf Repositoryebene als auch auf globaler Ebene zu personalisieren und anzupassen. Wählen Sie anschließend die gewünschten Optionen aus.
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Screenshot: Dialogfeld „Optionen“ zum Personalisieren und Anpassen von Einstellungen in der Visual Studio-IDE":::
 
+## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Verwenden der Legacyversion des Team Explorers in Visual Studio
+
+Die neue Git-Benutzeroberfläche stellt ab [Version 16.8](/visualstudio/releases/2019/release-notes/) das Standardsystem für die Versionskontrolle in Visual Studio 2019 bereit. Wenn Sie sie deaktivieren möchten, können Sie dies jedoch auch tun. Wechseln Sie zu **Extras** > **Optionen** > **Umgebung** > **Vorschaufeatures**, und aktivieren Sie das Kontrollkästchen **New Git user experience** (Neue Git-Benutzeroberfläche), wodurch Sie zur Legacyversion des Team Explorers zurückkehren.
+
+:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Screenshot: Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
+
 ## <a name="whats-next"></a>Nächste Schritte
 
-Informieren Sie sich über Neuigkeiten. Diese Seite wird aktualisiert, da die neue Git-Benutzeroberfläche in Visual Studio 2019 weiter optimiert wird.
+Die neue Git-Benutzeroberfläche ist in Visual Studio 2019, [Version 16.8](/visualstudio/releases/2019/release-notes/), zwar standardmäßig aktiviert, wird aber weiterhin um neue Features erweitert, um die Leistung zu verbessern. Wenn Sie neue Updates der Git-Benutzeroberfläche in einem Vorschaurelease ausprobieren möchten, können Sie diese über die Seite [Visual Studio Preview](https://aka.ms/vspreview/) herunterladen und installieren.
 
 > [!IMPORTANT]
 > Wenn Sie einen Vorschlag haben, können Sie uns diesen gerne mitteilen. Wir freuen uns, Entwurfsentscheidungen im Portal für die [**Entwicklercommunity**](https://aka.ms/vs-suggest) diskutieren zu können.
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- Video zur [neuen Git-Benutzeroberfläche](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) auf Channel 9 und [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
+- [Start der neuen Git-Benutzeroberfläche](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) auf YouTube
+- [Die Serie „Visual Studio Toolbox“ präsentiert: The new Git experience](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) (Die neue Git-Benutzeroberfläche) auf Channel 9 und auf [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - Blogbeitrag zu den [aufregenden neuen Updates in Bezug auf die Git-Benutzeroberfläche in Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
 - Blogbeitrag zur [verbesserten Git-Benutzeroberfläche in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
 - [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes)

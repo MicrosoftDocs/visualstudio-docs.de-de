@@ -1,5 +1,7 @@
 ---
 title: ProjectCollection-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das ProjectCollection-Element und darüber, wie es die Organisation und den Inhalt von Vorlagen mit mehreren Projekten angibt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12a22ca28c90ed1df69529ed3004b417b5e04276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701980"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671232"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection-Element (Visual Studio-Vorlagen)
 Legt die Organisation und den Inhalt von Vorlagen für mehrere Projekte fest.
@@ -55,7 +57,7 @@ Legt die Organisation und den Inhalt von Vorlagen für mehrere Projekte fest.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Inhalt der Vorlage an.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Das- `ProjectCollection` Element wird verwendet, um die Projekte anzugeben, die in der Vorlage enthalten sein sollen. Weitere Informationen zu Vorlagen mit mehreren Projekten finden Sie unter Gewusst [wie: Erstellen von Vorlagen mit mehreren Projekten](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Beispiel

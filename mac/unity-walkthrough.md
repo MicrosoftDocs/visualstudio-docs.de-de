@@ -3,16 +3,16 @@ title: Erste Schritte beim Erstellen von Spielen mit Unity
 description: Erste Schritte mit Unity und Visual Studio für Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/20/2019
+ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cae68b54623564028ea85dd1aa319fad5ceaec48
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950652"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493581"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Erste Schritte beim Erstellen von Spielen mit Unity in Visual Studio für Mac
 
@@ -112,7 +112,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![Verschieben eines Würfels auf der Achse](media/unity-image17.png)
 
-22. Jetzt können Sie etwas Code hinzufügen, um die Logik des Würfels „Enemy“ so zu steuern, dass er den Würfel „Player“ verfolgt. Klicken Sie mit der rechten Maustaste auf den Ordner **Assets** (Objekte) im Pad **Project** (Projekt), und wählen Sie **Create > C# Script** (Erstellen > C#-Skript) aus.
+22. Jetzt können Sie etwas Code hinzufügen, um die Logik des Würfels „Enemy“ so zu steuern, dass er den Würfel „Player“ verfolgt. Klicken Sie mit der rechten Maustaste auf den Ordner **Ressourcen** im Fenster **Projekt** und dann mit der linken auf **Erstellen > C#-Skript**.
 
     ![Kontextaktion „C# Script “ (C#-Skript)](media/unity-image18.png)
 
@@ -144,7 +144,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
 5. Die Visual Studio-Projektmappe ist sehr einfach. Sie enthält den Ordner **Assets** (Objekte) (der gleiche wie in **Finder**) und das zuvor erstellte Skript **EnemyAI.cs**. In komplexeren Projekten wird die Hierarchie wahrscheinlich anders aussehen als das, was Sie in Unity sehen.
 
-    ![Pad „Solution“ (Projektmappen) in Visual Studio für Mac](media/unity-image24.png)
+    ![Projektmappenfenster in Visual Studio für Mac](media/unity-image24.png)
 
 6. **EnemyAI.cs** wird im Editor geöffnet. Das erste Skript enthält nur die Stubs für die Methoden **Start** und **Update**.
 
@@ -194,11 +194,11 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
 1. Legen Sie in der ersten Codezeile der Methode **Start** einen Breakpoint fest. Sie können entweder in den Editorrand an der Zielzeile klicken oder den Cursor auf der Zeile positionieren und **F9** drücken.
 
-    ![Festlegen des Breakpoint in Visual Studio für Mac](media/unity-image25.png)
+    ![Festlegen eines Breakpoints in Visual Studio für Mac](media/unity-image25.png)
 
 2. Klicken Sie auf die **Start Debugging** (Debuggen starten), oder drücken Sie die **F5**. Damit wird das Projekt erstellt und zum Debuggen an Unity angefügt.
 
-    ![Schaltfläche „Start“ in Visual Studio für Mac](media/unity-image26.png)
+    ![Startschaltfläche in Visual Studio für Mac](media/unity-image26.png)
 
 3. Kehren Sie zu **Unity** zurück, und klicken Sie auf **Run** (Ausführen), um das Spiel zu starten.
 
@@ -208,19 +208,19 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![Breakpoint in Visual Studio für Mac erreicht](media/unity-image28.png)
 
-5. Suchen Sie auf dem Pad **Locales** (Gebietsschemas) den Zeiger **this**, der auf ein Objekt **EnemyAI** verweist. Erweitern Sie den Verweis und schauen Sie sich an, dass Sie die zugehörigen Member wie **Speed** (Geschwindigkeit) durchsuchen können.
+5. Suchen Sie im Fenster **Lokale Versionen** den Zeiger **this**, der auf ein **EnemyAI**-Objekt verweist. Erweitern Sie den Verweis und schauen Sie sich an, dass Sie die zugehörigen Member wie **Speed** (Geschwindigkeit) durchsuchen können.
 
-    ![Pad zum Debuggen von Gebietsschemas in Visual Studio für Mac](media/unity-image29.png)
+    ![Das Fenster „Lokale Versionen“ in Visual Studio für Mac](media/unity-image29.png)
 
 6. Entfernen Sie den Breakpoint aus der Methode **Start** auf die gleiche Weise, wie sie Ihn hinzugefügt haben, indem Sie entweder auf dessen Rand klicken oder die Zeile auswählen und **F9** drücken.
 
-    ![Breakpoint in Visual Studio für Mac erreicht](media/unity-image30.png)
+    ![Entfernen eines Breakpoints in Visual Studio für Mac durch Klicken darauf](media/unity-image30.png)
 
 7. Drücken Sie **F10**, um die erste Codezeile zu überspringen, die das Spielobjekt **Player** mit einem Tag als Parameter findet.
 
 8. Bewegen Sie den Mauszeiger innerhalb des Code-Editor-Fensters über die Variable **player**, um die zugehörigen Member anzuzeigen. Sie können auch die Überlagerung erweitern, um untergeordnete Eigenschaften anzuzeigen.
 
-    ![Fenster zum Debuggen im Visual Studio für Mac-Editor](media/unity-image31.png)
+    ![Debugfenster im Visual Studio für Mac-Editor](media/unity-image31.png)
 
 9. Drücken Sie auf **F5** oder die Schaltfläche **Run** (Ausführen), um die Ausführung fortzusetzen. Kehren Sie zu Unity zurück, um zu sehen, wie sich der Würfel „Enemy“ wiederholt dem Würfel „Player“ nähert. Möglicherweise müssen Sie die Kamera anpassen, wenn Sie das nicht sehen.
 
@@ -228,7 +228,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
 10. Wechseln Sie zurück zu **Visual Studio für Mac** und legen Sie einen Breakpoint in der ersten Zeile der Methode **Update** fest. Dieser sollte sofort erreicht werden.
 
-    ![Festlegen eines Breakpoint in Visual Studio für Mac](media/unity-image33.png)
+    ![Entfernen eines Breakpoints in Visual Studio für Mac](media/unity-image33.png)
 
 11. Angenommen, die Geschwindigkeit ist zu hoch, und wir wollen die Auswirkungen der Änderung testen, ohne die App neu zu starten. Suchen Sie die Variable **Speed** innerhalb des Fensters **Autos** oder **Locals** (Gebietsschemas), ändern Sie sie dann in **10**, und drücken Sie die **EINGABETASTE**.
 
@@ -268,11 +268,11 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
 5. Geben Sie in der Methode **OnMouseUp** **base.** ein, um alle Basismethoden anzuzeigen, die aufgerufen werden können. Sie können sich auch mit der Paging-Funktion in der rechten oberen Ecke des IntelliSense-Flyouts die verschiedenen Überladungen der einzelnen Funktionen ansehen.
 
-    ![Erkunden der Überladungen in Visual Studio für Mac](media/unity-image42.png)
+    ![Untersuchen der Überladungen in Visual Studio für Mac](media/unity-image42.png)
 
 6. Mit Visual Studio für Mac können Sie auch problemlos neue Shader definieren. Klicken Sie im **Solution Explorer** (Projektmappen-Explorer) mit der rechten Maustaste auf **Assets** (Objekte), und wählen Sie **Add > New Shader** (Hinzufügen > Neuer Shader) aus.
 
-    ![Aktion „New Shader“ (Neuer Shader) in Visual Studio für Mac](media/unity-image43.png)
+    ![Aktion „Neuer Shader“ in Visual Studio für Mac](media/unity-image43.png)
 
 7. Das Shader-Dateiformat wird hinsichtlich Vollfarbe und Schriftarten optimiert, um das Lesen und Verstehen zu erleichtern.
 

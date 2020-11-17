@@ -1,5 +1,7 @@
 ---
 title: Kreatenewfolder-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das Element "kreatenewfolder" und dessen Bestimmung, ob das Zielverzeichnis, in dem das Projekt erstellt werden soll, nicht vorhanden ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15633c2f701c813ca24c5484fd4108a86c57b05b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739673"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671578"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Kreatenewfolder-Element (Visual Studio-Vorlagen)
 Bestimmt, ob geprüft werden soll, dass das Zielverzeichnis, indem das Projekt erstellt werden soll, nicht existiert. Wenn das Verzeichnis existiert, kann ein neues Verzeichnis für das Projekt erstellt werden. Diese Einstellung wird in der Regel vom `NewProjectRequiresNewFolder(VsTemplate)`-Registrierungs-Flag überschrieben (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), das alle gängigen Projekttypen verwenden, um zu bestimmen, ob ein neues Projekt in einem neuen Verzeichnis erstellt werden soll.
@@ -57,8 +59,8 @@ Bestimmt, ob geprüft werden soll, dass das Zielverzeichnis, indem das Projekt e
 
  Der Text muss `true` oder `false` sein, um anzugeben, ob ein neuer Containerordner beim Erstellen eines Projekts anhand einer Vorlage angelegt werden soll.
 
-## <a name="remarks"></a>Bemerkungen
- `CreateNewFolder` ist ein optionales Element. Standardwert: `true`.
+## <a name="remarks"></a>Hinweise
+ `CreateNewFolder` ist ein optionales Element. Der Standardwert ist `true`.
 
  Der im `CreateNewFolder`-Element angegebene Wert wird nur von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] berücksichtigt, wenn das zugrunde liegende Projektsystem ihn unterstützt.
 

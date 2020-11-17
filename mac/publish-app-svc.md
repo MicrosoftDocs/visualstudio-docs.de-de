@@ -1,5 +1,6 @@
 ---
 title: Veröffentlichen in Azure App Service
+description: In diesem Artikel erfahren Sie, wie Sie eine Webanwendung mithilfe der Veröffentlichungstools in Visual Studio für Mac veröffentlichen.
 ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 81ae8c8dde91655a4b9b3b8dcb4d0033af34e4d5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950504"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493425"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Veröffentlichen einer Web-App in Azure App Service mit Visual Studio für Mac
 
@@ -31,7 +32,7 @@ Sie können das Tool zum Veröffentlichen verwenden, um ASP.NET Core-Apps in Azu
 
 ## <a name="publish-to-azure-app-service"></a>Veröffentlichen in Azure App Service
 
- 1. Klicken Sie im Lösungspad mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**.
+ 1. Klicken Sie im Projektmappenfenster mit der rechten Maustaste auf das Projekt und mit der linken auf **Veröffentlichen**.
 
     ![Kontextmenü „Veröffentlichen“](media/publish-context-menu.png)
 

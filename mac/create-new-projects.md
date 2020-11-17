@@ -3,14 +3,14 @@ title: Erstellen neuer Projekte und Projektmappen
 description: In diesem Artikel erfahren Sie, wie Sie Projekte und Projektmappen in Visual Studio für Mac erstellen können.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/23/2019
+ms.date: 11/06/2020
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7ee9b23f9ede12a353f6c6fdc0f578d7f78a772c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183955"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493293"
 ---
 # <a name="create-a-new-project"></a>Erstellen eines neues Projekts
 
@@ -45,7 +45,7 @@ Optional können Sie in diesem Schritt auch Optionen für die Git-Quellcodeverwa
 
 ## <a name="adding-additional-projects-to-a-solution"></a>Hinzufügen weiterer Projekte zu einer Projektmappe
 
-Sie können weitere Projekte zu einer Projektmappe hinzufügen, indem Sie mit der rechten Maustaste auf die Projektmappe im Lösungspad klicken und entweder **Hinzufügen > Neues Projekt hinzufügen** oder **Hinzufügen > Vorhandenes Projekt hinzufügen** auswählen.
+Sie können weitere Projekte zu einer Projektmappe hinzufügen, indem Sie im **Projektmappenfenster** mit der rechten Maustaste auf die Projektmappe klicken und entweder zu **Hinzufügen > Neues Projekt hinzufügen** oder zu **Hinzufügen > Vorhandenes Projekt hinzufügen** navigieren.
 
 Wenn Sie ein neues Projekt hinzufügen, werden Sie durch die Erstellung eines neuen Projekts geleitet, wie in [Konfigurieren des neuen Projekts](#configuring-your-new-project) gezeigt.
 

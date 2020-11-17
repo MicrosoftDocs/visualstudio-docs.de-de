@@ -3,28 +3,28 @@ title: 'Debuggen: Datenvisualisierungen'
 description: Das Debuggen ist ein üblicher und notwendiger Teil des Programmierens. Visual Studio für Mac enthält eine Reihe von Features, die das Debuggen vereinfachen. Dieser Artikel behandelt die verschiedenen Datenvisualisierungen, die angezeigt werden können, wenn Objekte im Debugger überprüft werden.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67691735"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493243"
 ---
 # <a name="data-visualizations"></a>Datenvisualisierungen
 
 Visual Studio für Mac beinhaltet eine UI-Unterstützung für den Debugger, durch die Visualisierungen der Werte einer Variable, eines Felds oder einer Eigenschaft während des Debuggens ermöglicht werden. Diese Daten-Schnellansichten zeigen eine erweiterte Version der Daten an und ermöglichen es Entwicklern, bekannte Strukturen zu überprüfen, zum Beispiel das Anzeigen der Farbe einer Color-Struktur.
 
-Die Schnellansichten im Debugpad **Local** (Lokal) können angezeigt werden, indem Sie auf das Vorschausymbol klicken, das rechts des Werts angezeigt wird, wenn der Benutzer den Mauszeiger über die Reihe bewegt:
+Die Schnellansichten im Debugfenster **Lokale** können durch Klicken auf das Vorschausymbol angezeigt werden, das rechts neben dem Wert angezeigt wird, wenn der Benutzer auf die Zeile zeigt:
 
-![Pad „Lokal“](media/data-visualizations-image9.png)
+![Lokalfenster](media/data-visualizations-image9.png)
 
 Die nachfolgende Liste behandelt viele der neuen Visualisierungen, die beim Debuggen in Visual Studio für Mac verfügbar sind.
 
 ## <a name="point"></a>Point
-Ein Point, PointF oder CGPoint unter iOS und Mac wird als Tupel gerendert, der die X- und Y-Werte im Debugpad anzeigt:
+Ein Point, PointF oder CGPoint unter iOS und Mac wird als Tupel gerendert, der die X- und Y-Werte in den Debugfenstern anzeigt:
 
 ![Punktvisualisierung](media/data-visualizations-image10.png)
 

@@ -1,5 +1,6 @@
 ---
 title: EnableEditOfLocationField-Element (Visual Studio-Vorlagen)
+description: Informieren Sie sich über das enableedideflocationfield-Element und darüber, wie es angibt, ob der Benutzer das Feld Speicherort bearbeiten kann.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037405"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671297"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Enableedideflocationfield-Element (Visual Studio-Vorlagen)
 Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
@@ -52,7 +53,7 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
 
  Der Text muss entweder `true` oder sein `false` , um anzugeben, ob der Benutzer das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** bearbeiten kann.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `EnableEditOfLocationField` ist ein optionales Element. Der Standardwert ist `true` , wodurch der Benutzer den Wert im Textfeld **Speicherort** im Dialogfeld **Neues Projekt** bearbeiten kann.
 
  Im Dialogfeld **Neues Projekt** gibt das Textfeld **Speicherort** das Verzeichnis an, in dem ein neues Projekt gespeichert wird.

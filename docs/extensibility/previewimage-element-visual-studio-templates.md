@@ -1,5 +1,7 @@
 ---
 title: PreviewImage-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das PreviewImage-Element und darüber, wie es den Dateinamen für das Vorschaubild angibt, das im Dialogfeld Neues Projekt oder neues Element hinzufügen angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702009"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672345"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage-Element (Visual Studio-Vorlagen)
 Gibt das Vorschaubild (als Dateiname) für das Vorschaubild an, das im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
@@ -51,7 +53,7 @@ Gibt das Vorschaubild (als Dateiname) für das Vorschaubild an, das im Dialogfel
 
  Der Text muss eine Zeichenfolge sein, die einen Dateinamen darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `PreviewImage` ist ein optionales Element.
 
 ## <a name="see-also"></a>Siehe auch

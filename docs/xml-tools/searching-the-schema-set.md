@@ -1,5 +1,7 @@
 ---
 title: XML-Schema-Explorer – Durchsuchen des Schemasets
+description: In diesem Artikel erfahren Sie, wie Sie eine Schlüsselwortsuche und eine schemaspezifische Suche des Schemasets im XML-Schema-Explorer durchführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8378ebaccefaedfcc3d83f23bcab56f7417264dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c73af4f40abddaaba15e3b2cc785ab412e8884e4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592502"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351517"
 ---
 # <a name="search-the-schema-set"></a>Durchsuchen des Schemasets
 

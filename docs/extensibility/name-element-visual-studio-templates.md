@@ -1,5 +1,7 @@
 ---
 title: Name-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das Name-Element und darüber, wie es den Namen der Vorlage angibt, wie er im Dialogfeld Neues Projekt oder neues Element hinzufügen angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702460"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671180"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name-Element (Visual Studio-Vorlagen)
 Gibt den Namen der Vorlage an, wie er im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
@@ -41,7 +43,7 @@ Gibt den Namen der Vorlage an, wie er im Dialogfeld **Neues Projekt** oder **Neu
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Package`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
 |`ID`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
@@ -60,7 +62,7 @@ Gibt den Namen der Vorlage an, wie er im Dialogfeld **Neues Projekt** oder **Neu
 
  Der Text gibt den Namen der Vorlage an.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `Name` ist ein erforderliches untergeordnetes Element von `TemplateData`.
 
 ## <a name="example"></a>Beispiel

@@ -1,5 +1,7 @@
 ---
 title: Buildprojectonload-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Element buildprojectonload und darüber, wie es nur neue Projekte erstellt, wenn Sie Sie erstellen und zu einer Projekt Mappe hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739950"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671591"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Buildprojectonload-Element (Visual Studio-Vorlagen)
 Erstellt nur neue Projekte, die Sie erstellen und zu einer Projekt Mappe hinzufügen. Die gesamte Lösung wird nicht erstellt.
@@ -53,7 +55,7 @@ Element Hierarchie:
 
  Der Text muss entweder `true` oder sein `false` , um anzugeben, ob nur das neue Projekt erstellt werden soll, wenn es aus der Vorlage erstellt wird.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `BuildProjectOnLoad` ist ein optionales Element. Standardwert: `false`.
 
 ## <a name="example"></a>Beispiel

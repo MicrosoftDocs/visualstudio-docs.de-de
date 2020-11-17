@@ -1,18 +1,18 @@
 ---
 title: Verwenden von Entwurfszeitdaten mit dem XAML-Designer in Visual Studio
 description: Hier erfahren Sie, wie Sie Entwurfszeitdaten in XAML verwenden.
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298480"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492894"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Verwenden von Entwurfszeitdaten mit dem XAML-Designer in Visual Studio
 
@@ -25,7 +25,7 @@ Einige Layouts sind ohne Daten schwer zu visualisieren. In diesem Dokument lerne
 
 Entwurfszeitdaten sind simulierte Daten, die Sie festlegen, um die Steuerelemente im XAML-Designer besser visualisieren zu können. Fügen Sie zunächst dem Header Ihres XAML-Dokuments die folgenden Codezeilen hinzu, wenn sie nicht bereits vorhanden sind:
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ Der Vorteil dieser Vorgehensweise ist, dass Sie Ihre Steuerelemente an eine stat
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Verwenden von Entwurfszeitdaten mit benutzerdefinierten Typen und Eigenschaften
 
-Dieses Feature funktioniert standardmäßig nur mit Plattformsteuerelementen und -eigenschaften. In diesem Abschnitt werden die Schritte beschrieben, die erforderlich sind, damit Sie Ihre eigenen benutzerdefinierten Steuerelemente als Designzeit-Steuerelemente verwenden können. Dies ist eine neue Funktion, die Kunden in der Vorschauversion [16.8](/visualstudio/releases/2019/preview-notes) oder höher von Visual Studio 2019 zur Verfügung steht. Es gibt drei Anforderungen, um diese Funktion nutzen zu können:
+Dieses Feature funktioniert standardmäßig nur mit Plattformsteuerelementen und -eigenschaften. In diesem Abschnitt werden die Schritte beschrieben, die erforderlich sind, damit Sie Ihre eigenen benutzerdefinierten Steuerelemente als Designzeit-Steuerelemente verwenden können. Dies ist eine neue Funktion, die Kunden in der Version [16.8](/visualstudio/releases/2019/release-notes/) oder höher von Visual Studio 2019 zur Verfügung steht. Es gibt drei Anforderungen, um diese Funktion nutzen zu können:
 
-- benutzerdefinierter xmlns-Namespace 
+- benutzerdefinierter xmlns-Namespace
 
     ```xml
     xmlns:myControls="http://MyCustomControls"

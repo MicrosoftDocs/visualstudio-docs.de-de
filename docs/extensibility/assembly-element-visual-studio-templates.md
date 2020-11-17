@@ -1,5 +1,8 @@
 ---
 title: Assembly-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+titleSuffix: ''
+description: Erfahren Sie mehr über das Assembly-Element und wie es Informationen zu einer Assembly angibt, die von der Vorlage verwendet wird, um einem-Projekt einen Verweis auf diese Assembly hinzuzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740034"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671645"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly-Element (Visual Studio-Vorlagen)
 Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen eines Verweises auf diese Assembly zu Projekten verwendet wird.
@@ -48,7 +51,7 @@ Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen ein
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[Referenz](../extensibility/reference-element-visual-studio-templates.md)|Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.|
+|[Verweis](../extensibility/reference-element-visual-studio-templates.md)|Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.

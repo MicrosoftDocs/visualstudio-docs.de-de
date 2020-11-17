@@ -1,5 +1,7 @@
 ---
 title: Bereitstellen in einem lokalen Ordner
+description: In diesem Artikel erfahren Sie, wie Sie das Veröffentlichungstool zum Veröffentlichen von ASP.NET-, ASP.NET Core-, .NET Core- und Python-Apps in einem Ordner von Visual Studio verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,21 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036391"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437688"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Bereitstellen einer App in einem Ordner mithilfe von Visual Studio
 
 Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Core-, .NET Core- und Python-Apps über Visual Studio in einem Ordner zu veröffentlichen. Für Node.js können Sie zwar gleichen Schritte ausführen, jedoch ist die Benutzeroberfläche anders.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
-
+::: moniker range=">=vs-2017"
 > [!NOTE]
 > Wenn Sie eine Windows-Desktopanwendung für einen Ordner veröffentlichen müssen, sehen Sie sich den Artikel [Bereitstellen einer Desktopanwendung mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# oder Visual Basic) an. Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Wenn Sie eine Windows-Desktopanwendung mit .NET Core 3.1 oder höher in einem Ordner veröffentlichen müssen, finden Sie Informationen unter [Bereitstellen einer .NET-Windows-Anwendung mithilfe von ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+::: moniker-end
 
 ## <a name="deploy-to-a-local-folder"></a>Bereitstellen in einem lokalen Ordner
 
@@ -32,13 +42,23 @@ Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Co
 
     ![Der Befehl „Veröffentlichen“ im Kontextmenü des Projekts im Projektmappen-Explorer](../deployment/media/quickstart-publish.png "„Veröffentlichen“ auswählen")
 
-1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird das Fenster **Veröffentlichen** angezeigt. Wählen Sie **Neu**aus.
+1. Wenn Sie bereits Veröffentlichungsprofile konfiguriert haben, wird das Fenster **Veröffentlichen** angezeigt. Wählen Sie **Neu** aus.
 
 1. Wählen Sie im Fenster **Veröffentlichen** die Option **Ordner** aus.
 
     ![Auswählen eines Ordners als Veröffentlichungsziel](../deployment/media/quickstart-publish-folder-new.png "Auswählen eines Ordners")
 
-1. Geben Sie einen Pfad ein, oder klicken Sie auf **Durchsuchen**, um einen Ordner anzugeben.
+::: moniker range=">=vs-2019"
+
+4. Wenn Sie eine Windows-Anwendung mit .NET Core 3.1 oder höher bereitstellen, müssen Sie im Fenster **Bestimmtes Ziel** auf **Ordner** klicken.
+
+![Auswählen eines Ordners als bestimmtes Ziel](../deployment/media/quickstart-publish-folder-targets.png "Bestimmtes Ziel auswählen")
+
+5. Wenn Sie eine .NET Core 3.1-Windows-Anwendung (oder höher) mit ClickOnce veröffentlichen möchten, finden Sie weitere Informationen unter [Bereitstellen einer .NET-Windows-Anwendung mit ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+ ::: moniker-end
+
+4. Geben Sie einen Pfad ein, oder klicken Sie auf **Durchsuchen**, um einen Ordner anzugeben.
 
     ![Angeben des Pfads zum Ordner](../deployment/media/quickstart-publish-folder-path.png "Auswählen eines Ordners")
 
@@ -71,3 +91,6 @@ Für .NET-Apps:
 - [Bereitstellen einer .NET Core-Anwendung mit dem Tool „Veröffentlichen“](/dotnet/core/deploying/deploy-with-vs)
 - [Übersicht über die .NET Core-Anwendungsveröffentlichung](/dotnet/core/deploying/)
 - [Bereitstellen von .NET Framework und Anwendungen](/dotnet/framework/deployment/)
+::: moniker range=">=vs-2019"
+- [Bereitstellen einer .NET-Windows-Anwendung mithilfe von ClickOnce](quickstart-deploy-using-clickonce-folder.md)
+ ::: moniker-end

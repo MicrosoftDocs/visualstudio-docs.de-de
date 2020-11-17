@@ -1,18 +1,18 @@
 ---
 title: Festlegen mehrerer Startprojekte
 description: In diesem Artikel wird beschrieben, wie Sie festlegen, dass mehrere Projekte beim Ausführen oder Debuggen gestartet werden.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 12/13/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: e0e1af97ec91af4105d1934a431f9aabc6562793
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950104"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493568"
 ---
 # <a name="set-multiple-startup-projects"></a>Festlegen mehrerer Startprojekte
 
@@ -20,7 +20,7 @@ In Visual Studio für Mac können Sie angeben, dass mehrere Projekte gestartet w
 
 ## <a name="to-set-multiple-startup-projects"></a>So legen Sie mehrere Startprojekte fest
 
-1. Wählen Sie im Lösungspad die Projektmappe (den oberste Knoten) aus.
+1. Wählen Sie im Projektmappenfenster die Projektmappe aus (den obersten Knoten).
 
 2. Klicken Sie mit der rechten Maustaste auf den Knoten der Projektmappe, und wählen Sie **Startprojekte festlegen** aus:
 
@@ -42,7 +42,7 @@ In Visual Studio für Mac können Sie angeben, dass mehrere Projekte gestartet w
 
    ![Projektmappe mit mehreren Projekten, die so konfiguriert sind, dass sie beim Debuggen gestartet oder ausgeführt werden](media/startup-project-configured.png)
 
-   Sie sehen, dass zwei Projekte zum Starten konfiguriert sind, weil beide Projekte im Lösungspad **fett** dargestellt werden. Auf der Symbolleiste wurde die neue Laufzeitkonfiguration als aktuelle Laufzeitkonfiguration für die Projektmappe festgelegt.
+   Nun werden die beiden Projekte für den Start konfiguriert, was durch die **Fettformatierung** beider Projekte im Projektmappenfenster angezeigt wird. Auf der Symbolleiste wurde die neue Laufzeitkonfiguration als aktuelle Laufzeitkonfiguration für die Projektmappe festgelegt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

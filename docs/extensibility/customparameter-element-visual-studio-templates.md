@@ -1,5 +1,7 @@
 ---
 title: CustomParameter-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das CustomParameter-Element und darüber, wie es einen benutzerdefinierten Parameternamen und-Wert enthält, die beim Erstellen eines Projekts oder Elements aus der Vorlage verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739432"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671948"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter-Element (Visual Studio-Vorlagen)
 Enthält einen benutzerdefinierten Parameternamen und-Wert, der verwendet werden soll, wenn ein Projekt oder ein Element aus der Vorlage erstellt wird.
@@ -34,7 +36,7 @@ Enthält einen benutzerdefinierten Parameternamen und-Wert, der verwendet werden
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Name`|Erforderlich. Der Name des Parameters. Das Format für Parameter ist "$*Name*$".|
 |`Value`|Erforderlich. Der Ersatzwert für den Parameter.|
@@ -44,11 +46,11 @@ Enthält einen benutzerdefinierten Parameternamen und-Wert, der verwendet werden
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Gruppiert die benutzerdefinierten Parameter, die an den Vorlagen-Assistenten übergeben werden, wenn der Assistent Parameter Ersetzungen vornimmt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Wenn eine Vorlage `CustomParameter` Elemente enthält, wird jede Instanz, die das Attribut enthält, durch `Name` das- `Value` Attribut in den erstellten Projekt-oder Element Dateien ersetzt.
 
 ## <a name="example"></a>Beispiel
@@ -61,7 +63,7 @@ Enthält einen benutzerdefinierten Parameternamen und-Wert, der verwendet werden
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [CustomParameters-Element (Visual Studio-Vorlagen)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

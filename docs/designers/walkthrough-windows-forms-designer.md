@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f3dfdecb28254e5b9683cd1e9640c5a45b728a6c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134693"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493477"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Tutorial: Erste Schritte mit dem Windows Forms-Designer
 
@@ -45,7 +45,7 @@ Der erste Schritt besteht darin, das DemoCalculator-Steuerelementprojekt zu erst
 
    ::: moniker-end
 
-2. Um die Datei umzubenennen, klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **UserControl1.vb** oder **UserControl1.cs** , wählen Sie **Umbenennen** aus, und ändern Sie den Dateinamen in „DemoCalculator.vb“ oder „DemoCalculator.cs“. Wählen Sie **Ja** aus, wenn Sie gefragt werden, ob alle Verweise auf das Codeelement „UserControl1“ umbenannt werden sollen.
+2. Um die Datei umzubenennen, klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **UserControl1.vb** oder **UserControl1.cs**, wählen Sie **Umbenennen** aus, und ändern Sie den Dateinamen in „DemoCalculator.vb“ oder „DemoCalculator.cs“. Wählen Sie **Ja** aus, wenn Sie gefragt werden, ob alle Verweise auf das Codeelement „UserControl1“ umbenannt werden sollen.
 
 Der Windows Forms-Designer zeigt die Designeroberfläche für das DemoCalculator-Steuerelement an. In dieser Ansicht können Sie das Aussehen des Steuerelements grafisch gestalten, indem Sie Steuerelemente und Komponenten aus der Toolbox auswählen und auf der Designeroberfläche platzieren. Weitere Informationen zu benutzerdefinierten Steuerelementen finden Sie unter [Varianten von benutzerdefinierten Steuerelementen](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
 
@@ -55,7 +55,7 @@ Das DemoCalculator-Steuerelement enthält mehrere Windows Forms-Steuerelemente. 
 
 1. Vergrößern Sie das DemoCalculator-Steuerelement im Windows Forms-Designer, indem Sie den Größenziehpunkt in der unteren rechten Ecke auswählen und ihn nach unten und rechts ziehen. In der rechten unteren Ecke von Visual Studio sehen Sie Informationen zur Größe und den Speicherort für Steuerelemente. Stellen Sie die Größe des Steuerelements auf Breite 500 und Höhe 400 ein, indem Sie beim Ändern der Größe des Steuerelements die Größeninformationen beobachten.
 
-2. Wählen Sie in der **Toolbox** den Knoten **Container** aus, um ihn zu öffnen. Wählen Sie das **SplitContainer** -Steuerelement aus, und ziehen Sie es auf die Designeroberfläche.
+2. Wählen Sie in der **Toolbox** den Knoten **Container** aus, um ihn zu öffnen. Wählen Sie das **SplitContainer**-Steuerelement aus, und ziehen Sie es auf die Designeroberfläche.
 
    `SplitContainer` wird auf der Designeroberfläche des DemoCalculator-Steuerelements platziert.
 
@@ -66,14 +66,14 @@ Das DemoCalculator-Steuerelement enthält mehrere Windows Forms-Steuerelemente. 
 
     Das `SplitContainer`-Steuerelement wird auf die Standardgröße verkleinert und folgt nicht mehr der Größe des DemoCalculator-Steuerelements.
 
-4. Wählen Sie die Smarttag-Glyphe (![Smarttag-Glyphe](media/smart-tag-glyph.gif)) in der oberen rechten Ecke des `SplitContainer`-Steuerelements aus. Wählen Sie **In übergeordnetem Container andocken** , um die `Dock`-Eigenschaft auf `Fill` festzulegen.
+4. Wählen Sie die Smarttag-Glyphe (![Smarttag-Glyphe](media/smart-tag-glyph.gif)) in der oberen rechten Ecke des `SplitContainer`-Steuerelements aus. Wählen Sie **In übergeordnetem Container andocken**, um die `Dock`-Eigenschaft auf `Fill` festzulegen.
 
     Das `SplitContainer`-Steuerelement wird an die Begrenzungen des DemoCalculator-Steuerelements angedockt.
 
     > [!NOTE]
     > Mehrere Steuerelemente bieten Smarttags zum Vereinfachen des Entwurfs. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Ausführen von häufigen Aufgaben mit Smarttags für Windows Forms-Steuerelemente](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
 
-5. Wählen Sie die vertikale Begrenzung zwischen den Panels, und ziehen Sie sie nach rechts, sodass der größte Teil des Platzes vom linken Panel eingenommen wird.
+5. Klicken Sie auf die vertikale Begrenzung zwischen den Panels, und ziehen Sie diese nach rechts, sodass das linke Panel den größten Raum einnimmt.
 
     `SplitContainer` teilt das DemoCalculator-Steuerelement in zwei Panels mit einem verschiebbaren Rand dazwischen. Das linke Panel enthält die Rechnerschaltflächen und die Anzeige, und das rechte Panel zeigt einen Datensatz der vom Benutzer durchgeführten arithmetischen Operationen.
 
@@ -87,7 +87,7 @@ Das DemoCalculator-Steuerelement enthält mehrere Windows Forms-Steuerelemente. 
 
    Das Dialogfeld **ColumnHeader-Auflistungs-Editor** wird geöffnet.
 
-10. Wählen Sie im Dialogfeld **ColumnHeader-Auflistungs-Editor** **Hinzufügen** aus,um dem `ListView`-Steuerelement eine Spalte hinzuzufügen. Ändern Sie den Wert der `Text`-Eigenschaft der Spalte in **Verlauf**. Klicken Sie auf **OK** , um die Spalte zu erstellen.
+10. Wählen Sie im Dialogfeld **ColumnHeader-Auflistungs-Editor** **Hinzufügen** aus,um dem `ListView`-Steuerelement eine Spalte hinzuzufügen. Ändern Sie den Wert der `Text`-Eigenschaft der Spalte in **Verlauf**. Klicken Sie auf **OK**, um die Spalte zu erstellen.
 
 11. Wählen Sie im Smarttagpanel die Option **In übergeordnetem Container andocken** und dann die Smarttag-Glyphe aus, um das Smarttagpanel zu schließen.
 
@@ -99,11 +99,11 @@ Das DemoCalculator-Steuerelement enthält mehrere Windows Forms-Steuerelemente. 
 
     Das Dialogfeld **Spalten- und Zeilenstile** wird geöffnet.
 
-14. Wählen Sie die Schaltfläche **Hinzufügen** , bis fünf Spalten angezeigt werden. Wählen Sie alle fünf Spalten aus, und wählen Sie dann im Feld **Größentyp** die Option **Prozent** aus. Legen Sie den **Prozentwert** auf **20** fest. Damit wird für jede Spalte die gleiche Breite festgelegt.
+14. Wählen Sie die Schaltfläche **Hinzufügen**, bis fünf Spalten angezeigt werden. Wählen Sie alle fünf Spalten aus, und wählen Sie dann im Feld **Größentyp** die Option **Prozent** aus. Legen Sie den **Prozentwert** auf **20** fest. Damit wird für jede Spalte die gleiche Breite festgelegt.
 
 15. Wählen Sie unter **Anzeigen** die Option **Zeilen** aus.
 
-16. Wählen Sie **Hinzufügen** , bis fünf Zeilen angezeigt werden. Wählen Sie alle fünf Zeilen aus, und wählen Sie dann im Feld **Größentyp** die Option **Prozent** aus. Legen Sie den **Prozentwert** auf **20** fest. Damit wird für Zeile dieselbe Höhe festgelegt.
+16. Wählen Sie **Hinzufügen**, bis fünf Zeilen angezeigt werden. Wählen Sie alle fünf Zeilen aus, und wählen Sie dann im Feld **Größentyp** die Option **Prozent** aus. Legen Sie den **Prozentwert** auf **20** fest. Damit wird für Zeile dieselbe Höhe festgelegt.
 
 17. Wählen Sie **OK** aus, um Ihre Änderungen zu übernehmen, und dann die Smarttag-Glyphe, um das Smarttagpanel zu schließen.
 
@@ -137,9 +137,9 @@ Nachdem das Layout des Steuerelements eingerichtet ist, können Sie das Steuerel
 
 8. Wählen Sie in der **Toolbox** vier weitere Male das `Button`-Symbol aus, um die zweite Zeile des `TableLayoutPanel`-Steuerelements aufzufüllen.
 
-9. Markieren Sie alle fünf `Button`-Steuerelemente, indem Sie sie auswählen, während Sie die **UMSCHALTTASTE** gedrückt halten. Drücken Sie **STRG**+**C** , um die `Button`-Steuerelemente in die Zwischenablage zu kopieren.
+9. Markieren Sie alle fünf `Button`-Steuerelemente, indem Sie sie auswählen, während Sie die **UMSCHALTTASTE** gedrückt halten. Drücken Sie **STRG**+**C**, um die `Button`-Steuerelemente in die Zwischenablage zu kopieren.
 
-10. Drücken Sie drei Mal **STRG**+**V** , um Kopien der `Button`-Steuerelemente in die verbleibenden Zeilen des `TableLayoutPanel`-Steuerelements einzufügen.
+10. Drücken Sie drei Mal **STRG**+**V**, um Kopien der `Button`-Steuerelemente in die verbleibenden Zeilen des `TableLayoutPanel`-Steuerelements einzufügen.
 
 11. Markieren Sie alle 20 `Button`-Steuerelemente, indem Sie sie auswählen, während Sie die **UMSCHALTTASTE** gedrückt halten.
 
@@ -151,9 +151,9 @@ Nachdem das Layout des Steuerelements eingerichtet ist, können Sie das Steuerel
 
     Alle `Button`-Steuerelemente sind kleiner ausgelegt, um einen breiteren Rand zwischen ihnen zu schaffen.
 
-14. Wählen Sie **button10** und **button20** , und drücken Sie dann auf **Löschen** , um sie aus dem Layout zu entfernen.
+14. Wählen Sie **button10** und **button20**, und drücken Sie dann auf **Löschen**, um sie aus dem Layout zu entfernen.
 
-15. Wählen Sie **button5** und **button15** , und ändern Sie dann den Wert der `RowSpan`-Eigenschaft in **2**. Dies sind die Schaltflächen **Löschen** und **=** für die DemoCalculator-Schaltfläche.
+15. Wählen Sie **button5** und **button15**, und ändern Sie dann den Wert der `RowSpan`-Eigenschaft in **2**. Dies sind die Schaltflächen **Löschen** und **=** für die DemoCalculator-Schaltfläche.
 
 ## <a name="use-the-document-outline-window"></a>Verwenden des Fensters „Dokumentgliederung“
 
@@ -163,9 +163,9 @@ Wenn Ihr Steuerelement oder Formular mit mehreren Steuerelementen gefüllt ist, 
 
    Das Fenster „Dokumentgliederung“ zeigt eine Strukturansicht des DemoCalculator-Steuerelements und der zugehörigen Steuerelemente an. Containersteuerelemente wie `SplitContainer` zeigen ihre untergeordneten Steuerelemente als Unterknoten in der Struktur an. Über das Fenster „Dokumentgliederung“ können Sie vorhandene Steuerelemente auch umbenennen.
 
-2. Klicken Sie im Fenster **Dokumentgliederung** mit der rechten Maustaste auf **button1** , und wählen Sie dann **Umbenennen** aus. Ändern Sie den Namen in „sevenButton“.
+2. Klicken Sie im Fenster **Dokumentgliederung** mit der rechten Maustaste auf **button1**, und wählen Sie dann **Umbenennen** aus. Ändern Sie den Namen in „sevenButton“.
 
-3. Benutzen Sie das Fenster **Dokumentgliederung** , um die `Button`-Steuerelemente vom vom Designer generierten Namen gemäß der folgenden Liste in den Produktionsnamen umzubenennen:
+3. Benutzen Sie das Fenster **Dokumentgliederung**, um die `Button`-Steuerelemente vom vom Designer generierten Namen gemäß der folgenden Liste in den Produktionsnamen umzubenennen:
 
    - button1 in **sevenButton**
 
@@ -261,7 +261,7 @@ Die Schaltflächen im DemoCalculator-Steuerelement verfügen über Ereignishandl
 
 Da das DemoCalculator-Steuerelement von der <xref:System.Windows.Forms.UserControl>-Klasse erbt, können Sie sein Verhalten mit dem **UserControl-Testcontainer** testen. Weitere Informationen finden Sie unter [Vorgehensweise: Testen des Laufzeitverhaltens eines UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
 
-1. Drücken Sie **F5** , um das DemoCalculator-Steuerelement im **UserControl-Testcontainer** zu erstellen und auszuführen.
+1. Drücken Sie **F5**, um das DemoCalculator-Steuerelement im **UserControl-Testcontainer** zu erstellen und auszuführen.
 
 2. Wählen Sie die Begrenzung zwischen den `SplitContainer`-Panels aus, und ziehen Sie sie nach links und rechts. `TableLayoutPanel` und alle untergeordneten Steuerelemente werden an den verfügbaren Platz angepasst.
 
@@ -275,13 +275,13 @@ Das DemoCalculator-Steuerelement kann in anderen zusammengesetzten Steuerelement
 
 Im ersten Schritt erstellen Sie das Anwendungsprojekt. Damit erstellen Sie die Anwendung, die Ihr benutzerdefiniertes Steuerelement anzeigt.
 
-1. Erstellen Sie ein neues **Windows Forms-Anwendungsprojekt** , und nennen Sie es **DemoCalculatorTest**.
+1. Erstellen Sie ein neues **Windows Forms-Anwendungsprojekt**, und nennen Sie es **DemoCalculatorTest**.
 
-2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **DemoCalculatorTest** , und wählen Sie **Verweis hinzufügen** aus, um das Dialogfeld **Verweis hinzufügen** zu öffnen.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **DemoCalculatorTest**, und wählen Sie **Verweis hinzufügen** aus, um das Dialogfeld **Verweis hinzufügen** zu öffnen.
 
-3. Gehen Sie zur Registerkarte **Projekte** , und wählen Sie dann das Projekt DemoCalculatorLib aus, um den Verweis dem Testprojekt hinzuzufügen.
+3. Gehen Sie zur Registerkarte **Projekte**, und wählen Sie dann das Projekt DemoCalculatorLib aus, um den Verweis dem Testprojekt hinzuzufügen.
 
-4. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **DemoCalculatorTest** , und wählen Sie dann **Als Startprojekt festlegen** aus.
+4. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **DemoCalculatorTest**, und wählen Sie dann **Als Startprojekt festlegen** aus.
 
 5. Vergrößern Sie im Windows Forms-Designer das Formular auf ungefähr **700 x 500**.
 
@@ -291,11 +291,11 @@ Um das DemoCalculator-Steuerelement in einer Anwendung zu verwenden, müssen Sie
 
 1. Erweitern Sie in der **Toolbox** den Knoten **DemoCalculatorLib-Komponenten**.
 
-2. Ziehen Sie das **DemoCalculator** -Steuerelement aus der **Toolbox** auf das Formular. Verschieben Sie das Steuerelement in die obere linke Ecke des Formulars. Wenn sich das Steuerelement in der Nähe der Formularbegrenzungen befindet, erscheinen *Ausrichtungslinien*. Ausrichtungslinien geben den Abstand zwischen der `Padding`-Eigenschaft des Formulars und der `Margin`-Eigenschaft des Steuerelements an. Positionieren Sie das Steuerelement an der Position, die durch die Ausrichtungslinien angegeben wird.
+2. Ziehen Sie das **DemoCalculator**-Steuerelement aus der **Toolbox** auf das Formular. Verschieben Sie das Steuerelement in die obere linke Ecke des Formulars. Wenn sich das Steuerelement in der Nähe der Formularbegrenzungen befindet, erscheinen *Ausrichtungslinien*. Ausrichtungslinien geben den Abstand zwischen der `Padding`-Eigenschaft des Formulars und der `Margin`-Eigenschaft des Steuerelements an. Positionieren Sie das Steuerelement an der Position, die durch die Ausrichtungslinien angegeben wird.
 
    Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anordnen von Steuerelementen mithilfe von Ausrichtungslinien](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
 
-3. Ziehen Sie ein `Button`-Steuerelement aus der **Toolbox** , und legen Sie es auf dem Formular ab.
+3. Ziehen Sie ein `Button`-Steuerelement aus der **Toolbox**, und legen Sie es auf dem Formular ab.
 
 4. Verschieben Sie das `Button`-Steuerelement um das DemoCalculator-Steuerelement, und beobachten Sie, wo die Ausrichtungslinien angezeigt werden. Mit diesem Feature können Sie die Steuerelemente genau und einfach ausrichten. Löschen Sie das `Button`-Steuerelement, wenn Sie fertig sind.
 

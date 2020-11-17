@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928670"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400101"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -172,6 +172,7 @@ Alle Elemente des Konfigurationselements sind optional, da sie einen Standardwer
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
 </RunConfiguration>
 ```
 
@@ -186,7 +187,8 @@ Das **RunConfiguration**-Element kann folgende Elemente enthalten:
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Ein oder mehrere Pfade zu dem Verzeichnis, in dem die Testadapter gespeichert sind.|
 |**TestSessionTimeout**||Ermöglicht Benutzern, eine Testsitzung zu beenden, wenn sie ein angegebenes Timeout überschreitet. Die Einstellung eines Timeouts stellt sicher, dass die Ressourcen gut ausgenutzt werden und Testsitzungen auf einen bestimmten Zeitraum beschränkt bleiben. Diese Einstellung ist in **Visual Studio 2017 Version 15.5** und höher verfügbar.|
-|**DotnetHostPath**||Legen Sie einen benutzerdefinierten Pfad zum Dotnet-Host fest, der zum Ausführen des Testhosts verwendet wird. Dies ist hilfreich, wenn Sie Ihren eigenen Dotnet-Host erstellen, z. B. beim Erstellen des Repositorys „dotnet/runtime“. Wenn Sie diese Option festlegen, wird die Suche nach der Datei „testhost.exe“ übersprungen, und stattdessen wird die Datei „testhost.dll“ verwendet.
+|**DotnetHostPath**||Legen Sie einen benutzerdefinierten Pfad zum Dotnet-Host fest, der zum Ausführen des Testhosts verwendet wird. Dies ist hilfreich, wenn Sie Ihren eigenen Dotnet-Host erstellen, z. B. beim Erstellen des Repositorys „dotnet/runtime“. Wenn Sie diese Option festlegen, wird die Suche nach der Datei „testhost.exe“ übersprungen, und stattdessen wird die Datei „testhost.dll“ verwendet.|
+|**TreatNoTestsAsError**|false| true oder false <br>Geben Sie einen booleschen Wert an, der den Exitcode definiert, wenn keine Tests erkannt werden. Wenn der Wert `true` ist und keine Tests erkannt werden, wird ein Exitcode ungleich null (0) zurückgegeben. Andernfalls wird Null zurückgegeben.|
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors-Element (Adapter für diagnostische Daten)
 
@@ -308,7 +310,7 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 |-|-|-|
 |**ForcedLegacyMode**|False|In Visual Studio 2012 wurde der MSTest-Adapter für eine schnellere Geschwindigkeit und bessere Skalierbarkeit optimiert. Einige Verhalten, z. B. die Reihenfolge der Testausführung, sind möglicherweise nicht mehr so präzise wie in den vorherigen Versionen von Visual Studio. Legen Sie diesen Wert auf **TRUE** fest, um den älteren Testadapter zu verwenden.<br /><br />Beispielsweise können Sie diese Einstellung verwenden, wenn Sie eine *app.config*-Datei für einen Komponententest angegeben haben.<br /><br />Eventuell sollten Sie in Betracht ziehen, die Tests so umzugestalten, dass Sie den späteren Adapter verwenden können.|
 |**IgnoreTestImpact**|False|Das Testauswirkungsfeature priorisiert Tests, auf die sich aktuelle Änderungen auswirken, wenn sie in MSTest oder über Microsoft Test Manager ausgeführt werden (ab Visual Studio 2017 veraltet). Diese Einstellung deaktiviert die Funktion. Weitere Informationen finden Sie unter [Welche Tests sollten ab einem vorherigen Build ausgeführt werden?](/previous-versions/dd286589(v=vs.140))|
-|**SettingsFile**||Sie können eine Testeinstellungsdatei, die mit dem MS-Testadapter verwendet werden soll, hier angeben. Sie können auch eine Testeinstellungsdatei [ im Menü „Einstellungen“](#specify-a-run-settings-file-in-the-ide) angeben.<br /><br />Wenn Sie diesen Wert angeben, müssen Sie außerdem **ForcedlegacyMode** auf **true**festlegen.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||Sie können eine Testeinstellungsdatei, die mit dem MS-Testadapter verwendet werden soll, hier angeben. Sie können auch eine Testeinstellungsdatei [ im Menü „Einstellungen“](#specify-a-run-settings-file-in-the-ide) angeben.<br /><br />Wenn Sie diesen Wert angeben, müssen Sie außerdem **ForcedlegacyMode** auf **true** festlegen.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|Nachdem ein Testlauf abgeschlossen ist, wird MSTest beendet. Jeder Prozess, der als Teil des Tests gestartet wird, wird dann ebenfalls abgebrochen. Wenn der Test-Executor aktiv bleiben soll, legen Sie den Wert auf **TRUE** fest. Beispielsweise können Sie mit dieser Einstellung erreichen, dass der Browser zwischen Tests der programmierten UI aktiv bleibt.|
 |**DeploymentEnabled**|true|Wenn Sie den Wert auf **FALSE** festlegen, werden in der Testmethode angegebene Bereitstellungselemente nicht in das Bereitstellungsverzeichnis kopiert.|
 |**CaptureTraceOutput**|true|Mithilfe von <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> können Sie über Ihre Testmethode in die Debugablaufverfolgung schreiben.|
@@ -345,6 +347,10 @@ Alle Elemente der Datei sind optional, da sie einen Standardwert enthalten.
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
+
+    <!-- true or false -->
+    <!-- Value that specifies the exit code when no tests are discovered -->
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->

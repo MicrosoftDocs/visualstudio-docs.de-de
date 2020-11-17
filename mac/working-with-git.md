@@ -3,15 +3,15 @@ title: Arbeiten mit Git
 description: Verwenden von Git in Visual Studio für Mac
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70108025"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493230"
 ---
 # <a name="working-with-git"></a>Arbeiten mit Git
 
@@ -77,9 +77,9 @@ Um einen neuen Branch zu erstellen, wählen Sie im Konfigurationsdialog des Git-
 
 Sie können auch einen Remotebranch als _Nachverfolgungsbranch_ festlegen. Weitere Informationen zu Nachverfolgungsbranches finden Sie in der [Git-Dokumentation](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches).
 
-Sehen Sie sich der aktuellen Branch im Projektmappenpad neben dem Projektnamen an:
+Sehen Sie sich den aktuellen Branch im Projektmappenfenster neben dem Projektnamen an:
 
- ![Aktueller Branch im Projektmappenpad](media/version-control-gitBranchName.png)
+ ![Aktueller Branch im Projektmappenfenster](media/version-control-gitBranchName.png)
 
 ## <a name="reviewing-and-committing"></a>Überprüfen und Committen
 

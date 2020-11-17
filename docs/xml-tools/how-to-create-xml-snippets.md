@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen von XML-Ausschnitten'
+description: In diesem Artikel erfahren Sie, wie Sie den XML-Editor in Visual Studio verwenden, um XML-Ausschnitte zu erstellen, mit denen Sie XML-Dateien schneller erstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d935f479e3133db8fb5340359d6a354058a3020a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815395"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400029"
 ---
 # <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
 

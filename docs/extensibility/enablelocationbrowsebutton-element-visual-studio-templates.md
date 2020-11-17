@@ -1,5 +1,6 @@
 ---
 title: EnableLocationBrowseButton-Element (Visual Studio-Vorlagen)
+description: Erfahren Sie mehr über das EnableLocationBrowseButton-Element und wie es angibt, ob die Schaltfläche "Durchsuchen" im Dialogfeld "Neues Projekt" verfügbar ist.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 463219218994c9ec1e0f8a5be6e43a0bfd3f5d49
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036651"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671258"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton-Element (Visual Studio-Vorlagen)
 Gibt an, ob die Schaltfläche " **Durchsuchen** " im Dialogfeld " **Neues Projekt** " verfügbar ist, sodass Benutzer das Standardverzeichnis, in dem ein neues Projekt gespeichert wird, leicht ändern können.
@@ -54,7 +55,7 @@ Gibt an, ob die Schaltfläche " **Durchsuchen** " im Dialogfeld " **Neues Projek
 
  Der Text muss entweder `true` oder lauten `false` und zeigt an, ob die Schaltfläche **Durchsuchen** im Dialogfeld **Neues Projekt** angezeigt werden soll.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `EnableLocationBrowseButton` ist ein optionales Element. Der Standardwert ist `true` , wodurch die Schaltfläche **Durchsuchen** im Dialogfeld **Neues Projekt** angezeigt wird.
 
  Im Dialogfeld **Neues Projekt** gibt das Textfeld **Speicherort** das Verzeichnis an, in dem ein neues Projekt gespeichert wird. Mithilfe der Schaltfläche **Durchsuchen** können Sie dieses Verzeichnis ändern, indem Sie das Dialogfeld **Projekt Speicherort** anzeigen, mit dessen Hilfe Sie problemlos zu einem anderen Verzeichnis navigieren können, das auf Ihrem Computer verfügbar ist, und es dann als das Verzeichnis auswählen, in dem das neue Projekt gespeichert wird.

@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247381"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493204"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Standardtastenkombinationen in Visual Studio für Mac
 
@@ -48,8 +48,8 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |Alle Haltepunkte entfernen|**⇧⌘F9**|
 |Ausführen bis Cursor|**⌘F10**|
 |Festlegen der nächsten Anweisung|**⇧⌘F10**|
-|Nächste Anweisung anzeigen|**⌥\***|
-|Einzelschritt|**⇧⌘I**, **⌘F11**|
+|Nächste Anweisung anzeigen|**⌥\** _|
+|Einzelschritt|_*⇧⌘I**, **⌘F11**|
 |Rücksprung|**⇧⌘U**, **⇧⌘F11**|
 |Prozedurschritt|**⇧⌘O**, **F10**|
 |Breakpoint ein/aus|**⌘\\**, **F9**|
@@ -254,9 +254,9 @@ In den folgenden herunterladbaren PDF-Dateien wurden die am häufigsten verwende
 |Nächstes Dokument|**⌘}** , **⌘F6**|
 |Vorheriges Dokument|**⌘{**, **⇧⌘F6**|
 |Zum nächsten Dokument wechseln|**⌃⇥**|
-|Zum nächsten Bereich wechseln|**⌃⌥⇥**|
+|Zum nächsten Toolfenster wechseln|**⌃⌥⇥**|
 |Zum vorherigen Dokument wechseln|**⌃⇧⇥**|
-|Zum vorherigen Bereich wechseln|**⌃⌥⇧⇥**|
+|Zum vorherigen Toolfenster wechseln|**⌃⌥⇧⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>Tabelle mit macOS-Tastensymbolen
 

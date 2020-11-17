@@ -1,5 +1,7 @@
 ---
 title: CustomDataSignature-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das CustomDataSignature-Element und wie es die Text Signatur angibt, um die benutzerdefinierten Daten zu suchen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b2442e7b254ccaaf9e890b5370f712b5715f18
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739444"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671518"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature-Element (Visual Studio-Vorlagen)
 Gibt die Text Signatur für die Suche nach den benutzerdefinierten Daten an.
@@ -51,9 +53,9 @@ Gibt die Text Signatur für die Suche nach den benutzerdefinierten Daten an.
 
  Der Text ist eine Zeichenfolge mit der Text Signatur, die zum Suchen der benutzerdefinierten Daten erforderlich ist.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `CustomDataSignature` ist ein optionales Element.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

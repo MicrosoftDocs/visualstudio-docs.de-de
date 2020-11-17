@@ -1,5 +1,7 @@
 ---
 title: Validierung von XML-Dokumenten im XML-Editor
+description: Hier erfahren Sie mehr über die Überprüfung von XML-Dokumenten im XML-Editor sowie darüber, wie dieser die XML 1.0-Syntax und Daten bereits beim Eingeben überprüft.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ec38cb416f764990252b1e58c2322bea8be94d15
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592411"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351452"
 ---
 # <a name="xml-document-validation"></a>Validierung von XML-Dokumenten
 
@@ -21,7 +23,7 @@ Der XML-Editor überprüft die XML 1.0-Syntax und validiert bereits beim Eingeb
 
 Die bei der Validierung verwendeten Schemata werden durch Abgleichen des `targetNamespace` eines kompilierten Schemas mit der xmlns-Deklaration des Elements gefunden. Kompilierte Schemata werden von einem der folgenden Speicherorte geladen, die entsprechend ihrer Priorität aufgelistet sind:
 
-- Von dem Dateinamen, der im **Eigenschaften**fenster des Dokuments im **Schemata**-Feld angegeben ist.
+- Von dem Dateinamen, der im **Eigenschaften** fenster des Dokuments im **Schemata**-Feld angegeben ist.
 
 - Aus einem Inlineschema oder einer DTD.
 

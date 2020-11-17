@@ -1,5 +1,7 @@
 ---
 title: Description-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das Beschreibungs Element und darüber, wie es die Beschreibung der Vorlage angibt, wie Sie im Dialogfeld Neues Projekt oder neues Element hinzufügen angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712258"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671284"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description-Element (Visual Studio-Vorlagen)
 Gibt die Beschreibung der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
@@ -41,7 +43,7 @@ Gibt die Beschreibung der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** od
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Package`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
 |`ID`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
@@ -60,7 +62,7 @@ Gibt die Beschreibung der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** od
 
  Der Text enthält eine Beschreibung der Vorlage.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `Description` ist ein erforderliches untergeordnetes Element des- `TemplateData` Elements.
 
 ## <a name="example"></a>Beispiel

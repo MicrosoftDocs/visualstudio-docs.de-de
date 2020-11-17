@@ -1,6 +1,8 @@
 ---
 title: LocationField-Element (Visual Studio-Projektvorlagen)
 titleSuffix: ''
+description: Informieren Sie sich über das LocationField-Element und darüber, wie es angibt, ob das Textfeld Neues Projekt Dialogfeld Speicherort für die Projektvorlage aktiviert, deaktiviert oder ausgeblendet ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aafe51669bcc95d6024b5a3fd749ba70ea8ddc7
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739137"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671271"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField-Element (Visual Studio-Projektvorlagen)
 Gibt an, ob das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** für die Projektvorlage aktiviert, deaktiviert oder ausgeblendet ist.
@@ -46,7 +48,7 @@ Gibt an, ob das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** für di
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie Sie im **neuen Projekt**angezeigt wird.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie Sie im **neuen Projekt** angezeigt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
@@ -59,8 +61,8 @@ Gibt an, ob das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** für di
 
 - `Hidden`, das angibt, dass das Feld **Speicherort** des Dialog Felds **Neues Projekt** ausgeblendet ist.
 
-## <a name="remarks"></a>Bemerkungen
- Standardwert: `Enabled`.
+## <a name="remarks"></a>Hinweise
+ Der Standardwert ist `Enabled`.
 
  Das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** ermöglicht es Benutzern, das Standardverzeichnis zu ändern, in dem neue Projekte gespeichert werden.
 

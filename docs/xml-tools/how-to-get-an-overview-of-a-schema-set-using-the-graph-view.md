@@ -1,5 +1,7 @@
 ---
 title: 'XML-Schema-Designer: Abrufen einer Schemasetübersicht mithilfe der Diagrammansicht'
+description: In diesem Artikel erfahren Sie, wie Sie die Diagrammansicht im XML-Schema-Explorer verwenden, um eine allgemeine Ansicht der Knoten in einem Schemaset und die Beziehungen zwischen den Knoten anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50813b37bf8f0fa7b3a8dbbb8fd38c101f6bbadf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 553b9f2d84f70c75ebcee40cdffe044237c23a5f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817150"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398487"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Vorgehensweise: Abrufen einer Übersicht über ein Schemaset in der Diagrammansicht
 

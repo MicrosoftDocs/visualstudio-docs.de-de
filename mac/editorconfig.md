@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
-ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938513"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493061"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Erstellen und Bearbeiten einer benutzerdefinierten EditorConfig-Datei
 
@@ -51,7 +51,7 @@ Eine EditorConfig-Datei unterstützt zudem [Codierungskonventionen](/visualstudi
 
     Das Hinzufügen des Elements auf Projektmappenebene erstellt und verschachtelt es automatisch in einen Ordner namens **Solution Items** (Projektmappenelemente):
 
-    ![Im Lösungspad angezeigtes Projektmappenelement](media/editorconfig-image1a.png)
+    ![Im Projektmappenfenster angezeigtes Projektmappenelement](media/editorconfig-image1a.png)
 
 4. Bearbeiten Sie die Datei. Zum Beispiel:
 

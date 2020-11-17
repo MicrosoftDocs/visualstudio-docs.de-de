@@ -1,5 +1,7 @@
 ---
 title: Verwenden von XML-Ausschnitten
+description: In diesem Artikel erfahren Sie, wie Sie Befehle im XML-Editor verwenden, um XML-Ausschnitte einzufügen oder ausgewählten Text mit einem XML-Ausschnitt zu umschließen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c5ef5d5c33c46a9f09eb604d0a2e40cf9a6e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815915"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400114"
 ---
 # <a name="how-to-use-xml-snippets"></a>Vorgehensweise: Verwenden von XML-Ausschnitten
 

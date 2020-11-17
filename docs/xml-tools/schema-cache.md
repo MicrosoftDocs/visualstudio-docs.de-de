@@ -1,5 +1,7 @@
 ---
 title: Schemacache des XML-Editors
+description: In diesem Artikel erfahren Sie mehr über den vom XML-Editor bereitgestellten Schemacache, der Standard-XML-Schemas enthält, die für IntelliSense und die Überprüfung von XML-Dokumenten verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592489"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351374"
 ---
 # <a name="schema-cache"></a>Schemacache
 
 Der XML-Editor stellt einen Schemacache im Verzeichnis *%VSInstallDir%\xml\Schemas* bereit. Der Schemacache ist global für alle Benutzer auf dem Computer und enthält XML-Standardschemata, die für IntelliSense und die Validierung von XML-Dokumenten verwendet werden.
 
-Der XML-Editor kann auch in der Projektmappe gespeicherte Schemata, im Dokument**eigenschaften**fenster im Feld **Schemata** angegebene Schemata und Schemata suchen, die durch das `xsi:schemaLocation`-Attribut und das `xsi:noNamespaceSchemaLocation`-Attribut angegeben werden.
+Der XML-Editor kann auch in der Projektmappe gespeicherte Schemata, im Dokument **eigenschaften** fenster im Feld **Schemata** angegebene Schemata und Schemata suchen, die durch das `xsi:schemaLocation`-Attribut und das `xsi:noNamespaceSchemaLocation`-Attribut angegeben werden.
 
 In der folgenden Tabelle werden die mit dem XML-Editor installierten Schemata beschrieben.
 
@@ -110,7 +112,7 @@ Sie können den Speicherort für den Schemacache mithilfe der Optionsseite **Ver
 
 ### <a name="to-change-the-schema-cache-location"></a>So ändern Sie den Speicherort für den Schemacache
 
-1. Wählen Sie **Optionen** im Menü **Extras**aus.
+1. Wählen Sie **Optionen** im Menü **Extras** aus.
 
 2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und klicken Sie anschließend auf **Verschiedenes**.
 

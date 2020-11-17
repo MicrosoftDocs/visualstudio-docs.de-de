@@ -1,5 +1,7 @@
 ---
 title: IntelliSense-Features des XML-Editors
+description: In diesem Artikel erfahren Sie mehr über die IntelliSense-Features des XML-Editors in Visual Studio und darüber, wie Sie diese mit der Sprache der XML-Schemadefinition (XML Schema Definition Language, XSD) und XSLT-Dokumenten verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592385"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350243"
 ---
 # <a name="xml-editor-intellisense-features"></a>IntelliSense-Features des XML-Editors
 
@@ -91,9 +93,9 @@ Der XML-Editor hebt Klammern hervor, sodass Sie eine direkte Rückmeldung zu den
 
 Dies wird vom XML-Editor für folgende Elemente ausgeführt:
 
-- Zusammengehörige Start- und Endtags.
+- Übereinstimmende Start- und Endtags
 
-- Jedes Paar eckiger „\<“- oder „>“-Klammern.
+- Jedes beliebige Paar aus eckigen Klammern: \<" or ">
 
 - Anfang und Ende von Kommentaren.
 
@@ -107,7 +109,7 @@ Dies wird vom XML-Editor für folgende Elemente ausgeführt:
 
 ## <a name="modify-the-intellisense-options"></a>Ändern der IntelliSense-Optionen
 
-Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Diese können jedoch durch Ändern der Einstellungen für **Extras**> **Optionen** geändert werden.
+Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Diese können jedoch durch Ändern der Einstellungen für **Extras** > **Optionen** geändert werden.
 
 Der Abschnitt **Automatisch einfügen** auf der Seite **Verschiedenes** steuert das folgende Verhalten:
 
