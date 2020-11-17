@@ -3,15 +3,15 @@ title: Anpassen der IDE
 description: Visual Studio für Mac kann auf viele verschiedene Arten angepasst werden, sodass Benutzer Apps in einer Umgebung entwickeln können, die ihren Bedürfnissen nach Effizienz und Ästhetik gerecht wird. In diesem Artikel werden die verschiedenen Arten erläutert, auf die Sie Visual Studio für Mac Ihren Bedürfnissen anpassen können.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 11/06/2020
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: 98adf6aa252f4151af8a5504efd3856aef0afc8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05fd1091a279a085c2a727eb36cbc56fcb201057
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801775"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493300"
 ---
 # <a name="customizing-the-ide"></a>Anpassen der IDE
 
@@ -76,43 +76,41 @@ Diese Zuordnungen können auch während der ersten Einrichtung von Visual Studio
 
 ## <a name="workspace-layout"></a>Arbeitsbereichlayout
 
-Der Arbeitsbereich von Visual Studio für Mac besteht aus einem Bereich für das Hauptdokument (normalerweise der Editor, die Designeroberfläche oder die Optionsdatei), der von ergänzenden *Pads* umgeben ist, die nützliche Informationen zum Zugreifen auf und Verwalten von Anwendungsdateien, Testen und Debuggen enthalten.
+Der Arbeitsbereich von Visual Studio für Mac besteht aus einem Bereich für das Hauptdokument (normalerweise der Editor, die Designeroberfläche oder die Optionsdatei), der von ergänzenden *Toolfenstern* umgeben ist, die nützliche Informationen zum Zugreifen auf und Verwalten von Anwendungsdateien, Testen und Debuggen enthalten.
 
  ![Arbeitsbereichlayout](media/customizing-the-ide-image1a.png)
 
-### <a name="viewing-and-arranging-pads"></a>Anzeigen und Anordnen von Pads
+### <a name="viewing-and-arranging-tool-windows"></a>Anzeigen und Anordnen von Toolfenstern
 
-Wenn Sie eine neue Projektmappe oder Datei in Visual Studio für Mac öffnen, sollten Sie einige *Pads* im Arbeitsbereich bemerken, darunter das Projektmappen-, Dokumentgliederungs- und Fehlerpad:
+Wenn Sie eine neue Projektmappe oder Datei in Visual Studio für Mac öffnen, sollten Sie einige *Toolfenster* im Arbeitsbereich bemerken, darunter das Projektmappen-, Dokumentgliederungs- und Fehlerfenster:
 
-![Projektmappenpads](media/customizing-the-ide-image2a.png)
+![Toolfenster](media/customizing-the-ide-image2a.png)
 
-Visual Studio für Mac stellt Pads bereit, die zusätzliche Informationen enthalten, sowie Tools und Navigationshilfen. Auf diese kann zugegriffen werden, indem Sie zum Menüelement **Ansicht > Pads** navigieren und auf ein Pad klicken, um es hinzuzufügen:
+Visual Studio für Mac stellt Toolfenster bereit, die zusätzliche Informationen enthalten, sowie Tools und Navigationshilfen. Auf diese kann zugegriffen werden, indem Sie zum Menüelement **Ansicht** navigieren und auf ein Toolfenster klicken, um es hinzuzufügen:
 
-![Auswählen eines neuen Pads](media/customizing-the-ide-image3a.png)
+![Auswählen eines neuen Toolfensters](media/customizing-the-ide-image3a.png)
 
-Pads können auch automatisch durch verschiedene Befehle geöffnet werden, zum Beispiel durch den Befehl **Suchen in Dateien** (UMSCHALT + Cmd + F), durch den ein getrenntes Pad mit Suchergebnissen geöffnet wird.
+Toolfenster können auch automatisch durch verschiedene Befehle geöffnet werden, zum Beispiel durch den Befehl **Suchen in Dateien** (UMSCHALT + CMD + F), durch den ein getrenntes Fenster mit Suchergebnissen geöffnet wird.
 
-Pads können innerhalb Ihres Arbeitsbereich ganz nach Ihrem Wunsch bewegt und angeordnet werden. Sie können beispielsweise an jede Seite des Dokument-Editors angedockt und neben, über oder unter einem anderen Pad angeordnet werden. Auch eine Reihe von Pads im Registerkartenformat ist möglich, sodass Sie schnell zwischen diesen wechseln können.
+Toolfenster können innerhalb Ihres Arbeitsbereich ganz nach Ihrem Wunsch bewegt und angeordnet werden. Sie können beispielsweise an jede Seite des Dokument-Editors angedockt und neben, über oder unter einem anderen Toolfenster angeordnet werden. Auch eine Reihe von Fenstern im Registerkartenformat ist möglich, sodass Sie schnell zwischen diesen wechseln können.
 
-Sie können häufig verwendete Pads auch komplett vom Fenster von Visual Studio für Mac trennen und ein separates Fenster für dieses Pad erstellen.
+Sie können häufig verwendete Toolfenster auch vollständig vom Fenster von Visual Studio für Mac trennen und ein eigenes, neues Fenster erstellen.
 
-Pads können mithilfe der Schaltflächen in der oberen rechten Ecke jedes Pads ausgeblendet oder geschlossen werden:
+Toolfenster können mithilfe der Steuerelemente in der oberen rechten Ecke jedes Fensters angeheftet und geschlossen werden:
 
-![Ausblenden und Schließen von Pads](media/customizing-the-ide-image5a.png)
+:::image type="content" source="media/customizing-the-ide-image5a.png" alt-text="Verwenden der Steuerelemente zum Anheften oder Schließen von Toolfenstern":::
 
-Automatisch ausgeblendete Pads sind an die Seiten des Arbeitsbereichs angedockt, sodass sie bei Bedarf leicht zugänglich sind. Beim Bewegen des Mauszeigers über das Pad wird es angezeigt, und wenn der Maus- und Tastaturfokus es verlässt, wird es wieder ausgeblendet.
+Angeheftete Fenster werden an die Seiten des Arbeitsbereichs angedockt und bleiben für schnelleren Zugriff geöffnet, wenn Sie diese benötigen. Nicht angeheftete Fenster werden angedockt, aber nicht angezeigt, bis Sie mit dem Mauszeiger auf die Registerkarte für das Fenster zeigen oder mit der Tastatur zum Fenster wechseln. Die Fenster werden ausgeblendet, wenn der Fokus der Maus und Tastatur diese verlässt.
 
 ### <a name="organizing-layouts"></a>Organisieren von Layouts
 
-Welche Pads jeweils angezeigt werden, hängt vom aktuellen Kontext ab. Wenn Sie beispielsweise den visuellen Designer verwenden, sind die Pads „Toolbox“ und „Eigenschaftsraster“ am wichtigsten. Beim Debuggen sind die Debuggerpads zum Anzeigen der Stapel und lokalen Variablen besonders hilfreich.
+Welche Toolfenster jeweils angezeigt werden, hängt vom aktuellen Kontext ab. Wenn Sie beispielsweise den visuellen Designer verwenden, sind die Fenster „Toolbox“ und „Eigenschaftenraster“ am wichtigsten. Beim Debuggen sind die Debuggerfenster zum Anzeigen der Stapel und lokalen Variablen besonders hilfreich.
 
-Der Status eines geöffneten Pads wird durch ein *Layout* dargestellt. Die Layouts können wie in der folgenden Abbildung dargestellt manuell im Menü „Ansicht“ gewechselt werden. Alternativ werden sie automatisch gewechselt, wenn Sie eine Aktion (z.B. Debuggen) ausführen oder ein Storyboard öffnen:
+Der Status eines geöffneten Toolfensters wird durch ein *Layout* dargestellt. Die Layouts können wie in der folgenden Abbildung dargestellt manuell im Menü „Ansicht“ gewechselt werden. Alternativ werden sie automatisch gewechselt, wenn Sie eine Aktion (z. B. Debuggen) ausführen oder ein Storyboard öffnen:
 
 ![Auswählen neuer Layouts](media/customizing-the-ide-image6b.png)
 
-Es gibt immer ein aktives Layout und jede Änderung, die Sie an einem Layout vornehmen, zum Beispiel das Hinzufügen oder Neupositionieren eines Pads, ändert nur das aktive Layout. Wenn Sie Visual Studio für Mac schließen, werden die von Ihnen vorgenommenen Änderungen nicht gespeichert.
-
-Es ist jedoch möglich, über das Menüelement **Ansicht > Aktuelles Layout speichern** ein neues Layout zu erstellen. Mit diesem Befehl wird dem Menü das aktuelle Layout hinzugefügt, sodass Sie es jederzeit auswählen können:
+Sie können ein neues Layout mithilfe der Menüelemente **Ansicht > Layout > Aktuelles Layout speichern** erstellen. Mit diesem Befehl wird dem Menü das aktuelle Layout hinzugefügt, sodass Sie es jederzeit auswählen können:
 
 ![Speichern aktueller Layouts](media/customizing-the-ide-image6a.png)
 
@@ -136,6 +134,6 @@ Klicken Sie auf **View > Editor Columns > 1 column** (Ansicht > Editor-Spalten >
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Personalisieren der Visual Studio-IDE (unter Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

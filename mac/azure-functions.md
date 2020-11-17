@@ -1,18 +1,18 @@
 ---
 title: Einführung in Azure Functions
-description: Verwenden von Azure-Funktionen in Visual Studio für Mac
+description: Erste Schritte mit Azure Functions in Visual Studio für Mac
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402316"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492840"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -95,10 +95,10 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie dann **Veröffentlichen > In Azure veröffentlichen** aus:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image5.png)
+1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie dann **Veröffentlichen > In Azure veröffentlichen** aus:  ![Kontextmenü, in dem „Veröffentlichen“ > „In Azure veröffentlichen...“ hervorgehoben ist](media/azure-functions-image5.png)
 2. Wenn Sie Ihr Azure-Konto bereits mit Visual Studio für Mac verbunden haben, wird eine Liste der verfügbaren App-Dienste angezeigt. Wenn Sie sich nicht angemeldet haben, werden Sie dazu aufgefordert.
 3. Im Dialogfeld **In Azure App Service veröffentlichen** können Sie entweder einen vorhandenen App-Dienst auswählen oder einen neuen erstellen, indem Sie auf **Neu** klicken.
-4. Geben Sie Ihre Einstellungen im Dialogfeld **Neuen App-Dienst erstellen** ein:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
+4. Geben Sie Ihre Einstellungen im Dialogfeld **Neuen App-Dienst erstellen** ein:  ![Dialogfeld „Neuer App Service“ mit Feldern für den Dienstnamen, das Abonnement, die Ressourcengruppe und die Dienstplaneinstellungen](media/azure-functions-image7.png)
 
     |Einstellung  |Beschreibung  |
     |---------|---------|
@@ -109,15 +109,15 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 
 5. Klicken Sie auf **Weiter**, um ein Speicherkonto zu erstellen. Für die Functions-Laufzeit ist ein Azure-Speicherkonto erforderlich. Klicken Sie auf **Benutzerdefiniert**, um ein allgemeines Speicherkonto zu erstellen oder eine bereits vorhandenes Speicherkonto zu verwenden:
 
-    ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image8.png)
+    ![Dialogfeld „Neuer App Service“ mit der Eingabeaufforderung für den Namen eines Speicherkontos](media/azure-functions-image8.png)
 
 6. Klicken Sie auf **Erstellen**, um mit diesen Einstellungen eine Funktions-App und zugehörige Ressourcen in Azure zu erstellen und Ihren Funktionsprojektcode bereitzustellen.
 
 7. Während der Veröffentlichung werden Sie möglicherweise in einem Dialogfeld aufgefordert, damit Sie Ihre „Functions-Version in Azure aktualisieren“. Klicken Sie auf **Ja**:
 
-    ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image12.png)
+    ![Eingabeaufforderung „Update Azure application settings to match local Functions version?“ (Möchten Sie die Azure-Anwendungseinstellungen so aktualisieren, dass sie der lokalen Version von Functions entsprechen?) mit den Optionen „Ja“ und „Nein“](media/azure-functions-image12.png)
 
-## <a name="function-app-settings"></a>Funktions-App-Einstellungen
+## <a name="function-app-settings"></a>Einstellungen für Funktions-Apps
 
 Alle Einstellungen, die Sie in der Datei local.settings.json hinzugefügt haben, müssen auch der Funktions-App in Azure hinzugefügt werden. Diese Einstellungen werden nicht automatisch hochgeladen, wenn Sie das Projekt veröffentlichen.
 

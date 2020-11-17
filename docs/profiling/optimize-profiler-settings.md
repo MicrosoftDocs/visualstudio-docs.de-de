@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef802958817b43dd66973db66a80d328454aa83
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85329258"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400310"
 ---
 # <a name="optimizing-profiler-settings"></a>Optimieren der Profilereinstellungen
 
@@ -22,7 +22,7 @@ Der Leistungs-Profiler und das Fenster „Diagnosetools“ in Visual Studio umfa
 
 ## <a name="symbol-settings"></a>Symboleinstellungen
 
-Die Symboleinstellungen in den Debuggeroptionen (**Debuggen > Optionen > Symbole**) haben erheblichen Einfluss darauf, wie lang es dauert, Ergebnisse in den Tools zu generieren. Die Aktivierung von Symbolservern oder die Verwendung von **_NT_SYMBOL_PATH** führt dazu, dass der Profiler Symbole für jedes Modul anfordert, das in einem Bericht geladen wurde. Aktuell lädt der Profiler automatisch alle Symbole, unabhängig von der Einstellung zum automatischen Laden von Symbolen.
+Die Symboleinstellungen in den Debuggeroptionen (**Debuggen > Optionen > Symbole** oder **Extras > Optionen > Debuggen > Symbole**) haben erheblichen Einfluss darauf, wie lang es dauert, Ergebnisse in den Tools zu generieren. Die Aktivierung von Symbolservern oder die Verwendung von **_NT_SYMBOL_PATH** führt dazu, dass der Profiler Symbole für jedes Modul anfordert, das in einem Bericht geladen wurde. Aktuell lädt der Profiler automatisch alle Symbole, unabhängig von der Einstellung zum automatischen Laden von Symbolen.
 
 ![Seite zum Laden von Symbolen](../profiling/media/symbolloading.png "Seite zum Laden von Symbolen")
 

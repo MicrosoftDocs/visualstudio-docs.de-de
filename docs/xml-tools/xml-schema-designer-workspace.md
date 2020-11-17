@@ -1,5 +1,7 @@
 ---
 title: Arbeitsbereich des XML-Schema-Designers
+description: In diesem Artikel erfahren Sie mehr über die Ansichten „Start“, „Diagramm“ und „Content model“ (Inhaltsmodell) im Arbeitsbereich „XML-Schema-Designer“ (XSD-Designer) in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 06e7c1774666d2079bea56586f28c6c4e3f5aeec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592372"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351309"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>Ansichten im Arbeitsbereich des XML-Schema-Designers
 

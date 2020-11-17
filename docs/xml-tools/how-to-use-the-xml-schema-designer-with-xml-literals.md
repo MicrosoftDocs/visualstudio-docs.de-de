@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwenden des XML-Schema-Designers mit XML-Literalen'
+description: In diesem Artikel erfahren Sie, wie Sie den XML-Schema-Designer verwenden, um ein Schema anzuzeigen, das mit einem XML-Literal in einem Visual Basic-Projekt verknüpft ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b515092087ab213db5d3002f00c56753c2e3de14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b86cc50e5a25466b0ec80e45a225d64b8a97f72
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814641"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399171"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Vorgehensweise: Verwenden des XML-Schema-Designers mit XML-Literalen
 
@@ -25,7 +27,7 @@ In diesem Thema wird beschrieben, wie ein mit einem XML-Literal verknüpftes Sch
 
 1. Öffnen Sie Visual Studio.
 
-2. Erstellen Sie ein neues Visual Basic-**Konsolenanwendung**sprojekt namens **XMLLiterals**.
+2. Erstellen Sie ein neues Visual Basic-**Konsolenanwendung** sprojekt namens **XMLLiterals**.
 
      Das neue Projekt enthält die eine Visual Basic-Quelldatei *Module1.vb*.
 

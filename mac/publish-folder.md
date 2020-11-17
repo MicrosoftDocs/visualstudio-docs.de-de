@@ -1,6 +1,7 @@
 ---
 title: Veröffentlichen in einem Ordner
-ms.date: 04/02/2019
+description: Veröffentlichen einer Webanwendung in einem Ordner mithilfe von Visual Studio für Mac
+ms.date: 11/09/2020
 helpviewer_keywords:
 - deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583943"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493412"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Veröffentlichen in einem Ordner mit Visual Studio für Mac
 
@@ -23,13 +24,13 @@ Sie können das Tool zum Veröffentlichen verwenden, um .NET Core-Konsolenanwend
 ## <a name="prerequisites"></a>Voraussetzungen
 
 - [Visual Studio 2019 für Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installiert mit aktiviertem .NET Core.
-- Ein .NET Core-Konsolen- oder ASP.NET Core-Projekt Wenn Sie noch kein Projekt haben, können Sie [ein neues Projekt erstellen](./create-new-projects.md?view=vsmac-2019).
+- Ein .NET Core-Konsolen- oder ASP.NET Core-Projekt Wenn Sie noch kein Projekt haben, können Sie [ein neues Projekt erstellen](./create-new-projects.md).
 
 ## <a name="publish-to-folder"></a>In Ordner veröffentlichen
 
 Mit Visual Studio für Mac können Sie Ihre .NET Core-Projekte mithilfe des Tools zum Veröffentlichen in einem Ordner veröffentlichen. Nachdem Sie Dateien in einem Ordner veröffentlicht haben, können Sie diese in eine andere Umgebung verschieben. Wenn Sie eine Veröffentlichung in einem Ordner vornehmen möchten, befolgen Sie die folgenden Schritte:
 
- 1. Klicken Sie im Lösungspad mit der rechten Maustaste auf das Projekt, und klicken Sie auf **Veröffentlichen**.
+ 1. Klicken Sie im Projektmappenfenster mit der rechten Maustaste auf das Projekt und mit der linken auf **Veröffentlichen**.
 
     ![Kontextmenü „Veröffentlichen“](media/publish-context-menu.png)
 

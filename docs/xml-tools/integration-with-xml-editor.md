@@ -1,5 +1,7 @@
 ---
 title: Integration des XML-Schema-Designers in XML-Editor
+description: In diesem Artikel erfahren Sie mehr über die Integration zwischen dem XML-Schema-Designer und dem XML-Editor sowie darüber, wie Änderungen in diesen dargestellt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a9220d84e2fb1a15545d1a880b0084952da77f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9569e33f8f9f861bc5d89030c6fe38b0ab853a6f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592580"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400186"
 ---
 # <a name="integration-with-xml-editor"></a>Integration in den XML-Editor
 
@@ -25,11 +27,11 @@ Der XML-Schema-Designer ist in den XML-Editor integriert. Wenn Sie eine XSD-Date
 
 Die folgende Bildschirmabbildung zeigt ein im **XML-Schema-Explorer** geöffnetes XML-Schema. Der **XML-Schema-Explorer** zeigt das Schemaset in einer Strukturansicht an. Der XML-Editor zeigt die Textansicht des aktuell im **XML-Schema-Explorer** aktiven Knotens an.
 
-![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
+![Screenshot: Visual Studio-Projekt mit einem XML-Knoten im Bereich des XML-Editors und eine Strukturansicht des festgelegten Schemas im Bereich des XML-Schema-Explorers.](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
 Manchmal ist es hilfreich, den Code im XML-Editor und dem grafischen Designer nebeneinander zu sehen. Klicken Sie an einer beliebigen Stelle im XML-Editor mit der rechten Maustaste, und wählen Sie **Ansichts-Designer** aus, um beide Dateien gleichzeitig anzuzeigen. Wählen Sie im Visual Studio-Menü „Fenster“ die Option **Neue horizontale (oder vertikale) Registerkartengruppe** aus.
 
-![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
+![Screenshot: Visual Studio-Projekt mit den Bereichen „Ansicht-Designer“, „XML-Editor“ und „XML-Schema-Explorer“](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
 ## <a name="see-also"></a>Siehe auch
 

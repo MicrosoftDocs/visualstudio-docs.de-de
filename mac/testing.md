@@ -1,18 +1,19 @@
 ---
 title: Testtools für Visual Studio für Mac
-ms.date: 08/03/2020
+description: Dieser Artikel befasst sich mit dem Erstellen und Ausführen von Tests mit Visual Studio für Mac.
+ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio for Mac]
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91580960"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493386"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Testtools in Visual Studio für Mac
 
@@ -27,7 +28,7 @@ Um mit dem Testen zu beginnen, können Sie ein neues Testprojekt in Ihrer Projek
 > Weitere Informationen zu Komponententests Ihrer .NET Core-Anwendungen und zur Auswahl von Komponententestframeworks finden Sie in der Dokumentation [Komponententests in .NET Core und .NET Standard](/dotnet/core/testing/?pivots=xunit).
 
 ## <a name="running-tests"></a>Ausführen von Tests
-Das Fenster **Komponententests** wird zum Ausführen von Komponententests verwendet und über das Menü **Ansicht > Bereiche > Komponententests** geöffnet. Komponententests in der Projektmappe werden automatisch erkannt und in diesem Fenster angezeigt, in dem Sie alle Tests oder eine Teilmenge von Tests ausführen können, die Sie ausgewählt haben.
+Das Fenster **Komponententests** wird zum Ausführen von Komponententests verwendet und über das Menü **Ansicht > Tests** geöffnet. Komponententests in der Projektmappe werden automatisch erkannt und in diesem Fenster angezeigt, in dem Sie alle Tests oder eine Teilmenge von Tests ausführen können, die Sie ausgewählt haben.
 
 ![Testfenster mit einer Liste von Komponententests und einer Symbolleiste zum Ausführen oder Beenden von Tests.](media/test-window.PNG)
 

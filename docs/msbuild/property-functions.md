@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7fa104ece39e20fbd00abcc2e1616a3dd52a5d4c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048819"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437122"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 
@@ -265,7 +265,7 @@ Die Syntax für diese Eigenschaftenfunktion ist wie folgt:
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Das Windows-Betriebssystem mit 64 Bit speichert einen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** -Registrierungsschlüssel, der eine **HKEY_LOCAL_MACHINE\SOFTWARE** -Registrierungsansicht für 32-Bit-Anwendungen darstellt.
+Das Windows-Betriebssystem mit 64 Bit speichert einen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node**-Registrierungsschlüssel, der eine **HKEY_LOCAL_MACHINE\SOFTWARE**-Registrierungsansicht für 32-Bit-Anwendungen darstellt.
 
 Eine 32-Bit-Anwendung, die unter WOW64 ausgeführt wird, greift standardmäßig auf die 32-Bit-Registrierungsansicht zu, und eine 64-Bit-Anwendung greift auf die 64-Bit-Registrierungsansicht zu.
 
@@ -283,7 +283,7 @@ Nachfolgend finden Sie ein Beispiel:
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-ruft die **SLRuntimeInstallPath** -Daten des **ReferenceAssemblies** -Schlüssels ab und sucht zuerst in der 64-Bit-Registrierungsansicht und dann in der 32-Bit-Registrierungsansicht.
+ruft die **SLRuntimeInstallPath**-Daten des **ReferenceAssemblies**-Schlüssels ab und sucht zuerst in der 64-Bit-Registrierungsansicht und dann in der 32-Bit-Registrierungsansicht.
 
 ## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
 
@@ -340,6 +340,49 @@ Output:
   Value1 = a
   Value2 = b
 -->
+```
+
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild-Funktionen „TargetFramework“ und „TargetPlatform“
+
+MSBuild definiert mehrere Funktionen für die Verarbeitung von [TargetFramework- und TargetPlatform-Eigenschaften](msbuild-target-framework-and-target-platform.md).
+
+|Funktionssignatur|Beschreibung|
+|------------------------|-----------------|
+|GetTargetFrameworkIdentifier(Zeichenfolge für targetFramework)|Analysiert TargetFrameworkIdentifier aus TargetFramework|
+|GetTargetFrameworkVersion(Zeichenfolge für targetFramework)|Analysiert TargetFrameworkVersion aus TargetFramework|
+|GetTargetPlatformIdentifier(Zeichenfolge für targetFramework)|Analysiert TargetPlatformIdentifier aus TargetFramework|
+|GetTargetPlatformVersion(Zeichenfolge für targetFramework)|Analysiert TargetPlatformVersion aus TargetFramework|
+|IsTargetFrameworkCompatible(Zeichenfolge für targetFrameworkTarget, Zeichenfolge für targetFrameworkCandidate)|Gibt TRUE zurück, wenn das anvisierte Zielframework mit diesem Zielframework kompatibel ist, andernfalls FALSE|
+
+Im folgenden Beispiel wird gezeigt, wie diese Funktionen verwendet werden. 
+
+```xml
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Value1>$([MSBuild]::GetTargetFrameworkIdentifier('net5.0-windows7.0'))</Value1>
+        <Value2>$([MSBuild]::GetTargetFrameworkVersion('net5.0-windows7.0'))</Value2>
+        <Value3>$([MSBuild]::GetTargetPlatformIdentifier('net5.0-windows7.0'))</Value3>
+        <Value4>$([MSBuild]::GetTargetPlatformVersion('net5.0-windows7.0'))</Value4>
+        <Value5>$([MSBuild]::IsTargetFrameworkCompatible('net5.0-windows', 'net5.0'))</Value5>
+    </PropertyGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Value1 = $(Value1)" />
+        <Message Text="Value2 = $(Value2)" />
+        <Message Text="Value3 = $(Value3)" />
+        <Message Text="Value4 = $(Value4)" />
+        <Message Text="Value5 = $(Value5)" />
+    </Target>
+</Project>
+```
+
+```output
+Value1 = .NETCoreApp
+Value2 = 5.0
+Value3 = windows
+Value4 = 7.0
+Value5 = True
 ```
 
 ## <a name="msbuild-condition-functions"></a>MSBuild-Bedingungsfunktionen

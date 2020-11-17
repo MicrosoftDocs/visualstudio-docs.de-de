@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten'
+description: In diesem Artikel erfahren Sie mehr über die Anforderungen für die Signierung für die Veröffentlichung von ClickOnce-Anwendungs- und -Bereitstellungsmanifesten. Für Anwendungen, die auf EXE-Dateien basieren, ist die Signierung optional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e04827dd8d8d393af8bc3448df75a7503c8eec3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a267a64a6b6d59b64ffb70596154d1e54f368410
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769792"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351270"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten
 
@@ -33,7 +35,7 @@ Weitere Informationen über die ClickOnce-Bereitstellung finden Sie unter [Click
 
 Das Signieren der ClickOnce-Manifeste ist für *EXE*-basierte Anwendungen optional. Weitere Informationen finden Sie im Abschnitt „Generieren von unsignierten Manifesten“ in diesem Dokument.
 
-Informationen über das Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Weitere Informationen zum Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen bzw. privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > Visual Studio unterstützt nur PFX-Schlüsseldateien (Personal Information Exchange) mit der Erweiterung *.pfx*. Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.
@@ -116,4 +118,4 @@ Standardmäßig werden durch ClickOnce automatisch signierte Manifeste generiert
 - [Assemblys mit starken Namen](/dotnet/framework/app-domains/strong-named-assemblies)
 - [How to: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [Seite „Signierung“, Projekt-Designer](../ide/reference/signing-page-project-designer.md)
-- [ClickOnce security and deployment (ClickOnce-Sicherheit und -Bereitstellung)](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)

@@ -945,7 +945,7 @@
       displayName: 'marketplace, gallery, vsix'
     - name: Verwalten externer Tools
       href: ide/managing-external-tools.md
-    - name: Personalisierungskonten
+    - name: Verwalten von Konten
       items:
         - name: Anmelden bei Visual Studio
           displayName: personalization accounts
@@ -954,6 +954,8 @@
           href: ide/work-with-multiple-user-accounts.md
         - name: 'Arbeiten mit Konten, die mehrstufige Authentifizierung erfordern'
           href: ide/work-with-multi-factor-authentication.md
+        - name: Arbeiten mit GitHub-Konten in Visual Studio
+          href: ide/work-with-github-accounts.md
         - name: Erweitern einer Testversion oder Aktualisieren einer Lizenz
           href: ide/how-to-unlock-visual-studio.md
     - name: Optimieren der Leistung von Visual Studio
@@ -976,7 +978,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Verweis
+- name: Referenz
   items:
     - name: Tastenkombinationen
       items:

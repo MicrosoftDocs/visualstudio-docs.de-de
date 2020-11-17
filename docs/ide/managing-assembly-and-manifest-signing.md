@@ -1,5 +1,7 @@
 ---
 title: Verwalten der Signierung von Assemblys und Manifesten
+description: In diesem Artikel erfahren Sie mehr über die Vorteile von Signaturen mit starkem Namen, die einer Softwarekomponente eine weltweit eindeutige Identität verleihen.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770410"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351387"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
 
@@ -38,13 +40,13 @@ Informationen zum Signieren von Assemblys in C++-Projekten finden Sie unter [Ass
 
 Sie können folgende .NET-Assemblys und Anwendungsmanifeste signieren:
 
-- Ausführbare Dateien ( *.exe*)
+- Ausführbare Dateien (*.exe*)
 
-- Anwendungsmanifeste ( *.exe.manifest*)
+- Anwendungsmanifeste (*.exe.manifest*)
 
-- Bereitstellungsmanifeste ( *.application*)
+- Bereitstellungsmanifeste (*.application*)
 
-- Freigegebene Komponentenassemblys ( *.dll*)
+- Freigegebene Komponentenassemblys (*.dll*)
 
 Signieren Sie folgende Objekttypen:
 
@@ -71,7 +73,7 @@ Wenn Sie nur Zugriff auf einen öffentlichen Schlüssel haben, können Sie verz�
 
 Weitere Informationen zum Signieren von Manifesten finden Sie unter [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Assemblys mit starken Namen](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Assemblys mit starken Namen (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

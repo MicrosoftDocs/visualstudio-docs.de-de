@@ -3,15 +3,15 @@ title: Verwalten von Verweisen in einem Projekt
 description: In diesem Artikel erfahren Sie, wie Sie Verweise in einem Projekt in Visual Studio für Mac verwalten können.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 28ea53826a19a9ec97349060702cf13c68342ad2
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 41d49fe6b23818f3cb9de8dec72462d4b2029bb6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938995"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493516"
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
@@ -22,7 +22,7 @@ Visual Studio für Mac bietet zwei Möglichkeit zum Hinzufügen von zusätzliche
 Diese lauten wie folgt:
 
 * Verweise
-* NuGets (hinzufügbar über den Ordner „Pakete“)
+* NuGet-Pakete (werden über den Ordner „Pakete“ hinzugefügt)
 
 Darüber hinaus können zu jedem Projekt auch Webverweise und native Verweise hinzufügt werden.
 
@@ -40,7 +40,7 @@ Weitere Informationen zu den Assemblys, die für jedes Xamarin-Framework verfüg
 
 NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung. Die NuGet-Unterstützung von Visual Studio für Mac ermöglicht Ihnen die Suche nach Paketen, die Sie Ihrem Projekt hinzufügen können.
 
-Klicken Sie dazu mit der rechten Maustaste auf den Ordner **Pakete** im Projektmappenpad, und klicken Sie dann auf „Pakete hinzufügen“.
+Klicken Sie dazu mit der rechten Maustaste auf den Ordner **Pakete** im Projektmappenfenster, und klicken Sie dann auf „Pakete hinzufügen“.
 
 Weitere Informationen zur Verwendung eines NuGet-Pakets finden Sie in der exemplarischen Vorgehensweise [Including a NuGet package in your Project (Einfügen eines NuGet-Pakets in Ihr Projekt)](nuget-walkthrough.md).
 

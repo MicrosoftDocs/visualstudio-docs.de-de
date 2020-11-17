@@ -2,7 +2,7 @@
 title: 'Tutorial: Öffnen eines Projekts von einem Repository aus'
 description: Hier erfahren Sie, wie Sie ein Projekt mithilfe von Visual Studio in einem Git- oder Azure DevOps-Repository öffnen.
 ms.custom: get-started
-ms.date: 03/30/2019
+ms.date: 11/10/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 91fb06a50fe0c992d3018aee31cfc963544f8b97
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743028"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436080"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Öffnen eines Projekts von einem Repository aus
 
@@ -53,7 +53,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
     ![Auswählen von „Klonen“ im Abschnitt „Lokale Git-Repositorys“](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. Geben oder fügen Sie im Feld ***Geben Sie die URL eines zu klonenden Git ein.*** die URL für Ihr Repository ein, und drücken Sie die **EINGABETASTE**. (Melden Sie sich im Falle einer entsprechenden Aufforderung bei GitHub an.)
+1. Geben Sie die URL Ihres Repositorys in das Feld **_Geben Sie die URL eines zu klonenden Git ein._ *ein, oder fügen Sie diese ein, und drücken Sie die* EINGABETASTE**. (Melden Sie sich im Falle einer entsprechenden Aufforderung bei GitHub an.)
 
    Nach dem Klonen Ihres Repositorys durch Visual Studio wird Team Explorer geschlossen und der Projektmappen-Explorer geöffnet. Die Meldung *Klicken Sie oben auf "Projektmappen und Ordner", um eine Liste mit Projektmappen anzuzeigen.* wird angezeigt. Wählen Sie **Projektmappen und Ordner** aus.
 
@@ -75,11 +75,14 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 ::: moniker range="vs-2019"
 
+> [!NOTE]
+> Wenn Sie die neue integrierte Git-Benutzeroberfläche in Visual Studio 2019 testen möchten, stellen Sie sicher, dass Sie ein Update auf [**Version 16.8**](/visualstudio/releases/2019/release-notes/) durchgeführt haben. Weitere Informationen finden Sie auf der Seite [Neue Git-Funktion in Visual Studio](../ide/git-with-visual-studio.md).
+
 1. Öffnen Sie Visual Studio 2019.
 
 1. Wählen Sie im Startfenster **Code klonen oder auschecken** aus.
 
-   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
 1. Geben Sie den Repositoryspeicherort ein, und klicken Sie dann auf **Klonen**.
 
@@ -101,7 +104,7 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 1. Öffnen Sie Visual Studio 2017.
 
-1. Klicken Sie in der oberen Menüleiste auf **Datei** > **Öffnen** > **Aus Quellcodeverwaltung öffnen**.
+1. Wählen Sie auf der oberen Menüleiste **Datei** > **Öffnen** > **Aus Quellcodeverwaltung öffnen** aus.
 
    Der Bereich **Team Explorer – Verbinden** wird geöffnet.
 
@@ -140,7 +143,7 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 1. Wählen Sie im Startfenster **Code klonen oder auschecken** aus.
 
-   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
 1. Klicken Sie im Abschnitt **Repository durchsuchen** auf **Azure DevOps**.
 
@@ -177,13 +180,26 @@ Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Si
 
 Wenn Sie mit dem Codieren mit Visual Studio loslegen möchten, können Sie sich die ausführlichen Informationen in einem der folgenden sprachspezifischen Tutorials ansehen:
 
-- [Visual Studio-Tutorials | **C#**](./csharp/index.yml)
+- [Visual Studio-Tutorials | **C#** ](./csharp/index.yml)
 - [Visual Studio-Tutorials | **Visual Basic**](./visual-basic/index.yml)
-- [Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
+- [Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio | **Python**](../python/index.yml)
 - [Visual Studio | **JavaScript**, **TypeScript** und **Node.js**](../javascript/index.yml)
 
 ## <a name="see-also"></a>Siehe auch
 
+::: moniker range="vs-2017"
+
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Erste Schritte mit Azure Repos und Visual Studio)
 - [Microsoft Learn: Get started with Azure DevOps](/learn/modules/get-started-with-devops/) (Microsoft Learn: Erste Schritte mit Azure DevOps)
+- [Neue Git-Funktionen in Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Neue Git-Benutzeroberfläche in Visual Studio](../ide/git-with-visual-studio.md)
+- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Erste Schritte mit Azure Repos und Visual Studio)
+- [Microsoft Learn: Get started with Azure DevOps](/learn/modules/get-started-with-devops/) (Microsoft Learn: Erste Schritte mit Azure DevOps)
+
+::: moniker-end

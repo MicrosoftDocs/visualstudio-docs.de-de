@@ -1,17 +1,17 @@
 ---
 title: Einrichten eines Git-Repositorys
-description: Verwenden von Git und Subversion in Visual Studio für Mac
+description: In diesem Artikel stellen Sie mithilfe von Visual Studio für Mac eine Verbindung mit einem Git-Repository her.
 author: therealjohn
 ms.author: johmil
-ms.date: 05/13/2020
+ms.date: 11/09/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214693"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493126"
 ---
 # <a name="set-up-a-git-repository"></a>Einrichten eines Git-Repositorys
 
@@ -45,7 +45,7 @@ Führen sie die folgenden Schritte aus, um ein Git-Repository einzurichten:
 
 Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_ in der Versionskontrolle befindet, in Git einzurichten:
 
-1. Wählen Sie aus dem Projektmappenpad in Visual Studio für Mac den Namen der Projektmappe aus.
+1. Wählen Sie aus dem Projektmappenfenster in Visual Studio für Mac den Namen der Projektmappe aus.
 
 2. Klicken Sie in der Menüleiste auf **Versionskontrolle > In Versionskontrolle veröffentlichen**, damit das Dialogfeld **Repository klonen** angezeigt wird:
 
@@ -159,7 +159,7 @@ Wenn Sie Probleme beim Initialisieren Ihres Projekts mit einem leeren Remoterepo
 1. Wenn eine **GITIGNORE**-Datei vorhanden ist, löschen Sie diese.
 1. Drücken Sie **CMD+UMSCHALT+.** , um die Dateien und Ordner auszublenden.
 1. Öffnen Sie Ihre Projektmappe in Visual Studio für Mac.
-1. Klicken Sie auf den Knoten „Projektmappe“ im Projektmappenpad.
+1. Klicken Sie im Projektmappenfenster auf den Projektmappenknoten.
 1. Navigieren Sie zum Menü „Versionskontrolle“, und klicken Sie auf **Publish in Version Control** (In Versionskontrolle veröffentlichen).
 1. Führen Sie die Schritte des obenstehenden Tutorials beginnend bei Schritt 6 aus.
 

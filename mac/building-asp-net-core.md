@@ -1,17 +1,17 @@
 ---
 title: Erstellen von ASP.NET Core-Anwendungen
-description: In diesem Artikel erfahren Sie mehr über die ersten Schritte mit ASP.NET in Visual Studio für Mac, insbesondere über die Installation und das Erstellen eines neuen Projekts.
+description: In diesem Artikel wird ausführlich gezeigt, wie Sie mit Visual Studio für Mac ASP.NET Core-Anwendungen erstellen und untersuchen.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
-ms.openlocfilehash: 47ddfa11b4c05896037c1fb18e285d46fc79520b
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214614"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493503"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Erstellen von ASP.NET Core-Anwendungen in Visual Studio für Mac
 
@@ -88,7 +88,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![Screenshot der C#-Main-Methode mit einer-Anweisung, die eine Variable namens „host“ mit dem Typ „WebHostBuilder“ initialisiert.](media/netcore-image11.png)
 
-3. Auch wenn der **WebHostBuilder** für die Erstellung des Hosts verantwortlich ist, der das Bootstrapping des Servers für die App durchführen soll, muss dafür ein Server bereitgestellt werden, der **IServer** implementiert. Standardmäßig wird dafür **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** verwendet, ein plattformübergreifender Webserver für ASP.NET Core, der auf der plattformübergreifenden asynchronen E/A-Bibliothek **libuv** basiert.
+3. Auch wenn der **WebHostBuilder** für die Erstellung des Hosts zuständig ist, der den Bootstrap des Servers für die App durchführen soll, müssen Sie dafür einen Server bereitstellen, der **`IServer`** implementiert. Standardmäßig wird dafür **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** verwendet, ein plattformübergreifender Webserver für ASP.NET Core, der auf der plattformübergreifenden asynchronen E/A-Bibliothek **libuv** basiert.
 
     ![Screenshot der C#-Main-Methode mit hervorgehobener Hostvariablen, die den Server mit der UseKestrel-Methode festlegt.](media/netcore-image12.png)
 
@@ -120,7 +120,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
 2. Das Dialogfeld **Projektoptionen** enthält alles, was Sie benötigen, um anzupassen, wie die Anwendung erstellt und ausgeführt wird. Wählen Sie im linken Bereich den Knoten **Ausführen > Konfigurationen > Standard** aus.
 
-3. Aktivieren Sie das Kontrollkästchen **Auf externer Konsole ausführen**, und deaktivieren Sie **Konsolenausgabe anhalten**. Normalerweise ist die Konsole für die selbst gehostete Anwendung nicht sichtbar, sondern protokolliert ihre Ergebnisse im Pad **Ausgabe**. Für die Zwecke dieses Labs werden wir dies in einem separaten Fenster darstellen, obwohl das während der normalen Entwicklung nicht erforderlich ist.
+3. Aktivieren Sie das Kontrollkästchen **Auf externer Konsole ausführen**, und deaktivieren Sie **Konsolenausgabe anhalten**. Normalerweise ist die Konsole der selbstgehosteten Anwendung nicht sichtbar, sondern protokolliert ihre Ergebnisse im **Ausgabefenster**. Für die Zwecke dieses Labs werden wir dies in einem separaten Fenster darstellen, obwohl das während der normalen Entwicklung nicht erforderlich ist.
 
 4. Klicken Sie auf **OK**.
 

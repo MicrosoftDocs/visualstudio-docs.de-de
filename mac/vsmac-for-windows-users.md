@@ -1,20 +1,20 @@
 ---
 title: Visual Studio für Mac für Windows-Benutzer
-description: In diesem Artikel erhalten Sie eine Einführung in die Barrierefreiheitsfunktionen in Visual Studio für Mac und erfahren, wie diese aktiviert werden.
+description: In diesem Artikel finden Sie eine Einführung in Visual Studio für Mac für Entwickler, die mit der Verwendung von Visual Studio unter Windows vertraut sind.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/25/2019
+ms.date: 11/09/2020
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984271"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493373"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Visual Studio für Mac für Windows-Benutzer
 
-Die Migration von einem Betriebssystem zu einem anderen kann eine gewaltige Herausforderung sein. Es gibt häufig sehr feine Unterschiede bei plattformübergreifenden Anwendungen – von der Benutzeroberfläche bis hin zur Kategorisierung der Menüelemente. Benutzer müssen sich auch erst an die Benutzeroberfläche des neuen Betriebssystems gewöhnen. Hier lernen Sie die gängigsten Unterschiede zwischen Visual Studio für Mac und Visual Studio für Windows kennen. Sie lernen auch einige unterschiedliche Konventionen zwischen macOS und Windows kennen.
+Die Migration von einem Betriebssystem zu einem anderen kann eine gewaltige Herausforderung sein. Es gibt häufig sehr feine Unterschiede bei plattformübergreifenden Anwendungen – von der Benutzeroberfläche bis hin zur Kategorisierung der Menüelemente. Hier lernen Sie die gängigsten Unterschiede zwischen Visual Studio für Mac und Visual Studio für Windows kennen. Sie lernen auch einige unterschiedliche Konventionen zwischen macOS und Windows kennen.
 
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -33,7 +33,7 @@ Die macOS-Befehlstaste (⌘) kann im Allgemeinen genauso verwendet werden wie di
 |Kopieren                   |`Ctrl + C`               |`⌘ + C`             |
 |Einfügen                  |`Ctrl + V`               |`⌘ + V`             |
 |Ausschneiden                    |`Ctrl + X`               |`⌘ + X`             |
-|undo                   |`Ctrl + Z`               |`⌘ + Z`             |
+|Rückgängig                   |`Ctrl + Z`               |`⌘ + Z`             |
 |Wiederholen                   |`Ctrl + Shift + Z`       |`⌘ + Shift + Z`     |
 |Text rechts vom Cursor löschen |`Delete`                 |`fn + Backspace`    |
 |Wort löschen            |`Ctrl + Delete`          |`fn + ⌥ + Backspace`|
@@ -49,10 +49,9 @@ Menüs sind in macOS anders angeordnet als unter Windows. Visual Studio für Mac
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |Einstellungen (Optionen)  |Tools > Optionen...                                                   |Visual Studio > Einstellungen...       |
 |Erweiterungen             |Erweiterungen > Erweiterungen verwalten                                       |Visual Studio > Erweiterungen...        |
-|Layouts                |Fenster > Fensterlayout anwenden > [Layout auswählen]                       |Ansicht > [Layout auswählen]               |
+|Layouts                |Fenster > Fensterlayout anwenden > [Layout auswählen]                       |Ansicht > Layout > [Layout auswählen]               |
 |Updates                |Hilfe > Nach Updates suchen                                             |Visual Studio > Nach Updates suchen... |
 |NuGet-Paket-Manager  |Tools > NuGet-Paket-Manager > NuGet-Pakete oder -Projektmappe verwalten... |Projekt > NuGet-Pakete verwalten...   |
-|Pads/Fenster         |Ansicht > [Pad/Fenster auswählen]                                         |Ansicht > Pads > [Pad/Fenster auswählen]  |
 |Tools suchen             |Bearbeiten > Suchen und ersetzen > [Tool auswählen]                              |Suche > [Tool auswählen]               |
 |Informationen zu Visual Studio    |Hilfe > Info zu Microsoft Visual Studio                                 |Visual Studio > Info zu Visual Studio  
 

@@ -7,12 +7,12 @@ ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
-ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04fae5874a4fefcb51bdef8b00c8cb3b7171057e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939084"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493256"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debuggen mit Visual Studio für Mac
 
@@ -40,7 +40,7 @@ Klicken Sie zum Festlegen eines Haltepunkts in Ihrer IDE im Randbereich Ihres Ed
 
 ![Festlegen eines Haltepunkts am Rand](media/debugging-image0.png)
 
-Sie können alle gesetzten Haltepunkte in Ihrem Code anzeigen lassen, indem Sie zum **Pad für Haltepunkte** navigieren:
+Sie können alle in Ihrem Code festgelegten Haltepunkte anzeigen, indem Sie zum **Haltepunktefenster** navigieren:
 
 ![Liste der Haltepunkte](media/debugging-image0a.png)
 
@@ -67,9 +67,9 @@ Sie können auch Regeln festlegen, durch die die Umstände bestimmt werden, unte
 
  ![Kontextmenü des Haltepunkts](media/debugging-image4.png)
 
-* Klicken Sie mit der rechten Maustaste auf den Haltepunkt, und klicken Sie auf **Haltepunkteigenschaften**, um eine Bedingung zu einem bestehenden Haltepunkt hinzuzufügen. Sie können auch auf die unten dargestellte Schaltfläche „Haltepunkt bearbeiten“ im **Pad für Haltepunkte** klicken:
+* Klicken Sie mit der rechten Maustaste auf den Haltepunkt, und klicken Sie auf **Breakpoint Properties** (Haltepunkteigenschaften), um eine Bedingung zu einem vorhandenen Haltepunkt hinzuzufügen. Alternativ können Sie auf die unten dargestellte Schaltfläche „Haltepunkt bearbeiten“ im **Haltepunktefenster** klicken:
 
- ![Bearbeiten eines bestehenden Haltepunkts im Pad für Haltepunkte](media/debugging-image5.png)
+ ![Bearbeiten eines vorhandenen Haltepunkts im Haltepunktefenster](media/debugging-image5.png)
 
 Anschließend können Sie die Bedingung eingeben, unter der der Haltepunkt auftreten soll:
 

@@ -3,15 +3,15 @@ title: 'Visual Studio für Mac: Überblick'
 description: Visual Studio für Mac bietet eine integrierte Entwicklungsumgebung zum Erstellen von .NET-Anwendungen unter macOS. Dazu gehören ASP.NET Core-Websites und Xamarin-Projekte für iOS, Android, Mac und Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 07/03/2020
+ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584008"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493269"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 für Mac: Überblick
 
@@ -58,11 +58,11 @@ Das folgende Bild zeigt Visual Studio für Mac mit einer geladenen Anwendung:
 
 In den folgenden Abschnitten wird ein Überblick über die Hauptbereich von Visual Studio für Mac gegeben.
 
-## <a name="solution-pad"></a>Projektmappenpad
+## <a name="solution-window"></a>Projektmappenfenster
 
-Das Projektmappenpad organisiert die Projekte in einer Projektmappe:
+Das Projektmappenfenster organisiert die Projekte in einer Projektmappe:
 
-![Im Projektmappenpad organisierte Projekte](media/ide-tour-image18.png)
+![Projekte im Projektmappenfenster](media/ide-tour-image18.png)
 
 Hier werden Dateien für den Quellcode, Ressourcen, Benutzeroberflächen und Abhängigkeiten in plattformspezifische Projekte organisiert.
 
@@ -72,7 +72,7 @@ Weitere Informationen zum Verwenden von Projekten und Projektmappen in Visual St
 
 Assemblyverweise für jedes Projekt stehen im Ordner „Verweise“ zu Verfügung:
 
-![Ordner „Verweise“ im Projektmappenpad](media/ide-tour-image19.png)
+![Ordner „Verweise“ im Projektmappenfenster](media/ide-tour-image19.png)
 
 Sie können mit dem Dialogfeld **Verweise bearbeiten** zusätzliche Verweise hinzufügen. Dieses kann durch Doppelklicken auf den Ordner „Verweise“ angezeigt werden, oder indem Sie auf **Verweise bearbeiten** in den Kontextmenüaktionen klicken:
 
@@ -135,9 +135,9 @@ Visual Studio für Mac kann in die Quellcodeverwaltungs-Systeme Git und Subversi
 
 ![Branchname, der ein Projekt unter Quellcodeverwaltung angibt](media/ide-tour-image22.png)
 
-Die Symbole von Dateien mit nicht committeten Änderungen sind im Projektmappenbereich mit einer Anmerkung versehen, wie in der folgenden Abbildung dargestellt:
+Die Symbole von Dateien mit nicht ausgecheckten Änderungen sind im Projektmappenfenster mit einer Anmerkung versehen, wie in der folgenden Abbildung dargestellt:
 
-![Ausgecheckte Dateien im Projektmappenpad](media/ide-tour-image23.png)
+![Ausgecheckte Dateien im Projektmappenfenster](media/ide-tour-image23.png)
 
 Weitere Informationen zum Verwenden der Versionskontrolle in Visual Studio finden Sie im Artikel [Versionskontrolle](./version-control.md).
 

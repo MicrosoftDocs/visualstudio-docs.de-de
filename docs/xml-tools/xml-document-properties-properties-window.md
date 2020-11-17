@@ -1,5 +1,7 @@
 ---
 title: XML-Dokumenteigenschaften, Eigenschaftenfenster
+description: Hier erfahren Sie mehr über die XML-Dokumenteigenschaften im Eigenschaftenfenster, die grundlegende Informationen über das aktive Dokument im XML-Editor enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592424"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350230"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML-Dokumenteigenschaften, Eigenschaftenfenster
 
-Das **Eigenschaften**fenster liefert grundlegende Informationen zu dem im XML-Editor aktiven Dokument. Die verfügbaren Eigenschaften sind vom Typ des gerade aktiven XML-Dokuments abhängig.
+Das **Eigenschaften** fenster liefert grundlegende Informationen zu dem im XML-Editor aktiven Dokument. Die verfügbaren Eigenschaften sind vom Typ des gerade aktiven XML-Dokuments abhängig.
 
 > [!NOTE]
 > Alle XML-Dokumenteigenschaften werden in der Projektmappe gespeichert. Dadurch müssen Sie diese Werte nicht erneut eingeben, wenn Sie die Projektmappe das nächste Mal öffnen.

@@ -1,16 +1,18 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie'
+description: Hier erfahren Sie, wie Sie ein Stylesheet, auf das verwiesen wird, mit dem XSLT-Hierarchietool in Visual Studio debuggen, indem Sie die Schritte in dieser exemplarischen Vorgehensweise ausführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815031"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351322"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie
 

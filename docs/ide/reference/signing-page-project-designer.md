@@ -1,5 +1,7 @@
 ---
 title: Seite "Signierung", Projekt-Designer
+description: In diesem Artikel verwenden Sie die Seite „Signierung“ des Projekt-Designers, um das Anwendungs- und das Bereitstellungsmanifest sowie die Assembly zu signieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418859"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348514"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
 
@@ -63,7 +65,7 @@ Schaltfläche **Testzertifikat erstellen**
 
 Gibt Ihnen die Möglichkeit, ein Testzertifikat zu erstellen. Das Testzertifikat wird für die Signierung Ihrer ClickOnce-Anwendungs- und Bereitstellungsmanifesten verwendet.
 
-Wenn Sie auf **Testzertifikat erstellen** klicken, wird das Dialogfeld **Testzertifikat erstellen** aufgerufen, wo Sie ein Kennwort für die Schlüsseldatei mit starkem Namen für das Testzertifikat eingeben können. Die Datei heißt *Projektname*_TemporaryKey.pfx. Wenn Sie auf **OK** klicken, ohne ein Kennwort einzugeben, ist die .pfx-Datei nicht kennwortverschlüsselt.
+Wenn Sie auf **Testzertifikat erstellen** klicken, wird das Dialogfeld **Testzertifikat erstellen** aufgerufen, wo Sie ein Kennwort für die Schlüsseldatei mit starkem Namen für das Testzertifikat eingeben können. Die Datei heißt *Projektname* _TemporaryKey.pfx. Wenn Sie auf **OK** klicken, ohne ein Kennwort einzugeben, ist die .pfx-Datei nicht kennwortverschlüsselt.
 
 Feld **Timestampserver-URL**
 

@@ -1,5 +1,7 @@
 ---
 title: 'XSD-Beispieldatei: Einfaches Schema'
+description: Hier erfahren Sie, wie Sie die XSD-Beispieldatei für ein einfaches Bestellungsschema anzeigen, das in verschiedenen Beispielen in der Dokumentation zum XSD-Schema-Designer verwendet wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 788de9f31a58561aa743d6ca6286ef650f4297a4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 974e15c9645a1c1fcb8d17a8e10adc995a8743f4
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75592541"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398721"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>XSD-Beispieldatei: Einfaches Schema
 

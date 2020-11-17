@@ -1,6 +1,8 @@
 ---
 title: Codeanalyse mithilfe von Roslyn-Analysetools
 ms.date: 09/01/2020
+description: In diesem Artikel erfahren Sie mehr über die Quellcodeanalyse in Visual Studio. Außerdem erfahren Sie mehr über Codekorrekturen und die unterschiedlichen Typen von Analysetools und Schweregraden.
+ms.custom: SEO-VS-2020
 ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
@@ -12,12 +14,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860488"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349034"
 ---
 # <a name="overview-of-source-code-analysis"></a>Übersicht über Quellcode-Analyse
 
@@ -25,7 +27,7 @@ Analysetools der .NET Compiler Platform (Roslyn) analysieren Ihren C#- oder Visu
 
 Analysetools können in folgende Gruppen unterteilt werden:
 
-- [Codeformat](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories)-Analysetools sind in Visual Studio integriert. Die Diagnose-ID oder der Code für diese Analysetools ist vom Format IDExxxx, z. B. IDE0067. Sie können Einstellungen auf der [Text-Editor-Optionenseite](../ide/code-styles-and-code-cleanup.md) oder in einer [EditorConfig-Datei](/dotnet/fundamentals/code-analysis/code-style-rule-options) konfigurieren. Ab .NET 5.0 sind Codeformat-Analysetools im .NET SDK enthalten und können als Buildwarnungen oder -Fehler strikt erzwungen werden. Weitere Informationen finden Sie [hier](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- [Codeformat](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories)-Analysetools sind in Visual Studio integriert. Die Diagnose-ID oder der Code für diese Analysetools ist vom Format IDExxxx, z. B. IDE0067. Sie können Einstellungen auf der [Text-Editor-Optionenseite](../ide/code-styles-and-code-cleanup.md) oder in einer [EditorConfig-Datei](/dotnet/fundamentals/code-analysis/code-style-rule-options) konfigurieren. Ab .NET 5.0 sind Codeformat-Analysetools im .NET SDK enthalten und können als Buildwarnungen oder -Fehler strikt erzwungen werden. Weitere Informationen finden Sie [hier](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Tools zur Analyse der [Codequalität](/dotnet/fundamentals/code-analysis/quality-rules/index) sind jetzt im .NET 5 SDK enthalten und standardmäßig aktiviert. Die Diagnose-ID oder der Code für diese Analysetools hat das Format CAxxxx, z. B. CA1822. Weitere Informationen finden Sie unter [Analyse der .NET-Codequalität](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 

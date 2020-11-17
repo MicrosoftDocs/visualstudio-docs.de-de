@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Wechseln zwischen Ansichten und dem XML-Editor'
+description: In diesem Artikel erfahren Sie, wie Sie zwischen den Ansichten des XML-Schema-Designers und dem XML-Editor wechseln.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85dc8f69ce45f94f9f38973d76e14dee140d54b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef64617591da0790a26e4728cd138d2224deed8e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815096"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400127"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Vorgehensweise: Wechseln zwischen Ansichten und dem XML-Editor
 

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
-ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: de6be4b509eff8a013f7367614e0016f810b3657
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939103"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492697"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Erstellen und Bereinigen von Projekten und Projektmappen
 
@@ -22,7 +22,7 @@ Führen Sie die in diesem Artikel aufgeführten Schritte aus, um zu erfahren, wi
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>So können Sie eine gesamte Projektmappe erstellen, neu erstellen oder bereinigen
 
-1. Klicken Sie im **Lösungspad** auf den Knoten „Projektmappe“:
+1. Klicken Sie im **Projektmappenfenster** auf den Knoten „Projektmappe“:
 
     ![Auswählen des Knotens „Projektmappe“](media/compiling-and-building-image1.png)
 
@@ -38,7 +38,7 @@ Führen Sie die in diesem Artikel aufgeführten Schritte aus, um zu erfahren, wi
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>So erstellen Sie ein einzelnes Projekt oder erstellen es neu
 
-1. Wählen Sie das Projekt im **Lösungspad** aus.
+1. Wählen Sie das Projekt im **Projektmappenfenster** aus.
 
 2. Wählen Sie in der Menüleiste das Menü **Build** aus.
 

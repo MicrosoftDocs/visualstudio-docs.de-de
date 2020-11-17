@@ -1,16 +1,16 @@
 ---
 title: Codeausschnitte
 description: Informationen zur Verwendung von Codeausschnitten für ein effizientes Programmieren in Visual Studio für Mac
-author: cobey
-ms.author: cobey
-ms.date: 02/07/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68787690"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493451"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -26,7 +26,7 @@ Es gibt verschiedene Möglichkeiten, Codeausschnitte hinzuzufügen, einige davon
 
   ![Befehlsergänzung mit der Tabulatortaste im Code](media/source-editor-image13.png)
 
-- **Toolbox**: Verwenden Sie das Pad „Toolbox“, um eine Liste aller Codeausschnitte anzuzeigen. Ziehen Sie eine beliebige Vorlage aus der Toolbox an die richtige Stelle im Quellcode:
+- **Toolbox:** Im Toolboxfenster können Sie eine Liste aller Codeausschnitte anzeigen. Ziehen Sie eine beliebige Vorlage aus der Toolbox an die richtige Stelle im Quellcode:
 
   [![Codeausschnitte in der Toolbox](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
@@ -86,6 +86,6 @@ Es gibt zwei reservierte Schlüsselwörter, die Sie in einem Ausschnitt verwende
 
 Der `for`-Ausschnitt im vorherigen Abschnitt ist ein Beispiel für diese beiden reservierten Schlüsselwörter.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codeausschnitte (Visual Studio unter Windows)](/visualstudio/ide/code-snippets)

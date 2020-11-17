@@ -1,18 +1,18 @@
 ---
 title: 'Tutorial: Überprüfung auf'
-description: Verwenden von Azure-Funktionen in Visual Studio für Mac
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 05/06/2018
+description: Dieser Artikel enthält eine ausführliche exemplarische Vorgehensweise zum Arbeiten mit Azure Functions in Visual Studio für Mac.
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
-ms.openlocfilehash: 99373d7da8c7f83c8703b237ff83c63f9d1b6a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fa653a1acaae0f9b58d17f86d6e2e0feeb027a6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939085"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493022"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Erste Schritte mit Azure Functions
 
@@ -44,14 +44,14 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
     ![Benennen und Erstellen des Azure Functions-Projekts](media/azure-functions-lab-image2.png)
 
-5. Erweitern Sie die Knoten im **Lösungspad**. Die Standardvorlage für Projekte enthält NuGet-Verweise auf eine Vielzahl von Azure WebJobs-Paketen sowie das Paket „Newtonsoft.Json“.
+5. Erweitern Sie die Knoten im **Projektmappenfenster**. Die Standardvorlage für Projekte enthält NuGet-Verweise auf eine Vielzahl von Azure WebJobs-Paketen sowie das Paket „Newtonsoft.Json“.
 
      Es sind ebenfalls zwei Dateien enthalten: **host.json** für das Beschreiben von globalen Konfigurationsoptionen für den Host und **local.settings.json** für das Konfigurieren von Diensteinstellungen.
         Die Projektvorlage erstellt ebenfalls eine HttpTrigger-Standarddatei. Für dieses Tutorial sollten Sie die Datei **HttpTrigger.cs** aus dem Projekt löschen.
 
     Öffnen Sie **local.settings.json**. Diese Datei weist standardmäßig zwei leere Einstellungen für Verbindungszeichenfolgen auf.
 
-    ![Lösungspad, das die Datei „local.settings.json“ anzeigt](media/azure-functions-lab-image3.png)
+    ![Projektmappenfenster, das die Datei „local.settings.json“ anzeigt](media/azure-functions-lab-image3.png)
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Übung 2: Erstellen eines Azure-Speicherkontos
 
@@ -89,7 +89,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Beispiel 3: Erstellen und Debuggen von Azure-Funktionen
 
-1. Sie können nun mit dem Hinzufügen von Code beginnen. Wenn Sie mit einer .NET-Klassenbibliothek arbeiten, werden Azure-Funktionen als statische Methoden hinzugefügt. Klicken Sie im Pad **Projektmappe** mit der rechten Maustaste auf den Projektknoten **AzureFunctions**, und wählen Sie **Hinzufügen > Funktion hinzufügen** aus:
+1. Sie können nun mit dem Hinzufügen von Code beginnen. Wenn Sie mit einer .NET-Klassenbibliothek arbeiten, werden Azure-Funktionen als statische Methoden hinzugefügt. Klicken Sie im **Projektmappenfenster** mit der rechten Maustaste auf den Projektknoten **AzureFunctions** und dann mit der linken auf **Hinzufügen > Funktion hinzufügen**:
 
     ![Option „Funktion hinzufügen“](media/azure-functions-lab-image11.png)
 
@@ -193,7 +193,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
 ## <a name="exercise-4-working-with-functionjson"></a>Übung 4: Arbeiten mit function.json
 
-1. In einer vorherigen Übung wurde bereits erwähnt, dass Visual Studio für Mac eine Auftragsfunktion für die in der Bibliothek definierte Azure-Funktion generiert hat. Dies ist darin begründet, dass Azure Functions die Methodenattribute nicht zur Laufzeit verwendet, sondern eine Dateisystemkonvention zur Kompilierzeit, um zu konfigurieren, wo und wie Azure-Funktionen zur Verfügung gestellt werden. Klicken Sie im **Lösungspad** mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Im Finder anzeigen** aus.
+1. In einer vorherigen Übung wurde bereits erwähnt, dass Visual Studio für Mac eine Auftragsfunktion für die in der Bibliothek definierte Azure-Funktion generiert hat. Dies ist darin begründet, dass Azure Functions die Methodenattribute nicht zur Laufzeit verwendet, sondern eine Dateisystemkonvention zur Kompilierzeit, um zu konfigurieren, wo und wie Azure-Funktionen zur Verfügung gestellt werden. Klicken Sie im **Projektmappenfenster** mit der rechten Maustaste auf den Projektknoten und dann mit der linken auf **Im Finder anzeigen**.
 
      ![Option „Im Finder anzeigen“](media/azure-functions-lab-image23.png)
 
@@ -205,7 +205,7 @@ In diesem Tutorial erfahren Sie mehr über die ersten Schritte beim Erstellen vo
 
     ![Geöffnete function.json-Datei in Visual Studio für Mac](media/azure-functions-lab-image25.png)
 
-1. Klicken Sie im **Lösungspad** mit der rechten Maustaste auf den Projektknoten **AzureFunctionsLab**, und wählen Sie **Hinzufügen > Neuer Ordner** aus. Nennen Sie diesen Ordner **Adder**. Der Name dieses Ordners definiert standardmäßig den Pfad zur API, z.B. **api/Adder**.
+1. Klicken Sie im **Projektmappenfenster** mit der rechten Maustaste auf den Projektknoten **AzureFunctionsLab** und dann mit der linken auf **Hinzufügen > Neuer Ordner**. Nennen Sie diesen Ordner **Adder**. Der Name dieses Ordners definiert standardmäßig den Pfad zur API, z.B. **api/Adder**.
 
     ![Option „Neuer Ordner“](media/azure-functions-lab-image26.png)
 

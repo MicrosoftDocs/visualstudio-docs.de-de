@@ -1,5 +1,7 @@
 ---
 title: 'XML-Schema: Drucken von Diagrammen in der Diagrammansicht und Inhaltsmodellansicht'
+description: In diesem Artikel erfahren Sie, wie Sie ein Diagramm in der Diagrammansicht oder der Inhaltsmodellansicht des XML-Schema-Designers ausgeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5aef4b2a7bc040a75a97bc66f26526053f4cada
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61b9e837af5a1112d03740cc67b5d91f24d186a5
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817124"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399158"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Vorgehensweise: Drucken von Diagrammen in der Diagrammansicht und Inhaltsmodellansicht
 

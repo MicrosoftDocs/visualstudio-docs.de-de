@@ -2,7 +2,7 @@
 title: 'Visual Studio-Dokumentation: Verlauf der Neuerungen '
 titleSuffix: ''
 description: Verlauf der Neuerungen in der Visual Studio-Dokumentation
-ms.date: 09/30/2020
+ms.date: 10/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659302"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414502"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Verlauf der Neuerungen in der Visual Studio-Dokumentation
 
-Willkommen beim Verlauf der Neuerungen in der Visual Studio-Dokumentation. Dieser Artikel enthält die wichtigsten Änderungen an der Dokumentation vor September 2020 (ab Juli 2020). Aktuelle Neuerungen finden Sie unter [Visual Studio-Dokumentation: Neues in der Dokumentation](whats-new-visual-studio-docs.md).
+Willkommen beim Verlauf der Neuerungen in der Visual Studio-Dokumentation. Dieser Artikel enthält die wichtigsten Änderungen an der Dokumentation vor Oktober 2020 (ab Juli 2020). Aktuelle Neuerungen finden Sie unter [Visual Studio-Dokumentation: Neues in der Dokumentation](whats-new-visual-studio-docs.md).
+
+## <a name="september-2020"></a>September 2020
+### <a name="code-quality"></a>Codequalität
+
+**Neue Artikel**
+
+- [CA1416: Validate platform compatibility (Plattformkompatibilität überprüfen)](/dotnet/fundamentals/code-analysis/quality-rules/ca1416): Dokumentation von CA1416 „Validate platform compatibility“ (Plattformkompatibilität überprüfen)
+- [CA1834: Use StringBuilder.Append(char) for single character strings (StringBuilder.Append(char) für Zeichenfolgen mit einem einzelnen Zeichen verwenden)](/dotnet/fundamentals/code-analysis/quality-rules/ca1834): Dokumentation für CA1834
+
+**Aktualisiert**
+
+- [Übersicht über Quellcodeanalyse](../code-quality/roslyn-analyzers-overview.md): Aktualisierung der Codeanalyse wegen .NET-Umgestaltung
+- [Konfigurieren der Codequalitätsanalyse](../code-quality/use-roslyn-analyzers.md): Aktualisierung der Codeanalyse wegen .NET-Umgestaltung
+
+### <a name="containers"></a>Container
+
+**Neue Artikel**
+
+- [Verwenden von Bridge to Kubernetes](../containers/bridge-to-kubernetes.md): Umbenennung von „lokaler Prozess mit Kubernetes“ in „Bridge to Kubernetes“
+- [Funktionsweise von Bridge to Kubernetes](../containers/overview-bridge-to-kubernetes.md): Umbenennung von „lokaler Prozess mit Kubernetes“ in „Bridge to Kubernetes“
+
+### <a name="deployment"></a>Bereitstellung
+
+**Aktualisierte Artikel**
+
+- [Bereitstellen Ihrer App in einem Ordner, in IIS, in Azure oder einem anderen Ziel](../deployment/deploying-applications-services-and-components-resources.md): Aktualisierungen der Bereitstellung
+- [Bereitstellen einer App in einem Ordner mithilfe von Visual Studio](../deployment/quickstart-deploy-to-local-folder.md): Aktualisierungen zur Bereitstellung
+
+### <a name="ide"></a>IDE
+
+**Neue Artikel**
+
+- [Neue Git-Oberfläche in Visual Studio (Vorschau)](./git-with-visual-studio.md): Ergänzung von Inhalten zur neuen Git-Oberfläche (Vorschau)
+- [C++-Formatierungskonventionen für EditorConfig](./cpp-editorconfig-properties.md): Neuer Artikel
+- [Was ist GitHub Codespaces? (Vorschau)](./codespaces/codespaces-overview.md): Ergänzung von Inhalten zu Codespaces (Vorschau)
+- [Anpassen eines Codespace (Vorschau)](./codespaces/customize-codespaces.md): Ergänzung von Inhalten zu Codespaces (Vorschau)
+- [Unterstützte Visual Studio-Features (Vorschau)](./codespaces/supported-features-codespaces.md): Ergänzung von Inhalten zu Codespaces (Vorschau)
+- [Verwenden von Visual Studio mit einem Codespace (Vorschauversion)](./codespaces/use-visual-studio-with-codespaces.md): Ergänzung von Inhalten zu Codespaces (Vorschau)
+
+**Aktualisierte Artikel**
+
+- [Codeformatregeln](/dotnet/fundamentals/code-analysis/code-style-rule-options): Aktualisierung von EditorConfig
+- [Sprachregeln](/dotnet/fundamentals/code-analysis/style-rules/language-rules): fehlende Beispiele
+
+### <a name="install"></a>Installieren
+
+**Neue Artikel**
+
+- [Visual Studio auf ARM-basierten Geräten](../install/visual-studio-on-arm-devices.md): Ergänzung der Dokumentation für VS in ARM
+
+**Aktualisierte Artikel**
+
+- [Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md): Hinzufügung einer Problemumgehung für Absturz des Feedbackauthentifizierungsproxys
+
+### <a name="profiling"></a>Profilerstellung
+
+**Aktualisierte Artikel**
+
+- [Messen der Speicherauslastung in Visual Studio](../profiling/memory-usage.md): Aktualisierung der Erläuterungen zum Profilerstellungsfeature
+- [PerfTips](../profiling/perftips.md): Aktualisierung der Erläuterungen zum Profilerstellungsfeature
+- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md): Aktualisierung der Erläuterungen zum Profilerstellungsfeature
+- [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - Aktualisierung der Erläuterungen zum Profilerstellungsfeature
+  - Inhalte zu Leistungsverbesserungen
 
 ## <a name="august-2020"></a>August 2020
 ### <a name="azure"></a>Azure
@@ -109,7 +173,7 @@ Willkommen beim Verlauf der Neuerungen in der Visual Studio-Dokumentation. Diese
 
 **Aktualisierte Artikel**
 
-- [Anpassen von Fensterlayouts in Visual Studio](./customizing-window-layouts-in-visual-studio.md): Infomoniker für vertikale Dokumentregisterkarten zum Thema „Anpassen von Fensterlayouts“ hinzugefügt
+- [Anpassen von Fensterlayouts in Visual Studio:](./customizing-window-layouts-in-visual-studio.md) Infomoniker zu vertikalen Dokumentregisterkarten zum Artikel „Anpassen von Fensterlayouts“ hinzugefügt
 - [Melden eines Problems mit Visual Studio oder Visual Studio-Installer](./how-to-report-a-problem-with-visual-studio.md)
   - Weitere Informationen zu NMI hinzugefügt
   - Gesamte Seite zu „Melden eines Problems“ neu erstellt
@@ -157,8 +221,8 @@ Willkommen beim Verlauf der Neuerungen in der Visual Studio-Dokumentation. Diese
 
 **Aktualisierte Artikel**
 
-- [Änderungsprotokoll (Visual Studio Tools für Unity, Windows)](../cross-platform/change-log-visual-studio-tools-for-unity.md) – VSTU-Änderungsprotokoll auf 4.7.1.0 aktualisieren
-- [Änderungsprotokoll (Visual Studio Tools für Unity, Mac)](../cross-platform/change-log-visual-studio-tools-for-unity-mac.md) – VSTU-Änderungsprotokoll auf 2.7.1.0 aktualisieren
+- [Änderungsprotokoll (Visual Studio Tools für Unity, Windows)](/gamedev/unity/change-log-visual-studio-tools-for-unity.md) – VSTU-Änderungsprotokoll auf 4.7.1.0 aktualisieren
+- [Änderungsprotokoll (Visual Studio Tools für Unity, Mac)](/gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md) – VSTU-Änderungsprotokoll auf 2.7.1.0 aktualisieren
 
 ### <a name="get-started"></a>Erste Schritte
 
