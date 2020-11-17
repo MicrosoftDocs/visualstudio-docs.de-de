@@ -1,5 +1,7 @@
 ---
 title: Unterschiede zwischen Sandkasten-und Farm Lösungen | Microsoft-Dokumentation
+description: Verstehen Sie die Unterschiede zwischen Sandkasten-und Farm Lösungen. Erfahren Sie, wie Visual Studio das Debuggen mit beiden Projektmappen angeht.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967545"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672781"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Unterschiede zwischen Sandkasten-und Farm Lösungen
   Wenn Sie eine SharePoint-Lösung kompilieren, wird Sie auf dem SharePoint-Server bereitgestellt, und ein Debugger wird zum Debuggen angefügt. Der Prozess, der zum Debuggen der Projekt Mappe verwendet wird, hängt von der Einstellung der Sandkasten Lösungs Eigenschaft ab: Sandkasten Lösung oder Farm Lösung.
@@ -38,7 +40,7 @@ ms.locfileid: "62967545"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt den Debugger nur an die w3wp-oder SPUCWorkerProcess-Prozesse an, die die aktuelle Website ausführen. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Außerdem werden die verwalteten com Plus-und Workflow-debugengines angefügt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [SharePoint-Lösungen Debuggen](../sharepoint/debugging-sharepoint-solutions.md)
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Überlegungen zu Sandkasten Lösungen](../sharepoint/sandboxed-solution-considerations.md)
+- [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md)

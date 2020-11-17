@@ -1,5 +1,7 @@
 ---
 title: Entwerfen eines Business Data Connectivity-Modells | Microsoft-Dokumentation
+description: Entwerfen Sie ein Business Data Connectivity-Modell (BDC). Fügen Sie Entitäten und Methoden hinzu. Definieren Sie Methoden Parameter. Filter Deskriptoren hinzufügen. Überprüfen Sie das BDC-Modell.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984464"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672651"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Entwerfen eines Business Data Connectivity-Modells
   Sie können ein Modell für den Business Data Connectivity (BDC)-Dienst entwickeln, indem Sie einer Modelldatei Entitäten und Methoden hinzufügen. Eine Entität beschreibt eine Auflistung von Datenfeldern. Beispielsweise kann eine Entität eine Tabelle in einer Datenbank darstellen. Eine Methode führt eine Aufgabe aus, z. b. das Hinzufügen, löschen oder Aktualisieren von Daten, die von den Entitäten dargestellt Weitere Informationen finden Sie unter [integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -31,7 +33,7 @@ ms.locfileid: "72984464"
 ## <a name="add-methods"></a>Methoden hinzufügen
  Der BDC-Dienst ruft Methoden in Ihrem Modell auf, wenn Benutzerinformationen in einer Liste oder einem Webpart, die auf Ihrem Modell basiert, anzeigen, hinzufügen, aktualisieren oder löschen. Sie müssen dem Modell für jede Aufgabe, die der Benutzer ausführen kann, eine Methode hinzufügen. Erstellen Sie Methoden, indem Sie einen der fünf grundlegenden Methoden Typen aus dem Details-Fenster der **BDC-Methode** auswählen. In der folgenden Tabelle werden die fünf grundlegenden Methoden eines BDC-Modells beschrieben.
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |Finder|Gibt eine Auflistung von Entitäts Instanzen zurück. Wird aufgerufen, wenn der Benutzer die Liste oder das WebPart öffnet. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md).|
 |Spezifischer Finder|Gibt eine bestimmte Entitäts Instanz zurück. Wird aufgerufen, wenn ein Benutzer die Details eines bestimmten Elements in einer Liste anzeigt. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md).|
@@ -42,7 +44,7 @@ ms.locfileid: "72984464"
 ## <a name="define-method-parameters"></a>Definieren von Methoden Parametern
  Wenn Sie eine Methode erstellen, fügt Visual Studio die Eingabe-und Ausgabeparameter hinzu, die für den Methodentyp geeignet sind. Diese Parameter sind nur Platzhalter. In den meisten Fällen müssen Sie die Parameter so ändern, dass Sie den richtigen Datentyp übergeben oder zurückgeben. Standardmäßig gibt eine Finder-Methode z. b. eine Zeichenfolge zurück. In den meisten Fällen möchten Sie den Rückgabe Parameter der Finder-Methode so ändern, dass er eine Auflistung von Entitäten zurückgibt. Dies können Sie erreichen, indem Sie den Typdeskriptor des Parameters ändern. Ein Typdeskriptor ist eine Auflistung von Attributen, die den Datentyp eines Parameters beschreibt. Weitere Informationen finden Sie unter Gewusst [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
- Visual Studio ermöglicht Ihnen das Kopieren von Typdeskriptoren zwischen Parametern im Modell. Beispielsweise können Sie einen Typdeskriptor `CustomerTD` mit dem Namen für den Rückgabe Parameter der `GetCustomer` Methode definieren. Sie können den `CustomerTD` Typdeskriptor in den **BDC-Explorer**kopieren und dann den Typdeskriptor in den Eingabeparameter der Methode einfügen `CreateCustomer` . Dies verhindert, dass Sie denselben Typdeskriptor mehrmals definieren müssen.
+ Visual Studio ermöglicht Ihnen das Kopieren von Typdeskriptoren zwischen Parametern im Modell. Beispielsweise können Sie einen Typdeskriptor `CustomerTD` mit dem Namen für den Rückgabe Parameter der `GetCustomer` Methode definieren. Sie können den `CustomerTD` Typdeskriptor in den **BDC-Explorer** kopieren und dann den Typdeskriptor in den Eingabeparameter der Methode einfügen `CreateCustomer` . Dies verhindert, dass Sie denselben Typdeskriptor mehrmals definieren müssen.
 
 ## <a name="method-instances"></a>Methoden Instanzen
  Wenn Sie eine Methode erstellen, fügt Visual Studio eine Standardmethoden Instanz hinzu. Eine Methoden Instanz ist ein Verweis auf eine Methode, zuzüglich der Standardwerte für die Parameter. Eine einzelne Methode kann über mehrere Methoden Instanzen verfügen. Jede Instanz ist eine Kombination aus der Methoden Signatur und einem Satz von Standardwerten. Weitere Informationen finden Sie unter Gewusst [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
@@ -57,7 +59,7 @@ ms.locfileid: "72984464"
  SharePoint bietet mehrere Features, die es Benutzern ermöglichen, Filter Werte bereitzustellen. Beispielsweise Webparts Geschäftsdaten ein Filter Textfeld bereitstellen. Benutzer können die Daten in einer Liste einschränken, indem Sie einen Wert in das Textfeld eingeben. Weitere Informationen zum Hinzufügen eines Filter Deskriptors zu einer Methode finden Sie unter Gewusst [wie: Hinzufügen eines Filter Deskriptors zu einer Finder-Methode](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ### <a name="filter-descriptor-properties"></a>Filter deskriptoreigenschaften
- Sie müssen den Wert der **zugeordneten Typdeskriptoren**, den **Namen**und die **Typeigenschaften** eines Filter Deskriptors festlegen. Alle anderen Eigenschaften sind optional.
+ Sie müssen den Wert der **zugeordneten Typdeskriptoren**, den **Namen** und die **Typeigenschaften** eines Filter Deskriptors festlegen. Alle anderen Eigenschaften sind optional.
 
  Die zugeordnete **typdeskriptoreigenschaft verknüpft** den Filter Deskriptor mit einem Eingabeparameter. Wenn ein Benutzer einen Filter Wert bereitstellt, übergibt der BDC-Dienst diesen Wert mithilfe des-Eingabe Parameters an die-Methode.
 
@@ -69,14 +71,14 @@ ms.locfileid: "72984464"
  In einigen Fällen kann der Benutzer keinen Filter Wert angeben. Sie können einen Standardwert angeben, indem Sie der-Methoden Instanz einen Standardwert hinzufügen oder indem Sie den Standardwert im Code der-Methode festlegen. Weitere Informationen zum Hinzufügen eines Standardwerts zur-Methoden Instanz finden Sie unter [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)). Ein Beispiel für das Festlegen des Standardwerts eines Eingabe Parameters im Code der-Methode finden Sie unter Gewusst [wie: Hinzufügen eines Filter Deskriptors zu einer Finder-Methode](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ## <a name="validate-the-model"></a>Überprüfen des Modells
- Sie können das Modell während der Entwicklung überprüfen. Visual Studio identifiziert Probleme, die verhindern können, dass sich das Modell erwartungsgemäß verhält. Diese Probleme werden in der Visual Studio- **Fehlerliste**angezeigt.
+ Sie können das Modell während der Entwicklung überprüfen. Visual Studio identifiziert Probleme, die verhindern können, dass sich das Modell erwartungsgemäß verhält. Diese Probleme werden in der Visual Studio- **Fehlerliste** angezeigt.
 
- Sie können ein Modell validieren, indem Sie das Kontextmenü für den BDC-Designer öffnen und dann über **prüfen auswählen.** Wenn das Modell Fehler enthält, werden diese in der **Fehlerliste**angezeigt. Sie können den Cursor schnell in den Code verschieben, der einen Fehler enthält, indem Sie auf den Fehler in der Liste doppelklicken. Als Alternative können Sie die Taste **F8** oder **Shift** + **F8** wiederholt auswählen, um die Fehler in der Liste vorwärts oder rückwärts zu durchlaufen.
+ Sie können ein Modell validieren, indem Sie das Kontextmenü für den BDC-Designer öffnen und dann über **prüfen auswählen.** Wenn das Modell Fehler enthält, werden diese in der **Fehlerliste** angezeigt. Sie können den Cursor schnell in den Code verschieben, der einen Fehler enthält, indem Sie auf den Fehler in der Liste doppelklicken. Als Alternative können Sie die Taste **F8** oder **Shift** + **F8** wiederholt auswählen, um die Fehler in der Liste vorwärts oder rückwärts zu durchlaufen.
 
- Validierungs Fehler können auftreten, wenn die Regeln des Modells auf irgendeine Weise verletzt werden. Wenn z. b. die **IsCollection** -Eigenschaft eines Typdeskriptors auf **true**festgelegt ist, aber keine untergeordneten Typdeskriptoren vorhanden sind, wird ein Validierungs Fehler angezeigt. Möglicherweise müssen Sie auf die Regeln eines BDC-Modells verweisen, um einige Fehler zu verstehen, die in der Visual Studio- **Fehlerliste**angezeigt werden. Weitere Informationen zu den Regeln eines BDC-Modells finden Sie unter [bdcmetadata-Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
+ Validierungs Fehler können auftreten, wenn die Regeln des Modells auf irgendeine Weise verletzt werden. Wenn z. b. die **IsCollection** -Eigenschaft eines Typdeskriptors auf **true** festgelegt ist, aber keine untergeordneten Typdeskriptoren vorhanden sind, wird ein Validierungs Fehler angezeigt. Möglicherweise müssen Sie auf die Regeln eines BDC-Modells verweisen, um einige Fehler zu verstehen, die in der Visual Studio- **Fehlerliste** angezeigt werden. Weitere Informationen zu den Regeln eines BDC-Modells finden Sie unter [bdcmetadata-Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
 ## <a name="debug-the-solution-that-contains-the-model"></a>Debuggen der Projekt Mappe, die das Modell enthält
- Sie können Ihren Code Debuggen, während Sie jeden beliebigen Code in Visual Studio debuggen. Legen Sie zum Debuggen des Codes Haltepunkte an beliebiger Stelle im Code fest, und starten Sie dann den Debugger. Die SharePoint-Website wird von Visual Studio geöffnet. Erstellen Sie in SharePoint eine Liste oder ein Webpart, das Ihre Geschäftsdaten verwendet. Anschließend können Sie den Code schrittweise durchlaufen. Weitere Informationen zum Debuggen von SharePoint-Projekten finden Sie unter Problembehandlung bei [SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md).
+ Sie können Ihren Code Debuggen, während Sie jeden beliebigen Code in Visual Studio debuggen. Legen Sie zum Debuggen des Codes Haltepunkte an beliebiger Stelle im Code fest, und starten Sie dann den Debugger. Die SharePoint-Website wird von Visual Studio geöffnet. Erstellen Sie in SharePoint eine Liste oder ein Webpart, das Ihre Geschäftsdaten verwendet. Anschließend können Sie den Code schrittweise durchlaufen. Weitere Informationen zum Debuggen von SharePoint-Projekten finden Sie unter [Problembehandlung von SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
  Sie können auch Code in benutzerdefinierten Assemblys Debuggen, die Sie dem Projekt hinzufügen. Wenn Sie jedoch Code in einer benutzerdefinierten Assembly debuggen möchten, müssen Sie die Assembly dem Projektmappenpaket hinzufügen. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen und Entfernen zusätzlicher](../sharepoint/how-to-add-and-remove-additional-assemblies.md)Assemblys.
 
@@ -101,17 +103,17 @@ ms.locfileid: "72984464"
 ### <a name="retract-models-that-become-corrupt"></a>Zurückziehen von Modellen, die beschädigt werden
  Wenn Sie den Debugger zum ersten Mal starten, stellt Visual Studio das gesamte Modell für SharePoint bereit. Danach aktualisiert Visual Studio das Modell in SharePoint mit allen Änderungen, die Sie zwischen bereit Stellungen vornehmen.
 
- Es kann Situationen geben, in denen Visual Studio das Modell vollständig von SharePoint zurückziehen soll. Ein Modell kann z. b. beschädigt werden.  Um das Modell erneut in SharePoint bereitzustellen, legen Sie die Eigenschaft **Inkrementelles Update** des Modells auf **false**fest, und starten Sie dann den Debugger. Die Eigenschaft **Inkrementelles Update** wird im Fenster **Eigenschaften** angezeigt, wenn Sie den Knoten auswählen, der das Modell im **BDC-Explorer**darstellt. Standardmäßig lautet der Name des Modells **BdcModel1**.
+ Es kann Situationen geben, in denen Visual Studio das Modell vollständig von SharePoint zurückziehen soll. Ein Modell kann z. b. beschädigt werden.  Um das Modell erneut in SharePoint bereitzustellen, legen Sie die Eigenschaft **Inkrementelles Update** des Modells auf **false** fest, und starten Sie dann den Debugger. Die Eigenschaft **Inkrementelles Update** wird im Fenster **Eigenschaften** angezeigt, wenn Sie den Knoten auswählen, der das Modell im **BDC-Explorer** darstellt. Standardmäßig lautet der Name des Modells **BdcModel1**.
 
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>Ändern von Bezeichnernamen von Entitäten im Modell
- Wenn Sie den Namen eines Bezeichners ändern, nachdem Sie das Modell bereitgestellt haben, erhalten Sie möglicherweise einen Bereitstellungs Fehler. Dieser Fehler kann nicht behoben werden, indem Sie die Eigenschaft für das **inkrementelle Update** des Modells auf **false**festlegen. Sie müssen das Modell manuell zurückziehen und die Lösung dann erneut bereitstellen. Weitere Informationen finden Sie unter Problembehandlung bei [SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md). Sie können diesen Fehler vermeiden, indem Sie die Eigenschaft **Inkrementelles Update** auf **false** festlegen, bevor Sie das Modell anfänglich bereitstellen.
+ Wenn Sie den Namen eines Bezeichners ändern, nachdem Sie das Modell bereitgestellt haben, erhalten Sie möglicherweise einen Bereitstellungs Fehler. Dieser Fehler kann nicht behoben werden, indem Sie die Eigenschaft für das **inkrementelle Update** des Modells auf **false** festlegen. Sie müssen das Modell manuell zurückziehen und die Lösung dann erneut bereitstellen. Weitere Informationen finden Sie unter Problembehandlung bei [SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md). Sie können diesen Fehler vermeiden, indem Sie die Eigenschaft **Inkrementelles Update** auf **false** festlegen, bevor Sie das Modell anfänglich bereitstellen.
 
 ## <a name="locate-documentation-for-bdc-model-elements"></a>Dokumentation für BDC-Modellelemente suchen
  Visual Studio fügt dem Modell für jede Entität, Methode oder jedes andere Element, das Sie erstellen, ein XML-Element hinzu. Element Attribute werden im **Eigenschaften** Fenster als Eigenschaften angezeigt. Informationen zu den Elementen und Attributen, die Visual Studio beim Entwerfen des Modells generiert, finden Sie unter [bdcmetadata-Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md)|Beschreibt die Tools, die Sie verwenden können, um ein Modell für den BDC visuell zu entwerfen.|
 |[Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)|Zeigt, wie dem Modell externe Inhaltstypen oder Entitäten hinzugefügt werden.|

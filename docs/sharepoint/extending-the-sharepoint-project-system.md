@@ -1,5 +1,7 @@
 ---
 title: Erweitern des SharePoint-Projekt Systems | Microsoft-Dokumentation
+description: Erweitern Sie das SharePoint-Projekt System. Erfahren Sie, wie Sie das SharePoint-Projekt System erweitern. Erfahren Sie mehr über allgemeine Entwicklungsaufgaben.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62557023"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672547"
 ---
-# <a name="extend-the-sharepoint-project-system"></a>Erweitern des SharePoint-Projekt Systems
+# <a name="extend-the-sharepoint-project-system"></a>Erweitern des SharePoint-Projektsystems
   Sie können SharePoint-Lösungen erstellen, indem Sie eine Reihe von Projektvorlagen und Element Vorlagen in Visual Studio verwenden. Diese Vorlagen erfüllen die Anforderungen vieler Entwicklungsszenarien, Sie können jedoch einige Fälle ermitteln, in denen Sie keine erforderliche Funktionalität bereitstellen. In diesen Fällen können Sie das SharePoint-Projekt System erweitern.
 
 ## <a name="overview-of-the-sharepoint-project-system"></a>Übersicht über das SharePoint-Projekt System
@@ -48,12 +50,12 @@ ms.locfileid: "62557023"
 
 - Konvertieren Sie ein Objekt im SharePoint-Projekt System in ein entsprechendes Objekt im Visual Studio-Automatisierungs Objektmodell oder im Integrations Objektmodell (oder umgekehrt). Weitere Informationen finden Sie unter " [KONVER" zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Erweitern von SharePoint-Projekt Elementen](../sharepoint/extending-sharepoint-project-items.md)
 - [Erweitern von SharePoint-Projekten](../sharepoint/extending-sharepoint-projects.md)
 - [Erweiterte SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Speichern von Daten in Erweiterungen des SharePoint-Projekt Systems](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 - [Konvertieren zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
-- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [Programmierkonzepte und Features für Erweiterungen für SharePoint-Tools](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [Programmier Konzepte und Funktionen für Erweiterungen für SharePoint-Tools](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

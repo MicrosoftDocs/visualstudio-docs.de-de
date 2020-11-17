@@ -1,5 +1,7 @@
 ---
 title: Extensiondataitem-Element | Microsoft-Dokumentation
+description: Anzeigen von Verweis Informationen über das extensiondataitem-Element, bei dem es sich um ein Element im SharePoint-Projekt Element Schema handelt.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546548"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672612"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem-Element
   Ein benutzerdefiniertes Datenelement, das dem SharePoint-Projekt Element im Schlüssel-Wert-Format zugeordnet ist. Sowohl der Schlüssel als auch der Wert müssen Zeichen folgen sein.
@@ -34,9 +36,9 @@ ms.locfileid: "85546548"
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
-|**Schlüssel**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Schlüssel, der verwendet wird, um das Datenelement zu speichern und abzurufen.|
+|**Key**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Schlüssel, der verwendet wird, um das Datenelement zu speichern und abzurufen.|
 |**Wert**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Wert des Datenelements.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
@@ -44,11 +46,11 @@ ms.locfileid: "85546548"
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Stellt eine Auflistung benutzerdefinierter Datenelemente dar, die dem SharePoint-Projekt Element zugeordnet sind.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Wenn Sie einem SharePoint-Projekt Element mithilfe der-Eigenschaft eines Objekts benutzerdefinierte Daten zuordnen <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> , speichert Visual Studio die Daten in einem neuen **extensiondataitem** -Element in der- `.spdata` Datei für das Projekt Element. Weitere Informationen finden Sie unter [Speichern von Daten in Erweiterungen des SharePoint-Projekt Systems](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
 ## <a name="element-information"></a>Elementinformationen

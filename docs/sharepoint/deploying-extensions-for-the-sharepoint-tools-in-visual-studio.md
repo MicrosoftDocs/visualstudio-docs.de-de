@@ -1,5 +1,7 @@
 ---
 title: Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio | Microsoft-Dokumentation
+description: Stellen Sie Erweiterungen für SharePoint-Tools in Visual Studio bereit. Verwenden Sie Projekte der Visual Studio-Erweiterung (VSIX), um VSIX-Pakete zu erstellen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584702"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672677"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio
 
@@ -76,7 +78,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
 #### <a name="to-include-the-extension-assembly"></a>So schließen Sie die Erweiterungsassembly ein
 
-1. Öffnen Sie im VSIX-Projekt das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann **Öffnen**aus.
+1. Öffnen Sie im VSIX-Projekt das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann **Öffnen** aus.
 
      Die Datei wird im Designer geöffnet.
 
@@ -84,13 +86,13 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent**aus.
+3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent** aus.
 
 4. Führen Sie in der Liste **Quelle** einen der folgenden Schritte aus:
 
-    - Wenn die Erweiterungsassembly aus einem Projekt erstellt wird, das sich in derselben Projekt Mappe wie das VSIX-Projekt befindet, wählen Sie **ein Projekt in der aktuellen**Projekt Mappe aus. Wählen Sie in der Liste **Projekt** den Namen des Projekts aus.
+    - Wenn die Erweiterungsassembly aus einem Projekt erstellt wird, das sich in derselben Projekt Mappe wie das VSIX-Projekt befindet, wählen Sie **ein Projekt in der aktuellen** Projekt Mappe aus. Wählen Sie in der Liste **Projekt** den Namen des Projekts aus.
 
-    - Wenn die Erweiterungsassembly als Datei in Ihrem Projekt enthalten ist, wählen Sie **Datei im Dateisystem**aus. Geben Sie in der Liste **Pfad** den vollständigen Pfad der Erweiterungs-Assemblydatei ein, oder verwenden Sie die Schaltfläche **Durchsuchen** , um die Assemblydatei zu suchen und auszuwählen
+    - Wenn die Erweiterungsassembly als Datei in Ihrem Projekt enthalten ist, wählen Sie **Datei im Dateisystem** aus. Geben Sie in der Liste **Pfad** den vollständigen Pfad der Erweiterungs-Assemblydatei ein, oder verwenden Sie die Schaltfläche **Durchsuchen** , um die Assemblydatei zu suchen und auszuwählen
 
 5. Klicken Sie auf die Schaltfläche **OK** .
 
@@ -104,13 +106,13 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-3. Geben Sie im Feld **Typ** den Text **SharePoint. Commands. v4**ein.
+3. Geben Sie im Feld **Typ** den Text **SharePoint. Commands. v4** ein.
 
 4. Führen Sie in der Liste **Quelle** einen der folgenden Schritte aus:
 
-    - Wenn die befehlsassembly aus einem Projekt erstellt wird, das sich in derselben Projekt Mappe wie das VSIX-Projekt befindet, wählen Sie **ein Projekt in der aktuellen**Projekt Mappe aus. Wählen Sie in der Liste **Projekt** den Namen des Projekts aus.
+    - Wenn die befehlsassembly aus einem Projekt erstellt wird, das sich in derselben Projekt Mappe wie das VSIX-Projekt befindet, wählen Sie **ein Projekt in der aktuellen** Projekt Mappe aus. Wählen Sie in der Liste **Projekt** den Namen des Projekts aus.
 
-    - Wenn die befehlsassembly als Datei in Ihrem Projekt enthalten ist, wählen Sie **Datei im Dateisystem**aus. Geben Sie in der Liste **Pfad** den vollständigen Pfad der Erweiterungs-Assemblydatei ein, oder verwenden Sie die Schaltfläche **Durchsuchen** , um die Assemblydatei zu suchen und auszuwählen
+    - Wenn die befehlsassembly als Datei in Ihrem Projekt enthalten ist, wählen Sie **Datei im Dateisystem** aus. Geben Sie in der Liste **Pfad** den vollständigen Pfad der Erweiterungs-Assemblydatei ein, oder verwenden Sie die Schaltfläche **Durchsuchen** , um die Assemblydatei zu suchen und auszuwählen
 
 5. Klicken Sie auf die Schaltfläche **OK** .
 
@@ -124,15 +126,15 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ProjectTemplate** oder **Microsoft. VisualStudio. ItemTemplate**aus.
+3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ProjectTemplate** oder **Microsoft. VisualStudio. ItemTemplate** aus.
 
-4. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+4. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 5. Wählen Sie in der Liste **Projekt** den Namen des Projekts aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-6. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Projektvorlage oder das Element Vorlagen Projekt, und wählen Sie dann **Projekt entladen**aus.
+6. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für die Projektvorlage oder das Element Vorlagen Projekt, und wählen Sie dann **Projekt entladen** aus.
 
-7. Öffnen Sie erneut das Kontextmenü für den Projekt Knoten, und wählen Sie dann_yourtemplateprojectname_**. csproj** **Bearbeiten**oder_yourtemplateprojectname_**. vbproj** **Bearbeiten**aus.
+7. Öffnen Sie erneut das Kontextmenü für den Projekt Knoten, und wählen Sie dann _yourtemplateprojectname_**. csproj** **Bearbeiten** oder _yourtemplateprojectname_**. vbproj** **Bearbeiten** aus.
 
 8. Suchen Sie das folgende `VSTemplate`-Element in der Projektdatei.
 
@@ -152,7 +154,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
 10. Speichern und schließen Sie die Datei.
 
-11. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Projektvorlage oder das Element Vorlagen Projekt, und wählen Sie dann **Projekt erneut laden**aus.
+11. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für die Projektvorlage oder das Element Vorlagen Projekt, und wählen Sie dann **Projekt erneut laden** aus.
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>So fügen Sie eine Vorlage ein, die Sie manuell erstellen
 
@@ -170,13 +172,13 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
      *YourTemplateName*. zip
 
-     Wenn Sie z. b. über eine Element Vorlage mit dem Namen ContosoCustomAction.zip verfügen, die das Gebiets Schema Englisch (USA) unterstützt, kann der vollständige Pfad *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*sein.
+     Wenn Sie z. b. über eine Element Vorlage mit dem Namen ContosoCustomAction.zip verfügen, die das Gebiets Schema Englisch (USA) unterstützt, kann der vollständige Pfad *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip* sein.
 
-3. Wählen Sie in **Projektmappen-Explorer**die Vorlagen Datei (*YourTemplateName*. zip) aus.
+3. Wählen Sie in **Projektmappen-Explorer** die Vorlagen Datei (*YourTemplateName*. zip) aus.
 
-4. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **Buildaktion** auf **Inhalt**fest.
+4. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **Buildaktion** auf **Inhalt** fest.
 
-5. Öffnen Sie das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann **Öffnen**aus.
+5. Öffnen Sie das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann **Öffnen** aus.
 
      Die Datei wird im Designer geöffnet.
 
@@ -184,15 +186,15 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-7. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ItemTemplate** oder **Microsoft. VisualStudio. ProjectTemplate**aus.
+7. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ItemTemplate** oder **Microsoft. VisualStudio. ProjectTemplate** aus.
 
-8. Wählen Sie in der Liste **Quelle** die Option **Datei im Dateisystem**aus.
+8. Wählen Sie in der Liste **Quelle** die Option **Datei im Dateisystem** aus.
 
 9. Geben Sie im Feld **Pfad** den vollständigen Pfad zur Assembly ein (z. b. *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, oder verwenden Sie die Schaltfläche **Durchsuchen** , um die Assembly zu suchen und auszuwählen, und klicken Sie dann auf die Schaltfläche **OK** .
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>So schließen Sie einen Assistenten für eine Projektvorlage oder Element Vorlage ein
 
-1. Öffnen Sie im VSIX-Projekt das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann **Öffnen**aus.
+1. Öffnen Sie im VSIX-Projekt das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann **Öffnen** aus.
 
      Die Datei wird im Designer geöffnet.
 
@@ -200,13 +202,13 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. Assembly**aus.
+3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. Assembly** aus.
 
 4. Führen Sie in der Liste **Quelle** einen der folgenden Schritte aus:
 
-    - Wenn die Assistenten-Assembly aus einem Projekt erstellt wird, das sich in derselben Projekt Mappe wie das VSIX-Projekt befindet, wählen Sie **ein Projekt in der aktuellen**Projekt Mappe aus. Wählen Sie in der Liste **Projekt** den Namen des Projekts aus.
+    - Wenn die Assistenten-Assembly aus einem Projekt erstellt wird, das sich in derselben Projekt Mappe wie das VSIX-Projekt befindet, wählen Sie **ein Projekt in der aktuellen** Projekt Mappe aus. Wählen Sie in der Liste **Projekt** den Namen des Projekts aus.
 
-    - Wenn die Assistenten-Assembly als Datei in Ihrem Projekt enthalten ist, wählen Sie **Datei im Dateisystem**aus. Geben Sie im Feld **Pfad** den vollständigen Pfad zur Assemblydatei ein, oder verwenden Sie die Schaltfläche **Durchsuchen** , um die Assembly zu suchen und auszuwählen.
+    - Wenn die Assistenten-Assembly als Datei in Ihrem Projekt enthalten ist, wählen Sie **Datei im Dateisystem** aus. Geben Sie im Feld **Pfad** den vollständigen Pfad zur Assemblydatei ein, oder verwenden Sie die Schaltfläche **Durchsuchen** , um die Assembly zu suchen und auszuwählen.
 
 5. Klicken Sie auf die Schaltfläche **OK** .
 
@@ -265,7 +267,7 @@ Das folgende Beispiel zeigt den Inhalt einer Erweiterung. vsixmanifest-Datei fü
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

@@ -1,5 +1,7 @@
 ---
 title: Icon-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das Icon-Element und darüber, wie es den Pfad und den Dateinamen der Bilddatei angibt, die als Symbol fungiert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 059105b9d188c0e7a81252172aa2d1bf7002420c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710530"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672690"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon-Element (Visual Studio-Vorlagen)
 Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** für die Vorlage angezeigt wird.
@@ -43,7 +45,7 @@ Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das im 
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Package`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
 |`ID`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
@@ -62,7 +64,7 @@ Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das im 
 
  Der Text enthält den Pfad und den Dateinamen des Vorlagen Symbols, das im Dialogfeld **Neues Projekt** angezeigt wird.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `Icon` ist ein erforderliches untergeordnetes Element von `TemplateData`.
 
 ## <a name="example"></a>Beispiel

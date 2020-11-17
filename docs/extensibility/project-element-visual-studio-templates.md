@@ -1,5 +1,7 @@
 ---
 title: Project-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Project-Element und wie es die Dateien oder Verzeichnisse angibt, die dem Projekt hinzugefügt werden sollen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702001"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672384"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project-Element (Visual Studio-Vorlagen)
 Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden sollen.
@@ -42,9 +44,9 @@ Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden soll
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attribute
+### <a name="attributes"></a>Attributes
 
-|attribute|Beschreibung|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`File`|Erforderliches Attribut.<br /><br /> Gibt den Namen der Projektdatei in der *ZIP* -Datei der Vorlage an.|
 |`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob die Projektdatei Parameterwerte aufweist, die beim Erstellen eines Projekts aus der Vorlage ersetzt werden müssen. Der Standardwert ist `false`.|
@@ -64,7 +66,7 @@ Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden soll
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `Project` ist ein optionales untergeordnetes Element von `TemplateContent`.
 
  Das `Project` -Element wird zur Angabe eines Projekts verwendet und ist daher nur in Projektvorlagen gültig.
