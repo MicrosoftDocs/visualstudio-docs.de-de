@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 11/10/2020
+ms.date: 11/12/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 7fefe17c56a347521f91a7d636d628248b712f4d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 1a1807102fc0f8b62d9cf4830783de1f5348499b
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492905"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575462"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,6 +29,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.1 | Freigabe | 12. November 2020 | 16.8.30711.63 |
 | 16.9.0 | Vorschauversion 1 | 10. November 2020 | 16.9.30709.64 |
 | 16.7.8 | Release | 10. November 2020 | 16.7.30704.19 |
 | 16.4.15 | Release | 10. November 2020 | 16.4.30703.110 |
@@ -39,13 +40,13 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 | 16.8.0 | Preview 5 | 20. Oktober 2020 | 16.8.30615.102 |
 | 16.7.6 | Release | 13. Oktober 2020 | 16.7.30611.23 |
 | 16.8.0 | Preview 4 | 13. Oktober 2020 | 16.8.30608.117 |
-| 16.0.19 | Freigabe | 13. Oktober 2020 | 16.0.28803.846 |
-| 16.4.14 | Release | 13. Oktober 2020 | 16.4.30607.51 |
+| 16.0.19 | Release | 13. Oktober 2020 | 16.0.28803.846 |
+| 16.4.14 | Freigabe | 13. Oktober 2020 | 16.4.30607.51 |
 | 16.8.0 | Preview 3.2 | 29. September 2020 | 16.8.30524.135 |
 | 16.7.5 | Freigabe | 29. September 2020 |  16.7.30523.141 |
 | 16.8.0 | Preview 3.1 | 22. September 2020 | 16.8.30516.212 |
-| 16.7.4 | Release | 21. September 2020 | 16.7.30517.126 |
-| 16.8.0 | Vorschauversion 3 | 14. September 2020 | 16.8.30509.190 |
+| 16.7.4 | Freigabe | 21. September 2020 | 16.7.30517.126 |
+| 16.8.0 | Preview 3 | 14. September 2020 | 16.8.30509.190 |
 | 16.7.3 | Freigabe | 8\. September 2020 | 16.7.30503.244 |
 | 16.4.13 | Freigabe | 8\. September 2020 | 16.4.30427.197 |
 | 16.0.18 | Freigabe | 8\. September 2020 | 16.0.28803.826 |
