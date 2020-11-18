@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Webparts für SharePoint | Microsoft-Dokumentation
+description: Erstellen von Webparts für SharePoint. Unter Verwendung von Webparts können Benutzer Inhalt, Darstellung und Verhalten der Seiten einer SharePoint-Website mithilfe eines Browsers ändern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740156"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672794"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Erstellen von Webparts für SharePoint
   Unter Verwendung von Webparts können Benutzer Inhalt, Darstellung und Verhalten der Seiten einer SharePoint-Website mithilfe eines Browsers ändern. Webparts sind serverseitige Steuerelemente, die in einer Webpartseite ausgeführt werden. Diese sind die Bausteine der Seiten, die auf einer SharePoint-Website angezeigt werden. Weitere Informationen finden Sie unter [Baustein: Webparts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -43,7 +45,7 @@ ms.locfileid: "90740156"
 ### <a name="web-part-item"></a>Element „Webpart“
  Das Element **Webpart** stellt Dateien bereit, die Sie verwenden können, um ein Webpart für eine SharePoint-Website zu entwerfen. Wenn Sie das Element **Webpart** hinzufügen, erstellt Visual Studio einen Ordner im Projekt und fügt diesem Ordner dann mehrere Dateien hinzu. In der folgenden Tabelle werden die einzelnen Dateien beschrieben.
 
-|Datei|BESCHREIBUNG|
+|Datei|Beschreibung|
 |----------|-----------------|
 |*Elements.xml*|Enthält Informationen, die von der Funktionsdefinitionsdatei im Projekt verwendet werden, um das Webpart bereitzustellen.|
 |WEBPART-Datei|Stellt Informationen bereit, die SharePoint benötigt, um das Webpart in einem Webpartkatalog anzuzeigen.|

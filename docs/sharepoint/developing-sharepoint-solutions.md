@@ -1,5 +1,7 @@
 ---
 title: Entwickeln von SharePoint-Lösungen | Microsoft-Dokumentation
+description: Entwickeln von SharePoint-Lösungen. Kennen der Elemente eines SharePoint-Projekts. Verstehen der Eigenschaften von SharePoint-Projekten und -Projektelementen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016790"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672820"
 ---
 # <a name="develop-sharepoint-solutions"></a>Entwickeln von SharePoint-Lösungen
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sind mehrere SharePoint-Projekttypvorlagen zum Erstellen von SharePoint-Websites und -Websiteelementen verfügbar. Eine Liste der verfügbaren Projekttypen finden Sie unter [Vorlagen für SharePoint-Projekte und Projektelemente](../sharepoint/sharepoint-project-and-project-item-templates.md). Im Folgenden finden Sie eine Beschreibung der Elemente und Eigenschaften eines SharePoint-Projekts.
@@ -28,7 +30,7 @@ ms.locfileid: "86016790"
  Informationen zu SharePoint 2013 und SharePoint-Add-Ins finden Sie unter [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) und [Erstellen von SharePoint-Add-Ins](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Elemente eines SharePoint-Projekts
- Die Knoten unter einem SharePoint-Projekt werden als *SharePoint-Elemente*bezeichnet. SharePoint-Elemente können auch eine oder mehrere Unterdateien enthalten, die als *SharePoint-Elementdateien*bezeichnet werden, z. B. [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Konfigurationsdateien, ASPX-Formulare usw.
+ Die Knoten unter einem SharePoint-Projekt werden als *SharePoint-Elemente* bezeichnet. SharePoint-Elemente können auch eine oder mehrere Unterdateien enthalten, die als *SharePoint-Elementdateien* bezeichnet werden, z. B. [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Konfigurationsdateien, ASPX-Formulare usw.
 
  Statt Projekte mithilfe von Projektvorlagen zu erstellen, die bereits mit Projektelementdateien aufgefüllt sind, können Sie die Vorlage **Leeres Projekt** verwenden, um ein leeres SharePoint-Projekt zu erstellen, und dann manuell Projektelemente hinzufügen. SharePoint-Projekte können optional auch eine oder mehrere Funktionsdateien (zur Aktivierung in SharePoint) und eine Paketdatei enthalten, in der das Projekt verteilt wird.
 
@@ -47,7 +49,7 @@ ms.locfileid: "86016790"
 
  Um eine Funktion manuell hinzuzufügen, führen Sie im Kontextmenü des Funktionsknotens den Befehl **Funktion hinzufügen** aus. Sie können den Inhalt einer Funktion mit dem Funktions-Designer anzeigen oder ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
- Wenn einem SharePoint-Projekt eine Funktion hinzugefügt wird, wird diese im **Projektmappen-Explorer** als Knoten mit dem Standardnamen Funktion*x*.feature angezeigt, wobei *x* eine eindeutige Zahl ist. Nachdem eine Funktion auf dem SharePoint-Server bereitgestellt wurde, kann sie von einem SharePoint-Administrator aktiviert und somit für SharePoint-Websitebenutzer verfügbar gemacht werden.
+ Wenn einem SharePoint-Projekt eine Funktion hinzugefügt wird, wird diese im **Projektmappen-Explorer** als Knoten mit dem Standardnamen Funktion *x*.feature angezeigt, wobei *x* eine eindeutige Zahl ist. Nachdem eine Funktion auf dem SharePoint-Server bereitgestellt wurde, kann sie von einem SharePoint-Administrator aktiviert und somit für SharePoint-Websitebenutzer verfügbar gemacht werden.
 
 #### <a name="package-node"></a>Paketknoten
  Der Knoten **Paket** enthält eine einzelne Datei, die als Verteilungsmechanismus für das SharePoint-Projekt fungiert. Diese als *Lösungspaket* bezeichnete Datei ist CAB-basiert und weist die Erweiterung „.wsp“ auf. Ein Lösungspaket ist eine zur Bereitstellung geeignete, wiederverwendbare Datei, die einen Satz von Funktionen, Websitedefinitionen und Assemblys enthält, die für SharePoint-Websites gelten, und die Sie einzeln aktivieren oder deaktivieren können. Der Knoten **Paket** enthält darüber hinaus immer eine Datei mit dem Namen Package.wspdef, eine [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] -Definitionsdatei für das Paket. Sobald ein Paket auf dem Server bereitgestellt wurde, auf dem SharePoint ausgeführt wird, kann der SharePoint-Administrator es installieren und die zugehörigen Funktionen aktivieren.
@@ -57,14 +59,14 @@ ms.locfileid: "86016790"
 ## <a name="sharepoint-project-and-project-item-properties"></a>Eigenschaften von SharePoint-Projekten und -Projektelementen
  Die Eigenschaften von SharePoint-Projekten werden wie bei anderen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Projekten im Eigenschaftenfenster und auf der Eigenschaftenseite angezeigt. Welche Eigenschaften angezeigt werden, hängt vom ausgewählten Knoten ab.
 
- Wenn ein SharePoint-Projekt, Projektelement, oder Projektelementdateiknoten im **Projektmappen-Explorer**ausgewählt wird, werden die folgenden Eigenschaften im Eigenschaftenfenster oder auf der Eigenschaftenseite angezeigt:
+ Wenn ein SharePoint-Projekt, Projektelement, oder Projektelementdateiknoten im **Projektmappen-Explorer** ausgewählt wird, werden die folgenden Eigenschaften im Eigenschaftenfenster oder auf der Eigenschaftenseite angezeigt:
 
 ### <a name="project-properties"></a>Projekteigenschaften
 
 |Eigenschaftenname|Beschreibung|
 |-------------------|-----------------|
 |Aktive Bereitstellungskonfiguration|Gibt die Reihe von Schritten an, die während der Bereitstellung ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|
-|Assemblybereitstellungsziel|Bestimmt den Speicherort von *SharePoint-Anwendungsassemblys* . Gültige Werte für den Assemblyspeicherort sind *GlobalAssemblyCache* (Standard) oder *WebApplication*.<br /><br /> Wenn die Eigenschaft *Sandboxed Solution* auf **true**festgelegt ist, wird diese Eigenschaft deaktiviert.|
+|Assemblybereitstellungsziel|Bestimmt den Speicherort von *SharePoint-Anwendungsassemblys* . Gültige Werte für den Assemblyspeicherort sind *GlobalAssemblyCache* (Standard) oder *WebApplication*.<br /><br /> Wenn die Eigenschaft *Sandboxed Solution* auf **true** festgelegt ist, wird diese Eigenschaft deaktiviert.|
 |Nach Debuggen automatisch zurückziehen|Gibt an, ob die bereitgestellte Projektmappe in SharePoint automatisch zurückgezogen wird, nachdem Sie die Anwendung im Debugmodus in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ausgeführt haben. Wenn diese Option ausgewählt ist, wird die Projektmappe zurückgezogen, wenn die IDE nach dem Debugging zurück zur Entwurfsansicht wechselt. Wenn die Option nicht ausgewählt ist, wird die Projektmappe nicht zurückgezogen. Weitere Informationen finden Sie unter [Deinstallieren und Zurückziehen einer Farmlösung](/previous-versions/office/developer/sharepoint-2010/aa543958(v=office.14)).|
 |Konfigurationen bearbeiten|Gibt die Bereitstellungskonfiguration an, die für das Projekt verwendet werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungskonfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) und [Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungspaketen](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|
 |Silverlight-Debugging aktivieren (anstelle von Skript-Debugging)|Wenn diese Option ausgewählt ist, wird der Silverlight-Debugger an den Debugprozess angefügt. Ist die Option nicht ausgewählt, wird der Skriptdebugger an den Debugprozess angefügt. Weitere Informationen finden Sie unter [Übersicht zum Debuggen mit Silverlight](/previous-versions/windows/).|
@@ -73,7 +75,7 @@ ms.locfileid: "86016790"
 |Befehlszeile vor der Bereitstellung|Gibt die Befehle an, die vor dem Bereitstellen der SharePoint-Lösung ausgeführt werden sollen. Diese Zeile unterstützt alle Batchbefehle sowie die Auflösung von MSBuild-Variablen. Weitere Informationen finden Sie unter [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|
 |Projektdatei|Der Name der Datei, die Build- und Konfigurationsinformationen sowie andere Informationen zum Projekt enthält.|
 |Projektordner|Der Speicherort der Projektdatei im System. (Schreibgeschützt.)|
-|Sandboxed Solution|Gibt an, ob das Projekt als *Sandkastenlösung*bereitgestellt werden soll (wird auch als *von Benutzern erstellte Lösung*bezeichnet). Sandkastenlösungen sind nicht notwendigerweise vertrauenswürdig. Der Wert **true** bedeutet, dass das Projekt als Sandkastenlösung bereitgestellt wird. Der Wert **false** heißt, dass das Projekt als Farmlösung bereitgestellt wird. Weitere Informationen finden Sie unter [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) und [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|
+|Sandboxed Solution|Gibt an, ob das Projekt als *Sandkastenlösung* bereitgestellt werden soll (wird auch als *von Benutzern erstellte Lösung* bezeichnet). Sandkastenlösungen sind nicht notwendigerweise vertrauenswürdig. Der Wert **true** bedeutet, dass das Projekt als Sandkastenlösung bereitgestellt wird. Der Wert **false** heißt, dass das Projekt als Farmlösung bereitgestellt wird. Weitere Informationen finden Sie unter [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) und [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|
 |Website-URL|Gibt die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] der Zielwebsite für das Projekt an.|
 |Startelement|Gibt das erste auszuführende Element im Projekt an.|
 
