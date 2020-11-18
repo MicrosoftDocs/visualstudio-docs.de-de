@@ -1,5 +1,7 @@
 ---
 title: Erweitern der SharePoint-Tools in Visual Studio | Microsoft-Dokumentation
+description: Erweitern der SharePoint-Tools in Visual Studio. Erweitern des SharePoint-Projektsystems. Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dc0cc0d0af73d032d870629877b62c94e6b347b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a921f45ea151ce7ee3313dba47e81a5acc86063d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016032"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672625"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Erweitern der SharePoint-Tools in Visual Studio
   Die SharePoint-Tools in Visual Studio erfüllen die Anforderungen vieler Anwendungsentwicklungsszenarios. Allerdings treffen Sie möglicherweise auf Fälle, in denen sie keine Funktionen bereitstellen, die Sie oder andere Entwickler benötigen. In diesen Fällen können Sie die SharePoint-Tools erweitern, um die Funktionalität zu erstellen, die Sie benötigen.
