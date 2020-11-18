@@ -1,6 +1,8 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Ereignis Empfängers für eine bestimmte Listen Instanz | Microsoft-Dokumentation'
 titleSuffix: ''
+description: Erstellen Sie einen Ereignis Empfänger für eine bestimmte Listen Instanz. Ein List instance-Ereignis Empfänger antwortet auf Ereignisse, die in einer beliebigen Instanz einer Listen Definition auftreten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585835"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849895"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Gewusst wie: Erstellen eines Ereignis Empfängers für eine bestimmte Listen Instanz
   Ein List instance-Ereignis Empfänger antwortet auf Ereignisse, die in einer beliebigen Instanz einer Listen Definition auftreten. Obwohl die Ereignis Empfänger Vorlage nicht das Ziel einer bestimmten Listen Instanz ermöglicht, können Sie einen Ereignis Empfänger ändern, der auf eine Listen Definition festgelegt ist, um auf Ereignisse in einer bestimmten Listen Instanz zu reagieren.
@@ -41,16 +43,16 @@ ms.locfileid: "91585835"
 
 5. Erstellen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ein Ereignis Empfänger Projekt.
 
-6. Wählen Sie in der Liste **welche Art von Ereignis Empfänger möchten Sie verwenden?** die Option **Listenelement Ereignisse**aus.
+6. Wählen Sie in der Liste **welche Art von Ereignis Empfänger möchten Sie verwenden?** die Option **Listenelement Ereignisse** aus.
 
     > [!NOTE]
     > Sie können auch eine beliebige andere Art von Ereignis Empfänger für eine Listen Definition auswählen, z. b. **e-Mail-Ereignisse auflisten** oder **Workflow Ereignisse auflisten**.
 
-7. Wählen Sie in der Liste **welches Element soll die Ereignis Quelle sein? die** Option **Ankündigungen**aus.
+7. Wählen Sie in der Liste **welches Element soll die Ereignis Quelle sein? die** Option **Ankündigungen** aus.
 
 8. Wählen Sie in der Liste **folgende Ereignisse behandeln** das Kontrollkästchen **ein Element wird hinzugefügt werden** aus, und klicken Sie dann auf die Schaltfläche **Fertig** stellen.
 
-9. Öffnen Sie in **Projektmappen-Explorer**unter EventReceiver1 den *Elements.xml*.
+9. Öffnen Sie in **Projektmappen-Explorer** unter EventReceiver1 den *Elements.xml*.
 
      Der Ereignis Empfänger verweist derzeit mithilfe der folgenden Zeile auf die Definition der Ankündigungsliste:
 
@@ -86,6 +88,6 @@ ms.locfileid: "91585835"
 
      Beachten Sie, dass der Ereignis Empfänger in der neuen Ankündigung nicht auslöst, da der Empfänger so konfiguriert ist, dass er nur auf Ereignisse in der benutzerdefinierten Ankündigungs Listen Instanz ( **testannouncements**) antwortet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

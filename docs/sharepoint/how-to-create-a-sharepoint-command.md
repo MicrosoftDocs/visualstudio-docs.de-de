@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen eines SharePoint-Befehls | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie einen benutzerdefinierten SharePoint-Befehl erstellen, um die API des Server Objektmodells in einer SharePoint-Tools-Erweiterung aufzurufen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016226"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850701"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Vorgehensweise: Erstellen eines SharePoint-Befehls
   Wenn Sie das Server Objektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie einen benutzerdefinierten *SharePoint-Befehl* erstellen, um die API aufzurufen. Sie definieren den SharePoint-Befehl in einer Assembly, die das Server Objektmodell direkt abrufen kann.
@@ -53,7 +55,7 @@ ms.locfileid: "86016226"
 
     - Der zweite Parameter und der Rückgabewert müssen ein Typ sein, der vom Windows Communication Foundation (WCF) serialisiert werden kann. Weitere Informationen finden Sie [unter vom Datenvertragsserialisierer unterstützte Typen](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) und [Verwenden der XmlSerializer-Klasse](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - Die-Methode kann über eine beliebige Sichtbarkeit (**öffentlich**, **intern**oder **Privat**) verfügen, und Sie kann statisch oder nicht statisch sein.
+    - Die-Methode kann über eine beliebige Sichtbarkeit (**öffentlich**, **intern** oder **Privat**) verfügen, und Sie kann statisch oder nicht statisch sein.
 
 4. Wenden <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> Sie das auf die-Methode an. Dieses Attribut gibt einen eindeutigen Bezeichner für den Befehl an. Dieser Bezeichner muss nicht mit dem Methodennamen identisch sein.
 
@@ -77,7 +79,7 @@ ms.locfileid: "86016226"
 ## <a name="deploying-the-command"></a>Bereitstellen des Befehls
  Zum Bereitstellen des Befehls fügen Sie die befehlsassembly in das gleiche [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (*VSIX*) mit der Erweiterungsassembly ein, die den Befehl verwendet. Außerdem müssen Sie in der Datei Extension. vsixmanifest einen Eintrag für die befehlsassembly hinzufügen. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Vorgehensweise: Ausführen eines SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

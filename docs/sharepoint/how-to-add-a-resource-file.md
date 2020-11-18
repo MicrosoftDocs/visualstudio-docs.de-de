@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen einer Ressourcen Datei | Microsoft-Dokumentation'
+description: Fügen Sie in Visual Studio eine Ressourcen Datei hinzu, indem Sie die Befehle im Kontextmenü des Knotens Projekt Mappe und Funktions Knoten in Projektmappen-Explorer verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440777aaaf239dcdd3c276786a82e3d8aef55070
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015174"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850129"
 ---
-# <a name="how-to-add-a-resource-file"></a>Vorgehensweise: Hinzufügen einer Ressourcen Datei
+# <a name="how-to-add-a-resource-file"></a>How to: Hinzufügen einer Ressourcendatei
   Die Befehle zum Hinzufügen von Ressourcen Dateien finden Sie im Kontextmenü des Projektmappenknotens und der Funktions Knoten in Projektmappen-Explorer. Weitere Informationen finden Sie unter [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md).
 
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>So fügen Sie einer SharePoint-Lösung eine globale Ressourcen Datei hinzu
 
 1. Öffnen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] eine SharePoint-Lösung.
 
-2. Wählen Sie in **Projektmappen-Explorer**einen SharePoint-Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen**.
+2. Wählen Sie in **Projektmappen-Explorer** einen SharePoint-Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen**.
 
 3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Vorlage **Global Resources File** aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
@@ -44,7 +46,7 @@ ms.locfileid: "86015174"
 
 1. Wenn die SharePoint-Lösung nicht bereits in geöffnet ist [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , öffnen Sie die Projekt Mappe.
 
-2. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Namen eines Features unter dem Knoten **Features** , und wählen Sie dann **Funktions Ressource hinzufügen**aus.
+2. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Namen eines Features unter dem Knoten **Features** , und wählen Sie dann **Funktions Ressource hinzufügen** aus.
 
      In diesem Schritt wird dem Feature eine Ressourcen Datei im Format " _resourceFileName_" hinzugefügt **.** _Culture_**. resx**, z. b. *Feature1. en-US. resx*.
 

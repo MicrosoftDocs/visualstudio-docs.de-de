@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Business Data Connectivity-Modells | Microsoft-Dokumentation
+description: Erstellen Sie ein Business Data Connectivity-Modell (BDC), oder passen Sie ein vorhandenes BDC-Modell mithilfe von Visual Studio an. Jedes SharePoint-Projekt kann nur ein Modell enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840902"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850467"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Erstellen eines Business Data Connectivity-Modells
   Sie können ein BDC-Modell (Business Data Connectivity) erstellen oder ein vorhandenes BDC-Modell mithilfe von Visual Studio anpassen. Jedes SharePoint-Projekt kann nur ein Modell enthalten. Weitere Informationen finden Sie unter [integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
 
 ## <a name="create-a-new-model"></a>Erstellen Sie ein neues Modell.
- Um ein neues Modell zu erstellen, erstellen Sie ein **Business Data Connectivity-Modell** Projekt, oder fügen Sie ein **Business Data Connectivity-Modell** Element zu einem **leeren SharePoint-Projekt**hinzu.
+ Um ein neues Modell zu erstellen, erstellen Sie ein **Business Data Connectivity-Modell** Projekt, oder fügen Sie ein **Business Data Connectivity-Modell** Element zu einem **leeren SharePoint-Projekt** hinzu.
 
 > [!NOTE]
 > Sie müssen [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] auf dem Computer installiert haben.
@@ -58,7 +60,7 @@ ms.locfileid: "90840902"
 
   In beiden Fällen sind die in dem Modell definierten LOB-Systeme, die Sie importieren, nicht betroffen und funktionieren weiterhin wie erwartet. Wenn Sie einem SharePoint-Projekt ein vorhandenes Modell hinzufügen möchten, verwenden Sie das Visual Studio-Dialogfeld **Vorhandenes Element hinzufügen** . Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).
 
-  Sie können dem importierten Modell ein Branchen System vom Typ .NET Framework-Assembly hinzufügen, indem Sie im **Add .NET Assembly LobSystem**eine Option auswählen. Dies ermöglicht es Ihnen, benutzerdefinierten Code zu schreiben und einen Designer zu verwenden, um die Metadaten für das importierte Modell zu definieren.
+  Sie können dem importierten Modell ein Branchen System vom Typ .NET Framework-Assembly hinzufügen, indem Sie im **Add .NET Assembly LobSystem** eine Option auswählen. Dies ermöglicht es Ihnen, benutzerdefinierten Code zu schreiben und einen Designer zu verwenden, um die Metadaten für das importierte Modell zu definieren.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

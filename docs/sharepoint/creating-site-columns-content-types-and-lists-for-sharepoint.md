@@ -1,6 +1,8 @@
 ---
 title: Erstellen von Websites Palten, Inhaltstypen und Listen für SharePoint | Microsoft-Dokumentation
 titleSuffix: ''
+description: Erstellen Sie Website Spalten, Inhaltstypen und Listen für SharePoint. Visual Studio stellt Projekt Element Vorlagen für diese Typen von SharePoint-Elementen bereit.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585105"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850519"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Erstellen von Websitespalten, Inhaltstypen und Listen für SharePoint
   Visual Studio stellt Projekt Element Vorlagen für viele verschiedene grundlegende SharePoint-Elemente bereit, einschließlich *Listen* und *Inhaltstypen*, die beide Website Spalten (oder *Felder*) enthalten können. Mithilfe der neuen Designer für Inhaltstypen und Listen können Sie diese Elemente einfacher als je zuvor erstellen.
@@ -45,9 +47,9 @@ ms.locfileid: "91585105"
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Veranschaulicht, wie Sie in einem benutzerdefinierten Inhaltstyp verwendete Site Spalten erstellen. Der Inhaltstyp wird dann in einer benutzerdefinierten Liste verwendet.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Einstieg in die Entwicklung in SharePoint 2010](/sharepoint/dev/)

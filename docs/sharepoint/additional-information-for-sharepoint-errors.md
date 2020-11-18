@@ -1,5 +1,7 @@
 ---
 title: Weitere Informationen zu SharePoint-Fehlern | Microsoft-Dokumentation
+description: Hier erhalten Sie weitere Informationen zur Problembehandlung bei Fehlern und Warnungen, die in Visual Studio SharePoint-Tools auftreten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985078"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850428"
 ---
-# <a name="additional-information-for-sharepoint-errors"></a>Weitere Informationen zu SharePoint-Fehlern
+# <a name="additional-information-for-sharepoint-errors"></a>Zusätzliche Informationen zu SharePoint-Fehlern
   Hilfe bei der Problembehandlung von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fehlern und Warnungen in SharePoint-Tools finden Sie in den Themen zur Problembehandlung und in den öffentlichen Foren.
 
 ## <a name="troubleshoot-errors-and-issues"></a>Beheben von Fehlern und Problemen

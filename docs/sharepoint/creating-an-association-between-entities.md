@@ -1,5 +1,7 @@
 ---
 title: Erstellen einer Zuordnung zwischen Entitäten | Microsoft-Dokumentation
+description: Erstellen Sie eine Zuordnung zwischen Entitäten in Ihrem Business Data Connectivity (BDC)-Modell. Erfahren Sie mehr über Zuordnungs Methoden und Zuordnungs Typen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,21 +23,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a5decf8ad803bea8b1d64c79410c319dbef0be9
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981089"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850545"
 ---
 # <a name="create-an-association-between-entities"></a>Erstellen einer Zuordnung zwischen Entitäten
   Sie können Beziehungen zwischen Entitäten in Ihrem Business Data Connectivity (BDC)-Modell definieren, indem Sie Zuordnungen erstellen. Visual Studio generiert Methoden, die Consumer des Modells mit Informationen zu den einzelnen Zuordnungen bereitstellen. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen genutzt werden, um Daten Beziehungen in einer Benutzeroberfläche (UI) anzuzeigen.
 
 ## <a name="create-an-association"></a>Erstellen einer Zuordnung
- Erstellen Sie eine Zuordnung, indem Sie das Zuordnungs Steuerelement in der Visual Studio- **Toolbox**auswählen. Wählen Sie **dabei die erste** Entität (Quell Entität) aus, und wählen Sie dann die zweite Entität (als Ziel Entität bezeichnet) Sie können die Details der Zuordnung im **Association-Editor**definieren. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md).
+ Erstellen Sie eine Zuordnung, indem Sie das Zuordnungs Steuerelement in der Visual Studio- **Toolbox** auswählen. Wählen Sie **dabei die erste** Entität (Quell Entität) aus, und wählen Sie dann die zweite Entität (als Ziel Entität bezeichnet) Sie können die Details der Zuordnung im **Association-Editor** definieren. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md).
 
 ## <a name="association-methods"></a>Zuordnungs Methoden
- Anwendungen wie SharePoint Business Data-Webparts nutzen Zuordnungen, indem Sie Methoden in der Dienstklasse einer Entität aufrufen. Sie können der Dienstklasse einer Entität Methoden hinzufügen, indem Sie Sie im **Association-Editor**auswählen.
+ Anwendungen wie SharePoint Business Data-Webparts nutzen Zuordnungen, indem Sie Methoden in der Dienstklasse einer Entität aufrufen. Sie können der Dienstklasse einer Entität Methoden hinzufügen, indem Sie Sie im **Association-Editor** auswählen.
 
  Standardmäßig fügt der **Association Editor** der Quell-und Ziel Entität eine Association-Navigations Methode hinzu. Eine Association-Navigations Methode in der Quell Entität ermöglicht es Consumern, eine Liste von Ziel Entitäten abzurufen. Eine Association-Navigations Methode in der Ziel Entität ermöglicht es Consumern, die Quell Entität abzurufen, die sich auf eine Ziel Entität bezieht.
 
@@ -47,7 +49,7 @@ ms.locfileid: "72981089"
 ### <a name="foreign-key-based-association"></a>Fremdschlüssel basierte Zuordnung
  Sie können eine Fremdschlüssel basierte Zuordnung erstellen, indem Sie einen Bezeichner in der Quell Entität mit Typdeskriptoren verknüpfen, die in der Ziel Entität definiert sind. Diese Beziehung ermöglicht Consumer des Modells, eine erweiterte Benutzeroberfläche für Ihre Benutzer bereitzustellen. Beispielsweise ein Formular in Outlook, das es einem Benutzer ermöglicht, einen Verkaufsauftrag zu erstellen, der Kunden in einer Dropdown Liste anzeigen kann. oder eine Liste mit Verkaufsaufträgen in SharePoint, mit der Benutzer eine Profilseite für einen Kunden öffnen können.
 
- Um eine Fremdschlüssel basierte Zuordnung zu erstellen, verknüpfen Sie Bezeichner und Typdeskriptoren mit dem gleichen Namen und Typ. Beispielsweise können Sie eine Fremdschlüssel basierte Zuordnung zwischen einer `Contact` -Entität und einer- `SalesOrder` Entität erstellen. Die- `SalesOrder` Entität gibt einen `ContactID` Typdeskriptor als Teil des Rückgabe Parameters von Finder oder bestimmten Finder-Methoden zurück. Beide Typdeskriptoren werden im **Association-Editor**angezeigt. Um eine Fremdschlüssel basierte Beziehung zwischen der `Contact` Entität und der `SalesOrder` Entität zu erstellen, wählen Sie den `ContactID` Bezeichner neben jedem dieser Felder aus.
+ Um eine Fremdschlüssel basierte Zuordnung zu erstellen, verknüpfen Sie Bezeichner und Typdeskriptoren mit dem gleichen Namen und Typ. Beispielsweise können Sie eine Fremdschlüssel basierte Zuordnung zwischen einer `Contact` -Entität und einer- `SalesOrder` Entität erstellen. Die- `SalesOrder` Entität gibt einen `ContactID` Typdeskriptor als Teil des Rückgabe Parameters von Finder oder bestimmten Finder-Methoden zurück. Beide Typdeskriptoren werden im **Association-Editor** angezeigt. Um eine Fremdschlüssel basierte Beziehung zwischen der `Contact` Entität und der `SalesOrder` Entität zu erstellen, wählen Sie den `ContactID` Bezeichner neben jedem dieser Felder aus.
 
  Fügen Sie der Association Navigator-Methode der Quell Entität, die eine Auflistung von Ziel Entitäten zurückgibt, Code hinzu. Im folgenden Beispiel werden die Verkaufsaufträge für einen Kontakt zurückgegeben.
 
@@ -76,6 +78,6 @@ ms.locfileid: "72981089"
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Gewusst wie: Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/how-to-create-an-association-between-entities.md)
