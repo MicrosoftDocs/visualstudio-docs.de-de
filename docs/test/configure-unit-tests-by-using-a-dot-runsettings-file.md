@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400101"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518764"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -221,8 +221,8 @@ Der Datensammler der Codeabdeckung erstellt ein Protokoll der Teile des Anwendun
       <CollectFromChildProcesses>True</CollectFromChildProcesses>
       <CollectAspDotNet>False</CollectAspDotNet>
     </CodeCoverage>
-  </CodeCoverage>
-</Configuration>
+  </Configuration>
+</DataCollector>
 ```
 
 ### <a name="videorecorder-data-collector"></a>VideoRecorder-Datencollector

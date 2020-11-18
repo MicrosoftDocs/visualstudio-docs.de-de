@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870d5005cb74a3c130af3d720991a6797bb53bc5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036170"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672768"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -51,7 +51,7 @@ Im Folgenden werden alle Anmeldevorteile aufgeführt:
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>So melden Sie sich bei Visual Studio an
 
-Wenn Sie Visual Studio erstmals öffnen, werden Sie aufgefordert, sich anzumelden und einige grundlegenden Registrierungsinformationen bereitzustellen. 
+Wenn Sie Visual Studio erstmals öffnen, werden Sie aufgefordert, sich anzumelden und einige grundlegenden Registrierungsinformationen bereitzustellen.
 
 ![Aufforderung zum Anmelden](../ide/media/vs2019_signinpopup.png)
 
@@ -63,7 +63,7 @@ Nach Angabe der Einstellungen wird Visual Studio gestartet. Sie sind nun registr
 
 ![Aktuell angemeldeter Benutzer in VS2019](../ide/media/vs2019_username.png)
 
-Wenn Sie sich beim ersten Öffnen von Visual Studio nicht anmelden möchten, können Sie dies später jederzeit nachholen. Suchen Sie nach dem Link **Anmelden** oben rechts in der Visual Studio-Umgebung. 
+Wenn Sie sich beim ersten Öffnen von Visual Studio nicht anmelden möchten, können Sie dies später jederzeit nachholen. Suchen Sie nach dem Link **Anmelden** oben rechts in der Visual Studio-Umgebung.
 
 ![Nicht angemeldeter Benutzer](../ide/media/vs2019_usernotsignedin.png)
 
@@ -84,6 +84,7 @@ Wenn es bei der Anmeldung zu Problemen kommt, erhalten Sie auf der Seite [Suppor
 ## <a name="see-also"></a>Siehe auch
 
 * [Erweitern einer Testversion oder Aktualisieren einer Lizenz](../ide/how-to-unlock-visual-studio.md)
+* [Arbeiten mit GitHub-Konten in Visual Studio](../ide/work-with-github-accounts.md)
 * [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)
 * [Anmelden (Visual Studio für Mac)](/visualstudio/mac/signing-in)
 * [Aktivierung (Visual Studio für Mac)](/visualstudio/mac/activation)
