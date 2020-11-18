@@ -1,5 +1,7 @@
 ---
 title: Erstellen von SharePoint-Lösungs Paketen | Microsoft-Dokumentation
+description: Erstellen und Anpassen von Bereitstellungs Paketen für SharePoint-Lösungen mithilfe des Paket-Designers. Erkunden Sie die Paket Erstellungs Tools, Designer Optionen und die Ordnerstruktur.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74876063"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850558"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Erstellen von SharePoint-Lösungs Paketen
   Mithilfe des Paket-Designers können Sie Bereitstellungspakete erstellen und anpassen. Beispielsweise können Sie SharePoint-Projektelemente und -Funktionen hinzufügen, den IIS-Server zurücksetzen, Funktionsaktivierungsbereiche festlegen und Funktionsabhängigkeiten identifizieren. Der Designer generiert außerdem ein Manifest, eine XML-Datei, die jedes Paket beschreibt.
@@ -31,11 +33,11 @@ ms.locfileid: "74876063"
  Sie können Visual Studio und MSBuild verwenden, um Paketdateien (*. wsp*) zum Bereitstellen der SharePoint-Lösung zu erstellen. Bei diesem Vorgang werden die für die SharePoint-Bereitstellung benötigten Manifestdateien generiert. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Tasks](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
 
 ## <a name="package-designer-options"></a>Paket-Designer-Optionen
- In der folgenden Tabelle sind die Eigenschaften aufgeführt, die Sie in SharePoint-Paketen mit dem **Paket-Designer**anpassen können.
+ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die Sie in SharePoint-Paketen mit dem **Paket-Designer** anpassen können.
 
 |Eigenschaft des Paket-Designers|Beschreibung der Standardeinstellung|
 |-------------------------------|------------------------------------|
-|Name|Erforderlich. Der Standardname des Pakets ist auf *ProjectName*festgelegt.|
+|Name|Erforderlich. Der Standardname des Pakets ist auf *ProjectName* festgelegt.|
 |Webserver zurücksetzen|Optional. Wählen Sie diese Option aus, wenn Sie den Webserver neu starten möchten, nachdem die *wsp* -Datei auf dem SharePoint-Server installiert wurde.|
 |Bereitstellungsservertyp|Optional. Stellt den Typ des Servers dar, auf dem das Paket gehostet wird. Wenn diese Einstellung nicht festgelegt ist, wird standardmäßig Webfrontend verwendet.<br /><br /> ApplicationServer: Beschreibt einen Server, der Dienste hostet.<br /><br /> Webfrontend: Beschreibt einen Server, der Websites hostet.|
 |Elemente in der Lösung|Alle SharePoint-Projektelemente und -Funktionen, die dem Paket hinzugefügt werden können.|
@@ -69,9 +71,9 @@ ms.locfileid: "74876063"
 6. Die Dateien im zwischen Verzeichnis werden der *wsp* -Datei hinzugefügt.
 
 ## <a name="package-folder-structure"></a>Paketordnerstruktur
- Wenn Sie das SharePoint-Projekt Verpacken, wird für Sie eine *wsp* -Datei im Ordner *solutionfolder\bin \\ \<BuildConfiguration> * erstellt. Wenn sich Ihre Projekt Mappe beispielsweise in " *c:\Visual Studio 2013 \ Projects\ListDefinition1* " befindet und die Buildkonfiguration auf "Release" festgelegt ist, befindet sich die *wsp* -Datei unter " *c:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*".
+ Wenn Sie das SharePoint-Projekt Verpacken, wird für Sie eine *wsp* -Datei im Ordner *solutionfolder\bin \\ \<BuildConfiguration>* erstellt. Wenn sich Ihre Projekt Mappe beispielsweise in " *c:\Visual Studio 2013 \ Projects\ListDefinition1* " befindet und die Buildkonfiguration auf "Release" festgelegt ist, befindet sich die *wsp* -Datei unter " *c:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*".
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Anpassen eines SharePoint-Lösungs Pakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Vorgehensweise: Hinzufügen und Entfernen von Features und Elementen zu einem Paket mit dem Paket-Designer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Vorgehensweise: Erstellen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: Aufrufen der SharePoint-Objekt Modelle | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die beiden unterschiedlichen Objekt Modelle aufzurufen, die Sie in Erweiterungen für SharePoint-Tools verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988407"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850051"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Aufrufe in die SharePoint-Objekt Modelle
   Wenn Sie Erweiterungen für die SharePoint-Tools in Visual Studio erstellen, müssen Sie möglicherweise SharePoint-APIs zum Ausführen bestimmter Aufgaben abrufen. Wenn Sie z. b. einen benutzerdefinierten Bereitstellungs Schritt für SharePoint-Projekte erstellen, müssen Sie möglicherweise SharePoint-APIs aufzurufen, um einige der Aufgaben zum Bereitstellen von Lösungen auszuführen.
@@ -52,9 +54,9 @@ ms.locfileid: "62988407"
  Exemplarische Vorgehensweisen zum Erstellen und Verwenden von SharePoint-Befehlen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Bereitstellungs Schritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) und Exemplarische Vorgehensweise [: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>Grundlegendes zur Ausführung von SharePoint-Befehlen
- Assemblys, die SharePoint-Befehle definieren, werden in einen 64-Bit-Host Prozess namens *vssphost4.exe*geladen. Nachdem Sie einen SharePoint-Befehl in einer SharePoint-Tools-Erweiterung aufgerufen haben, wird der Befehl von *vssphost4.exe* anstelle des 32-Bit-Visual Studio-Prozesses (*devenv.exe*) ausgeführt. Sie können einige Aspekte der Ausführung von SharePoint-Befehlen steuern, indem Sie Werte in der Registrierung festlegen. Weitere Informationen finden Sie unter [Debuggen von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Assemblys, die SharePoint-Befehle definieren, werden in einen 64-Bit-Host Prozess namens *vssphost4.exe* geladen. Nachdem Sie einen SharePoint-Befehl in einer SharePoint-Tools-Erweiterung aufgerufen haben, wird der Befehl von *vssphost4.exe* anstelle des 32-Bit-Visual Studio-Prozesses (*devenv.exe*) ausgeführt. Sie können einige Aspekte der Ausführung von SharePoint-Befehlen steuern, indem Sie Werte in der Registrierung festlegen. Weitere Informationen finden Sie unter [Debuggen von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erstellen eines SharePoint-Befehls](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [Vorgehensweise: Ausführen eines SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

@@ -1,6 +1,8 @@
 ---
 title: 'Konvertieren: SharePoint-Projekt Systemtypen in/aus anderen Typen'
 titleSuffix: ''
+description: Konvertieren zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen. Eine Liste mit Details zu den Typen, die konvertiert werden können, finden Sie hier.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44b3e32114b10eae776f39e4c3d7337bba636f3f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 75f8a2072e81936c4c1c691261e301aae37b0191
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584645"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850480"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konvertieren zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen
   In einigen Fällen verfügen Sie möglicherweise über ein Objekt im SharePoint-Projekt System, und Sie möchten die Features eines entsprechenden Objekts im Visual Studio-Automatisierungs Objektmodell oder im Integrations Objektmodell verwenden oder umgekehrt. In diesen Fällen können Sie die- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> Methode des SharePoint-Projekt diendiensdienstanbieter verwenden, um das Objekt in ein anderes Objektmodell zu konvertieren.
@@ -47,7 +49,7 @@ ms.locfileid: "91584645"
 
 - Code, der die `projectService_ProjectAdded` Methode zum Behandeln des- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> Ereignisses eines- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> Objekts registriert. Ein Beispiel finden Sie unter Gewusst [wie: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md)
 - [Vorgehensweise: Abrufen des SharePoint-Projekt Dienstanbieter](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)

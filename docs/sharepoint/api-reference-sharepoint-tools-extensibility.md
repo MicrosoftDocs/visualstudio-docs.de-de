@@ -1,5 +1,7 @@
 ---
 title: API-Referenz (Erweiterbarkeit von SharePoint-Tools) | Microsoft-Dokumentation
+description: Lesen Sie die API-Referenz Dokumentation zum Erweitern der SharePoint-Tools in Visual Studio. Hier finden Sie eine Liste verwandter Namespaces, wie z. b. Microsoft. VisualStudio. SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987986"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850389"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API-Referenz (Erweiterbarkeit von SharePoint-Tools)
   Dieser Abschnitt enthält die API-Referenzdokumentation zum Erweitern der SharePoint-Tools in Visual Studio.
@@ -29,7 +31,7 @@ ms.locfileid: "62987986"
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- Enthält Typen, die Sie zum Erstellen von benutzerdefinierten *SharePoint-Befehlen*verwenden können. Ein SharePoint-Befehl ist eine Methode, die einen Aufruf in das SharePoint-Serverobjektmodell von einer SharePoint-Tools-Erweiterung aus durchführt.
+ Enthält Typen, die Sie zum Erstellen von benutzerdefinierten *SharePoint-Befehlen* verwenden können. Ein SharePoint-Befehl ist eine Methode, die einen Aufruf in das SharePoint-Serverobjektmodell von einer SharePoint-Tools-Erweiterung aus durchführt.
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 
@@ -67,10 +69,10 @@ ms.locfileid: "62987986"
 
  Enthält Typen, mit denen Sie für ein SharePoint-Projekt das Funktions- und Paketvalidierungsverhalten anpassen können.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Referenz &#40;Erweiterbarkeit von SharePoint-Tools&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
 - [Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Erweiterte SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)

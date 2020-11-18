@@ -1,6 +1,8 @@
 ---
 title: Hinzufügen eines Kontextmenü Elements zu einem benutzerdefinierten SharePoint-Projekt Elementtyp
 titleSuffix: ''
+description: Erfahren Sie, wie Sie einem benutzerdefinierten SharePoint-Projekt Elementtyp ein Kontextmenü Element hinzufügen. Das Menü Element wird angezeigt, wenn Sie mit der rechten Maustaste auf das Projekt Element in Projektmappen-Explorer klicken.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39de735c09c97541684628c8e4140aa42d119500
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2916b806c6e149a9c0cbe2495a7edabcfc883e7e
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585874"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850077"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Gewusst wie: Hinzufügen eines Kontextmenü Elements zu einem benutzerdefinierten SharePoint-Projekt Elementtyp
-  Wenn Sie einen benutzerdefinierten SharePoint-Projekt Elementtyp definieren, können Sie dem Projekt Element ein Kontextmenü Element hinzufügen. Das Menü Element wird angezeigt, wenn ein Benutzer mit der rechten Maustaste auf das Projekt Element in **Projektmappen-Explorer**klickt.
+  Wenn Sie einen benutzerdefinierten SharePoint-Projekt Elementtyp definieren, können Sie dem Projekt Element ein Kontextmenü Element hinzufügen. Das Menü Element wird angezeigt, wenn ein Benutzer mit der rechten Maustaste auf das Projekt Element in **Projektmappen-Explorer** klickt.
 
  Bei den folgenden Schritten wird davon ausgegangen, dass Sie bereits einen eigenen SharePoint-Projekt Elementtyp definiert haben. Weitere Informationen finden Sie unter Gewusst [wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
@@ -55,7 +57,7 @@ ms.locfileid: "91585874"
 
  Erstellen Sie zum Bereitstellen des Projekt Elements ein [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (VSIX) für die Assembly, die Vorlage und alle anderen Dateien, die Sie mit dem Projekt Element verteilen möchten. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [Gewusst wie: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projekt Elementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)

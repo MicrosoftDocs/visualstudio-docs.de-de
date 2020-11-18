@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen einer Zuordnung zwischen Entitäten | Microsoft-Dokumentation'
+description: Definieren Sie Beziehungen zwischen Entitäten in Ihrem Business Data Connectivity (BDC)-Modell, indem Sie Zuordnungen in Visual Studio erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016936"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849843"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Gewusst wie: Erstellen einer Zuordnung zwischen Entitäten
   Sie können Beziehungen zwischen Entitäten in Ihrem Business Data Connectivity (BDC)-Modell definieren, indem Sie Zuordnungen erstellen. Visual Studio generiert Methoden, die Consumer des Modells mit Informationen zu den einzelnen Zuordnungen bereitstellen. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen genutzt werden, um Daten Beziehungen in einer Benutzeroberfläche (UI) anzuzeigen.
@@ -35,7 +37,7 @@ ms.locfileid: "86016936"
 
 ### <a name="to-create-an-association-between-entities"></a>So erstellen Sie eine Zuordnung zwischen Entitäten
 
-1. Wählen Sie auf der Registerkarte **BusinessDataConnectivity** der **Toolbox**das **Zuordnungs Element aus** .
+1. Wählen Sie auf der Registerkarte **BusinessDataConnectivity** der **Toolbox** das **Zuordnungs Element aus** .
 
 2. Wählen Sie im BDC-Designer die Quell Entität aus, und wählen Sie dann die Ziel Entität aus.
 
@@ -61,7 +63,7 @@ ms.locfileid: "86016936"
 
      Beispiele für Association Navigator-Methoden finden Sie unter [Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md)
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)

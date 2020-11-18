@@ -1,6 +1,8 @@
 ---
 title: 'Gewusst wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung | Microsoft-Dokumentation'
 titleSuffix: ''
+description: Verwenden Sie eine SharePoint-Projekt Element Erweiterung zum Hinzufügen einer Eigenschaft zu einem SharePoint-Projekt Element, das bereits in Visual Studio installiert ist.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584255"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850168"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Gewusst wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung
-  Sie können eine Projekt Element Erweiterung verwenden, um einem SharePoint-Projekt Element, das bereits in Visual Studio installiert ist, eine Eigenschaft hinzuzufügen. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn das Projekt Element in **Projektmappen-Explorer**ausgewählt wird.
+  Sie können eine Projekt Element Erweiterung verwenden, um einem SharePoint-Projekt Element, das bereits in Visual Studio installiert ist, eine Eigenschaft hinzuzufügen. Die-Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn das Projekt Element in **Projektmappen-Explorer** ausgewählt wird.
 
  Bei den folgenden Schritten wird davon ausgegangen, dass Sie bereits eine Projekt Element Erweiterung erstellt haben. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
 
@@ -69,7 +71,7 @@ ms.locfileid: "91584255"
 ## <a name="deploy-the-extension"></a>Bereitstellen der Erweiterung
  Zum Bereitstellen der Erweiterung erstellen [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sie ein Erweiterungspaket (VSIX) für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Erweitern von SharePoint-Projekt Elementen](../sharepoint/extending-sharepoint-project-items.md)

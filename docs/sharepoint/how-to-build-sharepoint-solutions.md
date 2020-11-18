@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen von SharePoint-Lösungen | Microsoft-Dokumentation'
+description: Erstellen Sie eine SharePoint-Lösung. In Visual Studio unterscheidet sich das Aufbauen einer SharePoint-Lösung nicht von der Bildung anderer Anwendungen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3beb1602a6572ed578208d6dd85951f1ea1c30b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e878221f3b6989a87fa3c9e36be1018d34d4af
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014523"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850688"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Gewusst wie: Erstellen von SharePoint-Lösungen
 
@@ -33,6 +35,6 @@ Das Erstellen der SharePoint-Lösung unterscheidet sich nicht von der Erstellung
 
 3. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
