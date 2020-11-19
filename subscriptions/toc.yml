@@ -104,6 +104,12 @@
               href: vs-concierge-chat.md
             - name: Technischer Support
               href: vs-tech-support.md
+            - name: Entwicklercommunity
+              href: vs-developer-community.md
+            - name: Microsoft Q&A (Fragen und Antworten)
+              href: vs-microsoft-qa.md
+            - name: Technische Microsoft-Community
+              href: vs-microsoft-tech-community.md
 - name: Software und Schlüssel
   items:
     - name: Softwaredownloads
