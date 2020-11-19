@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Definieren eines SharePoint-Projekt Elementtyps | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie einen Projekt Elementtyp definieren, wenn Sie ein benutzerdefiniertes SharePoint-Projekt Element erstellen möchten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae709bf2d81e2b8b00dc984602c0426fdf272ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016863"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903610"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Gewusst wie: Definieren eines SharePoint-Projekt Elementtyps
   Definieren Sie einen Projekt Elementtyp, wenn Sie ein benutzerdefiniertes SharePoint-Projekt Element erstellen möchten. Weitere Informationen finden Sie unter [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md).
@@ -40,9 +42,9 @@ ms.locfileid: "86016863"
 
     - <xref:System.ComponentModel.Composition.ExportAttribute>. Mit diesem Attribut kann Visual Studio Ihre Implementierung ermitteln und laden <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> . Übergeben <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> Sie den Typ an den Attributkonstruktor.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. In einer Projekt Elementtyp Definition gibt dieses Attribut den Zeichen folgen Bezeichner für das neue Projekt Element an. Es wird empfohlen, dass Sie das Format *Firmenname*verwenden. *Funktionsname* , um sicherzustellen, dass alle Projekt Elemente einen eindeutigen Namen aufweisen.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. In einer Projekt Elementtyp Definition gibt dieses Attribut den Zeichen folgen Bezeichner für das neue Projekt Element an. Es wird empfohlen, dass Sie das Format *Firmenname* verwenden. *Funktionsname* , um sicherzustellen, dass alle Projekt Elemente einen eindeutigen Namen aufweisen.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Dieses Attribut gibt das Symbol an, das für dieses Projekt Element in **Projektmappen-Explorer**angezeigt wird. Dieses Attribut ist optional. Wenn Sie Sie nicht auf Ihre Klasse anwenden, zeigt Visual Studio ein Standard Symbol für das Projekt Element an. Wenn Sie dieses Attribut festlegen, übergeben Sie den voll qualifizierten Namen eines Symbols oder einer Bitmap, das in die Assembly eingebettet ist.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Dieses Attribut gibt das Symbol an, das für dieses Projekt Element in **Projektmappen-Explorer** angezeigt wird. Dieses Attribut ist optional. Wenn Sie Sie nicht auf Ihre Klasse anwenden, zeigt Visual Studio ein Standard Symbol für das Projekt Element an. Wenn Sie dieses Attribut festlegen, übergeben Sie den voll qualifizierten Namen eines Symbols oder einer Bitmap, das in die Assembly eingebettet ist.
 
 5. Verwenden Sie in ihrer Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> Methode Member des *projectItemTypeDefinition* -Parameters, um das Verhalten des Projekt Elementtyps zu definieren. Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> Objekt, das den Zugriff auf die in den <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> Schnittstellen und definierten Ereignisse ermöglicht <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> . Um auf eine bestimmte Instanz des Projekt Elementtyps zuzugreifen, behandeln Sie <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> Ereignisse wie <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> und <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized> .
 

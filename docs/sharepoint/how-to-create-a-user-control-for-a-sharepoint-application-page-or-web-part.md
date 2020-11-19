@@ -1,6 +1,8 @@
 ---
 title: Benutzer Steuerelement für SharePoint-App-Seite oder Webpart erstellen
 titleSuffix: ''
+description: Erstellen Sie benutzerdefinierte Benutzer Steuerelemente, die benutzerdefinierte Funktionen für die SharePoint-Lösung bereitstellen, und verwenden Sie diese Funktionalität auf einem Webpart oder einer Anwendungsseite.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9c8a99562d937d7b10c3539888c2dd62eb1d1da
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cbaeaff14d365f41bff73c29e678a08130b03dc0
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584099"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903675"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>How to: Erstellen eines Benutzersteuerelements für eine SharePoint-Anwendungsseite oder ein SharePoint-Webpart
   Sie können benutzerdefinierte Benutzersteuerelemente erstellen, die benutzerdefinierte Funktionalität für die SharePoint-Lösung bereitstellen, und Sie können diese Funktion im Projekt wiederverwenden. Sie können die Benutzersteuerelemente in einem Webpart oder einer Anwendungsseite verwenden, weitere ASP.NET- und SharePoint-Steuerelemente hinzufügen und Eigenschaften sowie Methoden für das Steuerelement definieren. Weitere Informationen zu Benutzer Steuerelementen finden Sie unter [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) und Benutzer Steuerelemente [und Server Steuerelemente in SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -30,9 +32,9 @@ ms.locfileid: "91584099"
 
      Siehe [SharePoint-Projekt-und Projekt Element Vorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. Wählen Sie im **Projektmappen-Explorer**den Projektknoten aus.
+2. Wählen Sie im **Projektmappen-Explorer** den Projektknoten aus.
 
-3. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
+3. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -47,7 +49,7 @@ ms.locfileid: "91584099"
 
      Visual Studio fügt dem Projekt mehrere Ordner und Dateien hinzu. Weitere Informationen zu diesen Dateien finden Sie unter [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-     Standardmäßig wird die Benutzer Steuerelement Datei in der **Quell** Ansicht des Visual Web Developer-Designers angezeigt. In dieser Ansicht können Sie das XML-Markup des Steuerelements bearbeiten. Sie können zur **Entwurfs** Ansicht wechseln, wenn Sie das Steuerelement visuell entwerfen möchten, indem Sie Steuerelemente aus der **Toolbox**ziehen. Siehe [Entwurfs Ansicht, Webseiten-Designer](/previous-versions/aspnet/ms178149\(v\=vs.100\)).
+     Standardmäßig wird die Benutzer Steuerelement Datei in der **Quell** Ansicht des Visual Web Developer-Designers angezeigt. In dieser Ansicht können Sie das XML-Markup des Steuerelements bearbeiten. Sie können zur **Entwurfs** Ansicht wechseln, wenn Sie das Steuerelement visuell entwerfen möchten, indem Sie Steuerelemente aus der **Toolbox** ziehen. Siehe [Entwurfs Ansicht, Webseiten-Designer](/previous-versions/aspnet/ms178149\(v\=vs.100\)).
 
 7. Wenn Sie Ereignisse behandeln, die im Steuerelement auftreten, fügen Sie der Codedatei des Benutzersteuerelements Code hinzu.
 

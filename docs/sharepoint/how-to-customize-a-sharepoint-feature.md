@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Anpassen eines SharePoint-Features | Microsoft-Dokumentation'
+description: Passen Sie SharePoint-Funktionen in Visual Studio an. Der Funktions-Designer wird geöffnet, wenn Sie eine neue Funktion in Projektmappen-Explorer oder im SharePoint-Paket-Explorer hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a330f3c4cbe1e410ddc6a1612796c92eeda281b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016897"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903662"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Vorgehensweise: Anpassen einer SharePoint-Funktion
   Sie können SharePoint-Funktionen erstellen und anpassen, indem Sie den Funktions-Designer in Visual Studio verwenden. Beispielsweise können Sie den Funktionsbereich festlegen und weitere Features als Abhängigkeiten hinzufügen. Standardmäßig wird der Funktions-Designer geöffnet, wenn Sie eine neue Funktion in Projektmappen-Explorer oder im SharePoint-Paket-Explorer hinzufügen.
@@ -31,22 +33,22 @@ ms.locfileid: "86016897"
 
 #### <a name="to-open-the-feature-designer"></a>So öffnen Sie den Funktions-Designer
 
-1. Erweitern Sie in **Projektmappen-Explorer**den Knoten **Features**.
+1. Erweitern Sie in **Projektmappen-Explorer** den Knoten **Features**.
 
-2. Doppelklicken Sie auf das *Feature1* -Element, oder öffnen Sie das Kontextmenü für das *Feature1* -Element, und wählen Sie dann **Ansicht-Designer**aus.
+2. Doppelklicken Sie auf das *Feature1* -Element, oder öffnen Sie das Kontextmenü für das *Feature1* -Element, und wählen Sie dann **Ansicht-Designer** aus.
 
 ## <a name="view-the-packaged-manifest-file"></a>Anzeigen der Paket Manifest-Datei
  Sie können den Funktions-Designer verwenden, um die Paket Manifest-Datei für die Funktion (*feature.xml*) zu ändern und zu generieren. Anschließend können Sie den XML-Code für diese Datei in Visual Studio anzeigen.
 
 #### <a name="to-view-the-packaged-manifest-file"></a>So zeigen Sie die Paket Manifest-Datei an
 
-1. Wählen Sie im **Funktions-Designer**die Registerkarte **Manifest** aus.
+1. Wählen Sie im **Funktions-Designer** die Registerkarte **Manifest** aus.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>So zeigen Sie die Paketdatei mit Projektmappen-Explorer an
 
-1. Wählen Sie in **Projektmappen-Explorer**das Symbol **alle Dateien anzeigen** aus.
+1. Wählen Sie in **Projektmappen-Explorer** das Symbol **alle Dateien anzeigen** aus.
 
-2. Erweitern Sie Features, erweitern Sie Featurename, erweitern Sie Featurename. Feature, und öffnen Sie dann die Datei * \<FeatureName>.Template.xml* .
+2. Erweitern Sie Features, erweitern Sie Featurename, erweitern Sie Featurename. Feature, und öffnen Sie dann die Datei *\<FeatureName>.Template.xml* .
 
     > [!NOTE]
     > Wenn Sie die XML-Datei mit den featurevorlagen-Manifesten öffnen, werden die Dateien automatisch überprüft, und die Warnungen, die im Fehlerliste Fenster angezeigt werden, können ignoriert werden.
@@ -56,13 +58,13 @@ ms.locfileid: "86016897"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>So ändern Sie die Manifest-Vorlage mithilfe des XML-Editors
 
-1. Wählen Sie **im Funktions-Designer**die Registerkarte **Manifest** aus, erweitern Sie den Knoten **Bearbeitungs Optionen** , und wählen Sie dann den Link **in XML-Editor öffnen aus** .
+1. Wählen Sie **im Funktions-Designer** die Registerkarte **Manifest** aus, erweitern Sie den Knoten **Bearbeitungs Optionen** , und wählen Sie dann den Link **in XML-Editor öffnen aus** .
 
      Änderungen an der XML-Datei werden in der Paket Manifest-Datei zusammengeführt.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>So ändern Sie die Manifest-Vorlage mithilfe des Bereichs "Manifest-Vorlage"
 
-1. Wählen Sie im **Funktions-Designer**die Registerkarte **Manifest** aus, erweitern Sie den Knoten **Bearbeitungs Optionen** , und ändern Sie dann den XML-Code, der im Bereich Manifest-Vorlage angezeigt wird.
+1. Wählen Sie im **Funktions-Designer** die Registerkarte **Manifest** aus, erweitern Sie den Knoten **Bearbeitungs Optionen** , und ändern Sie dann den XML-Code, der im Bereich Manifest-Vorlage angezeigt wird.
 
      Änderungen an der XML-Datei werden im Bereich " **Vorschau des gepackten Manifests** " angezeigt.
 
@@ -74,7 +76,7 @@ ms.locfileid: "86016897"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>So überschreiben Sie die Datei mit einem Paket, indem Sie den Designer deaktivieren
 
-1. Wählen Sie im **Funktions-Designer**die Registerkarte **Manifest** aus.
+1. Wählen Sie im **Funktions-Designer** die Registerkarte **Manifest** aus.
 
 2. Erweitern Sie den Knoten **Optionen bearbeiten** , wählen Sie **im Link generierten XML-Code überschreiben aus** , und klicken Sie dann auf die Schaltfläche **Ja** .
 
@@ -85,7 +87,7 @@ ms.locfileid: "86016897"
 
 #### <a name="to-re-enable-the-designer"></a>So aktivieren Sie den Designer erneut
 
-1. Wählen Sie im **Funktions-Designer**die **Änderungen auf Manifest verwerfen und den Designer erneut aktivieren** aus, und klicken Sie dann auf die Schaltfläche **Ja** .
+1. Wählen Sie im **Funktions-Designer** die **Änderungen auf Manifest verwerfen und den Designer erneut aktivieren** aus, und klicken Sie dann auf die Schaltfläche **Ja** .
 
 2. Die Vorlage wird mit dem ursprünglichen Text aktualisiert, und alle Änderungen an der XML-Datei gehen verloren.
 

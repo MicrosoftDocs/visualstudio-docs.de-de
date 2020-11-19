@@ -1,6 +1,8 @@
 ---
 title: Anpassen des SharePoint-Lösungs Pakets mithilfe von MSBuild-Zielen
 titleSuffix: ''
+description: Anpassen, wie Visual Studio SharePoint-projektmappenpaketdateien (. wsp) erstellt, indem MSBuild-Ziele an einer Eingabeaufforderung verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585809"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903649"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Zielen
   Mithilfe von MSBuild-Zielen an einer Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien (*. wsp*) erstellt. Beispielsweise können Sie die MSBuild-Eigenschaften anpassen, um das Verpackungs zwischen Verzeichnis und die MSBuild-Elementgruppen zu ändern, die die aufgelisteten Dateien angeben.
@@ -42,9 +44,9 @@ ms.locfileid: "91585809"
 
 2. Benennen Sie die Datei " **CustomLayout. SharePoint. targets**", und speichern Sie Sie im Ordner für das SharePoint-Projekt.
 
-3. Öffnen Sie das Projekt, öffnen Sie das zugehörige Kontextmenü, und wählen Sie dann **Projekt entladen**aus.
+3. Öffnen Sie das Projekt, öffnen Sie das zugehörige Kontextmenü, und wählen Sie dann **Projekt entladen** aus.
 
-4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten** * \<ProjectName> . vbproj* oder **Bearbeiten** * \<ProjectName> . csproj*aus.
+4. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten** *\<ProjectName> . vbproj* oder **Bearbeiten** *\<ProjectName> . csproj* aus.
 
 5. `Import`Fügen Sie nach der Zeile am Ende der Projektdatei die folgende Zeile hinzu.
 
@@ -54,13 +56,13 @@ ms.locfileid: "91585809"
 
 6. Speichere und schließe die Projektdatei.
 
-7. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie dann **Projekt erneut laden**aus.
+7. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie dann **Projekt erneut laden** aus.
 
    Wenn Sie das Projekt veröffentlichen, wird die Meldung vor dem Beginn der Paket Erstellung in der Ausgabe angezeigt.
 
 #### <a name="to-customize-the-afterlayout-target"></a>So passen Sie das AfterLayout-Ziel an
 
-1. Wählen Sie in der Menüleiste **Datei Datei**  >  **Öffnen**aus  >  **File**.
+1. Wählen Sie in der Menüleiste **Datei Datei**  >  **Öffnen** aus  >  **File**.
 
 2. Navigieren Sie im Dialogfeld **Datei öffnen** zum Projektordner, wählen Sie die Datei CustomLayout. Target aus, und klicken Sie dann auf die Schaltfläche **Öffnen** .
 

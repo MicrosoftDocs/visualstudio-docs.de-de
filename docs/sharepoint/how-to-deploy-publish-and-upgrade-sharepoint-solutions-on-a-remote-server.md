@@ -1,6 +1,8 @@
 ---
 title: Remote Bereitstellung, Veröffentlichung & Upgrade von SharePoint-Lösungen
 titleSuffix: ''
+description: Bereitstellen, veröffentlichen und Upgraden von Sandkasten-SharePoint-Lösungen an einem Remote Standort oder einer lokalen SharePoint-Website.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,19 +18,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585783"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903571"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Vorgehensweise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remote Server
   Zusätzlich zur Bereitstellung von SharePoint-Lösungen auf dem lokalen System können Sie Sandbox-SharePoint-Lösungen an Remote Standorten oder auf lokalen SharePoint-Websites veröffentlichen. Beim Remote Publishing Vorgang wird die *wsp* -Datei auf den SharePoint-Server kopiert, die Projekt Mappe installiert und dann die Aktivierung der Lösung ermöglicht. Sie können auch eine Remote Installation einer SharePoint-Lösung aktualisieren, nachdem Änderungen vorgenommen wurden.
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>So veröffentlichen Sie eine Sandkasten-SharePoint-Lösung auf einem SharePoint-Remote Server
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Sandkasten-SharePoint-Projekt, das Sie veröffentlichen möchten, und wählen Sie dann **veröffentlichen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Sandkasten-SharePoint-Projekt, das Sie veröffentlichen möchten, und wählen Sie dann **veröffentlichen** aus.
 
 2. Wählen Sie im Dialogfeld **veröffentlichen** die Options Schaltfläche **auf der SharePoint-Website veröffentlichen** aus, und geben Sie dann eine URL für eine Online Publishing Site ein, z `https://mytestsite.sharepoint.microsoftonline.com` . b.:.
 
@@ -49,13 +51,13 @@ ms.locfileid: "91585783"
 ## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>So aktualisieren Sie eine Sandkasten-SharePoint-Lösung auf einem SharePoint-Remote Server
  Wenn bereits eine Sandkasten-SharePoint-Projekt Mappe auf einem Remote Server veröffentlicht wurde, können Sie mit dem folgenden Verfahren ein Upgrade durchführen, nachdem Sie die Anwendung in geändert haben [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-1. Benennen Sie das SharePoint-Paket in um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Zu diesem Zweck können Sie in **Projektmappen-Explorer** das Paket öffnen. Es wird im **Paket-Explorer**angezeigt.
+1. Benennen Sie das SharePoint-Paket in um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Zu diesem Zweck können Sie in **Projektmappen-Explorer** das Paket öffnen. Es wird im **Paket-Explorer** angezeigt.
 
-2. Ändern Sie im **Paket-Explorer**im Feld **Name** den Namen des Pakets in einen eindeutigen Namen.
+2. Ändern Sie im **Paket-Explorer** im Feld **Name** den Namen des Pakets in einen eindeutigen Namen.
 
 3. Speichern Sie das Projekt.
 
-4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie dann **veröffentlichen**aus.
+4. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie dann **veröffentlichen** aus.
 
 5. Wählen Sie im Dialogfeld **veröffentlichen** die Options Schaltfläche **auf der SharePoint-Website veröffentlichen** aus, und geben Sie dann, wenn die URL für den Remote Server, auf dem die Lösung gespeichert ist, den Wert ein.
 

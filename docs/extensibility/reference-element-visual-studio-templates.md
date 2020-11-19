@@ -1,5 +1,7 @@
 ---
 title: Reference-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das Reference-Element und darüber, wie es den Assemblyverweis angibt, der beim Hinzufügen des Elements zu einem Projekt hinzugefügt wird
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701625"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903766"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference-Element (Visual Studio-Vorlagen)
 Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.
@@ -44,17 +46,17 @@ Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Proje
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Stadtverordneten](../extensibility/assembly-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen eines Verweises auf diese Assembly zu Projekten verwendet wird. Es muss ein- `Assembly` Element in jedem-Element vorhanden sein `Reference` .|
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt Informationen zu einer Assembly an, die von der Vorlage zum Hinzufügen eines Verweises auf diese Assembly zu Projekten verwendet wird. Es muss ein- `Assembly` Element in jedem-Element vorhanden sein `Reference` .|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[Referenzen](../extensibility/references-element-visual-studio-templates.md)|Gruppiert die Assemblyverweise, die von der Vorlage Projekten hinzugefügt werden.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `Reference` ist ein erforderliches untergeordnetes Element von `References`.
 
  Das `Reference` -Element und das- `References` Element können nur in *. vstemplate* -Dateien mit dem- `Type` Attribut Wert verwendet werden `Item` .

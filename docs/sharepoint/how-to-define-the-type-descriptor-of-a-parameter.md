@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Definieren des Typdeskriptors eines Parameters | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie den Typdeskriptor eines Parameters für eine Methode in Ihrem Business Data Connectivity-Modell (BDC) definieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b3ae803576c98a86a45d175af45aa28b3852134
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8044f04902e74b2597d6cf331e54eb4a6138817a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016840"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903597"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Gewusst wie: Definieren des Typdeskriptors für einen Parameter
   Ein Typdeskriptor enthält Eigenschaften, mit denen der Datentyp eines Parameters beschrieben wird. Von einem Typdeskriptor kann ein Feld, eine Entität oder eine Auflistung von Entitäten definiert werden. Weitere Informationen finden Sie unter [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
@@ -29,7 +31,7 @@ ms.locfileid: "86016840"
 
 1. Wählen Sie im Fenster **BDC-Methoden Details** den Typdeskriptor des Parameters aus.
 
-2. Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaften Fenster**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaften Fenster** aus.
 
 3. Legen Sie im **Eigenschaften** Fenster die Eigenschaften des Typdeskriptors fest.
 
@@ -67,11 +69,11 @@ ms.locfileid: "86016840"
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3. Öffnen Sie im Fenster **BDC-Methoden Details** die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **Bearbeiten**aus.
+3. Öffnen Sie im Fenster **BDC-Methoden Details** die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **Bearbeiten** aus.
 
      Das **BDC-Explorer** -Fenster wird geöffnet.
 
-4. Öffnen Sie im **BDC-Explorer**das Kontextmenü des Typdeskriptors, und wählen Sie dann **Typdeskriptor hinzufügen**aus.
+4. Öffnen Sie im **BDC-Explorer** das Kontextmenü des Typdeskriptors, und wählen Sie dann **Typdeskriptor hinzufügen** aus.
 
      Dem Entitätstypdeskriptor wird ein neuer Typdeskriptor als untergeordnetes Element hinzugefügt. Konfigurieren Sie diesen Typdeskriptor als Feld.
 
@@ -81,11 +83,11 @@ ms.locfileid: "86016840"
 
 1. Wählen Sie im Fenster **BDC-Methoden Details** den Typdeskriptor des gewünschten Parameters aus.
 
-2. Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaften Fenster**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaften Fenster** aus.
 
 3. Legen Sie im Fenster **Eigenschaften** die **Name** -Eigenschaft auf einen Namen fest, der die Entität beschreibt (z. b. **Kontakte**).
 
-4. Legen Sie die **IsCollection** -Eigenschaft auf **true**fest. Dadurch wird angegeben, dass es sich bei diesem Typdeskriptor um eine Auflistung von Entitäten handelt.
+4. Legen Sie die **IsCollection** -Eigenschaft auf **true** fest. Dadurch wird angegeben, dass es sich bei diesem Typdeskriptor um eine Auflistung von Entitäten handelt.
 
 5. Legen Sie die Eigenschaft **tykame** auf eine Zeichenfolge fest, die einen Verweis auf die <xref:System.Collections.Generic.IEnumerable%601> -Schnittstelle enthält, und auf den voll qualifizierten Namen des Typs, der die Entität darstellt. Bei diesem Typ kann es sich um eine Klasse im Projekt, um einen im BDC-Objektmodell definierten Typ oder um einen Typ handeln, der in einer Assembly definiert ist, auf die in der Lösung verwiesen wird.
 
@@ -109,11 +111,11 @@ ms.locfileid: "86016840"
 
       `System.Collections.Generic.IEnumerable`1 [Microsoft. businessdata. Runtime. dynamictype] '
 
-6. Öffnen Sie im Fenster **BDC-Methoden Details** die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **Bearbeiten**aus.
+6. Öffnen Sie im Fenster **BDC-Methoden Details** die Liste, die für den Typdeskriptor angezeigt wird, und wählen Sie dann **Bearbeiten** aus.
 
     Das **BDC-Explorer** -Fenster wird geöffnet.
 
-7. Öffnen Sie im **BDC-Explorer**das Kontextmenü des Typdeskriptors, und wählen Sie dann **Typdeskriptor hinzufügen**aus.
+7. Öffnen Sie im **BDC-Explorer** das Kontextmenü des Typdeskriptors, und wählen Sie dann **Typdeskriptor hinzufügen** aus.
 
     Dem Auflistungstypdeskriptor wird ein neuer Typdeskriptor als untergeordnetes Element hinzugefügt. Konfigurieren Sie diesen Typdeskriptor als Entität.
 

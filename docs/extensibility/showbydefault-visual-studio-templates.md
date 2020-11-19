@@ -1,5 +1,7 @@
 ---
 title: ShowByDefault-Element (Visual Studio-Vorlagen)
+description: Erfahren Sie mehr über das ShowByDefault-Element und darüber, wie es, wenn es auf false festgelegt ist, angibt, dass die Vorlage nur unter der angegebenen TemplateGroupID angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700097"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903974"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault-Element (Visual Studio-Vorlagen)
 `false`Gibt an, dass die Vorlage nur unter der angegebenen [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)angezeigt wird.
@@ -53,7 +55,7 @@ ms.locfileid: "80700097"
 
  Der Text muss entweder `true` oder `false` sein. Gibt bei TRUE an, dass die Vorlage für alle Projekttypen angezeigt wird. Bei FALS wird die Vorlage nur unter der angegebenen `TemplateGroupID` angezeigt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `ShowByDefault` ist ein optionales Element. Standardwert: `true`.
 
 ## <a name="example"></a>Beispiel

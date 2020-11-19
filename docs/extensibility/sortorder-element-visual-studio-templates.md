@@ -1,5 +1,7 @@
 ---
 title: Sortor der-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das sortor der-Element und darüber, wie es einen Wert angibt, der zum Anordnen der Vorlage verwendet wird, wie Sie im Dialogfeld Neues Projekt oder neues Element hinzufügen angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699953"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903753"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder-Element (Visual Studio-Vorlagen)
 Gibt einen Wert an, der verwendet wird, um die Vorlage neben anderen Vorlagen in derselben Kategorie anzuordnen, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
@@ -53,7 +55,7 @@ Gibt einen Wert an, der verwendet wird, um die Vorlage neben anderen Vorlagen in
 
  Ein `integer` , das den Sortierreihen folgen Wert darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `SortOrder` ist ein optionales Element. Der Standardwert ist 100, und alle Werte müssen ein Vielfaches von 10 sein.
 
  Das- `SortOrder` Element wird für vom Benutzer erstellte Vorlagen ignoriert. Alle vom Benutzer erstellten Vorlagen sind alphabetisch sortiert.
