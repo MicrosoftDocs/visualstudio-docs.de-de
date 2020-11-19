@@ -39,7 +39,7 @@ Die unterstützten Konfigurationen und Plattformen für Tests der codierten UI f
 | .NET | .NET 2.0, 3.0, 3.5, 4 und 4.5. **Hinweis:** [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] und Visual Studio setzen .NET 4 voraus. Mit den aufgeführten .NET-Versionen entwickelte Anwendungen werden jedoch unterstützt. |
 
 > [!NOTE]
-> Die*Benutzeroberflächensynchronisierung* ist eine Funktion, bei der die Wiedergabe in die Nachrichtenwarteschlange jedes Steuerelements überprüft wird. Wenn ein Steuerelement nicht auf das Ereignis reagierte, das an es gesendet wurde, wird das Ereignis erneut gesendet.
+> Die *Benutzeroberflächensynchronisierung* ist eine Funktion, bei der die Wiedergabe in die Nachrichtenwarteschlange jedes Steuerelements überprüft wird. Wenn ein Steuerelement nicht auf das Ereignis reagierte, das an es gesendet wurde, wird das Ereignis erneut gesendet.
 
 ## <a name="platform-support"></a>Plattformunterstützung
 
