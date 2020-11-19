@@ -49,7 +49,7 @@ ms.locfileid: "94903701"
 
      Ein Beispiel finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 - [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [How to: Erstellen eines SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
 - [Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
