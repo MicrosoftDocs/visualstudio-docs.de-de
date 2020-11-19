@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Erfahren Sie mehr über das Einrichten der Diagnose für das Debuggen von Azure-Clouddiensten und virtuellen Azure-Computern (VMs) in Visual Studio.
 author: ghogen
 manager: jillfra
-ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 55a0f96959d0e3e8bbc70c458ab99bbc06b06a62
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ababbbfcfa71f3083a292103f4fa4f1ba481faae
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809845"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902610"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -78,7 +77,7 @@ In Visual Studio können Sie Diagnosedaten für Rollen sammeln, die in Azure aus
 
     ![Dialogfeld "Speicherkonto"](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * Wenn Sie **Microsoft Azure-Speicheremulator**auswählen, wird die Verbindungs Zeichenfolge auf festgelegt `UseDevelopmentStorage=true` .
+   * Wenn Sie **Microsoft Azure-Speicheremulator** auswählen, wird die Verbindungs Zeichenfolge auf festgelegt `UseDevelopmentStorage=true` .
    * Wenn Sie **Ihr Abonnement** auswählen, können Sie das Azure-Abonnement auswählen, das Sie verwenden möchten, und einen Kontonamen angeben. Klicken Sie auf **Konten verwalten**, um Ihre Azure-Abonnements zu verwalten.
    * Wenn Sie **Manuell eingegebene Anmeldeinformationen** auswählen, geben Sie den Namen und den Schlüssel des Azure-Kontos ein, das Sie verwenden möchten.
 5. Klicken Sie auf **Konfigurieren**, um das Dialogfeld **Diagnosekonfiguration** anzuzeigen. Jede Registerkarte (mit Ausnahme von **Allgemein** und **Protokollverzeichnisse**) stellt eine Diagnosedatenquelle dar, die Sie sammeln können. Die Standardregisterkarte **Allgemein** enthält die folgenden Optionen für die Diagnosedatensammlung: **Nur Fehler**, **Alle Informationen** und **Benutzerdefinierter Plan**. Die Standardoption **Nur Fehler** verwendet am wenigsten Speicherplatz, da keine Warnungen oder Ablaufverfolgungsmeldungen übertragen werden. Die Option **Alle Informationen** überträgt die meisten Informationen, verwendet den meisten Speicher und ist daher die teuerste Option.
@@ -145,7 +144,7 @@ Aktivieren Sie das Kontrollkästchen **Übertragung von Windows-Ereignisprotokol
 
 ![Ereignisprotokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
-Wenn Sie Azure SDK 2,6 oder höher verwenden und eine benutzerdefinierte Datenquelle angeben möchten, geben Sie Sie in das **\<Data source name\>** Textfeld ein, und wählen Sie dann **Hinzufügen**aus. Die Datenquelle wird der Datei "diagnostics.cfcfg" hinzugefügt.
+Wenn Sie Azure SDK 2,6 oder höher verwenden und eine benutzerdefinierte Datenquelle angeben möchten, geben Sie Sie in das **\<Data source name\>** Textfeld ein, und wählen Sie dann **Hinzufügen** aus. Die Datenquelle wird der Datei "diagnostics.cfcfg" hinzugefügt.
 
 Wenn Sie Azure SDK 2.5 verwenden und eine benutzerdefinierte Datenquelle angeben möchten, können Sie diese wie im folgenden Beispiel dargestellt dem Abschnitt `WindowsEventLog` der Datei „diagnostics.wadcfgx“ hinzufügen:
 

@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Ausführen eines SharePoint-Befehls | Microsoft-Dokumentation'
+description: Weitere Informationen finden Sie unter Erstellen eines benutzerdefinierten SharePoint-Befehls zum Abrufen der Server Objektmodell-API aus einer SharePoint-Tools-Erweiterung.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 789b77f3161b5fe566ea033060e8cab16cbaecc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016981"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903534"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Vorgehensweise: Ausführen eines SharePoint-Befehls
   Wenn Sie das Server Objektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie einen benutzerdefinierten *SharePoint-Befehl* erstellen, um die API aufzurufen. Nachdem Sie den Befehl definiert und mit der Erweiterung der SharePoint-Tools bereitgestellt haben, kann die Erweiterung den Befehl ausführen, um das SharePoint-Server Objektmodell aufzurufen. Verwenden Sie zum Ausführen des Befehls eine der ExecuteCommand-Methoden eines- <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> Objekts.
@@ -32,7 +34,7 @@ ms.locfileid: "86016981"
 
          Weitere Informationen zu Projekt Systemerweiterungen finden Sie unter [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md).
 
-    - Verwenden Sie in einer Erweiterung des **SharePoint-Verbindungs** Knotens in **Server-Explorer**die- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> Eigenschaft. Verwenden Sie die-Eigenschaft, um ein-Objekt zu erhalten <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> .
+    - Verwenden Sie in einer Erweiterung des **SharePoint-Verbindungs** Knotens in **Server-Explorer** die- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> Eigenschaft. Verwenden Sie die-Eigenschaft, um ein-Objekt zu erhalten <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> .
 
          Weitere Informationen zu **Server-Explorer** Erweiterungen finden Sie unter [Erweitern des SharePoint-Verbindungs Knotens in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
@@ -65,7 +67,7 @@ ms.locfileid: "86016981"
 
 - Der zweite Parameter ist der Wert, den Sie an den benutzerdefinierten zweiten Parameter des Befehls übergeben möchten. In diesem Fall handelt es sich um den vollständigen Pfad der *wsp* -Datei, die auf die SharePoint-Website aktualisiert wird.
 
-- Der Code übergibt nicht den impliziten <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> Parameter an den Befehl. Dieser Parameter wird automatisch an den Befehl übergeben, wenn Sie den Befehl aus einer Erweiterung des SharePoint-Projekt Systems oder einer Erweiterung des **SharePoint-Verbindungs** Knotens in **Server-Explorer**aufrufen. In anderen Arten von Projektmappen, wie z. b. in einem Projektvorlagen-Assistenten, der die- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle implementiert, ist dieser Parameter **null**.
+- Der Code übergibt nicht den impliziten <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> Parameter an den Befehl. Dieser Parameter wird automatisch an den Befehl übergeben, wenn Sie den Befehl aus einer Erweiterung des SharePoint-Projekt Systems oder einer Erweiterung des **SharePoint-Verbindungs** Knotens in **Server-Explorer** aufrufen. In anderen Arten von Projektmappen, wie z. b. in einem Projektvorlagen-Assistenten, der die- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle implementiert, ist dieser Parameter **null**.
 
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  Dieses Beispiel erfordert einen Verweis auf die Microsoft. VisualStudio. SharePoint-Assembly.

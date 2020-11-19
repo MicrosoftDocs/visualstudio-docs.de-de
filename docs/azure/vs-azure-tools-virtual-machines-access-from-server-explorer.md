@@ -3,17 +3,16 @@ title: Zugreifen auf virtuelle Azure-Computer über den Server-Explorer | Micros
 description: In diesem Artikel erhalten Sie einen Überblick darüber, wie virtuelle Azure-Computer im Server-Explorer von Visual Studio angezeigt, erstellt und verwaltet werden können.
 author: ghogen
 manager: jillfra
-assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a9ca956400956ae337d8d1e0f5a881f1dc4c6377
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 653a9be556441f5f8d5fc1c1053b144dc97dd3b2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398552"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901869"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Zugreifen auf virtuelle Computer in Azure über den Server-Explorer
 
@@ -23,7 +22,7 @@ Wenn Sie in Azure gehostete virtuelle Computer verwenden, können Sie über den 
 
     Die folgende Tabelle zeigt, welche Eigenschaften verfügbar sind – diese jedoch alle schreibgeschützt. Sie können sie über das [Azure-Portal](https://portal.azure.com) ändern.
 
-   | Eigenschaft | Beschreibung |
+   | Eigenschaft | BESCHREIBUNG |
    | --- | --- |
    | DNS-Name |Die URL mit der Internetadresse des virtuellen Computers. |
    | Environment |Für einen virtuellen Computer lautet der Wert dieser Eigenschaft immer "Produktion". |
@@ -34,7 +33,7 @@ Wenn Sie in Azure gehostete virtuelle Computer verwenden, können Sie über den 
 2. Wählen Sie einen Endpunktknoten aus, und zeigen Sie dann das Fenster **Eigenschaften** an.
 3. Die folgende Tabelle beschreibt die verfügbaren Endpunkteigenschaften. Alle Eigenschaften sind schreibgeschützt. Verwenden Sie zum Hinzufügen oder Bearbeiten der Endpunkte für einen virtuellen Computer das [Azure-Portal](https://portal.azure.com).
 
-   | Eigenschaft | Beschreibung |
+   | Eigenschaft | BESCHREIBUNG |
    | --- | --- |
    | Name |Ein Bezeichner für den Endpunkt. |
    | Privater Port |Der Port für den internen Netzwerkzugriff auf Ihre Anwendung. |

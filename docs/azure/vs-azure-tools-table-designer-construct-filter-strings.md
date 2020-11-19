@@ -3,28 +3,27 @@ title: Erstellen von Filterzeichenfolgen für den Tabellen-Designer | Microsoft 
 description: Erstellen von Filterzeichenfolgen für den Tabellen-Designer
 author: ghogen
 manager: jillfra
-assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 30e9a347be1a3b35e69d2c72d141873c62dcdeb3
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398604"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901920"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Erstellen von Filterzeichenfolgen für den Tabellen-Designer
 ## <a name="overview"></a>Übersicht
 Wenn Sie Daten in einer Azure-Tabelle filtern möchten, die im **Tabellen-Designer** von Visual Studio angezeigt wird, müssen Sie eine Filterzeichenfolge erstellen und in das Filterfeld eingeben. Die Syntax der Filterzeichenfolge wird von den WCF Data Services definiert und ist mit einer SQL WHERE-Klausel vergleichbar. Sie wird jedoch über eine HTTP-Anforderung an den Tabellenspeicherdienst gesendet. Der **Tabellen-Designer** nimmt die erforderliche Codierung vor, sodass Sie zum Filtern nach einem gewünschten Eigenschaftswert nur den Eigenschaftennamen, den Vergleichsoperator, den Kriterienwert und optional einen booleschen Operator im Filterfeld eingeben müssen. Die $filter-Abfrageoption muss nicht eingeschlossen werden, wie es beim Erstellen einer URL zur Tabellenabfrage über die [Referenz zur REST-API der Speicherdienste](/rest/api/storageservices/) notwendig wäre.
 
-Die WCF Data Services basieren auf dem [Open Data Protocol](https://www.odata.org/) (OData). Einzelheiten zur Filtersystemabfrage-Option ( **$filter** ) finden Sie in der [Spezifikation zu OData URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+Die WCF Data Services basieren auf dem [Open Data Protocol](https://www.odata.org/) (OData). Einzelheiten zur Filtersystemabfrage-Option (**$filter**) finden Sie in der [Spezifikation zu OData URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Vergleichsoperatoren
 Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstützt:
 
-| Logischer Operator | Beschreibung | Filterzeichenfolge (Beispiel) |
+| Logischer Operator | BESCHREIBUNG | Filterzeichenfolge (Beispiel) |
 | --- | --- | --- |
 | eq |Gleich |Ort eq 'Redmond' |
 | gt |Größer als |Preis gt 20 |
@@ -45,7 +44,7 @@ Wenn Sie eine Filterzeichenfolge erstellen, sind die folgenden Regeln wichtig:
 ## <a name="filtering-on-string-properties"></a>Filtern nach Zeichenfolgeneigenschaften
 Wenn Sie nach Zeichenfolgeneigenschaften filtern, schließen Sie die Zeichenfolgenkonstante in einfache Anführungszeichen ein.
 
-Im folgenden Beispiel wird nach der **PartitionKey** -Eigenschaft und der **RowKey** -Eigenschaft gefiltert. Zusätzliche nicht schlüsselbezogene Eigenschaften können auch der Filterzeichenfolge hinzugefügt werden:
+Im folgenden Beispiel wird nach der **PartitionKey**-Eigenschaft und der **RowKey**-Eigenschaft gefiltert. Zusätzliche nicht schlüsselbezogene Eigenschaften können auch der Filterzeichenfolge hinzugefügt werden:
 
 ```
 PartitionKey eq 'Partition1' and RowKey eq '00001'

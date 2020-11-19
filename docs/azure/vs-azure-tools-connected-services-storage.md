@@ -3,18 +3,17 @@ title: Hinzufügen von Azure Storage mithilfe von verbundenen Diensten | Microso
 description: Fügen Sie eine Azure Storage Dienst Abhängigkeit zu Ihrer APP hinzu, indem Sie Visual Studio verbundene Dienste
 author: ghogen
 manager: jillfra
-assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800514"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902635"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Hinzufügen von Azure-Speicher mithilfe von verbundenen Visual Studio-Diensten
 
@@ -45,7 +44,7 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
 1. Öffnen Sie Ihr Projekt in Visual Studio.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen** aus.
 
     ![Verbundenen Azure-Dienst hinzufügen](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
@@ -76,15 +75,15 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
 1. Öffnen Sie Ihr Projekt in Visual Studio.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **verbundene Dienste** , und wählen Sie im Kontextmenü die Option **verbundenen Dienst hinzufügen** aus.
 
     ![Verbundenen Azure-Dienst hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
-1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten**aus.
+1. Wählen Sie auf der Registerkarte **verbundene Dienste** das Symbol + für **Dienst Abhängigkeiten** aus.
 
     ![Dienst Abhängigkeit hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure Storage**aus.
+1. Wählen Sie auf der Seite **Abhängigkeit hinzufügen** die Option **Azure Storage** aus.
 
     ![Azure Storage hinzufügen](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
 
@@ -110,7 +109,7 @@ Mit der Funktion für verbundene Dienste werden die benötigten Verweise und der
 
    ![Verbindungs Zeichenfolge angeben](./media/vs-azure-tools-connected-services-storage/vs-2019/connection-string.png)
 
-1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig**stellen.
+1. Der Bildschirm **Zusammenfassung der Änderungen** zeigt alle Änderungen an, die an Ihrem Projekt vorgenommen werden, wenn Sie den Prozess Fertigstellen. Wenn die Änderungen OK aussehen, klicken Sie auf **Fertig** stellen.
 
    ![Zusammenfassung der Änderungen](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
 

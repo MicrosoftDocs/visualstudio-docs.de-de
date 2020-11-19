@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Einschließen einer benutzerdefinierten Assembly in eine BDC-Funktion | Microsoft-Dokumentation'
+description: Fügen Sie benutzerdefinierte Assemblys in eine Business Data Connectivity (BDC)-Funktion ein, damit Ihr Projekt auf Assemblys aus anderen Projekten in derselben Projekt Mappe verweisen kann.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740070"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903467"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Vorgehensweise: Einschließen einer benutzerdefinierten Assembly in eine BDC-Funktion
   Das Projekt kann auf Assemblys aus anderen Projekten in derselben Projekt Mappe verweisen. Allerdings müssen Sie diese Assemblys mithilfe des Dialog Felds referenzierte Assemblys **auf lobsystems zuweisen** der Featuredatei des Projekts hinzufügen.
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>So fügen Sie eine benutzerdefinierte Assembly in ein Business Data Connectivity (BDC)-Feature ein
 
-1. Wählen Sie in **Projektmappen-Explorer**den Ordner aus, der das BDC-Modell enthält.
+1. Wählen Sie in **Projektmappen-Explorer** den Ordner aus, der das BDC-Modell enthält.
 
 2. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 

@@ -1,5 +1,7 @@
 ---
 title: VSTemplate-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das VSTemplate-Element und darüber, wie es alle Metadaten zur Projektvorlage, Element Vorlage oder Starter Kit enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 973e2ede7e97d1e7710e6571d520be3d8919b9d9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697869"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903480"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate-Element (Visual Studio-Vorlagen)
 Enthält alle Metadaten über die Projektvorlage, die Element Vorlage oder Starter Kit.
@@ -55,7 +57,7 @@ Enthält alle Metadaten über die Projektvorlage, die Element Vorlage oder Start
 ### <a name="parent-elements"></a>Übergeordnete Elemente
  Keine.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Das- `VSTemplate` Element ist das Stamm Element von *. vstemplate* -Dateien.
 
 ## <a name="example"></a>Beispiel

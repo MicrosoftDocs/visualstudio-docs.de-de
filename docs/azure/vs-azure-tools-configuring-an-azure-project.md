@@ -3,24 +3,23 @@ title: Konfigurieren eines Azure-Clouddienstprojekts
 description: In diesem Artikel erfahren Sie, wie Sie ein Azure-Clouddienstprojekt abhängig von den Anforderungen für dieses Projekt in Visual Studio konfigurieren.
 author: ghogen
 manager: jillfra
-assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 388cd20468624c6441342267f6545dfaf0e21901
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: dbf8d1ce8e668adb5fbab61178fafa980fd56298
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399145"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902532"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurieren eines Azure-Clouddienstprojekts mit Visual Studio
 Sie können ein Azure-Clouddienstprojekt abhängig von den Anforderungen für dieses Projekt konfigurieren. Sie können für die folgenden Kategorien Eigenschaften für das Projekt festlegen:
 
-- **Veröffentlichen eines Clouddiensts in Azure** : Sie können eine Eigenschaft festlegen, um sicherzustellen, dass ein bereits in Azure bereitgestellter Clouddienst nicht versehentlich gelöscht wird.
+- **Veröffentlichen eines Clouddiensts in Azure**: Sie können eine Eigenschaft festlegen, um sicherzustellen, dass ein bereits in Azure bereitgestellter Clouddienst nicht versehentlich gelöscht wird.
 - **Ausführen oder Debuggen eines clouddiensts auf dem lokalen Computer** : Sie können eine zu verwendende Dienst Konfiguration auswählen und angeben, ob der Azure Storage Emulator gestartet werden soll.
-- **Überprüfen eines Clouddienstpakets bei der Erstellung** : Sie können festlegen, dass alle Warnungen als Fehler behandelt werden, um zu gewährleisten, dass sich das Clouddienstpaket ohne Probleme bereitstellen lässt.
+- **Überprüfen eines Clouddienstpakets bei der Erstellung**: Sie können festlegen, dass alle Warnungen als Fehler behandelt werden, um zu gewährleisten, dass sich das Clouddienstpaket ohne Probleme bereitstellen lässt.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Schritte zum Konfigurieren eines Azure-Clouddienstprojekts
 1. Öffnen oder Erstellen eines Clouddienstprojekts in Visual Studio

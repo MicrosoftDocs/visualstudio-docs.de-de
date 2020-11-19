@@ -4,17 +4,16 @@ description: Erhalten Sie Informationen zum Veröffentlichen für Entwicklungs- 
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 0fafcd0042fce6d3f9eece8e493ee01a9a6923e5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407587"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902142"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Veröffentlichung in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts
 
@@ -38,7 +37,7 @@ Sie können die Veröffentlichungsskripts für einen virtuellen Computer generie
 
 ## <a name="scripts-that-visual-studio-generates"></a>Von Visual Studio generierte Skripts
 
-Visual Studio generiert einen Ordner auf Projektebene namens **PublishScripts** , der zwei Windows PowerShell-Dateien enthält – ein Veröffentlichungsskript für Ihren virtuellen Computer oder die Website und ein Modul, das Funktionen enthält, die Sie in den Skripts verwenden können. Visual Studio generiert außerdem eine Datei im JSON-Format, die die Details des von Ihnen bereitgestellten Projekts angibt.
+Visual Studio generiert einen Ordner auf Projektebene namens **PublishScripts**, der zwei Windows PowerShell-Dateien enthält – ein Veröffentlichungsskript für Ihren virtuellen Computer oder die Website und ein Modul, das Funktionen enthält, die Sie in den Skripts verwenden können. Visual Studio generiert außerdem eine Datei im JSON-Format, die die Details des von Ihnen bereitgestellten Projekts angibt.
 
 ### <a name="windows-powershell-publish-script"></a>Windows PowerShell-Veröffentlichungsskript
 
@@ -171,15 +170,15 @@ Wenn Sie noch nie zuvor ein Windows PowerShell-Skript ausgeführt haben, müssen
 
     Geben Sie Ihren Benutzernamen und Ihr Kennwort ein, wenn Sie dazu aufgefordert werden.
 
-    Beachten Sie, dass diese Methode für die Bereitstellung von Azure-Anmeldeinformationen bei einer Automatisierung des Skripts nicht funktioniert. Stattdessen sollten Sie die `.publishsettings`-Datei zum Bereitstellen von Anmeldeinformationen verwenden. Sie verwenden den Befehl **Get-AzurePublishSettingsFile** einmalig zum Herunterladen der Datei aus Azure. Danach verwenden Sie **Import-AzurePublishSettingsFile** , um die Datei zu importieren. Ausführliche Anweisungen finden Sie unter [Installieren und Konfigurieren von Azure PowerShell](/powershell/azure/overview).
+    Beachten Sie, dass diese Methode für die Bereitstellung von Azure-Anmeldeinformationen bei einer Automatisierung des Skripts nicht funktioniert. Stattdessen sollten Sie die `.publishsettings`-Datei zum Bereitstellen von Anmeldeinformationen verwenden. Sie verwenden den Befehl **Get-AzurePublishSettingsFile** einmalig zum Herunterladen der Datei aus Azure. Danach verwenden Sie **Import-AzurePublishSettingsFile**, um die Datei zu importieren. Ausführliche Anweisungen finden Sie unter [Installieren und Konfigurieren von Azure PowerShell](/powershell/azure/overview).
 
-1. (Optional:) Wenn Sie Azure-Ressourcen (z.B. virtuelle Computer, Datenbanken und Websites) erstellen möchten, ohne Ihre Webanwendung zu veröffentlichen, verwenden Sie den Befehl **Publish-WebApplication.ps1** mit dem Argument **-Configuration** , das auf die JSON-Konfigurationsdatei festgelegt ist. Diese Befehlszeile verwendet die JSON-Konfigurationsdatei, um zu ermitteln, welche Ressourcen erstellt werden sollen. Da sie die Standardeinstellungen für andere Befehlszeilenargumente verwendet, werden die Ressourcen erstellt, Ihre Webanwendung wird jedoch nicht veröffentlicht. Die Option "–Verbose" stellt weitere Informationen zu den Vorgängen zur Verfügung.
+1. (Optional:) Wenn Sie Azure-Ressourcen (z.B. virtuelle Computer, Datenbanken und Websites) erstellen möchten, ohne Ihre Webanwendung zu veröffentlichen, verwenden Sie den Befehl **Publish-WebApplication.ps1** mit dem Argument **-Configuration**, das auf die JSON-Konfigurationsdatei festgelegt ist. Diese Befehlszeile verwendet die JSON-Konfigurationsdatei, um zu ermitteln, welche Ressourcen erstellt werden sollen. Da sie die Standardeinstellungen für andere Befehlszeilenargumente verwendet, werden die Ressourcen erstellt, Ihre Webanwendung wird jedoch nicht veröffentlicht. Die Option "–Verbose" stellt weitere Informationen zu den Vorgängen zur Verfügung.
 
     ```powershell
     Publish-WebApplication.ps1 -Verbose –Configuration C:\Path\WebProject-WAWS-dev.json
     ```
 
-1. Verwenden Sie den Befehl **Publish-WebApplication.ps1** wie in einem der folgenden Beispiele gezeigt, um das Skript aufzurufen und Ihre Webanwendung zu veröffentlichen. Wenn Sie die Standardeinstellungen für andere Argumente (z.B. den Abonnementnamen, den Namen des Veröffentlichungspakets, die Anmeldeinformationen des virtuellen Computers oder die Anmeldeinformationen des Datenbankservers) außer Kraft setzen müssen, können Sie diese Parameter angeben. Verwenden Sie die Option **-Verbose** , um weitere Informationen zum Verlauf des Veröffentlichungsvorgangs anzuzeigen.
+1. Verwenden Sie den Befehl **Publish-WebApplication.ps1** wie in einem der folgenden Beispiele gezeigt, um das Skript aufzurufen und Ihre Webanwendung zu veröffentlichen. Wenn Sie die Standardeinstellungen für andere Argumente (z.B. den Abonnementnamen, den Namen des Veröffentlichungspakets, die Anmeldeinformationen des virtuellen Computers oder die Anmeldeinformationen des Datenbankservers) außer Kraft setzen müssen, können Sie diese Parameter angeben. Verwenden Sie die Option **-Verbose**, um weitere Informationen zum Verlauf des Veröffentlichungsvorgangs anzuzeigen.
 
     ```powershell
     Publish-WebApplication.ps1 –Configuration C:\Path\WebProject-WAWS-dev-json `
@@ -242,7 +241,7 @@ Wenn Sie den Buildvorgang Ihres Projekts automatisieren möchten, fügen Sie Cod
     }
     ```
 
-1. Ersetzen Sie `New-WebDeployPackage` durch den folgenden Code, und ersetzen Sie die Platzhalter in der Zeile, mit der `$msbuildCmd` erstellt wird. Dieser Code ist für Visual Studio 2019. Wenn Sie Visual Studio 2017 verwenden, ändern Sie die **VisualStudioVersion** -Eigenschaft in `15.0` (bei Visual Studio 2015 in 14.0 und bei Visual Studio 2013 in `12.0`).
+1. Ersetzen Sie `New-WebDeployPackage` durch den folgenden Code, und ersetzen Sie die Platzhalter in der Zeile, mit der `$msbuildCmd` erstellt wird. Dieser Code ist für Visual Studio 2019. Wenn Sie Visual Studio 2017 verwenden, ändern Sie die **VisualStudioVersion**-Eigenschaft in `15.0` (bei Visual Studio 2015 in 14.0 und bei Visual Studio 2013 in `12.0`).
 
     ```powershell
     function New-WebDeployPackage
@@ -322,7 +321,7 @@ Wenn Sie Hilfe zu Funktionen abrufen möchten, können Sie an der Windows PowerS
 | Find-AzureVM |Ruft den angegebenen virtuellen Azure-Computer ab. |
 | Format-DevTestMessageWithTime |Stellt einer Meldung das Datum und die Uhrzeit voran. Diese Funktion bezieht sich auf Meldungen, die in die Datenströme vom Typ "Fehler" und "Ausführlich" geschrieben werden. |
 | Get-AzureSQLDatabaseConnectionString |Stellt eine Verbindungszeichenfolge zum Herstellen einer Verbindung mit einer Azure SQL-Datenbank zusammen. |
-| Get-AzureVMStorage |Gibt den Namen des ersten Speicher Kontos mit dem Namensmuster "devtest" (ohne Beachtung der *Groß-/Kleinschreibung) am angegebenen Speicherort oder in der affinitätsgruppe zurück. Wenn das Speicherkonto "devtest* " nicht mit dem Speicherort oder der affinitätsgruppe identisch ist, wird es von der Funktion ignoriert. Geben Sie einen Speicherort oder eine Affinitätsgruppe an. |
+| Get-AzureVMStorage |Gibt den Namen des ersten Speicher Kontos mit dem Namensmuster "devtest" (ohne Beachtung der *Groß-/Kleinschreibung) am angegebenen Speicherort oder in der affinitätsgruppe zurück. Wenn das Speicherkonto "devtest*" nicht mit dem Speicherort oder der affinitätsgruppe identisch ist, wird es von der Funktion ignoriert. Geben Sie einen Speicherort oder eine Affinitätsgruppe an. |
 | Get-MSDeployCmd |Gibt einen Befehl zum Ausführen des Tools "MsDeploy.exe" zurück. |
 | New-AzureVMEnvironment |Sucht oder erstellt einen virtuellen Computer im Abonnement, das mit den Werten in der JSON-Konfigurationsdatei übereinstimmt. |
 | Publish-WebPackage |Verwendet "MsDeploy.exe" und eine Webveröffentlichungspaket-ZIP-Datei zum Bereitstellen von Ressourcen für eine Website. Diese Funktion generiert keine Ausgabe. Wenn beim Aufruf von "MSDeploy.exe" ein Fehler auftritt, löst die Funktion eine Ausnahme aus. Verwenden Sie die Option **-Verbose** , wenn Sie eine ausführlichere Ausgabe wünschen. |
@@ -334,7 +333,7 @@ Wenn Sie Hilfe zu Funktionen abrufen möchten, können Sie an der Windows PowerS
 | Test-HttpsUrl |Konvertiert die Eingabe-URL in ein System.Uri-Objekt. Gibt `$True` zurück, wenn die URL absolut ist und ein https-Schema verwendet. Gibt `$false` zurück, wenn die URL relativ ist und nicht das HTTPS-Schema verwendet oder die Eingabezeichenfolge nicht in eine URL konvertiert werden kann. |
 | Test-Member |Gibt `$true` zurück, wenn eine Eigenschaft oder Methode ein Element des Objekts ist. Andernfalls wird `$false`zurückgegeben. |
 | Write-ErrorWithTime |Schreibt eine Fehlermeldung, der die aktuelle Uhrzeit als Präfix vorangestellt ist. Diese Funktion ruft die Funktion **Format-DevTestMessageWithTime** auf, um die Uhrzeit voranzustellen, bevor die Meldung in den Fehlerdatenstrom geschrieben wird. |
-| Write-HostWithTime |Schreibt eine Fehlermeldung in das Hostprogramm ( **Write-Host** ), der die aktuelle Uhrzeit als Präfix vorangestellt ist. Die Auswirkungen des Schreibens in das Hostprogramm sind unterschiedlich. Die meisten Programme, die Windows PowerShell hosten, schreiben diese Meldungen in die Standardausgabe. |
+| Write-HostWithTime |Schreibt eine Fehlermeldung in das Hostprogramm (**Write-Host**), der die aktuelle Uhrzeit als Präfix vorangestellt ist. Die Auswirkungen des Schreibens in das Hostprogramm sind unterschiedlich. Die meisten Programme, die Windows PowerShell hosten, schreiben diese Meldungen in die Standardausgabe. |
 | Write-VerboseWithTime |Schreibt eine ausführliche Fehlermeldung, der die aktuelle Uhrzeit als Präfix vorangestellt ist. Da **Write-Verbose** aufgerufen wird, wird die Meldung nur angezeigt, wenn das Skript mit dem Parameter **Verbose** ausgeführt wird oder die Einstellung **VerbosePreference** auf **Continue** festgelegt ist. |
 
 **Publish-WebApplication**

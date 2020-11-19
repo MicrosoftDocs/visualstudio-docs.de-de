@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Erweitern eines SharePoint-Knotens in Server-Explorer | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie einen SharePoint-Knoten in Server-Explorer mithilfe des SharePoint-Verbindungs Knotens erweitern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad90701d19f97036ecba55bb2901739ad30b200
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015023"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903545"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Vorgehensweise: Erweitern eines SharePoint-Knotens in Server-Explorer
-  Knoten können unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer**erweitert werden. Dies ist hilfreich, wenn Sie einem vorhandenen Knoten neue untergeordnete Knoten, Kontextmenü Elemente oder Eigenschaften hinzufügen möchten. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungs Knotens in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Knoten können unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer** erweitert werden. Dies ist hilfreich, wenn Sie einem vorhandenen Knoten neue untergeordnete Knoten, Kontextmenü Elemente oder Eigenschaften hinzufügen möchten. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>So erweitern Sie einen SharePoint-Knoten in Server-Explorer
 
@@ -43,7 +45,7 @@ ms.locfileid: "86015023"
 
      Zum angeben integrierter Knoten Typen, die von Visual Studio bereitgestellt werden, übergeben Sie einen der folgenden Enumerationswerte an den Attributkonstruktor:
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Verwenden Sie diese Werte, um Standort Verbindungsknoten (die Knoten, auf denen Site-URLs angezeigt werden), Standort Knoten oder alle anderen übergeordneten Knoten in **Server-Explorer**anzugeben.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Verwenden Sie diese Werte, um Standort Verbindungsknoten (die Knoten, auf denen Site-URLs angezeigt werden), Standort Knoten oder alle anderen übergeordneten Knoten in **Server-Explorer** anzugeben.
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Verwenden Sie diese Werte, um einen der integrierten Knoten anzugeben, die eine einzelne Komponente auf einer SharePoint-Website darstellen, z. b. einen Knoten, der eine Liste, ein Feld oder einen Inhaltstyp darstellt.
 
@@ -60,7 +62,7 @@ ms.locfileid: "86015023"
 
 - Eine Erweiterung, mit der SharePoint-Website Knoten ein Kontextmenü Element hinzugefügt wird. Wenn Sie auf das Menü Element klicken, wird der Name des Knotens angezeigt, auf den geklickt wurde.
 
-- Eine Erweiterung, mit der jedem Knoten, der ein Feld namens **Body**darstellt, eine benutzerdefinierte Eigenschaft mit dem Namen **condesoexampleproperty** hinzugefügt wird.
+- Eine Erweiterung, mit der jedem Knoten, der ein Feld namens **Body** darstellt, eine benutzerdefinierte Eigenschaft mit dem Namen **condesoexampleproperty** hinzugefügt wird.
 
   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
   [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]
@@ -83,6 +85,6 @@ ms.locfileid: "86015023"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
-- [Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
