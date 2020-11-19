@@ -1,5 +1,7 @@
 ---
 title: SupportsMasterPage-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das SupportsMasterPage-Element und darüber, wie es angibt, ob das Kontrollkästchen Master Seite auswählen im Dialogfeld Neues Element hinzufügen aktiviert ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699453"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903831"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage-Element (Visual Studio-Vorlagen)
 Gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
@@ -53,7 +55,7 @@ Gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Ne
 
  Der Text muss entweder `true` oder lauten `false` und gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `SupportsMasterPage` ist ein optionales Element. Standardwert: `false`.
 
  Das- `SupportsMasterPage` Element ist nur für Webelement Vorlagen verfügbar.

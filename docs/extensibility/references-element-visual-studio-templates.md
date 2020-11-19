@@ -1,5 +1,7 @@
 ---
 title: References-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das References-Element und darüber, wie die Assemblyverweise gruppiert werden, die die Vorlage Projekten hinzufügt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701616"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903743"
 ---
 # <a name="references-element-visual-studio-templates"></a>References-Element (Visual Studio-Vorlagen)
 Gruppiert die Assemblyverweise, die von der Vorlage Projekten hinzugefügt werden.
@@ -45,17 +47,17 @@ Gruppiert die Assemblyverweise, die von der Vorlage Projekten hinzugefügt werde
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[Referenz](../extensibility/reference-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird. Es muss ein oder mehrere- `Reference` Elemente in einem-Element vorhanden sein `References` .|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Gibt den Inhalt der Vorlage an.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `References` ist ein optionales untergeordnetes Element von `TemplateContent`.
 
  Das `Reference` -Element und das- `References` Element können nur in *. vstemplate* -Dateien mit dem- `Type` Attribut Wert verwendet werden `Item` .

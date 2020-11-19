@@ -1,6 +1,8 @@
 ---
 title: Bereitstellen & veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website
 titleSuffix: ''
+description: Informieren Sie sich über das Bereitstellen oder Veröffentlichen von SharePoint-Lösungen auf einem lokalen SharePoint-Server auf Ihrem Entwicklungs Computer.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,27 +16,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 78a837cc7145187fbc529e6e86cc27f88dd81f51
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585796"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903584"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Vorgehensweise: Bereitstellen und Veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website
   Sie können SharePoint-Lösungen auf einem lokalen SharePoint-Server auf dem Entwicklungs Computer bereitstellen oder veröffentlichen. Beim Bereitstellungs Prozess wird die *wsp* -Datei auf den SharePoint-Server kopiert, die Projekt Mappe installiert und anschließend die Funktionen aktiviert. Beim Veröffentlichungsprozess wird die *wsp* -Datei nur auf den SharePoint-Server kopiert und installiert. Sie müssen Sie manuell aktivieren, um Sie in SharePoint zu aktivieren.
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>So stellen Sie eine SharePoint-Lösung auf dem lokalen SharePoint-Server bereit
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt aus, das Sie bereitstellen möchten.
+1. Wählen Sie in **Projektmappen-Explorer** das Projekt aus, das Sie bereitstellen möchten.
 
-2. Wählen Sie in der Menüleiste **Erstellen**und dann Projekt Mappe bereitstellen **aus.**
+2. Wählen Sie in der Menüleiste **Erstellen** und dann Projekt Mappe bereitstellen **aus.**
 
      Die *wsp* -Datei wird auf dem lokalen SharePoint-Server erstellt und installiert. Außerdem werden die-Funktionen aktiviert.
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>So veröffentlichen Sie eine SharePoint-Lösung auf einem lokalen SharePoint-Server
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das SharePoint-Projekt, das Sie veröffentlichen möchten, und wählen Sie dann **veröffentlichen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das SharePoint-Projekt, das Sie veröffentlichen möchten, und wählen Sie dann **veröffentlichen** aus.
 
 2. Klicken Sie im Dialogfeld **veröffentlichen** auf das Optionsfeld **in Datei System veröffentlichen** .
 

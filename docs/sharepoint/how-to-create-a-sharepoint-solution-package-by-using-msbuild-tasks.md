@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Aufgaben
+description: Erfahren Sie, wie Sie ein SharePoint-Lösungspaket (. wsp) mithilfe von MSBuild-Befehlszeilen auf einem Entwicklungs Computer erstellen, bereinigen und validieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017012"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903727"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Vorgehensweise: Erstellen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Aufgaben
   Sie können ein SharePoint-Paket (*. wsp*) mithilfe von MSBuild-Befehlszeilen auf einem Entwicklungs Computer erstellen, bereinigen und validieren. Sie können diese Befehle auch zum Automatisieren des Buildprozesses verwenden, indem Sie Team Foundation Server auf einem Buildcomputer verwenden.

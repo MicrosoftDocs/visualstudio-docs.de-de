@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Definieren einer Methoden Instanz | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie eine Methoden Instanz für eine Methode in Ihrem Business Data Connectivity-Modell (BDC) definieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016834"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903623"
 ---
 # <a name="how-to-define-a-method-instance"></a>Gewusst wie: Definieren einer Methoden Instanz
   Sie müssen mindestens eine Methoden Instanz für jede Methode im Modell definieren.
@@ -31,11 +33,11 @@ ms.locfileid: "86016834"
 
 1. Erweitern Sie im Fenster **BDC-Methoden Details** den Knoten einer Methode, und erweitern Sie dann den Knoten **Instanzen** .
 
-2. Wählen Sie in der Liste **Methoden Instanz hinzufügen** die Option **Finder-Instanz erstellen**aus.
+2. Wählen Sie in der Liste **Methoden Instanz hinzufügen** die Option **Finder-Instanz erstellen** aus.
 
      Unterhalb des Knotens **Instanzen** wird eine neue Methoden Instanz angezeigt.
 
-3. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
+3. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster** aus.
 
 4. Legen Sie im **Eigenschaften** Fenster die Eigenschaften der Methoden Instanz fest. Weitere Informationen zu den einzelnen Eigenschaften finden Sie unter [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
