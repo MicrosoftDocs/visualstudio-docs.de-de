@@ -3,17 +3,16 @@ title: Zugreifen auf private Azure-Clouds
 description: Erfahren Sie, wie Sie mithilfe von Visual Studio auf private Cloudressourcen zugreifen.
 author: ghogen
 manager: jillfra
-assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 136c7f4f497c21de24e34c4c426707de94151ddf
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 92ab5ae3dc6fa5fd807203a1adf2353a20bfb666
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398734"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902830"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Zugreifen auf private Azure-Clouds mit Visual Studio
 
@@ -21,7 +20,7 @@ Visual Studio unterstützt standardmäßig REST-Endpunkte der Azure-Cloud. In di
 
 1. Laden Sie im Azure-Portal für die private Cloud die Datei mit den Veröffentlichungseinstellungen herunter, oder wenden Sie sich an Ihren Administrator, um eine Datei mit Veröffentlichungseinstellungen zu erhalten. (Die Datei hat die Erweiterung `.publishsettings`.)
 
-1. Klicken Sie in Visual Studio im **Server-Explorer** mit der rechten Maustaste auf den Knoten **Azure** , und wählen Sie die Option **Abonnements verwalten und filtern** aus.
+1. Klicken Sie in Visual Studio im **Server-Explorer** mit der rechten Maustaste auf den Knoten **Azure**, und wählen Sie die Option **Abonnements verwalten und filtern** aus.
 
     ![Befehl „Abonnements verwalten“](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 

@@ -1,6 +1,8 @@
 ---
 title: Daten für integrierten SharePoint-Knoten in Server-Explorer
 titleSuffix: ''
+description: Sie erhalten Daten für die zugrunde liegende SharePoint-Komponente eines integrierten SharePoint-Knotens im Server-Explorer Fenster von Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7649092cc21fcc7b861f4ddf630007bde896e852
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3a975374b82b10c0e29d74bcf68d7bce3225a967
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585770"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903519"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Gewusst wie: erhalten von Daten für einen integrierten SharePoint-Knoten in Server-Explorer
-  Für jeden integrierten SharePoint-Knoten in **Server-Explorer**können Sie Daten für die zugrunde liegende SharePoint-Komponente, die der Knoten darstellt, erhalten. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Für jeden integrierten SharePoint-Knoten in **Server-Explorer** können Sie Daten für die zugrunde liegende SharePoint-Komponente, die der Knoten darstellt, erhalten. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="example"></a>Beispiel
- Im folgenden Codebeispiel wird veranschaulicht, wie Sie Daten für die zugrunde liegende SharePoint-Liste, die ein Listen Knoten in **Server-Explorer**darstellt, erhalten. Standardmäßig haben Listen Knoten eine **Ansicht im** Kontextmenü Element Browser, auf das Sie klicken können, um die Listen in einem Webbrowser zu öffnen. In diesem Beispiel werden Listen Knoten erweitert, indem eine Ansicht im Kontextmenü Element von **Visual Studio** hinzugefügt wird, mit der die Listen direkt in Visual Studio geöffnet werden. Der Code greift auf die Listen Daten für den Knoten zu, um die URL der Liste zu erhalten, die in Visual Studio geöffnet werden soll.
+ Im folgenden Codebeispiel wird veranschaulicht, wie Sie Daten für die zugrunde liegende SharePoint-Liste, die ein Listen Knoten in **Server-Explorer** darstellt, erhalten. Standardmäßig haben Listen Knoten eine **Ansicht im** Kontextmenü Element Browser, auf das Sie klicken können, um die Listen in einem Webbrowser zu öffnen. In diesem Beispiel werden Listen Knoten erweitert, indem eine Ansicht im Kontextmenü Element von **Visual Studio** hinzugefügt wird, mit der die Listen direkt in Visual Studio geöffnet werden. Der Code greift auf die Listen Daten für den Knoten zu, um die URL der Liste zu erhalten, die in Visual Studio geöffnet werden soll.
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]

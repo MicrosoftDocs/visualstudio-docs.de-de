@@ -1,5 +1,7 @@
 ---
 title: WizardExtension-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Informieren Sie sich über das WizardExtension-Element und darüber, wie es die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d1c52e2b1dd8fe452d4c24f8dc6db6b32334a5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740375"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903389"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension-Element (Visual Studio-Vorlagen)
 Enthält die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten.
@@ -45,7 +47,7 @@ Enthält die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten.
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Stadtverordneten](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Gibt den Namen oder den starken Namen einer Assembly an, die im globalen Assemblycache angezeigt wird. Es muss mindestens ein- `Assembly` Element in einem- `WizardExtension` Element vorhanden sein.|
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Gibt den Namen oder den starken Namen einer Assembly an, die im globalen Assemblycache angezeigt wird. Es muss mindestens ein- `Assembly` Element in einem- `WizardExtension` Element vorhanden sein.|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Erforderliches Element.<br /><br /> Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle implementiert. Es muss mindestens ein- `FullClassName` Element in einem- `WizardExtension` Element vorhanden sein.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
@@ -54,7 +56,7 @@ Enthält die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten.
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Enthält alle Metadaten für die Projektvorlage, die Element Vorlage oder Starter Kit.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `WizardExtension` ist ein optionales untergeordnetes Element von `VSTemplate`.
 
 ## <a name="example"></a>Beispiel

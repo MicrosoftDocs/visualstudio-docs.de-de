@@ -4,17 +4,16 @@ description: Erfahren Sie, wie Sie ein Azure-Clouddienstprojekt konfigurieren, i
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: a811c30114f9a45119eaccc666d6eb39be80a562
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 58d7a967c3a8cf46330c169db1b73bc048a2110c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399805"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902362"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -23,7 +22,7 @@ Ein Azure-Clouddienstprojekt in Visual Studio enthält drei Konfigurationsdateie
 - `ServiceDefinition.csdef` wird in Azure bereitgestellt, um die Anforderungen des Clouddiensts und seiner Rollen zu beschreiben, und um Einstellungen bereitzustellen, die für alle Instanzen gelten. Einstellungen können zur Laufzeit mit der Azure Service Hosting Runtime-API gelesen werden. Diese Datei kann in Azure nur aktualisiert werden, wenn der Clouddienst beendet wird.
 - `ServiceConfiguration.Local.cscfg` und `ServiceConfiguration.Cloud.cscfg` stellen Werte für Einstellungen in der Definitionsdatei bereit und legen die Anzahl der für die einzelnen Rollen auszuführenden Instanzen fest. Die „Local“-Datei enthält Werte, die beim lokalen Debuggen verwendet werden; die „Cloud“-Datei wird in Azure als `ServiceConfiguration.cscfg` bereitgestellt und bietet Einstellungen für die Serverumgebung. Diese Datei kann aktualisiert werden, während Ihr Clouddienst in Azure ausgeführt wird.
 
-Konfigurationseinstellungen werden in Visual Studio mithilfe der Eigenschaftenseiten für die entsprechende Rolle verwaltet und geändert (klicken Sie mit der rechten Maustaste auf die Rolle, und wählen Sie **Eigenschaften** , oder doppelklicken Sie auf die Rolle). Änderungen können auf die in der Dropdownliste **Dienstkonfiguration** ausgewählte Konfiguration beschränkt werden. Die Unterschiede zwischen den ansonsten ähnlichen Eigenschaften für Web- und Workerrollen werden in den folgenden Abschnitten beschrieben.
+Konfigurationseinstellungen werden in Visual Studio mithilfe der Eigenschaftenseiten für die entsprechende Rolle verwaltet und geändert (klicken Sie mit der rechten Maustaste auf die Rolle, und wählen Sie **Eigenschaften**, oder doppelklicken Sie auf die Rolle). Änderungen können auf die in der Dropdownliste **Dienstkonfiguration** ausgewählte Konfiguration beschränkt werden. Die Unterschiede zwischen den ansonsten ähnlichen Eigenschaften für Web- und Workerrollen werden in den folgenden Abschnitten beschrieben.
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
@@ -39,7 +38,7 @@ Legt fest, welche `ServiceConfiguration.*.cscfg`-Datei von Änderungen betroffen
 
 Legen Sie die Eigenschaft **Instanzenanzahl** auf die Anzahl der Instanzen fest, die der Dienst für diese Rolle ausführen soll.
 
-Legen Sie die Eigenschaft **Größe des virtuellen Computers** auf **Sehr klein** , **Klein** , **Mittel** , **Groß** oder **Sehr groß** fest.  Weitere Informationen finden Sie unter [Größen für Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
+Legen Sie die Eigenschaft **Größe des virtuellen Computers** auf **Sehr klein**, **Klein**, **Mittel**, **Groß** oder **Sehr groß** fest.  Weitere Informationen finden Sie unter [Größen für Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Startaktion (nur Webrolle)
 
@@ -51,7 +50,7 @@ Wenn Sie bereits einen HTTPS-Endpunkt hinzugefügt haben, ist die Option „HTTP
 
 ### <a name="diagnostics"></a>Diagnose
 
-Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-Clouddienstprojekt und Speicherkonto wurden auf die Verwendung des lokalen Speicheremulators festgelegt. Wenn die Bereitstellung in Azure erfolgen soll, klicken Sie auf die Generatorschaltfläche ( **…** ), um stattdessen Azure-Speicher zu verwenden. Sie können die Diagnosedaten entweder bei Bedarf oder in automatisch geplanten Intervallen an das Speicherkonto übertragen. Weitere Informationen zur Azure-Diagnose erhalten Sie unter [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-Clouddienstprojekt und Speicherkonto wurden auf die Verwendung des lokalen Speicheremulators festgelegt. Wenn die Bereitstellung in Azure erfolgen soll, klicken Sie auf die Generatorschaltfläche (**…**), um stattdessen Azure-Speicher zu verwenden. Sie können die Diagnosedaten entweder bei Bedarf oder in automatisch geplanten Intervallen an das Speicherkonto übertragen. Weitere Informationen zur Azure-Diagnose erhalten Sie unter [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Seite "Einstellungen"
 
@@ -68,14 +67,14 @@ Sie können festlegen, dass die Verbindungszeichenfolge nach Bedarf lokalen Spei
 
 Zum Erstellen einer Verbindungszeichenfolge wählen Sie **Einstellung hinzufügen** aus und legen den **Typ** auf „Verbindungszeichenfolge“ fest.
 
-Wählen Sie für neue oder vorhandene Verbindungs Zeichenfolgen **...** _ rechts neben dem Feld _ *Wert* *, um das Dialogfeld **Verbindungs Zeichenfolge für den Speicher erstellen** zu öffnen:
+Wählen Sie für neue oder vorhandene Verbindungs Zeichenfolgen **...** _ rechts neben dem Feld _ *Wert**, um das Dialogfeld **Verbindungs Zeichenfolge für den Speicher erstellen** zu öffnen:
 
 1. Wählen Sie unter **Verbindung herstellen über** die Option **Ihr Abonnement** aus, um ein Speicherkonto aus einem Abonnement auszuwählen. Visual Studio ruft dann die Anmeldeinformationen des Speicherkontos automatisch aus der `.publishsettings`-Datei ab.
 1. Mit der Option **Manuell eingegebene Anmeldeinformationen** können Sie den Kontonamen und -schlüssel mithilfe von Informationen aus dem Azure-Portal direkt angeben. Kopieren des Kontoschlüssels:
     1. Navigieren Sie im Azure-Portal zum Speicherkonto, und wählen Sie **Schlüssel verwalten**.
     1. Um den Kontoschlüssel zu kopieren, navigieren Sie im Azure-Portal zu dem Speicherkonto, wählen **Einstellungen > Zugriffsschlüssel** aus und verwenden die Schaltfläche „Kopieren“, um den primären Zugriffsschlüssel in die Zwischenablage zu kopieren.
 1. Wählen Sie eine der Verbindungsoptionen aus. Bei **Benutzerdefinierte Endpunkte angeben** werden Sie aufgefordert, bestimmte URLs für Blobs, Tabellen und Warteschlangen anzugeben. Benutzerdefinierte Endpunkte ermöglichen Ihnen die Verwendung [benutzerdefinierter Domänen](/azure/storage/blobs/storage-custom-domain-name) und eine genauere Steuerung des Zugriffs. Weitere Informationen finden Sie unter [Konfigurieren von Azure Storage-Verbindungszeichenfolgen](/azure/storage/common/storage-configure-connection-string).
-1. Wählen Sie **OK** und dann **Datei > Speichern** , um die Konfiguration mit der neuen Verbindungszeichenfolge zu aktualisieren.
+1. Wählen Sie **OK** und dann **Datei > Speichern**, um die Konfiguration mit der neuen Verbindungszeichenfolge zu aktualisieren.
 
 Wenn Sie Ihre Anwendung in Azure veröffentlichen, wählen Sie wieder die Dienstkonfiguration, die das Azure-Speicherkonto für die Verbindungszeichenfolge enthält. Nachdem die Anwendung veröffentlicht wurde, überprüfen Sie, dass die Anwendung mit den Azure-Speicherdiensten wie erwartet funktioniert.
 
@@ -86,7 +85,7 @@ Weitere Informationen zum Aktualisieren von Dienstkonfigurationen finden Sie im 
 Eine Webrolle weist normalerweise einen einzelnen HTTP-Endpunkt an Port 80 auf. Eine Workerrolle kann dagegen eine beliebige Anzahl von HTTP-, HTTPS- oder TCP-Endpunkten aufweisen. Endpunkte können für externe Clients verfügbare Eingabeendpunkte oder interne Endpunkte sein, die für andere im Dienst ausgeführte Rollen verfügbar sind.
 
 - Ändern Sie den Endpunkttyp in einen Eingabeendpunkt, und geben Sie einen Namen und die Nummer eines öffentlichen Ports an, um einen HTTP-Endpunkt für externe Clients und Webbrowser verfügbar zu machen.
-- Ändern Sie den Endpunkttyp in einen **Eingabeendpunkt** , und geben Sie einen Namen, die Nummer eines öffentlichen Ports und den Namen eines Verwaltungszertifikats an, um einen HTTPS-Endpunkt für externe Clients und Webbrowser verfügbar zu machen. Sie müssen auch das Zertifikat auf der Eigenschaftenseite **Zertifikate** definieren, bevor Sie ein Verwaltungszertifikat angeben können.
+- Ändern Sie den Endpunkttyp in einen **Eingabeendpunkt**, und geben Sie einen Namen, die Nummer eines öffentlichen Ports und den Namen eines Verwaltungszertifikats an, um einen HTTPS-Endpunkt für externe Clients und Webbrowser verfügbar zu machen. Sie müssen auch das Zertifikat auf der Eigenschaftenseite **Zertifikate** definieren, bevor Sie ein Verwaltungszertifikat angeben können.
 - Ändern Sie den Endpunkttyp in einen internen Endpunkt, und geben Sie einen Namen und mögliche private Ports für den Endpunkt an, um einen Endpunkt für den internen Zugriff durch andere Rollen innerhalb des Clouddiensts verfügbar zu machen.
 
 ## <a name="local-storage-page"></a>Seite "Lokaler Speicher"

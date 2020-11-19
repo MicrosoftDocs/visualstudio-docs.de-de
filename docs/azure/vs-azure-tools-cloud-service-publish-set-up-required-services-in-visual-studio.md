@@ -3,17 +3,16 @@ title: Vorbereiten der Veröffentlichung oder Bereitstellung eines Clouddiensts
 description: Lernen Sie die Verfahren zum Einrichten von Cloud- und Speicherkontodiensten und zum Konfigurieren Ihrer Azure-Anwendung kennen.
 author: ghogen
 manager: jillfra
-ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a09b8f5c6efacab0f02a445ed78f8a3769031fa0
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c048968ca97484812b7423a16e4a1834e1c8a66b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399007"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902502"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Vorbereiten der Veröffentlichung und Bereitstellung eines Clouddiensts in Visual Studio
 
@@ -29,7 +28,7 @@ Ein Clouddienst führt Ihre Rollen in der Azure-Umgebung aus. Sie können einen 
 ### <a name="create-a-cloud-service-from-visual-studio"></a>Erstellen eines Clouddiensts in Visual Studio
 
 1. Klicken Sie mit der rechten Maustaste auf ein zuvor erstelltes Projekt, und wählen Sie **Veröffentlichen**.
-1. Melden Sie sich mit dem Microsoft- oder Organisationskonto an, das Ihrem Azure-Abonnement zugeordnet ist (falls erforderlich), und wählen Sie dann **Weiter** , um zur Seite **Einstellungen** zu gelangen.
+1. Melden Sie sich mit dem Microsoft- oder Organisationskonto an, das Ihrem Azure-Abonnement zugeordnet ist (falls erforderlich), und wählen Sie dann **Weiter**, um zur Seite **Einstellungen** zu gelangen.
 1. Das Dialogfeld **Clouddienst und Speicherkonto erstellen** wird angezeigt (falls nicht: in der Liste **Clouddienst** die Option **Neu erstellen** wählen).
 1. Geben Sie einen Namen für Ihren Clouddienst ein. Hierbei wird die Groß-/Kleinschreibung berücksichtigt, und der Name ist Teil Ihrer URL und muss eindeutig sein. Wählen Sie außerdem eine Region oder Affinitätsgruppe und eine Replikationsoption aus.
 
@@ -37,8 +36,8 @@ Ein Clouddienst führt Ihre Rollen in der Azure-Umgebung aus. Sie können einen 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.
 1. Wählen Sie links auf der Seite die Option **Clouddienste (klassisch)**.
-1. Wählen Sie **+ Hinzufügen** , und geben Sie die erforderlichen Informationen an (DNS-Name, Abonnement, Ressourcengruppe und Standort). Es ist hier nicht erforderlich, ein Paket hochzuladen, da Sie dies später in Visual Studio durchführen.
-1. Wählen Sie **Erstellen** , um den Prozess abzuschließen.
+1. Wählen Sie **+ Hinzufügen**, und geben Sie die erforderlichen Informationen an (DNS-Name, Abonnement, Ressourcengruppe und Standort). Es ist hier nicht erforderlich, ein Paket hochzuladen, da Sie dies später in Visual Studio durchführen.
+1. Wählen Sie **Erstellen**, um den Prozess abzuschließen.
 
 ## <a name="create-a-storage-account"></a>Speicherkonto erstellen
 
@@ -46,10 +45,10 @@ Ein Speicherkonto bietet Zugriff auf die Blob-, Warteschlangen- und Tabellendien
 
 ### <a name="create-a-storage-account-from-visual-studio"></a>Erstellen eines Speicherkontos in Visual Studio
 
-1. Suchen Sie im **Projektmappen-Explorer** für ein zuvor erstelltes Clouddienstprojekt den Knoten **Verbundene Dienste** eines Rollenprojekts, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Verbundenen Dienst hinzufügen**. (Klicken Sie in Visual Studio 2015 mit der rechten Maustaste auf den Knoten **Speicher** , und wählen Sie **Speicherkonto erstellen**.)
+1. Suchen Sie im **Projektmappen-Explorer** für ein zuvor erstelltes Clouddienstprojekt den Knoten **Verbundene Dienste** eines Rollenprojekts, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Verbundenen Dienst hinzufügen**. (Klicken Sie in Visual Studio 2015 mit der rechten Maustaste auf den Knoten **Speicher**, und wählen Sie **Speicherkonto erstellen**.)
 1. Wählen Sie in der angezeigten Liste **Verbundene Dienste** die Option **Cloudspeicher mit Azure Storage**.
 1. Wählen Sie im angezeigten Azure Storage-Dialogfeld die Option **+Neues Speicherkonto erstellen**. Es wird ein Dialogfeld geöffnet, in dem Sie Ihr Abonnement, einen Namen für das Konto, einen Tarif, eine Ressourcengruppe und den Standort angeben können.
-1. Wählen Sie **Erstellen** , wenn Sie fertig sind. Das neue Speicherkonto wird in der Liste mit den verfügbaren Speicherkonten Ihres Abonnements angezeigt.
+1. Wählen Sie **Erstellen**, wenn Sie fertig sind. Das neue Speicherkonto wird in der Liste mit den verfügbaren Speicherkonten Ihres Abonnements angezeigt.
 1. Wählen Sie das Konto aus, und wählen Sie anschließend die Option **Hinzufügen**.
 
 ### <a name="create-a-storage-account-through-the-azure-portal"></a>Erstellen eines Speicherkontos über das Azure-Portal
@@ -58,7 +57,7 @@ Ein Speicherkonto bietet Zugriff auf die Blob-, Warteschlangen- und Tabellendien
 1. Wählen Sie oben links die Option **+ Neu**.
 1. Wählen Sie unter „Azure Marketplace“ die Option **Speicher** und auf der rechten Seite dann **Speicherkonto – Blob, Datei, Tabelle, Warteschlange**.
 1. Geben Sie die erforderlichen Informationen an (Name, Bereitstellungsmodell usw.).
-1. Wählen Sie **Erstellen** , um den Prozess abzuschließen.
+1. Wählen Sie **Erstellen**, um den Prozess abzuschließen.
 
 ## <a name="configure-your-app-to-use-the-storage-account"></a>Konfigurieren Ihrer App für die Verwendung des Speicherkontos
 

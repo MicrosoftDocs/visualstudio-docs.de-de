@@ -1,6 +1,7 @@
 ---
 title: SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
 titleSuffix: ''
+description: Erfahren Sie mehr über das SupportsCodeSeparation-Element und wie es angibt, ob das Kontrollkästchen Code in separaten Dateien platzieren im Dialogfeld Neues Element hinzufügen aktiviert ist.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dfdf3244d09c5f3418c5403a32570c382c5365c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1847d5f0a0fa77b1dd0ddd0d74eeba84326d0205
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038464"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901855"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
 Gibt an, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
@@ -55,8 +56,8 @@ Gibt an, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Di
 
  Der Text muss entweder `true` oder lauten `false` , was angibt, ob das Kontrollkästchen **Code in separaten Dateien platzieren** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
-## <a name="remarks"></a>Bemerkungen
- `SupportsCodeSeparation` ist ein optionales Element. Der Standardwert ist `false`.
+## <a name="remarks"></a>Hinweise
+ `SupportsCodeSeparation` ist ein optionales Element. Standardwert: `false`.
 
  Das- `SupportsCodeSeparation` Element ist nur für Webelement Vorlagen verfügbar.
 

@@ -4,17 +4,16 @@ description: Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Exp
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398864"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902219"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
@@ -34,7 +33,7 @@ Der Server-Explorer zeigt automatisch eine Liste von Blobs, Warteschlangen und T
 
 Erweitern Sie zum Anzeigen der Ressourcen des Speicheremulatorkontos den Knoten **Entwicklung** . Wenn der Speicheremulator nicht gestartet wurde, wird er automatisch gestartet, wenn Sie den Knoten **Entwicklung** erweitern. Dieser Prozess kann mehrere Sekunden dauern. Sie können weiterhin in anderen Bereichen von Visual Studio arbeiten, während der Speicheremulator gestartet wird.
 
-Erweitern Sie zum Anzeigen von Ressourcen in einem Speicherkonto den Knoten des Speicherkontos im Server-Explorer. Dort werden die Knoten **Blobs** , **Warteschlagen** und **Tabellen** angezeigt.
+Erweitern Sie zum Anzeigen von Ressourcen in einem Speicherkonto den Knoten des Speicherkontos im Server-Explorer. Dort werden die Knoten **Blobs**, **Warteschlagen** und **Tabellen** angezeigt.
 
 ## <a name="work-with-blob-resources"></a>Arbeiten mit Blobressourcen
 
@@ -42,7 +41,7 @@ Der Knoten **Blobs** zeigt eine Liste der Container für das ausgewählte Speich
 
 ### <a name="to-create-a-blob-container"></a>So erstellen Sie einen Blobcontainer
 
-1. Öffnen Sie das Kontextmenü für den Knoten **Blobs** , und wählen Sie dann **Blobcontainer erstellen**.
+1. Öffnen Sie das Kontextmenü für den Knoten **Blobs**, und wählen Sie dann **Blobcontainer erstellen**.
 1. Geben Sie im Dialogfeld **Blobcontainer erstellen** den Namen des neuen Containers ein.
 1. Drücken Sie die EINGABETASTE auf der Tastatur, oder klicken bzw. tippen Sie außerhalb des Namensfelds, um den Blobcontainer zu speichern.
 
@@ -74,7 +73,7 @@ Sie können die folgenden Vorgänge für Blobs mithilfe der Schaltflächen in de
 
 1. Wählen Sie in **Cloud-Explorer** den BlobContainer aus. Wählen Sie im Containerfenster die Schaltfläche **Blob hochladen** aus.
 
-1. Wählen Sie im Dialogfeld **Neue Datei hochladen** die Schaltfläche **Durchsuchen** , um die Datei anzugeben, die Sie hochladen möchten. Geben Sie dann einen Ordnernamen im Feld **Ordner (optional)** ein.
+1. Wählen Sie im Dialogfeld **Neue Datei hochladen** die Schaltfläche **Durchsuchen**, um die Datei anzugeben, die Sie hochladen möchten. Geben Sie dann einen Ordnernamen im Feld **Ordner (optional)** ein.
 
    ![Hochladen einer Datei in einen Blobordner](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +93,7 @@ Da es sich bei Ordnern in Blobcontainern um virtuelle Ordner handelt, ist es nic
 
 Sie können die angezeigten Blobs filtern, indem Sie ein gemeinsames Präfix angeben.
 
-Wenn Sie beispielsweise das Präfix **hello** in das Filtertextfeld eingeben und dann die Schaltfläche **Ausführen** ( **!** ) wählen, werden nur Blobs angezeigt, die mit „hello“ beginnen.
+Wenn Sie beispielsweise das Präfix **hello** in das Filtertextfeld eingeben und dann die Schaltfläche **Ausführen** (**!**) wählen, werden nur Blobs angezeigt, die mit „hello“ beginnen.
 
 ![Filtertextfeld](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -118,7 +117,7 @@ Standardmäßig wird ein Blob in ein temporäres Verzeichnis heruntergeladen. Um
 
 ### <a name="to-upload-blobs"></a>So laden Sie Blobs hoch
 
-Klicken Sie zum Hochladen von Blobs auf die Schaltfläche **Blob hochladen** , wenn der Container für die Anzeige in der Blobcontaineransicht geöffnet ist.
+Klicken Sie zum Hochladen von Blobs auf die Schaltfläche **Blob hochladen**, wenn der Container für die Anzeige in der Blobcontaineransicht geöffnet ist.
 
 Sie können eine oder mehrere Dateien eines beliebigen Typs zum Hochladen auswählen. Im Fenster **Azure-Aktivitätsprotokoll** wird der Uploadstatus angezeigt. Weitere Informationen zum Arbeiten mit Blobdaten finden Sie unter [Erste Schritte mit Azure Blob Storage mit .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
@@ -198,7 +197,7 @@ Entitäten in einer einzelnen Tabelle müssen nicht denselben Eigenschaftensatz 
 
     ![Schaltfläche „Entität hinzufügen“](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Geben Sie im Dialogfeld **Entität hinzufügen** die Werte der **PartitionKey** - und **RowKey** -Eigenschaften ein.
+1. Geben Sie im Dialogfeld **Entität hinzufügen** die Werte der **PartitionKey**- und **RowKey**-Eigenschaften ein.
 
     ![Dialogfeld „Entität hinzufügen“](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -251,7 +250,7 @@ Es gibt zwei Möglichkeiten, Speicherkonten mithilfe des Server-Explorers hinzuz
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>So erstellen Sie ein Speicherkonto mit dem Server-Explorer
 
-1. Öffnen Sie im Server-Explorer das Kontextmenü für den Knoten **Speicher** , und wählen Sie dann **Speicherkonto erstellen**.
+1. Öffnen Sie im Server-Explorer das Kontextmenü für den Knoten **Speicher**, und wählen Sie dann **Speicherkonto erstellen**.
 
 1. Wählen Sie im Dialogfeld **Speicherkonto erstellen** die folgenden Informationen aus, oder geben Sie sie ein:
 
@@ -268,7 +267,7 @@ Das neue Speicherkonto wird im Projektmappen-Explorer in der Liste **Speicher** 
 
 ### <a name="to-attach-an-existing-storage-account-by-using-server-explorer"></a>So fügen Sie ein vorhandenes Speicherkonto mithilfe des Server-Explorers an
 
-1. Öffnen Sie im Server-Explorer das Kontextmenü für den Azure **Storage** -Knoten, und wählen Sie dann **Externen Speicher anfügen** aus.
+1. Öffnen Sie im Server-Explorer das Kontextmenü für den Azure **Storage**-Knoten, und wählen Sie dann **Externen Speicher anfügen** aus.
 
     ![Hinzufügen eines vorhandenen Speicherkontos](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
 1. Wählen Sie im Dialogfeld **Speicherkonto erstellen** die folgenden Informationen aus, oder geben Sie sie ein:

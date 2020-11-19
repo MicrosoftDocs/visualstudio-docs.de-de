@@ -3,17 +3,16 @@ title: Testen der Leistung eines Clouddiensts | Microsoft Docs
 description: Testen der Leistung eines Clouddiensts mit dem Visual Studio-Profiler
 author: mikejo5000
 manager: jillfra
-ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 119f781e972b38c04763f7a069e3835f42e21941
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508430"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902258"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testen der Leistung eines Clouddiensts
 ## <a name="overview"></a>Übersicht
@@ -68,7 +67,7 @@ Basierend auf den Leistungsproblemen, die Sie untersuchen möchten, können Sie 
 * **Instrumentation** : Diese Methode erfasst detaillierte Zeitdaten, die für fokussierte Analysen sowie zur Analyse von Leistungsproblemen bei der Eingabe/Ausgabe hilfreich sind. Die Instrumentationsmethode zeichnet jeden Start-, Beendigungs- und Funktionsaufruf der Funktionen in einem Modul während eines Profilerstellungsvorgangs auf. Diese Methode eignet sich, um detaillierte Zeitdaten zu einem Abschnitt des Codes zu erfassen und um die Auswirkungen von Eingabe- und Ausgabevorgängen auf die Anwendungsleistung zu verstehen. Diese Methode ist für Computer mit 32-Bit-Betriebssystemen deaktiviert. Diese Option ist nur verfügbar, wenn Sie den Clouddienst in Azure ausführen, nicht lokal im Compute-Emulator.
 * **.NET-Speicherbelegung** : Diese Methode nutzt die Sampling-Profilerstellungsmethode, um .NET Framework-Speicherbelegungsdaten zu erfassen. Zu den erfassten Daten gehören Anzahl und Größe der zugeordneten Objekte.
 * **Parallelität:** Diese Methode erfasst Daten zu Ressourcenkonflikten sowie Prozess- und Threadausführungsdaten, die für die Analyse von Anwendungen mit mehreren Threads und Prozessen hilfreich sind. Die Parallelitätsmethode erfasst Daten für jedes Ereignis, das die Ausführung des Codes blockiert, wie z. B. ein Thread, der darauf wartet, dass der gesperrte Zugriff auf eine Anwendungsressource freigegeben wird. Diese Methode eignet sich für die Analyse von Anwendungen mit mehreren Threads.
-* Sie können auch die **Profilerstellung für Ebeneninteraktion**aktivieren, die zusätzliche Informationen zu den Ausführungszeiten synchroner ADO.NET-Aufrufe in Funktionen von Anwendungen mit mehreren Ebenen bereitstellt, die mit einer oder mehreren Datenbanken kommunizieren. Sie können Ebeneninteraktionsdaten mit einer der folgenden Profilerstellungsmethoden erfassen. Weitere Informationen zur Profilerstellung für Ebeneninteraktionen finden Sie unter [Ansicht "Ebeneninteraktionen"](../profiling/tier-interactions-view.md).
+* Sie können auch die **Profilerstellung für Ebeneninteraktion** aktivieren, die zusätzliche Informationen zu den Ausführungszeiten synchroner ADO.NET-Aufrufe in Funktionen von Anwendungen mit mehreren Ebenen bereitstellt, die mit einer oder mehreren Datenbanken kommunizieren. Sie können Ebeneninteraktionsdaten mit einer der folgenden Profilerstellungsmethoden erfassen. Weitere Informationen zur Profilerstellung für Ebeneninteraktionen finden Sie unter [Ansicht "Ebeneninteraktionen"](../profiling/tier-interactions-view.md).
 
 ## <a name="configuring-profiling-settings"></a>Konfigurieren von Profilerstellungseinstellungen
 Die folgende Abbildung zeigt, wie Sie die Profilerstellungseinstellungen im Dialogfeld "Azure-Anwendung veröffentlichen" konfigurieren.
@@ -81,7 +80,7 @@ Die folgende Abbildung zeigt, wie Sie die Profilerstellungseinstellungen im Dial
 >
 
 ### <a name="to-configure-profiling-settings"></a>So konfigurieren Sie Profilerstellungseinstellungen
-1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und wählen Sie anschließend **Veröffentlichen**aus. Detaillierte Informationen zum Veröffentlichen eines Clouddiensts finden Sie unter [Veröffentlichen eines Clouddiensts mit den Azure-Tools](vs-azure-tools-publishing-a-cloud-service.md).
+1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und wählen Sie anschließend **Veröffentlichen** aus. Detaillierte Informationen zum Veröffentlichen eines Clouddiensts finden Sie unter [Veröffentlichen eines Clouddiensts mit den Azure-Tools](vs-azure-tools-publishing-a-cloud-service.md).
 2. Wählen Sie im Dialogfeld **Veröffentlichen der Azure-Anwendung** die Registerkarte **Erweiterte Einstellungen**.
 3. Um die Profilerstellung zu aktivieren, aktivieren Sie das Kontrollkästchen **Profilerstellung aktivieren**.
 4. Um Ihre Profilerstellungseinstellungen zu konfigurieren, klicken Sie auf den Hyperlink **Einstellungen**. Das Dialogfeld "Profilerstellungseinstellungen" wird angezeigt.

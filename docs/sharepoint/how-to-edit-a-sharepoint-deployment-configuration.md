@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie eine SharePoint-Bereitstellungs Konfiguration erstellen oder eine vorhandene Bereitstellungs Konfiguration ändern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016773"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903558"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration
   Sie können eine Bereitstellungs Konfiguration erstellen oder eine vorhandene Bereitstellungs Konfiguration ändern. Beispielsweise können Sie einen einzelnen Schritt ausführen oder die Reihenfolge der Schritte im Bereitstellungs Prozess ändern. Möglicherweise möchten Sie Bereitstellungs Konfigurationen erstellen oder ändern, da die integrierten und Programm gesteuert hinzugefügten Konfigurationen nicht geändert werden können.
@@ -28,7 +30,7 @@ ms.locfileid: "86016773"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>So erstellen Sie eine SharePoint-Bereitstellungs Konfiguration
 
-1. Wählen Sie in **Projektmappen-Explorer**ein SharePoint-Projekt aus, und wählen Sie dann in der Menüleiste **Projekt, Projekt** _Name_**Eigenschaften**aus.
+1. Wählen Sie in **Projektmappen-Explorer** ein SharePoint-Projekt aus, und wählen Sie dann in der Menüleiste **Projekt, Projekt** _Name_**Eigenschaften** aus.
 
 2. Wählen Sie auf der Registerkarte **SharePoint** die Schaltfläche **neu** aus.
 
@@ -45,7 +47,7 @@ ms.locfileid: "86016773"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>So ändern Sie die aktive Bereitstellungs Konfiguration
 
-1. Wählen Sie in **Projektmappen-Explorer**ein SharePoint-Projekt aus, und wählen Sie dann in der Menüleiste die Option **Projekt**  >  ** \<*ProjectName*> Eigenschaften**aus.
+1. Wählen Sie in **Projektmappen-Explorer** ein SharePoint-Projekt aus, und wählen Sie dann in der Menüleiste die Option **Projekt**  >  **\<*ProjectName*> Eigenschaften** aus.
 
 2. Wählen Sie die Registerkarte **SharePoint** aus.
 

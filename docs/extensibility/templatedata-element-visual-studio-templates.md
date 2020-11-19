@@ -1,5 +1,7 @@
 ---
 title: TemplateData-Element (Visual Studio-Vorlagen) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das TemplateData-Element und die Kategorisierung der Vorlage, und definieren Sie, wie Sie im Dialogfeld Neues Projekt oder neues Element hinzufügen angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699197"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903259"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData-Element (Visual Studio-Vorlagen)
 Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
@@ -49,7 +51,7 @@ Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues 
 | - | - |
 | [Name](../extensibility/name-element-visual-studio-templates.md) | Erforderliches Element.<br /><br /> Gibt den Namen der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird. |
 | [Beschreibung](../extensibility/description-element-visual-studio-templates.md) | Erforderliches Element.<br /><br /> Gibt die Beschreibung der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird. |
-| [Icon](../extensibility/icon-element-visual-studio-templates.md) | Erforderliches Element.<br /><br /> Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** für die Vorlage angezeigt wird. |
+| [Symbol:](../extensibility/icon-element-visual-studio-templates.md) | Erforderliches Element.<br /><br /> Gibt den Pfad und den Dateinamen der Bilddatei an, die als Symbol dient, das im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** für die Vorlage angezeigt wird. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Erforderliches Element.<br /><br /> Kategorisiert die Projektvorlage, sodass Sie im Dialogfeld **Neues Projekt** unter der angegebenen Gruppe angezeigt wird. |
 | [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Klassifiziert die Projektvorlage, sodass Sie im Dialogfeld **Neues Projekt** unter der angegebenen Unterkategorie angezeigt wird. |
 | [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt die Vorlagen-ID an. |
@@ -76,7 +78,7 @@ Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues 
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, die Element Vorlage oder Starter Kit.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  `TemplateData` ist ein erforderliches Element.
 
  Wenn Sie kein optionales Element einschließen, wird der Standardwert für dieses Element verwendet.

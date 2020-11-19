@@ -4,17 +4,16 @@ description: Sie erfahren, wie Sie Ihre Webanwendung mit Visual Studio zu einem 
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9d689ddca7b6f1b0c02f89c7afb82392e8a58af
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399818"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902349"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Vorgehensweise: Migrieren und Veröffentlichen einer Webanwendung in einem Azure-clouddienst aus Visual Studio
 
@@ -61,7 +60,7 @@ Wenn Sie über eine Verbindungszeichenfolge für Ihre Webanwendung verfügen, di
 1. Wählen Sie auf der Registerkarte **Einstellungen > Allgemeine Einstellungen** in der Dropdownliste **Clouddienst** den Zielclouddienst zusammen mit der gewünschten Umgebung und den gewünschten Konfigurationen aus.
 1. Wählen Sie in **Einstellungen > Erweiterte Einstellungen** das zu verwendende Speicherkonto aus, und wählen Sie dann **Weiter >**.
 1. Legen Sie **Diagnose** fest, ob Informationen an Application Insights gesendet werden.
-1. Wählen Sie **Weiter >** um eine Zusammenfassung anzuzeigen, und wählen Sie dann **Veröffentlichen** , um die Bereitstellung zu starten.
+1. Wählen Sie **Weiter >** um eine Zusammenfassung anzuzeigen, und wählen Sie dann **Veröffentlichen**, um die Bereitstellung zu starten.
 1. Visual Studio öffnet ein Aktivitätsprotokollfenster, in dem Sie den Fortschritt verfolgen können:
 
     ![VST_AzureActivityLog](./media/vs-azure-tools-migrate-publish-web-app-to-cloud-service/IC744149.png)

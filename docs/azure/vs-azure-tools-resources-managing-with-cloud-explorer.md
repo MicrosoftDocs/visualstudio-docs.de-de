@@ -3,17 +3,16 @@ title: Verwalten von Azure-Ressourcen mit dem Cloud-Explorer | Microsoft Docs
 description: Informationen dazu, wie Sie Azure-Ressourcen mit dem Cloud-Explorer innerhalb von Visual Studio durchsuchen und verwalten.
 author: ghogen
 manager: jillfra
-assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9c2ce60b2096b6c3a4f06fad7360b1d5ea0c753
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399389"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902279"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Verwalten der Ihren Azure-Konten zugeordneten Ressourcen im Visual Studio Cloud-Explorer
 
@@ -75,8 +74,8 @@ Um Ihre Azure-Ressourcen anzuzeigen, wählen Sie entweder die Ansicht **Ressourc
 
 1. Wählen Sie im Kontextmenü die gewünschte Ansicht aus:
 
-   * Ansicht **Ressourcentypen** : Die übliche Ansicht im [Azure-Portal](https://portal.azure.com), zeigt Ihre Azure-Ressourcen in Typkategorien wie Web-Apps, Speicherkonten und virtuellen Computern.
-   * In Ansicht **Ressourcengruppen** : Zeigt Azure-Ressourcen gemäß der Kategorie der Azure-Ressourcengruppe, der sie zugeordnet sind. Eine Ressourcengruppe ist ein Bündel von Azure-Ressourcen, die in der Regel von einer bestimmten Anwendung verwendet werden. Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter [Azure Resource Manager – Übersicht](/azure/azure-resource-manager/resource-group-overview).
+   * Ansicht **Ressourcentypen**: Die übliche Ansicht im [Azure-Portal](https://portal.azure.com), zeigt Ihre Azure-Ressourcen in Typkategorien wie Web-Apps, Speicherkonten und virtuellen Computern.
+   * In Ansicht **Ressourcengruppen**: Zeigt Azure-Ressourcen gemäß der Kategorie der Azure-Ressourcengruppe, der sie zugeordnet sind. Eine Ressourcengruppe ist ein Bündel von Azure-Ressourcen, die in der Regel von einer bestimmten Anwendung verwendet werden. Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter [Azure Resource Manager – Übersicht](/azure/azure-resource-manager/resource-group-overview).
 
    Die folgende Abbildung zeigt einen Vergleich der beiden Ressourcenansichten:
 
@@ -86,9 +85,9 @@ Um Ihre Azure-Ressourcen anzuzeigen, wählen Sie entweder die Ansicht **Ressourc
 
 Um zu einer Azure-Ressource zu navigieren und zugehörige Informationen im Cloud-Explorer anzuzeigen, erweitern Sie den Typ oder die zugeordnete Ressourcengruppe des Elements und wählen dann die Ressource aus. Wenn Sie eine Ressource auswählen, werden Informationen auf den beiden Registerkarten **Aktionen** und **Eigenschaften** unten im Cloud-Explorer angezeigt.
 
-* Registerkarte **Aktionen** : Führt die Aktionen auf, die Sie im Cloud-Explorer für die ausgewählte Ressource ausführen können. Sie können diese Optionen auch anzeigen, indem Sie mit der rechten Maustaste auf die Ressource klicken, um das Kontextmenü zu öffnen.
+* Registerkarte **Aktionen**: Führt die Aktionen auf, die Sie im Cloud-Explorer für die ausgewählte Ressource ausführen können. Sie können diese Optionen auch anzeigen, indem Sie mit der rechten Maustaste auf die Ressource klicken, um das Kontextmenü zu öffnen.
 
-* Registerkarte **Eigenschaften** : Zeigt die Eigenschaften der Ressource an, z.B. Typ, Gebietsschema und die Ressourcengruppe, der die Ressource zugeordnet ist.
+* Registerkarte **Eigenschaften**: Zeigt die Eigenschaften der Ressource an, z.B. Typ, Gebietsschema und die Ressourcengruppe, der die Ressource zugeordnet ist.
 
 Die folgende Abbildung zeigt einen Vergleich der Informationen, die auf beiden Registerkarten beispielsweise für eine App Service-Instanz angezeigt werden:
 
