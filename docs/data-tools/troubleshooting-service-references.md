@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei Dienstverweisen
+description: Überprüfen Sie häufige Probleme, die auftreten können, wenn Sie mit Windows Communication Foundation (WCF) oder WCF Data Services verweisen in Visual Studio arbeiten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586119"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998069"
 ---
 # <a name="troubleshoot-service-references"></a>Problembehandlung bei Dienstverweisen
 
@@ -33,7 +35,7 @@ Wenn Sie einen `DataSet` oder `DataTable` von einem Dienst zurückgeben, erhalte
 
 So beheben Sie diesen Fehler
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf die *app.config* Datei, um Sie zu öffnen.
+1. Doppelklicken Sie in **Projektmappen-Explorer** auf die *app.config* Datei, um Sie zu öffnen.
 
 2. Suchen `MaxReceivedMessageSize` Sie die-Eigenschaft, und ändern Sie Sie in einen größeren Wert.
 
@@ -43,7 +45,7 @@ Wenn Sie im Dialogfeld **Dienst Verweise hinzufügen** auf die Schaltfläche **e
 
 So beheben Sie diesen Fehler
 
-- Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das WCF-Dienst Bibliotheksprojekt, und klicken Sie auf **Erstellen**.
+- Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das WCF-Dienst Bibliotheksprojekt, und klicken Sie auf **Erstellen**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Fehler beim Zugriff auf einen Dienst über einen Remote Desktop.
 
@@ -76,15 +78,15 @@ Um diesen Fehler zu beheben, müssen Sie das Dienstprojekt manuell neu erstellen
 
 1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
-2. Erweitern Sie im Dialogfeld **Optionen** den Eintrag **Projekte und Projekt**Mappen, und wählen Sie dann **Allgemein**aus.
+2. Erweitern Sie im Dialogfeld **Optionen** den Eintrag **Projekte und Projekt** Mappen, und wählen Sie dann **Allgemein** aus.
 
 3. Stellen Sie sicher, dass das Kontrollkästchen **Erweiterte Buildkonfigurationen anzeigen** aktiviert ist, und klicken Sie dann auf **OK**.
 
 4. Laden Sie das WCF-Dienstprojekt.
 
-5. Legen Sie im Dialogfeld **Configuration Manager** die aktive Projektmappenkonfiguration auf **Debuggen**fest. **Active solution configuration** Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
+5. Legen Sie im Dialogfeld **Configuration Manager** die aktive Projektmappenkonfiguration auf **Debuggen** fest. **Active solution configuration** Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
 
-6. Wählen Sie in **Projektmappen-Explorer**das WCF-Dienstprojekt aus.
+6. Wählen Sie in **Projektmappen-Explorer** das WCF-Dienstprojekt aus.
 
 7. Klicken Sie im Menü **Erstellen** auf **neu erstellen** , um das WCF-Dienstprojekt neu zu erstellen.
 

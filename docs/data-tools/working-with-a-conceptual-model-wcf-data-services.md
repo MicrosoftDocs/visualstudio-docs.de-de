@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit einem konzeptionellen Modell (WCF Data Services)
+description: Arbeiten Sie in WCF Data Services mit einem konzeptionellen Modell. Abfragen von Daten mithilfe von Objekten, anstatt zwischen Datenbankschemas und Objekt Modellen hin-und herzuüber setzen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585911"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997874"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Arbeiten mit einem konzeptionellen Modell (WCF Data Services)
 

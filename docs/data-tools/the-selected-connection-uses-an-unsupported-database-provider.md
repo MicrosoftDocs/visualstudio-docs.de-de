@@ -1,6 +1,6 @@
 ---
 title: Nicht unterstützter Datenbankanbieter
-description: Die ausgewählte Verbindung nutzt einen nicht unterstützten Anbieter.
+description: Die ausgewählte Verbindung verwendet einen nicht unterstützten Datenbankanbieter. Anzeigen von Informationen zu dieser Visual Studio-objektrelationaler Designer Meldung (O/R-Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8fa073b47927f673914156c586bf27a121e53ea
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 06e08f9a9c28698ae2ee2fecfbcec64c39666c8a
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037568"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998346"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>Die ausgewählte Verbindung nutzt einen nicht unterstützten Anbieter.
 
@@ -23,7 +23,7 @@ Diese Meldung wird angezeigt, wenn Sie Elemente ziehen, die nicht den .NET Frame
 
 Der **O/R-Designer** unterstützt nur Datenverbindungen, bei denen der .NET Framework Anbieter für SQL Server verwendet wird. Nur Verbindungen zu Microsoft SQL Server oder zur Microsoft SQL Server-Datenbankdatei sind gültig.
 
-Um diesen Fehler zu beheben, fügen Sie nur Elemente aus Datenverbindungen hinzu, die die .NET Framework Datenanbieter für die SQL Server zum **O/R-Designer**verwenden.
+Um diesen Fehler zu beheben, fügen Sie nur Elemente aus Datenverbindungen hinzu, die die .NET Framework Datenanbieter für die SQL Server zum **O/R-Designer** verwenden.
 
 ## <a name="see-also"></a>Weitere Informationen
 

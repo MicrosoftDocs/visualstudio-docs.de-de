@@ -1,5 +1,7 @@
 ---
 title: Die Eigenschaft kann nicht gelöscht werden
+description: Die Eigenschaft kann nicht gelöscht werden. Anzeigen von Informationen zu dieser Visual Studio-objektrelationaler Designer Meldung (O/R-Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 63e99bf7b247856815fd3e8de0f4932fed4881dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdca9758116c551604b5f75f141c15107c1fc890
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535290"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998359"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>Die Eigenschaft \<property name> kann nicht gelöscht werden.
 
@@ -33,4 +35,4 @@ Legen Sie die **Diskriminatoreigenschaft** auf eine andere Eigenschaft der Daten
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

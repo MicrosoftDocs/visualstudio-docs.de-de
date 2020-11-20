@@ -1,5 +1,7 @@
 ---
 title: Typisierte Datasets im Vergleich zu nicht typisierten Datasets
+description: Verstehen Sie den Unterschied zwischen typisierten und nicht typisierten Datasets. Vergleichen Sie den Datenzugriff in typisierten und nicht typisierten Datasets.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,15 +13,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586106"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998056"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typisierte Datasets im Vergleich zu nicht typisierten Datasets
-Ein typisiertes DataSet ist ein DataSet, das zuerst von der Basisklasse abgeleitet wird, <xref:System.Data.DataSet> und dann Informationen aus der in einer XSD-Datei gespeicherten **DataSet-Designer**verwendet, um eine neue, stark typisierte DataSet-Klasse zu generieren. Informationen aus dem Schema (Tabellen, Spalten usw.) werden generiert und in diese neue DataSet-Klasse als Satz von Objekten und Eigenschaften der ersten Klasse kompiliert. Da ein typisiertes DataSet von der Basisklasse erbt <xref:System.Data.DataSet> , übernimmt die typisierte Klasse die gesamte Funktionalität der <xref:System.Data.DataSet> -Klasse und kann mit Methoden verwendet werden, die eine Instanz einer <xref:System.Data.DataSet> Klasse als Parameter annehmen.
+Ein typisiertes DataSet ist ein DataSet, das zuerst von der Basisklasse abgeleitet wird, <xref:System.Data.DataSet> und dann Informationen aus der in einer XSD-Datei gespeicherten **DataSet-Designer** verwendet, um eine neue, stark typisierte DataSet-Klasse zu generieren. Informationen aus dem Schema (Tabellen, Spalten usw.) werden generiert und in diese neue DataSet-Klasse als Satz von Objekten und Eigenschaften der ersten Klasse kompiliert. Da ein typisiertes DataSet von der Basisklasse erbt <xref:System.Data.DataSet> , übernimmt die typisierte Klasse die gesamte Funktionalität der <xref:System.Data.DataSet> -Klasse und kann mit Methoden verwendet werden, die eine Instanz einer <xref:System.Data.DataSet> Klasse als Parameter annehmen.
 
 Ein nicht typisiertes DataSet hat dagegen kein entsprechendes integriertes Schema. Wie bei einem typisierten DataSet enthält ein nicht typisiertes Dataset Tabellen, Spalten usw. – Diese werden jedoch nur als Auflistungen verfügbar gemacht. (Nachdem Sie jedoch die Tabellen und anderen Datenelemente in einem nicht typisierten Dataset manuell erstellt haben, können Sie die Struktur des Datasets mithilfe der-Methode des Datasets als Schema exportieren <xref:System.Data.DataSet.WriteXmlSchema%2A> .)
 
@@ -34,7 +36,7 @@ Wenn Sie hingegen mit einem nicht typisierten Dataset arbeiten, lautet der entsp
 [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
 [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
-Der typisierte Zugriff ist nicht nur leichter lesbar, sondern wird auch vollständig von IntelliSense im **Code-Editor**von Visual Studio unterstützt. Die Syntax für das typisierte DataSet ist nicht nur einfacher zu arbeiten, sondern stellt die Typüberprüfung zur Kompilierzeit bereit, wodurch die Wahrscheinlichkeit von Fehlern beim Zuweisen von Werten zu datasetmembern erheblich reduziert wird. Wenn Sie den Namen einer Spalte in der Klasse ändern <xref:System.Data.DataSet> und dann die Anwendung kompilieren, erhalten Sie einen Buildfehler. Wenn Sie in der **Aufgabenliste**auf den Buildfehler doppelklicken, können Sie direkt zu den Zeilen oder Codezeilen wechseln, die auf den alten Spaltennamen verweisen. Der Zugriff auf Tabellen und Spalten in einem typisierten DataSet wird zur Laufzeit ebenfalls etwas beschleunigt, da der Zugriff zur Kompilierzeit und nicht über Auflistungen zur Laufzeit bestimmt wird.
+Der typisierte Zugriff ist nicht nur leichter lesbar, sondern wird auch vollständig von IntelliSense im **Code-Editor** von Visual Studio unterstützt. Die Syntax für das typisierte DataSet ist nicht nur einfacher zu arbeiten, sondern stellt die Typüberprüfung zur Kompilierzeit bereit, wodurch die Wahrscheinlichkeit von Fehlern beim Zuweisen von Werten zu datasetmembern erheblich reduziert wird. Wenn Sie den Namen einer Spalte in der Klasse ändern <xref:System.Data.DataSet> und dann die Anwendung kompilieren, erhalten Sie einen Buildfehler. Wenn Sie in der **Aufgabenliste** auf den Buildfehler doppelklicken, können Sie direkt zu den Zeilen oder Codezeilen wechseln, die auf den alten Spaltennamen verweisen. Der Zugriff auf Tabellen und Spalten in einem typisierten DataSet wird zur Laufzeit ebenfalls etwas beschleunigt, da der Zugriff zur Kompilierzeit und nicht über Auflistungen zur Laufzeit bestimmt wird.
 
 Obwohl typisierte Datasets viele Vorteile haben, ist ein nicht typisiertes Dataset in einer Vielzahl von Situationen nützlich. Das offensichtlichste Szenario ist, wenn kein Schema für das Dataset verfügbar ist. Dies kann z. b. der Fall sein, wenn die Anwendung mit einer Komponente interagiert, die ein DataSet zurückgibt, Sie aber nicht im Voraus wissen, was die Struktur ist. Ebenso gibt es Zeiten, in denen Sie mit Daten arbeiten, die nicht über eine statische, vorhersagbare Struktur verfügen. In diesem Fall ist es unpraktisch, ein typisiertes DataSet zu verwenden, da Sie die typisierte DataSet-Klasse mit jeder Änderung in der Datenstruktur neu generieren müssten.
 

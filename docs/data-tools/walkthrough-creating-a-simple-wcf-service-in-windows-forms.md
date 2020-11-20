@@ -1,5 +1,6 @@
 ---
 title: Erstellen eines einfachen WCF-Dienstanbieter in Windows Forms
+description: Erstellen Sie in dieser exemplarischen Vorgehensweise einen Windows Communication Foundation (WCF)-Dienst in Visual Studio, testen Sie ihn, und greifen Sie dann über eine Windows Forms Anwendung darauf zu.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b0c874509622b34d7a9703a6b31481e0d88e586
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 215ae1409c36417526bb1362f0029029ed95e801
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036794"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998134"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Dienstanbieter in Windows Forms
 
@@ -38,7 +39,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 2. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , und wählen Sie **WCF**und dann **WCF-Dienst Bibliothek**aus.
+3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , und wählen Sie **WCF** und dann **WCF-Dienst Bibliothek** aus.
 
 4. Klicken Sie auf **OK**, um das Projekt zu erstellen.
 
@@ -50,12 +51,12 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Geben Sie im Suchfeld auf der Seite **Neues Projekt erstellen** die **WCF-Dienst Bibliothek** ein. Wählen Sie entweder die c#-oder Visual Basic Vorlage für die **WCF-Dienst Bibliothek**aus, und klicken Sie dann auf **weiter**.
+3. Geben Sie im Suchfeld auf der Seite **Neues Projekt erstellen** die **WCF-Dienst Bibliothek** ein. Wählen Sie entweder die c#-oder Visual Basic Vorlage für die **WCF-Dienst Bibliothek** aus, und klicken Sie dann auf **weiter**.
 
    ![Neues WCF-Dienst Bibliotheksprojekt in Visual Studio 2019 erstellen](media/vs-2019/create-new-wcf-service-library.png)
 
    > [!TIP]
-   > Wenn keine Vorlagen angezeigt werden, müssen Sie möglicherweise die **Windows Communication Foundation** Komponente von Visual Studio installieren. Wählen Sie **Weitere Tools und Features installieren** aus, um Visual Studio-Installer zu öffnen. Wählen Sie die Registerkarte **einzelne Komponenten** aus, Scrollen Sie nach unten zu **Entwicklungsaktivitäten**, und wählen Sie dann **Windows Communication Foundation**aus. Klicken Sie auf **Ändern**.
+   > Wenn keine Vorlagen angezeigt werden, müssen Sie möglicherweise die **Windows Communication Foundation** Komponente von Visual Studio installieren. Wählen Sie **Weitere Tools und Features installieren** aus, um Visual Studio-Installer zu öffnen. Wählen Sie die Registerkarte **einzelne Komponenten** aus, Scrollen Sie nach unten zu **Entwicklungsaktivitäten**, und wählen Sie dann **Windows Communication Foundation** aus. Klicken Sie auf **Ändern**.
 
 4. Klicken Sie auf der Seite **Neues Projekt konfigurieren** auf **Erstellen**.
 
@@ -64,7 +65,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
    > [!NOTE]
    > Dadurch wird ein funktionierender Dienst erstellt, der getestet und aufgerufen werden kann. Die folgenden beiden Schritte veranschaulichen, wie Sie die Standardmethode ändern können, um einen anderen Datentyp zu verwenden. In einer echten Anwendung würden Sie dem Dienst auch Ihre eigenen Funktionen hinzufügen.
 
-5. Doppelklicken Sie in **Projektmappen-Explorer**auf **IService1. vb** oder **IService1.cs**.
+5. Doppelklicken Sie in **Projektmappen-Explorer** auf **IService1. vb** oder **IService1.cs**.
 
    ![Die Datei "IService1"](../data-tools/media/wcf2.png)
 
@@ -80,7 +81,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
    Beachten Sie im obigen Code die `<OperationContract()>`- oder `[OperationContract]`-Attribute. Diese Attribute sind für jede Methode erforderlich, die vom Dienst zur Verfügung gestellt wird.
 
-6. Doppelklicken Sie in **Projektmappen-Explorer**auf **Service1. vb** oder **Service1.cs**.
+6. Doppelklicken Sie in **Projektmappen-Explorer** auf **Service1. vb** oder **Service1.cs**.
 
    ![Die Datei "Service1"](../data-tools/media/wcf3.png)
 
@@ -118,7 +119,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 1. Zeigen Sie im Menü **Datei** auf **Hinzufügen** , und klicken Sie dann auf **Neues Projekt**.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , wählen Sie **Windows**aus, und wählen Sie dann **Windows Forms Anwendung**aus. Klicken Sie auf **OK**, um das Projekt zu öffnen.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , wählen Sie **Windows** aus, und wählen Sie dann **Windows Forms Anwendung** aus. Klicken Sie auf **OK**, um das Projekt zu öffnen.
 
      ![Windows Forms-Anwendungsprojekt](../data-tools/media/wcf7.png)
 
@@ -153,4 +154,4 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Simple Win
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

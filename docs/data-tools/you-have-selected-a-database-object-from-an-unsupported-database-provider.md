@@ -1,6 +1,6 @@
 ---
 title: Objekt von nicht unterstützter Anbieter
-description: Sie haben ein Datenbankobjekt von einem nicht unterstützten Datenbankanbieter ausgewählt.
+description: Sie haben ein Datenbankobjekt von einem nicht unterstützten Datenbankanbieter ausgewählt. Anzeigen von Informationen zu dieser Visual Studio-Meldung (O/R-Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 84841c5e0759618430f9c2e4f0146cbc2d21fae9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f4f4a24e085cf4d268512ca90e5d1b3205abc9fe
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036716"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998161"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Sie haben ein Datenbankobjekt von einem nicht unterstützten Datenbankanbieter ausgewählt.
 

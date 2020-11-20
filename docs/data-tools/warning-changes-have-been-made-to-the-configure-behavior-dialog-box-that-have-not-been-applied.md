@@ -1,6 +1,6 @@
 ---
 title: Nicht übernommene Änderungen
-description: 'Warnung: Es wurden Änderungen am Dialogfeld zum Konfigurieren des Verhaltens vorgenommen, die nicht übernommen wurden'
+description: 'Warnung: Es wurden Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht angewendet wurden. Informationen zu dieser Visual Studio O/R-Designer-Meldung anzeigen.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 02a94c7038e0825a9793521ed57eefd3a61d9e39
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7f93c4277f1922ae2d78e32d3ed940f9d7215c96
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036729"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998212"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Warnung: Es wurden Änderungen am Dialogfeld zum Konfigurieren des Verhaltens vorgenommen, die nicht übernommen wurden
 
@@ -25,7 +25,7 @@ Im Dialogfeld **Verhalten konfigurieren** können Sie das `Insert` -, `Update` -
 
 ## <a name="change-options"></a>Änderungsoptionen
 
-- Um die Änderung zu übernehmen und fortzufahren, klicken Sie auf **Ja**. Die Änderung wird auf die ausgewählte **Klasse** und das ausgewählte **Verhalten**angewendet.
+- Um die Änderung zu übernehmen und fortzufahren, klicken Sie auf **Ja**. Die Änderung wird auf die ausgewählte **Klasse** und das ausgewählte **Verhalten** angewendet.
 
 - Um die vorherige Änderung abzubrechen und fortzufahren, klicken Sie auf **Nein**.
 

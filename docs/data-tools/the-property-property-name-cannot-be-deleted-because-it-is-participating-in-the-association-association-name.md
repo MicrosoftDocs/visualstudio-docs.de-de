@@ -1,6 +1,6 @@
 ---
 title: Die Eigenschaft ist Teil der Zuordnung.
-description: Die Eigenschaft kann nicht gelöscht werden, da sie Teil der Zuordnung ist
+description: Die Eigenschaft kann nicht gelöscht werden, weil Sie an der Zuordnung teilnimmt. Anzeigen von Informationen zu dieser objektrelationaler Designer Meldung (O/R-Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d473c3aa83bc5ac4ca802067b9b9eb32073d32f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0d39fa3d7740996be3fc9da75224739f1e55539
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036209"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998372"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Die Eigenschaft &lt;Eigenschaftenname&gt; kann nicht gelöscht werden, da sie Teil der Zuordnung &lt;Zuordnungsname&gt; ist
 

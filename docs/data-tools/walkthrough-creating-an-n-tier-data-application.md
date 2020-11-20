@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer N-Tier-Daten Anwendung'
+description: Erstellen Sie in dieser exemplarischen Vorgehensweise eine N-Tier-Daten Anwendung. Bei N-Tier-Daten Anwendungen handelt es sich um apps, die auf Daten zugreifen und in Viele logische Schichten oder Ebenen aufgeteilt sind.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a09ef4cec4b7c2921322b934eef39ba660d02587
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426654"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998082"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer n-Tier-Daten Anwendung
 *N-Tier*-Datenanwendungen sind Anwendungen, die auf Daten zugreifen und in mehrere logische Ebenen (oder *Tiers*) aufgeteilt sind. Die Aufteilung der Anwendungskomponenten in verschiedene Ebenen erhöht die Verwaltbarkeit und die Skalierbarkeit der Anwendung. Auf diese Weise wird das Einarbeiten neuer, eine einzelne Ebene betreffender Technologien vereinfacht, ein erneutes Entwerfen der Anwendung ist nicht notwendig. Zur N-Tier-Architektur gehören eine Präsentationsebene, eine mittlere Ebene und eine Datenebene. Die mittlere Ebene enthält eine Datenzugriffsschicht, eine Geschäftslogikschicht und gemeinsame Komponenten, wie beispielsweise Authentifizierung und Validierung. Die Datenschicht enthält eine relationale Datenbank. N-Tier-Anwendungen speichern vertrauliche Informationen in der Datenzugriffsschicht der mittleren Ebene, um diese von Endbenutzern, die auf die Präsentationsebene zugreifen, getrennt zu halten. Weitere Informationen finden Sie unter [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md).
@@ -53,7 +55,7 @@ In dieser exemplarischen Vorgehensweise führen Sie die folgenden Schritte aus:
 ## <a name="prerequisites"></a>Voraussetzungen
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
-1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der **.net-desktopentwicklungs-** Arbeitsauslastung oder als einzelne Komponente installieren.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer** können Sie SQL Server Express localdb als Teil der **.net-desktopentwicklungs-** Arbeitsauslastung oder als einzelne Komponente installieren.
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
@@ -77,13 +79,13 @@ Im ersten Schritt dieser exemplarischen Vorgehensweise werden eine Projektmappe 
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop** aus.
 
 3. Wählen Sie im mittleren Bereich den Projekttyp **Klassenbibliothek** aus.
 
 4. Nennen Sie das Projekt **DataEntityTier**.
 
-5. Nennen Sie die Projekt Mappe **NTierWalkthrough**, und wählen Sie dann **OK**aus.
+5. Nennen Sie die Projekt Mappe **NTierWalkthrough**, und wählen Sie dann **OK** aus.
 
      Eine Projektmappe NTierWalkthrough mit dem Projekt DataEntityTier wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.
 
@@ -94,23 +96,23 @@ Nach dem Erstellen des Projekts DataEntityTier besteht der nächste Schritt dari
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** im mittleren Bereich die Option **Klassenbibliothek**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** im mittleren Bereich die Option **Klassenbibliothek** aus.
 
-3. Nennen Sie das Projekt **DataAccessTier** , und wählen Sie **OK**aus.
+3. Nennen Sie das Projekt **DataAccessTier** , und wählen Sie **OK** aus.
 
      Das Projekt DataAccessTier wird erstellt und zur Projektmappe NTierWalkthrough hinzugefügt.
 
 ## <a name="create-the-dataset"></a>Erstellen des Datasets
-Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte Datasets werden sowohl mit der DataSet-Klasse (einschließlich der `DataTables` Klassen) als auch mit den `TableAdapter` Klassen in einem einzelnen Projekt erstellt. (Alle Klassen werden in einer einzelnen Datei generiert.) Wenn Sie das DataSet und TableAdapters in verschiedene Projekte aufteilen, handelt es sich um die DataSet-Klasse, die in das andere Projekt verschoben wird und die `TableAdapter` Klassen im ursprünglichen Projekt verlässt. Erstellen Sie daher das Dataset im Projekt, das letztendlich die TableAdapters (das DataAccessTier-Projekt) enthalten soll. Das DataSet wird mithilfe des Assistenten zum **Konfigurieren von Datenquellen**erstellt.
+Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisierte Datasets werden sowohl mit der DataSet-Klasse (einschließlich der `DataTables` Klassen) als auch mit den `TableAdapter` Klassen in einem einzelnen Projekt erstellt. (Alle Klassen werden in einer einzelnen Datei generiert.) Wenn Sie das DataSet und TableAdapters in verschiedene Projekte aufteilen, handelt es sich um die DataSet-Klasse, die in das andere Projekt verschoben wird und die `TableAdapter` Klassen im ursprünglichen Projekt verlässt. Erstellen Sie daher das Dataset im Projekt, das letztendlich die TableAdapters (das DataAccessTier-Projekt) enthalten soll. Das DataSet wird mithilfe des Assistenten zum **Konfigurieren von Datenquellen** erstellt.
 
 > [!NOTE]
 > Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Weitere Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter Gewusst [wie: Installieren von Beispiel Datenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>So erstellen Sie das Dataset
 
-1. Wählen Sie in **Projektmappen-Explorer**den **DataAccessTier** aus.
+1. Wählen Sie in **Projektmappen-Explorer** den **DataAccessTier** aus.
 
-2. Wählen Sie im Menü **Daten** die Option **Datenquellen anzeigen**aus.
+2. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
    Das Fenster **Datenquellen** wird geöffnet.
 
@@ -122,7 +124,7 @@ Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisi
 
      Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-     - oder -
+     - oder -
 
      Wählen Sie **neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen** zu öffnen.
 
@@ -135,7 +137,7 @@ Der nächste Schritt besteht darin, ein typisiertes DataSet zu erstellen. Typisi
 
 8. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen** .
 
-9. Aktivieren Sie die Kontrollkästchen für die Tabellen **Customers** und **Orders** , und klicken Sie dann auf **Fertig**stellen.
+9. Aktivieren Sie die Kontrollkästchen für die Tabellen **Customers** und **Orders** , und klicken Sie dann auf **Fertig** stellen.
 
      Das NorthwindDataSet wird zum DataAccessTier-Projekt hinzugefügt und im Fenster **Datenquellen** angezeigt.
 
@@ -150,7 +152,7 @@ Nach dem Erstellen des DataSets wird die generierte DataSet-Klasse von den Table
 
 3. Suchen Sie den Knoten **DataSet-Projekt** im Fenster **Eigenschaften**.
 
-4. Wählen Sie in der Liste **DataSet-Projekt** die Option **DataEntityTier**aus.
+4. Wählen Sie in der Liste **DataSet-Projekt** die Option **DataEntityTier** aus.
 
 5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
@@ -166,9 +168,9 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit einem 
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich **WCF**aus. Wählen Sie im mittleren Bereich **WCF-Dienst Bibliothek**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich **WCF** aus. Wählen Sie im mittleren Bereich **WCF-Dienst Bibliothek** aus.
 
-3. Nennen Sie das Projekt **DataService** , und wählen Sie **OK**aus.
+3. Nennen Sie das Projekt **DataService** , und wählen Sie **OK** aus.
 
      Das Projekt DataService wird erstellt und zur Projektmappe NTierWalkthrough hinzugefügt.
 
@@ -177,7 +179,7 @@ Der Datendienst muss zwei Methoden in der Datenzugriffs Ebene aufrufen: `GetCust
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>So erstellen Sie eine Methode in der Datenzugriffsebene, die die Tabelle Customers zurückgibt
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf **NorthwindDataSet. xsd** , um das DataSet zu öffnen.
+1. Doppelklicken Sie in **Projektmappen-Explorer** auf **NorthwindDataSet. xsd** , um das DataSet zu öffnen.
 
 2. Klicken Sie mit der rechten Maustaste auf **CustomersTableAdapter** und dann auf **Abfrage hinzufügen**.
 
@@ -201,11 +203,11 @@ Der Datendienst muss zwei Methoden in der Datenzugriffs Ebene aufrufen: `GetCust
 
 4. Übernehmen Sie auf der Seite **SQL-SELECT-Anweisung angeben** die Standardabfrage, und klicken Sie auf **Weiter**.
 
-5. Geben Sie auf der Seite **Zu generierende Methoden auswählen** für den** Methodennamen** im Abschnitt **DataTable zurückgeben** die Zeichenfolge **GetOrders** ein.
+5. Geben Sie auf der Seite **Zu generierende Methoden auswählen** für den **Methodennamen** im Abschnitt **DataTable zurückgeben** die Zeichenfolge **GetOrders** ein.
 
 6. Klicken Sie auf **Fertig stellen**.
 
-7. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
+7. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
 ## <a name="add-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Hinzufügen eines Verweises auf die Daten Entität und die Datenzugriffsebenen zum Datendienst
 Da der Datendienst Informationen von DataSet und TableAdapters erfordert, müssen Verweise auf das Projekt **DataEntityTier** und das Projekt **DataAccessTier** hinzugefügt werden.
@@ -281,7 +283,7 @@ Nachdem die Datenzugriffsebene die Methoden zur Rückgabe der Daten enthält, m�
     }
     ```
 
-5. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
+5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Erstellen einer Präsentationsebene zum Anzeigen von Daten aus dem Datendienst
 Nun, da die Lösung den Datendienst enthält, der über Methoden verfügt, die die Datenzugriffs Ebene aufrufen, erstellen Sie ein weiteres Projekt, das den Datendienst aufruft und den Benutzern die Daten präsentiert. Erstellen Sie für diese exemplarische Vorgehensweise eine Windows Forms-Anwendung als Präsentationsebene der N-Tier-Anwendung.
@@ -290,7 +292,7 @@ Nun, da die Lösung den Datendienst enthält, der über Methoden verfügt, die d
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** im linken Fensterbereich **Windows-Desktop**aus. Wählen Sie im mittleren Bereich **Windows Forms App**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** im linken Fensterbereich **Windows-Desktop** aus. Wählen Sie im mittleren Bereich **Windows Forms App** aus.
 
 3. Nennen Sie das Projekt **PresentationTier**, und klicken Sie auf **OK**.
 
@@ -308,7 +310,7 @@ Die PresentationTier der Clientanwendung erfordert einen Dienstverweis auf den D
 
 ### <a name="to-add-a-reference-to-the-presentation-tier"></a>So fügen Sie einen Verweis auf die Präsentationsebene hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **PresentationTier** , und wählen Sie **Verweis hinzufügen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **PresentationTier** , und wählen Sie **Verweis hinzufügen**.
 
 2. Wählen Sie im Dialogfeld **Verweis hinzufügen** die Registerkarte **Projekte** aus.
 
@@ -316,7 +318,7 @@ Die PresentationTier der Clientanwendung erfordert einen Dienstverweis auf den D
 
 ### <a name="to-add-a-service-reference-to-the-presentation-tier"></a>So fügen Sie einen Dienstverweis auf die Präsentationsebene hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **PresentationTier** , und wählen Sie **Dienstverweis hinzufügen**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **PresentationTier** , und wählen Sie **Dienstverweis hinzufügen** aus.
 
 2. Klicken Sie im Dialogfeld **Dienstverweis hinzufügen** auf **ermitteln**.
 

@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines WCF Data Service mit WPF-& Entity Framework
+description: Erstellen Sie einen WCF Data Service mit WPF und Entity Framework, der in einer ASP.NET-Webanwendung gehostet wird, und greifen Sie dann über eine Windows Forms Anwendung darauf zu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585989"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998264"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst mit WPF und Entity Framework
 In dieser exemplarischen Vorgehensweise wird dargestellt, wie ein einfacher [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] erstellt wird, der in einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung gehostet wird, und wie dann von einer Windows Forms-Anwendung aus darauf zugegriffen wird.
@@ -43,7 +45,7 @@ In dieser exemplarischen Vorgehensweise haben Sie Folgendes:
 ## <a name="prerequisites"></a>Voraussetzungen
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
-1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer** können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
@@ -78,7 +80,7 @@ Im nächsten Schritt erstellen Sie einen [!INCLUDE[adonet_edm](../data-tools/inc
 
 ### <a name="to-create-the-entity-data-model"></a>So erstellen Sie das Entity Data Model
 
-1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
+1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Daten** und anschließend das Element **ADO.NET Entity Data Model** aus.
 
@@ -114,7 +116,7 @@ Im nächsten Schritt erstellen und testen Sie den Datendienst.
 
 ### <a name="to-create-the-data-service"></a>So erstellen Sie den Datendienst
 
-1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
+1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Web** und anschließend das Element **WCF Data Service 5.6**.
 
@@ -122,7 +124,7 @@ Im nächsten Schritt erstellen und testen Sie den Datendienst.
 
      Die Datei **NorthwindCustomers.svc** wird im **Code-Editor** angezeigt.
 
-4. Suchen Sie im **Code-Editor`TODO:` den ersten **-Kommentar, und ersetzen Sie den Code durch Folgendes:
+4. Suchen Sie im **Code-Editor`TODO:` den ersten**-Kommentar, und ersetzen Sie den Code durch Folgendes:
 
      [!code-vb[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.cs)]
@@ -134,7 +136,7 @@ Im nächsten Schritt erstellen und testen Sie den Datendienst.
 
 6. Wählen Sie in der Menüleiste **Debuggen**  >  **Starten ohne Debugging** aus, um den Dienst auszuführen. Ein Browserfenster wird geöffnet, und das XML-Schema für den Dienst wird angezeigt.
 
-7. Geben Sie in der **Adress** Leiste `Customers` am Ende der URL für **NorthwindCustomers. svc**ein, und drücken Sie dann die **Eingabe** Taste.
+7. Geben Sie in der **Adress** Leiste `Customers` am Ende der URL für **NorthwindCustomers. svc** ein, und drücken Sie dann die **Eingabe** Taste.
 
      Eine XML-Darstellung der Daten in der `Customers` Tabelle wird angezeigt.
 
@@ -152,9 +154,9 @@ Im ersten Schritt fügen Sie ein Windows Forms-Projekt zur Projekt Mappe hinzu u
 
 ### <a name="to-create-the-client-application"></a>So erstellen Sie die Clientanwendung
 
-1. Wählen Sie in der Menüleiste Datei, **Add**  >  **Neues Projekt**hinzufügen aus.
+1. Wählen Sie in der Menüleiste Datei, **Add**  >  **Neues Projekt** hinzufügen aus.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , wählen Sie den Knoten **Windows** aus, und wählen Sie dann **Windows Forms Anwendung**aus.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , wählen Sie den Knoten **Windows** aus, und wählen Sie dann **Windows Forms Anwendung** aus.
 
 3. Geben Sie im Textfeld **Name**`NorthwindClient` ein, und wählen Sie dann die Schaltfläche **OK** aus.
 
@@ -166,7 +168,7 @@ Im nächsten Schritt fügen Sie dem im Webprojekt einen Dienst Verweis hinzu [!I
 
 ### <a name="to-add-a-service-reference"></a>So fügen Sie einen Dienstverweis hinzu
 
-1. Wählen Sie in der Menüleiste **Projekt**  >  **Dienstverweis hinzufügen**aus.
+1. Wählen Sie in der Menüleiste **Projekt**  >  **Dienstverweis hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Dienstverweis hinzufügen** die Schaltfläche **Ermitteln** aus.
 
@@ -178,7 +180,7 @@ Im nächsten Schritt konfigurieren Sie eine Datenquelle, um die Datenbindung an 
 
 ### <a name="to-enable-data-binding-to-the-service"></a>So aktivieren Sie die Datenbindung zum Dienst
 
-1. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **Datenquellen**anzeigen aus.
+1. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **Datenquellen** anzeigen aus.
 
    Das Fenster **Datenquellen** wird geöffnet.
 
@@ -202,7 +204,7 @@ Im nächsten Schritt erstellen Sie die Benutzeroberfläche, auf der die Daten au
 
 3. Wählen Sie das **CustomersDataGridView**-Steuerelement aus, und legen Sie dann im Fenster **Eigenschaften** die Eigenschaft **Andocken** auf **Füllbereich** fest.
 
-4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Knoten **Form1** , und wählen Sie **Code anzeigen** , um den Code-Editor zu öffnen, und fügen Sie `Imports` am Anfang der Datei die folgende-oder- `Using` Anweisung hinzu:
+4. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Knoten **Form1** , und wählen Sie **Code anzeigen** , um den Code-Editor zu öffnen, und fügen Sie `Imports` am Anfang der Datei die folgende-oder- `Using` Anweisung hinzu:
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -251,7 +253,7 @@ In diesem Schritt passen Sie die Anwendung an, um die Daten nach der Stadt des K
 
 2. Fügen Sie dem Formular ein <xref:System.Windows.Forms.TextBox>- und ein <xref:System.Windows.Forms.Button>-Steuerelement aus der **Toolbox** hinzu.
 
-3. Öffnen Sie das Kontextmenü für das- <xref:System.Windows.Forms.Button> Steuerelement, wählen Sie **Code anzeigen**aus, und fügen Sie dann den folgenden Code im- `Button1_Click` Ereignishandler hinzu:
+3. Öffnen Sie das Kontextmenü für das- <xref:System.Windows.Forms.Button> Steuerelement, wählen Sie **Code anzeigen** aus, und fügen Sie dann den folgenden Code im- `Button1_Click` Ereignishandler hinzu:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -289,4 +291,4 @@ In diesem Schritt passen Sie die Anwendung an, um die Daten nach der Stadt des K
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Vorgehensweise: Hinzufügen, aktualisieren oder Entfernen eines WCF-Datendienst Verweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [How to: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
