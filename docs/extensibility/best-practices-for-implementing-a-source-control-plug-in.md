@@ -1,5 +1,6 @@
 ---
 title: 'Implementieren eines Quellcodeverwaltungs-Plug-ins: bewährte Methoden'
+description: Überprüfen Sie diese technischen Details, damit Sie ein Quellcodeverwaltungs-Plug-in in Visual Studio zuverlässig implementieren können.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038451"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974632"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Bewährte Methoden für die Implementierung eines Quellcodeverwaltungs-Plug-ins
 Die folgenden technischen Details helfen Ihnen bei der zuverlässigen Implementierung eines Quellcodeverwaltungs-Plug-ins in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -58,6 +59,6 @@ Die folgenden technischen Details helfen Ihnen bei der zuverlässigen Implementi
 
  Die meisten vom benutzerkonfigurierbaren Einstellungsoptionen werden nicht auf diese Weise definiert, da Sie sich in den Quellcodeverwaltungs-Plug-ins stark unterscheiden. Daher ist der empfohlene Mechanismus eine Schaltfläche **erweitert** . Beispielsweise zeigt die IDE im Dialogfeld **Get** nur Informationen an, die Sie versteht. Sie zeigt jedoch auch eine Schaltfläche **erweitert** an, wenn das Plug-in über Optionen für diesen Befehl verfügt. Wenn der Benutzer auf die Schaltfläche **erweitert** klickt, ruft die IDE [sccgetcommandoptions](../extensibility/sccgetcommandoptions-function.md) auf, damit das Quellcodeverwaltungs-Plug-in den Benutzer zur Eingabe von Informationen auffordern kann, z. b. Bitflags oder Datum/Uhrzeit. Das Plug-in gibt diese Informationen in einer-Struktur zurück, die während des-Befehls zurückgegeben wird `SccGet` .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 - [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)
 - [Erstellen eines Quellcodeverwaltungs-Plug-ins](../extensibility/internals/creating-a-source-control-plug-in.md)

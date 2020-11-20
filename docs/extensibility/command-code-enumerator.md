@@ -1,5 +1,7 @@
 ---
 title: Befehls Code Enumerator | Microsoft-Dokumentation
+description: Der Befehls Code Enumerator wird in Optionen für sccgetcommandoptions und sccauffüllen verwendet, um den Befehl anzugeben, für den die Optionen angegeben werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a831813bb975819e9152dfab4d4eefd6b440606
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739786"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974261"
 ---
 # <a name="command-code-enumerator"></a>Befehls Code Enumerator
 Dieser Enumerator wird in den Optionen für [sccgetcommandoptions](../extensibility/sccgetcommandoptions-function.md) und [sccpopulatelist](../extensibility/sccpopulatelist-function.md)zum Angeben des Befehls verwendet, für den die Optionen angegeben werden.
@@ -62,7 +64,7 @@ SCC_COMMAND_PROPERTIES entspricht den [sccproperties-Objekten](../extensibility/
 
 SCC_COMMAND_OPTIONS entspricht der [sccsetoption](../extensibility/sccsetoption-function.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 - [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

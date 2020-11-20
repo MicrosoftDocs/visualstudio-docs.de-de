@@ -1,5 +1,7 @@
 ---
 title: Binden von Tastenkombinationen an Menü Elemente | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie einer benutzerdefinierten Schaltfläche, einem Menü Element oder einem Symbolleisten Befehl für den Standard Editor oder einen benutzerdefinierten Editor eine Tastenkombination in Visual Studio zuordnen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407717"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974618"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menü Elemente
 Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine Tastenkombination an einen benutzerdefinierten Menübefehl zu binden. In diesem Thema wird erläutert, wie einer benutzerdefinierten Schaltfläche, einem Menü Element oder einem Symbolleisten Befehl eine Tastenkombination zugeordnet wird und wie die Tastatur Zuordnung im Standard-Editor angewendet oder auf einen benutzerdefinierten Editor beschränkt wird.
@@ -59,7 +61,7 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 
     Legen `guid`  Sie das-Attribut und das-  `id` Attribut auf die des Befehls fest, den Sie aufrufen möchten.
 
-    Legen Sie das- `mod1` Attribut auf **Control** , **alt** oder **Shift** fest.
+    Legen Sie das- `mod1` Attribut auf **Control**, **alt** oder **Shift** fest.
 
     Der Abschnitt "KeyBinding" sollte in etwa wie folgt aussehen:
 
@@ -105,5 +107,5 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)

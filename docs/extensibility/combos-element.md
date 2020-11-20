@@ -1,5 +1,7 @@
 ---
 title: Combos-Element | Microsoft-Dokumentation
+description: Das Combos-Element gruppiert Kombinations Elemente, die Befehle definieren, die in einem Kombinations Feld angezeigt werden. Dieser Artikel enthält ein Beispiel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eba7b40a6e770c5076a4d1aa89bf6196f7ef8684
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739798"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974244"
 ---
 # <a name="combos-element"></a>Combos-Element
 Gruppiert Kombinations [Element](../extensibility/combo-element.md) -Elemente.
@@ -35,7 +37,7 @@ Gruppiert Kombinations [Element](../extensibility/combo-element.md) -Elemente.
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 

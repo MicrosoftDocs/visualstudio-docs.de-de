@@ -1,5 +1,7 @@
 ---
 title: Befehlsflag-Element | Microsoft-Dokumentation
+description: Das Befehlsflag-Element ändert das übergeordnete Element. Überprüfen Sie die übergeordneten Elemente und untergeordneten Elemente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649368"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974190"
 ---
 # <a name="command-flag-eelement"></a>Eelement für Befehlsflag
 Ändert das übergeordnete Element.
@@ -35,7 +37,7 @@ ms.locfileid: "81649368"
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |Allowparametriams|Gibt an, dass Benutzer Befehlsparameter im **Befehls** Fenster eingeben können, wenn Sie den kanonischen Namen des Befehls eingeben.<br /><br /> Gültig für: `Button`|
 |AlwaysCreate|Das Menü wird auch dann erstellt, wenn es keine Gruppen oder Schaltflächen enthält.<br /><br /> Gültig für: `Menu`|
@@ -69,10 +71,10 @@ ms.locfileid: "81649368"
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[Buttons-Element](../extensibility/buttons-element.md)|Stellt eine Gruppe für [Schaltflächen Element](../extensibility/button-element.md) Elemente bereit.|
 |[Menüs-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die von einem VSPackage implementiert werden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 - [Visual Studio-Befehls Tabelle (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

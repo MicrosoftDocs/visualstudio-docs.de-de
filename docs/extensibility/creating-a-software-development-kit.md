@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Software Development Kits | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die allgemeine Infrastruktur von SDKs und wie Sie ein Platform SDK und ein Erweiterungs-SDK erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904119"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974330"
 ---
 # <a name="create-a-software-development-kit"></a>Erstellen einer Software Development Kit
 
@@ -50,7 +52,7 @@ Platform sdgs verfügen über das folgende Layout:
                         \[arch]
 ```
 
-| Node | BESCHREIBUNG |
+| Knoten | BESCHREIBUNG |
 |------------------------| - |
 | Ordner " *Verweise* " | Enthält Binärdateien, die APIs enthalten, die für codiert werden können. Diese können Windows-Metadatendateien (winmd) oder Assemblys enthalten. |
 | *DesignTime* -Ordner | Enthält Dateien, die nur zum Zeitpunkt des Vorlaufs/Debuggens benötigt werden. Hierzu können XML-Dokumente, Bibliotheken, Header, Toolbox-Entwurfszeit Binärdateien, MSBuild-Artefakte usw. gehören.<br /><br /> XML-Dokumente würden im Idealfall in den Ordner *\designtime* eingefügt werden, aber XML-Dokumente für Verweise werden weiterhin neben der Verweis Datei in Visual Studio platziert. Beispielsweise ist das XML-Dokument für einen Verweis "<em>\references \\ [config] \\ [Arch] \sample.dll</em> " *\references \\ [config] \\ [Arch] \sample.xml*, und die lokalisierte Version des Dokuments lautet " *\references \\ [config] \\ [Arch] \\ [locale] \sample.xml*". |
@@ -107,7 +109,7 @@ Erweiterungs-sdert verfügen über das folgende Installations Layout:
 
 2. *Verweise* Ordner: die Binärdateien, die die APIs enthalten. Dies können Windows-Metadatendateien (winmd) oder Assemblys sein.
 
-3. *Redist* -Ordner: die Dateien, die für die Laufzeit/das Debuggen erforderlich sind und als Teil der Anwendung des Benutzers verpackt werden. Alle Binärdateien sollten unterhalb von *\Redist \\<config \> \\<Arch \> *platziert werden, und die binären Namen sollten das folgende Format aufweisen, um die Eindeutigkeit sicherzustellen: *]* \<company> . \<product> . \<purpose> \<extension> . <em>. Beispiel: * Microsoft.Cpp.Build.dll</em>. Alle Dateien, deren Namen mit Dateinamen anderer SDKs in Konflikt stehen (z. b. JavaScript-, CSS-, PRI-, XAML-, PNG-und JPG-Dateien), sollten unterhalb <em>von \Redist \\<config \> \\<Arch \> \\<sdkname platziert werden, mit \> \* Ausnahme der Dateien, die XAML-Steuerelementen zugeordnet sind. Diese Dateien sollten unterhalb von * \Redist \\<config \> \\<Arch \> \\ \> \\<componentname platziert werden</em>.
+3. *Redist* -Ordner: die Dateien, die für die Laufzeit/das Debuggen erforderlich sind und als Teil der Anwendung des Benutzers verpackt werden. Alle Binärdateien sollten unterhalb von *\Redist \\<config \> \\<Arch \>* platziert werden, und die binären Namen sollten das folgende Format aufweisen, um die Eindeutigkeit sicherzustellen: *]* \<company> . \<product> . \<purpose> \<extension> . <em>. Beispiel: * Microsoft.Cpp.Build.dll</em>. Alle Dateien, deren Namen mit Dateinamen anderer SDKs in Konflikt stehen (z. b. JavaScript-, CSS-, PRI-, XAML-, PNG-und JPG-Dateien), sollten unterhalb <em>von \Redist \\<config \> \\<Arch \> \\<sdkname platziert werden, mit \> \* Ausnahme der Dateien, die XAML-Steuerelementen zugeordnet sind. Diese Dateien sollten unterhalb von * \Redist \\<config \> \\<Arch \> \\ \> \\<componentname platziert werden</em>.
 
 4. Ordner " *DesignTime* ": die Dateien, die nur zum Zeitpunkt der vor-und Debuggen benötigt werden und nicht als Teil der Anwendung des Benutzers verpackt werden sollten. Dabei kann es sich um XML-Dokumente, Bibliotheken, Header, Toolbox-Entwurfszeit Binärdateien, MSBuild-Artefakte usw. handeln. Jedes SDK, das für die Nutzung durch ein System eigenes Projekt vorgesehen ist, muss über eine *sdkname. requizeddatei* verfügen. Das folgende Beispiel zeigt ein Beispiel für diesen Dateityp.
 
@@ -127,9 +129,9 @@ Erweiterungs-sdert verfügen über das folgende Installations Layout:
 
    ```
 
-    XML-Verweis Dokumente werden neben der Verweis Datei platziert. Das XML-Referenzdokument für die Datei *\references \\<config \> \\<Arch \>\sample.dll* lautet z. b. *\references \\<config \> \\<Arch \>\sample.xml*, und die lokalisierte Version dieses Dokuments lautet *\references \\<config<\> \\ arch \> \\<locale \> *\sample.xml.
+    XML-Verweis Dokumente werden neben der Verweis Datei platziert. Das XML-Referenzdokument für die Datei *\references \\<config \> \\<Arch \>\sample.dll* lautet z. b. *\references \\<config \> \\<Arch \>\sample.xml*, und die lokalisierte Version dieses Dokuments lautet *\references \\<config<\> \\ arch \> \\<locale \>* \sample.xml.
 
-5. *Konfigurations* Ordner: drei Unterordner: *Debug*, *Retail*und *commonconfiguration*. SDK-Autoren können Ihre Dateien unter *commonconfiguration* platzieren, wenn dieselbe Gruppe von SDK-Dateien verwendet werden soll, unabhängig von der Konfiguration, die der SDK-Consumer als Ziel verwendet.
+5. *Konfigurations* Ordner: drei Unterordner: *Debug*, *Retail* und *commonconfiguration*. SDK-Autoren können Ihre Dateien unter *commonconfiguration* platzieren, wenn dieselbe Gruppe von SDK-Dateien verwendet werden soll, unabhängig von der Konfiguration, die der SDK-Consumer als Ziel verwendet.
 
 6. *Architektur* Ordner: die folgenden Architekturen werden unterstützt: x86, x64, arm, neutral. Win32 ist x86 zugeordnet, und AnyCPU ist neutral zugeordnet.
 
@@ -183,7 +185,7 @@ Die folgende Liste enthält die Elemente der Datei:
 
 10. Supportsmultipleversions: Wenn dieses Attribut auf " **Error** " oder " **Warning**" festgelegt ist, gibt MSBuild an, dass das gleiche Projekt nicht auf mehrere Versionen derselben SDK-Familie verweisen kann. Wenn dieses Attribut nicht vorhanden oder auf " **zulassen**" festgelegt ist, zeigt MSBuild diese Art von Fehler oder Warnung nicht an.
 
-11. AppX: gibt den Pfad zu den App-Paketen für die Windows-Komponentenbibliothek auf dem Datenträger an. Dieser Wert wird während des lokalen Debuggens an die Registrierungs Komponente der Windows-Komponentenbibliothek übermittelt. Die Benennungs Konvention für den Dateinamen lautet * \<Company> . \<Product> .. \<Architecture> \<Configuration> . \<Version> AppX*. Konfiguration und Architektur sind im Attributnamen und im Attribut Wert optional, wenn Sie nicht auf die Windows-Komponentenbibliothek angewendet werden. Dieser Wert gilt nur für Windows-Komponenten Bibliotheken.
+11. AppX: gibt den Pfad zu den App-Paketen für die Windows-Komponentenbibliothek auf dem Datenträger an. Dieser Wert wird während des lokalen Debuggens an die Registrierungs Komponente der Windows-Komponentenbibliothek übermittelt. Die Benennungs Konvention für den Dateinamen lautet *\<Company> . \<Product> .. \<Architecture> \<Configuration> . \<Version> AppX*. Konfiguration und Architektur sind im Attributnamen und im Attribut Wert optional, wenn Sie nicht auf die Windows-Komponentenbibliothek angewendet werden. Dieser Wert gilt nur für Windows-Komponenten Bibliotheken.
 
 12. Copyredistto subdirectory: gibt an, wo die Dateien im Ordner *\Redist* relativ zum Stamm des App-Pakets kopiert werden sollen (d. h. der im Assistenten zum **Erstellen von App-Paketen** ausgewählte **Paketspeicherort** ) und das Lauf Zeit Layout-Stammverzeichnis. Der Standard Speicherort ist der Stamm des App-Pakets und des **F5** -Layouts.
 
@@ -267,7 +269,7 @@ Das **ToolBoxItems** -Element des *SDKManifest.xml* Schemas gibt die Kategorie u
     </File>
     ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Exemplarische Vorgehensweise: Erstellen eines SDK mithilfe von C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Exemplarische Vorgehensweise: Erstellen eines SDK mit c# oder Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

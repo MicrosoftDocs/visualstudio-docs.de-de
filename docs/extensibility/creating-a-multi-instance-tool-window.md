@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Tool Fensters mit mehreren Instanzen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Tool Fenster so ändern, dass mehrere Instanzen von gleichzeitig geöffnet werden können. Standardmäßig kann für Tool Fenster nur eine Instanz geöffnet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904057"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974006"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Erstellen eines Tool Fensters mit mehreren Instanzen
 Sie können ein Tool Fenster programmieren, sodass mehrere Instanzen von gleichzeitig geöffnet werden können. Standardmäßig kann für Tool Fenster nur eine Instanz geöffnet werden.
@@ -25,7 +27,7 @@ Wenn Sie ein Tool Fenster mit mehreren Instanzen verwenden, können Sie mehrere 
 
 ## <a name="create-a-basic-single-instance-tool-window"></a>Erstellen eines einfachen Tool Fensters (Einzel Instanz)
 
-1. Erstellen Sie ein Projekt mit dem Namen **multiinstancetoolwindow** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Tool Fenster-Element Vorlage mit dem Namen **mitoolwindow**hinzu.
+1. Erstellen Sie ein Projekt mit dem Namen **multiinstancetoolwindow** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Tool Fenster-Element Vorlage mit dem Namen **mitoolwindow** hinzu.
 
     > [!NOTE]
     > Weitere Informationen zum Erstellen einer Erweiterung mit einem Tool Fenster finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
