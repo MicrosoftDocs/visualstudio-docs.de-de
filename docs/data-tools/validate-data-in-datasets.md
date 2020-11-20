@@ -1,5 +1,7 @@
 ---
 title: Überprüfen von Daten in Datasets
+description: Erfahren Sie, wie Sie Daten in Datasets validieren. Beim Validieren von Daten wird bestätigt, dass in Datenobjekte eingegebene Werte den Einschränkungen im Schema eines Datasets entsprechen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281083"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998303"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 Beim Validieren von Daten wird bestätigt, dass die Werte, die in Datenobjekte eingegeben werden, den Einschränkungen im Schema eines Datasets entsprechen. Der Überprüfungsprozess bestätigt auch, dass diese Werte den Regeln entsprechen, die für Ihre Anwendung eingerichtet wurden. Es empfiehlt sich, Daten vor dem Senden von Aktualisierungen an die zugrunde liegende Datenbank zu validieren. Dadurch werden Fehler sowie die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank reduziert.
@@ -64,7 +66,7 @@ Wenn Ihre Anwendung ein typisiertes DataSet verwendet, können Sie stark typisie
 
 ## <a name="data-update-events"></a>Daten Aktualisierungs Ereignisse
 
-|Ereignis|BESCHREIBUNG|
+|event|BESCHREIBUNG|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Der Wert in einer Spalte wird geändert. Das Ereignis übergibt die Zeile und die Spalte zusammen mit dem vorgeschlagenen neuen Wert.|
 |<xref:System.Data.DataTable.ColumnChanged>|Der Wert in einer Spalte wurde geändert. Das Ereignis übergibt die Zeile und die Spalte zusammen mit dem vorgeschlagenen Wert an Sie.|

@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren von MDF-Dateien
+description: Überprüfen Sie die Optionen zum Aktualisieren einer Datenbankdatei (. mdf), nachdem Sie eine neuere Version von Visual Studio installiert haben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281122"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998043"
 ---
 # <a name="upgrade-mdf-files"></a>Aktualisieren von MDF-Dateien
 
@@ -57,7 +59,7 @@ Berücksichtigen Sie die folgenden Kriterien, bevor Sie ein Upgrade für eine Da
 
 ### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>So aktualisieren Sie eine Datenbankdatei für die Verwendung der localdb-Version
 
-1. Wählen Sie in **Server-Explorer**die Schaltfläche **Verbindung mit Datenbank herstellen** aus.
+1. Wählen Sie in **Server-Explorer** die Schaltfläche **Verbindung mit Datenbank herstellen** aus.
 
 2. Geben Sie im Dialogfeld **Verbindung hinzufügen** die folgenden Informationen an:
 
@@ -79,11 +81,11 @@ Berücksichtigen Sie die folgenden Kriterien, bevor Sie ein Upgrade für eine Da
 
     Die Datenbank wird aktualisiert, an die localdb-Datenbank-Engine angefügt und ist nicht mehr mit der älteren Version von localdb kompatibel.
 
-Sie können auch eine SQL Server Express Verbindung ändern, um localdb zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen und dann **Verbindung ändern**auswählen. Ändern Sie im Dialogfeld **Verbindung ändern** den Servernamen in `(LocalDB)\MSSQLLocalDB` . Stellen Sie im Dialogfeld **Erweiterte Eigenschaften** sicher, dass die **Benutzer Instanz** auf **false**festgelegt ist.
+Sie können auch eine SQL Server Express Verbindung ändern, um localdb zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen und dann **Verbindung ändern** auswählen. Ändern Sie im Dialogfeld **Verbindung ändern** den Servernamen in `(LocalDB)\MSSQLLocalDB` . Stellen Sie im Dialogfeld **Erweiterte Eigenschaften** sicher, dass die **Benutzer Instanz** auf **false** festgelegt ist.
 
 ### <a name="to-upgrade-a-database-file-to-use-the-sql-server-express-version"></a>So aktualisieren Sie eine Datenbankdatei für die Verwendung der SQL Server Express Version
 
-1. Wählen Sie im Kontextmenü für die Verbindung mit der Datenbank **Verbindung ändern**aus.
+1. Wählen Sie im Kontextmenü für die Verbindung mit der Datenbank **Verbindung ändern** aus.
 
 2. Klicken Sie im Dialogfeld **Verbindung ändern** auf die Schaltfläche **erweitert** .
 
@@ -101,9 +103,9 @@ Sie können auch eine SQL Server Express Verbindung ändern, um localdb zu verwe
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>So erstellen Sie SQL Server Express der Standarddatenbank-Engine
 
-1. Wählen Sie auf der Menüleiste **Extras** > **Optionen** aus.
+1. Wählen Sie in der Menüleiste **Tools** > **Optionen** aus.
 
-2. Erweitern Sie im Dialogfeld **Optionen** die Optionen **Daten Bank Tools** , und wählen Sie dann **Datenverbindungen**aus.
+2. Erweitern Sie im Dialogfeld **Optionen** die Optionen **Daten Bank Tools** , und wählen Sie dann **Datenverbindungen** aus.
 
 3. Geben Sie im Textfeld **SQL Server Instanzname** den Namen der Instanz von SQL Server Express oder localdb an, die Sie verwenden möchten. Wenn die-Instanz nicht benannt ist, geben Sie an `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` .
 

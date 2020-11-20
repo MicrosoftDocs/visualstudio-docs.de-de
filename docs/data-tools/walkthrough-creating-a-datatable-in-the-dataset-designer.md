@@ -1,5 +1,6 @@
 ---
 title: Erstellen Sie eine Datentabelle im DataSet-Designer
+description: Erstellen Sie in dieser exemplarischen Vorgehensweise eine Datentabelle (ohne TableAdapter), indem Sie die DataSet-Designer verwenden. Erstellen Sie eine neue Windows Forms Anwendung, und fügen Sie Ihr ein neues Dataset hinzu.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -13,28 +14,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7dd762c6df5eebc9ebbf142a3ad7dfe430800802
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036768"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998251"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen einer Datentabelle in der DataSet-Designer
 
-In dieser exemplarischen Vorgehensweise wird erläutert, wie ein <xref:System.Data.DataTable> (ohne TableAdapter) mithilfe der **DataSet-Designer**erstellt wird. Weitere Informationen zum Erstellen von Datentabellen, die TableAdapters enthalten, finden Sie unter [Erstellen und Konfigurieren von TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+In dieser exemplarischen Vorgehensweise wird erläutert, wie ein <xref:System.Data.DataTable> (ohne TableAdapter) mithilfe der **DataSet-Designer** erstellt wird. Weitere Informationen zum Erstellen von Datentabellen, die TableAdapters enthalten, finden Sie unter [Erstellen und Konfigurieren von TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 ## <a name="create-a-new-windows-forms-application"></a>Erstellen einer neuen Windows Forms-Anwendung
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop** aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **DataTableWalkthrough**, und wählen Sie dann **OK**aus.
+4. Nennen Sie das Projekt **DataTableWalkthrough**, und wählen Sie dann **OK** aus.
 
-     Das Projekt **DataTableWalkthrough** wird erstellt und **Projektmappen-Explorer**hinzugefügt.
+     Das Projekt **DataTableWalkthrough** wird erstellt und **Projektmappen-Explorer** hinzugefügt.
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Hinzufügen eines neuen Datasets zur Anwendung
 
@@ -42,7 +43,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein <xref:System.Da
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-2. Wählen Sie im linken Bereich **Daten**aus, und wählen Sie dann im mittleren Bereich **DataSet** aus.
+2. Wählen Sie im linken Bereich **Daten** aus, und wählen Sie dann im mittleren Bereich **DataSet** aus.
 
 3. Wählen Sie **Hinzufügen** aus.
 
@@ -80,7 +81,7 @@ Um den Primärschlüssel festzulegen, klicken Sie mit der rechten Maustaste auf 
 
 ## <a name="save-your-project"></a>Speichern Ihres Projekts
 
-Um das Projekt **DataTableWalkthrough** zu speichern, wählen Sie im Menü **Datei** die Option **Alle speichern**aus.
+Um das Projekt **DataTableWalkthrough** zu speichern, wählen Sie im Menü **Datei** die Option **Alle speichern** aus.
 
 ## <a name="see-also"></a>Weitere Informationen
 

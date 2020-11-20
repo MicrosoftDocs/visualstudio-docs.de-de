@@ -1,5 +1,6 @@
 ---
 title: LINQ to SQL Klassen mit Vererbung einer einzelnen Tabelle
+description: In dieser exemplarischen Vorgehensweise erstellen Sie LINQ to SQL Klassen, indem Sie die Vererbung einer einzelnen Tabelle im Visual Studio-objektrelationaler Designer (O/R-Designer) verwenden.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036755"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998238"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Exemplarische Vorgehensweise: Erstellen von LINQ to SQL Klassen mithilfe einer Vererbung für eine einzelne Tabelle (O/R-Designer)
 Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) unterstützen die Vererbung einer einzelnen Tabelle, da Sie in der Regel in relationalen Systemen implementiert ist. In dieser exemplarischen Vorgehensweise werden die allgemeinen Schritte beschrieben, die im Thema Gewusst [wie: Konfigurieren der Vererbung mit dem O/R-Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) erläutert werden, und es werden echte Daten bereitgestellt, um die Verwendung der Vererbung in zu veranschaulichen [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -43,20 +44,20 @@ Um zu sehen, wie die Vererbung funktioniert, erstellen Sie eine kleine `Person` 
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>So erstellen Sie eine Basistabelle zur Veranschaulichung der Vererbung
 
-1. Klicken Sie in **Server-Explorer** oder **Datenbank-Explorer**mit der rechten Maustaste auf den Knoten **Tabellen** , und klicken Sie auf **neue Tabelle hinzufügen**.
+1. Klicken Sie in **Server-Explorer** oder **Datenbank-Explorer** mit der rechten Maustaste auf den Knoten **Tabellen** , und klicken Sie auf **neue Tabelle hinzufügen**.
 
     > [!NOTE]
     > Sie können die Northwind-Datenbank oder eine andere Datenbank verwenden, der Sie eine Tabelle hinzufügen können.
 
-2. Fügen Sie in der **Tabellen-Designer**der Tabelle die folgenden Spalten hinzu:
+2. Fügen Sie in der **Tabellen-Designer** der Tabelle die folgenden Spalten hinzu:
 
     |Spaltenname|Datentyp|NULL-Werte zulassen|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**Type**|**int**|**True**|
+    |**Type**|**int**|**Wahr**|
     |**Vorname**|**nvarchar(200)**|**False**|
     |**Nachname**|**nvarchar(200)**|**False**|
-    |**Manager**|**int**|**True**|
+    |**Manager**|**int**|**Wahr**|
 
 3. Legen Sie die ID-Spalte als Primärschlüssel fest.
 
@@ -71,7 +72,7 @@ Um sicherstellen zu können, dass die Vererbung ordnungsgemäß konfiguriert ist
 
 2. Kopieren Sie die folgenden Daten in die Tabelle. (Sie können Sie kopieren und in die Tabelle einfügen, indem Sie im **Ergebnis** Bereich die gesamte Zeile auswählen.)
 
-    |**ID**|**Type**|**Vorname**|**Nachname**|**Manager**|
+    |**ID**|**Typ**|**Vorname**|**Nachname**|**Manager**|
     |-|-|-|-|-|
     |**1**|**1**|**Anna**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -86,18 +87,18 @@ Um sicherstellen zu können, dass die Vererbung ordnungsgemäß konfiguriert ist
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
 Nachdem Sie die Tabelle erstellt haben, erstellen Sie ein neues Projekt zur Darstellung der Konfiguration von Vererbung.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>So erstellen Sie die neue Windows Forms Anwendung
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop** aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt " **vererancewalkthrough**", und wählen Sie dann **OK**aus.
+4. Nennen Sie das Projekt " **vererancewalkthrough**", und wählen Sie dann **OK** aus.
 
      Das **InheritanceWalkthrough**-Projekt wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.
 
@@ -116,7 +117,7 @@ Konfigurieren Sie die Vererbung, indem Sie aus der **Toolbox** ein Objekt aus de
 
 ### <a name="to-create-the-inheritance"></a>So erstellen Sie die Vererbung
 
-1. Navigieren Sie in **Server-Explorer** oder **Datenbank-Explorer**zu der **Person** -Tabelle, die Sie zuvor erstellt haben.
+1. Navigieren Sie in **Server-Explorer** oder **Datenbank-Explorer** zu der **Person** -Tabelle, die Sie zuvor erstellt haben.
 
 2. Ziehen Sie die **Person** -Tabelle auf die Entwurfs Oberfläche des **O/R-Designers** .
 
@@ -126,7 +127,7 @@ Konfigurieren Sie die Vererbung, indem Sie aus der **Toolbox** ein Objekt aus de
 
 5. Löschen Sie die Eigenschaften **Type**, **ID**, **FirstName** und **LastName** aus dem Objekt **Employee**. (Mit anderen Worten: Entfernen Sie alle Eigenschaften außer **Manager**.)
 
-6. Erstellen Sie von der Registerkarte **Objektrelationaler Designer** der **Toolbox** eine **Vererbung** zwischen dem **Person**-Objekt und dem **Employee**-Objekt. Klicken Sie dazu in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie anschließend im **O/R-Designer**auf das **Employee** -Objekt und dann auf das **Person** -Objekt. Der Pfeil in der Vererbungs Zeile zeigt dann auf das **Person** -Objekt.
+6. Erstellen Sie von der Registerkarte **Objektrelationaler Designer** der **Toolbox** eine **Vererbung** zwischen dem **Person**-Objekt und dem **Employee**-Objekt. Klicken Sie dazu in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie anschließend im **O/R-Designer** auf das **Employee** -Objekt und dann auf das **Person** -Objekt. Der Pfeil in der Vererbungs Zeile zeigt dann auf das **Person** -Objekt.
 
 7. Klicken Sie auf die Linie der **Vererbung** auf der Entwurfsoberfläche.
 

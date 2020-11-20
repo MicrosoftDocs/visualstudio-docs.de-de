@@ -1,5 +1,6 @@
 ---
 title: Anpassen von Insert/Update/Delete-Verhalten
+description: Passen Sie in dieser exemplarischen Vorgehensweise das Einfüge-, Aktualisierungs-und Lösch Verhalten von Entitäts Klassen mithilfe der LINQ (Language-Integrated Query) in SQL-Tools in Visual Studio an.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036742"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997926"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Exemplarische Vorgehensweise: Anpassen des Einfüge-, Aktualisierungs-und Lösch Verhaltens von Entitäts Klassen
 
@@ -42,7 +43,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 
 - Implementieren der Speicherfunktion für das Formular.
 
-- Erstellen <xref:System.Data.Linq.DataContext> Sie Methoden, indem Sie dem **O/R-Designer**gespeicherte Prozeduren hinzufügen.
+- Erstellen <xref:System.Data.Linq.DataContext> Sie Methoden, indem Sie dem **O/R-Designer** gespeicherte Prozeduren hinzufügen.
 
 - Konfigurieren Sie die- `Customer` Klasse für die Verwendung gespeicherter Prozeduren, um Einfügungen, Aktualisierungen und Löschungen
 
@@ -50,11 +51,11 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 
 In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und Northwind-Beispieldatenbank verwendet.
 
-1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer**können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
+1. Wenn Sie nicht über SQL Server Express localdb verfügen, installieren Sie es entweder über die [SQL Server Express Downloadseite](https://www.microsoft.com/sql-server/sql-server-editions-express)oder über das **Visual Studio-Installer**. Im **Visual Studio-Installer** können Sie SQL Server Express localdb als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** oder als einzelne Komponente installieren.
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
-    1. Öffnen Sie in Visual Studio das Fenster **SQL Server-Objekt-Explorer** . (**SQL Server-Objekt-Explorer** als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** im **Visual Studio-Installer**installiert.) Erweitern Sie den Knoten **SQL Server** . Klicken Sie mit der rechten Maustaste auf die localdb-Instanz, und wählen Sie **neue Abfrage**.
+    1. Öffnen Sie in Visual Studio das Fenster **SQL Server-Objekt-Explorer** . (**SQL Server-Objekt-Explorer** als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** im **Visual Studio-Installer** installiert.) Erweitern Sie den Knoten **SQL Server** . Klicken Sie mit der rechten Maustaste auf die localdb-Instanz, und wählen Sie **neue Abfrage**.
 
        Ein Abfrage-Editor-Fenster wird geöffnet.
 
@@ -74,11 +75,11 @@ Da Sie mit LINQ to SQL Klassenarbeiten und die Daten in einem Windows Form anzei
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop** aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **UpdatingwithSProcsWalkthrough**, und wählen Sie dann **OK**aus.
+4. Nennen Sie das Projekt **UpdatingwithSProcsWalkthrough**, und wählen Sie dann **OK** aus.
 
      Das Projekt **UpdatingwithSProcsWalkthrough** wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.
 
@@ -92,11 +93,11 @@ Da Sie mit LINQ to SQL Klassenarbeiten und die Daten in einem Windows Form anzei
 
 ## <a name="create-the-customer-entity-class-and-object-data-source"></a>Erstellen der Customer-Entitäts Klasse und der Objektdaten Quelle
 
-Erstellen Sie LINQ to SQL Klassen, die Datenbanktabellen zugeordnet sind, indem Sie Tabellen von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer**ziehen. Sie erhalten LINQ to SQL-Entitätsklassen, die den Tabellen in der Datenbank zugeordnet sind. Nachdem die Entitätsklassen erstellt wurden, können sie wie andere Klassen mit öffentlichen Eigenschaften als Objektdatenquellen dienen.
+Erstellen Sie LINQ to SQL Klassen, die Datenbanktabellen zugeordnet sind, indem Sie Tabellen von **Server-Explorer** oder **Datenbank-Explorer** auf den **O/R-Designer** ziehen. Sie erhalten LINQ to SQL-Entitätsklassen, die den Tabellen in der Datenbank zugeordnet sind. Nachdem die Entitätsklassen erstellt wurden, können sie wie andere Klassen mit öffentlichen Eigenschaften als Objektdatenquellen dienen.
 
 ### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>So erstellen Sie eine Customer-Entitätsklasse und konfigurieren damit eine Datenquelle
 
-1. Suchen Sie in **Server-Explorer** oder **Datenbank-Explorer**die **Customer** -Tabelle in der SQL Server-Version der Beispieldatenbank Northwind.
+1. Suchen Sie in **Server-Explorer** oder **Datenbank-Explorer** die **Customer** -Tabelle in der SQL Server-Version der Beispieldatenbank Northwind.
 
 2. Ziehen Sie den Knoten **Customers** aus **Server-Explorer** oder **Datenbank-Explorer** auf die Oberfläche des **O/R-Designers* .
 
@@ -192,7 +193,7 @@ Die Schaltfläche zum Speichern ist standardmäßig nicht aktiviert, und die Spe
 
      Die gespeicherten Prozeduren werden dem Methodenbereich als <xref:System.Data.Linq.DataContext>-Methoden hinzugefügt. Weitere Informationen finden Sie unter [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4. Wählen Sie im **O/R-Designer**die Entitäts Klasse **Customer** aus.
+4. Wählen Sie im **O/R-Designer** die Entitäts Klasse **Customer** aus.
 
 5. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft **Einfügen** aus.
 
@@ -205,7 +206,7 @@ Die Schaltfläche zum Speichern ist standardmäßig nicht aktiviert, und die Spe
 9. Klicken Sie auf **Anwenden**, um die Konfiguration für die ausgewählte Klasse und das ausgewählte Verhalten zu speichern.
 
     > [!NOTE]
-    > Sie können mit der Konfiguration des Verhaltens jeder Klasse/Verhalten-Kombination fortfahren, solange Sie nach jeder Änderung auf **Anwenden** klicken. Wenn Sie die Klasse oder das Verhalten ändern, bevor Sie auf Übernehmen klicken, wird ein Warn Dialogfeld angezeigt, in dem Sie die Möglichkeit **haben, Änderungen**anzuwenden.
+    > Sie können mit der Konfiguration des Verhaltens jeder Klasse/Verhalten-Kombination fortfahren, solange Sie nach jeder Änderung auf **Anwenden** klicken. Wenn Sie die Klasse oder das Verhalten ändern, bevor Sie auf Übernehmen klicken, wird ein Warn Dialogfeld angezeigt, in dem Sie die Möglichkeit **haben, Änderungen** anzuwenden.
 
 10. Wählen Sie aus der Liste **Verhalten** die Option **Aktualisieren** aus.
 

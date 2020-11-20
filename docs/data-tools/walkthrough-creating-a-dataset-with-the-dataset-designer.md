@@ -1,5 +1,6 @@
 ---
 title: Erstellen Sie ein DataSet mit dem DataSet-Designer
+description: Erstellen Sie in dieser exemplarischen Vorgehensweise ein DataSet mit dem DataSet-Designer. Erfahren Sie, wie Sie ein neues Projekt erstellen und diesem ein neues DataSet-Element hinzufügen.
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036781"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998030"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Datasets mit dem DataSet-Designer
 
@@ -47,11 +48,11 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
 1. Wählen Sie in Visual Studio im Menü **Datei** die Optionen **Neu** > **Projekt** aus.
 
-2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop**aus.
+2. Erweitern Sie entweder **Visual c#** oder **Visual Basic** im linken Bereich, und wählen Sie dann **Windows-Desktop** aus.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **DatasetDesignerWalkthrough**, und wählen Sie dann **OK**aus.
+4. Nennen Sie das Projekt **DatasetDesignerWalkthrough**, und wählen Sie dann **OK** aus.
 
      Visual Studio fügt das Projekt **Projektmappen-Explorer** hinzu und zeigt im Designer ein neues Formular an.
 
@@ -61,9 +62,9 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-2. Wählen Sie im linken Bereich **Daten**aus, und wählen Sie dann im mittleren Bereich **DataSet** aus.
+2. Wählen Sie im linken Bereich **Daten** aus, und wählen Sie dann im mittleren Bereich **DataSet** aus.
 
-3. Nennen Sie das DataSet **NorthwindDataSet**, und wählen Sie dann **Hinzufügen**aus.
+3. Nennen Sie das DataSet **NorthwindDataSet**, und wählen Sie dann **Hinzufügen** aus.
 
      Visual Studio fügt dem Projekt eine Datei mit dem Namen " **NorthwindDataSet. xsd** " hinzu und öffnet Sie in der **DataSet-Designer**.
 
@@ -97,7 +98,7 @@ In diesem Abschnitt wird erläutert, wie Tabellen dem DataSet hinzugefügt werde
 
 - Ziehen Sie die Tabelle **Order Details** aus dem **Server-Explorer** auf den **DataSet-Designer**.
 
-     Dem Dataset werden die Datentabelle **Order Details** , **orderdetailstableadapter**und eine Daten Beziehung zwischen den Tabellen **Orders** und **Order Details** hinzugefügt.
+     Dem Dataset werden die Datentabelle **Order Details** , **orderdetailstableadapter** und eine Daten Beziehung zwischen den Tabellen **Orders** und **Order Details** hinzugefügt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

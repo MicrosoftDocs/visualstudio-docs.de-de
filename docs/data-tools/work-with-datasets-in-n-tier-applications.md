@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit Datasets in N-Tier-Anwendungen
+description: Erfahren Sie, wie Sie mit Datasets in n-Tier-Anwendungen arbeiten. N-Tier-Daten Anwendungen sind datenzentrierte apps, die in mehrere logische Ebenen (oder Ebenen) aufgeteilt sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d450bb60bdb604f658f73d0b5df4b9bd739cf923
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585924"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998186"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Arbeiten mit Datasets in N-Tier-Anwendungen
 
@@ -32,7 +34,7 @@ ms.locfileid: "75585924"
 
 Typisierte DataSets wurden weiterentwickelt, damit die TableAdapters-Klasse und die DataSet-Klasse in gesonderten Projekten generiert werden können. Damit ist es möglich, Anwendungsebenen schnell zu trennen und N-Tier-Datenanwendung zu erstellen.
 
-Die n-Tier-Unterstützung in typisierten Datasets ermöglicht die iterative Entwicklung der Anwendungsarchitektur zu einem n-Tier-Design. Außerdem entfällt die Anforderung, den Code manuell in mehr als ein Projekt zu trennen. Beginnen Sie mit dem Entwerfen der Datenschicht, indem Sie die **DataSet-Designer**verwenden. Wenn Sie soweit sind, dass Sie die Anwendungsarchitektur in ein n-schichtiges Design übernehmen können, legen Sie die Eigenschaft **DataSet-Projekt** eines Datasets so fest, dass die Dataset-Klasse in einem separaten Projekt erstellt wird.
+Die n-Tier-Unterstützung in typisierten Datasets ermöglicht die iterative Entwicklung der Anwendungsarchitektur zu einem n-Tier-Design. Außerdem entfällt die Anforderung, den Code manuell in mehr als ein Projekt zu trennen. Beginnen Sie mit dem Entwerfen der Datenschicht, indem Sie die **DataSet-Designer** verwenden. Wenn Sie soweit sind, dass Sie die Anwendungsarchitektur in ein n-schichtiges Design übernehmen können, legen Sie die Eigenschaft **DataSet-Projekt** eines Datasets so fest, dass die Dataset-Klasse in einem separaten Projekt erstellt wird.
 
 ## <a name="reference"></a>Referenz
 
@@ -43,8 +45,8 @@ Die n-Tier-Unterstützung in typisierten Datasets ermöglicht die iterative Entw
 
 - [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Exemplarische Vorgehensweise: Erstellen einer n-Tier-Daten Anwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
-- [Gewusst wie: Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [Gewusst wie: Hinzufügen von Code zu DataSets in N-Tier-Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
+- [Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
+- [Hinzufügen von Code zu DataSets in N-Tier-Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Hinzufügen von Validierungen zu einem N-Tier-Dataset](../data-tools/add-validation-to-an-n-tier-dataset.md)
 - [Gewusst wie: DataSets und TableAdapters in verschiedene Projekte aufteilen](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)
