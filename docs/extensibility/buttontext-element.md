@@ -1,5 +1,7 @@
 ---
 title: ButtonText-Element | Microsoft-Dokumentation
+description: Mit dem ButtonText-Element können Sie den Text angeben, der in verschiedenen Menüs angezeigt wird. Das ButtonText-Element darf nicht leer sein, auch wenn andere Textfelder angegeben werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db20bb3298a7b849e8bc4a261987c5314a29841
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739904"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974471"
 ---
 # <a name="buttontext-element"></a>ButtonText-Element
 In diesem Feld können Sie den Text angeben, der in verschiedenen Menüs angezeigt wird. Standardmäßig wird das- `ButtonText` Element in Menü Controllern angezeigt. Das- `ButtonText` Element wird auch der Standardwert, wenn die anderen Textfelder leer sind. Das `ButtonText` Element darf nicht leer sein, auch wenn die anderen Textfelder angegeben werden.
@@ -38,12 +40,12 @@ In diesem Feld können Sie den Text angeben, der in verschiedenen Menüs angezei
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[Strings-Element](../extensibility/strings-element.md)|Gruppiert Textelemente, wie z `ButtonText` `CommandName` . b. und.|
 
 ## <a name="text-value"></a>Textwert
  Der Textwert des- `ButtonText` Elements stellt den Text bereit, der für Menü Elemente, Combos und andere Benutzeroberflächen Elemente (UI) angezeigt wird, die über sichtbaren Text verfügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

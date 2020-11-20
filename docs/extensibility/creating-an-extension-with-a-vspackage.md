@@ -1,5 +1,7 @@
 ---
 title: Erstellen einer Erweiterung mit einem VSPackage | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein VSIX-Projekt erstellen und ein VSPackage-Projekt Element mithilfe des VSPackage hinzufügen, um den UI-shelldienst zum Anzeigen eines Meldungs Felds zu erhalten.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68ade2f8d334c1f93349e396d910fa300f6b5417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903855"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973779"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Erstellen einer Erweiterung mit einem VSPackage
 
@@ -21,19 +23,19 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein VSIX-Projekt e
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-vspackage"></a>Erstellen eines VSPackages
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen **firstpackage**. Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine Visual Studio-Paket Element Vorlage mit dem Namen **firstpackage**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie dann **Visual Studio-Paket**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *FirstPackage.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine Visual Studio-Paket Element Vorlage mit dem Namen **firstpackage** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie dann **Visual Studio-Paket** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *FirstPackage.cs*.
 
 3. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
     Die experimentelle Instanz von Visual Studio wird angezeigt. Weitere Informationen über die experimentelle Instanz finden Sie in [der experimentellen Instanz](../extensibility/the-experimental-instance.md).
 
-4. Öffnen Sie **in der experimentellen Instanz das**  >  Fenster Extras**Erweiterungen und Updates** . Die **firstpackage** -Erweiterung sollte hier angezeigt werden. (Wenn Sie **Erweiterungen und Updates** in ihrer funktionierenden Instanz von Visual Studio öffnen, wird **firstpackage**nicht angezeigt.)
+4. Öffnen Sie **in der experimentellen Instanz das**  >  Fenster Extras **Erweiterungen und Updates** . Die **firstpackage** -Erweiterung sollte hier angezeigt werden. (Wenn Sie **Erweiterungen und Updates** in ihrer funktionierenden Instanz von Visual Studio öffnen, wird **firstpackage** nicht angezeigt.)
 
 ## <a name="load-the-vspackage"></a>VSPackage laden
 

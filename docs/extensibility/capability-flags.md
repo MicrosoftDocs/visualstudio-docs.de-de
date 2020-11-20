@@ -1,5 +1,7 @@
 ---
 title: Funktionsflags | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die SCC_CAP_xxx Flags, die die Funktionen eines Quellcodeverwaltungs-Plug-ins angeben, und die SCC_EXCAP_xxx Flags, die erweiterte Funktionen angeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739869"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974440"
 ---
 # <a name="capability-flags"></a>Funktionsflags
-Die SCC_CAP_*xxx* -Flags sind Bitflags, die verwendet werden, um die Funktionen eines Quellcodeverwaltungs-Plug-ins anzugeben. Die SCC_EXCAP_*xxx* -Flags sind inkrementelle Flags, die erweiterte Funktionen angeben und in ganzzahlige Werte auflösen.
+Die SCC_CAP_ *xxx* -Flags sind Bitflags, die verwendet werden, um die Funktionen eines Quellcodeverwaltungs-Plug-ins anzugeben. Die SCC_EXCAP_ *xxx* -Flags sind inkrementelle Flags, die erweiterte Funktionen angeben und in ganzzahlige Werte auflösen.
 
-|Funktions Code|Wert|Beschreibung|
+|Funktions Code|Wert|BESCHREIBUNG|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_REMOVE`|0x00000001L|Unterstützt das [SCUP](../extensibility/sccremove-function.md) -und den-Befehl.|
 |`SCC_CAP_RENAME`|0x00000002L|Unterstützt den Befehl [sccrename](../extensibility/sccrename-function.md) und.|
@@ -50,7 +52,7 @@ Die SCC_CAP_*xxx* -Flags sind Bitflags, die verwendet werden, um die Funktionen 
 
 ## <a name="capability-bits-added-in-version-12"></a>Funktions Bits in Version 1,2 hinzugefügt
 
-|Funktions Code|Wert|Beschreibung|
+|Funktions Code|Wert|BESCHREIBUNG|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000l|Unterstützt [scckreatesubproject](../extensibility/scccreatesubproject-function.md).|
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000l|Unterstützt [sccgetparser ProjectPath](../extensibility/sccgetparentprojectpath-function.md).|
@@ -63,7 +65,7 @@ Die SCC_CAP_*xxx* -Flags sind Bitflags, die verwendet werden, um die Funktionen 
 ## <a name="capability-bits-added-in-version-13"></a>Funktions Bits in Version 1,3 hinzugefügt
  Diese Flags werden nacheinander an die [sccgetextendedfunctions](../extensibility/sccgetextendedcapabilities-function.md) -Funktion übergeben, um zu bestimmen, ob die Funktion unterstützt wird.
 
-|Erweiterter Funktions Code|Wert|Beschreibung|
+|Erweiterter Funktions Code|Wert|BESCHREIBUNG|
 |------------------------------|-----------|-----------------|
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Unterstützt die- `SCC_CHECKOUT_LOCALVER` Option für Auscheck Vorgänge.|
 |`SCC_EXCAP_BACKGROUND_GET`|2|Unterstützt [sccbackgroundget](../extensibility/sccbackgroundget-function.md).|
@@ -77,5 +79,5 @@ Die SCC_CAP_*xxx* -Flags sind Bitflags, die verwendet werden, um die Funktionen 
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Ausgecheckte Dateien können gelöscht werden.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Können ausgecheckte Dateien umbenennen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 - [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)

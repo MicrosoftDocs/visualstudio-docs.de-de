@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines WPF-Toolbox-Steuer Elements | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mithilfe der Vorlage "WPF-Toolbox-Steuerelement" ein Toolbox-Steuerelement erstellen, das Sie an andere Benutzer verteilen können.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6aa6051648e495e21f7954a737f7b572ce6a6f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903945"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973975"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Erstellen eines WPF-Toolbox-Steuer Elements
 
 Mit der Toolbox-Steuerelement Vorlage von WPF (Windows Presentation Framework) können Sie WPF-Steuerelemente erstellen, die bei der Installation der Erweiterung automatisch zur **Toolbox** hinzugefügt werden. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie mithilfe der Vorlage ein **Toolbox** -Steuerelement erstellen, das Sie an andere Benutzer verteilen können.
 
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-the-toolbox-control"></a>Erstellen des Toolbox-Steuer Elements
 
@@ -31,9 +33,9 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen `MyToolboxControl` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine **WPF-Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `MyToolboxControl` . Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **WPF-Toolbox-Steuer**Element aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *MyToolboxControl.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine **WPF-Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `MyToolboxControl` . Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **WPF-Toolbox-Steuer** Element aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *MyToolboxControl.cs*.
 
-    Die Lösung enthält jetzt ein Benutzer Steuerelement, ein, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> das das Steuerelement der **Toolbox**hinzufügt, und einen **Microsoft. VisualStudio. ToolboxControl** -Asset-Eintrag im VSIX-Manifest für die Bereitstellung.
+    Die Lösung enthält jetzt ein Benutzer Steuerelement, ein, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> das das Steuerelement der **Toolbox** hinzufügt, und einen **Microsoft. VisualStudio. ToolboxControl** -Asset-Eintrag im VSIX-Manifest für die Bereitstellung.
 
 #### <a name="to-create-the-control-ui"></a>So erstellen Sie eine Steuerelement-Benutzeroberfläche
 
@@ -55,13 +57,13 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ## <a name="renaming-the-control"></a>Umbenennen des Steuer Elements
 
- Standardmäßig wird das Steuerelement in der **Toolbox** als **mytoolboxcontrol** in einer Gruppe mit dem Namen **mytoolboxcontrol. mytoolboxcontrol**angezeigt. Sie können diese Namen in der *MyToolboxControl.XAML.cs* -Datei ändern.
+ Standardmäßig wird das Steuerelement in der **Toolbox** als **mytoolboxcontrol** in einer Gruppe mit dem Namen **mytoolboxcontrol. mytoolboxcontrol** angezeigt. Sie können diese Namen in der *MyToolboxControl.XAML.cs* -Datei ändern.
 
 1. Öffnen Sie *MyToolboxControl.XAML.cs* in der Code Ansicht.
 
 2. Suchen `MyToolboxControl` Sie die-Klasse, und benennen Sie Sie in testControl um. (Die schnellste Möglichkeit hierfür besteht darin, die Klasse umzubenennen und dann im Kontextmenü die Option **Umbenennen** auszuwählen und die Schritte abzuschließen. (Weitere Informationen zum **Rename** -Befehl finden Sie unter [Rename Refactoring (c#)](../ide/reference/rename.md).)
 
-3. Wechseln Sie zum `ProvideToolboxControl` -Attribut, und ändern Sie den Wert des ersten zu **testenden**Parameters. Dies ist der Name der Gruppe, die das Steuerelement in der **Toolbox**enthält.
+3. Wechseln Sie zum `ProvideToolboxControl` -Attribut, und ändern Sie den Wert des ersten zu **testenden** Parameters. Dies ist der Name der Gruppe, die das Steuerelement in der **Toolbox** enthält.
 
     Der resultierende Code sollte wie folgt aussehen:
 

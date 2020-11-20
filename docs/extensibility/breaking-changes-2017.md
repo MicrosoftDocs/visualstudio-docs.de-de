@@ -1,5 +1,7 @@
 ---
 title: Wichtige Änderungen in Visual Studio 2017-Erweiterbarkeit
+description: Erfahren Sie mehr über technische Details zu wichtigen Änderungen, die an dem Erweiterbarkeits Modell in Visual Studio 2017 vorgenommen wurden, und wie Sie Sie beheben können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011787"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973752"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -63,7 +65,7 @@ Die meisten Visual Studio-Kernassemblys werden nicht mehr im GAC installiert. Di
 
 * Assemblys, die nur im GAC installiert wurden:
 
-  Diese Assemblys sind nun unter <em>[INSTALLDIR] \Common7\IDE \* , * [INSTALLDIR] \common7\ide\publicassemblies</em> oder *[INSTALLDIR] \common7\ide\privateassemblys*installiert. Diese Ordner sind Teil der Überprüfungs Pfade des Visual Studio-Prozesses.
+  Diese Assemblys sind nun unter <em>[INSTALLDIR] \Common7\IDE \* , * [INSTALLDIR] \common7\ide\publicassemblies</em> oder *[INSTALLDIR] \common7\ide\privateassemblys* installiert. Diese Ordner sind Teil der Überprüfungs Pfade des Visual Studio-Prozesses.
 
 * Assemblys, die in einen nicht zu testende Pfad und in den GAC installiert wurden:
 
@@ -98,7 +100,7 @@ Die meisten Visual Studio-Kernassemblys werden nicht mehr im GAC installiert. Di
 ### <a name="global-com-registration"></a>Globale com-Registrierung
 
 * Zuvor hat Visual Studio viele Registrierungsschlüssel im HKEY_CLASSES_ROOT und HKEY_LOCAL_MACHINE Strukturen installiert, um die Native COM-Registrierung zu unterstützen. Um diese Auswirkung auszuschließen, verwendet Visual Studio jetzt die [Registrierungs freie Aktivierung für COM-Komponenten](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
-* Folglich werden die meisten TLB/OLB/dll-Dateien unter% Program Files (x86)% \ Common Files\Microsoft shared\msenv nicht mehr standardmäßig von Visual Studio installiert. Diese Dateien werden jetzt unter [INSTALLDIR] mit den entsprechenden Registrierungs freien com-Manifesten installiert, die vom Visual Studio-Host Prozess verwendet werden.
+* Folglich werden die meisten TLB/OLB/dll-Dateien unter% Program Files (x86)% \ Common Files\Microsoft shared\msenv nicht mehr standardmäßig von Visual Studio installiert. Diese Dateien werden jetzt unter [INSTALLDIR] mit den entsprechenden Registration-Free com-Manifesten installiert, die vom Visual Studio-Host Prozess verwendet werden.
 * Folglich findet externer Code, der auf der globalen com-Registrierung für Visual Studio-com-Schnittstellen basiert, diese Registrierungen nicht mehr. Im Code, der in Visual Studio ausgeführt wird, wird kein Unterschied angezeigt.
 
 ### <a name="visual-studio-registry"></a>Visual Studio-Registrierung
@@ -109,13 +111,13 @@ Die meisten Visual Studio-Kernassemblys werden nicht mehr im GAC installiert. Di
   * **Hkcu\software\microsoft\visualstudio \{ Version}**: Registrierungsschlüssel, die von Visual Studio erstellt wurden, um benutzerspezifische Einstellungen zu speichern.
   * **Hkcu\software\microsoft\visualstudio \{ Version} _Config**: eine Kopie des obigen Visual Studio-HKLM-Schlüssels sowie die Registrierungsschlüssel, die von *pkgdef* -Dateien durch Erweiterungen zusammengeführt werden.
 
-* Um die Auswirkungen auf die Registrierung zu reduzieren, verwendet Visual Studio jetzt die [regloadappkey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) -Funktion, um Registrierungsschlüssel in einer privaten Binärdatei unter *[vsappdata] \privateregistry.bin*zu speichern. In der Systemregistrierung verbleiben nur eine sehr geringe Anzahl von Visual Studio-spezifischen Schlüsseln.
+* Um die Auswirkungen auf die Registrierung zu reduzieren, verwendet Visual Studio jetzt die [regloadappkey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) -Funktion, um Registrierungsschlüssel in einer privaten Binärdatei unter *[vsappdata] \privateregistry.bin* zu speichern. In der Systemregistrierung verbleiben nur eine sehr geringe Anzahl von Visual Studio-spezifischen Schlüsseln.
 * Vorhandener Code, der innerhalb des Visual Studio-Prozesses ausgeführt wird, ist nicht betroffen. Visual Studio leitet alle Registrierungs Vorgänge unter dem Visual Studio-spezifischen HKCU-Schlüssel in die private Registrierung um. Beim Lesen und Schreiben in andere Registrierungs Speicherorte wird die Systemregistrierung weiterhin verwendet.
 * Für Visual Studio-Registrierungseinträge muss externer Code geladen und aus dieser Datei gelesen werden.
 
 ### <a name="react-to-this-breaking-change"></a>Auf diese Breaking Change reagieren
 
-* Externer Code sollte konvertiert werden, um auch die Aktivierung der Registrierungskosten für COM-Komponenten zu verwenden.
+* Externer Code sollte konvertiert werden, um auch Registration-Free Aktivierung für COM-Komponenten zu verwenden.
 * Externe Komponenten finden den Visual Studio-Speicherort, [indem Sie die Anleitungen hier befolgen](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Es wird empfohlen, dass externe Komponenten den [externen Einstellungs-Manager](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) verwenden, anstatt direkt in Visual Studio-Registrierungsschlüssel zu lesen/schreiben.
 * Überprüfen Sie, ob die von ihrer Erweiterung verwendeten Komponenten möglicherweise eine andere Methode für die Registrierung implementiert haben. Debugger-Erweiterungen können z. b. die neue [msvsmon JSON-Datei-com-Registrierung](migrate-debugger-COM-registration.md)nutzen.

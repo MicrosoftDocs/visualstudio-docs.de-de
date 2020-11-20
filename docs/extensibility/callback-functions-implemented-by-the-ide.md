@@ -1,5 +1,7 @@
 ---
 title: Von der IDE implementierte Rückruf Funktionen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Rückruf Funktionen, die das Plug-in zu den entsprechenden Zeitpunkten während einer Quell Code Verwaltung aufruft und Informationen an die IDE übergibt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739889"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974455"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Von der IDE implementierte Rückruf Funktionen
 Um die Integration mit der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) so nahtlos wie möglich zu gestalten und eine einheitliche Benutzerumgebung bereitzustellen, kann das Quellcodeverwaltungs-Plug-in Rückruf Funktionen verwenden, die von der IDE implementiert werden. Das Plug-in kann diese Funktionen zu geeigneten Zeitpunkten während eines Quell Code Verwaltungs Vorgangs aufzurufen, um Informationen an die IDE zu übergeben. die IDE kann diese Informationen dann als eingebettete Elemente in der nativen Benutzeroberfläche anzeigen. Der Benutzer hat in diesem Szenario weniger Fragmentierung, als wenn das Plug-in eine eigene Benutzeroberfläche eingesetzt hat.
 
- Die erforderliche Header Datei ist *SCC. h*. Der Standard Speicherort ist *\programme\vsip 8.0 \ envsdk\common\inc \\ *. Sie befindet sich auch im VSIP-Ordner mit dem Quellcodeverwaltungs-Plug-in-Beispiel unter " *\programme\vsip 8.0 \ \\ MSSCCI*".
+ Die erforderliche Header Datei ist *SCC. h*. Der Standard Speicherort ist *\programme\vsip 8.0 \ envsdk\common\inc \\*. Sie befindet sich auch im VSIP-Ordner mit dem Quellcodeverwaltungs-Plug-in-Beispiel unter " *\programme\vsip 8.0 \ \\ MSSCCI*".
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Lptextoutproc](../extensibility/lptextoutproc.md) Beschreibt die Rückruffunktion, die von [sccopenproject](../extensibility/sccopenproject-function.md) zum Anzeigen von Nachrichten aus dem Quellcodeverwaltungs-Plug-in über die IDE verwendet wird.

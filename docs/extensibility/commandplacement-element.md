@@ -1,5 +1,7 @@
 ---
 title: Commandplacement-Element | Microsoft-Dokumentation
+description: Das commandplacement-Element ermöglicht das Einschließen von Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739745"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974070"
 ---
 # <a name="commandplacement-element"></a>Commandplacement-Element
 Das commandplacement-Element ermöglicht das Einschließen von Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü. Mit dem commandplacement-Element müssen Sie diese Elemente nicht vollständig neu definieren, um das Aussehen einer Benutzeroberfläche zu ändern.
@@ -47,7 +49,7 @@ Das commandplacement-Element ermöglicht das Einschließen von Schaltflächen, G
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Parent|Erforderlich. Das Menü oder die Gruppe, das das zu platzierende Element hostet.|
+|Übergeordnetes Element|Erforderlich. Das Menü oder die Gruppe, das das zu platzierende Element hostet.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

@@ -1,5 +1,7 @@
 ---
 title: Erstellen und Verwalten von modalen Dialog Feldern | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein modales Dialogfeld in Visual Studio erstellen, indem Sie dialogwindow verwenden und ohne dialogwindow verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903770"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973618"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Erstellen und Verwalten von modalen Dialogfeldern
 Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherstellen, dass das übergeordnete Fenster des Dialog Felds deaktiviert ist, während das Dialogfeld angezeigt wird, und dann das übergeordnete Fenster erneut aktivieren, nachdem das Dialogfeld geschlossen wurde. Wenn Sie dies nicht tun, erhalten Sie möglicherweise den folgenden Fehler: *Microsoft Visual Studio kann nicht heruntergefahren werden, da ein modales Dialogfeld aktiv ist. Schließen Sie das aktive Dialogfeld, und versuchen Sie es erneut*
@@ -26,7 +28,7 @@ Wenn das Dialogfeld nicht WPF ist, oder aus einem anderen Grund die Dialogfeld K
 
 ## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>Dialogfeld erstellen, das von dialogwindow abgeleitet ist
 
-1. Erstellen Sie ein VSIX-Projekt namens **opendialogtest** , und fügen Sie einen Menübefehl mit dem Namen **OpenDialog**hinzu. Weitere Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt namens **opendialogtest** , und fügen Sie einen Menübefehl mit dem Namen **OpenDialog** hinzu. Weitere Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 2. Um die- <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> Klasse zu verwenden, müssen Sie Verweise auf die folgenden Assemblys hinzufügen (auf der Registerkarte Framework im Dialogfeld **Verweis hinzufügen** ):
 
@@ -38,7 +40,7 @@ Wenn das Dialogfeld nicht WPF ist, oder aus einem anderen Grund die Dialogfeld K
 
     - *System.Xaml*
 
-3. Fügen Sie in *OpenDialog.cs*die folgende- `using` Anweisung hinzu:
+3. Fügen Sie in *OpenDialog.cs* die folgende- `using` Anweisung hinzu:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -68,7 +70,7 @@ Wenn das Dialogfeld nicht WPF ist, oder aus einem anderen Grund die Dialogfeld K
     testDialog.ShowModal();
     ```
 
-7. Erstellen Sie die Anwendung, und führen Sie sie aus. Die experimentelle Instanz von Visual Studio sollte angezeigt werden. **Im Menü Extras** der experimentellen Instanz sollte ein Befehl mit dem Namen **OpenDialog aufrufen**angezeigt werden. Wenn Sie auf diesen Befehl klicken, sollte das Dialogfenster angezeigt werden. Sie sollten das Fenster minimieren und maximieren können.
+7. Erstellen Sie die Anwendung, und führen Sie sie aus. Die experimentelle Instanz von Visual Studio sollte angezeigt werden. **Im Menü Extras** der experimentellen Instanz sollte ein Befehl mit dem Namen **OpenDialog aufrufen** angezeigt werden. Wenn Sie auf diesen Befehl klicken, sollte das Dialogfenster angezeigt werden. Sie sollten das Fenster minimieren und maximieren können.
 
 ## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Erstellen und Verwalten eines Dialog Felds, das nicht von dialogwindow abgeleitet ist
 
@@ -125,4 +127,4 @@ Wenn das Dialogfeld nicht WPF ist, oder aus einem anderen Grund die Dialogfeld K
     }
     ```
 
-7. Erstellen Sie die Anwendung, und führen Sie sie aus. **Im Menü Extras** sollte ein Befehl mit dem Namen **OpenDialog aufrufen**angezeigt werden. Wenn Sie auf diesen Befehl klicken, sollte das Dialogfenster angezeigt werden.
+7. Erstellen Sie die Anwendung, und führen Sie sie aus. **Im Menü Extras** sollte ein Befehl mit dem Namen **OpenDialog aufrufen** angezeigt werden. Wenn Sie auf diesen Befehl klicken, sollte das Dialogfenster angezeigt werden.

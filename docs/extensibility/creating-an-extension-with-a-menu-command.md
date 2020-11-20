@@ -1,5 +1,7 @@
 ---
 title: Erstellen einer Erweiterung mit einem Menübefehl | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Erweiterung mit einem Menübefehl erstellen, der Notepad gestartet. Erstellen Sie einen Menübefehl, und ändern Sie dann den Menübefehls Handler.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972334"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974267"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Erstellen einer Erweiterung mit einem Menübefehl
 
@@ -26,7 +28,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Erwei
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-menu-command"></a>Erstellen eines Menübefehls
 
@@ -34,13 +36,13 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker range="vs-2017"
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **firstcommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *FirstCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **firstcommand** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *FirstCommand.cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **firstcommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie dann **Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *FirstCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **firstcommand** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie dann **Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *FirstCommand.cs*.
 
 ::: moniker-end
 
@@ -50,13 +52,13 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker range="vs-2017"
 
-4. Öffnen Sie **in der experimentellen Instanz das**  >  Fenster Extras**Erweiterungen und Updates** . Hier sollte die **firstmenucommand** -Erweiterung angezeigt werden. (Wenn Sie **Erweiterungen und Updates** in ihrer funktionierenden Instanz von Visual Studio öffnen, wird **firstmenucommand**nicht angezeigt.)
+4. Öffnen Sie **in der experimentellen Instanz das**  >  Fenster Extras **Erweiterungen und Updates** . Hier sollte die **firstmenucommand** -Erweiterung angezeigt werden. (Wenn Sie **Erweiterungen und Updates** in ihrer funktionierenden Instanz von Visual Studio öffnen, wird **firstmenucommand** nicht angezeigt.)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Öffnen Sie in der experimentellen Instanz das Fenster **Erweiterungen**  >  **Verwalten Erweiterungen** . Hier sollte die **firstmenucommand** -Erweiterung angezeigt werden. (Wenn Sie **Erweiterungen verwalten** in ihrer funktionierenden Instanz von Visual Studio öffnen, wird **firstmenucommand**nicht angezeigt.)
+4. Öffnen Sie in der experimentellen Instanz das Fenster **Erweiterungen**  >  **Verwalten Erweiterungen** . Hier sollte die **firstmenucommand** -Erweiterung angezeigt werden. (Wenn Sie **Erweiterungen verwalten** in ihrer funktionierenden Instanz von Visual Studio öffnen, wird **firstmenucommand** nicht angezeigt.)
 
 ::: moniker-end
 
@@ -100,13 +102,13 @@ Nun aktualisieren wir den Befehls Handler, um Notepad zu starten.
     }
     ```
 
-4. Probieren Sie es jetzt aus. Wenn **Sie mit**dem Debuggen des Projekts beginnen und auf Extras  >  **aufrufen firstcommand**klicken, sollte eine Instanz von Notepad angezeigt werden.
+4. Probieren Sie es jetzt aus. Wenn **Sie mit** dem Debuggen des Projekts beginnen und auf Extras  >  **aufrufen firstcommand** klicken, sollte eine Instanz von Notepad angezeigt werden.
 
     Sie können eine Instanz der- <xref:System.Diagnostics.Process> Klasse verwenden, um eine beliebige ausführbare Datei auszuführen, nicht nur Notepad. Probieren Sie es `calc.exe` beispielsweise mit aus.
 
 ## <a name="clean-up-the-experimental-environment"></a>Bereinigen der experimentellen Umgebung
 
-Wenn Sie mehrere Erweiterungen entwickeln oder nur Ergebnisse mit unterschiedlichen Versionen Ihres Erweiterungs Codes untersuchen, funktioniert Ihre experimentelle Umgebung möglicherweise nicht mehr so. In diesem Fall sollten Sie das Reset-Skript ausführen. Dies wird als **Zurücksetzen der experimentellen Instanz von Visual Studio**bezeichnet und als Teil des Visual Studio SDK ausgeliefert. Mit diesem Skript werden alle Verweise auf die Erweiterungen aus der experimentellen Umgebung entfernt, sodass Sie von Grund auf neu beginnen können.
+Wenn Sie mehrere Erweiterungen entwickeln oder nur Ergebnisse mit unterschiedlichen Versionen Ihres Erweiterungs Codes untersuchen, funktioniert Ihre experimentelle Umgebung möglicherweise nicht mehr so. In diesem Fall sollten Sie das Reset-Skript ausführen. Dies wird als **Zurücksetzen der experimentellen Instanz von Visual Studio** bezeichnet und als Teil des Visual Studio SDK ausgeliefert. Mit diesem Skript werden alle Verweise auf die Erweiterungen aus der experimentellen Umgebung entfernt, sodass Sie von Grund auf neu beginnen können.
 
 Dieses Skript kann auf zwei Arten erreicht werden:
 
@@ -127,7 +129,7 @@ Die *VSIX* -Datei für diese Erweiterung finden Sie im Verzeichnis " *firstmenuc
 
 *\<code directory>\Firstmenucommand\firstmenucommand\bin\release\firstmenucommand.vsix*
 
-Um die Erweiterung zu installieren, muss Ihr Freund alle geöffneten Instanzen von Visual Studio schließen und dann auf die *VSIX* -Datei doppelklicken, um das **VSIX-Installations**Programm aufzurufen. Die Dateien werden in das Verzeichnis " *%LocalAppData%\microsoft\visualstudio \<version> \extensions* " kopiert.
+Um die Erweiterung zu installieren, muss Ihr Freund alle geöffneten Instanzen von Visual Studio schließen und dann auf die *VSIX* -Datei doppelklicken, um das **VSIX-Installations** Programm aufzurufen. Die Dateien werden in das Verzeichnis " *%LocalAppData%\microsoft\visualstudio \<version> \extensions* " kopiert.
 
 Wenn Ihr Freund Visual Studio erneut aufbringt, finden Sie die Erweiterung "firstmenucommand" **unter Extras**  >  **Erweiterungen und Updates**. Sie können auch zu **Erweiterungen und Updates** wechseln, um die Erweiterung zu deinstallieren oder zu deaktivieren.
 

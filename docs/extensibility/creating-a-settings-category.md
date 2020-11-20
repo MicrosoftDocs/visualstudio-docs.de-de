@@ -1,5 +1,7 @@
 ---
 title: Erstellen einer Einstellungs Kategorie | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Visual Studio-Einstellungs Kategorie erstellen und verwenden, um Werte aus einer Einstellungsdatei zu speichern und wiederherzustellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904028"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974541"
 ---
 # <a name="create-a-settings-category"></a>Erstellen einer Einstellungs Kategorie
 
@@ -26,7 +28,7 @@ Sie erstellen eine Einstellungs Kategorie, indem Sie Sie von der- <xref:Microsof
 Um diese exemplarische Vorgehensweise zu starten, müssen Sie zuerst den ersten Abschnitt der [Seite Erstellen einer Optionen](../extensibility/creating-an-options-page.md)ausführen. Mit dem Eigenschaften Raster resultierende Optionen können Sie die Eigenschaften in der Kategorie überprüfen und ändern. Nachdem Sie die Eigenschaften Kategorie in einer Einstellungsdatei gespeichert haben, untersuchen Sie die Datei, um zu sehen, wie die Eigenschaftswerte gespeichert werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-settings-category"></a>Erstellen einer Einstellungs Kategorie
  In diesem Abschnitt verwenden Sie einen benutzerdefinierten Einstellungs Punkt, um die Werte der Kategorie Einstellungen zu speichern und wiederherzustellen.
@@ -51,15 +53,15 @@ Um diese exemplarische Vorgehensweise zu starten, müssen Sie zuerst den ersten 
 3. Fügen Sie in *MyToolsOptionsPackage.cs* `float` der-Klasse eine Eigenschaft mit dem Namen hinzu `OptionFloat` `OptionPageGrid` , wie im folgenden Beispiel gezeigt.
 
     ```csharp
-    public class OptionPageGrid : DialogPage
+    public class OptionPageGrid : DialogPage
     {
-        private int optionInt = 256;
-        private float optionFloat = 3.14F;
+        private int optionInt = 256;
+        private float optionFloat = 3.14F;
 
         [Category("My Options")]
         [DisplayName("My Integer option")]
         [Description("My integer option")]
-        public int OptionInteger
+        public int OptionInteger
         {
             get { return optionInt; }
             set { optionInt = value; }
@@ -67,7 +69,7 @@ Um diese exemplarische Vorgehensweise zu starten, müssen Sie zuerst den ersten 
         [Category("My Options")]
         [DisplayName("My Float option")]
         [Description("My float option")]
-        public float OptionFloat
+        public float OptionFloat
         {
             get { return optionFloat; }
             set { optionFloat = value; }
@@ -90,9 +92,9 @@ Um diese exemplarische Vorgehensweise zu starten, müssen Sie zuerst den ersten 
 ## <a name="examine-the-settings-file"></a>Überprüfen Sie die Einstellungsdatei.
  In diesem Abschnitt Exportieren Sie Eigenschafts Kategoriewerte in eine Einstellungsdatei. Sie untersuchen die Datei und importieren dann die Werte wieder in die Eigenschaften Kategorie.
 
-1. Starten Sie das Projekt im Debugmodus, indem Sie **F5**drücken. Dadurch wird die experimentelle Instanz gestartet.
+1. Starten Sie das Projekt im Debugmodus, indem Sie **F5** drücken. Dadurch wird die experimentelle Instanz gestartet.
 
-2. Öffnen Sie **das**Dialogfeld Extras  >  **Optionen** .
+2. Öffnen Sie **das** Dialogfeld Extras  >  **Optionen** .
 
 3. Erweitern Sie in der Strukturansicht im linken Bereich **Meine Kategorie** , und klicken Sie dann auf **meine Raster Seite**.
 
@@ -139,7 +141,7 @@ Um diese exemplarische Vorgehensweise zu starten, müssen Sie zuerst den ersten 
 
 12. Klicken Sie **im Menü Extras** auf **Optionen**, erweitern Sie **Meine Kategorie**, klicken Sie auf **meine Raster Seite** , und ändern Sie dann den Wert von **optionfloat** in 1,0 und **OptionInteger** in 1. Klicken Sie auf **OK**.
 
-13. Klicken Sie **im Menü Extras** auf **Einstellungen importieren und exportieren**, wählen Sie **Ausgewählte Umgebungseinstellungen importieren**aus, und klicken Sie dann auf **weiter**.
+13. Klicken Sie **im Menü Extras** auf **Einstellungen importieren und exportieren**, wählen Sie **Ausgewählte Umgebungseinstellungen importieren** aus, und klicken Sie dann auf **weiter**.
 
      Die Seite **Aktuelle Einstellungen speichern** wird angezeigt.
 
@@ -151,6 +153,6 @@ Um diese exemplarische Vorgehensweise zu starten, müssen Sie zuerst den ersten 
 
      Das Dialogfeld **zu importierende Einstellungen auswählen** wird angezeigt.
 
-16. Stellen Sie sicher, dass **meine Einstellungen** ausgewählt ist, und klicken Sie dann auf **Fertig**stellen. Wenn die Seite **Import Vorgang abgeschlossen** angezeigt wird, klicken Sie auf **Schließen**.
+16. Stellen Sie sicher, dass **meine Einstellungen** ausgewählt ist, und klicken Sie dann auf **Fertig** stellen. Wenn die Seite **Import Vorgang abgeschlossen** angezeigt wird, klicken Sie auf **Schließen**.
 
 17. Klicken Sie **im Menü Extras** auf **Optionen**, erweitern Sie **Meine Kategorie**, klicken Sie auf **meine Raster Seite** , und überprüfen Sie, ob die Werte der Eigenschaften Kategorie wieder hergestellt wurden.

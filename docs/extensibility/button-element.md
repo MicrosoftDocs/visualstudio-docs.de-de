@@ -1,5 +1,7 @@
 ---
 title: Button-Element | Microsoft-Dokumentation
+description: 'Das Button-Element definiert ein Element, mit dem der Benutzer interagieren kann. Schaltflächen können verschiedene Arten aufweisen: Schaltfläche, menubutton und splitdropdown.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739940"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974498"
 ---
 # <a name="button-element"></a>Button-Element
 Definiert ein Element, mit dem der Benutzer interagieren kann. Schaltflächen können verschiedene Arten aufweisen: Schaltfläche, menubutton und splitdropdown.
@@ -37,17 +39,17 @@ Definiert ein Element, mit dem der Benutzer interagieren kann. Schaltflächen k�
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |guid|Erforderlich. GUID des GUID-/ID-befehlsbezeichners.|
 |id|Erforderlich. ID des GUID-/ID-befehlsbezeichners.|
 |priority|Optional. Ein numerischer Wert, der die Priorität angibt.|
-|type|Optional. Ein-Enumerationswert, der die Art der Schaltfläche angibt.<br /><br /> Wenn nicht angegeben, wird die Schaltfläche verwendet.<br /><br /> Schaltfläche<br /> Ein Standardbefehl, der auf Symbolleisten (in der Regel als Symbolleisten Schaltfläche), Menüs und Kontextmenüs angezeigt wird.<br /><br /> -Menubutton-<br /> Ein Menü Element, das keinen Befehl ausführt, sondern ein anderes Menü erzeugt.<br /><br /> Splitdropdown<br /> Steuerelemente, z. b. die Schaltflächen Rückgängig und wiederholen auf der Standard Symbolleiste in Microsoft Word.|
+|Typ|Optional. Ein-Enumerationswert, der die Art der Schaltfläche angibt.<br /><br /> Wenn nicht angegeben, wird die Schaltfläche verwendet.<br /><br /> Schaltfläche<br /> Ein Standardbefehl, der auf Symbolleisten (in der Regel als Symbolleisten Schaltfläche), Menüs und Kontextmenüs angezeigt wird.<br /><br /> -Menubutton-<br /> Ein Menü Element, das keinen Befehl ausführt, sondern ein anderes Menü erzeugt.<br /><br /> Splitdropdown<br /> Steuerelemente, z. b. die Schaltflächen Rückgängig und wiederholen auf der Standard Symbolleiste in Microsoft Word.|
 |Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[Übergeordnetes Element](../extensibility/parent-element.md)|Optional. Das übergeordnete Element der Schaltfläche.|
 |[Icon-Element](../extensibility/icon-element.md)|Optional. Das Symbol, das der Schaltfläche zugeordnet ist.|
@@ -57,7 +59,7 @@ Definiert ein Element, mit dem der Benutzer interagieren kann. Schaltflächen k�
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert Schaltflächen Elemente.|
 
@@ -76,5 +78,5 @@ Definiert ein Element, mit dem der Benutzer interagieren kann. Schaltflächen k�
 </Button>
  ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

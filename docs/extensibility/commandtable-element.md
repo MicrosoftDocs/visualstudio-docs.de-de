@@ -1,5 +1,7 @@
 ---
 title: Commandtable-Element | Microsoft-Dokumentation
+description: Commandtable ist das Stamm Element der vsct-Datei, das das Layout und den Typ der Befehle definiert, die ein VSPackage für die IDE bereitstellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a362763d34335b9a18c4114a7c35b23f0efee020
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e6792bb6199606f1d993492527d39c3f0f7f8b
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739642"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974520"
 ---
 # <a name="commandtable-element"></a>Commandtable-Element
 Commandtable ist das Stamm Element der *vsct* -Datei. Dies ist die Datei, die das tatsächliche Layout und den Typ der Befehle definiert, die ein VSPackage für die IDE bereitstellt. Befehle können Menü Elemente, Menüs, Symbolleisten und Kombinations Felder enthalten. Weitere Informationen finden Sie unter [Visual Studio-Befehls Tabellen Dateien (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
@@ -69,5 +71,5 @@ Commandtable ist das Stamm Element der *vsct* -Datei. Dies ist die Datei, die da
 |-------------|-----------------|
 |Keine||
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
