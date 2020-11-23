@@ -1,5 +1,7 @@
 ---
 title: Erstellen von SharePoint-Lösungen | Microsoft-Dokumentation
+description: Als Alternative zum SharePoint-Designer können Sie SharePoint-Anwendungen auch in Visual Studio erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13689d82f3aae24a16a577b1555d8b02ae31b2ba
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 0893596157078de62e33034a9ab6566637642176
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740169"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850493"
 ---
 # <a name="create-sharepoint-solutions"></a>Erstellen von SharePoint-Lösungen
   Visual Studio bietet eine Alternative zur Erstellung von SharePoint-Anwendungen mithilfe von SharePoint Designer. Mit Funktionen wie erweiterten Debugtools, IntelliSense, Anweisungsvervollständigung und Projektvorlagen ermöglicht Visual Studio eine schnelle SharePoint-Entwicklung. Visual Studio nutzt auch erweiterte .NET Framework-basierte Tools und Sprachen. Sie können SharePoint-Projekte mit Visual Basic oder Visual C# entwickeln, und Sie können Apps für SharePoint-Projekte entwickeln, indem Sie JavaScript verwenden.
@@ -39,4 +41,4 @@ ms.locfileid: "90740169"
 |![Anleitung: Videos](../sharepoint/media/vs-icon-howdoivideos.gif "Gewusst wie Videos")|**Anleitung: Videos**<br /><br /> -   [Anleitung: Erstellen von visuellen Webparts für SharePoint 2010 in Visual Studio 2010](https://visualstudio.microsoft.com/)<br />-   [Anleitung: Erstellen von Inhaltstypen für SharePoint 2010 in Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Anleitung: Erstellen von Websitedefinitionen für SharePoint 2010 in Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))<br />-   [Anleitung: Erstellen eines Business Data Connectivity-Modells für SharePoint 2010 unter Verwendung von Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/dd831853\(v\=vs.100\))|
 |![Channel 9-Videos](../sharepoint/media/vs-icon-channel9videos.gif "Channel-9-Videos")|**Channel 9-Videos**<br /><br /> -   [Übersicht über die SharePoint-Entwicklung in Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/overview-of-sharepoint-development-in-visual-studio-2010)<br />-   [Bewährte Methoden zum Erstellen von SharePoint 2010-Webparts mit Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/best-practices-on-building-sharepoint-2010-web-parts-with-visual-studio-2010)<br />-   [SharePoint-Funktions- und -Paket-Designer in Visual Studio 2010](https://channel9.msdn.com/blogs/funkyonex/sharepoint-feature-and-package-designers-in-visual-studio-2010)|
 |![Developer Center](../sharepoint/media/vs-icon-msdndevcenter.gif "Developer Center")|**Developer Center**<br /><br /> -   [Visual Studio Development Center](https://visualstudio.microsoft.com/)<br />-   [SharePoint Developer Center](/sharepoint/dev/)<br />-   [SharePoint Server Developer Center](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [SharePoint Designer Developer Center](/previous-versions/office/fp161348\(v\=office.15\))<br />-   [ASP.NET Developer Center](/previous-versions/msdn10/aa336522(v=msdn.10))|
-|![Bereitstellen von Feedback](../sharepoint/media/vs-icon-feedback.gif "Senden von Feedback")|**Bereitstellen von Feedback**<br /><br /> Feedback zu Visual Studio:<br /><br /> -   [Microsoft Connect](/collaborate/connect-redirect)<br /><br /> Feedback zur Dokumentation für Visual Studio:<br /><br /> -   **Einfache Ansicht.** Am Anfang eines jeden Themas gelangen Sie über den Link **Dieses Thema bewerten** an das Ende dieses Themas, wo Sie die Frage **Fanden Sie dies hilfreich?** mit **Ja** oder **Nein** beantworten können Sie können eines oder mehrere Kontrollkästchen aktivieren, die angezeigt werden, wenn Sie **Ja**ausgewählt haben, weitere Informationen im Textfeld eingeben, oder beides. Wenn Sie fertig sind, klicken Sie **Senden** .<br />-   **Ansicht ohne Skripts.** Wählen Sie am Anfang des Themas den Link **Feedback** aus, um im TechNet- und Expression Library Feedback-Forum Feedback bereitzustellen.<br />-   **Klassische Ansicht.** Wählen Sie am Anfang des Themas den Link **Per Mausklick bewerten und Feedback geben** aus, um dem Dokumentationsteam Feedback zum Thema zu geben.|
+|![Bereitstellen von Feedback](../sharepoint/media/vs-icon-feedback.gif "Senden von Feedback")|**Bereitstellen von Feedback**<br /><br /> Feedback zu Visual Studio:<br /><br /> -   [Microsoft Connect](/collaborate/connect-redirect)<br /><br /> Feedback zur Dokumentation für Visual Studio:<br /><br /> -   **Einfache Ansicht.** Am Anfang eines jeden Themas gelangen Sie über den Link **Dieses Thema bewerten** an das Ende dieses Themas, wo Sie die Frage **Fanden Sie dies hilfreich?** mit **Ja** oder **Nein** beantworten können Sie können eines oder mehrere Kontrollkästchen aktivieren, die angezeigt werden, wenn Sie **Ja** ausgewählt haben, weitere Informationen im Textfeld eingeben, oder beides. Wenn Sie fertig sind, klicken Sie **Senden** .<br />-   **Ansicht ohne Skripts.** Wählen Sie am Anfang des Themas den Link **Feedback** aus, um im TechNet- und Expression Library Feedback-Forum Feedback bereitzustellen.<br />-   **Klassische Ansicht.** Wählen Sie am Anfang des Themas den Link **Per Mausklick bewerten und Feedback geben** aus, um dem Dokumentationsteam Feedback zum Thema zu geben.|

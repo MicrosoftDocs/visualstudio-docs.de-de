@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: 26c3ce01f656f77c578eaa78902bddb7fd844a7d
-  ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+  ms.openlocfilehash: f3ec7ac35844d149a63a76144f9fe6ba54db12e1
+  ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "90038490"
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "94903909"
 landingContent:
 - title: Grundlegendes zur Bereitstellung
   linkLists:
@@ -23,10 +23,12 @@ landingContent:
     links:
     - text: Erster Einblick in die Bereitstellung
       url: deploying-applications-services-and-components.md
+- title: Erste Schritte (.NET Core, Python)
+  linkLists:
+  - linkListType: overview
+    links:
     - text: Bereitstellen in einem Ordner, in IIS oder in Azure
       url: deploying-applications-services-and-components-resources.md
-- title: Erste Schritte
-  linkLists:
   - linkListType: quickstart
     links:
     - text: Veröffentlichen in Azure App Service
@@ -37,18 +39,28 @@ landingContent:
       url: quickstart-deploy-to-a-web-site.md
     - text: Veröffentlichen in einem Ordner
       url: quickstart-deploy-to-local-folder.md
+    - text: Bereitstellen einer .NET Core-App mithilfe von ClickOnce
+      url: quickstart-deploy-using-clickonce-folder.md
 - title: Bereitstellen von .NET-Apps
   linkLists:
   - linkListType: tutorial
     links:
     - text: Bereitstellen von .NET Core-Apps
       url: /dotnet/core/deploying/deploy-with-vs
-    - text: Bereitstellen einer Desktop-App mit ClickOnce
+    - text: Bereitstellen einer .NET Framework-Desktop-App mit ClickOnce
       url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-    - text: Erstellen von ClickOnce-Anwendungen über die Befehlszeile
-      url: building-clickonce-applications-from-the-command-line.md
+    - text: Bereitstellen einer Desktop-App mithilfe eines Installationsprogrammpakets
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
   - linkListType: how-to-guide
     links:
+    - text: Packen einer Desktop-App für den Microsoft Store
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Bereitstellen von C++-Apps
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Bereitstellen mithilfe eines Installationsprogrammpakets
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
     - text: Packen einer Desktop-App für den Microsoft Store
       url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
 - title: Bereitstellen von ASP.NET Core-Apps
@@ -61,31 +73,15 @@ landingContent:
       url: tutorial-import-publish-settings-iis.md
     - text: Veröffentlichen mit Git
       url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-- title: Bereitstellen von C++-Apps
+- title: Zusätzliche Bereitstellungstypen
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Bereitstellen von Apps mithilfe eines Setupprojekts (C/C++)
-      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-    - text: Packen einer Desktop-App für den Microsoft Store
-      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-- title: Bereitstellen von Python-Apps
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Veröffentlichen in Linux App Service
+    - text: Python-Apps in Linux App Service
       url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
-- title: Bereitstellen von Node.js-Apps
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Veröffentlichen in Linux App Service
+    - text: Node.js-Apps in Linux App Service
       url: ../javascript/publish-nodejs-app-azure.md
-- title: Bereitstellen von .NET-Paketen in NuGet.org
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Veröffentlichen von Paketen in NuGet.org (.NET Standard)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
-    - text: Veröffentlichen von Paketen in NuGet.org (.NET Framework)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+    - text: Bereitstellen von containerisierten Apps
+      url: ../containers/index.yml
+    - text: Veröffentlichen von NuGet-Paketen
+      url: /nuget

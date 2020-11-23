@@ -1,5 +1,5 @@
 ---
-title: Anfügen an laufende Prozesse mit dem Debugger | Microsoft-Dokumentation
+title: Anfügen an laufende Prozesse mit dem Debugger
 ms.custom: seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959860"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671458"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 
@@ -159,85 +159,15 @@ In einigen Fällen werden beim Debuggen in einer Remotedesktopsitzung (Terminald
 
 Wenn keine dieser beiden Problemlösungen möglich ist, können Sie als dritte Möglichkeit den Prozess anfügen, indem Sie `vsjitdebugger.exe -p <ProcessId>` in der Windows-Befehlszeile ausführen. Die Prozess-ID kann mit *tlist.exe* ermittelt werden. Laden Sie die Debugtools für Windows unter [WDK and WinDbg downloads (Herunterladen von WDK und WinDbg)](/windows-hardware/drivers/download-the-wdk) herunter, um *tlist.exe* abzurufen.
 
-::: moniker range=">= vs-2019"
-
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Anfügen an einen .NET Core-Prozess unter Linux mit SSH
 
 Weitere Informationen finden Sie unter [Remotedebuggen von .NET Core unter Linux mit SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Anfügen an einen Prozess, der in einem Linux-Docker-Container ausgeführt wird
+::: moniker range=">= vs-2019"
 
-Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem .NET Core Linux-Docker-Container auf Ihrem lokalen oder Remotecomputer ausgeführt wird, indem Sie das Dialogfeld **An den Prozess anhängen** verwenden.
+## <a name="attach-to-a-process-running-on-a-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Anfügen an einen in einem Docker-Container ausgeführten Prozess
 
-> [!IMPORTANT]
-> Um dieses Feature nutzen zu können, müssen Sie die Workload für die plattformübergreifende .NET Core-Entwicklung installieren und über lokalen Zugriff auf den Quellcode verfügen.
-
-**So fügen Sie an einen aktiven Prozess in einem Linux-Docker-Container an**
-
-1. Wählen Sie in Visual Studio **Debuggen > An den Prozess anhängen (STRG+ALT+P)** aus, um das Dialogfeld **An den Prozess anhängen** zu öffnen.
-
-![Menü „An den Prozess anhängen“](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
-
-2. Legen Sie den **Verbindungstyp** auf **Docker (Linux-Container)** fest.
-3. Wählen Sie **Suchen...** aus, um das **Verbindungsziel** über das Dialogfeld **Docker-Container auswählen** festzulegen.
-
-    Sie können einen Docker-Containerprozess entweder lokal oder remote debuggen.
-
-    **So debuggen Sie einen Docker-Containerprozess lokal**
-    1. Legen Sie **Docker-CLI-Host** auf **Lokaler Computer** fest.
-    1. Wählen Sie einen aktiven Container zum Anfügen aus der Liste aus, und klicken Sie auf **OK**.
-
-    ![Menü „Docker-Container auswählen“](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
-
-    **B. So debuggen Sie einen Docker-Containerprozess remote**
-
-    > [!NOTE]
-    > Es gibt zwei Möglichkeiten, eine Remoteverbindung mit einem aktiven Prozess in einem Docker-Container herzustellen. Die erste Option, die Verwendung von SSH, ist ideal, wenn Sie keine Docker-Tools auf Ihrem lokalen Computer installiert haben.  Wenn Sie die Docker-Tools lokal installiert haben und Sie über einen Docker-Daemon verfügen, der so konfiguriert ist, dass er Remoteanforderungen akzeptiert, probieren Sie die zweite Option mit einem Docker-Daemon aus.
-
-    1. ***So stellen Sie über SSH eine Verbindung mit einem Remotecomputer her***
-        1. Wählen Sie **Hinzufügen...** aus, um eine Verbindung mit einem Remotesystem herzustellen.<br/>
-        ![Herstellen einer Verbindung mit einem Remotesystem](../debugger/media/connect-remote-system.png "Herstellen einer Verbindung mit einem Remotesystem")
-        1. Wählen Sie einen aktiven Container zum Anfügen aus, nachdem die Verbindung mit SSH oder dem Daemon erfolgreich hergestellt wurde, und drücken Sie auf **OK**.
-
-    1. ***So legen Sie das Ziel auf einen Remotecontainer fest, der einen Prozess über einen [Docker-Daemon ausführt](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-        1. Geben Sie die Daemonadresse (d. h. über TCP, IP usw.) unter **Docker-Host (Optional)** an, und klicken Sie auf den Link „Aktualisieren“.
-        1. Wählen Sie einen aktiven Container zum Anfügen aus, nachdem die Verbindung mit dem Daemon erfolgreich hergestellt wurde, und drücken Sie auf **OK**.
-
-4. Wählen Sie den entsprechenden Containerprozess aus der Liste der **Verfügbaren Prozesse** und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses in Visual Studio zu beginnen.
-
-    ![Abgeschlossenes Menü „Anfügen“ für Docker](../debugger/media/docker-attach-complete.png "Abgeschlossenes Menü „Anfügen“ für Linux-Docker")
-
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Anfügen an einen Prozess, der in einem Windows-Docker-Container ausgeführt wird
-
-Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem Windows-Docker-Container auf Ihrem lokalen Computer ausgeführt wird, indem Sie das Dialogfeld **An den Prozess anhängen** verwenden.
-
-> [!IMPORTANT]
-> Um dieses Feature mit einem .NET Core-Prozess nutzen zu können, müssen Sie die Workload für die plattformübergreifende .NET Core-Entwicklung installieren und über lokalen Zugriff auf den Quellcode verfügen.
-
-**So fügen Sie an einen aktiven Prozess in einem Windows-Docker-Container an**
-
-1. Wählen Sie in Visual Studio **Debuggen > An den Prozess anhängen** (oder **STRG+ALT+P**) aus, um das Dialogfeld **An den Prozess anhängen** zu öffnen.
-
-   ![Menü „An den Prozess anhängen“](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
-
-2. Legen Sie den **Verbindungstyp** auf **Docker (Windows-Container)** fest.
-3. Wählen Sie **Suchen...** aus, um das **Verbindungsziel** über das Dialogfeld **Docker-Container auswählen** festzulegen.
-
-    > [!IMPORTANT]
-    > Der Zielprozess muss dieselbe Prozessorarchitektur aufweisen wie der Windows-Docker-Container, in dem er ausgeführt wird.
-
-   Das Festlegen des Ziels auf einen Remotecontainer über SSH ist derzeit nicht verfügbar und kann nur über einen Docker-Daemon erfolgen.
-
-    ***So legen Sie das Ziel auf einen Remotecontainer fest, der einen Prozess über einen [Docker-Daemon ausführt](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-    1. Geben Sie die Daemonadresse (d. h. über TCP, IP usw.) unter **Docker-Host (Optional)** an, und klicken Sie auf den Link „Aktualisieren“.
-
-    1. Wählen Sie einen aktiven Container zum Anfügen aus, nachdem die Verbindung mit dem Daemon erfolgreich hergestellt wurde, und wählen Sie „OK“ aus.
-
-4. Wählen Sie den entsprechenden Containerprozess aus der Liste der **Verfügbaren Prozesse** und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses zu beginnen.
-
-    ![Abgeschlossenes Menü „Anfügen“ für Docker](../debugger/media/docker-attach-complete-windows.png "Abgeschlossenes Menü „Anfügen“ für Windows-Docker")
-
-5.  Wählen Sie den entsprechenden Containerprozess aus der Liste der verfügbaren Prozesse und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses zu beginnen.
+Ab Visual Studio 2019 können Sie den Visual Studio-Debugger an einen Prozess anfügen, der in einem Docker-Container ausgeführt wird. Weitere Informationen zum Linux-Docker-Container in .NET Core finden Sie unter [Anfügen an einen Prozess, der in einem Linux-Docker-Container ausgeführt wird](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container). Weitere Informationen zum Windows-Docker-Container finden Sie unter [Anfügen an einen Prozess, der in einem Windows-Docker-Container ausgeführt wird](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-windows-docker-container).
 
 ::: moniker-end
 
@@ -267,7 +197,8 @@ Um schnell einen aktiven Prozess zum Anhängen auszuwählen, geben Sie in Visual
 |Debuggen clientseitiger Skripts auf einem lokalen IIS-Server, für unterstützte App-Typen |Verwenden von **An den Prozess anhängen**|*chrome.exe*, *MicrosoftEdgeCP.exe* oder *iexplore.exe*|Skriptdebugging muss aktiviert sein. Für Chrome müssen Sie Chrome auch im Debugmodus ausführen (geben Sie `chrome.exe --remote-debugging-port=9222` von der Befehlszeile aus ein) und **JavaScript (Chrome)** im Feld **Anfügen** auswählen.|
 |Debuggen einer C#-, Visual Basic- oder C++-App auf dem lokalen Computer|Verwenden Sie entweder das Standarddebuggen (**F5**) oder **An den Prozess anhängen**.|*\<appname>.exe*|Verwenden Sie in den meisten Szenarien das Standarddebuggen und nicht **An den Prozess anhängen**.|
 |Remotedebuggen einer Windows-Desktop-App|Remotetools|Nicht zutreffend| Weitere Informationen finden Sie unter [Remotedebuggen einer C#- oder Visual Basic-App](../debugger/remote-debugging-csharp.md) oder [Remotedebuggen einer C++-App](../debugger/remote-debugging-cpp.md).|
-|Debuggen von .NET Core unter Linux|Verwenden von **An den Prozess anhängen**|*dotnet.exe*|Weitere Informationen zur Verwendung von SSH finden Sie unter [Remotedebuggen von .NET Core unter Linux mit SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Informationen zu Containeranwendungen finden Sie in den Abschnitten weiter oben in diesem Artikel.|
+|Debuggen von .NET Core unter Linux|Verwenden von **An den Prozess anhängen**|*dotnet.exe* oder ein eindeutiger Prozessname|Weitere Informationen zur Verwendung von SSH finden Sie unter [Remotedebuggen von .NET Core unter Linux mit SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Weitere Informationen zu containerisierten Apps finden Sie unter [Anfügen an einen in einem Docker-Container ausgeführten Prozess](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
+|Debuggen einer containerisierten App|*dotnet.exe* oder ein eindeutiger Prozessname|Weitere Informationen finden Sie unter [Anfügen an einen in einem Docker-Container ausgeführten Prozess](../debugger/attach-to-process-running-in-docker-container.md).|
 |Remotedebuggen von Python unter Linux|Verwenden von **An den Prozess anhängen**|*debugpy*|Weitere Informationen finden Sie unter [Remoteanfügen über Python Tools](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools).|
 |Debuggen einer ASP. NET-App auf dem lokalen Computer, nachdem Sie die App ohne den Debugger gestartet haben|Verwenden von **An den Prozess anhängen**|*iiexpress.exe*|Dies kann hilfreich sein, damit Ihre App schneller geladen wird, z. B. bei der Profilerstellung. |
 |Debuggen anderer unterstützter App-Typen für einen Serverprozess|Wenn es sich um einen Remoteserver handelt, verwenden Sie Remotetools und **An den Prozess anhängen**.|*chrome.exe*, *iexplore.exe* oder andere Prozesse|Verwenden Sie bei Bedarf den Ressourcenmonitor, um den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote debugging (Remotedebuggen)](../debugger/remote-debugging.md).|

@@ -1,5 +1,7 @@
 ---
 title: Datentools für .NET
+description: Machen Sie sich mit den Visual Studio-Datentools für .NET vertraut, die API- und Toolunterstützung zum Herstellen einer Verbindung mit Datenbanken, zum Modellieren von Daten im Arbeitsspeicher und zum Anzeigen von Daten auf der Benutzeroberfläche bieten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a095d0fc026634c13ee9f74c8568e199e09f49db
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281070"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998277"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio-Datentools für .NET
 

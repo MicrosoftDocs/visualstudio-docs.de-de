@@ -1,18 +1,18 @@
 ---
 title: Arbeiten mit mehreren Benutzerkonten
-ms.date: 07/23/2019
+ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800228"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671336"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
@@ -125,7 +125,16 @@ Gehen Sie wie folgt vor, um sich über den Gerätecodeflow anzumelden:
 
 1. Kehren Sie zurück zur Seite „Kontoverwaltung“ in Visual Studio. Dann sollten die neu hinzugefügten Konten unter **Alle Konten** aufgeführt werden. Klicken Sie auf **Schließen**.
 
-## <a name="see-also"></a>Weitere Informationen
+::: moniker range=">=vs-2019"
+
+### <a name="add-a-github-account-to-visual-studio"></a>Hinzufügen eines GitHub-Kontos zu Visual Studio
+
+Ab Version 16.8 können Sie Ihrer Keychain sowohl GitHub- als auch GitHub Enterprise-Konten hinzufügen. Sie können sie genauso wie bei Microsoft-Konten hinzufügen und nutzen, d. h., dass Sie einfacher auf die GitHub-Ressourcen in Visual Studio zugreifen können.
+
+Ausführliche Anweisungen finden Sie unter [Arbeiten mit GitHub-Konten in Visual Studio](work-with-github-accounts.md).
+::: moniker-end
+
+## <a name="see-also"></a>Siehe auch
 
 - [Anmelden bei Visual Studio](signing-in-to-visual-studio.md)
 - [Anmelden bei Visual Studio für Mac](/visualstudio/mac/signing-in)
