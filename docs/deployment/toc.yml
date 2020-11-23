@@ -20,45 +20,45 @@
   items:
     - name: .NET
       items:
-        - name: Bereitstellen einer .NET Core-Anwendung mit dem Tool „Veröffentlichen“
-          href: /dotnet/core/deploying/deploy-with-vs
-        - name: Packen einer Desktop-App für den Microsoft Store
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Bereitstellen einer .NET-Windows-Anwendung mithilfe von ClickOnce
           href: quickstart-deploy-using-clickonce-folder.md
         - name: Bereitstellen einer .NET Framework-Desktop-App mit ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+        - name: Erstellen eines Installationspakets (Windows-Desktop)
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Packen einer Desktop-App für den Microsoft Store >>
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Erstellen von ClickOnce-Anwendungen über die Befehlszeile
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
-        - name: Veröffentlichen einer ASP.NET Core-App in Azure
+        - name: Veröffentlichen einer ASP.NET Core-App in Azure >>
           href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
         - name: Importieren von Veröffentlichungseinstellungen und Bereitstellung in IIS
           href: tutorial-import-publish-settings-iis.md
         - name: Importieren von Veröffentlichungseinstellungen und deren Bereitstellung in Azure
           href: tutorial-import-publish-settings-azure.md
-        - name: Continuous Deployment von ASP.NET Core in Azure mit Git
+        - name: Continuous Deployment von ASP.NET Core in Azure mit Git >>
           href: /aspnet/core/publishing/azure-continuous-deployment
     - name: C++
       items:
-        - name: Bereitstellen einer App in C/C++
-          href: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Packen einer Desktop-App für den Microsoft Store
+        - name: Erstellen eines Installationsprogrammpakets
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Packen einer Desktop-App für den Microsoft Store >>
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Bereitstellen einer C++/CLR App mit ClickOnce
+        - name: Bereitstellen einer C++/CLR-App mit ClickOnce >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
-        - name: Packen einer UWP-App mit Visual Studio
+        - name: Packen einer UWP-App mit Visual Studio >>
           href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Veröffentlichen in Linux App Service
+        - name: Veröffentlichen in Linux App Service >>
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
-        - name: Veröffentlichen in Azure App Service
+        - name: Veröffentlichen in Azure App Service >>
           href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: Anleitungen
   items:

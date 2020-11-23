@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492894"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704000"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Verwenden von Entwurfszeitdaten mit dem XAML-Designer in Visual Studio
 
@@ -181,7 +181,7 @@ Wenn ein Problem auftritt, das in diesem Abschnitt nicht aufgeführt ist, inform
 
 - Für Entwurfszeitdaten ist Visual Studio 2019, Version [16.7](/visualstudio/releases/2019/release-notes) oder höher erforderlich.
 
-- Windows-Desktopprojekte für Windows Presentation Foundation (WPF) für .NET Core und für UWP werden unterstützt. Dieses Feature ist auch für das .NET Framework verfügbar, wenn die Previewfunktion „Neuer WPF-XAML-Designer für .NET Framework“ aktiviert ist.
+- Windows-Desktopprojekte für Windows Presentation Foundation (WPF) für .NET Core und für UWP werden unterstützt. Dieses Feature ist auch im [Vorschaukanal](/visualstudio/releases/2019/release-notes-preview) für .NET Framework verfügbar. Navigieren Sie zu **Extras** > **Optionen** > **Umgebung** > **Vorschaufeatures**, klicken Sie auf **New WPF XAML Designer for .NET Framework** (Neuer WPF-XAML-Designer für .NET Framework), und starten Sie anschließend Visual Studio neu, um das Feature zu aktivieren.
 
 - Ab Visual Studio 2019, Version 16.7 funktioniert dieses Feature für alle Standardsteuerelemente aus WPF- und UWP-Frameworks. Unterstützung für Steuerelemente von Drittanbietern ist jetzt im Previewrelease 16.8 verfügbar.
 

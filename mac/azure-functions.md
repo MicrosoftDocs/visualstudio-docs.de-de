@@ -7,16 +7,16 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: f3c1c528e9201c66bc566f9867f8325c653700b9
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492840"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575540"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
-Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – Funktionen – in einer Cloud erstellen und ausführen, ohne Infrastruktur bereitstellen und verwalten zu müssen. Weitere Informationen zu Azure Functions finden Sie in der [Dokumentation zu Azure Functions](/azure/azure-functions/).
+Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – Funktionen – in der Cloud erstellen und ausführen, ohne Infrastruktur bereitstellen und verwalten zu müssen. Weitere Informationen zu Azure Functions finden Sie in der [Dokumentation zu Azure Functions](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -151,11 +151,11 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
 
 - **Queue Trigger**: eine Funktion, die auf Meldungen antwortet, wenn diese in die Azure Storage-Warteschlange aufgenommen werden. Neben dem Funktionsnamen beinhaltet diese Vorlage einen **Pfad** (den Namen der Warteschlange, aus der die Meldung gelesen wird) und die Speicherkonto-**Verbindung** (der Name der App-Einstellung mit der Verbindungszeichenfolge des Speicherkontos). Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch Azure Queue Storage ausgelöst wird](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Blob Trigger**: eine Funktion, die Azure Storage-Blobs verarbeitet, wenn diese zu einem Container hinzugefügt werden. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch Azure Blob Storage ausgelöst wird](/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Blob Trigger**: eine Funktion, die Azure Storage-Blobs verarbeitet, wenn diese zu einem Container hinzugefügt werden. Neben dem Funktionsnamen beinhaltet diese Vorlage auch eine Pfad- und eine Verbindungseigenschaft. Die Pfadeigenschaft ist der Pfad innerhalb Ihres Speicherkontos, der vom Trigger überwacht wird. Das Verbindungskonto ist der Name der App-Einstellung, die die Verbindungszeichenfolge für Ihr Speicherkonto enthält. Weitere Informationen finden Sie unter [Erstellen einer Funktion in Azure, die durch Blob Storage ausgelöst wird](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **Generic WebHook**: eine einfache Funktion, die immer dann ausgeführt wird, wenn eine Anforderung von einem Dienst empfangen wird, der Webhooks unterstützt. Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch einen generischen Webhook ausgelöst wird](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **Generic WebHook**: eine einfache Funktion, die immer dann ausgeführt wird, wenn eine Anforderung von einem Dienst empfangen wird, der Webhooks unterstützt. Weitere Informationen finden Sie unter [Übersicht über HTTP-Trigger und -Bindungen in Azure Functions](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Durable functions orchestration**: Mithilfe von Durable Functions können Sie zustandsbehaftete Funktionen in einer Umgebung ohne Server schreiben. Die Erweiterung verwaltet den Status, Prüfpunkte und führt einen Neustart durch. Weitere Informationen finden Sie in den Leitfäden zu Azure Functions unter [Übersicht zu Durable Functions](/azure/azure-functions/durable-functions-overview).
+- **Durable functions orchestration**: Mithilfe von Durable Functions können Sie zustandsbehaftete Funktionen in einer Umgebung ohne Server schreiben. Die Erweiterung verwaltet den Status, Prüfpunkte und führt einen Neustart durch. Weitere Informationen finden Sie in den Leitfäden zu Azure Functions unter [Was ist Durable Functions?](/azure/azure-functions/durable-functions-overview).
 
 - **Image Resizer**: eine Funktion, die Images mit geänderter Größe erstellt, wenn einem Container ein Blob hinzugefügt wird. Diese Vorlage beinhaltet einen Pfad und eine Verbindungszeichenfolge für den Trigger, eine kleine Imageausgabe und eine mittelgroße Imageausgabe.
 

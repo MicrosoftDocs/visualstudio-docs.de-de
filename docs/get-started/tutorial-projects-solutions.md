@@ -1,6 +1,6 @@
 ---
 title: Einführung in Projekte und Projektmappen
-ms.date: 02/24/2020
+ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579974"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704052"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Erfahren Sie mehr über Projekte und Projektmappen
 
@@ -71,6 +71,9 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
    ![Vorlage „Leere Projektmappe“ in Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
 
+    > [!TIP]
+    > Wenn Sie mehrere Workloads installiert haben, wird die Vorlage **Leere Projektmappe** möglicherweise nicht oben in der Liste der Suchergebnisse angezeigt. Scrollen Sie in der Liste zum Abschnitt **Andere Ergebnisse basierend auf Ihrer Suche**. Dort sollte die Vorlage angezeigt werden.
+
 4. Nennen Sie die Lösung **QuickSolution**, und wählen Sie dann **Erstellen** aus.
 
    Im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
@@ -87,7 +90,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
 
    Das Dialogfeld **Neues Projekt hinzufügen** wird geöffnet.
 
-1. Erweitern Sie im linken Bereich **Visual C#** , und wählen Sie **Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich die Vorlage **Leeres Projekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickDate**, und klicken Sie anschließend auf **OK**.
+1. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie **Windows-Desktop** aus. Wählen Sie anschließend im mittleren Bereich die Vorlage **Leeres Projekt (.NET Framework)** aus. Geben Sie dem Projekt den Namen **QuickDate**, und klicken Sie anschließend auf **OK**.
 
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
 
@@ -104,7 +107,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
 
    Ein Dialogfeld mit dem Titel **Neues Projekt hinzufügen** wird geöffnet.
 
-1. Geben Sie den Text **Leer** oben in das Suchfeld ein, und klicken Sie dann unter **Sprache** auf **C#** .
+1. Geben Sie den Text **Leer** oben in das Suchfeld ein, und klicken Sie dann unter **Sprache** auf **C#**.
 
 1. Klicken Sie zuerst auf die Vorlage **Empty Project (.NET Framework)** (Leeres Projekt (.NET Framework)) und anschließend auf **Weiter**.
 
@@ -167,7 +170,7 @@ Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal 
 
 ::: moniker range="vs-2017"
 
-2. Erweitern Sie im linken Bereich **Visual C#** , und wählen Sie die Kategorie **Test** aus. Wählen Sie im mittleren Bereich die Projektvorlage **MSTest Test Project (.NET Core)** (MSTest-Testprojekt (.NET Core)) aus. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf **OK**.
+2. Erweitern Sie im linken Bereich **Visual C#**, und wählen Sie die Kategorie **Test** aus. Wählen Sie im mittleren Bereich die Projektvorlage **MSTest Test Project (.NET Core)** (MSTest-Testprojekt (.NET Core)) aus. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf **OK**.
 
    Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.cs* geöffnet.
 
@@ -177,7 +180,7 @@ Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal 
 
 ::: moniker range=">=vs-2019"
 
-2. Geben Sie im Dialogfeld **Neues Projekt hinzufügen** oben in das Suchfeld den Text **Komponententest** ein, und klicken Sie dann unter **Sprache** auf **C#** .
+2. Geben Sie im Dialogfeld **Neues Projekt hinzufügen** oben in das Suchfeld den Text **Komponententest** ein, und klicken Sie dann unter **Sprache** auf **C#**.
 
 3. Klicken Sie zunächst auf die Projektvorlage **MSTest Test Project (.NET Core)** (MSTest-Testprojekt (.NET Core)) und anschließend auf **Weiter**.
 
@@ -271,7 +274,7 @@ Wenn Sie testen möchten, ob der Komponententest funktioniert, klicken Sie in de
 
 ::: moniker-end
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen von Projekten und Projektmappen](../ide/creating-solutions-and-projects.md)
 - [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)

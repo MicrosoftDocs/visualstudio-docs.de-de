@@ -2,20 +2,20 @@
 title: Git-Benutzeroberfläche in Visual Studio
 titleSuffix: ''
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der neuen integrierten Git-Benutzeroberfläche in Visual Studio 2019 Ihre Produktivität steigern können.
-ms.date: 11/10/2020
+ms.date: 11/16/2020
 ms.topic: conceptual
 ms.author: tglee
-author: prnadago
+author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493555"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704065"
 ---
-# <a name="git-productivity-in-visual-studio"></a>Git-Produktivität in Visual Studio
+# <a name="git-experience-in-visual-studio"></a>Git-Benutzeroberfläche in Visual Studio
 
 Git ist nun die Standardressource für die Versionskontrolle in Visual Studio 2019. Seit [Version 16.6](/visualstudio/releases/2019/release-notes-v16.6) wurde das Featurespektrum anhand des Benutzerfeedbacks weiter ausgearbeitet und verbessert. Die neue Git-Benutzeroberfläche ist seit dem Release von [Version 16.8](/visualstudio/releases/2019/release-notes/) standardmäßig für alle Benutzer aktiviert.
 
@@ -24,11 +24,18 @@ Git ist nun die Standardressource für die Versionskontrolle in Visual Studio 2
 
 ## <a name="how-to-use-git-in-visual-studio"></a>Verwenden von Git in Visual Studio
 
-Es gibt drei Möglichkeiten, Ihre Produktivität mit Git in Visual Studio 2019 zu steigern:
+In diesem Artikel erhalten Sie eine detaillierte Anleitung zur Verwendung der neuen Git-Benutzeroberfläche in Visual Studio 2019. Wenn Sie jedoch vorab bereits einen kurzen Blick darauf werfen möchten, können Sie sich das folgende Video ansehen: <br><br>*Länge des Videos: 5,27 Minuten*
+
+> [!VIDEO https://www.youtube.com/embed/UHrAg3iKoe0]
+
+Es gibt drei Möglichkeiten, Ihre Produktivität mit Git in Visual Studio zu steigern:
 
 - [Öffnen eines vorhandenen Git-Repositorys:](#open-an-existing-local-repository) Wenn sich Ihr Code bereits auf Ihrem Computer befindet, können Sie ihn über **Datei** > **Öffnen** > **Projekt/Projektmappe** (oder **Ordner**) öffnen. Visual Studio erkennt automatisch, ob ein initialisiertes Git-Repository verfügbar ist.
 - [Erstellen eines neuen Git-Repositorys:](#create-a-new-git-repository) Wenn Ihr Code Git nicht zugeordnet ist, können Sie ein neues Git-Repository erstellen.
 - [Klonen eines vorhandenen Git-Repositorys:](#clone-an-existing-git-repository) Wenn sich der Code, mit dem Sie arbeiten möchten, nicht auf Ihrem Computer befindet, können Sie jedes beliebige Remoterepository klonen.
+
+> [!NOTE]
+> Ebenfalls ab [Version 16.8](/visualstudio/releases/2019/release-notes/) steht Ihnen in Visual Studio 2019 eine vollständig integrierte GitHub-Kontobenutzeroberfläche zur Verfügung. Sie können Ihrer Keychain nun sowohl GitHub- als auch GitHub Enterprise-Konten hinzufügen. Sie können sie genauso wie Microsoft-Konten hinzufügen und nutzen. Dies vereinfacht den Zugriff auf GitHub-Ressourcen in Visual Studio für Sie. Weitere Informationen finden Sie auf der Seite [Arbeiten mit GitHub-Konten in Visual Studio](work-with-github-accounts.md).
 
 ## <a name="create-a-new-git-repository"></a>Erstellen eines neuen Git-Repositorys
 
@@ -195,8 +202,10 @@ Die neue Git-Benutzeroberfläche ist in Visual Studio 2019, [Version 16.8](/vi
 
 ## <a name="see-also"></a>Weitere Informationen
 
+- Blogbeitrag [Ankündigung der Git-Benutzeroberfläche in Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)
 - [Start der neuen Git-Benutzeroberfläche](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) auf YouTube
 - [Die Serie „Visual Studio Toolbox“ präsentiert: The new Git experience](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) (Die neue Git-Benutzeroberfläche) auf Channel 9 und auf [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - Blogbeitrag zu den [aufregenden neuen Updates in Bezug auf die Git-Benutzeroberfläche in Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)
 - Blogbeitrag zur [verbesserten Git-Benutzeroberfläche in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
+- [Arbeiten mit GitHub-Konten in Visual Studio](work-with-github-accounts.md)
 - [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes)

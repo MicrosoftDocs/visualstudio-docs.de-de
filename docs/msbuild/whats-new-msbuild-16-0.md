@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047785"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531861"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Neuerungen in MSBuild 16.0
 
@@ -32,6 +32,10 @@ In diesem Artikel werden die aktualisierten Funktionen und Eigenschaften in MSBu
 - `MSBuildToolsVersion` für diese Version der Tools ist „Current“. Die Assembly-Version ist 15.1.0.0 und entspricht somit der von Visual Studio 2017.
 
 - `VisualStudioVersion` für diese Version der Tools ist „16.0“.
+
+## <a name="change-waves"></a>Änderungswellen
+
+Ab MSBuild 16.8 können Sie selektiv auswählen, ob Sie bestimmte möglicherweise störende Änderungen in MSBuild ablehnen möchten. Weitere Informationen finden Sie unter [Änderungswellen](change-waves.md).
 
 ## <a name="updates"></a>Updates
 

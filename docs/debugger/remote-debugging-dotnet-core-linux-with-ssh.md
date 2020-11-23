@@ -1,5 +1,5 @@
 ---
-title: Remotedebuggen von .NET Core unter Linux | Microsoft-Dokumentation
+title: Debuggen von .NET Core unter Linux
 ms.date: 02/26/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,44 +9,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d66181f5e6720348e18c34b735ef29e24c0111a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 39b77d68e7f8876f7e0d038166f4b2a6517bb3cb
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796302"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671505"
 ---
-# <a name="remote-debug-net-core-on-linux-using-ssh"></a>Remotedebuggen von .NET Core unter Linux mit SSH
+# <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Debuggen von .NET Core unter Linux mithilfe von SSH durch Anhängen an einen Prozess
 
-Ab Visual Studio 2017 können Sie .NET Core-Prozesse, die unter Linux ausgeführt werden, über SSH anfügen. In diesem Artikel wird beschrieben, wie Sie Debuggen einrichten und wie es erfolgt.
+Ab Visual Studio 2017 können Sie .NET Core-Prozesse, die auf einer Linux-Bereitstellung (lokal oder remote) ausgeführt werden, über SSH anfügen. In diesem Artikel wird beschrieben, wie Sie Debuggen einrichten und wie es erfolgt. Weitere Informationen zu Debuggingszenarios mit Docker-Containern finden Sie stattdessen unter [Anfügen an einen in einem Docker-Container ausgeführten Prozess](../debugger/attach-to-process-running-in-docker-container.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Auf dem Visual Studio-Computer müssen Sie entweder die Workload **ASP.NET und Webentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** installieren.
+- Auf dem Visual Studio-Computer müssen Sie entweder die Workload **ASP.NET und Webentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** installieren.
 
-Auf dem Linux-Server müssen Sie den SSH-Server installieren. Verwenden Sie zum Entpacken und Installieren curl oder wget. Unter Ubuntu können Sie beispielsweise Folgendes ausführen:
+- Auf dem Linux-Server müssen Sie den SSH-Server installieren. Verwenden Sie zum Entpacken und Installieren curl oder wget. Unter Ubuntu können Sie beispielsweise Folgendes ausführen:
 
-``` cmd
-sudo apt-get install openssh-server unzip curl
-```
+  ``` cmd
+  sudo apt-get install openssh-server unzip curl
+  ```
 
-## <a name="build-and-deploy-the-application"></a>Erstellen und Bereitstellen der Anwendung
+- Installieren Sie auf dem Linux-Server [die .NET-Runtime unter Linux](/dotnet/core/install/linux), und suchen Sie die Seite, die mit Ihrer Linux-Distribution (z. B. Ubuntu) übereinstimmt. Das .NET SDK ist nicht erforderlich.
+
+- Ausführliche ASP.NET Core-Anweisungen finden Sie unter [Hosten von ASP.NET Core unter Linux mit Nginx](/aspnet/core/host-and-deploy/linux-nginx) und [Hosten von ASP.NET Core unter Linux mit Apache](/aspnet/core/host-and-deploy/linux-apache).
+
+## <a name="prepare-your-application-for-debugging"></a>Vorbereiten der Anwendung für das Debuggen
 
 Bereiten Sie Ihre Anwendung wie folgt für das Debuggen vor:
 
-- Verwenden Sie beim Erstellen der Anwendung ggf. eine Debugkonfiguration. Das Debuggen einer Releasekonfiguration ist weitaus schwieriger als von Code, der für das Debuggen kompiliert wurde. Wenn Sie eine Releasekonfiguration verwenden müssen, deaktivieren Sie zuerst „Nur eigenen Code“. Um diese Einstellung zu deaktivieren, wählen Sie **Tools** > **Optionen** > **Debuggen** aus, und deaktivieren Sie dann **Nur meinen Code aktivieren** .
+- Verwenden Sie beim Erstellen der Anwendung ggf. eine Debugkonfiguration. Das Debuggen einer Releasekonfiguration ist weitaus schwieriger als von Code, der für das Debuggen kompiliert wurde. Wenn Sie eine Releasekonfiguration verwenden müssen, deaktivieren Sie zuerst „Nur eigenen Code“. Um diese Einstellung zu deaktivieren, wählen Sie **Tools** > **Optionen** > **Debuggen** aus, und deaktivieren Sie dann **Nur meinen Code aktivieren**.
 
-- Stellen Sie sicher, dass Ihr Projekt für die Erstellung [portabler PDB-Dateien](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (Standardeinstellung) konfiguriert ist, und stellen Sie sicher, dass sich die PDB-Dateien am gleichen Speicherort wie die DLL befinden. Um dies in Visual Studio zu konfigurieren, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften** > **Build** > **Erweitert** > **Debuginformationen** aus.
+- Stellen Sie sicher, dass Ihr Projekt für die Erstellung [portierbarer PDB-Dateien](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (Standardeinstellung) konfiguriert ist, und stellen Sie sicher, dass sich die PDB-Dateien am gleichen Speicherort wie die DLL befinden. Um dies in Visual Studio zu konfigurieren, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften** > **Build** > **Erweitert** > **Debuginformationen** aus.
+
+## <a name="build-and-deploy-the-application"></a>Erstellen und Bereitstellen der Anwendung
 
 Sie können mehrere Methoden verwenden, um die App vor dem Debuggen bereitzustellen. Sie haben unter anderem folgende Möglichkeiten:
 
 - Kopieren Sie die Quellen auf den Zielcomputer, und kompilieren Sie mit ```dotnet build``` auf dem Linux-Computer.
 
-- Erstellen Sie die App unter Windows, und übertragen Sie die Buildartefakte dann auf den Linux-Computer. (Die Buildartefakte bestehen aus der Anwendung selbst, allen Laufzeitbibliotheken, von denen sie abhängig sein kann, und der Datei *.deps.json* .)
+- Erstellen Sie die App unter Windows, und übertragen Sie die Buildartefakte dann auf den Linux-Computer. (Die Buildartefakte bestehen aus der Anwendung selbst, den portierbaren PDB-Dateien, allen Laufzeitbibliotheken, von denen sie abhängig sein kann, und der Datei *.deps.json*.)
+
+Starten Sie die Anwendung, sobald die App bereitgestellt wurde.
 
 ## <a name="attach-the-debugger"></a>Fügen Sie den Debugger an.
 
-Nachdem die Computer konfiguriert sind, starten Sie die Anwendung auf dem Linux-Computer. Anschließend können Sie den Debugger anfügen.
+Sie können den Debugger anfügen, sobald die Anwendung auf dem Linux-Computer ausgeführt wird.
 
 1. Klicken Sie in Visual Studio auf **Debuggen** > **An Prozess anfügen...** .
 
@@ -54,9 +62,13 @@ Nachdem die Computer konfiguriert sind, starten Sie die Anwendung auf dem Linux-
 
 1. Ändern Sie das **Verbindungsziel** in die IP-Adresse oder den Hostnamen des Zielcomputers.
 
+   Wenn Sie noch keine Anmeldeinformationen angegeben haben, werden Sie aufgefordert, ein Kennwort und/oder eine private Schlüsseldatei einzugeben.
+
+   Es gibt keine zu konfigurierenden Port-Anforderungen, außer dem Port, auf dem der SSH-Server ausgeführt wird.
+
 1. Suchen Sie den Prozess, den Sie debuggen möchten.
 
-   Der Code wird entweder in einem eindeutigen Prozessnamen oder in einem Prozess mit dem Namen „dotnet“ ausgeführt. Um den gewünschten Prozess zu finden, überprüfen Sie die Spalte **Titel** , in der die Befehlszeilenargumente für den Prozess angezeigt werden.
+   Der Code wird entweder in einem eindeutigen Prozessnamen oder in einem Prozess mit dem Namen „dotnet“ ausgeführt. Um den gewünschten Prozess zu finden, überprüfen Sie die Spalte **Titel**, in der die Befehlszeilenargumente für den Prozess angezeigt werden.
 
    Im folgenden Beispiel sehen Sie eine Liste der Prozesse von einem Linux-Remotecomputer über einen SSH-Transport, die im Dialogfeld **An Prozess anfügen** angezeigt wird.
 

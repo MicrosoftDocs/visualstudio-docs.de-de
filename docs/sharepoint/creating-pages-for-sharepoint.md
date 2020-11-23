@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Seiten für SharePoint | Microsoft-Dokumentation
+description: Erstellen Sie mithilfe einer Vorlage in Visual Studio Anwendungsseiten für SharePoint. Erstellen Sie mithilfe des SharePoint-Designers Websiteseiten, Masterseiten und Seitenlayouts.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 974ddb3c68d0c2ef297c884e75300a8507f436cc
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015162"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850623"
 ---
 # <a name="create-pages-for-sharepoint"></a>Erstellen von Seiten für SharePoint
   Sie können Anwendungsseiten, Websiteseiten, Masterseiten und Seitenlayouts für eine SharePoint-Website erstellen.

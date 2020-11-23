@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Websitedefinitionen für SharePoint | Microsoft-Dokumentation
+description: Erstellen Sie Websitedefinitionen für SharePoint. Websitedefinitionen bestimmen nicht nur die Darstellung und das Verhalten der SharePoint-Website, sondern auch Standardinhalte und -funktionen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015069"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850571"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
   Mit dem SharePoint-Projekt für eine Websitedefinition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] können Sie eine *Websitedefinition* erstellen, die als Grundlage für eine neue SharePoint-Website dient. Diese Definitionen bestimmen nicht nur die Darstellung und das Verhalten der SharePoint-Website, sondern auch die Standardinhalte und -funktionen. In der Definition können Sie vorkonfigurierte Listen, Inhaltstypen, Ereignisempfänger, Images und andere Elemente platzieren. SharePoint enthält einige Websitedefinitionen wie beispielsweise BLOG. Wenn Sie eine Website basierend auf der BLOG-Websitedefinition erstellen, enthält die Website die Listen, Webparts und andere Elemente, die für eine Blogwebsite erforderlich sind.

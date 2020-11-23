@@ -1,5 +1,7 @@
 ---
 title: Erstellen und Debuggen von SharePoint-Lösungen | Microsoft-Dokumentation
+description: Hier wird erläutert, wie Sie SharePoint-Lösungen erstellen und debuggen. Außerdem erfahren Sie, inwiefern sich dies vom Erstellen und Debuggen anderer Projekttypen in Visual Studio unterscheidet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016369"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850220"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Erstellen und Debuggen von SharePoint-Lösungen
   Im Allgemeinen gleicht das Erstellen und Debuggen von SharePoint-Lösungen dem Erstellen und Debuggen von anderen Projekttypen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert.

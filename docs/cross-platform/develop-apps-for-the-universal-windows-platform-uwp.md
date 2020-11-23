@@ -1,5 +1,7 @@
 ---
 title: Entwickeln von Apps für die universelle Windows-Plattform (UWP)
+description: Hier erfahren Sie mehr über das Erstellen von Apps mithilfe von Visual Studio und den Entwicklungstools der universellen Windows-App.
+ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e9cff517c60a67ee9bbf929c59a1150d5ace3757
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75587146"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671418"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 
@@ -32,7 +34,7 @@ Zum ersten Mal wurde Windows so umgestaltet, dass ein gemeinsamer Kern für alle
 
 Universelle Windows-Plattform ist einfach eine Sammlung von Verträgen und Versionen. Mit diesen können Sie die Ziele auswählen, für die Ihre App ausgeführt werden kann. Ihr Ziel ist nicht länger ein Betriebssystem, sondern Sie können den Fokus auf eine oder mehrere Gerätefamilien legen. Weitere Informationen finden Sie unter [Einführung in Universelle Windows-Plattform](/windows/uwp/get-started/universal-application-platform-guide).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Die Entwicklungstools für universelle Windows-Apps verfügen über Emulatoren, die Sie verwenden können, um zu prüfen, wie Ihre App auf unterschiedlichen Geräten aussieht. Wenn Sie diesen Emulatoren verwenden möchten, müssen Sie diese Software auf einem physischen Computer installieren. Auf dem physischen Computer muss Windows 8.1 (X 64) Professional Edition oder höher installiert sein, und er muss über einen Prozessor verfügen, der Hyper-V für Clients und SLAT (Second Level Address Translation) unterstützt. Die Emulatoren können nicht verwendet werden, wenn Visual Studio auf einem virtuellen Computer installiert ist.
 
@@ -68,6 +70,6 @@ Wenn Sie über Windows Store 8.1-Apps, Windows Phone 8.1-Apps oder mit Visual St
 
 Nachdem Sie die universelle Windows-App erstellt haben, müssen Sie Ihre App packen, um sie auf einem Windows 10-Gerät zu installieren oder an den Windows Store zu übermitteln. Weitere Informationen finden Sie unter [Packaging apps (Packen von Apps)](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Plattformübergreifende Mobile-Entwicklung in Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)
