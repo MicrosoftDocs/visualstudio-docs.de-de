@@ -1,5 +1,7 @@
 ---
 title: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace
+description: Verwenden Sie IntelliTrace, um SharePoint-Anwendungen einfacher zu Debuggen und zu beheben. Erstellen und Hinzufügen von Code zu einem Funktions Empfänger Testen Sie das Projekt. Sammeln von IntelliTrace-Daten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015750"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598483"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace
 
@@ -65,7 +67,7 @@ Erstellen Sie zunächst ein leeres SharePoint-Projekt mit einem Funktionsempfän
 
      IntelliTrace kann nur für Farmlösungen verwendet werden.
 
-3. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Knoten **Features** , und wählen Sie dann **Feature hinzufügen**aus.
+3. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Knoten **Features** , und wählen Sie dann **Feature hinzufügen** aus.
 
      *Feature1. Feature* wird angezeigt.
 
@@ -262,11 +264,11 @@ Wenn dem Funktionsempfänger der Code hinzugefügt wurde und der Datensammler au
 
 3. Deaktivieren Sie die Funktion, indem Sie die folgenden Schritte ausführen:
 
-   1. Wählen Sie im Menü **Website Aktionen** in SharePoint die Option **Website Einstellungen**aus.
+   1. Wählen Sie im Menü **Website Aktionen** in SharePoint die Option **Website Einstellungen** aus.
 
-   2. Wählen Sie unter **Website Aktionen**den Link **Website Features verwalten** aus.
+   2. Wählen Sie unter **Website Aktionen** den Link **Website Features verwalten** aus.
 
-   3. Wählen Sie neben **intellitracetest Feature1**die Schaltfläche **Deaktivieren** aus.
+   3. Wählen Sie neben **intellitracetest Feature1** die Schaltfläche **Deaktivieren** aus.
 
    4. Wählen Sie auf der Seite Warnung den Link **Diese Funktion deaktivieren** aus.
 
@@ -283,11 +285,11 @@ Wenn Sie Microsoft Monitoring Agent auf dem System installieren, auf dem SharePo
 
 2. Deaktivieren Sie die Funktion:
 
-   1. Wählen Sie im Menü **Website Aktionen** in SharePoint die Option **Website Einstellungen**aus.
+   1. Wählen Sie im Menü **Website Aktionen** in SharePoint die Option **Website Einstellungen** aus.
 
-   2. Wählen Sie unter **Website Aktionen**den Link **Website Features verwalten** aus.
+   2. Wählen Sie unter **Website Aktionen** den Link **Website Features verwalten** aus.
 
-   3. Wählen Sie neben **intellitracetest Feature1**die Schaltfläche **Deaktivieren** aus.
+   3. Wählen Sie neben **intellitracetest Feature1** die Schaltfläche **Deaktivieren** aus.
 
    4. Wählen Sie auf der Seite Warnung den Link **Diese Funktion deaktivieren** aus.
 
@@ -317,11 +319,11 @@ Jetzt können Sie die IntelliTrace-Protokolldatei in Visual Studio anzeigen, um 
 
 5. Deaktivieren Sie die Funktion, indem Sie die folgenden Schritte ausführen:
 
-    1. Wählen Sie im Menü **Website Aktionen** in SharePoint die Option **Website Einstellungen**aus.
+    1. Wählen Sie im Menü **Website Aktionen** in SharePoint die Option **Website Einstellungen** aus.
 
-    2. Wählen Sie unter **Website Aktionen**den Link **Website Features verwalten** aus.
+    2. Wählen Sie unter **Website Aktionen** den Link **Website Features verwalten** aus.
 
-    3. Wählen Sie neben **intellitracetest Feature1**die Schaltfläche **Deaktivieren** aus.
+    3. Wählen Sie neben **intellitracetest Feature1** die Schaltfläche **Deaktivieren** aus.
 
     4. Wählen Sie auf der Seite Warnung den Link **Diese Funktion deaktivieren** aus.
 
@@ -329,7 +331,7 @@ Jetzt können Sie die IntelliTrace-Protokolldatei in Visual Studio anzeigen, um 
 
      Der Code wird jetzt ordnungsgemäß ausgeführt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Prüfen und Debuggen von SharePoint-Code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen einer sprach Server-Protokollerweiterung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Visual Studio-Erweiterung erstellen, die einen Sprachserver auf Grundlage des Language Server-Protokolls (LSP) integriert.
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860453"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598145"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen der Sprachserverprotokollerweiterung
 
@@ -43,7 +45,7 @@ Weitere Informationen zum Erstellen eines Beispiel sprach Servers oder zum Integ
 
 Die folgenden Tabellen zeigen, welche LSP-Funktionen in Visual Studio unterstützt werden:
 
-`Message` | Bietet Unterstützung in Visual Studio
+Nachricht | Bietet Unterstützung in Visual Studio
 --- | ---
 initialisieren | ja
 initialisiert | ja
@@ -107,7 +109,7 @@ TextDocument/umbenennen | ja
 
 Um eine Sprachdienst Erweiterung mithilfe eines LSP-basierten sprach Servers zu erstellen, müssen Sie zunächst sicherstellen, dass die **Visual Studio-extensionentwicklungs** -Arbeitsauslastung für Ihre Instanz von vs installiert ist.
 
-Erstellen Sie als nächstes ein neues VSIX-Projekt, indem Sie zu **Datei**  >  **New Project**  >  **Visual c#**  >  **Extensibility**  >  **VSIX Project**navigieren:
+Erstellen Sie als nächstes ein neues VSIX-Projekt, indem Sie zu **Datei**  >  **New Project**  >  **Visual c#**  >  **Extensibility**  >  **VSIX Project** navigieren:
 
 ![VSIX-Projekt erstellen](media/lsp-vsix-project.png)
 
@@ -125,7 +127,7 @@ Der LSP umfasst keine Angabe, wie die farbliche Farbgebung von Text für Sprache
 
 1. Erstellen Sie in ihrer Erweiterung einen Ordner mit dem Namen "Grammatiken" (oder einen beliebigen Namen, den Sie auswählen).
 
-2. Fügen Sie im *Grammatiken* -Ordner beliebige * \* tmlanguage*-, * \* plist*-, * \* tmtheme*-oder * \* JSON* -Dateien ein, die benutzerdefinierte Farbgebung bereitstellen möchten.
+2. Fügen Sie im *Grammatiken* -Ordner beliebige *\* tmlanguage*-, *\* plist*-, *\* tmtheme*-oder *\* JSON* -Dateien ein, die benutzerdefinierte Farbgebung bereitstellen möchten.
 
    > [!TIP]
    > Eine *tmtheme* -Datei definiert, wie die Bereiche Visual Studio-Klassifizierungen (benannte Farbtasten) zugeordnet werden. Anweisungen dazu finden Sie im Verzeichnis *% Program Files (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \common7\ide\commonextensions\microsoft\textmate\starterkit\themesg)* *.*
@@ -341,7 +343,7 @@ Führen Sie die folgenden Schritte aus, um ihrer LSP-Sprachdienst Erweiterung Un
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Benutzer Bearbeitung von Einstellungen für einen Arbeitsbereich
 
 1. Der Benutzer öffnet einen Arbeitsbereich mit Dateien, die Ihr Server besitzt.
-2. Der Benutzer fügt eine Datei im *vs* -Ordner mit dem Namen *VSWorkspaceSettings.jsauf*hinzu.
+2. Der Benutzer fügt eine Datei im *vs* -Ordner mit dem Namen *VSWorkspaceSettings.jsauf* hinzu.
 3. Der Benutzer fügt der Datei *VSWorkspaceSettings.js* eine Zeile für eine Einstellung hinzu, die der Server bereitstellt. Beispiel:
 
     ```json
@@ -498,6 +500,6 @@ Ja, aber nicht alle Features funktionieren ordnungsgemäß. Das ultimative Ziel 
 
 Weitere Informationen finden Sie [hier](walkthrough-publishing-a-visual-studio-extension.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen](../ide/adding-visual-studio-editor-support-for-other-languages.md)

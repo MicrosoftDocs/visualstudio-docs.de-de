@@ -1,5 +1,7 @@
 ---
 title: Anatomie eines VSIX-Pakets | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Inhalt eines VSIX-Pakets in Visual Studio, eine Datei, die mindestens eine Visual Studio-Erweiterung und eine metadatenmanifestressdatei enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012333"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598158"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie eines VSIX-Pakets
 Bei einem VSIX-Paket handelt es sich um eine *VSIX* -Datei, die eine oder mehrere Visual Studio-Erweiterungen enthält, sowie die Metadaten, die Visual Studio zum klassifizieren und Installieren der Erweiterungen verwendet. Diese Metadaten sind im VSIX-Manifest und in der Datei *[Content_Types]. XML* enthalten. Ein VSIX-Paket kann auch eine oder mehrere *Extension. vsixlangpack* -Dateien enthalten, um lokalisierten Setup Text bereitzustellen, und kann weitere VSIX-Pakete enthalten, um Abhängigkeiten zu installieren.

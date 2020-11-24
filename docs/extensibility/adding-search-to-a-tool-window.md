@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen der Suche zu einem Tool Fenster | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie einem Tool Fenster in Visual Studio Suchfunktionen hinzufügen, einschließlich ein Suchfeld, eine Filterung und eine Statusanzeige.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b648b0202e00ea0fa3bc659b90f2f9a7d709768f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d117ab18022285e5cd52f18a1de01adeafbc5df3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903399"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597638"
 ---
 # <a name="add-search-to-a-tool-window"></a>Hinzufügen der Suche zu einem Tool Fenster
 Wenn Sie ein Tool Fenster in ihrer Erweiterung erstellen oder aktualisieren, können Sie dieselbe Suchfunktion hinzufügen, die an anderer Stelle in Visual Studio angezeigt wird. Diese Funktion umfasst die folgenden Features:
@@ -75,14 +77,14 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 
      Fügen Sie in der **testsearchcontrol** -Klasse den folgenden Code hinzu.
 
-     Dieser Code fügt eine öffentliche <xref:System.Windows.Controls.TextBox> Eigenschaft mit dem Namen **searchresultstextbox** und eine öffentliche Zeichen folgen Eigenschaft mit dem Namen **searchcontent**hinzu. Im Konstruktor ist searchresultstextbox auf das Textfeld festgelegt, und searchcontent wird mit einem durch Trennzeichen getrennten Satz von Zeichen folgen initialisiert. Der Inhalt des Textfelds wird auch mit dem Satz von Zeichen folgen initialisiert.
+     Dieser Code fügt eine öffentliche <xref:System.Windows.Controls.TextBox> Eigenschaft mit dem Namen **searchresultstextbox** und eine öffentliche Zeichen folgen Eigenschaft mit dem Namen **searchcontent** hinzu. Im Konstruktor ist searchresultstextbox auf das Textfeld festgelegt, und searchcontent wird mit einem durch Trennzeichen getrennten Satz von Zeichen folgen initialisiert. Der Inhalt des Textfelds wird auch mit dem Satz von Zeichen folgen initialisiert.
 
      [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
      [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]
 
 5. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio wird angezeigt.
 
-6. Wählen Sie in der Menüleiste **View**die Option  >  **andere Windows**-  >  **Testsuche**anzeigen aus.
+6. Wählen Sie in der Menüleiste **View** die Option  >  **andere Windows**-  >  **Testsuche** anzeigen aus.
 
      Das Tool Fenster wird angezeigt, aber das Such Steuerelement wird noch nicht angezeigt.
 
@@ -93,15 +95,15 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
      Um die Suche zu aktivieren, müssen Sie die-Eigenschaft überschreiben <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> . Die <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> -Klasse implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> und stellt eine Standard Implementierung bereit, die die Suche nicht ermöglicht.
 
     ```csharp
-    public override bool SearchEnabled
+    public override bool SearchEnabled
     {
-        get { return true; }
+        get { return true; }
     }
     ```
 
 2. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
-3. Öffnen Sie **testsearch**in der experimentellen Instanz von Visual Studio.
+3. Öffnen Sie **testsearch** in der experimentellen Instanz von Visual Studio.
 
      Am oberen Rand des Tool Fensters wird ein Such Steuerelement mit einem **Such** Wasserzeichen und einem Lupensymbol angezeigt. Die Suche funktioniert jedoch noch nicht, da der Suchprozess nicht implementiert wurde.
 
@@ -232,17 +234,17 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 
     1. Erstellen Sie das Projekt neu, und starten Sie das Debugging.
 
-    2. Öffnen Sie in der experimentellen Instanz von Visual Studio erneut das Tool Fenster, geben Sie im Suchfenster den Suchtext ein, und **drücken**Sie die EINGABETASTE.
+    2. Öffnen Sie in der experimentellen Instanz von Visual Studio erneut das Tool Fenster, geben Sie im Suchfenster den Suchtext ein, und **drücken** Sie die EINGABETASTE.
 
          Es sollten die richtigen Ergebnisse angezeigt werden.
 
 ## <a name="to-customize-the-search-behavior"></a>So passen Sie das Suchverhalten an
  Durch Ändern der Sucheinstellungen können Sie eine Vielzahl von Änderungen an der Anzeige des Such Steuer Elements und der Art der Durchführung der Suche vornehmen. Beispielsweise können Sie das Wasserzeichen (den Standardtext im Suchfeld), die minimale und die maximale Breite des Such Steuer Elements ändern und festlegen, ob eine Statusanzeige angezeigt werden soll. Sie können auch den Punkt ändern, an dem die Suchergebnisse angezeigt werden (Bedarfs gesteuert oder sofort Suche) und eine Liste von Begriffen anzeigen, nach denen Sie zuletzt gesucht haben. Die komplette Liste der Einstellungen finden Sie in der- <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> Klasse.
 
-1. Fügen Sie in der Datei * TestSearch.cs * der-Klasse den folgenden Code hinzu `TestSearch` . Dieser Code ermöglicht die sofortige Suche anstelle der bedarfsgesteuerten Suche (was bedeutet, dass der Benutzer nicht auf die **Eingabe**Taste klicken muss). Der Code überschreibt die- `ProvideSearchSettings` Methode in der- `TestSearch` Klasse, die erforderlich ist, um die Standardeinstellungen zu ändern.
+1. Fügen Sie in der Datei * TestSearch.cs * der-Klasse den folgenden Code hinzu `TestSearch` . Dieser Code ermöglicht die sofortige Suche anstelle der bedarfsgesteuerten Suche (was bedeutet, dass der Benutzer nicht auf die **Eingabe** Taste klicken muss). Der Code überschreibt die- `ProvideSearchSettings` Methode in der- `TestSearch` Klasse, die erforderlich ist, um die Standardeinstellungen zu ändern.
 
     ```csharp
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
     {
         Utilities.SetValue(pSearchSettings,
             SearchSettingsDataSource.SearchStartTypeProperty.Name,
@@ -290,7 +292,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum
     {
         get
         {
@@ -342,13 +344,13 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 1. Fügen Sie der-Klasse in der Datei *TestSearch.cs* den folgenden Code hinzu `TestSearch` . Der Code implementiert `SearchFiltersEnum` durch Hinzufügen eines <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> , das angibt, dass die Suchergebnisse so gefiltert werden, dass nur noch Zeilen angezeigt werden.
 
     ```csharp
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum
     {
         get
         {
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
         }
     }
 
@@ -359,19 +361,19 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 2. Fügen Sie in der Datei *TestSearch.cs* der-Klasse die folgenden Methoden hinzu `TestSearchTask` , die sich in der- `TestSearch` Klasse befinden. Diese Methoden unterstützen die- `OnStartSearch` Methode, die Sie im nächsten Schritt ändern.
 
     ```csharp
-    private string RemoveFromString(string origString, string stringToRemove)
+    private string RemoveFromString(string origString, string stringToRemove)
     {
         int index = origString.IndexOf(stringToRemove);
         if (index == -1)
             return origString;
-        else 
+        else 
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();
     }
 
-    private string[] GetEvenItems(string[] contentArr)
+    private string[] GetEvenItems(string[] contentArr)
     {
         int length = contentArr.Length / 2;
-        string[] evenContentArr = new string[length];
+        string[] evenContentArr = new string[length];
 
         int indexB = 0;
         for (int index = 1; index < contentArr.Length; index += 2)
@@ -387,13 +389,13 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 3. Aktualisieren Sie die-Methode in der- `TestSearchTask` Klasse `OnStartSearch` mit dem folgenden Code. Diese Änderung aktualisiert den Code, um den Filter zu unterstützen.
 
     ```csharp
-    protected override void OnStartSearch()
+    protected override void OnStartSearch()
     {
-        // Use the original content of the text box as the target of the search. 
-        var separator = new string[] { Environment.NewLine };
+        // Use the original content of the text box as the target of the search. 
+        var separator = new string[] { Environment.NewLine };
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);
 
-        // Get the search option. 
+        // Get the search option. 
         bool matchCase = false;
         matchCase = m_toolWindow.MatchCaseOption.Value;
 
@@ -406,7 +408,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
         {
             string searchString = this.SearchQuery.SearchString;
 
-            // If the search string contains the filter string, filter the content array. 
+            // If the search string contains the filter string, filter the content array. 
             string filterString = "lines:\"even\"";
 
             if (this.SearchQuery.SearchString.Contains(filterString))
@@ -418,7 +420,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
                 searchString = RemoveFromString(searchString, filterString);
             }
 
-            // Determine the results. 
+            // Determine the results. 
             uint progress = 0;
             foreach (string line in contentArr)
             {
@@ -441,7 +443,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
 
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));
 
-                // Uncomment the following line to demonstrate the progress bar. 
+                // Uncomment the following line to demonstrate the progress bar. 
                 // System.Threading.Thread.Sleep(100);
             }
         }
@@ -457,8 +459,8 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden Aufg
             this.SearchResults = resultCount;
         }
 
-        // Call the implementation of this method in the base class. 
-        // This sets the task status to complete and reports task completion. 
+        // Call the implementation of this method in the base class. 
+        // This sets the task status to complete and reports task completion. 
         base.OnStartSearch();
     }
     ```

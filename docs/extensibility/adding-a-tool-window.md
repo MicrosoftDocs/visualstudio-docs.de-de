@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen eines Tool Fensters | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Tool Fenster erstellen und in Visual Studio integrieren, indem Sie dem Tool Fenster ein-Steuerelement und eine Symbolleiste mit einem Befehl hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904145"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597989"
 ---
 # <a name="add-a-tool-window"></a>Hinzufügen eines Tool Fensters
 
@@ -38,21 +40,21 @@ Das Visual Studio SDK ist als optionales Feature in Visual Studio-Setup enthalte
 
 ## <a name="create-a-tool-window"></a>Erstellen eines Tool Fensters
 
-1. Erstellen Sie ein Projekt namens **firsttoolwin** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Tool Fenster-Element Vorlage namens **firsttoolwindow**hinzu.
+1. Erstellen Sie ein Projekt namens **firsttoolwin** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Tool Fenster-Element Vorlage namens **firsttoolwindow** hinzu.
 
     > [!NOTE]
     > Weitere Informationen zum Erstellen einer Erweiterung mit einem Tool Fenster finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="add-a-control-to-the-tool-window"></a>Hinzufügen eines Steuer Elements zum Tool Fenster
 
-1. Entfernen Sie das Standard Steuerelement. Öffnen Sie *firsttoolwindowcontrol. XAML* , und löschen Sie die Schaltfläche **Klicken Sie!** .
+1. Entfernen Sie das Standard Steuerelement. Öffnen Sie *firsttoolwindowcontrol. XAML* , und löschen Sie die Schaltfläche **Klicken Sie!** Schaltfläche.
 
-2. Erweitern Sie in der **Toolbox**den Abschnitt **alle WPF** -Steuerelemente, und ziehen Sie das Steuer **Element Media Element** in das Formular **firsttoolwindowcontrol** . Wählen Sie das Steuerelement aus, und benennen Sie im **Eigenschaften** Fenster dieses Element **mediaElement1**.
+2. Erweitern Sie in der **Toolbox** den Abschnitt **alle WPF** -Steuerelemente, und ziehen Sie das Steuer **Element Media Element** in das Formular **firsttoolwindowcontrol** . Wählen Sie das Steuerelement aus, und benennen Sie im **Eigenschaften** Fenster dieses Element **mediaElement1**.
 
 ## <a name="add-a-toolbar-to-the-tool-window"></a>Hinzufügen einer Symbolleiste zum Tool Fenster
 Indem Sie eine Symbolleiste auf folgende Weise hinzufügen, gewährleisten Sie, dass die Farbverläufe und Farben mit dem Rest der IDE konsistent sind.
 
-1. Öffnen Sie in **Projektmappen-Explorer**die Datei *firsttoolwindowpackage. vsct*. Die *vsct* -Datei definiert die grafischen Benutzeroberflächen Elemente (GUI) in Ihrem Tool Fenster mithilfe von XML.
+1. Öffnen Sie in **Projektmappen-Explorer** die Datei *firsttoolwindowpackage. vsct*. Die *vsct* -Datei definiert die grafischen Benutzeroberflächen Elemente (GUI) in Ihrem Tool Fenster mithilfe von XML.
 
 2. Suchen Sie im- `<Symbols>` Abschnitt nach dem `<GuidSymbol>` Knoten, dessen- `name` Attribut ist `guidFirstToolWindowPackageCmdSet` . Fügen Sie der `<IDSymbol>` Liste der Elemente in diesem Knoten die folgenden zwei Elemente hinzu `<IDSymbol>` , um eine Symbolleiste und eine Symbolleisten Gruppe zu definieren.
 
@@ -129,7 +131,7 @@ Fügen Sie der Symbolleiste einen Befehl hinzu, der als Schaltfläche angezeigt 
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Hinzufügen einer Media Player-Eigenschaft zu firsttoolwindowcontrol
 In den Ereignis Handlern für die Symbolleisten-Steuerelemente muss Ihr Code auf das Media Player-Steuerelement zugreifen können, das ein untergeordnetes Element der firsttoolwindowcontrol-Klasse ist.
 
-Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf *firsttoolwindowcontrol. XAML*, klicken Sie auf **Code anzeigen**, und fügen Sie der firsttoolwindowcontrol-Klasse den folgenden Code hinzu.
+Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf *firsttoolwindowcontrol. XAML*, klicken Sie auf **Code anzeigen**, und fügen Sie der firsttoolwindowcontrol-Klasse den folgenden Code hinzu.
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -255,7 +257,7 @@ Fügen Sie eine Symbolleiste und einen Menübefehl hinzu, der das Dialogfeld " *
 
 Geben Sie als nächstes einen Standard Speicherort in der IDE für das Tool Fenster an. Konfigurationsinformationen für das Tool Fenster befinden sich in der Datei *FirstToolWindowPackage.cs* .
 
-1. Suchen Sie in *FirstToolWindowPackage.cs*das- <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> Attribut in der- `FirstToolWindowPackage` Klasse, die den Typ firsttoolwindow an den-Konstruktor übergibt. Um eine Standardposition anzugeben, müssen Sie dem Konstruktor im folgenden Beispiel weitere Parameter hinzufügen.
+1. Suchen Sie in *FirstToolWindowPackage.cs* das- <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> Attribut in der- `FirstToolWindowPackage` Klasse, die den Typ firsttoolwindow an den-Konstruktor übergibt. Um eine Standardposition anzugeben, müssen Sie dem Konstruktor im folgenden Beispiel weitere Parameter hinzufügen.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -274,11 +276,11 @@ Geben Sie als nächstes einen Standard Speicherort in der IDE für das Tool Fens
 
 2. Zeigen Sie im Menü **Ansicht** auf **Weitere Fenster** , und klicken Sie dann auf **erstes Tool Fenster**.
 
-    Das Media Player-Tool Fenster sollte an derselben Position wie **Projektmappen-Explorer**geöffnet werden. Wenn Sie immer noch an derselben Position wie zuvor angezeigt wird, setzen Sie das Fenster Layout zurück (Fenster **/Fenster Layout zurücksetzen**).
+    Das Media Player-Tool Fenster sollte an derselben Position wie **Projektmappen-Explorer** geöffnet werden. Wenn Sie immer noch an derselben Position wie zuvor angezeigt wird, setzen Sie das Fenster Layout zurück (Fenster **/Fenster Layout zurücksetzen**).
 
 3. Klicken Sie im Tool Fenster auf die Schaltfläche (mit dem **Such** Symbol). Wählen Sie eine unterstützte Sound-oder Videodatei aus, z. b. *c:\Windows\Media\chimes.wav*, und drücken Sie dann **Öffnen**.
 
     Sie sollten den Glocke-Sound hören.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

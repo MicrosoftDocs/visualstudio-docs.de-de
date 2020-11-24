@@ -1,5 +1,7 @@
 ---
 title: Adressieren von dpi-Issues2 | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Probleme beim Programmieren für hochauflösende Bildschirme, wie z. b. zentrales hochskalieren von Inhalten, Layoutproblemen und Verwenden von dpi-APIs.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740105"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598457"
 ---
 # <a name="address-dpi-issues"></a>Behandeln von dpi-Problemen
 Eine zunehmende Anzahl von Geräten wird mit "hochauflösende" Bildschirmen ausgeliefert. Diese Bildschirme verfügen in der Regel über 200 Pixel pro Zoll (PPI). Beim Arbeiten mit einer Anwendung auf diesen Computern müssen Inhalte zentral hochskaliert werden, um den Anforderungen der Anzeige des Inhalts in der normalen Anzeige Entfernung für das Gerät gerecht zu werden. Ab 2014 ist das primäre Ziel für die Anzeige mit hoher Dichte Mobile Computergeräte (Tablets, Clamshell-Laptops und Telefone).
@@ -28,13 +30,13 @@ Windows 8.1 und höher enthält mehrere Features, mit denen diese Computer mit a
 
 - Der Inhalt von Windows kann auf neuen Geräten mit einer Größe von 280 ppi (ab Windows 8.1 S14) automatisch auf bis zu 250% skaliert werden.
 
-  Mit Windows können Sie die Benutzeroberfläche zentral hochskalieren, um eine größere Anzahl von Pixeln zu nutzen. Eine Anwendung wird in diesem System durch Deklarieren von "System-dpi-fähig" unterstützt. Anwendungen, die dies nicht tun, werden vom System zentral hochskaliert. Dies kann zu einer "Fuzzy"-Benutzer Darstellung führen, bei der die gesamte Anwendung gleichmäßig Pixel gestreckt ist. Zum Beispiel:
+  Mit Windows können Sie die Benutzeroberfläche zentral hochskalieren, um eine größere Anzahl von Pixeln zu nutzen. Eine Anwendung wird in diesem System durch Deklarieren von "System-dpi-fähig" unterstützt. Anwendungen, die dies nicht tun, werden vom System zentral hochskaliert. Dies kann zu einer "Fuzzy"-Benutzer Darstellung führen, bei der die gesamte Anwendung gleichmäßig Pixel gestreckt ist. Beispiel:
 
   ![DPI-Probleme unscharf](../extensibility/media/dpi-issues-fuzzy.png "DPI-Probleme unscharf")
 
   Visual Studio unterstützt die DPI-Skalierung und ist daher nicht "virtualisiert".
 
-  Windows (und Visual Studio) nutzen mehrere UI-Technologien, die unterschiedliche Methoden zum Umgang mit Skalierungsfaktoren aufweisen, die vom System festgelegt werden. Zum Beispiel:
+  Windows (und Visual Studio) nutzen mehrere UI-Technologien, die unterschiedliche Methoden zum Umgang mit Skalierungsfaktoren aufweisen, die vom System festgelegt werden. Beispiel:
 
 - WPF misst Steuerelemente auf geräteunabhängige Weise (Einheiten, nicht Pixel). Die WPF-Benutzeroberfläche wird automatisch für den aktuellen dpi-Abschnitt skaliert
 
@@ -51,7 +53,7 @@ Während WPF bereits hohe dpi-Werten unterstützt, wurde ein Großteil des Win32
 In diesem Abschnitt geht es hauptsächlich an Entwickler, die Visual Studio 2013 erweitern. Verwenden Sie für Visual Studio 2015 den Image Service, der in Visual Studio integriert ist. Möglicherweise stellen Sie auch fest, dass Sie viele Versionen von Visual Studio unterstützen müssen, und daher ist die Verwendung des Image-diensdienstanbieter in 2015 keine Option, da er in früheren Versionen nicht vorhanden ist. Dieser Abschnitt ist auch für Sie vorgesehen.
 
 ## <a name="scaling-up-images-that-are-too-small"></a>Zentrales hochskalieren von Images, die zu klein sind
-Images, die zu klein sind, können mithilfe einiger gängiger Methoden auf GDI und WPF hochskaliert und gerendert werden. Verwaltete dpi-Hilfsklassen sind für interne und externe Visual Studio-Integratoren verfügbar, um das Skalieren von Symbolen, Bitmaps, imagestrips und imagelists zu beheben. Win32-basierte Native c/C + +-Hilfsprogramme sind zum Skalieren von HICON, HBITMAP, HIMAGELIST und vsui:: gdiplusimage verfügbar. Das Skalieren einer Bitmap erfordert in der Regel nur eine einzeilige Änderung, wenn ein Verweis auf die Hilfsbibliothek eingeschlossen wird. Zum Beispiel:
+Images, die zu klein sind, können mithilfe einiger gängiger Methoden auf GDI und WPF hochskaliert und gerendert werden. Verwaltete dpi-Hilfsklassen sind für interne und externe Visual Studio-Integratoren verfügbar, um das Skalieren von Symbolen, Bitmaps, imagestrips und imagelists zu beheben. Win32-basierte Native c/C + +-Hilfsprogramme sind zum Skalieren von HICON, HBITMAP, HIMAGELIST und vsui:: gdiplusimage verfügbar. Das Skalieren einer Bitmap erfordert in der Regel nur eine einzeilige Änderung, wenn ein Verweis auf die Hilfsbibliothek eingeschlossen wird. Beispiel:
 
 ```cpp
 (Unmanaged) VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
@@ -82,7 +84,7 @@ In der folgenden Tabelle werden Beispiele für die Skalierung von Bildern mit de
 ![DPI-Probleme beim Skalieren](../extensibility/media/dpi-issues-scaling.png "DPI-Probleme beim Skalieren")
 
 ## <a name="layout-issues"></a>Layoutprobleme
-Allgemeine Layoutprobleme können hauptsächlich vermieden werden, indem Punkte in der Benutzeroberfläche skaliert und relativ zueinander, nicht mithilfe absoluter Speicherorte (insbesondere in Pixel Einheiten), gespeichert werden. Zum Beispiel:
+Allgemeine Layoutprobleme können hauptsächlich vermieden werden, indem Punkte in der Benutzeroberfläche skaliert und relativ zueinander, nicht mithilfe absoluter Speicherorte (insbesondere in Pixel Einheiten), gespeichert werden. Beispiel:
 
 - Layout-/Textpositionen müssen angepasst werden, um hochskalierte Images zu berücksichtigen.
 
@@ -103,7 +105,7 @@ Allgemeine Layoutprobleme können hauptsächlich vermieden werden, indem Punkte 
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Verwenden der dpihelper-Bibliothek/-Klasse zum Skalieren von Bildern und Layout
 Die Visual Studio-dpi-Hilfsbibliothek ist in nativen und verwalteten Formularen verfügbar und kann von anderen Anwendungen außerhalb der Visual Studio-Shell verwendet werden.
 
-Um die Bibliothek zu verwenden, navigieren Sie zu den [Visual Studio VSSDK-Erweiterbarkeits Beispielen](https://github.com/Microsoft/VSSDK-Extensibility-Samples) , und Klonen Sie das High-DPI_Images_Icons-Beispiel.
+Um die Bibliothek zu verwenden, navigieren Sie zu den [Visual Studio VSSDK-Erweiterbarkeits Beispielen](https://github.com/Microsoft/VSSDK-Extensibility-Samples) , und Klonen Sie das High-DPI_Images_Icons Beispiel.
 
 Fügen Sie in den Quelldateien " *vsuidpihelper. h* " ein, und nennen Sie die statischen Funktionen der- `VsUI::DpiHelper` Klasse:
 
@@ -120,15 +122,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
 So greifen Sie über verwalteten Code, der in der Visual Studio-Umgebung ausgeführt wird, auf die dpi-Hilfsfunktionen zu:
 
-- Das verbrauchende Projekt muss auf die neueste Version von shellmpf verweisen. Zum Beispiel:
+- Das verbrauchende Projekt muss auf die neueste Version von shellmpf verweisen. Beispiel:
 
     ```csharp
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- Stellen Sie sicher, dass das Projekt über Verweise auf **System. Windows. Forms**, **PresentationCore**und **presentationui**verfügt.
+- Stellen Sie sicher, dass das Projekt über Verweise auf **System. Windows. Forms**, **PresentationCore** und **presentationui** verfügt.
 
-- Verwenden Sie im Code den **Microsoft. VisualStudio. PlatformUI** -Namespace, und nennen Sie statische Funktionen der dpihelper-Klasse. Bei unterstützten Typen (Punkten, Größen, Rechtecke usw.) werden Erweiterungsfunktionen bereitgestellt, die neue skalierte Objekte zurückgeben. Zum Beispiel:
+- Verwenden Sie im Code den **Microsoft. VisualStudio. PlatformUI** -Namespace, und nennen Sie statische Funktionen der dpihelper-Klasse. Bei unterstützten Typen (Punkten, Größen, Rechtecke usw.) werden Erweiterungsfunktionen bereitgestellt, die neue skalierte Objekte zurückgeben. Beispiel:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -175,7 +177,7 @@ Damit die Benutzeroberfläche diese doppelte Skalierung verwenden kann, muss das
 
 Schritt 1: vorab Skalieren des Images auf 200%, 300% usw. mit "NearestNeighbor".
 
-Vorab Skalieren des Bilds entweder mithilfe eines Konverters, der auf eine Bindung angewendet wurde, oder mit einer XAML-Markup Erweiterung. Zum Beispiel:
+Vorab Skalieren des Bilds entweder mithilfe eines Konverters, der auf eine Bindung angewendet wurde, oder mit einer XAML-Markup Erweiterung. Beispiel:
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />
@@ -213,7 +215,7 @@ Da WPF die Benutzeroberfläche für den aktuellen dpi mithilfe der BitmapScaling
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />
     ```
 
-- Wenn die Größe des ursprünglichen Bilds nicht bekannt ist, kann eine LayoutTransform zum horizontalen Herunterskalieren des endgültigen Bildobjekts verwendet werden. Zum Beispiel:
+- Wenn die Größe des ursprünglichen Bilds nicht bekannt ist, kann eine LayoutTransform zum horizontalen Herunterskalieren des endgültigen Bildobjekts verwendet werden. Beispiel:
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >

@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen einer Symbolleiste zu einem Tool Fenster | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Symbolleiste mit Schaltflächen, die an Befehle gebunden sind, an ein Tool Fenster in der integrierten Entwicklungsumgebung (IDE) von Visual Studio hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904125"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597976"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Hinzufügen einer Symbolleiste zu einem Tool Fenster
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie einem Tool Fenster eine Symbolleiste hinzugefügt wird.
@@ -28,11 +30,11 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie einem Tool Fenster ein
  Weitere Informationen zum Hinzufügen einer Symbolleiste finden Sie unter [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>Erstellen einer Symbolleiste für ein Tool Fenster
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TWToolbar` , das sowohl einen Menübefehl namens **twtestcommand** als auch ein Tool Fenster mit dem Namen **testtoolwindow**enthält. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) und [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md). Sie müssen die Befehls Element Vorlage hinzufügen, bevor Sie die Tool Fenster Vorlage hinzufügen.
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `TWToolbar` , das sowohl einen Menübefehl namens **twtestcommand** als auch ein Tool Fenster mit dem Namen **testtoolwindow** enthält. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) und [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md). Sie müssen die Befehls Element Vorlage hinzufügen, bevor Sie die Tool Fenster Vorlage hinzufügen.
 
 2. Suchen Sie in der Datei " *twtestcommandpackage. vsct*" nach dem Abschnitt "Symbole". Deklarieren Sie im Knoten "guidsymbol" mit dem Namen "guidtwtestcommandpackagecmdset" wie folgt eine Symbolleiste und eine Symbolleisten Gruppe.
 
@@ -113,5 +115,5 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie einem Tool Fenster ein
 
 3. Klicken Sie auf der Symbolleiste auf das Symbol, um die Nachricht **twtestcommandpackage in twtoolbar. twtestcommand. MenuItemCallBack ()** anzuzeigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)
