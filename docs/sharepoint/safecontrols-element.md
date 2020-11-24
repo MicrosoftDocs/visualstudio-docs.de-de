@@ -1,5 +1,7 @@
 ---
 title: SafeControls-Element | Microsoft-Dokumentation
+description: Abrufen von Informationen über das SafeControls-Element, das eine Auflistung von ASPX-Steuerelementen oder Webparts enthält, die auf der ASPX-Seite einer SharePoint-Website als Secure for Access gekennzeichnet sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547900"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440674"
 ---
 # <a name="safecontrols-element"></a>SafeControls-Element
   Eine Auflistung von ASPX-Steuerelementen und Webparts, die für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher eingestuft werden.
@@ -62,4 +64,4 @@ ms.locfileid: "85547900"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Schema Referenz für SharePoint-Projekt Elemente](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

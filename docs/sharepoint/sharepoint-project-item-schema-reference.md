@@ -1,5 +1,7 @@
 ---
 title: Schema Referenz für SharePoint-Projekt Elemente | Microsoft-Dokumentation
+description: Weitere Informationen finden Sie in der Übersicht über die XML-Schema Referenz des SharePoint-Projekt Elements (projectitemmodelschema. xsd), die zum Überprüfen des Inhalts von spdata-Dateien verwendet wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007718"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442546"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Schema Referenz für SharePoint-Projekt Elemente
   Visual Studio verwendet das SharePoint-Projekt Element Schema, um den Inhalt von *spdata* -Dateien zu validieren. Eine *spdata* -Datei gibt den Inhalt und das Verhalten eines SharePoint-Projekt Elements an. Weitere Informationen zum Inhalt von SharePoint-Projekt Elementen finden Sie unter [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -51,5 +53,5 @@ ms.locfileid: "63007718"
 |[SafeControl](../sharepoint/safecontrol-element.md)|Stellt ein aspx-Steuerelement oder Webpart dar, das für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher eingestuft wird.|
 |["SafeControls](../sharepoint/safecontrols-element.md)|Stellt eine Auflistung von ASPX-Steuerelementen und Webparts dar, die für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher gekennzeichnet sind.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

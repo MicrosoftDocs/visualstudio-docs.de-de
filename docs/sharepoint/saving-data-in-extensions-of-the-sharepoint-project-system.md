@@ -1,6 +1,8 @@
 ---
 title: Speichern von Daten in Erweiterungen des SharePoint-Projekt Systems | Microsoft-Dokumentation
 titleSuffix: ''
+description: Erfahren Sie, wie Sie die Zeichen folgen Daten speichern, die nach dem Schließen eines SharePoint-Projekts beibehalten werden, das eine Erweiterung enthält.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583865"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440648"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Speichern von Daten in Erweiterungen des SharePoint-Projekt Systems
   Wenn Sie das SharePoint-Projekt System erweitern, können Sie Zeichen folgen Daten speichern, die nach dem Schließen eines SharePoint-Projekts beibehalten werden. Die Daten sind in der Regel mit einem bestimmten Projekt Element oder dem Projekt selbst verknüpft.
@@ -54,7 +56,7 @@ ms.locfileid: "91583865"
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
 - [Konvertieren zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

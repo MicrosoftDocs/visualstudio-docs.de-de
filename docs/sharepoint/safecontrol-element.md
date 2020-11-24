@@ -1,5 +1,7 @@
 ---
 title: SafeControl-Element | Microsoft-Dokumentation
+description: Abrufen von Informationen über das SafeControl-Element, das ein aspx-Steuerelement oder Webpart darstellt, das als sicher gekennzeichnet ist, damit ein Benutzer auf der ASPX-Seite einer SharePoint-Website darauf zugreifen kann.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547926"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440622"
 ---
 # <a name="safecontrol-element"></a>SafeControl-Element
   Stellt ein aspx-Steuerelement oder Webpart dar, das für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher eingestuft wird.
@@ -40,7 +42,7 @@ ms.locfileid: "85547926"
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|**Stadtverordneten**|Optionales **xs: String** -Attribut.<br /><br /> Der Name der Assembly, in der das aspx-Steuerelement oder Webpart definiert ist. Standardmäßig verwendet dieses Attribut den ersetzbaren Parameter **$SharePoint. Project. AssemblyFullName $ für den Assemblynamen** . Weitere Informationen finden Sie unter [ersetzbare Parameter](../sharepoint/replaceable-parameters.md).|
+|**Assembly**|Optionales **xs: String** -Attribut.<br /><br /> Der Name der Assembly, in der das aspx-Steuerelement oder Webpart definiert ist. Standardmäßig verwendet dieses Attribut den ersetzbaren Parameter **$SharePoint. Project. AssemblyFullName $ für den Assemblynamen** . Weitere Informationen finden Sie unter [Ersetzbare Parameter](../sharepoint/replaceable-parameters.md).|
 |**Issafe**|Optionales **xs: Boolean** -Attribut.<br /><br /> Gibt an, ob das aspx-Steuerelement oder Webpart sicher ist, dass nicht vertrauenswürdige Benutzer darauf zugreifen können.|
 |**Issafeagainstscript**|Optionales **xs: Boolean** -Attribut.<br /><br /> Gibt an, ob nicht vertrauenswürdige Benutzer die Eigenschaften des aspx-Steuer Elements oder Webparts anzeigen oder bearbeiten können.|
 |**Name**|Optionales **xs: String** -Attribut.<br /><br /> Der Name des Eintrags für sicheres Steuerelement in der Auflistung.|
@@ -70,4 +72,4 @@ ms.locfileid: "85547926"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Schema Referenz für SharePoint-Projekt Elemente](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
