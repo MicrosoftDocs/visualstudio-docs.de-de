@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen einer Symbolleiste | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Symbolleiste mit Schaltflächen hinzufügen, die an Befehle an die integrierte Entwicklungsumgebung (IDE) von Visual Studio gebunden sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904071"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597950"
 ---
 # <a name="add-a-toolbar"></a>Hinzufügen einer Symbolleiste
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Visual Studio-IDE eine Symbolleiste hinzufügen.
@@ -28,14 +30,14 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Visual Studio-
  Weitere Informationen zu Menüs finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-an-extension-with-a-toolbar"></a>Erstellen einer Erweiterung mit einer Symbolleiste
- Erstellen Sie ein VSIX-Projekt mit dem Namen `IDEToolbar` . Fügen Sie eine Menübefehls Element-Vorlage mit dem Namen **toolbartestcommand**hinzu. Weitere Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+ Erstellen Sie ein VSIX-Projekt mit dem Namen `IDEToolbar` . Fügen Sie eine Menübefehls Element-Vorlage mit dem Namen **toolbartestcommand** hinzu. Weitere Informationen hierzu finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Erstellen einer Symbolleiste für die IDE
 
-1. Suchen Sie in *toolbartestcommandpackage. vsct*nach dem Abschnitt Symbole. Fügen Sie im guidsymbol-Element mit dem Namen "guidtoolbartestcommandpackagecmdset" wie folgt Deklarationen für eine Symbolleiste und eine Symbolleisten Gruppe hinzu.
+1. Suchen Sie in *toolbartestcommandpackage. vsct* nach dem Abschnitt Symbole. Fügen Sie im guidsymbol-Element mit dem Namen "guidtoolbartestcommandpackagecmdset" wie folgt Deklarationen für eine Symbolleiste und eine Symbolleisten Gruppe hinzu.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -85,9 +87,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Visual Studio-
 
 5. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz sollte angezeigt werden.
 
-6. Klicken Sie mit der rechten Maustaste auf die Visual Studio-Menüleiste, um die Liste der Symbolleisten zu erhalten. Wählen Sie **Test Symbolleiste**aus.
+6. Klicken Sie mit der rechten Maustaste auf die Visual Studio-Menüleiste, um die Liste der Symbolleisten zu erhalten. Wählen Sie **Test Symbolleiste** aus.
 
 7. Nun sollte die Symbolleiste als Symbol auf der rechten Seite des Symbols in Dateien suchen angezeigt werden. Wenn Sie auf das Symbol klicken, sollte ein Meldungs Feld mit dem Text **toolbartestcommandpackage angezeigt werden. In idetoolbar. toolbartestcommand. MenuItemCallBack ()**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

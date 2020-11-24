@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen einer zuletzt verwendeten Liste zu einem Untermenü | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine dynamische Liste hinzufügen, die die zuletzt verwendeten Menübefehle zu einem Untermenü in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904208"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597925"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Hinzufügen einer zuletzt verwendeten Liste zu einem Untermenü
 Diese exemplarische Vorgehensweise baut auf den Demos in [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md)auf und zeigt, wie eine dynamische Liste zu einem Untermenü hinzugefügt wird. Die dynamische Liste bildet die Grundlage für das Erstellen einer Liste mit den zuletzt verwendeten (MRU).
@@ -47,7 +49,7 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
 
     ```xml
     <IDSymbol name="MRUListGroup" value="0x1200"/>
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
 3. `Groups`Fügen Sie im Abschnitt nach den vorhandenen Gruppen Einträgen die deklarierte Gruppe hinzu.
@@ -77,15 +79,15 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
 
 5. Erstellen Sie das Projekt, und starten Sie das Debuggen, um die Anzeige des neuen Befehls zu testen.
 
-    Klicken Sie im Menü **Testmenü** auf das neue Untermenü **unter Menü**, um den neuen Befehl **MRU-Platzhalter**anzuzeigen. Nachdem eine dynamische MRU-Liste mit Befehlen in der nächsten Prozedur implementiert wurde, wird diese Befehls Bezeichnung jedes Mal, wenn das Untermenü geöffnet wird, durch diese Liste ersetzt.
+    Klicken Sie im Menü **Testmenü** auf das neue Untermenü **unter Menü**, um den neuen Befehl **MRU-Platzhalter** anzuzeigen. Nachdem eine dynamische MRU-Liste mit Befehlen in der nächsten Prozedur implementiert wurde, wird diese Befehls Bezeichnung jedes Mal, wenn das Untermenü geöffnet wird, durch diese Liste ersetzt.
 
 ## <a name="filling-the-mru-list"></a>Auffüllen der MRU-Liste
 
-1. Fügen Sie in *TestCommandPackageGuids.cs*nach den vorhandenen Befehls-IDs in der Klassendefinition die folgenden Zeilen hinzu `TestCommandPackageGuids` .
+1. Fügen Sie in *TestCommandPackageGuids.cs* nach den vorhandenen Befehls-IDs in der Klassendefinition die folgenden Zeilen hinzu `TestCommandPackageGuids` .
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
-    public const uint cmdidMRUList = 0x200;
+    public const uint cmdidMRUList = 0x200;
     ```
 
 2. Fügen Sie in *TestCommand.cs* die folgende using-Anweisung hinzu.
@@ -147,7 +149,7 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
 6. Fügen Sie nach der- `InitMRUMenu` Methode die folgende `OnMRUQueryStatus` Methode hinzu. Dies ist der Handler, der den Text für jedes MRU-Element festlegt.
 
     ```csharp
-    private void OnMRUQueryStatus(object sender, EventArgs e)
+    private void OnMRUQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -155,7 +157,7 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;
             }
         }
     }
@@ -164,7 +166,7 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
 7. Fügen Sie nach der- `OnMRUQueryStatus` Methode die folgende `OnMRUExec` Methode hinzu. Dies ist der Handler für die Auswahl eines MRU-Elements. Diese Methode verschiebt das ausgewählte Element an den Anfang der Liste und zeigt dann das ausgewählte Element in einem Meldungs Feld an.
 
     ```csharp
-    private void OnMRUExec(object sender, EventArgs e)
+    private void OnMRUExec(object sender, EventArgs e)
     {
         var menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -172,7 +174,7 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                string selection = this.mruList[MRUItemIndex] as string;
+                string selection = this.mruList[MRUItemIndex] as string;
                 for (int i = MRUItemIndex; i > 0; i--)
                 {
                     this.mruList[i] = this.mruList[i - 1];
@@ -195,9 +197,9 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
     > [!NOTE]
     > Dieser Schritt ist erforderlich, um zu erzwingen, dass das VSPackage geladen und die MRU-Liste ordnungsgemäß angezeigt wird. Wenn Sie diesen Schritt überspringen, wird die MRU-Liste nicht angezeigt.
 
-3. Klicken Sie im Menü **Test** auf **Untermenü**. Eine Liste mit vier Elementen wird am Ende des Untermenüs unter einem Trennzeichen angezeigt. Wenn Sie auf **Element 3**klicken, wird ein Meldungs Feld angezeigt, und der Text, das **ausgewählte Element 3**, wird angezeigt. (Wenn die Liste der vier Elemente nicht angezeigt wird, stellen Sie sicher, dass Sie die Anweisungen im vorherigen Schritt befolgt haben.)
+3. Klicken Sie im Menü **Test** auf **Untermenü**. Eine Liste mit vier Elementen wird am Ende des Untermenüs unter einem Trennzeichen angezeigt. Wenn Sie auf **Element 3** klicken, wird ein Meldungs Feld angezeigt, und der Text, das **ausgewählte Element 3**, wird angezeigt. (Wenn die Liste der vier Elemente nicht angezeigt wird, stellen Sie sicher, dass Sie die Anweisungen im vorherigen Schritt befolgt haben.)
 
-4. Öffnen Sie das Untermenü erneut. Beachten Sie, dass **Element 3** nun am Anfang der Liste steht und die anderen Elemente eine Position nach unten verschoben wurden. Klicken Sie erneut auf **Element 3** , und beachten Sie, dass im Meldungs Feld weiterhin das **ausgewählte Element 3**angezeigt wird. Dadurch wird angegeben, dass der Text ordnungsgemäß an die neue Position mit der Befehls Bezeichnung verschoben wurde.
+4. Öffnen Sie das Untermenü erneut. Beachten Sie, dass **Element 3** nun am Anfang der Liste steht und die anderen Elemente eine Position nach unten verschoben wurden. Klicken Sie erneut auf **Element 3** , und beachten Sie, dass im Meldungs Feld weiterhin das **ausgewählte Element 3** angezeigt wird. Dadurch wird angegeben, dass der Text ordnungsgemäß an die neue Position mit der Befehls Bezeichnung verschoben wurde.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Dynamisches Hinzufügen von Menü Elementen](../extensibility/dynamically-adding-menu-items.md)

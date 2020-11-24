@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen eines Befehls zum Projektmappen-Explorer Symbolleiste | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Schaltfläche hinzufügen, die einen Befehl auf der Projektmappen-Explorer Symbolleiste in Visual Studio ausführt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414099"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597508"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zum Projektmappen-Explorer Symbolleiste
 In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche zur **Projektmappen-Explorer** Symbolleiste erläutert.
@@ -27,7 +29,7 @@ In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche
  Weitere Informationen zu Menüs, Symbolleisten Befehlen und *vsct* -Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Verwenden Sie XML-Befehls Tabellen Dateien ( *vsct* ) anstelle von Befehls Tabellen Konfigurationsdateien ( *. CTC* ), um zu definieren, wie Menüs und Befehle in ihren VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Verwenden Sie XML-Befehls Tabellen Dateien (*vsct*) anstelle von Befehls Tabellen Konfigurationsdateien (*. CTC*), um zu definieren, wie Menüs und Befehle in ihren VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
  Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -116,5 +118,5 @@ In dieser exemplarischen Vorgehensweise wird das Hinzufügen einer Schaltfläche
 
    Die Sichtbarkeit der Schaltfläche wird von gesteuert, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bis das VSPackage geladen wurde. Nachdem das VSPackage geladen wurde, wird die Sichtbarkeit der Schaltfläche durch das VSPackage gesteuert.  Weitere Informationen finden Sie unter [MenuCommands im Vergleich zu olemenucommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

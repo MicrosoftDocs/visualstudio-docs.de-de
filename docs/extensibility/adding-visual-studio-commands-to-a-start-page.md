@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Visual Studio-Befehlen zu einer Start Seite | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die verschiedenen Möglichkeiten, Visual Studio-Befehle auf einer benutzerdefinierten Start Seite in Visual Studio an XAML-Objekte zu binden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7784b077093660eb5f9c9a0bf471a8965811ba72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740114"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597521"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehlen zu einer Start Seite
 
@@ -34,7 +36,7 @@ xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.Vis
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-Fügen Sie aus dem AssemblyMicrosoft.VisualStudio.Shell.Immutable.11.0.dlleinen weiteren Namespace für Microsoft. * *VisualStudio. Shell hinzu. (Möglicherweise müssen Sie im Projekt einen Verweis auf diese Assembly hinzufügen.)
+Fügen Sie aus dem AssemblyMicrosoft.VisualStudio.Shell.Immutable.11.0.dlleinen weiteren Namespace für Microsoft. ** VisualStudio. Shell hinzu. (Möglicherweise müssen Sie im Projekt einen Verweis auf diese Assembly hinzufügen.)
 
 ```xml
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
@@ -110,6 +112,6 @@ Sie können den- `vscom:` Alias verwenden, um Visual Studio-Befehle an XAML-Steu
 
  Ein Beispiel finden Sie unter Exemplarische Vorgehensweise [: Speichern von Benutzereinstellungen auf einer Start Seite](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen des Benutzer Steuer Elements zur Start Seite](../extensibility/adding-user-control-to-the-start-page.md)

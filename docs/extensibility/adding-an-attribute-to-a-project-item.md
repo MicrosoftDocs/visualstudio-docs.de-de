@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen eines Attributs zu einem Projekt Element | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Attribut zu einem Projekt Element in Visual Studio hinzufügen, indem Sie die shellinterop-Methoden getitemattribute und setitemattribute verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059eef0b6a215f1f02c77df63f777fbfda5dff19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79f96be0d9b2ba661c29cdc1a25d7348bcff6eb1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740191"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597911"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>Hinzufügen eines Attributs zu einem Projekt Element
 Mit den Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> und wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> der Wert der Attribute eines Projekt Elements erhalten und festgelegt. "", Wenn das Attribut nicht bereits vorhanden ist, wird das Attribut erstellt, und die Metadaten werden den Projekt Element Metadaten hinzugefügt.
@@ -43,5 +45,5 @@ Mit den Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStor
 
     ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Persistente Daten in der MSBuild-Projektdatei](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

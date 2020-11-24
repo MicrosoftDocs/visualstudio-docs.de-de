@@ -1,5 +1,7 @@
 ---
-title: Hinzufügen von Befehls zeilenschaltern | Microsoft-Dokumentation
+title: Hinzufügen von Command-Line Switches | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Befehls Zeilenschalter hinzufügen, die auf ein VSPackage angewendet werden, wenn der devenv.exe Befehl ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903471"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597729"
 ---
 # <a name="add-command-line-switches"></a>Befehls Zeilenschalter hinzufügen
 Sie können Befehls Zeilenschalter hinzufügen, die für das VSPackage gelten, wenn *devenv.exe* ausgeführt wird. Verwenden <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> Sie, um den Namen des Schalters und seine Eigenschaften zu deklarieren. In diesem Beispiel wird der Schalter "mySwitch" für eine Unterklasse von VSPackage mit dem Namen " **addcommandswitchpackage** " ohne Argumente und dem automatischen Laden des VSPackages hinzugefügt.
@@ -70,6 +72,6 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 ## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
-- [Devenv-Befehlszeilenparameter](../ide/reference/devenv-command-line-switches.md)
+- [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)
 - [Das Dienstprogramm "| atepkgdef"](../extensibility/internals/createpkgdef-utility.md)
-- [. Pkgdef-Dateien](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [Pkgdef-Dateien](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

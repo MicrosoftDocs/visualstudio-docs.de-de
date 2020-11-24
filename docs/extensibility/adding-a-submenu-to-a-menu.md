@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen eines Untermenüs zu einem Menü | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Untermenü erstellen, es der Visual Studio-Menüleiste hinzufügen und dem Untermenü einen neuen Befehl hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972321"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598015"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Hinzufügen eines Untermenüs zu einem Menü
 Diese exemplarische Vorgehensweise basiert auf der Demo in [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , indem gezeigt wird, wie ein Untermenü zum Menü **Testmenü** hinzugefügt wird.
@@ -28,7 +30,7 @@ Diese exemplarische Vorgehensweise basiert auf der Demo in [Hinzufügen eines Me
  In dieser exemplarischen Vorgehensweise wird ein Untermenü in einem Menü auf der Visual Studio-Menüleiste erstellt und ein neuer Befehl in das Untermenü eingefügt. In der exemplarischen Vorgehensweise wird auch der neue Befehl implementiert.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="add-a-submenu-to-a-menu"></a>Hinzufügen eines Untermenüs zu einem Menü
 
@@ -79,7 +81,7 @@ Diese exemplarische Vorgehensweise basiert auf der Demo in [Hinzufügen eines Me
 
 6. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollte angezeigt werden.
 
-7. Klicken Sie auf **testmenu** , um das neue Untermenü mit dem Namen **Untermenü**anzuzeigen. Klicken Sie auf **Untermenü** , um das Untermenü zu öffnen, und sehen Sie sich den neuen Befehl **Test Sub**an. Beachten Sie, dass durch Klicken auf den **Unterbefehl "Test** " nichts
+7. Klicken Sie auf **testmenu** , um das neue Untermenü mit dem Namen **Untermenü** anzuzeigen. Klicken Sie auf **Untermenü** , um das Untermenü zu öffnen, und sehen Sie sich den neuen Befehl **Test Sub** an. Beachten Sie, dass durch Klicken auf den **Unterbefehl "Test** " nichts
 
 ## <a name="add-a-command"></a>Befehl hinzufügen
 
@@ -123,7 +125,7 @@ Diese exemplarische Vorgehensweise basiert auf der Demo in [Hinzufügen eines Me
     }
     ```
 
-3. Fügen Sie `SubItemCallback()`hinzu. Dies ist die Methode, die aufgerufen wird, wenn auf den neuen Befehl im Untermenü geklickt wird.
+3. Fügen Sie `SubItemCallback()` hinzu. Dies ist die Methode, die aufgerufen wird, wenn auf den neuen Befehl im Untermenü geklickt wird.
 
     ```csharp
     private void SubItemCallback(object sender, EventArgs e)
@@ -153,7 +155,7 @@ Diese exemplarische Vorgehensweise basiert auf der Demo in [Hinzufügen eines Me
 
 5. Klicken Sie im Menü **Testmenü** auf **Untermenü** , und klicken Sie dann auf **Unterbefehl testen**. Ein Meldungs Feld sollte angezeigt werden, und der Text "Test Befehl in TestCommand. subitemcallback ()" wird angezeigt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

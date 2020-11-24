@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Symbolen zu Menübefehlen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Befehlen Befehle hinzufügen, die in den Menüs und Symbolleisten in der integrierten Entwicklungsumgebung (IDE) von Visual Studio angezeigt werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903442"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597651"
 ---
 # <a name="add-icons-to-menu-commands"></a>Hinzufügen von Symbolen zu Menübefehlen
 Befehle können in Menüs und Symbolleisten angezeigt werden. Auf Symbolleisten ist es üblich, dass ein Befehl nur mit einem Symbol angezeigt wird (um Platz zu sparen). in Menüs wird ein Befehl in der Regel mit einem Symbol und einem Text angezeigt.
@@ -33,11 +35,11 @@ Befehle können in Menüs und Symbolleisten angezeigt werden. Auf Symbolleisten 
 
      Wenn Sie eine 8-Bit-Farbtiefe verwenden, verwenden Sie Magenta, `RGB(255,0,255)` , als Transparenz. Es werden jedoch 32-Bit-Farbsymbole bevorzugt.
 
-2. Kopieren Sie die Symbol Datei in das Verzeichnis *Ressourcen* in Ihrem VSPackage-Projekt. Fügen Sie dem Projekt im **Projektmappen-Explorer**das Symbol hinzu. (Wählen Sie **Ressourcen**aus, und klicken Sie im Kontextmenü auf **Hinzufügen**und dann auf **Vorhandenes Element**, und wählen Sie die Symbol Datei aus.)
+2. Kopieren Sie die Symbol Datei in das Verzeichnis *Ressourcen* in Ihrem VSPackage-Projekt. Fügen Sie dem Projekt im **Projektmappen-Explorer** das Symbol hinzu. (Wählen Sie **Ressourcen** aus, und klicken Sie im Kontextmenü auf **Hinzufügen** und dann auf **Vorhandenes Element**, und wählen Sie die Symbol Datei aus.)
 
 3. Öffnen Sie die *vsct* -Datei im Editor.
 
-4. Fügen Sie ein- `GuidSymbol` Element mit dem Namen **testicon**hinzu. Erstellen Sie eine GUID **(Extras**  >  **Create GUID**, wählen Sie **Registrierungs Format** aus, und klicken Sie auf **Kopieren**), und fügen Sie Sie in das- `value` Attribut ein. Das Ergebnis sollte wie folgt aussehen:
+4. Fügen Sie ein- `GuidSymbol` Element mit dem Namen **testicon** hinzu. Erstellen Sie eine GUID **(Extras**  >  **Create GUID**, wählen Sie **Registrierungs Format** aus, und klicken Sie auf **Kopieren**), und fügen Sie Sie in das- `value` Attribut ein. Das Ergebnis sollte wie folgt aussehen:
 
     ```xml
     <!-- Create your own GUID -->
@@ -57,7 +59,7 @@ Befehle können in Menüs und Symbolleisten angezeigt werden. Auf Symbolleisten 
 
     - Legen `guid` Sie den Wert auf den Namen des Elements fest, das `<GuidSymbol>` Sie im vorherigen Schritt erstellt haben.
 
-    - Legen `href` Sie den Wert auf den relativen Pfad der Bitmapdatei (in diesem Fall **Ressourcen \\<Symbol Dateiname \> **fest.
+    - Legen `href` Sie den Wert auf den relativen Pfad der Bitmapdatei (in diesem Fall **Ressourcen \\<Symbol Dateiname \>** fest.
 
     - Legen `usedList` Sie den Wert auf das idsymbol fest, das Sie zuvor erstellt haben. Dieses Attribut gibt eine durch Trennzeichen getrennte Liste der im VSPackage zu verwendenden Symbole an. Symbole, die nicht in der Liste aufgeführt sind, sind die ausgeschlossene Formular
 
@@ -81,6 +83,6 @@ Befehle können in Menüs und Symbolleisten angezeigt werden. Auf Symbolleisten 
 
 8. Testen Sie das Symbol. Erstellen Sie das Projekt, und starten Sie das Debugging. Suchen Sie in der experimentellen Instanz den Befehl. Das Symbol sollte angezeigt werden, das Sie hinzugefügt haben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
 - [Vsct-XML-Schema Referenz](../extensibility/vsct-xml-schema-reference.md)

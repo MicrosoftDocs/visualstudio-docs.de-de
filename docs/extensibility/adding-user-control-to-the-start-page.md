@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen des Benutzer Steuer Elements zur Start Seite | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie der Start Seite in Visual Studio ein Windows Presentation Foundation (WPF)-Benutzer Steuerelement hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011995"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597547"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Hinzufügen eines Benutzer Steuer Elements zur Start Seite
 
@@ -32,9 +34,9 @@ Fügen Sie zunächst der Projekt Mappe Start Seite ein Windows Presentation Foun
 
 1. Erstellen Sie eine Start Seite mithilfe von, die Sie in [Erstellen einer benutzerdefinierten Startseite](../extensibility/creating-a-custom-start-page.md)erstellt haben.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Projekt Mappe, klicken Sie auf **Hinzufügen**und dann auf **Neues Projekt**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf die Projekt Mappe, klicken Sie auf **Hinzufügen** und dann auf **Neues Projekt**.
 
-3. Erweitern Sie im linken Bereich des Dialog Felds **Neues Projekt** entweder den Knoten **Visual Basic** oder **Visual c#** , und klicken Sie auf **Windows**. Wählen Sie im mittleren Bereich **WPF-Benutzer Steuerelement Bibliothek**aus.
+3. Erweitern Sie im linken Bereich des Dialog Felds **Neues Projekt** entweder den Knoten **Visual Basic** oder **Visual c#** , und klicken Sie auf **Windows**. Wählen Sie im mittleren Bereich **WPF-Benutzer Steuerelement Bibliothek** aus.
 
 4. Benennen Sie das Steuerelement, `WebUserControl` und klicken Sie auf **OK**.
 
@@ -111,7 +113,7 @@ Um ein WPF-Benutzer Steuerelement zu implementieren, erstellen Sie die Benutzero
 2. Füllen Sie den SetButton_Click-Ereignis Handler wie folgt aus.
 
     ```csharp
-    private void SetButton_Click(object sender, RoutedEventArgs e)
+    private void SetButton_Click(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -139,11 +141,11 @@ Um ein WPF-Benutzer Steuerelement zu implementieren, erstellen Sie die Benutzero
 
 Um dieses Steuerelement für das Startseiten Projekt verfügbar zu machen, fügen Sie in der Projektdatei der Startseite einen Verweis auf die neue Steuerelement Bibliothek hinzu. Anschließend können Sie das Steuerelement dem XAML-Markup der Start Seite hinzufügen.
 
-1. Klicken Sie in **Projektmappen-Explorer**im Projekt Start Seite mit der rechten Maustaste auf **Verweise** , und klicken Sie dann auf **Verweis hinzufügen**.
+1. Klicken Sie in **Projektmappen-Explorer** im Projekt Start Seite mit der rechten Maustaste auf **Verweise** , und klicken Sie dann auf **Verweis hinzufügen**.
 
 2. Wählen Sie auf der Registerkarte **Projekte** die Option **WebUserControl** aus, und klicken Sie dann auf **OK**.
 
-3. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
+3. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
     Durch die Projekt Mappe wird das Benutzer Steuerelement für andere Dateien in der Projekt Mappe IntelliSense zur Verfügung gestellt.
 
@@ -151,7 +153,7 @@ Um dieses Steuerelement für das Startseiten Projekt verfügbar zu machen, füge
 
 ### <a name="to-add-the-control-to-the-markup"></a>So fügen Sie dem Markup das Steuerelement hinzu
 
-1. Öffnen Sie in **Projektmappen-Explorer**die Datei Start Page *. XAML* .
+1. Öffnen Sie in **Projektmappen-Explorer** die Datei Start Page *. XAML* .
 
 2. Fügen Sie im **XAML** -Bereich die folgende Namespace Deklaration dem Element der obersten Ebene hinzu <xref:System.Windows.Controls.Grid> .
 
@@ -179,11 +181,11 @@ Um dieses Steuerelement für das Startseiten Projekt verfügbar zu machen, füge
 
 1. Kopieren Sie die XAML-Datei und alle unterstützenden Textdateien oder Markup Dateien in den Ordner *%UserProfile%\My Documents\Visual Studio 2015 \ \\ StartPages* .
 
-2. Wenn die Startseite auf Steuerelemente oder Typen in Assemblys verweist, die nicht von Visual Studio installiert werden, kopieren Sie die Assemblys, und fügen Sie Sie in den _Visual Studio-Installationsordner_** \\ \common7\ide\privateassemblys**ein.
+2. Wenn die Startseite auf Steuerelemente oder Typen in Assemblys verweist, die nicht von Visual Studio installiert werden, kopieren Sie die Assemblys, und fügen Sie Sie in den _Visual Studio-Installationsordner_**\\ \common7\ide\privateassemblys** ein.
 
 3. Geben Sie an einer Visual Studio-Eingabeaufforderung **devenv/rootsuffix Exp** ein, um eine experimentelle Instanz von Visual Studio zu öffnen.
 
-4. Wechseln Sie in der experimentellen Instanz zur Seite **Tools**Extras  >  **Optionen**  >  **Umgebung**  >  **Start** , und wählen Sie die XAML-Datei aus der Dropdown Liste **Start Seite anpassen** aus.
+4. Wechseln Sie in der experimentellen Instanz zur Seite **Tools** Extras  >  **Optionen**  >  **Umgebung**  >  **Start** , und wählen Sie die XAML-Datei aus der Dropdown Liste **Start Seite anpassen** aus.
 
 5. Klicken Sie im Menü **Ansicht** auf **Startseite**.
 

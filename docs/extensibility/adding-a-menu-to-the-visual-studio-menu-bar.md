@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen eines Menüs zur Visual Studio-Menüleiste | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Menü in der Menüleiste der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) von Visual Studio hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb5afbbe688c15f429054d50210a68769173e73
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc84eb8854c0a6ff738a51c2ca883ad0527ec919
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801853"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597859"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Hinzufügen eines Menüs zur Visual Studio-Menüleiste
 
-In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein Menü zur Menüleiste der integrierten Entwicklungsumgebung (IDE) von Visual Studio hinzufügen. Die IDE-Menüleiste enthält Menü Kategorien wie z. b. **Datei**, **Bearbeiten**, **Ansicht**, **Fenster**und **Hilfe**.
+In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein Menü zur Menüleiste der integrierten Entwicklungsumgebung (IDE) von Visual Studio hinzufügen. Die IDE-Menüleiste enthält Menü Kategorien wie z. b. **Datei**, **Bearbeiten**, **Ansicht**, **Fenster** und **Hilfe**.
 
 Bevor Sie der Visual Studio-Menüleiste ein neues Menü hinzufügen, sollten Sie überprüfen, ob die Befehle in einem vorhandenen Menü platziert werden sollen. Weitere Informationen zur Befehls Platzierung finden Sie unter [Menüs und Befehle für Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
 
@@ -35,7 +37,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, können Sie ein Menü
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>Erstellen eines VSIX-Projekts, das über eine benutzerdefinierte Befehls Element Vorlage verfügt
 
@@ -43,13 +45,13 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker range="vs-2017"
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >   **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >   **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >   **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie dann **Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **TestCommand** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >   **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie dann **Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *TestCommand.cs*.
 
 ::: moniker-end
 
@@ -57,7 +59,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker range="vs-2017"
 
-1. Öffnen Sie in **Projektmappen-Explorer**die Datei " *testcommandpackage. vsct*".
+1. Öffnen Sie in **Projektmappen-Explorer** die Datei " *testcommandpackage. vsct*".
 
     Am Ende der Datei befindet sich ein `<Symbols>` Knoten, der mehrere `<GuidSymbol>` Knoten enthält. Fügen Sie im Knoten mit dem Namen `guidTestCommandPackageCmdSet` ein neues Symbol wie folgt hinzu:
 
@@ -101,7 +103,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ::: moniker range=">=vs-2019"
 
-1. Öffnen Sie in **Projektmappen-Explorer**die Datei " *toplevelmenupackage. vsct*".
+1. Öffnen Sie in **Projektmappen-Explorer** die Datei " *toplevelmenupackage. vsct*".
 
     Am Ende der Datei befindet sich ein `<Symbols>` Knoten, der mehrere `<GuidSymbol>` Knoten enthält. Fügen Sie im Knoten mit dem Namen `guidTopLevelMenuPackageCmdSet` ein neues Symbol wie folgt hinzu:
 
