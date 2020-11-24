@@ -1,5 +1,7 @@
 ---
 title: Projectitemfile-Element | Microsoft-Dokumentation
+description: Hier finden Sie Referenzinformationen zum projectitemfile-Element, das eine Projekt Element Datei in der XML-Schema Referenz des SharePoint-Projekt Elements darstellt.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539853"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440804"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile-Element
   Stellt eine SharePoint-Datei (z. b. eine featureelementdatei) dar, die beim Bereitstellen in SharePoint in das Projekt Element eingeschlossen werden soll.
@@ -41,7 +43,7 @@ ms.locfileid: "85539853"
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |**Quelle**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Name der Datei, die mit dem Projekt Element bereitgestellt werden soll.|
-|**Ziel**|Optionales **xs: String** -Attribut.<br /><br /> Der Pfad, in dem die Datei in SharePoint in Relation zum Stamm Ordner der Bereitstellung bereitgestellt wird. Der Stamm Ordner der Bereitstellung wird durch den Bereitstellungstyp bestimmt, der durch das **Type** -Attribut angegeben wird. Wenn das **Ziel** Attribut nicht angegeben ist, wird die Datei in einem Ordner mit dem Namen bereitgestellt, der im **Quell** Attribut angegeben ist.<br /><br /> Weitere Informationen finden Sie in den Beschreibungen für den **Bereitstellungs Pfad** und die **Bereitstellungs** Stamm Eigenschaften von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
+|**Target**|Optionales **xs: String** -Attribut.<br /><br /> Der Pfad, in dem die Datei in SharePoint in Relation zum Stamm Ordner der Bereitstellung bereitgestellt wird. Der Stamm Ordner der Bereitstellung wird durch den Bereitstellungstyp bestimmt, der durch das **Type** -Attribut angegeben wird. Wenn das **Ziel** Attribut nicht angegeben ist, wird die Datei in einem Ordner mit dem Namen bereitgestellt, der im **Quell** Attribut angegeben ist.<br /><br /> Weitere Informationen finden Sie in den Beschreibungen für den **Bereitstellungs Pfad** und die **Bereitstellungs** Stamm Eigenschaften von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
 |**Type**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Bereitstellungstyp für die Datei. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung der Eigenschaft " **Bereitstellungstyp** " von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
