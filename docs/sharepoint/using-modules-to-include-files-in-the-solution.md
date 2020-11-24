@@ -1,5 +1,7 @@
 ---
 title: Verwenden von Modulen zum Einbinden von Dateien in eine Projektmappe | Microsoft-Dokumentation
+description: Verwenden Sie Module oder Container für Dateien in einer SharePoint-Lösung, um Dateien auf dem SharePoint-Server unabhängig von ihrem Dateityp bereitzustellen (z. B. Masterseiten).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 778bbc9cff2d7853628edbb5be6466acc55d9ab8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015821"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442520"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Verwenden von Modulen zum Einbinden von Dateien in eine Projektmappe
   Manchmal kann es vorkommen, dass Sie Dateien auf dem SharePoint-Server unabhängig vom Dateityp bereitstellen möchten, z. B. neue Masterseiten. Zu diesem Zweck können Sie *Module* verwenden (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]-Codemodulen). Module sind Container für Dateien in einer SharePoint-Lösung. Wenn die Lösung bereitgestellt wird, werden die Dateien im Modul in die angegebenen Ordner auf dem SharePoint-Server kopiert.
