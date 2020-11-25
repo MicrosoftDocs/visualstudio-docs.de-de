@@ -1,5 +1,7 @@
 ---
 title: Erste Schritte mit Unittests
+description: Verwenden Sie Visual Studio, um Komponententests zu definieren und auszuführen, um die Integrität Ihres Codes zu gewährleisten, Code Coverage sicherzustellen und Fehler zu finden, bevor diese von Ihren Kunden erkannt werden.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153037"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441780"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
 Verwenden Sie Visual Studio, um Komponententests zu definieren und auszuführen, um die Integrität Ihres Codes zu gewährleisten, Code Coverage sicherzustellen und Fehler zu finden, bevor diese von Ihren Kunden erkannt werden. Führen Sie Ihre Komponententests regelmäßig durch, um sicherzustellen, dass Ihr Core ordnungsgemäß funktioniert.
 
-## <a name="create-unit-tests"></a>Erstellen von Unittests
+## <a name="create-unit-tests"></a>Erstellen von Komponententests
 
 In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstellen.
 
@@ -243,10 +245,10 @@ So erstellen Sie Komponententest für das Framework [NUnit](https://nunit.org/):
 
 6. Führen Sie den Test über den **Test-Explorer** aus, oder, indem Sie mit der rechten Maustaste auf den Testcode klicken und die Option **Tests ausführen** auswählen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-* [Create Unit Tests command (Befehl „Komponententests erstellen“)](create-unit-tests-menu.md)
-* [Generieren von Tests mit IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
-* [Ausführen von Unittests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)
+* [Befehl „Komponententests erstellen“](create-unit-tests-menu.md)
+* [Generieren von Komponententests für Code mit IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
+* [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)
 * [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
