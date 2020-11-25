@@ -1,5 +1,7 @@
 ---
 title: Verpacken & Bereitstellungs Informationen in Projekt Elementen
+description: Fügen Sie Paket-und Bereitstellungs Daten in SharePoint-Projekt Elementen mithilfe von Featureeigenschaften, Funktions Empfängern, Projekt Ausgabe verweisen und sicheren Steuerelement Entitäten hinzu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +26,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984203"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970480"
 ---
-# <a name="provide-packaging-and-deployment-information-in-project-items"></a>Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen
+# <a name="provide-packaging-and-deployment-information-in-project-items"></a>Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen
   Alle SharePoint-Projekt Elemente in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügen über Eigenschaften, mit denen Sie zusätzliche Daten bereitstellen können, wenn das Projekt in SharePoint bereitgestellt wird. Dort stehen die folgenden Eigenschaften zur Auswahl:
 
 - Funktionseigenschaften
@@ -82,7 +84,7 @@ ms.locfileid: "72984203"
  Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Projekt Ausgabe Verweises](../sharepoint/how-to-add-a-project-output-reference.md).
 
 ## <a name="safe-control-entries"></a>Einträge für sicheres Steuerelement
- SharePoint bietet einen Sicherheitsmechanismus, der als Safe Control-Einträge bezeichnet wird, um den Zugriff von nicht vertrauenswürdigen Benutzern auf bestimmte Steuerelemente einzuschränken. Mithilfe von SharePoint können nicht vertrauenswürdige Benutzer ASPX-Seiten auf dem SharePoint-Server hochladen und erstellen. Um zu verhindern, dass diese Benutzer unsicheren Code zu ASPX-Seiten hinzufügen, schränkt SharePoint den Zugriff auf *sichere Steuerelemente*ein. Sichere Steuerelemente sind aspx-Steuerelemente und Webparts, die als sicher gekennzeichnet sind und von jedem Benutzer auf Ihrer Website verwendet werden können. Weitere Informationen finden Sie unter [Schritt 4: Hinzufügen des Webparts zur Liste der sicheren Steuerelemente](/previous-versions/office/developer/sharepoint-2007/ms581321(v=office.12)).
+ SharePoint bietet einen Sicherheitsmechanismus, der als Safe Control-Einträge bezeichnet wird, um den Zugriff von nicht vertrauenswürdigen Benutzern auf bestimmte Steuerelemente einzuschränken. Mithilfe von SharePoint können nicht vertrauenswürdige Benutzer ASPX-Seiten auf dem SharePoint-Server hochladen und erstellen. Um zu verhindern, dass diese Benutzer unsicheren Code zu ASPX-Seiten hinzufügen, schränkt SharePoint den Zugriff auf *sichere Steuerelemente* ein. Sichere Steuerelemente sind aspx-Steuerelemente und Webparts, die als sicher gekennzeichnet sind und von jedem Benutzer auf Ihrer Website verwendet werden können. Weitere Informationen finden Sie unter [Schritt 4: Hinzufügen des Webparts zur Liste der sicheren Steuerelemente](/previous-versions/office/developer/sharepoint-2007/ms581321(v=office.12)).
 
  Jedes SharePoint-Projekt Element in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügt über eine Eigenschaft mit dem Namen " **Safe Control** "-Einträge, die zwei boolesche unter Eigenschaften aufweisen: **sicher** und **sicher für Skripts**. Die Safe-Eigenschaft gibt an, ob nicht vertrauenswürdige Benutzer auf ein Steuerelement zugreifen können. Die Eigenschaft "Safe Against Script" gibt an, ob nicht vertrauenswürdige Benutzer die Eigenschaften eines Steuer Elements anzeigen und ändern können.
 
@@ -107,5 +109,5 @@ ms.locfileid: "72984203"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
-- [Verwenden von Modulen zum Einschließen von Dateien in die Projekt Mappe](../sharepoint/using-modules-to-include-files-in-the-solution.md)
+- [Verwenden von Modulen zum Einbinden von Dateien in eine Projektmappe](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [Erweiterte SharePoint-Paket Erstellung und-Bereitstellung](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

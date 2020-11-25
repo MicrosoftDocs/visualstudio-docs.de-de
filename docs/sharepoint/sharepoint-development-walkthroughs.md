@@ -1,5 +1,7 @@
 ---
 title: Exemplarische Vorgehensweisen für SharePoint-Entwicklung | Microsoft-Dokumentation
+description: Weitere Informationen zum entwickeln und Bereitstellen von SharePoint-Lösungen mithilfe von Visual Studio finden Sie unter Links zu exemplarischen Vorgehensweisen. Die Links sind nach Funktionsbereich organisiert.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979470"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970317"
 ---
-# <a name="sharepoint-development-walkthroughs"></a>Exemplarische Vorgehensweisen für SharePoint
+# <a name="sharepoint-development-walkthroughs"></a>Exemplarische Vorgehensweisen zu SharePoint-Entwicklungen
   In den folgenden exemplarischen Vorgehensweisen wird das Entwickeln und Bereitstellen von SharePoint-Lösungen mithilfe von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] veranschaulicht.
 
 ## <a name="general"></a>Allgemein
@@ -27,15 +29,15 @@ ms.locfileid: "62979470"
 |Thema|Beschreibung|
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Hinzufügen von Funktions Ereignis Empfängern](../sharepoint/walkthrough-add-feature-event-receivers.md)|Beschreibt das Hinzufügen von Funktionsereignisempfängern; hierbei handelt es sich um Methoden, die beim Installieren, Aktivieren, Deaktivieren oder Entfernen einer Funktion ausgeführt werden.|
-|[Exemplarische Vorgehensweise: Erstellen einer Websites palte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Veranschaulicht das Erstellen eines benutzerdefinierten Felds, eines Inhaltstyps, einer Listendefinition auf Basis eines Inhaltstyps sowie das Erstellen einer Listeninstanz.|
+|[Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Veranschaulicht das Erstellen eines benutzerdefinierten Felds, eines Inhaltstyps, einer Listendefinition auf Basis eines Inhaltstyps sowie das Erstellen einer Listeninstanz.|
 |[Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Website Definition](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Veranschaulicht das Erstellen einer grundlegenden Websitedefinition, die ein visuelles Webpart mit Steuerelementen enthält.|
 |[Exemplarische Vorgehensweise: Importieren einer benutzerdefinierten Master Seite und Website Seite mit einem Image](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)|Veranschaulicht, wie eine benutzerdefinierte SharePoint-Gestaltungsvorlage und eine Websiteseite mit einem Bild in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-SharePoint-Projekt importiert werden.|
 
-## <a name="import-wizard"></a>Import-Assistent
+## <a name="import-wizard"></a>Import wizard (Import-Assistent)
 
 |Thema|Beschreibung|
 |-----------|-----------------|
-|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio 2010](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Veranschaulicht, wie ein im SharePoint-Designer 2010 erstellter, wieder verwendbarer Workflow in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflowprojekt importiert wird.|
+|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Veranschaulicht, wie ein im SharePoint-Designer 2010 erstellter, wieder verwendbarer Workflow in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Workflowprojekt importiert wird.|
 |[Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Veranschaulicht, wie Elemente aus einer vorhandenen SharePoint-Website in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt importiert werden.|
 
 ## <a name="web-parts"></a>Webparts
@@ -47,15 +49,15 @@ ms.locfileid: "62979470"
 
 ## <a name="workflows"></a>Workflows
 
-|Thema|Beschreibung|
+|Thema|BESCHREIBUNG|
 |-----------|-----------------|
-|[Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow Lösung](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Veranschaulicht das Erstellen einer grundlegenden sequenziellen Workflowvorlage.|
-|[Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Veranschaulicht das Erstellen eines grundlegenden sequenziellen Workflows mit Zuordnungs- und Initiierungsformularen.|
+|[Exemplarische Vorgehensweise: Erstellen und Debuggen einer Projektmappe für einen SharePoint-Workflow](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Veranschaulicht das Erstellen einer grundlegenden sequenziellen Workflowvorlage.|
+|[Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Veranschaulicht das Erstellen eines grundlegenden sequenziellen Workflows mit Zuordnungs- und Initiierungsformularen.|
 |[Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Veranschaulicht, wie einem Workflowprojekt eine Anwendungsseite hinzugefügt wird, auf der von einem Workflow abgeleitete Daten angezeigt werden.|
-|[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Site Workflow-Aktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Veranschaulicht das Erstellen einer benutzerdefinierten Aktivität für einen Workflow auf Websiteebene.|
-|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Zeigt das Migrieren eines wieder verwendbaren Workflows von SharePoint Designer zu Visual Studio.|
+|[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Website-Workflowaktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Veranschaulicht das Erstellen einer benutzerdefinierten Aktivität für einen Workflow auf Websiteebene.|
+|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Zeigt das Migrieren eines wieder verwendbaren Workflows von SharePoint Designer zu Visual Studio.|
 
-## <a name="application-pages"></a>Anwendungs Seiten
+## <a name="application-pages"></a>Anwendungsseiten
 
 |Thema|Beschreibung|
 |-----------|-----------------|
@@ -68,13 +70,13 @@ ms.locfileid: "62979470"
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Erstellen einer externen Liste in SharePoint mithilfe von Geschäftsdaten](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Zeigt, wie ein Modell für den BDC-Dienst erstellt wird, das Informationen zu Kontakten in einer Beispieldatenbank zurückgibt.|
 
-## <a name="packaging-and-deployment"></a>Verpacken und Bereitstellen
+## <a name="packaging-and-deployment"></a>Verpacken und Bereitstellung
 
 |Thema|Beschreibung|
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Bereitstellen einer Aufgabenlisten Definition für Projekte](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md)|Zeigt, wie Visual Studio verwendet wird, um eine SharePoint-Listendefinition zum Nachverfolgen von Projektaufgaben zu erstellen, anzupassen, zu debuggen und bereitzustellen.|
 
-## <a name="extend-the-sharepoint-project-system"></a>Erweitern des SharePoint-Projekt Systems
+## <a name="extend-the-sharepoint-project-system"></a>Erweitern des SharePoint-Projektsystems
 
 |Thema|Beschreibung|
 |-----------|-----------------|
@@ -86,7 +88,7 @@ ms.locfileid: "62979470"
 |[Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|Veranschaulicht, wie ein Assistent für einen benutzerdefinierten SharePoint-Projektelementtyp erstellt wird, der einer Projektvorlage zugeordnet ist.|
 |[Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungs Schritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)|Veranschaulicht, wie ein benutzerdefinierter Bereitstellungsschritt definiert wird, der verwendet werden kann, um SharePoint-Lösungen zu aktualisieren.|
 
-## <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Erweitern des Knotens "SharePoint-Verbindungen" in Server-Explorer
+## <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer
 
 |Thema|Beschreibung|
 |-----------|-----------------|
