@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862220"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850506"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Anpassen eines Codespace (Vorschau)
 
@@ -84,7 +84,7 @@ GitHub Codespaces-Instanzen unterstützen die folgenden *devcontainer.json*-Eige
 
 ## <a name="customize-with-devinit"></a>Anpassen mit devinit
 
-[devinit](../../devinit/getting-started-with-devinit.md) ist ein Befehlszeilentool in Windows-Codespaces, mit dem Sie Frameworks und Tools in Ihrer Umgebung installieren können. Das Tool kann über eine Eingabeaufforderung (`devinit -t require-dotnetcoresdk`) manuell ausgeführt werden, aber die vollen Kapazitäten können erst dann genutzt werden, wenn eine benutzerdefinierte [ *.devinit.json*-](../../devinit/devinit-json.md)-Datei erstellt wird, mit der Codespaces bei jedem Erstellvorgang einheitlich konfiguriert werden.
+[devinit](../../devinit/getting-started-with-devinit.md) ist ein Befehlszeilentool in Windows-Codespaces, mit dem Sie Frameworks und Tools in Ihrer Umgebung installieren können. Das Tool kann über eine Eingabeaufforderung (`devinit run -t require-dotnetcoresdk`) manuell ausgeführt werden, aber die vollen Kapazitäten können erst dann genutzt werden, wenn eine benutzerdefinierte [ *.devinit.json*-](../../devinit/devinit-json.md)-Datei erstellt wird, mit der Codespaces bei jedem Erstellvorgang einheitlich konfiguriert werden.
 
 `devinit` beinhaltet mehrere Tools für das Installieren bestimmter Elemente, z. B. SQL Server und die Azure CLI. Außerdem können allgemeine Paket-Manager ausgeführt werden, z. B. chocolatey, npm und vcpkg. Die vollständige Liste der `devinit`-Tools finden Sie in der Dokumentation [Verfügbare Tools](../../devinit/devinit-tool-list.md).
 

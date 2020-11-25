@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3eb912ebb4d8d7d4596a6aae6499ac054d4514ca
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: d2ac806b4a83b23a783c59eeee5df801c9237685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102505"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94900919"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>IntelliSense-Vervollständigung für nicht importierte Typen und Erweiterungsmethoden
 
@@ -31,14 +31,14 @@ Dieses Refactoring gilt für:
 
 **Hintergrund:** Wenn Sie einen Typ oder Erweiterungsmethoden verwenden möchten, für die in Ihrem Projekt bereits eine Abhängigkeit vorhanden ist, aber die using-Anweisung wurde noch nicht zu Ihrer Datei hinzugefügt.
 
-**Vorteile** : Somit müssen Sie die using-Anweisung nicht manuell zu Ihrer Datei hinzufügen.
+**Vorteile**: Somit müssen Sie die using-Anweisung nicht manuell zu Ihrer Datei hinzufügen.
 
 ## <a name="how-to"></a>Vorgehensweise
 
 1. Sobald Sie damit beginnen, den Namen eines Typs oder einer Erweiterungsmethode einzugeben, für die eine Abhängigkeit in Ihrem Projekt vorhanden ist, stellt IntelliSense Vorschläge bereit. Für Elemente aus nicht importierten Namespaces wird der enthaltende Namespace als Suffix angezeigt.
 
    > [!TIP]
-   > Sie können Elemente mithilfe der **Expander-Schaltfläche (ALT+A)** aus nicht importierten Namespaces nach Bedarf anzeigen und ausblenden, die unten links von der Vervollständigungsliste angezeigt wird. Zum Ändern des Standardverhaltens navigieren Sie zu **Extras** > **Optionen** > **Text-Editor** > **C#**  / **Allgemein** > **IntelliSense** , und suchen Sie dort nach der Option **Elemente aus nicht importierten Namespaces anzeigen**.
+   > Sie können Elemente mithilfe der **Expander-Schaltfläche (ALT+A)** aus nicht importierten Namespaces nach Bedarf anzeigen und ausblenden, die unten links von der Vervollständigungsliste angezeigt wird. Zum Ändern des Standardverhaltens navigieren Sie zu **Extras** > **Optionen** > **Text-Editor** > **C#**  / **Allgemein** > **IntelliSense**, und suchen Sie dort nach der Option **Elemente aus nicht importierten Namespaces anzeigen**.
 
 2. Wählen Sie ein nicht importiertes Element aus, und committen Sie dieses.
 
