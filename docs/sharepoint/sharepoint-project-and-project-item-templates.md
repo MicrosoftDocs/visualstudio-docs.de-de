@@ -1,5 +1,7 @@
 ---
 title: SharePoint-Projekt-und Projekt Element Vorlagen | Microsoft-Dokumentation
+description: Überprüfen Sie die Beschreibungen der verfügbaren SharePoint-Projekt-und Projekt Element Vorlagen sowie deren Verwendung.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2878bd2092e000cf63c2b4fcb531a502a470203e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649227"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970375"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint-Projekt-und Projekt Element Vorlagen
   In den folgenden Abschnitten werden die in SharePoint verfügbaren Projekte und Projektelementvorlagen sowie deren Verwendung beschrieben.
@@ -33,10 +35,10 @@ ms.locfileid: "81649227"
 ## <a name="project-and-project-item-templates-overview"></a>Übersicht über Projekt-und Projekt Element Vorlagen
  Beim Erstellen eines neuen SharePoint-Projekts in Visual Studio wird dieses zusammen mit allen für den entsprechenden Projekttyp erforderlichen Projektelementen der Projektmappe hinzugefügt. Wenn Sie beispielsweise ein Silverlight-Webpartprojekt erstellen, wird von Visual Studio eine Projektmappe mit einem "Visuelles Webpart"-Projektelement und einem Silverlight-Anwendungsprojektelement erstellt, die auch alle für diese Projektelemente erforderlichen Dateien enthält. Projektelementvorlagen werden verwendet, um einem vorhandenen SharePoint-Projekt Projektelemente hinzuzufügen, z. B. Ereignisempfänger, Websitespalten oder Listen.
 
- Weitere Informationen zu SharePoint-Grundlagen finden Sie unter [SharePoint Foundation-Bausteine](/previous-versions/office/developer/sharepoint-2010/ee534971(v=office.14)). Fortgeschrittene Benutzer können angepasste Projekt- und Projektelementvorlagen erstellen. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Projekt Systems](../sharepoint/extending-the-sharepoint-project-system.md).
+ Weitere Informationen zu SharePoint-Grundlagen finden Sie unter [SharePoint Foundation-Bausteine](/previous-versions/office/developer/sharepoint-2010/ee534971(v=office.14)). Fortgeschrittene Benutzer können angepasste Projekt- und Projektelementvorlagen erstellen. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ## <a name="project-templates"></a>Projektvorlagen
- Im Folgenden finden Sie eine Liste von SharePoint-Projektvorlagen. Um die SharePoint-Projektvorlagen in Visual Studio anzuzeigen, erweitern Sie im Dialogfeld **Neues Projekt** den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann **2010**aus.
+ Im Folgenden finden Sie eine Liste von SharePoint-Projektvorlagen. Um die SharePoint-Projektvorlagen in Visual Studio anzuzeigen, erweitern Sie im Dialogfeld **Neues Projekt** den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann **2010** aus.
 
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010-Projekt
  Der Inhalt eines *SharePoint 2010-Projekts* ist in jeder SharePoint-Projektvorlage enthalten. Ein SharePoint 2010-Projekt enthält:
@@ -68,7 +70,7 @@ ms.locfileid: "81649227"
 ## <a name="project-item-templates"></a>Projekt Element Vorlagen
  Im Folgenden finden Sie eine Liste von SharePoint-Projektelementvorlagen. Durch Projektelementvorlagen werden der SharePoint-Lösung Dateien zur Unterstützung von SharePoint-Funktionalität hinzugefügt, z. B. Websitespalten, Listen und Inhaltstypen. Wenn Sie der Projekt Mappe z. b. eine Website Spalte hinzufügen, wird ein Website Spalten Projekt hinzugefügt, das eine *Elements.xml* Definitionsdatei enthält. Wenn Sie ein visuelles Webpart hinzufügen, wird der Projekt Mappe ein visuelles Webpart-Projekt hinzugefügt, das eine *Elements.xml* Datei, ein Benutzer Steuerelement und ein visuelles Webpart-Element enthält.
 
- Um die SharePoint-Projekt Element Vorlagen anzuzeigen, öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für ein SharePoint-Projekt, und wählen Sie dann **Hinzufügen**, **Neues Element**aus. Erweitern Sie den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann **2010**aus.
+ Um die SharePoint-Projekt Element Vorlagen anzuzeigen, öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für ein SharePoint-Projekt, und wählen Sie dann **Hinzufügen**, **Neues Element** aus. Erweitern Sie den **SharePoint** -Knoten entweder unter **Visual c#** oder **Visual Basic**, und wählen Sie dann **2010** aus.
 
 ### <a name="application-page-farm-solution-only"></a>Anwendungsseite (nur Farm Lösung)
  Mithilfe einer **Anwendungsseite (nur Farm Lösung)** können Sie eine [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Webseite für eine SharePoint-Website entwerfen. Anwendungsseiten können nur in Farmlösungen verwendet werden. Dieses Projektelement kann nur Farmlösungen hinzugefügt werden. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen einer Anwendungsseite und eines](../sharepoint/how-to-create-an-application-page.md) [Anwendungs _layouts Seiten Typs](/previous-versions/office/aa979604(v=office.14)).
@@ -85,7 +87,7 @@ ms.locfileid: "81649227"
  Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer Websites palte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) und [Baustein: Inhaltstyp](/previous-versions/office/developer/sharepoint-2010/ee535063(v=office.14)).
 
 ### <a name="empty-element"></a>Leeres Element
- *Leere Elemente* werden am häufigsten verwendet, um SharePoint-Projekt Elemente zu definieren, die in Visual Studio keine Projekt-oder Projekt Element Vorlage haben. Wenn Sie Ihrem Projekt ein leeres Element hinzufügen, wird ein Knoten mit dem Namen EmptyElement [x] (wobei [x] eine eindeutige Zahl ist) \) erstellt. EmptyElement [x] enthält eine einzelne Datei mit dem Namen *Elements.xml.* Verwenden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Sie-Anweisungen, um die gewünschten Elemente in *Elements.xml*zu definieren.
+ *Leere Elemente* werden am häufigsten verwendet, um SharePoint-Projekt Elemente zu definieren, die in Visual Studio keine Projekt-oder Projekt Element Vorlage haben. Wenn Sie Ihrem Projekt ein leeres Element hinzufügen, wird ein Knoten mit dem Namen EmptyElement [x] (wobei [x] eine eindeutige Zahl ist) \) erstellt. EmptyElement [x] enthält eine einzelne Datei mit dem Namen *Elements.xml.* Verwenden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Sie-Anweisungen, um die gewünschten Elemente in *Elements.xml* zu definieren.
 
 ### <a name="event-receiver"></a>Ereignis Empfänger
  *Ereignis Empfänger* behandeln Ereignisse für Elemente auf der SharePoint-Website, z. b. Wenn ein Element zu einer Liste hinzugefügt wird, wenn ein Webelement gelöscht wird oder wenn ein Workflow gestartet wurde. Die Projektelementvorlage "Ereignisempfänger" ermöglicht die Behandlung folgender Elemente:
@@ -100,7 +102,7 @@ ms.locfileid: "81649227"
 
 - Listenworkflowereignisse
 
-  Das Ereignis Empfänger-Projekt Element erstellt einen **Ereignis Empfänger** Ordner mit einer einzelnen Klassendatei, die Ereignishandler für alle Ereignisse enthält, die Sie beim Erstellen des Projekts im **SharePoint-Anpassungs-Assistenten**angegeben haben. Die Ereignis Empfängerklasse kann Ereignisse behandeln, die auf der SharePoint-Website auftreten, wenn Elemente wie Dateien, Felder, Elemente, Listen, Anhänge, Webparts und Workflows hinzugefügt, aktualisiert, gelöscht oder entfernt werden. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md) und [Baustein: Ereignis Behandlung](/previous-versions/office/developer/sharepoint-2010/ee535057(v=office.14)).
+  Das Ereignis Empfänger-Projekt Element erstellt einen **Ereignis Empfänger** Ordner mit einer einzelnen Klassendatei, die Ereignishandler für alle Ereignisse enthält, die Sie beim Erstellen des Projekts im **SharePoint-Anpassungs-Assistenten** angegeben haben. Die Ereignis Empfängerklasse kann Ereignisse behandeln, die auf der SharePoint-Website auftreten, wenn Elemente wie Dateien, Felder, Elemente, Listen, Anhänge, Webparts und Workflows hinzugefügt, aktualisiert, gelöscht oder entfernt werden. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md) und [Baustein: Ereignis Behandlung](/previous-versions/office/developer/sharepoint-2010/ee535057(v=office.14)).
 
 ### <a name="list"></a>List
  Bei einer Liste handelt es sich um eine Instanz einer wiederverwendbaren, grundlegenden SharePoint-Listendefinition, z. B. ein Kalender oder eine Aufgabenliste. Nach dem Hinzufügen einer Liste zu Ihrer Lösung können Sie mit dem Listen-Designer Websitespalten zur Liste hinzufügen und benutzerdefinierte Listenspalten erstellen. Dazu gehören Websitespalten aus Inhaltstypen. Sie können die *Ansicht* für die Liste angeben, mit der die Spalten bestimmt werden, die in der Liste angezeigt werden. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer Websites palte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) und [Baustein: Listen und Dokument Bibliotheken](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)).
@@ -115,7 +117,7 @@ ms.locfileid: "81649227"
  Mit *Silverlight-Webpart* -Projekt Elementen können Sie Webparts für SharePoint erstellen, die Silverlight-Anwendungen anzeigen. Wenn Sie dieses Projektelement in Ihre Lösung einfügen, können Sie entweder eine neue Silverlight-Anwendung hinzufügen oder zu einem späteren Zeitpunkt auf eine vorhandene verweisen. Weitere Informationen finden Sie unter [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) und Exemplarische Vorgehensweise [: Erstellen eines Silverlight-Webparts, das odata für SharePoint anzeigt](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).
 
 ### <a name="site-column"></a>Websites palte
- Eine *Websites palte*, auch als *Feld*bezeichnet, ist eines der grundlegendsten Elemente, die Sie einem SharePoint-Projekt hinzufügen können. Eine Websitespalte stellt einen Datentyp dar, z. B. eine Telefonnummer, ein Textkommentar oder der Name der Stadt eines Kontakts in einer Kontaktliste. Weitere Informationen finden Sie unter [Erstellen von Websites Palten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md) und [Spalten](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14)).
+ Eine *Websites palte*, auch als *Feld* bezeichnet, ist eines der grundlegendsten Elemente, die Sie einem SharePoint-Projekt hinzufügen können. Eine Websitespalte stellt einen Datentyp dar, z. B. eine Telefonnummer, ein Textkommentar oder der Name der Stadt eines Kontakts in einer Kontaktliste. Weitere Informationen finden Sie unter [Erstellen von Websites Palten, Inhaltstypen und Listen für SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md) und [Spalten](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14)).
 
 ### <a name="site-definition-farm-solution-only"></a>Site Definition (nur Farm Lösung)
  *Website Definitions* Projekt Elemente enthalten einen Site Definitions Ordner, der die folgenden Dateien enthält:
@@ -140,6 +142,6 @@ ms.locfileid: "81649227"
 ### <a name="web-part"></a>Webpart
  Bei einem *Webpart* handelt es sich um ein serverseitiges Steuerelement, das in einem speziellen Seitentyp ausgeführt wird, der als Webpartseite bezeichnet wird. Dies sind die Bausteine von auf SharePoint-Websites angezeigten Seiten. Vom Webpartelement werden Dateien bereitgestellt, mit denen Sie ein Webpart für eine SharePoint-Website entwerfen können. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen eines SharePoint-Webparts und Erstellen eines](../sharepoint/how-to-create-a-sharepoint-web-part.md) [Blocks: Webparts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
 - [SharePoint-Produkte und -Technologien](/previous-versions/office/developer/sharepoint-2010/dd776256(v=office.12))

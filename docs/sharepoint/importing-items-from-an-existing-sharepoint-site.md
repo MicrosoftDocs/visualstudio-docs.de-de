@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017027"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970584"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importieren von Elementen aus einer vorhandenen SharePoint-Website
   Mit der Projektvorlage „SharePoint-Lösungspaket importieren“ können Sie Elemente wie Inhaltstypen und Felder aus vorhandenen SharePoint-Websites in einer neuen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -SharePoint-Projektmappe wiederverwenden. Obwohl Sie die meisten importierten Projektmappen ohne Änderung ausführen können, müssen bestimmte Einschränkungen und Probleme berücksichtigt werden, insbesondere, wenn Sie Elemente nach deren Import ändern.
@@ -74,7 +74,7 @@ ms.locfileid: "86017027"
 ## <a name="what-happens-when-you-import-a-solution"></a>Ablauf beim Importieren einer Projektmappe
  Wenn Sie eine Projektmappe mit der Vorlage „SharePoint-Lösungspaket importieren“ importieren, kopiert [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] den gesamten Inhalt der *WSP-Datei* und versucht, so viele Zuordnungen und Verweise wie möglich zwischen importierten Elementen und deren Dateien abzugleichen und beizubehalten.
 
- Alle importierten Elemente werden in entsprechende Ordner im **Projektmappen-Explorer**kopiert. Inhaltstypen werden z. B. im Ordner **Inhaltstypen** und Listeninstanzen werden unter **Listeninstanzen**angezeigt. Dateien, die einem importierten Element zugeordnet sind, werden ebenfalls in den Ordner des Elements kopiert. Beispielsweise umfasst eine importierte Listeninstanz ihre Module, Formulare und ASPX-Seiten.
+ Alle importierten Elemente werden in entsprechende Ordner im **Projektmappen-Explorer** kopiert. Inhaltstypen werden z. B. im Ordner **Inhaltstypen** und Listeninstanzen werden unter **Listeninstanzen** angezeigt. Dateien, die einem importierten Element zugeordnet sind, werden ebenfalls in den Ordner des Elements kopiert. Beispielsweise umfasst eine importierte Listeninstanz ihre Module, Formulare und ASPX-Seiten.
 
 ### <a name="dependent-items"></a>Abhängige Elemente
  Wenn Sie im Assistenten „SharePoint-Lösungspaket importieren“ ein Element, aber nicht dessen abhängige Elemente auswählen, werden Sie in einem Meldungsfeld darauf hingewiesen, dass die abhängigen Elemente vor dem Importieren ebenfalls ausgewählt werden müssen.
@@ -87,7 +87,7 @@ ms.locfileid: "86017027"
  Weitere Informationen zu Funktionen finden Sie unter [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md) oder [Verwenden von Features](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14)).
 
 ### <a name="handle-special-cases"></a>Behandeln von Sonderfällen
- In einigen Fällen kann Visual Studio ein Element nicht mit seinen abhängigen Dateien zusammenführen. Alle Dateien, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nicht auflösen konnte, werden im Ordner **Andere importierte Dateien**angezeigt. Außerdem werden deren **DeploymentType** -Eigenschaften auf **NoDeployment** festgelegt, sodass sie nicht mit der Projektmappe bereitgestellt werden.
+ In einigen Fällen kann Visual Studio ein Element nicht mit seinen abhängigen Dateien zusammenführen. Alle Dateien, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nicht auflösen konnte, werden im Ordner **Andere importierte Dateien** angezeigt. Außerdem werden deren **DeploymentType** -Eigenschaften auf **NoDeployment** festgelegt, sodass sie nicht mit der Projektmappe bereitgestellt werden.
 
  Wenn Sie z. B. die Listendefinition „ExpenseForms“ importieren, wird eine Listendefinition mit diesem Namen zusammen mit deren Dateien *Elements.xml* und *Schema.xml* im Ordner **Listendefinitionen** im **Projektmappen-Explorer** angezeigt. Allerdings werden die zugeordneten ASPX- und HTML-Formulare ggf. in einem Ordner namens **ExpenseForms** im Ordner **Andere importierte Dateien** angeordnet. Um den Import abzuschließen, verschieben Sie diese Dateien im **Projektmappen-Explorer** in die Listendefinition „ExpenseForms“, und ändern Sie die **DeploymentType** -Eigenschaft für jede Datei von **NoDeployment** in **ElementFile**.
 

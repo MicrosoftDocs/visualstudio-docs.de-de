@@ -1,5 +1,7 @@
 ---
 title: Seite "benutzerdefinierte Master Seite & Site" mit Image importieren
+description: Importieren Sie in dieser exemplarischen Vorgehensweise eine benutzerdefinierte SharePoint-Master Seite und eine Website Seite, die ein Bild in ein Visual Studio SharePoint-Projekt enthält.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015688"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970145"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Exemplarische Vorgehensweise: Importieren einer benutzerdefinierten Master Seite und Website Seite mit einem Image
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine benutzerdefinierte SharePoint-Master Seite und eine Website Seite mit einem Bild in ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt importiert werden.
@@ -49,9 +51,9 @@ ms.locfileid: "86015688"
 
 1. Wählen Sie im Navigationsbereich von SharePoint Designer das Standort Objekt **Master Seiten** aus.
 
-2. Wählen Sie auf dem Menüband **Masterseiten** die Option **leere Master Seite**aus.
+2. Wählen Sie auf dem Menüband **Masterseiten** die Option **leere Master Seite** aus.
 
-3. Wählen Sie die neue Master Seite aus, und wählen Sie dann auf dem Menüband **Masterseiten** die Option **Datei bearbeiten**aus.
+3. Wählen Sie die neue Master Seite aus, und wählen Sie dann auf dem Menüband **Masterseiten** die Option **Datei bearbeiten** aus.
 
 4. Wählen Sie am unteren Rand von SharePoint Designer die Registerkarte **Code** aus.
 
@@ -76,7 +78,7 @@ ms.locfileid: "86015688"
     </html>
     ```
 
-6. Speichern Sie die Seite, wählen Sie die Registerkarte **Masterseiten** aus, und benennen Sie die Master Seite in **mybasic1. Master**um.
+6. Speichern Sie die Seite, wählen Sie die Registerkarte **Masterseiten** aus, und benennen Sie die Master Seite in **mybasic1. Master** um.
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>Hinzufügen eines Bilds zur Inhalts Datenbank in SharePoint Designer
  Nun können Sie ein Bild hinzufügen, das auf der Seite Website angezeigt werden soll. Das Image wird in der SharePoint-Inhalts Datenbank bereitgestellt.
@@ -85,7 +87,7 @@ ms.locfileid: "86015688"
 
 1. Wählen Sie im Navigationsbereich das Standort Objekt **alle Dateien** aus, und wählen Sie dann in der Strukturansicht den Ordner **Images** aus.
 
-2. Wählen Sie im Menüband **alle Dateien** die Option **Dateien importieren**aus, wählen Sie eine Datei Ihrer Wahl aus, und klicken Sie dann auf die Schaltfläche **OK** . In diesem Beispiel hat die Datei den Namen **myimg1.png**.
+2. Wählen Sie im Menüband **alle Dateien** die Option **Dateien importieren** aus, wählen Sie eine Datei Ihrer Wahl aus, und klicken Sie dann auf die Schaltfläche **OK** . In diesem Beispiel hat die Datei den Namen **myimg1.png**.
 
      Optional können Sie einen Unterordner erstellen, um die Bilder zu organisieren.
 
@@ -131,7 +133,7 @@ ms.locfileid: "86015688"
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>So exportieren Sie Elemente aus SharePoint Designer
 
-1. Wählen Sie im Navigationsbereich von SharePoint Designer das **Team Site** Objekt aus, und wählen Sie dann auf dem Menüband **Website** die Option **als Vorlage speichern**aus.
+1. Wählen Sie im Navigationsbereich von SharePoint Designer das **Team Site** Objekt aus, und wählen Sie dann auf dem Menüband **Website** die Option **als Vorlage speichern** aus.
 
 2. Geben Sie im Dialogfeld **als Vorlage speichern** einen Dateinamen und einen Vorlagen Namen ein, aktivieren Sie das Kontrollkästchen **Inhalt einbeziehen** , und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -158,7 +160,7 @@ ms.locfileid: "86015688"
 
 3. Wählen Sie die Schaltfläche **Fertig** stellen, um die ausgewählten Elemente zu importieren.
 
-4. Wählen Sie in **Projektmappen-Explorer**den \_ Knoten catalogsmasterpage aus \_ , und legen Sie den Wert seiner Eigenschaft **Bereitstellungs Konfliktlösung** auf **automatisch**fest.
+4. Wählen Sie in **Projektmappen-Explorer** den \_ Knoten catalogsmasterpage aus \_ , und legen Sie den Wert seiner Eigenschaft **Bereitstellungs Konfliktlösung** auf **automatisch** fest.
 
     Dadurch wird sichergestellt, dass Bereitstellungs Konflikte automatisch aufgelöst werden.
 
@@ -170,7 +172,7 @@ ms.locfileid: "86015688"
 
    - Wenn die vorhandene Master Seite als benutzerdefinierte Master Seite festgelegt ist, legen Sie vorübergehend eine andere Master Seite als benutzerdefinierte Master Seite fest. Nachdem Sie die Dateien in SharePoint bereitgestellt haben, legen Sie die neue Master Seite als benutzerdefinierte Master Seite fest.
 
-6. Wählen Sie in der Menüleiste **Erstellen**Projekt Mappe erstellen aus  >  **Deploy Solution**.
+6. Wählen Sie in der Menüleiste **Erstellen** Projekt Mappe erstellen aus  >  **Deploy Solution**.
 
 7. Öffnen Sie die SharePoint-Website, um die bereitgestellten Elemente anzuzeigen.
 
@@ -179,4 +181,4 @@ ms.locfileid: "86015688"
 ## <a name="see-also"></a>Weitere Informationen
 - [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)
-- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

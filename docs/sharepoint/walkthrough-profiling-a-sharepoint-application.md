@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Profilerstellung für eine SharePoint-Anwendung | Microsoft-Dokumentation'
+description: Verwenden Sie in dieser exemplarischen Vorgehensweise die Profil Erstellungs Tools in Visual Studio, um die Leistung einer SharePoint-Anwendung zu optimieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298632"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970107"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Exemplarische Vorgehensweise: Profilerstellung einer SharePoint-Anwendung
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Profilerstellungstools in Visual Studio gezeigt, um die Leistung einer SharePoint-Anwendung zu optimieren. Bei der Beispielanwendung handelt es sich um einen SharePoint-Funktionsereignisempfänger, der eine Leerlaufschleife enthält, welche die Leistung des Funktionsereignisempfängers reduziert. Mit dem Visual Studio-Profiler können Sie den teuersten (langsamsten) Teil des Projekts suchen und eliminieren, auch bekannt als Langsamster *Pfad*.
@@ -55,7 +57,7 @@ ms.locfileid: "92298632"
 
 3. Wählen Sie im Bereich Vorlagen die **SharePoint 2010-Projekt** Vorlage aus.
 
-4. Geben Sie im Feld **Name den Namen** **profiletest**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Geben Sie im Feld **Name den Namen** **profiletest** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
     Der Assistent zum Anpassen von **SharePoint** wird angezeigt.
 
@@ -65,16 +67,16 @@ ms.locfileid: "92298632"
 
     Zurzeit können Sie Farmlösungsprofile erstellen. Weitere Informationen zu Sandkasten Lösungen im Vergleich zu Farm Lösungen finden Sie unter [Überlegungen zu Sandkasten](../sharepoint/sandboxed-solution-considerations.md)Lösungen.
 
-7. Klicken Sie auf die Schaltfläche **Fertig stellen**. Das Projekt wird in **Projektmappen-Explorer**angezeigt.
+7. Klicken Sie auf die Schaltfläche **Fertig stellen**. Das Projekt wird in **Projektmappen-Explorer** angezeigt.
 
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Hinzufügen eines Features und Funktions Ereignis Empfängers
  Fügen Sie dem Projekt als Nächstes eine Funktion zusammen mit dem Ereignisempfänger für die Funktion hinzu. Dieser Ereignisempfänger enthält den Code, für den das Profil erstellt wird.
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>So fügen Sie ein Feature und den Funktionsereignisempfänger hinzu
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Knoten **Features** , wählen Sie **Feature hinzufügen**aus, und belassen Sie den Namen im Standardwert **Feature1**.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Knoten **Features** , wählen Sie **Feature hinzufügen** aus, und belassen Sie den Namen im Standardwert **Feature1**.
 
-2. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für **Feature1**, und wählen Sie dann **Ereignis Empfänger hinzufügen**aus.
+2. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für **Feature1**, und wählen Sie dann **Ereignis Empfänger hinzufügen** aus.
 
      Dadurch wird dem Feature eine Codedatei mit verschiedenen auskommentierten Ereignishandlern hinzugefügt, und die Datei wird für die Bearbeitung geöffnet.
 
@@ -178,11 +180,11 @@ ms.locfileid: "92298632"
     }
     ```
 
-6. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt (**profiletest**), und wählen Sie dann **Eigenschaften**aus.
+6. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt (**profiletest**), und wählen Sie dann **Eigenschaften** aus.
 
 7. Wählen Sie im Dialogfeld **Eigenschaften** die Registerkarte **SharePoint** aus.
 
-8. Wählen Sie in der Liste **aktive Bereitstellungs Konfiguration** die Option **keine Aktivierung**aus.
+8. Wählen Sie in der Liste **aktive Bereitstellungs Konfiguration** die Option **keine Aktivierung** aus.
 
      Durch die Auswahl dieser Bereitstellungskonfiguration können Sie später die Funktion in SharePoint manuell aktivieren.
 
@@ -193,21 +195,21 @@ ms.locfileid: "92298632"
 
 ### <a name="to-configure-and-deploy-the-sharepoint-application"></a>So konfigurieren und stellen Sie die SharePoint-Anwendung bereit
 
-1. Wählen Sie im Menü **Analyse** die Option **Leistungs-Assistenten starten**aus.
+1. Wählen Sie im Menü **Analyse** die Option **Leistungs-Assistenten starten** aus.
 
-2. Belassen Sie auf der Seite 1 des **Leistungs-Assistenten**die Profil Erstellungs Methode als **CPU-Sampling** , und klicken Sie auf die Schaltfläche **weiter** .
+2. Belassen Sie auf der Seite 1 des **Leistungs-Assistenten** die Profil Erstellungs Methode als **CPU-Sampling** , und klicken Sie auf die Schaltfläche **weiter** .
 
      Die anderen Profilerstellungsmethoden können in komplexeren Profilerstellungssituationen verwendet werden. Weitere Informationen finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md).
 
-3. Belassen Sie auf der Seite 2 des **Leistungs-Assistenten**das Profil Ziel als **profiletest** , und klicken Sie auf die Schaltfläche **weiter** .
+3. Belassen Sie auf der Seite 2 des **Leistungs-Assistenten** das Profil Ziel als **profiletest** , und klicken Sie auf die Schaltfläche **weiter** .
 
      Wenn eine Projektmappe über mehrere Projekte verfügt, werden sie in dieser Liste angezeigt.
 
-4. Deaktivieren Sie auf der Seite 3 des **Leistungs-Assistenten**das Kontrollkästchen Profilerstellung für **ebeneninteraktion aktivieren** , und wählen Sie dann die Schaltfläche **weiter** aus.
+4. Deaktivieren Sie auf der Seite 3 des **Leistungs-Assistenten** das Kontrollkästchen Profilerstellung für **ebeneninteraktion aktivieren** , und wählen Sie dann die Schaltfläche **weiter** aus.
 
      Das Feature Profilerstellung für Ebeneninteraktion (Tier Interaction Profiling, TIP) ist für das Messen der Leistung von Anwendungen, die Datenbanken abfragen, sowie für das Anzeigen der Anzahl der Häufigkeit, wie oft eine Webseite angefordert wird, hilfreich. Da diese Daten für dieses Beispiel nicht erforderlich sind, aktivieren wir dieses Feature nicht.
 
-5. Lassen Sie auf der Seite 4 des **Leistungs-Assistenten**das Kontrollkästchen **Profilerstellung nach Abschluss des Assistenten starten** aktiviert, und klicken Sie dann auf die Schaltfläche **Fertig** stellen.
+5. Lassen Sie auf der Seite 4 des **Leistungs-Assistenten** das Kontrollkästchen **Profilerstellung nach Abschluss des Assistenten starten** aktiviert, und klicken Sie dann auf die Schaltfläche **Fertig** stellen.
 
      Der Assistent aktiviert die Anwendungsprofil Erstellung auf dem Server, zeigt das **Leistungs-Explorer** Fenster an und erstellt dann die SharePoint-Anwendung, stellt Sie bereit und führt Sie aus.
 
@@ -216,15 +218,15 @@ ms.locfileid: "92298632"
 
 ### <a name="to-run-the-sharepoint-application"></a>So führen Sie die SharePoint-Anwendung aus
 
-1. Öffnen Sie in SharePoint das Menü **Website Aktionen** , und wählen Sie dann **Website Einstellungen**aus.
+1. Öffnen Sie in SharePoint das Menü **Website Aktionen** , und wählen Sie dann **Website Einstellungen** aus.
 
 2. Wählen Sie in der Liste **Website Aktionen** den Link **Website Features verwalten** aus.
 
-3. Wählen Sie in der Liste **Features** neben **profiletest Feature1**die Schaltfläche **aktivieren** aus.
+3. Wählen Sie in der Liste **Features** neben **profiletest Feature1** die Schaltfläche **aktivieren** aus.
 
      Aufgrund der in der `FeatureActivated`-Funktion aufgerufenen Leerlaufschleife tritt eine Pause auf, wenn Sie dies vornehmen.
 
-4. Wählen Sie in der **Schnellstart** Leiste **Listen** aus, und wählen Sie dann in der Liste **Listen** die Option **Ankündigungen**aus.
+4. Wählen Sie in der **Schnellstart** Leiste **Listen** aus, und wählen Sie dann in der Liste **Listen** die Option **Ankündigungen** aus.
 
      Beachten Sie, dass der Liste eine neue Ankündigung hinzugefügt wurde, aus der hervorgeht, dass die Funktion aktiviert wurde.
 
@@ -262,7 +264,7 @@ ms.locfileid: "92298632"
 
 2. Speichern Sie das Projekt.
 
-3. Öffnen Sie in **Leistungs-Explorer**den Ordner Ziele, und wählen Sie dann den Knoten **profiletest** aus.
+3. Öffnen Sie in **Leistungs-Explorer** den Ordner Ziele, und wählen Sie dann den Knoten **profiletest** aus.
 
 4. Wählen Sie auf der **Leistungs-Explorer** Symbolleiste auf der Registerkarte **Aktionen** die Schaltfläche **Profilerstellung starten** aus.
 
