@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen
+description: Erstellen Sie in dieser SharePoint-exemplarischen Vorgehensweise einen grundlegenden sequenziellen Workflow, der die Verwendung von Zuordnungs-und Initiierungs Formularen integriert
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017133"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970441"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen
   Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines grundlegenden sequenziellen Workflows, der die Verwendung von Zuordnungs-und Initiierungs Formularen einschließt. Hierbei handelt es sich um ASPX-Formulare, die das Hinzufügen von Parametern zu einem Workflow ermöglichen, wenn er dem SharePoint-Administrator (dem Zuordnungs Formular) zuerst zugeordnet ist, und wenn der Workflow vom Benutzer gestartet wird (Initiierungs Formular).
 
  In dieser exemplarischen Vorgehensweise wird ein Szenario beschrieben, in dem ein Benutzer einen Genehmigungs Workflow für Ausgaben Berichte erstellen möchte, die die folgenden Anforderungen erfüllen:
@@ -80,11 +82,11 @@ ms.locfileid: "86017133"
 
      In diesem Schritt wird auch die Vertrauens Ebene für die Lösung als Farm Lösung festgelegt, die die einzige verfügbare Option für Workflow Projekte ist.
 
-6. Wählen Sie im **Projektmappen-Explorer**den Projektknoten aus.
+6. Wählen Sie im **Projektmappen-Explorer** den Projektknoten aus.
 
-7. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
+7. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
 
-8. Erweitern Sie unter **Visual c#** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
+8. Erweitern Sie unter **Visual c#** oder **Visual Basic** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
 9. Wählen Sie im Bereich **Vorlagen** die Vorlage **sequenzieller Workflow (nur Farm Lösung)** aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
@@ -103,7 +105,7 @@ ms.locfileid: "86017133"
 
 #### <a name="to-add-an-association-form-to-the-workflow"></a>So fügen Sie dem Workflow ein Zuordnungs Formular hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**den Knoten **Workflow1** aus.
+1. Wählen Sie in **Projektmappen-Explorer** den Knoten **Workflow1** aus.
 
 2. Klicken Sie in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen** , um das Dialogfeld **Neues Element hinzufügen** anzuzeigen.
 
@@ -111,7 +113,7 @@ ms.locfileid: "86017133"
 
 4. Wählen Sie in der Liste der Vorlagen die Vorlage **Workflow Association-Formular** aus.
 
-5. Geben Sie im Textfeld **Name den Namen** **ExpenseReportAssocForm. aspx**ein.
+5. Geben Sie im Textfeld **Name den Namen** **ExpenseReportAssocForm. aspx** ein.
 
 6. Wählen Sie die Schaltfläche **Hinzufügen** aus, um das Formular dem Projekt hinzuzufügen.
 
@@ -136,7 +138,7 @@ ms.locfileid: "86017133"
     > [!NOTE]
     > Wenn das Projekt in ist [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] , müssen Sie die Schaltfläche **alle Dateien anzeigen** auswählen, um diesen Schritt auszuführen.
 
-4. Öffnen Sie das Kontextmenü für die Datei ExpenseReportAssocForm. aspx, und wählen Sie **Code anzeigen**aus.
+4. Öffnen Sie das Kontextmenü für die Datei ExpenseReportAssocForm. aspx, und wählen Sie **Code anzeigen** aus.
 
 5. Ersetzen Sie die- `GetAssociationData` Methode durch:
 
@@ -164,7 +166,7 @@ ms.locfileid: "86017133"
 
 #### <a name="to-create-an-initiation-form"></a>So erstellen Sie ein Initiierungs Formular
 
-1. Wählen Sie in **Projektmappen-Explorer**den Knoten **Workflow1** aus.
+1. Wählen Sie in **Projektmappen-Explorer** den Knoten **Workflow1** aus.
 
 2. Klicken Sie in der Menüleiste auf **Projekt**  >  **Neues Element hinzu** fügen, um das Dialogfeld **Neues Element hinzufügen** anzuzeigen.
 
@@ -172,7 +174,7 @@ ms.locfileid: "86017133"
 
 4. Wählen Sie in der Liste der Vorlagen die Vorlage **Workflow Initiierungs Formular aus** .
 
-5. Geben Sie im Textfeld **Name den Namen** **ExpenseReportInitForm. aspx**ein.
+5. Geben Sie im Textfeld **Name den Namen** **ExpenseReportInitForm. aspx** ein.
 
 6. Wählen Sie die Schaltfläche **Hinzufügen** aus, um das Formular dem Projekt hinzuzufügen.
 
@@ -198,7 +200,7 @@ ms.locfileid: "86017133"
 
 3. Erweitern Sie in **Projektmappen-Explorer** die Datei **ExpenseReportInitForm. aspx** , um die abhängigen Dateien anzuzeigen.
 
-4. Öffnen Sie das Kontextmenü für die Datei ExpenseReportInitForm. aspx, und wählen Sie **Code anzeigen**aus.
+4. Öffnen Sie das Kontextmenü für die Datei ExpenseReportInitForm. aspx, und wählen Sie **Code anzeigen** aus.
 
 5. Ersetzen Sie die- `Page_Load` Methode durch das folgende Beispiel:
 
@@ -253,11 +255,11 @@ ms.locfileid: "86017133"
 
 1. Zeigen Sie den Workflow im Workflow-Designer an, indem Sie Workflow1 im Projekt öffnen.
 
-2. Erweitern Sie in der **Toolbox**den **Windows Workflow v 3.0** -Knoten, und suchen Sie die **IfElse** -Aktivität.
+2. Erweitern Sie in der **Toolbox** den **Windows Workflow v 3.0** -Knoten, und suchen Sie die **IfElse** -Aktivität.
 
 3. Fügen Sie dem Workflow diese Aktivität hinzu, indem Sie einen der folgenden Schritte ausführen:
 
-    - Öffnen Sie das Kontextmenü für die **IfElse** -Aktivität, wählen Sie **Kopieren**aus, öffnen Sie das Kontextmenü für die Zeile unter der **onWorkflowActivated1** -Aktivität im Workflow-Designer, und wählen Sie dann **Einfügen**aus.
+    - Öffnen Sie das Kontextmenü für die **IfElse** -Aktivität, wählen Sie **Kopieren** aus, öffnen Sie das Kontextmenü für die Zeile unter der **onWorkflowActivated1** -Aktivität im Workflow-Designer, und wählen Sie dann **Einfügen** aus.
 
     - Ziehen Sie die **IfElse** -Aktivität aus der **Toolbox**, und verbinden Sie Sie mit der Zeile unter der **onWorkflowActiviated1** -Aktivität im Workflow-Designer.
 
@@ -265,7 +267,7 @@ ms.locfileid: "86017133"
 
 5. Fügen Sie dem Workflow diese Aktivität hinzu, indem Sie einen der folgenden Schritte ausführen:
 
-    - Öffnen Sie das Kontextmenü für die Aktivität " **kreatetask** ", wählen Sie **Kopieren**aus, öffnen Sie das Kontextmenü für eine der beiden Ablage **Aktivitäten hier** Bereiche innerhalb von **IfElseActivity1** im Workflow-Designer, und wählen Sie dann **Einfügen**aus.
+    - Öffnen Sie das Kontextmenü für die Aktivität " **kreatetask** ", wählen Sie **Kopieren** aus, öffnen Sie das Kontextmenü für eine der beiden Ablage **Aktivitäten hier** Bereiche innerhalb von **IfElseActivity1** im Workflow-Designer, und wählen Sie dann **Einfügen** aus.
 
     - Ziehen Sie die Aktivität " **kreatetask** " aus der **Toolbox** auf eine der beiden Bereiche " **Drop Activities here** " in **IfElseActivity1**.
 
@@ -283,20 +285,20 @@ ms.locfileid: "86017133"
 
 12. Wählen Sie die Registerkarte **an einen neuen Member binden** aus, wählen Sie das options **Feld Feld erstellen** , und klicken Sie dann auf die Schaltfläche **OK** .
 
-13. Erweitern Sie in der **Toolbox**den Knoten **SharePoint-Workflow** , und suchen Sie die Aktivität **logdehistorylistactivity** .
+13. Erweitern Sie in der **Toolbox** den Knoten **SharePoint-Workflow** , und suchen Sie die Aktivität **logdehistorylistactivity** .
 
 14. Fügen Sie dem Workflow diese Aktivität hinzu, indem Sie einen der folgenden Schritte ausführen:
 
-    - Öffnen Sie das Kontextmenü für die **LogToHistoryListActivity** -Aktivität, wählen Sie **Kopieren**aus, öffnen Sie das Kontextmenü für den anderen Bereich Ablage **Aktivitäten hier** in **IfElseActivity1** im Workflow-Designer, und wählen Sie dann **Einfügen**aus.
+    - Öffnen Sie das Kontextmenü für die **LogToHistoryListActivity** -Aktivität, wählen Sie **Kopieren** aus, öffnen Sie das Kontextmenü für den anderen Bereich Ablage **Aktivitäten hier** in **IfElseActivity1** im Workflow-Designer, und wählen Sie dann **Einfügen** aus.
 
-    - Ziehen Sie die **logrehistorylistactivity** -Aktivität aus der **Toolbox**, und legen Sie Sie auf dem anderen Bereich Ablage **Aktivitäten hier** in **IfElseActivity1**ab.
+    - Ziehen Sie die **logrehistorylistactivity** -Aktivität aus der **Toolbox**, und legen Sie Sie auf dem anderen Bereich Ablage **Aktivitäten hier** in **IfElseActivity1** ab.
 
 ## <a name="add-code-to-the-workflow"></a>Hinzufügen von Code zum Workflow
  Fügen Sie dann dem Workflow Code hinzu, um ihm Funktionalität zu geben.
 
 #### <a name="to-add-code-to-the-workflow"></a>So fügen Sie dem Workflow Code hinzu
 
-1. Öffnen Sie das Kontextmenü für die **createTask1** -Aktivität im Workflow-Designer, und wählen Sie dann **Code anzeigen**aus.
+1. Öffnen Sie das Kontextmenü für die **createTask1** -Aktivität im Workflow-Designer, und wählen Sie dann **Code anzeigen** aus.
 
 2. Fügen Sie die folgende Methode hinzu:
 
@@ -426,11 +428,11 @@ ms.locfileid: "86017133"
 
      Dadurch wird das Workflow Initiierungs Formular angezeigt. (Beachten Sie, dass der im Feld für die **automatische Genehmigung** angezeigte Wert schreibgeschützt ist, weil er im Zuordnungs Formular eingegeben wurde.)
 
-7. Geben Sie im Textfeld **Ausgaben gesamt** den Wert **1600**ein, und wählen Sie dann die Schaltfläche **Workflow starten** aus.
+7. Geben Sie im Textfeld **Ausgaben gesamt** den Wert **1600** ein, und wählen Sie dann die Schaltfläche **Workflow starten** aus.
 
      Dadurch wird die Liste der frei **gegebenen Dokumente** erneut angezeigt. Dem soeben gestarteten Workflow wird eine neue Spalte mit dem Namen **ExpenseReportWorkflow** mit dem Wert **abgeschlossen** hinzugefügt.
 
-8. Wählen Sie den Dropdown Pfeil neben dem hochgeladenen Dokument aus, und wählen Sie dann das Element **Workflows** aus, um die Seite Workflow Status anzuzeigen. Wählen Sie unter **abgeschlossene Workflows**den **voll** ständigen Wert aus. Der Task ist im Abschnitt **Tasks** aufgeführt.
+8. Wählen Sie den Dropdown Pfeil neben dem hochgeladenen Dokument aus, und wählen Sie dann das Element **Workflows** aus, um die Seite Workflow Status anzuzeigen. Wählen Sie unter **abgeschlossene Workflows** den **voll** ständigen Wert aus. Der Task ist im Abschnitt **Tasks** aufgeführt.
 
 9. Wählen Sie den Titel der Aufgabe aus, um die zugehörigen Aufgaben Details anzuzeigen.
 
@@ -446,5 +448,5 @@ ms.locfileid: "86017133"
 - Weitere Informationen zu SharePoint-Workflows finden Sie unter [Workflows in Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Erstellen von SharePoint-Workflow Lösungen](../sharepoint/creating-sharepoint-workflow-solutions.md)
+- [Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)
