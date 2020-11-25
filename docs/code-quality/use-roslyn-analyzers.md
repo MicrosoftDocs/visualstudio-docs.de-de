@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78dc44f4cebbfd245d8e5a8e1a667b422282c7ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349151"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040640"
 ---
 # <a name="overview"></a>Übersicht
 
@@ -59,7 +59,7 @@ Der folgende Screenshot zeigt dieselben drei Verstöße, wie Sie im Fehlerliste 
 
 ![Fehler-, Warn-und Informations Verstoß in Fehlerliste](media/diagnostics-severities-in-error-list.png)
 
-Viele Analysetoolregeln oder *-diagnosen* verfügen über mindestens einen *Codefix* , den Sie zur Korrektur von Regelverstößen anwenden können. Codekorrekturen werden zusammen mit anderen [schnellen Aktionen](../ide/quick-actions.md) im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/quick-actions.md).
+Viele Analysetoolregeln oder *-diagnosen* verfügen über mindestens einen *Codefix*, den Sie zur Korrektur von Regelverstößen anwenden können. Codekorrekturen werden zusammen mit anderen [schnellen Aktionen](../ide/quick-actions.md) im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/quick-actions.md).
 
 ![Verstoß im Analysetool und Codefix mithilfe einer schnellen Aktion](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -133,7 +133,7 @@ Im vorherigen Beispiel sind alle drei Einträge auf CA1822 anwendbar. Bei Verwen
 
 Visual Studio bietet eine bequeme Möglichkeit, den Schweregrad einer Regel im Glühbirnen Menü [schnell Aktionen](../ide/quick-actions.md) zu konfigurieren.
 
-1. Nachdem eine Verletzung aufgetreten ist, bewegen Sie den Mauszeiger über die Verletzungs Wellenlinie im Editor, und öffnen Sie das Glühbirnen Menü. Oder platzieren Sie den Cursor in der Zeile, und drücken Sie die **STRG** -Taste + **.** (Punkt).
+1. Nachdem eine Verletzung aufgetreten ist, bewegen Sie den Mauszeiger über die Verletzungs Wellenlinie im Editor, und öffnen Sie das Glühbirnen Menü. Oder platzieren Sie den Cursor in der Zeile, und drücken Sie die **STRG**-Taste + **.** (Punkt).
 
 2. Klicken Sie im Glühbirnen Menü auf **Probleme** konfigurieren, und konfigurieren Sie den > **\<rule ID> Schweregrad**.
 
@@ -261,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Festlegen des schwere Grads der Regel Projektmappen-Explorer
 
-1. Erweitern Sie in Projektmappen-Explorer **Verweise** -  >  **Analyzers** (oder **Abhängigkeits**  >  **Analyse** Tools für .net Core-Projekte).
+1. Erweitern Sie in Projektmappen-Explorer **Verweise**-  >  **Analyzers** (oder **Abhängigkeits**  >  **Analyse** Tools für .net Core-Projekte).
 
 2. Erweitern Sie die Assembly, die die Regel enthält, für die Sie den Schweregrad festlegen möchten.
 
@@ -286,13 +286,13 @@ dotnet_diagnostic.CA2231.severity = warning
 
 1. Öffnen Sie die aktive Regel Satz Datei mit einer der folgenden Methoden:
 
-- Doppelklicken Sie in **Projektmappen-Explorer** auf die Datei, klicken Sie mit der rechten Maustaste auf **Verweise** -  >  **Analyzers** -Knoten, und wählen Sie **aktiven Regelsatz öffnen** aus.
+- Doppelklicken Sie in **Projektmappen-Explorer** auf die Datei, klicken Sie mit der rechten Maustaste auf **Verweise**-  >  **Analyzers** -Knoten, und wählen Sie **aktiven Regelsatz öffnen** aus.
 - Wählen Sie auf der Eigenschaften Seite **Code Analyse** für das Projekt die Option **Öffnen** aus.
 
-  Wenn Sie den Regelsatz zum ersten Mal bearbeiten, erstellt Visual Studio eine Kopie der standardmäßigen Regel Satz Datei, benennt Sie " *\<projectname> . RuleSet* " und fügt Sie dem Projekt hinzu. Dieser benutzerdefinierte Regelsatz wird auch zum aktiven Regelsatz für Ihr Projekt.
+  Wenn Sie den Regelsatz zum ersten Mal bearbeiten, erstellt Visual Studio eine Kopie der standardmäßigen Regel Satz Datei, benennt Sie " *\<projectname> . RuleSet*" und fügt Sie dem Projekt hinzu. Dieser benutzerdefinierte Regelsatz wird auch zum aktiven Regelsatz für Ihr Projekt.
 
    > [!NOTE]
-   > .Net Core-und .NET Standard-Projekte unterstützen nicht die Menübefehle für Regelsätze in **Projektmappen-Explorer** , z. b. **Öffnen des aktiven Regelsatzes**. Wenn Sie einen nicht standardmäßigen Regelsatz für ein .net Core-oder .NET Standard-Projekt angeben möchten, [fügen Sie die Eigenschaft " **codeanalysisruleset**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) " manuell zur Projektdatei hinzu. Sie können die Regeln im Regelsatz weiterhin in der Benutzeroberfläche von Visual Studio-Regelsatz-Editor konfigurieren.
+   > .Net Core-und .NET Standard-Projekte unterstützen nicht die Menübefehle für Regelsätze in **Projektmappen-Explorer**, z. b. **Öffnen des aktiven Regelsatzes**. Wenn Sie einen nicht standardmäßigen Regelsatz für ein .net Core-oder .NET Standard-Projekt angeben möchten, [fügen Sie die Eigenschaft " **codeanalysisruleset**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) " manuell zur Projektdatei hinzu. Sie können die Regeln im Regelsatz weiterhin in der Benutzeroberfläche von Visual Studio-Regelsatz-Editor konfigurieren.
 
 1. Navigieren Sie zu der Regel, indem Sie die enthaltende Assembly erweitern.
 
@@ -355,7 +355,7 @@ Es gibt mehrere Möglichkeiten, Regel Verletzungen zu unterdrücken:
 
 - Im **Code-Editor**
 
-  Platzieren Sie den Cursor in der Codezeile mit der Verletzung, und drücken Sie die **STRG** - + Taste **(.)** , um das Menü **schnell Aktionen** zu öffnen. Wählen Sie **CAXXXX**  >  **in Quelle/in Unterdrückungs Datei unter** drücken.
+  Platzieren Sie den Cursor in der Codezeile mit der Verletzung, und drücken Sie die **STRG**- + Taste **(.)** , um das Menü **schnell Aktionen** zu öffnen. Wählen Sie **CAXXXX**  >  **in Quelle/in Unterdrückungs Datei unter** drücken.
 
   ![Diagnose über das Menü "schnelle Aktionen" unterdrücken](media/suppress-diagnostic-from-editor.png)
 
@@ -386,7 +386,7 @@ Wenn Sie das Projekt in der Befehlszeile erstellen, werden Regelverstöße in de
 
 - Mindestens eine Regel wird im Code des Projekts verletzt.
 
-- Der [Schweregrad](#configure-severity-levels) einer verletzten Regel ist auf " **Warnung** " festgelegt. in diesem Fall bewirken Verstöße nicht, dass der Buildvorgang fehlschlägt oder dass ein **Fehler** auftritt.
+- Der [Schweregrad](#configure-severity-levels) einer verletzten Regel ist auf " **Warnung**" festgelegt. in diesem Fall bewirken Verstöße nicht, dass der Buildvorgang fehlschlägt oder dass ein **Fehler** auftritt.
 
 Die Ausführlichkeit der Buildausgabe wirkt sich nicht darauf aus, ob Regelverstöße angezeigt werden. Auch mit der **stillen** Ausführlichkeit werden Regel Verletzungen in der Buildausgabe angezeigt.
 
@@ -408,10 +408,10 @@ Der folgende Screenshot zeigt die Befehlszeilen-Buildausgabe vom Erstellen eines
 Wenn Sie in einem .net Core-Projekt einen Verweis auf ein Projekt hinzufügen, das über nuget-Analysen verfügt, werden diese Analysen dem abhängigen Projekt ebenfalls automatisch hinzugefügt. Um dieses Verhalten zu deaktivieren, z. b. wenn das abhängige Projekt ein Komponenten Testprojekt ist, markieren Sie das nuget-Paket als privat in der *csproj* -oder *vbproj* -Datei des referenzierten Projekts, indem Sie das **privateassets** -Attribut festlegen:
 
 ```xml
-<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+<PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Code Analysen in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Senden eines Code Analyzer-Fehlers](https://github.com/dotnet/roslyn-analyzers/issues)
