@@ -1,5 +1,7 @@
 ---
 title: Austauschbare Parameter | Microsoft-Dokumentation
+description: Überprüfen Sie die ersetzbaren Parameter (Token), die Werte in Projektdateien für SharePoint-Lösungs Elemente angeben, deren tatsächliche Werte zur Entwurfszeit nicht bekannt sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,15 +16,15 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841226"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970249"
 ---
 # <a name="replaceable-parameters"></a>Austauschbare Parameter
-  Ersetzbare Parameter oder *Token*können innerhalb von Projektdateien verwendet werden, um Werte für SharePoint-Lösungs Elemente bereitzustellen, deren tatsächliche Werte zur Entwurfszeit nicht bekannt sind. Sie ähneln den Standardvorlagen Token in der Funktion [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Weitere Informationen finden Sie unter [Vorlagen Parameter](../ide/template-parameters.md).
+  Ersetzbare Parameter oder *Token* können innerhalb von Projektdateien verwendet werden, um Werte für SharePoint-Lösungs Elemente bereitzustellen, deren tatsächliche Werte zur Entwurfszeit nicht bekannt sind. Sie ähneln den Standardvorlagen Token in der Funktion [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Weitere Informationen finden Sie unter [Vorlagen Parameter](../ide/template-parameters.md).
 
 ## <a name="token-format"></a>Tokenformat
  Token beginnen und enden mit einem Dollarzeichen ($). Bei der Bereitstellung werden alle verwendeten Token durch tatsächliche Werte ersetzt, wenn ein Projekt in ein SharePoint-Lösungspaket (*wsp* -Datei) gepackt wird. Beispielsweise kann das Token **$SharePoint. Package.Name $** in die Zeichenfolge "Test SharePoint Package" aufgelöst werden.
@@ -48,7 +50,7 @@ ms.locfileid: "90841226"
 ## <a name="tokens-list"></a>Tokenliste
  In der folgenden Tabelle sind die verfügbaren Token aufgelistet.
 
-|name|BESCHREIBUNG|
+|Name|Beschreibung|
 |----------|-----------------|
 |$SharePoint. Project. filename $|Der Name der enthaltenden Projektdatei, z. b. *newproj. csproj*.|
 |$SharePoint. Project. datamewithoutextension $|Der Name der enthaltenden Projektdatei ohne die Dateinamenerweiterung. Beispiel: "newproj".|
@@ -64,7 +66,7 @@ ms.locfileid: "90841226"
 |$SharePoint. Feature. datamewithoutextension $|Der Name der Featuredefinitionsdatei ohne die Dateinamenerweiterung.|
 |$SharePoint. Feature. DeploymentPath $|Der Name des Ordners, der die Funktion im Paket enthält. Dieses Token entspricht der Eigenschaft "Bereitstellungs Pfad" im Funktions-Designer. Ein Beispiel Wert ist, "Project1_Feature1".|
 |$SharePoint. Feature.ID $|Die SharePoint-ID der enthaltenden Funktion. Dieses Token kann wie alle Token auf Featureebene nur von Dateien verwendet werden, die über eine Funktion in einem Paket enthalten sind, und nicht direkt zu einem Paket außerhalb eines Features hinzugefügt werden.|
-|$SharePoint. ProjectItem.Name $|Der Name des Projekt Elements (nicht dessen Dateiname), wie von **ISharePointProjectItem.Name**abgerufen.|
+|$SharePoint. ProjectItem.Name $|Der Name des Projekt Elements (nicht dessen Dateiname), wie von **ISharePointProjectItem.Name** abgerufen.|
 |$SharePoint \<GUID> . Type.. AssemblyQualifiedName $|Der qualifizierte AssemblyName des Typs, der mit dem des Tokens übereinstimmt [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] . Das Format des [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] ist Kleinbuchstaben und entspricht dem Format GUID. ToString ("D") (das heißt, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
 |$SharePoint \<GUID> . Type.. FullName $|Der vollständige Name des Typs, der mit der GUID im Token übereinstimmt. Das Format der GUID ist Kleinbuchstaben und entspricht dem Format GUID. ToString ("D") (das heißt, xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|
 
@@ -103,7 +105,7 @@ ms.locfileid: "90841226"
 </PropertyGroup>
 ```
 
- Sie können die Erweiterung direkt*der targets-Datei (Targets*) hinzufügen. Durch das Hinzufügen der Erweiterung ändert sich jedoch die Liste der Erweiterungen für alle SharePoint-Projekte, die auf dem lokalen System verpackt sind, und nicht nur Ihre eigenen. Diese Erweiterung ist möglicherweise praktisch, wenn Sie der einzige Entwickler auf dem System sind oder die meisten ihrer Projekte Sie benötigen. Da es jedoch systemspezifisch ist, kann dieser Ansatz nicht portabel sein, und es wird daher empfohlen, stattdessen alle Erweiterungen zur Projektdatei hinzuzufügen.
+ Sie können die Erweiterung direkt *der targets-Datei (Targets*) hinzufügen. Durch das Hinzufügen der Erweiterung ändert sich jedoch die Liste der Erweiterungen für alle SharePoint-Projekte, die auf dem lokalen System verpackt sind, und nicht nur Ihre eigenen. Diese Erweiterung ist möglicherweise praktisch, wenn Sie der einzige Entwickler auf dem System sind oder die meisten ihrer Projekte Sie benötigen. Da es jedoch systemspezifisch ist, kann dieser Ansatz nicht portabel sein, und es wird daher empfohlen, stattdessen alle Erweiterungen zur Projektdatei hinzuzufügen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

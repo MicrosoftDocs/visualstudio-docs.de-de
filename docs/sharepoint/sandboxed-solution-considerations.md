@@ -1,5 +1,7 @@
 ---
 title: Überlegungen zu Sandkasten Lösungen | Microsoft-Dokumentation
+description: Erkunden Sie Sandbox-Lösungen, bei denen es sich um ein Feature in Microsoft SharePoint handelt, mit dem Website Sammlungs Benutzer ihre eigenen benutzerdefinierten Code Lösungen hochladen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840943"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970464"
 ---
 # <a name="sandboxed-solution-considerations"></a>Überlegungen zu Sandkastenlösungen
   *Sandkasten Lösungen* sind eine Funktion in Microsoft SharePoint 2010, mit der Website Sammlungs Benutzer ihre eigenen benutzerdefinierten Code Lösungen hochladen können. Eine gängige Sandkasten Lösung ist, dass Benutzer ihre eigenen Webparts hochladen.
@@ -31,7 +33,7 @@ ms.locfileid: "90840943"
  Eine Sandkasten-SharePoint-Anwendung wird in einem sicheren, überwachten Prozess ausgeführt, der Zugriff auf einen begrenzten Teil der Webfarm hat. Microsoft SharePoint 2010 verwendet eine Kombination aus Features, projektmappenkatalogen, Lösungs Überwachung und einem Validierungs Framework, um Sandbox-Lösungen zu ermöglichen.
 
 ## <a name="specify-project-trust-level"></a>Projekt Vertrauens Ebene angeben
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unterstützt Sandkasten Lösungen über eine boolesche Projekt Eigenschaft namens *Sandbox-Lösung*. Diese Eigenschaft kann jederzeit im Projekt festgelegt werden, oder Sie kann angegeben werden, wenn Sie das Projekt im Assistenten zum Anpassen von **SharePoint**erstellen.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unterstützt Sandkasten Lösungen über eine boolesche Projekt Eigenschaft namens *Sandbox-Lösung*. Diese Eigenschaft kann jederzeit im Projekt festgelegt werden, oder Sie kann angegeben werden, wenn Sie das Projekt im Assistenten zum Anpassen von **SharePoint** erstellen.
 
 > [!NOTE]
 > Das Ändern der *Sandkasten* -Projektmappeneigenschaft eines Projekts nach der Erstellung kann Validierungs Fehler verursachen.
@@ -69,7 +71,7 @@ ms.locfileid: "90840943"
  In WSS 3,0 konnten Lösungen nur auf der Farm Ebene bereitgestellt werden. Dies bedeutete, dass potenziell schädliche oder destabilisierende Lösungen bereitgestellt werden konnten, die sich auf die gesamte Webfarm und alle anderen Website Sammlungen und-Anwendungen ausgewirkt haben, die darunter ausgeführt werden. Mithilfe von Sandkasten Lösungen können Sie Ihre Lösungen jedoch für ein untergeordnetes Element der Farm bereitstellen, eine bestimmte Website Sammlung. Um zusätzlichen Schutz zu bieten, wird die Assembly der Lösung nicht in den Haupt [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] Prozess geladen (*w3wp.exe*). Stattdessen wird Sie in einen separaten Prozess geladen (*SPUCWorkerProcess.exe*). Dieser Prozess wird überwacht und implementiert Kontingente und Drosselung, um die Farm vor Sandbox-Lösungen zu schützen, die schädliche Aktivitäten ausführen, z. b. das Ausführen von engen Schleifen, die CPU-Zyklen beanspruchen.
 
 ## <a name="site-collection-solution-gallery"></a>Lösungskatalog für Website Sammlungen
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 verfügt über eine Funktion, die als "Site Collection Solution Gallery" bezeichnet wird. Sie können auf diese Funktion über die Seite SharePoint 2010-zentral Administration zugreifen oder indem Sie das Menü **Website Aktionen** öffnen, **Site Einstellungen**auswählen und dann auf der SharePoint-Website unter **Galerien** den Link **Lösungen** auswählen. Lösungs Kataloge sind Repository von Lösungen, mit denen Website Sammlungs Administratoren Lösungen in Ihren Website Sammlungen verwalten können.
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 verfügt über eine Funktion, die als "Site Collection Solution Gallery" bezeichnet wird. Sie können auf diese Funktion über die Seite SharePoint 2010-zentral Administration zugreifen oder indem Sie das Menü **Website Aktionen** öffnen, **Site Einstellungen** auswählen und dann auf der SharePoint-Website unter **Galerien** den Link **Lösungen** auswählen. Lösungs Kataloge sind Repository von Lösungen, mit denen Website Sammlungs Administratoren Lösungen in Ihren Website Sammlungen verwalten können.
 
  Der Lösungskatalog ist eine Dokumentbibliothek, die im Stamm Web der SharePoint-Website gespeichert ist. Der Lösungskatalog ersetzt Website Vorlagen und unterstützt Projektmappenpakete. Wenn eine SharePoint-Lösungspaket Datei (*. wsp*) hochgeladen wird, wird Sie als Sandkasten Lösung verarbeitet.
 

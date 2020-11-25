@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei SharePoint-Paketen und-bereit Stellungen | Microsoft-Dokumentation
+description: Verstehen und beheben Sie verschiedene Probleme, die beim Packen und Bereitstellen von SharePoint-Lösungen auftreten können.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981935"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969924"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Problembehandlung bei der SharePoint-Verpackung und-Bereitstellung
   In diesem Thema werden verschiedene Probleme behandelt, die beim Packen und Bereitstellen von SharePoint-Lösungen auftreten können.
@@ -40,7 +42,7 @@ ms.locfileid: "72981935"
  Die Projektausgabe kann mithilfe des Paket-Designers einem Paket hinzugefügt werden. Vergewissern Sie sich jedoch beim Hinzufügen der Projektausgabe, dass die Plattform des Projekts der Plattform der SharePoint-Lösung entspricht. Es wird empfohlen, für die Assemblys, die Sie auf einem SharePoint-Server bereitstellen möchten, das **beliebige CPU** -Platt Form Ziel zu verwenden. Weitere Informationen finden Sie unter [Seite "kompilieren", Projekt-Designer &#40;Visual Basic&#41;](../ide/reference/compile-page-project-designer-visual-basic.md) und [Dialog Feld "Erweiterte Compilereinstellungen" &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="validation-warnings-and-errors"></a>Validierungs Warnungen und-Fehler
- Von den SharePoint-Entwicklungstools in Visual Studio werden Validierungsschritte ausgeführt, um die ordnungsgemäße Formatierung des Lösungspakets zu überprüfen. Sie können auch benutzerdefinierte Validierungsschritte für die Funktionen und die Pakete erstellen. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von benutzerdefinierten Funktions-und Paket Validierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
+ Von den SharePoint-Entwicklungstools in Visual Studio werden Validierungsschritte ausgeführt, um die ordnungsgemäße Formatierung des Lösungspakets zu überprüfen. Sie können auch benutzerdefinierte Validierungsschritte für die Funktionen und die Pakete erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von benutzerdefinierten Feature- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
 ## <a name="deployment-conflict-resolution"></a>Auflösung von Bereitstellungs Konflikten
  Beim Bereitstellen einer SharePoint-Lösung können sich unter Umständen Konflikte ergeben, wenn Elemente auf dem Server den gleichen Namen, die gleiche URL oder die gleiche ID besitzen wie ein Element im Lösungspaket. Sie können die Eigenschaft **Bereitstellungs Konfliktlösung** ändern, um Konflikte für Module, Webparts, Listen Instanzen und Inhaltstypen aufzulösen, zu melden oder zu ignorieren.

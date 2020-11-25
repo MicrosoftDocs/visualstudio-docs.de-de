@@ -1,5 +1,7 @@
 ---
 title: Sicherheit für SharePoint-Lösungen | Microsoft-Dokumentation
+description: Entdecken Sie, welche Features Visual Studio integriert, um die Sicherheit von SharePoint-Anwendungen zu verbessern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73983780"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970444"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicherheit für SharePoint-Lösungen
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst die folgenden Funktionen, um die Sicherheit von SharePoint-Anwendungen zu verbessern.
@@ -34,12 +36,12 @@ ms.locfileid: "73983780"
  Das allowpartiallytrust dcaller-Attribut wird jeder SharePoint-Projekt Mappe hinzugefügt, die nicht im globalen Assemblycache des Systems () bereitgestellt wird [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] . Dies schließt Sandkasten Lösungen oder Lösungen ein, die im SharePoint-Anwendungsverzeichnis "bin" bereitgestellt werden. Weitere Informationen finden Sie unter [Sicherheitsänderungen der Version 1 für das Microsoft .NET Framework](/previous-versions/msp-n-p/ff921345(v=pandp.10)) und Bereitstellen von [Webparts in SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
 ## <a name="safe-against-script-property"></a>Sicherheit für Skript Eigenschaft
- *Skript Injektion* ist das Einfügen von potenziell bösartigem Code in Steuerelemente oder Webseiten. Zur Unterstützung des Schutzes von SharePoint 2010-Websites vor der Skript Injektion können Mitwirkende keine Webparts oder deren Eigenschaften standardmäßig anzeigen und bearbeiten. Dieses Verhalten wird von einem SafeControl-Attribut mit dem Namen "safeagainstscript" gesteuert. [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]Legen Sie dieses Attribut in für die untergeordnete Eigenschaft der **sicheren Steuerelement Einträge** eines Projekt Elements vor dem **Skript**fest. Weitere Informationen finden Sie unter [Bereitstellen von Paket-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und Gewusst [wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md).
+ *Skript Injektion* ist das Einfügen von potenziell bösartigem Code in Steuerelemente oder Webseiten. Zur Unterstützung des Schutzes von SharePoint 2010-Websites vor der Skript Injektion können Mitwirkende keine Webparts oder deren Eigenschaften standardmäßig anzeigen und bearbeiten. Dieses Verhalten wird von einem SafeControl-Attribut mit dem Namen "safeagainstscript" gesteuert. [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]Legen Sie dieses Attribut in für die untergeordnete Eigenschaft der **sicheren Steuerelement Einträge** eines Projekt Elements vor dem **Skript** fest. Weitere Informationen finden Sie unter [Bereitstellen von Paket-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) und Gewusst [wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md).
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Benutzerkontensteuerung für Vista und Windows 7
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] enthalten ein Sicherheits Feature, das als Benutzerkontensteuerung (User Account Control, UAC) bezeichnet wird. Zum Entwickeln von SharePoint-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unter [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] muss [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aufgrund der Benutzerkontensteuerung als Systemadministrator ausgeführt werden. Öffnen Sie **im Startmenü das** Kontextmenü für [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , und wählen Sie dann **als Administrator ausführen**aus.
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] enthalten ein Sicherheits Feature, das als Benutzerkontensteuerung (User Account Control, UAC) bezeichnet wird. Zum Entwickeln von SharePoint-Lösungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unter [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] und [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] muss [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aufgrund der Benutzerkontensteuerung als Systemadministrator ausgeführt werden. Öffnen Sie **im Startmenü das** Kontextmenü für [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , und wählen Sie dann **als Administrator ausführen** aus.
 
- Öffnen Sie das Kontext [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Menü, wählen Sie **Eigenschaften**aus, klicken Sie im Dialogfeld **Eigenschaften** auf die Schaltfläche **erweitert** , und aktivieren Sie dann das Kontrollkästchen **als Administrator ausführen** , um die Verknüpfung so zu konfigurieren, dass Sie immer als Administrator ausgeführt wird.
+ Öffnen Sie das Kontext [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Menü, wählen Sie **Eigenschaften** aus, klicken Sie im Dialogfeld **Eigenschaften** auf die Schaltfläche **erweitert** , und aktivieren Sie dann das Kontrollkästchen **als Administrator ausführen** , um die Verknüpfung so zu konfigurieren, dass Sie immer als Administrator ausgeführt wird.
 
  Weitere Informationen finden Sie unter [verstehen und Konfigurieren der Benutzerkontensteuerung in Windows Vista](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10)). und [Windows 7-Benutzerkontensteuerung](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10)).
 
