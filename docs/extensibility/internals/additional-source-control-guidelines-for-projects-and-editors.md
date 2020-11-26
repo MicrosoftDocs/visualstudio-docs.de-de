@@ -1,5 +1,6 @@
 ---
 title: Richtlinien für die Quell Code Verwaltung für Projekte und Editoren
+description: Erfahren Sie mehr über die Richtlinien, die Projekte und Editoren einhalten sollten, um die Quell Code Verwaltung zu unterstützen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037633"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190134"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Weitere Richtlinien zur Quell Code Verwaltung für Projekte und Editoren
 Es gibt eine Reihe von Richtlinien, die von Projekten und Editoren befolgt werden sollten, um die Quell Code Verwaltung zu unterstützen.

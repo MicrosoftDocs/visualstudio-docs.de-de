@@ -1,5 +1,7 @@
 ---
 title: Automatisierungsunterstützung für options Seiten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Ihre benutzerdefinierten Tools-Optionen-Seiten in VSPackages für das Visual Studio-Automatisierungs Modell verfügbar machen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe45238948d5b4cdebbf9f002f6b242515e7622e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e15b1f8bdd27e013e1ef2060d9867a81e8ddde3
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709931"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190030"
 ---
 # <a name="automation-support-for-options-pages"></a>Automatisierungsunterstützung für options Seiten
-VSPackages können benutzerdefinierte Dialogfelder für **Optionen** im **Menü Extras** (Extras**options** Seiten) in bereitstellen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Sie für das Automatisierungs Modell verfügbar machen können.
+VSPackages können benutzerdefinierte Dialogfelder für **Optionen** im **Menü Extras** (Extras **options** Seiten) in bereitstellen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Sie für das Automatisierungs Modell verfügbar machen können.
 
 ## <a name="tools-options-pages"></a>Extras (Menü) Optionen (Seiten)
  Zum Erstellen einer Extras **options** Seite muss ein VSPackage eine Implementierung eines Benutzer Steuer Elements bereitstellen, die über die Implementierung der-Methode des VSPackages an die Umgebung zurückgegeben wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> . (Oder für verwalteten Code die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> Methode.)

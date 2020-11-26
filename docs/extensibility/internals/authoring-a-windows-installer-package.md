@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Windows Installer Pakets | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Windows Installer Paket für Visual Studio erstellen, das aus Datenbanktabellen besteht, die Datei-und Registrierungsdaten enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82c96bdf8e73f7d40b41220524edef022c216f1b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710038"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190121"
 ---
 # <a name="author-a-windows-installer-package"></a>Erstellen eines Windows Installer Pakets
 Daten steuern das Windows Installer Modell. Anstatt ein prozedurales Skript zum Kopieren von Dateien und zum Schreiben von Registrierungs Einträgen zu schreiben, schreiben Sie z. b. Zeilen und Spalten in Datenbanktabellen, die Datei-und Registrierungsdaten enthalten.
@@ -41,7 +43,7 @@ Eine Reihe von Setup Tools von Drittanbietern bieten eine Entwicklungsumgebung f
 
 - InstallShield Limited Edition
 
-   Sie können eine begrenzte Version von InstallShield über das Visual Studio-Dialogfeld " **Neues Projekt** " erhalten. Erweitern Sie **andere Projekttypen** , und wählen Sie dann **Setup und Bereitstellung**aus. Wählen Sie die Vorlage InstallShield aus.
+   Sie können eine begrenzte Version von InstallShield über das Visual Studio-Dialogfeld " **Neues Projekt** " erhalten. Erweitern Sie **andere Projekttypen** , und wählen Sie dann **Setup und Bereitstellung** aus. Wählen Sie die Vorlage InstallShield aus.
 
 - Windows Installer XML-Toolset
 
@@ -49,5 +51,5 @@ Eine Reihe von Setup Tools von Drittanbietern bieten eine Entwicklungsumgebung f
 
    Informationen zu kommerziellen Produkten, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mithilfe von in integriert [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] werden, finden Sie unter [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

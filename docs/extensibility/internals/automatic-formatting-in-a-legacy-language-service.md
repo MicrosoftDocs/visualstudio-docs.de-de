@@ -1,5 +1,7 @@
 ---
 title: Automatische Formatierung in einem Legacy Sprachdienst | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die automatische Formatierung in einem Legacy Sprachdienst, der automatisch einen Code Ausschnitt einfügt, wenn Sie beginnen, ein bekanntes Code Konstrukt einzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a11e9c1fdef60e71f46cee9986d925e876dcac35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 651cecb20604069c6e8ccc5a5c7b983ab43d7384
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709980"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190056"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Automatische Formatierung in einem Legacy Sprachdienst
 Bei der automatischen Formatierung fügt ein Sprachdienst automatisch einen Code Ausschnitt ein, wenn ein Benutzer damit beginnt, ein bekanntes Code Konstrukt einzugeben.

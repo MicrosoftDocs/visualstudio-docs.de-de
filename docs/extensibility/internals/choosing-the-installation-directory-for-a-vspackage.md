@@ -1,5 +1,7 @@
 ---
 title: Auswählen des Installationsverzeichnisses für ein VSPackage | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie das Installationsverzeichnis für ein VSPackage und seine unterstützenden Dateien mithilfe von Faktoren auswählen, z. b. ob es verwaltet oder nicht verwaltet wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011904"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189978"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Auswählen des Installationsverzeichnisses für ein VSPackage
 Ein VSPackage und seine unterstützenden Dateien müssen sich im Dateisystem eines Benutzers befinden. Der Speicherort hängt davon ab, ob das VSPackage verwaltet oder nicht verwaltet ist, ob es sich um ein paralleles Versions Schema und eine Benutzer Auswahl handelt.
@@ -59,7 +61,7 @@ Ein VSPackage und seine unterstützenden Dateien müssen sich im Dateisystem ein
 
 Wenn die VSPackage-dll Ressourcen enthält und der Registrierungs Eintrag **satellitedll\dllname** darauf verweist, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] versucht, Sie in der obigen Reihenfolge zu laden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Auswählen zwischen freigegebenen und versionierten VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Verwalten von VSPackages](../../extensibility/managing-vspackages.md)
 - [Verwalten der Paket Registrierung](/previous-versions/bb166783(v=vs.100))

@@ -1,5 +1,6 @@
 ---
 title: Anwenden von Einstellungen über mehrere Projekt Verbindungen
+description: Erfahren Sie, wie Sie mithilfe eines Quellcodeverwaltungs-Plug-ins Einstellungen über mehrere Projekt Verbindungen anwenden, um einen Batch Vorgang auszuführen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81448760f0417528fd630c4919ce516b32e518c8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd5b7af98470c1d9a82eb0504c333e74de8c004f
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034921"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190108"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Anwendung von Einstellungen über mehrere Projekt Verbindungen hinweg
 Ein Quellcodeverwaltungs-Plug-in, das mithilfe der API-Version 1,2 der Quellcodeverwaltungs-Plug-in erstellt wurde, kann einen Batch Vorgang verwenden, um denselben Quell Code Verwaltungsvorgang für mehrere Projekte oder mehrere Verbindungs Kontexte auszuführen. Batches können verwendet werden, um redundante, pro Projekt geeignete Dialogfelder aus der Benutzer Darstellung auszuschließen.

@@ -1,5 +1,7 @@
 ---
 title: Befehls Verfügbarkeit | Microsoft-Dokumentation
+description: Erfahren Sie, wie der Befehls Kontext, der sich basierend auf dem aktuellen Projekt, dem aktuellen Editor und anderen Faktoren ändert, bestimmt, welche Befehle in Visual Studio verfügbar sind.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca47d9ed9968c101e3b6b859b51c1cd8d7404db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1da4d48b41b4b42a3c3f049f64ca76e1d9eba6eb
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709697"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189939"
 ---
 # <a name="command-availability"></a>Befehls Verfügbarkeit
 
@@ -53,7 +55,7 @@ Wenn noch keine geeignete Befehls Kontext-GUID definiert ist, können Sie eine i
 > [!CAUTION]
 > Stellen Sie sicher, dass das VSPackage keine Auswirkungen auf vorhandene Kontext-GUIDs hat, da andere VSPackages von Ihnen abhängig sein können.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Auswahl Kontext Objekte](../../extensibility/internals/selection-context-objects.md)
 - [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
