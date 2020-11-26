@@ -13,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348683"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040380"
 ---
 # <a name="install-third-party-analyzers"></a>Installieren von Drittanbieteranalysetools
 
-Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers ( *Roslyn* ). Diese Analysen sind immer eingeschaltet. Sie können zusätzliche Analysen entweder als nuget-Pakete oder als Visual Studio-Erweiterungen in *VSIX* -Dateien installieren.
+Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers (*Roslyn*). Diese Analysen sind immer eingeschaltet. Sie können zusätzliche Analysen entweder als nuget-Pakete oder als Visual Studio-Erweiterungen in *VSIX* -Dateien installieren.
 
 ## <a name="to-install-nuget-analyzer-packages"></a>So installieren Sie nuget Analyzer-Pakete
 
@@ -35,7 +35,7 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers ( *Ro
    > [!NOTE]
    > Die Seite "www.nuget.org" für jedes Analysepaket zeigt den Befehl an, der in die **Paket-Manager-Konsole** eingefügt werden soll. Es gibt sogar eine praktische Schaltfläche, um den Text in die Zwischenablage zu kopieren.
 
-   Die Analyzer-Assemblys werden installiert und in **Projektmappen-Explorer** unter **Verweise** -  >  **Analyzers** angezeigt.
+   Die Analyzer-Assemblys werden installiert und in **Projektmappen-Explorer** unter **Verweise**-  >  **Analyzers** angezeigt.
 
 ## <a name="to-install-vsix-analyzers"></a>So installieren Sie VSIX-Analysen
 
@@ -63,7 +63,7 @@ Visual Studio enthält einen Kernsatz von .NET Compiler Platform-Analyzers ( *Ro
 
 2. Erweitern Sie im linken Bereich **Online** , und wählen Sie dann **Visual Studio Marketplace** aus.
 
-3. Geben Sie im Suchfeld den Namen der Analyzer-Erweiterung ein, die Sie installieren möchten. Beispielsweise können Sie [die Microsoft FxCop-Analysen installieren](install-fxcop-analyzers.md#vsix) , um den Code unter anderem auf Sicherheits-und Leistungsprobleme zu überprüfen.
+3. Geben Sie im Suchfeld den Namen der Analyzer-Erweiterung ein, die Sie installieren möchten.
 
 4. Wählen Sie **Herunterladen** aus.
 
@@ -101,4 +101,4 @@ Wenn Sie überprüfen möchten, ob die Erweiterung installiert ist, klicken Sie 
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über Code Analysen in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Installieren von FxCop-Analysetools](../code-quality/install-fxcop-analyzers.md)
+- [Installieren von .net-Analyzern](../code-quality/install-net-analyzers.md)
