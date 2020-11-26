@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "92298590"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189125"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 
@@ -266,7 +266,7 @@ Siehe:
 
 ### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a> Visualisieren von vorhandenem Code: Code Maps
 
-Code Maps zeigen die aktuelle Organisation und die Beziehungen im Code. Elemente werden auf der Code Map durch *Knoten* und Beziehungen durch *Links*dargestellt. Mit Code Maps können Sie die folgenden Arten von Aufgaben ausführen:
+Code Maps zeigen die aktuelle Organisation und die Beziehungen im Code. Elemente werden auf der Code Map durch *Knoten* und Beziehungen durch *Links* dargestellt. Mit Code Maps können Sie die folgenden Arten von Aufgaben ausführen:
 
 - Untersuchen von unbekanntem Code
 
@@ -363,7 +363,7 @@ Ein Klassendiagramm umfasst die folgenden Hauptfunktionen:
 
   - Eine *Enumeration* ist eine Klassifizierung, die eine Liste von literalen Werten enthält.
 
-- *Attribute* sind Werte eines bestimmten Typs, der die einzelnen Instanzen einer *Klassifizierung*beschreiben. Eine Klassifizierung ist ein allgemeiner Name für Typen, Komponenten, Anwendungsfälle und sogar Akteure.
+- *Attribute* sind Werte eines bestimmten Typs, der die einzelnen Instanzen einer *Klassifizierung* beschreiben. Eine Klassifizierung ist ein allgemeiner Name für Typen, Komponenten, Anwendungsfälle und sogar Akteure.
 
 - *Vorgänge* sind Methoden oder Funktionen, die Instanzen einer Klassifizierung ausführen können.
 
@@ -373,13 +373,13 @@ Ein Klassendiagramm umfasst die folgenden Hauptfunktionen:
 
   - Eine *Komposition* ist eine Zuordnung, die eine ganzteilige Beziehung zwischen Klassifizierungen angibt.
 
-    Um Aggregationen oder Kompositionen anzuzeigen, legen Sie die Eigenschaft **Aggregation** für eine Zuordnung fest. Mit**Freigegeben** werden Aggregationen und mit **Verbund** werden Kompositionen angezeigt.
+    Um Aggregationen oder Kompositionen anzuzeigen, legen Sie die Eigenschaft **Aggregation** für eine Zuordnung fest. Mit **Freigegeben** werden Aggregationen und mit **Verbund** werden Kompositionen angezeigt.
 
 - Eine *Abhängigkeit* gibt an, dass durch Änderungen an der Definition einer Klassifizierung möglicherweise auch die Definition einer anderen Klassifizierung geändert wird.
 
 - Eine *Generalisierung* gibt an, dass eine bestimmte Klassifizierung einen Teil ihrer Definition von einer allgemeinen Klassifizierung erbt. Eine *Realisierung* gibt an, dass eine Klasse die Vorgänge und Attribute implementiert, die von einer Schnittstelle bereitgestellt werden.
 
-     Verwenden Sie das Tool **Vererbung** , um diese Beziehungen zu erstellen. Alternativ kann eine Realisierung als *Lollipop*dargestellt werden.
+     Verwenden Sie das Tool **Vererbung** , um diese Beziehungen zu erstellen. Alternativ kann eine Realisierung als *Lollipop* dargestellt werden.
 
 - *Pakete* sind Gruppen von Klassifizierern, Zuordnungen, Lebenslinien, Komponenten und anderen Paketen. *Importbeziehungen* geben an, dass ein Paket alle Definitionen eines anderen Pakets enthält.
 
