@@ -1,5 +1,7 @@
 ---
 title: Bewährte Methoden für die Sicherheit in VSPackages | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die bewährten Methoden für die Sicherheit in einem VSPackage, die grundlegende Einheit der Sicherheit und Bereitstellung für eine Visual Studio-Anwendung.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f81f682271a949954d113ffd2f6228db0de814e8
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012138"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190043"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Bewährte Methoden für die Sicherheit in VSPackages
 Um das auf dem Computer zu installieren [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , müssen Sie in einem Kontext mit Administrator Anmelde Informationen ausgeführt werden. Die grundlegende Einheit der Sicherheit und Bereitstellung einer- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Anwendung ist das [VSPackage](../../extensibility/internals/vspackages.md). Ein VSPackage muss mithilfe von registriert werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , wofür auch administrative Anmelde Informationen erforderlich sind.
@@ -30,6 +32,6 @@ Um das auf dem Computer zu installieren [!INCLUDE[vsipsdk](../../extensibility/i
 
  Weitere Informationen finden Sie unter [Richtlinien für sicheres Programmieren für die .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Add-in-Sicherheit](/previous-versions/1326zbk3(v=vs.140))
 - [DDEX-Sicherheit](/previous-versions/bb163703(v=vs.140))

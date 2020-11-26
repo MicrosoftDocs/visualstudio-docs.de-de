@@ -1,5 +1,7 @@
 ---
 title: 'Prüfliste: Erstellen eines Legacy sprach Dienstanbieter | Microsoft-Dokumentation'
+description: Erfahren Sie mehr über die grundlegenden Schritte zum Erstellen eines Legacy sprach Dienstanbieter für den Visual Studio-Kern-Editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11785dab63cbb6a95ab2d34c5edbfb4525ebf34c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709789"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189991"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Prüfliste: Erstellen eines Legacy sprach Dienstanbieter
 In der folgenden Prüfliste werden die grundlegenden Schritte zusammengefasst, die Sie ausführen müssen, um einen Sprachdienst für den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kern Editor zu erstellen. Um Ihren Sprachdienst in zu integrieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , müssen Sie eine Debug-Ausdrucks Auswertung erstellen. Weitere Informationen finden Sie unter [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in der [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md).

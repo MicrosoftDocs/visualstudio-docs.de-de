@@ -1,5 +1,7 @@
 ---
 title: Erstellungs. Vsct-Dateien | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie vsct-Dateien erstellen, die Menü Elemente, Symbolleisten und andere Benutzeroberflächen Elemente zur integrierten Entwicklungsumgebung (IDE) von Visual Studio hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413908"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190082"
 ---
 # <a name="author-vsct-files"></a>Vsct-Dateien erstellen
 In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von Menü Elementen, Symbolleisten und anderen Elementen der Benutzeroberfläche zur integrierten Entwicklungsumgebung (IDE) von Visual Studio erstellen. Gehen Sie folgendermaßen vor, wenn Sie einem Visual Studio-Paket (VSPackage), das noch keine *vsct* -Datei enthält, Benutzeroberflächen Elemente hinzufügen.
@@ -51,9 +53,9 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
 
 1. Fügen Sie am oberen Rand des- `CommandTable` Elements `Extern` für jede externe Datei, auf die verwiesen werden soll, ein-Element hinzu, und legen Sie das- `href` Attribut auf den Namen der Datei fest. Sie können auf die folgenden Header Dateien verweisen, um auf Visual Studio-Ressourcen zuzugreifen:
 
-   - *Stdidcmd. h* : definiert IDs für alle Befehle, die von Visual Studio verfügbar gemacht werden.
+   - *Stdidcmd. h*: definiert IDs für alle Befehle, die von Visual Studio verfügbar gemacht werden.
 
-   - *Vsshlids. h* : enthält Befehls-IDs für Visual Studio-Menüs.
+   - *Vsshlids. h*: enthält Befehls-IDs für Visual Studio-Menüs.
 
 2. Wenn das Paket Befehle aufruft, die von Visual Studio oder anderen Paketen definiert werden, fügen Sie `UsedCommands` nach dem-Element ein-Element hinzu `Commands` . Füllen Sie dieses Element mit einem [usedcommand](../../extensibility/usedcommand-element.md) -Element für jeden aufzurufenden Befehl auf, der nicht Teil des Pakets ist. Legen `guid` Sie die `id` Attribute und der `UsedCommand` Elemente auf die GUID-und ID-Werte der aufzurufenden Befehle fest.
 
@@ -64,7 +66,7 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
 
 #### <a name="to-declare-ui-elements"></a>So deklarieren Sie Benutzeroberflächen Elemente
 
-1. `Symbols`Fügen Sie im-Element drei [guidsymbol](../../extensibility/guidsymbol-element.md) -Elemente hinzu. Jedes `GuidSymbol` Element verfügt über ein `name` -Attribut und ein- `value` Attribut. Legen Sie das- `name` Attribut so fest, dass es den Zweck des-Elements widerspiegelt. Das `value` Attribut nimmt eine GUID an. (Um eine GUID zu generieren, wählen Sie **im Menü Extras** die Option **GUID erstellen** , und wählen Sie dann **Registrierungs Format** aus.)
+1. `Symbols`Fügen Sie im-Element drei [guidsymbol](../../extensibility/guidsymbol-element.md) -Elemente hinzu. Jedes `GuidSymbol` Element verfügt über ein `name` -Attribut und ein- `value` Attribut. Legen Sie das- `name` Attribut so fest, dass es den Zweck des-Elements widerspiegelt. Das `value` Attribut nimmt eine GUID an. (Um eine GUID zu generieren, wählen Sie **im Menü Extras** die Option **GUID erstellen**, und wählen Sie dann **Registrierungs Format** aus.)
 
      Das erste `GuidSymbol` Element stellt das Paket dar und hat in der Regel keine untergeordneten Elemente. Das zweite `GuidSymbol` Element stellt den Befehlssatz dar und enthält alle Symbole, mit denen die Menüs, Gruppen und Befehle definiert werden. Das dritte `GuidSymbol` Element stellt den Image Speicher dar und enthält Symbole für alle Symbole für die Befehle. Wenn Sie über keine Befehle verfügen, die Symbole verwenden, können Sie das dritte `GuidSymbol` Element weglassen.
 

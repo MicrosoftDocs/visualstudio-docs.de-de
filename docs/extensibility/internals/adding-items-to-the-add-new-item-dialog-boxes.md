@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Elementen zu den Dialog Feldern "Neues Element hinzufügen" | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie im Dialogfeld Neues Element hinzufügen Elemente in Visual Studio hinzufügen, sodass Sie Vorlagen und Projekt Elemente zur Verwendung in Ihren Projekten anzeigen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710219"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190160"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Hinzufügen von Elementen zum Dialogfeld "Neues Element hinzufügen"
 Der Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzufügen** wird mit den Registrierungs Schlüsseln gestartet. Wie in den folgenden Registrierungs Einträgen gezeigt, enthält der Abschnitt **additemtemplates** den Pfad und den Namen des Verzeichnisses, in dem die im Dialogfeld **Neues Element hinzufügen** verfügbaren Elemente abgelegt werden.
@@ -23,7 +25,7 @@ Der Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzuf�
 > [!NOTE]
 > Die Tabelle, die direkt auf das Codesegment folgt, enthält weitere Informationen zum Registrierungs Eintrag.
 
- Dieser Abschnitt befindet sich unter **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**.
+ Dieser Abschnitt befindet sich unter **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
  Die erste GUID ist die CLSID für Projekte dieses Typs. die zweite GUID gibt den registrierten Projekttyp für die Vorlagen zum Hinzufügen von Elementen an:
 
@@ -35,7 +37,7 @@ Der Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzuf�
 
  **SortPriority** = DWORD: 00000064
 
-| Name | type | Daten (aus *RGS* -Datei) | Beschreibung |
+| Name | Typ | Daten (aus *RGS* -Datei) | BESCHREIBUNG |
 |------------------|-----------| - | - |
 | @ (Standard) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | Ressourcen-ID für **Element Vorlagen hinzufügen** . |
 | Val templatesdir | REG_SZ | % TEMPLATE_PATH% \\ &lt; someprojectitems&gt; | Der Pfad der Projekt Elemente, die im Dialogfeld für den Assistenten zum **Hinzufügen eines neuen Elements** angezeigt werden. |
@@ -46,7 +48,7 @@ Der Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzuf�
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Das für **templatesdir**, das *% TEMPLATE_PATH% \\ &lt; &gt; someprojectitems*ist, aufgeführte Verzeichnis ist der Knoten auf der linken Seite der Struktur des Dialog Felds **Neues Element hinzufügen** . Zusätzliche Elemente in der Struktur basieren auf dem Unterverzeichnis innerhalb dieses Stamm Verzeichnisses. Die Dateien, die dem Projekt hinzugefügt werden können, sind die Elemente im rechten Bereich des Dialog Felds **Neues Element hinzufügen** .
+ Das für **templatesdir**, das *% TEMPLATE_PATH% \\ &lt; &gt; someprojectitems* ist, aufgeführte Verzeichnis ist der Knoten auf der linken Seite der Struktur des Dialog Felds **Neues Element hinzufügen** . Zusätzliche Elemente in der Struktur basieren auf dem Unterverzeichnis innerhalb dieses Stamm Verzeichnisses. Die Dateien, die dem Projekt hinzugefügt werden können, sind die Elemente im rechten Bereich des Dialog Felds **Neues Element hinzufügen** .
 
  In der Regel enthält dieser Ordner die Vorlagen Dateien für das Projekt, z. b. eine Vorlagen-HTML oder eine *cpp* -Datei und alle *VSZ* -Dateien zum Starten von Assistenten. Um zu steuern, wie die Elemente angezeigt werden, können Sie auch *VSDIR* -Dateien zum Lokalisieren von Verzeichnisnamen und Symbolen einschließen. Die lokalisierte Zeichenfolge ist die Beschriftung, die im Dialogfeld angezeigt wird, das diesen Knoten in der Struktur des Dialog Felds **Neues Element hinzufügen** darstellt.
 
@@ -77,7 +79,7 @@ Der Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzuf�
 
   Wenn Sie diese Filter Funktionalität implementieren, müssen Sie nicht jedes Element, das ausgeblendet werden soll, eine Tabelle zuordnen. Sie können Elemente einfach in Typen klassifizieren und die Klassifizierungen in der *VSDIR* -Datei oder in Dateien platzieren. Anschließend können Sie alle Elemente mit einer bestimmten Klassifizierung ausblenden, indem Sie die-Schnittstelle implementieren. Auf diese Weise können Sie die Elemente im Dialogfeld **Neues Element hinzufügen** dynamisch festlegen, basierend auf dem Status innerhalb des Projekts.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
 - [CATIDs für Objekte, die in der Regel zum Erweitern von Projekten verwendet werden](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
