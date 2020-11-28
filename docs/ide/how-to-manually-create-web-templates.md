@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Webvorlagen
+description: Erfahren Sie, wie Sie eine Webvorlage manuell erstellen und die Programmiersprache identifizieren, die von der Vorlage verwendet wird.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 8546b1364248b5c419a32e8f8ed40abf0b69fb5a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284177"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597079"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Vorgehensweise: Manuelles Erstellen von Webvorlagen
 

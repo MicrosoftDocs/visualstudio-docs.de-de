@@ -1,5 +1,7 @@
 ---
 title: Verwalten externer Tools
+description: Erfahren Sie, wie Sie neue externe Tools hinzufügen und verwalten können, auf die Sie über das Menü „Extras“ zugreifen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c77ab079a2950d4417c2d00ef74cf86d5c206de7
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591293"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596689"
 ---
 # <a name="manage-external-tools"></a>Verwalten externer Tools
 
@@ -61,18 +63,18 @@ Sie können ein externes Tool hinzufügen, das im Menü **Extras** angezeigt wir
 
 Im Folgenden finden Sie eine Liste der Argumente, die verwendet werden können, wenn Sie ein externes Tool definieren:
 
-|Name|Argument|Beschreibung|
+|Name|Argument|BESCHREIBUNG|
 |----------|--------------|-----------------|
 |Elementpfad|$(ItemPath)|Der vollständige Dateiname der aktuellen Datei (Laufwerk + Pfad + Dateiname).|
 |Elementverzeichnis|$(ItemDir)|Das Verzeichnisses der aktuellen Datei (Laufwerk + Pfad).|
 |Elementdateiname|$(ItemFilename)|Der Dateiname der aktuellen Datei (Dateiname).|
 |Elementerweiterung|$(ItemExt)|Die Dateinamenerweiterung der aktuellen Datei.|
-|Aktuelle Zeile|&(CurLine)|Die aktuelle Zeilenposition des Cursors im Codefenster.|
-|Aktuelle Spalte|&(CurCol)|Die aktuelle Spaltenposition des Cursors im Codefenster.|
+|Aktuelle Zeile|$(CurLine)|Die aktuelle Zeilenposition des Cursors im Codefenster.|
+|Aktuelle Spalte|$(CurCol)|Die aktuelle Spaltenposition des Cursors im Codefenster.|
 |Aktueller Text|$(CurText)|Der ausgewählte Text.|
 |Zielpfad|$(TargetPath)|Der vollständige Dateiname des zu erstellenden Elements (Laufwerk + Pfad + Dateiname).|
-|Target Directory|$(TargetDir)|Das Verzeichnis des zu erstellenden Elements.|
-|Target Name|$(TargetName)|Der Dateiname des zu erstellenden Elements.|
+|Zielverzeichnis|$(TargetDir)|Das Verzeichnis des zu erstellenden Elements.|
+|Zielname|$(TargetName)|Der Dateiname des zu erstellenden Elements.|
 |Zielerweiterung|$(TargetExt)|Die Dateinamenerweiterung zu erstellenden Elements.|
 |Binäres Verzeichnis|$(BinDir)|Der endgültige Position der Binärdatei, die erstellt wird (als Laufwerk + Pfad definiert).|
 |Projektverzeichnis|$(ProjectDir)|Das Verzeichnisses des aktuellen Projekts (Laufwerk + Pfad).|

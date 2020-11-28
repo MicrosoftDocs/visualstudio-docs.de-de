@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Projekt- und Projektmappeneigenschaften
+description: Erfahren Sie, wie Sie die Projekteigenschaften und Projektmappeneigenschaften in Visual Studio verwalten können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -7,18 +9,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7b7b89588e778a142e7dd49e1a3051a9aa188ff1
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591306"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871391"
 ---
 # <a name="manage-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 
 Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens, des Testens und des Bereitstellens steuern. Einige Eigenschaften gibt es für alle Projekttypen, und einige gelten nur für bestimmte Sprachen oder Plattformen. Sie erhalten Zugriff auf die Projekteigenschaften, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten klicken und **Eigenschaften** auswählen. Alternativ können Sie **Eigenschaften** in das Suchfeld in der Menüleiste eingeben und **Eigenschaftenfenster** aus den Suchergebnissen auswählen.
 
-![Projekt-Kontextmenü](../ide/media/vs2015_proj_prop_menu.gif)
+![Kontextmenü „Projekt“](../ide/media/vs2015_proj_prop_menu.gif)
 
 .NET-Projekte haben womöglich außerdem einen Eigenschaftenknoten in der Projektstruktur selbst.
 

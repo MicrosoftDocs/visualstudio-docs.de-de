@@ -1,5 +1,7 @@
 ---
 title: C++-Enumerationen im Klassen-Designer
+description: Erfahren Sie, wie der Klassen-Designer C++-Enum- und bereichsbezogene Enum-Klassentypen unterstützt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b12d270884ca9877d6c1c80780a9ae96324f3af4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114200"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903454"
 ---
 # <a name="c-enumerations-in-class-designer"></a>C++-Enumerationen im Klassen-Designer
 
-Der **Klassen-Designer** unterstützt `enum`-Typen von C++ und bewertete `enum class`-Typen. Beachten Sie folgendes Beispiel:
+Der **Klassen-Designer** unterstützt `enum`-Typen von C++ und bewertete `enum class`-Typen. Dies ist ein Beispiel:
 
 ```cpp
 enum CardSuit {

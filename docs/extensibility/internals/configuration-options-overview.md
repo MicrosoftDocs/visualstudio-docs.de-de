@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Konfigurationsoptionen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Optionen für Projekt Konfigurationen in Visual Studio. Eine Konfiguration ist ein Buildtyp, der mit einem benannten Satz von Eigenschaften und Dateispeicher Orten beschrieben wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5ac25fcef7b942b791402baf17982c9810e92a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709411"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304746"
 ---
 # <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
 Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können mehrere Konfigurationen unterstützen, die erstellt, gedebuggten, ausgeführt und/oder bereitgestellt werden können. Eine Konfiguration ist ein Buildtyp, der mit einem benannten Satz von Eigenschaften beschrieben wird, in der Regel compilerswitches und Dateispeicher Orte. Standardmäßig enthalten neue Lösungen zwei Konfigurationen: *Debug* und *Release*. Diese Konfigurationen können mithilfe ihrer Standardeinstellungen angewendet oder geändert werden, um Ihre spezifischen Anforderungen an Projektmappen und/oder Projektanforderungen zu erfüllen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als direkte Komponente. Projekte müssen jedoch nicht mehrere Konfigurationen unterstützen. Wenn nur eine Konfiguration verfügbar ist, wird diese Konfiguration allen Lösungs Konfigurationen zugeordnet.
@@ -33,12 +35,12 @@ Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können
 |------------------------|----------------------|----------------------|
 |*Debuggen*|\<Debug Win32 settings>|\<Debug Win64 settings>|
 |*Release*|\<Release Win32 settings>|\<Release Win64 settings>|
-|*MyConfig*|–|\<MyConfig Win64 settings>|
+|*MyConfig*|N/V|\<MyConfig Win64 settings>|
 
 > [!NOTE]
 > Sie können keine *myconfig* -Projektmappenkonfiguration erstellen, die eine Win32-Plattform ausschließt, es sei denn, das Projekt, auf das Sie abzielen, unterstützt
 
- Wenn Sie die aktive Konfiguration für eine Lösung ändern, wird der Satz von Projekt Konfigurationen ausgewählt, die in dieser Lösung erstellt, ausgeführt, debuggten oder bereitgestellt werden. Wenn Sie z. b. die aktive Projektmappenkonfiguration von *Release* in *Debug*ändern, werden alle Projekte in dieser Projekt Mappe automatisch mit der Konfiguration des Projekts erstellt, die in der Debugkonfiguration der Projekt Mappe angegeben ist. Die Konfigurationen der Projekte werden auch als *Debug* bezeichnet, es sei denn, der Benutzer hat manuell Änderungen am Configuration Manager der Umgebung vorgenommen.
+ Wenn Sie die aktive Konfiguration für eine Lösung ändern, wird der Satz von Projekt Konfigurationen ausgewählt, die in dieser Lösung erstellt, ausgeführt, debuggten oder bereitgestellt werden. Wenn Sie z. b. die aktive Projektmappenkonfiguration von *Release* in *Debug* ändern, werden alle Projekte in dieser Projekt Mappe automatisch mit der Konfiguration des Projekts erstellt, die in der Debugkonfiguration der Projekt Mappe angegeben ist. Die Konfigurationen der Projekte werden auch als *Debug* bezeichnet, es sei denn, der Benutzer hat manuell Änderungen am Configuration Manager der Umgebung vorgenommen.
 
  Die für jedes Projekt gespeicherten projektmappenkonfigurationseigenschaften enthalten den Projektnamen, den Namen der Projekt Konfiguration, Flags, die angeben, ob erstellt oder bereitgestellt werden soll, und den Namen der Plattform. Weitere Informationen finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md).
 
@@ -68,7 +70,7 @@ Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können
 
   Weitere Informationen zu den Schnittstellen von Konfigurationsobjekten und Konfigurations Anbieter Objekten im vorherigen Diagramm finden Sie unter [Project Configuration Object](../../extensibility/internals/project-configuration-object.md). Außerdem bietet die [Projekt Konfiguration für die Erstellung](../../extensibility/internals/project-configuration-for-building.md) Weitere Informationen zum Konfigurations-Generator und zum Erstellen von Abhängigkeits Objekt-Schnittstellen, und die [Projekt Konfiguration zum Verwalten der Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md) beschreibt die Schnittstellen, die an den Konfigurations Bereitsteller und die Bereitstellungs Abhängigkeits Objekte angehängt sind Zum Schluss beschreibt die [Projekt Konfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md) die Schnittstellen der Ausgabe Gruppe und der Ausgabe Objekte sowie die Verwendung von Eigenschaften Seiten, um Konfigurations abhängige Eigenschaften anzuzeigen und festzulegen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>
 - [Projekt Konfiguration zum aufbauen](../../extensibility/internals/project-configuration-for-building.md)
 - [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)

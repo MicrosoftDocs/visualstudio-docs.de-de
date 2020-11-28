@@ -1,5 +1,7 @@
 ---
 title: Schemareferenz für Codeausschnitte
+description: Erfahren Sie mehr über das XML-Schema für IntelliSense-Codeausschnitte und darüber, wie Sie sie verwenden können, um Ihre Produktivität zu steigern.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183677"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006470"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 

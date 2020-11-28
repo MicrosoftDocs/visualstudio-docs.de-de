@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Vorlagen mit mehreren Projekten
+description: Erfahren Sie, wie Sie Vorlagen mit mehreren Projekten in Visual Studio erstellen, die gleichzeitig als Container für viele Projekte fungieren können.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: efd0808342e38627d0b79b097f36f86a1881dafe
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284411"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597224"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 

@@ -1,5 +1,7 @@
 ---
 title: Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
+description: Lernen Sie, Member Typen in einem Klassendiagramm hinzuzufügen und diese Member im Fenster „Klassendetails“ zu konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 504488bdd08e80c34ebeed727e7b95badf12ca37
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85771049"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903013"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Erstellen und Konfigurieren von Typmembern im Klassen-Designer
 

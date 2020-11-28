@@ -2,17 +2,17 @@
 title: Azure-Community-Support-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 07/29/2019
+ms.date: 11/17/2020
 ms.topic: conceptual
 description: Erfahren Sie mehr über den Azure-Community-Support-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist.
-ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 21f984d3c41ae4f654fea638792b5db4f3c8acb2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353212"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903922"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Azure-Community-Support-Forum in Visual Studio-Abonnements
 Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-Team.  Der Azure-Community-Vorteil bietet Ihnen Zugriff auf eine Reihe von Foren zu verschiedenen Themen rund um Azure.
@@ -53,7 +53,7 @@ Erhalten Sie in ausgewählten Foren der Azure-Community direkte Hilfe vom Azure-
 Die ersten Schritte mit der Azure-Community sind ganz einfach.
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an.
 
-2. Suchen Sie im Abschnitt „Support“ die Kachel „Azure-Community“, und klicken Sie auf den Link **Hilfe erhalten** .
+2. Suchen Sie im Abschnitt „Support“ die Kachel „Azure-Community“, und klicken Sie auf den Link **Hilfe erhalten**.
     > [!div class="mx-imgBorder"]
     >![Kachel für die Azure-Community](_img/vs-azure-community/vs-azure-community-tile.png "Klicken Sie auf der Kachel für die Azure-Community auf die Schaltfläche „Hilfe“, um den Vorgang zu starten.")
 
@@ -70,15 +70,15 @@ Die Verfügbarkeit des Azure-Community-Vorteils hängt wie im Folgenden dargeste
 
 |                                          Abonnementstufe                                           |     Channels      |    Vorteil    | Erneuerbar? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Ein Jahr    |    Ja     |
-|                           Visual Studio Enterprise mit GitHub Enterprise                           | VL, Azure, Retail |   Ein Jahr    |    Ja     |
-|                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Ein Jahr    |    Ja     |
-|                          Visual Studio Professional mit GitHub Enterprise                          | VL, Azure, Retail |   Ein Jahr    |    Ja     |
-|                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Ein Jahr    |    Ja     |
-|                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Ein Jahr    |    Ja     |
-| Visual Studio Enterprise (monatliche Cloud), Visual Studio Professional (monatliche Cloud), NFR<sup>1</sup> |        Alle        | Nicht verfügbar |     Nein     |
+|                           Visual Studio Enterprise (Standard), NFR<sup>1</sup>                            | VL, Azure, Retail |   Verfügbar    |    Ja     |
+|                           Visual Studio Enterprise mit GitHub Enterprise                           | VL, Azure, Retail |   Verfügbar    |    Ja     |
+|                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Verfügbar    |    Ja     |
+|                          Visual Studio Professional mit GitHub Enterprise                          | VL, Azure, Retail |   Verfügbar    |    Ja     |
+|                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Verfügbar    |    Ja     |
+|                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Verfügbar    |    Ja     |
+| Visual Studio Enterprise (monatliche Cloud), Visual Studio Professional (monatliche Cloud)|        Alle        | Nicht verfügbar |     Nein     |
 
-<sup>1</sup>  *Enthält:  Not for Resale (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.

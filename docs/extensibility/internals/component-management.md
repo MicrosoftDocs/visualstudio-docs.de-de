@@ -1,5 +1,7 @@
 ---
 title: Komponenten Verwaltung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Windows Installer Komponenten verwalten, wenn Sie ein VSPackage-Installationsprogramm in Visual Studio erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709334"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304918"
 ---
 # <a name="component-management"></a>Komponenten Verwaltung
 Aufgaben Einheiten in der Windows Installer werden als Windows Installer Komponenten (manchmal als "wics" oder "nur Komponenten" bezeichnet) bezeichnet. Eine GUID identifiziert jedes WIC, bei dem es sich um die grundlegende Einheit für die Installation und die Verweis Zählung für Setups handelt, die Windows Installer verwenden.
@@ -29,7 +31,7 @@ Aufgaben Einheiten in der Windows Installer werden als Windows Installer Kompone
 
 - Verfassen von Dateien und Registrierungs Schlüsseln, die von Versionen gemeinsam genutzt werden, in Ihre eigenen Komponenten.
 
-     Auf diese Weise können Sie Sie problemlos in der nächsten Version verwenden. Beispielsweise können Sie Bibliotheken, die Global registriert sind, Dateierweiterungen, andere in **HKEY_CLASSES_ROOT**registrierte Elemente usw. eingeben.
+     Auf diese Weise können Sie Sie problemlos in der nächsten Version verwenden. Beispielsweise können Sie Bibliotheken, die Global registriert sind, Dateierweiterungen, andere in **HKEY_CLASSES_ROOT** registrierte Elemente usw. eingeben.
 
 - Gruppieren Sie freigegebene Komponenten in separaten Mergemodulen.
 
@@ -47,6 +49,6 @@ Aufgaben Einheiten in der Windows Installer werden als Windows Installer Kompone
 
      Wenn Sie dies tun, werden die freigegebenen Schlüssel überschrieben, wenn ein anderes VSPackage mit Versions Angabe installiert wird. Nachdem Sie die zweite Version entfernt haben, ist die Datei, auf die der Schlüssel verweist, nicht mehr vorhanden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Auswählen zwischen freigegebenen und versionierten VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage-Setup Szenarien](../../extensibility/internals/vspackage-setup-scenarios.md)

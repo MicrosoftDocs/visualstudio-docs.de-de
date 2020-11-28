@@ -1,5 +1,7 @@
 ---
 title: Erstellen und Ausführen eines Auslastungstests
+description: Lernen Sie, einen Auslastungstest zu erstellen, der Komponententests enthält. Auslastungstests werden mithilfe von Visual Studio Enterprise erstellt und ausgeführt.
+ms.custom: SEO-VS-2020
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +12,14 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093632"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598262"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests, der Komponententests enthält.
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests, der Komponententests enthält
 
 In dieser exemplarischen Vorgehensweise erstellen Sie einen Auslastungstest, der Komponententests enthält.
 
@@ -63,7 +65,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>So bearbeiten Sie die Einstellungen für Auslastungstestszenarien
 
-1. Geben Sie im Textfeld **Namen für das Auslastungstestszenario eingeben** **ScenarioSample** ein.
+1. Geben Sie im Textfeld **Namen für das Auslastungstestszenario eingeben****ScenarioSample** ein.
 
      Ein *Szenario* ist ein Gruppierungsmechanismus. Es besteht aus einem Satz von Tests und den Eigenschaften zum Ausführen dieser Tests unter Last.
 
@@ -145,7 +147,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie folgende Aufgaben au
 
 2. Wenn bei der Testsimulation bestimmte Schwellenwerte überschritten werden, weisen Symbole in den Strukturansichtsknoten auf die Schwellenwertverletzung hin. Fehler werden mit einem roten Kreis und Warnungen mit einem gelben Dreieck gekennzeichnet. Sie können einen den Schwellenwert übersteigenden Indikator lokalisieren und anschließend grafisch darstellen, indem Sie das Symbol auf das Diagramm ziehen. Dies kann während der Ausführung des Tests erfolgen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md)

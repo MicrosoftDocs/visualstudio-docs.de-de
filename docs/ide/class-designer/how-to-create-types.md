@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen von Typen mit dem Klassen-Designer'
+description: Lernen Sie, neue Typen für Projekte in C# und Visual Basic zu entwerfen, indem Sie sie in einem Klassendiagramm erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac6e59f4dc6fa68962ac061132e3fab90ec8e955
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770211"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901439"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Vorgehensweise: Erstellen von Typen mit dem Klassen-Designer
 
@@ -40,7 +42,7 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
 
     - **Struktur** (VB) oder **Struct** (C#)
 
-    - **Delegate**
+    - **Delegat**
 
     - **Modul** (nur VB)
 
@@ -61,7 +63,7 @@ Um neue Typen für Projekte in C# und Visual Basic zu entwerfen, erstellen Sie s
     |Klassen, abstrakte Klassen, Strukturen oder Structs|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode), Destruktoren (Methode) und Konstanten, die den Typ definieren|
     |Enumerationen|Feldwerte, die die Enumeration bilden|
     |Schnittstellen|Methoden, Eigenschaften und Ereignisse, die die Schnittstelle bilden|
-    |Delegate|Parameter, die den Delegaten definieren|
+    |Delegat|Parameter, die den Delegaten definieren|
     |Modul|Methoden, Eigenschaften, Felder, Ereignisse, Konstruktoren (Methode) und Konstanten, die das Modul definieren|
 
      Weitere Informationen finden Sie unter [Erstellen von Membern](creating-and-configuring-type-members.md#create-members).

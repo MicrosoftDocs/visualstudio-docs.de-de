@@ -1,5 +1,7 @@
 ---
 title: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
+description: Erfahren Sie, wie Sie eine in einer app.config-Datei definierte Datenquelle für Komponententests verwenden, beginnend mit dem Erstellen einer app.config-Datei, die eine Datenquelle definiert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75776157"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598496"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 
@@ -85,7 +87,7 @@ Die Verbindungszeichenfolgen definieren anbieterspezifische Informationen für d
 
 3. Erstellen Sie im ersten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Verbindung mit einer Microsoft Access-Datenbank:
 
-|Attribut|Werte|
+|attribute|Werte|
 |-|------------|
 |`name`|`"MyJetConn"`|
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
@@ -93,7 +95,7 @@ Die Verbindungszeichenfolgen definieren anbieterspezifische Informationen für d
 
 Erstellen Sie im zweiten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Verbindung mit einem Microsoft Excel-Arbeitsblatt:
 
-|Attribut|Werte|
+|attribute|Werte|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -132,7 +134,7 @@ In diesem Abschnitt definieren Sie zwei Datenquellen für die Verwendung in eine
 
 4. Erstellen Sie im ersten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Microsoft Access-Datenquelle:
 
-|Attribut|Werte|
+|attribute|Werte|
 |-|------------|
 |`name`|`"MyJetDataSource"`|
 |`connectionString`|`"MyJetConn"`|
@@ -141,7 +143,7 @@ In diesem Abschnitt definieren Sie zwei Datenquellen für die Verwendung in eine
 
 Erstellen Sie im zweiten **Hinzufügen**-Element die folgenden Attribute und Werte für eine Microsoft Excel-Datenquelle:
 
-|Attribut|Werte|
+|attribute|Werte|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|
@@ -267,7 +269,7 @@ Nachdem die Datei *app.config* definiert ist, erstellen Sie einen Komponententes
 > [!IMPORTANT]
 > Stellen Sie Elemente wie Datenquellen bereit, damit sie für den Test im Bereitstellungsverzeichnis zugänglich sind.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 - [Vorgehensweise: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md)

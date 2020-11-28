@@ -1,5 +1,7 @@
 ---
 title: Tutorial zu datengesteuerten Tests der programmierten UI
+description: Lernen Sie, datengesteuerte Tests der programmierten UI zu verwenden, um unterschiedliche Bedingungen zu testen, indem Sie die Tests mehrmals mit unterschiedlichen Parameterwerten ausführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595357"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442676"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Erstellen eines datengesteuerten Tests für die codierte UI
 
@@ -33,12 +35,12 @@ Dieses Beispiel erstellt einen Test für die codierte UI, der auf der Anwendung 
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Schritt 1: Erstellen Sie einen Test für die codierte UI
 
-1. Erstellen eines Projekts.
+1. Erstellt ein Projekt.
 
     ![Erstellen eines codierten Benutzeroberflächen-Testprojekts](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Wenn Ihnen die Vorlage **Test der programmierten UI** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.
+   > Wenn Ihnen die Vorlage **Testprojekt der programmierten UI** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.
 
 2. Wählen Sie das **Aufzeichnen der Aktionen** aus.
 
@@ -104,7 +106,7 @@ Dieses Beispiel erstellt einen Test für die codierte UI, der auf der Anwendung 
 
 2. Füllen Sie die *CSV*-Datei mit den folgenden Daten aus:
 
-    |Num1|Num2|Summe|
+    |Num1|Num2|Sum|
     |-|-|-|
     |3|4|7|
     |5|6|11|
@@ -227,13 +229,13 @@ Der Testlauf über die drei Iterationen sollte unter Verwendung der Werte in der
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Frage: Warum kann ich den Code in der Datei „UIMap.Designer“ nicht ändern?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>F: Warum kann ich den Code in der Datei „UIMap.Designer“ nicht ändern?
 
-**Antwort:** Alle Codeänderungen, die Sie an der Datei *UIMapDesigner.cs* vornehmen, werden jedes Mal überschrieben, wenn Sie Code mithilfe des Dialogfelds „UIMap: kodierter UI-Test-Builder“ generieren. In diesem Beispiel sowie in den meisten Fällen können die Codeänderungen, die benötigt werden, um eine Datenquelle in einem Test zu verwenden, an der Quellcodedatei (*CodedUITest1.cs*) des Tests vorgenommen werden.
+**A:** Alle Codeänderungen, die Sie an der Datei *UIMapDesigner.cs* vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem UIMap – Test-Generator für programmierte UI generieren. In diesem Beispiel sowie in den meisten Fällen können die Codeänderungen, die benötigt werden, um eine Datenquelle in einem Test zu verwenden, an der Quellcodedatei (*CodedUITest1.cs*) des Tests vorgenommen werden.
 
 Wenn Sie eine aufgezeichnete Methode ändern müssen, müssen Sie sie in die *UIMap.cs*-Datei kopieren und umbenennen. Die Datei *UIMap.cs* kann verwendet werden, um Methoden und Eigenschaften in der Datei *UIMapDesigner.cs* zu überschreiben. Sie müssen den Verweis auf die ursprüngliche Methode in der Datei *Coded UITest.cs* entfernen und ihn durch den umbenannten Methodennamen ersetzen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

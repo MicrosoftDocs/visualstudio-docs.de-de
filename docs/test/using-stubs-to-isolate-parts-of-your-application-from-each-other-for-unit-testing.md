@@ -1,5 +1,7 @@
 ---
 title: Verwenden von Stubs, um Teile der App für Tests zu isolieren
+description: Informationen über einen Stub, einen kleinen Codeabschnitt, der während des Tests an die Stelle einer anderen Komponente tritt. Durch die Verwendung eines Stubs werden konsistente Ergebnisse zurückgegeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325963"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598561"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
 
@@ -29,7 +31,7 @@ Im Diagramm soll die StockAnalyzer-Komponente getestet werden. Sie verwendet nor
 
 ![Real- und Stub-Klassen beziehen sich auf die gleiche Schnittstelle](../test/media/fakesinterfaces.png)
 
-Da Stubs darauf beruhen, dass Sie Ihren Code auf diese Weise strukturieren, verwenden Sie in der Regel Stubs, um einen Teil der Anwendung von einem anderen zu isolieren. Zum Isolieren dieses Teils von anderen Assemblys wie *System.dll* , die Sie nicht steuern können, werden normalerweise Shims verwendet. Weitere Informationen finden Sie unter [Verwenden von Shims, um für Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Da Stubs darauf beruhen, dass Sie Ihren Code auf diese Weise strukturieren, verwenden Sie in der Regel Stubs, um einen Teil der Anwendung von einem anderen zu isolieren. Zum Isolieren dieses Teils von anderen Assemblys wie *System.dll*, die Sie nicht steuern können, werden normalerweise Shims verwendet. Weitere Informationen finden Sie unter [Verwenden von Shims, um für Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="how-to-use-stubs"></a>Verwendung von Stubs
 
@@ -147,10 +149,10 @@ Um Stubs zu verwenden, müssen Sie zuerst Stub-Typen aus den Schnittstellendefin
 
 #### <a name="add-a-fakes-assembly"></a>Hinzufügen eines Fakes-Assemblys
 
-1. Im **Projektmappen-Explorer** : 
+1. Im **Projektmappen-Explorer**: 
     - Erweitern Sie für ein älteres .NET Framework-Projekt (kein SDK-Format) den Knoten **Verweise** Ihres Projekts für den Komponententest.
     ::: moniker range=">=vs-2019"
-    - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework oder .NET Core unter **Assemblys** , **Projekte** oder **Pakete** den Knoten **Abhängigkeiten** , um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
+    - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework oder .NET Core unter **Assemblys**, **Projekte** oder **Pakete** den Knoten **Abhängigkeiten**, um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
     ::: moniker-end
     - Wenn Sie in Visual Basic arbeiten, müssen Sie auf der Symbolleiste im **Projektmappen-Explorer** auf **Alle Dateien anzeigen** klicken, um den Knoten **Verweise** anzuzeigen.
 

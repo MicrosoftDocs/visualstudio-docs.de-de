@@ -1,5 +1,7 @@
 ---
 title: CodeIndex-Befehl
+description: Erfahren Sie, wie Sie den CodeIndex-Befehl verwenden können, um die Codeindizierung auf Azure DevOps Server (früher als Team Foundation Server bezeichnet) zu verwalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928488"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901179"
 ---
 # <a name="codeindex-command"></a>CodeIndex-Befehl
 
@@ -47,8 +49,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Option**|**Beschreibung**|
 |----------------| - |
 |**/indexingStatus**|Zeigen Sie den Status und die Konfiguration des Codeindexdiensts an.|
-|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**: Indizierung aller Changesets beginnen.<br />-   **off**: Indizierung aller Changesets beenden.<br />-   **keepupOnly**: Indizierung zuvor erstellter Changesets beenden und mit der Indizierung nur der neuen Changesets beginnen.|
-|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Sie können das Platzhalterzeichen (*) am Anfang, am Ende oder an beiden Enden des Serverpfads verwenden.|Gibt eine Liste mit Codedateien und ihren Pfaden an, die nicht indiziert werden sollen.<br /><br /> -   **add**: Die Datei, die Sie nicht indizieren möchten, zur Liste der ignorierten Dateien hinzufügen.<br />-   **remove**: Die Datei, die Sie indizieren möchten, aus der Liste der ignorierten Dateien entfernen.<br />-   **removeAll**: Die Liste der ignorierten Dateien wird geleert und die Indizierung aller Dateien begonnen.<br />-   **view**: Alle Dateien anzeigen, die nicht indiziert werden.|
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Indizierung aller Changesets beginnen.<br />-   **off**: Indizierung aller Changesets beenden.<br />-   **keepupOnly**: Indizierung zuvor erstellter Changesets beenden und mit der Indizierung nur der neuen Changesets beginnen.|
+|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Sie können das Platzhalterzeichen (*) am Anfang, am Ende oder an beiden Enden des Serverpfads verwenden.|Gibt eine Liste mit Codedateien und ihren Pfaden an, die nicht indiziert werden sollen.<br /><br /> -   **add**: Die Datei, die Sie nicht indizieren möchten, zur Liste der ignorierten Dateien hinzufügen.<br />-   **remove**: Die Datei, die Sie indizieren möchten, aus der Liste der ignorierten Dateien entfernen.<br />-   **removeAll**: Die Liste der ignorierten Dateien wird geleert und die Indizierung aller Dateien begonnen.<br />-   **view**: Alle Dateien anzeigen, die nicht indiziert werden.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Zeigt die angegebene Anzahl der Dateien an, die die angegebene Größe in KB überschreitet. Sie können dann mithilfe der Option **/ignoreList** diese Dateien von der Indizierung ausschließen.|
 |**/reindexAll**|Zuvor indizierte Daten werden gelöscht, und die Indizierung wird neu gestartet.|
 |**/destroyCodeIndex [/noPrompt]**|Der Codeindex wird gelöscht, und alle indizierten Daten werden entfernt. Erfordert keine Bestätigung, wenn Sie die Option **/noPrompt** verwenden.|
@@ -124,5 +126,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
+- [Ermitteln von Änderungen am Code und anderer Verläufe mit CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
 - [Managing server configuration with TFSConfig (Verwalten der Serverkonfiguration mit TFSConfig)](/azure/devops/server/command-line/tfsconfig-cmd)

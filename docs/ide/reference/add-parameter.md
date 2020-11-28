@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen eines Parameters zu einer Methode mit einer Schnellaktion
+description: Lernen Sie, mit einer Schnellaktion einer Methode automatisch einen Parameter basierend auf der Verwendung hinzuzufügen und zu deklarieren.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c2582228426afcefdb2587d646a8668f622309c6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595864"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871300"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Hinzufügen eines Parameters zu einer Methode mit einer Schnellaktion
 
@@ -28,7 +30,7 @@ Diese Codegenerierung gilt für:
 
 **Warum:** Sie können den Parameter der Methodendeklaration vor ihrem Aufruf hinzufügen, aber diese Funktion fügt ihn automatisch basierend auf einem Methodenaufruf hinzu.
 
-## <a name="how-to-use-it"></a>Verwendungsweise
+## <a name="how-to-use-it"></a>Verwendung
 
 1. Fügen Sie einem Methodenaufruf ein zusätzliches Argument hinzu.
 

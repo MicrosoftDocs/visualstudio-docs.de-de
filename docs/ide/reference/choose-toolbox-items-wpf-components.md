@@ -1,5 +1,7 @@
 ---
 title: Toolboxelemente auswählen, WPF-Komponenten
+description: Erfahren Sie, wie Sie die Registerkarte „WPF-Komponenten“ verwenden können, um die Windows Presentation Foundation-Steuerelemente anzuzeigen, die auf dem lokalen Computer zur Auswahl stehen.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099348"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871326"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Toolboxelemente auswählen, WPF-Komponenten
 
@@ -53,15 +55,15 @@ Zeigt den Speicherort der .NET-Assembly an. Der Standardspeicherort für alle As
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
-### <a name="filter"></a>Filter
+### <a name="filter"></a>Filtern
 
 Filtert die Liste der WPF-Steuerelemente auf Grundlage der Zeichenfolge, die Sie im Textfeld bereitstellen. Alle Übereinstimmungen aus den vier Spalten werden angezeigt.
 
-**Clear** (Löschen)
+**Clear** (Deaktiviert)
 
 Löscht die Filterzeichenfolge.
 
-**Browse** (Durchsuchen)
+**Durchsuchen**
 
 Öffnet das Dialogfeld **Öffnen**, mit dem Sie zu Assemblys navigieren können, die WPF-Steuerelemente enthalten. Hier können Sie Assemblys laden, die sich nicht im globalen Assemblycache befinden.
 
@@ -81,7 +83,7 @@ Wenn Entwurfszeit-Metadaten auf das benutzerdefinierte Steuerelement angewendet 
 
 Sie können direkt in der XAML-Ansicht auf die Steuerelemente verweisen, indem Sie den Namespace und die Assembly für das Steuerelement zuordnen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Werkzeugkasten](../../ide/reference/toolbox.md)
 - [Erste Schritte mit WPF](../../designers/getting-started-with-wpf.md)

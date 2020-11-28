@@ -1,5 +1,7 @@
 ---
 title: Befehl "Vorhandenes Projekt hinzufügen"
+description: Informieren Sie sich über den Befehl „Vorhandenes Projekt hinzufügen“ und darüber, wie er ein vorhandenes Projekt einer aktuellen Projektmappe hinzufügt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2c12106621599d428e9a701de9ba5e468b5e312a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595877"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871001"
 ---
 # <a name="add-existing-project-command"></a>Befehl "Vorhandenes Projekt hinzufügen"
 Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu.
@@ -37,7 +39,7 @@ Wenn das `filename`-Argument Leerzeichen enthält, muss es in Anführungszeichen
 
 Wenn kein Dateiname angegeben ist, öffnet der Befehl das Dialogfeld „Datei“, damit der Benutzer ein Projekt auswählen kann.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.
 
 ## <a name="example"></a>Beispiel
@@ -52,4 +54,4 @@ In diesem Beispiel wird das [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
 title: Vollbildmodus und Modus für virtuelle Leerzeichen
+description: Erfahren Sie, wie Sie die Visual Studio-Editor-Modi so verwalten können, dass alle Tools und Fenster für Sie optimal angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -24,14 +26,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f8f86d635e1e57d82dd2d18084c91a9267f9a0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b86859f5f5718871499bb1f3e2014da59f956db
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284203"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597144"
 ---
-# <a name="how-to-manage-editor-modes"></a>Vorgehensweise: Verwalten von Bearbeitungsmodi
+# <a name="how-to-manage-editor-modes"></a>Vorgehensweise: Verwalten von Editormodi
 
 Sie können den Visual Studio-Code-Editor in verschiedenen Anzeigemodi verwenden.
 
@@ -61,7 +63,7 @@ Im Modus für **virtuelle Leerzeichen** werden Leerzeichen am Ende jeder Codezei
     > [!NOTE]
     > **Virtuelle Leerzeichen** sind im Modus **Spaltenauswahl** aktiviert. Wenn der Modus für **virtuelle Leerzeichen** nicht aktiviert ist, wird die Einfügemarke vom Ende einer Zeile direkt zum ersten Zeichen der nächsten verschoben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen von Fensterlayouts in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

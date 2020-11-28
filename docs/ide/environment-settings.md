@@ -1,5 +1,7 @@
 ---
 title: Umgebungseinstellungen
+description: Erfahren Sie mehr über die Visual Studio-Umgebungseinstellungen, und wie Sie sie so anpassen können, dass sie für den Typ Ihrer Entwicklung optimal sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e38505b800037be63b326003bfa6c7fc5396126
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313028"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006652"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Umgebungseinstellungen für Visual Studio
 
@@ -23,7 +25,7 @@ Die folgenden Einstellungssammlungen sind verfügbar:
 - Allgemein
 - JavaScript
 - Visual Basic
-- Visual C#
+- Visual C#
 - Visual C++
 - Webentwicklung
 - Webentwicklung (nur Code)

@@ -1,5 +1,6 @@
 ---
 title: Tastenkombinationen für häufig verwendete Befehle
+description: Erfahren Sie mehr über die Tastenkombinationen, die die am häufigsten verwendeten Befehle von Visual Studio aufrufen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045661"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006483"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Beliebte Tastenkombinationen für Visual Studio
 
@@ -24,7 +25,7 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 > [!NOTE]
 > Sie können die [Tastenkombination für jeden Befehl nachschlagen](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md), indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** erweitern und dann auf **Tastatur** klicken.
 
-## <a name="build"></a>Build
+## <a name="build"></a>Erstellen
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------| - |
@@ -33,7 +34,7 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |Build.Compile|**STRG+F7** [Global]|
 |Build.RunCodeAnalysisonSolution|**ALT+F11** [Global]|
 
-## <a name="debug"></a>Debuggen
+## <a name="debug"></a>Debug
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------| - |
@@ -58,9 +59,9 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------| - |
 |Edit.BreakLine|**EINGABETASTE** [Text-Editor, Berichts-Designer, Windows Forms-Designer]<br /><br />oder **UMSCHALT+EINGABETASTE** [Text-Editor]|
-|Edit.CollapseToDefinitions|**STRG+M** , **STRG+O** [Text-Editor]|
-|Edit.CommentSelection|**STRG+K** , **STRG+C** [Text-Editor]|
-|Edit.CompleteWord|**ALT+NACH-RECHTS-TASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+K** , **W** [Workflow-Designer]<br /><br />oder **STRG+K, STRG+W** [Workflow-Designer]|
+|Edit.CollapseToDefinitions|**STRG+M**, **STRG+O** [Text-Editor]|
+|Edit.CommentSelection|**STRG+K**, **STRG+C** [Text-Editor]|
+|Edit.CompleteWord|**ALT+NACH-RECHTS-TASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+K**, **W** [Workflow-Designer]<br /><br />oder **STRG+K, STRG+W** [Workflow-Designer]|
 |Edit.Copy|**STRG+C** [Global]<br /><br />oder **STRG+EINFG** [Global]|
 |Edit.Cut|**STRG+X** [Global]<br /><br />oder **UMSCHALT+ENTF** [Global]|
 |Edit.Delete|**ENTF** [Global, Team Explorer]<br /><br />oder **UMSCHALT+ENTF** [Sequenzdiagramm, UML-Aktivitäts-Diagramm, Ebenendiagramm]<br /><br />oder **STRG+ENTF** [Klassendiagramm]|
@@ -76,7 +77,7 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**STRG+D** [Global]|
 |Edit.GoToNextLocation|**F8** [Global]|
-|Edit.InsertSnippet|**STRG+K** , **STRG+X** [Global]|
+|Edit.InsertSnippet|**STRG+K**, **STRG+X** [Global]|
 |Edit.InsertTab|**TAB** [Berichts-Designer, Windows Forms-Designer, Text-Editor]|
 |Edit.LineCut|**STRG+L** [Text-Editor]|
 |Edit.LineDownExtendColumn|**UMSCHALT+ALT+NACH-UNTEN-TASTE** [Text-Editor]|
@@ -120,14 +121,14 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |File.SaveSelectedItems|**STRG+S** [Global]|
 |File.ViewinBrowser|**STRG+UMSCHALT+W** [Global]|
 
-## <a name="project"></a>Projekt
+## <a name="project"></a>Project
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------| - |
 |Project.AddExistingItem|**UMSCHALT+ALT+A** [Global]|
 |Project.AddNewItem|**STRG+UMSCHALT+A** [Global]|
 
-## <a name="refactor"></a>Umgestalten
+## <a name="refactor"></a>Refactoring
 
 |Befehl|Tastenkombination [Kontext]|
 |-------------| - |
@@ -139,7 +140,7 @@ Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfen
 |-------------| - |
 |Tools.AttachtoProcess|**STRG+ALT+P** [Global]|
 
-## <a name="view"></a>Ansicht
+## <a name="view"></a>Sicht
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------| - |

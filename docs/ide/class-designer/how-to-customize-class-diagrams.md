@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Anpassen von Klassendiagrammen (Klassen-Designer)'
+description: Lernen Sie, die Art zu ändern, in der Klassendiagramme Informationen anzeigen, und das gesamte Diagramm oder die einzelnen Typen auf der Entwurfsoberfläche anzupassen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05f0b20307ac0802c4c4350588f5dc0c47cb3b6b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770183"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901426"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Vorgehensweise: Anpassen von Klassendiagrammen
 

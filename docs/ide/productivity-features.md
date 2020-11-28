@@ -1,5 +1,7 @@
 ---
 title: Produktivitätsleitfaden
+description: Erfahren Sie mehr über die Tastenkombinationen und Produktivitätsfunktionen in Visual Studio, die Ihnen helfen können, Code effizient zu schreiben, Code zu Debuggen und Fehler zu behandeln.
+ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808141"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870871"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Produktivitätsleitfaden für Visual Studio
 

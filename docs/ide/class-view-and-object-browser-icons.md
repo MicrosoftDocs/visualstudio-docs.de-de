@@ -1,5 +1,7 @@
 ---
 title: Symbole in der Klassenansicht und im Objektbrowser
+description: Erfahren Sie, wie Klassenansicht und Objektkatalog Symbole anzeigen, die Codeentitäten darstellen, z. B. Namespaces, Klassen, Funktionen und Variablen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,18 +18,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285144"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904000"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Symbole in der Klassenansicht und im Objektkatalog
 
 Die **Klassenansicht** und der **Objektkatalog** zeigen Symbole an, die Codeentitäten darstellen, z.B. Namespaces, Klassen, Funktionen und Variablen. In der folgenden Tabelle werden die Symbole dargestellt und beschrieben.
 
-|Symbol|Beschreibung|Symbol|Beschreibung|
+|Symbol|BESCHREIBUNG|Symbol|Beschreibung|
 |----------|-----------------|----------|-----------------|
 |![Symbol "Namespace"](../ide/media/vxnamespace_icon.gif)|Namespace|![Symbol "Deklaration"](../ide/media/vxmethod_icon.gif)|Methode oder Funktion|
 |![Symbol "Klasse"](../ide/media/vxclass_icon.gif)|Klasse|![Symbol "Operator"](../ide/media/vxoperator_icon.gif)|Operator|

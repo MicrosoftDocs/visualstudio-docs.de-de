@@ -1,5 +1,7 @@
 ---
 title: Auslastungstest-Indikatorensätze
+description: Lernen Sie, durch Verwalten des Auslastungstest-Editors Indikatorensätze zu verwalten, indem Sie die Computer auswählen und Indikatorensätze zuweisen, die auf jedem Computer gesammelt werden sollen.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,16 +15,16 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eeb99d58a9fc0547d118c529878d8b02cc83dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15d04d105264d07a1f883c5b67ce57c8590375a8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287687"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440012"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Verwalten von Indikatorensätzen mithilfe des Auslastungstest-Editors
 
-Wenn Sie mithilfe des **Assistenten für neuen Auslastungstest** einen Auslastungstest erstellen, fügen Sie einen anfänglichen Indikatorensatz hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest.
+Wenn Sie mithilfe des **Assistenten für neuen Auslastungstest** einen Auslastungstest erstellen, fügen Sie einen anfänglichen Satz von Indikatoren hinzu. Dadurch erhalten Sie einen Satz vordefinierter Indikatorensätze für den Auslastungstest.
 
 > [!NOTE]
 > Bei der Verteilung der Auslastungstests auf mehrere Remotecomputer werden Indikatoren für Controller und Agents den Controller- und Agent-Indikatorensätzen zugeordnet. Weitere Informationen zur Verwendung von Remotecomputern im Auslastungstest finden Sie unter [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md).
@@ -50,7 +52,7 @@ Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die 
     > [!NOTE]
     > Dies gilt nur, wenn der Auslastungstest mehrere Testlaufeinstellungen enthält.
 
-4. (Optional) Klicken Sie auf **Hinzufügen**, um einen neuen zu überwachenden Computer hinzuzufügen. Sie werden aufgefordert, einen Namen einzugeben. Geben Sie den Namen eines Computers ein. Unter dem neuen Eintrag werden Knoten angezeigt. Zum Beispiel **ASP.NET**, **IIS**, **SQL** und andere. Aktivieren Sie die Kontrollkästchen vor den Knoten, die Sie auswählen möchten. Die neuen Indikatoren werden im Bereich **Vorschau für Auswahl** angezeigt.
+4. (Optional) Klicken Sie auf **Hinzufügen**, um einen neuen zu überwachenden Computer hinzuzufügen. Sie werden zur Eingabe eines Namens aufgefordert. Geben Sie den Namen eines Computers ein. Unter dem neuen Eintrag werden Knoten angezeigt. Zum Beispiel **ASP.NET**, **IIS**, **SQL** und andere. Aktivieren Sie die Kontrollkästchen vor den Knoten, die Sie auswählen möchten. Die neuen Indikatoren werden im Bereich **Vorschau für Auswahl** angezeigt.
 
 5. (Optional) Geben Sie im Textfeld **Computertags** ein Tag ein, das dem Computer zugeordnet werden soll, z. B. "TestMachine12 in lab3".
 

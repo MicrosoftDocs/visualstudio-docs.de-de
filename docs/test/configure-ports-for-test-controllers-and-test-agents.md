@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren von Ports für Testcontroller und Test-Agents
+description: Lernen Sie, die vom Testcontroller, Test-Agent und Client verwendeten standardmäßigen Eingangsports zu ändern, um Konflikte mit anderer Software zu vermeiden.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7889feffc41d6bb64b85b4ea95a17a4a986d22df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2726d489c0c67bffb11bc59357f6ad107a6c94ba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288818"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441567"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurieren von Ports für Testcontroller und Test-Agents
 

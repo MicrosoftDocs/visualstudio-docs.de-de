@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren eines ASP.NET-Profilers für Auslastungstests
+description: Lernen Sie, den Adapter für diagnostische Daten des ASP.NET-Profilers zu verwenden, um ASP.NET-Profilerinformationen zu sammeln.
+ms.custom: SEO-VS-2020
 ms.date: 10/13/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4f82f8f4c518a9c72399b6e28a01d112f5678c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baea8be1da9a6dd89c06aa328bf579974503921f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288207"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442325"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen in Visual Studio
 

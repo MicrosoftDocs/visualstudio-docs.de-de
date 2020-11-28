@@ -1,5 +1,7 @@
 ---
 title: Befehls Verträge in Interop-Assemblys | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den grundlegenden Vertrag für die Verarbeitung von Befehlen über die Microsoft. VisualStudio. OLE. Interop. IOleCommandTarget-Schnittstelle.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f20a4f479d62cd1b64c3b13ff6e1a949656a668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d655bfb3e6f2206156cd3a6d091ea04f18afe91a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709688"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304904"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Befehls Verträge in Interop-Assemblys
 Der grundlegende Vertrag für die Handhabung von Befehlen über die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle besteht darin, dass die Umgebung die-Methode aufruft, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> um zu bestimmen, ob der Befehl unterstützt wird, und, falls unterstützt, seinen Zustand und Text zu bestimmen. Dann ruft die Umgebung die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode auf, um den Befehl auszuführen.
@@ -27,7 +29,7 @@ Der grundlegende Vertrag für die Handhabung von Befehlen über die- <xref:Micro
 
  In Fällen, in denen-Befehle innerhalb eines Hierarchie Fensters funktionieren müssen, muss die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle verwendet werden. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> -Schnittstelle verfügt über einen ähnlichen Vertrag mit ähnlichen Methoden: <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Befehls Routing in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
 - [Befehls Implementierung](../../extensibility/internals/command-implementation.md)

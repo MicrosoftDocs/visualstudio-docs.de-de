@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Lokalisieren einer Funktion | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie Featuretitel und Beschreibungen in SharePoint lokalisieren, indem Sie hart codierte Zeichen folgen Werte durch Ausdrücke ersetzen, die auf lokalisierte Ressourcen verweisen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016141"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305199"
 ---
-# <a name="how-to-localize-a-feature"></a>Vorgehensweise: Lokalisieren einer Funktion
+# <a name="how-to-localize-a-feature"></a>How to: Lokalisieren eines Features
   Standardmäßig verwenden Funktions Titel und Beschreibungen hart codierte Zeichen folgen Werte. Um den Titel und die Beschreibung der Funktion zu lokalisieren, ersetzen Sie die Zeichen folgen durch Ausdrücke, die auf lokalisierte Ressourcen verweisen.
 
 ## <a name="localize-a-feature"></a>Lokalisieren einer Funktion
 
 #### <a name="to-localize-a-feature"></a>So lokalisieren Sie ein Feature
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Knoten **Feature1** , und wählen Sie dann **Funktions Ressource hinzufügen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Knoten **Feature1** , und wählen Sie dann **Funktions Ressource hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Ressource hinzufügen** in der Liste die Option **invariante Sprache** aus, als Kultur für die Ressourcen Datei der Standard Sprachfunktion.
 
@@ -51,14 +53,14 @@ ms.locfileid: "86016141"
 
 7. Drücken Sie die Taste **F5** , um die Anwendung zu erstellen und auszuführen.
 
-8. Öffnen Sie in SharePoint das Menü **Website Aktionen** , wählen Sie **Website Einstellungen**aus, und wählen Sie dann im Abschnitt **Website Aktionen** den Link **Website Features verwalten** aus.
+8. Öffnen Sie in SharePoint das Menü **Website Aktionen** , wählen Sie **Website Einstellungen** aus, und wählen Sie dann im Abschnitt **Website Aktionen** den Link **Website Features verwalten** aus.
 
 9. Legen Sie die Anzeigesprache in SharePoint auf eine Sprache fest, die nicht der Standardsprache entspricht.
 
      Der lokalisierte Titel und die Beschreibung der Funktion werden in der Anwendung angezeigt. Zum Anzeigen lokalisierter Ressourcen muss auf dem SharePoint-Server ein Sprachpaket installiert sein, das der Kultur der Ressourcendatei entspricht.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)
-- [Vorgehensweise: Hinzufügen einer Ressourcen Datei](../sharepoint/how-to-add-a-resource-file.md)
-- [Gewusst wie: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)
-- [Vorgehensweise: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)
+- [How to: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)
+- [How to: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)
+- [How to: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)

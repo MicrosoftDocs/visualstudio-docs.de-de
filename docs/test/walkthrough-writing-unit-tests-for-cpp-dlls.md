@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Schreiben von Komponententests für C++-DLLs'
+description: Erfahren Sie, wie Sie eine native C++-DLL mithilfe der Test-First-Methode entwickeln können. Beginnen Sie, indem Sie ein natives Testprojekt erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,16 +9,16 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816006"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598405"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
-In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C++-DLL mithilfe der Test-First-Methode entwickeln können. Die grundlegenden Schritte werden im Folgenden beschrieben:
+In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C++-DLL mithilfe der Test-First-Methode entwickeln können. Die grundlegenden Schritte lauten wie folgt:
 
 1. [Erstellen Sie eines nativen Testprojekts](#create_test_project). Das Testprojekt befindet sich in derselben Projektmappe wie das DLL-Projekt.
 
@@ -36,7 +38,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 ## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> Ein natives Komponententestprojekt erstellen
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
      **Visual Studio 2017 und früher**: Erweitern Sie **Installiert** > **Vorlagen** > **Visual C++**  > **Test**.
      **Visual Studio 2019**: Legen Sie **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein.
@@ -51,7 +53,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
      Beachten Sie Folgendes:
 
-    - Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}`verwendet wird.
+    - Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}` verwendet wird.
 
          Sie müssen keine herkömmliche Funktionssignatur schreiben. Die Signatur wird durch das Makro TEST_METHOD erstellt. Das Makro generiert eine Instanzfunktion ohne Rückgabe. Es generiert außerdem eine statische Funktion, die Informationen zur Testmethode zurückgibt. Diese Informationen ermöglichen dem Test-Explorer, die Methode zu finden.
 
@@ -78,7 +80,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
          Der **Test-Explorer** wird angezeigt.
 
-         Der Test wird unter **Bestandene Tests**angezeigt.
+         Der Test wird unter **Bestandene Tests** angezeigt.
 
          ![Komponententest-Explorer mit einem bestandenen Test](../test/media/utecpp04.png)
 
@@ -92,7 +94,7 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2019 ers
 
      In dieser exemplarischen Vorgehensweise wird das Projekt `RootFinder`benannt.
 
-2. Drücken Sie **Erstellen**. Wählen Sie im nächsten Dialogfeld unter **Anwendungstyp** **Dynamic Link Library (dll)** aus, und aktivieren Sie außerdem **Symbole exportieren**.
+2. Klicken Sie auf **Erstellen**. Wählen Sie im nächsten Dialogfeld unter **Anwendungstyp****Dynamic Link Library (dll)** aus, und aktivieren Sie außerdem **Symbole exportieren**.
 
      Die Option **Symbole exportieren** generiert ein komfortables Makro, das Sie verwenden können, um exportierte Methoden zu deklarieren.
 
@@ -366,10 +368,10 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
 
    Sie können auch eine Untergrenze der Codeabdeckung vorgeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen von Komponententests zu vorhandenen C++-Anwendungen](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
-- [Exemplarische Vorgehensweise: Creating and using a dynamic link library (C++) (Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++))](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
-- [Importieren und Exportieren](/cpp/build/importing-and-exporting)
+- [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [Importieren und exportieren](/cpp/build/importing-and-exporting)

@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Tests der programmierten UI
+description: Erfahren Sie, wie Sie einen Test der programmierten UI für eine Windows Presentation Framework-App verwenden, und lernen Sie Lösungen für Tests mit Timingproblemen und Refactoring von Steuerelementen kennen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f36704405776a790c3ec634856f54ee51bc23dc6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592060"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598535"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI
 
@@ -158,7 +160,7 @@ In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einen Test der pro
 
 1. Wählen Sie im Menü **Test** **Windows** aus, und klicken Sie dann auf **Test-Explorer**.
 
-2. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
+2. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen** aus.
 
 3. Finden Sie in der Datei *CodedUITest1.cs* die Methode **CodedUITestMethod**, klicken Sie mit der rechten Maustaste, und wählen Sie **Test ausführen** aus, oder führen Sie den Test mit dem **Test-Explorer** aus.
 

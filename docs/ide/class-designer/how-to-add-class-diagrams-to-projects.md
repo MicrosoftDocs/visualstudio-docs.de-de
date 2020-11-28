@@ -1,5 +1,6 @@
 ---
 title: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)
+description: Lernen Sie, Klassen und andere Typen zu entwerfen, zu bearbeiten und umzugestalten und Ihrem C#-, Visual Basic- oder C++-Projekt ein Klassendiagramm hinzuzufügen.
 ms.custom: SEO-VS-2020
 ms.date: 05/08/2018
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa336672dce538c5bfe07cd8ae7b1a4c5771cbd
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 2fbde07ec9825f094777f7e9b962e8394595e180
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102552"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902999"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten
 
@@ -39,7 +40,7 @@ Wenn Sie die Komponente **Klassen-Designer** nicht installiert haben, befolgen S
 
    ![Klassen-Designer-Komponente im Visual Studio-Installer](media/class-designer-component.png)
 
-   Die **Klassen-Designer** -Komponente wird daraufhin installiert.
+   Die **Klassen-Designer**-Komponente wird daraufhin installiert.
 
 ## <a name="add-a-blank-class-diagram-to-a-project"></a>Hinzufügen eines leeren Klassendiagramms zu einem Projekt
 
@@ -47,7 +48,7 @@ Wenn Sie die Komponente **Klassen-Designer** nicht installiert haben, befolgen S
 
    Das Dialogfeld **Neues Element hinzufügen** wird geöffnet.
 
-2. Erweitern Sie **Gemeinsame Elemente** > **Allgemein** , und wählen Sie dann aus der Vorlagenliste **Klassendiagramm** aus. Suchen Sie für Visual C++-Projekte in der Kategorie **Hilfsprogramm** nach der Vorlage **Klassendiagramm**.
+2. Erweitern Sie **Gemeinsame Elemente** > **Allgemein**, und wählen Sie dann aus der Vorlagenliste **Klassendiagramm** aus. Suchen Sie für Visual C++-Projekte in der Kategorie **Hilfsprogramm** nach der Vorlage **Klassendiagramm**.
 
    > [!NOTE]
    > Wenn Sie die Vorlage **Klassendiagramm** nicht sehen, [befolgen Sie diese Schritte](#install-the-class-designer-component), um die Komponente **Klassen-Designer** für Visual Studio zu installieren.

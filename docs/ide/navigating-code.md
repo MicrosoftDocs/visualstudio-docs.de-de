@@ -1,5 +1,7 @@
 ---
 title: Codenavigationsbefehle
+description: Erfahren Sie mehr über die verschiedenen Optionen, die Sie zum Navigieren in Ihrem Code im Editor haben.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 77b0f8782f9ffaf37701f13b30be6e068ce05f8d
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585820"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871521"
 ---
 # <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -78,17 +80,17 @@ Es existieren folgende „Gehe zu“-Befehle, die im Menü **Bearbeiten** unter 
 
 - **Gehe zu Zeile** (**STRG**+**G**): zur angegebenen Zeilennummer im aktiven Dokument wechseln.
 
-- **Gehe zu allen** (**STRG**+**T** oder **STRG**+ **,** ): zur angegebenen Zeile oder Datei bzw. zum angegebenen Typ, Member oder Symbol wechseln.
+- **Gehe zu allen** (**STRG**+**T** oder **STRG**+**,**): zur angegebenen Zeile oder Datei bzw. zum angegebenen Typ, Member oder Symbol wechseln.
 
 - **Zu Datei wechseln** (**STRG**+**1**, **STRG**+**F**): zur angegebenen Datei in der Projektmappe wechseln.
 
 - **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei) (**STRG**+**1**, **STRG**+**R**): zur angegebenen und zuletzt besuchten Datei in der Projektmappe wechseln.
 
-- **Gehen zu Typ** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Typ in der Projektmappe wechseln.
+- **Gehe zu Typ** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Typ in der Projektmappe wechseln.
 
-- **Gehe zu Member** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Member in der Projektmappe wechseln.
+- **Zu Member navigieren** (**STRG**+**1**, **STRG**+**M**): zum angegebenen Member in der Projektmappe wechseln.
 
-- **Gehe zu Symbol** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Symbol in der Projektmappe wechseln.
+- **Gehe zu Symbol** (**STRG**+**1**, **STRG**+**S**): zum angegebenen Symbol in der Projektmappe wechseln.
 
 In Visual Studio 2017 Version 15.8 und höher, sind die folgenden **Gehe zu**-Navigationsbefehle ebenfalls verfügbar:
 
@@ -109,7 +111,7 @@ Eingabe | Funktion
 
 ## <a name="peek-definition"></a>Peek-Definition
 
-Mithilfe von „Peek-Definition“ wird die Definition des ausgewählten Elements in einem Fenster angezeigt, ohne dass Ihre aktuelle Position im Code-Editor verlassen wird. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) sowie [„Gehe zu Definition“ und „Definition einsehen“](../ide/go-to-and-peek-definition.md).
+Mithilfe von „Peek-Definition“ wird die Definition des ausgewählten Elements in einem Fenster angezeigt, ohne dass Ihre aktuelle Position im Code-Editor verlassen wird. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) und [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md).
 
 Eingabe | Funktion
 ------------ | ---

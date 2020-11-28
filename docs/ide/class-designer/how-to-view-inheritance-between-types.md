@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)'
+description: Lernen Sie, die Vererbungsbeziehung zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im Klassen-Designer zu finden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,16 +16,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c35279421ad17e62afe707d62dbc879d03b384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82785f1a5cac2185925c63c4d6d224ffd5fd67de
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769903"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901192"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Vorgehensweise: Anzeigen der Vererbung zwischen Typen im Klassen-Designer
 
-Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im **Klassen-Designer** finden. Informationen zum Erstellen einer Vererbungsbeziehung zwischen zwei Typen finden Sie unter [How to: Create Inheritance Between Types (Class Designer) (Vorgehensweise: Erstellen einer Vererbungsbeziehung zwischen Typen (Klassen-Designer))](how-to-create-inheritance-between-types.md).
+Sie können die Vererbungsbeziehung (sofern vorhanden) zwischen einem Basistyp und seinen abgeleiteten Typen in einem Klassendiagramm im **Klassen-Designer** finden. Informationen zum Erstellen einer Vererbungsbeziehung zwischen zwei Typen (sofern nicht vorhanden) finden Sie unter [How to: Create Inheritance Between Types (Vorgehensweise: Erstellen einer Vererbung zwischen Typen)](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>So finden Sie den Basistyp
 

@@ -1,5 +1,7 @@
 ---
 title: Seite „Anwendung“ der VB-Projekteigenschaften
+description: Erfahren Sie, wie Sie auf der Seite „Anwendung“ des Visual Basic-Projekt-Designers die Anwendungseinstellungen und -eigenschaften des Projekts festlegen können.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595812"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871417"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 

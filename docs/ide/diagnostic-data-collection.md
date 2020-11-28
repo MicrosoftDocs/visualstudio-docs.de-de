@@ -1,5 +1,7 @@
 ---
 title: Diagnosedaten und vom System generierte Protokolle
+description: Hier finden Sie Informationen zu systemgenerierten Visual Studio-Protokollen, den Typen der gesammelten Daten und deren Verwendung zum Lösen von Problemen und Verbessern der Produktqualität.
+ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
@@ -7,12 +9,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387251"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005924"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Vom System generierte Protokolle, die von Visual Studio gesammelt werden
 

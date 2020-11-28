@@ -1,5 +1,7 @@
 ---
 title: Erstellen und Ausführen von Komponententests für UWP-Apps
+description: Erfahren Sie, wie Visual Studio Komponententests für UWP-Apps (Universelle Windows-Plattform) unterstützt. Visual Studio stellt Komponententestvorlagen für C#, Visual Basic und C++ bereit.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fcf93dff859e2332c79b50086d0dc50d6bd304c8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568879"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598340"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für UWP-Apps
 
@@ -54,7 +56,7 @@ Wenn Sie diese Schritte ausgeführt haben, wird das Komponententestprojekt erste
 
 ::: moniker range="vs-2017"
 
-1. Wählen Sie im Menü **Datei** die Option **Neues Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Option **Neues Projekt** aus.
 
    Daraufhin wird das Dialogfeld **Neues Projekt** angezeigt.
 
@@ -93,13 +95,13 @@ Wenn Sie diese Schritte ausgeführt haben, wird das Komponententestprojekt erste
 
 Bearbeiten Sie den Komponententest im Code-Editor, und fügen Sie die Asserts und die Logik für den Test hinzu.
 
-## <a name="run-unit-tests"></a>Durchführen von Komponententests
+## <a name="run-unit-tests"></a>Komponententests ausführen
 
 So erstellen Sie die Projektmappe und führen den Komponententest mit dem Komponententest-Explorer aus:
 
-1. Wählen Sie im Menü **Test** den Punkt **Windows**und dann **Test-Explorer**aus.
+1. Wählen Sie im Menü **Test** den Punkt **Windows** und dann **Test-Explorer** aus.
 
-2. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
+2. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen** aus.
 
    Der Komponententest wird jetzt im Test-Explorer angezeigt.
 
@@ -108,14 +110,14 @@ So erstellen Sie die Projektmappe und führen den Komponententest mit dem Kompon
 
 3. Wählen Sie im **Test-Explorer** den Komponententest aus, den Sie erstellt haben.
 
-4. Wählen Sie **Alle ausführen**aus.
+4. Wählen Sie **Alle ausführen** aus.
 
    ![Komponententest-Explorer &#45; Komponententest ausführen](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 
    > [!TIP]
    > Sie können einen oder mehrere der im Komponententest-Explorer aufgeführten Komponententests auswählen und per Rechtsklick **Ausgewählte Tests ausführen** auswählen.
    >
-   > Außerdem können Sie die Optionen **Ausgewählte Tests debuggen**, **Test öffnen**und **Eigenschaften** auswählen.
+   > Außerdem können Sie die Optionen **Ausgewählte Tests debuggen**, **Test öffnen** und **Eigenschaften** auswählen.
    >
    > ![Komponententest-Explorer – Kontextmenü für Komponententest](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 

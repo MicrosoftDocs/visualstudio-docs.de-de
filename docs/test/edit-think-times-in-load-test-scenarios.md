@@ -1,5 +1,7 @@
 ---
 title: Reaktionszeit für Auslastungstests
+description: Lernen Sie, Reaktionszeiten zu bearbeiten, die zur Simulation des menschlichen Verhaltens verwendet werden, bei dem eine gewisse Zeit zwischen einzelnen Interaktionen mit einer Website vergeht.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a1c0c1ef98a77b83c49ca69fd70e38238ed4ded0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590032"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441299"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Bearbeiten der Reaktionszeit zum Simulieren menschlicher Interaktionsverzögerungen in Auslastungstestszenarios für Websites
 
@@ -29,11 +31,11 @@ Die **Reaktionsprofil**-Optionen werden in der folgenden Liste beschrieben:
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Off**
+**Deaktiviert**
 
 Reaktionszeiten werden ignoriert. Verwenden Sie diese Einstellung, wenn Sie eine maximale Auslastung und eine hohe Belastung des Webservers simulieren möchten. Sie sollten diese Option nicht verwenden, wenn Sie versuchen, realistischere Benutzerinteraktionen mit einem Webserver zu generieren.
 
-**On**
+**Ein**
 
 Reaktionszeiten werden exakt gemäß ihrer Aufzeichnung im Webleistungstest verwendet. Es wird simuliert, dass mehrere Benutzer Webleistungstests genau wie aufgezeichnet ausführen. Da bei einem Auslastungstest mehrere Benutzer simuliert werden, könnte die Verwendung derselben Reaktionszeit ein unnatürliches Auslastungsmuster bei den synchronisierten virtuellen Benutzern ergeben.
 
@@ -50,7 +52,7 @@ Reaktionszeiten werden verwendet, variieren jedoch im Rahmen einer Normalverteil
 
 1. Öffnen Sie im Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
 
-2. Klicken Sie im **Auslastungstest-Editor** auf den Szenarioknoten, für den Sie das **Reaktionsprofil** ändern möchten. Das **Reaktionsprofil** wird im Fenster **Eigenschaften** angezeigt. Drücken Sie **F4**, um das **Eigenschaftenfenster** anzuzeigen.
+2. Klicken Sie im **Auslastungstest-Editor** auf den Szenarioknoten, für den Sie das **Reaktionsprofil** ändern möchten. Das **Reaktionsprofil** wird im Fenster **Eigenschaften** angezeigt. Drücken Sie **F4**, um das Fenster **Eigenschaften** anzuzeigen.
 
 3. Ändern Sie die Eigenschaft **Reaktionsprofil** im Fenster **Eigenschaften**.
 

@@ -1,5 +1,7 @@
 ---
 title: Erweiterte Features
+description: Erfahren Sie mehr über erweiterte Features, die möglicherweise besser für erfahrene Entwickler geeignet sind bzw. Entwickler, die bereits mit Visual Studio vertraut sind.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 61109a315a7f331821527ee882dd7c019411fca3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399252"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903298"
 ---
 # <a name="features-of-visual-studio"></a>Features von Visual Studio
 

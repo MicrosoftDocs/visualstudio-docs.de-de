@@ -1,5 +1,7 @@
 ---
 title: Ein Komponententestprojekt erstellen
+description: Lernen Sie, ein Komponententestprojekt zu erstellen. Das Testprojekt kann sich in der gleichen Projektmappe wie der Produktionscode oder in einer separaten Projektmappe befinden.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffa19fb9dc49d6286ef3f54c51d89043445f18ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0d438c05d3c9608c11903c02119d7c3e267a48b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288714"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441845"
 ---
 # <a name="create-a-unit-test-project"></a>Ein Komponententestprojekt erstellen
 
@@ -37,7 +39,7 @@ Komponententests spiegeln häufig die Struktur des getesteten Codes. Angenommen,
 
 ::: moniker range=">=vs-2019"
 
-2. Geben Sie auf der Seite **Neues Projekt erstellen** **Komponententest** in das Suchfeld ein. Wählen Sie die Projektvorlage für das Testframework aus, das Sie verwenden möchten, z. B. **MSTest Test Project** oder **NUnit Test Project**, und klicken Sie auf **Weiter**.
+2. Geben Sie auf der Seite **Neues Projekt erstellen****Komponententest** in das Suchfeld ein. Wählen Sie die Projektvorlage für das Testframework aus, das Sie verwenden möchten, z. B. **MSTest Test Project** oder **NUnit Test Project**, und klicken Sie auf **Weiter**.
 
    ![Testprojektvorlagen in Visual Studio 2019](media/vs-2019/test-project-templates.png)
 
@@ -49,7 +51,7 @@ Komponententests spiegeln häufig die Struktur des getesteten Codes. Angenommen,
 
    1. Wählen Sie das Testprojekt im **Projektmappen-Explorer** aus.
 
-   2. Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
+   2. Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen** aus.
 
    3. Wählen Sie im **Verweis-Manager** den Knoten **Projektmappe** unter **Projekte** aus. Wählen Sie das zu testende Codeprojekt aus, und klicken Sie dann auf **OK**.
 

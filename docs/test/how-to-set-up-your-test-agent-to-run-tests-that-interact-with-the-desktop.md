@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren eines Test-Agents
+description: Lernen Sie, automatisierte Tests auszuführen, die mit dem Desktop interagieren, indem Sie den Agent für die Ausführung als Prozess statt als Dienst konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 994d5da8af7b00ab8af55681d4a67e9681ebbde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287531"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441012"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren
 
@@ -64,7 +66,7 @@ Gehen Sie wie folgt vor, um Agents einzurichten, die einer Rolle zugewiesen sind
    > [!NOTE]
    > Wenn Sie die Verbindung mit der Lab-Umgebung über einen Remotedesktop oder eine Gast-basierte Verbindung hergestellt haben, ist es möglich, dass diese häufig und unerwartet getrennt wird. Eine mögliche Ursache des Verbindungsverlusts besteht darin, dass der Computer für die automatische Anmeldung am Netzwerk konfiguriert ist.
 
-5. Um sicherzustellen, dass der Bildschirmschoner deaktiviert ist, wählen Sie **Sicherstellen, dass Bildschirmschoner deaktiviert ist**aus, da andernfalls automatisierte Tests, die mit dem Desktop interagieren müssen, behindert werden können.
+5. Um sicherzustellen, dass der Bildschirmschoner deaktiviert ist, wählen Sie **Sicherstellen, dass Bildschirmschoner deaktiviert ist** aus, da andernfalls automatisierte Tests, die mit dem Desktop interagieren müssen, behindert werden können.
 
    > [!WARNING]
    > Durch die automatische Anmeldung und das Deaktivieren des Bildschirmschoners entstehen Sicherheitsrisiken. Wenn Sie die automatische Anmeldung aktivieren, ermöglichen Sie es anderen Benutzern, den betreffenden Computer zu starten und das Konto zu verwenden, das automatisch angemeldet wird. Wenn Sie den Bildschirmschoner deaktivieren, wird der Benutzer möglicherweise nicht aufgefordert, sich anzumelden, um die Sperre des Computers aufzuheben. So kann jede Person mit physischem Zugang zum Computer auf den Computer zugreifen. Wenn Sie diese Funktionen auf einem Computer aktivieren, sollten Sie sicherstellen, dass der Computer physikalisch sicher ist. Ein solcher Computer befindet sich z. B. in einem physikalisch sicheren Labor. Durch Deaktivieren des Kontrollkästchens **Sicherstellen, dass der Bildschirmschoner deaktiviert ist** wird der Bildschirmschoner nicht aktiviert.

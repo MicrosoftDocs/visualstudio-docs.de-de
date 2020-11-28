@@ -1,5 +1,7 @@
 ---
 title: C++Klassen in Klassen-Designer
+description: Erfahren Sie mehr über C++-Klassen, wie sie unterstützt werden und im Klassen-Designer über mehrere Vererbungsbeziehungen verfügen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 593ca8ba3edc3c779a0440a35551bf870f20c831
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808128"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901205"
 ---
 # <a name="c-classes-in-class-designer"></a>C++Klassen in Klassen-Designer
 

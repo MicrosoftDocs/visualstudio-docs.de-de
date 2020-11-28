@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Lokalisieren von ASPX-Markup | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie ASPX-Markup in SharePoint lokalisieren, indem Sie hart codierte Zeichen folgen Werte durch Ausdrücke ersetzen, die auf lokalisierte Ressourcen verweisen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016286"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304656"
 ---
-# <a name="how-to-localize-aspx-markup"></a>Gewusst wie: Lokalisieren von ASPX-Markup
+# <a name="how-to-localize-aspx-markup"></a>How to: Lokalisieren von ASPX-Markup
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (aspx)-Seiten verwenden in der Regel hart codierte Zeichen folgen Werte. Um diese Zeichen folgen zu lokalisieren, ersetzen Sie Sie durch Ausdrücke, die auf lokalisierte Ressourcen verweisen.
 
 ## <a name="localize-aspx-markup"></a>Lokalisieren von ASPX-Markup
@@ -31,9 +33,9 @@ ms.locfileid: "86016286"
 
      Wenn Sie nur Markup und nicht Code lokalisieren, fügen Sie ein Projekt Element für eine globale Ressourcen Datei hinzu. Wenn Sie Code und Markup lokalisieren, fügen Sie ein Ressourcen Datei-Projekt Element hinzu.
 
-    1. Öffnen Sie zum Hinzufügen einer globalen Ressourcen Datei in **Projektmappen-Explorer**das Kontextmenü für ein SharePoint-Projekt Element, und wählen Sie dann **Add**  >  **Neues Element**hinzufügen aus. Wählen Sie unter dem Knoten SharePoint **2010** die Vorlage **Global Resources File** aus.
+    1. Öffnen Sie zum Hinzufügen einer globalen Ressourcen Datei in **Projektmappen-Explorer** das Kontextmenü für ein SharePoint-Projekt Element, und wählen Sie dann **Add**  >  **Neues Element** hinzufügen aus. Wählen Sie unter dem Knoten SharePoint **2010** die Vorlage **Global Resources File** aus.
 
-    2. Öffnen Sie zum Hinzufügen einer Ressourcen Datei in **Projektmappen-Explorer**das Kontextmenü für ein SharePoint-Projekt Element, und wählen Sie dann **Add**  >  **Neues Element**hinzufügen aus. Wählen Sie unter dem Knoten **Visual Basic** oder **Visual c#** die Vorlage **Ressourcen Datei** aus.
+    2. Öffnen Sie zum Hinzufügen einer Ressourcen Datei in **Projektmappen-Explorer** das Kontextmenü für ein SharePoint-Projekt Element, und wählen Sie dann **Add**  >  **Neues Element** hinzufügen aus. Wählen Sie unter dem Knoten **Visual Basic** oder **Visual c#** die Vorlage **Ressourcen Datei** aus.
 
     > [!NOTE]
     > Stellen Sie sicher, dass Sie die Ressourcen Dateien einem SharePoint-Projekt Element hinzufügen, um die Eigenschaft Bereitstellungstyp zu aktivieren. Diese Eigenschaft ist später in dieser Prozedur erforderlich. Wenn die Projekt Mappe kein SharePoint-Projekt Element enthält, können Sie ein leeres SharePoint-Projekt hinzufügen und dessen Standard *Elements.xml* Datei entfernen.
@@ -60,7 +62,7 @@ ms.locfileid: "86016286"
     </asp:Content>
     ```
 
-     auf
+     zu
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -74,8 +76,8 @@ ms.locfileid: "86016286"
 
      In der Anwendung werden die lokalisierten Zeichenfolgen angezeigt. Zum Anzeigen lokalisierter Ressourcen muss auf dem SharePoint-Server ein Sprachpaket installiert sein, das der Kultur der Ressourcendatei entspricht.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)
-- [Vorgehensweise: Lokalisieren einer Funktion](../sharepoint/how-to-localize-a-feature.md)
-- [Vorgehensweise: Hinzufügen einer Ressourcen Datei](../sharepoint/how-to-add-a-resource-file.md)
-- [Vorgehensweise: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)
+- [How to: Lokalisieren eines Features](../sharepoint/how-to-localize-a-feature.md)
+- [How to: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)
+- [How to: Lokalisieren von Code](../sharepoint/how-to-localize-code.md)

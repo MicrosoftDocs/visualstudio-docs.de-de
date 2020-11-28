@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)'
+description: Lernen Sie, Zuordnungen zwischen verschiedenen Typen im Klassen-Designer zu erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cce893efaad5f2317b175391a2685cae7053e3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f72cb173b5ece347bb2d9eb1b4ef0e8d2317b21d
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770962"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901608"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Vorgehensweise: Erstellen von Zuordnungen zwischen Typen im Klassen-Designer
 

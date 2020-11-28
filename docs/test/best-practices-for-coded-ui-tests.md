@@ -1,5 +1,7 @@
 ---
 title: Empfohlene Vorgehensweisen für Tests der programmierten UI
+description: Hier erhalten Sie einige Empfehlungen für die Entwicklung von Tests der programmierten UI. Die folgenden Richtlinien erleichtern Ihnen, einen flexiblen Test der programmierten UI zu erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e71029a185d1b3fea1812b2a4b1cf7bf20effff8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a4a79ca397b46d06e18c62fde2034551ff7afe0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565161"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441806"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Bewährte Methoden für Tests der programmierten UI
 
@@ -52,7 +54,7 @@ Halten Sie sich an die folgenden Richtlinien, um einen flexiblen Test der progra
 
 Tests der codierten UI werden automatisch an zahlreiche Änderungen in der Benutzeroberfläche angepasst. Wenn z. B. ein Benutzeroberflächenelement Position oder Farbe geändert hat, wird beim Test der programmierten UI in den meisten Fällen dennoch das richtige Element gefunden.
 
-Während eines Testlaufs werden die UI-Steuerelemente mithilfe mehrerer Sucheigenschaften vom Testframework gesucht. Die Sucheigenschaften gelten für jede Steuerelementklasse in den vom **Generator für Tests der programmierten UI** in der *UIMap.Designer.cs*-Datei erstellten Definitionen. Die Sucheigenschaften enthalten Name-Wert-Paare von Eigenschaftennamen und Eigenschaftenwerte, die verwendet werden können, um das Steuerelement zu identifizieren, z. B. die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>-, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>- und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A>-Eigenschaften des Steuerelements. Wenn die Sucheigenschaften unverändert sind, findet der Test der codierten UI erfolgreich das Steuerelement in der Benutzeroberfläche. Wenn die Sucheigenschaften geändert wurden, wendet ein intelligenter Vergleichsalgorithmus der Tests der programmierten UI Heuristik an, um Steuerelemente und Fenster in der Benutzeroberfläche zu finden. Wenn die Benutzeroberfläche geändert wurde, können Sie möglicherweise die Sucheigenschaften von zuvor identifizierten Elementen ändern, um sicherstellen, dass sie gefunden werden.
+Während eines Testlaufs werden die UI-Steuerelemente mithilfe mehrerer Sucheigenschaften vom Testframework gesucht. Die Sucheigenschaften gelten für jede Steuerelementklasse in den vom **Generator für Tests der programmierten UI** in der *UIMap.Designer.cs*-Datei erstellten Definitionen. Die Sucheigenschaften enthalten Name-Wert-Paare von Eigenschaftennamen und Eigenschaftenwerte, die verwendet werden können, um das Steuerelement zu identifizieren, z. B. die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>-, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>- und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A>-Eigenschaften des Steuerelements. Wenn die Sucheigenschaften unverändert sind, findet der Test der programmierten UI erfolgreich das Steuerelement in der Benutzeroberfläche. Wenn die Sucheigenschaften geändert wurden, wendet ein intelligenter Vergleichsalgorithmus der Tests der programmierten UI Heuristik an, um Steuerelemente und Fenster in der Benutzeroberfläche zu finden. Wenn die Benutzeroberfläche geändert wurde, können Sie möglicherweise die Sucheigenschaften von zuvor identifizierten Elementen ändern, um sicherstellen, dass sie gefunden werden.
 
 ## <a name="if-your-user-interface-changes"></a>Vorgehensweise bei geänderter Benutzeroberfläche
 

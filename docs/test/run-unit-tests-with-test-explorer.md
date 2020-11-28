@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386640"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850025"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -34,7 +34,7 @@ Visual Studio enthält die Komponententest-Frameworks von Microsoft für sowohl 
 
 ## <a name="run-tests-in-test-explorer"></a>Ausführen von Tests im Test-Explorer
 
-Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
+Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster** und dann **Test-Explorer** aus.
 
 ::: moniker range="vs-2017"
 ![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png)
@@ -44,7 +44,7 @@ Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Standardgruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Nicht ausgeführte Tests**angezeigt. Sie können die Gruppierung der Tests im Test-Explorer ändern.
+Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Standardgruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Nicht ausgeführte Tests** angezeigt. Sie können die Gruppierung der Tests im Test-Explorer ändern.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Während Sie Ihre Tests ausführen, schreiben und erneut ausführen, zeigt der Test-Explorer die Ergebnisse in einer Standardgruppierung Aus **Projekt**, **Namespace** und **Klasse** an. Sie können die Gruppierung der Tests im Test-Explorer ändern.
@@ -64,7 +64,7 @@ Sie können über die Symbolleiste **Test-Explorer** die meisten Aktionen zum Su
 ::: moniker range="vs-2017"
 Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder einen Satz ausgewählter Tests ausführen. Führen Sie einen der folgenden Schritte aus:
 
-- Wählen Sie zum Ausführen aller Tests in einer Projektmappe **Alle ausführen**aus.
+- Wählen Sie zum Ausführen aller Tests in einer Projektmappe **Alle ausführen** aus.
 
 - Klicken Sie zum Ausführen aller Tests in einer Standardgruppe auf **Ausführen**, und wählen Sie dann im Menü die Gruppe aus.
 
@@ -101,7 +101,7 @@ Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang 
 
 ## <a name="view-test-results"></a>Testergebnisse anzeigen
 
-Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** sowie **Nicht ausgeführte Tests**angezeigt. Im Detailbereich unten oder auf der Seite des Test-Explorers wird eine Zusammenfassung des Testlaufs angezeigt.
+Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** sowie **Nicht ausgeführte Tests** angezeigt. Im Detailbereich unten oder auf der Seite des Test-Explorers wird eine Zusammenfassung des Testlaufs angezeigt.
 
 ### <a name="view-test-details"></a>Anzeigen von Testdetails
 
@@ -201,9 +201,9 @@ Sie können eine Liste mit Tests erstellen und speichern, die als Gruppe ausgef�
 
 ![Wiedergabeliste auswählen](../test/media/ute_playlist.png)
 
-Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**. Speichern Sie die Datei unter dem im Dialogfeld **Neue Wiedergabeliste erstellen** angegebenen Namen und Speicherort.
+Wählen Sie zum **Erstellen einer Wiedergabeliste** im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**. Speichern Sie die Datei unter dem im Dialogfeld **Neue Wiedergabeliste erstellen** angegebenen Namen und Speicherort.
 
-Wählen Sie zum**Hinzufügen von Tests zu einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Wählen Sie im Kontextmenü **Zu Wiedergabeliste hinzufügen** und anschließend die Wiedergabeliste aus, der die Tests hinzugefügt werden sollen.
+Wählen Sie zum **Hinzufügen von Tests zu einer Wiedergabeliste** im Komponententest-Explorer mindestens einen Test aus. Wählen Sie im Kontextmenü **Zu Wiedergabeliste hinzufügen** und anschließend die Wiedergabeliste aus, der die Tests hinzugefügt werden sollen.
 
 **Wählen Sie zum Öffnen einer Wiedergabeliste** im Visual Studio-Menü **Test** > **Wiedergabeliste** aus. Anschließend können Sie entweder aus der Liste der zuletzt verwendeten Wiedergabelisten oder die Option **Wiedergabelistendatei öffnen** auswählen, um den Namen und Speicherort der Wiedergabeliste anzugeben.
 
@@ -212,7 +212,7 @@ Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in bel
 ::: moniker range=">=vs-2019"
 Sie können eine Liste mit Tests erstellen und speichern, die als Gruppe ausgeführt oder angezeigt werden sollen. Wenn Sie eine Wiedergabeliste auswählen, werden die Tests in der Liste auf einer neuen Registerkarte im Test-Explorer angezeigt. Sie können einen Test zu mehr als einer Wiedergabeliste hinzufügen.
 
-Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**.
+Wählen Sie zum **Erstellen einer Wiedergabeliste** im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**.
 
 ![Erstellen einer Wiedergabeliste](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
@@ -220,7 +220,7 @@ Die Wiedergabeliste wird in einer neuen Registerkarte im Test-Explorer geöffnet
 
 ![Die Wiedergabeliste wird in einer separaten Registerkarte im Test-Explorer geöffnet.](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
-Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**.
+Wählen Sie zum **Erstellen einer Wiedergabeliste** im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**.
 
 **Um eine Wiedergabeliste zu öffnen**, wählen Sie das Wiedergabelistensymbol in der Visual Studio-Symbolleiste, und wählen Sie eine zuvor gespeicherte Wiedergabelistendatei aus dem Menü.
 
@@ -233,6 +233,21 @@ Ab Visual Studio 2019 Version 16.7 können Sie in der Symbolleiste auf **Bearbe
 Sie können die Kontrollkästchen der übergeordneten Gruppen in der Hierarchie auch aktivieren oder deaktivieren. Dadurch wird eine dynamische Wiedergabeliste erstellt, die basierend auf den Tests in der Gruppe immer aktualisiert wird. Wenn Sie beispielsweise ein Kontrollkästchen neben einer Klasse aktivieren, wird jeder Test, den diese Klasse hinzufügt, in die Wiedergabeliste aufgenommen. Wenn Sie einen Test aus dieser Klasse löschen, wird er aus der Wiedergabeliste entfernt. Weitere Informationen zu den Regeln finden Sie, indem Sie die Wiedergabeliste mit der Schaltfläche „Speichern“ auf der Symbolleiste speichern und die *PLAYLIST-Datei* öffnen, die auf dem Datenträger erstellt wird. In dieser Datei werden alle Regeln und die einzelnen Tests aufgelistet, aus denen eine Wiedergabeliste besteht.
 
 ![XML-Datei für Wiedergabeliste](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
+
+Wenn Sie eine Wiedergabeliste für Merkmale erstellen möchten, verwenden Sie das folgende Format. Stellen Sie sicher, dass ein Leerzeichen zwischen Ihrem `TestCategory`-Namen und dem `[Value]` steht.
+```xml
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+        <Rule Match="Any">
+            <Property Name="Trait" Value="TestCategory [Value]" />
+        </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
+```
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -319,13 +334,13 @@ Ausführen des Codeabdeckungstools für Testmethoden in einer Projektmappe:
 
 ::: moniker range="vs-2017"
 
-1. Wählen Sie in der obersten Menüleiste **Tests** und anschließend **Code Coverage analysieren**aus.
+1. Wählen Sie in der obersten Menüleiste **Tests** und anschließend **Code Coverage analysieren** aus.
 
 2. Wählen Sie in Untermenü einen der folgenden Befehle aus:
 
-    - Mit**Ausgewählte Tests** werden die im Test-Explorer ausgewählten Testmethoden analysiert.
+    - Mit **Ausgewählte Tests** werden die im Test-Explorer ausgewählten Testmethoden analysiert.
 
-    - Mit**Alle Tests** werden alle Testmethoden in der Projektmappe analysiert.
+    - Mit **Alle Tests** werden alle Testmethoden in der Projektmappe analysiert.
 
 ::: moniker-end
 

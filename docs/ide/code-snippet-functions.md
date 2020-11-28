@@ -1,5 +1,7 @@
 ---
 title: Codeausschnittfunktionen
+description: Erfahren Sie mehr über die Funktionen GenerateSwitchCases(EnumerationLiteral), ClassName() und SimpleTypeNam(TypeName), die mit C#-Codeausschnitten verwendet werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6529f4f82f7a8a6862ae85adbf170d2fb6f8706
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594239"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006509"
 ---
 # <a name="code-snippet-functions"></a>Codeausschnittfunktionen
 
 Es stehen drei Funktionen zur Verfügung, die mit C#-Codeausschnitten verwendet werden können. Funktionen werden im Element [Function](../ide/code-snippets-schema-reference.md#function-element) (Funktion) des Codeausschnitts angegeben. Informationen zum Erstellen von Codeausschnitten finden Sie unter [Codeausschnitte](../ide/code-snippets.md).
 
-## <a name="functions"></a>Funktionen
+## <a name="functions"></a>Functions
 
 In der folgenden Tabelle werden die verfügbaren Funktionen für die Verwendung mit dem `Function`-Element in Codeausschnitten beschrieben.
 

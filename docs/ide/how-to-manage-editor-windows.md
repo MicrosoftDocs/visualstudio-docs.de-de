@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwalten von Editorfenstern'
+description: Erfahren Sie, wie Sie Fenster teilen und mehrere Fenster gleichzeitig öffnen können, damit Sie Ihren Code in idealer Weise anzeigen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 461593e4c77d7c90210ae1bb78741a1fff9616ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93a2a9d74c66ffa699ea3fbf73da5d9043316f31
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284190"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597131"
 ---
 # <a name="how-to-manage-editor-windows"></a>Vorgehensweise: Verwalten von Editorfenstern
 
@@ -54,7 +56,7 @@ Sie können auch mehrere Instanzen eines Editorfensters erstellen. Mithilfe dies
 
    Es wird eine neue Instanz des Editors im Registerkartenformat hinzugefügt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Anpassen von Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md)

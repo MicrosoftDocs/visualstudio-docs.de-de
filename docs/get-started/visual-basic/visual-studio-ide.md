@@ -1,8 +1,11 @@
 ---
 title: Übersicht für Visual Basic-Entwickler
+description: Erfahren Sie mehr über die Verwendung von Visual Studio zum Bearbeiten, Debuggen und Erstellen von Code sowie zum anschließenden Veröffentlichen einer App als Visual Basic-Entwickler.
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928042"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901569"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Willkommen in der Visual Studio-IDE | Visual Basic
 
@@ -36,9 +39,9 @@ Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Star
 
 Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Projekt und einigen wichtigen Toolfenstern, die Sie wahrscheinlich verwenden:
 
-- Im [Projektmappen-Explorer](../../ide/solutions-and-projects-in-visual-studio.md) (oben rechts) können Sie Ihre Codedateien anzeigen, darin navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](tutorial-projects-solutions.md) gruppiert.
+- Im[Projektmappen-Explorer](../../ide/solutions-and-projects-in-visual-studio.md) (rechts oben) können Sie Ihre Codedateien anzeigen, durch die Dateien navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](tutorial-projects-solutions.md) gruppiert.
 
-- Im [Editor-Fenster](../../ide/writing-code-in-the-code-and-text-editor.md) (Mitte), in dem Sie die meiste Zeit verbringen werden, werden Dateiinhalte angezeigt. Hier können Sie Code bearbeiten oder eine Benutzeroberfläche wie etwa ein Fenster mit Schaltflächen und Textfeldern entwerfen.
+- Im [Editorfenster](../../ide/writing-code-in-the-code-and-text-editor.md) (Mitte), in dem Sie die meiste Zeit verbringen werden, werden Dateiinhalte angezeigt. Hier können Sie Code bearbeiten oder eine Benutzeroberfläche wie etwa ein Fenster mit Schaltflächen und Textfeldern entwerfen.
 
 - Das Fenster [Ausgabe](../../ide/reference/output-window.md) (Mitte unten) ist der Ort, an den Visual Studio Benachrichtigungen sendet, z.B. Debug- und Fehlermeldungen, Compilerwarnungen, Nachrichten zum Veröffentlichungsstatus und mehr. Jede Nachrichtenquelle verfügt über eine eigene Registerkarte.
 
@@ -375,7 +378,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
    Visual Studio erstellt die App, und es wird ein Konsolenfenster mit der Meldung **Hello World!** geöffnet. Sie haben nun eine funktionierende App!
 
-   ![Konsolenfenster](../media/vs-2019/overview-console-window.png)
+   ![Screenshot des Konsolenfensters, in dem die Meldung „Hello World!“ angezeigt wird.](../media/vs-2019/overview-console-window.png)
 
 1. Drücken Sie eine beliebige Taste auf der Tastatur, um das Konsolenfenster zu schließen.
 
@@ -400,7 +403,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
 1. Geben Sie Ihren Namen im Konsolenfenster ein, und drücken Sie die **EINGABETASTE**.
 
-   ![Konsolenfenster](../media/vs-2019/overview-console-input.png)
+   ![Screenshot des Konsolenfensters mit der Frage „What is your name?“ und der Antwort der App.](../media/vs-2019/overview-console-input.png)
 
 1. Drücken Sie eine beliebige Taste, um das Konsolenfenster zu schließen und das ausgeführte Programm zu beenden.
 

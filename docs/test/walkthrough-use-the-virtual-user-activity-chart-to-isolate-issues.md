@@ -1,5 +1,7 @@
 ---
 title: Verwenden des Diagramms für Aktivitäten virtueller Benutzer bei Auslastungstests
+description: Lernen Sie, wie Sie mit dem Diagramm für Aktivitäten virtueller Benutzer Fehler isolieren, die für einzelne virtuelle Benutzer aufgetreten sind, die den Auslastungstest ausführten.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7f87542e528b743fa59dfe82aa52a57f1a9cfa2c
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78169377"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598236"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen
 
@@ -69,7 +71,7 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
 3. Stellen Sie im Tool **Zoom zum Zeitraum** unter dem **Diagramm für Aktivitäten virtueller Benutzer** die linken und rechten Schieberegler so ein, dass sich beide in der Nähe des Symbols für die Schwellenwertverletzung befinden. Hierdurch wird die Zeitskala im **Diagramm für Aktivitäten virtueller Benutzer** geändert.
 
-4. Aktivieren Sie in der **Detaillegende** das Kontrollkästchen **(Fehler hervorheben)** . Der virtuelle Benutzer, der die Schwellenwertverletzung verursacht hat, wird hervorgehoben.
+4. Aktivieren Sie in der **Detaillegende** das Kontrollkästchen **(Fehler hervorheben)**. Der virtuelle Benutzer, der die Schwellenwertverletzung verursacht hat, wird hervorgehoben.
 
 5. Deaktivieren Sie im Bereich **Filterergebnisse** die Kontrollkästchen **Erfolgreiche Ergebnisse anzeigen** und **HttpError**, aber lassen Sie das Kontrollkästchen **ValidationRuleError** aktiviert.
 
@@ -91,7 +93,7 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
     - **Startzeit**
 
-    - **Dauer**
+    - **Duration**
 
     - **Agent**
 
@@ -107,6 +109,6 @@ Nach dem Ausführen des Auslastungstests und dem Sammeln der Aktivitätsdaten vo
 
 - [Analysieren der Aktivität virtueller Benutzer in der Detailansicht](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
-- [Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [How to: Erstellen einer Testeinstellung für einen verteilten Auslastungstest](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)

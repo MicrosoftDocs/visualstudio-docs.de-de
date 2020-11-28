@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Anzeigen von vorhandenen Typen (Klassen-Designer)'
+description: Lernen Sie, einen vorhandenen Typ und die zugehörigen Member anzuzeigen, indem Sie seine Form einem Klassendiagramm hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4660c4efc7c22431b7c9f0d9180576d524a372
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770009"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901166"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Vorgehensweise: Anzeigen von vorhandenen Typen im Klassen-Designer
 
@@ -31,7 +33,7 @@ Informationen zum Erstellen neuer Typen in Klassendiagrammen finden Sie unter [V
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>So zeigen Sie Typen aus einem Projekt in einem Klassendiagramm an
 
-1. Öffnen Sie in einem Projekt im **Projektmappen-Explorer** eine Klassendiagrammdatei (CD-Datei). Falls kein Klassendiagramm vorhanden ist, fügen Sie dem Projekt ein neues Klassendiagramm hinzu. Informationen hierzu finden Sie unter [How to: Add Class Diagrams to Projects (Class Designer) (Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer))](how-to-add-class-diagrams-to-projects.md).
+1. Öffnen Sie in einem Projekt im **Projektmappen-Explorer** eine Klassendiagrammdatei (CD-Datei). Falls kein Klassendiagramm vorhanden ist, fügen Sie dem Projekt ein neues Klassendiagramm hinzu. Weitere Informationen finden Sie unter [How to: Add Class Diagrams to Projects (Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten)](how-to-add-class-diagrams-to-projects.md).
 
 2. Ziehen Sie vom Projekt im **Projektmappen-Explorer** eine Quellcodedatei in das Klassendiagramm.
 

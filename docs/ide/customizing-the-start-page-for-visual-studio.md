@@ -1,5 +1,7 @@
 ---
 title: Ändern der Benutzeroberfläche beim Start
+description: Erfahren Sie, wie Sie Ihren Startvorgang anpassen, sodass Visual Studio mit den Tools geöffnet wird, die für Sie am nützlichsten sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3928ab1cad67cac26865229cbe6d317083a0a4f1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567215"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598106"
 ---
 # <a name="customize-startup"></a>Anpassen des Programmstarts
 
@@ -32,7 +34,7 @@ Sie können eine benutzerdefinierte Startseite anzeigen. Dies ist eine Windows P
 
 ## <a name="to-change-the-startup-item"></a>So ändern Sie das Startelement
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 2. Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.
 

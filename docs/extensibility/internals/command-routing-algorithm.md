@@ -1,5 +1,7 @@
 ---
 title: Befehls Weiterleitungs Algorithmus | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Reihenfolge der Befehls Auflösung in Visual Studio, da Befehle von verschiedenen Komponenten behandelt und vom innersten zum äußersten Kontext weitergeleitet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709540"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305237"
 ---
 # <a name="command-routing-algorithm"></a>Befehls Weiterleitungs Algorithmus
 In Visual Studio werden Befehle von einer Reihe unterschiedlicher Komponenten behandelt. Befehle werden vom innersten Kontext, der auf der aktuellen Auswahl basiert, zum äußersten (auch als globaler Kontext bezeichnet) weitergeleitet. Weitere Informationen finden Sie unter [Command Availability](../../extensibility/internals/command-availability.md).
@@ -36,9 +38,9 @@ In Visual Studio werden Befehle von einer Reihe unterschiedlicher Komponenten be
 
 6. Dokument Fenster: Wenn für den Befehl das `RouteToDocs` Flag in der *vsct* -Datei festgelegt ist, sucht Visual Studio nach einem Befehls Ziel für das Dokument Ansichts Objekt, bei dem es sich entweder um eine Instanz einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> Schnittstelle oder um eine Instanz eines Dokument Objekts handelt (in der Regel eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> Schnittstelle oder eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> Schnittstelle). Wenn das Dokument Ansichts Objekt den Befehl nicht unterstützt, leitet Visual Studio den Befehl an die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> zurückgegebene Schnittstelle weiter. (Hierbei handelt es sich um eine optionale Schnittstelle für Dokument Datenobjekte.)
 
-7. Aktuelle Hierarchie: die aktuelle Hierarchie kann das Projekt sein, das das aktive Dokument Fenster oder die Hierarchie besitzt, die in **Projektmappen-Explorer**ausgewählt ist. Visual Studio sucht nach der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, die für die aktuelle oder aktive Hierarchie implementiert ist. Die Hierarchie sollte Befehle unterstützen, die gültig sind, wenn die Hierarchie aktiv ist, auch wenn ein Dokument Fenster eines Projekt Elements den Fokus besitzt. Allerdings müssen Befehle, die nur angewendet werden, wenn **Projektmappen-Explorer** den Fokus besitzt, mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> -Schnittstelle und der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> -und- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> Methoden unterstützt werden
+7. Aktuelle Hierarchie: die aktuelle Hierarchie kann das Projekt sein, das das aktive Dokument Fenster oder die Hierarchie besitzt, die in **Projektmappen-Explorer** ausgewählt ist. Visual Studio sucht nach der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle, die für die aktuelle oder aktive Hierarchie implementiert ist. Die Hierarchie sollte Befehle unterstützen, die gültig sind, wenn die Hierarchie aktiv ist, auch wenn ein Dokument Fenster eines Projekt Elements den Fokus besitzt. Allerdings müssen Befehle, die nur angewendet werden, wenn **Projektmappen-Explorer** den Fokus besitzt, mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> -Schnittstelle und der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> -und- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> Methoden unterstützt werden
 
-     Zum **Ausschneiden**, **Kopieren**, **Einfügen**, **Löschen**, **Umbenennen**, **eingeben**und **Doppelklicken auf** Befehle ist eine spezielle Behandlung erforderlich. Informationen zum Behandeln von **Lösch** -und **Entfernungs** Befehlen in Hierarchien finden Sie unter der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> Schnittstelle.
+     Zum **Ausschneiden**, **Kopieren**, **Einfügen**, **Löschen**, **Umbenennen**, **eingeben** und **Doppelklicken auf** Befehle ist eine spezielle Behandlung erforderlich. Informationen zum Behandeln von **Lösch** -und **Entfernungs** Befehlen in Hierarchien finden Sie unter der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> Schnittstelle.
 
 8. Global: Wenn ein Befehl nicht von den zuvor erwähnten Kontexten behandelt wurde, versucht Visual Studio, ihn an das VSPackage weiterzuleiten, das einen Befehl besitzt, der die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle implementiert. Wenn das VSPackage nicht bereits geladen wurde, wird es nicht geladen, wenn Visual Studio die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode aufruft. Das VSPackage wird nur geladen, wenn die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode aufgerufen wird.
 

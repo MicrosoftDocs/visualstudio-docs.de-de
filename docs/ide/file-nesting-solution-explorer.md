@@ -1,5 +1,7 @@
 ---
 title: Regeln für die Dateischachtelung für den Projektmappen-Explorer
+description: Erfahren Sie mehr über Dateischachtelungsregeln im Projektmappen-Explorer, Voreinstellungen und Anpassungen.
+ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5425c255e85a2785383f1e8e718340fc2049e0c4
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "67587031"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006691"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Dateischachtelung im Projektmappen-Explorer
 
@@ -56,7 +58,7 @@ Konzentrieren wir uns auf den Knoten **dependentFileProviders** und dessen unter
 
 * **pathSegment**: Verwenden Sie diesen Regeltyp, um *jquery.min.js* unter *jquery.js* zu schachteln.
 
-* **allExtensions**: Verwenden Sie diesen Regeltyp, um *file.* * unter *file.js* zu schachteln.
+* **allExtensions**: Verwenden Sie diesen Regeltyp, um *file.** unter *file.js* zu schachteln.
 
 * **fileToFile**: Verwenden Sie diesen Regeltyp, um *bower.json* unter *.bowerrc* zu schachteln.
 
@@ -142,7 +144,7 @@ Mit diesem Anbieter können Sie Dateischachtelungsregeln auf Basis ganzer Datein
 
 ### <a name="rule-order"></a>Regelreihenfolge
 
-Die Sortierung ist in jedem Teil Ihrer benutzerdefinierten Einstellungsdatei wichtig. Sie können die Reihenfolge, in der Regeln ausgeführt werden, ändern, indem Sie die Regeln im Knoten**dependentFileProvider** nach oben oder unten verschieben. Wenn Sie z.B. eine Regel besitzen, die **file.js** zum übergeordneten Element von **file.ts** macht und eine andere Regel, die **file.coffee** zum übergeordneten Element von **file.ts** macht, wird das Schachtelungsverhalten von der Reihenfolge bestimmt, in der die Elemente in der Datei angezeigt werden, wenn alle drei Dateien vorhanden sind. Da **file.ts** nur über ein übergeordnetes Element verfügen kann, gewinnt die Regel, die zuerst ausgeführt wird.
+Die Sortierung ist in jedem Teil Ihrer benutzerdefinierten Einstellungsdatei wichtig. Sie können die Reihenfolge, in der Regeln ausgeführt werden, ändern, indem Sie die Regeln im Knoten **dependentFileProvider** nach oben oder unten verschieben. Wenn Sie z.B. eine Regel besitzen, die **file.js** zum übergeordneten Element von **file.ts** macht und eine andere Regel, die **file.coffee** zum übergeordneten Element von **file.ts** macht, wird das Schachtelungsverhalten von der Reihenfolge bestimmt, in der die Elemente in der Datei angezeigt werden, wenn alle drei Dateien vorhanden sind. Da **file.ts** nur über ein übergeordnetes Element verfügen kann, gewinnt die Regel, die zuerst ausgeführt wird.
 
 Die Sortierung ist ebenso für Regelabschnitte selbst wichtig, nicht nur für Dateien innerhalb eines Abschnitts. Sobald ein Dateipaar einer Dateischachtelungsregel zugeordnet wird, werden die anderen Regeln weiter unten in der Datei ignoriert, und das nächste Dateipaar wird verarbeitet.
 
@@ -178,7 +180,7 @@ Sie können vorhandene globale Dateischachtelungsregeln für bestimmte Projektma
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Projektmappen und Projekte in Visual Studio](solutions-and-projects-in-visual-studio.md)

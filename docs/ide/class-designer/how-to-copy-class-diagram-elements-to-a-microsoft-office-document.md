@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Kopieren von Klassendiagrammelementen in ein Microsoft Office-Dokument (Klassen-Designer)'
+description: Erfahren Sie, wie Sie Formen aus einem .NET-Klassendiagramm in andere Dokumente kopieren können. Sie erhalten entweder eine Kopie der Form oder den zugrunde liegenden Code.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa6d97b5087659b9fc8120d9480a241517ca8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe473dfdfdf78934ad018a507c6386a1da9babb6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770999"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901621"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Vorgehensweise: Kopieren von Elementen des Klassendiagramms in ein Microsoft Office-Dokument
 

@@ -1,5 +1,7 @@
 ---
 title: Auslastungsmuster für Auslastungstests
+description: Erfahren Sie mehr über die integrierten Auslastungsmuster, die Visual Studio bereitstellt. Wählen Sie das Auslastungsmuster aus, und passen Sie die Werte der Eigenschaften Ihrem Auslastungstest an.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c46c353b09df792b2e204ce90a04b372e23ebd8b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590305"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440258"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Bearbeiten von Auslastungsmustern zur Modellierung virtueller Benutzeraktivitäten
 
@@ -40,7 +42,7 @@ Ein konstantes Auslastungsmuster wird verwendet, um bei der Ausführung eines Au
 
 ### <a name="step"></a>Schritt
 
-Mit dem Muster für schrittweise Auslastung wird eine Benutzerauslastung angegeben, die mit der Zeit gesteigert wird, bis eine maximale Benutzerauslastung erreicht wird. Für eine schrittweise Auslastung geben Sie die folgenden Informationen an: **Benutzeranzahl (ursprünglich)** , **Maximale Benutzeranzahl**, **Schrittdauer (Sekunden)** und **Benutzeranzahl pro Schritt**.
+Mit dem Muster für schrittweise Auslastung wird eine Benutzerauslastung angegeben, die mit der Zeit gesteigert wird, bis eine maximale Benutzerauslastung erreicht wird. Für eine schrittweise Auslastung geben Sie die folgenden Informationen an: **Benutzeranzahl (ursprünglich)**, **Maximale Benutzeranzahl**, **Schrittdauer (Sekunden)** und **Benutzeranzahl pro Schritt**.
 
 Sie können beispielsweise die folgenden Informationen angeben: **Benutzeranzahl (ursprünglich)** =1, **Maximale Benutzeranzahl**=100, **Schrittdauer (Sekunden)** =10 und **Benutzeranzahl pro Schritt**=1. In diesem Fall wird ein Auslastungsmuster erstellt, bei dem die Anzahl der Benutzer mit 1 beginnt und alle 10 Sekunden um 1 erhöht wird, bis schließlich eine Auslastung durch 100 Benutzer erreicht wird.
 
@@ -65,7 +67,7 @@ Ein schrittweises Auslastungsmuster kann zum Erhöhen der Auslastung auf den Ser
 
 - **Benutzeranzahl pro Schritt**: 100
 
-  Mit diesen Einstellungen wird der Auslastungstest 30 Minuten (1.800 Sekunden) bei Benutzerlasten von 100, 200, 300 und bis zu 2.000 Benutzern ausgeführt. Vor allem die Eigenschaft **Schrittverlaufszeit** muss erwähnt werden, da es sich dabei um die einzige Eigenschaft handelt, die im **Assistenten für neue Auslastungstests** nicht zur Auswahl zur Verfügung steht. Diese Eigenschaft ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z. B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht. In dem Beispiel würde die Benutzerauslastung von 100 auf 200 Benutzer in einem Zeitraum von 20 Sekunden (Zunahme von fünf Benutzern pro Sekunde) gesteigert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Mit diesen Einstellungen wird der Auslastungstest 30 Minuten (1.800 Sekunden) bei Benutzerlasten von 100, 200, 300 und bis zu 2.000 Benutzern ausgeführt. Vor allem die Eigenschaft **Schrittverlaufszeit** muss erwähnt werden, da es sich dabei um die einzige Eigenschaft handelt, die im **Assistenten für neue Auslastungstests** nicht zur Auswahl zur Verfügung steht. Diese Eigenschaft ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z. B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht. In dem Beispiel würde die Benutzerauslastung von 100 auf 200 Benutzer in einem Zeitraum von 20 Sekunden (Zunahme von fünf Benutzern pro Sekunde) gesteigert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Schrittverlaufszeiteigenschaft für ein detailliertes Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Zielbasiert
 
@@ -83,7 +85,7 @@ Ein Muster für zielbasierte Auslastung ähnelt dem schrittweisen Muster, passt 
 |-|--------------|-|
 |Leistungsindikator|Kategorie|Prozessor|
 |Leistungsindikator|Computer|ContosoServer1|
-|Leistungsindikator|Zähler|% Prozessorzeit|
+|Leistungsindikator|Leistungsindikator|% Prozessorzeit|
 |Leistungsindikator|Instanz|_Total|
 |Zielbereich für Leistungsindikator|Höchste Werte|90|
 |Zielbereich für Leistungsindikator|Niedrigste Werte|70|
@@ -110,9 +112,9 @@ Sie müssen jedoch aufpassen, ob eine andere Ressource den Durchsatz des Systems
 |Aufgaben|Verwandte Themen|
 |-|-----------------------|
 |**Angeben des anfänglichen Auslastungsmusters für den Auslastungstest**: Wenn Sie mit dem **Assistenten für neue Auslastungstests** einen Auslastungstest erstellen, wählen Sie ein Auslastungsmuster aus.|-   [Ändern des Auslastungsmusters](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**Bearbeiten des Auslastungsmusters für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie das Auslastungsmuster im **Auslastungstest-Editor** bearbeiten.|-   [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Angeben, ob die virtuellen Benutzer im Auslastungstestszenario Webcachedaten einschließen sollten**: Sie können die Eigenschaft **Prozentsatz neuer Benutzer** ändern, um die Methode zu beeinflussen, mit der der Auslastungstest die Webzwischenspeicherung simuliert, die von einem Webbrowser für die virtuellen Benutzer ausgeführt werden würde.|-   [Gewusst wie: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**Angeben der Schrittverlaufszeit für ein schrittweises Auslastungsmuster**: Die Eigenschaft **Schrittverlaufszeit** ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z.B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht.|-   [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Bearbeiten des Auslastungsmusters für den Auslastungstest**: Nachdem Sie den Auslastungstest erstellt haben, können Sie das Auslastungsmuster im **Auslastungstest-Editor** bearbeiten.|-   [Vorgehensweise: Angeben der Schrittverlaufszeiteigenschaft für ein detailliertes Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Angeben, ob die virtuellen Benutzer im Auslastungstestszenario Webcachedaten einschließen sollten**: Sie können die Eigenschaft **Prozentsatz neuer Benutzer** ändern, um die Methode zu beeinflussen, mit der der Auslastungstest die Webzwischenspeicherung simuliert, die von einem Webbrowser für die virtuellen Benutzer ausgeführt werden würde.|-   [Vorgehensweise: Angeben des Prozentsatzes virtueller Benutzer, die auf Webcachedaten zugreifen](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Angeben der Schrittverlaufszeit für ein schrittweises Auslastungsmuster**: Die Eigenschaft **Schrittverlaufszeit** ermöglicht es, dass die Steigerung von einer Stufe zur nächsten (z.B. von 100 auf 200 Benutzer) schrittweise und nicht plötzlich vonstatten geht.|-   [Vorgehensweise: Angeben der Schrittverlaufszeiteigenschaft für ein detailliertes Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Ändern des Auslastungsmusters
 
@@ -153,5 +155,5 @@ Das Auslastungsmuster gibt die Anzahl der während eines Auslastungstests aktive
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
-- [Gewusst wie: Angeben des Prozentanteils virtueller Benutzer, die auf Webcachedaten zugreifen](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
-- [Vorgehensweise: Angeben der Schrittverlaufszeit-Eigenschaft für ein schrittweises Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+- [Vorgehensweise: Angeben des Prozentsatzes virtueller Benutzer, die auf Webcachedaten zugreifen](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
+- [Vorgehensweise: Angeben der Schrittverlaufszeiteigenschaft für ein detailliertes Auslastungsmuster](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

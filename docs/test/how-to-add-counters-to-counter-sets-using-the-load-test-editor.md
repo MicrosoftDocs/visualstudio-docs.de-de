@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Indikatoren zu Indikatorensätzen für Auslastungstests
+description: Wenn Sie mithilfe des Auslastungstest-Assistenten einen Auslastungstest erstellen, fügen Sie einen Anfangssatz von Indikatoren hinzu. Lernen Sie, mit dem Auslastungstest-Editor Indikatoren hinzuzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aabd5bc7293a73ec0fa1a304262c24776a9e38f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288376"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442572"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Hinzufügen von Indikatoren zu Indikatorensätzen mit dem Auslastungstest-Editor
 
@@ -53,7 +55,7 @@ Sie können die Indikatoren mit dem **Auslastungstest-Editor** verwalten. Dem Te
 
 6. Wählen Sie einen Indikator und eine Instanz aus, die dem benutzerdefinierten Indikatorensatz hinzugefügt werden sollen.
 
-     \- oder –
+     \- oder -
 
      Aktivieren Sie das Optionsfeld **Alle Indikatoren**, um alle verfügbaren Indikatoren auszuwählen.
 

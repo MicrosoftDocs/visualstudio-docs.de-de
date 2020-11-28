@@ -1,5 +1,7 @@
 ---
 title: Seite „Anwendung“ der C#-Projekteigenschaften
+description: Erfahren Sie, wie Sie auf der Seite „Anwendung“ des C#-Projekt-Designers die Anwendungseinstellungen und -eigenschaften des Projekts festlegen können.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0b77ee4edca8f9cb8de2079e01d9c9997a24aeff
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595825"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871378"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 
@@ -81,9 +83,9 @@ Weitere Informationen zur Umleitung finden Sie unter [Umleiten von Assemblyversi
 
 **Startobjekt**
 
-Definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Nicht festgelegt)** .
+Definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Nicht festgelegt)**.
 
-In einem WPF-App-Projekt ist diese Option standardmäßig festgelegt auf **(Nicht festgelegt)** . Die andere Option ist \[projectname].App. Bei einem WPF-Projekt müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei *Application.xaml*, und legen Sie die `StartupUri`-Eigenschaft auf eine *XAML*-Datei in Ihrem Projekt fest, beispielsweise *Window1.xaml*. Eine Liste der zulässigen Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.
+In einem WPF-App-Projekt ist diese Option standardmäßig festgelegt auf **(Nicht festgelegt)**. Die andere Option ist \[projectname].App. Bei einem WPF-Projekt müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei *Application.xaml*, und legen Sie die `StartupUri`-Eigenschaft auf eine *XAML*-Datei in Ihrem Projekt fest, beispielsweise *Window1.xaml*. Eine Liste der zulässigen Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.
 
 Weitere Informationen hierzu finden Sie unter [/main (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -121,6 +123,6 @@ Aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista 
 
 Wählen Sie dieses Optionsfeld aus, wenn Sie eine Ressourcendatei für das Projekt bereitstellen. Durch Auswahl dieser Option, werden die Optionen **Symbol** und **Manifest** deaktiviert.
 
-Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen ( **...** ), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.
+Geben Sie einen Pfadnamen ein, oder klicken Sie auf die Schaltfläche zum Durchsuchen (**...**), um dem Projekt eine Win32-Ressourcendatei hinzuzufügen.
 
 Weitere Informationen finden Sie unter [Erstellen von Ressourcendateien für .NET-Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

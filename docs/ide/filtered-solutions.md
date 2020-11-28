@@ -1,5 +1,7 @@
 ---
 title: Laden einer Teilmenge von Projekten
+description: Erfahren Sie mehr über Projektmappenfilterung und darüber, wie Sie damit schnell eine Teilmenge von Projekten in eine Projektmappe laden können.
+ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -10,18 +12,18 @@ author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 73cb7afe913f7656ac6124d1f54fbc1cb7b611cb
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72650840"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006613"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Gefilterte Projektmappen in Visual Studio
 
 Große Entwicklungsteams arbeiten häufig mit einer einzigen großen Projektmappe, die viele Projekten enthält. Einzelne Entwickler arbeiten jedoch in der Regel mit einer kleinen Teilmenge dieser Projekte. Zur Leistungsverbesserung beim Öffnen großer Projektmappen wird in Visual Studio 2019 nun die *Projektmappenfilterung* eingeführt. Mit der Projektmappenfilterung können Sie eine Projektmappe öffnen, in der nur ausgewählte Projekte geladen sind. Durch das Laden einer Teilmenge von Projekten in einer Projektmappe wird die Zeit zum Laden und Erstellen einer Projektmappe sowie für den Testlauf einer Projektmappe verringert. Zudem wird eine zielgerichtetere Überprüfung ermöglicht.
 
-Die folgenden Features sind verfügbar:
+Folgende Funktionen stehen zur Verfügung:
 
 - Sie können Code schneller abrufen, indem Sie eine Projektmappe öffnen, ohne eines der zugehörigen Projekte zu laden. Nachdem die Projektmappe geöffnet wurde, können Sie selektiv auswählen, welche Projekte geladen werden sollen.
 
@@ -75,7 +77,7 @@ Sie können im **Projektmappen-Explorer** mithilfe einer der folgenden Auswahlm�
 
 ## <a name="load-project-dependencies"></a>Laden von Projektabhängigkeiten
 
-In einer Projektmappe, in die nur ausgewählte Projekte geladen werden, sind möglicherweise nicht alle Projektabhängigkeiten eines Projekts geladen. Stellen Sie mit der Menüoption **Projektabhängigkeiten laden**  sicher, dass alle Projekte, von denen ein Projekt abhängt, auch geladen werden. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf ein oder mehrere geladene Projekte, und wählen Sie **Projektabhängigkeiten laden**  aus.
+In einer Projektmappe, in die nur ausgewählte Projekte geladen werden, sind möglicherweise nicht alle Projektabhängigkeiten eines Projekts geladen. Stellen Sie mit der Menüoption **Projektabhängigkeiten laden** sicher, dass alle Projekte, von denen ein Projekt abhängt, auch geladen werden. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf ein oder mehrere geladene Projekte, und wählen Sie **Projektabhängigkeiten laden** aus.
 
 ![Laden von Projektabhängigkeiten in Visual Studio 2019](media/filtered-solutions/load-project-dependencies.png)
 
@@ -105,4 +107,4 @@ Nachdem Sie eine Projektmappen-Filterdatei erstellt haben, wird diese für den l
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen der Dateischachtelung im Projektmappen-Explorer](file-nesting-solution-explorer.md)
-- [Optimieren der Leistung von Visual Studio](optimize-visual-studio-performance.md)
+- [Optimieren der Visual Studio-Leistung](optimize-visual-studio-performance.md)

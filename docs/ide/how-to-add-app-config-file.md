@@ -1,5 +1,7 @@
 ---
 title: So fügen Sie einem Projekt die Datei „app.config“ hinzu
+description: Lernen Sie, einem C#-Projekt eine app.config-Datei hinzuzufügen, um anzupassen, wie die Common Language Runtime-Assemblydateien sucht und lädt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe659979cadf4d9e5752f7bbe85150aae848de08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 282c66acd71d0c68ff5bc3c74db2e8a2517a00d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770822"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597352"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Vorgehensweise: Hinzufügen einer Anwendungskonfigurationsdatei zu einem C#-Projekt
 

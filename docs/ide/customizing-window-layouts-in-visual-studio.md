@@ -1,5 +1,7 @@
 ---
 title: Anpassen von Fensterlayouts
+description: Erfahren Sie, wie die Merkmale von Windows angepasst werden, um Layouts zu erstellen, die für verschiedene Entwicklungsworkflows am besten geeignet sind.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
-ms.sourcegitcommit: 30a810f39c06958c79505773f052e96b982e5d5b
+ms.openlocfilehash: c433a6faf3eab9dd959cc25f26033c74852c0899
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87546070"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006665"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 
@@ -141,7 +143,7 @@ Sie können ein Toolfenster schließen, indem Sie auf das **X** oben rechts in d
 Wenn Sie einen zweiten Bildschirm besitzen und dieser vom Betriebssystem unterstützt wird, können Sie angeben, auf welchem Bildschirm ein Fenster angezeigt werden soll. Sie können mehrere Fenster sogar in *Rafts* auf anderen Bildschirmen gruppieren.
 
 > [!TIP]
-> Sie können auch mehrere Instanzen von **Projektmappen-Explorer** erstellen und auf einen anderen Bildschirm verschieben. Klicken Sie mit der rechten Maustaste in das Fenster und wählen Sie **Neue Projektmappen-Explorer-Ansicht**aus. Sie können alle Fenster wieder zum ursprüngliche Bildschirm zurückkehren lassen, indem Sie auf **STRG** drücken und gleichzeitig doppelklicken.
+> Sie können auch mehrere Instanzen von **Projektmappen-Explorer** erstellen und auf einen anderen Bildschirm verschieben. Klicken Sie mit der rechten Maustaste in das Fenster und wählen Sie **Neue Projektmappen-Explorer-Ansicht** aus. Sie können alle Fenster wieder zum ursprüngliche Bildschirm zurückkehren lassen, indem Sie auf **STRG** drücken und gleichzeitig doppelklicken.
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Zurücksetzen, Benennen und Wechseln zwischen Fensterlayouts
 

@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Quellcodeverwaltungs-Plug-in erstellen, mit dem der integrierten Entwicklungsumgebung (IDE) von Visual Studio eine Quell Code Verwaltungsfunktion hinzugefügt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709173"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305379"
 ---
 # <a name="create-a-source-control-plug-in"></a>Erstellen eines Quellcodeverwaltungs-Plug-ins
 Das Visual Studio SDK bietet Ressourcen, mit denen Sie der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) Funktionen zur Quell Code Verwaltung hinzufügen können. Sie können jede Plug-in-dll verwenden, die der in dieser Dokumentation beschriebenen Quellcodeverwaltungs-Plug-in-API entspricht.
@@ -27,7 +29,7 @@ Das Visual Studio SDK bietet Ressourcen, mit denen Sie der [!INCLUDE[vsprvs](../
 
  Beschreibt, wie Sie ein Quellcodeverwaltungs-Plug-in installieren und die derzeit verfügbaren API-Versionen für Quellcodeverwaltungs-Plug-ins hervorheben.
 
-- [Aufbau](../../extensibility/internals/source-control-plug-in-architecture.md)
+- [Architektur](../../extensibility/internals/source-control-plug-in-architecture.md)
 
  Erläutert die Integration eines Quellcodeverwaltungs-Plug-ins in die IDE mithilfe eines Architektur Diagramms [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 

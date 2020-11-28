@@ -1,7 +1,7 @@
 ---
 title: Funktionsweise von Bridge to Kubernetes
 ms.technology: vs-azure
-ms.date: 06/02/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 description: In diesem Artikel werden die Prozesse zum Verwenden von Bridge to Kubernetes beschrieben, um eine Verbindung zwischen Ihrem Entwicklungscomputer und Ihrem Kubernetes-Cluster herzustellen.
 keywords: Bridge to Kubernetes, Docker, Kubernetes, Azure, Container
@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116102"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440609"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funktionsweise von Bridge to Kubernetes
 
@@ -105,6 +105,37 @@ Wenn Sie die Verbindung mit Ihrem Cluster trennen, entfernt Bridge to Kubernetes
 ## <a name="diagnostics-and-logging"></a>Diagnose und Protokollierung
 
 Wenn Sie Bridge to Kubernetes zum Herstellen einer Verbindung mit Ihrem Cluster verwenden, werden Diagnoseprotokolle Ihres Clusters auf dem Entwicklungscomputer im Ordner *Bridge to Kubernetes* im Verzeichnis *TEMP* protokolliert.
+
+## <a name="rbac-authorization"></a>RBAC-Autorisierung
+
+Kubernetes bietet rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) zum Verwalten von Berechtigungen für Benutzer und Gruppen. Weitere Informationen finden Sie in der [Kubernetes-Dokumentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/). Sie können die Berechtigungen für einen RBAC-fähigen Cluster festlegen, indem Sie eine YAML-Datei erstellen und `kubectl` verwenden, um sie auf den Cluster anzuwenden. 
+
+Um Berechtigungen für den Cluster festzulegen, erstellen oder ändern Sie eine YAML-Datei wie *permissions.yml* wie folgt, wobei Sie Ihren eigenen Namespace für `<namespace>` und diejenigen (Benutzer und Gruppen) verwenden, die Zugriff benötigen.
+
+```yml
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: bridgetokubernetes-<namespace>
+  namespace: development
+subjects:
+  - kind: User
+    name: jane.w6wn8.k8s.ginger.eu-central-1.aws.gigantic.io
+    apiGroup: rbac.authorization.k8s.io
+  - kind: Group
+    name: dev-admin
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
+```
+
+Wenden Sie die Berechtigungen mithilfe des folgenden Befehls an:
+
+```cmd
+kubectl -n <namespace> apply -f <yaml file name>
+```
 
 ## <a name="limitations"></a>Einschränkungen
 
