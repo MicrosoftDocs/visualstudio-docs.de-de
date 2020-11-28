@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente | Microsoft-Dokumentation'
+description: Markieren Sie Steuerelemente als sichere Steuerelemente in der Eigenschaft "Safe Control Entries" eines SharePoint-Projekt Elements oder im Paket-Designer, wenn Sie eine Assembly hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016256"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304512"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente
-  Aus Sicherheitsgründen unterscheidet SharePoint zwischen websteuer Elementen, die vor Skript Injektion und websteuer Elementen geschützt sind. Auf geschützte Steuerelemente oder *sichere Steuerelemente*kann von nicht vertrauenswürdigen Benutzern zugegriffen werden. Sie können Steuerelemente als sicher in der Eigenschaft Safe Control Entries eines SharePoint-Projekt Elements oder im **Paket-Designer** markieren, wenn Sie dem Paket eine Assembly hinzufügen. Weitere Informationen finden Sie unter
+  Aus Sicherheitsgründen unterscheidet SharePoint zwischen websteuer Elementen, die vor Skript Injektion und websteuer Elementen geschützt sind. Auf geschützte Steuerelemente oder *sichere Steuerelemente* kann von nicht vertrauenswürdigen Benutzern zugegriffen werden. Sie können Steuerelemente als sicher in der Eigenschaft Safe Control Entries eines SharePoint-Projekt Elements oder im **Paket-Designer** markieren, wenn Sie dem Paket eine Assembly hinzufügen. Weitere Informationen finden Sie unter
 
 - [web.config Datei Einstellungen ändern](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) und [Registrieren einer Webpartassembly als sicheres Steuer](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))Element.
 
@@ -43,11 +45,11 @@ ms.locfileid: "86016256"
 
 4. Wählen Sie im Dialogfeld **Einträge für sicheres Steuer** **Element die Schalt** Fläche **Hinzufügen** zweimal aus, um dem Bereich Elemente zwei Einträge für sicheres Steuerelement hinzuzufügen: eine für die Schaltfläche und eine für das Textfeld.
 
-5. Wählen Sie den ersten Eintrag für den sicheren Eintrag aus, und ändern Sie dann den Wert der **Safe** -Eigenschaft in **false**, seine **Typname** -Eigenschaft in **Button1**und die zugehörige Sicherheit für die **Script** -Eigenschaft in **false**.
+5. Wählen Sie den ersten Eintrag für den sicheren Eintrag aus, und ändern Sie dann den Wert der **Safe** -Eigenschaft in **false**, seine **Typname** -Eigenschaft in **Button1** und die zugehörige Sicherheit für die **Script** -Eigenschaft in **false**.
 
      In diesem Schritt wird das Schaltflächen-Steuerelement als unsicherer Steuerelement identifiziert.
 
-6. Wählen Sie den zweiten Eintrag für sicheres Steuerelement in der Liste aus. Belassen Sie den Wert der **sicheren** Eigenschaft auf **true** , und legen Sie die Eigenschaft **Typname** auf **TextBox1** und die Eigenschaft für die Eigenschaft für den **sicheren** Zustand auf **true**fest.
+6. Wählen Sie den zweiten Eintrag für sicheres Steuerelement in der Liste aus. Belassen Sie den Wert der **sicheren** Eigenschaft auf **true** , und legen Sie die Eigenschaft **Typname** auf **TextBox1** und die Eigenschaft für die Eigenschaft für den **sicheren** Zustand auf **true** fest.
 
      Das Textfeld-Steuerelement ist nun als Steuerelement gekennzeichnet, das gegen Skript Injektion sicher ist.
 
@@ -67,13 +69,13 @@ ms.locfileid: "86016256"
 
 4. Erstellen Sie eine weitere SharePoint-Lösung.
 
-5. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die *Package. Package* -Datei, und wählen Sie dann **Öffnen** aus, um den **Paket-Designer**zu öffnen.
+5. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für die *Package. Package* -Datei, und wählen Sie dann **Öffnen** aus, um den **Paket-Designer** zu öffnen.
 
-6. Wählen Sie im **Paket-Designer**die Registerkarte **erweitert** aus.
+6. Wählen Sie im **Paket-Designer** die Registerkarte **erweitert** aus.
 
-7. Wählen Sie unter **zusätzliche**Assemblys die Schaltfläche **Hinzufügen** aus, und wählen Sie dann vorhandene Assembly aus der Liste **Hinzufügen** aus.
+7. Wählen Sie unter **zusätzliche** Assemblys die Schaltfläche **Hinzufügen** aus, und wählen Sie dann vorhandene Assembly aus der Liste **Hinzufügen** aus.
 
-8. Wählen Sie im Dialogfeld **vorhandene Assembly hinzufügen** die Schaltfläche mit den Auslassungs Zeichen (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")) neben **Quellpfad**aus.
+8. Wählen Sie im Dialogfeld **vorhandene Assembly hinzufügen** die Schaltfläche mit den Auslassungs Zeichen (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")) neben **Quellpfad** aus.
 
 9. Wählen Sie die Assembly aus der SharePoint-Lösung aus, die Sie in Schritt 1 erstellt haben, und wählen Sie dann die Schaltfläche **Öffnen** aus.
 
@@ -112,6 +114,6 @@ ms.locfileid: "86016256"
 
 16. Wählen Sie die **Tab** -Taste, und klicken Sie dann auf die Schaltfläche **OK** , um das Dialogfeld zu schließen.
 
-## <a name="see-also"></a>Weitere Informationen
-- [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+## <a name="see-also"></a>Siehe auch
+- [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

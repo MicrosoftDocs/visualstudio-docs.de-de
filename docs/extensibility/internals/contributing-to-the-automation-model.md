@@ -1,5 +1,7 @@
 ---
 title: Beitrag zum Automatisierungs Modell | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie zum Visual Studio-Automatisierungs Modell beitragen, indem Sie eine Reihe von Richtlinien befolgen, wenn Sie ein VSPackage entwerfen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709269"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305593"
 ---
 # <a name="contribute-to-the-automation-model"></a>Zum Automatisierungs Modell beitragen
 Visual Studio bietet eine Reihe von Automatisierungs Schnittstellen für die Anpassung der Umgebung. Das Automatisierungs Modell ist das Objektmodell, mit dem Endbenutzer Visual Studio-Add-Ins und-Erweiterungen erstellen können.
@@ -65,5 +67,5 @@ Visual Studio bietet eine Reihe von Automatisierungs Schnittstellen für die Anp
 
  Enthält Informationen zur Automatisierung für Konfigurations-und SelectedItems-Objekte.
 
-## <a name="reference"></a>Verweis
+## <a name="reference"></a>Referenz
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Enthält ein Codebeispiel, das zeigt, wie ein VSPackage an dem DTE-Automatisierungs Objektmodell teilnimmt. Listet Parameter, Rückgabewerte und ausgewählte Hinweise auf.

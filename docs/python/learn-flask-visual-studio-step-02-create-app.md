@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a06c6dbacf21cb2ce00539af901c24c77aaf9ef5
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313743"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974097"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Flask-App mit Ansichten und Seitenvorlagen
 
@@ -84,7 +84,7 @@ Durch die Vorlage „Leeres Flask-Webprojekt“ wurde die Datei *app.py* erstell
 
 7. Klicken Sie auf **Debuggen** > **Debuggen starten** (**F5**), oder klicken Sie auf die Schaltfläche **Webserver** in der Symbolleiste, um die App zu starten und einen Browser zu öffnen. Der bei Ihnen aufgerufene Browser kann variieren. Verwenden Sie probeweise sowohl die URL-Route „/“ als auch „/home“.
 
-8. Sie können in verschiedenen Teilen des Codes auch Breakpoints festlegen und die App neu starten, wenn Sie die Startsequenz nachvollziehen möchten. Legen Sie beispielsweise einen Haltepunkt für die ersten Zeilen von *runserver.py* und *HelloFlask\_* init *_.py* und für die Zeile `return "Hello Flask!"` in *views.py* fest. Wenn Sie nun die App neu starten (**Debuggen** > **Neu starten**, **STRG**+**F5** oder über die unten gezeigten Schaltflächen für Symbolleisten), können Sie den Code ausführlich durchlaufen (**F10**) oder von jedem Haltepunkt aus mithilfe von **F5** starten.
+8. Sie können in verschiedenen Teilen des Codes auch Breakpoints festlegen und die App neu starten, wenn Sie die Startsequenz nachvollziehen möchten. Legen Sie beispielsweise einen Haltepunkt für die ersten Zeilen von *runserver.py* und *HelloFlask\_* init *_.py* und für die Zeile `return "Hello Flask!"` in *views.py* fest. Starten Sie dann die App neu (**Debuggen** > **Neu starten**, **STRG**+**UMSCHALT**+**F5** oder über die unten gezeigte Symbolleistenschaltfläche), und gehen Sie schrittweise durch den Code (**F10**), oder führen Sie ihn von jedem Haltepunkt aus mit **F5** aus.
 
     ![Schaltfläche „Neu starten“ auf der Debugging-Symbolleiste in Visual Studio](media/debugging-restart-toolbar-button.png)
 

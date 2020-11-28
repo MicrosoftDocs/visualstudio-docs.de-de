@@ -1,6 +1,8 @@
 ---
 title: Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools
 titleSuffix: ''
+description: Lesen Sie eine Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools. Implementieren von Erweiterbarkeits Schnittstellen. Verstehen Sie die Objekt Modelle.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585731"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305130"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools
   Wenn Sie eine Erweiterung für die SharePoint-Tools in Visual Studio erstellen, beginnen Sie damit, indem Sie eine oder mehrere Erweiterungsschnittstellen implementieren, die von den SharePoint-Tools verfügbar gemacht werden. In den meisten Fällen verwenden Sie auch andere von den SharePoint-Tools bereitgestellte Typen, um Funktionen in der Erweiterung zu implementieren. Für einige Szenarien können Sie auch Typen in anderen Objektmodellen verwenden, die von Visual Studio und SharePoint bereitgestellt werden. Sie müssen den Zweck der einzelnen Objektmodelle verstehen und wissen, wie Sie diese miteinander kombinieren können, um Erweiterungen für die SharePoint-Tools zu erstellen.
@@ -30,7 +32,7 @@ ms.locfileid: "91585731"
 
  Um die SharePoint-Tools zu erweitern, implementieren Sie eine oder mehrere Erweiterungsschnittstellen, die von Visual Studio bereitgestellt werden. Sie müssen auch das <xref:System.ComponentModel.Composition.ExportAttribute> sowie bei Bedarf weitere für die SharePoint-Tools spezifische Attribute auf Ihre Schnittstellenimplementierung anwenden. In der folgenden Tabelle sind die Schnittstellen aufgeführt, die Sie zum Erweitern der SharePoint-Tools implementieren können.
 
-|Schnittstelle|Beschreibung|
+|Interface|Beschreibung|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Implementieren Sie diese Schnittstelle, um einen neuen Typ von SharePoint-Projektelement zu definieren. Ein Beispiel finden Sie unter Gewusst [wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Implementieren Sie diese Schnittstelle, um einen SharePoint-Projektelementtyp zu erweitern, der in Visual Studio bereits installiert ist. Ein Beispiel finden Sie unter Gewusst [wie: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|
@@ -73,7 +75,7 @@ ms.locfileid: "91585731"
 
 |Namespace|BESCHREIBUNG|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Commands>|Enthält Typen, die Sie zum Erstellen von benutzerdefinierten *SharePoint-Befehlen*verwenden können. Ein SharePoint-Befehl ist eine Methode, die einen Aufruf in das SharePoint-Serverobjektmodell von einer SharePoint-Tools-Erweiterung aus durchführt. Weitere Informationen finden Sie unter " [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)".|
+|<xref:Microsoft.VisualStudio.SharePoint.Commands>|Enthält Typen, die Sie zum Erstellen von benutzerdefinierten *SharePoint-Befehlen* verwenden können. Ein SharePoint-Befehl ist eine Methode, die einen Aufruf in das SharePoint-Serverobjektmodell von einer SharePoint-Tools-Erweiterung aus durchführt. Weitere Informationen finden Sie unter " [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)".|
 
 #### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll
 
@@ -89,11 +91,11 @@ ms.locfileid: "91585731"
  Weitere Informationen zum Automatisierungs Objektmodell finden Sie unter [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md).
 
 ### <a name="visual-studio-integration-object-model"></a>Visual Studio-Integrations Objektmodell
- Das Integrations Objektmodell stellt APIs bereit, mit denen Sie Visual Studio Funktionen hinzufügen können, indem Sie ein *VSPackage*erstellen. Ein VSPackage ist ein Modul, das die Visual Studio-IDE durch benutzerdefinierte Funktionen wie Toolfenster, Editoren, Designer, Dienste und Projekte erweitert.
+ Das Integrations Objektmodell stellt APIs bereit, mit denen Sie Visual Studio Funktionen hinzufügen können, indem Sie ein *VSPackage* erstellen. Ein VSPackage ist ein Modul, das die Visual Studio-IDE durch benutzerdefinierte Funktionen wie Toolfenster, Editoren, Designer, Dienste und Projekte erweitert.
 
- Sie können das Integrationsobjektmodell verwenden, wenn Sie eine neue Visual Studio-Funktion hinzufügen möchten, die zusammen mit den integrierten SharePoint-Tools verwendet wird. Wenn Sie z. B. ein benutzerdefiniertes SharePoint-Projektelement erstellen, das eine benutzerdefinierte Aktion für eine SharePoint-Website darstellt, können Sie auch ein VSPackage erstellen, das einen Designer für die benutzerdefinierte Aktion implementiert. Sie können den Designer der benutzerdefinierten Aktion zuordnen, indem Sie dem Projekt Element, das die benutzerdefinierte Aktion in **Projektmappen-Explorer**darstellt, ein Kontextmenü Element hinzufügen. Sie können den Designer öffnen, indem **Sie das Kontext**Menü öffnen (Klicken Sie dazu mit der rechten Maustaste auf das Projekt Element "benutzerdefinierte Aktion", oder wählen Sie es aus, und wählen Sie dann die Tastenkombination + **F10** ) und dann **Öffnen**aus.
+ Sie können das Integrationsobjektmodell verwenden, wenn Sie eine neue Visual Studio-Funktion hinzufügen möchten, die zusammen mit den integrierten SharePoint-Tools verwendet wird. Wenn Sie z. B. ein benutzerdefiniertes SharePoint-Projektelement erstellen, das eine benutzerdefinierte Aktion für eine SharePoint-Website darstellt, können Sie auch ein VSPackage erstellen, das einen Designer für die benutzerdefinierte Aktion implementiert. Sie können den Designer der benutzerdefinierten Aktion zuordnen, indem Sie dem Projekt Element, das die benutzerdefinierte Aktion in **Projektmappen-Explorer** darstellt, ein Kontextmenü Element hinzufügen. Sie können den Designer öffnen, indem **Sie das Kontext** Menü öffnen (Klicken Sie dazu mit der rechten Maustaste auf das Projekt Element "benutzerdefinierte Aktion", oder wählen Sie es aus, und wählen Sie dann die Tastenkombination + **F10** ) und dann **Öffnen** aus.
 
- Dieses Objektmodell ist in einem Satz mehrerer Assemblys definiert, die im Visual Studio-SDK enthalten sind. Einige der Hauptassemblys in diesem Objektmodell umfassen *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*und *Microsoft.VisualStudio.OLE.Interop.dll*.
+ Dieses Objektmodell ist in einem Satz mehrerer Assemblys definiert, die im Visual Studio-SDK enthalten sind. Einige der Hauptassemblys in diesem Objektmodell umfassen *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll* und *Microsoft.VisualStudio.OLE.Interop.dll*.
 
  Weitere Informationen zum Integrations Objektmodell finden Sie unter Übersicht über das [Automatisierungs Modell](../extensibility/internals/automation-model-overview.md) und [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md).
 
@@ -104,10 +106,10 @@ ms.locfileid: "91585731"
 
 |Objektmodell|Beschreibung|
 |------------------|-----------------|
-|Serverobjektmodell|Das Serverobjektmodell bietet Zugriff auf alle Funktionen, die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programmgesteuert verfügbar machen. Dieses Objektmodell wurde für SharePoint-Lösungen entworfen, die auf dem SharePoint-Server ausgeführt werden. Der Großteil dieses Objektmodells wird in der *Microsoft.SharePoint.dll* -Assembly definiert. Weitere Informationen zum Server Objektmodell finden [Sie unter Verwenden des serverseitigen SharePoint Foundation-Objektmodells](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
+|Serverobjektmodell|Das Serverobjektmodell bietet Zugriff auf alle Funktionen, die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programmgesteuert verfügbar machen. Dieses Objektmodell wurde für SharePoint-Lösungen entworfen, die auf dem SharePoint-Server ausgeführt werden. Der Großteil dieses Objektmodells wird in der *Microsoft.SharePoint.dll* -Assembly definiert. Weitere Informationen zum Server Objektmodell finden [Sie unter Verwenden des SharePoint Foundation Server-Side-Objektmodells](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Clientobjektmodell|Das Clientobjektmodell ist eine Teilmenge des Serverobjektmodells und kann verwendet werden, um die SharePoint-Daten auf einem Remoteclient oder einem Server zu verarbeiten. Beim Entwurf wurde darauf geachtet, die Anzahl der Roundtrips zu minimieren, die zum Ausführen häufiger Aufgaben notwendig ist. Der Großteil des Client Objektmodells wird in den *Microsoft.SharePoint.Client.dll* -und *Microsoft.SharePoint.Client.Runtime.dll* Assemblys definiert. Weitere Informationen zum Client Objektmodell finden Sie unter [verwaltetes Client Objektmodell](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md)

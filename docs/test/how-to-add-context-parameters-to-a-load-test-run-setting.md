@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstestlauf
+description: Lernen Sie, mit dem Auslastungstest-Editor in einer Auslastungstestlauf-Einstellung zu verwendende Kontextparameter zu erstellen, mit denen Sie eine Zeichenfolge parametrisieren können.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22b3a6a1f40a317284380bf72aadec4d53b6ce13
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288415"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440186"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Vorgehensweise: Hinzufügen von Kontextparametern zu einer Einstellung für einen Auslastungstest
 
@@ -60,7 +62,7 @@ Darüber hinaus können Sie den Auslastungstest mit anderen Umgebungen ausführe
 
      Dem Ordner **Kontextparameter** im Ordner **Laufzeiteinstellungen** in der Auslastungsteststruktur wird ein neuer Kontextparameter hinzugefügt.
 
-     \- oder -
+     - oder -
 
      Wenn die Laufzeiteinstellung bereits einen **Kontextparameter**-Ordner enthält, können Sie mit der rechten Maustaste darauf klicken und dann auf **Kontextparameter hinzufügen** klicken.
 

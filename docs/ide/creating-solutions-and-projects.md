@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Projektmappen und Projekten
+description: Erfahren Sie mehr über den Unterschied zwischen Projektmappen und Projekten und wie sie in Visual Studio verwendet werden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770545"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006444"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -88,7 +90,7 @@ Sie können auch leere Projektmappen ohne Projekt erstellen. Dies erweist sich u
 
 ### <a name="to-create-an-empty-solution"></a>So erstellen Sie eine leere Projektmappe
 
-1. Klicken Sie auf der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -102,7 +104,7 @@ Sie können auch leere Projektmappen ohne Projekt erstellen. Dies erweist sich u
 
 ::: moniker range=">=vs-2019"
 
-2. Geben Sie auf der Seite **Neues Projekt erstellen** **Projektmappe** in das Suchfeld ein.
+2. Geben Sie auf der Seite **Neues Projekt erstellen****Projektmappe** in das Suchfeld ein.
 
 3. Wählen Sie die Vorlage **Leere Projektmappe** aus, und klicken Sie dann auf **Weiter**.
 

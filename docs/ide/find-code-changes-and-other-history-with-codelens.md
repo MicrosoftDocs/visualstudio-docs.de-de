@@ -1,5 +1,7 @@
 ---
 title: Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
+description: Erfahren Sie mehr über CodeLens, und wie Sie es verwenden können, um den Verlauf Ihres Codes zu untersuchen, ohne den Editor verlassen zu müssen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928501"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006704"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens
 
@@ -71,7 +73,7 @@ Sie können Verweise in C#- oder Visual Basic-Code suchen.
 
 Überprüfen Sie den Codeverlauf, um zu ermitteln, was mit Ihrem Code geschehen ist. Sie können die Änderungen auch überprüfen, bevor sie mit Ihrem Code zusammengeführt werden. Auf diese Weise können Sie besser beurteilen, wie sich Änderungen in anderen Verzweigungen möglicherweise auf Ihren Code auswirken.
 
-Sie benötigen Folgendes:
+Erforderlich:
 
 - Visual Studio Enterprise- oder Professional-Edition
 
@@ -113,7 +115,7 @@ Wenn Ihre Dateien sich in einem Git-Repository befinden und Sie den Codeindikato
 
 Suchen Sie in den Indikatoren auf Dateiebene am unteren Rand des Fensters nach Änderungen für eine gesamte Datei:
 
-![CodeLens: Abrufen von Codedateidetails](../ide/media/codelens-file-level.png)
+![CodeLens: Codedateidetails abrufen](../ide/media/codelens-file-level.png)
 
 > [!NOTE]
 > Indikatoren auf Dateiebene sind für C#- und Visual Basic-Dateien nicht verfügbar.
@@ -128,7 +130,7 @@ Sie können auch sehen, wer den Code in einem bestimmten Zeitraum geändert hat.
 
 Möglicherweise verfügt Ihr Team über mehrere Branches, z.B. einen Hauptbranch und einen untergeordnete Entwicklungsbranch, um das Risiko von Schäden an stabilem Code zu verringern.
 
-![CodeLens: Sehen, wann Ihr Code verzweigt wurde](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens: Änderungen in der aktuellen Verzweigung finden](../ide/media/codelensfirstbranchconceptual.png)
 
 Sie können herausfinden, wie viele Personen Ihren Code geändert haben und wie viele Änderungen am Hauptbranch vorgenommen wurden, indem Sie **ALT**+**6** drücken:
 
@@ -146,17 +148,17 @@ Navigieren Sie im untergeordneten Branch zu Ihrem Code, um herauszufinden, wann 
 
 Sie können eingehende Änderungen anzeigen. Im folgenden Screenshot wurde ein Fehler im Branch „Dev“ behoben:
 
-![CodeLens: Aktiviertes in anderen Branch ändern](../ide/media/codelens-branch-changes-dev.png)
+![CodeLens: Aktiviertes in andere Verzweigung ändern](../ide/media/codelens-branch-changes-dev.png)
 
 Sie können die Änderung überprüfen, ohne den aktuelle Branch zu verlassen (Hauptbranch):
 
-![CodeLens: Eingehende Änderungen von anderem Branch sehen](../ide/media/codelens-branch-changes-main.png)
+![CodeLens: Eingehende Änderungen von anderer Verzweigung sehen](../ide/media/codelens-branch-changes-main.png)
 
 ### <a name="find-when-changes-got-merged"></a>Herausfinden, wann Änderungen zusammengeführt wurden
 
 Sie können sehen, wann die Änderungen zusammengeführt wurden, sodass Sie ermitteln können, welche Änderungen in Ihrem Branch enthalten sind:
 
-![CodeLens - Zusammengeführte Änderungen zwischen Verzweigungen](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens: Herausfinden, wann Änderungen zusammengeführt wurden](../ide/media/codelensbranchmergedconceptual.png)
 
 Zum Beispiel enthält der Code im Hauptbranch jetzt die Fehlerkorrektur des Branches „Dev“:
 
@@ -172,16 +174,16 @@ Vergleichen Sie eine eingehende Änderung mit Ihrer lokalen Version, in dem Sie 
 
 Das Symbol in der Spalte **Branch** gibt die Beziehung des Branches zu dem Branch an, in dem Sie arbeiten.
 
-|**Symbol**|**Ursprung der Änderung:**|
+|**Symbol:**|**Ursprung der Änderung:**|
 |--------------| - |
-|![CodeLens: Änderung des Symbols für aktuellen Branch](../ide/media/codelensbranchcurrenticon.png)|Die aktuelle Verzweigung|
-|![CodeLens: Änderung des Symbols für übergeordneten Branch](../ide/media/codelensbranchparenticon.png)|Die übergeordnete Verzweigung|
-|![CodeLens: Änderung des Symbols für untergeordneten Branch](../ide/media/codelensbranchchildicon.png)|Eine untergeordnete Verzweigung|
-|![CodeLens: Änderung des Symbols für Peerbranch](../ide/media/codelensbranchpeericon.png)|Eine Peerverzweigung|
-|![CodeLens: Änderung des Symbols für weiter entfernten Branch](../ide/media/codelensbranchfurtherawayicon.png)|Eine Verzweigung, die sich weiter entfernt befindet als über- oder untergeordnet und Peer|
-|![CodeLens: Von übergeordnetem Symbol zusammenführen](../ide/media/codelensbranchmergefromparenticon.png)|Eine Zusammenführung von der übergeordneten zu einer untergeordneten Verzweigung|
+|![CodeLens: Änderung des Symbols für aktuelle Verzweigung](../ide/media/codelensbranchcurrenticon.png)|Die aktuelle Verzweigung|
+|![CodeLens: Symbol für Änderungen durch den übergeordneten Branch](../ide/media/codelensbranchparenticon.png)|Die übergeordnete Verzweigung|
+|![CodeLens: Änderung vom Symbol für untergeordnete Verzweigung](../ide/media/codelensbranchchildicon.png)|Eine untergeordnete Verzweigung|
+|![CodeLens: Symbol für Änderungen durch einen Peerbranch](../ide/media/codelensbranchpeericon.png)|Eine Peerverzweigung|
+|![CodeLens: Symbol für Änderungen durch einen weiter entfernten Branch](../ide/media/codelensbranchfurtherawayicon.png)|Eine Verzweigung, die sich weiter entfernt befindet als über- oder untergeordnet und Peer|
+|![CodeLens: Vom übergeordneten Symbol zusammenführen](../ide/media/codelensbranchmergefromparenticon.png)|Eine Zusammenführung von der übergeordneten zu einer untergeordneten Verzweigung|
 |![CodeLens: Vom Symbol für untergeordnete Verzweigung zusammenführen](../ide/media/codelensbranchmergefromchildicon.png)|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|
-|![CodeLens: Vom Symbol für übergeordnete Verzweigung zusammenführen](../ide/media/codelensbranchmergefromunrelatedicon.png)|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|
+|![CodeLens: Vom Symbol für nicht zugeordnete Verzweigung zusammenführen](../ide/media/codelensbranchmergefromunrelatedicon.png)|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|
 
 ## <a name="linked-work-items"></a>Verknüpfte Arbeitselemente
 
@@ -250,7 +252,7 @@ Drücken und halten Sie zum Auswählen von Indikatoren über die Tastatur die **
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Frage: Wie aktiviere oder deaktiviere ich CodeLens, bzw. wie wähle ich die anzuzeigenden Indikatoren aus?
 
-**Antwort:**  Sie können die Indikatoren aktivieren und deaktivieren, mit Ausnahme des Verweisindikators. Navigieren Sie zu **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **CodeLens**.
+**A:**  Sie können die Indikatoren aktivieren und deaktivieren, mit Ausnahme des Verweisindikators. Navigieren Sie zu **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **CodeLens**.
 
 Wenn die Indikatoren aktiviert wurden, können Sie die CodeLens-Optionen auch über die Indikatoren öffnen.
 
@@ -260,9 +262,9 @@ Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe de
 
 ![Dateiebenenindikatoren aktivieren und deaktivieren](../ide/media/codelensfilelevelonandoff.png)
 
-### <a name="q-where-is-codelens"></a>Frage: Wo befindet sich CodeLens?
+### <a name="q-where-is-codelens"></a>F: Wo befindet sich CodeLens?
 
-**Antwort:** CodeLens wird in C#- und Visual Basic-Code auf der Methoden-, Klassen-, Indexer- und Eigenschaftsebene angezeigt. CodeLens wird auf Dateiebene für alle anderen Dateitypen angezeigt.
+**A**: CodeLens wird in C#- und Visual Basic-Code auf der Methoden-, Klassen-, Indexer- und Eigenschaftsebene angezeigt. CodeLens wird auf Dateiebene für alle anderen Dateitypen angezeigt.
 
 - Stellen Sie sicher, dass CodeLens aktiviert ist. Navigieren Sie zu **Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **CodeLens**.
 
@@ -286,13 +288,13 @@ Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe de
 
 ::: moniker-end
 
-### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Frage: Warum sehe ich keine Arbeitselementdetails für einen Commit?
+### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>F: Warum sehe ich keine Arbeitselementdetails für einen Commit?
 
-**Antwort:** Dies kann passieren, wenn CodeLens die Arbeitselemente in Azure Boards oder TFS nicht finden kann. Stellen Sie sicher, dass Sie mit dem Projekt verbunden sind, das diese Arbeitselemente enthält, und dass Sie über die erforderlichen Berechtigungen verfügen, diese Arbeitselemente anzuzeigen. Arbeitselementdetails werden möglicherweise ebenfalls nicht angezeigt, wenn die Commitbeschreibung falsche Informationen zu den Arbeitselement-IDs in Azure Boards oder TFS enthält.
+**A:** Dies kann passieren, wenn CodeLens die Arbeitselemente in Azure Boards oder TFS nicht finden kann. Stellen Sie sicher, dass Sie mit dem Projekt verbunden sind, das diese Arbeitselemente enthält, und dass Sie über die erforderlichen Berechtigungen verfügen, diese Arbeitselemente anzuzeigen. Arbeitselementdetails werden möglicherweise ebenfalls nicht angezeigt, wenn die Commitbeschreibung falsche Informationen zu den Arbeitselement-IDs in Azure Boards oder TFS enthält.
 
-### <a name="q-why-dont-i-see-the-skype-indicators"></a>Frage: Warum sehe ich keine Skype-Indikatoren?
+### <a name="q-why-dont-i-see-the-skype-indicators"></a>F: Warum sehe ich keine Skype-Indikatoren?
 
-**Antwort:** Skype-Indikatoren werden nicht angezeigt, wenn Sie nicht bei Skype for Business angemeldet sind, es nicht installiert haben oder über keine unterstützte Konfiguration verfügen. Allerdings können Sie weiterhin E-Mails senden:
+**A:** Skype-Indikatoren werden nicht angezeigt, wenn Sie nicht bei Skype for Business angemeldet sind, es nicht installiert haben oder über keine unterstützte Konfiguration verfügen. Allerdings können Sie weiterhin E-Mails senden:
 
 ![CodeLens – Sich per E-Mail an den Besitzer des Changesets wenden](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
@@ -304,9 +306,9 @@ Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe de
 
 CodeLens unterstützt nicht die Installation verschiedener Versionen von Lync oder Skype. Sie sind möglicherweise nicht für alle lokalisierten Versionen von Visual Studio lokalisiert.
 
-### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Frage: Wie ändere ich Schriftart und Farbe für CodeLens?
+### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>F: Wie ändere ich Schriftart und Farbe für CodeLens?
 
-**Antwort:** Navigieren Sie zu **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben**.
+**A:** Navigieren Sie zu **Extras** > **Optionen** > **Umgebung** > **Schriftarten und Farben**.
 
 ![CodeLens – Schriftart- und Farbeinstellungen ändern](../ide/media/codelensoptionsfontscolorssettings.png)
 
@@ -316,43 +318,43 @@ So verwenden Sie die Tastatur:
 
 2. Drücken Sie die **NACH-OBEN-TASTE** oder die **NACH-UNTEN-TASTE** , um zum Knoten **Umgebung** zu wechseln, und dann die **NACH-LINKS-TASTE** , um den Knoten zu erweitern.
 
-3. Drücken Sie die **NACH-UNTEN-TASTE** , um zu **Schriftarten und Farben**zu wechseln.
+3. Drücken Sie die **NACH-UNTEN-TASTE** , um zu **Schriftarten und Farben** zu wechseln.
 
-4. Drücken Sie die **TAB-TASTE**, um zur Liste **Einstellungen anzeigen für** zu wechseln, und drücken Sie dann die **NACH-UNTEN-TASTE**, um **CodeLens**auszuwählen.
+4. Drücken Sie die **TAB-TASTE**, um zur Liste **Einstellungen anzeigen für** zu wechseln, und drücken Sie dann die **NACH-UNTEN-TASTE**, um **CodeLens** auszuwählen.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Frage: Kann ich das CodeLens-Heads-up-Display verschieben?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>F: Kann ich das CodeLens-Heads-up-Display verschieben?
 
-**Antwort:** Ja, klicken Sie auf ![Andocksymbol](../ide/media/codelensdockwindow.png), um CodeLens als Fenster anzudocken.
+**A:** Ja, klicken Sie auf ![Andocksymbol](../ide/media/codelensdockwindow.png), um CodeLens als Fenster anzudocken.
 
 ![Schaltfläche „Andocken“ im CodeLens-Indikatorfenster](../ide/media/codelensselectdockwindow.png)
 
 ![Angedocktes CodeLens-Verweisfenster](../ide/media/codelensreferencesdockedwindow.png)
 
-### <a name="q-how-do-i-refresh-the-indicators"></a>Frage: Wie aktualisiere ich die Indikatoren?
+### <a name="q-how-do-i-refresh-the-indicators"></a>F: Wie aktualisiere ich die Indikatoren?
 
-**Antwort:** Dies hängt vom Indikator ab:
+**A:** Dies hängt vom Indikator ab:
 
 - **Verweise**: Dieser Indikator wird bei einer Änderung des Codes automatisch aktualisiert. Wenn der Indikator **Verweise** als separates Fenster angedockt ist, aktualisieren Sie den Indikator, indem Sie auf **Aktualisieren** klicken:
 
    ![Schaltfläche „Aktualisieren“ in CodeLens-Verweise](../ide/media/codelensviewreferencesdocked.png)
 
-- **Team**: Aktualisieren Sie diese Indikatoren, indem Sie im Kontextmenü auf **CodeLens-Teamindikatoren aktualisieren** klicken:
+- **Team:** Aktualisieren Sie diese Indikatoren, indem Sie im Kontextmenü auf **CodeLens-Teamindikatoren aktualisieren** klicken:
 
    ![Menüelement „CodeLens-Teamindikatoren aktualisieren“](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **Test**: [Suchen von Komponententests für Ihren Code](#associated-unit-tests) zum Aktualisieren des **Testindikators**.
+- **Test:**[Suchen von Komponententests für Ihren Code](#associated-unit-tests) zum Aktualisieren des Indikators **Test**.
 
-### <a name="q-whats-local-version"></a>Frage: Was bedeutet „Lokale Version“?
+### <a name="q-whats-local-version"></a>F: Was bedeutet „Lokale Version“?
 
-**Antwort:** Der Pfeil **Lokale Version** zeigt auf das neueste Changeset in der lokalen Version einer Datei. Wenn der Server über neuere Changesets verfügt, werden sie je nach Reihenfolge, in der sie sortiert sind, über oder unter dem Pfeil **Lokale Version** angezeigt.
+**A:** Der Pfeil **Lokale Version** zeigt auf das neueste Changeset in der lokalen Version einer Datei. Wenn der Server über neuere Changesets verfügt, werden sie je nach Reihenfolge, in der sie sortiert sind, über oder unter dem Pfeil **Lokale Version** angezeigt.
 
-### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Frage: Kann ich verwalten, wie CodeLens den Code verarbeitet, um den Verlauf und verknüpfte Elemente anzuzeigen?
+### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>F: Kann ich verwalten, wie CodeLens den Code verarbeitet, um den Verlauf und verknüpfte Elemente anzuzeigen?
 
-**Antwort:** Ja. Wenn sich der Code in TFS befindet, können Sie hierzu den [CodeIndex-Befehl](../ide/codeindex-command.md) mit dem [TFSConfig-Befehl](/azure/devops/server/command-line/tfsconfig-cmd) verwenden.
+**A:** Ja. Wenn sich der Code in TFS befindet, können Sie hierzu den [CodeIndex-Befehl](../ide/codeindex-command.md) mit dem [TFSConfig-Befehl](/azure/devops/server/command-line/tfsconfig-cmd) verwenden.
 
-### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Frage: Meine CodeLens-Testindikatoren werden beim ersten Öffnen der Projektmappe nicht mehr in meiner Datei angezeigt. Wie kann ich sie laden?
+### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>F: Meine CodeLens-Testindikatoren werden beim ersten Öffnen der Projektmappe nicht mehr in meiner Datei angezeigt. Wie kann ich sie laden?
 
-**Antwort:** Erstellen Sie Ihr Projekt erneut, damit die CodeLens-Testindikatoren in Ihre Datei geladen werden. Zur Verbesserung der Leistung ruft Visual Studio beim Laden von Codedateien keine Quellinformationen mehr für Testindikatoren ab. Testindikatoren werden geladen, nachdem ein Build geladen wurde, oder wenn Sie zu einem Test navigieren, indem Sie im **Test-Explorer** darauf doppelklicken.
+**A:** Erstellen Sie Ihr Projekt erneut, damit die CodeLens-Testindikatoren in Ihre Datei geladen werden. Zur Verbesserung der Leistung ruft Visual Studio beim Laden von Codedateien keine Quellinformationen mehr für Testindikatoren ab. Testindikatoren werden geladen, nachdem ein Build geladen wurde, oder wenn Sie zu einem Test navigieren, indem Sie im **Test-Explorer** darauf doppelklicken.
 
 ## <a name="see-also"></a>Siehe auch
 

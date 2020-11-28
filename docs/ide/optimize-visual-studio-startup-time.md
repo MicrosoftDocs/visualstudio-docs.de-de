@@ -1,5 +1,7 @@
 ---
 title: Verbessern der Uptime
+description: Erfahren Sie, wie Sie die Einstellungen für Erweiterungen und Toolfenster im Dialogfeld „Visual Studio-Leistung verwalten“ steuern, um die Startzeit von Visual Studio zu verbessern.
+ms.custom: SEO-VS-2020
 ms.date: 11/15/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 399bab1b95a7f17166f205902d04a1abec10e6dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770970"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871495"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Verbessern der Startzeit von Visual Studio
 
@@ -70,6 +72,6 @@ Sie können die Erweiterung jederzeit über den **Erweiterungs-Manager** oder da
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Tipps und Tricks zur Leistungssteigerung für Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Optimieren der Visual Studio-Leistung](../ide/optimize-visual-studio-performance.md)
+- [Tipps und Tricks für die Leistung von Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

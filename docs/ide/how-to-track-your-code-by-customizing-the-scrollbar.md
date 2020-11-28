@@ -1,5 +1,7 @@
 ---
 title: Scrollleisten-Zuordnungsmodus und -Leistenmodus
+description: Erfahren Sie, wie Sie Änderungen in Ihrem Code durch die Anpassung der Scrollleiste nachverfolgen, und wie Sie den Leisten- und Zuordnungsmodus verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 03/20/2020
 ms.topic: how-to
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c59ac152be9528ef3e01410f0a3b5f34dd882286
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283982"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596936"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Vorgehensweise: Anpassen der Scrollleiste
 

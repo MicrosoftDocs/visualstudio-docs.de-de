@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren von Warnungen in Visual Basic
+description: Erfahren Sie, wie Sie Warnungen in Visual Basic konfigurieren können, was Ihnen erleichtert, sauberen, schnelleren und besseren Code mit weniger Fehlern zu schreiben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114733"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006405"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurieren von Warnungen in Visual Basic
 
@@ -50,7 +52,7 @@ Die Liste mit Warnungen enthält die Fehler-IDs der Warnungen, die als Fehler be
 ## <a name="examples"></a>Beispiele
 In dieser Tabelle mit Beispielen für Befehlszeilenargumente wird die Bedeutung der einzelnen Argumente beschrieben.
 
-|Argument|Beschreibung|
+|Argument|BESCHREIBUNG|
 |--------------|-----------------|
 |`vbc /warnaserror`|Gibt an, dass alle Warnungen als Fehler behandelt werden sollen.|
 |`vbc /warnaserror:42024`|Gibt an, dass die Warnung 42024 als Fehler behandelt werden soll.|

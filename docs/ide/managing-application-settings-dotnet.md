@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Anwendungseinstellungen (.NET)
+description: Erfahren Sie, wie Sie Anwendungseinstellungen (früher als dynamische Eigenschaften bezeichnet) verwalten können, die nicht im Anwendungscode enthalten sind, aber zur Laufzeit benötigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593706"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596897"
 ---
 # <a name="manage-application-settings-net"></a>Verwalten von Anwendungseinstellungen (.NET)
 
@@ -50,7 +52,7 @@ Beachten Sie, dass Änderungen in den Benutzereinstellungen nicht auf die Festpl
 
 ## <a name="create-application-settings-at-design-time"></a>Erstellen von Anwendungseinstellungen zur Entwurfszeit
 
-Zur Entwurfszeit können Anwendungseinstellungen auf zwei Arten erstellt werden: im **Projekt-Designer** über die Seite **Einstellungen**oder für ein Formular oder ein Steuerelement über das **Eigenschaftenfenster** , in dem Sie eine Einstellung an eine Eigenschaft binden können.
+Zur Entwurfszeit können Anwendungseinstellungen auf zwei Arten erstellt werden: im **Projekt-Designer** über die Seite **Einstellungen** oder für ein Formular oder ein Steuerelement über das **Eigenschaftenfenster** , in dem Sie eine Einstellung an eine Eigenschaft binden können.
 
 Beim Erstellen einer anwendungsspezifischen Einstellung (z.B. einer Datenbankverbindungszeichenfolge oder eines Verweises auf Serverressourcen) speichert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] diese Einstellung in *app.config* mit dem `<applicationSettings>`-Tag. (Verbindungszeichenfolgen werden unter dem `<connectionStrings>` -Tag gespeichert.)
 
@@ -102,6 +104,6 @@ Properties.Settings.Default.Save();
 
 Allgemeine Informationen zum Zugriff auf Anwendungseinstellungen über die `Settings`-Klasse finden Sie unter [Übersicht über Anwendungseinstellungen (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Informationen über das Durchlaufen der Einstellungen finden Sie in diesem [Forumsbeitrag](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zugreifen auf Anwendungseinstellungen (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

@@ -1,5 +1,7 @@
 ---
 title: Bearbeiten von Tests der programmierten UI
+description: Erfahren Sie, wie Sie mit dem Editor für Tests der programmierten UI Ihre Testmethoden und UI-Aktionen suchen, anzeigen und bearbeiten können. Verwenden Sie die UI-Steuerelementzuordnung zum Anzeigen und Bearbeiten entsprechender Steuerelemente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d6c2fcf3d8807e9095abc9546e8bf1e39aecb8ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f78839280ae19da5020b08d499d347c0537a045
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288727"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441442"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 
@@ -37,19 +39,19 @@ Mit dem Editor für Tests der programmierten UI sind Sie schneller und effizient
 
 1. Mit [Suchen](../ide/finding-and-replacing-text.md) können Sie nach UI-Aktionen und -Steuerelementen suchen.
 
-2. Mit**Löschen** können Sie unerwünschte UI-Aktionen entfernen.
+2. Mit **Löschen** können Sie unerwünschte UI-Aktionen entfernen.
 
-3. Mit**Umbenennen** können Sie die Namen für Testmethoden und Steuerelemente ändern.
+3. Mit **Umbenennen** können Sie die Namen für Testmethoden und Steuerelemente ändern.
 
 4. **Eigenschaften** Öffnet das **Eigenschaftenfenster** für das ausgewählte Element.
 
-5. Mit**In eine neue Methode aufteilen** können Sie UI-Aktionen modularisieren.
+5. Mit **In eine neue Methode aufteilen** können Sie UI-Aktionen modularisieren.
 
-6. Mit**Code verschieben** können Sie benutzerdefinierten Code zu Testmethoden  hinzufügen.
+6. Mit **Code verschieben** können Sie benutzerdefinierten Code zu Testmethoden  hinzufügen.
 
-7. Mit**Verzögerung einfügen vor** können Sie eine Pause in Millisekunden vor einer UI-Aktion hinzufügen.
+7. Mit **Verzögerung einfügen vor** können Sie eine Pause in Millisekunden vor einer UI-Aktion hinzufügen.
 
-8. Mit**UI-Steuerelement suchen** wird die Position des Steuerelements in der Benutzeroberfläche der getesteten Anwendung ermittelt.
+8. Mit **UI-Steuerelement suchen** wird die Position des Steuerelements in der Benutzeroberfläche der getesteten Anwendung ermittelt.
 
 9. Mit **Alle suchen** können Sie Steuerelementeigenschaften und bedeutende Änderungen an den Steuerelementen der Anwendung überprüfen.
 
@@ -135,7 +137,7 @@ Wenn Sie die Aufteilung der Methode abgeschlossen haben, speichern Sie die Ände
 
 Wenn Sie feststellen, dass eine der Testmethoden im Test der programmierten UI benutzerdefinierten Code erfordert, müssen Sie sie in die Datei *UIMap.cs* oder *UIMap.vb* verschieben. Andernfalls wird der Code beim erneuten Kompilieren des Tests der programmierten UI überschrieben. Wenn Sie die Methode nicht verschieben, wird der benutzerdefinierte Code bei jedem erneuten Kompilieren des Tests überschrieben.
 
-Wählen Sie im Bereich **UI-Aktion** die Testmethode aus, die Sie in die Datei *UIMap.cs* oder *UIMap.vb* verschieben möchten. Dadurch vereinfachen Sie die Funktion für benutzerdefinierten Code, die beim erneuten Kompilieren des Tests nicht überschrieben wird. Wählen Sie als Nächstes die Schaltfläche **Code verschieben** auf der Symbolleiste des Editors für Tests der programmierten UI, oder öffnen Sie das Kontextmenü für die Testmethode und wählen **Code verschieben**aus. Die Testmethode wird aus der Datei *UIMap.uitest* entfernt und nicht mehr im Bereich der **UI-Aktionen** angezeigt. Öffnen Sie zum Bearbeiten der verschobenen Testdatei die Datei *UIMap.cs* oder *UIMap.vb* im **Projektmappen-Explorer**.
+Wählen Sie im Bereich **UI-Aktion** die Testmethode aus, die Sie in die Datei *UIMap.cs* oder *UIMap.vb* verschieben möchten. Dadurch vereinfachen Sie die Funktion für benutzerdefinierten Code, die beim erneuten Kompilieren des Tests nicht überschrieben wird. Wählen Sie als Nächstes die Schaltfläche **Code verschieben** auf der Symbolleiste des Editors für Tests der programmierten UI, oder öffnen Sie das Kontextmenü für die Testmethode und wählen **Code verschieben** aus. Die Testmethode wird aus der Datei *UIMap.uitest* entfernt und nicht mehr im Bereich der **UI-Aktionen** angezeigt. Öffnen Sie zum Bearbeiten der verschobenen Testdatei die Datei *UIMap.cs* oder *UIMap.vb* im **Projektmappen-Explorer**.
 
 Wenn Sie die Methode verschoben haben, speichern Sie die Änderungen in der Datei *UIMap.Designer*, indem Sie auf der Symbolleiste von Visual Studio auf **Speichern** klicken.
 

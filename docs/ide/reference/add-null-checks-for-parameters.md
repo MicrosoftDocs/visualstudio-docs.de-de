@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Überprüfungen auf NULL für alle Parameter
+description: Lernen Sie, if-Anweisungen zu erstellen und Ihrem Code hinzuzufügen, die alle nicht geprüften, Nullwerte zulassenden Parameter auf den NULL-Wert überprüfen.
+ms.custom: SEO-VS-2020
 ms.date: 09/17/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 573a9e56d3aedd55bc571eaaa363b42a53019566
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5828a2bb28f7b3085cd5d43c452c520a730b8175
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74782342"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870962"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>Hinzufügen von Überprüfungen auf NULL für alle Parameter 
 
@@ -40,6 +42,6 @@ Dieses Refactoring gilt für:
 
    ![Überprüfungen auf NULL für alle Parameter hinzufügen](media/add-null-checks-for-all.png) 
 
-## <a name="see-also"></a>Siehe auch 
+## <a name="see-also"></a>Weitere Informationen 
 
 - [Refactoring](../refactoring-in-visual-studio.md)

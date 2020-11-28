@@ -1,5 +1,7 @@
 ---
 title: Vorschau der Codeänderungen
+description: Erfahren Sie, wie Sie das Fenster „Vorschau der Änderungen“ verwenden, um die Änderungen zu überprüfen, die an Ihrem Projekt vorgenommen werden, bevor Sie sie akzeptieren.
+ms.custom: SEO-VS-2020
 ms.date: 12/16/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +11,12 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f8eef438f1dd504120b62e2e0018935489d6c80a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585768"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871443"
 ---
 # <a name="preview-changes-window"></a>Fenster „Vorschau der Änderungen“
 

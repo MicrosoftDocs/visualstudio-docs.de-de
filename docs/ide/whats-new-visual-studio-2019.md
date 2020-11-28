@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a9bf479796db1b23a204050c941650c3c20dd6aa
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438270"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878295"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
@@ -49,7 +49,7 @@ Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie mit den neuen Feat
 
 Unsere neue Suche, die bisher als Schnellstart bezeichnet wurde, ist jetzt schneller und effektiver. Suchergebnisse werden jetzt dynamisch während der Eingabe angezeigt. Zudem können in den Suchergebnissen oft Tastenkombinationen für Befehle inbegriffen sein, sodass Sie diese für die zukünftige Verwendung leichter speichern können.
 
-   ![Animation: Die neue Suche in Visual Studio 2019](media/vs-2019/new-search-feature.gif)
+   ![Animation: Die neue Suche in Visual Studio 2019](media/vs-2019/new-search-feature.gif "Die neue Suche in Visual Studio 2019.")
 
 Mit der neuen unscharfen Suchlogik finden Sie die gewünschten Ergebnisse, auch wenn Sie sich vertippen. Egal, ob Sie nach Befehlen, Einstellungen, einer Dokumentation oder anderen nützlichen Funktionen suchen: Mithilfe des neuen Suchfeatures finden Sie noch unkomplizierter, wonach Sie suchen.
 
@@ -57,7 +57,7 @@ Mit der neuen unscharfen Suchlogik finden Sie die gewünschten Ergebnisse, auch 
 
 In C# gibt es viele neue und sehr nützliche Refactorings, die das Organisieren Ihres Codes vereinfachen. Sie werden als Vorschläge in der Glühbirne angezeigt und enthalten Aktionen, um beispielsweise Member in die Schnittstelle oder die Basisklasse zu verschieben, Namespaces anzupassen, sodass Sie einer Ordnerstruktur entsprechen, oder um Foreach-Schleifen in LINQ-Abfragen zu konvertieren usw.
 
-   ![Animation: Die neuen Refactorings in Visual Studio 2019](media/vs-2019/refactorings.gif)
+   ![Animation: Die neuen Refactorings in Visual Studio 2019](media/vs-2019/refactorings.gif "Das Refactoring in Visual Studio 2019.")
 
 Rufen Sie die Refactorings einfach auf, indem Sie **STRG+.** drücken und die Aktion auswählen, die Sie ausführen möchten.
 
@@ -65,7 +65,7 @@ Rufen Sie die Refactorings einfach auf, indem Sie **STRG+.** drücken und die Ak
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) unterstützt Ihre Softwareentwicklung mithilfe von künstlicher Intelligenz (KI). IntelliCode trainiert über 2.000 Open Source-Projekte auf GitHub &mdash; jedes mit über 100 Sternen &mdash; zum Generieren von Empfehlungen.
 
-![Animation: IntelliCode in Visual Studio 2019](media/vs-2019/IntelliCode.gif)
+![Animation: IntelliCode in Visual Studio 2019](media/vs-2019/IntelliCode.gif "IntelliCode in Visual Studio 2019.")
 
 Im Folgenden werden einige Möglichkeiten aufgeführt, wie Sie mit Visual Studio IntelliCode Ihre Produktivität steigern können:
 
@@ -86,11 +86,11 @@ Neben einem neuen Integritätsindikator für Dokumente gibt es auch einen neuen 
 
 Bei der Bereinigung wird der Code formatiert, und es werden sämtliche Codekorrekturen vorgenommen, die von [aktuellen Einstellungen](code-styles-and-code-cleanup.md) und [EDITORCONFIG-Dateien](create-portable-custom-editor-options.md) vorgeschlagen werden.
 
-   ![Screenshot: das neue Steuerelement für die Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
+   ![Screenshot: das neue Steuerelement für die Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile.png "Das neue Steuerelement für die Codebereinigung in Visual Studio 2019.")
 
 Sie können auch Korrektursammlungen als Profil speichern. Wenn Sie z.B. einige spezielle Korrekturen haben, die Sie beim Programmieren häufig anwenden, und eine weitere umfangreiche Korrektursammlung, die vor einem Code Review angewendet wird, können Sie Profile für diese verschiedenen Aufgaben konfigurieren.
 
-   ![Screenshot: das Steuerelement zum Konfigurieren der Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Screenshot: das Steuerelement zum Konfigurieren der Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png "Das Steuerelement zum Konfigurieren der Codebereinigung in Visual Studio 2019.")
 
 ### <a name="per-monitor-aware-pma-rendering"></a>PMA-Rendering (PMA = Per-Monitor Aware)
 
@@ -98,7 +98,7 @@ Wenn Sie Monitore verwenden, die mit unterschiedlichen Anzeigeskalierungsfaktore
 
 Seit der Veröffentlichung von Visual Studio 2019 ist Visual Studio eine PMA-fähige (per-monitor aware) Anwendung. Jetzt rendert Visual Studio unabhängig von den verwendeten Skalierungsfaktoren für die Anzeige ordnungsgemäß.
 
-   ![PMA-Rendering (PMA = Per-Monitor Aware) in Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png)
+   ![PMA-Rendering (PMA = Per-Monitor Aware) in Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png "PMA-Rendering (Per-Monitor Aware) in Visual Studio 2019.")
 
 Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience with Visual Studio 2019 (Bessere Erfahrung mit mehreren Monitoren mit Visual Studio 2019)](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/).
 
@@ -106,7 +106,7 @@ Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience
 
 **Neu in Version 16.2:** Der Test-Explorer wurde aktualisiert. Große Testdatensätze können nun besser verarbeitet werden, das Filtern wurde vereinfacht, Befehle sind besser auffindbar, Wiedergabelisten werden als Registerkarten angezeigt, und es gibt anpassbare Spalten, mit denen Sie die angezeigten Testinformationen optimieren können.
 
-   ![Screenshot: Verbesserungen an der Benutzeroberfläche des Test-Explorers](media/vs-2019/test-explorer-ui.png)
+   ![Screenshot: Verbesserungen an der Benutzeroberfläche des Test-Explorers](media/vs-2019/test-explorer-ui.png "Verbesserungen an der Benutzeroberfläche des Test-Explorers.")
 
 ### <a name="net-core"></a>.NET Core
 
@@ -124,11 +124,11 @@ Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie Probleme im Team l
 
 Wenn Sie Visual Studio 2019 öffnen, wird Ihnen u.a. das neue Startfenster auffallen.
 
-   ![Screenshot: das neue Startfenster in Visual Studio 2019](media/vs-2019/start-window-dark.png)
+   ![Screenshot: das neue Startfenster in Visual Studio 2019](media/vs-2019/start-window-dark.png "Das neue Startfenster in Visual Studio 2019.")
 
 Im Startfenster stehen mehrere Optionen zur Verfügung, um schnell zum Code zu gelangen. Die Option zum Klonen oder Auschecken von Code aus einem Repository wird nun als erste dargestellt.
 
-   ![Animation: Git in Visual Studio 2019 nun an oberster Position](media/vs-2019/git-first.gif)
+   ![Animation: Git in Visual Studio 2019 nun an oberster Position](media/vs-2019/git-first.gif "Die „Git-first“-Benutzeroberfläche in Visual Studio 2019.")
 
 Im Startfenster gibt es außerdem Optionen zum Öffnen eines Projekts oder einer Projektmappe, zum Öffnen eines lokalen Ordners oder zum Erstellen eines neuen Projekts.
 
@@ -146,7 +146,7 @@ Weitere Informationen finden Sie auf der Seite [Git-Produktivität in Visual Stu
 
 In Visual Studio 2019 ist dieser Dienst standardmäßig installiert.
 
-![Animation: das Feature „Live Share“ für die Zusammenarbeit in Visual Studio 2019](media/vs-2019/live-share.gif)
+![Animation: das Feature „Live Share“ für die Zusammenarbeit in Visual Studio 2019](media/vs-2019/live-share.gif "Das Feature „Live Share“ für die Zusammenarbeit in Visual Studio 2019.")
 
 Weitere Informationen finden Sie in den Blogbeiträgen [Visual Studio Live Share for real-time code reviews and interactive education (Visual Studio Live Share für Echtzeit-Code Reviews und interaktiven Unterricht)](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) und [Live Share now included with Visual Studio 2019 (Live Share jetzt in Visual Studio 2019 verfügbar)](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/).
 
@@ -154,7 +154,7 @@ Weitere Informationen finden Sie in den Blogbeiträgen [Visual Studio Live Share
 
 Es wurde eine neue Erweiterung eingeführt, die Sie für die Verwendung mit Visual Studio 2019 herunterladen können. Mit dieser neuen Erweiterung können Sie Pull Requests Ihres Teams überprüfen, ausführen und sogar debuggen, ohne Visual Studio verlassen zu müssen. Code wird sowohl in GitHub- als auch in Azure DevOps-Repositorys unterstützt.
 
-   ![Ein Screenshot der neuen Pull Requests-Erweiterung in Visual Studio 2019](media/vs-2019/pr-experience.png)
+   ![Ein Screenshot der neuen Pull Requests-Erweiterung in Visual Studio 2019](media/vs-2019/pr-experience.png "Die neue Pull Requests-Erweiterung in Visual Studio 2019.")
 
 Weitere Informationen finden Sie im Blogbeitrag [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (Codeprüfungen mit der Visual Studio Pull Requests-Erweiterung).
 
@@ -168,7 +168,7 @@ Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie beim Debuggen eine
 
 Wir haben die Datenbreakpoints, die ursprünglich nur für C++ ausgerichtet waren, nun auch für .NET Core-Anwendungen angepasst.
 
-   ![Animation: Datenbreakpoints für das Debuggen in Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif)
+   ![Animation: Datenbreakpoints für das Debuggen in Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif "Die Debug-Datenhaltepunkte in Visual Studio 2019.")
 
 Datenbreakpoints können nun also unabhängig davon, ob Sie in C++ oder in .NET Core programmieren, eine gute Alternative zu regulären Breakpoints darstellen. Datenbreakpoints eignen sich auch ideal für Szenarios wie für die Suche nach der Position, an der ein globales Objekt bearbeitet, hinzugefügt oder aus einer Liste entfernt wird.
 
@@ -178,11 +178,11 @@ Wenn Sie in C++ große Anwendungen entwickeln, hat Visual Studio 2019 nun außer
 
 Sie haben sicher schon mal im Überwachungsfenster unter einer Reihe von Werten nach einer Zeichenfolge gesucht. In Visual Studio 2019 haben wir die Suche in den Fenstern „Überwachung“, „Lokal“ und „Auto“ hinzugefügt, damit Sie die Objekte und Werte, nach denen Sie suchen, besser finden können.
 
-   ![Animation: das Fenster für die Suche während des Debuggens in Visual Studio 2019](media/vs-2019/debug-window-search.gif)
+   ![Animation: das Fenster für die Suche während des Debuggens in Visual Studio 2019](media/vs-2019/debug-window-search.gif "Das Debugsuchfenster in Visual Studio 2019.")
 
 Sie können auch formatieren, wie ein Wert in den Fenstern „Überwachung“, „Lokal“ und „Auto“ angezeigt wird. Wählen Sie (per Doppelklick) in einem Fenster eines der Elemente aus, und fügen Sie ein Komma („,“) hinzu, um auf die Dropdownliste der möglichen Formatbezeichner Zugriff zu haben, von denen jeder eine Beschreibung des erwarteten Ergebnisses enthält.
 
-   ![Das neue Überwachungsfenster und das Feature zur Wertformatierung in Visual Studio 2019](media/search-watch-window.png)
+   ![Das neue Überwachungsfenster und das Feature zur Wertformatierung in Visual Studio 2019](media/search-watch-window.png "Das neue Überwachungsfenster und das Feature zur Wertformatierung in Visual Studio 2019.")
 
 Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows (Erweiterungen in Visual Studio 2019: Suchen nach Objekten und Eigenschaften in den Fenstern „Überwachen“, „Auto“ und „Lokal“)](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
 
@@ -190,7 +190,7 @@ Weitere Informationen finden Sie im Blogbeitrag [Enhanced in Visual Studio 2019:
 
 Sie können eine Momentaufnahme der Ausführung Ihrer App in der Cloud abrufen, um genau zu sehen, was gerade geschieht. (Dieses Feature ist nur in Visual Studio Enterprise verfügbar.)
 
-   ![Animation: der Momentaufnahmedebugger in Visual Studio 2019 Enterprise](media/vs-2019/snapshot-debugger.gif)
+   ![Animation: der Momentaufnahmedebugger in Visual Studio 2019 Enterprise](media/vs-2019/snapshot-debugger.gif "Der Momentaufnahmendebugger in Visual Studio 2019 Enterprise.")
 
 ASP.NET Core-Anwendungen und Desktopanwendungen, die auf einem virtuellen Azure Computer ausgeführt werden, werden nun unterstützt. Außerdem werden nun Anwendungen unterstützt, die in Azure Kubernetes Service ausgeführt werden. Der Momentaufnahmedebugger kann Sie dabei unterstützen, die Zeit zum Beheben von Fehlern, die in Produktionsumgebungen auftreten, erheblich zu reduzieren.
 
@@ -200,13 +200,13 @@ Weitere Informationen finden Sie auf der Seite [Debuggen von aktiven ASP.NET Azu
 
 **Neu in Version 16.2:** Sie können einen Breakpoint in einer JavaScript-Anwendung festlegen und eine Debugsitzung starten, indem Sie den Browser [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) verwenden. Daraufhin öffnet Visual Studio ein neues Browserfenster mit aktiviertem Debuggen, das Sie dann zum Durchlaufen der JavaScript-Anwendung in Visual Studio verwenden können.
 
-   ![Screenshot: JavaScript-Code, der im Browser gerendert wird](media/vs-2019/edge-chromium-breakpoint.png)
+   ![Screenshot: JavaScript-Code, der im Browser gerendert wird](media/vs-2019/edge-chromium-breakpoint.png "JavaScript-Code, der im Browser gerendert wird.")
 
 ### <a name="pinnable-properties-tool"></a>Tool zum Anheften von Eigenschaften
 
 **Neu in 16.4**: Mit dem neuen Tool zum Anheften von Eigenschaften ist es jetzt einfacher, beim Debuggen Objekte anhand ihrer Eigenschaften zu identifizieren. Bewegen Sie einfach im Debuggerfenster im Überwachungsfenster, Fenster für lokale Variablen und Fenster für automatische Tools den Cursor über eine Eigenschaft, die Sie anzeigen möchten, und wählen Sie das Stecknadelsymbol aus. Oben im Fenster werden sofort die gesuchten Informationen angezeigt!
 
-   ![Animation: So heften Sie Eigenschaften im Visual Studio-Debugger mithilfe des Tools zum Anheften von Eigenschaften an.](media/vs-2019/debugger-pinnable-properties.gif)
+   ![Animation: So heften Sie Eigenschaften im Visual Studio-Debugger mithilfe des Tools zum Anheften von Eigenschaften an.](media/vs-2019/debugger-pinnable-properties.gif "Anheften von Eigenschaften im Visual Studio-Debugger mithilfe des Tools zum Anheften von Eigenschaften.")
 
 Weitere Informationen finden Sie unter [Anheftbare Eigenschaften: Debuggen und Anzeigen verwalteter Objekte auf Ihre Weise](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) (Blogbeitrag).
 

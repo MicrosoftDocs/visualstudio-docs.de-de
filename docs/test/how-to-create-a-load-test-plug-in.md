@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Auslastungstest-Plug-Ins
+description: Lernen Sie, ein Auslastungstest-Plug-In zu erstellen, um Code während der Ausführung des Auslastungstests zu unterschiedlichen Zeiten auszuführen, was die Funktionalität des Auslastungstests erweitern oder ändern kann.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6fee903c9fd2001b6c6d229e5786dd7ffb9037b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288025"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441090"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins
 

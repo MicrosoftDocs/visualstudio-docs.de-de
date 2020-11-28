@@ -1,5 +1,7 @@
 ---
 title: Navigieren in der IDE
+description: Erfahren Sie, wie Sie in der Visual Studio-IDE auf verschiedene Weise von Fenster zu Fenster und von Datei zu Datei wechseln können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1052deb04a93d11349ef9beb2ff667893095902f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769849"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597040"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Vorgehensweise: Navigieren in der Visual Studio-IDE
 
@@ -92,7 +94,7 @@ Mit dem **IDE-Navigator** können Sie auch zwischen den Toolfenstern navigieren,
     > [!TIP]
     > Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Toolfenster** navigieren, halten Sie **UMSCHALT**+**ALT** gedrückt, und drücken Sie die Taste **F7**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen von Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md)

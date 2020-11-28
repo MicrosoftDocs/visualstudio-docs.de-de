@@ -1,5 +1,7 @@
 ---
 title: Profilerstellung für die Leistung von SharePoint-Anwendungen | Microsoft-Dokumentation
+description: Profilerstellung für die Leistung von SharePoint-Anwendungen, wenn Sie langsam oder ineffizient ausgeführt werden. Verwenden Sie Visual Studio-Profil Erstellungs Funktionen, um problematischen Code zu finden
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414411"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305102"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilerstellung für die Leistung von SharePoint-Anwendungen
 
@@ -39,9 +41,9 @@ Nachdem Sie eine Profilanalyse für die Anwendung erstellt und ausgeführt haben
 
 ## <a name="performance-session-process"></a>Prozess der Leistungs Sitzung
 
-Um die Profilerstellung einer Anwendung auszuführen, erstellen Sie zunächst eine Leistungssitzung mit dem Leistungs-Assistent der Profilerstellungstools. Wählen Sie in der Menüleiste **analysieren** , **Leistungs-Assistenten starten** aus. Nachdem Sie den Assistenten abgeschlossen haben, geben Sie die erforderlichen Informationen für die Leistungssitzung ein, z. B. die gewünschte Profilmethode und die Anwendung, für die Sie ein Profil erstellen möchten. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Profils für eine Website oder Webanwendung mit dem Leistungs-Assistenten](../profiling/how-to-collect-performance-data-for-a-web-site.md). Alternativ können Sie Befehlszeilenoptionen verwenden, um eine Leistungssitzung zu installieren und auszuführen. Weitere Informationen finden Sie unter [Verwenden der Profilerstellungstools von der Befehlszeile aus](../profiling/using-the-profiling-tools-from-the-command-line.md). Wenn Sie jeden Aspekt einer Leistungs Sitzung manuell konfigurieren möchten, finden Sie weitere Informationen unter Gewusst [wie: Manuelles Erstellen von Leistungs Sitzungen mit dem Profilerstellungstools](../profiling/how-to-manually-create-performance-sessions.md). Sie können auch eine Leistungs Sitzung aus einem Komponenten Test erstellen, indem Sie im **Testergebnisse** Fenster das Kontextmenü für den Komponenten Test öffnen und dann **Leistungs Sitzung erstellen** auswählen.
+Um die Profilerstellung einer Anwendung auszuführen, erstellen Sie zunächst eine Leistungssitzung mit dem Leistungs-Assistent der Profilerstellungstools. Wählen Sie in der Menüleiste **analysieren**, **Leistungs-Assistenten starten** aus. Nachdem Sie den Assistenten abgeschlossen haben, geben Sie die erforderlichen Informationen für die Leistungssitzung ein, z. B. die gewünschte Profilmethode und die Anwendung, für die Sie ein Profil erstellen möchten. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Profils für eine Website oder Webanwendung mit dem Leistungs-Assistenten](../profiling/how-to-collect-performance-data-for-a-web-site.md). Alternativ können Sie Befehlszeilenoptionen verwenden, um eine Leistungssitzung zu installieren und auszuführen. Weitere Informationen finden Sie unter [Verwenden der Profilerstellungstools von der Befehlszeile aus](../profiling/using-the-profiling-tools-from-the-command-line.md). Wenn Sie jeden Aspekt einer Leistungs Sitzung manuell konfigurieren möchten, finden Sie weitere Informationen unter Gewusst [wie: Manuelles Erstellen von Leistungs Sitzungen mit dem Profilerstellungstools](../profiling/how-to-manually-create-performance-sessions.md). Sie können auch eine Leistungs Sitzung aus einem Komponenten Test erstellen, indem Sie im **Testergebnisse** Fenster das Kontextmenü für den Komponenten Test öffnen und dann **Leistungs Sitzung erstellen** auswählen.
 
-Nachdem Sie eine Leistungssitzung eingerichtet haben, wird die Sitzungskonfiguration gespeichert, wird der Server so konfiguriert, dass Profilerstellungsdaten bereitgestellt werden, und wird die Anwendung ausgeführt. Während Sie die Anwendung verwenden, werden Leistungsdaten in eine Protokolldatei geschrieben. Leistungs Sitzungen werden in **Leistungs-Explorer** unter dem Ordner " **Ziele** " aufgeführt. Nachdem eine Leistungs Sitzung abgeschlossen wurde, wird der Bericht im Ordner **Berichte** in **Leistungs-Explorer** angezeigt. Um den Bericht anzuzeigen, öffnen Sie ihn in **Leistungs-Explorer**. Öffnen Sie das Kontextmenü in **Leistungs-Explorer** , und wählen Sie dann **Eigenschaften** aus, um die Eigenschaften einer Leistungs Sitzung anzuzeigen oder zu konfigurieren. Weitere Informationen zu bestimmten Eigenschaften einer Leistungs Sitzung finden Sie unter [Konfigurieren von Leistungs Sitzungen für Profilerstellungstools](../profiling/configuring-performance-sessions.md). Weitere Informationen zum Interpretieren der Ergebnisse einer Leistungs Sitzung finden Sie unter Analysieren von [Profilerstellungstools Daten](../profiling/analyzing-performance-tools-data.md).
+Nachdem Sie eine Leistungssitzung eingerichtet haben, wird die Sitzungskonfiguration gespeichert, wird der Server so konfiguriert, dass Profilerstellungsdaten bereitgestellt werden, und wird die Anwendung ausgeführt. Während Sie die Anwendung verwenden, werden Leistungsdaten in eine Protokolldatei geschrieben. Leistungs Sitzungen werden in **Leistungs-Explorer** unter dem Ordner " **Ziele** " aufgeführt. Nachdem eine Leistungs Sitzung abgeschlossen wurde, wird der Bericht im Ordner **Berichte** in **Leistungs-Explorer** angezeigt. Um den Bericht anzuzeigen, öffnen Sie ihn in **Leistungs-Explorer**. Öffnen Sie das Kontextmenü in **Leistungs-Explorer**, und wählen Sie dann **Eigenschaften** aus, um die Eigenschaften einer Leistungs Sitzung anzuzeigen oder zu konfigurieren. Weitere Informationen zu bestimmten Eigenschaften einer Leistungs Sitzung finden Sie unter [Konfigurieren von Leistungs Sitzungen für Profilerstellungstools](../profiling/configuring-performance-sessions.md). Weitere Informationen zum Interpretieren der Ergebnisse einer Leistungs Sitzung finden Sie unter Analysieren von [Profilerstellungstools Daten](../profiling/analyzing-performance-tools-data.md).
 
 ## <a name="stress-test"></a>Belastungstest
 
@@ -51,7 +53,7 @@ Abbildung 1: Beispiel für Auslastungstestergebnisse
 
 ![Diagramm für die Ausführung von Auslastungstests](../sharepoint/media/load-webgraphs.png "Diagramm für die Ausführung von Auslastungstests")
 
-Webleistungstests simulieren die mögliche Interaktion eines Endbenutzers mit einer SharePoint-Anwendung. Sie können webleistungs Tests erstellen, indem Sie HTTP-Anforderungen in einer Browsersitzung oder mithilfe der **webleistungs Test** -Aufzeichnung aufzeichnen. Die Webanforderungen werden in der **Webleistungstest-Editor** angezeigt, nachdem die Browsersitzung abgeschlossen wurde. Anschließend können Sie die Ergebnisse im **webleistungs Testergebnisse Viewer** Debuggen. Sie können webleistungs Tests auch manuell erstellen, indem Sie die **Webleistungstest-Editor** verwenden.
+Webleistungstests simulieren die mögliche Interaktion eines Endbenutzers mit einer SharePoint-Anwendung. Sie können webleistungs Tests erstellen, indem Sie HTTP-Anforderungen in einer Browsersitzung oder mithilfe der **webleistungs Test**-Aufzeichnung aufzeichnen. Die Webanforderungen werden in der **Webleistungstest-Editor** angezeigt, nachdem die Browsersitzung abgeschlossen wurde. Anschließend können Sie die Ergebnisse im **webleistungs Testergebnisse Viewer** Debuggen. Sie können webleistungs Tests auch manuell erstellen, indem Sie die **Webleistungstest-Editor** verwenden.
 
 ## <a name="test-user-interfaces"></a>Testen von Benutzeroberflächen
 
@@ -66,7 +68,7 @@ Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über d
 |[Komponententests für Ihren Code](../test/unit-test-your-code.md)|Beschreibt, wie logische Fehler in Ihrem Code anhand von Komponententests gesucht werden.|
 |[Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)|Beschreibt, wie die Benutzeroberfläche Ihrer SharePoint-Anwendungen getestet wird.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Verbessern der Codequalität](../test/improve-code-quality.md)

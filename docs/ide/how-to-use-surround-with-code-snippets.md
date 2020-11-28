@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Verwenden von umschließenden Codeausschnitten | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie über eine Tastenkombination, das Menü „Bearbeiten“ oder Klicken mit der rechten Maustaste bzw. Kontextmenü auf umschließende Codeausschnitte zugreifen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbbd283186ed31960b2f84bd862a762abae748de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd117937979b73b4dbecb19844159e6e8995cf8e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769770"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596871"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Vorgehensweise: Verwenden von umschließenden Codeausschnitten
 

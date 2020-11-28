@@ -1,5 +1,7 @@
 ---
 title: Exportieren von Auslastungstestergebnissen
+description: Lernen Sie, Informationen mit dem Dialogfeld „Auslastungstestergebnisse öffnen und verwalten“ in das Ergebnisrepository für Auslastungstests zu exportieren.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f9b20915d5c320ff8db4da849d20267355c26590
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 960605dd35a30af1b2c8933d24cfa80ebb97f6c1
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85287752"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439913"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Vorgehensweise: Exportieren von Auslastungstestergebnissen aus einem Repository
 

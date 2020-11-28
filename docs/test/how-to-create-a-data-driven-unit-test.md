@@ -1,5 +1,7 @@
 ---
 title: Erstellen von datengesteuerten Komponententests
+description: Erfahren Sie, wie Sie das Microsoft-Komponententestframework für verwaltenden Code verwenden können, um eine Komponententestmethode zu erstellen, die Werte aus einer Datenquelle abruft.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287986"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441195"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Vorgehensweise: Erstellen eines datengesteuerten Komponententests
 
@@ -67,7 +69,7 @@ public int AddIntegers(int first, int second)
 
 Erstellen Sie zum Testen der Methode `AddIntegers` eine Datenquelle, die einen Wertebereich für die Parameter und die Summe angibt, die zurückgegeben werden soll. In diesem Beispiel wird eine SQL Compact-Datenbank mit dem Namen `MathsData` und eine Tabelle mit dem Namen `AddIntegersData` erstellt, die die folgenden Spaltennamen und -werte enthält:
 
-|FirstNumber|SecondNumber|Summe|
+|FirstNumber|SecondNumber|Sum|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -89,7 +91,7 @@ public TestContext TestContext
 In Ihrer Testmethode greifen Sie auf die Daten durch die Indexereigenschaft `DataRow` des `TestContext` zu.
 
 > [!NOTE]
-> .NET Core unterstützt das [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute)-Attribut nicht. Wenn Sie versuchen, in einem .NET Core- oder UWP-Komponententestprojekt in dieser Weise auf Testdaten zuzugreifen, wird ein Fehler in der Art von **"'TestContext' enthält keine Definition für 'DataRow', und es konnte keine zugängliche Erweiterungsmethode 'DataRow' gefunden werden, die ein erstes Argument vom Typ 'TestContext' akzeptiert (fehlt möglicherweise eine using-Anweisung oder ein Assemblyverweis?)"** .
+> .NET Core unterstützt das [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute)-Attribut nicht. Wenn Sie versuchen, in einem .NET Core- oder UWP-Komponententestprojekt in dieser Weise auf Testdaten zuzugreifen, wird ein Fehler in der Art von **"'TestContext' enthält keine Definition für 'DataRow', und es konnte keine zugängliche Erweiterungsmethode 'DataRow' gefunden werden, die ein erstes Argument vom Typ 'TestContext' akzeptiert (fehlt möglicherweise eine using-Anweisung oder ein Assemblyverweis?)"**.
 
 ## <a name="write-the-test-method"></a>Schreiben der Testmethode
 

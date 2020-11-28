@@ -1,5 +1,7 @@
 ---
 title: Kontext Parameter | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Kontext Parameter in der integrierten Entwicklungsumgebung (IDE) von Visual Studio, die den Zustand eines Projekts definieren, wenn Sie einen Assistenten hinzufügen oder implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +13,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012450"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304714"
 ---
 # <a name="context-parameters"></a>Kontextparameter
-In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) können Sie Assistenten zu den Dialogfeldern **Neues Projekt**, **Neues Element hinzu**fügen oder **Unterprojekt hinzufügen** hinzufügen. Die hinzugefügten Assistenten sind im Menü **Datei** verfügbar, oder Sie klicken mit der rechten Maustaste auf ein Projekt in **Projektmappen-Explorer**. Die IDE übergibt Kontext Parameter an die Implementierung des Assistenten. Die Kontext Parameter definieren den Status des Projekts, wenn der Assistent von der IDE aufgerufen wird.
+In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) können Sie Assistenten zu den Dialogfeldern **Neues Projekt**, **Neues Element hinzu** fügen oder **Unterprojekt hinzufügen** hinzufügen. Die hinzugefügten Assistenten sind im Menü **Datei** verfügbar, oder Sie klicken mit der rechten Maustaste auf ein Projekt in **Projektmappen-Explorer**. Die IDE übergibt Kontext Parameter an die Implementierung des Assistenten. Die Kontext Parameter definieren den Status des Projekts, wenn der Assistent von der IDE aufgerufen wird.
 
  Die IDE startet Assistenten, indem das <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> -Flag im-Befehl der IDE auf die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> Methode für das Projekt festgelegt wird. Wenn festgelegt, muss das Projekt bewirken, `IVsExtensibility::RunWizardFile` dass die Methode ausgeführt wird, indem der Name oder die GUID des registrierten Assistenten und andere Kontext Parameter verwendet werden, die von der IDE an ihn weitergeleitet werden.
 
 ## <a name="context-parameters-for-new-project"></a>Kontext Parameter für neues Projekt
 
-| Parameter | BESCHREIBUNG |
+| Parameter | Beschreibung |
 |-------------------------| - |
 | `WizardType` | Registrierter Wizard Type ( <xref:EnvDTE.Constants.vsWizardNewProject> ) oder die GUID, die den Typ des Assistenten angibt. In der- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Implementierung lautet der GUID für den Assistenten {0F 90e1d0-4999-11d1-B6D1-00a0c90f 2744}. |
 | `ProjectName` | Eine Zeichenfolge, die der eindeutige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projektname ist. |
@@ -37,7 +39,7 @@ In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten
 
 ## <a name="context-parameters-for-add-new-item"></a>Kontext Parameter für "Neues Element hinzufügen"
 
-| Parameter | BESCHREIBUNG |
+| Parameter | Beschreibung |
 |-------------------------| - |
 | `WizardType` | Registrierter Wizard Type ( <xref:EnvDTE.Constants.vsWizardAddItem> ) oder die GUID, die den Typ des Assistenten angibt. In der- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Implementierung lautet der GUID für den Assistenten {0F 90e1d1-4999-11d1-B6D1-00a0c90f 2744}. |
 | `ProjectName` | Eine Zeichenfolge, die der eindeutige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projektname ist. |
@@ -48,7 +50,7 @@ In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten
 
 ## <a name="context-parameters-for-add-sub-project"></a>Kontext Parameter für "Sub Project hinzufügen"
 
-| Parameter | BESCHREIBUNG |
+| Parameter | Beschreibung |
 |-------------------------| - |
 | `WizardType` | Registrierter Wizard Type ( <xref:EnvDTE.Constants.vsWizardAddSubProject> ) oder die GUID, die den Typ des Assistenten angibt. In der- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Implementierung lautet der GUID für den Assistenten {0F 90e1d2-4999-11d1-B6D1-00a0c90f 2744}. |
 | `ProjectName` | Eine Zeichenfolge, die der eindeutige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projektname ist. |
@@ -62,6 +64,6 @@ In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md)
-- [Assistenten](../../extensibility/internals/wizards.md)
+- [The](../../extensibility/internals/wizards.md)
 - [Assistenten Datei (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
 - [Kontext Parameter für das Starten von Assistenten](/previous-versions/tz690efs(v=vs.140))

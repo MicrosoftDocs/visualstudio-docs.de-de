@@ -1,5 +1,7 @@
 ---
 title: Analysieren des Auslastungstests über die Aktivität des virtuellen Benutzers
+description: Erfahren Sie mehr über die Detailansicht, in der das Diagramm für Aktivitäten virtueller Benutzer angezeigt wird. Analysieren Sie, was einzelne virtuelle Benutzer während des Auslastungstests getan haben.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5c05a907bf75ffcdff5bb579ec2624e0dc8a7df9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591234"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441897"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analysieren der Aktivität virtueller Benutzer bei Auslastungstests in der Detailansicht des Auslastungstest-Analyzers
 
@@ -56,10 +58,10 @@ Der Bereich „Filterergebnisse“ wird im **Diagramm für Aktivitäten virtuell
 |Aufgaben|Verwandte Themen|
 |-|-|
 |**Ausführen des Auslastungstests:** Nachdem Sie einen Auslastungstest erstellt und ihn so konfiguriert haben, dass Daten zu den Aktivitäten virtueller Benutzer gesammelt werden, müssen Sie den Test vollständig ausführen, um das **Diagramm für Aktivitäten virtueller Benutzer** anzuzeigen.||
-|**Anzeigen der Auslastungstestergebnisse, die Daten zu den Aktivitäten virtueller Benutzer enthalten:** Nach dem Erstellen, Konfigurieren und vollständigen Ausführen des Auslastungstests können Sie die Aktivitätsdaten virtueller Benutzer anzeigen, indem Sie das **Diagramm für Aktivitäten virtueller Benutzer** verwenden.|-   [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [How to: Analyze What Virtual Users Are Doing During a Load Test (Vorgehensweise: Analysieren der Aktivitäten virtueller Benutzer während eines Auslastungstests)](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Isolieren von Leistungsproblemen in Auslastungstests:** Mithilfe des **Diagramms für Aktivitäten virtueller Benutzer** können Leistungsprobleme im Auslastungstest isoliert werden.|-   [Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Anzeigen der Auslastungstestergebnisse, die Daten zu den Aktivitäten virtueller Benutzer enthalten:** Nach dem Erstellen, Konfigurieren und vollständigen Ausführen des Auslastungstests können Sie die Aktivitätsdaten virtueller Benutzer anzeigen, indem Sie das **Diagramm für Aktivitäten virtueller Benutzer** verwenden.|-   [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Vorgehensweise: Analysen der Aktivitäten virtueller Benutzer während eines Auslastungstests mithilfe des Diagramms für Aktivitäten virtueller Benutzer](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Isolieren von Leistungsproblemen bei Auslastungstests:** Sie können mithilfe des **Diagramms für Aktivitäten virtueller Benutzer** Leistungsprobleme im Auslastungstest isolieren.|-   [Exemplarische Vorgehensweise: Verwenden des Diagramms für Aktivitäten virtueller Benutzer zum Isolieren von Problemen](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

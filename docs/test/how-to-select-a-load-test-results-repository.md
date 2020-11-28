@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse'
+description: Lernen Sie, einen lokalen oder Remote-SQL Server zum Speichern der Testergebnisse zu identifizieren. Der Server muss über einen Auslastungstest-Ergebnisspeicher verfügen.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ada73cc1f907a298a2cc1efcf3281fb8a219ef32
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85287570"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439939"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse
 

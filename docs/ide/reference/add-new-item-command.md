@@ -1,5 +1,7 @@
 ---
 title: Befehl "Neues Element hinzufügen"
+description: Erfahren Sie, wie Sie den Befehl „Neues Element hinzufügen“ verwenden, um der aktuellen Projektmappe ein neues Projektmappenelement oder Frameset hinzuzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac07b374ef08a963426b9bfd44f101a8863f04c8
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585690"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871287"
 ---
 # <a name="add-new-item-command"></a>Befehl "Neues Element hinzufügen"
 Fügt der aktuellen Projektmappe ein neues Projektmappenelement wie eine HTM-, CSS-, TXT- oder Framesetdatei hinzu und öffnet dieses.
@@ -33,7 +35,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 `filename`\
 Dies ist optional. Der Pfad und der Dateiname des Elements, das der Projektmappe hinzugefügt werden soll.
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 /t: `templatename`\
 Dies ist optional. Gibt den Typ der zu erstellenden Datei an. Wenn kein Vorlagenname angegeben wird, wird standardmäßig eine Textdatei erstellt.
 
@@ -68,4 +70,4 @@ In diesem Beispiel wird der aktuellen Projektmappe ein neues Projektmappenelemen
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,6 @@
 ---
 title: Anpassen von Build- und Debugaufgaben mit JSON-Dateien
+description: Lernen Sie, Aufgaben anzupassen, um einige Konfigurationsdetails zum Ausführen und Debuggen einer Codebasis bereitzustellen, die von Visual Studio nicht erkannt wird.
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
@@ -14,27 +15,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 795fbb099654c8b947c1c8e2941fad015a574717
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 26f529fe8d9d8731375c4aa0783dde0dadb28a1d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046224"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006457"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Anpassen von Build- und Debugtasks für die Open Folder-Entwicklung
 
 Visual Studio weiß, wie viele verschiedene Sprachen und Codebasen ausgeführt werden, aber nicht, wie alles ausgeführt wird. Wenn Sie in Visual Studio [einen Codeordner geöffnet haben](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) und Visual Studio weiß, wie der Code ausgeführt wird, können Sie die Ausführung ohne weitere Konfiguration sofort starten.
 
-Wenn die Codebasis benutzerdefinierte Buildtools verwendet, die Visual Studio nicht erkennt, müssen Sie einige Konfigurationsdetails angeben, um den Code in Visual Studio auszuführen und zu debuggen. Sie definieren *Buildtasks* , um Visual Studio anzuweisen, wie der Code kompiliert werden soll. Sie können eine oder mehrere Buildtasks erstellen, um alle Elemente anzugeben, die eine Sprache benötigt, um den Code zu kompilieren und auszuführen. Sie können auch frei wählbare Buildtasks erstellen, die nahezu alles ausführen können, was Sie möchten. Beispielsweise können Sie einen Task erstellen, um den Inhalt eines Ordners aufzulisten oder eine Datei umzubenennen.
+Wenn die Codebasis benutzerdefinierte Buildtools verwendet, die Visual Studio nicht erkennt, müssen Sie einige Konfigurationsdetails angeben, um den Code in Visual Studio auszuführen und zu debuggen. Sie definieren *Buildtasks*, um Visual Studio anzuweisen, wie der Code kompiliert werden soll. Sie können eine oder mehrere Buildtasks erstellen, um alle Elemente anzugeben, die eine Sprache benötigt, um den Code zu kompilieren und auszuführen. Sie können auch frei wählbare Buildtasks erstellen, die nahezu alles ausführen können, was Sie möchten. Beispielsweise können Sie einen Task erstellen, um den Inhalt eines Ordners aufzulisten oder eine Datei umzubenennen.
 
-Passen Sie Ihre Codebasis ohne Projekt mithilfe der folgenden *JSON* -Dateien an:
+Passen Sie Ihre Codebasis ohne Projekt mithilfe der folgenden *JSON*-Dateien an:
 
 |Dateiname|Zweck|
 |-|-|
 |*tasks.vs.json*|Geben Sie benutzerdefinierte Buildbefehle und Compileroptionen sowie frei wählbare (nicht auf den Build bezogene) Tasks an.<br>Der Zugriff erfolgt über das Kontextmenüelement **Tasks konfigurieren** im **Projektmappen-Explorer**.|
 |*launch.vs.json*|Geben Sie Befehlszeilenargumente für das Debuggen an.<br>Der Zugriff erfolgt über das Kontextmenüelement **Einstellungen für Debuggen und Starten** im **Projektmappen-Explorer**.|
 
-Diese *JSON* -Dateien befinden sich in einem ausgeblendeten Ordner namens *.vs* im Stammverzeichnis Ihrer Codebasis. Die Dateien *tasks.vs.json* und *launch.vs.json* werden von Visual Studio bei Bedarf erstellt, wenn Sie im **Projektmappen-Explorer** für eine Datei oder einen Ordner die Option **Tasks konfigurieren** oder **Einstellungen für Debuggen und Starten** auswählen. Diese *JSON* -Dateien werden ausgeblendet, da Benutzer sie in der Regel nicht in die Quellcodeverwaltung einchecken möchten. Wenn Sie jedoch die Möglichkeit haben möchten, sie in die Quellcodeverwaltung einzuchecken, ziehen Sie die Dateien in das Stammverzeichnis Ihrer Codebasis, wo sie sichtbar sind.
+Diese *JSON*-Dateien befinden sich in einem ausgeblendeten Ordner namens *.vs* im Stammverzeichnis Ihrer Codebasis. Die Dateien *tasks.vs.json* und *launch.vs.json* werden von Visual Studio bei Bedarf erstellt, wenn Sie im **Projektmappen-Explorer** für eine Datei oder einen Ordner die Option **Tasks konfigurieren** oder **Einstellungen für Debuggen und Starten** auswählen. Diese *JSON*-Dateien werden ausgeblendet, da Benutzer sie in der Regel nicht in die Quellcodeverwaltung einchecken möchten. Wenn Sie jedoch die Möglichkeit haben möchten, sie in die Quellcodeverwaltung einzuchecken, ziehen Sie die Dateien in das Stammverzeichnis Ihrer Codebasis, wo sie sichtbar sind.
 
 > [!TIP]
 > Klicken Sie zum Anzeigen ausgeblendeter Dateien in Visual Studio auf die Schaltfläche **Alle Dateien anzeigen** auf der Symbolleiste des **Projektmappen-Explorers**.
@@ -45,9 +46,9 @@ Sie können Buildskripts oder andere externe Vorgänge in den Dateien automatisi
 
 ![Menü „Tasks konfigurieren“](../ide/media/customize-configure-tasks-menu.png)
 
-Dadurch wird die Datei *tasks.vs.json* im Ordner *.vs* erstellt (oder geöffnet). Sie können in dieser Datei einen Buildtask oder einen frei wählbaren Task definieren und diesen dann unter Verwendung des Namens aufrufen, den Sie dem Task im **Projektmappen-Explorer** -Kontextmenü zugewiesen haben.
+Dadurch wird die Datei *tasks.vs.json* im Ordner *.vs* erstellt (oder geöffnet). Sie können in dieser Datei einen Buildtask oder einen frei wählbaren Task definieren und diesen dann unter Verwendung des Namens aufrufen, den Sie dem Task im **Projektmappen-Explorer**-Kontextmenü zugewiesen haben.
 
-Benutzerdefinierte Tasks können zu einzelnen Dateien oder zu allen Dateien eines bestimmten Typs hinzugefügt werden. Sie können z.B. NuGet-Paketdateien mit einem Task „Pakete wiederherstellen“ konfigurieren. Sie können auch alle Quelldateien so konfigurieren, dass sie einen statischen Task aufweisen, z.B. einen Linter für alle *JS* -Dateien.
+Benutzerdefinierte Tasks können zu einzelnen Dateien oder zu allen Dateien eines bestimmten Typs hinzugefügt werden. Sie können z.B. NuGet-Paketdateien mit einem Task „Pakete wiederherstellen“ konfigurieren. Sie können auch alle Quelldateien so konfigurieren, dass sie einen statischen Task aufweisen, z.B. einen Linter für alle *JS*-Dateien.
 
 ### <a name="define-custom-build-tasks"></a>Definieren von benutzerdefinierten Buildtasks
 
@@ -74,7 +75,7 @@ bin:
 ```
 <!-- markdownlint-enable MD010 -->
 
-Für ein solches *Makefile* , das Ziele für die Kompilierung, Bereinigung und Neukompilierung enthält, können Sie die folgende *tasks.vs.json* -Datei definieren. Die Datei enthält drei Buildtasks zum Kompilieren, Neukompilieren und Bereinigen der Codebasis und verwendet NMAKE als Buildtool.
+Für ein solches *Makefile*, das Ziele für die Kompilierung, Bereinigung und Neukompilierung enthält, können Sie die folgende *tasks.vs.json*-Datei definieren. Die Datei enthält drei Buildtasks zum Kompilieren, Neukompilieren und Bereinigen der Codebasis und verwendet NMAKE als Buildtool.
 
 ```json
 {
@@ -131,7 +132,7 @@ Wenn Sie eine dieser Optionen auswählen, wird der entsprechende Task ausgeführ
 
 Sie können frei wählbare Tasks in der Datei *tasks.vs.json* definieren, um so ziemlich jede gewünschte Aktion auszuführen. Sie können z.B. einen Task definieren, um den Namen der aktuell ausgewählten Datei im Fenster **Ausgabe** anzuzeigen oder um die Dateien in einem bestimmten Verzeichnis aufzulisten.
 
-Das folgende Beispiel zeigt eine *tasks.vs.json* -Datei, die einen einzelnen Task definiert. Wenn der Task aufgerufen wird, zeigt er den Dateinamen der aktuell ausgewählten *JS* -Datei an.
+Das folgende Beispiel zeigt eine *tasks.vs.json*-Datei, die einen einzelnen Task definiert. Wenn der Task aufgerufen wird, zeigt er den Dateinamen der aktuell ausgewählten *JS*-Datei an.
 
 ```json
 {
@@ -154,12 +155,12 @@ Das folgende Beispiel zeigt eine *tasks.vs.json* -Datei, die einen einzelnen Tas
 - Die `args`-Eigenschaft gibt die Argumente an, die an den aufgerufenen Befehl übergeben werden sollen.
 - Das `${file}`-Makro ruft die ausgewählte Datei im **Projektmappen-Explorer** ab.
 
-Nach dem Speichern von *tasks.vs.json* können Sie mit der rechten Maustaste auf eine beliebige *JS* -Datei im Ordner klicken und **Echo für Dateiname** auswählen. Der Dateiname wird im Fenster **Ausgabe** angezeigt.
+Nach dem Speichern von *tasks.vs.json* können Sie mit der rechten Maustaste auf eine beliebige *JS*-Datei im Ordner klicken und **Echo für Dateiname** auswählen. Der Dateiname wird im Fenster **Ausgabe** angezeigt.
 
 > [!NOTE]
-> Wenn Ihre Codebasis keine *tasks.vs.json* -Datei enthält, können Sie eine solche Datei erstellen, indem Sie im **Projektmappen-Explorer** im Kontextmenü einer Datei auf **Tasks konfigurieren** klicken.
+> Wenn Ihre Codebasis keine *tasks.vs.json*-Datei enthält, können Sie eine solche Datei erstellen, indem Sie im **Projektmappen-Explorer** im Kontextmenü einer Datei auf **Tasks konfigurieren** klicken.
 
-Das nächste Beispiel definiert einen Task, der die Dateien und Unterordner des *bin* -Verzeichnisses auflistet.
+Das nächste Beispiel definiert einen Task, der die Dateien und Unterordner des *bin*-Verzeichnisses auflistet.
 
 ```json
 {
@@ -179,15 +180,15 @@ Das nächste Beispiel definiert einen Task, der die Dateien und Unterordner des 
 
 - `${outDir}` ist ein benutzerdefiniertes Makro, das zuerst vor dem `tasks`-Block definiert wird. Danach wird es in der `args`-Eigenschaft aufgerufen.
 
-Dieser Task gilt für alle Dateien. Wenn Sie das Kontextmenü für eine beliebige Datei im **Projektmappen-Explorer** öffnen, wird der Name des Tasks, **List Outputs** am unteren Rand des Menüs angezeigt. Wenn Sie **List Outputs** auswählen, werden die Inhalte des *bin* -Verzeichnisses im Fenster **Ausgabe** in Visual Studio angezeigt.
+Dieser Task gilt für alle Dateien. Wenn Sie das Kontextmenü für eine beliebige Datei im **Projektmappen-Explorer** öffnen, wird der Name des Tasks, **List Outputs** am unteren Rand des Menüs angezeigt. Wenn Sie **List Outputs** auswählen, werden die Inhalte des *bin*-Verzeichnisses im Fenster **Ausgabe** in Visual Studio angezeigt.
 
 ![Frei wählbarer Task im Kontextmenü](../ide/media/customize-arbitrary-task-menu.png)
 
 ### <a name="settings-scope"></a>Einstellungsbereich
 
-Im Stammverzeichnis und den Unterverzeichnisse einer Codebasis können mehrere *tasks.vs.json* -Dateien vorhanden sein. Dieses Design bietet die Flexibilität, in verschiedenen Unterverzeichnissen der Codebasis verschiedene Verhaltensweisen zu erzielen. Visual Studio aggregiert oder überschreibt Einstellungen in der gesamten Codebasis und priorisiert Dateien in der folgenden Reihenfolge:
+Im Stammverzeichnis und den Unterverzeichnisse einer Codebasis können mehrere *tasks.vs.json*-Dateien vorhanden sein. Dieses Design bietet die Flexibilität, in verschiedenen Unterverzeichnissen der Codebasis verschiedene Verhaltensweisen zu erzielen. Visual Studio aggregiert oder überschreibt Einstellungen in der gesamten Codebasis und priorisiert Dateien in der folgenden Reihenfolge:
 
-- Einstellungsdateien im *.vs* -Verzeichnis des Stammverzeichnisses.
+- Einstellungsdateien im *.vs*-Verzeichnis des Stammverzeichnisses.
 - Das Verzeichnis, in dem eine Einstellung berechnet wird.
 - Das übergeordnete Verzeichnis des aktuellen Verzeichnisses, bis hoch zum Stammverzeichnis.
 - Einstellungsdateien im Stammverzeichnis.
@@ -217,12 +218,12 @@ Sie können Tasks für jede Datei und jeden Ordner erstellen, indem Sie den Name
 |Makro|Beschreibung|
 |-|-|
 |`${env.<VARIABLE>}`| Gibt jede Umgebungsvariable an (z.B. ${env.PATH}, ${env.COMSPEC} usw.), die für die Developer-Eingabeaufforderung festgelegt ist. Weitere Informationen finden Sie unter [Developer-Eingabeaufforderung für Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| Der vollständige Pfad zum Arbeitsbereichsordner (z.B. *C:\sources\hello* ).|
-|`${file}`| Der vollständige Pfad der Datei oder des Ordners, für die bzw. den dieser Task ausgeführt werden soll (z.B. *C:\sources\hello\src\hello.js* ).|
-|`${relativeFile}`| Der relative Pfad zu der Datei oder dem Ordner (z.B. *src\hello.js* ).|
-|`${fileBasename}`| Der Name der Datei ohne Pfad oder Erweiterung (z.B. *hello* ).|
-|`${fileDirname}`| Der vollständige Pfad zur Datei ohne den Dateinamen (z.B. *C:\sources\hello\src* ).|
-|`${fileExtname}`| Die Erweiterung der ausgewählten Datei (z.B. *.js* ).|
+|`${workspaceRoot}`| Der vollständige Pfad zum Arbeitsbereichsordner (z.B. *C:\sources\hello*).|
+|`${file}`| Der vollständige Pfad der Datei oder des Ordners, für die bzw. den dieser Task ausgeführt werden soll (z.B. *C:\sources\hello\src\hello.js*).|
+|`${relativeFile}`| Der relative Pfad zu der Datei oder dem Ordner (z.B. *src\hello.js*).|
+|`${fileBasename}`| Der Name der Datei ohne Pfad oder Erweiterung (z.B. *hello*).|
+|`${fileDirname}`| Der vollständige Pfad zur Datei ohne den Dateinamen (z.B. *C:\sources\hello\src*).|
+|`${fileExtname}`| Die Erweiterung der ausgewählten Datei (z.B. *.js*).|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Konfigurieren des Debuggens mit „launch.vs.json“
 
@@ -236,7 +237,7 @@ Informationen zum Konfigurieren von CMake-Projekten für das Debuggen finden Sie
 
    ![Dialogfeld „Debugger auswählen“](media/customize-select-a-debugger.png)
 
-   Wenn die *launch.vs.json* -Datei noch nicht vorhanden ist, wird sie erstellt.
+   Wenn die *launch.vs.json*-Datei noch nicht vorhanden ist, wird sie erstellt.
 
    ```json
    {
@@ -292,23 +293,23 @@ Wenn Sie diese Datei speichern, wird der Name der neuen Konfiguration in der Dro
 ![Dropdownliste der Debugkonfigurationen](media/customize-debug-configurations.png)
 
 > [!NOTE]
-> Die `configurations`-Arrayeigenschaft in *launch.vs.json* wird aus zwei Speicherorten gelesen: dem Stammverzeichnis für die Codebasis und dem *.vs* -Verzeichnis. Wenn ein Konflikt vorliegt, erhält der Wert in *.vs\launch.vs.json* Priorität.
+> Die `configurations`-Arrayeigenschaft in *launch.vs.json* wird aus zwei Speicherorten gelesen: dem Stammverzeichnis für die Codebasis und dem *.vs*-Verzeichnis. Wenn ein Konflikt vorliegt, erhält der Wert in *.vs\launch.vs.json* Priorität.
 
 ## <a name="additional-settings-files"></a>Zusätzliche Einstellungsdateien
 
-Zusätzlich zu den drei in diesem Thema beschriebenen *JSON* -Dateien liest Visual Studio auch Einstellungen aus einigen weiteren Dateien, wenn diese in Ihrer Codebasis vorhanden sind.
+Zusätzlich zu den drei in diesem Thema beschriebenen *JSON*-Dateien liest Visual Studio auch Einstellungen aus einigen weiteren Dateien, wenn diese in Ihrer Codebasis vorhanden sind.
 
 ### <a name="vscodesettingsjson"></a>.vscode\settings.json
 
-Visual Studio liest eingeschränkte Einstellungen aus einer Datei namens *settings.json* , wenn diese sich in einem Verzeichnis namens *.vscode* befindet. Diese Funktionalität wurde für Codebasen bereitgestellt, die zuvor in Visual Studio Code entwickelt wurden. Zurzeit wird aus *.vscode\settings.json* nur die Einstellung `files.exclude` gelesen, die Dateien visuell im Projektmappen-Explorer und aus einigen Suchtools filtert.
+Visual Studio liest eingeschränkte Einstellungen aus einer Datei namens *settings.json*, wenn diese sich in einem Verzeichnis namens *.vscode* befindet. Diese Funktionalität wurde für Codebasen bereitgestellt, die zuvor in Visual Studio Code entwickelt wurden. Zurzeit wird aus *.vscode\settings.json* nur die Einstellung `files.exclude` gelesen, die Dateien visuell im Projektmappen-Explorer und aus einigen Suchtools filtert.
 
-Sie können beliebig viele *.vscode\settings.json* -Dateien in Ihrer Codebasis verwenden. Aus dieser Datei gelesene Einstellungen werden auf das übergeordnete Verzeichnis von *.vscode* und alle Unterverzeichnisse angewendet.
+Sie können beliebig viele *.vscode\settings.json*-Dateien in Ihrer Codebasis verwenden. Aus dieser Datei gelesene Einstellungen werden auf das übergeordnete Verzeichnis von *.vscode* und alle Unterverzeichnisse angewendet.
 
 ### <a name="gitignore"></a>.gitignore
 
-Mit *.gitignore* -Dateien wird Git angewiesen, welche Dateien ignoriert werden sollen, d.h. welche Dateien und Verzeichnisse Sie nicht einchecken möchten. *.gitignore* -Dateien werden üblicherweise in die Codebasis aufgenommen, damit die Einstellungen für alle Entwickler der Codebasis freigegeben werden können. Visual Studio liest Muster in *.gitignore* -Dateien, um Elemente visuell und aus einigen Suchtools zu filtern.
+Mit *.gitignore*-Dateien wird Git angewiesen, welche Dateien ignoriert werden sollen, d.h. welche Dateien und Verzeichnisse Sie nicht einchecken möchten. *.gitignore*-Dateien werden üblicherweise in die Codebasis aufgenommen, damit die Einstellungen für alle Entwickler der Codebasis freigegeben werden können. Visual Studio liest Muster in *.gitignore*-Dateien, um Elemente visuell und aus einigen Suchtools zu filtern.
 
-Aus der *.gitignore* -Datei gelesene Einstellungen werden auf das übergeordnete Verzeichnis und alle Unterverzeichnisse angewendet.
+Aus der *.gitignore*-Datei gelesene Einstellungen werden auf das übergeordnete Verzeichnis und alle Unterverzeichnisse angewendet.
 
 ## <a name="see-also"></a>Siehe auch
 

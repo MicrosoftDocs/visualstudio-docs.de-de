@@ -1,5 +1,7 @@
 ---
 title: Gehe zu Datei, Gehe zu Symbol, Gehe zu Zeile
+description: Erfahren Sie mehr über die „Gehe zu“-Befehle in Visual Studio und darüber, wie Sie sie verwenden können, um fokussierte Suchvorgänge in Ihrem Code auszuführen.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e3e000224fc09810e15ba3cdbdc4be729139eaaa
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593784"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597534"
 ---
 # <a name="find-code-using-go-to-commands"></a>Suchen von Code mithilfe von Gehe zu-Befehlen
 
 Die **Gehe zu**-Befehle von Visual Studio führen eine zielgerichtete Suche in Ihrem Code aus, damit Sie angegebene Elemente schneller finden. Sie können über eine einfache und einheitliche Oberfläche zu einer bestimmten Zeile, einem bestimmten Typ, einem bestimmten Symbol oder einer bestimmten Datei gehen.
 
-## <a name="how-to-use-it"></a>Verwendungsweise
+## <a name="how-to-use-it"></a>Verwendung
 
 Eingabe | Funktion
 ------------ | ---
@@ -52,11 +54,11 @@ Standardmäßig wird das angegebene Element in allen Projektmappenelementen gesu
 
 Um Ihre Suche auf einen bestimmten Typ von Codeelement einzugrenzen, können Sie entweder ein Präfix in das Suchfeld eingeben oder eines der fünf Filtersymbole auswählen:
 
-Präfix | Symbol | Tastenkombination | Beschreibung
+Präfix | Symbol | Verknüpfung | Beschreibung
 :-: | - | - | -
 :| ![Symbol „Zeile“](media/gotoall-line-icon.png) | **STRG**+**G** | Zur angegebenen Zeilennummer wechseln
 f| ![Symbol „Dateien“](media/gotoall-files-icon.png) | **STRG**+**1**, **STRG**+**F** | Zur angegebenen Datei wechseln
-b| ![Symbol „Zuletzt verwendete Dateien“](media/gotoall-recent-files-icon.png) | **STRG**+**1**, **STRG**+**R** | Zur angegebenen zuletzt besuchten Datei wechseln
+r| ![Symbol „Zuletzt verwendete Dateien“](media/gotoall-recent-files-icon.png) | **STRG**+**1**, **STRG**+**R** | Zur angegebenen zuletzt besuchten Datei wechseln
 t| ![Symbol „Typen“](media/gotoall-types-icon.png) | **STRG**+**1**, **STRG**+**T** | Zum angegebenen Typ wechseln
 m| ![Symbol „Member“](media/gotoall-members-icon.png) | **STRG**+**1**, **STRG**+**M** | Zum angegebenen Member wechseln
 \#| ![Symbol „Symbole“](media/gotoall-symbols-icon.png) | **STRG**+**1**, **STRG**+**S** | Zum angegebenen Symbol wechseln
@@ -65,7 +67,7 @@ m| ![Symbol „Member“](media/gotoall-members-icon.png) | **STRG**+**1**, **ST
 
 Um die Suche auf bestimmte Speicherorte einzugrenzen, wählen Sie eines der zwei Dokumentsymbole aus:
 
-Symbol | Beschreibung
+Symbol | BESCHREIBUNG
 ---- | ---
 ![Aktuelles Dokument](media/gotoall_currentdocument.png) | Nur im aktuellen Dokument suchen
 ![Externe Dokumente](media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten
@@ -80,13 +82,13 @@ Wenn Sie die [Camel-Case-Schreibweise](https://en.wikipedia.org/wiki/Camel_case)
 
 Über das Zahnradsymbol ![Zahnradsymbol](media/gotoall_gear.png) können Sie die Funktionsweise dieser Funktion ändern:
 
-Einstellung | Beschreibung
+Einstellung | BESCHREIBUNG
 ------- | ---
 Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorschauregisterkarte der IDE anzeigen
 Details anzeigen | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an
 Fenster zentrieren | Verschieben Sie dieses Fenster in die Mitte des Code-Editors, statt an die Standardposition.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Navigieren durch den Code](../ide/navigating-code.md)
 - [Gehe zu Zeile (Dialogfeld)](../ide/reference/go-to-line.md)

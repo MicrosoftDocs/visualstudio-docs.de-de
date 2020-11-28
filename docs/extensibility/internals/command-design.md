@@ -1,5 +1,7 @@
 ---
 title: Befehls Entwurf | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie einen Befehl für ein VSPackage in Visual Studio entwerfen. Einschließlich, angeben des Orts, an dem es angezeigt wird, wann es verfügbar ist und wie es behandelt werden soll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa58813623dc8150cafb4fbfee6496d09f889ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab06ade9be1ccd0683cd298a5e758ddcfa883f8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709658"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304874"
 ---
 # <a name="command-design"></a>Befehls Entwurf
 Wenn Sie einem VSPackage einen Befehl hinzufügen, müssen Sie angeben, wo es angezeigt werden soll, wann es verfügbar ist und wie es behandelt werden soll.
 
 ## <a name="define-commands"></a>Definieren von Befehlen
- Um neue Befehle zu definieren, fügen Sie eine*vsct*-Datei (Visual Studio Command Table) in das VSPackage-Projekt ein. Wenn Sie ein VSPackage mithilfe der Visual Studio-Paket Vorlage erstellt haben, enthält das Projekt eine dieser Dateien. Weitere Informationen finden Sie unter [Visual Studio-Befehls Tabellen Dateien (vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Um neue Befehle zu definieren, fügen Sie eine *vsct*-Datei (Visual Studio Command Table) in das VSPackage-Projekt ein. Wenn Sie ein VSPackage mithilfe der Visual Studio-Paket Vorlage erstellt haben, enthält das Projekt eine dieser Dateien. Weitere Informationen finden Sie unter [Visual Studio-Befehls Tabellen Dateien (vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
  Visual Studio führt alle gefundenen *vsct* -Dateien zusammen, sodass die Befehle angezeigt werden können. Da diese Dateien sich von der Binärdatei des VSPackages unterscheiden, muss Visual Studio das Paket nicht laden, um die Befehle zu finden. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen von Benutzeroberflächen Elementen durch VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 

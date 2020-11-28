@@ -1,5 +1,7 @@
 ---
 title: Anpassen der Code Coverage-Analyse
+description: Erfahren Sie, wie Sie das ExcludeFromCodeCoverageAttribute-Attribut verwenden, um Testcode aus den Coverage-Ergebnissen auszuschließen. Sie können außerhalb der Projektmappe liegende Assemblys einschließen.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86475990"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441827"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 
@@ -118,9 +120,9 @@ In der folgenden Tabelle werden die verschiedenen Methoden aufgeführt, mit dene
 
 Include- und exclude-Knoten verwenden reguläre Ausdrücke, die nicht mit Platzhaltern identisch sind. Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet. Beispiele:
 
-- **.\*** entspricht einer Zeichenfolge beliebiger Zeichen
+- * *.\** _ entspricht einer Zeichenfolge beliebiger Zeichen
 
-- **\\.** entspricht einem Punkt „.“
+- _ *\\.* * entspricht einem Punkt „.“
 
 - **\\(   \\)** entspricht Klammern „(  )“
 

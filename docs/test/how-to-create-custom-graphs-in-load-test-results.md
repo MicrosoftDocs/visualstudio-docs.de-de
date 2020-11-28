@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen von benutzerdefinierten Diagrammen in Auslastungstestergebnissen'
+description: Lernen Sie, Diagramme zu entwerfen, in denen bestimmte Informationen zu Auslastungstestergebnissen entweder während der Ausführung eines Auslastungstests oder nach seinem Abschluss angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c003fc5d6573dfdd88ec85ea37fbb10f80c94484
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287804"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441038"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen in Auslastungstestergebnissen
 
@@ -28,7 +30,7 @@ Das folgende Verfahren kann ausgeführt werden, während ein Auslastungstest akt
 
 1. Klicken Sie in der **Auslastungstest**-Symbolleiste auf die Option **Neues Diagramm hinzufügen**.
 
-     \- oder –
+     \- oder -
 
      Klicken Sie im **Auslastungstest-Analyzer** mit der rechten Maustaste in das Panel **Indikator** oder in ein Diagramm, und klicken Sie auf **Diagramm hinzufügen**.
 

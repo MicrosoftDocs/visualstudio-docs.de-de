@@ -1,5 +1,7 @@
 ---
 title: Befehle, die nach der Installation ausgeführt werden müssen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Befehle, die im Rahmen der Installation einer Erweiterung ausgeführt werden müssen, die über eine MSI-Datei in Visual Studio bereitgestellt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709474"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305041"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Befehle, die nach der Installation ausgeführt werden müssen
 Wenn Sie die Erweiterung über eine *MSI* -Datei bereitstellen, müssen Sie **Devenv/Setup** im Rahmen der Installation ausführen, damit Visual Studio Ihre Erweiterungen ermitteln kann.
@@ -44,7 +46,7 @@ Wenn Sie die Erweiterung über eine *MSI* -Datei bereitstellen, müssen Sie **De
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Der Visual Studio-Installer schreibt z. b. den Registrierungs Wert **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\umgebungspfad** in *C:\VS2008\Common7\IDE\devenv.exe*, einen kompletten Pfad zu der ausführbaren Datei, die vom Installationsprogramm ausgeführt werden muss.
+ Der Visual Studio-Installer schreibt z. b. den Registrierungs Wert **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** als *C:\VS2008\Common7\IDE\devenv.exe*, einen kompletten Pfad zur ausführbaren Datei, die vom Installationsprogramm ausgeführt werden muss.
 
 > [!NOTE]
 > Da die Typspalte der reglocator-Tabelle 2 ist, ist es nicht erforderlich, zusätzliche Versionsinformationen in der Signatur Tabelle anzugeben.
@@ -81,5 +83,5 @@ Wenn Sie die Erweiterung über eine *MSI* -Datei bereitstellen, müssen Sie **De
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

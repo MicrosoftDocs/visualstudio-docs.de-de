@@ -1,5 +1,6 @@
 ---
 title: Testcontroller- und Test-Agent-Rollen
+description: Lernen Sie, eine Testeinstellung zu erstellen und zu konfigurieren, in der mithilfe eines Testcontrollers und eines Test-Agents Tests auf mehrere Computer verteilt werden, die Visual Studio verwenden.
 ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7f4360772f3962ff60517071dcae4318dc71e56
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c059510dc39472d5c981f93e4d7259545b809d38
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809301"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442442"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Zuweisen von Rollen an einen Testcontroller und einen Test-Agent
 

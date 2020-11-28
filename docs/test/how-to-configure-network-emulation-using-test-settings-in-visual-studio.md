@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren der Netzwerkemulation mithilfe von Testeinstellungen
+description: Lernen Sie, den Adapter für diagnostische Daten für das Testen einer Anwendung in verschiedenen Netzwerkumgebungen von Visual Studio zu konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27de590cc40808eb3bebf18857c0ba4b254c39d1
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 98ee28b51445af4b81422460ecb1450b2d383407
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928657"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440159"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren der Netzwerkemulation mithilfe von Testeinstellungen in Visual Studio
 

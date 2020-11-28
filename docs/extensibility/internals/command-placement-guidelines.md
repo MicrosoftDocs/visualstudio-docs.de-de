@@ -1,5 +1,7 @@
 ---
 title: Richtlinien für die Befehls Platzierung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Richtlinien und bewährten Methoden für die Positionierung von Befehlen in der integrierten Entwicklungsumgebung (IDE) von Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709569"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305242"
 ---
 # <a name="command-placement-guidelines"></a>Richtlinien zur Befehls Platzierung
 Die bewährten Methoden zum Positionieren von Befehlen in der integrierten Entwicklungsumgebung (IDE) von Visual Studio variieren in Abhängigkeit von der Größe des Befehlssatzes. Befehle werden gemäß den Informationen in *vsct* -Dateien definiert und positioniert.

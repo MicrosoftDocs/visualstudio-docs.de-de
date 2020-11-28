@@ -1,5 +1,7 @@
 ---
 title: Erstellen einer Testeinstellung für einen verteilten Auslastungstest
+description: Lernen Sie, Testeinstellungen für Ihre Auslastungstests zu konfigurieren, sodass Sie diese Tests mithilfe von Test-Agents und Testcontrollern auf mehrere Computer verteilen können.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4c33072c1b42d76f1f6ea26222c4674f9e6ff77
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b52fad24cf0772099e619b08ad877bae891365c3
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036092"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439965"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Vorgehensweise: Erstellen einer Testeinstellungsdatei für einen verteilten Auslastungstest
 
@@ -45,7 +47,7 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-2. Klicken Sie im Bereich **Installierte Vorlagen** auf die Option **Testeinstellungen**.
+2. Wählen Sie im Bereich **Installierte Vorlagen** die Option **Testeinstellungen** aus.
 
 3. (Optional) Ändern Sie Im Feld **Name** den Namen der Testeinstellungsdatei.
 
@@ -117,14 +119,14 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
     |Diagnosedatenadapter|Verwendung in Auslastungstests|Entsprechendes Thema|
     |-|-------------------------|-|
-    |**ASP.NET-Clientproxy für IntelliTrace und Testauswirkung:** Mit diesem Proxy können Sie Informationen zu HTTP-Aufrufen von einem Client an einen Webserver für die IntelliTrace- und Testauswirkungsadapter für diagnostische Daten erfassen.|![Informationssymbol](../test/media/vc364f4.gif)<br /><br /> Schließen Sie diesen Adapter nur ein, wenn Sie Systeminformationen für die Test-Agent-Computer sammeln müssen. **Vorsicht**:  Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten Datenmenge Probleme auftreten. <br /><br /> Bei Verwendung von Auslastungstests werden keine Testauswirkungsdaten erfasst.||
-    |**IntelliTrace:** Sie können konfigurieren, welche speziellen Informationen zur Diagnoseablaufverfolgung in einer Protokolldatei gespeichert werden. Eine Protokolldatei hat die Erweiterung *TDLOG*. Wenn Sie den Test ausführen und ein Testschritt fehlschlägt, können Sie einen Fehler erstellen. Die Protokolldatei, die die Diagnoseablaufverfolgung enthält, wird automatisch an diesen Fehler angefügt. Die in der Protokolldatei gesammelten Daten steigern die Debuggingproduktivität, da sie die Zeit für das Reproduzieren und Diagnostizieren eines Fehlers im Code verkürzen. Aus dieser Protokolldatei kann die lokale Sitzung auf einem anderen Computer erneut erstellt werden. So wird die Wahrscheinlichkeit verringert, dass ein Fehler nicht reproduziert werden kann.<br /><br /> Weitere Informationen finden Sie unter [Erfassen von IntelliTrace-Daten](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Symbol "Wichtig"](../test/media/vc364f3.gif)<br /><br /> Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten und protokollierten Datenmenge Probleme auftreten. Sie sollten versuchen, den IntelliTrace-Adapter nur in kurzen Auslastungstests zu verwenden, in denen wenige Test-Agents verwendet werden.|[How to: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |**ASP.NET-Profiler:** Sie können eine Testeinstellung erstellen, die die ASP.NET-Profilerstellung umfasst, und so Leistungsdaten zu ASP.NET-Webanwendungen sammeln.|Der Adapter für diagnostische Daten des ASP.NET-Profilers erstellt ein Profil des IIS-Prozesses (Internet Information Services). Daher kann er nicht für Entwicklungswebserver verwendet werden. Um ein Profil der Website im Auslastungstest zu erstellen, müssen Sie einen Test-Agent auf dem Computer installieren, auf dem IIS ausgeführt wird. Der Test-Agent generiert keine Auslastung, sondert dient nur als Datensammlungs-Agent. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).|[How to: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Ereignisprotokoll:** Sie können eine Testeinstellung konfigurieren, um das Ereignisprotokoll zu erfassen und in die Testergebnisse aufzunehmen.||[How to: How to: Configure Event Log Collection Using Test Settings (Vorgehensweise: Konfigurieren der Ereignisprotokollerfassung mithilfe von Testeinstellungen)](/previous-versions/dd504816(v=vs.110))|
-    |**Netzwerkemulation:** Mit einer Testeinstellung können Sie angeben, dass Sie eine künstliche Netzwerklast auf den Test anwenden möchten. Die Netzwerkemulation wirkt sich auf die Kommunikation vom und zum Computer aus, indem eine bestimmte Netzwerkverbindungsgeschwindigkeit, z. B. DFÜ, emuliert wird. **Hinweis**:  Die Netzwerkemulation kann nicht verwendet werden, um die Netzwerkverbindungsgeschwindigkeit zu erhöhen.|Der Netzwerkemulationsadapter wird von Auslastungstests ignoriert. Stattdessen verwenden Auslastungstests die Einstellungen, die in der Netzwerkmischung des Auslastungstestszenarios angegeben sind.<br /><br /> Weitere Informationen finden Sie unter [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
+    |**ASP.NET-Clientproxy für IntelliTrace und Testauswirkung:** Mit diesem Proxy können Sie Informationen zu HTTP-Aufrufen von einem Client an einen Webserver für die IntelliTrace- und Testauswirkungsadapter für diagnostische Daten erfassen.|![Informationssymbol](../test/media/vc364f4.gif)<br /><br /> Schließen Sie diesen Adapter nur ein, wenn Sie Systeminformationen für die Test-Agent-Computer sammeln müssen. **Vorsicht:** Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten Datenmenge Probleme auftreten. <br /><br /> Bei Verwendung von Auslastungstests werden keine Testauswirkungsdaten erfasst.||
+    |**IntelliTrace:** Sie können konfigurieren, welche speziellen Informationen zur Diagnoseablaufverfolgung in einer Protokolldatei gespeichert werden. Eine Protokolldatei hat die Erweiterung *TDLOG*. Wenn Sie den Test ausführen und ein Testschritt fehlschlägt, können Sie einen Fehler erstellen. Die Protokolldatei, die die Diagnoseablaufverfolgung enthält, wird automatisch an diesen Fehler angefügt. Die in der Protokolldatei gesammelten Daten steigern die Debuggingproduktivität, da sie die Zeit für das Reproduzieren und Diagnostizieren eines Fehlers im Code verkürzen. Aus dieser Protokolldatei kann die lokale Sitzung auf einem anderen Computer erneut erstellt werden. So wird die Wahrscheinlichkeit verringert, dass ein Fehler nicht reproduziert werden kann.<br /><br /> Weitere Informationen finden Sie unter [Erfassen von IntelliTrace-Daten](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Symbol "Wichtig"](../test/media/vc364f3.gif)<br /><br /> Es wird davon abgeraten, den IntelliTrace-Adapter in Auslastungstests zu verwenden, da aufgrund der großen gesammelten und protokollierten Datenmenge Probleme auftreten. Sie sollten versuchen, den IntelliTrace-Adapter nur in kurzen Auslastungstests zu verwenden, in denen wenige Test-Agents verwendet werden.|[Vorgehensweise: Erfassen von IntelliTrace-Daten zum Beheben schwieriger Probleme](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
+    |**ASP.NET-Profiler:** Sie können eine Testeinstellung erstellen, die die ASP.NET-Profilerstellung umfasst, und so Leistungsdaten zu ASP.NET-Webanwendungen sammeln.|Der Adapter für diagnostische Daten des ASP.NET-Profilers erstellt ein Profil des IIS-Prozesses (Internet Information Services). Daher kann er nicht für Entwicklungswebserver verwendet werden. Um ein Profil der Website im Auslastungstest zu erstellen, müssen Sie einen Test-Agent auf dem Computer installieren, auf dem IIS ausgeführt wird. Der Test-Agent generiert keine Auslastung, sondert dient nur als Datensammlungs-Agent. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md).|[Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**Ereignisprotokoll**: Sie können eine Testeinstellung konfigurieren, um das Ereignisprotokoll zu erfassen und in die Testergebnisse aufzunehmen.||[Vorgehensweise: How to: Configure Event Log Collection Using Test Settings (Vorgehensweise: Konfigurieren der Ereignisprotokollerfassung mithilfe von Testeinstellungen)](/previous-versions/dd504816(v=vs.110))|
+    |**Netzwerkemulation:** Sie können mit einer Testeinstellung angeben, dass Sie eine künstliche Netzwerklast auf den Test anwenden möchten. Die Netzwerkemulation wirkt sich auf die Kommunikation vom und zum Computer aus, indem eine bestimmte Netzwerkverbindungsgeschwindigkeit, z. B. DFÜ, emuliert wird. **Hinweis**:  Die Netzwerkemulation kann nicht verwendet werden, um die Netzwerkverbindungsgeschwindigkeit zu erhöhen.|Der Netzwerkemulationsadapter wird von Auslastungstests ignoriert. Stattdessen verwenden Auslastungstests die Einstellungen, die in der Netzwerkmischung des Auslastungstestszenarios angegeben sind.<br /><br /> Weitere Informationen finden Sie unter [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Systeminformationen:** Eine Testeinstellung kann so eingerichtet werden, dass sie die Systeminformationen zu den Computern einschließt, auf denen die Systeminformationsdiagnose und der Datensammler ausgeführt werden. Die Systeminformationen werden in den Testergebnissen mit einer Testeinstellung angegeben.|![Informationssymbol](../test/media/vc364f4.gif)<br /><br /> Sie können Systeminformationen sowohl für die Auslastungs-Agents als auch für das getestete System sammeln.|Zur Erfassung dieser Informationen ist keine Konfiguration erforderlich.|
     |**Testauswirkungen:** Sie können Informationen zu den Methoden des Anwendungscodes erfassen, die beim Ausführen eines Testfalls verwendet wurden. Diese können zusammen mit von Entwicklern am Anwendungscode vorgenommenen Änderungen verwendet werden, um zu ermitteln, auf welche Tests sich diese Entwicklungsänderungen ausgewirkt haben.|Bei Auslastungstests werden keine Testauswirkungsdaten erfasst.||
-    |**Videorekorder:** Sie können beim Ausführen eines automatisierten Tests eine Videoaufzeichnung der Desktopsitzung erstellen. Dies kann nützlich sein, um die Benutzeraktionen für einen Test der codierten UI zu sehen. Das Video kann anderen Teammitgliedern helfen, Anwendungsprobleme zu isolieren, die schwer reproduzierbar sind. **Hinweis**:  Bei der Remoteausführung von Tests funktioniert die Videoaufzeichnung nicht, wenn der Agent nicht im interaktiven Prozessmodus ausgeführt wird.|![Symbol „Wichtig“](../test/media/vc364f3.gif) **Warnung:**  Es wird davon abgeraten, den Videoaufzeichnungsadapter für Auslastungstests zu verwenden.|[How to: Einschließen von Bildschirm- und Stimmaufnahmen während der Tests mit Testeinstellungen](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Videorekorder:** Sie können beim Ausführen eines automatisierten Tests eine Videoaufzeichnung der Desktopsitzung erstellen. Dies kann nützlich sein, um die Benutzeraktionen für einen Test der codierten UI zu sehen. Das Video kann anderen Teammitgliedern helfen, Anwendungsprobleme zu isolieren, die schwer reproduzierbar sind. **Hinweis:** Bei der Remoteausführung von Tests funktioniert die Videoaufzeichnung nicht, wenn der Agent nicht im interaktiven Prozessmodus ausgeführt wird.|![Symbol „Wichtig“](../test/media/vc364f3.gif) **Warnung:** Es wird davon abgeraten, den Videoaufzeichnungsadapter für Auslastungstests zu verwenden.|[Vorgehensweise: Einschließen von Bildschirm- und Stimmenaufzeichnungen während der Tests mit Testeinstellungen](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Klicken Sie auf **Bereitstellung**.
 
@@ -146,9 +148,9 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
      Die Seite **Setup- und Bereinigungsskripts** wird angezeigt.
 
-    1. Geben Sie den Speicherort der Skriptdatei unter **Setupskript** ein, oder klicken Sie auf die Auslassungspunkte ( **…** ), um das Setupskript zu suchen.
+    1. Geben Sie den Speicherort der Skriptdatei unter **Setupskript** ein, oder klicken Sie auf die Auslassungspunkte (**…**), um das Setupskript zu suchen.
 
-    2. Geben Sie den Speicherort der Skriptdatei unter **Bereinigungsskript** ein, oder klicken Sie auf die Auslassungspunkte ( **…** ), um das Bereinigungsskript zu suchen.
+    2. Geben Sie den Speicherort der Skriptdatei unter **Bereinigungsskript** ein, oder klicken Sie auf die Auslassungspunkte (**…**), um das Bereinigungsskript zu suchen.
 
 24. Um die Tests mithilfe eines anderen Hosts auszuführen, klicken Sie auf **Hosts**.
 
@@ -180,7 +182,7 @@ Klicken Sie im Ordner **Projektmappenelemente** im **Projektmappen-Explorer** mi
 
 Die Testeinstellungsdatei wird aus der Projektmappe entfernt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
 - [Sammeln von Diagnoseinformationen mithilfe von Testeinstellungen](../test/collect-diagnostic-information-using-test-settings.md)

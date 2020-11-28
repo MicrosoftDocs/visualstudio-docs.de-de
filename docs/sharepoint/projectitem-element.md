@@ -1,5 +1,7 @@
 ---
 title: ProjectItem-Element | Microsoft-Dokumentation
+description: Hier finden Sie Referenzinformationen zum ProjectItem-Element, das ein SharePoint-Projekt Element in der XML-Schema Referenz des SharePoint-Projekt Elements darstellt.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536876"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305054"
 ---
 # <a name="projectitem-element"></a>ProjectItem-Element
   Stellt ein SharePoint-Projekt Element dar. Dieses Element ist das erforderliche Stamm Element der *spdata* -Datei.
@@ -44,9 +46,9 @@ ms.locfileid: "85536876"
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|**DefaultFile**|Optionales **xs: String** -Attribut.<br /><br /> Der relative Pfad (einschließlich des Datei namens) der Datei, die im Visual Studio-Editor geöffnet wird, wenn Sie das SharePoint-Projekt Element in **Projektmappen-Explorer**öffnen. Der Pfad ist relativ zum Ordner, der die *spdata* -Datei enthält.|
+|**DefaultFile**|Optionales **xs: String** -Attribut.<br /><br /> Der relative Pfad (einschließlich des Datei namens) der Datei, die im Visual Studio-Editor geöffnet wird, wenn Sie das SharePoint-Projekt Element in **Projektmappen-Explorer** öffnen. Der Pfad ist relativ zum Ordner, der die *spdata* -Datei enthält.|
 |**Featurereceiverclass**|Optionales **xs: String** -Attribut.<br /><br /> Der voll qualifizierte Name einer Funktions Empfängerklasse für dieses SharePoint-Projekt Element. Weitere Informationen zu Funktions Empfängern finden Sie unter [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
 |**Featurereceiverassembly**|Optionales **xs: String** -Attribut.<br /><br /> Gibt den voll qualifizierten Namen einer Assembly an, die einen Funktions Empfänger für dieses SharePoint-Projekt Element definiert. Weitere Informationen zu Funktions Empfängern finden Sie unter [Bereitstellen von Verpackungs-und Bereitstellungs Informationen in Projekt Elementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Weitere Informationen zu voll qualifizierten Assemblynamen finden [Assembly Names](/dotnet/framework/app-domains/assembly-names)Sie unter Assemblynamen.|
 |**SupportedTrustLevels**|Optionales **xs: String** -Attribut.<br /><br /> Gibt die Vertrauens Ebenen an, die von diesem SharePoint-Projekt Element unterstützt werden. Bei diesem Wert kann es sich um eine der folgenden Zeichen folgen handeln: Sandbox, FullTrust oder all. Der Wert all gibt sowohl Sandboxed als auch FullTrust an.<br /><br /> In einem benutzerdefinierten SharePoint-Projekt Elementtyp entspricht der Wert dieses Attributs dem Wert, den Sie der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> Eigenschaft in der Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> Methode zuweisen. Wenn Sie einen anderen Wert für dieses Attribut angeben, überschreibt Visual Studio den Wert, sodass er die gleiche Vertrauens Ebene angibt, die Sie in der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> Eigenschaft angeben.|
@@ -55,7 +57,7 @@ ms.locfileid: "85536876"
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Optionales Element.<br /><br /> Stellt eine Auflistung benutzerdefinierter Datenelemente dar, die dem SharePoint-Projekt Element zugeordnet sind.<br /><br /> Sie können nur ein **ExtensionData** -Element einschließen.|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Optionales Element.<br /><br /> Stellt eine Auflistung von Eigenschafts Werten dar, die in einer Funktion enthalten sind, wenn Sie in SharePoint bereitgestellt wird.<br /><br /> Sie können nur ein **FeatureProperties** -Element einschließen.|
@@ -64,7 +66,7 @@ ms.locfileid: "85536876"
 |["SafeControls](../sharepoint/safecontrols-element.md)|Optionales Element.<br /><br /> Stellt eine Auflistung von ASPX-Steuerelementen und Webparts dar, die für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher gekennzeichnet sind.<br /><br /> Sie können nur ein **SafeControls** -Element einschließen.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
- Keine
+ Keine.
 
 ## <a name="element-information"></a>Elementinformationen
 

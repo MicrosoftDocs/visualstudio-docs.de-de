@@ -1,5 +1,7 @@
 ---
 title: Bearbeiten von Textmischungsmodellen
+description: Lernen Sie, mit dem Testmischungsmodell mehrere Workflows zu nutzen, was die Interaktion von Endbenutzern mit Ihren Anwendungen genauer angleicht.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ce54af89164b1a71c7328d04635c8735eec1b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d95eee8dd4e49e74b9bafd048e3f672fe560c68
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288649"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441364"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bearbeiten von Testmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt
 
@@ -63,7 +65,7 @@ Mit dem **Auslastungstest-Editor** können Sie das Testmischungsmodell in einem 
 
      Die Szenariokategorien und -eigenschaften werden angezeigt.
 
-4. Klicken Sie in der Eigenschaft **Testmischungstyp** auf die Schaltfläche mit den Auslassungspunkten ( **…** ).
+4. Klicken Sie in der Eigenschaft **Testmischungstyp** auf die Schaltfläche mit den Auslassungspunkten (**…**).
 
      Das Dialogfeld **Testmischung bearbeiten** wird angezeigt.
 

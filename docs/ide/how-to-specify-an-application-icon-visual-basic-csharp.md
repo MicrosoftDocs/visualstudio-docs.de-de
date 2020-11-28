@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Angeben eines Anwendungssymbols (Visual Basic, C#)'
+description: Erfahren Sie, wie Sie mithilfe der Symbol-Eigenschaft das Symbol angeben, das im Datei-Explorer und in der Windows-Taskleiste für die kompilierte Anwendung angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 34405fd52b49e89c2fa0fc95ec1268448bad3061
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284060"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596910"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Vorgehensweise: Angeben eines Anwendungssymbols (Visual Basic, C#)
 

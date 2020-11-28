@@ -1,5 +1,7 @@
 ---
 title: Angeben der in Auslastungstestszenarios zu verwendenden Test-Agents
+description: Lernen Sie, Agents zur Verwendung in einem Szenario anzugeben, indem Sie die Eigenschaft „Zu verwendende Agents“ im Fenster „Eigenschaften“ des Auslastungstest-Editors festlegen.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af0dac96bef5218a80e01c3ec205b58d122677c6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287492"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440908"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Vorgehensweise: Angeben der in Auslastungstestszenarios zu verwendenden Test-Agents
 
@@ -57,7 +59,7 @@ Fügen Sie dem Auslastungstest mehr Agents hinzu, wenn auf einem Test-Agent-Comp
 
 4. Geben Sie im Textfeld für die Eigenschaft **Zu verwendende Agents** die Liste der Agents ein, mit denen das Szenario möglicherweise ausgeführt wird.
 
-     Agents müssen durch Kommas getrennt sein, z.B. **Agent1, Agent2, Agent3**. Wenn Sie keine Eigenschaft angeben, verwendet das Szenario alle verfügbaren Agents.
+     Agents müssen durch Kommas getrennt sein, z.B. „**Agent1, Agent2, Agent3**“. Wenn Sie keine Eigenschaft angeben, verwendet das Szenario alle verfügbaren Agents.
 
     > [!NOTE]
     > Die Eigenschaft **Zu verwendende Agents** wird bei lokalen Testläufen ignoriert. Wenn bei Remotetestläufen keiner der in **Zu verwendende Agents** angegebenen Agents vorhanden ist, werden im Szenario keine Tests ausgeführt.
@@ -67,6 +69,6 @@ Fügen Sie dem Auslastungstest mehr Agents hinzu, wenn auf einem Test-Agent-Comp
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
-- [Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
+- [Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
 - [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)

@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld "Assemblyinformationen"
+description: Informieren Sie sich über das Dialogfeld „Assemblyinformationen“, und erfahren Sie, wie Sie damit die Werte der globalen .NET Framework-Assemblyattribute angeben können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,18 +14,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809006"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871339"
 ---
 # <a name="assembly-information-dialog-box"></a>Assemblyinformationen (Dialogfeld)
 
 Im Dialogfeld „Assemblyinformationen“ werden die Werte der globalen .NET Framework-Assemblyattribute festgelegt, die in der AssemblyInfo-Datei gespeichert sind, die mit dem Projekt automatisch erstellt wird. Im Projektmappen-Explorer befindet sich die AssemblyInfo-Datei im Knoten **Mein Projekt** für Visual Basic-Projekte (klicken Sie zum Anzeigen auf **Alle Dateien** anzeigen). Für C#-Projekte befindet sie sich unter **Eigenschaften**. Weitere Informationen finden Sie unter [Attribute (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index).
 
-Um auf dieses Dialogfeld zuzugreifen, wählen Sie einen Projektknoten im **Projektmappen-Explorer** aus, und wählen Sie dann im Menü **Projekt** **Eigenschaften**. Auf der Seite **Anwendung** wählen Sie die Schaltfläche **Assemblyinformation**.
+Um auf dieses Dialogfeld zuzugreifen, wählen Sie einen Projektknoten im **Projektmappen-Explorer** aus, und wählen Sie dann im Menü **Projekt****Eigenschaften**. Auf der Seite **Anwendung** wählen Sie die Schaltfläche **Assemblyinformation**.
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
@@ -67,5 +69,5 @@ Gibt an, ob Typen in der Assembly für COM verfügbar sind. Entspricht <xref:Sys
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Seite "Anwendung", Projekt-Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
+- [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Attribute](/previous-versions/z0w1kczw(v=vs.140))

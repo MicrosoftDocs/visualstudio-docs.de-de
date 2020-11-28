@@ -1,5 +1,7 @@
 ---
 title: C++-TypeDefs im Klassen-Designer
+description: Erfahren Sie, wie der Klassen-Designer C++-TypeDef-Typen unterstützt, die mithilfe des Schlüsselworts „TypeDef“ deklariert werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f95b948d4ffc70d225dd4a8b2bb2debe111c967e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590695"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903441"
 ---
 # <a name="c-typedefs-in-class-designer"></a>C++-TypeDefs im Klassen-Designer
 
@@ -85,4 +87,4 @@ typedef class coord
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Arbeiten mit C++-Code](working-with-visual-cpp-code.md)
-- [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+- [TypeDefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

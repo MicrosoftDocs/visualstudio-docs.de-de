@@ -1,5 +1,7 @@
 ---
 title: Vergleichen von Auslastungstestergebnissen
+description: Lernen Sie, Excel-Auslastungstestberichte zu generieren, die auf zwei oder mehr Testergebnissen basieren, einschließlich Ausführen von Vergleichsberichten und Trendberichten.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d2390b7efde62d475008dcb17aa24ed69ebf4bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66a388b5b6d74834c58eebad04147d5067655a28
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288844"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441593"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse
 
@@ -44,6 +46,6 @@ Zudem kann das Arbeitsblatt für Projektbeteiligte freigegeben werden, damit die
 |**Erstellen eines Leistungs- und Belastungsberichts:** Sie können mit Microsoft Excel Berichte für die Auslastungs- und Webleistungstests erstellen.|- [Vorgehensweise: Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Manuelles Erstellen eines Leistungs- und Belastungsberichts mithilfe von Microsoft Word:** Sie können manuell Berichte für Auslastungs- und Webleistungstests erstellen, indem Sie die Zusammenfassung, die Tabelle und Diagrammdaten kopieren und in ein Microsoft Word-Dokument einfügen.|- [Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

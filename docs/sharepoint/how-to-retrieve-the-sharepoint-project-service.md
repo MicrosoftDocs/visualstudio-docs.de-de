@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Abrufen des SharePoint-Projekt Dienstanbieter | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie in Projekt Systemerweiterungen, Server-Explorer Erweiterungen oder anderen Visual Studio-Erweiterungen auf den SharePoint-Projekt Dienst zugreifen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f49883337c5748c0f8bcab5d0a88e02612e51b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 553b4ae3b7ecfa9fa49065824020ebdcecf77215
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015561"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304447"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Vorgehensweise: Abrufen des SharePoint-Projekt Dienstanbieter
   Sie können in den folgenden Lösungs Typen auf den SharePoint-Projekt Dienst zugreifen:
@@ -73,7 +75,7 @@ ms.locfileid: "86015561"
      Weitere Informationen zum Definieren von Projekt Elementtypen finden Sie unter Gewusst [wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Abrufen des diensdienstanbieter in Server-Explorer Erweiterungen
- In einer Erweiterung des **SharePoint-Verbindungs** Knotens in **Server-Explorer**können Sie mithilfe der- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> Eigenschaft eines Objekts auf den Projekt Dienst zugreifen <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> .
+ In einer Erweiterung des **SharePoint-Verbindungs** Knotens in **Server-Explorer** können Sie mithilfe der- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> Eigenschaft eines Objekts auf den Projekt Dienst zugreifen <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> .
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>So rufen Sie den Dienst in einer Server-Explorer Erweiterung ab
 
@@ -81,12 +83,12 @@ ms.locfileid: "86015561"
 
 2. Verwenden Sie die- <xref:System.IServiceProvider.GetService%2A> Methode, um ein- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> Objekt anzufordern.
 
-     Im folgenden Codebeispiel wird veranschaulicht, wie der Project Service verwendet wird, um eine Nachricht in das **Ausgabe** Fenster zu schreiben, und **Fehlerliste** Fenster in einem Kontextmenü, das von der Erweiterung Listen Knoten in **Server-Explorer**hinzugefügt wird.
+     Im folgenden Codebeispiel wird veranschaulicht, wie der Project Service verwendet wird, um eine Nachricht in das **Ausgabe** Fenster zu schreiben, und **Fehlerliste** Fenster in einem Kontextmenü, das von der Erweiterung Listen Knoten in **Server-Explorer** hinzugefügt wird.
 
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]
 
-     Weitere Informationen zum Erweitern des **SharePoint-Verbindungs** Knotens in **Server-Explorer**finden Sie unter Gewusst [wie: Erweitern eines SharePoint-Knotens in Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+     Weitere Informationen zum Erweitern des **SharePoint-Verbindungs** Knotens in **Server-Explorer** finden Sie unter Gewusst [wie: Erweitern eines SharePoint-Knotens in Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>Abrufen des Dienstanbieter in anderen Visual Studio-Erweiterungen
  Sie können den Projekt Dienst in einem VSPackage oder in einer beliebigen Visual Studio-Erweiterung abrufen, die auf ein- <xref:EnvDTE80.DTE2> Objekt im Automation-Objektmodell zugreifen kann, z. b. einen Projektvorlagen-Assistenten, der die- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> Schnittstelle implementiert.
@@ -99,7 +101,7 @@ ms.locfileid: "86015561"
 
   In einer Visual Studio-Erweiterung, die auf ein- <xref:EnvDTE80.DTE2> Objekt zugreifen kann, können Sie ein- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> Objekt mit der- <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> Methode eines-Objekts anfordern <xref:Microsoft.VisualStudio.Shell.ServiceProvider> . Weitere Informationen finden Sie unter " [erhalten eines Dienstanbieter" aus dem DTE-Objekt](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md)
 - [Vorgehensweise: erhalten eines Dienstanbieter](../extensibility/how-to-get-a-service.md)
 - [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)

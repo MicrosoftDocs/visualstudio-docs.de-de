@@ -1,5 +1,7 @@
 ---
 title: Codierung und Zeilenumbruchzeichen
+description: Erfahren Sie mehr über die Zeichen, die von Visual Studio als Zeilenumbrüche interpretiert werden, und darüber, wie die ursprünglichen Codierungs- und Zeilenumbruchzeichen verwaltet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 889af1c0fd28224b2f31eb80bbeecad28346cd1c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045594"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006639"
 ---
 # <a name="encodings-and-line-endings"></a>Codierungen und Zeilenenden
 
@@ -51,12 +53,12 @@ Klicken Sie auf **Datei** > **Erweiterte Speicheroptionen**. Über das sich öff
 > [!NOTE]
 > Wenn **Erweiterte Speicheroptionen** im **Dateimenü** nicht angezeigt wird, können Sie dies hinzufügen. 
 > 1. Wählen Sie **Extras** > **Anpassen** aus. 
-> 1. Klicken Sie auf die Registerkarte **Befehle** , aktivieren Sie das Kontrollkästchen **Menüleiste** , und wählen Sie in der entsprechenden Dropdownliste den Eintrag **Datei** aus. Klicken Sie auf die Schaltfläche **Befehl hinzufügen**. 
-> 1. Klicken Sie unter **Kategorien** im Dialogfeld **Befehl hinzufügen** auf **Datei** , und klicken Sie dann in der Liste **Befehle** auf **Erweiterte Speicheroptionen**. Klicken Sie auf die Schaltfläche **OK**.
-> 1. Verwenden Sie die Schaltflächen **Nach oben verschieben** und auf **Nach unten verschieben** , um den Befehl an eine beliebige Stelle im Menü zu verschieben. Klicken Sie auf **Schließen** , um das Dialogfeld **Anpassen** zu schließen. 
+> 1. Klicken Sie auf die Registerkarte **Befehle**, aktivieren Sie das Kontrollkästchen **Menüleiste**, und wählen Sie in der entsprechenden Dropdownliste den Eintrag **Datei** aus. Klicken Sie auf die Schaltfläche **Befehl hinzufügen**. 
+> 1. Klicken Sie unter **Kategorien** im Dialogfeld **Befehl hinzufügen** auf **Datei**, und klicken Sie dann in der Liste **Befehle** auf **Erweiterte Speicheroptionen**. Klicken Sie auf die Schaltfläche **OK**.
+> 1. Verwenden Sie die Schaltflächen **Nach oben verschieben** und auf **Nach unten verschieben**, um den Befehl an eine beliebige Stelle im Menü zu verschieben. Klicken Sie auf **Schließen**, um das Dialogfeld **Anpassen** zu schließen. 
 > Weitere Informationen finden Sie unter [Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Alternativ können Sie über **Datei** >  **\<file\> speichern unter** das Dialogfeld **Erweiterte Speicheroptionen** öffnen. Klicken Sie im Dialogfeld **Datei speichern unter** auf den nach unten weisenden Pfeil neben der Schaltfläche **Speichern** , und klicken Sie auf **Mit Codierung speichern**.
+> Alternativ können Sie über **Datei** >  **\<file\> speichern unter** das Dialogfeld **Erweiterte Speicheroptionen** öffnen. Klicken Sie im Dialogfeld **Datei speichern unter** auf den nach unten weisenden Pfeil neben der Schaltfläche **Speichern**, und klicken Sie auf **Mit Codierung speichern**.
 
 ## <a name="see-also"></a>Siehe auch
 

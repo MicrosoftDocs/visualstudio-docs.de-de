@@ -1,5 +1,7 @@
 ---
 title: Anzeigen von Typdefinitionen
+description: Erfahren Sie mehr über die Features „Gehe zu Definition“ und „Definition einsehen“, mit denen Sie mühelos die Definition eines Typs oder Members anzeigen können.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75592073"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597495"
 ---
 # <a name="view-type-and-member-definitions"></a>Anzeigen von Typ- und Memberdefinitionen
 
@@ -52,13 +54,13 @@ Drücken Sie dann **STRG** (bzw. die Zusatztaste, die in **Optionen** ausgewähl
 
 Wenn Sie im Popupfenster eine andere Definition einsehen, starten Sie einen Breadcrumbpfad, in dem Sie mithilfe der Kreise und Pfeile navigieren können, die oberhalb des Popups angezeigt werden.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Anzeigen von Metadaten als Quellcode (C#)
 
 Wenn Sie die Definition von C#-Typen oder -Membern anzeigen, deren Quellcode nicht verfügbar ist, werden stattdessen die entsprechenden Metadaten angezeigt. Sie können die Deklarationen der Typen und Member sehen, nicht aber ihre Implementierungen.
 
-Wenn Sie den Befehl **Gehe zu Definition** oder **Definition einsehen** für ein Element ausführen, dessen Quellcode nicht verfügbar ist, wird im Code-Editor ein Dokument mit Registerkarten angezeigt, das eine Ansicht der Metadaten des betreffenden Elements in der Darstellung als Quellcode enthält. Der Name des Typs wird auf der Registerkarte des Dokuments angezeigt, gefolgt von **[aus Metadaten]** .
+Wenn Sie den Befehl **Gehe zu Definition** oder **Definition einsehen** für ein Element ausführen, dessen Quellcode nicht verfügbar ist, wird im Code-Editor ein Dokument mit Registerkarten angezeigt, das eine Ansicht der Metadaten des betreffenden Elements in der Darstellung als Quellcode enthält. Der Name des Typs wird auf der Registerkarte des Dokuments angezeigt, gefolgt von **[aus Metadaten]**.
 
 Wenn Sie beispielsweise den Befehl **Gehe zu Definition** für <xref:System.Console>ausführen, werden Metadaten für <xref:System.Console> im Code-Editor als C#-Quellcode angezeigt. Der Code entspricht seiner Deklaration, zeigt jedoch keine Implementierung an.
 
@@ -79,4 +81,4 @@ Sie können jetzt eine Option festlegen, mit der dekompilierter Quellcode angeze
 ## <a name="see-also"></a>Siehe auch
 
 - [Navigieren durch den Code](../ide/navigating-code.md)
-- [How to: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

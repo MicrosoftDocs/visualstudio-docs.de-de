@@ -1,5 +1,7 @@
 ---
 title: Codeausschnitte
+description: Erfahren Sie mehr über Codeausschnitte, kleine Blöcke wiederverwendbaren Codes, die in eine Codedatei eingefügt werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585417"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006392"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 

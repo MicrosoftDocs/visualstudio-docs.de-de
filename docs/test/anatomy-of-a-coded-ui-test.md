@@ -1,5 +1,7 @@
 ---
 title: Anatomy of a Coded UI Test
+description: Informationen über die Dateien, die der Testprojektmappe der programmierten UI hinzugefügt werden, wenn Sie einen Test der programmierten UI erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aeaa2231c62487ec366aa561ea199cf63f3c6792
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591202"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441793"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Aufbau eines Tests der programmierten UI
 
@@ -26,7 +28,7 @@ Wenn Sie einen Test der programmierten UI in einem UI-Testprojekt erstellen, wer
 
 Wenn Sie einen Test der programmierten UI erstellen, erstellt der **Test-Generator der programmierten UI** eine Zuordnung der getesteten Benutzeroberfläche (UI) sowie die Testmethoden, Parameter und Assertionen für alle Tests. Zudem wird eine Klassendatei für jeden Test erstellt.
 
-|Datei|Inhalt|Bearbeitbar?|
+|Datei|Contents|Bearbeitbar?|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Deklarationsabschnitt](#UIMapDesignerFile)<br /><br /> [UIMap-Klasse](#UIMapClass) (partiell, automatisch generiert)<br /><br /> [Methoden](#UIMapMethods)<br /><br /> [Eigenschaften](#UIMapProperties)|Nein|
 |[UIMap.cs](#UIMapCS)|[UIMap-Klasse](#UIMapCS) (partiell)|Ja|
@@ -34,7 +36,7 @@ Wenn Sie einen Test der programmierten UI erstellen, erstellt der **Test-Generat
 |[UIMap.uitest](#UIMapuitest)|Die XML-Zuordnung der Benutzeroberfläche für den Test.|Nein|
 
 ### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
-Diese Datei enthält Code, der beim Erstellen eines Tests automatisch vom **Test-Generator der programmierten**{3}UI{4} erstellt wird. Diese Datei wird jedes Mal neu erstellt, wenn ein Test geändert wird. In dieser Datei kann daher kein Code hinzugefügt oder geändert werden.
+Diese Datei enthält Code, der beim Erstellen eines Tests automatisch vom Test-Generator der programmiertenUI erstellt wird. Diese Datei wird jedes Mal neu erstellt, wenn ein Test geändert wird. In dieser Datei kann daher kein Code hinzugefügt oder geändert werden.
 
 #### <a name="declarations-section"></a>Deklarationsabschnitt
 Dieser Abschnitt enthält die folgenden Deklarationen für eine Windows-Benutzeroberfläche.

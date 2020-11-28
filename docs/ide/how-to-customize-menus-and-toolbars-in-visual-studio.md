@@ -1,5 +1,7 @@
 ---
 title: Anpassen von Menüs und Symbolleisten
+description: Erfahren Sie, wie Sie Visual Studio-Menüs und -Symbolleisten und alle Befehle, die in den Menüs und Symbolleisten enthalten sind, anpassen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9111631014275da92da73966ba0310971dbf27f
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284398"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597235"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Vorgehensweise: Anpassen von Menüs und Symbolleisten in Visual Studio
 
@@ -79,7 +81,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
         Sie können die Symbolleiste auch am linken Rand ziehen, um sie im Hauptandockbereich zu verschieben.
 
         > [!NOTE]
-        > Weitere Informationen über Möglichkeiten zur Verbesserung der Benutzerfreundlichkeit sowie der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Weitere Informationen zur Verbesserung der Benutzerfreundlichkeit und der Barrierefreiheit von Symbolleisten finden Sie unter [Vorgehensweise: Festlegen von IDE-Barrierefreiheitsoptionen](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name=""></a><a name="customizing_menu">Anpassen eines Menüs oder einer Symbolleiste</a>
 
@@ -117,7 +119,7 @@ Sie können Visual Studio nicht nur anpassen, indem Sie Symbolleisten und Menüs
 
     Sie können auch alle Menüs und Symbolleisten zurücksetzen, indem Sie die Schaltfläche **Alle zurücksetzen** auswählen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Anpassen des Editors](../ide/how-to-change-text-case-in-the-editor.md)

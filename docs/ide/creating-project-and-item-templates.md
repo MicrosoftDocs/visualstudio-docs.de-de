@@ -1,5 +1,7 @@
 ---
 title: Vorlagen für Projekte und Dateien
+description: Erfahren Sie mehr darüber, wie Projekt- und Elementvorlagen wiederverwendbare Stubs bereitstellen, die Benutzen grundlegenden Code sowie eine grundlegende Struktur bieten.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313795"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006301"
 ---
 # <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen
 
@@ -69,8 +71,8 @@ Weitere Informationen zu Vorlagenordnern finden Sie unter [Vorgehensweise: Suche
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
-- [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+- [How to: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
+- [How to: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
 - [Vorlagentags](template-tags.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)

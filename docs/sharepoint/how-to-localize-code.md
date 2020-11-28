@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Lokalisieren von Code | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie Code in SharePoint lokalisieren, indem Sie hart codierte Zeichen folgen durch Aufrufe von GetGlobalResourceObject ersetzen, eine Methode, die auf lokalisierte Ressourcen verweist.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016686"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304588"
 ---
-# <a name="how-to-localize-code"></a>Vorgehensweise: Lokalisieren von Code
+# <a name="how-to-localize-code"></a>How to: Lokalisieren von Code
   In nicht lokalisiertem Code werden hartcodierte Zeichenfolgenwerte verwendet. Zum Lokalisieren der Codezeichenfolgen werden diese durch Aufrufe von <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> ersetzt – einer Methode zum Verweisen auf lokalisierte Ressourcen.
 
 ## <a name="localize-code"></a>Lokalisieren von Code
 
 #### <a name="to-localize-code"></a>So lokalisieren Sie Code
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für ein Projekt Element, und wählen Sie dann Modul **Hinzufügen**aus  >  **Module**.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für ein Projekt Element, und wählen Sie dann Modul **Hinzufügen** aus  >  **Module**.
 
      Wählen Sie die Vorlage **Ressourcen Datei** aus.
 
@@ -50,7 +52,7 @@ ms.locfileid: "86016686"
 
 7. Erstellen Sie das Projekt, um die Satelliten-DLLs für die Ressource zu erstellen.
 
-8. Wählen Sie im **Paket-Designer**die Registerkarte **erweitert** aus, und fügen Sie dann die Satellitenassembly hinzu.
+8. Wählen Sie im **Paket-Designer** die Registerkarte **erweitert** aus, und fügen Sie dann die Satellitenassembly hinzu.
 
 9. Stellen Sie im Feld **Speicherort** einen Kultur-ID-Ordner dem Speicherort Pfad voran, z. b. *de-de \\ \<Project Item Name>.resources.dll*.
 
@@ -68,8 +70,8 @@ ms.locfileid: "86016686"
 
      In der Anwendung werden die lokalisierten Zeichenfolgen angezeigt. Zum Anzeigen lokalisierter Ressourcen muss auf dem SharePoint-Server ein Sprachpaket installiert sein, das der Kultur der Ressourcendatei entspricht.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)
-- [Vorgehensweise: Lokalisieren einer Funktion](../sharepoint/how-to-localize-a-feature.md)
-- [Gewusst wie: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)
-- [Vorgehensweise: Hinzufügen einer Ressourcen Datei](../sharepoint/how-to-add-a-resource-file.md)
+- [How to: Lokalisieren eines Features](../sharepoint/how-to-localize-a-feature.md)
+- [How to: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)
+- [How to: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)

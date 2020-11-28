@@ -1,20 +1,23 @@
 ---
 title: Einführung in Projekte und Projektmappen
+description: Erfahren Sie mehr über den Unterschied zwischen Projekten und Projektmappen und wie sie in Visual Studio verwendet werden können.
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704052"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903935"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Erfahren Sie mehr über Projekte und Projektmappen
 
@@ -55,7 +58,7 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
 1. Erweitern Sie im linken Bereich **Andere Projekttypen**, und klicken Sie dann auf **Visual Studio-Projektmappen**. Wählen Sie im mittleren Bereich die Vorlage **Leere Projektmappe** aus. Geben Sie Ihrer Projektmappe den Namen **QuickSolution**, und klicken Sie anschließend auf die Schaltfläche **OK**.
 
-   ![Vorlage „Leere Projektmappe“ in Visual Studio 2017](media/tutorial-projects-new-solution.png)
+   ![Vorlage „Leere Projektmappe“ in Visual Studio 2017](media/tutorial-projects-new-solution.png "Die Vorlage „Leere Projektmappe“ in Visual Studio 2017.")
 
    Die **Startseite** wird geschlossen, und im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
 
@@ -69,7 +72,7 @@ Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visu
 
 3. Geben Sie auf der Seite **Neues Projekt erstellen** im Suchfeld **leere Projektmappe** ein, und wählen Sie die Vorlage **Leere Projektmappe** und dann **Weiter** aus.
 
-   ![Vorlage „Leere Projektmappe“ in Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Vorlage „Leere Projektmappe“ in Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png "Die Vorlage „Leere Projektmappe“ in Visual Studio 2019.")
 
     > [!TIP]
     > Wenn Sie mehrere Workloads installiert haben, wird die Vorlage **Leere Projektmappe** möglicherweise nicht oben in der Liste der Suchergebnisse angezeigt. Scrollen Sie in der Liste zum Abschnitt **Andere Ergebnisse basierend auf Ihrer Suche**. Dort sollte die Vorlage angezeigt werden.
@@ -97,7 +100,7 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
    > [!NOTE]
    > Wenn **Visual C#** nicht im linken Bereich des Dialogfelds angezeigt wird, müssen Sie die Visual Studio-Workload **.NET-Desktopentwicklung** installieren. Visual Studio verwendet die workloadbasierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihre Art von Entwicklung benötigen. Sie können dies problemlos über den Link **Visual Studio-Installer öffnen** im unteren linken Bereich des Dialogfelds **Neues Projekt hinzufügen** erledigen. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
    >
-   > ![Öffnen des Links „Visual Studio-Installer“](media/tutorial-projects-open-installer.png)
+   > ![Öffnen des Links „Visual Studio-Installer“](media/tutorial-projects-open-installer.png "Der Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt hinzufügen“ in Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -116,9 +119,11 @@ Fügen Sie nun der Projektmappe Ihr erstes Projekt hinzu. Beginnen Sie mit einem
    Unter der Projektmappe wird im **Projektmappen-Explorer** ein Projekt mit dem Namen „QuickDate“ angezeigt. Zu diesem Zeitpunkt enthält das Projekt nur eine Datei mit dem Namen *App.config*.
 
    > [!NOTE]
-   > Wenn die Vorlage **Leeres Projekt (.NET Framework)** nicht angezeigt wird, müssen Sie die Visual Studio-Workload **.NET-Desktopentwicklung** installieren. Visual Studio verwendet die workloadbasierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihre Art von Entwicklung benötigen. Eine einfache Möglichkeit, eine neue Workload beim Erstellen eines neuen Projekts zu installieren, besteht darin, auf den Link **Install more tools and features** (Weitere Tools und Features installieren) unter dem Text **Not finding what you're looking for?** (Sie finden nicht, wonach Sie suchen?) zu klicken. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
+   > Wenn die Vorlage **Leeres Projekt (.NET Framework)** nicht angezeigt wird, müssen Sie die Visual Studio-Workload **.NET-Desktopentwicklung** installieren. Visual Studio verwendet die workloadbasierte Installation, damit nur die Komponenten installiert werden, die Sie für Ihre Art von Entwicklung benötigen.
    >
-   > ![Öffnen des Links „Visual Studio-Installer“](media/vs-2019/tutorial-projects-open-installer.png)
+   >Eine einfache Möglichkeit, eine neue Workload beim Erstellen eines neuen Projekts zu installieren, besteht darin, auf den Link **Install more tools and features** (Weitere Tools und Features installieren) unter dem Text **Not finding what you're looking for?** (Sie finden nicht, wonach Sie suchen?) zu klicken. Wählen Sie nach dem Starten des Visual Studio-Installers die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf die Schaltfläche **Ändern**.
+   >
+   > ![Öffnen des Links „Visual Studio-Installer“](media/vs-2019/tutorial-projects-open-installer.png "Der Link „Visual Studio-Installer öffnen“ im Dialogfeld „Neues Projekt erstellen“ in Visual Studio.")
 
 ::: moniker-end
 
@@ -174,7 +179,7 @@ Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal 
 
    Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.cs* geöffnet.
 
-   ![Projektmappen-Explorer von Visual Studio mit zwei Projekten](media/tutorial-projects-solution-explorer.png)
+   ![Projektmappen-Explorer von Visual Studio mit zwei Projekten](media/tutorial-projects-solution-explorer.png "Projektmappen-Explorer mit zwei Projekten in Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -188,7 +193,7 @@ Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal 
 
    Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.cs* geöffnet.
 
-   ![Projektmappen-Explorer von Visual Studio mit zwei Projekten](media/vs-2019/tutorial-projects-solution-explorer.png)
+   ![Projektmappen-Explorer von Visual Studio mit zwei Projekten](media/vs-2019/tutorial-projects-solution-explorer.png "Projektmappen-Explorer mit zwei Projekten in Visual Studio.")
 
 ::: moniker-end
 
@@ -204,7 +209,7 @@ Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im P
 
    Dem **QuickDate**-Projekt wird ein Verweis hinzugefügt.
 
-   ![Anzeigen des Projektmappen-Explorer-Projektverweises in Visual Studio 2019](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![Anzeigen des Projektmappen-Explorer-Projektverweises in Visual Studio 2019](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Projektmappen-Explorer mit Projektverweis in Visual Studio.")
 
 ## <a name="add-test-code"></a>Hinzufügen von Testcode
 
@@ -240,7 +245,7 @@ Jetzt soll das neue Komponententestprojekt verwendet werden, um die Methode im P
 
    Die Codedatei sollte wie folgt aussehen:
 
-   ![CSharp-Code](media/tutorial-projects-cs-code.png)
+   ![CSharp-Code](media/tutorial-projects-cs-code.png "Der Codeausschnitt aus dem Abschnitt „Hinzufügen von Testcode“ in diesem Artikel.")
 
 ## <a name="project-properties"></a>Projekteigenschaften
 
@@ -250,7 +255,7 @@ In der Zeile in der *Calendar.cs*-Datei mit dem Attribut <xref:System.Runtime.Co
 
    Die *Eigenschaftenseiten* für das Projekt werden auf der Registerkarte **Anwendung** geöffnet. Die Eigenschaftenseiten enthalten verschiedene Einstellungen für das Projekt. Beachten Sie, dass der Assemblyname des **QuickTest**-Projekts tatsächlich „QuickTest“ lautet. Falls gewünscht können Sie ihn an dieser Stelle ändern. Wenn Sie das Testprojekt erstellen, ändert sich der Name der entstandenen Binärdatei von *QuickTest.dll* in den von Ihnen ausgewählten Namen.
 
-   ![Projekteigenschaften](media/tutorial-projects-netcore-properties.png)
+   ![Projekteigenschaften](media/tutorial-projects-netcore-properties.png "Dialogfeld „Projekteigenschaften“ in Visual Studio.")
 
 1. Sehen Sie sich einige der anderen Registerkarten der Eigenschaftenseite des Projekts an, z. B. **Build** und **Debuggen**. Diese Registerkarten sind bei den verschiedenen Projekttypen unterschiedlich.
 
@@ -258,7 +263,7 @@ In der Zeile in der *Calendar.cs*-Datei mit dem Attribut <xref:System.Runtime.Co
 
 Wenn Sie testen möchten, ob der Komponententest funktioniert, klicken Sie in der Menüleiste auf **Testen** > **Ausführen** > **Alle Tests**. Ein Fenster mit dem Namen **Test-Explorer** wird geöffnet, und der **TestGetCurrentDate**-Test sollte erfolgreich sein.
 
-![Test-Explorer in Visual Studio, der erfolgreiche Tests anzeigt](media/tutorial-projects-test-explorer.png)
+![Test-Explorer in Visual Studio, der erfolgreiche Tests anzeigt](media/tutorial-projects-test-explorer.png "Test-Explorer in Visual Studio, der einen erfolgreichen Test anzeigt.")
 
 ::: moniker range="vs-2017"
 

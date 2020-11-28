@@ -1,5 +1,6 @@
 ---
 title: Emulieren eines realen Verwendungsszenarios einer Website für Auslastungstests
+description: Verwenden Sie Auslastungsmodelloptionen, um die realen Erwartungen an eine Website oder Anwendung, für die Sie einen Auslastungstest ausführen, genauer vorauszusagen.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4dbbc5ec2ead98f9b20cb137f9e15237c13cf80
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ba5bba0b90acdfab932196ceda7dd8ad971efde1
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810310"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441260"
 ---
 # <a name="test-mix-models-overview"></a>Testmischungsmodelle – Übersicht
 

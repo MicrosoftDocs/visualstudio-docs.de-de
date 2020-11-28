@@ -1,5 +1,7 @@
 ---
 title: Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests
+description: Lernen Sie, Verstöße gegen von Ihnen festgelegte Schwellenwertregeln anzuzeigen, damit Sie die Verstöße analysieren können.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49fe5893254083dd83551ef5f43fffcc295a992a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591280"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442702"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 
@@ -34,12 +36,12 @@ Sind Verletzungen aufgetreten, wird ein Link der **Schwellenwertverletzungen** i
 
 In der Schwellenwertverletzungs-Tabelle werden die ersten 1.000 Verletzungen angezeigt. Die Tabelle enthält folgende Spalten:
 
-|Spalte|Beschreibung|In der Standardeinstellung angezeigt|
+|Column|BESCHREIBUNG|In der Standardeinstellung angezeigt|
 |-|-|-|
-|zeit|Der Zeitpunkt während des Auslastungstests, an dem die Verletzung auftrat|Ja|
+|Time|Der Zeitpunkt während des Auslastungstests, an dem die Verletzung auftrat|Ja|
 |Computer|Der Name des getesteten Computers, auf dem die Verletzung auftrat **Hinweis**: Dies ist wichtig, wenn Sie Auslastungstests auf Rigs ausführen.|Ja|
 |Kategorie|Die Kategorie des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
-|Zähler|Der Name des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
+|Leistungsindikator|Der Name des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
 |Instanz|Die Instanz des Leistungsindikators, dessen Schwellenwert verletzt wurde|Ja|
 |Nachricht|Eine Meldung mit einer Beschreibung der Schwellenwertverletzung Beispiel: **Der Wert 5 überschreitet den kritischen Schwellenwert 0**.|Ja|
 

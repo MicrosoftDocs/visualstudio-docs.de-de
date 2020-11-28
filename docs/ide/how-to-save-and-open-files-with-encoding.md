@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung'
+description: Erfahren Sie, wie Sie Dateien mit einer bestimmten Codierung speichern und öffnen, sodass die Datei beim Öffnen von Visual Studio ordnungsgemäß angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72496e842841b2c55833075e890da4b7088cb489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284164"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597092"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung
 

@@ -1,5 +1,7 @@
 ---
 title: Befehl "Vorhandenes Element hinzufügen"
+description: Informieren Sie sich über den Befehl „Vorhandenes Element hinzufügen“ und darüber, wie er eine vorhandene Datei einer aktuellen Projektmappe hinzufügt und sie öffnet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 59d1e032150035258df4b1cc88253cefc555d826
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585703"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871027"
 ---
 # <a name="add-existing-item-command"></a>Befehl "Vorhandenes Element hinzufügen"
 Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese.
@@ -33,7 +35,7 @@ File.AddExistingItem filename [/e:editorname]
 `filename`\
 Erforderlich. Der vollständige Pfad und der Dateiname des Elements, das einschließlich der Erweiterung der aktuellen Projektmappe hinzugefügt werden sollen. Wenn der Dateipfad oder Dateiname Leerzeichen enthalten, schließen Sie den vollständigen Pfad in Anführungszeichen ein.
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 /e: `editorname`\
 Dies ist optional. Der Name des Editors, in dem die Datei geöffnet wird. Wenn zwar das Argument, aber kein Editorname angegeben wurde, wird das Dialogfeld **Öffnen mit** angezeigt.
 
@@ -43,7 +45,7 @@ Die Argumentsyntax /e:`editorname` verwendet die Editornamen wie im Dialogfeld *
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.
 
 ## <a name="example"></a>Beispiel
@@ -58,4 +60,4 @@ Dieses Beispiel fügt die Datei „Form1.frm“ der aktuellen Projektmappe zu.
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Quellcodeverwaltungs-VSPackages | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Quellcodeverwaltungs-VSPackage erstellen, das einen Deep Integration-Pfad zum Integrieren der Quell Code Verwaltung in Visual Studio erstellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +13,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8608aae718ff9f8bdf2e40c0ab648c1d22c38257
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69e526cea292544c725abc7ffb54d0b29ad88403
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709190"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305586"
 ---
 # <a name="create-a-source-control-vspackage"></a>Quellcodeverwaltungs-VSPackage erstellen
 Diese Dokumentation enthält Links zu der Architektur Übersicht über ein Quell Code Verwaltungspaket [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , das in integriert ist, die API, die durch die zu implementierenden Schnittstellen definiert ist, und die zu verwendenden Dienste sowie ein Beispiel, das eine einfache Implementierung des Quell Code Verwaltungs Pakets veranschaulicht.
 
- Mit einem Quellcodeverwaltungs-VSPackage können Sie einen Deep Integration-Pfad für die Quell Code Verwaltung für die Integration in Erstellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Dadurch kann das Paket die von gehostete standardmäßige Quell Code Verwaltungs Benutzeroberfläche umgehen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , auf Quell Code Verwaltungsanforderungen aus dem Projekt System Antworten und mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponenten wie **Projektmappen-Explorer**interagieren. Ermöglicht es [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Partnern, ein VSPackage zu erstellen, das in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mithilfe eines Dienst Modells integriert werden kann.
+ Mit einem Quellcodeverwaltungs-VSPackage können Sie einen Deep Integration-Pfad für die Quell Code Verwaltung für die Integration in Erstellen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Dadurch kann das Paket die von gehostete standardmäßige Quell Code Verwaltungs Benutzeroberfläche umgehen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , auf Quell Code Verwaltungsanforderungen aus dem Projekt System Antworten und mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponenten wie **Projektmappen-Explorer** interagieren. Ermöglicht es [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Partnern, ein VSPackage zu erstellen, das in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mithilfe eines Dienst Modells integriert werden kann.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Erste Schritte](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
 
  Erläutert das Quell Code Verwaltungspaket, das eine erweiterte Alternative zum Quellcodeverwaltungs-Plug-in für die Implementierung von Quell Code Verwaltungsfunktionen in ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- [Aufbau](../../extensibility/internals/source-control-vspackage-architecture.md)
+- [Architektur](../../extensibility/internals/source-control-vspackage-architecture.md)
 
  Stellt ein Diagramm dar und erläutert die Komponenten eines Quell Code Verwaltungs Pakets.
 
