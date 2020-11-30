@@ -1,5 +1,6 @@
 ---
 title: Wann sollte ein Quellcodeverwaltungs-VSPackage implementiert werden?
+description: Erfahren Sie mehr über die Optionen für Quellcodeverwaltungs-Plug-ins und Quellcodeverwaltungs-VSPackages, die für die Erweiterung von Visual Studio-Quell Code Verwaltungslösungen verfügbar sind
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f96191115a509e07b5263f1d10d53ea3b2cc9c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037041"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329821"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Bestimmen, ob ein Quellcodeverwaltungs-VSPackage implementiert werden soll
 
@@ -30,7 +31,7 @@ In diesem Abschnitt werden die Optionen der Quellcodeverwaltungs-Plug-ins und de
 
  Wenn Sie eine Quell Code Verwaltungs Lösung implementieren möchten, die ein umfangreiches Quell Code Verwaltungsmodell bereitstellt, das nicht mit der Quellcodeverwaltungs-Plug-in-API ordnungsgemäß erfasst wird, können Sie ein Quell Code Verwaltungspaket als Integrations Pfad in Erwägung ziehen. Dies trifft vor allem dann zu, wenn Sie stattdessen das Quell Code Verwaltungs Adapter-Paket ersetzen (das mit Quellcodeverwaltungs-Plug-ins kommuniziert und eine einfache Benutzeroberfläche für die Quell Code Verwaltung bereitstellt), sodass Sie die Quell Code Verwaltungs Ereignisse auf benutzerdefinierte Weise behandeln können. Wenn Sie bereits über eine zufriedenstellende Quell Code Verwaltungs Benutzeroberfläche verfügen und diese Funktion in beibehalten möchten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , können Sie mit der Option "Quell Code Verwaltungspaket" genau das tun. Das Quell Code Verwaltungspaket ist nicht generisch und ausschließlich für die Verwendung mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE vorgesehen.
 
- Wenn Sie eine Lösung für die Quell Code Verwaltung implementieren möchten, die Flexibilität und eine umfassendere Kontrolle über die Quell Code Verwaltungs Logik und die Benutzeroberfläche bietet, bevorzugen Sie möglicherweise die Integrations Route für das Quell Code Verwaltungspaket. Sie haben folgende Möglichkeiten:
+ Wenn Sie eine Lösung für die Quell Code Verwaltung implementieren möchten, die Flexibilität und eine umfassendere Kontrolle über die Quell Code Verwaltungs Logik und die Benutzeroberfläche bietet, bevorzugen Sie möglicherweise die Integrations Route für das Quell Code Verwaltungspaket. Ihre Möglichkeiten:
 
 1. Registrieren Sie Ihr eigenes VSPackage für die Quell Code Verwaltung (siehe [Registrierung und Auswahl](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
 
@@ -40,6 +41,6 @@ In diesem Abschnitt werden die Optionen der Quellcodeverwaltungs-Plug-ins und de
 
 4. Behandeln von Ereignissen zum Bearbeiten und Abfragen von Abfragen (siehe Speichern der Abfrage [Bearbeiten](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen eines Quellcodeverwaltungs-Plug-ins](../../extensibility/internals/creating-a-source-control-plug-in.md)

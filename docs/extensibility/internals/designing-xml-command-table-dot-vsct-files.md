@@ -1,5 +1,7 @@
 ---
 title: Entwerfen der XML-Befehls Tabelle (. Vsct-Dateien | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine XML-Befehls Tabellen Datei (vsct-Datei) entwerfen, die das Layout und die Darstellung von Befehls Elementen beschreibt, einschließlich Schaltflächen, Kombinations Feldern, Menüs und Symbolleisten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcd29aee98139bb151c87590b256df6b8370abff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708744"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328430"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML-Befehls Tabellen Dateien (vsct-Dateien) entwerfen
 Eine XML-Befehls Tabellen Datei (*vsct*) beschreibt das Layout und die Darstellung von Befehls Elementen für ein VSPackage. Befehls Elemente enthalten Schaltflächen, Kombinations Felder, Menüs, Symbolleisten und Gruppen von Befehls Elementen. In diesem Artikel werden XML-Befehls Tabellen Dateien, deren Auswirkungen auf Befehls Elemente und Menüs und deren Erstellung beschrieben.
@@ -113,7 +115,7 @@ Sie können den *vsct.exe* Compiler verwenden, um eine vorhandene *CTO* -Datei i
 - Befehle und Untermenüs können auch mehreren Gruppen zugewiesen werden, und Gruppen können mit dem [Commands-Element](../../extensibility/commands-element.md)mehreren Menüs zugewiesen werden.
 
 ## <a name="vsct-file-notes"></a>vsct-Datei Hinweise
- Wenn Sie Änderungen an einer *vsct* -Datei vornehmen, nachdem Sie sie kompiliert und in einer nativen Satelliten-DLL abgelegt haben, sollten Sie **devenv.exe/Setup/nosetupvstemplates**ausführen. Dadurch wird erzwungen, dass die in der experimentellen Registrierung angegebenen VSPackage-Ressourcen erneut registriert werden und die interne Datenbank, die beschreibt, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] neu erstellt werden soll.
+ Wenn Sie Änderungen an einer *vsct* -Datei vornehmen, nachdem Sie sie kompiliert und in einer nativen Satelliten-DLL abgelegt haben, sollten Sie **devenv.exe/Setup/nosetupvstemplates** ausführen. Dadurch wird erzwungen, dass die in der experimentellen Registrierung angegebenen VSPackage-Ressourcen erneut registriert werden und die interne Datenbank, die beschreibt, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] neu erstellt werden soll.
 
  Während der Entwicklung ist es möglich, mehrere VSPackage-Projekte in der experimentellen Registrierungs Struktur zu erstellen und zu registrieren, die zu einem verwirrenden Cluster in der IDE führen kann. Um dieses Problem zu beheben, können Sie die experimentelle Struktur auf die Standardeinstellungen zurücksetzen, um alle registrierten VSPackages und alle Änderungen, die Sie möglicherweise an der IDE vorgenommen haben, zu entfernen. Verwenden Sie zum Zurücksetzen der experimentellen Struktur das CreateExpInstance.exe Tool, das im Visual Studio SDK verfügbar ist. Diese finden Sie unter:
 
@@ -121,5 +123,5 @@ Sie können den *vsct.exe* Compiler verwenden, um eine vorhandene *CTO* -Datei i
 
  Führen Sie das Tool mit dem Befehl " **/Reset**" aus. Beachten Sie, dass dieses Tool alle registrierten VSPackages, die normalerweise nicht mit installiert wurden, aus der experimentellen Hive entfernt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)

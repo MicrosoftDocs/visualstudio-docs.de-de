@@ -1,5 +1,7 @@
 ---
 title: Erstellen von übergeordneten Container Ordnern für Projektmappen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die API-Version 1,2 der Quellcodeverwaltungs-Plug-in verwenden, um ein einzelnes Quell Code Verwaltungs Ziel für alle Webprojekte in einer Projekt Mappe anzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709104"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329938"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Erstellen von übergeordneten Container Ordnern für Projektmappen
 In der Quellcodeverwaltungs-Plug-in-API-Version 1,2 kann ein Benutzer ein einzelnes Quell Code Verwaltungs Ziel für alle Webprojekte in der Projekt Mappe angeben. Dieser einzelne Stamm wird als Super Unified root (sur) bezeichnet.
@@ -55,14 +57,14 @@ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird empfohlen, 
 
 |Projekt Mappe enthält|Auf Speicherorten|Daten Bank Standardstruktur|
 |-----------------------|-----------------------|--------------------------------|
-|*sln1. sln*<br /><br /> Web1<br /><br /> Web2|*C:\solutions\sln1*<br /><br /> *C:\inetpub\wwwroot\web1*<br /><br /> \\\server\wwwroot $ \web2|$/<user_choice>/sln1<br /><br /> $/<user_choice>/c/web1<br /><br /> $/<user_choice>/web2|
-|*sln1. sln*<br /><br /> Web1<br /><br /> Win1|*C:\solutions\sln1*<br /><br /> *D:\inetpub\wwwroot\web1*<br /><br /> *C:\solutions\sln1\win1*|$/<user_choice>/sln1<br /><br /> $/<user_choice>/d/web1<br /><br /> $/<user_choice>/sln1/win1|
+|*sln1. sln*<br /><br /> Web1<br /><br /> Web2|*C:\solutions\sln1*<br /><br /> *C:\inetpub\wwwroot\web1*<br /><br /> \\\server\wwwroot $ \web2|$/<user_choice>/sln1<br /><br /> $/<user_choice>/C/web1<br /><br /> $/<user_choice>/web2|
+|*sln1. sln*<br /><br /> Web1<br /><br /> Win1|*C:\solutions\sln1*<br /><br /> *D:\inetpub\wwwroot\web1*<br /><br /> *C:\solutions\sln1\win1*|$/<user_choice>/sln1<br /><br /> $/<user_choice>/D/web1<br /><br /> $/<user_choice>/sln1/win1|
 
  Der Ordner "sur" und die Unterordner werden unabhängig davon erstellt, ob der Vorgang aufgrund eines Fehlers abgebrochen wurde oder fehlschlägt. Sie werden nicht automatisch in Abbruch-oder Fehlerzuständen entfernt.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]hat standardmäßig das Verhalten von Version 1,1, wenn das Quellcodeverwaltungs-Plug-in keine `SCC_CAP_CREATESUBPROJECT` -und-funktionsflags zurückgibt `SCC_CAP_GETPARENTPROJECT` Außerdem können Benutzer von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auswählen, das Verhalten von Version 1,1 wiederherzustellen, indem Sie den Wert des folgenden Schlüssels auf *DWORD festlegen: 00000001*:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] donotkreatesolutionrootfolderinsourcecontrol**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] donotkreatesolutionrootfolderinsourcecontrol**  =  *DWORD: 00000001*
 
 ## <a name="see-also"></a>Siehe auch
 - [Neuerungen in der Quellcodeverwaltungs-Plug-in-API, Version 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

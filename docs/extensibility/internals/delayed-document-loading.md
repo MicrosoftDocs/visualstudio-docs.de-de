@@ -1,5 +1,7 @@
 ---
 title: Verzögertes Laden von Dokumenten | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das verzögerte Laden von Dokumenten in Visual Studio und wie Sie Erweiterungen codieren, sodass Sie keine Elemente in einem Dokument Abfragen, bevor Sie geladen werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708812"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328391"
 ---
 # <a name="delayed-document-loading"></a>Verzögerte Dokument Ladevorgänge
 
@@ -65,4 +67,4 @@ Eine effizientere Methode des Zugriffs auf ein Dokument ist die Verwendung <xref
 
 Es gibt keinen sichtbaren Hinweis, der angibt, ob ein Dokument initialisiert wurde. Daher kann es schwierig sein, herauszufinden, ob die Erweiterung die Initialisierung erzwingt. Sie können einen Registrierungsschlüssel festlegen, der die Überprüfung vereinfacht, da dadurch der Titel jedes Dokuments, das nicht vollständig initialisiert ist, den Text *[Stub]* im Titel enthält.
 
-Legen Sie in **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload** **stubtabtitleformatstring** auf * {0} [Stub]* fest.
+Legen **** Sie inHKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad **stubtabtitleformatstring** auf *{0} [Stub]* fest.
