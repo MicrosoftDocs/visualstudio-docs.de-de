@@ -1,5 +1,7 @@
 ---
 title: Benutzerdefinierte Benutzeroberfläche (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine benutzerdefinierte Benutzeroberfläche (UI) in Visual Studio erstellen, indem Sie ein Quellcodeverwaltungs-VSPackage zum Angeben von UI-Elementen verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708929"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328521"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Benutzerdefinierte Benutzeroberfläche (Quellcodeverwaltungs-VSPackage)
 Ein VSPackage deklariert seine Menü Elemente und deren Standardzustände über die Visual Studio-Befehls Tabellen Datei (*vsct*). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]In der integrierten Entwicklungsumgebung (IDE) werden die Menü Elemente in Ihren Standard Zuständen angezeigt, bis das VSPackage geladen wurde. Anschließend wird die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode aufgerufen, um Menü Elemente zu aktivieren oder zu deaktivieren.
@@ -55,7 +57,7 @@ Ein VSPackage deklariert seine Menü Elemente und deren Standardzustände über 
 | Toolfenster | Das VSPackage der Quell Code Verwaltung Blendet alle Tool Fenster aus, die es besitzt, wenn es inaktiv ist. |
 | Quellcodeverwaltungs-VSPackage-spezifische Options Seiten | Mit dem Registrierungsschlüssel " **hklm\software\microsoft\visualstudio\x.y\toolsoptionspages\visibilitycmduicontexts** " kann ein VSPackage die Kontexte festlegen, in denen die Options Seiten angezeigt werden müssen. Ein Registrierungs Eintrag unter diesem Schlüssel muss mithilfe der Dienst-ID (SID) des Quell Code Verwaltungs Dienstanbieter erstellt werden, und ihm muss ein DWORD-Wert von 1 zugewiesen werden. Wenn ein UI-Ereignis in einem Kontext auftritt, bei dem das VSPackage der Quell Code Verwaltung bei registriert ist, wird das VSPackage aufgerufen, wenn es aktiv ist. |
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>

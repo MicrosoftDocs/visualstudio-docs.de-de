@@ -1,5 +1,7 @@
 ---
 title: Anzeigen von Dateien mit dem Befehl "Datei öffnen" | Microsoft-Dokumentation
+description: Erfahren Sie, wie die integrierte Entwicklungsumgebung (IDE) von Visual Studio den Befehl "Datei öffnen" im Menü Datei zum Anzeigen von Dateien verarbeitet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708600"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328339"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mit dem Befehl "Datei öffnen"
 In den folgenden Schritten wird beschrieben, wie die IDE den Befehl **Open File** behandelt, der im Menü **Datei** in verfügbar ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Die Schritte beschreiben auch, wie Projekte auf Aufrufe reagieren sollen, die aus diesem Befehl stammen.

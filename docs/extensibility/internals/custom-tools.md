@@ -1,5 +1,7 @@
 ---
 title: Benutzerdefinierte Tools | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie in Visual Studio benutzerdefinierte Tools erstellen, die ein Tool einem Element in einem Projekt zuordnen und dieses Tool ausführen, wenn die Datei gespeichert wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708961"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329964"
 ---
 # <a name="custom-tools"></a>Benutzerdefinierte Tools
-Mithilfe von *benutzerdefinierten Tools* können Sie ein Tool einem Element in einem Projekt zuordnen und dieses Tool ausführen, wenn die Datei gespeichert wird. Bestimmte benutzerdefinierte Tools, die manchmal auch als *Einzel Datei-Generatoren*bezeichnet werden, werden häufig verwendet, um Konvertierer zu implementieren, die Code aus Daten generieren und umgekehrt. Beispielsweise erstellen Einzel Datei [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] -Generatoren und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus den *. Settings* -und *RESX* -Dateien. Der generierte Quellcode stellt stark typisierten Zugriff auf die Daten in den *. Settings* -und *RESX* -Dateien bereit. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen und unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht. Ihre eigenen Projekttypen können auch benutzerdefinierte Tools unterstützen.
+Mithilfe von *benutzerdefinierten Tools* können Sie ein Tool einem Element in einem Projekt zuordnen und dieses Tool ausführen, wenn die Datei gespeichert wird. Bestimmte benutzerdefinierte Tools, die manchmal auch als *Einzel Datei-Generatoren* bezeichnet werden, werden häufig verwendet, um Konvertierer zu implementieren, die Code aus Daten generieren und umgekehrt. Beispielsweise erstellen Einzel Datei [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] -Generatoren und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus den *. Settings* -und *RESX* -Dateien. Der generierte Quellcode stellt stark typisierten Zugriff auf die Daten in den *. Settings* -und *RESX* -Dateien bereit. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen und unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht. Ihre eigenen Projekttypen können auch benutzerdefinierte Tools unterstützen.
 
  Benutzerdefinierte Tools sind registrierte Komponenten, die die- `IVsSingleFileGenerator` Schnittstelle implementieren.
 
@@ -43,7 +45,7 @@ Mithilfe von *benutzerdefinierten Tools* können Sie ein Tool einem Element in e
 
  Zeigt, wie eine Projekt Element Eigenschaft (z. b. der Autor einer Quelldatei) in der Projektdatei gespeichert wird.
 
-## <a name="reference"></a>Verweis
+## <a name="reference"></a>Referenz
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Stellt Details zum bereit <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> , das eine einzelne Eingabedatei in eine einzelne Ausgabedatei transformiert, die kompiliert oder einem Projekt hinzugefügt werden kann.
 
  <xref:EnvDTE.ProjectItem> Erläutert die- `ProjectItem` Schnittstelle, die ein Element in einem Projekt darstellt.

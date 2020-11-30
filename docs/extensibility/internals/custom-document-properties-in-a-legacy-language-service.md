@@ -1,5 +1,6 @@
 ---
 title: Benutzerdefinierte Dokumenteigenschaften in Legacy Sprachdiensten
+description: Erfahren Sie, wie Sie benutzerdefinierte Dokumenteigenschaften erstellen, die im Visual Studio-Eigenschaftenfenster als Teil eines Legacy sprach Dienstanbieter angezeigt werden.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036833"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329899"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Benutzerdefinierte Dokumenteigenschaften in einem Legacy Sprachdienst
 Dokumenteigenschaften können im [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Eigenschaften** Fenster angezeigt werden. Programmiersprachen sind im Allgemeinen keine Eigenschaften zugeordnet, die einzelnen Quelldateien zugeordnet sind. XML unterstützt jedoch Dokumenteigenschaften, die die Codierung, das Schema und das Stylesheet beeinflussen.
 
-## <a name="discussion"></a>Diskussion (Discussion)
+## <a name="discussion"></a>Diskussion
  Wenn Ihre Sprache benutzerdefinierte Dokumenteigenschaften benötigt, müssen Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.DocumentProperties> -Klasse ableiten und die erforderlichen Eigenschaften für die abgeleitete Klasse implementieren.
 
  Außerdem werden Dokumenteigenschaften in der Regel in der Quelldatei gespeichert. Dies erfordert, dass der Sprachdienst die Eigenschaften Informationen aus der Quelldatei analysiert, die im **Eigenschaften** Fenster angezeigt werden sollen, und die Quelldatei aktualisieren, wenn an den Dokumenteigenschaften im **Eigenschaften** Fenster eine Änderung vorgenommen wird.
@@ -398,5 +399,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Funktionen von Legacy Sprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)

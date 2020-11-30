@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Projekt Instanzen mithilfe von projektfactorys | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Projektklassen Instanzen mithilfe von projektfactorys in der integrierten Entwicklungsumgebung (IDE) von Visual Studio erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709064"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328599"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Erstellen von Projekt Instanzen mithilfe von projektfactorys
 Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden eine *projektfactory* , um Instanzen von Project-Objekten zu erstellen. Eine projektfactory ähnelt einer Standardklassenfactory für coerstell Bare com-Objekte. Projekt Objekte sind jedoch nicht codierbar. Sie können nur mit einer projektfactory erstellt werden.
 
- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Ruft die projektfactory auf, die in Ihrem VSPackage implementiert ist, wenn ein Benutzer ein vorhandenes Projekt lädt oder in ein neues Projekt erstellt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Das neue Project-Objekt stellt der IDE ausreichend Informationen zur Verfügung, um **Projektmappen-Explorer**aufzufüllen. Das neue Project-Objekt stellt außerdem die erforderlichen Schnittstellen zur Unterstützung aller relevanten UI-Aktionen bereit, die von der IDE initiiert werden.
+ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Ruft die projektfactory auf, die in Ihrem VSPackage implementiert ist, wenn ein Benutzer ein vorhandenes Projekt lädt oder in ein neues Projekt erstellt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Das neue Project-Objekt stellt der IDE ausreichend Informationen zur Verfügung, um **Projektmappen-Explorer** aufzufüllen. Das neue Project-Objekt stellt außerdem die erforderlichen Schnittstellen zur Unterstützung aller relevanten UI-Aktionen bereit, die von der IDE initiiert werden.
 
  Sie können die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle in einer Klasse im Projekt implementieren. In der Regel befindet Sie sich in einem eigenen Modul.
 
@@ -38,7 +40,7 @@ Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ver
 
    Projekttypen sind einer bestimmten Dateinamenerweiterung zugeordnet. Wenn ein Benutzer versucht, eine vorhandene Projektdatei zu öffnen, oder versucht, ein neues Projekt zu erstellen, indem er eine Vorlage Klonen, verwendet die IDE die-Erweiterung für die Datei, um die entsprechende Projekt-GUID zu ermitteln.
 
-   Sobald die IDE bestimmt, ob ein neues Projekt erstellt oder ein vorhandenes Projekt eines bestimmten Typs geöffnet werden muss, verwendet die IDE die Informationen in der Systemregistrierung unter **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\Projects]** , um zu ermitteln, welches VSPackage die erforderliche projektfactory implementiert. Die IDE lädt dieses VSPackage. In der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Methode muss das VSPackage seine projektfactory bei der IDE registrieren, indem die-Methode aufgerufen wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> .
+   Sobald die IDE bestimmt, ob ein neues Projekt erstellt oder ein vorhandenes Projekt eines bestimmten Typs geöffnet werden muss, verwendet die IDE die Informationen in der Systemregistrierung unter **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** , um zu ermitteln, welches VSPackage die erforderliche projektfactory implementiert. Die IDE lädt dieses VSPackage. In der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Methode muss das VSPackage seine projektfactory bei der IDE registrieren, indem die-Methode aufgerufen wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> .
 
    Die primäre Methode der- `IVsProjectFactory` Schnittstelle ist <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> , die zwei Szenarien behandeln sollte: das Öffnen eines vorhandenen Projekts und das Erstellen eines neuen Projekts. In den meisten Projekten wird der Projektzustand in einer Projektdatei gespeichert. In der Regel werden neue Projekte erstellt, indem eine Kopie der Vorlagen Datei an die Methode weitergegeben `CreateProject` und dann die Kopie geöffnet wird. Vorhandene Projekte werden instanziiert, indem die an die-Methode übergebenen Projektdateien direkt geöffnet werden `CreateProject` . Die- `CreateProject` Methode kann dem Benutzer je nach Bedarf zusätzliche Benutzeroberflächen Features anzeigen.
 

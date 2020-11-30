@@ -1,5 +1,7 @@
 ---
 title: Standardmäßige Befehls-, Gruppen-und Symbolleisten Platzierung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die IDE-Befehle, Produkt Befehle und Editor-Befehle, die von der Visual Studio-Benutzeroberfläche standardmäßig angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708889"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329883"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Standardmäßige Befehls-, Gruppen-und Symbolleisten Platzierung
 Bei der Einheitlichkeit und Stabilität von Produkten werden von der Benutzeroberfläche standardmäßig bestimmte Befehls Gruppen angezeigt, und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Definitionen für Befehle und Befehls Gruppen werden bereitstellt. VSPackages können auch die Standard Befehle und Befehls Gruppen verwenden.
@@ -40,6 +42,6 @@ Bei der Einheitlichkeit und Stabilität von Produkten werden von der Benutzerobe
 
  Editor-Symbolleisten sollten unterhalb der IDE und der Produktsymbol leisten platziert werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 - [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

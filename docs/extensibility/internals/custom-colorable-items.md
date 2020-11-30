@@ -1,5 +1,7 @@
 ---
 title: Benutzerdefinierte färb Bare Elemente | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie benutzerdefinierte Elemente als Teil eines sprach Dienstanbieter erstellen, indem Sie die Elemente im Dialogfeld Schriftarten und Farben überschreiben, z. b. Schlüsselwörter und Kommentare.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708996"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328534"
 ---
 # <a name="custom-colorable-items"></a>Benutzerdefinierte färb Bare Elemente
 Sie können die Liste der Typen für die Farbgebung (z. b. Schlüsselwörter und Kommentare) überschreiben, indem Sie benutzerdefinierte kolorierbare Elemente als Teil Ihres sprach Dienstanbieter implementieren.
 
 ## <a name="user-settings-of-colorable-items"></a>Benutzereinstellungen von Kolb baren Elementen
- Sie können das Dialogfeld **Schriftarten und Farben** anzeigen, indem Sie im **Menü Extras** auf Optionen klicken und dann unter **Umgebung**die **Option** **Schriftarten und Farben** auswählen. Wenn Sie eine Anzeige (z. b. **Text-Editor** oder **Befehlsfenster**) auswählen, werden im Listenfeld **Elemente anzeigen** alle für diese Anzeige aktivierbaren Elemente angezeigt. Sie können Schriftart, Größe, Vordergrundfarbe und Hintergrundfarbe für jedes farbige Element anzeigen und ändern. Ihre Auswahl wird in einem Cache in der Registrierung gespeichert, und der Zugriff erfolgt über den Namen des färb baren Elements.
+ Sie können das Dialogfeld **Schriftarten und Farben** anzeigen, indem Sie im **Menü Extras** auf Optionen klicken und dann unter **Umgebung** die **Option** **Schriftarten und Farben** auswählen. Wenn Sie eine Anzeige (z. b. **Text-Editor** oder **Befehlsfenster**) auswählen, werden im Listenfeld **Elemente anzeigen** alle für diese Anzeige aktivierbaren Elemente angezeigt. Sie können Schriftart, Größe, Vordergrundfarbe und Hintergrundfarbe für jedes farbige Element anzeigen und ändern. Ihre Auswahl wird in einem Cache in der Registrierung gespeichert, und der Zugriff erfolgt über den Namen des färb baren Elements.
 
 ## <a name="presentation-of-colorable-items"></a>Darstellung von färb baren Elementen
  Da die IDE Benutzer Überschreibungen von kolonier baren Elementen im Dialogfeld **Schriftarten und Farben** verarbeitet, müssen Sie nur jedes benutzerdefinierte Kolon-Element mit einem Namen angeben. Dieser Name wird in der Liste **Elemente anzeigen** angezeigt. Die färb baren Elemente werden in alphabetischer Reihenfolge angezeigt. Wenn Sie die benutzerdefinierten Elemente Ihres sprach Dienstanbieter gruppieren möchten, können Sie jeden Namen mit Ihrem Sprachen Namen (z. b. **NewLanguage-Comment** und **NewLanguage-Keywords**) beginnen.
@@ -64,7 +66,7 @@ Sie können die Liste der Typen für die Farbgebung (z. b. Schlüsselwörter und
 
     Ein Beispiel für das Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> -Schnittstelle und der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> Schnittstelle finden Sie unter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Modell eines Legacy sprach Dienstanbieter](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [Syntax Farbgebung in benutzerdefinierten Editoren](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

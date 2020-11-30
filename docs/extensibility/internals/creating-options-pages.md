@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Options Seiten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Options Seite im Menü Extras in Visual Studio erstellen, indem Sie eine DialogPage-Klasse aus dem Managed Package Framework implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709152"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328638"
 ---
 # <a name="create-options-pages"></a>Erstellen von Options Seiten
 Im [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Managed Package Framework erweitern die von abgeleiteten Klassen <xref:Microsoft.VisualStudio.Shell.DialogPage> die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE durch Hinzufügen von **options** Seiten **Tools** im Menü Extras.
@@ -59,7 +61,7 @@ Im [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Managed Package 
 ## <a name="example"></a>Beispiel
  Im folgenden finden Sie eine einfache "Hello World"-Implementierung einer Optionsseite. Wenn Sie den folgenden Code zu einem Standard Projekt hinzufügen, das von der Visual Studio-Paket Vorlage erstellt wurde, und die **Menübefehls** Option ausgewählt ist, wird die Option Seiten Funktionalität ordnungsgemäß
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Die folgende Klasse definiert eine minimale "Hello World"-Optionsseite. Beim Öffnen kann der Benutzer die Public- `HelloWorld` Eigenschaft in einem Eigenschaften Raster festlegen.
 
 ### <a name="code"></a>Code
