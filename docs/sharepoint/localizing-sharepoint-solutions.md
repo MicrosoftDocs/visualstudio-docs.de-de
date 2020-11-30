@@ -1,5 +1,7 @@
 ---
 title: Lokalisieren von SharePoint-Lösungen | Microsoft-Dokumentation
+description: Lokalisieren Sie SharePoint-Lösungen, indem Sie hartcodierte Zeichenfolgen aus dem Code entfernen und in XML-basierte Ressourcendateien (.resx) mit übersetzten Zeichenfolgen abstrahieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017138"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304267"
 ---
 # <a name="localize-sharepoint-solutions"></a>Lokalisieren von SharePoint-Lösungen
 

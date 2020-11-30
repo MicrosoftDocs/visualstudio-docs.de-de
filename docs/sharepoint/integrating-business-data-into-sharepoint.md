@@ -1,5 +1,7 @@
 ---
 title: Integrieren von Geschäftsdaten in SharePoint | Microsoft-Dokumentation
+description: Hier erhalten Sie eine allgemeine Übersicht über das Integrieren von Geschäftsdaten in SharePoint durch Erstellen eines Modells für den BDC-Dienst (Business Data Connectivity).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016313"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304350"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrieren von Geschäftsdaten in SharePoint
   Sie können Geschäftsdaten in SharePoint integrieren. Geschäftsdaten stammen aus Back-End-Serveranwendungen wie [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel und SAP oder von einem Webdienst. Benutzer können Geschäftsdaten mithilfe externer Listen oder mit Webparts für Geschäftsdaten anzeigen, hinzufügen, ändern oder löschen.  Benutzer können auch offline mit einer Microsoft Office-Anwendung wie Microsoft Outlook auf diese Daten zugreifen. Weitere Informationen finden Sie unter [Wo können externe Daten angezeigt werden?](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
