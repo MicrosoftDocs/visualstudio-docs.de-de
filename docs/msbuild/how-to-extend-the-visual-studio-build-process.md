@@ -16,17 +16,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436350"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970079"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Vorgehensweise: Erweitern des Visual Studio-Buildprozesses
 
-Der Visual Studio-Buildprozess wird durch eine Reihe von MSBuild- *TARGETS* -Dateien definiert, die in die Projektdatei importiert werden. Eine dieser importierten Dateien ( *Microsoft.Common.targets* ) kann erweitert werden, um Ihnen das Ausführen benutzerdefinierter Aufgaben in unterschiedlichen Phasen während des Buildprozesses zu ermöglichen. In diesem Artikel werden die zwei Methoden erläutert, mit denen der Visual Studio-Buildprozess erweitert werden kann:
+Der Visual Studio-Buildprozess wird durch eine Reihe von MSBuild-*TARGETS*-Dateien definiert, die in die Projektdatei importiert werden. Eine dieser importierten Dateien (*Microsoft.Common.targets*) kann erweitert werden, um Ihnen das Ausführen benutzerdefinierter Aufgaben in unterschiedlichen Phasen während des Buildprozesses zu ermöglichen. In diesem Artikel werden die zwei Methoden erläutert, mit denen der Visual Studio-Buildprozess erweitert werden kann:
 
-- Überschreiben spezifischer vordefinierter Ziele, die in den allgemeinen Zielen definiert werden ( *Microsoft.Common.targets* oder die importierten Dateien)
+- Überschreiben spezifischer vordefinierter Ziele, die in den allgemeinen Zielen definiert werden (*Microsoft.Common.targets* oder die importierten Dateien)
 
 - Überschreiben der DependsOn-Eigenschaften, die in den allgemeinen Zielen definiert werden
 
@@ -35,7 +35,7 @@ Der Visual Studio-Buildprozess wird durch eine Reihe von MSBuild- *TARGETS* -Dat
 Die allgemeinen Ziele enthalten vordefinierte, leere Ziele, die vor und nach einigen der wichtigen Ziele im Buildprozess aufgerufen werden. Beispielsweise ruft MSBuild das `BeforeBuild`-Ziel vor dem `CoreBuild`-Hauptziel und das `AfterBuild`-Ziel nach dem `CoreBuild`-Ziel auf. Die leeren Ziele in den allgemeinen Zielen führen standardmäßig keine Aktionen aus. Sie können aber ihr Standardverhalten überschreiben, indem Sie die Ziele definieren, die in einer Projektdatei enthalten sein sollen, die allgemeine Ziele importiert. Durch das Überschreiben der vordefinierten Ziele können Sie den Buildprozess mit MSBuild-Aufgaben besser steuern.
 
 > [!NOTE]
-> Projekte im Format von SDKs importieren Ziele implizit *nach der letzten Codezeile der Projektdatei* . Das heißt, Sie können die Standardziele nicht überschreiben, es sei denn, Sie legen Ihre Importe wie unter [Vorgehensweise: Verwenden von SDKs für MSBuild-Projekte](how-to-use-project-sdk.md) beschrieben manuell fest.
+> Projekte im Format von SDKs importieren Ziele implizit *nach der letzten Codezeile der Projektdatei*. Das heißt, Sie können die Standardziele nicht überschreiben, es sei denn, Sie legen Ihre Importe wie unter [Vorgehensweise: Verwenden von SDKs für MSBuild-Projekte](how-to-use-project-sdk.md) beschrieben manuell fest.
 
 #### <a name="to-override-a-predefined-target"></a>So überschreiben Sie ein vordefiniertes Ziel
 

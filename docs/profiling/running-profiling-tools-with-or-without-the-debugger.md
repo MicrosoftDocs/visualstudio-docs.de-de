@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918109"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970292"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne Debugger
 
@@ -39,11 +39,11 @@ Berücksichtigen Sie bei der Entscheidung, welche Tools und Ergebnisse Sie nutze
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens
 
-Wenn Sie mit dem Debuggen in Visual Studio beginnen, indem Sie **Debuggen** > **Debuggen starten** wählen oder **F5** drücken, wird das Fenster **Diagnosetools** standardmäßig angezeigt. Klicken Sie auf **Debuggen** > **Fenster** > **Diagnosetools anzeigen** , um dieses Fenster manuell zu öffnen. Das Fenster **Diagnosetools** enthält Informationen über Ereignisse, den Prozessarbeitsspeicher und die CPU-Auslastung.
+Wenn Sie mit dem Debuggen in Visual Studio beginnen, indem Sie **Debuggen** > **Debuggen starten** wählen oder **F5** drücken, wird das Fenster **Diagnosetools** standardmäßig angezeigt. Klicken Sie auf **Debuggen** > **Fenster** > **Diagnosetools anzeigen**, um dieses Fenster manuell zu öffnen. Das Fenster **Diagnosetools** enthält Informationen über Ereignisse, den Prozessarbeitsspeicher und die CPU-Auslastung.
 
 ![Screenshot des Fensters „Diagnosetools“](../profiling/media/diagnostictoolswindow.png "Fenster „Diagnosetools“")
 
-- Klicken Sie auf das Symbol für **Einstellungen** in der Symbolleiste, um die **Arbeitsspeicherauslastung** , die **UI-Analyse** , und die **CPU-Auslastung** zu anzuzeigen.
+- Klicken Sie auf das Symbol für **Einstellungen** in der Symbolleiste, um die **Arbeitsspeicherauslastung**, die **UI-Analyse**, und die **CPU-Auslastung** zu anzuzeigen.
 
 - Wählen Sie **Einstellungen** in der Dropdownliste **Einstellungen** aus, um die **Eigenschaftenseiten der Diagnosetools** mit weiteren Optionen zu öffnen.
 
@@ -58,13 +58,13 @@ Weitere Informationen finden Sie in folgenden Quellen:
 
 ### <a name="the-events-tab"></a>Die Registerkarte „Ereignisse“
 
-Während einer Debugsitzung werden die auftretenden Diagnoseereignisse im Fenster „Diagnosetools“ auf der Registerkarte „Ereignisse“ aufgelistet. Mit den Kategoriepräfixen *Haltepunkt* , *Datei* u. a. können Sie schnell die Liste nach einer Kategorie durchsuchen oder die Kategorien überspringen, die für Sie gerade nicht relevant sind.
+Während einer Debugsitzung werden die auftretenden Diagnoseereignisse im Fenster „Diagnosetools“ auf der Registerkarte „Ereignisse“ aufgelistet. Mit den Kategoriepräfixen *Haltepunkt*, *Datei* u. a. können Sie schnell die Liste nach einer Kategorie durchsuchen oder die Kategorien überspringen, die für Sie gerade nicht relevant sind.
 
-Verwenden Sie in der Dropdownliste **Filter** , um Ereignisse anzuzeigen oder auszublenden, indem Sie bestimmte Ereigniskategorien auswählen oder abwählen.
+Verwenden Sie in der Dropdownliste **Filter**, um Ereignisse anzuzeigen oder auszublenden, indem Sie bestimmte Ereigniskategorien auswählen oder abwählen.
 
 ![Screenshot des Filters „Diagnoseereignis“](../profiling/media/diagnosticeventfilter.png "Filtern von Diagnoseereignissen")
 
-Verwenden Sie das Suchfeld, um eine bestimmte Zeichenfolge in der Ereignisliste zu suchen. Dies sind die Suchergebnisse für die Zeichenfolge *name* , die mit vier Ereignissen übereinstimmt:
+Verwenden Sie das Suchfeld, um eine bestimmte Zeichenfolge in der Ereignisliste zu suchen. Dies sind die Suchergebnisse für die Zeichenfolge *name*, die mit vier Ereignissen übereinstimmt:
 
 ![Screenshot der Suche „Diagnoseereignis“](../profiling/media/diagnosticseventsearch.png "Suchen nach Diagnoseereignissen")
 
@@ -74,11 +74,11 @@ Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte
 
 Sie können zum Erfassen von Leistungsdaten ohne Debuggen die Leistungs-Profiler-Tools ausführen.
 
-1. Legen Sie mit einem in Visual Studio geöffneten Projekt die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Windows-Debugger** (oder **Lokaler Computer** ) aus.
+1. Legen Sie mit einem in Visual Studio geöffneten Projekt die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie als Bereitstellungsziel **Lokaler Windows-Debugger** (oder **Lokaler Computer**) aus.
 
-1. Klicken Sie auf **Debuggen** > **Leistungs-Profiler** , oder drücken Sie **ALT**+**F2**.
+1. Klicken Sie auf **Debuggen** > **Leistungs-Profiler**, oder drücken Sie **ALT**+**F2**.
 
-1. Wählen Sie auf der Startseite der Diagnosetools mindestens ein Tools aus, das ausgeführt werden soll. Es werden nur die Tools gezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wählen Sie **Alle Tools anzeigen** , um auch Tools anzuzeigen, die für diese Diagnosesitzung deaktiviert sind.
+1. Wählen Sie auf der Startseite der Diagnosetools mindestens ein Tools aus, das ausgeführt werden soll. Es werden nur die Tools gezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wählen Sie **Alle Tools anzeigen**, um auch Tools anzuzeigen, die für diese Diagnosesitzung deaktiviert sind.
 
    ![Screenshot der Diagnosetools](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 

@@ -8,11 +8,11 @@ ms.date: 07/22/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
 ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92352952"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970508"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 Als aktiver Visual Studio-Abonnent haben Sie Zugriff auf zahlreiche Features in Azure DevOps, die als Vorteil in Ihrem Abonnement enthalten sind. Sie können diese Features in jeder Azure DevOps-Organisation verwenden, bei dem Sie Mitglied sind. Dabei spielt es keine Rolle, ob Sie die Organisation erstellt haben oder von jemandem hinzugefügt wurden.
@@ -38,7 +38,7 @@ Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anm
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans                                             |  Ja          |
 ||
 
-<sup>1</sup>  *Enthält:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Umfasst nicht: MCT Software & Services, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Umfasst nicht: MCT Software & Services, Imagine.*
 
 <sup>2</sup> *Der Basic-Tarif umfasst das Definieren von Releasepipelines und mehrstufigen Continuous Deployment-Pipelines (CD) sowie die Verwendung von Genehmigungen und Gates zum Steuern von Bereitstellungen. Wenn der kostenlose Zugriff auf die Pipeline-Previewfunktion aktiviert ist, erhalten Projektbeteiligte Zugriff auf alle Features von Azure Pipelines. *
 

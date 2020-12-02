@@ -1,5 +1,7 @@
 ---
 title: Verfügbar machen von Typen für visuelle Designer | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Klassen-und Typdefinitionen, einschließlich derjenigen in benutzerdefinierten Tools, verfügbar machen, damit Sie von Visual Studio visuellen Designern zur Verfügung gestellt werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012529"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479524"
 ---
 # <a name="expose-types-to-visual-designers"></a>Verfügbar machen von Typen für visuelle Designer
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muss zur Entwurfszeit über Zugriff auf Klassen-und Typdefinitionen verfügen, um einen visuellen Designer anzuzeigen. Klassen werden aus einem vordefinierten Satz von Assemblys geladen, die den gesamten Abhängigkeits Satz des aktuellen Projekts (Verweise zuzüglich ihrer Abhängigkeiten) enthalten. Es kann auch erforderlich sein, dass visuelle Designer auf Klassen und Typen zugreifen können, die in Dateien definiert sind, die von benutzerdefinierten Tools generiert werden.

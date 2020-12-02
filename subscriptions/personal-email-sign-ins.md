@@ -8,11 +8,11 @@ ms.date: 10/28/2020
 ms.topic: conceptual
 description: Visual Studio-Abonnements – Warum sehe ich Hotmail- oder Gmail-Adressen für meine Abonnenten?
 ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904261"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189042"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio-Abonnements: Warum werden persönliche Konten für meine Abonnenten angezeigt?
 Nachdem Unternehmen vom Volume Licensing Service Center (VLSC) zum neuen [Abonnementverwaltungsportal](https://manage.visualstudio.com) von Visual Studio migriert haben, stellen Administratoren möglicherweise fest, dass als „Anmelde-E-Mail-Adresse“ für manche Abonnenten eine persönliche E-Mail-Adresse wie Hotmail oder Yahoo angezeigt wird.  
@@ -42,7 +42,7 @@ Sie können auch die Option **Verzeichnis durchsuchen** nutzen, um Fehler zu beh
 > [!div class="mx-imgBorder"]
 > ![Flyout für „Connect Emails“ (E-Mail-Adressen verknüpfen)](_img/connect-emails/connect-emails-flyout.png "Wählen Sie aus, welche Abonnenten ihren Azure AD-Identitäten zugeordnet werden sollen, und klicken Sie auf „Weiter“.")
 
-Klicken Sie auf **Weiter**. Hierdurch werden Sie zu einer Liste der anstehenden Änderungen weitergeleitet. Klicken Sie auf **Speichern** , wenn Sie mit diesen einverstanden sind. Die Änderungen werden anschließend umgesetzt. Ihre Abonnenten werden bei der nächsten Anmeldung bei ihrem Abonnement über die Änderung benachrichtigt.  Beachten Sie, dass nur die zwei Abonnenten, die in der Azure Active Directory-Instanz als übereinstimmend ermittelt wurden, in dieser Liste angezeigt werden.  Da Frederick in diesem Beispiel über keine Adresse in Azure AD verfügt, konnte sein Microsoft-Konto keinem Geschäftskonto zugeordnet werden. 
+Klicken Sie auf **Weiter**. Hierdurch werden Sie zu einer Liste der anstehenden Änderungen weitergeleitet. Klicken Sie auf **Speichern**, wenn Sie mit diesen einverstanden sind. Die Änderungen werden anschließend umgesetzt. Ihre Abonnenten werden bei der nächsten Anmeldung bei ihrem Abonnement über die Änderung benachrichtigt.  Beachten Sie, dass nur die zwei Abonnenten, die in der Azure Active Directory-Instanz als übereinstimmend ermittelt wurden, in dieser Liste angezeigt werden.  Da Frederick in diesem Beispiel über keine Adresse in Azure AD verfügt, konnte sein Microsoft-Konto keinem Geschäftskonto zugeordnet werden. 
 
 > [!div class="mx-imgBorder"]
 > ![Bestätigung für „Connect Emails“ (E-Mail-Adressen verknüpfen)](_img/connect-emails/connect-emails-confirm.png "Klicken Sie auf „Weiter“, um die vorgeschlagenen Änderungen zu implementieren, und klicken Sie auf „Speichern“.") 

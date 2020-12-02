@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8884eaa459fa3a2a7dd8d10f0ffeca5003398afd
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136731"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189718"
 ---
 # <a name="build-actions"></a>Buildvorgänge
 
@@ -26,7 +26,7 @@ Sämtliche Dateien in einem Projekt von Visual Studio verfügen über einen Buil
 
 ## <a name="set-a-build-action"></a>Festlegen eines Buildprozesses
 
-Öffnen Sie die Eigenschaften der Datei im Fenster **Eigenschaften** durch Auswahl der Datei im **Projektmappen-Explorer** , und drücken Sie **Alt**+**Eingabe** , um den Buildprozess für eine Datei festzulegen. Oder klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Datei, und wählen Sie **Eigenschaften** . Verwenden Sie im Fenster **Eigenschaften** unter **Erweitert** die Dropdownliste neben **Buildprozess** , um einen Buildprozess für die Datei festzulegen.
+Öffnen Sie die Eigenschaften der Datei im Fenster **Eigenschaften** durch Auswahl der Datei im **Projektmappen-Explorer**, und drücken Sie **Alt**+**Eingabe**, um den Buildprozess für eine Datei festzulegen. Oder klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Datei, und wählen Sie **Eigenschaften**. Verwenden Sie im Fenster **Eigenschaften** unter **Erweitert** die Dropdownliste neben **Buildprozess**, um einen Buildprozess für die Datei festzulegen.
 
 ![Buildprozesse für eine Datei in Visual Studio](media/build-actions.png)
 
@@ -37,12 +37,12 @@ Einige der gängigeren Buildprozesse für C# und Visual Basic-Projektdateien sin
 |Buildvorgang | Projekttypen | BESCHREIBUNG |
 |-|-|
 | **AdditionalFiles** | C#, Visual Basic | Eine Textdatei, die keine Quelldatei ist, die an den C#- oder Visual Basic-Compiler als Eingabe übergeben wird. Dieser Buildprozess wird hauptsächlich zum Bereitstellen von Eingaben für [Analysetools](../code-quality/roslyn-analyzers-overview.md) verwendet, auf die ein Projekt verweist, um die Codequalität zu überprüfen. Weitere Informationen finden Sie in der GitHub-Übersicht zum [Verwenden zusätzlicher Dateien](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
-| **ApplicationDefinition** | WPF | Die Datei, die Ihre Anwendung definiert. Wenn Sie ein Projekt erstmalig erstellen, ist dies *App.XAML* . |
+| **ApplicationDefinition** | WPF | Die Datei, die Ihre Anwendung definiert. Wenn Sie ein Projekt erstmalig erstellen, ist dies *App.XAML*. |
 | **CodeAnalysisDictionary** | .NET | Ein benutzerdefiniertes Wörterbuch, das von der Codeanalyse für die Rechtschreibprüfung verwendet wird. Weitere Informationen finden Sie unter [How to: Anpassen des Codeanalysewörterbuchs](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
 | **Compile** | any | Die Datei wird an den Compiler als Quelldatei übergeben.|
 | **Inhalt** | .NET | Eine Datei, die als **Content** markiert ist, kann als Stream abgerufen werden, indem Sie <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType> aufrufen. Bei ASP.NET-Projekten werden diese Dateien bei der Bereitstellung als Teil der Website integriert.|
 | **DesignData** | WPF | Wird für XAML-ViewModel-Dateien verwendet, um die Anzeige von Benutzersteuerelementen zur Entwurfszeit mit Dummytypen und Beispieldaten zu ermöglichen. |
-| **DesignDataWithDesignTimeCreateable** | WPF | Wie **bei DesignData** , aber mit tatsächlichen Typen.  |
+| **DesignDataWithDesignTimeCreateable** | WPF | Wie **bei DesignData**, aber mit tatsächlichen Typen.  |
 | **Embedded Resource** | .NET | Die Datei wird an den Compiler als Ressource übergeben, die in die Assembly eingebettet wird. Rufen Sie <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> zum Lesen der Datei aus der Assembly auf.|
 | **EntityDeploy** | .NET | EDMX-Dateien von ‚Entity Framework (EF), die die Bereitstellung von EF-Artefakten angeben. |
 | **Fakes** | .NET | Wird für das Microsoft Fakes-Testframework verwendet. Weitere Informationen finden Sie unter [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |

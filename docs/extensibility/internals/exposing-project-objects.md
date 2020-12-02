@@ -1,5 +1,7 @@
 ---
 title: Verfügbar machen von Projekt Objekten | Microsoft-Dokumentation
+description: Informationen zum verfügbar machen von Objekten für benutzerdefinierte Projekttypen in Visual Studio durch Bereitstellen von Automatisierungs Objekten, die den Zugriff auf das Projekt mithilfe von Automatisierungs Schnittstellen ermöglichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81446fa582524872b03199ae707f658776787961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d93b1bf414a9e58f8311a1f1d7066a789ef8c6b6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708470"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479510"
 ---
 # <a name="expose-project-objects"></a>Verfügbar machen von Projekt Objekten
 
