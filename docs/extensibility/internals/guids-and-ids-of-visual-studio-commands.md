@@ -1,5 +1,7 @@
 ---
 title: GUIDs und IDs von Visual Studio-Befehlen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die GUID-und ID-Werte der Befehle ermitteln, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8932f23d301eabc97414bf76453d70336e0dabae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708254"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480446"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs von Visual Studio-Befehlen
 Die GUID-und ID-Werte der Befehle, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, werden in vsct-Dateien definiert, die als Teil des Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -31,7 +33,7 @@ Die GUID-und ID-Werte der Befehle, die in der integrierten Entwicklungsumgebung 
 
 ### <a name="to-locate-a-command-definition"></a>So suchen Sie eine Befehls Definition
 
-1. Öffnen Sie in Visual Studio die folgenden Dateien im *<Visual Studio SDK-Installationspfad \> \visualstudiointegration\common\inc \\ * Ordner: *sharedcmddef. vsct*, *shellcmddef. vsct*, *vsdbgcmdused. vsct*, *venusmenu. vsct*.
+1. Öffnen Sie in Visual Studio die folgenden Dateien im *<Visual Studio SDK-Installationspfad \> \visualstudiointegration\common\inc \\* Ordner: *sharedcmddef. vsct*, *shellcmddef. vsct*, *vsdbgcmdused. vsct*, *venusmenu. vsct*.
 
     Die meisten Visual Studio-Befehle sind in " *sharedcmddef. vsct* " und " *shellcmddef. vsct*" definiert. *Vsdbgcmdused. vsct* definiert Befehle, die den Debugger betreffen, und *venlaufmenu. vsct* definiert Befehle, die für die Webentwicklung spezifisch sind.
 
@@ -54,11 +56,11 @@ Die GUID-und ID-Werte der Befehle, die in der integrierten Entwicklungsumgebung 
 
 - Menü Elemente, die ein unterstrichenes Zeichen enthalten, wie z. b. den Befehl " **Drucken** " im Menü " **Datei** ", in dem *P* unterstrichen ist.
 
-     Zeichen, denen das kaufmännische und-Zeichen (&) in den Menü Elementnamen vorangestellt werden, werden als unterstrichen angezeigt. *Vsct* -Dateien werden jedoch in XML geschrieben, wobei das kaufmännische und-Zeichen (&) verwendet werden, um Sonderzeichen anzugeben. Außerdem muss ein kaufmännisches und-Zeichen als " * &amp; amp;*" ausgeschrieben werden. Daher wird in einer *vsct* -Datei der Befehl **Drucken** als * &amp; amp; Drucken*.
+     Zeichen, denen das kaufmännische und-Zeichen (&) in den Menü Elementnamen vorangestellt werden, werden als unterstrichen angezeigt. *Vsct* -Dateien werden jedoch in XML geschrieben, wobei das kaufmännische und-Zeichen (&) verwendet werden, um Sonderzeichen anzugeben. Außerdem muss ein kaufmännisches und-Zeichen als " *&amp; amp;*" ausgeschrieben werden. Daher wird in einer *vsct* -Datei der Befehl **Drucken** als *&amp; amp; Drucken*.
 
 - Befehle mit dynamischem Text, z. b. **Speichern** \<Current Filename\> und dynamisch generierte Menü Elemente, wie z. b. die Elemente in der Liste **zuletzt verwendete Dateien** .
 
-     Es gibt keine zuverlässige Möglichkeit, nach dynamischem Text zu suchen. Suchen Sie stattdessen eine Gruppe, die den gewünschten Befehl hostet, indem Sie [GUIDs und IDs von Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) , [GUIDs und IDs von Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)verwenden und nach der ID dieser Gruppe suchen. Wenn die Befehls Definition nicht die Gruppe als über [geordnetes Element](../../extensibility/parent-element.md)hat, suchen Sie *sharedcmdplace. vsct* und *shellcmdplace. vsct* (oder *vsdbgcmdplace. vsct* für Debugger-Befehle) für ein- `<CommandPlacement>` Element, das das übergeordnete Element des Befehls festlegt. Die Ordner " *sharedcmdplace. vsct*", " *shellcmdplace. vsct*" und " *vsdbgcmdplace. vsct* " befinden sich im Ordner " * \<Visual Studio SDK installation path\> \visualstudiointegration\common\inc \\ * ".
+     Es gibt keine zuverlässige Möglichkeit, nach dynamischem Text zu suchen. Suchen Sie stattdessen eine Gruppe, die den gewünschten Befehl hostet, indem Sie [GUIDs und IDs von Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) , [GUIDs und IDs von Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)verwenden und nach der ID dieser Gruppe suchen. Wenn die Befehls Definition nicht die Gruppe als über [geordnetes Element](../../extensibility/parent-element.md)hat, suchen Sie *sharedcmdplace. vsct* und *shellcmdplace. vsct* (oder *vsdbgcmdplace. vsct* für Debugger-Befehle) für ein- `<CommandPlacement>` Element, das das übergeordnete Element des Befehls festlegt. Die Ordner " *sharedcmdplace. vsct*", " *shellcmdplace. vsct*" und " *vsdbgcmdplace. vsct* " befinden sich im Ordner " *\<Visual Studio SDK installation path\> \visualstudiointegration\common\inc \\* ".
 
 ## <a name="see-also"></a>Siehe auch
 

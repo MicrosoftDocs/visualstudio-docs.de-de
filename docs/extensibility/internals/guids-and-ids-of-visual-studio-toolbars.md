@@ -1,5 +1,7 @@
 ---
 title: GUIDs und IDs von Visual Studio-Symbolleisten | Microsoft-Dokumentation
+description: Anzeigen einer Liste von GUID-und ID-Werten für die Symbolleisten und die darin enthaltenen Gruppen, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe42821cdacc038d767e52373d45ddd7b8954323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708226"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480381"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs von Visual Studio-Symbolleisten
 In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, sowie die darin enthaltenen Gruppen. Diese Werte werden in *vsct* -Dateien definiert, die als Teil des Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -38,10 +40,10 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 
  Nur Gruppen können direkt von Symbolleisten abgeleitet werden. Um eine Gruppe hinzuzufügen, legen Sie das übergeordnete Element auf die GUID und die ID der Symbolleiste fest. Um einer Symbolleiste eine Schaltfläche hinzuzufügen, legen Sie das übergeordnete Element auf der Symbolleiste auf eine Gruppe fest.
 
-|Symbolleiste|id|
+|Symbolleiste|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
-|Entwickeln|IDM_VS_TOOL_BUILD|
+|Erstellen|IDM_VS_TOOL_BUILD|
 |Text-Editor|IDM_VS_TOOL_TEXTEDITOR|
 |Debug|guidvsdebuggroup: IDM_DEBUG_TOOLBAR|
 |Debugspeicherort|guidvsdebuggroup: IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -49,7 +51,7 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 ### <a name="special-toolbars"></a>Besondere Symbolleisten
  Diese Symbolleisten werden von der Visual Studio-IDE definiert, Sie dienen jedoch spezialisierten Funktionen und dienen nicht zum Hosten von Befehls Gruppen.
 
-|Symbolleiste|id|
+|Symbolleiste|ID|
 |-------------|--------|
 |Befehl zum Hinzufügen|IDM_VS_TOOL_ADDCOMMAND|
 |Nicht definiert|IDM_VS_TOOL_UNDEFINED|
@@ -86,7 +88,7 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |Einziehen|IDG_VS_EDITTOOLBAR_INDENT|
-|Comment|IDG_VS_EDITTOOLBAR_COMMENT|
+|Anmerkungen|IDG_VS_EDITTOOLBAR_COMMENT|
 |Lesezeichen|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>Debug-Symbolleisten Gruppen
@@ -129,12 +131,12 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 |Benutzeraufgaben|IDM_VS_TOOL_USERTASKS|IDG_VS_TASKLIST_PROVIDERLIST<br /><br /> IDG_VS_USERTASKS_EDIT|
 |Fehlerliste|IDM_VS_TOOL_ERRORLIST|IDG_VS_ERRORLIST_ERRORGROUP<br /><br /> IDG_VS_ERRORLIST_WARNINGGROUP<br /><br /> IDG_VS_ERRORLIST_MESSAGEGROUP|
 |Aufrufbrowser|IDM_VS_TOOL_CALLBROWSER1.. Uhr|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|
-|Breakpoints|guidvsdebuggroup: IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
+|Haltepunkte|guidvsdebuggroup: IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
 |Disassemblierung|guidvsdebuggroup: IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
 |Arbeitsspeicher 1-4|guidvsdebuggroup: IDM_MEMORY_WINDOW_TOOLBAR1... 0:|IDG_MEMORY_EXPRESSION1.. 0:<br /><br /> IDG_MEMORY_COLUMNS1.. 0:|
 |Prozesse|guidvsdebuggroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Hinzufügen eines Menü Controllers zu einer Symbolleiste](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [Hinzufügen einer Symbolleiste zu einem Tool Fenster](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [GUIDs und IDs von Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

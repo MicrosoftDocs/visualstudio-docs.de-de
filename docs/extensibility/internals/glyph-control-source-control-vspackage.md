@@ -1,5 +1,7 @@
 ---
 title: Glyphe-Steuerelement (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie benutzerdefinierte Symbole in einem Quellcodeverwaltungs-VSPackage anzeigen, sodass Sie Ihre eigenen Symbole verwenden können, um den Status von Elementen unter Quell Code Verwaltung anzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9db1b4542eae293e39cda674fac3eb984aa77d3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708323"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480472"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Glyphe-Steuerelement (Quellcodeverwaltungs-VSPackage)
 Ein Teil der umfassenden Integration, der für Quell Code Verwaltungs-VSPackages verfügbar ist, ist die Möglichkeit, eigene Symbole anzuzeigen, um den Status von Elementen unter Quell Code Verwaltung anzuzeigen.
@@ -25,7 +27,7 @@ Ein Teil der umfassenden Integration, der für Quell Code Verwaltungs-VSPackages
  Ein Statussymbol ist ein Symbol, das den aktuellen Status eines Elements anzeigt, wenn es angezeigt wird, z. b. in **Projektmappen-Explorer** oder **Klassenansicht**. Ein Quellcodeverwaltungs-VSPackage kann zwei Ebenen des Glyphe-Steuer Elements ausführen. Sie kann die Wahl der Symbole auf einen vordefinierten Satz von Symbolen beschränken, die von der IDE bereitgestellt werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , oder es kann eine benutzerdefinierte Gruppe von Symbolen definiert werden, die angezeigt werden soll.
 
 ### <a name="default-set-of-glyphs"></a>Standardsatz von Symbolen
- Um die Statussymbole zu ermitteln, die einem Element in **Projektmappen-Explorer**zugeordnet sind, fordert ein Projekt das Zustands Symbol aus der Quell Code Verwaltung mithilfe von an <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A> . Ein Quellcodeverwaltungs-VSPackage kann entscheiden, dass die Auswahl der Glyphen auf vordefinierte Glyphen beschränkt ist, die von der IDE bereitgestellt werden. In diesem Fall gibt das VSPackage ein Array von Werten zurück, die die in *vsshell. idl*definierten Glyphe-Enumerationen darstellen. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>. Dies ist ein vordefinierter Satz von Symbolen, die von der IDE festgelegt werden, z. b. ein Vorhängeschloss für das eingecheckte Symbol und ein Häkchen für das ausgecheckte Symbol.
+ Um die Statussymbole zu ermitteln, die einem Element in **Projektmappen-Explorer** zugeordnet sind, fordert ein Projekt das Zustands Symbol aus der Quell Code Verwaltung mithilfe von an <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A> . Ein Quellcodeverwaltungs-VSPackage kann entscheiden, dass die Auswahl der Glyphen auf vordefinierte Glyphen beschränkt ist, die von der IDE bereitgestellt werden. In diesem Fall gibt das VSPackage ein Array von Werten zurück, die die in *vsshell. idl* definierten Glyphe-Enumerationen darstellen. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>. Dies ist ein vordefinierter Satz von Symbolen, die von der IDE festgelegt werden, z. b. ein Vorhängeschloss für das eingecheckte Symbol und ein Häkchen für das ausgecheckte Symbol.
 
 ### <a name="custom-set-of-glyphs"></a>Benutzerdefinierter Satz von Symbolen
  Ein Quellcodeverwaltungs-VSPackage kann seine eigenen Symbole für ein eindeutiges Aussehen und Gefühl verwenden, wenn es installiert wird. Wenn ein neues VSPackage für die Quell Code Verwaltung aktiv ist, sollte es in der Lage sein, eigene Symbole zu verwenden, auch wenn ein vorheriges VSPackage für die Quell Code Verwaltung noch geladen, aber inaktiv ist. In diesem Modus kann das VSPackage für die Quell Code Verwaltung die vorhandenen Symbole weiterhin verwenden, um ein Aussehen in Übereinstimmung mit zu behalten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

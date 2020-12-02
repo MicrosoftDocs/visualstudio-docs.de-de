@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen einer. Vsct-Datei | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie eine vsct-Datei, eine XML-basierte Visual Studio-Befehls Tabellen Konfigurationsdatei, manuell erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905525"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480368"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Vorgehensweise: Erstellen einer vsct-Datei
 
@@ -61,7 +63,7 @@ Sie können eine XML-basierte *vsct* -Datei aus einer vorhandenen *CTC* -Quellda
 
 1. Rufen Sie eine Kopie der Sprache Perl ab.
 
-2. Rufen Sie eine Kopie des Perl-Skripts *ConvertCTCToVSCT.pl*ab, das sich normalerweise im Ordner * \<Visual Studio SDK installation path> \visualstudiointegration\tools\bin* befindet.
+2. Rufen Sie eine Kopie des Perl-Skripts *ConvertCTCToVSCT.pl* ab, das sich normalerweise im Ordner *\<Visual Studio SDK installation path> \visualstudiointegration\tools\bin* befindet.
 
 3. Rufen Sie eine Kopie der *CTC* -Quelldatei ab, die Sie konvertieren möchten.
 
@@ -138,7 +140,7 @@ Sie können eine XML-basierte *vsct* -Datei aus einer vorhandenen binären *CTO*
 
      Dieses Markup sollte innerhalb des- `ItemGroup` Elements enthalten sein, das eingebettete Ressourcen enthält.
 
-4. Öffnen Sie die Paketdatei, in der Regel mit dem Namen * \<ProjectName\> Package.cs* oder * \<ProjectName\> Package. vb*, im Editor.
+4. Öffnen Sie die Paketdatei, in der Regel mit dem Namen *\<ProjectName\> Package.cs* oder *\<ProjectName\> Package. vb*, im Editor.
 
 5. Fügen Sie `ProvideMenuResource` der Package-Klasse ein-Attribut hinzu, wie im folgenden Beispiel gezeigt.
 
@@ -148,7 +150,7 @@ Sie können eine XML-basierte *vsct* -Datei aus einer vorhandenen binären *CTO*
 
      Der erste Parameterwert muss mit dem Wert des- `ResourceName` Attributs, das Sie in der Projektdatei definiert haben, identisch sein.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vsct-Dateien erstellen](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Vsct-XML-Schema Referenz](../../extensibility/vsct-xml-schema-reference.md)

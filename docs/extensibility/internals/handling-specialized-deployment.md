@@ -1,5 +1,7 @@
 ---
 title: Behandeln spezieller bereit Stellungen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die spezialisierte Bereitstellung eines Anwendungs Projekts in Visual Studio verarbeiten. Beispielsweise eine Bereitstellung für einen Webserver oder ein Gerät.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708208"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480433"
 ---
 # <a name="handle-specialized-deployment"></a>Spezialisierte Bereitstellung verarbeiten
 Eine Bereitstellung ist ein optionaler Vorgang für-Projekte. Ein Webprojekt unterstützt z. b. eine Bereitstellung, mit der ein Projekt einen Webserver aktualisieren kann. Ebenso unterstützt ein Projekt für **intelligente Geräte** eine Bereitstellung zum Kopieren einer erstellten Anwendung auf das Zielgerät. Projekt Untertypen können spezielles Bereitstellungs Verhalten bereitstellen, indem Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> Schnittstelle implementieren. Diese Schnittstelle definiert einen kompletten Satz von Bereitstellungs Vorgängen:
@@ -289,5 +291,5 @@ Eine Bereitstellung ist ein optionaler Vorgang für-Projekte. Ein Webprojekt unt
 > [!NOTE]
 > Alle in diesem Thema enthaltenen Codebeispiele sind Teile eines größeren Beispiels in den [VSSDK-Beispielen](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Projekt Untertypen](../../extensibility/internals/project-subtypes.md)

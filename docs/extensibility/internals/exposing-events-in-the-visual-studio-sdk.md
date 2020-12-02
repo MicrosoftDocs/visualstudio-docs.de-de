@@ -1,5 +1,7 @@
 ---
 title: Verfügbar machen von Ereignissen im Visual Studio SDK | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Visual Studio SDK-Methoden und-Registrierungseinträge, die Ereignisse für Projekte und Projekt Elemente verfügbar machen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708486"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480537"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Verfügbar machen von Ereignissen im Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ermöglicht das Quellen Ereignis mithilfe von Automation. Es wird empfohlen, Ereignisse für Projekte und Projekt Elemente zu beziehen.
@@ -27,7 +29,7 @@ ms.locfileid: "80708486"
 
 1. Die Umgebung wird gestartet.
 
-2. Er liest aus der Registrierung alle Wertnamen unter den Schlüsseln **Automation**, **AutomationEvents**und **AutomationProperties** aller VSPackages und speichert diese Namen in einer Tabelle.
+2. Er liest aus der Registrierung alle Wertnamen unter den Schlüsseln **Automation**, **AutomationEvents** und **AutomationProperties** aller VSPackages und speichert diese Namen in einer Tabelle.
 
 3. Ein automatisierungsconsumer ruft in diesem Beispiel `DTE.Events.AutomationProjectsEvents` oder auf `DTE.Events.AutomationProjectItemsEvents` .
 
@@ -46,13 +48,13 @@ ms.locfileid: "80708486"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Registrierungseinträge aus dem grundlegenden Projektbeispiel
  In diesem Abschnitt wird gezeigt, wo Sie der Registrierung Automatisierungs Ereignis Werte hinzufügen können.
 
- **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\Packages \\<pkgguid \> \automationevents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<pkgguid \> \automationevents]**
 
  **Automationprojectevents** = gibt das- `AutomationProjectEvents` Objekt zurück.
 
  **Automationprojectitemevents** = gibt das- `AutomationProjectItemsEvents` Objekt zurück.
 
-|Name|type|Range|Beschreibung|
+|Name|type|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |Standard (@)|REG_SZ|Nicht verwendet|Nicht verwendet. Sie können das Datenfeld für die-Dokumentation verwenden.|
 |*Automationproject\vents*|REG_SZ|Der Name des Ereignis Objekts.|Nur der Schlüssel Name ist relevant. Sie können das Datenfeld für die-Dokumentation verwenden.<br /><br /> Dieses Beispiel stammt aus dem grundlegenden Projektbeispiel.|
@@ -62,13 +64,13 @@ ms.locfileid: "80708486"
 
  ![Visual Studio-Projekt Ereignisse](../../extensibility/internals/media/projectevents.gif "ProjectEvents") Automatisierungs Modell für Ereignisse
 
- Die `CProjectEventsContainer` -Klasse stellt das Quell Objekt für *bscprojectsevents*dar und `CProjectItemsEventsContainer` stellt das Quell Objekt für *bscprojectitemsevents*dar.
+ Die `CProjectEventsContainer` -Klasse stellt das Quell Objekt für *bscprojectsevents* dar und `CProjectItemsEventsContainer` stellt das Quell Objekt für *bscprojectitemsevents* dar.
 
  In den meisten Fällen müssen Sie für jede Ereignis Anforderung ein neues-Objekt zurückgeben, da die meisten Ereignis Objekte ein Filter Objekt übernehmen. Wenn Sie das Ereignis auslösen, überprüfen Sie diesen Filter, um zu überprüfen, ob der Ereignishandler aufgerufen wird.
 
  *AutomationEvents. h* und *AutomationEvents. cpp* enthalten Deklarationen und Implementierungen der Klassen in der folgenden Tabelle.
 
-|Klasse|Beschreibung|
+|Klasse|BESCHREIBUNG|
 |-----------|-----------------|
 |`CAutomationEvents`|Implementiert ein Ereignis Stamm Objekt, das aus dem-Objekt abgerufen wird `DTE.Events` .|
 |`CProjectsEventsContainer` und `CProjectItemsEventsContainer`|Implementieren Sie die Ereignis Quell Objekte, die die entsprechenden Ereignisse auslösen.|

@@ -1,5 +1,7 @@
 ---
 title: Hierarchien in Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Projekt Hierarchien in der integrierten Entwicklungsumgebung (IDE) von Visual Studio, die Projekt Elemente und ihre zugeordneten Eigenschaften enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdbb8a0e58f6b1e5bc6e32f8c319d1480c4db4b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a7126f52517b1028cf878750294f1d4c7dbfe26
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708187"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480355"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchien in Visual Studio
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]In der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) wird ein Projekt als *Hierarchie*angezeigt. In der IDE ist eine Hierarchie eine Struktur von Knoten, in der jeder Knoten über einen Satz zugeordneter Eigenschaften verfügt. Eine *Projekt Hierarchie* ist ein Container, der die Elemente des Projekts, die Beziehungen der Elemente und die zugeordneten Eigenschaften und Befehle der Elemente enthält.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]In der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) wird ein Projekt als *Hierarchie* angezeigt. In der IDE ist eine Hierarchie eine Struktur von Knoten, in der jeder Knoten über einen Satz zugeordneter Eigenschaften verfügt. Eine *Projekt Hierarchie* ist ein Container, der die Elemente des Projekts, die Beziehungen der Elemente und die zugeordneten Eigenschaften und Befehle der Elemente enthält.
 
  In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verwalten Sie Projekt Hierarchien mithilfe der Hierarchy-Schnittstelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> . Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle leitet Befehle, die Sie von Projekt Elementen aufrufen, anstelle des Standard Befehls Handlers in das entsprechende Hierarchie Fenster um.
 
@@ -32,7 +34,7 @@ ms.locfileid: "80708187"
 
  Wenn ein Benutzer ein Element in einem Editor öffnet, wird die Hierarchie, die dieses Element steuert, ausgewählt und zur aktiven Hierarchie. Die ausgewählte Hierarchie bestimmt den Satz von Befehlen, die für das Element zur Verfügung stehen. Wenn Sie den Fokus des Benutzers auf diese Weise nachverfolgen, kann die Hierarchie den aktuellen Kontext des Benutzers widerspiegeln.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Projekttypen](../../extensibility/internals/project-types.md)
 - [Auswahl und Währung in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [VSSDK-Beispiele](https://github.com/Microsoft/VSSDK-Extensibility-Samples)
