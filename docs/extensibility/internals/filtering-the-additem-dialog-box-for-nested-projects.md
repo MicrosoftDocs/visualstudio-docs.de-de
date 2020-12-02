@@ -1,5 +1,7 @@
 ---
 title: Filtern des AddItem-Dialog Felds für in der Liste von Projekten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie das AddItem-Dialogfeld für ein geschsted-Projekt in Visual Studio filtern, indem Sie die ivsfilteraddprojectitemdlg-Schnittstelle des übergeordneten Projekts implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d574007250960e3cb0b39bf50696f03af98e27
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708385"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480460"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Dialogfeld "AddItem" für die Liste der Projekte filtern
 Wenn Sie ein **AddItem** -Dialogfeld für ein untergeordnetes Projekt anzeigen, kann das übergeordnete Projekt steuern, welche Elemente im Dialogfeld angezeigt werden.

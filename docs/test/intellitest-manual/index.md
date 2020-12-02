@@ -1,5 +1,7 @@
 ---
 title: Übersicht | Microsoft IntelliTest-Test-Tool für Entwickler
+description: Hier erfahren Sie, wie IntelliTest ein automatisiertes und transparentes Testvorgehen verwendet, um eine Kandidatensammlung von Tests für Ihren .NET-Code zu erzeugen.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f986d6727433dc01732232754b2d65d0d7c4ef8f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038282"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329951"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Überblick über Microsoft IntelliTest
 

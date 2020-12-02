@@ -1,20 +1,20 @@
 ---
-title: Verlängerung und Kündigung von Visual Studio Subscriptions
-description: Liste der Häufig gestellten Fragen (FAQs) für „Verlängerung und Kündigung“.
+title: Erwerben, erneuern und abbrechen von Visual Studio-Abonnements
+description: Liste der FAQs zum Erwerb, zur Erneuerung und zum Abbrechen von Visual Studio-Abonnements
 ms.faqid: Section4
 ms.topic: conceptual
 ms.assetid: 9d7a7d4c-dce3-4655-983c-a7e4180a5433
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: acc381b8eedac8a3b842a0776e380712c4c544d4
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.date: 11/30/2020
+ms.openlocfilehash: 9fb297c4aeba3b35949b4552d9709886b9e69650
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575424"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329730"
 ---
-# <a name="renewal-and-cancellation"></a>Verlängerung und Kündigung
+# <a name="purchasing-renewing-and-canceling-visual-studio-subscriptions"></a>Erwerben, erneuern und abbrechen von Visual Studio-Abonnements
 
 [!INCLUDE [How do I renew my subscriptions?](includes/renew-subscriptions.md)]
 

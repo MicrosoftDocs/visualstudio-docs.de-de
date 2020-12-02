@@ -1,5 +1,7 @@
 ---
 title: Feedback an den Benutzer | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie dem Benutzer visuelles Feedback zu den verfügbaren Funktionen in der integrierten Entwicklungsumgebung (IDE) von Visual Studio bereitstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708410"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480524"
 ---
 # <a name="feedback-to-the-user"></a>Feedback an den Benutzer
 In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) basiert das visuelle Feedback zu den verfügbaren Funktionen auf der aktuellen Auswahl des Benutzers und dem globalen Auswahl Kontext. In der folgenden Tabelle sind die Funktionen aufgelistet, die in unterschiedlichen Auswahl Kontexten verfügbar sind.
@@ -55,7 +57,7 @@ In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten
 
 - Die **Editor** -Symbolleiste und das Menü **Tabelle** werden angezeigt, und die Titelleiste wird aktualisiert, um das Webformular Fenster widerzuspiegeln.
 
-- Das aktive Hierarchie Fenster, das in der Regel **Projektmappen-Explorer**ist, und das Update der Titelleiste, um den aktuellen Kontext widerzuspiegeln, und die kontextbezogenen **Project** -Menübefehle gelten jetzt für das aktive Webanwendungs Projekt.
+- Das aktive Hierarchie Fenster, das in der Regel **Projektmappen-Explorer** ist, und das Update der Titelleiste, um den aktuellen Kontext widerzuspiegeln, und die kontextbezogenen **Project** -Menübefehle gelten jetzt für das aktive Webanwendungs Projekt.
 
 ## <a name="see-also"></a>Siehe auch
 - [Auswahl und Währung in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

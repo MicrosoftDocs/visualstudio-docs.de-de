@@ -1,5 +1,7 @@
 ---
 title: Elemente eines Projekt Modells | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Elemente eines Projekt Modells und darüber, wie die Schnittstellen und Implementierungen aller Projekte in Visual Studio eine grundlegende Struktur gemeinsam verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011774"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480043"
 ---
 # <a name="elements-of-a-project-model"></a>Elemente eines Projekt Modells
 Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] haben eine grundlegende Struktur gemeinsam: das Projekt Modell für den Projekttyp. In Ihrem Projekt Modell, bei dem es sich um das VSPackage handelt, das Sie entwickeln, erstellen Sie Objekte, die ihren Entwurfsentscheidungen entsprechen und zusammen mit der von der IDE bereitgestellten globalen Funktionalität funktionieren. Obwohl Sie steuern, wie ein Projekt Element beibehalten wird, Steuern Sie z. b. die Benachrichtigung, dass eine Datei beibehalten werden muss. Wenn ein Benutzer den Fokus auf ein geöffnetes Projekt Element setzt und im Menü **Datei** in der Menüleiste die Option **Speichern** auswählt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , muss der Projekttyp Code den Befehl aus der IDE abfangen, die Datei persistent speichern und die Benachrichtigung an die IDE zurücksenden, dass die Datei nicht mehr geändert wird.
