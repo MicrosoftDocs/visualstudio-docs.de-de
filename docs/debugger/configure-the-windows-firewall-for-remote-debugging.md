@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350692"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970080"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Konfigurieren der Windows-Firewall für das Remotedebuggen
 
@@ -36,7 +36,7 @@ Visual Studio und der Remotedebugger versuchen, bei der Installation oder beim S
 
 1. Wählen Sie im **Assistent für neue eingehende Regel** zuerst **Port** und dann **Weiter** aus.
 
-1. Wählen Sie in Abhängigkeit von der Portnummer aus den folgenden Tabellen entweder **TCP** oder **UDP**aus.
+1. Wählen Sie in Abhängigkeit von der Portnummer aus den folgenden Tabellen entweder **TCP** oder **UDP** aus.
 
 1. Geben Sie unter **Bestimmte lokale Ports** eine Portnummer aus den folgenden Tabellen ein, und wählen Sie **Weiter** aus.
 

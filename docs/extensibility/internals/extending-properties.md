@@ -1,5 +1,7 @@
 ---
 title: Erweitern von Eigenschaften | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Schnittstellen, die Sie implementieren müssen, und um aufzurufen, um die Liste der Eigenschaften in Visual Studio Eigenschaftenfenster zu erweitern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7064128c54434b0a7bb8799e62b751e765511c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708419"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479533"
 ---
 # <a name="extend-properties"></a>Erweitern von Eigenschaften
 Das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Eigenschaften** Fenster ist ein universeller Eigenschaften Browser für com-und COM+-Komponenten und unterstützt alle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Produkte. Das **Eigenschaften** Fenster funktioniert mit `ITypeInfo` Typinformationen und com+-Metadaten, um die Entwurfszeit Eigenschaften für das aktuell ausgewählte Objekt in einem beliebigen anderen Fenster in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) aufzulisten.

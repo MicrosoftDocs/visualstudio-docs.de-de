@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809171"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189848"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnosetools zum Untersuchen eines Objekts verwendet werden, das aufgrund eines nicht festgelegten Pixelshaders fehlt.
@@ -43,19 +43,19 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 1. Laden Sie in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ein Grafikprotokolldokument, das einen Frame enthält, der das Problem des fehlenden Objekts aufweist. Eine neue Grafikprotokoll-Registerkarte wird in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]angezeigt. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.
 
-2. Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Objekt nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:
+2. Wählen Sie in der **Frameliste** einen Frame aus, der veranschaulicht, dass das Objekt nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:
 
     ![Das Grafikprotokolldokument in Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")
 
-   Wenn Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste**verwenden, um das Problem zu diagnostizieren. Die **Grafikereignisliste** enthält jeden Direct3D-API-Aufruf, der zum Rendern des aktiven Frames erfolgt ist – z. B. zum Einrichten des Gerätestatus, zum Erstellen und Aktualisieren von Puffern und zum Zeichnen von Objekten, die im Frame dargestellt werden. Viele Arten von Aufrufen – z. B. Draw-, Dispatch-, Copy- oder Clear-Befehle – sind interessant, weil sie häufig (aber nicht immer) mit einer entsprechenden Änderung beim Renderziel einhergehen, wenn die App erwartungsgemäß funktioniert. Draw-Befehle sind besonders interessant, da sich jeder auf von der App gerenderte Geometrie bezieht.
+   Wenn Sie einen Frame ausgewählt haben, der das Problem demonstriert, können Sie die **Grafikereignisliste** verwenden, um das Problem zu diagnostizieren. Die **Grafikereignisliste** enthält jeden Direct3D-API-Aufruf, der zum Rendern des aktiven Frames erfolgt ist – z. B. zum Einrichten des Gerätestatus, zum Erstellen und Aktualisieren von Puffern und zum Zeichnen von Objekten, die im Frame dargestellt werden. Viele Arten von Aufrufen – z. B. Draw-, Dispatch-, Copy- oder Clear-Befehle – sind interessant, weil sie häufig (aber nicht immer) mit einer entsprechenden Änderung beim Renderziel einhergehen, wenn die App erwartungsgemäß funktioniert. Draw-Befehle sind besonders interessant, da sich jeder auf von der App gerenderte Geometrie bezieht.
 
    Da Sie wissen, dass das Renderziel das fehlende Objekt nicht enthält, aber dass darüber hinaus keine weiteren Fehler vorzuliegen scheinen, können Sie die **Grafikereignisliste** in Kombination mit dem **Grafikpipelinestufen** -Tool verwenden, um zu bestimmen, welcher Aufruf der Geometrie des fehlenden Objekts entspricht. Das Fenster **Grafikpipelinestufen** zeigt die Geometrie an, die an jeden Zeichnen-Befehl gesendet wurde, unabhängig von seiner Wirkung auf das Renderziel. Während Sie sich durch die Zeichnen-Befehle bewegen, werden die Pipelinestufen aktualisiert und zeigen die den einzelnen Befehlen zugeordnete Geometrie auf ihrem Weg durch die einzelnen aktivierten Stufen an. Außerdem wird das Renderziel aktualisiert, um den Zustand des Renderziels nach dem Abschluss des Aufrufs anzuzeigen.
 
 #### <a name="to-find-the-draw-call-for-the-missing-geometry"></a>So finden Sie den Zeichnen-Befehl für die fehlende Geometrie
 
-1. Öffnen Sie das Fenster **Grafikereignisliste** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Ereignisliste**aus.
+1. Öffnen Sie das Fenster **Grafikereignisliste** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Ereignisliste** aus.
 
-2. Öffnen Sie das Fenster **Grafikpipelinestufen** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Pipelinestufen**aus.
+2. Öffnen Sie das Fenster **Grafikpipelinestufen** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Pipelinestufen** aus.
 
 3. Suchen Sie beim Navigieren durch die einzelnen Zeichnen-Befehle im Fenster **Grafikereignisliste** im Fenster **Grafikpipelinestufen** nach dem fehlenden Objekt. Zur Vereinfachung können Sie im Feld **Suche** in oberen rechten Ecke des Fensters **Grafikereignisliste** das Wort "Zeichnen" eingeben. Damit wird die Liste gefiltert und enthält nur Ereignisse, die "Zeichnen" im Titel haben.
 
@@ -74,7 +74,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 1. Öffnen Sie den **d3d11-Gerätekontext**. Wählen Sie im Fenster **Grafikpipelinestufen** die Verknüpfung **ID3D11DeviceContext** aus, die einen Teil des oben im Fenster angezeigten `DrawIndexed`-Aufrufs bildet.
 
-2. Untersuchen Sie den Gerätezustand, der auf der Registerkarte **d3d11-Gerätekontext** angezeigt wird, um zu bestätigen, dass während des Zeichnen-Befehls kein Pixelshader aktiv war. In diesem Szenario zeigen die **Allgemeinen Informationen für Shader**– die unter **Pixelshaderzustand**angezeigt werden – an, dass der Shader den Wert **NULL**hat:
+2. Untersuchen Sie den Gerätezustand, der auf der Registerkarte **d3d11-Gerätekontext** angezeigt wird, um zu bestätigen, dass während des Zeichnen-Befehls kein Pixelshader aktiv war. In diesem Szenario zeigen die **Allgemeinen Informationen für Shader**– die unter **Pixelshaderzustand** angezeigt werden – an, dass der Shader den Wert **NULL** hat:
 
     ![Der D3D 11-Gerätekontext zeigt den Status des Pixelshaders an.](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")
 
@@ -87,7 +87,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
    > [!NOTE]
    > `PSSetShader` wird im Fenster **Grafikereignisliste** nicht angezeigt, wenn es in diesem Frame nicht festgelegt wurde. Normalerweise tritt dieser Fall nur ein, wenn für alle Objekte nur ein Pixelshader verwendet wird oder der `PSSetShader` -Aufruf während dieses Frames unabsichtlich ausgelassen wurde. In beiden Fällen empfiehlt es sich, den Quellcode der Apps nach `PSSetShader` -Aufrufen zu durchsuchen und traditionelle Debugtechniken zu verwenden, um das Verhalten der Aufrufe zu untersuchen.
 
-2. Öffnen Sie das Fenster **Aufrufliste des Grafikereignisses** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Aufrufliste des Grafikereignisses**aus.
+2. Öffnen Sie das Fenster **Aufrufliste des Grafikereignisses** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Aufrufliste des Grafikereignisses** aus.
 
 3. Verwenden Sie die Aufrufliste, um den `PSSetShader` -Aufruf im Quellcode Ihrer App zu finden. Wählen Sie im Fenster **Aufrufliste des Grafikereignisses** den obersten Aufruf aus, und untersuchen Sie den Wert, auf den der Pixelshader festgelegt wird. Möglicherweise wird der Pixelshader unmittelbar auf NULL festgelegt, oder der NULL-Wert tritt aufgrund eines Arguments, das der Funktion übergeben wurde, oder eines anderen Umstands auf. Wenn der Wert nicht direkt festgelegt wird, können Sie die Quelle des NULL-Werts möglicherweise weiter oben in der Aufrufliste finden. In diesem Szenario finden Sie heraus, dass der Pixelshader in der obersten Funktion mit dem Namen `nullptr` nullptr `CubeRenderer::Render`hat:
 

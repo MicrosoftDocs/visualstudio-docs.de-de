@@ -1,5 +1,7 @@
 ---
 title: Projektkonverter
+description: Das Dialogfeld Konvertieren wurde in früheren Versionen von Visual Studio verwendet und ist nun veraltet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5348bb82d54f2914a5b8ee26ada0f924f592aab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2f095d05a873eb59b0f6453ddb796fc2a183705e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595734"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040809"
 ---
 # <a name="convert-dialog-box"></a>Konvertieren (Dialogfeld)
 
 Das Dialogfeld **Konvertieren** wurde in früheren Versionen von Visual Studio verwendet und ist nun veraltet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

@@ -8,11 +8,11 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Hier erfahren Sie mehr über den CODE Magazine-Vorteil, der in Ihrem Visual Studio-Abonnement enthalten ist.
 ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005910"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970491"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>CODE Magazine in Visual Studio-Abonnements
 

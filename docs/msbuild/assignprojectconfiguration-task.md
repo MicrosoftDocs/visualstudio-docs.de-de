@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353394"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189705"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration-Aufgabe
 
@@ -34,8 +34,8 @@ Diese Aufgabe akzeptiert eine Liste von Konfigurationszeichenfolgen und weist si
 |---------------|-----------------|
 |`ProjectReferences`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Eingabeparameter.<br /><br /> Die zu konfigurierenden Projekte.|
 |`SolutionConfigurationContents`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält eine XML-Zeichenfolge mit einer Projektkonfiguration für jedes Projekt. Die Konfigurationen werden den benannten Projekten zugewiesen.|
-|`DefaultToVcxPlatformMapping`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste mit Zuordnungen zwischen den von den meisten Typen verwendeten Plattformnamen und den von *VCXPROJ* -Dateien verwendeten Plattformnamen.<br /><br /> Beispiel:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
-|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste mit Zuordnungen zwischen *VCXPROJ* -Plattformnamen und den von den meisten Typen verwendeten Plattformnamen.<br /><br /> Beispiel:<br /><br /> `"Win32=AnyCPU;X64=X64"`|
+|`DefaultToVcxPlatformMapping`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste mit Zuordnungen zwischen den von den meisten Typen verwendeten Plattformnamen und den von *VCXPROJ*-Dateien verwendeten Plattformnamen.<br /><br /> Beispiel:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
+|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string`-Ausgabeparameter.<br /><br /> Enthält eine durch Semikolons getrennte Liste mit Zuordnungen zwischen *VCXPROJ*-Plattformnamen und den von den meisten Typen verwendeten Plattformnamen.<br /><br /> Beispiel:<br /><br /> `"Win32=AnyCPU;X64=X64"`|
 |`CurrentProjectConfiguration`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält die Konfiguration für das aktuelle Projekt.|
 |`CurrentProjectPlatform`|Optionaler `string`-Ausgabeparameter.<br /><br /> Enthält die Plattform für das aktuelle Projekt.|
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|Optionaler `bool`-Ausgabeparameter.<br /><br /> Enthält ein Flag, das angibt, dass Verweise erstellt werden sollen, auch wenn sie in der Projektkonfiguration deaktiviert wurden.|

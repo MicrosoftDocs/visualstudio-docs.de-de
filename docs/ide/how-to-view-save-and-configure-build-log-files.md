@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136601"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970208"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien
 
@@ -40,7 +40,7 @@ Wenn Sie ein Projekt mithilfe von MSBuild erstellen, können Sie eine Protokolld
 
 2. Klicken Sie im **Ausgabefenster** auf eine beliebige Stelle im Text.
 
-3. Drücken Sie **STRG**+**S** .
+3. Drücken Sie **STRG**+**S**.
 
    Visual Studio fordert Sie auf, einen Speicherort auszuwählen, an dem die Buildausgabe gespeichert werden soll.
 
@@ -48,11 +48,11 @@ Sie können auch Protokolle generieren, indem Sie MSBuild direkt von der Befehls
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Ändern der Informationsmenge im Buildprotokoll
 
-1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen** .
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
-2. Klicken Sie auf der Seite **Projekte und Projektmappen** auf **Erstellen und Ausführen** .
+2. Klicken Sie auf der Seite **Projekte und Projektmappen** auf **Erstellen und Ausführen**.
 
-3. Wählen Sie einen der folgenden Werte aus der Liste **Ausführlichkeit der MSBuild-Projektbuildausgabe** aus, und klicken Sie dann auf die Schaltfläche **OK** .
+3. Wählen Sie einen der folgenden Werte aus der Liste **Ausführlichkeit der MSBuild-Projektbuildausgabe** aus, und klicken Sie dann auf die Schaltfläche **OK**.
 
     |Ausführlichkeitsgrad|Beschreibung|
     | - |-----------------|
