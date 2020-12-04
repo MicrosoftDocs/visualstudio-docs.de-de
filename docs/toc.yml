@@ -272,8 +272,8 @@
           href: ide/codespaces/customize-codespaces.md
         - name: Unterstützte Visual Studio-Features
           href: ide/codespaces/supported-features-codespaces.md
-    - name: Herstellen einer Verbindung mit einem Projekt oder Repository
-      displayName: Azure DevOps VSTS GitHub
+    - name: Herstellen einer Verbindung mit Projekten in Team Explorer
+      displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
     - name: Neue Git-Funktionen in Visual Studio
       href: ide/git-with-visual-studio.md
@@ -978,7 +978,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Referenz
+- name: Verweis
   items:
     - name: Tastenkombinationen
       items:
