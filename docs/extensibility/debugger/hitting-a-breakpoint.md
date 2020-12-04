@@ -1,5 +1,7 @@
 ---
 title: Erreichen eines halte Punkts | Microsoft-Dokumentation
+description: In diesem Artikel wird der Prozess beschrieben, der ausgeführt wird, wenn die Debug-Engine während der Ausführung oder Ausführung einen Haltepunkt erreicht.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e75eb1e807e72f3bd035b5dd0534860f5fd8df2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc796689b56518948c62196407ddeaefe3ea822f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738570"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560849"
 ---
 # <a name="hit-a-breakpoint"></a>Treffen eines Haltepunkts
 Der folgende Abschnitt beschreibt den Prozess, in dem die Debug-Engine (de) während der Ausführung oder beim Ausführen des Vorgangs einen Haltepunkt erreicht:
@@ -27,5 +29,5 @@ Der folgende Abschnitt beschreibt den Prozess, in dem die Debug-Engine (de) wäh
 
 2. Der Session Debug Manager (SDM) ruft [IDebugBreakpointEvent2::: enumbreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) auf, um den Treffer Haltepunkt zu erhalten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Debugger-Ereignisse aufzurufen](../../extensibility/debugger/calling-debugger-events.md)

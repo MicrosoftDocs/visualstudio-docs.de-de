@@ -1,5 +1,7 @@
 ---
 title: Architektur der Ausdrucks Auswertung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine proprietäre Sprache in das Visual Studio-Debugpaket integrieren, einschließlich der Ausdrucks Auswertung und der Symbol Anbieter/Binder Schnittstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738698"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560160"
 ---
 # <a name="expression-evaluator-architecture"></a>Architektur der Ausdrucks Auswertung
 > [!IMPORTANT]
@@ -51,7 +53,7 @@ ms.locfileid: "80738698"
 
  [Schnittstellen für die Schlüssel Ausdrucks Auswertung](../../extensibility/debugger/key-expression-evaluator-interfaces.md) Beschreibt die entscheidenden Schnittstellen, die erforderlich sind, wenn ein EE zusammen mit dem Auswertungs Kontext geschrieben wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Anzeigen von lokalen Variablen](../../extensibility/debugger/displaying-locals.md)
 - [Ändern des Werts eines lokalen](../../extensibility/debugger/changing-the-value-of-a-local.md)

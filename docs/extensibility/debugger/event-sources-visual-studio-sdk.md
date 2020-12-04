@@ -1,5 +1,7 @@
 ---
 title: Ereignis Quellen (Visual Studio SDK) | Microsoft-Dokumentation
+description: 'Erfahren Sie mehr über die beiden Quellen für Ereignisse beim Debuggen in Visual Studio: die Debug-Engine und den Sitzungs-Debug-Manager.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ab0bc2bb61069e20276c471d1245d167715cc7a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738774"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559666"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Ereignis Quellen (Visual Studio SDK)
 Es gibt zwei Quellen für Ereignisse: Debug Engine (de) und Session Debug Manager (SDM). Ereignisse, die von einem de gesendet werden, verfügen über ein Modul, das nicht NULL ist, während von der SDM gesendete Ereignisse ein NULL-Modul aufweisen.
@@ -72,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)

@@ -1,5 +1,7 @@
 ---
 title: Ausdrucks Auswertung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Ausdrucks Auswertungs, die die Syntax einer Sprache untersuchen, um Variablen und Ausdrücke zur Laufzeit im Break-Modus zu analysieren und auszuwerten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a477aaceb57e6ccd2eb5125fcf9d8af9be59472b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8223e39eb804684fede50ceb2f7c859e198a272
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738687"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560134"
 ---
 # <a name="expression-evaluator"></a>Expression evaluator (Ausdrucksauswertung)
 Die Ausdrucks Auswertung (EE) untersuchen die Syntax einer Sprache, um Variablen und Ausdrücke zur Laufzeit zu analysieren und auszuwerten, sodass Sie vom Benutzer angezeigt werden können, wenn sich die IDE im unterbrechen Modus befindet.
@@ -40,5 +42,5 @@ Die Ausdrucks Auswertung (EE) untersuchen die Syntax einer Sprache, um Variablen
 ## <a name="implementation-notes"></a>Hinweise zur Implementierung
  Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debug-engines erwarten mit der Ausdrucks Auswertung mithilfe von CLR-Schnittstellen (Common Language Runtime). Daher muss eine Ausdrucks Auswertung, die mit debuggingmodulen arbeitet, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die CLR unterstützen (eine vollständige Liste aller CLR-Debugschnittstellen finden Sie in debugref.doc, die Teil von ist [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] ).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)

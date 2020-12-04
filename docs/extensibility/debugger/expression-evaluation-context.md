@@ -1,5 +1,7 @@
 ---
 title: Ausdrucks Auswertungs Kontext | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Kontext der Ausdrucks Auswertung, der einen Kontext für die Ausdrucks Auswertung darstellt und vorhanden ist, wenn ein Programm an einem Haltepunkt angehalten wurde.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e939a4fa5f4673e2f701206c96599c54bc0c3b51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26705b32628a9bd9ecc79489e2552f2d7e537273
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738737"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559679"
 ---
 # <a name="expression-evaluation-context"></a>Ausdrucks Auswertungs Kontext
 Beim [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen ein **Ausdrucks Auswertungs Kontext**:
@@ -28,6 +30,6 @@ Beim [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen ein *
 
      Wenn eine `BSTR` und eine [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle angegeben sind, kann eine Debug-Engine (de) eine [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle erstellen, indem Sie einen Ausdruck initialisieren. Bei einer `IDebugExpression2` Schnittstelle kann der Wert durch synchrone oder asynchrone Ausdrucks Auswertung einen Wert erhalten. Dieser Wert wird zusammen mit dem Namen und dem Typ der Variablen oder des Arguments zur Anzeige an die IDE gesendet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Ausdrucks Bewertungs Schnittstellen](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md)

@@ -1,5 +1,7 @@
 ---
 title: Ausdrucks Auswertung (Visual Studio-debuggingsdk) | Microsoft-Dokumentation
+description: Während des Break-Modus wertet die IDE Ausdrücke aus, die Programmvariablen betreffen. Erfahren Sie, wie die Debug-Engine einen Ausdruck analysiert und auswertet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e41179fd530818f5ac59aa54420ede1b4eafa1ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c398d9eb79a6b5fcd1a6851596ab8913faf32fa
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738714"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560888"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Ausdrucks Auswertung (Visual Studio-debuggingsdk)
 Während des Break-Modus muss die IDE einfache Ausdrücke mit mehreren Programmvariablen auswerten. Um die Auswertung durchzuführen, muss die Debug-Engine (de) einen Ausdruck analysieren und auswerten, der in einem der Fenster der IDE eingegeben wurde.
@@ -38,5 +40,5 @@ Während des Break-Modus muss die IDE einfache Ausdrücke mit mehreren Programmv
 
  Die synchrone und asynchrone Auswertung erfordert die Implementierung der [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) -Methode. Bei der asynchronen Ausdrucks Auswertung ist die Implementierung von [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)erforderlich.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Ausführungs Steuerung und Zustands Auswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)

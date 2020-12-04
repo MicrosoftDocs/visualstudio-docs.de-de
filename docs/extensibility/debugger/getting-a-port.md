@@ -1,5 +1,7 @@
 ---
 title: Portieren eines Ports | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio einen Port für die Debug-Engine bereitstellt, um Programmknoten mit dem Port zu registrieren und Anforderungen nach Prozessinformationen zu erfüllen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738632"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560047"
 ---
 # <a name="get-a-port"></a>Port erhalten
 Ein Port stellt eine Verbindung zu einem Computer dar, auf dem Prozesse ausgeführt werden. Bei diesem Computer kann es sich um den lokalen Computer oder einen Remote Computer handeln (auf dem möglicherweise ein nicht Windows-basiertes Betriebssystem ausgeführt wird; weitere Informationen finden Sie unter [Ports](../../extensibility/debugger/ports.md) ).
@@ -96,7 +98,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Programm wird registriert](../../extensibility/debugger/registering-the-program.md)
 - [Aktivieren eines deaktivierte Programms](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [Port Lieferanten](../../extensibility/debugger/port-suppliers.md)

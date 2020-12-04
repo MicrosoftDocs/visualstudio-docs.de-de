@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: 5b7e36d0f0c29e997b4b39506fb27d73ceb45146
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341149"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559809"
 ---
 # <a name="using-net-4x-in-unity"></a>Verwenden von .NET 4.x in Unity
 
@@ -40,7 +40,7 @@ Um die .NET 4.x-Skriptlaufzeit zu aktivieren, führen Sie die folgenden Schritte
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Auswahl zwischen .NET 4.x- und .NET Standard 2.0-Profilen
 
-Nachdem Sie zur .NET 4.x entsprechenden Skriptlaufzeit gewechselt haben, können Sie den **Api Compatibility Level** (API-Kompatibilitätsgrad) in den PlayerSettings über das Dropdownmenü ( **Edit > Project Settings > Player** (Bearbeiten > Projekteinstellungen > Player)) festlegen. Es gibt zwei Optionen:
+Nachdem Sie zur .NET 4.x entsprechenden Skriptlaufzeit gewechselt haben, können Sie den **Api Compatibility Level** (API-Kompatibilitätsgrad) in den PlayerSettings über das Dropdownmenü (**Edit > Project Settings > Player** (Bearbeiten > Projekteinstellungen > Player)) festlegen. Es gibt zwei Optionen:
 
 * **.NET Standard 2.0**. Dieses Profil entspricht dem von der .NET Foundation veröffentlichten [.NET Standard 2.0-Profil](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md). Für neue Projekte empfiehlt Unity die Verwendung von .NET Standard 2.0. Das Profil hat einen kleineren Umfang als .NET 4.x, was für Plattformen mit Größenbeschränkungen von Vorteil ist. Darüber hinaus hat sich Unity verpflichtet, dieses Profil auf allen von Unity unterstützten Plattformen zu unterstützen.
 
@@ -58,9 +58,9 @@ Wenn Sie beispielsweise das .NET 4.x-Profil nutzen und `HttpClient` verwenden m�
 
 ![Hinweis auf fehlenden Assemblyverweis](media/vs/vstu-missing-reference.png)
 
-Jedes Mal, wenn Sie Unity-Projekte öffnen, werden in Visual Studio .csproj- und .sln-Dateien generiert. Folglich können Sie Assemblyverweise nicht direkt in Visual Studio hinzufügen, da sie beim erneuten Öffnen des Projekts verloren gehen. Stattdessen muss eine spezielle Textdatei namens **mcs.rsp** verwendet werden:
+Jedes Mal, wenn Sie Unity-Projekte öffnen, werden in Visual Studio .csproj- und .sln-Dateien generiert. Folglich können Sie Assemblyverweise nicht direkt in Visual Studio hinzufügen, da sie beim erneuten Öffnen des Projekts verloren gehen. Stattdessen muss eine spezielle Textdatei mit dem Namen " **csc. rsp** " verwendet werden:
 
-1. Erstellen Sie im Stammverzeichnis **Assets** Ihres Unity-Projekts eine neue Textdatei namens **mcs.rsp**.
+1. Erstellen Sie im Stammverzeichnis der Stamm **Objekte** Ihres Unity-Projekts eine neue Textdatei mit dem Namen " **csc. rsp** ".
 
 1. Geben Sie in der ersten Zeile der leeren Textdatei Folgendes ein: `-r:System.Net.Http.dll`. Speichern Sie anschließend die Datei. Sie können „System.Net.Http.dll“ durch jede enthaltene Assembly ersetzen, der möglicherweise ein Verweis fehlt.
 
@@ -76,19 +76,19 @@ Zusätzlich zu den neuen C#-Syntax- und Sprachfunktionen bietet die .NET 4.x-Skr
 
 1. Durchsuchen Sie NuGet nach einem kompatiblen Paket, das Sie hinzufügen möchten (.NET Standard 2.0 oder .NET 4.x). Dieses Beispiel zeigt das Hinzufügen von [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/), einem beliebten Paket für die Arbeit mit JSON, zu einem .NET Standard 2.0-Projekt.
 
-1. Klicken Sie auf die Schaltfläche **Herunterladen** :
+1. Klicken Sie auf die Schaltfläche **Herunterladen**:
 
     ![Schaltfläche zum Herunterladen](media/vs/vstu-nuget-download.png)
 
 1. Suchen Sie die heruntergeladene Datei, und ändern Sie die Erweiterung von **.nupkg** in **.zip**.
 
-1. Navigieren Sie innerhalb der ZIP-Datei zum Verzeichnis **lib/netstandard2.0** , und kopieren Sie die Datei **Newtonsoft.Json.dll**.
+1. Navigieren Sie innerhalb der ZIP-Datei zum Verzeichnis **lib/netstandard2.0**, und kopieren Sie die Datei **Newtonsoft.Json.dll**.
 
 1. Erstellen Sie im Stammordner **Assets** Ihres Unity-Projekts einen neuen Ordner mit dem Namen **Plugins**. In Unity ist „Plugins“ ein spezieller Ordnername. Weitere Informationen finden Sie in der [Unity-Dokumentation](https://docs.unity3d.com/Manual/Plugins.html).
 
 1. Fügen Sie die Datei **Newtonsoft.Json.dll** in das Verzeichnis **Plugins** Ihres Unity-Projekts ein.
 
-1. Erstellen Sie im Verzeichnis **Assets** Ihres Unity-Projekts eine Datei namens **link.xml** , und fügen Sie folgenden XML-Code hinzu.  Dadurch wird sichergestellt, dass der Unity-Prozess zum Entfernen von Bytecode beim Export auf eine IL2CPP-Plattform nicht die benötigten Daten entfernt.  Obwohl dieser Schritt nur für diese Bibliothek gilt, können auch Probleme mit anderen Bibliotheken auftreten, die auf ähnliche Weise eine Reflektion verwenden.  Weitere Informationen finden Sie in den [Unity-Dokumenten](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html) zu diesem Thema.
+1. Erstellen Sie im Verzeichnis **Assets** Ihres Unity-Projekts eine Datei namens **link.xml**, und fügen Sie folgenden XML-Code hinzu.  Dadurch wird sichergestellt, dass der Unity-Prozess zum Entfernen von Bytecode beim Export auf eine IL2CPP-Plattform nicht die benötigten Daten entfernt.  Obwohl dieser Schritt nur für diese Bibliothek gilt, können auch Probleme mit anderen Bibliotheken auftreten, die auf ähnliche Weise eine Reflektion verwenden.  Weitere Informationen finden Sie in den [Unity-Dokumenten](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html) zu diesem Thema.
 
     ```xml
     <linker>

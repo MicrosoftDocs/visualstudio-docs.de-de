@@ -1,5 +1,7 @@
 ---
 title: Einstieg in die debuggererweiterbarkeit | Microsoft-Dokumentation
+description: Beginnen Sie mit dem Erstellen und Anpassen von Debugger-Komponenten, die zum Debuggen von Programmen in der Visual Studio-Umgebung verwendet werden
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6949b9b8a9168915c64bc6183f6b1391a1c79220
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738589"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560034"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Einstieg in die Erweiterbarkeit des Debuggers
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Stellt die Informationen bereit, die Sie zum Erstellen und Anpassen von Debugger-Komponenten benötigen, die zum Debuggen von Programmen in der Umgebung verwendet werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -39,8 +41,8 @@ ms.locfileid: "80738589"
 
  [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md) Bietet eine Übersicht über die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debuggingkomponenten, einschließlich Debug-Engine (de), Ausdrucks Auswertung (EE) und Symbol Handler (SH).
 
- [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Konzepte der debuggingarchitektur.
+ [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md) beschreibt die wichtigsten Architekturkonzepte für das Debuggen.
 
- [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert, wie die Debug-Engine (de) parallel innerhalb von Code-, Dokumentations-und Ausdrucks Auswertungs Kontexten funktioniert. Beschreibt für jeden der drei Kontexte den Speicherort, die Position oder die Auswertung, die für ihn relevant sind.
+ [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert, wie die Debug-Engine (de) parallel innerhalb von Code-, Dokumentations-und Ausdrucks Auswertungs Kontexten funktioniert. Es wird für jeden der drei Kontexte der Speicherort, die Position oder die Auswertung beschrieben, der bzw. die für ihn relevant ist.
 
  [Debugtasks](../../extensibility/debugger/debugging-tasks.md) Enthält Links zu verschiedenen Debuggingaufgaben, z. b. das Starten eines Programms und Auswerten von Ausdrücken.
