@@ -1,5 +1,7 @@
 ---
 title: Ausdrucks Auswertung im Umbruch Modus | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Prozess, der auftritt, wenn sich der Debugger im Break-Modus befindet und die Ausdrucks Auswertung durchführen muss.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc09fc43bd9f0edea4f6dc32e5f37c387c045796
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738719"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559635"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Ausdrucks Auswertung im Break-Modus
 Im folgenden Abschnitt wird der Prozess beschrieben, der auftritt, wenn sich der Debugger im Break-Modus befindet und die Ausdrucks Auswertung durchführen muss.
@@ -39,5 +41,5 @@ Im folgenden Abschnitt wird der Prozess beschrieben, der auftritt, wenn sich der
 
     - Wenn verwendet `IDebugExpression2::EvaluateAsync` wird, kommuniziert die angegebene Rückruf Schnittstelle mit dem laufenden Prozess der Auswertung. Wenn die Auswertung fertig ist, sendet evaluateasync eine [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) -Schnittstelle über den Rückruf. Mit dieser Ereignis Schnittstelle ergibt sich der endgültige Wert mit [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Debugger-Ereignisse aufzurufen](../../extensibility/debugger/calling-debugger-events.md)

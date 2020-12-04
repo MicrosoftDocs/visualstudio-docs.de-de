@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Debuggen einer benutzerdefinierten Debug-Engine | Microsoft-Dokumentation'
+description: Erfahren Sie mehr über die Schritte, die Ihnen die Verwendung von Visual Studio zum Debuggen der benutzerdefinierten Debug-Engine oder eines benutzerdefinierten Projekt Typs ermöglichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903309"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560810"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Gewusst wie: Debuggen einer benutzerdefinierten Debug-Engine
 Mit einem Projekttyp wird die Debug-Engine (de) aus der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> Methode gestartet. Dies bedeutet, dass die de unter dem Steuerelement der Instanz von gestartet wird, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die den Projekttyp steuert. Diese Instanz von kann jedoch [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nicht debuggen. Im folgenden werden die Schritte beschrieben, mit denen Sie Ihre benutzerdefinierte de Debuggen können.
@@ -31,7 +33,7 @@ Mit einem Projekttyp wird die Debug-Engine (de) aus der- <xref:Microsoft.VisualS
 
 1. Starten Sie *msvsmon.exe*, den Remotedebugmonitor.
 
-2. Wählen Sie **im Menü Extras** in *msvsmon.exe*die **Option Optionen** aus, um das Dialogfeld **Optionen** zu öffnen.
+2. Wählen Sie **im Menü Extras** in *msvsmon.exe* die **Option Optionen** aus, um das Dialogfeld **Optionen** zu öffnen.
 
 3. Wählen Sie die Option "keine Authentifizierung" aus, und klicken Sie auf **OK**.
 
@@ -57,7 +59,7 @@ Mit einem Projekttyp wird die Debug-Engine (de) aus der- <xref:Microsoft.VisualS
 
 1. Starten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Sie in der normalen Registrierungs Struktur, und laden Sie das Projekttyp Projekt (also die Quelle in ihren Projekttyp, keine Instanziierung des Projekt Typs).
 
-2. Öffnen Sie die Projekteigenschaften, und wechseln Sie zur Seite **Debuggen** . Geben Sie für den **Befehl**den Pfad zur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE ein (Standardmäßig ist dies *[Laufwerk]* \Programme\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
+2. Öffnen Sie die Projekteigenschaften, und wechseln Sie zur Seite **Debuggen** . Geben Sie für den **Befehl** den Pfad zur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE ein (Standardmäßig ist dies *[Laufwerk]* \Programme\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).
 
 3. Geben Sie für die **Befehlsargumente** `/rootsuffix exp` für die experimentelle Registrierungs Struktur ein (bei der Installation von VSIP erstellt).
 
@@ -73,5 +75,5 @@ Mit einem Projekttyp wird die Debug-Engine (de) aus der- <xref:Microsoft.VisualS
 
 9. Wenn Sie das Starten eines de-Vorgangs debuggen möchten, können Sie die Schritte im Verfahren "Debuggen einer benutzerdefinierten Debug-Engine" durchführen, um Sie nach dem Start an Ihre de anzufügen. Dadurch erhalten Sie drei Instanzen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , die ausgeführt werden: eine für die Projekttyp Quelle, eine Sekunde für den instanziierten Projekttyp und ein drittes, das an Ihren de angeschlossen ist.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)

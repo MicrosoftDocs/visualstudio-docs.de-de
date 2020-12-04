@@ -1,5 +1,7 @@
 ---
 title: Implementieren einer Ausdrucks Auswertung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Auswerten eines Ausdrucks, der die Debug-Engine, den Symbol Anbieter, das Binder Objekt und die Ausdrucks Auswertung umfasst.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28989178ab726a9b274f66e0a9296f2bf49ead4a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738540"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559965"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implementieren einer Ausdrucks Auswertung
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ ms.locfileid: "80738540"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  Der EE führt [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)aus. `IDebugProperty2` stellt den Mechanismus bereit, mit dem das Ergebnis einer Ausdrucks Auswertung beschrieben wird, z. b. eine lokale Variable, ein primitiver oder ein Objekt in Visual Studio, das **dann die entsprechenden**Informationen im Fenster Lokal, über **Wachen**oder **direkt** anzeigt.
+  Der EE führt [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)aus. `IDebugProperty2` stellt den Mechanismus bereit, mit dem das Ergebnis einer Ausdrucks Auswertung beschrieben wird, z. b. eine lokale Variable, ein primitiver oder ein Objekt in Visual Studio, das **dann die entsprechenden** Informationen im Fenster Lokal, über **Wachen** oder **direkt** anzeigt.
 
   Die SP wird dem ee von der "de" übergeben, wenn Sie Informationen anfordert. Der SP führt Schnittstellen aus, die Adressen und Felder beschreiben, wie z. b. die folgenden Schnittstellen und deren Ableitungen:
 
@@ -61,5 +63,5 @@ ms.locfileid: "80738540"
 ## <a name="in-this-section"></a>In diesem Abschnitt
  [Implementierungsstrategie für die Ausdrucks Auswertung](../../extensibility/debugger/expression-evaluator-implementation-strategy.md) Definiert einen dreistufigen Prozess für die Strategie zur Implementierung der Ausdrucks Auswertung (EE Auswertung, EE).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -1,5 +1,7 @@
 ---
 title: Lokale Werte werden erhalten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio den Wert einer lokalen Variablen abruft, indem Sie GetPropertyInfo für verwalteten und nicht verwalteten Code verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75cc530f13de22a994eff70492f340059d2a5839
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4287bb726ca4b64bc939c12098ca0fc98948931
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738608"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559978"
 ---
 # <a name="get-local-values"></a>Lokale Werte erhalten
 > [!IMPORTANT]
@@ -438,7 +440,7 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Beispiel Implementierung von lokalen Variablen](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [Lokale Eigenschaften erhalten](../../extensibility/debugger/getting-local-properties.md)
 - [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md)

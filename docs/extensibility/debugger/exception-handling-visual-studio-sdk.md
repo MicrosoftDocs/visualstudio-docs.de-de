@@ -1,5 +1,7 @@
 ---
 title: Ausnahmebehandlung (Visual Studio SDK) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Prozess, der auftritt, wenn Ausnahmen ausgelöst werden. In diesem Artikel werden alle erforderlichen Schritte beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34b83c7181a7ba405e642d9911e2c53df3f4401d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af5dc1007a4624a24bef59dd822f6e9fe3861551
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738763"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559653"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Ausnahmebehandlung (Visual Studio SDK)
 Im folgenden wird der Prozess beschrieben, der auftritt, wenn Ausnahmen ausgelöst werden.
@@ -48,5 +50,5 @@ Im folgenden wird der Prozess beschrieben, der auftritt, wenn Ausnahmen ausgelö
 
 10. Wenn die Methode S_OK zurückgibt, ruft auf `IDebugExceptionEvent2::PassToDebuggee` .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Debugger-Ereignisse aufzurufen](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,7 @@
 ---
 title: Implementieren eines Port Anbieters | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Implementieren eines Port Anbieters, der beim Debuggen auf einen nicht-DCOM-Computer oder bei Unterstützung für ein neues Gerät erforderlich ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8218e372ad3aece922811bc20cfd7650f33296f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72963660e4f50a72cdbc04bab4833b397d15fc27
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738559"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560667"
 ---
 # <a name="implement-a-port-supplier"></a>Implementieren eines Port Anbieters
 Ein Port Lieferant liefert Ports für die Anforderung an den Sitzungs-Debug-Manager (SDM). Ein Port Lieferant muss implementiert werden, wenn ein Debuggen auf einen nicht-DCOM-Computer oder ein neues Gerät unterstützt wird. Wenn Sie z. b. das Debuggen auf einem Mobiltelefon bereitstellen möchten, können Sie einen Port Lieferanten einrichten, der Ports bereitstellt, die eine Verbindung mit dem Mobiltelefon herstellen (z. b. über IR oder eine Zell Verbindung) und die Prozesse und Programme auflisten, die auf dem Telefon ausgeführt werden.
@@ -29,7 +31,7 @@ Ein Port Lieferant liefert Ports für die Anforderung an den Sitzungs-Debug-Mana
  [Erforderliche Port Lieferanten Schnittstellen](../../extensibility/debugger/required-port-supplier-interfaces.md) Dokumentiert die Schnittstellen, die Sie implementieren müssen, um einen Port Lieferanten zu erhalten.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Konzepte der debuggingarchitektur.
+ [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md) beschreibt die wichtigsten Architekturkonzepte für das Debuggen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
  [Erweiterbarkeit von Visual Studio-Debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
