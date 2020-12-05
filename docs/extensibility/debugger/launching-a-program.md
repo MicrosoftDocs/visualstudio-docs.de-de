@@ -1,5 +1,7 @@
 ---
 title: Starten eines Programms | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Reihe von Ereignissen, die stattfinden, wenn Sie ein Programm mit F5 Debuggen, um den Debugger aus der IDE auszuführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738478"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606696"
 ---
 # <a name="launch-a-program"></a>Programm starten
 Benutzer, die ein Programm debuggen möchten, können **F5** drücken, um den Debugger aus der IDE auszuführen. Dadurch beginnt eine Reihe von Ereignissen, die letztendlich dazu führen, dass die IDE eine Verbindung mit einer Debug-Engine (de) herstellt, die wiederum wie folgt mit dem Programm verbunden oder angefügt wird:
@@ -39,7 +41,7 @@ Benutzer, die ein Programm debuggen möchten, können **F5** drücken, um den De
 
    Das neu erstellte Programm zusammen mit allen anderen Programmen, verknüpften oder nicht verknüpften, von der gleichen IDE gestarteten oder angefügten Programmen, verfassen Sie eine Debugsitzung.
 
-   Programm gesteuert, wenn der Benutzer zuerst **F5**drückt, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Ruft das Debugpaket das Projektpaket (das mit dem Typ des gestarteten Programms verknüpft ist) über die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> Methode auf, die wiederum eine <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> Struktur mit den aktiven Debugeinstellungen der Projekt Mappe ausfüllt. Diese Struktur wird mithilfe eines Aufrufens der-Methode an das Debugpaket zurückgegeben <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> . Das Debugpaket instanziiert dann den Sitzungs-Debug-Manager (SDM), der das zu debuggende Programm und alle zugehörigen Debug-engines startet.
+   Programm gesteuert, wenn der Benutzer zuerst **F5** drückt, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Ruft das Debugpaket das Projektpaket (das mit dem Typ des gestarteten Programms verknüpft ist) über die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> Methode auf, die wiederum eine <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> Struktur mit den aktiven Debugeinstellungen der Projekt Mappe ausfüllt. Diese Struktur wird mithilfe eines Aufrufens der-Methode an das Debugpaket zurückgegeben <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> . Das Debugpaket instanziiert dann den Sitzungs-Debug-Manager (SDM), der das zu debuggende Programm und alle zugehörigen Debug-engines startet.
 
    Eines der Argumente, das an SDM übermittelt wird, ist die GUID der de, die zum Starten des Programms verwendet wird.
 

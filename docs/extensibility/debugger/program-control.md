@@ -1,5 +1,7 @@
 ---
 title: Programmsteuerung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Routinen in Visual Studio-debuggen, die auf der Programmebene auftreten, z. b. ausführen, schrittweise Ausführung, fortsetzen und Anhalten/Fortsetzen von Threads
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e77e233050c5ce10aef5053f82c8d26cb984b85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738225"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606527"
 ---
 # <a name="program-control"></a>Programmsteuerung
 Beim Debuggen in Visual Studio erfolgen alle folgenden Schritt-und fortsetzenden Routinen auf der Programmebene:
