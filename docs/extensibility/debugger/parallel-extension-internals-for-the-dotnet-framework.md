@@ -1,5 +1,7 @@
 ---
 title: Parallele Erweiterungs internale für die .NET Framework | Microsoft-Dokumentation
+description: Diese Ressourcen beschreiben interne Typen, Methoden und Felder von Klassen, die verwendet werden, um einen benutzerdefinierten Debugger für die parallelen Erweiterungen des .NET Framework zu implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a3583e94a0bfff4474db03aa9d083add921f3da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9625af464e2695c6dd4302f4f7590d20e8f6af7
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738272"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606592"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Parallele Erweiterungs internale für die .NET Framework
 In diesem Abschnitt werden die internen Typen, Methoden und Felder von Klassen beschrieben, mit denen Sie einen benutzerdefinierten Debugger für die parallelen Erweiterungen des .NET Framework implementieren können.

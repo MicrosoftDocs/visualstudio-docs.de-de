@@ -1,5 +1,7 @@
 ---
 title: Benachrichtigen des Ports | Microsoft-Dokumentation
+description: Erfahren Sie, wie der Port nach dem Starten eines Programms benachrichtigt wird. Dieser Artikel enthält eine ausführliche Beschreibung.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a838879e7c1eb590bb16cd12a6bf345de8031a
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738327"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606618"
 ---
 # <a name="notify-the-port"></a>Benachrichtigen des Ports
 Nachdem Sie ein Programm gestartet haben, muss der Port wie folgt benachrichtigt werden:

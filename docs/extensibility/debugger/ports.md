@@ -1,5 +1,7 @@
 ---
 title: Ports | Microsoft-Dokumentation
+description: In diesem Artikel werden die Definition und die Rolle eines Ports in der Debugger-Architektur in Visual Studio beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b42e7fa97c12afa07923e99d8b084840ee7ccad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738306"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606557"
 ---
 # <a name="ports"></a>Ports
 In der Debugger-Architektur ein *Port*:
@@ -32,7 +34,7 @@ In der Debugger-Architektur ein *Port*:
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stellt einen Standardport bereit, der alle Windows-basierten Prozesse, sowohl System eigen als auch verwaltet, verarbeitet. Ein benutzerdefinierter Port muss für Verbindungen mit externen Geräten eingerichtet werden, die nicht auf Windows basieren. Um solche benutzerdefinierten Ports bereitzustellen, müssen Sie auch einen benutzerdefinierten Port Lieferanten einrichten.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Leistungsverlauf für Server](../../extensibility/debugger/servers-visual-studio-sdk.md)
+- [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [Prozesse](../../extensibility/debugger/processes.md)
 - [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)

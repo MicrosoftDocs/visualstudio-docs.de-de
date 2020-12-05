@@ -1,5 +1,7 @@
 ---
 title: SDK-Hilfsprogramme zum Debuggen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Funktionen und Deklarationen, bei denen es sich um globale Hilfsfunktionen zum Implementieren von Debug-engines, Ausdrucks Auswertung und Symbol Anbietern in C++ handelt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713647"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606540"
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK-Hilfsprogramme für das Debuggen
 Diese Funktionen und Deklarationen sind globale Hilfsfunktionen zum Implementieren von Debug-engines, Ausdrucks Auswertung und Symbol Anbietern in C++.
@@ -261,7 +263,7 @@ HRESULT EnumMetricSections(
 
 |Platzhalter|BESCHREIBUNG|
 |-----------------|-----------------|
-|*[Registrierungsschlüssel]*|`HKEY_CURRENT_USER` oder `HKEY_LOCAL_MACHINE`.|
+|*[Registrierungsschlüssel]*|`HKEY_CURRENT_USER` oder `HKEY_LOCAL_MACHINE`|
 |*[Version Root]*|Die Version von Visual Studio (z. b `7.0` `7.1` ., oder `8.0` ). Dieser Stamm kann jedoch auch mithilfe des **/rootsuffix** -Schalters geändert werden, um **devenv.exe**. Bei VSIP ist dieser Modifizierer in der Regel " **Exp**", sodass der Versions Stamm z. b. "8.0 Exp" lautet.|
 |*[metrikroot]*|Dies ist entweder `AD7Metrics` oder `AD7Metrics(Debug)` , abhängig davon, ob die Debugversion von "dbgmetric. lib" verwendet wird. **Hinweis:**  Unabhängig davon, ob dbgmetric. lib verwendet wird, sollte diese Benennungs Konvention befolgt werden, wenn Sie Unterschiede zwischen Debug-und Releaseversionen haben, die in der Registrierung widergespiegelt werden müssen.|
 |*[metrikentyp]*|Der Typ der zu schreibenden Metrik: `Engine` , `ExpressionEvaluator` , `SymbolProvider` usw. Diese werden alle als in dbgmetric. h als definiert `metricTypeXXXX` , wobei `XXXX` der spezifische Typname ist.|
@@ -414,7 +416,7 @@ HRESULT EnumMetricSections(
 |Platzhalter|BESCHREIBUNG|
 |-----------------|-----------------|
 |*[Debug-Engine-GUID]*|Die GUID einer Debug-Engine, die Ausnahmen unterstützt.|
-|*[Ausnahme Typen]*|Ein allgemeiner Titel für den Unterschlüssel, der die Klasse von Ausnahmen identifiziert, die behandelt werden können. Typische Namen sind **C++-Ausnahmen**, **Win32-Ausnahmen**, **Common Language Runtime-Ausnahmen**und systemeigene **Laufzeitüberprüfungen**. Diese Namen werden auch verwendet, um eine bestimmte Ausnahme Klasse für den Benutzer zu identifizieren.|
+|*[Ausnahme Typen]*|Ein allgemeiner Titel für den Unterschlüssel, der die Klasse von Ausnahmen identifiziert, die behandelt werden können. Typische Namen sind **C++-Ausnahmen**, **Win32-Ausnahmen**, **Common Language Runtime-Ausnahmen** und **Native Run-Time Überprüfungen**. Diese Namen werden auch verwendet, um eine bestimmte Ausnahme Klasse für den Benutzer zu identifizieren.|
 |*distanzieren*|Ein Name für eine Ausnahme, z. b. **_com_error** oder **Steuerelement Umbruch**. Diese Namen werden auch verwendet, um eine bestimmte Ausnahme für den Benutzer zu identifizieren.|
 
 ## <a name="requirements"></a>Anforderungen

@@ -1,5 +1,7 @@
 ---
 title: Programme | Microsoft-Dokumentation
+description: In diesem Artikel werden die Definition und die Rolle eines Programms in der Debugger-Architektur in Visual Studio beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fd1db5add74d2d94467e1f369916feb5f30d4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738208"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606514"
 ---
-# <a name="programs"></a>Programme
+# <a name="programs"></a>Programs
 In der Debugger-Architektur ist ein *Programm*:
 
 - Ist ein Container für einen Satz von Threads und einen Satz von Modulen. Ein Programm hat im Windows-Betriebssystem keine einzige Analogie.
