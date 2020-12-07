@@ -1,5 +1,7 @@
 ---
 title: Umbenennen eines Dateinamens entsprechend eines Typs
+description: Hier erfahren Sie, wie Sie das Menü „Schnellaktionen und Refactorings…“ verwenden, um einen Typ so umzubenennen, dass er mit dem Dateinamen übereinstimmt, oder einen Dateinamen so umzubenennen, dass er dem Typ entspricht, der darin enthalten ist.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594395"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479822"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring des Synchronisierens eines Typs mit einem Dateinamen oder eines Dateinamens mit einem Typ
 
@@ -65,6 +67,6 @@ Dieses Refactoring gilt für:
 
        ![Ergebnis des Inlinevorgangs in Visual Basic](media/synctype-result-vb.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Refactoring](../refactoring-in-visual-studio.md)

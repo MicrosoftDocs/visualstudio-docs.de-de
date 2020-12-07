@@ -1,5 +1,7 @@
 ---
 title: Tipps zum Verbessern der Leistung
+description: Hier erfahren Sie, wie Sie nicht verwendete Visual Studio-Features optimieren, um die Leistung zu verbessern.
+ms.custom: SEO-VS-2020
 ms.date: 08/13/2020
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352361"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479614"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 

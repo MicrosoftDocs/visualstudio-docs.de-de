@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit mehreren Benutzerkonten
+description: Hier erfahren Sie, wie Sie alle Ihre Microsoft-Konten zu Visual Studio hinzufügen können, um von einem beliebigen Konto aus auf Ressourcen zuzugreifen, ohne sich bei jedem Konto einzeln anmelden zu müssen.
+ms.custom: SEO-VS-2020
 ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671336"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480342"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
@@ -115,7 +117,7 @@ Gehen Sie wie folgt vor, um sich über den Gerätecodeflow anzumelden:
 
 1. Klicken Sie unter **Visual Studio** auf **Weiter**.
 
-   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![Screenshot der Seite „Geräteanmeldung“ mit der Option „Weiter“](media/work-with-multiple-user-accounts/device-login-page.png)
 
 1. Folgen Sie den Anweisungen, um Ihre Anmeldeinformationen für das Konto einzugeben.
 

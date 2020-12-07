@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing – häufig gestellte Fragen
+description: Sehen Sie sich die häufig gestellten Fragen zu Live Unit Testing an, einschließlich unterstützter Frameworks, der Konfiguration und Anpassung.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb2c9a4cae25b388d5817b04ff54f6e6443b2f44
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591540"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329288"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – FAQ (Häufig gestellte Fragen)
 
@@ -77,7 +79,7 @@ Eine Meldung im Ausgabefenster (wenn das Live Unit Testing-Dropdownmenü ausgew�
 
 Wenn Ihre Projektmappe benutzerdefinierte Schritte für einen Buildvorgang zur Instrumentierung erfordert (Live Unit Testing), die für den „normalen“, nicht instrumentierten Build, nicht erforderlich sind, dann können Sie Code zum Projekt oder zu *.targets*-Dateien hinzufügen, der auf die Eigenschaft `BuildingForLiveUnitTesting` prüft und vorab oder anschließend benutzerdefinierte Buildschritte ausführt. Sie können basierend auf dieser Eigenschaft auch bestimmte Buildschritte entfernen (z.B. Veröffentlichen oder Generieren von Paketen) oder einem Live Unit Testing-Build Buildschritte hinzuzufügen (z.B. Kopieren der erforderlichen Komponenten). Das Anpassen Ihres Builds basierend auf dieser Eigenschaft verändert Ihren „normalen“ Build in keinster Weise und hat nur Auswirkungen auf Live Unit Testing-Builds.
 
-Möglicherweise gibt es z.B. ein Ziel, das NuGet-Pakete während eines regulären Buildvorgangs erzeugt. Sie möchten wahrscheinlich nicht, dass NuGet-Pakete nach jeder Änderung generiert werden. Also können Sie dieses Ziel im Live Unit Testing-Build deaktivieren, indem Sie z.B. Folgendes ausführen:  
+Möglicherweise gibt es z.B. ein Ziel, das NuGet-Pakete während eines regulären Buildvorgangs erzeugt. Sie möchten wahrscheinlich nicht, dass NuGet-Pakete nach jeder Änderung generiert werden. Also können Sie dieses Ziel im Live Unit Testing-Build deaktivieren, indem Sie z.B. Folgendes ausführen:  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -171,7 +173,7 @@ Während des Live Unit Testing-Builds wird die Eigenschaft `<LiveUnitTestingBuil
 
 **Ich möchte die Artefakte eines Live Unit Testing-Builds an einem bestimmten Speicherort ablegen, statt den Standardspeicherort im Ordner *.vs* zu verwenden. Wie kann ich ihn ändern?**
 
-Legen Sie die `LiveUnitTesting_BuildRoot`-Umgebungsvariable auf Benutzerebene auf den Pfad fest, in dem die Live Unit Testing-Buildartefakte abgelegt werden sollen. 
+Legen Sie die `LiveUnitTesting_BuildRoot`-Umgebungsvariable auf Benutzerebene auf den Pfad fest, in dem die Live Unit Testing-Buildartefakte abgelegt werden sollen. 
 
 ## <a name="test-explorer-versus-live-unit-testing"></a>Test-Explorer und Live Unit Testing
 
@@ -179,7 +181,7 @@ Legen Sie die `LiveUnitTesting_BuildRoot`-Umgebungsvariable auf Benutzerebene au
 
 Es gibt mehrere Unterschiede:
 
-- Beim Ausführen oder Debuggen von Tests im Fenster **Test-Explorer** werden reguläre Binärdateien ausgeführt. Live Unit Testing führt dagegen instrumentierte Binärdateien aus. Wenn Sie instrumentierte Binärdateien debuggen möchten, wird durch das Hinzufügen eines [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) -Methodenaufrufs in der Testmethode der Debugger bei jeder Ausführung der Methode gestartet (auch bei der Ausführung durch Live Unit Testing), und Sie können dann die instrumentierte Binärdatei anfügen und debuggen. Wir hoffen jedoch, dass die Instrumentierung der meisten Benutzerszenarien für Sie transparent ist und Sie instrumentierte Binärdateien nicht debuggen müssen.
+- Beim Ausführen oder Debuggen von Tests im Fenster **Test-Explorer** werden reguläre Binärdateien ausgeführt. Live Unit Testing führt dagegen instrumentierte Binärdateien aus. Wenn Sie instrumentierte Binärdateien debuggen möchten, wird durch das Hinzufügen eines [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch)-Methodenaufrufs in der Testmethode der Debugger bei jeder Ausführung der Methode gestartet (auch bei der Ausführung durch Live Unit Testing), und Sie können dann die instrumentierte Binärdatei anfügen und debuggen. Wir hoffen jedoch, dass die Instrumentierung der meisten Benutzerszenarien für Sie transparent ist und Sie instrumentierte Binärdateien nicht debuggen müssen.
 
 - Live Unit Testing erstellt keine neue Anwendungsdomäne zum Ausführen von Tests. Tests, die im Fenster **Test-Explorer** ausgeführt werden, erstellen dagegen eine neue Anwendungsdomäne.
 
@@ -248,7 +250,7 @@ Live Unit Testing startet einen Buildvorgang, wenn erkannt wird, dass Quelldatei
 
 **Warum werden keine Symbole im Editor angezeigt, obwohl Live Unit Testing basierend auf den Meldungen im Ausgabefenster Tests auszuführen scheint?**
 
-Es werden möglicherweise keine Symbole im Editor angezeigt, wenn die Assemblys, die von Live Unit Testing verarbeitet werden, nicht instrumentiert werden. Beispielsweise ist Live Unit Testing nicht kompatibel mit Projekten, die `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` festlegen. In diesem Fall muss der Buildvorgang aktualisiert werden, um diese Einstellung zu entfernen oder in `true` zu ändern, damit Live Unit Testing funktioniert. 
+Es werden möglicherweise keine Symbole im Editor angezeigt, wenn die Assemblys, die von Live Unit Testing verarbeitet werden, nicht instrumentiert werden. Beispielsweise ist Live Unit Testing nicht kompatibel mit Projekten, die `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` festlegen. In diesem Fall muss der Buildvorgang aktualisiert werden, um diese Einstellung zu entfernen oder in `true` zu ändern, damit Live Unit Testing funktioniert. 
 
 ## <a name="capture-logs"></a>Erfassen von Protokollen
 

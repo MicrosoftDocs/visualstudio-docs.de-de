@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 3: Hinzufügen eines Countdowntimers'
+description: Hier erfahren Sie, wie Sie einen Countdowntimer hinzufügen, mit dem verfolgt wird, wie viele Sekunden dem Quizteilnehmer noch für den Abschluss des Quiz verbleiben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 723b5daabd19d2e49462bf62d2657c6a6cd14b7f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579868"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480641"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Schritt 3: Hinzufügen eines Countdowntimers
 
@@ -108,10 +110,10 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
      Der Timer beginnt den Countdown. Wenn die Zeit abläuft, wird das Quiz beendet, und die Antwort wird angezeigt. In der folgenden Abbildung ist das laufende Quiz dargestellt.
 
      ![Mathequiz wird durchgeführt](../ide/media/express_addcountdown.png)<br/>
-*Mathequiz wird durchgeführt*
+*Mathetest wird durchgeführt*
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
 - Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 4: Hinzufügen der CheckTheAnswer()-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
 
-- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md).
+- Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md).

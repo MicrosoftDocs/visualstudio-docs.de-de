@@ -1,5 +1,7 @@
 ---
 title: Verwenden verschiedener Webbrowser mit Tests der programmierten UI
+description: Hier erfahren Sie, wie Sie Ihren Test anpassen und mit verschiedenen Browsern für Ihre Webanwendungen wiedergeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 507da254d108ddc31f2b1c9fdf7f393d42934f2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6baddaeac3fdea3d27f60722e728df209bfd768d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289325"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330029"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 
@@ -53,7 +55,7 @@ Um Tests auf Nicht-IE-Webbrowser wiederzugeben, müssen Sie die **Selenium-Kompo
 
 ::: moniker range="vs-2017"
 
-1. Wählen Sie im Menü **Tools** **Erweiterungen und Updates**aus.
+1. Wählen Sie im Menü **Tools****Erweiterungen und Updates** aus.
 
 2. Suchen Sie im Dialogfeld **Erweiterungen und Updates** nach `Selenium components for Cross Browser Testing`.
 
@@ -74,7 +76,7 @@ Um Tests auf Nicht-IE-Webbrowser wiederzugeben, müssen Sie die **Selenium-Kompo
 
 Weitere Informationen zum Erstellen und Verwenden von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md).
 
-### <a name="enable-debugging"></a>Debuggen aktivieren
+### <a name="enable-debugging"></a>Aktivieren des Debuggings
 
 Um das Debuggen der Webanwendung zu aktivieren, müssen Sie die folgenden Konfigurationsoptionen ausführen:
 
@@ -108,7 +110,7 @@ Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Proto
 
 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
-Geben Sie die folgenden Werte an:
+Legen Sie die folgenden Werte fest:
 
 - `EqtTraceLevel` im Abschnitt `system.diagnostics`.
 
@@ -130,7 +132,7 @@ Weitere Informationen finden Sie unter [Analysieren von Tests der programmierten
 
 [Beheben von Fehlern in browserübergreifenden Tests](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

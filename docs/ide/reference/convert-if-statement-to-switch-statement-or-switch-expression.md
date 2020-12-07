@@ -1,5 +1,6 @@
 ---
 title: Konvertieren einer if-Anweisung in eine switch-Anweisung oder einen switch-Ausdruck
+description: Hier erfahren Sie, wie Sie mit dem Menü „Schnellaktionen und Refactorings…“ eine if-Anweisung in eine switch-Anweisung oder einen switch-Ausdruck aus C# 8.0 konvertieren.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e093325ff4a4e6a9f8a2623e7e42f69bb6fa62f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: e19314b8bf73f5859fdf2cef7d281f142c643b68
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102531"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305553"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Konvertieren der if-Anweisung in eine switch-Anweisung
 
@@ -23,11 +24,11 @@ Dieses Refactoring gilt für:
 
 - C#
 
-**Beschreibung:** Konvertieren einer if-Anweisung in eine [switch-Anweisung](/dotnet/csharp/language-reference/keywords/switch) oder in einen C#-8.0- [switch-Ausdruck](/dotnet/csharp/whats-new/csharp-8#switch-expressions)
+**Beschreibung:** Konvertieren einer if-Anweisung in eine [switch-Anweisung](/dotnet/csharp/language-reference/keywords/switch) oder in einen C#-8.0-[switch-Ausdruck](/dotnet/csharp/whats-new/csharp-8#switch-expressions)
 
 **Hintergrund:** Sie möchten eine `if`-Anweisung in einen `switch`-Ausdruck oder einen `switch`-Ausdruck und umgekehrt konvertieren.
 
-**Vorteile** : Wenn Sie nur `if`-Ausdrücke verwenden, ermöglicht dieses Refactoring einen einfachen Übergang zu `switch`-Anweisungen oder `switch`-Ausdrücken.
+**Vorteile**: Wenn Sie nur `if`-Ausdrücke verwenden, ermöglicht dieses Refactoring einen einfachen Übergang zu `switch`-Anweisungen oder `switch`-Ausdrücken.
 
 ## <a name="how-to"></a>Vorgehensweise
 

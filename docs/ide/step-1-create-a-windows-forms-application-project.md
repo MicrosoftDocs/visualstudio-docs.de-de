@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 1: Erstellen eines Windows Forms-App-Projekts'
+description: Hier erfahren Sie, wie Sie ein Windows Forms-App-Projekt für Ihre Bildanzeige erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579911"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480394"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Schritt 1: Erstellen eines Windows Forms-App-Projekts
 
@@ -25,9 +27,9 @@ Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows For
 
 ## <a name="open-visual-studio-2017"></a>Öffnen Sie Visual Studio 2017.
 
-1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus. Das Dialogfeld sollte in etwa wie auf dem folgenden Screenshot dargestellt aussehen.
+1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Das Dialogfeld sollte in etwa wie auf dem folgenden Screenshot dargestellt aussehen.
 
-     ![Dialogfeld „Neues Projekt“](../ide/media/newprojectdialogcallouts.png)<br/>*Dialogfeld* ***Neues Projekt***
+     ![Dialogfeld „Neues Projekt“](../ide/media/newprojectdialogcallouts.png)<br/>_Dialogfeld* **_Neues Projekt_* _
 
 2. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich **Visual C#** oder **Visual Basic** aus, und klicken Sie dann auf **Windows-Desktop**.
 
@@ -44,7 +46,7 @@ Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows For
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld den Begriff *Windows Forms* ein. Wählen Sie anschließend **Desktop** aus der Liste **Projekttyp** aus.
 
@@ -105,7 +107,7 @@ Visual Studio erstellt eine Projektmappe für die App. Eine Projektmappe fungier
      Klicken Sie alternativ in der Symbolleiste auf die im folgenden Bild gezeigte Schaltfläche **Alle speichern**.
 
      Schaltfläche ![Alle speichern](../ide/media/express_iconsaveall.png) in der Symbolleiste<br/>
-     *Symbolleistenschaltfläche* ***Alle speichern***
+     _Symbolleistenschaltfläche* **_Alle speichern_* _
 
      Visual Studio fügt automatisch den Ordnernamen und den Projektnamen ein und speichert das Projekt dann im Projektordner.
 
@@ -115,7 +117,7 @@ Visual Studio erstellt eine Projektmappe für die App. Eine Projektmappe fungier
 
 * Um zum Übersichtsthema zurückzukehren, beachten Sie [Tutorial 1: Create a picture viewer (Tutorial 1: Erstellen eines Bildanzeigeprogramms)](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: Erstellen eines Vergleichsspiels](tutorial-3-create-a-matching-game.md)

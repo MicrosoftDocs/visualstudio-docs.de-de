@@ -1,5 +1,7 @@
 ---
 title: Testgenerierung | Microsoft IntelliTest-Test-Tool für Entwickler
+description: Hier erfahren Sie, wie IntelliTest Testfälle aus den Methoden Ihrer Implementierung generiert, dann Eingaben für die Methoden erzeugt und Assertionen für die Daten überprüft.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315173"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329444"
 ---
 # <a name="test-generation"></a>Testerzeugung
 
@@ -116,7 +118,7 @@ public partial class ListTest {
 
 IntelliTest bietet zahlreiche Validierungsattribute, um bei der Selektierung der Ausnahmen in erwarteten Ausnahmen und unerwartete Ausnahmen zu helfen.
 
-Erwartete Ausnahmen generieren negative Testfälle mit den entsprechenden Anmerkungen wie z.B. **ExpectedException(typeof(*xxx*))** , während unerwartete Ausnahmen fehlgeschlagene Testfälle generieren.
+Erwartete Ausnahmen generieren negative Testfälle mit den entsprechenden Anmerkungen wie z.B. **ExpectedException(typeof(*xxx*))**, während unerwartete Ausnahmen fehlgeschlagene Testfälle generieren.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
@@ -168,7 +170,7 @@ public void Test2([PexAssumeNotNull] object o)
 ```
 
 <a name="precondition"></a>
-## <a name="precondition"></a>Vorbedingung
+## <a name="precondition"></a>Precondition
 
 Eine Vorbedingung einer Methode drückt die Bedingungen aus, unter denen die Methode erfolgreich ausgeführt wird.
 
@@ -235,7 +237,7 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Weiterführende Themen
+## <a name="further-reading"></a>Weitere nützliche Informationen
 
 * [Test to code binding (Bindung eines Tests an Code)](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [One Test to rule them all (IntelliTest – Ein Test für alle)](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)

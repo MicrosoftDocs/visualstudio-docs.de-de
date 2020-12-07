@@ -1,5 +1,7 @@
 ---
 title: Verwenden einer Laborumgebung für DevOps
+description: Hier erfahren Sie mehr über Laborumgebungen und die Verwendung der Cloud mit Azure Pipelines oder den Build- und Releasefeatures von Team Foundation Server.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: cb25561f70882336a1143918d3cf78849b394065
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928107"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328924"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -28,9 +30,9 @@ Eine Lab-Umgebung ist eine Sammlung virtueller und physischer Computer, die Sie 
 
 Im Folgenden finden Sie Beispiele von allgemeinen Lab-Umgebungstopologien:
 
-| Topologie | Beschreibung |
+| Topologie | BESCHREIBUNG |
 |---|---|
-|![Topologie "Nur Server"](../media/topology_backend.png)| Diese Lab-Umgebung weist eine *Servertopologie*auf, die oft verwendet wird, um manuelle Tests auf Serveranwendungen auszuführen. Sie ermöglicht Testern, die eigenen Clientcomputer zu verwenden, um Fehler in der Umgebung zu überprüfen. In einer Back-End-Topologie enthält Ihre Lab-Umgebung nur Server. Wenn Sie diesen Topologietyp verwenden, stellen Sie für gewöhnlich mithilfe eines Clientcomputers, der nicht Bestandteil der Umgebung ist, eine Verbindung zu den Servern in der Lab-Umgebung her.|
+|![Topologie "Nur Server"](../media/topology_backend.png)| Diese Lab-Umgebung weist eine *Servertopologie* auf, die oft verwendet wird, um manuelle Tests auf Serveranwendungen auszuführen. Sie ermöglicht Testern, die eigenen Clientcomputer zu verwenden, um Fehler in der Umgebung zu überprüfen. In einer Back-End-Topologie enthält Ihre Lab-Umgebung nur Server. Wenn Sie diesen Topologietyp verwenden, stellen Sie für gewöhnlich mithilfe eines Clientcomputers, der nicht Bestandteil der Umgebung ist, eine Verbindung zu den Servern in der Lab-Umgebung her.|
 |![Laborumgebung in der Cloud](../media/topology_cloud.png)| Diese Laborumgebung bietet ähnliche Funktionen wie die _Servertopologie_, aber erfordert keine physischen oder virtuellen Computer, die in einer lokalen Umgebung ausgeführt werden. Dadurch kann die Einrichtungszeit gesenkt sowie die Wartung vereinfacht und die Kosten verringert werden. Das Einrichten mehrere Websites und virtueller Computer sowie das benutzerdefinierte Vernetzen können Sie in einer Cloudumgebung wie Microsoft Azure schnell und einfach durchführen.|
 |![Client-Server-Lab-Umgebung](../media/topology_clientserver.png)| Diese Lab-Umgebung verfügt über eine *Client-/Servertopologie*, die oftmals zum Testen einer Anwendung verwendet wird, die Server- und Clientkomponenten aufweist. In einer Client-/Servertopologie befinden sich alle zum Testen Ihrer Anwendung verwendeten Clientcomputer und Server in Ihrer Lab-Umgebung. Bei Verwendung dieser Topologie können Sie Testdaten von jedem Computer erfassen, der sich auf Ihre Tests auswirkt.|
 
@@ -54,7 +56,7 @@ Sie können automatisierte Tests und das automatisierte Erstellen, Bereitstellen
 * Sie erhalten eine umfangreichere Inline-Berichterstattung für die Tests, die in jedem Build oder Release ausgeführt werden.
 * Sie können nachverfolgen, welche Objekte (Release, Build, Arbeitselemente, Commits) derzeit bereitgestellt und in jeder Umgebung getestet werden.
 * Sie können die Automatisierung anpassen und erweitern, um sie ganz einfach für mehrere Testumgebungen und sogar die Produktion bereitzustellen.
-* Sie können die Automatisierung so planen, dass sie immer dann, wenn ein Check-In oder ein Commit auftritt oder täglich zu einem bestimmten Zeitpunkt durchgeführt wird.
+* Sie können die Automatisierung so planen, dass sie immer dann, wenn ein Check-In oder ein Commit auftritt, oder täglich zu einem bestimmten Zeitpunkt durchgeführt wird.
 
 Weitere Informationen finden Sie unter [Verwenden von Build und Release Management anstelle von Lab Management für automatische Tests](use-build-or-rm-instead-of-lab-management.md).
 
@@ -120,7 +122,7 @@ Standard- und SCVMM-Umgebungen unterstützen viele derselben Funktionen. Es müs
 
 Im Folgenden finden Sie ein paar zusätzliche Konzepte, mit denen Sie vertraut sein sollten, bevor Sie fortfahren:
 
-|Begriff|Beschreibung|
+|Begriff|BESCHREIBUNG|
 |-|-----------------|
 |Lab-Center|Der Bereich von Microsoft Test Manager, in dem Sie Lab-Umgebungen erstellen und verwalten können.|
 |Azure DevOps-Projekt-Lab|Die Sammlung der eingerichteten Lab-Umgebungen, sodass Sie eine Verbindung damit herstellen und ihre virtuellen Computer ausführen können.|
@@ -144,7 +146,7 @@ Weitere Informationen zur Einrichtung von Umgebungen finden Sie unter:
 * [Erstellen und Verwenden einer netzwerkisolierten Umgebung](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Installieren und Konfigurieren von Test-Agents](../../test/lab-management/install-configure-test-agents.md)
 * [Handbuch zu Visual Studio Lab Management](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)

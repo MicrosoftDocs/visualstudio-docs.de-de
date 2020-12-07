@@ -1,5 +1,7 @@
 ---
 title: Befehl "Quelle auflisten"
+description: Hier erfahren Sie mehr über den Befehl „Quelle auflisten“ und darüber, wie dieser bestimmte Quellcodezeilen anzeigt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae2463a3d8dd295fcba9bf264e1ad3fa250169d4
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770614"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305280"
 ---
 # <a name="list-source-command"></a>Befehl "Quelle auflisten"
 Zeigt die angegebenen Quellcodezeilen an.
@@ -31,26 +33,26 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 [/Line:number] [/ShowLineNumbers:yes|no]
 ```
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 /Count:`number`
 
-Dies ist optional. Gibt die Anzahl der anzuzeigenden Zeilen an.
+Optional. Gibt die Anzahl der anzuzeigenden Zeilen an.
 
 /Current
 
-Dies ist optional. Zeigt die aktuelle Zeile an.
+Optional. Zeigt die aktuelle Zeile an.
 
 /File:`filename`
 
-Dies ist optional. Pfad der anzuzeigenden Datei. Ist kein Dateiname angegeben, zeigt der Befehl den Quellcode für die Zeile der aktuellen Anweisung an.
+Optional. Pfad der anzuzeigenden Datei. Ist kein Dateiname angegeben, zeigt der Befehl den Quellcode für die Zeile der aktuellen Anweisung an.
 
 /Line:`number`
 
-Dies ist optional. Zeigt eine bestimmte Zeilennummer an.
+Optional. Zeigt eine bestimmte Zeilennummer an.
 
 /ShowLineNumbers:`yes|no`
 
-Dies ist optional. Gibt an, ob Zeilennummern angezeigt werden sollen.
+Optional. Gibt an, ob Zeilennummern angezeigt werden sollen.
 
 ## <a name="example"></a>Beispiel
 Dieses Beispiel listet den Quellcode aus Zeile 4 der Datei „Form1.vb“ mit eingeblendeten Zeilennummern an.

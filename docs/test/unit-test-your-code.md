@@ -1,5 +1,7 @@
 ---
 title: Unittests
+description: Hier erfahren Sie mehr über die Tools für Komponententests, die Entwicklern und Testern die Möglichkeit geben, schnell nach logischen Fehlern in Ihrem Code zu suchen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099309"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330133"
 ---
 # <a name="unit-test-your-code"></a>Ausführen von Komponententests für Code
 
@@ -43,10 +45,10 @@ Lesen Sie folgende Artikel, um Komponententests besser zu verstehen und sie zu e
 |Aufgaben|Verwandte Themen|
 |-|-----------------------|
 |**Schnellstarts und exemplarische Vorgehensweisen:** Erfahren Sie mehr über Komponententests in Visual Studio anhand von Codebeispielen.|- [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [Vorgehensweise: Hinzufügen von Komponententests zu C++-Apps](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**Unittests mit dem Test-Explorer:** Erfahren Sie, wie Sie der Test-Explorer dabei unterstützen kann, produktivere und effizientere Komponententests zu erstellen.|- [Grundlagen zu Komponententest](../test/unit-test-basics.md)<br />- [Ein Komponententestprojekt erstellen](../test/create-a-unit-test-project.md)<br />- [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)<br />- [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md)|
+|**Komponententest mit Test-Explorer:** Erfahren Sie, wie Sie Test-Explorer unterstützen kann, produktivere und effizientere Komponententests zu erstellen.|- [Grundlagen zu Komponententest](../test/unit-test-basics.md)<br />- [Ein Komponententestprojekt erstellen](../test/create-a-unit-test-project.md)<br />- [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)<br />- [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md)|
 |**Komponententest von C++-Code**|- [Schreiben von Komponententests für C/C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Isolation von Komponententests**|- [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Verwenden von Code Coverage, um zu bestimmen, welcher Teil des Codes Ihres Projekts bereits getestet wurde:** Erfahren Sie mehr zum Code Coverage-Feature der Visual Studio-Testtools.|- [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Verwenden Sie Code Coverage, um zu identifizieren, welcher Teil des Projektcodes getestet wird:** Erfahren Sie mehr über das Code Coverage-Feature der Visual Studio-Testtools.|- [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Durchführen von Belastungs- und Leistungsanalysen mithilfe von Auslastungstests:** Erfahren Sie, wie Auslastungstests erstellt werden, um Leistungs- und Auslastungsprobleme in der Anwendung zu isolieren.|- [Schnellstart: Erstellen eines Auslastungstestprojekts](../test/quickstart-create-a-load-test-project.md)<br />- [Load testing (Azure Test Plans and TFS) (Auslastungstest (Azure Test Plans und TFS))](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
 |**Festlegen von Quality Gates:** Erfahren Sie, wie Quality Gates erstellt werden, um zu erzwingen, dass vor dem Einchecken oder Zusammenführen von Code Tests ausgeführt werden.|- [Check-In-Richtlinien (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**Festlegen von Testoptionen:** Erfahren Sie, wie Testoptionen konfiguriert werden, beispielsweise, wo Testergebnisse gespeichert werden.|[Konfigurieren von Komponententests mithilfe einer .runsettings-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|

@@ -1,5 +1,7 @@
 ---
 title: -NoSplash („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mit der devenv-Befehlszeilenoption „NoSplash“ verhindern, dass der Begrüßungsbildschirm angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: v-dele
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86398663ea7b6c8209d4123ab3cb12651d4491e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62950659"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043997"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 
@@ -33,11 +35,11 @@ devenv /NoSplash [File1[ FileN]...]
 
 - *File1*
 
-  Dies ist optional. Die Datei, die in einer vorhandenen Instanz von Visual Studio geöffnet werden soll. Wenn keine Instanz von Visual Studio vorhanden ist, wird eine neue Instanz mit einem vereinfachten Fensterlayout erstellt, und das Tool öffnet *File1* in der neuen Instanz.
+  Optional. Die Datei, die in einer vorhandenen Instanz von Visual Studio geöffnet werden soll. Wenn keine Instanz von Visual Studio vorhanden ist, wird eine neue Instanz mit einem vereinfachten Fensterlayout erstellt, und das Tool öffnet *File1* in der neuen Instanz.
 
 - *FileN*
 
-  Dies ist optional. Eine oder mehrere zusätzliche Dateien, die in der vorhandenen Instanz von Visual Studio geöffnet werden sollen.
+  Optional. Eine oder mehrere zusätzliche Dateien, die in der vorhandenen Instanz von Visual Studio geöffnet werden sollen.
 
 ## <a name="remarks"></a>Bemerkungen
 

@@ -1,5 +1,7 @@
 ---
 title: Konvertieren eines anonymen Typs in ein Tupel
+description: Hier erfahren Sie, wie Sie mit dem Menü „Schnellaktionen und Refactorings…“ einen anonymen Typ in ein Tupel in Visual Studio konvertieren.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7e89c5b5a05900fe42af62ef87f70292e94e662
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 452ba826a2765ef624e6c3d04bb20915a26c51fb
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094274"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040861"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>Konvertieren eines anonymen Typs in ein Tupel
 

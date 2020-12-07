@@ -1,5 +1,7 @@
 ---
 title: Webleistungstest-API
+description: Hier erfahren Sie mehr über die Webleistungstest-API, die codierte Webleistungstests, Test-Plug-ins, Anforderungs-Plug-ins, Anforderungen sowie Extraktions-/Validierungsregeln unterstützt.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287076"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329717"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Vorgehensweise: Verwenden der Webleistungstest-API
 
@@ -64,7 +66,7 @@ Sie können auch Plug-Ins für Auslastungstests erstellen. Weitere Informationen
 
      Eine Beispielimplementierung von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> finden Sie unter [Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests](../test/create-custom-code-and-plug-ins-for-load-tests.md)

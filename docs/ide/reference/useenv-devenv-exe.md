@@ -1,5 +1,7 @@
 ---
 title: -UseEnv („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mit der devenv-Befehlszeilenoption „UseEnv“ Visual Studio starten und bestimmte Umgebungsvariablen für die Kompilierung laden.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 51b47156b73d81f427c08e62006dc6e457e5780b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596394"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040939"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -45,11 +47,11 @@ devenv /UseEnv {SolutionName|ProjectName}
 
   Der vollständige Pfad und Name einer Projektmappendatei
 
-- *ProjectName*
+- *Projektname*
 
   Der vollständige Pfad und Name einer Projektdatei
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Schalter wirkt sich auf die Visual Studio-IDE in den Projekteigenschaften für **VC++-Verzeichnisse** aus. Wenn Sie den Schalter `/UseEnv` angeben, zeigt der Knoten **VC++-Verzeichnisse** die Werte für die Umgebungsvariablen PATH, INCLUDE, LIBPATH und LIB. (Er zeigt auch Werte für **Quellverzeichnisse** und **Ausschließbare Verzeichnisse**.) Andernfalls ersetzt der Knoten die Umgebungsvariablen durch fünf Verzeichniswerte: **Ausführbare Verzeichnisse**, **Includeverzeichnisse**, **Verweisverzeichnisse**, **Bibliotheksverzeichnisse** und **WinRT-Bibliotheksverzeichnisse**.
 
@@ -66,7 +68,7 @@ Im folgenden Beispiel wird Visual Studio gestartet, und die Umgebungsvariablen w
 devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
 - [Eigenschaftenseite „VC++-Verzeichnisse“ (Windows)](/cpp/build/reference/vcpp-directories-property-page)

@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 3: Festlegen der Formulareigenschaften'
+description: Hier erfahren Sie, wie Sie das Eigenschaftenfenster verwenden, um das Aussehen des Formulars zu ändern.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579858"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480615"
 ---
 # <a name="step-3-set-your-form-properties"></a>Schritt 3: Festlegen der Formulareigenschaften
 
@@ -33,7 +35,7 @@ Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Fo
 1. Suchen Sie nach dem Auswählen des Formulars die Eigenschaft **Text** im Fenster **Eigenschaften**. Je nachdem, wie die Liste sortiert wird, müssen Sie möglicherweise einen Bildlauf nach unten durchführen. Wählen Sie **Text** aus, geben Sie **Picture Viewer** ein, und drücken Sie dann die **EINGABETASTE**.  In der Titelleiste des Formulars sollte jetzt der Text **Picture Viewer** angezeigt werden, und das **Eigenschaftenfenster** sollte wie im folgenden Screenshot aussehen.
 
     ![Eigenschaftenfenster](../ide/media/express_edittextproperty.png)<br>
-   ***Eigenschaften****fenster*
+   **_Eigenschaftenfenster_* _ _*
 
    > [!NOTE]
    > Eigenschaften können in einer **kategorisierten** oder **alphabetischen** Ansicht angeordnet sein. Sie können mit den Schaltflächen im **Eigenschaftenfenster** zwischen diesen beiden Ansichten umschalten. In diesem Tutorial ist es einfacher, in der **alphabetischen** Ansicht nach Eigenschaften zu suchen.
@@ -56,7 +58,7 @@ Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Fo
    - Wählen Sie auf der Symbolleiste die Schaltfläche **Debuggen starten** aus, die wie folgt aussieht.
 
       ![Symbolleistenschaltfläche „Debugging starten“](../ide/media/express_icondebug.png)<br>
-     ***Symbolleistenschaltfläche*** *„Debugging starten“*
+     **_Debugging starten_* _ _(Symbolleistenschaltfläche)*
 
      Wie bereits zuvor geschehen, erstellt die IDE die App und führt sie aus, und ein Fenster wird angezeigt.
 
@@ -76,7 +78,7 @@ Als Nächstes verwenden Sie das **Eigenschaftenfenster**, um das Aussehen des Fo
 
 * Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 2: Ausführen Ihrer Picture Viewer-App](../ide/step-2-run-your-program.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: Erstellen eines Vergleichsspiels](tutorial-3-create-a-matching-game.md)

@@ -1,5 +1,7 @@
 ---
 title: -Out („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mithilfe der devenv-Befehlszeilenoption „Out“ eine Datei angeben, in der beim Ausführen, Ausführen und Beenden, Aktualisieren, Erstellen, Neuerstellen, Bereinigen oder Bereitstellen einer Projektmappe Fehler gespeichert und angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06409d3b7e3d218fcf2b81dce7ea58d3202b7e21
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568010"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040055"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 

@@ -1,5 +1,7 @@
 ---
 title: Dokumente, Umgebung, Dialogfeld "Optionen"
+description: Hier erfahren Sie, wie Sie die Seite „Umgebungen“ im Abschnitt „Dokumente“ verwenden, um die Anzeige von Dokumenten in der integrierten Entwicklungsumgebung (IDE) zu steuern und externe Änderungen an Dokumenten und Dateien zu verwalten.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28b0e7920aca2ae8b789a37fad25509dbb8b4d7a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570062"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305483"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Dialogfeld „Optionen“: Umgebung \> Dokumente
 
@@ -85,5 +87,5 @@ Aktivieren Sie diese Option, damit Dateien, die Informationen enthalten, die nic
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verschiedene Dateien](../../ide/reference/miscellaneous-files.md)
+- [Sonstige Dateien](../../ide/reference/miscellaneous-files.md)
 - [Suchen und Ersetzen von Text](../../ide/finding-and-replacing-text.md)

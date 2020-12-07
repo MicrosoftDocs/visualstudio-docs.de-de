@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen'
+description: Hier lernen Sie, wie Sie einige übereinstimmende Symbole für das Spiel erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579416"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480693"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen
 
@@ -42,7 +44,7 @@ In diesem Schritt erstellen Sie einen Satz übereinstimmender Symbole für das S
 
 3. Beim Hinzufügen des Listenobjekts öffnet sich das **IntelliSense**-Fenster. Das folgende Beispiel ist ein C#-Beispiel, aber es wird ein ähnlicher Text angezeigt, wenn Sie eine Liste unter Visual Basic hinzufügen.
 
-     ![Anzeige des Click-Ereignisses im Eigenschaftenfenster](../ide/media/express_listintellisense.png)<br/>***IntelliSense**-Fenster*
+     ![Anzeige des Click-Ereignisses im Eigenschaftenfenster](../ide/media/express_listintellisense.png)<br/>**_IntelliSense_*-Fenster*
 
     > [!NOTE]
     > Das IntelliSense-Fenster wird nur angezeigt, wenn Sie Code manuell eingeben. Beim Einfügen von kopiertem Code wird es nicht angezeigt.

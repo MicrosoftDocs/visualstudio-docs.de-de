@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 8: Anpassen des Quiz'
+description: Hier erfahren Sie, wie Sie für das timeLabel-Steuerelement eine andere Farbe festlegen und dem Quizteilnehmer einen Hinweis geben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 21403aeb51f342f607575d99a79ce2bdb7aaa54a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579367"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479315"
 ---
 # <a name="step-8-customize-the-quiz"></a>Schritt 8: Anpassen des Quiz
 
@@ -49,4 +51,4 @@ Im letzten Teil des Lernprogramms untersuchen Sie mehrere Möglichkeiten, das Qu
 
 - Das nächste Tutorial finden Sie unter **[Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md)** .
 
-- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md).
+- Um zum vorhergehenden Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md).

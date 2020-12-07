@@ -1,5 +1,7 @@
 ---
 title: Befehlsfenster
+description: Hier erfahren Sie, wie Sie mit dem Befehlsfenster Befehle oder Aliasse direkt in der Visual Studio-IDE ausführen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570348"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040897"
 ---
 # <a name="command-window"></a>Befehlsfenster
 Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auszuführen. Sie können sowohl Menübefehle als auch Befehle ausführen, die in keinem Menü angezeigt werden. Wählen Sie zum Anzeigen des Fensters **Befehl** im Menü **Ansicht** den Befehl **Weitere Fenster** aus, und klicken Sie dann auf **Befehlsfenster**.
@@ -55,7 +57,7 @@ Die folgenden Tastenkombinationen erleichtern Ihnen die Navigation im Befehlsmod
 |Aktion|Cursorplatzierung|Schlüsselbindung|
 |------------| - |----------------|
 |Der Reihe nach durch die Liste der zuvor eingegebenen Befehle wechseln|Eingabezeile|NACH-OBEN- & NACH-UNTEN-TASTE|
-|Im Fenster einen Bildlauf nach oben durchführen|Inhalt im Befehlsfenster|STRG+NACH-OBEN|
+|Im Fenster einen Bildlauf nach oben durchführen|Inhalt im Befehlsfenster|STRG+NACH-OBEN-TASTE|
 |Im Fenster einen Bildlauf nach unten durchführen|Inhalt im Befehlsfenster|NACH-UNTEN oder STRG+NACH-UNTEN|
 
 > [!TIP]
@@ -78,7 +80,7 @@ Einige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Befehle verf
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
-In diesem Beispiel ist
+In diesem Beispiel
 
 - `Edit.ReplaceInFiles` der Befehl,
 
@@ -98,7 +100,7 @@ Nahezu jeder von einem Befehl unterstützte Schalter verfügt über zwei Formen:
 Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert versehen werden, bezieht sich dieser Wert auf jeden der Schalter. Beispielsweise ist `/pgm:123` gleichbedeutend mit `/p:123 /g:123 /m:123`. Es tritt ein Fehler auf, wenn einer der Schalter in der Gruppe keinen Wert annimmt.
 
 ## <a name="escape-characters"></a>Escapezeichen
-Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Ein auf ein Objekt angewendeter
+Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf folgende Zeichen literal und nicht als Steuerzeichen interpretiert wird. Dies ermöglicht das Einbetten von geraden Anführungszeichen ("), Leerzeichen, vorangestellten Schrägstrichen, Caretzeichen oder beliebigen anderen Literalzeichen in einen Parameter- oder Schalterwert, mit Ausnahme von Schalternamen. Beispiel:
 
 ```cmd
 >Edit.Find ^^t /regex
@@ -107,9 +109,9 @@ Ein Caretzeichen (^) in einer Befehlszeile bedeutet, dass das unmittelbar darauf
 Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert. Im hier gezeigten Beispiel wird die Suche nach dem Muster "^t" veranschaulicht.
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Verwenden von Anführungszeichen für Pfadnamen mit Leerzeichen
-Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\"Eigene Dateien"** oder **"C:\Eigene Dateien"** .
+Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\"Eigene Dateien"** oder **"C:\Eigene Dateien"**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)

@@ -1,5 +1,7 @@
 ---
 title: -LCID („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mithilfe der devenv-Befehlszeilenoption „LCID“ die Standardsprache festlegen, die für Text, Währungen und andere Werte in der IDE verwendet wird.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557935"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043984"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -64,7 +66,7 @@ In der folgenden Tabelle sind die LCIDs der von Visual Studio unterstützten Spr
 |Portugiesisch (Brasilien)|1046|
 |Russisch|1049|
 |Spanisch|3082|
-|Türkisch|1055
+|Türkisch|1.055
 
 ## <a name="example"></a>Beispiel
 

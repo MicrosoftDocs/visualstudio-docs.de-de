@@ -1,5 +1,7 @@
 ---
 title: Festlegen, dass Tests der programmierten UI auf bestimmte Ereignisse warten
+description: Hier erfahren Sie, wie Sie einen Wiedergabetest der programmierten UI anweisen, auf bestimmte Ereignisse wie das Anzeigen eines Fensters oder das Ausblenden der Statusanzeige zu warten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 401888eee7fb5952c69c953824f3959c2b456a4d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286777"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329561"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird
 
@@ -20,7 +22,7 @@ Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Voraussetzungen**
+**Anforderungen**
 
 Visual Studio Enterprise
 
@@ -105,7 +107,7 @@ Sie können die <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSetting
 > [!TIP]
 > Mit dem Editor für Tests der programmierten UI können Sie Tests der programmierten UI mühelos ändern. Der Editor für Tests der programmierten UI ermöglicht das Suchen, Anzeigen und Bearbeiten der Testmethoden. Sie können auch UI-Aktionen und die zugehörigen Steuerelemente in der UI-Steuerelementzuordnung bearbeiten. Weitere Informationen finden Sie unter [Bearbeiten von Tests der programmierten UI mit dem Editor für Tests der programmierten UI](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md)

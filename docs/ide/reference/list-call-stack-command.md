@@ -1,5 +1,7 @@
 ---
 title: Befehl "Aufrufliste auflisten"
+description: Hier erfahren Sie mehr über den Befehl „Aufrufliste auflisten“ und wie damit die aktuelle Aufrufliste angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 845d48f6a0fcc2b844777870bd7c9551f4a4d471
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770686"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305357"
 ---
 # <a name="list-call-stack-command"></a>Befehl "Aufrufliste auflisten"
 Zeigt die aktuelle Aufrufliste an.
@@ -38,52 +40,52 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 `index`\
 Dies ist optional. Legt den aktuellen Stapelrahmen fest, und zeigt keine Ausgabe an.
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 Jeder Schalter kann sowohl mit der vollständigen als auch mit der Kurzform aufgerufen werden.
 
 /Count:`number` [oder] /C:`number`
 
-Dies ist optional. Maximale Anzahl der anzuzeigenden Aufruflisten. Der Standardwert ist unbegrenzt.
+Optional. Maximale Anzahl der anzuzeigenden Aufruflisten. Der Standardwert ist unbegrenzt.
 
 /ShowTypes:`yes`|`no` [oder] /T:`yes`|`no`
 
-Dies ist optional. Gibt an, ob Parametertypen angezeigt werden sollen. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob Parametertypen angezeigt werden sollen. Der Standardwert ist `yes`.
 
 /ShowNames:`yes`|`no` [oder] /N:`yes`|`no`
 
-Dies ist optional. Gibt an, ob Parameternamen angezeigt werden sollen. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob Parameternamen angezeigt werden sollen. Der Standardwert ist `yes`.
 
 /ShowValues:`yes`|`no` [oder] /V:`yes`|`no`
 
-Dies ist optional. Gibt an, ob Parameterwerte angezeigt werden sollen. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob Parameterwerte angezeigt werden sollen. Der Standardwert ist `yes`.
 
 /ShowModule:`yes`|`no` [oder] /M:`yes`|`no`
 
-Dies ist optional. Gibt an, ob der Modulname angezeigt werden soll. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob der Modulname angezeigt werden soll. Der Standardwert ist `yes`.
 
 /ShowLineOffset:`yes`|`no` [oder] /#:`yes`|`no`
 
-Dies ist optional. Gibt an, ob der Zeilenoffset angezeigt werden soll. Der Standardwert lautet `no`.
+Optional. Gibt an, ob der Zeilenoffset angezeigt werden soll. Der Standardwert ist `no`.
 
 /ShowByteOffset:`yes`|`no` [oder] /B:`yes`|`no`
 
-Dies ist optional. Gibt an, ob der Byte-Offset angezeigt werden soll. Der Standardwert lautet `no`.
+Optional. Gibt an, ob der Byte-Offset angezeigt werden soll. Der Standardwert ist `no`.
 
 /ShowLanguage:`yes`|`no` [oder] /L:`yes`|`no`
 
-Dies ist optional. Gibt an, ob die Sprache angezeigt werden soll. Der Standardwert lautet `no`.
+Optional. Gibt an, ob die Sprache angezeigt werden soll. Der Standardwert ist `no`.
 
 /IncludeCallsAcrossThreads:`yes`|`no` [oder] /I:`yes`|`no`
 
-Dies ist optional. Gibt an, ob angegeben werden soll, ob andere Threads aufgerufen werden oder selbst aufrufen. Der Standardwert lautet `no`.
+Optional. Gibt an, ob angegeben werden soll, ob andere Threads aufgerufen werden oder selbst aufrufen. Der Standardwert ist `no`.
 
 /ShowExternalCode:`yes`|`no`
 
-Dies ist optional. Gibt an, ob für die Aufrufliste nur Benutzercode angezeigt werden soll. Wenn die Funktion „Nur eigenen Code“ deaktiviert ist, wird der gesamte nicht benutzerseitige Code angezeigt. Wenn diese Funktion aktiviert ist, wird nicht benutzerseitiger Code als `[external]` in der Ausgabe der Aufrufliste angezeigt.
+Optional. Gibt an, ob für die Aufrufliste nur Benutzercode angezeigt werden soll. Wenn die Funktion „Nur eigenen Code“ deaktiviert ist, wird der gesamte nicht benutzerseitige Code angezeigt. Wenn diese Funktion aktiviert ist, wird nicht benutzerseitiger Code als `[external]` in der Ausgabe der Aufrufliste angezeigt.
 
 Thread:`n`
 
-Dies ist optional. Zeigt die Aufrufliste für den Thread `n` an. Wenn kein Thread angegeben ist, wird die Aufrufliste für den aktuellen Thread angezeigt.
+Optional. Zeigt die Aufrufliste für den Thread `n` an. Wenn kein Thread angegeben ist, wird die Aufrufliste für den aktuellen Thread angezeigt.
 
 ## <a name="remarks"></a>Bemerkungen
 Änderungen an den Argumenten oder Schaltern gelten bei zukünftigen Aufrufen dieses Befehls. Wenn Sie Debug.ListCallStackby selbst ausgeben, wird die gesamte Aufrufliste angezeigt. Wenn Sie beispielsweise einen Index angeben
@@ -108,11 +110,11 @@ um den aktuellen Stapelrahmen auf den zweiten Frame festzulegen.
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Disassembly auflisten (Befehl)](../../ide/reference/list-disassembly-command.md)
-- [Threads auflisten (Befehl)](../../ide/reference/list-threads-command.md)
+- [Befehl "Disassemblierung auflisten"](../../ide/reference/list-disassembly-command.md)
+- [Befehl "Threads auflisten"](../../ide/reference/list-threads-command.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

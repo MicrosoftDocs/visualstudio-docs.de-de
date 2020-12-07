@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei der Code Coverage
+description: Hier erfahren Sie, wie Sie fehlerhafte leere Ergebnisnachrichten beheben, wenn Visual Studio Daten für native und verwaltete Assemblys sammeln soll.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527990"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330120"
 ---
 # <a name="troubleshoot-code-coverage"></a>Problembehandlung bei der Code Coverage
 

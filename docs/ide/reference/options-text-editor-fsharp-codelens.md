@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, F#, CodeLens
+description: Hier erfahren Sie, wie Sie mit der Seite „CodeLens“ im F#-Abschnitt die CodeLens-Einstellungen für F# im Text-Editor ändern.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6bdccdc45664bd620018fa094d35add545b302d4
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568476"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039652"
 ---
 # <a name="options-text-editor-f-codelens"></a>Optionen, Text-Editor, F#, CodeLens
 
@@ -38,7 +40,7 @@ Verwenden Sie die Optionenseite **CodeLens**, um die CodeLens-Einstellungen für
 
    Sie können das Standardpräfix ändern, das für die Anmerkungen verwendet wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
-- [Ermitteln von Änderungen am Code und andere Verläufe mit CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)
+- [Ermitteln von Änderungen am Code und anderer Verläufe mit CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

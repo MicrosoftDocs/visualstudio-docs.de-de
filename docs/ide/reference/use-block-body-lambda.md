@@ -1,5 +1,7 @@
 ---
 title: Verwenden von Lambdaausdrücken oder Blocktext
+description: Hier erfahren Sie, wie Sie das Menü „Schnellaktionen und Refactorings...“ verwenden, um Lambdaausdrücke so umzugestalten, dass ein Ausdruckskörper oder ein Blocktextkörper verwendet wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/14/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 505a76a2300f2e3ddb9c1513ee64c2a17abb10ab
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531918"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480173"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Verwenden von Ausdruckskörpern oder Blocktext für Lambdaausdrücke
 

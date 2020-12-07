@@ -1,5 +1,7 @@
 ---
 title: Befehl "Module auflisten"
+description: Hier erfahren Sie mehr über den Befehl „Module auflisten“ und darüber, wie dieser die Module für den aktuellen Prozess auflistet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa0c3f6445a22ee80457e8a7f9f24fb7008f77ed
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595500"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305312"
 ---
 # <a name="list-modules-command"></a>Befehl "Module auflisten"
 Listet die Module für den aktuellen Prozess auf.
@@ -35,39 +37,39 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 #### <a name="parameters"></a>Parameter
 /Address:`yes|no`
 
-Dies ist optional. Gibt an, ob die Speicheradressen der Module angezeigt werden sollen. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob die Speicheradressen der Module angezeigt werden sollen. Der Standardwert ist `yes`.
 
 /Name:`yes|no`
 
-Dies ist optional. Gibt an, ob die Namen der Module angezeigt werden sollen. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob die Namen der Module angezeigt werden sollen. Der Standardwert ist `yes`.
 
 /Order:`yes|no`
 
-Dies ist optional. Gibt an, ob die Reihenfolge der Module angezeigt werden soll. Der Standardwert lautet `no`.
+Optional. Gibt an, ob die Reihenfolge der Module angezeigt werden soll. Der Standardwert ist `no`.
 
 /Path:`yes|no`
 
-Dies ist optional. Gibt an, ob die Pfade zu den Modulen angezeigt werden sollen. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob die Pfade zu den Modulen angezeigt werden sollen. Der Standardwert ist `yes`.
 
 /Process:`yes|no`
 
-Dies ist optional. Gibt an, ob die Prozesse der Module angezeigt werden sollen. Der Standardwert lautet `no`.
+Optional. Gibt an, ob die Prozesse der Module angezeigt werden sollen. Der Standardwert ist `no`.
 
 /SymbolFile:`yes|no`
 
-Dies ist optional. Gibt an, ob die Symboldateien der Module angezeigt werden sollen. Der Standardwert lautet `no`.
+Optional. Gibt an, ob die Symboldateien der Module angezeigt werden sollen. Der Standardwert ist `no`.
 
 /SymbolStatus:`yes|no`
 
-Dies ist optional. Gibt an, ob die Symbolstatus der Module angezeigt werden sollen. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob die Symbolstatus der Module angezeigt werden sollen. Der Standardwert ist `yes`.
 
 /Timestamp:`yes|no`
 
-Dies ist optional. Gibt an, ob der Zeitstempel der Module angezeigt werden soll. Der Standardwert lautet `no`.
+Optional. Gibt an, ob der Zeitstempel der Module angezeigt werden soll. Der Standardwert ist `no`.
 
 /Version:`yes|no`
 
-Dies ist optional. Gibt an, ob die Versionen der Module angezeigt werden sollen. Der Standardwert lautet `no`.
+Optional. Gibt an, ob die Versionen der Module angezeigt werden sollen. Der Standardwert ist `no`.
 
 ## <a name="example"></a>Beispiel
 In diesem Beispiel werden die Modulnamen, -adressen und -zeitstempel für den aktuellen Prozess aufgeführt.
@@ -80,4 +82,4 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
-- [Gewusst wie: Verwenden des Modulfensters](../../debugger/how-to-use-the-modules-window.md)
+- [How to: Verwenden des Modulfensters](../../debugger/how-to-use-the-modules-window.md)

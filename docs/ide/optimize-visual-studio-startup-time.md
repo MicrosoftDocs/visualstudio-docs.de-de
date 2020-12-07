@@ -1,6 +1,6 @@
 ---
 title: Verbessern der Uptime
-description: Erfahren Sie, wie Sie die Einstellungen für Erweiterungen und Toolfenster im Dialogfeld „Visual Studio-Leistung verwalten“ steuern, um die Startzeit von Visual Studio zu verbessern.
+description: Hier erfahren Sie, wie Sie die Einstellungen für Erweiterungen und Toolfenster im Dialogfeld „Visual Studio-Leistung verwalten“ steuern, um die Startzeit von Visual Studio zu verbessern.
 ms.custom: SEO-VS-2020
 ms.date: 11/15/2017
 ms.topic: how-to
@@ -16,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: c409ad35b3d9c09a5dbe574d00a24d1f2bcb8370
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871495"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479952"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Verbessern der Startzeit von Visual Studio
 

@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Testcontrollern und Test-Agents
+description: Hier erfahren Sie, wie Testcontroller und Test-Agents verwaltet werden, nachdem diese zum ersten Mal installiert und konfiguriert wurden.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78bd0143ee2584bcabb5e8ed4946818ee2590789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9a416dc64a9d49d14e367a04023f067c7b595c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286699"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329639"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
 
@@ -73,7 +75,7 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
 
       3. Um sicherzustellen, dass ein Computer mit einem Test-Agent nach dem Neustart Tests ausführen kann, können Sie den Computer für die automatische Anmeldung als Test-Agent-Benutzer einrichten. Klicken Sie auf **Automatisch anmelden**. Dadurch werden der Benutzername und das Kennwort in verschlüsselter Form in der Registrierung gespeichert.
 
-      4. Um sicherzustellen, dass der Bildschirmschoner deaktiviert ist, wählen Sie **Sicherstellen, dass Bildschirmschoner deaktiviert ist**aus, da andernfalls automatisierte Tests, die mit dem Desktop interagieren müssen, behindert werden können.
+      4. Um sicherzustellen, dass der Bildschirmschoner deaktiviert ist, wählen Sie **Sicherstellen, dass Bildschirmschoner deaktiviert ist** aus, da andernfalls automatisierte Tests, die mit dem Desktop interagieren müssen, behindert werden können.
 
         > [!WARNING]
         > Durch die automatische Anmeldung und das Deaktivieren des Bildschirmschoners entstehen Sicherheitsrisiken. Wenn Sie die automatische Anmeldung aktivieren, ermöglichen Sie es anderen Benutzern, den betreffenden Computer zu starten und das Konto zu verwenden, das automatisch angemeldet wird. Wenn Sie den Bildschirmschoner deaktivieren, wird der Benutzer möglicherweise nicht aufgefordert, sich anzumelden, um die Sperre des Computers aufzuheben. So kann jede Person mit physikalischem Zugang zum Computer auf den Computer zugreifen. Wenn Sie diese Funktionen auf einem Computer aktivieren, sollten Sie sicherstellen, dass der Computer physikalisch sicher ist. Ein solcher Computer befindet sich z. B. in einem physikalisch sicheren Labor. (Durch Deaktivieren des Kontrollkästchens **Sicherstellen, dass der Bildschirmschoner deaktiviert ist** wird der Bildschirmschoner nicht aktiviert.)
@@ -83,7 +85,7 @@ Möglicherweise möchten Sie einen Test-Agent einem anderen Testcontroller hinzu
     > [!NOTE]
     > Die Standardportnummer ist 6901.
 
-4. Wählen Sie **Einstellungen übernehmen**, um die Änderungen zu speichern. Schließen Sie zunächst das Dialogfeld **Konfigurationszusammenfassung** und anschließend das**Test Agent-Konfigurationstool**.
+4. Wählen Sie **Einstellungen übernehmen**, um die Änderungen zu speichern. Schließen Sie zunächst das Dialogfeld **Konfigurationszusammenfassung** und anschließend das **Test Agent-Konfigurationstool**.
 
 > [!WARNING]
 > Wenn der Agent derzeit für die Ausführung mit einem anderen Testcontroller konfiguriert ist, müssen Sie den Test-Agent aus diesem Controller entfernen.

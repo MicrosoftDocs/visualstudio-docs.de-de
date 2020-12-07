@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben'
+description: So fügen Sie Multiplikations- und Divisionsaufgaben hinzu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 84dc1df79392aeefe331746c52d2fbe8dbb91e8e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579777"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479497"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben
 
@@ -58,10 +60,10 @@ Im siebenten Teil dieses Lernprogramms fügen Sie Multiplikations- und Divisions
      Die Quizteilnehmer müssen vier Aufgaben beantworten, um das Quiz abzuschließen. Dies ist in der folgenden Abbildung veranschaulicht.
 
      ![Mathequiz mit vier Aufgaben](../ide/media/express_finishedquiz.png)<br/>
-***Mathetest*** *mit vier Aufgaben*
+***Mathetest** _ _ mit vier Aufgaben*
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
 - Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 8: Anpassen des Quiz](../ide/step-8-customize-the-quiz.md)** .
 
-- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md).
+- Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md).

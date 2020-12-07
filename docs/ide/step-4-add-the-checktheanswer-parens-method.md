@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 4: Hinzufügen der CheckTheAnswer()-Methode'
+description: Hier erfahren Sie, wie Sie eine CheckTheAnswer()-Methode schreiben, um die Antworten auf Mathematikaufgaben auf Korrektheit zu überprüfen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: a1d9d22363aa26628d122b451c51fb7d1df29fbe
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472613"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480589"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Schritt 4: Hinzufügen der CheckTheAnswer()-Methode
 

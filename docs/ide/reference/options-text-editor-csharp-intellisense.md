@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, C#, IntelliSense
+description: Hier erfahren Sie, wie Sie mit der Seite „IntelliSense“ im C#-Abschnitt die Einstellungen bearbeiten, die das Verhalten von IntelliSense für C# beeinflussen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e727fad6d3cb15f70cf630b1077170d16d28b7f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596215"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039743"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Optionen, Text-Editor, C#, IntelliSense
 
@@ -83,7 +85,7 @@ Die Optionsseite **IntelliSense** enthält folgende Optionen:
 
 Führt eine automatische Vervollständigung von Objektnamen für die Elemente durch, die Sie zuletzt ausgewählt haben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
 - [Verwenden von IntelliSense](../../ide/using-intellisense.md)

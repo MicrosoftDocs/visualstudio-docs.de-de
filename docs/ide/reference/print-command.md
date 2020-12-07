@@ -1,5 +1,7 @@
 ---
 title: Debug.Print
+description: Hier erfahren Sie mehr über den Befehl „Drucken“ und darüber, wie dieser einen Ausdruck auswertet oder einen bestimmten Text anzeigt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0524ce015ea4675254615c11e5768e59049c37f6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567839"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304130"
 ---
 # <a name="print-command"></a>Drucken (Befehl)
 
@@ -59,10 +61,10 @@ Beide Versionen dieses Befehls geben den aktuellen Wert des Ausdrucks `expA` zur
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Anweisung auswerten (Befehl)](../../ide/reference/evaluate-statement-command.md)
+- [Befehl "Anweisung auswerten"](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

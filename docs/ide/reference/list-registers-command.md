@@ -1,5 +1,7 @@
 ---
 title: Befehl "Registrierungen auflisten"
+description: Hier erfahren Sie mehr über den Befehl „Registrierungen auflisten“ und darüber, wie dieser die Werte ausgewählter Register anzeigt und wie Sie die Liste der angezeigten Register ändern können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5459ded60ea90ae00a3f943f829065a82548d160
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568684"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305302"
 ---
 # <a name="list-registers-command"></a>Befehl "Registrierungen auflisten"
 Zeigt den Wert des ausgewählten Registers an und ermöglicht es Ihnen, die Liste der anzuzeigenden Register zu ändern
@@ -32,14 +34,14 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]
 ```
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 /Display [{`register`|`registerGroup`}...]
 
-Zeigt die Werte des angegebenen `register` oder `registerGroup` an. Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Beispiel:
+Zeigt die Werte des angegebenen `register` oder `registerGroup` an. Wenn weder `register` noch `registerGroup` angegeben ist, wird die Standardregisterliste angezeigt. Wenn kein Schalter angegeben ist, ist das Verhalten identisch. Zum Beispiel:
 
 `Debug.ListRegisters /Display eax`
 
-entspricht
+für die folgende Syntax:
 
 `Debug.ListRegisters eax`
 
@@ -68,5 +70,5 @@ r /Display Flags
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
-- [Grundlagen des Debuggens: Fenster "Register"](../../debugger/debugging-basics-registers-window.md)
-- [Gewusst wie: Verwenden des Fensters "Register"](../../debugger/how-to-use-the-registers-window.md)
+- [Debuggrundlagen: Registerfenster](../../debugger/debugging-basics-registers-window.md)
+- [How to: Verwenden des Fensters „Register“](../../debugger/how-to-use-the-registers-window.md)

@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, C/C++, Ansicht
+description: Hier erfahren Sie, wie Sie mithilfe der Seite „Ansicht“ im Abschnitt „C/C++“ das Standardverhalten von Wellenlinien im Code, inaktivem Code, der Gliederung und mehr in Visual Studio ändern.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68d08953ca3c493f3b3e42dd4ddd84bc19bdfd6e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278695"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041073"
 ---
 # <a name="options-text-editor-cc-view"></a>Optionen, Text-Editor, C/C++, Ansicht
 
@@ -40,7 +42,7 @@ Sie können die folgenden Einstellungen aktivieren oder deaktivieren, um festzul
 
 - **Durchlässigkeitsprozentsatz inaktiven Codes:** Der Durchlässigkeitsprozentsatz inaktiver Codeblocks.
 
-## <a name="miscellaneous"></a>Verschiedenes
+## <a name="miscellaneous"></a>Sonstiges
 
 - **Kommentaraufgaben aufzählen:** Quelldateien auf VS-Token prüfen und Vorkommnisse im Aufgabenlistenfenster aufführen.
 
@@ -54,7 +56,7 @@ Sie können die folgenden Einstellungen aktivieren oder deaktivieren, um festzul
 
 - **Anweisungsblocks gliedern:** Automatische Gliederung von Anweisungsblocks.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [Umgestaltung in C++ (VC-Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

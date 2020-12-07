@@ -1,5 +1,7 @@
 ---
 title: Seitenantwortzeit in einem Auslastungstest
+description: Die Zeit, die für das Laden einer Webseite benötigt wird, wird als Antwortzeit bezeichnet. Hier erfahren Sie, wie Sie in Ihrem Webleistungstest ein Antwortzeitziel für einzelne Webseitenanforderungen festlegen.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1affda002290a191fde6d5115094a2185ac8bfcb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a20e8dc21e2ff5d76ea582b6ea3a9a0e36f7ed74
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287050"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328651"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Vorgehensweise: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer
 
@@ -43,7 +45,7 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
 
 3. Die Daten für jede Seite werden im Raster angezeigt. Normalerweise werden die nachfolgend aufgeführten Spalten angezeigt.
 
-   |Spaltenüberschrift|Beschreibung|
+   |Spaltenüberschrift|BESCHREIBUNG|
    |-|-|
    |**Seite**|Der Name der Website.|
    |**Szenario**|Der Name des Szenarios. Wichtig, wenn mehr als ein Szenario im Webleistungstest enthalten ist.|
@@ -55,11 +57,11 @@ Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt w
    |**Median**|Der Medianwert für die Seitenantwortzeit.<br /><br /> Diese Daten werden in der Standardeinstellung nicht gesammelt. Wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Testlaufeinstellungsknoten aus, der geändert werden soll, um diese Daten zu erfassen. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** die Option **AllIndividualDetails** aus.|
    |**90%**|90 Prozent entsprachen der Antwortzeit. Das bedeutet, dass 90 Prozent der Seiten schneller antworteten als die festgelegte Zeit, und 10 Prozent der Seiten langsamer.<br /><br /> Diese Daten werden in der Standardeinstellung nicht gesammelt. Wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Testlaufeinstellungsknoten aus, der geändert werden soll, um diese Daten zu erfassen. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** die Option **AllIndividualDetails** aus.|
    |**95%**|95 Prozent entsprachen der Antwortzeit. Das bedeutet, dass 95 Prozent der Seiten schneller antworteten als die festgelegte Zeit, und 5 Prozent der Seiten langsamer.|
-   |**99%**|99 Prozent entsprachen der Antwortzeit. Das bedeutet, dass 99 Prozent der Seiten schneller antworteten als die festgelegte Zeit, und 1 Prozent der Seiten langsamer.<br /><br /> Diese Daten werden in der Standardeinstellung nicht gesammelt. Wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Testlaufeinstellungsknoten aus, der geändert werden soll, um diese Daten zu erfassen. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** die Option **AllIndividualDetails** aus.|
+   |**99 %**|99 Prozent entsprachen der Antwortzeit. Das bedeutet, dass 99 Prozent der Seiten schneller antworteten als die festgelegte Zeit, und 1 Prozent der Seiten langsamer.<br /><br /> Diese Daten werden in der Standardeinstellung nicht gesammelt. Wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Testlaufeinstellungsknoten aus, der geändert werden soll, um diese Daten zu erfassen. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** die Option **AllIndividualDetails** aus.|
    |**Max**|Die maximale Seitenantwortzeit.<br /><br /> Diese Daten werden in der Standardeinstellung nicht gesammelt. Wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Testlaufeinstellungsknoten aus, der geändert werden soll, um diese Daten zu erfassen. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** die Option **AllIndividualDetails** aus.|
    |**Standardabweichung**|Standardmäßig werden die Standardabweichungsdaten nicht erfasst. Wählen Sie im **Auslastungstest-Editor** unter dem Knoten **Laufzeiteinstellungen** den Testlaufeinstellungsknoten aus, der geändert werden soll, um diese Daten zu erfassen. Wählen Sie im Fenster **Eigenschaften** für die Eigenschaft **Speicher für Details der zeitlichen Steuerung** die Option **AllIndividualDetails** aus.|
    |**Seitenzeit**|Die durchschnittliche Antwortzeit für alle Anforderungen, die für die Webseite ausgeführt wurden.|
-   |**Ziel**|Das Seitenzeitziel. Dies ist ein konstanter Wert für die Seite. **Hinweis**:  Das Seitenzeitziel wird nur angezeigt, wenn für die Anforderung ein Ziel im Webleistungstest definiert wurde.|
+   |**Zielsetzung**|Das Seitenzeitziel. Dies ist ein konstanter Wert für die Seite. **Hinweis**:  Das Seitenzeitziel wird nur angezeigt, wenn für die Anforderung ein Ziel im Webleistungstest definiert wurde.|
    |**%: Ziel erreicht**|Prozentualer Anteil der für die Webseite ausgeführten Anforderungen, die dem Antwortzeitziel entsprachen.|
 
    Weitere Informationen finden Sie unter [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -91,8 +93,8 @@ So zeigen Sie Antwortzeitdaten in einem Diagramm an:
 
    Weitere Informationen finden Sie unter [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Analyze Load Test Results and Errors in the Tables View (Analysieren von Auslastungstestergebnissen und -fehlern in der Tabellenansicht)](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [How to: Zugreifen auf Auslastungstestergebnisse für die Analyse](../test/how-to-access-load-test-results-for-analysis.md)
+- [How to: Access Load Test Results for Analysis (Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse)](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analysieren von Auslastungstestergebnissen](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

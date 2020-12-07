@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, Alle Sprachen
+description: Hier erfahren Sie, wie Sie mithilfe der Seite „Allgemein“ im Abschnitt „Alle Sprachen“ das Standardverhalten des Code-Editors in Visual Studio ändern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -42,35 +44,35 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 682097ca08bd570ac025e7b6a1861e45a8f761e4
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566877"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041004"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Dialogfeld „Optionen“: Text-Editor \> Alle Sprachen
 
 Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern. Diese Einstellungen gelten auch für andere Editoren, die auf dem Code-Editor basieren, z.B. die Quellansicht des HTML-Designers. Um das Dialogfeld zu öffnen, klicken Sie auf **Optionen** im Menü **Tools**. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und klicken Sie dann auf **Allgemein**.
 
 > [!CAUTION]
-> Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Denken Sie daran, dass beim Zurücksetzen einer Option in diesem Dialogfeld die allgemeinen Optionen in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt werden. Um die Optionen des Text-Editors für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.
+> Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Denken Sie daran, dass beim Zurücksetzen einer Option in diesem Dialogfeld die allgemeinen Optionen in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt werden. Um die Optionen in „Text-Editor“ für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.
 
 Wenn eine Option auf der Seite der allgemeinen Optionen für manche, aber nicht alle, Programmiersprachen aktiviert wurde, wird ein ausgegrautes Häkchen angezeigt.
 
-## <a name="statement-completion"></a>Anweisungsvervollständigung
+## <a name="statement-completion"></a>Anweisungsabschluss
 
-**Member automatisch auflisten**
+**Elemente automatisch auflisten**
 
-Wenn aktiviert, werden Popuplisten verfügbarer Member, Eigenschaften, Werte oder Methoden von IntelliSense angezeigt, während Sie eine Eingabe machen. Wählen Sie aus der Popupliste ein Element aus, das in den Code eingefügt werden soll. Wenn Sie diese Option auswählen, wird die Option **Erweiterte Member ausblenden** aktiviert
+Wenn aktiviert, werden Popuplisten verfügbarer Member, Eigenschaften, Werte oder Methoden von IntelliSense angezeigt, während Sie eine Eingabe machen. Wählen Sie ein Element aus der Popupliste aus, um es in Ihren Code einzufügen. Wenn Sie diese Option auswählen, wird die Option **Erweiterte Member ausblenden** aktiviert
 
 **Erweiterte Member ausblenden**
 
-Wenn aktiviert, werden die Popuplisten zur Anweisungsvervollständigung verkürzt, da nur die am häufigsten verwendeten Elemente angezeigt werden. Andere Elemente werden aus der Liste herausgefiltert.
+Wenn aktiviert, werden die Popuplisten zur Anweisungsvervollständigung verkürzt, da nur die am häufigsten verwendeten Elemente angezeigt werden. Die anderen Elemente werden aus der Liste gefiltert.
 
 **Parameterinformationen**
 
-Wenn diese Option aktiviert ist, wird die vollständige Syntax der aktuellen Deklaration oder Prozedur mit allen verfügbaren Parametern unter der Einfügemarke im Editor angezeigt. Der nächste Parameter, den Sie zuweisen können, ist fett formatiert.
+Wenn diese Option aktiviert ist, wird die vollständige Syntax der aktuellen Deklaration oder Prozedur mit allen verfügbaren Parametern unter der Einfügemarke im Editor angezeigt. Der nächste zuweisbare Parameter ist fett hervorgehoben.
 
 ## <a name="settings"></a>Einstellungen
 
@@ -85,7 +87,7 @@ Wenn aktiviert, wird der Teil einer Zeile, der über den horizontal sichtbaren B
 > [!NOTE]
 > Die Funktion **Virtueller Bereich** ist deaktiviert, wenn **Zeilenumbruch** aktiviert ist.
 
-**Visuelle Glyphen für Zeilenumbruch anzeigen**
+**Visuelle Symbole für Zeilenumbruch anzeigen**
 
 Wenn aktiviert, wird beim Umbruch einer langen Zeile auf eine zweite Zeile ein Indikator in Form eines Rückwärtspfeils angezeigt.
 
@@ -94,14 +96,14 @@ Wenn aktiviert, wird beim Umbruch einer langen Zeile auf eine zweite Zeile ein I
 Deaktivieren Sie diese Option, wenn Sie diese Indikatoren nicht anzeigen möchten.
 
 > [!NOTE]
-> Diese zur Erinnerung dienenden Pfeile werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.
+> Diese zur Erinnerung dienenden Pfeile werden weder gedruckt noch dem Code hinzugefügt. Sie dienen lediglich als Hinweis.
 
 **Zeilennummern**
 
 Wenn aktiviert, wird eine Zeilennummer neben jeder Codezeile angezeigt.
 
 > [!NOTE]
-> Diese Zeilennummern werden weder gedruckt noch dem Code hinzugefügt. Sie sind lediglich als Referenz gedacht.
+> Diese Zeilennummern werden weder gedruckt noch dem Code hinzugefügt. Sie dienen lediglich als Hinweis.
 
 **Einfaches Klicken für URLs aktivieren**
 
@@ -117,9 +119,9 @@ Diese Option legt das Verhalten des Editors fest, wenn Sie die Einfügemarke in 
 
 - Wenn diese Option aktiviert ist, wird die Leerzeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen wird eine neue leere Zeile eingefügt.
 
-- Wenn diese Option deaktiviert ist, entfernt das Ausschneiden leere Zeilen. Die Daten in der Zwischenablage werden allerdings beibehalten. Wenn Sie deshalb anschließend den Befehl „Einfügen“ verwenden, wird der zuletzt in die Zwischenablage kopierte Inhalt eingefügt. Wenn vorher nichts kopiert wurde, wird nichts eingefügt.
+- Wenn diese Option deaktiviert ist, entfernt das Ausschneiden leere Zeilen. Die Daten in der Zwischenablage werden allerdings beibehalten. Wenn Sie deshalb anschließend den Befehl „Einfügen“ verwenden, wird der zuletzt in die Zwischenablage kopierte Inhalt eingefügt. Wenn Sie zuvor nichts kopiert haben, wird kein Inhalt eingefügt.
 
-Wenn eine Zeile nicht leer ist, hat diese Einstellung keine Auswirkungen auf den Kopier- oder Ausschneidevorgang. Wenn nichts ausgewählt wurde, wird die gesamte Zeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen werden der Text der gesamten Zeile sowie das Zeilenendezeichen eingefügt.
+Wenn eine Zeile nicht leer ist, hat diese Einstellung keine Auswirkungen auf den Kopier- oder Ausschneidevorgang. Wenn nichts ausgewählt ist, wird die gesamte Zeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen werden der Text der gesamten Zeile sowie das Zeilenendezeichen eingefügt.
 
 > [!TIP]
 > Zur Unterscheidung von Zeilen mit Einzug und Leerzeilen können Indikatoren für Leerzeichen, Tabulatoren und Zeilenenden angezeigt werden. Wählen Sie dazu im Menü **Bearbeiten** die Option **Erweitert** und anschließend **Leerstelle anzeigen** aus.

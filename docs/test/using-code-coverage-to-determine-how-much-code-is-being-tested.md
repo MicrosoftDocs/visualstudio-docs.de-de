@@ -1,5 +1,7 @@
 ---
 title: Code Coverage-Tests
+description: Hier erfahren Sie, wie Sie mithilfe des Visual Studio-Features „Code Coverage“ ermitteln, welcher Anteil Ihres Projektcodes in programmierten Tests tatsächlich getestet wird.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959774"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330055"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -32,7 +34,7 @@ Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Expl
 
 ::: moniker-end
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Das Code Coverage-Feature ist nur in der Visual Studio Enterprise-Edition verfügbar.
 
@@ -282,17 +284,17 @@ Verwenden Sie *vstest.console.exe*, um Tests über die Befehlszeile auszuführen
 
    ::: moniker range="vs-2017"
 
-   Wählen Sie im Windows **Startmenü** **Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Eingabeaufforderung für Entwickler für VS 2017) aus.
+   Wählen Sie im Windows **Startmenü****Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Eingabeaufforderung für Entwickler für VS 2017) aus.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Wählen Sie im Windows **Startmenü** **Visual Studio 2019** > **Developer Command Prompt for VS 2019** (Eingabeaufforderung für Entwickler für VS 2019) aus.
+   Wählen Sie im Windows **Startmenü****Visual Studio 2019** > **Developer Command Prompt for VS 2019** (Eingabeaufforderung für Entwickler für VS 2019) aus.
 
    ::: moniker-end
 
-2. Führen Sie an der Eingabeaufforderung folgenden Befehl aus:
+2. Führen Sie an der Eingabeaufforderung den folgenden Befehl aus:
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage

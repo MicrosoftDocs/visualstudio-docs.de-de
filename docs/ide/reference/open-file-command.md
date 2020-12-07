@@ -1,5 +1,7 @@
 ---
 title: Befehl "Datei öffnen"
+description: Hier erfahren Sie mehr über den Befehl „Datei öffnen“ und darüber, wie dieser eine vorhandene Datei öffnet und es Ihnen ermöglicht, einen Editor anzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591514"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304110"
 ---
 # <a name="open-file-command"></a>Befehl „Datei öffnen“
 
@@ -37,7 +39,7 @@ File.OpenFile filename [/e:editorname]
 
 Erforderlich. Der vollständige oder partielle Pfad und Dateiname der zu öffnenden Datei. Pfade, die Leerzeichen enthalten, müssen in Anführungszeichen eingeschlossen werden.
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 
 /e:`editorname`
 
@@ -63,7 +65,7 @@ In diesem Beispiel wird die Stildatei „Test1.css“ im Quellcode-Editor geöff
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)

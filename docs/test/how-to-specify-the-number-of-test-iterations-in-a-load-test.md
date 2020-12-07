@@ -1,5 +1,6 @@
 ---
 title: Angeben der Anzahl von Iterationen in einer Testlaufeinstellung für Auslastungstests
+description: Hier erfahren Sie, wie Sie die Anzahl der Iterationen angeben, die in allen Webleistungs- und Komponententests in allen Szenarios eines Auslastungstests mit dem Auslastungstest-Editor durchlaufen werden sollen.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbca5bcaabbfbf87108fb057280d070006ddd718
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 754a5ad7612f6abbea52ea9d4bb4cb1d159f6dac
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810600"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328300"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Vorgehensweise: Angeben der Anzahl von Testiterationen in einer Testlaufeinstellung für Auslastungstests
 

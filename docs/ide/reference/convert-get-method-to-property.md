@@ -1,5 +1,6 @@
 ---
 title: Konvertieren einer Get-Methode in eine Eigenschaft/aus einer Eigenschaft
+description: Hier erfahren Sie, wie Sie mit dem Menü „Schnellaktionen und Refactorings…“ eine get-Methode (und optional Ihre set-Methode) in eine Eigenschaft konvertieren.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad628f8727ed16c882129c5642c77748cb767908
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3aa7831c56068c826c9bbecf97d7115331243251
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045777"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039822"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konvertieren einer Get-Methode in eine Eigenschaft und Konvertieren einer Eigenschaft in ein Refactoring einer Get-Methode
 
@@ -31,9 +32,9 @@ Diese Refactorings gelten für:
 
 ## <a name="convert-get-method-to-property"></a>Konvertieren einer Get-Methode in eine Eigenschaft
 
-**Beschreibung** : Hiermit können Sie eine Get-Methode in eine Eigenschaft (und optional die Set-Methode) konvertieren.
+**Beschreibung**: Hiermit können Sie eine Get-Methode in eine Eigenschaft (und optional die Set-Methode) konvertieren.
 
-**Hintergrund** : Sie verwenden eine Get-Methode, die keinerlei Logik aufweist.
+**Hintergrund**: Sie verwenden eine Get-Methode, die keinerlei Logik aufweist.
 
 ### <a name="how-to"></a>Vorgehensweise
 
@@ -72,9 +73,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Konvertieren einer Eigenschaft in eine Get-Methode
 
-**Beschreibung** : Hiermit können Sie eine Eigenschaft in eine Get-Methode konvertieren.
+**Beschreibung**: Hiermit können Sie eine Eigenschaft in eine Get-Methode konvertieren.
 
-**Hintergrund** : Sie verwenden eine Eigenschaft, die mehr als das sofortige Festlegen und Abrufen eines Werts erfordert.
+**Hintergrund**: Sie verwenden eine Eigenschaft, die mehr als das sofortige Festlegen und Abrufen eines Werts erfordert.
 
 ### <a name="how-to"></a>Vorgehensweise
 

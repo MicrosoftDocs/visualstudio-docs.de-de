@@ -1,5 +1,6 @@
 ---
 title: Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für Laufzeiteinstellungen von Auslastungstests
+description: Hier erfahren Sie, wie Sie die Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für eine Laufzeiteinstellung bearbeiten. Die Werte „Alle einzelnen Details“, „Keine“ und „Nur Statistik“ sind zulässig.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 132c55b4cd6f716d8983358064f749eabeb9ba88
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 94603c2da0eb339df52aa58e3b2bb5666b75ead7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810561"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330016"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Vorgehensweise: Angeben der Eigenschaft „Speicher für Details der zeitlichen Steuerung“ für die Einstellung der Auslastungstestausführung
 

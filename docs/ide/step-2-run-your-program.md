@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 2: Ausführen Ihrer Picture Viewer-App'
+description: Hier erfahren Sie, wie Sie Ihre Picture Viewer-App ausführen.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579406"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480654"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Schritt 2: Ausführen Ihrer Picture Viewer-App
 
@@ -23,7 +25,7 @@ Wenn Sie ein Windows Forms-App-Projekt erstellen, erstellen Sie ein ausführbare
 
 Im Folgenden wird erläutert, wie Sie Ihre App ausführen können. 
 
-1. Wählen Sie eine der folgenden Vorgehensweisen aus:
+1. Wählen Sie eine der folgenden Methoden:
 
     - Drücken Sie die Taste **F5**.
 
@@ -32,17 +34,17 @@ Im Folgenden wird erläutert, wie Sie Ihre App ausführen können.
     - Klicken Sie in der Symbolleiste auf **Debugging starten**, die wie folgt aussieht:
 
       ![Symbolleistenschaltfläche „Debugging starten“](../ide/media/express_icondebug.png)<br>
-      ***Symbolleistenschaltfläche*** *„Debugging starten“*
+      **_Debugging starten_* _ _(Symbolleistenschaltfläche)*
 
 1. Visual Studio führt Ihre App aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt. Im folgenden Screenshot wird die App gezeigt, die Sie soeben erstellt haben. Die App wird ausgeführt, und Sie werden sie schon bald erweitern.
 
      ![Ausgeführte Windows Forms-App](../ide/media/express_firstrun.png)<br>
-***Windows Forms-App****wird ausgeführt*
+**_Windows Forms-App_* _, _wird ausgeführt*
 
 1. Wechseln Sie zurück zur integrierten Entwicklungsumgebung (IDE) von Visual Studio, und sehen Sie sich die neue Symbolleiste an. Wenn Sie eine Anwendung ausführen, werden weitere Schaltflächen in der Symbolleiste angezeigt. Mit diesen Schaltflächen können Sie Aktionen durchführen, wie z. B. die App beenden und starten. Außerdem helfen sie Ihnen bei der Ermittlung von Fehlern. In diesem Beispiel verwenden Sie die Symbolleiste lediglich zum Starten und Beenden der App.
 
      ![Debugsymbolleiste](../ide/media/express_debugtoolbar.png)<br>
-***Debug****symbolleiste*
+***Debugsymbolleiste** _ _*
 
 1. Verwenden Sie eine der folgenden Vorgehensweisen, um die App zu beenden:
 
@@ -63,7 +65,7 @@ Im Folgenden wird erläutert, wie Sie Ihre App ausführen können.
 
 * Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 1: Erstellen eines Windows Forms-App-Projekts](../ide/step-1-create-a-windows-forms-application-project.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: Erstellen eines Vergleichsspiels](tutorial-3-create-a-matching-game.md)

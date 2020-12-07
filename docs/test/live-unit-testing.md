@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing
+description: Hier erfahren Sie mehr über Live Unit Testing während der Anwendungsentwicklung, einschließlich unterstützter Frameworks und der Konfiguration von Live Unit Testing.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249908"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329353"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Konfigurieren und Verwenden von Live Unit Testing
 

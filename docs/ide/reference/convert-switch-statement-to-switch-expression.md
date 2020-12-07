@@ -1,5 +1,7 @@
 ---
 title: switch-Anweisung in switch-Ausdruck konvertieren
+description: Hier erfahren Sie, wie Sie mit dem Menü „Schnellaktionen und Refactorings…“ eine switch-Anweisung in einen switch-Ausdruck aus C# 8.0 konvertieren.
+ms.custom: SEO-VS-2020
 ms.date: 06/19/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: add43010fcec04cbe12889672f561f22057efb8c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68740069"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305515"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>switch-Anweisung in switch-Ausdruck konvertieren
 

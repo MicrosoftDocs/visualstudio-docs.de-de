@@ -1,5 +1,7 @@
 ---
 title: Konvertieren zwischen automatischen und vollständigen Eigenschaften
+description: Hier erfahren Sie, wie Sie mit dem Menü „Schnellaktionen und Refactorings…“ eine automatisch implementierte Eigenschaft in eine vollständige Eigenschaft und umgekehrt konvertieren.
+ms.custom: SEO-VS-2020
 ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8950ce27e95a59f5425419dcac5bd807193d51b6
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.openlocfilehash: b53f337b538ff1c0aef84272eea7d9e032eb2c1d
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80395736"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040835"
 ---
 # <a name="convert-between-auto-property-and-full-property"></a>Konvertieren zwischen automatischen und vollständigen Eigenschaften
 

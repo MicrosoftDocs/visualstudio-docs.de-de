@@ -1,5 +1,7 @@
 ---
 title: Befehl "Disassemblierung auflisten"
+description: Hier erfahren Sie mehr über den Befehl „Disassembly auflisten“ und darüber, wie damit der Debugvorgang gestartet und das Vorgehen bei der Fehlerbehandlung angegeben wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15e9016551b178b0a29656e615d029ddaf0ca279
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770644"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305341"
 ---
 # <a name="list-disassembly-command"></a>Befehl "Disassemblierung auflisten"
 Startet den Debugprozess und ermöglicht es, die Behebung von Fehlern festzulegen.
@@ -31,32 +33,32 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 [/linenumbers:yes|no]
 ```
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 Jeder Schalter kann sowohl mit der vollständigen als auch mit der Kurzform aufgerufen werden.
 
 /count: `number` [oder] /c: `number` [oder] /length: `number` [oder] /l: `number`
 
-Dies ist optional. Anzahl der anzuzeigenden Anweisungen. Der Standardwert ist 8.
+Optional. Anzahl der anzuzeigenden Anweisungen. Der Standardwert ist 8.
 
 /endaddress: `expression` [oder] /e: `expression`
 
-Dies ist optional. Adresse, an der die Disassemblierung beendet wird.
+Optional. Adresse, an der die Disassemblierung beendet wird.
 
 /codebytes:`yes`|`no` [oder] /bytes:`yes`|`no` [oder] /b:`yes`|`no`
 
-Dies ist optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert lautet `no`.
+Optional. Gibt an, ob Codebytes angezeigt werden sollen. Der Standardwert ist `no`.
 
 /source:`yes`|`no` [oder] /s:`yes`|`no`
 
-Dies ist optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert lautet `no`.
+Optional. Gibt an, ob Quellcode angezeigt werden soll. Der Standardwert ist `no`.
 
 /symbolnames:`yes`|`no` [oder] /names:`yes`|`no` [oder] /n:`yes`|`no`
 
-Dies ist optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert lautet `yes`.
+Optional. Gibt an, ob Symbolnamen angezeigt werden sollen. Der Standardwert ist `yes`.
 
  [/linenumbers:`yes`|`no`]
 
-Dies ist optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.
+Optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeilennummern. Der Schalter „/source“ muss den Wert `yes` haben, um den Schalter „/linenumbers“ zu verwenden.
 
 ## <a name="example"></a>Beispiel
 
@@ -64,11 +66,11 @@ Dies ist optional. Ermöglicht das Anzeigen von dem Quellcode zugeordneten Zeile
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Befehl "Aufrufliste auflisten"](../../ide/reference/list-call-stack-command.md)
-- [Threads auflisten (Befehl)](../../ide/reference/list-threads-command.md)
+- [Befehl "Threads auflisten"](../../ide/reference/list-threads-command.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

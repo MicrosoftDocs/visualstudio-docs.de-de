@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat'
+description: Hier erfahren Sie, wie Sie eine Methode hinzufügen, um zu bestimmen, ob der Spieler gewonnen hat.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579764"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479289"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat
 Sie haben ein unterhaltsames Spiel erstellt, aber es benötigt noch eine zusätzliche Funktion. Das Spiel soll enden, wenn der Spieler gewonnen hat. Sie müssen also eine `CheckForWinner()`-Methode hinzufügen, mit der überprüft wird, ob der Spieler gewonnen hat.
@@ -43,10 +45,10 @@ Sie haben ein unterhaltsames Spiel erstellt, aber es benötigt noch eine zusätz
 3. Speichern Sie das Programm, und führen Sie es aus. Spielen Sie das Spiel, und finden Sie alle übereinstimmenden Symbolpaare. Wenn Sie gewonnen haben, zeigt das Programm eine **MessageBox** mit einem Glückwunsch an (wie im folgenden Screenshot dargestellt) und schließt diese dann.
 
      ![Vergleichsspiel mit MessageBox](../ide/media/express_tut4step8.png)<br/>
-***Vergleichsspiel*** *mit* ***MessageBox***
+**_Vergleichsspiel_* _ _mit* ***MessageBox**_
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 9: Ausprobieren weiterer Features](../ide/step-9-try-other-features.md)** .
+- Den nächsten Schritt des Tutorials finden Sie unter _*[Schritt 9: Ausprobieren weiterer Features](../ide/step-9-try-other-features.md)**.
 
-- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).
+- Wenn Sie zum vorherigen Tutorialschritt zurückkehren möchten, klicken Sie auf [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).

@@ -1,5 +1,7 @@
 ---
 title: -DoNotLoadProjects („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mithilfe der Befehlszeilenoption „DoNotLoadProjects“ die angegebene Projektmappe öffnen, ohne Projekte zu laden.
+ms.custom: SEO-VS-2020
 ms.date: 04/30/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef3502a2180f7ae7ed5963deb14844b46f3dbff9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569854"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040627"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
@@ -44,7 +46,7 @@ Im Beispiel wird die Projektmappe „MySln.sln“ geöffnet, ohne dass Projekte 
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Gefilterte Projektmappen in Visual Studio](../filtered-solutions.md)
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)

@@ -1,5 +1,7 @@
 ---
 title: Durchsuchungsbegrenzungen | Microsoft IntelliTest-Test-Tool für Entwickler
+description: PexSettingsAttributeBase ist die abstrakte Basisklasse zum Festlegen von Grenzen als Attribute. Hier erfahren Sie, wie Sie Einstellungen mithilfe von benannten Eigenschaften ändern.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 713ccf139e4110923f45073308da2c249305eb18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315212"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328898"
 ---
 # <a name="exploration-bounds"></a>Durchsuchungsbegrenzungen
 
@@ -29,7 +31,7 @@ public partial class FooTest {...}
 
 * **Grenzen der Einschränkungs-Solver**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime): Die Sekundenzahl, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu finden, die dazu führen, dass neue und andere Ausführungspfade befolgt werden
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden.
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [ verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden
 * **Grenzen des Explorationspfads**
   * [MaxBranches](#maxbranches): Die maximale Anzahl von Verzweigungen, die entlang eines einzelnen Ausführungspfads genommen werden können
   * [MaxCalls](#maxcalls): Die maximale Anzahl von Aufrufen, die während eines einzelnen Ausführungspfads durchgeführt werden können
@@ -166,7 +168,7 @@ Diese Durchsuchungsbegrenzung ist zum Behandeln von (hauptsächlich) nicht enden
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-Gibt die Testtypen an, die IntelliTest ausgeben soll. Mögliche Werte:
+Gibt die Testtypen an, die IntelliTest ausgeben soll. Mögliche Werte sind:
 
 * **All**: Ausgeben von Tests für alles, einschließlich Annahmeverletzungen
 * **FailuresAndIncreasedBranchHits** (Standard): Ausgeben von Tests für alle eindeutigen Fehler und immer dann, wenn ein Testfall die Coverage erhöht, wie von [TestEmissionBranchHits](#testemissionbranchhits) gesteuert

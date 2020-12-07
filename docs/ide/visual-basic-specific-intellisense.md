@@ -1,5 +1,7 @@
 ---
 title: IntelliSense für Visual Basic
+description: Hier erfahren Sie, wie Sie die IntelliSense-Features des Quellcode-Editors für Visual Basic verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 70cdcf9eb6d741fc579ce555ce0bfa3cdea0d774
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594187"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478821"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense für Visual Basic-Codedateien
 
@@ -37,7 +39,7 @@ In den Tipps zur Syntax wird die Syntax der Anweisung angezeigt, die Sie eintipp
 
     Wenn eine Anweisung auf einen Member einer Enumeration verweist, zeigt IntelliSense eine Liste der Members der `Enum`-Aufzählung. Wenn eine Anweisung auf `Boolean` verweist, zeigt IntelliSense ein Dropdownmenü mit TRUE und FALSE an.
 
-Die Vervollständigung kann standardmäßig deaktiviert werden. Wählen Sie hierzu von der Eigenschaftenseite **Allgemein** im Ordner **Visual Basic** **Member automatisch auflisten** aus.
+Die Vervollständigung kann standardmäßig deaktiviert werden. Wählen Sie hierzu von der Eigenschaftenseite **Allgemein** im Ordner **Visual Basic****Member automatisch auflisten** aus.
 
 Sie können die Vervollständigung manuell aufrufen, indem Sie auf „Member auflisten“ oder „Wort vervollständigen“ klicken oder **ALT**+**NACH-RECHTS-TASTE** drücken. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).
 
@@ -55,6 +57,6 @@ Weitere Informationen finden Sie unter [Code Access Security for ClickOnce Appli
 
 In Visual Basic verfügen IntelliSense-Vervollständigungslisten über zwei Registersteuerelemente, die sich am unteren Rand der Liste befinden. Die Registerkarte **Allgemein**, die standardmäßig ausgewählt ist, zeigt Elemente, die am häufigsten zur Vervollständigung der Anweisung verwendet werden, die Sie schreiben. Die Registerkarte **Alle** zeigt alle Elemente an, die für die automatische Vervollständigung verfügbar sind, darunter auch diejenigen, die sich auch auf der Registerkarte **Allgemein** befinden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwendung von IntelliSense](../ide/using-intellisense.md)

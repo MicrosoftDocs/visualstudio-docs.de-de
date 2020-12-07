@@ -1,5 +1,7 @@
 ---
 title: Testen einer großen Anwendung mit mehreren UI-Zuordnungen
+description: Hier erfahren Sie, wie sich Tests der programmierten UI beim Testen einer großen Anwendung mithilfe mehrerer UI-Zuordnungen einsetzen lassen. Dieses Feature erfordert Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286582"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330159"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 
@@ -23,7 +25,7 @@ In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Teste
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Voraussetzungen**
+**Anforderungen**
 
 - Visual Studio Enterprise
 

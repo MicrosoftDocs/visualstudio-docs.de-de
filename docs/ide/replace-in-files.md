@@ -1,5 +1,7 @@
 ---
 title: Suchen und Ersetzen in Dateien
+description: Hier erfahren Sie mehr über das Feature „In Dateien ersetzen“ und darüber, wie Sie dieses verwenden können, um den Code bestimmter Dateien nach einer Zeichenfolge oder einem Ausdruck zu durchsuchen und einige oder alle gefundenen Übereinstimmungen zu ändern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3499c1b2073d0263231eb1f60129b2cd3548fa
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585625"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480030"
 ---
 # <a name="replace-in-files"></a>In Dateien ersetzen
 
@@ -88,7 +90,7 @@ Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche d
 
 Fenster **Suchergebnisse: 2**
 
-Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 2**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend** Suchergebnisse: 2** aus.
+Wenn diese Option ausgewählt ist, ersetzen die Ergebnisse der aktuellen Suche den Inhalt des Fensters **Suchergebnisse: 2**. Dieses Fenster wird automatisch geöffnet, um die Suchergebnisse anzuzeigen. Um dieses Fenster manuell zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Fenster** und anschließend **Suchergebnisse: 2** aus.
 
 **Nur Dateinamen anzeigen**
 
