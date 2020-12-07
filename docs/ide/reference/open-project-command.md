@@ -1,5 +1,7 @@
 ---
 title: Projekt öffnen (Befehl)
+description: Hier erfahren Sie mehr über den Befehl „Projekt öffnen“ und darüber, wie dieser ein vorhandenes Projekt oder eine vorhandene Projektmappe öffnet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce00713cbfe862c5788a0131c99ba4c5750bb600
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565811"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304148"
 ---
 # <a name="open-project-command"></a>Projekt öffnen (Befehl)
 
@@ -55,7 +57,7 @@ Im folgenden Beispiel wird das Visual Basic-Projekt **Test1** geöffnet:
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)

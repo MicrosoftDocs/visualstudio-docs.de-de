@@ -1,5 +1,7 @@
 ---
 title: Isolieren von getestetem Code mithilfe von Microsoft Fakes
+description: Hier erfahren Sie, wie Sie mit Microsoft Fakes zu testenden Code isolieren können, indem Sie andere Teile der Anwendung durch Stubs oder Shims ersetzen.
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325950"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329535"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 
@@ -83,10 +85,10 @@ Eine ausführlichere Beschreibung finden Sie unter [Use stubs to isolate parts o
 
 2. **Hinzufügen von Fakes-Assemblys**
 
-   1. Im **Projektmappen-Explorer** : 
+   1. Im **Projektmappen-Explorer**: 
        - Erweitern Sie für ein älteres .NET Framework-Projekt (kein SDK-Format) den Knoten **Verweise** Ihres Projekts für den Komponententest.
        ::: moniker range=">=vs-2019"
-       - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework oder .NET Core unter **Assemblys** , **Projekte** oder **Pakete** den Knoten **Abhängigkeiten** , um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
+       - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework oder .NET Core unter **Assemblys**, **Projekte** oder **Pakete** den Knoten **Abhängigkeiten**, um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
        ::: moniker-end
        - Wenn Sie in Visual Basic arbeiten, müssen Sie auf der Symbolleiste im **Projektmappen-Explorer** auf **Alle Dateien anzeigen** klicken, um den Knoten **Verweise** anzuzeigen.
    2. Wählen Sie die Assembly aus, in der die Klassendefinitionen enthalten sind, für die Sie Shims erstellen möchten. Wenn Sie z.B. einen Shim für **DateTime** erstellen möchten, klicken Sie auf **System.dll**.

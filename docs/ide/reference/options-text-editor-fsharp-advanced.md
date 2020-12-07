@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, F#, Erweitert
+description: Hier erfahren Sie, wie Sie mit der Seite „Erweitert“ im F#-Abschnitt die Einstellungen der Führungslinien für die Blockstruktur und der Gliederung für F# ändern.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9f4550ccf83f5697bca46d4a4049fe7df9b1c20
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770944"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039639"
 ---
 # <a name="options-text-editor-f-advanced"></a>Optionen, Text-Editor, F#, Erweitert
 
@@ -28,7 +30,7 @@ Wenn diese Option ausgewählt ist, erscheinen im Editor vertikale Linien, die si
 
 Aktivieren Sie dieses Kontrollkästchen, um die Codedatei automatisch zu gliedern. Hierdurch werden reduzierbare Codeblöcke erstellt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
 - [Optionen, Text-Editor, Alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md)

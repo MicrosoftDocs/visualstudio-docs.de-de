@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, Alle Sprachen, Scrollleisten
+description: Hier erfahren Sie, wie Sie mit der Seite „Scrollleisten“ im Abschnitt „Alle Sprachen“ das Standardverhalten der Scrollleisten des Code-Editors in Visual Studio ändern.
+ms.custom: SEO-VS-2020
 ms.date: 10/25/2018
 ms.topic: reference
 f1_keywords:
@@ -32,18 +34,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f75ba02b65b7025f9cf1e4f2eb9b5b6e3de96be0
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808089"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039795"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 Mit diesem Dialogfeld können Sie das Standardverhalten der Scrollleiste des Code-Editors ändern. Wählen Sie zum Anzeigen dieser Optionen unter **Tools** den Menüpunkt **Optionen** aus. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Scrollleisten** aus.
 
 > [!CAUTION]
-> Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Beim Zurücksetzen einer Option in diesem Dialogfeld werden die Optionen für Scrollleisten in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt. Um die Optionen des Text-Editors für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.
+> Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Beim Zurücksetzen einer Option in diesem Dialogfeld werden die Optionen für Scrollleisten in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt. Um die Optionen in „Text-Editor“ für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.
 
 ## <a name="show-horizontal-scroll-bar"></a>Horizontale Scrollleiste anzeigen
 
@@ -86,6 +88,6 @@ Wenn Sie im *Zuordnungsmodus* auf eine Position in der Scrollleiste klicken, spr
 > [!TIP]
 > Sie können die Miniaturcodeansicht im Zuordnungsmodus deaktivieren, indem Sie **Quellübersicht** auf **Aus** festlegen. Wenn **Vorschau-QuickInfo anzeigen** ausgewählt ist, sehen Sie immer noch eine Vorschau des Codes an dieser Stelle, wenn Sie den Mauszeiger auf der Scrollleiste positionieren, und der Mauszeiger springt immer noch zu dieser Stelle in der Datei, wenn Sie klicken.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Anpassen der Scrollleiste](../how-to-track-your-code-by-customizing-the-scrollbar.md)

@@ -1,5 +1,7 @@
 ---
 title: Fehlerliste (Fenster)
+description: Hier erfahren Sie mehr über das Fenster „Fehlerliste“ und darüber, wie Sie damit Aufgaben im Zusammenhang mit der Behebung der angezeigten Fehler ausführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569662"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305447"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
 
@@ -43,9 +45,9 @@ Mit dem Fenster **Fehlerliste** können Sie die folgenden Aufgaben ausführen:
 
 Zum Anzeigen der **Fehlerliste**, wählen Sie **Ansicht** > **Fehlerliste** aus, oder drücken Sie **STRG**+ **\\** +**E**.
 
-Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler** **Warnungen** und **Nachrichten** wählen.
+Sie können zum Anzeigen von verschiedenen Informationen die Registerkarten **Fehler****Warnungen** und **Nachrichten** wählen.
 
-Um die Liste zu sortieren, klicken Sie auf eine beliebige Spaltenüberschrift. Halten Sie die **UMSCHALT**-Taste gedrückt, und klicken Sie auf eine andere Spaltenüberschrift, um erneut nach einer zusätzlichen Spalte zu sortieren. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Zum Ändern der Reihenfolge, in der Spalten angezeigt werden, ziehen Sie einen beliebigen Spaltenheader nach links oder rechts.
+Zum Sortieren der Liste klicken Sie auf einen beliebigen Spaltenheader. Halten Sie die **UMSCHALT**-Taste gedrückt, und klicken Sie auf eine andere Spaltenüberschrift, um erneut nach einer zusätzlichen Spalte zu sortieren. Um auszuwählen, welche Spalten angezeigt und welche ausgeblendet werden, wählen Sie im Kontextmenü die Option **Spalten einblenden** aus. Zum Ändern der Reihenfolge, in der Spalten angezeigt werden, ziehen Sie einen beliebigen Spaltenheader nach links oder rechts.
 
 ## <a name="error-list-filters"></a>Fehlerlistenfilter
 
@@ -66,7 +68,7 @@ Wenn aktuell ein Filter auf das Suchergebnis angewendet ist, wird der Name des F
 
 Die Liste auf der rechten Seite der Symbolleiste gibt an, ob Fehler aus dem Build (beim Buildvorgang aufgetretene Fehler) oder aus IntelliSense (vor dem Build erkannte Fehler), oder beide angezeigt werden sollen.
 
-## <a name="search"></a>Suchen,
+## <a name="search"></a>Suchen
 
 Verwenden Sie für die Suche nach bestimmten Fehlern in der Fehlerliste das Textfeld **Fehlerliste durchsuchen** auf der rechten Seite der Symbolleiste **Fehlerliste**. Sie können in jeder sichtbaren Spalte in der Fehlerliste suchen, und die Suchergebnisse werden immer basierend auf der Spalte sortiert, die Sortierpriorität hat, und nicht basierend auf der angewendeten Abfrage oder dem angewendeten Filter. Wenn Sie die **ESC**-TASTE drücken, während sich der Fokus in der **Fehlerliste** befindet, können Sie den Suchbegriff und die gefilterten Suchergebnisse löschen. Sie können auch auf das Symbol **X** auf der rechten Seite des Textfelds klicken, um dieses zu löschen.
 
@@ -76,15 +78,15 @@ Sie können die Fehlerliste kopieren und in einer Datei speichern. Wählen Sie d
 
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche
 
-severity
+Schweregrad
 
-Zeigt die verschiedenen Typen des Eintrags **Fehlerliste** an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)** , **Warnung (inaktiv)** .
+Zeigt die verschiedenen Typen des Eintrags **Fehlerliste** an (**Fehler**, **Meldung**, **Warnung**, **Warnung (aktiv)**, **Warnung (inaktiv)**.
 
 Code
 
 Zeigt den Fehlercode an.
 
-Beschreibung
+BESCHREIBUNG
 
 Zeigt den Text des Eintrags an.
 
@@ -96,6 +98,6 @@ Datei
 
 Zeigt den Dateinamen an.
 
-Linie
+Zeile
 
 Zeigt die Zeile an, in der das Problem aufgetreten ist.

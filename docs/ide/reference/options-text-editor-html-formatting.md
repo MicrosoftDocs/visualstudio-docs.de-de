@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, HTML (Web Forms), Formatierung
+description: Hier erfahren Sie, wie Sie mithilfe der Formatierungsseite im HTML-Abschnitt die HTML-Projektoptionen für das Formatieren von Code im Code-Editor festlegen.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568320"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040978"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Optionen, Text-Editor, HTML (Web Forms), Formatierung
 

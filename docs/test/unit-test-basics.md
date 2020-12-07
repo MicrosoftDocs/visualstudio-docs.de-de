@@ -1,5 +1,7 @@
 ---
 title: Grundlagen von Komponententests
+description: Hier lernen Sie, wie der Test-Explorer von Visual Studio Komponententests flexibel und effizient ausführen und die Ergebnisse anzeigen kann.
+ms.custom: SEO-VS-2020
 ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
@@ -9,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75846932"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330198"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
 Überprüfen Sie, ob Ihr Code wie erwartet funktioniert, indem Sie Komponententests erstellen und ausführen. Diese Tests werden als „Komponententests“ bezeichnet, da Sie die Funktionalität Ihres Programms in einzelne testfähige Verhalten gliedern, die Sie als einzelne *Komponenten* testen können. Mit dem Test-Explorer von Visual Studio können Sie Komponententests flexibel und effizient ausführen und die Ergebnisse in Visual Studio anzeigen. In Visual Studio werden die Komponententest-Frameworks von Microsoft für verwalteten und systemeigenen Code installiert. Verwenden Sie ein *Komponententest-Framework* , um Komponententests zu erstellen, auszuführen und Berichte mit den Ergebnissen dieser Tests zu erstellen. Führen Sie Komponententests erneut durch, wenn Sie Änderungen vorgenommen haben, um zu testen, dass der Code weiterhin ordnungsgemäß ausgeführt wird. In Visual Studio Enterprise wird dies mit [Live Unit Testing](live-unit-testing-intro.md) automatisch durchgeführt, sodass Tests erkannt werden, die von Ihren Codeänderungen beeinträchtigt werden. Diese werden im Hintergrund während Ihrer Eingabe ausgeführt.
 
-Komponententests dienen dann am besten der Qualität Ihres Codes, wenn sie ein integraler Bestandteil des Softwareentwicklungsworkflows sind. Sobald Sie eine Funktion oder einen anderen Block mit Anwendungscode geschrieben haben, können Sie Komponententests erstellen, mit denen Sie das Verhalten des Codes bei der Eingabe von Standarddaten, falschen Daten und Daten an der Grenze des Gültigkeitsbereichs überprüfen können. Zudem bieten die Tests die Möglichkeit, alle im Code enthaltenen expliziten oder impliziten Annahmen zu überprüfen. Mit der *testgesteuerten Entwicklung*werden die Komponententests erstellt, bevor der Code geschrieben wird. So werden die Komponententests als Entwurfsdokumentation und als funktionale Spezifikationen der Funktionen verwendet.
+Komponententests dienen dann am besten der Qualität Ihres Codes, wenn sie ein integraler Bestandteil des Softwareentwicklungsworkflows sind. Sobald Sie eine Funktion oder einen anderen Block mit Anwendungscode geschrieben haben, können Sie Komponententests erstellen, mit denen Sie das Verhalten des Codes bei der Eingabe von Standarddaten, falschen Daten und Daten an der Grenze des Gültigkeitsbereichs überprüfen können. Zudem bieten die Tests die Möglichkeit, alle im Code enthaltenen expliziten oder impliziten Annahmen zu überprüfen. Mit der *testgesteuerten Entwicklung* werden die Komponententests erstellt, bevor der Code geschrieben wird. So werden die Komponententests als Entwurfsdokumentation und als funktionale Spezifikationen der Funktionen verwendet.
 
 Sie können schnell generieren Testprojekte und Testmethoden im Code oder die Tests manuell erstellen, wenn Sie sie benötigen. Wenn Sie IntelliTest verwenden, um Ihren .NET-Code zu untersuchen, können Sie Testdaten und eine Suite von Komponententests generieren. Für jede Anweisung im Code wird eine Testeingabe generiert, die die betreffende Anweisung ausführt. Hier erfahren Sie, wie Sie [Komponententests für Ihren Code generieren](generate-unit-tests-for-your-code-with-intellitest.md).
 
@@ -57,7 +59,7 @@ Erstellen Sie eine `MyBank` -Projektmappe, die zwei Projekte enthält:
 
 Der erste Entwurf des Projekts `Accounts` enthält eine Klasse, die die grundlegenden Informationen über ein Konto aufnimmt, eine Schnittstelle, die die allgemeinen Funktionen jedes Kontotyps wie das Einzahlen und Abheben von Geld festlegt, und eine von der Schnittstelle abgeleitete Klasse, die ein Girokonto darstellt. Erstellen Sie zunächst die folgenden Quelldateien für das Projekt "Accounts":
 
-- In*AccountInfo.cs* werden die grundlegenden Informationen für ein Konto definiert.
+- In *AccountInfo.cs* werden die grundlegenden Informationen für ein Konto definiert.
 
 - In *IAccount.cs* wird eine `IAccount`-Standardschnittstelle für ein Konto definiert, die Methoden zum Einzahlen und zum Abheben von Geld und zum Abrufen des Kontostands umfasst.
 
@@ -115,7 +117,7 @@ Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stu
    ![Die Komponententests sind erstellt](../test/media/vs-2019/basics-test-stub.png)
    ::: moniker-end
 
-4. Erfahren Sie jetzt direkt, wie Sie [den Komponententestmethoden Code hinzufügen](#write-your-tests), um einen sinnvollen Komponententest sowie weitere Komponententests zu erstellen, die Sie für einen gründlichen Test Ihres Codes noch hinzufügen möchten.
+4. Erfahren Sie jetzt direkt, wie Sie [den Komponententestmethoden Code hinzufügen](#write-your-tests) , um einen sinnvollen Komponententest sowie weitere Komponententests zu erstellen, die Sie für einen gründlichen Test Ihres Codes noch hinzuüfgen möchten.
 
 ### <a name="create-the-unit-test-project-and-unit-tests-manually"></a>Manuelles Erstellen des Komponententestpojekts und der Komponententests
 
@@ -150,7 +152,7 @@ Ein Komponententestprojekt entspricht in der Regel der Struktur eines einzelnen 
 
    1. Wählen Sie das Projekt im **Projektmappen-Explorer** aus.
 
-   2. Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
+   2. Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen** aus.
 
    3. Öffnen Sie im Dialogfeld **Verweis-Manager** den Knoten **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie den Namen des Codeprojekts aus, und schließen Sie das Dialogfeld.
 
@@ -310,7 +312,7 @@ Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausf�
 
 ## <a name="qa"></a>Fragen und Antworten
 
-**Frage: Wie kann ich Komponententests debuggen?**
+**F: Wie kann ich Komponententests debuggen?**
 
 **Antwort:** Mit dem **Test-Explorer** können Sie Debugsitzungen für Ihre Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:
 
@@ -334,14 +336,14 @@ Erfahren Sie mehr über das [Debuggen von Komponententests](../debugger/debugger
 ![Schnelle Aktion-Menü „Methodenstub generieren“](../test/media/vs-2019/basics-generate-method-tdd.png)
 ::: moniker-end
 
-**Frage: Kann ich Komponententests erstellen, die mehrere Datensätze als Eingabe zum Ausführen des Tests verwenden?**
+**F: Kann ich Komponententests erstellen, die mehrere Datensätze als Eingabe zum Ausführen des Tests verwenden?**
 
-**Antwort:** Ja. Mit*datengesteuerten Testmethoden* können Sie einen Wertebereich in einer einzigen Komponententestmethode testen. Verwenden Sie ein `DataSource` -Attribut für die Testmethode, die die Datenquelle und die Tabelle mit den Variablenwerten enthält, die Sie testen möchten.  Weisen Sie im Methodentext die Zeilenwerte den Variablen mithilfe des Indexers `TestContext.DataRow[`*ColumnName*`]` zu.
+**A:** Ja. Mit *datengesteuerten Testmethoden* können Sie einen Wertebereich in einer einzigen Komponententestmethode testen. Verwenden Sie ein `DataSource` -Attribut für die Testmethode, die die Datenquelle und die Tabelle mit den Variablenwerten enthält, die Sie testen möchten.  Weisen Sie im Methodentext die Zeilenwerte den Variablen mithilfe des Indexers `TestContext.DataRow[`*ColumnName*`]` zu.
 
 > [!NOTE]
 > Diese Verfahren gelten nur für Testmethoden, die Sie mithilfe des Microsoft-Komponententest-Frameworks für verwalteten Code schreiben. Wenn Sie ein anderes Framework verwenden, finden Sie Informationen zu entsprechenden Funktionen in der Frameworkdokumentation.
 
-Nehmen Sie beispielsweise an, Sie fügen der `CheckingAccount` -Klasse eine unnötige Methode mit dem Namen `AddIntegerHelper`hinzu. In`AddIntegerHelper` werden zwei ganze Zahlen addiert.
+Nehmen Sie beispielsweise an, Sie fügen der `CheckingAccount`-Klasse eine unnötige Methode mit dem Namen `AddIntegerHelper` hinzu. In`AddIntegerHelper` werden zwei ganze Zahlen addiert.
 
 Zum Erstellen eines datengesteuerten Tests für die `AddIntegerHelper`-Methode erstellen Sie zuerst eine Access-Datenbank namens *AccountsTest.accdb* und eine Tabelle namens `AddIntegerHelperData`. In der Tabelle `AddIntegerHelperData` werden Spalten definiert, um den ersten und den zweiten Operanden der Addition anzugeben, und es wird eine Spalte definiert, um das erwartete Ergebnis anzugeben. Eine Reihe von Zeilen wird mit entsprechenden Werten gefüllt.
 
@@ -366,9 +368,9 @@ Die mit dem Attribut versehene Methode wird für jede Zeile in der Tabelle einma
 
 Erfahren Sie mehr über [datengesteuerte Komponententests](../test/how-to-create-a-data-driven-unit-test.md).
 
-**Frage: Kann ich anzeigen, wie viel meines Codes durch die Komponententests getestet wird?**
+**F: Kann ich anzeigen, wie viel meines Codes durch die Komponententests getestet wird?**
 
-**Antwort:** Ja. Mit dem Codeabdeckungstool von Visual Studio in Visual Studio Enterprise können Sie die Menge des Codes ermitteln, die tatsächlich von den Komponententests getestet wird. Es werden alle systemeigenen und verwalteten Sprachen sowie alle Komponententestframeworks, die durch das Komponententestframework ausgeführt werden können, unterstützt.
+**A:** Ja. Mit dem Codeabdeckungstool von Visual Studio in Visual Studio Enterprise können Sie die Menge des Codes ermitteln, die tatsächlich von den Komponententests getestet wird. Es werden alle systemeigenen und verwalteten Sprachen sowie alle Komponententestframeworks, die durch das Komponententestframework ausgeführt werden können, unterstützt.
 
 Das Codeabdeckungstool kann für ausgewählte oder alle Tests in einer Projektmappe ausgeführt werden. Im Fenster **Code Coverage-Ergebnisse** wird der Prozentsatz der durchlaufenen Produktcodeblöcke angezeigt, angeordnet nach Zeile, Funktion, Klasse, Namespace und Modul.
 
@@ -378,11 +380,11 @@ Die Abdeckungsergebnisse werden im Fenster **Code Coverage-Ergebnisse** angezeig
 
 ![Codeabdeckungsergebnisse](../test/media/ute_codecoverageresults.png)
 
-Erfahren Sie mehr über [Codeabdeckung](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
+Erfahren Sie mehr über [Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
-**Frage: Wie kann ich in meinem Code Methoden testen, die über externe Abhängigkeiten verfügen?**
+**F: Wie kann ich in meinem Code Methoden testen, die über externe Abhängigkeiten verfügen?**
 
-**Antwort:** Ja. Wenn Sie über Visual Studio Enterprise verfügen, können Sie Microsoft Fakes für Testmethoden verwenden, die Sie mithilfe von Komponententestframeworks für verwalteten Code schreiben können.
+**A:** Ja. Wenn Sie über Visual Studio Enterprise verfügen, können Sie Microsoft Fakes für Testmethoden verwenden, die Sie mithilfe von Komponententestframeworks für verwalteten Code schreiben können.
 
 Microsoft Fakes verwendet zwei Ansätze zum Erstellen von Ersatzklassen für externe Abhängigkeiten:
 
@@ -394,9 +396,9 @@ Bei beiden Ansätzen verwenden Sie die generierten Delegaten von Aufrufen der Ab
 
 Erfahren Sie mehr über das [Isolieren von Komponententestmethoden Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Frage: Kann ich andere Komponententestframeworks verwenden, um Komponententests zu erstellen?**
+**F: Kann ich andere Komponententestframeworks verwenden, um Komponententests zu erstellen?**
 
-**Antwort:** Ja, führen Sie diese Schritte aus, um [andere Frameworks zu finden und zu installieren](../test/install-third-party-unit-test-frameworks.md). Öffnen Sie die Projektmappe nach dem Neustart von Visual Studio erneut, um die Komponententests zu erstellen, und wählen Sie dann hier Ihre installierten Frameworks aus:
+**A:** Ja, führen Sie diese Schritte aus, um [andere Frameworks zu finden und zu installieren](../test/install-third-party-unit-test-frameworks.md). Öffnen Sie die Projektmappe nach dem Neustart von Visual Studio erneut, um die Komponententests zu erstellen, und wählen Sie dann hier Ihre installierten Frameworks aus:
 
 ![Andere installierte Komponententestframeworks auswählen](../test/media/createunittestsdialogextensions.png)
 

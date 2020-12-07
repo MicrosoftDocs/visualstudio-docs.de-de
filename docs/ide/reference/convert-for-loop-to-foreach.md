@@ -1,5 +1,6 @@
 ---
 title: Refactoring zum Konvertieren einer for-Schleife in eine foreach-Anweisung
+description: Hier erfahren Sie, wie Sie mit dem Menü „Schnellaktionen und Refactorings…“ eine for-Schleife in eine foreach-Anweisung und umgekehrt konvertieren.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -11,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68ed736a1e3a07c7cd3f67ea9c936821cf4ac78c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70c2b17f00c1f5e72ce0e913c360b4655b18df12
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045924"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040822"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactoring zum Konvertieren einer for-Schleife in eine foreach-Anweisung
 
@@ -81,7 +82,7 @@ Die Gründe, warum Sie eine [foreach](/dotnet/csharp/language-reference/keywords
 
 1. Wählen Sie **In "for" konvertieren** aus. Wählen Sie alternativ **Vorschau der Änderungen anzeigen** aus, um das Dialogfeld [Vorschau der Änderungen](../../ide/preview-changes.md) anzuzeigen. Klicken Sie dann auf **Anwenden**.
 
-1. Da durch das Refactoring eine neue Variable für die Anzahl der Iterationen eingeführt wird, wird das Feld **Umbenennen** in der oberen rechten Ecke des Editors angezeigt. Wenn Sie die Variable anders benennen möchten, tippen Sie den neuen Namen ein, und drücken Sie die **EINGABETASTE** , oder wählen Sie im Feld **Umbenennen** die Option **Anwenden** aus. Wenn Sie keinen neuen Namen auswählen möchten, drücken Sie die **Esc** -Taste, oder klicken Sie auf **Anwenden** , um das Feld **Umbenennen** zu schließen.
+1. Da durch das Refactoring eine neue Variable für die Anzahl der Iterationen eingeführt wird, wird das Feld **Umbenennen** in der oberen rechten Ecke des Editors angezeigt. Wenn Sie die Variable anders benennen möchten, tippen Sie den neuen Namen ein, und drücken Sie die **EINGABETASTE**, oder wählen Sie im Feld **Umbenennen** die Option **Anwenden** aus. Wenn Sie keinen neuen Namen auswählen möchten, drücken Sie die **Esc**-Taste, oder klicken Sie auf **Anwenden**, um das Feld **Umbenennen** zu schließen.
 
 > [!NOTE]
 > In C# verwendet der durch diese Refactorings generierte Code entweder einen expliziten Typ oder [var](/dotnet/csharp/language-reference/keywords/var) als Typ für die Elemente in der Auflistung. Der Typ im generierten Code, unabhängig ob explizit oder implizit, hängt von den Einstellungen des Codeformats für diesen Bereich ab. Diese bestimmten Einstellungen des Codeformats werden auf Computerebene unter **Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Allgemein** >  **\'var-Einstellungen** oder auf Projektmappenebene in einer [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types)-Datei konfiguriert. Wenn Sie die Einstellungen des Codeformats in den **Optionen** ändern, müssen Sie die Codedatei erneut öffnen, damit die Änderungen wirksam werden.

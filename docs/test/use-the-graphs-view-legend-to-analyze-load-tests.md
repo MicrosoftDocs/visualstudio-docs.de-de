@@ -1,5 +1,7 @@
 ---
 title: Verwenden der Legende der Grafikansicht zum Analysieren von Auslastungstests
+description: Hier erfahren Sie mehr über die Ansicht „Diagramme“ im Auslastungstest-Analyzer, dessen Legendenbereich Informationen zu Leistungsindikatoren eines ausgewählten Diagramms anzeigt.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25200b691e0bebf2e3bd1c6252efb371ed9caeb2
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590799"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330068"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Verwenden der Legende der Diagrammansicht zum Analysieren von Auslastungstests
 
@@ -37,7 +39,7 @@ Die Legende enthält die folgenden Informationen:
 
 - **Farbe:** Die Spalte **Farbe** zeigt die Farbe und die Linienart der gezeichneten Linie für den Leistungsindikator an. Im Dialogfeld **Zeichnungsoptionen** können Sie die Farbe oder Linienart eines Leistungsindikators im Diagramm ändern. Das Dialogfeld **Zeichnungsoptionen** ist im Kontextmenü der Legende verfügbar.
 
-- **Statistik:** Die Spalten **Min.** , **Max.** , **Durchschn.** und **Letzte** zeigen die jeweilige Statistik für den Leistungsindikator an. Diese Werte entsprechen den Daten, die im sichtbaren Bereich des Diagramms angezeigt werden. Wenn Sie z. B. einen Bereich einer Ausführung vergrößern, spiegelt die Legendenstatistik Werte nur für den vergrößerten Bereich wider. Die Spalte "Letzte" stellt den Wert des Leistungsindikators des zuletzt abgeschlossenen Samplingintervalls dar.
+- **Statistik:** Die Spalten **Min.**, **Max.**, **Durchschn.** und **Letzte** zeigen die jeweilige Statistik für den Leistungsindikator an. Diese Werte entsprechen den Daten, die im sichtbaren Bereich des Diagramms angezeigt werden. Wenn Sie z. B. einen Bereich einer Ausführung vergrößern, spiegelt die Legendenstatistik Werte nur für den vergrößerten Bereich wider. Die Spalte "Letzte" stellt den Wert des Leistungsindikators des zuletzt abgeschlossenen Samplingintervalls dar.
 
     > [!NOTE]
     > Die Spalte "Letzte" wird nur in der Legende des Auslastungstest-Analyzers während der Ausführung des Auslastungstests angezeigt.
@@ -57,7 +59,7 @@ Das Auswählen eines Elements in der Legende bewirkt Folgendes:
 > [!TIP]
 > Sie können auf der Symbolleiste des **Auslastungstest-Analyzers** die Dropdownschaltfläche **Diagrammoptionen** verwenden und auf **Legende anzeigen** klicken, um das der Diagrammansicht zugeordnete Panel **Legende** anzuzeigen oder auszublenden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Vergrößern eines Diagrammbereichs](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analyze Load Test Results in the Graphs View (Analysieren von Auslastungstestergebnissen in der Diagrammansicht)](../test/analyze-load-test-results-in-the-graphs-view.md)

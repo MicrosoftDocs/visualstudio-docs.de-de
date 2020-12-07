@@ -1,5 +1,7 @@
 ---
 title: Optionen, Windows Forms-Designer, Allgemein
+description: Hier erfahren Sie, wie Sie über die Seite „Allgemein“ die Einstellungen für Raster und andere Features des Windows Forms-Designers in Visual Studio festlegen.
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d7172ca12344ab046c9bf65e7df280a9fa6dd0aa
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568060"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040081"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>Dialogfeld „Optionen“: Windows Forms-Designer
 
@@ -50,7 +52,7 @@ Bestimmt, ob Designer Objekte und Steuerelemente am Raster ausrichten. Mit ander
 **Smarttags automatisch öffnen**\
 Bestimmt, ob Steuerelemente und Komponenten Smarttags anzeigen. Nicht alle Steuerelemente und Komponenten unterstützen Smarttags.
 
-## <a name="refactoring"></a>Umgestaltung
+## <a name="refactoring"></a>Refactoring
 
 **Refactoring beim Umbenennen aktivieren**\
 Wenn auf `true` gesetzt, wird eine Refactoringvorgang zur Umbenennung durchgeführt, wenn Sie eine Komponente aus dem Eigenschaftenfenster oder dem Fenster „Dokumentgliederung“ umbenennen.

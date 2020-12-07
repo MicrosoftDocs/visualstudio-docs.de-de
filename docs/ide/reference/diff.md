@@ -1,5 +1,7 @@
 ---
 title: -Diff („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mit der devenv-Befehlszeilenoption „Diff“ zwei Dateien vergleichen.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a2ae3da5036134260f48dce8838571312d87bf2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570088"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305492"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -41,11 +43,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceDisplayName*
 
-  Dies ist optional. Der Anzeigename der ersten Datei
+  Optional. Der Anzeigename der ersten Datei
 
 - *TargetDisplayName*
 
-  Dies ist optional. Der Anzeigename der zweiten Datei
+  Optional. Der Anzeigename der zweiten Datei
 
 ## <a name="remarks"></a>Bemerkungen
 

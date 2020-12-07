@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, XML, Sonstiges
+description: Hier erfahren Sie, wie Sie mit der Seite „Sonstiges“ im XAML-Abschnitt die Einstellungen des XML-Editors für die automatische Vervollständigung und das Schema ändern.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,12 +10,12 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a02a2a133031661ecbf9c3719f3b1993f3b20b5b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568125"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040119"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Optionen, Text-Editor, XML, Sonstiges
 
@@ -21,9 +23,9 @@ Verwenden Sie die Optionsseite **Sonstiges**, um die Einstellungen für die auto
 
 ## <a name="auto-insert"></a>Automatisch einfügen
 
-**Endtags**
+**Tags schließen**
 
-Der Text-Editor fügt beim Erstellen von XML-Elementen Endtags hinzu. Wenn ein Elementstarttag ausgewählt ist, fügt der Editor das passende Endtag einschließlich eines entsprechenden Namespacepräfixes ein. Dieses Kontrollkästchen ist standardmäßig aktiviert.
+Der Text-Editor fügt beim Erstellen von XML-Elementen Endtags hinzu. Wenn das Anfangstag eines Elements ausgewählt ist, fügt der Editor das passende Endtag mit dem entsprechenden Namespacepräfix hinzu. Dieses Kontrollkästchen ist standardmäßig aktiviert.
 
 **Attributanführungszeichen**
 
@@ -31,23 +33,23 @@ Beim Erstellen von XML-Attributen fügt der Editor die Zeichen `="` und `"` ein 
 
 **Namespacedeklarationen**
 
-Vom Editor werden im Bedarfsfall automatisch Namespacedeklarationen eingefügt. Dieses Kontrollkästchen ist standardmäßig aktiviert.
+Der Editor fügt die benötigten Namespacedeklarationen automatisch an den entsprechenden Stellen ein. Dieses Kontrollkästchen ist standardmäßig aktiviert.
 
-**Anderes Markup (Kommentare, CDATA)**
+**Sonstige Markups (Kommentare, CDATA)**
 
-Kommentare, CDATA-, DOCTYPE- und Verarbeitungsanweisungen sowie sonstiges Markup werden automatisch vervollständigt. Dieses Kontrollkästchen ist standardmäßig aktiviert.
+Kommentare, CDATA, DOCTYPE, Verarbeitungsanweisungen sowie sonstige Markupelemente werden automatisch vervollständigt. Dieses Kontrollkästchen ist standardmäßig aktiviert.
 
 ## <a name="network"></a>Netzwerk
 
-**DTDs und Schemas automatisch herunterladen**
+**DTDs und Schemata automatisch herunterzuladen**
 
-Schemata und DTDs (Document Type Definitions) werden von HTTP-Speicherorten automatisch heruntergeladen. Dieses Feature verwendet System.Net, wobei die automatische Erkennung des Proxyservers aktiviert ist. Dieses Kontrollkästchen ist standardmäßig aktiviert.
+Schemata und Dokumenttypdefinitionen (DTDs) werden automatisch von den HTTP-Adressen heruntergeladen. Diese Funktion verwendet System.Net mit aktivierter automatischer Proxyservererkennung. Dieses Kontrollkästchen ist standardmäßig aktiviert.
 
 ## <a name="outlining"></a>Gliedern
 
 **Beim Öffnen von Dateien in Gliederungsmodus wechseln**
 
-Aktiviert beim Öffnen einer Datei die Gliederungsansicht. Dieses Kontrollkästchen ist standardmäßig aktiviert.
+Aktiviert die Gliederungsfunktion beim Öffnen von Dateien. Dieses Kontrollkästchen ist standardmäßig aktiviert.
 
 ## <a name="caching"></a>Caching
 
@@ -55,7 +57,7 @@ Aktiviert beim Öffnen einer Datei die Gliederungsansicht. Dieses Kontrollkästc
 
 Gibt den Speicherort des Schemacaches an. Die Schaltfläche **Durchsuchen** öffnet den aktuellen Speicherort des Schemacaches in einem neuen Fenster. Der Standardspeicherort ist *%VsInstallDir%\xml\Schemas*.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [XML-Optionen – Formatierung](options-text-editor-xml-formatting.md)
 - [XML-Tools in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

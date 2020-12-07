@@ -1,5 +1,7 @@
 ---
 title: -Run („devenv.exe“)
+description: Hier erfahren Sie, wie Sie das angegebene Projekt oder die angegebene Projektmappe mit der devenv-Befehlszeilenoption „Run“ kompilieren und ausführen.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e523220ca3269b6af5404ce2d6ab653f29698599
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593628"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039904"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -46,11 +48,11 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
   Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter startet die IDE und lässt sie aktiviert, nachdem die Ausführung des Projekts oder der Projektmappe beendet wurde.
 
-- Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
+- Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelte Anführungszeichen ein.
 
 - Zusammenfassende Informationen inklusive Fehlermeldungen können im Fenster **Befehl** oder durch den `/Out`-Schalter in einer Protokolldatei angezeigt werden.
 

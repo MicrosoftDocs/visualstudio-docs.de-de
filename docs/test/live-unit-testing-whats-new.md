@@ -1,5 +1,7 @@
 ---
 title: Neuerungen in Live Unit Testing in Visual Studio 2017
+description: Hier werden die Neuerungen in Live Unit Testing für jede Visual Studio-Version ab Visual Studio 2017, Version 15.3 aufgelistet.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: cc6a7a25ebd2f7d07dcb887952b82bda34aaad35
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ae1caef04c1ccd1c51c38ddef5dc8c783bdbfaa9
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851462"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328833"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Neuerungen in Live Unit Testing für Visual Studio 2017
 
@@ -64,7 +66,7 @@ Neben diesen wichtigen Ergänzungen enthält Live Unit Testing außerdem die fol
   - Für NUnit: `[Category("SkipWhenLiveUnitTesting")]`
   - Für MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Einführung von Live Unit Testing](live-unit-testing-intro.md)
-- [Live Unit Testing mit Visual Studio 2017](live-unit-testing.md)
+- [Einführung in Live Unit Testing](live-unit-testing-intro.md)
+- [Live Unit Testing mit Visual Studio](live-unit-testing.md)

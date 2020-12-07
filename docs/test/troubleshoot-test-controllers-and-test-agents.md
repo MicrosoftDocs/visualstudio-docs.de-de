@@ -1,5 +1,7 @@
 ---
 title: Problembehebungen für Testcontroller und Test-Agents
+description: Hier lernen Sie einige der häufigsten Probleme kennen, die Ihnen bei der Arbeit mit Testcontrollern und Test-Agents in Visual Studio in die Quere kommen können.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86811739df2d59e3de7980cfa346da68cc0eb43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565954"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330146"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategien für die Problembehandlung bei Testcontrollern und Test-Agents in Auslastungstests
 
@@ -64,7 +66,7 @@ Sie können den Umfang der Protokollierung auf einem Testcontrollercomputer steu
     </system.diagnostics>
     ```
 
-4. Speichern Sie die Datei.
+4. Speichern Sie die Datei .
 
 5. Starten Sie den Controllerdienst. Geben Sie in der Eingabeaufforderung `net start vsttcontroller` ein.
 
@@ -129,7 +131,7 @@ Um diesen Fehler zu beheben, muss der Testcontroller an einen der Netzwerkadapte
     </appSettings>
     ```
 
-4. Speichern Sie die Datei.
+4. Speichern Sie die Datei .
 
 5. Starten Sie den Testcontrollerdienst. Geben Sie in der Eingabeaufforderung `net start vsttcontroller` ein.
 
@@ -139,6 +141,6 @@ Um diesen Fehler zu beheben, muss der Testcontroller an einen der Netzwerkadapte
 
 Dies gilt für den Testcontroller, den Test-Agent-Dienst und den Test-Agent-Prozess. Die `BindTo`-Eigenschaft muss für jeden Prozess festgelegt werden, der auf einem Computer mit mehr als einem Netzwerkadapter ausgeführt wird. Die Vorgehensweise zum Festlegen der `BindTo`-Eigenschaft entspricht für alle drei Prozesse der Vorgehensweise, die zuvor für den Testcontroller beschrieben wurde. Zum Festlegen der Protokollierungsebenen für den Test-Agent-Dienst und den Test-Agent-Prozess verwenden Sie die Konfigurationsdateien, die unter [Festlegen der Protokollierungsebene auf einem Testcontrollercomputer](#set-the-logging-level-on-a-test-controller-computer) aufgeführt sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Testcontroller und Test-Agents](../test/configure-test-agents-and-controllers-for-load-tests.md)

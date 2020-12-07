@@ -10,11 +10,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075417"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970223"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analysieren der Speicherauslastung mithilfe des .NET-Tools für die Objektzuordnung
 
@@ -68,17 +68,17 @@ Sie können die tabellarischen Daten filtern, um nur Aktivitäten für einen ang
 
 In der Ansicht **Zuordnung** können Sie sehen, welche Objekte wie viel Arbeitsspeicher belegen und wo sich diese Objekte befinden.
 
-- Die Spalte  **Typ** enthält eine Liste der Klassen und Strukturen, die Arbeitsspeicher verbrauchen. Doppelklicken Sie auf einen Typ, um die Rückverfolgung als umgekehrte Aufrufstruktur anzuzeigen. Nur in der Ansicht **Zuordnung** können Sie Elemente innerhalb der ausgewählten Kategorie anzeigen, die Arbeitsspeicher beanspruchen.
+- Die Spalte **Typ** enthält eine Liste der Klassen und Strukturen, die Arbeitsspeicher verbrauchen. Doppelklicken Sie auf einen Typ, um die Rückverfolgung als umgekehrte Aufrufstruktur anzuzeigen. Nur in der Ansicht **Zuordnung** können Sie Elemente innerhalb der ausgewählten Kategorie anzeigen, die Arbeitsspeicher beanspruchen.
 
-- Die Spalte  **Zuordnungen** zeigt die Anzahl von Objekten an, die innerhalb eines bestimmten Zuordnungstyps oder einer bestimmten Funktion Arbeitsspeicher belegen. Diese Spalte wird nur in den Ansichten **Zuordnung**, **Aufrufstruktur**und **Funktionen** angezeigt.
+- Die Spalte **Zuordnungen** zeigt die Anzahl von Objekten an, die innerhalb eines bestimmten Zuordnungstyps oder einer bestimmten Funktion Arbeitsspeicher belegen. Diese Spalte wird nur in den Ansichten **Speicherbelegung**, **Aufrufbaum** und **Funktionen** angezeigt.
 
-- Die Spalten  **Bytes** und **Durchschnittliche Größe (Bytes)**  werden standardmäßig nicht angezeigt. Um sie einzublenden, klicken Sie mit der rechten Maustaste auf die Spalte **Typ** oder **Zuordnungen** und wählen dann die Optionen **Bytes** und **Durchschnittliche Größe (Bytes)**  aus, um sie dem Diagramm hinzuzufügen. 
+- Die Spalten **Byte** und **Average Size (Bytes)** (Durchschnittliche Größe (Byte)) werden standardmäßig nicht angezeigt. Damit sie eingeblendet werden, müssen Sie mit der rechten Maustaste auf die Spalte **Typ** oder **Zuordnungen** klicken und dann die Optionen **Byte** und **Durchschnittliche Größe (Byte)** auswählen, um sie dem Diagramm hinzuzufügen. 
 
-   Die zwei Spalten ähneln  **Gesamt (Zuordnungen)** und **Selbst (Zuordnungen)** , zeigen jedoch die Menge des belegten Arbeitsspeichers anstelle der Anzahl von Objekten an, die Arbeitsspeicher verbrauchen. Diese Spalten sind nur in der Ansicht **Zuordnung** enthalten.
+   Die zwei Spalten ähneln **Gesamt (Zuordnungen)** und **Selbst (Zuordnungen)** , zeigen jedoch die Menge des belegten Arbeitsspeichers anstelle der Anzahl von Objekten an, die Arbeitsspeicher verbrauchen. Diese Spalten sind nur in der Ansicht **Zuordnung** enthalten.
 
-- Die Spalte  **Modulname** zeigt das Modul an, das die aufrufende Funktion oder den aufrufenden Prozess enthält.
+- Die Spalte **Modulname** zeigt das Modul an, das die aufrufende Funktion oder den aufrufenden Prozess enthält.
 
-Alle diese Spalten sind sortierbar. Für die Spalten **Typ** und **Modulname** können Sie die Elemente alphabetisch sortieren (in aufsteigender oder absteigender Reihenfolge). Für **Zuordnungen**, **Bytes** und **Durchschnittliche Größe (Bytes)** können Sie Elemente sortieren, indem Sie den numerischen Wert erhöhen oder verringern.
+Alle diese Spalten sind sortierbar. Die Elemente in den Spalten **Typ** und **Modulname** können Sie alphabetisch sortieren (in aufsteigender oder absteigender Reihenfolge). Für **Zuordnungen**, **Byte** und **Durchschnittliche Größe (Byte)** können Sie Elemente sortieren, indem Sie den numerischen Wert erhöhen oder verringern.
 
 #### <a name="symbols"></a>Symbole
 
@@ -96,13 +96,13 @@ Die folgenden Symbole erscheinen auf den Registerkarten **Zuordnungen**, **Aufru
 
 ![Die Ansicht „Aufrufstruktur“](../profiling/media/calltreelight.png "Die Ansicht „Aufrufstruktur“")
 
-Die Ansicht **Aufrufstruktur** zeigt die Funktionsausführungspfade, die Objekte mit einem hohen Arbeitsspeicherverbrauch enthalten.
+Die Ansicht **Aufrufbaum** zeigt die Funktionsausführungspfade an, die Objekte mit einem hohen Arbeitsspeicherverbrauch enthalten.
 
-- Die Spalte **Funktionsname** zeigt den Prozess oder den Namen der Funktion an, die Objekte enthalten, die Arbeitsspeicher belegen. Die Anzeige basiert auf der Knotenebene, auf der die Untersuchung erfolgt.
-- Die Spalten **Gesamt (Zuordnungen)** und **Gesamtgröße (Bytes)**  zeigen die Anzahl von zugeordneten Objekten und die Gesamtmenge an Arbeitsspeicher, die von einer Funktion und allen von ihr aufgerufenen Funktionen verbraucht wird.
-- Die Spalten**Selbst (Zuordnungen)** und**Automatische Größe (Bytes)** zeigen die Anzahl von zugeordneten Objekten und die Gesamtmenge an Arbeitsspeicher, die von einer einzelnen ausgewählten Funktion oder dem Zuordnungstyp belegt wird.
+- Die Spalte **Funktionsname** zeigt den Prozess oder den Namen der Funktion an, die Objekte mit hohem Arbeitsspeicherverbrauch enthält. Die Anzeige basiert auf der Knotenebene, auf der die Untersuchung erfolgt.
+- Die Spalten **Gesamt (Zuordnungen)** und **Gesamtgröße (Byte)** zeigen die Anzahl von zugeordneten Objekten und die Menge von Arbeitsspeicher, die von einer Funktion und allen von ihr aufgerufenen Funktionen belegt wird.
+- Die Spalten **Selbst (Zuordnungen)** und **Automatische Größe (Bytes)** zeigen die Anzahl von zugeordneten Objekten und die Gesamtmenge an Arbeitsspeicher, die von einer einzelnen ausgewählten Funktion oder dem Zuordnungstyp belegt wird.
 - Die Spalte **Durchschnittliche Größe (Bytes)** zeigt die gleichen Informationen wie in der Ansicht **Zuordnungen** an.
-- Die Spalte  **Modulname** zeigt das Modul an, das die aufrufende Funktion oder den aufrufenden Prozess enthält.
+- Die Spalte **Modulname** zeigt das Modul an, das die aufrufende Funktion oder den aufrufenden Prozess enthält.
 
    ![Erweiterter langsamster Pfad](../profiling/media/hotpathlight.png "Erweiterter langsamster Pfad")
 

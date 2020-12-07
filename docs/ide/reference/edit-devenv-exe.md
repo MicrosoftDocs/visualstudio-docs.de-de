@@ -1,5 +1,7 @@
 ---
 title: -Edit („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mithilfe der devenv-Befehlszeilenoption „Edit“ eine angegebene Datei in einer bestehenden Instanz von Visual Studio öffnen.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 845f83d2078999e3b3e32e048f9a3fa716300b19
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595695"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040588"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -33,11 +35,11 @@ devenv /Edit [File1[ FileN]...]
 
 - *File1*
 
-  Dies ist optional. Die Datei, die in einer vorhandenen Instanz von Visual Studio geöffnet werden soll. Wenn keine Instanz von Visual Studio vorhanden ist, wird eine neue Instanz mit einem vereinfachten Fensterlayout erstellt, und das Tool öffnet *File1* in der neuen Instanz.
+  Optional. Die Datei, die in einer vorhandenen Instanz von Visual Studio geöffnet werden soll. Wenn keine Instanz von Visual Studio vorhanden ist, wird eine neue Instanz mit einem vereinfachten Fensterlayout erstellt, und das Tool öffnet *File1* in der neuen Instanz.
 
 - *FileN*
 
-  Dies ist optional. Eine oder mehrere zusätzliche Dateien, die in der vorhandenen Instanz von Visual Studio geöffnet werden sollen.
+  Optional. Eine oder mehrere zusätzliche Dateien, die in der vorhandenen Instanz von Visual Studio geöffnet werden sollen.
 
 ## <a name="remarks"></a>Bemerkungen
 

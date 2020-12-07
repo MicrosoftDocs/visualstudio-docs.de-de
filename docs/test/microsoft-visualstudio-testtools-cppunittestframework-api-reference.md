@@ -1,5 +1,7 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
+description: Dieser Artikel beschreibt die CppUnitTestFramework-Members, die Sie verwenden können, um C++-Komponententests auf Grundlage des nativen Microsoft-Frameworks für Komponententests zu schreiben.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b552ff667d4b7aef5f982d4fb0cda78d65c98ed6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82109428"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329184"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referenz für die API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“
 

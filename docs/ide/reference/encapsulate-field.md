@@ -1,5 +1,7 @@
 ---
 title: Refactoring eines Felds in eine Eigenschaft
+description: Hier erfahren Sie, wie Sie das Menü „Schnellaktionen und Refactorings...“ verwenden, um Felder in Eigenschaften zu konvertieren.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4ac28646af9d68accd18c0d40480dd22e47b023
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569711"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305472"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring des Kapselns eines Felds
 
@@ -54,7 +56,7 @@ Dieses Refactoring gilt für:
       - Wählen Sie **Bearbeiten > Umgestalten > Feld kapseln** aus.
       - Klicken Sie mit der rechten Maustaste auf den Code, wählen Sie das Menü **Schnellaktionen und Refactorings** aus, und wählen Sie im Popupvorschaufenster einen der Einträge für **Feld kapseln** aus.
 
-   Auswahl | Beschreibung
+   Auswahl | BESCHREIBUNG
    --------- | -----------
    **Feld kapseln (und Eigenschaft verwenden)** | Kapselt das Feld mit einer Eigenschaft und aktualisiert alle Verwendungen des Felds so, dass die generierte Eigenschaft verwendet wird.
    **Feld kapseln (Feld jedoch weiterhin verwenden)** | Kapselt das Feld mit einer Eigenschaft, lässt aber alle Verwendungen des Felds unverändert.
@@ -72,7 +74,7 @@ Dieses Refactoring gilt für:
 
       ![Ergebnis vom Kapseln der Eigenschaft – Visual Basic](media/encapsulate-result-vb.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular'
+description: Hier erfahren Sie, wie Sie ein Projekt erstellen, Bezeichnungen, Schaltflächen und andere Steuerelemente zu einem Formular hinzufügen und Eigenschaften für jedes hinzugefügte Steuerelement festlegen.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cd84b7b11f58b8deb62f6138255b4c8d942b5a00
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579448"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480108"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
 
@@ -45,7 +47,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld den Begriff *Windows Forms* ein. Wählen Sie anschließend **Desktop** aus der Liste **Projekttyp** aus.
 
@@ -138,7 +140,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 11. Legen Sie den Wert der **Text**-Eigenschaft der zweiten Bezeichnung auf **+** (Pluszeichen) fest.
 
-12. Legen Sie den Wert der **(Name)** -Eigenschaft der dritten Bezeichnung auf **plusRightLabel** fest.
+12. Legen Sie den Wert der **(Name)**-Eigenschaft der dritten Bezeichnung auf **plusRightLabel** fest.
 
 13. Legen Sie den Wert der **Text**-Eigenschaft der vierten Bezeichnung auf **=** (Gleichheitszeichen) fest.
 
@@ -210,4 +212,4 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 - Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md)** .
 
-- Um zum Übersichtsthema zurückzukehren, beachten Sie [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Um zum Übersichtsthema zurückzukehren, klicken Sie auf [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).

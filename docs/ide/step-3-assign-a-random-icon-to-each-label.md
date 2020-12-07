@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung'
+description: Hier erfahren Sie, wie Sie Bezeichnungen ein zufälliges Symbol zuweisen, damit die Symbole nicht in jedem Spiel in der gleichen Zelle angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 627b798827cd0b966d1f34336c7e1119841f9d4a
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 3f3330daeed243f96c44825a4be5516c573bb005
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472627"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480628"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung
 

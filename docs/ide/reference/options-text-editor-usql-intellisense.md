@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, U-SQL, IntelliSense
+description: Hier erfahren Sie, wie Sie über die Seite „IntelliSense“ im U-SQL-Abschnitt die IntelliSense-Einstellungen für U-SQL im Text-Editor ändern.
+ms.custom: SEO-VS-2020
 ms.date: 01/17/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d2af8bfcd8c9d80b589e01aedd535afbd1a913
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1aea741c91f38be9d5b423226e635b77e440d9e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769468"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040198"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Optionen, Text-Editor, U-SQL, IntelliSense
 
@@ -53,7 +55,7 @@ Aktivieren Sie ein Kontrollkästchen, um **QuickInfo** oder **Intellisense** aus
 
    Wenn diese Option aktiviert ist, wird nach Eingabe aller Zeichen für einen Eintrag in die Vervollständigungsliste und Drücken der EINGABETASTE automatisch eine neue Zeile hinzugefügt und der Cursor springt zur neuen Zeile.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
 - [Verwenden von IntelliSense](../../ide/using-intellisense.md)

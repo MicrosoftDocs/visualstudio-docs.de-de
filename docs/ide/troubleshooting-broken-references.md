@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei fehlerhaften Verweisen
+description: Hier erfahren Sie, wie Sie fehlerhafte Verweise korrigieren, die nicht dadurch verursacht wurden, dass Ihre Anwendung die Komponenten nicht finden kann, auf die verwiesen wird.
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2017
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565915"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479172"
 ---
 # <a name="troubleshoot-broken-references"></a>Problembehandlung bei fehlerhaften Verweisen
 
@@ -88,6 +90,6 @@ Es kann viele mögliche Ursachen geben, warum auf Dateien nicht zugegriffen werd
 
 Wenn ein Benutzer einen Verweis auf eine COM-Komponente hinzugefügt hat und ein anderer Benutzer nun versucht, den Code auf einem Computer auszuführen, auf dem diese Komponente nicht installiert ist, erhält er die Fehlermeldung, dass der Verweis fehlerhaft ist. Der Fehler wird behoben, indem die Komponente auf dem zweiten Computer installiert wird. Weitere Informationen zur Verwendung von Verweisen auf COM-Komponenten in Projekten finden Sie unter [COM-Interoperabilität in .NET Framework-Anwendungen](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Seite „Verweise“, Projekt-Designer (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)
+- [Seite "Verweise", Projekt-Designer (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

@@ -1,5 +1,7 @@
 ---
 title: Tests der programmierten UI
+description: Hier erfahren Sie, wie Sie einen Test der programmierten UI in Visual Studio erstellen, indem Sie den Test manuell ausführen, während der Test-Generator für programmierte UI im Hintergrund ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928094"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330107"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Testen Ihres Codes mit dem Test der programmierten UI
 

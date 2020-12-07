@@ -1,5 +1,7 @@
 ---
 title: Teilen oder Zusammenführen von if-Anweisungen
+description: Hier erfahren Sie, wie Sie das Menü „Schnellaktionen und Refactorings...“ verwenden, um if-Anweisungen zusammenzuführen oder zu teilen.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f72c6c2ed1cfdd1c8ea4471976d6a4980dfe422f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093701"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479926"
 ---
 # <a name="split-or-merge-if-statements"></a>Teilen oder Zusammenführen von if-Anweisungen
 

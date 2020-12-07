@@ -1,5 +1,7 @@
 ---
 title: IntelliSense für C++
+description: Hier erhalten Sie Informationen zu IntelliSense-Features, die Sie beim Programmieren Ihres C++-Projekts verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49d555b2e509237e34375e1b85a35c57a6db4f3b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594213"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478886"
 ---
 # <a name="visual-c-intellisense-features"></a>IntelliSense-Features für Visual C++
 
@@ -22,7 +24,7 @@ Dieser Artikel enthält eine Übersicht über die IntelliSense-Funktionen von C+
 
 ## <a name="intellisense-features-in-c"></a>IntelliSense-Funktionen in C++
 
-IntelliSense ist ein Name für eine Gruppe von Funktionen, die die Codierung erleichtern. Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisch ist, können im Prinzip alle IntelliSense-Funktionen im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++**  > **Erweitert** aktiviert oder deaktiviert werden . Das Dialogfeld **Optionen** steht im Menü **Tools** auf der Menüleiste zur Verfügung.
+IntelliSense ist ein Name für eine Gruppe von Funktionen, die die Codierung erleichtern. Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisch ist, können im Prinzip alle IntelliSense-Funktionen im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktiviert oder deaktiviert werden . Das Dialogfeld **Optionen** steht im Menü **Tools** auf der Menüleiste zur Verfügung.
 
 ![Dialogfeld „Tools“ > „Optionen“](../ide/media/sintellisensecpptoolsoptions.PNG)
 
@@ -38,19 +40,19 @@ Eine Liste der Symbole und ihrer Bedeutungen finden Sie unter [Symbole in der Kl
 
 ![Visual C&#43;&#43;-Fenster „Wort vervollständigen“](../ide/media/vs2015_cpp_complete_word.png)
 
-Wenn Sie die Memberliste zum ersten Mal aufrufen, werden in ihr nur Member angezeigt, auf die über den aktuellen Kontext zugegriffen werden kann. Wenn Sie danach **STRG**+**J** drücken, werden alle Member unabhängig vom Zugriff angezeigt. Wenn Sie sie ein drittes Mal aufrufen, wird eine noch größere Liste der Programmelemente angezeigt. Sie können die Memberliste im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++**  > **Allgemein** > **Member automatisch auflisten** deaktivieren.
+Wenn Sie die Memberliste zum ersten Mal aufrufen, werden in ihr nur Member angezeigt, auf die über den aktuellen Kontext zugegriffen werden kann. Wenn Sie danach **STRG**+**J** drücken, werden alle Member unabhängig vom Zugriff angezeigt. Wenn Sie sie ein drittes Mal aufrufen, wird eine noch größere Liste der Programmelemente angezeigt. Sie können die Memberliste im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Allgemein** > **Member automatisch auflisten** deaktivieren.
 
 ![Visual C&#43;&#43;-Memberliste](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>Parameterhilfe
 
-Wenn Sie eine öffnende geschweifte Klammer eines Funktionsaufrufs oder spitze Klammer in einer Variablendeklaration einer Klassenvorlage eingeben, zeigt der Editor ein kleines Fenster mit den Parametertypen für jede Überladung der Funktion oder des Konstruktors an. Der current-Parameter, der &mdash;auf der Cursorposition basiert&mdash;, wird in Fettformatierung angezeigt. Sie können Parameterinformationen im Dialogfeld **Optionen** unterhalb von **Text-Editor** > **C/C++**  > **Allgemein** > **Parameterinformationen** deaktivieren.
+Wenn Sie eine öffnende geschweifte Klammer eines Funktionsaufrufs oder spitze Klammer in einer Variablendeklaration einer Klassenvorlage eingeben, zeigt der Editor ein kleines Fenster mit den Parametertypen für jede Überladung der Funktion oder des Konstruktors an. Der current-Parameter, der &mdash;auf der Cursorposition basiert&mdash;, wird in Fettformatierung angezeigt. Sie können Parameterinformationen im Dialogfeld **Optionen** unterhalb von **Text-Editor** > **C/C++** > **Allgemein** > **Parameterinformationen** deaktivieren.
 
 ![Hilfe zu Visual C&#43;&#43;-Parametern](../ide/media/vs_2015_cpp_param_help.png)
 
 ## <a name="quick-info"></a>QuickInfo
 
-Wenn Sie mit dem Mauszeiger auf eine Variable zeigen, wird ein kleines Fenster angezeigt, in dem die Informationen und der Header, in dem der Typ definiert wird, angezeigt werden. Zeigen Sie auf einen Funktionsaufruf, um die Signatur der Funktion anzuzeigen. Sie können die QuickInfo im Dialogfeld **Optionen** unterhalb von **Text-Editor** > **C/C++**  > **Allgemein** > **Automatische QuickInfo** deaktivieren.
+Wenn Sie mit dem Mauszeiger auf eine Variable zeigen, wird ein kleines Fenster angezeigt, in dem die Informationen und der Header, in dem der Typ definiert wird, angezeigt werden. Zeigen Sie auf einen Funktionsaufruf, um die Signatur der Funktion anzuzeigen. Sie können die QuickInfo im Dialogfeld **Optionen** unterhalb von **Text-Editor** > **C/C++** > **Allgemein** > **Automatische QuickInfo** deaktivieren.
 
 ![Visual C&#43;&#43;-QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
@@ -90,7 +92,7 @@ Wenn Sie das Android-Projekt als aktives Projekt festlegen, wird die Wellenlinie
 
 ## <a name="intellisense-for-stand-alone-files"></a>IntelliSense für eigenständige Dateien
 
-Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte IntelliSense-Features im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++**  > **Erweitert** aktivieren oder deaktivieren. Beachten Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, den Abschnitt **IntelliSense und Suchen nach Nicht-Projektdateien**.
+Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte IntelliSense-Features im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktivieren oder deaktivieren. Beachten Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, den Abschnitt **IntelliSense und Suchen nach Nicht-Projektdateien**.
 
 ![Visual C&#43;&#43; IntelliSense mit Einzeldatei](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
@@ -100,11 +102,11 @@ Standardmäßig verwendet eine einzelne IntelliSense-Datei die standardmäßigen
 
 ## <a name="enable-or-disable-features"></a>Aktivieren oder Deaktivieren von Features
 
-Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisch ist, können im Prinzip alle IntelliSense-Funktionen im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++**  > **Erweitert** aktiviert oder deaktiviert werden . Das Dialogfeld **Optionen** steht im Menü **Tools** auf der Menüleiste zur Verfügung.
+Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisch ist, können im Prinzip alle IntelliSense-Funktionen im Dialogfeld **Optionen** unter **Text-Editor** > **C/C++** > **Erweitert** aktiviert oder deaktiviert werden . Das Dialogfeld **Optionen** steht im Menü **Tools** auf der Menüleiste zur Verfügung.
 
 ![Dialogfeld „Tools“ > „Optionen“](../ide/media/sintellisensecpptoolsoptions.PNG)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden von IntelliSense](../ide/using-intellisense.md)
 - [Konfigurieren eines C++-Projekts für IntelliSense](visual-cpp-intellisense-configuration.md)

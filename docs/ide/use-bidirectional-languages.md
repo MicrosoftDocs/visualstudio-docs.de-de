@@ -1,5 +1,7 @@
 ---
 title: Unterstützung für Arabisch und Hebräisch
+description: Hier erfahren Sie, wie Sie arabischen und hebräischen Text anzeigen und bidirektionalen Text für Objektnamen und Werte eingeben können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aa2520527259c476f84d83cdff81d9f96bc2bbd7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591995"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478964"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Unterstützung für bidirektionale Sprachen in Visual Studio
 
@@ -56,7 +58,7 @@ Folgende Elemente können auf Arabisch oder Hebräisch benannt werden und werden
 
 - Attribute und Metadaten.
 
-- Eigenschaftswerte.
+- Eigenschaftswerte
 
    Sie können im Fenster **Eigenschaften** arabischen oder hebräischen Text eingeben. In diesem Fenster können Sie mit den üblichen Windows-Tastenkombinationen zwischen der Leserichtung von rechts nach links und der Leserichtung von links nach rechts wechseln (**STRG**+**RECHTE UMSCHALTTASTE** für von rechts nach links bzw. **STRG**+**LINKE UMSCHALTTASTE** für von links nach rechts).
 
@@ -86,6 +88,6 @@ Die Leserichtung von rechts nach links wird an folgenden Stellen in Visual Studi
 
 - Der Code-Editor (und der Text-Editor) unterstützen die Lesefolge von rechts nach links nicht. Sie können zwar Text in einer bidirektionalen Sprache eingeben, doch die Lesefolge bleibt stets von links nach rechts.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Entwickeln von globalisierten und lokalisierten Apps](globalizing-and-localizing-applications.md)

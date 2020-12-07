@@ -1,5 +1,7 @@
 ---
 title: -Clean („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mithilfe der devenv-Befehlszeilenoption „Clean“ alle Zwischendateien und Ausgabeverzeichnisse bereinigen.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6023df4e0f8721f18a82950c0ea507406fd48e02
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570465"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041048"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -34,13 +36,13 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - *SolutionName*
 
-  Erforderlich. Der vollständige Pfad und Name der Projektmappendatei
+  Erforderlich. Der vollständige Pfad und Name der Projektmappendatei.
 
 - *Konfiguration*
 
-  Dies ist optional. Die Konfiguration (z.B. `Debug` oder `Release`) zum Bereinigen der Zwischendateien für die in *SolutionName* benannte Projektmappe. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`). Wenn dieses Argument nicht angegeben wird oder eine leere Zeichenfolge (`""`) enthält, verwendet das Tool die aktive Konfiguration der Projektmappe.
+  Optional. Die Konfiguration (z.B. `Debug` oder `Release`) zum Bereinigen der Zwischendateien für die in *SolutionName* benannte Projektmappe. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`). Wenn dieses Argument nicht angegeben wird oder eine leere Zeichenfolge (`""`) enthält, verwendet das Tool die aktive Konfiguration der Projektmappe.
 
-- `/Project` *ProjName*
+- `/Project` *Projektname*
 
   Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können den Anzeigenamen des Projekts oder einen relativen Pfad vom *SolutionName*-Ordner zur Projektdatei eingeben. Sie können auch den vollständigen Pfad und Namen der Projektdatei eingeben.
 
@@ -52,11 +54,11 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Dieser Schalter hat dieselbe Funktion wie der Menübefehl **Projektmappe bereinigen** in der IDE.
 
-Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
+Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelte Anführungszeichen ein.
 
 Zusammenfassende Informationen beim Bereinigen und Erstellen, inklusive Fehlermeldungen, können im **Befehlsfenster** oder in einer Protokolldatei, die durch den [/Out](out-devenv-exe.md)-Schalter angegeben wird, angezeigt werden.
 

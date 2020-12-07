@@ -1,5 +1,7 @@
 ---
 title: -SafeMode („devenv.exe“)
+description: Hier erfahren Sie, wie Sie Visual Studio mit der devenv-Befehlszeilenoption „SafeMode“ im abgesicherten Modus starten und nur die Standardumgebung und -dienste laden.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f180a45b274ec3042b7e150a43b5e8681fafcfed
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4d8f663ca581892ba3207acbb0271586c322bad2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593589"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039872"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 

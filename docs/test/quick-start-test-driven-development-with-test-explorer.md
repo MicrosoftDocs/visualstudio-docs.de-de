@@ -1,5 +1,7 @@
 ---
 title: Exemplarische Vorgehensweise für die testgesteuerte Entwicklung
+description: Hier erfahren Sie, wie Sie eine getestete Methode unter Verwendung des Microsoft-Testframeworks, das unkompliziert an andere Sprachen oder Testframeworks wie NUnit angepasst werden kann, in C# entwickeln.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 82cccbc47d26dd9ef74ee02931d6efb4bbfa0054
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566279"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329158"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Exemplarische Vorgehensweise: Testgesteuerte Entwicklung mit dem Test-Explorer
 
@@ -22,13 +24,13 @@ In dieser exemplarische Vorgehensweise wird veranschaulicht, wie eine getestete 
 
 ## <a name="create-a-test-and-generate-code"></a>Erstellen eines Tests und Generieren von Code
 
-1. Erstellen Sie ein C#-Projekt für eine **Klassenbibliothek (.NET Standard)** . Dieses Projekt enthält den Code, den Sie testen möchten. Geben Sie dem Projekt den Namen **MyMath**.
+1. Erstellen Sie ein C#-Projekt für eine **Klassenbibliothek (.NET Standard)**. Dieses Projekt enthält den Code, den Sie testen möchten. Geben Sie dem Projekt den Namen **MyMath**.
 
 2. Fügen Sie in derselben Projektmappe ein neues **MSTest-Testprojekt (.NET Core)** hinzu. Geben Sie dem Testprojekt den Namen **MathTests**.
 
    ![Neue Code- und Testprojekte](../test/media/test-driven-development-ide.png)
 
-3. Schreiben Sie eine einfache Testmethode, die das Ergebnis überprüft, das für eine bestimmte Eingabe abgerufen wurde. Fügen Sie der `UnitTest1`-Klasse folgenden Code hinzu:
+3. Schreiben Sie eine einfache Testmethode, die das Ergebnis überprüft, das für eine bestimmte Eingabe abgerufen wurde. Fügen Sie der `UnitTest1`-Klasse den folgenden Code hinzu:
 
    ```csharp
    [TestMethod]

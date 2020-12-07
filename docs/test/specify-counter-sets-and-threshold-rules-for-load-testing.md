@@ -1,5 +1,7 @@
 ---
 title: Indikatorensätze und Schwellenwertregeln für Auslastungstests
+description: Hier erfahren Sie, wie Sie Indikatorensätze und Schwellenwertregeln in einem Auslastungstest festlegen. Fügen Sie die zu testenden Server der Liste der Computern hinzu, für die Indikatoren erfasst werden.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 04348eb2d88c560e9687c687486e6b44d8394371
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596319"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328950"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Festlegen von Indikatorensätzen und Schwellenwertregeln für Computer in einem Auslastungstest
 
@@ -46,7 +48,7 @@ Es ist wichtig, dass Sie die zu testenden Server der Liste von Computern hinzuf�
 
 ## <a name="use-counter-sets"></a>Verwenden von Indikatorensätzen
 
-Die Auslastungstesttools erfassen mithilfe von Indikatoren die Leistungsdaten über einen bestimmten Zeitraum und stellen diese grafisch dar. Indikatordaten werden während eines Auslastungstestlaufs in den vom Benutzer angegebenen Intervallen erfasst. Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Samplingrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md). Die Indikatoren können zur Laufzeit oder nach Abschluss eines Auslastungstestlaufs mit dem *Auslastungstest-Analyzer* angezeigt werden.
+Die Auslastungstesttools erfassen mithilfe von Indikatoren die Leistungsdaten über einen bestimmten Zeitraum und stellen diese grafisch dar. Indikatordaten werden während eines Auslastungstestlaufs in den vom Benutzer angegebenen Intervallen erfasst. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md). Die Indikatoren können zur Laufzeit oder nach Abschluss eines Auslastungstestlaufs mit dem *Auslastungstest-Analyzer* angezeigt werden.
 
 Indikatordaten werden für den Server und alle Computer erfasst, auf denen ein Test ausgeführt wird. Wenn Sie eine Gruppe von Agent-Computern eingerichtet haben, auf denen die Tests ausgeführt werden sollen, werden außerdem auch Indikatoren für alle diese Computer erfasst.
 
@@ -62,7 +64,7 @@ Die Ergebnisanalyse von Auslastungstestläufen erfordert häufig domänenspezifi
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Überlegungen zum Leistungsindikator-Samplingintervall
 
-Wählen Sie basierend auf der Länge des Auslastungstests einen entsprechenden Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die Menge gesammelter Daten reduziert. Weitere Informationen finden Sie unter [Gewusst wie: Angeben der Samplingrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Wählen Sie basierend auf der Länge des Auslastungstests einen entsprechenden Wert für die Eigenschaft **Samplingrate** in den Laufzeiteinstellungen des Auslastungstests aus. Eine kleinere Samplingrate (z. B. der Standardwert von fünf Sekunden) erfordert mehr Speicherplatz in der Datenbank für die Auslastungstestergebnisse. Bei längeren Auslastungstests wird durch eine höhere Samplingrate die Menge gesammelter Daten reduziert. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Abtastrate](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Die folgende Tabelle enthält Richtlinien für Samplingraten.
 
@@ -97,7 +99,7 @@ Legen Sie die **Warnung bei Überschreiten**-Eigenschaft auf **TRUE** fest, um a
 
 Legen Sie die **Warnung bei Überschreiten**-Eigenschaft auf **FALSE** fest, um anzugeben, dass das Unterschreiten eines Schwellenwerts ein Problem darstellt. Wenn die Schwellenwertregel beispielsweise für **Anforderungen/s** festgelegt wurde, und Sie eine Warnung erhalten möchten, wenn der Wert 50 unterschreitet, verwenden Sie den Regeltyp **Mit Konstante vergleichen** und legen den **Kritischen Schwellenwert** auf 50 sowie **Warnung bei Überschreiten** auf **FALSE** fest.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Hinzufügen einer Schwellenwertregel](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
 - [Analysieren von Verstößen gegen Schwellenwertregeln](../test/analyze-threshold-rule-violations-in-load-tests.md)

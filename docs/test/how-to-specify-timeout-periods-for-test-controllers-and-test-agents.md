@@ -1,5 +1,7 @@
 ---
 title: Zeitlimitzeiträume für Testcontroller und Test-Agents
+description: Hier erfahren Sie, wie Sie die Timeoutwerte für den Testcontroller und den Test-Agent ändern, indem Sie die zugehörigen XML-Konfigurationsdateien bearbeiten.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc661999eb12bb679aa3622f0f14adc3ffc661a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287284"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330003"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Vorgehensweise: Angeben von Zeitüberschreitungszeiträumen für Testcontroller und Test-Agents
 
@@ -28,7 +30,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
 
 - Testcontroller: *QTController.exe.config*
 
-    |Schlüsselname|Beschreibung|Wert|
+    |Schlüsselname|BESCHREIBUNG|Wert|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Die Anzahl von Sekunden, während der auf eine Pinganforderung des Agents gewartet wird, bevor die Verbindung als unterbrochen gilt.|"n" Sekunden.|
     |AgentSyncTimeoutInSeconds|Beim Starten eines synchronisierenden Testlaufs die Anzahl von Sekunden, während der auf die Synchronisierung aller Agents gewartet wird, bevor der Testlauf abgebrochen wird.|"n" Sekunden.|
@@ -37,7 +39,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
 
 - Test-Agent: *QTAgentService.exe.config*
 
-    |Schlüsselname|Beschreibung|Wert|
+    |Schlüsselname|BESCHREIBUNG|Wert|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Die Anzahl von Sekunden zwischen Verbindungsversuchen mit dem Controller.|"n" Sekunden. Standard: "30 (dreißig Sekunden)".|
     |RemotingTimeoutSeconds|Die maximale Dauer eines Remotingaufrufs in Sekunden.|"n" Sekunden. Standard: "600 (zehn Minuten)".|
@@ -68,7 +70,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    \- oder -
+    - oder -
 
     Fügen Sie einen zusätzlichen Schlüssel hinzu, und geben Sie einen Timeoutwert an. Sie können z. B. den `AgentInitializeTimeout`-Schlüssel im Abschnitt `<appSettings>` hinzufügen und einen Wert von fünf Minuten angeben:
 
@@ -102,7 +104,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    \- oder -
+    - oder -
 
     Fügen Sie einen zusätzlichen Schlüssel hinzu, und geben Sie einen Timeoutwert an. Sie können z. B. den `RemotingTimeoutSeconds`-Schlüssel im Abschnitt `<appSettings>` hinzufügen und einen Wert von 15 Minuten angeben:
 
@@ -112,7 +114,7 @@ Zum Bearbeiten der verschiedenen Timeouteinstellungen eines Testcontrollers oder
     </appSettings>
     ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
 - [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular'
+description: Hier erfahren Sie, wie Sie dem Formular eine <xref:System.Windows.Forms.OpenFileDialog>-Komponente und eine <xref:System.Windows.Forms.ColorDialog>-Komponente hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9697bf6cf84c2a74daac2017b4f63d52a7019b6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579280"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479471"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular
 
@@ -25,14 +27,14 @@ Eine Komponente ist in gewisser Hinsicht mit einem Steuerelement vergleichbar. Z
 
 ## <a name="to-add-dialog-components-to-your-form"></a>So fügen Sie dem Formular Dialogfeldkomponenten hinzu
 
-1. Öffnen Sie den **Windows Forms-Designer** (**Form1.cs [Entwurf]** ), und öffnen Sie dann die Gruppe **Dialogfelder** in der **Toolbox**.
+1. Öffnen Sie den **Windows Forms-Designer** (**Form1.cs [Entwurf]**), und öffnen Sie dann die Gruppe **Dialogfelder** in der **Toolbox**.
 
     > [!NOTE]
     > Die Gruppe **Dialogfelder** in der **Toolbox** verfügt über Komponenten zum Öffnen vieler nützlicher Dialogfelder, die z.B. zum Öffnen und Speichern von Dateien, Durchsuchen von Ordnern und Auswählen von Schriftarten und Farben verwendet werden können. Sie verwenden in diesem Projekt zwei Dialogfeldkomponenten: OpenFileDialog und ColorDialog.
 
 1. Doppelklicken Sie auf **OpenFileDialog**, um dem Formular eine Komponente mit dem Namen **openFileDialog1** hinzuzufügen. Doppelklicken Sie in der **Toolbox** auf **ColorDialog**, um dem Formular eine Komponente mit dem Namen **colorDialog1** hinzuzufügen. (Sie verwenden diese Komponente im nächsten Lernprogrammschritt.) Unten im **Windows Forms-Designer** sollte ein Bereich angezeigt werden (unterhalb des Formulars **Picture Viewer**), das wie im folgenden Bild gezeigt ein Symbol für jede der beiden hinzugefügten Dialogfeldkomponenten enthält.
 
-     ![Dialogfeldkomponenten](../ide/media/express_dialogsadded.png)<br>***Dialog****feldkomponenten*
+     ![Dialogfeldkomponenten](../ide/media/express_dialogsadded.png)<br>**_Dialogkomponenten_* _ _*
 
 1. Wählen Sie das Symbol **openFileDialog1** im unteren Bereich des **Windows Forms-Designers** aus. Legen Sie zwei Eigenschaften fest:
 
@@ -42,7 +44,7 @@ Eine Komponente ist in gewisser Hinsicht mit einem Steuerelement vergleichbar. Z
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*
         ```
 
-    - Legen Sie für die Eigenschaft **Title** (Titel) Folgendes fest: **Select a picture file** (Bilddatei auswählen).
+    - Legen Sie die **Title**-Eigenschaft auf Folgendes fest: **Select a picture file** („Bilddatei auswählen“).
 
          Die Eigenschafteneinstellungen für **Filter** geben die Arten von Dateitypen an, die im Dateidialogfeld **Select a picture** („Bilddatei auswählen“) angezeigt werden.
 
@@ -55,7 +57,7 @@ Eine Komponente ist in gewisser Hinsicht mit einem Steuerelement vergleichbar. Z
 
 * Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 6: Benennen der Schaltflächen-Steuerelemente](../ide/step-6-name-your-button-controls.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: Erstellen eines Vergleichsspiels](tutorial-3-create-a-matching-game.md)

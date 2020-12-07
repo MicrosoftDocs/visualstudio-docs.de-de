@@ -1,5 +1,7 @@
 ---
 title: Befehl "Befehlsfensterausgaben protokollieren"
+description: Hier erfahren Sie mehr über den Befehl „Befehlsfensterausgaben protokollieren“ und darüber, wie damit alle Ein- und Ausgaben aus dem Befehlsfenster in eine Datei kopiert werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cab4f102832e8dfa6ce51b61abed8e3bfd672c40
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568658"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305275"
 ---
 # <a name="log-command-window-output-command"></a>Befehl „Befehlsfensterausgaben protokollieren“
 
@@ -38,16 +40,16 @@ Dies ist optional. Der Name der Protokolldatei. Standardmäßig wird die Datei i
 > [!TIP]
 > Geben Sie den vollständigen Dateipfad in Anführungszeichen an, wenn der Pfad Leerzeichen enthält, um den Speicherort der Protokolldatei zu ändern.
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 
 /on\
-Dies ist optional. Startet das Protokoll für das **Befehlsfenster** in der angegebenen Datei und hängt die Datei mit den neuen Informationen an.
+Optional. Startet das Protokoll für das **Befehlsfenster** in der angegebenen Datei und hängt die Datei mit den neuen Informationen an.
 
 /off\
-Dies ist optional. Stoppt das Protokoll für das **Befehlsfenster**.
+Optional. Stoppt das Protokoll für das **Befehlsfenster**.
 
 /overwrite\
-Dies ist optional. Wenn die angegebene Datei im `filename`-Argument mit einer vorhandenen Datei übereinstimmt, wird die Datei überschrieben.
+Optional. Wenn die angegebene Datei im `filename`-Argument mit einer vorhandenen Datei übereinstimmt, wird die Datei überschrieben.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -73,7 +75,7 @@ In diesem Beispiel wird das Protokollieren von Befehlen in der vormals verwendet
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)

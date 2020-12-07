@@ -1,5 +1,7 @@
 ---
 title: Reguläre Ausdrücke verwenden
+description: Hier erfahren Sie mehr über einige Zeichen, Operatoren, Konstrukte und Musterbeispiele, die Sie in Visual Studio für reguläre Ausdrücke verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568619"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478990"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -31,7 +33,7 @@ Visual Studio verwendet [reguläre .NET-Ausdrücke](/dotnet/standard/base-types/
 
 Die folgende Tabelle enthält eine Auswahl an Zeichen, Operatoren, Konstrukten und Musterbeispielen für reguläre Ausdrücke. Eine vollständige Referenz finden Sie unter [Sprachelemente für reguläre Ausdrücke](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-|Zweck|expression|Beispiel|
+|Zweck|Ausdruck|Beispiel|
 |-------------|----------------|-------------|
 |Übereinstimmung mit beliebigem Zeichen (mit Ausnahme des Zeilenumbruchs). Weitere Informationen finden Sie unter [Alle Zeichen](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` findet „aro“ in „around“ und „abo“ in „about“, jedoch nicht „acro“ in „across“.|
 |Übereinstimmung mit keinem oder mehreren Vorkommen des vorhergehenden Ausdrucks (wobei die Übereinstimmung möglichst viele Zeichen umfasst). Weitere Informationen finden Sie unter [Übereinstimmung mit null oder mehr Vorkommen](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` findet „r“ in „rack“, „ar“ in „ark“ und „aar“ in „aardvark“.|
@@ -88,7 +90,7 @@ Benannte Erfassungsgruppen können wie nummerierte Erfassungsgruppen innerhalb d
 
 - **im regulären Ausdruck**: Verwenden Sie `\k<name>`. So verweist beispielsweise `\k<repeated>` im regulären Ausdruck `(?<repeated>\w+)\s\k<repeated>` auf die Erfassungsgruppe, die `repeated` heißt und deren Teilausdruck `\w+` ist.
 
-- **in einem Ersetzungsmuster**: Verwenden Sie `${name}`. Beispielsweise `${repeated}`.
+- **in einem Ersetzungsmuster**: Verwenden Sie `${name}`. Beispiel: `${repeated}`.
 
 Die folgende Abbildung zeigt als Beispiel den regulären Ausdruck `(?<repeated>\w+)\s\k<repeated>` und die Ersetzungszeichenfolge `${repeated}`. Sowohl der reguläre Ausdruck als auch das Ersetzungsmuster verweisen auf Erfassungsgruppe mit dem Namen `repeated`. Wenn Sie in Visual Studio im Dialogfeld **Schnellersetzung** auf **Alle ersetzen** klicken, werden wiederholte Wörter aus dem Text entfernt.
 

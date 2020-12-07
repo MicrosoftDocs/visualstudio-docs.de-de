@@ -1,5 +1,7 @@
 ---
 title: 'Schritt 5: Hinzufügen von Steuerelementen zum Formular'
+description: Hier erfahren Sie, wie Sie dem Formular Steuerelemente hinzufügen, z. B. ein <xref:System.Windows.Forms.PictureBox>-Steuerelement und ein <xref:System.Windows.Forms.CheckBox>-Steuerelement.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631def96fc7e4b5d7858ea3474492b41c526da65
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579361"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480576"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Schritt 5: Hinzufügen von Steuerelementen zum Formular
 
@@ -29,21 +31,21 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein <xref
 
 1. Wählen Sie das neue Steuerelement **PictureBox** aus, und klicken Sie dann auf das schwarze Dreieck auf dem neuen PictureBox-Steuerelement, um die dazugehörige Aufgabenliste wie im folgenden Screenshot gezeigt anzuzeigen.
 
-    ![PictureBox-Aufgaben](../ide/media/express_pictureboxtasks.png)<br/>***PictureBox***-*Aufgaben**
+    ![PictureBox-Aufgaben](../ide/media/express_pictureboxtasks.png)<br/>****PictureBox **_ _-Aufgaben**
 
     > [!NOTE]
     > Wenn Sie dem TableLayoutPanel unbeabsichtigt den falschen Typ von Steuerelement hinzufügen, können Sie es löschen. Klicken Sie mit der rechten Maustaste auf das Steuerelement, und wählen Sie dann im Kontextmenü **Löschen** aus. Sie können Steuerelemente aus dem Formular auch mithilfe der Menüleiste entfernen. Wählen Sie in der Menüleiste **Bearbeiten** > **Rückgängig** oder **Bearbeiten** > **Löschen** aus.
 
 1. Klicken Sie im Menü **PictureBox-Aufgaben** des Steuerelements **PictureBox** auf den Link **In übergeordnetem Container andocken**. Dadurch wird die **Dock**-Eigenschaft des PictureBox-Steuerelements automatisch auf **Fill** festgelegt. Sie können dies überprüfen, indem Sie das Steuerelement **PictureBox** auswählen. Öffnen Sie dann das Fenster **Eigenschaften**, und vergewissern Sie sich, dass die Eigenschaft **Dock** auf **Fill** festgelegt ist.
 
-1. Sorgen Sie dafür, dass das PictureBox-Steuerelement beide Spalten umfasst, indem Sie dessen **ColumnSpan**-Eigenschaft ändern. Wählen Sie in **PictureBox** das **PictureBox**-Steuerelement aus, und legen Sie**2** für die Eigenschaft **ColumnSpan** fest. Auch wenn das PictureBox-Steuerelement leer ist, möchten Sie einen leeren Frame anzeigen. Legen Sie die **BorderStyle**-Eigenschaft auf **Fixed3D** fest.
+1. Sorgen Sie dafür, dass das PictureBox-Steuerelement beide Spalten umfasst, indem Sie dessen **ColumnSpan**-Eigenschaft ändern. Wählen Sie in **PictureBox** das **PictureBox**-Steuerelement aus, und legen Sie **2** für die Eigenschaft **ColumnSpan** fest. Auch wenn das PictureBox-Steuerelement leer ist, möchten Sie einen leeren Frame anzeigen. Legen Sie die **BorderStyle**-Eigenschaft auf **Fixed3D** fest.
 
     > [!NOTE]
     > Wenn die Eigenschaft **ColumnSpan** für das PictureBox-Steuerelement nicht angezeigt wird, ist es wahrscheinlich, dass das PictureBox-Steuerelement zum Formular anstatt zum TableLayoutPanel hinzugefügt wurde. Um dies zu korrigieren, wählen Sie das Steuerelement **PictureBox** aus, und löschen Sie es. Wählen Sie anschließend **TableLayoutPanel** aus, und fügen Sie ein neues PictureBox-Steuerelement hinzu.
 
 1. Wählen Sie im Formular **TableLayoutPanel** aus, und fügen Sie dem Formular anschließend ein CheckBox-Steuerelement hinzu. Doppelklicken Sie in der **Toolbox** auf das Element **CheckBox**, um der nächsten freien Zelle in der Tabelle ein neues CheckBox-Steuerelement hinzuzufügen. Da ein PictureBox-Steuerelement die ersten beiden Zellen im TableLayoutPanel einnimmt, wird das CheckBox-Steuerelement der linken unteren Zelle hinzugefügt. Wählen Sie die Eigenschaft **Text** aus, und geben Sie wie in der folgenden Abbildung dargestellt das Wort **Stretch** ein.
 
-    ![TextBox-Steuerelement mit Stretch-Eigenschaft](../ide/media/express_pictureviewercheckbox.png)<br/>***Steuerelement*** *TextBox* mit ***Stretch***-*Eigenschaft*
+    ![TextBox-Steuerelement mit Stretch-Eigenschaft](../ide/media/express_pictureviewercheckbox.png)<br/>**_TextBox_* _ _-Steuerelement mit* ***Stretch**_ _-Eigenschaft*
 
 1. Wählen Sie das Steuerelement **TableLayoutPanel** im Formular aus, und wechseln Sie dann zur Gruppe **Container** in der **Toolbox** (wo Sie das TableLayoutPanel-Steuerelement abgerufen haben). Doppelklicken Sie auf das Element **FlowLayoutPanel**, um der letzten Zelle (unten rechts) ein neues Steuerelement hinzuzufügen. Docken Sie dann das FlowLayoutPanel-Element im TableLayoutPanel-Steuerelement an. Hierzu klicken Sie entweder in der Aufgabenliste des FlowLayoutPanel-Elements auf **In übergeordnetem Container andocken** oder legen die **Dock**-Eigenschaft des Steuerelements auf **Fill** fest.
 
@@ -74,7 +76,7 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein <xref
 
    Die Schaltflächen sollten jetzt die richtige Größe aufweisen und in der richtigen Reihenfolge angezeigt werden. (Sofern alle vier Schaltflächen ausgewählt sind, können Sie alle vier **AutoSize**-Eigenschaften gleichzeitig ändern.) Im folgenden Bild werden die vier Schaltflächen gezeigt.
 
-    ![Bildanzeigeprogramm mit vier Schaltflächen](../ide/media/express_autosize.png)<br/>***Bildanzeigeprogramm*** *mit vier Schaltflächen*
+    ![Bildanzeigeprogramm mit vier Schaltflächen](../ide/media/express_autosize.png)<br/>**_Bildanzeigeprogramm_* _ _mit vier Schaltflächen*
 
 1. Führen Sie jetzt Ihr Programm aus, damit die Änderungen widergespiegelt werden.
 
@@ -84,9 +86,9 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein <xref
 
 * Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 6: Benennen der Schaltflächen-Steuerelemente](../ide/step-6-name-your-button-controls.md)** .
 
-* Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+* Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 4: Erstellen des Layouts für das Formular mit einem TableLayoutPanel-Steuerelement](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: Erstellen eines Vergleichsspiels](tutorial-3-create-a-matching-game.md)

@@ -1,5 +1,7 @@
 ---
 title: Erfahren Sie, wie Sie Ihren Code mit Live Unit Testing testen
+description: Hier erfahren Sie, wie Sie Live Unit Testing verwenden, indem Sie eine einfache Klassenbibliothek für .NET Standard erstellen. Des Weiteren erstellen Sie zu Testzwecken ein MSTest-Projekt für .NET Core.
+ms.custom: SEO-VS-2020
 ms.date: 04/03/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287011"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329496"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Erste Schritte mit Live Unit Testing
 

@@ -1,5 +1,7 @@
 ---
 title: Komponententests in Visual C#-Code
+description: Hier lernen Sie, wie Sie Komponententests für eine C#-Klasse in einer UWP-App erstellen. Dieser Artikel veranschaulicht die testgesteuerte Entwicklung.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 410d5dfefa5980bceabff99d66067987b390a615
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590864"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330081"
 ---
 # <a name="unit-test-c-code"></a>Komponententest von C#-Code
 
@@ -24,15 +26,15 @@ Dieser Artikel veranschaulicht die *testgesteuerte Entwicklung*. Bei dieser Vorg
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Erstellen Sie die Projektmappe und das Komponententestprojekt.
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
-2. Suchen Sie die Projektvorlage **Leere App (universelles Windows)** , und wählen Sie sie aus.
+2. Suchen Sie die Projektvorlage **Leere App (universelles Windows)**, und wählen Sie sie aus.
 
 3. Nennen Sie das Projekt **Maths**.
 
 4. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie dann **Hinzufügen** > **Neues Projekt** aus.
 
-5. Suchen Sie die Projektvorlage **Komponententest-App (Universelles Windows)** , und wählen Sie sie aus.
+5. Suchen Sie die Projektvorlage **Komponententest-App (Universelles Windows)**, und wählen Sie sie aus.
 
 6. Nennen Sie das Testprojekt **RooterTests**.
 

@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, C/C++, Experimentell
+description: Hier erfahren Sie, wie Sie über die Seite „Experimentell“ im C/C++-Abschnitt die experimentellen Verhaltensweisen im Zusammenhang mit IntelliSense und der Suchdatenbank ändern.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278699"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040302"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
 
@@ -33,7 +35,7 @@ Drücken Sie **STRG**+**Q**, um das Suchfeld zu aktivieren, und geben Sie anschl
 Diese Features sind mit einer Visual Studio-Installation verfügbar.
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)
 
 ## <a name="enable-predictive-intellisense"></a>Aktivieren von Predictive IntelliSense
 
@@ -61,10 +63,10 @@ Weitere Text-Editor-Features finden Sie in [Visual Studio Marketplace](https://m
 
 - **Onlinehilfe**: Durchsuchen Sie die Onlinehilfe nach Ihren Fehlermeldungen.
 
-- Und mehr...
+- Und vieles mehr...
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refactoring in C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+- [Umgestaltung in C++ (VC-Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )

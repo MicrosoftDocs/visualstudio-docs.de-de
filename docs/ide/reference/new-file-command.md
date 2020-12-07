@@ -1,5 +1,7 @@
 ---
 title: Befehl "Neue Datei"
+description: Hier erfahren Sie mehr über den Befehl „Neue Datei“ und darüber, wie dieser eine neue Datei erstellt und öffnet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c800ce0ed130ed78f9537584c95a29a717f405fa
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595955"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304106"
 ---
 # <a name="new-file-command"></a>Befehl "Neue Datei"
 Erstellt eine neue Datei und öffnet sie. Die Datei wird unter „Sonstige Dateien“ (Ordner) angezeigt.
@@ -34,7 +36,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
 Dies ist optional. Der Name der Datei. Wenn kein Name angegeben wird, wird ein Standardname bereitgestellt. Wenn kein Vorlagenname aufgeführt ist, wird eine Textdatei erstellt.
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 /t:`templatename`\
 Dies ist optional. Gibt den Typ der zu erstellenden Datei an.
 
@@ -72,4 +74,4 @@ Durch dieses Beispiel wird eine neue Webseite namens „test1.htm“ erstellt un
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Direktfenster](../../ide/reference/immediate-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

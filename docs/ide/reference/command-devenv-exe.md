@@ -1,5 +1,7 @@
 ---
 title: -Command („devenv.exe“)
+description: Hier erfahren Sie, wie Sie mithilfe der devenv-Befehlszeilenoption „Command“ einen angegebenen Befehl ausführen, nachdem die Visual Studio-IDE gestartet wurde.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bcfff93ac9cb4903c534c0d4d57387a5143b6b40
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570400"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040874"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -35,7 +37,7 @@ devenv /Command CommandName
 
 Erforderlich. Der vollständige Name eines Visual Studio-Befehls oder dessen Aliasname in doppelten Anführungszeichen. Weitere Informationen zur Syntax von Befehlen und Alias finden Sie unter [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nachdem der Startvorgang abgeschlossen wurde, wird der genannte Befehl in der IDE ausgeführt.
 
@@ -63,7 +65,7 @@ devenv /command "navigate https://docs.microsoft.com/"
 devenv /command "nf some_file.cs"
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

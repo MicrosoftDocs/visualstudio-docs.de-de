@@ -1,5 +1,7 @@
 ---
 title: Statische Hilfsklassen | Microsoft IntelliTest-Test-Tool für Entwickler
+description: Hier erfahren Sie mehr über statische Hilfsprogrammklassen, die IntelliTest für die Erstellung von parametrisierten Komponententests bereitstellt.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f11b4f7d456e588e6a2920580766ce06530227e0
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315186"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329470"
 ---
 # <a name="static-helper-classes"></a>Statische Hilfsklassen
 
@@ -48,7 +50,7 @@ public void TestSomething(int i, int j) {
 }
 ```
 
-**Hinweise**
+**Anmerkungen**
 
 Der obige Code ist fast äquivalent zu:
 
@@ -95,7 +97,7 @@ Die **PexChoose**-Klasse kann in zwei Modi betrieben werden:
 
 * Der Choice-Anbieter richtet den generierten Code für bestimmte Testfälle auf eine bestimmte Weise ein, damit die erneute Ausführung eines solchen Testfalls spezifische Auswahlwerte erstellt, um einen bestimmten Ausführungspfad auszulösen.
 
-**Verwendung**
+**Nutzung**
 
 * Machen Sie einen einfachen Aufruf an **PexChoose.Value**, um einen neuen Wert zu generieren:
 
@@ -141,7 +143,7 @@ public partial class MathExTests {
 
 Eine statische Klasse, die verwendet wird, um Einschränkungen für Parameter zu ignorieren, und symbolischen Informationen zu drucken, die Werten zugeordnet wurden.
 
-**Verwendung**
+**Nutzung**
 
 Normalerweise versucht IntelliTest alle Ausführungspfade des Codes während der Ausführung abzudecken. Allerdings sollte es, besonders bei der Berechnung von Annahmen und Assertionen, nicht alle möglichen Fälle untersuchen.
 

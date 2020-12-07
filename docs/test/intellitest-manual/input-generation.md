@@ -1,5 +1,7 @@
 ---
 title: Dynamische symbolische Ausführung | Microsoft IntelliTest-Test-Tool für Entwickler
+description: Hier erfahren Sie, wie IntelliTest Eingaben für parametrisierte Unittests erzeugt, indem die Branchbedingungen im Programm analysiert werden.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315199"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329909"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
 
@@ -61,7 +63,7 @@ Je weiter die Analyse fortschreitet und je mehr erreichbare Methoden gefunden we
 
 Der [Einschränkungs-Solver](#constraint-solver) von IntelliTest bestimmt Testeingabewerte primitiver Typen wie z.B. **byte**, **int**, **float** und anderer, um verschiedene Ausführungspfade für den Test und das getestete Programm auszulösen.
 
-## <a name="objects"></a>erzwingen
+## <a name="objects"></a>Objekte
 
 IntelliTest kann entweder [Instanzen vorhandener .NET-Klassen erstellen](#existing-classes), oder Sie können IntelliTest verwenden, um automatisch [Pseudoobjekte zu erstellen](#parameterized-mocks), die eine spezifische Schnittstelle implementieren und sich je nach Verwendung anders verhalten.
 
@@ -83,7 +85,7 @@ Wenn der Typ nicht sichtbar ist oder wenn die Felder nicht [sichtbar](#visibilit
 
 Wenn IntelliTest Tests erzeugt, versucht es, nur Aktionen durchzuführen, die gemäß den Sichtbarkeitsregeln von .NET Framework innerhalb des Kontexts der erzeugten Tests zulässig sind (wie das Aufrufen von Konstruktoren, Methoden und das Festlegen von Feldern).
 
-Dies sind die Regeln:
+Die folgenden Regeln gelten:
 
 * **Sichtbarkeit von internen Membern**
   * IntelliTest geht davon aus, dass erzeugte Tests Zugriff auf interne Member haben, die für die einschließende Klasse [PexClass](attribute-glossary.md#pexclass) sichtbar sind.
@@ -133,6 +135,6 @@ Die statische Klasse [PexChoose](static-helper-classes.md#pexchoose) kann verwen
 
 Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Weiterführende Themen
+## <a name="further-reading"></a>Weitere nützliche Informationen
 
-* [Wie funktioniert das?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [Wie funktioniert dies?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

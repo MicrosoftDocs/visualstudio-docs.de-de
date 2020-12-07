@@ -1,5 +1,7 @@
 ---
 title: C#-Codeausschnitte
+description: In Visual Studio können Sie Codeausschnitte zum Hinzufügen von häufig verwendetem Code zu den C#-Codedateien verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 06/05/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 46b2d231f1fa9a0e90538c426f48c86e5fafecbe
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594161"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478756"
 ---
 # <a name="c-code-snippets"></a>C#-Codeausschnitte
 
@@ -31,22 +33,22 @@ Der **Codeausschnitteinfüger** zeigt den Codeausschnittnamen für alle verfügb
 
 Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enthalten.
 
-|Name (oder Verknüpfung)|Beschreibung|Mögliche Stellen zum Einfügen des Ausschnitts|
+|Name (oder Verknüpfung)|BESCHREIBUNG|Mögliche Stellen zum Einfügen des Ausschnitts|
 | - |-----------------| - |
 |#if|Erstellt eine [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if)-Direktive und eine [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif)-Direktive.|Beliebig.|
 |#region|Erstellt eine [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region)-Direktive und eine [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion)-Direktive.|Beliebig.|
 |~|Erstellt einen [Finalizer](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (Destruktor) für die enthaltende Klasse.|Innerhalb einer Klasse.|
 |Attribut|Erstellt eine Deklaration für eine <xref:System.Attribute> abgeleitete Klasse.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
 |checked|Erstellt einen [checked](/dotnet/csharp/language-reference/keywords/checked)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|Klasse|Erstellt eine Klassendeklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
+|class|Erstellt eine Klassendeklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
 |ctor|Erstellt einen Konstruktor für die enthaltende Klasse.|Innerhalb einer Klasse.|
 |cw|Erstellt einen Aufruf an <xref:System.Console.WriteLine%2A>.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |do|Erstellt eine [do](/dotnet/csharp/language-reference/keywords/do) `while`-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |else|Erstellt einen [else](/dotnet/csharp/language-reference/keywords/if-else)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |enum|Erstellt eine [enum](/dotnet/csharp/language-reference/keywords/enum)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
-|ist gleich|Erstellt eine Methodendeklaration, die die in der <xref:System.Object>-Klasse definierte <xref:System.Object.Equals%2A>-Methode außer Kraft setzt.|Innerhalb einer Klasse oder Struktur.|
+|equals|Erstellt eine Methodendeklaration, die die in der <xref:System.Object>-Klasse definierte <xref:System.Object.Equals%2A>-Methode außer Kraft setzt.|Innerhalb einer Klasse oder Struktur.|
 |exception|Erstellt eine Deklaration für eine Klasse, die von einer Ausnahme abgeleitet wird (standardmäßig <xref:System.Exception>).|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|
-|for|Erstellt eine [for](/dotnet/csharp/language-reference/keywords/for)-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
+|für|Erstellt eine [for](/dotnet/csharp/language-reference/keywords/for)-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |foreach|Erstellt eine [foreach](/dotnet/csharp/language-reference/keywords/foreach-in)-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |forr|Erstellt eine [for](/dotnet/csharp/language-reference/keywords/for)-Schleife, deren Schleifenvariable nach jeder Iteration verringert wird.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |if|Erstellt einen [if](/dotnet/csharp/language-reference/keywords/if-else)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
@@ -55,9 +57,9 @@ Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enth
 |invoke|Erstellt einen Block, durch den ein Ereignis sicher aufgerufen wird.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |Iterator|Erstellt einen Iterator.|Innerhalb einer Klasse oder Struktur.|
 |iterindex|Erstellt ein „benanntes“ Iterator-/Indexerpaar unter Verwendung einer geschachtelten Klasse.|Innerhalb einer Klasse oder Struktur.|
-|lock|Erstellt einen [lock](/dotnet/csharp/language-reference/keywords/lock-statement)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
+|Sperre|Erstellt einen [lock](/dotnet/csharp/language-reference/keywords/lock-statement)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |mbox|Erstellt einen Aufruf an <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Sie müssen möglicherweise einen Verweis auf *System.Windows.Forms.dll* hinzufügen.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|Namespace|Erstellt eine [namespace](/dotnet/csharp/language-reference/keywords/namespace)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces).|
+|namespace|Erstellt eine [namespace](/dotnet/csharp/language-reference/keywords/namespace)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces).|
 |prop|Erstellt eine Deklaration mit [automatisch implementierter Eigenschaft](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Innerhalb einer Klasse oder Struktur.|
 |propfull|Erstellt eine Eigenschaftendeklaration mit `get`-Accessor und `set`-Accessor.|Innerhalb einer Klasse oder Struktur.|
 |propg|Erstellt eine schreibgeschützte [automatisch implementierte Eigenschaft](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) mit einem privaten `set`-Accessor.|Innerhalb einer Klasse oder Struktur.|
@@ -69,10 +71,10 @@ Die folgenden Codeausschnitte sind für C# standardmäßig in Visual Studio enth
 |tryf|Erstellt einen [try-finally](/dotnet/csharp/language-reference/keywords/try-finally)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |unchecked|Erstellt einen [unchecked](/dotnet/csharp/language-reference/keywords/unchecked)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 |unsafe|Erstellt einen [unsafe](/dotnet/csharp/language-reference/keywords/unsafe)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
-|Mithilfe von|Erstellt eine [using](/dotnet/csharp/language-reference/keywords/using-directive)-Direktive.|In einem Namespace (einschließlich des globalen Namespaces).|
+|using|Erstellt eine [using](/dotnet/csharp/language-reference/keywords/using-directive)-Direktive.|In einem Namespace (einschließlich des globalen Namespaces).|
 |while|Erstellt eine [while](/dotnet/csharp/language-reference/keywords/while)-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codeausschnittfunktionen](../ide/code-snippet-functions.md)
 - [Codeausschnitte](../ide/code-snippets.md)

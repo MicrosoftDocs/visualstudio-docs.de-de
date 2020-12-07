@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, C#, Erweitert
+description: Hier erfahren Sie, wie Sie mithilfe der Seite „Erweitert“ im C#-Abschnitt die Einstellungen für die Formatierung im Editor, das Coderefactoring und die XML-Dokumentationskommentare für C# ändern.
+ms.custom: SEO-VS-2020
 ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 6e8c235c62eeba394902698ecbfc412ed37b0979
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626194"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039891"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 

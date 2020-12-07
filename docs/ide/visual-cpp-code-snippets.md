@@ -1,5 +1,7 @@
 ---
 title: Visual C#-Codeausschnitte
+description: Hier erfahren Sie, wie Sie Codeausschnitte zum Hinzufügen von häufig verwendetem Code zu den C++-Codedateien verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: corob-msft
@@ -9,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e5cde2be817c49344e02ff06030022f99790a7a2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77277828"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478808"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
 
@@ -30,7 +32,7 @@ Sie können einen Codeausschnitt an einer bestimmten Stelle im Code hinzufügen 
 
 - Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Ausschnitt einfügen** aus.
 
-- Verwenden Sie folgenden Tastaturbefehl: **STRG**+**K**+**X**.
+- Verwenden Sie folgenden Tastaturbefehl: **STRG**+**K**+**X**
 
 Es sollte eine Liste mit Auswahlmöglichkeiten beginnend mit **#if** angezeigt werden. Bei der Auswahl von **#if** sollte der folgende Code in die Datei eingefügt werden:
 
@@ -50,9 +52,9 @@ Um einen Codeausschnitt zum Umschließen des ausgewählten Codes zu verwenden, w
 
 - Wählen Sie im Menü **Bearbeiten** > **IntelliSense** die Option **Umschließen mit** aus.
 
-- Drücken Sie auf der Tastatur die Tasten**STRG**+**K**+**S**.
+- Drücken Sie auf der Tastatur die Tasten: **STRG**+**K**+**S**
 
-Wählen Sie **#if** aus. Folgendes sollte angezeigt werden:
+Wählen Sie **#if** aus. Die Ausgabe sollte in etwa wie folgt aussehen:
 
 ```cpp
 #if 0
@@ -64,7 +66,7 @@ Sie können dann 0 durch die richtige Bedingung ersetzen.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Wo finde ich eine vollständige Liste der C++-Codeausschnitte?
 
-Sie finden die vollständige Liste der C++-Codeausschnitte durch das Aufrufen des **Codeausschnitt-Managers** (im Menü **Extras**) und durch das Festlegen der **Sprache** auf **Visual C++** . Erweitern Sie im Fenster darunter **Visual C++** . Sie sollte die Namen aller C++-Codeausschnitte in alphabetischer Reihenfolge sehen.
+Sie finden die vollständige Liste der C++-Codeausschnitte durch das Aufrufen des **Codeausschnitt-Managers** (im Menü **Extras**) und durch das Festlegen der **Sprache** auf **Visual C++**. Erweitern Sie im Fenster darunter **Visual C++**. Sie sollte die Namen aller C++-Codeausschnitte in alphabetischer Reihenfolge sehen.
 
 Die Namen der meisten Codeausschnitte sind selbsterklärend, doch einige Namen sind möglicherweise verwirrend.
 
@@ -170,6 +172,6 @@ Wenn Sie versuchen, den Destruktor-Ausschnitt außerhalb einer Klasse einzufüge
 {
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codeausschnitte](../ide/code-snippets.md)

@@ -1,5 +1,7 @@
 ---
 title: Einstellungen für die Auslastungstestprotokollierung
+description: Hier erfahren Sie, wie Sie die Einstellungen für die Protokollierung von Auslastungstests ändern, um die Menge der gesammelten Leistungsdaten zu steuern, denn diese kann zu sehr großen Ergebnisdateien führen.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 464429ef516d3f4cd6dadd013f274139eb106a57
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566305"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329197"
 ---
 # <a name="modify-load-test-logging-settings"></a>Ändern von Einstellungen für die Auslastungstestprotokollierung
 

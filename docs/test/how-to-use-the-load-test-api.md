@@ -1,5 +1,7 @@
 ---
 title: Auslastungstest-API
+description: Hier erfahren Sie, wie Sie die Auslastungstest-API verwenden, die Test-Plug-Ins unterstützt und Auslastungstests steuern oder erweitern kann.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fc3ff1aa238249f7425c61b5b28d2a96e299fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd2064a76777390eb4b708b402578f1d89ca52c7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287102"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328677"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Vorgehensweise: Verwenden der Auslastungstest-API
 
@@ -63,5 +65,5 @@ Sie können auch Plug-Ins für Webleistungstests erstellen. Weitere Informatione
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [How to: Verwenden der Webleistungstest-API](../test/how-to-use-the-web-performance-test-api.md)
+- [Vorgehensweise: Verwenden der Webleistungstest-API](../test/how-to-use-the-web-performance-test-api.md)
 - [How to: Erstellen eines Auslastungstest-Plug-Ins](../test/how-to-create-a-load-test-plug-in.md)

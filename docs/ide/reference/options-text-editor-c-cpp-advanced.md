@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, C/C++, Erweitert
+description: Hier erfahren Sie, wie Sie über die Seite „Erweitert“ im C/C++-Abschnitt die Verhaltensweisen im Zusammenhang mit IntelliSense und der Suchdatenbank ändern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,21 +16,21 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe69471d231599c6e3eece0b56ff70fca5b6afab
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275210"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040341"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
 
 Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt.
 
-Klicken Sie zum Öffnen dieser Seite im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie **Text-Editor** und **C/C++** , und klicken Sie dann auf **Erweitert**.
+Klicken Sie zum Öffnen dieser Seite im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie **Text-Editor** und **C/C++**, und klicken Sie dann auf **Erweitert**.
 
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)
 
 ## <a name="browsingnavigation"></a>Durchsuchen/Navigation
 
@@ -64,7 +66,7 @@ Die Codesuchdatenbank wird beim nächsten Laden der Projektmappe vollständig ne
 
 **Intervall für das erneute Prüfen der Projektmappe**
 
-Ein „Projektmappe jetzt prüfen“-Auftrag ist für das angegebene Intervall geplant. Sie müssen einen Wert zwischen 0 und 5000 Minuten angeben. Der Standardwert ist 60 Minuten. Beim erneuten Durchsuchen der Projektmappe werden die Zeitstempel der Dateien überprüft, um zu bestimmen, ob eine Datei außerhalb der IDE geändert wurde. (Änderungen in der IDE werden automatisch nachverfolgt, und die Dateien werden aktualisiert.) Implizit eingeschlossene Dateien werden überprüft, um zu ermitteln, ob auf sie noch Verweise vorhanden sind.
+Ein „Projektmappe jetzt prüfen“-Auftrag ist für das angegebene Intervall geplant. Sie müssen einen Wert zwischen 0 und 5000 Minuten angeben. Der Standardwert beträgt 60 Minuten. Beim erneuten Durchsuchen der Projektmappe werden die Zeitstempel der Dateien überprüft, um zu bestimmen, ob eine Datei außerhalb der IDE geändert wurde. (Änderungen in der IDE werden automatisch nachverfolgt, und die Dateien werden aktualisiert.) Implizit eingeschlossene Dateien werden überprüft, um zu ermitteln, ob auf sie noch Verweise vorhanden sind.
 
 ## <a name="diagnostic-logging"></a>Diagnoseprotokollierung
 
@@ -182,7 +184,7 @@ Fügt eine Zeile hinzu, wenn Sie nach Eingabe eines ganzen Worts die EINGABETAST
 
 Ersetzt „.“ durch „->“, sofern dies für die Memberliste anwendbar ist.
 
-## <a name="references"></a>Verweise
+## <a name="references"></a>Referenzen
 
 **Auflösen deaktivieren**
 

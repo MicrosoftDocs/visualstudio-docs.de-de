@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352269"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190205"
 ---
 # <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 
@@ -40,11 +40,11 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 * Ihren Wartungsbedarf ermitteln
 
-  Wenn Ihr Unternehmen einen Funktionssatz länger behalten, aber regelmäßige Wartungsupdates erhalten möchten, sollten Sie eine Wartungsbaseline verwenden. Weitere Informationen finden Sie im Abschnitt ***Supportoptionen für Enterprise- und Professional-Kunden*** der Seite [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) sowie auf der Seite [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md).
+  Wenn Ihr Unternehmen einen Funktionssatz länger behalten, aber regelmäßige Wartungsupdates erhalten möchten, sollten Sie eine Wartungsbaseline verwenden. Weitere Informationen finden Sie im Abschnitt ***Supportoptionen für Enterprise- und Professional-Kunden** _ der Seite [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) sowie auf der Seite [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md).
 
   Wenn Sie Wartungsupdates zusammen mit kumulativen Funktionsupdates anwenden möchten, können Sie die neuesten Bits auswählen.
 
-* Ein Aktualisierungsmodell festlegen
+_ Festlegen eines Updatemodells
 
   Wo sollen einzelne Clientcomputer Updates abrufen? Entscheiden Sie insbesondere, ob Sie Updates aus dem Internet oder von einer lokalen Unternehmensfreigabe abrufen möchten. Wenn Sie die lokale Freigabe wählen, müssen Sie entscheiden, ob einzelne Benutzer ihre eigenen Clients aktualisieren können oder ob ein Administrator die Clients programmgesteuert aktualisieren sollen.
 
@@ -66,11 +66,11 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 * Ihren Wartungsbedarf ermitteln
 
-  Wenn Ihr Unternehmen einen Funktionssatz länger behalten, aber regelmäßige Wartungsupdates erhalten möchten, sollten Sie eine Wartungsbaseline verwenden. Weitere Informationen finden Sie im Abschnitt ***Support für ältere Versionen von Visual Studio*** der Seite [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) sowie auf der Seite [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md).
+  Wenn Ihr Unternehmen einen Funktionssatz länger behalten, aber regelmäßige Wartungsupdates erhalten möchten, sollten Sie eine Wartungsbaseline verwenden. Weitere Informationen finden Sie im Abschnitt ***Support für ältere Versionen von Visual Studio** _ der Seite [Produktlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) sowie auf der Seite [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md).
 
   Wenn Sie Wartungsupdates zusammen mit kumulativen Funktionsupdates anwenden möchten, können Sie die neuesten Bits auswählen.
 
-* Ein Aktualisierungsmodell festlegen
+_ Festlegen eines Updatemodells
 
   Wo sollen einzelne Clientcomputer Updates abrufen? Entscheiden Sie insbesondere, ob Sie Updates aus dem Internet oder von einer lokalen Unternehmensfreigabe abrufen möchten. Wenn Sie die lokale Freigabe wählen, müssen Sie entscheiden, ob einzelne Benutzer ihre eigenen Clients aktualisieren können oder ob ein Administrator die Clients programmgesteuert aktualisieren sollen.
 

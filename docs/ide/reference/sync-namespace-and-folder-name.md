@@ -1,5 +1,7 @@
 ---
 title: Synchronisieren von Namespace und Ordnername
+description: Hier erfahren Sie, wie Sie das Menü „Schnellaktionen und Refactorings...“ verwenden, um Namespaces mit Ordnernamen zu synchronisieren.
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10dff5d9129d1a91f01ef7541397d86f5a71468c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67160756"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479809"
 ---
 # <a name="sync-namespace-and-folder-name"></a>Synchronisieren von Namespace und Ordnername
 

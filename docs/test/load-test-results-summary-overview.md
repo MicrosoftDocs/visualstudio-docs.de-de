@@ -1,5 +1,7 @@
 ---
 title: Load Test Results Summary Overview
+description: Hier erfahren Sie, wie Sie die Zusammenfassung des Auslastungstests anzeigen können. In der Zusammenfassung des Auslastungstests werden die wichtigsten Ergebnisse in einem kompakten und leicht lesbaren Format dargestellt.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10e3e990637faf15c64aa6b0f18c4eb9114bea7b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75584490"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328820"
 ---
 # <a name="load-test-results-summary-overview"></a>Übersicht der Auslastungstestergebnisse
 

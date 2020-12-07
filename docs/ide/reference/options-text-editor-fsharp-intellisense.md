@@ -1,5 +1,7 @@
 ---
 title: Optionen, Text-Editor, F#, IntelliSense
+description: Hier erfahren Sie, wie Sie mit der Seite „IntelliSense“ im F#-Abschnitt die IntelliSense-Einstellungen für F# im Text-Editor ändern.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84e24f609891e67bdafaab5ff8847dc341b861ba
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72666229"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039613"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Optionen, Text-Editor, F#, IntelliSense
 
@@ -34,7 +36,7 @@ Verwenden Sie die Optionsseite **IntelliSense**, um einige Text-Editor-Einstellu
 
    Wenn diese Option aktiviert ist, zeigt IntelliSense automatisch die Vervollständigungsliste an, wenn Sie mit der Eingabe beginnen, und schließt Elemente aus Namespaces ein, die Sie nicht geöffnet haben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
 - [Verwenden von IntelliSense](../../ide/using-intellisense.md)

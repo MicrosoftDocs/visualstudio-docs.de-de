@@ -1,5 +1,6 @@
 ---
 title: Verwenden von Toolfenstern zum Anzeigen der Codestruktur
+description: Hier erfahren Sie, wie Sie die Toolfenster „Klassenansicht“, „Aufrufhierarchie“, „Objektkatalog“ und „Codedefinition“ (nur C++) verwenden können, um Klassen und deren Members in Visual Studio zu untersuchen.
 ms.custom: SEO-VS-2020
 ms.date: 09/19/2019
 ms.topic: reference
@@ -26,16 +27,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e65dd22ccf1b47559238efcd2be18cf6b81fcb
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: e33a060718fc5fd8a3545baaa7e78b6b763ab78d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049282"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478938"
 ---
 # <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>Anzeigen der Codestruktur mithilfe verschiedener Toolfenster
 
-Sie können in Visual Studio Klassen und deren Member mithilfe verschiedener Toolfenster untersuchen, darunter **Klassenansicht** , **Aufrufhierarchie** , **Objektkatalog** und **Codedefinition** (nur C++). Mit diesen Toolfenstern können Sie Code in Visual Studio-Projekten, .NET-Komponenten, COM-Komponenten, Dynamic Link Librarys (DLLs) und Typbibliotheken (TLBs) untersuchen.
+Sie können in Visual Studio Klassen und deren Member mithilfe verschiedener Toolfenster untersuchen, darunter **Klassenansicht**, **Aufrufhierarchie**, **Objektkatalog** und **Codedefinition** (nur C++). Mit diesen Toolfenstern können Sie Code in Visual Studio-Projekten, .NET-Komponenten, COM-Komponenten, Dynamic Link Librarys (DLLs) und Typbibliotheken (TLBs) untersuchen.
 
 Sie können auch den **Projektmappen-Explorer** verwenden, um die Typen und Member in Ihren Projekten zu durchsuchen, nach Symbolen, Symbolverweisen und weiteren Inhalten zu suchen und die Aufrufhierarchie einer Methode anzuzeigen, ohne zwischen mehreren Toolfenstern wechseln zu müssen.
 
@@ -43,13 +44,13 @@ Wenn Sie über die Edition Visual Studio Enterprise verfügen, können Sie zum V
 
 ## <a name="class-view-visual-basic-c-c"></a>Klassenansicht (Visual Basic, C#, C++)
 
-Die **Klassenansicht** wird als Teil des **Projektmappen-Explorers** und in einem separaten Fenster angezeigt. **Klassenansicht** zeigt die Elemente einer Anwendung an. Im oberen Bereich werden Namespaces, Typen, Schnittstellen, Enumerationen und Klassen angezeigt, während der untere Bereich die Member auflistet, die zum Typ gehören, der im oberen Bereich ausgewählt ist. Mithilfe dieses Fensters können Sie im Quellcode zu Memberdefinitionen wechseln (oder im **Objektkatalog** , wenn das Element außerhalb der Projektmappe definiert ist).
+Die **Klassenansicht** wird als Teil des **Projektmappen-Explorers** und in einem separaten Fenster angezeigt. **Klassenansicht** zeigt die Elemente einer Anwendung an. Im oberen Bereich werden Namespaces, Typen, Schnittstellen, Enumerationen und Klassen angezeigt, während der untere Bereich die Member auflistet, die zum Typ gehören, der im oberen Bereich ausgewählt ist. Mithilfe dieses Fensters können Sie im Quellcode zu Memberdefinitionen wechseln (oder im **Objektkatalog**, wenn das Element außerhalb der Projektmappe definiert ist).
 
 Sie müssen ein Projekt nicht kompilieren, um seine Elemente in der **Klassenansicht** anzuzeigen. Das Fenster wird aktualisiert, wenn Sie im Projekt Änderungen am Code vornehmen.
 
 Sie können Code zu Ihrem Projekt hinzufügen, indem Sie den Projektknoten und dann die Schaltfläche **Hinzufügen** auswählen, um das Dialogfeld **Neues Element hinzufügen** zu öffnen. Der Code wird in einer separaten Datei hinzugefügt.
 
-Wenn Ihr Projekt in die Quellcodeverwaltung eingecheckt wird, zeigt jedes **Klassenansicht** -Element ein Symbol an, das den Quellcodestatus der Datei angibt. Allgemeine Befehle zur Quellcodeverwaltung wie **Auschecken** , **Einchecken** und **Letzte Version abrufen** sind auch im Kontextmenü für das entsprechende Element verfügbar.
+Wenn Ihr Projekt in die Quellcodeverwaltung eingecheckt wird, zeigt jedes **Klassenansicht**-Element ein Symbol an, das den Quellcodestatus der Datei angibt. Allgemeine Befehle zur Quellcodeverwaltung wie **Auschecken**, **Einchecken** und **Letzte Version abrufen** sind auch im Kontextmenü für das entsprechende Element verfügbar.
 
 ### <a name="class-view-toolbar"></a>Klassenansicht: Symbolleiste
 
@@ -57,7 +58,7 @@ Die Symbolleiste der **Klassenansicht** enthält die folgenden Befehle:
 
 |name|Beschreibung|
 |-|-|
-|**Neuer Ordner**|Erstellt einen virtuellen Ordner oder Unterordner, in dem Sie häufig verwendete Elemente organisieren können. Sie werden in der aktiven Projektmappendatei ( *SUO* ) gespeichert. Nach dem Umbenennen oder Löschen eines Elements in Ihrem Code wird es in einem virtuellen Ordner möglicherweise als Fehlerknoten angezeigt. Löschen Sie den Fehlerknoten, um dieses Problem zu beheben. Wenn Sie ein Element umbenannt haben, können Sie es aus der Projekthierarchie erneut in den Ordner verschieben.|
+|**Neuer Ordner**|Erstellt einen virtuellen Ordner oder Unterordner, in dem Sie häufig verwendete Elemente organisieren können. Sie werden in der aktiven Projektmappendatei (*SUO*) gespeichert. Nach dem Umbenennen oder Löschen eines Elements in Ihrem Code wird es in einem virtuellen Ordner möglicherweise als Fehlerknoten angezeigt. Löschen Sie den Fehlerknoten, um dieses Problem zu beheben. Wenn Sie ein Element umbenannt haben, können Sie es aus der Projekthierarchie erneut in den Ordner verschieben.|
 |**Zurück**|Navigiert zum zuvor ausgewählten Element.|
 |**Vorwärts**|Navigiert zum nächsten ausgewählten Element.|
 |**Klassendiagramm anzeigen** (nur Projekte mit verwaltetem Code)|Dieser Befehl wird verfügbar, wenn Sie in der **Klassenansicht** einen Namespace oder Typ auswählen. Wenn ein Namespace ausgewählt ist, zeigt das Klassendiagramm alle darin enthaltenen Typen an. Wenn ein Typ ausgewählt ist, zeigt das Klassendiagramm nur diesen Typ an.|
@@ -83,10 +84,10 @@ Das Kontextmenü in der **Klassenansicht** kann in Abhängigkeit des ausgewählt
 
 |name|Beschreibung|
 |-|-|
-|**Gehe zu Definition**|Sucht nach der Definition des Elements im Quellcode oder im **Objektkatalog** , wenn das Element nicht im geöffneten Projekt definiert ist.|
+|**Gehe zu Definition**|Sucht nach der Definition des Elements im Quellcode oder im **Objektkatalog**, wenn das Element nicht im geöffneten Projekt definiert ist.|
 |**Definition durchsuchen**|Zeigt das ausgewählte Element im **Objektkatalog** an.|
 |**Alle Verweise suchen**|Sucht das aktuell ausgewählte Objektelement und zeigt die Ergebnisse im Fenster **Suchergebnisse** an.|
-|**Für Typ filtern** (nur verwalteter Code)|Zeigt nur den ausgewählten Typ oder Namespace an. Sie können den Filter entfernen, indem Sie auf die Schaltfläche **Suchergebnisse löschen** ( **X** ) neben dem Feld **Suchen** klicken.|
+|**Für Typ filtern** (nur verwalteter Code)|Zeigt nur den ausgewählten Typ oder Namespace an. Sie können den Filter entfernen, indem Sie auf die Schaltfläche **Suchergebnisse löschen** (**X**) neben dem Feld **Suchen** klicken.|
 |**Kopieren**|Kopiert den vollqualifizierten Namen des Objekts.|
 |**Alphabetisch sortieren**|Listet Typen und Member alphabetisch nach Namen auf.|
 |**Nach Membertyp sortieren**|Listet Typen und Member nach Typ sortiert auf (sodass Klassen vor Schnittstellen, Schnittstellen vor Delegaten und Methoden vor Eigenschaften stehen).|
@@ -109,7 +110,7 @@ Mithilfe der Dropdownliste auf der Symbolleiste können Sie den Bereich der Hier
 
 Im Hauptbereich werden die Aufrufe zur und von der Methode angezeigt. Im Bereich **Aufrufort** wird die Position des ausgewählten Aufrufs angezeigt. Für Member, die virtuell oder abstrakt sind, wird ein Knoten zur **Außerkraftsetzung des Methodennamens** angezeigt. Für Schnittstellenmember wird ein Knoten zum **Implementieren des Methodennamens** angezeigt.
 
-Das Fenster **Aufrufhierarchie** findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen** , um diese Verweise zu suchen.
+Das Fenster **Aufrufhierarchie** findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um diese Verweise zu suchen.
 
 Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle:
 
@@ -126,7 +127,7 @@ Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle:
 
 Das Fenster **Objektkatalog** zeigt Beschreibungen des Codes in Ihren Projekten an.
 
-Sie können die Komponenten, die Sie anzeigen möchten, mithilfe der Dropdownliste im oberen Bereich des Fensters filtern. Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliothekassemblys, Typbibliotheken und *OCX* -Dateien umfassen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen.
+Sie können die Komponenten, die Sie anzeigen möchten, mithilfe der Dropdownliste im oberen Bereich des Fensters filtern. Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliothekassemblys, Typbibliotheken und *OCX*-Dateien umfassen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen.
 
 ::: moniker range="vs-2017"
 
@@ -142,7 +143,7 @@ Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverze
 
 Der linke Bereich des **Objektbrowsers** zeigt Assemblys. Sie können die Assemblys erweitern, um die darin enthaltenen Namespaces anzuzeigen, und dann die Namespaces erweitern, um die darin enthaltenen Typen anzuzeigen. Wenn Sie einen Typ auswählen, werden seine Member (z. B. Eigenschaften und Methoden) im rechten Bereich aufgeführt. Im unteren rechten Bereich werden ausführliche Informationen zum ausgewählten Objekt angezeigt.
 
-Sie können über das Feld **Suchen** am oberen Rand des Fensters nach einem bestimmten Objekt suchen. Bei den Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet. Suchergebnisse werden im linken Bereich angezeigt. Klicken Sie zum Löschen einer Suche auf die Schaltfläche **Suchergebnisse löschen** ( **X** ) neben dem Feld **Suchen**.
+Sie können über das Feld **Suchen** am oberen Rand des Fensters nach einem bestimmten Objekt suchen. Bei den Suchvorgängen wird die Groß-/Kleinschreibung nicht beachtet. Suchergebnisse werden im linken Bereich angezeigt. Klicken Sie zum Löschen einer Suche auf die Schaltfläche **Suchergebnisse löschen** (**X**) neben dem Feld **Suchen**.
 
 Der **Objektkatalog** verfolgt die von Ihnen vorgenommene Auswahl, und Sie können zwischen Ihren Auswahlmöglichkeiten navigieren, indem Sie die Schaltflächen **Weiter** und **Zurück** auf der Symbolleiste verwenden.
 
@@ -214,12 +215,12 @@ Das Kontextmenü in der **Codedefinition** kann die folgenden Befehle enthalten:
 |**Haltepunkt**|Fügt einen Haltepunkt (oder einen Ablaufverfolgungspunkt) hinzu.|
 |**Ausführen bis Cursor**|Führt das Programm bis zur Position des Cursors im Debugmodus aus.|
 |**Codeausschnitt**||
-|**Ausschneiden** , **Kopieren** , **Einfügen**||
+|**Ausschneiden**, **Kopieren**, **Einfügen**||
 |**Anmerkung**||
 |**Gliedern**|Standardbefehle für die Gliederung.|
 |**Neu einlesen**||
 |**Definition bearbeiten**|Verschiebt die Einfügemarke an die Definition im Codefenster.|
-|**Codierung auswählen**|Öffnet das Fenster **Codierung** , damit Sie eine Codierung für die Datei festlegen können.|
+|**Codierung auswählen**|Öffnet das Fenster **Codierung**, damit Sie eine Codierung für die Datei festlegen können.|
 
 ## <a name="document-outline-window"></a>Fenster Dokumentgliederung
 

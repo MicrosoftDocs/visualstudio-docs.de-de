@@ -1,5 +1,7 @@
 ---
 title: Testen einer UWP-App mit einem Test der programmierten UI
+description: Hier erfahren Sie, wie Sie einen Test der programmierten UI für eine App der Universellen Windows-Plattform (UWP) erstellen, indem Sie eine UWP-App zum Testen und Erstellen eines Tests der programmierten UI erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
 author: mikejo5000
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ec6750a48b8902ec77e8982beb774e306c8d1d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286751"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330237"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Erstellen eines Tests der programmierten UI zum Testen einer UWP-App
 
@@ -45,7 +47,7 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
 
      ![Entwerfen der UWP-App](../test/media/toolbox-controls.png)
 
-1. Benennen Sie die Steuerelemente. Wählen Sie das Textfeld-Steuerelement aus, und geben Sie im **Eigenschaftenfenster** im Feld **Name** **textBox** ein. Wählen Sie das Schaltflächen-Steuerelement aus, und geben Sie im **Eigenschaftenfenster** im Feld **Name** **button** ein.
+1. Benennen Sie die Steuerelemente. Wählen Sie das Textfeld-Steuerelement aus, und geben Sie im **Eigenschaftenfenster** im Feld **Name****textBox** ein. Wählen Sie das Schaltflächen-Steuerelement aus, und geben Sie im **Eigenschaftenfenster** im Feld **Name****button** ein.
 
 1. Doppelklicken Sie auf das Schaltflächen-Steuerelement, und fügen Sie folgenden Code zur `Button_Click`-Methode hinzu. Dieser Code legt den Text im Textfeld auf den Namen des Schaltflächen-Steuerelements fest. Dies kann mit dem Test der programmierten UI überprüft werden, der noch erstellt wird.
 
@@ -57,7 +59,7 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
    Me.textBox.Text = Me.button.Name
    ```
 
-1. Drücken Sie **STRG**+**F5**, um die App auszuführen. Es sollte nun etwa Folgendes angezeigt werden:
+1. Drücken Sie **STRG**+**F5**, um die App auszuführen. Folgendes sollte angezeigt werden:
 
    ![UWP-App mit Schaltfläche und Textfeld](media/uwp-app.png)
 
@@ -65,7 +67,7 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
 
 1. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf die Projektmappe und dann auf **Hinzufügen** > **Neues Projekt**, um ein Testprojekt zur Projektmappe hinzuzufügen.
 
-1. Suchen Sie die Vorlage **Testprojekt der programmierten UI (Universelles Windows)** , und wählen Sie sie aus.
+1. Suchen Sie die Vorlage **Testprojekt der programmierten UI (Universelles Windows)**, und wählen Sie sie aus.
 
    ::: moniker range="vs-2017"
 
@@ -226,7 +228,7 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
 
 **A**: Alle Codeänderungen, die Sie an der Datei *UIMapDesigner.cs* vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem **Coded UI Test Builder** (Generator für Tests der programmierten UI) generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, kopieren Sie sie in die Datei *UIMap.cs*, und benennen Sie sie um. Die Datei *UIMap.cs* kann verwendet werden, um Methoden und Eigenschaften in der Datei *UIMapDesigner.cs* zu überschreiben. Entfernen Sie den Verweis auf die ursprüngliche Methode in der Datei *CodedUITest.cs*, und ersetzen Sie ihn durch den umbenannten Methodennamen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden der Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
 - [Festlegen einer eindeutigen Automatisierungseigenschaft für UWP-Steuerelemente für Tests](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

@@ -1,5 +1,7 @@
 ---
 title: Schreiben von Komponententests für C++-DLLs
+description: Hier erfahren Sie mehr über die verschiedenen Möglichkeiten, DLL-Code zu testen, je nachdem, ob die DLL die zu testenden Funktionen exportiert.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7eb7b7be524e20ca87c70c3f1f771f4f8a01141
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287037"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328625"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
@@ -58,13 +60,13 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
       ::: moniker range="vs-2019"
 
-      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
+      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen****Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
 
       ::: moniker-end
 
       ::: moniker range="vs-2017"
 
-      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++**  > **Test** > **C++-Komponententestprojekt**.
+      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt**.
 
       ::: moniker-end
 
@@ -90,13 +92,13 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
       ::: moniker range="vs-2019"
 
-      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
+      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen****Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
 
       ::: moniker-end
 
       ::: moniker range="vs-2017"
 
-      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++**  > **Test** > **C++-Komponententestprojekt**.
+      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt**.
 
       ::: moniker-end
 
@@ -141,7 +143,7 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
 1. Fügen Sie in jeder Komponententestcodedatei eine `#include`-Anweisung für die Header des zu testenden Projekts hinzu.
 
-2. Fügen Sie den Komponententestcodedateien Testklassen und -methoden hinzu. Beispiel:
+2. Fügen Sie den Komponententestcodedateien Testklassen und -methoden hinzu. Zum Beispiel:
 
     ```cpp
     #include "stdafx.h"
@@ -169,11 +171,11 @@ Wechseln Sie zum Verfahren [So fügen Sie Komponententests im gleichen Projekt h
 
 1. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
 - [Referenz für die API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Debuggen von nativem Code](../debugger/debugging-native-code.md)
 - [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
-- [Importieren und Exportieren](/cpp/build/importing-and-exporting)
+- [Importieren und exportieren](/cpp/build/importing-and-exporting)
 - [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)
