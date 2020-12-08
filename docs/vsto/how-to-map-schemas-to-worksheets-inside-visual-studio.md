@@ -1,7 +1,8 @@
 ---
 title: 'Gewusst wie: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio'
+description: Erfahren Sie, wie Sie ein XML-Schema einem Microsoft Office Excel-Arbeitsblatt zuordnen können, während das Arbeitsblatt in Visual Studio geöffnet ist.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538137"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848208"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Gewusst wie: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio
   Sie können ein XML-Schema einem Arbeitsblatt zuordnen, während das Arbeitsblatt in Visual Studio geöffnet ist. Sie verwenden die gleichen Microsoft Office Excel-Tools, die Sie verwenden, wenn die Arbeitsmappe außerhalb von Visual Studio geöffnet ist. Das Office-Projekt erstellt dieselben Objekte, unabhängig davon, ob Sie das Schema vor oder nach dem Erstellen der Excel-Lösung dem Arbeitsblatt zuordnen.
@@ -65,6 +66,6 @@ ms.locfileid: "85538137"
 
      Wenn Sie ein sich wiederholendes Schema Element ziehen, generiert das Office-Projekt ein Steuerelement, <xref:Microsoft.Office.Tools.Excel.ListObject> das nicht automatisch an eine Datenquelle gebunden ist. Weitere Informationen finden Sie unter [XML-Schemas und-Daten in Anpassungen auf Dokument Ebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
 - [XML-Schemas und-Daten in Anpassungen auf Dokument Ebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern'
+description: Erfahren Sie, wie Sie ListObject-Steuerelemente zu einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Projekten auf Dokument Ebene hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538319"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848156"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern
   Sie können <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelemente in einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Projekten auf Dokumentebene hinzufügen.
@@ -38,7 +40,7 @@ ms.locfileid: "85538319"
   Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelementen finden Sie unter [ListObject Control](../vsto/listobject-control.md).
 
 ## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Hinzufügen von ListObject-Steuerelementen zur Entwurfszeit
- Es gibt mehrere Möglichkeiten zum Hinzufügen von Steuer <xref:Microsoft.Office.Tools.Excel.ListObject> Elementen zu einem Arbeitsblatt in einem Projekt auf Dokument Ebene zur Entwurfszeit: innerhalb von Excel, über die Visual Studio- **Toolbox**und aus dem **Datenquellen** Fenster.
+ Es gibt mehrere Möglichkeiten zum Hinzufügen von Steuer <xref:Microsoft.Office.Tools.Excel.ListObject> Elementen zu einem Arbeitsblatt in einem Projekt auf Dokument Ebene zur Entwurfszeit: innerhalb von Excel, über die Visual Studio- **Toolbox** und aus dem **Datenquellen** Fenster.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -50,7 +52,7 @@ ms.locfileid: "85538319"
 
 #### <a name="to-use-the-toolbox"></a>So verwenden Sie die Toolbox
 
-1. Ziehen Sie aus der Registerkarte **Excel-Steuerelemente** der **Toolbox**ein <xref:Microsoft.Office.Tools.Excel.ListObject> in das Arbeitsblatt.
+1. Ziehen Sie aus der Registerkarte **Excel-Steuerelemente** der **Toolbox** ein <xref:Microsoft.Office.Tools.Excel.ListObject> in das Arbeitsblatt.
 
      Das Dialogfeld **ListObject-Steuerelement hinzufügen** wird angezeigt.
 
@@ -71,7 +73,7 @@ ms.locfileid: "85538319"
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein ListObject-Steuerelement programmgesteuert hinzu
 
-1. Fügen Sie im <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> -Ereignishandler von `Sheet1`den folgenden Code hinzu, um ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement zu den Zellen **A1** bis **A4**hinzuzufügen:
+1. Fügen Sie im <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> -Ereignishandler von `Sheet1`den folgenden Code hinzu, um ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement zu den Zellen **A1** bis **A4** hinzuzufügen:
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
@@ -81,12 +83,12 @@ ms.locfileid: "85538319"
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>So fügen Sie einem Arbeitsblatt ein ListObject-Steuerelement programmgesteuert hinzu
 
-1. Der folgende Code generiert ein Arbeitsblatthostelement, das auf dem geöffneten Arbeitsblatt basiert, und fügt dann ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement zu den Zellen **A1** bis **A4**hinzu.
+1. Der folgende Code generiert ein Arbeitsblatthostelement, das auf dem geöffneten Arbeitsblatt basiert, und fügt dann ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement zu den Zellen **A1** bis **A4** hinzu.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [ListObject-Steuerelement](../vsto/listobject-control.md)

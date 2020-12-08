@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern'
+description: Erfahren Sie, wie Sie die Schreibweise von Wörtern in einem Microsoft Excel-Arbeitsblatt Programm gesteuert überprüfen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797fc498c54bdbc466fe8ddc35229b2c106db80d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f2a9f50767082ead9daafe684aae7fc1524ba9c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541543"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848287"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Gewusst wie: Programm gesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern
   Sie können die Rechtschreibung von Wörtern in einem Arbeitsblatt programmgesteuert überprüfen. Das Dialogfeld **Rechtschreibung** wird automatisch angezeigt wird, wenn das Arbeitsblatt falsch geschriebene Wörter enthält.
@@ -41,7 +43,7 @@ ms.locfileid: "85541543"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#22)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#22)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)
 - [Gewusst wie: Programm gesteuertes Ausführen von Excel-Berechnungen](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
 - [Name Drange-Steuerelement](../vsto/namedrange-control.md)

@@ -1,5 +1,7 @@
 ---
 title: Bookmark-Steuerelement
+description: Erfahren Sie, wie das Lesezeichen-Steuerelement ein Lesezeichen ist, das über einen eindeutigen Namen verfügt, Ereignisse verfügbar macht und an Daten gebunden werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255146"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848364"
 ---
 # <a name="bookmark-control"></a>Bookmark-Steuerelement
   Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement ist eine Textmarke, die über einen eindeutigen Namen verfügt, Ereignisse verfügbar macht und an Daten gebunden werden kann. Die Textmarke kann als Platzhalter verwendet werden, um ein Element oder eine Position in einem Microsoft Office Word-Dokument zu markieren. Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement ist eine Kombination aus einem <xref:Microsoft.Office.Interop.Word.Bookmark> - und einem <xref:Microsoft.Office.Interop.Word.Range> -Objekt.
@@ -46,7 +48,7 @@ ms.locfileid: "71255146"
 
  Das <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> -Steuerelement verfügt auch über die <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> -Eigenschaft. Diese Eigenschaft unterscheidet sich von der-Eigenschaft, die <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> für die-Eigenschaft eines-Steuer Elements verfügbar ist <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> , oder der- <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> Eigenschaft eines- <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> Objekts.
 
-|Text-Eigenschaft|Beschreibung|
+|Text-Eigenschaft|BESCHREIBUNG|
 |-------------------|-----------------|
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Verwenden Sie diese Eigenschaft zum Anzeigen von Text in einer Textmarke, und belassen Sie die Textmarke im Dokument. Durch das Zuweisen von Text zur Textmarke wird der Textmarkenbereich erweitert und die Textmarke nicht gelöscht.<br /><br /> `Bookmark1.Text = "Hello world"` fügt z. B. den Text in die Textmarken ein, und die Textmarke bleibt intakt.|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Verwenden Sie diese Eigenschaft, um Text an der Position der Textmarke anzuzeigen und die Textmarke automatisch zu löschen. `Bookmark1.Range.Text = "Hello world"` fügt z. B. den Text in die Textmarke ein, und die Textmarke wird gelöscht.|
@@ -91,7 +93,7 @@ In der folgenden Tabelle wird gezeigt, wie der Satz „This is sample text.“ w
 |Bookmark1|This is replacement.|
 |Bookmark2|*\<empty>*|
 
-## <a name="events"></a>Events
+## <a name="events"></a>Ereignisse
 
 Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement verfügbar:
 

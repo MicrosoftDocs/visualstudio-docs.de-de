@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Zuordnen von ListObject-Spalten zu Daten'
+description: Erfahren Sie, wie Sie zuordnen können, welche Spalten im ListObject angezeigt werden sollen, wenn Sie die SetDataBinding-Methode aufrufen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b09c07c8b36baeed096c0049c778e431fe232458
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa24e4a0f0dab9c01de8e5a2960f28d71a9dad6e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538163"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848234"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Gewusst wie: Zuordnen von ListObject-Spalten zu Daten
   Beim Binden eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements an <xref:System.Data.DataTable>sollen möglicherweise nicht alle Spalten in einer Liste angezeigt werden, oder Sie verfügen u. U. über bestimmte Spalten, die nicht an Daten gebunden sind. Durch den Aufruf der <xref:Microsoft.Office.Tools.Excel.ListObject> -Methode können Sie die Spalten zuordnen, die in <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> angezeigt werden sollen.
@@ -57,7 +59,7 @@ ms.locfileid: "85538163"
 ## <a name="compile-the-code"></a>Kompilieren des Codes
  In diesem Codebeispiel wird davon ausgegangen, dass Sie in dem Arbeitsblatt, in dem dieser Code angezeigt wird, über ein <xref:Microsoft.Office.Tools.Excel.ListObject> namens `list1` verfügen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
