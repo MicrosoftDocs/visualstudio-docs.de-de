@@ -1,5 +1,7 @@
 ---
 title: Übersicht über das Excel-Objektmodell
+description: Erfahren Sie, wie Sie mit den Objekten des Excel-Objektmodells interagieren können, um Lösungen zu entwickeln, die Microsoft Office Excel verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a823692a5cc0f154c514edff4fe9398de0efd212
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649424"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847688"
 ---
 # <a name="excel-object-model-overview"></a>Übersicht über das Excel-Objektmodell
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:
@@ -66,13 +68,13 @@ ms.locfileid: "81649424"
 
  Da die Daten in einem Excel-Dokument sehr strukturiert sind, ist das Objektmodell hierarchisch und unkompliziert. Excel stellt Hunderte von Objekten bereit, mit denen Sie interagieren können. Sie können jedoch einen guten Einstieg in das Objektmodell erzielen, indem Sie sich auf eine kleine Teilmenge der verfügbaren Objekte konzentrieren. Dazu gehören die folgenden vier Objekte:
 
-- Application
+- Anwendung
 
 - Arbeitsmappe
 
 - Worksheet
 
-- Range
+- Bereich
 
   Diese vier Objekte und ihre Member decken einen Großteil der Aufgaben ab, die mit Excel erledigt werden können.
 
@@ -80,7 +82,7 @@ ms.locfileid: "81649424"
  Beim <xref:Microsoft.Office.Interop.Excel.Application>-Objekt von Excel handelt es sich um die eigentliche Excel-Anwendung. Das <xref:Microsoft.Office.Interop.Excel.Application>-Objekt stellt zahlreiche Informationen über die ausgeführte Anwendung, die auf diese Instanz angewendeten Optionen und die derzeit darin geöffneten Benutzerobjekte zur Verfügung.
 
 > [!NOTE]
-> Sie sollten die <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Excel.Application> -Objekts in Excel nicht auf **false**bezeichnet wird. Wenn Sie diese Eigenschaft auf „false“ festlegen, kann Excel keine Ereignisse auslösen, auch nicht die Ereignisse von Hoststeuerelementen.
+> Sie sollten die <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Excel.Application> -Objekts in Excel nicht auf **false** bezeichnet wird. Wenn Sie diese Eigenschaft auf „false“ festlegen, kann Excel keine Ereignisse auslösen, auch nicht die Ereignisse von Hoststeuerelementen.
 
 ### <a name="workbook-object"></a>Arbeitsmappenobjekt
  Das <xref:Microsoft.Office.Interop.Excel.Workbook>-Objekt stellt eine einzelne Arbeitsmappe innerhalb der Excel-Anwendung dar.
@@ -114,7 +116,7 @@ ms.locfileid: "81649424"
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Excel-Lösungen](../vsto/excel-solutions.md)|Hier wird erläutert, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins für Microsoft Office Excel erstellen können.|
 |[Arbeiten mit Bereichen](../vsto/working-with-ranges.md)|Hier finden Sie Beispiele, die die Ausführung häufiger Aufgaben im Zusammenhang mit Bereichen veranschaulichen.|

@@ -1,5 +1,7 @@
 ---
 title: Beispiel Implementierung für das Ändern von Werten | Microsoft-Dokumentation
+description: Jedem lokalen Fenster, das im Fenster Lokal angezeigt wird, ist ein IDebugProperty2-Objekt zugeordnet. Erfahren Sie, wie Visual Studio den Wert des lokalen im Arbeitsspeicher aktualisiert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5193fd07c1a891f052814446815bfbc836c6a9a7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713116"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847727"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Beispiel Implementierung für das Ändern von Werten
 > [!IMPORTANT]
@@ -420,6 +422,6 @@ HRESULT FieldSetValue(
 
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Ändern des Werts eines lokalen](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md)

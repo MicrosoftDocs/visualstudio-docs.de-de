@@ -1,5 +1,7 @@
 ---
 title: Globalisierung und Lokalisierung von Excel-Lösungen
+description: Informieren Sie sich über besondere Überlegungen für Microsoft Office Excel-Lösungen, die auf Computern mit nicht englischen Einstellungen für Windows ausgeführt werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986054"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847753"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisierung und Lokalisierung von Excel-Lösungen
   Dieser Abschnitt enthält besondere Überlegungen zu Microsoft Office Excel-Projektmappen, die auf Computern ausgeführt werden, die über nicht englische Einstellungen für Windows verfügen. Die meisten Aspekte bei der Globalisierung und Lokalisierung von Microsoft Office-Projektmappen sind mit denen identisch, die beim Erstellen von anderen Arten von Projektmappen mit Visual Studio auftreten. Allgemeine Informationen finden Sie unter [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md).
@@ -77,7 +79,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Wenn derselbe Code in einer Projektmappe verwendet wird, die mit den Office-Entwicklungstools in Visual Studio erstellt und über COM-Interop an Excel übergeben wurde, liefert er dieselben Ergebnisse, wenn das Datum mit dem Format „en-US“ formatiert ist.
 
- Beispiel:
+ Zum Beispiel:
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
@@ -95,7 +97,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>Anwendungen, die externe Daten verwenden
  Möglicherweise ist auch jeglicher Code, der externe Daten öffnet oder anderweitig verwendet, betroffen, z. B. Dateien mit durch Trennzeichen getrennten Werten (CSV-Dateien), die aus einem Legacysystem exportiert wurden, wenn diese Dateien in einem anderen Format als „en-US“ exportiert werden. Der Zugriff auf die Datenbank ist möglicherweise nicht beeinträchtigt, da alle Werte im binären Format vorliegen sollten, sofern die Datenbank die Daten nicht als Zeichenfolgen speichert oder Vorgänge ausführt, die kein binäres Format verwenden. Wenn Sie SQL-Abfragen mithilfe von Daten aus Excel erstellen, müssen Sie zudem möglicherweise sicherstellen, dass diese in Abhängigkeit von der verwendeten Funktion im Format „en-US“ vorliegen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Gewusst wie: Ausrichten der mehrsprachigen Office-Benutzeroberfläche](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)

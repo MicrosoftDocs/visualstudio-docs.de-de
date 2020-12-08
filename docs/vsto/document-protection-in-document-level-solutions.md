@@ -1,5 +1,7 @@
 ---
 title: Dokument Schutz in Projektmappen auf Dokument Ebene
+description: Erfahren Sie, wie Sie die Schutzfunktionen von Microsoft Office Word und Microsoft Office Excel in Projekten auf Dokument Ebene verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253808"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846193"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Dokument Schutz in Projektmappen auf Dokument Ebene
   Sie können die Schutz Features von Microsoft Office Word und Microsoft Office Excel in Projekten auf Dokument Ebene verwenden. Diese Features blockieren nicht autorisierte Benutzer daran, Änderungen an geschützten Teilen eines Dokuments vorzunehmen.
@@ -52,7 +54,7 @@ ms.locfileid: "71253808"
 ## <a name="setting-the-password"></a>Festlegen des Kennworts
  Visual Studio aktiviert automatisch den Schutz, aber standardmäßig wird kein Kennwort bereitstellt. Wenn Sie möchten, dass der Dokument Schutz ein Kennwort hat, müssen Sie es vor dem Bereitstellen der Lösung hinzufügen. Durch das Hinzufügen eines Kennworts können autorisierte Benutzer den Schutz aus dem Dokument entfernen. ohne Kennwort kann der Schutz nicht einfach entfernt werden. Ausführliche Informationen zum Festlegen eines Kennworts finden Sie in der Hilfe zu einer bestimmten Office-Anwendung.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Programm gesteuertes schützen von Dokumenten und Teilen von Dokumenten](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
 - [Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)

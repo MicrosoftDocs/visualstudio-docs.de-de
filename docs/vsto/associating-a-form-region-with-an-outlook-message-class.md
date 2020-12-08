@@ -1,5 +1,7 @@
 ---
 title: Zuordnen eines Formular Bereichs zu einer Outlook-Nachrichten Klasse
+description: Erfahren Sie, wie Sie angeben können, welche Microsoft Office Outlook-Elemente einen Formular Bereich anzeigen, indem Sie den Formular Bereich der Nachrichten Klasse der einzelnen Elemente zuordnen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45db262b6bf7843a3893c5d60f0b6eaea5fcb70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 213b167bf7fe10c83b028fce2d97c67cd837d272
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254576"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846999"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Zuordnen eines Formular Bereichs zu einer Outlook-Nachrichten Klasse
   Sie können angeben, welche Microsoft Office Outlook-Elemente einen Formular Bereich anzeigen, indem Sie den Formular Bereich der Nachrichten Klasse der einzelnen Elemente zuordnen. Wenn Sie z. b. einen Formular Bereich am unteren Rand eines Mail Elements anfügen möchten, können Sie den Formular Bereich der `IPM.Note` Message-Klasse zuordnen.
@@ -73,7 +75,7 @@ ms.locfileid: "71254576"
 
 - Nicht länger als 256 Zeichen für jeden Nachrichten Klassennamen.
 
-  Der Assistent für **neue Outlook-Formular** Bereiche überprüft das Format Ihrer Eingabe, wenn Sie auf " **Fertig**stellen" klicken.
+  Der Assistent für **neue Outlook-Formular** Bereiche überprüft das Format Ihrer Eingabe, wenn Sie auf " **Fertig** stellen" klicken.
 
 > [!NOTE]
 > Der Assistent für **neue Outlook-Formular** Bereiche überprüft nicht, ob die von Ihnen angegebenen Nachrichten Klassennamen richtig oder gültig sind.

@@ -1,5 +1,7 @@
 ---
 title: Registrieren einer Ausdrucks Auswertung | Microsoft-Dokumentation
+description: Erfahren Sie, wie sich die Ausdrucks Auswertung als Klassenfactory mit der Windows com-Umgebung und Visual Studio registrieren muss.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713192"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847142"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrieren einer Ausdrucks Auswertung
 > [!IMPORTANT]
@@ -25,7 +27,7 @@ ms.locfileid: "80713192"
  Die Ausdrucks Auswertung (EE) muss sich selbst als Klassenfactory mit der Windows-com-Umgebung und Visual Studio registrieren. Ein EE ist als DLL eingerichtet, sodass er entweder in den debuggingbereich (de) oder den Visual Studio-Adressraum eingefügt wird, je nachdem, welche Entität den EE instanziiert.
 
 ## <a name="managed-code-expression-evaluator"></a>Ausdrucks Auswertung für verwalteten Code
- Ein verwalteter Code EE ist als Klassenbibliothek implementiert, bei der es sich um eine DLL handelt, die sich bei der com-Umgebung registriert, die in der Regel durch einen aufrufsbefehl des VSIP- *regpkg.exe*Programms gestartet wird. Der tatsächliche Prozess zum Schreiben der Registrierungsschlüssel für die com-Umgebung wird automatisch behandelt.
+ Ein verwalteter Code EE ist als Klassenbibliothek implementiert, bei der es sich um eine DLL handelt, die sich bei der com-Umgebung registriert, die in der Regel durch einen aufrufsbefehl des VSIP- *regpkg.exe* Programms gestartet wird. Der tatsächliche Prozess zum Schreiben der Registrierungsschlüssel für die com-Umgebung wird automatisch behandelt.
 
  Eine Methode der Hauptklasse ist mit gekennzeichnet <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> und gibt an, dass die Methode aufgerufen werden soll, wenn die DLL mit com registriert wird. Diese Registrierungsmethode, die häufig aufgerufen `RegisterClass` wird, führt die Aufgabe der Registrierung der dll in Visual Studio aus. Ein entsprechendes `UnregisterClass` (markiert mit <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ) macht die Auswirkungen von, `RegisterClass` Wenn die DLL deinstalliert wird, nicht mehr.
 Die gleichen Registrierungseinträge werden für einen EE erstellt, der in nicht verwaltetem Code geschrieben wurde. der einzige Unterschied besteht darin, dass es keine Hilfsfunktion gibt, wie z `SetEEMetric` . b., um die Arbeit zu erledigen. Im folgenden finden Sie ein Beispiel für die Registrierung und die Aufhebung der Registrierung.
@@ -120,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > Der `metricLanguage``GUID` identifiziert die Sprache anhand des Namens, aber dies ist das `guidLang` Argument für, `SetEEMetric` das die Sprache auswählt. Wenn der Compiler die debuginformationsdatei generiert, sollte er den entsprechenden schreiben, `guidLang` damit der de weiß, welcher EE verwendet werden soll. Der "de" fragt in der Regel den Symbol Anbieter nach dieser Sprache ab `GUID` , die in der debuginformationsdatei gespeichert ist.
 
-3. Wird bei Visual Studio registriert, indem die Schlüssel unter HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *X. y*erstellt werden, wobei *x. y* die Version von Visual Studio ist, bei der die Registrierung erfolgt.
+3. Wird bei Visual Studio registriert, indem Schlüssel unter HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y* erstellt werden, wobei *x. y* die Version von Visual Studio ist, bei der die Registrierung erfolgt.
 
 ### <a name="example"></a>Beispiel
  Die folgende Funktion zeigt, wie sich ein nicht verwalteter Code (C++) EE registriert und seine Registrierung bei Visual Studio abhebt.
@@ -209,6 +211,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [SDK-Hilfsprogramme zum Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

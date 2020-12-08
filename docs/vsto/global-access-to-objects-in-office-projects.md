@@ -1,5 +1,7 @@
 ---
 title: Globaler Zugriff auf Objekte in Office-Projekten
+description: Erfahren Sie, wie Sie die Globals-Klasse verwenden können, um zur Laufzeit auf mehrere verschiedene Projekt Elemente von einem beliebigen Code im Projekt zuzugreifen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2653f314edf07c4dcca6d3afc74af64c548af35
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041050"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846388"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globaler Zugriff auf Objekte in Office-Projekten
   Wenn Sie ein Office-Projekt erstellen, generiert Visual Studio im Projekt automatisch eine Klasse mit dem Namen `Globals` . Mit der `Globals` -Klasse können Sie von beliebigem Code im Projekt aus zur Laufzeit auf mehrere verschiedene Projektelemente zugreifen.
@@ -75,7 +77,7 @@ ms.locfileid: "88041050"
 > [!NOTE]
 > Die `Globals` -Klasse wird zur Entwurfszeit nie initialisiert, vom Designer werden jedoch Steuerelementinstanzen erstellt. Dies bedeutet Folgendes: Wenn Sie ein Benutzer Steuerelement erstellen, das eine Eigenschaft der `Globals` Klasse innerhalb einer Benutzer Steuerelement Klasse verwendet, müssen Sie überprüfen, ob die-Eigenschaft **null** zurückgibt, bevor Sie versuchen, das zurückgegebene-Objekt zu verwenden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Zugreifen auf einen Formular Bereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

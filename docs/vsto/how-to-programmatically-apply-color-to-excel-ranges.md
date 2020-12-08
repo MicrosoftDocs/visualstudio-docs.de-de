@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Anwenden von Farben auf Excel-Bereiche'
+description: Erfahren Sie, wie Sie ein Name Drange-Steuerelement oder ein System eigenes Excel-Bereichs Objekt verwenden, um eine Farbe auf den Text in einem Zellen Bereich anzuwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d4a99e2e71e6a87b304ceea45a3cd595f911ff1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63a38bb4fb6f8f8ab35b9e1104a1b93d6d757446
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543454"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848000"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Gewusst wie: Programm gesteuertes Anwenden von Farben auf Excel-Bereiche
   Verwenden Sie ein- <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein System eigenes Excel-Bereichs Objekt, um eine Farbe auf Text in einem Zellen Bereich anzuwenden.
@@ -50,7 +52,7 @@ ms.locfileid: "85543454"
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
 - [Name Drange-Steuerelement](../vsto/namedrange-control.md)
 - [Gewusst wie: Programm gesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen
+description: Erfahren Sie, wie Sie eine unterstützte Version von Visual Studio, die .NET Framework und Microsoft Office installieren können, um VSTO-Add-Ins und Anpassungen für Microsoft Office erstellen zu können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a0304c217599e790b8cfa9e738245927336470e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801840"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847259"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen
 
@@ -47,7 +49,7 @@ Wenn Sie eine unterstützte Version von Visual Studio, die .NET Framework und Mi
 
 Wenn weiterhin Probleme auftreten, finden Sie [Weitere Informationen unter zusätzliche Unterstützung für Fehler in Office](../vsto/additional-support-for-errors-in-office-solutions.md)-Projektmappen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [Vorgehensweise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

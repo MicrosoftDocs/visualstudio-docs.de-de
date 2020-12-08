@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank'
+description: Erfahren Sie, wie Sie die Daten aus einer Datenbank in Ihrer Lösung verwenden können und wie Sie Windows Forms Steuerelemente verwenden können, um die Daten in einem Dokument anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8470ec4acf686c016088c5f474539a1ab7ed85df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0915d0ef57da5cba7fe73b6b374babe95b1a09c7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547198"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848078"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank
 
@@ -66,10 +68,10 @@ Beim Ausführen des Projekts zeigt das Steuerelement den ersten Datensatz in der
 
 Informationen zum Senden von Updates an das typisierte DataSet und die Datenbank finden Sie unter Gewusst [wie: Aktualisieren einer Datenquelle mit Daten aus einem Host Steuer](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)Element.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)
+- [Hinzufügen neuer Datenquellen](../data-tools/add-new-data-sources.md)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

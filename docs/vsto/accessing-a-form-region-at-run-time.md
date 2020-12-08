@@ -1,5 +1,7 @@
 ---
 title: Zugreifen auf einen Formular Bereich zur Laufzeit
+description: Erfahren Sie, wie Sie zur Laufzeit auf einen Formular Bereich in verschiedenen Projekttypen und Versionen von Microsoft Office zugreifen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dd8818b57a1aa33b70254303150d8f00e36cc02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0276405c023717c88f334d6231939d59f79ee4e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255800"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847415"
 ---
 # <a name="access-a-form-region-at-run-time"></a>Zugreifen auf einen Formular Bereich zur Laufzeit
 
@@ -59,7 +61,7 @@ ms.locfileid: "71255800"
  Für den Zugriff auf Steuerelemente in einem Formularbereich mithilfe der `Globals` -Klasse müssen Sie die Steuerelemente für Code außerhalb der Formularbereich-Codedatei zugänglich machen.
 
 ### <a name="form-regions-designed-in-the-form-region-designer"></a>Im Formular Bereich-Designer entworfene Formular Bereiche
- Ändern Sie für C# den Modifizierer für jedes Steuerelement, auf das Sie zugreifen möchten. Zu diesem Zweck wählen Sie jedes Steuerelement im Formularbereich-Designer aus und ändern im Fenster **Eigenschaften** die **Modifiers** -Eigenschaft in **Internal** oder **public** . Wenn Sie die **Modifier** -Eigenschaft von `textBox1` beispielsweise in **Internal**ändern, können Sie durch Eingabe von `textBox1` auf `Globals.FormRegions.FormRegion1.textBox1`zugreifen.
+ Ändern Sie für C# den Modifizierer für jedes Steuerelement, auf das Sie zugreifen möchten. Zu diesem Zweck wählen Sie jedes Steuerelement im Formularbereich-Designer aus und ändern im Fenster **Eigenschaften** die **Modifiers** -Eigenschaft in **Internal** oder **public** . Wenn Sie die **Modifier** -Eigenschaft von `textBox1` beispielsweise in **Internal** ändern, können Sie durch Eingabe von `textBox1` auf `Globals.FormRegions.FormRegion1.textBox1`zugreifen.
 
  Für Visual Basic müssen Sie den Modifizierer nicht ändern.
 

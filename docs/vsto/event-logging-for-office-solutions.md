@@ -1,5 +1,7 @@
 ---
 title: Ereignisprotokollierung für Office-Lösungen
+description: Erfahren Sie, wie Sie die Ereignisanzeige in Windows verwenden können, um Ausnahme Meldungen anzuzeigen, die von der Visual Studio-Tools für die Office-Laufzeit aufgezeichnet werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951938"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847766"
 ---
 # <a name="event-logging-for-office-solutions"></a>Ereignisprotokollierung für Office-Lösungen
   Sie können die Ereignisanzeige in Windows verwenden, um Ausnahmemeldungen anzuzeigen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] aufgezeichnet werden, wenn Sie Office-Lösungen installieren oder deinstallieren. Sie können diese Meldungen aus der Ereignisprotokollierung verwenden, um Installations- und Bereitstellungsprobleme zu beheben.
@@ -36,13 +38,13 @@ ms.locfileid: "62951938"
 
 2. Starten Sie **Ereignisanzeige**.
 
-3. Wählen Sie in der Liste der Ereignisprotokolle den Eintrag **Anwendung**aus.
+3. Wählen Sie in der Liste der Ereignisprotokolle den Eintrag **Anwendung** aus.
 
 4. Klicken Sie im Menü **Ansicht** auf **Filter**.
 
-5. Wählen Sie in der Liste **Ereignisquelle** den Eintrag **VSTO 4.0**aus.
+5. Wählen Sie in der Liste **Ereignisquelle** den Eintrag **VSTO 4.0** aus.
 
-6. Geben Sie für Installationsereignisse in das Feld **Ereignis-ID** den Wert **4096**ein.
+6. Geben Sie für Installationsereignisse in das Feld **Ereignis-ID** den Wert **4096** ein.
 
 7. Klicken Sie auf **OK** , um die gefilterte Ansicht anzuzeigen.
 
@@ -54,13 +56,13 @@ ms.locfileid: "62951938"
 
 3. Erweitern Sie **Windows-Protokolle**.
 
-4. Wählen Sie in der Liste der Ereignisprotokolle den Eintrag **Anwendung**aus.
+4. Wählen Sie in der Liste der Ereignisprotokolle den Eintrag **Anwendung** aus.
 
 5. Klicken Sie im Menü **Aktion** auf **Aktuelles Protokoll filtern**.
 
-6. Wählen Sie in der Liste **Ereignisquelle** den Eintrag **VSTO 4.0**aus.
+6. Wählen Sie in der Liste **Ereignisquelle** den Eintrag **VSTO 4.0** aus.
 
-7. Geben Sie für Installationsereignisse in das Feld **Ereignis-ID** den Wert **4096**ein.
+7. Geben Sie für Installationsereignisse in das Feld **Ereignis-ID** den Wert **4096** ein.
 
 8. Klicken Sie auf **OK** , um die gefilterte Ansicht anzuzeigen.
 
@@ -92,7 +94,7 @@ ms.locfileid: "62951938"
 
 4. Geben Sie im Dialogfeld **Neue Systemvariable** in das Feld **Variablenname** den Namen **VSTO_EVENTLOGDISABLED** ein.
 
-5. Geben Sie in das Feld **Variablenwert** den Wert **1**ein.
+5. Geben Sie in das Feld **Variablenwert** den Wert **1** ein.
 
 6. Klicken Sie auf **OK**.
 

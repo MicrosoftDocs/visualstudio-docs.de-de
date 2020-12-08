@@ -1,5 +1,7 @@
 ---
 title: Bereitstellen einer VSTO-Lösung mithilfe von Windows Installer
+description: Erfahren Sie, wie Sie ein Microsoft Visual Studio Tools für Office-Add-in (VSTO) oder eine Lösung auf Dokument Ebene mithilfe eines Visual Studio-Installer Projekts bereitstellen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585692"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846544"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Bereitstellen einer VSTO-Lösung mithilfe von Windows Installer
 
@@ -118,7 +120,7 @@ Der erste Schritt besteht darin, das Setup-Projekt zu erstellen.
 1. Öffnen Sie das Office-AddIn-Projekt, das Sie bereitstellen möchten. In diesem Beispiel verwenden wir ein Excel-Add-in mit dem Namen ExcelAddIn.
 2. Wenn das Office-Projekt geöffnet ist, erweitern Sie im Menü **Datei** die Option **Hinzufügen** , und klicken Sie auf **Neues Projekt** , um ein neues Projekt hinzuzufügen.
 ::: moniker range="=vs-2017"
-3. Erweitern Sie im Dialogfeld **Neues Projekt hinzufügen** im Bereich **Projekttypen die** Option **andere Projekttypen** , erweitern Sie **Setup und Bereitstellung** , und wählen Sie dann **Visual Studio-Installer**aus.
+3. Erweitern Sie im Dialogfeld **Neues Projekt hinzufügen** im Bereich **Projekttypen die** Option **andere Projekttypen** , erweitern Sie **Setup und Bereitstellung** , und wählen Sie dann **Visual Studio-Installer** aus.
 4. Wählen Sie im Bereich **Vorlagen** die Option **Setup-Projekt** aus der Gruppe installierte Vorlagen von **Visual Studio** aus.
 ::: moniker-end
 ::: moniker range="=vs-2019"
@@ -126,7 +128,7 @@ Der erste Schritt besteht darin, das Setup-Projekt zu erstellen.
 4. Klicken Sie auf **Weiter**.
 ::: moniker-end
 
-5. Geben Sie im Feld **Name den Namen** **officeaddinsetup**ein.
+5. Geben Sie im Feld **Name den Namen** **officeaddinsetup** ein.
 ::: moniker range="=vs-2017"
 6. Klicken Sie auf **Öffnen** , um das neue Setup-Projekt zu erstellen.
 ::: moniker-end
@@ -144,8 +146,8 @@ Das Setup-Projekt muss ExcelAddIn bereitstellen. Sie können das Setup-Projekt f
 
 ### <a name="to-add-the-exceladdin-project-output"></a>So fügen Sie die ExcelAddIn-Projekt Ausgabe hinzu
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **officeaddinsetup**, klicken Sie auf **Hinzufügen** und dann auf **Projekt Ausgabe**.
-2. Wählen Sie im Dialogfeld " **Projekt Ausgabe Gruppe hinzufügen** " die Option " **ExcelAddIn** " aus der Projektliste und die **primäre Ausgabe**aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **officeaddinsetup**, klicken Sie auf **Hinzufügen** und dann auf **Projekt Ausgabe**.
+2. Wählen Sie im Dialogfeld " **Projekt Ausgabe Gruppe hinzufügen** " die Option " **ExcelAddIn** " aus der Projektliste und die **primäre Ausgabe** aus.
 3. Klicken Sie auf **OK** , um die Projekt Ausgabe dem Setup-Projekt hinzuzufügen.
 
     ![Screenshot des Setup-Projekts Projekt Ausgabe Gruppe hinzufügen (Dialogfeld)](media/setup-project-figure-2.png)
@@ -156,7 +158,7 @@ Das Setup-Projekt muss das Bereitstellungs Manifest und das Anwendungs Manifest 
 
 ### <a name="to-add-the-deployment-and-application-manifests"></a>So fügen Sie die Bereitstellungs-und Anwendungs Manifeste hinzu
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **officeaddinsetup**, klicken Sie auf **Hinzufügen**, und klicken Sie dann auf **Datei**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **officeaddinsetup**, klicken Sie auf **Hinzufügen**, und klicken Sie dann auf **Datei**.
 2. Navigieren Sie im Dialogfeld **Dateien hinzufügen** zum Ausgabeverzeichnis **ExcelAddIn** . Normalerweise ist das Ausgabeverzeichnis abhängig von der ausgewählten Buildkonfiguration der Unterordner " **bin \\ Release** " des Stamm Verzeichnisses des Projekts.
 3. Wählen Sie die Dateien **ExcelAddIn. VSTO** und **ExcelAddIn.dll. Manifest** aus, und klicken Sie auf **Öffnen** , um diese beiden Dateien dem Setup-Projekt hinzuzufügen.
 
@@ -168,7 +170,7 @@ Der Verweis auf ExcelAddIn umfasst alle Komponenten, die ExcelAddIn benötigt. D
 
 ### <a name="to-exclude-the-exceladdin-project-dependencies"></a>So schließen Sie die ExcelAddIn-Projekt Abhängigkeiten aus
 
-1. Wählen Sie im **Projektmappen-Explorer**im Knoten **officeaddinsetup** alle Abhängigkeits Elemente unter dem Element **erkannte Abhängigkeiten** aus, mit Ausnahme von **Microsoft .NET Framework** oder einer Assembly, die mit ** \*.Utilities.dll**endet. Die hilfsprogrammassemblys sollen zusammen mit Ihrer Anwendung bereitgestellt werden.
+1. Wählen Sie im **Projektmappen-Explorer** im Knoten **officeaddinsetup** alle Abhängigkeits Elemente unter dem Element **erkannte Abhängigkeiten** aus, mit Ausnahme von **Microsoft .NET Framework** oder einer Assembly, die mit **\*.Utilities.dll** endet. Die hilfsprogrammassemblys sollen zusammen mit Ihrer Anwendung bereitgestellt werden.
 2. Klicken Sie mit der rechten Maustaste auf die Gruppe, und wählen Sie **Eigenschaften**
 3. Ändern Sie im Fenster **Eigenschaften** die Eigenschaft **ausschließen** in **true** , um die abhängigen Assemblys aus dem Setup-Projekt auszuschließen. Stellen Sie sicher, dass keine hilfsprogrammassemblys ausgeschlossen werden.
 
@@ -178,14 +180,14 @@ Der Verweis auf ExcelAddIn umfasst alle Komponenten, die ExcelAddIn benötigt. D
 
 Sie können Ihr Windows Installer Paket so konfigurieren, dass die erforderlichen Komponenten installiert werden, indem Sie ein Setup Programm, das auch als Boots Trapper bezeichnet wird, hinzufügen. Mit diesem Setup Programm können die erforderlichen Komponenten installiert werden. dabei handelt es sich um einen Prozess namens Bootstrapping.
 
-Für **ExcelAddIn**müssen diese Voraussetzungen installiert werden, bevor das Add-in ordnungsgemäß ausgeführt werden kann:
+Für **ExcelAddIn** müssen diese Voraussetzungen installiert werden, bevor das Add-in ordnungsgemäß ausgeführt werden kann:
 
 - Die Microsoft .NET Framework-Version, auf die die Office-Projekt Mappe abzielt.
 - Microsoft Visual Studio 2010 Tools für Office-Laufzeit.
 
 So konfigurieren Sie abhängige Komponenten als erforderliche Komponenten
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **officeaddinsetup** , und wählen Sie **Eigenschaften**aus.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **officeaddinsetup** , und wählen Sie **Eigenschaften** aus.
 2. Das Dialogfeld **officeaddinsetup-Eigenschaften Seiten** wird angezeigt.
 3. Klicken Sie **auf die Schalt** Fläche erforderliche Komponenten
 4. Wählen Sie im Dialogfeld Voraussetzungen die richtige Version des .NET Framework und Microsoft Visual Studio Tools für Office-Laufzeit aus.
@@ -201,13 +203,13 @@ Microsoft Office nach Add-Ins mithilfe von Registrierungs Schlüsseln. Die Schl�
 
 ### <a name="to-configure-the-registry"></a>Konfigurieren der Registrierung
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **officeaddinsetup**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **officeaddinsetup**.
 2. Erweitern Sie **Ansicht**.
 3. Klicken Sie auf **Registrierung** , um das Fenster Registrierungs-Editor zu öffnen.
 4. Erweitern Sie im Registrierungs-Editor **(officeaddinsetup)** **HKEY \_ local \_ Machine** und dann **Software**.
-5. Löschen Sie den Schlüssel " ** \[ Hersteller \] **?", der unter **HKEY \_ local \_ Machine \\ Software**gefunden wird.
+5. Löschen Sie den Schlüssel " **\[ Hersteller \]**?", der unter **HKEY \_ local \_ Machine \\ Software** gefunden wird.
 6. Erweitern Sie **HKEY \_ aktueller \_ Benutzer** und dann **Software**.
-7. Löschen Sie den ** \[ Hersteller \] ** Schlüssel, der unter **HKEY \_ Current \_ User \\ Software**gefunden wurde.
+7. Löschen Sie den **\[ Hersteller \]** Schlüssel, der unter **HKEY \_ Current \_ User \\ Software** gefunden wurde.
 8. Klicken Sie zum Hinzufügen von Registrierungs Schlüsseln für die Add-in-Installation mit der rechten Maustaste auf den **Benutzer-/Computer-Hive** -Schlüssel, **und wählen Sie** Verwenden Sie die Text **Software** als Namen für den neuen Schlüssel. Klicken Sie mit der rechten Maustaste auf den neu erstellten **Software** Schlüssel, und erstellen Sie einen neuen Schlüssel mit dem Text **Microsoft**.
 9. Verwenden Sie einen ähnlichen Prozess zum Erstellen der gesamten Schlüssel Hierarchie, die für die Add-in-Registrierung erforderlich ist:
 
@@ -215,17 +217,17 @@ Microsoft Office nach Add-Ins mithilfe von Registrierungs Schlüsseln. Die Schl�
 
     Der Name des Unternehmens wird häufig als Präfix für den Namen des Add-Ins verwendet, um Eindeutigkeit zu gewährleisten.
 
-10. Klicken Sie mit der rechten Maustaste auf den Schlüssel **Sample Company. ExcelAddIn** , wählen Sie **neu**aus, und klicken Sie auf **Zeichen folgen Wert**. Verwenden Sie die Text **Beschreibung** für den Namen.
+10. Klicken Sie mit der rechten Maustaste auf den Schlüssel **Sample Company. ExcelAddIn** , wählen Sie **neu** aus, und klicken Sie auf **Zeichen folgen Wert**. Verwenden Sie die Text **Beschreibung** für den Namen.
 11. Verwenden Sie diesen Schritt, um drei weitere Werte hinzuzufügen:
     - **FriendlyName** des Typs " **String** "
     - **LoadBehavior** des Typs **DWORD**
     - **Manifest** des Typs " **String** "
 
-12. Klicken Sie mit der rechten Maustaste im Registrierungs-Editor auf den Wert **Beschreibung** , und klicken Sie auf **Eigenschaften Fenster**. Geben Sie im **Fenster Eigenschaften**für die Value-Eigenschaft **Excel-Demo** -Add-in ein.
-13. Wählen Sie im Registrierungs-Editor den Schlüssel **FriendlyName** aus. Ändern Sie im **Fenster Eigenschaften**die Eigenschaft **Wert** in **Excel-Demo**-Add-in.
-14. Wählen Sie im Registrierungs-Editor den Schlüssel **LoadBehavior** aus. Ändern Sie im **Fenster Eigenschaften**die Eigenschaft **Wert** in **3.** Der Wert 3 für das LoadBehavior-Verhalten gibt an, dass das Add-in beim Start der Host Anwendung geladen werden soll. Weitere Informationen zum Ladeverhalten finden Sie unter [Registrierungseinträge für VSTO-Add-ins](registry-entries-for-vsto-add-ins.md).
+12. Klicken Sie mit der rechten Maustaste im Registrierungs-Editor auf den Wert **Beschreibung** , und klicken Sie auf **Eigenschaften Fenster**. Geben Sie im **Fenster Eigenschaften** für die Value-Eigenschaft **Excel-Demo** -Add-in ein.
+13. Wählen Sie im Registrierungs-Editor den Schlüssel **FriendlyName** aus. Ändern Sie im **Fenster Eigenschaften** die Eigenschaft **Wert** in **Excel-Demo**-Add-in.
+14. Wählen Sie im Registrierungs-Editor den Schlüssel **LoadBehavior** aus. Ändern Sie im **Fenster Eigenschaften** die Eigenschaft **Wert** in **3.** Der Wert 3 für das LoadBehavior-Verhalten gibt an, dass das Add-in beim Start der Host Anwendung geladen werden soll. Weitere Informationen zum Ladeverhalten finden Sie unter [Registrierungseinträge für VSTO-Add-ins](registry-entries-for-vsto-add-ins.md).
 
-15. Wählen Sie im Registrierungs-Editor den Schlüssel **Manifest** aus. Ändern Sie im **Eigenschaften Fenster**die **value** -Eigenschaft in **file:///[TARGETDIR] ExcelAddIn. VSTO | vstolocal**
+15. Wählen Sie im Registrierungs-Editor den Schlüssel **Manifest** aus. Ändern Sie im **Eigenschaften Fenster** die **value** -Eigenschaft in **file:///[TARGETDIR] ExcelAddIn. VSTO | vstolocal**
 
     ![Screenshot des Registrierungs-Editors](media/setup-project-figure-6.png)
 
@@ -240,7 +242,7 @@ Microsoft Office nach Add-Ins mithilfe von Registrierungs Schlüsseln. Die Schl�
 in 64-Bit-Versionen von Office wird die 64-Bit-Registrierungs Struktur verwendet, um nach Add-Ins zu suchen. Zum Registrieren von Add-Ins unter der 64-Bit-Registrierungs Struktur muss die Zielplattform des Setup Projekts nur auf 64 Bit festgelegt werden.
 
 1. Wählen Sie im Projektmappen-Explorer das Projekt **officeaddinsetup** aus.
-2. Wechseln Sie zum **Eigenschaften** Fenster, und legen Sie die **TargetPlatform** -Eigenschaft auf **x64**fest.
+2. Wechseln Sie zum **Eigenschaften** Fenster, und legen Sie die **TargetPlatform** -Eigenschaft auf **x64** fest.
 
 Wenn Sie ein Add-in für die 32-Bit-und 64-Bit-Version von Office installieren, müssen Sie zwei separate MSI-Pakete erstellen. Einen für 32-Bit und einen für 64-Bit.
 
@@ -252,20 +254,20 @@ Wenn das MSI-Paket zum Installieren des Add-Ins oder der Lösung verwendet wird,
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime"></a>Konfigurieren einer Startbedingung zum Erkennen der VSTO-Laufzeit
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **officeaddinsetup**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **officeaddinsetup**.
 2. Erweitern Sie **Ansicht**.
 3. Klicken Sie auf **Startbedingungen**.
 4. Klicken Sie im Editor für **Startbedingungen (officeaddinsetup)** mit der rechten Maustaste **auf Anforderungen auf dem Zielcomputer**, und klicken Sie dann auf **Registrierungs Startbedingung hinzufügen**. Diese Such Bedingung kann die Registrierung nach einem Schlüssel durchsuchen, den die VSTO-Laufzeit installiert. Der Wert des Schlüssels ist dann über eine benannte Eigenschaft für die verschiedenen Teile des Installers verfügbar. Die Startbedingung verwendet die von der Such Bedingung definierte Eigenschaft, um einen bestimmten Wert zu überprüfen.
-5. Wählen Sie im Editor **Startbedingungen (officeaddinsetup)** die Such Bedingung **Suchen nach RegistryEntry1 aus** , klicken Sie mit der rechten Maustaste auf die Bedingung, und wählen Sie **Eigenschaften Fenster**aus.
+5. Wählen Sie im Editor **Startbedingungen (officeaddinsetup)** die Such Bedingung **Suchen nach RegistryEntry1 aus** , klicken Sie mit der rechten Maustaste auf die Bedingung, und wählen Sie **Eigenschaften Fenster** aus.
 
 6. Legen Sie im **Eigenschaftsfenster** diese Eigenschaften fest:
-   1. Legen Sie den Wert von **(Name)** für die **Suche nach VSTO 2010 Runtime**fest.
+   1. Legen Sie den Wert von **(Name)** für die **Suche nach VSTO 2010 Runtime** fest.
    2. Ändern Sie den Wert der- **Eigenschaft** in **vstoruntimeredist**.
    3. Legen Sie den Wert von **RegKey** auf **Software \\ Microsoft \\ VSTO Runtime Setup \\ v4R**
    4. Belassen Sie die **root** -Eigenschaft auf **vsdrrHKLM**.
    5. Ändern Sie die **value** -Eigenschaft in **Version**.
 
-7. Wählen Sie im Editor **Startbedingungen (officeaddinsetup)** die Bedingung **Bedingung1** Launch aus, klicken Sie mit der rechten Maustaste auf die Bedingung, und wählen Sie **Eigenschaften Fenster**aus.
+7. Wählen Sie im Editor **Startbedingungen (officeaddinsetup)** die Bedingung **Bedingung1** Launch aus, klicken Sie mit der rechten Maustaste auf die Bedingung, und wählen Sie **Eigenschaften Fenster** aus.
 8. Legen Sie im Eigenschaftsfenster diese Eigenschaften fest:
    1. Legen Sie den **Namen (Name)** so fest, dass **VSTO 2010-Lauf Zeitverfügbarkeit überprüft**
    2. Ändern Sie den Wert der **Bedingung** in **vstoruntimeredist \> = "10.0.30319"** .
@@ -281,15 +283,15 @@ Wenn das MSI-Paket zum Installieren des Add-Ins oder der Lösung verwendet wird,
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime-installed-by-office"></a>Konfigurieren einer Startbedingung zum Erkennen der von Office installierten VSTO-Laufzeit
 
 1. Klicken Sie im **Startbedingungen-Editor (officeaddinsetup)** mit der rechten Maustaste auf **Zielcomputer suchen**, und klicken Sie dann auf **Registrierungs Suche hinzufügen**.
-2. Wählen Sie die Such Bedingung **Suchen nach RegistryEntry1 aus** , klicken Sie mit der rechten Maustaste auf die Bedingung, und wählen Sie **Eigenschaften Fenster**aus.
+2. Wählen Sie die Such Bedingung **Suchen nach RegistryEntry1 aus** , klicken Sie mit der rechten Maustaste auf die Bedingung, und wählen Sie **Eigenschaften Fenster** aus.
 3. Legen Sie im **Eigenschaftsfenster** diese Eigenschaften fest:
-    1. Legen Sie den Wert von **(Name)** für die **Suche nach Office VSTO Runtime**fest.
+    1. Legen Sie den Wert von **(Name)** für die **Suche nach Office VSTO Runtime** fest.
     2. Ändern Sie den Wert der- **Eigenschaft** in **officeruntime**.
-    3. Legen Sie den Wert von **RegKey** auf **Software \\ Microsoft \\ VSTO Runtime Setup \\ V4**fest.
+    3. Legen Sie den Wert von **RegKey** auf **Software \\ Microsoft \\ VSTO Runtime Setup \\ V4** fest.
     4. Belassen Sie die **root** -Eigenschaft auf **vsdrrHKLM**.
     5. Ändern Sie die **value** -Eigenschaft in **Version**.
 
-4. Wählen Sie im Editor **Startbedingungen (officeaddinsetup)** die Bedingung überprüfen Sie die Startbedingung für die **VSTO 2010-Lauf Zeitverfügbarkeit** aus, klicken Sie mit der rechten Maustaste auf die Bedingung, und wählen Sie **Eigenschaften Fenster**aus.
+4. Wählen Sie im Editor **Startbedingungen (officeaddinsetup)** die Bedingung überprüfen Sie die Startbedingung für die **VSTO 2010-Lauf Zeitverfügbarkeit** aus, klicken Sie mit der rechten Maustaste auf die Bedingung, und wählen Sie **Eigenschaften Fenster** aus.
 
 5. Ändern Sie den Wert der **Condition** -Eigenschaft in **vstoruntimeredist \> = "10.0.30319" oder officeruntime \> = "10.0.21022"**. Abhängig von den Versionen der Laufzeit, die für das Add-in erforderlich sind, sind die Versionsnummern für Sie möglicherweise unterschiedlich.
 
@@ -306,7 +308,7 @@ Um zu überprüfen, ob die Interop-Typen in das Add-in eingebettet werden, führ
 3. Zeigen Sie die Eigenschaften Fenster an, indem Sie F4 drücken oder im Kontextmenü Assemblys die Option Eigenschaften auswählen.
 4. Überprüfen Sie den Wert der Eigenschaft **Interop-Typen einbetten**.
 
-Wenn der Wert auf **true**festgelegt ist, werden die Typen eingebettet, und Sie können den Abschnitt [**zum Erstellen des Setup-Projekts**](#to-build-the-setup-project) überspringen.
+Wenn der Wert auf **true** festgelegt ist, werden die Typen eingebettet, und Sie können den Abschnitt [**zum Erstellen des Setup-Projekts**](#to-build-the-setup-project) überspringen.
 
 Weitere Informationen finden Sie unter [typäquivalenz und eingebettete Interop-Typen](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)
 
@@ -314,7 +316,7 @@ Weitere Informationen finden Sie unter [typäquivalenz und eingebettete Interop-
 
 1. Klicken Sie im Editor für **Startbedingungen (officeaddinsetup)** mit der rechten Maustaste **auf Anforderungen auf dem Zielcomputer**, und **Klicken Sie dann auf Windows Installer Startbedingung hinzufügen**. Diese Startbedingung sucht nach einer Office-Pia, indem Sie nach der jeweiligen Komponenten-ID sucht.
 2. Klicken Sie mit der rechten Maustaste auf **Suchen nach Component1** , und klicken Sie auf **Eigenschaften Fenster** , um die Eigenschaften der Startbedingung anzuzeigen.
-3. Legen Sie im **Fenster Eigenschaften**die folgenden Eigenschaften fest:
+3. Legen Sie im **Fenster Eigenschaften** die folgenden Eigenschaften fest:
 
     1. Ändern Sie den Wert der Eigenschaft **(Name)** , um nach **Office Shared Pia zu suchen** .
     2. Ändern Sie den Wert der **ComponentID** in Komponenten-ID für die von Ihnen verwendete Office-Komponente. Sie finden die Liste der Komponenten-IDs in der folgenden Tabelle, z. **b. {64e2917e-aa13-4ca4-bffe-ea6eda3afcb4}**.
@@ -327,7 +329,7 @@ Weitere Informationen finden Sie unter [typäquivalenz und eingebettete Interop-
     1. Ändern Sie den **Namen (Name)** , um die frei **gegebene Office-Pia-Verfügbarkeit**
     2. Ändern Sie die **Bedingung** in **hassharedpia**.
     3. Lassen Sie **InstallUrl** leer.
-    4. Das Ändern der **Nachricht** in **eine erforderliche Komponente für die Interaktion mit Excel ist nicht verfügbar. Führen Sie setup.exe**aus.
+    4. Das Ändern der **Nachricht** in **eine erforderliche Komponente für die Interaktion mit Excel ist nicht verfügbar. Führen Sie setup.exe** aus.
 
     ![Screenshot des Fensters "Eigenschaften" für die Startbedingung "Shared Office Shared Pia"](media/setup-project-figure-10.jpg)
   
@@ -357,8 +359,8 @@ Sie können die Startbedingungen der ExcelAddIn-Installation weiter verfeinern. 
 
 ### <a name="to-build-the-setup-project"></a>So erstellen Sie das Setup-Projekt
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **officeaddinsetup** , und klicken Sie auf **Erstellen**.
-2. Navigieren Sie in **Windows-Explorer**zum Ausgabeverzeichnis des Projekts **officeaddinsetup** , und wechseln Sie abhängig von der ausgewählten Buildkonfiguration zum Ordner Freigabe oder Debuggen. Kopieren Sie alle Dateien aus dem Ordner an einen Speicherort, auf den Benutzer zugreifen können.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **officeaddinsetup** , und klicken Sie auf **Erstellen**.
+2. Navigieren Sie in **Windows-Explorer** zum Ausgabeverzeichnis des Projekts **officeaddinsetup** , und wechseln Sie abhängig von der ausgewählten Buildkonfiguration zum Ordner Freigabe oder Debuggen. Kopieren Sie alle Dateien aus dem Ordner an einen Speicherort, auf den Benutzer zugreifen können.
 
 So testen Sie das ExcelAddIn-Setup
 
@@ -514,14 +516,14 @@ Um dem Dokument die Anpassung hinzuzufügen, benötigen Sie die projektmappenken
 So rufen Sie die Lösungs-ID ab
 
 1. Klicken Sie im Menü **Erstellen** auf Projekt Mappe **Erstellen** , um die Projekt Mappe auf Dokument Ebene zu erstellen, und fügen Sie der Projektdatei die Eigenschaft projektmappenkennung hinzu.
-2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt auf Dokument Ebene **excelworkbookproject** .
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt auf Dokument Ebene **excelworkbookproject** .
 3. Klicken Sie auf **UnloadProject** , um in Visual Studio auf die Projektdatei zuzugreifen.
 
     ![Screenshot der Projektmappen-Explorer Entladen der Excel-Dokument Lösung](media/setup-project-figure-16.jpg)
 
     **Abbildung 13: Entladen der Excel-Dokument Lösung**
 
-4. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **excelworkbookproject** , und klicken Sie auf **editexcelworkbookproject. vbproj** oder **Bearbeiten excelworkbookproject. csproj**.
+4. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **excelworkbookproject** , und klicken Sie auf **editexcelworkbookproject. vbproj** oder **Bearbeiten excelworkbookproject. csproj**.
 5. Suchen Sie im **excelworkbookproject** -Editor das **SolutionId** -Element innerhalb des **PropertyGroup** -Elements.
 6. Kopieren Sie den GUID-Wert dieses Elements.
 
@@ -529,7 +531,7 @@ So rufen Sie die Lösungs-ID ab
 
     **Abbildung 14: Abrufen der SolutionID**
 
-7. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **excelworkbookproject** , und klicken Sie dann auf **Projekt erneut laden**.
+7. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **excelworkbookproject** , und klicken Sie dann auf **Projekt erneut laden**.
 8. Klicken Sie im angezeigten Dialogfeld auf **Ja** , um den **excelworkbookproject** -Editor zu schließen.
 9. Die **Lösungs-ID** wird in der benutzerdefinierten Aktion installieren verwendet.
 
@@ -537,7 +539,7 @@ Der letzte Schritt besteht darin, die benutzerdefinierte Aktion für die Schritt
 
 ### <a name="to-configure-the-setup-project"></a>So konfigurieren Sie das Setup-Projekt
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **excelworkbooksetup**, erweitern Sie **Hinzufügen** , und klicken Sie dann auf **Projekt Ausgabe**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **excelworkbooksetup**, erweitern Sie **Hinzufügen** , und klicken Sie dann auf **Projekt Ausgabe**.
 2. Klicken Sie im Dialogfeld **Projekt Ausgabe Gruppe hinzufügen** in der Liste **Projekt** auf **addcustomizationcustomaction**.
 3. Wählen Sie **primäre Ausgabe** aus, und klicken Sie auf **OK** , um das Dialogfeld zu schließen und die Assembly mit der benutzerdefinierten Aktion dem Setup-Projekt hinzuzufügen.
 
@@ -545,12 +547,12 @@ Der letzte Schritt besteht darin, die benutzerdefinierte Aktion für die Schritt
 
     **Abbildung 15: Dokument Manifest benutzerdefinierte Aktion-Projekt Ausgabe Gruppe hinzufügen**
 
-4. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **excelworkbooksetup**.
+4. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **excelworkbooksetup**.
 5. Erweitern Sie **Ansicht** , und klicken Sie auf **benutzerdefinierte Aktionen**.
 6. Klicken Sie im Editor für **benutzerdefinierte Aktionen (excelworkbooksetup)** mit der rechten Maustaste auf **benutzerdefinierte Aktionen** und dann auf **benutzerdefinierte Aktion hinzufügen**.
 7. Klicken Sie im Dialogfeld **Element in Projekt auswählen** in der Liste **Suchen in** auf **Anwendungsordner**. Wählen Sie **primäre Ausgabe aus addcustomizationcustomaction (aktiv) aus** , und klicken Sie auf **OK** , um die benutzerdefinierte Aktion dem Installationsschritt hinzuzufügen.
-8. Klicken Sie unter dem **Knoten installieren**mit der rechten Maustaste auf **primäre Ausgabe von addcustomizationcustomaction (aktiv)**, und klicken Sie dann auf **Umbenennen**. Benennen Sie die benutzerdefinierte Aktion "Dokument kopieren" in "eigene Dateien" **, und fügen Sie**
-9. Klicken Sie unter dem **Knoten deinstallieren**mit der rechten Maustaste auf **primäre Ausgabe von addcustomizationcustomaction (aktiv)** , und klicken Sie dann auf **Umbenennen**. Benennen Sie die benutzerdefinierte Aktion **Dokument entfernen aus dem Ordner Dokumente**.
+8. Klicken Sie unter dem **Knoten installieren** mit der rechten Maustaste auf **primäre Ausgabe von addcustomizationcustomaction (aktiv)**, und klicken Sie dann auf **Umbenennen**. Benennen Sie die benutzerdefinierte Aktion "Dokument kopieren" in "eigene Dateien" **, und fügen Sie**
+9. Klicken Sie unter dem **Knoten deinstallieren** mit der rechten Maustaste auf **primäre Ausgabe von addcustomizationcustomaction (aktiv)** , und klicken Sie dann auf **Umbenennen**. Benennen Sie die benutzerdefinierte Aktion **Dokument entfernen aus dem Ordner Dokumente**.
 
     ![Screenshot des Fensters "benutzerdefinierte Aktionen" des Dokument Manifests](media/setup-project-figure-19.jpg)
 

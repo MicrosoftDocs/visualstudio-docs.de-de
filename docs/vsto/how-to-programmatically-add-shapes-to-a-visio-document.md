@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Hinzufügen von Shapes zu einem Visio-Dokument'
+description: Erfahren Sie, wie Sie Formen zu einem Microsoft Office Visio-Dokument hinzufügen können, indem Sie die Master aus einer Schablone abrufen und die Formen auf der aktiven Seite ablegen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8eb3ad837f699a1bb0bbc327b6e892a20866e0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 819560d584f267bfa54ae2bcfc61a162f45e0383
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584229"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848026"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Shapes zu einem Visio-Dokument
   Sie können einem Microsoft Office Visio-Dokument Shapes hinzufügen, indem Sie die Master-Shapes aus einer Schablone abrufen und auf der aktiven Seite ablegen.
@@ -37,7 +39,7 @@ ms.locfileid: "91584229"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Visio-Lösungen](../vsto/visio-solutions.md)
 - [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)
 - [Arbeiten mit Visio-Shapes](../vsto/working-with-visio-shapes.md)

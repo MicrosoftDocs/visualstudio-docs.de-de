@@ -1,5 +1,7 @@
 ---
 title: Beispiel Implementierung von lokalen Variablen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio die lokalen Variablen für eine Methode aus der Ausdrucks Auswertung in diesem Artikel abruft.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: aad77c9b9481ed6ae32c66260b1e3ef2a662c836
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011891"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847636"
 ---
 # <a name="sample-implementation-of-locals"></a>Beispiel Implementierung von lokalen Variablen
 > [!IMPORTANT]

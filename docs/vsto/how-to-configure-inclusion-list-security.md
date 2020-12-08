@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Konfigurieren der Sicherheit für die Aufnahme Liste'
+description: Konfigurieren Sie die ClickOnce-Vertrauensstellungs-Eingabeaufforderung, um zu steuern, ob Endbenutzer Office-Projektmappen installieren können, indem Sie eine Vertrauensstellungs Entscheidung für die Aufnahme Liste
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541634"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846726"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Vorgehensweise: Konfigurieren der Sicherheit für die Aufnahme Liste
   Wenn Sie über Administrator Berechtigungen verfügen, können Sie die Vertrauensstellungs Aufforderung so konfigurieren, dass Endbenutzer die Möglichkeit haben, Office-Projektmappen [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zu installieren, indem Sie eine Vertrauensstellungs Entscheidung für die Aufnahme Liste speichern. Informationen zu Inklusions Listen finden Sie unter Vertrauen von Office-Projektmappen [mithilfe von Inklusions Listen](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -40,9 +42,9 @@ ms.locfileid: "85541634"
 
 1. Öffnen Sie den Registrierungs-Editor:
 
-    1. Klicken Sie im **Startmenü**auf **Ausführen**.
+    1. Klicken Sie im **Startmenü** auf **Ausführen**.
 
-    2. Geben Sie im Feld **Öffnen** **regedt32.exe**ein, und klicken Sie dann auf **OK**.
+    2. Geben Sie im Feld **Öffnen** **regedt32.exe** ein, und klicken Sie dann auf **OK**.
 
 2. Suchen Sie den folgenden Registrierungsschlüssel:
 
@@ -50,9 +52,9 @@ ms.locfileid: "85541634"
 
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn.
 
-3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert** hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
 
-    |Zeichen folgen Wert-Unterschlüssel|value|
+    |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**Nicht treudsites**|**Disabled**|
@@ -99,9 +101,9 @@ ms.locfileid: "85541634"
 
 1. Öffnen Sie den Registrierungs-Editor:
 
-    1. Klicken Sie im **Startmenü**auf **Ausführen**.
+    1. Klicken Sie im **Startmenü** auf **Ausführen**.
 
-    2. Geben Sie im Feld **Öffnen** **regedt32.exe**ein, und klicken Sie dann auf **OK**.
+    2. Geben Sie im Feld **Öffnen** **regedt32.exe** ein, und klicken Sie dann auf **OK**.
 
 2. Suchen Sie den folgenden Registrierungsschlüssel:
 
@@ -109,9 +111,9 @@ ms.locfileid: "85541634"
 
      Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn.
 
-3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert** hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
 
-    |Zeichen folgen Wert-Unterschlüssel|value|
+    |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|
     |**Nicht treudsites**|**Disabled**|
     |**Internet**|**AuthenticodeRequired**|
@@ -158,17 +160,17 @@ ms.locfileid: "85541634"
 
 1. Öffnen Sie den Registrierungs-Editor:
 
-    1. Klicken Sie im **Startmenü**auf **Ausführen**.
+    1. Klicken Sie im **Startmenü** auf **Ausführen**.
 
-    2. Geben Sie im Feld **Öffnen** **regedt32.exe**ein, und klicken Sie dann auf **OK**.
+    2. Geben Sie im Feld **Öffnen** **regedt32.exe** ein, und klicken Sie dann auf **OK**.
 
 2. Erstellen Sie den folgenden Registrierungsschlüssel, wenn dieser nicht bereits vorhanden ist:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
-3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert**hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
+3. Fügen Sie die folgenden Unterschlüssel als **Zeichen folgen Wert** hinzu, wenn Sie noch nicht vorhanden sind, und geben Sie die zugehörigen Werte an.
 
-    |Zeichen folgen Wert-Unterschlüssel|value|
+    |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|
     |**Nicht treudsites**|**Disabled**|
     |**Internet**|**Disabled**|
@@ -207,6 +209,6 @@ ms.locfileid: "85541634"
 
 3. Erstellen Sie die Anwendung, und führen Sie sie aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Vertrauen von Office-Projektmappen mithilfe von Inklusions Listen](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

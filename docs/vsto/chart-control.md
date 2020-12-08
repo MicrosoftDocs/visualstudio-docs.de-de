@@ -1,5 +1,7 @@
 ---
 title: Diagramm Steuerelement
+description: Wenn Sie einem Arbeitsblatt ein Diagramm hinzufügen, wird von Visual Studio ein Diagramm Objekt erstellt, mit dem Sie direkt programmieren können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45de5170ca8a8b7e8a71521e18523e73ebc24046
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255306"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847824"
 ---
 # <a name="chart-control"></a>Diagramm Steuerelement
   Das <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement ist ein Diagrammobjekt, das Ereignisse verfügbar macht. Beim Hinzufügen eines Diagramms zu einem Arbeitsblatt erstellt Visual Studio ein <xref:Microsoft.Office.Tools.Excel.Chart>-Objekt, für das Sie direkt programmieren können, ohne das Objektmodell von Microsoft Office Excel zu durchlaufen.
@@ -39,7 +41,7 @@ ms.locfileid: "71255306"
 ## <a name="formatting"></a>Formatierung
  Die gesamte Formatierung, die auf <xref:Microsoft.Office.Interop.Excel.Chart> angewendet werden kann, ist auch auf ein <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement anwendbar. Dies umfasst Rahmen, Schriftarten, Diagrammtypen, Gitternetzlinien, Legenden und Datenbezeichnungen.
 
-## <a name="events"></a>Events
+## <a name="events"></a>Ereignisse
  Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Excel.Chart> -Steuerelement verfügbar:
 
 - <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>

@@ -1,8 +1,8 @@
 ---
 title: VBA-Zugriff zum Erstellen/Öffnen eines VSTO-System Projekts
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Erfahren Sie, wie Sie den Zugriff auf das Office VBA-Projekt System explizit aktivieren müssen, bevor Sie eine Visual Studio-Tools für das Office System-Projekt erstellen oder öffnen können.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584858"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846128"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Aktivieren des Zugriffs auf VBA zum Erstellen oder Öffnen einer Visual Studio-Tools für das Microsoft Office System Projekt
 
@@ -55,7 +55,7 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 3. Klicken Sie auf **Trust Center**, und klicken Sie dann auf **Trust Center-Einstellungen**.
 
-4. Klicken Sie im **Trust Center**auf **Makro Einstellungen**.
+4. Klicken Sie im **Trust Center** auf **Makro Einstellungen**.
 
 5. Aktivieren oder deaktivieren Sie **den Zugriff auf das VBA-Projekt Objektmodell** , um den Zugriff auf Visual Basic Projekte zu aktivieren bzw. zu deaktivieren.
 
@@ -67,7 +67,7 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 2. Klicken Sie im Dialogfeld **Sicherheit** auf die Registerkarte **Vertrauenswürdige Herausgeber** .
 
-3. Wählen Sie diese Option aus, um den **Zugriff auf Visual Basic Projekt**zu aktivieren oder zu deaktivieren.
+3. Wählen Sie diese Option aus, um den **Zugriff auf Visual Basic Projekt** zu aktivieren oder zu deaktivieren.
 
 4. Klicken Sie auf **OK**.
 
@@ -79,7 +79,7 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 3. Klicken Sie auf **Trust Center**, und klicken Sie dann auf **Trust Center-Einstellungen**.
 
-4. Klicken Sie im **Trust Center**auf **Makro Einstellungen**.
+4. Klicken Sie im **Trust Center** auf **Makro Einstellungen**.
 
 5. Wählen Sie im Abschnitt **Makro Einstellungen** die gewünschte Einstellung aus.
 
@@ -95,13 +95,13 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 ### <a name="to-install-vba-with-the-2007-microsoft-office-system"></a>So installieren Sie VBA mit dem Microsoft Office 2007-System
 
-1. Führen **Sie** in der Systemsteuerung die Option Software oder **Programme und Funktionen**aus.
+1. Führen **Sie** in der Systemsteuerung die Option Software oder **Programme und Funktionen** aus.
 
 2. Wählen Sie in der Liste **Zurzeit installierte Programme** die Option Office aus.
 
 3. Klicken Sie auf **Ändern**.
 
-4. Wählen Sie **Features hinzufügen oder entfernen**aus, und klicken Sie dann auf **weiter**.
+4. Wählen Sie **Features hinzufügen oder entfernen** aus, und klicken Sie dann auf **weiter**.
 
 5. Wählen Sie **Erweiterte Anpassung der Anwendungen auswählen aus**, und klicken Sie dann auf **weiter**.
 
@@ -115,15 +115,15 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 ## <a name="to-repair-your-installation-of-office"></a>So reparieren Sie Ihre Office-Installation
 
-1. Führen **Sie** in der Systemsteuerung die Option Software oder **Programme und Funktionen**aus.
+1. Führen **Sie** in der Systemsteuerung die Option Software oder **Programme und Funktionen** aus.
 
 2. Wählen Sie in der Liste der **derzeit installierten Programme** Ihre Office-Version aus.
 
 3. Klicken Sie auf **Ändern**.
 
-4. Wählen Sie **neu installieren oder reparieren**aus, und klicken Sie dann auf **weiter**.
+4. Wählen Sie **neu installieren oder reparieren** aus, und klicken Sie dann auf **weiter**.
 
 5. Wählen Sie **Fehler in meiner Office-Installation erkennen und reparieren aus**, und klicken Sie dann auf **Installieren**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

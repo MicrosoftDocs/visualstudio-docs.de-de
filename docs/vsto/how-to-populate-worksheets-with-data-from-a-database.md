@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank'
+description: Erfahren Sie, wie Sie die Daten aus einem Objekt in der Projekt Mappe verwenden können und wie Sie Windows Forms Steuerelemente zum Anzeigen der Daten in einem Arbeitsblatt verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4252eac32540ac2d0b6e763b5b6e9cf0e2ac7055
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520119"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846440"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank
 
@@ -70,7 +72,7 @@ Informationen zum Senden von Updates an das typisierte DataSet und die Datenbank
 ## <a name="see-also"></a>Siehe auch
 
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)
+- [Hinzufügen neuer Datenquellen](../data-tools/add-new-data-sources.md)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)

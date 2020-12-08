@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins
+description: Erfahren Sie, wie Sie XML-Daten in den folgenden Dokumenttypen speichern können, indem Sie ein benutzerdefiniertes XML-Element in einem VSTO-Add-in erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b153fe3e7c68ed6a8288ff69a30e16dd32c448a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538293"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847714"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Gewusst wie: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins
   Sie können XML-Daten in folgenden Dokumenttypen speichern, indem Sie ein benutzerdefiniertes XML-Element in einem VSTO-Add-In erstellen:
@@ -67,7 +69,7 @@ ms.locfileid: "85538293"
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>So fügen Sie einer PowerPoint-Präsentation ein benutzerdefiniertes XML-Element hinzu
 
-1. Fügen Sie <xref:Microsoft.Office.Core.CustomXMLPart> der [Microsoft. Office. Interop. PowerPoint. _Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) -Auflistung in der Präsentation ein neues-Objekt hinzu. Die XML-Zeichenfolge, die Sie in der Präsentation speichern möchten, ist in <xref:Microsoft.Office.Core.CustomXMLPart> enthalten.
+1. Fügen Sie <xref:Microsoft.Office.Core.CustomXMLPart> der [Microsoft.Office.Interop.PowerPoint._Presentation. CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) -Auflistung in der Präsentation ein neues-Objekt hinzu. Die XML-Zeichenfolge, die Sie in der Präsentation speichern möchten, ist in <xref:Microsoft.Office.Core.CustomXMLPart> enthalten.
 
      Im folgenden Codebeispiel wird einer angegebenen Präsentation ein benutzerdefiniertes XML-Element hinzugefügt.
 
@@ -76,11 +78,11 @@ ms.locfileid: "85538293"
 
 2. Fügen Sie die-Methode der- `AddCustomXmlPartToPresentation` `ThisAddIn` Klasse in einem VSTO-Add-in-Projekt für PowerPoint hinzu.
 
-3. Rufen Sie die Methode aus anderem Code in Ihrem Projekt auf. Um z. b. das benutzerdefinierte XML-Element zu erstellen, wenn der Benutzer eine Präsentation öffnet, rufen Sie die-Methode von einem Ereignishandler für das [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) -Ereignis auf.
+3. Rufen Sie die Methode aus anderem Code in Ihrem Projekt auf. Um z. b. das benutzerdefinierte XML-Element zu erstellen, wenn der Benutzer eine Präsentation öffnet, rufen Sie die-Methode von einem Ereignishandler für das [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) -Ereignis auf.
 
 ## <a name="robust-programming"></a>Stabile Programmierung
  Zur Vereinfachung verwendet dieses Beispiel eine XML-Zeichenfolge, die als lokale Variable in der Methode definiert ist. In der Regel sollten Sie den XML-Code aus einer externen Quelle, z. B. einer Datei oder Datenbank, abrufen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Übersicht über benutzerdefinierte XML-Abschnitte](../vsto/custom-xml-parts-overview.md)
 - [Gewusst wie: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokument Ebene](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

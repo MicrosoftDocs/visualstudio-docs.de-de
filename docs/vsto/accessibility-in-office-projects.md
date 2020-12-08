@@ -1,5 +1,7 @@
 ---
 title: Barrierefreiheit in Office-Projekten
+description: Erfahren Sie, wie Microsoft Office Projekte viele Barrierefreiheits Features enthalten, die es Ihnen ermöglichen, benutzerdefinierte Lösungen zu erstellen, die die Anforderungen an die Standard
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189618"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847363"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
 
@@ -42,9 +44,9 @@ In den meisten Fällen erfüllen Office-Projekte in Visual Studio Barrierefreihe
 
 1. Klicken Sie in Visual Studio im **Menü Extras** auf **Optionen**.
 
-2. Erweitern Sie den Knoten " **Office-Tools** ", und wählen Sie nach Bedarf **Microsoft Office Excel-Tastatur** oder **Microsoft Office Wort Tastatur**aus.
+2. Erweitern Sie den Knoten " **Office-Tools** ", und wählen Sie nach Bedarf **Microsoft Office Excel-Tastatur** oder **Microsoft Office Wort Tastatur** aus.
 
-3. Wählen Sie **dynamisches Tastatur Schema**aus.
+3. Wählen Sie **dynamisches Tastatur Schema** aus.
 
      Es wird eine Meldung angezeigt, die besagt, dass Sie Visual Studio neu starten müssen, damit die Änderung wirksam wird.
 
@@ -70,7 +72,7 @@ In den meisten Fällen erfüllen Office-Projekte in Visual Studio Barrierefreihe
   Informationen zu Einschränkungen bei Windows Forms Steuerelementen in Dokumenten finden Sie unter [Einschränkungen von Windows Forms Steuerelementen in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
 ### <a name="actions-panes-and-custom-task-panes"></a>Aktionsbereiche und benutzerdefinierte Aufgabenbereiche
- Wenn ein Aktionsbereich oder ein benutzerdefinierter Aufgabenbereich den Fokus besitzt, können Sie auf die Steuerelemente auf die gleiche Weise zugreifen wie auf Steuerelemente in einer Windows Forms Anwendung. Wenn Sie den Cursor zwischen dem Aktionsbereich und dem Dokument verschieben möchten, können Sie **F6**drücken.
+ Wenn ein Aktionsbereich oder ein benutzerdefinierter Aufgabenbereich den Fokus besitzt, können Sie auf die Steuerelemente auf die gleiche Weise zugreifen wie auf Steuerelemente in einer Windows Forms Anwendung. Wenn Sie den Cursor zwischen dem Aktionsbereich und dem Dokument verschieben möchten, können Sie **F6** drücken.
 
  Weitere Informationen zu Aktionsbereichen und benutzerdefinierten Aufgabenbereichen finden Sie unter Übersicht über den [Aktions](../vsto/actions-pane-overview.md) Bereich und [benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.
 
@@ -80,11 +82,11 @@ Visual Studio weist die folgenden Einschränkungen im Zusammenhang mit den Anzei
 
 - Steuerelemente in einem Word-Dokument oder Excel-Arbeitsblatt werden deaktiviert, wenn Sie die Zoomeinstellung des Dokuments in etwas anderes als 100% ändern.
 
-- Im Dialogfeld **Neues Projekt** werden Steuerelemente nicht ordnungsgemäß angezeigt, wenn ein Benutzer die Barrierefreiheits Optionen des Computers zur **Verwendung von hoher Kontrast**ändert.
+- Im Dialogfeld **Neues Projekt** werden Steuerelemente nicht ordnungsgemäß angezeigt, wenn ein Benutzer die Barrierefreiheits Optionen des Computers zur **Verwendung von hoher Kontrast** ändert.
 
 Sie können die Bildschirmlupe verwenden, um diese Einschränkungen zu überwinden. Die Bildschirmlupe ist ein Anzeige Dienstprogramm in Windows, das ein separates Fenster erstellt, in dem ein vergrößerter Teil des Bildschirms angezeigt wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten'
+description: Erfahren Sie, wie Sie die Daten aus einem Objekt in der Projekt Mappe verwenden können, und Sie können Windows Forms Steuerelemente verwenden, um die Daten in einem Dokument anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cc795b5476f312f5fc80ba76dc383175596b64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547172"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848052"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Gewusst wie: Auffüllen von Dokumenten mit Daten aus Objekten
 
@@ -66,9 +68,9 @@ So verbinden Sie das Datenobjekt mit der BindingSource:
 
 4. Fügen Sie die Datenquelle als eine Datenbindung zum Steuerelement hinzu.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)
+- [Hinzufügen neuer Datenquellen](../data-tools/add-new-data-sources.md)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

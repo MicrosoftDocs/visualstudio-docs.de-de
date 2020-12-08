@@ -1,5 +1,7 @@
 ---
 title: Aktionsbereich zu Word-Dokumenten oder Excel-Arbeitsmappen hinzufügen
+description: Wenn Sie einem Microsoft Office Word-Dokument oder einer Microsoft Excel-Arbeitsmappe einen Aktionsbereich hinzufügen möchten, sollten Sie zunächst ein Windows Forms Benutzer Steuerelement erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546223"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848065"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen
   Um einem Microsoft Office Word-Dokument oder einer Microsoft Excel-Arbeitsmappe einen Aktionsbereich hinzuzufügen, erstellen Sie zunächst ein Windows Forms Benutzer Steuerelement. Fügen Sie dann das Benutzer Steuerelement der- <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> Eigenschaft des `ThisDocument.ActionsPane` Felds (Word) oder `ThisWorkbook.ActionsPane` Feld (Excel) im Projekt hinzu.
@@ -39,7 +41,7 @@ ms.locfileid: "85546223"
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option Aktionsbereich- **Steuer**Element aus, nennen Sie es **HelloControl**, und klicken Sie auf **Hinzufügen**.
+3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option Aktionsbereich- **Steuer** Element aus, nennen Sie es **HelloControl**, und klicken Sie auf **Hinzufügen**.
 
     > [!NOTE]
     > Alternativ können Sie dem Projekt ein **Benutzer Steuer** Element hinzufügen. Die durch das Aktionsbereich- **Steuer** Element und die **Benutzer Steuer** Elemente generierten Klassen sind funktional äquivalent.
@@ -47,7 +49,7 @@ ms.locfileid: "85546223"
 4. Ziehen Sie auf der Registerkarte **Windows Forms** der **Toolbox** ein **Schalt** Flächen-Steuerelement auf das-Steuerelement.
 
     > [!NOTE]
-    > Wenn das Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie in **Projektmappen-Explorer**auf **HelloControl** .
+    > Wenn das Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie in **Projektmappen-Explorer** auf **HelloControl** .
 
 5. Fügen Sie dem- <xref:System.Windows.Forms.Control.Click> Ereignishandler der Schaltfläche den Code hinzu. Das folgende Beispiel zeigt Code für ein Microsoft Office Word-Dokument.
 
@@ -75,7 +77,7 @@ ms.locfileid: "85546223"
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)
 - [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
 - [Gewusst wie: Verwalten des Steuerelement Layouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)

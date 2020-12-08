@@ -1,5 +1,7 @@
 ---
 title: Gewähren von Vertrauenswürdigkeit für Dokumente
+description: Erfahren Sie, wie ein Projekt auf Dokument Ebene die gleichen Sicherheitsanforderungen wie Projekte auf Anwendungsebene erfüllt, wie z. b. das Signieren der Manifeste mit einem Zertifikat oder das Klicken auf die Eingabeaufforderung
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a631e8d8cffe6bfde925dfbae4a7350e6a0ef95a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298615"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847740"
 ---
 # <a name="grant-trust-to-documents"></a>Gewähren von Vertrauenswürdigkeit für Dokumente
   Ein Projekt auf Dokumentebene verfügt über die gleichen Sicherheitsanforderungen wie Projekte auf Anwendungsebene: Signieren der Manifeste mit einem Zertifikat oder durch Klicken auf die vertrauenswürdige Eingabeaufforderung. Darüber hinaus muss sich das Dokument oder die Arbeitsmappe in einem Verzeichnis befinden, das als vertrauenswürdiger Speicherort festgelegt ist.
@@ -43,7 +45,7 @@ ms.locfileid: "92298615"
 
 - Sie können das Dokument oder die Arbeitsmappe einer Projektmappe auf Dokumentebene im selben Verzeichnis wie die Assembly oder in einem anderen Verzeichnis speichern. Beispielsweise könnte sich das Dokument auf einem SharePoint-Server befinden, und die Assembly könnte auf einer Dateifreigabe im Netzwerk vorhanden sein. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer Office-Projekt Mappe auf Dokument Ebene auf einem SharePoint-Server mithilfe von ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewähren von Vertrauenswürdigkeit für Office-Lösungen](../vsto/granting-trust-to-office-solutions.md)
 - [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

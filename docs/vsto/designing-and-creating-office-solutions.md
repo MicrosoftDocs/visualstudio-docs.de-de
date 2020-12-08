@@ -1,5 +1,7 @@
 ---
 title: Entwerfen und Erstellen von Office-Lösungen
+description: Erfahren Sie, wie Visual Studio Projektvorlagen bereitstellt, die Sie verwenden können, um verschiedene Typen von Office-Projektmappen zu erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808219"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847532"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Lösungen
 
@@ -56,9 +58,9 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 > Sie können .NET Framework 3.5 oder frühere Versionen in Office-Projekten, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, nicht als Ziel verwenden. Office-Projekte, die Sie mit [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] erstellen, erfordern Funktionen, die anfänglich in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] eingeführt wurden.
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Verstehen, wann die Office-PIAs auf Endbenutzer Computern erforderlich sind
- Standardmäßig müssen primäre Interop-Assemblys (PIAs) von Office nicht auf Endbenutzer Computern installiert werden, wenn die Eigenschaft **Interoptypen einbetten** jedes Office-Pia-Verweises im Projekt auf **true**festgelegt ist. Dies ist der Standardwert. In diesem Szenario werden die in der Projektmappe für die PIA-Typen verwendeten Typinformationen beim Erstellen des Projekts in die Projektmappenassembly eingebettet. Zur Laufzeit werden die eingebetteten Typinformationen statt der PIAs verwendet, um das COM-basierte Objektmodell der Office-Anwendung aufzurufen. Weitere Informationen zur Einbettung von Typen aus PIAs in die Projekt Mappe finden Sie unter [typäquivalenz und eingebettete Interop-Typen](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
+ Standardmäßig müssen primäre Interop-Assemblys (PIAs) von Office nicht auf Endbenutzer Computern installiert werden, wenn die Eigenschaft **Interoptypen einbetten** jedes Office-Pia-Verweises im Projekt auf **true** festgelegt ist. Dies ist der Standardwert. In diesem Szenario werden die in der Projektmappe für die PIA-Typen verwendeten Typinformationen beim Erstellen des Projekts in die Projektmappenassembly eingebettet. Zur Laufzeit werden die eingebetteten Typinformationen statt der PIAs verwendet, um das COM-basierte Objektmodell der Office-Anwendung aufzurufen. Weitere Informationen zur Einbettung von Typen aus PIAs in die Projekt Mappe finden Sie unter [typäquivalenz und eingebettete Interop-Typen](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
 
- Wenn die Eigenschaft **Interop-Typen einbetten** jedes Office-Pia-Verweises im Projekt auf **false**festgelegt ist, muss Office PIAs im globalen Assemblycache auf jedem Endbenutzer Computer installiert und registriert werden, auf dem die Lösung ausgeführt wird. In den meisten Fällen werden die PIAs standardmäßig mit Office installiert, Sie können die verteilbare PIA jedoch auch als erforderliche Komponente für die Lösung einschließen. Weitere Informationen finden Sie unter [Voraussetzungen für Office-Lösungen für die Bereitstellung](/previous-versions/bb608617(v=vs.110)).
+ Wenn die Eigenschaft **Interop-Typen einbetten** jedes Office-Pia-Verweises im Projekt auf **false** festgelegt ist, muss Office PIAs im globalen Assemblycache auf jedem Endbenutzer Computer installiert und registriert werden, auf dem die Lösung ausgeführt wird. In den meisten Fällen werden die PIAs standardmäßig mit Office installiert, Sie können die verteilbare PIA jedoch auch als erforderliche Komponente für die Lösung einschließen. Weitere Informationen finden Sie unter [Voraussetzungen für Office-Lösungen für die Bereitstellung](/previous-versions/bb608617(v=vs.110)).
 
 ### <a name="understand-the-client-profile"></a>Grundlegendes zum Client Profil
  .NET Framework Client Profile ist eine Teilmenge der Vollversion von .NET Framework. Sie können .NET Framework Client Profile verwenden, wenn nur die Clientfunktionen in .NET Framework verwendet werden müssen und die schnellstmögliche Bereitstellung für die Office-Lösung angegeben werden soll. Weitere Informationen finden Sie unter [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).
@@ -66,7 +68,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
  Wenn Sie ein Office-Projekt erstellen, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] abzielt, wird [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] standardmäßig als Ziel verwendet. Wenn Sie ein Projekt für das vollständige [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] entwickeln möchten, müssen Sie diese Option festlegen, nachdem das Projekt erstellt wurde. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Erstellen Sie Lösungen für die 64-Bit-Edition von Microsoft Office
- Microsoft Office ist in 64-Bit- und 32-Bit-Editionen verfügbar. Zum Erstellen von Office-Projektmappen, die in einer der Editionen ausgeführt werden können, muss die Zielplattform für das Projekt auf **eine beliebige CPU**festgelegt sein. Dies ist der Standardwert für Office-Projekte. Weitere Informationen finden Sie unter [Erstellen von Office](../vsto/building-office-solutions.md)-Projektmappen.
+ Microsoft Office ist in 64-Bit- und 32-Bit-Editionen verfügbar. Zum Erstellen von Office-Projektmappen, die in einer der Editionen ausgeführt werden können, muss die Zielplattform für das Projekt auf **eine beliebige CPU** festgelegt sein. Dies ist der Standardwert für Office-Projekte. Weitere Informationen finden Sie unter [Erstellen von Office](../vsto/building-office-solutions.md)-Projektmappen.
 
  Es gibt separate 64-Bit- und 32-Bit-Versionen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], die von den 64-Bit- und 32-Bit-Editionen von Microsoft Office verwendet werden. Weitere Informationen finden Sie unter [Visual Studio-Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 

@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten'
+description: Wenn Sie einem Microsoft Office Word-Dokument ein nicht wiederholtes XML-Schema Element zuordnen, fügt Visual Studio dem Dokument automatisch ein XMLNode-Steuerelement hinzu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd0429374b175da3260c3605f39c90cf2dffb841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b9deb6732552a827cb89465f6521bc566e8c46f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544897"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846739"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von XMLNode-Steuerelementen zu Word-Dokumenten
   **Wichtig** Die Informationen, die in diesem Thema in Bezug auf Microsoft Word beschrieben werden, werden exklusiv für den Vorteil und die Verwendung von Einzelpersonen und Organisationen präsentiert, die sich außerhalb der USA und ihrer Gebiete befinden oder Programme verwenden, die unter, Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden Diese Informationen zu Microsoft Word werden möglicherweise nicht von Einzelpersonen oder Organisationen in den USA oder deren Territorien gelesen oder verwendet, die von Microsoft Word-Produkten verwendet werden, die nach dem 10. Januar 2010 von Microsoft lizenziert wurden. Diese Produkte Verhalten sich nicht identisch mit Produkten, die vor diesem Datum lizenziert sind, oder für die Verwendung außerhalb der USA lizenziert und lizenziert wurden.

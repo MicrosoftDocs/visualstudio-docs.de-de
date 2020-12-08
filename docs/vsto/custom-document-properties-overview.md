@@ -1,5 +1,7 @@
 ---
 title: Übersicht über benutzerdefinierte Dokumenteigenschaften
+description: Wenn Sie ein Projekt auf Dokument Ebene erstellen, werden in Visual Studio dem Dokument im Projekt zwei benutzerdefinierte Eigenschaften hinzugefügt.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298460"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847792"
 ---
 # <a name="custom-document-properties-overview"></a>Übersicht über benutzerdefinierte Dokumenteigenschaften
 
@@ -50,7 +52,7 @@ Diese Eigenschaft enthält eine Zeichenfolge, die Details zum Bereitstellungs Ma
 
   Die *SolutionId* ist eine GUID, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] von zum Identifizieren der Lösung verwendet wird. Die *SolutionId* wird automatisch generiert, wenn Sie das Projekt erstellen. Der **vstolocal** -Begriff gibt an, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dass die Assembly aus demselben Ordner wie das Dokument geladen werden soll.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md)
