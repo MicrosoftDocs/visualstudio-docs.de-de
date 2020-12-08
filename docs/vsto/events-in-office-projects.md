@@ -1,5 +1,7 @@
 ---
 title: Ereignisse in Office-Projekten
+description: Erfahren Sie, wie jede Office-Projektvorlage mehrere Ereignishandler generiert und wie sich diese Ereignishandler geringfügig von Ereignis Handlern für VSTO-Add-ins unterscheiden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381d6ffad2afadd90278577ad0e247a2f20ec375
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986116"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848182"
 ---
 # <a name="events-in-office-projects"></a>Ereignisse in Office-Projekten
   Jede Office-Projektvorlage generiert automatisch mehrere Ereignishandler. Die Ereignishandler für Anpassungen auf Dokumentebene unterscheiden sich geringfügig von Ereignishandlern für VSTO-Add-Ins.

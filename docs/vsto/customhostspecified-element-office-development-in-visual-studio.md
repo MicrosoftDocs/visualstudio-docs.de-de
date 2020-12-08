@@ -1,7 +1,8 @@
 ---
 title: '&lt;customhostspezifiziertes- &gt; Element (Office-Entwicklung in Visual Studio)'
+description: Erfahren Sie, wie das customhostangegebene-Element angibt, dass diese Lösung keine eigenständige Anwendung ist.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 689848f14b4540a54489b4ea5bbad67e493fe276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8327c6e154f051f5ce79d41ceaa696e330c794f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544910"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848130"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customhostspezifiziertes- &gt; Element (Office-Entwicklung in Visual Studio)
   Das- `customHostSpecified` Element gibt an, dass diese Lösung keine eigenständige Anwendung ist. Office-Projektmappen enthalten Komponenten, die in Microsoft Office Anwendungen gehostet werden.

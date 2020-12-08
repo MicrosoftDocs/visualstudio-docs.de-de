@@ -1,5 +1,7 @@
 ---
 title: Excel-Lösungen
+description: Erfahren Sie, wie Sie mithilfe von Projektvorlagen Excel automatisieren, Excel-Features erweitern und die Excel-Benutzeroberfläche anpassen können.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53351354a470eb5770f07b9afd527b81c4e587b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6ca4cfd45c1147d10ffaf8d3308b9adb09c689e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986084"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848117"
 ---
 # <a name="excel-solutions"></a>Excel-Lösungen
   Visual Studio stellt Projektvorlagen bereit, die Sie verwenden können, um Anpassungen auf Dokumentebene und VSTO-Add-Ins für Microsoft Office Excel zu erstellen. Mit diesen Projektmappen können Sie Excel automatisieren, Excel-Features erweitern und die Excel-Benutzeroberfläche anpassen. Weitere Informationen zu den Unterschieden zwischen Anpassungen auf Dokument Ebene und VSTO-Add-Ins finden Sie unter Übersicht über die Entwicklung von Office-Projektmappen [&#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -107,7 +109,7 @@ ms.locfileid: "72986084"
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-| Titel | Beschreibung |
+| Titel | BESCHREIBUNG |
 | - | - |
 | [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md) | Hier finden Sie eine Übersicht über die wichtigsten Typen im Excel-Objektmodell. |
 | [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md) | Hier finden Sie Informationen zu erweiterten Objekten (der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), die in Excel-Projektmappen verwendet werden können. |

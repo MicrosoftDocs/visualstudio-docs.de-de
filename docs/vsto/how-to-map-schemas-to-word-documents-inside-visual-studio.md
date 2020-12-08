@@ -1,7 +1,8 @@
 ---
 title: 'Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio'
+description: Erfahren Sie, wie Sie ein XML-Schema einem Microsoft Office Word-Dokument zuordnen können, während das Dokument in Visual Studio geöffnet ist.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 281d9dc18ae1d0550ba844e58d4e39c3723c8dfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 427e2fcb9b881305c160b906262f251d32d70981
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538150"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848221"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio
   **Wichtig** Die Informationen, die in diesem Thema in Bezug auf Microsoft Word beschrieben werden, werden exklusiv für den Vorteil und die Verwendung von Einzelpersonen und Organisationen präsentiert, die sich außerhalb der USA und ihrer Gebiete befinden oder Programme verwenden, die unter, Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden Diese Informationen zu Microsoft Word werden möglicherweise nicht von Einzelpersonen oder Organisationen in den USA oder deren Territorien gelesen oder verwendet, die von Microsoft Word-Produkten verwendet werden, die nach dem 10. Januar 2010 von Microsoft lizenziert wurden. Diese Produkte Verhalten sich nicht identisch mit Produkten, die vor diesem Datum lizenziert sind, oder für die Verwendung außerhalb der USA lizenziert und lizenziert wurden.
@@ -63,6 +64,6 @@ ms.locfileid: "85538150"
 
 10. Ziehen Sie Elemente aus dem Fenster **XML-Struktur** an die Orte in Ihrem Dokument, an denen die entsprechenden Steuerelemente erstellt werden sollen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [XML-Schemas und-Daten in Anpassungen auf Dokument Ebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

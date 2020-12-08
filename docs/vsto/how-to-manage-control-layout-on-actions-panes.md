@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Verwalten des Steuerelement Layouts in Aktionsbereichen'
+description: Erfahren Sie, wie Sie das Steuerelement Layout für Aktionsbereiche verwalten, indem Sie Code schreiben, um die Benutzer Steuerelemente ordnungsgemäß zu Stapeln
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520146"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848247"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Gewusst wie: Verwalten des Steuerelement Layouts in Aktionsbereichen
   Ein Aktionsbereich wird standardmäßig rechts von einem Dokument oder Arbeitsblatt angedockt. Sie kann jedoch Links, oben oder unten angedockt werden. Wenn Sie mehrere Benutzer Steuerelemente verwenden, können Sie Code schreiben, um die Benutzer Steuerelemente im Aktionsbereich ordnungsgemäß zu stapeln. Weitere Informationen finden Sie unter [Übersicht über den Aktions](../vsto/actions-pane-overview.md)Bereich.

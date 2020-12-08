@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern'
+description: Erfahren Sie, wie Sie einem Microsoft Office Excel-Arbeitsblatt in Projekten auf Dokument Ebene zur Entwurfszeit und zur Laufzeit NamedRange-Steuerelemente hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54487ed7f7cdcb7e7da024e4b96fcbb6d5c2cfe4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543519"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848143"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von Name Drange-Steuerelementen zu Arbeitsblättern
   Sie können <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelemente in einem Microsoft Office Excel-Arbeitsblatt zur Entwurfszeit und zur Laufzeit in Projekten auf Dokumentebene hinzufügen.
@@ -39,7 +41,7 @@ ms.locfileid: "85543519"
   Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelementen finden Sie [unter Name Drange Control](../vsto/namedrange-control.md).
 
 ## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a> Hinzufügen von Name Drange-Steuerelementen zur Entwurfszeit
- Es gibt verschiedene Möglichkeiten zum Hinzufügen von <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelementen zur Entwurfszeit zu Arbeitsblättern in einem Projekt auf Dokumentebene: in Excel, über die **Toolbox**von Visual Studio oder im Fenster **Datenquellen** .
+ Es gibt verschiedene Möglichkeiten zum Hinzufügen von <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelementen zur Entwurfszeit zu Arbeitsblättern in einem Projekt auf Dokumentebene: in Excel, über die **Toolbox** von Visual Studio oder im Fenster **Datenquellen** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "85543519"
 
 1. Wählen Sie die Zelle oder die Zellen aus, die Sie in den benannten Bereich einbinden möchten.
 
-2. Geben Sie im **Feld Name**einen Namen für den Bereich ein, und drücken **Sie die Eingabe**Taste.
+2. Geben Sie im **Feld Name** einen Namen für den Bereich ein, und drücken **Sie die Eingabe** Taste.
 
      Das **Namenfeld** befindet sich neben der Bearbeitungsleiste genau über Spalte **A** des Arbeitsblatts.
 
@@ -93,7 +95,7 @@ ms.locfileid: "85543519"
      [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Name Drange-Steuerelement](../vsto/namedrange-control.md)

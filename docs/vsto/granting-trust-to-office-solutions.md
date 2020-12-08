@@ -1,5 +1,7 @@
 ---
 title: Gewähren von Vertrauenswürdigkeit für Office-Lösungen
+description: Um Office-Projektmappen Vertrauenswürdigkeit zu gewähren, müssen Sie die Sicherheitsrichtlinie der einzelnen Zielcomputer so ändern, dass Sie der Projektmappenassembly, dem Bereitstellungs Manifest und dem Dokument
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315238"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848325"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Gewähren von Vertrauenswürdigkeit für Office-Lösungen
   Gewähren von Vertrauenswürdigkeit für Office-Projektmappen bedeutet, dass die Sicherheitsrichtlinien der einzelnen Zielcomputer so geändert werden, dass die Projektmappenassembly, das Anwendungs Manifest, das Bereitstellungs Manifest Die Vertrauensstellung kann der Office-Projekt Mappe entweder von Ihnen oder dem Endbenutzer erteilt werden.

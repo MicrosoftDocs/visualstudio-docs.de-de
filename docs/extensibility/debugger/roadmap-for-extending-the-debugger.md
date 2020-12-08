@@ -1,5 +1,7 @@
 ---
 title: Roadmap für die Erweiterung des Debuggers | Microsoft-Dokumentation
+description: Die Visual Studio-debuggingdokumentation enthält Beispiele, eine Referenz und verschiedene Szenarien, die typische Möglichkeiten zum Anpassen des Debuggers veranschaulichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2574fe76faadf4284088c0d47592d0c5ba0d38f9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011826"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848338"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Roadmap für die Erweiterung des Debuggers
 Diese Dokumentation enthält Anleitungen und Referenzinformationen zum Erweitern des [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] Debuggers mit dem [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -27,9 +29,9 @@ Diese Dokumentation enthält Anleitungen und Referenzinformationen zum Erweitern
 
 - Gibt das systemeigene Windows-Betriebssystem an und schreibt *. PDB* -Datei: Sie können Programme mit dem systemeigenen Code Debug Engine (de) Debuggen, das in integriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Sie müssen keine de-oder-Ausdrucks Auswertung implementieren. Die Ausdrucks Auswertung wird für die Syntax der Programmiersprache C++ geschrieben.
 
-- Erzeugt die MSIL-Ausgabe (Microsoft Intermediate Language). Sie können Programme mit dem verwalteten Code Debugmodul de Debuggen, das auch in integriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Daher muss nur eine Ausdrucks Auswertung implementiert werden. Eine Beispiel Ausdrucks Auswertung wird für Sie bereitgestellt. Weitere Informationen finden Sie in den folgenden Themen:
+- Erzeugt die MSIL-Ausgabe (Microsoft Intermediate Language). Sie können Programme mit dem verwalteten Code Debugmodul de Debuggen, das auch in integriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Daher muss nur eine Ausdrucks Auswertung implementiert werden. Eine Beispiel Ausdrucks Auswertung wird für Sie bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:
 
-   [Ausdrucksauswertung](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
+   [Ausdrucks Auswertung](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
    [Auswerten von Ausdrücken](../../extensibility/debugger/evaluating-expressions.md)
 
@@ -39,7 +41,7 @@ Diese Dokumentation enthält Anleitungen und Referenzinformationen zum Erweitern
 
    [Schreiben einer Common Language Runtime Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- Als Ziel für ein proprietäres Betriebssystem oder eine andere Laufzeitumgebung müssen Sie Ihre eigene de schreiben. Ein Tutorial, das eine einfache de mithilfe von ATL-COM erstellt, wird bereitgestellt. Weitere Informationen finden Sie in den folgenden Themen:
+- Als Ziel für ein proprietäres Betriebssystem oder eine andere Laufzeitumgebung müssen Sie Ihre eigene de schreiben. Ein Tutorial, das eine einfache de mithilfe von ATL-COM erstellt, wird bereitgestellt. Weitere Informationen finden Sie unter den folgenden Themen:
 
    [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
