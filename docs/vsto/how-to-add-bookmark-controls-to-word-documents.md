@@ -1,5 +1,6 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten'
+description: In Projekten auf Dokument Ebene können Sie dem Dokument in Ihrem Projekt zur Entwurfszeit oder zur Laufzeit Lesezeichen-Steuerelemente hinzufügen.
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ccf3f5a355cdad682026453691a4203c95a814
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547250"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847467"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten
   In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen. In VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen.
@@ -41,7 +42,7 @@ ms.locfileid: "85547250"
 ## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Hinzufügen von Bookmark-Steuerelementen zur Entwurfszeit
  Es gibt mehrere Möglichkeiten, wie Sie einem Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelemente hinzufügen können:
 
-- Die **Toolbox**von Visual Studio.
+- Die **Toolbox** von Visual Studio.
 
    Sie können das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement aus der **Toolbox** in Ihr Dokument ziehen. Möglicherweise entscheiden Sie sich für diese Möglichkeit, falls Sie die **Toolbox** bereits zum Hinzufügen von Windows Forms-Steuerelementen zu Ihrem Dokument verwenden.
 
@@ -125,7 +126,7 @@ ms.locfileid: "85547250"
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)

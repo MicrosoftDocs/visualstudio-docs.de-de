@@ -1,5 +1,7 @@
 ---
 title: Erforderliche Port Lieferanten Schnittstellen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Schnittstellen, die ein Port Lieferant ausführen muss. Ein Port Lieferant liefert Ports und implementiert diese.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2aeb1f26f81d773e171aa3fed6b0f2ef976c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e3ac8dc0c229f0c0a00bd22131251c71893224
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713151"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847129"
 ---
 # <a name="required-port-supplier-interfaces"></a>Erforderliche Port Lieferanten Schnittstellen
 Ein Port Lieferant muss die [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) -Schnittstelle implementieren. [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -80,5 +82,5 @@ Ein Port Lieferant muss die [IDebugPortSupplier2](../../extensibility/debugger/r
 
   Bietet eine Möglichkeit, das SDM an dieses Programm anzufügen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Implementieren eines Port Anbieters](../../extensibility/debugger/implementing-a-port-supplier.md)

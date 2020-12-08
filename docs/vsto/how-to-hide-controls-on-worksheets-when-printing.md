@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken'
+description: Erfahren Sie, wie Sie die Steuerelemente ausblenden können, wenn Sie ein Microsoft Office Excel-Arbeitsblatt drucken, das Windows Forms Steuerelemente enthält.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544806"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846492"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Gewusst wie: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken
   Wenn Sie ein Microsoft Office Excel-Dokument drucken, das Windows Forms Steuerelemente enthält, werden die Steuerelemente auf dem gedruckten Arbeitsblatt angezeigt. Sie können die Steuerelemente ausblenden, wenn Sie ein Arbeitsblatt drucken.
@@ -37,11 +39,11 @@ ms.locfileid: "85544806"
 
 1. Erstellen oder öffnen Sie ein Excel-Projekt in Visual Studio, und vergewissern Sie sich, dass **Sheet1** im Designer sichtbar ist. Weitere Informationen zum Erstellen von Projekten finden [Sie unter Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Ziehen Sie ein-Steuerelement auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**auf <xref:Microsoft.Office.Tools.Excel.Controls.Button> eine Zelle in `Sheet1` .
+2. Ziehen Sie ein-Steuerelement auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** auf <xref:Microsoft.Office.Tools.Excel.Controls.Button> eine Zelle in `Sheet1` .
 
-3. Legen Sie im Fenster **Eigenschaften** die- <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> Eigenschaft auf **false**fest.
+3. Legen Sie im Fenster **Eigenschaften** die- <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> Eigenschaft auf **false** fest.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Übersicht über Windows Forms Steuerelemente in Office-Dokumenten](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

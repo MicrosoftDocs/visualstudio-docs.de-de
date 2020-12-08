@@ -1,5 +1,7 @@
 ---
 title: Steuerelemente für Office-Dokumente
+description: Erfahren Sie, wie Sie die Office-Entwicklungs Tools in Visual Studio verwenden können, um Word-Dokumenten und Excel-Arbeitsblättern Windows Forms Steuerelemente und Host Steuerelemente hinzuzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203edcf2b77cfff3fb557ce7c1c8fea7592e17ea
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254399"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847987"
 ---
 # <a name="controls-on-office-documents"></a>Steuerelemente für Office-Dokumente
   Sie können die Office-Entwicklungstools in Visual Studio zum Hinzufügen von Windows Forms-Steuerelementen und *Hoststeuerelementen* zu Word-Dokumenten und Excel-Arbeitsblättern verwenden. Hoststeuerelemente sind Objekte, mit denen verschiedene Objekte der Benutzeroberfläche (UI) in den Word- und Excel-Objektmodellen erweitert werden.

@@ -1,5 +1,7 @@
 ---
 title: Erweitern von Word-Dokumenten & Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit
+description: Erfahren Sie, wie Sie ein VSTO-Add-in verwenden können, um Word-Dokumente und Excel-Arbeitsmappen auf verschiedene Weise anzupassen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585444"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847823"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit
   Sie können ein VSTO-Add-In verwenden, um Word-Dokumente und Excel-Arbeitsmappen wie folgt anzupassen:
@@ -40,7 +42,7 @@ ms.locfileid: "91585444"
   **Gilt für:** Die Informationen in diesem Artikel gelten für VSTO-Add-in-Projekte für die folgenden Anwendungen: Excel und Word. Weitere Informationen finden Sie unter [verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).
 
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Generieren von erweiterten Objekten in VSTO-Add-ins
- *Erweiterte Objekte* sind Instanzen von Typen, die über die Visual Studio-Tools für Office-Laufzeit bereitgestellt werden. Hiermit wird Objekten Funktionalität hinzugefügt, die als systemeigene Elemente im Word- oder Excel-Objektmodell vorhanden sind (als *systemeigene Office-Objekte*bezeichnet). Verwenden Sie die `GetVstoObject`-Methode, um ein erweitertes Objekt für ein Word- oder Excel-Objekt zu generieren. Wenn Sie die- `GetVstoObject` Methode zum ersten Mal für ein bestimmtes Word-oder Excel-Objekt aufzurufen, wird ein neues-Objekt zurückgegeben, das das angegebene Objekt erweitert. Bei jedem Aufrufen der Methode und Angeben des gleichen Word- oder Excel-Objekts wird dasselbe erweiterte Objekt zurückgegeben.
+ *Erweiterte Objekte* sind Instanzen von Typen, die über die Visual Studio-Tools für Office-Laufzeit bereitgestellt werden. Hiermit wird Objekten Funktionalität hinzugefügt, die als systemeigene Elemente im Word- oder Excel-Objektmodell vorhanden sind (als *systemeigene Office-Objekte* bezeichnet). Verwenden Sie die `GetVstoObject`-Methode, um ein erweitertes Objekt für ein Word- oder Excel-Objekt zu generieren. Wenn Sie die- `GetVstoObject` Methode zum ersten Mal für ein bestimmtes Word-oder Excel-Objekt aufzurufen, wird ein neues-Objekt zurückgegeben, das das angegebene Objekt erweitert. Bei jedem Aufrufen der Methode und Angeben des gleichen Word- oder Excel-Objekts wird dasselbe erweiterte Objekt zurückgegeben.
 
  Der Typ des erweiterten Objekts hat den gleichen Namen wie der Typ des systemeigenen Office-Objekts, aber der Typ wird im Namespace <xref:Microsoft.Office.Tools.Excel> oder <xref:Microsoft.Office.Tools.Word> definiert. Wenn Sie beispielsweise die `GetVstoObject`-Methode zum Erweitern eines <xref:Microsoft.Office.Interop.Word.Document>-Objekts aufrufen, gibt die Methode ein <xref:Microsoft.Office.Tools.Word.Document>-Objekt zurück.
 
@@ -49,7 +51,7 @@ ms.locfileid: "91585444"
  Verwenden Sie die `HasVstoObject`-Methode, um zu ermitteln, ob ein erweitertes Objekt für ein bestimmtes systemeigenes Office-Objekt bereits generiert wurde. Weitere Informationen finden Sie unter [bestimmen, ob ein Office-Objekt erweitert](#HasVstoObject)wurde.
 
 ### <a name="generate-host-items"></a>Generieren von Host Elementen
- Wenn Sie `GetVstoObject` zum Erweitern eines Objekts auf Dokument Ebene verwenden (d. h., <xref:Microsoft.Office.Interop.Excel.Workbook> <xref:Microsoft.Office.Interop.Excel.Worksheet> , oder <xref:Microsoft.Office.Interop.Word.Document> ), wird das zurückgegebene Objekt als *Host Element*bezeichnet. Ein Hostelement ist ein Typ, der andere Objekte enthalten kann, z. B. andere erweiterte Objekte und Steuerelemente. Der Typ ähnelt dem entsprechenden Typ in den primären Interopassemblys von Word oder Excel, verfügt aber über zusätzliche Funktionen. Weitere Informationen zu Host Elementen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
+ Wenn Sie `GetVstoObject` zum Erweitern eines Objekts auf Dokument Ebene verwenden (d. h., <xref:Microsoft.Office.Interop.Excel.Workbook> <xref:Microsoft.Office.Interop.Excel.Worksheet> , oder <xref:Microsoft.Office.Interop.Word.Document> ), wird das zurückgegebene Objekt als *Host Element* bezeichnet. Ein Hostelement ist ein Typ, der andere Objekte enthalten kann, z. B. andere erweiterte Objekte und Steuerelemente. Der Typ ähnelt dem entsprechenden Typ in den primären Interopassemblys von Word oder Excel, verfügt aber über zusätzliche Funktionen. Weitere Informationen zu Host Elementen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
 
  Nachdem Sie ein Hostelement generiert haben, können Sie es verwenden, um dem Dokument, der Arbeitsmappe oder dem Arbeitsblatt verwaltete Steuerelemente hinzuzufügen. Weitere Informationen finden Sie unter [Hinzufügen von verwalteten Steuerelementen zu Dokumenten und Arbeitsblättern](#AddControls).
 
@@ -87,7 +89,7 @@ ms.locfileid: "91585444"
 ### <a name="add-managed-controls-to-documents-and-worksheets"></a><a name="AddControls"></a> Hinzufügen von verwalteten Steuerelementen zu Dokumenten und Arbeitsblättern
  Nach dem Generieren eines <xref:Microsoft.Office.Tools.Word.Document> - oder <xref:Microsoft.Office.Tools.Excel.Worksheet>-Elements können Sie dem Dokument oder Arbeitsblatt, für das diese erweiterten Objekte stehen, Steuerelemente hinzufügen. Um Steuerelemente hinzuzufügen, verwenden Sie die- `Controls` Eigenschaft des <xref:Microsoft.Office.Tools.Word.Document> oder des <xref:Microsoft.Office.Tools.Excel.Worksheet> . Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
- Sie können Windows Forms-Steuerelemente oder *Hoststeuerelemente*hinzufügen. Ein Hoststeuerelement ist ein Steuerelement, das von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellt wird und mit dem ein entsprechendes Steuerelement in der primären Word- oder Excel-Interopassembly eingeschlossen wird. Ein Host Steuerelement macht das gesamte Verhalten des zugrunde liegenden systemeigenen Office-Objekts verfügbar. Außerdem werden Ereignisse ausgelöst, die mithilfe des Daten Bindungs Modells Windows Forms an Daten gebunden werden können. Weitere Informationen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
+ Sie können Windows Forms-Steuerelemente oder *Hoststeuerelemente* hinzufügen. Ein Hoststeuerelement ist ein Steuerelement, das von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellt wird und mit dem ein entsprechendes Steuerelement in der primären Word- oder Excel-Interopassembly eingeschlossen wird. Ein Host Steuerelement macht das gesamte Verhalten des zugrunde liegenden systemeigenen Office-Objekts verfügbar. Außerdem werden Ereignisse ausgelöst, die mithilfe des Daten Bindungs Modells Windows Forms an Daten gebunden werden können. Weitere Informationen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
 
 > [!NOTE]
 > Es ist nicht möglich, ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> -Steuerelement einem Arbeitsblatt oder ein <xref:Microsoft.Office.Tools.Word.XMLNode> - oder <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement einem Dokument per VSTO-Add-In hinzuzufügen. Diese Hoststeuerelemente können nicht programmgesteuert hinzugefügt werden. Weitere Informationen finden Sie Unterprogramm gesteuerte [Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
@@ -121,7 +123,7 @@ ms.locfileid: "91585444"
 
  Die `HasVstoObject`-Methode ist nützlich, falls Code nur ausgeführt werden soll, wenn ein bestimmtes Office-Objekt über ein erweitertes Objekt verfügt. Wenn Sie z. b. über ein Word-VSTO-Add-in verfügen, das das Ereignis behandelt, <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> um verwaltete Steuerelemente aus einem Dokument zu entfernen, bevor es gespeichert wird, verwenden Sie die- `HasVstoObject` Methode, um zu bestimmen, ob das Dokument erweitert wurde. Wenn das Dokument nicht erweitert wurde, kann es keine verwalteten Steuerelemente enthalten, und der Ereignishandler kann zurückgeben, ohne zu versuchen, Steuerelemente im Dokument zu bereinigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

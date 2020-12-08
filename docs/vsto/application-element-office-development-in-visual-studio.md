@@ -1,5 +1,7 @@
 ---
 title: '&lt;Application- &gt; Element (Office-Entwicklung in Visual Studio)'
+description: Erfahren Sie, wie das Application-Element des vstav3-Namespace die Beschreibung von Office-Projektmappen umschließt.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540df77b4498376dcde389730e17e7506647fb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543740"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847038"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Application- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `application` -Element des `vstav3` -Namespace umschließt die Beschreibung von Office-Projektmappen Die untergeordneten Elemente sind für Anpassungen auf Dokumentebene und für VSTO-Add-Ins unterschiedlich.

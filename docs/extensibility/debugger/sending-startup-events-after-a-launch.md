@@ -1,5 +1,7 @@
 ---
 title: Senden von Start Ereignissen nach einem Start | Microsoft-Dokumentation
+description: Informieren Sie sich über die Reihe der Start Ereignisse, die von der Debug-Engine an die Debugsitzung gesendet werden, nachdem die Debug-Engine an ein Programm angefügt wurde
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713014"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847883"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Start Ereignisse nach einem Start senden
 Nachdem die Debug-Engine (de) an das Programm angefügt wurde, sendet Sie eine Reihe von Start Ereignissen an die Debugsitzung zurück.
@@ -43,6 +45,6 @@ Nachdem die Debug-Engine (de) an das Programm angefügt wurde, sendet Sie eine R
 
   Wenn der Code geladen und zur Ausführung bereit ist, aber bevor Code ausgeführt wird, sendet der de das SDM-Ereignis " [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) Load Complete". Wenn das Programm nicht bereits ausgeführt wird, sendet der de ein [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) -Einstiegspunkt Ereignis, das signalisiert, dass das Programm den Haupteinstiegspunkt erreicht hat und zum Debuggen bereit ist.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Kontrolle der Ausführung](../../extensibility/debugger/control-of-execution.md)
 - [Debugtasks](../../extensibility/debugger/debugging-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: Häufige Aufgaben bei der Office-Programmierung
+description: Erfahren Sie, wie Sie für die Daten in einer Anpassung auf Dokument Ebene programmieren können, ohne das Objektmodell von Microsoft Office Word oder Office Excel verwenden zu müssen.
+ms.custom: SEO-VS-2020SS
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809858"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846297"
 ---
 # <a name="common-tasks-in-office-programming"></a>Häufige Aufgaben bei der Office-Programmierung
   Dieses Thema soll Ihnen helfen, Antworten auf die folgenden Kategorien häufig gestellter Fragen zum Programmieren von Office-Projektmappen mithilfe von Visual Studio zu finden.

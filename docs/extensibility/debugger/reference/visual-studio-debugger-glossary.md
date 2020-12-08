@@ -1,5 +1,7 @@
 ---
 title: Glossar für Visual Studio-Debugger | Microsoft-Dokumentation
+description: In diesem Artikel werden verschiedene Begriffe erläutert, die im Visual Studio-debuggingsdk verwendet werden, z. b. gebundene Haltepunkte, Kausalität und Code Kontext.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713346"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847064"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossar zum Visual Studio-Debugger
 Im [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debuggingsdk werden die folgenden Begriffe verwendet:
 
-## <a name="terms"></a>Begriffe
+## <a name="terms"></a>Bestimmungen
  gebundener Haltepunkt eine Abstraktion für einen Haltepunkt, der im Code festgelegt ist. Zwischen einem gebundenen Haltepunkt und einer breakpointanweisung im Codestream besteht eine eins-zu-eins-Beziehung. Wenn Code entladen wird, wird die Bindung gebundener Haltepunkte möglicherweise aufgehoben.
 
  Kausalität bietet die Möglichkeit, einen logischen Ausführungs Thread über mehrere physische Threads, Prozesse und Computer hinweg zu verfolgen und die aufrufsliste dieses logischen Threads an einem beliebigen Punkt in der Lebensdauer des Threads zu rekonstruieren.
@@ -66,5 +68,5 @@ Im [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debuggingsdk 
 
   Warnung Haltepunkt eine Abstraktion zum Beschreiben einer Warnung an einem ausstehenden Breakpoint. Ein Warnungs Haltepunkt beschreibt einen Grund, warum der ausstehende Breakpoint noch nicht an einen Code Speicherort gebunden ist. Dies kann daran liegen, dass der Code für den vom ausstehenden Breakpoint beschriebenen Speicherort noch nicht geladen wurde, oder aus einem anderen Grund.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Visual Studio Debugger-Erweiterbarkeit](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

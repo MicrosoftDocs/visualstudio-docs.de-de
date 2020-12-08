@@ -1,5 +1,7 @@
 ---
 title: Zwischengespeicherte Daten in Anpassungen auf Dokument Ebene
+description: Erfahren Sie, wie Visual Studio die Daten in Anpassungen auf Dokument Ebene von der Sicht trennt, indem Sie die Speicherung von Daten als Daten Cache ermöglichen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238347"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847896"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Zwischengespeicherte Daten in Anpassungen auf Dokument Ebene
   Das Hauptziel der Anpassungen auf Dokument Ebene besteht darin, Daten von der Sicht in Office-Dokumenten zu trennen. Daten bezieht sich auf die im Dokument gespeicherten Informationen, einschließlich Zahlen und Text. Die Ansicht bezieht sich auf die Benutzeroberfläche und das Objektmodell von Microsoft Office Word und Microsoft Office Excel.
 
- Visual Studio trennt die Daten von der Sicht in Anpassungen auf Dokument Ebene, indem es ermöglicht wird, dass Daten als *Daten Insel*eingebettet werden, auch als *Daten Cache*bezeichnet. Sie können die Daten direkt lesen oder ändern, ohne Word oder Excel zu starten. Dies ist hilfreich, wenn Sie Daten in Dokumenten auf einem Server ändern müssen, auf dem Microsoft Office nicht installiert ist. Word und Excel sind für die Verwendung in Client Umgebungen vorgesehen. Sie sind nicht für die Durchführung auf einem Server konzipiert.
+ Visual Studio trennt die Daten von der Sicht in Anpassungen auf Dokument Ebene, indem es ermöglicht wird, dass Daten als *Daten Insel* eingebettet werden, auch als *Daten Cache* bezeichnet. Sie können die Daten direkt lesen oder ändern, ohne Word oder Excel zu starten. Dies ist hilfreich, wenn Sie Daten in Dokumenten auf einem Server ändern müssen, auf dem Microsoft Office nicht installiert ist. Word und Excel sind für die Verwendung in Client Umgebungen vorgesehen. Sie sind nicht für die Durchführung auf einem Server konzipiert.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -60,6 +62,6 @@ ms.locfileid: "88238347"
 |Welche Arten von Daten können gespeichert werden?|Ein beliebiges öffentliches Objekt in der Anpassungsassembly, das bestimmte Anforderungen erfüllt. Weitere Informationen finden Sie unter zwischen [Speichern von Daten](../vsto/caching-data.md).|Beliebige XML-Daten.|
 |Können Sie auf die Daten zugreifen, ohne Microsoft Office Anwendungen zu starten?|Ja, mithilfe der- <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse, die von bereitgestellt wird [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Ja, mithilfe von Klassen im- <xref:System.IO.Packaging> Namespace oder mit dem Open XML-Format-SDK.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

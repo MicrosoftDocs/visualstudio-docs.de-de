@@ -1,5 +1,7 @@
 ---
 title: Senden von Ereignissen | Microsoft-Dokumentation
+description: Erfahren Sie, wie der Debugger und die Debug-Engine ein Ereignis Modell verwenden, das auf DCOM basiert. Ereignisse werden als COM-Objekte gesendet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ec0d3aa29da562147b71b8efde49baf07d8ae0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0262868ae442bfdd8b99c16f59e000f4ebfc35c5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713040"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847909"
 ---
 # <a name="send-events"></a>Senden von Ereignisse
 Der Mechanismus für die Kommunikation zwischen dem Debugger und der Debug-Engine (de) ist ein Ereignis Modell, das auf DCOM basiert. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die Folgendes angeben:

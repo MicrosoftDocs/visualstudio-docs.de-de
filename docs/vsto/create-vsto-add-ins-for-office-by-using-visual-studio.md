@@ -1,7 +1,8 @@
 ---
 title: Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio
+description: Erfahren Sie, wie Sie die Microsoft Office Entwicklertools in Visual Studio verwenden können, um .NET Framework-Anwendungen zu erstellen, die Office erweitern.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e8cd25b8c4c70067641468dd6fa321e9e4fbe39
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 50337b728647b5e15a877216713cd6fc9823742a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809361"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847974"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Erstellen von VSTO-Add-ins für Office mithilfe von Visual Studio
-  Können Sie die Microsoft Office-Entwicklertools in Visual Studio zum Erstellen von .NET Framework-Anwendungen verwenden, die Office erweitern. Diese Anwendungen werden auch *Office-Lösungen*genannt .
+  Können Sie die Microsoft Office-Entwicklertools in Visual Studio zum Erstellen von .NET Framework-Anwendungen verwenden, die Office erweitern. Diese Anwendungen werden auch *Office-Lösungen* genannt .
 
  Die Office-Entwicklertools stellen Funktionen zur Verfügung, mit deren Hilfe Sie Office-Lösungen passend zu einer Vielzahl von geschäftlichen Anforderungen erstellen. Die Tools umfassen Projektvorlagen zum Erstellen von Office-Projektmappen mit Visual Basic oder Visual C#, und visuelle Designer, die Sie bei Erstellung benutzerdefinierter Benutzeroberflächen für Office-Projektmappen einsetzen können.
 

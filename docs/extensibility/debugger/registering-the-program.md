@@ -1,5 +1,7 @@
 ---
 title: Registrieren des Programms | Microsoft-Dokumentation
+description: Erfahren Sie, wie ein zu debuggende Programm mit einem Port registriert wird, nachdem die Debug-Engine einen Port abruft.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713171"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847095"
 ---
 # <a name="register-the-program"></a>Programm registrieren
 Nachdem die Debug-Engine einen Port abgerufen hat, der durch eine [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) -Schnittstelle dargestellt wird, besteht der nächste Schritt bei der Aktivierung des zu debuggenden Programms darin, Sie mit dem Port zu registrieren. Nach der Registrierung kann das Programm auf eine der folgenden Weise debuggt werden:
@@ -104,6 +106,6 @@ Nachdem die Debug-Engine einen Port abgerufen hat, der durch eine [IDebugPort2](
 
     ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Portieren eines Ports](../../extensibility/debugger/getting-a-port.md)
 - [Aktivieren eines deaktivierte Programms](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

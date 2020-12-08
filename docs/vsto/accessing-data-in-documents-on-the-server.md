@@ -1,5 +1,7 @@
 ---
 title: Zugreifen auf Daten in Dokumenten auf dem Server
+description: Erfahren Sie, wie Sie für die Daten in einer Anpassung auf Dokument Ebene programmieren können, ohne das Objektmodell von Microsoft Office Word oder Microsoft Office Excel verwenden zu müssen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab033120c0913bbae33458c5a2d0b53972364581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255765"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847623"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Zugreifen auf Daten in Dokumenten auf dem Server
   Sie können für die Daten in einer Anpassung auf Dokument Ebene programmieren, ohne das Objektmodell von Microsoft Office Word oder Microsoft Office Excel verwenden zu müssen. Dies bedeutet, dass Sie auf Daten zugreifen können, die in einem Dokument auf einem Server enthalten sind, auf dem Word oder Excel nicht installiert ist. Beispielsweise kann der Code auf einem Server (z. b. auf einer [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seite) die Daten in einem Dokument anpassen und das angepasste Dokument an einen Endbenutzer senden. Wenn der Endbenutzer das Dokument öffnet, bindet der Daten Bindungs Code in der Projektmappenassembly die angepassten Daten an das Dokument. Dies ist möglich, da die Daten im Dokument von der Benutzeroberfläche getrennt sind. Weitere Informationen finden Sie unter [zwischengespeicherte Daten in Anpassungen auf Dokument Ebene](../vsto/cached-data-in-document-level-customizations.md).
@@ -70,14 +72,14 @@ ms.locfileid: "71255765"
 ### <a name="modify-null-values-in-the-data-cache"></a>Ändern von NULL-Werten im Daten Cache
  Der Daten Cache speichert keine Objekte, die den Wert **null** aufweisen, wenn das Dokument gespeichert und geschlossen wird. Diese Einschränkung hat mehrere Konsequenzen, wenn Sie zwischengespeicherte Daten ändern:
 
-- Wenn Sie ein Objekt im Daten Cache auf den Wert **null**festlegen, werden alle Objekte im Daten Cache beim Öffnen des Dokuments automatisch auf **null** festgelegt, und der gesamte Daten Cache wird gelöscht, wenn das Dokument gespeichert und geschlossen wird. Das heißt, alle zwischengespeicherten Objekte werden aus dem Daten Cache entfernt, und die Auflistung ist <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> leer.
+- Wenn Sie ein Objekt im Daten Cache auf den Wert **null** festlegen, werden alle Objekte im Daten Cache beim Öffnen des Dokuments automatisch auf **null** festgelegt, und der gesamte Daten Cache wird gelöscht, wenn das Dokument gespeichert und geschlossen wird. Das heißt, alle zwischengespeicherten Objekte werden aus dem Daten Cache entfernt, und die Auflistung ist <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> leer.
 
 - Wenn Sie eine Projekt Mappe mit **null** -Objekten im Daten Cache erstellen und diese Objekte mithilfe der-Klasse initialisieren möchten <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> , bevor das Dokument zum ersten Mal geöffnet wird, müssen Sie sicherstellen, dass Sie alle Objekte im Daten Cache initialisieren. Wenn Sie nur einige der Objekte initialisieren, werden alle Objekte beim Öffnen des Dokuments auf **null** festgelegt, und der gesamte Daten Cache wird gelöscht, wenn das Dokument gespeichert und geschlossen wird.
 
 ## <a name="access-typed-datasets-in-the-cache"></a>Zugreifen auf typisierte Datasets im Cache
- Wenn Sie auf die Daten in einem typisierten DataSet sowohl aus einer Office-Projekt Mappe als auch aus einer Anwendung außerhalb von Office zugreifen möchten, z. b. eine Windows Forms Anwendung oder ein- [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Projekt, müssen Sie das typisierte DataSet in einer separaten Assembly definieren, auf die in beiden Projekten verwiesen wird. Wenn Sie das typisierte DataSet mit dem Assistenten zum Konfigurieren von **Datenquellen** oder dem **DataSet-Designer**jedem Projekt hinzufügen, werden die typisierten Datasets in den beiden Projekten vom .NET Framework als verschiedene Typen behandelt. Weitere Informationen zum Erstellen von typisierten Datasets finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+ Wenn Sie auf die Daten in einem typisierten DataSet sowohl aus einer Office-Projekt Mappe als auch aus einer Anwendung außerhalb von Office zugreifen möchten, z. b. eine Windows Forms Anwendung oder ein- [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Projekt, müssen Sie das typisierte DataSet in einer separaten Assembly definieren, auf die in beiden Projekten verwiesen wird. Wenn Sie das typisierte DataSet mit dem Assistenten zum Konfigurieren von **Datenquellen** oder dem **DataSet-Designer** jedem Projekt hinzufügen, werden die typisierten Datasets in den beiden Projekten vom .NET Framework als verschiedene Typen behandelt. Weitere Informationen zum Erstellen von typisierten Datasets finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md)
 - [Zwischengespeicherte Daten in Anpassungen auf Dokument Ebene](../vsto/cached-data-in-document-level-customizations.md)

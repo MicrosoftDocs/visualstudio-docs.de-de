@@ -1,5 +1,7 @@
 ---
 title: Verfügbare Funktionen nach Office-Anwendung und Projekttyp
+description: Erfahren Sie, wie Visual Studio verschiedene Typen von Projektvorlagen bietet, die verschiedene Geschäftsszenarien für Microsoft Office Anwendungen unterstützen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba24bdeac9ad51d0173e765c8cb793be2473baf6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585431"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847805"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Verfügbare Funktionen nach Office-Anwendung und Projekttyp
   Visual Studio verfügt über mehrere Arten von Projektvorlagen, die unterschiedliche Geschäftsszenarien für Microsoft Office-Anwendungen unterstützen, z. B.:
@@ -50,7 +52,7 @@ ms.locfileid: "91585431"
 ## <a name="features-available-in-different-project-types"></a>In unterschiedlichen Projekttypen verfügbare Funktionen
  In der folgenden Tabelle ist aufgeführt, für welche Projekttypen die jeweilige Funktion bereitgestellt wird.
 
-|Feature|Projekttypen, die die Funktion bereitstellen|Weiterführende Themen|
+|Funktion|Projekttypen, die die Funktion bereitstellen|Weitere nützliche Informationen|
 |-------------|--------------------------------------------|---------------------|
 |Aktionsbereich|Projekte auf Dokumentebene|[Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)|
 |ClickOnce-Bereitstellung.|VS-Projekte und Projekte auf Dokumentebene|[Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)|
@@ -66,7 +68,7 @@ ms.locfileid: "91585431"
 |Menübandanpassungen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -Excel<br />-InfoPath (nur InfoPath 2013 und InfoPath 2010)<br />-Outlook<br />-PowerPoint<br />-Projekt<br />-Visio<br />-Word|[Übersicht über Menüband](../vsto/ribbon-overview.md)|
 |Visueller Dokumentdesigner|Projekte auf Dokumentebene|[Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)

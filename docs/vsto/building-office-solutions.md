@@ -1,5 +1,7 @@
 ---
 title: Erstellen von Office-Lösungen
+description: Informieren Sie Windows Forms sich über die Unterschiede zwischen dem entwickeln und Debuggen von Office-Projekten und dem entwickeln und Debuggen von anderen Projekttypen in Visual Studio
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551846"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847935"
 ---
 # <a name="build-office-solutions"></a>Erstellen von Office-Lösungen
   Im Allgemeinen ist das Erstellen und Debuggen von Office-Projekten mit dem Erstellen und Debuggen von anderen Projekttypen in Visual Studio identisch, z. B. von Windows Forms. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert. Allgemeine Informationen zum Erstellen von Anwendungen finden Sie unter [Kompilieren und erstellen in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -46,7 +48,7 @@ ms.locfileid: "69551846"
 
 - Eine Kopie des Projektdokuments.
 
-- Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.
+- Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true** festgelegt ist.
 
 - Das Anwendungs Manifest mit der Dateinamenerweiterung " *. Manifest*". Weitere Informationen finden Sie unter [Anwendungs Manifeste für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen.
 
@@ -60,7 +62,7 @@ ms.locfileid: "69551846"
 ### <a name="application-level-projects"></a>Projekte auf Anwendungsebene
  Wenn Sie ein VSTO-Add-in-Projekt erstellen, sind die folgenden Elemente in der Projekt Ausgabe enthalten:
 
-- Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.
+- Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true** festgelegt ist.
 
 - Das Anwendungs Manifest mit der Dateinamenerweiterung " *. Manifest*". Weitere Informationen finden Sie unter [Anwendungs Manifeste für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen.
 
@@ -79,7 +81,7 @@ ms.locfileid: "69551846"
   Outlook benötigt diese Informationen zum Laden der Formularbereiche.
 
 ## <a name="referenced-assemblies"></a>Assemblys, auf die verwiesen wird
- Sie können aus Ihrem Projekt „Erstellen von Office-Projektmappen“ auf Assemblys verweisen (einschließlich Klassenbibliotheksprojekte). Jede referenzierte Assembly enthält eine Eigenschaft namens **Lokale Kopie**. **Lokale Kopie** gibt an, ob die Assembly in das Ausgabeverzeichnis kopiert wird. Standardmäßig ist der Wert auf **true**festgelegt. Jede referenzierte Assembly, bei der **Lokale Kopie** auf **true** festgelegt ist, wird in das Ausgabeverzeichnis kopiert.
+ Sie können aus Ihrem Projekt „Erstellen von Office-Projektmappen“ auf Assemblys verweisen (einschließlich Klassenbibliotheksprojekte). Jede referenzierte Assembly enthält eine Eigenschaft namens **Lokale Kopie**. **Lokale Kopie** gibt an, ob die Assembly in das Ausgabeverzeichnis kopiert wird. Standardmäßig ist der Wert auf **true** festgelegt. Jede referenzierte Assembly, bei der **Lokale Kopie** auf **true** festgelegt ist, wird in das Ausgabeverzeichnis kopiert.
 
 ## <a name="security-during-the-build-process"></a>Sicherheit während des Buildprozesses
  Visual Studio konfiguriert automatisch die Sicherheitseinstellungen auf dem Entwicklungscomputer, um während des Buildprozesses der Projektmappe Vertrauenswürdigkeit zu gewähren. Dadurch kann die Projektmappe beim Debuggen ausgeführt werden.

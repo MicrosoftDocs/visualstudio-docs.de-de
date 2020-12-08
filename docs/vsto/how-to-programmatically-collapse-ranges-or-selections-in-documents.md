@@ -1,5 +1,7 @@
 ---
 title: Programm gesteuertes reduzieren von Bereichen oder Auswahlen in Dokumenten
+description: Wenn Sie mit einem Bereichs-oder Auswahl Objekt arbeiten, möchten Sie möglicherweise die Auswahl in eine Einfügemarke ändern, bevor Sie Text einfügen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb22f97b6a876029ff5d984abf9bda32cfd3fbc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cba19d8cb6c26defcbb7cf39f461a45bf217b5a5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585287"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847649"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Gewusst wie: Programm gesteuertes reduzieren von Bereichen oder Auswahlen in Dokumenten
   Wenn Sie mit einem <xref:Microsoft.Office.Interop.Word.Range> - oder <xref:Microsoft.Office.Interop.Word.Selection> -Objekt arbeiten, möchten Sie die Auswahl vor dem Einfügen von Text möglicherweise auf eine Einfügemarke setzen, um das Überschreiben vorhandenen Texts zu vermeiden. Sowohl das <xref:Microsoft.Office.Interop.Word.Range> -Objekt als auch das- <xref:Microsoft.Office.Interop.Word.Selection> Objekt verfügen über eine Collapse-Methode, die die- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> Enumerationswerte verwendet:
@@ -87,7 +89,7 @@ ms.locfileid: "91585287"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Gewusst wie: Programm gesteuertes Abrufen von Start-und Endzeichen in Bereichen](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)

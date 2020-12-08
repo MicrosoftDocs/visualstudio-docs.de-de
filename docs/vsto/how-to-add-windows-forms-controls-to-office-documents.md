@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten'
+description: Erfahren Sie, wie Sie in Projekten auf Dokument Ebene zur Entwurfszeit Microsoft Office Excel-und Microsoft Office Word-Dokumenten Windows Forms Steuerelemente hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b12d51ffe3a2e647a067b95d320e8beb70cac384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547536"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846778"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten
   Sie können Microsoft Office Excel- und Microsoft Office Word-Dokumenten Windows Forms-Steuerelemente in Projekten auf Dokumentebene zur Entwurfszeit hinzufügen. Zur Laufzeit können Sie Steuerelemente in Anpassungen auf Dokument Ebene und in VSTO-Add-Ins hinzufügen. Beispielsweise können Sie dem Arbeitsblatt ein-Steuerelement hinzufügen, <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> damit Benutzer aus einer Liste von Optionen auswählen können.
@@ -44,58 +46,58 @@ ms.locfileid: "85547536"
 
 1. Erstellen oder öffnen Sie ein Excel-Arbeitsmappen- oder Word-Dokumentprojekt in Visual Studio, damit das Dokument im Designer angezeigt wird. Weitere Informationen zum Erstellen von Projekten finden [Sie unter Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Klicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**auf das Steuerelement, das Sie hinzufügen möchten, und ziehen Sie es in das Dokument.
+2. Klicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** auf das Steuerelement, das Sie hinzufügen möchten, und ziehen Sie es in das Dokument.
 
     > [!NOTE]
-    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste** angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>So ziehen ein Windows Forms-Steuerelement auf das Dokument
 
 1. Erstellen oder öffnen Sie ein Excel-Arbeitsmappen- oder Word-Dokumentprojekt in Visual Studio, damit das Dokument im Designer angezeigt wird. Weitere Informationen zum Erstellen von Projekten finden [Sie unter Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Klicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**auf das Steuerelement, das Sie hinzufügen möchten.
+2. Klicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** auf das Steuerelement, das Sie hinzufügen möchten.
 
 3. Klicken Sie im Dokument auf die Stelle, an der die linke obere Ecke des Steuerelements positioniert werden soll, und ziehen Sie den Mauszeiger an die Stelle, an der sich die untere rechte Ecke des Steuerelements befinden soll.
 
      Das Steuerelement wird dem Dokument mit der angegebenen Größe und Position hinzugefügt.
 
     > [!NOTE]
-    > Wenn Sie in Excel ein Steuerelement auswählen, wird **= embed ("WinForms. Control. Host", "")**  in der Bearbeitungs **Leiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **= embed ("WinForms. Control. Host", "")**  in der Bearbeitungs **Leiste** angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>So fügen Sie dem Dokument ein Windows Forms-Steuerelement durch einfaches Klicken auf das Steuerelement hinzu
 
 1. Erstellen oder öffnen Sie ein Excel-Arbeitsmappen- oder Word-Dokumentprojekt in Visual Studio, damit das Dokument im Designer angezeigt wird. Weitere Informationen zum Erstellen von Projekten finden [Sie unter Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Klicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**auf das Steuerelement, das Sie hinzufügen möchten.
+2. Klicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** auf das Steuerelement, das Sie hinzufügen möchten.
 
 3. Klicken Sie im Dokument auf die Stelle, an der das Steuerelement hinzugefügt werden soll.
 
      Das Steuerelement wird dem Dokument mit der Standardgröße hinzugefügt.
 
     > [!NOTE]
-    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste** angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>So fügen Sie dem Dokument ein Windows Forms-Steuerelement durch Doppelklicken auf das Steuerelement hinzu
 
 1. Erstellen oder öffnen Sie ein Excel-Arbeitsmappen- oder Word-Dokumentprojekt in Visual Studio, damit das Dokument im Designer angezeigt wird. Weitere Informationen zum Erstellen von Projekten finden [Sie unter Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Doppelklicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**auf das Steuerelement, das Sie hinzufügen möchten.
+2. Doppelklicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** auf das Steuerelement, das Sie hinzufügen möchten.
 
      Das Steuerelement wird dem Dokument in der Mitte des Dokuments oder des aktiven Bereichs hinzugefügt.
 
     > [!NOTE]
-    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste** angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>So fügen Sie dem Dokument ein Windows Forms-Steuerelement hinzu, indem Sie die EINGABETASTE drücken
 
 1. Erstellen oder öffnen Sie ein Excel-Arbeitsmappen- oder Word-Dokumentprojekt in Visual Studio, damit das Dokument im Designer angezeigt wird. Weitere Informationen zum Erstellen von Projekten finden [Sie unter Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Klicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**auf das Steuerelement, das Sie hinzufügen möchten, und drücken Sie die **Eingabe** Taste.
+2. Klicken Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** auf das Steuerelement, das Sie hinzufügen möchten, und drücken Sie die **Eingabe** Taste.
 
      Das Steuerelement wird dem Dokument in der Mitte des Dokuments oder des aktiven Bereichs hinzugefügt.
 
     > [!NOTE]
-    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+    > Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste** angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a> Hinzufügen von Steuerelementen zur Laufzeit in Projekten auf Dokument Ebene
  Sie können einem Dokument Windows Forms-Steuerelemente zur Laufzeit programmgesteuert hinzufügen. Verwenden Sie in Word die Methoden der <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A>-Eigenschaft der `ThisDocument`-Klasse. Verwenden Sie in Excel die Methoden der- <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> Eigenschaft einer `Sheet` *n* -Klasse. Jede Methode verfügt über mehrere Überladungen, mit denen Sie die Position des Steuerelements auf unterschiedliche Weisen angeben können.

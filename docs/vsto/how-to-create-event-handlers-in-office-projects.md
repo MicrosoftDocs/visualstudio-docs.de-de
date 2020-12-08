@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Erstellen von Ereignis Handlern in Office-Projekten'
+description: Erfahren Sie mehr über die verschiedenen Möglichkeiten, wie Sie Standard Ereignishandler für Steuerelemente in Visual Basic und c# erstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f87889c13021a7c0a43b58564210db34301abdf4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538306"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846700"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Gewusst wie: Erstellen von Ereignis Handlern in Office-Projekten
   Es gibt mehrere Möglichkeiten zum Erstellen von Ereignis Handlern in Visual Basic und c#. In der Entwurfs Ansicht können Sie die Standard Ereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken oder im Fenster "Ereignisse" im Fenster " **Eigenschaften** " Handler für ein beliebiges Ereignis im Steuerelement erstellen. Wenn Sie jedoch in der Code Ansicht sind, möchten Sie möglicherweise nicht zu Designansicht wechseln, um einen Ereignishandler zu erstellen.
@@ -42,7 +44,7 @@ ms.locfileid: "85538306"
 
 ### <a name="to-create-an-event-handler-in-c"></a>So erstellen Sie einen Ereignishandler in C\#
 
-1. Erstellen Sie den Ereignis Delegaten im **Startup** -Ereignis der-Klasse, indem Sie den qualifizierten Ereignis Namen, gefolgt von einem Leerzeichen, eingeben und **+=** anschließend ohne Leerzeichen eingeben. Beispiel:
+1. Erstellen Sie den Ereignis Delegaten im **Startup** -Ereignis der-Klasse, indem Sie den qualifizierten Ereignis Namen, gefolgt von einem Leerzeichen, eingeben und **+=** anschließend ohne Leerzeichen eingeben. Zum Beispiel:
 
      `this.<object name>.<event name> +=`
 
@@ -50,7 +52,7 @@ ms.locfileid: "85538306"
 
      Visual Studio schließt die Codezeile automatisch ab, erstellt den Ereignishandler und verschiebt die Einfügemarke in den neu erstellten Ereignishandler.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Schreiben von Code in Office-Lösungen](../vsto/writing-code-in-office-solutions.md)
 - [Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)

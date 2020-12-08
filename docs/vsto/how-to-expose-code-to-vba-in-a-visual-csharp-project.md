@@ -1,6 +1,7 @@
 ---
 title: 'Gewusst wie: verfügbar machen von Code für VBA in einem c#-Projekt'
-ms.custom: seodec18
+description: Erfahren Sie, wie Sie Code in einem Visual c#-Projekt für Visual Basic for Applications (VBA)-Code verfügbar machen können, wenn Sie möchten, dass die beiden Code Typen miteinander interagieren.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544832"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846596"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Gewusst wie: verfügbar machen von Code für VBA in einem Visual c#-Projekt
   Sie können Code in einem Visual c#-Projekt für den Visual Basic for Applications (VBA)-Code verfügbar machen, wenn Sie möchten, dass die beiden Code Typen miteinander interagieren.

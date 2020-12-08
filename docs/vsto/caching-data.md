@@ -1,5 +1,7 @@
 ---
 title: Daten zwischenspeichern
+description: Erfahren Sie, wie Sie Datenobjekte in einer Anpassung auf Dokument Ebene Zwischenspeichern können, damit auf die Daten offline zugegriffen werden kann, oder ohne Microsoft Office Word oder Excel zu öffnen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62939414"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847870"
 ---
 # <a name="cache-data"></a>Daten zwischenspeichern
   Sie können Datenobjekte in einer Anpassung auf Dokument Ebene Zwischenspeichern, damit auf die Daten offline zugegriffen werden kann, oder ohne Microsoft Office Word oder Microsoft Office Excel zu öffnen. Zum Zwischenspeichern eines Objekts muss das Objekt über einen Datentyp verfügen, der bestimmte Anforderungen erfüllt. Viele gängige Datentypen im .NET Framework erfüllen diese Anforderungen, einschließlich <xref:System.String> , <xref:System.Data.DataSet> und <xref:System.Data.DataTable> .
@@ -79,11 +81,11 @@ ms.locfileid: "62939414"
  Weitere Informationen finden Sie unter Gewusst [wie: Zwischenspeichern von Daten in einem Kenn Wort geschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md).
 
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Vermeiden von Datenverlusten beim Hinzufügen von NULL-Werten zum Daten Cache
- Beim Hinzufügen von Objekten zum Daten Cache müssen alle zwischengespeicherten Objekte mit einem Wert ungleich**null** initialisiert werden, bevor das Dokument gespeichert und geschlossen wird. Wenn ein zwischengespeichertes Objekt einen **null** -Wert aufweist, wenn das Dokument gespeichert und geschlossen wird, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] werden alle zwischengespeicherten Objekte automatisch aus dem Daten Cache entfernt.
+ Beim Hinzufügen von Objekten zum Daten Cache müssen alle zwischengespeicherten Objekte mit einem Wert ungleich **null** initialisiert werden, bevor das Dokument gespeichert und geschlossen wird. Wenn ein zwischengespeichertes Objekt einen **null** -Wert aufweist, wenn das Dokument gespeichert und geschlossen wird, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] werden alle zwischengespeicherten Objekte automatisch aus dem Daten Cache entfernt.
 
  Wenn Sie dem Daten Cache ein Objekt mit einem **null** -Wert hinzufügen, indem Sie das- <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Attribut zur Entwurfszeit verwenden, können Sie die-Klasse verwenden, <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> um die zwischengespeicherten Datenobjekte zu initialisieren, bevor das Dokument geöffnet wird. Dies ist hilfreich, wenn Sie die zwischengespeicherten Daten auf einem Server ohne Word oder Excel initialisieren möchten, bevor das Dokument von einem Endbenutzer geöffnet wird. Weitere Informationen finden Sie unter [zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Zwischenspeichern von Daten zur Offline Verwendung oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Vorgehensweise: Programm gesteuertes Zwischenspeichern einer Datenquelle in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Vorgehensweise: Zwischenspeichern von Daten in einem Kenn Wort geschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)

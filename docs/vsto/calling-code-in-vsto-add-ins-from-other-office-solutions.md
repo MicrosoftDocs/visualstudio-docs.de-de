@@ -1,5 +1,7 @@
 ---
 title: Code in VSTO-Add-Ins aus anderen Office-Projektmappen aufzurufen
+description: Erfahren Sie, wie Sie ein Objekt in Ihrem VSTO-Add-in für andere Projektmappen, einschließlich anderer Microsoft Office Lösungen, verfügbar machen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255325"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847844"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Code in VSTO-Add-Ins aus anderen Office-Projektmappen aufzurufen
   Sie können ein Objekt in Ihrem VSTO-Add-In für andere Projektmappen, einschließlich anderer Microsoft Office-Projektmappen, verfügbar machen. Dies ist hilfreich, wenn Ihr VSTO-Add-In einen Dienst bereitstellt, der durch andere Projektmappen verwendet werden soll. Wenn Sie z. b. über ein VSTO-Add-in für Microsoft Office Excel verfügen, das Berechnungen für Finanzdaten von einem Webdienst ausführt, können andere Lösungen diese Berechnungen ausführen, indem Sie das Excel-VSTO-Add-in zur Laufzeit aufrufen.
@@ -46,7 +48,7 @@ ms.locfileid: "71255325"
 
 - COM-VSTO-Add-Ins (d. h. VSTO-Add-Ins, die die <xref:Extensibility.IDTExtensibility2> -Schnittstelle direkt implementieren).
 
-- Eine beliebige Projektmappe, die in einem von Ihrem VSTO-Add-In unterschiedlichen Prozess ausgeführt wird (diese Projektmappentypen werden auch als *prozessexterne Clients*bezeichnet). Dazu zählen Anwendungen, die eine Office-Anwendung automatisieren, beispielsweise eine Windows Forms- oder Konsolenanwendung, sowie VSTO-Add-Ins, die in einem unterschiedlichen Prozess geladen sind.
+- Eine beliebige Projektmappe, die in einem von Ihrem VSTO-Add-In unterschiedlichen Prozess ausgeführt wird (diese Projektmappentypen werden auch als *prozessexterne Clients* bezeichnet). Dazu zählen Anwendungen, die eine Office-Anwendung automatisieren, beispielsweise eine Windows Forms- oder Konsolenanwendung, sowie VSTO-Add-Ins, die in einem unterschiedlichen Prozess geladen sind.
 
 ## <a name="expose-objects-to-other-solutions"></a>Verfügbar machen von Objekten für andere Lösungen
  Führen Sie die folgenden Schritte in Ihrem VSTO-Add-In aus, um ein Objekt in Ihrem VSTO-Add-In für andere Projektmappen verfügbar zu machen:
@@ -56,13 +58,13 @@ ms.locfileid: "71255325"
 2. Überschreiben Sie die <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> -Methode in der `ThisAddIn` -Klasse. Geben Sie eine Instanz der Klasse zurück, die Sie für andere Lösungen verfügbar machen möchten.
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Definieren Sie die Klasse, die Sie für andere Lösungen verfügbar machen möchten.
- Die verfügbar machende Klasse muss mindestens auf öffentlich festgelegt werden, wobei das Attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf **true**festgelegt sein muss, und sie muss die Schnittstelle [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) verfügbar machen.
+ Die verfügbar machende Klasse muss mindestens auf öffentlich festgelegt werden, wobei das Attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf **true** festgelegt sein muss, und sie muss die Schnittstelle [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) verfügbar machen.
 
  Sie sollten die [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstelle mithilfe der folgenden Schritte verfügbar machen:
 
 1. Definieren Sie eine Schnittstelle, die die Member deklariert, die Sie für andere Lösungen verfügbar machen möchten. Sie können diese Schnittstelle in Ihrem VSTO-Add-In-Projekt definieren. Sie möchten diese Schnittstelle möglicherweise jedoch in einem separaten Klassenbibliotheksprojekt definieren, wenn Sie die Klasse für VBA-fremde Projektmappen verfügbar machen möchten, sodass die Projektmappen, die Ihr VSTO-Add-In aufrufen, die Schnittstelle referenzieren können, ohne auf Ihr VSTO-Add-In-Projekt zu verweisen.
 
-2. Wenden Sie das Attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf diese Schnittstelle an, und legen Sie dieses Attribut auf **true**fest.
+2. Wenden Sie das Attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> auf diese Schnittstelle an, und legen Sie dieses Attribut auf **true** fest.
 
 3. Ändern Sie Ihre Klasse zum Implementieren dieser Schnittstelle.
 
@@ -111,7 +113,7 @@ ms.locfileid: "71255325"
    Die Art und Weise, wie Sie den Rückgabewert der COMAddIn. Object-Eigenschaft verwenden, unterscheidet sich für VBA-Clients und nicht-VBA-Clients. Für prozessexterne Clients ist zusätzlicher Code erforderlich, um eine mögliche Racebedingung zu vermeiden.
 
 ### <a name="access-objects-from-vba-solutions"></a>Zugreifen auf Objekte aus VBA-Lösungen
- Im folgenden Codebeispiel wird veranschaulicht, wie VBA verwendet wird, um eine Methode aufzurufen, die von einem VSTO-Add-in verfügbar gemacht wird. Dieses VBA-Makro ruft eine Methode `ImportData` mit dem Namen auf, die in einem VSTO-Add-in mit dem Namen **ExcelImportData**definiert ist. Wenn Sie diesen Code im Kontext einer größeren exemplarischen Vorgehensweise anzeigen möchten, finden Sie weitere Informationen unter Exemplarische Vorgehensweise [: Abrufen von Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
+ Im folgenden Codebeispiel wird veranschaulicht, wie VBA verwendet wird, um eine Methode aufzurufen, die von einem VSTO-Add-in verfügbar gemacht wird. Dieses VBA-Makro ruft eine Methode `ImportData` mit dem Namen auf, die in einem VSTO-Add-in mit dem Namen **ExcelImportData** definiert ist. Wenn Sie diesen Code im Kontext einer größeren exemplarischen Vorgehensweise anzeigen möchten, finden Sie weitere Informationen unter Exemplarische Vorgehensweise [: Abrufen von Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
 ```vb
 Sub CallVSTOMethod()

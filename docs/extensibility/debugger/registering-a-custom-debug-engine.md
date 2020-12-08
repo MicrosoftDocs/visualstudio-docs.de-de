@@ -1,5 +1,7 @@
 ---
 title: Registrieren einer benutzerdefinierten Debug-Engine | Microsoft-Dokumentation
+description: Erfahren Sie, wie sich das Debug-Modul als Klassenfactory registriert, den com-Konventionen folgt und sich über die Registrierung bei Visual Studio registriert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 01d7190bbf087bb60ac670341d82078e94c81c52
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011839"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847181"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrieren einer benutzerdefinierten Debug-Engine
 Die Debug-Engine muss sich selbst als Klassenfactory registrieren, die auf com-Konventionen folgt und sich über den Visual Studio-Registrierungs Unterschlüssel bei Visual Studio registriert.
@@ -29,7 +31,7 @@ Die Debug-Engine muss sich selbst als Klassenfactory registrieren, die auf com-K
  [SDK-Hilfsprogramme für das Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) beschreiben nicht nur die Registrierungs Speicherorte, die zum Registrieren einer Debug-Engine erforderlich Außerdem wird die Bibliothek " *dbgmetric. lib* " beschrieben, die eine Reihe nützlicher Funktionen und Deklarationen für C++-Entwickler enthält, die die Bearbeitung der Registrierung vereinfachen.
 
 ### <a name="example"></a>Beispiel
- Im folgenden Beispiel (aus dem Textinterpreter-Beispiel) wird gezeigt, wie die- `SetMetric` Funktion (aus *dbgmetric. lib*) verwendet wird, um eine Debug-Engine in Visual Studio zu registrieren. Die zu über gebenden Metriken werden auch in *dbgmetric. lib*definiert.
+ Im folgenden Beispiel (aus dem Textinterpreter-Beispiel) wird gezeigt, wie die- `SetMetric` Funktion (aus *dbgmetric. lib*) verwendet wird, um eine Debug-Engine in Visual Studio zu registrieren. Die zu über gebenden Metriken werden auch in *dbgmetric. lib* definiert.
 
 > [!NOTE]
 > Textinterpreter ist eine einfache Debug-Engine. Sie richtet – nicht ein und registriert – keine anderen Features. Eine vollständigere Debug-Engine verfügt über eine vollständige Liste mit `SetMetric` aufrufen oder deren Entsprechung, eine für jedes Feature, das die Debug-Engine unterstützt.

@@ -1,5 +1,7 @@
 ---
 title: ContentControl-Elemente
+description: Erfahren Sie mehr über Inhalts Steuerelemente und wie Inhalts Steuerelemente Ihnen ermöglichen, Dokumente und Vorlagen zu entwerfen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -38,12 +40,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986178"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848039"
 ---
 # <a name="content-controls"></a>ContentControl-Elemente
   Inhaltssteuerelemente bieten Ihnen eine Möglichkeit, Dokumente und Vorlagen zu entwerfen, die die folgenden Features aufweisen:
@@ -94,10 +96,10 @@ ms.locfileid: "72986178"
 ### <a name="drop-down-list"></a>Dropdownliste
  Eine Dropdownliste zeigt eine Liste von Elementen an, die Benutzer auswählen können. Im Gegensatz zu einem Kombinationsfeld ermöglicht die Dropdownliste Benutzern nicht das Hinzufügen oder Bearbeiten von Elementen. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>-Typ.
 
-### <a name="group"></a>Gruppieren
+### <a name="group"></a>Group
  Ein Gruppensteuerelement definiert einen geschützten Bereich eines Dokuments, den Benutzer weder bearbeiten noch löschen können. Ein Gruppensteuerelement kann beliebige Dokumentelemente enthalten, z. B. Text, Tabellen, Grafiken und andere Inhaltssteuerelemente. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.GroupContentControl>-Typ.
 
-### <a name="picture"></a>Bild
+### <a name="picture"></a>Picture
  Ein Bildsteuerelement zeigt ein Bild an. Sie können das Bild zur Entwurfszeit oder zur Laufzeit angeben, oder Benutzer können auf dieses Steuerelement klicken, um ein Bild auszuwählen, das in das Dokument eingefügt werden soll. Weitere Informationen finden Sie unter dem <xref:Microsoft.Office.Tools.Word.PictureContentControl>-Typ.
 
 ### <a name="rich-text"></a>Rich-Text
@@ -148,7 +150,7 @@ ms.locfileid: "72986178"
 
 - Sie können Inhaltssteuerelemente an Datenbankfelder oder verwaltete Objekte binden, indem Sie das gleiche Datenbindungsmodell wie Windows Forms verwenden.
 
-- Sie können Inhalts Steuerelemente an Elemente in XML-Elementen (auch als *benutzerdefinierte XML-Teile*bezeichnet) binden, die im Dokument eingebettet sind.
+- Sie können Inhalts Steuerelemente an Elemente in XML-Elementen (auch als *benutzerdefinierte XML-Teile* bezeichnet) binden, die im Dokument eingebettet sind.
 
   Eine Übersicht über das Binden von Host Steuerelementen in Office-Projektmappen an Daten finden Sie unter [Binden von Daten an Steuerelemente in Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
