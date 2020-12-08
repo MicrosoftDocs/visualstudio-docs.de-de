@@ -1,5 +1,7 @@
 ---
 title: Implementieren eines Legacy sprach Service1 | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mithilfe von Managed Package Framework (MPF) einen Legacy Sprachdienst implementieren, der erweiterte Sprachdienst Features unterstützt. Teil 1 von 2.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2535c527fc3d2d94609246959c5293e455b9808d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be2caf25dfef71cb267f49b6cfd732923aa0848c
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238750"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761178"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>Implementieren eines Legacy sprach Dienstanbieter 1
 Sie können Klassen im Managed Package Framework (MPF) verwenden, um einen Legacy Sprachdienst zu implementieren, der eine Vielzahl von Features unterstützt, wie z. b. Syntax Hervorhebung, übereinstimmende Klammern und IntelliSense-Vervollständigung.

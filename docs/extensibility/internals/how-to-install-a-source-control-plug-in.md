@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie ein Quellcodeverwaltungs-Plug-in in Visual Studio installieren, indem Sie es in die Plug-in-API für die Visual Studio-Quell Code Verwaltung integrieren und seine dll registrieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905367"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761217"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-ins
 Das Erstellen eines Quellcodeverwaltungs-Plug-ins umfasst drei Schritte:
@@ -35,14 +37,14 @@ Das Erstellen eines Quellcodeverwaltungs-Plug-ins umfasst drei Schritte:
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>So registrieren Sie die Quellcodeverwaltungs-Plug-in-dll
 
-1. Fügen Sie unter dem **HKEY_LOCAL_MACHINE** Schlüssel im **Software** Unterschlüssel, der den Unterschlüssel für den Firmennamen, gefolgt von ihrem Produktnamen Unterschlüssel, zwei Einträge hinzu. Das Muster ist **HKEY_LOCAL_MACHINE \\ \<company name> \\ \<product name> \\ \<entry> \softwarewert**  =  *value*. Die beiden Einträge werden immer als **sccservername** und **sccserverpath**bezeichnet. Jede ist eine reguläre Zeichenfolge.
+1. Fügen Sie unter dem **HKEY_LOCAL_MACHINE** Schlüssel im **Software** Unterschlüssel, der den Unterschlüssel für den Firmennamen, gefolgt von ihrem Produktnamen Unterschlüssel, zwei Einträge hinzu. Das Muster ist **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ Wert \<entry>**  =  *value*. Die beiden Einträge werden immer als **sccservername** und **sccserverpath** bezeichnet. Jede ist eine reguläre Zeichenfolge.
 
-    Wenn der Name Ihres Unternehmens beispielsweise Microsoft lautet und das Quell Code Verwaltungs Produkt SourceSafe heißt, wäre dieser Registrierungs Pfad **HKEY_LOCAL_MACHINE \software\microsoft\sourcesafe**. In diesem Unterschlüssel ist der erste Eintrag, **sccservername**, eine vom Benutzer lesbare Zeichenfolge, die Ihr Produkt benennt. Der zweite Eintrag, **sccserverpath**, ist der vollständige Pfad zu der Quellcodeverwaltungs-Plug-in-dll, mit der die IDE eine Verbindung herstellen soll. Im folgenden finden Sie Beispiel Registrierungseinträge:
+    Wenn der Name Ihres Unternehmens beispielsweise Microsoft lautet und das Quell Code Verwaltungs Produkt SourceSafe heißt, wird dieser Registrierungs Pfad **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**. In diesem Unterschlüssel ist der erste Eintrag, **sccservername**, eine vom Benutzer lesbare Zeichenfolge, die Ihr Produkt benennt. Der zweite Eintrag, **sccserverpath**, ist der vollständige Pfad zu der Quellcodeverwaltungs-Plug-in-dll, mit der die IDE eine Verbindung herstellen soll. Im folgenden finden Sie Beispiel Registrierungseinträge:
 
    |Beispiel Registrierungs Eintrag|Beispielwert|
    |---------------------------|------------------|
-   |HKEY_LOCAL_MACHINE \software\microsoft\sourcesafe\sccservername|Microsoft Visual SourceSafe|
-   |HKEY_LOCAL_MACHINE \software\microsoft\sourcesafe\sccserverpath|*c:\vss\win32\ssscc.dll*|
+   |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerName|Microsoft Visual SourceSafe|
+   |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|*c:\vss\win32\ssscc.dll*|
 
    > [!NOTE]
    > Sccserverpath ist der vollständige Pfad zum SourceSafe-Plug-in. Ihr Quellcodeverwaltungs-Plug-in verwendet unterschiedliche Firmen-und Produktnamen, aber dieselben Registrierungs Einstiegs Pfade.
@@ -53,37 +55,37 @@ Das Erstellen eines Quellcodeverwaltungs-Plug-ins umfasst drei Schritte:
 
       **Hideinvisualstudio** ist ein DWORD-Wert, der auf *1* festgelegt wird, um das Plug-in auszublenden, oder auf *0* , um das Plug-in anzuzeigen. Wenn der Registrierungs Eintrag nicht angezeigt wird, besteht das Standardverhalten darin, das Plug-in anzuzeigen.
 
-   - Der Registrierungs Eintrag **disablesccmanager** kann verwendet werden, um die ** \<Source Control Server> Startmenü-** Option zu deaktivieren oder auszublenden, die normalerweise im Untermenü **Datei**  >  **Quell** Code Verwaltung angezeigt wird. Wenn Sie diese Menüoption auswählen, wird die [sccrunscc](../../extensibility/sccrunscc-function.md) -Funktion aufgerufen. Das Quellcodeverwaltungs-Plug-in unterstützt möglicherweise kein externes Programm. Daher sollten **Sie die** Startmenü-Option deaktivieren oder sogar ausblenden.
+   - Der Registrierungs Eintrag **disablesccmanager** kann verwendet werden, um die **\<Source Control Server> Startmenü-** Option zu deaktivieren oder auszublenden, die normalerweise im Untermenü **Datei**  >  **Quell** Code Verwaltung angezeigt wird. Wenn Sie diese Menüoption auswählen, wird die [sccrunscc](../../extensibility/sccrunscc-function.md) -Funktion aufgerufen. Das Quellcodeverwaltungs-Plug-in unterstützt möglicherweise kein externes Programm. Daher sollten **Sie die** Startmenü-Option deaktivieren oder sogar ausblenden.
 
-      **Disablesccmanager** ist ein DWORD-Wert, und wird auf *0* festgelegt, um die Menüoption ** \<Source Control Server> Start** zu aktivieren. Legen Sie auf *1* fest, um die Menüoption zu deaktivieren, und legen Sie auf *2* fest, um die Menüoption auszublenden. Wenn dieser Registrierungs Eintrag nicht angezeigt wird, ist das Standardverhalten, die Menüoption anzuzeigen.
+      **Disablesccmanager** ist ein DWORD-Wert, und wird auf *0* festgelegt, um die Menüoption **\<Source Control Server> Start** zu aktivieren. Legen Sie auf *1* fest, um die Menüoption zu deaktivieren, und legen Sie auf *2* fest, um die Menüoption auszublenden. Wenn dieser Registrierungs Eintrag nicht angezeigt wird, ist das Standardverhalten, die Menüoption anzuzeigen.
 
    | Beispiel Registrierungs Eintrag | Beispielwert |
    | - |--------------|
-   | HKEY_LOCAL_MACHINE \software\microsoft\sourcesafe\hideinvisualstudio | 1 |
-   | HKEY_LOCAL_MACHINE \software\microsoft\sourcesafe\disablesccmanager | 1 |
+   | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio | 1 |
+   | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager | 1 |
 
-3. Fügen Sie den Unterschlüssel **sourcecodecontrolprovider**unter dem **HKEY_LOCAL_MACHINE** Schlüssel im **Software** Unterschlüssel hinzu.
+3. Fügen Sie den Unterschlüssel **sourcecodecontrolprovider** unter dem **HKEY_LOCAL_MACHINE** Schlüssel im **Software** Unterschlüssel hinzu.
 
-    Unter diesem Unterschlüssel wird der Registrierungs Eintrag **providerregkey** auf eine Zeichenfolge festgelegt, die den Unterschlüssel darstellt, den Sie in der Registrierung in Schritt 1 abgelegt haben. Das Muster ist **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\providerregkey**  =  *Software \\<Firmenname \> \\<Produktnamen \> *.
+    Unter diesem Unterschlüssel wird der Registrierungs Eintrag **providerregkey** auf eine Zeichenfolge festgelegt, die den Unterschlüssel darstellt, den Sie in der Registrierung in Schritt 1 abgelegt haben. Bei dem Muster handelt es sich um **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey**  =  *Software \\<Firmennamen \> \\<Produktnamen \>*.
 
     Im folgenden finden Sie Beispiel Inhalt für diesen Unterschlüssel.
 
    |Registrierungseintrag|Beispielwert|
    |--------------------|------------------|
-   |HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\providerregkey|Software\microsoft\sourcesafe|
+   |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|Software\microsoft\sourcesafe|
 
    > [!NOTE]
    > Das Quellcodeverwaltungs-Plug-in verwendet die gleichen Unterschlüssel-und Eintrags Namen, der Wert ist jedoch anders.
 
 4. Erstellen Sie unter dem Unterschlüssel **sourcecodecontrolprovider** einen Unterschlüssel namens **installedsccproviders** , und platzieren Sie dann einen Eintrag unter diesem Unterschlüssel.
 
-    Der Name dieses Eintrags ist der vom Benutzer lesbare Name des Anbieters (identisch mit dem Wert, der für den Eintrag sccservername angegeben wurde), und der Wert ist wieder einmal der Unterschlüssel, der in Schritt 1 erstellt wurde. Das Muster ist **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\installedsccproviders \\<Display Name \> **  =  *Software<Name des \\ Unternehmens \> \\<\> Produktname*.
+    Der Name dieses Eintrags ist der vom Benutzer lesbare Name des Anbieters (identisch mit dem Wert, der für den Eintrag sccservername angegeben wurde), und der Wert ist wieder einmal der Unterschlüssel, der in Schritt 1 erstellt wurde. Das Muster ist **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<Anzeige Name \>**  =  *Software \\<Firmenname \> \\<Produktnamen \>*.
 
     Beispiel:
 
    |Beispiel Registrierungs Eintrag|Beispielwert|
    |---------------------------|------------------|
-   |HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\installedsccproviders\microsoft Visual SourceSafe|Software\microsoft\sourcesafe|
+   |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|Software\microsoft\sourcesafe|
 
    > [!NOTE]
    > Auf diese Weise können mehrere Plug-Ins für die Quell Code Verwaltung registriert werden. So [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] findet alle installierten API-basierten Plug-Ins für Quellcodeverwaltungs-Plug-ins.
@@ -95,17 +97,17 @@ Das Erstellen eines Quellcodeverwaltungs-Plug-ins umfasst drei Schritte:
 
 - Alle registrierten Quellcodeverwaltungs-Plug-ins suchen, von denen der Benutzer eine Auswahl wählt.
 
-  Um die dll auf die erste Weise zu finden, sucht die IDE unter dem Unterschlüssel **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider** für den Eintrag **providerregkey**. Der Wert dieses Eintrags verweist auf einen anderen Unterschlüssel. Die IDE sucht dann in diesem zweiten Unterschlüssel unter **HKEY_LOCAL_MACHINE**nach einem Eintrag mit dem Namen **sccserverpath** . Der Wert dieses Eintrags zeigt die IDE auf die dll.
+  Um die dll auf die erste Weise zu finden, sucht die IDE unter dem **HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider** Unterschlüssel für den Eintrag **providerregkey**. Der Wert dieses Eintrags verweist auf einen anderen Unterschlüssel. Die IDE sucht dann in diesem zweiten Unterschlüssel unter **HKEY_LOCAL_MACHINE** nach einem Eintrag mit dem Namen **sccserverpath** . Der Wert dieses Eintrags zeigt die IDE auf die dll.
 
 > [!NOTE]
 > Die IDE lädt keine DLLs aus relativen Pfaden (z. b. *.\NewProvider.DLL*). Es muss ein vollständiger Pfad zur DLL angegeben werden (z. b. *c:\Providers\NewProvider.DLL*). Dadurch wird die Sicherheit der IDE verbessert, indem verhindert wird, dass nicht autorisierte oder nicht autorisierte Plug-in-DLLs geladen werden.
 
- Um die dll auf die zweite Weise zu finden, sucht die IDE im Unterschlüssel **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\installedsccproviders** für alle Einträge. Jeder Eintrag hat einen Namen und einen Wert. Die IDE zeigt dem Benutzer eine Liste mit diesen Namen. Wenn der Benutzer einen Namen auswählt, findet die IDE den Wert für den ausgewählten Namen, der auf einen Unterschlüssel zeigt. Die IDE sucht in diesem Unterschlüssel unter **HKEY_LOCAL_MACHINE**nach einem Eintrag mit dem Namen **sccserverpath** . Der Wert dieses Eintrags verweist auf die richtige dll der IDE.
+ Um die dll auf die zweite Weise zu finden, sucht die IDE unter dem **HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders** Unterschlüssel für alle Einträge. Jeder Eintrag hat einen Namen und einen Wert. Die IDE zeigt dem Benutzer eine Liste mit diesen Namen. Wenn der Benutzer einen Namen auswählt, findet die IDE den Wert für den ausgewählten Namen, der auf einen Unterschlüssel zeigt. Die IDE sucht in diesem Unterschlüssel unter **HKEY_LOCAL_MACHINE** nach einem Eintrag mit dem Namen **sccserverpath** . Der Wert dieses Eintrags verweist auf die richtige dll der IDE.
 
- Ein Quellcodeverwaltungs-Plug-in muss beide Methoden zum Auffinden der DLL unterstützen und daher **providerregkey**festlegen und jede vorherige Einstellung überschreiben. Noch wichtiger ist, dass es sich selbst der Liste der **installedsccproviders** hinzufügen muss, damit der Benutzer entscheiden kann, welches Quellcodeverwaltungs-Plug-in verwendet werden soll.
+ Ein Quellcodeverwaltungs-Plug-in muss beide Methoden zum Auffinden der DLL unterstützen und daher **providerregkey** festlegen und jede vorherige Einstellung überschreiben. Noch wichtiger ist, dass es sich selbst der Liste der **installedsccproviders** hinzufügen muss, damit der Benutzer entscheiden kann, welches Quellcodeverwaltungs-Plug-in verwendet werden soll.
 
 > [!NOTE]
-> Da der **HKEY_LOCAL_MACHINE** Schlüssel verwendet wird, kann nur ein Quellcodeverwaltungs-Plug-in als Standard-Quellcodeverwaltungs-Plug-in auf einem bestimmten Computer registriert werden ( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ermöglicht Benutzern jedoch, zu bestimmen, welches Quellcodeverwaltungs-Plug-in für eine bestimmte Lösung tatsächlich verwendet werden soll). Überprüfen Sie während des Installationsvorgangs, ob ein Quellcodeverwaltungs-Plug-in bereits festgelegt ist. Wenn dies der Fall ist, Fragen Sie den Benutzer, ob das neue Quellcodeverwaltungs-Plug-in, das als Standard installiert wird, festgelegt werden soll. Entfernen Sie während der Deinstallation keine anderen Registrierungs Unterschlüssel, die allen Quellcodeverwaltungs-Plug-ins in **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider**; gemeinsam sind. Entfernen Sie nur Ihren speziellen SCC-Unterschlüssel.
+> Da der **HKEY_LOCAL_MACHINE** Schlüssel verwendet wird, kann nur ein Quellcodeverwaltungs-Plug-in als Standard-Quellcodeverwaltungs-Plug-in auf einem bestimmten Computer registriert werden ( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ermöglicht Benutzern jedoch, zu bestimmen, welches Quellcodeverwaltungs-Plug-in für eine bestimmte Lösung tatsächlich verwendet werden soll). Überprüfen Sie während des Installationsvorgangs, ob ein Quellcodeverwaltungs-Plug-in bereits festgelegt ist. Wenn dies der Fall ist, Fragen Sie den Benutzer, ob das neue Quellcodeverwaltungs-Plug-in, das als Standard installiert wird, festgelegt werden soll. Entfernen Sie während der Installation keine anderen Registrierungs Unterschlüssel, die allen Quellcodeverwaltungs-Plug-ins in **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider** gemeinsam sind. Entfernen Sie nur Ihren speziellen SCC-Unterschlüssel.
 
 ## <a name="how-the-ide-detects-version-1213-support"></a>Erkennen der Unterstützung der Version 1.2/1.3 durch die IDE
  Wie wird von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] erkannt, ob ein Plug-in die API der Quell Code Verwaltung-Plug-in-API Version 1,2 und 1,3 unterstützt? Um erweiterte Funktionen zu deklarieren, muss das Quellcodeverwaltungs-Plug-in die entsprechende Funktion implementieren:

@@ -1,5 +1,7 @@
 ---
 title: Verfügbar machen von Symbol Listen für den Objekt-Manager | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die IVsSimpleObjectList2-Schnittstelle implementieren, um Listen von Symbolen für den Objekt-Manager in Visual Studio verfügbar zu machen und Symbol Suchtools zu aktualisieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52bb2505e70d39e6cd861190db6eab9fa29e7aa7
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708085"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761347"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Gewusst wie: verfügbar machen von Listen von Symbolen, die von der Bibliothek für den Objekt-Manager bereitgestellt werden
 Die Tools zum Durchsuchen von Symbolen, **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Suchen nach Symbol Ergebnissen**, übergeben Anforderungen für neue Daten an den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager. Der Objekt-Manager sucht nach den entsprechenden Bibliotheken und fordert neue Listen von Symbolen an. Die Bibliotheken reagieren durch Bereitstellen angeforderter Daten an den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager über die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager ruft die Methoden in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> -Schnittstelle auf, um die Daten abzurufen, und verwendet Sie, um die Ansichten der Symbol Suchtools aufzufüllen oder zu aktualisieren.
@@ -464,7 +466,7 @@ Die Tools zum Durchsuchen von Symbolen, **Klassenansicht**, **Objektkatalog**, *
 
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Unterstützung von Symbol Suchtools](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Vorgehensweise: Registrieren einer Bibliothek mit dem Objekt-Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [Gewusst wie: Identifizieren von Symbolen in einer Bibliothek](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

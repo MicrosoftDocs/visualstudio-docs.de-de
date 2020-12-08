@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Registrieren einer Bibliothek beim Objekt-Manager | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie eine Bibliothek mit dem Objekt-Manager von Visual Studio registrieren, damit Sie Symbole in Browser Tools anzeigen können, z. b. Klassenansicht und Objektkatalog.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,15 +16,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905234"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761381"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Vorgehensweise: Registrieren einer Bibliothek mit dem Objekt-Manager
-Symbole: durch Browsen von Tools wie **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Symbol Ergebnisse**suchen können Sie Symbole in Ihrem Projekt oder in externen Komponenten anzeigen. Zu den Symbolen zählen Namespaces, Klassen, Schnittstellen, Methoden und andere Sprachelemente. Die Bibliotheken verfolgen diese Symbole und machen Sie für den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager verfügbar, der die Tools mit den Daten füllt.
+Symbole: durch Browsen von Tools wie **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Symbol Ergebnisse** suchen können Sie Symbole in Ihrem Projekt oder in externen Komponenten anzeigen. Zu den Symbolen zählen Namespaces, Klassen, Schnittstellen, Methoden und andere Sprachelemente. Die Bibliotheken verfolgen diese Symbole und machen Sie für den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager verfügbar, der die Tools mit den Daten füllt.
 
  Der Objekt-Manager verfolgt alle verfügbaren Bibliotheken nach. Jede Bibliothek muss beim Objekt-Manager registriert werden, bevor Sie Symbole für die Tools zum Durchsuchen von Symbolen bereitstellen.
 

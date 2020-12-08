@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages | Microsoft-Dokumentation
+description: Erfahren Sie, wie VSPackages Benutzeroberflächen Elemente (UI), wie Menüs, Symbolleisten und Tool Fenster, zu Visual Studio hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649599"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761087"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages
 Mit einem VSPackage können Benutzeroberflächen Elemente (UI), z. b. Menüs, Symbolleisten und Tool Fenster, mithilfe der *vsct* -Datei zu Visual Studio hinzugefügt werden.
@@ -185,7 +187,7 @@ Die folgenden Regeln steuern, wie ein Element ein anderes Element als übergeord
 
 |Element|Definiert in diesem Abschnitt der Befehls Tabelle.|Kann enthalten sein (als übergeordnetes Element oder durch Platzierung im- `CommandPlacements` Abschnitt oder beides).|Kann enthalten (als übergeordnetes Element bezeichnet)|
 |-------------| - | - | - |
-|Gruppieren|[Groups-Element](../../extensibility/groups-element.md), IDE, andere VSPackages|Ein Menü, eine Gruppe, das Element selbst|Menüs, Gruppen und Befehle|
+|Group|[Groups-Element](../../extensibility/groups-element.md), IDE, andere VSPackages|Ein Menü, eine Gruppe, das Element selbst|Menüs, Gruppen und Befehle|
 |Menü|[Menüs-Element](../../extensibility/menus-element.md), IDE, andere VSPackages|1 bis *n* Gruppen|0 bis *n* Gruppen|
 |Symbolleiste|[Menüs-Element](../../extensibility/menus-element.md), IDE, andere VSPackages|Das Element selbst.|0 bis *n* Gruppen|
 |Menübefehl|[Buttons-Element](../../extensibility/buttons-element.md), IDE, andere VSPackages|1 bis *n* Gruppen, das Element selbst|-0 bis *n* Gruppen|

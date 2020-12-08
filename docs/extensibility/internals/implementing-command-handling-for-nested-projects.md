@@ -1,5 +1,7 @@
 ---
 title: Implementieren der Befehls Behandlung für in der Liste eingefügte Projekte Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Befehls Behandlung für in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) von Visual Studio implementierte Projekte implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cfa6ebb8cae645202339c511f15ca15e2b3490
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707600"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761152"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementieren der Befehlsbehandlung für geschachtelte Projekte
 Die IDE kann Befehle übergeben, die über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> -Schnittstelle und die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle an untergeordnete Projekte übergeben werden, oder übergeordnete Projekte können die Befehle filtern oder außer Kraft setzen.
