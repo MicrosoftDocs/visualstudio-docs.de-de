@@ -1,7 +1,8 @@
 ---
 title: '&lt;Anpassungs &gt; Element (Office-Entwicklung in Visual Studio)'
+description: Erfahren Sie, wie das Anpassungs Element des vstov4-Namespace eine bestimmte Office-Projekt Mappe beschreibt.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544871"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844113"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;Anpassungs &gt; Element (Office-Entwicklung in Visual Studio)
   Das `customization` -Element des `vstov4` -Namespace beschreibt eine bestimmte Office-Projektmappe. Die untergeordneten Elemente sind für Anpassungen auf Dokumentebene und für VSTO-Add-Ins unterschiedlich.
@@ -57,11 +58,11 @@ ms.locfileid: "85544871"
 
  Das `customization` -Element hat das folgende Attribut.
 
-|attribute|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`id`|Ist für eine Bereitstellung mit mehreren Projekten erforderlich. Das `id` -Element kennzeichnet eine Office-Projektmappe eindeutig.|
 
-### <a name="document-level-customizations"></a>Anpassungen auf Dokument Ebene
+### <a name="document-level-customizations"></a>Document-Level Anpassungen
  Das `customization` -Element hat das folgende untergeordnete Element:
 
 #### <a name="document"></a>Dokument
@@ -75,7 +76,7 @@ ms.locfileid: "85544871"
 
 ## <a name="example-of-a-document-level-customization"></a>Beispiel für eine Anpassung auf Dokument Ebene
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Codebeispiel wird das `customization` -Element für eine Anpassung auf Dokumentebene veranschaulicht. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
@@ -89,7 +90,7 @@ ms.locfileid: "85544871"
 
 ## <a name="example-of-a-vsto-add-in"></a>Beispiel für ein VSTO-Add-in
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Codebeispiel wird das- `customization` Element für ein VSTO-Add-in veranschaulicht. Das Add-In ist ein Outlook-VSTO-Add-in, das Formularbereiche enthält. Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code

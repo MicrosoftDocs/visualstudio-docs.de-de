@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: verfügbar machen von Code für VBA in einem Visual Basic Projekt'
+description: Erfahren Sie, wie Sie Code in einem Visual Basic Projekt zum Visual Basic for Applications (VBA)-Code verfügbar machen können, wenn Sie möchten, dass die beiden Code Typen miteinander interagieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61f94ebb5ed0c5e76693ddc8c0717b6adf9222f3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544845"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845985"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Gewusst wie: verfügbar machen von Code für VBA in einem Visual Basic Projekt
   Sie können Code in einem [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Projekt zum Visual Basic for Applications (VBA-Code) verfügbar machen, wenn Sie möchten, dass die beiden Code Typen miteinander interagieren.
@@ -37,7 +39,7 @@ ms.locfileid: "85544845"
 - [Verfügbar machen von Code, der nicht in einer Host Element Klasse ist](#NonHostItem)
 
 ## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> Verfügbar machen von Code in einer Host Element Klasse
- Um VBA-Code zum Aufrufen von Visual Basic Code in einer Host Element Klasse zu aktivieren, legen Sie die **enablevbacallzer** -Eigenschaft des Host Elements auf **true**fest.
+ Um VBA-Code zum Aufrufen von Visual Basic Code in einer Host Element Klasse zu aktivieren, legen Sie die **enablevbacallzer** -Eigenschaft des Host Elements auf **true** fest.
 
  Eine exemplarische Vorgehensweise, in der veranschaulicht wird, wie eine Methode einer Host Element Klasse verfügbar gemacht wird, und Sie dann über VBA aufgerufen wird, finden Sie unter Exemplarische Vorgehensweise [: Abrufen von Code aus VBA in einem Visual Basic Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Weitere Informationen zu Host Elementen finden Sie unter [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md).
 
@@ -58,9 +60,9 @@ ms.locfileid: "85544845"
 
     - In einem Excel-Projekt werden die Host Element Klassen `ThisWorkbook` `Sheet1` `Sheet2` standardmäßig,, und genannt `Sheet3` .
 
-4. Legen Sie die **enablevbacallzer** -Eigenschaft für das-Host Element auf **true**fest. Diese Eigenschaft ist im Fenster **Eigenschaften** verfügbar, wenn das Host Element im Designer geöffnet ist.
+4. Legen Sie die **enablevbacallzer** -Eigenschaft für das-Host Element auf **true** fest. Diese Eigenschaft ist im Fenster **Eigenschaften** verfügbar, wenn das Host Element im Designer geöffnet ist.
 
-     Nachdem Sie diese Eigenschaft festgelegt haben, legt Visual Studio automatisch die **ReferenceAssemblyFromVbaProject** -Eigenschaft auf **true**fest.
+     Nachdem Sie diese Eigenschaft festgelegt haben, legt Visual Studio automatisch die **ReferenceAssemblyFromVbaProject** -Eigenschaft auf **true** fest.
 
     > [!NOTE]
     > Wenn die Arbeitsmappe oder das Dokument nicht bereits VBA-Code enthält oder VBA-Code im Dokument nicht als vertrauenswürdig eingestuft wird, erhalten Sie eine Fehlermeldung, wenn Sie die **enablevbacallzer** -Eigenschaft auf " **true**" festlegen. Dies liegt daran, dass Visual Studio das VBA-Projekt im Dokument in dieser Situation nicht ändern kann.

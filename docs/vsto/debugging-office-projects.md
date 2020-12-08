@@ -1,5 +1,7 @@
 ---
 title: Debugging von Office-Projekten
+description: Erfahren Sie, wie Sie Office-Projekte mit den gleichen Microsoft Visual Studio Tools debuggen können, die Sie auch für andere Visual Studio-Projekte verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189699"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845634"
 ---
 # <a name="debug-office-projects"></a>Debugging von Office-Projekten
   Sie können Office-Projekte mit den gleichen Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Tools debuggen, die Sie auch für andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Projekte verwenden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debuggerfunktionen, beispielsweise die Fähigkeit, Haltepunkte einzufügen und Variablen im Fenster **Lokal** anzuzeigen, stehen auch zur Verfügung, wenn Sie Office-Projekte debuggen. Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Debuggingtools finden Sie unter [Debuggen in Visual Studio](../debugger/debugger-feature-tour.md).
@@ -48,7 +50,7 @@ ms.locfileid: "73189699"
 ### <a name="debug-office-2013-vsto-add-ins-by-using-either-office-2013-or-office-2016"></a>Debuggen von Office 2013-VSTO-Add-Ins mithilfe von Office 2013 oder Office 2016
  Wenn Sie Visual Studio 2015 verwenden und beide Versionen von Office nebeneinander installiert sind, startet Visual Studio Office 2016. Wenn Sie Visual Studio 2013 verwenden, startet Visual Studio Office 2013.
 
- Wenn Sie Ihr VSTO-Add-In mithilfe einer anderen Office-Version (2013 oder 2016) debuggen möchten, öffnen Sie den **Projekt-Designer**und wählen auf der Registerkarte **Debuggen** die Optionsschaltfläche **Externes Programm starten** aus. Navigieren Sie dann zum Speicherort der ausführbaren Datei der entsprechenden Office-Anwendung.
+ Wenn Sie Ihr VSTO-Add-In mithilfe einer anderen Office-Version (2013 oder 2016) debuggen möchten, öffnen Sie den **Projekt-Designer** und wählen auf der Registerkarte **Debuggen** die Optionsschaltfläche **Externes Programm starten** aus. Navigieren Sie dann zum Speicherort der ausführbaren Datei der entsprechenden Office-Anwendung.
 
 ## <a name="f10-and-f11-behavior"></a>F10-und F11-Verhalten
  Wenn Sie mit dem Debuggen eines Office-Projekts beginnen, haben **F10** und **F11** nicht das gleiche Verhalten wie beim Starten des Debuggens anderer Visual Basic-oder c#-Projekte. In Visual Basic- oder C#-Projekten wird der Debugger bei der main-Funktion angehalten. In Office-Projekten besitzt Visual Studio dagegen keine Kontrolle über die main-Funktion der Office-Anwendung. Während des Debuggens verfügen **F10** und **F11** jedoch über dieselben Funktionen wie in Visual Basic-und c#-Projekten.
@@ -63,7 +65,7 @@ ms.locfileid: "73189699"
  In der Standardeinstellung zeigt Visual Studio auch keine Just-In-Time-Debugfehler für Office-Projekte an. Sie können dieses Feature jedoch aktivieren, um die ausgelösten Fehler anzuzeigen. Weitere Informationen finden Sie unter [Just-in-Time-Debuggen in Visual Studio](../debugger/just-in-time-debugging-in-visual-studio.md).
 
 ## <a name="command-line-arguments"></a>Befehlszeilenargumente
- Wenn auf der Debugeigenschaftenseite die **Start Aktion** auf **Projekt starten**festgelegt ist, werden beim **Debuggen** des Projekts von Visual Studio keine Befehlszeilenargumente verwendet. Dies gilt auch, wenn Sie Befehlszeilenargumente als Start Optionen angegeben haben. Wenn Sie beim Starten des Debuggens Befehlszeilenargumente verwenden möchten, müssen Sie eine andere **Start Aktion** als **Projekt starten**auswählen.
+ Wenn auf der Debugeigenschaftenseite die **Start Aktion** auf **Projekt starten** festgelegt ist, werden beim **Debuggen** des Projekts von Visual Studio keine Befehlszeilenargumente verwendet. Dies gilt auch, wenn Sie Befehlszeilenargumente als Start Optionen angegeben haben. Wenn Sie beim Starten des Debuggens Befehlszeilenargumente verwenden möchten, müssen Sie eine andere **Start Aktion** als **Projekt starten** auswählen.
 
 ## <a name="source-control"></a>Quellcodeverwaltung
  In der Quellcodeverwaltung werden Debugeigenschaften nicht für mehrere Benutzer gemeinsam verwendet. In Visual Basic- und C#-Projekten werden die Debugeigenschaften in einer benutzerspezifischen Datei („*ProjectName*.vbproj.user“ oder „ *ProjectName*.csproj.user“) gespeichert, und diese Datei wird nicht in die Quellcodeverwaltung einbezogen. Wenn mehrere Personen debuggen, muss jede Person die Debugeigenschaften manuell eingeben.
@@ -97,7 +99,7 @@ ms.locfileid: "73189699"
 
  Um die Fehler in eine Protokolldatei zu schreiben, erstellen Sie eine Umgebungsvariable mit dem Namen `VSTO_LOGALERTS` , die Sie auf 1 (eins) festlegen. Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] erstellt die Protokolldatei in dem Ordner, der das Bereitstellungsmanifest für das VSTO-Add-In enthält, bzw. dem Ordner, der das Dokument oder die Arbeitsmappe enthält, das bzw. die der Anpassung zugeordnet ist. Wenn dies fehlschlägt, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] erstellt die Protokolldatei im lokalen Ordner " *% Temp%* ". Für VSTO-Add-Ins auf Anwendungsebene lautet der Standardname „ *Add-In-Name*.vsto.log“. Für Projekte auf Dokumentebene lautet der Name der Protokolldatei „ *Dokumentname*.*Erweiterung*.log“; Beispiel: „ExcelWorkbook1.xlsx.log“. Um die Fehlerprotokollierung zu beenden, löschen Sie die Umgebungsvariable, oder legen Sie sie auf 0 (null) fest.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)
 - [Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)

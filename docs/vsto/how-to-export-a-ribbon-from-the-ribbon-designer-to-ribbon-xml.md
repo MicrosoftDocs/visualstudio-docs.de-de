@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML'
+description: Erfahren Sie, wie Sie das Menüband anpassen können, um das Menüband aus dem Designer in Menüband-XML zu exportieren und das XML direkt zu bearbeiten.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298441"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844139"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Gewusst wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML
   Das Element " **Menüband (visueller Designer)** " unterstützt nicht alle möglichen Typen der Menü Band Anpassung. Um das Menüband auf Erweiterte Weise anzupassen, können Sie das Menüband aus dem Designer in Menüband-XML exportieren und den XML-Code direkt bearbeiten.
@@ -36,7 +38,7 @@ ms.locfileid: "92298441"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>So exportieren Sie ein Menüband aus dem Menüband-Designer in die Multifunktionsleiste
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Menüband-Codedatei, und klicken Sie dann auf **Designer anzeigen**
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf die Menüband-Codedatei, und klicken Sie dann auf **Designer anzeigen**
 
 2. Klicken Sie mit der rechten Maustaste auf den Menüband-Designer, und klicken Sie dann auf **Menüband in XML**
 
@@ -65,7 +67,7 @@ ms.locfileid: "92298441"
 
      Weitere Informationen zum Schreiben von Rückruf Methoden und zum Verwenden des RibbonX-Programmiermodells finden Sie unter [Menüband-XML](../vsto/ribbon-xml.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

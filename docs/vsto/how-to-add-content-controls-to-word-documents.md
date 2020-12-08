@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten'
+description: In Word-Projekten auf Dokument Ebene können Sie dem Dokument in Ihrem Projekt zur Entwurfszeit oder zur Laufzeit Inhalts Steuerelemente hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538384"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845556"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten
   In Word-Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfszeit oder Laufzeit Inhaltssteuerelemente hinzufügen. In Word-VSTO-Add-In-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit Inhaltssteuerelemente hinzufügen.
@@ -51,7 +53,7 @@ ms.locfileid: "85538384"
 ## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> Hinzufügen von Inhalts Steuerelementen zur Entwurfszeit
  Es gibt mehrere Möglichkeiten zum Hinzufügen von Inhaltssteuerelementen zum Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit:
 
-- Fügen Sie ein Inhaltssteuerelement von der Registerkarte **Word-Steuerelemente** der **Toolbox**hinzu.
+- Fügen Sie ein Inhaltssteuerelement von der Registerkarte **Word-Steuerelemente** der **Toolbox** hinzu.
 
 - Fügen Sie Ihrem Dokument ein Inhaltssteuerelement auf die gleiche Weise wie ein systemeigenes Inhaltssteuerelement in Word hinzu.
 
@@ -78,7 +80,7 @@ ms.locfileid: "85538384"
     - Ziehen Sie ein Inhaltssteuerelement aus der **Toolbox** in das Dokument. Das Inhaltssteuerelement wird an der aktuellen Auswahl im Dokument und nicht an der Position des Mauszeigers hinzugefügt.
 
 > [!NOTE]
-> <xref:Microsoft.Office.Tools.Word.GroupContentControl> kann nicht über die **Toolbox**hinzugefügt werden. Sie können <xref:Microsoft.Office.Tools.Word.GroupContentControl> nur in Word oder zur Laufzeit hinzufügen.
+> <xref:Microsoft.Office.Tools.Word.GroupContentControl> kann nicht über die **Toolbox** hinzugefügt werden. Sie können <xref:Microsoft.Office.Tools.Word.GroupContentControl> nur in Word oder zur Laufzeit hinzufügen.
 
 > [!NOTE]
 > Visual Studio bietet in der Toolbox kein Kontrollkästchen-Inhaltssteuerelement. Um dem Dokument ein Kontrollkästchen-Inhaltssteuerelement hinzuzufügen, müssen Sie ein <xref:Microsoft.Office.Tools.Word.ContentControl> -Objekt programmgesteuert erstellen. Weitere Informationen finden Sie unter [Inhalts Steuerelemente](../vsto/content-controls.md).
@@ -182,7 +184,7 @@ ms.locfileid: "85538384"
 
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)

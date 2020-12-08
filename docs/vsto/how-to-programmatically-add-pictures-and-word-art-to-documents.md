@@ -1,5 +1,7 @@
 ---
 title: Programm gesteuertes Hinzufügen von Bildern und Word-Grafiken zu Dokumenten
+description: Erfahren Sie, wie Sie Ihren Dokumenten zur Entwurfszeit oder zur Laufzeit Bilder hinzufügen können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e73473229a35bebb99eac03963fb43f880a39903
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585391"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844048"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Bildern und Word-Grafiken zu Dokumenten
   Sie können Ihren Dokumenten zur Entwurfszeit oder zur Laufzeit Bilder und Zeichnungsobjekte hinzufügen. Mithilfe von WordArt können Sie Microsoft Office Word-Dokumenten dekorativen Text hinzufügen. Diese Spezialeffekte für Text sind Zeichnungsobjekte, die Sie anpassen und in Ihr Dokument einfügen können.
@@ -100,7 +102,7 @@ ms.locfileid: "91585391"
 
 - Ein Bild mit dem Namen *SamplePicture.jpg* muss auf Laufwerk C vorhanden sein.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)

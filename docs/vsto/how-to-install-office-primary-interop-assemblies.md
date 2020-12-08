@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Installieren von primären Interop-Assemblys in Office'
+description: Erfahren Sie, wie Sie die Microsoft Office primären Interop-Assemblys (PIAs) bei der Installation von Office installieren.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15a55650f2e4a434343c9128cc8f28117b54288e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544780"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845881"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Gewusst wie: Installieren von primären Interop-Assemblys in Office
   Installieren Sie die primären Interop-Assemblys (PIAs) für Microsoft Office bei der Installation von Office.

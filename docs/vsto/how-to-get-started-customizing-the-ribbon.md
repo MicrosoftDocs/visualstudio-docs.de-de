@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Starten der Anpassung des Menübands'
+description: Weitere Informationen zum Anpassen des Menübands einer Microsoft Office-Anwendung finden Sie unter Hinzufügen eines Menüband (visueller Designer) oder eines Menüband (XML)-Elements zu einem Office-Projekt.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520067"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845946"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Gewusst wie: Starten der Anpassung des Menübands
   Fügen Sie einem Office-Projekt ein **Menüband (visueller Designer)** oder ein **Menüband (XML)** -Element hinzu, um das Menüband einer Microsoft Office-Anwendung anzupassen.
@@ -67,11 +69,11 @@ ms.locfileid: "85520067"
 
 4. Klicken Sie auf **OK**.
 
-   Das Menü Band Element wird in **Projektmappen-Explorer**angezeigt. Weitere Informationen zu den nächsten Schritten finden Sie unter Übersicht über das [Menüband](../vsto/ribbon-overview.md).
+   Das Menü Band Element wird in **Projektmappen-Explorer** angezeigt. Weitere Informationen zu den nächsten Schritten finden Sie unter Übersicht über das [Menüband](../vsto/ribbon-overview.md).
 
 ## <a name="see-also"></a>Siehe auch
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Menüband-Designer](../vsto/ribbon-designer.md)
+- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit
+description: Erfahren Sie, wie Sie einem Microsoft Office Word-Dokument und Microsoft Office Excel-Arbeitsmappe zur Laufzeit Steuerelemente hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986320"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844841"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit
   Sie können einem Microsoft Office Word-Dokument und einer Microsoft Office Excel-Arbeitsmappe Steuerelemente zur Laufzeit hinzufügen. Sie können sie auch zur Laufzeit entfernen. Steuerelemente, die Sie zur Laufzeit hinzufügen oder entfernen, heißen *dynamische Steuerelemente*.
@@ -62,7 +64,7 @@ ms.locfileid: "72986320"
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#3)]
 
 ### <a name="access-and-delete-controls"></a>Zugriffs-und Lösch Steuerelemente
- Sie können Sie `Controls`-Eigenschaft eines <xref:Microsoft.Office.Tools.Excel.Worksheet> oder <xref:Microsoft.Office.Tools.Word.Document> verwenden, um alle Steuerelemente in Ihrem Dokument zu durchlaufen, auch die zur Entwurfszeit hinzugefügten. Steuerelemente, die zur Entwurfszeit hinzufügt werden, werden auch als *statische Steuerelemente*bezeichnet.
+ Sie können Sie `Controls`-Eigenschaft eines <xref:Microsoft.Office.Tools.Excel.Worksheet> oder <xref:Microsoft.Office.Tools.Word.Document> verwenden, um alle Steuerelemente in Ihrem Dokument zu durchlaufen, auch die zur Entwurfszeit hinzugefügten. Steuerelemente, die zur Entwurfszeit hinzufügt werden, werden auch als *statische Steuerelemente* bezeichnet.
 
  Sie können dynamische Steuerelemente entfernen, indem Sie die- `Delete` Methode des-Steuer Elements aufrufen, oder indem Sie die-Methode jeder Steuerelement Auflistung aufrufen `Remove` . Im folgenden Codebeispiel wird die <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> -Methode verwendet, um in einem Projekt auf Dokumentebene für Excel ein <xref:Microsoft.Office.Tools.Excel.NamedRange> aus `Sheet1` zu entfernen.
 
@@ -137,7 +139,7 @@ Wenn ein Dokument gespeichert und anschließend geschlossen wird, werden alle dy
   [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
   [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Beibehalten dynamischer Steuerelemente in Office-Dokumenten](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)

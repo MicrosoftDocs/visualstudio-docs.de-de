@@ -1,5 +1,7 @@
 ---
 title: Senden der erforderlichen Ereignisse | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die geordneten Ereignisse, die beim Erstellen einer Debug-Engine erforderlich sind, und fügen Sie Sie an ein Programm im Visual Studio-Debugging an.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc83b47e53607fe1111ececbbf892c96f7bbb639
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49c85e3d371bfd729d55e9d17a6c8de61924e35f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712997"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845309"
 ---
 # <a name="send-the-required-events"></a>Erforderliche Ereignisse senden
 Verwenden Sie dieses Verfahren, um erforderliche Ereignisse zu senden.
@@ -36,5 +38,5 @@ Verwenden Sie dieses Verfahren, um erforderliche Ereignisse zu senden.
 > [!NOTE]
 > Viele Sprachen verwenden globale Initialisierer oder externe, vorkompilierte Funktionen (aus der CRT-Bibliothek oder _Main) am Anfang des Codes. Wenn die Sprache des Programms, das Sie Debuggen, einen dieser Elementtypen vor dem ersten Einstiegspunkt enthält, wird dieser Code ausgeführt, und das Einstiegspunkt Ereignis wird gesendet, wenn der Benutzer Einstiegspunkt **main** , z `WinMain` . b. Main oder, erreicht wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Aktivieren eines deaktivierte Programms](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

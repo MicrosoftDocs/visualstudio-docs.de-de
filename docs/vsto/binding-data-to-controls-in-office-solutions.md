@@ -1,5 +1,7 @@
 ---
 title: Binden von Daten an Steuerelemente in Office-Projektmappen
+description: Erfahren Sie, wie Sie Windows Forms Steuerelemente und Host Steuerelemente in einem Microsoft Office Word-Dokument oder Excel-Arbeitsblatt an eine Datenquelle binden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986169"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844425"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Binden von Daten an Steuerelemente in Office-Projektmappen
   Sie können Windows Forms-Steuerelemente und *Hoststeuerelemente* auf einem Microsoft Office Word-Dokument oder einem Microsoft Office Excel-Arbeitsblatt an eine Datenquelle binden, sodass die Steuerelemente die Daten automatisch anzeigen. Sie können Daten sowohl in Projekten auf Anwendungsebene als auch in Projekten auf Dokumentebene an Steuerelemente binden.
@@ -97,11 +99,11 @@ ms.locfileid: "72986169"
 
  Weitere Informationen finden Sie unter Gewusst [wie: Aktualisieren einer Datenquelle mit Daten eines Host Steuer](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)Elements.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [Gewusst wie: Erstellen eines einfach gebundenen Steuer Elements in einem Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
-- [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
+- [Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Daten zwischenspeichern](../vsto/caching-data.md)
 - [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)

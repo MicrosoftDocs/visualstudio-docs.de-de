@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern'
+description: Erfahren Sie, wie Sie einem Microsoft Office Excel-Arbeitsblatt Diagramm Steuerelemente zur Entwurfszeit und zur Laufzeit in Anpassungen auf Dokument Ebene hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546236"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845465"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von Diagramm Steuerelementen zu Arbeitsblättern
   Sie können <xref:Microsoft.Office.Tools.Excel.Chart> einem Microsoft Office Excel-Arbeitsblatt Steuerelemente zur Entwurfszeit und zur Laufzeit in Anpassungen auf Dokument Ebene hinzufügen. Sie können auch Steuer <xref:Microsoft.Office.Tools.Excel.Chart> Elemente zur Laufzeit in VSTO-Add-Ins hinzufügen.

@@ -1,5 +1,7 @@
 ---
 title: Zusätzliche Unterstützung für Fehler in Office-Projektmappen
+description: Erfahren Sie, wie Sie mithilfe von Support Ressourcen Antworten auf Probleme finden können, die beim Erstellen von Office-Projektmappen in Visual Studio auftreten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -56,12 +58,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e307c839dfb0aa764ccd0aa5727f009635ecabce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984627"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844776"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Zusätzliche Unterstützung für Fehler in Office-Projektmappen
 
@@ -91,7 +93,7 @@ Bietet Zugriff auf Knowledge Base-Artikel, Downloads und Updates, Support-WebCas
 
 Enthält Links zu weiteren Ressourcen, um mehr über die Entwicklung von Office-Projektmappen und Office-Entwicklung mit Visual Studio zu erfahren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Beheben von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)

@@ -1,5 +1,7 @@
 ---
 title: Symbol Anbieter Schnittstellen | Microsoft-Dokumentation
+description: Dieser Artikel verknüpft Sie mit Beschreibungen der Schnittstellen für die Symbol Behandlung für das Visual Studio SDK, die Variablen in einer aufrufsstapel während des Break-Modus auswerten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,20 +14,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715849"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845790"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 Im folgenden sind die Schnittstellen für die Symbol Behandlung für das aufgeführt [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
 
-## <a name="discussion"></a>Diskussion (Discussion)
+## <a name="discussion"></a>Diskussion
  Diese Schnittstellen werden verwendet, um Variablen in einer-Rückruf Stapel während des Break-Modus auszuwerten. Sie werden nur für Common Language Runtime Symbol Anbieter (SP) implementiert.
 
-|Schnittstelle|Implementiert von|Beschreibung|
+|Schnittstelle|Implementiert von|BESCHREIBUNG|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|Stellt die Adresse eines Elements dar.|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|Stellt die Adresse eines Elements dar und bietet Zugriff auf die Prozess-ID.|

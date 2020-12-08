@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von Befehlen zu Kontextmenüs'
+description: Erfahren Sie, wie Sie mithilfe eines VSTO-Add-ins einem Kontextmenü in einer Office-Anwendung Befehle hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546197"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845491"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Gewusst wie: Hinzufügen von Befehlen zu Kontextmenüs
   In diesem Thema wird veranschaulicht, wie Sie mithilfe eines VSTO-Add-ins einem Kontextmenü in einer Office-Anwendung Befehle hinzufügen.
@@ -29,9 +31,9 @@ ms.locfileid: "85546197"
 
 1. Fügen Sie ein **Menüband-XML** -Element einem Projekt auf Dokumentebene oder einem VSTO-Add-In-Projekt hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md). In
 
-2. **Projektmappen-Explorer**wählen Sie **ThisAddIn.cs** oder **ThisAddIn.vb**aus.
+2. **Projektmappen-Explorer** wählen Sie **ThisAddIn.cs** oder **ThisAddIn.vb** aus.
 
-3. Wählen Sie in der Menüleiste **View**  >  **Code**anzeigen aus.
+3. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
 
      Die **ThisAddin** -Klassendatei wird im Code-Editor geöffnet.
 
@@ -40,9 +42,9 @@ ms.locfileid: "85546197"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer**aus. Standardmäßig wird die Menüband-XML-Datei *Ribbon1.xml*benannt.
+5. Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer** aus. Standardmäßig wird die Menüband-XML-Datei *Ribbon1.xml* benannt.
 
-6. Wählen Sie in der Menüleiste **View**  >  **Code**anzeigen aus.
+6. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
 
      Die Menüband-XML-Datei wird im Code-Editor geöffnet.
 
@@ -70,7 +72,7 @@ ms.locfileid: "85546197"
     </customUI>
     ```
 
-8. Wählen Sie im **Projektmappen-Explorer**die Datei **MyRibbon.cs** oder **MyRibbon.vb**aus.
+8. Wählen Sie im **Projektmappen-Explorer** die Datei **MyRibbon.cs** oder **MyRibbon.vb** aus.
 
 9. Fügen Sie der-Klasse eine Rückruf Methode `Ribbon1` für jedes Steuerelement hinzu, das Sie verarbeiten möchten.
 

@@ -1,5 +1,7 @@
 ---
 title: Daten in Office-Projektmappen
+description: Erfahren Sie mehr über die verschiedenen Methoden zum Arbeiten mit Daten, wenn Sie Microsoft Office Lösungen mithilfe von Visual Studio erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce6d73a7c70101c0fe364ac5dafba8cbe47f5c8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189691"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845547"
 ---
 # <a name="data-in-office-solutions"></a>Daten in Office-Projektmappen
   Viele Office-Projektmappen ermöglichen Benutzern das Abrufen und Ändern von Daten. Wenn Sie Office-Projektmappen mithilfe von Visual Studio erstellen, gibt es mehrere verschiedene Verfahren, wie Sie mit Daten arbeiten können.

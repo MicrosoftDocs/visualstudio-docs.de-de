@@ -1,5 +1,7 @@
 ---
 title: Übersicht über den Aktionsbereich
+description: Erfahren Sie, wie ein Aktionsbereich ein anpassbarer Aufgabenbereich für Dokument Aktionen ist, der an ein bestimmtes Microsoft Office Word-Dokument oder eine Excel-Arbeitsmappe angefügt wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986309"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844828"
 ---
 # <a name="actions-pane-overview"></a>Übersicht über den Aktionsbereich
   Ein Aktionsbereich ist ein anpassbarer Aufgabenbereich für **Dokument Aktionen** , der an ein bestimmtes Microsoft Office Word-Dokument oder eine Microsoft Office Excel-Arbeitsmappe angefügt wird. Der Aktionsbereich wird im Aufgabenbereich Office zusammen mit anderen integrierten Aufgabenbereichen gehostet, wie z. b. dem Aufgabenbereich **XML-Quelle** in Excel oder dem Aufgabenbereich **Formatvorlagen und Formatierung** in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.
@@ -59,17 +61,17 @@ ms.locfileid: "72986309"
 
  Um den Aufgabenbereich in der Projektmappe auszublenden, haben Sie mehrere Optionen:
 
-- Legen Sie für Word die- <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> Eigenschaft des- <xref:Microsoft.Office.Interop.Word.TaskPane> Objekts, das den Aufgabenbereich Dokument Aktionen darstellt, auf **false**fest. Das folgende Codebeispiel sollte von der `ThisDocument`-Klasse im Projekt ausgeführt werden.
+- Legen Sie für Word die- <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> Eigenschaft des- <xref:Microsoft.Office.Interop.Word.TaskPane> Objekts, das den Aufgabenbereich Dokument Aktionen darstellt, auf **false** fest. Das folgende Codebeispiel sollte von der `ThisDocument`-Klasse im Projekt ausgeführt werden.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Legen Sie für Excel die- <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> Eigenschaft des- <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> Objekts auf **false**fest. Das folgende Codebeispiel sollte von der `ThisWorkbook`-Klasse im Projekt ausgeführt werden.
+- Legen Sie für Excel die- <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> Eigenschaft des- <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> Objekts auf **false** fest. Das folgende Codebeispiel sollte von der `ThisWorkbook`-Klasse im Projekt ausgeführt werden.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- Für Word oder Excel können Sie alternativ die- <xref:Microsoft.Office.Core.CommandBar.Visible%2A> Eigenschaft der Befehlsleiste, die den Aufgabenbereich darstellt, auf **false**festlegen. Das folgende Codebeispiel sollte von der `ThisDocument`-Klasse oder `ThisWorkbook`-Klasse im Projekt ausgeführt werden.
+- Für Word oder Excel können Sie alternativ die- <xref:Microsoft.Office.Core.CommandBar.Visible%2A> Eigenschaft der Befehlsleiste, die den Aufgabenbereich darstellt, auf **false** festlegen. Das folgende Codebeispiel sollte von der `ThisDocument`-Klasse oder `ThisWorkbook`-Klasse im Projekt ausgeführt werden.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -78,7 +80,7 @@ ms.locfileid: "72986309"
  Wenn ein Benutzer das Dokument speichert, während der Aktionsbereich sichtbar ist, wird der Aktionsbereich jedes Mal sichtbar, wenn das Dokument geöffnet wird, unabhängig davon, ob der Aktionsbereich Steuerelemente enthält. Wenn Sie die Anzeige steuern möchten, rufen Sie die <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A>-Methode des `ActionsPane`-Felds im `Startup`-Ereignishandler von `ThisDocument` oder `ThisWorkbook` ab, um sicherzustellen, dass der Aktionsbereich beim Öffnen des Dokuments nicht sichtbar ist.
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>Festlegen, wann der Aktionsbereich geschlossen wird
- Es gibt kein Ereignis, das beim Schließen des Aktionsbereichs ausgelöst wird. Obwohl die <xref:Microsoft.Office.Tools.ActionsPane>-Klasse über ein <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>-Ereignis verfügt, wird dieses Ereignis nicht ausgelöst, wenn der Endbenutzer den Aktionsbereich schließt. Stattdessen wird dieses Ereignis ausgelöst, wenn die Steuerelemente im Aktionsbereich durch Aufrufen der- <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> Methode oder durch Festlegen der- <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> Eigenschaft auf **false**ausgeblendet werden.
+ Es gibt kein Ereignis, das beim Schließen des Aktionsbereichs ausgelöst wird. Obwohl die <xref:Microsoft.Office.Tools.ActionsPane>-Klasse über ein <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>-Ereignis verfügt, wird dieses Ereignis nicht ausgelöst, wenn der Endbenutzer den Aktionsbereich schließt. Stattdessen wird dieses Ereignis ausgelöst, wenn die Steuerelemente im Aktionsbereich durch Aufrufen der- <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> Methode oder durch Festlegen der- <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> Eigenschaft auf **false** ausgeblendet werden.
 
  Wenn der Benutzer den Aktionsbereich schließt, kann der Benutzer ihn erneut anzeigen, indem er eine der folgenden Prozeduren in der Benutzeroberfläche der Anwendung ausführt.
 

@@ -1,5 +1,7 @@
 ---
 title: Einstieg in das Programmieren von VSTO-Add-ins
+description: Erfahren Sie, wie Sie mit VSTO-Add-Ins Microsoft Office Anwendungen automatisieren, Features der Anwendung erweitern und die Benutzeroberfläche der Anwendung anpassen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253588"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845114"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Einstieg in das Programmieren von VSTO-Add-ins
   Sie können mit VSTO-Add-Ins Microsoft Office-Anwendungen automatisieren, Funktionen der Anwendung erweitern und die Benutzeroberfläche der Anwendung anpassen. Informationen dazu, wie VSTO-Add-Ins mit anderen Typen von Office-Projektmappen verglichen werden, die Sie mithilfe von Visual Studio erstellen können, finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;v&#41;Sto ](../vsto/office-solutions-development-overview-vsto.md)
@@ -74,7 +76,7 @@ ms.locfileid: "71253588"
 
 - [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-In für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 

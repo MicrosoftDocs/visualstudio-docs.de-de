@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen eines Dialog Feld-Start Programms zu einer Menü Bandgruppe'
+description: Sie können einer beliebigen Gruppe auf einem Menüband ein Dialogfeld-Start Programm hinzufügen, mit dem verwandte Dialogfelder oder Aufgabenbereiche geöffnet werden können, in denen weitere Optionen für die Gruppe vorhanden sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541619"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844932"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Gewusst wie: Hinzufügen eines Dialog Feld-Start Programms zu einer Menü Bandgruppe
   Sie können einer beliebigen Gruppe auf einem Menüband ein Dialogfeld-Start Programm hinzufügen. Ein Dialogfeld-Start Programm ist ein kleines Symbol, das in einer Gruppe angezeigt wird. Benutzer klicken auf dieses Symbol, um verwandte Dialogfelder oder Aufgabenbereiche zu öffnen, die weitere Optionen für die Gruppe bereitstellen.
@@ -27,7 +29,7 @@ ms.locfileid: "85541619"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>So fügen Sie einer Menü Bandgruppe ein Dialogfeld-Start Programm hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**die Menüband-Codedatei (*VB* -oder *CS* -Datei) aus.
+1. Wählen Sie in **Projektmappen-Explorer** die Menüband-Codedatei (*VB* -oder *CS* -Datei) aus.
 
 2. Klicken Sie im Menü **Ansicht** auf **Designer**.
 

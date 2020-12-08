@@ -1,5 +1,7 @@
 ---
 title: Einstieg in das Programmieren von Anpassungen auf Dokument Ebene für Word
+description: Erfahren Sie, was Sie wissen müssen, um mit der Erstellung von Anpassungen auf Dokument Ebene für Microsoft Office Word mithilfe von Visual Studio zu beginnen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4cf54dcdd08e7c44e8318973a3653dbe9c5ea1b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9420ab02b5f402dd39e5ca1713b911a10932dfb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585666"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845179"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Einstieg in das Programmieren von Anpassungen auf Dokument Ebene für Word
   Wenn Sie gerade erst mit dem Erstellen von Anpassungen auf Dokument Ebene für Microsoft Office Word mithilfe von Visual Studio beginnen, müssen Sie Folgendes wissen.
@@ -64,7 +66,7 @@ ms.locfileid: "91585666"
 
  Eine Liste der Themen, die Sie durch einige der allgemeinen Aufgaben in Word-Projekten führen, finden Sie unter [Allgemeine Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
 - [Word-Lösungen](../vsto/word-solutions.md)

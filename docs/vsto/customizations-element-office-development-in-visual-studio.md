@@ -1,7 +1,8 @@
 ---
 title: '&lt;customialisierungen- &gt; Element (Office-Entwicklung in Visual Studio)'
+description: Erfahren Sie, wie das Anpassungselement des vstov4-Namespace alle Informationen zum Installieren und Laden der einzelnen Office-Projektmappen enthält.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64790008"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844035"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;customialisierungen- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `customizations` -Element des `vstov4` -Namespace enthält alle Informationen zum Installieren und Laden der einzelnen Office-Projektmappen.

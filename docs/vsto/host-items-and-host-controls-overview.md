@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Host Elemente und Host Steuerelemente
+description: Erfahren Sie, dass Host Elemente und Host Steuerelemente Typen sind, die das Programmiermodell für Office-Projektmappen bereitstellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -36,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255929"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845569"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Übersicht über Host Elemente und Host Steuerelemente
   Hostelemente und Hoststeuerelemente sind Programmierelemente, die die Bereitstellung des Programmiermodells für Office-Projektmappen ermöglichen, die mithilfe der Office-Entwicklungstools in Visual Studio erstellt werden. Hostelemente und Hoststeuerelemente vereinfachen die Interaktion zwischen Objektmodellen von Microsoft Office Word und Microsoft Office Excel (COM-basiert) und verwalteten Objekten wie Windows Forms-Steuerelementen.
@@ -59,7 +61,7 @@ ms.locfileid: "71255929"
 
 - <xref:Microsoft.Office.Tools.Excel.ChartSheet>
 
-  Jeder dieser Typen erweitert ein Objekt, das als systemeigenes Objekt im Word- oder Excel-Objektmodell vorhanden ist und als *systemeigenes Office-Objekt*bezeichnet wird. Das <xref:Microsoft.Office.Tools.Word.Document> -Hostelement erweitert beispielsweise das <xref:Microsoft.Office.Interop.Word.Document> -Objekt, das in der primären Interopassembly für Word definiert ist.
+  Jeder dieser Typen erweitert ein Objekt, das als systemeigenes Objekt im Word- oder Excel-Objektmodell vorhanden ist und als *systemeigenes Office-Objekt* bezeichnet wird. Das <xref:Microsoft.Office.Tools.Word.Document> -Hostelement erweitert beispielsweise das <xref:Microsoft.Office.Interop.Word.Document> -Objekt, das in der primären Interopassembly für Word definiert ist.
 
   Hostelemente verfügen im Allgemeinen über dieselben Standardfunktionen wie die entsprechenden Office-Objekte, wurden jedoch durch folgende Features ergänzt:
 
@@ -98,7 +100,7 @@ ms.locfileid: "71255929"
 
 - [Bookmark-Steuerelement](../vsto/bookmark-control.md)
 
-- [ContentControl-Elemente](../vsto/content-controls.md)
+- [Inhalts Steuerelemente](../vsto/content-controls.md)
 
 - [XMLNode-Steuerelement](../vsto/xmlnode-control.md)
 
@@ -145,10 +147,10 @@ ms.locfileid: "71255929"
 - [Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
 
 ### <a name="name-host-controls"></a>Benennen von Host Steuerelementen
- Wenn Sie ein Hoststeuerelement aus der **Toolbox** in das Dokument ziehen, wird das Steuerelement automatisch nach dem Steuerelementtyp gefolgt von einer fortlaufenden Nummer benannt. Lesezeichen erhalten beispielsweise den Namen **Bookmark1**, **Bookmark2**usw. Wenn Sie zum Hinzufügen des Steuerelements die systemeigene Funktionalität von Word oder Excel verwenden, können Sie dem Steuerelement bei der Erstellung einen spezifischen Namen geben. Sie können die Steuerelemente auch umbenennen, indem Sie den Wert der **Name** -Eigenschaft im Fenster **Eigenschaften** ändern.
+ Wenn Sie ein Hoststeuerelement aus der **Toolbox** in das Dokument ziehen, wird das Steuerelement automatisch nach dem Steuerelementtyp gefolgt von einer fortlaufenden Nummer benannt. Lesezeichen erhalten beispielsweise den Namen **Bookmark1**, **Bookmark2** usw. Wenn Sie zum Hinzufügen des Steuerelements die systemeigene Funktionalität von Word oder Excel verwenden, können Sie dem Steuerelement bei der Erstellung einen spezifischen Namen geben. Sie können die Steuerelemente auch umbenennen, indem Sie den Wert der **Name** -Eigenschaft im Fenster **Eigenschaften** ändern.
 
 > [!NOTE]
-> Hoststeuerelemente können nicht nach reservierten Wörtern benannt werden. Wenn Sie einem Arbeitsblatt beispielsweise ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement hinzufügen und den Namen in **System**ändern, treten bei der Projekterstellung Fehler auf.
+> Hoststeuerelemente können nicht nach reservierten Wörtern benannt werden. Wenn Sie einem Arbeitsblatt beispielsweise ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement hinzufügen und den Namen in **System** ändern, treten bei der Projekterstellung Fehler auf.
 
 ### <a name="delete-host-controls"></a>Löschen von Host Steuerelementen
  In Projekten auf Dokument Ebene können Sie Host Steuerelemente zur Entwurfszeit löschen, indem Sie das Steuerelement im Excel-Arbeitsblatt oder im Word-Dokument auswählen und die ENTF **-Taste drücken** . Um **-Steuerelemente zu löschen, müssen Sie jedoch das Dialogfeld** Namen definieren <xref:Microsoft.Office.Tools.Excel.NamedRange> in Excel verwenden.
@@ -166,9 +168,9 @@ ms.locfileid: "71255929"
  Eine Möglichkeit, wie Office-Objekte von Hoststeuerelementen erweitert werden, ist das Hinzufügen von Ereignissen. Das <xref:Microsoft.Office.Interop.Excel.Range> -Objekt in Excel und das <xref:Microsoft.Office.Interop.Word.Bookmark> -Objekt in Word weisen z. B. keine Ereignisse auf, aber [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] erweitert diese Objekte durch das Hinzufügen programmierbarer Ereignisse. Der Zugriff und die Programmierung in Abhängigkeit von diesen Ereignissen erfolgt auf die gleiche Weise wie der Zugriff auf Ereignisse von Windows Forms-Steuerelementen: über die Ereignis-Dropdownliste in Visual Basic und die Eigenschaftenseite in C#. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Program mieren gegen Ereignisse eines NamedRange-Steuer](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)Elements.
 
 > [!NOTE]
-> Sie sollten die <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Excel.Application> -Objekts in Excel nicht auf **false**bezeichnet wird. Wenn diese Eigenschaft auf **false** festgelegt wird, werden in Excel keine Ereignisse, einschließlich der Ereignisse von Host Steuerelementen, angezeigt.
+> Sie sollten die <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> -Eigenschaft des <xref:Microsoft.Office.Interop.Excel.Application> -Objekts in Excel nicht auf **false** bezeichnet wird. Wenn diese Eigenschaft auf **false** festgelegt wird, werden in Excel keine Ereignisse, einschließlich der Ereignisse von Host Steuerelementen, angezeigt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)

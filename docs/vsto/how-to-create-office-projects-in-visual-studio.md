@@ -1,7 +1,8 @@
 ---
 title: 'Gewusst wie: Erstellen von Office-Projekten in Visual Studio'
+description: Erfahren Sie, wie Sie Visual Studio zum Erstellen von VSTO-Add-Ins und Anpassungen auf Dokument Ebene für Microsoft Office-Anwendungen verwenden können.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547562"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844373"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Gewusst wie: Erstellen von Office-Projekten in Visual Studio
   Sie können verwenden [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , um VSTO-Add-Ins und Anpassungen auf Dokument Ebene für Microsoft Office-Anwendungen zu erstellen. Weitere Informationen zu diesen Projekttypen finden Sie unter Übersicht über die Entwicklung von Office-Projektmappen [&#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -39,7 +40,7 @@ ms.locfileid: "85547562"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>So erstellen Sie ein VSTO-Add-In-Projekt
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Wenn die integrierte Entwicklungsumgebung (IDE) für die Verwendung von [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Entwicklungseinstellungen festgelegt ist, wählen Sie im Menü **Datei** die Option **Neues**  >  **Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Wenn die integrierte Entwicklungsumgebung (IDE) für die Verwendung von [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Entwicklungseinstellungen festgelegt ist, wählen Sie im Menü **Datei** die Option **Neues**  >  **Projekt** aus.
 
     Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -94,7 +95,7 @@ ms.locfileid: "85547562"
 
 ### <a name="to-create-a-document-level-customization-project"></a>So erstellen Sie ein Projekt für Anpassungen auf Dokumentebene
 
-1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt**aus. Wenn die IDE für die Verwendung Visual Basic Entwicklungseinstellungen festgelegt ist, wählen Sie im Menü **Datei** die Option **Neues**  >  **Projekt**aus.
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Wenn die IDE für die Verwendung Visual Basic Entwicklungseinstellungen festgelegt ist, wählen Sie im Menü **Datei** die Option **Neues**  >  **Projekt** aus.
 
     Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -147,7 +148,7 @@ ms.locfileid: "85547562"
    - Prozentzeichen (%)
 
    > [!NOTE]
-   > Öffnen Sie in einem [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]-Projekt nur in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] erstellte oder in dieses Format konvertierte Dokumente. Öffnen Sie entsprechend in einem Word 2010-Projekt nur in Word 2010 erstellte oder in dieses Format konvertierte Dokumente. Bestimmte Funktionen werden im Dokument deaktiviert, wenn Sie ein Dokument öffnen, das in einer früheren Word-Version erstellt wurde. Wenn Sie Code schreiben, von dem diese Funktionen verwendet werden, können Fehler im Projekt auftreten. Um ein Dokument zu konvertieren, öffnen Sie es in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder Word 2010, und wählen Sie auf der Registerkarte **Datei** auf dem Menüband die Option **Informationen**  >  **konvertieren**aus.
+   > Öffnen Sie in einem [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]-Projekt nur in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] erstellte oder in dieses Format konvertierte Dokumente. Öffnen Sie entsprechend in einem Word 2010-Projekt nur in Word 2010 erstellte oder in dieses Format konvertierte Dokumente. Bestimmte Funktionen werden im Dokument deaktiviert, wenn Sie ein Dokument öffnen, das in einer früheren Word-Version erstellt wurde. Wenn Sie Code schreiben, von dem diese Funktionen verwendet werden, können Fehler im Projekt auftreten. Um ein Dokument zu konvertieren, öffnen Sie es in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder Word 2010, und wählen Sie auf der Registerkarte **Datei** auf dem Menüband die Option **Informationen**  >  **konvertieren** aus.
 
 8. Klicken Sie auf **Fertig stellen**.
 

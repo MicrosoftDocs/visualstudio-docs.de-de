@@ -1,5 +1,7 @@
 ---
 title: Übersicht über benutzerdefinierte XML-Abschnitte
+description: Erfahren Sie, wie Sie XML-Daten für einige Microsoft Office Anwendungen in Dokumente einbetten können. Wenn Sie XML-Daten in ein Dokument einbetten, werden die Daten als ein benutzerdefiniertes XML-Element bezeichnet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7998f2a47edd85a65b1e81dd45a046de80d0cdb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64784417"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844126"
 ---
 # <a name="custom-xml-parts-overview"></a>Übersicht über benutzerdefinierte XML-Abschnitte
   Sie können XML-Daten für einige Microsoft Office-Anwendungen in Dokumente einbetten. Wenn Sie XML-Daten in ein Dokument einbetten, werden die Daten als *benutzerdefiniertes XML*-Element bezeichnet.
@@ -41,9 +43,9 @@ ms.locfileid: "64784417"
 > Visual Studio ermöglicht es Ihnen außerdem, Datenobjekte in Anpassungen auf Dokumentebene zwischenzuspeichern. Diese Funktion unterscheidet sich von benutzerdefinierten XML-Elementen, obwohl es einige Ähnlichkeiten gibt. Weitere Informationen finden Sie unter [zwischengespeicherte Daten in Anpassungen auf Dokument Ebene](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="understand-custom-xml-parts"></a>Verstehen benutzerdefinierter XML-Elemente
- Benutzerdefinierte XML-Elemente wurden in Microsoft Office System 2007 zusammen mit den Open XML-Formaten eingeführt. Diese Formate enthalten neue XML-basierte Dateiformate für Excel, PowerPoint und Word (z *. b.. xlsx*, *. pptx*und *. docx*). Dokumente in diesen Formaten bestehen aus XML-Dateien (auch als *XML-Teile*bezeichnet), die in Ordnern in einem ZIP-Archiv angeordnet sind. Die meisten der XML-Elemente sind integrierte Elemente, mit deren Hilfe die Struktur und der Status des Dokuments definiert werden. Allerdings können Dokumente auch benutzerdefinierte XML-Elemente enthalten, die Sie verwenden können, um beliebige XML-Daten in den Dokumenten zu speichern.
+ Benutzerdefinierte XML-Elemente wurden in Microsoft Office System 2007 zusammen mit den Open XML-Formaten eingeführt. Diese Formate enthalten neue XML-basierte Dateiformate für Excel, PowerPoint und Word (z *. b.. xlsx*, *. pptx* und *. docx*). Dokumente in diesen Formaten bestehen aus XML-Dateien (auch als *XML-Teile* bezeichnet), die in Ordnern in einem ZIP-Archiv angeordnet sind. Die meisten der XML-Elemente sind integrierte Elemente, mit deren Hilfe die Struktur und der Status des Dokuments definiert werden. Allerdings können Dokumente auch benutzerdefinierte XML-Elemente enthalten, die Sie verwenden können, um beliebige XML-Daten in den Dokumenten zu speichern.
 
- Die XML-Dateiformate ermöglichen es Anwendungen, mit Dokumenten auf eine Weise zu arbeiten, die mit den älteren Binärdatei Formaten (z *. b.. xls*, *. ppt*und *. doc*) nicht möglich ist. Jede Anwendung, die ZIP-Archive lesen kann, kann den Inhalt der Dokumente untersuchen und ändern, auch wenn Microsoft Office nicht installiert ist.
+ Die XML-Dateiformate ermöglichen es Anwendungen, mit Dokumenten auf eine Weise zu arbeiten, die mit den älteren Binärdatei Formaten (z *. b.. xls*, *. ppt* und *. doc*) nicht möglich ist. Jede Anwendung, die ZIP-Archive lesen kann, kann den Inhalt der Dokumente untersuchen und ändern, auch wenn Microsoft Office nicht installiert ist.
 
  Weitere Informationen zur Struktur von Open XML und benutzerdefinierten XML-Elementen finden Sie in den folgenden Artikeln:
 
@@ -78,9 +80,9 @@ ms.locfileid: "64784417"
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Binden benutzerdefinierter XML-Elemente an Word-Inhalts Steuerelemente
  Sie können Inhaltssteuerelemente in einer Word-Projektmappe an Elemente in einem benutzerdefinierten XML-Element binden. Wenn ein Inhaltssteuerelement an ein benutzerdefiniertes XML-Element gebunden ist, werden die Daten im benutzerdefinierten XML-Element in der Benutzeroberfläche (User Interface, UI) des Inhaltssteuerelements angezeigt. Wenn ein Benutzer Text im Steuerelement bearbeitet, werden die entsprechenden XML-Elemente automatisch aktualisiert. Wenn Elementwerte in den benutzerdefinierten XML-Elementen geändert werden, zeigen die Inhaltssteuerelemente, die an die XML-Elemente gebunden sind, auf ähnliche Weise die neuen Daten an. Weitere Informationen finden Sie unter [Inhalts Steuerelemente](../vsto/content-controls.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [XML-Schemas und-Daten in Anpassungen auf Dokument Ebene](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
 - [Gewusst wie: Hinzufügen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokument Ebene](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 - [Gewusst wie: Hinzufügen von benutzerdefinierten XML-Elementen zu Dokumenten mithilfe von VSTO-Add-ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
-- [ContentControl-Elemente](../vsto/content-controls.md)
+- [Inhalts Steuerelemente](../vsto/content-controls.md)
 - [Exemplarische Vorgehensweise: Binden von Steuerelementen an benutzerdefinierte XML-Elemente](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)

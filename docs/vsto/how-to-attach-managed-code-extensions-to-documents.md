@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Anfügen von Erweiterungen durch verwalteten Code an Dokumente'
+description: Erfahren Sie, wie Sie eine Anpassungsassembly an ein vorhandenes Microsoft Office Word-Dokument oder Microsoft Office Excel-Arbeitsmappe anfügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f44b153ac7d55704ba649a7dc09860518a5e76b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1929daaa82dbfec6f58513bf94eefe01f9520601
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547523"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844387"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Gewusst wie: Anfügen von Erweiterungen durch verwalteten Code an Dokumente
   Sie können eine Anpassungsassembly an ein vorhandenes Microsoft Office Word-Dokument oder an Microsoft Office Excel-Arbeitsmappe anfügen. Das Dokument oder die Arbeitsmappe kann ein beliebiges Dateiformat aufweisen, das von den Microsoft Office Projekten und Entwicklungs Tools in Visual Studio unterstützt wird. Weitere Informationen finden Sie unter [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md).
