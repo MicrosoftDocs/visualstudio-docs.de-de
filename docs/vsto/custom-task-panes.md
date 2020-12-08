@@ -1,5 +1,7 @@
 ---
 title: Benutzerdefinierte Aufgabenbereiche
+description: Erfahren Sie, wie Sie mit benutzerdefinierten Aufgabenbereichen einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Schnittstelle für den Zugriff auf die Features Ihrer Lösung bereitstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862361"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844179"
 ---
 # <a name="custom-task-panes"></a>Benutzerdefinierte Aufgabenbereiche
   Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind. Mit benutzerdefinierten Aufgabenbereichen können Sie einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Oberfläche für den Zugriff auf die Funktionen Ihrer Projektmappe zur Verfügung stellen. Die Oberfläche kann beispielsweise Steuerelemente enthalten, die Code zum Ändern von Dokumenten oder zum Anzeigen von Daten aus einer Datenquelle ausführen.
@@ -215,7 +217,7 @@ ms.locfileid: "91862361"
 
 - [Microsoft.Office.Interop.PowerPoint.EApplication_Event. windowdeaktivieren](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
 - [Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menü Band Schaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

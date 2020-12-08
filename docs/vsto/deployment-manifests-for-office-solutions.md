@@ -1,5 +1,7 @@
 ---
 title: Bereitstellungs Manifeste für Office-Lösungen
+description: Erfahren Sie, dass ein Bereitstellungs Manifest eine XML-Datei ist, die die Bereitstellungs Einstellungen einer Office-Lösung beschreibt und die aktuelle Anwendungs Version identifiziert.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547549"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845504"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Bereitstellungs Manifeste für Office-Lösungen
   Ein Bereitstellungs Manifest ist eine XML-Datei, die die Bereitstellungs Einstellungen einer Office-Projekt Mappe beschreibt und die aktuelle Anwendungs Version angibt.

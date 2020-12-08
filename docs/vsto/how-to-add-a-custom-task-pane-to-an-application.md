@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung'
+description: Erfahren Sie, wie Sie den Anwendungen mithilfe des Visual Studio-Tools für Office-Add-Ins (VSTO) einen benutzerdefinierten Aufgabenbereich hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0df4d51795f01c98790f1d5b0525c45cc71899ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8056eddef6329aeb10ed5545c4146f0af0f167
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546210"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845049"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung
   Sie können den oben aufgeführten Anwendungen mithilfe des VSTO-Add-Ins einen benutzerdefinierten Aufgabenbereich hinzufügen. Weitere Informationen finden Sie unter [benutzerdefinierte Aufgaben](../vsto/custom-task-panes.md)Bereiche.

@@ -1,5 +1,7 @@
 ---
 title: Gemeinsame Entwicklung von Office-Lösungen
+description: Erfahren Sie, wie mehrere Entwickler an einem Office-Projekt genauso arbeiten können wie in anderen Visual Studio-Projekten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62949486"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845803"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Gemeinsame Entwicklung von Office-Lösungen
   Mehrere Entwickler können wie in anderen Visual Studio-Projekten an einem Office-Projekt arbeiten. Visual Studio sucht die Microsoft Office Installation ordnungsgemäß auf den einzelnen Computern, auch wenn Office an verschiedenen Standorten installiert ist. Es gibt jedoch einige wichtige Überlegungen, die zu beachten sind.
@@ -33,7 +35,7 @@ ms.locfileid: "62949486"
  Wenn das Projekt auf einer Netzwerkfreigabe statt in der Quell Code Verwaltung abgelegt ist, müssen einige zusätzliche Schritte ausgeführt werden, damit die zusammenarbeitenden Entwickler die Projekt Mappe öffnen und die Assembly testen können.
 
 ## <a name="source-control-requires-checking-out-all-files"></a>Die Quell Code Verwaltung erfordert das Auschecken aller Dateien.
- Wenn Sie die Quell Code Verwaltung für Ihre Projekte verwenden, sollten Sie jedes Mal, wenn Sie die Codedatei ändern (z. b. die Code Dateien *ThisDocument*, *ThisWorkbook*oder *ThisAddIn* ), alle Dateien **Projektmappen-Explorer** in einer Codedatei Auschecken, wenn Sie die Codedatei ändern, auch die Dateien, die standardmäßig ausgeblendet sind. Wenn Sie nur die Codedatei der obersten Ebene Auschecken, können Ihre Änderungen verloren gehen.
+ Wenn Sie die Quell Code Verwaltung für Ihre Projekte verwenden, sollten Sie jedes Mal, wenn Sie die Codedatei ändern (z. b. die Code Dateien *ThisDocument*, *ThisWorkbook* oder *ThisAddIn* ), alle Dateien **Projektmappen-Explorer** in einer Codedatei Auschecken, wenn Sie die Codedatei ändern, auch die Dateien, die standardmäßig ausgeblendet sind. Wenn Sie nur die Codedatei der obersten Ebene Auschecken, können Ihre Änderungen verloren gehen.
 
  Nachdem Sie die Änderungen vorgenommen haben, überprüfen Sie alle Dateien wieder in. Weitere Informationen zu ausgeblendeten Code Dateien in-Projekten finden Sie unter [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md).
 
@@ -42,7 +44,7 @@ ms.locfileid: "62949486"
 
  Die temporären Zertifikate, die automatisch zur Buildzeit generiert werden, werden nicht durch Kenn Wörter gesichert. Die Zertifikate enthalten den Anmelde Namen des Entwicklers und andere persönliche Informationen. Wenn Sie Anpassungen bereitstellen, die mit temporären Zertifikaten signiert sind, können andere möglicherweise auf diese Informationen zugreifen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
 - [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)

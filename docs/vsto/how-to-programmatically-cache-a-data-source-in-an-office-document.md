@@ -1,5 +1,7 @@
 ---
 title: Programm gesteuertes Zwischenspeichern von Datenquellen in Office-Dokumenten
+description: Erfahren Sie, wie Sie dem Daten Cache in einem Dokument Programm gesteuert ein Datenobjekt hinzufügen können, indem Sie die StartCaching-Methode eines Host Elements aufrufen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544767"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845011"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Vorgehensweise: Programm gesteuertes Zwischenspeichern einer Datenquelle in einem Office-Dokument
   Sie können dem Daten Cache in einem Dokument Programm gesteuert ein Datenobjekt hinzufügen, indem Sie die- `StartCaching` Methode eines-Host Elements aufrufen, <xref:Microsoft.Office.Tools.Word.Document> z <xref:Microsoft.Office.Tools.Excel.Workbook> . b <xref:Microsoft.Office.Tools.Excel.Worksheet> ., oder. Entfernen Sie ein Datenobjekt aus dem Daten Cache, indem Sie die- `StopCaching` Methode eines-Host Elements aufrufen.
@@ -54,7 +56,7 @@ ms.locfileid: "85544767"
     > [!NOTE]
     > Ruft nicht `StopCaching` vom-Ereignishandler für das- `Shutdown` Ereignis eines Dokuments oder Arbeitsblatts auf. Wenn das- `Shutdown` Ereignis ausgelöst wird, ist es zu spät, den Daten Cache zu ändern. Weitere Informationen zum `Shutdown` Ereignis finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Daten zwischenspeichern](../vsto/caching-data.md)
 - [Gewusst wie: Zwischenspeichern von Daten zur Offline Verwendung oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

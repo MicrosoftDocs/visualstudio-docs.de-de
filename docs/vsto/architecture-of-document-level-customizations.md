@@ -1,5 +1,7 @@
 ---
 title: Architektur von Anpassungen auf Dokument Ebene
+description: Erfahren Sie mehr über Aspekte von Anpassungen auf Dokument Ebene, einschließlich Anpassungs Komponenten und die Funktionsweise von Anpassungen mit Microsoft Office-Anwendungen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5028f5a9b16ecfc2461c0d29cbedb44be70a64c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a522446f9109d996088dff9389f267ef5ff39447
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926562"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845960"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektur von Anpassungen auf Dokument Ebene
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] enthält Projekte für das Erstellen von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel. In diesem Thema werden die folgenden Aspekte von Anpassungen auf Dokumentebene beschrieben:
@@ -61,7 +63,7 @@ ms.locfileid: "68926562"
 
 2. Der Designer (d. h. der Entwickler, der das Projekt erstellt, oder eine andere Person) bestimmt die endgültige Gestaltung des Dokuments für den Endbenutzer.
 
-#### <a name="runtime"></a>Typ
+#### <a name="runtime"></a>Laufzeit
  Zur Laufzeit werden die folgenden Schritte ausgeführt:
 
 1. Der Endbenutzer öffnet ein Dokument oder eine Arbeitsmappe, die Erweiterungen durch verwalteten Code besitzt.
@@ -91,11 +93,11 @@ ms.locfileid: "68926562"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Unterstützung für Word-Dokumente mit. XML-Dateinamen Erweiterungen
  Mit Projektvorlagen auf Dokumentebene können Sie keine Projekte erstellen, die auf den folgenden Dateiformaten basieren:
 
-- Word-XML-Dokument (* \* XML*).
+- Word-XML-Dokument (*\* XML*).
 
-- Word 2003 XML-Dokument (* \* XML*).
+- Word 2003 XML-Dokument (*\* XML*).
 
-  Wenn Sie möchten, dass die Endbenutzer Anpassungen in diesen Dateiformaten verwenden, erstellen Sie eine Anpassung, die eines der unterstützten Dateiformate aus der Tabelle oben verwendet, und stellen Sie diese Anpassung bereit. Nach der Installation der Anpassung können Endbenutzer das Dokument im XML-Format (Word XML* \* Document) oder**im XML-Format (Word \* *2003 XML Document) speichern, und die Anpassung funktioniert weiterhin wie erwartet.
+  Wenn Sie möchten, dass die Endbenutzer Anpassungen in diesen Dateiformaten verwenden, erstellen Sie eine Anpassung, die eines der unterstützten Dateiformate aus der Tabelle oben verwendet, und stellen Sie diese Anpassung bereit. Nach der Installation der Anpassung können Endbenutzer das Dokument im XML-Format (Word XML *\* Document) oder**im XML-Format (Word \** 2003 XML Document) speichern, und die Anpassung funktioniert weiterhin wie erwartet.
 
 ## <a name="components-of-customizations"></a><a name="Components"></a> Komponenten von Anpassungen
  Die Hauptkomponenten einer Anpassung sind das Dokument und die Assembly. Es gibt zudem mehrere andere Komponenten, die beeinflussen, wie Microsoft Office-Anwendungen Anpassungen finden und laden.
@@ -109,7 +111,7 @@ ms.locfileid: "68926562"
  Weitere Informationen finden Sie unter [Übersicht über die Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 ## <a name="how-customizations-work-with-microsoft-office-applications"></a><a name="HowCustomizationsWork"></a> Funktionsweise von Anpassungen mit Microsoft Office Anwendungen
- Wenn ein Benutzer ein Dokument öffnet, das Teil einer Anpassung für Microsoft Office ist, verwendet die Anwendung das mit dem Dokument verknüpfte Bereitstellungsmanifest, um die aktuelle Version der Anpassungsassembly zu finden und zu laden. Der Speicherort des Bereitstellungs Manifests wird in einer benutzerdefinierten Dokument Eigenschaft namens **assemblylocation**gespeichert. Die Zeichenfolge, die diesen Speicherort angibt, wird in die Eigenschaft eingefügt, wenn Sie die Projektmappe erstellen.
+ Wenn ein Benutzer ein Dokument öffnet, das Teil einer Anpassung für Microsoft Office ist, verwendet die Anwendung das mit dem Dokument verknüpfte Bereitstellungsmanifest, um die aktuelle Version der Anpassungsassembly zu finden und zu laden. Der Speicherort des Bereitstellungs Manifests wird in einer benutzerdefinierten Dokument Eigenschaft namens **assemblylocation** gespeichert. Die Zeichenfolge, die diesen Speicherort angibt, wird in die Eigenschaft eingefügt, wenn Sie die Projektmappe erstellen.
 
  Das Bereitstellungsmanifest verweist auf das Anwendungsmanifest, das wiederum auf die aktuelle Assembly verweist. Weitere Informationen finden Sie unter [Anwendungs-und Bereitstellungs Manifeste in Office-](../vsto/application-and-deployment-manifests-in-office-solutions.md)Projektmappen.
 
@@ -125,7 +127,7 @@ ms.locfileid: "68926562"
 
 1. Die Microsoft Office-Anwendung prüft anhand der benutzerdefinierten Dokumenteigenschaften, ob dem Dokument Erweiterungen durch verwalteten Code zugeordnet sind. Weitere Informationen finden Sie unter [Übersicht über benutzerdefinierte Dokumenteigenschaften](../vsto/custom-document-properties-overview.md).
 
-2. Wenn Erweiterungen durch verwalteten Code vorhanden sind, lädt die Anwendung *VSTOEE.dll*, das *VSTOLoader.dll*lädt. Hierbei handelt es sich um nicht verwaltete DLLs, die die Lade Komponenten für Visual Studio 2010-Tools für Office-Laufzeit sind. Weitere Informationen finden Sie unter [Visual Studio-Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. Wenn Erweiterungen durch verwalteten Code vorhanden sind, lädt die Anwendung *VSTOEE.dll*, das *VSTOLoader.dll* lädt. Hierbei handelt es sich um nicht verwaltete DLLs, die die Lade Komponenten für Visual Studio 2010-Tools für Office-Laufzeit sind. Weitere Informationen finden Sie unter [Visual Studio-Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 3. *VSTOLoader.dll* lädt den [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] und startet den verwalteten Teil von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
@@ -141,7 +143,7 @@ ms.locfileid: "68926562"
 
 9. Die Anpassungsassembly wird von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ruft den **Startup** -Ereignishandler in der Anpassungsassembly auf. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Übersicht über Visual Studio-Tools für Office-Laufzeit](../vsto/visual-studio-tools-for-office-runtime-overview.md)

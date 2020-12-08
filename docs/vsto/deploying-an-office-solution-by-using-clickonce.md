@@ -1,5 +1,7 @@
 ---
 title: Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce
+description: Erfahren Sie, wie Sie Ihre Office-Projekt Mappe in weniger Schritten bereitstellen können, wenn Sie ClickOnce verwenden. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809348"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845647"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Daher sollten Sie die Verwendung von Windows Installer (*. msi*) in Erwägung gezogen, wenn die Projekt Mappe von mehreren Benutzern auf dem gleichen Computer ausgeführt wird.
@@ -46,15 +48,15 @@ ms.locfileid: "90809348"
   Weitere Informationen zum Bereitstellen einer Office-Projekt Mappe durch Erstellen einer Windows Installer Datei finden Sie unter Bereitstellen einer Office-Projekt Mappe [mithilfe Windows Installer](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md).
 
 ## <a name="publish-the-solution"></a><a name="Publish"></a> Veröffentlichen der Projekt Mappe
- Sie können die Projekt Mappe mit dem **Webpublishing-Assistenten** oder dem **Projekt-Designer**veröffentlichen. In diesem Verfahren verwenden Sie den Projekt- **Designer** , da er den gesamten Satz von Veröffentlichungs Optionen bereitstellt. Informationen finden Sie [unter Veröffentlichungs-Assistent &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).
+ Sie können die Projekt Mappe mit dem **Webpublishing-Assistenten** oder dem **Projekt-Designer** veröffentlichen. In diesem Verfahren verwenden Sie den Projekt- **Designer** , da er den gesamten Satz von Veröffentlichungs Optionen bereitstellt. Informationen finden Sie [unter Veröffentlichungs-Assistent &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).
 
 #### <a name="to-publish-the-solution"></a>So veröffentlichen Sie die Projektmappe
 
-1. Wählen Sie in **Projektmappen-Explorer**den Knoten aus, der für Ihr Projekt benannt ist.
+1. Wählen Sie in **Projektmappen-Explorer** den Knoten aus, der für Ihr Projekt benannt ist.
 
-2. Wählen Sie in der Menüleiste **Projekt, Projekt** *Name* **Eigenschaften**aus.
+2. Wählen Sie in der Menüleiste **Projekt, Projekt** *Name* **Eigenschaften** aus.
 
-3. Wählen Sie im **Projekt-Designer**die Registerkarte **veröffentlichen** aus, die in der folgenden Abbildung gezeigt wird.
+3. Wählen Sie im **Projekt-Designer** die Registerkarte **veröffentlichen** aus, die in der folgenden Abbildung gezeigt wird.
 
     ![Registerkarte "Veröffentlichen" im Projekt-Designer](../vsto/media/vsto-publishtab.png "Registerkarte "Veröffentlichen" im Projekt-Designer")
 
@@ -64,9 +66,9 @@ ms.locfileid: "90809348"
 
    - Ein lokaler Pfad (z. b. *c:\foldername\foldername*).
 
-   - Ein UNC-Pfad (Uniform Naming Convention) zu einem Ordner im Netzwerk (z. b. * \\ \servername\foldername*).
+   - Ein UNC-Pfad (Uniform Naming Convention) zu einem Ordner im Netzwerk (z. b. *\\ \servername\foldername*).
 
-   - Ein relativer Pfad (z. b. " *publishfolder \\ *", bei dem es sich um den Ordner handelt, in dem das Projekt standardmäßig veröffentlicht wird).
+   - Ein relativer Pfad (z. b. " *publishfolder \\*", bei dem es sich um den Ordner handelt, in dem das Projekt standardmäßig veröffentlicht wird).
 
 5. Geben Sie im Feld **URL des Installations Ordners** den voll qualifizierten Pfad des Speicher Orts ein, an dem die Endbenutzer Ihre Lösung finden.
 
@@ -85,11 +87,11 @@ ms.locfileid: "90809348"
     > [!NOTE]
     > Standardmäßig wird dieses Kontrollkästchen nicht angezeigt. Damit es angezeigt wird, müssen Sie ein Bootstrapperpaket erstellen. Weitere Informationen finden [Sie unter Erstellen eines Bootstrapperpakets für ein Office 2013 VSTO-Add-in mit Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
 
-10. Wählen Sie unter **Installationsort für**erforderliche Komponenten angeben eine der angezeigten Optionen aus, und klicken Sie dann auf die Schaltfläche **OK** .
+10. Wählen Sie unter **Installationsort für** erforderliche Komponenten angeben eine der angezeigten Optionen aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
      In der folgenden Tabelle sind die einzelnen Optionen beschrieben.
 
-    |Option|Beschreibung|
+    |Option|BESCHREIBUNG|
     |------------|-----------------|
     |**Erforderliche Komponenten von der Website des Komponentenherstellers herunterladen**|Der Benutzer wird aufgefordert, diese erforderlichen Komponenten vom Hersteller herunterzuladen und zu installieren.|
     |**Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**|Die erforderliche Software wird mit der Projektmappe installiert. Wenn Sie diese Option auswählen, kopiert Visual Studio alle erforderlichen Pakete für Sie an den Veröffentlichungsort. Damit diese Option funktioniert, müssen sich die erforderlichen Pakete auf dem Entwicklungscomputer befinden.|
@@ -151,11 +153,11 @@ ms.locfileid: "90809348"
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>So fügen Sie den .vsto-MIME-Typ zu IIS 6.0 hinzu
 
-1. Wählen Sie auf dem Server, auf dem IIS 6,0 ausgeführt wird, **Start**  >  **Alle Programme**  >  **Verwaltungs Tools**  >   **Internetinformationsdienste (IIS)-Manager**aus.
+1. Wählen Sie auf dem Server, auf dem IIS 6,0 ausgeführt wird, **Start**  >  **Alle Programme**  >  **Verwaltungs Tools**  >   **Internetinformationsdienste (IIS)-Manager** aus.
 
 2. Wählen Sie den Computernamen, **den Ordner "Websites"** oder die Website aus, die Sie konfigurieren.
 
-3. Wählen Sie in der Menüleiste **Aktions**  >  **Eigenschaften**aus.
+3. Wählen Sie in der Menüleiste **Aktions**  >  **Eigenschaften** aus.
 
 4. Wählen Sie auf der Registerkarte **http-Header** die Schaltfläche **MIME-Typen** aus.
 
@@ -168,7 +170,7 @@ ms.locfileid: "90809348"
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>So fügen Sie den .vsto-MIME-Typ zu IIS 7,0 hinzu
 
-1. Wählen Sie auf dem Server, auf dem IIS 7,0 ausgeführt wird, **Start**  >  **Alle Programme**  >  **Zubehör**aus.
+1. Wählen Sie auf dem Server, auf dem IIS 7,0 ausgeführt wird, **Start**  >  **Alle Programme**  >  **Zubehör** aus.
 
 2. Öffnen Sie das Kontextmenü für die **Eingabeaufforderung**, und wählen Sie dann  **als Administrator ausführen aus.**
 
@@ -194,15 +196,15 @@ ms.locfileid: "90809348"
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Erstellen einer Klasse, in der die Aktion nach der Bereitstellung definiert wird
 
-1. Wählen Sie in der Menüleiste **Datei**  >  **Hinzufügen**  >  **Neues Projekt**aus.
+1. Wählen Sie in der Menüleiste **Datei**  >  **Hinzufügen**  >  **Neues Projekt** aus.
 
 2. Wählen Sie im Dialogfeld **Neues Projekt hinzufügen** im Bereich **installierte Vorlagen** den Ordner **Windows** aus.
 
 3. Wählen Sie im Bereich **Vorlagen** die Vorlage **Klassenbibliothek** aus.
 
-4. Geben Sie im Feld **Name den Namen** **FileCopyPDA**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Geben Sie im Feld **Name den Namen** **FileCopyPDA** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Wählen Sie in **Projektmappen-Explorer**das Projekt **FileCopyPDA** aus.
+5. Wählen Sie in **Projektmappen-Explorer** das Projekt **FileCopyPDA** aus.
 
 6. Wählen Sie in der Menüleiste die Optionen **Projekt** > **Verweis hinzufügen** aus.
 
@@ -221,23 +223,23 @@ ms.locfileid: "90809348"
 
 ### <a name="build-and-publish-the-solution"></a>Erstellen und Veröffentlichen der Projektmappe
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **FileCopyPDA** , und wählen Sie dann **Erstellen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **FileCopyPDA** , und wählen Sie dann **Erstellen** aus.
 
-2. Öffnen Sie das Kontextmenü für das Projekt **ExcelWorkbook** , und wählen Sie dann **Erstellen**aus.
+2. Öffnen Sie das Kontextmenü für das Projekt **ExcelWorkbook** , und wählen Sie dann **Erstellen** aus.
 
-3. Öffnen Sie das Kontextmenü für das Projekt **ExcelWorkbook** , und wählen Sie dann **Verweis hinzufügen**aus.
+3. Öffnen Sie das Kontextmenü für das Projekt **ExcelWorkbook** , und wählen Sie dann **Verweis hinzufügen** aus.
 
-4. Wählen Sie im Dialogfeld **Verweis hinzufügen** die Registerkarte **Projekte** aus, wählen Sie **FileCopyPDA**aus, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Wählen Sie im Dialogfeld **Verweis hinzufügen** die Registerkarte **Projekte** aus, wählen Sie **FileCopyPDA** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Wählen Sie in **Projektmappen-Explorer**das Projekt **ExcelWorkbook** aus.
+5. Wählen Sie in **Projektmappen-Explorer** das Projekt **ExcelWorkbook** aus.
 
-6. Wählen Sie in der Menüleiste die Option **Projekt**  >  **neuer Ordner**aus.
+6. Wählen Sie in der Menüleiste die Option **Projekt**  >  **neuer Ordner** aus.
 
-7. Geben Sie **Daten**ein, und drücken Sie dann die **Eingabe** Taste.
+7. Geben Sie **Daten** ein, und drücken Sie dann die **Eingabe** Taste.
 
-8. Wählen Sie in **Projektmappen-Explorer**den Ordner **Data** aus.
+8. Wählen Sie in **Projektmappen-Explorer** den Ordner **Data** aus.
 
-9. Wählen Sie in der Menüleiste die Option **Projekt**  >  **Vorhandenes Element hinzufügen**aus.
+9. Wählen Sie in der Menüleiste die Option **Projekt**  >  **Vorhandenes Element hinzufügen** aus.
 
 10. Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zum Ausgabeverzeichnis für das Projekt **ExcelWorkbook** , wählen Sie die Datei **ExcelWorkbook.xlsx** aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
@@ -253,7 +255,7 @@ ms.locfileid: "90809348"
 
 ### <a name="modify-the-application-manifest"></a>Ändern des Anwendungsmanifests
 
-1. Öffnen Sie das Projektmappenverzeichnis **c:\publish**, indem Sie den **Datei-Explorer**verwenden.
+1. Öffnen Sie das Projektmappenverzeichnis **c:\publish**, indem Sie den **Datei-Explorer** verwenden.
 
 2. Öffnen Sie den Ordner **Anwendungs Dateien** , und öffnen Sie dann den Ordner, der der neuesten veröffentlichten Version der Lösung entspricht.
 
@@ -280,7 +282,7 @@ ms.locfileid: "90809348"
 
 ### <a name="re-sign-the-application-and-deployment-manifests"></a>Erneutes Signieren der Anwendungs- und Bereitstellungsmanifeste
 
-1. Kopieren Sie im Ordner **%USERPROFILE%\Documents\Visual Studio 2013 \ project\excelworkbook\excelworkbook** die Zertifikat Datei **ExcelWorkbook_TemporaryKey. pfx** , und fügen Sie Sie in den Ordner *publishfolder* **\anwendungsdateien\excelarbeitsmappe**Ordner " \_ _fistrecentpublishedversion_ " ein.
+1. Kopieren Sie im Ordner **%USERPROFILE%\Documents\Visual Studio 2013 \ project\excelworkbook\excelworkbook** die Zertifikat Datei **ExcelWorkbook_TemporaryKey. pfx** , und fügen Sie Sie in den Ordner *publishfolder* **\anwendungsdateien\excelarbeitsmappe** Ordner " \_ _fistrecentpublishedversion_ " ein.
 
 2. Öffnen Sie die Visual Studio-Eingabeaufforderung, und ändern Sie dann die Verzeichnisse in den Ordner **c:\publish\anwendungsdateien\excelarbeitsmappe** \_ _MostRecentPublishedVersion_ (z. b. **c:\publish\anwendungsdateien \ ExcelWorkbook_1_0_0_4**).
 
@@ -342,18 +344,18 @@ ms.locfileid: "90809348"
 
  *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- Wenn sich das Tool nicht an diesem Speicherort befindet, können Sie den Registrierungsschlüssel **HKEY_LOCAL_MACHINE \software\microsoft\vsto Runtime setup\v4\installerpath** oder **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\vsto Runtime setup\v4\installerpath** verwenden, um den Pfad zu diesem Tool zu suchen.
+ Wenn sich das Tool nicht an diesem Speicherort befindet, können Sie die **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** oder **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** Registrierungsschlüssel verwenden, um den Pfad zu diesem Tool zu suchen.
 
- Mit *VSTOinstaller.exe*können Sie die folgenden Parameter verwenden.
+ Mit *VSTOinstaller.exe* können Sie die folgenden Parameter verwenden.
 
 | Parameter | Definition |
 |------------------| - |
-| /Install oder /I | Installation der Projektmappe. Dieser Option muss der Pfad eines Bereitstellungsmanifests folgen. Sie können einen Pfad auf dem lokalen Computer angeben, eine Universal Naming Convention (UNC)-Dateifreigabe. Sie können einen lokalen Pfad (*c:\ordnername\publishfolder*), einen relativen Pfad (*Publish \\ *) oder einen voll qualifizierten Speicherort (* \\ \servername\foldername* oder http://<em>Servername/FolderName</em>) angeben. |
-| /Uninstall oder /U | Deinstallation der Projektmappe. Dieser Option muss der Pfad eines Bereitstellungsmanifests folgen. Sie können einen Pfad auf dem lokalen Computer, eine UNC-Dateifreigabe, angeben. Sie können einen lokalen Pfad (*c:\ordnername\publishfolder*), einen relativen Pfad (*Publish \\ *) oder einen voll qualifizierten Speicherort (* \\ \servername\foldername* oder http://<em>Servername/FolderName</em>) angeben. |
+| /Install oder /I | Installation der Projektmappe. Dieser Option muss der Pfad eines Bereitstellungsmanifests folgen. Sie können einen Pfad auf dem lokalen Computer angeben, eine Universal Naming Convention (UNC)-Dateifreigabe. Sie können einen lokalen Pfad (*c:\ordnername\publishfolder*), einen relativen Pfad (*Publish \\*) oder einen voll qualifizierten Speicherort (*\\ \servername\foldername* oder http://<em>Servername/FolderName</em>) angeben. |
+| /Uninstall oder /U | Deinstallation der Projektmappe. Dieser Option muss der Pfad eines Bereitstellungsmanifests folgen. Sie können einen Pfad auf dem lokalen Computer, eine UNC-Dateifreigabe, angeben. Sie können einen lokalen Pfad (*c:\ordnername\publishfolder*), einen relativen Pfad (*Publish \\*) oder einen voll qualifizierten Speicherort (*\\ \servername\foldername* oder http://<em>Servername/FolderName</em>) angeben. |
 | /Silent oder /S | Installation bzw. Deinstallation, ohne dass der Benutzer zu einer Eingabe aufgefordert wird oder Meldungen angezeigt werden. Wenn eine Vertrauensstellungs Aufforderung erforderlich ist, wird die Anpassung nicht installiert oder aktualisiert. |
 | /Help oder /? | Anzeigen der Hilfeinformationen. |
 
- Wenn Sie *VSTOinstaller.exe*ausführen, werden möglicherweise die folgenden Fehlercodes angezeigt.
+ Wenn Sie *VSTOinstaller.exe* ausführen, werden möglicherweise die folgenden Fehlercodes angezeigt.
 
 |Fehlercode|Definition|
 |----------------|----------------|
@@ -410,11 +412,11 @@ ms.locfileid: "90809348"
 
 #### <a name="to-update-the-_assemblylocation-property-in-a-document"></a>So aktualisieren Sie die _AssemblyLocation-Eigenschaft in einem Dokument
 
-1. Wählen Sie auf der Registerkarte **Datei** die Option **Info**aus, die in der folgenden Abbildung gezeigt wird.
+1. Wählen Sie auf der Registerkarte **Datei** die Option **Info** aus, die in der folgenden Abbildung gezeigt wird.
 
      ![Registerkarte "Informationen" in Excel](../vsto/media/vsto-infotab.png "Registerkarte "Informationen" in Excel")
 
-2. Wählen Sie in der Liste **Eigenschaften** die Option **Erweiterte Eigenschaften**aus, die in der folgenden Abbildung dargestellt sind.
+2. Wählen Sie in der Liste **Eigenschaften** die Option **Erweiterte Eigenschaften** aus, die in der folgenden Abbildung dargestellt sind.
 
      !["Erweiterte Eigenschaften" in Excel.](../vsto/media/vsto-advanceddocumentproperties.png ""Erweiterte Eigenschaften" in Excel.")
 

@@ -1,5 +1,7 @@
 ---
 title: Anpassen eines Menübands für InfoPath
+description: Wenn Sie das Menüband in Microsoft Office InfoPath anpassen, müssen Sie in Erwägung ziehen, wo das benutzerdefinierte Menüband in der Anwendung angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255509"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844166"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Anpassen eines Menübands für InfoPath
   Beim Anpassen des Menübands in Microsoft Office InfoPath müssen Sie berücksichtigen, wo das benutzerdefinierte Menüband in der Anwendung angezeigt wird. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] kann das Menüband in den folgenden drei Typen von InfoPath-Anwendungsfenstern anzeigen:
@@ -36,7 +38,7 @@ ms.locfileid: "71255509"
   Im Seitenansichtsfenster können Designer und Benutzer, die Seiten eines Formulars oder einer Formularvorlage vor dem Drucken in der Vorschau anzeigen.
 
 > [!NOTE]
-> Die Registerkarte **Add-Ins** wird im Seitenansichtsfenster nicht angezeigt. Wenn eine benutzerdefinierte Registerkarte im Seitenansichtsfenster angezeigt werden soll, stellen Sie sicher, dass die **OfficeId** -Eigenschaft der Registerkarte nicht auf **TabAddIns**festgelegt ist.
+> Die Registerkarte **Add-Ins** wird im Seitenansichtsfenster nicht angezeigt. Wenn eine benutzerdefinierte Registerkarte im Seitenansichtsfenster angezeigt werden soll, stellen Sie sicher, dass die **OfficeId** -Eigenschaft der Registerkarte nicht auf **TabAddIns** festgelegt ist.
 
  Sie müssen den Menübandtyp jedes Fensters angeben, in denen das Menüband angezeigt werden soll.
 

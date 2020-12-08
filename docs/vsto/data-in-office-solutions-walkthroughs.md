@@ -1,5 +1,7 @@
 ---
 title: Exemplarische Vorgehensweisen für Daten in Office-Lösungen
+description: Erfahren Sie, wie Sie mit Daten in Anpassungen auf Dokument Ebene und VSTO-Add-Ins für Microsoft Word und Microsoft Excel arbeiten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62956029"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845582"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Exemplarische Vorgehensweisen für Daten in Office-Lösungen
   In den folgenden exemplarischen Vorgehensweisen wird das Arbeiten mit Daten in Anpassungen auf Dokumentebene und in VSTO-Add-Ins für Microsoft Office Word und Microsoft Office Excel veranschaulicht.
@@ -47,7 +49,7 @@ ms.locfileid: "62956029"
 
 - Exemplarische Vorgehensweise [: Ändern von zwischengespeicherten Daten in einer Arbeitsmappe auf einem Server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) Veranschaulicht, wie ein DataSet, das in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, geändert werden kann, ohne Excel zu starten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)
 - [Exemplarische Vorgehensweisen mit Excel](../vsto/walkthroughs-using-excel.md)
 - [Exemplarische Vorgehensweisen zur Anpassung von Office](../vsto/office-ui-customization-walkthroughs.md)

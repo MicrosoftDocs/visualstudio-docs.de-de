@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Zwischenspeichern von Daten in einem Kenn Wort geschützten Dokument'
+description: Wenn Sie dem Daten Cache in einem Dokument oder einer Arbeitsmappe, die mit einem Kennwort geschützt ist, Daten hinzufügen, können Sie Änderungen an den zwischengespeicherten Daten speichern, indem Sie zwei Methoden in Ihrem Projekt überschreiben.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547237"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845998"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Vorgehensweise: Zwischenspeichern von Daten in einem Kenn Wort geschützten Dokument
   Wenn Sie dem Daten Cache in einem Dokument oder einer Arbeitsmappe, das mit einem Kennwort geschützt ist, Daten hinzufügen, werden Änderungen an den zwischengespeicherten Daten nicht automatisch gespeichert. Sie können Änderungen an den zwischengespeicherten Daten speichern, indem Sie zwei Methoden in Ihrem Projekt überschreiben.

@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten'
+description: Wenn Sie ein sich wiederholendes XML-Schema Element einem Microsoft Office Word-Dokument zuordnen, fügt Visual Studio dem Dokument automatisch ein XMLNodes-Steuerelement hinzu.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95fc165c1a3123d68529f6ccaea99fea963c2a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256c62fc69be2c057d3ffc2588577fa87910c161
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543493"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844438"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Gewusst wie: Hinzufügen von XMLNodes-Steuerelementen zu Word-Dokumenten
   **Wichtig** Die Informationen, die in diesem Thema in Bezug auf Microsoft Word beschrieben werden, werden exklusiv für den Vorteil und die Verwendung von Einzelpersonen und Organisationen präsentiert, die sich außerhalb der USA und ihrer Gebiete befinden oder Programme verwenden, die unter, Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden Diese Informationen zu Microsoft Word werden möglicherweise nicht von Einzelpersonen oder Organisationen in den USA oder deren Territorien gelesen oder verwendet, die von Microsoft Word-Produkten verwendet werden, die nach dem 10. Januar 2010 von Microsoft lizenziert wurden. Diese Produkte Verhalten sich nicht identisch mit Produkten, die vor diesem Datum lizenziert sind, oder für die Verwendung außerhalb der USA lizenziert und lizenziert wurden.
@@ -67,7 +69,7 @@ ms.locfileid: "85543493"
 
      Ein <xref:Microsoft.Office.Tools.Word.XMLNodes> -Steuerelement wird erstellt und dem Projekt hinzugefügt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md)
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

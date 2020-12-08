@@ -1,5 +1,7 @@
 ---
 title: Stapel Rahmen | Microsoft-Dokumentation
+description: In diesem Artikel werden die Definition und die Rolle eines Stapel Rahmens in der Debugger-Architektur in Visual Studio beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab2c891002ad90d767a4c5ca9efffd3f3d1d10ee
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712842"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845205"
 ---
 # <a name="stack-frames"></a>Stapel Rahmen
 In der Debugger-Architektur ein *Stapel Rahmen*:
@@ -30,7 +32,7 @@ In der Debugger-Architektur ein *Stapel Rahmen*:
 
 - Wird durch eine [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) -Schnittstelle dargestellt, die in der Regel durch eine Debug-Engine (de) oder eine virtuelle Maschine erstellt wird, wenn ein Thread ausgeführt wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md)
 - [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)
 - [Debug-Engine](../../extensibility/debugger/debug-engine.md)

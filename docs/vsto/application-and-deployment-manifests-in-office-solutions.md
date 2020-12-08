@@ -1,5 +1,7 @@
 ---
 title: Anwendungs-und Bereitstellungs Manifeste in Office-Lösungen
+description: Erfahren Sie, wie ein Anwendungs Manifest eine XML-Datei ist, die Informationen bereitstellt, die von einer Office-Projekt Mappe zum Suchen und Aktualisieren der Assemblys verwendet werden
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9ca8cf2774b7a24ec3bef40418b6a2157bf0f992
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584437"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844711"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Anwendungs-und Bereitstellungs Manifeste in Office-Lösungen
   Ein Anwendungsmanifest ist eine XML-Datei, über die Informationen bereitgestellt werden, mit denen eine Office-Projektmappe nach ihren Assemblys sucht und diese aktualisiert. Ein Anwendungsmanifest kann zusammen mit einem Bereitstellungsmanifest verwendet werden. Dabei handelt es sich um eine XML-Datei, die auf dem Server gespeichert ist und die Informationen bereitstellt, die zum Auffinden der aktuellsten Version des Anwendungsmanifests und der Assemblys verwendet werden.
@@ -36,11 +38,11 @@ ms.locfileid: "91584437"
 ## <a name="create-application-and-deployment-manifests"></a>Anwendungs-und Bereitstellungs Manifeste erstellen
  Anwendungsmanifeste werden automatisch als Teil des Buildprozesses erstellt. Bei jeder Erstellung eines Projekts auf Dokumentebene wird der Speicherort des Bereitstellungsmanifests als benutzerdefinierte Dokumenteigenschaft in das Dokument eingebettet. Für VSTO-Add-Ins wird der Speicherort des Bereitstellungsmanifests in der Registrierung gespeichert.
 
- Weitere Informationen zum **Webpublishing-Assistenten**finden Sie unter Bereitstellen einer Office-Projekt Mappe [mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
+ Weitere Informationen zum **Webpublishing-Assistenten** finden Sie unter Bereitstellen einer Office-Projekt Mappe [mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
  Weitere Informationen zur Funktionsweise von Manifesten mit Office-Lösungen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

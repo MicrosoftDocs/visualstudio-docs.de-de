@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes schließen von Arbeitsmappen'
+description: Erfahren Sie, wie Sie die aktive Arbeitsmappe schließen können, oder Sie können eine Arbeitsmappe angeben, die Programm gesteuert geschlossen werden soll.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13b487054e4e8a12c2479ddfc167ca0b8e90285a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547497"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846063"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>Vorgehensweise: Programm gesteuertes schließen von Arbeitsmappen
   Sie können die aktive Arbeitsmappe schließen, oder eine Arbeitsmappe angeben, die geschlossen werden soll.
@@ -52,7 +54,7 @@ ms.locfileid: "85547497"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)
 - [Vorgehensweise: Programm gesteuertes Speichern von Arbeitsmappen](../vsto/how-to-programmatically-save-workbooks.md)
 - [Gewusst wie: Programm gesteuertes Öffnen von Arbeitsmappen](../vsto/how-to-programmatically-open-workbooks.md)

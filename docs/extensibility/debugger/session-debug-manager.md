@@ -1,5 +1,7 @@
 ---
 title: Sitzungs-Debug-Manager | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Session Debug Manager, der mehrere Debug-engines zum Debuggen von Programmen in mehreren Prozessen auf einer beliebigen Anzahl von Computern verwaltet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953b4e948ef5e21531a3e73bceed3a363ed3cec5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712887"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845283"
 ---
 # <a name="session-debug-manager"></a>Sitzungs-Debug-Manager
 Der sitzungsdebug-Manager (SDM) verwaltet eine beliebige Anzahl von Debugmodulen (de), die eine beliebige Anzahl von Programmen in mehreren Prozessen auf einer beliebigen Anzahl von Computern Debuggen. Die SDM ist nicht nur ein Debug Engine Multiplexer, sondern bietet eine einheitliche Ansicht der Debugsitzung für die IDE.
@@ -36,7 +38,7 @@ Der sitzungsdebug-Manager (SDM) verwaltet eine beliebige Anzahl von Debugmodulen
 
  Der SDM verfolgt das aktuelle Programm, den Thread oder den Stapel Rahmen nicht. Prozess-, Programm-und Thread Informationen werden in Verbindung mit bestimmten debuggingereignissen an die SDM gesendet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Debug-Engine](../../extensibility/debugger/debug-engine.md)
 - [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)
 - [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md)

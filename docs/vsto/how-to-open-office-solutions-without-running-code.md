@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Öffnen von Office-Projektmappen ohne Ausführen von Code'
+description: Erfahren Sie, wie Sie ein Dokument oder eine Arbeitsmappe öffnen können, die Erweiterungen durch verwalteten Code enthält, ohne den Assemblycode ausführen
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543480"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844919"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Gewusst wie: Öffnen von Office-Projektmappen ohne Ausführen von Code
   Eine Microsoft Office Lösung, die mit Erweiterungen für verwalteten Code erstellt wurde, wird auch dann ausgeführt, wenn die Sicherheitseinstellung in der Office-Anwendung des Endbenutzers auf hoch festgelegt ist Dies liegt daran, dass die .net-Assemblycode-Sicherheit vom Microsoft .NET Framework verwaltet wird, nicht durch Microsoft Office.
@@ -49,7 +51,7 @@ ms.locfileid: "85543480"
 
      Wenn die Lösung von mehreren Personen verwendet wird, verhindert diese Methode, dass die Lösung für alle ausgeführt wird. Dies kann hilfreich sein, wenn ein Problem im Code oder auf einem Server gefunden wird, auf den verwiesen wird, und Sie alle Benutzer daran hindern möchten, Sie auszuführen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
