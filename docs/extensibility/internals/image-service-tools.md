@@ -1,5 +1,7 @@
 ---
 title: Image Service-Tools | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Tools, die im Visual Studio SDK bereitgestellt werden und Ihnen helfen, Erweiterungen mit dem Visual Studio-Image Dienst zu erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f5f1ff7cd573ff2524d35afc268858855540526
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9988b32d693fe9d65d70543a0f3d1da9a69959db
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707707"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761126"
 ---
 # <a name="image-service-tools"></a>Tools für Bilddienste
 Das vs SDK umfasst mehrere Tools, mit denen Erweiterungs Generatoren den Visual Studio-Image Dienst verwenden können.

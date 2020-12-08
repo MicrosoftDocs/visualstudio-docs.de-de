@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Implementieren von in einem Projekt unter fallenen Projekten | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie in Visual Studio durch das Durchführen von Ereignissen aus den Projektmappen-und übergeordneten Projekten eine Projekt Hierarchie erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85a5c14196211a638cd830ac6df39570288aa831
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905354"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761336"
 ---
 # <a name="how-to-implement-nested-projects"></a>Gewusst wie: Implementieren von in einem Projekt unter fallenen Projekten
 
@@ -27,7 +29,7 @@ Wenn Sie einen Typ für einen in einem Projekt erstellten Typ erstellen, müssen
 1. Die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) lädt die Projektdatei und die Startinformationen des übergeordneten Projekts durch Aufrufen der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle. Das übergeordnete Projekt wird erstellt und der Projekt Mappe hinzugefügt.
 
     > [!NOTE]
-    > An diesem Punkt ist es zu früh im Prozess, bis das übergeordnete Projekt das untergeordnete Projekt erstellt hat, da das übergeordnete Projekt erstellt werden muss, bevor die untergeordneten Projekte erstellt werden können. Nach dieser Sequenz kann das übergeordnete Projekteinstellungen auf die untergeordneten Projekte anwenden, und die untergeordneten Projekte können bei Bedarf Informationen aus den übergeordneten Projekten abrufen. Diese Sequenz ist, wenn Sie von Clients wie der Quell Code Verwaltung (Quell Code Verwaltung, SCC) und **Projektmappen-Explorer**benötigt wird.
+    > An diesem Punkt ist es zu früh im Prozess, bis das übergeordnete Projekt das untergeordnete Projekt erstellt hat, da das übergeordnete Projekt erstellt werden muss, bevor die untergeordneten Projekte erstellt werden können. Nach dieser Sequenz kann das übergeordnete Projekteinstellungen auf die untergeordneten Projekte anwenden, und die untergeordneten Projekte können bei Bedarf Informationen aus den übergeordneten Projekten abrufen. Diese Sequenz ist, wenn Sie von Clients wie der Quell Code Verwaltung (Quell Code Verwaltung, SCC) und **Projektmappen-Explorer** benötigt wird.
 
      Das übergeordnete Projekt muss warten, bis die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> Methode von der IDE aufgerufen wird, bevor das zugehörige (untergeordnete) Projekt oder die zugehörigen Projekte erstellt werden können.
 

@@ -1,5 +1,7 @@
 ---
-title: IDE-definierte Befehle, Menüs und Gruppen | Microsoft-Dokumentation
+title: IDE-Defined Befehle, Menüs und Gruppen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Menüs, Befehle und Befehls Gruppen, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio definiert sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707717"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761022"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE-definierte Befehle, Menüs und Gruppen
 Viele Menüs, Befehle und Befehls Gruppen sind bereits für die Verwendung durch die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE definiert. Diese Befehle sind auch für ihre Verwendung verfügbar, wenn Sie erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="finding-environment-defined-commands"></a>Suchen von Umgebungs definierten Befehlen
+## <a name="finding-environment-defined-commands"></a>Suchen nach Environment-Defined-Befehlen
  Die Umgebungs Befehle sind in einem Satz von vier vsct-Dateien definiert:
 
 - Sharedcmddef. vsct

@@ -1,5 +1,7 @@
 ---
 title: Bereitstellen von Gliederungs Unterstützung in einem Sprachdienst | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie erweiterte Gliederungs Unterstützung in einem Legacy Sprachdienst bereitstellen, indem Sie durch den Editor gesteuerte Gliederungs Bereiche und Client gesteuerte Gliederungs Bereiche
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905279"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761360"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Vorgehensweise: Bereitstellen erweiterter Gliederungs Unterstützung in einem Legacy Sprachdienst
 Es gibt zwei Optionen für die Erweiterung der Gliederungs Unterstützung für Ihre Sprache über die Unterstützung des Befehls Reduzierungs **Definitionen** . Sie können vom Editor gesteuerte Gliederungs Bereiche hinzufügen und Client gesteuerte Gliederungs Bereiche hinzufügen.

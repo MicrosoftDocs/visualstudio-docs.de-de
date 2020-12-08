@@ -1,5 +1,7 @@
 ---
-title: Implementieren von Einzel Datei-Generatoren | Microsoft-Dokumentation
+title: Implementieren von Single-File Generatoren | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Tool verwenden, das die IVsSingleFileGenerator-Schnittstelle implementiert, um Visual Basic und Visual c#-Projektsysteme in Visual Studio zu erweitern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e700d09277edbb04b30676d3965b6c996d0a11f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 373536844e3572e2e61b56c1b86f3e00ed47845d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707653"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761243"
 ---
 # <a name="implementing-single-file-generators"></a>Implementieren von Generatoren einzelner Dateien
 Ein benutzerdefiniertes Tool – manchmal auch als ein einzelner Datei Generator bezeichnet – kann verwendet werden, um die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] -und- [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projektsysteme in zu erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Ein benutzerdefiniertes Tool ist eine COM-Komponente, die die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Schnittstelle implementiert. Mithilfe dieser Schnittstelle transformiert ein benutzerdefiniertes Tool eine einzelne Eingabedatei in eine einzelne Ausgabedatei. Das Ergebnis der Transformation kann Quellcode oder eine beliebige andere Ausgabe sein, die nützlich ist. Zwei Beispiele für benutzerdefinierte, Tool generierte Code Dateien sind Code, der als Reaktion auf Änderungen in einem visuellen Designer generiert wird, sowie Dateien, die mit Web Services Description Language (WSDL) generiert werden.

@@ -1,5 +1,7 @@
 ---
 title: Unterstützung für ausgeblendeten Text im Legacy Sprachdienst
+description: Erfahren Sie, wie Sie eine ausgeblendete Textunterstützung in einem Legacy Sprachdienst bereitstellen, indem Sie Editor-gesteuerte oder Client gesteuerte ausgeblendete Textbereiche
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707932"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761308"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Gewusst wie: Bereitstellen von ausgeblendeter Textunterstützung in einem Legacy Sprachdienst
 Sie können neben Gliederungs Bereiche auch ausgeblendete Textbereiche erstellen. Ausgeblendete Textbereiche können vom Client gesteuert oder Editor gesteuert werden, und Sie werden verwendet, um einen Textbereich vollständig auszublenden. Der Editor zeigt einen ausgeblendeten Bereich als horizontale Linien an. Ein Beispiel hierfür ist die **Nur Skript** Ansicht im HTML-Editor.

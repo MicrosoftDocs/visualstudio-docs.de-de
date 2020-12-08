@@ -1,5 +1,7 @@
 ---
-title: IDE-definierte Befehle zum Erweitern von Projekt Systemen | Microsoft-Dokumentation
+title: IDE-Defined Befehle zum Erweitern von Projekt Systemen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Befehle und Befehls Gruppen, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio definiert sind und zum Erweitern von Projekt Systemen verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707737"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761165"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>IDE-definierte Befehle zum Erweitern von Projektsystemen
 Wenn Sie Projektsysteme erweitern möchten, können Sie Befehle und Befehls Gruppen verwenden, die von der IDE bereitgestellt werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -32,7 +34,7 @@ Wenn Sie Projektsysteme erweitern möchten, können Sie Befehle und Befehls Grup
 |IDM_VS_TOOL_PROJWIN|Die **Projektmappen-Explorer** Symbolleiste.|
 
 ## <a name="shortcut-menus"></a>Kontextmenüs
- In der folgenden Tabelle werden die Kontextmenüs angezeigt, die angewendet werden, wenn ein einzelner Knoten im **Projektmappen-Explorer**ausgewählt wird, oder wenn mehrere homogene Optionen in der **Projektmappen-Explorer**vorhanden sind, wenn alle ausgewählten Knoten denselben Typ haben.
+ In der folgenden Tabelle werden die Kontextmenüs angezeigt, die angewendet werden, wenn ein einzelner Knoten im **Projektmappen-Explorer** ausgewählt wird, oder wenn mehrere homogene Optionen in der **Projektmappen-Explorer** vorhanden sind, wenn alle ausgewählten Knoten denselben Typ haben.
 
 |Kontextmenü|BESCHREIBUNG|
 |-------------------|-----------------|

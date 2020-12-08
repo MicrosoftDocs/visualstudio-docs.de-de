@@ -1,5 +1,7 @@
 ---
 title: Bildbibliothek-Viewer | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Visual Studio-Bildbibliothek-Viewer-Tool, das Bild Manifeste lädt und durchsucht, sodass Sie Bildattribute anzeigen und bearbeiten können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536343"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761270"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
 Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durchsuchen, sodass der Benutzer diese auf die gleiche Weise wie Visual Studio bearbeiten kann. Der Benutzer kann background, sizes, dpi, High Contrast und andere Einstellungen ändern. Das Tool zeigt außerdem ladeinformationen für jedes Bild Manifest an und zeigt Quell Informationen für jedes Bild im Bild Manifest an. Dieses Tool eignet sich für folgende Aktionen:
@@ -72,7 +74,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |-|-|
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei für die Verwendung im aktuellen Manifest.|
 |Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
-|id|Das Symbol stellt eine ID dar und muss eine nicht negative Ganzzahl sein.|
+|ID|Das Symbol stellt eine ID dar und muss eine nicht negative Ganzzahl sein.|
 |String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|
 
  Bei Symbolen wird die Groß-/Kleinschreibung beachtet und mithilfe der Syntax $ (Symbol Name) auf Sie verwiesen:
@@ -95,7 +97,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |System|Der Ordner "Windows\System32"|
 |WinDir|Der Wert der Umgebungsvariablen "% windir%".|
 
- **Image**
+ **Bild**
 
  Das- \<Image> Element definiert ein Bild, auf das von einem Moniker verwiesen werden kann. Die GUID und die ID, die zusammen aus dem bilmoniker entnommen wurden. Der Moniker für das Bild muss in der gesamten Bildbibliothek eindeutig sein. Wenn mehr als ein Bild über einen angegebenen Moniker verfügt, ist der erste, der beim Aufbau der Bibliothek aufgetreten ist, der einzige, der beibehalten wird.
 
@@ -111,7 +113,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |**Attribut**|**Definition**|
 |-|-|
 |Guid|Benötigten Der GUID-Teil des bilmonikers.|
-|id|Benötigten Der ID-Teil des bilmonikers.|
+|ID|Benötigten Der ID-Teil des bilmonikers.|
 |Allowcolorinversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|
 
  **Quelle**
@@ -127,7 +129,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |**Attribut**|**Definition**|
 |-|-|
 |Uri|Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Folgende Werte sind möglich:<br /><br /> -Ein [Paket-URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mit der Application:///-Autorität<br /><br /> -Einen absoluten Komponenten Ressourcen Verweis<br /><br /> -Ein Pfad zu einer Datei, die eine native Ressource enthält.|
-|Hintergrund|Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> - *Light*: die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> - *Dunkel*: die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> - *HighContrast*: die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> - *Highkontra stlight*: die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> -*Highkontra stdark*: die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das **Background** -Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn **Background** " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn **Background** ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert.|
+|Hintergrund|Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> - *Light*: die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> - *Dunkel*: die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> - *HighContrast*: die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> - *Highkontra stlight*: die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> -*Highkontra stdark*: die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das **Background** -Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn **Background** " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn **Background** ausgelassen oder auf *HighContrast* festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert.|
 
  Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente aufweisen:
 
@@ -147,7 +149,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |**Attribut**|**Definition**|
 |-|-|
 |type|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
-|id|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
+|ID|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
 
  **ImageList**
 
@@ -163,7 +165,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |**Attribut**|**Definition**|
 |-|-|
 |Guid|Benötigten Der GUID-Teil des bilmonikers.|
-|id|Benötigten Der ID-Teil des bilmonikers.|
+|ID|Benötigten Der ID-Teil des bilmonikers.|
 |Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|
 
  Der Moniker für das enthaltene Bild muss nicht auf ein Bild verweisen, das im aktuellen Manifest definiert ist. Wenn das enthaltene Bild in der Bildbibliothek nicht gefunden werden kann, wird an seiner Stelle ein leeres Platzhalter Bild verwendet.
@@ -179,7 +181,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 
  Standardmäßig versucht das Tool, das Visual Studio-Installationsverzeichnis zu finden und diese Verzeichnisse der Liste der Such Verzeichnisse hinzuzufügen. Sie können manuell Verzeichnisse hinzufügen, die das Tool nicht findet.
 
- Nachdem alle Manifeste geladen wurden, kann das Tool verwendet werden, um **Hintergrund** Farben, **dpi**, **hoher Kontrast**oder **Graustufen** für die Bilder ein-und auszuschalten, damit ein Benutzer Bild Ressourcen visuell überprüfen kann, um sicherzustellen, dass Sie für verschiedene Einstellungen ordnungsgemäß gerendert werden.
+ Nachdem alle Manifeste geladen wurden, kann das Tool verwendet werden, um **Hintergrund** Farben, **dpi**, **hoher Kontrast** oder **Graustufen** für die Bilder ein-und auszuschalten, damit ein Benutzer Bild Ressourcen visuell überprüfen kann, um sicherzustellen, dass Sie für verschiedene Einstellungen ordnungsgemäß gerendert werden.
 
  ![Bildbibliotheks-Viewer-Hintergrund](../../extensibility/internals/media/image-library-viewer-background.png "Bildbibliotheks-Viewer-Hintergrund")
 
