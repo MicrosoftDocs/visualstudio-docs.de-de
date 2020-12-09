@@ -1,6 +1,8 @@
 ---
 title: Erstellen eines Silverlight-Webparts, das odata für SharePoint anzeigt
 titleSuffix: ''
+description: Erstellen Sie ein Silverlight-Webpart, das odata für SharePoint anzeigt. Passen Sie die Silverlight-Anwendung an, und ändern und testen Sie das Silverlight-WebPart.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298500"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914789"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das odata für SharePoint anzeigt
   SharePoint 2010 macht seine Listen Daten mithilfe von odata verfügbar. In SharePoint wird der odata-Dienst vom Rest-Dienst listData. svc implementiert. Diese exemplarische Vorgehensweise veranschaulicht, wie ein SharePoint-Webpart erstellt wird, das eine Silverlight-Anwendung hostet. Die Silverlight-Anwendung zeigt die SharePoint-Ankündigungs Listen Informationen mithilfe von "listData. svc" an. Weitere Informationen finden Sie unter [SharePoint Foundation-Rest-Schnittstelle](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) und [Open Data Protocol](https://www.odata.org/).
@@ -58,9 +60,9 @@ ms.locfileid: "92298500"
 
 7. Wählen Sie im Abschnitt **wie möchten Sie den Silverlight-Webpart** der Seite " **Silverlight-Konfigurationsinformationen angeben** " die Option **neues Silverlight-Projekt erstellen aus, und ordnen Sie es dem Optionsfeld Webpart** zu.
 
-8. Ändern Sie den **Namen** in **slapplication**, legen Sie für **Sprache** entweder **Visual Basic** oder **Visual c#** fest, und legen Sie dann **Silverlight-Version** auf **Silverlight 4,0**fest.
+8. Ändern Sie den **Namen** in **slapplication**, legen Sie für **Sprache** entweder **Visual Basic** oder **Visual c#** fest, und legen Sie dann **Silverlight-Version** auf **Silverlight 4,0** fest.
 
-9. Klicken Sie auf die Schaltfläche **Fertig stellen**. Die Projekte werden in **Projektmappen-Explorer**angezeigt.
+9. Klicken Sie auf die Schaltfläche **Fertig stellen**. Die Projekte werden in **Projektmappen-Explorer** angezeigt.
 
      Die Projekt Mappe enthält zwei Projekte: eine Silverlight-Anwendung und ein Silverlight-WebPart. Die Silverlight-Anwendung ruft die Listen Daten aus SharePoint ab und zeigt Sie an, und der Silverlight-Webpart hostet die Silverlight-Anwendung, sodass Sie Sie in SharePoint anzeigen können.
 
@@ -71,7 +73,7 @@ ms.locfileid: "92298500"
 
 1. Fügen Sie in der Silverlight-Anwendung einen Assemblyverweis auf System. Windows. Data hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen oder Entfernen von verweisen mithilfe des Dialog Felds "Verweis hinzufügen](/previous-versions/wkze6zky(v=vs.140))".
 
-2. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für **Verweise**, und wählen Sie dann **Dienstverweis hinzufügen**aus.
+2. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für **Verweise**, und wählen Sie dann **Dienstverweis hinzufügen** aus.
 
     > [!NOTE]
     > Wenn Sie Visual Basic verwenden, müssen Sie oben in **Projektmappen-Explorer** das Symbol **alle Dateien anzeigen** auswählen, um den Knoten **Verweise** anzuzeigen.
@@ -84,7 +86,7 @@ ms.locfileid: "92298500"
 
 5. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
-6. Fügen Sie dem Projekt eine neue Datenquelle auf Grundlage des SharePoint-Dienstanbieter hinzu. Wählen Sie hierzu in der Menüleiste die Option **View**  >  **Weitere Windows**-  >  **Datenquellen**anzeigen aus.
+6. Fügen Sie dem Projekt eine neue Datenquelle auf Grundlage des SharePoint-Dienstanbieter hinzu. Wählen Sie hierzu in der Menüleiste die Option **View**  >  **Weitere Windows**-  >  **Datenquellen** anzeigen aus.
 
      Das Fenster **Datenquellen** zeigt alle verfügbaren SharePoint-Listen Daten an, z. b. Tasks, Ankündigungen und Kalender.
 
@@ -197,7 +199,7 @@ ms.locfileid: "92298500"
 
 #### <a name="to-modify-the-silverlight-web-part"></a>So ändern Sie das Silverlight-Webpart
 
-1. Öffnen Sie das Kontextmenü für das Silverlight-**Webpartprojekt (slwebparttest**), und wählen Sie dann **Eigenschaften**aus.
+1. Öffnen Sie das Kontextmenü für das Silverlight-**Webpartprojekt (slwebparttest**), und wählen Sie dann **Eigenschaften** aus.
 
 2. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **SharePoint** aus.
 
@@ -212,13 +214,13 @@ ms.locfileid: "92298500"
 
 1. Drücken Sie die Taste **F5** , um die SharePoint-Lösung zu erstellen und auszuführen.
 
-2. Wählen Sie in SharePoint im Menü **Website Aktionen** die Option **neue Seite**aus.
+2. Wählen Sie in SharePoint im Menü **Website Aktionen** die Option **neue Seite** aus.
 
 3. Geben Sie im Dialogfeld **neue Seite** einen Titel ein, z. b. **SL Webpart Test**, und wählen Sie dann die Schaltfläche **Erstellen** aus.
 
-4. Wählen Sie im Seiten-Designer auf der Registerkarte **Bearbeitungs Tools** die Option **Einfügen**aus.
+4. Wählen Sie im Seiten-Designer auf der Registerkarte **Bearbeitungs Tools** die Option **Einfügen** aus.
 
-5. Wählen Sie auf der Registerkarten Leiste **Webpart**aus.
+5. Wählen Sie auf der Registerkarten Leiste **Webpart** aus.
 
 6. Wählen Sie im Feld **Kategorien** den **benutzerdefinierten** Ordner aus.
 

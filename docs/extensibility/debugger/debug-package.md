@@ -1,5 +1,7 @@
 ---
 title: Paket Debuggen | Microsoft-Dokumentation
+description: Erfahren Sie, wie das Debugpaket in Visual Studio Shell ausgeführt wird und die Benutzeroberfläche verarbeitet, indem Sie die Debugschnittstellen nutzen und mit dem sitzungsdebug-Manager
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad62a487d38500617999a276aa3ae15a75089736
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739022"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914126"
 ---
 # <a name="debug-package"></a>Paket Debuggen
 Das Debugpaket wird in der Visual Studio-Shell ausgeführt und verarbeitet die gesamte Benutzeroberfläche. Dabei werden die Visual Studio-debuggingschnittstellen verarbeitet und mit dem sitzungsdebug-Manager (SDM) kommuniziert.
@@ -24,7 +26,7 @@ Das Debugpaket wird in der Visual Studio-Shell ausgeführt und verarbeitet die g
 
  Das Debugpaket hat keine sprach-oder Lauf Zeit Umgebungs Abhängigkeiten. Das Debugpaket muss nicht implementiert oder geändert werden.
 
- Das Debugpaket wird von *vsdebug.dll*implementiert.
+ Das Debugpaket wird von *vsdebug.dll* implementiert.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Sitzungs-Debug-Manager](../../extensibility/debugger/session-debug-manager.md)

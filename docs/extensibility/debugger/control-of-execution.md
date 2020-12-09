@@ -1,5 +1,7 @@
 ---
 title: Kontrolle der Ausführung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Beenden von Ereignissen, d. h., der Benutzer wartet auf eine Antwort vom Benutzer über die IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387004"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913879"
 ---
 # <a name="control-of-execution"></a>Kontrolle der Ausführung
 Die Debug-Engine (de) sendet in der Regel eines der folgenden Ereignisse als letztes Start Ereignis:
@@ -39,11 +41,11 @@ Die Debug-Engine (de) sendet in der Regel eines der folgenden Ereignisse als let
 
 5. Wenn der Benutzer eine Funktion in Einzelschritten, überspringen oder aus einer Funktion auswählt, wird die Debugsitzung von der IDE aufgefordert, die-Methode des Programms aufzurufen `Step` . Die IDE übergibt dann die Schritt Einheit (Anweisung, Anweisung oder Zeile) und den Typ des Schritts (ob Einzel-, über-oder Ausgabe der Funktion). Nachdem der Schritt ausgeführt wurde, sendet der de ein Step Complete-Ereignis an die Debugsitzung, bei der es sich um ein anhalteereignis handelt.
 
-    Oder
+    - oder -
 
     Wenn der Benutzer die Ausführung über den aktuellen Anweisungs Zeiger fortsetzt, wird die Debugsitzung von der IDE aufgefordert, die **Execute** -Methode des Programms aufzurufen. Das Programm setzt die Ausführung fort, bis die nächste Anhaltebedingung auftritt.
 
-    Oder
+    - oder -
 
     Wenn die Debugsitzung ein bestimmtes anhalteereignis ignorieren soll, ruft die Debugsitzung die **Continue** -Methode des Programms auf. Wenn das Programm eine Funktion in Einzelschritten, ein-oder Auschecken, wenn die Anhaltebedingung aufgetreten ist, wird der Schritt fortgesetzt.
 
@@ -57,7 +59,7 @@ Die Debug-Engine (de) sendet in der Regel eines der folgenden Ereignisse als let
 
    Wenn das Debugpaket ein bestimmtes anhalteereignis ignorieren soll, ruft das Debugpaket den SDM auf, der [IDebugProgram2:: Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)aufruft. Wenn das Programm eine Funktion in Einzelschritten, ein-oder Auschecken, wenn die Anhaltebedingung aufgetreten ist, wird der Schritt fortgesetzt. Dies bedeutet, dass das Programm einen Schritt-für-Schritt beibehält, sodass er weiß, wie er fortfahren kann.
 
-   Die Aufrufe, die SDM `Step` ausführt, **Ausführen**und **fortsetzen** , sind asynchron. Dies bedeutet, dass die SDM erwartet, dass der Aufruf schnell zurückgegeben wird. Wenn von de der SDM ein anhalteereignis im gleichen Thread `Step` ausgeführt wird, bevor, **Execute**oder **Continue** zurückgegeben wird, reagiert der SDM nicht mehr.
+   Die Aufrufe, die SDM `Step` ausführt, **Ausführen** und **fortsetzen** , sind asynchron. Dies bedeutet, dass die SDM erwartet, dass der Aufruf schnell zurückgegeben wird. Wenn von de der SDM ein anhalteereignis im gleichen Thread `Step` ausgeführt wird, bevor, **Execute** oder **Continue** zurückgegeben wird, reagiert der SDM nicht mehr.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Aufgaben Debuggen](../../extensibility/debugger/debugging-tasks.md)
+- [Debuggen von Tasks](../../extensibility/debugger/debugging-tasks.md)

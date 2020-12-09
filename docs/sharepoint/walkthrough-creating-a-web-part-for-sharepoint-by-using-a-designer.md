@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Webparts für SharePoint mithilfe des Designers
+description: In dieser exemplarischen Vorgehensweise erstellen Sie ein Webpart mit der SharePoint-Projektvorlage für visuelle Webparts in Visual Studio visuell.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016384"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913983"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers
 
@@ -53,7 +55,7 @@ Erstellen Sie zunächst ein Webpartprojekt mithilfe der Projektvorlage für das 
 
      Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Erweitern Sie im Dialogfeld **Neues Projekt** unter **Visual c#** oder **Visual Basic**den Eintrag **Office/SharePoint**, und wählen Sie dann die Kategorie **SharePoint-Lösungen** aus.
+3. Erweitern Sie im Dialogfeld **Neues Projekt** unter **Visual c#** oder **Visual Basic** den Eintrag **Office/SharePoint**, und wählen Sie dann die Kategorie **SharePoint-Lösungen** aus.
 
 4. Wählen Sie in der Liste der Vorlagen die Vorlage **SharePoint 2013-Visual Web Part** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -69,11 +71,11 @@ Entwerfen Sie das Webpart, indem Sie Steuerelemente aus der **Toolbox** der Ober
 
 1. Wählen Sie im Visual Web Developer-Designer die Registerkarte **Entwurf** aus, um zu Designansicht zu wechseln.
 
-2. Wählen Sie in der Menüleiste **View**  >  **Toolbox**anzeigen aus.
+2. Wählen Sie in der Menüleiste **View**  >  **Toolbox** anzeigen aus.
 
-3. Wählen Sie im Knoten **Standard** der **Toolbox**das Steuerelement **CheckBoxList** aus, und führen Sie dann einen der folgenden Schritte aus:
+3. Wählen Sie im Knoten **Standard** der **Toolbox** das Steuerelement **CheckBoxList** aus, und führen Sie dann einen der folgenden Schritte aus:
 
-    - Öffnen Sie das Kontextmenü für das Steuerelement **CheckBoxList** , wählen Sie **Kopieren**aus, öffnen Sie das Kontextmenü für die erste Zeile im Designer, und wählen Sie dann **Einfügen**aus.
+    - Öffnen Sie das Kontextmenü für das Steuerelement **CheckBoxList** , wählen Sie **Kopieren** aus, öffnen Sie das Kontextmenü für die erste Zeile im Designer, und wählen Sie dann **Einfügen** aus.
 
     - Ziehen Sie das **CheckBoxList** -Steuerelement aus der **Toolbox**, und verbinden Sie das Steuerelement mit der ersten Zeile im Designer.
 
@@ -81,11 +83,11 @@ Entwerfen Sie das Webpart, indem Sie Steuerelemente aus der **Toolbox** der Ober
 
 5. Wählen Sie im Designer die Schaltfläche **Button1** aus.
 
-6. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
+6. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster** aus.
 
      Das Fenster **Eigenschaften** wird geöffnet.
 
-7. Geben Sie in der **Text** -Eigenschaft der Schaltfläche **Update**ein.
+7. Geben Sie in der **Text** -Eigenschaft der Schaltfläche **Update** ein.
 
 ## <a name="handling-the-events-of-controls-on-the-web-part"></a>Behandeln der Ereignisse von Steuerelementen des Webparts
 
@@ -95,7 +97,7 @@ Fügen Sie Code hinzu, der es dem Benutzer ermöglicht, der Masterkalenderansich
 
    - Doppelklicken Sie im Designer auf die Schaltfläche **Aktualisieren** .
 
-   - Wählen Sie im Fenster **Eigenschaften** für die Schaltfläche **Aktualisieren** die Schaltfläche **Ereignisse** aus. Geben Sie in der **Click** -Eigenschaft **Button1_Click**ein, und drücken Sie dann die EINGABETASTE.
+   - Wählen Sie im Fenster **Eigenschaften** für die Schaltfläche **Aktualisieren** die Schaltfläche **Ereignisse** aus. Geben Sie in der **Click** -Eigenschaft **Button1_Click** ein, und drücken Sie dann die EINGABETASTE.
 
      Die Benutzersteuerelement-Codedatei wird im Code-Editor geöffnet, und der `Button1_Click`-Ereignishandler wird angezeigt. Später fügen Sie diesem Ereignishandler Code hinzu.
 
@@ -139,7 +141,7 @@ Wenn Sie das Projekt ausführen, wird die SharePoint-Website geöffnet. Das Webp
 
      Die SharePoint-Website wird geöffnet, und die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Schnellstartleiste wird auf der Seite angezeigt.
 
-2. Wählen Sie auf der Schnellstartleiste unter **Listen**den Link **Kalender** aus.
+2. Wählen Sie auf der Schnellstartleiste unter **Listen** den Link **Kalender** aus.
 
      Die Seite **Kalender** wird angezeigt.
 
@@ -147,7 +149,7 @@ Wenn Sie das Projekt ausführen, wird die SharePoint-Website geöffnet. Das Webp
 
 3. Wählen Sie auf der Seite Kalender einen Tag aus, und wählen Sie dann den Link **Hinzufügen** am ausgewählten Tag aus, um ein Ereignis hinzuzufügen.
 
-4. Geben Sie im Feld **Titel** **im Standardkalender Ereignis**ein, und klicken Sie dann auf die Schaltfläche **Speichern** .
+4. Geben Sie im Feld **Titel** **im Standardkalender Ereignis** ein, und klicken Sie dann auf die Schaltfläche **Speichern** .
 
 5. Wählen Sie den Link **Website Inhalte** aus, und wählen Sie dann die Kachel **app hinzufügen** aus.
 

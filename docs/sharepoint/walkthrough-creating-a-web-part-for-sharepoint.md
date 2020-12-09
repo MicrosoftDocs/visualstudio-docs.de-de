@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint | Microsoft-Dokumentation'
+description: Erstellen Sie ein Webpart für SharePoint. Mithilfe von Webparts können Benutzer den Inhalt, die Darstellung und das Verhalten von SharePoint-Website Seiten direkt mithilfe eines Browsers ändern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247648"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914659"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint
 
@@ -54,11 +56,11 @@ Erstellen Sie zunächst ein leeres SharePoint-Projekt. Später fügen Sie dem Pr
 
 1. Starten [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sie mit der Option **als Administrator ausführen** .
 
-2. Wählen Sie auf der Leiste "Männer" die Option **Datei**  >  **neu**  >  **Projekt**aus.
+2. Wählen Sie auf der Leiste "Männer" die Option **Datei**  >  **neu**  >  **Projekt** aus.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **SharePoint** unter der Sprache, die Sie verwenden möchten, und wählen Sie dann den Knoten **2010** aus.
 
-4. Wählen Sie im Bereich **Vorlagen** die Option **SharePoint 2010-Projekt**aus, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Wählen Sie im Bereich **Vorlagen** die Option **SharePoint 2010-Projekt** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
      Der Assistent zum Anpassen von **SharePoint** wird angezeigt. Mit diesem Assistenten können Sie die Website, die Sie zum Debuggen des Projekts verwenden, sowie die Vertrauensebene der Projektmappe auswählen.
 
@@ -68,19 +70,19 @@ Erstellen Sie zunächst ein leeres SharePoint-Projekt. Später fügen Sie dem Pr
 
 Fügen Sie dem Projekt ein **Webpartelement** hinzu. Das **Webpartelement** fügt die Codedatei für das Webpart hinzu. Später fügen Sie der Codedatei für das Webpart Code hinzu, um den Inhalt des Webparts zu rendern.
 
-1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
+1. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 2. Erweitern Sie im Dialogfeld **Neues Element hinzufügen** im Bereich **installierte Vorlagen** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
 3. Wählen Sie in der Liste der SharePoint-Vorlagen die Vorlage **Webpart** aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
-     Das Element **Webpart** wird in **Projektmappen-Explorer**angezeigt.
+     Das Element **Webpart** wird in **Projektmappen-Explorer** angezeigt.
 
 ## <a name="rendering-content-in-the-web-part"></a>Rendern von Inhalt im Webpart
 
 Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Sie diese der Steuerelementauflistung der Webpartklasse hinzufügen.
 
-1. Öffnen **Solution Explorer**Sie in Projektmappen-Explorer *WebPart1. vb* (in Visual Basic) oder *WebPart1.cs* (in c#).
+1. Öffnen **Solution Explorer** Sie in Projektmappen-Explorer *WebPart1. vb* (in Visual Basic) oder *WebPart1.cs* (in c#).
 
      Die Codedatei für das Webpart wird im Code-Editor geöffnet.
 
@@ -116,7 +118,7 @@ Sie können angeben, welche Steuerelemente im Webpart angezeigt werden, indem Si
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Fügen Sie der `WebPart1`-Klasse die folgende Methode hinzu. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
+6. Füge der `WebPart1`-Klasse die folgende Methode hinzu. Mit diesem Code werden die folgenden Aufgaben durchgeführt:
 
    - Erstellt ein Verb, das im Verbmenü des gerenderten Webparts angezeigt wird.
 
@@ -162,11 +164,11 @@ Wenn Sie das Projekt ausführen, wird die SharePoint-Website geöffnet. Das Webp
         </employees>
     ```
 
-2. Wählen Sie in Editor in der Menüleiste **Datei**  >  **Speichern**unter aus.
+2. Wählen Sie in Editor in der Menüleiste **Datei**  >  **Speichern** unter aus.
 
-3. Wählen Sie im Dialogfeld **Speichern** unter in der Liste **Dateityp** die Option **alle Dateien**aus.
+3. Wählen Sie im Dialogfeld **Speichern** unter in der Liste **Dateityp** die Option **alle Dateien** aus.
 
-4. Geben Sie im Feld **Dateiname** **data.xml**ein.
+4. Geben Sie im Feld **Dateiname** **data.xml** ein.
 
 5. Wählen Sie mithilfe der Schaltfläche **Ordner durchsuchen** einen beliebigen Ordner aus, und klicken Sie dann auf die Schaltfläche **Speichern** .
 
@@ -174,7 +176,7 @@ Wenn Sie das Projekt ausführen, wird die SharePoint-Website geöffnet. Das Webp
 
      Die SharePoint-Website wird geöffnet.
 
-7. Wählen Sie im Menü **Website Aktionen** die **Option Weitere Optionen**aus.
+7. Wählen Sie im Menü **Website Aktionen** die **Option Weitere Optionen** aus.
 
 8. Wählen Sie auf der Seite **Erstellen** den Typ der **Webpartseite** aus, und klicken Sie dann auf die Schaltfläche **Erstellen** .
 
@@ -214,7 +216,7 @@ Anzeigen und Ausblenden von Mitarbeitern, die keine Manager sind, indem Sie ein 
 
      Alle Mitarbeiter werden im Webpart angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  Vorgehens [Weise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

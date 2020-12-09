@@ -1,5 +1,7 @@
 ---
 title: Aufrufen von Debugger-Ereignissen | Microsoft-Dokumentation
+description: Ereignisse in Debugsitzungen treten in einer bestimmten Reihenfolge auf. Dieser Artikel listet die Aufruf Reihenfolge der Ereignisse auf, die in einer typischen Debugsitzung auftreten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904320"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914387"
 ---
 # <a name="call-debugger-events"></a>Debugger-Ereignisse aufzurufen
 Ereignisse in Debugsitzungen treten in einer bestimmten Reihenfolge auf.
 
-## <a name="discussion"></a>Diskussion (Discussion)
+## <a name="discussion"></a>Diskussion
  Um das Muster von Aufrufen zwischen Debug Engine (de) und Session Debug Manager (SDM) zu verstehen, stellt Folgendes die Aufruf Reihenfolge der Ereignisse dar, die in einer typischen Debugsitzung auftreten:
 
 1. [Anfügen und trennen an ein Programm](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)

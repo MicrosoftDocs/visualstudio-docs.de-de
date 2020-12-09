@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: fd584a977900de83af454f26722d3e4ba2bd8ac8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273893"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847662"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installieren von Build Tools in einem Container
 
@@ -72,7 +72,7 @@ Speichern Sie die folgende Dockerfile-Beispieldatei in einer neuen Datei auf Ihr
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
    # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+   RUN start /wait C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
        --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `

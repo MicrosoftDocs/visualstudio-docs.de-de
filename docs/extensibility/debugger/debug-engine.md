@@ -1,5 +1,7 @@
 ---
 title: Debug-Engine | Microsoft-Dokumentation
+description: Erfahren Sie, wie ein Debug-Modul mit dem Interpreter oder Betriebssystem zusammenarbeitet, um Dienste wie z. b. die Ausführungs Steuerung, Breakpoints und Ausdrucks Auswertung bereitzustellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739067"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914217"
 ---
 # <a name="debug-engine"></a>Debug-Engine
 Eine Debug-Engine (de) verwendet den Interpreter oder das Betriebssystem, um debuggingdienste wie Ausführungs Steuerung, Breakpoints und Ausdrucks Auswertung bereitzustellen. Die de ist für die Überwachung des Status eines Programms zuständig, das gedeppt wird. Um dies zu erreichen, verwendet die de alle verfügbaren Methoden in der unterstützten Laufzeit, unabhängig davon, ob die CPU oder die von der Laufzeit bereitgestellten APIs verwendet werden.

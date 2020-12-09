@@ -1,5 +1,7 @@
 ---
 title: Direktes Anfügen an ein Programm | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio das Anfügen einer Debug-Engine an einen Prozess implementiert, der bereits ausgeführt wird, indem Sie dieses Verfahren in der Visual Studio-IDE verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc78234b31b98865f1779dd65d743d4196f9cbf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80ee40d60b5a7511c3f44c22c16e02751d9f1f36
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903264"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913775"
 ---
 # <a name="attach-directly-to-a-program"></a>Direkt an ein Programm anfügen
 Benutzer, die Programme in einem Prozess debuggen möchten, der bereits ausgeführt wird, führen in der Regel folgenden Vorgang aus:

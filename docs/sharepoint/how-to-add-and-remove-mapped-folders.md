@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen und entfernen zugeordneter Ordner | Microsoft-Dokumentation'
+description: Hinzufügen und Entfernen von zugeordneten Ordnern zu einem Projekt in SharePoint.  Ändern Sie den Bereitstellungs Speicherort eines zugeordneten Ordners. Umbenennen oder Entfernen von zugeordneten Ordnern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014646"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914804"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Gewusst wie: Hinzufügen und entfernen zugeordneter Ordner
   Einige häufig verwendete Ordner in SharePoint, z. b. Bilder und Layouts, sind tief in die Datei Hierarchie eingebettet. Sie können diese Ordner einem SharePoint-Projekt zuordnen, um leichter auf diese Ordner zuzugreifen. Zugeordnete Ordner sind Ordner im SharePoint-Projekt, die dem physischen Speicherort der Dateien in der Installation von SharePoint Server entsprechen.
@@ -39,19 +41,19 @@ Sie können zugeordnete Ordner einem Projekt hinzufügen, indem Sie die Befehle 
 
 3. Wählen Sie in der Liste der Projektvorlagen die Vorlage **SharePoint 2013 Visual Web Part** aus.
 
-4. Geben Sie im Feld **Name den Namen** **TestProject1**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Geben Sie im Feld **Name den Namen** **TestProject1** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Wählen Sie im Assistenten zum Anpassen von **SharePoint**die Schaltfläche **Fertig** stellen aus, um die Standardeinstellungen beizubehalten.
+5. Wählen Sie im Assistenten zum Anpassen von **SharePoint** die Schaltfläche **Fertig** stellen aus, um die Standardeinstellungen beizubehalten.
 
-6. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Hinzufügen SharePoint "Images" zugeordneter Ordner**.
+6. Wählen Sie in **Projektmappen-Explorer** den Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Hinzufügen SharePoint "Images" zugeordneter Ordner**.
 
      In Ihrem Projekt wird ein Ordner mit dem Namen **Images** angezeigt, der einen Unterordner mit dem Namen TestProject1 enthält. Dieser zugeordnete Ordner enthält Bilder für das Visual Web Part-Projekt.
 
-7. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten aus, und klicken Sie dann auf der Menüleiste auf **Projekt**  >  **Hinzufügen von SharePoint zugeordneten Ordner hinzu** fügen, um das Dialogfeld zugeordneten **SharePoint-Ordner hinzufügen** anzuzeigen.
+7. Wählen Sie in **Projektmappen-Explorer** den Projekt Knoten aus, und klicken Sie dann auf der Menüleiste auf **Projekt**  >  **Hinzufügen von SharePoint zugeordneten Ordner hinzu** fügen, um das Dialogfeld zugeordneten **SharePoint-Ordner hinzufügen** anzuzeigen.
 
 8. Wählen Sie in der Strukturansicht der Ordner, die für die Zuordnung verfügbar sind, den Ordner **Ressourcen** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     In Ihrem Projekt wird ein Ordner mit dem Namen " **Resources** " angezeigt. In diesem Ordner können Elemente wie Zeichen folgen-Ressourcen Dateien gespeichert werden. Unterordner können nützlich sein, um den Inhalt eines zugeordneten Ordners zu organisieren. Sie werden jedoch nicht automatisch erstellt, wenn Sie einen zugeordneten Ordner mit dem Befehl **Hinzufügen von SharePoint-Ordner hinzu** fügen hinzufügen. Wählen Sie zum Hinzufügen eines unter Ordners den Ordner **Ressourcen** aus, und wählen Sie dann in der Menüleiste die Option **Projekt**  >  **neuer Ordner**aus.
+     In Ihrem Projekt wird ein Ordner mit dem Namen " **Resources** " angezeigt. In diesem Ordner können Elemente wie Zeichen folgen-Ressourcen Dateien gespeichert werden. Unterordner können nützlich sein, um den Inhalt eines zugeordneten Ordners zu organisieren. Sie werden jedoch nicht automatisch erstellt, wenn Sie einen zugeordneten Ordner mit dem Befehl **Hinzufügen von SharePoint-Ordner hinzu** fügen hinzufügen. Wählen Sie zum Hinzufügen eines unter Ordners den Ordner **Ressourcen** aus, und wählen Sie dann in der Menüleiste die Option **Projekt**  >  **neuer Ordner** aus.
 
 ## <a name="change-the-deployment-location-of-a-mapped-folder"></a>Ändern des Bereitstellungs Speicher Orts eines zugeordneten Ordners
  Standardmäßig werden zugeordnete Ordner bestimmten Speicherorten relativ zum SharePoint-Stamm Installationspfad hinzugefügt, der vom Token \<SharePointRoot> angegeben wird. Sie können diesen Speicherort jedoch ändern, indem Sie die Eigenschaft **Bereitstellungsort** des zugeordneten Ordners ändern. Jeder zugeordnete Ordner verfügt über eine eigene Eigenschaft für den **Bereitstellungsort** .
@@ -72,11 +74,11 @@ Sie können zugeordnete Ordner einem Projekt hinzufügen, indem Sie die Befehle 
 
 1. Wählen Sie in dem Projekt, das Sie zuvor erstellt haben, einen zugeordneten Ordner aus.
 
-2. Um den zugeordneten Ordner umzubenennen, öffnen Sie das Kontextmenü, wählen Sie **Umbenennen**aus, geben Sie den neuen Namen ein, und drücken Sie dann die EINGABETASTE.
+2. Um den zugeordneten Ordner umzubenennen, öffnen Sie das Kontextmenü, wählen Sie **Umbenennen** aus, geben Sie den neuen Namen ein, und drücken Sie dann die EINGABETASTE.
 
      Als Alternative können Sie den zugeordneten Ordner auswählen, den Sie umbenennen möchten, öffnen Sie das Fenster **Eigenschaften** , und legen Sie dann den Wert der Eigenschaft **Ordnername** auf den neuen Namen fest.
 
-3. Wenn Sie einen zugeordneten Ordner aus dem Projekt entfernen möchten, öffnen Sie das Kontextmenü, wählen Sie **Löschen**aus, und wählen Sie dann im Dialogfeld die Schaltfläche **OK** aus, um das Entfernen zu bestätigen.
+3. Wenn Sie einen zugeordneten Ordner aus dem Projekt entfernen möchten, öffnen Sie das Kontextmenü, wählen Sie **Löschen** aus, und wählen Sie dann im Dialogfeld die Schaltfläche **OK** aus, um das Entfernen zu bestätigen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

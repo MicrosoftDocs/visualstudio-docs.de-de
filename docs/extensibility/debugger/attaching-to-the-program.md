@@ -1,5 +1,7 @@
 ---
 title: Anhängen an das Programm | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio den Debugger implementiert, der an ein Programm angehängt wird, nachdem das Programm mit dem entsprechenden Port registriert wurde.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 030ee19e7e9e9e52140fb41da78f766978e18d3f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903218"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913762"
 ---
 # <a name="attach-to-the-program"></a>An das Programm anfügen
 Nachdem Sie Ihre Programme mit dem entsprechenden Port registriert haben, müssen Sie den Debugger an das Programm anfügen, das Sie debuggen möchten.

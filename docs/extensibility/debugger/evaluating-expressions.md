@@ -1,5 +1,7 @@
 ---
 title: Auswerten von Ausdrücken | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Auswerten von Ausdrücken, die aus Zeichen folgen erstellt werden, die von den Fenstern "Auto", "Überwachung", "schnell Überwachung" oder direkt
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738830"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914594"
 ---
 # <a name="evaluate-expressions"></a>Auswerten von Ausdrücken
 Ausdrücke werden aus Zeichen folgen **erstellt, die von den Fenstern**"Auto", "über **Wachen**", " **schnell Überwachung**" oder " **direkt** " Wenn ein Ausdruck ausgewertet wird, generiert er eine druckbare Zeichenfolge, die den Namen und den Typ der Variablen oder des Arguments sowie dessen Wert enthält. Diese Zeichenfolge wird im entsprechenden IDE-Fenster angezeigt.
@@ -31,7 +33,7 @@ Ausdrücke werden aus Zeichen folgen **erstellt, die von den Fenstern**"Auto", "
 
  Zum Aktivieren der Ausdrucks Auswertung muss ein de die [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -und [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstellen implementieren. Sowohl die synchrone als auch die asynchrone Auswertung erfordert die Implementierung der [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) -Methode.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Stapel Rahmen](../../extensibility/debugger/stack-frames.md)
 - [Ausdrucks Auswertungs Kontext](../../extensibility/debugger/expression-evaluation-context.md)
-- [Aufgaben Debuggen](../../extensibility/debugger/debugging-tasks.md)
+- [Debuggen von Tasks](../../extensibility/debugger/debugging-tasks.md)
