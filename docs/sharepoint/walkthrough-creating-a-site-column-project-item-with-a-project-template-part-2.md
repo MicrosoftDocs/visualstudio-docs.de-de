@@ -1,6 +1,8 @@
 ---
 title: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2
 titleSuffix: ''
+description: Fügen Sie einer Website Spalten-Projektvorlage einen Assistenten hinzu, um Daten von Benutzern zu sammeln, wenn Sie die Vorlage zum Erstellen eines SharePoint-Projekts verwenden, das das Projekt Element enthält.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585457"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915140"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ des SharePoint-Projektelements definiert und diesen einer Projektvorlage in Visual Studio zugeordnet haben, empfiehlt es sich, außerdem einen Assistenten für die Vorlage bereitzustellen. Mithilfe des Assistenten können Sie Informationen von Benutzern sammeln, während diese Ihre Vorlage verwenden, um ein neues Projekt zu erstellen, das das Projektelement enthält. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.
@@ -80,13 +82,13 @@ ms.locfileid: "91585457"
 
 1. Öffnen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Projektmappe "SiteColumnProjectItem".
 
-2. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den **Projektmappenknoten sitecolumnprojectitem** , klicken Sie auf **Hinzufügen**, und wählen Sie dann **Neues Projekt**aus.
+2. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den **Projektmappenknoten sitecolumnprojectitem** , klicken Sie auf **Hinzufügen**, und wählen Sie dann **Neues Projekt** aus.
 
 3. Stellen Sie oben im Dialogfeld **Neues Projekt hinzufügen** sicher, dass **.NET Framework 4,5** in der Liste der .NET Framework Versionen ausgewählt ist.
 
 4. Erweitern Sie den Knoten **Visual c#** oder den Knoten **Visual Basic** , und wählen Sie den Knoten **Windows** aus.
 
-5. Wählen Sie in der Liste der Projektvorlagen **WPF-Benutzer Steuerelement Bibliothek**aus, benennen Sie das Projekt **projecttemplatewizard**, und wählen Sie dann die Schaltfläche **OK** aus.
+5. Wählen Sie in der Liste der Projektvorlagen **WPF-Benutzer Steuerelement Bibliothek** aus, benennen Sie das Projekt **projecttemplatewizard**, und wählen Sie dann die Schaltfläche **OK** aus.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das Projekt **projecttemplatewizard** hinzu und öffnet die Standarddatei UserControl1. XAML.
 
@@ -94,7 +96,7 @@ ms.locfileid: "91585457"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>So erstellen Sie das SharePoint-Befehlsprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten sitecolumnprojectitem, klicken Sie auf **Hinzufügen**, und wählen Sie dann **Neues Projekt**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projektmappenknoten sitecolumnprojectitem, klicken Sie auf **Hinzufügen**, und wählen Sie dann **Neues Projekt** aus.
 
 2. Wählen Sie oben im Dialogfeld **Neues Projekt hinzufügen** **.NET Framework 3,5** in der Liste der .NET Framework Versionen aus.
 
@@ -111,15 +113,15 @@ ms.locfileid: "91585457"
 
 #### <a name="to-configure-the-wizard-project"></a>So konfigurieren Sie ein Assistentenprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projekt Knoten **projecttemplatewizard** , und wählen Sie dann **Eigenschaften**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projekt Knoten **projecttemplatewizard** , und wählen Sie dann **Eigenschaften** aus.
 
-2. Wählen Sie im **Projekt-Designer**die Registerkarte **Anwendung** für ein Visual c#-Projekt oder die Registerkarte **Kompilieren** für ein Visual Basic Projekt aus.
+2. Wählen Sie im **Projekt-Designer** die Registerkarte **Anwendung** für ein Visual c#-Projekt oder die Registerkarte **Kompilieren** für ein Visual Basic Projekt aus.
 
 3. Stellen Sie sicher, dass für das Zielframework .NET Framework 4.5 und nicht .NET Framework 4.5 Client Profile festgelegt ist.
 
      Weitere Informationen finden Sie unter Gewusst [wie: Ausrichten auf eine Version der .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-4. Öffnen Sie das Kontextmenü für das Projekt **projecttemplatewizard** , wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Element**aus.
+4. Öffnen Sie das Kontextmenü für das Projekt **projecttemplatewizard** , wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Element** aus.
 
 5. Wählen Sie das Element **Fenster (WPF)** aus, benennen Sie das Element **wizardwindow**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
@@ -135,7 +137,7 @@ ms.locfileid: "91585457"
 
     - CommandIds
 
-8. Öffnen Sie das Kontextmenü für den Projekt Knoten **projecttemplatewizard** , und wählen Sie dann **Verweis hinzufügen**aus.
+8. Öffnen Sie das Kontextmenü für den Projekt Knoten **projecttemplatewizard** , und wählen Sie dann **Verweis hinzufügen** aus.
 
 9. Erweitern Sie **den Knoten** Assemblys, wählen Sie den Knoten **Erweiterungen** aus, und aktivieren Sie dann die Kontrollkästchen neben den folgenden Assemblys:
 
@@ -155,19 +157,19 @@ ms.locfileid: "91585457"
 
 10. Wählen Sie die Schaltfläche **OK** aus, um die Assemblys dem Projekt hinzuzufügen.
 
-11. Wählen Sie in **Projektmappen-Explorer**unter dem Ordner **Verweise** für das Projekt **projecttemplatewizard** die Option **umvdte**aus.
+11. Wählen Sie in **Projektmappen-Explorer** unter dem Ordner **Verweise** für das Projekt **projecttemplatewizard** die Option **umvdte** aus.
 
 12. Ändern Sie im **Eigenschaften** Fenster den Wert der Eigenschaft **Interop-Typen einbetten** in **false**.
 
-13. Wenn Sie ein Visual Basic Projekt entwickeln, importieren Sie den projecttemplatewizard-Namespace mit dem **Projekt-Designer**in Ihr Projekt.
+13. Wenn Sie ein Visual Basic Projekt entwickeln, importieren Sie den projecttemplatewizard-Namespace mit dem **Projekt-Designer** in Ihr Projekt.
 
      Weitere Informationen finden Sie unter Vorgehens [Weise: Hinzufügen oder Entfernen von importierten Namespaces &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>So konfigurieren Sie das Projekt SharePointCommands
 
-1. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten **SharePointCommands** aus.
+1. Wählen Sie in **Projektmappen-Explorer** den Projekt Knoten **SharePointCommands** aus.
 
-2. Wählen Sie in der Menüleiste **Projekt**und dann  **Vorhandenes Element hinzufügen**aus.
+2. Wählen Sie in der Menüleiste **Projekt** und dann  **Vorhandenes Element hinzufügen** aus.
 
 3. Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zu dem Ordner, der die Code Dateien für das Projekt projecttemplatewizard enthält, und wählen Sie dann die Codedatei **CommandIds** aus.
 
@@ -177,7 +179,7 @@ ms.locfileid: "91585457"
 
 5. Fügen Sie im Projekt **SharePointCommands** eine weitere Codedatei mit dem Namen Befehle hinzu.
 
-6. Wählen Sie das Projekt SharePointCommands aus, und wählen Sie dann auf der Menüleiste die Option **Projekt**  >  **Verweis hinzufügen**aus.
+6. Wählen Sie das Projekt SharePointCommands aus, und wählen Sie dann auf der Menüleiste die Option **Projekt**  >  **Verweis hinzufügen** aus.
 
 7. Erweitern Sie **den Knoten** Assemblys, wählen Sie den Knoten **Erweiterungen** aus, und aktivieren Sie dann die Kontrollkästchen neben den folgenden Assemblys:
 
@@ -270,7 +272,7 @@ ms.locfileid: "91585457"
 
 #### <a name="to-create-the-second-wizard-page-ui"></a>So erstellen Sie die Benutzeroberfläche für die zweite Seite des Assistenten
 
-1. Öffnen Sie im Projekt projecttemplatewizard das Kontextmenü für die Datei Page2. XAML, und wählen Sie dann **Öffnen**aus.
+1. Öffnen Sie im Projekt projecttemplatewizard das Kontextmenü für die Datei Page2. XAML, und wählen Sie dann **Öffnen** aus.
 
      Das Benutzersteuerelement wird im Designer geöffnet.
 
@@ -325,7 +327,7 @@ ms.locfileid: "91585457"
 
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>So entfernen Sie die key.snk-Datei aus der Projektvorlage
 
-1. Öffnen Sie in **Projektmappen-Explorer**unter dem Knoten **sitecolumnprojecttemplate** das Kontextmenü für die Datei **Key. snk** , und wählen Sie dann **Löschen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** unter dem Knoten **sitecolumnprojecttemplate** das Kontextmenü für die Datei **Key. snk** , und wählen Sie dann **Löschen** aus.
 
 2. Klicken Sie im angezeigten Bestätigungsdialogfeld auf die Schaltfläche **OK**.
 
@@ -365,7 +367,7 @@ ms.locfileid: "91585457"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>So signieren Sie die Assistenten-Assembly mit einem starkem Namen
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **projecttemplatewizard** , und wählen Sie dann **Eigenschaften**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **projecttemplatewizard** , und wählen Sie dann **Eigenschaften** aus.
 
 2. Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.
 
@@ -377,7 +379,7 @@ ms.locfileid: "91585457"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>So rufen Sie das öffentliche Schlüsseltoken der Assistenten-Assembly ab
 
-1. Klicken Sie im **Startmenü**auf **Alle Programme**, wählen Sie **Microsoft Visual Studio**aus, wählen Sie **Visual Studio-Tools**aus, und wählen Sie dann **Developer-Eingabeaufforderung**aus.
+1. Klicken Sie im **Startmenü** auf **Alle Programme**, wählen Sie **Microsoft Visual Studio** aus, wählen Sie **Visual Studio-Tools** aus, und wählen Sie dann **Developer-Eingabeaufforderung** aus.
 
      Ein Visual Studio-Eingabeaufforderungsfenster wird geöffnet.
 
@@ -393,7 +395,7 @@ ms.locfileid: "91585457"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>So fügen Sie einen Verweis auf die Assistenten-Assembly in der VSTEMPLATE-Datei hinzu
 
-1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten **sitecolumnprojecttemplate** , und öffnen Sie die Datei sitecolumnprojecttemplate. vstemplate.
+1. Erweitern Sie in **Projektmappen-Explorer** den Projekt Knoten **sitecolumnprojecttemplate** , und öffnen Sie die Datei sitecolumnprojecttemplate. vstemplate.
 
 2. Fügen Sie das folgende `WizardExtension`-Element zwischen dem `</TemplateContent>`-Tag und dem `</VSTemplate>`-Tag am Ende der Datei hinzu. Ersetzen Sie den *Tokenwert* des- `PublicKeyToken` Attributs durch das öffentliche Schlüssel Token, das Sie im vorherigen Verfahren abgerufen haben.
 
@@ -438,7 +440,7 @@ ms.locfileid: "91585457"
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>So fügen Sie den Assistenten dem VSIX-Paket hinzu
 
-1. Öffnen Sie in **Projektmappen-Explorer**im Projekt **sitecolumnprojectitem** das Kontextmenü für die Datei " **Source. Extension. vsixmanifest** ", und wählen Sie dann **Öffnen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** im Projekt **sitecolumnprojectitem** das Kontextmenü für die Datei " **Source. Extension. vsixmanifest** ", und wählen Sie dann **Öffnen** aus.
 
      Die Datei wird von Visual Studio im Manifest-Editor geöffnet.
 
@@ -446,23 +448,23 @@ ms.locfileid: "91585457"
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. Assembly**aus.
+3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. Assembly** aus.
 
-4. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+4. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
-5. Wählen Sie in der Liste **Projekt** die Option **projecttemplatewizard**aus, und klicken Sie dann auf die Schaltfläche **OK** .
+5. Wählen Sie in der Liste **Projekt** die Option **projecttemplatewizard** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
 6. Wählen Sie auf der Registerkarte **Objekte** des Editors erneut die Schaltfläche **neu** aus.
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-7. Geben Sie in der Liste **Typ** den Namen **SharePoint. Commands. v4**ein.
+7. Geben Sie in der Liste **Typ** den Namen **SharePoint. Commands. v4** ein.
 
-8. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+8. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 9. Wählen Sie in der Liste **Projekt** das Projekt **SharePointCommands** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-10. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen**aus, und vergewissern Sie sich,  >  **Build Solution**dass die Projekt Mappe ohne Fehler erstellt wird.
+10. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass die Projekt Mappe ohne Fehler erstellt wird.
 
 ## <a name="test-the-wizard"></a>Testen des Assistenten
  Sie können den Assistenten jetzt testen. Debuggen Sie die Projektmappe SiteColumnProjectItem zunächst in der experimentellen Instanz von Visual Studio. Anschließend testen Sie den Assistenten für das Websitespaltenprojekt in der experimentellen Instanz von Visual Studio. Erstellen und führen Sie zum Schluss das Projekt aus, um sicherzustellen, dass die Websitespalte ordnungsgemäß funktioniert.
@@ -473,37 +475,37 @@ ms.locfileid: "91585457"
 
 2. Öffnen Sie im Projekt "ProjectTemplateWizard" die Codedatei "SiteColumnProjectWizard", und fügen Sie dann der ersten Codezeile in der `RunStarted`-Methode einen Haltepunkt hinzu.
 
-3. Wählen Sie in der Menüleiste **debugausnahmen**aus  >  **Exceptions**.
+3. Wählen Sie in der Menüleiste **debugausnahmen** aus  >  **Exceptions**.
 
 4. Stellen Sie im Dialogfeld **Ausnahmen** sicher, dass die Kontrollkästchen ausgelöste **und** **Benutzer unbehandelt** für **Common Language Runtime-Ausnahmen** deaktiviert sind, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Starten Sie das Debugging, indem Sie die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **Debuggen starten**auswählen.
+5. Starten Sie das Debugging, indem Sie die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **Debuggen starten** auswählen.
 
      Die Erweiterung wird unter "%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Websitespalte\1.0 installiert", und eine experimentelle Instanz von Visual Studio wird gestartet. Sie testen das Projektelement in dieser Instanz von Visual Studio.
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>So testen Sie den Assistenten in Visual Studio
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus.
 
 2. Erweitern Sie den **Visual c#** -Knoten oder den **Visual Basic** -Knoten (je nach der von der Projektvorlage unterstützten Sprache), erweitern Sie den **SharePoint** -Knoten, und wählen Sie dann den Knoten **2010** aus.
 
-3. Wählen Sie in der Liste der Projektvorlagen die Option **Website Spalte**aus, benennen Sie das Projekt **sitecolumnwizardtest**, und klicken Sie dann auf die Schaltfläche **OK** .
+3. Wählen Sie in der Liste der Projektvorlagen die Option **Website Spalte** aus, benennen Sie das Projekt **sitecolumnwizardtest**, und klicken Sie dann auf die Schaltfläche **OK** .
 
 4. Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `RunStarted`-Methode festgelegt haben.
 
-5. Fahren Sie mit dem Debuggen des Projekts fort, indem Sie die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **fortfahren**auswählen
+5. Fahren Sie mit dem Debuggen des Projekts fort, indem Sie die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **fortfahren** auswählen
 
-6. Geben Sie im Assistenten zum Anpassen von **SharePoint**die URL der Website ein, die Sie zum Debuggen verwenden möchten, und klicken Sie dann auf die Schaltfläche **weiter** .
+6. Geben Sie im Assistenten zum Anpassen von **SharePoint** die URL der Website ein, die Sie zum Debuggen verwenden möchten, und klicken Sie dann auf die Schaltfläche **weiter** .
 
-7. Treffen Sie auf der zweiten Seite des Assistenten zum Anpassen von **SharePoint**die folgenden Optionen:
+7. Treffen Sie auf der zweiten Seite des Assistenten zum Anpassen von **SharePoint** die folgenden Optionen:
 
-   - Wählen Sie in der Liste **Typ** die Option **Boolesch**aus.
+   - Wählen Sie in der Liste **Typ** die Option **Boolesch** aus.
 
-   - Wählen Sie in der Liste **Gruppe** die Option **benutzerdefinierte Ja/Nein-Spalten**aus.
+   - Wählen Sie in der Liste **Gruppe** die Option **benutzerdefinierte Ja/Nein-Spalten** aus.
 
-   - Geben Sie im Feld **Name** die **Spalte meine Yes/No-Spalte**ein, und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
+   - Geben Sie im Feld **Name** die **Spalte meine Yes/No-Spalte** ein, und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
 
-     In **Projektmappen-Explorer**wird ein neues Projekt angezeigt, das ein Projekt Element mit dem Namen **field1**enthält, und Visual Studio öffnet die *Elements.xml* -Datei des Projekts im Editor.
+     In **Projektmappen-Explorer** wird ein neues Projekt angezeigt, das ein Projekt Element mit dem Namen **field1** enthält, und Visual Studio öffnet die *Elements.xml* -Datei des Projekts im Editor.
 
 8. Vergewissern Sie sich, dass *Elements.xml* die Werte enthält, die Sie im Assistenten angegeben haben.
 
@@ -516,22 +518,22 @@ ms.locfileid: "91585457"
     > [!NOTE]
     > Wenn das Dialogfeld **Skript Debugging deaktiviert** angezeigt wird, klicken Sie auf die Schaltfläche **Ja** , um das Debuggen des Projekts fortzusetzen.
 
-2. Wählen Sie im Menü **Website Aktionen** die Option **Website Einstellungen**aus.
+2. Wählen Sie im Menü **Website Aktionen** die Option **Website Einstellungen** aus.
 
-3. Wählen Sie auf der Seite Site Einstellungen **unter Kataloge**den Link **Site Spalten** aus.
+3. Wählen Sie auf der Seite Site Einstellungen **unter Kataloge** den Link **Site Spalten** aus.
 
-4. Überprüfen Sie in der Liste der Website Spalten, ob eine **benutzerdefinierte Gruppe Ja/Nein-Spalten** eine Spalte mit dem Namen **meine Ja/Nein-Spalte**enthält, und schließen Sie dann den Webbrowser.
+4. Überprüfen Sie in der Liste der Website Spalten, ob eine **benutzerdefinierte Gruppe Ja/Nein-Spalten** eine Spalte mit dem Namen **meine Ja/Nein-Spalte** enthält, und schließen Sie dann den Webbrowser.
 
 ## <a name="clean-up-the-development-computer"></a>Bereinigen des Entwicklungs Computers
  Nachdem Sie die Tests des Projektelements abgeschlossen haben, entfernen Sie die Projektvorlage aus der experimentellen Instanz von Visual Studio.
 
 #### <a name="to-clean-up-the-development-computer"></a>So bereinigen Sie den Entwicklungscomputer
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 
-2. Wählen Sie in der Liste der Erweiterungen **Website Spalte**aus, und klicken Sie dann auf die Schaltfläche **deinstallieren** .
+2. Wählen Sie in der Liste der Erweiterungen **Website Spalte** aus, und klicken Sie dann auf die Schaltfläche **deinstallieren** .
 
 3. Wählen Sie im angezeigten Dialogfeld die Schaltfläche **Ja** , um zu bestätigen, dass Sie die Erweiterung deinstallieren möchten, und wählen Sie dann die Schaltfläche **jetzt neu starten** aus, um die Deinstallation abzuschließen.
 

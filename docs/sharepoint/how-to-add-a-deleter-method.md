@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen einer Deleter-Methode | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie eine Deleter-Methode in den BDC-Designer von Visual Studio hinzufügen, sodass ein Endbenutzer einen Datensatz aus einer externen Liste auf einer SharePoint-Website löschen kann.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,25 +21,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017044"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915439"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Gewusst wie: Hinzufügen einer Deleter-Methode
   Sie können Endbenutzern das Löschen eines Datensatzes aus einer externen Liste auf einer SharePoint-Website ermöglichen, indem Sie dem Modell eine Deleter-Methode hinzufügen. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-deleter-method"></a>So erstellen Sie eine Deleter-Methode
 
-1. Wählen Sie im **BDC-Designer**eine Entität aus.
+1. Wählen Sie im **BDC-Designer** eine Entität aus.
 
-2. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **BDC-Methoden Details**anzeigen aus.
+2. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
 
     Das Fenster **BDC-Methoden Details** wird geöffnet. Weitere Informationen zu diesem Fenster finden Sie unter [Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. Wählen Sie in der Liste **Methode hinzufügen** die Option **Deleter-Methode erstellen**aus.
+3. Wählen Sie in der Liste **Methode hinzufügen** die Option **Deleter-Methode erstellen** aus.
 
     Visual Studio fügt dem Modell die folgenden Elemente hinzu. Diese Elemente werden im Fenster **Details der BDC-Methode** angezeigt.
 
@@ -51,7 +53,7 @@ ms.locfileid: "86017044"
 
      Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü der Dienst Code Datei, die für die Entität generiert wurde, und wählen Sie dann **Code anzeigen**aus.
+4. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü der Dienst Code Datei, die für die Entität generiert wurde, und wählen Sie dann **Code anzeigen** aus.
 
     Die Entitäts Dienst-Codedatei wird im Code-Editor geöffnet. Weitere Informationen zur Entitäts Dienst-Codedatei finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 

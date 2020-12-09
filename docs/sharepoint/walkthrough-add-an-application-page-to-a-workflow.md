@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow | Microsoft-Dokumentation'
+description: Fügen Sie in dieser exemplarischen Vorgehensweise eine Anwendungsseite zu einer SharePoint-Workflow-Projekt Mappe hinzu. Ändern Sie den Workflow Code. Erstellen, codieren und testen Sie die Anwendungsseite.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015486"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915660"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die von einem Workflow abgeleitete Daten einem Workflow Projekt anzeigt. Es baut auf dem Projekt auf, das im Thema Exemplarische Vorgehensweise [: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)beschrieben wird.
@@ -44,7 +46,7 @@ ms.locfileid: "86015486"
 
 - Sie müssen das Projekt auch im Thema Exemplarische Vorgehensweise [: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)ausführen.
 
-## <a name="ammend-the-workflow-code"></a>Den Workflow Code ammend
+## <a name="amend-the-workflow-code"></a>Ändern des Workflow Codes
  Fügen Sie zunächst dem Workflow eine Codezeile hinzu, um den Wert der Spalte Ergebnis auf den Betrag des Ausgaben Berichts festzulegen. Dieser Wert wird später in der Zusammenfassungs Berechnung für Ausgaben Berichte verwendet.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>So legen Sie den Wert der Ergebnisspalte im Workflow fest
@@ -101,7 +103,7 @@ ms.locfileid: "86015486"
 
 #### <a name="to-code-the-application-page"></a>So codieren Sie die Anwendungsseite
 
-1. Wählen Sie den Knoten " **ApplicationPage1. aspx** " aus, und wählen Sie dann in der Menüleiste Code **anzeigen**aus,  >  **Code** um den Code hinter der Anwendungsseite anzuzeigen.
+1. Wählen Sie den Knoten " **ApplicationPage1. aspx** " aus, und wählen Sie dann in der Menüleiste Code **anzeigen** aus,  >  **Code** um den Code hinter der Anwendungsseite anzuzeigen.
 
 2. Ersetzen **Sie die using** -Anweisung oder die **Import** -Anweisung (abhängig von ihrer Programmiersprache) am Anfang der Klasse mit folgendem:
 
@@ -349,7 +351,7 @@ ms.locfileid: "86015486"
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Vorgehensweise: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)
-- [Erstellen von Anwendungs Seiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [How to: Erstellen einer Anwendungsseite](../sharepoint/how-to-create-an-application-page.md)
+- [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

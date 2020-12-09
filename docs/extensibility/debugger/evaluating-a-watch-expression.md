@@ -1,5 +1,7 @@
 ---
 title: Auswerten eines Überwachungs Ausdrucks | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio evaluatesync verwendet, wenn es bereit ist, den Wert eines Watch-Ausdrucks anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a239e430338e88a0be4bc35ad1c357925f7d8f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d7433c9d4c2d5851dc5078a41c33a4391a75d86
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738854"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915673"
 ---
 # <a name="evaluate-a-watch-expression"></a>Auswerten eines Überwachungs Ausdrucks
 > [!IMPORTANT]
@@ -171,6 +173,6 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Auswerten eines Überwachungs Fenster Ausdrucks](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [Beispiel Implementierung der Ausdrucks Auswertung](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

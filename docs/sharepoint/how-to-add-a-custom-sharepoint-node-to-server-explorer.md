@@ -1,6 +1,8 @@
 ---
 title: 'Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer | Microsoft-Dokumentation'
 titleSuffix: ''
+description: Fügen Sie einen benutzerdefinierten SharePoint-Knoten zu Server-Explorer in Visual Studio hinzu. Zeigen Sie zusätzliche SharePoint-Komponenten an, die standardmäßig nicht in Server-Explorer angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584884"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915465"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer
-  Sie können benutzerdefinierte Knoten unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer**hinzufügen. Dies ist hilfreich, wenn Sie zusätzliche SharePoint-Komponenten anzeigen möchten, die nicht standardmäßig in **Server-Explorer** angezeigt werden. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Sie können benutzerdefinierte Knoten unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer** hinzufügen. Dies ist hilfreich, wenn Sie zusätzliche SharePoint-Komponenten anzeigen möchten, die nicht standardmäßig in **Server-Explorer** angezeigt werden. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
  Um einen benutzerdefinierten Knoten hinzuzufügen, erstellen Sie zuerst eine Klasse, die den neuen Knoten definiert. Erstellen Sie dann eine Erweiterung, mit der der Knoten einem vorhandenen Knoten als untergeordnetes Element hinzugefügt wird.
 
@@ -46,7 +48,7 @@ ms.locfileid: "91584884"
 
     - <xref:System.ComponentModel.Composition.ExportAttribute>. Mit diesem Attribut kann Visual Studio Ihre Implementierung ermitteln und laden <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> . Übergeben <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> Sie den Typ an den Attributkonstruktor.
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. In einer Knoten Definition gibt dieses Attribut den Zeichen folgen Bezeichner für den neuen Knoten an. Es wird empfohlen, dass Sie das Format *Firmenname*verwenden. *Knoten Name* , um sicherzustellen, dass alle Knoten über einen eindeutigen Bezeichner verfügen.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. In einer Knoten Definition gibt dieses Attribut den Zeichen folgen Bezeichner für den neuen Knoten an. Es wird empfohlen, dass Sie das Format *Firmenname* verwenden. *Knoten Name* , um sicherzustellen, dass alle Knoten über einen eindeutigen Bezeichner verfügen.
 
 5. Verwenden Sie in ihrer Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> Methode Member des *typeDefinition* -Parameters, um das Verhalten des neuen Knotens zu konfigurieren. Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> Objekt, das den Zugriff auf die in der- <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> Schnittstelle definierten Ereignisse ermöglicht.
 
@@ -65,7 +67,7 @@ ms.locfileid: "91584884"
 
      Zum angeben integrierter Knoten Typen, die von Visual Studio bereitgestellt werden, übergeben Sie einen der folgenden Enumerationswerte an den Attributkonstruktor:
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Verwenden Sie diese Werte, um Standort Verbindungsknoten (die Knoten, auf denen Site-URLs angezeigt werden), Standort Knoten oder alle anderen übergeordneten Knoten in **Server-Explorer**anzugeben.
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Verwenden Sie diese Werte, um Standort Verbindungsknoten (die Knoten, auf denen Site-URLs angezeigt werden), Standort Knoten oder alle anderen übergeordneten Knoten in **Server-Explorer** anzugeben.
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Verwenden Sie diese Werte, um einen der integrierten Knoten anzugeben, die eine einzelne Komponente auf einer SharePoint-Website darstellen, z. b. einen Knoten, der eine Liste, ein Feld oder einen Inhaltstyp darstellt.
 
@@ -73,13 +75,13 @@ ms.locfileid: "91584884"
 
 5. Fügen Sie im-Ereignishandler der Auflistung untergeordneter <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> Knoten des- <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> Objekts, das durch den Parameter Ereignis Argumente verfügbar gemacht wird, den neuen Knoten hinzu.
 
-     Im folgenden Codebeispiel wird veranschaulicht, wie der neue Knoten dem Knoten SharePoint-Website in **Server-Explorer**als untergeordnetes Element hinzugefügt wird.
+     Im folgenden Codebeispiel wird veranschaulicht, wie der neue Knoten dem Knoten SharePoint-Website in **Server-Explorer** als untergeordnetes Element hinzugefügt wird.
 
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]
 
 ## <a name="complete-example"></a>Vollständiges Beispiel
- Im folgenden Codebeispiel wird der gesamte Code bereitgestellt, um einen einfachen Knoten zu definieren und ihn als untergeordnetes Element des SharePoint-Website Knotens in **Server-Explorer**hinzuzufügen.
+ Im folgenden Codebeispiel wird der gesamte Code bereitgestellt, um einen einfachen Knoten zu definieren und ihn als untergeordnetes Element des SharePoint-Website Knotens in **Server-Explorer** hinzuzufügen.
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]

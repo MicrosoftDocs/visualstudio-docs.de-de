@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Hinzufügen von Funktions Ereignis Empfängern | Microsoft-Dokumentation'
+description: Fügen Sie in dieser exemplarischen Vorgehensweise Funktions Ereignis Empfänger hinzu, bei denen es sich um Methoden handelt, die ausgeführt werden, wenn eine SharePoint-Funktion installiert, aktiviert, deaktiviert oder entfernt wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015365"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915595"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktions Ereignis Empfängern
-  Funktions Ereignis Empfänger sind Methoden, die ausgeführt werden, wenn eines der folgenden Funktions bezogenen Ereignisse in SharePoint auftritt:
+Funktions Ereignis Empfänger sind Methoden, die ausgeführt werden, wenn eines der folgenden Funktions bezogenen Ereignisse in SharePoint auftritt:
 
 - Eine Funktion ist installiert.
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015365"
 
 - Eine Funktion wird entfernt.
 
-  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Ereignis Empfänger zu einer Funktion in einem SharePoint-Projekt hinzugefügt wird. Es werden die folgenden Aufgaben veranschaulicht:
+In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Ereignis Empfänger zu einer Funktion in einem SharePoint-Projekt hinzugefügt wird. Es werden die folgenden Aufgaben veranschaulicht:
 
 - Erstellen eines leeren Projekts mit einem Funktions Ereignis Empfänger.
 
@@ -64,7 +66,7 @@ ms.locfileid: "86015365"
 
      Sie verwenden diesen Projekttyp für Funktions Ereignis Empfänger, da Sie keine Projektvorlage haben.
 
-4. Geben Sie im Feld **Name den Namen** **FeatureEvtTest**ein, und klicken Sie dann auf die Schaltfläche **OK** , um den Assistenten zum Anpassen von **SharePoint**anzuzeigen.
+4. Geben Sie im Feld **Name den Namen** **FeatureEvtTest** ein, und klicken Sie dann auf die Schaltfläche **OK** , um den Assistenten zum Anpassen von **SharePoint** anzuzeigen.
 
 5. Geben Sie auf der Seite **Site und Sicherheitsebene für Debugging angeben** die URL für die SharePoint-Serversite ein, der Sie das neue benutzerdefinierte Feld Element hinzufügen möchten, oder verwenden Sie den Standard Speicherort (http:// \<*system name*> /).
 
@@ -83,7 +85,7 @@ ms.locfileid: "86015365"
 
 2. Öffnen Sie unter dem Knoten **Features** das Kontextmenü für **Feature1**, und wählen Sie dann **Ereignis Empfänger hinzufügen** aus, um der Funktion einen Ereignis Empfänger hinzuzufügen.
 
-     Dadurch wird eine Codedatei unter Feature1 hinzugefügt. In diesem Fall wird Sie abhängig von der Entwicklungssprache Ihres Projekts entweder *Feature1.EventReceiver.cs* oder *Feature1. EventReceiver. vb*benannt.
+     Dadurch wird eine Codedatei unter Feature1 hinzugefügt. In diesem Fall wird Sie abhängig von der Entwicklungssprache Ihres Projekts entweder *Feature1.EventReceiver.cs* oder *Feature1. EventReceiver. vb* benannt.
 
 3. Wenn Ihr Projekt in geschrieben ist [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] , fügen Sie den folgenden Code am Anfang des Ereignis Empfängers hinzu, wenn er nicht bereits vorhanden ist:
 
@@ -99,13 +101,13 @@ ms.locfileid: "86015365"
 
 #### <a name="to-test-the-feature-event-receiver"></a>So testen Sie den Funktions Ereignis Empfänger
 
-1. Legen Sie den Wert der Eigenschaft **aktive Bereitstellungs Konfiguration** des Projekts auf **keine Aktivierung**fest.
+1. Legen Sie den Wert der Eigenschaft **aktive Bereitstellungs Konfiguration** des Projekts auf **keine Aktivierung** fest.
 
      Durch Festlegen dieser Eigenschaft wird verhindert, dass das Feature in SharePoint aktiviert wird, und Sie können Funktions Ereignis Empfänger Debuggen. Weitere Informationen finden Sie unter [Debuggen von SharePoint-Lösungen](../sharepoint/debugging-sharepoint-solutions.md).
 
 2. Drücken Sie die Taste **F5** , um das Projekt auszuführen und in SharePoint bereitzustellen.
 
-3. Öffnen Sie oben auf der SharePoint-Webseite das Menü **Website Aktionen** , und wählen Sie dann **Website Einstellungen**aus.
+3. Öffnen Sie oben auf der SharePoint-Webseite das Menü **Website Aktionen** , und wählen Sie dann **Website Einstellungen** aus.
 
 4. Wählen Sie auf der Seite **Standorteinstellungen** im Abschnitt **Website Aktionen** den Link **Website Features verwalten** aus.
 
@@ -119,5 +121,5 @@ ms.locfileid: "86015365"
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Vorgehensweise: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md)
+- [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

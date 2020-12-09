@@ -1,5 +1,7 @@
 ---
 title: Formular Unterstützung in Workflows | Microsoft-Dokumentation
+description: 'Informieren Sie sich über die Formular Unterstützung in SharePoint-Workflows. In einem Workflow können vier Arten von Formularen verwendet werden: Association, Initiierung, Aufgabe und Änderung.'
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b064df6729b914af7758cde86b03b886fd0e5d26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986263"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915504"
 ---
 # <a name="form-support-in-workflows"></a>Formular Unterstützung in Workflows
   In einem Workflow können vier Arten von Formularen verwendet werden: Association, Initiierung, Aufgabe und Änderung. Diese Formular Typen können entweder auf einem ASPX-Formular oder auf einem InfoPath-Formular basieren. Die Unterstützungs Ebene, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] für ein bestimmtes Formular bereitstellt, hängt von verschiedenen Faktoren ab, die in den folgenden Tabellen beschrieben werden. Weitere Informationen zu Workflow Formular Typen finden Sie unter [Übersicht über Workflow Formulare](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14)).
@@ -46,7 +48,7 @@ ms.locfileid: "72986263"
 |Aufgabe|-Auf das Formular wird in der *Elements.xml* -Datei des Workflows verwiesen.<br />-Die *Elements.xml* Datei des Workflows wird nicht umgestaltet.|-Das Formular wird importiert, aber nicht im *Elements.xml* des Workflows referenziert.<br />-Die *Elements.xml* Datei des Workflows wird nicht umgestaltet. **Hinweis:**  Regeln und Eigenschaften müssen hinzugefügt und geändert werden, damit dieses Szenario funktioniert.|
 |Modifikation (Modification)|Nicht zutreffend Aspx-Änderungs Formulare können nicht in SharePoint Designer erstellt werden.|Nicht zutreffend InfoPath-Änderungs Formulare können nicht in SharePoint Designer erstellt werden, mit Ausnahme des integrierten SharePoint-Server Workflows, der beim Exportieren des Workflows nicht in der wsp-Datei enthalten ist.|
 
-## <a name="see-also"></a>Siehe auch
-- [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Erstellen von SharePoint-Workflow Lösungen](../sharepoint/creating-sharepoint-workflow-solutions.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [Erstellen von SharePoint-Workflow-Projektmappen](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Importieren von Elementen aus einer vorhandenen SharePoint-Website](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)

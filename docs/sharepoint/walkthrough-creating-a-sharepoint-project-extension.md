@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung | Microsoft-Dokumentation'
+description: Erstellen Sie eine SharePoint-Projekt Erweiterung, mit der Sie auf Ereignisse auf Projektebene reagieren können, z. b. Wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,17 +16,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739927"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914867"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Erweiterung für SharePoint-Projekte erstellen. Sie können eine Projekt Erweiterung zum reagieren auf Ereignisse auf Projektebene verwenden, z. b. Wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird. Sie können auch benutzerdefinierte Eigenschaften hinzufügen oder reagieren, wenn sich ein Eigenschafts Wert ändert. Im Gegensatz zu Projekt Element Erweiterungen können Projekt Erweiterungen nicht einem bestimmten SharePoint-Projekttyp zugeordnet werden. Wenn Sie eine Projekt Erweiterung erstellen, wird die Erweiterung geladen, wenn eine beliebige Art von SharePoint-Projekt in geöffnet wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
- In dieser exemplarischen Vorgehensweise erstellen Sie eine benutzerdefinierte boolesche Eigenschaft, die zu einem beliebigen in erstellten SharePoint-Projekt hinzugefügt wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Wenn diese Eigenschaft auf **true**festgelegt ist, fügt die neue Eigenschaft dem Projekt einen Bild Ressourcen Ordner hinzu, oder ordnet diesen zu. Wenn der Wert auf **false**festgelegt ist, wird der Ordner Images entfernt, sofern vorhanden. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen und entfernen](../sharepoint/how-to-add-and-remove-mapped-folders.md)von zugeordneten Ordnern.
+ In dieser exemplarischen Vorgehensweise erstellen Sie eine benutzerdefinierte boolesche Eigenschaft, die zu einem beliebigen in erstellten SharePoint-Projekt hinzugefügt wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Wenn diese Eigenschaft auf **true** festgelegt ist, fügt die neue Eigenschaft dem Projekt einen Bild Ressourcen Ordner hinzu, oder ordnet diesen zu. Wenn der Wert auf **false** festgelegt ist, wird der Ordner Images entfernt, sofern vorhanden. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen und entfernen](../sharepoint/how-to-add-and-remove-mapped-folders.md)von zugeordneten Ordnern.
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
 
@@ -69,19 +71,19 @@ ms.locfileid: "90739927"
 
 4. Wählen Sie oben im Dialogfeld **.NET Framework 4,5** in der Liste der .NET Framework Versionen aus, und wählen Sie dann die **VSIX-Projekt** Vorlage aus.
 
-5. Geben Sie im Feld **Name den Namen** **ProjectExtensionPackage**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+5. Geben Sie im Feld **Name den Namen** **ProjectExtensionPackage** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     Das Projekt **ProjectExtensionPackage** wird in **Projektmappen-Explorer**angezeigt.
+     Das Projekt **ProjectExtensionPackage** wird in **Projektmappen-Explorer** angezeigt.
 
 #### <a name="to-create-the-extension-project"></a>So erstellen Sie das Erweiterungsprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Projekt**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Projekt** aus.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** , und wählen Sie dann **Windows**aus.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** , und wählen Sie dann **Windows** aus.
 
 3. Wählen Sie oben im Dialogfeld **.NET Framework 4,5** in der Liste der .NET Framework Versionen aus, und wählen Sie dann die Projektvorlage **Klassenbibliothek** aus.
 
-4. Geben Sie im Feld **Name** den **Text ProjectExtension**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Geben Sie im Feld **Name** den **Text ProjectExtension** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das Projekt **ProjectExtension** hinzu und öffnet die standardmäßige Class1-Codedatei.
 
@@ -94,13 +96,13 @@ ms.locfileid: "90739927"
 
 1. Fügen Sie dem Projekt ProjectExtension eine Codedatei mit dem Namen **CustomProperty** hinzu.
 
-2. Öffnen Sie das Kontextmenü für das Projekt **ProjectExtension** , und wählen Sie dann **Verweis hinzufügen**aus.
+2. Öffnen Sie das Kontextmenü für das Projekt **ProjectExtension** , und wählen Sie dann **Verweis hinzufügen** aus.
 
 3. Wählen Sie im Dialogfeld **Verweis-Manager-CustomProperty** den Knoten **Framework** aus, und aktivieren Sie dann das Kontrollkästchen neben den Assemblys System. ComponentModel. Composition und System. Windows. Forms.
 
 4. Wählen Sie den Knoten **Erweiterungen** aus, aktivieren Sie das Kontrollkästchen neben den Assemblys Microsoft. VisualStudio. SharePoint und svdte, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Wählen Sie in **Projektmappen-Explorer**unter dem Ordner **Verweise** für das Projekt **ProjectExtension** die Option **umvdte**aus.
+5. Wählen Sie in **Projektmappen-Explorer** unter dem Ordner **Verweise** für das Projekt **ProjectExtension** die Option **umvdte** aus.
 
 6. Ändern Sie im Fenster **Eigenschaften** die Eigenschaft **Interop-Typen einbetten** in **false**.
 
@@ -114,7 +116,7 @@ ms.locfileid: "90739927"
      [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
      [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
 
-## <a name="build-the-solution"></a>Erstellen Sie die Lösung.
+## <a name="build-the-solution"></a>Erstellen der Projektmappe
  Erstellen Sie als nächstes die Projekt Mappe, um sicherzustellen, dass Sie fehlerfrei kompiliert wird.
 
 #### <a name="to-build-the-solution"></a>So erstellen Sie die Projektmappe
@@ -126,13 +128,13 @@ ms.locfileid: "90739927"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>So erstellen und konfigurieren Sie das VSIX-Paket
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann die Schaltfläche **Öffnen** aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für die Datei "Source. Extension. vsixmanifest", und wählen Sie dann die Schaltfläche **Öffnen** aus.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Öffnet die Datei im Manifest-Designer. Die Informationen, die auf der Registerkarte **Metadaten** angezeigt werden, werden auch in den **Erweiterungen und Updates**angezeigt. Alle VSIX-Pakete benötigen die Dateierweiterung. vsixmanifest. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Öffnet die Datei im Manifest-Designer. Die Informationen, die auf der Registerkarte **Metadaten** angezeigt werden, werden auch in den **Erweiterungen und Updates** angezeigt. Alle VSIX-Pakete benötigen die Dateierweiterung. vsixmanifest. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
 
-2. Geben Sie im Feld **Produkt Name** die **Eigenschaft benutzerdefiniertes Projekt**ein.
+2. Geben Sie im Feld **Produkt Name** die **Eigenschaft benutzerdefiniertes Projekt** ein.
 
-3. **Geben Sie**im Feld **Autor** den Text "" ein.
+3. **Geben Sie** im Feld **Autor** den Text "" ein.
 
 4. Geben Sie im Feld **Beschreibung** **eine benutzerdefinierte SharePoint-Projekt Eigenschaft ein, die die Zuordnung des Images-Ressourcen Ordners zum Projekt schaltet**.
 
@@ -140,14 +142,14 @@ ms.locfileid: "90739927"
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird angezeigt.
 
-6. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent**aus.
+6. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent** aus.
 
     > [!NOTE]
     > Dieser Wert entspricht dem `MEFComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Wählen Sie in der Liste **Quelle** das Optionsfeld **ein Projekt in der aktuellen Projekt** Mappe aus.
 
-8. Wählen Sie in der Liste **Projekt** die Option **ProjectExtension**aus.
+8. Wählen Sie in der Liste **Projekt** die Option **ProjectExtension** aus.
 
      Dieser Wert gibt den Namen der Assembly an, die Sie im Projekt aufbauen.
 
@@ -155,11 +157,11 @@ ms.locfileid: "90739927"
 
 10. Klicken Sie in der Menüleiste auf **Datei**  >  **Alle speichern** , wenn Sie fertig sind, und schließen Sie dann den Manifest-Designer.
 
-11. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen**aus, und vergewissern Sie sich,  >  **Build Solution**dass das Projekt ohne Fehler kompiliert wird.
+11. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass das Projekt ohne Fehler kompiliert wird.
 
-12. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ProjectExtensionPackage** , und wählen Sie **im Datei-Explorer** die Schaltfläche Ordner öffnen aus.
+12. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ProjectExtensionPackage** , und wählen Sie **im Datei-Explorer** die Schaltfläche Ordner öffnen aus.
 
-13. Öffnen Sie im **Datei-Explorer**den Buildausgabeordner für das Projekt ProjectExtensionPackage, und überprüfen Sie dann, ob der Ordner eine Datei mit dem Namen ProjectExtensionPackage. vsix enthält.
+13. Öffnen Sie im **Datei-Explorer** den Buildausgabeordner für das Projekt ProjectExtensionPackage, und überprüfen Sie dann, ob der Ordner eine Datei mit dem Namen ProjectExtensionPackage. vsix enthält.
 
      Standardmäßig handelt es sich beim Buildausgabeordner um den Ordner "...\bin\Debug" in dem Ordner mit der Projektdatei.
 
@@ -170,7 +172,7 @@ ms.locfileid: "90739927"
 
 1. Starten Sie mit Administrator Anmelde Informationen neu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , und öffnen Sie dann die Projekt Mappe ProjectExtensionPackage.
 
-2. Starten Sie einen Debugbuild des Projekts, indem Sie entweder die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **Debuggen starten**auswählen.
+2. Starten Sie einen Debugbuild des Projekts, indem Sie entweder die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **Debuggen starten** auswählen.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] installiert die Erweiterung in%USERPROFILE%\appdata\local\microsoft\visualstudio\11.0exp\extensions\condeso\custom Project Property\1.0 und startet eine experimentelle Instanz von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
@@ -186,9 +188,9 @@ ms.locfileid: "90739927"
 
     4. Wählen Sie die **SharePoint 2010-Projekt** Vorlage aus, und geben Sie dann **moduletest** als Namen für das Projekt ein.
 
-4. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten **moduletest** aus.
+4. Wählen Sie in **Projektmappen-Explorer** den Projekt Knoten **moduletest** aus.
 
-     Im Fenster **Eigenschaften** wird ein neuer benutzerdefinierter Eigenschafts Zuordnungs **Bildordner** mit dem Standardwert **false**angezeigt.
+     Im Fenster **Eigenschaften** wird ein neuer benutzerdefinierter Eigenschafts Zuordnungs **Bildordner** mit dem Standardwert **false** angezeigt.
 
 5. Ändern Sie den Wert dieser Eigenschaft in **true**.
 

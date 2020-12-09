@@ -1,5 +1,7 @@
 ---
 title: Auswerten eines Überwachungs Fenster Ausdrucks | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio die Debug-Engine aufruft, um den aktuellen Wert der einzelnen Ausdrücke in der Überwachungsliste zu ermitteln, wenn die Ausführung angehalten wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cef2f27eec095ee7b136153ecb764feba9effbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738842"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915647"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Auswerten eines Überwachungs Fenster Ausdrucks
 > [!IMPORTANT]
@@ -55,5 +57,5 @@ ms.locfileid: "80738842"
 ## <a name="related-sections"></a>Verwandte Abschnitte
  [Auswertungs Kontext](../../extensibility/debugger/evaluation-context.md) Stellt die Argumente bereit, die beim Aufrufen der Ausdrucks Auswertung (EE) durch die Debug-Engine (de) übermittelt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

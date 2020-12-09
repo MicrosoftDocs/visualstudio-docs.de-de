@@ -1,5 +1,7 @@
 ---
 title: Erstellen wiederverwendbarer Gruppen von Schaltflächen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Befehlsgruppe erstellen, bei der es sich um eine Auflistung von Befehlen handelt, die in einem Menü oder einer Symbolleiste angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903648"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915582"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Erstellen wiederverwendbarer Gruppen von Schaltflächen
 Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer in einem Menü oder einer Symbolleiste angezeigt werden. Alle Befehls Gruppen können wieder verwendet werden, indem Sie im Abschnitt commandplacement der *vsct* -Datei anderen übergeordneten Menüs zugewiesen werden.
@@ -28,7 +30,7 @@ Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer in einem Menü od
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen `ReusableButtons` . Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **reusablecommand**hinzu. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *ReusableCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **reusablecommand** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *ReusableCommand.cs*.
 
 3. Wechseln Sie in der *vsct* -Datei zum Abschnitt "Symbole", und suchen Sie das Element "guidsymbol", das Gruppen und Befehle für das Projekt enthält. Der Name sollte "guidre-ablecommandpackagecmdset" lauten.
 
@@ -98,7 +100,7 @@ Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer in einem Menü od
    </CommandTable>
    ```
 
-    Eine Befehlsgruppe kann in mehr als einem Menü enthalten sein. Das übergeordnete Menü kann ein von Ihnen erstelltes Element sein, das von bereitgestellt wird [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (wie in *shellcmddef. vsct* oder *sharedcmddef. vsct*beschrieben), oder ein Element, das in einem anderen VSPackage definiert ist. Die Anzahl der Ebenen für die übergeordnete Ebene ist unbegrenzt, solange das übergeordnete Menü schließlich mit oder mit einem Kontextmenü verbunden ist [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , das von einem VSPackage angezeigt wird.
+    Eine Befehlsgruppe kann in mehr als einem Menü enthalten sein. Das übergeordnete Menü kann ein von Ihnen erstelltes Element sein, das von bereitgestellt wird [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (wie in *shellcmddef. vsct* oder *sharedcmddef. vsct* beschrieben), oder ein Element, das in einem anderen VSPackage definiert ist. Die Anzahl der Ebenen für die übergeordnete Ebene ist unbegrenzt, solange das übergeordnete Menü schließlich mit oder mit einem Kontextmenü verbunden ist [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , das von einem VSPackage angezeigt wird.
 
     Im folgenden Beispiel wird die-Gruppe auf der **Projektmappen-Explorer** Symbolleiste rechts neben den anderen Schaltflächen abgelegt.
 

@@ -1,5 +1,7 @@
 ---
 title: Wechseln in den Umbruch Modus | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Prozess, der für einen Haltepunkt in einer Funktion auftritt, in der Zeile des Quellcodes am Cursor ausgeführt wird oder bis zu einem Breakpoint ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738878"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915231"
 ---
 # <a name="enter-break-mode"></a>In den Umbruch Modus wechseln
 Die folgenden Informationen beschreiben den Prozess, der auftritt, wenn nach dem Durchlaufen einer Funktion ein Haltepunkt erreicht wird, der in der Zeile des Quellcodes ausgeführt wird, in der sich der Cursor befindet, oder bis zu einem Breakpoint ausgeführt wird.
@@ -41,5 +43,5 @@ Die folgenden Informationen beschreiben den Prozess, der auftritt, wenn nach dem
 
     - [IDebugStackFrame2:: getcodecontext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) zum erhalten von Speicherinformationen
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Aufrufen von Debugger-Ereignissen](../../extensibility/debugger/calling-debugger-events.md)

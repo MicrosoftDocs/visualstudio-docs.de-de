@@ -1,5 +1,7 @@
 ---
 title: Auflisten von lokalen Variablen | Microsoft-Dokumentation
+description: 'Erfahren Sie mehr über die Details der Verwendung von IDebugProperty2:: enumchildren durch Visual Studio zum Auffüllen des Fensters "lokal".'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 540c062d3d4f73a5468b39629fc277e6fd10df7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4282e55dbf90c4ae24a9e3d16beea8bd93420524
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738873"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915686"
 ---
 # <a name="enumerate-locals"></a>Lokale aufzählen
 > [!IMPORTANT]
@@ -245,7 +247,7 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Beispiel Implementierung von lokalen Variablen](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [Implementieren von getmethodproperty](../../extensibility/debugger/implementing-getmethodproperty.md)
 - [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md)

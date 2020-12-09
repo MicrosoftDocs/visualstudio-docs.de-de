@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen und Entfernen zusätzlicher Assemblys | Microsoft-Dokumentation'
+description: Weitere Informationen zum Hinzufügen und Entfernen zusätzlicher Assemblys in SharePoint-Lösungs Paketen. Fügen Sie außerdem sichere Steuerelemente und Klassen Ressourcen hinzu oder löschen Sie Sie.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41b41ccd5eda2a44457adf23302a833574dade9e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014828"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914971"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Vorgehensweise: Hinzufügen und Entfernen zusätzlicher Assemblys
   Wenn ein SharePoint-Paket im Hinblick auf Funktionen oder Daten von anderen Assemblys abhängig ist, können Sie die Assemblys dem Lösungspaket (.wsp) hinzufügen. Auf diese Weise stellt der SharePoint-Server sicher, dass benutzerdefinierte Assemblys mit einem Paket installiert werden.
@@ -41,7 +43,7 @@ ms.locfileid: "86014828"
 
 4. Wählen Sie die Auslassungs Punkte (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")) aus, und wählen Sie dann die Assembly aus, die Sie hinzufügen möchten. Aus Gründen der Portabilität wird empfohlen, einen relativen Pfad zur ausgewählten Assembly zu verwenden.
 
-5. Wählen Sie für das **Bereitstellungs Ziel**die Options Schaltfläche **GlobalAssemblyCache** aus, um die Assembly im globalen Assemblycache bereitzustellen, oder wählen Sie das Optionsfeld **WebApplication** aus, um die Assembly im WebApplication-Ordner auf dem Server bereitzustellen, auf dem SharePoint ausgeführt wird.
+5. Wählen Sie für das **Bereitstellungs Ziel** die Options Schaltfläche **GlobalAssemblyCache** aus, um die Assembly im globalen Assemblycache bereitzustellen, oder wählen Sie das Optionsfeld **WebApplication** aus, um die Assembly im WebApplication-Ordner auf dem Server bereitzustellen, auf dem SharePoint ausgeführt wird.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>So fügen Sie eine Assembly aus der Projektausgabe hinzu
 
@@ -57,7 +59,7 @@ ms.locfileid: "86014828"
 
 4. Wählen Sie in der Liste **Quell Projekt** das Quell Projekt aus, das Sie hinzufügen möchten.
 
-5. Wählen Sie für das **Bereitstellungs Ziel**die Options Schaltfläche **GlobalAssemblyCache** aus, um die Assembly im globalen Assemblycache bereitzustellen, oder wählen Sie das Optionsfeld **WebApplication** aus, um die Assembly im WebApplication-Ordner auf dem Server bereitzustellen, auf dem SharePoint ausgeführt wird.
+5. Wählen Sie für das **Bereitstellungs Ziel** die Options Schaltfläche **GlobalAssemblyCache** aus, um die Assembly im globalen Assemblycache bereitzustellen, oder wählen Sie das Optionsfeld **WebApplication** aus, um die Assembly im WebApplication-Ordner auf dem Server bereitzustellen, auf dem SharePoint ausgeführt wird.
 
 #### <a name="to-add-a-safe-control"></a>So fügen Sie ein sicheres Steuerelement hinzu
 
