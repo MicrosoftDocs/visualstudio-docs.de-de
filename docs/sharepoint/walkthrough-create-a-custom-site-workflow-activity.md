@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Site Workflow-Aktivität | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise finden Sie Informationen zum Erstellen einer benutzerdefinierten Aktivität für einen SharePoint-Workflow auf Website Ebene mithilfe von Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016535"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913955"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Site Workflow-Aktivität
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Website-Workflowaktivität
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine benutzerdefinierte Aktivität für einen Workflow auf Website Ebene mithilfe von erstellt wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Workflows auf Website Ebene gelten für den gesamten Standort, nicht nur für eine Liste auf der Website.) Die benutzerdefinierte Aktivität erstellt eine Sicherungs Ankündigungsliste und kopiert dann den Inhalt der Ankündigungsliste in diese.
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
@@ -66,9 +68,9 @@ ms.locfileid: "86016535"
 
      In diesem Schritt wird die Vertrauens Ebene für die Lösung als Farm Lösung festgelegt, die einzige verfügbare Option für Workflow Projekte.
 
-6. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen**.
+6. Wählen Sie in **Projektmappen-Explorer** den Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen**.
 
-7. Erweitern Sie unter **Visual c#** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
+7. Erweitern Sie unter **Visual c#** oder **Visual Basic** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
 8. Wählen Sie im Bereich **Vorlagen** die Vorlage **sequenzieller Workflow (nur Farm Lösung)** aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
@@ -103,7 +105,7 @@ ms.locfileid: "86016535"
 
 1. Öffnen Sie Workflow1 in der Entwurfs Ansicht im Workflow-Designer.
 
-2. Ziehen Sie Class1 aus der **Toolbox** , sodass es unter der `onWorkflowActivated1` Aktivität angezeigt wird, oder öffnen Sie das Kontextmenü für Class1, wählen Sie **Kopieren**aus, öffnen Sie das Kontextmenü für die Zeile unter der `onWorkflowActivated1` Aktivität, und wählen Sie dann **Einfügen**aus.
+2. Ziehen Sie Class1 aus der **Toolbox** , sodass es unter der `onWorkflowActivated1` Aktivität angezeigt wird, oder öffnen Sie das Kontextmenü für Class1, wählen Sie **Kopieren** aus, öffnen Sie das Kontextmenü für die Zeile unter der `onWorkflowActivated1` Aktivität, und wählen Sie dann **Einfügen** aus.
 
 3. Speichern Sie das Projekt.
 
@@ -114,7 +116,7 @@ ms.locfileid: "86016535"
 
 1. Drücken Sie die Taste **F5** , um das Projekt auszuführen und in SharePoint bereitzustellen.
 
-2. Wählen Sie auf der Schnellstartleiste den Link **Listen** aus, um alle Listen anzuzeigen, die auf der SharePoint-Website verfügbar sind. Beachten Sie, dass es nur eine Liste für Ankündigungen namens **Ankündigungen**gibt.
+2. Wählen Sie auf der Schnellstartleiste den Link **Listen** aus, um alle Listen anzuzeigen, die auf der SharePoint-Website verfügbar sind. Beachten Sie, dass es nur eine Liste für Ankündigungen namens **Ankündigungen** gibt.
 
 3. Klicken Sie oben auf der SharePoint-Webseite auf den Link **Site Workflows** .
 
@@ -122,6 +124,6 @@ ms.locfileid: "86016535"
 
 5. Wählen Sie auf der Schnellstartleiste den Link **Ankündigungen-Sicherung** aus. Beachten Sie, dass alle in der **Ankündigungs** Liste enthaltenen Ankündigungen in diese neue Liste kopiert wurden.
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

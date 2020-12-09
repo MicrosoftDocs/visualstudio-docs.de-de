@@ -1,5 +1,7 @@
 ---
 title: Breakpoint-Fehler | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Prozess, wenn ein Breakpoint versucht, eine Bindung an den Code herzustellen, aber fehlschlägt und wie Fehler bei Haltepunkten behoben werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0766792f19faf7c1933c6576ab41f65ec1b31ae9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88a5003ce8abe79fcba9f9604047d2265810fda2
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739216"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914490"
 ---
 # <a name="breakpoint-errors"></a>Haltepunkt Fehler
 Im folgenden wird der Prozess beschrieben, wenn ein Breakpoint versucht, eine Bindung an Code herzustellen, aber fehlschlägt.

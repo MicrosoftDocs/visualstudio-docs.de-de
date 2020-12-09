@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Website Definition | Microsoft-Dokumentation'
+description: In dieser SharePoint-exemplarischen Vorgehensweise erfahren Sie, wie Sie eine einfache Site Definition erstellen, die ein visuelles Webpart mit einigen Steuerelementen enthält.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016764"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913853"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Website Definition
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine grundlegende Site Definition erstellen, die ein visuelles Webpart mit einigen Steuerelementen enthält. Aus Gründen der Übersichtlichkeit hat das visuelle Webpart, das Sie erstellen, nur wenige Steuerelemente. Sie können jedoch anspruchsvollere SharePoint-Website Definitionen erstellen, die mehr Funktionalität enthalten.
@@ -47,7 +49,7 @@ ms.locfileid: "86016764"
 
 #### <a name="to-create-a-site-definition-project"></a>So erstellen Sie ein Website Definitions Projekt
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wenn die IDE für die Verwendung Visual Basic Entwicklungseinstellungen festgelegt ist, wählen Sie in der Menüleiste **Datei**  >  **neu Projekt**aus.
+1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wenn die IDE für die Verwendung Visual Basic Entwicklungseinstellungen festgelegt ist, wählen Sie in der Menüleiste **Datei**  >  **neu Projekt** aus.
 
     Das Dialogfeld **Neues Projekt** wird angezeigt.
 
@@ -55,7 +57,7 @@ ms.locfileid: "86016764"
 
 3. Wählen Sie in der Liste **Vorlagen** die **SharePoint 2010-Projekt** Vorlage aus.
 
-4. Geben Sie im Feld **Name den Namen** **testsitedef**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Geben Sie im Feld **Name den Namen** **testsitedef** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
     Der Assistent zum Anpassen von **SharePoint** wird angezeigt.
 
@@ -67,11 +69,11 @@ ms.locfileid: "86016764"
 
 7. Klicken Sie auf die Schaltfläche **Fertig stellen**.
 
-    Das Projekt wird in **Projektmappen-Explorer**angezeigt.
+    Das Projekt wird in **Projektmappen-Explorer** angezeigt.
 
-8. Wählen Sie in **Projektmappen-Explorer**den Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen**.
+8. Wählen Sie in **Projektmappen-Explorer** den Projekt Knoten aus, und klicken Sie dann in der Menüleiste auf **Projekt**  >  **Neues Element hinzufügen**.
 
-9. Erweitern Sie unter **Visual c#** oder **Visual Basic**den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
+9. Erweitern Sie unter **Visual c#** oder **Visual Basic** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
 10. Wählen Sie im Bereich **Vorlagen** die Vorlage **Site Definition** aus, belassen Sie **Name** den Namen **SiteDefinition1**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
@@ -80,9 +82,9 @@ ms.locfileid: "86016764"
 
 #### <a name="to-create-a-visual-web-part"></a>So erstellen Sie ein visuelles Webpart
 
-1. Wählen Sie in **Projektmappen-Explorer**die Schaltfläche **alle Dateien anzeigen** aus.
+1. Wählen Sie in **Projektmappen-Explorer** die Schaltfläche **alle Dateien anzeigen** aus.
 
-2. Wählen Sie den **SiteDefinition1** -Projekt Knoten aus, und wählen Sie dann in der Menüleiste **Projekt**  >  **Neues Element hinzufügen**aus.
+2. Wählen Sie den **SiteDefinition1** -Projekt Knoten aus, und wählen Sie dann in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
@@ -92,7 +94,7 @@ ms.locfileid: "86016764"
 
      Die Datei " *VisualWebPart1. ascx* " wird geöffnet.
 
-5. Fügen Sie am unteren Rand von *VisualWebPart1. ascx*das folgende Markup hinzu, um dem Formular drei Steuerelemente hinzuzufügen: ein Textfeld, eine Schaltfläche und eine Bezeichnung:
+5. Fügen Sie am unteren Rand von *VisualWebPart1. ascx* das folgende Markup hinzu, um dem Formular drei Steuerelemente hinzuzufügen: ein Textfeld, eine Schaltfläche und eine Bezeichnung:
 
     ```aspx-csharp
     <table>
@@ -110,7 +112,7 @@ ms.locfileid: "86016764"
     </table>
     ```
 
-6. Öffnen Sie unter *VisualWebPart1. ascx*die Datei *VisualWebPart1.ascx.cs* (für [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) oder *VisualWebPart1. ascx. vb* (für [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), und fügen Sie dann den folgenden Code hinzu:
+6. Öffnen Sie unter *VisualWebPart1. ascx* die Datei *VisualWebPart1.ascx.cs* (für [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) oder *VisualWebPart1. ascx. vb* (für [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), und fügen Sie dann den folgenden Code hinzu:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -140,14 +142,14 @@ ms.locfileid: "86016764"
 
      Mit diesem Code wird ein Verweis auf das visuelle Webpart erstellt, das Sie zuvor erstellt haben.
 
-3. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Knoten **SiteDefinition1** , und wählen Sie dann **als Start Element festlegen**aus.
+3. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Knoten **SiteDefinition1** , und wählen Sie dann **als Start Element festlegen** aus.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Bereitstellen und Ausführen der Site Definitions Lösung
  Als Nächstes stellen Sie das Projekt in SharePoint bereit und führen dann das Projekt aus.
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>So stellen Sie die Websitedefinition bereit und führen sie aus
 
-- Wählen Sie in der Menüleiste die Option **Build**bereitstellen  >  **testsitedef**aus.
+- Wählen Sie in der Menüleiste die Option **Build** bereitstellen  >  **testsitedef** aus.
 
 - Drücken Sie die Taste **F5**.
 
@@ -166,7 +168,7 @@ ms.locfileid: "86016764"
 
 4. Wählen Sie im Abschnitt **Vorlage** die Registerkarte **SharePoint-Anpassungen** aus.
 
-5. Wählen Sie in der Liste **Vorlage auswählen** die Option **SiteDefinition1**aus.
+5. Wählen Sie in der Liste **Vorlage auswählen** die Option **SiteDefinition1** aus.
 
 6. Überlassen Sie die anderen Einstellungen die Standardwerte, und wählen Sie dann die Schaltfläche **Erstellen** aus.
 
@@ -182,5 +184,5 @@ ms.locfileid: "86016764"
      Der Text wird in der Bezeichnung auf der rechten Seite der Schaltfläche angezeigt.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Vorgehensweise: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md)
+- [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

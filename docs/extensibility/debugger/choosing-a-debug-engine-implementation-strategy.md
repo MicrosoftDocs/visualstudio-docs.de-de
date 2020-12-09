@@ -1,5 +1,7 @@
 ---
 title: Auswählen einer Strategie für die Debug-Engine-Implementierung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Lauf Zeit Architektur bei der Auswahl mehrerer Strategien für die Debug-Engine-Implementierung unterstützen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e66975a2d41108d3d9fb469da9e4a36a10d8d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b87d61586fb4acc360b5f5202b1219199c6a24b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739130"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914295"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Auswählen einer Strategie für die Debug-Engine-Implementierung
 Verwenden Sie die Lauf Zeit Architektur, um die Implementierung der Debug-Engine (de) zu bestimmen. Sie können die Debug-Engine in-Process mit dem Programm erstellen, das Sie Debuggen. Erstellen Sie die Debug-Engine in-Process mit dem Visual Studio Session Debug Manager (SDM). Oder erstellen Sie die Debug-Engine außerhalb des Prozesses für beide. Die folgenden Richtlinien sollten Ihnen bei der Auswahl dieser drei Strategien helfen.

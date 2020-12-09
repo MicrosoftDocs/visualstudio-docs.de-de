@@ -1,5 +1,7 @@
 ---
 title: Breakpoints (Visual Studio SDK) | Microsoft-Dokumentation
+description: 'Erfahren Sie mehr über die drei Typen von Breakpoints: Ausstehend, gebunden und Fehler. In diesem Artikel werden die Schnittstellen aufgeführt, mit denen die Typen implementiert werden.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c9d61c82886f237e8c9f544a59d8fe167548277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d266bb97b6d3086a8f5b74100f5821a5cfca3af
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739193"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914451"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Haltepunkte (Visual Studio SDK)
 Es gibt drei Arten von Haltepunkten: Ausstehend, gebunden und Fehler.

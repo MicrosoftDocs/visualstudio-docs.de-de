@@ -1,5 +1,7 @@
 ---
 title: Debugsitzung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über eine Debugsitzung, bei der es sich um alle Prozesse handelt, die von einer einzelnen Instanz der IDE gestartet oder an diese angefügt wurden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 664bcc4790d642ec5ea006cc42b3cf29885e9018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37818f63f3cf0abdf32faf5d69514e73ece5c686
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738996"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914048"
 ---
 # <a name="debug-session"></a>Debugsitzung
 Im Hinblick auf die Debugger-Architektur eine *Sitzung*:
@@ -24,6 +26,6 @@ Im Hinblick auf die Debugger-Architektur eine *Sitzung*:
 
 - Wird von einem sitzungsdebug-Manager (SDM) implementiert. Weitere Informationen finden Sie unter [Session Debug Manager](../../extensibility/debugger/session-debug-manager.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sitzungs-Debug-Manager](../../extensibility/debugger/session-debug-manager.md)
 - [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)

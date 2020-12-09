@@ -1,5 +1,7 @@
 ---
 title: Debugger-Komponenten | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Elemente, die eine Debugsitzung bilden, die vom Visual Studio-Debugger verwaltet wird und als VSPackage implementiert ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739013"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914100"
 ---
 # <a name="debugger-components"></a>Debugger-Komponenten
 Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger wird als VSPackage implementiert und verwaltet die gesamte Debugsitzung. Die Debugsitzung umfasst die folgenden Elemente:
@@ -56,11 +58,11 @@ Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger wird a
  [Typschnell Ansicht und benutzerdefinierter Viewer](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Erläutert, worum es sich bei einer typschnell Ansicht und einem benutzerdefinierten Viewer handelt und welche Rolle die Ausdrucks Auswertung bei der Unterstützung von beidem spielt.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md) Beschreibt die wichtigsten Konzepte der debuggingarchitektur.
+ [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md) beschreibt die wichtigsten Architekturkonzepte für das Debuggen.
 
- [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md) Erläutert die gleichzeitige Funktionsweise von de innerhalb von Code-, Dokumentations-und Ausdrucks Auswertungs Kontexten. Beschreibt für jeden der drei Kontexte den Speicherort, die Position oder die Auswertung, die für ihn relevant sind.
+ [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md) erläutert, wie die DE gleichzeitig innerhalb von Code-, Dokumentations- und Ausdrucksauswertungskontexten funktioniert. Es wird für jeden der drei Kontexte der Speicherort, die Position oder die Auswertung beschrieben, der bzw. die für ihn relevant ist.
 
  [Aufgaben Debuggen](../../extensibility/debugger/debugging-tasks.md) Enthält Links zu verschiedenen Debuggingaufgaben, z. b. das Starten eines Programms und Auswerten von Ausdrücken.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erste Schritte](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

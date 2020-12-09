@@ -1,5 +1,7 @@
 ---
 title: Auswertungs Kontext | Microsoft-Dokumentation
+description: 'Wenn die Debug-Engine die Ausdrucks Auswertung aufruft, bestimmen die Argumente den Kontext zum Suchen und Auswerten von Symbolen: psymbolprovider, pAddress und pbinder.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e3d02bd652d6c46b5aabe00e049e425f0921c27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a021d5dfdff5058211f5bafdfd7854611f977c27
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738800"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914516"
 ---
 # <a name="evaluation-context"></a>Evaluierungskontext
 > [!IMPORTANT]
@@ -34,7 +36,7 @@ ms.locfileid: "80738800"
 
  `IDebugParsedExpression::EvaluateSync` gibt eine [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle zurück, die den resultierenden Wert und seinen Typ darstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Schnittstellen für die Schlüssel Ausdrucks Auswertung](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
 - [Anzeigen von lokalen Variablen](../../extensibility/debugger/displaying-locals.md)
 - [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)

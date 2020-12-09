@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Breakpoints | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Methodenaufrufe, die der Sitzungs-Debug-Manager ausführt, wenn das zum Binden eines Breakpoints benötigte Modul geladen wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba192a0cda2e63453984d3de7d6007744cc401b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903614"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914227"
 ---
 # <a name="create-a-breakpoint"></a>Erstellen eines Breakpoints
 Im folgenden wird der Prozess zum Erstellen eines Breakpoints beschrieben.

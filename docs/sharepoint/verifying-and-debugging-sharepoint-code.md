@@ -1,5 +1,7 @@
 ---
 title: Überprüfen und Debuggen von SharePoint-Code | Microsoft-Dokumentation
+description: Überprüfen und Debuggen Sie SharePoint-Code. Verwenden Sie IntelliTrace, um vergangene Ereignisse und den aktuellen Status in der Projekt Mappe zu untersuchen. Verwenden Sie Komponententests, um sicherzustellen, dass ihre Methoden korrekt funktionieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce891e40552c0f8927bfd4ce006b750b6e5f8a54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008246"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914503"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Prüfen und Debuggen von SharePoint-Code
 Mit IntelliTrace und Komponententests können Sie die SharePoint-Lösungen leichter debuggen und sicherstellen, dass jede Methode in ihnen ordnungsgemäß funktioniert. Sie können diese Funktionen für SharePoint-Projekte in Visual Studio verwenden, indem Sie die gleichen Prozeduren wie für andere Projekttypen befolgen.
@@ -40,7 +42,7 @@ SharePoint-Projekte unterstützen Microsoft Fakes, ein Isolationsframework, in d
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[IntelliTrace](../debugger/intellitrace.md)|Beschreibt, wie Visual Studio-Projektmappen mithilfe von IntelliTrace leichter zu debuggen sind.|
 |[Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|Veranschaulicht, wie IntelliTrace verwendet wird, um Codefehler in einem SharePoint-Projekt zu suchen.|

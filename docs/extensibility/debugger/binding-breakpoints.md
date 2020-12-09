@@ -1,5 +1,7 @@
 ---
 title: Binden von Haltepunkten | Microsoft-Dokumentation
+description: Erfahren Sie, wie die IDE die Anforderung für einen Haltepunkt formuliert und die Debugsitzung anfordert, den Breakpoint zu erstellen, wenn ein Benutzer einen Haltepunkt festlegt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903227"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914711"
 ---
 # <a name="bind-breakpoints"></a>Binden von Haltepunkten
 Wenn der Benutzer einen Haltepunkt festlegt, vielleicht durch Drücken von **F9**, formuliert die IDE die Anforderung und fordert die Debugsitzung auf, den Haltepunkt zu erstellen.
