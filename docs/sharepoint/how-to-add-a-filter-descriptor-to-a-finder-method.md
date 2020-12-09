@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen eines Filter Deskriptors zu einer Finder-Methode | Microsoft-Dokumentation'
+description: Informationen zum Hinzufügen eines Filter Deskriptors zu einer Finder-Methode mithilfe des Fensters "BDC-Methoden Details" in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016743"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915426"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Gewusst wie: Hinzufügen eines Filter Deskriptors zu einer Finder-Methode
   Filter Deskriptoren ermöglichen es Consumern des Modells, Werte vor der Ausführung an Methoden zu übergeben. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,25 +35,25 @@ ms.locfileid: "86016743"
 
 2. Wählen Sie im Fenster **Methoden Details** den Typdeskriptor des Parameters aus.
 
-3. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
+3. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster** aus.
 
 4. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **Typname** auf einen Datentyp fest, der für den Filter geeignet ist.
 
-     Ein Filter kann z. b. ein Bestelldatum verwenden, um die Anzahl der von der-Methode zurückgegebenen Verkaufsaufträge einzuschränken. Zur Unterstützung dieses Filters muss die **Typname** -Eigenschaft des Typdeskriptors auf **System. DateTime**festgelegt werden.
+     Ein Filter kann z. b. ein Bestelldatum verwenden, um die Anzahl der von der-Methode zurückgegebenen Verkaufsaufträge einzuschränken. Zur Unterstützung dieses Filters muss die **Typname** -Eigenschaft des Typdeskriptors auf **System. DateTime** festgelegt werden.
 
 5. Erweitern Sie im Fenster **Methoden Details** den Knoten **Filter Deskriptoren** .
 
-6. Wählen Sie in der Liste **Filter Deskriptor hinzufügen** die Option **Filter Deskriptor erstellen**aus.
+6. Wählen Sie in der Liste **Filter Deskriptor hinzufügen** die Option **Filter Deskriptor erstellen** aus.
 
      Unterhalb des Knotens **Filter Deskriptoren** wird ein neuer Filter Deskriptor angezeigt.
 
-7. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
+7. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster** aus.
 
 8. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft **Typ** aus.
 
 9. Wählen Sie in der Liste, die für die **Type** -Eigenschaft angezeigt wird, das gewünschte Filter Muster aus.
 
-     Wenn Sie z. b. einen Filter erstellen möchten, der ein Bestelldatum verwendet, um die Anzahl der in einer Finder-Methode zurückgegebenen Verkaufsaufträge einzuschränken, wählen Sie **vergleichen**aus. Ein Vergleichs Filter stellt sicher, dass eine Finder-Methode nur Instanzen zurückgibt, die eine bestimmte Bedingung erfüllen. Weitere Informationen zu den einzelnen Filter Mustern finden Sie [unter vom BDC unterstützte Filtertypen](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14)).
+     Wenn Sie z. b. einen Filter erstellen möchten, der ein Bestelldatum verwendet, um die Anzahl der in einer Finder-Methode zurückgegebenen Verkaufsaufträge einzuschränken, wählen Sie **vergleichen** aus. Ein Vergleichs Filter stellt sicher, dass eine Finder-Methode nur Instanzen zurückgibt, die eine bestimmte Bedingung erfüllen. Weitere Informationen zu den einzelnen Filter Mustern finden Sie [unter vom BDC unterstützte Filtertypen](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14)).
 
 10. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft zugeordnete **Typdeskriptoren** aus.
 

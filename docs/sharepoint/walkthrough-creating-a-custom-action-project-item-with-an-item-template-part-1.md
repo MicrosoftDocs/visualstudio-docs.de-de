@@ -1,6 +1,8 @@
 ---
 title: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit Element Vorlage, Teil 1
 titleSuffix: ''
+description: Erstellen Sie mithilfe einer Element Vorlage ein Projekt Element, das einem SharePoint-Projekt hinzugefügt werden kann, um eine benutzerdefinierte Aktion auf einer SharePoint-Website zu erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585562"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915270"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1
   Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene Projektelementtypen erstellen. In dieser exemplarischen Vorgehensweise erstellen Sie ein Projektelement, das einem SharePoint-Projekt hinzugefügt werden kann, um eine benutzerdefinierte Aktion auf einer SharePoint-Website zu erstellen. Durch die benutzerdefinierte Aktion wird dem Menü **Website Aktionen** der SharePoint-Website ein Menü Element hinzugefügt.
@@ -34,7 +36,7 @@ ms.locfileid: "91585562"
 
   - Code, der ausgeführt wird, wenn ein Entwickler bestimmte Eigenschaften des Projektelements oder des Projekts ändert, in dem es enthalten ist.
 
-  - Ein benutzerdefiniertes Symbol, das neben dem Projekt Element in **Projektmappen-Explorer**angezeigt wird.
+  - Ein benutzerdefiniertes Symbol, das neben dem Projekt Element in **Projektmappen-Explorer** angezeigt wird.
 
 - Erstellen einer Visual Studio-Elementvorlage für das Projektelement.
 
@@ -86,13 +88,13 @@ ms.locfileid: "91585562"
 
 5. Wählen Sie die **VSIX-Projekt** Vorlage aus.
 
-6. Geben Sie im Feld **Name den Namen** **customaktionprojectitem**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+6. Geben Sie im Feld **Name den Namen** **customaktionprojectitem** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fügt **Projektmappen-Explorer**das **customaktionprojectitem** -Projekt hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fügt **Projektmappen-Explorer** das **customaktionprojectitem** -Projekt hinzu.
 
 #### <a name="to-create-the-item-template-project"></a>So erstellen Sie das Elementvorlagenprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Projekt**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Projekt** aus.
 
 2. Stellen Sie sicher, dass in der Liste am oberen Rand des Dialog Felds **Neues Projekt** die Option **.NET Framework 4,5** ausgewählt ist.
 
@@ -100,19 +102,19 @@ ms.locfileid: "91585562"
 
 4. Wählen Sie in der Liste der Projektvorlagen die **c#-Element Vorlage** oder die Vorlage für **Visual Basic Element Vorlage** aus.
 
-5. Geben Sie im Feld **Name den Namen** **ItemTemplate**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+5. Geben Sie im Feld **Name den Namen** **ItemTemplate** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das Projekt **ItemTemplate** hinzu.
 
 #### <a name="to-create-the-extension-project"></a>So erstellen Sie das Erweiterungsprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Projekt**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Projekt** aus.
 
 2. Stellen Sie sicher, dass in der Liste am oberen Rand des Dialog Felds **Neues Projekt** die Option **.NET Framework 4,5** ausgewählt ist.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** , wählen Sie den Knoten **Windows** aus, und wählen Sie dann die Projektvorlage **Klassenbibliothek** aus.
 
-4. Geben Sie im Feld **Name** **ProjectItemDefinition**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Geben Sie im Feld **Name** **ProjectItemDefinition** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das Projekt **ProjectItemDefinition** hinzu und öffnet die standardmäßige Class1-Codedatei.
 
@@ -123,13 +125,13 @@ ms.locfileid: "91585562"
 
 #### <a name="to-configure-the-project"></a>So konfigurieren Sie das Projekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ProjectItemDefinition** , und wählen Sie **Hinzufügen**und dann **Neues Element**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ProjectItemDefinition** , und wählen Sie **Hinzufügen** und dann **Neues Element** aus.
 
-2. Wählen Sie in der Liste der Projekt Elemente **Codedatei**aus.
+2. Wählen Sie in der Liste der Projekt Elemente **Codedatei** aus.
 
 3. Geben Sie im Feld **Name** den Namen **CustomAction** mit der entsprechenden Dateinamenerweiterung ein, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
-4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ProjectItemDefinition** , und wählen Sie dann **Verweis hinzufügen**aus.
+4. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ProjectItemDefinition** , und wählen Sie dann **Verweis hinzufügen** aus.
 
 5. Wählen Sie im Dialogfeld **Verweis-Manager-ProjectItemDefinition** den **Knoten** Assemblys aus, und wählen Sie dann den Knoten **Framework** aus.
 
@@ -154,37 +156,37 @@ ms.locfileid: "91585562"
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]
 
 ## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>Erstellen Sie ein Symbol für das Projekt Element in Projektmappen-Explorer
- Wenn Sie ein benutzerdefiniertes SharePoint-Projektelement erstellen, können Sie dem Projektelement ein Bild (ein Symbol oder eine Bitmap) zuordnen. Dieses Bild wird neben dem Projekt Element in **Projektmappen-Explorer**angezeigt.
+ Wenn Sie ein benutzerdefiniertes SharePoint-Projektelement erstellen, können Sie dem Projektelement ein Bild (ein Symbol oder eine Bitmap) zuordnen. Dieses Bild wird neben dem Projekt Element in **Projektmappen-Explorer** angezeigt.
 
  In der folgenden Vorgehensweise erstellen Sie ein Symbol für das Projektelement und betten das Symbol in die Erweiterungsassembly ein. Auf dieses Symbol wird durch das <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute> der zuvor erstellten `CustomActionProjectItemTypeProvider`-Klasse verwiesen.
 
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>So erstellen Sie ein benutzerdefiniertes Symbol für das Projektelement
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ProjectItemDefinition** , wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Element...** aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ProjectItemDefinition** , wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Element...** aus.
 
 2. Wählen Sie in der Liste der Projekt Elemente das **Symbol Datei** Element aus.
 
     > [!NOTE]
     > In Visual Basic-Projekten müssen Sie den Knoten **Allgemein** auswählen, um das **Symbol Datei** Element anzuzeigen.
 
-3. Geben Sie im Feld **Name** **CustomAction_SolutionExplorer. ico**ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
+3. Geben Sie im Feld **Name** **CustomAction_SolutionExplorer. ico** ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
-     Das neue Symbol wird im **Bild-Editor**geöffnet.
+     Das neue Symbol wird im **Bild-Editor** geöffnet.
 
 4. Bearbeiten Sie die 16x16-Version der Symboldatei so, dass sich das Symbol leicht von anderen unterscheiden lässt, und speichern Sie dann die Symboldatei.
 
-5. Wählen **Solution Explorer**Sie in Projektmappen-Explorer **CustomAction_SolutionExplorer. ico**aus.
+5. Wählen **Solution Explorer** Sie in Projektmappen-Explorer **CustomAction_SolutionExplorer. ico** aus.
 
 6. Wählen Sie im Fenster **Eigenschaften** den Pfeil neben der Eigenschaft **Buildaktion** aus.
 
-7. Wählen Sie in der angezeigten Liste **eingebettete Ressource**aus.
+7. Wählen Sie in der angezeigten Liste **eingebettete Ressource** aus.
 
 ## <a name="checkpoint"></a>Prüfpunkt
  Ab diesem Punkt in der exemplarischen Vorgehensweise wurde der gesamte für das Projektelement benötigte Code in das Projekt eingefügt. Erstellen Sie das Projekt, um zu überprüfen, ob es fehlerfrei kompiliert wird.
 
 #### <a name="to-build-your-project"></a>So erstellen Sie das Projekt
 
-1. Öffnen Sie das Kontextmenü für das Projekt **ProjectItemDefinition** , und wählen Sie dann **Erstellen**aus.
+1. Öffnen Sie das Kontextmenü für das Projekt **ProjectItemDefinition** , und wählen Sie dann **Erstellen** aus.
 
 ## <a name="create-a-visual-studio-item-template"></a>Erstellen einer Visual Studio-Element Vorlage
  Um Ihr Projektelement anderen Entwicklern zur Verfügung stellen zu können, müssen Sie eine Projektvorlage oder eine Elementvorlage erstellen. Mithilfe dieser Vorlagen können Entwickler in Visual Studio eine Instanz des Projekts erstellen, indem sie ein neues Projekt erstellen oder ein Element zu einem vorhandenen Projekt hinzufügen. Konfigurieren Sie für diese exemplarische Vorgehensweise das Projektelement mithilfe des Projekts ItemTemplate.
@@ -221,11 +223,11 @@ ms.locfileid: "91585562"
 
      Diese Datei definiert den Inhalt und das Verhalten der Elementvorlage. Weitere Informationen zum Inhalt dieser Datei finden Sie unter [Schema Referenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).
 
-4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ItemTemplate** , wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Element**aus.
+4. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ItemTemplate** , wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Element** aus.
 
 5. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Vorlage **Text Datei** aus.
 
-6. Geben Sie im Feld **Name den Namen** **CustomAction. spdata**ein, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
+6. Geben Sie im Feld **Name den Namen** **CustomAction. spdata** ein, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
 7. Fügen Sie der Datei *CustomAction. spdata* den folgenden XML-Code hinzu, und speichern und schließen Sie dann die Datei.
 
@@ -241,11 +243,11 @@ ms.locfileid: "91585562"
 
      Diese Datei enthält Informationen zu den Dateien, die im Projektelement enthalten sind. Das `Type`-Attribut des `ProjectItem`-Elements muss auf die gleiche Zeichenfolge festgelegt werden, die in der Projektelementdefinition (die <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>-Klasse, die Sie zuvor in dieser exemplarischen Vorgehensweise erstellt haben) an `CustomActionProjectItemTypeProvider` übergeben wird. Weitere Informationen zum Inhalt von *spdata* -Dateien finden Sie unter [Schema Referenz für SharePoint-Projekt Elemente](../sharepoint/sharepoint-project-item-schema-reference.md).
 
-8. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ItemTemplate** , wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Element**aus.
+8. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ItemTemplate** , wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Element** aus.
 
 9. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Vorlage **XML-Datei** aus.
 
-10. Geben Sie im Feld **Name** **Elements.xml**ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
+10. Geben Sie im Feld **Name** **Elements.xml** ein, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
 11. Ersetzen Sie den Inhalt der Datei *Elements.xml* durch den folgenden XML-Code, und speichern und schließen Sie dann die Datei.
 
@@ -267,9 +269,9 @@ ms.locfileid: "91585562"
 
 12. Öffnen Sie optional die Datei " *ItemTemplate. ico* ", und ändern Sie Sie so, dass Sie einen Entwurf aufweist, den Sie erkennen können. Dieses Symbol wird neben dem Projekt Element im Dialogfeld **Neues Element hinzufügen** angezeigt.
 
-13. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ItemTemplate** , und wählen Sie dann **Projekt entladen**aus.
+13. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ItemTemplate** , und wählen Sie dann **Projekt entladen** aus.
 
-14. Öffnen Sie erneut das Kontextmenü für das Projekt **ItemTemplate** , und wählen Sie dann **ItemTemplate. csproj bearbeiten** oder **ItemTemplate. vbproj bearbeiten**aus.
+14. Öffnen Sie erneut das Kontextmenü für das Projekt **ItemTemplate** , und wählen Sie dann **ItemTemplate. csproj bearbeiten** oder **ItemTemplate. vbproj bearbeiten** aus.
 
 15. Suchen Sie das folgende `VSTemplate`-Element in der Projektdatei.
 
@@ -287,20 +289,20 @@ ms.locfileid: "91585562"
 
      Das `OutputSubPath`-Element gibt weitere Ordner in dem Pfad an, unter dem die Elementvorlage beim Erstellen des Projekts erstellt wird. Mit den hier angegebenen Ordnern wird sichergestellt, dass die Element Vorlage nur verfügbar ist, wenn Kunden das Dialogfeld **Neues Element hinzufügen** öffnen, den **SharePoint** -Knoten erweitern und dann den Knoten **2010** auswählen.
 
-17. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **ItemTemplate** , und wählen Sie dann **Projekt erneut laden**aus.
+17. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ItemTemplate** , und wählen Sie dann **Projekt erneut laden** aus.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item"></a>Erstellen eines VSIX-Pakets zum Bereitstellen des Projekt Elements
  Zum Bereitstellen der Erweiterung erstellen Sie anhand des VSIX-Projekts in der Lösung ein VSIX-Paket. Konfigurieren Sie zuerst das VSIX-Paket, indem Sie die im VSIX-Projekt enthaltene Datei "source.extension.vsixmanifest" ändern. Erstellen Sie anschließend das VSIX-Paket, indem Sie die Lösung erstellen.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>So erstellen und konfigurieren Sie das VSIX-Paket
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Datei " **Source. Extension. vsixmanifest** " im Projekt "customaktionprojectitem", und wählen Sie dann **Öffnen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für die Datei " **Source. Extension. vsixmanifest** " im Projekt "customaktionprojectitem", und wählen Sie dann **Öffnen** aus.
 
      Die Datei wird von Visual Studio im Manifest-Editor geöffnet. Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
 
-2. Geben Sie im Feld **Produkt Name** die Option **benutzerdefiniertes Aktionsprojekt Element**ein.
+2. Geben Sie im Feld **Produkt Name** die Option **benutzerdefiniertes Aktionsprojekt Element** ein.
 
-3. **Geben Sie**im Feld **Autor** den Text "" ein.
+3. **Geben Sie** im Feld **Autor** den Text "" ein.
 
 4. Geben Sie im Feld **Beschreibung** **ein SharePoint-Projekt Element ein, das eine benutzerdefinierte Aktion darstellt**.
 
@@ -308,31 +310,31 @@ ms.locfileid: "91585562"
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird angezeigt.
 
-6. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ItemTemplate**aus.
+6. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ItemTemplate** aus.
 
     > [!NOTE]
     > Dieser Wert entspricht dem `ItemTemplate`-Element in der Datei "extension.vsixmanifest". Dieses Element identifiziert den Unterordner im VSIX-Paket, der die Projektelementvorlage enthält. Weitere Informationen finden Sie unter [ItemTemplate-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
-8. Wählen Sie in der Liste **Projekt** die Option **ItemTemplate**aus, und klicken Sie dann auf die Schaltfläche **OK** .
+8. Wählen Sie in der Liste **Projekt** die Option **ItemTemplate** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
 9. Wählen Sie auf der Registerkarte **Objekte** erneut die Schaltfläche **neu** aus.
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird angezeigt.
 
-10. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent**aus.
+10. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent** aus.
 
     > [!NOTE]
     > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-11. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+11. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
-12. Wählen Sie in der Liste **Projekt** die Option **ProjectItemDefinition**aus.
+12. Wählen Sie in der Liste **Projekt** die Option **ProjectItemDefinition** aus.
 
 13. Klicken Sie auf die Schaltfläche **OK** .
 
-14. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen**aus, und vergewissern Sie sich,  >  **Build Solution**dass das Projekt ohne Fehler kompiliert wird.
+14. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass das Projekt ohne Fehler kompiliert wird.
 
 15. Überprüfen Sie, ob der Buildausgabeordner für das Projekt "CustomActionProjectItem" die Datei "CustomActionProjectItem.vsix" enthält.
 
@@ -353,17 +355,17 @@ ms.locfileid: "91585562"
 
 #### <a name="to-test-the-project-item-in-visual-studio"></a>So testen Sie das Projektelement in Visual Studio
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus.
 
 2. Erweitern Sie **Visual c#** oder **Visual Basic** (abhängig von der von der Element Vorlage unterstützten Sprache), erweitern Sie **SharePoint**, und wählen Sie dann den Knoten **2010** aus.
 
-3. Wählen Sie in der Liste der Projektvorlagen **SharePoint 2010-Projekt**aus.
+3. Wählen Sie in der Liste der Projektvorlagen **SharePoint 2010-Projekt** aus.
 
-4. Geben Sie im Feld **Name den Namen** **customaktiontest**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+4. Geben Sie im Feld **Name den Namen** **customaktiontest** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Geben Sie im Assistenten zum Anpassen von **SharePoint**die URL der Website ein, die Sie zum Debuggen verwenden möchten, und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
+5. Geben Sie im Assistenten zum Anpassen von **SharePoint** die URL der Website ein, die Sie zum Debuggen verwenden möchten, und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
 
-6. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projekt Knoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Element**aus.
+6. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projekt Knoten, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Element** aus.
 
 7. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter dem Knoten **SharePoint** den Knoten **2010** aus.
 
@@ -377,17 +379,17 @@ ms.locfileid: "91585562"
 
 10. Drücken Sie die Taste **F5** , um das Debuggen des Projekts fortzusetzen.
 
-11. Öffnen Sie in der experimentellen Instanz von Visual Studio in **Projektmappen-Explorer**das Kontextmenü für den Knoten **CustomAction1** , und wählen Sie dann **benutzerdefinierter Aktions-Designer anzeigen**aus.
+11. Öffnen Sie in der experimentellen Instanz von Visual Studio in **Projektmappen-Explorer** das Kontextmenü für den Knoten **CustomAction1** , und wählen Sie dann **benutzerdefinierter Aktions-Designer anzeigen** aus.
 
 12. Überprüfen Sie, ob ein Meldungs Feld angezeigt wird, und wählen Sie dann die Schaltfläche **OK**
 
      Sie können dieses Kontextmenü verwenden, um zusätzliche Optionen oder Befehle für Entwickler bereitzustellen, z. B. zum Anzeigen eines Designers für die benutzerdefinierte Aktion.
 
-13. Wählen Sie in der Menüleiste **View**  >  **Ausgabe**anzeigen aus.
+13. Wählen Sie in der Menüleiste **View**  >  **Ausgabe** anzeigen aus.
 
      Das Fenster **Ausgabe** wird geöffnet.
 
-14. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Element **CustomAction1** , und ändern Sie dann den Namen in **MyCustomAction**.
+14. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Element **CustomAction1** , und ändern Sie dann den Namen in **MyCustomAction**.
 
      Im Fenster **Ausgabe** wird eine Bestätigungsmeldung angezeigt. Diese Meldung wird von dem <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged>-Ereignishandler ausgegeben, den Sie in der `CustomActionProjectItemTypeProvider`-Klasse definiert haben. Sie können dieses Ereignis und andere Projektelementereignisse behandeln, um ein benutzerdefiniertes Verhalten bei Änderungen des Projektelements durch den Entwickler zu implementieren.
 
@@ -428,18 +430,18 @@ ms.locfileid: "91585562"
     > [!NOTE]
     > Wenn das Dialogfeld **Skript Debugging deaktiviert** angezeigt wird, klicken Sie auf die Schaltfläche **Ja** , um das Debuggen des Projekts fortzusetzen.
 
-4. Wählen Sie im Menü **Website Aktionen** die Option **SharePoint Developer Center**aus, vergewissern Sie sich, dass der Browser die Website öffnet https://docs.microsoft.com/sharepoint/dev/ , und schließen Sie dann den Webbrowser.
+4. Wählen Sie im Menü **Website Aktionen** die Option **SharePoint Developer Center** aus, vergewissern Sie sich, dass der Browser die Website öffnet https://docs.microsoft.com/sharepoint/dev/ , und schließen Sie dann den Webbrowser.
 
 ## <a name="clean-up-the-development-computer"></a>Bereinigen des Entwicklungs Computers
  Nachdem Sie die Tests des Projektelements abgeschlossen haben, entfernen Sie die Projektelementvorlage aus der experimentellen Instanz von Visual Studio.
 
 #### <a name="to-clean-up-the-development-computer"></a>So bereinigen Sie den Entwicklungscomputer
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 
-2. Wählen Sie in der Liste der Erweiterungen **benutzerdefinierte Aktion Projekt Element**aus, und wählen Sie dann die Schaltfläche **deinstallieren** aus.
+2. Wählen Sie in der Liste der Erweiterungen **benutzerdefinierte Aktion Projekt Element** aus, und wählen Sie dann die Schaltfläche **deinstallieren** aus.
 
 3. Wählen Sie im angezeigten Dialogfeld die Schaltfläche **Ja** aus, um zu bestätigen, dass Sie die Erweiterung deinstallieren möchten.
 

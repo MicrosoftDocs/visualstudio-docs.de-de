@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen und Entfernen von Elementen zu SharePoint-Features | Microsoft-Dokumentation'
+description: Manuelles Hinzufügen und Entfernen von SharePoint-Projekt Elementen in SharePoint-Features mithilfe des Funktions-Designers in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014534"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914919"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Gewusst wie: Hinzufügen und Entfernen von Elementen zu SharePoint-Features
   Wenn Sie eine SharePoint-Lösung erstellen, fügt Visual Studio die SharePoint-Standard Projekt Elemente zu ihrer Funktion hinzu. Vor der Bereitstellung können Sie SharePoint-Projekt Elemente hinzufügen und entfernen, um die SharePoint-Funktion zu ändern.
@@ -30,7 +32,7 @@ ms.locfileid: "86014534"
 
 1. Öffnen Sie den Funktions-Designer.
 
-    Weitere Informationen finden Sie unter Gewusst [wie: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md).
+    Weitere Informationen finden Sie unter [Vorgehensweise: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
 2. Fügen Sie einen oder mehrere Elemente aus den **Elementen in der** projektmappenliste zu den **Elementen in der** Featureliste hinzu, indem Sie einen oder mehrere der folgenden Schritte ausführen:
 

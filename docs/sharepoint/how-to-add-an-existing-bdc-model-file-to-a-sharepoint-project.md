@@ -1,6 +1,8 @@
 ---
 title: 'Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt | Microsoft-Dokumentation'
 titleSuffix: ''
+description: Fügen Sie einem SharePoint-Projekt in Visual Studio eine vorhandene BDC-Modelldatei (Business Data Connectivity) hinzu, damit Sie ein BDC-Modell anpassen, Verpacken und erneut bereitstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,25 +20,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584619"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914958"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>How to: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt
   Sie können ein Business Data Connectivity (BDC)-Modell mithilfe von Visual Studio anpassen, Verpacken und erneut bereitstellen, indem Sie die Modelldatei (*. bdcm*) zu einem SharePoint-Farm Projekt hinzufügen. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>So fügen Sie eine BDC-Modelldatei zu einem SharePoint-Projekt hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**den Ordner für ein SharePoint-Projekt aus.
+1. Wählen Sie in **Projektmappen-Explorer** den Ordner für ein SharePoint-Projekt aus.
 
-2. Wählen Sie in der Menüleiste die Option **Projekt**  >  **Vorhandenes Element hinzufügen**aus.
+2. Wählen Sie in der Menüleiste die Option **Projekt**  >  **Vorhandenes Element hinzufügen** aus.
 
 3. Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zum Speicherort der Modell Definitionsdatei, die Sie dem Projekt hinzufügen möchten, wählen Sie die Datei aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
-    Wenn das Modell kein Lob- *System (Line of Business) vom Typ .NET-Assembly*definiert, wird das Dialogfeld **.NET-Assembly-LobSystem hinzufügen** geöffnet.
+    Wenn das Modell kein Lob- *System (Line of Business) vom Typ .NET-Assembly* definiert, wird das Dialogfeld **.NET-Assembly-LobSystem hinzufügen** geöffnet.
 
 4. Wenn das Dialogfeld angezeigt wird, führen Sie einen der folgenden Schritte aus:
 

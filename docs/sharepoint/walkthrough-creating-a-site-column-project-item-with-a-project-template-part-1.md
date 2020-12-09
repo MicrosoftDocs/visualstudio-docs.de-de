@@ -1,6 +1,8 @@
 ---
 title: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 1
 titleSuffix: ''
+description: Definieren Sie einen Projekt Elementtyp zum Erstellen einer Websites palte, und erstellen Sie dann eine Projektvorlage, die zum Erstellen eines SharePoint-Projekts verwendet wird, das das Projekt Element enthält.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585549"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915216"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projekt Elements für eine Website Spalte mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.
@@ -78,15 +80,15 @@ ms.locfileid: "91585549"
     > [!NOTE]
     > Der **Erweiterbarkeits** Knoten ist nur verfügbar, wenn Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.
 
-5. Wählen Sie in der Liste der Projektvorlagen die Option **VSIX-Projekt**aus.
+5. Wählen Sie in der Liste der Projektvorlagen die Option **VSIX-Projekt** aus.
 
-6. Geben Sie im Feld **Name den Namen** **sitecolumnprojectitem**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+6. Geben Sie im Feld **Name den Namen** **sitecolumnprojectitem** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt das Projekt **sitecolumnprojectitem** **Projektmappen-Explorer**hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt das Projekt **sitecolumnprojectitem** **Projektmappen-Explorer** hinzu.
 
 #### <a name="to-create-the-project-template-project"></a>So erstellen Sie das Projektvorlagenprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Projekt**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Projekt** aus.
 
 2. Stellen Sie oben im Dialogfeld **Neues Projekt** sicher, dass **.NET Framework 4,5** in der Liste der .NET Framework Versionen ausgewählt ist.
 
@@ -94,7 +96,7 @@ ms.locfileid: "91585549"
 
 4. Wählen Sie in der Liste der Projektvorlagen die **c#-Projektvorlage** oder die Vorlage **Visual Basic Projektvorlage** aus.
 
-5. Geben Sie im Feld **Name den Namen** **sitecolumnprojecttemplate**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+5. Geben Sie im Feld **Name den Namen** **sitecolumnprojecttemplate** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der Projekt Mappe das **sitecolumnprojecttemplate** -Projekt hinzu.
 
@@ -116,7 +118,7 @@ ms.locfileid: "91585549"
 
 #### <a name="to-create-the-extension-project"></a>So erstellen Sie das Erweiterungsprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Projekt**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Projekt** aus.
 
 2. Stellen Sie oben im Dialogfeld **Neues Projekt** sicher, dass **.NET Framework 4,5** in der Liste der .NET Framework Versionen ausgewählt ist.
 
@@ -133,7 +135,7 @@ ms.locfileid: "91585549"
 
 #### <a name="to-configure-the-project"></a>So konfigurieren Sie das Projekt
 
-1. Fügen Sie im Projekt projectItemTypeDefinition eine Codedatei mit dem Namen **sitecolumnprojectitemtypeprovider**hinzu.
+1. Fügen Sie im Projekt projectItemTypeDefinition eine Codedatei mit dem Namen **sitecolumnprojectitemtypeprovider** hinzu.
 
 2. Wählen Sie in der Menüleiste die Optionen **Projekt** > **Verweis hinzufügen** aus.
 
@@ -163,13 +165,13 @@ ms.locfileid: "91585549"
 2. Erstellen Sie ein SharePoint 2010-Projekt mit dem Namen **basesharepointproject**.
 
    > [!IMPORTANT]
-   > Wählen Sie im Assistenten zum Anpassen von **SharePoint**nicht das Optionsfeld **als Farm Lösung** bereitstellen aus.
+   > Wählen Sie im Assistenten zum Anpassen von **SharePoint** nicht das Optionsfeld **als Farm Lösung** bereitstellen aus.
 
 3. Fügen Sie dem Projekt ein leeres Element Element hinzu, und benennen Sie dann das Element **field1**.
 
 4. Speichern Sie das Projekt, und schließen Sie die zweite Instanz von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-5. Öffnen Sie in der Instanz von, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] in der die Projekt Mappe sitecolumnprojectitem geöffnet ist, in **Projektmappen-Explorer**das Kontextmenü für den Projekt Knoten **sitecolumnprojecttemplate** , wählen Sie **Hinzufügen**aus, und wählen Sie dann **Vorhandenes Element**aus.
+5. Öffnen Sie in der Instanz von, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] in der die Projekt Mappe sitecolumnprojectitem geöffnet ist, in **Projektmappen-Explorer** das Kontextmenü für den Projekt Knoten **sitecolumnprojecttemplate** , wählen Sie **Hinzufügen** aus, und wählen Sie dann **Vorhandenes Element** aus.
 
 6. Öffnen Sie im Dialogfeld **Vorhandenes Element hinzufügen** die Liste der Dateierweiterungen, und wählen Sie dann **alle Dateien ( \* . \* )** aus.
 
@@ -196,9 +198,9 @@ ms.locfileid: "91585549"
 
 #### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>So konfigurieren Sie die Verwendung der Projektvorlage durch Entwickler im Dialogfeld "Neues Projekt"
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den **sitecolumnprojecttemplate** -Projekt Knoten, und wählen Sie dann **Projekt entladen**aus. Wenn Sie aufgefordert werden, Änderungen an Dateien zu speichern, klicken Sie auf die Schaltfläche **Ja** .
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den **sitecolumnprojecttemplate** -Projekt Knoten, und wählen Sie dann **Projekt entladen** aus. Wenn Sie aufgefordert werden, Änderungen an Dateien zu speichern, klicken Sie auf die Schaltfläche **Ja** .
 
-2. Öffnen Sie erneut das Kontextmenü für den **sitecolumnprojecttemplate** -Knoten, und wählen Sie dann **sitecolumnprojecttemplate. csproj bearbeiten** oder **sitecolumnprojecttemplate. vbproj bearbeiten**aus.
+2. Öffnen Sie erneut das Kontextmenü für den **sitecolumnprojecttemplate** -Knoten, und wählen Sie dann **sitecolumnprojecttemplate. csproj bearbeiten** oder **sitecolumnprojecttemplate. vbproj bearbeiten** aus.
 
 3. Suchen Sie das folgende `VSTemplate`-Element in der Projektdatei.
 
@@ -218,7 +220,7 @@ ms.locfileid: "91585549"
 
 5. Speichern und schließen Sie die Datei.
 
-6. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **sitecolumnprojecttemplate** , und wählen Sie dann **Projekt erneut laden**aus.
+6. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **sitecolumnprojecttemplate** , und wählen Sie dann **Projekt erneut laden** aus.
 
 ## <a name="edit-the-project-template-files"></a>Bearbeiten der Projektvorlagen Dateien
  Bearbeiten Sie die folgenden Dateien im SiteColumnProjectTemplate-Projekt, um das Verhalten der Projektvorlage zu definieren:
@@ -251,7 +253,7 @@ ms.locfileid: "91585549"
     using System.Security;
     ```
 
-     Wenn die **Sandbox** -Projektmappeneigenschaft eines SharePoint-Projekts auf **true**festgelegt ist, fügt Visual Studio die der <xref:System.Security.AllowPartiallyTrustedCallersAttribute> AssemblyInfo-Codedatei hinzu. Der Namespace <xref:System.Security> wird von der Codedatei AssemblyInfo in Projektvorlage allerdings nicht standardmäßig importiert. Sie müssen diese **using** -oder **Imports** -Anweisung hinzufügen, um Kompilierungsfehler zu verhindern.
+     Wenn die **Sandbox** -Projektmappeneigenschaft eines SharePoint-Projekts auf **true** festgelegt ist, fügt Visual Studio die der <xref:System.Security.AllowPartiallyTrustedCallersAttribute> AssemblyInfo-Codedatei hinzu. Der Namespace <xref:System.Security> wird von der Codedatei AssemblyInfo in Projektvorlage allerdings nicht standardmäßig importiert. Sie müssen diese **using** -oder **Imports** -Anweisung hinzufügen, um Kompilierungsfehler zu verhindern.
 
 2. Speichern und schließen Sie die Datei.
 
@@ -428,7 +430,7 @@ ms.locfileid: "91585549"
 
     Durch das neue XML werden folgende Änderungen an der Datei vorgenommen:
 
-   - Legt das `Name` Element auf die **Spalte Wert Site**fest. (Dieser Name wird im Dialogfeld **Neues Projekt** angezeigt.)
+   - Legt das `Name` Element auf die **Spalte Wert Site** fest. (Dieser Name wird im Dialogfeld **Neues Projekt** angezeigt.)
 
    - Fügt die `ProjectItem`-Elemente für alle Dateien hinzu, die in den einzelnen Projektinstanzen enthalten sind.
 
@@ -638,13 +640,13 @@ ms.locfileid: "91585549"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>So erstellen und konfigurieren Sie das VSIX-Paket
 
-1. Öffnen Sie in **Projektmappen-Explorer**im Projekt **sitecolumnprojectitem** die Datei "Source. Extension. vsixmanifest" im Manifest-Editor.
+1. Öffnen Sie in **Projektmappen-Explorer** im Projekt **sitecolumnprojectitem** die Datei "Source. Extension. vsixmanifest" im Manifest-Editor.
 
      Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei "extension.vsixmanifest", die für alle VSIX-Pakete erforderlich ist. Weitere Informationen zu dieser Datei finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 1,0](/previous-versions/dd393700(v=vs.110)).
 
-2. Geben Sie im Feld **Produkt Name den Namen** **Site Column**ein.
+2. Geben Sie im Feld **Produkt Name den Namen** **Site Column** ein.
 
-3. **Geben Sie**im Feld **Autor** den Text "" ein.
+3. **Geben Sie** im Feld **Autor** den Text "" ein.
 
 4. Geben Sie im Feld **Beschreibung** **ein SharePoint-Projekt zum Erstellen von Website Spalten ein**.
 
@@ -652,29 +654,29 @@ ms.locfileid: "91585549"
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-6. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ProjectTemplate**aus.
+6. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ProjectTemplate** aus.
 
     > [!NOTE]
     > Dieser Wert entspricht dem `ProjectTemplate`-Element in der Datei "extension.vsixmanifest". Durch dieses Element wird der Unterordner im VSIX-Paket identifiziert, der die Projektvorlage enthält. Weitere Informationen finden Sie unter [ProjectTemplate-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
 
-7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
-8. Wählen Sie in der Liste **Projekt** die Option **sitecolumnprojecttemplate**aus, und klicken Sie dann auf die Schaltfläche **OK** .
+8. Wählen Sie in der Liste **Projekt** die Option **sitecolumnprojecttemplate** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
 9. Klicken Sie erneut auf die Schaltfläche **neu** .
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird geöffnet.
 
-10. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent**aus.
+10. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent** aus.
 
     > [!NOTE]
     > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-11. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+11. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
-12. Wählen Sie in der Liste **Projekt** die Option **projectItemTypeDefinition**aus, und klicken Sie dann auf die Schaltfläche **OK** .
+12. Wählen Sie in der Liste **Projekt** die Option **projectItemTypeDefinition** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-13. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen**aus, und vergewissern Sie sich,  >  **Build Solution**dass das Projekt ohne Fehler kompiliert wird.
+13. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass das Projekt ohne Fehler kompiliert wird.
 
 ## <a name="test-the-project-template"></a>Testen der Projektvorlage
  Jetzt können Sie die Projektvorlage testen. Debuggen Sie die Projektmappe SiteColumnProjectItem zunächst in der experimentellen Instanz von Visual Studio. Testen Sie anschließend das **Website Spalten** Projekt in der experimentellen Instanz von Visual Studio. Erstellen und führen Sie zum Schluss das SharePoint-Projekt aus, um sicherzustellen, dass die Websitespalte ordnungsgemäß funktioniert.
@@ -689,7 +691,7 @@ ms.locfileid: "91585549"
 
 #### <a name="to-test-the-project-in-visual-studio"></a>So testen Sie das Projekt in Visual Studio
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus.
 
 2. Erweitern Sie den Knoten **Visual c#** oder **Visual Basic** (abhängig von der von der Projektvorlage unterstützten Sprache), erweitern Sie den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
@@ -697,11 +699,11 @@ ms.locfileid: "91585549"
 
 4. Geben Sie im Feld **Name den Namen** **sitecolumntest** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-     In **Projektmappen-Explorer**wird ein neues Projekt mit einem Projekt Element mit dem Namen " **field1**" angezeigt.
+     In **Projektmappen-Explorer** wird ein neues Projekt mit einem Projekt Element mit dem Namen " **field1**" angezeigt.
 
 5. Vergewissern Sie sich, dass der Code in der anderen Instanz von Visual Studio an dem Haltepunkt anhält, den Sie zuvor in der Methode festgelegt `InitializeType` haben, und drücken Sie dann die Taste **F5** , um das Debuggen des Projekts fortzusetzen.
 
-6. Wählen Sie in **Projektmappen-Explorer**den Knoten **field1** aus, und wählen Sie dann die **F4** -Taste.
+6. Wählen Sie in **Projektmappen-Explorer** den Knoten **field1** aus, und wählen Sie dann die **F4** -Taste.
 
      Das Fenster **Eigenschaften** wird geöffnet.
 
@@ -709,7 +711,7 @@ ms.locfileid: "91585549"
 
 #### <a name="to-test-the-site-column-in-sharepoint"></a>So testen Sie die Websitespalte in SharePoint
 
-1. Wählen Sie in **Projektmappen-Explorer**den Knoten **sitecolumntest** aus.
+1. Wählen Sie in **Projektmappen-Explorer** den Knoten **sitecolumntest** aus.
 
 2. Geben Sie im Fenster **Eigenschaften** im Textfeld neben der Eigenschaft **Website-URL** ein **http://localhost** .
 
@@ -725,11 +727,11 @@ ms.locfileid: "91585549"
     > [!NOTE]
     > Wenn das Dialogfeld **Skript Debugging deaktiviert** angezeigt wird, klicken Sie auf die Schaltfläche **Ja** , um das Debuggen des Projekts fortzusetzen.
 
-4. Wählen Sie im Menü **Website Aktionen** die Option **Website Einstellungen**aus.
+4. Wählen Sie im Menü **Website Aktionen** die Option **Website Einstellungen** aus.
 
 5. Wählen Sie auf der Seite **Site Einstellungen** unter der Liste **Galerien** den Link **Site Columns** aus.
 
-6. Überprüfen Sie in der Liste der Website Spalten, ob eine **benutzerdefinierte Spalten** Gruppe eine Spalte mit dem Namen **sitecolumntest**enthält.
+6. Überprüfen Sie in der Liste der Website Spalten, ob eine **benutzerdefinierte Spalten** Gruppe eine Spalte mit dem Namen **sitecolumntest** enthält.
 
 7. Schließen Sie den Webbrowser.
 
@@ -738,7 +740,7 @@ ms.locfileid: "91585549"
 
 #### <a name="to-clean-up-the-development-computer"></a>So bereinigen Sie den Entwicklungscomputer
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 

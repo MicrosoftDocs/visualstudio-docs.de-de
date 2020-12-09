@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen einer Entität zu einem Modell | Microsoft-Dokumentation'
+description: Fügen Sie einem Modell eine Entität hinzu, indem Sie ein Entitäts Steuerelement aus der Visual Studio-Toolbox in den Business Data Connectivity (BDC)-Designer einfügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b80f39494b98014a75d4265f228906be2ff45188
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0efd7a6fc0d6254dbfd3cbda538ffe0e30585453
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016678"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915387"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Gewusst wie: Hinzufügen einer Entität zu einem Modell
   Um eine Entität zu erstellen, fügen Sie ein Entitäts Steuerelement aus der Visual Studio- **Toolbox** auf dem Business Data Connectivity (BDC)-Designer hinzu.
@@ -31,11 +33,11 @@ ms.locfileid: "86016678"
 
 1. Erstellen Sie ein BDC-Projekt, oder öffnen Sie ein vorhandenes BDC-Projekt. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-2. Fügen Sie in der **Toolbox**aus der Gruppe **BusinessDataCatalog** ein **Entitäts** Steuerelement zum Designer hinzu.
+2. Fügen Sie in der **Toolbox** aus der Gruppe **BusinessDataCatalog** ein **Entitäts** Steuerelement zum Designer hinzu.
 
      Die neue Entität wird im Designer angezeigt. Visual Studio fügt dem XML-Code der `<Entity>` BDC-Modelldatei in Ihrem Projekt ein Element hinzu. Weitere Informationen zu den Attributen eines Entity-Elements finden Sie unter [Entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14)).
 
-3. Öffnen Sie im Designer das Kontextmenü für die Entität, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Bezeichner**aus.
+3. Öffnen Sie im Designer das Kontextmenü für die Entität, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Bezeichner** aus.
 
      In der Entität wird ein neuer Bezeichner angezeigt.
 

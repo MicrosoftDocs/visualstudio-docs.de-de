@@ -1,5 +1,7 @@
 ---
 title: Ereignis Beschreibungen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Ereignis Typen und die Gründe für deren Verwendung. Jeder Ereignistyp hat einen bestimmten Zweck.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c2582717fd4da3b833da90a951f9b8f72a59f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea477d3d21cd3b7a1a5352c736dc2f78195b99a4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738789"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915608"
 ---
 # <a name="event-descriptions"></a>Ereignis Beschreibungen
 Jeder Ereignistyp hat einen bestimmten Zweck.
 
 ## <a name="events-and-the-reasons-for-their-use"></a>Ereignisse und die Gründe für deren Verwendung
 
-|Ereignis|BESCHREIBUNG|
+|Ereignis|Beschreibung|
 |-----------|-----------------|
 |Dokument Ereignisse aktivieren|Tritt auf, wenn das Debug-Modul (de) möchte, dass die IDE öffnet oder ein Dokument in den Vordergrund bringt.|
 |Haltepunkt-oder breakpointfehlerereignisse|Wird gesendet, wenn ein Breakpoint gebunden ist oder wenn ein Haltepunkt nicht gebunden werden kann und ein Fehler zurückgegeben wird.|

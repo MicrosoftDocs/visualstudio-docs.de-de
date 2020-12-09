@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Hinzufügen einer benutzerdefinierten Eigenschaft | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie mithilfe des Eigenschaften-Editors im BDC-Explorer von Visual Studio eine benutzerdefinierte Eigenschaft zum BDC-Modell (Business Data Connectivity) in SharePoint hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017077"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915478"
 ---
 # <a name="how-to-add-a-custom-property"></a>Gewusst wie: Hinzufügen einer benutzerdefinierten Eigenschaft
-  Mit dem Eigenschaften- **Editor**können Sie dem Modell benutzerdefinierte Eigenschaften hinzufügen. Sie können auf diese Eigenschaften im Code zugreifen, um Informationen wie Verbindungs Zeichenfolgen und andere Daten zur Laufzeit abzurufen.
+  Mit dem Eigenschaften- **Editor** können Sie dem Modell benutzerdefinierte Eigenschaften hinzufügen. Sie können auf diese Eigenschaften im Code zugreifen, um Informationen wie Verbindungs Zeichenfolgen und andere Daten zur Laufzeit abzurufen.
 
 ### <a name="to-add-a-custom-property"></a>So fügen Sie eine benutzerdefinierte Eigenschaft hinzu
 
-1. Wählen Sie im **BDC-Explorer**den Knoten aus, der das Modellelement darstellt, auf das Sie eine benutzerdefinierte Eigenschaft anwenden möchten.
+1. Wählen Sie im **BDC-Explorer** den Knoten aus, der das Modellelement darstellt, auf das Sie eine benutzerdefinierte Eigenschaft anwenden möchten.
 
-2. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster**aus.
+2. Wählen Sie in der Menüleiste **Ansicht**  >  **Eigenschaften Fenster** aus.
 
 3. Wählen Sie im **Eigenschaften** Fenster die Eigenschaft **benutzerdefinierte Eigenschaften** aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")).
 

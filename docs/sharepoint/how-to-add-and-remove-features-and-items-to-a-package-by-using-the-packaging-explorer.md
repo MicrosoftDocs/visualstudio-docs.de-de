@@ -1,6 +1,8 @@
 ---
 title: 'Paket-Explorer: Hinzufügen & Features & Elementen zum Paket entfernen'
 titleSuffix: ''
+description: Hinzufügen und Entfernen von Features und Elementen zu einem SharePoint-Paket mithilfe des Paket-Explorers in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585588"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915348"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Vorgehensweise: Hinzufügen und Entfernen von Features und Elementen zu einem Paket mit dem Paket-Explorer
   Zum Konfigurieren eines Pakets für die Bereitstellung von SharePoint-Elementen und-Features können Sie den Paket-Explorer verwenden. Sie können die SharePoint-Projekt Elemente und-Funktionen in der wsp-Datei anpassen.
@@ -32,16 +34,16 @@ ms.locfileid: "91585588"
 
 #### <a name="to-open-the-packaging-explorer"></a>So öffnen Sie den Paket-Explorer
 
-1. Wählen Sie in der Menüleiste **View**die Option  >  **anderen Windows**-  >  **Paket-Explorer**anzeigen aus.
+1. Wählen Sie in der Menüleiste **View** die Option  >  **anderen Windows**-  >  **Paket-Explorer** anzeigen aus.
 
-     Der **Paket-Explorer** wird in der **Toolbox**angezeigt.
+     Der **Paket-Explorer** wird in der **Toolbox** angezeigt.
 
 ## <a name="adding-a-feature-to-a-package"></a>Hinzufügen einer Funktion zu einem Paket
  Sie können einem Paket mithilfe des Paket-Explorers neue und vorhandene Funktionen hinzufügen.
 
 #### <a name="to-add-a-sharepoint-feature"></a>So fügen Sie ein SharePoint-Feature hinzu
 
-1. Öffnen Sie den **Paket-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **Funktion hinzufügen**aus.
+1. Öffnen Sie den **Paket-Explorer**, öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **Funktion hinzufügen** aus.
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>So verschieben Sie eine vorhandene SharePoint-Funktion
 
@@ -49,7 +51,7 @@ ms.locfileid: "91585588"
 
     - Ziehen Sie eine **Funktion** von einem Projekt in ein anderes Projekt.
 
-    - Öffnen Sie das Kontextmenü für eine Funktion, wählen Sie **Ausschneiden**aus, öffnen Sie das Kontextmenü für das Projekt, in das Sie die Funktion verschieben möchten, und wählen Sie dann **Einfügen**aus.
+    - Öffnen Sie das Kontextmenü für eine Funktion, wählen Sie **Ausschneiden** aus, öffnen Sie das Kontextmenü für das Projekt, in das Sie die Funktion verschieben möchten, und wählen Sie dann **Einfügen** aus.
 
     > [!NOTE]
     > Verwenden Sie dieses Verfahren, wenn Sie über mehr als ein SharePoint-Projekt in der Projekt Mappe verfügen.
@@ -61,7 +63,7 @@ ms.locfileid: "91585588"
 
 1. Öffnen Sie den **Paket-Explorer**.
 
-2. Öffnen **Sie ein**Kontextmenü für ein Feature oder Paket, und wählen Sie dann überprüfen aus.
+2. Öffnen **Sie ein** Kontextmenü für ein Feature oder Paket, und wählen Sie dann überprüfen aus.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

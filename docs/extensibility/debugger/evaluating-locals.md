@@ -1,5 +1,7 @@
 ---
 title: Auswerten von lokalen Variablen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio auf den Speicherort im Arbeitsspeicher zugreift, der einen lokalen Wert enthält, der vom aktuellen Status des Programms abhängig ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d9c25c9b7b32b69983aeec4a1e533cbb927a11
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738820"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915634"
 ---
 # <a name="evaluate-locals"></a>Lokale Auswertung
 > [!IMPORTANT]
@@ -189,7 +191,7 @@ HRESULT FieldGetPrimitiveValue(
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Beispiel Implementierung von lokalen Variablen](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [Lokale Werte erhalten](../../extensibility/debugger/getting-local-values.md)
 - [Evaluierungskontext](../../extensibility/debugger/evaluation-context.md)

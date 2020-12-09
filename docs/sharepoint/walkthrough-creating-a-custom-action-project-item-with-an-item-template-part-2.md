@@ -1,6 +1,8 @@
 ---
 title: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit Element Vorlage, Teil 2
 titleSuffix: ''
+description: Fügen Sie in dieser exemplarischen Vorgehensweise einen Assistenten zum Sammeln von Informationen von Benutzern hinzu, wenn Sie eine Element Vorlage zum Hinzufügen eines benutzerdefinierten Aktionsprojekt Elements auf einer SharePoint-Website verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585470"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915206"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 2
   Nachdem Sie einen benutzerdefinierten Typ von SharePoint-Projekt Element definiert und einer Element Vorlage in Visual Studio zugeordnet haben, möchten Sie möglicherweise auch einen Assistenten für die Vorlage bereitstellen. Sie können den Assistenten verwenden, um Informationen von Benutzern zu sammeln, wenn Sie die Vorlage verwenden, um einem Projekt eine neue Instanz des Projekt Elements hinzuzufügen. Mit den gesammelten Informationen kann das Projektelement initialisiert werden.
@@ -59,7 +61,7 @@ ms.locfileid: "91585470"
 
 1. Öffnen Sie in Visual Studio die Projekt Mappe "customaktionprojectitem".
 
-2. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Projekt**aus.
+2. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projektmappenknoten, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Projekt** aus.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual c#** oder **Visual Basic** , und wählen Sie dann den Knoten **Windows** aus.
 
@@ -76,9 +78,9 @@ ms.locfileid: "91585470"
 
 #### <a name="to-configure-the-wizard-project"></a>So konfigurieren Sie ein Assistentenprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü im Projekt Knoten **itemtemplatewizard** , und wählen Sie dann **Eigenschaften**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü im Projekt Knoten **itemtemplatewizard** , und wählen Sie dann **Eigenschaften** aus.
 
-2. Vergewissern Sie sich, dass das Ziel Framework im **Projekt-Designer**auf .NET Framework 4,5 festgelegt ist.
+2. Vergewissern Sie sich, dass das Ziel Framework im **Projekt-Designer** auf .NET Framework 4,5 festgelegt ist.
 
      Für Visual c#-Projekte können Sie diesen Wert auf der Registerkarte **Anwendung** festlegen. Für Visual Basic Projekte können Sie diesen Wert auf der Registerkarte **Kompilieren** festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Ausrichten auf eine Version der .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -86,7 +88,7 @@ ms.locfileid: "91585470"
 
 4. Fügen Sie zwei Code Dateien mit dem Namen "customaktionwizard" und "Strings" hinzu.
 
-5. Öffnen Sie das Kontextmenü für das Projekt **itemtemplatewizard** , und wählen Sie dann **Verweis hinzufügen**aus.
+5. Öffnen Sie das Kontextmenü für das Projekt **itemtemplatewizard** , und wählen Sie dann **Verweis hinzufügen** aus.
 
 6. Wählen Sie im Dialogfeld **Verweis-Manager-itemtemplatewizard** unter **dem Knoten** Assemblys den Knoten **Erweiterungen** aus.
 
@@ -98,7 +100,7 @@ ms.locfileid: "91585470"
 
     - Microsoft.VisualStudio.TemplateWizardInterface
 
-8. Wählen Sie in **Projektmappen-Explorer**im Ordner **Verweise** für das Projekt itemtemplatewizard den Verweis **svdte** aus.
+8. Wählen Sie in **Projektmappen-Explorer** im Ordner **Verweise** für das Projekt itemtemplatewizard den Verweis **svdte** aus.
 
 9. Ändern Sie im **Eigenschaften** Fenster den Wert der Eigenschaft **Interop-Typen einbetten** in **false**.
 
@@ -172,7 +174,7 @@ ms.locfileid: "91585470"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>So signieren Sie die Assistenten-Assembly mit einem starkem Namen
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü im Projekt Knoten **itemtemplatewizard** , und wählen Sie dann **Eigenschaften**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü im Projekt Knoten **itemtemplatewizard** , und wählen Sie dann **Eigenschaften** aus.
 
 2. Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.
 
@@ -196,7 +198,7 @@ ms.locfileid: "91585470"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>So fügen Sie einen Verweis auf die Assistenten-Assembly in der VSTEMPLATE-Datei hinzu
 
-1. Erweitern Sie in **Projektmappen-Explorer**den Projekt Knoten **ItemTemplate** , und öffnen Sie dann die Datei *ItemTemplate. vstemplate* .
+1. Erweitern Sie in **Projektmappen-Explorer** den Projekt Knoten **ItemTemplate** , und öffnen Sie dann die Datei *ItemTemplate. vstemplate* .
 
 2. Fügen Sie das folgende `WizardExtension`-Element zwischen dem `</TemplateContent>`-Tag und dem `</VSTemplate>`-Tag am Ende der Datei hinzu. Ersetzen Sie den *yourtoken* -Wert des- `PublicKeyToken` Attributs durch das öffentliche Schlüssel Token, das Sie im vorherigen Verfahren abgerufen haben.
 
@@ -243,19 +245,19 @@ ms.locfileid: "91585470"
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>So fügen Sie den Assistenten dem VSIX-Paket hinzu
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü aus der Datei " **Source. Extension. vsixmanifest** " im Projekt "customaktionprojectitem", und wählen Sie dann **Öffnen** aus, um die Datei im Manifest-Editor zu öffnen.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü aus der Datei " **Source. Extension. vsixmanifest** " im Projekt "customaktionprojectitem", und wählen Sie dann **Öffnen** aus, um die Datei im Manifest-Editor zu öffnen.
 
 2. Wählen Sie im Manifest-Editor die Registerkarte **Assets** aus, und klicken Sie dann auf die Schaltfläche **neu** .
 
      Das Dialogfeld **Neues Objekt hinzufügen** wird angezeigt.
 
-3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. Assembly**aus.
+3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. Assembly** aus.
 
-4. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+4. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
-5. Wählen Sie in der Liste **Projekt** die Option **itemtemplatewizard**aus, und klicken Sie dann auf die Schaltfläche **OK** .
+5. Wählen Sie in der Liste **Projekt** die Option **itemtemplatewizard** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-6. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen**aus, und vergewissern Sie sich,  >  **Build Solution**dass die Projekt Mappe ohne Fehler kompiliert wird.
+6. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass die Projekt Mappe ohne Fehler kompiliert wird.
 
 ## <a name="test-the-wizard"></a>Testen des Assistenten
  Sie können den Assistenten jetzt testen. Beginnen Sie zunächst mit dem Debuggen der Projekt Mappe "customaktionprojectitem" in der experimentellen Instanz von Visual Studio. Testen Sie dann den Assistenten für das Projekt Element benutzerdefinierte Aktion in einem SharePoint-Projekt in der experimentellen Instanz von Visual Studio. Erstellen und führen Sie zum Schluss das SharePoint-Projekt aus, um sicherzustellen, dass die benutzerdefinierte Aktion ordnungsgemäß funktioniert.
@@ -266,25 +268,25 @@ ms.locfileid: "91585470"
 
 2. Öffnen Sie im Projekt "itemtemplatewizard" die Codedatei "customaktionwizard", und fügen Sie der ersten Codezeile in der-Methode einen Haltepunkt hinzu `RunStarted` .
 
-3. Wählen Sie in der Menüleiste **debugausnahmen**aus  >  **Exceptions**.
+3. Wählen Sie in der Menüleiste **debugausnahmen** aus  >  **Exceptions**.
 
 4. Stellen Sie im Dialogfeld **Ausnahmen** sicher, dass die Kontrollkästchen ausgelöste **und** **Benutzer unbehandelt** für **Common Language Runtime-Ausnahmen** deaktiviert sind, und klicken Sie dann auf die Schaltfläche **OK** .
 
-5. Starten Sie das Debugging, indem Sie die Taste **F5** drücken, oder wählen Sie in der Menüleiste **Debuggen**  >  **Debuggen starten**aus.
+5. Starten Sie das Debugging, indem Sie die Taste **F5** drücken, oder wählen Sie in der Menüleiste **Debuggen**  >  **Debuggen starten** aus.
 
      Visual Studio installiert die Erweiterung in%USERPROFILE%\appdata\local\microsoft\visualstudio\11.0exp\extensions\condeso\custom Action Project Item\1.0 und startet eine experimentelle Instanz von Visual Studio. Sie testen das Projektelement in dieser Instanz von Visual Studio.
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>So testen Sie den Assistenten in Visual Studio
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio in der Menüleiste **Datei**  >  **neu**  >  **Projekt** aus.
 
 2. Erweitern Sie den Knoten **Visual c#** oder **Visual Basic** (abhängig von der von der Element Vorlage unterstützten Sprache), erweitern Sie den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
-3. Wählen Sie in der Liste der Projektvorlagen **SharePoint 2010-Projekt**aus, nennen Sie das Projekt **customaktionwizardtest**, und klicken Sie dann auf die Schaltfläche **OK** .
+3. Wählen Sie in der Liste der Projektvorlagen **SharePoint 2010-Projekt** aus, nennen Sie das Projekt **customaktionwizardtest**, und klicken Sie dann auf die Schaltfläche **OK** .
 
-4. Geben Sie im Assistenten zum Anpassen von **SharePoint**die URL der Website ein, die Sie zum Debuggen verwenden möchten, und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
+4. Geben Sie im Assistenten zum Anpassen von **SharePoint** die URL der Website ein, die Sie zum Debuggen verwenden möchten, und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
 
-5. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für den Projekt Knoten, wählen Sie **Hinzufügen**aus, und wählen Sie dann **Neues Element**aus.
+5. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für den Projekt Knoten, wählen Sie **Hinzufügen** aus, und wählen Sie dann **Neues Element** aus.
 
 6. Erweitern Sie im Dialogfeld **Neues Element hinzufügen-customitemwizardtest** den Knoten **SharePoint** , und erweitern Sie dann den Knoten **2010** .
 
@@ -292,17 +294,17 @@ ms.locfileid: "91585470"
 
 8. Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `RunStarted`-Methode festgelegt haben.
 
-9. Fahren Sie mit dem Debuggen des Projekts fort, indem Sie die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **fortfahren**auswählen
+9. Fahren Sie mit dem Debuggen des Projekts fort, indem Sie die **F5** -Taste drücken oder in der Menüleiste **Debuggen**  >  **fortfahren** auswählen
 
      Der Assistent zum Anpassen von SharePoint wird angezeigt.
 
-10. Klicken Sie unter **Speicherort**auf das Optionsfeld **Liste bearbeiten** .
+10. Klicken Sie unter **Speicherort** auf das Optionsfeld **Liste bearbeiten** .
 
-11. Wählen Sie in der Liste **Gruppen-ID** die Option **Kommunikation**aus.
+11. Wählen Sie in der Liste **Gruppen-ID** die Option **Kommunikation** aus.
 
-12. Geben Sie im Feld **Titel** den Namen **SharePoint Developer Center**ein.
+12. Geben Sie im Feld **Titel** den Namen **SharePoint Developer Center** ein.
 
-13. Geben Sie im Feld  **Beschreibung** **die SharePoint Developer Center-Website**ein.
+13. Geben Sie im Feld  **Beschreibung** **die SharePoint Developer Center-Website** ein.
 
 14. Geben Sie im Feld **URL** ein **https://docs.microsoft.com/sharepoint/dev/** , und wählen Sie dann die Schaltfläche **Fertig** stellen aus.
 
@@ -310,7 +312,7 @@ ms.locfileid: "91585470"
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>So testen Sie die benutzerdefinierte Aktion in SharePoint
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio die **F5** -Taste, oder wählen Sie in der Menüleiste **Debuggen**  >  **Debuggen starten**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio die **F5** -Taste, oder wählen Sie in der Menüleiste **Debuggen**  >  **Debuggen starten** aus.
 
      Die benutzerdefinierte Aktion wird verpackt und auf der SharePoint-Website bereitgestellt, die von der **Website-URL** -Eigenschaft des Projekts angegeben wird, und der Webbrowser wird mit der Standardseite dieser Website geöffnet.
 
@@ -321,7 +323,7 @@ ms.locfileid: "91585470"
 
      Die Seite **Tasks-alle Aufgaben** wird angezeigt.
 
-3. Wählen Sie auf der Registerkarte **Listen Tools** des Menübands die Registerkarte **Liste** aus, und wählen Sie dann in der Gruppe **Einstellungen** die Option **Listen Einstellungen**aus.
+3. Wählen Sie auf der Registerkarte **Listen Tools** des Menübands die Registerkarte **Liste** aus, und wählen Sie dann in der Gruppe **Einstellungen** die Option **Listen Einstellungen** aus.
 
      Die Seite " **Listen Einstellungen** " wird angezeigt.
 
@@ -332,7 +334,7 @@ ms.locfileid: "91585470"
 
 #### <a name="to-clean-up-the-development-computer"></a>So bereinigen Sie den Entwicklungscomputer
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates**aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 

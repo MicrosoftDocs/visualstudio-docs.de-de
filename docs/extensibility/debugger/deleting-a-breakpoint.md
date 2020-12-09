@@ -1,5 +1,7 @@
 ---
 title: Löschen eines Breakpoints | Microsoft-Dokumentation
+description: Erfahren Sie, wie der sitzungsdebug-Manager einen ausstehenden Haltepunkt und alle gebundenen Haltepunkte entfernt, die beim Löschen eines ausstehenden halte Punkts gebunden sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 061175326a19af1866262421b381eb14267c7efd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738948"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915556"
 ---
 # <a name="deleting-a-breakpoint"></a>Löschen eines Breakpoints
 Im folgenden wird der Prozess zum Löschen eines ausstehenden Breakpoints beschrieben:
@@ -27,5 +29,5 @@ Im folgenden wird der Prozess zum Löschen eines ausstehenden Breakpoints beschr
 > [!NOTE]
 > Ein einzelner gebundener Haltepunkt kann auch durch einen [IDebugBoundBreakpoint2::D Elete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)-aufrufungspunkt gelöscht werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debugger-Ereignisse aufzurufen](../../extensibility/debugger/calling-debugger-events.md)
