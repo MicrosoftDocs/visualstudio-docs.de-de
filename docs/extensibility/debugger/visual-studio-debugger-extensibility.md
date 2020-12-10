@@ -1,5 +1,7 @@
 ---
 title: Erweiterbarkeit von Visual Studio-Debugger | Microsoft-Dokumentation
+description: In diesem Artikel wird die Erweiterbarkeit von Visual Studio-Debugger beschrieben und Links zu Artikeln über Visual Studio-debuggen bereitstellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff4222b555fab73914776725fc79581f29fa5e53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a072373ce0cf7633c595eb549455e6ecd62df887
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712498"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995992"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Erweiterbarkeit von Visual Studio-Debugger
 Visual Studio enthält einen vollständig interaktiven Quellcode-Debugger, der ein leistungsfähiges und einfach zu verwendende Tool zum Nachverfolgen von Fehlern in Ihrem Programm bereitstellt. Der Debugger bietet umfassende Unterstützung für Visual Basic, c#, C/C++ und JavaScript. Mit der, die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] im [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=21835)verfügbar ist, können jedoch andere Programmiersprachen im Debugger mit denselben umfangreichen Features unterstützt werden.

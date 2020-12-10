@@ -1,5 +1,7 @@
 ---
 title: Symbol Anbieter | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Symbol Anbieter, die Visual Studio bereitstellt, um eine Ausdrucks Auswertung zum Auswerten von Variablen und Ausdrücken zu aktivieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b90846d9494ee046cf9dc4a3e5de9ff033ea3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043014ebababd990c9cae03f28cb1b642d576071
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712820"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996044"
 ---
 # <a name="symbol-provider"></a>Symbol Anbieter
 Eine Ausdrucks Auswertungs Implementierung muss auf die symbolischen Debuginformationen zugreifen, die vom sprach Compiler generiert werden, um Variablen und Ausdrücke auszuwerten. Dies erfolgt durch die Verwendung der Schnittstellen eines Symbol Anbieters (SP), auch als Symbol Handler bezeichnet.
@@ -28,5 +30,5 @@ Eine Ausdrucks Auswertungs Implementierung muss auf die symbolischen Debuginform
 
  Wenn Ihr SP nur mit der benutzerdefinierten Debug-Engine funktioniert, können Sie den SP abhängig von den Anforderungen Ihrer Debug-Engine entsprechend implementieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)

@@ -1,5 +1,7 @@
 ---
 title: Dokument Sperr Inhaber-Verwaltung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Bearbeitungs Sperre für ein Dokument in der laufenden dokumententabelle platzieren, ohne dass der Benutzer ein geöffnetes Dokument in einem Dokument Fenster sehen kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9dd520f8ad5cab1f0cfee890c4bcc388c204bb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712126"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995901"
 ---
 # <a name="document-lock-holder-management"></a>Dokument Sperr Inhaber-Verwaltung
 
@@ -37,13 +39,13 @@ Wenn die Datei "b" bereits vom Editor "b" geöffnet wird, wenn der Editor "A" ve
 
 ## <a name="additional-document-edit-lock-considerations"></a>Weitere Überlegungen zur Dokument Bearbeitungs Sperre
 
-Sie erhalten ein anderes Verhalten, wenn der Editor "A" der einzige Editor ist, der über eine Dokument Bearbeitungs Sperre für die Datei "b" verfügt, als wenn der Editor "b" auch eine Dokument Bearbeitungs Sperre für die Datei "b" enthält. In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist **Klassen-Designer** ein Beispiel für einen visuellen Designer, der keine Bearbeitungs Sperre für die zugeordnete Codedatei enthält. Das heißt, wenn der Benutzer ein Klassendiagramm in der Entwurfs Ansicht geöffnet hat und die zugehörige Codedatei gleichzeitig geöffnet ist, und wenn der Benutzer die Codedatei ändert, aber die Änderungen nicht speichert, gehen die Änderungen auch in die Klassendiagramm Datei (. CD) über. Wenn das **Klassen-Designer** die einzige Dokument Bearbeitungs Sperre für die Codedatei hat, wird der Benutzer beim Schließen der Codedatei nicht aufgefordert, die Änderungen zu speichern. Die IDE fordert den Benutzer auf, die Änderungen erst zu speichern, wenn der Benutzer die **Klassen-Designer**schließt. Die gespeicherten Änderungen werden in beiden Dateien widergespiegelt. Wenn die **Klassen-Designer** und der Codedatei-Editor Dokument Bearbeitungs Sperren in der Codedatei gespeichert haben, wird der Benutzer zum Speichern aufgefordert, wenn entweder die Codedatei oder das Formular geschlossen wird. An diesem Punkt werden die gespeicherten Änderungen sowohl in Form als auch in der Codedatei widergespiegelt. Weitere Informationen zu Klassendiagrammen finden Sie unter [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
+Sie erhalten ein anderes Verhalten, wenn der Editor "A" der einzige Editor ist, der über eine Dokument Bearbeitungs Sperre für die Datei "b" verfügt, als wenn der Editor "b" auch eine Dokument Bearbeitungs Sperre für die Datei "b" enthält. In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist **Klassen-Designer** ein Beispiel für einen visuellen Designer, der keine Bearbeitungs Sperre für die zugeordnete Codedatei enthält. Das heißt, wenn der Benutzer ein Klassendiagramm in der Entwurfs Ansicht geöffnet hat und die zugehörige Codedatei gleichzeitig geöffnet ist, und wenn der Benutzer die Codedatei ändert, aber die Änderungen nicht speichert, gehen die Änderungen auch in die Klassendiagramm Datei (. CD) über. Wenn das **Klassen-Designer** die einzige Dokument Bearbeitungs Sperre für die Codedatei hat, wird der Benutzer beim Schließen der Codedatei nicht aufgefordert, die Änderungen zu speichern. Die IDE fordert den Benutzer auf, die Änderungen erst zu speichern, wenn der Benutzer die **Klassen-Designer** schließt. Die gespeicherten Änderungen werden in beiden Dateien widergespiegelt. Wenn die **Klassen-Designer** und der Codedatei-Editor Dokument Bearbeitungs Sperren in der Codedatei gespeichert haben, wird der Benutzer zum Speichern aufgefordert, wenn entweder die Codedatei oder das Formular geschlossen wird. An diesem Punkt werden die gespeicherten Änderungen sowohl in Form als auch in der Codedatei widergespiegelt. Weitere Informationen zu Klassendiagrammen finden Sie unter [Arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
 
 Beachten Sie, dass Sie die-Schnittstelle implementieren müssen, wenn Sie eine Bearbeitungs Sperre für ein Dokument für einen nicht-Editor platzieren müssen <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> .
 
 Oft nimmt ein UI-Designer, der Code Dateien Programm gesteuert ändert, Änderungen an mehr als einer Datei vor. In solchen Fällen verarbeitet die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> Methode das Speichern von einem oder mehreren Dokumenten mithilfe des Dialog Felds möchten **Sie die Änderungen an den folgenden Elementen speichern?** .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ausführen der dokumententabelle](../extensibility/internals/running-document-table.md)
 - [Persistenz und die laufende Dokument Tabelle](../extensibility/internals/persistence-and-the-running-document-table.md)

@@ -1,5 +1,7 @@
 ---
 title: IDE-Konstanten | Microsoft-Dokumentation
+description: Die VSConstants-Klasse stellt Konstanten bereit, die für die IDE spezifisch sind und zuvor nur in Header Dateien definiert wurden.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2eddac1cc7d7e616deb197752adf41a4d68d15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b419981e8fe1224cef5c25e112d58924a8301b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710504"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995563"
 ---
 # <a name="ide-constants"></a>IDE-Konstanten
 
@@ -29,7 +31,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse stellt Konstanten bereit, 
 
 ## <a name="logical-and-physical-views"></a>Logische und physische Sichten
 
-|value|BESCHREIBUNG|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`Handler sollten diesen Wert an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode übergeben, um das Dialogfeld **Öffnen mit** zu erhalten, in diesem Fall bei möglichen Code Ansichten.|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`Handler übergeben diesen Wert an die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode, um das Dialogfeld **Öffnen mit aufzurufen** , in diesem Fall mit möglichen <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> debugansichten aufgefüllt, die derselben Ansicht wie zugeordnet werden <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> .|
@@ -40,7 +42,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse stellt Konstanten bereit, 
 
 ## <a name="editor-factory-flags"></a>Editorfactory-Flags
 
-|value|BESCHREIBUNG|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |[CEF. Clonefile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Ein veraltetes Flag, das bitweise als erster Parameter der- <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Methode kombiniert ist.|
 |[CEF. Openasnew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Kombinierter bitweiser als erster Parameter der <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> Methode, gibt an, dass die Editorfactory erforderliche Korrekturen durchführen soll.|
@@ -49,7 +51,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse stellt Konstanten bereit, 
 
 ## <a name="visual-studio-errors"></a>Visual Studio-Fehler
 
-|value|BESCHREIBUNG|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Eine Konstante, die von Schnittstellen zum asynchronen Verhalten zurückgegeben wird, wenn das betreffende Objekt bereits ausgelastet ist.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Ein HRESULT-Fehler, der in Visual Studio für "inkompatible Dokument Daten" spezifisch ist.|
@@ -65,7 +67,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse stellt Konstanten bereit, 
 
 ## <a name="visual-studio-constants"></a>Visual Studio-Konstanten
 
-|value|BESCHREIBUNG|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Ein HRESULT-Fehler, der spezifisch für Visual Studio ist und "Projekt weitergeleitet" anzeigt.|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Eine-Konstante, die für Visual Studio für einen "Toolbox Marker" spezifisch ist.|

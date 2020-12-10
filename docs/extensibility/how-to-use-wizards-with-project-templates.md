@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Verwenden von Assistenten mit Projektvorlagen'
+description: Erfahren Sie, wie Sie die IWizard-Schnittstelle im Visual Studio SDK verwenden, die es Ihnen ermöglicht, benutzerdefinierten Code auszuführen, wenn ein Benutzer ein Projekt aus einer Vorlage erstellt.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e0e35b43fc3b94a8d029c97f56bd573ebac95f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905516"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996369"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Gewusst wie: Verwenden von Assistenten mit Projektvorlagen
 
@@ -38,19 +40,19 @@ Sie beginnen mit dem Erstellen einer benutzerdefinierten Vorlage mit dem Projekt
    > [!NOTE]
    > Möglicherweise werden Sie aufgefordert, das Visual Studio SDK zu installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Fügen Sie ein neues VSIX-Projekt in derselben Projekt Mappe wie das Projektvorlagen Projekt hinzu (Wählen Sie in **Projektmappen-Explorer**den Knoten Projekt Mappe aus, klicken Sie mit der rechten Maustaste, und wählen Sie neues Projekt **Hinzufügen**  >  **New Project** aus, und suchen Sie nach "VSIX". Nennen Sie Sie **myprojectwizard.**
+2. Fügen Sie ein neues VSIX-Projekt in derselben Projekt Mappe wie das Projektvorlagen Projekt hinzu (Wählen Sie in **Projektmappen-Explorer** den Knoten Projekt Mappe aus, klicken Sie mit der rechten Maustaste, und wählen Sie neues Projekt **Hinzufügen**  >  **New Project** aus, und suchen Sie nach "VSIX". Nennen Sie Sie **myprojectwizard.**
 
-3. Legen Sie das VSIX-Projekt als Startprojekt fest. Wählen Sie in **Projektmappen-Explorer**den Knoten VSIX-Projekt aus, klicken Sie mit der rechten Maustaste, und wählen Sie **als Startprojekt festlegen**aus.
+3. Legen Sie das VSIX-Projekt als Startprojekt fest. Wählen Sie in **Projektmappen-Explorer** den Knoten VSIX-Projekt aus, klicken Sie mit der rechten Maustaste, und wählen Sie **als Startprojekt festlegen** aus.
 
-4. Fügen Sie das Vorlagen Projekt als Medienobjekt des VSIX-Projekts hinzu. Suchen Sie in **Projektmappen-Explorer**unter dem VSIX-Projekt Knoten nach der Datei " *Source. Extension. vsixmanifest* ". Doppelklicken Sie darauf, um Sie im Manifest-Editor zu öffnen.
+4. Fügen Sie das Vorlagen Projekt als Medienobjekt des VSIX-Projekts hinzu. Suchen Sie in **Projektmappen-Explorer** unter dem VSIX-Projekt Knoten nach der Datei " *Source. Extension. vsixmanifest* ". Doppelklicken Sie darauf, um Sie im Manifest-Editor zu öffnen.
 
 5. Wählen Sie im Manifest-Editor die Registerkarte **Assets** auf der linken Seite des Fensters aus.
 
-6. Wählen Sie auf der Registerkarte **Objekte** die Option **neu**aus. Wählen Sie im Fenster **Neues Objekt hinzufügen** für das Feld Typ den Eintrag **Microsoft. VisualStudio. ProjectTemplate**aus. Wählen Sie im Feld **Quelle** **ein Projekt in der aktuellen Projekt Mappe aus**. Wählen Sie im Feld **Projekt** den Wert **MyProjectTemplate**aus. Klicken Sie dann auf **OK**.
+6. Wählen Sie auf der Registerkarte **Objekte** die Option **neu** aus. Wählen Sie im Fenster **Neues Objekt hinzufügen** für das Feld Typ den Eintrag **Microsoft. VisualStudio. ProjectTemplate** aus. Wählen Sie im Feld **Quelle** **ein Projekt in der aktuellen Projekt Mappe aus**. Wählen Sie im Feld **Projekt** den Wert **MyProjectTemplate** aus. Klicken Sie dann auf **OK**.
 
 7. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wird geöffnet. (Dies kann einige Minuten dauern.)
 
-8. Versuchen Sie in der zweiten Instanz von Visual Studio, ein neues Projekt mit der neuen Vorlage zu erstellen (**Datei**  >  **neu**  >  **Projekt**, suchen Sie nach "MyProject"). Das neue Projekt sollte mit einer Klasse mit dem Namen **Class1**angezeigt werden. Sie haben jetzt eine benutzerdefinierte Projektvorlage erstellt. Das Debugging wird jetzt beendet.
+8. Versuchen Sie in der zweiten Instanz von Visual Studio, ein neues Projekt mit der neuen Vorlage zu erstellen (**Datei**  >  **neu**  >  **Projekt**, suchen Sie nach "MyProject"). Das neue Projekt sollte mit einer Klasse mit dem Namen **Class1** angezeigt werden. Sie haben jetzt eine benutzerdefinierte Projektvorlage erstellt. Das Debugging wird jetzt beendet.
 
 ## <a name="create-a-custom-template-wizard"></a>Assistent zum Erstellen einer benutzerdefinierten Vorlage
 
@@ -58,7 +60,7 @@ In diesem Verfahren wird gezeigt, wie Sie einen benutzerdefinierten Assistenten 
 
 1. Richten Sie das VSIX-Projekt ein, damit eine Assembly erstellt werden kann.
 
-2. Wählen Sie in **Projektmappen-Explorer**den Knoten VSIX-Projekt aus. Unten **Projektmappen-Explorer**sollte das Fenster **Eigenschaften** angezeigt werden. Wenn dies nicht der Fall ist **View**, wählen Sie  >  **Eigenschaften Fenster**anzeigen aus, oder drücken Sie **F4**. Wählen Sie im Fenster **Eigenschaften** die folgenden Felder aus `true` :
+2. Wählen Sie in **Projektmappen-Explorer** den Knoten VSIX-Projekt aus. Unten **Projektmappen-Explorer** sollte das Fenster **Eigenschaften** angezeigt werden. Wenn dies nicht der Fall ist **View**, wählen Sie  >  **Eigenschaften Fenster** anzeigen aus, oder drücken Sie **F4**. Wählen Sie im Fenster **Eigenschaften** die folgenden Felder aus `true` :
 
    - **Assembly in VSIX-Container einschließen**
 
@@ -66,11 +68,11 @@ In diesem Verfahren wird gezeigt, wie Sie einen benutzerdefinierten Assistenten 
 
    - **Debugsymbole in lokale VSIX-Bereitstellung einschließen**
 
-3. Fügen Sie die Assembly als Medienobjekt zum VSIX-Projekt hinzu. Öffnen Sie die Datei " *Source. Extension. vsixmanifest* ", und wählen Sie die Registerkarte **Objekte** aus. Wählen Sie im Fenster **Neues Objekt hinzufügen** für **Typ** die Option **Microsoft. VisualStudio. Assembly**aus, wählen Sie für **Quelle** **ein Projekt in der aktuellen Projekt**Mappe aus, und wählen Sie für **Projekt** den Eintrag **myprojectwizard**aus.
+3. Fügen Sie die Assembly als Medienobjekt zum VSIX-Projekt hinzu. Öffnen Sie die Datei " *Source. Extension. vsixmanifest* ", und wählen Sie die Registerkarte **Objekte** aus. Wählen Sie im Fenster **Neues Objekt hinzufügen** für **Typ** die Option **Microsoft. VisualStudio. Assembly** aus, wählen Sie für **Quelle** **ein Projekt in der aktuellen Projekt** Mappe aus, und wählen Sie für **Projekt** den Eintrag **myprojectwizard** aus.
 
-4. Fügen Sie dem VSIX-Projekt die folgenden Verweise hinzu. (Klicken Sie in **Projektmappen-Explorer**unter dem Knoten VSIX-Projekt auf **Verweise**, klicken Sie mit der rechten Maustaste, und wählen Sie **Verweis hinzufügen**aus.) Suchen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Framework** die Assembly **System. Windows Forms** , und wählen Sie Sie aus. Suchen und wählen Sie außerdem die **System** -und **System. Drawing** -Assemblys aus. Wählen Sie nun die Registerkarte **Erweiterungen** aus. Suchen Sie die Assembly **EnvDTE** , und wählen Sie Sie aus. Suchen Sie außerdem die Assembly **Microsoft. VisualStudio. templatewizardinterface** , und wählen Sie Sie aus. Klicken Sie auf **OK**.
+4. Fügen Sie dem VSIX-Projekt die folgenden Verweise hinzu. (Klicken Sie in **Projektmappen-Explorer** unter dem Knoten VSIX-Projekt auf **Verweise**, klicken Sie mit der rechten Maustaste, und wählen Sie **Verweis hinzufügen** aus.) Suchen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Framework** die Assembly **System. Windows Forms** , und wählen Sie Sie aus. Suchen und wählen Sie außerdem die **System** -und **System. Drawing** -Assemblys aus. Wählen Sie nun die Registerkarte **Erweiterungen** aus. Suchen Sie die Assembly **EnvDTE** , und wählen Sie Sie aus. Suchen Sie außerdem die Assembly **Microsoft. VisualStudio. templatewizardinterface** , und wählen Sie Sie aus. Klicken Sie auf **OK**.
 
-5. Fügen Sie dem VSIX-Projekt eine Klasse für die Implementierung des Assistenten hinzu. (Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den VSIX-Projekt Knoten, und wählen Sie **Hinzufügen**, **Neues Element**und dann **Klasse**aus.) Nennen Sie die Klasse **wizardimplementation**.
+5. Fügen Sie dem VSIX-Projekt eine Klasse für die Implementierung des Assistenten hinzu. (Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den VSIX-Projekt Knoten, und wählen Sie **Hinzufügen**, **Neues Element** und dann **Klasse** aus.) Nennen Sie die Klasse **wizardimplementation**.
 
 6. Ersetzen Sie den Code in der Datei *WizardImplementationClass.cs* durch den folgenden Code:
 
@@ -208,19 +210,19 @@ In diesem Verfahren wird gezeigt, wie Sie einen benutzerdefinierten Assistenten 
 
 Damit Ihre benutzerdefinierte Projektvorlage den benutzerdefinierten Assistenten verwenden kann, müssen Sie die Assistenten-Assembly signieren und einige Zeilen zu Ihrer benutzerdefinierten Projektvorlage hinzufügen, damit Sie wissen, wo Sie die Implementierung des Assistenten finden, wenn ein neues Projekt erstellt wird.
 
-1. Signieren Sie die Assembly. Wählen Sie im **Projektmappen-Explorer**das VSIX-Projekt aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Projekteigenschaften**aus.
+1. Signieren Sie die Assembly. Wählen Sie im **Projektmappen-Explorer** das VSIX-Projekt aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Projekteigenschaften** aus.
 
-2. Wählen Sie im Fenster **Projekteigenschaften** die Registerkarte **Signierung** aus. Aktivieren Sie auf der Registerkarte **Signierung** die Option **Assembly signieren**. Wählen Sie im Feld **Schlüsseldatei mit starkem Namen auswählen** die Option aus **\<New>** . Geben Sie im Fenster Schlüssel für einen **starken Namen erstellen** im Feld **Schlüssel Dateiname den Namen** **Key. snk**ein. Deaktivieren Sie das Feld **meine Schlüsseldatei mit einem Kennwort schützen** .
+2. Wählen Sie im Fenster **Projekteigenschaften** die Registerkarte **Signierung** aus. Aktivieren Sie auf der Registerkarte **Signierung** die Option **Assembly signieren**. Wählen Sie im Feld **Schlüsseldatei mit starkem Namen auswählen** die Option aus **\<New>** . Geben Sie im Fenster Schlüssel für einen **starken Namen erstellen** im Feld **Schlüssel Dateiname den Namen** **Key. snk** ein. Deaktivieren Sie das Feld **meine Schlüsseldatei mit einem Kennwort schützen** .
 
-3. Wählen Sie im **Projektmappen-Explorer**das VSIX-Projekt aus, und suchen Sie das **Eigenschaften** Fenster.
+3. Wählen Sie im **Projektmappen-Explorer** das VSIX-Projekt aus, und suchen Sie das **Eigenschaften** Fenster.
 
-4. Legen Sie das Feld **Buildausgabe in Ausgabeverzeichnis kopieren** auf **true**fest. Dadurch kann die Assembly in das Ausgabeverzeichnis kopiert werden, wenn die Projekt Mappe neu erstellt wird. Er ist noch in der `.vsix` Datei enthalten. Sie müssen die Assembly sehen, um den Signatur Schlüssel zu ermitteln.
+4. Legen Sie das Feld **Buildausgabe in Ausgabeverzeichnis kopieren** auf **true** fest. Dadurch kann die Assembly in das Ausgabeverzeichnis kopiert werden, wenn die Projekt Mappe neu erstellt wird. Er ist noch in der `.vsix` Datei enthalten. Sie müssen die Assembly sehen, um den Signatur Schlüssel zu ermitteln.
 
 5. Generieren Sie die Projektmappe neu.
 
-6. Sie finden die Datei Key. snk nun im Projektverzeichnis myprojectwizard (* \<your disk location> \myprojecttemplate\myprojectwizard\key.snk*). Kopieren Sie die Datei *Key. snk* .
+6. Sie finden die Datei Key. snk nun im Projektverzeichnis myprojectwizard (*\<your disk location> \myprojecttemplate\myprojectwizard\key.snk*). Kopieren Sie die Datei *Key. snk* .
 
-7. Wechseln Sie zum Ausgabeverzeichnis, und suchen Sie die Assembly (* \<your disk location> \ MyProjectTemplate/#b0 *). Fügen Sie die Datei *Key. snk* hier ein. (Dies ist nicht unbedingt erforderlich, aber die folgenden Schritte werden dadurch vereinfacht.)
+7. Wechseln Sie zum Ausgabeverzeichnis, und suchen Sie die Assembly (*\<your disk location> \ MyProjectTemplate/#b0*). Fügen Sie die Datei *Key. snk* hier ein. (Dies ist nicht unbedingt erforderlich, aber die folgenden Schritte werden dadurch vereinfacht.)
 
 8. Öffnen Sie ein Befehlsfenster, und wechseln Sie in das Verzeichnis, in dem die Assembly erstellt wurde.
 
@@ -246,7 +248,7 @@ Damit Ihre benutzerdefinierte Projektvorlage den benutzerdefinierten Assistenten
 
      Notieren Sie sich diesen Wert.
 
-12. Fügen Sie der *VSTEMPLATE* -Datei der Projektvorlage den Verweis auf den benutzerdefinierten Assistenten hinzu. Suchen Sie im **Projektmappen-Explorer**die Datei namens *MyProjectTemplate. vstemplate*, und öffnen Sie Sie. Fügen Sie nach dem Ende des \<TemplateContent> Abschnitts den folgenden Abschnitt hinzu:
+12. Fügen Sie der *VSTEMPLATE* -Datei der Projektvorlage den Verweis auf den benutzerdefinierten Assistenten hinzu. Suchen Sie im **Projektmappen-Explorer** die Datei namens *MyProjectTemplate. vstemplate*, und öffnen Sie Sie. Fügen Sie nach dem Ende des \<TemplateContent> Abschnitts den folgenden Abschnitt hinzu:
 
     ```xml
     <WizardExtension>
@@ -263,7 +265,7 @@ Damit Ihre benutzerdefinierte Projektvorlage den benutzerdefinierten Assistenten
 
 In diesem Beispiel zeigt das Projekt, das als Vorlage verwendet wird, die Meldung an, die im Benutzereingabe Formular des benutzerdefinierten Assistenten angegeben ist.
 
-1. Wechseln Sie in der **Projektmappen-Explorer**zum Projekt **MyProjectTemplate** , und öffnen Sie *Class1.cs*.
+1. Wechseln Sie in der **Projektmappen-Explorer** zum Projekt **MyProjectTemplate** , und öffnen Sie *Class1.cs*.
 
 2. Fügen Sie der `Main`-Methode der Anwendung die folgende Codezeile hinzu.
 
@@ -309,7 +311,7 @@ Nun können Sie ein Projekt aus der Vorlage erstellen und den benutzerdefinierte
 
      Das Benutzereingabeformular des Assistenten wird geschlossen, und aus der Vorlage wird ein Projekt erstellt.
 
-5. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Quell Code Datei, und klicken Sie auf **Code anzeigen**.
+5. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf die Quell Code Datei, und klicken Sie auf **Code anzeigen**.
 
      Beachten Sie, dass `$custommessage$` durch den im Benutzereingabeformular des Assistenten eingegebenen Text ersetzt wurde.
 

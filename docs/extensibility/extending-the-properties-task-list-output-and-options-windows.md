@@ -1,5 +1,6 @@
 ---
 title: Erweitern von Eigenschaften, Aufgabenliste, Ausgabe, Fenster "Optionen"
+description: Erfahren Sie, wie Sie Informationen zu Ihrem Tool Fenster in Visual Studio in eine neue Options Seite und eine neue Einstellung auf der Eigenschaften Seite integrieren.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038477"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995797"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Erweitern der Fenster Eigenschaften, Aufgabenliste, Ausgabe und Optionen
 Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Informationen zu Ihrem Tool Fenster in eine neue **options** Seite und eine neue Einstellung auf der **Eigenschaften** Seite integrieren und wie Sie in die **Aufgabenliste** -und **Ausgabe** Fenster schreiben.
@@ -44,13 +45,13 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
     > [!NOTE]
     > Dadurch wird der **Button1_Click** Ereignishandler nicht gelöscht, den Sie in einem späteren Schritt wieder verwenden.
 
-2. Ziehen Sie im Abschnitt **alle WPF** -Steuerelemente der **Toolbox**ein **Canvas** -Steuerelement in das Raster.
+2. Ziehen Sie im Abschnitt **alle WPF** -Steuerelemente der **Toolbox** ein **Canvas** -Steuerelement in das Raster.
 
-3. Ziehen Sie ein **Textfeld**, eine **Schaltfläche**und ein **ListBox** in den Zeichenbereich. Ordnen Sie die Elemente so an, dass sich das Textfeld und die Schaltfläche auf derselben Ebene befinden, und das ListBox-Steuerelement füllt den restlichen Fenster unterhalb aus, wie in der folgenden Abbildung dargestellt.
+3. Ziehen Sie ein **Textfeld**, eine **Schaltfläche** und ein **ListBox** in den Zeichenbereich. Ordnen Sie die Elemente so an, dass sich das Textfeld und die Schaltfläche auf derselben Ebene befinden, und das ListBox-Steuerelement füllt den restlichen Fenster unterhalb aus, wie in der folgenden Abbildung dargestellt.
 
      ![Fertig gestelltes Toolfenster](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
-4. Suchen Sie im XAML-Bereich die Schaltfläche, und legen Sie deren Content-Eigenschaft auf **Add**fest. Verbinden Sie den Schaltflächen-Ereignishandler erneut mit dem Schaltflächen-Steuerelement, indem Sie ein- `Click="button1_Click"` Attribut Der Canvas-Block sollte wie folgt aussehen:
+4. Suchen Sie im XAML-Bereich die Schaltfläche, und legen Sie deren Content-Eigenschaft auf **Add** fest. Verbinden Sie den Schaltflächen-Ereignishandler erneut mit dem Schaltflächen-Steuerelement, indem Sie ein- `Click="button1_Click"` Attribut Der Canvas-Block sollte wie folgt aussehen:
 
     ```xml
     <Canvas HorizontalAlignment="Left" Width="306">
@@ -80,7 +81,7 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
     }
     ```
 
-3. Ändern Sie in *TodoWindow.cs*den "dedowindowcontrol"-Konstruktor, sodass er den Parameter "dedowindow" enthält. Der Code sollte wie folgt aussehen:
+3. Ändern Sie in *TodoWindow.cs* den "dedowindowcontrol"-Konstruktor, sodass er den Parameter "dedowindow" enthält. Der Code sollte wie folgt aussehen:
 
     ```csharp
     public TodoWindow() : base(null)
@@ -231,7 +232,7 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
     }
     ```
 
-5. Da Instanzen der `TodoItem` -Klasse im Listenfeld gespeichert werden und das ListBox-Steuerfeld die- `ToString` Funktion aufruft, müssen Sie die-Funktion überladen `ToString` . Fügen Sie *TodoItem.cs*nach dem-Konstruktor und vor dem Ende der-Klasse den folgenden Code hinzu.
+5. Da Instanzen der `TodoItem` -Klasse im Listenfeld gespeichert werden und das ListBox-Steuerfeld die- `ToString` Funktion aufruft, müssen Sie die-Funktion überladen `ToString` . Fügen Sie *TodoItem.cs* nach dem-Konstruktor und vor dem Ende der-Klasse den folgenden Code hinzu.
 
     ```csharp
     public override string ToString()
@@ -240,7 +241,7 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
     }
     ```
 
-6. Fügen Sie in *TodoWindowControl.XAML.cs*der-Klasse Stub `TodoWindowControl` -Methoden für die `CheckForError` -Methode und die- `UpdateList` Methode hinzu. Platzieren Sie Sie nach ProcessDialogChar und vor dem Ende der Datei.
+6. Fügen Sie in *TodoWindowControl.XAML.cs* der-Klasse Stub `TodoWindowControl` -Methoden für die `CheckForError` -Methode und die- `UpdateList` Methode hinzu. Platzieren Sie Sie nach ProcessDialogChar und vor dem Ende der Datei.
 
     ```csharp
     public void CheckForErrors()
@@ -273,7 +274,7 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
     }
     ```
 
-2. Wählen Sie im Designansicht das ListBox-Steuerelement aus. Klicken Sie im **Eigenschaften** Fenster auf die Schaltfläche **Ereignishandler** , und suchen Sie nach dem Ereignis **SelectionChanged** . Füllen Sie das Textfeld mit **listBox_SelectionChanged**aus. Dadurch wird ein Stub für einen SelectionChanged-Handler hinzugefügt und dem Ereignis zugewiesen.
+2. Wählen Sie im Designansicht das ListBox-Steuerelement aus. Klicken Sie im **Eigenschaften** Fenster auf die Schaltfläche **Ereignishandler** , und suchen Sie nach dem Ereignis **SelectionChanged** . Füllen Sie das Textfeld mit **listBox_SelectionChanged** aus. Dadurch wird ein Stub für einen SelectionChanged-Handler hinzugefügt und dem Ereignis zugewiesen.
 
 3. Implementieren Sie die `TrackSelection()`-Methode. Da Sie die Dienste erhalten müssen, müssen Sie den Zugriff auf die Dienste von "" auf "" festlegen <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> . Fügen Sie der `TodoWindow`-Klasse die folgende Methode hinzu:
 
@@ -284,7 +285,7 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
     }
     ```
 
-4. Fügen Sie die folgenden using-Direktiven zu *TodoWindowControl.XAML.cs*hinzu:
+4. Fügen Sie die folgenden using-Direktiven zu *TodoWindowControl.XAML.cs* hinzu:
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -352,7 +353,7 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
 
      Nachdem Sie nun über eine Klasse verfügen, die im **Eigenschaften** Fenster verwendet werden kann, können Sie das Fenster **Eigenschaften** in das Tool Fenster integrieren. Wenn der Benutzer auf ein Element im Listenfeld im Tool Fenster klickt, sollte das **Eigenschaften** Fenster entsprechend aktualisiert werden. Ebenso sollte das zugeordnete Element aktualisiert werden, wenn der Benutzer ein TODO-Element im **Eigenschaften** Fenster ändert.
 
-7. Fügen Sie jetzt den Rest des UpdateList-Funktions Codes in *TodoWindowControl.XAML.cs*hinzu. Er sollte das geänderte Element "Element" aus dem Listenfeld löschen und erneut hinzufügen.
+7. Fügen Sie jetzt den Rest des UpdateList-Funktions Codes in *TodoWindowControl.XAML.cs* hinzu. Er sollte das geänderte Element "Element" aus dem Listenfeld löschen und erneut hinzufügen.
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -368,16 +369,16 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
 
 9. Öffnen Sie **die**  >  **options** Seite Extras. Die Kategorie TODO sollte im linken Bereich angezeigt werden. Kategorien sind in alphabetischer Reihenfolge aufgelistet. sehen Sie sich daher die TS an.
 
-10. Auf der Optionsseite für **TODO** sollten Sie sehen, dass die- `DaysAhead` Eigenschaft auf **0**festgelegt ist. Ändern Sie den Wert in **2**.
+10. Auf der Optionsseite für **TODO** sollten Sie sehen, dass die- `DaysAhead` Eigenschaft auf **0** festgelegt ist. Ändern Sie den Wert in **2**.
 
 11. Öffnen Sie im Menü **Ansicht/andere Fenster** den Befehl **todowindow**. Geben Sie im Textfeld **EndDate** ein, und klicken Sie auf **Hinzufügen**.
 
 12. Im Listenfeld sollte das Datum zwei Tage später als heute angezeigt werden.
 
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Fügen Sie dem Ausgabefenster Text und den Elementen den Aufgabenliste
- Für den **Aufgabenliste**erstellen Sie ein neues Objekt vom Typ Task und fügen dieses Aufgaben Objekt dann der **Aufgabenliste** hinzu, indem Sie die zugehörige- `Add` Methode aufrufen. Um in das **Ausgabe** Fenster zu schreiben, rufen Sie die zugehörige- `GetPane` Methode auf, um ein Pane-Objekt zu erhalten, und rufen Sie dann die- `OutputString` Methode des Pane-Objekts auf.
+ Für den **Aufgabenliste** erstellen Sie ein neues Objekt vom Typ Task und fügen dieses Aufgaben Objekt dann der **Aufgabenliste** hinzu, indem Sie die zugehörige- `Add` Methode aufrufen. Um in das **Ausgabe** Fenster zu schreiben, rufen Sie die zugehörige- `GetPane` Methode auf, um ein Pane-Objekt zu erhalten, und rufen Sie dann die- `OutputString` Methode des Pane-Objekts auf.
 
-1. Fügen Sie in *TodoWindowControl.XAML.cs*in der- `button1_Click` Methode Code hinzu, um den **allgemeinen** Bereich des **Ausgabe** Fensters (standardmäßig) zu erhalten, und schreiben Sie darin. Die Methode sollte wie folgt aussehen:
+1. Fügen Sie in *TodoWindowControl.XAML.cs* in der- `button1_Click` Methode Code hinzu, um den **allgemeinen** Bereich des **Ausgabe** Fensters (standardmäßig) zu erhalten, und schreiben Sie darin. Die Methode sollte wie folgt aussehen:
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)
@@ -479,7 +480,7 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
     }
     ```
 
-## <a name="try-it-out"></a>Probieren Sie es aus
+## <a name="try-it-out"></a>Ausprobieren
 
 1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
@@ -489,9 +490,9 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
 
      Ein Fälligkeitsdatum, das 2 Tage nach dem heutigen Tag dem Listenfeld hinzugefügt wird. Es werden keine Fehler generiert, und der **Aufgabenliste** (**View**  >  **Aufgabenliste**) sollte keine Einträge enthalten.
 
-4. Ändern Sie **nun die Einstellung auf der**TODO-Seite Extras-  >  **Optionen**  >  **ToDo** von **2** zurück auf **0**.
+4. Ändern Sie **nun die Einstellung auf der** TODO-Seite Extras-  >  **Optionen**  >  **ToDo** von **2** zurück auf **0**.
 
-5. Geben Sie im **Fenster Fenster** einen anderen Text ein, und klicken Sie dann erneut auf **Hinzufügen** . Dadurch wird ein Fehler und ein Eintrag in der **Aufgabenliste**ausgelöst.
+5. Geben Sie im **Fenster Fenster** einen anderen Text ein, und klicken Sie dann erneut auf **Hinzufügen** . Dadurch wird ein Fehler und ein Eintrag in der **Aufgabenliste** ausgelöst.
 
      Wenn Sie Elemente hinzufügen, wird das Anfangsdatum auf jetzt plus 2 Tage festgelegt.
 
@@ -503,6 +504,6 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
 
      Das Fenster **Eigenschaften** zeigt die zwei Eigenschaften für das Element an.
 
-8. Ändern Sie eine der Eigenschaften, und drücken **Sie**dann die EINGABETASTE.
+8. Ändern Sie eine der Eigenschaften, und drücken **Sie** dann die EINGABETASTE.
 
      Das Element wird im Listenfeld aktualisiert.

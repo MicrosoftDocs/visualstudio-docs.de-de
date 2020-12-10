@@ -1,5 +1,7 @@
 ---
 title: Aufgaben Klasse-interne Member | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die internen Member der System. Threading. Tasks. Task-Klasse, die Sie bei der Implementierung eines benutzerdefinierten Debuggers unterstützen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712736"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996018"
 ---
 # <a name="task-class---internal-members"></a>Aufgaben Klasse-interne Member
 In diesem Artikel werden die internen Member der- <xref:System.Threading.Tasks.Task?displayProperty=fullName> Klasse beschrieben, die Ihnen bei der Implementierung eines benutzerdefinierten Debuggers helfen. Allgemeine Informationen zu dieser Klasse finden Sie im <xref:System.Threading.Tasks.Task> Referenz Artikel.
@@ -42,14 +44,14 @@ In diesem Artikel werden die internen Member der- <xref:System.Threading.Tasks.T
 
 ### <a name="methods"></a>Methoden
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |----------|-----------------|
 |[SetNotificationForWaitCompletion-Methode](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|Legt das TASK_STATE_WAIT_COMPLETION_NOTIFICATION Zustands Bit fest oder löscht dieses.|
 |[NotifyDebuggerOfWaitCompletion-Methode](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|Die Platzhalter Methode, die vom Debugger als Haltepunkt Ziel verwendet wird.|
 
 ### <a name="fields"></a>Felder
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Der Delegat, der den Code darstellt, der im-Objekt ausgeführt werden soll <xref:System.Threading.Tasks.Task> .|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Speichert zusätzliche Eigenschaften des- <xref:System.Threading.Tasks.Task> Objekts.|
@@ -79,6 +81,6 @@ In diesem Artikel werden die internen Member der- <xref:System.Threading.Tasks.T
 
 - `InternalWait`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - [Parallele Erweiterungs internale für die .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

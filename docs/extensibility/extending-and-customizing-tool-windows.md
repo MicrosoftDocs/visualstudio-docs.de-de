@@ -1,5 +1,7 @@
 ---
 title: Erweitern und Anpassen von Tool Fenstern | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das erweitern und Anpassen von Tool Fenstern, die Visual Studio bereitstellt, einschließlich der Eigenschaftenfenster, des Ausgabe Fensters und des Aufgabenliste Fensters.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76c094ec73a69baa46a5e8313dd26febd57e5887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711816"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995862"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Erweitern und Anpassen von Tool Fenstern
 Visual Studio bietet verschiedene Arten von Fenstern, z. b. Tool Fenster, Dokument Fenster und Dialogfenster. Andere Fenster wie das Fenster **Eigenschaften** , das Fenster **Ausgabe** und das Fenster **Aufgabenliste** sind Tool Fenster.
@@ -30,7 +32,7 @@ Visual Studio bietet verschiedene Arten von Fenstern, z. b. Tool Fenster, Dokume
 
  Toolfenster sind standardmäßig Einzelinstanzen, d. h. nur eine Instanz des Toolfensters kann jeweils geöffnet sein. Nachdem ein Einzelinstanz-Toolfenster geöffnet wurde, bleibt es geöffnet, bis die IDE geschlossen wird. Wenn Sie ein Einzel Instanz-Tool Fenster schließen, ändert sich nur die Sichtbarkeit. Sie können auch Toolfenster mit mehreren Instanzen erstellen, sodass mehrere Instanzen des Fensters gleichzeitig geöffnet sein können. Weitere Informationen finden Sie unter [Erstellen eines Tool Fensters mit mehreren Instanzen](../extensibility/creating-a-multi-instance-tool-window.md) .
 
- Tool Fenster können *dynamisch*sein, was bedeutet, dass Sie sichtbar sind, wenn der zugehörige UI-Kontext angewendet wird. Die Verwendung der automatischen Sichtbarkeit kann die Übersichtlichkeit hinsichtlich der Fenster in der IDE verbessern. Weitere Informationen finden Sie unter [Öffnen eines dynamischen Tool Fensters](../extensibility/opening-a-dynamic-tool-window.md).
+ Tool Fenster können *dynamisch* sein, was bedeutet, dass Sie sichtbar sind, wenn der zugehörige UI-Kontext angewendet wird. Die Verwendung der automatischen Sichtbarkeit kann die Übersichtlichkeit hinsichtlich der Fenster in der IDE verbessern. Weitere Informationen finden Sie unter [Öffnen eines dynamischen Tool Fensters](../extensibility/opening-a-dynamic-tool-window.md).
 
  Toolfenster können im Dokumentrahmen angedockt oder unverankert sein bzw. das Registerkartenformat aufweisen. Der Toolfensterrahmen wird von der IDE bereitgestellt und dazu verwendet, um das Format, die Position, den Andockzustand und andere permanente Eigenschaften zu steuern. Der Toolfensterbereich zeigt die Inhalte an. Das Standardformat und die Standardposition gelten nur beim ersten Öffnen des Toolfensters. Anschließend wird der Toolfensterzustand beibehalten.
 

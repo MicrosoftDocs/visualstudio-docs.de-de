@@ -1,5 +1,7 @@
 ---
 title: Define-Element | Microsoft-Dokumentation
+description: Das define-Element definiert einen Symbolnamen und ein Wertpaar. Dieses Symbol kann durch bedingte Attribute ausgewertet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712275"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996239"
 ---
 # <a name="define-element"></a>Define-Element
 Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingte Attribute ausgewertet werden. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md). Siehe auch das [Symbol Element](../extensibility/symbols-element.md).

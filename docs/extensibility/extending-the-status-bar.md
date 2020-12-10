@@ -1,5 +1,7 @@
 ---
 title: Erweitern der Status Leiste | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Visual Studio-Statusleiste am unteren Rand der IDE erweitern, in der Informationen angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711544"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995693"
 ---
 # <a name="extend-the-status-bar"></a>Erweitern der Statusleiste
 Sie können die Visual Studio-Statusleiste unten in der IDE verwenden, um Informationen anzuzeigen.
@@ -34,7 +36,7 @@ Sie können die Visual Studio-Statusleiste unten in der IDE verwenden, um Inform
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen " **Teststatus-Erweiterung** ", und fügen Sie einen Menübefehl mit dem Namen **Teststatus**
 
-2. Ersetzen Sie in *TestStatusBarCommand.cs*den Befehls handlermethodencode ( `MenuItemCallback` ) durch den folgenden Code:
+2. Ersetzen Sie in *TestStatusBarCommand.cs* den Befehls handlermethodencode ( `MenuItemCallback` ) durch den folgenden Code:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -112,7 +114,7 @@ Sie können die Visual Studio-Statusleiste unten in der IDE verwenden, um Inform
 
 1. Die Statusleiste zeigt eine Schleifen Animation an, die entweder einen Vorgang mit langer Ausführungszeit anzeigt (z. b. das entwickeln mehrerer Projekte in einer Projekt Mappe). Wenn diese Animation nicht angezeigt wird, stellen Sie sicher, dass Sie über die richtigen **Tools**-  >  **options** Einstellungen verfügen:
 
-     Wechseln Sie zu **Tools**Extras  >  **Optionen**  >  Registerkarte**Allgemein** , und deaktivieren Sie **visuelle Darstellung automatisch basierend auf der Client Leistung anpassen**. Aktivieren Sie dann die unter Option umfassende **visuelle Client Darstellung aktivieren**. Sie sollten jetzt in der Lage sein, die Animation anzuzeigen, wenn Sie das Projekt in ihrer experimentellen Instanz von Visual Studio erstellen.
+     Wechseln Sie zu **Tools** Extras  >  **Optionen**  >  Registerkarte **Allgemein** , und deaktivieren Sie **visuelle Darstellung automatisch basierend auf der Client Leistung anpassen**. Aktivieren Sie dann die unter Option umfassende **visuelle Client Darstellung aktivieren**. Sie sollten jetzt in der Lage sein, die Animation anzuzeigen, wenn Sie das Projekt in ihrer experimentellen Instanz von Visual Studio erstellen.
 
      In diesem Verfahren wird die standardmäßige Visual Studio-Animation angezeigt, die das Projekt oder die Projekt Mappe bildet.
 

@@ -1,5 +1,7 @@
 ---
-title: Debug-Befehls Zeilenschalter für die VSPackage-Entwicklung | Microsoft-Dokumentation
+title: Debug-Command-Line Switches für die VSPackage-Entwicklung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Entwickler Aufgaben über die Befehlszeile automatisieren können, wenn Sie devenv.exe ausführen, die Datei, die die Visual Studio-IDE startet.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3a5125a730b9230959bbf9342b4c0a4823c4d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6e2784066c98f8fac696306e455e7cf26b65907
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712190"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996148"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Devenv-Befehlszeilenschalter für die VSPackage-Entwicklung
 
@@ -52,4 +54,4 @@ In der Visual Studio-Dokumentation werden die `devenv` Befehls Zeilenschalter au
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Befehls Zeilenschalter hinzufügen](../extensibility/adding-command-line-switches.md)
-- [Devenv-Befehlszeilenparameter](../ide/reference/devenv-command-line-switches.md)
+- [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)

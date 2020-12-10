@@ -1,6 +1,6 @@
 ---
-title: Workflow-Designer-transactedreceivescope-Aktivitäts Designer
-description: Erfahren Sie, wie Sie den transactedreceivescope-Designer verwenden können, um eine transactedreceivescope-Aktivität zu erstellen und zu konfigurieren.
+title: Transactedreceivescope-Aktivitäts Designer
+description: In Workflow-Designer erfahren Sie, wie Sie den transactedreceivescope-Designer verwenden können, um eine transactedreceivescope-Aktivität zu erstellen und zu konfigurieren.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70117ab8b27a23dfb2836800c41ff0844fb8de1c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9214d1ce4a873d6caea98b814e8d489f544944c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433777"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996291"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope-Aktivitätsdesigner
 
@@ -39,15 +39,15 @@ In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Transac
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der optionale Anzeigename der <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität. Der Standardwert lautet TransactedReceiveScope.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Name nicht unbedingt erforderlich ist, wird als Best Practice empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Wahr|Löscht eine- <xref:System.ServiceModel.Activities.Receive> Aktivität in den **Anforderungs** Block auf der Aktivitäts Designer Oberfläche.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|FALSE|Löscht ein <xref:System.Activities.Activity> in den **Body** -Block auf der Aktivitäts Designer Oberfläche.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der optionale Anzeigename der <xref:System.ServiceModel.Activities.TransactedReceiveScope>-Aktivität. Der Standardwert lautet TransactedReceiveScope.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Name nicht unbedingt erforderlich ist, wird als Best Practice empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Löscht eine- <xref:System.ServiceModel.Activities.Receive> Aktivität in den **Anforderungs** Block auf der Aktivitäts Designer Oberfläche.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Löscht ein <xref:System.Activities.Activity> in den **Body** -Block auf der Aktivitäts Designer Oberfläche.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Medizinisch](../workflow-designer/receive-activity-designer.md)
+- [Empfangen](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Senden](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

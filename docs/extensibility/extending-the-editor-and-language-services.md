@@ -1,5 +1,7 @@
 ---
 title: Erweitern des Editors und der Sprachdienste | Microsoft-Dokumentation
+description: Sie können einem Editor Sprachdienst Funktionen hinzufügen und Features des Visual Studio Code-Editors erweitern. Erfahren Sie mehr über die Managed Extensibility Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413943"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995745"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Erweitern des Editors und der Sprachdienste
 Sie können einem eigenen Editor Sprachdienst Funktionen (z. b. IntelliSense) hinzufügen und die meisten Funktionen des Visual Studio Code-Editors erweitern.  Eine vollständige Liste der Erweiterungen, die Sie erweitern können, finden Sie unter [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md).
@@ -28,7 +30,7 @@ Sie können einem eigenen Editor Sprachdienst Funktionen (z. b. IntelliSense) hi
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Einstieg in die Erweiterungen für Sprachdienste und Editoren](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Erläutert, wie eine Erweiterung für den Editor erstellt wird.|
 |[Innerhalb des Editors](../extensibility/inside-the-editor.md)|Beschreibt die allgemeine Struktur des Editors und listet einige Funktionen auf.|

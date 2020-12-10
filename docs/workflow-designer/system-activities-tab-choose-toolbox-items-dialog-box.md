@@ -1,6 +1,6 @@
 ---
-title: 'Workflow-Designer: System. Activities, Toolbox Elemente auswählen'
-description: Erfahren Sie, wie die Registerkarte System. Activities eine Liste der Windows Workflow Foundation (WF)-Aktivitäten,-Vorlagen und-Elemente anzeigt, die Ihnen zur Verfügung stehen.
+title: System. Activities, Toolbox Elemente auswählen
+description: In Workflow-Designer erfahren Sie, wie die Registerkarte System. Activities eine Liste der Windows Workflow Foundation (WF)-Aktivitäten,-Vorlagen und-Elemente anzeigt, die Ihnen zur Verfügung stehen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d13aadb135f6dcf72d146f74ea2804ef34228641
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 280dcf7c9fe07c7b3266822f0d8b92b1c399075e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433894"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996200"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Registerkarte "System. Activities", Dialogfeld "Toolbox Elemente auswählen"
 
