@@ -1,6 +1,6 @@
 ---
-title: 'Workflow-Designer: Gewusst wie: Hinzufügen von Aktivitäten zur Toolbox'
-description: Fügen Sie der Toolbox in der Projekt Mappe Aktivitäten hinzu, indem Sie Sie aus dem aktuellen Projekt hinzufügen oder von einem anderen Projekt aus auf Sie verweisen.
+title: Hinzufügen von Aktivitäten zur Toolbox
+description: In Workflow-Designer erfahren Sie, wie Sie der Toolbox in der Projekt Mappe Aktivitäten hinzufügen, indem Sie Sie aus dem aktuellen Projekt hinzufügen oder von einem anderen Projekt aus auf Sie verweisen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437943"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996304"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Gewusst wie: Hinzufügen von Aktivitäten zur Toolbox
 
@@ -54,12 +54,12 @@ Aktivitäten können auf verschiedene Arten der **Toolbox** in der Projekt Mappe
 
 4. Wählen Sie die Assembly aus, und klicken Sie auf **OK**. Die benutzerdefinierte Aktivitätskomponente wird der Liste der Komponenten hinzugefügt und automatisch ausgewählt.
 
-    1. Klicken Sie auf **OK** , um das Dialogfeld zu schließen.
+    1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
 5. Um die Toolbox anzuzeigen, wählen Sie im Menü **Ansicht** die Option **Toolbox** aus.
 
 6. Die benutzerdefinierte Aktivität wird in der **Toolbox** unter der Kategorie angezeigt, die sich vor dem Hinzufügen des Elements im Fokus befand. Wenn z. b. die Kategorie **Allgemein** in der **Toolbox** vor dem Hinzufügen des Toolbox Elements ausgewählt wurde, wird die Aktivität unter der Kategorie **Allgemein** angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden des Workflow-Designers](developing-applications-with-the-workflow-designer.md)

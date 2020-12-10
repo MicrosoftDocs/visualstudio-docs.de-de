@@ -1,5 +1,7 @@
 ---
 title: Unterstützte Ereignis Typen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Ereignis Typen, die von Visual Studio-Debugging unterstützt werden, einschließlich asynchroner Ereignisse, synchroner Ereignisse und Beenden von Ereignissen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94e26897c50fd7e10a8b831655610848cb93043f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 215256cbbcff45dfa0b85a480f0900e6f8ddfa71
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712799"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996031"
 ---
 # <a name="supported-event-types"></a>Unterstützte Ereignis Typen
 Das Debuggen von Visual Studio unterstützt derzeit die folgenden Ereignis Typen:
@@ -45,7 +47,7 @@ Das Debuggen von Visual Studio unterstützt derzeit die folgenden Ereignis Typen
   > [!NOTE]
   > Asynchrone anhalteereignisse werden nicht unterstützt. Es ist ein Fehler, ein asynchrones anhalteereignis zu senden.
 
-## <a name="discussion"></a>Diskussion (Discussion)
+## <a name="discussion"></a>Diskussion
  Die tatsächliche Implementierung von Ereignissen hängt vom Entwurf Ihrer de ab. Der Typ jedes gesendeten Ereignisses wird durch seine Attribute bestimmt, die beim Entwerfen von de festgelegt werden. Beispielsweise kann eine de ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) -Ereignis als asynchrones Ereignis senden, während ein anderes es als anhalteereignis senden kann.
 
  In der folgenden Tabelle wird angegeben, welche Programm-und Thread Parameter für welche Ereignisse und Ereignis Typen erforderlich sind. Beliebige Ereignisse können synchron sein. Es muss kein Ereignis synchron sein.

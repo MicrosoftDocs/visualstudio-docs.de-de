@@ -1,5 +1,7 @@
 ---
 title: Include-Element | Microsoft-Dokumentation
+description: Das Include-Element gibt eine Datei an, die sich im angegebenen Includepfad befinden kann, damit Sie in die aktuelle Datei eingefügt werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71da1241863e41529af33bdd5e45dcf0a8bfbdb1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710363"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996343"
 ---
 # <a name="include-element"></a>Include-Element
 Das Include-Element gibt eine Datei an, die sich im angegebenen Includepfad befinden kann, damit Sie in die aktuelle Datei eingefügt werden kann.  Alle definierten Symbole und Typen werden Teil des kompilierten Ergebnisses.
@@ -43,7 +45,7 @@ Das Include-Element gibt eine Datei an, die sich im angegebenen Includepfad befi
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Keine|Keine|
+|Keine.|Keine.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

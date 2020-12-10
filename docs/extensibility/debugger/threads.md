@@ -1,5 +1,7 @@
 ---
 title: Threads | Microsoft-Dokumentation
+description: In diesem Artikel werden die Definition und die Rolle eines Threads in der Debugger-Architektur in Visual Studio beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712478"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995953"
 ---
 # <a name="threads"></a>Threads
 In der Debugger-Architektur ein *Thread*:

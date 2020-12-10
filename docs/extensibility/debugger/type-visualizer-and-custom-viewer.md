@@ -1,5 +1,7 @@
 ---
 title: Typvisualizer und Custom Viewer | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Typen von Visualisierungs Komponenten und die benutzerdefinierten Viewer, die Daten in einem bestimmten Format anzeigen, und die Unterschiede zwischen Ihnen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712465"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995940"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Typschnell Ansicht und benutzerdefinierter Viewer
 Eine typschnell Ansicht ist eine Komponente, mit der ein Datenelement in einem bestimmten Format angezeigt wird. Das Format ist vollständig darauf fest, wer die Schnellansicht implementiert, Sie ist der Endbenutzer oder ein Drittanbieter von Visualisierungen.

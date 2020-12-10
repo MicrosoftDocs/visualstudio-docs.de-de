@@ -1,5 +1,7 @@
 ---
 title: Erweitern von Eigenschaften und des Eigenschaften Fensters | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Erweitern von Eigenschaften in der Eigenschaftenfenster, die verwendet wird, um die Entwurfszeit Eigenschaften und Ereignisse ausgewählter Objekte anzuzeigen und zu bearbeiten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c0deb1b4d1e0fecceefb2e91265c9e6160df8a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711739"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995784"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Erweitern von Eigenschaften und des Eigenschaften Fensters
 Das **Eigenschaften** Fenster wird verwendet, um die Entwurfszeit Eigenschaften und-Ereignisse ausgewählter Objekte anzuzeigen und zu bearbeiten.

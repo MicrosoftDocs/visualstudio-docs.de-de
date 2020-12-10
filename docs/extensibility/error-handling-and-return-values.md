@@ -1,5 +1,7 @@
 ---
 title: Fehlerbehandlung und Rückgabewerte | Microsoft-Dokumentation
+description: Erfahren Sie, wie das Visual Studio SDK Interop-Assemblys bereitstellt, um beim Empfang einer Fehler Benachrichtigung umfangreiche Fehlerinformationen aufzuzeichnen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8e8385e0b270cd6e359ef03a3060d5eefb97479
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711937"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995849"
 ---
 # <a name="error-handling-and-return-values"></a>Fehlerbehandlung und Rückgabewerte
 VSPackages und com verwenden die gleiche Architektur für Fehler. Die `SetErrorInfo` `GetErrorInfo` Funktionen und sind Teil der Win32-API (Application Programming Interface). Jedes VSPackage in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) kann diese globalen Win32-APIs aufzurufen, um umfassende Fehlerinformationen aufzuzeichnen, wenn eine Fehler Benachrichtigung empfangen wird. Stellt Interop-Assemblys [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] bereit, um Fehlerinformationen zu verwalten.

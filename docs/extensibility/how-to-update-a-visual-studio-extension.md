@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Aktualisieren einer Visual Studio-Erweiterung | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie eine Visual Studio-Erweiterung auf Ihrem System aktualisieren, indem Sie Erweiterungen und Updates verwenden, um die aktualisierte Version zu installieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be22ca13fd5af8df88501835c8a030cc6469e179
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905620"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995603"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Vorgehensweise: Aktualisieren einer Visual Studio-Erweiterung
 Sie können eine Visual Studio-Erweiterung auf Ihrem System aktualisieren, indem Sie **Erweiterungen und Updates** verwenden, um die aktualisierte Version zu installieren. Wenn Sie eine aktualisierte Version einer Erweiterung erstellen, können Sie Sie als aktualisiert markieren, indem Sie die Versionsnummer im VSIX-Manifest erhöhen.
@@ -45,7 +47,7 @@ Sie können eine Visual Studio-Erweiterung auf Ihrem System aktualisieren, indem
     > [!IMPORTANT]
     > Unsignierte alle Benutzer Erweiterungen werden nicht automatisch aktualisiert. Sie sollten Ihre Erweiterungen immer signieren.
 
-2. Öffnen Sie in **Projektmappen-Explorer**die Datei *Source. Extension. Manifest*.
+2. Öffnen Sie in **Projektmappen-Explorer** die Datei *Source. Extension. Manifest*.
 
 3. Vergrößern Sie im Manifest-Designer den Wert der Zahl im Feld **Version** .
 
@@ -53,9 +55,9 @@ Sie können eine Visual Studio-Erweiterung auf Ihrem System aktualisieren, indem
 
 5. Laden Sie die neue *VSIX* -Datei (im Ordner * \bin\debug \* des Projekts) auf die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) -Website hoch.
 
-     Wenn ein Benutzer, der über eine frühere Version der Erweiterung verfügt, **Erweiterungen und Updates**öffnet, wird die neue Version in der **Update** Liste angezeigt, vorausgesetzt, dass das Tool für die automatische Suche nach Updates festgelegt ist.
+     Wenn ein Benutzer, der über eine frühere Version der Erweiterung verfügt, **Erweiterungen und Updates** öffnet, wird die neue Version in der **Update** Liste angezeigt, vorausgesetzt, dass das Tool für die automatische Suche nach Updates festgelegt ist.
 
-     Sie können die automatische Suche nach Updates am unteren Rand des Bereichs " **Updates** " aktivieren oder deaktivieren (**Automatische Erkennung verfügbarer Updates aktivieren/deaktivieren**). Dadurch wird die Einstellung " **nach Updates** suchen **" unter Extras**  >  **Optionen**  >  **Umgebung**  >  **Erweiterungen und Updates**geändert.
+     Sie können die automatische Suche nach Updates am unteren Rand des Bereichs " **Updates** " aktivieren oder deaktivieren (**Automatische Erkennung verfügbarer Updates aktivieren/deaktivieren**). Dadurch wird die Einstellung " **nach Updates** suchen **" unter Extras**  >  **Optionen**  >  **Umgebung**  >  **Erweiterungen und Updates** geändert.
 
     > [!NOTE]
     > Ab Visual Studio 2015 Update 2 können Sie **(in Extras**  >  **Optionen**  >  **Umgebungs**  >  **Erweiterungen und Updates**) angeben, ob Sie automatische Updates für Erweiterungen pro Benutzer, alle Benutzer Erweiterungen oder beides (Standardeinstellung) benötigen.

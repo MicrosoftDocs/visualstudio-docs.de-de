@@ -1,5 +1,7 @@
 ---
 title: Initialisierungs-und Metadatenkonfiguration des Designers | Microsoft-Dokumentation
+description: Erfahren Sie, wie das Visual Studio SDK die Initialisierung eines Designers oder der Designer Komponente und seine Metadaten durch ein VSPackage erleichtert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9907298cf730d6e51c108dc92f633d0b50451f12
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011708"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996161"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Initialisierungs-und Metadatenkonfiguration des Designers
 
-Durch die Bearbeitung der Metadaten und Filter Attribute, die einem Designer oder einer Designer Komponente zugeordnet sind, können Anwendungen definieren, welche Tools von einem bestimmten Designer verwendet werden, um unterschiedliche <xref:System.Type> Objekte (z. b. Datenstrukturen, Klassen oder grafische Entitäten) zu verarbeiten, wann der Designer verfügbar ist und wie die Visual Studio-IDE für die unter **Toolbox** Stützung des Designers konfiguriert ist (z. b
+Durch die Bearbeitung der Metadaten und Filter Attribute, die einem Designer oder einer Designer Komponente zugeordnet sind, können Anwendungen definieren, welche Tools von einem bestimmten Designer verwendet werden, um unterschiedliche <xref:System.Type> Objekte (z. b. Datenstrukturen, Klassen oder grafische Entitäten) zu verarbeiten, wann der Designer verfügbar ist und wie die Visual Studio-IDE für die unter  Stützung des Designers konfiguriert ist (z. b
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Bietet mehrere Mechanismen, um die Steuerung der Initialisierung eines Designers oder der Designer Komponente und die Bearbeitung der zugehörigen Metadaten durch ein VSPackage zu vereinfachen.
 
@@ -97,7 +99,7 @@ Wenn das globale Flag auf festgelegt wurde `false` , erfolgt die Metadatenänder
 > [!NOTE]
 > Die Entwurfs Oberfläche unterstützt nur das Erstellen von Komponenten, sodass nur Komponenten lokale Metadaten aufweisen können. Im obigen Beispiel haben wir versucht, eine Eigenschaft zu ändern, z. b. die- `Color` Eigenschaft eines Objekts. Wenn `false` für das globale Flag an weitergegeben wurde, wird `CustomBrowser` nie angezeigt, da der Designer nie tatsächlich eine Instanz von erstellt `Color` . Wenn das globale Flag auf festgelegt `false` wird, ist es nützlich für Komponenten, z. b. Steuerelemente, Timer und Dialogfelder.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
