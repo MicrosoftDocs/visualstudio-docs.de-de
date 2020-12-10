@@ -1,6 +1,6 @@
 ---
-title: Workflow-Designer-ExistsInCollection &lt; T- &gt; Aktivitäts Designer
-description: Erfahren Sie, wie Sie den ExistsInCollection <T> -Aktivitäts Designer verwenden können, um eine ExistsInCollection-Aktivität zu erstellen und zu konfigurieren <T> .
+title: ExistsInCollection &lt; T- &gt; Aktivitäts Designer
+description: Erfahren Sie, wie Sie den ExistsInCollection <T> -Aktivitäts Designer in Workflow-Designer verwenden können, um eine ExistsInCollection-Aktivität zu erstellen und zu konfigurieren <T> .
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 357001651018b1b9211efc75d3b9397fb2a943cf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9012bb936c2a9a8944639458d4165e08f5e7081e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438021"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995407"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T>-Aktivitätsdesigner
 
@@ -29,7 +29,7 @@ Mit der <xref:System.Activities.Statements.ExistsInCollection%601>-Aktivität wi
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Verwenden des ExistsInCollection- \<T> Aktivitäts Designers
 
-Der **ExistsInCollection \<T>** -Aktivitäts Designer befindet sich in der **Kategorie Auflistung** der **Toolbox** , auf die Sie zugreifen können, indem Sie in Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X** drücken.
+Der **ExistsInCollection \<T>** -Aktivitäts Designer befindet sich in der **Kategorie Auflistung** der **Toolbox**, auf die Sie zugreifen können, indem Sie in Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X** drücken.
 
 Der **ExistsInCollection \<T>** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. innerhalb eines <xref:System.Activities.Statements.Sequence> . Dadurch wird eine- <xref:System.Activities.Statements.ExistsInCollection%601> Aktivität mit dem Standardwert <xref:System.Activities.Activity.DisplayName%2A> ExistsInCollection<Int32 erstellt \> . (Standardmäßig ist das *TypeArgument* **Int32**. Der Wert kann im Eigenschaften Raster geändert werden.)  Der <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des **ExistsInCollection-<T \>** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden. Die anderen Eigenschaften müssen im Eigenschaftenraster bearbeitet werden.
 
@@ -39,13 +39,13 @@ In der folgenden Tabelle <xref:System.Activities.Statements.ExistsInCollection%6
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der Anzeigename der <xref:System.Activities.Statements.ExistsInCollection%601>-Aktivität. Der Standardwert ist ExistsInCollection<Int32 \> . Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Wahr|Das Element, das in der Auflistung gesucht werden soll \<T> . Dieses Element ist vom Typ *T* , der vom Typ *TypeArgument* ist. Zum Angeben des Elements geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Wahr|Die Auflistung, in der überprüft werden soll, ob das Element vorhanden ist. Diese Auflistung weist den Typ **ICollection<TypeArgument auf \> .** Geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein, um die Auflistung anzugeben.|
-|*TypeArgument*|Wahr|Der Typ T der in der <xref:System.Collections.Generic.ICollection%601> enthaltenen Elemente. Standardmäßig ist dieser *TypeArgument* -Typ auf **Int32** festgelegt. Ändern Sie den Wert von *TypeArgument* im Kombinations Feld des Eigenschaften Rasters, um den Typ zu ändern.|
-|<xref:System.Activities.Activity%601.Result%2A>|FALSE|Ein Wert, der angibt, ob das angegebene Element in der Auflistung vorhanden ist. Um eine Variable anzugeben, die an das Ergebnis gebunden wird, geben Sie im Eigenschaftenraster eine Visual Basic-Variable ein.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.ExistsInCollection%601>-Aktivität. Der Standardwert ist ExistsInCollection<Int32 \> . Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|Das Element, das in der Auflistung gesucht werden soll \<T> . Dieses Element ist vom Typ *T*, der vom Typ *TypeArgument* ist. Zum Angeben des Elements geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Die Auflistung, in der überprüft werden soll, ob das Element vorhanden ist. Diese Auflistung weist den Typ **ICollection<TypeArgument auf \> .** Geben Sie im Eigenschaftenraster einen Visual Basic-Ausdruck ein, um die Auflistung anzugeben.|
+|*TypeArgument*|True|Der Typ T der in der <xref:System.Collections.Generic.ICollection%601> enthaltenen Elemente. Standardmäßig ist dieser *TypeArgument* -Typ auf **Int32** festgelegt. Ändern Sie den Wert von *TypeArgument* im Kombinations Feld des Eigenschaften Rasters, um den Typ zu ändern.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Ein Wert, der angibt, ob das angegebene Element in der Auflistung vorhanden ist. Um eine Variable anzugeben, die an das Ergebnis gebunden wird, geben Sie im Eigenschaftenraster eine Visual Basic-Variable ein.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sammlung](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

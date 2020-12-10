@@ -1,6 +1,6 @@
 ---
-title: 'Workflow-Designer: Parameter hinzufügen & Dialogfelder "Argumente hinzufügen"'
-description: Erfahren Sie, wie die Benutzeroberflächen Elemente des Dialog Felds Parameter hinzufügen vom InvokeMethod-Designer verwendet werden.
+title: Parameter hinzufügen & Dialogfelder "Argumente hinzufügen"
+description: Erfahren Sie, wie die Benutzeroberflächen Elemente des Dialog Felds Parameter hinzufügen vom InvokeMethod-Designer in Workflow-Designer verwendet werden.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 2038e56770a7d671a25b3982f865926c29697b13
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f29ee2aeedc971fc25654b6681c87b5dab71e386
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435689"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995511"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dialogfelder Parameter hinzufügen und Argumente hinzufügen
 
@@ -26,7 +26,7 @@ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Fel
 |Name|Wert|
 |-|-|
 |**Richtung**|Gibt an, ob der Parameter den Datenfluss in die Methode, aus der Methode oder beides darstellt.|
-|**Type**|Der Typname des neuen Parameters.|
+|**Typ**|Der Typname des neuen Parameters.|
 |**Wert**|Ein Visual Basic Ausdruck, der verwendet wird, um dem neuen Parameter einen Standardwert zuzuweisen.|
 
 In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Felds **Argumente hinzufügen** beschrieben, das vom Designer verwendet wird <xref:System.Activities.Statements.InvokeDelegate> :
@@ -35,5 +35,5 @@ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Fel
 |-|-|
 |**Name**|Der Name des Arguments.|
 |**Richtung**|Gibt an, ob das Argument den Datenfluss in den Delegaten, aus dem Delegaten oder beides darstellt.|
-|**Type**|Der Typname des neuen Arguments.|
+|**Typ**|Der Typname des neuen Arguments.|
 |**Wert**|Der für diese Instanz des Delegatarguments zu verwendende Wert.|

@@ -1,5 +1,7 @@
 ---
 title: IDE-GUIDs | Microsoft-Dokumentation
+description: Die VSConstants-Klasse veröffentlicht eine Reihe von GUIDs einiger Teile der IDE. In diesem Artikel werden die GUIDs aufgelistet.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41f9931b8e36dcb363624ecbc67e186bd3f5f71c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66a79a24225fe2abbb27611e041295711e6e3b38
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710489"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993470"
 ---
 # <a name="ide-guids"></a>IDE-GUIDs
 
@@ -41,8 +43,8 @@ Die- <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs eini
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7d960b07-7af8-11D0-8e5e-00a0c911005a|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137c9e8-35fe-4af2-87b0-de3c45f 395fd|
-|Microsoft. VisualStudio. VSConstants. SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
-|Microsoft. VisualStudio. VSConstants. SID_SVsGeneralOutputWindowPane|65482c72-DEFA-41b7-902c-11c091889c83|
+|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
+|Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-DEFA-41b7-902c-11c091889c83|
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Dateien, virtuelle und physische Ordner und unter Projekte
 
@@ -78,14 +80,14 @@ Die- <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs eini
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.GeneralPane_guid>|3c24d581-5591-4884-a571-9fe89915cd64|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.SortedBuildOutputPane_guid>|2032b126-7c8d-48ad-8026-0e0348004fc0|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065c74-1b11-4249-9ea7-5540d1a6d528|
-|Microsoft. VisualStudio. VSConstants. SID_SVsGeneralOutputWindowPane|65482c72-DEFA-41b7-902c-11c091889c83|
+|Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-DEFA-41b7-902c-11c091889c83|
 
 ## <a name="command-sets-and-properties"></a>Befehls Sätze und Eigenschaften
 
 |Konstante|GUID|
 |--------------|----------|
-|Microsoft. VisualStudio. VSConstants. GUID_VSStandardCommandSet97|5efc7975-14bc-11CF-9b2b-00aa00573819|
-|Microsoft. VisualStudio. VSConstants. GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
+|Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5efc7975-14bc-11CF-9b2b-00aa00573819|
+|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
@@ -113,9 +115,9 @@ Die- <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs eini
 
 |Konstanten|GUID|
 |---------------|----------|
-|Microsoft. VisualStudio. VSConstants. GUID_COMClassicPage|9a341d96-5a64-11d3-bff9-00c04f990235|
-|Microsoft. VisualStudio. VSConstants. GUID_COMPlusPage|9a341d95-5a64-11d3-bff9-00c04f990235|
-|Microsoft. VisualStudio. VSConstants. GUID_SolutionPage|9a341d97-5a64-11d3-bff9-00c04f990235|
+|Microsoft.VisualStudio.VSConstants.GUID_COMClassicPage|9a341d96-5a64-11d3-bff9-00c04f990235|
+|Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9a341d95-5a64-11d3-bff9-00c04f990235|
+|Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9a341d97-5a64-11d3-bff9-00c04f990235|
 
 ## <a name="miscellaneous-shell-guids"></a>Sonstige shellguids
 
@@ -123,7 +125,7 @@ Die- <xref:Microsoft.VisualStudio.VSConstants> Klasse veröffentlicht GUIDs eini
 |---------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913l1f -1ee3-11d1-8a6e-00c04f 682e21|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11D0-b63f-00a0c922e851|
-|Microsoft. VisualStudio. VSConstants. SID_SVsToolboxActiveXDataProvider|35222106-BB44-11D0-8c46-00c04fc2aae2|
+|Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-BB44-11D0-8c46-00c04fc2aae2|
 
 ## <a name="see-also"></a>Weitere Informationen
 

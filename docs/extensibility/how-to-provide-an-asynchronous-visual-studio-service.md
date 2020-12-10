@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Bereitstellen eines asynchronen Visual Studio-Dienstanbieter | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie einen asynchronen Visual Studio-Dienst bereitstellen. Mit diesem Ansatz können Sie einen Dienst abrufen, ohne den UI-Thread zu blockieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11639e178f93a1ebfe2fc5231ee2b35df1b63196
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905738"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993639"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Vorgehensweise: Bereitstellen eines asynchronen Visual Studio-Dienstanbieter
 Wenn Sie einen Dienst abrufen möchten, ohne den UI-Thread zu blockieren, sollten Sie einen asynchronen Dienst erstellen und das Paket in einem Hintergrund Thread laden. Zu diesem Zweck können Sie <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anstelle eines verwenden <xref:Microsoft.VisualStudio.Shell.Package> und den Dienst mit den speziellen asynchronen Methoden des asynchronen Pakets hinzufügen.
@@ -24,9 +26,9 @@ Wenn Sie einen Dienst abrufen möchten, ohne den UI-Thread zu blockieren, sollte
 
 1. Erstellen Sie ein VSIX-Projekt (**Datei**  >  **neu**  >  **Projekt**  >  **Visual c#**  >  **extensiblity**  >  **VSIX-Projekt**). Nennen Sie das Projekt **testasync**.
 
-2. Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projekt Knoten im **Projektmappen-Explorer** aus, und klicken Sie auf Neues Element **Hinzufügen**  >  **New item**  >  **Visual c# Elemente**  >  **Erweiterbarkeit**  >  **Visual Studio-Paket**. Benennen Sie diese Datei *TestAsyncPackage.cs*.
+2. Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projekt Knoten im **Projektmappen-Explorer** aus, und klicken Sie auf Neues Element **Hinzufügen**  >    >  **Visual c# Elemente**  >  **Erweiterbarkeit**  >  **Visual Studio-Paket**. Benennen Sie diese Datei *TestAsyncPackage.cs*.
 
-3. Ändern Sie in *TestAsyncPackage.cs*das Paket, um von zu erben, `AsyncPackage` anstelle von `Package` :
+3. Ändern Sie in *TestAsyncPackage.cs* das Paket, um von zu erben, `AsyncPackage` anstelle von `Package` :
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -120,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>Hinzufügen eines Diensts
 
-1. Entfernen Sie in *TestAsyncPackage.cs*die `Initialize()` -Methode, und überschreiben Sie die- `InitializeAsync()` Methode. Fügen Sie den Dienst hinzu, und fügen Sie eine Rückruf Methode hinzu, um die Dienste zu erstellen. Im folgenden finden Sie ein Beispiel für den asynchronen Initialisierer, der einen Dienst hinzufügt:
+1. Entfernen Sie in *TestAsyncPackage.cs* die `Initialize()` -Methode, und überschreiben Sie die- `InitializeAsync()` Methode. Fügen Sie den Dienst hinzu, und fügen Sie eine Rückruf Methode hinzu, um die Dienste zu erstellen. Im folgenden finden Sie ein Beispiel für den asynchronen Initialisierer, der einen Dienst hinzufügt:
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -132,7 +134,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     ```
     Um diesen Dienst außerhalb dieses Pakets sichtbar zu machen, legen Sie den Wert für das Promote-Flag als letzten Parameter auf " *true* " fest:  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
-2. Fügen Sie einen Verweis auf *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*hinzu.
+2. Fügen Sie einen Verweis auf *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* hinzu.
 
 3. Implementieren Sie die Rückruf Methode als asynchrone Methode, die den Dienst erstellt und zurückgibt.
 
@@ -171,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>Verwenden eines asynchronen Dienstanbieter in einem Befehls Handler
  Im folgenden finden Sie ein Beispiel für die Verwendung eines asynchronen Dienstanbieter in einem Menübefehl. Sie können den hier gezeigten Vorgang verwenden, um den Dienst in anderen nicht asynchronen Methoden zu verwenden.
 
-1. Fügen Sie dem Projekt einen Menübefehl hinzu. (Wählen Sie im **Projektmappen-Explorer**den Projekt Knoten aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Hinzufügen**  >  aus. **Neues Element**  >  **Erweiterbarkeit**  >  **Benutzerdefinierter Befehl**.) Benennen Sie die Befehlsdatei *TestAsyncCommand.cs*.
+1. Fügen Sie dem Projekt einen Menübefehl hinzu. (Wählen Sie im **Projektmappen-Explorer** den Projekt Knoten aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Hinzufügen**  >  aus. **Neues Element**  >  **Erweiterbarkeit**  >  **Benutzerdefinierter Befehl**.) Benennen Sie die Befehlsdatei *TestAsyncCommand.cs*.
 
 2. Die benutzerdefinierte Befehls Vorlage fügt die- `Initialize()` Methode der *TestAsyncPackage.cs* -Datei erneut hinzu, um den Befehl zu initialisieren. Kopieren Sie in der- `Initialize()` Methode die Zeile, in der der Befehl initialisiert wird. Diese sollte wie folgt aussehen:
 

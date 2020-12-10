@@ -1,5 +1,7 @@
 ---
 title: Guidsymbol-Element | Microsoft-Dokumentation
+description: 'Das guidsymbol-Element enthält die GUID des GUID: ID-Paars, das ein Menü, eine Gruppe oder einen Befehl darstellt.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711125"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994237"
 ---
 # <a name="guidsymbol-element"></a>Guidsymbol-Element
 Das- `GuidSymbol` Element enthält die GUID des GUID: ID-Paars, das ein Menü, eine Gruppe oder einen Befehl darstellt. Die ID stammt von einem `IDSymbol` Element im- `GuidSymbol` Element. Das- `GuidSymbol` Element verfügt über ein- `name` Attribut, das einen anzeigen Amen für die GUID bereitstellt, die im-Attribut enthalten ist `value` .

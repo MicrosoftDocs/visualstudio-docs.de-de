@@ -1,5 +1,7 @@
 ---
 title: Dynamisches Hinzufügen von Menü Elementen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie das dynamicitemstart-Befehlsflag verwenden, um zur Laufzeit Menü Elemente hinzuzufügen. In diesem Artikel wird gezeigt, wie das Startprojekt in einer Visual Studio-Projekt Mappe festgelegt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4387c1930e09e49c0ec5c36ccedc1bb83dc273f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81fd495c51eff456f66275f33876038d14e43203
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712067"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994809"
 ---
 # <a name="dynamically-add-menu-items"></a>Dynamisches Hinzufügen von Menü Elementen
 Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie das `DynamicItemStart` Befehlsflag in einer Platzhalter-Schaltflächen Definition in der Visual Studio-Befehls Tabellen Datei (*vsct*-Datei) angeben und dann (im Code) die Anzahl der Menü Elemente definieren, die angezeigt und mit den Befehlen verarbeitet werden sollen. Wenn das VSPackage geladen wird, wird der Platzhalter durch die dynamischen Menü Elemente ersetzt.
@@ -43,7 +45,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie das `DynamicItemS
 
 - Zwei Schaltflächen, eine, die als Platzhalter für die Menü Elemente fungiert, und eine andere Schaltfläche, die das Symbol und die QuickInfo auf der Symbolleiste bereitstellt.
 
-1. Definieren Sie in *dynamicmenupackage. vsct*die Befehls-IDs. Wechseln Sie zum Abschnitt "Symbole", und ersetzen Sie die idsymbol-Elemente im **guiddynamicmenupackagecmdset** -Block "guidsymbol". Sie müssen idsymbol-Elemente für die beiden Gruppen, den Menü Controller, den Platzhalter Befehl und den Anker Befehl definieren.
+1. Definieren Sie in *dynamicmenupackage. vsct* die Befehls-IDs. Wechseln Sie zum Abschnitt "Symbole", und ersetzen Sie die idsymbol-Elemente im **guiddynamicmenupackagecmdset** -Block "guidsymbol". Sie müssen idsymbol-Elemente für die beiden Gruppen, den Menü Controller, den Platzhalter Befehl und den Anker Befehl definieren.
 
     ```xml
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">
@@ -205,7 +207,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie das `DynamicItemS
 ## <a name="add-the-command"></a>Befehl hinzufügen
  Mit dem dynamicmenu-Konstruktor können Sie Menübefehle einrichten, einschließlich dynamischer Menüs und Menü Elemente.
 
-1. Fügen Sie in *DynamicMenuPackage.cs*die GUID des Befehlssatzes und die Befehls-ID hinzu:
+1. Fügen Sie in *DynamicMenuPackage.cs* die GUID des Befehlssatzes und die Befehls-ID hinzu:
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
@@ -220,7 +222,7 @@ Sie können Menü Elemente zur Laufzeit hinzufügen, indem Sie das `DynamicItemS
     using System.ComponentModel.Design;
     ```
 
-3. Fügen Sie in der- `DynamicMenu` Klasse ein privates Feld **DTE2**hinzu.
+3. Fügen Sie in der- `DynamicMenu` Klasse ein privates Feld **DTE2** hinzu.
 
     ```csharp
     private DTE2 dte2;
@@ -356,6 +358,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. Wenn Sie die Projekt Mappe schließen oder eine Projekt Mappe öffnen, die nur über ein Projekt verfügt, sollte das Symbolleisten Symbol ausgeblendet werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

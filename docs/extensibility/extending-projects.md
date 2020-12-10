@@ -1,5 +1,7 @@
 ---
 title: Erweitern von Projekten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eigene benutzerdefinierte Projekttypen im Visual Studio SDK erstellen und unterschiedliche Typen von Visual Studio-Projektmappen verwalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14108a304cc5f85c9a870bc66804df7daa98f3ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711751"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994614"
 ---
 # <a name="extend-projects"></a>Erweitern von Projekten
 Projekte und Projektmappen sind die Möglichkeiten, wie Visual Studio Code-und Ressourcen Dateien in Kompilierungs-und Bereitstellungs Einheiten organisiert. Weitere Informationen zu Projekten in [Projekten (Visual Studio SDK)](../extensibility/extending-projects.md)finden Sie hier.

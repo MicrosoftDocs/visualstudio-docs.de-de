@@ -1,6 +1,6 @@
 ---
-title: Workflow-Designer-cancellationscope-Aktivitäts Designer
-description: Erfahren Sie, wie Sie den cancellationscope-Aktivitäts Designer verwenden können, um eine cancellationscope-Aktivität zu erstellen und zu konfigurieren.
+title: Cancellationscope-Aktivitäts Designer
+description: Erfahren Sie, wie Sie den cancellationscope-Aktivitäts Designer in Workflow-Designer verwenden können, um eine cancellationscope-Aktivität zu erstellen und zu konfigurieren.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 746ed70d0a1a8ae4de2207ea1fdf15280bd44de9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434440"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993236"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope-Aktivitätsdesigner
 
@@ -39,11 +39,11 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Cancellat
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der optionale Anzeigename der <xref:System.Activities.Statements.CancellationScope>-Aktivität. Der Standardwert lautet CancellationScope. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Wahr|Gibt die Aktivität an, für die Abbruchlogik bereitgestellt wird. Um die- <xref:System.Activities.Statements.CancellationScope.Body%2A> Aktivität hinzuzufügen, löschen Sie eine Aktivität aus der **Toolbox** im Feld **Body** des **cancellationscope** -Aktivitäts Designers. Fügen Sie den Hinweis Text "Aktivität hier ablegen" hinzu.|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Wahr|Gibt die Aktivität an, die ausgeführt wird, wenn ein Abbruch vorliegt. Um die- <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> Aktivität hinzuzufügen, löschen Sie eine Aktivität aus der **Toolbox** im Feld **cancellationhandler** des **cancellationscope** -Aktivitäts Designers. Fügen Sie den Hinweis Text "Aktivität hier ablegen" hinzu.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der optionale Anzeigename der <xref:System.Activities.Statements.CancellationScope>-Aktivität. Der Standardwert lautet CancellationScope. Obwohl der <xref:System.Activities.Activity.DisplayName%2A>-Wert nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Gibt die Aktivität an, für die Abbruchlogik bereitgestellt wird. Um die- <xref:System.Activities.Statements.CancellationScope.Body%2A> Aktivität hinzuzufügen, löschen Sie eine Aktivität aus der **Toolbox** im Feld **Body** des **cancellationscope** -Aktivitäts Designers. Fügen Sie den Hinweis Text "Aktivität hier ablegen" hinzu.|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Gibt die Aktivität an, die ausgeführt wird, wenn ein Abbruch vorliegt. Um die- <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> Aktivität hinzuzufügen, löschen Sie eine Aktivität aus der **Toolbox** im Feld **cancellationhandler** des **cancellationscope** -Aktivitäts Designers. Fügen Sie den Hinweis Text "Aktivität hier ablegen" hinzu.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Transaktion](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)

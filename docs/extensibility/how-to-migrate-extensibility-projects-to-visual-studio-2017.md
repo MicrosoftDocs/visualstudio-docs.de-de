@@ -1,6 +1,7 @@
 ---
 title: Migrieren von Erweiterungsprojekten zu Visual Studio 2017
 titleSuffix: ''
+description: Erfahren Sie, wie Sie ein Upgrade von Erweiterungs Projekten auf Visual Studio 2017 durchführen und wie Sie ein Upgrade von Erweiterungs Manifest Version 2 auf das VSIX-Manifest der Version 3 durchführen.
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352282"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993964"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Vorgehensweise: Migrieren von Erweiterungs Projekten zu Visual Studio 2017
 
@@ -47,7 +48,7 @@ Um die Erweiterung im neuen VSIX v3-Format (Version 3) zu erstellen, muss Ihre L
 
 So aktualisieren Sie die nuget-Verweise auf Microsoft. VSSDK. Buildtools:
 
-* Klicken Sie mit der rechten Maustaste auf die Lösung, und wählen Sie **nuget-Pakete für**Projekt Mappe verwalten.
+* Klicken Sie mit der rechten Maustaste auf die Lösung, und wählen Sie **nuget-Pakete für** Projekt Mappe verwalten.
 * Navigieren Sie zur Registerkarte **Updates** .
 * Wählen Sie **Microsoft. VSSDK. Buildtools (neueste Version)** aus.
 * Klicken Sie auf **Aktualisieren**.
@@ -109,14 +110,14 @@ Anstatt das Manifest-XML direkt zu bearbeiten, können Sie **die Registerkarte**
 
 ## <a name="update-debug-settings-for-the-project"></a>Debugeinstellungen für das Projekt aktualisieren
 
-Wenn Sie die Erweiterung in einer experimentellen Instanz von Visual Studio debuggen möchten, müssen Sie sicherstellen, dass für die Projekteinstellungen für die Aktion " **Debugstart**"  >  **Start action** der Wert " **externen Programm starten** " auf die *devenv.exe* Datei Ihrer Visual Studio 2017-Installation festgelegt ist.
+Wenn Sie die Erweiterung in einer experimentellen Instanz von Visual Studio debuggen möchten, müssen Sie sicherstellen, dass für die Projekteinstellungen für die Aktion " **Debugstart**"  >   der Wert " **externen Programm starten** " auf die *devenv.exe* Datei Ihrer Visual Studio 2017-Installation festgelegt ist.
 
 Dies könnte wie folgt aussehen: *c:\Programme (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![externes Programm starten](media/start-external-program.png)
 
 > [!Note]
-> Die Aktion zum Starten des Debuggens wird in der Regel in der *csproj. User* -Datei gespeichert. Diese Datei ist normalerweise in der *gitignore* -Datei enthalten und wird daher normalerweise nicht mit anderen Projektdateien gespeichert, wenn ein Commit in die Quell Code Verwaltung erfolgt. Wenn Sie Ihre Projekt Mappe aus der Quell Code Verwaltung herausgezogen haben, ist es wahrscheinlich, dass für das Projekt keine Werte für die Start Aktion festgelegt sind. Neue VSIX-Projekte, die mit Visual Studio 2017 erstellt wurden, verfügen über die Datei " *. csproj. User* ", die standardmäßig auf das aktuelle Visual Studio-Installationsverzeichnis verweist. Wenn Sie jedoch eine VSIX v2-Erweiterung migrieren, ist es wahrscheinlich, dass die Datei " *. csproj. User* " Verweise auf das Installationsverzeichnis der früheren Version von Visual Studio enthält. Durch Festlegen des Werts für die Aktion "Start **Debuggen**"  >  **Start action** kann die richtige Visual Studio-Instanz gestartet werden, wenn Sie versuchen, die Erweiterung zu debuggen.
+> Die Aktion zum Starten des Debuggens wird in der Regel in der *csproj. User* -Datei gespeichert. Diese Datei ist normalerweise in der *gitignore* -Datei enthalten und wird daher normalerweise nicht mit anderen Projektdateien gespeichert, wenn ein Commit in die Quell Code Verwaltung erfolgt. Wenn Sie Ihre Projekt Mappe aus der Quell Code Verwaltung herausgezogen haben, ist es wahrscheinlich, dass für das Projekt keine Werte für die Start Aktion festgelegt sind. Neue VSIX-Projekte, die mit Visual Studio 2017 erstellt wurden, verfügen über die Datei " *. csproj. User* ", die standardmäßig auf das aktuelle Visual Studio-Installationsverzeichnis verweist. Wenn Sie jedoch eine VSIX v2-Erweiterung migrieren, ist es wahrscheinlich, dass die Datei " *. csproj. User* " Verweise auf das Installationsverzeichnis der früheren Version von Visual Studio enthält. Durch Festlegen des Werts für die Aktion "Start **Debuggen**"  >   kann die richtige Visual Studio-Instanz gestartet werden, wenn Sie versuchen, die Erweiterung zu debuggen.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Überprüfen Sie, ob die Erweiterung ordnungsgemäß erstellt wird (als VSIX v3).
 
@@ -187,18 +188,18 @@ Wenn Sie nicht sicher sind, welche Komponente eine bestimmte Binärdatei enthäl
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Die Excel-Tabelle enthält vier Spalten: **Komponenten Name**, **ComponentID**, **Version**und **Binär-/Dateinamen**.  Mit den Filtern können Sie bestimmte Komponenten und Binärdateien suchen und suchen.
+Die Excel-Tabelle enthält vier Spalten: **Komponenten Name**, **ComponentID**, **Version** und **Binär-/Dateinamen**.  Mit den Filtern können Sie bestimmte Komponenten und Binärdateien suchen und suchen.
 
 Legen Sie für alle Verweise zunächst fest, welche in der Kern-Editor-Komponente (Microsoft. VisualStudio. Component. coreeditor) enthalten sind.  Es ist mindestens erforderlich, dass die Kern-Editor-Komponente als Voraussetzung für alle Erweiterungen angegeben wird. Fügen Sie für die Links, die nicht im Kern-Editor enthalten sind, Filter im Abschnitt " **Binärdateien/Dateinamen** " hinzu, um Komponenten zu suchen, die über eine der Teilmengen dieser Verweise verfügen.
 
 Beispiele:
 
-* Wenn Sie über eine Debugger-Erweiterung verfügen und wissen, dass das Projekt über einen Verweis auf *VSDebugEng.dll* und *VSDebug.dll*verfügt, klicken Sie auf die Schaltfläche Filter im Header **Binärdateien/Dateinamen** .  Suchen Sie nach "VSDebugEng.dll", und wählen Sie *OK*aus.  Klicken Sie dann erneut auf die Filter Schaltfläche im Header **Binärdateien/Dateinamen** , und suchen Sie nach "VSDebug.dll".  Aktivieren Sie das Kontrollkästchen **aktuelle Auswahl zum Filtern hinzufügen,** und wählen Sie **OK**aus.  Sehen Sie sich nun den **Komponentennamen** an, um eine Komponente zu finden, die sich am meisten auf Ihren Erweiterungstyp bezieht. In diesem Beispiel würden Sie den Just-in-Time-Debugger auswählen und ihn Ihrem vsixmanifest hinzufügen.
+* Wenn Sie über eine Debugger-Erweiterung verfügen und wissen, dass das Projekt über einen Verweis auf *VSDebugEng.dll* und *VSDebug.dll* verfügt, klicken Sie auf die Schaltfläche Filter im Header **Binärdateien/Dateinamen** .  Suchen Sie nach "VSDebugEng.dll", und wählen Sie *OK* aus.  Klicken Sie dann erneut auf die Filter Schaltfläche im Header **Binärdateien/Dateinamen** , und suchen Sie nach "VSDebug.dll".  Aktivieren Sie das Kontrollkästchen **aktuelle Auswahl zum Filtern hinzufügen,** und wählen Sie **OK** aus.  Sehen Sie sich nun den **Komponentennamen** an, um eine Komponente zu finden, die sich am meisten auf Ihren Erweiterungstyp bezieht. In diesem Beispiel würden Sie den Just-in-Time-Debugger auswählen und ihn Ihrem vsixmanifest hinzufügen.
 * Wenn Sie wissen, dass das Projekt debuggerelemente behandelt, können Sie im Filter Suchfeld nach "Debugger" suchen, um zu sehen, welche Komponenten Debugger in seinem Namen enthalten.
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Visual Studio 2017-Release angeben
 
-Wenn Ihre Erweiterung eine bestimmte Version von Visual Studio 2017 erfordert, z. b. von einer Funktion, die in 15,3 veröffentlicht wurde, müssen Sie die Buildnummer in Ihrem VSIX- **installationtarget**angeben. Release 15,3 hat z. b. die Buildnummer "15.0.26730.3". [Hier](../install/visual-studio-build-numbers-and-release-dates.md)können Sie die Zuordnung von Releases zu Buildnummern sehen. Die Verwendung der Releasenummer "15,3" funktioniert nicht ordnungsgemäß.
+Wenn Ihre Erweiterung eine bestimmte Version von Visual Studio 2017 erfordert, z. b. von einer Funktion, die in 15,3 veröffentlicht wurde, müssen Sie die Buildnummer in Ihrem VSIX- **installationtarget** angeben. Release 15,3 hat z. b. die Buildnummer "15.0.26730.3". [Hier](../install/visual-studio-build-numbers-and-release-dates.md)können Sie die Zuordnung von Releases zu Buildnummern sehen. Die Verwendung der Releasenummer "15,3" funktioniert nicht ordnungsgemäß.
 
 Wenn Ihre Erweiterung 15,3 oder höher erfordert, deklarieren Sie die **installationtarget-Version** als [15.0.26730.3, 16,0):
 

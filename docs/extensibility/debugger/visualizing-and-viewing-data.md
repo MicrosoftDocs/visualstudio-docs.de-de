@@ -1,5 +1,7 @@
 ---
 title: Visualisieren und Anzeigen von Daten | Microsoft-Dokumentation
+description: Erfahren Sie, wie typvisualisierungen und benutzerdefinierte Viewer Daten für einen Entwickler darstellen. Die Ausdrucks Auswertung unterstützt typvisualisierungen von Drittanbietern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b5f984e6c6a3c1c8f3835dfa93a8679ae16680a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712374"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995459"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisieren und Anzeigen von Daten
 Typvisualisierungen und benutzerdefinierte Viewer stellen Daten auf eine Weise dar, die für einen Entwickler schnell sinnvoll ist. Die Ausdrucks Auswertung (EE) kann typvisualisierungen von Drittanbietern unterstützen und eigene benutzerdefinierte Viewer bereitstellen.

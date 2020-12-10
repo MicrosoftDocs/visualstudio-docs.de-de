@@ -1,5 +1,6 @@
 ---
 title: Verwalten eines privaten Katalogs mithilfe von Registrierungs Einstellungen
+description: Erfahren Sie, wie Sie den Zugriff auf die Steuerelemente, Vorlagen und Tools in der Visual Studio Gallery, in der Samples Gallery oder in privaten Galerien steuern können.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dcbacbe415eac6829dc51e95442905bba932d6a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d15d845f07310e3efcba6f05538a2207d9c416e4
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038542"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994006"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Vorgehensweise: Verwalten eines privaten Katalogs mithilfe von Registrierungs Einstellungen
 Wenn Sie Administrator oder Entwickler einer isolierten Shellerweiterung sind, können Sie den Zugriff auf die Steuerelemente, Vorlagen und Tools in der Visual Studio Gallery, in der Beispiel Galerie oder in privaten Galerien steuern. Um einen Katalog verfügbar zu machen oder nicht verfügbar zu machen, erstellen Sie eine *pkgdef* -Datei, in der die geänderten Registrierungsschlüssel und deren Werte beschrieben werden.
@@ -27,7 +28,7 @@ Wenn Sie Administrator oder Entwickler einer isolierten Shellerweiterung sind, k
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom Feed|Sharepoint (REG_SZ)

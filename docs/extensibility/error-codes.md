@@ -1,5 +1,7 @@
 ---
 title: Fehler Codes | Microsoft-Dokumentation
+description: Dieser Artikel enthält eine Liste der Fehlercodes, Werte und Beschreibungen für Plug-in-API-Funktionen der Quell Code Verwaltung.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711843"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994718"
 ---
 # <a name="error-codes"></a>Fehlercodes
 Wenn eine API-Funktion für Quellcodeverwaltungs-Plug-ins einen Fehler zurückgibt, wird davon ausgegangen, dass Sie einen der folgenden Fehlercodes erwartet. Alle Fehler sind negativ, Warnungen oder Informations Fehlercodes sind positiv, und der Erfolg ist 0.
@@ -37,7 +39,7 @@ Wenn eine API-Funktion für Quellcodeverwaltungs-Plug-ins einen Fehler zurückgi
 |`SCC_E_COULDNOTCREATEPROJECT`|-3|Fehler: das Projekt konnte nicht erstellt werden.|
 |`SCC_E_NOTCHECKEDOUT`|–4|Fehler: die Datei ist nicht ausgecheckt.|
 |`SCC_E_ALREADYCHECKEDOUT`|-5|Fehler: die Datei ist bereits ausgecheckt.|
-|`SCC_E_FILEISLOCKED`|-6|Fehler: die Datei ist gesperrt.|
+|`SCC_E_FILEISLOCKED`|–6|Fehler: die Datei ist gesperrt.|
 |`SCC_E_FILEOUTEXCLUSIVE`|-7|Fehler: die Datei ist exklusiv ausgecheckt.|
 |`SCC_E_ACCESSFAILURE`|-8|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, wahrscheinlich aufgrund von Netzwerk-oder Konflikt Problemen. Es wird empfohlen, eine Wiederholung auszuführen.|
 |`SCC_E_CHECKINCONFLICT`|–9|Fehler: beim Einchecken ist ein Konflikt aufgetreten.|

@@ -1,6 +1,6 @@
 ---
-title: Dialog Feld ' .NET-Typ Workflow-Designer durchsuchen und auswählen
-description: Erfahren Sie, wie Sie das Dialogfeld .NET-Typ suchen und auswählen verwenden können, um einen Typ aus einer Strukturansicht von Assemblys und Projekten auszuwählen.
+title: Dialogfeld '.NET-Typ suchen und auswählen'
+description: Erfahren Sie, wie Sie das Dialogfeld .NET-Typ suchen und auswählen verwenden können, um einen Typ aus einer Strukturansicht von Assemblys und Projekten in Workflow-Designer auszuwählen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438177"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995485"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 
@@ -75,6 +75,6 @@ Beispiel:
 
 Beim Auswählen eines Dienstvertragstyps zeigt der Typbrowser nur Typen an, die über das <xref:System.ServiceModel.ServiceContractAttribute>-Attribut verfügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden der Aktivitätsdesigner](control-flow-activity-designers.md)

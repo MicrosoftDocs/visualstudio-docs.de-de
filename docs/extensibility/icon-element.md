@@ -1,5 +1,7 @@
 ---
 title: Icon-Element | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Icon-Element, das in Visual Studio-IDE-Erweiterungen verwendete Symbole darstellt, das Attribute für die verwendete Bitmap und den Slot im bitmapstrip umfasst.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ed5a4f64a2c80cfdc61b37a6a8bac72adc97a33
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710520"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993600"
 ---
 # <a name="icon-element"></a>Icon-Element
 Das GUID-Attribut des Symbols-Tags ist die GUID einer definierten Bitmap. Das- `id` Attribut wählt den Slot im bitmapstrip aus. Dieses Element ist optional. Wenn dieses Element nicht enthalten ist, wird der Wert von **guidofficeicon: msotcidnoicon** impliziert.
@@ -41,7 +43,7 @@ Das GUID-Attribut des Symbols-Tags ist die GUID einer definierten Bitmap. Das- `
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Keine|Keine|
+|Keine.|Keine.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

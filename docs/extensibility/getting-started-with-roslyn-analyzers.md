@@ -1,5 +1,7 @@
 ---
 title: Ersten Einstieg in Roslyn-Analyzers | Microsoft-Dokumentation
+description: Verwenden Sie diese Ressourcen für die ersten Schritte mit Roslyn-Analyzern in Visual Studio. enthält ein Tutorial und einige Beispiele.
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2018
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c63510083f227f617b2a11ddec07510ffd792433
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012242"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994354"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Einstieg in Roslyn-Analysen
 
@@ -31,7 +33,7 @@ Mit Live, projektbasierten Code Analysemodulen in Visual Studio können API-Auto
 
 [Mehrere Beispiele auf GitHub, die in drei Arten von Analyzern gruppiert sind.](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [.Net-compilerplattform-Paket Versions Referenz](roslyn-version-support.md)
 - [Weitere Dokumente auf der GitHub-OSS-Website](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

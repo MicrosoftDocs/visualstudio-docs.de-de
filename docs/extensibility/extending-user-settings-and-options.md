@@ -1,5 +1,7 @@
 ---
 title: Erweitern von Benutzereinstellungen und-Optionen | Microsoft-Dokumentation
+description: Weitere Informationen zum Erweitern von Benutzereinstellungen und Optionen im Visual Studio SDK finden Sie unter Verwenden der Ressourcen in diesem Artikel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adcefcfc18e64f9a7e082d0398b6609ba1877d28
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711554"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994575"
 ---
 # <a name="extend-user-settings-and-options"></a>Erweitern von Benutzereinstellungen und-Optionen
-In Visual Studio gibt es zwei Hauptmethoden, um die Benutzereinstellungen beizubehalten. Auf **den**  >  Seiten Extras**Optionen** können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen festlegen, sowohl für allgemeine als auch für sprachspezifische Einstellungen. Mit Benutzereinstellungen können Benutzer allgemeine Visual Studio-Konfigurations Eigenschaften angeben. Weitere Informationen zu Options Seiten finden Sie unter [Optionen und Options Seiten](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu Benutzereinstellungen finden Sie [unter Unterstützung für Benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).
+In Visual Studio gibt es zwei Hauptmethoden, um die Benutzereinstellungen beizubehalten. Auf **den**  >  Seiten Extras **Optionen** können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen festlegen, sowohl für allgemeine als auch für sprachspezifische Einstellungen. Mit Benutzereinstellungen können Benutzer allgemeine Visual Studio-Konfigurations Eigenschaften angeben. Weitere Informationen zu Options Seiten finden Sie unter [Optionen und Options Seiten](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu Benutzereinstellungen finden Sie [unter Unterstützung für Benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).
 
 - [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md) Erläutert, wie eine Optionsseite erstellt wird.
 

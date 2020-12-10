@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Atom-Feeds für einen privaten Katalog | Microsoft-Dokumentation'
+description: Sie können einen Atom (RSS)-Feed an einem Intranetspeicherort erstellen, der Erweiterungen enthält, und den Feed zu Erweiterungen und Updates als privaten Katalog hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905861"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994146"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Vorgehensweise: Erstellen eines Atom-Feeds für einen privaten Katalog
 Sie können einen Atom (RSS)-Feed an einem Intranetspeicherort erstellen, der Erweiterungen enthält, und den Feed zu **Erweiterungen und Updates** als privaten Katalog hinzufügen. Weitere Informationen finden Sie unter [Private Kataloge](../extensibility/private-galleries.md).
@@ -24,9 +26,9 @@ Sie können einen Atom (RSS)-Feed an einem Intranetspeicherort erstellen, der Er
 ## <a name="create-an-atom-feed"></a>Erstellen eines Atom-Feeds
  Um einen Atom-Feed als privaten Katalog zu erstellen, erfassen Sie zunächst die Erweiterungen (*VSIX* -Dateien) in einem Ordner. Wenn Sie möchten, können Sie Sie in Unterordnern organisieren. Außerdem benötigen Sie die folgenden Ressourcen:
 
-- Eine *atom.xml* Datei, die die Erweiterungen als private Galerie verfügbar macht. Informationen dazu, wie Sie die *atom.xml* Datei mit **Erweiterungen und Updates**verbinden, finden Sie unter [private Galerien](../extensibility/private-galleries.md).
+- Eine *atom.xml* Datei, die die Erweiterungen als private Galerie verfügbar macht. Informationen dazu, wie Sie die *atom.xml* Datei mit **Erweiterungen und Updates** verbinden, finden Sie unter [private Galerien](../extensibility/private-galleries.md).
 
-- Ein Ordner, der alle Bilddateien enthält, die aus den Erweiterungen extrahiert wurden (z. b. Bildschirmaufnahmen). Die *atom.xml* Datei enthält relative Links zu diesen Bildern, sodass Sie in **Erweiterungen und Updates**verfügbar sind.
+- Ein Ordner, der alle Bilddateien enthält, die aus den Erweiterungen extrahiert wurden (z. b. Bildschirmaufnahmen). Die *atom.xml* Datei enthält relative Links zu diesen Bildern, sodass Sie in **Erweiterungen und Updates** verfügbar sind.
 
   Nehmen Sie beispielsweise an, dass Sie die folgenden beiden Erweiterungen in einem Ordner gesammelt haben:
 
@@ -73,4 +75,4 @@ Sie können einen Atom (RSS)-Feed an einem Intranetspeicherort erstellen, der Er
  Beachten Sie, dass sich die beiden Linktags auf Screenshots im generierten Ordner von Images beziehen.
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Private Galerien](../extensibility/private-galleries.md)
+- [Private Kataloge](../extensibility/private-galleries.md)

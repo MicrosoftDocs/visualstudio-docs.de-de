@@ -1,5 +1,7 @@
 ---
 title: Image-Dienst und-Katalog | Microsoft-Dokumentation
+description: Dieser Artikel enthält Anleitungen und bewährte Methoden für die Übernahme von Visual Studio Image Service und Image catalog.
+ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584541"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993535"
 ---
 # <a name="image-service-and-catalog"></a>Image-Dienst und-Katalog
 Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung von Visual Studio Image Service und Image Catalog, die in Visual Studio 2015 eingeführt wurden.
@@ -105,7 +107,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |-|-|
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei zur Verwendung im aktuellen Manifest.|
 |Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
-|ID|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|
+|id|Das Symbol stellt eine ID dar und muss eine nicht negative ganze Zahl sein.|
 |String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|
 
  Bei Symbolen wird die Groß-/Kleinschreibung beachtet und mithilfe der Syntax $ (Symbol Name) auf Sie verwiesen:
@@ -128,7 +130,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |System|Der Ordner " *Windows\System32* "|
 |WinDir|Der Wert der Umgebungsvariablen "% windir%".|
 
- **Image**
+ **Bild**
 
  Das- \<Image> Element definiert ein Bild, auf das von einem Moniker verwiesen werden kann. Die GUID und die ID, die zusammen aus dem bilmoniker entnommen wurden. Der Moniker für das Bild muss in der gesamten Bildbibliothek eindeutig sein. Wenn mehr als ein Bild über einen angegebenen Moniker verfügt, ist der erste, der beim Aufbau der Bibliothek aufgetreten ist, der einzige, der beibehalten wird.
 
@@ -144,7 +146,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |**Attribut**|**Definition**|
 |-|-|
 |Guid|Benötigten Der GUID-Teil des bilmonikers.|
-|ID|Benötigten Der ID-Teil des bilmonikers.|
+|id|Benötigten Der ID-Teil des bilmonikers.|
 |Allowcolorinversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|
 
  **Quelle**
@@ -160,7 +162,7 @@ Dieses Cookbook enthält Anleitungen und bewährte Methoden für die Einführung
 |**Attribut**|**Definition**|
 |-|-|
 |Uri|Benötigten Ein URI, der definiert, wo das Image geladen werden kann. Folgende Werte sind möglich:<br /><br /> -Ein [Paket-URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mit der Application:///-Autorität<br />-Einen absoluten Komponenten Ressourcen Verweis<br />-Ein Pfad zu einer Datei, die eine native Ressource enthält.|
-|Hintergrund|Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> *Dunkel:* Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast*festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert.|
+|Hintergrund|Optionale Gibt an, welche Art von Hintergrund die Quelle verwendet werden soll.<br /><br /> Folgende Werte sind möglich:<br /><br /> *Hell:* Die Quelle kann auf einem hellen Hintergrund verwendet werden.<br /><br /> *Dunkel:* Die Quelle kann in einem dunklen Hintergrund verwendet werden.<br /><br /> *HighContrast:* Die Quelle kann in einem beliebigen Hintergrund im hoher Kontrast Modus verwendet werden.<br /><br /> *Highcontrastlight:* Die Quelle kann im hoher Kontrast Modus auf einem hellen Hintergrund verwendet werden.<br /><br /> *Highkontra stdark:* Die Quelle kann im hoher Kontrast Modus in einem dunklen Hintergrund verwendet werden.<br /><br /> Wenn das Background-Attribut weggelassen wird, kann die Quelle in jedem Hintergrund verwendet werden.<br /><br /> Wenn Background " *Light*", " *Dark*", " *highkontra stlight*" oder " *highkontra stdark*" ist, werden die Farben der Quelle nie invertiert. Wenn Background ausgelassen oder auf *HighContrast* festgelegt wird, wird die Inversion der Farben der Quelle durch das **allowcolorinversion** -Attribut des Bilds gesteuert.|
 
 Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente aufweisen:
 
@@ -179,8 +181,8 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 |**Attribut**|**Definition**|
 |-|-|
-|Type|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
-|ID|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
+|type|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
+|id|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
 
  **ImageList**
 
@@ -196,7 +198,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 |**Attribut**|**Definition**|
 |-|-|
 |Guid|Benötigten Der GUID-Teil des bilmonikers.|
-|ID|Benötigten Der ID-Teil des bilmonikers.|
+|id|Benötigten Der ID-Teil des bilmonikers.|
 |Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|
 
  Der Moniker für das enthaltene Bild muss nicht auf ein Bild verweisen, das im aktuellen Manifest definiert ist. Wenn das enthaltene Bild in der Bildbibliothek nicht gefunden werden kann, wird an seiner Stelle ein leeres Platzhalter Bild verwendet.
@@ -208,7 +210,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 - *Microsoft.VisualStudio.ImageCatalog.dll*
 
-  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmonikers**verwenden.
+  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmonikers** verwenden.
 
 - *Microsoft.VisualStudio.Imaging.dll*
 
@@ -245,11 +247,11 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 - **Knownimageids. h**
 
-  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmoniker**verwenden, aber den **imagemoniker** -Typ nicht verwenden können, z. b. beim Zurückgeben von Werten von **ivshierarchie getguidproperty** -oder **GetProperty** -aufrufen.
+  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmoniker** verwenden, aber den **imagemoniker** -Typ nicht verwenden können, z. b. beim Zurückgeben von Werten von **ivshierarchie getguidproperty** -oder **GetProperty** -aufrufen.
 
 - **Knownmoniker. h**
 
-  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmonikers**verwenden.
+  - Erforderlich, wenn Sie den integrierten Image Katalog **knownmonikers** verwenden.
 
 - **ImageParameters140. h**
 
@@ -281,7 +283,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>Gewusst wie neue WPF-Benutzeroberfläche schreiben?
 
-1. Beginnen Sie mit dem Hinzufügen der Assemblyverweise, die im Abschnitt Erste Schritte zum Projekt erforderlich sind. Sie müssen nicht alle Elemente hinzufügen. Fügen Sie also nur die benötigten Verweise hinzu. (Hinweis: Wenn Sie verwenden oder Zugriff auf **Farben** anstelle von **Pinsel**haben, können Sie den Verweis auf **Hilfsprogramme**überspringen, da Sie den Konverter nicht benötigen.)
+1. Beginnen Sie mit dem Hinzufügen der Assemblyverweise, die im Abschnitt Erste Schritte zum Projekt erforderlich sind. Sie müssen nicht alle Elemente hinzufügen. Fügen Sie also nur die benötigten Verweise hinzu. (Hinweis: Wenn Sie verwenden oder Zugriff auf **Farben** anstelle von **Pinsel** haben, können Sie den Verweis auf **Hilfsprogramme** überspringen, da Sie den Konverter nicht benötigen.)
 
 2. Wählen Sie das gewünschte Bild aus, und erhalten Sie seinen Moniker. Verwenden Sie einen **knownmoniker**, oder verwenden Sie einen eigenen, wenn Sie über eigene benutzerdefinierte Images und Moniker verfügen.
 
@@ -317,7 +319,7 @@ Ein- \<Source> Element kann genau eines der folgenden optionalen unter Elemente 
 
 2. Alle Quell Attribute werden in monikerattribute geändert.
 
-    - Wenn sich das Image nie ändert und Sie **knownmoniker**verwenden, binden Sie diese Eigenschaft statisch an den **knownmoniker**. (Siehe das obige Beispiel.)
+    - Wenn sich das Image nie ändert und Sie **knownmoniker** verwenden, binden Sie diese Eigenschaft statisch an den **knownmoniker**. (Siehe das obige Beispiel.)
 
     - Wenn sich das Image nie ändert und Sie Ihr eigenes benutzerdefiniertes Image verwenden, binden Sie statisch an Ihren eigenen Moniker.
 
@@ -461,7 +463,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 ::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Gewusst wie bilmoniker in einem neuen Tool Fenster verwenden?
- Die VSIX-Paket Projektvorlage wurde für Visual Studio 2015 aktualisiert. Um ein neues Tool Fenster zu erstellen, klicken Sie mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **Add**  >  **Neues Element** hinzufügen (**STRG** + **UMSCHALT** + **a**) aus. Wählen Sie unter dem Knoten Erweiterbarkeit für die Projektsprache die Option **benutzerdefiniertes Tool Fenster**aus, geben Sie dem Tool Fenster einen Namen, und klicken Sie auf die Schaltfläche **Hinzufügen** .
+ Die VSIX-Paket Projektvorlage wurde für Visual Studio 2015 aktualisiert. Um ein neues Tool Fenster zu erstellen, klicken Sie mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie   >  **Neues Element** hinzufügen (**STRG** + **UMSCHALT** + **a**) aus. Wählen Sie unter dem Knoten Erweiterbarkeit für die Projektsprache die Option **benutzerdefiniertes Tool Fenster** aus, geben Sie dem Tool Fenster einen Namen, und klicken Sie auf die Schaltfläche **Hinzufügen** .
 
  Dies sind die wichtigsten Orte für die Verwendung von Monikern in einem Tool Fenster. Befolgen Sie die folgenden Anweisungen:
 
@@ -576,15 +578,15 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Gewusst wie portieren Sie ein Projekt System?
  **Bereitstellen von imagemonikern für ein Projekt**
 
-1. Implementieren Sie **VSHPROPID_SupportsIconMonikers** für das **ivshierarchie**des Projekts, und geben Sie "true" zurück.
+1. Implementieren Sie **VSHPROPID_SupportsIconMonikers** für das **ivshierarchie** des Projekts, und geben Sie "true" zurück.
 
-2. Implementieren Sie entweder **VSHPROPID_IconMonikerImageList** (bei Verwendung des ursprünglichen **Projekts VSHPROPID_IconImgList**) oder **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (wenn das ursprüngliche Projekt **VSHPROPID_IconHandle** und **VSHPROPID_OpenFolderIconHandle**verwendet hat).
+2. Implementieren Sie entweder **VSHPROPID_IconMonikerImageList** (bei Verwendung des ursprünglichen **Projekts VSHPROPID_IconImgList**) oder **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (wenn das ursprüngliche Projekt **VSHPROPID_IconHandle** und **VSHPROPID_OpenFolderIconHandle** verwendet hat).
 
 3. Ändern Sie die Implementierung der ursprünglichen vshpropids für Symbole, um "Legacy"-Versionen der Symbole zu erstellen, wenn Sie von Erweiterungs Punkten angefordert werden. **IVsImageService2** bietet Funktionen, die zum erhalten dieser Symbole erforderlich sind.
 
    **Zusätzliche Anforderungen für VB/c#-Projektvarianten**
 
-   Implementieren Sie nur **VSHPROPID_SupportsIconMonikers** , wenn Sie feststellen, dass Ihr Projekt der **äußerste**Typ ist. Andernfalls unterstützt der tatsächliche äußerste Typ möglicherweise keine bilmoniker in Wirklichkeit, und ihre Basiskonfiguration kann die benutzerdefinierten Images effektiv ausblenden.
+   Implementieren Sie nur **VSHPROPID_SupportsIconMonikers** , wenn Sie feststellen, dass Ihr Projekt der **äußerste** Typ ist. Andernfalls unterstützt der tatsächliche äußerste Typ möglicherweise keine bilmoniker in Wirklichkeit, und ihre Basiskonfiguration kann die benutzerdefinierten Images effektiv ausblenden.
 
    **Gewusst wie verwenden Sie bildmoniker in CPS?**
 
@@ -630,7 +632,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Empfohlen: Geben Sie einen nicht standardmäßigen Namen für das Manifest an, um seine Verwendung zu erfüllen.
 
-2. Wenn Sie nur **knownmoniker**verwenden, gehen Sie folgendermaßen vor:
+2. Wenn Sie nur **knownmoniker** verwenden, gehen Sie folgendermaßen vor:
 
    - Ersetzen Sie den- \<Images> Abschnitt des Manifests durch \<Images/> .
 
@@ -716,7 +718,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="samples"></a>Proben
+### <a name="samples"></a>Beispiele
  Einige der Visual Studio-Beispiele auf GitHub wurden aktualisiert, um zu veranschaulichen, wie Sie den Image Service als Teil verschiedener Visual Studio-Erweiterbarkeits Punkte verwenden können.
 
  [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples)Suchen Sie nach den neuesten Beispielen.
@@ -748,9 +750,9 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - Legen Sie "in VSIX einschließen" auf "true" fest.
 
-- Ich aktualisiere mein CPS-Projekt System. Was ist mit **ImageName** und **stockiconservice**passiert?
+- Ich aktualisiere mein CPS-Projekt System. Was ist mit **ImageName** und **stockiconservice** passiert?
 
-  - Diese wurden entfernt, als CPS für die Verwendung von Monikern aktualisiert wurde. Sie müssen den **stockiconservice**nicht mehr aufrufen, sondern einfach den gewünschten **knownmoniker** an die Methode oder Eigenschaft übergeben, indem Sie die **toprojectsystemtype ()** -Erweiterungsmethode in den CPS-Hilfsprogramme verwenden. Eine Zuordnung von **ImageName** zu **knownmonikers** finden Sie unten:
+  - Diese wurden entfernt, als CPS für die Verwendung von Monikern aktualisiert wurde. Sie müssen den **stockiconservice** nicht mehr aufrufen, sondern einfach den gewünschten **knownmoniker** an die Methode oder Eigenschaft übergeben, indem Sie die **toprojectsystemtype ()** -Erweiterungsmethode in den CPS-Hilfsprogramme verwenden. Eine Zuordnung von **ImageName** zu **knownmonikers** finden Sie unten:
 
     |**ImageName**|**Knownmoniker**|
     |-|-|

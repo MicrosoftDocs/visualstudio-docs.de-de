@@ -1,5 +1,6 @@
 ---
 title: Einstieg in die Erweiterungen für Sprachdienste und Editoren
+description: Erfahren Sie, wie Sie Sprachdienst Funktionen zu beliebigen Inhaltstyp hinzufügen und das Aussehen und Verhalten des Visual Studio-Editors anpassen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 471acaef0145b3bf1a73925b42e17a6343439ea2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037763"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994393"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Einstieg in die Erweiterungen für Sprachdienste und Editoren
 
@@ -75,7 +76,7 @@ Sie können Editor-Erweiterungen verwenden, um Sprachdienst Funktionen wie Glied
 
  Wenn " *% LocalAppData%* " der Name des angemeldeten Benutzers ist, ist " *Company* " der Name des Unternehmens, das die Erweiterung besitzt, und " *extensionID* " ist die ID der Erweiterung.
 
- Wenn Sie eine Erweiterung am experimentellen Speicherort bereitstellen, wird Sie im Debugmodus ausgeführt. Eine zweite Instanz von Visual Studio wird gestartet, und Sie wird **Microsoft Visual Studio experimentelle Instanz**benannt.
+ Wenn Sie eine Erweiterung am experimentellen Speicherort bereitstellen, wird Sie im Debugmodus ausgeführt. Eine zweite Instanz von Visual Studio wird gestartet, und Sie wird **Microsoft Visual Studio experimentelle Instanz** benannt.
 
 ## <a name="manage-extensions"></a>Verwalten von Erweiterungen
 

@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Get a Service | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie Visual Studio-Dienste für den Zugriff auf verschiedene Features erhalten. Sie können die meisten Dienste mithilfe eines VSPackages erhalten.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a8f97900f1d400f3208a24ccc45ff9bbd774aeb
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905830"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994081"
 ---
 # <a name="how-to-get-a-service"></a>Vorgehensweise: erhalten eines Dienstanbieter
 
@@ -29,9 +31,9 @@ Wenn Visual Studio eine lädt <xref:Microsoft.VisualStudio.Shell.Package> , übe
 
 1. Jede Visual Studio-Erweiterung beginnt mit einem VSIX-Bereitstellungs Projekt, das die Erweiterungs Ressourcen enthält. Erstellen Sie ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt mit dem Namen `GetServiceExtension` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Fügen Sie nun eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **getservicecommand**hinzu. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *GetServiceCommand.cs*. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .
+2. Fügen Sie nun eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **getservicecommand** hinzu. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *GetServiceCommand.cs*. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .
 
-3. Entfernen Sie in *GetServiceCommand.cs*den Text der `MenuItemCommand` -Methode, und fügen Sie den folgenden Code hinzu:
+3. Entfernen Sie in *GetServiceCommand.cs* den Text der `MenuItemCommand` -Methode, und fügen Sie den folgenden Code hinzu:
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -70,7 +72,7 @@ Das DTE-Objekt implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IServicePr
 So erhalten Sie einen Dienst aus dem DTE-Objekt.
 
 ```csharp
-// Start with the DTE object, for example: 
+// Start with the DTE object, for example: 
 // using EnvDTE;
 // DTE dte = (DTE)GetService(typeof(DTE));
 

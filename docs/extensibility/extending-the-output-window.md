@@ -1,5 +1,7 @@
 ---
 title: Erweitern der Ausgabefenster | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie das Ausgabefenster im Visual Studio SDK erweitern und eigene benutzerdefinierte Bereiche erstellen und verwalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711642"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994653"
 ---
 # <a name="extend-the-output-window"></a>Erweitern des Ausgabe Fensters
-Das Fenster **Ausgabe** ist ein Satz von Textbereichen mit Lese-/Schreibzugriff. Visual Studio verfügt über die folgenden integrierten Bereiche: **Build**, in denen Projekte Nachrichten über Builds und **Allgemeine**Informationen kommunizieren, in denen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Nachrichten über die IDE kommuniziert. Projekte erhalten automatisch einen Verweis auf den Bereich **Build** über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> Schnittstellen Methoden, und Visual Studio bietet direkten Zugriff auf den **allgemeinen** Bereich über den <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Dienst. Zusätzlich zu den integrierten Bereichen können Sie eigene benutzerdefinierte Bereiche erstellen und verwalten.
+Das Fenster **Ausgabe** ist ein Satz von Textbereichen mit Lese-/Schreibzugriff. Visual Studio verfügt über die folgenden integrierten Bereiche: **Build**, in denen Projekte Nachrichten über Builds und **Allgemeine** Informationen kommunizieren, in denen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Nachrichten über die IDE kommuniziert. Projekte erhalten automatisch einen Verweis auf den Bereich **Build** über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> Schnittstellen Methoden, und Visual Studio bietet direkten Zugriff auf den **allgemeinen** Bereich über den <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Dienst. Zusätzlich zu den integrierten Bereichen können Sie eigene benutzerdefinierte Bereiche erstellen und verwalten.
 
  Sie können das **Ausgabe** Fenster direkt über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> -Schnittstelle und die-Schnittstelle steuern <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> . Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> Schnittstelle, die vom Dienst angeboten wird <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> , definiert Methoden zum Erstellen, abrufen und zerstören von **Ausgabe** Fensterbereichen. Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Schnittstelle definiert Methoden, um Bereiche anzuzeigen, Bereiche zu verbergen und Ihren Text zu bearbeiten. Eine alternative Möglichkeit, das **Ausgabe** Fenster zu steuern, ist die über das <xref:EnvDTE.OutputWindow> -Objekt und das- <xref:EnvDTE.OutputWindowPane> Objekt im Visual Studio-Automatisierungs Objektmodell. Diese Objekte Kapseln fast alle Funktionen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> -Schnittstelle und der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> Schnittstelle. Außerdem werden mit dem <xref:EnvDTE.OutputWindow> <xref:EnvDTE.OutputWindowPane> -Objekt und dem-Objekt einige Funktionen höherer Ebene hinzugefügt, um die Enumeration der Fensterbereiche des **Ausgabe** Fensters und das Abrufen von Text aus den Bereichen zu vereinfachen.
 
@@ -33,14 +35,14 @@ Das Fenster **Ausgabe** ist ein Satz von Textbereichen mit Lese-/Schreibzugriff.
 
     2. EnvDTE80
 
-3. Fügen Sie in *TestOutput.cs*die folgende using-Anweisung hinzu:
+3. Fügen Sie in *TestOutput.cs* die folgende using-Anweisung hinzu:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. Löschen Sie in *TestOutput.cs*die- `ShowMessageBox` Methode. Fügen Sie den folgenden Methodenstub hinzu:
+4. Löschen Sie in *TestOutput.cs* die- `ShowMessageBox` Methode. Fügen Sie den folgenden Methodenstub hinzu:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
