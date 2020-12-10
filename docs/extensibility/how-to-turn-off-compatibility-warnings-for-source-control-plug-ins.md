@@ -1,5 +1,6 @@
 ---
 title: Deaktivieren von Warnungen für Quellcodeverwaltungs-Plug-ins
+description: Ein Benutzer kann bei der Verwendung der Quell Code Verwaltung in Visual Studio mehrere Kompatibilitäts Warnungen sehen. Erfahren Sie, wie Sie diese Warnungen deaktivieren.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d063bd2df6dd1d831c3a8220d8d513596a79a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f5607f4a92a14b692f20d509e014991d461815bd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037184"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993548"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Gewusst wie: Deaktivieren von Kompatibilitäts Warnungen für Quellcodeverwaltungs-Plug-ins
 
@@ -27,7 +28,7 @@ Bei der Verwendung der Quell Code Verwaltung in werden möglicherweise mehrere K
 
 - Legen Sie den folgenden Registrierungs Eintrag fest (fügen Sie ggf. den Wert hinzu):
 
-   **HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol\dontdisplaycheckdotnetcompatible = DWORD: 00000001**
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001**
 
    Diese Warnung wird für alle nicht- [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] Plug-Ins angezeigt.
 
@@ -35,9 +36,9 @@ Bei der Verwendung der Quell Code Verwaltung in werden möglicherweise mehrere K
 
 - Legen Sie die folgenden beiden Registrierungs Werte fest (fügen Sie ggf. die Werte hinzu):
 
-     **HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol\warnedoldmsscciprovider = DWORD: 00000000**
+     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000**
 
-    **HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol\useoldscc = DWORD: 00000001**
+    **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD: 00000001**
 
      Diese Warnung wird angezeigt, wenn das Quellcodeverwaltungs-Plug-in für mehrere Projekte nicht explizit unterstützt (d. h., wenn nur eine Datei und ein Projekt gleichzeitig eingecheckt werden können).
 

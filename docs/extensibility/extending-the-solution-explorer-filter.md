@@ -1,5 +1,7 @@
 ---
 title: Erweitern des Projektmappen-Explorer Filters | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Projektmappen-Explorer Filter Funktionalität erweitern, um unterschiedliche Dateien im Visual Studio SDK anzuzeigen oder auszublenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,22 +13,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711568"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994562"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Erweitern des Projektmappen-Explorer Filters
-Sie können **Projektmappen-Explorer** Filter Funktionalität erweitern, um unterschiedliche Dateien anzuzeigen oder auszublenden. Beispielsweise können Sie einen Filter erstellen, der nur c#-klassenfactorydateien im **Projektmappen-Explorer**anzeigt, wie in dieser exemplarischen Vorgehensweise veranschaulicht.
+Sie können **Projektmappen-Explorer** Filter Funktionalität erweitern, um unterschiedliche Dateien anzuzeigen oder auszublenden. Beispielsweise können Sie einen Filter erstellen, der nur c#-klassenfactorydateien im **Projektmappen-Explorer** anzeigt, wie in dieser exemplarischen Vorgehensweise veranschaulicht.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="create-a-visual-studio-package-project"></a>Erstellen eines Visual Studio-Paket Projekts
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `FileFilter` . Fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **FileFilter**hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `FileFilter` . Fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **FileFilter** hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 2. Fügen Sie einen Verweis auf `System.ComponentModel.Composition` und hinzu `Microsoft.VisualStudio.Utilities` .
 
@@ -50,11 +52,11 @@ Sie können **Projektmappen-Explorer** Filter Funktionalität erweitern, um unte
 
 2. Wählen Sie auf der Registerkarte **Objekte** die Schaltfläche **neu** aus.
 
-3. Wählen Sie im Feld **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent**aus.
+3. Wählen Sie im Feld **Typ** den Eintrag **Microsoft. VisualStudio. MEFComponent** aus.
 
 4. Wählen Sie im Feld **Quelle** **ein Projekt in der aktuellen Projekt Mappe aus**.
 
-5. Wählen Sie im Feld **Projekt** die Option **FileFilter**aus, und klicken Sie dann auf die Schaltfläche **OK** .
+5. Wählen Sie im Feld **Projekt** die Option **FileFilter** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
 ### <a name="add-the-filter-code"></a>Hinzufügen des Filter Codes
 
@@ -65,7 +67,7 @@ Sie können **Projektmappen-Explorer** Filter Funktionalität erweitern, um unte
     public const int FileFilterId = 0x100;
     ```
 
-2. Fügen Sie dem FileFilter-Projekt eine Klassendatei mit dem Namen *FileNameFilter.cs*hinzu.
+2. Fügen Sie dem FileFilter-Projekt eine Klassendatei mit dem Namen *FileNameFilter.cs* hinzu.
 
 3. Ersetzen Sie den leeren Namespace und die leere Klasse durch den folgenden Code.
 
@@ -158,7 +160,7 @@ Sie können **Projektmappen-Explorer** Filter Funktionalität erweitern, um unte
 
     ```
 
-4. Entfernen Sie in *FileFilter.cs*den Befehls Platzierungs-und-Verarbeitungs Code aus dem FileFilter-Konstruktor. Das Ergebnis sollte wie folgt aussehen:
+4. Entfernen Sie in *FileFilter.cs* den Befehls Platzierungs-und-Verarbeitungs Code aus dem FileFilter-Konstruktor. Das Ergebnis sollte wie folgt aussehen:
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +176,7 @@ Sie können **Projektmappen-Explorer** Filter Funktionalität erweitern, um unte
 
      Entfernen Sie `ShowMessageBox()` auch die-Methode.
 
-5. Ersetzen Sie in *FileFilterPackage.cs*den Code in der- `Initialize()` Methode durch Folgendes:
+5. Ersetzen Sie in *FileFilterPackage.cs* den Code in der- `Initialize()` Methode durch Folgendes:
 
     ```csharp
     protected override void Initialize()

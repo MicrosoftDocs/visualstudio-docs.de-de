@@ -1,17 +1,19 @@
 ---
 title: Diagnostizieren von Verzögerungen bei der Benutzeroberfläche in Visual Studio | Microsoft-Dokumentation
+description: Visual Studio benachrichtigt Sie, wenn Benutzeroberflächen Verzögerungen durch eine Erweiterung verursacht werden könnten. Erfahren Sie, wie Sie diagnostizieren können, was in Ihrem Erweiterungs Code zu Benutzeroberflächen Verzögerungen führt.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965e96a7881e20eca035b61ed7fd6f29398e71c6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75849147"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994263"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Gewusst wie: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen
 
@@ -102,7 +104,7 @@ Nachdem Sie die korrekte Benutzeroberflächen Verzögerung im Aktivitätsprotoko
 Wählen Sie dann im linken Bereich die Ablauf Verfolgungs Datei aus, und öffnen Sie Sie, indem Sie im Kontextmenü auf **Öffnen** klicken.
 
 > [!NOTE]
-> Standardmäßig gibt perfview ein ZIP-Archiv aus. Wenn Sie *trace.zip*öffnen, wird das Archiv automatisch deaktiviert und die Ablauf Verfolgung geöffnet. Sie können dies überspringen, indem Sie die **ZIP** -Datei während der Ablauf Verfolgungs Sammlung deaktivieren. Wenn Sie jedoch die Übertragung und Verwendung von Ablauf Verfolgungen auf verschiedenen Computern planen, wird dringend empfohlen, das **ZIP** -Feld nicht zu deaktivieren. Ohne diese Option werden die erforderlichen PDBs für ngen-Assemblys nicht mit der Ablauf Verfolgung begleitet, sodass Symbole aus ngen-Assemblys auf dem Zielcomputer nicht aufgelöst werden. (Weitere Informationen zu pdsb für ngen-Assemblys finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) .)
+> Standardmäßig gibt perfview ein ZIP-Archiv aus. Wenn Sie *trace.zip* öffnen, wird das Archiv automatisch deaktiviert und die Ablauf Verfolgung geöffnet. Sie können dies überspringen, indem Sie die **ZIP** -Datei während der Ablauf Verfolgungs Sammlung deaktivieren. Wenn Sie jedoch die Übertragung und Verwendung von Ablauf Verfolgungen auf verschiedenen Computern planen, wird dringend empfohlen, das **ZIP** -Feld nicht zu deaktivieren. Ohne diese Option werden die erforderlichen PDBs für ngen-Assemblys nicht mit der Ablauf Verfolgung begleitet, sodass Symbole aus ngen-Assemblys auf dem Zielcomputer nicht aufgelöst werden. (Weitere Informationen zu pdsb für ngen-Assemblys finden Sie in [diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) .)
 
 Es kann einige Minuten dauern, bis perfview die Ablauf Verfolgung verarbeitet und geöffnet hat. Nachdem die Ablauf Verfolgung geöffnet ist, wird eine Liste mit verschiedenen "Ansichten" darunter angezeigt.
 
@@ -112,7 +114,7 @@ Zuerst wird die **Ereignis** Ansicht verwendet, um den Zeitbereich der Benutzero
 
 1. Öffnen Sie die Ansicht **Ereignisse** , indem `Events` Sie unter der Ablauf Verfolgung den Knoten auswählen und im Kontextmenü die Option **Öffnen** auswählen.
 2. Wählen Sie `Microsoft-VisualStudio/ExtensionUIUnresponsiveness` im linken Bereich "" aus.
-3. Drücken Sie die EINGABETASTE.
+3. EINGABETASTE drücken
 
 Die Auswahl wird angewendet, und alle `ExtensionUIUnresponsiveness` Ereignisse werden im rechten Bereich angezeigt.
 

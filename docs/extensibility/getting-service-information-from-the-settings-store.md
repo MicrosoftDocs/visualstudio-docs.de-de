@@ -1,5 +1,7 @@
 ---
 title: Erhalten von Dienst Informationen aus dem Einstellungs Speicher | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie den Einstellungs Speicher verwenden, um alle verfügbaren Dienste zu suchen oder um zu bestimmen, ob ein bestimmter Dienst installiert ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b15d5c9f122ca66d21940b9998969b0d39d1a74d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711374"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994432"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Dienst Informationen aus dem Einstellungs Speicher
 Mit dem Einstellungs Speicher können Sie alle verfügbaren Dienste suchen oder ermitteln, ob ein bestimmter Dienst installiert ist. Sie müssen den Typ der Dienstklasse kennen.
@@ -22,7 +24,7 @@ Mit dem Einstellungs Speicher können Sie alle verfügbaren Dienste suchen oder 
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen, `FindServicesExtension` und fügen Sie dann den benutzerdefinierten Befehl hinzu `FindServicesCommand` Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .
 
-2. Fügen Sie in *FindServicesCommand.cs*die folgenden using-Direktiven hinzu:
+2. Fügen Sie in *FindServicesCommand.cs* die folgenden using-Direktiven hinzu:
 
     ```csharp
     using System.Collections.Generic;

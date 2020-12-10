@@ -1,5 +1,7 @@
 ---
 title: Editor Importe | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Editor-Dienste, Factorys und Broker importieren, die ihre Erweiterung mit unterschiedlichen Arten von Zugriff auf den Kern-Editor bereitstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6af95b452166aa71950ac1e869d333d12d857b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712010"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994770"
 ---
 # <a name="editor-imports"></a>Editor Importe
 Sie können eine Reihe von Editor Diensten, Factorys und Brokern importieren, die ihre Erweiterung mit unterschiedlichen Arten von Zugriff auf den Kern-Editor bereitstellen. Beispielsweise können Sie den importieren, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> für einen bestimmten Inhaltstyp ein bereitzustellen. (Mit diesem Navigator können Sie verschiedene Arten von Such Vorgängen in einem Text Puffer ausführen.)
@@ -94,7 +96,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Ein <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent> für ein <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
 |<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Ruft den automatischen Einzug durch die- <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider> Objekte ab.|
 |<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|Verwaltet die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> für einen <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> .|
-|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>.|
+|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|Eine <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>.|
 |<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|Generiert RTF-formatierten Text aus einer Reihe von Momentaufnahme spannen.|
 |<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|Ein <xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer> für ein <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
 |<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|Ein <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> zum Formatieren von Textzeilen in einer Ansicht.|
@@ -120,5 +122,5 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>.|
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)

@@ -1,5 +1,7 @@
 ---
 title: Groups-Element | Microsoft-Dokumentation
+description: Das groups-Element enthält Einträge, die die Befehls Gruppen eines VSPackage definieren. Dieser Artikel enthält ein Beispiel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b5885ad6e08bd9e22049033d6191c97fdc857b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711174"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994289"
 ---
 # <a name="groups-element"></a>Groups-Element
 Enthält Einträge, die die Befehls Gruppen eines VSPackage definieren.
@@ -35,7 +37,7 @@ Enthält Einträge, die die Befehls Gruppen eines VSPackage definieren.
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 

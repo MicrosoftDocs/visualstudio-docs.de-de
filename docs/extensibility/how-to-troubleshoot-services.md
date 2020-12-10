@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Problembehandlung bei Diensten | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie verschiedene häufige Probleme beheben können, die auftreten können, wenn Sie versuchen, einen Dienst im Visual Studio SDK zu erhalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe538a7efd884ef87ba815a6300dfa80a94dc3b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234951"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993691"
 ---
 # <a name="how-to-troubleshoot-services"></a>Vorgehensweise: Problembehandlung bei Diensten
 Es gibt mehrere häufige Probleme, die auftreten können, wenn Sie versuchen, einen Dienst zu erhalten:

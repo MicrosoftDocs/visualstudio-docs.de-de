@@ -1,6 +1,6 @@
 ---
-title: Workflow-Designer-InitializeCorrelation-Aktivitäts Designer
-description: Erfahren Sie, wie Sie den InitializeCorrelation-Aktivitäts Designer verwenden können, um eine InitializeCorrelation-Aktivität zu erstellen und zu konfigurieren.
+title: InitializeCorrelation-Aktivitätsdesigner
+description: In Workflow-Designer erfahren Sie, wie Sie den InitializeCorrelation-Aktivitäts Designer verwenden können, um eine InitializeCorrelation-Aktivität zu erstellen und zu konfigurieren.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b786277c79a355e1859b337a45ab093e6f2a42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437787"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993197"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation-Aktivitätsdesigner
 
@@ -43,14 +43,14 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, <xref:System.Servic
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der Anzeigename der <xref:System.ServiceModel.Activities.InitializeCorrelation>-Aktivität. Der Standardwert lautet InitializeCorrelation.<br /><br /> Obwohl die Verwendung eines nicht standardmäßigen Werts für den benutzerfreundlichen nicht <xref:System.Activities.Activity.DisplayName%2A> unbedingt erforderlich ist, wird empfohlen.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|FALSE|Das <xref:System.ServiceModel.Activities.CorrelationHandle>-Objekt, das verwendet wurde, um Workflowaktivitäten in der Korrelation zuzuordnen.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|FALSE|Ein Wörterbuch von Korrelationsdaten, die Nachrichten mit der Workflowinstanz verknüpft.<br /><br /> Verwenden Sie das Dialogfeld **Korrelation initialisieren** , um zu konfigurieren <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Weitere Informationen zum Dialogfeld dieses Dialogfeld verwenden finden Sie im Artikel typauflistungs- [Editor](../workflow-designer/type-collection-editor-dialog-box.md) .|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.ServiceModel.Activities.InitializeCorrelation>-Aktivität. Der Standardwert lautet InitializeCorrelation.<br /><br /> Obwohl die Verwendung eines nicht standardmäßigen Werts für den benutzerfreundlichen nicht <xref:System.Activities.Activity.DisplayName%2A> unbedingt erforderlich ist, wird empfohlen.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|Das <xref:System.ServiceModel.Activities.CorrelationHandle>-Objekt, das verwendet wurde, um Workflowaktivitäten in der Korrelation zuzuordnen.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Ein Wörterbuch von Korrelationsdaten, die Nachrichten mit der Workflowinstanz verknüpft.<br /><br /> Verwenden Sie das Dialogfeld **Korrelation initialisieren** , um zu konfigurieren <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Weitere Informationen zum Dialogfeld dieses Dialogfeld verwenden finden Sie im Artikel typauflistungs- [Editor](../workflow-designer/type-collection-editor-dialog-box.md) .|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Medizinisch](../workflow-designer/receive-activity-designer.md)
+- [Empfangen](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Senden](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

@@ -1,6 +1,6 @@
 ---
-title: Workflow-Designer-terminateworkflow-Aktivitäts Designer
-description: Erfahren Sie, wie Sie den terminateworkflow-Aktivitäts Designer verwenden können, um eine terminateworkflow-Aktivität zu erstellen und zu konfigurieren.
+title: Terminateworkflow-Aktivitäts Designer
+description: In Workflow-Designer erfahren Sie, wie Sie den terminateworkflow-Aktivitäts Designer verwenden können, um eine terminateworkflow-Aktivität zu erstellen und zu konfigurieren.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af1f8656e796d9551e1d140b07868551d563a90
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6fc52153ca71320ebe2ebc1e1a12780e37cac08e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433868"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995450"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow-Aktivitätsdesigner
 
@@ -29,7 +29,7 @@ Mit der <xref:System.Activities.Statements.TerminateWorkflow>-Aktivität können
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Verwenden des TerminateWorkflow-Aktivitätsdesigners
 
-Der **terminateworkflow** -Aktivitäts Designer befindet sich in der Kategorie **Laufzeit** der **Toolbox** , auf die Sie zugreifen können, indem Sie auf die Registerkarte **Toolbox** klicken (Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder STRG + ALT + X drücken).
+Der **terminateworkflow** -Aktivitäts Designer befindet sich in der Kategorie **Laufzeit** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf die Registerkarte **Toolbox** klicken (Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder STRG + ALT + X drücken).
 
 Der **terminateworkflow** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. in einer <xref:System.Activities.Statements.Sequence> . Dadurch wird eine- <xref:System.Activities.Statements.TerminateWorkflow> Aktivität mit dem standardmäßigen **DisplayName** terminateworkflow erstellt. Der <xref:System.Activities.Activity.DisplayName%2A> kann in der Kopfzeile des **terminateworkflow** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden.
 
@@ -39,11 +39,11 @@ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Terminate
 
 |Eigenschaftenname|Erforderlich|Verwendung|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der Anzeigename der <xref:System.Activities.Statements.TerminateWorkflow>-Aktivität. Der Standardwert ist TerminateWorkflow. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|FALSE|Die Ausnahme, die beim Beenden des Workflows ausgelöst werden soll. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|
-|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|FALSE|Die Ursache für das Beenden des Workflows. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.TerminateWorkflow>-Aktivität. Der Standardwert ist TerminateWorkflow. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|Die Ausnahme, die beim Beenden des Workflows ausgelöst werden soll. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|
+|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|Die Ursache für das Beenden des Workflows. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 - [Speichern](../workflow-designer/persist-activity-designer.md)

@@ -1,6 +1,6 @@
 ---
-title: 'Workflow-Designer: Aktivitäts Delegaten definieren und nutzen'
-description: Erfahren Sie, wie .NET Framework 4,5 einen Out-of-Box-Designer für die invokedelegataktivität enthält, die Sie zum Definieren und Verarbeiten von Aktivitäts Delegaten verwenden können.
+title: Definieren und Nutzen von Aktivitätsdelegaten
+description: In Workflow-Designer erfahren Sie, wie .NET Framework 4,5 einen Out-of-Box-Designer für die invokedelegataktivität enthält, die Sie zum Definieren und Verarbeiten von Aktivitäts Delegaten verwenden können.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437917"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993275"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
 
@@ -28,7 +28,7 @@ ms.locfileid: "94437917"
    > [!NOTE]
    > Wenn die **Workflow** -Projektvorlagen nicht angezeigt werden, installieren Sie zunächst die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Klicken Sie mit der rechten Maustaste auf das Projekt in **Projektmappen-Explorer** und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Wählen Sie die Kategorie **Workflow** aus, und wählen Sie dann die Vorlage **Aktivitäts** Element aus. Nennen Sie die neue Aktivität **myforeach. XAML** , und wählen Sie dann **OK** aus.
+3. Klicken Sie mit der rechten Maustaste auf das Projekt in **Projektmappen-Explorer** und wählen Sie   >  **Neues Element** hinzufügen aus. Wählen Sie die Kategorie **Workflow** aus, und wählen Sie dann die Vorlage **Aktivitäts** Element aus. Nennen Sie die neue Aktivität **myforeach. XAML** , und wählen Sie dann **OK** aus.
 
    Die-Aktivität wird im Workflow-Designer geöffnet.
 
@@ -52,7 +52,7 @@ ms.locfileid: "94437917"
 
 13. Wählen Sie **Variable erstellen** aus. Benennen Sie den neuen Variablen **Index**.
 
-14. Wählen Sie in der Spalte **Variablentyp** die Option **Int32** aus. Belassen Sie den Gültigkeits **Bereich** als **while** , und die **Standard** Spalte ist leer.
+14. Wählen Sie in der Spalte **Variablentyp** die Option **Int32** aus. Belassen Sie den Gültigkeits **Bereich** als **while**, und die **Standard** Spalte ist leer.
 
 15. Legen Sie die **Condition** -Eigenschaft der- <xref:System.Activities.Statements.While> Aktivität auf **Index < Items. length;** fest.
 
@@ -60,7 +60,7 @@ ms.locfileid: "94437917"
 
 17. Wählen Sie in der Dropdown-Dropdown-Auflistung **Text** aus.
 
-18. Klicken Sie im **Eigenschaften** Raster für die- <xref:System.Activities.Statements.InvokeDelegate> Aktivität auf die Schaltfläche **...** in der Eigenschaft Delegatargumente. **Delegate Arguments**
+18. Klicken Sie im **Eigenschaften** Raster für die- <xref:System.Activities.Statements.InvokeDelegate> Aktivität auf die Schaltfläche **...** in der Eigenschaft Delegatargumente. 
 
 19. Geben Sie in der Spalte **Wert** des Arguments mit dem Namen **Argument** den Wert **Items [index]** ein. Klicken Sie auf **OK** , um das Dialogfeld **delegatearguments** zu schließen.
 

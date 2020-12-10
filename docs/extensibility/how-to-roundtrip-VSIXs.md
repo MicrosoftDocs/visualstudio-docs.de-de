@@ -1,5 +1,7 @@
 ---
 title: Roundtrip-Erweiterungen
+description: Erfahren Sie, wie Sie Visual Studio-Erweiterbarkeits Projekte zwischen Visual Studio 2015 und Visual Studio 2019 oder Visual Studio 2017 Roundtrip machen.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387277"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993613"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Gewusst wie: Erstellen von mit Visual Studio 2019/2017 und Visual Studio 2015 kompatiblen Erweiterungen
 
@@ -45,19 +47,19 @@ In diesem Dokument wird davon ausgegangen, dass Sie Folgendes auf Ihrem Computer
 * Visual Studio 2015 mit installiertem vs SDK
 * Visual Studio 2019 oder 2017 mit installierter Erweiterbarkeits Arbeitsauslastung
 
-## <a name="recommended-approach"></a>Empfohlene Vorgehensweise
+## <a name="recommended-approach"></a>Empfohlener Ansatz
 
 Es wird dringend empfohlen, dieses Upgrade mit Visual Studio 2015 anstelle von Visual Studio 2019 oder 2017 zu starten. Der Hauptvorteil der Entwicklung in Visual Studio 2015 besteht darin, sicherzustellen, dass Sie nicht auf Assemblys verweisen, die in Visual Studio 2015 nicht verfügbar sind. Wenn Sie in Visual Studio 2019 oder 2017 entwickeln, besteht das Risiko, dass Sie eine Abhängigkeit von einer Assembly einführen, die nur in Visual Studio 2019 oder 2017 vorhanden ist.
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Stellen Sie sicher, dass kein Verweis auf project.jsvorhanden ist.
 
-Später in diesem Dokument fügen wir Anweisungen für den bedingten Import in die*csproj* -Datei ein. Dies funktioniert nicht, wenn Ihre nuget-Verweise in *project.js*gespeichert werden. Daher wird empfohlen, alle nuget-Verweise in die *packages.config* Datei zu verschieben.
+Später in diesem Dokument fügen wir Anweisungen für den bedingten Import in die *csproj* -Datei ein. Dies funktioniert nicht, wenn Ihre nuget-Verweise in *project.js* gespeichert werden. Daher wird empfohlen, alle nuget-Verweise in die *packages.config* Datei zu verschieben.
 Wenn das Projekt einen *project.jsfür* die Datei enthält:
 
 * Notieren Sie sich die Verweise in *project.js*.
-* Löschen Sie aus dem **Projektmappen-Explorer**den *project.jsfür* die Datei aus dem Projekt. Dadurch wird der *project.jsfür* die Datei gelöscht und aus dem Projekt entfernt.
+* Löschen Sie aus dem **Projektmappen-Explorer** den *project.jsfür* die Datei aus dem Projekt. Dadurch wird der *project.jsfür* die Datei gelöscht und aus dem Projekt entfernt.
 * Fügen Sie dem Projekt die nuget-Verweise wieder hinzu:
-  * Klicken Sie mit der rechten Maustaste auf die **Lösung** , und wählen Sie **nuget-Pakete für**Projekt Mappe verwalten.
+  * Klicken Sie mit der rechten Maustaste auf die **Lösung** , und wählen Sie **nuget-Pakete für** Projekt Mappe verwalten.
   * Visual Studio erstellt die *packages.config* Datei automatisch für Sie.
 
 > [!NOTE]
@@ -122,7 +124,7 @@ An diesem Punkt sollte die Manifestressource in etwa wie folgt aussehen:
 
 Es wird dringend empfohlen, während dieses Schritts einen Verweis auf eine geänderte Datei ". csproj" zu verwenden. [Hier](https://github.com/Microsoft/VSSDK-Extensibility-Samples)finden Sie einige Beispiele. Wählen Sie ein beliebiges Erweiterbarkeits Beispiel aus, suchen Sie die *csproj* -Datei als Referenz, und führen Sie die folgenden Schritte aus:
 
-* Navigieren Sie im **Datei-Explorer**zum Projektverzeichnis.
+* Navigieren Sie im **Datei-Explorer** zum Projektverzeichnis.
 * Öffnen Sie die Datei " *MyProject. csproj* " mit einem Text-Editor.
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. aktualisieren Sie die minimumvisualstudioversion.

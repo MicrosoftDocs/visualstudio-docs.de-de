@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Diagnostizieren der Erweiterungs Leistung | Microsoft-Dokumentation'
+description: Visual Studio benachrichtigt Benutzer über langsame Erweiterungen. Erfahren Sie, wie die Auswirkungen auf die Erweiterung berechnet werden und wie Erweiterungen lokal analysiert werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2016
 ms.topic: how-to
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
@@ -8,12 +10,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 542d8a6d6d90091aa7a800ef18f847fea6b1a81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03721f2aedd231dd9d4c4edaadf5eeb3a89389c2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905903"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994198"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Messen der Erweiterungs Auswirkung beim Starten
 
@@ -149,7 +151,7 @@ Bevor Sie die Auflistung beendet haben, möchten Sie sicherstellen, dass Visual 
 
 Nachdem die Aufzeichnung abgeschlossen ist, öffnet perfview automatisch die Ablauf Verfolgung und erweitert die Optionen.
 
-In diesem Beispiel interessieren wir uns hauptsächlich für die **Thread Zeit Stapel** Ansicht, die Sie unter **Advanced Group**finden. In dieser Ansicht wird die Gesamtzeit angezeigt, die von einer Methode für einen Thread aufgewendet wurde, einschließlich der CPU-Zeit und der blockierten Zeit, z. b. der Datenträger-e/a
+In diesem Beispiel interessieren wir uns hauptsächlich für die **Thread Zeit Stapel** Ansicht, die Sie unter **Advanced Group** finden. In dieser Ansicht wird die Gesamtzeit angezeigt, die von einer Methode für einen Thread aufgewendet wurde, einschließlich der CPU-Zeit und der blockierten Zeit, z. b. der Datenträger-e/a
 
  ![Thread Zeit Stapel](media/perfview-thread-time-stacks.png)
 

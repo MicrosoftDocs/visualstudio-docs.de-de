@@ -1,6 +1,7 @@
 ---
 title: Verwenden des regelbasierten UI-Kontexts für Visual Studio-Erweiterungen
 titleSuffix: ''
+description: Erfahren Sie, wie Sie regelbasierte UI-Kontexte verwenden, die es Erweiterungs Autoren ermöglichen, Bedingungen zu definieren, wenn ein UI-Kontext aktiviert und VSPackages geladen werden.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037106"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993457"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Gewusst wie: Verwenden des regelbasierten UI-Kontexts für Visual Studio-Erweiterungen
 
@@ -41,7 +42,7 @@ Der regelbasierte UI-Kontext kann auf verschiedene Arten verwendet werden:
 
 1. Definieren Sie eine neue UIContext-GUID, und fügen Sie der VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> -Klasse und hinzu <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute> .
 
-    Nehmen wir beispielsweise an, dass ein neues UIContext "uicontextguid" hinzugefügt werden muss. Die erstellte GUID (Sie können eine GUID erstellen, indem Sie **auf Extras**  >  **Create GUID**klicken) ist "8b40d5e2-5626-42ae-99ef-3dd1eff46e7b". Fügen Sie dann die folgende Deklaration in der Paket Klasse hinzu:
+    Nehmen wir beispielsweise an, dass ein neues UIContext "uicontextguid" hinzugefügt werden muss. Die erstellte GUID (Sie können eine GUID erstellen, indem Sie **auf Extras**  >  **Create GUID** klicken) ist "8b40d5e2-5626-42ae-99ef-3dd1eff46e7b". Fügen Sie dann die folgende Deklaration in der Paket Klasse hinzu:
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
@@ -82,7 +83,7 @@ Der regelbasierte UI-Kontext kann auf verschiedene Arten verwendet werden:
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    Nun werden die Kontextmenü Befehle für * \* config* -Dateien nur angezeigt, wenn das ausgewählte Element im Projektmappen-Explorer eine *. config* -Datei ist und das Paket erst geladen wird, wenn einer dieser Befehle ausgewählt ist.
+    Nun werden die Kontextmenü Befehle für *\* config* -Dateien nur angezeigt, wenn das ausgewählte Element im Projektmappen-Explorer eine *. config* -Datei ist und das Paket erst geladen wird, wenn einer dieser Befehle ausgewählt ist.
 
    Verwenden Sie als nächstes einen Debugger, um zu bestätigen, dass das Paket nur geladen wird, wenn Sie es erwarten. So debuggen Sie testpackage:
 

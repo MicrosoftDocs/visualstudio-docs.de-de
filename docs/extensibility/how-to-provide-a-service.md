@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Bereitstellen eines Dienstanbieter | Microsoft-Dokumentation'
+description: Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden können. Erfahren Sie, wie ein VSPackage einen Dienst in Visual Studio registriert und den Dienst hinzufügt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905761"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993730"
 ---
 # <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen eines Dienstanbieter
 Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden können. Um einen Dienst bereitzustellen, muss ein VSPackage den Dienst bei Visual Studio registrieren und den Dienst hinzufügen.
@@ -31,7 +33,7 @@ Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden könne
 
 1. Erstellen Sie ein VSIX-Projekt (**Datei**  >  **neu**  >  **Projekt**  >  **Visual c#**-  >  **Erweiterbarkeits**-  >  **VSIX-Projekt**).
 
-2. Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projekt Knoten im **Projektmappen-Explorer** aus, und klicken Sie auf Neues Element **Hinzufügen**  >  **New item**  >  **Visual c# Elemente**  >  **Erweiterbarkeit**  >  **Visual Studio-Paket**.
+2. Fügen Sie dem Projekt ein VSPackage hinzu. Wählen Sie den Projekt Knoten im **Projektmappen-Explorer** aus, und klicken Sie auf Neues Element **Hinzufügen**  >    >  **Visual c# Elemente**  >  **Erweiterbarkeit**  >  **Visual Studio-Paket**.
 
 3. Um einen Dienst zu implementieren, müssen Sie drei Typen erstellen:
 

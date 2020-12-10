@@ -1,5 +1,7 @@
 ---
 title: Einstieg in die VSIX-Projektvorlage | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die VSIX-Projektvorlage verwenden, um eine Erweiterung zu erstellen oder eine vorhandene Erweiterung für die Bereitstellung zu verpacken.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905878"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994341"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Beginnen Sie mit der VSIX-Projektvorlage
 
@@ -35,23 +37,23 @@ Sie können die VSIX-Projektvorlage verwenden, um eine Erweiterung zu erstellen 
 
     2. Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**. Führen Sie die Schritte des Assistenten aus.
 
-         Eine *ZIP* -Datei wird in *%UserProfile%\My Documents\Visual Studio {Version} \Meine exportierten Vorlagen \\ *erstellt.
+         Eine *ZIP* -Datei wird in *%UserProfile%\My Documents\Visual Studio {Version} \Meine exportierten Vorlagen \\* erstellt.
 
 2. Erstellen Sie ein leeres VSIX-Projekt.
 
-     Wählen Sie **Datei** > **Neu** > **Projekt** aus. Geben Sie im Suchfeld "VSIX" ein, und wählen Sie entweder die **c#** -oder **Visual Basic** Version des **VSIX-Projekts**aus.
+     Klicken Sie auf **Datei** > **Neu** > **Projekt**. Geben Sie im Suchfeld "VSIX" ein, und wählen Sie entweder die **c#** -oder **Visual Basic** Version des **VSIX-Projekts** aus.
 
 3. Fügen Sie dem Projekt die *ZIP* -Datei hinzu. Legen Sie die Eigenschaft **in Ausgabeverzeichnis kopieren** auf fest `Copy Always` .
 
-4. Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei " *Source. Extension. vsixmanifest* ", um Sie im **VSIX-Manifest-Designer**zu öffnen, und nehmen Sie dann die folgenden Änderungen vor:
+4. Doppelklicken Sie in **Projektmappen-Explorer** auf die Datei " *Source. Extension. vsixmanifest* ", um Sie im **VSIX-Manifest-Designer** zu öffnen, und nehmen Sie dann die folgenden Änderungen vor:
 
-    - Legen Sie das Feld " **Product Name** " auf **meine Projektvorlage**fest.
+    - Legen Sie das Feld " **Product Name** " auf **meine Projektvorlage** fest.
 
-    - Legen Sie das Feld **Product ID** auf **MyProjectTemplate-1**fest.
+    - Legen Sie das Feld **Product ID** auf **MyProjectTemplate-1** fest.
 
-    - Legen Sie das Feld **Autor** auf **Fabrikam**fest.
+    - Legen Sie das Feld **Autor** auf **Fabrikam** fest.
 
-    - Legen Sie das **Beschreibungs** Feld auf **meine Projektvorlage**fest.
+    - Legen Sie das **Beschreibungs** Feld auf **meine Projektvorlage** fest.
 
     - Fügen Sie im Abschnitt **Assets** einen **Microsoft. VisualStudio. ProjectTemplate** -Typ hinzu, und legen Sie den Pfad auf den Namen der *ZIP* -Datei fest.
 
@@ -67,13 +69,13 @@ Sie können die VSIX-Projektvorlage verwenden, um eine Erweiterung zu erstellen 
 
 ::: moniker range="vs-2017"
 
-10. Wählen Sie **Erweiterungen und Updates** (im **Menü Extras** ) aus, und wählen Sie die Kategorie **Vorlagen** aus. Eine der verfügbaren Erweiterungen sollte **meine Projektvorlage**sein.
+10. Wählen Sie **Erweiterungen und Updates** (im **Menü Extras** ) aus, und wählen Sie die Kategorie **Vorlagen** aus. Eine der verfügbaren Erweiterungen sollte **meine Projektvorlage** sein.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-10. Wählen Sie **Erweiterungen verwalten** (im Menü **Erweiterungen** ) aus, und wählen Sie die Kategorie **Vorlagen** aus. Eine der verfügbaren Erweiterungen sollte **meine Projektvorlage**sein.
+10. Wählen Sie **Erweiterungen verwalten** (im Menü **Erweiterungen** ) aus, und wählen Sie die Kategorie **Vorlagen** aus. Eine der verfügbaren Erweiterungen sollte **meine Projektvorlage** sein.
 
 ::: moniker-end
 

@@ -1,5 +1,7 @@
 ---
 title: Dokument Daten und Dokument Ansicht in benutzerdefinierten Editoren | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Komponenten eines benutzerdefinierten Editors, bei denen es sich um das Dokument Datenobjekt und das Dokument Ansichts Objekt handelt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414463"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994874"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dokument Daten und Dokument Ansicht in benutzerdefinierten Editoren
 Ein benutzerdefinierter Editor besteht aus zwei Teilen: einem Dokument Datenobjekt und einem Dokument Ansichts Objekt. Wie der Name bereits vermuten lässt, stellt das Dokument Datenobjekt die anzuzeigenden Textdaten dar. Ebenso stellt das Dokument Ansichts Objekt (oder "View") ein oder mehrere Fenster dar, in denen das Dokument Datenobjekt angezeigt werden soll.

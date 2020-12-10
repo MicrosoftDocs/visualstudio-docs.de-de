@@ -1,5 +1,7 @@
 ---
 title: Extern-Element | Microsoft-Dokumentation
+description: Das extern-Element verweist auf alle externen Header Dateien (. h), die zur Kompilierzeit mit der vsct-Datei zusammengeführt werden sollen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711485"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994523"
 ---
 # <a name="extern-element"></a>Extern-Element
 Das extern-Element verweist auf alle externen Header Dateien (*. h*), die zur Kompilierzeit mit der *vsct* -Datei zusammengeführt werden sollen. Die zusammen zuführenden Dateien müssen sich auf dem Includepfad befinden, der dem VSCT-Compiler übergeben wird oder auf den von einem [include-Element](../extensibility/include-element.md)verwiesen wird. Die Dateien können andere *vsct* -Dateien oder C++-Header Dateien sein.
@@ -48,7 +50,7 @@ Das extern-Element verweist auf alle externen Header Dateien (*. h*), die zur Ko
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Keine|Keine|
+|Keine.|Keine.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
