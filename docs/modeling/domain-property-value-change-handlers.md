@@ -1,5 +1,7 @@
 ---
 title: Handler für Wertänderungen von Domäneneigenschaften
+description: Weitere Informationen zu Domänen Eigenschafts Wert-Änderungs Handlern, die in einer domänenspezifischen Visual Studio-Sprache verwendet werden können.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594707"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361728"
 ---
 # <a name="domain-property-value-change-handlers"></a>Domänen Eigenschafts Wert-Änderungs Handler
 
@@ -22,7 +24,7 @@ Wenn in einer Visual Studio-domänenspezifischen Sprache der Wert einer Domänen
 
 ## <a name="override-the-property-handler-methods"></a>Überschreiben der Eigenschaften Handlermethoden
 
-Jede Domäneneigenschaft Ihrer domänenspezifischen Sprache wird von einer Klasse verarbeitet, die in der übergeordneten Domänenklasse geschachtelt ist. Der Name folgt dem Format *propertyName*propertyhandler. Sie können diese eigenschaftenhandlerklasse in der Datei **dsl\generated code\domainclasses.cs**überprüfen. In der Klasse wird `OnValueChanging()` unmittelbar vor der Wertänderung aufgerufen, und `OnValueChanged()` wird unmittelbar nach der Wertänderung aufgerufen.
+Jede Domäneneigenschaft Ihrer domänenspezifischen Sprache wird von einer Klasse verarbeitet, die in der übergeordneten Domänenklasse geschachtelt ist. Der Name folgt dem Format *propertyName* propertyhandler. Sie können diese eigenschaftenhandlerklasse in der Datei **dsl\generated code\domainclasses.cs** überprüfen. In der Klasse wird `OnValueChanging()` unmittelbar vor der Wertänderung aufgerufen, und `OnValueChanged()` wird unmittelbar nach der Wertänderung aufgerufen.
 
 Angenommen, Sie verfügen über eine Domänen Klasse mit dem Namen `Comment` , die eine Zeichen folgen-Domänen Eigenschaft mit dem Namen `Text` und eine ganzzahlige Eigenschaft namens aufweist `TextLengthCount` Damit `TextLengthCount` immer die Länge der `Text` Zeichenfolge enthält, können Sie den folgenden Code in eine separate Datei im DSL-Projekt schreiben:
 
@@ -144,7 +146,7 @@ public partial class MyDomainModel
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
 
 Mit dem folgenden Beispiel wird der Eigenschaftenhandler einer Domäneneigenschaft überschrieben und der Benutzer informiert, wenn eine Eigenschaft der `ExampleElement`-Domänenklasse geändert wurde.
 

@@ -1,5 +1,6 @@
 ---
 title: Verwenden von ModelBus in einer Text Vorlage
+description: Erfahren Sie, wie Sie Verweise auf Ziel Modelle auflösen, wenn Sie Textvorlagen schreiben, die ein Modell lesen, das Visual Studio ModelBus Verweise enthält.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +8,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535940"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361364"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Verwenden von Visual Studio-ModelBus in einer Textvorlage
 
@@ -39,7 +40,7 @@ Um einen ModelBus-Verweis in einer Textvorlage aufzulösen, muss die Ziel-DSL ü
 
     2. Öffnen Sie die DSL-Definitionsdatei. Klicken Sie mit der rechten Maustaste auf die Entwurfs Oberfläche und dann auf **ModelBus aktivieren**.
 
-    3. Wählen Sie im Dialogfeld **Ich möchte diese DSL für ModelBus**verfügbar machen aus. Sie können beide Optionen auswählen, wenn Sie möchten, dass diese DSL Ihre Modelle verfügbar macht und Verweise auf andere DSLs verwendet.
+    3. Wählen Sie im Dialogfeld **Ich möchte diese DSL für ModelBus** verfügbar machen aus. Sie können beide Optionen auswählen, wenn Sie möchten, dass diese DSL Ihre Modelle verfügbar macht und Verweise auf andere DSLs verwendet.
 
     4. Klicken Sie auf **OK**. Der DSL-Projektmappe wird ein neues ModelBusAdapter-Projekt hinzugefügt.
 
@@ -53,7 +54,7 @@ Um einen ModelBus-Verweis in einer Textvorlage aufzulösen, muss die Ziel-DSL ü
 
     2. Benennen Sie die Projektdatei um (z **. b. in T4ModelBusAdapter. csproj**).
 
-    3. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Lösungs Knoten, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**. Suchen Sie das neue Adapter Projekt, **T4ModelBusAdapter. csproj**.
+    3. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Lösungs Knoten, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **vorhandenes Projekt**. Suchen Sie das neue Adapter Projekt, **T4ModelBusAdapter. csproj**.
 
     4. Ändern Sie `*.tt` den Namespace in jeder Datei des neuen Projekts.
 
@@ -179,9 +180,9 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf einen leeren Bereich des Diagramms, der sich nicht am oberen Rand befindet, und klicken Sie dann auf **ModelBus aktivieren**.
 
-   Wenn Sie **ModelBus aktivieren**nicht sehen, laden Sie die vmsdk-ModelBus-Erweiterung herunter, und installieren Sie Sie.
+   Wenn Sie **ModelBus aktivieren** nicht sehen, laden Sie die vmsdk-ModelBus-Erweiterung herunter, und installieren Sie Sie.
 
-3. Wählen Sie im Dialogfeld **ModelBus aktivieren** **die Option Diese DSL für ModelBus**verfügbar machen aus, und klicken Sie dann auf **OK**.
+3. Wählen Sie im Dialogfeld **ModelBus aktivieren** **die Option Diese DSL für ModelBus** verfügbar machen aus, und klicken Sie dann auf **OK**.
 
     Der Projekt Mappe wird ein neues Projekt `ModelBusAdapter` hinzugefügt.
 
@@ -193,11 +194,11 @@ Sie verfügen jetzt über eine DSL, auf die Textvorlagen über ModelBus zugreife
 
     Benennen Sie den Ordner **T4ModelBusAdapter**.
 
-    Benennen Sie die Projektdatei *T4ModelBusAdapter. csproj*um.
+    Benennen Sie die Projektdatei *T4ModelBusAdapter. csproj* um.
 
-2. Fügen Sie in Projektmappen-Explorer der mbprovider-Lösung T4ModelBusAdapter hinzu. Klicken Sie mit der rechten Maustaste auf den Projektmappenknoten, zeigen Sie auf **Hinzufügen**und dann auf **vorhandenes Projekt**
+2. Fügen Sie in Projektmappen-Explorer der mbprovider-Lösung T4ModelBusAdapter hinzu. Klicken Sie mit der rechten Maustaste auf den Projektmappenknoten, zeigen Sie auf **Hinzufügen** und dann auf **vorhandenes Projekt**
 
-3. Klicken Sie mit der rechten Maustaste auf den Knoten T4ModelBusAdapter, und klicken Sie dann auf Eigenschaften. Ändern Sie im Fenster "Projekteigenschaften" **Assembly Name** den Assemblynamen und den **Standard Namespace** in `Company.MBProvider.T4ModelBusAdapters` .
+3. Klicken Sie mit der rechten Maustaste auf den Knoten T4ModelBusAdapter, und klicken Sie dann auf Eigenschaften. Ändern Sie im Fenster "Projekteigenschaften"  den Assemblynamen und den **Standard Namespace** in `Company.MBProvider.T4ModelBusAdapters` .
 
 4. Fügen Sie in jeder *. tt-Datei in T4ModelBusAdapter "T4" in den letzten Teil des Namespace ein, sodass die Zeile der folgenden ähnelt.
 
@@ -265,7 +266,7 @@ Sie verfügen jetzt über eine DSL, auf die Textvorlagen über ModelBus zugreife
 
 4. `ExampleElement`Fügen Sie in der-Klasse eine neue Domänen Eigenschaft hinzu `MBR` , und legen Sie im Eigenschaftenfenster ihren Typ auf fest `ModelBusReference` .
 
-5. Klicken Sie im Diagramm mit der rechten Maustaste auf die Eigenschaft Domäne, und klicken Sie dann auf **modelbusreference-spezifische Eigenschaften bearbeiten**. Wählen Sie im Dialogfeld **ein Modellelement**aus.
+5. Klicken Sie im Diagramm mit der rechten Maustaste auf die Eigenschaft Domäne, und klicken Sie dann auf **modelbusreference-spezifische Eigenschaften bearbeiten**. Wählen Sie im Dialogfeld **ein Modellelement** aus.
 
     Legen Sie den Filter für Datei Dialogfelder auf Folgendes fest.
 
@@ -396,9 +397,9 @@ Sie verfügen jetzt über eine DSL, auf die Textvorlagen über ModelBus zugreife
 
     Wenn Sie den MBR für dieses Element festgelegt haben, wird das Modell, auf das verwiesen wird, geöffnet und das Element, auf das verwiesen wird
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Integrieren von Modellen mit Visual Studio-ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
-- [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)
+- [Code Generierung und T4-Text Vorlagen](../modeling/code-generation-and-t4-text-templates.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -1,5 +1,7 @@
 ---
 title: Anpassen der Tools und der Toolbox
+description: Erfahren Sie, wie Sie Toolbox Elemente für die Elemente definieren müssen, die Benutzer zu Ihren Modellen hinzufügen möchten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f02254cc1229ab069277b0fe46a6b825393f682f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548290"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361559"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Anpassen der Tools und der Toolbox
 
@@ -69,7 +71,7 @@ Die **Verbindungs** -Generator-Eigenschaft eines Verbindungs Tools verweist auf 
 
 3. Legen Sie die **Toolbox Icon** -Eigenschaft so fest, dass Sie auf eine 16x16-Bitmap verweist.
 
-     Wenn Sie ein neues Symbol definieren möchten, erstellen Sie eine Bitmapdatei in Projektmappen-Explorer im Ordner " **dsl\resources** ". Die Datei sollte die folgenden Eigenschaftswerte aufweisen: Inhalt der **Buildaktion**  =  **Content**; **In Ausgabeverzeichnis kopieren**  =  **Nicht kopieren**.
+     Wenn Sie ein neues Symbol definieren möchten, erstellen Sie eine Bitmapdatei in Projektmappen-Explorer im Ordner " **dsl\resources** ". Die Datei sollte die folgenden Eigenschaftswerte aufweisen: Inhalt der **Buildaktion**  =  ; **In Ausgabeverzeichnis kopieren**  =  **Nicht kopieren**.
 
 4. **Für ein Element Tool:** Legen Sie die Eigenschaft **Klasse** des Tools so fest, dass Sie auf eine konkrete Domänen Klasse verweist, die einer Form zugeordnet ist.
 
@@ -77,7 +79,7 @@ Die **Verbindungs** -Generator-Eigenschaft eines Verbindungs Tools verweist auf 
 
 5. Um die DSL zu testen, drücken Sie F5 oder STRG + F5, und öffnen Sie in der experimentellen Instanz von Visual Studio eine Beispielmodell Datei. Das neue Tool sollte in der Toolbox aufgeführt sein. Ziehen Sie es auf das Diagramm, um zu überprüfen, ob es ein neues Element erstellt.
 
-     Wenn das Tool nicht angezeigt wird, können Sie die experimentelle Visual Studio-Datei abbrechen. Führen Sie im Windows- **Startmenü** **die Option 2010 Microsoft Visual Studio experimentellen Instanz zurücksetzen**aus. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
+     Wenn das Tool nicht angezeigt wird, können Sie die experimentelle Visual Studio-Datei abbrechen. Führen Sie im Windows- **Startmenü** **die Option 2010 Microsoft Visual Studio experimentellen Instanz zurücksetzen** aus. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
 
 ## <a name="customizing-element-tools"></a><a name="customizing"></a> Anpassen von Element Tools
  Standardmäßig erstellt das Tool eine Instanz der angegebenen Klasse. Sie haben jedoch zwei Optionen, dies zu ändern:
@@ -151,15 +153,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Darüber hinaus können Sie benutzerdefinierten Code für Verbindungs-Generatoren schreiben, um die Quell- und Zielklassen für die Verbindung anzugeben, den Typ der herzustellenden Verbindung zu definieren und Aktionen im Zusammenhang mit der Verbindungserstellung auszuführen.
 
 ### <a name="the-structure-of-connection-builders"></a>Struktur der Verbindungs-Generatoren
- Verbindungs-Generatoren enthalten mindestens eine Direktive für Linkverbindungen, um die Domänenbeziehung sowie die Quell- und Zielelemente anzugeben. Beispielsweise können Sie in der Lösungs Vorlage für Aufgaben Abläufe den **commentreferencessubjezbuilder** im **DSL-Explorer**sehen. Dieser Verbindungs-Generator enthält eine Link Verbindungs Direktive mit dem Namen **commentreferencessubjects**, die der Domänen Beziehung **commentreferencessubjects**zugeordnet ist. Diese Direktive für Linkverbindungen enthält eine Direktive für die Quellrolle, die auf die `Comment`-Domänenklasse verweist, und eine Direktive für die Zielrolle, die auf die `FlowElement`-Domänenklasse verweist.
+ Verbindungs-Generatoren enthalten mindestens eine Direktive für Linkverbindungen, um die Domänenbeziehung sowie die Quell- und Zielelemente anzugeben. Beispielsweise können Sie in der Lösungs Vorlage für Aufgaben Abläufe den **commentreferencessubjezbuilder** im **DSL-Explorer** sehen. Dieser Verbindungs-Generator enthält eine Link Verbindungs Direktive mit dem Namen **commentreferencessubjects**, die der Domänen Beziehung **commentreferencessubjects** zugeordnet ist. Diese Direktive für Linkverbindungen enthält eine Direktive für die Quellrolle, die auf die `Comment`-Domänenklasse verweist, und eine Direktive für die Zielrolle, die auf die `FlowElement`-Domänenklasse verweist.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Verwenden von Verbindungs-Generatoren zum Beschränken von Quell- und Zielrollen
- Sie können mit Verbindungs-Generatoren das Auftreten bestimmter Klassen in der Quell- oder Zielrolle einer angegebenen Domänenbeziehung beschränken. Beispiel: Sie verfügen über eine Basisdomänenklasse, die eine Domänenbeziehung mit einer anderen Domänenklasse aufweist, Sie möchten jedoch nicht, dass alle abgeleiteten Klassen der Basisklasse in dieser Beziehung die gleiche Rolle haben. In der Lösung für den Task Ablauf gibt es vier konkrete Domänen Klassen (**StartPoint**, **EndPoint**, **mergebranch**und **Synchronisierung**), die direkt von der abstrakten Domänen Klasse " **flowelements**" und zwei konkrete Domänen Klassen (**Task** und **objectinstate**) erben, die indirekt von der Klasse erben. Es gibt auch eine **flowverweisbeziehung** , die **flowelements** -Domänen Klassen sowohl in der Quell-als auch in der Zielrolle übernimmt. Eine Instanz einer **Endpunkt** Domänen Klasse sollte jedoch nicht die Quelle einer Instanz einer **Flow** -Beziehung sein, und es sollte keine Instanz einer **Start Point** -Klasse das Ziel einer Instanz einer **Flow** -Beziehung sein. Der **flowbuilder** -Verbindungs-Generator verfügt über eine Link Verbindungs Direktive namens **Flow** , die angibt, welche Domänen Klassen die Quell Rolle wiedergeben können (**Task**, **mergebranch**, **StartPoint**und **Synchronisierung**) und welche die Zielrolle wiedergeben kann (**mergebranch**, **Endpunkt**und **Synchronisierung**).
+ Sie können mit Verbindungs-Generatoren das Auftreten bestimmter Klassen in der Quell- oder Zielrolle einer angegebenen Domänenbeziehung beschränken. Beispiel: Sie verfügen über eine Basisdomänenklasse, die eine Domänenbeziehung mit einer anderen Domänenklasse aufweist, Sie möchten jedoch nicht, dass alle abgeleiteten Klassen der Basisklasse in dieser Beziehung die gleiche Rolle haben. In der Lösung für den Task Ablauf gibt es vier konkrete Domänen Klassen (**StartPoint**, **EndPoint**, **mergebranch** und **Synchronisierung**), die direkt von der abstrakten Domänen Klasse " **flowelements**" und zwei konkrete Domänen Klassen (**Task** und **objectinstate**) erben, die indirekt von der Klasse erben. Es gibt auch eine **flowverweisbeziehung** , die **flowelements** -Domänen Klassen sowohl in der Quell-als auch in der Zielrolle übernimmt. Eine Instanz einer **Endpunkt** Domänen Klasse sollte jedoch nicht die Quelle einer Instanz einer **Flow** -Beziehung sein, und es sollte keine Instanz einer **Start Point** -Klasse das Ziel einer Instanz einer **Flow** -Beziehung sein. Der **flowbuilder** -Verbindungs-Generator verfügt über eine Link Verbindungs Direktive namens **Flow** , die angibt, welche Domänen Klassen die Quell Rolle wiedergeben können (**Task**, **mergebranch**, **StartPoint** und **Synchronisierung**) und welche die Zielrolle wiedergeben kann (**mergebranch**, **Endpunkt** und **Synchronisierung**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Verbindungs-Generatoren mit mehreren Direktiven für Linkverbindungen
  Sie können einem Verbindungs-Generator mehr als eine Direktive für Linkverbindungen hinzufügen. Dies kann Ihnen dabei helfen, einige der Komplexitäten des Domänen Modells vor Benutzern auszublenden und zu verhindern, dass die **Toolbox** zu überlastet ist. Sie können in einem Verbindungs-Generator für mehrere verschiedene Domänenbeziehungen Direktiven für Linkverbindungen hinzufügen. Sie sollten Domänenbeziehungen jedoch kombinieren, wenn sie annähernd die gleiche Funktion ausführen.
 
- In der Lösung für den Task Ablauf wird das **Flow** -Verbindungs Tool zum Zeichnen von Instanzen der Daten **Fluss** -und **objectflow** -Domänen Beziehungen verwendet. Der **flowbuilder** -Verbindungs-Generator hat zusätzlich zur zuvor beschriebenen Anweisung für die **Fluss** Link Verbindung zwei Verknüpfungs Verbindungs Direktiven namens **objectflow**. Diese Direktiven legen fest, dass eine Instanz einer **objectflow** -Beziehung zwischen Instanzen der **objectinstate** -Domänen Klasse oder von einer Instanz von **objectinstate** in eine Instanz eines **Tasks, jedoch**nicht zwischen zwei Instanzen einer **Aufgabe**oder von einer Instanz eines Tasks in eine Instanz von **Task** **objectinstate**gezeichnet werden kann. Allerdings kann eine Instanz einer **Flow** -Beziehung zwischen zwei Instanzen einer **Aufgabe**gezeichnet werden. Wenn Sie die Lösung für den Task Ablauf kompilieren und ausführen, sehen Sie, dass das Zeichnen eines **Flows** von einer Instanz eines **objectinstate** zu einer Instanz eines Tasks eine Instanz eines **objectflow** **erstellt,** aber das Zeichnen eines **Flows** zwischen zwei Instanzen einer **Aufgabe** eine Instanz eines **Flows**erzeugt.
+ In der Lösung für den Task Ablauf wird das **Flow** -Verbindungs Tool zum Zeichnen von Instanzen der Daten **Fluss** -und **objectflow** -Domänen Beziehungen verwendet. Der **flowbuilder** -Verbindungs-Generator hat zusätzlich zur zuvor beschriebenen Anweisung für die **Fluss** Link Verbindung zwei Verknüpfungs Verbindungs Direktiven namens **objectflow**. Diese Direktiven legen fest, dass eine Instanz einer **objectflow** -Beziehung zwischen Instanzen der **objectinstate** -Domänen Klasse oder von einer Instanz von **objectinstate** in eine Instanz eines **Tasks, jedoch** nicht zwischen zwei Instanzen einer **Aufgabe** oder von einer Instanz eines Tasks in eine Instanz von  **objectinstate** gezeichnet werden kann. Allerdings kann eine Instanz einer **Flow** -Beziehung zwischen zwei Instanzen einer **Aufgabe** gezeichnet werden. Wenn Sie die Lösung für den Task Ablauf kompilieren und ausführen, sehen Sie, dass das Zeichnen eines **Flows** von einer Instanz eines **objectinstate** zu einer Instanz eines Tasks eine Instanz eines **objectflow** **erstellt,** aber das Zeichnen eines **Flows** zwischen zwei Instanzen einer **Aufgabe** eine Instanz eines **Flows** erzeugt.
 
 ### <a name="custom-code-for-connection-builders"></a>Benutzerdefinierter Code für Verbindungs-Generatoren
  Es gibt vier Kontrollkästchen auf der Benutzeroberfläche, mit denen die unterschiedlichen Typen von Anpassungen der Verbindungs-Generatoren definiert werden:
@@ -232,7 +234,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Mithilfe von benutzerdefiniertem Code können Sie "harte" Einschränkungen anwenden. Sie sollten jedoch berücksichtigen, ob Benutzer in der Lage sein sollen, vorübergehend ungültige Verbindungen herzustellen. In dem Fall können Sie die Beschränkungen so ändern, dass die Verbindungen erst überprüft werden, wenn die Benutzer die Änderungen speichern möchten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen der Elementerstellung und -verschiebung](../modeling/customizing-element-creation-and-movement.md)
 - [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md)

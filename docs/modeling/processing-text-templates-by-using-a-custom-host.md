@@ -1,5 +1,7 @@
 ---
 title: Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts
+description: Erfahren Sie, dass der Textvorlagen-Transformationsprozess eine Textvorlagen Datei als Eingabe annimmt und eine Textdatei als Ausgabe erzeugt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591683"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360584"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts
 
-Der *Textvorlagen-Transformations* Prozess übernimmt eine *Textvorlagen* Datei als Eingabe und erzeugt eine Textdatei als Ausgabe. Sie können die Text Transformations-Engine aus einer Visual Studio-Erweiterung oder aus einer eigenständigen Anwendung, die auf einem Computer ausgeführt wird, auf dem Visual Studio installiert ist, aufgerufen werden. Sie müssen jedoch einen Textvorlagen *Host*bereitstellen. Diese Klasse verbindet die Vorlage mit der Umgebung. Sie sucht nach Ressourcen wie Assemblys und Includedateien und verarbeitet die Ausgabe und Fehlermeldungen.
+Der *Textvorlagen-Transformations* Prozess übernimmt eine *Textvorlagen* Datei als Eingabe und erzeugt eine Textdatei als Ausgabe. Sie können die Text Transformations-Engine aus einer Visual Studio-Erweiterung oder aus einer eigenständigen Anwendung, die auf einem Computer ausgeführt wird, auf dem Visual Studio installiert ist, aufgerufen werden. Sie müssen jedoch einen Textvorlagen *Host* bereitstellen. Diese Klasse verbindet die Vorlage mit der Umgebung. Sie sucht nach Ressourcen wie Assemblys und Includedateien und verarbeitet die Ausgabe und Fehlermeldungen.
 
 > [!TIP]
 > Wenn Sie ein Paket oder eine Erweiterung schreiben, das in Visual Studio ausgeführt wird, sollten Sie den Textvorlagen Dienst verwenden, anstatt einen eigenen Host zu schreiben. Weitere Informationen finden Sie unter [Aufrufen von Text Transformation in einer vs-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
@@ -29,7 +31,7 @@ Der *Textvorlagen-Transformations* Prozess übernimmt eine *Textvorlagen* Datei 
 >
 > Für Lauf Zeit Anwendungen empfiehlt sich die Verwendung von vorverarbeiteten Textvorlagen: siehe [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Wenn in der Anwendung zur Kompilierzeit korrigierte Vorlagen verwendet werden, ist es einfacher, vorverarbeitete Textvorlagen zu verwenden. Sie können diesen Ansatz auch verwenden, wenn die Anwendung auf einem Computer ausgeführt wird, auf dem Visual Studio nicht installiert ist. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Wenn in der Anwendung zur Kompilierzeit korrigierte Vorlagen verwendet werden, ist es einfacher, vorverarbeitete Textvorlagen zu verwenden. Sie können diesen Ansatz auch verwenden, wenn die Anwendung auf einem Computer ausgeführt wird, auf dem Visual Studio nicht installiert ist. Weitere Informationen finden Sie unter [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="execute-a-text-template-in-your-application"></a>Ausführen einer Text Vorlage in der Anwendung
 
@@ -48,7 +50,7 @@ string output = engine.ProcessTemplate(templateString, host);
 
  Der Host muss in der Lage sein, Fehler zu protokollieren und Verweise auf Assemblys und Includedateien aufzulösen, er muss eine Anwendungsdomäne bereitstellen, in der die Vorlage ausgeführt werden kann, und den entsprechenden Prozessor für jede Direktive aufrufen.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> ist in **Microsoft. VisualStudio. TextTemplating. \*.0.dll**definiert, und [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) ist in **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0.dll**definiert.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> ist in **Microsoft. VisualStudio. TextTemplating. \*.0.dll** definiert, und [itexttemplatingenginehost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) ist in **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0.dll** definiert.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
  Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten Text Vorlagen Hosts](../modeling/walkthrough-creating-a-custom-text-template-host.md) Zeigt, wie Sie einen benutzerdefinierten Textvorlagen Host erstellen, der die Textvorlagen Funktionalität außerhalb von Visual Studio verfügbar macht.

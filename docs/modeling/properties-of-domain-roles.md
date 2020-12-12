@@ -1,5 +1,7 @@
 ---
 title: Eigenschaften von Domänenrollen
+description: Erfahren Sie mehr über die Eigenschaften, die einer Domänen Rolle zugeordnet sind, z. b. Sammlungstyp, custome-Attribute und Eigenschaft durchsuchbar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,15 +9,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1c62126d65107bb25e3c4a475a794116c47193
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544143"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362339"
 ---
 # <a name="properties-of-domain-roles"></a>Eigenschaften von Domänenrollen
-Die Eigenschaften in der folgenden Tabelle sind einer Domänen Rolle zugeordnet. Weitere Informationen zu Domänen Rollen finden Sie Untergrund Legendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Die Eigenschaften in der folgenden Tabelle sind einer Domänen Rolle zugeordnet. Weitere Informationen zu Domänen Rollen finden Sie Untergrund Legendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Eigenschaft|BESCHREIBUNG|Standard|
 |-|-|-|
@@ -31,9 +33,9 @@ Die Eigenschaften in der folgenden Tabelle sind einer Domänen Rolle zugeordnet.
 |Überträgt DELETE|`True` , um das Element zu löschen, das diese Rolle wieder gibt, wenn der zugehörige Link gelöscht wird.|`True` für das Ziel einer Einbettungs Rolle.<br /><br /> `False` für andere Rollen.|
 |Eigenschaftenname|Der Name der Eigenschaft, die im Code des Rollen Players generiert wurde. Dieser Name darf keine Leerzeichen enthalten.|Der Name der gegenüberliegenden Rolle, wenn diese Rolle über eine Null-zu-eins-oder eine 1:1-Multiplizität verfügt. andernfalls der pluralisierte Name der entgegengesetzten Rolle.|
 |Rollen Inhaber|Die Domänen Klasse des Elements, das diese Rolle in der Beziehung wiedergeben kann. Diese Eigenschaft ist schreibgeschützt.|Die Domänen Klasse des Rollen Players für diese Rolle.|
-|Notizen|Informelle Hinweise, die der Domänen Rolle zugeordnet sind.|Keine <\>|
+|Hinweise|Informelle Hinweise, die der Domänen Rolle zugeordnet sind.|Keine <\>|
 |Category|Die Kategorie, unter der die generierte Eigenschaft im **Eigenschaften** Fenster des generierten Designers angezeigt wird. Wenn diese Eigenschaft leer ist, wird die generierte Eigenschaft unter **der Kategorie "** Verschiedenes" angezeigt.|Keine <\>|
-|BESCHREIBUNG|Die Beschreibung, die verwendet wird, um Code zu dokumentieren, und wird in der Benutzeroberfläche des generierten Designers verwendet.<br /><br /> Die Beschreibung wird in der IntelliSense-QuickInfo für die generierte Eigenschaft für die Role Player-Klasse angezeigt.|`Description for`*der vollständige Name der Rolle* .|
+|Beschreibung|Die Beschreibung, die verwendet wird, um Code zu dokumentieren, und wird in der Benutzeroberfläche des generierten Designers verwendet.<br /><br /> Die Beschreibung wird in der IntelliSense-QuickInfo für die generierte Eigenschaft für die Role Player-Klasse angezeigt.|`Description for`*der vollständige Name der Rolle* .|
 |Anzeigename|Der Name, der im generierten Designer für die Domänen Rolle angezeigt wird.|Der angepasste Wert der Name-Eigenschaft.|
 |Hilfsschlüsselwort|Das optionale Schlüsselwort, das zum Indizieren der F1-Hilfe für die Domänen Rolle verwendet wird.|\<none>|
 |Anzeige Name der Eigenschaft|Der Name, der im generierten Designer für die generierte Role-Eigenschaft angezeigt wird.|Der angepasste Wert der Eigenschaft für den Eigenschaftsnamen.|
@@ -41,6 +43,6 @@ Die Eigenschaften in der folgenden Tabelle sind einer Domänen Rolle zugeordnet.
 > [!NOTE]
 > Der Standardwert eines anzeigen Amens basiert auf dem zugeordneten Eigenschafts Wert, indem Leerzeichen vor jedem Großbuchstaben eingefügt werden, dem ein Kleinbuchstabe vorangestellt wird und auf das kein anderes Großbuchstabe folgt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Eigenschaften von Domänenbeziehungen](../modeling/properties-of-domain-relationships.md)

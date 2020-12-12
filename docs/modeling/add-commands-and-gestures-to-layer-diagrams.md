@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
+description: Erfahren Sie, wie Sie Kontextmenü Befehle und Gesten Handler in Abhängigkeits Diagrammen in Visual Studio definieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531390"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362222"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
 
@@ -73,21 +75,21 @@ Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelem
 
 2. Fügen Sie der Projekt Mappe ein VSIX-Projekt hinzu, oder erstellen Sie es Ein VSIX-Projekt enthält eine Datei mit dem Namen " **Source. Extension. vsixmanifest**".
 
-3. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **als Startprojekt festlegen**aus.
+3. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **als Startprojekt festlegen** aus.
 
-4. Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Befehls- oder Gestenhandlerprojekt als MEF-Komponente hinzu.
+4. Fügen Sie in **source.extension.vsixmanifest** unter **Objekte** das Befehls- oder Gestenhandlerprojekt als MEF-Komponente hinzu.
 
-    1. Wählen Sie auf der Registerkarte **Objekte**die Option **Neu**aus.
+    1. Wählen Sie auf der Registerkarte **Objekte** die Option **Neu** aus.
 
-    2. Wählen Sie bei **Typ**die Option **Microsoft.VisualStudio.MefComponent**aus.
+    2. Wählen Sie bei **Typ** die Option **Microsoft.VisualStudio.MefComponent** aus.
 
-    3. Wählen Sie bei **Quelle**die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.
+    3. Wählen Sie bei **Quelle** die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.
 
     4. Speichern Sie die Datei.
 
 5. Kehren Sie zum Befehls-oder gestenhandlerprojekt zurück, und fügen Sie die folgenden Projekt Verweise hinzu:
 
-   |**Referenz**|**Optionen**|
+   |**Verweis**|**Optionen**|
    |-|-|
    |Programme\Microsoft Visual Studio [Version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Erstellen und Bearbeiten von Ebenen|
    |Microsoft.VisualStudio.Uml.Interfaces|Erstellen und Bearbeiten von Ebenen|
@@ -246,7 +248,7 @@ Beachten Sie die folgenden Punkte zu Gestenhandlern:
 
      **OnDragDrop** - Wird aufgerufen, wenn der Benutzer ein Element im Diagramm ablegt.
 
-- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Beispiel:
+- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Zum Beispiel:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

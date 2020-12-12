@@ -1,5 +1,7 @@
 ---
 title: Verwenden von Code Maps zum Debuggen von Anwendungen
+description: Erfahren Sie, wie Sie Code Maps verwenden können, um zu vermeiden, dass Sie in großen Codebasen, in unbekanntem Code oder Legacy Code verloren gehen.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594109"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361650"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Verwenden von Code Maps zum Debuggen von Anwendungen
 
@@ -36,10 +38,10 @@ Ausführliche Informationen zu den Befehlen und Aktionen, die Sie beim Arbeiten 
 > [!NOTE]
 > Zum Erstellen und Bearbeiten von Code Maps benötigen Sie Visual Studio Enterprise Edition. In den Editionen von Visual Studio Community und Professional können Sie Diagramme öffnen, die in der Enterprise Edition generiert wurden, Sie können Sie jedoch nicht bearbeiten.
 
-## <a name="understand-the-problem"></a>Das Problem verstehen
+## <a name="understand-the-problem"></a>Verstehen des Problems
  Nehmen Sie an, in einem Zeichenprogramm, an dem Sie arbeiten, liegt ein Fehler vor. Um den Fehler zu reproduzieren, öffnen Sie die Projekt Mappe in Visual Studio, und drücken Sie **F5** , um das Debugging zu starten.
 
- Wenn Sie eine Linie zeichnen und den **letzten Strich rückgängig**machen auswählen, geschieht nichts, bis Sie die nächste Zeile zeichnen.
+ Wenn Sie eine Linie zeichnen und den **letzten Strich rückgängig** machen auswählen, geschieht nichts, bis Sie die nächste Zeile zeichnen.
 
  ![Code Map &#45; Repro-Fehler](../modeling/media/codemapstoryboardpaint0.png)
 
@@ -140,7 +142,7 @@ Ausführliche Informationen zu den Befehlen und Aktionen, die Sie beim Arbeiten 
 
  Nun sind Sie mit der Untersuchung fertig. Sie haben das Problem gefunden und erfolgreich korrigiert, indem Sie den Code zugeordnet haben. Außerdem verfügen Sie über eine Zuordnung, anhand der Sie im Code navigieren, sich an das Gelernte erinnern und die Schritte zur Behebung des Problems anzeigen können.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Visualisieren von Code](../modeling/visualize-code.md)

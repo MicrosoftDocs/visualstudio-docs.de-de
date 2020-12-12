@@ -1,5 +1,7 @@
 ---
 title: Navigieren in und Aktualisieren von Modellen im Programmcode
+description: Erfahren Sie, wie Sie Code schreiben können, um Modellelemente zu erstellen und zu löschen, ihre Eigenschaften festzulegen und Verknüpfungen zwischen Elementen zu erstellen und zu löschen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566175"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362209"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 
@@ -55,7 +57,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
 
  `henry.Name = "Henry VIII";`
 
- Wenn in der DSL-Definition die **Art** einer Eigenschaft **berechnet**wird, können Sie Sie nicht festlegen. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).
+ Wenn in der DSL-Definition die **Art** einer Eigenschaft **berechnet** wird, können Sie Sie nicht festlegen. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Beziehungen
  Domänen Beziehungen, die Sie in der DSL-Definition definieren, werden zu Paaren von Eigenschaften, eine für die Klasse an jedem Ende der Beziehung. Die Namen der Eigenschaften werden im DslDefinition-Diagramm als Bezeichnungen für die Rollen auf den einzelnen Seiten der Beziehung angezeigt. Abhängig von der Multiplizität der Rolle ist der Typ der Eigenschaft entweder die Klasse am anderen Ende der Beziehung oder eine Auflistung dieser Klasse.
@@ -70,7 +72,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
 
  `&& p.Parents.All(parent => parent.Children.Contains(p));`
 
- **Elementlinks**. Eine Beziehung wird auch durch ein Modellelement dargestellt, das als *Link*bezeichnet wird, das eine Instanz des Domänen Beziehungstyp ist. Ein Link verfügt immer über ein Quell Element und ein Ziel Element. Das Quell Element und das Ziel Element können identisch sein.
+ **Elementlinks**. Eine Beziehung wird auch durch ein Modellelement dargestellt, das als *Link* bezeichnet wird, das eine Instanz des Domänen Beziehungstyp ist. Ein Link verfügt immer über ein Quell Element und ein Ziel Element. Das Quell Element und das Ziel Element können identisch sein.
 
  Sie können auf einen Link und seine Eigenschaften zugreifen:
 
@@ -84,7 +86,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Es gibt auch andere Methoden zum Zugreifen auf Links. Beispiel:
+ Es gibt auch andere Methoden zum Zugreifen auf Links. Zum Beispiel:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +110,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> Zugreifen auf Klassen Informationen
- Sie können Informationen zu den Klassen, Beziehungen und anderen Aspekten der DSL-Definition erhalten. Beispiel:
+ Sie können Informationen zu den Klassen, Beziehungen und anderen Aspekten der DSL-Definition erhalten. Zum Beispiel:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,13 +201,13 @@ using (Transaction t =
 
  Es gibt drei Möglichkeiten, wie Sie eine Instanz einer Beziehung erstellen können. Jede dieser drei Methoden hat denselben Effekt:
 
-- Legen Sie die-Eigenschaft des Quell Rollen Players fest. Beispiel:
+- Legen Sie die-Eigenschaft des Quell Rollen Players fest. Zum Beispiel:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Legen Sie die-Eigenschaft des Ziel Rollen Players fest. Beispiel:
+- Legen Sie die-Eigenschaft des Ziel Rollen Players fest. Zum Beispiel:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +217,7 @@ using (Transaction t =
 
        Die Multiplizität dieser Rolle ist `0..*` , daher fügen wir der Auflistung hinzu.
 
-- Erstellen Sie explizit eine Instanz der Beziehung. Beispiel:
+- Erstellen Sie explizit eine Instanz der Beziehung. Zum Beispiel:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -288,7 +290,7 @@ In einigen Fällen wird das Löschen durch das vorhanden sein einer Sperre verhi
 ## <a name="locks"></a><a name="locks"></a> Schleusen
  Ihre Änderungen werden möglicherweise durch eine Sperre verhindert. Sperren können für einzelne Elemente, für Partitionen und für den Speicher festgelegt werden. Wenn eine dieser Ebenen eine Sperre aufweist, die die Art der Änderung verhindert, die Sie vornehmen möchten, wird möglicherweise eine Ausnahme ausgelöst, wenn Sie versuchen, Sie zu ändern. Sie können ermitteln, ob Sperren mithilfe des-Elements festgelegt werden. Getlocks (), eine Erweiterungsmethode, die im-Namespace definiert ist <xref:Microsoft.VisualStudio.Modeling.Immutability> .
 
- Weitere Informationen finden Sie unter [Definieren einer Sperr Richtlinie zum Erstellen](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)von schreibgeschützten Segmenten.
+ Weitere Informationen finden Sie unter [Definieren einer Sperr Richtlinie zum Erstellen von Read-Only Segmenten](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> Kopieren und Einfügen
  Sie können Elemente oder Gruppen von Elementen in einen kopieren <xref:System.Windows.Forms.IDataObject> :
@@ -381,9 +383,9 @@ FamilyTreeDiagram diagram =
 
  `connector.FromShape, connector.ToShape`
 
- Viele Formen sind Composite. Sie bestehen aus einer übergeordneten Form und einer oder mehreren Ebenen untergeordneter Elemente. Formen *, die relativ*zu einer anderen Form positioniert sind, werden als untergeordnete Elemente bezeichnet. Wenn die übergeordnete Form verschoben wird, werden die untergeordneten Elemente mit dem Element bewegt.
+ Viele Formen sind Composite. Sie bestehen aus einer übergeordneten Form und einer oder mehreren Ebenen untergeordneter Elemente. Formen *, die relativ* zu einer anderen Form positioniert sind, werden als untergeordnete Elemente bezeichnet. Wenn die übergeordnete Form verschoben wird, werden die untergeordneten Elemente mit dem Element bewegt.
 
- *Relative* untergeordnete Elemente können außerhalb des umgebenden Felds der übergeordneten Form angezeigt werden. *Nested* Geschachtelte untergeordnete Elemente werden strikt innerhalb der Grenzen des übergeordneten Elements angezeigt.
+ *Relative* untergeordnete Elemente können außerhalb des umgebenden Felds der übergeordneten Form angezeigt werden.  Geschachtelte untergeordnete Elemente werden strikt innerhalb der Grenzen des übergeordneten Elements angezeigt.
 
  Um den obersten Satz von Formen in einem Diagramm zu erhalten, verwenden Sie Folgendes:
 

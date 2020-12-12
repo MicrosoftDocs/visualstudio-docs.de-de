@@ -1,5 +1,7 @@
 ---
 title: Entwickeln von Tests aus einem Modell
+description: Erfahren Sie, wie Sie Anforderungen und Architekturmodelle verwenden können, um die Tests des Systems und seiner Komponenten zu organisieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c18fd457d4827d3abf3a3494ad622873eb5c7b
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 1f49b52bece0c1dddc65da919d266c4f21b1bf69
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099296"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361832"
 ---
 # <a name="develop-tests-from-a-model"></a>Entwickeln von Tests aus einem Modell
 Sie können Anforderungen und architektonische Modelle verwenden, um die Tests des Systems und seiner Komponenten zu organisieren. Durch diese Vorgehensweise können Sie sicherstellen, dass die Anforderungen, die für die Benutzer und andere Projektbeteiligte wichtig sind, getestet werden. Außerdem können Sie dadurch die Tests schneller aktualisieren, wenn sich die Anforderungen ändern. Bei Verwendung von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] können Sie auch Verknüpfungen zwischen den Modellen und den Tests verwalten.
@@ -22,7 +24,7 @@ Sie können Anforderungen und architektonische Modelle verwenden, um die Tests d
  Welche Versionen von Visual Studio diese Features unterstützen, erfahren Sie unter [Versions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="system-and-subsystem-testing"></a>Testen von System und Subsystemen
- *System Tests,* auch als *Akzeptanz Tests*bezeichnet, bedeuten das Testen, ob die Anforderungen der Benutzer erfüllt werden. Diese Tests beziehen sich auf das nach außen hin sichtbare Verhalten des Systems und nicht auf den internen Entwurf.
+ *System Tests,* auch als *Akzeptanz Tests* bezeichnet, bedeuten das Testen, ob die Anforderungen der Benutzer erfüllt werden. Diese Tests beziehen sich auf das nach außen hin sichtbare Verhalten des Systems und nicht auf den internen Entwurf.
 
  Systemtests sind sehr wertvoll, wenn Sie ein System erweitern oder neu entwerfen. Sie unterstützen Sie dabei, bei der Änderung des Codes Fehler zu vermeiden.
 
@@ -131,7 +133,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Anfügen von Test Fällen an Modellelemente
  Wenn das Projekt [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] verwendet, können Sie Tests mit den Elementen im Modell verknüpfen. Dadurch können Sie schnell die Tests finden, die von einer Änderung der Anforderungen betroffen sind, und nachverfolgen, in welchem Umfang eine Anforderung erfüllt wurde.
 
- Sie können Tests mit allen Arten von Elementen verknüpfen. Im Folgenden finden Sie einige Beispiele:
+ Sie können Tests mit allen Arten von Elementen verknüpfen. Hier einige Beispiele:
 
 - Verknüpfen Sie einen Anwendungsfall mit den Tests, die ihn ausführen.
 
@@ -155,7 +157,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Fügen Sie der Testsammlung Testfälle hinzu, die die im Modellelement ausgedrückte Anforderung überprüfen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
 - [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)

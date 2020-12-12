@@ -1,5 +1,7 @@
 ---
 title: Reagieren auf und Propagieren von Änderungen
+description: Wenn ein Element erstellt, gelöscht oder aktualisiert wird, können Sie Code schreiben, der die Änderung an andere Teile des Modells oder an externe Ressourcen weitergibt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c51aeea4a1637e5b1b9d2de0d8b92920334e2fc
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414515"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360611"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Reagieren auf und Weitergeben von Änderungen
 
@@ -52,7 +54,7 @@ Verwenden Sie Store-Ereignisse, um das Modell mit Objekten außerhalb des Stores
 
 - **Übergeben von Ereignis Argumenten an Regeln und Ereignisse** An Ereignisse und Regeln wird ein `EventArgs` Parameter übergeben, der Informationen über die Änderung des Modells enthält.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Schreiben von Code zum Anpassen einer Domain-Specific Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

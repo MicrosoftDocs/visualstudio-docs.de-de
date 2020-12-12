@@ -1,5 +1,7 @@
 ---
 title: Informationen zu domänenspezifischen Sprachen
+description: Erfahren Sie, wie eine domänenspezifische Sprache (Domain-Specific Language, DSL) zum Ausdrücken von Anweisungen in einem bestimmten Problembereich oder einer Domäne entworfen wurde.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597268"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360889"
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 
@@ -54,11 +56,11 @@ In der Regel wird eine domänenspezifische Sprache erstellt, wenn ein Entwicklun
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ermöglicht es Ihnen, eine domänenspezifische Sprache zu erstellen, die über einen eigenen grafischen Designer und eine eigene Diagramm Notation verfügt, und dann die Sprache zu verwenden, um für jedes Projekt den entsprechenden Quellcode zu generieren.
 
-## <a name="domain-specific-development"></a>Domänenspezifische Entwicklung
+## <a name="domain-specific-development"></a>Domain-Specific Entwicklung
 
 Die domänenspezifische Entwicklung ist der Prozess, bei dem die Teile Ihrer Anwendungen identifiziert werden, die mithilfe einer domänenspezifischen Sprache modelliert werden können. Anschließend wird die Sprache erstellt und für die Anwendungsentwickler bereitgestellt. Die Entwickler verwenden die domänenspezifische Sprache zum Erstellen von Modellen, die für Ihre Anwendungen spezifisch sind, verwenden die Modelle, um Quellcode zu generieren, und verwenden dann den Quellcode, um die Anwendungen zu entwickeln.
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekte der grafischen domänenspezifischen Entwicklung
+## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekte der grafischen Domain-Specific Entwicklung
 
 Eine grafische domänenspezifische Sprache muss die folgenden Features enthalten:
 
@@ -94,7 +96,7 @@ Da [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] in Visual Studio gehostet wir
 
 Sie können auch einen modellbus Adapter für Ihre domänenspezifische Sprache erstellen. Mit diesem Adapter können Sie auf ein Modell und Elemente innerhalb eines Modells verweisen, und Sie können Code schreiben, der auf eine Instanz der DSL zugreifen und diese aktualisieren kann. Mit dem leistungsfähigen modellbus Mechanismus können Sie Visual Studio-Erweiterungen schreiben, die mit mehreren Modellen funktionieren. Sie können auch eigenständige Anwendungen schreiben, die mit Modellen arbeiten. Weitere Informationen finden Sie unter [integrieren von Modellen mit Visual Studio-ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="benefits-of-domain-specific-development"></a>Vorteile der domänenspezifischen Entwicklung
+## <a name="benefits-of-domain-specific-development"></a>Vorteile der Domain-Specific Entwicklung
 
 Eine domänenspezifische Sprache kann die folgenden Vorteile bieten:
 
@@ -110,7 +112,7 @@ Eine domänenspezifische Sprache kann die folgenden Vorteile bieten:
 
      Entwickler können den Code, den Ihr Modell generiert, verwenden, um eine Prototypanwendung zu erstellen, die Sie Clients anzeigen können.
 
-## <a name="the-process-of-domain-specific-development"></a>Der Prozess der domänenspezifischen Entwicklung
+## <a name="the-process-of-domain-specific-development"></a>Der Prozess der Domain-Specific Entwicklung
 
 Die meisten Softwareentwicklungsteams, die domänenspezifische Sprachen verwenden, führen die folgenden Schritte aus, um Ihre Modelle zu erstellen und zu verwenden:
 

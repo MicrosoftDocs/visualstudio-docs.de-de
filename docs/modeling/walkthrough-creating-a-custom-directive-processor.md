@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Direktivenprozessors'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um benutzerdefinierte direktivenprozessoren zum Anpassen von Textvorlagen zu schreiben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532235"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361884"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Direktivenprozessors
 
-*Direktivenprozessoren* funktionieren, indem Sie der *generierten Transformations Klasse*Code hinzufügen. Wenn Sie eine- *Direktive* aus einer *Textvorlage*aufzurufen, kann der Rest des Codes, den Sie in der Textvorlage schreiben, von der Funktionalität abhängen, die die-Direktive bereitstellt.
+*Direktivenprozessoren* funktionieren, indem Sie der *generierten Transformations Klasse* Code hinzufügen. Wenn Sie eine- *Direktive* aus einer *Textvorlage* aufzurufen, kann der Rest des Codes, den Sie in der Textvorlage schreiben, von der Funktionalität abhängen, die die-Direktive bereitstellt.
 
 Sie können eigene benutzerdefinierte Direktivenprozessoren schreiben. Dies ermöglicht Ihnen das Anpassen der Textvorlagen. Zum Erstellen eines benutzerdefinierten Anweisungsprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.
 
@@ -599,7 +601,7 @@ End Property
     End Namespace
     ```
 
-4. Öffnen Sie nur Visual Basic das Menü **Projekt** , und klicken Sie auf **customdp-Eigenschaften**. Löschen Sie auf der Registerkarte **Anwendung** unter Stamm **Namespace**den Standardwert `CustomDP` .
+4. Öffnen Sie nur Visual Basic das Menü **Projekt** , und klicken Sie auf **customdp-Eigenschaften**. Löschen Sie auf der Registerkarte **Anwendung** unter Stamm **Namespace** den Standardwert `CustomDP` .
 
 5. Klicken Sie im Menü **Datei** auf **Alle speichern**.
 
@@ -607,7 +609,7 @@ End Property
 
 ### <a name="build-the-project"></a>Erstellen des Projekts
 
-Erstellen Sie das Projekt. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
+Erstellen Sie das Projekt. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
 ## <a name="register-the-directive-processor"></a>Registrieren des direktivenprozessors
 
@@ -637,9 +639,9 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
 
 1. Führen `regedit` Sie den Befehl über das Startmenü oder die Befehlszeile aus.
 
-2. Navigieren Sie zum Speicherort **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ \* 0 \ texttemplating\directiveprocessor**, und klicken Sie auf den Knoten.
+2. Navigieren Sie zum Speicherort **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* 0 \ texttemplating\directiveprocessor**, und klicken Sie auf den Knoten.
 
-   Verwenden Sie auf 64-Bit-Systemen **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ texttemplating\directiveprozessoren.**
+   Verwenden Sie auf 64-Bit-Systemen **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\ \* . 0 \ texttemplating\directiveprozessoren.**
 
 3. Fügen Sie einen neuen Schlüssel mit dem Namen "CustomDirectiveProcessor" hinzu.
 
@@ -826,15 +828,15 @@ In diesem Beispiel ruft die Textvorlage die Anweisung auf und übergibt im Namen
     > [!NOTE]
     > In diesem Beispiel ist der Wert des `Processor`-Parameters `CustomDirectiveProcessor`. Der Wert des `Processor`-Parameters muss dem Namen des Registrierungsschlüssels des Prozessors entsprechen.
 
-5. Wählen Sie im Menü **Datei** die Option **Alle speichern**aus.
+5. Wählen Sie im Menü **Datei** die Option **Alle speichern** aus.
 
 ### <a name="to-test-the-directive-processor"></a>So testen Sie den Direktivenprozessor
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf TestDP.TT und dann auf **benutzerdefiniertes Tool ausführen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf TestDP.TT und dann auf **benutzerdefiniertes Tool ausführen**.
 
    Für Visual Basic Benutzer werden TestDP.txt möglicherweise standardmäßig nicht in **Projektmappen-Explorer** angezeigt. Um alle dem Projekt zugewiesenen Dateien anzuzeigen, öffnen Sie das Menü **Projekt** , und klicken Sie auf **alle Dateien anzeigen**.
 
-2. Erweitern Sie in **Projektmappen-Explorer**den Knoten TestDP.txt, und doppelklicken Sie dann auf TestDP.txt, um Sie im Editor zu öffnen.
+2. Erweitern Sie in **Projektmappen-Explorer** den Knoten TestDP.txt, und doppelklicken Sie dann auf TestDP.txt, um Sie im Editor zu öffnen.
 
     Die generierte Textausgabe wird angezeigt. Die Ausgabe sollte wie folgt aussehen:
 
@@ -959,8 +961,8 @@ Nachdem Sie den benutzerdefinierten Anweisungsprozessor getestet haben, können 
     </body></html>
     ```
 
-2. Klicken Sie im Menü **Datei** auf **TestDP.txtspeichern **.
+2. Klicken Sie im Menü **Datei** auf **TestDP.txtspeichern**.
 
-3. Wenn Sie die Ausgabe in einem Browser anzeigen möchten, klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf TestDP.htm, und klicken Sie dann auf **in Browser anzeigen**.
+3. Wenn Sie die Ausgabe in einem Browser anzeigen möchten, klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf TestDP.htm, und klicken Sie dann auf **in Browser anzeigen**.
 
    Ihre Ausgabe sollte mit dem ursprünglichen Text übereinstimmen, mit dem Unterschied, dass das HTML-Format verwendet wird. Jeder Elementname wird in Fett Schrift angezeigt.
