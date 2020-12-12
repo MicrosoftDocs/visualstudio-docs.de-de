@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren von Formen und Konnektoren zur Darstellung des Modells
+description: Erfahren Sie, dass Sie in einer domänenspezifischen Sprache in Visual Studio die Darstellung einer Form, die den Zustand des zugrunde liegenden Modells widerspiegelt, festlegen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115028"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362599"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Connectors zur Darstellung des Modells
 
@@ -27,11 +29,11 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Festlegen von Form Zuordnungs Eigenschaften zum Steuern der Sichtbarkeit eines Decorator-Elements
 
-Sie können die Sichtbarkeit eines Decorator-Elements steuern, ohne Programmcode zu schreiben, indem Sie die Zuordnung zwischen der Form und der Domänen Klasse in der DSL-Definition konfigurieren. Weitere Informationen finden Sie unter [Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md).
+Sie können die Sichtbarkeit eines Decorator-Elements steuern, ohne Programmcode zu schreiben, indem Sie die Zuordnung zwischen der Form und der Domänen Klasse in der DSL-Definition konfigurieren. Weitere Informationen finden Sie unter Vorgehens [Weise beim Definieren einer Domain-Specific Sprache](../modeling/how-to-define-a-domain-specific-language.md).
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Die Farbe und den Stil einer Form als Eigenschaften verfügbar machen
 
-Klicken Sie in der DSL- **Definition mit der**rechten Maustaste auf die Shape-Klasse, zeigen Sie auf verfügbar machen, und klicken Sie dann auf eines der Elemente, z. b. **Füllfarbe**.
+Klicken Sie in der DSL- **Definition mit der** rechten Maustaste auf die Shape-Klasse, zeigen Sie auf verfügbar machen, und klicken Sie dann auf eines der Elemente, z. b. **Füllfarbe**.
 
 Die Form verfügt jetzt über eine Domänen Eigenschaft, die Sie im Programmcode oder als Benutzer festlegen können. Wenn Sie diese z. b. im Programmcode eines Befehls oder einer Regel festlegen möchten, können Sie Folgendes schreiben:
 

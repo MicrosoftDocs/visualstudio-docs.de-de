@@ -1,5 +1,7 @@
 ---
 title: Laufzeittextgenerierung mithilfe von T4-Textvorlagen
+description: Erfahren Sie, wie Sie Text Zeichenfolgen in Ihrer Anwendung zur Laufzeit mithilfe von Visual Studio-Lauf Zeit Textvorlagen generieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520834"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363938"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 
@@ -49,13 +51,13 @@ Beachten Sie, dass es sich bei der Vorlage um eine HTML-Seite handelt, in der di
 
 Wenn Sie eine Vorlage in der Anwendung verwenden, ist es einfacher, die endgültige Form der Ausgabe zu sehen, als Sie z. b. eine lange Reihe von Schreib Anweisungen verwenden können. Das vornehmen von Änderungen an der Form der Ausgabe ist einfacher und zuverlässiger.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Erstellen einer Lauf Zeit Text Vorlage in einer beliebigen Anwendung
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Erstellen einer Run-Time Text Vorlage in einer beliebigen Anwendung
 
 ### <a name="to-create-a-run-time-text-template"></a>So erstellen Sie eine Lauf Zeit Textvorlage
 
-1. Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts die Option **Add**  >  **Neues Element**hinzufügen aus.
+1. Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts die Option   >  **Neues Element** hinzufügen aus.
 
-2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Lauf Zeit Text Vorlage**aus. (In Visual Basic unter **Allgemeine Elemente**  >  untersuchen **Allgemein**.)
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Lauf Zeit Text Vorlage** aus. (In Visual Basic unter **Allgemeine Elemente**  >  untersuchen **Allgemein**.)
 
 3. Geben Sie einen Namen für die Vorlagen Datei ein.
 
@@ -64,7 +66,7 @@ Wenn Sie eine Vorlage in der Anwendung verwenden, ist es einfacher, die endgült
 
 4. Wählen Sie **Hinzufügen** aus.
 
-    Eine neue Datei mit der Erweiterung **. tt**wird erstellt. Die **benutzerdefinierte Tool** -Eigenschaft ist auf **texttemplatingfilepreprocessor**festgelegt. Sie enthält die folgenden Zeilen:
+    Eine neue Datei mit der Erweiterung **. tt** wird erstellt. Die **benutzerdefinierte Tool** -Eigenschaft ist auf **texttemplatingfilepreprocessor** festgelegt. Sie enthält die folgenden Zeilen:
 
     ```
     <#@ template language="C#" #>
@@ -74,18 +76,18 @@ Wenn Sie eine Vorlage in der Anwendung verwenden, ist es einfacher, die endgült
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Eine vorhandene Datei in eine Lauf Zeit Vorlage wird umgerechnet
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Eine vorhandene Datei in eine Run-Time Vorlage wird umgerechnet
 
 Eine gute Möglichkeit, eine Vorlage zu erstellen, besteht darin, ein vorhandenes Beispiel der Ausgabe zu konvertieren. Wenn Ihre Anwendung z. b. HTML-Dateien generiert, können Sie zunächst eine einfache HTML-Datei erstellen. Stellen Sie sicher, dass er ordnungsgemäß funktioniert und seine Darstellung korrekt ist. Fügen Sie Sie dann in das Visual Studio-Projekt ein, und konvertieren Sie Sie in eine Vorlage.
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>So konvertieren Sie eine vorhandene Textdatei in eine Lauf Zeit Vorlage
 
-1. Fügen Sie die Datei in Ihr Visual Studio-Projekt ein. Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts **Add**  >  **Vorhandenes Element**hinzufügen aus.
+1. Fügen Sie die Datei in Ihr Visual Studio-Projekt ein. Wählen Sie in Projektmappen-Explorer im Kontextmenü des Projekts   >  **Vorhandenes Element** hinzufügen aus.
 
-2. Legen Sie die Eigenschaft **benutzerdefinierte Tools** der Datei auf **texttemplatingfilepreprocessor**fest. Klicken Sie in Projektmappen-Explorer im Kontextmenü der Datei auf **Eigenschaften**.
+2. Legen Sie die Eigenschaft **benutzerdefinierte Tools** der Datei auf **texttemplatingfilepreprocessor** fest. Klicken Sie in Projektmappen-Explorer im Kontextmenü der Datei auf **Eigenschaften**.
 
     > [!NOTE]
-    > Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass Sie **texttemplatingfilepreprocessor** und nicht **TextTemplatingFileGenerator**ist. Dies kann vorkommen, wenn Sie eine Datei mit der Erweiterung **. tt**einschließen.
+    > Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass Sie **texttemplatingfilepreprocessor** und nicht **TextTemplatingFileGenerator** ist. Dies kann vorkommen, wenn Sie eine Datei mit der Erweiterung **. tt** einschließen.
 
 3. Ändern Sie die Dateinamenerweiterung in **. tt**. Obwohl dieser Schritt optional ist, können Sie die Datei nicht in einem falschen Editor öffnen.
 
@@ -95,7 +97,7 @@ Eine gute Möglichkeit, eine Vorlage zu erstellen, besteht darin, ein vorhandene
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>Der Inhalt der Lauf Zeit Vorlage.
+## <a name="the-content-of-the-run-time-template"></a>Der Inhalt der Run-Time Vorlage
 
 ### <a name="template-directive"></a>Template-Direktive
 
@@ -107,7 +109,7 @@ Der Language-Parameter hängt von der Sprache des Projekts ab.
 
 ### <a name="plain-content"></a>Reiner Inhalt
 
-Bearbeiten Sie die **TT** -Datei so, dass Sie den Text enthält, der von der Anwendung generiert werden soll. Beispiel:
+Bearbeiten Sie die **TT** -Datei so, dass Sie den Text enthält, der von der Anwendung generiert werden soll. Zum Beispiel:
 
 ```html
 <html><body>
@@ -119,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Eingebetteter Programmcode
 
-Sie können Programmcode zwischen `<#` und einfügen `#>` . Beispiel:
+Sie können Programmcode zwischen `<#` und einfügen `#>` . Zum Beispiel:
 
 ```csharp
 <table>
@@ -150,7 +152,7 @@ Beachten Sie, dass-Anweisungen zwischen eingefügt werden `<# ... #>` und Ausdr�
 
 ### <a name="the-code-built-from-the-template"></a>Der aus der Vorlage erstellter Code
 
-Beim Speichern der **TT** -Datei wird eine untergeordnete **CS** -oder **VB** -Datei generiert. Um diese Datei in **Projektmappen-Explorer**anzuzeigen, erweitern Sie den Knoten " **TT** -Datei". Wählen Sie in einem Visual Basic Projekt zuerst in der **Projektmappen-Explorer** Symbolleiste die Option **alle Dateien anzeigen** aus.
+Beim Speichern der **TT** -Datei wird eine untergeordnete **CS** -oder **VB** -Datei generiert. Um diese Datei in **Projektmappen-Explorer** anzuzeigen, erweitern Sie den Knoten " **TT** -Datei". Wählen Sie in einem Visual Basic Projekt zuerst in der **Projektmappen-Explorer** Symbolleiste die Option **alle Dateien anzeigen** aus.
 
 Beachten Sie, dass die Tochter Datei eine partielle Klasse enthält, die eine Methode mit dem Namen enthält `TransformText()` . Diese Methode kann von Ihrer Anwendung aufgerufen werden.
 
@@ -182,7 +184,7 @@ Sie können in einer Textvorlage einen Haltepunkt festlegen. Wenn Sie die Anwend
 
 Normalerweise müssen von einer Vorlage einige Daten aus anderen Teilen der Anwendung importiert werden. Um dies zu vereinfachen, ist der von der Vorlage erstellter Code eine partielle Klasse. Sie können einen anderen Teil derselben Klasse in einer anderen Datei im Projekt erstellen. Diese Datei kann einen Konstruktor mit Parametern, Eigenschaften und Funktionen enthalten, auf die sowohl durch den in der Vorlage eingebetteten Code als auch durch den Rest der Anwendung zugegriffen werden kann.
 
-Beispielsweise können Sie eine separate Datei **MyWebPageCode.cs**erstellen:
+Beispielsweise können Sie eine separate Datei **MyWebPageCode.cs** erstellen:
 
 ```csharp
 partial class MyWebPage
@@ -191,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-In Ihrer Vorlagen Datei **MyWebPage.tt**könnten Sie Folgendes schreiben:
+In Ihrer Vorlagen Datei **MyWebPage.tt** könnten Sie Folgendes schreiben:
 
 ```html
 <h2>Sales figures</h2>
@@ -294,7 +296,7 @@ Der enthaltene Inhalt kann eine beliebige Mischung aus Programmcode und nur-Text
 
 Die include-Direktive kann an beliebiger Stelle im Text einer Vorlagen Datei oder einer enthaltenen Datei verwendet werden.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Vererbung Zwischenlauf Zeit Text Vorlagen
+### <a name="inheritance-between-run-time-text-templates"></a>Vererbung zwischen Run-Time Text Vorlagen
 
 Sie können Inhalte Zwischenlauf Zeit Vorlagen freigeben, indem Sie eine Basisklassen Vorlage schreiben, die abstrakt sein kann. Verwenden Sie den- `inherits` Parameter der `<@#template#>` Direktive, um auf eine andere Lauf Zeit Vorlagen Klasse zu verweisen
 
@@ -310,7 +312,7 @@ Beachten Sie in dem Muster, das im folgenden Beispiel verwendet wird, die folgen
 
 - Die Anwendung ruft die- `TextTransform()` Methode der abgeleiteten Klasse auf, transformiert jedoch nicht die Basisklasse `SharedFragments` .
 
-- Sowohl die Basisklasse als auch die abgeleiteten Klassen sind Lauf Zeit Textvorlagen. Das heißt, die Eigenschaft **benutzerdefinierter Tool** ist auf **texttemplatingfilepreprocessor**festgelegt.
+- Sowohl die Basisklasse als auch die abgeleiteten Klassen sind Lauf Zeit Textvorlagen. Das heißt, die Eigenschaft **benutzerdefinierter Tool** ist auf **texttemplatingfilepreprocessor** festgelegt.
 
 **SharedFragments.tt:**
 
@@ -435,6 +437,6 @@ Lauf Zeit Vorlagen können in jeder Anwendung verwendet werden, in der die Vorla
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)
+- [Code Generierung und T4-Text Vorlagen](../modeling/code-generation-and-t4-text-templates.md)
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
 - [T4-Toolbox](http://olegsych.com/T4Toolbox/)

@@ -1,5 +1,7 @@
 ---
 title: Anpassen von Text- und Image-Feldern
+description: Erfahren Sie mehr über das Anpassen von Text-und Bilddateien. Wenn Sie einen Text-Decorator in einer Form definieren, wird er auch durch ein Textfeld dargestellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542713"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362858"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
 Wenn Sie einen Text-Decorator in einer Form definieren, wird er durch ein Textfeld dargestellt. Beispiele für die Initialisierung von textfields und anderen shapefields-Werten finden Sie unter dsl\generatedcode\shapes.cs in ihrer DSL-Lösung.
@@ -261,7 +263,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)
 - [Festlegen eines Hintergrundbilds für ein Diagramm](../modeling/setting-a-background-image-on-a-diagram.md)

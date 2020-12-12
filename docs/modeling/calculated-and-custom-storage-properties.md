@@ -1,5 +1,7 @@
 ---
 title: Berechnete und benutzerdefinierte Speichereigenschaften
+description: Erfahren Sie, wie dem Benutzer alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) im Diagramm und im sprach-Explorer angezeigt werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115201"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363548"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können dem Benutzer im Diagramm und im sprach-Explorer angezeigt werden, und Sie können über Programmcode darauf zugreifen. Eigenschaften unterscheiden sich jedoch in der Art und Weise, in der ihre Werte gespeichert werden.
@@ -33,24 +35,24 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>So definieren Sie eine berechnete oder benutzerdefinierte Speicher Eigenschaft
 
-1. Wählen Sie in der Datei "DslDefinition. DSL" die Domänen Eigenschaft entweder im Diagramm oder im **DSL-Explorer**aus.
+1. Wählen Sie in der Datei "DslDefinition. DSL" die Domänen Eigenschaft entweder im Diagramm oder im **DSL-Explorer** aus.
 
-2. Legen Sie im Fenster **Eigenschaften** für das Feld **Kind** den Wert **berechneter** oder **benutzerdefinierter Speicher**fest.
+2. Legen Sie im Fenster **Eigenschaften** für das Feld **Kind** den Wert **berechneter** oder **benutzerdefinierter Speicher** fest.
 
      Stellen Sie sicher, dass Sie auch den **Typ** auf den gewünschten Wert festgelegt haben.
 
-3. Klicken Sie in der Symbolleiste von **Projektmappen-Explorer**auf **alle Vorlagen transformieren** .
+3. Klicken Sie in der Symbolleiste von **Projektmappen-Explorer** auf **alle Vorlagen transformieren** .
 
-4. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
+4. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-     Sie erhalten die folgende Fehlermeldung: "*YourClass* enthält keine Definition für get*yourproperty*".
+     Sie erhalten die folgende Fehlermeldung: "*YourClass* enthält keine Definition für get *yourproperty*".
 
 5. Doppelklicken Sie auf die Fehlermeldung.
 
-     "Dsl\generatedcode\domainclasses.cs" oder "DomainRelationships.cs" wird geöffnet. Oberhalb des hervorgehobenen Methoden Aufrufes werden Sie in einem Kommentar aufgefordert, eine Implementierung für get*yourproperty*() bereitzustellen.
+     "Dsl\generatedcode\domainclasses.cs" oder "DomainRelationships.cs" wird geöffnet. Oberhalb des hervorgehobenen Methoden Aufrufes werden Sie in einem Kommentar aufgefordert, eine Implementierung für get *yourproperty*() bereitzustellen.
 
     > [!NOTE]
-    > Diese Datei wird aus "DslDefinition. DSL" generiert. Wenn Sie diese Datei bearbeiten, gehen Ihre Änderungen beim nächsten Klicken auf **alle Vorlagen transformieren**verloren. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.
+    > Diese Datei wird aus "DslDefinition. DSL" generiert. Wenn Sie diese Datei bearbeiten, gehen Ihre Änderungen beim nächsten Klicken auf **alle Vorlagen transformieren** verloren. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.
 
 6. Erstellen oder öffnen Sie eine Klassendatei in einem separaten Ordner, z. b. customcode \\ *yourdomainclass*. cs.
 
@@ -66,7 +68,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
     }  }
     ```
 
-8. Wenn Sie **Art** auf **benutzerdefinierten Speicher**festlegen, müssen Sie auch eine-Methode bereitstellen `Set` . Zum Beispiel:
+8. Wenn Sie **Art** auf **benutzerdefinierten Speicher** festlegen, müssen Sie auch eine-Methode bereitstellen `Set` . Zum Beispiel:
 
     ```
     void SetAgeValue(int value)
@@ -79,7 +81,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
 
 9. Erstellen Sie das Projekt, und führen Sie es aus.
 
-10. Testen Sie die-Eigenschaft. Stellen Sie sicher, dass Sie **Rückgängig** und wieder **holen**versuchen.
+10. Testen Sie die-Eigenschaft. Stellen Sie sicher, dass Sie **Rückgängig** und wieder **holen** versuchen.
 
 ## <a name="transactions-and-custom-setters"></a><a name="setters"></a> Transaktionen und benutzerdefinierte Setter
  In der Set-Methode der Custom Storage-Eigenschaft muss keine Transaktion geöffnet werden, da die-Methode in der Regel innerhalb einer aktiven Transaktion aufgerufen wird.
@@ -107,7 +109,7 @@ void SetAgeValue(int value)
 
  Weitere Informationen zu Transaktionen finden Sie unter [navigieren und Aktualisieren eines Modells im Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Eigenschaften von Domäneneigenschaften](../modeling/properties-of-domain-properties.md)

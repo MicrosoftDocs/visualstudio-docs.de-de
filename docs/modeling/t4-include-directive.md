@@ -1,5 +1,7 @@
 ---
 title: T4-Include-Direktive
+description: 'In einer Textvorlage in Visual Studio können Sie Text aus einer anderen Datei einschließen, indem Sie eine < # @include # >-Direktive verwenden.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825beee156c3de0e29e561817663c0f7731840dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591852"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363652"
 ---
 # <a name="t4-include-directive"></a>T4-Include-Direktive
 
@@ -30,7 +32,7 @@ In einer Textvorlage in Visual Studio können Sie Text aus einer anderen Datei m
 
    Diese zusätzlichen Includeordner können von der Dateierweiterung der einschließenden Datei abhängen. Zum Beispiel können nur einschließende Dateien mit der Dateierweiterung `.tt` auf den Includeordner der DSL-Tools zugreifen.
 
-- `filePath` kann durch "%" begrenzte Umgebungsvariablen einschließen. Beispiel:
+- `filePath` kann durch "%" begrenzte Umgebungsvariablen einschließen. Zum Beispiel:
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>

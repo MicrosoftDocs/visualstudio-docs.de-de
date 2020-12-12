@@ -1,5 +1,7 @@
 ---
 title: Regeln propagieren Änderungen im Modell
+description: Erfahren Sie, wie Sie eine Geschäftsregel erstellen können, um eine Änderung von einem Element zu einem anderen im Visualisierungs-und Modellierungs-SDK (vmsdk) weiterzugeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050fe0ea2d1a9bb0bf278c13c2beb587412c643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542557"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363951"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regeln propagieren Änderungen im Modell
 Sie können eine Speicher Regel erstellen, um eine Änderung von einem Element zu einem anderen im Visualisierungs-und Modellierungs-SDK (vmsdk) weiterzugeben. Wenn eine Änderung an einem Element im Speicher vorgenommen wird, werden die Regeln für die Ausführung geplant, in der Regel, wenn für die äußerste Transaktion ein Commit ausgeführt wird. Es gibt verschiedene Typen von Regeln für verschiedene Arten von Ereignissen, z. b. das Hinzufügen eines Elements oder das Löschen. Sie können Regeln an bestimmte Typen von Elementen, Formen oder Diagrammen anfügen. Viele integrierte Funktionen werden durch Regeln definiert: beispielsweise stellen Regeln sicher, dass ein Diagramm aktualisiert wird, wenn sich das Modell ändert. Sie können Ihre domänenspezifische Sprache anpassen, indem Sie Ihre eigenen Regeln hinzufügen.
@@ -207,6 +209,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)

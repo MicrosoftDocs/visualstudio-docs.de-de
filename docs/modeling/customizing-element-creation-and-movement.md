@@ -1,5 +1,7 @@
 ---
 title: Anpassen der Elementerstellung und -verschiebung
+description: Erfahren Sie, wie Sie zulassen können, dass ein Element entweder aus der Toolbox oder durch einen Einfüge-oder verschiebe Vorgang auf ein anderes gezogen wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547263"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363119"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 
@@ -97,7 +99,7 @@ Benutzer können Elemente auch in andere Elemente einfügen.
 
     Beachten Sie, dass die Indizierungs Klasse der Name der EMD im DSL-Explorer wird.
 
-4. Fügen Sie unter **Prozess Zusammenführung durch Erstellen von Verknüpfungen**zwei Pfade hinzu:
+4. Fügen Sie unter **Prozess Zusammenführung durch Erstellen von Verknüpfungen** zwei Pfade hinzu:
 
    - Ein Pfad verknüpft das neue Element mit dem übergeordneten Modell. Der Pfad Ausdruck, der durch die Embedding Relationship zum übergeordneten Modell navigiert werden soll. Schließlich wird die Rolle in der neuen Verknüpfung angegeben, der das neue Element zugewiesen wird. Der Pfad lautet wie folgt:
 
@@ -155,7 +157,7 @@ Durch Hinzufügen von benutzerdefiniertem Code zu einer EMD können Sie ein komp
 
      Diese EMD steuert, wie der Benutzer neue `ExampleElement` Objekte im Modell erstellen kann, z. b. durchziehen aus der Toolbox.
 
-3. Wählen Sie im Fenster **DSL-Details** die Option **verwendet benutzerdefiniertes akzeptieren**aus.
+3. Wählen Sie im Fenster **DSL-Details** die Option **verwendet benutzerdefiniertes akzeptieren** aus.
 
 4. Generieren Sie die Projektmappe neu. Dies dauert länger als üblich, da der generierte Code aus dem Modell aktualisiert wird.
 
@@ -200,7 +202,7 @@ Durch Hinzufügen von benutzerdefiniertem Code zu einer EMD können Sie ein komp
 
         - Ziehen Sie aus dem **Beispiel Element** Tool auf das Diagramm.
 
-        - Klicken Sie im **Beispielmodell-Explorer**mit der rechten Maustaste auf den Stamm Knoten, und klicken Sie dann auf **Neues Beispiel Element hinzufügen**.
+        - Klicken Sie im **Beispielmodell-Explorer** mit der rechten Maustaste auf den Stamm Knoten, und klicken Sie dann auf **Neues Beispiel Element hinzufügen**.
 
         - Kopieren Sie ein Element, und fügen Sie es in das Diagramm ein.
 
@@ -224,13 +226,13 @@ In benutzerdefiniertem mergecode können Sie definieren, was geschieht, wenn der
 
      Wählen Sie z. b. in einer von der Lösung mit minimaler Sprache generierten DSL aus `ExampleModel` .
 
-3. Legen Sie im Fenster **Eigenschaften** die Eigenschaft wird von **Double abgeleitet** auf **true**festgelegt fest.
+3. Legen Sie im Fenster **Eigenschaften** die Eigenschaft wird von **Double abgeleitet** auf **true** festgelegt fest.
 
 4. Generieren Sie die Projektmappe neu.
 
 5. Überprüfen Sie den Inhalt von " **dsl\generated files\domainclasses.cs**". Suchen Sie nach Methoden mit dem Namen, `MergeRelate` und überprüfen Sie Ihren Inhalt Dies hilft Ihnen beim Schreiben Ihrer eigenen Versionen.
 
-6. Schreiben Sie in einer neuen Codedatei eine partielle Klasse für die empfangende Klasse, und überschreiben Sie die- `MergeRelate` Methode. Denken Sie daran, die Basis Methode aufzurufen. Beispiel:
+6. Schreiben Sie in einer neuen Codedatei eine partielle Klasse für die empfangende Klasse, und überschreiben Sie die- `MergeRelate` Methode. Denken Sie daran, die Basis Methode aufzurufen. Zum Beispiel:
 
     ```csharp
     partial class ExampleModel
@@ -258,11 +260,11 @@ In benutzerdefiniertem mergecode können Sie definieren, was geschieht, wenn der
 
 ### <a name="to-write-custom-merge-code"></a>So schreiben Sie benutzerdefinierten zusammenschreibungs Code
 
-1. Überprüfen Sie unter **dsl\generated code\domainclasses.cs**die Methoden mit dem Namen `MergeRelate` . Diese Methoden erstellen Verknüpfungen zwischen einem neuen Element und dem vorhandenen Modell.
+1. Überprüfen Sie unter **dsl\generated code\domainclasses.cs** die Methoden mit dem Namen `MergeRelate` . Diese Methoden erstellen Verknüpfungen zwischen einem neuen Element und dem vorhandenen Modell.
 
     Überprüfen Sie außerdem die Methoden mit dem Namen `MergeDisconnect` . Diese Methoden aufheben die Verknüpfung eines Elements aus dem Modell, wenn es gelöscht werden soll.
 
-2. Wählen Sie im **DSL-Explorer**die elementmerge-Direktive aus, die Sie anpassen möchten, oder erstellen Sie Sie. Legen Sie im Fenster **DSL-Details** den Wert **benutzerdefinierte**Zusammenführung fest.
+2. Wählen Sie im **DSL-Explorer** die elementmerge-Direktive aus, die Sie anpassen möchten, oder erstellen Sie Sie. Legen Sie im Fenster **DSL-Details** den Wert **benutzerdefinierte** Zusammenführung fest.
 
     Wenn Sie diese Option festlegen, werden die mergeoptionen zusammen **führen** und **weiterleiten** ignoriert. Der Code wird stattdessen verwendet.
 
@@ -296,11 +298,11 @@ Sie können eine Forward-Merge-Direktive in der Komponentenmodell-Projekt Mappe 
 
 5. Wählen Sie den Knoten **elementmerge-Anweisung** aus, und öffnen Sie das Fenster **DSL-Details** .
 
-6. Wählen Sie in der Liste Indizierungs Klasse die Option **componentport**aus.
+6. Wählen Sie in der Liste Indizierungs Klasse die Option **componentport** aus.
 
-7. Wählen Sie zusammen **führen in eine andere Domänen Klasse weiterleiten**aus.
+7. Wählen Sie zusammen **führen in eine andere Domänen Klasse weiterleiten** aus.
 
-8. Erweitern Sie in der Liste Pfad Auswahl den Eintrag **componentport**, **componenthasports**, und wählen Sie dann **Component**aus.
+8. Erweitern Sie in der Liste Pfad Auswahl den Eintrag **componentport**, **componenthasports**, und wählen Sie dann **Component** aus.
 
     Der neue Pfad sollte diesem ähneln:
 
@@ -310,7 +312,7 @@ Sie können eine Forward-Merge-Direktive in der Komponentenmodell-Projekt Mappe 
 
 10. Erstellen Sie das Projekt, und führen Sie es aus. Eine neue Instanz von Visual Studio wird angezeigt.
 
-11. Öffnen Sie in **Projektmappen-Explorer**Sample. myDSL. Das Diagramm und die **Komponenten Toolbox** werden angezeigt.
+11. Öffnen Sie in **Projektmappen-Explorer** Sample. myDSL. Das Diagramm und die **Komponenten Toolbox** werden angezeigt.
 
 12. Ziehen Sie einen **eingabeport** aus der **Toolbox** auf einen anderen **eingabeport.** Ziehen Sie als nächstes einen **outputport** auf einen **inputport** und dann auf einen anderen **outputport**.
 

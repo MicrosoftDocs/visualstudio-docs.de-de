@@ -1,5 +1,7 @@
 ---
 title: So definieren Sie eine domänenspezifische Sprache
+description: Erfahren Sie, wie Sie eine Visual Studio-Projekt Mappe aus einer Vorlage erstellen, um eine domänenspezifische Sprache (DSL) zu definieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,17 +18,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9cc6b853ea95cedcb0ce109b9618fc0eb455ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542752"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363314"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine Visual Studio-Projekt Mappe aus einer Vorlage. Der zentrale Bestandteil der Projektmappe ist das DSL-Definitionsdiagramm, das in "DslDefinition.dsl" gespeichert wird. Die DSL-Definition definiert die Klassen und Formen der DSL. Nachdem Sie diese Elemente geändert und weitere hinzugefügt haben, können Sie Programmcode hinzufügen, um die DSL weiter anzupassen.
 
-Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab**arbeiten, die Sie auf dieser Website finden: [Visualisierung und Modellierungs-SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) .
+Wenn Sie noch nicht mit DSLs vertraut sind, empfiehlt es sich, dass Sie über die **DSL Tools Lab** arbeiten, die Sie auf dieser Website finden: [Visualisierung und Modellierungs-SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) .
 
 ## <a name="selecting-a-template-solution"></a><a name="templates"></a> Auswählen einer Vorlagen Lösung
 
@@ -38,7 +40,7 @@ Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue Visual Studio-Projekt Mappe mithilfe der Projektvorlage für eine domänenspezifische Sprache.
+Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue Visual Studio-Projekt Mappe mithilfe der Projektvorlage Domain-Specific-Sprache.
 
 ### <a name="to-create-a-dsl-solution"></a>So erstellen Sie eine DSL-Projektmappe
 
@@ -88,7 +90,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
    ![DSL-Designer](../modeling/media/dsl_designer.png)
 
-   Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Übersicht über die DSL-Tools-Benutzeroberfläche](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+   Diese Projektmappe definiert eine domänenspezifische Sprache. Weitere Informationen finden Sie unter [Übersicht über die Benutzeroberfläche der Domain-Specific-Sprach Tools](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ### <a name="test-the-solution"></a>Testen der Projektmappe
  Die Vorlagenprojektmappe enthält eine funktionsfähige DSL, die Sie ändern oder direkt verwenden können.
@@ -113,9 +115,9 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Die Beibehaltung der folgenden Klassen ist besonders sinnvoll:
 
-- Die Stamm Klasse wird links oben im DSL-Definitions Diagramm unter **Klassen und Beziehungen**angezeigt. Benennen Sie sie in einen von der DSL verschiedenen Namen um. Beispielsweise könnte eine DSL mit dem Namen " **musiclibrary** " eine Stamm Klasse mit dem Namen " **Music**" aufweisen.
+- Die Stamm Klasse wird links oben im DSL-Definitions Diagramm unter **Klassen und Beziehungen** angezeigt. Benennen Sie sie in einen von der DSL verschiedenen Namen um. Beispielsweise könnte eine DSL mit dem Namen " **musiclibrary** " eine Stamm Klasse mit dem Namen " **Music**" aufweisen.
 
-- Die Diagramm Klasse wird in der Spalte **Diagramm Elemente** in der unteren rechten Ecke des DSL-Definitions Diagramms angezeigt. Möglicherweise müssen Sie einen Bildlauf nach rechts durchführen, um sie zu sehen. Sie wird in der Regel als _yourdsl_-**Diagramm**bezeichnet.
+- Die Diagramm Klasse wird in der Spalte **Diagramm Elemente** in der unteren rechten Ecke des DSL-Definitions Diagramms angezeigt. Möglicherweise müssen Sie einen Bildlauf nach rechts durchführen, um sie zu sehen. Sie wird in der Regel als _yourdsl_-**Diagramm** bezeichnet.
 
 - Wenn Sie die **Task Fluss** Vorlage verwendet haben und Diagramme mit Verantwortlichkeits Bereichen erstellen möchten, müssen Sie die Actor-Domänen Klasse und die actorswimlane-Form beibehalten und umbenennen.
 
@@ -199,7 +201,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Klicken Sie auf das **Vererbungs** Tool, klicken Sie auf die abgeleitete Klasse und dann auf die Basisklasse.
 
- Legen Sie den **Vererbungsmodifizierer** der Basisklasse auf **abstract**fest. Wenn Sie voraussichtlich Instanzen der Basisklasse benötigen, können Sie stattdessen eine gesonderte abgeleitete Klasse für diese erstellen.
+ Legen Sie den **Vererbungsmodifizierer** der Basisklasse auf **abstract** fest. Wenn Sie voraussichtlich Instanzen der Basisklasse benötigen, können Sie stattdessen eine gesonderte abgeleitete Klasse für diese erstellen.
 
  Abgeleitete Klassen erben die Eigenschaften und Rollen ihrer Basisklassen.
 
@@ -220,7 +222,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
      Im Explorer wird eine Strukturansicht des Modells dargestellt.
 
-4. **Erstellen Sie neue Elemente.** Klicken Sie mit der rechten Maustaste auf den Stamm Knoten, und klicken Sie dann auf neue_YourClass_ **Hinzufügen**.
+4. **Erstellen Sie neue Elemente.** Klicken Sie mit der rechten Maustaste auf den Stamm Knoten, und klicken Sie dann auf neue _YourClass_ **Hinzufügen**.
 
      Im Sprach-Explorer wird eine neue Instanz Ihrer Klasse angezeigt.
 
@@ -267,7 +269,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
     Sie benötigen wahrscheinlich mindestens ein Text-Decorator-Element, um den Namen oder Titel des Modellelements anzuzeigen.
 
-    Klicken Sie mit der rechten Maustaste auf den Header der Shape-Klasse, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Text Decorator**. Legen Sie den Namen des Decorators fest, und legen Sie im Eigenschaftenfenster seine **Position**fest.
+    Klicken Sie mit der rechten Maustaste auf den Header der Shape-Klasse, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Text Decorator**. Legen Sie den Namen des Decorators fest, und legen Sie im Eigenschaftenfenster seine **Position** fest.
 
 5. **Verbinden Sie jede Form mit einer Diagramm Element Zuordnung mit der Domänen Klasse, die angezeigt werden soll**.
 
@@ -279,7 +281,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
    2. Klicken Sie im Fenster **DSL-Details** auf die Registerkarte **Decorator** -Zuordnungen. Wenn das Fenster **DSL-Details** nicht angezeigt wird, zeigen Sie im Menü **Ansicht** auf **Weitere Fenster** , und klicken Sie dann auf DSL- **Details**. Häufig muss der obere Rand des Fensters angehoben werden, um den gesamten Inhalt anzuzeigen.
 
-   3. Wählen Sie den Namen eines Decorator-Elements aus. Wählen Sie unter **Anzeige Eigenschaft**den Namen einer Eigenschaft der Domänen Klasse aus. Wiederholen Sie dies für jedes Decorator-Element.
+   3. Wählen Sie den Namen eines Decorator-Elements aus. Wählen Sie unter **Anzeige Eigenschaft** den Namen einer Eigenschaft der Domänen Klasse aus. Wiederholen Sie dies für jedes Decorator-Element.
 
        Wenn Sie eine Eigenschaft eines verknüpften Elements anzeigen möchten, klicken Sie auf den Dropdown-Struktur Navigator unter **Pfad zum Anzeigen der Eigenschaft**.
 
@@ -289,22 +291,22 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 7. **Erstellen Sie ein Werkzeugkastenelement zum Erstellen von Elementen der Domänenklasse.**
 
-   1. Erweitern Sie im **DSL-Explorer**den Knoten **Editor** und alle zugehörigen untergeordneten Knoten.
+   1. Erweitern Sie im **DSL-Explorer** den Knoten **Editor** und alle zugehörigen untergeordneten Knoten.
 
    2. Klicken Sie mit der rechten Maustaste auf den Knoten unter **Toolbox-Registerkarten** mit dem gleichen Namen wie Ihre DSL, z. b. "musiclibrary". Klicken Sie auf **Element hinzufügen**.
 
        > [!NOTE]
-       > Wenn Sie **mit der rechten** Maustaste auf den Knoten Extras klicken, wird das **Tool Add Element**nicht angezeigt. Klicken Sie stattdessen auf den übergeordneten Knoten.
+       > Wenn Sie **mit der rechten** Maustaste auf den Knoten Extras klicken, wird das **Tool Add Element** nicht angezeigt. Klicken Sie stattdessen auf den übergeordneten Knoten.
 
    3. Legen Sie im Eigenschaftenfenster mit ausgewähltem Tool neues Element die **Klasse** auf die Domänen Klasse fest, die Sie kürzlich hinzugefügt haben.
 
-   4. Legen **Caption** Sie Beschriftung **und**QuickInfo fest.
+   4. Legen  Sie Beschriftung **und** QuickInfo fest.
 
    5. Legen Sie **Toolbox Symbol** auf ein Symbol fest, das in der Toolbox angezeigt wird. Sie können ein neues Symbol oder ein bereits für ein anderes Werkzeug verwendetes Symbol angeben.
 
         Um ein neues Symbol zu erstellen, öffnen Sie dsl\resources in **Projektmappen-Explorer**. Kopieren Sie eine der vorhandenen BMP-Dateien für Elementwerkzeuge, und fügen Sie sie ein. Benennen Sie die eingefügte Kopie um, und doppelklicken Sie dann darauf, um sie zu öffnen.
 
-        Kehren Sie zum DSL-Definitions Diagramm zurück, wählen Sie das Tool aus, und klicken Sie in der Eigenschaftenfenster im **Toolbox Symbol**auf **[...]** . Wählen Sie im Dialogfeld **Bitmap auswählen** ihre aus. BMP-Datei aus dem Dropdown Menü.
+        Kehren Sie zum DSL-Definitions Diagramm zurück, wählen Sie das Tool aus, und klicken Sie in der Eigenschaftenfenster im **Toolbox Symbol** auf **[...]** . Wählen Sie im Dialogfeld **Bitmap auswählen** ihre aus. BMP-Datei aus dem Dropdown Menü.
 
    Weitere Informationen finden Sie unter [Eigenschaften von Geometrie Formen](../modeling/properties-of-geometry-shapes.md) und [Eigenschaften von Bildformen](../modeling/properties-of-image-shapes.md).
 
@@ -324,7 +326,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
    2. Wenn Sie die Eigenschaft im Eigenschaftenfenster oder im Decorator bearbeiten, wird die jeweils andere Ansicht aktualisiert.
 
-   Nach dem ersten Test einer Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Nach dem ersten Test einer Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ## <a name="defining-reference-relationships"></a><a name="references"></a> Definieren von Verweis Beziehungen
  Sie können eine Verweisbeziehung zwischen einer Quelldomänenklasse und einer Zieldomänenklasse definieren. Verweisbeziehungen werden in einem Diagramm üblicherweise als Konnektoren, also als Linien zwischen Formen, angezeigt.
@@ -374,7 +376,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Führen Sie, während das neue Werkzeug ausgewählt ist, im Eigenschaftenfenster Folgendes aus:
 
-- Legen Sie **Beschriftung** und **Tooltip**QuickInfo fest.
+- Legen Sie **Beschriftung** und QuickInfo fest.
 
 - Klicken Sie auf **Verbindungs** -Generator, und wählen Sie den entsprechenden Generator für die neue Beziehung aus.
 
@@ -382,7 +384,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
      Um ein neues Symbol zu erstellen, öffnen Sie dsl\resources in **Projektmappen-Explorer**. Kopieren Sie eine der vorhandenen BMP-Dateien für Elementwerkzeuge, und fügen Sie sie ein. Benennen Sie die eingefügte Kopie um, und doppelklicken Sie dann darauf, um sie zu öffnen.
 
-     Kehren Sie zum DSL-Definitions Diagramm zurück, wählen Sie das Tool aus, und klicken Sie in der Eigenschaftenfenster im **Toolbox Symbol**auf **[...]** . Wählen Sie im Dialogfeld **Bitmap auswählen** ihre aus. BMP-Datei aus dem Dropdown Menü.
+     Kehren Sie zum DSL-Definitions Diagramm zurück, wählen Sie das Tool aus, und klicken Sie in der Eigenschaftenfenster im **Toolbox Symbol** auf **[...]** . Wählen Sie im Dialogfeld **Bitmap auswählen** ihre aus. BMP-Datei aus dem Dropdown Menü.
 
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>So testen Sie eine Verweisbeziehung und einen Konnektor
 
@@ -406,7 +408,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
    2. Wenn Sie die Eigenschaft im Eigenschaftenfenster oder im Decorator bearbeiten, wird die jeweils andere Ansicht aktualisiert.
 
-   Nach dem ersten Test eines Konnektors möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Nach dem ersten Test eines Konnektors möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a> Definieren von Formen, die Listen enthalten: Depot-Formen
  Eine Depot-Form enthält mindestens eine Liste von Elementen. In einer DSL für eine Musikbibliothek würden Sie z. B. Depot-Formen verwenden, um Musikalben darzustellen. Jedes Album enthält eine Liste von Songs.
@@ -435,11 +437,11 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
      Fügen Sie eine weitere Domänenklasse für Listenelemente jeder Liste hinzu, die Sie anzeigen möchten.
 
-3. **Um mehrere Elementtypen in der Liste zu mischen**, erstellen Sie Klassen, die von der List-Klasse erben. Legen Sie den **Vererbungsmodifizierer**als abstrakte Klasse fest.
+3. **Um mehrere Elementtypen in der Liste zu mischen**, erstellen Sie Klassen, die von der List-Klasse erben. Legen Sie den **Vererbungsmodifizierer** als abstrakte Klasse fest.
 
      Möchten Sie beispielsweise klassische Musik nach Komponisten statt nach Interpreten sortieren, könnten Sie zwei Unterklassen von Song erstellen: ClassicalSong und NonClassicalSong.
 
-4. **Erstellen Sie die**Depot-Form. Ziehen Sie aus dem Depot- **Shape** -Tool auf das DSL-Definitions Diagramm.
+4. **Erstellen Sie die** Depot-Form. Ziehen Sie aus dem Depot- **Shape** -Tool auf das DSL-Definitions Diagramm.
 
      Fügen Sie ein Text-Decorator-Element hinzu, und legen Sie seinen Namen fest.
 
@@ -451,15 +453,15 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 7. Wählen Sie den Diagrammelementzuordnungs-Link zwischen der Domänenklasse und der Form aus. Im Fenster " **DSL-Details** ":
 
-    1. Klicken Sie auf die Registerkarte **Decorators** . Klicken Sie auf den Namen des Decorator-Elements, und wählen Sie dann das entsprechende Element unter **Anzeige Eigenschaft**aus. Stellen Sie sicher, dass neben dem Namen des Decorator-Elements ein Häkchen angezeigt wird.
+    1. Klicken Sie auf die Registerkarte **Decorators** . Klicken Sie auf den Namen des Decorator-Elements, und wählen Sie dann das entsprechende Element unter **Anzeige Eigenschaft** aus. Stellen Sie sicher, dass neben dem Namen des Decorator-Elements ein Häkchen angezeigt wird.
 
     2. Klicken Sie **auf die Register** Karte Depot Zuordnungen.
 
          Klicken Sie auf den Namen des Depots.
 
-         Navigieren Sie unter **Angezeigter**Element Auflistungs Pfad zur List-Element Klasse (Song). Klicken Sie auf den Dropdownpfeil, um das Navigatorwerkzeug zu verwenden.
+         Navigieren Sie unter **Angezeigter** Element Auflistungs Pfad zur List-Element Klasse (Song). Klicken Sie auf den Dropdownpfeil, um das Navigatorwerkzeug zu verwenden.
 
-         Wählen Sie unter **Anzeige Eigenschaft**die Eigenschaft aus, die in der Liste angezeigt werden soll. Im Beispiel ist dies "Titel".
+         Wählen Sie unter **Anzeige Eigenschaft** die Eigenschaft aus, die in der Liste angezeigt werden soll. Im Beispiel ist dies "Titel".
 
 > [!NOTE]
 > Mithilfe der Pfadfelder in der Decorator-Zuordnung und der Depot-Zuordnung können Sie komplexere Beziehungen zwischen der Domänenklasse und der Depot-Form erstellen.
@@ -468,22 +470,22 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 1. **Erstellen Sie ein Werkzeugkastenelement zum Erstellen von Elementen der Domänenklasse.**
 
-2. Erweitern Sie im **DSL-Explorer**den Knoten **Editor** und alle zugehörigen untergeordneten Knoten.
+2. Erweitern Sie im **DSL-Explorer** den Knoten **Editor** und alle zugehörigen untergeordneten Knoten.
 
 3. Klicken Sie mit der rechten Maustaste auf den Knoten unter **Toolbox-Registerkarten** mit dem gleichen Namen wie Ihre DSL, z. b. "musiclibrary". Klicken Sie auf **Element hinzufügen**.
 
     > [!NOTE]
-    > Wenn Sie **mit der rechten** Maustaste auf den Knoten Extras klicken, wird das **Tool Add Element**nicht angezeigt. Klicken Sie stattdessen auf den übergeordneten Knoten.
+    > Wenn Sie **mit der rechten** Maustaste auf den Knoten Extras klicken, wird das **Tool Add Element** nicht angezeigt. Klicken Sie stattdessen auf den übergeordneten Knoten.
 
 4. Legen Sie im Eigenschaftenfenster mit ausgewähltem Tool neues Element die **Klasse** auf die Domänen Klasse fest, die Sie kürzlich hinzugefügt haben.
 
-5. Legen **Caption** Sie Beschriftung **und**QuickInfo fest.
+5. Legen  Sie Beschriftung **und** QuickInfo fest.
 
 6. Legen Sie **Toolbox Symbol** auf ein Symbol fest, das in der Toolbox angezeigt wird. Sie können ein neues Symbol oder ein bereits für ein anderes Werkzeug verwendetes Symbol angeben.
 
      Um ein neues Symbol zu erstellen, öffnen Sie dsl\resources in **Projektmappen-Explorer**. Kopieren Sie eine der vorhandenen BMP-Dateien für Elementwerkzeuge, und fügen Sie sie ein. Benennen Sie die eingefügte Kopie um, und doppelklicken Sie dann darauf, um sie zu öffnen.
 
-     Kehren Sie zum DSL-Definitions Diagramm zurück, wählen Sie das Tool aus, und klicken Sie in der Eigenschaftenfenster im **Toolbox Symbol**auf **[...]** . Wählen Sie im Dialogfeld **Bitmap auswählen** ihre BMP-Datei aus dem Dropdown Menü aus.
+     Kehren Sie zum DSL-Definitions Diagramm zurück, wählen Sie das Tool aus, und klicken Sie in der Eigenschaftenfenster im **Toolbox Symbol** auf **[...]** . Wählen Sie im Dialogfeld **Bitmap auswählen** ihre BMP-Datei aus dem Dropdown Menü aus.
 
 #### <a name="to-test-a-compartment-shape"></a>So testen Sie eine Depot-Form
 
@@ -507,7 +509,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
    ![Generierter Explorer für DSL](../modeling/media/music_explorer.png)
 
-   Nach dem ersten Test einer Depot-Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Nach dem ersten Test einer Depot-Form möchten Sie unter Umständen einige Eigenschaften anpassen und erweiterte Features hinzufügen. Weitere Informationen finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>Anzeigen eines Verweislinks in einem Depot
  Normalerweise ist ein in einem Depot angezeigtes Element ein untergeordnetes Element des Elements, das durch die Depot-Form dargestellt wird. Aber manchmal soll ein Element angezeigt werden, das durch eine Verweisbeziehung damit verbunden ist.
@@ -577,14 +579,14 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Um eine Domänen Enumeration hinzuzufügen, klicken Sie im **DSL-Explorer** mit der rechten Maustaste auf den Stamm des Modells, und klicken Sie dann auf **neue Domänen Enumeration hinzufügen**. Das-Element wird im **DSL-Explorer** unter dem Knoten **Domänen Typen** angezeigt. Das Element erscheint nicht im Diagramm.
 
- Um der Domänen Enumeration enumerationsliterale hinzuzufügen, klicken Sie mit der rechten Maustaste auf die Domänen Enumeration im **DSL-Explorer** , und klicken Sie dann auf **Neues**enumerationsliteralelement
+ Um der Domänen Enumeration enumerationsliterale hinzuzufügen, klicken Sie mit der rechten Maustaste auf die Domänen Enumeration im **DSL-Explorer** , und klicken Sie dann auf **Neues** enumerationsliteralelement
 
  Eine Eigenschaft, die einen Enumerationstyp besitzt, kann standardmäßig jeweils nur auf einen Wert der Enumeration festgelegt werden. Wenn Sie möchten, dass Benutzer und Programmierer eine beliebige Kombination von Werten festlegen können (ein "Bitfeld"), legen Sie die **isFlags** -Eigenschaft der Enumeration fest.
 
 ### <a name="external-types"></a>Externe Typen
  Wenn Sie den Typ einer Domänen Eigenschaft festlegen und den gewünschten Typ nicht in der Dropdown Liste **Typ** finden, können Sie einen externen Typ hinzufügen. Beispielsweise können Sie den Typ " **System. Drawing. Color** " der Liste hinzufügen.
 
- Um einen Typ hinzuzufügen, klicken Sie im DSL-Explorer mit der rechten Maustaste auf den Stamm des Modells, und klicken Sie dann auf **neuen externen Typ hinzufügen**. Legen Sie in der Eigenschaftenfenster den Namen auf " **Color** " und den Namespace auf " **System. Drawing**" fest. Dieser Typ wird jetzt im DSL-Explorer unter **Domänen Typen**angezeigt. Sie können ihn immer auswählen, wenn Sie den Typ einer Domäneneigenschaft festlegen.
+ Um einen Typ hinzuzufügen, klicken Sie im DSL-Explorer mit der rechten Maustaste auf den Stamm des Modells, und klicken Sie dann auf **neuen externen Typ hinzufügen**. Legen Sie in der Eigenschaftenfenster den Namen auf " **Color** " und den Namespace auf " **System. Drawing**" fest. Dieser Typ wird jetzt im DSL-Explorer unter **Domänen Typen** angezeigt. Sie können ihn immer auswählen, wenn Sie den Typ einer Domäneneigenschaft festlegen.
 
 ## <a name="customizing-the-dsl"></a><a name="custom"></a> Anpassen der DSL
  Mit den hier beschriebenen Verfahren können Sie schnell eine DSL mit einer Diagrammdarstellung, einem lesbaren XML-Format und den grundlegenden Tools erstellen, mit denen Code und andere Artefakte generiert werden.
@@ -593,9 +595,9 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 1. Optimieren Sie die DSL, indem Sie weitere Features in der DSL-Definition verwenden. Sie können beispielsweise ein einzelnes Konnektorwerkzeug erstellen, das verschiedene Typen von Konnektoren generieren kann, und Sie können die Regeln steuern, nach denen beim Löschen eines Elements auch verwandte Elemente gelöscht werden. Diese Verfahren bestehen meist im Festlegen von Werten in der DSL-Definition. Manche erfordern auch einige Zeilen Programmcode.
 
-     Weitere Informationen finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+     Weitere Informationen finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-2. Erweitern Sie Ihre Modellierungstools mit Programmcode, um kompliziertere Effekte zu erzielen. So können Sie z. B. Menübefehle erstellen, die das Modell ändern, und Sie können Tools erstellen, in denen zwei oder mehr DSLs integriert sind. VMSDK wurde speziell dafür entwickelt, die Integration Ihrer Erweiterungen in den Code zu vereinfachen, der aus der DSL-Definition generiert wird.  Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+2. Erweitern Sie Ihre Modellierungstools mit Programmcode, um kompliziertere Effekte zu erzielen. So können Sie z. B. Menübefehle erstellen, die das Modell ändern, und Sie können Tools erstellen, in denen zwei oder mehr DSLs integriert sind. VMSDK wurde speziell dafür entwickelt, die Integration Ihrer Erweiterungen in den Code zu vereinfachen, der aus der DSL-Definition generiert wird.  Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer Domain-Specific Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ### <a name="changing-the-dsl-definition"></a>Ändern der DSL-Definition
  Wenn Sie ein Element in einer DSL-Definition erstellen, werden viele Standardwerte automatisch festgelegt. Diese Werte können Sie anschließend ändern. Dies vereinfacht die Entwicklung einer DSL und ermöglicht gleichzeitig wirkungsvolle Anpassungen.
@@ -604,7 +606,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
  Daher sollten Sie damit rechnen, dass nach einer Änderung von Beziehungen in der DSL-Definition häufig Fehler gemeldet werden, wenn Sie die Definition speichern oder "Alle Vorlagen transformieren" verwenden. Die meisten dieser Fehler sind leicht zu beheben. Doppelklicken Sie auf den Fehlerbericht, um den Ort des Fehlers zu ermitteln.
 
- Siehe auch Gewusst [wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Weitere Informationen finden Sie unter Vorgehens [Weise: Ändern des Namespace einer Domain-Specific Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="troubleshooting"></a><a name="trouble"></a> Problembehandlung
  In der folgenden Tabelle sind einige der häufigsten Probleme, die beim Entwurf einer DSL auftreten, zusammen mit ihrer Lösung aufgeführt. Weitere Ratschläge finden Sie im [Erweiterbarkeits Forum für Visualisierungs Tools](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
@@ -612,15 +614,15 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 | Problem | Vorschlag |
 |-|-|
 | Die Änderungen, die ich an der DSL-Definition vorgenommen habe, wirken sich nicht aus. | Klicken Sie Projektmappen-Explorer oben in der Symbolleiste auf **alle Vorlagen transformieren** , und erstellen Sie die Projekt Mappe neu. |
-| Formen zeigen statt des Eigenschaftenwerts den Namen eines Decorator-Elements an. | Richten Sie die Decorator-Zuordnung ein. Klicken Sie im DSL-Definitionsdiagramm auf die Diagrammelementzuordnung (die graue Linie zwischen der Domänenklasse und der Formklasse).<br /><br /> Öffnen Sie das Fenster **DSL-Details** . Wenn diese Option nicht angezeigt wird, zeigen Sie im Menü Ansicht auf **Weitere Fenster**, und klicken Sie dann auf **DSL-Details**.<br /><br /> Klicken Sie auf die Registerkarte **Decorator** -Zuordnungen. Wählen Sie den Namen des Decorators aus. Vergewissern Sie sich, dass das Kontrollkästchen daneben aktiviert ist. Wählen Sie unter **Anzeige Eigenschaft**den Namen einer Domänen Eigenschaft aus.<br /><br /> Weitere Informationen finden Sie [in den Formen im Diagramm](#shapes). |
+| Formen zeigen statt des Eigenschaftenwerts den Namen eines Decorator-Elements an. | Richten Sie die Decorator-Zuordnung ein. Klicken Sie im DSL-Definitionsdiagramm auf die Diagrammelementzuordnung (die graue Linie zwischen der Domänenklasse und der Formklasse).<br /><br /> Öffnen Sie das Fenster **DSL-Details** . Wenn diese Option nicht angezeigt wird, zeigen Sie im Menü Ansicht auf **Weitere Fenster**, und klicken Sie dann auf **DSL-Details**.<br /><br /> Klicken Sie auf die Registerkarte **Decorator** -Zuordnungen. Wählen Sie den Namen des Decorators aus. Vergewissern Sie sich, dass das Kontrollkästchen daneben aktiviert ist. Wählen Sie unter **Anzeige Eigenschaft** den Namen einer Domänen Eigenschaft aus.<br /><br /> Weitere Informationen finden Sie [in den Formen im Diagramm](#shapes). |
 | Ich kann in DSL-Explorer keine Auflistung hinzufügen. Zum Beispiel gibt es beim Rechtsklick auf "Werkzeuge" keinen "Tool hinzufügen"-Befehl im Menü.<br /><br /> Ich kann im Explorer für meine DSL kein Element zu einer Liste hinzufügen. | Klicken Sie mit der rechten Maustaste auf das Element über dem Knoten, den Sie testen. Wenn Sie etwas zu einer Liste hinzufügen möchten, befindet sich der Befehl zum Hinzufügen nicht im Listenknoten, sondern in seinem Besitzer. |
 | Ich habe eine Domänenklasse erstellt, aber ich kann im Explorer der Sprache keine Instanzen erstellen. | Jede Domänenklasse mit Ausnahme des Stamms muss Ziel einer einbettenden Beziehung sein. |
 | Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt. | Wählen Sie in der DSL-Definition eine Domänen Eigenschaft der-Klasse aus, und legen Sie in der Eigenschaftenfenster den Wert **Element Name** auf true fest. |
 | Meine DSL wird immer im XML-Editor geöffnet. | Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Klicken Sie mit der rechten Maustaste auf das Projekt Element, klicken Sie auf **Öffnen mit** , und wählen Sie * YourLanguage ***Designer (Standard)**. |
-| Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe. | Weitere Informationen finden Sie unter " **dslpackage\generatedcode\package.tt** ". Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
-| Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte. | Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1. Klicken Sie im Windows-Startmenü unter **Alle Programme**auf [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] , dann **Tools**auf Extras, und klicken Sie dann auf **Microsoft Visual Studio experimentelle Instanz zurücksetzen**.<br />2. Klicken Sie im Menü **Erstellen** auf Projekt Mappe **neu erstellen**. |
+| Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe. | Weitere Informationen finden Sie unter Überprüfen und Aktualisieren von **dslpackage\generatedcode\package.tt** . Weitere Informationen finden Sie unter Vorgehens [Weise: Ändern des Namespace einer Domain-Specific Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte. | Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1. Klicken Sie im Windows-Startmenü unter **Alle Programme** auf [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] , dann auf Extras, und klicken Sie dann auf **Microsoft Visual Studio experimentelle Instanz zurücksetzen**.<br />2. Klicken Sie im Menü **Erstellen** auf Projekt Mappe **neu erstellen**. |
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erste Schritte mit domänenspezifischen Sprachen](../modeling/getting-started-with-domain-specific-languages.md)
 - [Erstellen einer Windows Forms-basierten domänenspezifischen Sprache](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

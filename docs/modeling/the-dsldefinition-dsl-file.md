@@ -1,5 +1,7 @@
 ---
 title: Die Datei DslDefinition.dsl
+description: Erfahren Sie mehr über die Struktur der Datei "DslDefinition. DSL" im DSL-Projekt einer DSL-Tool-Projekt Mappe, die eine domänenspezifische Sprache definiert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808954"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362781"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Die Datei DslDefinition.dsl
 
-In diesem Thema wird die Struktur der Datei "DslDefinition. DSL" im DSL-Projekt einer-Projekt Mappe beschrieben [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , die eine *domänenspezifische Sprache*definiert. Die Datei "DslDefinition. DSL" beschreibt die Klassen und Beziehungen einer domänenspezifischen Sprache, zusammen mit dem Diagramm, den Formen, den Connectors, dem Serialisierungsformat und der **Toolbox** der domänenspezifischen Sprache und der zugehörigen Bearbeitungs Tools. In einer Projektmappe für eine domänenspezifischen Sprache wird der Code, der diese Tools definiert, entsprechend den Informationen in der Datei "DslDefinition.dsl" generiert.
+In diesem Thema wird die Struktur der Datei "DslDefinition. DSL" im DSL-Projekt einer-Projekt Mappe beschrieben [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , die eine *domänenspezifische Sprache* definiert. Die Datei "DslDefinition. DSL" beschreibt die Klassen und Beziehungen einer domänenspezifischen Sprache, zusammen mit dem Diagramm, den Formen, den Connectors, dem Serialisierungsformat und der **Toolbox** der domänenspezifischen Sprache und der zugehörigen Bearbeitungs Tools. In einer Projektmappe für eine domänenspezifischen Sprache wird der Code, der diese Tools definiert, entsprechend den Informationen in der Datei "DslDefinition.dsl" generiert.
 
 Im Allgemeinen verwenden Sie den *domänenspezifischen sprach Designer* , um die Datei "DslDefinition. DSL" zu bearbeiten. Das Rohformat der Datei ist jedoch XML, und Sie können sie in einem XML-Editor öffnen. Für das Debuggen und für Erweitungen ist es sicherlich sinnvoll zu wissen, welche Informationen die Datei enthält und wie diese organisiert sind.
 
@@ -178,7 +180,7 @@ Jede Domänenklasse (einschließlich Beziehungen, Formen, Konnektoren und Diagra
 
 - **Hascustomconstructor**. Wenn dieses Attribut auf "true" festgelegt ist, wird der Konstruktor aus dem generierten Code weggelassen, sodass Sie Ihre eigene Version schreiben können.
 
-- **Attribute:** Dieses Attribut enthält die CLR-Attribute der generierten Klasse.
+- **Attribute**. Dieses Attribut enthält die CLR-Attribute der generierten Klasse.
 
 - **BaseClass**. Wenn Sie eine Basisklasse angeben, muss sie denselben Typ haben. Eine Domänenklasse muss z. B. eine andere Domänenklasse als Basis haben, während eine Depot-Form eine Depot-Form haben muss. Wenn Sie keine Basisklasse angeben, wird die Klasse im generierten Code aus einer Standard-Frameworkklasse abgeleitet. Eine Domänenklasse wird z. B. aus `ModelElement` abgeleitet.
 
@@ -267,7 +269,7 @@ Neben den Attributen und untergeordneten Knoten, die allen Klassen zur Verfügun
 
 ## <a name="designer-and-toolbox-tabs"></a>Designer und Toolbox-Registerkarten
 
-Der Hauptteil des **Designers** -Abschnitts der Datei "DslDefinition. DSL" sind die **ToolBoxTab** -Elemente. Ein Designer kann über mehrere dieser Elemente verfügen, von denen jeder einen Kopf Abschnitt in der **Toolbox**des generierten Designers darstellt. Jedes **ToolBoxTab** -Element kann ein oder mehrere Element **Tool** -Elemente, **connectiontool** -Elemente oder beides enthalten.
+Der Hauptteil des **Designers** -Abschnitts der Datei "DslDefinition. DSL" sind die **ToolBoxTab** -Elemente. Ein Designer kann über mehrere dieser Elemente verfügen, von denen jeder einen Kopf Abschnitt in der **Toolbox** des generierten Designers darstellt. Jedes **ToolBoxTab** -Element kann ein oder mehrere Element **Tool** -Elemente, **connectiontool** -Elemente oder beides enthalten.
 
 Elementtools können Instanzen einer bestimmten Domänenklasse erstellen. Wenn der Benutzer ein Elementtool auf das Diagramm zieht, wird das Ergebnis durch die Elementzusammenführungsdirektiven bestimmt, wie weiter unten in diesem Thema im entsprechenden Abschnitt erläutert wird.
 
@@ -275,7 +277,7 @@ Jedes Verbindungstool kann einen bestimmten Verbindungsgenerator aufrufen. Wie i
 
 Mit keinem der beiden Tooltypen werden Formen oder Konnektoren direkt konstruiert. Jedes Tool instanziiert eine Domänenklasse oder eine Domänenbeziehung. Die Form- und Konnektorzuordnungen bestimmen dann, wie diese Domänenklasse oder Domänenbeziehung dargestellt wird.
 
-## <a name="paths"></a>Pfade
+## <a name="paths"></a>Paths
 
 Domänenpfade treten in der Datei "DslDefinition.dsl" an verschiedenen Stellen auf. Diese Pfade geben eine Reihe von Links von einem Element in einem Modell (d. h. einer Instanz der domänenspezifischen Sprache) zu einem anderen an. Die Pfadsyntax ist einfach, aber ausführlich.
 
@@ -296,7 +298,7 @@ In diesem Beispiel ist InPort eine Unterklasse von ComponentPort und hat eine Be
 Wenn Sie C#-Code für dieses Modell schreiben, können Sie einen Link in einem Schritt überspringen. Verwenden Sie dazu die Eigenschaft, die die Beziehung in jeder der Klassen generiert, die sie verknüpft:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 Beide Sprünge müssen in der Pfadsyntax jedoch explizit ausgeführt werden. Aufgrund dieser Anforderung können Sie bequemer auf den Zwischenlink zugreifen. Mit dem folgenden Code wird der Sprung vom Link zur Komponente vervollständigt:
@@ -480,7 +482,7 @@ Die Datei "DslDefinition.dsl" selbst ist eine serialisierte Datei und entspricht
 
 - **DSL** ist der rootclass-Knoten und die-Klasse des Diagramms. DomainClass, DomainRelationship und andere Elemente sind unter `Dsl` eingebettet.
 
-- **Classes** ist der **roleelementname** der Beziehung zwischen Domänen spezifischer Sprache und domainClass.
+- **Classes** ist der **roleelementname** der Beziehung zwischen Domain-Specific Sprache und domainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>

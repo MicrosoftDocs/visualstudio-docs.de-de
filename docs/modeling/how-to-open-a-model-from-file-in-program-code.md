@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode'
+description: Erfahren Sie, dass der ModelBus Standardverfahren für das verweisen auf ein Modell oder Elemente in einem Modell und das Auffinden des Modells, wenn es verschoben wurde, bereitstellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532482"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363873"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode
 
@@ -26,12 +28,12 @@ Legen Sie das **Ziel Framework** des Anwendungs Projekts auf .NET Framework 4 od
 
 1. Öffnen Sie das Visual Studio-Projekt für die Anwendung, in der Sie ein DSL-Modell lesen möchten.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.
 
 3. Legen Sie im Fenster Projekteigenschaften auf der Registerkarte **Anwendung** das Feld **Ziel Framework** auf **.NET Framework 4** (oder höher) fest.
 
 > [!NOTE]
-> Das Ziel Framework sollte nicht **.NET Framework 4 Client Profil**sein.
+> Das Ziel Framework sollte nicht **.NET Framework 4 Client Profil** sein.
 
 ## <a name="references"></a>References
 
@@ -45,7 +47,7 @@ Fügen Sie dem Visual Studio-Anwendungsprojekt diese Verweise hinzu:
 
 ## <a name="important-classes-in-the-dsl"></a>Wichtige Klassen in der DSL
 
-Bevor Sie den Code schreiben können, der die DSL liest, sollten Sie die Namen einiger der von ihrer DSL generierten Klassen kennen. Öffnen Sie in ihrer DSL-Projekt Mappe das **DSL** -Projekt, und suchen Sie im Ordner **generatedcode** nach. Alternativ können Sie auf die DSL-Assembly in den Projekt **verweisen**doppelklicken und den DSL-Namespace in **Objektkatalog**öffnen.
+Bevor Sie den Code schreiben können, der die DSL liest, sollten Sie die Namen einiger der von ihrer DSL generierten Klassen kennen. Öffnen Sie in ihrer DSL-Projekt Mappe das **DSL** -Projekt, und suchen Sie im Ordner **generatedcode** nach. Alternativ können Sie auf die DSL-Assembly in den Projekt **verweisen** doppelklicken und den DSL-Namespace in **Objektkatalog** öffnen.
 
 Dabei handelt es sich um die Klassen, die Sie identifizieren sollten:
 

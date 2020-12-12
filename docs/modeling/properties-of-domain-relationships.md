@@ -1,5 +1,7 @@
 ---
 title: Eigenschaften von Domänenbeziehungen
+description: Erfahren Sie mehr über die Eigenschaften, die einem Domänen relationshop zugeordnet sind, z. b. Zugriffsmodifizierer, custome-Attribute, und generiert doppelte
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +11,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e432e9738009c84b6930b0363ae4048c925d0a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810001"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362456"
 ---
 # <a name="properties-of-domain-relationships"></a>Eigenschaften von Domänenbeziehungen
-Die Eigenschaften in der folgenden Tabelle sind einer Domänen Beziehung zugeordnet. Weitere Informationen zu Domänen Beziehungen finden Sie Untergrund Legendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Die Eigenschaften in der folgenden Tabelle sind einer Domänen Beziehung zugeordnet. Weitere Informationen zu Domänen Beziehungen finden Sie Untergrund Legendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Eigenschaft|Beschreibung|Standard|
+|Eigenschaft|BESCHREIBUNG|Standard|
 |-|-|-|
 |Zugriffsmodifizierer|Die Zugriffsebene der Domänen Beziehung ( `public` oder `internal` ).|`public`|
 |Benutzerdefinierte Attribute|Wird verwendet, um der Quell Code Klasse Attribute hinzuzufügen, die aus der Domänen Beziehung generiert werden.|\<none>|
@@ -29,7 +31,7 @@ Die Eigenschaften in der folgenden Tabelle sind einer Domänen Beziehung zugeord
 |Lässt Duplikate zu|Wenn `True` , werden möglicherweise doppelte Verknüpfungen der Domänen Beziehung zwischen den gleichen zwei Elementen erstellt.|`False`|
 |Basis Beziehungen|Wenn die Domänen Beziehung abgeleitet ist, die Basis Beziehung der Domänen Beziehung.|\<none>|
 |Ist Einbettungen|`True`Gibt an, dass die Domänen Beziehung eine Embedding Relationship ist. `False`Gibt an, dass die Beziehung eine Verweis Beziehung ist.|\<both>|
-|name|Der Name der Domänen Beziehung.|Aktueller Name|
+|Name|Der Name der Domänen Beziehung.|Aktueller Name|
 |Namespace|Der Namespace, der der Domänen Beziehung zugeordnet ist.|Aktueller Namespace|
 |Hinweise|Informelle Hinweise, die mit der Domänen Beziehung verknüpft sind.|\<none>|
 |Beschreibung|Die Beschreibung, die verwendet wird, um Code zu dokumentieren, und wird in der Benutzeroberfläche des generierten Designers verwendet.|\<none>|

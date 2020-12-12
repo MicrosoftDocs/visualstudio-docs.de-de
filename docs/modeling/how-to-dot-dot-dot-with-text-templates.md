@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: ... mit Textvorlagen'
+description: Hier finden Sie Antworten auf häufig gestellte Fragen, die beim Verwenden von Textvorlagen zum Generieren von Text aufgetreten sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594655"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363184"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in Visual Studio bieten eine nützliche Möglichkeit zum Erstellen von Text beliebiger Art. Sie können Textvorlagen verwenden, um zur Laufzeit Text als Teil der Anwendung zu generieren, und zur Entwurfszeit, um einen Teil des Projekt Codes zu generieren. In diesem Thema werden die am häufigsten gestellten "Gewusst wie...?" zusammengefasst. Anfragen.
@@ -31,7 +33,7 @@ Textvorlagen in Visual Studio bieten eine nützliche Möglichkeit zum Erstellen 
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Generieren von Dateien zur Laufzeit und übergeben von Daten an die Vorlage
  Zur Laufzeit generiert meine Anwendung Textdateien, z. b. Berichte, die eine Mischung aus Standardtext und-Daten enthalten. Ich möchte vermeiden, Hunderte von Anweisungen zu schreiben `write` .
 
-- Fügen Sie dem Projekt eine Lauf Zeit Textvorlage hinzu. Mit dieser Vorlage wird eine Klasse in Ihrem Code erstellt, die Sie instanziieren und zum Generieren von Text verwenden können. Sie können Daten in den Konstruktorparametern an ihn übergeben. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+- Fügen Sie dem Projekt eine Lauf Zeit Textvorlage hinzu. Mit dieser Vorlage wird eine Klasse in Ihrem Code erstellt, die Sie instanziieren und zum Generieren von Text verwenden können. Sie können Daten in den Konstruktorparametern an ihn übergeben. Weitere Informationen finden Sie unter [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 - Wenn Sie aus Vorlagen generieren möchten, die nur zur Laufzeit verfügbar sind, können Sie Standardtext Vorlagen verwenden. Wenn Sie eine Visual Studio-Erweiterung schreiben, können Sie den Textvorlagen Dienst aufrufen. Weitere Informationen finden Sie unter [Aufrufen von Text Transformation in einer vs-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md). In anderen Kontexten können Sie die Textvorlagen-Engine verwenden. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
@@ -71,14 +73,14 @@ Wenn Sie die Methoden selbst schreiben:
 
 ### <a name="generate-files-from-a-complex-model"></a>Generieren von Dateien aus einem komplexen Modell
 
-- Es empfiehlt sich, eine domänenspezifische Sprache (DSL) zu erstellen, um das Modell darzustellen. Dies erleichtert das Schreiben von Vorlagen, da Sie Typen und Eigenschaften verwenden, die die Namen der Elemente in Ihrem Modell widerspiegeln. Es ist nicht erforderlich, die Datei zu analysieren oder XML-Knoten zu navigieren. Beispiel:
+- Es empfiehlt sich, eine domänenspezifische Sprache (DSL) zu erstellen, um das Modell darzustellen. Dies erleichtert das Schreiben von Vorlagen, da Sie Typen und Eigenschaften verwenden, die die Namen der Elemente in Ihrem Modell widerspiegeln. Es ist nicht erforderlich, die Datei zu analysieren oder XML-Knoten zu navigieren. Zum Beispiel:
 
      `foreach (Book book in this.Library) { ... }`
 
-     Weitere Informationen finden Sie unter [Einstieg in domänenspezifische Sprachen](../modeling/getting-started-with-domain-specific-languages.md) und [Erstellen von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
+     Weitere Informationen finden Sie unter [Getting Started with Domain-Specific Languages](../modeling/getting-started-with-domain-specific-languages.md) und [Code-Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Daten aus Visual Studio
- Wenn Sie in Visual Studio bereitgestellte Dienste verwenden möchten, legen Sie das `hostSpecific` -Attribut fest, und laden Sie die `EnvDTE` Assembly. Beispiel:
+ Wenn Sie in Visual Studio bereitgestellte Dienste verwenden möchten, legen Sie das `hostSpecific` -Attribut fest, und laden Sie die `EnvDTE` Assembly. Zum Beispiel:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

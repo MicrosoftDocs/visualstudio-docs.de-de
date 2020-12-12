@@ -1,5 +1,7 @@
 ---
 title: Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
+description: Erfahren Sie, wie Sie eine Richtlinie für ein Programm definieren, um ein oder alle domänenspezifischen DSL-Modelle zu sperren, damit Sie gelesen, aber nicht geändert werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536083"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363197"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 Mit der unveränderlichkeits-API des Visual Studio-Visualisierungs-und Modellierungs-SDKs kann ein Programm ein Domänen spezifisches DSL-Modell (Domain-Specific Language) sperren, sodass es gelesen, aber nicht geändert werden kann. Diese schreibgeschützte Option kann z. b. verwendet werden, damit ein Benutzer die Kollegen bitten kann, ein DSL-Modell zu kommentieren und zu überprüfen, es jedoch nicht möglich ist, die ursprüngliche zu ändern.
@@ -75,19 +77,19 @@ partition.SetLocks(Locks.Delete);
 
   Eine Sperre für eine Partition oder einen Speicher kann nicht festgelegt werden, und gleichzeitig wird die Sperre für ein einzelnes Element deaktiviert.
 
-|value|Dies bedeutet, wenn `IsLocked(Value)` true ist.|
+|Wert|Dies bedeutet, wenn `IsLocked(Value)` true ist.|
 |-|-|
 |Keine|Keine Einschränkung.|
 |Eigenschaft|Domänen Eigenschaften von Elementen können nicht geändert werden. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänen Klasse in einer Beziehung generiert werden.|
 |Hinzufügen|Neue Elemente und Verknüpfungen können nicht in einer Partition oder einem Speicher erstellt werden.<br /><br /> Gilt nicht für `ModelElement` .|
-|Move|Das Element kann nicht zwischen Partitionen verschoben werden `element.IsLocked(Move)` , wenn true ist, oder wenn `targetPartition.IsLocked(Move)` true ist.|
+|Verschieben|Das Element kann nicht zwischen Partitionen verschoben werden `element.IsLocked(Move)` , wenn true ist, oder wenn `targetPartition.IsLocked(Move)` true ist.|
 |Löschen|Ein Element kann nicht gelöscht werden, wenn diese Sperre für das Element selbst oder für eines der Elemente festgelegt wird, an die der Löschvorgang weitergegeben werden soll, z. b. eingebettete Elemente und Formen.<br /><br /> Sie können verwenden `element.CanDelete()` , um zu ermitteln, ob ein Element gelöscht werden kann.|
 |Neu anordnen|Die Reihenfolge der Links auf einem das RolePlayer kann nicht geändert werden.|
 |Das RolePlayer|Der Satz von Links, die von diesem Element stammen, kann nicht geändert werden. Beispielsweise können neue Elemente unter diesem Element nicht eingebettet werden. Dies wirkt sich nicht auf Verknüpfungen aus, für die dieses Element das Ziel ist.<br /><br /> Wenn dieses Element ein Link ist, sind die Quelle und das Ziel nicht betroffen.|
-|All|Bitweises OR der anderen-Werte.|
+|Alle|Bitweises OR der anderen-Werte.|
 
 ## <a name="locking-policies"></a>Sperren von Richtlinien
- Als Autor einer DSL können Sie eine *Sperr Richtlinie*definieren. Eine Sperr Richtlinie moderiert den Betrieb von setlocks (), sodass Sie verhindern können, dass bestimmte Sperren festgelegt werden, oder Sie können festlegen, dass bestimmte Sperren festgelegt werden müssen. In der Regel verwenden Sie eine Sperr Richtlinie, um zu verhindern, dass Benutzer oder Entwickler versehentlich die beabsichtigte Verwendung einer DSL verletzen, und zwar auf dieselbe Weise, wie Sie eine Variable deklarieren können `private` .
+ Als Autor einer DSL können Sie eine *Sperr Richtlinie* definieren. Eine Sperr Richtlinie moderiert den Betrieb von setlocks (), sodass Sie verhindern können, dass bestimmte Sperren festgelegt werden, oder Sie können festlegen, dass bestimmte Sperren festgelegt werden müssen. In der Regel verwenden Sie eine Sperr Richtlinie, um zu verhindern, dass Benutzer oder Entwickler versehentlich die beabsichtigte Verwendung einer DSL verletzen, und zwar auf dieselbe Weise, wie Sie eine Variable deklarieren können `private` .
 
  Sie können auch eine Sperr Richtlinie verwenden, um Sperren für alle Elemente festzulegen, die vom Typ des Elements abhängig sind. Der Grund hierfür ist, dass `SetLocks(Locks.None)` immer aufgerufen wird, wenn ein Element erstmalig aus einer Datei erstellt oder deserialisiert wird.
 
@@ -113,7 +115,7 @@ public interface ILockingPolicy
 
  Diese Methoden werden aufgerufen, wenn ein Aufruf `SetLocks()` von für einen Speicher, eine Partition oder ein ModelElement erfolgt. In jeder Methode erhalten Sie einen vorgeschlagenen Satz von Sperren. Sie können die vorgeschlagene Menge zurückgeben, oder Sie können Sperren hinzufügen oder subtrahieren.
 
- Beispiel:
+ Zum Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

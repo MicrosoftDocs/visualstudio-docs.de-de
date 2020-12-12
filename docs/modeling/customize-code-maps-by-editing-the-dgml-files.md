@@ -1,5 +1,7 @@
 ---
 title: Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
+description: Erfahren Sie, wie Sie eine Code Map anpassen, indem Sie die entsprechende dgml-Datei (Graph Markup Language) bearbeiten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,18 +22,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547276"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363423"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
 
 Zum Anpassen einer Code Map können Sie die gesteuerte dgml-Datei (Graph Markup Language) bearbeiten. Sie können beispielsweise Elemente bearbeiten, um benutzerdefinierte Stile anzugeben, Codeelementen und Links Eigenschaften und Kategorien zuzuweisen oder Dokumente bzw. URLs mit Codeelementen oder Links zu verknüpfen. Weitere Informationen zu dgml-Elementen finden Sie in der [Referenz zur Referenz für geleitete Graph Markup Language (dgml)](../modeling/directed-graph-markup-language-dgml-reference.md).
 
-Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn die Karte Teil Ihrer Visual Studio-Projekt Mappe ist, wählen Sie Sie in **Projektmappen-Explorer**aus, öffnen Sie das Kontextmenü, und wählen Sie dann **Öffnen mit**, **XML (Text)-Editor**aus.
+Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn die Karte Teil Ihrer Visual Studio-Projekt Mappe ist, wählen Sie Sie in **Projektmappen-Explorer** aus, öffnen Sie das Kontextmenü, und wählen Sie dann **Öffnen mit**, **XML (Text)-Editor** aus.
 
 > [!NOTE]
 > Zum Erstellen von Code Maps muss Visual Studio Enterprise Edition vorhanden sein. Wenn Sie eine Code Map in Visual Studio bearbeiten, werden alle nicht verwendeten DGML-Elemente und -Attribute beim Speichern der DGML-Datei gelöscht. Zudem werden automatisch Codeelemente erstellt, wenn Sie neue Links manuell hinzufügen. Wenn Sie die DGML-Datei speichern, werden möglicherweise alle Attribute, die Sie einem Element hinzugefügt haben, in alphabetischer Reihenfolge angeordnet.

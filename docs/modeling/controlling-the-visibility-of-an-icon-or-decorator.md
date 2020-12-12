@@ -1,5 +1,7 @@
 ---
 title: Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
+description: Erfahren Sie, wie Sie die Sichtbarkeit eines Symbols oder Decorator-Elements abhängig vom Zustand der Eigenschaften im Modell steuern können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546642"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363496"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer domänenspezifischen Sprache (DSL) angezeigt wird. Sie können festlegen, dass der Decorator abhängig vom Zustand der Eigenschaften im Modell angezeigt und ausgeblendet wird. Beispielsweise können in einer Form, die eine Person darstellt, verschiedene Symbole angezeigt werden, die abhängig vom Geschlecht der Person, der Anzahl der untergeordneten Elemente usw. angezeigt werden.
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorators
- Bei der folgenden Prozedur wird davon ausgegangen, dass Sie bereits eine Form und deren Zuordnung zu einer Domänen Klasse definiert haben. Weitere Informationen finden Sie unter [Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md).
+ Bei der folgenden Prozedur wird davon ausgegangen, dass Sie bereits eine Form und deren Zuordnung zu einer Domänen Klasse definiert haben. Weitere Informationen finden Sie unter Vorgehens [Weise beim Definieren einer Domain-Specific Sprache](../modeling/how-to-define-a-domain-specific-language.md).
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>So steuern Sie die Sichtbarkeit eines Symbols oder Text-Decorator-Elements
 
@@ -74,9 +76,9 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
     2. Aktivieren Sie das Kontrollkästchen **Sichtbarkeits Filter** .
 
-    3. Wählen Sie in der **Filter-Eigenschaft**die Steuerelement Eigenschaft **decoratorcontrol**aus.
+    3. Wählen Sie in der **Filter-Eigenschaft** die Steuerelement Eigenschaft **decoratorcontrol** aus.
 
-    4. Geben Sie unter **Sichtbarkeits Einträge**ein `True` .
+    4. Geben Sie unter **Sichtbarkeits Einträge** ein `True` .
 
 3. Klicken Sie in der Symbolleiste **Projektmappen-Explorer** auf **alle Vorlagen transformieren** .
 
@@ -88,7 +90,7 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
 6. Beachten Sie den Namespace, die Klasse und die Methode, die fehlen.  Beispiel: Company. FamilyTree. Person. getdecoratorcontrolvalue ().
 
-7. Schreiben Sie in einer separaten Codedatei eine partielle Klassendefinition, die die fehlende Methode enthält. Beispiel:
+7. Schreiben Sie in einer separaten Codedatei eine partielle Klassendefinition, die die fehlende Methode enthält. Zum Beispiel:
 
     ```
     namespace Company.FamilyTree
@@ -103,7 +105,7 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
 8. Erstellen Sie die Projekt Mappe neu.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)
 - [Festlegen eines Hintergrundbilds für ein Diagramm](../modeling/setting-a-background-image-on-a-diagram.md)

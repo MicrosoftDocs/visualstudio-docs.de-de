@@ -1,5 +1,7 @@
 ---
 title: Richtlinien für das Verfassen von T4-Textvorlagen
+description: Informieren Sie sich über die allgemeinen Richtlinien, die hilfreich sind, wenn Sie Programmcode oder andere Anwendungs Ressourcen in Visual Studio erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,20 +9,20 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596540"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363405"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Richtlinien für das Verfassen von T4-Textvorlagen
 
 Diese allgemeinen Richtlinien können hilfreich sein, wenn Sie Programmcode oder andere Anwendungs Ressourcen in Visual Studio erstellen. Es handelt sich nicht um Fixed-Regeln.
 
-## <a name="guidelines-for-design-time-t4-templates"></a>Richtlinien für T4-Vorlagen zur Entwurfszeit
+## <a name="guidelines-for-design-time-t4-templates"></a>Richtlinien für Design-Time T4-Vorlagen
 
-T4-Vorlagen für die Entwurfszeit sind Vorlagen, die zur Entwurfszeit Code in Ihrem Visual Studio-Projekt generieren. Weitere Informationen finden Sie unter [Entwurfszeit Code Generierung mithilfe von T4-Text Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+T4-Vorlagen für die Entwurfszeit sind Vorlagen, die zur Entwurfszeit Code in Ihrem Visual Studio-Projekt generieren. Weitere Informationen finden Sie unter [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Generieren Sie Variablen Aspekte der Anwendung.
 
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Richtlinien für Lauf Zeit Vorlagen (vorverarbeitete) T4-Vorlagen
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Richtlinien für Run-Time (vorverarbeitete) T4-Vorlagen
 
 Verschieben Sie gängiges Material in geerbte Vorlagen.
 

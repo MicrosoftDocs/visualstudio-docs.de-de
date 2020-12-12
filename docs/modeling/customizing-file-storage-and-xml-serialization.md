@@ -1,5 +1,7 @@
 ---
 title: Anpassen von Dateispeicher und XML-Serialisierung
+description: Erfahren Sie mehr über die XML-Datei, die erstellt oder aktualisiert wird, wenn Sie eine Instanz oder ein Modell einer domänenspezifischen Sprache (DSL) in Visual Studio speichern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,23 +13,23 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542739"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362937"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 
-Wenn der Benutzer eine Instanz oder ein *Modell*einer domänenspezifischen Sprache (DSL) in Visual Studio speichert, wird eine XML-Datei erstellt oder aktualisiert. Die Datei kann erneut geladen werden, um das Modell im Speicher neu zu erstellen.
+Wenn der Benutzer eine Instanz oder ein *Modell* einer domänenspezifischen Sprache (DSL) in Visual Studio speichert, wird eine XML-Datei erstellt oder aktualisiert. Die Datei kann erneut geladen werden, um das Modell im Speicher neu zu erstellen.
 
 Sie können das Serialisierungsschema anpassen, indem Sie die Einstellungen unter **XML-Serialisierungsverhalten** im DSL-Explorer anpassen. Es gibt unter XML- **Serialisierungsverhalten** einen Knoten für jede Domänen Klasse, jede Eigenschaft und jede Beziehung. Die Beziehungen befinden sich unter ihren Quell Klassen. Es gibt auch Knoten, die den Formen-, Connector-und Diagramm Klassen entsprechen.
 
 Sie können auch Programmcode für eine erweiterte Anpassung schreiben.
 
 > [!NOTE]
-> Wenn Sie das Modell in einem bestimmten Format speichern möchten, Sie es jedoch nicht aus diesem Formular erneut laden müssen, empfiehlt es sich, Textvorlagen zu verwenden, um die Ausgabe des Modells anstelle eines benutzerdefinierten Serialisierungsschemas zu generieren. Weitere Informationen finden Sie unter [Erstellen von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
+> Wenn Sie das Modell in einem bestimmten Format speichern möchten, Sie es jedoch nicht aus diesem Formular erneut laden müssen, empfiehlt es sich, Textvorlagen zu verwenden, um die Ausgabe des Modells anstelle eines benutzerdefinierten Serialisierungsschemas zu generieren. Weitere Informationen finden Sie unter [Erstellen von Code aus einer Domain-Specific Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="model-and-diagram-files"></a>Modell-und Diagramm Dateien
 
@@ -89,7 +91,7 @@ Beachten Sie die folgenden Punkte zum serialisierten Modell:
 
 - Das zielende der einzelnen Embedding Relationship wird als Knoten serialisiert, der unter der Beziehung eingebettet ist. Beispielsweise enthält der `people` Knoten mehrere `person` Knoten.
 
-- Das zielende jeder Verweis Beziehung wird als *Moniker*serialisiert, der einen Verweis auf das Ziel Element codiert.
+- Das zielende jeder Verweis Beziehung wird als *Moniker* serialisiert, der einen Verweis auf das Ziel Element codiert.
 
      Beispielsweise kann unter einem `person` Knoten eine Beziehung vorhanden sein `children` . Dieser Knoten enthält Moniker wie z. b.:
 
@@ -101,7 +103,7 @@ Beachten Sie die folgenden Punkte zum serialisierten Modell:
 
 Moniker werden verwendet, um Querverweise zwischen verschiedenen Teilen der Modell-und Diagramm Dateien darzustellen. Sie werden auch in der `.diagram` Datei verwendet, um auf Knoten in der Modelldatei zu verweisen. Es gibt zwei Arten von Moniker:
 
-- *ID-Moniker* gibt die GUID des Ziel Elements an. Beispiel:
+- *ID-Moniker* gibt die GUID des Ziel Elements an. Zum Beispiel:
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -116,7 +118,7 @@ Moniker werden verwendet, um Querverweise zwischen verschiedenen Teilen der Mode
     <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />
     ```
 
-     Qualifizierte schlüsselmoniker werden verwendet, wenn die Zielklasse eine Domänen Eigenschaft aufweist, für die die Option **ist der monikerschlüssel** `true` im **XML-Serialisierungsverhalten**auf festgelegt ist. Im Beispiel wird diese Option für Domänen Eigenschaften mit dem Namen "Title" in den Domänen Klassen "Album" und "Song" festgelegt.
+     Qualifizierte schlüsselmoniker werden verwendet, wenn die Zielklasse eine Domänen Eigenschaft aufweist, für die die Option **ist der monikerschlüssel** `true` im **XML-Serialisierungsverhalten** auf festgelegt ist. Im Beispiel wird diese Option für Domänen Eigenschaften mit dem Namen "Title" in den Domänen Klassen "Album" und "Song" festgelegt.
 
 Qualifizierte schlüsselmoniker sind einfacher zu lesen als ID-Moniker. Wenn Sie beabsichtigen, den XML-Code Ihrer Modelldateien von Personen zu lesen, sollten Sie die Verwendung qualifizierter schlüsselmoniker in Erwägung gezogen. Es ist jedoch möglich, dass der Benutzer mehr als ein Element so festlegen kann, dass es denselben monikerschlüssel hat. Doppelte Schlüssel können dazu führen, dass die Datei nicht ordnungsgemäß neu geladen wird. Wenn Sie eine Domänen Klasse definieren, auf die mit qualifizierten schlüsselmonikern verwiesen wird, sollten Sie daher verhindern, dass der Benutzer eine Datei mit doppelten Monikern speichert.
 
@@ -166,7 +168,7 @@ Es gibt verschiedene Methoden, um diese Situation zu vermeiden:
 
      Es gibt eine automatisch generierte Validierungsmethode, die auf Mehrdeutigkeiten prüft. Die-Methode ist in der `Load` Kategorie Validierung. Dadurch wird sichergestellt, dass der Benutzer gewarnt wird, dass es möglicherweise nicht möglich ist, die Datei erneut zu öffnen.
 
-     Weitere Informationen finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
+     Weitere Informationen finden Sie unter [Validierung in einer Domain-Specific Sprache](../modeling/validation-in-a-domain-specific-language.md).
 
 ### <a name="moniker-paths-and-qualifiers"></a>Monikerpfade und Qualifizierer
 
@@ -244,7 +246,7 @@ Um die folgenden Anpassungen vorzunehmen, erweitern Sie den Knoten **XML-Seriali
 
 Sie können Teile oder alle serialisierungsalgorithmen ersetzen.
 
-Es wird empfohlen, den Code in **dsl\generated code\serializer.cs** und **SerializationHelper.cs**zu untersuchen.
+Es wird empfohlen, den Code in **dsl\generated code\serializer.cs** und **SerializationHelper.cs** zu untersuchen.
 
 ### <a name="to-customize-the-serialization-of-a-particular-class"></a>So passen Sie die Serialisierung einer bestimmten Klasse an
 
@@ -266,37 +268,37 @@ In der folgenden Tabelle werden die Optionen zusammengefasst, die Sie in diesem 
 
 Diese Elemente finden Sie im DSL-Explorer unter **XML Serialization verhalt\class Data**.
 
-|Eigenschaft|BESCHREIBUNG|
+|Eigenschaft|Beschreibung|
 |-|-|
 |Hat ein benutzerdefiniertes Element Schema|True gibt an, dass die Domänen Klasse ein benutzerdefiniertes Element Schema besitzt.|
 |Ist Benutzer definiert|Legen Sie diese Einstellung auf " **true** " fest, wenn Sie Ihren eigenen Serialisierungs-und Deserialisierungscode für diese Domänen Klasse schreiben möchten.<br /><br /> Erstellen Sie die Lösung, und untersuchen Sie die Fehler, um ausführliche Anweisungen zu finden.|
 |Domänenklasse|Die Domänen Klasse, auf die dieser Klassen Datenknoten angewendet wird. Schreibgeschützt.|
 |Elementname|Der Name des XML-Knotens für Elemente dieser Klasse. Der Standardwert ist eine Kleinbuchstaben Version des Domänen Klassen namens.|
 |Name des monikerattributs|Der Name des Attributs, das in monikerelementen verwendet wird, um den Verweis zu enthalten. Wenn dieser Wert leer ist, wird der Name der Schlüsseleigenschaft oder-ID verwendet.<br /><br /> In diesem Beispiel lautet der Name "Name":  `<personMoniker name="/Mike Nash"/>`|
-|Name des monikerelements|Der Name des XML-Elements, das für Moniker verwendet wird, die auf Elemente dieser Klasse verweisen.<br /><br /> Der Standardwert ist eine Kleinbuchstaben Version des Klassen namens, die mit "Moniker" versehen ist. Beispiel: `personMoniker`.|
+|Name des monikerelements|Der Name des XML-Elements, das für Moniker verwendet wird, die auf Elemente dieser Klasse verweisen.<br /><br /> Der Standardwert ist eine Kleinbuchstaben Version des Klassen namens, die mit "Moniker" versehen ist. Beispielsweise `personMoniker`.|
 |Monikertypname|Der Name des XSD-Typs, der für Moniker für Elemente dieser Klasse generiert wird. Die XSD befindet sich in " **dsl\generated Code \\ \* Schema. xsd".**|
 |Serialisieren der ID|True gibt an, dass die Element-GUID in der Datei enthalten ist. Dies muss "true" sein, wenn keine Eigenschaft vorliegt, die als **monikerschlüssel** markiert ist, und die DSL Verweis Beziehungen zu dieser Klasse definiert.|
 |Typname|Der Name des XML-Typs, der in der XSD-Datei aus der angegebenen Domänen Klasse generiert wird.|
-|Notizen|Informelle Notizen, die diesem Element zugeordnet sind|
+|Hinweise|Informelle Notizen, die diesem Element zugeordnet sind|
 
 ### <a name="xml-property-data"></a>XML-Eigenschaften Daten
 
 XML-Eigenschaften Knoten werden unter den Klassen Knoten gefunden.
 
-|Eigenschaft|BESCHREIBUNG|
+|Eigenschaft|Beschreibung|
 |-|-|
 |Domänen Eigenschaft|Die Eigenschaft, für die die XML-serialisierungskonfigurationsdaten gelten. Schreibgeschützt.|
 |Ist der monikerschlüssel|True gibt an, dass die Eigenschaft als Schlüssel für das Erstellen von Monikern verwendet wird, die auf Instanzen dieser Domänen Klasse verweisen.|
 |Ist monikerqualifizierer|Wenn der Wert true ist, wird die-Eigenschaft zum Erstellen des Qualifizierers in Monikern verwendet. Wenn "false" und "SerializeId" für diese Domänen Klasse nicht "true" ist, werden Moniker durch den Moniker des übergeordneten Elements in der Einbettungs Struktur qualifiziert.|
 |Darstellung|Wenn Attribute, wird die Eigenschaft als XML-Attribut serialisiert. Wenn Element, wird es als Element serialisiert. Wenn dies nicht der Fall ist, wird es nicht serialisiert.|
 |XML-Name|Der Name für das XML-Attribut oder-Element, das die Eigenschaft darstellt. Standardmäßig handelt es sich hierbei um eine Kleinbuchstaben Version des Domänen Eigenschafts namens.|
-|Notizen|Informelle Notizen, die diesem Element zugeordnet sind|
+|Hinweise|Informelle Notizen, die diesem Element zugeordnet sind|
 
 ### <a name="xml-role-data"></a>XML-Rollen Daten
 
 Rollen Datenknoten befinden sich unter den Quell Klassen Knoten.
 
-|Eigenschaft|BESCHREIBUNG|
+|Eigenschaft|Beschreibung|
 |-|-|
 |Hat benutzerdefinierten Moniker|Legen Sie diese Einstellung auf "true" fest, wenn Sie Ihren eigenen Code zum Erstellen und Auflösen von Monikern bereitstellen möchten, die diese Beziehung überqueren.<br /><br /> Um ausführliche Anweisungen zu erhalten, erstellen Sie die Projekt Mappe, und doppelklicken Sie dann auf die Fehlermeldungen.|
 |Domänenbeziehung|Gibt die Beziehung an, auf die diese Optionen angewendet werden. Schreibgeschützt.|
@@ -304,7 +306,7 @@ Rollen Datenknoten befinden sich unter den Quell Klassen Knoten.
 |Rollen Element Name|Gibt den Namen des XML-Elements an, das von der Quell Rolle abgeleitet ist. Der Standardwert ist der Name der Rollen Eigenschaft.|
 |Vollständiges Formular verwenden|True gibt an, dass jedes Ziel Element oder jeder Moniker in einem XML-Knoten eingeschlossen ist, der die Beziehung darstellt. Dieser Wert sollte auf true festgelegt werden, wenn die Beziehung über eigene Domänen Eigenschaften verfügt.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)

@@ -1,5 +1,7 @@
 ---
 title: T4-Parameter-Direktive
+description: Erfahren Sie, dass die Parameter-Direktive in Visual Studio Eigenschaften im Vorlagen Code deklariert, die aus Werten initialisiert werden, die aus dem externen Kontext übergeben werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df739f10764f20b415ac74ee4b4e529433c7dc96
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591800"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363626"
 ---
 # <a name="t4-parameter-directive"></a>T4-Parameter-Direktive
 
@@ -82,8 +84,8 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Übergeben von Werten an eine Lauf Zeit Vorlage (vorverarbeitete) Text Vorlage
- Es ist normalerweise nicht erforderlich, die- `<#@parameter#>` Direktive mit den Lauf Zeit Vorlagen (vorverarbeitete Textvorlagen) zu verwenden. Stattdessen können Sie einen zusätzlichen Konstruktor oder eine festleg Bare Eigenschaft für den generierten Code definieren, über den Sie Parameterwerte übergeben. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Übergeben von Werten an eine Run-Time (vorverarbeitete) Text Vorlage
+ Es ist normalerweise nicht erforderlich, die- `<#@parameter#>` Direktive mit den Lauf Zeit Vorlagen (vorverarbeitete Textvorlagen) zu verwenden. Stattdessen können Sie einen zusätzlichen Konstruktor oder eine festleg Bare Eigenschaft für den generierten Code definieren, über den Sie Parameterwerte übergeben. Weitere Informationen finden Sie unter [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Wenn Sie jedoch `<#@parameter>` in einer Lauf Zeit Vorlage verwenden möchten, können Sie mithilfe des Sitzungs Wörterbuchs Werte an die Vorlage übergeben. Nehmen Sie beispielsweise an, dass Sie die Datei als vorverarbeitete Vorlage namens erstellt haben `PreTextTemplate1` . Sie können die Vorlage in Ihrem Programm aufrufen, indem Sie den folgenden Code verwenden.
 

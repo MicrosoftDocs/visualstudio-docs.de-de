@@ -1,5 +1,7 @@
 ---
 title: Erstellen von benutzerdefinierten T4-Direktivenprozessoren für Textvorlagen
+description: Erfahren Sie mehr über den Textvorlagen-Transformationsprozess und wie Sie einen benutzerdefinierten T4-Textvorlagen-Direktivenprozessor erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597177"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363424"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
 
@@ -64,7 +66,7 @@ Nach allen Aufrufen von processdirective () werden diese Methoden von der Vorlag
 
 - Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten direktivenprozessors](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - Bereitstellen [eines benutzerdefinierten direktivenprozessors](../modeling/deploying-a-custom-directive-processor.md) erläutert das Registrieren eines benutzerdefinierten Anweisungs Prozessors
 - Exemplarische Vorgehensweise [: Erstellen eines benutzerdefinierten direktivenprozessors](../modeling/walkthrough-creating-a-custom-directive-processor.md) beschreibt das Erstellen eines benutzerdefinierten direktivenprozessors, das registrieren und Testen des direktivenprozessors und das Formatieren der Ausgabedatei als HTML.

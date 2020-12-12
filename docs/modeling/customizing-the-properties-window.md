@@ -1,5 +1,7 @@
 ---
 title: Anpassen des Eigenschaftenfensters
+description: Erfahren Sie, wie Sie die Darstellung und das Verhalten des Fensters "Eigenschaften" in ihrer domänenspezifischen Sprache (DSL) in Visual Studio anpassen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548277"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362873"
 ---
 # <a name="customize-the-properties-window"></a>Anpassen des Eigenschaftenfenster
 
@@ -38,15 +40,15 @@ Wenn Sie den Namen einer Eigenschaft in der DSL-Definition festlegen, wird der A
 
 Einige dynamische Features von grafischen Elementen *können als* Domänen Eigenschaften dargestellt oder verfügbar gemacht werden. Eine Funktion, die auf diese Weise verfügbar gemacht wurde, kann vom Benutzer aktualisiert werden und kann durch Programmcode leichter aktualisiert werden.
 
-Klicken Sie mit der rechten Maustaste auf eine Shape-Klasse in der DSL-Definition, zeigen **Sie auf verfügbar**machen, und wählen Sie dann eine Funktion
+Klicken Sie mit der rechten Maustaste auf eine Shape-Klasse in der DSL-Definition, zeigen **Sie auf verfügbar** machen, und wählen Sie dann eine Funktion
 
-In Shapes können Sie die Eigenschaften **FillColor**, **OutlineColor**, **TextColor**, **outlinedashstyle**, **outlinethickness** und **fillgradientmode** verfügbar machen. Auf Connectors können Sie die **Farben** `,` **TextColor**, **DashStyle**und **Dicke** verfügbar machen. In Diagrammen können Sie die Eigenschaften **FillColor** und **TextColor** verfügbar machen.
+In Shapes können Sie die Eigenschaften **FillColor**, **OutlineColor**, **TextColor**, **outlinedashstyle**, **outlinethickness** und **fillgradientmode** verfügbar machen. Auf Connectors können Sie die **Farben** `,` **TextColor**, **DashStyle** und **Dicke** verfügbar machen. In Diagrammen können Sie die Eigenschaften **FillColor** und **TextColor** verfügbar machen.
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Weiterleitung: Anzeigen von Eigenschaften verwandter Elemente
 
 Wenn der Benutzer Ihrer DSL ein Element in einem Modell auswählt, werden die Eigenschaften des Elements im Eigenschaften Fenster angezeigt. Sie können jedoch auch die Eigenschaften der angegebenen verknüpften Elemente anzeigen. Dies ist hilfreich, wenn Sie eine Gruppe von Elementen definiert haben, die zusammenarbeiten. Sie können z. b. ein Hauptelement und ein optionales Plug-in-Element definieren. Wenn das Hauptelement einer Form zugeordnet ist und die andere nicht, ist es hilfreich, alle Eigenschaften so anzuzeigen, als wären Sie auf einem Element.
 
-Dieser Effekt wird als *Eigenschaften Weiterleitung*bezeichnet und erfolgt in mehreren Fällen automatisch. In anderen Fällen können Sie die Eigenschaften Weiterleitung erreichen, indem Sie einen Domänentyp Deskriptor definieren.
+Dieser Effekt wird als *Eigenschaften Weiterleitung* bezeichnet und erfolgt in mehreren Fällen automatisch. In anderen Fällen können Sie die Eigenschaften Weiterleitung erreichen, indem Sie einen Domänentyp Deskriptor definieren.
 
 ### <a name="default-property-forwarding-cases"></a>Standardmäßige Eigenschaften Weiterleitungs Fälle
 
@@ -71,11 +73,11 @@ Bei der folgenden Prozedur wird davon ausgegangen, dass Sie eine DSL erstellt ha
 
 #### <a name="forward-a-property-from-another-element"></a>Weiterleiten einer Eigenschaft von einem anderen Element
 
-1. Erstellen Sie eine Projekt Mappe, die mindestens [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] zwei Klassen enthält, die in diesem Beispiel " **Book** " und " **Author**" genannt werden. Es sollte eine Beziehung zwischen **Buch** und **Autor**vorhanden sein.
+1. Erstellen Sie eine Projekt Mappe, die mindestens [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] zwei Klassen enthält, die in diesem Beispiel " **Book** " und " **Author**" genannt werden. Es sollte eine Beziehung zwischen **Buch** und **Autor** vorhanden sein.
 
-    Die Multiplizität der Quell Rolle (die Rolle auf der **Buchseite** ) sollte 0.. 1 oder 1.. 1 lauten, damit jedes **Buch** über einen **Autor**verfügt.
+    Die Multiplizität der Quell Rolle (die Rolle auf der **Buchseite** ) sollte 0.. 1 oder 1.. 1 lauten, damit jedes **Buch** über einen **Autor** verfügt.
 
-2. Klicken Sie im **DSL-Explorer**mit der rechten Maustaste auf die Klasse **Book** Domain, und klicken Sie dann auf **Add New domaintypedescriptor**.
+2. Klicken Sie im **DSL-Explorer** mit der rechten Maustaste auf die Klasse **Book** Domain, und klicken Sie dann auf **Add New domaintypedescriptor**.
 
     Unter dem Knoten **benutzerdefinierter Typdeskriptor** wird ein Knoten mit dem Namen **Pfade von benutzerdefinierten Eigenschaften Deskriptoren** angezeigt.
 
@@ -87,9 +89,9 @@ Bei der folgenden Prozedur wird davon ausgegangen, dass Sie eine DSL erstellt ha
 
     Sie können den Pfad in einer Strukturansicht bearbeiten, indem Sie auf den Pfeil nach unten rechts neben dieser Eigenschaft klicken. Weitere Informationen zu Domänen Pfaden finden Sie unter [Domänen Pfad Syntax](../modeling/domain-path-syntax.md). Wenn Sie sie bearbeitet haben, sollte der Pfad **bookreferencesauthor. Author/! lauten. Autor**.
 
-5. Legen Sie die **Eigenschaft** auf die **Name** Domain-Eigenschaft von **Author**fest.
+5. Legen Sie die **Eigenschaft** auf die **Name** Domain-Eigenschaft von **Author** fest.
 
-6. Legen Sie **Anzeige Name** auf **Autor Name**fest.
+6. Legen Sie **Anzeige Name** auf **Autor Name** fest.
 
 7. Transformieren Sie alle Vorlagen, erstellen Sie die DSL und führen Sie Sie aus.
 
@@ -113,13 +115,13 @@ Sie können jedoch die folgenden Editoren und Typen angeben:
 
 ### <a name="define-a-domain-property-that-has-an-external-type"></a>Definieren Sie eine Domänen Eigenschaft mit einem externen Typ.
 
-1. Fügen Sie in **Projektmappen-Explorer**einen Verweis auf die Assembly (dll) hinzu, die den externen Typ im **DSL** -Projekt enthält.
+1. Fügen Sie in **Projektmappen-Explorer** einen Verweis auf die Assembly (dll) hinzu, die den externen Typ im **DSL** -Projekt enthält.
 
     Die Assembly kann eine .NET-Assembly oder eine von Ihnen bereitgestellte Assembly sein.
 
 2. Fügen Sie den Typ der Liste **Domänen Typen** hinzu, sofern Sie dies nicht bereits getan haben.
 
-   1. Öffnen Sie DslDefinition. DSL, und klicken Sie im **DSL-Explorer**mit der rechten Maustaste auf den Stamm Knoten, und klicken Sie dann auf **neuen externen Typ hinzufügen**.
+   1. Öffnen Sie DslDefinition. DSL, und klicken Sie im **DSL-Explorer** mit der rechten Maustaste auf den Stamm Knoten, und klicken Sie dann auf **neuen externen Typ hinzufügen**.
 
         Unter dem Knoten **Domänen Typen** wird ein neuer Eintrag angezeigt.
 
@@ -188,7 +190,7 @@ Sie können auch eine grafische Darstellung des Eigenschafts Werts bereitstellen
 > [!NOTE]
 > Fügen Sie den Code in einer separaten Codedatei im **DSL** -Projekt hinzu.
 
-Beispiel:
+Zum Beispiel:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -226,7 +228,7 @@ Zum Definieren einer Liste von Standardwerten fügen Sie der Domänen Eigenschaf
 (typeof(MyTypeConverter))]
 ```
 
-Definieren Sie eine Klasse, die sich von <xref:System.ComponentModel.TypeConverter> ableitet. Fügen Sie den Code in einer separaten Datei im **DSL** -Projekt hinzu. Beispiel:
+Definieren Sie eine Klasse, die sich von <xref:System.ComponentModel.TypeConverter> ableitet. Fügen Sie den Code in einer separaten Datei im **DSL** -Projekt hinzu. Zum Beispiel:
 
 ```csharp
 /// <summary>
