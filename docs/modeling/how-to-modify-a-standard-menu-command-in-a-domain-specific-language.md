@@ -1,5 +1,7 @@
 ---
 title: Standardmenü Befehl in DSL ändern
+description: Erfahren Sie, wie Sie das Verhalten einiger Standard Befehle ändern können, die in ihrer DSL automatisch definiert werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e04d3d2c5572c0d0b3dbaa25912b7ec59a3bc0fa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532495"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363886"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Gewusst wie: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 
@@ -53,7 +55,7 @@ Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten K
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. Erstellen Sie in **dslpackage**einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs` .
+2. Erstellen Sie in **dslpackage** einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs` .
 
 3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
 

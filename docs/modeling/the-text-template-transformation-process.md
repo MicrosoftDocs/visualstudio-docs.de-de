@@ -1,5 +1,7 @@
 ---
 title: Textvorlagen-Transformationsprozess
+description: Erfahren Sie, dass der Textvorlagen-Transformationsprozess eine Textvorlagen Datei als Eingabe annimmt und eine neue Textdatei als Ausgabe generiert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565863"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362651"
 ---
 # <a name="the-text-template-transformation-process"></a>Textvorlagen-Transformationsprozess
 Der Textvorlagen-Transformationsprozess nimmt eine Textvorlagen Datei als Eingabe an und generiert eine neue Textdatei als Ausgabe. Beispielsweise können Sie Textvorlagen verwenden, um Visual Basic-oder c#-Code zu generieren, oder Sie können einen HTML-Bericht generieren.

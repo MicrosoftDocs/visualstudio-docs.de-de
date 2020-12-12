@@ -1,5 +1,7 @@
 ---
 title: 'Abhängigkeitsdiagramme: Richtlinien'
+description: Erfahren Sie, wie Sie die Architektur Ihrer APP auf hoher Ebene beschreiben, indem Sie Abhängigkeits Diagramme in Visual Studio erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594629"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363964"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Abhängigkeits Diagramme: Richtlinien
 
@@ -30,7 +32,7 @@ Welche Visual Studio-Editionen dieses Feature unterstützen, erfahren Sie unter 
 
 ## <a name="what-is-a-dependency-diagram"></a>Was ist ein Abhängigkeits Diagramm?
 
-Wie ein herkömmliches Architektur Diagramm identifiziert ein Abhängigkeits Diagramm die Hauptkomponenten oder Funktionseinheiten des Entwurfs und deren Abhängigkeiten. Jeder Knoten im Diagramm, der als *Schicht*bezeichnet wird, stellt eine logische Gruppe von Namespaces, Projekten oder anderen Artefakten dar. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Siehe [Abhängigkeits Diagramme: Referenz](../modeling/layer-diagrams-reference.md).
+Wie ein herkömmliches Architektur Diagramm identifiziert ein Abhängigkeits Diagramm die Hauptkomponenten oder Funktionseinheiten des Entwurfs und deren Abhängigkeiten. Jeder Knoten im Diagramm, der als *Schicht* bezeichnet wird, stellt eine logische Gruppe von Namespaces, Projekten oder anderen Artefakten dar. Sie können die Abhängigkeiten zeichnen, die im Entwurf vorhanden sein sollen. Anders als bei einem herkömmlichen Architekturdiagramm können Sie überprüfen, ob die tatsächlichen Abhängigkeiten im Quellcode den gewünschten Abhängigkeiten entsprechen, die Sie angegeben haben. Indem Sie die Validierung zu einem Bestandteil eines regulären Buildvorgangs in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] machen, stellen Sie sicher, dass der Programmcode auch in zukünftigen Änderungen mit der Architektur des Systems übereinstimmt. Siehe [Abhängigkeits Diagramme: Referenz](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Entwerfen oder Aktualisieren Ihrer APP mit Abhängigkeits Diagrammen
 
@@ -41,7 +43,7 @@ Die folgenden Schritte bieten einen Überblick über die Verwendung von Abhängi
 
 1. [Erstellen Sie ein Abhängigkeits Diagramm](#Create) für die gesamte Anwendung oder für eine Ebene darin.
 
-2. [Definieren Sie Ebenen, die primäre funktionale Bereiche oder Komponenten](#CreateLayers) der Anwendung darstellen. Benennen Sie diese Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Wenn Sie über eine Visual Studio-Projekt Mappe verfügen, können Sie jeder Ebene eine Auflistung von *Artefakten*zuordnen, wie z. b. Projekte, Namespaces, Dateien usw.
+2. [Definieren Sie Ebenen, die primäre funktionale Bereiche oder Komponenten](#CreateLayers) der Anwendung darstellen. Benennen Sie diese Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Wenn Sie über eine Visual Studio-Projekt Mappe verfügen, können Sie jeder Ebene eine Auflistung von *Artefakten* zuordnen, wie z. b. Projekte, Namespaces, Dateien usw.
 
 3. Erkennen [Sie die vorhandenen Abhängigkeiten](#Generate) zwischen Ebenen.
 
@@ -68,7 +70,7 @@ Siehe [Erstellen von Abhängigkeits Diagrammen aus Ihrem Code](../modeling/creat
 
 ## <a name="define-layers-to-represent-functional-areas-or-components"></a><a name="CreateLayers"></a> Definieren von Ebenen zur Darstellung funktionaler Bereiche oder Komponenten
 
-Ebenen stellen logische Gruppen von *Artefakten*dar, z. b. Projekte, Code Dateien, Namespaces, Klassen und Methoden. Sie können Ebenen aus Artefakten aus Visual c#-und Visual Basic-Projekten erstellen, oder Sie können Spezifikationen oder Pläne an eine Ebene anfügen, indem Sie Dokumente verknüpfen, wie z. b. Word-Dateien oder PowerPoint-Präsentationen. Jede Ebene wird im Diagramm als Rechteck angezeigt und gibt Aufschluss über die Anzahl der mit ihr verknüpften Artefakte. Eine Ebene kann geschachtelte Ebenen enthalten, um spezielle Aufgaben zu beschreiben.
+Ebenen stellen logische Gruppen von *Artefakten* dar, z. b. Projekte, Code Dateien, Namespaces, Klassen und Methoden. Sie können Ebenen aus Artefakten aus Visual c#-und Visual Basic-Projekten erstellen, oder Sie können Spezifikationen oder Pläne an eine Ebene anfügen, indem Sie Dokumente verknüpfen, wie z. b. Word-Dateien oder PowerPoint-Präsentationen. Jede Ebene wird im Diagramm als Rechteck angezeigt und gibt Aufschluss über die Anzahl der mit ihr verknüpften Artefakte. Eine Ebene kann geschachtelte Ebenen enthalten, um spezielle Aufgaben zu beschreiben.
 
 Benennen Sie als allgemeine Richtlinie Ebenen nach ihrer Funktion, z. B. "Präsentation" oder "Dienste". Fügen Sie Artefakte in der gleichen Ebene ein, wenn zwischen ihnen eine enge Abhängigkeit besteht. Wenn die Artefakte getrennt voneinander aktualisiert oder in separaten Anwendungen verwendet werden können, sollten sie auf unterschiedlichen Ebenen eingefügt werden. Weitere Informationen zu ebenenmustern finden Sie auf der Seite Patterns & Practices unter [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch) .
 
@@ -90,7 +92,7 @@ Siehe:
 Eine Abhängigkeit ist überall dort vorhanden, wo ein Artefakt, das einer Ebene zugeordnet ist, einen Verweis auf ein Artefakt enthält, das einer anderen Ebene zugeordnet ist. Beispiel: Eine Klasse in einer Ebene deklariert eine Variable, deren Klasse sich auf einer anderen Ebene befindet. Vorhandene Abhängigkeiten können mittels Reverse Engineering (Zurückentwicklung) ermittelt werden.
 
 > [!NOTE]
-> Bei bestimmten Arten von Artefakten ist kein Reverse Engineering der Abhängigkeiten möglich. So kann beispielsweise bei einer Ebene, die mit einer Textdatei verknüpft ist, keinerlei Rückentwicklung der Abhängigkeiten vorgenommen werden. Klicken Sie mit der rechten Maustaste auf eine oder mehrere Ebenen, und klicken Sie dann auf **Links anzeigen**, um zu sehen, welche Artefakte Abhängigkeiten aufweisen, die Sie rückgängig machen können. Überprüfen Sie im **Ebenen-Explorer**die Spalte **unterstützt die Validierung** . Abhängigkeiten werden nicht für Artefakte, für die diese Spalte **false**anzeigt, in umgekehrter Reihenfolge entwickelt.
+> Bei bestimmten Arten von Artefakten ist kein Reverse Engineering der Abhängigkeiten möglich. So kann beispielsweise bei einer Ebene, die mit einer Textdatei verknüpft ist, keinerlei Rückentwicklung der Abhängigkeiten vorgenommen werden. Klicken Sie mit der rechten Maustaste auf eine oder mehrere Ebenen, und klicken Sie dann auf **Links anzeigen**, um zu sehen, welche Artefakte Abhängigkeiten aufweisen, die Sie rückgängig machen können. Überprüfen Sie im **Ebenen-Explorer** die Spalte **unterstützt die Validierung** . Abhängigkeiten werden nicht für Artefakte, für die diese Spalte **false** anzeigt, in umgekehrter Reihenfolge entwickelt.
 
 ### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>So entwickeln Sie vorhandene Abhängigkeiten zwischen Ebenen zurück
 
@@ -104,7 +106,7 @@ Um die Änderungen zu beschreiben, die Sie an Ihrem System oder der vorgesehenen
 
 |**An**|**Auszuführende Schritte**|
 |-|-|
-|Löschen einer unerwünschten Abhängigkeit|Klicken Sie auf die Abhängigkeit, und **drücken Sie**dann ENTF.|
+|Löschen einer unerwünschten Abhängigkeit|Klicken Sie auf die Abhängigkeit, und **drücken Sie** dann ENTF.|
 |Ändern oder Einschränken der Richtung einer Abhängigkeit|Legen Sie die Eigenschaft **Richtung** fest.|
 |Erstellen von neuen Abhängigkeiten|Verwenden Sie die **Abhängigkeits** -und **bidirektionalen Abhängigkeits** Tools<br /><br /> Doppelklicken Sie zum Zeichnen mehrerer Abhängigkeiten auf das Tool. Wenn Sie fertig sind, klicken Sie auf das Tool **Zeiger** , oder drücken Sie die **ESC** -Taste.|
 |Angeben, dass einer Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen|Geben Sie die Namespaces in die Eigenschaft für unzulässige **Namespace Abhängigkeiten** der Ebene ein. Verwenden Sie zum Trennen der Namespaces ein Semikolon (**;**).|

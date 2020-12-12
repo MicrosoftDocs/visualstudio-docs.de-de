@@ -1,5 +1,7 @@
 ---
 title: Festlegen eines Hintergrundbilds für ein Diagramm
+description: Erfahren Sie, wie Sie im Visual Studio-SDK für Visualisierung und Modellierung das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542583"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363782"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
 Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
@@ -23,7 +25,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie das Hintergru
 
 1. Kopieren Sie die Bilddatei, die Sie als Diagrammhintergrund verwenden möchten, in das Verzeichnis "Dsl\Resources" des aktuellen Projekts.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Ordner dsl\resources, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Vorhandenes Element**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Ordner dsl\resources, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Vorhandenes Element**.
 
 3. Navigieren Sie im Dialogfeld **Vorhandenes Element hinzufügen** zum Ordner "dsl\resources".
 
@@ -41,13 +43,13 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie das Hintergru
 
 10. Prüfen Sie, ob die Datei "Dsl\Properties\Resources.resx" vorhanden ist und die Datei "Resources.Designer.cs" enthält.
 
-11. Wenn Resources.Designer.cs nicht vorhanden ist, klicken Sie in **Projektmappen-Explorer**auf die Datei Resources. resx.
+11. Wenn Resources.Designer.cs nicht vorhanden ist, klicken Sie in **Projektmappen-Explorer** auf die Datei Resources. resx.
 
 12. Legen Sie im Fenster **Eigenschaften** die Eigenschaft `Custom Tool` auf `ResXFileCodeGenerator`fest.
 
-13. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das DSL-Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie auf **neuer Ordner**.
+13. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das DSL-Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie auf **neuer Ordner**.
 
-14. Benennen Sie den Ordner als **Benutzer**definiert.
+14. Benennen Sie den Ordner als **Benutzer** definiert.
 
 15. Klicken Sie mit der rechten Maustaste auf den Ordner Custom, zeigen Sie auf **Hinzufügen**, und klicken Sie auf **Neues Element**
 
@@ -100,7 +102,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie das Hintergru
 
      Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [navigieren und Aktualisieren eines Modells im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)
 - [Anpassen von Text- und Image-Feldern](../modeling/customizing-text-and-image-fields.md)

@@ -1,5 +1,7 @@
 ---
 title: MSI- und VSIX-Bereitstellung einer DSL
+description: Erfahren Sie, wie Sie eine domänenspezifische Sprache (DSL) auf Ihrem eigenen Computer oder auf anderen Computern installieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542615"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363132"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>MSI- und VSIX-Bereitstellung einer DSL
 Sie können eine domänenspezifische Sprache auf Ihrem eigenen Computer oder auf anderen Computern installieren. Visual Studio muss bereits auf dem Zielcomputer installiert sein.
@@ -33,7 +35,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
 1. Suchen Sie die **VSIX** -Datei, die von Ihrem DSL-Paket Projekt erstellt wurde:
 
-   1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **dslpackage** , und klicken Sie dann auf **Ordner in Datei-Explorer öffnen**.
+   1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **dslpackage** , und klicken Sie dann auf **Ordner in Datei-Explorer öffnen**.
 
    2. Suchen Sie nach **dem \\ \* \\ Datei Ordner**_yourproject_**. Dslpackage. vsix**
 
@@ -41,7 +43,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
    - Der Zielcomputer muss über eine der Editionen von verfügen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , von denen DSLs zur Laufzeit unterstützt werden. Weitere Informationen finden Sie [unter Unterstützte Visual Studio-Editionen für die Visualisierung & Modellierungs-SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-   - Auf dem Zielcomputer muss eine der in **DslPackage\source.Extensions.Manifest**angegebenen Editionen von Visual Studio vorhanden sein.
+   - Auf dem Zielcomputer muss eine der in **DslPackage\source.Extensions.Manifest** angegebenen Editionen von Visual Studio vorhanden sein.
 
 3. Doppelklicken Sie auf dem Zielcomputer auf die **VSIX** -Datei.
 
@@ -53,7 +55,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>So deinstallieren Sie eine mit VSX installierte DSL
 
-1. Wählen Sie im Menü **Tools****Erweiterungen und Updates**aus.
+1. Wählen Sie im Menü **Tools****Erweiterungen und Updates** aus.
 
 2. Erweitern Sie **Installierte Erweiterungen**.
 
@@ -92,11 +94,11 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
        - Version
 
-   - Klicken Sie auf den **Editor** -Knoten, und klicken Sie im Eigenschaftenfenster auf das **Symbol**. Legen Sie den Wert so fest, dass er auf eine Symbol Datei in **dslpackage\resources**verweist, z **. b. Datei. ico**
+   - Klicken Sie auf den **Editor** -Knoten, und klicken Sie im Eigenschaftenfenster auf das **Symbol**. Legen Sie den Wert so fest, dass er auf eine Symbol Datei in **dslpackage\resources** verweist, z **. b. Datei. ico**
 
    - Öffnen Sie im Menü **Erstellen** die **Configuration Manager**, und wählen Sie die Konfiguration aus, die Sie erstellen möchten, z. b. **Release** oder **Debug**.
 
-4. Wechseln Sie zur [Startseite des Visualisierungs-und Modellierungs-](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)SDKs, und laden Sie auf der Registerkarte **Downloads** **CreateMsiSetupProject.tt**herunter
+4. Wechseln Sie zur [Startseite des Visualisierungs-und Modellierungs-](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)SDKs, und laden Sie auf der Registerkarte **Downloads** **CreateMsiSetupProject.tt** herunter
 
 5. Fügen Sie **CreateMsiSetupProject.tt** Ihrem DSL-Projekt hinzu.
 
@@ -106,7 +108,7 @@ Wenn die DSL durch diese Methode installiert wird, kann der Benutzer eine DSL-Da
 
     (Wenn Sie möchten, können Sie jetzt CreateMsiSetupProject.tt aus Ihrem DSL-Projekt ausschließen.)
 
-7. Fügen Sie in **Projektmappen-Explorer**die Datei " **Setup \\ \* . vdproj** " als vorhandenes Projekt hinzu.
+7. Fügen Sie in **Projektmappen-Explorer** die Datei " **Setup \\ \* . vdproj** " als vorhandenes Projekt hinzu.
 
 8. Klicken Sie im Menü **Projekt** auf **Projekt Abhängigkeiten**.
 

@@ -1,5 +1,7 @@
 ---
 title: Codegenerierung in einem Buildprozess
+description: Erfahren Sie, wie die Text Transformation als Teil des Buildprozesses einer Visual Studio-Projekt Mappe aufgerufen werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92298205"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363561"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Aufrufen von Text Transformation im Buildprozess
 
-Die [Text Transformation](../modeling/code-generation-and-t4-text-templates.md) kann als Teil des Buildprozesses einer Visual Studio-Projekt Mappe aufgerufen werden. [build process](/azure/devops/pipelines/index) Es gibt Buildaufgaben, die für die Texttransformation angegeben wurden. Die T4-Buildaufgaben führen Entwurfszeittextvorlagen aus und kompilieren gleichzeitig Laufzeitvorlagen (vorverarbeitete Textvorlagen.)
+Die [Text Transformation](../modeling/code-generation-and-t4-text-templates.md) kann als Teil des Buildprozesses einer Visual Studio-Projekt Mappe aufgerufen werden. [](/azure/devops/pipelines/index) Es gibt Buildaufgaben, die für die Texttransformation angegeben wurden. Die T4-Buildaufgaben führen Entwurfszeittextvorlagen aus und kompilieren gleichzeitig Laufzeitvorlagen (vorverarbeitete Textvorlagen.)
 
 Je nachdem, welche Build-Engine Sie verwenden, können die Buildaufgaben unterschiedliche Ergebnisse haben. Wenn Sie die Projekt Mappe in Visual Studio erstellen, kann eine Textvorlage auf die Visual Studio-API (EnvDTE) zugreifen, wenn das [hostspecific = "true"](../modeling/t4-template-directive.md) -Attribut festgelegt ist. Dies ist jedoch nicht der Fall, wenn Sie die Projekt Mappe über die Befehlszeile erstellen oder wenn Sie einen Serverbuild über Visual Studio initiieren. In diesen Fällen wird der Build von MSBuild ausgeführt, und ein anderer T4-Host wird verwendet. Dies bedeutet, dass Sie nicht wie Projekt Dateinamen auf die gleiche Weise zugreifen können, wenn Sie eine Textvorlage mithilfe von MSBuild erstellen. Sie können jedoch [Umgebungs Informationen mithilfe von buildparametern in Textvorlagen und direktivenprozessoren übergeben](#parameters).
 
@@ -57,7 +59,7 @@ Wenn der [Buildserver](/azure/devops/pipelines/agents/agents) auf einem Computer
 
 Bearbeiten Sie die Projektdatei, um einige der Features in MSBuild zu konfigurieren, z. b. das Importieren der texttransformations-Ziele.
 
-Wählen Sie in **Projektmappen-Explorer**im Kontextmenü des Projekts die Option **entladen** aus. Damit können Sie die CSPROJ- oder VBPROJ-Datei im XML-Editor zu bearbeiten. Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie auf neu **Laden**.
+Wählen Sie in **Projektmappen-Explorer** im Kontextmenü des Projekts die Option **entladen** aus. Damit können Sie die CSPROJ- oder VBPROJ-Datei im XML-Editor zu bearbeiten. Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie auf neu **Laden**.
 
 ## <a name="import-the-text-transformation-targets"></a>Importieren der texttransformations-Ziele
 
@@ -258,7 +260,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 Visual Studio-Makros wie **$ (SolutionDir)** funktionieren nicht in MSBuild. Sie können stattdessen Projekteigenschaften verwenden.
 
-Bearbeiten Sie die *csproj* -oder *vbproj* -Datei, um eine Projekt Eigenschaft zu definieren. In diesem Beispiel wird eine Eigenschaft mit dem Namen **mylibfolder**definiert:
+Bearbeiten Sie die *csproj* -oder *vbproj* -Datei, um eine Projekt Eigenschaft zu definieren. In diesem Beispiel wird eine Eigenschaft mit dem Namen **mylibfolder** definiert:
 
 ```xml
 <!-- Define a project property, myLibFolder: -->
@@ -283,7 +285,7 @@ Nun können Sie die Projekteigenschaft in der Assembly- und der Includedirektive
 
 Diese Direktiven rufen Werte von T4parameterValues in MSBuild- und Visual Studio-Hosts ab.
 
-## <a name="q--a"></a>Q & A
+## <a name="q--a"></a>Fragen und Antworten
 
 **Warum sollte ich Vorlagen auf dem Buildserver transformieren? Ich habe bereits Vorlagen in Visual Studio transformiert, bevor ich den Code eingecheckte.**
 
@@ -299,7 +301,7 @@ Wenn Sie eine enthaltene Datei oder eine andere von der Vorlage gelesene Datei a
 
 - [Lauf Zeit Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md) werden zur Laufzeit in der Anwendung transformiert.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 ::: moniker range="vs-2017"
 

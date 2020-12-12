@@ -1,5 +1,7 @@
 ---
 title: T4 Output-Direktive
+description: Erfahren Sie, dass in Visual Studio-Textvorlagen die Output-Direktive verwendet wird, um die Dateinamenerweiterung und die Codierung der transformierten Datei zu definieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9849a326549aa534d9cd558337b825b7e0b8d1f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591813"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363639"
 ---
 # <a name="t4-output-directive"></a>T4 Output-Direktive
 
@@ -24,7 +26,7 @@ In Visual Studio-Textvorlagen `output` wird die-Direktive verwendet, um die Date
 
  dann generiert Visual Studio eine Datei mit dem Namen **MyTemplate.cs** .
 
- Die `output`-Anweisung ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Stattdessen erhält die Anwendung die generierte Zeichenfolge durch Aufruf von `TextTransform()`. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Die `output`-Anweisung ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Stattdessen erhält die Anwendung die generierte Zeichenfolge durch Aufruf von `TextTransform()`. Weitere Informationen finden Sie unter [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="using-the-output-directive"></a>Verwenden der Ausgabeanweisung
 
@@ -50,7 +52,7 @@ In Visual Studio-Textvorlagen `output` wird die-Direktive verwendet, um die Date
  Zulässige Werte: eine beliebige gültige Dateinamenerweiterung.
 
 ## <a name="encoding-attribute"></a>Encoding-Attribut
- Gibt die zu verwendende Codierung bei der Generierung der Ausgabedatei an. Beispiel:
+ Gibt die zu verwendende Codierung bei der Generierung der Ausgabedatei an. Zum Beispiel:
 
  `<#@ output encoding="utf-8"#>`
 

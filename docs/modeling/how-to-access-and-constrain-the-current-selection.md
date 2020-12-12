@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl'
+description: Erfahren Sie, wie Sie bestimmen können, auf welches Element der Benutzer mit der rechten Maustaste geklickt hat, wenn Sie einen Befehls-oder Gesten Handler für Ihre domänenspezifische Sprache schreiben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ba656793b630dd55fc2ebc7242e5d45484b0f8e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545690"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363392"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Gewusst wie: Zugreifen auf die und Einschränken der aktuellen Auswahl
 
@@ -36,10 +38,10 @@ Abhängig vom Befehl benötigt der Befehls Handler möglicherweise die Auswahl i
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>-Methode|Gibt zurück `true` , wenn das Diagramm im Modell-Designer ausgewählt ist, andernfalls `false` .|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>-Methode|Gibt zurück `true` , wenn im Modell-Designer genau ein Element ausgewählt ist, andernfalls `false` .|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>-Methode|Gibt zurück `true` , wenn im aktiven Fenster genau ein Element ausgewählt ist, andernfalls `false` .|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>-Eigenschaft|Ruft eine schreibgeschützte Auflistung der im Modell-Designer ausgewählten Elemente ab.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>-Eigenschaft|Ruft eine schreibgeschützte Auflistung der im aktiven Fenster ausgewählten Elemente ab.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>-Eigenschaft|Ruft das primäre Element der Auswahl im Modell-Designer ab.|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>-Eigenschaft|Ruft das primäre Element der Auswahl im aktiven Fenster ab.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> -Eigenschaft|Ruft eine schreibgeschützte Auflistung der im Modell-Designer ausgewählten Elemente ab.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> -Eigenschaft|Ruft eine schreibgeschützte Auflistung der im aktiven Fenster ausgewählten Elemente ab.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> -Eigenschaft|Ruft das primäre Element der Auswahl im Modell-Designer ab.|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> -Eigenschaft|Ruft das primäre Element der Auswahl im aktiven Fenster ab.|
 
 2. Die <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> -Eigenschaft der- <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Klasse ermöglicht den Zugriff auf das <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> -Objekt, das das Modell-Designer-Fenster darstellt, und bietet zusätzlichen Zugriff auf die ausgewählten Elemente im Modell-Designer.
 
@@ -209,7 +211,7 @@ namespace CompanyName.ProductName.GroupingDsl
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>
 - <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage>

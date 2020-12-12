@@ -1,5 +1,7 @@
 ---
 title: Kontrollblöcke für Textvorlagen
+description: Erfahren Sie mehr über Textvorlagen-Kontroll Blöcke und wie Kontroll Blöcke Ihnen das Schreiben von Code in der Textvorlage ermöglichen, um die Ausgabe zu variieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11cc289f668a674707c584396998ea7abb9e7ea9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591787"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363587"
 ---
 # <a name="text-template-control-blocks"></a>Kontrollblöcke für Textvorlagen
 Kontrollblöcke ermöglichen Ihnen das Schreiben von Code in die Textvorlage, um die Ausgabe zu variieren. Es gibt drei Arten von Kontrollblöcken, die anhand ihrer öffnenden Klammern unterschieden werden:
@@ -117,7 +119,7 @@ Some text.
 > [!NOTE]
 > Einem Klassenfunktionskontrollblock darf nicht von Standardkontrollblöcken in derselben Vorlagendatei gefolgt werden. Allerdings gilt diese Einschränkung nicht für das Ergebnis der Verwendung von `<#@include#>`-Direktiven. Jede enthaltene Datei kann Standardblöcke besitzen, denen von Klassenfunktionsblöcken gefolgt wird.
 
- Sie können eine Funktion erstellen, die Ausgaben durch das Einbetten von Text und Ausdrucksblöcken in einem Klassenfunktionskontrollblock generiert. Beispiel:
+ Sie können eine Funktion erstellen, die Ausgaben durch das Einbetten von Text und Ausdrucksblöcken in einem Klassenfunktionskontrollblock generiert. Zum Beispiel:
 
 ```
 <#+

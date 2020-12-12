@@ -1,5 +1,7 @@
 ---
 title: Grundlagen von Modellen, Klassen und Beziehungen
+description: Erfahren Sie, wie eine domänenspezifische Sprache (DSL) durch die DSL-Definitionsdatei definiert wird und dass der meiste Programmcode in der DSL-Lösung aus dieser Datei generiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08981e4f63c84d19d4086c75fe33a8b19a515ccf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809975"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362690"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie durch benutzerdefinierten Programmcode definiert, den Sie möglicherweise schreiben. Der meiste Programmcode in der DSL-Lösung wird aus dieser Datei generiert.
@@ -37,7 +39,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 ### <a name="models-are-instances-of-dsls"></a>Modelle sind Instanzen von DSLs.
  Ein *Modell* ist eine Instanz Ihrer DSL, die von einem Benutzer erstellt wurde. Ein Modell enthält Modellelemente, bei denen es sich um Instanzen der von Ihnen definierten Domänen Klassen handelt, sowie Links zwischen den Elementen, bei denen es sich um Instanzen der von Ihnen definierten Domänen Beziehungen handelt. Ein Modell kann auch Formen und Connectors aufweisen, die die Modellelemente und Verknüpfungen in einem Diagramm anzeigen. Die DSL-Definition enthält die Form Klassen, die Verbindungs Klassen und eine Klasse für das Diagramm.
 
- Eine DSL-Definition wird auch als *Domänen Modell*bezeichnet. Eine DSL-Definition oder ein Domänen Modell ist die Entwurfszeit Darstellung der domänenspezifischen Sprache, während es sich bei dem Modell um die Lauf Zeit Instanziierung der domänenspezifischen Sprache handelt.
+ Eine DSL-Definition wird auch als *Domänen Modell* bezeichnet. Eine DSL-Definition oder ein Domänen Modell ist die Entwurfszeit Darstellung der domänenspezifischen Sprache, während es sich bei dem Modell um die Lauf Zeit Instanziierung der domänenspezifischen Sprache handelt.
 
 ## <a name="domain-classes-define-model-elements"></a>Domänen Klassen definieren Modellelemente
  Domänen Klassen werden verwendet, um die verschiedenen Elemente in der Domäne zu erstellen, und Domänen Beziehungen sind die Links zwischen den Elementen. Dabei handelt es sich um die Entwurfszeit Darstellung der Elemente und Links, die von den Benutzern der Entwurfs spezifischen Sprache instanziiert werden, wenn Sie Ihre Modelle erstellen.
@@ -77,7 +79,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 ## <a name="domain-relationships"></a>Domänen Beziehungen
  Modellelemente können durch Beziehungen verknüpft werden. Links sind immer Binär; Sie verknüpfen genau zwei-Elemente. Jedes Element kann jedoch viele Links zu anderen Objekten enthalten, und es kann sogar mehrere Links zwischen dem gleichen Paar von Elementen geben.
 
- Ebenso wie Sie verschiedene Klassen von Elementen definieren können, können Sie unterschiedliche Klassen von Links definieren. Die Klasse eines Links wird als *Domänen Beziehung*bezeichnet. Eine Domänen Beziehung gibt an, welche Klassen von Elementen eine Verbindung herstellen können. Jedes Ende einer Beziehung wird als *Rolle*bezeichnet, und die Domänen Beziehung definiert Namen für die beiden Rollen sowie für die Beziehung selbst.
+ Ebenso wie Sie verschiedene Klassen von Elementen definieren können, können Sie unterschiedliche Klassen von Links definieren. Die Klasse eines Links wird als *Domänen Beziehung* bezeichnet. Eine Domänen Beziehung gibt an, welche Klassen von Elementen eine Verbindung herstellen können. Jedes Ende einer Beziehung wird als *Rolle* bezeichnet, und die Domänen Beziehung definiert Namen für die beiden Rollen sowie für die Beziehung selbst.
 
  Es gibt zwei Arten von Domänen Beziehungen: Einbetten von Beziehungen und Verweis Beziehungen. Im DSL-Definitions Diagramm verfügen Einbett Ende Beziehungen über voll solide Linien an jeder Rolle, und Verweis Beziehungen haben gestrichelte Linien.
 

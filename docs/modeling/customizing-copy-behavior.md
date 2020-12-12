@@ -1,5 +1,7 @@
 ---
 title: Anpassen des Kopierverhaltens
+description: Erfahren Sie, wie Sie in einer mit dem Visual Studio-Visualisierungs-und Modellierungs-SDK erstellten DSL ändern können, was geschieht, wenn der Benutzer Elemente kopiert und einfügt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547341"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363106"
 ---
 # <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
 In einer domänenspezifischen Sprache (DSL), die mit dem Visual Studio-Visualisierungs-und Modellierungs-SDK erstellt wurde, können Sie ändern, was geschieht, wenn der Benutzer Elemente kopiert und einfügt.
@@ -46,7 +48,7 @@ Legen Sie im DSL-Explorer die Eigenschaft **Kopiervorgang aktivieren** des Knote
 Legen Sie die Eigenschaft " **Kopieren** " der Rolle auf " **Kopieren" nur an den Link weiter**. Weitere Informationen finden Sie unter [Anpassen des Verhaltens](#customizeLinks)von Verknüpfungs Kopien.
 
  Kopieren Sie verknüpfte Elemente. Wenn Sie ein neues Element kopieren, werden beispielsweise auch Kopien verknüpfter Kommentarfelder erstellt.
-Legen Sie die Eigenschaft **Kopie** Verteilen der Rolle auf **Kopie an Link und gegenteiligen Rollen**Inhaber weitergeben fest. Weitere Informationen finden Sie unter [Anpassen des Verhaltens](#customizeLinks)von Verknüpfungs Kopien.
+Legen Sie die Eigenschaft **Kopie** Verteilen der Rolle auf **Kopie an Link und gegenteiligen Rollen** Inhaber weitergeben fest. Weitere Informationen finden Sie unter [Anpassen des Verhaltens](#customizeLinks)von Verknüpfungs Kopien.
 
  **Duplizieren Sie Elemente schnell durch Kopieren und Einfügen.**  Normalerweise ist das Element, das Sie gerade kopiert haben, noch ausgewählt, und Sie können nicht den gleichen Elementtyp darin einfügen.
 Fügen Sie der Domänenklasse eine Direktive für Elementzusammenführungen hinzu, und legen Sie sie für vorwärts gerichtete Zusammenführungen in der übergeordneten Klasse fest. Dies hat die gleichen Auswirkungen auf Ziehvorgänge. Weitere Informationen finden Sie unter [Anpassen der Element Erstellung und-](../modeling/customizing-element-creation-and-movement.md)Verschiebung.

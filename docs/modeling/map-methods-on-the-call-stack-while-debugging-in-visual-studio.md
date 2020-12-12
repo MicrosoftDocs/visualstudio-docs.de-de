@@ -1,5 +1,7 @@
 ---
 title: Zuordnen von Methoden in der Aufrufliste beim Debuggen
+description: Erfahren Sie, wie Sie eine Code Map erstellen, um die aufrufsstapel während des Debuggens visuell zu verfolgen. Außerdem erfahren Sie, wie Sie auf der Karte Notizen machen können, um zu verfolgen, wie der Code ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532703"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362430"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Zuordnen von Methoden in der Aufrufliste beim Debuggen in Visual Studio
 
@@ -79,7 +81,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
 
 1. Beginnen Sie mit dem Debuggen. (Tastatur: **F5**)
 
-2. Nachdem Ihre APP in den Unterbrechungs Modus wechselt oder Sie eine Funktion schrittweise ausführen, wählen Sie **Code Map**aus. (Tastatur: **STRG**  +  **UMSCHALT**  +  **`** )
+2. Nachdem Ihre APP in den Unterbrechungs Modus wechselt oder Sie eine Funktion schrittweise ausführen, wählen Sie **Code Map** aus. (Tastatur: **STRG**  +  **UMSCHALT**  +  **`** )
 
      ![Code Map auswählen, um Aufruflistenzuordnung zu starten](../debugger/media/debuggermap_choosecodemap.png)
 

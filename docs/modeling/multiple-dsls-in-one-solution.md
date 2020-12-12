@@ -1,5 +1,7 @@
 ---
 title: Mehrere DSLs in einer Projektmappe
+description: Erfahren Sie, wie Sie mehrere domänenspezifische Sprachen (DSLs) als Teil einer einzelnen Projekt Mappe verpacken können, damit Sie zusammen installiert werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fbadc93f6245427284ea10c1cdd7cf99c5a7f68
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542596"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363091"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Mehrere DSLs in einer Projektmappe
 
@@ -32,7 +34,7 @@ Sie können verschiedene Techniken für die Integration mehrerer DSLs nutzen. We
 
    - Ändern Sie die Namen der **DSL** -und **dslpackage** -Projekte, sodass Sie sich alle unterscheiden. Beispiel: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   - Aktualisieren Sie diese Zeile in jedem **dslpackage \* \ Source.Extension.tt**auf den richtigen DSL-Projektnamen:
+   - Aktualisieren Sie diese Zeile in jedem **dslpackage \* \ Source.Extension.tt** auf den richtigen DSL-Projektnamen:
 
       `string dslProjectName = "Dsl2";`
 
@@ -52,9 +54,9 @@ Sie können verschiedene Techniken für die Integration mehrerer DSLs nutzen. We
 
 3. Erstellen Sie die Projektmappe.
 
-   Die resultierende VSIX installiert beide DSLs. Sie können Sie mit F5 testen oder _yourvsixproject_**\bin\debug \\ \* . vsix**bereitstellen.
+   Die resultierende VSIX installiert beide DSLs. Sie können Sie mit F5 testen oder _yourvsixproject_**\bin\debug \\ \* . vsix** bereitstellen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Integrieren von Modellen mit Visual Studio-ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Gewusst wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)

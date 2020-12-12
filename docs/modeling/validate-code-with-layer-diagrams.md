@@ -1,5 +1,7 @@
 ---
 title: Überprüfen von Code mit Abhängigkeitsdiagrammen
+description: Um sicherzustellen, dass der Code nicht mit dem Entwurf in Konflikt steht, sollten Sie den Code mit Abhängigkeits Diagrammen in Visual Studio validieren.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975fe8eac5657e245027a4811e50bbc93528cfe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80759704"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362547"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -59,11 +61,11 @@ Sie können Code manuell über ein offenes Abhängigkeits Diagramm in Visual Stu
 
 ## <a name="live-dependency-validation"></a>Live-Abhängigkeits Überprüfung
 
-Die Überprüfung der Abhängigkeit erfolgt in Echtzeit, und Fehler werden sofort im **Fehlerliste**angezeigt.
+Die Überprüfung der Abhängigkeit erfolgt in Echtzeit, und Fehler werden sofort im **Fehlerliste** angezeigt.
 
 * Die Live Validierung wird für c# und Visual Basic unterstützt.
 
-* Um die vollständige projektmappenanalyse bei Verwendung der Live-Abhängigkeits Überprüfung zu aktivieren, öffnen Sie die Options Einstellungen in der Goldene Leiste, die im **Fehlerliste**angezeigt wird
+* Um die vollständige projektmappenanalyse bei Verwendung der Live-Abhängigkeits Überprüfung zu aktivieren, öffnen Sie die Options Einstellungen in der Goldene Leiste, die im **Fehlerliste** angezeigt wird
 
   - Sie können den Gold-Balken endgültig verwerfen, wenn Sie nicht alle architektonischen Probleme in Ihrer Lösung sehen möchten.
   - Wenn Sie die vollständige projektmappenanalyse nicht aktivieren, wird die Analyse nur für die bearbeiteten Dateien durchgeführt.
@@ -80,23 +82,23 @@ Sie können Ebenen mit Websites, Office-Dokumenten, nur-Text-Dateien und Dateien
 
 1. Wählen Sie im Abhängigkeits Diagramm eine oder mehrere Ebenen aus, klicken Sie mit der rechten Maustaste auf Ihre Auswahl, und klicken Sie dann auf **Links anzeigen**.
 
-2. Sehen Sie sich im **ebenenexplorer**die Spalte **unterstützt Validierung** an. Wenn der Wert "false" ist, wird die Überprüfung vom Element nicht unterstützt.
+2. Sehen Sie sich im **ebenenexplorer** die Spalte **unterstützt Validierung** an. Wenn der Wert "false" ist, wird die Überprüfung vom Element nicht unterstützt.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Andere .NET-Assemblys und Projekte zur Validierung einschließen
 
 Wenn Sie Elemente in das Abhängigkeits Diagramm ziehen, werden die Verweise auf die entsprechenden .NET-Assemblys oder-Projekte automatisch dem Ordner für **ebenenverweise** im Modellierungsprojekt hinzugefügt. Dieser Ordner enthält Verweise auf die Assemblys und Projekte, die bei der Validierung analysiert werden. Sie können andere .NET-Assemblys und-Projekte zur Validierung hinzufügen, ohne Sie manuell in das Abhängigkeits Diagramm zu ziehen.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt oder den Ordner **ebenenverweise** , und klicken Sie dann auf **Verweis hinzufügen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Modellierungsprojekt oder den Ordner **ebenenverweise** , und klicken Sie dann auf **Verweis hinzufügen**.
 
 2. Wählen Sie im Dialogfeld **Verweis hinzufügen** die Assemblys oder Projekte aus, und klicken Sie dann auf **OK**.
 
 ## <a name="validate-code-manually"></a>Code manuell überprüfen
 
-Wenn Sie über ein offenes Abhängigkeits Diagramm verfügen, das mit Projektmappenelementen verknüpft ist, können Sie den Befehl **"Verknüpfung über** prüfen" aus dem Diagramm ausführen. Sie können auch die Eingabeaufforderung verwenden, um den **MSBuild** -Befehl auszuführen, bei dem die benutzerdefinierte Eigenschaft **/p: ValidateArchitecture** auf **true**festgelegt ist. Bei Codeänderungen sollten Sie beispielsweise regelmäßig eine Ebenenvalidierung durchführen, um Abhängigkeitskonflikte frühzeitig lösen zu können.
+Wenn Sie über ein offenes Abhängigkeits Diagramm verfügen, das mit Projektmappenelementen verknüpft ist, können Sie den Befehl **"Verknüpfung über** prüfen" aus dem Diagramm ausführen. Sie können auch die Eingabeaufforderung verwenden, um den **MSBuild** -Befehl auszuführen, bei dem die benutzerdefinierte Eigenschaft **/p: ValidateArchitecture** auf **true** festgelegt ist. Bei Codeänderungen sollten Sie beispielsweise regelmäßig eine Ebenenvalidierung durchführen, um Abhängigkeitskonflikte frühzeitig lösen zu können.
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Überprüfen von Code aus einem geöffneten Abhängigkeits Diagramm
 
-1. Klicken Sie mit der rechten Maustaste auf die Diagramm Oberfläche, und klicken Sie auf **Architektur**überprüfen.
+1. Klicken Sie mit der rechten Maustaste auf die Diagramm Oberfläche, und klicken Sie auf **Architektur** überprüfen.
 
     > [!NOTE]
     > Standardmäßig ist die **Eigenschaft** Buildvorgang für die Abhängigkeits Diagramm Datei (. layerdiagram) auf **Validate** festgelegt, sodass das Diagramm in den Überprüfungsprozess eingeschlossen wird.
@@ -161,7 +163,7 @@ Während des Entwicklungsprozesses können Sie ggf. einige der Konflikte unterdr
 
 Verwenden Sie diese Tasks, um Validierungs Fehler im Fenster **Fehlerliste** zu verwalten:
 
-|**An**|**Befolgen Sie diese Schritte.**|
+|**An**|Führen Sie **diese Schritte** aus.|
 |-|-|
 |Unterdrücken von ausgewählten Fehlern während der Validierung|Klicken Sie mit der rechten Maustaste auf einen oder mehrere ausgewählte Fehler, zeigen Sie auf **Validierungs Fehler verwalten**, und klicken Sie dann auf **Fehler unterdrücken**.<br /><br /> Die unterdrückten Fehler werden durchgestrichen dargestellt. Beim nächsten Ausführen der Validierung werden diese Fehler nicht mehr angezeigt.<br /><br /> Unterdrückte Fehler werden in einer Unterdrückungen-Datei für die entsprechende Abhängigkeits Diagramm Datei nachverfolgt.|
 |Beenden der Unterdrückung von ausgewählten Fehlern|Klicken Sie mit der rechten Maustaste auf den ausgewählten Fehler oder Fehler, zeigen Sie auf **Validierungs Fehler verwalten**, und klicken Sie dann auf **Fehler nicht mehr unterdrücken**.<br /><br /> Beim nächsten Ausführen der Validierung werden die ausgewählten unterdrückten Fehler wieder angezeigt.|
@@ -182,15 +184,15 @@ Sie können eine Ebenenvalidierung bei jeder Ausführung eines lokalen Builds du
 
 \- oder -
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Modellierungsprojekt, das das Abhängigkeits Diagramm oder die Diagramme enthält, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Modellierungsprojekt, das das Abhängigkeits Diagramm oder die Diagramme enthält, und klicken Sie dann auf **Eigenschaften**.
 
-2. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **Architektur validieren** des Modellierungs Projekts auf **true**fest.
+2. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **Architektur validieren** des Modellierungs Projekts auf **true** fest.
 
     Dadurch wird das Modellierungsprojekt in den Validierungsprozess eingeschlossen.
 
-3. Klicken Sie in **Projektmappen-Explorer**auf die Abhängigkeits Diagramm Datei (. layerdiagram), die Sie für die Validierung verwenden möchten.
+3. Klicken Sie in **Projektmappen-Explorer** auf die Abhängigkeits Diagramm Datei (. layerdiagram), die Sie für die Validierung verwenden möchten.
 
-4. Stellen Sie im **Eigenschaften** Fenster sicher, dass **die Eigenschaft Buildvorgang des** Diagramms auf **überprüfen**festgelegt ist.
+4. Stellen Sie im **Eigenschaften** Fenster sicher, dass **die Eigenschaft Buildvorgang des** Diagramms auf **überprüfen** festgelegt ist.
 
     Dies schließt das Abhängigkeits Diagramm im Validierungsprozess ein.
 
@@ -200,7 +202,7 @@ Informationen zum Verwalten von Fehlern im Fenster Fehlerliste finden Sie unter 
 
 In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Auflösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [Beheben von ebenenvalidierungsproblemen](#troubleshoot-layer-validation-issues).
 
-|**Problem**|**Mögliche Ursache**|**Auflösung**|
+|**Problem**|**Mögliche Ursache**|**Lösung**|
 |-|-|-|
 |Validierungsfehler treten nicht wie erwartet auf.|Die Validierung funktioniert nicht in Abhängigkeits Diagrammen, die aus anderen Abhängigkeits Diagrammen in Projektmappen-Explorer kopiert werden und sich im gleichen Modellierungsprojekt befinden. Abhängigkeits Diagramme, die auf diese Weise kopiert werden, enthalten die gleichen Verweise wie das ursprüngliche Abhängigkeits Diagramm.|Fügen Sie dem Modellierungsprojekt ein neues Abhängigkeits Diagramm hinzu.<br /><br /> Kopieren Sie die Elemente aus dem Quell Abhängigkeits Diagramm in das neue Diagramm.|
 
@@ -238,4 +240,4 @@ Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwen
 
 - [Live-Abhängigkeits Validierung in Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)
-- [Video: Überprüfen der Architektur Abhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Video: Überprüfen der Architekturabhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

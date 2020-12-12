@@ -1,5 +1,7 @@
 ---
 title: Generieren von Dateien mit dem Hilfsprogramm "TextTransform"
+description: Erfahren Sie, wie das textTransform-Hilfsprogramm ein Befehlszeilen Tool ist, das Sie verwenden können, um eine Textvorlage zu transformieren.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec659bfee9253dfb198c2747e1b5d7fb6b78f2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d849439f3c7b8af310f1f82fc0af8f086139d12b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596553"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363912"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "textTransform"
 
@@ -70,13 +72,13 @@ TextTransform [<options>] <templateName>
 
 |**Option**|**Beschreibung**|
 |-|-|
-|**-out** \<filename>|Die Datei, in die die Ausgabe der Transformation geschrieben wird.|
+|**-out**\<filename>|Die Datei, in die die Ausgabe der Transformation geschrieben wird.|
 |**-r**\<assembly>|Eine Assembly, die zum Kompilieren und Ausführen der Textvorlage verwendet wird.|
 |**-u**\<namespace>|Ein Namespace, der zum Kompilieren der Vorlage verwendet wird.|
 |**-I**\<includedirectory>|Ein Verzeichnis, das die in der angegebenen Textvorlage enthaltenen Textvorlagen enthält.|
 |**-P**\<referencepath>|Ein Verzeichnis, in dem nach Assemblys gesucht werden soll, die in der Textvorlage oder der Option **-r** angegeben sind.<br /><br /> Um z. b. für die Visual Studio-API verwendete Assemblys einzuschließen, verwenden Sie<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-DP** \<processorName> ! \<className> !\<assemblyName&#124;codeBase>|Der Name, der vollständige Typname und die Assembly eines direktivenprozessors, der zum Verarbeiten von benutzerdefinierten Direktiven in der Textvorlage verwendet werden kann.|
-|**-a** [processorname]! [directivename]! \<parameterName> !\<parameterValue>|Geben Sie einen Parameterwert für einen Direktivenprozessor an. Wenn Sie nur den Parameternamen und den Wert angeben, ist der Parameter für alle direktivenprozessoren verfügbar. Wenn Sie einen Direktivenprozessor angeben, ist der-Parameter nur für den angegebenen Prozessor verfügbar. Wenn Sie einen Direktivennamen angeben, ist der-Parameter nur verfügbar, wenn die angegebene Direktive verarbeitet wird.<br /><br /> Verwenden Sie [itexttemplatingenginehost. resolveparametervalue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)), um auf die Parameterwerte von einem Direktivenprozessor oder einer Textvorlage zuzugreifen. Fügen Sie in einer Textvorlage `hostspecific` in die Template-Direktive ein, und rufen Sie die Meldung für auf `this.Host` . Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Geben Sie immer die Zeichen "!" ein, auch wenn Sie die optionalen Prozessor-und Direktivennamen weglassen. Beispiel:<br /><br /> `-a !!param!value`|
+|**-a** [processorname]! [directivename]! \<parameterName> !\<parameterValue>|Geben Sie einen Parameterwert für einen Direktivenprozessor an. Wenn Sie nur den Parameternamen und den Wert angeben, ist der Parameter für alle direktivenprozessoren verfügbar. Wenn Sie einen Direktivenprozessor angeben, ist der-Parameter nur für den angegebenen Prozessor verfügbar. Wenn Sie einen Direktivennamen angeben, ist der-Parameter nur verfügbar, wenn die angegebene Direktive verarbeitet wird.<br /><br /> Verwenden Sie [itexttemplatingenginehost. resolveparametervalue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)), um auf die Parameterwerte von einem Direktivenprozessor oder einer Textvorlage zuzugreifen. Fügen Sie in einer Textvorlage `hostspecific` in die Template-Direktive ein, und rufen Sie die Meldung für auf `this.Host` . Beispiel:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Geben Sie immer die Zeichen "!" ein, auch wenn Sie die optionalen Prozessor-und Direktivennamen weglassen. Zum Beispiel:<br /><br /> `-a !!param!value`|
 |**-h**|Stellt Hilfe bereit.|
 
 ## <a name="related-topics"></a>Zugehörige Themen

@@ -1,5 +1,7 @@
 ---
 title: Definieren von Formen und Konnektoren
+description: Erfahren Sie mehr über die verschiedenen grundlegenden Arten von Formen, die Sie verwenden können, um Informationen zu einem Diagramm in einer domänenspezifischen Sprache (DSL) anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589668"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363821"
 ---
 # <a name="define-shapes-and-connectors"></a>Definieren von Formen und Connectors
 
@@ -20,7 +22,7 @@ Es gibt mehrere grundlegende Formtypen, die Sie zum Anzeigen von Informationen i
 
 ## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> Grundlegende Arten von Formen und Connectors
 
-Ein DSL-Diagramm zeigt eine Auflistung von *Formen* , die durch Linien oder *Connectors*miteinander verknüpft sind. Normalerweise gilt Folgendes (wenn auch nicht immer):
+Ein DSL-Diagramm zeigt eine Auflistung von *Formen* , die durch Linien oder *Connectors* miteinander verknüpft sind. Normalerweise gilt Folgendes (wenn auch nicht immer):
 
 - Bei Formen handelt es sich um die sichtbare Darstellung der Modellelemente.
 

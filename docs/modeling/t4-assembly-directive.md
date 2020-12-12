@@ -1,5 +1,7 @@
 ---
 title: T4-Assemblydirektive
+description: Erfahren Sie, dass die Assembly-Direktive in einer Visual Studio-Entwurfszeit-Textvorlage eine Assembly lädt, sodass der Vorlagen Code seine Typen verwenden kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41abd2b5a48f6e5e126747326e9815f3c2f46787
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591891"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363704"
 ---
 # <a name="t4-assembly-directive"></a>T4-Assemblydirektive
 
@@ -36,13 +38,13 @@ In einer Visual Studio-Textvorlage für die Entwurfszeit `assembly` lädt die-Di
 
 - Absoluter Pfad der Assembly
 
-  Sie können die `$(variableName)` -Syntax verwenden, um auf die Visual Studio `$(SolutionDir)` -Variablen, z. b., und `%VariableName%` auf Umgebungsvariablen zu verweisen. Beispiel:
+  Sie können die `$(variableName)` -Syntax verwenden, um auf die Visual Studio `$(SolutionDir)` -Variablen, z. b., und `%VariableName%` auf Umgebungsvariablen zu verweisen. Zum Beispiel:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- Die assembly-Anweisung hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Fügen Sie stattdessen die erforderlichen Verweise in den **Verweis** Bereich Ihres Visual Studio-Projekts ein. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Die assembly-Anweisung hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Fügen Sie stattdessen die erforderlichen Verweise in den **Verweis** Bereich Ihres Visual Studio-Projekts ein. Weitere Informationen finden Sie unter [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Standardassemblys
  Die folgenden Assemblys werden automatisch geladen, damit Sie keine Assemblyanweisungen dafür schreiben müssen:
@@ -88,6 +90,6 @@ In einer Visual Studio-Textvorlage für die Entwurfszeit `assembly` lädt die-Di
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [T4-Include-Direktive](../modeling/t4-include-directive.md)

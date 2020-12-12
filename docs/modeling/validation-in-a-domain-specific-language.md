@@ -1,5 +1,7 @@
 ---
 title: Validierung in einer domänenspezifischen Sprache
+description: Erfahren Sie, wie Sie Validierungs Einschränkungen definieren können, um zu überprüfen, ob das vom Benutzer erstellte Modell sinnvoll ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594005"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362534"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validierung in einer domänenspezifischen Sprache
 Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) können Sie Validierungseinschränkungen definieren, um zu überprüfen, ob das vom Benutzer erstellte Modell sinnvoll ist. Wenn Benutzer in Ihrer DSL beispielsweise einen Stammbaum von Personen und deren Vorfahren zeichnen können, könnten Sie eine Einschränkung schreiben, mit der sichergestellt wird, dass die Geburtstage der Kinder nach denen der Eltern liegen.
@@ -30,7 +32,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
 ## <a name="running-validation"></a>Ausführen der Validierung
  Wenn ein Benutzer ein Modell bearbeitet, also eine Instanz Ihrer domänenspezifischen Sprache, kann die Validierung mit den folgenden Aktionen ausgeführt werden:
 
-- Klicken Sie mit der rechten Maustaste auf das Diagramm und wählen Sie **alle**überprüfen
+- Klicken Sie mit der rechten Maustaste auf das Diagramm und wählen Sie **alle** überprüfen
 
 - Klicken Sie mit der rechten Maustaste auf den obersten Knoten im Explorer ihrer DSL, und wählen Sie **alle** überprüfen aus.
 
@@ -56,7 +58,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
 
    1. Öffnen Sie **Dsl\DslDefinition.DSL**.
 
-   2. Erweitern Sie im DSL-Explorer den Knoten **Editor** , und wählen Sie über **Prüfung**aus.
+   2. Erweitern Sie im DSL-Explorer den Knoten **Editor** , und wählen Sie über **Prüfung** aus.
 
    3. Legen Sie im Eigenschaftenfenster die Eigenschaften **verwendet**  auf fest `true` . Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.
 
@@ -82,7 +84,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
 
     Mit "ValidationCategories" wird angegeben, wann die Methode ausgeführt wird.
 
-   Beispiel:
+   Zum Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -177,7 +179,7 @@ public partial class Person
 
  Zu den Nachteilen gehört, dass die Verwaltung der kombinierten Methode schwieriger ist und dass alle Einschränkungen die gleichen `ValidationCategories` aufweisen müssen. Daher empfiehlt es sich, jede Einschränkung möglichst in einer gesonderten Methode zu belassen.
 
- **Übergeben von Werten in den Kontextcache.**  Der Kontextparameter weist ein Wörterbuch auf, in das Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:
+ **Übergeben von Werten in den Kontextcache.**  Der Kontextparameter weist ein Wörterbuch auf, in das Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Zum Beispiel:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -189,11 +191,11 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 ```
 
 ## <a name="validation-of-multiplicities"></a>Validierung von Multiplizitäten
- Validierungsmethoden zur Überprüfung der minimalen Multiplizität werden für Ihre DSL automatisch generiert. Der Code wird in **dsl\generated code\multipitvalidation.cs**geschrieben. Diese Methoden treten in Kraft, wenn Sie die Validierung im Knoten **editor\validation** im DSL-Explorer aktivieren.
+ Validierungsmethoden zur Überprüfung der minimalen Multiplizität werden für Ihre DSL automatisch generiert. Der Code wird in **dsl\generated code\multipitvalidation.cs** geschrieben. Diese Methoden treten in Kraft, wenn Sie die Validierung im Knoten **editor\validation** im DSL-Explorer aktivieren.
 
  Wenn Sie als Multiplizität einer Rolle in einer Domänenbeziehung 1..* oder 1..1 festlegen, der Benutzer aber keinen Link mit dieser Beziehung erstellt, wird eine Validierungsfehlermeldung angezeigt.
 
- Wenn Ihre DSL beispielsweise die Klassen Person und Town und eine Beziehung personlivesintown mit der Beziehung 1 hat **. \\ ** * in der Rolle "Ort" wird für jede Person, die keine Stadt hat, eine Fehlermeldung angezeigt.
+ Wenn Ihre DSL beispielsweise die Klassen Person und Town und eine Beziehung personlivesintown mit der Beziehung 1 hat **. \\** _ in der Rolle "Ort", wird für jede Person, die keine Stadt hat, eine Fehlermeldung angezeigt.
 
 ## <a name="running-validation-from-program-code"></a>Ausführen der Validierung über den Programmcode
  Sie können die Validierung ausführen, indem Sie auf einen ValidationController zugreifen oder ihn erstellen. Wenn die Fehler im Fehler Fenster für den Benutzer angezeigt werden sollen, verwenden Sie den validationcontroller, der an die docdata Ihres Diagramms angehängt ist. Wenn Sie beispielsweise einen Menübefehl schreiben, ist `CurrentDocData.ValidationController` in der Befehlssatzklasse verfügbar:
@@ -213,7 +215,7 @@ partial class MyLanguageCommandSet
 
  Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Beispiel:
+ Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Zum Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -233,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Ausführen der Validierung bei einer Änderung
  Wenn Sie sicherstellen möchten, dass der Benutzer sofort gewarnt wird, sobald das Modell ungültig wird, können Sie ein Speicherereignis definieren, das die Validierung ausführt. Weitere Informationen zu Speicher Ereignissen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Fügen Sie dem **dslpackage** -Projekt neben dem Validierungscode eine benutzerdefinierte Codedatei mit Inhalt ähnlich dem folgenden Beispiel hinzu. In diesem Code wird der an das Dokument angefügte `ValidationController` verwendet. Dieser Controller zeigt die Validierungs Fehler in der Visual Studio-Fehlerliste an.
+ Fügen Sie dem Projekt _ *dslpackage** zusätzlich zum Validierungscode eine benutzerdefinierte Codedatei mit Inhalt ähnlich dem folgenden Beispiel hinzu. In diesem Code wird der an das Dokument angefügte `ValidationController` verwendet. Dieser Controller zeigt die Validierungs Fehler in der Visual Studio-Fehlerliste an.
 
 ```csharp
 using System;
@@ -334,7 +336,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > Stellen Sie sicher, dass der Benutzer weiß, dass die Änderung angepasst oder zurückgesetzt wurde. Verwenden Sie beispielsweise `System.Windows.Forms.MessageBox.Show("message").`.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)

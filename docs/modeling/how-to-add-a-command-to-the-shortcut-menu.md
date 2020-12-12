@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü'
+description: Erfahren Sie, wie Sie Ihrer domänenspezifischen Sprache (DSL) Menübefehle hinzufügen können, damit Ihre Benutzer Aufgaben ausführen können, die für Ihre DSL spezifisch sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545716"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363340"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 
@@ -57,7 +59,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
 ### <a name="to-add-the-command"></a>So fügen Sie den Befehl hinzu
 
-1. Öffnen Sie in **Projektmappen-Explorer**unter dem **dslpackage** -Projekt die Datei Commands. vsct.
+1. Öffnen Sie in **Projektmappen-Explorer** unter dem **dslpackage** -Projekt die Datei Commands. vsct.
 
 2. Definieren Sie im `Commands`-Element mindestens eine Schaltfläche und eine Gruppe. Eine *Schaltfläche* ist ein Element im Menü. Eine *Gruppe* ist ein Abschnitt im Menü. Fügen Sie folgende Elemente hinzu, um diese Objekte zu definieren:
 
@@ -135,11 +137,11 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
 ### <a name="to-update-the-packagett-file"></a>So aktualisieren Sie die Datei Package.tt
 
-1. Öffnen Sie in **Projektmappen-Explorer**im **dslpackage** -Projekt im Ordner **generatedcode** die Datei Package.tt.
+1. Öffnen Sie in **Projektmappen-Explorer** im **dslpackage** -Projekt im Ordner **generatedcode** die Datei Package.tt.
 
 2. Suchen Sie das `ProvideMenuResource`-Attribut.
 
-3. Erhöhen Sie den `version`-Parameter des Attributs. Es ist der zweite Parameter. Auf Wunsch können Sie den Parameternamen explizit angeben, um sich an den Zweck zu erinnern. Beispiel:
+3. Erhöhen Sie den `version`-Parameter des Attributs. Es ist der zweite Parameter. Auf Wunsch können Sie den Parameternamen explizit angeben, um sich an den Zweck zu erinnern. Zum Beispiel:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -157,9 +159,9 @@ Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.Comma
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. Erstellen Sie in **dslpackage**einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs` .
+2. Erstellen Sie in **dslpackage** einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs` .
 
-3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Beispiel:
+3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -357,7 +359,7 @@ Die **OnStatus-Methode wird nicht aufgerufen**:
 
 - Stellen Sie sicher, dass frühere Versionen des Pakets deinstalliert wurden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Gewusst wie: Ändern eines Standardmenü Befehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

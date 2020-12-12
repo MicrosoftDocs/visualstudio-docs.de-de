@@ -1,5 +1,7 @@
 ---
 title: Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
+description: Erfahren Sie, wie Sie im Visual Studio-SDK für Visualisierung und Modellierung eine unvollständige DSL-Definition erstellen können, die Sie in eine andere DSL importieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1685fe4fc7db6728ebc1ca6a12e27bb6f42589b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542544"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363756"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
 Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie eine unvollständige DSL-Definition erstellen, die Sie in eine andere DSL importieren können. Auf diese Weise können Sie allgemeine Teile von ähnlichen Modellen berücksichtigen.
@@ -45,7 +47,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie eine unvollst
 
 #### <a name="to-import-a-dsl-library"></a>So importieren Sie eine DSL-Bibliothek
 
-1. Klicken Sie in einer anderen DSL-Definition im **DSL-Explorer**mit der rechten Maustaste auf die Stamm Klasse der DSL, und klicken Sie dann auf **neuen dsllibrary-Import hinzufügen**.
+1. Klicken Sie in einer anderen DSL-Definition im **DSL-Explorer** mit der rechten Maustaste auf die Stamm Klasse der DSL, und klicken Sie dann auf **neuen dsllibrary-Import hinzufügen**.
 
 2. Legen Sie in der Eigenschaftenfenster den **Dateipfad** der Bibliothek fest. Sie können entweder einen relativen oder einen absoluten Pfad verwenden.
 
@@ -61,7 +63,7 @@ Im Visual Studio-Visualisierungs-und Modellierungs-SDK können Sie eine unvollst
 
    In einer DSL-Bibliothek können andere Bibliotheken importiert werden. Wenn Sie eine Bibliothek importieren, werden die zugehörigen Importe auch automatisch im DSL-Explorer angezeigt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
 
