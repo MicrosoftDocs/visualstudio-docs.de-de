@@ -1,5 +1,7 @@
 ---
 title: Anpassen einer domänenspezifischen Sprache
+description: Erfahren Sie, wie Sie benutzerdefinierten Code verwenden, um auf ein Modell in einer domänenspezifischen Sprache (DSL) zuzugreifen, Sie zu ändern oder ein Modell zu erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b67a50623eb1924c4a18b57524c409f7eba6ab20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546873"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360454"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>Schreiben von Code zum Anpassen einer domänenspezifischen Sprache
 
@@ -24,11 +26,11 @@ Es gibt mehrere Kontexte, in denen Sie Code schreiben können, der mit einer DSL
 
 - **Benutzerdefinierte Befehle.** Sie können einen Befehl erstellen, den Benutzer aufrufen können, indem Sie mit der rechten Maustaste auf das Diagramm klicken und das Modell ändern. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-- **Prüfung** Sie können Code schreiben, mit dem überprüft wird, ob sich das Modell in einem ordnungsgemäßen Zustand befindet. Weitere Informationen finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
+- **Prüfung** Sie können Code schreiben, mit dem überprüft wird, ob sich das Modell in einem ordnungsgemäßen Zustand befindet. Weitere Informationen finden Sie unter [Validierung in einer Domain-Specific Sprache](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Überschreiben des Standard Verhaltens.** Sie können zahlreiche Aspekte des Codes ändern, der aus "DslDefinition. DSL" generiert wird. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).
 
-- **Text Transformation.** Sie können Textvorlagen schreiben, die Code enthalten, der auf ein Modell zugreift und eine Textdatei generiert, z. b. um Programmcode zu generieren. Weitere Informationen finden Sie unter [Erstellen von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
+- **Text Transformation.** Sie können Textvorlagen schreiben, die Code enthalten, der auf ein Modell zugreift und eine Textdatei generiert, z. b. um Programmcode zu generieren. Weitere Informationen finden Sie unter [Erstellen von Code aus einer Domain-Specific Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
 
 - **Weitere Visual Studio-Erweiterungen.** Sie können separate VSIX-Erweiterungen schreiben, um Modelle zu lesen und zu ändern. Weitere Informationen finden Sie unter Gewusst [wie: Öffnen eines Modells aus einer Datei im Programm Code](../modeling/how-to-open-a-model-from-file-in-program-code.md) .
 
@@ -72,6 +74,6 @@ das Beibehalten von Objekten im Speicher (anstelle der normalen Objekte) bietet 
 
 - **Serialisierung:** Der Speicher bietet eine Standardmethode zum Serialisieren der darin enthaltenen Objekte in eine Datei. Sie können die Regeln für die Serialisierung und Deserialisierung anpassen. Weitere Informationen finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)

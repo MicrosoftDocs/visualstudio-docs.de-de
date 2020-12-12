@@ -1,5 +1,7 @@
 ---
 title: Neuerungen beim Entwurf in Visual Studio 2017
+description: Erfahren Sie mehr über die neuen Features für den Code Entwurf, wie die Live-Abhängigkeits Überprüfung, die in Visual Studio 2017 verfügbar sind.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf622d9762e86bcb75a08c60085a15abb6fdca91
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92299512"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360974"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Neuerungen beim Entwurf in Visual Studio 2017
 

@@ -1,5 +1,7 @@
 ---
 title: Grundlegendes zum DSL-Code
+description: Erfahren Sie, wie die DSL-Lösung (Domain-Specific Language) eine API generiert, die Sie zum Lesen und Aktualisieren von Instanzen der DSL in Visual Studio verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,23 +11,23 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565941"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361455"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 
-Eine DSL-Lösung (Domain-Specific Language) generiert eine API, mit der Sie Instanzen der DSL in Visual Studio lesen und aktualisieren können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.
+Eine Domain-Specific Language (DSL)-Lösung generiert eine API, mit der Sie Instanzen der DSL in Visual Studio lesen und aktualisieren können. Diese API wird im Code definiert, der aus der DSL-Definition generiert wird. In diesem Thema wird die generierte API beschrieben.
 
 ## <a name="the-example-solution-component-diagrams"></a>Beispielprojektmappe: Komponentendiagramme
 
 Um die Lösung zu erstellen, die die meisten der Beispiele in diesem Thema ist, erstellen Sie eine DSL aus der Lösungs Vorlage für **Komponentenmodelle** . Dies ist eine der Standardvorlagen, die angezeigt wird, wenn Sie eine neue DSL-Projektmappe erstellen.
 
 > [!NOTE]
-> Die DSL-Vorlage für Komponenten Diagramme wird als **Domänen spezifischer sprach Designer**bezeichnet.
+> Die DSL-Vorlage für Komponenten Diagramme wird als **Domänen spezifischer sprach Designer** bezeichnet.
 
 Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorlage nicht vertraut sind. Achten Sie insbesondere darauf, dass Sie Ports erstellen, indem Sie ein Port-Tool auf eine Komponente ziehen, und dass Sie Verbindungen mit Ports herstellen können.
 
@@ -35,7 +37,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
  Das **DSL** -Projekt definiert die API für Ihre DSL. Das **dslpackage** -Projekt definiert, wie es in Visual Studio integriert wird. Sie können auch eigene Projekte hinzufügen, die durch das Modell generierten Code enthalten können.
 
 ### <a name="the-code-directories"></a>Codeverzeichnisse
- Der größte Teil des Codes in jedem dieser Projekte wird von **Dsl\DslDefinition.DSL**generiert. Der generierte Code befindet sich im **generierten Code** Ordner. Um eine generierte Datei anzuzeigen, klicken Sie auf **[+]** neben der generierten **TT** -Datei.
+ Der größte Teil des Codes in jedem dieser Projekte wird von **Dsl\DslDefinition.DSL** generiert. Der generierte Code befindet sich im **generierten Code** Ordner. Um eine generierte Datei anzuzeigen, klicken Sie auf **[+]** neben der generierten **TT** -Datei.
 
  Es empfiehlt sich, den generierten Code zu untersuchen, damit Sie die DSL besser verstehen. Erweitern Sie zum Anzeigen der generierten Dateien die TT-Dateien im Projektmappen-Explorer.
 
@@ -66,11 +68,11 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
  `ConnectionBuilders.cs`
 
- Ein Verbindungs-Generator ist eine Klasse, die Beziehungen erstellt. Es ist der Code für ein Verbindungstool. Diese Datei enthält ein Paar von Klassen für jedes Verbindungstool. Ihre Namen werden von den Namen der Domänen Beziehung und des Verbindungs Tools abgeleitet: *Beziehungs*Generator und *Connector Tool*connectaction.
+ Ein Verbindungs-Generator ist eine Klasse, die Beziehungen erstellt. Es ist der Code für ein Verbindungstool. Diese Datei enthält ein Paar von Klassen für jedes Verbindungstool. Ihre Namen werden von den Namen der Domänen Beziehung und des Verbindungs Tools abgeleitet: *Beziehungs* Generator und *Connector Tool* connectaction.
 
  (Im Beispiel der Komponentenprojektmappe trägt einer der Verbindungs-Generatoren den Namen "ConnectionBuilder". Dies ist ein Zufall, da die Domänenbeziehung "Connection" genannt wurde.)
 
- Die Beziehung wird in der *Beziehungs* `Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Beispiel:
+ Die Beziehung wird in der *Beziehungs* `Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Zum Beispiel:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -86,7 +88,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
  Enthält die Klassen für die Konnektoren, bei denen es sich um die Diagrammelemente handelt, die üblicherweise Verweisbeziehungen darstellen. Jede Klasse wird aus einem Konnektor in der DSL-Definition generiert. Jede Konnektorklasse wird von <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> abgeleitet.
 
- Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die**Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
+ Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die** Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
 
  Informationen dazu, wie weitere Stilmerkmale zur Laufzeit variabel gemacht werden, finden Sie in den Beispielen <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> und <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
 
@@ -94,7 +96,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
  Enthält die Klasse, die das Diagramm definiert. Sie wird von <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> abgeleitet.
 
- Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die**Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
+ Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die** Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
 
  Darüber hinaus enthält die Datei die Regel `FixupDiagram`, die angewendet wird, wenn dem Modell ein neues Element hinzugefügt wird. Die Regel fügt eine neue Form hinzu und verknüpft die Form mit dem Modellelement.
 
@@ -102,7 +104,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
  Mit diesem Direktivenprozessor können Ihre Benutzer Textvorlagen schreiben, die eine Instanz Ihrer DSL lesen. Der Direktivenprozessor lädt die Assemblys (DLLs) für Ihre DSL und fügt effektiv `using`-Anweisungen für Ihren Namespace ein. So kann der Code in den Textvorlagen die Klassen und Beziehungen verwenden, die Sie in Ihrer DSL definiert haben.
 
- Weitere Informationen finden Sie unter Erstellen [von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md) und [Erstellen von benutzerdefinierten T4-Text Vorlagen-direktivenprozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).
+ Weitere Informationen finden Sie unter Erstellen [von Code aus einer Domain-Specific Sprache](../modeling/generating-code-from-a-domain-specific-language.md) und [Erstellen von benutzerdefinierten T4-Text Vorlagen-direktivenprozessoren](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  `DomainClasses.cs`
 
@@ -122,7 +124,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
 - EGP-Handlermethoden (Elementgruppenprototyp). Diese sind erforderlich, wenn der Benutzer ein anderes Element auf Instanzen dieser Klasse zusammen *führen* (hinzufügen) kann. Üblicherweise führt der Benutzer dazu einen Ziehvorgang von einem Elementtool oder einer anderen Form oder einen Einfügevorgang aus.
 
-   In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Für
+   In der Beispiel-DSL kann ein Eingangsport oder ein Ausgangsport in einer Komponente zusammengeführt werden. Außerdem können Komponenten und Kommentare im Modell zusammengeführt werden. Die
 
    Die EGP-Handlermethoden in der Komponentenklasse lassen es zu, dass eine Komponente Ports akzeptiert, aber keine Kommentare. Der EGP-Handler in der Stammmodellklasse akzeptiert Kommentare und Komponenten, aber keine Ports.
 
@@ -153,7 +155,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
  In Beziehungsrollen, in denen Sie die Multiplizität 1..1 oder 1..* angegeben haben, sollte der Benutzer informiert werden, dass mindestens eine Instanz der Beziehung erforderlich ist. Diese Datei enthält Validierungseinschränkungen, mit denen diese Warnungen implementiert werden. Der Link 1..1 zu einem übergeordneten Einbettungselement wird nicht überprüft.
 
- Damit diese Einschränkungen ausgeführt werden, müssen Sie im DSL-Explorer im Knoten **Editor \ Validierung** eine der Optionen **Verwendungs** Optionen festgelegt haben. Weitere Informationen finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
+ Damit diese Einschränkungen ausgeführt werden, müssen Sie im DSL-Explorer im Knoten **Editor \ Validierung** eine der Optionen **Verwendungs** Optionen festgelegt haben. Weitere Informationen finden Sie unter [Validierung in einer Domain-Specific Sprache](../modeling/validation-in-a-domain-specific-language.md).
 
  `PropertiesGrid.cs`
 
@@ -169,7 +171,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
   Eine Serialisierungsklasse für alle Domänenklassen, Beziehungen, Formen, Konnektoren, Diagramme und Modelle.
 
-  Viele der Funktionen dieser Klassen können durch die Einstellungen im DSL-Explorer unter dem XML- **Serialisierungsverhalten**gesteuert werden.
+  Viele der Funktionen dieser Klassen können durch die Einstellungen im DSL-Explorer unter dem XML- **Serialisierungsverhalten** gesteuert werden.
 
   `Shapes.cs`
 
@@ -177,7 +179,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
   Wenn Sie die generierten Methoden mit ihren eigenen Methoden in einer partiellen Klasse überschreiben möchten, generiert Set eine **Double-abgeleitete** für den Connector in der DSL-Definition. Um einen Konstruktor durch ihren eigenen Code zu ersetzen, **hat Set einen benutzerdefinierten Konstruktor**.
 
-  Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die**Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
+  Klicken Sie im DSL-Definitions Diagramm mit der rechten Maustaste auf die Klasse, und zeigen Sie auf verfügbar machen **, um die** Farbe und andere Formatvorlagen Variablen zur Laufzeit festzulegen.
 
   Informationen dazu, wie weitere Stilmerkmale zur Laufzeit variabel gemacht werden, finden Sie in den Beispielen <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> und <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
 
@@ -344,9 +346,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  Mit dieser Datei wird gesteuert, wie die DSL in eine Visual Studio-Integrationserweiterung (VSIX) verpackt wird. Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
 - [Grundlagen von Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md)
 - [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Schreiben von Code zum Anpassen einer Domain-Specific Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

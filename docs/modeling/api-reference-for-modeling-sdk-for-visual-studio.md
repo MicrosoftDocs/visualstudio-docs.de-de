@@ -1,5 +1,7 @@
 ---
 title: API-Referenz für das Modellierungs-SDK
+description: Erfahren Sie, wie das Visual Studio-SDK für Visualisierung und Modellierung die Plattform bereitstellt, auf der Ihre DSLs-Tools (Domain-Specific Languages) erstellt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4be65a94892aa87dbc7f146ce3671336a37558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721527b71e12b2c6143fa952d663cccc2786b34f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76113733"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361078"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>API-Referenz für Modellierungs-SDK für Visual Studio
 
@@ -20,7 +22,7 @@ Das Visual Studio-SDK für Visualisierung und Modellierung bietet die Plattform,
 
 Dieser Abschnitt enthält Referenzmaterial für Namespaces, deren Namen mit "Microsoft. VisualStudio. Modeling" beginnen.
 
-|Namespace|Inhalt|
+|Namespace|Content|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|Klassen wie ModelElement, das die Basisklasse aller Domänen Klassen ist, die Sie in einer DSL definieren.|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|Klassen, die einen Teil einer DSL-Definition bilden.|
@@ -42,6 +44,6 @@ Dieser Abschnitt enthält Referenzmaterial für Namespaces, deren Namen mit "Mic
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Ermöglicht das Definieren von Kontextmenü Befehlen (Kontextmenü).|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Ermöglicht das Definieren von Validierungs Einschränkungen.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)

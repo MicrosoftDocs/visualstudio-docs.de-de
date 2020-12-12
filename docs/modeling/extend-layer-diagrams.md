@@ -1,5 +1,7 @@
 ---
 title: Erweitern von Abhängigkeitsdiagrammen
+description: Erfahren Sie, wie Sie Code schreiben können, um Abhängigkeits Diagramme zu erstellen und zu aktualisieren, und wie Sie die Struktur Ihres Programmcodes mit Abhängigkeits Diagrammen in Visual Studio validieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d78b7005875f0544354c845cd27d187bdbf40d6d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298425"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361624"
 ---
 # <a name="extend-dependency-diagrams"></a>Erweitern von Abhängigkeitsdiagrammen
 
@@ -35,7 +37,7 @@ Auf dem Computer, auf dem Sie die Ebenenerweiterungen entwickeln möchten, muss 
 
 Auf dem Computer, auf dem Sie die Ebenenerweiterungen ausführen möchten, muss eine passende Edition von Visual Studio installiert sein. Welche Editionen von Visual Studio Abhängigkeits Diagramme unterstützen, erfahren Sie unter [Editions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)
 - [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)

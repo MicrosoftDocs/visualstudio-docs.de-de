@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Erweiterungen zu DSL-Definitionen
+description: Erfahren Sie, wie Sie mit der DSL-Definitions Erweiterung ein Paket mit Erweiterungen für eine domänenspezifische Sprache (DSL) erstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2500fc8d9e09d95d7972a4b151b01937a5570a08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07057c24494a19d77bca872ad87adf20bb125252
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544234"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361143"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen zu DSL-Definitionen
 
@@ -34,6 +36,6 @@ Ein Benutzer einer erweiterten DSL kann ein Modell erstellen und speichern, das 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwandte Blogbeiträge](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

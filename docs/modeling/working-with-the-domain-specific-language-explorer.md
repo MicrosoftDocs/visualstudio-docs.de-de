@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer
+description: Erfahren Sie mehr über den DSL-Explorer, ein Tool, das verschiedene Arten von Informationen in einer Strukturansicht anzeigt und mehrere Knoten zum Definieren einer domänenspezifischen Sprache umfasst.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 971114a95fa43dbbcda985587d08f03ac3c7fd72
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810782"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360922"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer
-Der **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Strukturansicht an. Weitere Informationen zu den meisten Elementen im DSL-Explorer finden [Sie unter Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md).
+Der **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Strukturansicht an. Weitere Informationen zu den meisten Elementen im DSL-Explorer finden Sie unter Vorgehens [Weise beim Definieren einer Domain-Specific Sprache](../modeling/how-to-define-a-domain-specific-language.md).
 
  Er enthält die folgenden Knoten:
 
@@ -33,7 +35,7 @@ Der **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Struktu
 
 - **Domänen Typen**. Eine Liste der integrierten und externen Typen, die im Modell verwendet werden.
 
-- **Editor**. Eine Liste der **Toolbox** Registerkarten und der darin enthaltenen Elemente sowie Validierungs Einstellungen für das Modell. Weitere Informationen zur Validierung finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).
+- **Editor**. Eine Liste der **Toolbox** Registerkarten und der darin enthaltenen Elemente sowie Validierungs Einstellungen für das Modell. Weitere Informationen zur Validierung finden Sie unter [Validierung in einer Domain-Specific Sprache](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Explorer-Verhalten**. Einstellungen, die das Verhalten des Explorers im generierten Designer bestimmen. Weitere Informationen zum Anpassen des Explorers finden Sie unter [Anpassen des Modell-Explorers](../modeling/customizing-the-model-explorer.md).
 

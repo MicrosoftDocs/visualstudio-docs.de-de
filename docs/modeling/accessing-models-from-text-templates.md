@@ -1,5 +1,7 @@
 ---
 title: Zugreifen auf Modelle aus Textvorlagen
+description: Erfahren Sie, wie Sie Textvorlagen zum Erstellen von Berichtsdateien, Quell Code Dateien und anderen Textdateien verwenden können, die auf domänenspezifischen Sprachmodellen basieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531468"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362287"
 ---
 # <a name="access-models-from-text-templates"></a>Zugreifen auf Modelle aus Textvorlagen
 
 Mithilfe von Textvorlagen können Sie Berichtsdateien, Quell Code Dateien und andere Textdateien erstellen, die auf domänenspezifischen Sprachmodellen basieren. Grundlegende Informationen zu Textvorlagen finden Sie unter [Code Generierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Die Textvorlagen funktionieren beim Debuggen Ihrer DSL im experimentellen Modus und funktionieren auch auf einem Computer, auf dem Sie die DSL bereitgestellt haben.
 
 > [!NOTE]
-> Wenn Sie eine DSL-Projekt Mappe erstellen, werden Sample Text Template ** \* . tt** -Dateien im debuggingprojekt generiert. Wenn Sie die Namen der Domänen Klassen ändern, funktionieren diese Vorlagen nicht mehr. Dennoch enthalten Sie die grundlegenden Direktiven, die Sie benötigen, und geben Beispiele an, die Sie entsprechend ihrer DSL aktualisieren können.
+> Wenn Sie eine DSL-Projekt Mappe erstellen, werden Sample Text Template **\* . tt** -Dateien im debuggingprojekt generiert. Wenn Sie die Namen der Domänen Klassen ändern, funktionieren diese Vorlagen nicht mehr. Dennoch enthalten Sie die grundlegenden Direktiven, die Sie benötigen, und geben Beispiele an, die Sie entsprechend ihrer DSL aktualisieren können.
 
  So greifen Sie über eine Textvorlage auf ein Modell zu:
 
@@ -150,7 +152,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ### <a name="splitting-a-long-file"></a>Aufteilen einer langen Datei
  In dieser Methode verwenden Sie eine Vorlage, um eine einzelne Datei zu generieren, die durch ein Trennzeichen getrennt ist. Dann teilen Sie die Datei in ihre Teile. Es gibt zwei Vorlagen, eine zum Generieren der einzelnen Datei und die andere, um Sie zu teilen.
 
- **Looptemplate. T4** generiert die lange einzelne Datei. Beachten Sie, dass die Dateierweiterung ". T4" lautet, da Sie nicht direkt verarbeitet werden sollte, wenn Sie auf **alle Vorlagen transformieren**klicken. Diese Vorlage verwendet einen-Parameter, der die Trenn Zeichenfolge angibt, die die Segmente trennt:
+ **Looptemplate. T4** generiert die lange einzelne Datei. Beachten Sie, dass die Dateierweiterung ". T4" lautet, da Sie nicht direkt verarbeitet werden sollte, wenn Sie auf **alle Vorlagen transformieren** klicken. Diese Vorlage verwendet einen-Parameter, der die Trenn Zeichenfolge angibt, die die Segmente trennt:
 
 ```
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>

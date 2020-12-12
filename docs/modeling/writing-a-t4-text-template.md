@@ -1,5 +1,7 @@
 ---
 title: Schreiben einer T4-Textvorlage
+description: Erfahren Sie mehr über T4-Textvorlagen und wie Sie eine Textvorlage schreiben, die Direktiven, Textblöcke und Kontroll Blöcke enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593485"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361221"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 Eine Textvorlage enthält den Text, der aus ihr generiert wird. Eine Vorlage, die eine Webseite erstellt, enthält z \<html> . b. "..." und alle anderen Standardteile einer HTML-Seite. In die Vorlage eingefügt werden *Kontroll Blöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
@@ -155,7 +157,7 @@ private int Square(int i)
  Weitere Informationen zu Kontroll Blöcken finden Sie unter [Text Vorlagen-Kontroll Blöcke](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Klassenfunktionsblöcke können Textblöcke enthalten
- Sie können eine Methode schreiben, durch die Text generiert wird. Beispiel:
+ Sie können eine Methode schreiben, durch die Text generiert wird. Zum Beispiel:
 
 ```
 List of Squares:
@@ -185,7 +187,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- Verwenden Sie absolute Pfadnamen oder standardmäßige Makronamen im Pfadnamen. Beispiel:
+ Verwenden Sie absolute Pfadnamen oder standardmäßige Makronamen im Pfadnamen. Zum Beispiel:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -238,7 +240,7 @@ private void WriteSquareLine(int i)
 
  **Laden Sie eine Datei als Navigier bares Modell**. Eine effektivere Methode besteht darin, die Daten als ein Modell zu lesen, durch das der Textvorlagencode navigieren kann. Sie können z. B. eine XML-Datei laden und mit XPath-Ausdrücken darin navigieren. Sie können [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) auch verwenden, um einen Satz von Klassen zu erstellen, mit denen Sie die XML-Daten lesen können.
 
- **Bearbeiten Sie die Modelldatei in einem Diagramm oder Formular.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] stellt Tools bereit, mit denen Sie ein Modell als Diagramm oder Windows Form bearbeiten können. Dadurch kann das Modell einfacher mit Benutzern der generierten Anwendung besprochen werden. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] erstellt auch einen Satz stark typisierter Klassen, die die Struktur des Modells widerspiegeln. Weitere Informationen finden Sie unter [Erstellen von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Bearbeiten Sie die Modelldatei in einem Diagramm oder Formular.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] stellt Tools bereit, mit denen Sie ein Modell als Diagramm oder Windows Form bearbeiten können. Dadurch kann das Modell einfacher mit Benutzern der generierten Anwendung besprochen werden. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] erstellt auch einen Satz stark typisierter Klassen, die die Struktur des Modells widerspiegeln. Weitere Informationen finden Sie unter [Erstellen von Code aus einer Domain-Specific Sprache](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Relative Dateipfade in den Entwurfszeitvorlagen
  Wenn Sie in einer [Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md)auf eine Datei in einem Speicherort verweisen möchten, der relativ zur Textvorlage ist, verwenden Sie `this.Host.ResolvePath()` . Sie müssen auch `hostspecific="true"` in der `template`-Anweisung festlegen:
@@ -264,7 +266,7 @@ Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. W
  (Dies gilt nicht für eine [Lauf Zeit Textvorlage](../modeling/run-time-text-generation-with-t4-text-templates.md), die Code bereitstellt, der zusammen mit dem restlichen Code kompiliert wird.)
 
 ## <a name="editing-templates"></a>Bearbeiten von Vorlagen
- Spezialisierte Textvorlagen-Editoren können aus dem Onlinekatalog des Erweiterungs-Managers heruntergeladen werden. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**. Klicken Sie auf **Online**Katalog, und verwenden Sie dann das Suchtool.
+ Spezialisierte Textvorlagen-Editoren können aus dem Onlinekatalog des Erweiterungs-Managers heruntergeladen werden. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**. Klicken Sie auf **Online** Katalog, und verwenden Sie dann das Suchtool.
 
 ## <a name="related-topics"></a>Zugehörige Themen
 

@@ -1,5 +1,7 @@
 ---
 title: Eigenschaften von Domänenklassen
+description: Erfahren Sie mehr über die verschiedenen Eigenschaften von Domänen Klassen, z. b. Zugriffsmodifizierer, benutzerdefinierte Attribute und generierte doppelte abgeleitete
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +11,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810027"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360792"
 ---
 # <a name="properties-of-domain-classes"></a>Eigenschaften von Domänenklassen
-Domänen Klassen verfügen über die in der folgenden Tabelle aufgeführten Eigenschaften. Weitere Informationen zu Domänen Klassen finden Sie Untergrund Legendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Domänen Klassen verfügen über die in der folgenden Tabelle aufgeführten Eigenschaften. Weitere Informationen zu Domänen Klassen finden Sie Untergrund Legendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Eigenschaft|Beschreibung|Standard|
+|Eigenschaft|BESCHREIBUNG|Standard|
 |-|-|-|
 |Zugriffsmodifizierer|Die Zugriffsebene der Domänenklasse (`public` oder `internal`).|`public`|
 |Benutzerdefinierte Attribute|Wird verwendet, um der Quell Code Klasse Attribute hinzuzufügen, die von dieser Domänen Klasse generiert werden.|\<none>|
@@ -27,7 +29,7 @@ Domänen Klassen verfügen über die in der folgenden Tabelle aufgeführten Eige
 |Hat benutzerdefinierten Konstruktor|Gibt `True` an, dass ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt wird. Weitere Informationen finden Sie unter Überschreiben [und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Vererbungs Modifizierer|Beschreibt die Art der Vererbung der Quell Code Klasse, die von der Domänen Klasse ( `none` oder) generiert wird `abstract` `sealed` .|`none`|
 |Basisklasse|Wenn diese Domänen Klasse abgeleitet ist, der Name der Basisklasse.|\<none>|
-|name|Der Name dieser Domänen Klasse.|Aktueller Name|
+|Name|Der Name dieser Domänen Klasse.|Aktueller Name|
 |Namespace|Der Namespace dieser Domänen Klasse.|Aktueller Namespace|
 |Hinweise|Informelle Notizen, die dieser Domänen Klasse zugeordnet sind.|\<none>|
 |Beschreibung|Die Beschreibung, die verwendet wird, um die Benutzeroberfläche des generierten Designers zu dokumentieren.|\<none>|

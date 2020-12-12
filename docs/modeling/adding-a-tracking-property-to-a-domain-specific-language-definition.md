@@ -1,5 +1,7 @@
 ---
 title: Überwachungs Eigenschaft zur DSL-Definition hinzufügen
+description: Erfahren Sie mehr über die Eigenschaft nach Verfolgungs Domäne und darüber, wie Sie einem Domänen Modell eine nach Verfolgungs Eigenschaft hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa6c63d9f43c465e5632d40281c1f48fb9d0f0b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 6709ede3de16a78e0042d035a87a715b9ce4c80c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830725"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361208"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 
@@ -24,7 +26,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Domänen
 
 Eine nach *Verfolgungs Domänen* Eigenschaft ist eine Eigenschaft, die vom Benutzer aktualisiert werden kann, jedoch über einen Standardwert verfügt, der mithilfe der Werte anderer Domänen Eigenschaften oder-Elemente berechnet wird.
 
-Beispielsweise verfügt die Anzeige Name-Eigenschaft einer Domänen Klasse im DSL-Tools (DSL-Tools) über einen Standardwert, der mit dem Namen der Domänen Klasse berechnet wird. ein Benutzer kann den Wert zur Entwurfszeit jedoch ändern oder auf den berechneten Wert zurücksetzen.
+Beispielsweise verfügt die Anzeige Name-Eigenschaft einer Domänen Klasse in den Domain-Specific Sprach Tools (DSL-Tools) über einen Standardwert, der mit dem Namen der Domänen Klasse berechnet wird. ein Benutzer kann den Wert zur Entwurfszeit jedoch ändern oder auf den berechneten Wert zurücksetzen.
 
 In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL) mit einer Namespace-nach Verfolgungs Eigenschaft, die über einen Standardwert verfügt, der auf der Standard Namespace-Eigenschaft des Modells basiert. Weitere Informationen zu Überwachungs Eigenschaften finden Sie unter [Definieren von Überwachungs Eigenschaften](/previous-versions/cc825929(v=vs.100)).
 
@@ -54,9 +56,9 @@ Bevor Sie diese exemplarische Vorgehensweise starten können, müssen Sie zunäc
 
 ## <a name="create-the-project"></a>Erstellen des Projekts
 
-1. Erstellen Sie ein Domänen spezifisches sprach-Designer-Projekt. Vergeben Sie den Namen `TrackingPropertyDSL`.
+1. Erstellen Sie ein Domain-Specific-sprach-Designer-Projekt. Vergeben Sie den Namen `TrackingPropertyDSL`.
 
-2. Legen Sie im **Assistenten für domänenspezifische sprach-Designer**die folgenden Optionen fest:
+2. Legen Sie im **Assistenten für domänenspezifische sprach-Designer** die folgenden Optionen fest:
 
     1. Wählen Sie die Vorlage " **minimallanguage** " aus.
 
@@ -93,19 +95,19 @@ Bevor Sie diese exemplarische Vorgehensweise starten können, müssen Sie zunäc
 
     1. Benennen Sie die neue Eigenschaft `DefaultNamespace` .
 
-    2. Legen Sie im **Eigenschaften** Fenster für die neue Eigenschaft den **Standardwert** auf fest `DefaultNamespace` , und legen Sie **Typ** auf **Zeichenfolge**fest.
+    2. Legen Sie im **Eigenschaften** Fenster für die neue Eigenschaft den **Standardwert** auf fest `DefaultNamespace` , und legen Sie **Typ** auf **Zeichenfolge** fest.
 
 2. Fügen Sie der Domänen Klasse **examplemodel** eine Domänen Eigenschaft mit dem Namen hinzu `CustomElements` .
 
-     Legen Sie im **Eigenschaften** Fenster für die neue Eigenschaft **Art** auf **berechnet**fest.
+     Legen Sie im **Eigenschaften** Fenster für die neue Eigenschaft **Art** auf **berechnet** fest.
 
 3. Fügen Sie der " **ExampleElement** "-Domänen Klasse eine Domänen Eigenschaft mit dem Namen hinzu `Namespace` .
 
-     Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft den Wert durchsuchbar auf **false**fest, und **legen Sie** **Art** auf **CustomStorage**fest.
+     Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft den Wert durchsuchbar auf **false** fest, und **legen Sie** **Art** auf **CustomStorage** fest.
 
 4. Fügen Sie der " **ExampleElement** "-Domänen Klasse eine Domänen Eigenschaft mit dem Namen hinzu `IsNamespaceTracking` .
 
-     Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft die Einstellung **ist browsefähig** auf **false**fest, legen Sie den **Standardwert** auf fest `true` , und legen Sie **Typ** auf **Boolean**fest.
+     Legen Sie im Fenster **Eigenschaften** für die neue Eigenschaft die Einstellung **ist browsefähig** auf **false** fest, legen Sie den **Standardwert** auf fest `true` , und legen Sie **Typ** auf **Boolean** fest.
 
 ### <a name="to-update-the-diagram-elements-and-dsl-details"></a>So aktualisieren Sie die Diagramm Elemente und DSL-Details
 
@@ -113,23 +115,23 @@ Bevor Sie diese exemplarische Vorgehensweise starten können, müssen Sie zunäc
 
     1. Benennen Sie den neuen Text Decorator `NamespaceDecorator` .
 
-    2. Legen Sie im **Eigenschaften** Fenster für den Text-Decorator die **Position** auf **InnerBottomLeft**fest.
+    2. Legen Sie im **Eigenschaften** Fenster für den Text-Decorator die **Position** auf **InnerBottomLeft** fest.
 
 2. Wählen Sie im DSL-Designer die Linie aus, die die Klasse **ExampleElement** mit der Form **exampleshape** verbindet.
 
     1. Wählen Sie im Fenster **DSL-Details** die Registerkarte **Decorator** -Zuordnungen aus.
 
-    2. Wählen Sie in der Liste **Decorators** den **Namen namespacedecorator**aus, aktivieren Sie das entsprechende Kontrollkästchen, und wählen Sie dann in der Liste **Anzeige Eigenschaft** die Option **Namespace**aus.
+    2. Wählen Sie in der Liste **Decorators** den **Namen namespacedecorator** aus, aktivieren Sie das entsprechende Kontrollkästchen, und wählen Sie dann in der Liste **Anzeige Eigenschaft** die Option **Namespace** aus.
 
-3. Erweitern Sie im **DSL-Explorer**den Ordner **Domänen Klassen** , klicken Sie mit der rechten Maustaste auf den Knoten **ExampleElement** , und klicken Sie dann auf **neuen Domänentyp Deskriptor hinzufügen**.
+3. Erweitern Sie im **DSL-Explorer** den Ordner **Domänen Klassen** , klicken Sie mit der rechten Maustaste auf den Knoten **ExampleElement** , und klicken Sie dann auf **neuen Domänentyp Deskriptor hinzufügen**.
 
     1. Erweitern Sie den Knoten **ExampleElement** , und wählen Sie den Knoten **benutzerdefinierter Typdeskriptor (Domänentyp Deskriptor)** aus.
 
-    2. Legen Sie im Fenster **Eigenschaften** für den Domänentyp Deskriptor den Wert **Benutzer** definiert auf **true**fest.
+    2. Legen Sie im Fenster **Eigenschaften** für den Domänentyp Deskriptor den Wert **Benutzer** definiert auf **true** fest.
 
-4. Wählen Sie im **DSL-Explorer**den Knoten **XML-Serialisierungsverhalten** aus.
+4. Wählen Sie im **DSL-Explorer** den Knoten **XML-Serialisierungsverhalten** aus.
 
-    1. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **benutzerdefinierter Post-Lade** Vorgang auf **true**fest.
+    1. Legen Sie im Fenster **Eigenschaften** die Eigenschaft **benutzerdefinierter Post-Lade** Vorgang auf **true** fest.
 
 ## <a name="transform-templates"></a>Transformations Vorlagen
 
@@ -145,7 +147,7 @@ Wenn Sie alle Vorlagen transformieren, generiert das System den Quellcode, der d
 
 Sie müssen Code bereitstellen, um den Wert und den Status der nach Verfolgungs Eigenschaft beizubehalten. Wenn Sie Ihren benutzerdefinierten Code aus dem generierten Code unterscheiden und Datei Benennungs Konflikte vermeiden möchten, platzieren Sie die benutzerdefinierten Code Dateien in einem separaten Unterordner.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das **DSL** -Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **neuer Ordner**. Benennen Sie den neuen Ordner `CustomCode` .
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das **DSL** -Projekt, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **neuer Ordner**. Benennen Sie den neuen Ordner `CustomCode` .
 
 2. Klicken Sie mit der rechten Maustaste auf den neuen Ordner **customcode** , zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.
 
@@ -722,9 +724,9 @@ Der nächste Schritt besteht darin, den DSL-Designer in einer neuen Instanz von 
 
     Der experimentelle Build von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] öffnet die **debugprojektmappe** , die eine leere Testdatei enthält.
 
-3. Doppelklicken Sie in **Projektmappen-Explorer**auf die Datei Test. trackingpropertydsl, um Sie im Designer zu öffnen, und klicken Sie dann auf die Entwurfs Oberfläche.
+3. Doppelklicken Sie in **Projektmappen-Explorer** auf die Datei Test. trackingpropertydsl, um Sie im Designer zu öffnen, und klicken Sie dann auf die Entwurfs Oberfläche.
 
-    Beachten Sie, dass im Fenster **Eigenschaften** für das Diagramm die Eigenschaft **Standard Namespace** den Wert **DefaultNamespace**und die Eigenschaft **benutzerdefinierte Elemente** **0/0**lautet.
+    Beachten Sie, dass im Fenster **Eigenschaften** für das Diagramm die Eigenschaft **Standard Namespace** den Wert **DefaultNamespace** und die Eigenschaft **benutzerdefinierte Elemente** **0/0** lautet.
 
 4. Ziehen Sie ein **ExampleElement** -Element aus der **Toolbox** auf die Diagramm Oberfläche.
 
@@ -734,7 +736,7 @@ Der nächste Schritt besteht darin, den DSL-Designer in einer neuen Instanz von 
 
 6. Klicken Sie im **Eigenschaften** Fenster mit der rechten Maustaste auf **Element Namespace**, und klicken Sie dann auf **Zurücksetzen**.
 
-    Der Wert der Eigenschaft wird in **DefaultNamespace**geändert, und der Wert wird in einer regulären Schriftart angezeigt.
+    Der Wert der Eigenschaft wird in **DefaultNamespace** geändert, und der Wert wird in einer regulären Schriftart angezeigt.
 
     Klicken Sie mit der rechten Maustaste erneut auf **Element Namespace** . Der **Reset** -Befehl ist nun deaktiviert, da die-Eigenschaft zurzeit im Überwachungszustand ist.
 
@@ -746,7 +748,7 @@ Der nächste Schritt besteht darin, den DSL-Designer in einer neuen Instanz von 
 
 9. Ändern Sie den **Standard Namespace** für das Diagramm von **DefaultNamespace** in **newNamespace**.
 
-     Der **Namespace** des ersten Elements verfolgt die **standardmäßige Namespace** -Eigenschaft, während der **Namespace** des zweiten Elements seinen vom Benutzer aktualisierten Wert von **otherNamespace**beibehält.
+     Der **Namespace** des ersten Elements verfolgt die **standardmäßige Namespace** -Eigenschaft, während der **Namespace** des zweiten Elements seinen vom Benutzer aktualisierten Wert von **otherNamespace** beibehält.
 
 10. Speichern Sie die Projekt Mappe, und schließen Sie dann den experimentellen Build.
 
@@ -754,7 +756,7 @@ Der nächste Schritt besteht darin, den DSL-Designer in einer neuen Instanz von 
 
 Wenn Sie planen, mehr als eine nach Verfolgungs Eigenschaft zu verwenden oder nach Verfolgungs Eigenschaften in mehr als einer DSL zu implementieren, können Sie eine Textvorlage erstellen, um den allgemeinen Code für die Unterstützung der einzelnen Überwachungs Eigenschaften zu generieren. Weitere Informationen zu Textvorlagen finden Sie unter [Code Generierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

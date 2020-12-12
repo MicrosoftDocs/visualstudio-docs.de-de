@@ -1,5 +1,7 @@
 ---
 title: Hilfsprogrammmethoden für Textvorlagen
+description: Erfahren Sie mehr über die verschiedenen Methoden für Textvorlagen-Hilfsprogramme, die Ihnen beim Schreiben von Code in Visual Studio zur Verfügung stehen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b0015e68f7d78c2b33eaeb9e0bfb404acaed834
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591761"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362014"
 ---
 # <a name="text-template-utility-methods"></a>Hilfsprogrammmethoden für Textvorlagen
 
@@ -119,7 +121,7 @@ Die-Eigenschaft `this.Host` kann Zugriff auf Eigenschaften bereitstellen, die vo
 
 `<#@template ... hostspecific="true" #>`
 
-Der Typ von `this.Host` hängt vom Hosttyp ab, in dem die Vorlage ausgeführt wird. In einer Vorlage, die in Visual Studio ausgeführt wird, können Sie in umwandeln, `this.Host` `IServiceProvider` um Zugriff auf Dienste wie z. b. die IDE zu erhalten. Beispiel:
+Der Typ von `this.Host` hängt vom Hosttyp ab, in dem die Vorlage ausgeführt wird. In einer Vorlage, die in Visual Studio ausgeführt wird, können Sie in umwandeln, `this.Host` `IServiceProvider` um Zugriff auf Dienste wie z. b. die IDE zu erhalten. Zum Beispiel:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

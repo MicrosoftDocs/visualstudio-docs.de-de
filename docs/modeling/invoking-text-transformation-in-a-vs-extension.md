@@ -1,5 +1,7 @@
 ---
 title: Aufrufen von Texttransformation in einer VS-Erweiterung
+description: Erfahren Sie, wie Sie den Textvorlagen Dienst zum Transformieren von Textvorlagen verwenden können. Erfahren Sie außerdem, wie Sie den Dienst "stexttemplating" erhalten und in itexttemplating umwandeln können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e781e08bba5e01b5e453e4545b5dd19e5a4d16
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594590"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360870"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Aufrufen von Text Transformation in einer Visual Studio-Erweiterung
 
@@ -138,7 +140,7 @@ Sie können Werte aus einer Textvorlage mit einer Parameterklasse übergeben, di
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-So generieren Sie Text aus einer vorverarbeiteten Textvorlage: Rufen Sie die- `TransformText()` Methode der generierten-Klasse auf. Weitere Informationen finden Sie unter [Lauf Zeit Generierung von Text mit T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
+So generieren Sie Text aus einer vorverarbeiteten Textvorlage: Rufen Sie die- `TransformText()` Methode der generierten-Klasse auf. Weitere Informationen finden Sie unter [Laufzeittextgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 So generieren Sie Text außerhalb einer Visual Studio-Erweiterung: definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Text Vorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).
 

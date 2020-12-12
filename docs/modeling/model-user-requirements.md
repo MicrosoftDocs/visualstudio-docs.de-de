@@ -1,5 +1,7 @@
 ---
 title: Modellieren von Benutzeranforderungen
+description: Erfahren Sie, wie Visual Studio Sie dabei unterstützt, die Anforderungen Ihrer Benutzer zu verstehen, zu besprechen und zu kommunizieren, indem Diagramme über ihre Aktivitäten gezeichnet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590240"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361963"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 
@@ -60,7 +62,7 @@ Beachten Sie, dass die meisten Diagrammtypen für andere Zwecke verwendet werden
 
 Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.
 
-Viele Geschäftsregeln sind Einschränkungen der Beziehungen zwischen den konzeptionellen Klassen. Sie können diese *statischen Geschäftsregeln* als Kommentare schreiben, die mit den entsprechenden Klassen in einem konzeptionellen Klassendiagramm verknüpft sind. Beispiel:
+Viele Geschäftsregeln sind Einschränkungen der Beziehungen zwischen den konzeptionellen Klassen. Sie können diese *statischen Geschäftsregeln* als Kommentare schreiben, die mit den entsprechenden Klassen in einem konzeptionellen Klassendiagramm verknüpft sind. Zum Beispiel:
 
 ![Regel in an Order-Klasse angefügtem Kommentar.](../modeling/media/uml_reqmcd2.png)
 
@@ -96,7 +98,7 @@ Wenn ein Restaurant ein Gericht löscht, während ein Kunde eine Mahlzeit bestel
 
 Weitere Informationen zum Entwickeln von Code, der Service Qualitätsanforderungen entspricht, finden Sie unter [Modellieren der Architektur Ihrer APP](../modeling/model-your-app-s-architecture.md) .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)
 - [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)

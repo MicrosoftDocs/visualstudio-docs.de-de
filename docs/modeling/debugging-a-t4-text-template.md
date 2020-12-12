@@ -1,5 +1,7 @@
 ---
 title: Debuggen einer T4-Textvorlage
+description: Wenn Sie eine Entwurfszeittextvorlage debuggen möchten, speichern Sie die Textvorlagendatei, und wählen Sie im Kontextmenü der Datei im Projektmappen-Explorer T4-Vorlage debuggen aus.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570061feb5da034e2e8fab7168658577f6f990d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589681"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361468"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debuggen einer T4-Textvorlage
 Sie können Haltepunkte in den Textvorlagen festlegen. Zum Debuggen einer Entwurfszeit Textvorlage speichern Sie die Textvorlagen Datei, und wählen Sie dann im Kontextmenü der Datei in Projektmappen-Explorer die Option **T4-Vorlage Debuggen** aus. Um eine Laufzeit-Textvorlage zu debuggen, müssen Sie einfach die Anwendung debuggen, zu der sie gehört.

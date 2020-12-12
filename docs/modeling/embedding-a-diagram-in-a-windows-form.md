@@ -1,5 +1,7 @@
 ---
 title: Einbetten eines Diagramms in Windows Form
+description: Erfahren Sie, wie Sie ein DSL-Diagramm in ein Windows-Steuerelement einbetten können, das im Visual Studio-Fenster angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4338bfa824b511ee0be40516e1396a75901188a1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547627"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361702"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Einbetten eines Diagramms in Windows Form
 
@@ -67,7 +69,7 @@ Sie können ein DSL-Diagramm in ein Windows-Steuerelement einbetten, das im Visu
 
 ## <a name="update-the-form-using-store-events"></a>Aktualisieren des Formulars mithilfe von Store-Ereignissen
 
-1. Fügen Sie im Formular-Designer ein **Listenfeld** mit dem Namen hinzu `listBox1` . Dadurch wird eine Liste der Elemente im Modell angezeigt. Sie wird mit dem Modell mithilfe von *Store-Ereignissen*synchronisiert. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. Fügen Sie im Formular-Designer ein **Listenfeld** mit dem Namen hinzu `listBox1` . Dadurch wird eine Liste der Elemente im Modell angezeigt. Sie wird mit dem Modell mithilfe von *Store-Ereignissen* synchronisiert. Weitere Informationen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. Überschreiben Sie in der benutzerdefinierten Codedatei weitere Methoden für die DocView-Klasse:
 
@@ -141,7 +143,7 @@ Sie können ein DSL-Diagramm in ein Windows-Steuerelement einbetten, das im Visu
 
      Beachten Sie, dass im Listenfeld eine Liste der Elemente im Modell angezeigt wird und dass Sie nach dem Hinzufügen oder löschen und nach dem Rückgängigmachen und wiederholen korrekt ist.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen'
+description: Erfahren Sie, dass Sie mit der Codegenerierung Programmcode erzeugen können, der stark typisiert ist, und sich bei Änderungen des Quell Modells leicht ändern können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532059"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360987"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 
@@ -93,7 +95,7 @@ Diese Datei dient dazu, Beispiele der XML-Knotentypen bereitzustellen, die Ihre 
 
 Die Datei sollte Teil des Projekts sein, damit die Vorlage sie lesen kann, aber sie wird nicht in die kompilierte Anwendung integriert werden.
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und dann auf **Neues Element**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und dann auf **Neues Element**.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen****XML-Datei** aus den **Vorlagen** aus.
 
@@ -131,7 +133,7 @@ Ein umfassender Test könnte die Ausgabe dieser Testfunktion im Vergleich zu dem
 
 Fügen Sie eine Textvorlagen Datei hinzu, und legen Sie die Ausgabe Erweiterung auf " *. cs*" fest.
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen**und anschließend auf **Neues Element**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, klicken Sie auf **Hinzufügen** und anschließend auf **Neues Element**.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen****Textvorlage** aus den **Vorlagen** aus.
 
@@ -428,7 +430,7 @@ In dieser exemplarischen Vorgehensweise wird der Programmcode eigentlich aus ein
 
 Wenn Sie Vorlagentransformations- oder Kompilierungsfehler in der **Fehlerliste** sehen oder die Ausgabedatei nicht korrekt generiert wurde, können Sie die Textvorlage mit den unter [Generieren von Dateien mit dem Hilfsprogramm „TextTransform“](../modeling/generating-files-with-the-texttransform-utility.md) beschriebenen Techniken entsprechend korrigieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)

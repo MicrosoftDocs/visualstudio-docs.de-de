@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Erweitern des DSL-Designers'
+description: Erfahren Sie, wie Sie Erweiterungen für den Designer erstellen können, den Sie zum Bearbeiten von DSL-Definitionen (Domain-Specific Language) verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7a48c5a314dd52893bc7f0675915f0d68297ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532585"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361507"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
 
@@ -36,7 +38,7 @@ Richten Sie ein Projekt ein, das den Code der Erweiterung enthält, und ein VSIX
 
 3. Klicken Sie oberhalb des Inhalts Felds auf **Inhalt hinzufügen**.
 
-4. Legen Sie im Dialogfeld **Inhalt hinzufügen** **einen Inhaltstyp** auf die **MEF-Komponente**auswählen fest, und legen Sie **Projekt** auf das Klassen Bibliotheksprojekt fest.
+4. Legen Sie im Dialogfeld **Inhalt hinzufügen** **einen Inhaltstyp** auf die **MEF-Komponente** auswählen fest, und legen Sie **Projekt** auf das Klassen Bibliotheksprojekt fest.
 
 5. Klicken Sie auf **Editionen auswählen** , und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.
 

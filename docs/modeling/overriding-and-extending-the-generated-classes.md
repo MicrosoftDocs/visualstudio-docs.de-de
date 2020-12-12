@@ -1,5 +1,7 @@
 ---
 title: Überschreiben und Erweitern der generierten Klassen
+description: Erfahren Sie, wie Ihre DSL-Definition eine Plattform ist, auf der Sie einen leistungsstarken Satz von Tools erstellen können, die auf einer domänenspezifischen Sprache basieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595890"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362092"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
 
@@ -46,7 +48,7 @@ public partial class Book
 
 Um zu ermitteln, welche Methoden Sie außer Kraft setzen können, geben Sie **override** in der-Klasse ein, gefolgt von einem Leerzeichen. Die IntelliSense-QuickInfo informiert Sie darüber, welche Methoden überschrieben werden können.
 
-### <a name="double-derived-classes"></a>Doppelte abgeleitete Klassen
+### <a name="double-derived-classes"></a>Double-Derived-Klassen
 
 Die meisten Methoden in generierten Klassen werden von einem festgelegten Satz von Klassen in den modellierungsnamespaces geerbt. Einige Methoden werden jedoch im generierten Code definiert. Normalerweise bedeutet dies, dass Sie Sie nicht überschreiben können. Sie können in einer partiellen Klasse nicht die Methoden überschreiben, die in einer anderen partiellen Definition der gleichen Klasse definiert sind.
 
@@ -66,7 +68,7 @@ Sie können diese Methode mit allen Elementtypen verwenden, einschließlich Mode
 
 Ein Konstruktor kann nicht überschrieben werden. Auch in doppelten abgeleiteten Klassen muss der Konstruktor in der abgeleiteten Klasse sein.
 
-Wenn Sie einen eigenen Konstruktor bereitstellen möchten, können Sie dies erreichen, indem Sie `Has Custom Constructor` für die Domänen Klasse in der DSL-Definition festlegen. Wenn Sie auf **alle Vorlagen transformieren**klicken, enthält der generierte Code keinen Konstruktor für die Klasse. Dies schließt einen aufzurufenden Konstruktor ein. Dies verursacht einen Fehlerbericht, wenn Sie die Projekt Mappe erstellen. Doppelklicken Sie auf den Fehlerbericht, um einen Kommentar im generierten Code anzuzeigen, in dem erläutert wird, was Sie bereitstellen sollten.
+Wenn Sie einen eigenen Konstruktor bereitstellen möchten, können Sie dies erreichen, indem Sie `Has Custom Constructor` für die Domänen Klasse in der DSL-Definition festlegen. Wenn Sie auf **alle Vorlagen transformieren** klicken, enthält der generierte Code keinen Konstruktor für die Klasse. Dies schließt einen aufzurufenden Konstruktor ein. Dies verursacht einen Fehlerbericht, wenn Sie die Projekt Mappe erstellen. Doppelklicken Sie auf den Fehlerbericht, um einen Kommentar im generierten Code anzuzeigen, in dem erläutert wird, was Sie bereitstellen sollten.
 
 Schreiben Sie eine partielle Klassendefinition in einer Datei, die von den generierten Dateien getrennt ist, und stellen Sie den Konstruktor bereit.
 

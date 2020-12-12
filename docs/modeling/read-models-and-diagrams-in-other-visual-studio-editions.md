@@ -1,5 +1,7 @@
 ---
 title: Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
+description: Erfahren Sie mehr über das Lesen von Modellen und Diagrammen in Visual Studio sowie das schreibgeschützte Verhalten, wenn Sie eine Version von Visual Studio verwenden, die keine Modell Erstellung unterstützt.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595409"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360688"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
 
@@ -55,7 +57,7 @@ Wenn Sie ein Modell und seine Diagramme in einer Version von Visual Studio öff
 
 Sie können diese Änderungen speichern. Wenn Sie die Änderungen für andere Benutzer sichtbar machen möchten, müssen Sie mindestens die aktualisierten **Layoutdateien** senden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)

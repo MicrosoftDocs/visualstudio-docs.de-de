@@ -1,5 +1,7 @@
 ---
 title: Überprüfen des Systems während der Entwicklung
+description: Erfahren Sie, wie Sie mithilfe von Visual Studio Ihre Software mit den Benutzer Anforderungen und der Architektur Ihres Systems konsistent halten können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2b7d81b1f166e6cc97debc3291661d59ee6960
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a803b2fb7eb7c682e29ae0d17698ef673927d751
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594031"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361403"
 ---
 # <a name="validate-your-system-during-development"></a>Überprüfen des Systems während der Entwicklung
 
@@ -38,7 +40,7 @@ Verwenden Sie die folgenden Aufgaben, um Ihre Software zu überprüfen:
 |**Videos**|![Link zu Video ](../data-tools/media/playvideo.gif) [Channel 9: Doug 7: Code Verständnis und System Entwurf mit Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![Link zu Video ](../data-tools/media/playvideo.gif) [Channel 9: Architektur einer Anwendung](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
 |**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio-Erweiterbarkeit](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)
 - [Analyse und Modell Architektur](../modeling/analyze-and-model-your-architecture.md)
