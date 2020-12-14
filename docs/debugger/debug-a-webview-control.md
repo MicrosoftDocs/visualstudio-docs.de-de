@@ -1,5 +1,7 @@
 ---
 title: Debuggen eines WebView-Steuerelements (UWP) | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie die in einer Windows-Runtime-App verwendeten WebView-Steuerelemente überprüfen und debuggen. Hierfür können Sie DOM Explorer und das JavaScript-Konsolenfenster verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 5439f9f253126e159df5dd9ea58bad04c3f6c649
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211114"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560550"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Debuggen eines WebView-Steuerelements in einer UWP-App
 

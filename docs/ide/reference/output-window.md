@@ -1,5 +1,7 @@
 ---
 title: Ausgabefenster
+description: Hier erfahren Sie mehr über das Fenster „Ausgabe“ sowie darüber, wie dort Statusmeldungen für verschiedene Features in der IDE angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b8615fcdb7e6751087c499967478aaf63e68d624
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810362"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560381"
 ---
 # <a name="output-window"></a>Ausgabefenster
 

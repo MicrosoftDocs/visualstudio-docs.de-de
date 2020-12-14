@@ -1,5 +1,7 @@
 ---
 title: Festlegen von sprachspezifischen Editoroptionen
+description: Hier erfahren Sie, wie Sie eine Vielzahl von Optionen für den Text-Editor festlegen, die für bestimmte Programmiersprachen gelten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590838"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560745"
 ---
 # <a name="set-language-specific-editor-options"></a>Festlegen von sprachspezifischen Editoroptionen
 
@@ -45,8 +47,8 @@ Beschreibt Einstellungen, mit denen das Verhalten der IntelliSense-Vervollständ
 [Optionen, Text-Editor, XAML, Formatierung](../../ide/reference/options-text-editor-xaml-formatting.md)\
 Beschreibt Einstellungen für die Anordnung von Elementen und Attributen in XAML-Dokumenten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen des Editors](../how-to-change-text-case-in-the-editor.md)
-- [Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit EditorConfig](../../ide/create-portable-custom-editor-options.md)
+- [Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“](../../ide/create-portable-custom-editor-options.md)
 - [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)

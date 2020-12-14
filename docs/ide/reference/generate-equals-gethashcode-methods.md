@@ -1,5 +1,7 @@
 ---
 title: Generieren der Equals- und GetHashCode-Methodenüberschreibungen in C#
+description: Hier erfahren Sie mehr über die Verwendung des Menüs „Schnellaktionen und Refactorings...“ zum Generieren von Equals- und GetHashCode-Methoden.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6f7ec74af21ef62079a3fef18dd39544e7b42aa
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569282"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617512"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generieren der Überschreibungsmethoden „Equals“ und „GetHashCode“ in Visual Studio
 
@@ -64,7 +66,7 @@ Diese Codegenerierung gilt für:
 
    ![Ergebnis der Aktion zum Generieren einer Methode](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

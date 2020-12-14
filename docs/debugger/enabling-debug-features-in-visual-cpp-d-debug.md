@@ -1,5 +1,7 @@
 ---
 title: Aktivieren von Debugfunktionen in C++-Projekten (-D_DEBUG) | Microsoft-Dokumentation
+description: In Visual C++ aktivieren Sie Debugfeatures, indem Sie _DEBUG definieren. In diesem Artikel werden die hierfür erforderlichen Schritte erklärt sowie wie Sie ein MFC-Programm verknüpfen, um es zu debuggen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737953"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862932"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>Aktivieren von Debugfunktionen in C++-Projekten (/D_DEBUG)
 Wenn Sie das Programm mit definiertem **_DEBUG**-Symbol kompilieren, aktivieren Sie damit die Debugfunktion in [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], (z.B. Assertionen). Sie können **_DEBUG** auf zwei Arten definieren:

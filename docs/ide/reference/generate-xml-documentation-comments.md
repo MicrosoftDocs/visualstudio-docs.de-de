@@ -1,5 +1,7 @@
 ---
 title: Einfügen von XML-Dokumentationskommentaren
+description: Hier erfahren Sie, wie Sie XML-Dokumentationskommentare in den Code einfügen, mit dem Sie eine compilergenerierte XML-Datei erstellen können, die zusammen mit der .NET-Assembly verteilt wird.
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 250e07994b04e03b015bf3893633ebce0f36a90d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77706392"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617473"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Vorgehensweise: Einfügen von XML-Kommentaren für die Generierung der Dokumentation
 
@@ -46,11 +48,11 @@ Die vom Compiler generierte XML-Datei kann zusammen mit Ihrer .NET-Assembly vert
 
 3. Geben Sie Beschreibungen für jedes XML-Element an, um das Codeelement vollständig zu dokumentieren.
 
-   ![Abgeschlossener Kommentar](media/doc-result-cs.png)
+   ![Screenshot: Abgeschlossener Kommentar](media/doc-result-cs.png)
 
 Sie können in XML-Kommentaren Stile verwenden, die beim Zeigen auf das Element in der QuickInfo gerendert werden. Zu diesen Stilen zählen z. B. die Kursiv- oder Fettformatierung, Aufzählungslisten und klickbare Links.
 
-   ![Abgeschlossener Kommentar](media/doc-style-cs.png) 
+   ![Screenshot: Abgeschlossener Kommentar mit Stiltags für „Kursiv“, „Fett“, Aufzählungszeichen und einen klickbaren Link](media/doc-style-cs.png) 
 
 > [!NOTE]
 > Es gibt eine [Option](../../ide/reference/options-text-editor-csharp-advanced.md) zum Ein- und Ausblenden von XML-Dokumentationskommentaren nach der Eingabe von `///` in C# oder `'''` in Visual Basic. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus, um das Dialogfeld **Optionen** zu öffnen. Navigieren Sie dann zu **Text-Editor** > **C#** oder **Basic** > **Advanced** (Basic > Erweitert). Suchen Sie im Abschnitt **Editor-Hilfe** nach der Option **XML-Dokumentationskommentare generieren**.

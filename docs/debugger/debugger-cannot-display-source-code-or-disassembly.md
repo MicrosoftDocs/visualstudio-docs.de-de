@@ -1,6 +1,7 @@
 ---
 title: Debugger kann keinen Quellcode oder Disassembly anzeigen
-ms.custom: seodec18
+description: In diesem Artikel werden die Gründe für die Meldung „Debugger cannot display source code or disassembly for the current location where execution has stopped.“ (Der Debugger kann für die aktuelle Position, an der die Ausführung abgebrochen wurde, keinen Quellcode anzeigen oder keine Disassemblierung vornehmen.) erläutert.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d87de3034cb6cb8ba3364fa362eff1c27e6bae9d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dd0ed9a798c29010911a1537c99f30ba44e01aea
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738343"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561044"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>Debugger kann keinen Quellcode oder Disassembly anzeigen
 Inhalt dieses Fehlers:

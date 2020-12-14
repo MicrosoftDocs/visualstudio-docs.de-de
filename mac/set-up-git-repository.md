@@ -3,15 +3,15 @@ title: Einrichten eines Git-Repositorys
 description: In diesem Artikel stellen Sie mithilfe von Visual Studio für Mac eine Verbindung mit einem Git-Repository her.
 author: therealjohn
 ms.author: johmil
-ms.date: 11/09/2020
+ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493126"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561057"
 ---
 # <a name="set-up-a-git-repository"></a>Einrichten eines Git-Repositorys
 
@@ -44,6 +44,9 @@ Führen sie die folgenden Schritte aus, um ein Git-Repository einzurichten:
 ## <a name="publishing-an-existing-project"></a>Veröffentlichen eines vorhandenen Projekts
 
 Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_ in der Versionskontrolle befindet, in Git einzurichten:
+
+> [!TIP]
+> Verwenden Sie eine .gitignore-Datei, um zu steuern, welche Ordner und Dateien mit Git nachverfolgt und veröffentlicht werden. Sie sollten Buildverzeichnisse, Binärdateien und generierte Dateien ausschließen. Weitere Informationen finden Sie in der [GitHub-Dokumentation zum Ignorieren von Dateien](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
 
 1. Wählen Sie aus dem Projektmappenfenster in Visual Studio für Mac den Namen der Projektmappe aus.
 

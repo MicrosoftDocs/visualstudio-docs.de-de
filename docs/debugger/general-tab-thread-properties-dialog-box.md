@@ -1,5 +1,6 @@
 ---
 title: Registerkarte „Allgemein“, Dialogfeld „Threadeigenschaften“ | Microsoft-Dokumentation
+description: Sehen Sie sich das Dialogfeld „Threadeigenschaften“ an, um Informationen zu einem Thread zu erhalten, einschließlich des Modulnamens, der Thread-ID, der Prozess-ID, des Threadstatus, der Warteursache und der CPU-Zeit.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896366"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862996"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Threadeigenschaften"
 Verwenden Sie dieses Dialogfeld, um mehr über einen bestimmten Thread zu erfahren. Verschieben zum Öffnen dieses Dialogfelds den Fokus auf ein [Threadansichtsfenster](../debugger/threads-view.md), oder öffnen Sie die [Meldungsansicht](../debugger/messages-view.md), und erweitern Sie eine Meldung. Wählen Sie in der Struktur einen beliebigen Threadknoten und anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.

@@ -1,5 +1,7 @@
 ---
 title: Fortsetzen der Ausführung nach einer Ausnahme | Microsoft-Dokumentation
+description: Hier erfahren Sie, was passiert, wenn der Debugger die Ausführung wegen eines Ausnahmefehlers unterbricht. Möglicherweise können Sie die Ausführung im selben Thread fortsetzen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7475dff2618a1dfcce598f35b57dbe67d80d254
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350679"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559380"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Fortfahren mit der Ausführung nach einer Ausnahme
 Wenn der Debugger die Ausführung aufgrund einer Ausnahme unterbricht, wird standardmäßig die **Ausnahme-Hilfe** angezeigt. Wenn Sie die **Ausnahme-Hilfe** im Dialogfeld **Optionen** deaktiviert haben, wird der **Ausnahmen-Assistant** (C# oder Visual Basic) oder das Dialogfeld **Ausnahme** (C++) angezeigt.

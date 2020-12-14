@@ -1,5 +1,7 @@
 ---
 title: Implementieren einer abstrakten Klasse
+description: Hier erfahren Sie, wie Sie das Menü „Schnellaktionen und Refactorings...“ verwenden, um den für die Implementierung einer abstrakten Klasse erforderlichen Code sofort zu generieren.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 08e1c0ec2a79e14b1306eaa5330ee3e62dca5a98
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568905"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617447"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementieren einer abstrakten Klasse in Visual Studio
 
@@ -67,7 +69,7 @@ Diese Codegenerierung gilt für:
 
        ![Ergebnis der Aktion zum Implementieren einer Klasse in Visual Basic](media/abstract-result-vb.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

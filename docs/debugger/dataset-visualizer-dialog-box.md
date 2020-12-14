@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld „Dataset-Schnellansicht“ | Microsoft-Dokumentation
+description: Visual Studio-Debuggerschnellansichten sind Komponenten, die Daten anzeigen. Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-, DataView- oder DataViewManager-Objekts anzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745601"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560472"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset-Schnellansicht (Dialogfeld)
 Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-, DataView- oder DataViewManager-Objekts anzeigen. Sie können auf diese Schnellansicht zugreifen, indem Sie auf das Symbol mit dem Vergrößerungsglas klicken, das neben dem Wert eines dieser Objekte in einem Debuggervariablenfenster oder in einem DataTip angezeigt wird.

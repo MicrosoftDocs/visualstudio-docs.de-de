@@ -1,5 +1,7 @@
 ---
 title: CRT-Debugverfahren | Microsoft-Dokumentation
+description: Es gibt verschiedene Techniken, mit denen Sie ein Programm debuggen können, das die C-Laufzeitbibliothek (C Run-Time, CRT) verwendet. In diesem Artikel und unter den darin enthaltenen Links erfahren Sie mehr über diese Techniken.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b71c91dbcc420fd4cc89a5e86fb976cca738bdcc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564034"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560524"
 ---
 # <a name="crt-debugging-techniques"></a>CRT-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von Programmen hilfreich sein, die die C-Laufzeitbibliothek verwenden.

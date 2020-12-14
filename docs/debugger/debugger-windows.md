@@ -1,6 +1,7 @@
 ---
 title: Untersuchen von Daten mit Debuggerfenstern | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Es gibt viele Arten von Debuggerfenstern, die Informationen zur Verfügung stellen. Dieser Artikel enthält eine Liste dieser Arten. Hierbei wird für jede Art ein Link zu weiteren Informationen bereitgestellt.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e8caa5f11f4f0501d8b56c308d5336f10d518062
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188538"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560732"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Untersuchen von Daten mit Debuggerfenstern in Visual Studio
 

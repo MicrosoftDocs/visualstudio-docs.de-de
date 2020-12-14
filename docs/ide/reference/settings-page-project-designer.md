@@ -1,5 +1,7 @@
 ---
 title: Seite „Einstellungen“, Projekt-Designer
+description: Hier erfahren Sie, wie Sie über die Seite „Einstellungen“ des Projekt-Designers die Anwendungseinstellungen eines Projekts angeben.
+ms.custom: SEO-VS-2020
 ms.date: 06/14/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75566773"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560316"
 ---
 # <a name="settings-page-project-designer"></a>Seite „Einstellungen“, Projekt-Designer
 
@@ -29,7 +31,7 @@ Wählen Sie zum Aufrufen der Seite **Einstellungen** im **Projektmappen-Explorer
 
 Die Headerleiste am oberen Rand der Seite **Einstellungen** enthält verschiedene Steuerelemente:
 
-**Synchronisieren**
+**Synchronize**
 
 Mit **Synchronisieren** werden für die von der Anwendung zur Laufzeit oder beim Debuggen verwendeten Einstellungen im Gültigkeitsbereich des Benutzers die zur Entwurfszeit festgelegten Standardwerte wiederhergestellt. Zum Wiederherstellen der Daten entfernen Sie die zur Laufzeit generierten anwendungsspezifischen Dateien vom Datenträger, nicht aus den Projektdaten.
 
@@ -71,7 +73,7 @@ Geben Sie den Namen der Anwendungseinstellung in dieses Feld ein.
 
 **Typ**
 
-Wählen Sie über die Dropdownliste einen Typ für die Einstellung aus. In der Dropdownliste werden die am häufigsten verwendeten Typen angezeigt, wie etwa **String** **(Verbindungszeichenfolge)** und **System.Drawing.Font**. Sie können einen anderen Typ auswählen, indem Sie am Ende der Liste **Durchsuchen** und anschließend im Dialogfeld **Typ auswählen** einen Typ auswählen. Nachdem Sie einen Typ ausgewählt haben, wird er den häufig verwendeten Typen in der Dropdownliste hinzugefügt (nur für die aktuelle Projektmappe).
+Wählen Sie über die Dropdownliste einen Typ für die Einstellung aus. In der Dropdownliste werden die am häufigsten verwendeten Typen angezeigt, wie etwa **String****(Verbindungszeichenfolge)** und **System.Drawing.Font**. Sie können einen anderen Typ auswählen, indem Sie am Ende der Liste **Durchsuchen** und anschließend im Dialogfeld **Typ auswählen** einen Typ auswählen. Nachdem Sie einen Typ ausgewählt haben, wird er den häufig verwendeten Typen in der Dropdownliste hinzugefügt (nur für die aktuelle Projektmappe).
 
 **Bereich**
 

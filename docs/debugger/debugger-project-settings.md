@@ -1,5 +1,7 @@
 ---
 title: Debuggerprojekteinstellungen | Microsoft-Dokumentation
+description: Es gibt verschiedene Projekteinstellungen, die sich auf das Debuggen auswirken. Unter den Links in diesem Artikel erfahren Sie, wie Sie Einstellungen über das Dialogfeld „Eigenschaftenseiten“ ändern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6a3a5ba7a1e215fddd5b1127859948496e9b4e1d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188635"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561031"
 ---
 # <a name="debugger-project-settings"></a>Debuggerprojekteinstellungen
 Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst. Diese Einstellungen bestimmen beispielsweise Folgendes: Welche Verzeichnisse vom Debugger durchsucht werden, mit welchem Befehl bzw. welchen Befehlsargumenten das Programm gestartet wird und welche Art von Debuginformationen für das Programm erstellt werden. Sie können diese Einstellungen im Dialogfeld **Eigenschaftenseiten** ändern.

@@ -1,5 +1,7 @@
 ---
 title: Fehlermeldungs-Dialogfeld für „Bearbeiten und Fortfahren“ | Microsoft-Dokumentation
+description: Die Option „Bearbeiten und fortfahren“ meldet möglicherweise, dass sie für Ihre Codeänderungen nicht verfügbar ist. In diesem Artikel sind mögliche Gründe hierfür aufgeführt.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188234"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862843"
 ---
 # <a name="edit-and-continue-error-message"></a>Fehlermeldung für „Bearbeiten und Fortfahren“
 

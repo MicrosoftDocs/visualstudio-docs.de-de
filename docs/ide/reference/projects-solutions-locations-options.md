@@ -1,5 +1,7 @@
 ---
 title: 'Projekte und Projektmappen: Dialogfeld „Optionen“'
+description: Hier erfahren Sie, wie Sie die Seite „Speicherorte“ im Abschnitt „Projekte und Projektmappen“ verwenden, um Standardspeicherorte für Projekte, Projektvorlagen und Elementvorlagen festzulegen.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 171635e9f08b0c427679d874dee3466d9eb5e3f6
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565720"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616823"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Dialogfeld „Optionen“: Projekte und Projektmappen \> Speicherorte
 
@@ -34,7 +36,7 @@ Gibt den Standardspeicherort an, der bei der Suche nach vom Benutzer erstellten 
 
 Gibt den Standardspeicherort an, der bei der Suche nach vom Benutzer erstellten Elementvorlagen verwendet wird. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Dialogfeld „Optionen“: Projekte und Projektmappen \> Allgemein](projects-and-solutions-options-dialog-box.md)
 - [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

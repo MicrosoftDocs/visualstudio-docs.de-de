@@ -1,5 +1,7 @@
 ---
 title: Debuggereinstellungen und -vorbereitung | Microsoft-Dokumentation
+description: In diesem Abschnitt werden die Vorbereitung für die Verwendung des Visual Studio-Debuggers und relevante Eigenschaften beschreiben. Klicken Sie auf die Links zu den Informationen, die Sie benötigen.
+ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2704f4e73b1077f14c89e377453a858d341a2738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5ddae505580781c707678e95d9e270c46b86cdae
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738276"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560225"
 ---
 # <a name="debugger-settings-and-preparation"></a>Debuggereinstellungen und -vorbereitung
 In diesem Abschnitt werden die debuggerspezifischen Eigenschafteneinstellungen sowie die notwendige Vorbereitung beschrieben, die für das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Debugger erforderlich ist. Wenn Sie das Programm mithilfe von Projektvorlagen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erstellen, werden diese Einstellungen in der Debugkonfiguration automatisch korrekt eingestellt.

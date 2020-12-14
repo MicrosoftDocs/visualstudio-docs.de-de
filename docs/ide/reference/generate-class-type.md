@@ -1,5 +1,7 @@
 ---
 title: Generieren einer Klasse oder eines Typs
+description: Hier erfahren Sie, wie Sie das Menü „Schnellaktionen und Refactorings...“ verwenden, um den Code für eine Klasse oder einen Typ sofort zu generieren.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fe38cacf9f33acfac6b1634b6be6a8a3e45de820
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595630"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617538"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generieren einer Klasse oder eines Typs in Visual Studio
 
@@ -70,12 +72,12 @@ Diese Codegenerierung gilt für:
 
    ![Typ generieren](media/class-newtype-cs.png)
 
-   Auswahl | Beschreibung
+   Auswahl | BESCHREIBUNG
    --- | ---
    Zugriff | Legen Sie den Zugriffstyp auf *Standard*, *Intern* oder *Öffentlich* fest.
    Art | Dieses Element kann auf *Klasse* oder *Struktur* festgelegt werden.
    Name | Dies ist der Name, den Sie bereits eingegeben haben, und kann nicht geändert werden.
-   Projekt | Wenn mehrere Projekte in Ihrer Projektmappe vorhanden sind, können Sie festlegen, in welchem Projekt die Klasse bzw. Struktur verwendet werden soll.
+   Project | Wenn mehrere Projekte in Ihrer Projektmappe vorhanden sind, können Sie festlegen, in welchem Projekt die Klasse bzw. Struktur verwendet werden soll.
    Dateiname | Sie können eine neue Datei erstellen oder den Typ zu einer vorhandenen Datei hinzufügen.
 
 Die Klasse oder die Struktur wird erstellt. Für C# wird auch ein Konstruktor erstellt.
@@ -88,7 +90,7 @@ Die Klasse oder die Struktur wird erstellt. Für C# wird auch ein Konstruktor er
 
    ![Ergebnis der Generierung einer Klasse in Visual Basic](media/class-result-vb.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

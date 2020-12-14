@@ -1,5 +1,7 @@
 ---
 title: Suchen und Ersetzen, Umgebung, Dialogfeld "Optionen"
+description: Hier erfahren Sie, wie Sie über die Seite „Suchen und Ersetzen“ im Abschnitt „Umgebung“ Meldungsfelder und andere Aspekte eines Such- und Ersetzungsvorgangs steuern können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29f5fb6034c693c14cd04c83fe4c71f8763a0b0c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569568"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617317"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Suchen und Ersetzen, Umgebung, Dialogfeld "Optionen"
 
@@ -53,6 +55,6 @@ Wenn Sie die Option **Diese Meldung immer anzeigen** nur für einige Warnmeldung
 
 Wählen Sie diese Option, um den Text auf beiden Seiten der Einfügemarke des Editors in das Feld **Suchen nach** einzufügen, wenn Sie eine Ansicht des Fensters **Suchen und Ersetzen** im Menü **Bearbeiten** auswählen. Deaktivieren Sie diese Option, um das letzte Suchmuster aus der vorherigen Suche als Zeichenfolge für das Feld **Suchen nach** zu verwenden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Suchen und Ersetzen von Text](../../ide/finding-and-replacing-text.md)

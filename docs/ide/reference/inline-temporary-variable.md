@@ -1,5 +1,7 @@
 ---
 title: Ersetzen einer temporären Variable durch ihren Wert
+description: Hier erfahren Sie, wie Sie über das Menü „Schnellaktionen und Refactorings...“ eine temporäre Variable entfernen und durch ihren Wert ersetzen.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d24c63bdc1908ecc15c206faeda3e9de511f8f9b
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568866"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617408"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Inlinesetzen eines temporären Variablenrefactorings
 

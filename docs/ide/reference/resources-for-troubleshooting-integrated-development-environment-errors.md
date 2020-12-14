@@ -1,5 +1,7 @@
 ---
 title: Ressourcen für die Problembehandlung bei Fehlern
+description: Hier erfahren Sie, wie Sie mithilfe von Knowledge Base-Artikeln, Foren oder des Produktsupports IDE-Fehler beheben, deren Fehlermeldungen nicht informativ genug sind, um Ihnen beim Beheben eines Problems zu helfen.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
@@ -93,12 +95,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234730"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616582"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressourcen für die Problembehandlung bei Fehlern der integrierten Entwicklungsumgebung
 

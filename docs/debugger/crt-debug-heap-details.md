@@ -1,5 +1,7 @@
 ---
 title: Details zum CRT-Debugheap | Microsoft-Dokumentation
+description: Der Debugheap bietet leistungsfähige Tools zum Beheben von Speicherbelegungsproblemen. Hier erfahren Sie mehr über die Tools und darüber, wie diese zum Beheben von Problemen wie Verlusten und Überläufen verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -73,12 +75,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247944"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560615"
 ---
 # <a name="crt-debug-heap-details"></a>Details zum CRT-Debugheap
 Dieses Thema umfasst eine detaillierte Erläuterung des CRT‑Debugheaps.

@@ -1,5 +1,7 @@
 ---
 title: Festlegen von Textmarken im Code
+description: Hier erfahren Sie, wie Sie Textmarken verwenden, um Zeilen im Code zu markieren, sodass Sie schnell zu einer bestimmten Stelle zurückkehren und zwischen Stellen hin- und herwechseln können.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ded48fcea0630bf07311cbb92ed2e258cdf4afb1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595435"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560862"
 ---
 # <a name="set-bookmarks-in-code"></a>Festlegen von Textmarken im Code
 
@@ -40,6 +42,6 @@ Sie können Textmarken in virtuellen Ordnern organisieren, indem Sie im Textmark
 
 Sie können Textmarken deaktivieren (ohne sie zu entfernen), indem Sie im Textmarkenfenster auf die Schaltfläche **Alle Textmarken deaktivieren** klicken. Sie können sie erneut aktivieren, indem Sie auf dieselbe Schaltfläche klicken (die jetzt den Namen **Alle Textmarken aktivieren** aufweist).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Funktionen des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

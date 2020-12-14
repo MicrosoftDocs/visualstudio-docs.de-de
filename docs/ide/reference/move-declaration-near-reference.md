@@ -1,5 +1,7 @@
 ---
 title: Verschieben einer Variablendeklaration in die Nähe eines Verweises
+description: Hier erfahren Sie, wie Sie über das Menü „Schnellaktionen und Refactorings...“ die Deklarationen von Variablen näher zu den Stellen verschieben, an denen diese Variablen verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1339f4a9d151ef41d9a35c5aac0a96f220a297b3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 188907b4f1b6630e95ab435d588878b16c763f4a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093993"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616927"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Refactoring zum Verschieben einer Deklaration in Verweisnähe
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 09/08/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Hier erfahren Sie, wie Sie Microsoft Windows Virtual Desktop über Ihr Visual Studio-Abonnement nutzen können.
-ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005045"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537954"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Zugriff auf Windows Virtual Desktop in Abonnements 
 Visual Studio-Abonnenten können nun ihr Azure DevTest-Einzelguthaben für Microsoft Windows Virtual Desktop-Dienste verwenden.  
@@ -47,9 +47,9 @@ Wenn Sie alle Voraussetzungen erfüllen, sollten Sie einige Aktionen durchführe
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Verfügbar|  Ja          |
-| Visual Studio Enterprise mit GitHub Enterprise  | VL | Verfügbar|  Ja          |
+| Visual Studio Enterprise-Abonnement mit GitHub Enterprise  | VL | Verfügbar|  Ja          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Verfügbar                                                             |  Ja             |
-| Visual Studio Professional mit GitHub Enterprise | VL                                       | Verfügbar                                        |  Ja           |
+| Visual Studio Professional-Abonnement mit GitHub Enterprise | VL                                       | Verfügbar                                        |  Ja           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar|  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                         |  Ja          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |

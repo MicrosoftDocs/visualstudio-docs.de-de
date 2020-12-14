@@ -1,5 +1,7 @@
 ---
 title: Debuggen von Tasks | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die zum Debuggen eines Programms erforderlichen Tasks wie das Anfügen des Programms an eine Debug-Engine, das Generieren von Startereignissen und das Erreichen von Breakpoints.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903559"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915569"
 ---
 # <a name="debug-tasks"></a>Debuggen von Tasks
 Zum Debuggen eines Programms muss es gestartet werden, und es muss eine Debug-Engine (DE) angefügt werden. Andernfalls muss die DE an ein zuvor gestartetes Programm angefügt werden. Nach dem Anfügen muss die DE bestimmte Startereignisse generieren. Als Antwort versucht das Debugpaket, die Breakpoints zu binden, die in der IDE festgelegt wurden. Wenn das Programm auf einen gebundenen Breakpoint trifft, wird es angehalten und wartet auf eine Benutzereingabe.

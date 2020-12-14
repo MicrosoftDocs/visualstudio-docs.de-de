@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 08/04/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "91005341"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537980"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -73,16 +73,16 @@ Wenn Ihr Pluralsight-Abonnement abläuft, ändert sich der Status in „0 Tage 
 |                          Abonnementstufe                          |     Channels      |    Vorteil    |   Erneuerbar?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 Monate    | Ja<sup>2</sup> |
-|          Visual Studio Enterprise mit GitHub Enterprise          | VL  |   6 Monate    | Ja<sup>2</sup> |
+|          Visual Studio Enterprise-Abonnement mit GitHub Enterprise          | VL  |   6 Monate    | Ja<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 Monate    | Ja<sup>2</sup> |
-|         Visual Studio Professional mit GitHub Enterprise          | VL  |   3 Monate    | Ja<sup>2</sup> |
+|         Visual Studio Professional-Abonnement mit GitHub Enterprise          | VL  |   3 Monate    | Ja<sup>2</sup> |
 |              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Nicht verfügbar    | NA  |
 |                      MSDN Platforms (Standard)                       |    VL, Retail     |   Nicht verfügbar    | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) |       Azure       | Nicht verfügbar |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Program      | Nicht verfügbar |       NA       |
 ||
 
-<sup>1</sup>  *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+<sup>1</sup> *Enthält:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
 <sup>2</sup> *Der Pluralsight-Vorteil wird in ausgewählten Visual Studio-Abonnements gemeinsam mit dem Abonnement verlängert. Wenn Sie beispielsweise ein Jahresabonnement abgeschlossen haben, das jährlich verlängert wird, profitieren Sie so lange von diesem Vorteil, bis das Abonnement gekündigt wird. Wenn Sie ein Abonnement mit einer Laufzeit von mehreren Jahren abgeschlossen haben, ist der Pluralsight-Vorteil so lange verfügbar, wie das Abonnement besteht.  Wenn dieses Abonnement verlängert wird, können Sie auch weiter von dem Vorteil profitieren.*
 

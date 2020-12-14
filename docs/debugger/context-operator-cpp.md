@@ -1,5 +1,7 @@
 ---
 title: Kontextoperator im Debugger ( C++ ) | Microsoft-Dokumentation
+description: Möglicherweise müssen Sie einen Kontext für einen C++-Namen angeben, der sich außerhalb des Gültigkeitsbereichs befindet und durch einen lokalen Namen verborgen wird. Hier erfahren Sie, wie Sie hierfür den Kontextoperator verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564703"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559757"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Kontextoperator im Visual Studio-Debugger (C++)
 Sie können den Kontextoperator in C++ zur Kennzeichnung von Haltepunktpositionen, Variablennamen oder Ausdrücken verwenden. Der Kontextoperator eignet sich für die Angabe eines Namens außerhalb des Gültigkeitsbereichs, der andernfalls durch einen lokalen Namen verborgen würde.
@@ -59,7 +61,7 @@ Sie können den Kontextoperator in C++ zur Kennzeichnung von Haltepunktpositione
   {,,"a long, long, library name.dll"} g_Var
   ```
 
-- *expression* ist ein beliebiger gültiger C++-Ausdruck, der zu einem gültigen Ziel, z. B. einem Funktionsnamen, einem Variablennamen oder einer Zeigeradresse in *module*aufgelöst wird.
+- *expression* ist ein beliebiger gültiger C++-Ausdruck, der zu einem gültigen Ziel, z. B. einem Funktionsnamen, einem Variablennamen oder einer Zeigeradresse in *module* aufgelöst wird.
 
   Wenn die Ausdrucksauswertung in einem Ausdruck auf ein Symbol trifft, wird in der folgenden Reihenfolge danach gesucht:
 

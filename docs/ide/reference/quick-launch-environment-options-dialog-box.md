@@ -1,5 +1,7 @@
 ---
 title: Schnellstart, Umgebung, Dialogfeld „Optionen“
+description: Hier erfahren Sie, wie Sie über die Seite „Quick Launch“ (Schnellstart) im Abschnitt „Umgebung“ Aktionen für IDE-Objekte wie Optionen, Vorlagen und Menüs schnell suchen und ausführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,22 +17,22 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e055906dd4cddabd16b39e3b2cad66d07dddd38d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565668"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616745"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Schnellstart, Umgebung, Dialogfeld „Optionen“
 
-Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optionen, Vorlagen oder Menüs schnell zu suchen und auszuführen. Sie können **Schnellstart** nicht zur Suche nach Code und Symbolen verwenden. Das Suchfeld **Schnellstart** befindet sich rechts oben in der Menüleiste und kann mit der Tastenkombination **STRG**+**Q** aufgerufen werden. Geben Sie einfach die Suchzeichenfolge im Feld ein. Verwenden Sie ‘@@‘, um nach Zeichenfolgen zu suchen, die @ enthalten.
+Sie können **Schnellstart** verwenden, um Aktionen für IDE-Objekte wie Optionen, Vorlagen oder Menüs schnell zu suchen und auszuführen. Sie können **Schnellstart** nicht zur Suche nach Code und Symbolen verwenden. Das Suchfeld **Schnellstart** befindet sich rechts oben in der Menüleiste und kann mit der Tastenkombination **STRG**+**Q** aufgerufen werden. Geben Sie einfach die Suchzeichenfolge im Feld ein. Verwenden Sie ‘@@‘, um nach Zeichenfolgen zu suchen, die @ enthalten. 
 
 **Schnellstart** ist standardmäßig aktiviert, wenn Sie Visual Studio installieren. Auf der Menüleiste können Sie den **Schnellstart** darstellen oder ausblenden, indem Sie **Extras** > **Optionen** auswählen. Erweitern Sie den Knoten **Umgebungen**, und wählen Sie dann **Schnellstart** aus. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Schnellstart aktivieren**. Sie können auf dieser Seite auch Suchkategorien aktivieren oder deaktivieren.
 
 ## <a name="category-list"></a>Kategorieliste
 
-Schnellstart-Suchergebnisse werden in vier Kategorien unterteilt: **Zuletzt verwendet**, **Menüs**, **Optionen** und **Geöffnete Dokumente**. Außerdem wird die Anzahl von Elementen pro Kategorie angezeigt. Wenn die Suchergebnisse nach Kategorie durchlaufen werden sollen, drücken Sie die Tastenkombination **STRG**+**Q**. So werden alle Ergebnisse der nächsten Kategorie angezeigt. Nach Anzeigen der letzten Kategorie können Sie mit **STRG**+**Q** einige Ergebnisse aus jeder Kategorie aufrufen. Mit **STRG**+**UMSCHALT**+**Q** können Sie in umgekehrter Reihenfolge durch die Kategorien navigieren. Wählen Sie den Kategorienamen aus, um alle Suchergebnisse aus einer Kategorie anzuzeigen.
+Es gibt vier Kategorien von Schnellstart-Suchergebnissen: **Zuletzt verwendet**, **Menüs**, **Optionen** und **Geöffnete Dokumente**. Außerdem wird die Anzahl von Elementen pro Kategorie angezeigt. Wenn die Suchergebnisse nach Kategorie durchlaufen werden sollen, drücken Sie die Tastenkombination **STRG**+**Q**. So werden alle Ergebnisse der nächsten Kategorie angezeigt. Nach Anzeigen der letzten Kategorie können Sie mit **STRG**+**Q** einige Ergebnisse aus jeder Kategorie aufrufen. Mit **STRG**+**UMSCHALT**+**Q** können Sie in umgekehrter Reihenfolge durch die Kategorien navigieren. Wählen Sie den Kategorienamen aus, um alle Suchergebnisse aus einer Kategorie anzuzeigen.
 
 Sie können die folgenden Tastenkombinationen verwenden, um die Suche auf bestimmte Kategorien einzuschränken.
 

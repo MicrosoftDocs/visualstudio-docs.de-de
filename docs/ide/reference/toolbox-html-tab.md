@@ -1,5 +1,7 @@
 ---
 title: Toolbox, Registerkarte „HTML“
+description: Hier erfahren Sie mehr über die HTML-Komponenten auf der Registerkarte „HTML“ im Fenster „Toolbox“.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f91e832e33d6a65d9fc70ee594d0c0670242306e
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596436"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560459"
 ---
 # <a name="toolbox-html-tab"></a>Toolbox, Registerkarte „HTML“
 
@@ -30,11 +32,11 @@ Erstellen Sie eine Instanz eines Tools auf der Registerkarte **HTML**, indem Sie
 
 Die folgenden Tools sind standardmäßig auf der Registerkarte „HTML“ verfügbar.
 
-**Pointer**
+**Zeiger**
 
 ![ASP.NET Mobile-Designer, HTML-Seite, Zeiger](../../ide/reference/media/vxpointer.gif)
 
-Dieses Tool ist standardmäßig ausgewählt, wenn eine Toolboxregisterkarte geöffnet wird. Es kann nicht gelöscht werden. Mithilfe des Zeigers können Sie Objekte auf die Entwurfsoberfläche ziehen, die Größe der Objekte ändern und sie auf der Seite oder dem Formular neu anordnen. Weitere Informationen finden Sie unter [Toolbox](../../ide/reference/toolbox.md).
+Dieses Tool ist standardmäßig ausgewählt, wenn eine Toolboxregisterkarte geöffnet wird. Er kann nicht gelöscht werden. Mithilfe des Zeigers können Sie Objekte auf die Entwurfsoberfläche ziehen, die Größe der Objekte ändern und sie auf der Seite oder dem Formular neu anordnen. Weitere Informationen finden Sie unter [Toolbox](../../ide/reference/toolbox.md).
 
 **Input (Button)**
 
@@ -168,7 +170,7 @@ Wenn Sie **Textarea** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup �
 > [!IMPORTANT]
 > Es wird empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Validating User Input in ASP.NET Web Pages (Razor) Sites (Überprüfen der Benutzereingabe in ASP.NET-Webseiten (Razor-Websites))](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
-**Table**
+**Tabelle**
 
 ![HTMLpageToolbarTable-Bildschirmabbildung](../../ide/reference/media/vxtable.gif)
 
@@ -180,7 +182,7 @@ Wenn Sie **Table** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup ähn
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
-**Image**
+**Bild**
 
 ![HTML-Seite, Image-Element](../../ide/reference/media/vximage.gif)
 
@@ -232,4 +234,4 @@ Wenn Sie **Div** auf die Entwurfsoberfläche ziehen, wird ein HTML-Markup ähnli
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Werkzeugpalette](../../ide/reference/toolbox.md)
+- [Werkzeugkasten](../../ide/reference/toolbox.md)
