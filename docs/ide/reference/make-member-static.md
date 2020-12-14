@@ -1,5 +1,7 @@
 ---
 title: Festlegen eines Members als statisch
+description: Hier erfahren Sie, wie Sie das Menü „Schnellaktionen und Refactorings...“ verwenden, um einen Member als statisch zu kennzeichnen.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ecc66cb58ad11bd431acb341dae0493ce8192da
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e663d59f47728bc4a7c84290ee0e89ae453f23ae
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77519302"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561018"
 ---
 # <a name="make-member-static"></a>Festlegen eines Members als statisch
 
@@ -38,6 +40,6 @@ Dieses Refactoring gilt für:
 
 3. Klicken Sie auf **Als statisch festlegen**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)

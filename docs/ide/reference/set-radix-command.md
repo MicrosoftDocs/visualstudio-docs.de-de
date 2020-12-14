@@ -1,5 +1,7 @@
 ---
 title: Befehl "Wurzel setzen"
+description: Hier erfahren Sie mehr über den SetRadix-Befehl sowie darüber, wie dieser die zum Anzeigen von ganzzahligen Werten verwendete numerische Basis festlegt oder zurückgibt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e88dc1318e29ddf35073b78218eb113fe8952aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b47c30ed938a83a2b4c47f73f55b5f7ca1db6a62
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769645"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616407"
 ---
 # <a name="set-radix-command"></a>Befehl "Wurzel setzen"
 Legt die zum Anzeigen von ganzzahligen Werten verwendete numerische Basis fest bzw. gibt sie zurück.
@@ -32,7 +34,7 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>Argumente
 `10` oder `16` oder `hex` oder `dec`
 
-Dies ist optional. Legt „dezimal“ (10 bzw. dec) oder „hexadezimal“ (16 bzw. hex) als Format fest. Wird ein Argument weggelassen, wird der aktuelle Wert der Wurzel zurückgegeben.
+Optional. Legt „dezimal“ (10 bzw. dec) oder „hexadezimal“ (16 bzw. hex) als Format fest. Wird ein Argument weggelassen, wird der aktuelle Wert der Wurzel zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 In diesem Beispiel wird die Umgebung zum Anzeigen ganzzahliger Werte im Hexadezimalformat konfiguriert.
@@ -46,4 +48,4 @@ In diesem Beispiel wird die Umgebung zum Anzeigen ganzzahliger Werte im Hexadezi
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

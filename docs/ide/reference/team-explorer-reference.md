@@ -1,16 +1,18 @@
 ---
 title: Team Explorer-Referenz
+description: Hier erfahren Sie mehr über die verschiedenen Funktionen im Team Explorer zum Verwalten und Koordinieren der Arbeit mit anderen Teammitgliedern, um ein Projekt zu entwickeln.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928081"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560992"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer-Referenz
 
@@ -18,11 +20,11 @@ In diesem Artikel sind Links zu Azure DevOps-Artikeln über verschiedene Funktio
 
 Verwenden Sie das Toolfenster **Team Explorer**, um Ihren Codeaufwand für die Entwicklung eines Projekts mit anderen Teammitgliedern zu koordinieren und die Aufgaben zu verwalten, die Ihnen, Ihrem Team oder Ihren Projekten zugewiesen sind. **Team Explorer** verbindet Visual Studio mit Git- und GitHub-Repositorys, Repositorys der Team Foundation-Versionskontrolle (TFVC) und Projekten, die auf [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) oder einer lokalen [Azure DevOps Server](/azure/devops/index-all)-Instanz (früher „TFS“ genannt) gehostet werden. Sie können Quellcode, Arbeitselemente und Builds verwalten.
 
-## <a name="home-page"></a>Homepage
+## <a name="home-page"></a>Startseite
 
 Nach dem [Herstellen einer Verbindung mit einem Projekt](../connect-team-project.md) in **Team Explorer** stehen Ihnen folgende Links im Abschnitt **Projekt** zur Verfügung:
 
-- [Clone repository (Klonen eines Repositorys)](/azure/devops/repos/git/clone)
+- [Klonen des Repositorys](/azure/devops/repos/git/clone)
 - [Web Portal (Webportal)](/azure/devops/project/navigation/index)
 - [Task Board](/azure/devops/boards/sprints/task-board)
 
@@ -69,7 +71,7 @@ Siehe [Add/view files and folders (Hinzufügen und Anzeigen von Dateien und Ordn
 
 ## <a name="work-items-page"></a>Seite „Arbeitselemente“
 
-Mit der Seite **Arbeitselemente** können Sie Abfragen von [Arbeitselementen](/azure/devops/boards/work-items/about-work-items) anzeigen. Thema
+Mit der Seite **Arbeitselemente** können Sie Abfragen von [Arbeitselementen](/azure/devops/boards/work-items/about-work-items) anzeigen. Siehe:
 
 - [Add work items (Hinzufügen von Arbeitselementen)](/azure/devops/boards/backlogs/add-work-items)
 - [Use the query editor to list and manage queries (Verwenden des Abfrage-Editors zum Auflisten und Verwalten von Abfragen)](/azure/devops/boards/queries/using-queries)
@@ -90,7 +92,7 @@ Mit der Seite **Arbeitselemente** können Sie Abfragen von [Arbeitselementen](/a
 
 Mit der Seite **Builds** können Sie die Builddefinitionen für das Projekt anzeigen.
 
-Thema
+Siehe:
 
 - [Create build pipelines (Erstellen von Buildpipelines)](/azure/devops/pipelines/tasks/index)
 - [View and manage builds (Anzeigen und Verwalten von Builds)](/azure/devops/pipelines/overview)
@@ -100,12 +102,12 @@ Thema
 
 ## <a name="settings-page"></a>Seite "Einstellungen"
 
-Auf der Seite **Einstellungen** können Sie Verwaltungsfunktionen entweder für ein Teamprojekt oder eine Teamprojektsammlung konfigurieren. Weitere Informationen finden Sie in den folgenden Artikeln:
+Auf der Seite **Einstellungen** können Sie Verwaltungsfunktionen entweder für ein Teamprojekt oder eine Teamprojektsammlung konfigurieren. Weitere Informationen finden Sie in folgenden Artikeln:
 
-| Projekt | Projektsammlung | Andere |
+| Project | Projektsammlung | Sonstiges |
 | - | - | - |
 | [Security, Group Membership (Sicherheit: Gruppenmitgliedschaft)](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Security, Source Control (TFVC) (Sicherheit: Quellcodeverwaltung (TFVC))](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Work Item Areas (Arbeitselementbereiche)](/azure/devops/organizations/settings/set-area-paths)<br/>[Work Item Iterations (Arbeitselementiterationen)](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Portal Settings (Portaleinstellungen)](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Project Alerts (Projektwarnungen)](/azure/devops/notifications/howto-manage-team-notifications) | [Security, Group Membership (Sicherheit: Gruppenmitgliedschaft)](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Source Control (TFVC) (Quellcodeverwaltung (TFVC))](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Process Template Manager (Prozessvorlagen-Manager)](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git Global Settings (Globale Git-Einstellungen)](/azure/devops/repos/git/git-config)<br/>[Git Repository Settings (Git-Repositoryeinstellungen)](/azure/devops/repos/git/git-config) |
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Connect to projects in Team Explorer (Herstellen einer Verbindung mit Projekten in Team Explorer)](../../ide/connect-team-project.md)
+- [Herstellen einer Verbindung mit Projekten in Team Explorer](../../ide/connect-team-project.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Projekte und Projektmappen: Dialogfeld „Optionen“'
+description: Hier erfahren Sie, wie Sie die Seite „Allgemein“ im Abschnitt „Projekte und Projektmappen“ verwenden, um das Verhalten von Visual Studio im Zusammenhang mit Projekten und Projektmappen zu definieren.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567644"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616901"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Dialogfeld „Optionen“: Projekte und Projektmappen \> Allgemein
 
@@ -96,7 +98,7 @@ Wenn Sie diese Option nicht ausgewählt haben und eine Projektdatei im SDK-Forma
 
 ::: moniker-end
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Dialogfeld „Optionen“: Projekte und Projektmappen \> Speicherorte](projects-solutions-locations-options.md)
 - [Optionen (Dialogfeld), Projekte und Projektmappen, Erstellen und Ausführen](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

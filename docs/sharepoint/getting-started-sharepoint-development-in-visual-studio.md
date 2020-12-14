@@ -1,6 +1,8 @@
 ---
 title: Erste Schritte (SharePoint-Entwicklung in Visual Studio) | Microsoft-Dokumentation
 titleSuffix: ''
+description: Dieser Artikel enthält erste Schritte bei der SharePoint-Entwicklung in Visual Studio. SharePoint bietet eine webbasierte Plattform für die Zusammenarbeit.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba96887e8a3c8bc3cb1db43b7c24fa90223a2947
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 40eb9444ec72787e154ddd0cd7bc93e786c84397
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585627"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915166"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Erste Schritte (SharePoint-Entwicklung in Visual Studio)
   Dieser Abschnitt bietet Ihnen Unterstützung bei den ersten Schritten mit [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , um SharePoint-Lösungen zu entwickeln, die die Vorteile von [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]nutzen.

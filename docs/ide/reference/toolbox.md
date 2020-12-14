@@ -1,5 +1,7 @@
 ---
 title: Fenster „Toolbox“
+description: Hier erfahren Sie mehr über das Fenster „Toolbox“ und die dort angezeigten Steuerelemente, die Sie zu Visual Studio-Projekten hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9807762a4573cdbc68a4af26bf9d73b46827c7af
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285332"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560277"
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 
 Im Fenster **Toolbox** werden Steuerelemente angezeigt, die Sie zu Visual Studio-Projekten hinzufügen können. Wählen Sie zum Öffnen der **Toolbox** auf der Menüleiste **Ansicht** > **Toolbox** aus, oder drücken Sie **STRG**+**ALT**+**X**.
 
-![Fenster „Toolbox“](media/vs-2019/toolbox.png "Screenshot des Fensters „Toolbox“")
+![Screenshot: Fenster „Toolbox“ mit den Optionen im Abschnitt „Container“](media/vs-2019/toolbox.png "Screenshot des Fensters „Toolbox“")
 
 Sie können verschiedene Steuerelemente per Drag & Drop auf die Oberfläche des verwendeten Designers verschieben und die Größe und Position der Steuerelemente ändern.
 
@@ -37,7 +39,7 @@ Die .NET-Version, auf die Ihr Projekt ausgerichtet ist, wirkt sich auch auf die 
 
 ::: moniker range="vs-2019"
 
-![Fenster „Toolbox“](media/vs-2019/toolbox-change-dotnet-version.png "Screenshot des Dialogfelds, in dem Sie die .NET-Version ändern können")
+![Screenshot: Dialogfeld „Anwendung“ mit den Optionen in der Dropdownliste „Zielframework“](media/vs-2019/toolbox-change-dotnet-version.png "Screenshot des Dialogfelds, in dem Sie die .NET-Version ändern können")
 
 ::: moniker-end
 

@@ -1,5 +1,7 @@
 ---
 title: Allgemein, Umgebung, Dialogfeld "Optionen"
+description: Hier erfahren Sie, wie Sie über die Seite „Allgemein“ im Abschnitt „Umgebung“ das Farbdesign, Statusleisteneinstellungen, Dateierweiterungszuordnungen und mehr für die IDE ändern.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfd1b876e58c05c668fd74087d5131bb1e9fcd40
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 6068f63cc9c2e7abe36b6eac804beaaa6603303e
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189783"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617265"
 ---
 # <a name="options-dialog-box-environment--general"></a>Dialogfeld „Optionen“: Umgebung \> Allgemein
 
@@ -66,7 +68,7 @@ Gibt an, ob Visual Studio die Anpassung der visuellen Darstellung automatisch fe
 
 ::: moniker-end
 
-**Umfassende visuelle Clientdarstellung aktivieren**
+**Enable rich client experience** (Umfassende visuelle Clientdarstellung aktivieren)
 
 Aktiviert die vollständige visuelle Darstellung von Visual Studio, u. a. mit Farbverläufen und Animationen. Deaktiviert diese Option bei Verwendung von Remotedesktopverbindungen oder älteren Grafikkarten, da diese Funktionen in solchen Fällen zu einer schlechteren Leistung führen können. Diese Option ist nur verfügbar, wenn Sie die Option **Visuelle Darstellung automatisch basierend auf der Clientleistung anpassen** deaktivieren.
 
@@ -88,14 +90,14 @@ Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü *
 
 Zeigt die Statusleiste an. Die Statusleiste befindet sich am unteren Rand des IDE-Fensters und zeigt Informationen über den Fortschritt derzeit ausgeführter Vorgänge an.
 
-**Schaltfläche „Schließen“ gilt nur für aktives Toolfenster**
+**Schaltfläche „Schließen“ bezieht sich nur auf aktives Toolfenster**
 
 Gibt an, dass beim Klicken auf die Schaltfläche **Schließen** nur das Toolfenster geschlossen wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig ausgewählt.
 
-**Schaltfläche „Automatisch ausblenden“ gilt nur für aktives Toolfenster**
+**Schaltfläche „Automatisch ausblenden“ bezieht sich nur auf aktives Toolfenster**
 
 Gibt an, dass beim Klicken auf die Schaltfläche **Automatisch ausblenden** nur das Toolfenster automatisch ausgeblendet wird, das den Fokus besitzt, und nicht alle Toolfenster im angedockten Satz. Diese Option ist standardmäßig nicht ausgewählt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)

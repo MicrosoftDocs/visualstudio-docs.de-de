@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld „Bearbeiten und fortfahren“ | Microsoft-Dokumentation
+description: Das Dialogfeld „Bearbeiten und fortfahren“ wird angezeigt, wenn Sie beim Debuggen Code bearbeitet haben. Hier erfahren Sie, wie Sie steuern können, ob Codeänderungen angewendet werden, ohne dass Sie vorher zustimmen müssen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: ed625d98cc4f3fe793ba0982771b0a57ff189526
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599537"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863100"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Dialogfeld „Bearbeiten und Fortsetzen“
 (Nur nativ) Dieses Dialogfeld wird angezeigt, wenn Sie während des Debuggens Code bearbeitet haben und die Codeänderungen von der Funktion **Bearbeiten und Fortfahren** übernommen werden können. Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).

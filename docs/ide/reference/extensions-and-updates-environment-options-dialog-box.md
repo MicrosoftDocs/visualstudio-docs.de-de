@@ -1,5 +1,6 @@
 ---
 title: Erweiterungen, Umgebung, Dialogfeld „Optionen“
+description: Hier erfahren Sie, wie Sie über die Seite „Extensions“ (Erweiterungen) im Abschnitt „Umgebung“ festlegen, wie Visual Studio-Updates ausgeführt und Erweiterungen aktualisiert und ermittelt werden.
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 10642cabb5ac9d0d864da25f8cbf285e5b58e995
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114228"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617343"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>Dialogfeld „Optionen“: Umgebung \> Erweiterungen
 

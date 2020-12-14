@@ -1,5 +1,7 @@
 ---
 title: Generieren einer Methode
+description: Hier erfahren Sie, wie Sie einer Klasse mit dem Menü „Schnellaktionen und Refactorings...“ eine Methode hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f166c31a1615c951170367223a5b19ab93811b5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22c49085a430c7afc002fe4e11dcf1184348efdc
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595591"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617213"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generieren einer Methode in Visual Studio
 
@@ -66,7 +68,7 @@ Diese Codegenerierung gilt für:
 
        ![Ergebnis der Methodengenerierung in Visual Basic](media/method-result-vb.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

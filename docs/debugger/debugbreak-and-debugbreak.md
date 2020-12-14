@@ -1,5 +1,7 @@
 ---
 title: DebugBreak und __debugbreak | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie mit der DebugBreak-Funktion und der intrinsischen Funktion __debugbreak die Ausführung des Programms so unterbrechen können, als wäre an der betreffenden Stelle ein Haltepunkt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 376dd75062dc5a78582a23a12e9e025db60b9f3a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404653"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559770"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak und "_debugbreak"
 Die Win32-Funktion [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) oder die systeminterne Funktion [__debugbreak](/cpp/intrinsics/debugbreak) kann an einer beliebigen Stelle im Code aufgerufen werden. `DebugBreak` und `__debugbreak` haben dieselben Auswirkungen wie das Festlegen eines Haltepunkts an dieser Stelle.

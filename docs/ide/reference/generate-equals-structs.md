@@ -1,5 +1,7 @@
 ---
 title: Generieren von IEquatable-Operatoren für Strukturen
+description: Hier erfahren Sie mehr über die Verwendung des Menüs „Schnellaktionen und Refactorings...“ zum Generieren der Operatoren Equals und IEquatable für Strukturen.
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d70c0ea95c9373eb87e6199d53f1b43fadd508
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808115"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617200"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Sie können IEquatable-Operatoren generieren, wenn Sie „Equals“ für Strukturen generieren.
 

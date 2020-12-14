@@ -1,5 +1,7 @@
 ---
 title: Toolbox, Daten (Registerkarte )
+description: Hier erfahren Sie mehr über die Datenobjekte auf der Registerkarte „Daten“ im Fenster „Toolbox“.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 78a697ae8d9f3f551c8bb734c28c1f53551b1f81
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590253"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561083"
 ---
-# <a name="toolbox-data-tab"></a>Toolbox, Registerkarte „Daten“
+# <a name="toolbox-data-tab"></a>Toolbox, Daten (Registerkarte )
 
 Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können. Die Registerkarte **Daten** unter **Toolbox** wird geöffnet, wenn Sie ein Projekt erstellen, mit dem ein Designer verknüpft ist. Die **Toolbox** wird standardmäßig in der integrierten Entwicklungsumgebung von Visual Studio angezeigt. Wenn Sie die **Toolbox** einblenden möchten, klicken Sie im Menü **Ansicht** auf **Toolbox**.
 

@@ -1,5 +1,7 @@
 ---
 title: Refactoring des Entfernens von nicht erreichbarem Code
+description: Hier erfahren Sie, wie Sie über das Menü „Schnellaktionen und Refactorings...“ Code entfernen, der nie ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3af9d0a14b600773c5025fcaad68380c7bb82b29
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093961"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616706"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refactoring des Entfernens von nicht erreichbarem Code
 

@@ -1,5 +1,7 @@
 ---
 title: Sicherheit
+description: Hier erfahren Sie mehr über einige Sicherheitskonzepte und die Sicherheitsfeatures, mit denen Sie sichere Anwendungen effektiv entwickeln können.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e02900c96991a402d7ea7b789a47f8f2dea447c3
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 07f0c685b61ab72d3db9ada79b29dcb5b4e4a1f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781016"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560823"
 ---
-# <a name="secure-applications"></a>Sichern von Anwendungen
+# <a name="secure-applications"></a>Sichere Anwendungen
 
 Sicherheitsüberlegungen sollten vom Entwurf bis zur Bereitstellung in alle Aspekte der Anwendungsentwicklung einfließen. Beginnen Sie damit, Visual Studio so sicher wie möglich auszuführen. Weitere Informationen finden Sie unter [Benutzerberechtigungen](../ide/user-permissions-and-visual-studio.md).
 

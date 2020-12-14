@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Azure DevOps als Visual Studio-Abonnent verwenden können.
-ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970508"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537694"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Azure DevOps-Vorteile für Visual Studio-Abonnenten
 Als aktiver Visual Studio-Abonnent haben Sie Zugriff auf zahlreiche Features in Azure DevOps, die als Vorteil in Ihrem Abonnement enthalten sind. Sie können diese Features in jeder Azure DevOps-Organisation verwenden, bei dem Sie Mitglied sind. Dabei spielt es keine Rolle, ob Sie die Organisation erstellt haben oder von jemandem hinzugefügt wurden.
@@ -31,9 +31,9 @@ Es wird automatisch erkannt, ob Sie sich bei Azure DevOps mit der Identität anm
 | Abonnementstufe                                                 |     Channels                                            | Vorteil                                                          | Erneuerbar?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, monatliche Cloud)   | VL, Azure, Retail, NFR ausgewählt<sup>1</sup>  | Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans, selbstgehostete Parallelaufträge |  Ja          |
-| Visual Studio Enterprise mit GitHub Enterprise   | VL| Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans, selbstgehostete Parallelaufträge |  Ja          |
+| Visual Studio Enterprise-Abonnement mit GitHub Enterprise   | VL| Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans, selbstgehostete Parallelaufträge |  Ja          |
 | Visual Studio Professional (Standard, monatliche Cloud) | VL, Azure, Retail                                        | Azure Boards und Repositorys (Basic<sup>2</sup>)                                                             |  Ja          |
-| Visual Studio Professional mit GitHub Enterprise | VL| Azure Boards und Repositorys (Basic<sup>2</sup>)                                                             |  Ja          |
+| Visual Studio Professional-Abonnement mit GitHub Enterprise | VL| Azure Boards und Repositorys (Basic<sup>2</sup>)                                                             |  Ja          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans                                              |  Ja          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards und Repositorys (Basic<sup>2</sup>), Azure Test Plans                                             |  Ja          |
 ||

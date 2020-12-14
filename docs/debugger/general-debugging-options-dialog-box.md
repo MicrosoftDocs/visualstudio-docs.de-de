@@ -1,5 +1,7 @@
 ---
 title: Allgemein, Debuggen, Dialogfeld „Optionen“ | Microsoft-Dokumentation
+description: Legen Sie die Visual Studio-Debuggeroptionen so fest, dass Ihre Anforderungen für das Debuggen erfüllt sind. Sie können das Verhalten bei Unterbrechungen, die Debugebenen, das Anzeigeverhalten und vieles mehr konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 1b052c2cce3d396debb4fbaf8ce688ede3effb98
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286556"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863009"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Optionen zum Debuggen
 

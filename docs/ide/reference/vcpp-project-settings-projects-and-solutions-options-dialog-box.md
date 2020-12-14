@@ -1,5 +1,7 @@
 ---
 title: Optionen für C++-Projekteinstellungen
+description: Hier erfahren Sie, wie Sie die Seite „VC++-Projekteinstellungen“ im Abschnitt „Projekte und Projektmappen“ verwenden, um Build- und Projekteinstellungen für C++ zu definieren, die für die Protokollierung, Leistung sowie unterstützende Dateitypen relevant sind.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16226cd66c2cf46d1dc46f1cb3f90dc3bad9658c
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68918883"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616277"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 
@@ -59,7 +61,7 @@ Schließt Umgebungsvariablen aus der Buildprotokolldatei aus.
 
  **Ja**
 
-  Aktiviert die Zeitnahme für das Build. Wenn diese Option ausgewählt ist, wird die Dauer der Builderstellung im Ausgabefenster ausgegeben. Weitere Informationen finden Sie im [Ausgabefenster](../../ide/reference/output-window.md).
+  Aktiviert die Zeitnahme für das Build. Wenn diese Option ausgewählt ist, wird die Dauer der Builderstellung im Ausgabefenster ausgegeben. Weitere Informationen finden Sie unter [Ausgabefenster](../../ide/reference/output-window.md).
 
  **Nein**
 

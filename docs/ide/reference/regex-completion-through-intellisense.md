@@ -1,5 +1,6 @@
 ---
 title: Vervollständigung regulärer Ausdrücke über das Menü „IntelliSense“
+description: Hier erfahren Sie, wie Sie mithilfe von IntelliSense mit dem IntelliSense-Menü einen regulären Ausdruck schreiben.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,14 +11,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 750869abbad079f3c109113f8cd65b5e8f11c147
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093861"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616693"
 ---
-# <a name="regex-completion-through-intellisense-menu"></a>RegEx-Vervollständigung über das Menü „IntelliSense“
+# <a name="regex-completion-through-intellisense-menu"></a>Vervollständigung regulärer Ausdrücke über das Menü „IntelliSense“
 
 Dieses Refactoring gilt für:
 
@@ -39,6 +40,6 @@ Dieses Refactoring gilt für:
 
    ![Vervollständigung regulärer Ausdrücke durch IntelliSense](../media/regex-completion-intellisense.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)

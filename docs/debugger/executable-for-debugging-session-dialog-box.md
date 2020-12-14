@@ -1,5 +1,7 @@
 ---
 title: Ausführbare Datei für die Debugsitzung (Dialogfeld) | Microsoft-Dokumentation
+description: Sie müssen eine ausführbare Datei angeben, um die DLL aufzurufen und diese zu debuggen. Hier erfahren Sie mehr über das Dialogfeld, das angezeigt wird, wenn keine ausführbare Datei angegeben ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92cf53ed499318d60c8da5147685e3f0f340e404
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4f1f1a88ad30d5102043571473be0d72d71a054
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736239"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863048"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Ausführbare Datei für die Debugsitzung (Dialogfeld)
 

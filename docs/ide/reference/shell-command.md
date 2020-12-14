@@ -1,5 +1,7 @@
 ---
 title: Befehl "Shell"
+description: Hier erfahren Sie mehr über den Shell-Befehl sowie darüber, wie damit ausführbare Programme aus Visual Studio heraus gestartet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565876"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616368"
 ---
 # <a name="shell-command"></a>Befehl "Shell"
 Startet ausführbare Programme aus [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -41,20 +43,20 @@ Erforderlich. Der Pfad und Dateiname der auszuführenden Datei oder des zu öffn
 
 `args`
 
-Dies ist optional. Alle Argumente, die an das aufgerufene Programm übergeben werden sollen.
+Optional. Alle Argumente, die an das aufgerufene Programm übergeben werden sollen.
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 /commandwindow [oder] /command [oder] /c [oder] /cmd
 
-Dies ist optional. Gibt an, dass die Ausgabe für die ausführbare Datei im **Befehlsfenster** angezeigt werden soll.
+Optional. Gibt an, dass die Ausgabe für die ausführbare Datei im **Befehlsfenster** angezeigt werden soll.
 
 /dir:`folder` [oder] /d: `folder`
 
-Dies ist optional. Gibt das bei der Ausführung des Programms festzulegende Arbeitsverzeichnis an.
+Optional. Gibt das bei der Ausführung des Programms festzulegende Arbeitsverzeichnis an.
 
 /outputwindow [oder] /output [oder] /out [oder] /o
 
-Dies ist optional. Gibt an, dass die Ausgabe für die ausführbare Datei im Fenster **Ausgabe** angezeigt wird.
+Optional. Gibt an, dass die Ausgabe für die ausführbare Datei im Fenster **Ausgabe** angezeigt wird.
 
 ## <a name="remarks"></a>Bemerkungen
 Die /dir-, /o- und /c-Schalter müssen unmittelbar nach `Tools.Shell` angegeben werden. Alles, was nach dem Namen der ausführbaren Datei angegeben wird, wird als Befehlszeilenargumente übergeben.
@@ -90,4 +92,4 @@ Der folgende Befehl verwendet „xcopy.exe“, um die Datei `MyText.txt` in den 
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Ausgabefenster](../../ide/reference/output-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

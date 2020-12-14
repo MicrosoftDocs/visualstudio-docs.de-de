@@ -1,5 +1,7 @@
 ---
 title: Befehl "ShowWebBrowser"
+description: Hier erfahren Sie mehr über den ShowWebBrowser-Befehl sowie darüber, wie damit die von Ihnen angegebene URL in einem Webbrowserfenster in der IDE oder außerhalb angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8266a7c70544d8a320658fcd8b9f5ad249162fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 026878bdc2158d803f191cf2d28c8eb52f0b6e09
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769574"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616316"
 ---
 # <a name="showwebbrowser-command"></a>Befehl "ShowWebBrowser"
 
@@ -35,14 +37,14 @@ View.ShowWebBrowser URL [/new][/ext]
 
 Erforderlich. URL (Uniform Resource Locator) für die Website.
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 /new
 
-Dies ist optional. Gibt an, dass die Seite in einer neuen Instanz des Webbrowsers angezeigt wird.
+Optional. Gibt an, dass die Seite in einer neuen Instanz des Webbrowsers angezeigt wird.
 
 /ext
 
-Dies ist optional. Gibt an, dass die Seite im Standardwebbrowser außerhalb der IDE angezeigt wird.
+Optional. Gibt an, dass die Seite im Standardwebbrowser außerhalb der IDE angezeigt wird.
 
 ## <a name="remarks"></a>Bemerkungen
 Der Alias für den Befehl **ShowWebBrowser** ist **navigate** oder **nav**.
@@ -59,4 +61,4 @@ Im folgenden Beispiel wird die Microsoft-Dokumentation-Homepage in einem Webbrow
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

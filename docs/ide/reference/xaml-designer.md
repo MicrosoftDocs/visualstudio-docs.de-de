@@ -1,5 +1,7 @@
 ---
 title: Seite „Optionen“ im XAML-Designer
+description: Hier erfahren Sie, wie Sie die Seite „Allgemein“ im Abschnitt „XAML-Designer“ verwenden, um anzugeben, wie Elemente und Attribute in Ihren XAML-Dokumenten formatiert werden sollen.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 45c7a5ba87c006332b601b93143cbf8acfda16b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 0955a6644e8f1dc1d42a1b22b15399a6d1ca452d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547302"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560979"
 ---
 # <a name="xaml-designer-options-page"></a>Seite „Optionen“ im XAML-Designer
 

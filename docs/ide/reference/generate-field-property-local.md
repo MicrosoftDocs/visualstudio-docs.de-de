@@ -1,5 +1,7 @@
 ---
 title: Generieren eines Felds, einer Eigenschaft oder einer lokalen Variablen
+description: Hier erfahren Sie, wie Sie über das Menü „Schnellaktionen und Refactorings...“ den Code für ein zuvor nicht deklariertes Feld oder eine zuvor nicht deklarierte Eigenschaft oder lokale Variable generieren.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b554aa5586150942c0fc7d7aeada9356a67029ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ebce688317a04bdc223659fb0c085b2f0223119d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595604"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617499"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generieren eines Felds, einer Eigenschaft oder einer lokalen Variablen in Visual Studio
 
@@ -66,7 +68,7 @@ Diese Codegenerierung gilt für:
 
        ![Ergebnis der Methodengenerierung in Visual Basic](media/field-result-vb.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

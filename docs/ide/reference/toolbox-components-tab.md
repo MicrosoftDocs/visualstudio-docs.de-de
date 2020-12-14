@@ -1,5 +1,7 @@
 ---
 title: Toolbox, Registerkarte „Komponenten“
+description: Hier erfahren Sie mehr über die Komponenten auf der Registerkarte „Komponenten“ im Fenster „Toolbox“.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597307"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560940"
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
 
@@ -80,7 +82,7 @@ Erstellt eine <xref:System.IO.Ports.SerialPort>-Komponenteninstanz, die synchron
 
 Erstellt eine <xref:System.ServiceProcess.ServiceController>-Komponenteninstanz, mit der Sie vorhandene Dienste bearbeiten und unter anderem Dienste starten und beenden sowie Befehle an sie senden können.
 
-**Zeitgeber**
+**Timer**
 
 Erstellt eine <xref:System.Windows.Forms.Timer>-Komponenteninstanz, mit der Sie zeitbasierte Funktionen zu Ihren Windows-basierten Anwendungen hinzufügen können. Weitere Informationen finden Sie unter [Timer Component (Timer-Komponente)](/dotnet/framework/winforms/controls/timer-component-windows-forms).
 
@@ -91,4 +93,4 @@ Erstellt eine <xref:System.Windows.Forms.Timer>-Komponenteninstanz, mit der Sie 
 
 - [Controls to use on Windows Forms (Steuerelemente für Windows Forms)](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Toolboxelemente auswählen, WPF-Komponenten](choose-toolbox-items-wpf-components.md)
-- [Werkzeugpalette](../../ide/reference/toolbox.md)
+- [Werkzeugkasten](../../ide/reference/toolbox.md)

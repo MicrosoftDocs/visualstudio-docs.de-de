@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Anzeigen von URLs als Links im Editor'
+description: Hier erfahren Sie, wie Sie URLs im Code-Editor als Links anzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ad0fcc7409bd91f24ef197ef12ed64610a2e0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead76a3db9ff146aa82347a67e0bf7d52d04f30e
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770349"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617083"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Gewusst wie: Anzeigen von URLs als Links im Editor
 
@@ -41,8 +43,8 @@ Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ih
 
      Erweitern Sie zum Ändern der Option für alle Sprachen den Ordner **Alle Sprachen**, und wählen Sie **Allgemein** aus.
 
-4. Wählen Sie unter **Anzeige** **Einfaches Klicken für URLs aktivieren** aus.
+4. Wählen Sie unter **Anzeige****Einfaches Klicken für URLs aktivieren** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Funktionen des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Features des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)

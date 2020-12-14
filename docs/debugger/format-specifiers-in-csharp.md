@@ -1,5 +1,7 @@
 ---
 title: Formatbezeichner im Debugger (C#) | Microsoft-Dokumentation
+description: Verwenden Sie einen Formatbezeichner, um das Format zu ändern, in dem ein Wert im Überwachungsfenster angezeigt wird. Dieser Artikel bietet Details zur Verwendung.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849858"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862788"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C# im Visual Studio-Debugger
 Sie können mit Formatbezeichnern das Format ändern, in dem ein Wert im Fenster **Überwachen** angezeigt wird. Formatbezeichner können im **Direktfenster**, im Fenster **Befehl**, in [Ablaufverfolgungspunkten](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) und in den Quellcodefenstern verwendet werden. Wenn Sie einen Ausdruck in diesen Fenstern anhalten, wird das Ergebnis in einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) im angegebenen Format angezeigt.
@@ -48,7 +50,7 @@ Wir verwenden den folgenden Beispielcode:
 }
 ```
 
-Fügen Sie beim Debuggen dem Fenster **Überwachung** die Variable `my_var1` hinzu: **Debuggen** > **Fenster** > **Überwachung** > **Überwachen 1**. Klicken Sie dann mit der rechten Maustaste auf die Variable, und wählen Sie **Hexadezimale Anzeige** aus. Im Fenster **Überwachung** wird jetzt der Wert 0x0065 angezeigt. Um diesen Wert als ganze Dezimalzahl und nicht als ganze Hexadezimalzahl anzuzeigen, geben Sie in der Spalte **Name** nach dem Variablennamen den Dezimalformatbezeichner **, d** ein. In der Spalte **Wert** wird jetzt **101** angezeigt.
+Fügen Sie beim Debuggen dem Fenster **Überwachung** die Variable `my_var1` hinzu, **Debuggen** > **Fenster** > **Überwachung** > **Überwachen 1**. Klicken Sie dann mit der rechten Maustaste auf die Variable, und wählen Sie **Hexadezimale Anzeige** aus. Im Fenster **Überwachung** wird jetzt der Wert 0x0065 angezeigt. Um diesen Wert als ganze Dezimalzahl und nicht als ganze Hexadezimalzahl anzuzeigen, geben Sie in der Spalte **Name** nach dem Variablennamen den Dezimalformatbezeichner **, d** ein. In der Spalte **Wert** wird jetzt **101** angezeigt.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 

@@ -1,5 +1,7 @@
 ---
 title: Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
+description: Hier erfahren Sie, wie Sie über die Seite „Schriftarten und Farben“ im Abschnitt „Umgebungen“ ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Benutzeroberflächenelemente in der IDE festlegen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595617"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617525"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 
@@ -40,7 +42,7 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 
 **Einstellungen anzeigen für**
 
-Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach dem Auswählen eines Elements aus der Liste können Sie die Farbeinstellungen für das ausgewählten Element unter **Elemente anzeigen**anpassen.
+Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach dem Auswählen eines Elements aus der Liste können Sie die Farbeinstellungen für das ausgewählten Element unter **Elemente anzeigen** anpassen.
 
 - **Text-Editor**
 
@@ -210,7 +212,7 @@ Hier einige Anzeigeelemente:
 
 **Elementvordergrund**
 
-Führt die verfügbaren Farben auf, die Sie für den Vordergrund des unter **Elemente anzeigen**ausgewählten Elements auswählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Vordergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
+Führt die verfügbaren Farben auf, die Sie für den Vordergrund des unter **Elemente anzeigen** ausgewählten Elements auswählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Vordergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
 
 **Automatisch**
 
@@ -229,7 +231,7 @@ Zeigt das Dialogfeld „Farbe“ an, in dem Sie eine benutzerdefinierte Farbe f�
 
 **Elementhintergrund**
 
-Stellt eine Farbpalette bereit, aus der Sie für das in der Liste **Elemente anzeigen**ausgewählte Element eine Hintergrundfarbe auswählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Hintergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
+Stellt eine Farbpalette bereit, aus der Sie für das in der Liste **Elemente anzeigen** ausgewählte Element eine Hintergrundfarbe auswählen können. Da einige Elemente verwandt sind und daher ein einheitliches Anzeigeschema beibehalten sollten, werden beim Ändern der Hintergrundfarbe des Texts auch die Standardwerte für Elemente wie Compilerfehler, Schlüsselwort oder Operator geändert.
 
 **Automatisch**
 

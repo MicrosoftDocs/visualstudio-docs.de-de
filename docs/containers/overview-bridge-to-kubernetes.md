@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440609"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595265"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Funktionsweise von Bridge to Kubernetes
 
@@ -72,7 +72,8 @@ Wenn Sie die isolierte Entwicklung ermöglichen, führt Bridge to Kubernetes zus
 Wenn Bridge to Kubernetes ermittelt, dass Azure Dev Spaces auf Ihrem Kubernetes-Cluster aktiviert ist, werden Sie dazu aufgefordert, Azure Dev Spaces zu deaktivieren, bevor Sie Bridge to Kubernetes verwenden können.
 
 Der Routing-Manager ergreift folgende Aktionen, wenn er gestartet wird:
-* Er dupliziert alle Eingänge im Namespace mithilfe von *GENERATED_NAME* für die Unterdomäne.
+
+* Er dupliziert alle im Namespace gefundenen eingehenden Daten (einschließlich der beim Lastenausgleich) mit *GENERATED_NAME* als Unterdomäne.
 * Er erstellt einen Envoy-Pod für jeden Dienst, der einem duplizierten Eingang mit der Unterdomäne *GENERATED_NAME* zugeordnet ist.
 * Er erstellt einen zusätzlichen Envoy-Pod für den Dienst, an dem Sie isoliert arbeiten. Dies ermöglicht das Weiterleiten von Anforderungen mit der Unterdomäne an Ihren Entwicklungscomputer.
 * Er konfiguriert Routingregeln für jeden Envoy-Pod, um das Routing für Dienste mit der Unterdomäne zu verarbeiten.
@@ -144,7 +145,7 @@ Bridge to Kubernetes unterliegt den folgenden Einschränkungen:
 * Ein Dienst muss von einem einzelnen Pod unterstützt werden, um eine Verbindung mit diesem Dienst herzustellen. Sie können keine Verbindung mit einem Dienst mit mehreren Pods herstellen, z. B. einem Dienst mit Replikaten.
 * In einem Pod darf nur ein einzelner Container ausgeführt werden, damit Bridge to Kubernetes erfolgreich eine Verbindung herstellen kann. Bridge to Kubernetes kann keine Verbindung mit Diensten mit Pods herstellen, die über zusätzliche Container verfügen, wie z. B. Sidecar-Container, die von Dienstgittermodellen eingefügt werden.
 * Derzeit müssen Bridge to Kubernetes-Pods Linux-Container sein. Windows-Container werden nicht unterstützt.
-* Die Isolation kann nicht mit HTTPS verwendet werden.
+* Die Isolation kann nicht mit HTTPS verwendet werden, wenn Sie Bridge to Kubernetes mit Visual Studio verwenden. HTTPS wird nur im Isolationsmodus unterstützt, wenn Sie Visual Studio Code verwenden.
 * Bridge to Kubernetes benötigt erhöhte Rechte, damit die Erweiterung auf Ihrem Entwicklungscomputer ausgeführt werden kann, um Ihre Hostdatei zu bearbeiten.
 * Bridge to Kubernetes kann nicht auf Clustern verwendet werden, auf denen Azure Dev Spaces aktiviert ist.
 

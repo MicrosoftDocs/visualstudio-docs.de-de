@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 11/19/2020
+ms.date: 12/8/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 72e6e4cdc14f87080bb9e7a6faf3285c49270d78
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ad594d41c621112fd34f83eba6b5c7a3cd53d938
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973958"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915491"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,26 +29,31 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.8.2 | Release | 19. November 2020 | 16.8.30717.126 |
-| 16.8.1 | Release | 12. November 2020 | 16.8.30711.63 |
+| 16.0.21 | Release | 8\. Dezember 2020 | 16.0.28803.902 |
+| 16.9.0 | Vorschau 2 | 8\. Dezember 2020 | 16.9.30803.129 |
+| 16.8.3 | Release | 8\. Dezember 2020 | 16.8.30804.86 |
+| 16.7.9 | Release | 8\. Dezember 2020 | 16.7.30802.117 |
+| 16.4.16 | Release | 8\. Dezember 2020 | 16.4.30802.185 |
+| 16.8.2 | Freigabe | 19. November 2020 | 16.8.30717.126 |
+| 16.8.1 | Freigabe | 12. November 2020 | 16.8.30711.63 |
 | 16.9.0 | Vorschauversion 1 | 10. November 2020 | 16.9.30709.64 |
 | 16.7.8 | Release | 10. November 2020 | 16.7.30704.19 |
 | 16.4.15 | Release | 10. November 2020 | 16.4.30703.110 |
-| 16.0.20 | Release | 10. November 2020 | 16.0.28803.868 |
+| 16.0.20 | Freigabe | 10. November 2020 | 16.0.28803.868 |
 | 16.8.0 | Freigabe | 10. November 2020 | 16.8.30709.132 |
 | 16.8.0 | Vorschau 6 | 27. Oktober 2020 | 16.8.30626.31 |
-| 16.7.7 | Release | 27. Oktober 2020 | 16.7.30621.155 |
+| 16.7.7 | Freigabe | 27. Oktober 2020 | 16.7.30621.155 |
 | 16.8.0 | Preview 5 | 20. Oktober 2020 | 16.8.30615.102 |
 | 16.7.6 | Freigabe | 13. Oktober 2020 | 16.7.30611.23 |
 | 16.8.0 | Preview 4 | 13. Oktober 2020 | 16.8.30608.117 |
 | 16.0.19 | Release | 13. Oktober 2020 | 16.0.28803.846 |
 | 16.4.14 | Freigabe | 13. Oktober 2020 | 16.4.30607.51 |
 | 16.8.0 | Preview 3.2 | 29. September 2020 | 16.8.30524.135 |
-| 16.7.5 | Release | 29. September 2020 |  16.7.30523.141 |
+| 16.7.5 | Freigabe | 29. September 2020 |  16.7.30523.141 |
 | 16.8.0 | Preview 3.1 | 22. September 2020 | 16.8.30516.212 |
 | 16.7.4 | Freigabe | 21. September 2020 | 16.7.30517.126 |
-| 16.8.0 | Preview 3 | 14. September 2020 | 16.8.30509.190 |
-| 16.7.3 | Freigabe | 8\. September 2020 | 16.7.30503.244 |
+| 16.8.0 | Vorschauversion 3 | 14. September 2020 | 16.8.30509.190 |
+| 16.7.3 | Release | 8\. September 2020 | 16.7.30503.244 |
 | 16.4.13 | Release | 8\. September 2020 | 16.4.30427.197 |
 | 16.0.18 | Freigabe | 8\. September 2020 | 16.0.28803.826 |
 | 16.8.0 | Preview 2.1 | 31. August 2020 | 16.8.30428.66 |
@@ -194,6 +199,7 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.30 | Freigabe | 8\. Dezember 2020 | 15.9.28307.1321 |
 | 15.9.29 | Freigabe | 10. November 2020 | 15.9.28307.1300 |
 | 15.9.28 | Freigabe | 13. Oktober 2020 | 15.9.28307.1274 |
 | 15.9.27 | Freigabe | 8\. September 2020 | 15.9.28307.1259 |

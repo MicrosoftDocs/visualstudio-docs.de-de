@@ -1,5 +1,7 @@
 ---
 title: Hochstufen von Membern in der Hierarchie
+description: Hier erfahren Sie, wie Sie über das Menü „Schnellaktionen und Refactorings...“ Member auf den Basistyp hochstufen.
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 159608644cb641aa2c84e4d55e92156215069030
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969167"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616875"
 ---
 # <a name="pull-members-up"></a>Hochstufen von Membern in der Hierarchie
 
@@ -48,6 +50,6 @@ Dieses Refactoring gilt für:
 
    ![Vollständiges Hochstufen von Membern in der Hierarchie](media/pull-members-up-completed.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)

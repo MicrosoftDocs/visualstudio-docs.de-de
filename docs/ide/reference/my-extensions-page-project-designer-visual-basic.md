@@ -1,5 +1,7 @@
 ---
 title: Seite "My-Erweiterungen", Projekt-Designer (Visual Basic)
+description: Hier erfahren Sie, wie Sie über die Seite „My-Erweiterungen“ des Projekt-Designers My-Namespaceerweiterungen in Ihrem Projekt verwalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5030664722bfbea6d05320dad2932f09a4f4c93c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114220"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561005"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Seite "My-Erweiterungen", Projekt-Designer (Visual Basic)
 Verwenden Sie die Seite **My-Erweiterungen** des **Projekt-Designers**, um `My`-Namespaceerweiterungen in Ihrem Projekt zu verwalten. Mithilfe von `My`-Namespaceerweiterungen können Sie den `My`-Namespace so anpassen, dass Ihre eigenen benutzerdefinierten Member hinzugefügt werden. Informationen zum Erstellen der benutzerdefinierten `My`-Namespaceerweiterungen finden Sie unter [Erweitern des My-Namespaces in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
@@ -40,7 +42,7 @@ Klicken Sie auf diese Schaltfläche, um Ihrem Projekt eine installierte `My`-Nam
 
 Wählen Sie mindestens einen Verweis in der Liste **My-Namespaceerweiterungen** aus, und klicken Sie dann auf diese Schaltfläche, um die `My`-Namespaceerweiterung aus dem Projekt zu entfernen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Extending the My Namespace in Visual Basic (Erweitern des Namespaces „My“ in Visual Basic)](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [Packen und Bereitstellen von benutzerdefinierten My-Erweiterungen](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

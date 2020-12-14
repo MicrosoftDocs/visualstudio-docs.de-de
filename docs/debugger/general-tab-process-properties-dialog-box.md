@@ -1,5 +1,7 @@
 ---
 title: Registerkarte „Allgemein“, Dialogfeld „Prozesseigenschaften“ | Microsoft-Dokumentation
+description: Sehen Sie sich die Registerkarte „Allgemein“ an, um Informationen zu einem Prozess zu erhalten, einschließlich des Modulnamens, der Prozess-ID, der Basispriorität, der Threadanzahl, der CPU-Zeit, der Benutzerzeit und der verstrichenen Zeit.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849817"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862736"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Prozesseigenschaften"
 Verwenden Sie die Registerkarte **Allgemein**, um mehr über einen bestimmten Prozess zu erfahren. Verschieben Sie den Fokus der Ansicht auf das Fenster [Prozessansicht](../debugger/processes-view.md), um das [Dialogfeld „Prozesseigenschaften“](../debugger/process-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Prozessknoten in der Struktur aus, und wählend Sie anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.

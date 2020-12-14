@@ -1,5 +1,7 @@
 ---
 title: Direktfenster
+description: Hier erfahren Sie mehr über die Verwendung des Direktfensters zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen und Ausgeben von Variablenwerten.
+ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 342a2a34528134ed1174058b6701c77c9217fc63
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568957"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617018"
 ---
 # <a name="immediate-window"></a>Direktfenster
 
 Das **Direktfenster** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen und Ausgeben von Variablenwerten verwendet. Mit dem **Direktfenster** werden Ausdrücke durch Erstellen und Verwenden des derzeit ausgewählten Projekts ausgewertet.
 
-Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann **Debuggen** > **Windows** > **Direkt** oder drücken **STRG**+**ALT**+**I**. Alternativ können Sie auch im **Befehlsfenster** **Debug.Immediate** eingeben.
+Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann **Debuggen** > **Windows** > **Direkt** oder drücken **STRG**+**ALT**+**I**. Alternativ können Sie auch im **Befehlsfenster****Debug.Immediate** eingeben.
 
 Das **Direktfenster** unterstützt IntelliSense.
 
@@ -129,7 +131,7 @@ Bei einigen Einstellungskonfigurationen werden Ausnahmebenachrichtigungen (erste
 
 2. Klicken Sie mit der rechten Maustaste auf den Textbereich des **Ausgabefensters**, und aktivieren bzw. deaktivieren Sie dann die Option **Ausnahmemeldungen**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Navigieren im Code mit dem Debugger](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)

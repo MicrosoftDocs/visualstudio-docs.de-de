@@ -1,5 +1,7 @@
 ---
 title: Bearbeiten und fortfahren (C#) | Microsoft-Dokumentation
+description: „Bearbeiten und fortfahren“ ist für C++-Projekte verfügbar. Hier erfahren Sie, welche Änderungen unterstützt werden und wie Sie steuern können, ob und wann Ihre Änderungen angewendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599659"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863061"
 ---
 # <a name="edit-and-continue-c"></a>Bearbeiten und Fortfahren (C++)
 Sie können „Bearbeiten und fortfahren“ in C++-Projekten verwenden. Weitere Informationen zu den Einschränkungen von „Bearbeiten und fortfahren“ finden Sie unter [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md).
@@ -43,7 +45,7 @@ Weitere Informationen zu den Verbesserungen von Visual Studio 2015 Update 3 fi
 
 2. Wählen Sie im Menü **Extras** den Befehl **Optionen**.
 
-3. Wählen Sie im Dialogfeld **Optionen** den Eintrag **Debugging > Allgemein**aus.
+3. Wählen Sie im Dialogfeld **Optionen** den Eintrag **Debugging > Allgemein** aus.
 
 4. Wählen Sie zum Aktivieren **„Bearbeiten und fortfahren“ aktivieren** aus. Deaktivieren Sie das Kontrollkästchen, wenn Sie die Funktion deaktivieren möchten.
 

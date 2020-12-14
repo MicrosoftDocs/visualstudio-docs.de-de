@@ -1,5 +1,7 @@
 ---
 title: Generieren einer Dekonstruktorschnellaktion
+description: Hier erfahren Sie, wie Sie über das Menü „Schnellaktionen und Refactorings...“ den Methodenstub für einen neuen Dekonstruktor sofort generieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531883"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617252"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generieren eines Dekonstruktors in Visual Studio
 
@@ -40,7 +42,7 @@ Diese Codegenerierung gilt für:
       - Drücken Sie mit dem Cursor in der Deklaration STRG+., um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Klicken Sie auf das Symbol ![Schraubendrehersymbol](media/screwdriver.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der leeren Zeile in der Klasse platziert wurde.
+      - Klicken Sie auf das am linken Rand angezeigte :::image type="icon" source="media/screwdriver.png":::-Symbol, sofern sich der Textcursor bereits in der leeren Zeile in der Klasse befindet.
 
       ![Codefix zum Generieren eines Dekonstruktors](media/deconstruct-codefix.png)
 

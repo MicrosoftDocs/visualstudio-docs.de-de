@@ -2,7 +2,7 @@
 title: 'Visual Studio-Dokumentation: Verlauf der Neuerungen '
 titleSuffix: ''
 description: Verlauf der Neuerungen in der Visual Studio-Dokumentation
-ms.date: 10/04/2020
+ms.date: 12/04/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,106 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2314965dad6c77e749a62946f3372993813240bb
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ef6f6e71dc7c4c0625877444d0091c73e81455ac
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414502"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844009"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Verlauf der Neuerungen in der Visual Studio-Dokumentation
 
-Willkommen beim Verlauf der Neuerungen in der Visual Studio-Dokumentation. Dieser Artikel enthält die wichtigsten Änderungen an der Dokumentation vor Oktober 2020 (ab Juli 2020). Aktuelle Neuerungen finden Sie unter [Visual Studio-Dokumentation: Neues in der Dokumentation](whats-new-visual-studio-docs.md).
+Willkommen beim Verlauf der Neuerungen in der Visual Studio-Dokumentation. Dieser Artikel enthält die wichtigsten Änderungen an der Dokumentation vor November 2020 (ab Juli 2020). Aktuelle Neuerungen finden Sie unter [Visual Studio-Dokumentation: Neues in der Dokumentation](whats-new-visual-studio-docs.md).
+
+## <a name="october-2020"></a>Oktober 2020
+### <a name="code-quality"></a>Codequalität
+
+**Aktualisierte Artikel**
+- [Codeanalysetools:](../code-quality/index.yml) Zertifizierungsstelle für .NET 5 umgestaltet
+
+### <a name="containers"></a>Container
+
+**Aktualisierte Artikel**
+
+- [Schnellstart: Verwenden von Docker mit einer React-App mit einer einzigen Seite in Visual Studio](../containers/container-tools-react.md)
+  - Containertools: Verweise auf das alte Imagerepository entfernt
+  - React-Tutorial zum Aktualisieren von Containern für .NET 3.1 und VS 16.7
+- [Funktionsweise von Bridge to Kubernetes:](../containers/overview-bridge-to-kubernetes.md) Einschränkungen hinzugefügt
+- [Debuggen von Apps in einem lokalen Docker-Container:](../containers/edit-and-refresh.md) Docker-Toolbox
+
+### <a name="debugger"></a>Debugger
+
+**Neue Artikel**
+
+- [DirectX 12-Unterstützung in Visual Studio:](../debugger/graphics/visual-studio-graphics-diagnostics-directx-12.md) Visual Studio-Grafikdiagnose und DirectX 12
+
+**Aktualisierte Artikel**
+
+- [Debuggen von ASP.NET- oder ASP.NET Core-Apps in Visual Studio:](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Debuggerinhaltskorrekturen für GitHub-Probleme
+- [Verwenden von Breakpoints im Visual Studio-Debugger:](../debugger/using-breakpoints.md) Debuggerinhaltskorrekturen für GitHub-Probleme
+- [Debuggen von Azure-Diensten in Visual Studio:](../debugger/debug-azure-apps.md) Updates der SEO sowie von Links für den Momentaufnahmedebugger
+- [Livedebuggen von ASP.NET-Azure-Apps mit dem Momentaufnahmedebugger:](../debugger/debug-live-azure-applications.md) Updates der SEO sowie von Links für den Momentaufnahmedebugger
+- [Remotedebuggen:](../debugger/remote-debugging.md) Updates der SEO sowie von Links für den Momentaufnahmedebugger
+- [Übersicht über die Visual Studio-Grafikdiagnose:](../debugger/graphics/overview-of-visual-studio-graphics-diagnostics.md) Visual Studio-Grafikdiagnose und DirectX 12
+- [Visual Studio-Grafikdiagnose:](../debugger/graphics/visual-studio-graphics-diagnostics.md) Visual Studio-Grafikdiagnose und DirectX 12
+
+### <a name="get-started"></a>Erste Schritte
+
+**Aktualisierte Artikel**
+
+- [Tutorial: Erweitern einer einfachen C#-Konsolen-App:](../get-started/csharp/tutorial-console-part-2.md) erweitertes Tutorial zu Debugergänzungen für C#
+
+### <a name="ide"></a>IDE
+
+**Neue Artikel**
+
+- [Verwenden der Visual Studio-Suche:](./visual-studio-search.md) Dokument zur VS-Suche
+
+### <a name="install"></a>Installieren
+
+**Aktualisierte Artikel**
+
+- [Visual Studio-Buildnummern und -Veröffentlichungstermine](../install/visual-studio-build-numbers-and-release-dates.md)
+  - Informationen zur Preview 6 der Versionen 16.7.7 und 16.8 hinzugefügt
+  - Informationen zur Preview 5 der Version 16.8 hinzugefügt
+
+### <a name="msbuild"></a>MSBuild
+
+**Aktualisierte Artikel**
+
+- [Exemplarische Vorgehensweise: Verwenden von MSBuild:](../msbuild/walkthrough-using-msbuild.md) exemplarische Vorgehensweise zu MSBuild – Hinzufügen von eigenständigen Installationsschritten
+
+### <a name="profiling"></a>Profilerstellung
+
+**Aktualisierte Artikel**
+
+- [Analysieren der Speicherauslastung](../profiling/analyze-memory-usage.md)
+  - Updates der Arbeitsspeicherauslastung für die Profilerstellung – Links und Erläuterungen
+  - Updates der Tools für die Arbeitsspeicherauslastung
+- [Analysieren der Speicherauslastung ohne Debuggen im Leistungs-Profiler](../profiling/memory-usage-without-debugging2.md)
+  - Updates der Arbeitsspeicherauslastung für die Profilerstellung – Links und Erläuterungen
+  - Updates der Tools für die Arbeitsspeicherauslastung
+- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
+  - Updates der Arbeitsspeicherauslastung für die Profilerstellung – Links und Erläuterungen
+  - Updates der Tools für die Arbeitsspeicherauslastung
+- [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
+  - Updates der Arbeitsspeicherauslastung für die Profilerstellung – Links und Erläuterungen
+  - Updates der Tools für die Arbeitsspeicherauslastung
+- [Analysieren der CPU-Auslastung ohne Debuggen im Leistungs-Profiler:](../profiling/cpu-usage.md) Updates der Tools für die Arbeitsspeicherauslastung
+
+### <a name="windows"></a>Windows
+
+**Aktualisierte Artikel**
+
+- [Visual Studio-Dokumentation | Microsoft-Dokumentation:](../windows/index.yml) Windows-Hubupdates
+
+### <a name="xaml-tools"></a>XAML-Tools
+
+**Neue Artikel**
+
+- [Verwenden von Entwurfszeitdaten mit dem XAML-Designer in Visual Studio](../xaml-tools/xaml-designtime-data.md)
+  - Abschnitt zum Thema „Erweiterbarkeit“ zur Dokumentation zur XAML-Entwurfszeit hinzugefügt
+  - Neuer Artikel zur XAML-Entwurfszeit
 
 ## <a name="september-2020"></a>September 2020
 ### <a name="code-quality"></a>Codequalität

@@ -1,5 +1,7 @@
 ---
 title: Befehl "Symbolpfad"
+description: Hier erfahren Sie mehr über den SymbolPath-Befehl sowie darüber, wie mit diesem die Liste der vom Debugger nach Symbolen zu durchsuchenden Verzeichnisse festgelegt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bd3268f3c40736f85a18b35e33c6cc78c96d6c88
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808690"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616446"
 ---
 # <a name="symbol-path-command"></a>Befehl "Symbolpfad"
 Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht.
@@ -38,7 +40,7 @@ Dies ist optional. Ein durch Semikolons getrennte Liste der Pfade, in denen der 
 ## <a name="remarks"></a>Bemerkungen
 Wenn kein `pathname` angegeben wird, werden von dem Befehl die aktuellen Symbolpfade aufgelistet.
 
-## <a name="example-1"></a>Beispiel 1
+## <a name="example-1"></a>Beispiel 1
 In diesem Beispiel werden der Liste mit Symbolverzeichnissen zwei Pfade hinzugefügt.
 
 ```
@@ -52,7 +54,7 @@ In diesem Beispiel wird eine durch Semikolons getrennte Liste der aktuellen Symb
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)

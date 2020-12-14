@@ -1,5 +1,7 @@
 ---
 title: Generieren eines privaten Felds und einer privaten Eigenschaft anhand eines Konstruktors
+description: Hier erfahren Sie, wie Sie über das Menü „Schnellaktionen und Refactorings...“ ein privates Feld oder eine private Eigenschaft über einen Konstruktor generieren.
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56bd361d2bffb4ff17b03ac6743837032d1934e1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e989efed8b58746312ed5f5a510efa049393f3db
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283722"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617460"
 ---
 # <a name="generate-private-field-and-property-from-constructor"></a>Generieren eines privaten Felds und einer privaten Eigenschaft anhand eines Konstruktors
 

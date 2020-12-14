@@ -1,5 +1,7 @@
 ---
 title: Seite "Verweise", Projekt-Designer (Visual Basic)
+description: Hier erfahren Sie, wie Sie über die Seite „Verweise“ des Projekt-Designers die Verweise, Webverweise und importierten Namespaces für Ihr Projekt verwalten.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6cc06bd51d66b49991e12db8bb03a63a5a742fe1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565603"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616667"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 
@@ -44,7 +46,7 @@ Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Verweispfade** zuzu
 > 3. Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen
 > 4. Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)
 
- **Verweise**
+ **Referenzen**
 
 Diese Liste zeigt alle Verweise im Projekt, sowohl verwendete als auch nicht verwendete.
 
@@ -91,5 +93,5 @@ Wählen Sie einen vom Benutzer angegebenen Namespace in der Namespaceliste aus, 
 ## <a name="see-also"></a>Weitere Informationen
 
 - [Verwalten von Verweisen in einem Projekt](../../ide/managing-references-in-a-project.md)
-- [Gewusst wie: Hinzufügen oder Entfernen von importierten Namespaces (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Vorgehensweise: Hinzufügen und Entfernen von importierten Namespaces (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Imports-Anweisung (XML-Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)
