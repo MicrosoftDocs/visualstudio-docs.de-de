@@ -1,5 +1,7 @@
 ---
 title: Programm gesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um benutzerdefinierte Aktionen Programm gesteuert auszuführen, wenn eine e-Mail in Microsoft Outlook empfangen wird.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 706080e9c7191383d91e63b56b2113cf82d4b35f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 22dbd3ae72ac8c269de603ce22bbfebef669be08
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585131"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523874"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Gewusst wie: Programm gesteuertes Ausführen von Aktionen beim Empfang einer e-Mail-Nachricht
   In diesem Beispiel werden benutzerdefinierte Aktionen durchführt, wenn der Benutzer eine e-Mail empfängt.

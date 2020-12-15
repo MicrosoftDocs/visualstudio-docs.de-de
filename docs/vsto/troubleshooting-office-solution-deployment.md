@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei der Bereitstellung von Office
+description: Erfahren Sie, wie Sie häufige Probleme beheben können, die beim Bereitstellen von Office-Projektmappen auftreten können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806732"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522974"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Problembehandlung bei der Bereitstellung von Office
   Dieses Thema enthält Informationen zur Lösung von allgemeinen Problemen, die beim Bereitstellen von Office-Projektmappen auftreten können.
@@ -30,13 +32,13 @@ ms.locfileid: "90806732"
  Beim Installieren oder Deinstallieren von Office-Lösungen werden von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Fehlermeldungen protokolliert, die Sie mit der Ereignisanzeige in Windows anzeigen können. Sie können diese Meldungen aus der Ereignisprotokollierung verwenden, um Installations- und Bereitstellungsprobleme zu beheben. Weitere Informationen finden Sie unter [Ereignisprotokollierung für Office](../vsto/event-logging-for-office-solutions.md)-Projektmappen.
 
 ## <a name="change-the-assembly-name-causes-conflicts"></a>Ändern des Assemblynamens verursacht Konflikte
- Wenn Sie den Wert für AssemblyName auf der Seite **Anwendung** des **Projekt-Designers** ändern, nachdem Sie bereits eine Projekt Mappe bereitgestellt haben, wird das Setup Paket von den Veröffentlichungs Tools so geändert, dass es eine *Setup.exe* Datei und zwei Bereitstellungs Manifeste enthält. **Assembly Name** Wenn Sie zwei Manifestdateien bereitstellen, treten möglicherweise die folgenden Bedingungen ein:
+ Wenn Sie den Wert für AssemblyName auf der Seite **Anwendung** des **Projekt-Designers** ändern, nachdem Sie bereits eine Projekt Mappe bereitgestellt haben, wird das Setup Paket von den Veröffentlichungs Tools so geändert, dass es eine *Setup.exe* Datei und zwei Bereitstellungs Manifeste enthält.  Wenn Sie zwei Manifestdateien bereitstellen, treten möglicherweise die folgenden Bedingungen ein:
 
 - Wenn der Endbenutzer beide Versionen installiert, werden von der Anwendung beide VSTO-Add-Ins geladen.
 
 - Wurde das VSTO-Add-In vor Änderung des Assemblynamens installiert, empfängt der Endbenutzer niemals Updates.
 
-  Um diese Bedingungen zu vermeiden, ändern Sie den Wert **Assembly Name** für AssemblyName der Projekt Mappe nach der Bereitstellung der Lösung nicht.
+  Um diese Bedingungen zu vermeiden, ändern Sie den Wert  für AssemblyName der Projekt Mappe nach der Bereitstellung der Lösung nicht.
 
 ## <a name="check-for-updates-takes-a-long-time"></a>Die Überprüfung auf Updates dauert sehr lange.
  Visual Studio 2010-Tools für Office-Laufzeit stellt einen Registrierungs Eintrag bereit, mit dem Administratoren den Timeout Wert für das Herunterladen der Manifeste und der Projekt Mappe festlegen können.
@@ -69,7 +71,7 @@ ms.locfileid: "90806732"
 
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>So laden Sie Assemblys herunter, anstatt zwischengespeicherte Kopien zu laden
 
-1. Wählen Sie in der Menüleiste **Projekt, Projekt** _Name_**Eigenschaften**aus.
+1. Wählen Sie in der Menüleiste **Projekt, Projekt** _Name_**Eigenschaften** aus.
 
 2. Wählen Sie auf der Seite **Anwendung** die Option **Assemblyinformationen**.
 
@@ -123,9 +125,9 @@ ms.locfileid: "90806732"
 
  Informationen dazu, wie Sie den MIME-Typ in IIS 7 definieren, finden [Sie unter Hinzufügen eines MIME-Typs (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10)).
 
- Legen Sie die Erweiterung auf **.vsto** und den MIME-Typ auf **application/x-ms-vsto**fest.
+ Legen Sie die Erweiterung auf **.vsto** und den MIME-Typ auf **application/x-ms-vsto** fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)

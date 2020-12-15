@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich'
+description: Erstellen Sie einen benutzerdefinierten Aufgabenbereich, der Microsoft PowerPoint automatisiert, indem Sie Datumsangaben in eine Folie einfügen, wenn der Benutzer auf ein MonthCalendar-Steuerelement im benutzerdefinierten Aufgabenbereich klickt.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52474aeebfbc03fba2a2e119e1b3366c30cf6959
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585079"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522804"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein benutzerdefinierter Aufgabenbereich erstellt wird, der PowerPoint automatisiert. Der benutzerdefinierte Aufgabenbereich fügt Daten in eine Folie ein, wenn der Benutzer auf ein <xref:System.Windows.Forms.MonthCalendar> -Steuerelement im benutzerdefinierten Aufgabenbereich klickt.
@@ -70,7 +72,7 @@ ms.locfileid: "91585079"
 
      Das Benutzersteuerelement wird im Designer geöffnet.
 
-3. Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**ein **MonthCalendar** -Steuerelement auf das Benutzersteuerelement.
+3. Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** ein **MonthCalendar** -Steuerelement auf das Benutzersteuerelement.
 
      Wenn der Umfang des **MonthCalendar** -Steuerelements größer als die Entwurfsoberfläche des Benutzersteuerelements ist, passen Sie die Größe des Benutzersteuerelements an das **MonthCalendar** -Steuerelement an.
 
@@ -98,14 +100,14 @@ ms.locfileid: "91585079"
      [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
      [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
 
-5. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das **MyAddIn** -Projekt, und klicken Sie dann auf **Erstellen**. Vergewissern Sie sich, dass das Projekt ohne Fehler erstellt wurde.
+5. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das **MyAddIn** -Projekt, und klicken Sie dann auf **Erstellen**. Vergewissern Sie sich, dass das Projekt ohne Fehler erstellt wurde.
 
 ## <a name="display-the-custom-task-pane"></a>Anzeigen des benutzerdefinierten Aufgabenbereichs
  Um den benutzerdefinierten Aufgabenbereich beim Starten des VSTO-Add-Ins anzuzeigen, fügen Sie dem Aufgabenbereich das Benutzersteuerelement im <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignishandler des VSTO-Add-Ins hinzu.
 
 ### <a name="to-display-the-custom-task-pane"></a>So zeigen Sie den benutzerdefinierten Aufgabenbereich an
 
-1. Erweitern Sie **PowerPoint**im **Projektmappen-Explorer**.
+1. Erweitern Sie **PowerPoint** im **Projektmappen-Explorer**.
 
 2. Klicken Sie mit der rechten Maustaste auf **ThisAddIn.cs** oder **ThisAddIn.vb** , und klicken Sie auf **Code anzeigen**.
 

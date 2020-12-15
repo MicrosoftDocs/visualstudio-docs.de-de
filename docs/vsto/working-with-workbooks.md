@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit Arbeitsmappen
+description: Erfahren Sie, dass die Klassen Arbeitsmappe und Arbeitsmappen die Methoden und Eigenschaften enthalten, die Sie zum Ausführen von Aufgaben mit Arbeitsmappen verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e328d48873c30626e2b661ede23b3d91066a0e5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814687"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522573"
 ---
 # <a name="work-with-workbooks"></a>Arbeiten mit Arbeitsmappen
   Die Klassen <xref:Microsoft.Office.Tools.Excel.Workbook> und <xref:Microsoft.Office.Interop.Excel.Workbooks> enthalten die Methoden und Eigenschaften, die Sie zum Ausführen von Aufgaben mit Arbeitsmappen verwenden.

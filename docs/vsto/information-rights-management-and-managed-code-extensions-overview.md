@@ -1,5 +1,7 @@
 ---
 title: Verwaltung von Informationsrechten & Erweiterungen durch verwalteten Code
+description: Erfahren Sie mehr über Information Rights Management (unm), eine Funktion, mit der Sie verhindern können, dass nicht autorisierte Personen vertrauliche Informationen anzeigen oder ändern.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06b55855184aaef57ec0a3425abed7d235ec837b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc300ac83674b8faf2bd4c0fc6128f60c28ee92b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298073"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523048"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code
   Microsoft Office Word und Microsoft Office Excel enthalten Informationen Rights Management (unm), eine Funktion, mit der Sie verhindern können, dass nicht autorisierte Personen vertrauliche Informationen anzeigen oder ändern. Ausführliche Informationen über die Funktionsweise von Informationen Rights Management finden Sie in der Hilfe zu einer bestimmten Office-Anwendung.

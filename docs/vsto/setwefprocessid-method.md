@@ -1,5 +1,7 @@
 ---
 title: Setwef ProcessID-Methode
+description: Erfahren Sie, wie die setwef ProcessID-Methode die Prozess-ID bereitstellt, mit der WEF-Inhalte (Web Extensions Framework) ausgeführt werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 523279d70215af90ea070ea8272a5221d9947582
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537331"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524325"
 ---
 # <a name="setwefprocessid-method"></a>Setwef ProcessID-Methode
   Stellt den Prozess Bezeichner bereit, mit dem WEF-Inhalte (Web Extensions Framework) ausgeführt werden.

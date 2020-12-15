@@ -1,5 +1,7 @@
 ---
 title: Anzeigen von Text in einem Textfeld in einem Arbeitsblatt mithilfe der Schaltfläche
+description: Erfahren Sie mehr über die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Microsoft Excel-Arbeitsblättern. Erstellen Sie auch Excel-Projekte mithilfe der Office-Entwicklungs Tools in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328709"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522639"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Arbeitsblatt mithilfe einer Schaltfläche
   In dieser exemplarischen Vorgehensweise werden die Grundlagen der Verwendung von Schaltflächen und Textfeldern in Microsoft Office Excel-Arbeitsblättern und das Erstellen von Excel-Projekten mithilfe von Office-Entwicklungs Tools in Visual Studio erläutert. Das Ergebnis als vollständiges Beispiel finden Sie im Beispiel für Excel-Steuerelemente unter [Office-Entwicklungs Beispiele und](../vsto/office-development-samples-and-walkthroughs.md)Exemplarische Vorgehensweisen.
@@ -45,14 +47,14 @@ ms.locfileid: "67328709"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  In diesem Schritt erstellen Sie ein Excel-Arbeitsmappenprojekt mithilfe von Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
 1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **Meine Excel-Schaltfläche**. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das Projekt " **Meine Excel-Schaltfläche** " **Projektmappen-Explorer**hinzu.
+     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das Projekt " **Meine Excel-Schaltfläche** " **Projektmappen-Explorer** hinzu.
 
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt
  In dieser exemplarischen Vorgehensweise benötigen Sie eine Schaltfläche und ein Textfeld auf dem ersten Arbeitsblatt.
@@ -63,7 +65,7 @@ ms.locfileid: "67328709"
 
 2. Ziehen Sie auf der Registerkarte **Allgemeine Steuerelemente** der Toolbox <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> auf `Sheet1` .
 
-3. Wählen Sie im Menü **Ansicht** die Option **Eigenschaften Fenster**aus.
+3. Wählen Sie im Menü **Ansicht** die Option **Eigenschaften Fenster** aus.
 
 4. Stellen Sie sicher, dass **TextBox1** im Dropdown Feld **Eigenschaften** Fenster sichtbar ist, und ändern Sie die **Name** -Eigenschaft des Textfelds in **DisplayText**.
 
@@ -81,7 +83,7 @@ ms.locfileid: "67328709"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>So schreiben Sie beim Klicken auf die Schaltfläche in das Textfeld
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **Sheet1**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
 
 2. Fügen Sie dem- <xref:System.Windows.Forms.Control.Click> Ereignishandler der Schaltfläche den folgenden Code hinzu:
 

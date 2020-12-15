@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich'
+description: Erstellen Sie einen Aktionsbereich in einem Microsoft Word-Dokument. Erfahren Sie, dass der Aktionsbereich zwei Steuerelemente enthält, die Eingaben erfassen und den Text dann an das Dokument senden.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584962"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524169"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Aktionsbereich in einem Microsoft Office Word-Dokument erstellt wird. Der Aktionsbereich enthält zwei Steuerelemente, die Eingaben erfassen und dann den Text an das Dokument senden.
@@ -49,9 +51,9 @@ ms.locfileid: "91584962"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **My Basic Actions Pane**. Wählen Sie im Assistenten **Neues Dokument erstellen**aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **My Basic Actions Pane**. Wählen Sie im Assistenten **Neues Dokument erstellen** aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer**das Projekt " **mein grundlegender Aktions** Bereich" hinzu.
+     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer** das Projekt " **mein grundlegender Aktions** Bereich" hinzu.
 
 ## <a name="add-text-and-bookmarks-to-the-document"></a>Hinzufügen von Text und Lesezeichen zum Dokument
  Im Aktionsbereich wird Text an Lesezeichen im Dokument gesendet. Um das Dokument zu entwerfen, geben Sie Text ein, um ein einfaches Formular zu erstellen.
@@ -76,14 +78,14 @@ ms.locfileid: "91584962"
 
      Das Dialogfeld **Lesezeichen Steuerelement hinzufügen** wird angezeigt.
 
-2. Wählen Sie das Wort **Name**aus, ohne die Absatz Markierung auszuwählen, und klicken Sie auf **OK**.
+2. Wählen Sie das Wort **Name** aus, ohne die Absatz Markierung auszuwählen, und klicken Sie auf **OK**.
 
     > [!NOTE]
     > Die Absatz Marke sollte außerhalb des Lesezeichens liegen. Wenn Absatzmarken im Dokument nicht sichtbar sind, klicken Sie auf **das Menü** Extras, zeigen Sie auf **Microsoft Office Word-Tools** , und klicken Sie dann auf **Optionen**. Klicken Sie auf die Registerkarte **Ansicht** , und aktivieren Sie im Dialogfeld **Optionen** im Abschnitt **Formatierungs Markierungen** das Kontrollkästchen **Absatzmarken** .
 
 3. Ändern Sie im **Eigenschaften** Fenster die **Name** -Eigenschaft von **Bookmark1 zuweisen** in **ShowName**.
 
-4. Wählen Sie das Wort **Address**aus, ohne die Absatz Markierung auszuwählen.
+4. Wählen Sie das Wort **Address** aus, ohne die Absatz Markierung auszuwählen.
 
 5. Klicken Sie auf der Registerkarte **Einfügen** des Menübands in der Gruppe **Links** auf **Lesezeichen**.
 
@@ -94,17 +96,17 @@ ms.locfileid: "91584962"
 
 ### <a name="to-add-an-actions-pane-control"></a>So fügen Sie ein Aktionsbereich-Steuerelement hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt **meine grundlegenden Aktions** Bereiche aus.
+1. Wählen Sie in **Projektmappen-Explorer** das Projekt **meine grundlegenden Aktions** Bereiche aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf Aktionsbereich- **Steuer**Element, benennen Sie das Steuerelement **InsertTextControl,** und klicken Sie auf **Hinzufügen**.
+3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf Aktionsbereich- **Steuer** Element, benennen Sie das Steuerelement **InsertTextControl,** und klicken Sie auf **Hinzufügen**.
 
 #### <a name="to-add-windows-form-controls-to-the-actions-pane-control"></a>So fügen Sie dem Aktionsbereich-Steuerelement Windows Form-Steuerelemente hinzu
 
 1. Wenn das Aktionsbereich-Steuerelement im Designer nicht angezeigt wird, doppelklicken Sie auf **InsertTextControl**.
 
-2. Ziehen Sie ein **Label** -Steuerelement auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**auf das Steuerelement Aktionsbereich.
+2. Ziehen Sie ein **Label** -Steuerelement auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** auf das Steuerelement Aktionsbereich.
 
 3. Ändern Sie die **Text** -Eigenschaft des Label-Steuer Elements in **Name**.
 
@@ -113,7 +115,7 @@ ms.locfileid: "91584962"
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**GetName**|
-    |**Größe**|**130, 20**|
+    |**Size**|**130, 20**|
 
 5. Fügen Sie dem Aktionsbereich-Steuerelement ein zweites **Label** -Steuerelement hinzu, und ändern Sie die **Text** -Eigenschaft in **Address**.
 
@@ -124,7 +126,7 @@ ms.locfileid: "91584962"
     |**Name**|**getAddress**|
     |**Akzeptiert die Rückgabe**|**Wahr**|
     |**Mehrzeilig**|**Wahr**|
-    |**Größe**|**130, 40**|
+    |**Size**|**130, 40**|
 
 7. Fügen Sie dem Aktionsbereich-Steuerelement ein **Schalt** Flächen-Steuerelement hinzu, und ändern Sie die folgenden Eigenschaften.
 

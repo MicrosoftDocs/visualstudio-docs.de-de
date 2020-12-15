@@ -1,5 +1,7 @@
 ---
 title: Beheben von Fehlern in Office-Projektmappen
+description: Erfahren Sie, wie Sie Fehler beheben können, die auftreten können, während Sie Microsoft Office Lösungen in Visual Studio entwickeln.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234691"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523034"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Beheben von Fehlern in Office-Projektmappen
   Wenn Sie beim Entwickeln von Office-Projektmappen in Visual Studio die folgenden Aufgaben ausführen, können Probleme auftreten:
@@ -113,9 +115,9 @@ ms.locfileid: "87234691"
 
  "Mehrdeutigkeit zwischen 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' und 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook'"
 
- Dieser Fehler bedeutet, dass Sie auf ein Ereignis zuzugreifen versuchen, das den gleichen Namen wie eine andere Eigenschaft oder Methode des Objekts besitzt. Um auf das-Ereignis zuzugreifen, müssen Sie das-Objekt in seine *Ereignis Schnittstelle*umwandeln.
+ Dieser Fehler bedeutet, dass Sie auf ein Ereignis zuzugreifen versuchen, das den gleichen Namen wie eine andere Eigenschaft oder Methode des Objekts besitzt. Um auf das-Ereignis zuzugreifen, müssen Sie das-Objekt in seine *Ereignis Schnittstelle* umwandeln.
 
- Office-PIA-Typen mit Ereignissen implementieren zwei Schnittstellen: eine Kernschnittstelle mit allen Eigenschaften und Methoden und eine Ereignisschnittstelle, die die vom Objekt verfügbar gemachten Ereignisse enthält. Diese Ereignis Schnittstellen verwenden die Benennungs Konvention *objectName*Events*n*_Event, z <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . b. und. Wenn Sie nicht auf ein Ereignis zugreifen können, das in einem Objekt vorhanden sein sollte, wandeln Sie das Objekt in die zugehörige Ereignisschnittstelle um.
+ Office-PIA-Typen mit Ereignissen implementieren zwei Schnittstellen: eine Kernschnittstelle mit allen Eigenschaften und Methoden und eine Ereignisschnittstelle, die die vom Objekt verfügbar gemachten Ereignisse enthält. Diese Ereignis Schnittstellen verwenden die Benennungs Konvention *objectName* Events *n* _Event, z <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> . b. und. Wenn Sie nicht auf ein Ereignis zugreifen können, das in einem Objekt vorhanden sein sollte, wandeln Sie das Objekt in die zugehörige Ereignisschnittstelle um.
 
  <xref:Microsoft.Office.Interop.Excel.Application>-Objekte verfügen beispielsweise über ein <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>-Ereignis und eine <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>-Eigenschaft. Um das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>-Ereignis zu behandeln, wandeln Sie <xref:Microsoft.Office.Interop.Excel.Application> in die <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>-Schnittstelle um. Im folgenden Codebeispiel wird dies für ein Projekt auf Dokumentebene für Excel veranschaulicht.
 
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Wenn Sie ein Projekt auf Dokumentebene für Excel oder Word an einem UNC-Netzwerkspeicherort erstellen, müssen Sie den Speicherort des Dokuments der Liste vertrauenswürdiger Speicherorte in Word oder Excel hinzufügen. Andernfalls wird die Anpassung nicht geladen, wenn Sie versuchen, das Projekt in Visual Studio auszuführen oder zu debuggen. Weitere Informationen zu vertrauenswürdigen Speicherorten finden [Sie unter Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Threads werden nach dem Debuggen nicht ordnungsgemäß beendet.
- Office-Projekte in Visual Studio folgen einer Threadnamenskonvention, die den Debugger in die Lage versetzt, das Programm ordnungsgemäß zu schließen. Wenn Sie in der Projektmappe Threads erstellen, versehen Sie den Namen jedes einzelnen Threads mit dem Präfix "VSTA_", um sicherzustellen, dass diese Threads ordnungsgemäß behandelt werden, wenn Sie das Debuggen beenden. Beispielsweise können Sie die-Eigenschaft eines Threads festlegen, der auf das `Name` **VSTA_NetworkListener**eines Netzwerk Ereignisses wartet.
+ Office-Projekte in Visual Studio folgen einer Threadnamenskonvention, die den Debugger in die Lage versetzt, das Programm ordnungsgemäß zu schließen. Wenn Sie in der Projektmappe Threads erstellen, versehen Sie den Namen jedes einzelnen Threads mit dem Präfix "VSTA_", um sicherzustellen, dass diese Threads ordnungsgemäß behandelt werden, wenn Sie das Debuggen beenden. Beispielsweise können Sie die-Eigenschaft eines Threads festlegen, der auf das `Name` **VSTA_NetworkListener** eines Netzwerk Ereignisses wartet.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Kann keine Office-Projekt Mappe auf dem Entwicklungs Computer ausführen oder Debuggen
  Wenn Sie ein Office-Projekt auf dem Entwicklungscomputer nicht ausführen oder entwickeln können, wird möglicherweise die folgende Fehlermeldung angezeigt.

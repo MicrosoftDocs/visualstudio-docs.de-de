@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements'
+description: Erfahren Sie, wie Sie ein-Host Steuerelement an eine Datenquelle binden und die Datenquelle mit den an den Daten im-Steuerelement vorgenommenen Änderungen aktualisieren können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52540f0cf94a12efda891657ec4aae9452ad6f86
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585118"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523608"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements
   Sie können ein Hoststeuerelement an eine Datenquelle binden und die Datenquelle mit den Änderungen aktualisieren, die im Steuerelement an den Daten vorgenommen werden. In diesem Prozess gibt es zwei Hauptschritte:
@@ -77,13 +79,13 @@ ms.locfileid: "91585118"
 
 3. Erweitern Sie im Fenster **Eigenschaften** die **(DataBindings)** -Eigenschaft.
 
-4. Klicken Sie neben der **(Advanced)** -Eigenschaft auf die Schaltfläche mit den Auslassungs Punkten (Bildschirm Abbildung von![visualstudioellipsesbutton](../vsto/media/vbellipsesbutton.png "Bildschirmabbildung von VisualStudioEllipsesButton")).
+4. Klicken Sie neben der **(Advanced)** -Eigenschaft auf die Schaltfläche mit den Auslassungs Punkten (Bildschirm Abbildung von ![visualstudioellipsesbutton](../vsto/media/vbellipsesbutton.png "Bildschirmabbildung von VisualStudioEllipsesButton")).
 
 5. Klicken Sie im Dialogfeld **Formatierung und erweiterte Bindung** auf die Dropdownliste **Datenquellen-Aktualisierungsmodus** , und wählen Sie einen der folgenden Werte aus:
 
-    - Um die Datenquelle zu aktualisieren, wenn das Steuerelement validiert wird, wählen Sie **OnValidation**aus.
+    - Um die Datenquelle zu aktualisieren, wenn das Steuerelement validiert wird, wählen Sie **OnValidation** aus.
 
-    - Um die Datenquelle zu aktualisieren, wenn sich der Wert der datengebundenen Eigenschaft des Steuerelements ändert, wählen Sie **OnPropertyChanged**aus.
+    - Um die Datenquelle zu aktualisieren, wenn sich der Wert der datengebundenen Eigenschaft des Steuerelements ändert, wählen Sie **OnPropertyChanged** aus.
 
         > [!NOTE]
         > Die **OnPropertyChanged** -Option gilt nicht für Word-Hoststeuerelemente, da Word keine Benachrichtigungen über Dokument- oder Steuerelementänderungen bereitstellt. Diese Option kann jedoch für Windows Forms-Steuerelemente auf Word-Dokumenten verwendet werden.

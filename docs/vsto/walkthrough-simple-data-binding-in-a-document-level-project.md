@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: einfache Datenbindung in einem Projekt auf Dokument Ebene'
+description: Erlernen Sie die Grundlagen der Datenbindung in einem Projekt auf Dokument Ebene, und dass ein einzelnes Datenfeld in einer SQL Server-Datenbank an einen benannten Bereich in Microsoft Excel gebunden ist.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584923"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524095"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: einfache Datenbindung in einem Projekt auf Dokument Ebene
   In dieser exemplarischen Vorgehensweise werden die Grundlagen der Datenbindung in einem Projekt auf Dokument Ebene veranschaulicht. Ein einzelnes Datenfeld in einer SQL Server Datenbank wird in Microsoft Office Excel an einen benannten Bereich gebunden. Die exemplarische Vorgehensweise zeigt auch, wie Sie Steuerelemente hinzufügen, mit denen Sie durch alle Datensätze in der Tabelle scrollen können.
@@ -50,23 +52,23 @@ ms.locfileid: "91584923"
 
 - Lese-und Schreibberechtigungen für die SQL Server Datenbank.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
  In diesem Schritt erstellen Sie ein Excel-Arbeitsmappenprojekt.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
 1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **meine Simple-Datenbindung**, indem Sie entweder Visual Basic oder c# verwenden. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-   Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das **eigene einfache Daten Bindungs** Projekt **Projektmappen-Explorer**hinzu.
+   Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das **eigene einfache Daten Bindungs** Projekt **Projektmappen-Explorer** hinzu.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
  Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset hinzuzufügen.
 
 ### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
 
-1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen**anzeigen auswählen.
+1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
-2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
+2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
@@ -82,10 +84,10 @@ ms.locfileid: "91584923"
 
 9. Klicken Sie auf **Fertig stellen**.
 
-   Der Assistent fügt dem **Datenquellen** Fenster die **Customers** -Tabelle hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer**sichtbar ist.
+   Der Assistent fügt dem **Datenquellen** Fenster die **Customers** -Tabelle hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer** sichtbar ist.
 
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt
- In dieser exemplarischen Vorgehensweise benötigen Sie zwei benannte Bereiche und vier Schaltflächen auf dem ersten Arbeitsblatt. Fügen Sie zunächst die beiden benannten Bereiche aus dem Fenster **Datenquellen** hinzu, damit Sie automatisch an die Datenquelle gebunden werden. Fügen Sie als nächstes die Schaltflächen aus der **Toolbox**hinzu.
+ In dieser exemplarischen Vorgehensweise benötigen Sie zwei benannte Bereiche und vier Schaltflächen auf dem ersten Arbeitsblatt. Fügen Sie zunächst die beiden benannten Bereiche aus dem Fenster **Datenquellen** hinzu, damit Sie automatisch an die Datenquelle gebunden werden. Fügen Sie als nächstes die Schaltflächen aus der **Toolbox** hinzu.
 
 ### <a name="to-add-two-named-ranges"></a>So fügen Sie zwei benannte Bereiche hinzu
 
@@ -97,17 +99,17 @@ ms.locfileid: "91584923"
 
 4. Wählen Sie in der Dropdown Liste **Name Drange** aus, und ziehen Sie dann die Spalte **CompanyName** in die Zelle **a1**.
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange> `companyNameNamedRange` In Zelle **a1**wird ein-Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `customersBindingSource` , ein Tabellen Adapter und eine- <xref:System.Data.DataSet> Instanz hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> `companyNameNamedRange` In Zelle **a1** wird ein-Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `customersBindingSource` , ein Tabellen Adapter und eine- <xref:System.Data.DataSet> Instanz hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
 
 5. Wählen Sie im Fenster **Datenquellen** die Spalte **CustomerID** aus, und klicken Sie dann auf den angezeigten Dropdown Pfeil.
 
 6. Klicken Sie in der Dropdown Liste auf **NamedRange** , und ziehen Sie dann die Spalte **CustomerID** in Zelle **B1**.
 
-7. Ein weiteres <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement `customerIDNamedRange` mit dem Namen wird in Zelle **B1**erstellt und an gebunden <xref:System.Windows.Forms.BindingSource> .
+7. Ein weiteres <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement `customerIDNamedRange` mit dem Namen wird in Zelle **B1** erstellt und an gebunden <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-four-buttons"></a>So fügen Sie vier Schaltflächen hinzu
 
-1. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**ein- <xref:System.Windows.Forms.Button> Steuerelement zu Zelle **a3** des Arbeitsblatts hinzu.
+1. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** ein- <xref:System.Windows.Forms.Button> Steuerelement zu Zelle **a3** des Arbeitsblatts hinzu.
 
     Diese Schaltfläche hat den Namen `Button1` .
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584923"
 
 ### <a name="to-initialize-the-controls"></a>So initialisieren Sie die Steuerelemente
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
 
 2. Fügen Sie der-Methode den folgenden Code hinzu `Sheet1_Startup` , um den Text für jede Schaltfläche festzulegen.
 
@@ -177,9 +179,9 @@ ms.locfileid: "91584923"
 
 1. Drücken Sie **F5** , um das Projekt auszuführen.
 
-2. Vergewissern Sie sich, dass der erste Datensatz in den Zellen **a1** und **B1**angezeigt wird.
+2. Vergewissern Sie sich, dass der erste Datensatz in den Zellen **a1** und **B1** angezeigt wird.
 
-3. Klicken Sie auf die **>** `Button3` Schaltfläche (), und vergewissern Sie sich, dass der nächste Datensatz in Zelle **a1** und **B1**erscheint.
+3. Klicken Sie auf die **>** `Button3` Schaltfläche (), und vergewissern Sie sich, dass der nächste Datensatz in Zelle **a1** und **B1** erscheint.
 
 4. Klicken Sie auf die anderen Bild Lauf Schaltflächen, um zu bestätigen, dass der Datensatz erwartungsgemäß
 

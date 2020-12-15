@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Öffnen von Arbeitsmappen'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um eine Microsoft Excel-Arbeitsmappe Programm gesteuert zu öffnen oder mit einer vorhandenen Arbeitsmappe zu arbeiten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7de4072df177bd9a7c6ae23bf59e44e50d56e32
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537903"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523899"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Gewusst wie: Programm gesteuertes Öffnen von Arbeitsmappen
   Die <xref:Microsoft.Office.Interop.Excel.Workbooks> -Auflistung in Microsoft Office Excel ermöglicht das Arbeiten mit allen geöffneten Arbeitsmappen und das Öffnen von-Arbeitsmappen.

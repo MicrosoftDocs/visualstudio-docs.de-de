@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook'
+description: Erstellen Sie ein Add-in auf Anwendungsebene für Microsoft Outlook. Diese Funktion ist für die Anwendung selbst verfügbar, unabhängig davon, welches Outlook-Element geöffnet ist.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69547973"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524229"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook
   Diese exemplarische Vorgehensweise veranschaulicht die Erstellung eines VSTO-Add-Ins für Microsoft Office Outlook. Die in dieser Art von Projektmappe erstellten Features sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welches Outlook-Element geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -48,7 +50,7 @@ ms.locfileid: "69547973"
 
 - Microsoft Outlook
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
 
 ### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>So erstellen Sie ein neues Outlook-Projekt in Visual Studio
 
@@ -56,13 +58,13 @@ ms.locfileid: "69547973"
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.
+3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic** und dann **Office/SharePoint**.
 
 4. Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.
 
 5. Wählen Sie in der Liste der Projektvorlagen ein Outlook-VSTO-Add-In-Projekt aus.
 
-6. Geben Sie im Feld **Name** den Text **FirstOutlookAddIn**ein.
+6. Geben Sie im Feld **Name** den Text **FirstOutlookAddIn** ein.
 
 7. Klicken Sie auf **OK**.
 

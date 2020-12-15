@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit Visio-Shapes
+description: Erfahren Sie mehr überschritt-für-Schritt-Prozeduren und Codebeispiele für die Verwendung des Objektmodells von Microsoft Visio zum Arbeiten mit Formen in Office-Projekten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09109d59522fcd6ace69abcd3335e2dec2edd91b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 928e4888c52e5b75a721bb7a1837d8db1ce267ea
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815062"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523261"
 ---
 # <a name="work-with-visio-shapes"></a>Arbeiten mit Visio-Shapes
   Die Themen in diesem Abschnitt enthalten Schritt-für-Schritt-Anleitungen und Codebeispiele für die Verwendung des Objektmodells Microsoft Office Visio zum Arbeiten mit Formen in Office-Projekten.

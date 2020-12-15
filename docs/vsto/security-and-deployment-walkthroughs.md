@@ -1,5 +1,7 @@
 ---
 title: Exemplarische Vorgehensweisen für Sicherheit
+description: Erfahren Sie, wie Sie Sicherheitsrichtlinien festlegen können, damit Ihre Lösung ausgeführt werden kann und wie Sie Ihre Office-Projekt Mappe bereitstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810940"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524369"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Exemplarische Vorgehensweisen für Sicherheit
   In den folgenden Themen wird veranschaulicht, wie Sie die Sicherheitsrichtlinie festlegen können, damit Ihre Projekt Mappe ausgeführt werden kann, und wie Sie Ihre Office-Projekt Mappe bereitstellen können.
@@ -58,5 +60,5 @@ ms.locfileid: "90810940"
 
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md) Enthält Links zu Informationen über das Erstellen von Word-und Excel-Lösungen und die Rolle von Assemblys in der Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)

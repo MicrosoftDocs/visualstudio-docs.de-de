@@ -1,5 +1,7 @@
 ---
 title: Speichern & Programm gesteuertes Abrufen von Datums Werten in Excel-Bereichen
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um Datumswerte in Microsoft Excel-Bereichen Programm gesteuert zu speichern und abzurufen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2bd76d37a9c9b6e51de7bbe01b54d1be6c93128
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 673969e13b2f49b91416d730533be0f075813781
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583774"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523585"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Vorgehensweise: Programm gesteuertes speichern und Abrufen von Datums Werten in Excel-Bereichen
   Sie können Werte in einem <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder einem systemeigenen Excel-Bereichs Objekt speichern und abrufen.
@@ -64,7 +66,7 @@ ms.locfileid: "91583774"
 
 ### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>So speichern Sie einen Datumswert in einem systemeigenen Excel-Bereichs Objekt
 
-1. Erstellen Sie einen <xref:Microsoft.Office.Interop.Excel.Range> , der die Zelle **a1**darstellt.
+1. Erstellen Sie einen <xref:Microsoft.Office.Interop.Excel.Range> , der die Zelle **a1** darstellt.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]

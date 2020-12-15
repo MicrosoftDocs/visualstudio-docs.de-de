@@ -1,5 +1,7 @@
 ---
 title: Microsoft Office ist auf diesem Computer nicht installiert
+description: Erfahren Sie, was zu tun ist, wenn Visual Studio die Microsoft Office Anwendung nicht finden kann, die dem Projekttyp entspricht.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16f312f9b9d15cbdacbb1fa3e0628903254aeaea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f09c7c454836c0eb957b9ecc459b75b7fba868db
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543142"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523498"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office ist nicht auf dem Computer installiert.
   Visual Studio kann die Microsoft Office-Anwendung nicht finden, die dem Projekttyp entspricht. Wenn Sie ein VSTO-Add-in-Projekt entwickeln, bedeutet dies, dass Sie das Projekt nicht debuggen oder ausführen können. Wenn Sie versuchen, ein Projekt auf Dokumentebene zu erstellen, bedeutet dies, dass das Projekt nicht erstellt werden kann.
