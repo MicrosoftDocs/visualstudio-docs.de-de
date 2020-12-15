@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen'
+description: Erfahren Sie, wie Sie in einer Anpassung auf Dokument Ebene für Microsoft Word Kontextmenüs für Lesezeichen-Steuerelemente erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146905"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524212"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Kontextmenüs für <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelemente in einer Anpassung auf Dokumentebene für Word erstellt werden. Wenn ein Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt, wird ein Kontextmenü mit Optionen zum Formatieren des Texts angezeigt.
@@ -51,9 +53,9 @@ ms.locfileid: "91146905"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-- Erstellen Sie ein Word-Dokument Projekt, das das Kontext **Menü Name mein Lesezeichen**enthält. Wählen Sie im Assistenten **Neues Dokument erstellen**aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Erstellen Sie ein Word-Dokument Projekt, das das Kontext **Menü Name mein Lesezeichen** enthält. Wählen Sie im Assistenten **Neues Dokument erstellen** aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer**das Kontextmenü Projekt " **mein Lesezeichen** " hinzu.
+     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer** das Kontextmenü Projekt " **mein Lesezeichen** " hinzu.
 
 ## <a name="add-text-and-bookmarks-to-the-document"></a><a name="BKMK_addtextandbookmarks"></a> Hinzufügen von Text und Lesezeichen zum Dokument
  Fügen Sie dem Dokument etwas Text und dann zwei überlappende Lesezeichen hinzu.
@@ -66,7 +68,7 @@ ms.locfileid: "91146905"
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>So fügen Sie dem Dokument ein Lesezeichen-Steuerelement hinzu
 
-1. Ziehen Sie in der **Toolbox**auf der Registerkarte **Word** -Steuerelemente ein-Steuerelement <xref:Microsoft.Office.Tools.Word.Bookmark> auf das Dokument.
+1. Ziehen Sie in der **Toolbox** auf der Registerkarte **Word** -Steuerelemente ein-Steuerelement <xref:Microsoft.Office.Tools.Word.Bookmark> auf das Dokument.
 
     Das Dialogfeld **Lesezeichen Steuerelement hinzufügen** wird angezeigt.
 
@@ -90,9 +92,9 @@ ms.locfileid: "91146905"
 
 1. Fügen Sie dem Projekt ein **Menüband-XML** -Element hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. Wählen Sie in **Projektmappen-Explorer**die Option **ThisDocument.cs** oder **ThisDocument. vb**aus.
+2. Wählen Sie in **Projektmappen-Explorer** die Option **ThisDocument.cs** oder **ThisDocument. vb** aus.
 
-3. Wählen Sie in der Menüleiste **View**  >  **Code**anzeigen aus.
+3. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
 
      Die **ThisDocument** -Klassendatei wird im Code-Editor geöffnet.
 
@@ -101,9 +103,9 @@ ms.locfileid: "91146905"
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5. Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer**aus. Standardmäßig erhält die Menüband-XML-Datei den Namen "Ribbon1.xml".
+5. Wählen Sie die Menüband-XML-Datei im **Projektmappen-Explorer** aus. Standardmäßig erhält die Menüband-XML-Datei den Namen "Ribbon1.xml".
 
-6. Wählen Sie in der Menüleiste **View**  >  **Code**anzeigen aus.
+6. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
 
      Die Menüband-XML-Datei wird im Code-Editor geöffnet.
 
@@ -125,16 +127,16 @@ ms.locfileid: "91146905"
 
      Dieser Code fügt dem Kontextmenü, das beim Rechtsklick auf das Dokument angezeigt wird, zwei Schaltflächen hinzu.
 
-8. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf `ThisDocument` , und klicken Sie dann auf **Code anzeigen**.
+8. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf `ThisDocument` , und klicken Sie dann auf **Code anzeigen**.
 
 9. Deklarieren Sie auf Klassenebene die folgenden Variablen sowie eine Lesezeichenvariable.
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. Wählen Sie in **Projektmappen-Explorer**die Menüband-Codedatei aus. Standardmäßig hat die Menüband-Codedatei den Namen **Ribbon1.cs** oder **Ribbon1. vb**.
+10. Wählen Sie in **Projektmappen-Explorer** die Menüband-Codedatei aus. Standardmäßig hat die Menüband-Codedatei den Namen **Ribbon1.cs** oder **Ribbon1. vb**.
 
-11. Wählen Sie in der Menüleiste **View**  >  **Code**anzeigen aus.
+11. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
 
      Die Menüband-Codedatei wird im Code-Editor geöffnet.
 
@@ -152,9 +154,9 @@ ms.locfileid: "91146905"
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2. **Solution Explorer**Wählen Sie Projektmappen-Explorer **ThisDocument.cs** oder **ThisDocument. vb**aus.
+2. Wählen Sie Projektmappen-Explorer **ThisDocument.cs** oder **ThisDocument. vb** aus.
 
-3. Wählen Sie in der Menüleiste **View**  >  **Code**anzeigen aus.
+3. Wählen Sie in der Menüleiste **Ansicht** > **Code** aus.
 
      Die **ThisDocument** -Klassendatei wird im Code-Editor geöffnet.
 
@@ -181,7 +183,7 @@ ms.locfileid: "91146905"
 
 3. Stellen Sie sicher, dass der gesamte Text in `bookmark1` fett formatiert ist.
 
-4. Klicken **Sie mit**der rechten Maustaste auf den Text, in dem sich die Lesezeichen überlappen
+4. Klicken **Sie mit** der rechten Maustaste auf den Text, in dem sich die Lesezeichen überlappen
 
 5. Stellen Sie sicher, dass der gesamte Text in `bookmark2` kursiv formatiert ist, in `bookmark1` jedoch nur der Teil des Texts, der `bookmark2` überlappt, kursiv formatiert ist.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Sortieren von Daten in Arbeitsblättern'
+description: Erfahren Sie, wie Sie Visual Studio zum programmgesteuerten Sortieren von Daten verwenden können, die in Arbeitsblatt Bereichen und Listen zur Laufzeit enthalten sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f09fed7f1caff68a485d9d0d98789555ec30889c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546977"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523685"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Gewusst wie: Programm gesteuertes Sortieren von Daten in Arbeitsblättern
   Sie können Daten sortieren, die zur Laufzeit in Arbeitsblattbereichen und -listen enthalten sind. Der folgende Code sortiert einen mehrspaltigen Bereich namens `Fruits` nach den Daten in der ersten Spalte und anschließend nach den Daten in der zweiten Spalte.

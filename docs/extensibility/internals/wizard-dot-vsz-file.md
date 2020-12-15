@@ -1,5 +1,7 @@
 ---
 title: Assistent (. VSZ-Datei | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die VSZ-Dateien, die von der IDE zum Starten von Assistenten verwendet werden. Die Dateien enthalten Informationen darüber, welcher Assistent aufgerufen werden soll und was an den Assistenten übergeben werden soll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fedf409c0ca320c054ddf1cc16318d08d25463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703307"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487737"
 ---
 # <a name="wizard-vsz-file"></a>Assistentendatei (VSZ)
 
@@ -36,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 Im folgenden werden die Teile der VSZ-Datei angezeigt.
 
-|Teil|BESCHREIBUNG|
+|Teil|Beschreibung|
 |----------|-----------------|
 |VsWizard|Der erste Parameter in der Datei ist die Versionsnummer des Vorlagen Datei Formats. Diese Versionsnummer muss 6,0, 7,0, 7,1 oder 8,0 lauten. Andere Zahlen können nicht gestartet werden und führen zu einem ungültigen Formatierungs Fehler.|
 |Assistent|Dieses Feld enthält die OLE-ProgID des Assistenten oder alternativ eine GUID-Zeichen folgen Darstellung der CLSID des Assistenten, der von der IDE coerstellt wird.|

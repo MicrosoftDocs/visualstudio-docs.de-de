@@ -1,5 +1,6 @@
 ---
 title: Verwenden des Managed Package Frameworks für einen Projekttyp (c#)
+description: Erfahren Sie mehr über das verwaltete Paket Framework, das .NET-Klassen bereitstellt, die Sie verwenden oder von erben können, um Ihre eigenen Projekttypen zu implementieren.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca3f95780d548b4482c502f5b3eaa44005fd2e2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4b425962ed0f664b8255b6489ac8f0d38be7c13c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038646"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487542"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Verwenden des Managed Package Framework zum Implementieren eines Projekttyps (C#)
 Das Managed Package Framework (MPF) stellt c#-Klassen bereit, die Sie verwenden oder von erben können, um Ihre eigenen Projekttypen zu implementieren. Das MPF implementiert viele der Schnittstellen, die Visual Studio für einen Projekttyp erwartet, sodass Sie sich auf die Implementierung der Einzelheiten Ihres Projekt Typs konzentrieren können.
@@ -84,7 +85,7 @@ Das Managed Package Framework (MPF) stellt c#-Klassen bereit, die Sie verwenden 
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
-## <a name="document-handling-classes"></a>Klassen für die Dokument Behandlung
+## <a name="document-handling-classes"></a>Document-Handling-Klassen
  In der folgenden Tabelle werden die-Klassen im MPF aufgelistet, die die Verarbeitung von Dokumenten unterstützen. Weitere Informationen finden Sie unter [Öffnen und Speichern von Projekt Elementen](../../extensibility/internals/opening-and-saving-project-items.md).
 
 |Klassenname|

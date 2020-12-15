@@ -1,5 +1,7 @@
 ---
 title: Die Arbeitsmappe enthält ActiveX-Steuerelemente, die nicht geladen werden können.
+description: Erfahren Sie, wie Sie den Fehler beheben können, der auftritt, wenn eine Arbeitsmappe ActiveX-Steuerelemente enthält, die nicht geladen werden können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7257e3940af72f344906642adc51a1dd98cb3f25
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584450"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524185"
 ---
 # <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>Die Arbeitsmappe enthält ActiveX-Steuerelemente, die nicht geladen werden können.
 

@@ -1,5 +1,6 @@
 ---
 title: '&apos;Neuerungen in der Quellcodeverwaltungs-Plug-in-API 1,3'
+description: Erfahren Sie mehr über die Neuerungen in der API-Version 1,3 der Quellcodeverwaltungs-Plug-in, in der die neuen Funktionen eingeführt werden, um erweiterte Steuerungsmöglichkeiten bereitzustellen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac171a4ba33ed7941f2f5887ccf61ca589c31fd3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 491c35a1a99af9b3271e8b2036f7d0c6f8f57908
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037607"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487789"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Neuerungen in der API-Version 1,3 der Quellcodeverwaltungs-Plug-ins&#39;
 Die API-Version 1,3 der Quellcodeverwaltungs-Plug-in führt die folgenden neuen Funktionen ein, um erweiterte Steuerungsmöglichkeiten bereitzustellen.

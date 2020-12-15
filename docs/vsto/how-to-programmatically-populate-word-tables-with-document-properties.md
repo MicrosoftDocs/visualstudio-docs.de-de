@@ -1,5 +1,7 @@
 ---
 title: Programm gesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften
+description: Erfahren Sie, wie Sie Visual Studio zum programmgesteuerten Auffüllen einer Tabelle mit Dokumenteigenschaften in einem Microsoft Word-Dokument verwenden können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ce4fbdb69aae55bb5b79b6af17a0516a0b8786a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 78e9968970406cd176a2f5f27305ca0346cf85bf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585483"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523790"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Gewusst wie: Programm gesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften
   Im folgenden Beispiel wird eine Microsoft Office Word-Tabelle am Anfang des Dokuments erstellt und mit den Eigenschaften des Hostdokuments aufgefüllt.

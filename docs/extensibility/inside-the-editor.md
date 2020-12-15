@@ -1,5 +1,7 @@
 ---
 title: Im Editor
+description: Erfahren Sie mehr über die Subsysteme und Features des Editors. Sie können die Funktionen von Visual Studio-Editor erweitern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710325"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487529"
 ---
 # <a name="inside-the-editor"></a>Innerhalb des Editors
 
@@ -59,13 +61,13 @@ Das Text Modell Subsystem ist für das darstellen von Text und das Aktivieren de
 
 Das Text Modell Subsystem ist ohne Benutzeroberflächen Konzepte verfügbar. Er ist z. b. nicht für die Textformatierung oder das Text Layout zuständig und hat keine Kenntnisse über visuelle Zusatzelemente, die möglicherweise mit dem Text verknüpft sind.
 
-Die öffentlichen Typen des Text Modell Subsystems sind in *Microsoft.VisualStudio.Text.Data.dll* und *Microsoft.VisualStudio.CoreUtility.dll*enthalten, die nur von der .NET Framework Basisklassen Bibliothek und der Managed Extensibility Framework (MEF) abhängen.
+Die öffentlichen Typen des Text Modell Subsystems sind in *Microsoft.VisualStudio.Text.Data.dll* und *Microsoft.VisualStudio.CoreUtility.dll* enthalten, die nur von der .NET Framework Basisklassen Bibliothek und der Managed Extensibility Framework (MEF) abhängen.
 
 ### <a name="text-view-subsystem"></a>Text Ansichts Subsystem
 
 Das Text Ansichts Subsystem ist für das Formatieren und Anzeigen von Text zuständig. Die Typen in diesem Subsystem sind in zwei Ebenen unterteilt, je nachdem, ob die Typen auf Windows Presentation Foundation (WPF) basieren. Die wichtigsten Typen sind <xref:Microsoft.VisualStudio.Text.Editor.ITextView> und <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> , die Steuern, welche Textzeile angezeigt werden sollen, sowie die Einfügemarke, die Auswahl und die Funktionen zum aneignen des Texts mithilfe von WPF-Benutzeroberflächen Elementen. Dieses Subsystem bietet auch Ränder um den Textanzeige Bereich. Diese Ränder können erweitert werden und können unterschiedliche Arten von Inhalten und visuellen Effekten enthalten. Beispiele für Ränder sind Zeilennummern anzeigen und Bild Lauf leisten.
 
-Die öffentlichen Typen des Text Ansichts Subsystems sind in *Microsoft.VisualStudio.Text.UI.dll* und *Microsoft.VisualStudio.Text.UI.Wpf.dll*enthalten. Die erste Assembly enthält die plattformunabhängigen Elemente, die zweite enthält die WPF-spezifischen Elemente.
+Die öffentlichen Typen des Text Ansichts Subsystems sind in *Microsoft.VisualStudio.Text.UI.dll* und *Microsoft.VisualStudio.Text.UI.Wpf.dll* enthalten. Die erste Assembly enthält die plattformunabhängigen Elemente, die zweite enthält die WPF-spezifischen Elemente.
 
 ### <a name="classification-subsystem"></a>Klassifizierungs Subsystem
 
@@ -264,9 +266,9 @@ Popup-Zusatzelemente sind Grafiken, die in einem kleinen Fenster oberhalb der Te
 
 ### <a name="projection"></a><a name="projection"></a> Projektion
 
-Projektion ist eine Technik zum Erstellen einer anderen Art von Text Puffer, in dem Text nicht tatsächlich gespeichert wird. stattdessen wird Text aus anderen Text Puffern kombiniert. Beispielsweise kann ein Projektions Puffer verwendet werden, um den Text aus zwei anderen Puffern zu verketten und das Ergebnis so darzustellen, als ob es sich in nur einem Puffer befindet, oder Teile des Texts in einem Puffer auszublenden. Ein Projektions Puffer kann als Quell Puffer für einen anderen Projektions Puffer fungieren. Ein Satz von Puffern, die durch Projektion verknüpft sind, kann erstellt werden, um Text auf viele verschiedene Arten neu anzuordnen. (Eine solche Menge wird auch als *Puffer Diagramm*bezeichnet.) Das Visual Studio-Text Gliederungs Feature wird mithilfe eines Projektions Puffers implementiert, um den reduzierten Text auszublenden, und der Visual Studio-Editor für ASP.net Pages verwendet Projektion, um eingebettete Sprachen wie Visual Basic und c# zu unterstützen.
+Projektion ist eine Technik zum Erstellen einer anderen Art von Text Puffer, in dem Text nicht tatsächlich gespeichert wird. stattdessen wird Text aus anderen Text Puffern kombiniert. Beispielsweise kann ein Projektions Puffer verwendet werden, um den Text aus zwei anderen Puffern zu verketten und das Ergebnis so darzustellen, als ob es sich in nur einem Puffer befindet, oder Teile des Texts in einem Puffer auszublenden. Ein Projektions Puffer kann als Quell Puffer für einen anderen Projektions Puffer fungieren. Ein Satz von Puffern, die durch Projektion verknüpft sind, kann erstellt werden, um Text auf viele verschiedene Arten neu anzuordnen. (Eine solche Menge wird auch als *Puffer Diagramm* bezeichnet.) Das Visual Studio-Text Gliederungs Feature wird mithilfe eines Projektions Puffers implementiert, um den reduzierten Text auszublenden, und der Visual Studio-Editor für ASP.net Pages verwendet Projektion, um eingebettete Sprachen wie Visual Basic und c# zu unterstützen.
 
-Eine <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> wird mithilfe von erstellt <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . Ein Projektions Puffer wird durch eine geordnete Sequenz von <xref:Microsoft.VisualStudio.Text.ITrackingSpan> Objekten dargestellt, die als *Quell spannen*bezeichnet werden. Der Inhalt dieser Spannen wird als Sequenz von Zeichen dargestellt. Die Text Puffer, aus denen die Quell spannen gezeichnet werden, werden als *Quell Puffer*bezeichnet. Clients eines Projektions Puffers müssen nicht beachten, dass Sie sich von einem normalen Text Puffer unterscheiden.
+Eine <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> wird mithilfe von erstellt <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . Ein Projektions Puffer wird durch eine geordnete Sequenz von <xref:Microsoft.VisualStudio.Text.ITrackingSpan> Objekten dargestellt, die als *Quell spannen* bezeichnet werden. Der Inhalt dieser Spannen wird als Sequenz von Zeichen dargestellt. Die Text Puffer, aus denen die Quell spannen gezeichnet werden, werden als *Quell Puffer* bezeichnet. Clients eines Projektions Puffers müssen nicht beachten, dass Sie sich von einem normalen Text Puffer unterscheiden.
 
 Der Projektions Puffer lauscht auf Text Änderungs Ereignisse in den Quell Puffern. Wenn der Text in einer Quell Spanne geändert wird, ordnet der Projektions Puffer die geänderten Text Koordinaten seinen eigenen Koordinaten zu und löst entsprechende Text Änderungs Ereignisse aus. Nehmen Sie beispielsweise die Quell Puffer A und B mit den folgenden Inhalten:
 

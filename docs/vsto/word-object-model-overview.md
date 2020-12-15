@@ -1,5 +1,7 @@
 ---
 title: Übersicht über das Word-Objektmodell
+description: Das Word-Objektmodell besteht aus Klassen und Schnittstellen, die in der primären Interopassembly für Word bereitgestellt werden und im Word-Namespace definiert sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985391"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523487"
 ---
 # <a name="word-object-model-overview"></a>Übersicht über das Word-Objektmodell
   Wenn Sie Word-Lösungen in Visual Studio entwickeln, interagieren Sie mit dem Word-Objektmodell. Dieses Objektmodell besteht aus Klassen und Schnittstellen, die in der primären Interopassembly für Word bereitgestellt und im Namespace <xref:Microsoft.Office.Interop.Word> definiert werden.
@@ -128,7 +130,7 @@ ms.locfileid: "72985391"
 
  Alle Objekte und Elemente in der VBA-Objektmodellreferenz entsprechen Typen und Elementen in der Word-PIA. Das Document-Objekt in der VBA-Objektmodell Referenz entspricht z. b <xref:Microsoft.Office.Interop.Word.Document> . dem-Objekt in der Word-Pia. Obwohl die VBA-Objektmodellreferenz Codebeispiele für die meisten Eigenschaften, Methoden und Ereignisse enthält, müssen Sie den VBA-Code in dieser Referenz in Visual Basic oder Visual C# übersetzen, wenn Sie ihn in einem mit Visual Studio erstellten Word-Projekt verwenden möchten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Arbeiten mit Dokumenten](../vsto/working-with-documents.md)

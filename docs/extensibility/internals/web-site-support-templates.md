@@ -1,5 +1,7 @@
 ---
 title: Vorlagen für die Website Unterstützung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Website-Support Vorlagen. Die Visual Studio-Website Projekt-und-Element Vorlagen bieten wiederverwendbare und anpassbare Website Projekt-und-elementstubelemente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703454"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487854"
 ---
 # <a name="web-site-support-templates"></a>Vorlagen für die Websiteunterstützung
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Website Projekt-und-Element Vorlagen stellen wiederverwendbare und anpassbare Website Projekt-und-elementstubvorgänge bereit, die den Entwicklungsprozess beschleunigen, indem Sie die Notwendigkeit entfernen, neue Website Projekte und Elemente von Grund auf neu zu erstellen. Weitere Informationen zu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Vorlagen finden Sie unter [Erstellen von Projekt-und Element Vorlagen](../../ide/creating-project-and-item-templates.md).
@@ -137,7 +139,7 @@ ms.locfileid: "80703454"
 
  Um eine abhängige Code Behind-Quelldatei zu erstellen, wählen Sie **Code in separater Datei platzieren aus**. Andernfalls wird eine einzelne Webseite erstellt, die über einen leeren Skriptblock und keine \<% Page %> Direktiven zum Verbinden einer abhängigen Datei verfügt.
 
- Wählen Sie zum Erstellen einer Inhaltsseite für eine ausgewählte Master Seite **Master Seite auswählen**aus.
+ Wählen Sie zum Erstellen einer Inhaltsseite für eine ausgewählte Master Seite **Master Seite auswählen** aus.
 
 - Webform. aspx
 

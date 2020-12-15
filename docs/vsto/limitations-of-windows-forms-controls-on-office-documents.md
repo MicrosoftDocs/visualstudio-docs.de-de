@@ -1,5 +1,7 @@
 ---
 title: Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten
+description: Erfahren Sie mehr über die Einschränkungen von Windows Forms Steuerungsmethoden und-Eigenschaften für Microsoft Office Dokumente.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583735"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524449"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten
 
@@ -83,7 +85,7 @@ Windows Forms Steuerelemente haben im Allgemeinen das gleiche Verhalten wie in e
 |Steuerelement Eigenschaftswerte|Obwohl die Eigenschaften von Steuerelementen in einem Windows Form auf einen ganzzahligen Wert festgelegt sind, werden Sie auf einen einzelnen für Steuerelemente in einem Word-Dokument festgelegt. In Excel werden die Eigenschaftswerte von Steuerelementen auf einen Double-Wert festgelegt. Wenn die `Height` -Eigenschaft und die- `Width` Eigenschaft eines-Steuer Elements auf einem Arbeitsblatt die Größe des Arbeitsblatts oder Bildschirms überschreiten, wird der Wert abgeschnitten.|
 |Größe des Steuer Elements ändern|Wenn Sie die Größe eines Steuer Elements im Dokument mit einem der acht Zieh Punkte ändern, werden die neuen Steuerelement Dimensionen nicht im **Eigenschaften** Fenster angezeigt, bis das Steuerelement erneut ausgewählt wird.|
 |Steuerelement Verhalten|Steuerelemente auf einem Excel-Arbeitsblatt können sich möglicherweise unvorhersehbar Verhalten, wenn das Arbeitsblatt Fenster geteilt wird. Beispielsweise ist der Zugriff auf ein <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> auf dem Arbeitsblatt möglicherweise nur in einem der Fenster verfügbar.|
-|Benennen von Steuerelementen|Sie können keine reservierten Wörter verwenden, um Steuerelemente zu benennen. Wenn Sie z. b. einem <xref:Microsoft.Office.Tools.Excel.Controls.Button> Arbeitsblatt eine hinzufügen und den Namen in **System**ändern, treten beim Erstellen des Projekts Fehler auf.|
+|Benennen von Steuerelementen|Sie können keine reservierten Wörter verwenden, um Steuerelemente zu benennen. Wenn Sie z. b. einem <xref:Microsoft.Office.Tools.Excel.Controls.Button> Arbeitsblatt eine hinzufügen und den Namen in **System** ändern, treten beim Erstellen des Projekts Fehler auf.|
 |Programmgesteuerte Hinzufügen von Steuerelementen|Verwenden Sie den Konstruktor des Steuer Elements nicht, um dem Dokument zur Laufzeit ein Steuerelement hinzuzufügen. Verwenden Sie stattdessen die Hilfsmethoden, die von bereitgestellt werden [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Verwenden Sie z. b <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> . die-Methode, um einem Arbeitsblatt eine Schaltfläche hinzuzufügen. Wenn Sie ein Steuerelement hinzufügen möchten, das von diesen Hilfsmethoden nicht unterstützt wird, können Sie die- `AddControl` Methode verwenden. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).|
 |Kopieren von Steuerelementen|Wenn Sie ein Windows Forms Steuerelement kopieren und es zur Laufzeit in ein Dokument einfügen, wird ein leeres Container-ActiveX-Steuerelement in das Dokument eingefügt. Das Windows Forms Steuerelement wird nicht am neuen Speicherort angezeigt, und der Code hinter dem ursprünglichen Steuerelement wird nicht in das ActiveX-Steuerelement des Containers kopiert.|
 
@@ -101,7 +103,7 @@ Bestimmte Windows Forms Steuerelemente werden aus der **Toolbox** entfernt, wenn
 > [!NOTE]
 > Für Steuerelemente von Drittanbietern muss das- <xref:System.Runtime.InteropServices.ComVisibleAttribute> Attribut auf **true** festgelegt sein, damit Sie in einer Office-Projekt Mappe verwendet werden können.
 
-Die folgenden Steuerelemente und Komponenten sind nicht in der **Toolbox**verfügbar:
+Die folgenden Steuerelemente und Komponenten sind nicht in der **Toolbox** verfügbar:
 
 - <xref:System.Windows.Forms.BindingNavigator>
 

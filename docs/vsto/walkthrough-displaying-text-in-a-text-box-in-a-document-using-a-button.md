@@ -1,5 +1,7 @@
 ---
 title: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche
+description: Erfahren Sie, wie Sie Schaltflächen und Textfelder in einer Anpassung auf Dokument Ebene für Microsoft Word verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328756"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522748"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche
   In dieser exemplarischen Vorgehensweise wird die Verwendung von Schaltflächen und Textfeldern in einer Anpassung auf Dokumentebene für Microsoft Office Word beschrieben.
@@ -39,16 +41,16 @@ ms.locfileid: "67328756"
 
 - Microsoft Word
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  Im ersten Schritt wird ein Word-Dokumentprojekt erstellt.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Word-Dokument Projekt mit der **Schaltfläche "mein Wort**benennen". Wählen Sie im Assistenten **Neues Dokument erstellen**aus.
+1. Erstellen Sie ein Word-Dokument Projekt mit der **Schaltfläche "mein Wort** benennen". Wählen Sie im Assistenten **Neues Dokument erstellen** aus.
 
      Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer**das Schaltflächen Projekt **My Word** hinzu.
+     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer** das Schaltflächen Projekt **My Word** hinzu.
 
 ## <a name="add-controls-to-the-word-document"></a>Hinzufügen von Steuerelementen zum Word-Dokument
  Die Steuerelemente der Benutzeroberfläche umfassen eine Schaltfläche und ein Textfeld für das Word-Dokument.
@@ -80,7 +82,7 @@ ms.locfileid: "67328756"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>So schreiben Sie beim Klicken auf die Schaltfläche in das Textfeld
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **ThisDocument**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisDocument**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
 
 2. Fügen Sie dem <xref:System.Windows.Forms.Control.Click>-Ereignishandler der Schaltfläche den folgenden Code hinzu:
 

@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Ausführen von Excel-Berechnungen'
+description: Erfahren Sie, wie Sie Visual Studio zum programmgesteuerten Ausführen von Berechnungen in einer Microsoft Excel-Arbeitsmappe verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a02e86864065d2c626de2f6e7fea7528554f1391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9f385e7c58972844c30320c680f42d8394580d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547380"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524696"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Gewusst wie: Programm gesteuertes Ausführen von Excel-Berechnungen
   Sie verwenden einen ähnlichen Prozess zum Ausführen von Berechnungen in einem <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder einem systemeigenen Excel-Bereichs Objekt.
@@ -56,7 +58,7 @@ ms.locfileid: "85547380"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
 - [Name Drange-Steuerelement](../vsto/namedrange-control.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

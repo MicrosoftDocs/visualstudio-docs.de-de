@@ -1,5 +1,7 @@
 ---
 title: Verbessern der Leistung eines VSTO-Add-ins
+description: Erfahren Sie, wie Sie VSTO-Add-ins optimieren, die Sie für Office-Anwendungen erstellen, sodass diese schnell gestartet und heruntergefahren, Elemente geöffnet und andere Aufgaben ausgeführt werden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298508"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524435"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Verbessern der Leistung eines VSTO-Add-ins
   Sie können die Benutzererfahrung verbessern, indem Sie VSTO-Add-Ins optimieren, die Sie für Office-Anwendungen erstellen, sodass diese schnell gestartet und heruntergefahren, Elemente schnell geöffnet und andere Aufgaben rasch ausgeführt werden können. Wenn das VSTO-Add-In für Outlook bestimmt ist, können Sie das Risiko senken, dass das VSTO-Add-In aufgrund schwacher Leistung deaktiviert wird. Sie können die Leistung des VSTO-Add-Ins mithilfe der folgenden Strategien steigern:
@@ -37,11 +39,11 @@ ms.locfileid: "92298508"
 
 - Bei der ersten Interaktion des Benutzers mit dem VSTO-Add-In nach weiteren Starts der Anwendung.
 
-  Beispielsweise füllt das VSTO-Add-in möglicherweise ein Arbeitsblatt mit Daten auf, wenn der Benutzer eine benutzerdefinierte Schaltfläche mit der Bezeichnung **meine Daten erhalten**auswählt. Die Anwendung muss das VSTO-Add-in mindestens einmal laden, damit die Schaltfläche " **meine Daten** " im Menüband angezeigt werden kann. Das VSTO-Add-in wird jedoch nicht erneut geladen, wenn der Benutzer die Anwendung das nächste Mal startet. Das VSTO-Add-In wird nur geladen, wenn der Benutzer die Schaltfläche **Meine Daten abrufen** auswählt.
+  Beispielsweise füllt das VSTO-Add-in möglicherweise ein Arbeitsblatt mit Daten auf, wenn der Benutzer eine benutzerdefinierte Schaltfläche mit der Bezeichnung **meine Daten erhalten** auswählt. Die Anwendung muss das VSTO-Add-in mindestens einmal laden, damit die Schaltfläche " **meine Daten** " im Menüband angezeigt werden kann. Das VSTO-Add-in wird jedoch nicht erneut geladen, wenn der Benutzer die Anwendung das nächste Mal startet. Das VSTO-Add-In wird nur geladen, wenn der Benutzer die Schaltfläche **Meine Daten abrufen** auswählt.
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>So konfigurieren Sie eine ClickOnce-Projektmappe, um VSTO-Add-Ins bedarfsgesteuert zu laden
 
-1. Wählen Sie im **Projektmappen-Explorer**den Projektknoten aus.
+1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten aus.
 
 2. Wählen Sie in der Menüleiste **Ansicht** >  **Eigenschaftenseiten** aus.
 
@@ -51,13 +53,13 @@ ms.locfileid: "92298508"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>So konfigurieren Sie eine Windows Installer-Projektmappe, um VSTO-Add-Ins bedarfsgesteuert zu laden
 
-1. Legen Sie in der Registrierung den `LoadBehavior` Eintrag für den Schlüssel " ** _root_\software\microsoft\office \\ _ApplicationName_\Addins \\ _Add-in ID_ ** " auf " **0x10**" fest.
+1. Legen Sie in der Registrierung den `LoadBehavior` Eintrag für den Schlüssel " **_root_\software\microsoft\office \\ _ApplicationName_\Addins \\ _Add-in ID_** " auf " **0x10**" fest.
 
      Weitere Informationen finden Sie unter [Registrierungseinträge für VSTO-Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>So konfigurieren Sie eine Projektmappe so, dass VSTO-Add-Ins beim Debuggen der Projektmappe bedarfsgesteuert geladen werden
 
-1. Erstellen Sie ein Skript, mit dem der `LoadBehavior` Eintrag für den Stamm Ordner ** _Root_\software\microsoft\office \\ _ApplicationName_\Addins \\ _Add-in ID_ ** auf **0x10**festgelegt wird.
+1. Erstellen Sie ein Skript, mit dem der `LoadBehavior` Eintrag für den Stamm Ordner **\software\microsoft\office \\ _ApplicationName_\Addins \\ _Add-in ID_** auf **0x10** festgelegt wird.
 
      Der folgende Code ist ein Beispiel für ein solches Skript.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Aktualisieren von Lesezeichen Text'
+description: Erfahren Sie, wie Sie Visual Studio zum programmgesteuerten Einfügen von Text in ein Platzhalter-Lesezeichen in einem Microsoft Word-Dokument verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b76c239606a4bf0d6da203bd4eea45a11162706
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b9fa4b5ef19fdcaae38ef477952580f6568fcc0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546951"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523552"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Gewusst wie: Programm gesteuertes Aktualisieren von Lesezeichen Text
   Sie können Text in ein Platzhalterlesezeichen in einem Microsoft Office Word-Dokument einfügen, um den Text zu einem späteren Zeitpunkt abzurufen oder Text in einem Lesezeichen zu ersetzen. Wenn Sie eine Anpassung auf Dokumentebene entwickeln, können Sie auch Text in einem an Daten gebundenen <xref:Microsoft.Office.Tools.Word.Bookmark>-Steuerelement aktualisieren. Weitere Informationen finden Sie unter [Binden von Daten an Steuerelemente in Office](../vsto/binding-data-to-controls-in-office-solutions.md)-Projektmappen.

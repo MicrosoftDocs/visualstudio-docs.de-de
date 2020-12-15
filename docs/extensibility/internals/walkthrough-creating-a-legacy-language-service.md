@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Legacy sprach dienstangangs | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie mit den Managed Package Framework-Sprachklassen einen Sprachdienst in Visual c# implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905982"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487932"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Exemplarische Vorgehensweise: Erstellen eines Legacysprachdiensts
 Die Verwendung der MPF-Sprachklassen (Managed Package Framework) zum Implementieren eines sprach Dienstanbieter in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ist unkompliziert. Sie benötigen ein VSPackage, um den Sprachdienst, den Sprachdienst und einen Parser für Ihre Sprache zu hosten.
@@ -46,23 +48,23 @@ Die Verwendung der MPF-Sprachklassen (Managed Package Framework) zum Implementie
 
 4. Geben Sie die entsprechenden Unternehmens-und Paketinformationen ein. Klicken Sie auf **Weiter**.
 
-5. Wählen Sie **Menübefehl**aus. Klicken Sie auf **Weiter**.
+5. Wählen Sie **Menübefehl** aus. Klicken Sie auf **Weiter**.
 
     Wenn Sie keine Code Ausschnitte unterstützen möchten, klicken Sie einfach auf Fertigstellen, und ignorieren Sie den nächsten Schritt.
 
-6. Geben Sie **Ausschnitt einfügen** als **Befehlsnamen** und als `cmdidInsertSnippet` Befehls- **ID**ein. Klicken Sie auf **Fertig stellen**.
+6. Geben Sie **Ausschnitt einfügen** als **Befehlsnamen** und als `cmdidInsertSnippet` Befehls- **ID** ein. Klicken Sie auf **Fertig stellen**.
 
     Der **Befehls Name** und die **Befehls-ID** können von Ihnen stammen, dies sind nur Beispiele.
 
 ### <a name="create-the-language-service-class"></a>Erstellen der Sprachdienst Klasse
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt MyLanguagePackage, wählen Sie **Hinzufügen**, **Verweis**aus, und wählen Sie dann die Schaltfläche **neuen Verweis hinzufügen** aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt MyLanguagePackage, wählen Sie **Hinzufügen**, **Verweis** aus, und wählen Sie dann die Schaltfläche **neuen Verweis hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **.net** den Eintrag **Microsoft. VisualStudio. Package. LanguageService** aus, und klicken Sie auf **OK**.
 
      Dies muss nur einmal für das Sprachpaket Projekt durchgeführt werden.
 
-3. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das VSPackage-Projekt, und wählen Sie **Hinzufügen**, **Klasse**aus.
+3. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das VSPackage-Projekt, und wählen Sie **Hinzufügen**, **Klasse** aus.
 
 4. Stellen Sie sicher, dass in der Liste Vorlagen die Option **Klasse** ausgewählt ist.
 
@@ -80,7 +82,7 @@ Die Verwendung der MPF-Sprachklassen (Managed Package Framework) zum Implementie
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
 
-8. Positionieren Sie den Cursor auf "LanguageService", und wählen Sie im Menü **Bearbeiten**, **IntelliSense** die Option **abstrakte Klasse implementieren**aus. Dadurch werden die minimal erforderlichen Methoden zum Implementieren einer Sprachdienst Klasse hinzugefügt.
+8. Positionieren Sie den Cursor auf "LanguageService", und wählen Sie im Menü **Bearbeiten**, **IntelliSense** die Option **abstrakte Klasse implementieren** aus. Dadurch werden die minimal erforderlichen Methoden zum Implementieren einer Sprachdienst Klasse hinzugefügt.
 
 9. Implementieren Sie die abstrakten Methoden, wie unter [Implementieren eines Legacy sprach Dienstanbieter](../../extensibility/internals/implementing-a-legacy-language-service2.md)beschrieben.
 
@@ -104,7 +106,7 @@ Die Verwendung der MPF-Sprachklassen (Managed Package Framework) zum Implementie
 
 #### <a name="deriving-from-an-mpf-class"></a>Ableiten von einer MPF-Klasse
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das VSPackage-Projekt, und wählen Sie **Hinzufügen**, **Klasse**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das VSPackage-Projekt, und wählen Sie **Hinzufügen**, **Klasse** aus.
 
 2. Stellen Sie sicher, dass in der Liste Vorlagen die Option **Klasse** ausgewählt ist.
 

@@ -1,5 +1,7 @@
 ---
 title: Besondere Sicherheitsüberlegungen für Office-Lösungen
+description: Erfahren Sie, wie die vom Microsoft .NET Framework und Microsoft Office bereitgestellten Sicherheitsfeatures Ihnen helfen können, Ihre Office-Lösungen vor Sicherheitsbedrohungen zu schützen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571b604b87fb7fac4e78c83a791c265d910fae94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985578"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524302"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Besondere Sicherheitsüberlegungen für Office-Lösungen
   Die von Microsoft .NET Framework und Microsoft Office bereitgestellten Sicherheitsfeatures können in Office-Projektmappen zum Schutz vor möglichen Sicherheitsbedrohungen beitragen. In diesem Thema werden einige dieser Bedrohungen erläutert und Empfehlungen bereitgestellt, wie sich vor diesen Bedrohungen schützen lässt. Es beinhaltet auch Informationen dazu, wie sich Microsoft Office-Sicherheitseinstellungen auf Office-Projektmappen auswirken.
@@ -87,9 +89,9 @@ ms.locfileid: "72985578"
  Andere Anwendungen, die als Host für Microsoft Office-Anwendungen fungieren, können ebenfalls verhindern, dass die neuen Berechtigungen wirksam werden. Benutzer sollten alle Anwendungen beenden, die Office verwenden (gehostete oder eigenständige), wenn die Sicherheitsrichtlinien geändert wurden.
 
 ## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Trust Center-Einstellungen im Microsoft Office System haben keine Auswirkungen auf Add-Ins oder Anpassungen auf Dokument Ebene.
- Benutzer können verhindern, dass VSTO-Add-Ins geladen werden, indem sie eine Option im **Trust Center**festlegen. Allerdings wirken sich diese Vertrauenseinstellungen nicht auf VSTO-Add-Ins aus, die als Office-Projektmappen in Visual Studio erstellt wurden.
+ Benutzer können verhindern, dass VSTO-Add-Ins geladen werden, indem sie eine Option im **Trust Center** festlegen. Allerdings wirken sich diese Vertrauenseinstellungen nicht auf VSTO-Add-Ins aus, die als Office-Projektmappen in Visual Studio erstellt wurden.
 
- Wenn Benutzer das Laden von VSTO-Add-Ins über das **Trust Center**verhindern, werden die folgenden Typen von VSTO-Add-Ins nicht geladen:
+ Wenn Benutzer das Laden von VSTO-Add-Ins über das **Trust Center** verhindern, werden die folgenden Typen von VSTO-Add-Ins nicht geladen:
 
 - Verwaltete und nicht verwaltete COM-VSTO Add-Ins
 
@@ -107,13 +109,13 @@ ms.locfileid: "72985578"
 
 2. Wählen Sie die **options** Schaltfläche *ApplicationName* aus.
 
-3. Wählen Sie im Kategorienbereich den Eintrag **Trust Center**aus.
+3. Wählen Sie im Kategorienbereich den Eintrag **Trust Center** aus.
 
-4. Wählen Sie im Detailbereich die Option **Einstellungen für das Trust Center**aus.
+4. Wählen Sie im Detailbereich die Option **Einstellungen für das Trust Center** aus.
 
-5. Wählen Sie im Kategorienbereich den Eintrag **Add-Ins**aus.
+5. Wählen Sie im Kategorienbereich den Eintrag **Add-Ins** aus.
 
-6. Wählen Sie im Detailbereich die Option **Anwendungs-Add-Ins müssen von einem vertrauenswürdigen Herausgeber signiert sein** oder **Alle Anwendungs-Add-Ins deaktivieren**aus.
+6. Wählen Sie im Detailbereich die Option **Anwendungs-Add-Ins müssen von einem vertrauenswürdigen Herausgeber signiert sein** oder **Alle Anwendungs-Add-Ins deaktivieren** aus.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

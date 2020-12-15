@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes suchen nach Text in Arbeitsblatt Bereichen'
+description: Erfahren Sie, wie Sie Visual Studio zum programmgesteuerten Suchen von Text in Microsoft Excel-Arbeitsblatt Bereichen verwenden können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f69a0b2c7191f608e4d18c6c3990c1ce19f1ed7e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584754"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524558"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Gewusst wie: Programm gesteuertes suchen nach Text in Arbeitsblatt Bereichen
   Die- <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Methode des- <xref:Microsoft.Office.Interop.Excel.Range> Objekts ermöglicht die Suche nach Text innerhalb des Bereichs. Dieser Text kann auch eine beliebige Fehler Zeichenfolge sein, die in einer Arbeitsblatt Zelle wie oder angezeigt werden kann `#NULL!` `#VALUE!` . Weitere Informationen zu Fehler Zeichenfolgen finden Sie unter [Zellen Fehler Werte](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).

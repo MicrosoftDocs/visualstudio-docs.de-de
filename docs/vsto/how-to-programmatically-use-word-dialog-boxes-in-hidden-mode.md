@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus'
+description: Erfahren Sie, wie Sie Visual Studio zum programmgesteuerten Verwenden von Microsoft Word-Dialogfeldern im ausgeblendeten Modus verwenden können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 263041fe15f07e8041bb771a6f3abd8b3311b0f2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583761"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523161"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Gewusst wie: Programm gesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus
   Sie können komplexe Vorgänge mit einem Methodenaufruf ausführen, indem Sie die integrierten Dialogfelder in Microsoft Office Word aufrufen, ohne Sie dem Benutzer anzuzeigen. Verwenden Sie hierzu die- <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> Methode des-Objekts, <xref:Microsoft.Office.Interop.Word.Dialog> ohne die-Methode aufrufen zu müssen <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> .

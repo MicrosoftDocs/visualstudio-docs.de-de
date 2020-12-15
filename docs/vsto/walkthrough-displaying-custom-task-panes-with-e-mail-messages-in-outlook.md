@@ -1,5 +1,7 @@
 ---
 title: Anzeigen benutzerdefinierter Aufgabenbereiche mit e-Mail-Nachrichten in Outlook
+description: Erfahren Sie, wie Sie eine eindeutige Instanz eines benutzerdefinierten Aufgabenbereichs für jede e-Mail-Nachricht in Microsoft Outlook anzeigen, die erstellt oder geöffnet wird.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584281"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522706"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen mit e-Mails in Outlook
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine eindeutige Instanz eines benutzerdefinierten Aufgabenbereichs mit jeder erstellten oder geöffneten e-Mail angezeigt wird. Benutzer können den benutzerdefinierten Aufgabenbereich über eine Schaltfläche auf dem Menüband jeder E-Mail anzeigen oder ausblenden.
@@ -72,7 +74,7 @@ ms.locfileid: "91584281"
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>So entwerfen Sie die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs
 
-1. Klicken Sie im **Projektmappen-Explorer**auf das Projekt **OutlookMailItemTaskPane** .
+1. Klicken Sie im **Projektmappen-Explorer** auf das Projekt **OutlookMailItemTaskPane** .
 
 2. Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.
 
@@ -80,7 +82,7 @@ ms.locfileid: "91584281"
 
      Das Benutzersteuerelement wird im Designer geöffnet.
 
-4. Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**ein **TextBox** -Steuerelement auf das Benutzersteuerelement.
+4. Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** ein **TextBox** -Steuerelement auf das Benutzersteuerelement.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>Entwerfen der Benutzeroberfläche des Menübands
  Eines der Ziele dieses VSTO-Add-Ins besteht darin, Benutzern die Möglichkeit zu geben, den benutzerdefinierten Aufgabenbereich im Menüband jeder e-Mail-Nachricht auszublenden oder anzuzeigen. Wenn Sie die Benutzeroberfläche bereitstellen möchten, erstellen Sie eine benutzerdefinierte Menüband-Benutzeroberfläche mit einer Umschaltfläche, über die Benutzer den benutzerdefinierten Aufgabenbereich durch Klicken anzeigen oder ausblenden können.
@@ -97,13 +99,13 @@ ms.locfileid: "91584281"
 
 4. Klicken Sie im Menüband-Designer auf **group1**.
 
-5. Legen Sie im Fenster **Eigenschaften** die **Label** -Eigenschaft auf **Aufgabenbereich-Manager**fest.
+5. Legen Sie im Fenster **Eigenschaften** die **Label** -Eigenschaft auf **Aufgabenbereich-Manager** fest.
 
-6. Ziehen Sie ein ToggleButton-Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder** der **Toolbox**auf die Gruppe **Task Pane Manager** .
+6. Ziehen Sie ein ToggleButton-Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder** der **Toolbox** auf die Gruppe **Task Pane Manager** .
 
 7. Klicken Sie auf **toggleButton1**.
 
-8. Legen Sie im Fenster **Eigenschaften** die **Label** -Eigenschaft auf **Aufgabenbereich anzeigen**fest.
+8. Legen Sie im Fenster **Eigenschaften** die **Label** -Eigenschaft auf **Aufgabenbereich anzeigen** fest.
 
 ## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>Anzeigen der benutzerdefinierten Menüband-Benutzeroberfläche mit e-Mail
  Der in dieser exemplarischen Vorgehensweise erstellte benutzerdefinierte Aufgabenbereich ist so konzipiert, dass er nur in Inspektor-Fenstern angezeigt wird, die E-Mails enthalten. Lesen Sie die Eigenschaften daher so fest, dass die benutzerdefinierte Menüband-Benutzeroberfläche nur in diesen Fenstern angezeigt wird.
@@ -112,7 +114,7 @@ ms.locfileid: "91584281"
 
 1. Klicken Sie im Menüband-Designer auf das Menüband **ManageTaskPaneRibbon** .
 
-2. Klicken Sie im Fenster **Eigenschaften** auf die Dropdownliste neben **RibbonType**, und wählen Sie **Microsoft.Outlook.Mail.Compose** und **Microsoft.Outlook.Mail.Read**aus.
+2. Klicken Sie im Fenster **Eigenschaften** auf die Dropdownliste neben **RibbonType**, und wählen Sie **Microsoft.Outlook.Mail.Compose** und **Microsoft.Outlook.Mail.Read** aus.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Erstellen einer Klasse zum Verwalten von Inspektor-Fenstern und benutzerdefinierten Aufgabenbereichen
  Es gibt mehrere Fälle, in denen das VSTO-Add-in angeben muss, welcher benutzerdefinierte Aufgabenbereich einer bestimmten e-Mail-Nachricht zugeordnet ist. Dazu gehören folgende Situationen:
@@ -127,7 +129,7 @@ ms.locfileid: "91584281"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>So erstellen Sie eine Klasse zum Verwalten von Inspektor-Fenstern und benutzerdefinierten Aufgabenbereichen
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf die Datei *ThisAddIn.cs* oder *ThisAddIn.vb* , und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Datei *ThisAddIn.cs* oder *ThisAddIn.vb* , und klicken Sie dann auf **Code anzeigen**.
 
 2. Fügen Sie am Anfang der Datei die folgenden Anweisungen ein.
 
@@ -200,7 +202,7 @@ ms.locfileid: "91584281"
 
 ### <a name="to-build-your-project"></a>So erstellen Sie das Projekt
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **OutlookMailItemTaskPane** , und klicken Sie dann auf **Erstellen**. Vergewissern Sie sich, dass das Projekt ohne Fehler kompiliert wurde.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **OutlookMailItemTaskPane** , und klicken Sie dann auf **Erstellen**. Vergewissern Sie sich, dass das Projekt ohne Fehler kompiliert wurde.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Synchronisieren der UMSCHALT Fläche des Menübands mit dem benutzerdefinierten Aufgabenbereich
  Die Umschaltfläche erscheint gedrückt, wenn der Aufgabenbereich sichtbar ist, und nicht gedrückt, wenn der Aufgabenbereich ausgeblendet ist. Wenn Sie den Zustand der Schaltfläche mit dem benutzerdefinierten Aufgabenbereich synchronisieren möchten, ändern Sie den <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> -Ereignishandler der Umschaltfläche.
@@ -242,7 +244,7 @@ ms.locfileid: "91584281"
 
 6. Klicken Sie erneut auf die Schaltfläche **Aufgabenbereich anzeigen** .
 
-    Stellen Sie sicher, dass der Aufgabenbereich geöffnet wird und das Textfeld weiterhin die Zeichenfolge **Erster Aufgabenbereich**enthält.
+    Stellen Sie sicher, dass der Aufgabenbereich geöffnet wird und das Textfeld weiterhin die Zeichenfolge **Erster Aufgabenbereich** enthält.
 
 7. Klicken Sie in Outlook auf **neu** , um eine zweite e-Mail-Nachricht zu erstellen.
 

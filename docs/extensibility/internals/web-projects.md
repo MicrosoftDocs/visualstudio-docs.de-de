@@ -1,5 +1,7 @@
 ---
 title: Webprojekte | Microsoft-Dokumentation
+description: Informieren Sie sich über die internen Details zur Funktionsweise des Webprojekt Systems in Visual Studio für Entwickler, die Visual Studio erweitern möchten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23194ba5ad59a113e5599b7fe1f5f39bed557351
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6afdbff1e844f45cac56b68909e1327a190f7a74
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703532"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487880"
 ---
 # <a name="web-projects"></a>Webprojekte
 Ein Webprojekt System ist ein Projekt System, das Webprojekte erstellt. Webprojekte erstellen wiederum Webanwendungen. Sie können eine Webseite mit herkömmlichen Programmiersprachen (z. b. oder) programmieren, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] um Informationen von einem Benutzer zu erfassen und zu verarbeiten, in einer Datenbank zu speichern usw. Webseiten mit zugeordneter Code werden als Smart Web Pages bezeichnet.

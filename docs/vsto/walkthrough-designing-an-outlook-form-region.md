@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs'
+description: Erfahren Sie, wie Sie einen benutzerdefinierten Microsoft Outlook-Formular Bereich entwerfen können, der als neue Seite im Inspektor-Fenster eines Kontakt Elements angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985469"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524204"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs
   Benutzerdefinierte Formularbereiche erweitern Standard- oder benutzerdefinierte Microsoft Office Outlook-Formulare. In dieser exemplarischen Vorgehensweise entwerfen Sie einen benutzerdefinierten Formularbereich, der als neue Seite im Inspektor-Fenster eines Kontaktelements angezeigt wird. Dieser Formularbereich zeigt eine Zuordnung jeder Adresse an, die für den Kontakt aufgeführt ist, indem die Adressinformationen an die Windows Live Local Search-Website gesendet werden. Weitere Informationen zu Formular Bereichen finden Sie unter [Erstellen von Outlook-Formular](../vsto/creating-outlook-form-regions.md)Bereichen.
@@ -55,7 +57,7 @@ ms.locfileid: "72985469"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Erstellen Sie in ein Outlook VSTO-Add-in-Projekt mit dem Namen " **MapItAddIn**".
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen** aus.
 
 3. Speichern Sie das Projekt in einem beliebigen Verzeichnis.
 
@@ -66,17 +68,17 @@ ms.locfileid: "72985469"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>So fügen Sie dem VSTO-Add-In-Projekt einen Formularbereich hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt **MapItAddIn** aus.
+1. Wählen Sie in **Projektmappen-Explorer** das Projekt **MapItAddIn** aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Outlook-Formular Bereich**aus, benennen Sie die Datei **MapIt**, und klicken Sie dann auf **Hinzufügen**.
+3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Outlook-Formular Bereich** aus, benennen Sie die Datei **MapIt**, und klicken Sie dann auf **Hinzufügen**.
 
      Der Assistent für den **NewOutlook-Formular Bereich** wird gestartet.
 
 4. Klicken Sie auf der Seite Wählen Sie aus, **wie der Formular Bereich erstellt** werden soll auf **neuen Formular Bereich entwerfen**, und klicken Sie dann auf **weiter**.
 
-5. Klicken Sie auf der Seite **Wählen Sie den Typ des zu erstellenden Formular Bereichs aus** auf **getrennt**aus, und klicken Sie dann auf **weiter**.
+5. Klicken Sie auf der Seite **Wählen Sie den Typ des zu erstellenden Formular Bereichs aus** auf **getrennt** aus, und klicken Sie dann auf **weiter**.
 
      Ein *separater* Formular Bereich fügt einem Outlook-Formular eine neue Seite hinzu. Weitere Informationen zu Formular Bereichs Typen finden Sie unter [Erstellen von Outlook-Formular](../vsto/creating-outlook-form-regions.md)Bereichen.
 
@@ -84,9 +86,9 @@ ms.locfileid: "72985469"
 
      Dieser Name wird auf dem Menüband im Inspektor-Fenster angezeigt, wenn das Kontaktelement geöffnet ist.
 
-7. Wählen Sie **Inspektoren im Compose-Modus** und **Inspektoren im Lesemodus**aus, und klicken Sie dann auf **weiter**.
+7. Wählen Sie **Inspektoren im Compose-Modus** und **Inspektoren im Lesemodus** aus, und klicken Sie dann auf **weiter**.
 
-8. Löschen Sie auf der Seite **Nachrichten Klassen, die diesen Formular Bereich anzeigen werden** die Option **e-Mail**, wählen Sie **Kontakt**aus, und klicken Sie dann auf **Fertig**stellen.
+8. Löschen Sie auf der Seite **Nachrichten Klassen, die diesen Formular Bereich anzeigen werden** die Option **e-Mail**, wählen Sie **Kontakt** aus, und klicken Sie dann auf **Fertig** stellen.
 
      Eine *MapIt.cs* -oder *MapIt. vb* -Datei wird dem Projekt hinzugefügt.
 
@@ -95,17 +97,17 @@ ms.locfileid: "72985469"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>So entwerfen Sie das Layout des Formularbereichs
 
-1. Erweitern Sie in **Projektmappen-Explorer**das Projekt **MapItAddIn** , und doppelklicken Sie dann auf *MapIt.cs* oder *MapIt. vb* , um den Formular Bereich-Designer zu öffnen.
+1. Erweitern Sie in **Projektmappen-Explorer** das Projekt **MapItAddIn** , und doppelklicken Sie dann auf *MapIt.cs* oder *MapIt. vb* , um den Formular Bereich-Designer zu öffnen.
 
 2. Klicken Sie mit der rechten Maustaste auf den Designer, und klicken Sie auf **Eigenschaften**.
 
-3. Legen Sie im Fenster **Eigenschaften** die **Größe** auf **664, 469**fest.
+3. Legen Sie im Fenster **Eigenschaften** die **Größe** auf **664, 469** fest.
 
      Auf diese Weise wird sichergestellt, dass der Formularbereich groß genug ist, um eine Zuordnung anzuzeigen.
 
 4. Klicken Sie im Menü **Ansicht** auf **Toolbox**.
 
-5. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**einen **Webbrowser** zum Formular Bereich hinzu.
+5. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** einen **Webbrowser** zum Formular Bereich hinzu.
 
      Im **Webbrowser** wird eine Zuordnung der einzelnen Adressen angezeigt, die für den Kontakt aufgeführt sind.
 
@@ -114,7 +116,7 @@ ms.locfileid: "72985469"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>So passen Sie das Verhalten des Formularbereichs an
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf *MapIt.cs* oder *MapIt. vb*, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf *MapIt.cs* oder *MapIt. vb*, und klicken Sie dann auf **Code anzeigen**.
 
     *MapIt.cs* oder *MapIt. vb* wird im Code-Editor geöffnet.
 
@@ -161,7 +163,7 @@ ms.locfileid: "72985469"
 
 5. Öffnen Sie das **Ann Beebe** -Kontakt Element erneut.
 
-    In Outlook kann dies in **der Gruppe suchen** erfolgen, indem Sie entweder das Adressbuch für Kontakte öffnen oder Ann Beebe in **Search People**eingeben.
+    In Outlook kann dies in **der Gruppe suchen** erfolgen, indem Sie entweder das Adressbuch für Kontakte öffnen oder Ann Beebe in **Search People** eingeben.
 
 6. Klicken Sie in der Gruppe **anzeigen** des Menübands des Elements **auf zuordnen** , um den Formular Bereich der Karte zu öffnen.
 

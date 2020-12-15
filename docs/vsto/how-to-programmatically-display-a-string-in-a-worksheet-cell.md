@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Anzeigen einer Zeichenfolge in einer Arbeitsblatt Zelle'
+description: Erfahren Sie, wie Sie eine Zeichenfolge in einer Microsoft Excel-Arbeitsblatt Zelle Programm gesteuert anzeigen können, indem Sie entweder ein NamedRange-Steuerelement oder ein natives Excel-Bereichs Objekt verwenden.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb3dbaec2efd95f63428e8494598720953f791e7
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a97534b8ac43c9a05cfb59fb911442a87d51c767
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585222"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523946"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Gewusst wie: Programm gesteuertes Anzeigen einer Zeichenfolge in einer Arbeitsblatt Zelle
   In diesem Beispiel wird veranschaulicht, wie Text in einer Zelle Programm gesteuert angezeigt wird. Verwenden Sie zum Anzeigen von Text in einer Zelle entweder ein <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein System eigenes Excel-Bereichs Objekt.
@@ -31,7 +33,7 @@ ms.locfileid: "91585222"
 
 ### <a name="to-display-text-in-a-namedrange-control"></a>So zeigen Sie Text in einem Name Drange-Steuerelement an
 
-1. Legen Sie den Wert des- <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuer Elements auf **Hallo Welt**fest.
+1. Legen Sie den Wert des- <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuer Elements auf **Hallo Welt** fest.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
@@ -41,7 +43,7 @@ ms.locfileid: "91585222"
 
 ### <a name="to-display-text-in-an-excel-range"></a>So zeigen Sie Text in einem Excel-Bereich an
 
-1. Rufen Sie den Bereich in der Zelle **a1** ab `Sheet1` , und legen Sie den Wert auf **Hallo Welt**fest.
+1. Rufen Sie den Bereich in der Zelle **a1** ab `Sheet1` , und legen Sie den Wert auf **Hallo Welt** fest.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]

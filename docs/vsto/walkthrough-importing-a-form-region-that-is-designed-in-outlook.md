@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Importieren eines in Outlook entworfenen Formular Bereichs'
+description: Erfahren Sie, wie Sie einen Formular Bereich in Microsoft Outlook entwerfen und dann den Formular Bereich mithilfe des Assistenten für neue Formular Bereiche in ein Outlook VSTO-Add-in-Projekt importieren.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a0de1a25a5309e99193b7be8bce2819808665b8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584975"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522670"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Exemplarische Vorgehensweise: Importieren eines in Outlook entworfenen Formular Bereichs
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Formularbereich in Microsoft Office Outlook entworfen und anschließend mithilfe des Assistenten **Neuer Formularbereich** in ein Outlook VSTO-Add-In-Projekt importiert wird. Durch das Entwerfen des Formularbereichs in Outlook ist es möglich, dass systemeigene Outlook-Steuerelemente zum Formularbereich hinzugefügt werden können, die Outlook-Daten binden. Nachdem Sie den Formularbereich importiert haben, können Sie die Ereignisse der einzelnen Steuerelemente behandeln.
@@ -65,51 +67,51 @@ ms.locfileid: "91584975"
 
 5. Ziehen Sie das Feld **Betreff** und das Feld **% abgeschlossen** aus der **Feldauswahl** in den Formularbereich.
 
-6. Klicken Sie in der Gruppe **Extras** auf **Steuerelement-Toolbox** , um die **Toolbox**zu öffnen.
+6. Klicken Sie in der Gruppe **Extras** auf **Steuerelement-Toolbox** , um die **Toolbox** zu öffnen.
 
 7. Ziehen Sie eine Bezeichnung aus der **Toolbox** in den Formularbereich. Ordnen Sie die Bezeichnung unter den Feldern **Betreff** und **% abgeschlossen** an.
 
 8. Klicken Sie mit der rechten Maustaste auf die Bezeichnung, und klicken Sie dann auf **Erweiterte Eigenschaften**.
 
-9. Legen Sie im Fenster **Eigenschaften** die **Beschriftung** -Eigenschaft auf **Diese Aufgabe ist von den folgenden Aufgaben abhängig**fest, legen Sie dann die **Breite** -Eigenschaft auf **200**fest, und klicken Sie anschließend auf **Übernehmen**.
+9. Legen Sie im Fenster **Eigenschaften** die **Beschriftung** -Eigenschaft auf **Diese Aufgabe ist von den folgenden Aufgaben abhängig** fest, legen Sie dann die **Breite** -Eigenschaft auf **200** fest, und klicken Sie anschließend auf **Übernehmen**.
 
 10. Ziehen Sie ein ListBox-Steuerelement aus der **Toolbox** in den Formularbereich. Positionieren Sie das Listenfeld unterhalb der Bezeichnung **Diese Aufgabe ist von den folgenden Aufgaben abhängig** .
 
 11. Wählen Sie das soeben hinzugefügte Listenfeld aus.
 
-12. Legen Sie im Fenster **Eigenschaften** für **Breite** den Wert **300**fest, und klicken Sie dann auf **Übernehmen**.
+12. Legen Sie im Fenster **Eigenschaften** für **Breite** den Wert **300** fest, und klicken Sie dann auf **Übernehmen**.
 
 13. Ziehen Sie eine Bezeichnung aus der **Toolbox** in den Formularbereich. Positionieren Sie die Bezeichnung unter dem Listenfeld.
 
 14. Wählen Sie die soeben hinzugefügte Bezeichnung aus.
 
-15. Legen Sie im Fenster **Eigenschaften** die **Beschriftung** -Eigenschaft auf **Aufgabe auswählen, die zur Liste der abhängigen Aufgaben hinzugefügt wird**fest, legen Sie dann die **Breite** -Eigenschaft auf **200**fest, und klicken Sie anschließend auf **Übernehmen**.
+15. Legen Sie im Fenster **Eigenschaften** die **Beschriftung** -Eigenschaft auf **Aufgabe auswählen, die zur Liste der abhängigen Aufgaben hinzugefügt wird** fest, legen Sie dann die **Breite** -Eigenschaft auf **200** fest, und klicken Sie anschließend auf **Übernehmen**.
 
 16. Ziehen Sie ein ComboBox-Steuerelement aus der **Toolbox** in den Formularbereich. Positionieren Sie das Kombinationsfeld unter die Bezeichnung **Aufgabe auswählen, die zur Liste der abhängigen Aufgaben hinzugefügt wird** .
 
 17. Wählen Sie das soeben hinzugefügte Kombinationsfeld aus.
 
-18. Legen Sie im Fenster **Eigenschaften** für die **Breite** -Eigenschaft den Wert **300**fest, und klicken Sie dann auf **Übernehmen**.
+18. Legen Sie im Fenster **Eigenschaften** für die **Breite** -Eigenschaft den Wert **300** fest, und klicken Sie dann auf **Übernehmen**.
 
 19. Ziehen Sie ein CommandButton-Steuerelement aus der **Toolbox** in den Formularbereich. Positionieren Sie die Befehlsschaltfläche neben dem Kombinationsfeld.
 
 20. Wählen Sie die soeben hinzugefügte Befehlsschaltfläche aus.
 
-21. Legen Sie Fenster **Eigenschaften** für **Name** die Option **AddDependentTask**fest. Legen Sie dann für **Beschriftung** die Option **Abhängige Aufgabe hinzufügen**und für **Breite** den Wert **100**fest, und klicken Sie anschließend auf **Übernehmen**.
+21. Legen Sie Fenster **Eigenschaften** für **Name** die Option **AddDependentTask** fest. Legen Sie dann für **Beschriftung** die Option **Abhängige Aufgabe hinzufügen** und für **Breite** den Wert **100** fest, und klicken Sie anschließend auf **Übernehmen**.
 
-22. Klicken Sie in der **Feldauswahl**auf **Neu**.
+22. Klicken Sie in der **Feldauswahl** auf **Neu**.
 
 23. Geben Sie im Dialogfeld **Neues Feld** die Zeichenfolge **hiddenField** in das Feld **Name** ein, und klicken Sie dann auf **OK**.
 
 24. Ziehen Sie das Feld **hiddenField** aus der **Feldauswahl** in den Formularbereich.
 
-25. Legen Sie im Fenster **Eigenschaften** für **Sichtbar** den Wert **0 – False**fest, und klicken Sie dann auf **Übernehmen**.
+25. Legen Sie im Fenster **Eigenschaften** für **Sichtbar** den Wert **0 – False** fest, und klicken Sie dann auf **Übernehmen**.
 
 26. Klicken Sie in Outlook auf der Registerkarte **Entwickler** in der Gruppe **Entwurf** auf die Schaltfläche **Speichern** , und klicken Sie dann auf **Formularbereich speichern unter**.
 
      Weisen Sie der Formularregion die Bezeichnung **TaskFormRegion** zu, und speichern Sie sie in einem lokalen Verzeichnis auf Ihrem Computer.
 
-     Outlook speichert den Formular Bereich als*OFS*-Datei (Outlook Form Storage). Der Formular Bereich wird mit dem Namen " *TaskFormRegion. OFS*" gespeichert.
+     Outlook speichert den Formular Bereich als *OFS*-Datei (Outlook Form Storage). Der Formular Bereich wird mit dem Namen " *TaskFormRegion. OFS*" gespeichert.
 
 27. Beenden Sie Outlook.
 
@@ -120,7 +122,7 @@ ms.locfileid: "91584975"
 
 1. Erstellen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ein Outlook VSTO-Add-In-Projekt namens **TaskAddIn**.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen** aus.
 
 3. Speichern Sie das Projekt im Standardprojektverzeichnis.
 
@@ -131,15 +133,15 @@ ms.locfileid: "91584975"
 
 ### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>So importieren Sie den Formularbereich in das Outlook VSTO-Add-In-Projekt
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **TaskAddIn** , zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **TaskAddIn** , zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Element**.
 
-2. Wählen Sie im Bereich **Vorlagen** die Option **Outlook-Formularbereich**aus, weisen Sie der Datei die Bezeichnung **TaskFormRegion**zu, und klicken Sie dann auf **Hinzufügen**.
+2. Wählen Sie im Bereich **Vorlagen** die Option **Outlook-Formularbereich** aus, weisen Sie der Datei die Bezeichnung **TaskFormRegion** zu, und klicken Sie dann auf **Hinzufügen**.
 
      Der Assistent für den **NewOutlook-Formular Bereich** wird gestartet.
 
 3. Klicken Sie auf der Seite **Legen Sie fest, wie der Formularbereich erstellt werden soll** auf die Option **OFS-Datei (Outlook Form Storage) importieren**, und klicken Sie dann auf **Durchsuchen**.
 
-4. Navigieren Sie im Dialogfeld **Speicherort für vorhandene Outlook-Formularbereichsdateien** zum Speicherort der Datei *TaskFormRegion.ofs*, wählen Sie **TaskFormRegion.ofs**aus, klicken Sie dann auf **Öffnen**und anschließend auf **Weiter**.
+4. Navigieren Sie im Dialogfeld **Speicherort für vorhandene Outlook-Formularbereichsdateien** zum Speicherort der Datei *TaskFormRegion.ofs*, wählen Sie **TaskFormRegion.ofs** aus, klicken Sie dann auf **Öffnen** und anschließend auf **Weiter**.
 
 5. Klicken Sie auf der Seite **Wählen Sie den Typ des zu erstellenden Formularbereichs aus** auf **Alle ersetzen**, und klicken Sie dann auf **Weiter**.
 
@@ -147,7 +149,7 @@ ms.locfileid: "91584975"
 
 6. Klicken Sie auf der Seite **Geben Sie eine Beschreibung ein, und wählen Sie die Anzeigeeinstellungen aus** auf **Weiter**.
 
-7. Gehen Sie auf der Seite **Geben Sie die Meldungsklassen an, von denen dieser Formularbereich angezeigt wird** in das Feld **Welche benutzerdefinierten Meldungsklassen sollen in diesem Formularbereich angezeigt werden?** die Zeichenfolge **IPM.Task.TaskFormRegion**ein, und klicken Sie dann auf **Fertig stellen**.
+7. Gehen Sie auf der Seite **Geben Sie die Meldungsklassen an, von denen dieser Formularbereich angezeigt wird** in das Feld **Welche benutzerdefinierten Meldungsklassen sollen in diesem Formularbereich angezeigt werden?** die Zeichenfolge **IPM.Task.TaskFormRegion** ein, und klicken Sie dann auf **Fertig stellen**.
 
      Eine *TaskFormRegion.cs* -oder *TaskFormRegion. vb* -Datei wird dem Projekt hinzugefügt.
 
@@ -158,7 +160,7 @@ ms.locfileid: "91584975"
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>So behandeln Sie die Ereignisse von Steuerelementen im Formularbereich
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf *TaskFormRegion.cs* oder *TaskFormRegion. vb*, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf *TaskFormRegion.cs* oder *TaskFormRegion. vb*, und klicken Sie dann auf **Code anzeigen**.
 
     *TaskFormRegion.cs* oder *TaskFormRegion. vb* wird im Code-Editor geöffnet.
 
@@ -218,15 +220,15 @@ ms.locfileid: "91584975"
 
 4. Klicken Sie auf der Registerkarte **Aufgabe** des Menübands in der Gruppe **Aktionen** auf **speichern & schließen**.
 
-5. Klicken Sie in Outlook auf der Registerkarte **Start** auf **Neue Elemente**, dann auf **Weitere Elemente**und anschließend auf **Formular auswählen**.
+5. Klicken Sie in Outlook auf der Registerkarte **Start** auf **Neue Elemente**, dann auf **Weitere Elemente** und anschließend auf **Formular auswählen**.
 
 6. Klicken Sie im Dialogfeld **Formular ausfüllen** auf **TaskFormRegion**, und klicken Sie dann auf **Öffnen**.
 
      Der Formularbereich **TaskFormRegion** wird angezeigt. Dieses Formular ersetzt das gesamte Aufgabenformular. Das Kombinationsfeld **Aufgabe auswählen, die zur Liste der abhängigen Aufgaben hinzugefügt wird** wird mit anderen Aufgaben im Ordner „Aufgaben“ aufgefüllt.
 
-7. Geben Sie auf dem Aufgabenformular im Feld **Betreff** die Zeichenfolge **Primäre Aufgabe**ein.
+7. Geben Sie auf dem Aufgabenformular im Feld **Betreff** die Zeichenfolge **Primäre Aufgabe** ein.
 
-8. Wählen Sie im Kombinationsfeld **Aufgabe auswählen, die zur Liste der abhängigen Aufgaben hinzugefügt wird** die Option **Abhängige Aufgabe**aus, und klicken Sie dann auf **Abhängige Aufgabe hinzufügen**.
+8. Wählen Sie im Kombinationsfeld **Aufgabe auswählen, die zur Liste der abhängigen Aufgaben hinzugefügt wird** die Option **Abhängige Aufgabe** aus, und klicken Sie dann auf **Abhängige Aufgabe hinzufügen**.
 
      **0 % abgeschlossen – Abhängige Aufgabe** wird im Listenfeld **Diese Aufgabe ist von den folgenden Aufgaben abhängig** angezeigt. Dadurch wird gezeigt, dass Sie das `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click`-Ereignis der Schaltfläche erfolgreich behandelt haben.
 
@@ -240,7 +242,7 @@ ms.locfileid: "91584975"
 
 13. Öffnen Sie das Element **Abhängige Aufgabe** erneut in Outlook.
 
-     Jetzt wird**50 % abgeschlossen – Abhängige Aufgabe** im Listenfeld **Diese Aufgabe ist von den folgenden Aufgaben abhängig** angezeigt.
+     Jetzt wird **50 % abgeschlossen – Abhängige Aufgabe** im Listenfeld **Diese Aufgabe ist von den folgenden Aufgaben abhängig** angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
  Weitere Informationen zum Anpassen der Benutzeroberfläche einer Outlook-Anwendung finden Sie in diesen Themen:

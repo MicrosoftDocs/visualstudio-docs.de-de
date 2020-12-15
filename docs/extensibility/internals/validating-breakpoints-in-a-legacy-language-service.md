@@ -1,5 +1,7 @@
 ---
 title: Validieren von Breakpoints in einem Legacy Sprachdienst | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die ValidateBreakpointLocation-Methode in einem Legacy Sprachdienst überschreiben können, um Breakpoints vor dem Starten des Debuggers zu überprüfen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704099"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488023"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Überprüfen von Haltepunkten in einem Legacysprachdienst
 Ein Haltepunkt gibt an, dass die Programmausführung an einem bestimmten Punkt angehalten werden soll, während Sie in einem Debugger ausgeführt wird. Ein Benutzer kann einen Haltepunkt in jeder Zeile in der Quelldatei platzieren, da der Editor nicht weiß, was einen gültigen Speicherort für einen Haltepunkt ausmacht. Wenn der Debugger gestartet wird, werden alle markierten Haltepunkte (die als ausstehende Breakpoints bezeichnet werden) an die entsprechende Position im laufenden Programm gebunden. Gleichzeitig werden die Breakpoints überprüft, um sicherzustellen, dass Sie gültige Code Speicherorte markieren. Beispielsweise ist ein Haltepunkt in einem Kommentar ungültig, da an dieser Stelle im Quellcode kein Code vorhanden ist. Der Debugger deaktiviert ungültige Breakpoints.
@@ -98,5 +100,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Funktionen von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)

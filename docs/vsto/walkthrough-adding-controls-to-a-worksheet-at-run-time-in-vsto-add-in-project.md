@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Steuerelementen zum Arbeitsblatt zur Laufzeit im VSTO-Add-in-Projekt
+description: Erfahren Sie, wie Sie das Menüband verwenden, um Benutzern das Hinzufügen einer Schaltfläche, eines NamedRange und eines ListObject zu einem Arbeitsblatt zu ermöglichen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584346"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522770"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit im VSTO-Add-in-Projekt
   Sie können einem beliebigen geöffneten Arbeitblatt Steuerelemente mithilfe eines Excel-VSTO-Add-In hinzufügen. Diese exemplarische Vorgehensweise veranschaulicht, wie Benutzer einem Arbeitsblatt mithilfe des Menübands ein <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> und <xref:Microsoft.Office.Tools.Excel.ListObject> hinzufügen können. Weitere Informationen finden [Sie unter Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -65,7 +67,7 @@ ms.locfileid: "91584346"
 
      Eine Datei mit dem Namen **Ribbon1.cs** oder **Ribbon1. vb** wird im Menüband-Designer geöffnet und zeigt eine Standard Registerkarte und-Gruppe an.
 
-3. Ziehen Sie ein **Kontrollkästchen** -Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder**der Toolbox auf **group1**.
+3. Ziehen Sie ein **Kontrollkästchen** -Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder** der Toolbox auf **group1**.
 
 4. Klicken Sie auf **CheckBox1** , um dieses Steuerelement auszuwählen.
 
@@ -76,14 +78,14 @@ ms.locfileid: "91584346"
     |**Name**|**Schaltfläche**|
     |**Label**|**Schaltfläche**|
 
-6. Fügen Sie **group1**ein zweites Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
+6. Fügen Sie **group1** ein zweites Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**NamedRange**|
     |**Label**|**NamedRange**|
 
-7. Fügen Sie **group1**ein drittes Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
+7. Fügen Sie **group1** ein drittes Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
@@ -106,7 +108,7 @@ ms.locfileid: "91584346"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. Wählen Sie in **Projektmappen-Explorer**die Option *Ribbon1.cs* oder *Ribbon1. vb*aus.
+3. Wählen Sie in **Projektmappen-Explorer** die Option *Ribbon1.cs* oder *Ribbon1. vb* aus.
 
 4. Klicken Sie im Menü **Ansicht** auf **Designer**.
 
@@ -138,11 +140,11 @@ ms.locfileid: "91584346"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>So entfernen Sie Steuerelemente aus dem Arbeitsblatt
 
-1. Wählen Sie in **Projektmappen-Explorer**die Option *ThisAddIn.cs* oder *ThisAddIn. vb*aus.
+1. Wählen Sie in **Projektmappen-Explorer** die Option *ThisAddIn.cs* oder *ThisAddIn. vb* aus.
 
 2. Klicken Sie im Menü **Ansicht** auf **Code**.
 
-3. Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Durch diesen Code wird das erste Arbeitsblatt in der Arbeitsmappe abgerufen und dann anhand der `HasVstoObject`-Methode überprüft, ob das Arbeitsblatt über ein generiertes Arbeitsblattobjekt verfügt. Wenn das generierte Arbeitsblattobjekt über Steuerelemente verfügt, ruft der Code das Arbeitsblattobjekt ab und durchläuft die Steuerelementauflistung, um Steuerelemente zu entfernen.
+3. Füge der `ThisAddIn`-Klasse die folgende Methode hinzu. Durch diesen Code wird das erste Arbeitsblatt in der Arbeitsmappe abgerufen und dann anhand der `HasVstoObject`-Methode überprüft, ob das Arbeitsblatt über ein generiertes Arbeitsblattobjekt verfügt. Wenn das generierte Arbeitsblattobjekt über Steuerelemente verfügt, ruft der Code das Arbeitsblattobjekt ab und durchläuft die Steuerelementauflistung, um Steuerelemente zu entfernen.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]

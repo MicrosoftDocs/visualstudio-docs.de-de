@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um ein VSTO-Add-in erneut zu aktivieren, das in einer Microsoft Office Anwendung deaktiviert wurde.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541257"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524482"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde
   VSTO-Add-Ins, die ein unerwartetes Verhalten aufweisen, können von Microsoft Office-Anwendungen deaktiviert werden. Wenn Ihr VSTO-Add-In beim Debuggen von der Anwendung nicht geladen wird, wurde das VSTO-Add-In von der Anwendung möglicherweise hart oder weich deaktiviert.

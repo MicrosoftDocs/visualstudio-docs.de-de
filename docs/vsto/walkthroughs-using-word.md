@@ -1,5 +1,7 @@
 ---
 title: Exemplarische Vorgehensweisen mit Word
+description: Erfahren Sie, wie Sie Anpassungen auf Dokument Ebene und VSTO-Add-Ins zum Automatisieren von Microsoft Word und Anpassen der Benutzeroberfläche (UI) verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6d3b4ece92bf278ef8d43dca7e449272982381c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254992"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522579"
 ---
 # <a name="walkthroughs-using-word"></a>Exemplarische Vorgehensweisen mit Word
   Die folgenden exemplarischen Vorgehensweisen zeigen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Automatisieren von Microsoft Office Word und Anpassen der Benutzeroberfläche (User Interface, UI) verwenden können.

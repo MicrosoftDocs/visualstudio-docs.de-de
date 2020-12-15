@@ -1,5 +1,7 @@
 ---
 title: Grundlegendes zu coerstellungs-und Add-ins
+description: Erfahren Sie mehr über das Erstellen von coerstellungen und das Feature von Excel für Windows Desktop, mit dem Sie eine in der Cloud gehostete Arbeitsmappe gleichzeitig mit anderen Benutzern bearbeiten können.
+ms.custom: SEO-VS-2020
 ms.date: 07/20/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c0d4c513da403b02454055dadf6d0fd70eef81c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978184"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522841"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Grundlegendes zu coerstellungs-und Add-ins
 
