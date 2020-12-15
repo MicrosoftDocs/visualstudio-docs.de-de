@@ -1,5 +1,7 @@
 ---
 title: 'Test Bereich 6: Löschen | Microsoft-Dokumentation'
+description: Dieser Bereich der Quell Code Verwaltung behandelt Lösch Aktionen in Projektmappen-Explorer für das Visual Studio-Quellcodeverwaltungs-Plug-in.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9902ab9d1cb9c28ddf67b83590a4cccd5f6562f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704513"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487555"
 ---
 # <a name="test-area-6-delete"></a>Testbereich 6: Löschen
 Dieser Testbereich des Quell Code Verwaltungs-Plug-ins deckt Lösch Aktionen ab.
@@ -25,18 +27,18 @@ Dieser Testbereich des Quell Code Verwaltungs-Plug-ins deckt Lösch Aktionen ab.
 
  Im folgenden finden Sie eine Liste von Elementen, die gelöscht werden können:
 
-- Dateien
+- Files
 
 - Ordner
 
-- Projekt
+- Project
 
-  Abhängig vom Projekttyp können Sie das Projekt **Entfernen** (die Dateien auf dem Datenträger belassen) oder das Projekt **Löschen** (entfernt die Dateien auf dem Datenträger). Mit beiden Aktionen wird das Projekt oder das Element aus **Projektmappen-Explorer**entfernt.
+  Abhängig vom Projekttyp können Sie das Projekt **Entfernen** (die Dateien auf dem Datenträger belassen) oder das Projekt **Löschen** (entfernt die Dateien auf dem Datenträger). Mit beiden Aktionen wird das Projekt oder das Element aus **Projektmappen-Explorer** entfernt.
 
 ## <a name="expected-behavior"></a>Erwartetes Verhalten
  Das erwartete Verhalten für die Testfälle im Lösch Testbereich lautet wie folgt:
 
-- Das gelöschte Element ist in **Projektmappen-Explorer**nicht mehr sichtbar.
+- Das gelöschte Element ist in **Projektmappen-Explorer** nicht mehr sichtbar.
 
 - Das übergeordnete Element des gelöschten Projekts oder Elements wird bei Bedarf (möglicherweise mit einer Eingabeaufforderung) ausgecheckt.
 

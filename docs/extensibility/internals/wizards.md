@@ -1,5 +1,7 @@
 ---
 title: Assistenten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie den Assistenten unter den verfügbaren Assistenten und Vorlagen in Visual Studio auflisten, und informieren Sie sich über die Anforderungen, die der Assistent in der IDE erfüllen muss.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703214"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487750"
 ---
 # <a name="wizards"></a>Assistenten
-Nachdem Sie einen Assistenten erstellt haben, möchten Sie ihn in der Regel der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) hinzufügen, damit er von anderen Benutzern verwendet werden kann. Der hinzugefügte Assistent wird dann in den Dialogfeldern **Neues Projekt hinzufügen** oder **Neues Element hinzufügen** angezeigt. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf eine geöffnete Projekt Mappe, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt** oder **Neues Element**, um die Dialogfelder **Neues Projekt hinzufügen** oder **Neues Element hinzufügen** anzuzeigen.
+Nachdem Sie einen Assistenten erstellt haben, möchten Sie ihn in der Regel der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) hinzufügen, damit er von anderen Benutzern verwendet werden kann. Der hinzugefügte Assistent wird dann in den Dialogfeldern **Neues Projekt hinzufügen** oder **Neues Element hinzufügen** angezeigt. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf eine geöffnete Projekt Mappe, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt** oder **Neues Element**, um die Dialogfelder **Neues Projekt hinzufügen** oder **Neues Element hinzufügen** anzuzeigen.
 
- Assistenten können in implementiert werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , um Benutzern die Auswahl aus einer Strukturansicht verfügbarer Werte zu ermöglichen, wenn Sie das Dialogfeld **Neues Projekt hinzufügen** oder das Dialogfeld **Neues Element hinzufügen** öffnen, oder wenn Sie mit der rechten Maustaste auf ein Element in **Projektmappen-Explorer**klicken.
+ Assistenten können in implementiert werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , um Benutzern die Auswahl aus einer Strukturansicht verfügbarer Werte zu ermöglichen, wenn Sie das Dialogfeld **Neues Projekt hinzufügen** oder das Dialogfeld **Neues Element hinzufügen** öffnen, oder wenn Sie mit der rechten Maustaste auf ein Element in **Projektmappen-Explorer** klicken.
 
  In Ihrem Assistenten können Sie die Option zum Lokalisieren des Namens eines neuen Projekts oder von "Ites" bereitstellen, und Sie können das Symbol ermitteln, das Benutzern angezeigt wird, wenn Sie den Assistenten auswählen. Sie können auch die Reihenfolge steuern, in der neue Elemente relativ zu anderen verfügbaren Elementen angezeigt werden. Elemente müssen nicht alphabetisch angeordnet werden.
 

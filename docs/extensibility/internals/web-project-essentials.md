@@ -1,5 +1,7 @@
 ---
 title: Essentials-Webprojekt | Microsoft-Dokumentation
+description: Informieren Sie sich über die internen Details zur Funktionsweise von Webprojekten in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09e33248ca264fefa79a8d5d5fa5d0cfa3d2da1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703552"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487919"
 ---
 # <a name="web-project-essentials"></a>Grundlagen von Webprojekten
 Webprojekte erstellen Webanwendungen. Sie können ein Webprojekt verwenden, um eine Webanwendung zu erstellen, die über intelligente Webseiten verfügt. Eine intelligente Webseite verfügt über serverseitigen Code, der die Webseite bei Bedarf rendert.

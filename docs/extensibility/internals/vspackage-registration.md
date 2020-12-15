@@ -1,5 +1,7 @@
 ---
 title: VSPackage-Registrierung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die VSPackage-Registrierung, bei der Pakete Visual Studio anweisen, dass Sie installiert sind und durch das Schreiben von Informationen in die Registrierung geladen werden sollten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012125"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487984"
 ---
 # <a name="vspackage-registration"></a>VSPackage-Registrierung
 VSPackages müssen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] darauf hinweisen, dass Sie installiert sind und geladen werden sollten. Dieser Vorgang wird durch Schreiben von Informationen in die Registrierung durchgeführt. Dies ist ein typischer Auftrag eines Installationsprogramms.
@@ -40,7 +42,7 @@ VSPackages müssen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 
 > [!NOTE]
 > Das regpkg-Tool ist nicht Verteil Bar und kann nicht verwendet werden, um ein VSPackage auf dem System eines Benutzers zu registrieren.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Gründe für die Selbstregistrierung von VSPackages beim Installations Zeitpunkt
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Warum VSPackages zum Zeitpunkt der Installation nicht Self-Register werden sollten
  Ihre VSPackage-Installationsprogramme sollten sich nicht auf die Selbstregistrierung verlassen. Auf den ersten Blick scheint das Beibehalten der Registrierungs Werte eines VSPackages nur im VSPackage selbst eine gute Idee zu sein. Da Entwickler die für Ihre Routinearbeit und Tests verfügbaren Registrierungs Werte benötigen, ist es sinnvoll, die Beibehaltung einer separaten Kopie der Registrierungsdaten im Installationsprogramm zu vermeiden. Das Installationsprogramm kann sich auf das VSPackage selbst verlassen, um Registrierungs Werte zu schreiben.
 
  Obwohl die Selbstregistrierung in der Theorie eine Reihe von Fehlern aufweist, die Sie für die VSPackage-Installation ungeeignet machen:
@@ -55,6 +57,6 @@ VSPackages müssen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 
 
 - Dem selbst Registrierungscode kann der Zugriff auf Netzwerkressourcen, z. b. Typbibliotheken, verweigert werden, wenn eine Komponente sowohl als "aus der Quelle ausführen" angegeben als auch in der Tabelle "selfreg" aufgeführt ist. Dies kann dazu führen, dass die Installation der Komponente während einer administrativen Installation fehlschlägt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Verwaltete Paket Registrierung](/previous-versions/bb166783(v=vs.100))

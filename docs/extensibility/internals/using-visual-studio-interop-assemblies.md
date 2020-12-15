@@ -1,5 +1,7 @@
 ---
 title: Verwenden von Visual Studio-Interop-Assemblys | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio-Interopassemblys verwalteten Anwendungen den Zugriff auf die COM-Schnittstellen gestatten, die Visual Studio-Erweiterbarkeit bieten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c52dd2cf8c76cdef9be5080950d5f1b9e621e70
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704137"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487659"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Verwenden von Visual Studio-Interop-Assemblys
 Visual Studio Interop-Assemblys ermöglichen verwalteten Anwendungen den Zugriff auf die COM-Schnittstellen, die Visual Studio-Erweiterbarkeit bereitstellen. Es gibt einige Unterschiede zwischen geraden com-Schnittstellen und ihren Interop-Versionen. HRESULTs werden z. b. in der Regel als int-Werte dargestellt und müssen auf die gleiche Weise wie Ausnahmen behandelt werden, und Parameter (insbesondere out-Parameter) werden anders behandelt.

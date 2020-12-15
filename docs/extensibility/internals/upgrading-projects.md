@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren von Projekten | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Schnittstellen, die das Visual Studio SDK zum Implementieren der upgradeunterstützung in Ihren Projekten bereitstellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704268"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487581"
 ---
 # <a name="upgrading-projects"></a>Aktualisieren von Projekten
 
@@ -35,7 +37,7 @@ Um ein Upgrade zu unterstützen, muss die Implementierung des Projekt Systems ei
 
 Wenn eine Projekt Mappe, die in einer früheren Version von Visual Studio erstellt wurde, in einer neueren Version geöffnet wird, überprüft die IDE die Projektmappendatei, um zu ermitteln, ob Sie aktualisiert werden muss. Wenn ein Upgrade erforderlich ist, wird der **Upgrade-Assistent** automatisch gestartet, um den Benutzer durch den Upgradeprozess zu durchlaufen.
 
-Wenn eine Projekt Mappe aktualisiert werden muss, fragt Sie jede projektfactory nach ihrer Upgradestrategie ab. Die Strategie bestimmt, ob die projektfactory Kopiesicherung oder SxS-Sicherung unterstützt. Die Informationen werden an den **Upgrade-Assistenten**gesendet, der die für die Sicherung erforderlichen Informationen sammelt und dem Benutzer die entsprechenden Optionen präsentiert.
+Wenn eine Projekt Mappe aktualisiert werden muss, fragt Sie jede projektfactory nach ihrer Upgradestrategie ab. Die Strategie bestimmt, ob die projektfactory Kopiesicherung oder SxS-Sicherung unterstützt. Die Informationen werden an den **Upgrade-Assistenten** gesendet, der die für die Sicherung erforderlichen Informationen sammelt und dem Benutzer die entsprechenden Optionen präsentiert.
 
 ### <a name="multi-project-solutions"></a>Projektmappen mit mehreren Projekten
 
@@ -60,7 +62,7 @@ Weitere Informationen zum Sichern und Upgraden von Projekten finden Sie in den K
 
 ## <a name="upgrading-custom-projects"></a><a name="upgrading-custom-projects"></a> Aktualisieren von benutzerdefinierten Projekten
 
-Wenn Sie die in der Projektdatei dauerhaft gespeicherten Informationen zwischen verschiedenen Visual Studio-Versionen Ihres Produkts ändern, müssen Sie das Durchführen eines Upgrades der Projektdatei von der alten auf die neue Version unterstützen. Implementieren Sie die-Schnittstelle, um ein Upgrade zu unterstützen, das die Teilnahme am **Visual Studio-Konvertierungs-Assistenten**ermöglicht <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> . Diese Schnittstelle stellt das einzige verfügbare Verfahren zum Durchführen von Kopierupgrades dar. Das Upgrade des Projekts erfolgt im Rahmen des Öffnens der Projektmappe. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>-Schnittstelle wird von der Projektfactory implementiert oder sollte zumindest über diese verfügbar sein.
+Wenn Sie die in der Projektdatei dauerhaft gespeicherten Informationen zwischen verschiedenen Visual Studio-Versionen Ihres Produkts ändern, müssen Sie das Durchführen eines Upgrades der Projektdatei von der alten auf die neue Version unterstützen. Implementieren Sie die-Schnittstelle, um ein Upgrade zu unterstützen, das die Teilnahme am **Visual Studio-Konvertierungs-Assistenten** ermöglicht <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> . Diese Schnittstelle stellt das einzige verfügbare Verfahren zum Durchführen von Kopierupgrades dar. Das Upgrade des Projekts erfolgt im Rahmen des Öffnens der Projektmappe. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>-Schnittstelle wird von der Projektfactory implementiert oder sollte zumindest über diese verfügbar sein.
 
 Der alte Mechanismus, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>-Schnittstelle verwendet, wird noch unterstützt, doch wird dabei das abweichende Konzept verfolgt, das Upgrade des Projektsystems beim Öffnen des Projekts vorzunehmen. Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Schnittstelle wird daher von der Visual Studio-Umgebung aufgerufen, auch wenn die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Schnittstelle aufgerufen oder implementiert wird. Aufgrund dieses Ansatzes können Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> verwenden, um die Kopie zu implementieren und nur Teile des Upgrades zu projizieren, wobei der Rest der Arbeit für die Ausführung an Ort und Stelle (also möglichst dem neuen Speicherort) durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>-Schnittstelle delegiert wird.
 
@@ -98,7 +100,7 @@ Im Rahmen von Projektupgrades stellen sich die folgenden Szenarien dar:
 
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade-Implementierung
 
-Wenn das Projekt System <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> nur implementiert, kann es nicht an dem **Visual Studio-Konvertierungs-Assistenten**teilnehmen. Aber selbst wenn Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>-Schnittstelle implementieren, können Sie das Dateiupgrade trotzdem an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>-Implementierung delegieren.
+Wenn das Projekt System <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> nur implementiert, kann es nicht an dem **Visual Studio-Konvertierungs-Assistenten** teilnehmen. Aber selbst wenn Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>-Schnittstelle implementieren, können Sie das Dateiupgrade trotzdem an die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>-Implementierung delegieren.
 
 #### <a name="to-implement-ivsprojectupgrade"></a>So implementieren Sie IVsProjectUpgrade
 

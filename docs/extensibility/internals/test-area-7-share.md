@@ -1,5 +1,7 @@
 ---
 title: 'Test Bereich 7: Freigeben | Microsoft-Dokumentation'
+description: Dieser Quell Code Verwaltungs Testbereich deckt das Freigeben von Elementen Zwischenstand Orten mithilfe des Befehls "freigeben" für das Visual Studio-Quellcodeverwaltungs-Plug-in ab.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd4c48e94015d95f5e56d465cdbf98562108d3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02593af854a9e68e7f4a6cc66f54452d3c3d3f94
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704408"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487607"
 ---
 # <a name="test-area-7-share"></a>Testbereich 7: Freigeben
 In diesem Testbereich wird das Freigeben von Elementen Zwischenstand Orten über den **Freigabe** Befehl behandelt.
@@ -36,7 +38,7 @@ In diesem Testbereich wird das Freigeben von Elementen Zwischenstand Orten über
 ## <a name="command-menu-access"></a>Befehlsmenü Zugriff
  Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Menü Pfade der Entwicklungsumgebung werden in den Testfällen verwendet.
 
- Freigabe: Freigabe der **Datei** -> **Quell**Code Verwaltung -> **Share**.
+ Freigabe: Freigabe der **Datei** -> **Quell** Code Verwaltung -> .
 
 ## <a name="expected-behavior"></a>Erwartetes Verhalten
 
@@ -51,12 +53,12 @@ In diesem Testbereich wird das Freigeben von Elementen Zwischenstand Orten über
 
 |Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|
 |------------|----------------|--------------------------------|
-|Freigeben einer Datei aus einem geladenen Projekt unter Quell Code Verwaltung in ein anderes geladenes Projekt|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie der Projekt Mappe ein zweites Projekt hinzu.<br />3. Erstellen Sie eine Datei im zweiten Projekt mit einem Namen, der sich nicht im ersten Projekt befindet.<br />4. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />5. Wählen Sie das erste Projekt aus.<br />6. Öffnen Sie das Dialogfeld **Freigabe** (**Datei**  ->  **Source Control**  ->  **Freigabe-Freigabe Freigabe**).<br />7. Geben Sie die Datei aus dem zweiten Projekt für das erste Projekt frei.<br />8. Wenn Sie dazu aufgefordert werden **, überprüfen Sie** .|Häufiges erwartetes Verhalten.|
-|Freigeben einer Datei von einem Projekt in ein anderes|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie Sie der Quell Code Verwaltung hinzu.<br />3. Schließen Sie die Projekt Mappe.<br />4. Erstellen Sie ein zweites Projekt (neue Projekt Mappe).<br />5. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />6. Wählen Sie das Projekt aus.<br />7. Öffnen Sie das Dialogfeld " **Freigeben** " (**Datei**  ->  **Source Control**  ->  **Freigabe-Freigabe**).<br />8. Geben Sie eine Datei aus dem zuvor hinzugefügten Projekt dem geöffneten Projekt frei.<br />9. Wenn Sie dazu aufgefordert werden **, überprüfen**|Häufiges erwartetes Verhalten.|
-|Freigeben einer Datei, die nicht Teil des Projekts ist, aus der Quell Code Verwaltung in das zurzeit geladene Projekt|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie der Quell Code Verwaltung eine Datei hinzu, die nicht Teil des Projekts oder der Projekt Mappe ist.<br />4. Wählen Sie das Projekt aus, und öffnen Sie das Dialogfeld **Freigeben** (**Datei**  ->  **Source Control**  ->  **Freigabe-Freigabe**).<br />5. Wählen Sie eine Datei im Dialogfeld **Freigeben** aus, die im aktuellen Projekt oder in der aktuellen Projekt Mappe nicht vorhanden ist, und geben Sie Sie frei.<br />6. Wenn Sie dazu aufgefordert werden **, überprüfen**|Der Quell Code Verwaltungs Speicher hat einen Get-Vorgang durchgeführt, sodass sich die Datei jetzt am lokalen Speicherort des Projekts befindet.|
-|Freigeben von Dateien innerhalb desselben Projekts in einem anderen Ordner|1. wählen **Sie unter Extras**Optionen Quell Code Verwaltung die Option **automatisch Auschecken aus**  ->  **Options**  ->  **Source Control**.<br />2. Erstellen Sie ein neues Projekt, und fügen Sie es der Quell Code Verwaltung hinzu.<br />3. Fügen Sie dem Projekt einen Ordner hinzu.<br />4. Fügen Sie dem Ordner eine Datei hinzu, und checken Sie den Ordner ein.<br />5. Wählen Sie den Ordner aus.<br />6. Öffnen Sie das Dialogfeld **Freigabe** (**Datei**  ->  **Source Control**  ->  **Freigabe-Freigabe Freigabe**).<br />7. Geben Sie die Datei für den ausgewählten Ordner frei.|Häufiges erwartetes Verhalten.<br /><br /> Der Ordner muss mit einer darin ausgecheckten Datei eingeglichen werden, bevor er für die Freigabe verwendet werden kann.|
-|Freigeben eines Ordners im geladenen Projekt – rekursiv|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Wählen Sie das Projekt aus.<br />4. Öffnen Sie das Dialogfeld " **Freigeben** " (**Datei**  ->  **Source Control**  ->  **Freigabe-Freigabe**).<br />5. Wählen Sie einen Ordner aus.<br />6. Geben Sie den Ordner rekursiv in das Projekt ein.|Häufiges erwartetes Verhalten.|
-|Freigeben mehrerer Dateien von einem Projekt in ein anderes|1. Erstellen Sie ein neues Projekt mit mehreren darin erstellten Dateien.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Schließen Sie die Projekt Mappe.<br />4. Erstellen Sie ein neues Projekt in einer neuen Projekt Mappe.<br />5. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />6. Wählen Sie das Projekt aus.<br />7. Öffnen Sie das Dialogfeld " **Freigeben** " (**Datei**  ->  **Source Control**  ->  **Freigabe-Freigabe**).<br />8. Freigeben mehrerer Dateien aus dem zuvor erstellten Projekt für das aktuell geöffnete Projekt.|Häufiges erwartetes Verhalten.|
+|Freigeben einer Datei aus einem geladenen Projekt unter Quell Code Verwaltung in ein anderes geladenes Projekt|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie der Projekt Mappe ein zweites Projekt hinzu.<br />3. Erstellen Sie eine Datei im zweiten Projekt mit einem Namen, der sich nicht im ersten Projekt befindet.<br />4. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />5. Wählen Sie das erste Projekt aus.<br />6. Öffnen Sie das Dialogfeld **Freigabe** (**Datei**  ->    ->  **Freigabe-Freigabe Freigabe**).<br />7. Geben Sie die Datei aus dem zweiten Projekt für das erste Projekt frei.<br />8. Wenn Sie dazu aufgefordert werden **, überprüfen Sie** .|Häufiges erwartetes Verhalten.|
+|Freigeben einer Datei von einem Projekt in ein anderes|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie Sie der Quell Code Verwaltung hinzu.<br />3. Schließen Sie die Projekt Mappe.<br />4. Erstellen Sie ein zweites Projekt (neue Projekt Mappe).<br />5. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />6. Wählen Sie das Projekt aus.<br />7. Öffnen Sie das Dialogfeld " **Freigeben** " (**Datei**  ->    ->  **Freigabe-Freigabe**).<br />8. Geben Sie eine Datei aus dem zuvor hinzugefügten Projekt dem geöffneten Projekt frei.<br />9. Wenn Sie dazu aufgefordert werden **, überprüfen**|Häufiges erwartetes Verhalten.|
+|Freigeben einer Datei, die nicht Teil des Projekts ist, aus der Quell Code Verwaltung in das zurzeit geladene Projekt|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie der Quell Code Verwaltung eine Datei hinzu, die nicht Teil des Projekts oder der Projekt Mappe ist.<br />4. Wählen Sie das Projekt aus, und öffnen Sie das Dialogfeld **Freigeben** (**Datei**  ->    ->  **Freigabe-Freigabe**).<br />5. Wählen Sie eine Datei im Dialogfeld **Freigeben** aus, die im aktuellen Projekt oder in der aktuellen Projekt Mappe nicht vorhanden ist, und geben Sie Sie frei.<br />6. Wenn Sie dazu aufgefordert werden **, überprüfen**|Der Quell Code Verwaltungs Speicher hat einen Get-Vorgang durchgeführt, sodass sich die Datei jetzt am lokalen Speicherort des Projekts befindet.|
+|Freigeben von Dateien innerhalb desselben Projekts in einem anderen Ordner|1. wählen **Sie unter Extras** Optionen Quell Code Verwaltung die Option **automatisch Auschecken aus**  ->    ->  .<br />2. Erstellen Sie ein neues Projekt, und fügen Sie es der Quell Code Verwaltung hinzu.<br />3. Fügen Sie dem Projekt einen Ordner hinzu.<br />4. Fügen Sie dem Ordner eine Datei hinzu, und checken Sie den Ordner ein.<br />5. Wählen Sie den Ordner aus.<br />6. Öffnen Sie das Dialogfeld **Freigabe** (**Datei**  ->    ->  **Freigabe-Freigabe Freigabe**).<br />7. Geben Sie die Datei für den ausgewählten Ordner frei.|Häufiges erwartetes Verhalten.<br /><br /> Der Ordner muss mit einer darin ausgecheckten Datei eingeglichen werden, bevor er für die Freigabe verwendet werden kann.|
+|Freigeben eines Ordners im geladenen Projekt – rekursiv|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Wählen Sie das Projekt aus.<br />4. Öffnen Sie das Dialogfeld " **Freigeben** " (**Datei**  ->    ->  **Freigabe-Freigabe**).<br />5. Wählen Sie einen Ordner aus.<br />6. Geben Sie den Ordner rekursiv in das Projekt ein.|Häufiges erwartetes Verhalten.|
+|Freigeben mehrerer Dateien von einem Projekt in ein anderes|1. Erstellen Sie ein neues Projekt mit mehreren darin erstellten Dateien.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Schließen Sie die Projekt Mappe.<br />4. Erstellen Sie ein neues Projekt in einer neuen Projekt Mappe.<br />5. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />6. Wählen Sie das Projekt aus.<br />7. Öffnen Sie das Dialogfeld " **Freigeben** " (**Datei**  ->    ->  **Freigabe-Freigabe**).<br />8. Freigeben mehrerer Dateien aus dem zuvor erstellten Projekt für das aktuell geöffnete Projekt.|Häufiges erwartetes Verhalten.|
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

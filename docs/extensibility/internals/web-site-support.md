@@ -1,5 +1,7 @@
 ---
 title: Website Unterstützung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Website Projektsysteme, die durch Hinzufügen von Vorlagen und Registrierungs Attributen zu einem vorhandenen Projekt System erstellt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703444"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487841"
 ---
 # <a name="web-site-support"></a>Websiteunterstützung
 Bei einem Website Projekt System handelt es sich um ein Projekt System, das Webprojekte erstellt. Webprojekte erstellen wiederum Webanwendungen. Ein Website Projekt generiert eine ausführbare Datei für jede Webseite, die über zugeordneten Code verfügt. Aus den Quell Code Dateien im Ordner/App_Code werden zusätzliche ausführbare Dateien generiert.
@@ -25,7 +27,7 @@ Bei einem Website Projekt System handelt es sich um ein Projekt System, das Webp
  Der zum Kompilieren von Webseiten verwendete sprach Compiler muss bei registriert werden [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] . Sie können das- [ \<compiler> Element](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element) in einer Web.config Datei verwenden, um den Compiler zu registrieren, wie im folgenden Beispiel gezeigt:
 
 ```
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
 ```
 
 ## <a name="in-this-section"></a>In diesem Abschnitt

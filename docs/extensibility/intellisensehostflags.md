@@ -1,5 +1,7 @@
 ---
 title: Intellisenabhostflags | Microsoft-Dokumentation
+description: Die intellisenabhostflags-Enumeration gibt IntelliSense-hostflags an. In diesem Artikel werden die Enumerationswerte beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710274"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487503"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Gibt IntelliSense-Hostflags an.
@@ -38,7 +40,7 @@ enum IntellisenseHostFlags
 
 ### <a name="parameters"></a>Parameter
 
-|Member|BESCHREIBUNG|
+|Member|Beschreibung|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|Der Kontext Puffer ist schreibgeschützt.|
 |`IHF_NOSEPARATESUBJECT`|Kein Betrefftext. Der Kontext Puffer enthält IntelliSense-Target (impliziert `!IHF_READONLYCONTEXT` ).|

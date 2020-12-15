@@ -1,5 +1,7 @@
 ---
 title: Windows Installer Grundlagen | Microsoft-Dokumentation
+description: Informieren Sie sich über Windows Installer für die Installation eines VSPackages, einschließlich der Organisation der VSPackage-Funktionen in Windows Installer Komponenten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703419"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487776"
 ---
 # <a name="windows-installer-basics"></a>Grundlagen zu Windows Installer
 Der Windows Installer installiert und deinstalliert Anwendungen oder Softwareprodukte auf dem Computer eines Benutzers und führt diese Aufgaben in Einheiten aus, die als Windows Installer Komponenten bezeichnet werden (manchmal als "wics" oder "nur Komponenten" bezeichnet). Eine GUID identifiziert jedes WIC, bei dem es sich um die grundlegende Einheit für die Installation und die Verweis Zählung für Setups mit Windows Installer handelt.
@@ -55,13 +57,13 @@ Der Windows Installer installiert und deinstalliert Anwendungen oder Softwarepro
 > [!NOTE]
 > Die Erzwingung von Windows Installer Regeln tritt nur auf, wenn Sie eine Überprüfung der MSI-Datei ausführen. Dennoch werden Sie dazu gewarnt, diese Regeln als bewährte Methoden zu behandeln. Weitere Informationen finden Sie unter [Validieren einer Installations Datenbank](/windows/desktop/Msi/validating-an-installation-database) und [Paket](/windows/desktop/Msi/package-validation)Überprüfung.
 
-#### <a name="installer-enforced-rules"></a>Vom Installer erzwungene Regeln
+#### <a name="installer-enforced-rules"></a>Installer-Enforced Regeln
 
 - Alle Dateien in einer bestimmten Komponente müssen im gleichen Verzeichnis installiert sein. Im Gegensatz dazu müssen Dateien, die in separaten Ordnern installiert werden, zu separaten Komponenten gehören.
 
 - Es darf nur ein Schlüssel Pfad pro Komponente vorhanden sein. Der Schlüssel Pfad ist einfach eine Datei oder ein Registrierungsschlüssel, der die gesamte Komponente darstellt.
 
-#### <a name="component-provider-responsibilities"></a>Zuständigkeiten von Komponenten Anbietern
+#### <a name="component-provider-responsibilities"></a>Zuständigkeiten der Component-Provider
 
 - Alle zwei Ressourcen, die möglicherweise separat in nachfolgenden Versionen ausgeliefert werden, sollten in separaten Komponenten vorhanden sein. Ressourcen sollten nur in derselben Komponente gruppiert werden, wenn Sie sicher sind, dass diese Ressourcen nie separat ausgeliefert werden. Tatsächlich wird empfohlen, dass alle primären Ressourcen (z. b. DLLs) immer in separaten wics vorhanden sind. Weitere Informationen finden Sie unter [Definieren von Installerkomponenten](/windows/desktop/Msi/defining-installer-components).
 

@@ -1,5 +1,7 @@
 ---
-title: Vsct-compilerbefehlszeilenflags | Microsoft-Dokumentation
+title: VSCT-Compiler Command-Line Flags | Microsoft-Dokumentation
+description: Der Visual Studio-Befehls Tabellen Compiler bietet Befehlszeilenoptionen, um eine erfolgreiche Kompilierung von vsct-Dateien sicherzustellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703959"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488010"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT-Compiler-Befehlszeilenflags
 Der VSCT-Compiler (Visual Studio Command Table) stellt Befehls Zeilenschalter bereit, um eine erfolgreiche Kompilierung von vsct-Dateien sicherzustellen.
@@ -28,7 +30,7 @@ Der VSCT-Compiler (Visual Studio Command Table) stellt Befehls Zeilenschalter be
 vsct /?
 ```
 
- Dadurch wird Folgendes zurückgegeben:
+ Gibt Folgendes zurück:
 
 ```
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000
@@ -59,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-d|Geben Sie zusätzliche definierte Symbole an.|
 |-I|Geben Sie die zusätzlichen Include-Pfade an, die beim Auflösen von Datei verweisen verwendet werden sollen.|
 |-l|Geben Sie den <xref:System.Globalization.CultureInfo> Kultur Namen an, z. b. "en-US".|
-|-E|Gibt c#-Objekte im angegebenen Namespace für Befehls Elemente aus, gefolgt von [C&#124;H&#124;N]:*filename*WHERE C = c#, H = C++ Header, N = Namespace. Der Namespace ist für c# erforderlich.|
+|-E|Gibt c#-Objekte im angegebenen Namespace für Befehls Elemente aus, gefolgt von [C&#124;H&#124;N]:*filename* WHERE C = c#, H = C++ Header, N = Namespace. Der Namespace ist für c# erforderlich.|
 |-v|Ausführliche Ausgabe.|
 
  Der Schalter-L weist den Compiler an, eine Gruppe von Zeichen folgen auszuwählen, um die binäre CTO-Datei zu entwickeln, die dem angegebenen <xref:System.Globalization.CultureInfo> Kultur Namen entspricht. Der angegebene Kultur Name sollte mit dem Language-Attribut eines oder mehrerer [String-Elemente](../../extensibility/strings-element.md) in der vsct-Datei identisch sein. Wenn ein Strings-Element über kein Language-Attribut verfügt, wird es vom enthaltenden [commandtable-Element](../../extensibility/commandtable-element.md)geerbt.
@@ -74,7 +76,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  Der VSCT-Compiler kann auch eine zuvor erstellter Binärdatei dekompilieren. Stellen Sie hierzu eine Binärdatei für das bereit \<infile> .   Wenn die Binärdatei vom VSCT-Compiler erstellt wurde, werden die zugehörigen Symbole bereits eingebettet, und es wird eine Ausgabe mit den symbolischen Namen in einem \<Symbols> Abschnitt der Ausgabe erzeugt. Wenn die Binärdatei vom CTC-Compiler erstellt wurde, enthält die Ausgabe die tatsächlichen GUIDs und IDs. Wenn sich die von den aktuellen Versionen von Ctc.exe erstellte *. ctsym-Datei im selben Ordner wie die binäre Eingabedatei befindet, werden die Symbole aus dieser Datei geladen und für die Ausgabe verwendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [VSCT-Dateien (Visual Studio Command Table)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)
 - [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

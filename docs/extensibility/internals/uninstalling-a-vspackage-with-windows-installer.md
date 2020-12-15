@@ -1,5 +1,7 @@
 ---
 title: Deinstallieren eines VSPackage mit Windows Installer | Microsoft-Dokumentation
+description: Windows Installer können das VSPackage deinstallieren, indem Sie die Installation umkehren. Erfahren Sie, wie Sie benutzerdefinierte Aktionen in Ihrem Windows Installer Paket behandeln können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cdf9023512f4225e2a8edcadcf589cb61547e24
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f78f27a3b2b2607f04a61352b543774f8b59e88c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011813"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488153"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Deinstallieren eines VSPackage mit Windows Installer
 Windows Installer können das VSPackage zum größten Teil deinstallieren, indem Sie einfach "rückgängig machen", was für die Installation des VSPackage geschehen ist. Die benutzerdefinierten Aktionen, die in [Befehlen erläutert werden, die nach der Installation ausgeführt werden müssen,](../../extensibility/internals/commands-that-must-be-run-after-installation.md) müssen auch nach der Deinstallation ausgeführt werden. Da die Aufrufe von devenv.exe direkt vor der InstallFinalize Standard-Aktion für die Installation und Deinstallation auftreten, dienen die Tabelleneinträge CustomAction und InstallExecuteSequence beiden Fällen.
@@ -38,6 +40,6 @@ Windows Installer können das VSPackage zum größten Teil deinstallieren, indem
 > [!NOTE]
 > `Installed` Gibt an, dass die-Windows Installer Eigenschaft festgelegt wird, wenn Sie erkennt, dass das VSPackage bereits auf dem System installiert ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Windows Installer](/previous-versions/ee231230(v=vs.100))
 - [Ermitteln von Systemanforderungen](../../extensibility/internals/detecting-system-requirements.md)

@@ -1,5 +1,7 @@
 ---
 title: VSIX-Farb Compiler | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Visual Studio-Erweiterungs Farb Compiler-Tool, bei dem es sich um eine Konsolenanwendung handelt, die Farben in Visual Studio-Designs in eine pkgdef-Datei umschließt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e50cd1f1c8c3ff7f86cd00e4b384f548c7ec9d21
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536096"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487997"
 ---
 # <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
 Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, die eine XML-Datei verwendet, die Farben für vorhandene Visual Studio-Designs darstellt, und Sie in eine pkgdef-Datei konvertiert, sodass diese Farben in Visual Studio verwendet werden können. Da es einfach ist, Unterschiede zwischen XML-Dateien zu vergleichen, ist dieses Tool nützlich, um benutzerdefinierte Farben in der Quell Code Verwaltung zu verwalten. Sie kann auch in Buildumgebungen eingebunden werden, sodass die Ausgabe des Builds eine gültige pkgdef-Datei ist.
@@ -105,7 +107,7 @@ Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, d
 
 |**Attribut**|**Definition**|
 |-|-|
-|type|Benötigten Der Typ der Farbe. Folgende Werte sind möglich:<br /><br /> *CT_INVALID:* Die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* Ein unformatierten ARGB-Wert.<br /><br /> *CT_COLORINDEX:* Verwenden Sie nicht.<br /><br /> *CT_SYSCOLOR:* Eine Windows-System Farbe aus syscolor.<br /><br /> *CT_VSCOLOR:* Eine Visual Studio-Farbe aus __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Die automatische Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* Verwenden Sie nicht.<br /><br /> *CT_TRACK_BACKGROUND:* Verwenden Sie nicht.|
+|Typ|Benötigten Der Typ der Farbe. Folgende Werte sind möglich:<br /><br /> *CT_INVALID:* Die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* Ein unformatierten ARGB-Wert.<br /><br /> *CT_COLORINDEX:* Verwenden Sie nicht.<br /><br /> *CT_SYSCOLOR:* Eine Windows-System Farbe aus syscolor.<br /><br /> *CT_VSCOLOR:* Eine Visual Studio-Farbe aus __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Die automatische Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* Verwenden Sie nicht.<br /><br /> *CT_TRACK_BACKGROUND:* Verwenden Sie nicht.|
 |`Source`|Benötigten Der Wert der in Hexadezimal Darstellung dargestellten Farbe.|
 
  Alle Werte, die von der __VSCOLORTYPE-Enumeration unterstützt werden, werden vom Schema im Type-Attribut unterstützt. Es wird jedoch empfohlen, nur CT_RAW und CT_SYSCOLOR zu verwenden.

@@ -1,5 +1,7 @@
 ---
 title: VSPackage-Setup Szenarien | Microsoft-Dokumentation
+description: Erfahren Sie mehr über bewährte Methoden für die Unterstützung paralleler Installationen von Visual Studio mit freigegebenen oder parallelen Installationen des VSPackages.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012112"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487971"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage-Setupszenarien
 
@@ -76,7 +78,7 @@ In diesem Fall ist das VSPackage ein verwaltetes VSPackage, das im globalen Asse
 
 Weitere Informationen zur Bereitstellung von parallelen Assemblys finden Sie unter [vereinfachen der Bereitstellung und lösen der DLL-Hell mit dem .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Unterstützen mehrerer Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
