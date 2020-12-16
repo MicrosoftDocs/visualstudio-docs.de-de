@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren von Multifunktionsleisten-Anpassungen zu .NET Framework 4,5 migriert
+description: Erfahren Sie, dass Sie Änderungen am Projekt Code vornehmen müssen, wenn das Ziel Framework in den .NET Framework 4 oder höher geändert wird.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a831bced793f13394a89d278a6be1cda959c775a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298600"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527942"
 ---
 # <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Aktualisieren von Multifunktionsleisten-Anpassungen zu .NET Framework 4,5 migriert
 

@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Options Feldern'
+description: Erfahren Sie, wie Sie Options Felder in einer Anpassung auf Dokument Ebene für Microsoft Word verwenden können, um Benutzern die Auswahl von Diagramm Stilen für das Dokument zu gestatten.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584294"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528389"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Options Feldern
   Diese Vorgehensweise zeigt Ihnen, wie Sie Optionsfelder in einer Anpassung auf Dokumentebene für Microsoft Office Word verwenden, um Benutzern die Möglichkeit zu geben, Diagrammformatvorlagen im Dokument auszuwählen.
@@ -50,9 +52,9 @@ ms.locfileid: "91584294"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **meine Diagramm Optionen**. Wählen Sie im Assistenten **Neues Dokument erstellen**aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **meine Diagramm Optionen**. Wählen Sie im Assistenten **Neues Dokument erstellen** aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer**das Projekt " **meine Diagramm Optionen** " hinzu.
+     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer** das Projekt " **meine Diagramm Optionen** " hinzu.
 
 ## <a name="add-a-chart-to-the-document"></a>Hinzufügen eines Diagramms zum Dokument
 
@@ -79,17 +81,17 @@ ms.locfileid: "91584294"
 
 ### <a name="to-add-a-user-control"></a>So fügen Sie ein Benutzersteuerelement hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt **meine Diagramm Optionen** aus.
+1. Wählen Sie in **Projektmappen-Explorer** das Projekt **meine Diagramm Optionen** aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Benutzer Steuer**Element, benennen Sie das Steuerelement **ChartOptions,** und klicken Sie auf **Hinzufügen**.
+3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Benutzer Steuer** Element, benennen Sie das Steuerelement **ChartOptions,** und klicken Sie auf **Hinzufügen**.
 
 ### <a name="to-add-windows-form-controls-to-the-user-control"></a>So fügen Sie dem Benutzersteuerelement Windows Forms-Steuerelemente hinzu
 
-1. Wenn das Benutzer Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie in **Projektmappen-Explorer**auf **ChartOptions** .
+1. Wenn das Benutzer Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie in **Projektmappen-Explorer** auf **ChartOptions** .
 
-2. Ziehen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**das **Radio Button** erste Optionsfeld-Steuerelement auf das Benutzer Steuerelement, und ändern Sie die folgenden Eigenschaften.
+2. Ziehen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** das  erste Optionsfeld-Steuerelement auf das Benutzer Steuerelement, und ändern Sie die folgenden Eigenschaften.
 
     |Eigenschaft|Wert|
     |--------------|-----------|
@@ -100,7 +102,7 @@ ms.locfileid: "91584294"
 
     |Eigenschaft|Wert|
     |--------------|-----------|
-    |**Name**|**Barchart**|
+    |**Name**|**barChart**|
     |**Text**|**Balkendiagramm**|
 
 4. Fügen Sie dem Benutzer Steuerelement **ein drittes Options** Feld hinzu, und ändern Sie die folgenden Eigenschaften.
@@ -133,7 +135,7 @@ ms.locfileid: "91584294"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>So erstellen Sie ein Ereignis und eine Eigenschaft auf einem Benutzersteuerelement
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Benutzer Steuerelement, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Benutzer Steuerelement, und klicken Sie dann auf **Code anzeigen**.
 
 2. Fügen Sie Code hinzu, um ein `SelectionChanged`-Ereignis und die `Selection`-Eigenschaft der `ChartOptions`-Klasse zu erstellen.
 
@@ -167,15 +169,15 @@ ms.locfileid: "91584294"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]
 
 ## <a name="add-the-user-control-to-the-document"></a>Hinzufügen des Benutzer Steuer Elements zum Dokument
- Wenn Sie die Projekt Mappe erstellen, wird das neue Benutzer Steuerelement automatisch der **Toolbox**hinzugefügt. Anschließend können Sie das Steuerelement aus der **Toolbox** in das Dokument ziehen.
+ Wenn Sie die Projekt Mappe erstellen, wird das neue Benutzer Steuerelement automatisch der **Toolbox** hinzugefügt. Anschließend können Sie das Steuerelement aus der **Toolbox** in das Dokument ziehen.
 
 ### <a name="to-add-the-user-control-your-document"></a>So fügen Sie dem Dokument das Benutzersteuerelement hinzu
 
-1. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
+1. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-     Das Benutzer Steuerelement **ChartOptions** wird der **Toolbox**hinzugefügt.
+     Das Benutzer Steuerelement **ChartOptions** wird der **Toolbox** hinzugefügt.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **ThisDocument. vb** oder **ThisDocument.cs**, und klicken Sie dann auf **Designer anzeigen**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisDocument. vb** oder **ThisDocument.cs**, und klicken Sie dann auf **Designer anzeigen**.
 
 3. Ziehen `ChartOptions` Sie das Steuerelement aus der **Toolbox** in das Dokument.
 
@@ -186,7 +188,7 @@ ms.locfileid: "91584294"
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>So ändern Sie den Diagrammtyp, der im Dokument angezeigt wird
 
-1. Fügen Sie der `ThisDocument`-Klasse den folgenden Ereignishandler hinzu.
+1. Fügen Sie der Klasse `ThisDocument` den folgenden Ereignishandler hinzu.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#15)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#15)]

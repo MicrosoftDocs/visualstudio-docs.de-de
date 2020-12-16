@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erfassen von Daten mit einem Windows Form'
+description: Öffnen Sie ein Windows Form aus einer Anpassung auf Dokument Ebene für Microsoft Excel, sammeln Sie Informationen vom Benutzer, und schreiben Sie diese Informationen in eine Arbeitsblatt Zelle.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840920"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527171"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Exemplarische Vorgehensweise: Erfassen von Daten mit einem Windows Form
   In dieser exemplarischen Vorgehensweise wird das Öffnen eines Windows Form aus einer Anpassung auf Dokumentebene für Microsoft Office Excel, das Abfragen von Benutzerinformationen und das Schreiben dieser Informationen in eine Zelle des Arbeitsblatts beschrieben.
@@ -39,7 +41,7 @@ ms.locfileid: "90840920"
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
  Zunächst müssen Sie ein Excel-Arbeitsmappenprojekt erstellen.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
@@ -54,7 +56,7 @@ ms.locfileid: "90840920"
 
 1. Wählen Sie in **die Zelle** A1 `Sheet1`aus.
 
-2. Geben Sie im Feld **Name** die Zeichenfolge **formInput**ein.
+2. Geben Sie im Feld **Name** die Zeichenfolge **formInput** ein.
 
      Das Feld **Name** befindet sich links neben der Bearbeitungsleiste, genau über der Spalte **A** des Arbeitsblatts.
 
@@ -67,7 +69,7 @@ ms.locfileid: "90840920"
 
 ### <a name="to-add-a-windows-form"></a>So fügen Sie ein Windows Form hinzu
 
-1. Wählen Sie im **Projektmappen-Explorer** das Projekt **WinFormInput**aus.
+1. Wählen Sie im **Projektmappen-Explorer** das Projekt **WinFormInput** aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Windows Form hinzufügen**.
 
@@ -96,7 +98,7 @@ ms.locfileid: "90840920"
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]
 
-3. Erstellen Sie eine Methode mit dem Namen `WriteStringToCell` , die Text in einen benannten Bereich schreibt. Diese Methode wird vom Formular aufgerufen, und die Benutzereingabe wird an das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement `formInput`in Zelle **A1**übergeben.
+3. Erstellen Sie eine Methode mit dem Namen `WriteStringToCell` , die Text in einen benannten Bereich schreibt. Diese Methode wird vom Formular aufgerufen, und die Benutzereingabe wird an das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement `formInput`in Zelle **A1** übergeben.
 
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]

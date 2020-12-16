@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word'
+description: Erstellen Sie ein Add-in auf Anwendungsebene für Microsoft Word. Diese Funktion ist für die Anwendung selbst verfügbar, unabhängig davon, welche Dokumente geöffnet sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840870"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527874"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word
   Diese exemplarischen Vorgehensweise bietet eine Einführung in das Erstellen eines VSTO-Add-Ins für Microsoft Office Word. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Dokumente geöffnet sind.
@@ -46,7 +48,7 @@ ms.locfileid: "90840870"
 
 - Microsoft Word
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
 
 ### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>So erstellen Sie ein neues Word VSTO-Add-In-Projekt in Visual Studio
 
@@ -54,13 +56,13 @@ ms.locfileid: "90840870"
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.
+3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic** und dann **Office/SharePoint**.
 
 4. Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.
 
 5. Wählen Sie in der Liste der Projektvorlagen ein Word VSTO-Add-In-Projekt aus.
 
-6. Geben Sie im Feld **Name den Namen** **FirstWordAddIn**ein.
+6. Geben Sie im Feld **Name den Namen** **FirstWordAddIn** ein.
 
 7. Klicken Sie auf **OK**.
 

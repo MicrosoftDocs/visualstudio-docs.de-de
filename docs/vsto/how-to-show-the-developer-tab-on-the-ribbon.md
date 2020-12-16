@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Anzeigen der Registerkarte "Entwickler" im Menüband'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um die Registerkarte "Entwickler" auf dem Menüband in einem Microsoft Word-Dokument Programm gesteuert anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545846"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528142"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Gewusst wie: Anzeigen der Registerkarte "Entwickler" im Menüband
   Wenn Sie auf dem Menüband einer Office-Anwendung auf die Registerkarte **Entwickler** zugreifen möchten, müssen Sie Sie so konfigurieren, dass diese Registerkarte angezeigt wird, da Sie standardmäßig nicht angezeigt wird Beispielsweise müssen Sie diese Registerkarte anzeigen, wenn Sie <xref:Microsoft.Office.Tools.Word.GroupContentControl> einer Anpassung auf Dokumentebene für Word hinzufügen möchten.

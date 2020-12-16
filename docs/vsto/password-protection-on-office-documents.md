@@ -1,5 +1,7 @@
 ---
 title: Kenn Wort Schutz für Office-Dokumente
+description: Erfahren Sie, wie Sie ein Kennwort für Ihre Microsoft Word-Dokumente und Excel-Arbeitsmappen festlegen, sodass Sie nicht von unbefugten Benutzern geöffnet werden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,21 +18,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977899"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528060"
 ---
 # <a name="password-protection-on-office-documents"></a>Kenn Wort Schutz für Office-Dokumente
-  Es ist möglich, ein Kennwort für Ihre Microsoft Office Word-Dokumente festzulegen und Excel-Arbeitsmappen Microsoft Office, damit Sie nicht von einem Benutzer geöffnet werden können, der das Kennwort nicht kennt. Diese Option wird **beim Öffnen als Kennwort**bezeichnet.
+  Es ist möglich, ein Kennwort für Ihre Microsoft Office Word-Dokumente festzulegen und Excel-Arbeitsmappen Microsoft Office, damit Sie nicht von einem Benutzer geöffnet werden können, der das Kennwort nicht kennt. Diese Option wird **beim Öffnen als Kennwort** bezeichnet.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
  Sie können Projekte auf Dokument Ebene mithilfe vorhandener Dokumente und Arbeitsmappen erstellen, **für die beim Öffnen das Kennwort** aktiviert ist. Das Verhalten in Visual Studio unterscheidet sich bei Word-und Excel-Dokumenten, für die **beim Öffnen ein Kennwort** aktiviert ist.
 
- Informationen zum Aktivieren des **Kennworts beim Öffnen**finden Sie in der Hilfe zu Word oder Excel.
+ Informationen zum Aktivieren des **Kennworts beim Öffnen** finden Sie in der Hilfe zu Word oder Excel.
 
 ## <a name="behavior-of-excel-and-word"></a>Verhalten von Excel und Word
  Jedes Mal, wenn Sie eine Excel-Arbeitsmappe in Visual Studio öffnen, für die das **Kennwort** aktiviert ist, werden Sie von Excel zur Eingabe des Kennworts aufgefordert. Wenn Sie Ihre Lösung erstellen, werden Sie erneut zur Eingabe des Kennworts aufgefordert, da das Dokument während des Builds geöffnet wird.

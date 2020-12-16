@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Abrufen von Code aus VBA in einem Visual Basic Projekt'
+description: Erfahren Sie, wie Sie eine Methode in einer Anpassung auf Dokument Ebene für Microsoft Word aus Visual Basic for Applications (VBA)-Code im Dokument aufzurufen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298263"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527379"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Exemplarische Vorgehensweise: Abrufen von Code aus VBA in einem Visual Basic Projekt
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Microsoft Office Word aus VBA-Code (Visual Basic for Applications) im Dokument aufgerufen wird. Das Verfahren umfasst drei grundlegende Schritte: Hinzufügen einer Methode zur `ThisDocument` -Hostelementklasse, Verfügbarmachen der Methode für VBA-Code und Aufrufen der Methode aus VBA-Code im Dokument.
@@ -98,23 +100,23 @@ ms.locfileid: "92298263"
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**. Wenn die IDE auf die Verwendung von Visual Basic-Entwicklungseinstellungen festgelegt ist, klicken Sie im Menü **Datei** auf **Neues Projekt**.
 
-3. Erweitern Sie im Vorlagenbereich **Visual Basic**und dann **Office/SharePoint**.
+3. Erweitern Sie im Vorlagenbereich **Visual Basic** und dann **Office/SharePoint**.
 
 4. Wählen Sie den Knoten **Office-Add-Ins** aus.
 
 5. Wählen Sie in der Liste der Projektvorlagen das Projekt **Word 2010-Dokument** oder **Word 2013-Dokument** aus.
 
-6. Geben Sie im Feld **Name** die Zeichenfolge **CallingCodeFromVBA**ein.
+6. Geben Sie im Feld **Name** die Zeichenfolge **CallingCodeFromVBA** ein.
 
 7. Klicken Sie auf **OK**.
 
      Der **Projekt-Assistent aus Visual Studio Tools for Office** wird geöffnet.
 
-8. Wählen Sie **Vorhandenes Dokument kopieren**aus, und geben Sie im Feld **Vollständiger Pfad zum vorhandenen Dokument** den Speicherort des zuvor erstellten Dokuments **DocumentWithVBA** an. Wenn Sie Ihr eigenes Dokument mit Makros verwenden, geben Sie stattdessen den Speicherort dieses Dokuments an.
+8. Wählen Sie **Vorhandenes Dokument kopieren** aus, und geben Sie im Feld **Vollständiger Pfad zum vorhandenen Dokument** den Speicherort des zuvor erstellten Dokuments **DocumentWithVBA** an. Wenn Sie Ihr eigenes Dokument mit Makros verwenden, geben Sie stattdessen den Speicherort dieses Dokuments an.
 
 9. Klicken Sie auf **Fertig stellen**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet das Dokument **DocumentWithVBA** im Designer und fügt **Projektmappen-Explorer**das Projekt **CallingCodeFromVBA** hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet das Dokument **DocumentWithVBA** im Designer und fügt **Projektmappen-Explorer** das Projekt **CallingCodeFromVBA** hinzu.
 
 ## <a name="trust-the-location-of-the-document"></a>Dem Speicherort des Dokuments Vertrauen
  Bevor Sie Code in der Projektmappe für VBA-Code im Dokument verfügbar machen können, müssen Sie VBA im Dokument als vertrauenswürdig festlegen, damit es ausgeführt werden kann. Hierzu stehen mehrere Vorgehensweisen zur Verfügung. In dieser exemplarischen Vorgehensweise legen Sie den Speicherort des Dokuments im **Trust Center** in Word als vertrauenswürdig fest.
@@ -137,7 +139,7 @@ ms.locfileid: "92298263"
 
 8. Navigieren Sie im Dialogfeld **Vertrauenswürdiger Microsoft Office-Speicherort** zu dem Ordner mit dem Projekt **CallingCodeFromVBA** .
 
-9. Wählen Sie **Unterordner dieses Speicherorts sind ebenfalls vertrauenswürdig**aus.
+9. Wählen Sie **Unterordner dieses Speicherorts sind ebenfalls vertrauenswürdig** aus.
 
 10. Klicken Sie im Dialogfeld **Vertrauenswürdiger Microsoft Office-Speicherort** auf **OK**.
 
@@ -152,22 +154,22 @@ ms.locfileid: "92298263"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>So fügen Sie der ThisDocument-Klasse eine Methode hinzu
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **ThisDocument.vb**, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisDocument.vb**, und klicken Sie dann auf **Code anzeigen**.
 
      Die Datei **ThisDocument.vb** wird im Code-Editor geöffnet.
 
-2. Fügen Sie der `ThisDocument`-Klasse die folgende Methode hinzu. Durch diese Methode wird eine Tabelle mit zwei Zeilen und zwei Spalten am Anfang des Dokuments erstellt. Die Parameter geben den Text an, der in der ersten Zeile angezeigt wird. Weiter unten in dieser exemplarischen Vorgehensweise rufen Sie diese Methode aus VBA-Code im Dokument auf.
+2. Füge der `ThisDocument`-Klasse die folgende Methode hinzu. Durch diese Methode wird eine Tabelle mit zwei Zeilen und zwei Spalten am Anfang des Dokuments erstellt. Die Parameter geben den Text an, der in der ersten Zeile angezeigt wird. Weiter unten in dieser exemplarischen Vorgehensweise rufen Sie diese Methode aus VBA-Code im Dokument auf.
 
      [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
 
 3. Erstellen Sie das Projekt.
 
 ## <a name="expose-the-method-to-vba-code"></a>Verfügbar machen der Methode für VBA-Code
- Um die `CreateTable` -Methode für VBA-Code im Dokument verfügbar zu machen, legen Sie die **EnableVbaCallers** -Eigenschaft für das `ThisDocument` -Hostelement auf **True**fest.
+ Um die `CreateTable` -Methode für VBA-Code im Dokument verfügbar zu machen, legen Sie die **EnableVbaCallers** -Eigenschaft für das `ThisDocument` -Hostelement auf **True** fest.
 
 ### <a name="to-expose-the-method-to-vba-code"></a>So machen Sie die Methode für VBA-Code verfügbar
 
-1. Doppelklicken Sie im **Projektmappen-Explorer**auf **ThisDocument.vb**.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf **ThisDocument.vb**.
 
      Die Datei **DocumentWithVBA** wird im Designer geöffnet.
 

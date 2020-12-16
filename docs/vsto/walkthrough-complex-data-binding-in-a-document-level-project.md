@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: komplexe Datenbindung in einem Projekt auf Dokument Ebene'
+description: Erfahren Sie, wie Sie mehrere Zellen in einem Microsoft Excel-Arbeitsblatt an Felder in der Northwind-SQL Server Datenbank binden können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584320"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527123"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: komplexe Datenbindung in einem Projekt auf Dokument Ebene
   In dieser exemplarischen Vorgehensweise werden die Grundlagen der komplexen Datenbindung in einem Projekt auf Dokument Ebene veranschaulicht. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server Datenbank binden.
@@ -49,25 +51,25 @@ ms.locfileid: "91584320"
 
 - Lese-und Schreibberechtigungen für die SQL Server Datenbank.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
  Der erste Schritt besteht darin, ein Excel-Arbeitsmappenprojekt zu erstellen.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **meine komplexe Datenbindung**. Wählen Sie im Assistenten **Neues Dokument erstellen**aus.
+1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **meine komplexe Datenbindung**. Wählen Sie im Assistenten **Neues Dokument erstellen** aus.
 
      Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt **Projektmappen-Explorer**ein Projekt mit der **komplexen Datenbindung** hinzu.
+     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt **Projektmappen-Explorer** ein Projekt mit der **komplexen Datenbindung** hinzu.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
  Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset hinzuzufügen.
 
 ### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
 
-1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen**anzeigen auswählen.
+1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
-2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
+2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
@@ -83,12 +85,12 @@ ms.locfileid: "91584320"
 
 9. Klicken Sie auf **Fertig stellen**.
 
-   Der Assistent fügt dem **Datenquellen** Fenster die Tabelle **Employees** hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer**sichtbar ist.
+   Der Assistent fügt dem **Datenquellen** Fenster die Tabelle **Employees** hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer** sichtbar ist.
 
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt
  Beim Öffnen der Arbeitsmappe wird in einem Arbeitsblatt die Tabelle **Employees** angezeigt. Benutzer können Änderungen an den Daten vornehmen und diese Änderungen dann wieder in der Datenbank speichern, indem Sie auf eine Schaltfläche klicken.
 
- Um das Arbeitsblatt automatisch an die Tabelle zu binden, können Sie dem <xref:Microsoft.Office.Tools.Excel.ListObject> Arbeitsblatt ein-Steuerelement aus dem Fenster **Datenquellen** hinzufügen. Um dem Benutzer die Möglichkeit zu geben, Änderungen zu speichern, fügen Sie ein- <xref:System.Windows.Forms.Button> Steuerelement aus der **Toolbox**hinzu.
+ Um das Arbeitsblatt automatisch an die Tabelle zu binden, können Sie dem <xref:Microsoft.Office.Tools.Excel.ListObject> Arbeitsblatt ein-Steuerelement aus dem Fenster **Datenquellen** hinzufügen. Um dem Benutzer die Möglichkeit zu geben, Änderungen zu speichern, fügen Sie ein- <xref:System.Windows.Forms.Button> Steuerelement aus der **Toolbox** hinzu.
 
 #### <a name="to-add-a-list-object"></a>So fügen Sie ein Listen Objekt hinzu
 
@@ -102,11 +104,11 @@ ms.locfileid: "91584320"
 
 5. Ziehen Sie die **Employees** -Tabelle in die Zelle **a6**.
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject> `EmployeesListObject` In der Zelle **a6**wird ein Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `EmployeesBindingSource` , ein Tabellen Adapter und eine- <xref:System.Data.DataSet> Instanz hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
+     <xref:Microsoft.Office.Tools.Excel.ListObject> `EmployeesListObject` In der Zelle **a6** wird ein Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `EmployeesBindingSource` , ein Tabellen Adapter und eine- <xref:System.Data.DataSet> Instanz hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
 
 ### <a name="to-add-a-button"></a>So fügen Sie eine Schaltfläche hinzu
 
-1. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**ein- <xref:System.Windows.Forms.Button> Steuerelement zur Zelle **a4** des Arbeitsblatts hinzu.
+1. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** ein- <xref:System.Windows.Forms.Button> Steuerelement zur Zelle **a4** des Arbeitsblatts hinzu.
 
    Der nächste Schritt besteht darin, der Schaltfläche Text hinzuzufügen, wenn das Arbeitsblatt geöffnet wird.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584320"
 
 ### <a name="to-initialize-the-control"></a>So initialisieren Sie das Steuerelement
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
 
 2. Fügen Sie der-Methode den folgenden Code hinzu `Sheet1_Startup` , um den Text für die b-Methode festzulegen `utton` .
 
@@ -149,15 +151,15 @@ ms.locfileid: "91584320"
 
 ### <a name="to-modify-data"></a>So ändern Sie Daten
 
-1. Klicken Sie auf Zelle **B7**, die den Namen **Davolio**enthalten soll.
+1. Klicken Sie auf Zelle **B7**, die den Namen **Davolio** enthalten soll.
 
-2. Geben Sie den Namen **Anderson**ein, und drücken Sie dann die **Eingabe**Taste.
+2. Geben Sie den Namen **Anderson** ein, und drücken Sie dann die **Eingabe** Taste.
 
 ### <a name="to-modify-a-column-header"></a>So ändern Sie einen Spaltenheader
 
-1. Klicken Sie auf die Zelle, die den Spaltenheader **LastName**enthält.
+1. Klicken Sie auf die Zelle, die den Spaltenheader **LastName** enthält.
 
-2. Geben Sie **Nachname**ein, einschließlich eines leer Zeichens zwischen den beiden Wörtern, und drücken Sie dann die **Eingabe**Taste.
+2. Geben Sie **Nachname** ein, einschließlich eines leer Zeichens zwischen den beiden Wörtern, und drücken Sie dann die **Eingabe** Taste.
 
 ### <a name="to-save-data"></a>So speichern Sie Daten
 
@@ -169,13 +171,13 @@ ms.locfileid: "91584320"
 
      Das Listen Objekt wird mit Daten aus der **Employees** -Tabelle aufgefüllt.
 
-4. Beachten Sie, dass der Name in Zelle **B7** immer noch **Anderson**ist, d. h. die Datenänderung, die Sie vorgenommen und wieder in der Datenbank gespeichert haben. Die Spaltenüberschrift " **LastName** " wurde wieder in die ursprüngliche Form ohne Leerzeichen geändert, da die Spaltenüberschrift nicht an die Datenbank gebunden ist und Sie die an dem Arbeitsblatt vorgenommenen Änderungen nicht gespeichert haben.
+4. Beachten Sie, dass der Name in Zelle **B7** immer noch **Anderson** ist, d. h. die Datenänderung, die Sie vorgenommen und wieder in der Datenbank gespeichert haben. Die Spaltenüberschrift " **LastName** " wurde wieder in die ursprüngliche Form ohne Leerzeichen geändert, da die Spaltenüberschrift nicht an die Datenbank gebunden ist und Sie die an dem Arbeitsblatt vorgenommenen Änderungen nicht gespeichert haben.
 
 ### <a name="to-add-new-rows"></a>So fügen Sie neue Zeilen hinzu
 
 1. Wählen Sie eine Zelle innerhalb des Listen Objekts aus.
 
-    Am Ende der Liste wird eine neue Zeile mit einem Sternchen ( **\*** ) in der ersten Zelle der neuen Zeile angezeigt.
+    Am Ende der Liste wird eine neue Zeile mit einem Sternchen (* *\** _) in der ersten Zelle der neuen Zeile angezeigt.
 
 2. Fügen Sie die folgenden Informationen in die leere Zeile ein.
 
@@ -185,7 +187,7 @@ ms.locfileid: "91584320"
 
 ### <a name="to-delete-rows"></a>Löschen von Zeilen
 
-- Klicken Sie mit der rechten Maustaste auf die Zahl 16 (Zeile 16) auf der linken Seite des Arbeitsblatts, und klicken Sie dann auf **Löschen**.
+- Klicken Sie mit der rechten Maustaste auf die Zahl 16 (Zeile 16) auf der linken Seite des Arbeitsblatts, und klicken Sie dann auf _ * löschen * *.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>So sortieren Sie die Zeilen in der Liste
 

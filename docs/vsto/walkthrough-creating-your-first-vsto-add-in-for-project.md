@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project'
+description: Erstellen Sie ein Add-in auf Anwendungsebene für Microsoft Project. Diese Funktion ist für die Anwendung selbst verfügbar, unabhängig davon, welche Projekte geöffnet sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4774b8f5ba55d54e05e3a9ef18f8ea13fd48fc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981396"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527895"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein VSTO-Add-in für Microsoft Office Projekt erstellen. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,7 +48,7 @@ ms.locfileid: "62981396"
 
 - [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)] oder [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)].
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
 
 ### <a name="to-create-a-new-project-in-visual-studio"></a>So erstellen Sie ein neues Projekt in Visual Studio
 
@@ -54,13 +56,13 @@ ms.locfileid: "62981396"
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.
+3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic** und dann **Office/SharePoint**.
 
 4. Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.
 
-5. Wählen Sie in der Liste mit den Projektvorlagen **Project 2010-Add-In** oder **Project 2013-Add-In**aus.
+5. Wählen Sie in der Liste mit den Projektvorlagen **Project 2010-Add-In** oder **Project 2013-Add-In** aus.
 
-6. Geben Sie im Feld **Name** den Text **FirstProjectAddIn**ein.
+6. Geben Sie im Feld **Name** den Text **FirstProjectAddIn** ein.
 
 7. Klicken Sie auf **OK**.
 

@@ -1,5 +1,7 @@
 ---
 title: Ändern der Arbeitsblatt Formatierung mithilfe von CheckBox-Steuerelementen
+description: Erfahren Sie, wie Sie Office-Entwicklungs Tools in Visual Studio verwenden können, um Code zu erstellen und zu Ihrem Projekt hinzuzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328705"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527216"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der Arbeitsblatt Formatierung mit CheckBox-Steuerelementen
   Diese exemplarische Vorgehensweise zeigt die Grundlagen der Verwendung von Kontrollkästchen in einem Microsoft Office Excel-Arbeitsblatt, um die Formatierung zu ändern. Sie verwenden die Office-Entwicklungs Tools in Visual Studio, um Code zu erstellen und zu Ihrem Projekt hinzuzufügen. Das Ergebnis als vollständiges Beispiel finden Sie im Beispiel für Excel-Steuerelemente unter [Office-Entwicklungs Beispiele und](../vsto/office-development-samples-and-walkthroughs.md)Exemplarische Vorgehensweisen.
@@ -44,14 +46,14 @@ ms.locfileid: "67328705"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  In diesem Schritt erstellen Sie ein Excel-Arbeitsmappenprojekt mithilfe von Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
 1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **Meine Excel-Formatierung**. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das Projekt **My Excel** -Formatierung **Projektmappen-Explorer**hinzu.
+     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das Projekt **My Excel** -Formatierung **Projektmappen-Explorer** hinzu.
 
 ## <a name="add-text-and-controls-to-the-worksheet"></a>Hinzufügen von Text und Steuerelementen zum Arbeitsblatt
  In dieser exemplarischen Vorgehensweise benötigen Sie drei <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> Steuerelemente und Text in einem- <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement.
@@ -83,7 +85,7 @@ ms.locfileid: "67328705"
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**applyUnderlineFont**|
-    |**Text**|**Streichen**|
+    |**Text**|**Underline**|
 
 7. Aktivieren Sie alle drei Kontrollkästchen-Steuerelemente, während die **STRG** -Taste gedrückt wird.
 

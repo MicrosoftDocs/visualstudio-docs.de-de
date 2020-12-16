@@ -1,5 +1,7 @@
 ---
 title: Multifunktionsleisten-Designer
+description: Erfahren Sie, wie Sie mit dem Menüband-Designer dem Menüband einer Microsoft Office Anwendung benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzufügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985625"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528005"
 ---
 # <a name="ribbon-designer"></a>Multifunktionsleisten-Designer
   Der Menüband-Designer ist ein visueller Entwurfzeichnungsbereich. Verwenden Sie den Menüband-Designer, um dem Menüband einer Microsoft Office Anwendung benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzuzufügen.
@@ -65,15 +67,15 @@ ms.locfileid: "72985625"
 ## <a name="design-a-ribbon"></a><a name="DesigningRibbonLayout"></a> Entwerfen eines Menübands
  Zum Öffnen des Menüband-Designers stehen drei Möglichkeiten zur Verfügung:
 
-- Doppelklicken Sie in **Projektmappen-Explorer**auf die Menüband-Codedatei.
+- Doppelklicken Sie in **Projektmappen-Explorer** auf die Menüband-Codedatei.
 
-- Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Menüband-Codedatei, und klicken Sie dann auf **Designer anzeigen**.
+- Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf die Menüband-Codedatei, und klicken Sie dann auf **Designer anzeigen**.
 
-- Wählen Sie in **Projektmappen-Explorer**die Menüband-Codedatei aus, und klicken Sie dann im Menü **Ansicht** auf **Designer** .
+- Wählen Sie in **Projektmappen-Explorer** die Menüband-Codedatei aus, und klicken Sie dann im Menü **Ansicht** auf **Designer** .
 
   Der Menüband-Designer beinhaltet eine Standardregisterkarte und -gruppe. Standardregisterkarte und -gruppe können aus dem Menüband-Designer entfernt werden. Klicken Sie mit der rechten Maustaste auf **group1**, und klicken Sie dann auf **Löschen**, um die Standardgruppe zu entfernen. Klicken Sie zum Entfernen der Standard Registerkarte mit der rechten Maustaste auf einen leeren Bereich der Entwurfs Oberfläche, und klicken Sie dann auf **Registerkarte des Menübands entfernen**.
 
-  Dem Menüband-Designer können auch benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzugefügt werden. Sie finden diese Steuerelemente in der **Toolbox**in der Gruppe " **Office-Menüband** -Steuerelemente". Es gibt drei Möglichkeiten zum Hinzufügen von Steuerelementen aus der Gruppe **Office-Menüband** -Steuerelemente zum Menüband-Designer
+  Dem Menüband-Designer können auch benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzugefügt werden. Sie finden diese Steuerelemente in der **Toolbox** in der Gruppe " **Office-Menüband** -Steuerelemente". Es gibt drei Möglichkeiten zum Hinzufügen von Steuerelementen aus der Gruppe **Office-Menüband** -Steuerelemente zum Menüband-Designer
 
 - Ein Steuerelement in einen geeigneten Bereich im Menüband-Designer ziehen.
 
@@ -99,13 +101,13 @@ ms.locfileid: "72985625"
 ### <a name="add-custom-tabs-to-the-ribbon"></a><a name="AddTabToRibbon"></a> Hinzufügen benutzerdefinierter Registerkarten zum Menüband
  Es gibt drei Möglichkeiten, dem Menüband eine benutzerdefinierte Registerkarte hinzuzufügen:
 
-- Fügen Sie eine Registerkarte aus der **Toolbox**hinzu.
+- Fügen Sie eine Registerkarte aus der **Toolbox** hinzu.
 
 - Klicken Sie mit der rechten Maustaste auf den Menüband-Designer, und klicken Sie dann auf **Menüband**
 
 - Öffnen Sie den **Registerkarten Sammlungs-Editor**, und klicken Sie dann auf **Hinzufügen**
 
-   Wählen Sie zum Öffnen des Register **Karten** Auflistungs-Editors im Fenster **Eigenschaften** die Eigenschaft **Tabstopps**aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten ![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer").
+   Wählen Sie zum Öffnen des Register **Karten** Auflistungs-Editors im Fenster **Eigenschaften** die Eigenschaft **Tabstopps** aus, und klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten ![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer").
 
   Nach dem Hinzufügen einer Registerkarte können Gruppen mit Steuerelementen hinzugefügt werden.
 
@@ -175,23 +177,23 @@ ms.locfileid: "72985625"
 
  Die für alle Steuerelemente verwendbaren Tastenkombinationen werden in der folgenden Tabelle angezeigt.
 
-|Aktion|Tastenkombination|
+|Aktion|Tastenkombinationen|
 |------------|-----------------------|
 |Verschieben eines Steuerelements vor das vorherige Steuerelement in der Liste.|**STRG** + Nach **oben**<br /><br /> **STRG** + **Links**|
 |Verschieben eines Steuerelements hinter das nächste Steuerelement in der Liste.|**STRG** + **Nach unten**<br /><br /> **STRG** + **Rechts**|
 |Verschieben der Auswahl von einem Steuerelement zu einem anderen Steuerelement in derselben Gruppe. Wechseln Sie in einem Dropdownbereich zwischen dem übergeordneten Steuerelement und den Steuerelementen im Dropdownbereich.|**Up**<br /><br /> **Nach unten**|
-|Durchlaufen aller Steuerelemente (vorwärts).|**Registerkarte**|
+|Durchlaufen aller Steuerelemente (vorwärts).|**TABULATORTASTE**|
 |Durchlaufen aller Steuerelemente (rückwärts).|**UMSCHALT**+**Tab**|
 |Löschen des ausgewählten Steuerelements oder eines Satzes von Steuerelementen.|**Löschen**|
 |Kopieren der ausgewählten Steuerelemente.|**STRG** + **C**|
 |Ausschneiden der ausgewählten Steuerelemente.|**STRG** + **X**|
 |Einfügen von Steuerelementen aus der Zwischenablage.|**STRG** + **V**|
-|Wählen Sie den **Werkzeugkasten**aus.|**STRG** + **Alt** + **X**|
+|Wählen Sie den **Werkzeugkasten** aus.|**STRG** + **Alt** + **X**|
 |Auswählen der übergeordneten Komponente.|**ESC**|
 
  Die Tastenkombinationen gelten nur für das Microsoft Office-Menü; <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> und <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> werden in der folgenden Tabelle angezeigt.
 
-|Aktion|Tastenkombination|
+|Aktion|Tastenkombinationen|
 |------------|-----------------------|
 |Auswählen des übergeordneten Steuerelements, falls der Dropdownbereich geöffnet ist und im Dropdownbereich ein Steuerelement ausgewählt ist.|**Left**|
 |Schließen des Dropdownbereichs, falls der Dropdownbereich geöffnet ist und das übergeordnete Steuerelement ausgewählt ist.|**Left**|

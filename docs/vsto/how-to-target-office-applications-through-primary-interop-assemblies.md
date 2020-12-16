@@ -1,5 +1,7 @@
 ---
 title: Office-Apps über primäre Interopassemblys als Ziel
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um Microsoft Office Anwendungen mithilfe primärer Interop-Assemblys Programm gesteuert zu verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545768"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528104"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Gewusst wie: Ausrichten von Office-Anwendungen über primäre Interop-Assemblys
   Wenn Sie ein neues Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die primären Interopassemblys (PIAs) von Microsoft Office hinzu, die zum Erstellen des Projekts erforderlich sind. Verweise auf andere PIAs müssen in den folgenden Szenarien hinzugefügt werden:
@@ -36,7 +38,7 @@ ms.locfileid: "85545768"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>So fügen Sie einen Verweis auf eine primäre Interopassembly hinzu
 
-1. Öffnen Sie das Office-Projekt, und wählen Sie den Projektnamen in **Projektmappen-Explorer**aus.
+1. Öffnen Sie das Office-Projekt, und wählen Sie den Projektnamen in **Projektmappen-Explorer** aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen**.
 
@@ -49,7 +51,7 @@ ms.locfileid: "85545768"
 
 4. Klicken Sie auf **OK**.
 
-     Der AssemblyName wird im Ordner **Verweise** von **Projektmappen-Explorer**angezeigt.
+     Der AssemblyName wird im Ordner **Verweise** von **Projektmappen-Explorer** angezeigt.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)

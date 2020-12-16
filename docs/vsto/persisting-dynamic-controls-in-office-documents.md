@@ -1,5 +1,7 @@
 ---
 title: Beibehalten dynamischer Steuerelemente in Office-Dokumenten
+description: Erfahren Sie, wie Sie der Projekt Mappe Code hinzufügen können, um permanente dynamische Steuerelemente neu zu erstellen, wenn ein Benutzer ein geschlossenes Dokument erneut öffnet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256007"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527530"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Beibehalten dynamischer Steuerelemente in Office-Dokumenten
 
@@ -78,7 +80,7 @@ Gelöschte Windows Forms-Steuerelemente können neu erstellt werden, wenn der Be
 
 1. Informationen zu Größe, Position und Zustand der Steuerelemente müssen beim Speichern oder Schließen des Dokuments gespeichert werden. Bei einer Anpassung auf Dokument Ebene können Sie die Daten im Daten Cache des Dokuments speichern. In einem VSTO-Add-in können Sie die Daten in einem benutzerdefinierten XML-Abschnitt im Dokument speichern.
 
-2. Die Steuerelemente werden im Falle eines Ereignisses neu erstellt, das beim Öffnen des Dokuments ausgelöst wird. In Projekten auf Dokument Ebene können Sie dies in den n- `Sheet` *n* `_Startup` oder- `ThisDocument_Startup` Ereignis Handlern tun. Bei VSTO-Add-In-Projekten können Sie dieses Verhalten in den Ereignishandlern für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> - oder das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> -Ereignis veranlassen.
+2. Die Steuerelemente werden im Falle eines Ereignisses neu erstellt, das beim Öffnen des Dokuments ausgelöst wird. In Projekten auf Dokument Ebene können Sie dies in den n- `Sheet`  `_Startup` oder- `ThisDocument_Startup` Ereignis Handlern tun. Bei VSTO-Add-In-Projekten können Sie dieses Verhalten in den Ereignishandlern für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> - oder das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> -Ereignis veranlassen.
 
 ### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> Entfernen von ActiveX-Wrappern in einem Add-in
 
@@ -108,6 +110,6 @@ Das folgende Codebeispiel veranschaulicht das Entfernen aller Windows Forms-Steu
 [!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
 [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)

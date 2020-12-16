@@ -1,5 +1,7 @@
 ---
 title: Eigenschaften in Office-Projekten
+description: Erfahren Sie mehr über die Eigenschaften, die für Office-Projekte in Visual Studio über das Eigenschaftenfenster verfügbar sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9fc2a0774206eac0c9295a425d81555ffdd3cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdc54de3935646e36f9d4f09727037de4c373c92
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561363"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528027"
 ---
 # <a name="properties-in-office-projects"></a>Eigenschaften in Office-Projekten
   Es gibt mehrere wichtige Eigenschaften, die für Office-Projekte in Visual Studio verfügbar sind. Sie können auf diese Eigenschaften über das Fenster **Eigenschaften** zugreifen.
@@ -31,7 +33,7 @@ ms.locfileid: "62561363"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="namespace-for-host-item"></a>Namespace für Host Element
- Verwenden Sie die Eigenschaft **Namespace für Host Element** , um den Namespace für Host Element Klassen (z. b `ThisAddIn` `ThisWorkbook` . die Klassen, oder `ThisDocument` ) in Visual c#-Projekten zu ändern. Diese Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie den Dokument Knoten in einem Projekt auf Dokument Ebene (z. b. *ExcelWorkbook1.xlsx* oder *WordDocument1.docx*) oder den Anwendungs Knoten in einem VSTO-Add-in-Projekt (z. b. Excel oder Word) in **Projektmappen-Explorer**auswählen.
+ Verwenden Sie die Eigenschaft **Namespace für Host Element** , um den Namespace für Host Element Klassen (z. b `ThisAddIn` `ThisWorkbook` . die Klassen, oder `ThisDocument` ) in Visual c#-Projekten zu ändern. Diese Eigenschaft wird im **Eigenschaften** Fenster angezeigt, wenn Sie den Dokument Knoten in einem Projekt auf Dokument Ebene (z. b. *ExcelWorkbook1.xlsx* oder *WordDocument1.docx*) oder den Anwendungs Knoten in einem VSTO-Add-in-Projekt (z. b. Excel oder Word) in **Projektmappen-Explorer** auswählen.
 
  Wenn Sie ein Visual C#-Office-Projekt erstellen, erhalten Hostelemente einen Namespace, der auf dem Namen des Projekts basiert. Es wird empfohlen, die Eigenschaft **Namespace für Hostelement** zu verwenden, um den Namespace zu ändern, anstatt die Codedateien direkt zu bearbeiten. Wenn Sie diese Eigenschaft verwenden, wird der Namespace in den generierten (ausgeblendeten) Codedateien und in den sichtbaren Codedateien geändert.
 

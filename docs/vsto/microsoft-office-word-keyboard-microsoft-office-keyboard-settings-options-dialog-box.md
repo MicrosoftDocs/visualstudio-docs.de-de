@@ -1,5 +1,7 @@
 ---
 title: Office Word-Tastatur, Einstellungen, Dialogfeld "Optionen"
+description: Erfahren Sie, wie Sie mit Microsoft Word Tastenkombinationen für Tastenkombinationen abrufen können, wenn das Dokument den Fokus besitzt, indem Sie dynamisches Tastatur Schema auswählen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,15 +19,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83cfe2e6061f82d48a00354b610955c698a9a11f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bf4cfbaf23ad9c1e545af25614722cd52c493df7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584502"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528448"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office Word-Tastatur, Einstellungen, Dialogfeld "Optionen"
-  Microsoft Office Word und Visual Studio behandeln Tastenkombinationen. Die gleiche Tastenkombination kann für verschiedene Befehle in Word und in Visual Studio stehen. Wenn Word in einem Projekt auf Dokument Ebene in Visual Studio geöffnet ist, empfängt jeweils nur eine Anwendung die Tastenkombinationen. Standardmäßig empfängt Visual Studio alle Tastenkombinationen, Sie können Sie jedoch erhalten, wenn das Dokument den Fokus besitzt, indem Sie **dynamisches Tastatur Schema**auswählen.
+  Microsoft Office Word und Visual Studio behandeln Tastenkombinationen. Die gleiche Tastenkombination kann für verschiedene Befehle in Word und in Visual Studio stehen. Wenn Word in einem Projekt auf Dokument Ebene in Visual Studio geöffnet ist, empfängt jeweils nur eine Anwendung die Tastenkombinationen. Standardmäßig empfängt Visual Studio alle Tastenkombinationen, Sie können Sie jedoch erhalten, wenn das Dokument den Fokus besitzt, indem Sie **dynamisches Tastatur Schema** auswählen.
 
  Wenn Sie eine Tastenkombination verwenden, die keinem Befehl in der Anwendung zugewiesen ist, die gerade die Tastenkombinationen verarbeitet, wird die Tastenkombination an die andere Anwendung weitergegeben.
 

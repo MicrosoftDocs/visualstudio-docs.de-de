@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren von Excel-oder Word-Projekten zu .NET Framework 4,5 migriert
+description: Sie müssen den Code ändern, wenn das Ziel Framework in .NET Framework 4 oder höher geändert wird, wenn Sie ein Excel-oder Word-Projekt verwenden, das bestimmte Funktionen verwendet.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bc79a53b62cf9fb0ca0ba533a2ce0d542b08c72
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584411"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528424"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>Aktualisieren von Excel-und Word-Projekten, die Sie zum .NET Framework 4,5 migrieren
   Wenn Sie über ein Excel- oder Word-Projekt verfügen, das eine der folgenden Funktionen verwendet, müssen Sie den Code ändern, wenn das Zielframework in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher geändert wird:
@@ -68,7 +70,7 @@ ms.locfileid: "91584411"
 
 1. Öffnen Sie das Projekt in Visual Studio und dann den **Projektmappen-Explorer**.
 
-2. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für *ThisAddIn.cs* (für c#) oder *ThisAddIn. vb* (für Visual Basic), und wählen Sie dann **Code anzeigen**aus.
+2. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für *ThisAddIn.cs* (für c#) oder *ThisAddIn. vb* (für Visual Basic), und wählen Sie dann **Code anzeigen** aus.
 
 3. Entfernen Sie im Code-Editor in der `VSTO generated code` -Region die folgende Codezeile, oder kommentieren Sie sie aus.
 

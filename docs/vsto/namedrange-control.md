@@ -1,5 +1,7 @@
 ---
 title: NamedRange-Steuerelement
+description: Erfahren Sie, wie das Name Drange-Steuerelement ein Bereich ist, der über einen eindeutigen Namen verfügt, Ereignisse verfügbar macht und an Daten gebunden werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254712"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528090"
 ---
 # <a name="namedrange-control"></a>NamedRange-Steuerelement
   Das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement ist ein Bereich, der über einen eindeutigen Namen verfügt, Ereignisse verfügbar macht und an Daten gebunden werden kann. Weitere Informationen finden Sie unter [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md).
@@ -52,7 +54,7 @@ ms.locfileid: "71254712"
 ## <a name="rename-the-control"></a>Umbenennen des Steuer Elements
  Wenn Sie Ihrem Arbeitsblatt über die <xref:Microsoft.Office.Tools.Excel.NamedRange> Toolbox **ein**-Steuerelement hinzufügen, generiert Visual Studio automatisch einen Namen für das Steuerelement. Sie können diesen Namen im Fenster **Eigenschaften** ändern.
 
-## <a name="events"></a>Events
+## <a name="events"></a>Ereignisse
  Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement verfügbar:
 
 - <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
@@ -71,7 +73,7 @@ ms.locfileid: "71254712"
 
 - <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)

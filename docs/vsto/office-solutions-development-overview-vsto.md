@@ -1,5 +1,7 @@
 ---
 title: Übersicht über die Entwicklung von Office-Lösungen (VSTO)
+description: Erfahren Sie, wie Sie Anpassungen für die vertrauten Microsoft Office Benutzeroberflächen und-Tools entwickeln, wie z. b. die Textverarbeitungsfunktionen in Word und die Datenanalyse Funktionen von Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811018"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527719"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Übersicht über die Entwicklung von Office-Lösungen (VSTO)
   Wenn Sie Microsoft Office als Front-End für Projektmappen verwenden, können Sie die vertrauten Microsoft Office-Benutzeroberflächen und -Tools verwenden, z. B. die Textverarbeitungsfunktionen in Word, die Datenanalysefunktionen von Excel und die E-Mail-Verwaltungsfunktionen von Outlook. Sie können Projektmappen in Visual Studio entwickeln, um Office-Anwendungen anzupassen und die speziellen Funktionen hinzuzufügen, die Sie für Ihre Geschäftsprozesse benötigen. Beispielsweise können Sie Word in einen Vertragsgenerator verwandeln, mit dem Verträge aus bereits vorhandenen Teilen zusammengestellt werden können. Die Teile können dabei bearbeitbar oder nicht bearbeitbar sein. Mit Excel können Sie ein automatisiertes Budgetarbeitsblatt erstellen, das für unterschiedliche Projekte angepasst werden kann. Ihre Benutzer können Bürolösungen auch offline verwenden. Dies ist bei komplexen Lösungen praktikabler als die Verwendung einer webbasierten Architektur.
@@ -85,7 +87,7 @@ ms.locfileid: "90811018"
 ### <a name="security"></a>Sicherheit
  Die Sicherheit für VSTO-Office-Projektmappen wird mit einer Reihe von Prüfungen durchgesetzt, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] durchgeführt werden, wenn die Projektmappe installiert und geladen wird. Bei diesen Prüfungen wird unter anderem überprüft, ob der Speicherort des Bereitstellungsmanifests vertrauenswürdig ist oder ob das Zertifikat, mit dem das Bereitstellungsmanifest signiert wurde, vertrauenswürdig ist. Weitere Informationen finden Sie unter [sichere Office-Lösungen](../vsto/securing-office-solutions.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

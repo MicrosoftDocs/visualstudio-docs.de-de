@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Anzeigen von Add-in-Benutzeroberflächen Fehlern'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um vtso-Add-in-Benutzeroberflächen Fehler in Microsoft Office Anwendungen Programm gesteuert anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e74d60fe6386575417114fe1ad4823704cf09d46
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545781"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528125"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Gewusst wie: Anzeigen von Add-in-Benutzeroberflächen Fehlern
   Wenn ein VSTO-Add-in versucht, die Microsoft Office-Benutzeroberfläche zu bearbeiten, wird standardmäßig keine Fehlermeldung angezeigt. Sie können Microsoft Office-Anwendungen aber so konfigurieren, dass Meldungen für Fehler angezeigt werden, die sich auf die Benutzeroberfläche beziehen. Anhand dieser Meldungen können Sie feststellen, warum ein benutzerdefiniertes Menüband nicht angezeigt wird oder warum ein Menüband angezeigt wird, aber keine Steuerelemente angezeigt werden.
@@ -37,7 +39,7 @@ ms.locfileid: "85545781"
 
 4. Klicken Sie im Bereich "Kategorien" auf **Erweitert**.
 
-5. Wählen Sie im Detailbereich die Option **VSTO-Add-In-Benutzeroberflächenfehler anzeigen**aus, und klicken Sie dann auf **OK**.
+5. Wählen Sie im Detailbereich die Option **VSTO-Add-In-Benutzeroberflächenfehler anzeigen** aus, und klicken Sie dann auf **OK**.
 
     > [!NOTE]
     > Für Outlook befindet sich das Kontrollkästchen **VSTO-Add-In-Benutzeroberflächenfehler anzeigen** im Abschnitt **Entwickler** des Detailbereichs. Für andere Anwendungen befindet sich das Kontrollkästchen im Abschnitt **Allgemein** des Detailbereichs.

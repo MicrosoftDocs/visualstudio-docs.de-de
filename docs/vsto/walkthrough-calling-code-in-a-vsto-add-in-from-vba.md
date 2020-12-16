@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Abrufen von Code in einem VSTO-Add-in aus VBA'
+description: Erfahren Sie, wie Sie ein Objekt in einem VSTO-Add-in für andere Microsoft Office Lösungen verfügbar machen, einschließlich Visual Basic for Applications (VBA) und com-VSTO-Add-Ins.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650784"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527284"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Exemplarische Vorgehensweise: Abrufen von Code in einem VSTO-Add-in aus VBA
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Objekt in einem VSTO-Add-In für andere Microsoft Office-Projektmappen verfügbar gemacht wird, einschließlich Visual Basic for Applications (VBA) und COM-VSTO-Add-Ins.
@@ -56,7 +58,7 @@ ms.locfileid: "72650784"
 
 1. Erstellen Sie ein VSTO-Add-In-Projekt für Excel namens **ExcelImportData**, indem Sie die Excel-VSTO-Add-In-Projektvorlage verwenden. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt das **ExcelImportData** -Projekt dem **Projektmappen-Explorer**hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt das **ExcelImportData** -Projekt dem **Projektmappen-Explorer** hinzu.
 
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Definieren einer Klasse, die für andere Office-Projektmappen verfügbar gemacht werden kann
  Der Zweck dieser exemplarischen Vorgehensweise besteht im Aufrufen der `ImportData` -Methode einer Klasse mit dem Namen `AddInUtilities` in Ihrem VSTO-Add-In aus VBA-Code. Mit dieser Methode wird eine Zeichenfolge in die Zelle A1 des aktiven Arbeitsblatts geschrieben.
@@ -88,7 +90,7 @@ ms.locfileid: "72650784"
 
 ### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>So machen Sie die AddInUtilities-Klasse für andere Office-Projektmappen verfügbar
 
-1. Erweitern Sie im **Projektmappen-Explorer**die Option **Excel**.
+1. Erweitern Sie im **Projektmappen-Explorer** die Option **Excel**.
 
 2. Klicken Sie mit der rechten Maustaste auf **ThisAddIn.cs** bzw. **ThisAddIn.vb**, und klicken Sie dann auf **Code anzeigen**.
 
@@ -97,7 +99,7 @@ ms.locfileid: "72650784"
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
-4. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
+4. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
      Überprüfen Sie, ob die Lösung ohne Fehler erstellt wurde.
 
@@ -137,7 +139,7 @@ ms.locfileid: "72650784"
 
 7. Drücken Sie **F5**.
 
-8. Überprüfen Sie, ob der Arbeitsmappe ein neues Arbeitsblatt mit dem Namen **Imported Data** hinzugefügt wurde. Überprüfen Sie auch, ob die Zelle A1 die Zeichenfolge **This is my data**enthält.
+8. Überprüfen Sie, ob der Arbeitsmappe ein neues Arbeitsblatt mit dem Namen **Imported Data** hinzugefügt wurde. Überprüfen Sie auch, ob die Zelle A1 die Zeichenfolge **This is my data** enthält.
 
 9. Beenden Sie Excel.
 

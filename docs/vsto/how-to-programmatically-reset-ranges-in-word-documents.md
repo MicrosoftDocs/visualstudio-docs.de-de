@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Zurücksetzen von Bereichen in Word-Dokumenten'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um die Größe eines vorhandenen Bereichs in einem Microsoft Word-Dokument Programm gesteuert zu ändern.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1fb36f825f4170a89a78bc4522d3a872bd9e5033
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b87d157344f1302d4b1ee910ee2dda449bbea5a1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584793"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527753"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Gewusst wie: Programm gesteuertes Zurücksetzen von Bereichen in Word-Dokumenten
   Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> , um die Größe eines vorhandenen Bereichs in einem Microsoft Office Word-Dokument zu ändern.

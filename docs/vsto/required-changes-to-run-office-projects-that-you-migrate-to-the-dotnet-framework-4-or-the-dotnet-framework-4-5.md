@@ -1,5 +1,7 @@
 ---
 title: Erforderliche Änderungen für Office-Projekte, die zu .NET 4,5 migriert wurden
+description: Informieren Sie sich über die Änderungen, die Sie an Ihrem Projekt vornehmen müssen, wenn das Ziel Framework von einer früheren Version des .NET Framework in .NET Framework 4 oder höher geändert wird.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e92a7fc81f77244664be7285cc6fd414dc4409be
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584463"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527490"
 ---
 # <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Erforderliche Änderungen für Office-Projekte, die zu .NET 4,5 migriert wurden
 

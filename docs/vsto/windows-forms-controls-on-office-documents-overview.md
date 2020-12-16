@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Windows Forms Steuerelemente in Office-Dokumenten
+description: Erfahren Sie, wie Windows Forms Steuerelemente Objekte sind, mit denen Benutzer interagieren können, um Daten einzugeben oder zu bearbeiten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0309ea22444062b117d3684e32b56960585aa184
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254914"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527046"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Übersicht über Windows Forms Steuerelemente in Office-Dokumenten
   Windows Forms-Steuerelemente sind Objekte, mit denen Benutzer arbeiten können, um Daten einzugeben oder zu ändern. In Projekten auf Dokumentebene für Microsoft Office Excel und Microsoft Office Word können Sie dem Dokument oder der Arbeitsmappe in Ihrem Projekt zur Entwurfszeit Windows Forms-Steuerelemente hinzufügen, Sie können diese Steuerelemente aber auch zur Laufzeit programmgesteuert hinzufügen. Sie können diese Steuerelemente jedem geöffneten Dokument oder Arbeitsblatt zur Laufzeit in einem VSTO-Add-in für Excel oder Word Programm gesteuert hinzufügen.
@@ -79,11 +81,11 @@ Auf einem Windows Form.
  Einige Aspekte der Verwendung von Windows Forms-Steuerelementen in Dokumenten gelten nur für Projekte auf Dokumentebene, die es Ihnen ermöglichen, die Benutzeroberfläche Ihres Dokuments mit Visual Studio-Designer zu entwerfen.
 
 ### <a name="create-custom-user-controls"></a>Erstellen von benutzerdefinierten Benutzer Steuerelementen
- Sie können Ihrem Projekt ein Benutzersteuerelement hinzufügen und das Steuerelement dann der **Toolbox**hinzufügen. Danach können Sie das Benutzersteuerelement direkt in der gleichen Weise auf das Dokument ziehen, in der Sie einem Dokument ein Windows Forms-Steuerelement hinzufügen. Es gibt einige Punkte zu beachten, wenn Sie Benutzersteuerelemente erstellen:
+ Sie können Ihrem Projekt ein Benutzersteuerelement hinzufügen und das Steuerelement dann der **Toolbox** hinzufügen. Danach können Sie das Benutzersteuerelement direkt in der gleichen Weise auf das Dokument ziehen, in der Sie einem Dokument ein Windows Forms-Steuerelement hinzufügen. Es gibt einige Punkte zu beachten, wenn Sie Benutzersteuerelemente erstellen:
 
-- Erstellen Sie kein **sealed** Benutzersteuerelement. Wenn Sie das Steuerelement auf ein Dokument ziehen, generiert Visual Studio eine Wrapperklasse, die aus dem Benutzersteuerelement abgeleitet wird, um das Steuerelement zu erweitern und seine Verwendung auf dem Dokument zu unterstützen. Wenn das Benutzersteuerelement **sealed**ist, kann Visual Studio die Wrapperklasse nicht generieren.
+- Erstellen Sie kein **sealed** Benutzersteuerelement. Wenn Sie das Steuerelement auf ein Dokument ziehen, generiert Visual Studio eine Wrapperklasse, die aus dem Benutzersteuerelement abgeleitet wird, um das Steuerelement zu erweitern und seine Verwendung auf dem Dokument zu unterstützen. Wenn das Benutzersteuerelement **sealed** ist, kann Visual Studio die Wrapperklasse nicht generieren.
 
-- Für Benutzersteuerelemente muss das <xref:System.Runtime.InteropServices.ComVisibleAttribute> -Attribut auf **true**. Bei Benutzersteuerelementen, die in einem Office-Projekt erstellt werden, ist dieses Attribut standardmäßig auf **true** festgelegt, aber bei Benutzersteuerelementen, die zu externen Projekten gehören, ist dieses Attribut möglicherweise nicht auf **true**festgelegt.
+- Für Benutzersteuerelemente muss das <xref:System.Runtime.InteropServices.ComVisibleAttribute> -Attribut auf **true**. Bei Benutzersteuerelementen, die in einem Office-Projekt erstellt werden, ist dieses Attribut standardmäßig auf **true** festgelegt, aber bei Benutzersteuerelementen, die zu externen Projekten gehören, ist dieses Attribut möglicherweise nicht auf **true** festgelegt.
 
 - Nachdem Sie dem Dokument ein Benutzersteuerelement hinzugefügt haben, dürfen Sie die <xref:System.Windows.Forms.UserControl> -Klasse weder umbenennen noch aus dem Projekt löschen. Müssen Sie den Namen eines Benutzersteuerelements ändern, müssen Sie es zunächst aus dem Dokument löschen. Danach können Sie es, sobald der Name geändert wurde, erneut hinzufügen.
 
@@ -112,7 +114,7 @@ Auf einem Windows Form.
 > In Word-Projekten sind diese Schaltflächen nur aktiviert, wenn die ausgewählten Steuerelemente nicht am Text ausgerichtet sind. Standardmäßig werden Steuerelemente, die Sie dem Dokument zur Entwurfszeit hinzufügen, am Text ausgerichtet.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Verhindern, dass alte Daten beim Laden in Excel-Arbeitsmappen angezeigt werden
- Wenn Sie Dokumenten oder Arbeitsmappen zur Entwurfszeit Windows Forms-Steuerelemente hinzufügen, verbleiben die Steuerelemente im Dokument, wenn der Benutzer das Dokument schließt. Steuerelemente, die zur Entwurfszeit hinzufügt wurden, werden auch als *statische*Steuerelemente bezeichnet.
+ Wenn Sie Dokumenten oder Arbeitsmappen zur Entwurfszeit Windows Forms-Steuerelemente hinzufügen, verbleiben die Steuerelemente im Dokument, wenn der Benutzer das Dokument schließt. Steuerelemente, die zur Entwurfszeit hinzufügt wurden, werden auch als *statische* Steuerelemente bezeichnet.
 
  Wird eine Excel-Arbeitsmappe geöffnet, die ein statisches Steuerelement enthält, wird in der Arbeitsmappe solange eine Bitmap des Steuerelements in einem ActiveX-Steuerelement angezeigt, bis der Anpassungscode ausgeführt und das tatsächliche Steuerelement geladen wird. Diese Bitmap wird von Excel erstellt und bei jedem Speichern der Arbeitsmappe in der Arbeitsmappe gespeichert. Das Steuerelement wird in der Bitmap so angezeigt, wie es zum Zeitpunkt der letzten Speicherung der Arbeitsmappe angezeigt wurde, einschließlich aller vom Steuerelement angezeigten Daten. Weitere Informationen zu dem ActiveX-Steuerelement, das Windows Forms Steuerelemente und Bitmaps enthält, finden Sie unter [Einschränkungen für Windows Forms Steuerelemente in Office-Dokumenten](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
@@ -125,7 +127,7 @@ Auf einem Windows Form.
  Sie können Komponenten, die auf allen Arbeitsblättern nutzbar sein sollen (etwa ein <xref:System.Data.DataSet>), dem Arbeitsmappen-Designer hinzufügen, statt sie den Arbeitsblättern hinzuzufügen. Die Komponente wird auf der Komponentenleiste angezeigt.
 
 ### <a name="formula-for-embedding-controls-on-an-excel-worksheet"></a>Formel zum Einbetten von Steuerelementen in einem Excel-Arbeitsblatt
- Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+ Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste** angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ### <a name="layout-style-of-controls-on-a-word-document"></a>Layoutstil von Steuerelementen in einem Word-Dokument
  Wenn Sie einem Word-Dokument in einem Projekt auf Dokumentebene mithilfe des Visual Studio Designers ein Steuerelement hinzufügen, wird das Steuerelement in den Textfluss eingefügt. Um den Layoutstil eines Steuerelements zu ändern, klicken Sie mit der rechten Maustaste auf das Steuerelement, und klicken Sie dann auf **Steuerelement formatieren**. Wählen Sie im Dialogfeld **Objekt formatieren** auf der Seite **Layout** eine Umbruchart aus.

@@ -1,5 +1,7 @@
 ---
 title: Erstellen Sie Ihre erste Anpassung auf Dokument Ebene für Excel
+description: Erstellen Sie eine Anpassung auf Dokument Ebene für Microsoft Excel. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind nur verfügbar, wenn eine bestimmte Arbeitsmappe geöffnet ist.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585001"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527954"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokument Ebene für Excel
 
@@ -58,17 +60,17 @@ ms.locfileid: "91585001"
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 ::: moniker range="vs-2017"
-3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.
+3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic** und dann **Office/SharePoint**.
 
 4. Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **VSTO-Add-ins** aus.
 
 5. Wählen Sie in der Liste der Projektvorlagen ein Excel-VSTO-Arbeitsmappenprojekt aus.
 
-6. Geben Sie im Feld **Name den Namen** **firstworkbookcustomia**ein.
+6. Geben Sie im Feld **Name den Namen** **firstworkbookcustomia** ein.
 
 7. Klicken Sie auf **OK**.
 
-8. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte**die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
+8. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte** die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. Wählen Sie im Dialogfeld **Neues Projekt erstellen** das **Excel-VSTO** -Arbeitsmappenprojekt aus.
@@ -79,7 +81,7 @@ ms.locfileid: "91585001"
 
 5. Geben Sie im Dialogfeld **Neues Projekt konfigurieren** im Feld **Name** den Text **firstworkbookcustomia** ein, und klicken Sie auf **Erstellen**.
 
-6. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte**die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
+6. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte** die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das Projekt **firstworkbookcustomiund** fügt dem Projekt die folgenden Dateien hinzu.
 
@@ -103,11 +105,11 @@ ms.locfileid: "91585001"
 
 1. Schließen Sie die Arbeitsmappe, indem Sie auf die Schaltfläche **Schließen** (X) für das Fenster "Designer" klicken.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Codedatei **Sheet1** , und klicken Sie dann auf **Designer anzeigen**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf die Codedatei **Sheet1** , und klicken Sie dann auf **Designer anzeigen**.
 
      \- oder -
 
-     Doppelklicken Sie in **Projektmappen-Explorer**auf die **Sheet1** -Codedatei.
+     Doppelklicken Sie in **Projektmappen-Explorer** auf die **Sheet1** -Codedatei.
 
 ## <a name="add-text-to-a-worksheet-in-the-designer"></a>Hinzufügen von Text zu einem Arbeitsblatt im Designer
 
@@ -115,12 +117,12 @@ ms.locfileid: "91585001"
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>So fügen Sie einem Arbeitsblatt mithilfe des Designers Text hinzu
 
-1. Wählen Sie im Arbeitsblatt, das im Designer geöffnet ist, Zelle **a1**aus, und geben Sie dann den folgenden Text ein.
+1. Wählen Sie im Arbeitsblatt, das im Designer geöffnet ist, Zelle **a1** aus, und geben Sie dann den folgenden Text ein.
 
      **Dieser Text wurde mithilfe des Designers hinzugefügt.**
 
 > [!WARNING]
-> Wenn Sie diese Textzeile der Zelle **a2**hinzufügen, wird Sie von anderem Code in diesem Beispiel überschrieben.
+> Wenn Sie diese Textzeile der Zelle **a2** hinzufügen, wird Sie von anderem Code in diesem Beispiel überschrieben.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Programm gesteuertes Hinzufügen von Text zu einem Arbeitsblatt
 
@@ -132,7 +134,7 @@ ms.locfileid: "91585001"
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>So fügen Sie dem Arbeitsblatt mithilfe von Code eine zweite Textzeile hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1**, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **Sheet1**, und klicken Sie dann auf **Code anzeigen**.
 
      Die Codedatei wird in Visual Studio geöffnet.
 

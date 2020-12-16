@@ -1,5 +1,7 @@
 ---
 title: Ändern der Dokument Formatierung mithilfe von CheckBox-Steuerelementen
+description: Erfahren Sie, wie Sie Windows Forms-Steuerelemente in einer Anpassung auf Dokument Ebene für Microsoft Word verwenden, um die Textformatierung zu ändern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328722"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527251"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der Dokument Formatierung mit CheckBox-Steuerelementen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Windows Forms Steuerelemente in einer Anpassung auf Dokument Ebene für Microsoft Office Word verwendet werden, um die Textformatierung zu ändern.
@@ -45,16 +47,16 @@ ms.locfileid: "67328722"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  Im ersten Schritt wird ein Word-Dokumentprojekt erstellt.
 
 ### <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
 
-1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **meine Wort Formatierung**. Wählen Sie im Assistenten **Neues Dokument erstellen**aus.
+1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **meine Wort Formatierung**. Wählen Sie im Assistenten **Neues Dokument erstellen** aus.
 
      Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer**das Projekt " **My Word-Formatierung** " hinzu.
+     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer** das Projekt " **My Word-Formatierung** " hinzu.
 
 ## <a name="add-text-and-controls-to-the-word-document"></a>Hinzufügen von Text und Steuerelementen zum Word-Dokument
  Fügen Sie in dieser exemplarischen Vorgehensweise dem Word-Dokument drei Kontrollkästchen und Text in einem-Steuerelement hinzu <xref:Microsoft.Office.Tools.Word.Bookmark> . Mit den Kontrollkästchen werden dem Benutzeroptionen zum Formatieren des Texts angezeigt.
@@ -88,7 +90,7 @@ ms.locfileid: "67328722"
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**applyUnderlineFont**|
-    |**Text**|**Streichen**|
+    |**Text**|**Underline**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>Hinzufügen von Text und Lesezeichen-Steuerelementen
 

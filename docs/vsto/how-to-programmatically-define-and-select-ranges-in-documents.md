@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten'
+description: Erfahren Sie, wie Sie Bereiche in Microsoft Word-Dokumenten mithilfe des Range-Objekts Programm gesteuert definieren und auswählen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5af4ceeb37574fef6eb55d80f3c173b71ac090e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cc0475f7b25550b85018477d7c842f012445e2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545950"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528332"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten
   Sie können einen Bereich in einem Microsoft Office Word-Dokument mithilfe eines <xref:Microsoft.Office.Interop.Word.Range>-Objekts definieren. Sie können das gesamte Dokument auf verschiedene Weise auswählen, z. b. mithilfe der- <xref:Microsoft.Office.Interop.Word.Range.Select%2A> Methode des- <xref:Microsoft.Office.Interop.Word.Range> Objekts oder mithilfe der Content-Eigenschaft der- <xref:Microsoft.Office.Tools.Word.Document> Klasse (in einer Anpassung auf Dokument Ebene) oder der- <xref:Microsoft.Office.Interop.Word.Document> Klasse (in einem VSTO-Add-in).

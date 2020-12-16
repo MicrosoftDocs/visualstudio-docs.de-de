@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Signieren von Office-Lösungen'
+description: Erfahren Sie, wie Sie Ihrer Microsoft Office Lösung mithilfe eines Zertifikats als Beweis Vertrauen gewähren können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545755"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528116"
 ---
 # <a name="how-to-sign-office-solutions"></a>Gewusst wie: Signieren von Office-Lösungen
   Wenn Sie eine Lösung signieren, können Sie der Lösung mithilfe des Zertifikats als Beweis Vertrauen gewähren. Sie können das gleiche Zertifikat für mehrere Lösungen verwenden, und alle Lösungen werden ohne zusätzliche Sicherheitsrichtlinien Updates als vertrauenswürdig eingestuft.
@@ -35,11 +37,11 @@ ms.locfileid: "85545755"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>So signieren Sie eine Office-Projekt Mappe mithilfe eines Zertifikats
 
-1. Klicken Sie im Menü **Projekt** auf**Eigenschaften**von _SolutionName_.
+1. Klicken Sie im Menü **Projekt** auf **Eigenschaften** von _SolutionName_.
 
 2. Klicken Sie auf die Registerkarte **Signierung** .
 
-3. Wählen Sie **ClickOnce-Manifeste signieren**aus.
+3. Wählen Sie **ClickOnce-Manifeste signieren** aus.
 
 4. Suchen Sie das Zertifikat, indem **Sie auf aus Speicher auswählen** klicken oder **aus Datei auswählen** und zum Zertifikat navigieren.
 

@@ -1,5 +1,7 @@
 ---
 title: Word-Projektmappen
+description: Erfahren Sie, wie Sie mit Visual Studio-Lösungen Word automatisieren, Word-Features erweitern und die Word-Benutzeroberfläche anpassen können.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55ffb54e00af0291a33bd635ea81d3d865cc4c9a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985381"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528365"
 ---
 # <a name="word-solutions"></a>Word-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie verwenden können, um Anpassungen auf Dokumentebene und VSTO-Add-Ins für Microsoft Office Word zu erstellen. Mit diesen Projektmappen können Sie Word automatisieren, Word-Features erweitern und die Word-Benutzeroberfläche anpassen. Weitere Informationen zu den Unterschieden zwischen Anpassungen auf Dokument Ebene und VSTO-Add-Ins finden Sie unter Übersicht über die Entwicklung von Office-Projektmappen [&#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -107,7 +109,7 @@ ms.locfileid: "72985381"
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)|Hier finden Sie eine Übersicht über die wichtigsten Typen im Word-Objektmodell.|
 |[Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)|Hier finden Sie Informationen zu erweiterten Objekten (der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), die in Word-Projektmappen verwendet werden können.|

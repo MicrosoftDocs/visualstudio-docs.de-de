@@ -1,5 +1,7 @@
 ---
 title: Daten überprüfen, wenn das ListObject-Steuerelement eine neue Zeile hinzufügt
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um Daten zu validieren, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b89d7c6709b577d23213d23ca25b1ce67e505dab
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e60f19da0d36c5a57f0151318d6d76b43a80de37
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584871"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528524"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Gewusst wie: Validieren von Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird
   Benutzer können einem <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement, das an Daten gebunden ist, neue Zeilen hinzufügen. Sie können die Daten des Benutzers überprüfen, bevor Sie Änderungen in einem Commit an die Datenquelle übertragen.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="data-validation"></a>Datenvalidierung
+## <a name="data-validation"></a>Datenüberprüfung
  Sobald einem <xref:Microsoft.Office.Tools.Excel.ListObject> , das an Daten gebunden ist, eine Zeile hinzugefügt wird, wird das <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> -Ereignis ausgelöst. Sie können dieses Ereignis behandeln, um Ihre Datenüberprüfung durchzuführen. Wenn die Anwendung beispielsweise erfordert, dass der Datenquelle nur Mitarbeiter zwischen 18 und 65 hinzugefügt werden können, müssen Sie überprüfen, ob das eingegebene Alter innerhalb dieses Bereichs liegt, bevor die Zeile hinzugefügt wird.
 
 > [!NOTE]

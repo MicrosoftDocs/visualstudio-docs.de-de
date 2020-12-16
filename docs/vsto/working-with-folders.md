@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit Ordnern
+description: Erfahren Sie, dass die Klasse "MAPIFolder" die Methoden und Eigenschaften enthält, die Sie für den Zugriff, die Erstellung und das Anpassen von Ordnern verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32dca296ef286e4c892791a1e71cfc765df80f19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ca2d6c690e094884313bc128291dd7295103d54
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815496"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526980"
 ---
 # <a name="work-with-folders"></a>Arbeiten mit Ordnern
   Die <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> -Klasse enthält die Methoden und Eigenschaften, die Sie für den Zugriff, die Erstellung und das Anpassen von Ordnern verwenden.

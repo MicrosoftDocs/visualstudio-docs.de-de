@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Ändern der Größe von ListObject-Steuerelementen'
+description: Erfahren Sie, wie Sie Visual Studio zum programmgesteuerten Ändern der Größe von ListObject-Steuerelementen in einer Microsoft Excel-Arbeitsmappe verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545833"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528540"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Gewusst wie: Ändern der Größe von ListObject-Steuerelementen
   Sie legen die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelements fest, wenn Sie es einer Microsoft Office Excel-Arbeitsmappe hinzufügen. Möglicherweise möchten Sie dessen Größe jedoch zu einem späteren Zeitpunkt ändern. Beispielsweise könnte es sein, dass Sie eine zweispaltige Liste in eine dreispaltige Liste ändern möchten.
@@ -42,7 +44,7 @@ ms.locfileid: "85545833"
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>So ändern Sie die Größe einer Liste im Dialogfeld „Größe der Liste ändern“
 
-1. Klicken Sie in der Tabelle auf eine beliebige Stelle  <xref:Microsoft.Office.Tools.Excel.ListObject> . Die Registerkarte Entwurf der **Tabellen Tools**  >  **Design** im Menüband wird angezeigt.
+1. Klicken Sie in der Tabelle auf eine beliebige Stelle  <xref:Microsoft.Office.Tools.Excel.ListObject> . Die Registerkarte Entwurf der **Tabellen Tools**  >   im Menüband wird angezeigt.
 
 2. Klicken Sie im Abschnitt Eigenschaften auf die **Tabelle ändern**.
 
@@ -62,7 +64,7 @@ ms.locfileid: "85545833"
      [!code-csharp[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#6)]
 
-2. Ändern Sie die Größe der Liste, sodass sie die Zellen **A1** bis **C5**umfasst.
+2. Ändern Sie die Größe der Liste, sodass sie die Zellen **A1** bis **C5** umfasst.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
@@ -77,7 +79,7 @@ ms.locfileid: "85545833"
      [!code-csharp[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#12)]
      [!code-vb[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#12)]
 
-2. Ändern Sie die Größe der Liste, sodass sie die Zellen **A1** bis **C5**umfasst.
+2. Ändern Sie die Größe der Liste, sodass sie die Zellen **A1** bis **C5** umfasst.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]

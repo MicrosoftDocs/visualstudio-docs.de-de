@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel'
+description: Erstellen Sie ein Add-in auf Anwendungsebene für Microsoft Excel. Die von Ihnen erstellten Funktionen sind für die Anwendung selbst verfügbar, unabhängig davon, welche Arbeitsmappen geöffnet sind.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69548015"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527912"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel
   Diese exemplarische Vorgehensweise zur Einführung veranschaulicht, wie Sie ein Add-In auf Anwendungsebene für Microsoft Office Excel erstellen. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Arbeitsmappen geöffnet sind.
@@ -48,7 +50,7 @@ ms.locfileid: "69548015"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
 
 #### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>So erstellen Sie ein neues Excel-VSTO-Add-In-Projekt in Visual Studio
 
@@ -56,13 +58,13 @@ ms.locfileid: "69548015"
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.
+3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic** und dann **Office/SharePoint**.
 
 4. Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.
 
-5. Wählen Sie in der Liste mit den Projektvorlagen **Excel 2010-Add-In** oder **Excel 2013-Add-In**aus.
+5. Wählen Sie in der Liste mit den Projektvorlagen **Excel 2010-Add-In** oder **Excel 2013-Add-In** aus.
 
-6. Geben Sie im Feld **Name** den Text **FirstExcelAddIn**ein.
+6. Geben Sie im Feld **Name** den Text **FirstExcelAddIn** ein.
 
 7. Klicken Sie auf **OK**.
 

@@ -1,5 +1,7 @@
 ---
 title: Verwaltete Referenz (Office-Entwicklung in Visual Studio)
+description: Erfahren Sie mehr über die API-Referenz Dokumentation für Namespaces und Typen, die in Office-Projekten verwendet werden, die auf die .NET Framework abzielen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ae614ceef76a0ab5789c04212a3facfa571662
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 044ba7e4858a87dea1894f647f110d62b840aa42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583748"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528510"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Verwaltete Referenz (Office-Entwicklung in Visual Studio)
   Dieser Abschnitt enthält eine API-Referenzdokumentation zu Namespaces und Typen, die in Office-Projekten für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](includes/net-v45-md.md)]verwendet werden. Eine API-Referenz Dokumentation zu den Namespaces und Typen, die in Office-Projekten verwendet werden, die auf .NET Framework 3,5 abzielen, finden Sie im folgenden Referenz Abschnitt in der Visual Studio-Dokumentation: [verwaltete Referenz (Office-Entwicklung in Visual Studio)](managed-reference-office-development-in-visual-studio.md).
