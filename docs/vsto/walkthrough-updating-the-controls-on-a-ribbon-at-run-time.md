@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit'
+description: Erfahren Sie, wie Sie das Menüband-Objektmodell zum Aktualisieren der Steuerelemente auf einem Menüband verwenden können, nachdem das Menüband in die Office-Anwendung geladen wurde.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298053"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526051"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit
 
@@ -62,7 +64,7 @@ Erstellen Sie zunächst ein neues Outlook VSTO-Add-In-Projekt.
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Erstellen Sie in ein Outlook VSTO-Add-in-Projekt mit dem Namen **Ribbon_Update_At_Runtime**.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen**aus.
+2. Wählen Sie im Dialogfeld **Neues Projekt** die Option **Projektmappenverzeichnis erstellen** aus.
 
 3. Speichern Sie das Projekt im Standardprojektverzeichnis.
 
@@ -90,19 +92,19 @@ Das Menüband für dieses Beispiel wird angezeigt, wenn ein Benutzer eine neue e
 
 6. Klicken Sie im Menüband-Designer auf **group1** , um es auszuwählen.
 
-7. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Kunden Käufe**fest.
+7. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Kunden Käufe** fest.
 
-8. Ziehen Sie von der Registerkarte Steuer **Elemente für Office** -Menü Bänder der **Toolbox**ein Kombinations **Feld** auf die Gruppe **Kunden Käufe** .
+8. Ziehen Sie von der Registerkarte Steuer **Elemente für Office** -Menü Bänder der **Toolbox** ein Kombinations **Feld** auf die Gruppe **Kunden Käufe** .
 
 9. Klicken Sie auf **ComboBox1** , um es auszuwählen.
 
-10. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Kunden**fest.
+10. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Kunden** fest.
 
-11. Ziehen Sie von der Registerkarte Steuer **Elemente für Office** -Menü Bänder der **Toolbox**ein **Menü** auf die Gruppe **Kunden Käufe** .
+11. Ziehen Sie von der Registerkarte Steuer **Elemente für Office** -Menü Bänder der **Toolbox** ein **Menü** auf die Gruppe **Kunden Käufe** .
 
-12. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Produkt gekauft**fest.
+12. Legen Sie im Fenster **Eigenschaften** die **Bezeichnung** auf **Produkt gekauft** fest.
 
-13. Legen Sie **Dynamic** auf **true**fest.
+13. Legen Sie **Dynamic** auf **true** fest.
 
      Dies ermöglicht Ihnen das Hinzufügen und Entfernen von Steuerelementen im Menü zur Laufzeit, nachdem das Menüband in die Office-Anwendung geladen wurde.
 
@@ -114,7 +116,7 @@ Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem 
 
 1. Klicken Sie auf die Registerkarte **TabAddins (integriert)** , um Sie auszuwählen.
 
-2. Erweitern Sie im Fenster **Eigenschaften** die Eigenschaft **ControlID** , und legen Sie **OfficeId** auf **TabNewMailMessage**fest.
+2. Erweitern Sie im Fenster **Eigenschaften** die Eigenschaft **ControlID** , und legen Sie **OfficeId** auf **TabNewMailMessage** fest.
 
      Dadurch wird die Gruppe " **Kunden Käufe** " der Registerkarte **Nachrichten** des Menübands hinzugefügt, das in einer neuen e-Mail angezeigt wird.
 
@@ -122,7 +124,7 @@ Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem 
 
 4. Erweitern Sie im Fenster **Eigenschaften** die Eigenschaft **Position** , klicken Sie auf den Dropdown Pfeil neben der Eigenschaft **PositionType** , und klicken Sie dann auf **BeforeOfficeId**.
 
-5. Legen Sie die **OfficeId-** Eigenschaft auf **GroupClipBoard**fest.
+5. Legen Sie die **OfficeId-** Eigenschaft auf **GroupClipBoard** fest.
 
      Dadurch wird die Gruppe **Kunden Käufe** vor der Gruppe **Zwischenablage** auf der Registerkarte **Nachrichten** positioniert.
 
@@ -134,11 +136,11 @@ Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset 
 
 1. Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.
 
-     Dadurch wird der **Assistent zum Konfigurieren von Datenquellen**gestartet.
+     Dadurch wird der **Assistent zum Konfigurieren von Datenquellen** gestartet.
 
-2. Wählen Sie **Datenbank**aus, und klicken Sie dann auf **weiter**.
+2. Wählen Sie **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
-3. Wählen Sie **DataSet**aus, und klicken Sie dann auf **weiter**.
+3. Wählen Sie **DataSet** aus, und klicken Sie dann auf **weiter**.
 
 4. Wählen Sie eine Datenverbindung mit der Beispieldatenbank Northwind Microsoft SQL Server Compact 4,0 aus, oder fügen Sie mithilfe der Schaltfläche **neue Verbindung** eine neue Verbindung hinzu.
 
@@ -150,7 +152,7 @@ Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset 
 
 8. Aktivieren Sie das Kontrollkästchen neben jeder der folgenden Tabellen:
 
-    1. **Kunden**
+    1. **Folgend**
 
     2. **Auftragsdetails**
 
@@ -178,7 +180,7 @@ Verwenden Sie Menüband-Objektmodell, um die folgenden Aufgaben auszuführen:
 
     Diese Assembly enthält Klassen für die Verwendung von LINQ (Language-Integrated Queries). Sie verwenden LINQ zum Auffüllen der Steuerelemente in der benutzerdefinierten Gruppe mit Daten aus der Datenbank "Northwind".
 
-3. Klicken Sie in **Projektmappen-Explorer**auf **CustomerRibbon.cs** oder **CustomerRibbon. vb** , um es auszuwählen.
+3. Klicken Sie in **Projektmappen-Explorer** auf **CustomerRibbon.cs** oder **CustomerRibbon. vb** , um es auszuwählen.
 
 4. Klicken Sie im Menü **Ansicht** auf **Code**.
 
@@ -219,7 +221,7 @@ Verwenden Sie Menüband-Objektmodell, um die folgenden Aufgaben auszuführen:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
 
-10. Doppelklicken Sie in **Projektmappen-Explorer**auf die Menüband-Codedatei.
+10. Doppelklicken Sie in **Projektmappen-Explorer** auf die Menüband-Codedatei.
 
      Der Menüband-Designer wird geöffnet.
 

@@ -1,5 +1,7 @@
 ---
 title: Schreiben von Code in Office-Lösungen
+description: Erfahren Sie, wie Sie Code in Microsoft Office Lösungen schreiben und erfahren, wie die Office-Objekt Modelle im verwalteten Code verfügbar gemacht werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -33,12 +35,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cead0569ae067fcc503f7f2074807c609e6eed75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255044"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526023"
 ---
 # <a name="write-code-in-office-solutions"></a>Schreiben von Code in Office-Lösungen
   Einige Aspekte beim Schreiben von Code in Office-Projekten unterscheiden sich von anderen Projekttypen. Viele dieser Unterscheide haben mit der Art zu tun, wie die Office-Objektmodelle im verwalteten Code verfügbar gemacht werden. Andere Unterschiede beziehen sich auf den Entwurf von Office-Projekten.
@@ -105,7 +107,7 @@ ms.locfileid: "71255044"
 
 In der folgenden Tabelle werden die wichtigsten Unterschiede zwischen Visual Basic und Visual C# bei der Office-Entwicklung angezeigt.
 
-|Funktion|Beschreibung|Visual Basic-Unterstützung|Visual C#-Unterstützung|
+|Funktion|BESCHREIBUNG|Visual Basic-Unterstützung|Visual C#-Unterstützung|
 |-------------|-----------------|--------------------------|------------------------|
 |Optionale Parameter|Viele Microsoft Office-Methoden verfügen über Parameter, die nicht erforderlich sind, wenn Sie die Methode aufrufen. Wenn kein Wert für den Parameter übergeben wird, wird ein Standardwert verwendet.|Visual Basic unterstützt optionale Parameter.|Visual C# unterstützt in den meisten Fällen optionale Parameter. Weitere Informationen finden Sie unter [optionale Parameter in Office](../vsto/optional-parameters-in-office-solutions.md)-Projektmappen.|
 |Übergeben von Parametern durch einen Verweis|Optionale Parameter können in den meisten der primären Interopassemblys von Microsoft Office als Wert übergeben werden. In manchen primären Interopassemblys müssen optionale Parameter, die Referenztypen akzeptieren, jedoch als Verweis übergeben werden.<br /><br /> Weitere Informationen zu Wert-und Verweistyp Parametern finden Sie unter [übergeben von Argumenten als Wert und als Verweis &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (für Visual Basic) und [übergeben von Parametern &#40;C&#35; Programmier Handbuch&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Es sind keine weiteren Aufgaben erforderlich, um Parameter als Verweis zu übergeben. Der Visual Basic-Compiler übergibt die Parameter automatisch durch einen Verweis, wenn dies erforderlich ist.|In den meisten Fällen übergibt der Visual C#-Compiler automatisch die Parameter durch einen Verweis, wenn dies erforderlich ist. Weitere Informationen finden Sie unter [optionale Parameter in Office](../vsto/optional-parameters-in-office-solutions.md)-Projektmappen.|
@@ -115,11 +117,11 @@ In der folgenden Tabelle werden die wichtigsten Unterschiede zwischen Visual Bas
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Wichtige Unterschiede zwischen der Office-Entwicklung und verwaltetem Code
  In der folgenden Tabelle werden die wichtigsten Unterschiede zwischen der Office-Entwicklung und verwaltetem Code angezeigt, der mit Visual Basic und Visual C# geschrieben wurde.
 
-|Funktion|Beschreibung|Visual Basic- und Visual C#-Unterstützung|
+|Funktion|BESCHREIBUNG|Visual Basic- und Visual C#-Unterstützung|
 |-------------|-----------------|-----------------------------------------|
 |Arrayindizes|Die unteren Arraygrenzen der Auflistungen in Microsoft Office-Anwendungen beginnen mit 1. Visual Basic und Visual C# verwenden 0-basierte Arrays. Weitere Informationen finden Sie unter [Arrays &#40;C&#35; Programming Guide&#41;](/dotnet/csharp/programming-guide/arrays/index) und [Arrays in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Um auf das erste Element einer Auflistung im Objektmodell einer Microsoft Office-Anwendung zuzugreifen, verwenden Sie den Index 1 statt 0.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
 - [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)

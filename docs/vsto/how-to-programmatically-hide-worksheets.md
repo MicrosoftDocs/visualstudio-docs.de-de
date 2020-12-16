@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Ausblenden von Arbeitsblättern'
+description: Erfahren Sie, wie Sie mit dem Arbeitsblatt-Host Element ein Arbeitsblatt in einer Microsoft Excel-Arbeitsmappe Programm gesteuert anzeigen oder ausblenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83cf1f63a67525dca4cf9dbb5a4916da5d70b4ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a5ba61c7db0a62cf3e97fb8e4df5cb655e9f2dd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547406"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525669"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Gewusst wie: Programm gesteuertes Ausblenden von Arbeitsblättern
   Sie können jedes Arbeitsblatt in einer Arbeitsmappe anzeigen oder ausblenden. Wenn Sie ein Arbeitsblatt ausblenden möchten, verwenden Sie das Arbeitsblatt-Hostelement, oder greifen Sie auf das Arbeitsblatt mithilfe der Sheets-Auflistung der Arbeitsmappe zu.

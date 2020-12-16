@@ -1,5 +1,7 @@
 ---
 title: Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen
+description: Erfahren Sie mehr über die grundlegenden Unterschiede zwischen dem Verhalten von Host Elementen und Host Steuerelementen und systemeigenen Office-Objekten zur Laufzeit.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -31,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 098145ca901b1f16974058513d3781fc4621f217
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 08205473636a04dbc742b6c09c99e9771094f61c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584476"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525130"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Programmgesteuerte Einschränkungen von Host Elementen und Host Steuerelementen
   Jedes Hostelement und Hoststeuerelement ist so konzipiert, dass es sich wie ein entsprechendes systemeigenes Microsoft Office Word- oder Microsoft Office Excel-Objekt mit zusätzlichen Funktionen verhält. Es gibt jedoch einige grundlegende Unterschiede zwischen dem Verhalten von Hostelementen und Hoststeuerelementen und systemeigenen Office-Objekten zur Laufzeit.

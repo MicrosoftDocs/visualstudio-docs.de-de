@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Senden von e-Mails'
+description: Verwenden Sie Visual Studio, um Programm gesteuert eine e-Mail von Microsoft Outlook zu senden. In diesem Beispiel wird eine e-Mail-Nachricht an Kontakte gesendet, die den Domänen Namen example.com haben.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f31fdb92a5acff16b1d6e8001ea88931a9a22ab
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543259"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525377"
 ---
 # <a name="how-to-programmatically-send-email"></a>Gewusst wie: Programm gesteuertes Senden von e-Mails
   In diesem Beispiel wird eine e-Mail-Nachricht an Kontakte mit dem Domänen Namen **example.com** in Ihren e-Mail-Adressen gesendet.
@@ -38,7 +40,7 @@ ms.locfileid: "85543259"
 - Kontakte mit dem Domänen Namen **example.com** in Ihren e-Mail-Adressen.
 
 ## <a name="robust-programming"></a>Stabile Programmierung
- Entfernen Sie nicht den Filter Code, der nach dem Domänen Namen **example.com**sucht. Die Lösung sendet e-Mail-Nachrichten an alle Ihre Kontakte, wenn Sie den Filter entfernen.
+ Entfernen Sie nicht den Filter Code, der nach dem Domänen Namen **example.com** sucht. Die Lösung sendet e-Mail-Nachrichten an alle Ihre Kontakte, wenn Sie den Filter entfernen.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit e-Mail-Elementen](../vsto/working-with-mail-items.md)

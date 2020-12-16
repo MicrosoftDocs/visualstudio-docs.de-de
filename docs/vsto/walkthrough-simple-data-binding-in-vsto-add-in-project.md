@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: einfache Datenbindung in einem VSTO-Add-in-Projekt'
+description: Erfahren Sie, wie Sie einem Microsoft Word-Dokument Steuerelemente hinzufügen und die Steuerelemente zur Laufzeit an Daten binden können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584910"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526158"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: einfache Datenbindung in einem VSTO-Add-in-Projekt
 
@@ -52,17 +54,17 @@ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
   - Informationen zum Anfügen einer Datenbank über die Befehlszeile finden Sie unter Gewusst [wie: Anfügen einer Datenbankdatei an SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
 
 Der erste Schritt besteht im Erstellen eines VSTO-Add-In-Projekts für Word.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie mit Visual Basic oder C# ein Word-VSTO-Add-In-Projekt, das den Namen **Füllen von Dokumenten aus einer Datenbank**hat.
+1. Erstellen Sie mit Visual Basic oder C# ein Word-VSTO-Add-In-Projekt, das den Namen **Füllen von Dokumenten aus einer Datenbank** hat.
 
      Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet die Datei *ThisAddIn. vb* oder *ThisAddIn.cs* und fügt die **aufzufüllenden Dokumente aus einem Daten Bank** Projekt **Projektmappen-Explorer**hinzu.
+     Visual Studio öffnet die Datei *ThisAddIn. vb* oder *ThisAddIn.cs* und fügt die **aufzufüllenden Dokumente aus einem Daten Bank** Projekt **Projektmappen-Explorer** hinzu.
 
 2. Wenn das Projekt [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] auf oder ausgerichtet [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ist, fügen Sie einen Verweis auf die *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* -Assembly hinzu. Dieser Verweis ist erforderlich, um später in dieser exemplarischen Vorgehensweise dem Dokument programmgesteuert Windows Forms-Steuerelemente hinzuzufügen.
 
@@ -72,9 +74,9 @@ Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset 
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>So fügen Sie dem Projekt ein typisiertes Dataset hinzu
 
-1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen**anzeigen auswählen.
+1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
-2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
+2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Klicken Sie auf **Datenbank**, und klicken Sie dann auf **Weiter**.
 
@@ -88,7 +90,7 @@ Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset 
 
 7. Klicken Sie auf **Fertig stellen**.
 
-    Die Datei " *AdventureWorksLTDataSet. xsd* " wird **Projektmappen-Explorer**hinzugefügt. In dieser Datei sind die folgenden Elemente definiert:
+    Die Datei " *AdventureWorksLTDataSet. xsd* " wird **Projektmappen-Explorer** hinzugefügt. In dieser Datei sind die folgenden Elemente definiert:
 
    - Ein typisiertes Dataset namens `AdventureWorksLTDataSet`. Dieses Dataset entspricht dem Inhalt der **Customer (SalesLT)** -Tabelle in der AdventureWorksLT-Datenbank.
 
@@ -114,7 +116,7 @@ Weitere Informationen zum Binden von Steuerelementen an Daten finden Sie unter [
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3. Fügen Sie der `ThisAddIn_Startup` -Methode folgenden Code hinzu. Dadurch wird ein Hostelement generiert, das das Dokument erweitert. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Fügen Sie der `ThisAddIn_Startup` -Methode den folgenden Code hinzu. Dadurch wird ein Hostelement generiert, das das Dokument erweitert. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]

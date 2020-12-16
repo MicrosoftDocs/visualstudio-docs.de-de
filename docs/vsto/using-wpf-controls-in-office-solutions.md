@@ -1,5 +1,7 @@
 ---
 title: Verwenden von WPF-Steuerelementen in Office-Lösungen
+description: Erfahren Sie, wie Sie Windows Presentation Foundation (WPF)-Steuerelemente für das Entwerfen von Benutzeroberflächen in Visual Studio verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189750"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526446"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Verwenden von WPF-Steuerelementen in Office-Lösungen
 
@@ -45,7 +47,7 @@ Sie können Benutzeroberflächenelementen in Office-Projektmappen WPF-Steuerelem
 
 2. Fügen Sie dem Projekt ein **Benutzer Steuerelement (WPF)** -Element hinzu.
 
-3. Fügen Sie der Entwurfs Oberfläche der WPF-Benutzer Steuerelemente aus der **Toolbox**WPF-Steuerelemente hinzu.
+3. Fügen Sie der Entwurfs Oberfläche der WPF-Benutzer Steuerelemente aus der **Toolbox** WPF-Steuerelemente hinzu.
 
      Wenn der WPF-Benutzer Steuerelement-Designer geöffnet ist, enthält die **Toolbox** standardmäßig nur WPF-Steuerelemente.
 
@@ -59,7 +61,7 @@ Sie können Benutzeroberflächenelementen in Office-Projektmappen WPF-Steuerelem
 
     - Fügen Sie für benutzerdefinierte Aufgabenbereiche dem Projekt ein **Benutzer Steuer** Element-Element hinzu. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-6. Ziehen Sie aus der Registerkarte *ProjectName* **WPF-Benutzer Steuerelemente** der **Toolbox**das WPF-Benutzer Steuerelement in den Designer für den Aktionsbereich, den Formular Bereich oder den benutzerdefinierten Aufgabenbereich.
+6. Ziehen Sie aus der Registerkarte *ProjectName* **WPF-Benutzer Steuerelemente** der **Toolbox** das WPF-Benutzer Steuerelement in den Designer für den Aktionsbereich, den Formular Bereich oder den benutzerdefinierten Aufgabenbereich.
 
      Visual Studio erstellt automatisch ein <xref:System.Windows.Forms.Integration.ElementHost>-Objekt, das das WPF-Benutzersteuerelement im Benutzeroberflächenelement hostet.
 
@@ -71,7 +73,7 @@ Sie können Benutzeroberflächenelementen in Office-Projektmappen WPF-Steuerelem
 
 2. Fügen Sie dem Projekt ein **Benutzer Steuerelement (WPF)** -Element hinzu.
 
-3. Fügen Sie der Entwurfs Oberfläche der WPF-Benutzer Steuerelemente aus der **Toolbox**WPF-Steuerelemente hinzu.
+3. Fügen Sie der Entwurfs Oberfläche der WPF-Benutzer Steuerelemente aus der **Toolbox** WPF-Steuerelemente hinzu.
 
 4. Erstellen Sie das Projekt.
 
@@ -79,7 +81,7 @@ Sie können Benutzeroberflächenelementen in Office-Projektmappen WPF-Steuerelem
 
 6. Öffnen Sie den Designer für das Windows Forms-Benutzersteuerelement.
 
-7. Ziehen Sie das WPF-Benutzer Steuerelement auf der Registerkarte *ProjectName* **WPF-Benutzer Steuerelemente** der **Toolbox**auf den Designer.
+7. Ziehen Sie das WPF-Benutzer Steuerelement auf der Registerkarte *ProjectName* **WPF-Benutzer Steuerelemente** der **Toolbox** auf den Designer.
 
      Visual Studio erstellt automatisch ein <xref:System.Windows.Forms.Integration.ElementHost>-Objekt, das das WPF-Benutzersteuerelement im Windows Forms-Benutzersteuerelement hostet.
 
@@ -92,7 +94,7 @@ Sie können Benutzeroberflächenelementen in Office-Projektmappen WPF-Steuerelem
 
 ## <a name="host-wpf-controls-by-using-the-elementhost-class"></a>Hosten von WPF-Steuerelementen mithilfe der elemterthost-Klasse
 
-Visual Studio bietet Funktionen, die Sie beim Verwenden von Windows Forms-Steuerelementen in Office-Projektmappen unterstützen, aber es fehlen vergleichbare Funktionen für WPF-Steuerelemente. Beispielsweise können Sie Dokumenten und Arbeitsblättern Windows Forms Steuerelemente zur Entwurfszeit hinzufügen, indem Sie Steuerelemente aus der **Toolbox**ziehen, oder zur Laufzeit mithilfe von Hilfsmethoden. Diese Tools sind jedoch für WPF-Steuerelemente nicht verfügbar.
+Visual Studio bietet Funktionen, die Sie beim Verwenden von Windows Forms-Steuerelementen in Office-Projektmappen unterstützen, aber es fehlen vergleichbare Funktionen für WPF-Steuerelemente. Beispielsweise können Sie Dokumenten und Arbeitsblättern Windows Forms Steuerelemente zur Entwurfszeit hinzufügen, indem Sie Steuerelemente aus der **Toolbox** ziehen, oder zur Laufzeit mithilfe von Hilfsmethoden. Diese Tools sind jedoch für WPF-Steuerelemente nicht verfügbar.
 
 WPF-Steuerelemente verwenden die <xref:System.Windows.Forms.Integration.ElementHost>-Klasse als Integrationsebene zwischen einem Windows Forms-Steuerelement bzw. -Formular und den WPF-Steuerelementen. Wenn Sie der Projektmappe zur Entwurfszeit WPF-Steuerelemente hinzufügen, generiert Visual Studio automatisch ein <xref:System.Windows.Forms.Integration.ElementHost>-Objekt.
 

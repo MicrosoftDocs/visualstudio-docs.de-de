@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes durchlaufen gefundener Elemente in Dokumenten'
+description: Erfahren Sie, wie Sie mithilfe von Visual Studio gefundene Elemente in einem Microsoft Word-Dokument Programm gesteuert durchlaufen können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e033b3d43f40736d7c77d11b489c0a6c2e91434e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 634012cae7f12f5346ec83bbd2b41c1019ef066d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585144"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525620"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Gewusst wie: Programm gesteuertes durchlaufen gefundener Elemente in Dokumenten
   Die <xref:Microsoft.Office.Interop.Word.Find> -Klasse hat eine <xref:Microsoft.Office.Interop.Word.Find.Found%2A> -Eigenschaft, die jedes Mal **true** zurückgibt, wenn ein gesuchtes Element gefunden wurde. Sie können alle in einem <xref:Microsoft.Office.Interop.Word.Range> -Objekt gefundenen Instanzen mit der <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> -Methode durchlaufen.

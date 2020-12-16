@@ -1,5 +1,7 @@
 ---
 title: ListObject-Steuerelement
+description: Das ListObject-Steuerelement ist eine Liste, die Ereignisse verfügbar macht und an Daten gebunden werden kann. Außerdem können Sie ListObject-Steuerelemente einem Arbeitsblatt zur Entwurfszeit oder zur Laufzeit hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b5286a4bddff2b529abd0a565bb4dbeef7ffaf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a80b56134f59975a39d24e824b6c83b2513b163
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71251865"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526592"
 ---
 # <a name="listobject-control"></a>ListObject-Steuerelement
   Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ist eine Liste, die Ereignisse verfügbar macht und an Daten gebunden werden kann. Beim Hinzufügen einer Liste zu einem Arbeitsblatt erstellt Visual Studio ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement, für das Sie direkt programmieren können, ohne das Objektmodell von Microsoft Office Excel zu durchlaufen.
@@ -76,7 +78,7 @@ ms.locfileid: "71251865"
 ## <a name="rename-listobject-controls-in-excel"></a>Umbenennen von ListObject-Steuerelementen in Excel
  Excel ermöglicht es Benutzern, den Namen von Excel-Tabellen mithilfe der Registerkarte **Entwurf** zur Laufzeit zu ändern. Dieses Feature wird vom- <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement jedoch nicht unterstützt. Wenn ein Benutzer versucht, eine Excel-Tabelle umzubenennen, die <xref:Microsoft.Office.Tools.Excel.ListObject>entspricht, wird der Name der Excel-Tabelle beim Speichern der Arbeitsmappe automatisch auf den ursprünglichen Namen zurückgesetzt.
 
-## <a name="events"></a>Events
+## <a name="events"></a>Ereignisse
  Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement verfügbar:
 
 - <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>

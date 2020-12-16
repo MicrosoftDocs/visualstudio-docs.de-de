@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes Kopieren von Arbeitsblättern'
+description: Erfahren Sie, wie Sie eine Kopie eines Arbeitsblatts erstellen und dieses Arbeitsblatt vor oder nach einem vorhandenen Arbeitsblatt in der Arbeitsmappe einfügen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8226f337994c686d4d370e91831bc1262d3ef85e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4b2f16cfc8855f2adff3a4614c38eb70fbe7db5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546080"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524796"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Vorgehensweise: Programm gesteuertes Kopieren von Arbeitsblättern
   Sie können eine Kopie eines Arbeitsblatts erstellen und dieses Arbeitsblatt vor oder hinter einem vorhandenen Arbeitsblatt in der Arbeitsmappe einfügen. Wenn Sie nicht angeben, wo das Arbeitsblatt eingefügt werden soll, erstellt Excel eine neue Arbeitsmappe, die das neue Arbeitsblatt enthält.

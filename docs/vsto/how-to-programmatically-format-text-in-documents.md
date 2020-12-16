@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Formatieren von Text in Dokumenten'
+description: Erfahren Sie, wie Sie das Bereichs Objekt verwenden können, um Text in einem Microsoft Word-Dokument Programm gesteuert zu formatieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76af290b0e32126689dbe7b60f27889d9742ea7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931991529b160fedfe65a92e8243183792abf518
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519846"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525724"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>Gewusst wie: Programm gesteuertes Formatieren von Text in Dokumenten
   Sie können mit dem <xref:Microsoft.Office.Interop.Word.Range> -Objekt Text in einem Microsoft Office Word-Dokument formatieren.

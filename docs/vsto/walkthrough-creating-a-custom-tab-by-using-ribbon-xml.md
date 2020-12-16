@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML'
+description: Erfahren Sie, wie Sie der Registerkarte "Add-Ins" Schaltflächen hinzufügen und Microsoft Word mithilfe von Menüband (XML) automatisieren können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840886"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524883"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine benutzerdefinierte Registerkarte des Menübands mithilfe des Elements **Menüband (XML)** erstellt wird.
@@ -45,7 +47,7 @@ ms.locfileid: "90840886"
 
 - Microsoft Word.
 
-## <a name="create-the-project"></a>Erstellen eines Projekts
+## <a name="create-the-project"></a>Erstellen des Projekts
  Der erste Schritt besteht im Erstellen eines VSTO-Add-In-Projekts für Word. Die Registerkarte **Add-ins** wird später in diesem Dokument angepasst.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
@@ -54,7 +56,7 @@ ms.locfileid: "90840886"
 
      Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn. vb** und fügt das Projekt **MyRibbonAddIn** **Projektmappen-Explorer**hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn. vb** und fügt das Projekt **MyRibbonAddIn** **Projektmappen-Explorer** hinzu.
 
 ## <a name="create-the-vsto-add-ins-tab"></a>Erstellen der Registerkarte "VSTO-Add-Ins"
  Fügen Sie dem Projekt ein **Menüband (XML)** -Element hinzu, um die Registerkarte **Add-ins** zu erstellen. Später in dieser exemplarischen Vorgehensweise werden Sie dieser Registerkarte einige Schaltflächen hinzufügen.
@@ -69,23 +71,23 @@ ms.locfileid: "90840886"
 
      Die Datei **MyRibbon.cs** oder **MyRibbon. vb** wird im Designer geöffnet. Eine XML-Datei mit dem Namen **MyRibbon.xml** wird ebenfalls dem Projekt hinzugefügt.
 
-4. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **ThisAddIn.cs** oder **ThisAddIn. vb**, und klicken Sie dann auf **Code anzeigen**.
+4. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisAddIn.cs** oder **ThisAddIn. vb**, und klicken Sie dann auf **Code anzeigen**.
 
 5. Fügen Sie der Klasse **ThisAddin** den folgenden Code hinzu. Mit diesem Code wird die `CreateRibbonExtensibilityObject`-Methode überschrieben und der Office-Anwendung die Menüband-XML-Klasse zurückgegeben.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt **MyRibbonAddIn** , und klicken Sie dann auf **Erstellen**. Vergewissern Sie sich, dass das Projekt ohne Fehler erstellt wurde.
+6. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **MyRibbonAddIn** , und klicken Sie dann auf **Erstellen**. Vergewissern Sie sich, dass das Projekt ohne Fehler erstellt wurde.
 
 ## <a name="add-buttons-to-the-add-ins-tab"></a>Hinzufügen von Schaltflächen zur Registerkarte Add-ins
  Das Ziel dieses VSTO-Add-Ins besteht darin, Benutzern eine Möglichkeit bereitzustellen, dem aktiven Dokument Textbausteine und eine bestimmte Tabelle hinzuzufügen. Zum Bereitstellen der Benutzeroberfläche fügen Sie der Registerkarte **Add-ins** zwei Schaltflächen hinzu, indem Sie die Menüband-XML-Datei ändern. Später in dieser exemplarischen Vorgehensweise definieren Sie Rückrufmethoden für die Schaltflächen. Weitere Informationen zur Menüband-XML-Datei finden Sie unter [Menüband-XML](../vsto/ribbon-xml.md).
 
 ### <a name="to-add-buttons-to-the-add-ins-tab"></a>So fügen Sie der Registerkarte Add-ins Schaltflächen hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **MyRibbon.xml** und klicken Sie dann auf **Öffnen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **MyRibbon.xml** und klicken Sie dann auf **Öffnen**.
 
-2. Ersetzen Sie den Inhalt des **Register** Karten Elements durch den folgenden XML-Code. Mit diesem XML wird die Bezeichnung der Standard Steuerelement Gruppe in **Content**geändert, und es werden zwei neue Schaltflächen mit den Bezeichnungen **Text einfügen** und **Tabelle einfügen**hinzugefügt.
+2. Ersetzen Sie den Inhalt des **Register** Karten Elements durch den folgenden XML-Code. Mit diesem XML wird die Bezeichnung der Standard Steuerelement Gruppe in **Content** geändert, und es werden zwei neue Schaltflächen mit den Bezeichnungen **Text einfügen** und **Tabelle einfügen** hinzugefügt.
 
     ```xml
     <tab idMso="TabAddIns">
@@ -105,19 +107,19 @@ ms.locfileid: "90840886"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>So fügen Sie Rückrufmethoden für die Schaltflächen hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **MyRibbon.cs** oder **MyRibbon. vb**, und klicken Sie dann auf **Öffnen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **MyRibbon.cs** oder **MyRibbon. vb**, und klicken Sie dann auf **Öffnen**.
 
 2. Fügen Sie den folgenden Code am Anfang der Datei **MyRibbon.cs** oder **MyRibbon. vb** ein. Dieser Code erstellt einen Alias für den Namespace <xref:Microsoft.Office.Interop.Word>.
 
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]
 
-3. Fügen Sie der `MyRibbon`-Klasse die folgende Methode hinzu. Dies ist eine Rückruf Methode für die Schaltfläche **Text einfügen** , mit der dem aktiven Dokument an der aktuellen Position des Cursors eine Zeichenfolge hinzugefügt wird.
+3. Füge der `MyRibbon`-Klasse die folgende Methode hinzu. Dies ist eine Rückruf Methode für die Schaltfläche **Text einfügen** , mit der dem aktiven Dokument an der aktuellen Position des Cursors eine Zeichenfolge hinzugefügt wird.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]
 
-4. Fügen Sie der `MyRibbon`-Klasse die folgende Methode hinzu. Dies ist eine Rückruf Methode für die Schaltfläche **Tabelle einfügen** , die dem aktiven Dokument an der aktuellen Position des Cursors eine Tabelle hinzufügt.
+4. Füge der `MyRibbon`-Klasse die folgende Methode hinzu. Dies ist eine Rückruf Methode für die Schaltfläche **Tabelle einfügen** , die dem aktiven Dokument an der aktuellen Position des Cursors eine Tabelle hinzufügt.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]

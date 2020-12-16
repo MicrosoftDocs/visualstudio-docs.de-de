@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Auflisten zuletzt verwendeter Arbeitsmappendateien'
+description: Erfahren Sie, wie Sie mithilfe von Visual Studio zuletzt verwendete Microsoft Excel-Arbeitsmappendateien Programm gesteuert auflisten können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e3d6b57251bb19cfb02849defb157c949f4ce35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbcad553ade6234d3a688c8f718a0dd6e6cda509
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585157"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525633"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Gewusst wie: Programm gesteuertes Auflisten zuletzt verwendeter Arbeitsmappendateien
   Die- <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Eigenschaft gibt eine Auflistung zurück, die die Namen aller Dateien enthält, die in der Microsoft Office Excel-Liste der zuletzt verwendeten Dateien angezeigt werden. Die Länge der Liste variiert je nach der Anzahl der Dateien, die der Benutzer für die Beibehaltung ausgewählt hat. Die Ergebnisse können in einem Bereich angezeigt werden.

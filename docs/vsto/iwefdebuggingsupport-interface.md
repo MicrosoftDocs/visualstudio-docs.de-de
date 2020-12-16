@@ -1,5 +1,7 @@
 ---
 title: Iwef debuggingsupport-Schnittstelle
+description: Erfahren Sie, wie Sie eine Debugumgebung wie Visual Studio verwenden können, um das Debugging von Microsoft Office Anwendungen zu vereinfachen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a4883d36c1833c66a2539380184521b070f5c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a818973bdc2f62194d6ed0026c0798806fe5f2a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544728"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525317"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Iwef debuggingsupport-Schnittstelle
   Wird von einer Debugumgebung implementiert, z. b. Visual Studio, um das Debuggen von Apps für Office zu vereinfachen. Die Office-Anwendung, z. b. Word oder Excel, ruft diese Schnittstelle von Visual Studio ab und ruft dann an bestimmten Punkten während der Debugsitzung Methoden für die Schnittstelle auf.

@@ -1,5 +1,7 @@
 ---
 title: Office-Projekte in der Visual Studio-Umgebung
+description: Erfahren Sie, wie Microsoft Office Projekte eine Entwicklungs Darstellung haben, die anderen Projekttypen in Visual Studio ähnelt, z. b. Windows Forms Projekten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -41,15 +43,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978057"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525155"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Office-Projekte in der Visual Studio-Umgebung
-  Microsoft Office-Projekte verfügen über eine ähnliche Entwicklungsumgebung wie andere Projekttypen in Visual Studio, z. B. Windows Forms-Projekte. Wenn Sie ein Office-Projekt erstellen oder öffnen, werden die Projektelemente im **Projektmappen-Explorer**angezeigt. Bei Projekten auf Dokumentebene wird das Dokument (d. h. das Word-Dokument oder die Excel-Arbeitsmappe) in Visual Studio geöffnet, und das Dokument verhält sich wie ein visueller Designer.
+  Microsoft Office-Projekte verfügen über eine ähnliche Entwicklungsumgebung wie andere Projekttypen in Visual Studio, z. B. Windows Forms-Projekte. Wenn Sie ein Office-Projekt erstellen oder öffnen, werden die Projektelemente im **Projektmappen-Explorer** angezeigt. Bei Projekten auf Dokumentebene wird das Dokument (d. h. das Word-Dokument oder die Excel-Arbeitsmappe) in Visual Studio geöffnet, und das Dokument verhält sich wie ein visueller Designer.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -64,14 +66,14 @@ ms.locfileid: "62978057"
 
   In einem VSTO-Add-In-Projekt werden im **Projektmappen-Explorer** die folgenden Standardelemente angezeigt:
 
-- Der Anwendungsknoten Dieser Knoten verfügt über den gleichen Namen wie die Hostanwendung, z. B. **Word**, **Excel**oder **Outlook**. Der Anwendungsknoten enthält die ThisAddIn-Codedatei. Er stellt auch die Eigenschaft **Namespace für Hostelement** bereit. Weitere Informationen zu dieser Eigenschaft finden Sie unter [Eigenschaften in Office-Projekten](../vsto/properties-in-office-projects.md).
+- Der Anwendungsknoten Dieser Knoten verfügt über den gleichen Namen wie die Hostanwendung, z. B. **Word**, **Excel** oder **Outlook**. Der Anwendungsknoten enthält die ThisAddIn-Codedatei. Er stellt auch die Eigenschaft **Namespace für Hostelement** bereit. Weitere Informationen zu dieser Eigenschaft finden Sie unter [Eigenschaften in Office-Projekten](../vsto/properties-in-office-projects.md).
 
 - Die ThisAddIn-Codedatei Diese Datei enthält die generierte `ThisAddIn` -Klasse für das VSTO-Add-In. Weitere Informationen zu dieser Klasse finden Sie unter [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
 - Ausgeblendete Projektdateien, die nicht für eine direkte Bearbeitung vorgesehen sind. Weitere Informationen finden Sie unter ausgeblendete [Projektdateien](#hiddenfiles).
 
 ### <a name="temporary-certificates"></a>Temporäre Zertifikate
- Office-Projekte umfassen auch ein temporäres Zertifikat mit dem Namen „ *Projektname*_TemporaryKey.pfx“. Dieses Zertifikat wird verwendet, um während der Entwicklung die Anwendung und die Bereitstellungsmanifeste für das Projekt zu signieren. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office](../vsto/granting-trust-to-office-solutions.md) -Projektmappen und [sichere Office-Lösungen](../vsto/securing-office-solutions.md).
+ Office-Projekte umfassen auch ein temporäres Zertifikat mit dem Namen „ *Projektname* _TemporaryKey.pfx“. Dieses Zertifikat wird verwendet, um während der Entwicklung die Anwendung und die Bereitstellungsmanifeste für das Projekt zu signieren. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office](../vsto/granting-trust-to-office-solutions.md) -Projektmappen und [sichere Office-Lösungen](../vsto/securing-office-solutions.md).
 
 ### <a name="hidden-project-files"></a><a name="hiddenfiles"></a> Versteckte Projektdateien
  Mehrere Projektdateien werden standardmäßig ausgeblendet. Diese Dateien werden von Visual Studio generiert und unterscheiden sich anhand des Projekttyps. Um die ausgeblendeten Dateien anzuzeigen, klicken Sie im **Projektmappen-Explorer** auf **Alle Dateien anzeigen**.
@@ -103,9 +105,9 @@ ms.locfileid: "62978057"
  Das Dokument verfügt über eine zugeordnete Codedatei. Die Codedatei enthält eine generierte *Hostelementklasse* , die das Dokument darstellt. Weitere Informationen finden Sie unter [Dokument Host Element](../vsto/document-host-item.md).
 
 ### <a name="design-mode-vs-runtime-mode"></a>Entwurfs Modus im Vergleich zum Lauf Zeit Modus
- Dokumente werden in der Visual Studio-Umgebung grundsätzlich im *Entwurfsmodus*geöffnet. Einige Aufgaben, z. B. das Ziehen eines Hoststeuerelements auf die Dokumentoberfläche, können nur im Entwurfsmodus ausgeführt werden.
+ Dokumente werden in der Visual Studio-Umgebung grundsätzlich im *Entwurfsmodus* geöffnet. Einige Aufgaben, z. B. das Ziehen eines Hoststeuerelements auf die Dokumentoberfläche, können nur im Entwurfsmodus ausgeführt werden.
 
- Um das Dokument im *Lauf Zeit Modus*anzuzeigen, müssen Sie die Anwendung und das Dokument außerhalb von Visual Studio öffnen. Wenn Sie das Projekt erstellen und ausführen, werden das Dokument und die Anwendung automatisch außerhalb von Visual Studio geöffnet.
+ Um das Dokument im *Lauf Zeit Modus* anzuzeigen, müssen Sie die Anwendung und das Dokument außerhalb von Visual Studio öffnen. Wenn Sie das Projekt erstellen und ausführen, werden das Dokument und die Anwendung automatisch außerhalb von Visual Studio geöffnet.
 
 ## <a name="code-editor"></a>Code-Editor
  Mithilfe des Code-Editors können sie die sichtbaren Codedateien in der Projektmappe anzeigen und ändern. Diese Dateien enthalten den Code, in dem das Verhalten der Projektmappe definiert wird.
@@ -113,7 +115,7 @@ ms.locfileid: "62978057"
  Weitere Informationen zum Code-Editor finden Sie unter [Schreiben von Code im Code-und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md). Weitere Informationen zum Schreiben von Code in Office-Projekten finden Sie unter [Schreiben von Code in Office](../vsto/writing-code-in-office-solutions.md)-Projektmappen.
 
 ## <a name="properties-window"></a>Eigenschaftenfenster
- Im Fenster **Eigenschaften** werden Eigenschaften für Projektelemente angezeigt, die im **Projektmappen-Explorer**ausgewählt werden, sowie für Benutzeroberflächenelemente, die im Designer ausgewählt werden, z. B. Steuerelemente oder das Dokument in einem Projekt auf Dokumentebene. Einige der Eigenschaften sind spezifisch für die Anwendung und das Dokument, andere Eigenschaften sind für alle Projekte gleich.
+ Im Fenster **Eigenschaften** werden Eigenschaften für Projektelemente angezeigt, die im **Projektmappen-Explorer** ausgewählt werden, sowie für Benutzeroberflächenelemente, die im Designer ausgewählt werden, z. B. Steuerelemente oder das Dokument in einem Projekt auf Dokumentebene. Einige der Eigenschaften sind spezifisch für die Anwendung und das Dokument, andere Eigenschaften sind für alle Projekte gleich.
 
 ## <a name="data-sources-window"></a>Datenquellenfenster
  Sie können das Fenster **Datenquellen** in Office-Projekten auf Dokumentebene verwenden, um eine Datenquelle in das Dokument zu ziehen und ein Steuerelement zu erstellen, das an die Datenquelle gebunden ist. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).

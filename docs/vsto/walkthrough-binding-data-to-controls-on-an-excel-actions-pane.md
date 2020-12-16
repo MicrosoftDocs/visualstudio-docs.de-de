@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich'
+description: Binden von Daten an Steuerelemente in einem Aktionsbereich in Microsoft Excel. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585053"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524975"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Excel-Aktionsbereich
   Diese exemplarische Vorgehensweise veranschaulicht die Datenbindung an Steuerelemente in einem Aktionsbereich in Microsoft Office Excel. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
@@ -59,17 +61,17 @@ ms.locfileid: "91585053"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen " **Meine Excel-Aktionen**". Wählen Sie im Assistenten **Neues Dokument erstellen**aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen " **Meine Excel-Aktionen**". Wählen Sie im Assistenten **Neues Dokument erstellen** aus. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt **Projektmappen-Explorer**das Projekt **Meine Excel-Aktions** Bereiche hinzu.
+     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt **Projektmappen-Explorer** das Projekt **Meine Excel-Aktions** Bereiche hinzu.
 
 ## <a name="add-a-new-data-source-to-the-project"></a>Fügen Sie dem Projekt eine neue Datenquelle hinzu.
 
 ### <a name="to-add-a-new-data-source-to-the-project"></a>So fügen Sie dem Projekt eine neue Datenquelle hinzu
 
-1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen**anzeigen auswählen.
+1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
-2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
+2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
@@ -83,11 +85,11 @@ ms.locfileid: "91585053"
 
 8. Aktivieren Sie das Kontrollkästchen neben der Tabelle **Suppliers** .
 
-9. Erweitern Sie die Tabelle **Products** , und wählen Sie **ProductName**, **SupplierID**, **QuantityPerUnit**und **UnitPrice**aus.
+9. Erweitern Sie die Tabelle **Products** , und wählen Sie **ProductName**, **SupplierID**, **QuantityPerUnit** und **UnitPrice** aus.
 
 10. Klicken Sie auf **Fertig stellen**.
 
-    Der Assistent fügt dem **Datenquellen** Fenster die Tabelle " **Suppliers** " und die Tabelle " **Products** " hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer**sichtbar ist.
+    Der Assistent fügt dem **Datenquellen** Fenster die Tabelle " **Suppliers** " und die Tabelle " **Products** " hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer** sichtbar ist.
 
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt
  Fügen Sie als nächstes <xref:Microsoft.Office.Tools.Excel.NamedRange> dem ersten Arbeitsblatt ein-Steuerelement und ein-Steuerelement hinzu <xref:Microsoft.Office.Tools.Excel.ListObject> .
@@ -102,13 +104,13 @@ ms.locfileid: "91585053"
 
 4. Ziehen Sie **Company Name** aus dem **Datenquellen** Fenster in die Zelle **a2** in `Sheet1` .
 
-     Ein <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement `CompanyNameNamedRange` mit dem Namen wird erstellt, und der Text wird \<CompanyName> in Zelle **a2**angezeigt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `suppliersBindingSource` , ein Tabellen Adapter und ein <xref:System.Data.DataSet> hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
+     Ein <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement `CompanyNameNamedRange` mit dem Namen wird erstellt, und der Text wird \<CompanyName> in Zelle **a2** angezeigt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `suppliersBindingSource` , ein Tabellen Adapter und ein <xref:System.Data.DataSet> hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
 
 5. Scrollen Sie im Fenster **Datenquellen** nach unten zu den Spalten, die sich in der Tabelle **Suppliers** befinden. Am Ende der Liste befindet sich die Tabelle " **Products** ". Dies liegt daran, dass es sich um ein untergeordnetes Element der **Suppliers** -Tabelle handelt. Wählen Sie diese **Products** -Tabelle aus, nicht die, die sich auf derselben Ebene wie die **Suppliers** -Tabelle befindet, und klicken Sie dann auf den angezeigten Dropdown Pfeil.
 
 6. Klicken Sie in der Dropdown Liste auf **ListObject** , und ziehen Sie dann die Tabelle **Products** in die Zelle **a6** in `Sheet1` .
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject> `ProductNameListObject` In der Zelle **a6**wird ein Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `productsBindingSource` und ein Tabellen Adapter hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
+     <xref:Microsoft.Office.Tools.Excel.ListObject> `ProductNameListObject` In der Zelle **a6** wird ein Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `productsBindingSource` und ein Tabellen Adapter hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
 
 7. Wählen Sie für c# nur **SuppliersBindingSource** auf der Komponenten Leiste aus, und ändern Sie im **Eigenschaften** Fenster die Eigenschaft **modifiers** in **intern** .
 
@@ -117,11 +119,11 @@ ms.locfileid: "91585053"
 
 ### <a name="to-add-an-actions-pane-control"></a>So fügen Sie ein Aktionsbereich-Steuerelement hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt **Meine Excel-Aktions** Bereiche aus.
+1. Wählen Sie in **Projektmappen-Explorer** das Projekt **Meine Excel-Aktions** Bereiche aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option Aktionsbereich- **Steuer**Element aus, benennen Sie es mit " **aktionscontrol**", **und klicken Sie**auf
+3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option Aktionsbereich- **Steuer** Element aus, benennen Sie es mit " **aktionscontrol**", **und klicken Sie** auf
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>So fügen Sie einem Aktionsbereich-Steuerelement Daten gebundene Windows Forms Steuerelemente hinzu
 
@@ -152,7 +154,7 @@ ms.locfileid: "91585053"
 
 #### <a name="to-show-the-actions-pane"></a>So zeigen Sie den Aktionsbereich an
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf *ThisWorkbook. vb* oder *ThisWorkbook.cs*, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf *ThisWorkbook. vb* oder *ThisWorkbook.cs*, und klicken Sie dann auf **Code anzeigen**.
 
 2. Erstellen Sie eine neue Instanz des Benutzer Steuer Elements in der- `ThisWorkbook` Klasse.
 

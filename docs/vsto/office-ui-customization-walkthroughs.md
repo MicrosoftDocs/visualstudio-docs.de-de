@@ -1,5 +1,7 @@
 ---
 title: Exemplarische Vorgehensweisen zur Anpassung von Office
+description: Erfahren Sie, wie Sie die Benutzeroberfläche (User Interface, UI) von Microsoft Office Anwendungen anpassen können, indem Sie Anpassungen auf Dokument Ebene und VSTO-Add-Ins verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e961479fc500e53133c62337478368878bf26893
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e9cd19687e15cd30c8196183f43709d4ba5149d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254130"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525100"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Exemplarische Vorgehensweisen zur Anpassung von Office
   Die folgenden exemplarischen Vorgehensweisen veranschaulichen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Anpassen der Benutzeroberfläche von Microsoft Office-Anwendungen verwenden können.
@@ -64,7 +66,7 @@ ms.locfileid: "71254130"
 
 - Exemplarische Vorgehensweise [: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) von Options Feldern Zeigt die Grundlagen zum Ändern von Diagramm Formaten mithilfe von Options Feldern in einem Excel-Arbeitsblatt an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)
 - [Exemplarische Vorgehensweisen mit Excel](../vsto/walkthroughs-using-excel.md)
 - [Exemplarische Vorgehensweisen für Daten in Office-Lösungen](../vsto/data-in-office-solutions-walkthroughs.md)

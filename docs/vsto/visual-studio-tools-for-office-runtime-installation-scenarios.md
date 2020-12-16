@@ -1,5 +1,7 @@
 ---
 title: Visual Studio-Tools für Installationsszenarien für Office-Runtime
+description: Erfahren Sie, wie Sie die Visual Studio 2010-Tools für Office-Laufzeit installieren können. In diesem Artikel werden drei Installationsszenarien beschrieben.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 484627c01a5385a6da4b2b0a41a966ac31d0e6d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584372"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526404"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio-Tools für Installationsszenarien für Office-Runtime
   Sie können die Visual Studio 2010-Tools für Office-Laufzeit auf drei Arten installieren:

@@ -1,5 +1,7 @@
 ---
 title: Exemplarische Vorgehensweisen mit Excel
+description: Erfahren Sie, wie Sie Anpassungen auf Dokument Ebene und VSTO-Add-Ins zum Automatisieren von Microsoft Excel verwenden können. Sie können auch die Benutzeroberfläche anpassen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba8a52e615a8e3d40b5c76be66f4b639aec6c07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255052"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525963"
 ---
 # <a name="walkthroughs-using-excel"></a>Exemplarische Vorgehensweisen mit Excel
   Die folgenden exemplarischen Vorgehensweisen zeigen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Automatisieren von Microsoft Office Excel und Anpassen der Benutzeroberfläche (UI) verwenden können.

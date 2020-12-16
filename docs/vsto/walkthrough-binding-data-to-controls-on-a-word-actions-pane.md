@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich'
+description: Binden von Daten an Steuerelemente in einem Aktionsbereich in Microsoft Word. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585066"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526206"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich
   In dieser exemplarischen Vorgehensweise wird die Datenbindung an Steuerelemente in einem Aktionsbereich in Word veranschaulicht. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
@@ -57,31 +59,31 @@ ms.locfileid: "91585066"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **Aktions**Bereich. Wählen Sie im Assistenten **Neues Dokument erstellen**aus.
+1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen **Aktions** Bereich. Wählen Sie im Assistenten **Neues Dokument erstellen** aus.
 
      Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer**das Projekt " **mein Word-Aktions** Bereich" hinzu.
+     Visual Studio öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer** das Projekt " **mein Word-Aktions** Bereich" hinzu.
 
 ## <a name="add-controls-to-the-actions-pane"></a>Hinzufügen von Steuerelementen zum Aktionsbereich
  In dieser exemplarischen Vorgehensweise benötigen Sie ein Aktionsbereich-Steuerelement, das Daten gebundene Windows Forms Steuerelemente enthält. Fügen Sie dem Projekt eine Datenquelle hinzu, und ziehen Sie dann die Steuerelemente aus dem Fenster **Datenquellen** in das Steuerelement Aktionsbereich.
 
 ### <a name="to-add-an-actions-pane-control"></a>So fügen Sie ein Aktionsbereich-Steuerelement hinzu
 
-1. Wählen Sie in **Projektmappen-Explorer**das Projekt " **mein Word-Aktions** Bereich" aus.
+1. Wählen Sie in **Projektmappen-Explorer** das Projekt " **mein Word-Aktions** Bereich" aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option Aktionsbereich- **Steuer**Element aus, benennen Sie es mit " **aktionscontrol**", **und klicken Sie**dann auf
+3. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option Aktionsbereich- **Steuer** Element aus, benennen Sie es mit " **aktionscontrol**", **und klicken Sie** dann auf
 
 ### <a name="to-add-a-data-source-to-the-project"></a>So fügen Sie dem Projekt eine Datenquelle hinzu
 
-1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen**anzeigen auswählen.
+1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
    > [!NOTE]
    > Wenn **Datenquellen anzeigen** nicht verfügbar ist, klicken Sie auf das Word-Dokument, und wiederholen Sie dann den Vorgang.
 
-2. Klicken Sie zum Starten des **Assistenten zum Konfigurieren von Datenquellen**auf **neue Datenquelle hinzufügen** .
+2. Klicken Sie zum Starten des **Assistenten zum Konfigurieren von Datenquellen** auf **neue Datenquelle hinzufügen** .
 
 3. Wählen Sie **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
@@ -97,19 +99,19 @@ ms.locfileid: "91585066"
 
 9. Klicken Sie auf **Fertig stellen**.
 
-   Der Assistent fügt dem **Datenquellen** Fenster die Tabelle " **Suppliers** " und die Tabelle " **Products** " hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer**sichtbar ist.
+   Der Assistent fügt dem **Datenquellen** Fenster die Tabelle " **Suppliers** " und die Tabelle " **Products** " hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer** sichtbar ist.
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>So fügen Sie einem Aktionsbereich-Steuerelement Daten gebundene Windows Forms Steuerelemente hinzu
 
 1. Erweitern Sie im **Datenquellen** Fenster die Tabelle **Suppliers** .
 
-2. Klicken Sie auf den Dropdown Pfeil im Knoten **Firmen Name** , und wählen Sie **ComboBox**aus.
+2. Klicken Sie auf den Dropdown Pfeil im Knoten **Firmen Name** , und wählen Sie **ComboBox** aus.
 
 3. Ziehen Sie **CompanyName** aus dem **Datenquellen** Fenster in das Aktionsbereich-Steuerelement.
 
      Ein- <xref:System.Windows.Forms.ComboBox> Steuerelement wird im Aktionsbereich-Steuerelement erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden ein benannter `SuppliersBindingSource` , ein Tabellen Adapter und ein <xref:System.Data.DataSet> dem Projekt in der Komponenten Leiste hinzugefügt.
 
-4. Wählen Sie `SuppliersBindingNavigator` in der **Komponenten** Leiste aus **Delete**, und drücken Sie ENTF. In dieser exemplarischen Vorgehensweise wird das nicht verwendet `SuppliersBindingNavigator` .
+4. Wählen Sie `SuppliersBindingNavigator` in der **Komponenten** Leiste aus , und drücken Sie ENTF. In dieser exemplarischen Vorgehensweise wird das nicht verwendet `SuppliersBindingNavigator` .
 
     > [!NOTE]
     > Beim Löschen `SuppliersBindingNavigator` von wird nicht der gesamte Code entfernt, der für ihn generiert wurde. Sie können diesen Code entfernen.
@@ -118,7 +120,7 @@ ms.locfileid: "91585066"
 
 6. Erweitern Sie im **Datenquellen** Fenster die **Products** -Tabelle, die der **Suppliers** -Tabelle untergeordnet ist.
 
-7. Klicken Sie auf den Dropdown Pfeil auf dem Knoten **ProductName** , und wählen Sie **ListBox**aus.
+7. Klicken Sie auf den Dropdown Pfeil auf dem Knoten **ProductName** , und wählen Sie **ListBox** aus.
 
 8. Ziehen Sie **ProductName** in das Aktionsbereich-Steuerelement.
 
@@ -155,19 +157,19 @@ ms.locfileid: "91585066"
 
 1. Wählen Sie das `CompanyNameComboBox`-Steuerelement.
 
-2. Klicken Sie im **Eigenschaften** Fenster auf die Schaltfläche rechts neben der **DataSource** -Eigenschaft, und wählen Sie **SuppliersBindingSource**aus.
+2. Klicken Sie im **Eigenschaften** Fenster auf die Schaltfläche rechts neben der **DataSource** -Eigenschaft, und wählen Sie **SuppliersBindingSource** aus.
 
-3. Klicken Sie rechts neben der **DisplayMember** -Eigenschaft auf die Schaltfläche, und wählen Sie **CompanyName**aus.
+3. Klicken Sie rechts neben der **DisplayMember** -Eigenschaft auf die Schaltfläche, und wählen Sie **CompanyName** aus.
 
-4. Erweitern Sie die **DataBindings** -Eigenschaft, klicken Sie auf die Schaltfläche rechts neben der **Text** -Eigenschaft, und wählen Sie **keine**aus.
+4. Erweitern Sie die **DataBindings** -Eigenschaft, klicken Sie auf die Schaltfläche rechts neben der **Text** -Eigenschaft, und wählen Sie **keine** aus.
 
 5. Wählen Sie das `ProductNameListBox`-Steuerelement.
 
-6. Klicken Sie im **Eigenschaften** Fenster auf die Schaltfläche rechts neben der **DataSource** -Eigenschaft, und wählen Sie **ProductBindingSource**aus.
+6. Klicken Sie im **Eigenschaften** Fenster auf die Schaltfläche rechts neben der **DataSource** -Eigenschaft, und wählen Sie **ProductBindingSource** aus.
 
-7. Klicken Sie rechts neben der **DisplayMember** -Eigenschaft auf die Schaltfläche, und wählen Sie **ProductName**aus.
+7. Klicken Sie rechts neben der **DisplayMember** -Eigenschaft auf die Schaltfläche, und wählen Sie **ProductName** aus.
 
-8. Erweitern Sie die **DataBindings** -Eigenschaft, klicken Sie auf die Schaltfläche rechts neben der **SelectedValue** -Eigenschaft, und wählen Sie **keine**aus.
+8. Erweitern Sie die **DataBindings** -Eigenschaft, klicken Sie auf die Schaltfläche rechts neben der **SelectedValue** -Eigenschaft, und wählen Sie **keine** aus.
 
 ## <a name="add-a-method-to-insert-data-into-a-table"></a>Hinzufügen einer Methode zum Einfügen von Daten in eine Tabelle
  Die nächste Aufgabe besteht darin, die Daten aus den gebundenen Steuerelementen zu lesen und eine Tabelle in Ihrem Word-Dokument aufzufüllen. Erstellen Sie zunächst eine Prozedur zum Formatieren der Überschriften in der Tabelle, und fügen Sie dann die `AddData` -Methode zum Erstellen und Formatieren einer Word-Tabelle hinzu.
@@ -202,7 +204,7 @@ ms.locfileid: "91585066"
 
 ### <a name="to-show-the-actions-pane"></a>So zeigen Sie den Aktionsbereich an
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **ThisDocument. vb** oder **ThisDocument.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisDocument. vb** oder **ThisDocument.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
 
 2. Erstellen Sie eine neue Instanz des Steuer Elements am Anfang der `ThisDocument` Klasse, damit Sie wie im folgenden Beispiel aussieht.
 

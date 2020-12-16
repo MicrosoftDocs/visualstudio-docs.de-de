@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes schützen von Arbeitsblättern'
+description: Erfahren Sie, wie Sie das Schutz Feature in Microsoft Excel verwenden können, um zu verhindern, dass Benutzer und Code Objekte in einem Arbeitsblatt ändern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d51a6557b2204d7b6ff3d8865c82de091f5a59d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4fe6d314763c7b0d6a8b4c1ed9e8e7198e508c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545898"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526750"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Vorgehensweise: Programm gesteuertes schützen von Arbeitsblättern
   Die Schutzfunktion in Microsoft Office Excel verhindert, dass Objekte in einem Arbeitsblatt durch Benutzer und Code geändert werden. Standardmäßig werden alle Zellen gesperrt, nachdem der Schutz aktiviert wurde.

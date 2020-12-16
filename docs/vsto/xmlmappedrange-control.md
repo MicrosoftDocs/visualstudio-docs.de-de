@@ -1,5 +1,7 @@
 ---
 title: XmlMappedRange-Steuerelement
+description: Erfahren Sie, dass es sich bei dem XmlMappedRange-Steuerelement um einen Bereich handelt, der nur erstellt wird, wenn ein nicht wiederholtes Schema Element einer Zelle in Microsoft Excel zugeordnet ist.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985362"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525889"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange-Steuerelement
   Das- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement ist ein Bereich, der nur erstellt wird, wenn ein nicht wiederholtes Schema Element einer Zelle in Microsoft Office Excel zugeordnet wird. Dies ist beispielsweise der Fall, wenn das- `maxOccurs` Attribut eines Schema Elements 1 ist. Nachdem der von Visual Studio zugeordnete XML-Bereich erstellt wurde, können Sie ihn direkt programmieren, ohne das Excel-Objektmodell durchlaufen zu müssen. Sie können ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement nur in Excel löschen, wenn die Element Zuordnung entfernt wird.
@@ -36,7 +38,7 @@ ms.locfileid: "72985362"
 ## <a name="formatting"></a>Formatierung
  Sie können die gleiche Formatierung auf ein Steuerelement anwenden <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> , das Sie auf ein anwenden können <xref:Microsoft.Office.Interop.Excel.Range> . Dies umfasst, Rahmen, Schriftarten, Zahlenformate und Stile.
 
-## <a name="events"></a>Events
+## <a name="events"></a>Ereignisse
  Folgende Ereignisse sind für das-Steuerelement verfügbar <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> :
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
@@ -55,7 +57,7 @@ ms.locfileid: "72985362"
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
 - [Gewusst wie: Hinzufügen von XmlMappedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 - [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)

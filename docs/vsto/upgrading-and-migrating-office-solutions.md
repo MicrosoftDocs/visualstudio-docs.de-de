@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren und Migrieren von Office-Lösungen
+description: Sie müssen das Projekt aktualisieren, um es in den aktuellen Versionen von Visual Studio zu verwenden, wenn Sie über ein offince-Projekt verfügen, das in einer früheren Version von Visual Studio erstellt wurde.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b18b61ad6854be654582fe8a8a76da185ec9d89e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808788"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526614"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Aktualisieren und Migrieren von Office-Lösungen
   Wenn Sie über ein Microsoft Office-Projekt verfügen, das in einer früheren Version von Visual Studio erstellt wurde, müssen Sie das Projekt aktualisieren, um es in der aktuellen Version von Visual Studio verwenden zu können. Um ein Microsoft Office-Projekt zu aktualisieren, öffnen Sie es in einer Version von Visual Studio, die die Microsoft Office-Entwicklertools umfasst. Weitere Informationen zu den Versionen von Visual Studio, die die Microsoft Office-Entwicklertools enthalten, finden [Sie unter Konfigurieren eines Computers zum Entwickeln von Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)-Projektmappen.
@@ -83,7 +85,7 @@ ms.locfileid: "90808788"
 
  Wenn Sie das VSTO-Add-In mit ClickOnce bereitstellen möchten, können Sie das Setup- oder das InstallShield Limited- Edition-Projekt vollständig löschen. Weitere Informationen zum Bereitstellen von VSTO-Add-Ins mithilfe von ClickOnce finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Aktualisieren von Office-Projektmappen](/previous-versions/4bez6837(v=vs.140))
 - [Migrieren von Office-Projektmappen zu den .NET Framework 4 oder höher](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Projekt Upgrade, Dialogfeld "Optionen"](../vsto/project-upgrade-options-dialog-box.md)

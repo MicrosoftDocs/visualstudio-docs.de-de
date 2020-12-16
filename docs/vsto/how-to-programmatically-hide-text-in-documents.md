@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Ausblenden von Text in Dokumenten'
+description: Erfahren Sie, wie Sie Text in einem Microsoft Word-Dokument ausblenden können, indem Sie die Hidden-Eigenschaft der Schriftart für einen bestimmten Textbereich festlegen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dae19d196f830e5187fa395473c0a5482cb1d03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a375e8b844f82b5d310841d7b4cdc092b18ff6c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543311"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525704"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Gewusst wie: Programm gesteuertes Ausblenden von Text in Dokumenten
   Sie können Text in einem Dokument ausblenden, indem Sie die <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> -Eigenschaft der <xref:Microsoft.Office.Interop.Word.Range.Font%2A> für einen bestimmten Textbereich festlegen.

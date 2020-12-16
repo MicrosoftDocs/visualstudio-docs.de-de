@@ -1,5 +1,7 @@
 ---
 title: Benutzerdefinierten Aufgabenbereich mit Menü Band Schaltfläche synchronisieren
+description: Erfahren Sie, wie Sie einen benutzerdefinierten Aufgabenbereich erstellen können, den Benutzer durch Klicken auf eine UMSCHALT Fläche auf dem Menüband ausblenden oder anzeigen können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328333"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526095"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menü Band Schaltfläche
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein benutzerdefinierter Aufgabenbereich erstellt wird, den Benutzer durch Klicken auf eine UMSCHALT Fläche auf dem Menüband ausblenden oder anzeigen können. Sie sollten immer ein UI-Element erstellen, z. B. eine Schaltfläche, auf die Benutzer klicken können, um Ihren benutzerdefinierten Aufgabenbereich anzeigen oder ausblenden zu können, da Microsoft Office-Anwendung keine Standardmethode für Benutzer bereitstellen, um benutzerdefinierte Aufgabenbereiche anzuzeigen oder auszublenden.
@@ -62,7 +64,7 @@ ms.locfileid: "67328333"
 
 1. Erstellen Sie ein Add-In-Projekt für Excel namens **SynchronizeTaskPaneAndRibbon**, indem Sie die Add-In-Projektvorlage für Excel verwenden. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt das Projekt **SynchronizeTaskPaneAndRibbon** dem **Projektmappen-Explorer**hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt das Projekt **SynchronizeTaskPaneAndRibbon** dem **Projektmappen-Explorer** hinzu.
 
 ## <a name="add-a-toggle-button-to-the-ribbon"></a>Hinzufügen einer UMSCHALT Fläche zum Menüband
  Eine der Entwurfsrichtlinien für Office-Anwendungen besagt, dass Benutzer immer die Möglichkeit haben sollen, die Benutzeroberfläche von Office-Anwendungen zu steuern. Damit Benutzer den benutzerdefinierten Aufgabenbereich steuern können, können Sie eine Menübandumschaltfläche hinzufügen, die den Aufgabenbereich anzeigt oder ausblendet. Fügen Sie zum Erstellen einer Umschaltfläche dem Projekt ein Element von **Menüband (Visueller Designer)** hinzu. Der Designer unterstützt Sie beim Hinzufügen und Anordnen von Steuerelementen, Festlegen von Steuerelementeigenschaften und Behandeln von Ereignissen von Steuerelementen. Weitere Informationen finden Sie unter [Menüband-Designer](../vsto/ribbon-designer.md).
@@ -79,13 +81,13 @@ ms.locfileid: "67328333"
 
 4. Klicken Sie im Menüband-Designer auf **group1**.
 
-5. Legen Sie im Fenster **Eigenschaften** die **Label** -Eigenschaft auf **Aufgabenbereich-Manager**fest.
+5. Legen Sie im Fenster **Eigenschaften** die **Label** -Eigenschaft auf **Aufgabenbereich-Manager** fest.
 
-6. Ziehen Sie ein **ToggleButton** -Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder**der **Toolbox** auf die Gruppe **Aufgabenbereich-Manager** .
+6. Ziehen Sie ein **ToggleButton** -Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder** der **Toolbox** auf die Gruppe **Aufgabenbereich-Manager** .
 
 7. Klicken Sie auf **toggleButton1**.
 
-8. Legen Sie im Fenster **Eigenschaften** die **Label** -Eigenschaft auf **Aufgabenbereich anzeigen**fest.
+8. Legen Sie im Fenster **Eigenschaften** die **Label** -Eigenschaft auf **Aufgabenbereich anzeigen** fest.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Entwerfen der Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs
  Es gibt keinen visuellen Designer für benutzerdefinierte Aufgabenbereiche, Sie können aber dennoch ein Benutzersteuerelement mit dem gewünschten Layout entwerfen. Im weiteren Verlauf dieser exemplarischen Vorgehensweise fügen Sie dem benutzerdefinierten Aufgabenbereich das Benutzersteuerelement hinzu.
@@ -98,14 +100,14 @@ ms.locfileid: "67328333"
 
      Das Benutzersteuerelement wird im Designer geöffnet.
 
-3. Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**ein **TextBox** -Steuerelement auf das Benutzersteuerelement.
+3. Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** ein **TextBox** -Steuerelement auf das Benutzersteuerelement.
 
 ## <a name="create-the-custom-task-pane"></a>Erstellen des benutzerdefinierten Aufgabenbereichs
  Um den benutzerdefinierten Aufgabenbereich beim Starten des VSTO-Add-Ins zu erstellen, fügen Sie dem Aufgabenbereich das Benutzersteuerelement im <xref:Microsoft.Office.Tools.AddIn.Startup> -Ereignishandler des VSTO-Add-Ins hinzu. Standardmäßig wird der benutzerdefinierte Aufgabenbereich nicht angezeigt. Später in dieser exemplarischen Vorgehensweise fügen Sie Code hinzu, mit dem der Aufgabenbereich angezeigt oder ausgeblendet wird, wenn der Benutzer auf die UMSCHALT Fläche klickt, die Sie dem Menüband hinzugefügt haben.
 
 ### <a name="to-create-the-custom-task-pane"></a>So erstellen Sie den benutzerdefinierten Aufgabenbereich
 
-1. Erweitern Sie im **Projektmappen-Explorer**die Option **Excel**.
+1. Erweitern Sie im **Projektmappen-Explorer** die Option **Excel**.
 
 2. Klicken Sie mit der rechten Maustaste auf **ThisAddIn.cs** oder **ThisAddIn.vb** , und klicken Sie auf **Code anzeigen**.
 
@@ -119,7 +121,7 @@ ms.locfileid: "67328333"
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]
 
-5. Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Diese Methode behandelt das <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> -Ereignis. Wenn der Benutzer den Aufgabenbereich durch Klicken auf die Schaltfläche **Schließen** (X) schließt, aktualisiert diese Methode den Zustand der Umschaltfläche im Menüband.
+5. Füge der `ThisAddIn`-Klasse die folgende Methode hinzu. Diese Methode behandelt das <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> -Ereignis. Wenn der Benutzer den Aufgabenbereich durch Klicken auf die Schaltfläche **Schließen** (X) schließt, aktualisiert diese Methode den Zustand der Umschaltfläche im Menüband.
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]

@@ -1,5 +1,7 @@
 ---
 title: Erstellen einer Master Detail Beziehung mithilfe eines zwischengespeicherten Datasets
+description: Erfahren Sie mehr über das Erstellen einer Master/Detail-Beziehung auf einem Arbeitsblatt und das Zwischenspeichern der Daten, damit die Projekt Mappe offline verwendet werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328357"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524865"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Exemplarische Vorgehensweise: Erstellen einer Master Detail Beziehung mithilfe eines zwischengespeicherten Datasets
   Diese exemplarische Vorgehensweise veranschaulicht das Erstellen einer Master/Detail-Beziehung auf einem Arbeitsblatt und das Zwischenspeichern der Daten, damit die Projekt Mappe offline verwendet werden kann.
@@ -56,16 +58,16 @@ ms.locfileid: "67328357"
 
 1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen " **My Master-Detail**", indem Sie entweder Visual Basic oder c# verwenden. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-   Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das **eigene Master/Detail-** Projekt **Projektmappen-Explorer**hinzu.
+   Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt das **eigene Master/Detail-** Projekt **Projektmappen-Explorer** hinzu.
 
 ## <a name="create-the-data-source"></a>Erstellen der Datenquelle
  Verwenden das Fenster **Datenquellen** , um dem Projekt ein typisiertes Dataset hinzuzufügen.
 
 ### <a name="to-create-the-data-source"></a>So erstellen Sie die Datenquelle
 
-1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen**anzeigen auswählen.
+1. Wenn das Fenster **Datenquellen** nicht sichtbar ist, zeigen Sie es an, indem Sie auf der Menüleiste **die Option**  >  **Weitere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
-2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen**zu starten.
+2. Wählen Sie **Neue Datenquelle hinzufügen** , um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
 3. Wählen Sie **Datenbank** aus, und klicken Sie dann auf **weiter**.
 
@@ -81,10 +83,10 @@ ms.locfileid: "67328357"
 
 9. Klicken Sie auf **Fertig stellen**.
 
-   Der Assistent fügt die beiden Tabellen zum Fenster **Datenquellen** hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer**sichtbar ist.
+   Der Assistent fügt die beiden Tabellen zum Fenster **Datenquellen** hinzu. Außerdem wird ein typisiertes DataSet zu Ihrem Projekt hinzugefügt, das in **Projektmappen-Explorer** sichtbar ist.
 
 ## <a name="add-controls-to-the-worksheet"></a>Hinzufügen von Steuerelementen zum Arbeitsblatt
- In diesem Schritt fügen Sie dem ersten Arbeitsblatt einen benannten Bereich, ein Listen Objekt und zwei Schaltflächen hinzu. Fügen Sie zunächst den benannten Bereich und das Listen Objekt aus dem Fenster **Datenquellen** hinzu, damit Sie automatisch an die Datenquelle gebunden werden. Fügen Sie als nächstes die Schaltflächen aus der **Toolbox**hinzu.
+ In diesem Schritt fügen Sie dem ersten Arbeitsblatt einen benannten Bereich, ein Listen Objekt und zwei Schaltflächen hinzu. Fügen Sie zunächst den benannten Bereich und das Listen Objekt aus dem Fenster **Datenquellen** hinzu, damit Sie automatisch an die Datenquelle gebunden werden. Fügen Sie als nächstes die Schaltflächen aus der **Toolbox** hinzu.
 
 ### <a name="to-add-a-named-range-and-a-list-object"></a>So fügen Sie einen benannten Bereich und ein Listen Objekt hinzu
 
@@ -96,17 +98,17 @@ ms.locfileid: "67328357"
 
 4. Klicken Sie in der Dropdown Liste auf **NamedRange** , und ziehen Sie dann die Spalte **OrderID** in Zelle **a2**.
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange> `OrderIDNamedRange` In Zelle **a2**wird ein Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `OrdersBindingSource` , ein Tabellen Adapter und eine- <xref:System.Data.DataSet> Instanz hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> `OrderIDNamedRange` In Zelle **a2** wird ein Steuerelement mit dem Namen erstellt. Gleichzeitig <xref:System.Windows.Forms.BindingSource> werden dem Projekt ein benannter `OrdersBindingSource` , ein Tabellen Adapter und eine- <xref:System.Data.DataSet> Instanz hinzugefügt. Das-Steuerelement ist an das-Steuerelement gebunden <xref:System.Windows.Forms.BindingSource> , das wiederum an die-Instanz gebunden ist <xref:System.Data.DataSet> .
 
 5. Scrollen Sie nach unten zu den Spalten, die sich in der Tabelle **Orders** befinden. Am unteren Rand der Liste befindet sich die Tabelle **Order Details** . Dies liegt daran, dass es sich um ein untergeordnetes Element der **Orders** -Tabelle handelt. Wählen Sie diese **Order Details** -Tabelle aus, nicht die, die sich auf derselben Ebene wie die **Orders** -Tabelle befindet, und klicken Sie dann auf den angezeigten Dropdown Pfeil.
 
 6. Klicken Sie in der Dropdown Liste auf **ListObject** , und ziehen Sie dann die Tabelle **Order Details** in die Zelle **a6**.
 
-7. Ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement mit dem Namen **Order_DetailsListObject** wird in der Zelle **a6**erstellt und an gebunden <xref:System.Windows.Forms.BindingSource> .
+7. Ein <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement mit dem Namen **Order_DetailsListObject** wird in der Zelle **a6** erstellt und an gebunden <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-two-buttons"></a>So fügen Sie zwei Schaltflächen hinzu
 
-1. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox**ein- <xref:System.Windows.Forms.Button> Steuerelement zu Zelle **a3** des Arbeitsblatts hinzu.
+1. Fügen Sie auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** ein- <xref:System.Windows.Forms.Button> Steuerelement zu Zelle **a3** des Arbeitsblatts hinzu.
 
     Diese Schaltfläche hat den Namen `Button1` .
 
@@ -136,7 +138,7 @@ ms.locfileid: "67328357"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>So initialisieren Sie die Daten und Steuerelemente
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen** .
 
 2. Fügen Sie der-Methode den folgenden Code hinzu `Sheet1_Startup` , um den Text für die Schaltflächen festzulegen.
 

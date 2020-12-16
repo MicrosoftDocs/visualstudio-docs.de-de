@@ -1,5 +1,7 @@
 ---
 title: Program mieren von VSTO-Add-ins
+description: Erfahren Sie, wie Sie die ThisAddIn-Klasse zum Ausführen von Aufgaben wie das Zugreifen auf das Objektmodell der Microsoft Office Host Anwendung verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87115332"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525115"
 ---
 # <a name="program-vsto-add-ins"></a>Program mieren von VSTO-Add-ins
   Wenn Sie eine Microsoft Office-Anwendung erweitern, indem Sie ein VSTO-Add-In erstellen, schreiben Sie Code direkt für die `ThisAddIn` -Klasse in Ihrem Projekt. Sie können diese Klasse zum Ausführen von Aufgaben wie das Zugreifen auf das Objektmodell der Microsoft Office-Hostanwendung, das Anpassen der Benutzeroberfläche (UI) einer Anwendung und das Verfügbarmachen von Objekten in Ihrem VSTO-Add-In für andere Office-Projektmappen verwenden.
