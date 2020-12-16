@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Verschieben von Elementen in Outlook'
+description: Erfahren Sie, wie Sie Elemente Programm gesteuert in Microsoft Outlook verschieben können. In diesem Beispiel werden ungelesene e-Mail-Nachrichten aus dem Posteingang in den Ordner Test verschoben
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b247df68827767a53d8d066f4750dfa9da52ac7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519911"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525574"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Gewusst wie: Programm gesteuertes Verschieben von Elementen in Outlook
-  In diesem Beispiel werden ungelesene e-Mail-Nachrichten aus dem **Posteingang** in den Ordner **Test**verschoben Im Beispiel werden nur Nachrichten mit dem Wort **Test** im- `Subject` Feld verschoben.
+  In diesem Beispiel werden ungelesene e-Mail-Nachrichten aus dem **Posteingang** in den Ordner **Test** verschoben Im Beispiel werden nur Nachrichten mit dem Wort **Test** im- `Subject` Feld verschoben.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

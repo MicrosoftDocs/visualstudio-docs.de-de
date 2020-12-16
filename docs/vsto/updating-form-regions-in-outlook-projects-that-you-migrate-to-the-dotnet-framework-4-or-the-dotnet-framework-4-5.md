@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren von Outlook-Formular Bereichen bei der Migration zu .NET Framework 4,5
+description: Sie müssen Ihren Code ändern, wenn das Ziel Framework eines Outlook VSTO-Add-in-Projekts mit einem Formular Bereiche in .NET Framework 4 oder höher geändert wird.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584398"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526586"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Aktualisieren von Outlook-Formular Bereichen bei der Migration zu .NET Framework 4,5
 
@@ -192,7 +194,7 @@ ms.locfileid: "91584398"
 
  In der folgenden Tabelle sind die Formularbereichstypen und die Methode aufgeführt, die zum Instanziieren der Typen in Projekten verwendet wird, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet sind.
 
-|Type|Zu verwendende Factorymethode|
+|type|Zu verwendende Factorymethode|
 |----------|---------------------------|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionCustomAction>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionCustomAction%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|

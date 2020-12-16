@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Speichern von Dokumenten'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um ein Dokument Programm gesteuert zu speichern, ohne den Namen des Dokuments oder einen neuen Namen zu ändern.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2221ec6576e7ac0de399613a1cda3cdcb8dcea6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537591"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525463"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Gewusst wie: Programm gesteuertes Speichern von Dokumenten
 
@@ -56,7 +58,7 @@ Es gibt mehrere Möglichkeiten, Microsoft Office Word-Dokumente zu speichern. Si
 Verwenden Sie die- `SaveAs` Methode, um ein Dokument mit einem neuen Namen zu speichern. Sie können diese Methode des- <xref:Microsoft.Office.Tools.Word.Document> Host Elements in einem Word-Projekt auf Dokument Ebene oder einem systemeigenen- <xref:Microsoft.Office.Interop.Word.Document> Objekt in einem beliebigen Word-Projekt verwenden. Diese Methode erfordert, dass Sie den neuen Dateinamen angeben, aber andere Argumente sind optional.
 
 > [!NOTE]
-> Wenn Sie das Dialogfeld " **SaveAs** " innerhalb des <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis Handlers von anzeigen `ThisDocument` und den *Cancel* -Parameter auf " **false**" festlegen, kann die Anwendung unerwartet beendet werden. Wenn Sie den *Cancel* -Parameter auf **true**festlegen, wird eine Fehlermeldung mit dem Hinweis angezeigt, dass die automatische Speicherung deaktiviert wurde.
+> Wenn Sie das Dialogfeld " **SaveAs** " innerhalb des <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> -Ereignis Handlers von anzeigen `ThisDocument` und den *Cancel* -Parameter auf " **false**" festlegen, kann die Anwendung unerwartet beendet werden. Wenn Sie den *Cancel* -Parameter auf **true** festlegen, wird eine Fehlermeldung mit dem Hinweis angezeigt, dass die automatische Speicherung deaktiviert wurde.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>So speichern Sie das Dokument, das einer Anpassung auf Dokument Ebene zugeordnet ist, mit einem neuen Namen
 

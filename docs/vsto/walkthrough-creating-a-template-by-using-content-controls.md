@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhalts Steuerelementen'
+description: Erfahren Sie, wie Sie eine Anpassung auf Dokument Ebene erstellen, die Inhalts Steuerelemente verwendet, um strukturierte und wiederverwendbare Inhalte in einer Microsoft Word-Vorlage zu erstellen.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585027"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524981"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhalts Steuerelementen
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Anpassung auf Dokumentebene erstellt wird, die Inhaltssteuerelemente zum Erstellen strukturierter und wiederverwendbarer Inhalte in einer Microsoft Office Word-Vorlage verwendet.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Mit Word können Sie eine Auflistung wiederverwendbarer Dokument Teile erstellen, die als *Bausteine*bezeichnet werden. Diese exemplarische Vorgehensweise veranschaulicht, wie zwei Tabellen als Bausteine erstellt werden. Jede Tabelle enthält mehrere Inhaltssteuerelemente, die unterschiedliche Inhaltstypen aufweisen können, z. B. reinen Text oder Datumsangaben. Eine der Tabellen enthält Informationen über einen Mitarbeiter und die andere Kundenfeedback.
+ Mit Word können Sie eine Auflistung wiederverwendbarer Dokument Teile erstellen, die als *Bausteine* bezeichnet werden. Diese exemplarische Vorgehensweise veranschaulicht, wie zwei Tabellen als Bausteine erstellt werden. Jede Tabelle enthält mehrere Inhaltssteuerelemente, die unterschiedliche Inhaltstypen aufweisen können, z. B. reinen Text oder Datumsangaben. Eine der Tabellen enthält Informationen über einen Mitarbeiter und die andere Kundenfeedback.
 
  Nachdem Sie ein Dokument von der Vorlage erstellt haben, können Sie ihm mithilfe mehrerer <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>-Objekte, die die verfügbaren Bausteine in der Vorlage anzeigen, eine der beiden Tabellen hinzufügen.
 
@@ -59,7 +60,7 @@ ms.locfileid: "91585027"
 
 1. Erstellen Sie ein Word-Vorlagen Projekt mit dem Namen **MyBuildingBlockTemplate**. Erstellen Sie im Assistenten ein neues Dokument in der Projektmappe. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet die neue Word-Vorlage im Designer und fügt **Projektmappen-Explorer**das Projekt **MyBuildingBlockTemplate** hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet die neue Word-Vorlage im Designer und fügt **Projektmappen-Explorer** das Projekt **MyBuildingBlockTemplate** hinzu.
 
 ## <a name="create-the-employee-table"></a>Erstellen der Employee-Tabelle
  Erstellen Sie eine Tabelle, die vier verschiedene Typen von Inhaltssteuerelementen enthält, in denen der Benutzer Informationen zu einem Mitarbeiter eingeben kann.
@@ -115,7 +116,7 @@ ms.locfileid: "91585027"
 
    ||
    |-|
-   |**Kunden Name**|
+   |**Customer Name**|
    |**Satisfaction Rating**|
    |**Kommentare**|
 
@@ -138,7 +139,7 @@ ms.locfileid: "91585027"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>So ändern Sie die Benutzeroberfläche der Inhaltssteuerelemente programmgesteuert
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **ThisDocument.cs** oder **ThisDocument. vb**, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisDocument.cs** oder **ThisDocument. vb**, und klicken Sie dann auf **Code anzeigen**.
 
 2. Fügen Sie der `ThisDocument` -Klasse den folgenden Code hinzu. Dieser Code deklariert mehrere Objekte, die Sie später in dieser exemplarischen Vorgehensweise verwenden.
 
@@ -194,7 +195,7 @@ ms.locfileid: "91585027"
 
 2. Klicken Sie auf Wählen Sie den **ersten Baustein** aus, um das erste Inhalts Steuerelement des Baustein Katalogs anzuzeigen.
 
-3. Klicken Sie auf den Dropdown Pfeil neben der Überschrift **Benutzerdefinierter Katalog 1** im Steuerelement, und wählen Sie **Mitarbeitertabelle**aus.
+3. Klicken Sie auf den Dropdown Pfeil neben der Überschrift **Benutzerdefinierter Katalog 1** im Steuerelement, und wählen Sie **Mitarbeitertabelle** aus.
 
 4. Klicken Sie in die Zelle rechts neben der Zelle **Employee Name** , und geben Sie einen Namen ein.
 
@@ -214,7 +215,7 @@ ms.locfileid: "91585027"
 
 1. Klicken Sie auf Wählen Sie den **zweiten Baustein** aus, um das zweite Inhalts Steuerelement des Baustein Katalogs anzuzeigen.
 
-2. Klicken Sie auf den Dropdown Pfeil neben der Überschrift **Benutzerdefinierter Katalog 1** im Steuerelement, und wählen Sie **Kunden Tabelle**aus.
+2. Klicken Sie auf den Dropdown Pfeil neben der Überschrift **Benutzerdefinierter Katalog 1** im Steuerelement, und wählen Sie **Kunden Tabelle** aus.
 
 3. Klicken Sie in die Zelle rechts neben der Zelle **Customer Name** , und geben Sie einen Namen ein.
 

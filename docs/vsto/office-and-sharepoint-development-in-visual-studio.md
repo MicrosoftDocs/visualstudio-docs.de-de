@@ -1,5 +1,7 @@
 ---
 title: Office-und SharePoint-Entwicklung in Visual Studio
+description: Erfahren Sie, wie Sie Microsoft Office und SharePoint erweitern können, indem Sie eine Lightweight-APP oder ein Add-in erstellen, die Benutzer aus dem Office Store herunterladen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811031"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525330"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Office-und SharePoint-Entwicklung in Visual Studio
   Sie können Microsoft Office und SharePoint erweitern, indem Sie eine einfache App oder ein Add-In erstellen, die Benutzer im [Office Store](https://store.office.com/) oder einem Unternehmenskatalog herunterladen, oder indem sie eine.NET Framework-basierte Lösung erstellen, die von Benutzern auf einem Computer installiert wird.

@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente'
+description: Erfahren Sie, wie Sie mithilfe von Visual Studio Textprogramm gesteuert in ein Microsoft Word-Dokument einfügen können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: how-to
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bbd73a60b05d48eea0252cec9881d6eefca6cdd2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9567ea197c9a181141aeb52db0cca56ad4776237
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585183"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525682"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente
   Es gibt drei Hauptmethoden zum Einfügen von Text in Microsoft Office Word-Dokumente:
@@ -45,7 +47,7 @@ ms.locfileid: "91585183"
 
 ### <a name="to-insert-text-in-a-range"></a>So fügen Sie Text in einen Bereich ein
 
-1. Geben Sie einen Bereich am Anfang eines Dokuments an, und fügen Sie den Text **New Text**ein.
+1. Geben Sie einen Bereich am Anfang eines Dokuments an, und fügen Sie den Text **New Text** ein.
 
      Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.
 

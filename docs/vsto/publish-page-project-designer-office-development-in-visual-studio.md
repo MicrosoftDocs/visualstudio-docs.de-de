@@ -1,5 +1,7 @@
 ---
 title: Seite "veröffentlichen", Projekt-Designer (Office-Entwicklung)
+description: Erfahren Sie, wie die Seite Veröffentlichen des Projekt-Designers in Visual Studio verwendet wird, um die Eigenschaften für die Bereitstellung zu konfigurieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,27 +18,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7f68ab8f0ee9efde903148d4702e85e99aad77d2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810992"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525008"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Seite "veröffentlichen", Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.
 
- Wählen Sie zum Aufrufen der Seite das Projekt im **Projektmappen-Explorer**aus, und klicken Sie anschließend im Menü **Projekt** auf *Projektname* **Eigenschaften**. Wenn die Seite **Veröffentlichen** nicht angezeigt wird, wählen Sie die Registerkarte **Veröffentlichen** aus.
+ Wählen Sie zum Aufrufen der Seite das Projekt im **Projektmappen-Explorer** aus, und klicken Sie anschließend im Menü **Projekt** auf *Projektname* **Eigenschaften**. Wenn die Seite **Veröffentlichen** nicht angezeigt wird, wählen Sie die Registerkarte **Veröffentlichen** aus.
 
 > [!NOTE]
-> Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer Office-Projekt Mappe mithilfe von ClickOnce](/previous-versions/bb386095(v=vs.110)).
+> Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten** festlegen. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer Office-Projekt Mappe mithilfe von ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
 ## <a name="uielement-list"></a>UIElement-Liste
  **Speicherort des Veröffentlichungs Ordners (Website, FTP-Server oder Dateipfad)** Erforderlich.
 
  Der Speicherort des Veröffentlichungsordners ist das Verzeichnis, in das Visual Studio die Projektmappendateien kopiert, z. B. Manifeste, Assemblys und andere Dateien aus dem Build. Sie benötigen Schreibzugriff auf dieses Verzeichnis.
 
- Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokal (*c:\foldername\publishfolder*), relative (*Publish \\ *) oder ein voll qualifizierter Speicherort (* \\ \servername\foldername* oder http://<em>Servername/FolderName</em>) sein.
+ Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokal (*c:\foldername\publishfolder*), relative (*Publish \\*) oder ein voll qualifizierter Speicherort (*\\ \servername\foldername* oder http://<em>Servername/FolderName</em>) sein.
 
  Standardmäßig ist der Veröffentlichungs Speicherort *http://localhost/projectname/* , wenn IIS installiert ist, oder das *Verzeichnis \\ veröffentlichen* , wenn IIS nicht installiert ist.
 
@@ -44,7 +46,7 @@ ms.locfileid: "90810992"
 
  Die URL des Installationsordners ist das Verzeichnis, über das der Endbenutzer die Anpassung installiert. Hierbei handelt es sich ebenfalls um den Pfad, der von der Projektmappe für die Suche nach Updates verwendet wird. Als Pfad kann derselbe Pfad wie für den Speicherort des Veröffentlichungsordners verwendet werden, aber dies ist nicht unbedingt erforderlich.
 
- Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokal (*c:\foldername\publishfolder*), relative (*Publish \\ *) oder ein voll qualifizierter Speicherort (* \\ \servername\foldername* oder http://<em>Servername/FolderName</em>) sein. Alle HTTP/HTTPS-Speicherorte müssen mit US-ASCII-Zeichen erstellt werden. Unicode-Zeichen werden nicht unterstützt.
+ Optionen umfassen den lokalen Computer, eine UNC-Dateifreigabe oder eine HTTP/HTTPS-Website. Der Pfad kann lokal (*c:\foldername\publishfolder*), relative (*Publish \\*) oder ein voll qualifizierter Speicherort (*\\ \servername\foldername* oder http://<em>Servername/FolderName</em>) sein. Alle HTTP/HTTPS-Speicherorte müssen mit US-ASCII-Zeichen erstellt werden. Unicode-Zeichen werden nicht unterstützt.
 
  Wenn der Installationspfad festgelegt ist, müssen sich die Anpassungsdateien an diesem Speicherort befinden, damit Benutzer die Anpassung installieren können. Der Speicherort sollte nur festgelegt werden, wenn Sie den endgültigen Speicherort für die Bereitstellung kennen.
 
@@ -52,7 +54,7 @@ ms.locfileid: "90810992"
 
  Dieser Wert kann später von einem Administrator zugewiesen werden. Weitere Informationen finden Sie unter Gewusst [wie: Ändern des Installations Pfads einer Office](/previous-versions/bb608626(v=vs.110))-Projekt Mappe.
 
- **Prerequisites** Erforderliche Komponenten Die Voraussetzungen können im Setup Programm enthalten sein oder bei Bedarf während der Installation heruntergeladen werden.
+  Erforderliche Komponenten Die Voraussetzungen können im Setup Programm enthalten sein oder bei Bedarf während der Installation heruntergeladen werden.
 
 - **Erforderliche Komponenten von der Website des Komponentenherstellers herunterladen**: Mithilfe dieser Option können Sie die erforderlichen Komponenten bei Microsoft herunterladen.
 
@@ -64,15 +66,15 @@ ms.locfileid: "90810992"
 
   Wenn bei jeder Anpassung auf Dokumentebene oder beim Laden eines VSTO-Add-Ins auf Updates geprüft wird, würde das System auf dem neuesten Stand bleiben, aber es würde ebenfalls die Leistung beim Start beeinträchtigen.
 
-  Wenn Sie die Bereitstellung mithilfe einer CD oder eines Wechsellaufwerks vornehmen, legen Sie die Option **Nie nach Updates suchen**fest.
+  Wenn Sie die Bereitstellung mithilfe einer CD oder eines Wechsellaufwerks vornehmen, legen Sie die Option **Nie nach Updates suchen** fest.
 
   **Optionen (Beschreibung)** Die Veröffentlichungs Optionen für die folgenden Eigenschaften können festgelegt werden:
 
 - Sprache für Veröffentlichung: Das Gebietsschema der Office-Projektmappe.
 
-- Herausgebername: Der Firmen- oder Entwicklername, wie er unter **Software** oder **Programme und Funktionen**angezeigt wird.
+- Herausgebername: Der Firmen- oder Entwicklername, wie er unter **Software** oder **Programme und Funktionen** angezeigt wird.
 
-- Produktname: Der Name der Office-Projektmappe, wie er unter **Software** oder **Programme und Funktionen**angezeigt wird.
+- Produktname: Der Name der Office-Projektmappe, wie er unter **Software** oder **Programme und Funktionen** angezeigt wird.
 
 - Support-URL: Der Pfad für Endbenutzer, um sich an den technischen Support für die Office-Projektmappe zu wenden.
 
@@ -90,7 +92,7 @@ ms.locfileid: "90810992"
 
   **Sprache veröffentlichen** Mit dieser Option wird die Sprache der Microsoft-Software-Lizenzbedingungen festgelegt, und die Sprachpakete in der Liste der erforderlichen Komponenten werden eingeschlossen. Sie wirkt sich nicht auf die Sprache der Anpassung aus. Die Sprache im Setupprogramm wird durch die installierten Sprachen von Visual Studio bestimmt.
 
-  Weitere Informationen zum Ändern der **Veröffentlichungs Sprache**finden Sie unter Gewusst [wie: Ändern der Veröffentlichungs Sprache für eine ClickOnce-Anwendung](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md).
+  Weitere Informationen zum Ändern der **Veröffentlichungs Sprache** finden Sie unter Gewusst [wie: Ändern der Veröffentlichungs Sprache für eine ClickOnce-Anwendung](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md).
 
   **Veröffentlichungs Version** Legt die Versionsnummer für die Anpassung fest. Wenn die Versionsnummer geändert wird, erfolgt die Veröffentlichung der Anwendung als Update. Für jede Version wird während des Buildprozesses ein neuer Ordner erstellt, um das Überschreiben der zuvor veröffentlichten Version zu verhindern. Jeder Teil der Veröffentlichungsversion (**Hauptversion**, **Nebenversion**, **Build**, **Revision**) kann bis zu fünf Ziffern umfassen.
 
@@ -98,7 +100,7 @@ ms.locfileid: "90810992"
 
   **Jetzt veröffentlichen** Veröffentlicht die Anwendung mithilfe der aktuellen Einstellungen. Entspricht der Schaltfläche **Fertig stellen** im **Veröffentlichungs-Assistent**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
 - [Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)

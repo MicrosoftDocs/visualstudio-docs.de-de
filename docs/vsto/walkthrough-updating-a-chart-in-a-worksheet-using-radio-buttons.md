@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Options Feldern
+description: Erfahren Sie mehr über die Grundlagen der Verwendung von Options Feldern in einem Microsoft Excel-Arbeitsblatt, um dem Benutzer eine Möglichkeit zu verschaffen, schnell zwischen Optionen zu wechseln.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238815"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526070"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Arbeitsblatt mithilfe von Optionsfeldern
   Diese exemplarische Vorgehensweise zeigt die Grundlagen der Verwendung von Options Feldern in einem Microsoft Office Excel-Arbeitsblatt, um dem Benutzer eine Möglichkeit zu verschaffen, schnell zwischen Optionen zu wechseln. In diesem Fall ändern die Optionen den Stil eines Diagramms.
@@ -53,7 +55,7 @@ ms.locfileid: "88238815"
 
 2. Klicken Sie mit der rechten Maustaste auf die Registerkarte **Tabelle3** , und klicken Sie dann im Kontextmenü auf **Umbenennen** .
 
-3. Benennen Sie das Blatt in **Daten für das Diagramm**um.
+3. Benennen Sie das Blatt in **Daten für das Diagramm** um.
 
 4. Fügen Sie den **Daten für das Diagramm** die folgenden Daten hinzu, wobei Zelle A4 die linke obere Ecke ist, und die untere rechte Ecke.
 
@@ -80,7 +82,7 @@ ms.locfileid: "88238815"
 
 6. Klicken Sie im Dialogfeld **Datenquelle auswählen** auf **OK**.
 
-7. Positionieren Sie das Diagramm neu, sodass die obere rechte Ecke an der Zelle **E2**ausgerichtet ist.
+7. Positionieren Sie das Diagramm neu, sodass die obere rechte Ecke an der Zelle **E2** ausgerichtet ist.
 
 8. Speichern Sie die Datei auf Laufwerk C, und benennen Sie Sie **ExcelChart.xlsx**.
 
@@ -91,7 +93,7 @@ ms.locfileid: "88238815"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **mein Excel-Diagramm**. Wählen Sie im Assistenten die **Option vorhandenes Dokument kopieren**aus.
+1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **mein Excel-Diagramm**. Wählen Sie im Assistenten die **Option vorhandenes Dokument kopieren** aus.
 
      Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -99,7 +101,7 @@ ms.locfileid: "88238815"
 
 3. Klicken Sie auf **OK**.
 
-     Visual Studio **öffnet die neue** Excel-Arbeitsmappe im Designer und fügt **Projektmappen-Explorer**ein.
+     Visual Studio **öffnet die neue** Excel-Arbeitsmappe im Designer und fügt **Projektmappen-Explorer** ein.
 
 ## <a name="set-properties-of-the-chart"></a>Festlegen der Eigenschaften des Diagramms
  Wenn Sie ein neues Excel-Arbeitsmappenprojekt erstellen, in dem eine vorhandene Arbeitsmappe verwendet wird, werden die Host Steuerelemente für alle benannten Bereiche, Listen Objekte und Diagramme in der Arbeitsmappe automatisch erstellt. Sie können den Namen des Steuer Elements ändern, <xref:Microsoft.Office.Tools.Excel.Chart> indem Sie das **Eigenschaften** Fenster verwenden.
@@ -120,17 +122,17 @@ ms.locfileid: "88238815"
 
 ### <a name="to-add-a-user-control"></a>So fügen Sie ein Benutzersteuerelement hinzu
 
-1. Wählen Sie das **Excel-Diagramm** Projekt in **Projektmappen-Explorer**aus.
+1. Wählen Sie das **Excel-Diagramm** Projekt in **Projektmappen-Explorer** aus.
 
 2. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Benutzer Steuer**Element, benennen Sie das Steuerelement **ChartOptions,** und klicken Sie auf **Hinzufügen**.
+3. Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Benutzer Steuer** Element, benennen Sie das Steuerelement **ChartOptions,** und klicken Sie auf **Hinzufügen**.
 
 ### <a name="to-add-radio-buttons-to-the-user-control"></a>So fügen Sie dem Benutzer Steuerelement Options Felder hinzu
 
-1. Wenn das Benutzer Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie in **Projektmappen-Explorer**auf **ChartOptions** .
+1. Wenn das Benutzer Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie in **Projektmappen-Explorer** auf **ChartOptions** .
 
-2. Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der Toolbox **ein Options** Feld-Steuerelement auf das Benutzer Steuerelement, und ändern Sie die folgenden Eigenschaften. **Toolbox**
+2. Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der Toolbox **ein Options** Feld-Steuerelement auf das Benutzer Steuerelement, und ändern Sie die folgenden Eigenschaften. 
 
    | Eigenschaft | Wert |
    |----------|------------------|
@@ -141,7 +143,7 @@ ms.locfileid: "88238815"
 
    | Eigenschaft | Wert |
    |----------|---------------|
-   | **Name** | **Barchart** |
+   | **Name** | **barChart** |
    | **Text** | **Balkendiagramm** |
 
 4. Fügen Sie dem Benutzer Steuerelement ein drittes Optionsfeld hinzu, und ändern Sie die folgenden Eigenschaften.
@@ -165,7 +167,7 @@ ms.locfileid: "88238815"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>So erstellen Sie ein Ereignis und eine Eigenschaft auf einem Benutzersteuerelement
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf das Benutzer Steuerelement, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Benutzer Steuerelement, und klicken Sie dann auf **Code anzeigen**.
 
 2. Fügen Sie der `ChartOptions` -Klasse Code hinzu, um ein `SelectionChanged` -Ereignis und die-Eigenschaft zu erstellen `Selection` .
 
@@ -199,15 +201,15 @@ ms.locfileid: "88238815"
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
 
 ## <a name="add-the-user-control-to-the-worksheet"></a>Hinzufügen des Benutzer Steuer Elements zum Arbeitsblatt
- Wenn Sie die Projekt Mappe erstellen, wird das neue Benutzer Steuerelement automatisch der **Toolbox**hinzugefügt. Anschließend können Sie das Steuerelement aus der **Toolbox** in das Arbeitsblatt ziehen.
+ Wenn Sie die Projekt Mappe erstellen, wird das neue Benutzer Steuerelement automatisch der **Toolbox** hinzugefügt. Anschließend können Sie das Steuerelement aus der **Toolbox** in das Arbeitsblatt ziehen.
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>So fügen Sie dem Benutzer Steuerelement ein Arbeitsblatt hinzu
 
-1. Klicken Sie im Menü **Build** auf **Projektmappe erstellen**.
+1. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
-     Das Benutzer Steuerelement **ChartOptions** wird der **Toolbox**hinzugefügt.
+     Das Benutzer Steuerelement **ChartOptions** wird der **Toolbox** hinzugefügt.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann auf **Designer anzeigen**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs**, und klicken Sie dann auf **Designer anzeigen**.
 
 3. Ziehen Sie das Steuerelement **ChartOptions** von der **Toolbox** auf das Arbeitsblatt.
 
@@ -220,7 +222,7 @@ ms.locfileid: "88238815"
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>So ändern Sie den Diagrammtyp, der im Arbeitsblatt angezeigt wird
 
-1. Fügen Sie der `Sheet1`-Klasse den folgenden Ereignishandler hinzu.
+1. Fügen Sie der Klasse `Sheet1` den folgenden Ereignishandler hinzu.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
@@ -249,5 +251,5 @@ ms.locfileid: "88238815"
 
 - Ändern Sie die Formatierung in einem Arbeitsblatt mithilfe von Kontrollkästchen. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise [: Ändern der Arbeitsblatt Formatierung mithilfe von CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)-Steuerelementen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweisen mit Excel](../vsto/walkthroughs-using-excel.md)

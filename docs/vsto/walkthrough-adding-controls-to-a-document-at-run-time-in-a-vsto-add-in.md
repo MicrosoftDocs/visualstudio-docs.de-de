@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Steuerelementen zum Dokument zur Laufzeit im VSTO-Add-in
+description: Erfahren Sie, wie Sie das Menüband verwenden, um Benutzern das Hinzufügen einer Schaltflächen Klasse oder einer RichTextContentControl-Schnittstelle zu einem Dokument zu ermöglichen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254174"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526280"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-in
   Sie können einem beliebigen geöffneten Microsoft Office Word-Dokument Steuerelemente hinzufügen, indem Sie ein VSTO-Add-in verwenden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mithilfe des Menübands einem Dokument ein oder ein hinzufügen können <xref:Microsoft.Office.Tools.Word.Controls.Button> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .
@@ -72,7 +74,7 @@ ms.locfileid: "71254174"
 
 5. Ändern Sie im Fenster **Eigenschaften** die **Bezeichnung** -Eigenschaft für **group1** in **Steuerelemente hinzufügen**.
 
-6. Ziehen Sie ein **Kontrollkästchen** -Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder**der **Toolbox** auf **group1**.
+6. Ziehen Sie ein **Kontrollkästchen** -Steuerelement von der Registerkarte **Steuerelemente für Office-Menübänder** der **Toolbox** auf **group1**.
 
 7. Klicken Sie auf **CheckBox1** , um dieses Steuerelement auszuwählen.
 
@@ -83,7 +85,7 @@ ms.locfileid: "71254174"
    | **Name** | **addButtonCheckBox** |
    | **Label** | **Schaltfläche Hinzufügen** |
 
-9. Fügen Sie **group1**ein zweites Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
+9. Fügen Sie **group1** ein zweites Kontrollkästchen hinzu, und ändern Sie dann die folgenden Eigenschaften.
 
    | Eigenschaft | Wert |
    |-----------|---------------------------|
@@ -107,19 +109,19 @@ ms.locfileid: "71254174"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>So fügen Sie Steuerelemente auf dem aktiven Dokument hinzu oder entfernen diese
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf *ThisAddIn.cs* oder *ThisAddIn. vb* , um die Datei im Code-Editor zu öffnen.
+1. Doppelklicken Sie in **Projektmappen-Explorer** auf *ThisAddIn.cs* oder *ThisAddIn. vb* , um die Datei im Code-Editor zu öffnen.
 
 2. Fügen Sie der `ThisAddIn` -Klasse den folgenden Code hinzu. Mit diesem Code werden ein <xref:Microsoft.Office.Tools.Word.Controls.Button> - und ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt deklariert, die den Steuerelementen entsprechen, die dem Dokument hinzugefügt werden.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
 
-3. Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Wenn der Benutzer auf das Kontrollkästchen **Schaltfläche hinzufügen** im Menüband klickt, fügt diese Methode ein <xref:Microsoft.Office.Tools.Word.Controls.Button> -Objekt zur aktuellen Auswahl im Dokument hinzu, wenn das Kontrollkästchen aktiviert ist, oder löscht sie das <xref:Microsoft.Office.Tools.Word.Controls.Button> -Objekt, wenn das Kontrollkästchen deaktiviert ist.
+3. Füge der `ThisAddIn`-Klasse die folgende Methode hinzu. Wenn der Benutzer auf das Kontrollkästchen **Schaltfläche hinzufügen** im Menüband klickt, fügt diese Methode ein <xref:Microsoft.Office.Tools.Word.Controls.Button> -Objekt zur aktuellen Auswahl im Dokument hinzu, wenn das Kontrollkästchen aktiviert ist, oder löscht sie das <xref:Microsoft.Office.Tools.Word.Controls.Button> -Objekt, wenn das Kontrollkästchen deaktiviert ist.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
 
-4. Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Wenn der Benutzer auf das Kontrollkästchen **Rich-Text-Steuerelement hinzufügen** im Menüband klickt, fügt diese Methode ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt zur aktuellen Auswahl im Dokument hinzu, wenn das Kontrollkästchen aktiviert ist, oder löscht sie das <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt, wenn das Kontrollkästchen deaktiviert ist.
+4. Füge der `ThisAddIn`-Klasse die folgende Methode hinzu. Wenn der Benutzer auf das Kontrollkästchen **Rich-Text-Steuerelement hinzufügen** im Menüband klickt, fügt diese Methode ein <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt zur aktuellen Auswahl im Dokument hinzu, wenn das Kontrollkästchen aktiviert ist, oder löscht sie das <xref:Microsoft.Office.Tools.Word.RichTextContentControl> -Objekt, wenn das Kontrollkästchen deaktiviert ist.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
@@ -178,11 +180,11 @@ ms.locfileid: "71254174"
 ## <a name="next-steps"></a>Nächste Schritte
  In den folgenden Themen erhalten Sie weitere Informationen zu Steuerelementen in VSTO-Add-Ins:
 
-- Ein Beispiel, das veranschaulicht, wie einem Dokument zur Laufzeit viele andere Steuerelement Typen hinzugefügt und die Steuerelemente neu erstellt werden, wenn das Dokument erneut geöffnet wird, finden Sie im Beispiel für dynamische Steuerelemente des Word-Add-Ins unter [Office-Entwicklungs Beispiele und](../vsto/office-development-samples-and-walkthroughs.md)Exemplarische Vorgehensweisen.
+- Ein Beispiel, das veranschaulicht, wie einem Dokument zur Laufzeit viele andere Steuerelement Typen hinzugefügt und die Steuerelemente neu erstellt werden, wenn das Dokument erneut geöffnet wird, finden Sie im Beispiel Word Add-In Dynamic Controls unter [Office Development Samples und](../vsto/office-development-samples-and-walkthroughs.md)Exemplarische Vorgehensweisen.
 
 - Eine exemplarische Vorgehensweise, die das Hinzufügen von Steuerelementen zu einem Arbeitsblatt mithilfe eines VSTO-Add-Ins für Excel veranschaulicht, finden Sie unter Exemplarische Vorgehensweise [: Hinzufügen von Steuerelementen zu einem Arbeitsblatt zur Laufzeit im VSTO-Add-in-Projekt](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Word-Lösungen](../vsto/word-solutions.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Beibehalten dynamischer Steuerelemente in Office-Dokumenten](../vsto/persisting-dynamic-controls-in-office-documents.md)

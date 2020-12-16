@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Anzeigen von Arbeitsblatt Kommentaren'
+description: Erfahren Sie, wie Sie Kommentare in einem Microsoft Excel-Arbeitsblatt auf Dokument-oder Anwendungsebene Programm gesteuert anzeigen und ausblenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fc84e2726cd7a70b8fc59b0f1ac2b3377f9c4af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ae98f6b6e4508f76323b0b06dab3693f0ac5d0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543363"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525846"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Gewusst wie: Programm gesteuertes Anzeigen von Arbeitsblatt Kommentaren
   Sie können Kommentare in Microsoft Office Excel-Arbeitsblättern programmgesteuert anzeigen und ausblenden.

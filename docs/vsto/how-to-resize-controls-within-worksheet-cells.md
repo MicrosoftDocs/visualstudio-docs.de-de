@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Ändern der Größe von Steuerelementen in Arbeitsblatt Zellen'
+description: Erfahren Sie, wie Sie Visual Studio zum Ändern der Größe von Steuerelementen in Microsoft Excel-Arbeitsblatt Zellen sowohl zur Entwurfszeit als auch zur Laufzeit verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545872"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525354"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Gewusst wie: Ändern der Größe von Steuerelementen in Arbeitsblatt Zellen
   Wenn Sie die Größe von Spalten oder Zeilen in einem Arbeitsblatt ändern, werden alle Host Steuerelemente in den Zellen automatisch an die Höhe oder Breite der Zelle angepasst, deren Größe geändert wurde. Die Größe Windows Forms Steuerelemente wird standardmäßig nicht automatisch geändert.
@@ -35,13 +37,13 @@ ms.locfileid: "85545872"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>So ändern Sie die Größe von Steuerelementen zur Entwurfszeit mit Zellen
 
-1. Ziehen Sie ein Windows Forms-Steuerelement aus der **Toolbox**auf ein Arbeitsblatt.
+1. Ziehen Sie ein Windows Forms-Steuerelement aus der **Toolbox** auf ein Arbeitsblatt.
 
 2. Klicken Sie mit der rechten Maustaste auf das Steuerelement, und klicken Sie dann auf **Format Control**
 
 3. Klicken Sie im Dialogfeld **Format Steuer** Element auf die Registerkarte **Eigenschaften** .
 
-4. Wählen Sie unter **Objekt Positionierung**die Option **verschieben und Größe mit Zellen** aus, und klicken Sie dann auf **OK**.
+4. Wählen Sie unter **Objekt Positionierung** die Option **verschieben und Größe mit Zellen** aus, und klicken Sie dann auf **OK**.
 
      Wenn Sie die Größe der Zelle ändern, die das Steuerelement enthält, wird die Größe des Steuer Elements an die Zelle angepasst.
 

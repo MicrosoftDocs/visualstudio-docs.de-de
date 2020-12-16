@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint'
+description: Erstellen Sie ein Add-in auf Anwendungsebene für Microsoft PowerPoint. Diese Funktion ist für die Anwendung selbst verfügbar, unabhängig davon, welche Präsentationen geöffnet sind.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584307"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524855"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für PowerPoint
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein VSTO-Add-in für Microsoft Office PowerPoint erstellen. Die Funktionen, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Präsentationen geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -55,13 +57,13 @@ ms.locfileid: "91584307"
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 
-3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.
+3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic** und dann **Office/SharePoint**.
 
 4. Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **Office-Add-Ins** aus.
 
 5. Wählen Sie in der Liste der Projektvorlagen ein PowerPoint-VSTO-Add-In-Projekt aus.
 
-6. Geben Sie im Feld **Name den Namen** **FirstPowerPointAddIn**ein.
+6. Geben Sie im Feld **Name den Namen** **FirstPowerPointAddIn** ein.
 
 7. Klicken Sie auf **OK**.
 
@@ -76,14 +78,14 @@ ms.locfileid: "91584307"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>So fügen Sie jeder neuen Folie ein Textfeld hinzu
 
-1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Dieser Code definiert einen Ereignishandler für das [Microsoft. Office. Interop. PowerPoint. EApplication_Event. presentationnewfolie](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) -Ereignis des [Anwendungs](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) Objekts.
+1. Fügen Sie in der Codedatei „ThisAddIn“ der `ThisAddIn` -Klasse den folgenden Code hinzu. Dieser Code definiert einen Ereignishandler für das [Microsoft.Office.Interop.PowerPoint.EApplication_Event. presentationnewfolie](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) -Ereignis des [Anwendungs](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) Objekts.
 
     Wenn der Benutzer der aktiven Präsentation eine neue Folie hinzufügt, fügt dieser Ereignishandler oben auf der neuen Folie ein Textfeld hinzu und fügt Text in das Textfeld ein.
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden Code hinzu. Dieser Code ist erforderlich, um den `Application_PresentationNewSlide` Ereignishandler mit dem [Microsoft. Office. Interop. PowerPoint. EApplication_Event. presentationnewfolie](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) -Ereignis zu verbinden.
+2. Wenn Sie C# verwenden, fügen Sie dem `ThisAddIn_Startup` -Ereignishandler den folgenden Code hinzu. Dieser Code ist erforderlich, um den `Application_PresentationNewSlide` Ereignishandler mit dem [Microsoft.Office.Interop.PowerPoint.EApplication_Event. presentationnewfolie](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) -Ereignis zu verbinden.
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584307"
 
 - Das `Application` -Feld der `ThisAddIn` -Klasse. Das- `Application` Feld gibt ein [Anwendungs](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) Objekt zurück, das die aktuelle Instanz von PowerPoint darstellt.
 
-- Der- `Sld` Parameter des Ereignis Handlers für das [Microsoft. Office. Interop. PowerPoint. EApplication_Event. presentationnewfolie](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) -Ereignis. Der- `Sld` Parameter ist ein [Folien](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) Objekt, das die neue Folie darstellt. Weitere Informationen finden Sie unter [PowerPoint-Lösungen](../vsto/powerpoint-solutions.md).
+- Der- `Sld` Parameter des Ereignis Handlers für das [Microsoft.Office.Interop.PowerPoint.EApplication_Event. presentationnewfolie](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) -Ereignis. Der- `Sld` Parameter ist ein [Folien](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) Objekt, das die neue Folie darstellt. Weitere Informationen finden Sie unter [PowerPoint-Lösungen](../vsto/powerpoint-solutions.md).
 
 ## <a name="test-the-project"></a>Testen des Projekts
  Überprüfen Sie, wenn Sie das Projekt erstellen und ausführen, ob in neuen Folien, die Sie einer Präsentation hinzufügen, das Textfeld angezeigt wird.

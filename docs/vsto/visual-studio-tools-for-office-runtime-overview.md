@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Visual Studio-Tools für Office-Laufzeit
+description: Visual Studio 2010-Tools für Office-Laufzeit muss auf Endbenutzer Computern installiert werden, um Lösungen ausführen zu können, die mit den Microsoft Office Developer Tools erstellt werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31d2244796282aaad56011d5b9963232d3438ce9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253985"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526267"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Übersicht über Visual Studio-Tools für Office-Laufzeit
   Zum Ausführen von Projektmappen, die mit den Microsoft Office Developer Tools in Visual Studio erstellt werden, muss die Visual Studio 2010-Tools für Office-Laufzeit auf den Endbenutzer Computern installiert sein. Weitere Informationen finden Sie unter Vorgehens [Weise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Die Visual Studio 2010-Tools für Office-Laufzeit besteht aus zwei Hauptkomponenten:
@@ -53,14 +55,14 @@ ms.locfileid: "71253985"
  In den meisten Fällen ist der Code, den Sie in Office-Projektmappen schreiben, derselbe, unabhängig davon, ob die Projektmappe auf .NET Framework 3.5 oder [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]abzielt. Bestimmte Funktionen erfordern jedoch anderen Code, wenn Sie auf andere Versionen von .NET Framework abzielen. Weitere Informationen finden Sie unter Migrieren von Office-Projektmappen [zum .NET Framework 4 oder](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)höher.
 
 ### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>Schnittstellen in den Office-Erweiterungen für die .NET Framework 4 oder höher
- Die meisten Schnittstellen in den Office-Erweiterungen für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher sind nicht für eine Implementierung durch Benutzercode vorgesehen. Die einzigen Schnittstellen, die Sie direkt implementieren können, haben einen Namen, der mit dem Buchstaben **I**beginnt, z. B. <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>.
+ Die meisten Schnittstellen in den Office-Erweiterungen für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher sind nicht für eine Implementierung durch Benutzercode vorgesehen. Die einzigen Schnittstellen, die Sie direkt implementieren können, haben einen Namen, der mit dem Buchstaben **I** beginnt, z. B. <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>.
 
  Alle Schnittstellen, die nicht mit **dem Buchstaben** beginnen, werden intern von der Visual Studio 2010-Tools für Office-Laufzeit implementiert, und diese Schnittstellen können sich in zukünftigen Versionen ändern. Um Objekte zu erstellen, die diese Schnittstellen implementieren, verwenden Sie im Projekt die vom `Globals.Factory`-Objekt bereitgestellten Methoden. Verwenden Sie z. B. die <xref:Microsoft.Office.Tools.Excel.SmartTag>-Methode, um ein Objekt abzurufen, das die `Globals.Factory.CreateSmartTag`-Schnittstelle implementiert. Weitere Informationen zu `Globals.Factory` finden Sie unter [globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).
 
 ### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>Aktivieren von typäquivalenz und eingebetteten Typen in Projekten, die auf die .NET Framework 4 oder höher abzielen
  Da das Objektmodell der Office-Erweiterungen für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher auf Schnittstellen basiert, können Sie die Typäquivalenzfunktion in Visual C# und Visual Basic in Visual Studio verwenden, um Typinformationen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] in die Projektmappe einzubetten. Mithilfe dieser Funktion können Office-Projektmappen und die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] voneinander unabhängige Versionen verwenden. Wenn die Projektmappe beispielsweise die <xref:Microsoft.Office.Tools.Word.Document> -Schnittstelle als eingebetteten Typ verwendet und die nächste Version der Laufzeit der <xref:Microsoft.Office.Tools.Word.Document> -Schnittstelle Member hinzufügt, funktioniert die Projektmappe immer noch mit der nächsten Version der Laufzeit. Wenn die Projektmappe die <xref:Microsoft.Office.Tools.Word.Document> -Schnittstelle nicht als eingebetteten Typ verwendet, funktioniert die Projektmappe nicht mehr mit der nächsten Version der Laufzeit.
 
- Standardmäßig wird die Typäquivalenzfunktion nicht aktiviert, wenn Sie ein Office-Projekt erstellen, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet ist. Wenn Sie diese Funktion aktivieren möchten, legen Sie die Eigenschaft **Interoptypen einbetten** von einem der folgenden Assemblyverweise im Projekt auf **True**fest:
+ Standardmäßig wird die Typäquivalenzfunktion nicht aktiviert, wenn Sie ein Office-Projekt erstellen, das auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder höher ausgerichtet ist. Wenn Sie diese Funktion aktivieren möchten, legen Sie die Eigenschaft **Interoptypen einbetten** von einem der folgenden Assemblyverweise im Projekt auf **True** fest:
 
 - Microsoft.Office.Tools.dll
 
@@ -104,7 +106,7 @@ ms.locfileid: "71253985"
 
 |Edition von Windows|Edition von Microsoft Office|Erforderliche Version der Visual Studio Tools for Office-Laufzeit.|
 |------------------------|---------------------------------|--------------------------------------------------------------------|
-|32 Bit|32 Bit|32-Bit|
+|32 Bit|32 Bit|32 Bit|
 |64-Bit|32-Bit|64-Bit|
 |64-Bit|64-Bit|64-Bit|
 
@@ -113,9 +115,9 @@ ms.locfileid: "71253985"
  Mit der 64-Bit-Version von Office können auch Office-Projektmappen ausgeführt werden, die mit Projektvorlagen für 2007 Microsoft Office System in Visual Studio 2008 erstellt wurden. Es können jedoch keine Office-Projektmappen ausgeführt werden, die mit Projektvorlagen für Microsoft Office 2003 in Visual Studio 2008 erstellt wurden, oder Office-Projektmappen, die mit Visual Studio 2005 erstellt wurden. Weitere Informationen finden Sie unter [Ausführen von Projektmappen in verschiedenen Versionen von Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).
 
 ## <a name="repair-the-visual-studio-2010-tools-for-office-runtime"></a>Reparieren der Visual Studio 2010-Tools für Office-Laufzeit
- Wenn Sie die Laufzeit reparieren müssen, öffnen Sie in der Systemsteuerung **Programme und Funktionen** oder **Software** , wählen Sie in der Liste der Programme die **Microsoft Visual Studio 2010-Tools für Office-Laufzeit** aus, und klicken Sie dann auf **Deinstallieren**. Das ausgeführte Setupprogramm ermöglicht es Ihnen, die Laufzeit zu reparieren. Wenn Sie auf **Ändern**klicken, ist keine Option zum Reparieren der Laufzeit verfügbar.
+ Wenn Sie die Laufzeit reparieren müssen, öffnen Sie in der Systemsteuerung **Programme und Funktionen** oder **Software** , wählen Sie in der Liste der Programme die **Microsoft Visual Studio 2010-Tools für Office-Laufzeit** aus, und klicken Sie dann auf **Deinstallieren**. Das ausgeführte Setupprogramm ermöglicht es Ihnen, die Laufzeit zu reparieren. Wenn Sie auf **Ändern** klicken, ist keine Option zum Reparieren der Laufzeit verfügbar.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Visual Studio-Tools für Installationsszenarien für Office-Runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)
 - [Assemblys in der Visual Studio-Tools für Office-Laufzeit](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

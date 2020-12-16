@@ -1,5 +1,7 @@
 ---
 title: Verwenden von Windows Forms-Steuerelementen in Excel-Arbeitsblättern
+description: Erfahren Sie, wie Sie Ihren Microsoft Excel-Arbeitsmappen Windows Forms-Steuerelemente auf die gleiche Weise hinzufügen können wie Steuerelemente, die Sie Windows Forms hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982317"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526520"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Verwenden von Windows Forms-Steuerelementen in Excel-Arbeitsblättern
   Sie können Microsoft Office Excel-Arbeitsmappen Windows Forms-Steuerelemente auf die gleiche Weise hinzufügen wie Steuerelemente, die Sie Windows Forms hinzufügen. Allgemeine Informationen zum Arbeiten mit Steuerelementen in Dokumenten finden Sie unter Windows Forms-Steuer [Elemente in der Übersicht über Office-Dokumente](../vsto/windows-forms-controls-on-office-documents-overview.md).
@@ -36,7 +38,7 @@ ms.locfileid: "62982317"
  Sie können Komponenten, die auf allen Arbeitsblättern nutzbar sein sollen (etwa ein <xref:System.Data.DataSet>), dem Arbeitsmappen-Designer hinzufügen, statt sie den Arbeitsblättern hinzuzufügen. Die Komponente wird auf der Komponentenleiste angezeigt.
 
 ### <a name="formula-for-embedding-controls"></a>Formel zum Einbetten von Steuerelementen
- Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste**angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
+ Wenn Sie in Excel ein Steuerelement auswählen, wird **=EMBED("WinForms.Control.Host","")** in der **Formelleiste** angezeigt. Dieser Text ist erforderlich und sollte nicht gelöscht werden.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Ändern der Größe von Steuerelementen in Arbeitsblatt Zellen](../vsto/how-to-resize-controls-within-worksheet-cells.md)

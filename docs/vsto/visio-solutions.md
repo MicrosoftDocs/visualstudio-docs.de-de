@@ -1,5 +1,7 @@
 ---
 title: Visio-Lösungen
+description: Erfahren Sie, wie Sie mit VSTO-Add-ins Visio automatisieren, Visio-Features erweitern oder die Benutzeroberfläche von Visio anpassen können.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b4cbdfe6cceff279ae20518edf83b4f4ec8912
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985509"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526381"
 ---
 # <a name="visio-solutions"></a>Visio-Lösungen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office Visio verwenden können. Mit VSTO-Add-Ins können Sie Visio automatisieren, Visio -Features erweitern oder die Benutzeroberfläche (User Interface, UI) von Visio anpassen.
@@ -60,7 +62,7 @@ ms.locfileid: "72985509"
 
 |Aufgabe|Weitere Informationen finden Sie unter|
 |----------|--------------------------|
-|Anpassen des Menübands.|[Übersicht über das Menüband](../vsto/ribbon-overview.md)|
+|Anpassen des Menübands.|[Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)|
 
  Informationen zum Anpassen der Benutzeroberfläche von Visio finden Sie in der VBA-Referenzdokumentation für die Klasse [Visio.UIObject](/office/vba/api/Visio.UIObject) .
 

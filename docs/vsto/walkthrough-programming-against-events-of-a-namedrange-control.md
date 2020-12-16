@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements'
+description: Erfahren Sie, wie Sie einem Microsoft Excel-Arbeitsblatt ein Name Drange-Steuerelement hinzufügen und es mit den Office-Entwicklungs Tools in Visual Studio für seine Ereignisse programmieren können.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584936"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526126"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelement mithilfe von Office-Entwicklungs Tools in Visual Studio zu einem Microsoft Office Excel-Arbeitsblatt hinzugefügt und für seine Ereignisse verwendet wird.
@@ -54,12 +56,12 @@ ms.locfileid: "91584936"
 
 1. Erstellen Sie ein Excel-Arbeitsmappenprojekt mit dem Namen **benannte Bereichs Ereignisse**. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt **Projektmappen-Explorer**das Projekt für **benannte Bereichs Ereignisse** hinzu.
+     Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt **Projektmappen-Explorer** das Projekt für **benannte Bereichs Ereignisse** hinzu.
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Hinzufügen von Text und benannten Bereichen zum Arbeitsblatt
- Da Host Steuerelemente erweiterte Office-Objekte sind, können Sie Sie dem Dokument auf die gleiche Weise hinzufügen wie das Native Objekt. Beispielsweise können Sie einem Arbeitsblatt ein Excel-Steuerelement hinzufügen <xref:Microsoft.Office.Tools.Excel.NamedRange> , indem Sie das Menü **Einfügen** öffnen, auf **Name**zeigen und dann **definieren**auswählen. Sie können auch ein-Steuerelement hinzufügen, <xref:Microsoft.Office.Tools.Excel.NamedRange> indem Sie es aus der **Toolbox** auf das Arbeitsblatt ziehen.
+ Da Host Steuerelemente erweiterte Office-Objekte sind, können Sie Sie dem Dokument auf die gleiche Weise hinzufügen wie das Native Objekt. Beispielsweise können Sie einem Arbeitsblatt ein Excel-Steuerelement hinzufügen <xref:Microsoft.Office.Tools.Excel.NamedRange> , indem Sie das Menü **Einfügen** öffnen, auf **Name** zeigen und dann **definieren** auswählen. Sie können auch ein-Steuerelement hinzufügen, <xref:Microsoft.Office.Tools.Excel.NamedRange> indem Sie es aus der **Toolbox** auf das Arbeitsblatt ziehen.
 
- In diesem Schritt fügen Sie dem Arbeitsblatt mithilfe der **Toolbox**zwei benannte Bereichs Steuerelemente hinzu, und fügen dann dem Arbeitsblatt Text hinzu.
+ In diesem Schritt fügen Sie dem Arbeitsblatt mithilfe der **Toolbox** zwei benannte Bereichs Steuerelemente hinzu, und fügen dann dem Arbeitsblatt Text hinzu.
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>So fügen Sie dem Arbeitsblatt einen Bereich hinzu
 
@@ -75,7 +77,7 @@ ms.locfileid: "91584936"
 
      Zelle **a1** wird zu einem Bereich mit dem Namen `namedRange1` . Es gibt keinen sichtbaren Hinweis auf das Arbeitsblatt, wird jedoch `namedRange1` im Feld **Name** angezeigt (befindet sich auf der linken Seite direkt über dem Arbeitsblatt), wenn Zelle **a1** ausgewählt ist.
 
-5. Fügen Sie der <xref:Microsoft.Office.Tools.Excel.NamedRange> Zelle **B3**ein weiteres Steuerelement hinzu.
+5. Fügen Sie der <xref:Microsoft.Office.Tools.Excel.NamedRange> Zelle **B3** ein weiteres Steuerelement hinzu.
 
 6. Vergewissern Sie sich, dass **$B $3** im bearbeitbaren Textfeld angezeigt wird und dass Zelle **B3** ausgewählt ist. Wenn dies nicht der Fall ist, klicken Sie auf Zelle **B3** , um Sie auszuwählen.
 
@@ -85,7 +87,7 @@ ms.locfileid: "91584936"
 
 ### <a name="to-add-text-to-your-worksheet"></a>So fügen Sie dem Arbeitsblatt Text hinzu
 
-1. Geben Sie in Zelle **a1**den folgenden Text ein:
+1. Geben Sie in Zelle **a1** den folgenden Text ein:
 
     **Dies ist ein Beispiel für ein Name Drange-Steuerelement.**
 
@@ -99,7 +101,7 @@ ms.locfileid: "91584936"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>So fügen Sie Text in namedRange2 basierend auf dem BeforeDoubleClick-Ereignis ein
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs** , und wählen Sie **Code anzeigen**aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **Sheet1. vb** oder **Sheet1.cs** , und wählen Sie **Code anzeigen** aus.
 
 2. Fügen Sie Code hinzu, damit der `namedRange1_BeforeDoubleClick` Ereignishandler wie folgt aussieht:
 
