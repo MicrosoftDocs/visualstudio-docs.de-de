@@ -16,9 +16,9 @@
     - name: Erstellen Ihrer ersten C#-App
       expanded: true
       items:
-        - name: 'Teil 1: Erstellen einer C#-Konsolen-App'
+        - name: Erstellen einer C#-Konsolen-App
           href: tutorial-console.md
-        - name: 'Teil 2: Erweitern der C#-Konsolen-App'
+        - name: Erweitern der C#-Konsolen-App
           href: tutorial-console-part-2.md
     - name: Erstellen einer Web-App
       href: tutorial-aspnet-core.md
