@@ -1,5 +1,7 @@
 ---
 title: Testleitfaden für Quellcodeverwaltungs-Plug-Ins | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Ihr Quellcodeverwaltungs-Plug-In mit Visual Studio testen. Diese Übersicht bezieht allgemeine Testbereiche ein.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905157"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487724"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testleitfaden für Quellcodeverwaltungs-Plug-Ins
 In diesem Artikel finden Sie einen Leitfaden für das Testen Ihrer Quellcodeverwaltungs-Plug-Ins mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Außerdem erhalten Sie einen umfassenden Überblick über die gängigsten Testbereiche sowie über einige andere komplexe Bereiche, die sich als problematisch erweisen könnten. Diese Übersicht soll jedoch nicht als umfassende Liste von Testfällen verstanden werden.
