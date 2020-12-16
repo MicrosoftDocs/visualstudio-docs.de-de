@@ -1,5 +1,7 @@
 ---
 title: Outlook-Projektmappen
+description: Erfahren Sie, wie Sie mit VSTO-Add-ins Outlook automatisieren, Outlook-Features erweitern oder die Outlook-Benutzeroberfläche anpassen können.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985674"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527548"
 ---
 # <a name="outlook-solutions"></a>Outlook-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office Outlook verwenden können. Mit VSTO-Add-Ins können Sie Outlook automatisieren, Outlook-Features erweitern oder die Benutzeroberfläche (User Interface, UI) von Outlook anpassen. Weitere Informationen zu VSTO-Add-Ins finden Sie unter [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
@@ -70,5 +72,5 @@ ms.locfileid: "72985674"
 |-----------|-----------------|
 |[Übersicht über das Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)|Bietet einen Überblick über die Objekte, die vom Outlook-Objektmodell bereitgestellt werden.|
 |[Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)|Erläutert die von Visual Studio bereitgestellten Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.|
-|[Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Erläutert das Erstellen eines VSTO-Add-Ins für Microsoft Office Outlook.|
+|[Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-In für Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Erläutert das Erstellen eines VSTO-Add-Ins für Microsoft Office Outlook.|
 |[Outlook 2010 in der Office-Entwicklung](/previous-versions/office/developer/office-2010/ff458122(v=office.14))|Der Bereich der MSDN Library, in dem Sie Artikel und Referenzdokumentation zum Entwickeln von Outlook-Projektmappen finden (nicht spezifisch für die Office-Entwicklung mit Visual Studio).|

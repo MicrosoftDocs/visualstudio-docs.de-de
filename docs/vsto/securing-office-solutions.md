@@ -1,5 +1,7 @@
 ---
 title: Sichere Office-Lösungen
+description: Erfahren Sie, wie das Sicherheitsmodell für Office-Lösungen verschiedene Technologien umfasst, einschließlich der Visual Studio-Tools für Office-Laufzeit und ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978592"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528487"
 ---
 # <a name="secure-office-solutions"></a>Sichere Office-Lösungen
   Das Sicherheitsmodell für Office-Lösungen umfasst verschiedene Technologien: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , das Trust Center in Microsoft Office und die Zone Eingeschränkte Sites in Internet Explorer. In den folgenden Abschnitten wird die Funktionsweise der verschiedenen Sicherheitsfunktionen beschrieben:
@@ -62,7 +64,7 @@ ms.locfileid: "62978592"
 ### <a name="document-level-solutions"></a>Projektmappen auf Dokument Ebene
  Wenn Sie die folgenden Typen von Projekten entwickeln, muss der vollqualifizierte Pfad eines Dokuments zur Liste der vertrauenswürdigen Speicherorte in der Microsoft Office-Anwendung hinzugefügt werden:
 
-- Lösungen auf Dokument Ebene, die sich auf einer Netzwerkdatei Freigabe wie z. b. * \\ \servername\sharename*befinden.
+- Lösungen auf Dokument Ebene, die sich auf einer Netzwerkdatei Freigabe wie z. b. *\\ \servername\sharename* befinden.
 
 - Projektmappen auf Dokument Ebene für Word, das *doc* -oder *DOCM* -Dateien verwendet.
 
@@ -71,7 +73,7 @@ ms.locfileid: "62978592"
 ### <a name="temporary-certificates"></a>Temporäre Zertifikate
  Visual Studio erstellt ein temporäres Zertifikat, wenn ein signierendes Zertifikat nicht bereits vorhanden ist. Sie sollten dieses temporäre Zertifikat nur während der Entwicklung verwenden und ein offizielles Zertifikat für die Bereitstellung erwerben.
 
- Das temporäre Zertifikat wird nach dem ersten Erstellen eines Office-Projekts generiert. Wenn Sie das nächste Mal **F5**drücken, wird das Projekt neu erstellt, da das Projekt beim Hinzufügen des Zertifikats als geändert markiert wird.
+ Das temporäre Zertifikat wird nach dem ersten Erstellen eines Office-Projekts generiert. Wenn Sie das nächste Mal **F5** drücken, wird das Projekt neu erstellt, da das Projekt beim Hinzufügen des Zertifikats als geändert markiert wird.
 
  Nach einer Weile kann es zahlreiche temporäre Zertifikate geben, sodass Sie sie gelegentlich löschen sollten.
 

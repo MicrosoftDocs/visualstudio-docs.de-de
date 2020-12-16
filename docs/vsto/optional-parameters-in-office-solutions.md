@@ -1,5 +1,7 @@
 ---
 title: Optionale Parameter in Office-Projektmappen
+description: Erfahren Sie, wie Sie einen Wert für optionale Parameter nicht übergeben müssen, da die Standardwerte automatisch für jeden fehlenden Parameter verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841161"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527566"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Optionale Parameter in Office-Projektmappen
   Viele der Methoden in den Objektmodellen von Microsoft Office-Anwendungen akzeptieren optionale Parameter. Wenn Sie mithilfe von Visual Basic eine Office-Lösung in Visual Studio entwickeln, muss kein Wert für optionale Parameter übergeben werden, da die Standardwerte automatisch für jeden fehlenden Parameter verwendet werden. In den meisten Fällen können optionale Parameter in Visual C#-Projekten auch weggelassen werden. Sie können jedoch keine optionalen **ref** -Parameter der- `ThisDocument` Klasse in Word-Projekten auf Dokument Ebene weglassen.
@@ -48,7 +50,7 @@ ms.locfileid: "90841161"
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]
 
 ## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Optionale Parameter von Methoden in der ThisDocument-Klasse in Visual c#-Projekten auf Dokument Ebene für Word verwenden
- Das Word-Objektmodell enthält viele Methoden mit optionalen **ref** -Parametern, die- <xref:System.Object> Werte akzeptieren. **ref** `ThisDocument` In Visual c#-Projekten auf Dokument Ebene für Word können Sie jedoch keine optionalen ref-Parameter der Methoden der generierten-Klasse weglassen. Visual c# ermöglicht es Ihnen, optionale **ref** -Parameter nur für Methoden der Schnittstellen, nicht für Klassen, auszulassen. Beispielsweise wird das folgende Codebeispiel nicht kompiliert, da Sie keine optionalen **ref** -Parameter der-Methode der-Klasse weglassen können <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> `ThisDocument` .
+ Das Word-Objektmodell enthält viele Methoden mit optionalen **ref** -Parametern, die- <xref:System.Object> Werte akzeptieren.  `ThisDocument` In Visual c#-Projekten auf Dokument Ebene für Word können Sie jedoch keine optionalen ref-Parameter der Methoden der generierten-Klasse weglassen. Visual c# ermöglicht es Ihnen, optionale **ref** -Parameter nur für Methoden der Schnittstellen, nicht für Klassen, auszulassen. Beispielsweise wird das folgende Codebeispiel nicht kompiliert, da Sie keine optionalen **ref** -Parameter der-Methode der-Klasse weglassen können <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> `ThisDocument` .
 
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]
 

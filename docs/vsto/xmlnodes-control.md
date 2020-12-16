@@ -1,5 +1,7 @@
 ---
 title: XMLNodes-Steuerelement
+description: Erfahren Sie, dass das XMLNodes-Steuerelement nur erstellt wird, wenn ein sich wiederholendes Schema Element einem Microsoft Word-Dokument zugeordnet ist.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd82b4bac36d648bee3f6735cf844691ef6d58b2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841305"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527848"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes-Steuerelement
   **Wichtig** Die Informationen, die in diesem Thema in Bezug auf Microsoft Word beschrieben werden, werden exklusiv für den Vorteil und die Verwendung von Einzelpersonen und Organisationen präsentiert, die sich außerhalb der USA und ihrer Gebiete befinden oder Programme verwenden, die unter, Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden Diese Informationen zu Microsoft Word werden möglicherweise nicht von Einzelpersonen oder Organisationen in den USA oder deren Territorien gelesen oder verwendet, die von Microsoft Word-Produkten verwendet werden, die nach dem 10. Januar 2010 von Microsoft lizenziert wurden. Diese Produkte Verhalten sich nicht identisch mit Produkten, die vor diesem Datum lizenziert sind, oder für die Verwendung außerhalb der USA lizenziert und lizenziert wurden.
@@ -38,7 +40,7 @@ ms.locfileid: "90841305"
 ## <a name="formatting"></a>Formatierung
  Jede Formatierung, die auf Text im Dokument angewendet werden kann, kann auf ein-Steuerelement angewendet werden <xref:Microsoft.Office.Tools.Word.XMLNodes> .
 
-## <a name="events"></a>Events
+## <a name="events"></a>Ereignisse
  Folgende Ereignisse sind für das-Steuerelement verfügbar <xref:Microsoft.Office.Tools.Word.XMLNodes> :
 
 - <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>

@@ -1,5 +1,7 @@
 ---
 title: Übersicht über das Ribbon-Objektmodell
+description: Erfahren Sie, wie die Visual Studio-Tools für Office-Laufzeit ein stark typisiertes Objektmodell verfügbar macht, das Sie verwenden können, um die Eigenschaften von Menü Band Steuerelementen zur Laufzeit zu ermitteln und festzulegen
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256020"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527984"
 ---
 # <a name="ribbon-object-model-overview"></a>Übersicht über das Ribbon-Objektmodell
   Der stellt [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ein stark typisiertes Objektmodell zur Verfügung, mit dem Sie die Eigenschaften von Menü Band Steuerelementen zur Laufzeit erhalten und festlegen können. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Weitere Informationen finden [Sie unter Festlegen von Eigenschaften, die](#SettingReadOnlyProperties)schreibgeschützt werden.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
- Dieses Menüband-Objektmodell besteht Haupt [Ribbon class](#RibbonClass)sächlich aus der Multifunktionsleistenklasse, Menü [Band Ereignissen](#RibbonEvents)und Menü [Band Steuer](#RibbonControlClasses)Element-Klassen.
+ Dieses Menüband-Objektmodell besteht Haupt [](#RibbonClass)sächlich aus der Multifunktionsleistenklasse, Menü [Band Ereignissen](#RibbonEvents)und Menü [Band Steuer](#RibbonControlClasses)Element-Klassen.
 
 ## <a name="ribbon-class"></a><a name="RibbonClass"></a> Ribbon-Klasse
  Wenn Sie einem Projekt ein neues Element vom Typ " **Menüband (visueller Designer)** " hinzufügen, fügt Visual Studio dem Projekt eine Menü **Band** Klasse hinzu. Die **Ribbon** -Klasse erbt von der- <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> Klasse.
@@ -41,7 +43,7 @@ ms.locfileid: "71256020"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Wird ausgelöst, wenn die Menüband-Instanz geschlossen wird.|
 
 ## <a name="ribbon-controls"></a><a name="RibbonControlClasses"></a> Menü Band Steuerelemente
- Der- <xref:Microsoft.Office.Tools.Ribbon> Namespace enthält einen Typ für jedes Steuerelement, das in der Gruppe " **Office-Menüband** -Steuerelemente" der **Toolbox**angezeigt wird.
+ Der- <xref:Microsoft.Office.Tools.Ribbon> Namespace enthält einen Typ für jedes Steuerelement, das in der Gruppe " **Office-Menüband** -Steuerelemente" der **Toolbox** angezeigt wird.
 
  In der folgenden Tabelle wird der Typ für jedes `Ribbon`-Steuerelement angezeigt. Eine Beschreibung der einzelnen Steuerelemente finden Sie unter [Übersicht über das Menüband](../vsto/ribbon-overview.md).
 
@@ -60,7 +62,7 @@ ms.locfileid: "71256020"
 |**Menü**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Trennzeichen**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**Registerkarte**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**TABULATORTASTE**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
  Der <xref:Microsoft.Office.Tools.Ribbon>-Namespace verwendet für diese Typen das Ribbon-Präfix, um einen Namenskonflikt mit den Namen der Steuerelementklassen im <xref:System.Windows.Forms>-Namespace zu verhindern.
@@ -170,7 +172,7 @@ ms.locfileid: "71256020"
 
 |Ereignis|BESCHREIBUNG|
 |-----------|-----------------|
-|Klicken Sie auf|Tritt beim Klicken auf ein Steuerelement auf.|
+|Klicken Sie im Menüband auf|Tritt beim Klicken auf ein Steuerelement auf.|
 |TextChanged|Tritt beim Ändern des Texts in einem Bearbeitungs- oder Kombinationsfeld auf.|
 |ItemsLoading|Tritt auf, wenn die Items-Auflistung des-Steuer Elements von Office angefordert wird. Office speichert die Items-Auflistung zwischen, bis der Code die Eigenschaften des Steuer Elements ändert oder die-Methode aufgerufen wird <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> .|
 |ButtonClick|Tritt beim Klicken auf eine Schaltfläche in <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> oder <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> auf.|
@@ -188,7 +190,7 @@ ms.locfileid: "71256020"
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Gewusst wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Menüband-Designer](../vsto/ribbon-designer.md)
+- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Menüband-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente auf einem Menüband zur Laufzeit](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
 - [Anpassen eines Menübands für Outlook](../vsto/customizing-a-ribbon-for-outlook.md)

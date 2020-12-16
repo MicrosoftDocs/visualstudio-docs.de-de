@@ -1,5 +1,7 @@
 ---
 title: XML-Schemas und-Daten in Anpassungen auf Dokument Ebene
+description: Microsoft Excel und Word bieten die Möglichkeit, Ihren Dokumenten Schemas zuzuordnen und das Importieren und Exportieren von XML-Daten in und aus dem Dokument zu vereinfachen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57fad7982f762c4837399e12552cd109c9a9086c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841082"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527864"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML-Schemas und-Daten in Anpassungen auf Dokument Ebene
   **Wichtig** Die Informationen, die in diesem Thema in Bezug auf Microsoft Word beschrieben werden, werden exklusiv für den Vorteil und die Verwendung von Einzelpersonen und Organisationen präsentiert, die sich außerhalb der USA und ihrer Gebiete befinden oder Programme verwenden, die unter, Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden Diese Informationen zu Microsoft Word werden möglicherweise nicht von Einzelpersonen oder Organisationen in den USA oder deren Territorien gelesen oder verwendet, die von Microsoft Word-Produkten verwendet werden, die nach dem 10. Januar 2010 von Microsoft lizenziert wurden. Diese Produkte Verhalten sich nicht identisch mit Produkten, die vor diesem Datum lizenziert sind, oder für die Verwendung außerhalb der USA lizenziert und lizenziert wurden.
@@ -40,9 +42,9 @@ ms.locfileid: "90841082"
 
  Es gibt zwei Hauptobjekte:
 
-- XML-Schema (XSD-Datei). Für jedes Schema in der Arbeitsmappe fügt Visual Studio dem Projekt ein Schema hinzu. Dies wird als Projekt Element mit einer XSD-Erweiterung in **Projektmappen-Explorer**angezeigt.
+- XML-Schema (XSD-Datei). Für jedes Schema in der Arbeitsmappe fügt Visual Studio dem Projekt ein Schema hinzu. Dies wird als Projekt Element mit einer XSD-Erweiterung in **Projektmappen-Explorer** angezeigt.
 
-- Eine typisierte <xref:System.Data.DataSet>-Klasse. Diese Klasse wird basierend auf dem Schema erstellt. Diese DataSet-Klasse ist in **Klassenansicht**sichtbar.
+- Eine typisierte <xref:System.Data.DataSet>-Klasse. Diese Klasse wird basierend auf dem Schema erstellt. Diese DataSet-Klasse ist in **Klassenansicht** sichtbar.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Objekte, die erstellt werden, wenn Schema Elemente Excel-Arbeitsblättern zugeordnet werden
  Wenn Sie ein Schema Element aus dem **XML-Quell** Aufgabenbereich einem Arbeitsblatt zuordnen, erstellt Visual Studio automatisch mehrere Objekte und fügt Sie dem Projekt hinzu:

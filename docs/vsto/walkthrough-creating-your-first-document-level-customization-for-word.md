@@ -1,5 +1,6 @@
 ---
 title: Erstellen Sie Ihre erste Anpassung auf Dokument Ebene für Word
+description: Erstellen Sie eine Anpassung auf Dokument Ebene für Microsoft Word. Die Features, die Sie in dieser Art von Lösung erstellen, sind nur verfügbar, wenn ein bestimmtes Dokument geöffnet ist.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584988"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527076"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokument Ebene für Word
 
@@ -58,7 +59,7 @@ ms.locfileid: "91584988"
 
 2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
 ::: moniker range="vs-2017"
-3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic**und dann **Office/SharePoint**.
+3. Erweitern Sie im Vorlagenbereich **Visual C#** oder **Visual Basic** und dann **Office/SharePoint**.
 
 4. Wählen Sie unter dem erweiterten Knoten **Office/SharePoint** den Knoten **VSTO-Add-ins** aus.
 
@@ -68,7 +69,7 @@ ms.locfileid: "91584988"
 
 7. Klicken Sie auf **OK**.
 
-8. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte**die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
+8. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte** die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. Wählen Sie im Dialogfeld **Neues Projekt erstellen** das **Word-VSTO-Dokument** Projekt aus.
@@ -79,7 +80,7 @@ ms.locfileid: "91584988"
 
 5. Geben Sie im Dialogfeld **Neues Projekt konfigurieren** im Feld **Name** den Text **firstworkbookcustomia** ein, und klicken Sie auf **Erstellen**.
 
-6. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte**die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
+6. Wählen Sie im **Assistenten für Visual Studio-Tools für Office-Projekte** die Option **Neues Dokument erstellen** aus, und klicken Sie auf **OK**.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das Projekt **firstdocumentanpassung** und fügt dem Projekt das **firstdocumentanpassung** -Dokument und die ThisDocument-Codedatei hinzu. Das **firstdocumentcustomizdokument** wird automatisch im Designer geöffnet.
 
@@ -91,11 +92,11 @@ ms.locfileid: "91584988"
 
 1. Schließen Sie das Dokument, indem Sie auf die Schaltfläche **Schließen** (X) für das Fenster "Designer" klicken.
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Codedatei **ThisDocument** , und klicken Sie dann auf **Designer anzeigen**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf die Codedatei **ThisDocument** , und klicken Sie dann auf **Designer anzeigen**.
 
      \- oder -
 
-     Doppelklicken Sie in **Projektmappen-Explorer**auf die Codedatei **ThisDocument** .
+     Doppelklicken Sie in **Projektmappen-Explorer** auf die Codedatei **ThisDocument** .
 
 ## <a name="add-text-to-the-document-in-the-designer"></a>Hinzufügen von Text zum Dokument im Designer
 
@@ -117,7 +118,7 @@ ms.locfileid: "91584988"
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>So fügen Sie dem Dokument mithilfe von Code einen zweiten Textabsatz hinzu
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf **ThisDocument**, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf **ThisDocument**, und klicken Sie dann auf **Code anzeigen**.
 
      Die Codedatei wird in Visual Studio geöffnet.
 

@@ -1,5 +1,7 @@
 ---
 title: Ribbon XML
+description: Erfahren Sie, wie Sie das Menüband (XML)-Element verwenden, wenn Sie das Menüband auf eine Weise anpassen möchten, die nicht vom Element "Menüband (visueller Designer)" unterstützt wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840937"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528415"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   Das Element "Menüband (XML)" ermöglicht das Anpassen eines Menübands mithilfe von XML. Verwenden Sie das Element Menüband (XML), wenn Sie das Menüband auf eine Weise anpassen möchten, die vom Element Menüband (visueller Designer) nicht unterstützt wird. Einen Vergleich dazu, was Sie mit den einzelnen Elementen tun können, finden Sie unter [Übersicht über das Menüband](../vsto/Ribbon-overview.md).
@@ -53,7 +55,7 @@ ms.locfileid: "90840937"
  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Definieren des Verhaltens des benutzerdefinierten Menübands
- Sie können auf Benutzeraktionen (z. b. das Klicken auf eine Schaltfläche im Menüband) reagieren, indem Sie *Rückruf Methoden*erstellen. Rückrufmethoden ähneln Ereignissen in Windows Forms-Steuerelementen, werden jedoch durch ein Attribut im XML-Code des Benutzeroberflächenelements identifiziert. Sie schreiben Methoden in der Klasse "Menüband", und ein Steuerelement ruft die Methode auf, die den gleichen Namen wie der Attributwert aufweist. Beispielsweise können Sie eine Rückruf Methode erstellen, die aufgerufen wird, wenn ein Benutzer auf eine Schaltfläche auf dem Menüband klickt. Zum Erstellen einer Rückrufmethode sind zwei Schritte erforderlich:
+ Sie können auf Benutzeraktionen (z. b. das Klicken auf eine Schaltfläche im Menüband) reagieren, indem Sie *Rückruf Methoden* erstellen. Rückrufmethoden ähneln Ereignissen in Windows Forms-Steuerelementen, werden jedoch durch ein Attribut im XML-Code des Benutzeroberflächenelements identifiziert. Sie schreiben Methoden in der Klasse "Menüband", und ein Steuerelement ruft die Methode auf, die den gleichen Namen wie der Attributwert aufweist. Beispielsweise können Sie eine Rückruf Methode erstellen, die aufgerufen wird, wenn ein Benutzer auf eine Schaltfläche auf dem Menüband klickt. Zum Erstellen einer Rückrufmethode sind zwei Schritte erforderlich:
 
 - Zuweisen eines Attributs zu einem Steuerelement in der Menüband-XML-Datei, die eine Rückrufmethode in Ihrem Code identifiziert.
 
@@ -133,7 +135,7 @@ ms.locfileid: "90840937"
  Die Standardelemente und -attribute in der Menüband-XML-Datei sind eine kleine Teilmenge der Elemente und Attribute, die verfügbar sind. Eine umfassende Liste der verfügbaren Elemente und Attribute finden Sie im technischen Artikel [Anpassen der Menüband-Benutzeroberfläche von Office (2007) für Entwickler (Teil 2 von 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
 ## <a name="ribbon-class-reference"></a><a name="RibbonExtensionClass"></a> Menü bandklasse, Referenz
- Visual Studio generiert die Klasse "Menüband" in der Menüband-Codedatei. Fügen Sie dieser Klasse die Rückruf Methoden für Steuerelemente auf dem Menüband hinzu. Diese Klasse implementiert die <xref:Microsoft.Office.Core.IRibbonExtensibility>-Schnittstelle.
+ Visual Studio generiert die Klasse "Menüband" in der Menüband-Codedatei. Fügen Sie dieser Klasse die Rückruf Methoden für Steuerelemente auf dem Menüband hinzu. Diese Klasse implementiert die <xref:Microsoft.Office.Core.IRibbonExtensibility> -Schnittstelle.
 
  Die folgende Tabelle beschreibt die Standardmethoden in dieser Klasse.
 

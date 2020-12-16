@@ -1,5 +1,7 @@
 ---
 title: Nicht gelesene Nachrichten aus dem Posteingang Programm gesteuert erhalten
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um ungelesene Nachrichten Programm gesteuert aus dem Posteingang in Microsoft Outlook abzurufen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc913379546c80eef70671ea0ecbd441001e6ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6dae629c008c04f7ee9fb66b9dbc5f8f31e53d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537604"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528264"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Gewusst wie: Programm gesteuertes Abrufen ungelesener Nachrichten aus dem Posteingang
   Dieses Beispiel ruft ungelesene e-Mail-Nachrichten aus dem Outlook- **Posteingang** ab und zeigt die Anzahl der Elemente an

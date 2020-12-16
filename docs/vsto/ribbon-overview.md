@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Menüband
+description: Erfahren Sie, wie Sie mit dem Menüband verwandte Befehle organisieren können, damit Sie leichter zu finden sind und wie Befehle als Steuerelemente auf dem Menüband angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985611"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527980"
 ---
 # <a name="ribbon-overview"></a>Übersicht über Menüband
   Das Menüband ist eine Möglichkeit, verwandte Befehle so zu organisieren, dass Sie leichter zu finden sind. Befehle werden als Steuerelemente auf dem Menüband angezeigt. Steuerelemente sind in *Gruppen* entlang eines horizontalen Streifens am oberen Rand eines Anwendungsfensters angeordnet. Verwandte Gruppen sind auf Registerkarten organisiert.
@@ -84,7 +86,7 @@ ms.locfileid: "72985611"
  Weitere Informationen zum Exportieren des Menübands in XML finden Sie unter Gewusst [wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).
 
 ### <a name="update-the-code"></a>Aktualisieren des Codes
- **Projektmappen-Explorer**wird eine neue Menüband-Codedatei hinzugefügt. Diese Datei enthält die Menüband-XML-Klasse. Sie müssen Rückrufmethoden im `Ribbon Callbacks`-Bereich dieser Klasse erstellen, um Benutzeraktionen wie das Klicken auf eine Schaltfläche zu behandeln. Verschieben Sie den Code aus den Ereignishandlern in die Rückrufmethoden, und ändern Sie den Code, damit er mit dem Programmmodell für die Menübanderweiterung (RibbonX) verwendet werden kann. Weitere Informationen finden Sie unter [Ribbon XML](../vsto/ribbon-xml.md).
+ **Projektmappen-Explorer** wird eine neue Menüband-Codedatei hinzugefügt. Diese Datei enthält die Menüband-XML-Klasse. Sie müssen Rückrufmethoden im `Ribbon Callbacks`-Bereich dieser Klasse erstellen, um Benutzeraktionen wie das Klicken auf eine Schaltfläche zu behandeln. Verschieben Sie den Code aus den Ereignishandlern in die Rückrufmethoden, und ändern Sie den Code, damit er mit dem Programmmodell für die Menübanderweiterung (RibbonX) verwendet werden kann. Weitere Informationen finden Sie unter [Ribbon XML](../vsto/ribbon-xml.md).
 
  Sie müssen den Code auch den Klassen `ThisAddIn`, `ThisWorkbook` oder `ThisDocument` hinzufügen, durch die die `CreateRibbonExtensibilityObject`-Methode überschrieben und die Menüband-XML-Klasse an die Office-Anwendung zurückgegeben wird.
 
@@ -127,7 +129,7 @@ ms.locfileid: "72985611"
 |[Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)|Veranschaulicht das anzeigen, ausblenden und Ändern des Menübands und das Ausführen des Codes von Steuerelementen in einem benutzerdefinierten Aufgabenbereich, Aktionsbereich oder Outlook-Formular Bereich.|
 |[Vorgehensweise: Ändern der Position einer Registerkarte im Menüband](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Zeigt, wie die Reihenfolge von Registerkarten auf einem Menüband geändert wird.|
 |[Gewusst wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)|Veranschaulicht das Hinzufügen von Gruppen und Steuerelementen zu einer integrierten Registerkarte.|
-|[Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)|Veranschaulicht das Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf die **Datei**klicken.|
+|[Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)|Veranschaulicht das Hinzufügen von Steuerelementen zum Menü, das geöffnet wird, wenn Sie auf die **Datei** klicken.|
 |[Gewusst wie: Hinzufügen eines Dialogfeld-Start Programms zu einer Menü Bandgruppe](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Zeigt, wie einem Dialogfeld-Start Programm eine beliebige Gruppe auf einem Menüband hinzugefügt wird.|
 |[Gewusst wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Zeigt, wie Sie das Menüband auf Erweiterte Weise anpassen, indem Sie das Menüband aus dem Designer in Menüband-XML exportieren.|
 |[Ribbon XML](../vsto/ribbon-xml.md)|Erläutert, wie Sie ein Menüband mithilfe von Menüband-XML anpassen können.|

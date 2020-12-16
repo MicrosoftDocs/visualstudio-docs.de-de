@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit e-Mail-Elementen
+description: Erfahren Sie, dass die MailItem-Klasse die Methoden und Eigenschaften enthält, die Sie zum Ausführen von Aufgaben mit e-Mails verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce91f9773bf4fc212a47bf64d76c8f1131457c38
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815432"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526878"
 ---
 # <a name="work-with-mail-items"></a>Arbeiten mit e-Mail-Elementen
   Die <xref:Microsoft.Office.Interop.Outlook.MailItem> Klasse enthält die Methoden und Eigenschaften, die Sie zum Ausführen von Aufgaben mit e-Mail-Nachrichten verwenden.

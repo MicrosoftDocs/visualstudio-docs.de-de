@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um Teile eines Microsoft Word-Dokuments mithilfe von Inhalts Steuerelementen zu schützen.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 813bb829e3be243a9812a8856bf4fcfa6de2fd22
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 83052ca3c61fe931c3360a1092ca23740ddcff3f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581077"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528236"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen
   Wenn Sie einen Teil eines Dokuments schützen, verhindern Sie, dass Benutzer Inhalte in diesem Teil des Dokuments ändern oder löschen. Es gibt mehrere Möglichkeiten, Teile eines Microsoft Office Word-Dokuments mithilfe von Inhaltssteuerelementen zu schützen.
@@ -46,9 +48,9 @@ ms.locfileid: "91581077"
 
 2. Legen Sie im **Eigenschaften** Fenster eine oder beide der folgenden Eigenschaften fest:
 
-    - Um zu verhindern, dass Benutzer das Steuerelement bearbeiten, legen Sie **lockcontent** auf **true**fest.
+    - Um zu verhindern, dass Benutzer das Steuerelement bearbeiten, legen Sie **lockcontent** auf **true** fest.
 
-    - Legen Sie **LockContentControl** auf **true**fest, um zu verhindern, dass Benutzer das Steuerelement löschen.
+    - Legen Sie **LockContentControl** auf **true** fest, um zu verhindern, dass Benutzer das Steuerelement löschen.
 
 3. Klicken Sie auf **OK**.
 

@@ -1,5 +1,7 @@
 ---
 title: Arbeiten mit Tabellen
+description: Erfahren Sie mehr über die Schritt-für-Schritt-Anleitungen und Codebeispiele für die Verwendung des Microsoft Word-Objektmodells zum Arbeiten mit Tabellen in Office-Projekten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815351"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526856"
 ---
 # <a name="work-with-tables"></a>Arbeiten mit Tabellen
   Die Themen in diesem Abschnitt bieten schrittweise Anleitungen und Codebeispiele für die Verwendung des Microsoft Office Word-Objektmodells zum Arbeiten mit Tabellen in Office-Projekten. In einigen Fällen unterscheiden sich die Verfahren zum Ausführen dieser Aufgaben in VSTO-Add-Ins von den Verfahren, die Sie in Anpassungen auf Dokumentebene verwenden.

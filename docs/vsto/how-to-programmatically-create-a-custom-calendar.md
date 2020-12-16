@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Erstellen eines benutzerdefinierten Kalenders'
+description: Verwenden Sie dieses Beispiel, um einen neuen Kalender Ordner mit dem Namen "Personal Calendar" Programm gesteuert zu erstellen und dann ein neues Termin Element zu erstellen und es dem Kalender Ordner hinzuzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d0a76189e96a6551408abe49b6e08a26c91ffa8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546054"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527831"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Gewusst wie: Programm gesteuertes Erstellen eines benutzerdefinierten Kalenders
   In diesem Beispiel wird ein neuer Kalender Ordner mit dem Namen " **Personal Calendar**" erstellt. Anschließend wird ein neues Termin Element erstellt, das dem Kalender Ordner hinzugefügt wird. Im Code wird dann der Kalender Ordner angezeigt.

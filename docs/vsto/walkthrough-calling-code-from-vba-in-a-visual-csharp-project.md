@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Abrufen von Code aus VBA in einem Visual c#-Projekt'
+description: Erfahren Sie, wie Sie eine Methode in einer Anpassung auf Dokument Ebene für Microsoft Excel aus Visual Basic for Applications (VBA)-Code in der Arbeitsmappe abrufen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92297948"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527295"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Exemplarische Vorgehensweise: Abrufen von Code aus VBA in einem Visual c#-Projekt
   Diese exemplarische Vorgehensweise veranschaulicht, wie eine Methode in einer Anpassung auf Dokumentebene für Microsoft Office Excel aus VBA-Code (Visual Basic for Applications) in der Arbeitsmappe aufgerufen wird. Das Verfahren umfasst drei grundlegende Schritte: Hinzufügen einer Methode zur `Sheet1` -Hostelementklasse, Verfügbarmachen der Methode für VBA-Code und Aufrufen der Methode aus VBA-Code in der Arbeitsmappe.
@@ -105,17 +107,17 @@ ms.locfileid: "92297948"
 
 5. Wählen Sie in der Liste der Projektvorlagen das Projekt **Excel 2010-Arbeitsmappe** oder **Excel 2013-Arbeitsmappe** aus.
 
-6. Geben Sie im Feld **Name** die Zeichenfolge **CallingCodeFromVBA**ein.
+6. Geben Sie im Feld **Name** die Zeichenfolge **CallingCodeFromVBA** ein.
 
 7. Klicken Sie auf **OK**.
 
      Der **Projekt-Assistent aus Visual Studio Tools for Office** wird geöffnet.
 
-8. Wählen Sie **Vorhandenes Dokument kopieren**aus, und geben Sie im Feld **Vollständiger Pfad zum vorhandenen Dokument** den Speicherort der zuvor erstellten Arbeitsmappe **WorkbookWithVBA** an. Wenn Sie Ihre eigene Arbeitsmappe mit Makros verwenden, geben Sie stattdessen den Speicherort dieser Arbeitsmappe an.
+8. Wählen Sie **Vorhandenes Dokument kopieren** aus, und geben Sie im Feld **Vollständiger Pfad zum vorhandenen Dokument** den Speicherort der zuvor erstellten Arbeitsmappe **WorkbookWithVBA** an. Wenn Sie Ihre eigene Arbeitsmappe mit Makros verwenden, geben Sie stattdessen den Speicherort dieser Arbeitsmappe an.
 
 9. Klicken Sie auf **Fertig stellen**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet die Arbeitsmappe **WorkbookWithVBA** im Designer und fügt **Projektmappen-Explorer**das Projekt **CallingCodeFromVBA** hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet die Arbeitsmappe **WorkbookWithVBA** im Designer und fügt **Projektmappen-Explorer** das Projekt **CallingCodeFromVBA** hinzu.
 
 ## <a name="trust-the-location-of-the-workbook"></a>Vertrauensstellung des Speicher Orts der Arbeitsmappe
  Bevor Sie Code in der Projektmappe für VBA-Code in der Arbeitsmappe verfügbar machen können, müssen Sie VBA in der Arbeitsmappe als vertrauenswürdig festlegen, damit es ausgeführt werden kann. Hierzu stehen mehrere Vorgehensweisen zur Verfügung. In dieser exemplarischen Vorgehensweise führen Sie diese Aufgabe aus, indem Sie den Speicherort der Arbeitsmappe im **Trust Center** in Excel als vertrauenswürdig festlegen.
@@ -138,7 +140,7 @@ ms.locfileid: "92297948"
 
 8. Navigieren Sie im Dialogfeld **Vertrauenswürdiger Microsoft Office-Speicherort** zu dem Ordner mit dem Projekt **CallingCodeFromVBA** .
 
-9. Wählen Sie **Unterordner dieses Speicherorts sind ebenfalls vertrauenswürdig**aus.
+9. Wählen Sie **Unterordner dieses Speicherorts sind ebenfalls vertrauenswürdig** aus.
 
 10. Klicken Sie im Dialogfeld **Vertrauenswürdiger Microsoft Office-Speicherort** auf **OK**.
 
@@ -153,7 +155,7 @@ ms.locfileid: "92297948"
 
 ### <a name="to-add-a-method-to-the-sheet1-class"></a>So fügen Sie der Sheet1-Klasse eine Methode hinzu
 
-1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf **Sheet1.cs**, und klicken Sie dann auf **Code anzeigen**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Sheet1.cs**, und klicken Sie dann auf **Code anzeigen**.
 
      Die Datei **Sheet1.cs** wird im Code-Editor geöffnet.
 
@@ -161,7 +163,7 @@ ms.locfileid: "92297948"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Fügen Sie der `Sheet1`-Klasse die folgende Methode hinzu. Mit dieser Methode wird die <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> -Methode überschrieben, um die aktuelle Instanz der `Sheet1` -Klasse zurückzugeben.
+3. Füge der `Sheet1`-Klasse die folgende Methode hinzu. Mit dieser Methode wird die <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> -Methode überschrieben, um die aktuelle Instanz der `Sheet1` -Klasse zurückzugeben.
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
@@ -191,11 +193,11 @@ ms.locfileid: "92297948"
 6. Erstellen Sie das Projekt.
 
 ## <a name="expose-the-method-to-vba-code"></a>Verfügbar machen der Methode für VBA-Code
- Zum Verfügbarmachen der `CreateVstoNamedRange` -Methode für VBA-Code in der Arbeitsmappe legen Sie die **ReferenceAssemblyFromVbaProject** -Eigenschaft für das `Sheet1` -Hostelement auf **True**fest.
+ Zum Verfügbarmachen der `CreateVstoNamedRange` -Methode für VBA-Code in der Arbeitsmappe legen Sie die **ReferenceAssemblyFromVbaProject** -Eigenschaft für das `Sheet1` -Hostelement auf **True** fest.
 
 ### <a name="to-expose-the-method-to-vba-code"></a>So machen Sie die Methode für VBA-Code verfügbar
 
-1. Doppelklicken Sie im **Projektmappen-Explorer**auf **Sheet1.cs**.
+1. Doppelklicken Sie im **Projektmappen-Explorer** auf **Sheet1.cs**.
 
      Die Datei **WorkbookWithVBA** wird im Designer mit "Sheet1" geöffnet.
 

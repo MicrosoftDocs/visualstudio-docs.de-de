@@ -1,5 +1,7 @@
 ---
 title: Binden an Daten vom Dienst im VSTO-Add-in-Projekt
+description: Erfahren Sie, wie Sie einem Microsoft Word-Dokument Steuerelemente hinzufügen, die Steuerelemente an Daten binden, die vom MSDN Content Service abgerufen werden, und auf Ereignisse zur Laufzeit reagieren.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72381315"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527482"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Binden an Daten aus einem Dienst in einem VSTO-Add-in-Projekt
   Sie können Daten in VSTO-Add-In-Projekten an Hoststeuerelemente binden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Steuerelemente zu einem Microsoft Office Word-Dokument hinzugefügt werden, wie die Steuerelemente an Daten gebunden werden, die aus dem MSDN Content Service abgerufen werden, und wie auf Ereignisse zur Laufzeit reagiert wird.
@@ -52,7 +54,7 @@ ms.locfileid: "72381315"
 
      Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio öffnet die Datei `ThisAddIn.vb` oder `ThisAddIn.cs` und fügt das Projekt dem **Projektmappen-Explorer**hinzu.
+     Visual Studio öffnet die Datei `ThisAddIn.vb` oder `ThisAddIn.cs` und fügt das Projekt dem **Projektmappen-Explorer** hinzu.
 
 ## <a name="add-a-web-service"></a>Hinzufügen eines Webdiensts
  Verwenden Sie für diese exemplarische Vorgehensweise einen Webdienst namens MTPS Content Service. Dieser Webdienst gibt Informationen aus einem angegebenen MSDN-Artikel in Form einer XML-Zeichenfolge oder eines reinen Texts zurück. In einem späteren Schritt wird gezeigt, wie die zurückgegebenen Informationen in einem Inhaltssteuerelement angezeigt werden.
@@ -61,7 +63,7 @@ ms.locfileid: "72381315"
 
 1. Klicken Sie im Menü **Daten** auf **Neue Datenquelle hinzufügen**.
 
-2. Klicken Sie im **Assistent zum Konfigurieren von Datenquellen**auf **Dienst**und dann auf **Weiter**.
+2. Klicken Sie im **Assistent zum Konfigurieren von Datenquellen** auf **Dienst** und dann auf **Weiter**.
 
 3. Geben Sie die folgende URL in das Feld **Adresse** ein:
 
@@ -69,7 +71,7 @@ ms.locfileid: "72381315"
 
 4. Klicken Sie auf **Start**.
 
-5. Geben Sie in das Feld **Namespace** die Zeichenfolge **ContentService**ein, und klicken Sie auf **OK**.
+5. Geben Sie in das Feld **Namespace** die Zeichenfolge **ContentService** ein, und klicken Sie auf **OK**.
 
 6. Klicken Sie im Dialogfeld **Assistent zum Hinzufügen von Verweisen** auf **Fertig stellen**.
 
@@ -83,12 +85,12 @@ ms.locfileid: "72381315"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
 
-2. Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Diese Methode erstellt ein Inhaltssteuerelement am Anfang des aktiven Dokuments.
+2. Füge der `ThisAddIn`-Klasse die folgende Methode hinzu. Diese Methode erstellt ein Inhaltssteuerelement am Anfang des aktiven Dokuments.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3. Fügen Sie der `ThisAddIn`-Klasse die folgende Methode hinzu. Diese Methode initialisiert die Objekte, die zum Erstellen und Senden einer Anforderung an den Webdienst erforderlich sind.
+3. Füge der `ThisAddIn`-Klasse die folgende Methode hinzu. Diese Methode initialisiert die Objekte, die zum Erstellen und Senden einer Anforderung an den Webdienst erforderlich sind.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]

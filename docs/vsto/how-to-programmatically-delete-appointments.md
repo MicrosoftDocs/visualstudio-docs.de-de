@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes Löschen von Terminen'
+description: Erfahren Sie, wie Sie apppointments Programm gesteuert in Microsoft Outlook löschen können. In diesem Beispiel wird eine Instanz eines sich wiederholenden Termins gelöscht.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddd3d65202ad0e6673ed436203b253e691372f7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56bd9876fa24610412d66e71800a24b413dac576
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545963"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526805"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Vorgehensweise: Programm gesteuertes Löschen von Terminen
   In diesem Beispiel wird eine Instanz eines sich wiederholenden Termins gelöscht. Für das Beispiel wird davon ausgegangen, dass am 28. Juni 2006 um 08:00 Uhr eine Instanz eines sich wiederholenden Termins stattfindet.

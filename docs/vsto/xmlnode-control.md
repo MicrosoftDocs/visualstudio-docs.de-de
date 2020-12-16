@@ -1,5 +1,7 @@
 ---
 title: XMLNode-Steuerelement
+description: Erfahren Sie, dass das XMLNode-Steuerelement ein zugeordnetes XML-Knoten Objekt ist, das Ereignisse verfügbar macht und an Daten gebunden werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8bd5c4612b59f909ae623eb4092a209798f98c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58f9c5db883f55c00236bc202797dcf2ec3003f6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62975723"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528343"
 ---
 # <a name="xmlnode-control"></a>XMLNode-Steuerelement
   **Wichtig** Die Informationen, die in diesem Thema in Bezug auf Microsoft Word beschrieben werden, werden exklusiv für den Vorteil und die Verwendung von Einzelpersonen und Organisationen präsentiert, die sich außerhalb der USA und ihrer Gebiete befinden oder Programme verwenden, die unter, Microsoft Word-Produkte, die von Microsoft vor Januar 2010 lizenziert wurden Diese Informationen zu Microsoft Word werden möglicherweise nicht von Einzelpersonen oder Organisationen in den USA oder deren Territorien gelesen oder verwendet, die von Microsoft Word-Produkten verwendet werden, die nach dem 10. Januar 2010 von Microsoft lizenziert wurden. Diese Produkte Verhalten sich nicht identisch mit Produkten, die vor diesem Datum lizenziert sind, oder für die Verwendung außerhalb der USA lizenziert und lizenziert wurden.
@@ -34,7 +36,7 @@ ms.locfileid: "62975723"
 ## <a name="formatting"></a>Formatierung
  Die Formatierung, die auf ein-Objekt angewendet werden kann, <xref:Microsoft.Office.Interop.Word.XMLNode> kann auf ein-Steuerelement angewendet werden <xref:Microsoft.Office.Tools.Word.XMLNode> . Dies schließt Schriftarten, unterstrich Stile und Zeichenstile ein.
 
-## <a name="events"></a>Events
+## <a name="events"></a>Ereignisse
  Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Word.XMLNode> -Steuerelement verfügbar:
 
 - <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>

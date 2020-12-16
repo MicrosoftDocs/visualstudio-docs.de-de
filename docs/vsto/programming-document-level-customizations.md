@@ -1,5 +1,7 @@
 ---
 title: Program mieren von Anpassungen auf Dokument Ebene
+description: Erfahren Sie, wie Sie Microsoft Word oder Excel mit einer Anpassung auf Dokument Ebene erweitern, um verschiedene Aufgaben ausführen zu können.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254018"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527518"
 ---
 # <a name="program-document-level-customizations"></a>Program mieren von Anpassungen auf Dokument Ebene
   Wenn Sie Microsoft Office Word oder Microsoft Office Excel mit einer Anpassung auf Dokumentebene erweitern, können Sie die folgenden Aufgaben ausführen:
@@ -153,14 +155,14 @@ Globals.ThisDocument.Save();
 ## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>Erweiterte Objekte aus systemeigenen Office-Objekten in Anpassungen auf Dokument Ebene erhalten
  Viele Ereignishandler für Office-Ereignisse empfangen ein systemeigenes Office-Objekt, das die Arbeitsmappe, das Arbeitsblatt oder das Dokument darstellt, durch das das Ereignis ausgelöst wurde. In einigen Fällen möchten Sie eventuell Code nur dann ausführen, wenn das Ereignis durch die Arbeitsmappe oder das Dokument in Ihrer Anpassung auf Dokumentebene ausgelöst wurde. So könnte es sein, dass Sie in einer Anpassung auf Dokumentebene für Excel bestimmten Code nur ausführen möchten, wenn der Benutzer eines der Arbeitsblätter in der angepassten Arbeitsmappe aktiviert, diesen Code aber nicht ausführen möchten, wenn der Benutzer ein Arbeitsblatt in einer anderen Arbeitsmappe aktiviert, die zufällig zur gleichen Zeit geöffnet ist.
 
- Wenn Sie ein systemeigenes Office-Objekt haben, können Sie testen, ob das betreffende Objekt in einer Anpassung auf Dokumentebene zu einem *Hostelement* oder *Hoststeuerelement* erweitert wurde. Hostelemente und Hoststeuerelemente sind Typen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellt werden und Funktionalität zu Objekten hinzufügen, die als systemeigene Elemente im Word- oder Excel-Objektmodell vorhanden sind (sogenannte *systemeigene Office-Objekte*). Hostelemente und Hoststeuerelemente werden zusammen auch als *erweiterte Objekte*bezeichnet. Weitere Informationen zu Host Elementen und Host Steuerelementen finden Sie unter [Übersicht über Host Elemente und](../vsto/host-items-and-host-controls-overview.md)Host Steuerelemente.
+ Wenn Sie ein systemeigenes Office-Objekt haben, können Sie testen, ob das betreffende Objekt in einer Anpassung auf Dokumentebene zu einem *Hostelement* oder *Hoststeuerelement* erweitert wurde. Hostelemente und Hoststeuerelemente sind Typen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellt werden und Funktionalität zu Objekten hinzufügen, die als systemeigene Elemente im Word- oder Excel-Objektmodell vorhanden sind (sogenannte *systemeigene Office-Objekte*). Hostelemente und Hoststeuerelemente werden zusammen auch als *erweiterte Objekte* bezeichnet. Weitere Informationen zu Host Elementen und Host Steuerelementen finden Sie unter [Übersicht über Host Elemente und](../vsto/host-items-and-host-controls-overview.md)Host Steuerelemente.
 
 ## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>Grundlegendes zu den Methoden GetVstoObject und HasVstoObject
  Um ein systemeigenes Office-Objekt zu testen, verwenden Sie in Ihrem Projekt die `HasVstoObject`- und die `GetVstoObject`-Methode:
 
 - Wenn Sie ermitteln möchten, ob das systemeigene Office-Objekt in Ihrer Anpassung ein erweitertes Objekt hat, verwenden Sie die `HasVstoObject`-Methode. Diese Methode gibt **true** zurück, wenn das systemeigene Office-Objekt ein erweitertes Objekt hat, andernfalls gibt sie **false** zurück.
 
-- Wenn Sie das erweiterte Objekt für ein systemeigenes Office-Objekt abrufen möchten, verwenden Sie die `GetVstoObject`-Methode. Diese Methode gibt ein <xref:Microsoft.Office.Tools.Excel.ListObject>-, <xref:Microsoft.Office.Tools.Excel.Workbook>-, <xref:Microsoft.Office.Tools.Excel.Worksheet>- oder <xref:Microsoft.Office.Tools.Word.Document> -Objekt zurück, wenn das angegebene systemeigene Office-Objekt ein solches Objekt hat. Andernfalls wird `GetVstoObject` **null**zurückgegeben. Die `GetVstoObject`-Methode gibt z. B. ein <xref:Microsoft.Office.Tools.Word.Document> zurück, wenn das angegebene <xref:Microsoft.Office.Interop.Word.Document>-Objekt das zugrunde liegende Objekt für das Dokument in Ihrem Word-Dokumentprojekt ist.
+- Wenn Sie das erweiterte Objekt für ein systemeigenes Office-Objekt abrufen möchten, verwenden Sie die `GetVstoObject`-Methode. Diese Methode gibt ein <xref:Microsoft.Office.Tools.Excel.ListObject>-, <xref:Microsoft.Office.Tools.Excel.Workbook>-, <xref:Microsoft.Office.Tools.Excel.Worksheet>- oder <xref:Microsoft.Office.Tools.Word.Document> -Objekt zurück, wenn das angegebene systemeigene Office-Objekt ein solches Objekt hat. Andernfalls wird `GetVstoObject` **null** zurückgegeben. Die `GetVstoObject`-Methode gibt z. B. ein <xref:Microsoft.Office.Tools.Word.Document> zurück, wenn das angegebene <xref:Microsoft.Office.Interop.Word.Document>-Objekt das zugrunde liegende Objekt für das Dokument in Ihrem Word-Dokumentprojekt ist.
 
   In Projekten auf Dokument Ebene können Sie die- `GetVstoObject` Methode nicht zum Erstellen eines neuen- <xref:Microsoft.Office.Tools.Excel.Workbook> ,-oder- <xref:Microsoft.Office.Tools.Excel.Worksheet> <xref:Microsoft.Office.Tools.Word.Document> Host Elements zur Laufzeit verwenden. Sie können diese Methode nur für den Zugriff auf vorhandene Hostelemente verwenden, die zur Entwurfszeit in Ihrem Projekt generiert werden. Wenn Sie neue Host Elemente zur Laufzeit erstellen möchten, müssen Sie ein VSTO-Add-in-Projekt entwickeln. Weitere Informationen finden Sie Unterprogramm gesteuerte [Einschränkungen von Host Elementen und Host Steuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) und [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 

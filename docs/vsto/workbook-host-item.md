@@ -1,5 +1,7 @@
 ---
 title: Arbeitsmappenhostelement
+description: Erfahren Sie, dass das Arbeitsmappenhostelement ein Typ ist, der den Arbeitsmappentyp aus der primären Interopassembly für Microsoft Excel erweitert.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d3d5b7efadefd77be7ce25026c8f485ee0ef133
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255081"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528348"
 ---
 # <a name="workbook-host-item"></a>Arbeitsmappenhostelement
   Das <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement ist ein Typ, der den <xref:Microsoft.Office.Interop.Excel.Workbook> -Typ aus der primären Interopassembly für Excel erweitert. Das <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement stellt die gleichen Eigenschaften, Methoden und Ereignisse wie ein <xref:Microsoft.Office.Interop.Excel.Workbook> -Objekt bereit, bietet jedoch auch zusätzliche Funktionen.
@@ -54,7 +56,7 @@ ms.locfileid: "71255081"
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Grundlegendes zu arbeitsmappenhostelementen in VSTO-Add-in-Projekten
  In VSTO-Add-In-Projekten können Sie für jede Arbeitsmappe, die in Excel geöffnet ist, zur Laufzeit ein <xref:Microsoft.Office.Tools.Excel.Workbook> -Hostelement generieren. Verwenden Sie zum Generieren eines <xref:Microsoft.Office.Tools.Excel.Workbook>-Hostelements die `GetVstoObject`-Methode. Weitere Informationen finden [Sie unter Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

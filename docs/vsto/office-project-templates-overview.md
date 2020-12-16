@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Office-Projektvorlagen
+description: Erfahren Sie, wie die Microsoft Office Entwicklertools in Visual Studio Projektvorlagen zum Erstellen verschiedener Typen von Office-Projektmappen enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926603"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528081"
 ---
 # <a name="office-project-templates-overview"></a>Übersicht über Office-Projektvorlagen
   Die Entwicklertools für Microsoft Office in Visual Studio enthalten Projektvorlagen für das Erstellen folgender Typen von Office-Lösungen:
@@ -164,7 +166,7 @@ ms.locfileid: "68926603"
  Weist eine Microsoft Office Word-Vorlage Erweiterungen durch verwalteten Code auf, wird die Projektassembly nicht aufgerufen, wenn die Vorlage als globale Vorlage angefügt oder aus dem Startverzeichnis von Word geladen wird. Außerdem erkennt das Dokument das Format einer Vorlage nicht, die zu einer Office-Projektmappe gehört.
 
 ## <a name="excel-add-ins-xla-files"></a>Excel-Add-Ins (XLA-Dateien)
- Es ist kein Office-Projekt zum Erstellen eines Excel-VSTO-Add-Ins (*XLA* -Datei) vorhanden. Es ist möglich, eine Arbeitsmappe als XLA-Datei zu speichern, doch dieser Vorgang wird nicht unterstützt. Daher wird davon abgeraten. Wenn Sie eine Arbeitsmappe mit Erweiterungen durch verwalteten Code als **Microsoft Office Excel-Add-in-Datei ( \* . xla)** speichern, können Sie Sie im Dialogfeld **Add-ins** auswählen, das auf eine andere Arbeitsmappe angewendet werden soll. In einigen Fällen wird der Code nach Anwendung des VSTO-Add-Ins in der Ziel Arbeitsmappe ausgeführt, aber eine solche Verwendung der Office-Projekt Mappe wird nicht unterstützt.
+ Es ist kein Office-Projekt zum Erstellen eines Excel-VSTO-Add-Ins (*XLA* -Datei) vorhanden. Es ist möglich, eine Arbeitsmappe als XLA-Datei zu speichern, doch dieser Vorgang wird nicht unterstützt. Daher wird davon abgeraten. Wenn Sie eine Arbeitsmappe mit Erweiterungen durch verwalteten Code als **Microsoft Office Excel-Add-In Datei ( \* . xla)** speichern, können Sie Sie im Dialogfeld **Add-ins** auswählen, das auf eine andere Arbeitsmappe angewendet werden soll. In einigen Fällen wird der Code nach Anwendung des VSTO-Add-Ins in der Ziel Arbeitsmappe ausgeführt, aber eine solche Verwendung der Office-Projekt Mappe wird nicht unterstützt.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)

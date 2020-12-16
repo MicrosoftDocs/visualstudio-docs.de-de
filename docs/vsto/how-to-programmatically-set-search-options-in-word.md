@@ -1,5 +1,7 @@
 ---
 title: 'Gewusst wie: Programm gesteuertes Festlegen von Suchoptionen in Word'
+description: Erfahren Sie, wie Sie Visual Studio verwenden können, um Suchoptionen für die Auswahl in Microsoft Word Programm gesteuert festzulegen.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45af6a801a146838919402c31be502cf4825e718
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546990"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528563"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>Gewusst wie: Programm gesteuertes Festlegen von Suchoptionen in Word
   Es gibt zwei Möglichkeiten, Suchoptionen für die Auswahl in Microsoft Office Word-Dokumenten festzulegen:
@@ -38,7 +40,7 @@ ms.locfileid: "85546990"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>So legen Sie Suchoptionen mithilfe eines Find-Objekts fest
 
-1. Legen Sie die Eigenschaften eines- <xref:Microsoft.Office.Interop.Word.Find> Objekts fest, um eine Auswahl für die **Textsuche**zu suchen.
+1. Legen Sie die Eigenschaften eines- <xref:Microsoft.Office.Interop.Word.Find> Objekts fest, um eine Auswahl für die **Textsuche** zu suchen.
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "85546990"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>So legen Sie Suchoptionen mithilfe von Execute-Methoden Argumenten fest
 
-1. Übergeben Sie Suchkriterien als Parameter der- <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode, um durch eine Auswahl für die Textsuche nach vorne zu suchen. **find me**
+1. Übergeben Sie Suchkriterien als Parameter der- <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> Methode, um durch eine Auswahl für die Textsuche nach vorne zu suchen. 
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]

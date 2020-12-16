@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Binden von Steuerelementen an benutzerdefinierte XML-Elemente'
+description: Erfahren Sie, wie Sie Inhalts Steuerelemente in einer Anpassung auf Dokument Ebene für Word an XML-Daten binden, die im Dokument gespeichert sind.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544442"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527968"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Exemplarische Vorgehensweise: Binden von Steuerelementen an benutzerdefinierte XML-Elemente
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie Inhaltssteuerelemente in einer Anpassung auf Dokumentebene für Word an XML-Daten binden, die in dem Dokument gespeichert sind.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Mit Word können Sie XML-Daten mit dem Namen *benutzerdefinierte XML-Teile*in einem Dokument speichern. Sie können die Anzeige dieser Daten steuern, indem Sie Inhaltssteuerelemente an Elemente in einem benutzerdefinierten XML-Abschnitt binden. Im Beispieldokument dieser exemplarischen Vorgehensweise werden Mitarbeiterinformationen angezeigt, die in einem benutzerdefinierten XML-Abschnitt gespeichert werden. Wenn Sie das Dokument öffnen, zeigen die Inhaltssteuerelemente die Werte der XML-Elemente an. Am Text in den Inhaltssteuerelementen vorgenommene Änderungen werden im benutzerdefinierten XML-Abschnitt gespeichert.
+ Mit Word können Sie XML-Daten mit dem Namen *benutzerdefinierte XML-Teile* in einem Dokument speichern. Sie können die Anzeige dieser Daten steuern, indem Sie Inhaltssteuerelemente an Elemente in einem benutzerdefinierten XML-Abschnitt binden. Im Beispieldokument dieser exemplarischen Vorgehensweise werden Mitarbeiterinformationen angezeigt, die in einem benutzerdefinierten XML-Abschnitt gespeichert werden. Wenn Sie das Dokument öffnen, zeigen die Inhaltssteuerelemente die Werte der XML-Elemente an. Am Text in den Inhaltssteuerelementen vorgenommene Änderungen werden im benutzerdefinierten XML-Abschnitt gespeichert.
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
@@ -61,7 +63,7 @@ ms.locfileid: "85544442"
 
 1. Erstellen Sie ein Word-Dokument Projekt mit dem Namen Mitarbeiter- **EControls**. Erstellen Sie ein neues Dokument für die Projektmappe. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer**das Projekt "Mitarbeiter- **EControls** " hinzu.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Öffnet das neue Word-Dokument im Designer und fügt **Projektmappen-Explorer** das Projekt "Mitarbeiter- **EControls** " hinzu.
 
 ## <a name="add-content-controls-to-the-document"></a>Hinzufügen von Inhalts Steuerelementen zum Dokument
  Erstellen Sie eine Tabelle, die drei verschiedene Typen von Inhaltssteuerelementen enthält, in der der Benutzer Informationen über einen Mitarbeiter anzeigen bzw. bearbeiten kann.
@@ -70,7 +72,7 @@ ms.locfileid: "85544442"
 
 1. Wählen Sie im Word-Dokument, das im-Designer gehostet wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , auf dem Menüband die Registerkarte **Einfügen** aus.
 
-2. Wählen Sie in der Gruppe **Tabellen** die Option **Tabelle**aus, und fügen Sie eine Tabelle mit 2 Spalten und 3 Zeilen ein.
+2. Wählen Sie in der Gruppe **Tabellen** die Option **Tabelle** aus, und fügen Sie eine Tabelle mit 2 Spalten und 3 Zeilen ein.
 
 3. Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:
 
@@ -108,7 +110,7 @@ ms.locfileid: "85544442"
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-2. Wählen Sie im Bereich **Vorlagen** die Option **XML-Datei**aus.
+2. Wählen Sie im Bereich **Vorlagen** die Option **XML-Datei** aus.
 
 3. Benennen Sie die Datei **employees.xml**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
@@ -127,7 +129,7 @@ ms.locfileid: "85544442"
     </employees>
     ```
 
-5. Wählen Sie in **Projektmappen-Explorer**die **employees.xml** Datei aus.
+5. Wählen Sie in **Projektmappen-Explorer** die **employees.xml** Datei aus.
 
 6. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft Buildvorgang aus, und ändern Sie **dann den Wert** in **eingebettete Ressource**.
 
@@ -142,13 +144,13 @@ ms.locfileid: "85544442"
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-2. Wählen Sie im Bereich **Vorlagen** die Option **XML-Schema**aus.
+2. Wählen Sie im Bereich **Vorlagen** die Option **XML-Schema** aus.
 
 3. Benennen Sie das Schema **Employees. xsd** , und klicken Sie auf die Schaltfläche **Hinzufügen** .
 
      Der Schema-Designer wird geöffnet.
 
-4. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für  **Employees. xsd**, und wählen Sie dann  **Code anzeigen**aus.
+4. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für  **Employees. xsd**, und wählen Sie dann  **Code anzeigen** aus.
 
 5. Ersetzen Sie den Inhalt der Datei **Employees. xsd** durch das folgende Schema.
 
@@ -225,19 +227,19 @@ ms.locfileid: "85544442"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>So fügen Sie dem Dokument einen benutzerdefinierten XML-Abschnitt hinzu
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für  **ThisDocument.cs** oder **ThisDocument. vb**, und wählen Sie dann **Code anzeigen**aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für  **ThisDocument.cs** oder **ThisDocument. vb**, und wählen Sie dann **Code anzeigen** aus.
 
 2. Fügen Sie der `ThisDocument`-Klasse die folgenden Deklarationen hinzu. In diesem Code werden mehrere Objekte deklariert, mit denen Sie dem Dokument einen benutzerdefinierten XML-Abschnitt hinzufügen.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
 
-3. Fügen Sie der `ThisDocument`-Klasse die folgende Methode hinzu. Diese Methode ruft den Inhalt der XML-Datendatei ab, die als Ressource in der Assembly eingebettet ist, und gibt den Inhalt als XML-Zeichenfolge zurück.
+3. Füge der `ThisDocument`-Klasse die folgende Methode hinzu. Diese Methode ruft den Inhalt der XML-Datendatei ab, die als Ressource in der Assembly eingebettet ist, und gibt den Inhalt als XML-Zeichenfolge zurück.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
 
-4. Fügen Sie der `ThisDocument`-Klasse die folgende Methode hinzu. Die `AddCustomXmlPart`-Methode erstellt einen neuen benutzerdefinierten XML-Abschnitt, der eine XML-Zeichenfolge enthält, die an die Methode übergeben wird.
+4. Füge der `ThisDocument`-Klasse die folgende Methode hinzu. Die `AddCustomXmlPart`-Methode erstellt einen neuen benutzerdefinierten XML-Abschnitt, der eine XML-Zeichenfolge enthält, die an die Methode übergeben wird.
 
      Um sicherzustellen, dass der benutzerdefinierte XML-Abschnitt nur einmal erstellt wird, erstellt die Methode den benutzerdefinierten XML-Abschnitt nur dann, wenn noch kein benutzerdefinierter XML-Abschnitt mit einer übereinstimmenden GUID im Dokument vorhanden ist. Beim ersten Aufruf dieser Methode wird der Wert der <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A>-Eigenschaft in der Zeichenfolge `employeeXMLPartID` gespeichert. Der Wert der `employeeXMLPartID`-Zeichenfolge wird im Dokument beibehalten, da er mit dem <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>-Attribut deklariert wurde.
 
@@ -249,7 +251,7 @@ ms.locfileid: "85544442"
 
 ### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>So binden Sie die Inhaltssteuerelemente an Elemente im benutzerdefinierten XML-Abschnitt
 
-1. Fügen Sie der `ThisDocument`-Klasse die folgende Methode hinzu. Mit dieser Methode wird jedes Inhaltssteuerelement an ein Element im benutzerdefinierten XML-Abschnitt gebunden und die Anzeige des Datumsformats für das <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> festgelegt.
+1. Füge der `ThisDocument`-Klasse die folgende Methode hinzu. Mit dieser Methode wird jedes Inhaltssteuerelement an ein Element im benutzerdefinierten XML-Abschnitt gebunden und die Anzeige des Datumsformats für das <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> festgelegt.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
@@ -273,7 +275,7 @@ ms.locfileid: "85544442"
 
 2. Überprüfen Sie, ob die Tabelle im Dokument ähnlich aussieht wie die folgende Tabelle. Jede der Zeichenfolgen in der zweiten Spalte wird von einem Element im benutzerdefinierten XML-Abschnitt im Dokument abgerufen.
 
-    |Spalte|value|
+    |Column|Wert|
     |-|-|
     |**Employee Name**|**Karina Leal**|
     |**Hire Date**|**April 1, 1999**|
@@ -289,7 +291,7 @@ ms.locfileid: "85544442"
 
 7. Öffnen Sie im Datei-Explorer den Ordner *\bin\debug* unter dem Speicherort des Projekts.
 
-8. Öffnen Sie das Kontextmenü für **EmployeeControls.docx** , und wählen Sie dann **Umbenennen**aus.
+8. Öffnen Sie das Kontextmenü für **EmployeeControls.docx** , und wählen Sie dann **Umbenennen** aus.
 
 9. Benennen Sie die Datei **EmployeeControls.docx.zip**.
 
@@ -299,7 +301,7 @@ ms.locfileid: "85544442"
 
 11. Öffnen Sie den Ordner **customXml** .
 
-12. Öffnen Sie das Kontextmenü für **item2.xml** , und wählen Sie dann **Öffnen**aus.
+12. Öffnen Sie das Kontextmenü für **item2.xml** , und wählen Sie dann **Öffnen** aus.
 
      Diese Datei enthält den benutzerdefinierten XML-Abschnitt, den Sie dem Dokument hinzugefügt haben.
 
@@ -318,7 +320,7 @@ ms.locfileid: "85544442"
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
-- [ContentControl-Elemente](../vsto/content-controls.md)
+- [Inhalts Steuerelemente](../vsto/content-controls.md)
 - [Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhalts Steuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

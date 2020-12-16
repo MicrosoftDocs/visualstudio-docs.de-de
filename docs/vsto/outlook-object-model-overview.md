@@ -1,5 +1,7 @@
 ---
 title: Übersicht über das Outlook-Objektmodell
+description: Erfahren Sie, wie Sie mit den Objekten interagieren können, die vom Outlook-Objektmodell bereitgestellt werden, um VSTO-Add-Ins für Microsoft Outlook zu entwickeln.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985690"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528055"
 ---
 # <a name="outlook-object-model-overview"></a>Übersicht über das Outlook-Objektmodell
   Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application> -Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.Folder> -Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekt eine E-Mail dar.
@@ -97,7 +99,7 @@ ms.locfileid: "72985690"
  Ein Beispiel für den Zugriff auf einen Standard und das <xref:Microsoft.Office.Interop.Outlook.Folder> Erstellen eines neuen <xref:Microsoft.Office.Interop.Outlook.Folder> finden Sie unter Gewusst [wie: Programm gesteuertes Erstellen von benutzerdefinierten Ordner Elementen](../vsto/how-to-programmatically-create-custom-folder-items.md).
 
 ### <a name="mailitem-object"></a>MailItem-Objekt
- Das <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekt stellt eine E-Mail dar. <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekte befinden sich normalerweise in Ordnern wie **Posteingang**, **Gesendete Elemente**und **Postausgang**. <xref:Microsoft.Office.Interop.Outlook.MailItem> macht Eigenschaften und Methoden verfügbar, die zum Erstellen und Senden von E-Mails verwendet werden können.
+ Das <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekt stellt eine E-Mail dar. <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekte befinden sich normalerweise in Ordnern wie **Posteingang**, **Gesendete Elemente** und **Postausgang**. <xref:Microsoft.Office.Interop.Outlook.MailItem> macht Eigenschaften und Methoden verfügbar, die zum Erstellen und Senden von E-Mails verwendet werden können.
 
  Ein Beispiel für das Erstellen einer e-Mail-Nachricht finden Sie unter Gewusst [wie: Programm gesteuertes Erstellen eines e-Mail-Elements](../vsto/how-to-programmatically-create-an-e-mail-item.md).
 

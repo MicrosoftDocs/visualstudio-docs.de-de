@@ -1,5 +1,7 @@
 ---
 title: 'Vorgehensweise: Programm gesteuertes schützen von Arbeitsmappen'
+description: Erfahren Sie, wie Sie eine Microsoft Excel-Arbeitsmappe schützen können, damit Benutzer keine Arbeitsblätter hinzufügen oder löschen können. Außerdem können Sie den Schutz der Arbeitsmappe Programm gesteuert aufheben.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537630"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528281"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Vorgehensweise: Programm gesteuertes schützen von Arbeitsmappen
   Sie können eine Microsoft Office Excel-Arbeitsmappe schützen, sodass Benutzer keine Arbeitsblätter hinzufügen oder löschen können, und den Schutz der Arbeitsmappe auch Programm gesteuert aufheben. Optional können Sie ein Kennwort angeben. Geben Sie an, ob die Struktur geschützt werden soll (sodass Benutzer keine Blätter verschieben können), und geben Sie an, ob die Windows-Arbeitsmappe geschützt werden soll.
