@@ -10,17 +10,18 @@ ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
 manager: jillfra
+monikerRange: '>=vs-2019'
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4f2d5bf573da940c39790d6868a94d588e5efb7b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 55b1e30d214ff85bfc1b7e9c00ebff7e76a95f12
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918220"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527879"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: Erweitern einer einfachen C#-Konsolen-App
 
@@ -32,7 +33,7 @@ Wenn Sie den [ersten Teil](tutorial-console.md) dieser Reihe abgeschlossen haben
 
 In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarbeiten. Als Nächstes fügen Sie ein weiteres Projekt zur Calculator-App hinzu. Dabei handelt es sich um eine Klassenbibliothek, die einige der Rechnerfunktionen bereitstellt.
 
-1. In Visual Studio können Sie den allgemeinen Menübefehl **Datei** > **Hinzufügen** > **Neues Projekt** verwenden, um ein neues Projekt hinzuzufügen, jedoch können Sie auch mit der rechten Maustaste auf den Namen des vorhandenen Projekts klicken (der „Projektknoten“), um das Kontextmenü des Projekts zu öffnen. Dieses Kontextmenü enthält mehrere Möglichkeiten, mit denen Sie Funktionen zu Ihren Projekten hinzufügen können. Klicken Sie also mit der rechten Maustaste auf Ihren Projektknoten im **Projektmappen-Explorer** , und wählen Sie dann **Hinzufügen** > **Neues Projekt** aus.
+1. In Visual Studio können Sie den allgemeinen Menübefehl **Datei** > **Hinzufügen** > **Neues Projekt** verwenden, um ein neues Projekt hinzuzufügen, jedoch können Sie auch mit der rechten Maustaste auf den Namen des vorhandenen Projekts klicken (der „Projektknoten“), um das Kontextmenü des Projekts zu öffnen. Dieses Kontextmenü enthält mehrere Möglichkeiten, mit denen Sie Funktionen zu Ihren Projekten hinzufügen können. Klicken Sie also mit der rechten Maustaste auf Ihren Projektknoten im **Projektmappen-Explorer**, und wählen Sie dann **Hinzufügen** > **Neues Projekt** aus.
 
 1. Wählen Sie die C#-Projektvorlage **Klassenbibliothek (.NET Standard)** aus.
 
@@ -54,11 +55,11 @@ In der Praxis umfasst Code viele Projekte, die in einer Projektmappe zusammenarb
 
    ![Screenshot: Dialogfeld „Verweis-Manager“](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. Aktivieren Sie im Dialogfeld **Verweis-Manager** das Kontrollkästchen für das Projekt **CalculatorLibrary** , und klicken Sie dann auf **OK**.  Der Projektverweis wird unter dem Knoten **Projekte** im **Projektmappen-Explorer** angezeigt.
+1. Aktivieren Sie im Dialogfeld **Verweis-Manager** das Kontrollkästchen für das Projekt **CalculatorLibrary**, und klicken Sie dann auf **OK**.  Der Projektverweis wird unter dem Knoten **Projekte** im **Projektmappen-Explorer** angezeigt.
 
    ![Screenshot: Projektmappen-Explorer mit Projektverweis](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. Wählen Sie in der Datei *Program.cs* die Klasse `Calculator` und ihren gesamten Code aus, und drücken Sie **STRG+X** , um diesen aus der Datei auszuschneiden. Fügen Sie den Code dann in **CalculatorLibrary** in der Datei *CalculatorLibrary.cs* in den Namespace `CalculatorLibrary` ein. Erstellen Sie dann die Calculator-Klasse `public`, um ihn außerhalb der Bibliothek zur Verfügung zu stellen. Der Code in der Datei *CalculatorLibrary.cs* sollte nun dem folgenden Code ähneln:
+1. Wählen Sie in der Datei *Program.cs* die Klasse `Calculator` und ihren gesamten Code aus, und drücken Sie **STRG+X**, um diesen aus der Datei auszuschneiden. Fügen Sie den Code dann in **CalculatorLibrary** in der Datei *CalculatorLibrary.cs* in den Namespace `CalculatorLibrary` ein. Erstellen Sie dann die Calculator-Klasse `public`, um ihn außerhalb der Bibliothek zur Verfügung zu stellen. Der Code in der Datei *CalculatorLibrary.cs* sollte nun dem folgenden Code ähneln:
 
    ```csharp
    using System;
@@ -365,7 +366,7 @@ Der Visual Studio-Debugger ist ein leistungsstarkes Tool, mit dem Sie Ihren Code
 
    Beim Debuggen ist es zur Problembehandlung oft entscheidend, zu prüfen, ob Variablen die erwarteten Werte enthalten.
 
-2. Sehen Sie sich im unteren Bereich das Fenster **Lokal** an. (Klicken Sie auf **Debuggen** > **Fenster** > **Lokal** , falls es nicht geöffnet ist.)
+2. Sehen Sie sich im unteren Bereich das Fenster **Lokal** an. (Klicken Sie auf **Debuggen** > **Fenster** > **Lokal**, falls es nicht geöffnet ist.)
 
    Im Fenster „Lokal“ werden alle Variablen angezeigt, die sich derzeit im Bereich befinden, gemeinsam mit dem zugehörigen Wert und Typ.
 
@@ -373,13 +374,13 @@ Der Visual Studio-Debugger ist ein leistungsstarkes Tool, mit dem Sie Ihren Code
 
 3. Sehen Sie sich das Fenster **Auto** an.
 
-   Das Fenster „Auto“ ähnelt dem Fenster **Lokal** , zeigt jedoch die Variablen direkt vor und nach der aktuellen Codezeile, an der Ihre App angehalten wurde.
+   Das Fenster „Auto“ ähnelt dem Fenster **Lokal**, zeigt jedoch die Variablen direkt vor und nach der aktuellen Codezeile, an der Ihre App angehalten wurde.
 
    Als Nächstes führen Sie den Code im Debugger Anweisung für Anweisung aus. Dieses Vorgehen wird als *Einzelschrittausführung* bezeichnet.
 
 ## <a name="debug-step-through-code"></a>Debuggen: Schritt-für-Schritt-Ausführung des Codes
 
-1. Drücken Sie **F11** (oder klicken Sie auf **Debuggen** > **Einzelschritt** ).
+1. Drücken Sie **F11** (oder klicken Sie auf **Debuggen** > **Einzelschritt**).
 
    Bei Verwendung des Befehls „Einzelschritt“ führt die App die aktuelle Anweisung aus und wechselt zur nächsten ausführbaren Anweisung (dies ist üblicherweise die nächste Codezeile). Der gelbe Pfeil auf der linken Seiten verweist jeweils auf die aktuelle Anweisung.
 
@@ -387,13 +388,13 @@ Der Visual Studio-Debugger ist ein leistungsstarkes Tool, mit dem Sie Ihren Code
 
    Sie haben soeben einen Einzelschritt in die Methode `DoOperation` der Klasse `Calculator` ausgeführt.
 
-1. Betrachten Sie das Fenster **Aufrufliste** , um eine hierarchische Ansicht des Programmflows zu erhalten. (Klicken Sie auf **Debuggen** > **Fenster** > **Aufrufliste** , falls es nicht geöffnet ist.)
+1. Betrachten Sie das Fenster **Aufrufliste**, um eine hierarchische Ansicht des Programmflows zu erhalten. (Klicken Sie auf **Debuggen** > **Fenster** > **Aufrufliste**, falls es nicht geöffnet ist.)
 
    ![Screenshot: Aufrufliste](media/vs-2019/calculator-2-debug-call-stack.png)
 
    Diese Ansicht zeigt die aktuelle Methode `Calculator.DoOperation`, markiert durch den gelben Pfeil. Die zweite Zeile zeigt die Funktion, die die Methode aus der Methode `Main` in *Program.cs* aufgerufen hat. Im Fenster **Aufrufliste** wird die Reihenfolge angezeigt, in der Methoden und Funktionen aufgerufen werden. Zusätzlich bietet es über das Kontextmenü Zugriff auf viele Debuggerfeatures, darunter beispielsweise **Zum Quellcode wechseln**.
 
-1. Drücken Sie wiederholt **F10** (oder **Debuggen** > **Prozedurschritt** ), bis die App an der Anweisung `switch` angehalten wird.
+1. Drücken Sie wiederholt **F10** (oder **Debuggen** > **Prozedurschritt**), bis die App an der Anweisung `switch` angehalten wird.
 
    ```csharp
    switch (op)
@@ -402,7 +403,7 @@ Der Visual Studio-Debugger ist ein leistungsstarkes Tool, mit dem Sie Ihren Code
 
    Der Befehl „Prozedurschritt“ ähnelt dem Befehl „Einzelschritt“, weist aber folgenden Unterschied auf: Wenn die aktuelle Anweisung eine Funktion aufruft, führt der Debugger den Code in der aufgerufenen Funktion auf und hält die Ausführung erst an, wenn die Funktion zurückgegeben wird. Mit dem Befehl „Prozedurschritt“ kann der Code schneller durchlaufen werden, wenn Sie an einer bestimmten Funktion nicht interessiert sind.
 
-1. Drücken Sie noch einmal **F10** , damit die App an der folgenden Codezeile angehalten wird.
+1. Drücken Sie noch einmal **F10**, damit die App an der folgenden Codezeile angehalten wird.
 
    ```csharp
    if (num2 != 0)
@@ -421,13 +422,13 @@ Der Visual Studio-Debugger ist ein leistungsstarkes Tool, mit dem Sie Ihren Code
 
    Hierdurch überspringt die App die Anweisung `if` vollständig, sodass Sie sehen können, was bei einer Division durch 0 geschieht.
 
-1. Drücken Sie **F10** , um die Codezeile auszuführen.
+1. Drücken Sie **F10**, um die Codezeile auszuführen.
 
 1. Bewegen Sie den Mauszeiger über die Variable `result`. Sie sehen, dass sie den Wert `Infinity` speichert.
 
    In C# ist `Infinity` das Ergebnis einer Division durch 0.
 
-1. Drücken Sie **F5** (oder klicken Sie auf **Debuggen** > **Debuggen fortsetzen** ).
+1. Drücken Sie **F5** (oder klicken Sie auf **Debuggen** > **Debuggen fortsetzen**).
 
    Das Unendlichkeitssymbol wird in der Konsole als Ergebnis der mathematischen Operation angezeigt.
 
