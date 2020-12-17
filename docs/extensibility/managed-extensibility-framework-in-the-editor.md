@@ -1,5 +1,7 @@
 ---
 title: Managed Extensibility Framework im Editor | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Managed Extensibility Framework, mit der Sie eigene Komponenten erstellen können, um den Editor im Visual Studio SDK zu erweitern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 888c5206b87079cf9fa91cb68e9801cb3c4f8c1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702869"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615589"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Im Editor Managed Extensibility Framework
 Der Editor wird mithilfe von Managed Extensibility Framework-Komponenten (MEF) erstellt. Sie können Ihre eigenen MEF-Komponenten erstellen, um den Editor zu erweitern, und der Code kann auch Editor-Komponenten nutzen.
@@ -82,7 +84,7 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>So nutzen Sie die Editor-Funktionalität von einem MEF-Komponenten Teil
 
-1. Fügen Sie Verweise auf *System.Composition.ComponentModel.dll*im globalen Assemblycache (Global Assembly Cache, GAC) und auf die editorassemblys hinzu.
+1. Fügen Sie Verweise auf *System.Composition.ComponentModel.dll* im globalen Assemblycache (Global Assembly Cache, GAC) und auf die editorassemblys hinzu.
 
 2. Fügen Sie die relevanten using-Direktiven hinzu.
 

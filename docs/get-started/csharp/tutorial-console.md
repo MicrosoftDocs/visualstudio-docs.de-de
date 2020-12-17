@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88508177"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527921"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -49,13 +49,13 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
    (Alternativ können Sie die Tastenkombination **STRG**+**UMSCHALT**+**N** verwenden.)
 
-3. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **C#** auf, und wählen Sie **.NET Core** aus. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei ***Calculator***.
+3. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **C#** auf, und wählen Sie **.NET Core** aus. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei *_Calculator_*.
 
    ![Projektvorlage „Console App (.NET Core)“ im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Hinzufügen einer Workload (optional)
 
-Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Core)) fehlt, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Gehen Sie folgendermaßen vor:
+Wenn die Projektvorlage *Console App (.NET Core)* (Konsolen-App (.NET Core)) nicht angezeigt wird, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Gehen Sie folgendermaßen vor:
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Verwenden des Dialogfelds „Neues Projekt“
 
@@ -311,7 +311,7 @@ Sie müssen den Code wie folgt bearbeiten, damit dieser Fehler verarbeitet werde
 
 Die App sollte Sie nun zur Eingabe einer anderen Zahl auffordern, wenn Sie versuchen, durch 0 zu dividieren. Diese Aufforderung wird so lange angezeigt, bis Sie eine andere Zahl als 0 eingeben.
 
-   ![Der Visual Studio-Code-Editor zeigt den Fehler „Division durch Null“ an](./media/csharp-console-calculator-dividebyzero.png)
+   ![Behoben: Fehler „Division durch Null“](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Beheben des Fehlers „Format“
 
@@ -600,10 +600,25 @@ namespace Calculator
 
 ## <a name="next-steps"></a>Nächste Schritte
 
+:::moniker range="vs-2017"
+
+Fahren Sie mit weiteren Tutorials fort:
+
+> [!div class="nextstepaction"]
+> [C#-Tutorials](/dotnet/csharp/tutorials)
+
+> [!div class="nextstepaction"]
+> [Einführung in die Visual Studio-IDE](../visual-studio-ide.md)
+
+:::moniker-end
+
+:::moniker range="vs-2019"
+
 Fahren Sie mit dem zweiten Teil dieses Tutorials fort:
 
 > [!div class="nextstepaction"]
 > [Fortfahren mit Teil 2](tutorial-console-part-2.md)
+:::moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,7 @@
 ---
 title: VSPackages werden geladen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Laden von VSPackages in Visual Studio, einschließlich des verzögerten Ladens, das nach Möglichkeit verwendet wird, um die Leistung zu steigern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702963"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616103"
 ---
 # <a name="load-vspackages"></a>VSPackages laden
 VSPackages werden nur dann in Visual Studio geladen, wenn ihre Funktionalität erforderlich ist. Beispielsweise wird ein VSPackage geladen, wenn Visual Studio eine projektfactory oder einen Dienst verwendet, den das VSPackage implementiert. Diese Funktion wird als verzögertes Laden bezeichnet und wird nach Möglichkeit verwendet, um die Leistung zu verbessern.
@@ -35,7 +37,7 @@ VSPackages werden nur dann in Visual Studio geladen, wenn ihre Funktionalität e
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID
-    public class MyAutoloadedPackage : Package
+    public class MyAutoloadedPackage : Package
     {. . .}
     ```
 
@@ -71,5 +73,5 @@ VSPackages werden nur dann in Visual Studio geladen, wenn ihre Funktionalität e
 
      Das Erzwingen von Ladevorgängen sollte nicht für die VSPackage-Kommunikation verwendet werden. Verwenden Sie stattdessen, [und stellen Sie Dienste bereit](../extensibility/using-and-providing-services.md) .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [VSPackages](../extensibility/internals/vspackages.md)

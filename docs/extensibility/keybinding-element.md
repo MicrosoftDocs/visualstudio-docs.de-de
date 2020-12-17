@@ -1,5 +1,7 @@
 ---
 title: KeyBinding-Element | Microsoft-Dokumentation
+description: Das KeyBinding-Element gibt Tastenkombinationen für die Befehle an. Befehlen können sowohl einfache als auch Dual-Key-Bindungen zugeordnet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703145"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616116"
 ---
 # <a name="keybinding-element"></a>KeyBinding-Element
 Das KeyBinding-Element gibt Tastenkombinationen für die Befehle an.
 
- Befehlen können sowohl einfache als auch Dual-Key-Bindungen zugeordnet werden. Ein Beispiel für eine einzelne tastenbindung ist **STRG** + **S** für den **Save** -Befehl. Dual-Key-Bindungen erfordern zwei aufeinander folgende Tastenkombinationen, um einen Befehl zu initiieren. Ein Beispiel für eine Dual-Key-Bindung ist <strong>STRG *+</strong> k<strong>,</strong>STRG <strong>+</strong> k** zum Festlegen eines Lesezeichens.
+ Befehlen können sowohl einfache als auch Dual-Key-Bindungen zugeordnet werden. Ein Beispiel für eine einzelne tastenbindung ist **STRG** + **S** für den **Save** -Befehl. Dual-Key-Bindungen erfordern zwei aufeinander folgende Tastenkombinationen, um einen Befehl zu initiieren. Ein Beispiel für eine Dual-Key-Bindung ist <strong>STRG *+</strong> k <strong>,</strong>STRG <strong>+</strong> k** zum Festlegen eines Lesezeichens.
 
 ## <a name="syntax"></a>Syntax
 
@@ -34,28 +36,28 @@ Das KeyBinding-Element gibt Tastenkombinationen für die Befehle an.
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |guid|Erforderlich.|
 |id|Erforderlich.|
 |Editor|Erforderlich. Die Editor-GUID gibt den Bearbeitungs Kontext an, für den diese Tastenkombination aktiviert wird. Der Wert des globalen Bindungs Bereichs ist "guidVSStd97".|
 |key1|Erforderlich. Zu den gültigen Werten gehören alle typbaren alphanumerischen Werte und zweistellige hexadezimal Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
-|mod1|Optional. Eine beliebige Kombination von **STRG**, **alt**und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
+|mod1|Optional. Eine beliebige Kombination von **STRG**, **alt** und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
 |Schlüssel2|Optional. Zu den gültigen Werten gehören alle typbaren alphanumerischen Werte und zweistellige hexadezimal Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
-|mod2|Optional. Eine beliebige Kombination von **STRG**, **alt**und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
+|mod2|Optional. Eine beliebige Kombination von **STRG**, **alt** und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
 |Emulator|Optional.|
 |Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |Parent||
-|Anmerkung||
+|Annotation||
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[KeyBinding-Element](../extensibility/keybindings-element.md)|Gruppiert KeyBinding-Elemente und andere keybindungs Gruppierungen.|
 

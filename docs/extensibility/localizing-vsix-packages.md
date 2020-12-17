@@ -1,5 +1,7 @@
 ---
 title: Lokalisieren von VSIX-Paketen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein VSIX-Paket lokalisieren, indem Sie für jede Zielsprache eine Erweiterung. vsixlangpack-Datei erstellen und diese dann in den richtigen Ordner einfügen.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702898"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615537"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 
@@ -51,9 +53,9 @@ Wenn Sie eine vsixlangpack-Datei erstellen, müssen Sie die- `Include in Vsix` E
 
 ### <a name="to-set-the-include-in-vsix-property"></a>So legen Sie die Eigenschaft in VSIX einschließen fest
 
-1. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf die Dateierweiterung. vsixlangpack, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf die Dateierweiterung. vsixlangpack, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie im **Eigenschaften Raster**auf **in VSIX einschließen**, und legen Sie dessen Wert auf fest `true` .
+2. Klicken Sie im **Eigenschaften Raster** auf **in VSIX einschließen**, und legen Sie dessen Wert auf fest `true` .
 
 ## <a name="example"></a>Beispiel
 

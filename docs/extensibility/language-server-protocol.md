@@ -1,5 +1,7 @@
 ---
 title: Übersicht über das sprach Server Protokoll | Microsoft-Dokumentation
+description: Erfahren Sie, wie das Sprachserver Protokoll ein nützliches Framework zum verfügbar machen von sprach Features für eine Vielzahl von Tools bereitstellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bd5dce3cfb7022a8abb6397dc87b418144cbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d642d1168cbd2a8bd7abadbcdbd7c1e2851b00e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703102"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616129"
 ---
 # <a name="language-server-protocol"></a>Sprachserverprotokoll
 
@@ -51,9 +53,9 @@ Im folgenden finden Sie ein Beispiel für die Kommunikation zwischen einem Tool 
 
 * **Der Benutzer öffnet eine Datei (als Dokument bezeichnet) im Tool**: das Tool benachrichtigt den Sprachserver, dass ein Dokument geöffnet ist (' TextDocument/didopen '). Ab jetzt wird die Wahrheit über den Inhalt des Dokuments nicht mehr im Dateisystem, sondern vom Tool im Arbeitsspeicher beibehalten.
 
-* **Der Benutzer nimmt Änderungen**vor: das Tool benachrichtigt den Server über die Dokument Änderung (' TextDocument/didchange '), und die semantischen Informationen des Programms werden vom Sprachserver aktualisiert. In diesem Fall analysiert der Sprachserver diese Informationen und benachrichtigt das Tool mit den erkannten Fehlern und Warnungen ("TextDocument/publishdiagnostics").
+* **Der Benutzer nimmt Änderungen** vor: das Tool benachrichtigt den Server über die Dokument Änderung (' TextDocument/didchange '), und die semantischen Informationen des Programms werden vom Sprachserver aktualisiert. In diesem Fall analysiert der Sprachserver diese Informationen und benachrichtigt das Tool mit den erkannten Fehlern und Warnungen ("TextDocument/publishdiagnostics").
 
-* **Der Benutzer führt "Gehe zu Definition" für ein Symbol im Editor**aus: das Tool sendet eine TextDocument/Definition-Anforderung mit zwei Parametern: (1) den Dokument-URI und (2) die Textposition, von der aus die gehe zu Definition-Anforderung an den Server initiiert wurde. Der Server antwortet mit dem Dokument-URI und der Position der Symbol Definition innerhalb des Dokuments.
+* **Der Benutzer führt "Gehe zu Definition" für ein Symbol im Editor** aus: das Tool sendet eine TextDocument/Definition-Anforderung mit zwei Parametern: (1) den Dokument-URI und (2) die Textposition, von der aus die gehe zu Definition-Anforderung an den Server initiiert wurde. Der Server antwortet mit dem Dokument-URI und der Position der Symbol Definition innerhalb des Dokuments.
 
 * **Der Benutzer schließt das Dokument (Datei)**: eine "TextDocument/didclose"-Benachrichtigung wird vom Tool gesendet, um den Sprachserver darüber zu informieren, dass das Dokument nun nicht mehr im Arbeitsspeicher vorhanden ist und dass der aktuelle Inhalt nun auf dem Dateisystem aktuell ist.
 

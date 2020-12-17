@@ -1,6 +1,6 @@
 ---
-title: 'Gewusst wie: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)'
-description: Lernen Sie, ein Klassendiagramm zu exportieren, das Sie aus Code in einem Projekt erstellt haben, indem Sie das Diagramm als Bild speichern.
+title: Exportieren von Klassendiagrammen als Bilder
+description: Lernen Sie, ein Klassendiagramm mit dem Klassen-Designer zu exportieren, das Sie aus Code in einem Projekt erstellt haben, indem Sie das Diagramm als Bild speichern.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cb72a494cbafc9e2ab6661f056436a083b52de1
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2b82c96c99f3144d12afd887a82bc66dc0499f95
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901400"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933465"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Vorgehensweise: Exportieren von Klassendiagrammen als Bilder
 

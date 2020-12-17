@@ -1,5 +1,7 @@
 ---
 title: Steuern der Meldungsansicht | Microsoft-Dokumentation
+Description: Sie können die Fenster- und Nachrichtentypen auswählen, die in einem Fenster „Meldungsansicht“ angezeigt werden, sowie das Anzeigeformat für Nachrichtenzeilen. In diesem Artikel finden Sie weitere Details.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 58c99f0db1686a9f1dd8dcb13949eb6fe47f3fdc
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850968"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398635"
 ---
 # <a name="how-to-control-messages-view"></a>Vorgehensweise: Steuern der Meldungsansicht
 Mit Spy++ können Sie den Inhalt eines Fensters [Meldungsansicht](../debugger/messages-view.md) umfassend steuern. Sie können das Anzeigen der Meldungen jederzeit [starten und beenden](../debugger/how-to-start-and-stop-the-message-log-display.md), und Sie können Folgendes angeben:

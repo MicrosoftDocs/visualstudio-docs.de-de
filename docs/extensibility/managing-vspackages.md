@@ -1,5 +1,7 @@
 ---
 title: Verwalten von VSPackages | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Verwalten von VSPackages, damit Sie wissen, wann Sie einfach die von Visual Studio bereitgestellte Standard Verwaltung von VSPackage verwenden können und wie und wann Sie angepasst werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702651"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615739"
 ---
 # <a name="manage-vspackages"></a>Verwalten von VSPackages
 In den meisten Fällen müssen Sie sich keine Gedanken über die Verwaltung von VSPackages machen, da die Projekt-und Element Vorlagen das Paket automatisch registrieren und laden. In einigen Fällen müssen Sie jedoch vielleicht etwas mehr lernen, um das Paket zu verwalten.

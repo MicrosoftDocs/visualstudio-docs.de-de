@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
+ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850025"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098526"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -186,7 +186,7 @@ Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsnam
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Die Kategorie "Besitzer" wird vom Komponententest-Framework definiert. Sie müssen einen Zeichenfolgenwert für den Besitzer angeben.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Die Kategorie "Priorität" wird vom Komponententest-Framework definiert. Sie müssen einen ganzzahligen Wert für die Priorität angeben.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Mithilfe des TestCategory-Attributs können Sie eine Kategorie ohne Wert angeben.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Das TestCategory-Attribut ermöglicht es Ihnen, die Kategorie eines Komponententests anzugeben.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|Mithilfe des TestProperty-Attributs können Sie Merkmalskategorie/Wert-Paare definieren.|
 
 
@@ -234,7 +234,16 @@ Sie können die Kontrollkästchen der übergeordneten Gruppen in der Hierarchie 
 
 ![XML-Datei für Wiedergabeliste](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 
-Wenn Sie eine Wiedergabeliste für Merkmale erstellen möchten, verwenden Sie das folgende Format. Stellen Sie sicher, dass ein Leerzeichen zwischen Ihrem `TestCategory`-Namen und dem `[Value]` steht.
+Wenn Sie eine Wiedergabeliste für Merkmale erstellen möchten, verwenden Sie das folgende Format für MSTest.
+```xml
+<Playlist Version="2.0">
+    <Rule Name="Includes" Match="Any">
+        <Property Name="Trait" Value="SchemaUpdateBasic" />
+    </Rule>
+</Playlist>
+```
+
+Verwenden Sie das folgende Format für xUnit. Stellen Sie sicher, dass ein Leerzeichen zwischen Ihrem `TestCategory`-Namen und dem `[Value]` steht.
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">

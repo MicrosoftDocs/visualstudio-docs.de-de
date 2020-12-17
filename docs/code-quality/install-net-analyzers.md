@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7dfa1c79af832cc54d9aee72eeafbf20bbde707
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398415"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615524"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Aktivieren oder Installieren von .net-Analysen von erst Anbietern
 
@@ -31,7 +31,7 @@ Sie können die .net-Analysen von erst Anbietern auf eine der folgenden Arten ak
 - **Installieren Sie als nuget-Paket**: Wenn Sie nicht zum .net 5 + SDK wechseln möchten oder wenn Sie ein auf einem nuget-Paket basierendes Modell bevorzugen, sind die Analysetools auch im `Microsoft.CodeAnalysis.NetAnalyzers` [nuget-Paket](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) in Visual Studio 2019 verfügbar.  Möglicherweise bevorzugen Sie ein Paket basiertes Modell für Bedarfs gesteuerte Versions Aktualisierungen. Wenn Sie Visual Studio 2017 verwenden, installieren Sie stattdessen die neueste `2.9.x` Version des `Microsoft.CodeAnalysis.FxCopAnalyzers` [nuget-Pakets](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) .
 
 > [!NOTE]
-> Es wird empfohlen, dass Sie die Analysetools aus dem .NET SDK aktivieren, anstatt das `Microsoft.CodeAnalysis.NetAnalyzers` [nuget-Paket](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)zu installieren, wenn dies möglich ist. Durch das Aktivieren der Analysen aus dem .NET SDK wird sichergestellt, dass Sie die Analyzer-Fehlerbehebungen und neuen Analysen automatisch erhalten, sobald Sie das SDK aktualisieren.
+> Es wird empfohlen, dass Sie die Analysetools aus dem .NET SDK aktivieren, anstatt das `Microsoft.CodeAnalysis.NetAnalyzers` [nuget-Paket](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)zu installieren, wenn dies möglich ist. Durch das Aktivieren der Analysen aus dem .NET SDK wird sichergestellt, dass Sie die Analyzer-Fehlerbehebungen und neuen Analysen automatisch erhalten, sobald Sie das SDK aktualisieren. Im nuget-Modell müssen Sie das nuget-Paket jedes Mal aktualisieren, wenn Sie die neuesten Fehlerbehebungen wünschen. Das nuget-Paket wird häufiger aktualisiert.
 
 ## <a name="see-also"></a>Weitere Informationen
 

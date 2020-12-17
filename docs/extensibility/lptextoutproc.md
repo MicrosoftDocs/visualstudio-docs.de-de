@@ -1,5 +1,7 @@
 ---
 title: Lptextoutproc | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den lptextoutproc-Funktionszeiger. Die Visual Studio-IDE implementiert die-Funktion zum Anzeigen von Fehlern und Status.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38c3e8263b9a30058c2de019e5e92160b716aa71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a04f47a6500c0cd2174d0567029a4f5c86d9f62d
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702791"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615726"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 

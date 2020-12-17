@@ -1,5 +1,7 @@
 ---
 title: Menu-Element | Microsoft-Dokumentation
+description: Das Menü Element definiert ein Menü Element. Die Menü Arten sind context, Menu, menucontroller, menucontrollerlatched, Toolbar und toolwindowtoolbar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 020098a3026f600629b8ab186431a1d2d5d7795a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f20e05c50bf208490edd237299653a3caa6b559f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453651"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616074"
 ---
 # <a name="menu-element"></a>Menu-Element
 Definiert ein Menü Element. Dies sind die sechs Arten von Menüs: Kontext, Menü, menucontroller, menucontrollerlatched, Symbolleiste und toolwindowtoolbar.
@@ -52,7 +54,7 @@ Definiert ein Menü Element. Dies sind die sechs Arten von Menüs: Kontext, Men�
 |Parent|Optional. Das übergeordnete Element des Menü Elements.|
 |CommandFlag|Erforderlich. Siehe [Befehlsflag-Element](../extensibility/command-flag-element.md). Die gültigen CommandFlag-Werte für ein Menü lauten wie folgt:<br /><br /> -   **AlwaysCreate**<br />-   **Defaultangedockt**<br />-   **Defaultinvisible** : dieses Flag wirkt sich nicht auf die Anzeige von Symbolleisten aus.<br />-   **DontCache**<br />-   **Dynamicvisibility** : dieses Flag wirkt sich nicht auf die Anzeige von Symbolleisten aus.<br />-   **Iconandtext**<br />-   **Nocustomize**<br />-   **Notintblist**<br />-   **Notoolbarclose**<br />-   **Textchanges Befehlsflag**<br />-   **Textisanchorcommand**|
 |Zeichenfolgen|Erforderlich. Siehe [Strings-Element](../extensibility/strings-element.md). Das untergeordnete- `ButtonText` Element muss definiert werden.|
-|Anmerkung|Optionaler Kommentar.|
+|Annotation|Optionaler Kommentar.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

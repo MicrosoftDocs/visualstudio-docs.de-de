@@ -1,5 +1,7 @@
 ---
 title: Wortvervollständigung in einem Legacy Sprachdienst | Microsoft-Dokumentation
+description: Die Wortvervollständigung kann für einen Legacy Sprachdienst im Visual Studio SDK unterstützt werden. Erfahren Sie, wie Legacy Sprachdienste in einem VSPackage implementiert werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703172"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616274"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Wortvervollständigung in einem Legacysprachdienst
 Die Wortvervollständigung füllt die fehlenden Zeichen für ein teilweise typisiertes Wort aus. Wenn nur ein möglicher Abschluss vorhanden ist, wird das Wort abgeschlossen, wenn das Abschluss Zeichen eingegeben wird. Wenn das partielle Wort mit mehr als einer Möglichkeit übereinstimmt, wird eine Liste der möglichen Vervollständigungen angezeigt. Bei einem Abschluss Zeichen kann es sich um ein beliebiges Zeichen handeln, das nicht für Bezeichner verwendet wird.

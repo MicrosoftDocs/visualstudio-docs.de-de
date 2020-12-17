@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Debuggen von Renderingfehlern durch Schattierungen | Microsoft-Dokumentation'
+description: Ausführen einer Untersuchung, die einen Schattierungsfehler findet. Zeigt die Verwendung der Grafikdiagnose von Visual Studio, einschließlich des Grafikpixelverlaufs und des HLSL-Debuggers.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849341"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995082"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind
 Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ein Objekt untersucht wird, das aufgrund eines Shaderfehlers eine falsche Farbe aufweist.
@@ -48,7 +50,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [
 
 #### <a name="to-examine-a-pixel"></a>So überprüfen Sie ein Pixel
 
-1. Öffnen Sie das Fenster **Grafikpixelverlauf** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** das Symbol für **Pixelverlauf**aus.
+1. Öffnen Sie das Fenster **Grafikpixelverlauf** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** das Symbol für **Pixelverlauf** aus.
 
 2. Wählen Sie das Pixel aus, das Sie überprüfen möchten. Wählen Sie im Grafikprotokolldokumentfenster eines der Pixel des Objekts aus, das die falsche Farbe hat:
 
@@ -64,7 +66,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [
 
 #### <a name="to-examine-the-pixel-shader"></a>So überprüfen Sie den Pixelshader
 
-1. Starten Sie das Debuggen des Pixelshaders. Wählen Sie im Fenster **Grafikpixelverlauf** unter dem Primitiv des Objekts neben **Pixelshader**die Schaltfläche **Debuggen starten** aus.
+1. Starten Sie das Debuggen des Pixelshaders. Wählen Sie im Fenster **Grafikpixelverlauf** unter dem Primitiv des Objekts neben **Pixelshader** die Schaltfläche **Debuggen starten** aus.
 
 2. Da der Pixelshader die Farbe in diesem Szenario lediglich vom Vertexshader übernimmt und ungeändert weitergibt, ist leicht zu sehen, dass der Pixelshader nicht die Ursache des Problems ist.
 
@@ -78,7 +80,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit der Grafikdiagnose [
 
 #### <a name="to-examine-the-vertex-shader"></a>So überprüfen Sie den Vertexshader
 
-1. Starten Sie das Debuggen des Vertexshaders. Wählen Sie im Fenster **Grafikpixelverlauf** unter dem Primitiv des Objekts neben **Vertexshader**die Schaltfläche **Debuggen starten** aus.
+1. Starten Sie das Debuggen des Vertexshaders. Wählen Sie im Fenster **Grafikpixelverlauf** unter dem Primitiv des Objekts neben **Vertexshader** die Schaltfläche **Debuggen starten** aus.
 
 2. Suchen Sie nach der Ausgabestruktur des Vertexshaders, denn diese ist die Eingabe für den Pixelshader. In diesem Szenario hat diese Struktur den Namen `output`. Überprüfen Sie den Code des Vertexshaders. Sie stellen fest, dass der `color` -Member der `output` -Struktur explizit auf vollständig deckendes Schwarz festgelegt wird, möglicherweise als Ergebnis von Debugaktionen einer anderen Person.
 

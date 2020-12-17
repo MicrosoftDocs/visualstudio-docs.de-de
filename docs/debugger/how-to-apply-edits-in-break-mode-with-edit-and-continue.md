@@ -1,6 +1,7 @@
 ---
 title: Anwenden von Bearbeitungen im Unterbrechungsmodus mit „Bearbeiten und fortfahren“ | Microsoft-Dokumentation
-ms.custom: seodec18
+Description: Erfahren Sie, wie Sie mit „Bearbeiten und fortsetzen“ Ihren Visual Basic-Code im Unterbrechungsmodus bearbeiten können. Es gibt verschiedene Möglichkeiten, in den Unterbrechungsmodus zu wechseln.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350299"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398687"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Vorgehensweise: Anwenden von Bearbeitungen im Unterbrechungsmodus mit „Bearbeiten und fortfahren“ (Visual Basic)
 Sie können mit Bearbeiten und Fortfahren den Code im Unterbrechungsmodus bearbeiten und anschließend fortfahren, ohne die Codeausführung anzuhalten und erneut starten zu müssen.

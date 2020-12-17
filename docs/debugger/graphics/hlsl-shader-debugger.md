@@ -1,5 +1,6 @@
 ---
 title: HLSL-Debugger für Shaderprogramme | Microsoft-Dokumentation
+description: Verwenden Sie den HLSL-Debugger in der Grafikanalyse, um zu verstehen, wie der HLSL-Code in Ihrer App funktioniert. Der Debugger kann den genauen HLSL-Thread simulieren, der Sie interessiert.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65f643d0f03f9754d580de8be95fb5c1f65a940d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735303"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995134"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL-Shaderdebugger
 Mit dem HLSL-Debugger in der Visual Studio-Grafikanalyse können Sie nachvollziehen, wie Ihr HLSL-Shader-Code unter echten Bedingungen Ihrer App ausgeführt wird.

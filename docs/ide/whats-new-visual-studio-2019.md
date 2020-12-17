@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878295"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362391"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
@@ -136,9 +136,9 @@ Weitere Informationen finden Sie im Blogbeitrag [Get to code: How we designed th
 
 ### <a name="git-productivity"></a>Git-Produktivität
 
-**Neu in Version 16.8:** Git ist nun die Standardressource für die Versionskontrolle in Visual Studio 2019. Die Featuregruppe wurde über die letzten zwei Releases anhand des Benutzerfeedbacks ausgearbeitet und erweitert. Die neue Funktion wurde nun standardmäßig für alle aktiviert. Über das neue Git-Menü können Sie Repositorys klonen, erstellen oder öffnen. Verwenden Sie die integrierten Git-Toolfenster, um Änderungen an Ihrem Code zu committen und zu pushen, Branches zu verwalten, Ihre Remoterepositorys auf dem neuesten Stand zu halten und Mergekonflikte zu lösen.
+**Neu in 16.8**: Git ist nun die Standardressource für die Versionskontrolle in Visual Studio 2019. Die Featuregruppe wurde über die letzten zwei Releases anhand des Benutzerfeedbacks ausgearbeitet und erweitert. Die neue Funktion wurde nun standardmäßig für alle aktiviert. Über das neue Git-Menü können Sie Repositorys klonen, erstellen oder öffnen. Verwenden Sie die integrierten Git-Toolfenster, um Änderungen an Ihrem Code zu committen und zu pushen, Branches zu verwalten, Ihre Remoterepositorys auf dem neuesten Stand zu halten und Mergekonflikte zu lösen.
 
-Weitere Informationen finden Sie auf der Seite [Git-Produktivität in Visual Studio](git-with-visual-studio.md).
+Weitere Informationen finden Sie auf der Seite [Git-Benutzeroberfläche in Visual Studio](git-with-visual-studio.md).
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ In der Zwischenzeit finden Sie hier einige unserer neuen Features, die derzeit i
 
    Obwohl die neue Git-Versionskontrollenfunktion nun standardmäßig in Visual Studio 2019 [Version 16.8](/visualstudio/releases/2019/release-notes/) aktiviert ist, werden weiterhin Features hinzugefügt, um die Benutzeroberfläche im neuesten Vorschaurelease zu verbessern.
 
-   Weitere Informationen finden Sie auf der Seite [Git-Produktivität in Visual Studio](git-with-visual-studio.md).
+   Weitere Informationen finden Sie auf der Seite [Git-Benutzeroberfläche in Visual Studio](git-with-visual-studio.md).
 
 Weitere Informationen zum Vorschaurelease &mdash;und einen Downloadlink, wenn Sie sie ausprobieren möchten,&mdash; finden Sie auf der Seite **[Visual Studio Preview](https://aka.ms/vspreview/)** .
 
@@ -240,6 +240,7 @@ Warum sollten Sie dem Visual Studio-Team ein Feedback senden? Weil wir das Feedb
 
 ## <a name="see-also"></a>Siehe auch
 
+* [Neuerungen in der Visual Studio-Dokumentation](whats-new-visual-studio-docs.md)
 * [Visual Studio 2019 – Versionshinweise](/visualstudio/releases/2019/release-notes/)
 * [Versionshinweise für Visual Studio 2019 für Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Neuigkeiten im Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)
