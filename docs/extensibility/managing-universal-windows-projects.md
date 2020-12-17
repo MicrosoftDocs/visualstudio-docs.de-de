@@ -1,5 +1,7 @@
 ---
 title: Verwalten von universellen Windows-Projekten | Microsoft-Dokumentation
+description: Um universelle Windows-apps zu unterstützen, sollten Visual Studio-Erweiterungen, die Projekte verwalten, die universelle Windows-App-Projektstruktur beachten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012307"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615563"
 ---
 # <a name="manage-universal-windows-projects"></a>Universelle Windows-Projekte verwalten
 
@@ -25,7 +27,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ### <a name="navigate-the-shared-project"></a>Navigieren im freigegebenen Projekt
 
-1. Erstellen Sie ein c#-VSIX-Projekt mit dem Namen **testuniversalproject**. (**Datei**  >  **Neu**  >  **Project** und anschließend **c#**-  >  **Erweiterbarkeit**  >  **Visual Studio-Paket**). Fügen Sie eine **benutzerdefinierte Befehls** Projekt Element Vorlage hinzu (Klicken Sie auf dem **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie neues Element **Hinzufügen**und  >  **New Item**dann zu **Erweiterbarkeit**). Nennen Sie die Datei **testuniversalproject**.
+1. Erstellen Sie ein c#-VSIX-Projekt mit dem Namen **testuniversalproject**. (**Datei**  >  **Neu**  >  **Project** und anschließend **c#**-  >  **Erweiterbarkeit**  >  **Visual Studio-Paket**). Fügen Sie eine **benutzerdefinierte Befehls** Projekt Element Vorlage hinzu (Klicken Sie auf dem **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie neues Element **Hinzufügen** und  >  dann zu **Erweiterbarkeit**). Nennen Sie die Datei **testuniversalproject**.
 
 2. Fügen Sie einen Verweis auf *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* und *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (im Abschnitt **Erweiterungen** ) hinzu.
 
@@ -126,7 +128,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     }
     ```
 
-9. Geben Sie in der- `ShowMessageBox` Methode die Beschriftung (den Projektnamen, der in der **Projektmappen-Explorer**angezeigt wird) des freigegebenen Projekts aus.
+9. Geben Sie in der- `ShowMessageBox` Methode die Beschriftung (den Projektnamen, der in der **Projektmappen-Explorer** angezeigt wird) des freigegebenen Projekts aus.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -304,7 +306,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Verwalten der freigegebenen Elemente im Platt Form Projekt
 
-1. Suchen Sie die freigegebenen Elemente im Platt Form Projekt. Die Elemente im freigegebenen Projekt werden im Platt Form Projekt als freigegebene Elemente angezeigt. Sie können Sie nicht im **Projektmappen-Explorer**sehen, aber Sie können die Projekt Hierarchie durchlaufen, um Sie zu finden. Mit der folgenden Methode wird die Hierarchie durchlaufen und alle freigegebenen Elemente erfasst. Optional gibt Sie die Beschriftung der einzelnen Elemente aus. Die freigegebenen Elemente werden durch die neue-Eigenschaft identifiziert <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> .
+1. Suchen Sie die freigegebenen Elemente im Platt Form Projekt. Die Elemente im freigegebenen Projekt werden im Platt Form Projekt als freigegebene Elemente angezeigt. Sie können Sie nicht im **Projektmappen-Explorer** sehen, aber Sie können die Projekt Hierarchie durchlaufen, um Sie zu finden. Mit der folgenden Methode wird die Hierarchie durchlaufen und alle freigegebenen Elemente erfasst. Optional gibt Sie die Beschriftung der einzelnen Elemente aus. Die freigegebenen Elemente werden durch die neue-Eigenschaft identifiziert <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> .
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -353,7 +355,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. Probieren Sie es jetzt aus. Drücken Sie **F5** , um die experimentelle Instanz zu starten. Erstellen eines universellen c#-Hub-App-Projekts in der experimentellen Instanz (im Dialogfeld **Neues Projekt** , **Visual c#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **Hub-App**) **Tools** wechseln Sie zum Menü Extras, klicken Sie auf **testuniversalproject aufrufen**, und überprüfen Sie dann den Text im **Ausgabe** Bereich. Folgendes sollte angezeigt werden:
+4. Probieren Sie es jetzt aus. Drücken Sie **F5** , um die experimentelle Instanz zu starten. Erstellen eines universellen c#-Hub-App-Projekts in der experimentellen Instanz (im Dialogfeld **Neues Projekt** , **Visual c#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **Hub-App**)  wechseln Sie zum Menü Extras, klicken Sie auf **testuniversalproject aufrufen**, und überprüfen Sie dann den Text im **Ausgabe** Bereich. Folgendes sollte angezeigt werden:
 
     ```
     Found shared project: HubApp.Shared

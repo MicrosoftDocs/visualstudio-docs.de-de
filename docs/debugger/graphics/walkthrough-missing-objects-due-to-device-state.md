@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus | Microsoft-Dokumentation'
+description: Ausführen einer Untersuchung, die einen falsch konfigurierten Gerätezustand ermittelt. Zeigt die Verwendung der Grafikereignisliste, Stufen der Grafikpipeline und den Grafikpixelverlauf.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895445"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995056"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus
 Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Grafikdiagnose ein Objekt untersucht werden kann, das wegen eines falsch konfigurierten Gerätestatus fehlt.
@@ -44,7 +46,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
 1. Laden Sie in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ein Grafikprotokoll, das einen Frame enthält, der das fehlende Modell darstellt. Eine neue Grafikdiagnose-Registerkarte wird in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]angezeigt. Ganz oben auf dieser Registerkarte befindet sich die Renderingzielausgabe des ausgewählten Frames. Im unteren Teil befindet sich die **Frameliste**, in der alle aufgezeichneten Frames als Miniaturansichten angezeigt werden.
 
-2. Wählen Sie in der **Frameliste**einen Frame aus, der veranschaulicht, dass das Modell nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:
+2. Wählen Sie in der **Frameliste** einen Frame aus, der veranschaulicht, dass das Modell nicht angezeigt wird. Das Renderziel wird aktualisiert und gibt den ausgewählten Frame wieder. In diesem Szenario sieht die Grafikprotokoll-Registerkarte wie folgt aus:
 
     ![.vsglog-Registerkarte - Framepuffer-Vorschau und Frameliste](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")
 
@@ -52,7 +54,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
 #### <a name="to-ensure-that-draw-calls-are-being-made"></a>So vergewissern Sie sich, dass Zeichnen-Befehle (Draw-Aufrufe) ausgeführt werden
 
-1. Öffnen Sie das Fenster **Grafikereignisliste** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Ereignisliste**aus.
+1. Öffnen Sie das Fenster **Grafikereignisliste** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Ereignisliste** aus.
 
 2. Suchen Sie in der **Grafikereignisliste** nach Zeichnen-Befehlen (Draw-Aufrufe). Zur Vereinfachung können Sie im Feld **Suche** in oberen rechten Ecke des Fensters **Grafikereignisliste** das Wort "Zeichnen" eingeben. Damit wird die Liste gefiltert und enthält nur Ereignisse, die "Zeichnen" im Titel haben. In diesem Szenario stellen Sie fest, dass mehrere Draw-Aufrufe ausgeführt wurden:
 
@@ -62,7 +64,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
 #### <a name="to-find-the-draw-call-for-the-missing-geometry"></a>So finden Sie den Zeichnen-Befehl für die fehlende Geometrie
 
-1. Öffnen Sie das Fenster **Grafikpipelinestufen** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Pipelinestufen**aus.
+1. Öffnen Sie das Fenster **Grafikpipelinestufen** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Pipelinestufen** aus.
 
 2. Durchlaufen Sie jeden Draw-Aufruf, und beobachten Sie dabei das Fenster **Grafikpipelinestufen** , um das fehlende Modell zu ermitteln. In der **Eingabeassembler** -Stufe werden die Rohdaten des Modells angezeigt. In der **Vertexshader** -Stufe werden die transformierten Modelldaten angezeigt. In der **Pixelshader** -Stufe wird die Ausgabe des Pixelshaders angezeigt. In der **Ausgabezusammenführung** -Stufe werden das zusammengeführte Renderziel dieses Draw-Aufrufs und alle vorherigen Aufrufe angezeigt.
 
@@ -74,7 +76,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
 #### <a name="to-determine-why-the-pixel-was-excluded"></a>So ermitteln Sie, warum das Pixel ausgeschlossen wurde
 
-1. Öffnen Sie das Fenster **Grafikpixelverlauf** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** das Symbol für **Pixelverlauf**aus.
+1. Öffnen Sie das Fenster **Grafikpixelverlauf** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** das Symbol für **Pixelverlauf** aus.
 
 2. Wählen Sie anhand der **Pixelshader** -Miniaturansicht ein Pixel in der Framepufferausgabe aus, das einen Teil der fehlenden Geometrie enthalten sollte. In diesem Szenario muss die Ausgabe des Pixelshaders den größten Teil des Renderziels überdecken. Nachdem ein Pixel ausgewählt wurde, sieht das Fenster **Grafikpixelverlauf** wie folgt aus:
 
@@ -88,13 +90,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
 
 5. Erweitern Sie ein ausgeschlossenes Primitiv, um den Zustand weiter zu überprüfen, der zum Ausschluss geführt hat. Bewegen Sie den Zeiger in der Gruppe **Ausgabezusammenführung** auf das **Ergebnis**. Eine QuickInfo gibt an, warum das Primitiv ausgeschlossen wurde. In diesem Szenario ergibt die Überprüfung, dass das Primitiv ausgeschlossen wurde, weil es den Tiefentest nicht bestanden hat, weshalb es nicht zur endgültigen Farbe des Pixel beigetragen hat.
 
-   Nachdem Sie ermittelt haben, dass die Geometrie nicht angezeigt wird, weil deren Primitive den Tiefentest nicht bestanden haben, können Sie davon ausgehen, dass dieses Problem durch eine fehlerhafte Konfiguration des Gerätestatus bedingt ist. Gerätestatus- und andere Direct3D-Objektdaten können über die **Grafikobjekttabelle**überprüft werden.
+   Nachdem Sie ermittelt haben, dass die Geometrie nicht angezeigt wird, weil deren Primitive den Tiefentest nicht bestanden haben, können Sie davon ausgehen, dass dieses Problem durch eine fehlerhafte Konfiguration des Gerätestatus bedingt ist. Gerätestatus- und andere Direct3D-Objektdaten können über die **Grafikobjekttabelle** überprüft werden.
 
 #### <a name="to-examine-device-state"></a>So untersuchen Sie den Gerätestatus
 
-1. Öffnen Sie das Fenster **Grafikobjekttabelle** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die Option **Objekttabelle**aus.
+1. Öffnen Sie das Fenster **Grafikobjekttabelle** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die Option **Objekttabelle** aus.
 
-2. Suchen Sie in der **Grafikobjekttabelle** nach dem **D3D10-Gerät**-Objekt, und öffnen Sie dann das **D3D10-Gerät** -Objekt. Eine neue Registerkarte **d3d10-Gerät** wird in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]geöffnet. Um dies zu vereinfachen, können Sie die **Grafikobjekttabelle** nach dem **Typ**sortieren:
+2. Suchen Sie in der **Grafikobjekttabelle** nach dem **D3D10-Gerät**-Objekt, und öffnen Sie dann das **D3D10-Gerät** -Objekt. Eine neue Registerkarte **d3d10-Gerät** wird in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]geöffnet. Um dies zu vereinfachen, können Sie die **Grafikobjekttabelle** nach dem **Typ** sortieren:
 
     ![Grafikobjekttabelle und der zugehörige Gerätezustand](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
 

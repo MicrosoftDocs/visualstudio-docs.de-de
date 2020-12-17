@@ -1,8 +1,8 @@
 ---
 title: Projektmappen und Projekte
-description: Hier erfahren Sie mehr über Visual Studio-Projekte und -Projektmappen und darüber, wie Sie mit dem Projektmappen-Explorer ein neues Projekt erstellen.
+description: Erfahren Sie mehr über Visual Studio-Projekte und -Projektmappen, das Erstellen neuer Projekte aus einer Vorlage sowie das Anzeigen und Verwalten von Projekten im Projektmappen-Explorer.
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2020
+ms.date: 12/15/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
+ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480706"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97578252"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -53,6 +53,8 @@ Projektdateien basieren auf dem [MSBuild-XML-Schema](../msbuild/msbuild-project-
 
 Projekte befinden sich in *Projektmappen*. Trotz der englischen Bezeichnung „Solution“ ist eine Projektmappe keine „Lösung“. Eine Projektmappe ist lediglich ein Container für ein oder mehrere zusammengehörige Projekte sowie Buildinformationen, Visual Studio-Fenstereinstellungen und jegliche weitere Dateien, die zu keinem bestimmten Projekt gehören. Eine Projektmappe wird von einer Textdatei (mit der Erweiterung *SLN*) in einem individuellen Format beschrieben. Dieses sollte nicht manuell bearbeitet werden.
 
+### <a name="solution-file"></a>Projektmappendatei
+
 Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (*SLN* und *SUO*):
 
 |Erweiterung|name|Beschreibung|
@@ -60,13 +62,17 @@ Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (
 |.sln|Visual Studio-Projektmappe|Organisiert Projekte, Projektelemente und Projektmappenelemente in einer Projektmappe.|
 |.suo|Benutzeroptionen bei Projektmappen|Speichert Einstellungen und Anpassungen (z.B. Breakpoints) auf Benutzerebene.|
 
+### <a name="solution-folder"></a>Projektmappenordner
+
+Ein „Projektmappenordner“ ist ein virtueller Ordner, der sich nur im **Projektmappen-Explorer** befindet. In diesem Ordner können Sie Projekte in einer Projektmappe gruppieren. Wenn Sie eine Projektmappendatei auf einem Computer suchen möchten, klicken Sie auf **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte**. Weitere Informationen finden Sie unter [Dialogfeld „Optionen“: Projekte und Projektmappen > Speicherorte](./reference/projects-solutions-locations-options.md).
+
 ## <a name="create-new-projects"></a>Neue Projekte erstellen
 
 Ein neues Projekt lässt sich am einfachsten über eine Projektvorlage für einen bestimmten Anwendungs- oder Websitetyp erstellen. Eine Projektvorlage besteht aus mehreren grundlegenden und vorab generierten Codedateien, Konfigurationsdateien, Objekten und Einstellungen. Diese Vorlagen finden Sie in dem Dialogfeld, in dem Sie ein neues Projekt erstellen (**Datei** > **Neu** > **Projekt**). Weitere Informationen finden Sie unter [Erstellen eines neuen Projekts in Visual Studio](create-new-project.md) und [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md).
 
 Wenn Sie Ihre Projekte häufig auf eine bestimmte Weise anpassen, können Sie eine benutzerdefinierte Projektvorlage erstellen, die Sie dann zum Erstellen neuer Projekte verwenden können. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
 
-Wenn Sie ein neues Projekt erstellen, wird es standardmäßig unter *%USERPROFILE%\source\repos* gespeichert. Sie können diesen Speicherort in der Einstellung **Projektspeicherort** unter **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte** ändern. Weitere Informationen finden Sie auf der Seite [„Projekte und Projektmappen“, Dialogfeld „Optionen“](../ide/reference/projects-and-solutions-options-dialog-box.md).
+Wenn Sie ein neues Projekt erstellen, wird es standardmäßig unter *%USERPROFILE%\source\repos* gespeichert. Sie können diesen Speicherort in der Einstellung **Projektspeicherort** unter **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte** ändern. Weitere Informationen finden Sie auf der Seite [„Projekte und Projektmappen“, Dialogfeld „Optionen“](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Projektmappen-Explorer
 

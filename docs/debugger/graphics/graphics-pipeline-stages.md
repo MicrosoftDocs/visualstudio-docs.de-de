@@ -1,5 +1,7 @@
 ---
 title: Grafikpipelinestufen | Microsoft-Dokumentation
+description: Problembehandlung von Renderingproblemen durch Ermitteln, wie ein Grafikaufruf in jeder Stufe der Direct3D- Grafikpipeline transformiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d697313289bbf00234764cc04603b7bc256f174
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 150c61e271e7951332848a601aaddc619a1c37e5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735469"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993925"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafikpipelinestufen
 Anhand des Fensters „Grafikpipelinestufen“ können Sie nachvollziehen, wie ein einzelner Zeichnen-Befehl in jeder Stufe der Direct3D-Grafikpipeline umgewandelt wird.

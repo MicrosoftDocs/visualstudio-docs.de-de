@@ -1,5 +1,7 @@
 ---
 title: Verwalten paralleler Dateizuordnungen | Microsoft-Dokumentation
+description: Wenn das VSPackage Dateizuordnungen bereitstellt, entscheiden Sie, wie parallele Installationen behandelt werden sollen, bei denen eine bestimmte Version von Visual Studio eine Datei öffnet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702764"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616343"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Parallele Dateizuordnungen verwalten
 
@@ -23,7 +25,7 @@ Wenn das VSPackage Dateizuordnungen bereitstellt, müssen Sie entscheiden, wie p
 
 Benutzer erwarten, dass eine neue Version eines Produkts mit früheren Versionen kompatibel ist, damit vorhandene Dateien in eine neue Version geladen werden können, ohne dass Daten verloren gehen. Im Idealfall kann das VSPackage die Dateiformate früherer Versionen laden und speichern. Wenn dies nicht zutrifft, sollten Sie ein Upgrade des Datei Formats auf die neue Version des VSPackage anbieten. Der Nachteil dieses Ansatzes besteht darin, dass die aktualisierte Datei in der früheren Version nicht geöffnet werden kann.
 
-Um dieses Problem zu vermeiden, können Sie Erweiterungen ändern, wenn Dateiformate inkompatibel werden. Beispielsweise könnte Version 1 des VSPackage die Erweiterung, *. mypkg10*, verwenden, und Version 2 kann die Erweiterung *. mypkg20*verwenden. Dieser Unterschied identifiziert das VSPackage, das eine bestimmte Datei öffnet. Wenn Sie der Liste der Programme, die einer alten Erweiterung zugeordnet sind, neuere VSPackages hinzufügen, können Benutzer mit der rechten Maustaste auf die Datei klicken und Sie in einem neueren VSPackage öffnen. Zu diesem Zeitpunkt kann das VSPackage anbieten, die Datei auf das neue Format zu aktualisieren oder die Datei zu öffnen und die Kompatibilität mit früheren Versionen des VSPackage aufrechtzuerhalten.
+Um dieses Problem zu vermeiden, können Sie Erweiterungen ändern, wenn Dateiformate inkompatibel werden. Beispielsweise könnte Version 1 des VSPackage die Erweiterung, *. mypkg10*, verwenden, und Version 2 kann die Erweiterung *. mypkg20* verwenden. Dieser Unterschied identifiziert das VSPackage, das eine bestimmte Datei öffnet. Wenn Sie der Liste der Programme, die einer alten Erweiterung zugeordnet sind, neuere VSPackages hinzufügen, können Benutzer mit der rechten Maustaste auf die Datei klicken und Sie in einem neueren VSPackage öffnen. Zu diesem Zeitpunkt kann das VSPackage anbieten, die Datei auf das neue Format zu aktualisieren oder die Datei zu öffnen und die Kompatibilität mit früheren Versionen des VSPackage aufrechtzuerhalten.
 
 > [!NOTE]
 > Sie können diese Ansätze kombinieren. Sie können z. b. eine Abwärtskompatibilität bereitstellen, indem Sie eine ältere Datei laden und das Dateiformat aktualisieren, wenn der Benutzer Sie speichert.
@@ -65,7 +67,7 @@ Wenn Sie möchten, dass mehrere parallele VSPackages dieselbe Erweiterung verwen
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 und nicht DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Mit der DEVENV_EXE_LATEST-Eigenschaft in der Registrierungs Tabelle des Windows Installer Pakets können Sie den Standardwert des **HKEY_CLASSES_ROOT*ProgID*shellopencommand** , [DEVENV_EXE_LATEST] "%1", schreiben.
+   Mit der DEVENV_EXE_LATEST-Eigenschaft in der Registrierungs Tabelle des Windows Installer Pakets können Sie den Standardwert des **HKEY_CLASSES_ROOT *ProgID* shellopencommand** , [DEVENV_EXE_LATEST] "%1", schreiben.
 
 - Führen Sie ein frei gegebenes Start Programm Programm aus, das von verfügbaren VSPackage-Versionen die beste Wahl treffen kann.
 

@@ -1,5 +1,7 @@
 ---
 title: Verwalten des Laden von Projekten in einer Projekt Mappe | Microsoft-Dokumentation
+description: Erfahren Sie, wie Entwickler Ladezeiten von Projektmappen reduzieren und das Ladeverhalten von Projekten verwalten können, indem Sie einen Solution Load Manager erstellen
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21cd5e7e557e795db49aea7a14e8e4cc7caa0422
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 093db17990d538bf72ddeab9ba9da2b8db30d8f0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702731"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616356"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Verwalten des Laden von Projekten in einer Projekt Mappe
 Visual Studio-Projektmappen können eine große Anzahl von Projekten enthalten. Das Standardverhalten von Visual Studio besteht darin, alle Projekte in einer Projekt Mappe zu dem Zeitpunkt zu laden, zu dem die Projekt Mappe geöffnet wird, und nicht, um dem Benutzer den Zugriff auf Projekte zu gestatten, bis alle Elemente vollständig geladen wurden. Wenn der Ladevorgang für das Projekt mehr als zwei Minuten dauert, wird eine Statusanzeige angezeigt, in der die Anzahl der geladenen Projekte und die Gesamtzahl der Projekte angezeigt wird. Der Benutzer kann Projekte bei der Arbeit in einer Projekt Mappe mit mehreren Projekten entladen, aber dieses Verfahren hat einige Nachteile: die entladenen Projekte werden nicht als Teil des Befehls "Rebuild Solution" erstellt, und IntelliSense-Beschreibungen von Typen und Membern geschlossener Projekte werden nicht angezeigt.
@@ -65,7 +67,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Dieses Ereignis wird ausgelöst, nachdem eine Projekt Mappe anfänglich vollständig geladen wurde, unabhängig davon, ob ein projektmappenload-Manager vorhanden ist. Sie wird auch ausgelöst, wenn die Projekt Mappe vollständig geladen wird, nachdem die Projekt Mappe vollständig geladen wurde. Gleichzeitig <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> wird erneut aktiviert.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Dieses Ereignis wird ausgelöst, bevor ein Projekt (oder Projekte) geladen wird. Um sicherzustellen, dass andere Hintergrundprozesse abgeschlossen sind, bevor die Projekte geladen werden, legen `pfShouldDelayLoadToNextIdle` Sie auf **true**fest.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Dieses Ereignis wird ausgelöst, bevor ein Projekt (oder Projekte) geladen wird. Um sicherzustellen, dass andere Hintergrundprozesse abgeschlossen sind, bevor die Projekte geladen werden, legen `pfShouldDelayLoadToNextIdle` Sie auf **true** fest.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Dieses Ereignis wird ausgelöst, wenn ein Batch von Projekten geladen wird. Wenn `fIsBackgroundIdleBatch` true ist, werden die Projekte im Hintergrund geladen. Wenn `fIsBackgroundIdleBatch` false ist, werden die Projekte als Ergebnis einer Benutzer Anforderung synchron geladen, z. b. wenn der Benutzer ein ausstehendes Projekt in Projektmappen-Explorer erweitert. Sie können dieses Ereignis verarbeiten, um aufwändige Aufgaben durchzuführen, die andernfalls in ausgeführt werden müssen <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> .
 

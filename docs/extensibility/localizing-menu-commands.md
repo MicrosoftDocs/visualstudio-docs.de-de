@@ -1,5 +1,7 @@
 ---
 title: Lokalisieren von Menübefehlen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie lokalisierten Text für Menü-und Symbolleisten Befehle bereitstellen, indem Sie lokalisierte vsct-Dateien und lokalisierte RESX-Dateien für Ihr VSPackage erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904561"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615602"
 ---
 # <a name="localize-menu-commands"></a>Lokalisieren von Menübefehlen
 
@@ -32,7 +34,7 @@ Informationen dazu, wie Sie die Installation lokalisieren, finden Sie unter [Lok
 
 In VSPackages werden Menübefehle und Symbolleisten Schaltflächen in der *vsct* -Datei definiert.
 
-1. Ändern Sie in **Projektmappen-Explorer**den Namen der *vsct* -Datei von *Dateiname. vsct* in *filename. en-US. vsct*.
+1. Ändern Sie in **Projektmappen-Explorer** den Namen der *vsct* -Datei von *Dateiname. vsct* in *filename. en-US. vsct*.
 
 2. Erstellen Sie für jede lokalisierte Sprache eine Kopie von *Dateiname. en-US. vsct* .
 
@@ -78,13 +80,13 @@ In VSPackages werden Menübefehle und Symbolleisten Schaltflächen in der *vsct*
 
 Andere Text Ressourcen als Befehlsnamen werden in Ressourcen Dateien (*RESX*-Dateien) definiert.
 
-1. Benennen Sie *VSPackage. resx* in *VSPackage. en-US. resx*um.
+1. Benennen Sie *VSPackage. resx* in *VSPackage. en-US. resx* um.
 
 2. Erstellen Sie für jede lokalisierte Sprache eine Kopie der Datei " *VSPackage. en-US. resx* ".
 
      Benennen Sie jedes Kopie- *VSPackage. { Locale}. resx*, wobei *{locale}* ein bestimmter Kultur Name ist.
 
-3. Benennen Sie *Resources. resx* in *Resources. en-US. resx*um.
+3. Benennen Sie *Resources. resx* in *Resources. en-US. resx* um.
 
 4. Erstellen Sie für jede lokalisierte Sprache eine Kopie der Datei " *Resources. en-US. resx* ".
 
@@ -138,7 +140,7 @@ Sie müssen die Datei *AssemblyInfo.cs* und die Projektdatei ändern, um die lok
 
 6. Suchen Sie das- `ItemGroup` Element, das- `EmbeddedResource` Elemente enthält.
 
-7. `EmbeddedResource`Ersetzen Sie im-Element, das *VSPackage. en-US. resx*aufruft, das `ManifestResourceName` -Element durch ein `LogicalName` -Element, das auf festgelegt ist `VSPackage.en-US.Resources` , wie folgt:
+7. `EmbeddedResource`Ersetzen Sie im-Element, das *VSPackage. en-US. resx* aufruft, das `ManifestResourceName` -Element durch ein `LogicalName` -Element, das auf festgelegt ist `VSPackage.en-US.Resources` , wie folgt:
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">

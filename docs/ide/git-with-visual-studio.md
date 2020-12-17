@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878308"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524094"
 ---
 # <a name="git-experience-in-visual-studio"></a>Git-Benutzeroberfläche in Visual Studio
 
@@ -187,9 +187,9 @@ Navigieren Sie auf der Menüleiste entweder zu **Git** > **Einstellungen** oder 
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Dialogfeld „Optionen“ zum Personalisieren und Anpassen von Einstellungen in der Visual Studio-IDE":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Verwenden der Legacyversion des Team Explorers in Visual Studio
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Verwenden der vollständigen Version von Team Explorer in Visual Studio
 
-Die neue Git-Benutzeroberfläche stellt ab [Version 16.8](/visualstudio/releases/2019/release-notes/) das Standardsystem für die Versionskontrolle in Visual Studio 2019 bereit. Wenn Sie sie deaktivieren möchten, können Sie dies jedoch auch tun. Wechseln Sie zu **Extras** > **Optionen** > **Umgebung** > **Vorschaufeatures**, und aktivieren Sie das Kontrollkästchen **New Git user experience** (Neue Git-Benutzeroberfläche), wodurch Sie zur Legacyversion des Team Explorers zurückkehren.
+Die neue Git-Benutzeroberfläche stellt ab [Version 16.8](/visualstudio/releases/2019/release-notes/) das Standardsystem für die Versionskontrolle in Visual Studio 2019 bereit. Wenn Sie sie deaktivieren möchten, können Sie dies jedoch auch tun. Wechseln Sie zu **Extras** > **Optionen** > **Umgebung** > **Vorschaufeatures**, und aktivieren Sie das Kontrollkästchen **New Git user experience** (Neue Git-Benutzeroberfläche), wodurch Sie zu Team Explorer für Git zurückkehren.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Abschnitt „Vorschaufeatures“ des Dialogfelds „Optionen“ in Visual Studio":::
 

@@ -1,5 +1,7 @@
 ---
 title: Befehle des Hilfemenüs | Microsoft-Dokumentation
+description: Informationen zu den im Hilfemenü von Spy++ verfügbaren Befehlen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 492062a5ba53eb277263e4284b74710786e13993
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895103"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398609"
 ---
 # <a name="help-menu-commands"></a>Befehle im Menü "Hilfe"
 Das Menü **Hilfe** enthält Befehle zum Öffnen von Hilfedateien.

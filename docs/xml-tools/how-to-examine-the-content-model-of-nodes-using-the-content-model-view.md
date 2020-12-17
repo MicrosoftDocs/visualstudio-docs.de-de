@@ -1,5 +1,5 @@
 ---
-title: Überprüfen von Knoten mithilfe der Inhaltsmodellansicht in XML-Schema-Designer
+title: Untersuchen des Inhaltsmodells von Knoten
 description: In diesem Artikel erfahren Sie, wie Sie die Inhaltsmodellansicht im XML-Schema-Designer verwenden, um das Inhaltsmodell der Knoten in einem XML-Schema zu untersuchen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f3ce3d1a47125c446521ceb60a851322c37209d0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399508"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995277"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Vorgehensweise: Überprüfen des Inhaltsmodells von Knoten mithilfe der Inhaltsmodellansicht
+# <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>Vorgehensweise: Untersuchen des Inhaltsmodells von Knoten mithilfe der Inhaltsmodellansicht
 
-In diesem Thema wird das Untersuchen der Knoten in der [Inhaltsmodellansicht](../xml-tools/content-model-view.md) beschrieben.
+In diesem Thema wird das Untersuchen der Knoten mithilfe der [Inhaltsmodellansicht](../xml-tools/content-model-view.md) beschrieben.
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>So erstellen Sie eine neue XSD-Datei und zeigen Sie das Stammelement in der Inhaltsmodellansicht an
 

@@ -1,6 +1,7 @@
 ---
 title: Beibehalten des Fokus beim Durchlaufen der App | Microsoft-Dokumentation
-ms.custom: seodec18
+Description: Verwenden von Remotedebuggen, um zu verhindern, dass das Programm den Fokus verliert, wenn Sie ein Fensteraktivierungsproblem debuggen.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d533d524effe5ba055116d926d7cc5ba9632a6b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350380"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398323"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Wie kann der Fokus beim Durchlaufen der App beibehalten werden?
 ## <a name="description"></a>Beschreibung

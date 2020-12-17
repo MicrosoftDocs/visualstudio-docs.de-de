@@ -1,5 +1,7 @@
 ---
 title: Menüs-Element | Microsoft-Dokumentation
+description: Das Menüs-Element definiert alle Menüs und Symbolleisten, die von einem VSPackage implementiert werden. Dieser Artikel enthält ein Beispiel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abc5621784579c295393d77c792013dd0c737871
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702591"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615576"
 ---
 # <a name="menus-element"></a>Menüs-Element
 Definiert alle Menüs und Symbolleisten, die von einem VSPackage implementiert werden.
@@ -35,7 +37,7 @@ Definiert alle Menüs und Symbolleisten, die von einem VSPackage implementiert w
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 

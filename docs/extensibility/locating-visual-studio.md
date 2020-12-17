@@ -1,5 +1,7 @@
 ---
 title: Suchen von Visual Studio | Microsoft-Dokumentation
+description: Sie können mehrere Instanzen derselben Version von Visual Studio installieren. Erfahren Sie, wie Sie eine com-Abfrage-API verwenden, um die gewünschte Instanz zu suchen.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012476"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616287"
 ---
 # <a name="locate-visual-studio"></a>Suchen nach Visual Studio
 
@@ -39,7 +41,7 @@ Um Visual Studio und andere Tools in Buildumgebungen, PowerShell-Skripts, Instal
 | [Vssetup-Cmdlets](https://github.com/Microsoft/vssetup.powershell) | PowerShell-Cmdlets unterstützten 2,0 und höher, die umfangreiche Informationen als Objekte zurückgeben, die Sie verwenden können, um nach Instanzen zu suchen, die auf denselben Kriterien wie _vswhere_ basieren, und um noch mehr Eigenschaften zu Instanzen zu ermitteln Beispiele finden Sie im [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) . |
 | [Vsixbootstrapper](https://github.com/Microsoft/vsixbootstrapper) | _Vsixinstaller_ wird von automatisch lokalisiert, und die Befehlszeile wird durchlaufen, um eine **. vsix* -Datei zu installieren. Diese Funktion kann in Installationsprogrammen nützlich sein, die keine direkte Unterstützung für die Abfrage-APIs haben. Beispiele finden Sie im [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) . |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Änderungen am Setup von Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
 * [Starten von Visual Studio mit DTE](launch-visual-studio-dte.md)

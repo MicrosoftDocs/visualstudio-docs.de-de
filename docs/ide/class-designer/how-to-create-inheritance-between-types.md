@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Erstellen der Vererbung zwischen Typen (Klassen-Designer)'
+title: Erstellen einer Vererbung zwischen Typen
 description: Lernen Sie, eine Vererbungsbeziehung zwischen zwei Typen in einem Klassendiagramm mithilfe des Klassen-Designers zu erstellen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199f220529b28d4ca0c668d30564da65f6553e0e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 064ae443c264187e7666b7aaabde27d6705388a4
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901465"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933478"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Vorgehensweise: Erstellen der Vererbung zwischen Typen im Klassen-Designer
 

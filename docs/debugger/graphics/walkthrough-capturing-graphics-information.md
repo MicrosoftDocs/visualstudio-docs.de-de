@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aufzeichnen von Grafikinformationen | Microsoft-Dokumentation'
+description: Informationen zum Verwenden der Grafikdiagnose von Visual Studio zur manuellen Erfassung von Grafikinformationen aus einer Direct3D-App.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3acd9df9dbb5a430171ae7a283bbf4292e07e26a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734725"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994978"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Exemplarische Vorgehensweise: Aufzeichnen von Grafikinformationen
 Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Grafikdiagnose verwendet wird, um Grafikinformationen aus einer Direct3D-App manuell zu erfassen.
@@ -35,11 +37,11 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>So aktivieren Sie die Erfassung von Grafikinformationen, ohne ein Projekt oder eine Projektmappe zu laden
 
-1. Klicken Sie in der Menüleiste auf **Datei**, dann auf **Öffnen**und **Projekt/Projektmappe**. Das Dialogfeld **Projekt öffnen** wird angezeigt.
+1. Klicken Sie in der Menüleiste auf **Datei**, dann auf **Öffnen** und **Projekt/Projektmappe**. Das Dialogfeld **Projekt öffnen** wird angezeigt.
 
-2. Anstelle einer Projekt- oder einer Projektmappendatei geben Sie die ausführbare Datei für die Anwendung an, von der Sie Grafikinformationen von erfassen möchten, und wählen Sie dann **Öffnen**aus.
+2. Anstelle einer Projekt- oder einer Projektmappendatei geben Sie die ausführbare Datei für die Anwendung an, von der Sie Grafikinformationen von erfassen möchten, und wählen Sie dann **Öffnen** aus.
 
-3. Klicken Sie in der Menüleiste auf **Debuggen**, dann auf **Grafik**und **Diagnose starten**.
+3. Klicken Sie in der Menüleiste auf **Debuggen**, dann auf **Grafik** und **Diagnose starten**.
 
    Wenn die App gestartet ist und Frames rendert, können Sie Grafikinformationen erfassen.
 

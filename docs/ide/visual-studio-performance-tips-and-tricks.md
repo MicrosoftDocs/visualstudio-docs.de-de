@@ -2,19 +2,19 @@
 title: Tipps zum Verbessern der Leistung
 description: Hier erfahren Sie, wie Sie nicht verwendete Visual Studio-Features optimieren, um die Leistung zu verbessern.
 ms.custom: SEO-VS-2020
-ms.date: 08/13/2020
+ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479614"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488179"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -71,7 +71,7 @@ Wenn Sie in der Regel während des Debuggens von Sitzungen über nicht ausreiche
 
     Es wird empfohlen, die CPU-Profilerstellung nach ihrer Verwendung zu deaktivieren. Diese Funktion kann große Mengen von Ressourcen belegen. Sobald die CPU-Profilerstellung aktiviert ist, wird dieser Status in allen nachfolgenden Debugsitzungen beibehalten. Daher muss sie nach Beendigung explizit deaktiviert werden. Sie können einige Ressourcen speichern, indem Sie während des Debuggens die Diagnosetools deaktivieren, sollten Sie diese Funktionen nicht bereitstellen müssen.
 
-    Um die **Diagnosetools** zu deaktivieren, starten Sie eine Debugsitzung, wählen Sie **Extras** > **Optionen** > **Diagnosetools beim Debuggen aktivieren** aus, und deaktivieren Sie die Option.
+    Um die **Diagnosetools** zu deaktivieren, starten Sie eine Debugsitzung, wählen Sie **Extras** > **Optionen** > **Debuggen** > **Allgemein** aus, und deaktivieren Sie dann die Option **Diagnosetools während des Debuggens aktivieren**.
 
     Weitere Informationen finden Sie unter [Profilerstellungstools](../profiling/profiling-feature-tour.md).
 
