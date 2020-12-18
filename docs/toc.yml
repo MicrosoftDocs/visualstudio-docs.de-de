@@ -182,11 +182,11 @@
       href: ide/visual-studio-search.md
     - name: Projektmappen und Projekte
       items:
-        - name: Arbeiten mit Projektmappen und Projekten
+        - name: Informationen zu Projektmappen und Projekten
           href: ide/solutions-and-projects-in-visual-studio.md
-        - name: Erstellt ein neues Projekt
+        - name: Erstellen eines neuen Projekts
           href: ide/create-new-project.md
-        - name: Erstellen von Projektmappen und Projekten
+        - name: Arbeiten mit Projektmappen und Projekten
           href: ide/creating-solutions-and-projects.md
         - name: Öffnen eines Projekts von einem Repository aus
           href: get-started/tutorial-open-project-from-repo.md
@@ -978,7 +978,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Verweis
+- name: Referenz
   items:
     - name: Tastenkombinationen
       items:
