@@ -1,5 +1,6 @@
 ---
 title: Bilder und Symbole für Visual Studio | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Entwurfskonzepte der Bilder und Symbole für Visual Studio.
 ms.date: 04/26/2017
 ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f29fd0a69ceafa33c00593b67f6775a723780c26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906117"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668650"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bilder und Symbole für Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Verwendung von Bildern in Visual Studio
@@ -308,7 +309,7 @@ ms.locfileid: "85906117"
 
 |Ausführen|Beenden|Löschen|Speichern|Rückwärts navigieren|
 |-|-|-|-|-|
-|![Symbol "Ausführen"](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Stoppsymbol](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Symbol „Löschen“](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Symbol „Speichern“](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Symbol "Rückwärts navigieren"](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
+|![Symbol "Ausführen"](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Symbol „Anhalten“ (einfarbiges rotes Quadrat)](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Symbol „Löschen“](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Symbol „Speichern“](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Symbol "Rückwärts navigieren"](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>Codehierarchiepalette
 
@@ -380,4 +381,4 @@ ms.locfileid: "85906117"
 
 |Warnung|Warnung|Abgeschlossen|Beenden|
 |-|-|-|-|
-|![Warnungssymbol](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![Warnungssymbol](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![Symbol "Abgeschlossen"](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![Stoppsymbol](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|
+|![Warnungssymbol](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![Warnungssymbol](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![Symbol "Abgeschlossen"](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![Symbol „Anhalten“ (einfarbiger roter Kreis mit einem weißen Quadrat in der Mitte)](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|
