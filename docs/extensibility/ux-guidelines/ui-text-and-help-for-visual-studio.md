@@ -1,5 +1,6 @@
 ---
 title: Benutzeroberflächen Text und-Hilfe für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Benutzeroberflächen Text und die Terminologie, die in den Hilfe Informationen für Visual Studio verwendet werden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698294"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668598"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Benutzeroberflächentext und -hilfe für Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI-Text und-Terminologie
@@ -60,11 +61,11 @@ ms.locfileid: "80698294"
 #### <a name="supplemental-instructions"></a>Ergänzende Anweisungen
  Ergänzende Anweisungen bieten zusätzliche Informationen, die dem Benutzer beim verstehen von Steuerelementen oder Steuerelement Gruppierungen helfen. Dies könnte auch Hinweis Text enthalten, der erforderlich ist, um zu verstehen, welches Format das Eingabe Steuerelement erwartet. Verwenden Sie ergänzende Anweisungen sparsam. Reservieren Sie Sie für Fälle, in denen es wahrscheinlich ist, dass der Benutzer die Auswirkungen der gewünschten Auswahl nicht vollständig versteht.
 
- ![Ergänzender Text in Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![Screenshot mit der Schaltfläche "Internet Explorer-Optionen" mit zusätzlichem Text unterhalb der Schaltfläche, in der die Auswirkungen der Änderung der Options Einstellungen beschrieben werden.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Ergänzender Text in Visual Studio**
 
- ![Ergänzender Text in Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ ![Screenshot des Dialog Felds "Quell Code Verwaltung auswählen" in Visual Studio mit zusätzlichem Text, in dem die einzelnen Optionen für das Quell Code Verwaltungssystem beschrieben werden.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Ergänzender Text in Visual Studio**
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698294"
 
 - Anstelle der Steuerelement Bezeichnung:
 
-     ![Hinweistext in Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     ![Screenshot eines Dropdown-Steuer Elements mit Hinweis Text anstelle der Steuerelement Bezeichnung, das "Search Projektmappen-Explorer (STRG +;)") liest.](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - Mit einem Verb, das Anweisungen bietet:
 
-     ![Hinweistext in Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     ![Screenshot eines Textfelds mit dem Hinweis Text im-Steuerelement, das "Name eingeben" lautet.](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - Mit Text, der einen erforderlichen Eintrag angibt:
 
-     ![Hinweistext in Visual Studio](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
+     ![Screenshot eines Textfelds mit Hinweis Text im Steuerelement, das " \< Required \> " liest.](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>Wasserzeichen Text
  Auf einer leeren Entwurfs Oberfläche sollte der Text angeben, was zu tun ist, und Links zum Öffnen anderer verwandter Fenster bereitstellen, falls dies erforderlich ist:
@@ -155,7 +156,7 @@ ms.locfileid: "80698294"
 
 ### <a name="common-terminology"></a>Allgemeine Terminologie
 
-|Begriff|Erklärung|Comment|
+|Begriff|Erklärung|Kommentar|
 |----------|-----------------|-------------|
 |Anmelden/Abmelden|Verben verwendeten Synonym mit dem Web zum Darstellen der Authentifizierung in einer webeigenschaft. Innerhalb von Clients verwenden wir dies einmal als Konzept der obersten Ebene für die Anmeldung und aus der IDE-Benutzer Verbindung, die eine Identität der obersten Ebene darstellt, die Funktionen auf höherer Ebene bereitstellt, z. b. Roaming und Lizenzierung, die nicht mit allen anderen Verbindungen verfügbar sind.|Der IDE-Benutzer ist die einzige Funktion, die ein Verb für das Anmelden/Abmelden darstellen sollte, da Sie den IDE-Benutzer der obersten Ebene darstellt.|
 |Verbindung herstellen/trennen|Verwenden Sie an Orten, an denen eine Funktion eine einzelne Verbindung mit einem Onlinedienst beibehält.|Server-Explorer, in dem Sie jeweils nur eine aktive Azure-Verbindung haben können, ist ein Beispiel für Connect/Disconnect.|
@@ -302,7 +303,7 @@ ms.locfileid: "80698294"
 
  Insbesondere sucht die **vbdialogboxparam** -Funktion in der Dialogfeld Vorlage nach einer Schaltfläche mit der ID **IDHELP** (9) oder der Bezeichnung " **Hilfe** " oder **&Hilfe**. Wenn eine Hilfe Schaltfläche gefunden wird, wird Sie ausgeblendet, und der **WS_EX_CONTEXTHELP** Stil **wird dem Dialog** Feld hinzugefügt. Schaltfläche in der Titelleiste des Dialog Felds.
 
- Wenn das Dialogfeld erstellt wird, wird das Dialogfeld proc auf einen Stapel übertragen und das Dialogfeld mit einem Vorverarbeitungs **Dialogfeld mit dem Namen dialogpreproc**aufgerufen. Wenn **?** auf die Schaltfläche wird geklickt, es wird eine **WM_SYSCOMMAND** **SC_CONTEXTHELP** an den Dialog gesendet. Der **dialogpreproc** erfasst diesen Befehl und ändert ihn in eine **WM_HELP** Nachricht, die an die ursprüngliche Dialogfeld Prozedur übergeben wird.
+ Wenn das Dialogfeld erstellt wird, wird das Dialogfeld proc auf einen Stapel übertragen und das Dialogfeld mit einem Vorverarbeitungs **Dialogfeld mit dem Namen dialogpreproc** aufgerufen. Wenn **?** auf die Schaltfläche wird geklickt, es wird eine **WM_SYSCOMMAND** **SC_CONTEXTHELP** an den Dialog gesendet. Der **dialogpreproc** erfasst diesen Befehl und ändert ihn in eine **WM_HELP** Nachricht, die an die ursprüngliche Dialogfeld Prozedur übergeben wird.
 
  Die meisten von der Umgebung erstellten Dialogfelder haben eine Schaltfläche "Hilfe" im Dialogfeld. Wenn das Dialogfeld angezeigt wird, wird die Schaltfläche Hilfe automatisch ausgeblendet, und nur die Schaltfläche **?** die Schaltfläche funktioniert. Wenn **?** Wenn die Schaltfläche in Windows entfernt oder geändert wird, können Sie mit dieser Lösung schnell zu den ursprünglichen Hilfe Schaltflächen zurück wechseln.
 
@@ -316,7 +317,7 @@ ms.locfileid: "80698294"
 
 - Das Dialogfeld ist nicht in einem anderen Dialogfeld eingebettet.
 
-  Wenn sich das Dialogfeld in msenv befindet und nicht **vbdialogboxparam**verwendet, sollten Sie die Nutzung von **vbdialogboxparam** vor der Implementierung Ihres eigenen Handlers untersuchen.
+  Wenn sich das Dialogfeld in msenv befindet und nicht **vbdialogboxparam** verwendet, sollten Sie die Nutzung von **vbdialogboxparam** vor der Implementierung Ihres eigenen Handlers untersuchen.
 
 ##### <a name="dialogs-created-through-other-packages"></a>Durch andere Pakete erstellte Dialoge
  Sie können Ihre eigene Lösung für Dialogfelder implementieren, die sich außerhalb von msenv befinden. Erwägen Sie für eine freigegebene Dialogfeld Klasse in Ihrem VSPackage die Verschiebung der Schaltfläche auf die Titelleiste oder die Implementierung eines Handlers für die einzelnen Dialogfelder. Der folgende Code ist ein Skelett einer Implementierung, die Ihnen beim Einstieg hilft:
@@ -420,7 +421,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Schriftarten und Formatierung für Visual Studio](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Layout für Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Benachrichtigungen und Fortschritt für Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

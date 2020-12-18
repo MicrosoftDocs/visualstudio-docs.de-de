@@ -8,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905978"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668637"
 ---
 # <a name="open-folder-extensibility"></a>Erweiterbarkeit „Ordner öffnen“
 
@@ -51,7 +51,7 @@ Funktionen, die die folgenden Typen verwenden, müssen neue APIs einbinden, um �
 
 ## <a name="feedback-comments-issues"></a>Feedback, Kommentare, Issues
 
-„Ordner öffnen“ und die `Microsoft.VisualStudio.Workspace.*`-APIs befinden sich in aktiver Entwicklung. Wenn unerwartetes Verhalten auftritt, sehen Sie sich die bekannten Probleme für das betreffende Release an. Die [Entwicklercommunity](https://developercommunity.visualstudio.com) ist der empfohlene Ort für Abstimmungen und das Erstellen von Issues. Für jegliches Feedback empfehlen wir dringend eine ausführliche Beschreibung Ihres Problems. Geben Sie die Visual Studio-Version an, für die Sie entwickeln, die APIs, die Sie verwenden (sowohl die, die Sie implementiert haben, als auch die, mit dem Sie interagieren), das erwartete Ergebnis und das tatsächliche Ergebnis. Fügen Sie nach Möglichkeit ein Speicherabbild des devenv.exe-Prozesses bei. Verwenden Sie die Problemnachverfolgung von GitHub (Issues), um Feedback dazu sowie zu zugehöriger Dokumentation zu geben.
+„Ordner öffnen“ und die `Microsoft.VisualStudio.Workspace.*`-APIs befinden sich in aktiver Entwicklung. Wenn unerwartetes Verhalten auftritt, sehen Sie sich die bekannten Probleme für das betreffende Release an. Die [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) ist der empfohlene Ort für Abstimmungen und das Erstellen von Issues. Für jegliches Feedback empfehlen wir dringend eine ausführliche Beschreibung Ihres Problems. Geben Sie die Visual Studio-Version an, für die Sie entwickeln, die APIs, die Sie verwenden (sowohl die, die Sie implementiert haben, als auch die, mit dem Sie interagieren), das erwartete Ergebnis und das tatsächliche Ergebnis. Fügen Sie nach Möglichkeit ein Speicherabbild des devenv.exe-Prozesses bei. Verwenden Sie die Problemnachverfolgung von GitHub (Issues), um Feedback dazu sowie zu zugehöriger Dokumentation zu geben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,5 +1,6 @@
 ---
 title: 'Neue Projektgenerierung: unter der Haube, Teil 1 | Microsoft-Dokumentation'
+description: Sehen Sie sich an, was in der integrierten Entwicklungsumgebung (IDE) von Visual Studio passiert, wenn Sie Ihren eigenen Projekttyp erstellen (Teil 1 von 2).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aca35e85e57a07a2b411a23d81b99cff9983b9c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707051"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668884"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1
 Haben Sie schon einmal gedacht, wie Sie Ihren eigenen Projekttyp erstellen? Fragen Sie sich, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen? Werfen wir einen Blick auf die Praxis, und sehen wir uns an, was tatsächlich passiert.
@@ -36,13 +37,13 @@ Haben Sie schon einmal gedacht, wie Sie Ihren eigenen Projekttyp erstellen? Frag
 ## <a name="the-new-project-dialog-box"></a>Dialog Feld "Neues Projekt"
  Alles beginnt, wenn Sie einen Projekttyp für ein neues Projekt auswählen. Klicken Sie zunächst im Menü **Datei** auf **Neues Projekt** . Das Dialogfeld **Neues Projekt** wird angezeigt und sieht in etwa wie folgt aus:
 
- ![Dialogfeld "Neues Projekt"](../../extensibility/internals/media/newproject.gif "NewProject")
+ ![Screenshot: Dialogfeld „Neues Projekt“](../../extensibility/internals/media/newproject.gif)
 
- Das sehen wir uns etwas genauer an. Die **Projekttypen** Struktur listet die verschiedenen Projekttypen auf, die Sie erstellen können. Wenn Sie einen **Projekttyp wie Visual c#-Fenster**auswählen, wird eine Liste mit Anwendungs Vorlagen angezeigt, die Ihnen den Einstieg erleichtern. **Installierte Vorlagen von Visual Studio** werden von Visual Studio installiert und sind für alle Benutzer des Computers verfügbar. Neue Vorlagen, die Sie erstellen oder sammeln, können **meinen Vorlagen** hinzugefügt werden und sind nur für Sie verfügbar.
+ Das sehen wir uns etwas genauer an. Die **Projekttypen** Struktur listet die verschiedenen Projekttypen auf, die Sie erstellen können. Wenn Sie einen **Projekttyp wie Visual c#-Fenster** auswählen, wird eine Liste mit Anwendungs Vorlagen angezeigt, die Ihnen den Einstieg erleichtern. **Installierte Vorlagen von Visual Studio** werden von Visual Studio installiert und sind für alle Benutzer des Computers verfügbar. Neue Vorlagen, die Sie erstellen oder sammeln, können **meinen Vorlagen** hinzugefügt werden und sind nur für Sie verfügbar.
 
- Wenn Sie eine Vorlage wie die **Windows-Anwendung**auswählen, wird im Dialogfeld eine Beschreibung des Anwendungs Typs angezeigt. in diesem Fall **ein Projekt zum Erstellen einer Anwendung mit einer Windows-Benutzeroberfläche**.
+ Wenn Sie eine Vorlage wie die **Windows-Anwendung** auswählen, wird im Dialogfeld eine Beschreibung des Anwendungs Typs angezeigt. in diesem Fall **ein Projekt zum Erstellen einer Anwendung mit einer Windows-Benutzeroberfläche**.
 
- Am unteren Rand des Dialog Felds **Neues Projekt** sehen Sie mehrere Steuerelemente, die weitere Informationen sammeln. Die Steuerelemente, die angezeigt werden, hängen vom Projekttyp ab, aber im Allgemeinen enthalten Sie ein Textfeld für den Projekt **Namen** , ein Textfeld für den **Speicherort** und eine zugehörige Schaltfläche **zum** **Durchsuchen** , das Textfeld Projektmappenname und das zugehörige **Solution Name**
+ Am unteren Rand des Dialog Felds **Neues Projekt** sehen Sie mehrere Steuerelemente, die weitere Informationen sammeln. Die Steuerelemente, die angezeigt werden, hängen vom Projekttyp ab, aber im Allgemeinen enthalten Sie ein Textfeld für den Projekt **Namen** , ein Textfeld für den **Speicherort** und eine zugehörige Schaltfläche **zum** **Durchsuchen** , das Textfeld Projektmappenname und das zugehörige 
 
 ## <a name="populating-the-new-project-dialog-box"></a>Auffüllen des Dialog Felds "Neues Projekt"
  Wo erhält das Dialogfeld " **Neues Projekt** " seine Informationen? An dieser Stelle gibt es zwei Mechanismen, von denen eine als veraltet markiert ist. Im Dialogfeld **Neues Projekt** werden die von beiden Mechanismen erhaltenen Informationen kombiniert und angezeigt.
@@ -63,7 +64,7 @@ devenv /installvstemplates
  Die Position und die Namen der **Projekttypen** Stamm Knoten, wie z. b. **Visual c#** und **andere Sprachen**, werden durch System Registrierungseinträge bestimmt. Die Organisation der untergeordneten Knoten, z. b. **Datenbank** und **intelligentes Gerät**, spiegelt die Hierarchie der Ordner wider, die die entsprechenden VSTEMPLATE-Dateien enthalten. Sehen wir uns zuerst die Stamm Knoten an.
 
 #### <a name="project-type-root-nodes"></a>Projekttyp-Stamm Knoten
- Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] initialisiert wird, werden die untergeordneten Schlüssel des System Registrierungsschlüssels HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0\newprojecttemplates\templatedirs durchlaufen, um die Stamm Knoten der **Projekttypen** Struktur zu erstellen und zu benennen. Diese Informationen werden für die spätere Verwendung zwischengespeichert. Sehen Sie sich den Schlüssel templatedirs \\ {FAE04EC1-301F-11d3-BF4B-00C04F79EFBC} \\ /1 an. Jeder Eintrag ist eine VSPackage-GUID. Der Name des unter Schlüssels (/1) wird ignoriert, aber sein vorhanden sein weist darauf hin, dass es sich hierbei um einen **Projekttypen** Stamm Knoten handelt. Ein Stamm Knoten kann wiederum mehrere Unterschlüssel aufweisen, die seine Darstellung in der **Projekttypen** Struktur steuern. Sehen wir uns einige davon an.
+ Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] initialisiert wird, werden die untergeordneten Schlüssel des System Registrierungsschlüssels durchlaufen, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs, die Stamm Knoten der **Projekttypen** Struktur zu erstellen und zu benennen. Diese Informationen werden für die spätere Verwendung zwischengespeichert. Sehen Sie sich den Schlüssel templatedirs \\ {FAE04EC1-301F-11d3-BF4B-00C04F79EFBC} \\ /1 an. Jeder Eintrag ist eine VSPackage-GUID. Der Name des unter Schlüssels (/1) wird ignoriert, aber sein vorhanden sein weist darauf hin, dass es sich hierbei um einen **Projekttypen** Stamm Knoten handelt. Ein Stamm Knoten kann wiederum mehrere Unterschlüssel aufweisen, die seine Darstellung in der **Projekttypen** Struktur steuern. Sehen wir uns einige davon an.
 
 ##### <a name="default"></a>(Standardwert)
  Dies ist die Ressourcen-ID der lokalisierten Zeichenfolge, die den Stamm Knoten benennt. Die Zeichen folgen Ressource befindet sich in der von der VSPackage-GUID ausgewählten Satelliten-DLL.
@@ -88,16 +89,16 @@ devenv /installvstemplates
  Je niedriger die Zahl der Priorität ist, desto höher ist die Position in der Struktur.
 
 ##### <a name="developeractivity"></a>Developeractivity
- Wenn dieser Unterschlüssel vorhanden ist, wird die Position des Stamm Knotens über das Dialogfeld Entwicklereinstellungen gesteuert. Beispiel:
+ Wenn dieser Unterschlüssel vorhanden ist, wird die Position des Stamm Knotens über das Dialogfeld Entwicklereinstellungen gesteuert. Ein auf ein Objekt angewendeter
 
  Developeractivity REG_SZ VC #
 
- Gibt an, dass Visual c# ein Stamm Knoten sein wird, wenn Visual Studio für die Entwicklung festgelegt ist [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Andernfalls wird es sich um einen untergeordneten Knoten **anderer Sprachen**handeln.
+ Gibt an, dass Visual c# ein Stamm Knoten sein wird, wenn Visual Studio für die Entwicklung festgelegt ist [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Andernfalls wird es sich um einen untergeordneten Knoten **anderer Sprachen** handeln.
 
 ##### <a name="folder"></a>Ordner
  Wenn dieser Unterschlüssel vorhanden ist, wird der Stamm Knoten zu einem untergeordneten Knoten des angegebenen Ordners. Unter dem Schlüssel wird eine Liste möglicher Ordner angezeigt.
 
- HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\newprojecttemplates\pseudofolders
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
 
  Der Eintrag Datenbankprojekte enthält z. b. einen Ordner Schlüssel, der mit dem anderen Projekttypen Eintrag in pseudofolders übereinstimmt. Daher sind **Datenbankprojekte** in der **Projekttypen** Struktur ein untergeordneter Knoten **anderer Projekttypen**.
 
@@ -106,11 +107,11 @@ devenv /installvstemplates
 
  Für Visual Studio mit c#-Entwicklereinstellungen sieht die **Projekttypen** Struktur etwa wie folgt aus:
 
- ![Projekttypen](../../extensibility/internals/media/projecttypes.png "Projecttypes")
+ ![Screenshot der Projekttypen-Ordnerstruktur in Visual Studio mit c#-Entwicklereinstellungen.](../../extensibility/internals/media/projecttypes.png)
 
  Der entsprechende ProjectTemplates-Ordner sieht wie folgt aus:
 
- ![Projektvorlagen](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
+ ![Screenshot der Projektvorlagen-Ordnerstruktur in Visual Studio mit c#-Entwicklereinstellungen.](../../extensibility/internals/media/projecttemplates.png)
 
  Wenn das Dialogfeld **Neues Projekt** geöffnet wird, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durchläuft den Ordner ProjectTemplates und erstellt seine Struktur in der **Projekttypen** Struktur mit einigen Änderungen neu:
 
@@ -208,7 +209,7 @@ devenv /installvstemplates
 
 10. Öffnen Sie das Dialogfeld **Neues Projekt** , und erweitern Sie den **Visual c#** -Projekt Knoten.
 
-    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
+    ![Screenshot der Projekttypen-Ordnerstruktur im Dialogfeld "Neues Projekt", wobei "myprojectnode" unter dem erweiterten Visual c#-Projekt Knoten hervorgehoben ist.](../../extensibility/internals/media/myprojectnode.png)
 
     **Myprojectnode** wird als untergeordneter Knoten von Visual c# direkt unterhalb des Windows-Knotens angezeigt.
 

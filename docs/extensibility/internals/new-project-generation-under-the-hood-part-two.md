@@ -1,5 +1,6 @@
 ---
 title: 'Neue Projektgenerierung: Teil 2 | Microsoft-Dokumentation'
+description: Sehen Sie sich an, was in der integrierten Entwicklungsumgebung (IDE) von Visual Studio passiert, wenn Sie einen eigenen Projekttyp erstellen (Teil 2 von 2).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e45c9643a1fd2e6dcf9d5520fbb2982736b5109
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707022"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668845"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 2
 
-In [der neuen Projektgenerierung: im Teil der Hintergrundseite](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) haben wir gesehen, wie das Dialogfeld " **Neues Projekt** " ausgefüllt wird. Angenommen, Sie haben eine **Visual c#-Windows-Anwendung**ausgewählt, die Textfelder **Name** und **Speicherort** ausgefüllt und auf OK geklickt.
+In [der neuen Projektgenerierung: im Teil der Hintergrundseite](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) haben wir gesehen, wie das Dialogfeld " **Neues Projekt** " ausgefüllt wird. Angenommen, Sie haben eine **Visual c#-Windows-Anwendung** ausgewählt, die Textfelder **Name** und **Speicherort** ausgefüllt und auf OK geklickt.
 
 ## <a name="generating-the-solution-files"></a>Erstellen der Projektmappendateien
  Die Auswahl einer Anwendungs Vorlage bewirkt, dass [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die entsprechende VSTEMPLATE-Datei entzippt und geöffnet wird und eine Vorlage zum Interpretieren der XML-Befehle in dieser Datei gestartet wird. Diese Befehle erstellen Projekte und Projekt Elemente in der neuen oder vorhandenen Projekt Mappe.
@@ -62,13 +63,13 @@ namespace Simple
 }
 ```
 
- Eine vollständige Liste der Vorlagenparameter finden Sie unter [Vorlagenparameter](../../ide/template-parameters.md).
+ Eine umfassende Liste der Vorlagen Parameter finden Sie unter [Vorlagen Parameter](../../ide/template-parameters.md).
 
 ## <a name="a-look-inside-a-vstemplate-file"></a>Ein-Blick innerhalb eines. VSTEMPLATE-Datei
  Eine einfache VSTEMPLATE-Datei hat dieses Format.
 
 ```xml
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
     <TemplateContent>
@@ -90,13 +91,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">
       Resources.resx
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
       Resources.Designer.cs
     </ProjectItem>
     <ProjectItem TargetFileName="Properties\Settings.settings">
       Settings.settings
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
       Settings.Designer.cs
     </ProjectItem>
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">
@@ -118,7 +119,7 @@ namespace Simple
 
  Die resultierende Windows-Anwendungsordner Struktur sieht wie folgt aus:
 
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
+ ![Screenshot der Windows-Anwendungsordner Struktur für die "Simple"-Lösung in Visual Studio Projektmappen-Explorer.](../../extensibility/internals/media/simplesolution.png)
 
  Das erste und einzige \<Project> Tag in der Vorlage lautet:
 
