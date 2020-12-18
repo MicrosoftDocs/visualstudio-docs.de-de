@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Hier erhalten Sie weitere Informationen zu Veröffentlichungsoptionen für Ihre App mit dem Veröffentlichungstool.
 ms.custom:
 - SEO-VS-2020
-- contperfq1
+- contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434492"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683919"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Stellen Sie Ihre App in einem Ordner, in IIS, in Azure oder einem anderen Ziel bereit.
 
@@ -181,7 +181,7 @@ Weitere Hilfe zum Auswählen der Einstellungen finden Sie in den folgenden Theme
 
 Mit einem FTP/FTPS-Server können Sie die Anwendung auf einem anderen Server als Azure bereitstellen. Sie können die Webanwendung in einem Dateisystem oder auf einem anderen Server (Internet oder Intranet) bereitstellen, auf das bzw. den Sie Zugriff haben, einschließlich Ziele in anderen Clouddiensten. Es funktioniert mit Web Deploy (Dateien oder ZIP) und FTP.
 
-Wenn Sie einen FTP/FTPS-Server auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung** , einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können folgendes Verhalten auf der Registerkarte **Einstellungen** steuern:
+Wenn Sie einen FTP/FTPS-Server auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung**, einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können folgendes Verhalten auf der Registerkarte **Einstellungen** steuern:
 
 - Die Konfiguration, die Sie bereitstellen möchten.
 - Ob vorhandene Dateien aus dem Ziel entfernt werden.
@@ -200,7 +200,7 @@ Sie können in Visual Studio beliebig viele FTP/FTPS-Bereitstellungsprofile erst
 
 Mit einem IIS-Webserver können Sie die Anwendung auf einem anderen Webserver als Azure bereitstellen. Sie können die Webanwendung auf einem IIS-Server (Internet oder Intranet) bereitstellen, auf den Sie Zugriff haben, einschließlich solchen in anderen Clouddiensten. Der Einsatz in Verbindung mit Web Deploy oder einem Web Deploy-Paket ist möglich.
 
-Wenn Sie einen IIS-Webserver auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung** , einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können folgendes Verhalten auf der Registerkarte **Einstellungen** steuern:
+Wenn Sie einen IIS-Webserver auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung**, einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können folgendes Verhalten auf der Registerkarte **Einstellungen** steuern:
 
 - Die Konfiguration, die Sie bereitstellen möchten.
 - Ob vorhandene Dateien aus dem Ziel entfernt werden.
@@ -221,7 +221,7 @@ Weitere Informationen zur Problembehandlung von ASP.NET Core in IIS finden Sie u
 
 ## <a name="import-profile"></a>Profil importieren
 
-Sie können ein Profil beim Veröffentlichen in IIS oder Azure App Service importieren. Sie können die Bereitstellung mithilfe einer *Datei mit Veröffentlichungseinstellungen* ( *\*.publishsettings* ) konfigurieren. Eine Veröffentlichungseinstellungsdatei wird von IIS oder Azure App Service erstellt. Sie können sie aber auch manuell erstellen und dann in Visual Studio importieren.
+Sie können ein Profil beim Veröffentlichen in IIS oder Azure App Service importieren. Sie können die Bereitstellung mithilfe einer *Datei mit Veröffentlichungseinstellungen* ( *\*.publishsettings*) konfigurieren. Eine Veröffentlichungseinstellungsdatei wird von IIS oder Azure App Service erstellt. Sie können sie aber auch manuell erstellen und dann in Visual Studio importieren.
 
 Die Verwendung einer Datei mit Veröffentlichungseinstellungen kann die Bereitstellungskonfiguration vereinfachen und hat in einer Teamumgebung Vorteile gegenüber der manuellen Konfiguration eines einzelnen Bereitstellungsprofils.
 
