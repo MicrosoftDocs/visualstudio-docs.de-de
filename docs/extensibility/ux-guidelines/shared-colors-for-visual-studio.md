@@ -1,5 +1,6 @@
 ---
 title: Freigegebene Farben für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mithilfe allgemeiner Visual Studio-shellelemente und-Designs ihre eigene benutzerdefinierte Benutzeroberfläche entwerfen, die mit der Visual Studio-Umgebung konsistent ist.
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699928"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668910"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Freigegebene Farben für Visual Studio
 Wenn Sie die Benutzeroberfläche entwerfen, die allgemeine Visual Studio-shellelemente verwendet, oder wenn Sie möchten, dass das Schnittstellen Element mit ähnlichen Features konsistent ist, verwenden Sie vorhandene Tokennamen in Paket Definitions Dateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.
@@ -1333,7 +1334,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
  **Dropdown-Schaltfläche der Befehlsleiste: Hover-Zustand**
 
-![Befehls leisten-Dropdown-Schaltfläche bei Hover](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Befehls leisten-Dropdown-Schaltfläche bei Hover
+![Dropdown Schaltfläche für Befehls leisten-Kombinations Feld bei Hover](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Befehls leisten-Dropdown-Schaltfläche bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1342,7 +1343,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 **Befehls leisten-Dropdown Liste: Hover-Zustand**
 
- ![Befehls leisten-Dropdown Liste bei Hover](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Befehls leisten-Dropdown Liste bei Hover
+ ![Dropdown Liste der Kombinations Felder der Befehlsleiste bei Hover](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Befehls leisten-Dropdown Liste bei Hover
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1383,7 +1384,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 **Dropdown-Schaltfläche der Befehlsleiste: gedrückter Zustand**
 
-![Dropdown Schaltfläche für gedrückte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Dropdown Schaltfläche für gedrückte Befehlsleiste
+![Dropdown Schaltfläche für das Kombinations Feld der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Dropdown Schaltfläche für gedrückte Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -1403,7 +1404,7 @@ Eine Befehlsleistengruppe besteht aus einer Gruppe verwandter Befehlsleisten-Ste
 
 **Dropdown-Schaltfläche der Befehlsleiste: deaktivierter Zustand**
 
-![Dropdown Schaltfläche für deaktivierte Befehlsleiste](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Dropdown Schaltfläche für deaktivierte Befehlsleiste
+![Dropdown Schaltfläche für deaktiviertes Kombinations Feld der Befehlsleiste](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Dropdown Schaltfläche für deaktivierte Befehlsleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |

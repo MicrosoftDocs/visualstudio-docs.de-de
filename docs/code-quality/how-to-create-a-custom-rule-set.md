@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348813"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667883"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
@@ -53,7 +53,7 @@ Zum Erstellen eines benutzerdefinierten Regelsatzes können Sie einen integriert
 4. Wählen Sie **Öffnen** aus, um die Regeln im Regelsatz-Editor anzuzeigen.
 
 > [!NOTE]
-> Wenn Sie über ein .net Core-oder .NET Standard-Projekt verfügen, ist der Prozess ein wenig anders, da keine **Code Analyse** -Eigenschaften Registerkarte vorhanden ist. Führen Sie die Schritte zum [Kopieren eines vordefinierten Regelsatzes in das Projekt aus, und legen Sie ihn als aktiven Regelsatz fest](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Nachdem Sie einen Regelsatz kopiert haben, können Sie [ihn im Visual Studio-Regelsatz-Editor bearbeiten](working-in-the-code-analysis-rule-set-editor.md) , indem Sie ihn aus **Projektmappen-Explorer** öffnen.
+> Wenn Sie über ein .net Core-oder .NET Standard-Projekt verfügen, ist der Prozess ein wenig anders, da die Registerkarte **Code Analyse** in den Projekteigenschaften nicht die gleichen Optionen unterstützt. Führen Sie die Schritte zum [Kopieren eines vordefinierten Regelsatzes in das Projekt aus, und legen Sie ihn als aktiven Regelsatz fest](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Nachdem Sie einen Regelsatz kopiert haben, können Sie [ihn im Visual Studio-Regelsatz-Editor bearbeiten](working-in-the-code-analysis-rule-set-editor.md) , indem Sie ihn aus **Projektmappen-Explorer** öffnen.
 
 ## <a name="create-a-new-rule-set"></a>Erstellen eines neuen Regelsatzes
 
@@ -70,7 +70,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 ## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Erstellen eines benutzerdefinierten Regelsatzes aus mehreren Regelsätzen
 
 > [!NOTE]
-> Das folgende Verfahren gilt nicht für .net Core-Projekte, die nicht über eine Registerkarte für die **Code Analyse** Eigenschaft verfügen.
+> Das folgende Verfahren gilt nicht für .net Core-oder .NET Standard-Projekte, die die gleichen Funktionen auf der Registerkarte " **Code Analyse** Eigenschaft" nicht unterstützen.
 
 1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften** aus.
 
@@ -138,7 +138,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 ## <a name="name-and-description"></a>Name und Beschreibung
 
-Um den anzeigen Amen eines Regelsatzes zu ändern, der im Editor geöffnet ist, öffnen Sie das **Eigenschaften** Fenster, **View** indem Sie  >  in der Menüleiste die Option **Eigenschaften Fenster** anzeigen auswählen. Geben Sie den anzeigen Amen in das Feld **Name** ein. Sie können auch eine Beschreibung für den Regelsatz eingeben.
+Um den anzeigen Amen eines Regelsatzes zu ändern, der im Editor geöffnet ist, öffnen Sie das **Eigenschaften** Fenster, indem Sie  >  in der Menüleiste die Option **Eigenschaften Fenster** anzeigen auswählen. Geben Sie den anzeigen Amen in das Feld **Name** ein. Sie können auch eine Beschreibung für den Regelsatz eingeben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

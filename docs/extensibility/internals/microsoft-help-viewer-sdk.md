@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168735"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668858"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -302,7 +302,7 @@ Legen Sie die folgenden Registrierungs Werte fest, um den F1-Fallback für den A
 
    - Für 64-Bit-Betriebssysteme:
 
-        HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\help\v2.3 \catalogs\visualstudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "Vendorcontent" = DWORD: 00000001
 
@@ -310,13 +310,13 @@ Legen Sie die folgenden Registrierungs Werte fest, um den F1-Fallback für den A
 
    - Für 32-Bit-Betriebssysteme:
 
-      HKEY_LOCAL_MACHINE \software\microsoft\help\v2.3 \partner<em> \\<Namespace \> </em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em> \\<Namespace \> </em>
 
       "Location" = "Offline"
 
    - Für 64-Bit-Betriebssysteme:
 
-      HKEY_LOCAL_MACHINE \software\wow6432node \microsoft\help\v2.3 \partner<em> \\<Namespace \> </em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em> \\<Namespace \> </em>
 
       "Location" = "Offline"
 
@@ -324,7 +324,7 @@ Legen Sie die folgenden Registrierungs Werte fest, um den F1-Fallback für den A
 
 Fügen Sie in der Registrierung ein neues DWORD mit dem Namen basenativenamespaces hinzu, und legen Sie seinen Wert auf 1 fest (unter dem Katalog Schlüssel, den Sie unterstützen möchten), um die grundlegende Native Namespace-Verarbeitung zu aktivieren.  Wenn Sie z. b. den Visual Studio-Katalog verwenden möchten, können Sie dem Pfad den Schlüssel hinzufügen:
 
-HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\help\v2.3 \catalogs\visualstudio15
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
 Beim Auftreten eines F1-Schlüssel Worts im Format Header/der-Methode wird das Zeichen "/" analysiert, was zu folgendem Konstrukt führt:
 
@@ -342,19 +342,19 @@ Fügen Sie den folgenden Registrierungsschlüssel und-Wert hinzu:
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER \software\microsoft\visualstudio\15.0\dynamische Hilfe**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER \software\microsoft\visualstudio\16.0\dynamische Hilfe**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
 
 ::: moniker-end
 
 Wert: Debugausgabe in Einzelhandelsdaten anzeigen: Ja
 
-Wählen Sie in der IDE unter dem Menü Element Hilfe die Option **Debughilfe Kontext**aus.
+Wählen Sie in der IDE unter dem Menü Element Hilfe die Option **Debughilfe Kontext** aus.
 
 **Inhalts Metadaten**
 
@@ -469,7 +469,7 @@ Hinweis: die von "{n}" notierten Variablen weisen Code Abhängigkeiten auf. Wenn
 | Logotitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | Dateiname | vs_logo_bk.gif |
 | Ablogodatamehc | vs_logo_wh.gif |
-| Feature: | **Haftungsausschluss** |
+| Feature: | **ERS** |
 | Verwendung: | Ein Satz von Fall spezifischen Haftungsausschlüsse für maschinell übersetzte Inhalte. |
 | **Element** | **Wert** |
 | MT_Editable | Dieser Artikel war maschinell übersetzt. Wenn Sie über eine Internet Verbindung verfügen, wählen Sie "dieses Thema Online anzeigen" aus, um diese Seite im bearbeitbaren Modus mit dem ursprünglichen englischen Inhalt gleichzeitig anzuzeigen. |
@@ -563,7 +563,7 @@ Die branding.js Datei enthält JavaScript, das von den Visual Studio Help Viewer
 
 Das Branding-Paket enthält eine Reihe von htm-Dateien, die Szenarien für die Kommunikation von Schlüsselinformationen zur Unterstützung von Inhalts Benutzern unterstützen, z. b. eine Startseite, die einen Abschnitt enthält, in dem beschrieben wird, welche Inhalts Sätze installiert werden, und Seiten, die dem Benutzer mitteilen, wenn Themen in der lokalen Diese HTM-Dateien können pro Produkt geändert werden.  ISO-Shell-Anbieter können das standardmäßige brandingpaket übernehmen und das Verhalten und den Inhalt dieser Seiten ändern, um Ihre Anforderungen zu erfassen.  Diese Dateien verweisen auf das jeweilige brandingpaket, damit die brandingtags den entsprechenden Inhalt aus der branding.xml Datei erhalten.
 
-|**Datei**|**Verwenden Sie**|**Quelle der angezeigten Inhalte**|
+|**File**|**Verwenden Sie**|**Quelle der angezeigten Inhalte**|
 |-|-|-|
 |homepage.htm|Dies ist eine Seite, auf der der aktuell installierte Inhalt und jede andere Meldung angezeigt wird, die dem Benutzer für seinen Inhalt zur Verfügung steht.  Diese Datei enthält das zusätzliche Meta-Daten Attribut "Microsoft.Help.ID" Content = "-1", mit dem dieser Inhalt am oberen Rand des lokalen Inhalts Inhaltsverzeichnis platziert wird.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, Tag \<HomePageTitle>|
@@ -597,7 +597,7 @@ Branding. CSS-Dateien enthalten Definitionen für die Visual Studio-Themen Präs
 
 Visual Studio-Inhalt zeigt ein Visual Studio-Logo und andere Grafiken an.  Die komplette Liste der Grafikdateien im Visual Studio Help Viewer-Branding-Paket ist unten dargestellt.
 
-|**Datei**|**Verwenden Sie**|**Beispiele**|
+|**File**|**Verwenden Sie**|**Beispiele**|
 |-|-|-|
 |clear.gif|Wird zum Rendering des redusible-Bereichs verwendet.||
 |footer_slice.gif|Footer-Präsentation||
@@ -741,11 +741,11 @@ Hiermit wird der Inhalts Speicher in der Registrierung definiert. Ändern Sie Vi
 
 So erstellen Sie eine isolierte Shellerweiterung:
 
-1. Wählen Sie in Visual Studio **unter Datei**die Option **Neues Projekt**aus, wählen Sie unter **andere Projekttypen** die Option **Erweiterbarkeit**aus, und wählen Sie dann die Option  **Visual Studio Shell isoliert**aus. Benennen Sie das Projekt `ContosoHelpShell` ), um ein Erweiterbarkeits Projekt zu erstellen, das auf der Vorlage für isolierte Shell von Visual Studio basiert.
+1. Wählen Sie in Visual Studio **unter Datei** die Option **Neues Projekt** aus, wählen Sie unter **andere Projekttypen** die Option **Erweiterbarkeit** aus, und wählen Sie dann die Option  **Visual Studio Shell isoliert** aus. Benennen Sie das Projekt `ContosoHelpShell` ), um ein Erweiterbarkeits Projekt zu erstellen, das auf der Vorlage für isolierte Shell von Visual Studio basiert.
 
 2. Öffnen Sie in Projektmappen-Explorer im Projekt contosohelpshellui im Ordner Ressourcen Dateien die Datei "ApplicationCommands. vsct". Stellen Sie sicher, dass diese Zeile auskommentiert ist (suchen Sie nach "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. Drücken Sie F5, um das **Debuggen**zu kompilieren und auszuführen. Wählen Sie in der experimentellen Instanz der isolierten Shell-IDE das Menü **Hilfe** aus. Stellen Sie sicher, dass die Befehle Hilfe **anzeigen**, **Hilfe Inhalt hinzufügen und entfernen**und **Hilfe Einstellung festlegen** angezeigt werden.
+3. Drücken Sie F5, um das **Debuggen** zu kompilieren und auszuführen. Wählen Sie in der experimentellen Instanz der isolierten Shell-IDE das Menü **Hilfe** aus. Stellen Sie sicher, dass die Befehle Hilfe **anzeigen**, **Hilfe Inhalt hinzufügen und entfernen** und **Hilfe Einstellung festlegen** angezeigt werden.
 
 4. Öffnen Sie in Projektmappen-Explorer im Projekt contoshelpshell im Ordner shellanpassung die Datei contosohelpshell. pkgdef. Fügen Sie die folgenden Zeilen hinzu, um den Hilfe Katalog von "Configuration Manager" zu definieren:
 
@@ -773,7 +773,7 @@ So erstellen Sie eine isolierte Shellerweiterung:
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6. Wählen Sie in Projektmappen-Explorer im Kontextmenü der Projekt Mappe condesohelpshell das Menü Element **Eigenschaften** aus. Wählen Sie unter **Konfigurations Eigenschaften**die Option **Configuration Manager**aus. Ändern Sie in der Spalte **Konfiguration** jeden "Debug"-Wert in "Release".
+6. Wählen Sie in Projektmappen-Explorer im Kontextmenü der Projekt Mappe condesohelpshell das Menü Element **Eigenschaften** aus. Wählen Sie unter **Konfigurations Eigenschaften** die Option **Configuration Manager** aus. Ändern Sie in der Spalte **Konfiguration** jeden "Debug"-Wert in "Release".
 
 7. Erstellen Sie die Projektmappe. Dadurch wird ein Satz von Dateien in einem releaseordner erstellt, der im nächsten Abschnitt verwendet wird.
 
@@ -785,7 +785,7 @@ So testen Sie dies wie bei Bereitstellung:
 
 3. Kopieren Sie den Inhalt aus dem Ordner "condesohelpshell" in den \\ Ordner "\Program Files (x86) \condeso\".
 
-4. Starten Sie den Registrierungs-Editor, indem Sie im **Startmenü** **Ausführen** und eingeben `Regedit` . Klicken Sie im Registrierungs-Editor auf **Datei**und dann auf **importieren**. Navigieren Sie zum Projektordner Conto sohelpshell. Wählen Sie im Unterordner conum sohelpshell den Eintrag Conto sohelpshell. reg aus.
+4. Starten Sie den Registrierungs-Editor, indem Sie im **Startmenü** **Ausführen** und eingeben `Regedit` . Klicken Sie im Registrierungs-Editor auf **Datei** und dann auf **importieren**. Navigieren Sie zum Projektordner Conto sohelpshell. Wählen Sie im Unterordner conum sohelpshell den Eintrag Conto sohelpshell. reg aus.
 
 5. Erstellen Sie einen Inhalts Speicher:
 
@@ -822,7 +822,7 @@ So testen Sie dies wie bei Bereitstellung:
 
 10. Starten Sie die Anwendung "appto" (über den Stamm der APP-Stamm Anwendung). Wählen Sie in der ISO-Shell das Menü Element **Hilfe** aus, und ändern Sie die **Einstellung Hilfe Einstellung festlegen** , um **lokale Hilfe zu verwenden**.
 
-11. Wählen Sie in der Shell das Menü Element **Hilfe** aus, und klicken Sie dann **auf Hilfe anzeigen**. Der lokale Help Viewer sollte starten. Wählen Sie die Registerkarte **Inhalt verwalten** aus. Wählen Sie unter **Installationsquelle**das **options** Feld Datenträger aus. Wählen Sie die Schaltfläche **...** aus, und navigieren Sie zum lokalen Ordner, der den Inhalt von "Configuration Manager" enthält (im obigen Schritt in den lokalen Ordner kopiert). Wählen Sie die Datei helpcontentsetup. MSHA aus. "Configuration Manager" sollte nun in der Buchauswahl als Buch angezeigt werden. Wählen Sie **Hinzufügen**aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** (unten rechts).
+11. Wählen Sie in der Shell das Menü Element **Hilfe** aus, und klicken Sie dann **auf Hilfe anzeigen**. Der lokale Help Viewer sollte starten. Wählen Sie die Registerkarte **Inhalt verwalten** aus. Wählen Sie unter **Installationsquelle** das **options** Feld Datenträger aus. Wählen Sie die Schaltfläche **...** aus, und navigieren Sie zum lokalen Ordner, der den Inhalt von "Configuration Manager" enthält (im obigen Schritt in den lokalen Ordner kopiert). Wählen Sie die Datei helpcontentsetup. MSHA aus. "Configuration Manager" sollte nun in der Buchauswahl als Buch angezeigt werden. Wählen Sie **Hinzufügen** aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** (unten rechts).
 
 12. Wählen Sie in der Configuration Manager-IDE die F1-Taste, um die F1-Funktionalität zu testen.
 
@@ -832,4 +832,4 @@ Informationen zur Laufzeit-API finden Sie unter [Windows-Hilfe-API](/previous-ve
 
 Weitere Informationen zur Verwendung der Hilfe-API finden Sie unter [Help Viewer-Codebeispiele](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Sie können Featurevorschläge an die [Entwickler Community](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)senden.
+Sie können Featurevorschläge an die [Entwickler Community](https://aka.ms/feedback/suggest?space=8)senden.

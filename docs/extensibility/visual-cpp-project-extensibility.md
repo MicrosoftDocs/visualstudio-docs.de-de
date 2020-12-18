@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9427895644686c5c3b50311c8a3ab3ee036a6f4
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 6ba78ff7d38d993394072aa9dd18a7a8fa8cbb9d
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862461"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668702"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ Projekt System-Erweiterbarkeit und toolsetintegration
 
@@ -72,7 +72,7 @@ Der `$(VCTargetsPath)` \\ Ordner " *Platforms* " \\ wird verwendet `$(Applicatio
 
 ### <a name="add-a-new-platform-toolset"></a>Hinzufügen eines neuen Platt Form Toolsets
 
-Um ein neues Toolset hinzuzufügen, z. b. "mytoolset" für die vorhandene Win32-Plattform, erstellen Sie einen *mytoolset* -Ordner unter `$(VCTargetsPath)` * \\ Plattformen \\ Win32 \\ platformtoolsets \\ *, und erstellen Sie *Toolset.* -Eigenschaften und *Toolset. targets* -Dateien darin.
+Um ein neues Toolset hinzuzufügen, z. b. "mytoolset" für die vorhandene Win32-Plattform, erstellen Sie einen *mytoolset* -Ordner unter `$(VCTargetsPath)` *\\ Plattformen \\ Win32 \\ platformtoolsets \\*, und erstellen Sie *Toolset.* -Eigenschaften und *Toolset. targets* -Dateien darin.
 
 Jeder Ordnername unter " *platformtoolsets* " wird im Dialogfeld " **Projekteigenschaften** " als verfügbares **Platt Form Toolset** für die angegebene Plattform angezeigt, wie hier gezeigt:
 
@@ -82,7 +82,7 @@ Erstellen Sie ähnliche *mytoolset* -Ordner und *Toolset.* -Eigenschaften und *T
 
 ### <a name="add-a-new-platform"></a>Neue Plattform hinzufügen
 
-Um eine neue Plattform hinzuzufügen, z. b. "myplatform", erstellen Sie einen *myplatform* -Ordner unter `$(VCTargetsPath)` * \\ \\ Plattformen*, und erstellen Sie *Platform. default.*-Eigenschaften, *Platform.*-Eigenschaften und *Platform. targets* -Dateien darin. Erstellen Sie außerdem den `$(VCTargetsPath)` Ordner * \\ Plattformen \\ *<strong><em>myplatform</em></strong>* \\ \\ platformtoolsets* , und erstellen Sie mindestens ein Toolset darin.
+Um eine neue Plattform hinzuzufügen, z. b. "myplatform", erstellen Sie einen *myplatform* -Ordner unter `$(VCTargetsPath)` *\\ \\ Plattformen*, und erstellen Sie *Platform. default.*-Eigenschaften, *Platform.*-Eigenschaften und *Platform. targets* -Dateien darin. Erstellen Sie außerdem den `$(VCTargetsPath)` Ordner *\\ Plattformen \\*<strong><em>myplatform</em></strong>*\\ \\ platformtoolsets* , und erstellen Sie mindestens ein Toolset darin.
 
 Alle Ordnernamen im Ordner " *Platforms* " für jeden `$(ApplicationType)` und werden `$(ApplicationTypeRevision)` in der IDE als verfügbare **Platt Form** Auswahl für ein Projekt angezeigt.
 
@@ -90,7 +90,7 @@ Alle Ordnernamen im Ordner " *Platforms* " für jeden `$(ApplicationType)` und w
 
 ### <a name="add-a-new-application-type"></a>Neuen Anwendungstyp hinzufügen
 
-Um einen neuen Anwendungstyp hinzuzufügen, erstellen Sie einen Ordner *myapplicationtype* unter `$(VCTargetsPath)` * \\ Anwendungstyp \\ * , und erstellen Sie darin eine *default. defaults* -Datei. Mindestens eine Revision ist für einen Anwendungstyp erforderlich. Erstellen Sie daher auch den Ordner " `$(VCTargetsPath)` * \\ \\ myapplicationtype \\ 1,0" des Anwendungs Typs* , und erstellen Sie darin eine " *defaults. defaults* "-Datei. Sie sollten auch einen `$(VCTargetsPath)` * \\ applicationtype-Ordner " \\ myapplicationtype \\ 1,0 \\ Platforms* " erstellen und mindestens eine Plattform darin erstellen.
+Um einen neuen Anwendungstyp hinzuzufügen, erstellen Sie einen Ordner *myapplicationtype* unter `$(VCTargetsPath)` *\\ Anwendungstyp \\* , und erstellen Sie darin eine *default. defaults* -Datei. Mindestens eine Revision ist für einen Anwendungstyp erforderlich. Erstellen Sie daher auch den Ordner " `$(VCTargetsPath)` *\\ \\ myapplicationtype \\ 1,0" des Anwendungs Typs* , und erstellen Sie darin eine " *defaults. defaults* "-Datei. Sie sollten auch einen `$(VCTargetsPath)` *\\ applicationtype-Ordner " \\ myapplicationtype \\ 1,0 \\ Platforms* " erstellen und mindestens eine Plattform darin erstellen.
 
 `$(ApplicationType)``$(ApplicationTypeRevision)`die Eigenschaften und sind in der Benutzeroberfläche nicht sichtbar. Sie werden in den Projektvorlagen definiert und können nach dem Erstellen des Projekts nicht mehr geändert werden.
 
@@ -100,19 +100,19 @@ Eine vereinfachte Struktur von Importen für Microsoft C++-Eigenschaften und Tar
 
 > `$(VCTargetsPath)`\\*Microsoft. cpp. default.-Eigenschaften* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft. Common.-Eigenschaften* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importbefore* \\ *Standard* \\ \* . *props* Eigenschaften \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importbefore* \\ *Standard* \\ \* .  Eigenschaften \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Anwendungstyp* \\ `$(ApplicationType)` \\ *Default.* -Eigenschaften \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Anwendungstyp* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.* -Eigenschaften \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Anwendungstyp* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Platt* \\ `$(Platform)` Formen \\ *Platform. default.* -Eigenschaften \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importafter* \\ *Standard* \\ \* . *props* Eigenschaften
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importafter* \\ *Standard* \\ \* .  Eigenschaften
 
 Windows-Desktop Projekte definieren nicht `$(ApplicationType)` , sodass Sie nur importieren
 
 > `$(VCTargetsPath)`\\*Microsoft. cpp. default.-Eigenschaften* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft. Common.-Eigenschaften* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importbefore* \\ *Standard* \\ \* . *props* Eigenschaften \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importbefore* \\ *Standard* \\ \* .  Eigenschaften \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platt* \\ `$(Platform)` Formen \\ *Platform. default.* -Eigenschaften \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importafter* \\ *Standard* \\ \* . *props* Eigenschaften
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Importafter* \\ *Standard* \\ \* .  Eigenschaften
 
 Wir verwenden die- `$(_PlatformFolder)` Eigenschaft, um die Speicher `$(Platform)` Orte der Platt Form Ordner zu speichern. Diese Eigenschaft ist
 
@@ -129,9 +129,9 @@ Die Eigenschaften Dateien werden in dieser Reihenfolge importiert:
 > `$(VCTargetsPath)`\\*Microsoft. cpp.-Eigenschaften* \
 &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.-Eigenschaften* \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft. cpp. Platform.-Eigenschaften* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Importbefore* \\ \* . *props* Eigenschaften \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Importbefore* \\ \* .  Eigenschaften \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platformtoolsets* \\ `$(PlatformToolset)` \\ *Toolset.* -Eigenschaften \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Importafter* \\ \* . *props* Eigenschaften
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Importafter* \\ \* .  Eigenschaften
 
 Die Targets-Dateien werden in dieser Reihenfolge importiert:
 
@@ -233,7 +233,7 @@ Wenn Sie sich die Ziele ansehen (z. b.), `_ClCompile` werden Sie feststellen, da
 <Target Name="ClCompile"/>
 ```
 
-Da das `ClCompile` Ziel leer ist, wird keine wirkliche Buildaktion ausgeführt, es sei denn, es wird von einem Toolset überschrieben. Die toolsetziele können das Ziel überschreiben `ClCompile` , d. h., Sie können `ClCompile` nach dem Importieren von *Microsoft. cppbuild. targets*eine andere Definition enthalten:
+Da das `ClCompile` Ziel leer ist, wird keine wirkliche Buildaktion ausgeführt, es sei denn, es wird von einem Toolset überschrieben. Die toolsetziele können das Ziel überschreiben `ClCompile` , d. h., Sie können `ClCompile` nach dem Importieren von *Microsoft. cppbuild. targets* eine andere Definition enthalten:
 
 ```xml
 <Target Name="ClCompile"
@@ -285,13 +285,13 @@ Wenn Sie eine neue Aufgabe für ein Buildtool erstellen müssen, können Sie ein
 
    - XAML-Aufgabe (eine benutzerdefinierte Buildregel)
 
-     Ein Beispiel für eine XAML-Aufgaben Deklaration finden Sie unter `$(VCTargetsPath)` \\ *buildcustomiationsmasm.xml* . Informationen \\ * *zu deren Verwendung finden Sie unter `$(VCTargetsPath)` \\ *buildcustomiationsmasm* \\ *. targets*.
+     Ein Beispiel für eine XAML-Aufgaben Deklaration finden Sie unter `$(VCTargetsPath)` \\ *buildcustomiationsmasm.xml* . Informationen \\ ** zu deren Verwendung finden Sie unter `$(VCTargetsPath)` \\ *buildcustomiationsmasm* \\ *. targets*.
 
    - [Codetask](../msbuild/msbuild-inline-tasks.md)
 
 1. Wenn Sie eine bessere Aufgaben Leistung wünschen oder nur komplexere Funktionen benötigen, verwenden Sie den regulären Prozess zum Schreiben von MSBuild- [Aufgaben](../msbuild/task-writing.md) .
 
-   Wenn nicht alle Eingaben und Ausgaben des Tools in der Befehlszeile des Tools aufgelistet sind, wie in den `CL` `MIDL` Fällen, und `RC` , und wenn Sie die automatische Nachverfolgung von Eingabe-und Ausgabedateien und TLog-Dateien erstellen möchten, leiten Sie Ihre Aufgabe von der- `Microsoft.Build.CPPTasks.TrackedVCToolTask` Klasse ab. Zurzeit gibt es in der Dokumentation für die [basistooltask](/dotnet/api/microsoft.build.utilities.tooltask) -Klasse keine Beispiele oder Dokumentation für die Details der- `TrackedVCToolTask` Klasse. Wenn dies ein besonderes Interesse wäre, fügen Sie Ihrer Stimme eine Anforderung auf [developercommunity.VisualStudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html)hinzu.
+   Wenn nicht alle Eingaben und Ausgaben des Tools in der Befehlszeile des Tools aufgelistet sind, wie in den `CL` `MIDL` Fällen, und `RC` , und wenn Sie die automatische Nachverfolgung von Eingabe-und Ausgabedateien und TLog-Dateien erstellen möchten, leiten Sie Ihre Aufgabe von der- `Microsoft.Build.CPPTasks.TrackedVCToolTask` Klasse ab. Zurzeit gibt es in der Dokumentation für die [basistooltask](/dotnet/api/microsoft.build.utilities.tooltask) -Klasse keine Beispiele oder Dokumentation für die Details der- `TrackedVCToolTask` Klasse. Wenn dies ein besonderes Interesse ist, fügen Sie Ihrer Stimme eine Anforderung in der [Entwickler Community](https://aka.ms/feedback/suggest?space=62)hinzu.
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Inkrementelle Builds und aktuelle Überprüfungen
 
@@ -308,7 +308,7 @@ Alternativ können Sie Sie mit dem-Task erstellen `WriteLinesToFile` . Sehen Sie
 
 ## <a name="tlog-files"></a>TLog-Dateien
 
-Es gibt drei Typen von TLog-Dateien: *Lesen*, *Schreiben*und *Befehlszeile*. Lese-und Schreibvorgänge. TLog-Dateien werden von inkrementellen Builds und der aktuellen Überprüfung in der IDE verwendet. Befehlszeilen-TLog-Dateien werden nur in inkrementellen Builds verwendet.
+Es gibt drei Typen von TLog-Dateien: *Lesen*, *Schreiben* und *Befehlszeile*. Lese-und Schreibvorgänge. TLog-Dateien werden von inkrementellen Builds und der aktuellen Überprüfung in der IDE verwendet. Befehlszeilen-TLog-Dateien werden nur in inkrementellen Builds verwendet.
 
 MSBuild stellt diese Hilfsklassen zum Lesen und Schreiben von TLog-Dateien bereit:
 
@@ -328,7 +328,7 @@ Ein **^** Caretzeichen () am Anfang einer Zeile gibt eine oder mehrere Quellen a
 
 Abhängigkeits Dateien werden nach den Quellen aufgelistet, jeweils in einer eigenen Zeile. Alle Dateinamen sind vollständige Pfade.
 
-Nehmen Sie beispielsweise an, dass sich Ihre Projekt Quellen in *F: \\ Test \\ ConsoleApplication1 \\ ConsoleApplication1*befinden. Wenn die Quelldatei *Class1. cpp*diese umfasst,
+Nehmen Sie beispielsweise an, dass sich Ihre Projekt Quellen in *F: \\ Test \\ ConsoleApplication1 \\ ConsoleApplication1* befinden. Wenn die Quelldatei *Class1. cpp* diese umfasst,
 
 ```cpp
 #include "stdafx.h" //precompiled header
@@ -353,7 +353,7 @@ Ein **^** Caretzeichen () am Anfang einer Zeile gibt eine oder mehrere Quellen a
 
 Die aus den Quellen erstellten Ausgabedateien müssen nach den Quellen, jeweils in einer eigenen Zeile, aufgeführt werden. Alle Dateinamen müssen vollständige Pfade sein.
 
-Für ein einfaches ConsoleApplication-Projekt, das über eine zusätzliche Quelldatei *Class1. cpp*verfügt, kann die Datei *Link. Write. 1. TLog* beispielsweise Folgendes enthalten:
+Für ein einfaches ConsoleApplication-Projekt, das über eine zusätzliche Quelldatei *Class1. cpp* verfügt, kann die Datei *Link. Write. 1. TLog* beispielsweise Folgendes enthalten:
 
 ```tlog
 ^F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CLASS1.OBJ|F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.OBJ|F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\STDAFX.OBJ
@@ -372,7 +372,7 @@ Die `CompileDesignTime` `Compile` in der Dokumentation zur Entwurfszeit Erstellu
 
 ### <a name="design-time-targets-for-intellisense-information"></a>Entwurfszeit Ziele für IntelliSense-Informationen
 
-Die Entwurfszeit Ziele, die in vcxproj-Projekten verwendet werden, sind in `$(VCTargetsPath)` \\ *Microsoft. cpp. designtime. targets*definiert.
+Die Entwurfszeit Ziele, die in vcxproj-Projekten verwendet werden, sind in `$(VCTargetsPath)` \\ *Microsoft. cpp. designtime. targets* definiert.
 
 Das `GetClCommandLines` Ziel sammelt Compileroptionen für IntelliSense:
 
