@@ -1,5 +1,7 @@
 ---
 title: Signieren von VSIX-Paketen | Microsoft-Dokumentation
+description: Informationen zum Signieren von Erweiterungsassemblys Der VSIX-Installer zeigt eine Meldung an, dass eine VSIX signiert ist, sowie Informationen über die Signatur selbst.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17179c35496fc19322c5bb951f4d04bc28e5d7bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9152e45b402294dfd0bbb41bfda2c685588f01e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700087"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716080"
 ---
 # <a name="signing-vsix-packages"></a>Signieren von VSIX-Paketen
 Erweiterungsassemblys müssen nicht signiert werden, bevor Sie in Visual Studio ausgeführt werden können. Dies ist jedoch eine bewährte Vorgehensweise.

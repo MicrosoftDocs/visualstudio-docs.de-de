@@ -1,5 +1,7 @@
 ---
 title: Bereitstellen von Rückgängigmachen für Designer | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Rückgängig-Unterstützung in Designern bereitstellen, entweder automatisch oder mithilfe von Features im Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699673"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715574"
 ---
 # <a name="supply-undo-support-to-designers"></a>Unterstützung für die Bereitstellung für Designer
 
@@ -29,7 +31,7 @@ Designer Implementierungen, die Unterstützung für die Rückgängig-Funktion be
 
 - Unterstützung für Persistenz und CodeDom durch Implementieren der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> -Klasse und der-  <xref:System.ComponentModel.Design.IComponentChangeService> Klasse.
 
-Weitere Informationen zum Schreiben von Designern mithilfe von .NET Framework finden Sie [unter Erweitern der Entwurfszeit Unterstützung](/previous-versions/37899azc(v=vs.140)).
+Weitere Informationen zum Schreiben von Designern mithilfe von .NET Framework finden Sie [unter Erweitern der Design-Time Unterstützung](/previous-versions/37899azc(v=vs.140)).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Bietet eine standardmäßige rückgängig-Infrastruktur durch:
 
@@ -99,8 +101,8 @@ Designer, die einen basierten rückgängigmechanismus implementieren, verfolgen 
 
 - Der Designer wählt das explizite Erstellen von rückgängig-Einheiten mithilfe der standardmäßigen Rückgängig-Komponente aus, die von einer Implementierung von <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> oder der Visual Studio-spezifischen Implementierung bereitgestellt <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> wird. diese wird von abgeleitet <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> und stellt außerdem eine Implementierung von <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> und bereit <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [Erweitern der Entwurfszeit Unterstützung](/previous-versions/37899azc(v=vs.140))
+- [Erweitern der Design-Time Unterstützung](/previous-versions/37899azc(v=vs.140))

@@ -1,5 +1,7 @@
 ---
 title: Zusammengesetzte Muster für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über wichtige zusammengesetzte Muster für Konsistenz in Visual Studio. Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114075"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715820"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unterschiedlichen Konfigurationen. Zu den wichtigsten zusammengesetzten Mustern in Visual Studio in Bezug auf die Konsistenz gehören:
@@ -68,10 +70,10 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 ### <a name="other-charting-considerations"></a>Weitere Überlegungen zu Diagramm
 
-#### <a name="color"></a>„Color“ (Farbe)
+#### <a name="color"></a>Farbe
  Es gibt eine bestimmte Palette von Diagramm Farben, die für die Verwendung in Visual Studio definiert sind. Die Palette ist für die Haupttypen der Farbblindheit zugänglich, und die Farben können auch dann unterschieden werden, wenn Sie als sehr schmale Farb Scheiben verwendet werden. Sie können diese Farben in beliebiger Kombination für beliebige Diagramm-oder Diagrammtypen in der Benutzeroberfläche verwenden. Sie müssen nicht alle sieben Farben verwenden, wenn Sie nicht die vielen unterschiedlichen Farben benötigen. Diese Farben wurden nicht für die Verwendung mit beliebigen Vordergrund Elementen entworfen. Platzieren Sie Text oder Symbole nicht oberhalb dieser Farben. Diese Farbtöne sollten hart codiert und für die Benutzeranpassung unter Extras **> Optionen** verfügbar gemacht werden (siehe verfügbar machen [von Farben für Endbenutzer](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
-|Swatch|Hex|RGB|
+|Muster|Hex|RGB|
 |------------|---------|---------|
 |![Farbmuster 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113178, 82|
 |![Farbmuster BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191, 63, 0|
@@ -161,7 +163,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
     - Durable
 
-    - Automatisch
+    - Automatic
 
     - Bei Bedarf
 
@@ -310,7 +312,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
  **Auswahl der Region (Box) in Visual Studio**
 
 #### <a name="text-selection-appearance"></a>Darstellung der Text Auswahl
- Die Farben, die für die aktive und inaktive Auswahl im Editor verwendet werden, können angepasst werden. Zum Anpassen der visuellen Darstellung des Editors kann ein Benutzer zu den **Tools > Optionen**wechseln und dann unter **Umgebung > Schriftarten und Farben > Text-Editor**suchen.
+ Die Farben, die für die aktive und inaktive Auswahl im Editor verwendet werden, können angepasst werden. Zum Anpassen der visuellen Darstellung des Editors kann ein Benutzer zu den **Tools > Optionen** wechseln und dann unter **Umgebung > Schriftarten und Farben > Text-Editor** suchen.
 
 ### <a name="graphical-selection"></a>Grafische Auswahl
 
@@ -437,9 +439,9 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 | Object | Auswahl |
 |--------|------------|
-| List | Zusammenhängenden |
-| List | Zusammenhang losen |
-| List | Region |
+| Liste | Zusammenhängenden |
+| Liste | Zusammenhang losen |
+| Liste | Region |
 
  Wenn Sie in einer Liste auf einmal klicken, wird die Zeile mit dem Klick angezeigt. Wenn der Benutzer auf eine Listen Zelle klickt, die eine direkte Bearbeitung unterstützt, wird die Zelle auch sofort für die direkte Bearbeitung aktiviert. Andernfalls wird die gesamte Zeile sofort ausgewählt und eine Hervorhebung angezeigt.
 
@@ -482,7 +484,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 |Dialog|Der Speicherort des Dialog Felds, wenn es verschoben wurde.<br /><br /> Die Ansicht, die der Benutzer zuletzt im Dialogfeld verwendet hat.|Beim Schließen des Dialog Felds<br /><br /> Wenn die Visual Studio-Sitzung beendet wird|Im Arbeitsspeicher<br /><br /> Registrierung in **HKEY_CURRENT_USER**|
 |Fenster|Größe und Position des Fensters|Wenn das Fenster geschlossen wird<br /><br /> Wenn sich der Visual Studio-Modus ändert<br /><br /> Wenn die Visual Studio-Sitzung beendet wird|Die **Benutzer Optionsdatei (. suo)** für das Projekt<br /><br /> Benutzerdefinierte Optionsdatei für Fenster Einstellungen|
 |Dokument|Die aktuelle Auswahl im Dokument.<br /><br /> Die Ansicht des Dokuments.<br /><br /> Die letzten Orte, die der Benutzer besucht hat.|Wenn das Dokument gespeichert wird|Die **Benutzer Optionsdatei (. suo)** für das Projekt|
-|Projekt|Verweise auf Dateien<br /><br /> Verweise auf Verzeichnisse auf dem Datenträger<br /><br /> Verweise auf andere Software<br /><br /> Komponenten<br /><br /> Zustandsinformationen zum Projekt selbst|Beim Speichern des Projekts|Die Projektdatei.|
+|Project|Verweise auf Dateien<br /><br /> Verweise auf Verzeichnisse auf dem Datenträger<br /><br /> Verweise auf andere Software<br /><br /> Komponenten<br /><br /> Zustandsinformationen zum Projekt selbst|Beim Speichern des Projekts|Die Projektdatei.|
 |Lösung|Verweise auf Projekte<br /><br /> Verweise auf Dateien|Beim Speichern des Projekts oder der Projekt Mappe|Die Projektmappendatei **(. sln)**|
 |Einstellungen in den **Tools > Optionen**|Tastatur Anpassungen<br /><br /> Anpassen von Symbolleisten<br /><br /> Farbschemas|Wenn das Dialogfeld " **Tools > Optionen** " geschlossen wird<br /><br /> Wenn die Visual Studio-Sitzung beendet wird|Registrierung in **HKEY_CURRENT_USER**|
 

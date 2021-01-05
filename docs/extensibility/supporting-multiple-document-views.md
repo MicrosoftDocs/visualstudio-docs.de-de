@@ -1,5 +1,7 @@
 ---
 title: Unterstützen mehrerer Dokument Sichten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mehr als eine Ansicht eines Dokuments bereitstellen, indem Sie separate Dokument Daten und Dokument Ansichts Objekte für Ihren benutzerdefinierten Editor im Visual Studio SDK verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a952414fa7156d80675564e519e556ccedd524a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c1d99f4beb000d4b48435b9215a01f31ef8e936
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699542"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716093"
 ---
 # <a name="supporting-multiple-document-views"></a>Unterstützen mehrerer Dokumentansichten
 Sie können mehr als eine Ansicht eines Dokuments bereitstellen, indem Sie separate Dokument Daten und Dokument Ansichts Objekte für den Editor erstellen. In einigen Fällen ist eine zusätzliche Dokument Ansicht nützlich:

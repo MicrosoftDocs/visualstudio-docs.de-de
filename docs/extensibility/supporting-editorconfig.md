@@ -1,5 +1,7 @@
 ---
 title: Sprachdienst für die Unterstützung von editorconfig erweitern
+description: Informationen zu den Änderungen, die zum Aktualisieren eines sprach Dienstanbieter zur Unterstützung von editorconfig-Dateien durchführen Ersetzen Sie eine globale sprachspezifische Option durch eine Kontext Option.
+ms.custom: SEO-VS-2020
 ms.date: 11/22/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddfe0e30904d000b4fd70c85371d29a2ee486932
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c635df2301822fc1bb982df44912527d53c9ef6
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699586"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716106"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Unterstützung von editorconfig für Ihren Sprachdienst
 
@@ -43,7 +45,7 @@ Sprachspezifische Optionen | Kontextoptionen
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize|textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen portabler Editor-Einstellungen mit editorconfig](../ide/create-portable-custom-editor-options.md)
 - [Erweitern des Editors und der Sprachdienste](../extensibility/extending-the-editor-and-language-services.md)

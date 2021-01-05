@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei VSPackages | Microsoft-Dokumentation
+description: Erfahren Sie mehr über häufige Probleme, die möglicherweise mit Ihrem VSPackage auftreten, und Tipps zur Problembehandlung, um die Probleme zu beheben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235029"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716054"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSPackage und Tipps zum Beheben der Probleme haben.
@@ -25,7 +27,7 @@ Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSP
 
 - Starten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] im abgesicherten Modus.
 
-   Wenn Sie im abgesicherten Modus starten möchten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , geben Sie an einer Eingabeaufforderung **devenv.exe/safemode**ein.
+   Wenn Sie im abgesicherten Modus starten möchten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , geben Sie an einer Eingabeaufforderung **devenv.exe/safemode** ein.
 
    Während dieses Vorgangs werden keine VSPackages geladen, außer den VSPackages, die im Lieferumfang von enthalten sind [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 

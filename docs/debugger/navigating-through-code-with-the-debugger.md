@@ -15,16 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348248"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729352"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navigieren durch Code mit dem Visual Studio-Debugger
 
-Mit dem Visual Studio-Debugger können Sie durch Code navigieren, um den Zustand einer App zu überprüfen und deren Ausführungsablauf anzuzeigen. Sie können Tastenkombinationen, Debugbefehle, Haltepunkte und andere Funktionen verwenden, um schnell zu dem Code zu gelangen, den Sie untersuchen möchten. Wenn Sie mit Debuggernavigationsbefehlen und Verknüpfungen vertraut sind, können Sie App-Probleme schneller und einfacher aufspüren und lösen.  Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
+Mit dem Visual Studio-Debugger können Sie durch Code navigieren, um den Zustand einer App zu überprüfen und deren Ausführungsablauf anzuzeigen. Sie können Tastenkombinationen, Debugbefehle, Haltepunkte und andere Funktionen verwenden, um schnell zu dem Code zu gelangen, den Sie untersuchen möchten. Wenn Sie mit Debuggernavigationsbefehlen und Verknüpfungen vertraut sind, können Sie App-Probleme schneller und einfacher aufspüren und lösen.
+
+> [!NOTE]
+> Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
 
 ## <a name="get-into-break-mode"></a>Wechseln in den „Unterbrechungsmodus“
 
