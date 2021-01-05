@@ -1,5 +1,7 @@
 ---
 title: Registrieren einer Legacy Sprache Service2 | Microsoft-Dokumentation
+description: In diesem Artikel werden die Registrierungseinträge für die verschiedenen Sprachdienst Optionen aufgeführt, die in Visual Studio verfügbar sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +14,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238841"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875179"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registrieren eines Legacy sprach Dienstanbieter 2
 In den folgenden Abschnitten finden Sie Listen der Registrierungseinträge für die verschiedenen Sprachdienst Optionen, die unter verfügbar sind [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- In der folgenden Liste von Registrierungs Einträgen ist " *vs reg root* " gleich "HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *X. y*", wobei " *x. y* " die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Versionsnummer ist.
+ In der folgenden Liste von Registrierungs Einträgen ist *vs reg root* gleich HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. y*, wobei *X. y* die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Versionsnummer ist.
 
 ## <a name="registry-entries-for-language-service-options"></a>Registrierungseinträge für Sprachdienst Optionen
  Der Schlüssel " *vs reg root*\Languages\Language Services \\ *sprach Name* " kann die folgenden Werte enthalten.
 
-|Name|type|Range|BESCHREIBUNG|
+|Name|Typ|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|*\<GUID>*|GUID des sprach Dienstanbieter.|
 |Langresid|REG_DWORD|0x0-0xFFFF|Zeichen folgen Ressourcen Bezeichner (Resid) für den lokalisierten Textnamen der Sprache.|
@@ -38,7 +40,7 @@ In den folgenden Abschnitten finden Sie Listen der Registrierungseinträge für 
 |Showhoturls|REG_DWORD|0-1|Gibt an, ob der Benutzer auf URLs klicken kann.|
 |Standardmäßige nicht-Hot-URLs|REG_DWORD|0-1|Gibt die anfängliche Einstellung für die **Navigations Option "Single-Click-URL aktivieren** " im Dialogfeld " **Optionen** " an.|
 |Defaultdeinsertspaces|REG_DWORD|0-1|Gibt an, ob der Sprachdienst als Standard Registerkarten Option "Leerzeichen einfügen" aufweist.|
-|Showdropdownbaroption|REG_DWORD|0-1|Aktiviert oder deaktiviert die **Navigations** leisten Option im Dialogfeld **Optionen** , das die **Navigationsleiste**anzeigt oder ausblendet.|
+|Showdropdownbaroption|REG_DWORD|0-1|Aktiviert oder deaktiviert die **Navigations** leisten Option im Dialogfeld **Optionen** , das die **Navigationsleiste** anzeigt oder ausblendet.|
 |Nur ein Code Fenster|REG_DWORD|0-1|Aktiviert oder deaktiviert die **neue Fenster** Auswahl im Menü **Fenster** für einen Sprachdienst.|
 |Enableadvancedmitgliedsoption|REG_DWORD|0-1|Aktiviert oder deaktiviert die Dialogfeld Einstellung **Optionen** für **Erweiterte Member ausblenden**.|
 |Support CF_HTML|REG_DWORD|0-1|Gibt an, ob der Editor das Kopieren und Einfügen von HTML-Daten ermöglicht.|
@@ -64,7 +66,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>Registrierungseinträge für Optionen für debuggersprachen
  Der Schlüssel " *vs reg root*\Languages\Language Services \\ *Language Name*\Debugger Languages \\ *GUID*\" kann die folgenden Werte enthalten.
 
-|Name|type|Range|BESCHREIBUNG|
+|Name|Typ|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|text|Der Standardwert kann verwendet werden, um den Namen der Sprache zu dokumentieren. Der Name dieses Schlüssels ist eine GUID einer Ausdrucks Auswertung, die über einen entsprechenden Eintrag in *\<VS Reg Root>* \ad7metrics\expression Auswertung verfügt.|
 
@@ -83,11 +85,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>Registrierungseinträge für Editor-Tool Optionen
  Sie können Registrierungsschlüssel unter dem Schlüssel Editor ToolsOptions für Eigenschaften Seiten und Eigenschafts Knoten hinzufügen. Mit diesen Schlüsseln und ihren Werten werden Eigenschaften Seiten im Dialogfeld **Optionen** ( **im Menü Extras** ) identifiziert, die zum Konfigurieren des sprach Dienstanbieter verwendet werden. Im folgenden Beispiel ist *Page Name* der Name einer Eigenschaften Seite und *Knoten Name* der Name eines Knotens in der Struktur im Dialogfeld **Optionen** . Der Seiten Eintrag und der Knoten Eintrag müssen separat angegeben werden.
 
-|Name|type|Range|BESCHREIBUNG|
+|Name|Typ|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|Resid|Der lokalisierte Anzeige Name der Optionsseite. Der Name kann ein Literaltext oder # sein, `nnn` wobei `nnn` eine Zeichen folgen Ressourcen-ID in der Satelliten-DLL des angegebenen VSPackages ist.|
 |Paket|REG_SZ|*GUID*|Der GUID des VSPackage, das diese Optionsseite implementiert.|
-|Page|REG_SZ|*GUID*|Der GUID der Eigenschaften Seite, die vom VSPackage angefordert werden soll, indem die-Methode aufgerufen wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> . Wenn dieser Registrierungs Eintrag nicht vorhanden ist, beschreibt der Registrierungsschlüssel einen Knoten, nicht eine Seite.|
+|Seite|REG_SZ|*GUID*|Der GUID der Eigenschaften Seite, die vom VSPackage angefordert werden soll, indem die-Methode aufgerufen wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> . Wenn dieser Registrierungs Eintrag nicht vorhanden ist, beschreibt der Registrierungsschlüssel einen Knoten, nicht eine Seite.|
 
 ### <a name="example"></a>Beispiel
 
@@ -117,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>Registrierungseinträge für Dateinamen-Erweiterungsoptionen
  Der Eintrag für die Dateierweiterung sollte den führenden Zeitraum enthalten, z. b. ". myext".
 
-|Name|type|Range|BESCHREIBUNG|
+|Name|Typ|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|*GUID*|Dienst-GUID für den Standard Sprachdienst für diesen Dateinamen-Erweiterungstyp.|
 
@@ -134,7 +136,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>Registrierungseinträge für Editor Optionen
  Der Schlüssel " *vs reg root*\editoren" kann die folgenden Werte enthalten:
 
-|Name|type|Range|BESCHREIBUNG|
+|Name|Typ|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ|""|Genutzt Sie können hier Ihren Namen für die Dokumentation eingeben.|
 |DefaultToolboxTab|REG_SZ|""|Der Name der Toolbox Registerkarte, die standardmäßig aktiviert wird, wenn der Editor aktiv ist.|
@@ -159,7 +161,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>Registrierungseinträge für logische Ansichtsoptionen
  Der Schlüssel " *vs reg root*\editoren \\ *Editor GUI>* \logicalviews" kann die folgenden Werte enthalten.
 
-|Name|type|Range|BESCHREIBUNG|
+|Name|Typ|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ||Nicht verwendet.|
 |*\<GUID>*|REG_SZ|""|Der Schlüssel für die unterstützten logischen Ansichten. Sie können beliebig viele von Ihnen benötigen. Der Name des Registrierungs Eintrags ist wichtig, nicht der Wert, der immer eine leere Zeichenfolge ist.|
@@ -181,12 +183,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>Registrierungseinträge für Editor-Erweiterungsoptionen
  Der Schlüssel " *vs reg root*\editoren \\ *Editor GUID*\extensions" kann die folgenden Werte enthalten. Die Dateinamenerweiterung enthält nicht den führenden Zeitraum.
 
-|Name|type|Range|BESCHREIBUNG|
+|Name|Typ|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |(Standardwert)|REG_SZ||Nicht verwendet.|
 |*\<ext>*|REG_DWORD|0-0xFFFFFFFF|Relative Priorität von Erweiterungen. Wenn mindestens zwei Sprachen dieselbe Erweiterung verwenden, wird die Sprache mit höherer Priorität ausgewählt.|
 
- Außerdem wird die Standardauswahl des aktuellen Benutzers für einen Editor in HKEY_CURRENT_USER \software\microsoft\visualstudio \\ *X. Y*\Default Editoren \\ *ext*gespeichert. Der GUID des ausgewählten sprach Dienstanbieter befindet sich im benutzerdefinierten Eintrag. Dies hat Vorrang vor dem aktuellen Benutzer.
+ Außerdem wird die Standardauswahl des aktuellen Benutzers für einen Editor in HKEY_CURRENT_USER \software\microsoft\visualstudio \\ *X. Y*\Default Editoren \\ *ext* gespeichert. Der GUID des ausgewählten sprach Dienstanbieter befindet sich im benutzerdefinierten Eintrag. Dies hat Vorrang vor dem aktuellen Benutzer.
 
 ### <a name="example"></a>Beispiel
 
@@ -207,7 +209,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  Auf diese Registrierungseinträge wird über die- <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse zugegriffen.
 
-|Name|type|Range|BESCHREIBUNG|
+|Name|Typ|Bereich|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|Unterstützung für IntelliSense-Vorgänge.|
 |Matchgeschweifte Klammern|REG_DWORD|0-1|Unterstützung für übereinstimmende Sprachpaare, z. b. geschweifte Klammern, Klammern und eckige Klammern.|

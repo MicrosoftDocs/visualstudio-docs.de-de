@@ -1,5 +1,7 @@
 ---
 title: Registrieren von Projekt-und Element Vorlagen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio Registrierungsinformationen für Ihre Projekttypen verwendet, um zu bestimmen, was in den Dialogfeldern Neues Projekt hinzufügen und neues Element hinzufügen angezeigt werden soll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705826"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875270"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
 Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-und Projekt Element Vorlagen befinden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet die Registrierungsinformationen, die den Projekttypen zugeordnet sind, um zu bestimmen, was in den Dialogfeldern **Neues Projekt hinzufügen** und **Neues Element hinzufügen** angezeigt werden soll.
@@ -27,7 +29,7 @@ Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-
  Weitere Informationen zu Vorlagen finden Sie unter [Hinzufügen von Projekt-und Projekt Element Vorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="registry-entries-for-projects"></a>Registrierungseinträge für Projekte
- Die folgenden Beispiele zeigen Registrierungseinträge unter HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *Version*>. In den zugehörigen Tabellen werden die in den Beispielen verwendeten Elemente erläutert.
+ Die folgenden Beispiele zeigen Registrierungseinträge unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *Version*>. In den zugehörigen Tabellen werden die in den Beispielen verwendeten Elemente erläutert.
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,7 +39,7 @@ Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Name|type|BESCHREIBUNG|
+|Name|Typ|BESCHREIBUNG|
 |----------|----------|-----------------|
 |@|REG_SZ|Standardname der Projekte dieser Art.|
 |DisplayName|REG_SZ|Die Ressourcen-ID des Namens, der von der Satelliten-DLL abgerufen werden soll, die unter Packages registriert ist.|
@@ -55,7 +57,7 @@ Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-
 "SortPriority"=dword:00000064
 ```
 
-| Name | type | BESCHREIBUNG |
+| Name | Typ | BESCHREIBUNG |
 |--------------------------|-----------| - |
 | @ | REG_SZ | Ressourcen-ID für Element Vorlagen hinzufügen. |
 | Templatesdir | REG_SZ | Der Pfad der Projekt Elemente, die im Dialogfeld für den Assistenten zum **Hinzufügen eines neuen Elements** angezeigt werden. |
@@ -67,7 +69,7 @@ Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-
 
  **Visual c#-Dateien ( \* . cs, \* . resx, \* . Settings, \* . xsd, \* . WSDL); \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL)**
 
- Um die Registrierung mehrerer Filter zu unterstützen, wird jeder Filter in seinem eigenen Unterschlüssel unter HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *Version*> \projects \\ { \<*ProjectGUID*> } \filters unter \\ < *Schlüssel*> registriert. Der Name des unter Schlüssels ist willkürlich. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoriert den Namen des unter Schlüssels und verwendet lediglich seine Werte.
+ Um die Registrierung mehrerer Filter zu unterstützen, wird jeder Filter unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *Version*> \projects \\ { \<*ProjectGUID*> } \filters \\ < *Unterschlüssel*> in seinem eigenen Unterschlüssel registriert. Der Name des unter Schlüssels ist willkürlich. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignoriert den Namen des unter Schlüssels und verwendet lediglich seine Werte.
 
  Sie können die Kontexte, in denen ein Filter verwendet wird, Steuern, indem Sie Flags festlegen, die in der folgenden Tabelle aufgeführt sind. Wenn für einen Filter keine Flags festgelegt sind, wird er nach den allgemeinen Filtern im Dialogfeld **Vorhandenes Element hinzufügen** und im Dialogfeld **Datei öffnen** aufgelistet. es wird jedoch nicht im Dialogfeld **in Dateien suchen** verwendet.
 
@@ -82,7 +84,7 @@ Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-
 "SortPriority"=dword:00000064
 ```
 
-|Name|type|BESCHREIBUNG|
+|Name|Typ|BESCHREIBUNG|
 |----------|----------|-----------------|
 |Commonfindfilesfilter|REG_DWORD|Macht den Filter zu einem der allgemeinen Filter im Dialogfeld **in Dateien suchen** . Allgemeine Filter sind in der Filterliste aufgeführt, bevor Filter als "Allgemein" gekennzeichnet sind.|
 |Commonopenfilesfilter|REG_DWORD|Macht den Filter zu einem der allgemeinen Filter im Dialogfeld **Datei öffnen** . Allgemeine Filter sind in der Filterliste aufgeführt, bevor Filter als "Allgemein" gekennzeichnet sind.|

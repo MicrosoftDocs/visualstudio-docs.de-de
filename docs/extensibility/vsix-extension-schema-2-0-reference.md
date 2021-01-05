@@ -1,5 +1,7 @@
 ---
 title: VSIX-Erweiterungs Schema 2,0-Referenz | Microsoft-Dokumentation
+description: Das VSIX-Erweiterungs Schema 2,0 definiert das Dateiformat für eine VSIX-Bereitstellungs Manifest-Datei, in der der Inhalt eines VSIX-Pakets beschrieben wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e260c62d67afc10fea25d52169c48b64c82f72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697900"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863765"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX-Erweiterungs Schema 2,0-Referenz
 In einer VSIX-Bereitstellungs Manifest-Datei wird der Inhalt eines VSIX-Pakets beschrieben. Das Dateiformat wird durch ein Schema geregelt. Version 2,0 dieses Schemas unterstützt das Hinzufügen von benutzerdefinierten Typen und Attributen.  Das Schema des Manifests ist erweiterbar. Das Manifest-Lade Modul ignoriert XML-Elemente und-Attribute, die es nicht versteht.
@@ -131,7 +133,7 @@ In einer VSIX-Bereitstellungs Manifest-Datei wird der Inhalt eines VSIX-Pakets b
 
     Visual Studio 2017-Versionsnummern finden Sie unter [Visual Studio-Buildnummern und Veröffentlichungstermine](../install/visual-studio-build-numbers-and-release-dates.md).
 
-    Wenn Sie die Version für Visual Studio 2017-Releases Ausdrücken, sollte die neben Version immer **0**sein. Beispielsweise sollte Visual Studio 2017 Version 15.3.26730.0 als [15.0.26730.0, 16,0) ausgedrückt werden. Dies ist nur für Visual Studio 2017 und spätere Versionsnummern erforderlich.
+    Wenn Sie die Version für Visual Studio 2017-Releases Ausdrücken, sollte die neben Version immer **0** sein. Beispielsweise sollte Visual Studio 2017 Version 15.3.26730.0 als [15.0.26730.0, 16,0) ausgedrückt werden. Dies ist nur für Visual Studio 2017 und spätere Versionsnummern erforderlich.
 
   - `AnyAttribute*` -Das- `<InstallationTarget>` Element ermöglicht einen offenen Satz von Attributen, der zur Laufzeit als Name-Wert-Paar Wörterbuch verfügbar gemacht wird.
 

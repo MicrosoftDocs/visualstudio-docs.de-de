@@ -1,5 +1,7 @@
 ---
 title: Öffnen eines dynamischen Tool Fensters | Microsoft-Dokumentation
+description: Erfahren Sie mehr über dynamische Tool Fenster, die geöffnet werden, wenn ein bestimmter UI-Kontext angewendet und geschlossen wird, wenn der UI-Kontext nicht mehr zutrifft.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903705"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863509"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Öffnen eines dynamischen Tool Fensters
-Tool Fenster werden in der Regel über einen Befehl in einem Menü oder eine entsprechende Tastenkombination geöffnet. Manchmal benötigen Sie jedoch ein Tool Fenster, das geöffnet wird, wenn ein bestimmter UI-Kontext zutrifft, und wird geschlossen, wenn der UI-Kontext nicht mehr zutrifft. Diese Arten von Tool Fenstern werden als *dynamisch* oder *automatisch sichtbar*bezeichnet.
+Tool Fenster werden in der Regel über einen Befehl in einem Menü oder eine entsprechende Tastenkombination geöffnet. Manchmal benötigen Sie jedoch ein Tool Fenster, das geöffnet wird, wenn ein bestimmter UI-Kontext zutrifft, und wird geschlossen, wenn der UI-Kontext nicht mehr zutrifft. Diese Arten von Tool Fenstern werden als *dynamisch* oder *automatisch sichtbar* bezeichnet.
 
 > [!NOTE]
 > Eine Liste mit vordefinierten UI-Kontexten finden Sie unter <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> .
@@ -32,7 +34,7 @@ Tool Fenster werden in der Regel über einen Befehl in einem Menü oder eine ent
 
 ## <a name="to-open-a-dynamic-tool-window"></a>So öffnen Sie ein dynamisches Tool Fenster
 
-1. Erstellen Sie ein VSIX-Projekt namens **dynamictoolwindow** , und fügen Sie eine Tool Fenster-Element Vorlage mit dem Namen *DynamicWindowPane.cs*hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+1. Erstellen Sie ein VSIX-Projekt namens **dynamictoolwindow** , und fügen Sie eine Tool Fenster-Element Vorlage mit dem Namen *DynamicWindowPane.cs* hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 2. Suchen Sie in der Datei *DynamicWindowPanePackage.cs* die dynamicwindowpanepackage-Deklaration. Fügen Sie <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> die <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> Attribute und zum Registrieren des Tool Fensters hinzu.
 

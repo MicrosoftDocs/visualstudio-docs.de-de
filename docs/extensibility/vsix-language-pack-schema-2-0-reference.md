@@ -1,5 +1,7 @@
 ---
 title: VSIX-Sprachpaket Schema 2,0-Referenz | Microsoft-Dokumentation
+description: Das VSIX-Sprachpaket Schema enthält lokalisierte Installationsinformationen für VSIX-Pakete. In Version 2,0 werden zusätzliche Lokalisierungs Elemente unterstützt.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830706"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863819"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX-Sprachpaket Schema 2,0 Referenz
 
@@ -30,7 +32,7 @@ Das Stamm Element der Language Pack-Datei ist `<PackageLanguagePackManifest>` mi
 
 Innerhalb des- `<PackageLanguagePackManifest>` Elements muss das folgende-Element vorhanden sein:
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |`<Metadata>`| Das enthaltende Element für alle lokalisierten Paket Metadaten.
 
@@ -38,7 +40,7 @@ Innerhalb des- `<PackageLanguagePackManifest>` Elements muss das folgende-Elemen
 
 Innerhalb des- `<Metadata>` Elements können Sie über die folgenden Elemente verfügen:
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |`<DisplayName>`|Der lokalisierte Name der zu installierenden Erweiterung.|
 |`<Description>`|Die lokalisierte Beschreibung der zu installierenden Erweiterung.|
@@ -65,7 +67,7 @@ Innerhalb des- `<Metadata>` Elements können Sie über die folgenden Elemente ve
 
 ## <a name="see-also"></a>Siehe auch
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)|Zeigt, wie Sie eine lokalisierte Installationsunterstützung für ein VSIX-Paket bereitstellen.|
 |[VSIX-Erweiterungs Schema 2,0-Referenz](../extensibility/vsix-extension-schema-2-0-reference.md)|Ein VSIX-Manifest beschreibt den Inhalt einer *VSIX* -Bereitstellungs Datei. Mithilfe der Bereitstellungs Datei können Sie eine Visual Studio-Erweiterung im Dialogfeld **Erweiterungen und Updates** installieren.|

@@ -1,5 +1,7 @@
 ---
 title: Richtlinien für die Visual Studio-Benutzer Darstellung | Microsoft-Dokumentation
+description: Die Richtlinien für die Benutzerfreundlichkeit von Visual Studio enthalten gängige Benutzer Modelle und Interaktionsmuster, um eine konsistente Benutzererfahrung für neue Features zu erzielen.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994d0029e7dfdc3559adae0e1c022acd38d7f5a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698209"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863942"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit in Visual Studio
 Befolgen Sie die Richtlinien für die Visual Studio-Benutzer Leistung, wenn Sie neue Features für Visual Studio entwerfen. Diese Richtlinien enthalten Informationen zu gängigen Benutzer Modellen und Interaktionsmustern, damit Entwickler von neuen Benutzeroberflächen (UI) Benutzeroberflächen erstellen können, die in der Entwicklungsumgebung nahtlos und konsistent sind.

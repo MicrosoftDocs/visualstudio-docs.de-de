@@ -1,5 +1,7 @@
 ---
 title: Speichern eines Standard Dokuments | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Prozess, der für ein Standarddokument für einen Projekttyp auftritt, den Sie der Visual Studio-IDE hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705554"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875665"
 ---
 # <a name="saving-a-standard-document"></a>Speichern eines Standarddokuments
-Die Umgebung verarbeitet die Befehle "Speichern", "Speichern unter" und "Alle speichern". Wenn ein Benutzer " **Speichern**", " **Speichern**unter" oder " **Alle speichern** " im Menü "Datei" auswählt oder die Projekt **Mappe** schließt, was zu " **Alles speichern**" führt, wird der folgende Vorgang ausgeführt.
+Die Umgebung verarbeitet die Befehle "Speichern", "Speichern unter" und "Alle speichern". Wenn ein Benutzer " **Speichern**", " **Speichern** unter" oder " **Alle speichern** " im Menü "Datei" auswählt oder die Projekt **Mappe** schließt, was zu " **Alles speichern**" führt, wird der folgende Vorgang ausgeführt.
 
  ![Standard-Editor](../../extensibility/internals/media/public.gif "Öffentlich") Speichern, speichern unter und Speichern der gesamten Befehls Behandlung für einen Standard Editor
 
@@ -56,6 +58,6 @@ Die Umgebung verarbeitet die Befehle "Speichern", "Speichern unter" und "Alle sp
 
 2. Wenden <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> Sie die ( `pszMkDocumentNew` ,)- `punkWindowFrame` Methode an, um das Dokument in die neue Hierarchie zu übertragen. Diese Methode wird von der Hierarchie aufgerufen, die den Befehl Speichern unter ausführt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)

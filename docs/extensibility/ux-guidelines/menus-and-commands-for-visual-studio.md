@@ -1,5 +1,7 @@
 ---
 title: Menüs und Befehle für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie, wie Befehls leisten bei der Erstellung neuer Features für Visual Studio Flexibilität in der Benutzeroberfläche ermöglichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f22b7ac4377b600208c079b6af1eff7fc3cbfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698387"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863542"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüs und Befehle für Visual Studio
 ## <a name="command-usage"></a>Befehls Verwendung
@@ -49,13 +51,13 @@ ms.locfileid: "80698387"
  Es ist hilfreich, Befehle in unmittelbarer Nähe zum Bereich des Benutzer Fokus zu platzieren. Eine Möglichkeit hierfür ist das Erstellen einer eingebetteten Symbolleiste am oberen Rand des Tool Fensters oder des Dokument-Editors. Die auf der Symbolleiste platzierten Befehle sollten für den Inhalts Bereich innerhalb des Fensters spezifisch sein. Duplizieren Sie keine freigegebenen Befehle auf diesen Symbolleisten. Platzieren Sie z. b. niemals das Symbol "Speichern" in einer eingebetteten Symbolleiste.
 
 ### <a name="content-and-command-visibility"></a>Sichtbarkeit von Inhalten und Befehlen
- In den folgenden Bereichen sind Befehle vorhanden: **Umgebung**, **Hierarchie**und **Dokument**. Informieren Sie sich über jeden Bereich, um Vertrauen in die Befehls Platzierung zu erhalten.
+ In den folgenden Bereichen sind Befehle vorhanden: **Umgebung**, **Hierarchie** und **Dokument**. Informieren Sie sich über jeden Bereich, um Vertrauen in die Befehls Platzierung zu erhalten.
 
- Befehle im **Umgebungs** Bereich richten den primär Kontext ein und werden von mehreren Kontexten gemeinsam genutzt. Sie ändern die Sichtbarkeit oder Anordnung von Dokumenten und Tool Fenstern. Zu den Befehlen im Umgebungs Bereich zählen **Neues Projekt**, **Verbindung mit Server herstellen**, **Prozess anfügen**, **Ausschneiden**, **Kopieren**, **Einfügen**, **Suchen**, **Optionen**, **Anpassen**, **Neues Fenster**und **Hilfe anzeigen**.
+ Befehle im **Umgebungs** Bereich richten den primär Kontext ein und werden von mehreren Kontexten gemeinsam genutzt. Sie ändern die Sichtbarkeit oder Anordnung von Dokumenten und Tool Fenstern. Zu den Befehlen im Umgebungs Bereich zählen **Neues Projekt**, **Verbindung mit Server herstellen**, **Prozess anfügen**, **Ausschneiden**, **Kopieren**, **Einfügen**, **Suchen**, **Optionen**, **Anpassen**, **Neues Fenster** und **Hilfe anzeigen**.
 
- Befehle im **Hierarchie** Bereich verwalten Hierarchien in Visual Studio, **einschließlich Projekt**, **Team**und **Daten**. Sie beziehen sich auf den unter Kontext eines Projekts, z. b. **Debuggen**, **Erstellen**, **Testen**, **Architektur**oder **analysieren**. Zu den Befehlen im Bereich Hierarchie gehören **Add New Item**, **New Query**, **Project Settings**, **Add New Data Source**, **Launch Performance Wizard**und **New Diagram**.
+ Befehle im **Hierarchie** Bereich verwalten Hierarchien in Visual Studio, **einschließlich Projekt**, **Team** und **Daten**. Sie beziehen sich auf den unter Kontext eines Projekts, z. b. **Debuggen**, **Erstellen**, **Testen**, **Architektur** oder **analysieren**. Zu den Befehlen im Bereich Hierarchie gehören **Add New Item**, **New Query**, **Project Settings**, **Add New Data Source**, **Launch Performance Wizard** und **New Diagram**.
 
- Befehle im **Dokument** Bereich agieren auf den Inhalt eines Dokuments, z. b. Code, Design oder eine Arbeitsaufgaben Abfrage (Work Item Query, WIQ). Sie wirken sich auch auf die Ansicht eines Tool Fensters aus oder sind für dieses Tool Fenster anderweitig spezifisch. Dokument Bereichs Befehle wirken sich auch auf die Datei Objekte aus, die selbst Hierarchie spezifisch sind, z. b. **aus Projekt entfernen**. Die Befehle im Dokumentbereich sind **Umgestalten > umbenennen**, **Erstellen einer Kopie des Arbeits Elements**, **erweitern alle**, **alle**reduzieren und **Benutzer erstellen**.
+ Befehle im **Dokument** Bereich agieren auf den Inhalt eines Dokuments, z. b. Code, Design oder eine Arbeitsaufgaben Abfrage (Work Item Query, WIQ). Sie wirken sich auch auf die Ansicht eines Tool Fensters aus oder sind für dieses Tool Fenster anderweitig spezifisch. Dokument Bereichs Befehle wirken sich auch auf die Datei Objekte aus, die selbst Hierarchie spezifisch sind, z. b. **aus Projekt entfernen**. Die Befehle im Dokumentbereich sind **Umgestalten > umbenennen**, **Erstellen einer Kopie des Arbeits Elements**, **erweitern alle**, **alle** reduzieren und **Benutzer erstellen**.
 
 ### <a name="command-placement-decisions"></a>Entscheidungen hinsichtlich der Befehls Platzierung
  Wenn Sie sich entschieden haben, einen Befehl zu erstellen, müssen Sie die entsprechende Platzierung bestimmen und angeben, ob eine Tastenkombination erstellt werden soll. Gehen Sie folgendermaßen vor, um festzulegen, wo der Befehl platziert werden soll:
@@ -91,7 +93,7 @@ ms.locfileid: "80698387"
 
 - Project
 
-- Entwickeln
+- Build
 
 - Debuggen
 
@@ -103,7 +105,7 @@ ms.locfileid: "80698387"
 
 - Test
 
-- Aufbau
+- Architektur
 
 - Analysieren
 
@@ -257,10 +259,10 @@ ms.locfileid: "80698387"
 
 - **Zugriffsschlüssel** (auch als Accelerators bezeichnet) ermöglichen den Tastatur Zugriff über die Menüs für die Befehls Ansicht und jede Bezeichnung in der Benutzeroberfläche des Dialog Felds. Zugriffsschlüssel dienen hauptsächlich zu Barrierefreiheits Zwecken, werden allen Menüs und den meisten Dialogfeld-Steuerelementen zugewiesen, sind nicht für die Speicherung vorgesehen, wirken sich nur auf das aktuelle Fenster aus und sind lokalisiert.
 
-- Tasten **Kombinationen** verwenden hauptsächlich Steuerungs-(STRG) und Funktionstasten Sequenzen (FN). Sie sind für fortgeschrittene Benutzer und höhere Produktivität konzipiert. Sie werden nur den am häufigsten verwendeten Befehlen zugewiesen und ermöglichen den schnellen Zugriff, während das Hauptmenü umgangen wird. Tastenkombinationen müssen gespeichert werden, und aus diesem Grund muss das Profil Schema konsistent zugewiesen werden. Tastenkombinationen können von Profil zu Profil abweichen. Benutzer können Tastenkombinationen mithilfe von **Tools > Optionen > Tastatur**anpassen.
+- Tasten **Kombinationen** verwenden hauptsächlich Steuerungs-(STRG) und Funktionstasten Sequenzen (FN). Sie sind für fortgeschrittene Benutzer und höhere Produktivität konzipiert. Sie werden nur den am häufigsten verwendeten Befehlen zugewiesen und ermöglichen den schnellen Zugriff, während das Hauptmenü umgangen wird. Tastenkombinationen müssen gespeichert werden, und aus diesem Grund muss das Profil Schema konsistent zugewiesen werden. Tastenkombinationen können von Profil zu Profil abweichen. Benutzer können Tastenkombinationen mithilfe von **Tools > Optionen > Tastatur** anpassen.
 
 ### <a name="assigning-access-keys"></a>Zuweisen von Zugriffs Schlüsseln
- Zugriffsschlüssel bestehen aus alt Plus alphanumerischen Schlüsseln. Weisen Sie jedem Menü Element ohne Ausnahme einen Zugriffsschlüssel zu. Befolgen Sie Windows und allgemeine Konventionen zum Zuweisen von Zugriffs Schlüsseln. Beispielsweise sollte der Zugriffsschlüssel für **File > New** immer **alt, F, N**sein.
+ Zugriffsschlüssel bestehen aus alt Plus alphanumerischen Schlüsseln. Weisen Sie jedem Menü Element ohne Ausnahme einen Zugriffsschlüssel zu. Befolgen Sie Windows und allgemeine Konventionen zum Zuweisen von Zugriffs Schlüsseln. Beispielsweise sollte der Zugriffsschlüssel für **File > New** immer **alt, F, N** sein.
 
  Verwenden Sie keine Buchstaben mit nur einer Pixel Breite, wie z. b. "i" (in groß-oder Kleinbuchstaben) oder den Kleinbuchstaben "l", und vermeiden Sie die Verwendung von Zeichen mit untergeordneten Zeichen (g, j, p, q und y), da diese schwierig zu unterscheiden sind.
 

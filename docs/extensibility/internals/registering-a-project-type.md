@@ -1,5 +1,7 @@
 ---
 title: Registrieren eines Projekt Typs | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Erstellen von Registrierungs Einträgen, die Visual Studio das erkennen und arbeiten mit dem neuen Projekttyp ermöglichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407730"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875193"
 ---
 # <a name="registering-a-project-type"></a>Registrieren eines Projekttyps
 Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge erstellen, die es ermöglichen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] den Projekttyp zu erkennen und zu bearbeiten. Diese Registrierungseinträge werden in der Regel mithilfe einer Registrierungs Skriptdatei (. rgs) erstellt.
@@ -147,7 +149,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie Registrierungseinträge e
 
  In der folgenden Tabelle werden die im vorherigen Codesegment verfügbaren Filteroptionen aufgeführt.
 
-|Filter Option|Beschreibung|
+|Filter Option|BESCHREIBUNG|
 |-------------------|-----------------|
 |`CommonFindFilesFilter`|Gibt an, dass der Filter einer der allgemeinen Filter im Dialogfeld **in Dateien suchen** ist. Die allgemeinen Filter sind in der Filterliste aufgeführt, bevor die Filter als "Allgemein" gekennzeichnet sind.|
 |`CommonOpenFilesFilter`|Gibt an, dass es sich bei dem Filter um einen der allgemeinen Filter im Dialogfeld **Datei öffnen** handelt. Die allgemeinen Filter sind in der Filterliste aufgeführt, bevor die Filter als "Allgemein" gekennzeichnet sind.|

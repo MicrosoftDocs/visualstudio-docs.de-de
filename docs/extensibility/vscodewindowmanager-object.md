@@ -1,5 +1,7 @@
 ---
 title: Vscoabwindowmanager-Objekt | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das vscoabwindowmanager-Objekt, das für die Verwaltung von Zusatzelementen zuständig ist, z. b. die Dropdown Leiste.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e88885d339e55b7c3df1312b4a72c59d2959bbcc
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 7a5c602a1cf46382e5a8b5c688501b2406e4a6d0
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414344"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863995"
 ---
 # <a name="vscodewindowmanager-object"></a>Vscoabwindowmanager-Objekt
 
@@ -26,6 +28,6 @@ Der Sprachdienst implementiert den Code Fenster-Manager und ist für die Verwalt
 
 In der folgenden Tabelle werden die Schnittstellen im- `VSCodeWindowManager` Objekt angezeigt.
 
-|Schnittstelle|Beschreibung|
+|Schnittstelle|BESCHREIBUNG|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ermöglicht das Hinzufügen oder Entfernen von Zusatzelemente (z. b. Dropdown leisten) zu einem Code Fenster.|

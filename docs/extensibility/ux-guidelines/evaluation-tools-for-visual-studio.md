@@ -1,5 +1,7 @@
 ---
 title: Auswertungs Tools für Visual Studio | Microsoft-Dokumentation
+description: Verwenden Sie diese Prüfliste, um die Qualität der Benutzer Qualität für visuelle und Interaktions Details für neue Features, die Sie für Visual Studio entwerfen
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ae5ae2d3be49a797ff1d594aab4517efab53330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698431"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863456"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Auswertungstools für Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Handwerkliche Prüfliste für Visual Studio
@@ -39,7 +41,7 @@ ms.locfileid: "80698431"
 
 - Stellen Sie sicher, dass alle Bezeichnungen Satz-oder titelfall sind und dass kein Text vollständig klein geschrieben ist.
 
-    ||Richtig|Falsch|
+    ||Richtig.|Falsch|
     |-|-------------|---------------|
     |**Befehls Text (alle)**|Satzfall:<br /><br /> **Verzeichnisname:**|Verzeichnis Name:|
     |**Schaltflächen Text (Client)**|Titelfall:<br /><br /> **[Als Standard festlegen]**|als Standard festlegen|
@@ -163,7 +165,7 @@ ms.locfileid: "80698431"
 
 - Vergewissern Sie sich, dass Schaltflächen, Befehle und Befehls Verknüpfungen, die eine sekundäre Benutzeroberfläche starten, mit der mehr Benutzereingaben erfasst werden, mit Auslassungs Zeichen **[...]** enden müssen
 
-#### <a name="hyperlinks"></a>Links
+#### <a name="hyperlinks"></a>Hyperlinks
 
 - Stellen Sie sicher, dass ein Hyperlink-Steuerelement nicht rot blinkt Dies ist ein Indikator, dass der Color-Dienst nicht verwendet wird.
 

@@ -1,5 +1,7 @@
 ---
 title: Layout für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Layout für Visual Studio-Dialogfelder, einschließlich nicht-Themen Dialogfeldern und neuen Dialogfeldern mit Design.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698396"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863662"
 ---
 # <a name="layout-for-visual-studio"></a>Layout für Visual Studio
 Die Mehrzahl der Visual Studio-Dialogfelder sind das [Layout des Hilfsprogramm-Dialog](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)Felds, bei dem es sich um die Dialogfelder mit dem standardmäßigen [Windows-Desktop-Dialog](/windows/desktop/uxguide/win-dialog-box) Wenn Visual Studio zum Aktualisieren seiner Benutzeroberfläche wechselt, haben einige der spezifischere Dialoge einen neuen Entwurf, der Sie als Produkt definierende Oberfläche festlegt. Diese Design [Dialogfelder](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) haben eine Design Darstellung.
@@ -129,7 +131,7 @@ Die Mehrzahl der Visual Studio-Dialogfelder sind das [Layout des Hilfsprogramm-D
 
 3. Der Dialog Titel befindet sich nicht mehr in einer Titelleiste, sondern bietet visuelle Interessen und Akzente in einer größeren Punktgröße. (Weitere Informationen finden Sie im Abschnitt Schriftart size im [Textstil](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
 
-4. Bezeichnungen, die mit zusätzlichem Text gekoppelt sind, z. b. eine Beschreibung, sollten **Umgebungs Schriftart und Fett**formatiert sein.
+4. Bezeichnungen, die mit zusätzlichem Text gekoppelt sind, z. b. eine Beschreibung, sollten **Umgebungs Schriftart und Fett** formatiert sein.
 
 5. Innere Spalten werden durch eine 1-Pixel-Regel in hellgrau voneinander getrennt.
 

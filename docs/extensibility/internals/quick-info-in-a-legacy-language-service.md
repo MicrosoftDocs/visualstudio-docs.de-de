@@ -1,5 +1,7 @@
 ---
 title: Quick Infos in einem Legacy Sprachdienst | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Unterstützung für den IntelliSense-schnell Info Vorgang zum Anzeigen von Informationen zu einem Bezeichner.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705944"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875075"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>QuickInfo in einem Legacysprachdienst
 IntelliSense-QuickInfo zeigt Informationen zu einem Bezeichner in der Quelle an, wenn der Benutzer entweder die Einfügemarke im Bezeichner platziert und im **IntelliSense** -Menü die **QuickInfo** auswählt oder den Mauszeiger über dem Bezeichner hält. Dies bewirkt, dass eine QuickInfo mit Informationen zum Bezeichner angezeigt wird. Diese Informationen bestehen normalerweise aus dem Bezeichnertyp. Wenn die Debug-Engine aktiv ist, können diese Informationen den aktuellen Wert enthalten. Die Debug-Engine liefert Ausdrucks Werte, während der Sprachdienst nur Bezeichner verarbeitet.
