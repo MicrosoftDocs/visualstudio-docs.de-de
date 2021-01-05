@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348027"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727423"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Überwachen von Variablen mit Überwachungsfenstern und Schnellüberwachung
 
@@ -30,7 +30,8 @@ Beim Debuggen können Sie Fenster des Typs **Überwachen** und **Schnellüberwac
 
 In Fenstern des Typs **Überwachen** können während des Debuggens mehrere Variablen gleichzeitig angezeigt werden. Im Dialogfeld **Schnellüberwachung** wird jeweils eine einzelne Variable angezeigt. Dieses Dialogfeld muss geschlossen werden, bevor das Debuggen fortgesetzt werden kann.
 
-Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
+> [!NOTE]
+> Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Debugverfahren und -tools](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Beobachten von Variablen mit einem Überwachungsfenster
 

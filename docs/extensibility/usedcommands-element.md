@@ -1,5 +1,7 @@
 ---
 title: Usedcommands-Element | Microsoft-Dokumentation
+description: Das usedcommands-Element gruppiert usedcommand-Elemente und andere usedcommands-Gruppierungen. Das usedcommands-Element ist optional.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbc48d305e287fcb77407fbbf5ba52888b25dca6
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698756"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715898"
 ---
 # <a name="usedcommands-element"></a>UsedCommands-Element
 Das usedcommands-Element gruppiert usedcommand-Elemente und andere usedcommands-Gruppierungen.
@@ -44,13 +46,13 @@ Das usedcommands-Element gruppiert usedcommand-Elemente und andere usedcommands-
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[UsedCommand-Element](../extensibility/usedcommand-element.md)|Der Befehl, der von anderem Code implementiert wird.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen (z. b. Menü Elemente, Menüs, Symbolleisten und Kombinations Felder), die ein VSPackage für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) bereitstellt.|
 
@@ -64,6 +66,6 @@ Das usedcommands-Element gruppiert usedcommand-Elemente und andere usedcommands-
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [UsedCommand-Element](../extensibility/usedcommand-element.md)
 - [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,7 @@
 ---
 title: Verwenden von und Bereitstellen von Diensten | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Dienste, die von der Visual Studio-IDE für VSPackages bereitgestellt und verwendet werden können. In diesen Artikeln wird beschrieben, wie Sie Dienste erhalten und bereitstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8741d8d66af96ad4c6abea44b238393a34c5aa95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a7c1d9f3632d8b710ac238c372ed4456183a8d1
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698740"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715937"
 ---
 # <a name="using-and-providing-services"></a>Verwenden und Bereitstellen von Diensten
 Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet einen bestimmten Satz von Schnittstellen für ein anderes VSPackage, das verwendet werden soll. Beispielsweise [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet den <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> Dienst einem beliebigen VSPackage, das er lädt. Dieser Dienst stellt die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> Schnittstelle bereit, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Weitere Informationen finden Sie unter Gewusst [wie: Verwenden des Aktivitäts Protokolls](../extensibility/how-to-use-the-activity-log.md).
@@ -26,7 +28,7 @@ Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage bietet einen 
 
  Visual Studio bietet wichtige Dienste wie die folgenden:
 
-|IDE-Dienst|Beschreibung|
+|IDE-Dienst|BESCHREIBUNG|
 |-----------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Bietet Zugriff auf IDE-Dienste, die mit den grundlegenden Funktionen, VSPackages und der Registrierung in Zusammenhang stehen.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Bietet grundlegende Fenster Funktionen und UI-bezogene Funktionen in der IDE, z. b. die Möglichkeit zum Erstellen von Tools und Dokument Fenstern.|

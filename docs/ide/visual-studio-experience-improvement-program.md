@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eae7e4726f720b1c9974682525bbe2a28ee38d5f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71693012"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667935"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programm zur Verbesserung der Benutzerfreundlichkeit von Visual Studio
 
@@ -74,5 +74,5 @@ Weitere Informationen zu den durch VSCEIP gesammelten, verarbeiteten oder übert
 * [Von Visual Studio gesammelte Diagnoseinformationen](diagnostic-data-collection.md)
 * [Visual Studio-Feedbackoptionen](../ide/feedback-options.md)
 * [Melden eines Problems mit Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
+* [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)
 * [Datenschutzerklärung von Microsoft](https://privacy.microsoft.com/privacystatement)

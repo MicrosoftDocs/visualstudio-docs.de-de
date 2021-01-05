@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116149"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668559"
 ---
 # <a name="developer-community-guidelines"></a>Richtlinien für die Entwicklercommunity
 
@@ -21,7 +21,7 @@ Die Entwicklercommunity verfolgt Issues und Featurevorschläge für Visual Studi
 
 ## <a name="submitting-problems-and-suggestions"></a>Erstellen von Issues und Vorschlägen
 
-Die [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) verfolgt Issues und Featurevorschläge für Visual Studio.
+Die [Visual Studio-Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) verfolgt Issues und Featurevorschläge für Visual Studio.
 
 ### <a name="before-submitting-an-issue"></a>Vor der Erstellung eines Issues
 
@@ -42,7 +42,7 @@ Wenn Ihr Fehler oder Vorschlag in keinem vorhandenen Issue beschrieben wird, ers
 - Ihr Issue sollte Folgendes enthalten:
 
   - Reproduzierbare Schritte (1... 2... 3...) sowie das erwartete und das tatsächliche Ergebnis
-  - Bilder, Animationen oder ein Link zu einem Video: Bilder und Animationen veranschaulichen die reproduzierbaren Schritte, ersetzen diese jedoch _nicht_ .
+  - Bilder, Animationen oder ein Link zu einem Video: Bilder und Animationen veranschaulichen die reproduzierbaren Schritte, ersetzen diese jedoch _nicht_.
   - Gegebenenfalls einen Codeausschnitt, in dem das Problem veranschaulicht wird, oder einen Link zu einem Coderepository, das wir einfach auf unserem Computer verwenden können, um den Fehler zu reproduzieren
 
 - Vergessen Sie nicht, die folgenden Schritte durchzuführen:
@@ -85,7 +85,7 @@ In einem solchen Fall schließen wir das Issue und bitten Sie, es für das ander
 
 ## <a name="managing-feature-suggestions"></a>Verwalten von Featurevorschlägen
 
-Featurevorschläge sind ein Mittel der Kommunikation zwischen uns und den Mitgliedern der Entwicklercommunity. Theoretisch könnten wir alle Featureanfragen unbegrenzt offen lassen. Würden wir die Issues jedoch offen lassen, würde dies den Einblick der Community in den jeweiligen Status eines Features einschränken. Daher schließen wir Featureanfragen, die wir nicht umsetzen werden. Features, die möglicherweise umgesetzt werden, versehen wir mit dem Status _In Bearbeitung_ .
+Featurevorschläge sind ein Mittel der Kommunikation zwischen uns und den Mitgliedern der Entwicklercommunity. Theoretisch könnten wir alle Featureanfragen unbegrenzt offen lassen. Würden wir die Issues jedoch offen lassen, würde dies den Einblick der Community in den jeweiligen Status eines Features einschränken. Daher schließen wir Featureanfragen, die wir nicht umsetzen werden. Features, die möglicherweise umgesetzt werden, versehen wir mit dem Status _In Bearbeitung_.
 
 Wenn Sie ein Feature vorschlagen, sind Sie möglicherweise enttäuscht, dass wir nicht planen, Ihren Vorschlag umzusetzen. Das verstehen wir natürlich. Wir alle haben dies schon einmal erlebt – entweder in diesem Projekt oder in anderen, an denen wir mitgearbeitet haben. Daher können Sie sicher sein, dass wir alle Beiträge sehr schätzen. Nehmen Sie es nicht persönlich, wenn wir Ihren Vorschlag schließen oder diesen mit dem Status _In Bearbeitung_ versehen. Wenn Sie der Meinung sind, dass Ihr Featurevorschlag offen bleiben sollte, verdeutlichen Sie den Anwendungsfall, und kontaktieren Sie uns, oder sammeln Sie mehr Stimmen.
 
@@ -99,7 +99,7 @@ Folgendes beeinflusst unseren Entscheidungsfindungsprozess in Bezug auf Featurev
 
 Wenn wir keine dieser Fragen mit „Ja“ beantworten können, schließen wir die Anfrage. In vielen Fällen bleibt der Vorschlag jedoch mit dem Status _In Bearbeitung_ offen, um mehr Feedback von der Community zu sammeln.
 
-Wenn ein Vorschlag nicht mit unserer allgemeinen Produktrichtung übereinstimmt, schließen wir ihn als *Außerhalb des gültigen Bereichs* . Beispielsweise haben wir möglicherweise ähnliche Investitionen in andere Elemente der Visual Studio-Produktfamilie getätigt. Oder das vorgeschlagene Feature könnte nur für einige wenige Personen relevant sein, weshalb dafür eine Erweiterung besser geeignet ist.
+Wenn ein Vorschlag nicht mit unserer allgemeinen Produktrichtung übereinstimmt, schließen wir ihn als *Außerhalb des gültigen Bereichs*. Beispielsweise haben wir möglicherweise ähnliche Investitionen in andere Elemente der Visual Studio-Produktfamilie getätigt. Oder das vorgeschlagene Feature könnte nur für einige wenige Personen relevant sein, weshalb dafür eine Erweiterung besser geeignet ist.
 
 Verfolgen Sie den Status Ihres Featurevorschlags unter Bezugnahme auf den [Status und die häufig gestellten Fragen](./report-a-problem.md).
 
@@ -117,4 +117,4 @@ Kommentare und Antworten sind öffentlich sichtbar. Angefügte Dateien werden je
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wechseln Sie zur [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/), um Probleme zu melden, Features vorzuschlagen oder sich die vorhandenen Tickets durchzulesen. Viel Erfolg!
+Wechseln Sie zur [Visual Studio-Entwicklercommunity](https://aka.ms/feedback/suggest?space=8), um Probleme zu melden, Features vorzuschlagen oder sich die vorhandenen Tickets durchzulesen. Viel Erfolg!

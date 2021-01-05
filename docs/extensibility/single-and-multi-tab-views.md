@@ -1,5 +1,7 @@
 ---
 title: Ansichten für einzelne und mehrere Registerkarten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Ansichten mit mehreren Registerkarten in Editoren implementieren, z. b. in einem Code-Editor Fenster und einem Forms-Designer
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c308b4d6c7b90456255019ef57c6b9d544aefc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699989"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715209"
 ---
 # <a name="single-and-multi-tab-views"></a>Ansichten mit einer und mehreren Registerkarten
 Ein Editor kann verschiedene Typen von Ansichten erstellen. Ein Beispiel hierfür ist ein Code-Editor-Fenster, ein weiteres ist ein Forms-Designer.

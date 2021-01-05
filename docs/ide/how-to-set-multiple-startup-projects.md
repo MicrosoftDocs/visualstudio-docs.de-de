@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 348e3997f5136ab343639062f2b1d4dbdda08e78
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 99d8f93dc21925b997828adb541b7ee2f0337b6c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136991"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668676"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Vorgehensweise: Festlegen mehrerer Startprojekte
 
@@ -28,14 +28,14 @@ In Visual Studio können Sie angeben, wie mehr als ein Projekt beim Starten des 
 
 1. Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus (oberster Knoten).
 
-2. Öffnen Sie das Kontextmenü des Projektmappenknotens (Rechtsklick), und klicken Sie anschließend auf **Eigenschaften** . Das Dialogfeld **Projektmappen-Eigenschaftenseiten** wird angezeigt.
+2. Öffnen Sie das Kontextmenü des Projektmappenknotens (Rechtsklick), und klicken Sie anschließend auf **Eigenschaften**. Das Dialogfeld **Projektmappen-Eigenschaftenseiten** wird angezeigt.
 
-3. Erweitern Sie den Knoten **Allgemeine Eigenschaften** , und klicken Sie auf **Startprojekt** .
+3. Erweitern Sie den Knoten **Allgemeine Eigenschaften**, und klicken Sie auf **Startprojekt**.
 
-4. Klicken Sie auf die Option **Mehrere Startprojekte** , und legen Sie die entsprechenden Aktionen fest.
+4. Klicken Sie auf die Option **Mehrere Startprojekte**, und legen Sie die entsprechenden Aktionen fest.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
-- [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)
+- [Arbeiten mit Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)
 - [Verwalten von Projekt- und Projektmappeneigenschaften](../ide/managing-project-and-solution-properties.md)

@@ -3,7 +3,7 @@ title: Verwenden von MSBuild
 description: Hier erfahren Sie mehr über die verschiedenen Teile einer MSBuild-Projektdatei einschließlich der Elemente, Elementmetadaten, Eigenschaften, Ziele und Aufgaben.
 ms.date: 10/19/2020
 ms.topic: conceptual
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298536"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684011"
 ---
 # <a name="walkthrough-use-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 
@@ -35,15 +35,15 @@ Sie können MSBuild in Visual Studio oder im **Befehlsfenster** ausführen. In d
 
 ::: moniker range="vs-2017"
 
-Wenn Sie über Visual Studio verfügen, ist MSBuild bereits installiert. Navigieren Sie zu [Visual Studio older downloads](https://visualstudio.microsoft.com/vs/older-downloads/) (Ältere Visual Studio-Downloads), erweitern Sie **Visual Studio 2017** , und klicken Sie auf die Schaltfläche **Download** , um MSBuild 15 auf einem System zu installieren, auf dem Visual Studio nicht installiert ist. Wenn Sie ein Visual Studio-Abonnement besitzen, melden Sie sich an, und suchen Sie den Link zum Herunterladen der neuesten Version der **Buildtools für Visual Studio 2017** . Wenn Sie noch nicht über ein Visual Studio-Abonnement verfügen, können Sie die neueste Version der Buildtools installieren. Verwenden Sie auf dieser Seite die Versionsauswahl, um auf der Seite zu Version 2019 zu wechseln, und befolgen Sie die Installationsanweisungen.
+Wenn Sie über Visual Studio verfügen, ist MSBuild bereits installiert. Navigieren Sie zu [Visual Studio older downloads](https://visualstudio.microsoft.com/vs/older-downloads/) (Ältere Visual Studio-Downloads), erweitern Sie **Visual Studio 2017**, und klicken Sie auf die Schaltfläche **Download**, um MSBuild 15 auf einem System zu installieren, auf dem Visual Studio nicht installiert ist. Wenn Sie ein Visual Studio-Abonnement besitzen, melden Sie sich an, und suchen Sie den Link zum Herunterladen der neuesten Version der **Buildtools für Visual Studio 2017**. Wenn Sie noch nicht über ein Visual Studio-Abonnement verfügen, können Sie die neueste Version der Buildtools installieren. Verwenden Sie auf dieser Seite die Versionsauswahl, um auf der Seite zu Version 2019 zu wechseln, und befolgen Sie die Installationsanweisungen.
 ::: moniker-end
 
 ::: moniker range="vs-2019"
-Wenn Sie über Visual Studio verfügen, ist MSBuild bereits installiert. Bei Visual Studio 2019 erfolgt die Installation im Installationsordner von Visual Studio. Bei einer typischen Standardinstallation unter Windows 10 befindet sich MSBuild.exe im Installationsordner *MSBuild\Current\Bin* .
+Wenn Sie über Visual Studio verfügen, ist MSBuild bereits installiert. Bei Visual Studio 2019 erfolgt die Installation im Installationsordner von Visual Studio. Bei einer typischen Standardinstallation unter Windows 10 befindet sich MSBuild.exe im Installationsordner *MSBuild\Current\Bin*.
 
 Navigieren Sie zu [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/) (Visual Studio-Downloads), scrollen Sie nach unten zu **All Downloads** (Alle Downloads), und erweitern Sie **Tools for Visual Studio 2019** (Tools für Visual Studio 2019), um MSBuild auf einem System zu installieren, auf dem Visual Studio nicht installiert ist. Installieren Sie **Build Tools for Visual Studio 2019** (Buildtools für Visual Studio 2019) (umfasst MSBuild) oder das [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk).
 
-Stellen Sie im Installationsprogramm sicher, dass die MSBuild-Tools für die verwendeten Arbeitsauslastungen ausgewählt sind, und klicken Sie auf **Installieren** .
+Stellen Sie im Installationsprogramm sicher, dass die MSBuild-Tools für die verwendeten Arbeitsauslastungen ausgewählt sind, und klicken Sie auf **Installieren**.
 
 ![Installieren von MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
 
@@ -58,17 +58,17 @@ Stellen Sie im Installationsprogramm sicher, dass die MSBuild-Tools für die ver
 1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC** , um das Startfenster zu schließen. Geben Sie **STRG + Q** zum Öffnen des Suchfelds ein, geben Sie **winforms** ein, und wählen Sie dann **Neue Windows Forms-App (.NET Framework) erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** zum Öffnen des Suchfelds ein, geben Sie **winforms** ein, und wählen Sie dann **Neue Windows Forms-App (.NET Framework) erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
-    Geben Sie im Feld **Name**`BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Übernehmen Sie die Standardwerte für **Lösung** , **Projektmappenname** ( **BuildApp** ) und **Framework** .
+    Geben Sie im Feld **Name**`BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Übernehmen Sie die Standardwerte für **Lösung**, **Projektmappenname** (**BuildApp**) und **Framework**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt** . Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#**  > **Windows Desktop** , und wählen Sie dann **Windows Forms-App (.NET Framework)** aus. Wählen Sie dann **OK** aus.
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#**  > **Windows Desktop**, und wählen Sie dann **Windows Forms-App (.NET Framework)** aus. Wählen Sie dann **OK** aus.
 
-    Geben Sie im Feld **Name**`BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Übernehmen Sie die Standardwerte für **Projektmappenverzeichnis erstellen** (ausgewählt), **Zur Quellcodeverwaltung hinzufügen** (nicht ausgewählt) und **Projektmappenname** ( **BuildApp** ).
+    Geben Sie im Feld **Name**`BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Übernehmen Sie die Standardwerte für **Projektmappenverzeichnis erstellen** (ausgewählt), **Zur Quellcodeverwaltung hinzufügen** (nicht ausgewählt) und **Projektmappenname** (**BuildApp**).
     ::: moniker-end
 
-1. Klicken Sie auf **OK** oder **Erstellen** , um die Projektdatei zu erstellen.
+1. Klicken Sie auf **OK** oder **Erstellen**, um die Projektdatei zu erstellen.
 
 ## <a name="examine-the-project-file"></a>Überprüfen der Projektdatei
 
@@ -76,11 +76,11 @@ Stellen Sie im Installationsprogramm sicher, dass die MSBuild-Tools für die ver
 
 **So überprüfen Sie die Projektdatei**
 
-1. Klicken Sie im **Projektmappen-Explorer** auf den Projektknoten **BuildApp** .
+1. Klicken Sie im **Projektmappen-Explorer** auf den Projektknoten **BuildApp**.
 
-1. Im **Eigenschaftenbrowser** wird als **Projektdatei** -Eigenschaft *BuildApp.csproj* angezeigt. Alle Projektdateien werden mit dem Suffix *PROJ* benannt. Wenn Sie ein Visual Basic-Projekt erstellt hätten, wäre der Projektdateiname *BuildApp.vbproj* .
+1. Im **Eigenschaftenbrowser** wird als **Projektdatei**-Eigenschaft *BuildApp.csproj* angezeigt. Alle Projektdateien werden mit dem Suffix *PROJ* benannt. Wenn Sie ein Visual Basic-Projekt erstellt hätten, wäre der Projektdateiname *BuildApp.vbproj*.
 
-1. Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten, klicken Sie dann auf **BuildApp.csproj bearbeiten** . 
+1. Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten, klicken Sie dann auf **BuildApp.csproj bearbeiten**. 
 
      Die Projektdatei wird im Code-Editor angezeigt.
 
@@ -163,13 +163,13 @@ Führen Sie MSBuild über die **Developer-Eingabeaufforderung** für Visual Stud
 
 **So erstellen Sie das Ziel:**
 
-1. Öffnen Sie das **Befehlsfenster** .
+1. Öffnen Sie das **Befehlsfenster**.
 
    (Windows 10) Geben Sie den Namen des Tools im Suchfeld auf der Taskleiste ein, z. B. `dev` oder `developer command prompt`. Dadurch wird eine Liste der installierten Apps angezeigt, die Ihrem Suchmuster entsprechen.
 
-   Wenn Sie die Datei *LaunchDevCmd.bat* manuell suchen müssen, finden Sie sie im Ordner *<Visualstudio-Installationsordner\>\<version>\Common7\Tools* .
+   Wenn Sie die Datei *LaunchDevCmd.bat* manuell suchen müssen, finden Sie sie im Ordner *<Visualstudio-Installationsordner\>\<version>\Common7\Tools*.
 
-2. Navigieren Sie im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall *D:\BuildApp\BuildApp* .
+2. Navigieren Sie im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall *D:\BuildApp\BuildApp*.
 
 3. Führen Sie MSBuild mit dem Befehlsparameter `-t:HelloWorld` aus. Damit wird das Ziel HelloWorld ausgewählt und erstellt:
 
@@ -177,7 +177,7 @@ Führen Sie MSBuild über die **Developer-Eingabeaufforderung** für Visual Stud
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Untersuchen Sie die Ausgabe im **Befehlsfenster** . Die beiden Zeilen "Hello" und "World" sollten angezeigt werden:
+4. Untersuchen Sie die Ausgabe im **Befehlsfenster**. Die beiden Zeilen "Hello" und "World" sollten angezeigt werden:
 
     ```output
     Hello
@@ -351,7 +351,7 @@ Alle Elemente sind untergeordnete Elemente von ItemGroup-Elementen. Der Elementn
 </ItemGroup>
 ```
 
-definiert eine Elementgruppe mit zwei Elementen. Der Elementtyp „Compile“ verfügt über zwei Werte: *Program.cs* und *Properties\AssemblyInfo.cs* .
+definiert eine Elementgruppe mit zwei Elementen. Der Elementtyp „Compile“ verfügt über zwei Werte: *Program.cs* und *Properties\AssemblyInfo.cs*.
 
 Mit folgendem Code wird der gleiche Elementtyp erstellt, indem die beiden durch ein Semikolon getrennten Dateien in einem Include-Attribut deklariert werden.
 
@@ -460,7 +460,7 @@ Wenn Sie das Trennzeichen für einen Elementtyp ändern möchten, verwenden Sie 
 <Photos Include="images\*.gif" />
 ```
 
- erstellt den Elementtyp „Photo“ mit allen Dateien im Ordner *images* , die die Dateierweiterung *JPEG* oder *GIF* aufweisen. Dies entspricht der folgenden Zeile:
+ erstellt den Elementtyp „Photo“ mit allen Dateien im Ordner *images*, die die Dateierweiterung *JPEG* oder *GIF* aufweisen. Dies entspricht der folgenden Zeile:
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
@@ -481,7 +481,7 @@ Das Exclude-Attribut wirkt sich nur auf die Elemente aus, die über das Include-
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
-In diesem Beispiel wird die Datei *Form1.cs* , die im vorherigen Elementelement hinzugefügt wurde, nicht ausgeschlossen.
+In diesem Beispiel wird die Datei *Form1.cs*, die im vorherigen Elementelement hinzugefügt wurde, nicht ausgeschlossen.
 
 **So schließen Sie Elemente ein oder aus**
 

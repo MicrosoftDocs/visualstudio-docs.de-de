@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dad71e4f52350357106ee9a9ef9ce90d18204bfb
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 17a02fb8c05c6f1720aa1b352e30c46e04a8b69d
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92157374"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684088"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
 
@@ -55,7 +55,7 @@ Gehen Sie folgendermaßen vor:
 
 1. Suchen Sie den Visual Studio-Installer auf Ihrem Computer.
 
-     Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V** , wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
+     Auf einem Computer mit Windows 10 wählen Sie beispielsweise **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.
 
      ![Visual Studio-Installer](media/locate-the-visual-studio-installer.png "Suchen des Microsoft Visual Studio-Installers")
 
@@ -67,7 +67,7 @@ Gehen Sie folgendermaßen vor:
      ![Starten oder Ändern von Visual Studio](media/modify-visual-studio.png "Ändern von Visual Studio 2017")
 
      > [!IMPORTANT]
-     > Bei einem ausstehenden Update befindet sich die Schaltfläche „Ändern“ an einer anderen Stelle. Auf diese Weise können Sie bei Bedarf Visual Studio ohne Aktualisierung ändern. Klicken Sie auf **Mehr** , und wählen Sie dann **Ändern** .
+     > Bei einem ausstehenden Update befindet sich die Schaltfläche „Ändern“ an einer anderen Stelle. Auf diese Weise können Sie bei Bedarf Visual Studio ohne Aktualisierung ändern. Klicken Sie auf **Mehr**, und wählen Sie dann **Ändern**.
      >
      > ![Aktualisieren oder Ändern von Visual Studio](media/modify-or-update-visual-studio.png "Aktualisieren oder Ändern von Visual Studio 2017")
 
@@ -88,7 +88,7 @@ Gehen Sie folgendermaßen vor:
 
     Möglicherweise müssen Sie den Installer aktualisieren, bevor Sie fortfahren. Wenn dies der Fall ist, befolgen Sie die Anweisungen.
 
-1. Suchen Sie im Installer nach der Edition von Visual Studio, die Sie installiert haben, und klicken Sie dann auf **Ändern** .
+1. Suchen Sie im Installer nach der Edition von Visual Studio, die Sie installiert haben, und klicken Sie dann auf **Ändern**.
 
      ![Auswählen der Visual Studio-Edition und anschließende Bearbeitung](media/vs-2019/vs-installer-modify.png "Auswählen der Visual Studio 2019-Edition und anschließende Bearbeitung")
 
@@ -115,9 +115,9 @@ Gehen Sie folgendermaßen vor:
 
     Die Option „Alle herunterladen und dann installieren“ ist praktisch, wenn Sie zuerst alle Dateien herunterladen und die Installation später durchführen möchten.
 
-1. Klicken Sie auf **Ändern** .
+1. Klicken Sie auf **Ändern**.
 
-1. Klicken Sie im Visual Studio-Installer auf **Starten** , nachdem die neuen Workloads installiert wurden, um Visual Studio zu öffnen.
+1. Klicken Sie im Visual Studio-Installer auf **Starten**, nachdem die neuen Workloads installiert wurden, um Visual Studio zu öffnen.
 
 ::: moniker-end
 
@@ -138,9 +138,9 @@ Gehen Sie folgendermaßen vor:
 
     Die Option „Alle herunterladen und dann installieren“ ist praktisch, wenn Sie zuerst alle Dateien herunterladen und die Installation später durchführen möchten.
 
-1. Klicken Sie auf **Ändern** .
+1. Klicken Sie auf **Ändern**.
 
-1. Klicken Sie im Visual Studio-Installer auf **Starten** , nachdem die neuen Workloads installiert wurden, um Visual Studio zu öffnen.
+1. Klicken Sie im Visual Studio-Installer auf **Starten**, nachdem die neuen Workloads installiert wurden, um Visual Studio zu öffnen.
 
 ::: moniker-end
 

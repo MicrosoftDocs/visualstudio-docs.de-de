@@ -1,5 +1,7 @@
 ---
 title: API-Funktionen der Quellcodeverwaltungs-Plug-in | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Funktionen, die von der API für Quellcodeverwaltungs-Plug-ins bereitstellen, die vom Quellcodeverwaltungs-Plug-in implementiert werden müssen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce685729dda8750d772e244398b736cff4951b72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699922"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715989"
 ---
 # <a name="source-control-plug-in-api-functions"></a>API-Funktionen von Quellcodeverwaltungs-Plug-Ins
 Die Quellcodeverwaltungs-Plug-in-API bietet die folgenden Funktionen, die in Übereinstimmung mit dieser API vom Quellcodeverwaltungs-Plug-in implementiert werden müssen. Die Signaturen der einzelnen Funktionen und der Semantik, die den Bitflags und anderen Parametern zugeordnet sind, werden in dieser Referenz ausführlich beschrieben.

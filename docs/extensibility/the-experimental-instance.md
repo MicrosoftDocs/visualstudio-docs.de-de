@@ -1,5 +1,7 @@
 ---
 title: Die experimentelle Instanz | Microsoft-Dokumentation
+description: Erfahren Sie, wie das Visual Studio SDK einen experimentellen Bereich bereitstellt, um nicht getestete Anwendungen im Debugmodus auszuführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699040"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715859"
 ---
 # <a name="the-experimental-instance"></a>Die experimentelle Instanz
 Um Ihre Visual Studio-Entwicklungsumgebung vor nicht getesteten Anwendungen zu schützen, die Sie möglicherweise ändern, bietet das VSSDK einen experimentellen Bereich, mit dem Sie experimentieren können. Sie entwickeln neue Anwendungen wie gewohnt mithilfe von Visual Studio, führen Sie jedoch mit dieser experimentellen Instanz aus.

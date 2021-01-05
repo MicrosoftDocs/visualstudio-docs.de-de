@@ -1,5 +1,7 @@
 ---
 title: Einstieg in die Entwicklung von Visual Studio-Erweiterungen | Microsoft-Dokumentation
+description: Informieren Sie sich über einige häufig gestellte Fragen, die beim ersten Erstellen einer Visual Studio-Erweiterung auftreten können.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099387"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715261"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Beginnen mit der Entwicklung von Visual Studio-Erweiterungen
 
@@ -49,7 +51,7 @@ In der Praxis haben wir festgestellt, dass die Funktionen, die die meisten Benut
 
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md): Hinzufügen eigener Elemente zu Visual Studio-Menüs und-Symbolleisten. Sie können Sie verwenden, um neue Visual Studio-Funktionen oder eigene externe Hilfsanwendungen zu starten. Sie können auch benutzerdefinierte Tastenkombinationen für die Menü Elemente bereitstellen.
 
-- [Erweitern und Anpassen von Tool Fenstern](../extensibility/extending-and-customizing-tool-windows.md): Erweitern Sie vorhandene Tool Fenster, oder erstellen Sie eigene Tool Fenster. Beispielsweise können Sie den **Eigenschaften**neue Eigenschaften hinzufügen, oder Sie können ein neues Tool Fenster erstellen, um zusätzliche Funktionen hinzuzufügen.
+- [Erweitern und Anpassen von Tool Fenstern](../extensibility/extending-and-customizing-tool-windows.md): Erweitern Sie vorhandene Tool Fenster, oder erstellen Sie eigene Tool Fenster. Beispielsweise können Sie den **Eigenschaften** neue Eigenschaften hinzufügen, oder Sie können ein neues Tool Fenster erstellen, um zusätzliche Funktionen hinzuzufügen.
 
 - [Editor-und Sprachdienst Erweiterungen](../extensibility/editor-and-language-service-extensions.md): Fügen Sie Ihren eigenen Anpassungen zu IntelliSense für Visual Studio-Sprachen hinzu, oder erstellen Sie Unterstützung für neue Programmiersprachen. Sie können neue-Anweisungs Vervollständigungen, Vorschläge und neue Quick Infos erstellen. Mit Glühbirnen können Sie refactoringvorschläge und Code Korrekturen hinzufügen, um neue Programmiersprachen zu unterstützen.
 

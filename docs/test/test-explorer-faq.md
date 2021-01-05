@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330172"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668585"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio-Test-Explorer – häufig gestellte Fragen
 
@@ -97,13 +97,13 @@ Die Symbole neben den Gruppierungen „Projekt“, „Namespace“ und „Klasse
 
 **Im Test-Explorer-Suchfeld ist kein Dateipfadfilter mehr vorhanden.**
 
-Der Dateipfadfilter im Suchfeld **Test-Explorer** wurde in Visual Studio 2017 Version 15.7 entfernt. Dieses Feature wurde wenig genutzt, und der Test-Explorer kann Testmethoden durch Ausschluss dieses Features schneller abrufen. Wenn diese Änderung Ihren Entwicklungsablauf unterbricht, teilen Sie uns dies über die [Entwicklercommunity](https://developercommunity.visualstudio.com/) mit.
+Der Dateipfadfilter im Suchfeld **Test-Explorer** wurde in Visual Studio 2017 Version 15.7 entfernt. Dieses Feature wurde wenig genutzt, und der Test-Explorer kann Testmethoden durch Ausschluss dieses Features schneller abrufen. Wenn diese Änderung Ihren Entwicklungsablauf unterbricht, teilen Sie uns dies über die [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) mit.
 
 ## <a name="remove-undocumented-interfaces"></a>Entfernen nicht dokumentierter Schnittstellen
 
 **Einige testbezogene APIs sind in Visual Studio 2019 nicht länger enthalten. Was hat sich geändert?**
 
-In Visual Studio 2019 werden einige Testfenster-APIs entfernt, die zuvor als öffentlich markiert waren, aber nie offiziell dokumentiert wurden. Diese wurden als frühe Warnung für die Erweiterungsverwaltung in Visual Studio 2017 als „veraltet“ gekennzeichnet. Nach unserer Erkenntnis wurden diese APIs nur durch sehr wenige Erweiterungen ermittelt und mit einer Abhängigkeit konfiguriert. Dies waren `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` und `SearchFilterTokenType`. Wenn sich diese Änderung auf Ihre Erweiterung auswirkt, teilen Sie uns dies mit, indem Sie einen Fehler in der [Entwicklercommunity](https://developercommunity.visualstudio.com) melden.
+In Visual Studio 2019 werden einige Testfenster-APIs entfernt, die zuvor als öffentlich markiert waren, aber nie offiziell dokumentiert wurden. Diese wurden als frühe Warnung für die Erweiterungsverwaltung in Visual Studio 2017 als „veraltet“ gekennzeichnet. Nach unserer Erkenntnis wurden diese APIs nur durch sehr wenige Erweiterungen ermittelt und mit einer Abhängigkeit konfiguriert. Dies waren `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` und `SearchFilterTokenType`. Wenn sich diese Änderung auf Ihre Erweiterung auswirkt, teilen Sie uns dies mit, indem Sie einen Fehler in der [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) melden.
 
 ## <a name="test-adapter-nuget-reference"></a>NuGet-Verweis auf Testadapter
 

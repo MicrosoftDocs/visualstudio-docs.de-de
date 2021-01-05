@@ -1,5 +1,7 @@
 ---
 title: Abonnieren eines Ereignisses | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Tool Fenster erstellen, das auf Ereignisse in einer laufenden Dokument Tabelle im Visual Studio SDK antwortet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +13,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aefe2efce897aefc26f63835844b0cc705fb5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c739dad7be8d2a000662eca478bc117699694c8a
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699688"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715872"
 ---
 # <a name="subscribing-to-an-event"></a>Abonnieren eines Ereignisses
 In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Tool Fenster erstellt wird, das auf Ereignisse in einer laufenden dokumententabelle (RDT) antwortet. Ein Tool Fenster hostet ein Benutzer Steuerelement, das implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> . Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Methode verbindet die-Schnittstelle mit den Ereignissen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="subscribing-to-rdt-events"></a>Abonnieren von RDT-Ereignissen
 
 #### <a name="to-create-an-extension-with-a-tool-window"></a>So erstellen Sie eine Erweiterung mit einem Tool Fenster
 
-1. Erstellen Sie ein Projekt mit dem Namen **rdtexplorer** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Tool Fenster-Element Vorlage mit dem Namen **rdtexplorerwindow**hinzu.
+1. Erstellen Sie ein Projekt mit dem Namen **rdtexplorer** mithilfe der VSIX-Vorlage, und fügen Sie eine benutzerdefinierte Tool Fenster-Element Vorlage mit dem Namen **rdtexplorerwindow** hinzu.
 
      Weitere Informationen zum Erstellen einer Erweiterung mit einem Tool Fenster finden Sie unter [Erstellen einer Erweiterung mit einem Tool Fenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
@@ -62,7 +64,7 @@ In dieser exemplarischen Vorgehensweise wird erläutert, wie ein Tool Fenster er
 
 4. Implementieren Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
 
-    - Implementieren Sie die-Schnittstelle. Platzieren Sie den Cursor auf dem IVsRunningDocTableEvents-Namen. Am linken Rand sollte eine Glühbirne angezeigt werden. Klicken Sie rechts neben der Glühbirne auf den Pfeil nach unten, und wählen Sie **Schnittstelle implementieren**aus.
+    - Implementieren Sie die-Schnittstelle. Platzieren Sie den Cursor auf dem IVsRunningDocTableEvents-Namen. Am linken Rand sollte eine Glühbirne angezeigt werden. Klicken Sie rechts neben der Glühbirne auf den Pfeil nach unten, und wählen Sie **Schnittstelle implementieren** aus.
 
 5. Ersetzen Sie in jeder Methode in der Schnittstelle die Zeile `throw new NotImplementedException();` durch Folgendes:
 

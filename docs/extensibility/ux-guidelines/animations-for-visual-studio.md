@@ -1,5 +1,7 @@
 ---
 title: Animationen für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Regeln, mit denen konsistente und benutzerfreundliche Animations Stile in der Visual Studio-IDE sichergestellt werden.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698609"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715950"
 ---
 # <a name="animations-for-visual-studio"></a>Animationen für Visual Studio
 ## <a name="animation-fundamentals"></a>Grundlagen der Animation
@@ -43,7 +45,7 @@ Befolgen Sie diese Regeln, um konsistente und benutzerfreundliche Animations Sti
 
 - **Die Feinheit ist wichtig.** In den meisten Fällen ist es nicht erforderlich, dass die Animation eine Benutzer Aufmerksamkeit erfordert, um ihren Zweck zu erfüllen. Feine Änderungen an zeitlichen Steuerung, Sequenzierung und Verhalten können die Wahrnehmung erheblich beeinträchtigen und den Unterschied zwischen einer effektiven und ineffektiven Animation ausmachen.
 
-- Wenn Sie Animationen verwenden, um auf etwas zu achten, **sollten Sie sicherstellen, dass es sich lohnt, den**Gedanken Aufwand des Benutzers zu unterbrechen.
+- Wenn Sie Animationen verwenden, um auf etwas zu achten, **sollten Sie sicherstellen, dass es sich lohnt, den** Gedanken Aufwand des Benutzers zu unterbrechen.
 
 - **Beim Anzeigen von Fortschritt oder Status** durch Animation:
 
@@ -84,7 +86,7 @@ In der Visual Studio-Benutzeroberfläche funktioniert Animation nur als Kommunik
 
  UI-Animationen funktionieren in der Regel auf vier Arten: visualisieren, berücksichtigen, simulieren und Reaktionszeiten/Fortschrittsindikatoren.
 
-#### <a name="visualize"></a>Visualisierung
+#### <a name="visualize"></a>Visualisieren
 Animation kann die dreidimensionale Natur von Objekten hervorheben und es Benutzern erleichtern, ihre räumliche Struktur visuell darzustellen. Um dies zu erreichen, muss die Animation das Objekt möglicherweise in einem vollständigen Kreis drehen, Sie langsam hin-und Herdrehen, oder das Objekt näher anweisen und seine Größe leicht erhöhen, um das Rollover oder den Fokus hervorzuheben.
 
 Obwohl dreidimensionale Objekte mit dem Benutzer Steuerelement verschoben werden können, sollte der Designer im Voraus (Programm gesteuert oder manuell) bestimmen, wie eine Bewegung am besten animiert werden kann, die ein optimales Verständnis des Objekts bietet. Diese programmierte Animation kann dann vom Benutzer aktiviert werden, indem der Cursor über dem Objekt platziert wird, während benutzergesteuerte Bewegungen erfordern, dass der Benutzer wissen muss, wie das Objekt bearbeitet wird. Beschränken Sie die Bewegung auf eine einzelne Achse oder Ausrichtung auf eine Uhrzeit. Skalieren, drehen oder übersetzen, aber nicht mehr als eins gleichzeitig ausführen.
@@ -330,7 +332,7 @@ Als animierter Übergang, wenn ein Benutzeroberflächen Element die Position von
 ##### <a name="example"></a>Beispiel
 Neuanordnen von Registerkarten
 
-#### <a name="rotate"></a>Drehen
+#### <a name="rotate"></a>Rotate
 Bei diesem Muster wird das UI-Element rotiert.
 
 ![Animation der UI-Element Rotation](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animation der UI-Element Rotation

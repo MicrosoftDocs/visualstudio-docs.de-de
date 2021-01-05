@@ -3,7 +3,7 @@ title: Ändern von Designs, Schriftarten, Text und Kontrast für Barrierefreihei
 description: Erfahren Sie, wie Sie zugunsten von Benutzerfreundlichkeit und Barrierefreiheit Farbdesigns, Schriftfarben und Textgrößen ändern und besonders kontrastreiche Farben verwenden können.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801437"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683901"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Vorgehensweise: Ändern von Schriftarten, Farben und Designs in Visual Studio
 
@@ -80,7 +80,7 @@ Sie können die Schriftart und Textgröße für alle IDE-Rahmen- und Toolfenster
 
 1. Klicken Sie in der Optionsliste auf **Umgebung** > **Schriftarten und Farben**.
 
-1. Wählen Sie in der Liste **Einstellungen anzeigen für** die Option **Text-Editor**aus.
+1. Wählen Sie in der Liste **Einstellungen anzeigen für** die Option **Text-Editor** aus.
 
    ![Screenshot des Dialogfelds „Optionen“ zum Ändern von Schriftarten und Farben im Editor](media/fonts-colors-text-editor.png "Screenshot des Dialogfelds „Optionen“ zum Ändern von Schriftarten und Farben im Editor")
 
@@ -116,7 +116,7 @@ Gehen Sie wie folgt vor, um die Visual Studio-Option „Zusätzlicher Kontrast�
 Weitere Informationen zu anderen Visual Studio-Barrierefreiheitsoptionen, die Ihnen zur Verfügung stehen, finden Sie auf der Seite [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md).
 
 > [!TIP]
-> Wenn es eine Barrierefreiheitsoption für Farben oder Schriftarten gibt, die Ihrer Meinung nach sinnvoll sein könnte, aber derzeit nicht in Visual Studio verfügbar ist, teilen Sie uns dies mit, indem Sie **Feature vorschlagen** in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/) auswählen. Weitere Informationen zu diesem Forum und seiner Funktionsweise finden Sie auf der Seite [Vorschlagen eines Features für Visual Studio](../ide/suggest-a-feature.md).
+> Wenn es eine Barrierefreiheitsoption für Farben oder Schriftarten gibt, die Ihrer Meinung nach sinnvoll sein könnte, aber derzeit nicht in Visual Studio verfügbar ist, teilen Sie uns dies mit, indem Sie **Feature vorschlagen** in der [Visual Studio-Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) auswählen. Weitere Informationen zu diesem Forum und seiner Funktionsweise finden Sie auf der Seite [Vorschlagen eines Features für Visual Studio](../ide/suggest-a-feature.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: f27ccf9440d0f01a5a41d69e753a6d83f81c5263
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007121"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668533"
 ---
 # <a name="repair-visual-studio"></a>Reparieren Sie Visual Studio.
 
@@ -32,14 +32,14 @@ Es kann vorkommen, dass Ihre Visual Studio-Installation beschädigt wird oder fe
 > Wenn das Installationsproblem durch ein Problem in einem zugrunde liegenden Windows-Dienst, wie Windows Installer, verursacht wird, kann die Reparatur auf dasselbe Problem stoßen. Zu systemischen Problemen können ein defekter Windows Installer oder eine instabile Internetverbindung gehören. Um auf ein systemisches Problem zu prüfen, verwenden Sie den beim Installationsvorgang generierten Fehlerbericht.
 
 > [!NOTE] 
-> Bei der Reparatur von Visual Studio werden die Benutzereinstellungen zurückgesetzt und die bereits vorhandenen Assemblys neu installiert. Wenn ein Produktproblem auftritt, erstellen Sie ein [Visual Studio-Feedbackticket](https://developercommunity.visualstudio.com/content/problem/post.html?space=8), da eine Reparatur das Problem möglicherweise nicht behebt.
+> Bei der Reparatur von Visual Studio werden die Benutzereinstellungen zurückgesetzt und die bereits vorhandenen Assemblys neu installiert. Wenn ein Produktproblem auftritt, erstellen Sie ein [Visual Studio-Feedbackticket](https://aka.ms/feedback/suggest?space=8), da eine Reparatur das Problem möglicherweise nicht behebt.
 
 ## <a name="how-to-repair"></a>Vorgehensweise bei der Reparatur
 ::: moniker range="vs-2017"
 
 1. Suchen Sie den **Visual Studio-Installer** auf Ihrem Computer.
 
-     Auf einem Computer mit Windows 10 Anniversary Update oder höher klicken Sie beispielsweise auf **Start** und scrollen dann zum Buchstaben **V** . Dort wird das Installationsprogramm als **Visual Studio-Installer** angezeigt.
+     Auf einem Computer mit Windows 10 Anniversary Update oder höher klicken Sie beispielsweise auf **Start** und scrollen dann zum Buchstaben **V**. Dort wird das Installationsprogramm als **Visual Studio-Installer** angezeigt.
 
    > [!NOTE]
    > Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.

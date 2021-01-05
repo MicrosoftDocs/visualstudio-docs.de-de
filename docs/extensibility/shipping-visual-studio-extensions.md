@@ -1,5 +1,7 @@
 ---
 title: Versenden von Visual Studio-Erweiterungen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Ihre Visual Studio SDK-Erweiterung veröffentlichen und verwalten, einschließlich der Arbeit mit VSIX-Dateien, veröffentlichen, lokalisieren und aktualisieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700114"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716002"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Bereitstellen von Visual Studio-Erweiterungen
 Nachdem Sie die Entwicklung der Erweiterung abgeschlossen haben, können Sie Sie auf anderen Computern installieren, Sie für Ihre Freunde und Kollegen freigeben oder Sie auf der Visual Studio Marketplace veröffentlichen. In diesem Abschnitt werden alle Aufgaben erläutert, die Sie zum Veröffentlichen und Verwalten Ihrer Erweiterung ausführen müssen: Arbeiten mit VSIX-Dateien, veröffentlichen, lokalisieren und aktualisieren.
@@ -30,7 +32,7 @@ Nachdem Sie die Entwicklung der Erweiterung abgeschlossen haben, können Sie Sie
  Das VSIX-Format unterstützt die Installation von Code Ausschnitten nicht. Außerdem werden bestimmte andere Szenarien, z. b. das Schreiben in den globalen Assemblycache (GAC) oder die Systemregistrierung, nicht unterstützt. Wenn Sie in der-Installation in den GAC oder die Registrierung schreiben müssen, müssen Sie die Windows Installer verwenden. Weitere Informationen finden Sie unter [Vorbereiten von Erweiterungen für Windows Installer Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
 ## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Veröffentlichen der Erweiterung auf dem Visual Studio Marketplace
- Sie können Ihre Erweiterung einfach an andere Personen verteilen, indem Sie Sie per e-Mail an die vsix-Datei senden oder auf einem Server platzieren. Doch die beste Methode, um Ihren Code in die Hand zu bringen, ist die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Visual Studio Marketplace Erweiterungen sind für Visual Studio-Benutzer durch **Erweiterungen und Updates**verfügbar. Weitere Informationen [finden Sie untersuchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).
+ Sie können Ihre Erweiterung einfach an andere Personen verteilen, indem Sie Sie per e-Mail an die vsix-Datei senden oder auf einem Server platzieren. Doch die beste Methode, um Ihren Code in die Hand zu bringen, ist die [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Visual Studio Marketplace Erweiterungen sind für Visual Studio-Benutzer durch **Erweiterungen und Updates** verfügbar. Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md).
 
  Ein vollständiges Beispiel, das zeigt, wie eine Erweiterung in den Visual Studio Marketplace hochgeladen wird, finden Sie unter Exemplarische Vorgehensweise [: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 
@@ -57,6 +59,6 @@ Nachdem Sie die Entwicklung der Erweiterung abgeschlossen haben, können Sie Sie
 |[Gewusst wie: Hinzufügen einer Abhängigkeit zu einem VSIX-Paket](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Beschreibt das Hinzufügen von verweisen zu VSIX-Bereitstellungs Paketen.|
 |[Vorbereiten von Erweiterungen für die Windows Installer-Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Erläutert, wie Sie die Erweiterung mit Windows Installer bereitstellen.|
 |[Signieren von VSIX-Paketen](../extensibility/signing-vsix-packages.md)|Erläutert, wie VSIX-Pakete signiert werden.|
-|[Private Kataloge](../extensibility/private-galleries.md)|Erläutert, wie private Galerien für Erweiterungen erstellt werden.|
+|[Private Galerien](../extensibility/private-galleries.md)|Erläutert, wie private Galerien für Erweiterungen erstellt werden.|
 |[Unterstützen mehrerer Versionen von Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Zeigt, wie die Erweiterung mehrere Versionen von Visual Studio unterstützt.|
 |[Finden von Visual Studio](locating-visual-studio.md)|Beschreibt, wie Sie Visual Studio-Instanzen für die Bereitstellung benutzerdefinierter Erweiterungen suchen.|
