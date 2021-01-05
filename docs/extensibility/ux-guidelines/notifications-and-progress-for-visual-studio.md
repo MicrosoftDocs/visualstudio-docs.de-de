@@ -1,5 +1,7 @@
 ---
 title: Benachrichtigungen und Fortschritt für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über verschiedene Möglichkeiten, um Benutzer darüber zu informieren, was in Visual Studio in Bezug auf Ihre Software Entwicklungsaufgaben passiert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f6a7ddd5d1a5a7257617b03098722e1341017b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56acfd96f8d9be575f6e13c727a294f28301bef4
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699883"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863789"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Benachrichtigungen und Fortschritt für Visual Studio
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> Benachrichtigungs Systeme
@@ -181,9 +183,9 @@ ms.locfileid: "80699883"
  "Unbestimmt" bedeutet, dass der allgemeine Fortschritt eines Vorgangs oder Prozesses nicht bestimmt werden kann. Verwenden Sie für Vorgänge, die einen unbegrenzten Zeitraum erfordern oder auf eine unbekannte Anzahl von Objekten zugreifen, unbeschränkte Status leisten. Verwenden Sie eine Textbeschreibung, um zu beobachten, was passiert. Verwenden Sie Timeouts, um zeitbasierte Vorgänge zu Grenzen. Unbeendete Status leisten verwenden Animationen, um anzuzeigen, dass der Fortschritt ausgeführt wird, aber es werden keine weiteren Informationen bereitgestellt. Wählen Sie nicht nur basierend auf dem möglichen Mangel an Genauigkeit eine unbestimmte Statusanzeige aus.
 
 ##### <a name="determinate"></a>Bestimmte
- ![Festgelegte Fortschrittsleiste](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
+ ![Determinate der Statusanzeige](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
 
- **Festgelegte Fortschrittsleiste**
+ **Determinate der Statusanzeige**
 
  "Determinate" bedeutet, dass ein Vorgang oder ein Prozess einen begrenzten Zeitraum erfordert, auch wenn diese Zeitspanne nicht genau vorhergesagt werden kann. Geben Sie den Abschluss eindeutig an. Lassen Sie eine Statusanzeige nicht zu 100 Prozent wechseln, es sei denn, der Vorgang wurde abgeschlossen. Die determinate der Statusanzeige Animation wechselt von 0 nach rechts von 0 bis 100%.
 
@@ -286,7 +288,7 @@ ms.locfileid: "80699883"
 ### <a name="overview"></a>Übersicht
  Mit Info leisten erhält der Benutzer einen Indikator, der in der Nähe ihrer Aufmerksamkeit liegt, und die Verwendung des freigegebenen Info Leiste-Steuer Elements gewährleistet die Konsistenz bei visueller Darstellung und Interaktion.
 
- ![Infoleiste](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
+ ![Info Leiste](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
 
  **Info leisten in Visual Studio**
 

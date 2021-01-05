@@ -1,5 +1,7 @@
 ---
 title: Registrieren von einzelnen Datei Generatoren | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Tool in Visual Studio registrieren, um es zu instanziieren und einem bestimmten Projekttyp zuzuordnen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012034"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875257"
 ---
 # <a name="registering-single-file-generators"></a>Registrieren von Generatoren einzelner Dateien
 Um ein benutzerdefiniertes Tool in verfügbar zu machen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , müssen Sie es registrieren, damit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es instanziieren und einem bestimmten Projekttyp zuordnen kann.
@@ -40,7 +42,7 @@ Um ein benutzerdefiniertes Tool in verfügbar zu machen [!INCLUDE[vsprvs](../../
 
    - (Standardwert)
 
-        (Optional) Stellt eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools bereit. Dieser Parameter ist optional, wird jedoch empfohlen.
+        Optional. Stellt eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools bereit. Dieser Parameter ist optional, wird jedoch empfohlen.
 
    - CLSID
 
@@ -67,7 +69,7 @@ Um ein benutzerdefiniertes Tool in verfügbar zu machen [!INCLUDE[vsprvs](../../
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implementieren von Generatoren einzelner Dateien](../../extensibility/internals/implementing-single-file-generators.md)
 - [Verfügbarmachen von Typen für visuelle Designer](../../extensibility/internals/exposing-types-to-visual-designers.md)

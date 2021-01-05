@@ -1,5 +1,7 @@
 ---
 title: Schema Referenz für das Visual Studio-Vorlagen Manifest | Microsoft-Dokumentation
+description: Dieser Schema Verweis beschreibt das Format der Visual Studio-Vorlagen Manifest-Dateien, die für Visual Studio-Projekt-oder-Element Vorlagen generiert werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -8,15 +10,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbe46851d9df85569be796b4147217bd7db450ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697985"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863837"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Schema Referenz für das Visual Studio-Vorlagen Manifest
-Dieses Schema beschreibt das Format der*vstman*-Dateien (Visual Studio-Vorlagen Manifest), die für Visual Studio-Projekt-oder-Element Vorlagen generiert werden. Das Schema beschreibt auch den Speicherort und andere relevante Informationen zur Vorlage.
+Dieses Schema beschreibt das Format der *vstman*-Dateien (Visual Studio-Vorlagen Manifest), die für Visual Studio-Projekt-oder-Element Vorlagen generiert werden. Das Schema beschreibt auch den Speicherort und andere relevante Informationen zur Vorlage.
 
  : Da es separate Element-und Projektvorlagen Verzeichnisse gibt, sollte ein Manifest nie über eine Mischung aus Element-und Projektvorlagen verfügen.
 
@@ -39,7 +41,7 @@ Dieses Schema beschreibt das Format der*vstman*-Dateien (Visual Studio-Vorlagen 
 - **Vstemplatedir** Optionale.
 
 ### <a name="parent-element"></a>Übergeordnetes Element
- Keine
+ Keine.
 
 ## <a name="vstemplatecontainer"></a>Vstemplatecontainer
  Der Container der Vorlagen Manifest-Elemente. Ein Manifest weist einen Vorlagen Container für jede Vorlage auf, die er definiert.

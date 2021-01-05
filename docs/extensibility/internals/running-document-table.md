@@ -1,5 +1,7 @@
 ---
 title: Ausführen der dokumententabelle | Microsoft-Dokumentation
+description: Erfahren Sie, wie die Visual Studio-IDE die laufende Dokument Tabelle verwaltet, die alle geöffneten Dokumente im Arbeitsspeicher enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6aa882921786b1592922372581beae8c4c2443
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705568"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875647"
 ---
 # <a name="running-document-table"></a>Aktive Dokumenttabelle
 Die IDE verwaltet die Liste aller gegenwärtig geöffneten Dokumente in einer internen Struktur, die als Running Document Table (RDT) bezeichnet wird. Diese Liste enthält alle geöffneten Dokumente im Speicher, unabhängig davon, ob diese Dokumente gerade bearbeitet werden. Bei einem Dokument handelt es sich um ein beliebiges Element, das gespeichert wird, einschließlich Dateien in einem Projekt oder in der Hauptprojekt Datei (z. b. eine vcxproj-Datei).

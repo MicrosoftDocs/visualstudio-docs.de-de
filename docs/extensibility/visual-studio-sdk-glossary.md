@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK-Glossar | Microsoft-Dokumentation
+description: Dieses Glossar enthält Definitionen für Begriffe, die in der Visual Studio SDK-Dokumentation verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 332e606e689e9394f2fcdc8cbc902e2d4a6e5ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec8f6508c6b387ec51872f6e5b59b3f72a57d432
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698170"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863898"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK-Glossar
 Dieses Glossar enthält Definitionen für Begriffe, die in der- [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Dokumentation verwendet werden.
 
-## <a name="terms"></a>Begriffe
+## <a name="terms"></a>Bestimmungen
  Add-in: eine hilfsprogrammanwendung, ein Treiber oder eine andere Software, die einer primären Anwendung hinzugefügt wurde. In der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) von Visual Studio ist ein Add-in eine Automatisierungs basierte Anwendung, die die Funktionen der IDE erweitert.
 
  Automation-Modell das Automatisierungs Modell, das in früheren Versionen von Visual Studio als Erweiterbarkeits Modell bekannt ist, ist eine Programmierschnittstelle, die Ihnen den Zugriff auf die zugrunde liegenden Routinen ermöglicht, die die IDE steuern. Add-Ins, Assistenten und Makros verwenden Objekte im Automatisierungs Modell, um die Funktionalität der IDE zu steuern oder zu erweitern.
@@ -73,7 +75,7 @@ Dieses Glossar enthält Definitionen für Begriffe, die in der- [!INCLUDE[vsipsd
 
   unabhängige Komponente der obersten Ebene eine Komponente, die ein nicht modalem Fenster der obersten Ebene verwendet und effektiv als eigenständiges Anwendungsfenster fungieren kann, jedoch als in-Process-Objekt implementiert wird. Daher muss eine unabhängige Komponente der obersten Ebene die Modalität und Nachrichten Schleifen Dienste mit der IDE koordinieren. In-Process-Objekte haben keine eigene Nachrichten Schleife.
 
-  Informationsanbieter: der Informationsanbieter ist ein Modul, das Schlüsselwörter suchen und eine Liste von Themen in Form von Objekten zurückgeben kann `IVsUserContextItem` . Um **F1** -und Suche-Schlüsselwort Elemente für den Informationsanbieter bereitzustellen, registrieren Sie die kompilierte Hilfedatei (*. HxS*) mit dem System. Die Hilfe Themen in diesen Dateien stellen die Liste der Themen bereit, die im Fenster Dynamische Hilfe angezeigt werden, und zeigen an, ob ein Benutzer **F1**drückt.
+  Informationsanbieter: der Informationsanbieter ist ein Modul, das Schlüsselwörter suchen und eine Liste von Themen in Form von Objekten zurückgeben kann `IVsUserContextItem` . Um **F1** -und Suche-Schlüsselwort Elemente für den Informationsanbieter bereitzustellen, registrieren Sie die kompilierte Hilfedatei (*. HxS*) mit dem System. Die Hilfe Themen in diesen Dateien stellen die Liste der Themen bereit, die im Fenster Dynamische Hilfe angezeigt werden, und zeigen an, ob ein Benutzer **F1** drückt.
 
   direkte Komponente ein VSPackage-Objekt, das die- `IOleInPlaceComponent` Schnittstelle zum Verwalten eines Fensters implementiert, das in einem Dokument Fenster, das sich im Besitz der IDE befindet, visuell enthalten ist. Direkte Komponenten nehmen nicht an der standardmäßigen OLE-Menü Zusammenführung Teil. Stattdessen integrieren Sie die Elemente der Benutzeroberfläche in die IDE.
 

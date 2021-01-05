@@ -1,5 +1,7 @@
 ---
 title: Private Galerien | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Steuerelemente, Vorlagen und Tools freigeben, die Sie im Visual Studio SDK entwickeln, indem Sie Sie in einem privaten Katalog veröffentlichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444647"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863504"
 ---
-# <a name="private-galleries"></a>Private Galerien
+# <a name="private-galleries"></a>Private Kataloge
 Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, freigeben, indem Sie Sie wie folgt in einem *privaten* Katalog im Intranet für Ihre Organisation veröffentlichen:
 
 - Erstellen Sie einen Atom-Feed (RSS) an einem entsprechend konfigurierten zentralen Speicherort (Repository) im Intranet. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Atom-Feeds für einen privaten](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)Katalog.
@@ -34,7 +36,7 @@ Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, freigebe
 
 1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
-2. Wählen Sie im Knoten **Umgebung** die Option **Erweiterungen und Updates**aus.
+2. Wählen Sie im Knoten **Umgebung** die Option **Erweiterungen und Updates** aus.
 
 3. Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
@@ -51,7 +53,7 @@ Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, freigebe
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)
@@ -64,15 +66,15 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
  Weitere Informationen finden Sie unter Gewusst [wie: Verwalten einer privaten Galerie mithilfe von Registrierungs Einstellungen](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).
 
 ## <a name="install-extensions-from-a-private-gallery"></a>Installieren von Erweiterungen aus einem privaten Katalog
- Sie können Visual Studio-Erweiterungen in einer privaten Galerie in **Erweiterungen und Updates**suchen und installieren. In den folgenden Schritten wird eine private Galerie namens verwendet `My Gallery` .
+ Sie können Visual Studio-Erweiterungen in einer privaten Galerie in **Erweiterungen und Updates** suchen und installieren. In den folgenden Schritten wird eine private Galerie namens verwendet `My Gallery` .
 
  ![Erweiterungs-Manager – Installieren der privaten Galerie](../extensibility/media/em_.png "EM_")
 
 ### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>So suchen und installieren Sie Erweiterungen aus einem privaten Katalog
 
-1. Wählen **Sie in**der Menüleiste Extras  >  **Erweiterungen und Updates**aus.
+1. Wählen **Sie in** der Menüleiste Extras  >  **Erweiterungen und Updates** aus.
 
-2. Klicken Sie im linken Bereich auf **Online Erweiterungen**, und wählen Sie dann **meine Galerie**aus.
+2. Klicken Sie im linken Bereich auf **Online Erweiterungen**, und wählen Sie dann **meine Galerie** aus.
 
 3. Wählen Sie im rechten Bereich eine Erweiterung aus, und klicken Sie dann auf die Schaltfläche **herunterladen** .
 
@@ -83,12 +85,12 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>So aktualisieren Sie eine installierte Erweiterung aus einem privaten Katalog
 
-1. Wählen **Sie in**der Menüleiste Extras  >  **Erweiterungen und Updates**aus.
+1. Wählen **Sie in** der Menüleiste Extras  >  **Erweiterungen und Updates** aus.
 
-2. Klicken Sie im linken Bereich auf **Updates**, und wählen Sie dann **mein Repository**aus.
+2. Klicken Sie im linken Bereich auf **Updates**, und wählen Sie dann **mein Repository** aus.
 
 3. Wählen Sie im rechten Bereich eine Erweiterung aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)
 - [Lieferumfang von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)

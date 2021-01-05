@@ -1,5 +1,7 @@
 ---
 title: Details zur Konfiguration der Quell Code Verwaltung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Implementieren der Quell Code Verwaltung für einen Projekttyp in Visual Studio. dazu gehört das Konfigurieren des Projekt Systems oder Editors, um Berechtigungen anzufordern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf4a5c55e8093e5dcd6406cde1c60f642188495
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705294"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875504"
 ---
 # <a name="source-control-configuration-details"></a>Konfigurationsdetails für die Quellcodeverwaltung
 Um die Quell Code Verwaltung zu implementieren, müssen Sie das Projekt System oder den Editor ordnungsgemäß für folgende Aufgaben konfigurieren:
@@ -50,7 +52,7 @@ Um die Quell Code Verwaltung zu implementieren, müssen Sie das Projekt System o
 
  Für jede Aktion zum Hinzufügen, umbenennen und entfernen gibt es eine `OnQuery*` -Methode und eine- `OnAfter*` Methode. Ruft die- `OnQuery*` Methode auf, um die Berechtigung zum Hinzufügen, umbenennen oder Entfernen der Datei oder des Verzeichnisses anzufordern. Ruft die `OnAfter*` -Methode auf, nachdem die Datei oder das Verzeichnis hinzugefügt, umbenannt oder entfernt wurde und der Projektzustand den neuen Status wieder gibt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>

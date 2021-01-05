@@ -1,5 +1,7 @@
 ---
 title: Registrieren einer Legacy Sprache Service1 | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Registrieren eines Legacy sprach Dienstanbieter bei einem VSPackage mit Visual Studio, indem Sie Registrierungsschlüssel und Einträge hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c831ad3d2f4d75d57c48cfc7ba666d19b7a5e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238880"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875203"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>Registrieren eines Legacy sprach Dienstanbieter 1
 Im Managed Package Framework (MPF) wird der Sprachdienst von einem VSPackage (siehe [VSPackages](../../extensibility/internals/vspackages.md)) bereitgestellt und mit registriert, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] indem Registrierungsschlüssel und Einträge hinzugefügt werden. Dieser Registrierungsvorgang erfolgt teilweise während der Installation und teilweise zur Laufzeit.
@@ -128,7 +130,7 @@ namespace TestLanguagePackage
  Dieses Attribut registriert eine Eigenschaften Seite, die im Dialogfeld **Optionen** unter der Kategorie **Text-Editor** angezeigt werden soll. Verwenden Sie eines dieser Attribute für jede Seite, die für Ihren Sprachdienst angezeigt werden soll. Wenn Sie die Seiten in einer Baumstruktur organisieren müssen, verwenden Sie zusätzliche Attribute, um jeden Knoten der Struktur zu definieren.
 
 ### <a name="example"></a>Beispiel
- In diesem Beispiel werden zwei Eigenschaften Seiten, **Optionen** und **Einzug**sowie ein Knoten angezeigt, der die zweite Eigenschaften Seite enthält.
+ In diesem Beispiel werden zwei Eigenschaften Seiten, **Optionen** und **Einzug** sowie ein Knoten angezeigt, der die zweite Eigenschaften Seite enthält.
 
 ```csharp
 using Microsoft.VisualStudio.Shell;

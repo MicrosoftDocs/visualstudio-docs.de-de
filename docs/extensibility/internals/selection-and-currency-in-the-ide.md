@@ -1,5 +1,7 @@
 ---
 title: Auswahl und Währung in der IDE | Microsoft-Dokumentation
+description: Erfahren Sie, wie VSPackages an der Währungs Nachverfolgung teilnehmen. Die Visual Studio-IDE verwaltet Informationen zu den derzeit ausgewählten Objekten mithilfe des Auswahl Kontexts.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705572"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875595"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Auswahl und Aktualität in der IDE
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) verwaltet Informationen zu den derzeit ausgewählten Objekten von Benutzern mithilfe des Auswahl *Kontexts*. Mit dem Auswahl Kontext können VSPackages in zweierlei Hinsicht an der Währungs Nachverfolgung teilnehmen:

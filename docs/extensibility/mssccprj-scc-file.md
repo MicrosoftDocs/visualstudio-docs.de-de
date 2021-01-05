@@ -1,5 +1,7 @@
 ---
 title: Mssccprj. SCC-Datei | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Mssccprj. SCC-Datei, bei der es sich um eine lokale, Client seitige Datei handelt, die vom Quellcodeverwaltungs-Plug-in verwendet wird, die mit dem Visual Studio SDK verwendet werden kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89511b7c8b69c5793eceef7d58153dde253a4f47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702470"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863472"
 ---
 # <a name="mssccprjscc-file"></a>Mssccprj. SCC-Datei
 Wenn Sie eine Visual Studio-Projekt Mappe oder ein Projekt in der Quell Code Verwaltung mithilfe der IDE platzieren, empfängt die IDE zwei wichtige Informationen. Die Informationen stammen aus dem Quellcodeverwaltungs-Plug-in in Form von Zeichen folgen. Diese Zeichen folgen "", "" "" "" "" "" "" "" "" "" "" "" " Die IDE ruft diese Zeichen folgen in der Regel beim ersten Mal durch Aufrufen von [sccgetprojpath](../extensibility/sccgetprojpath-function.md)ab und speichert Sie dann in der Projekt Mappe oder Projektdatei für zukünftige Aufrufe von [sccopenproject](../extensibility/sccopenproject-function.md). Wenn Sie in die Projekt Mappe und die Projektdateien eingebettet sind, werden die Zeichen folgen "AUXPATH" und "ProjName" nicht automatisch aktualisiert, wenn ein Benutzer Projektmappen und Projektdateien, die sich in der Versionskontrolle befinden, verzweigt, verzweigt oder kopiert. Um sicherzustellen, dass die Projektmappen-und Projektdateien auf Ihren richtigen Speicherort in der Versionskontrolle zeigen, müssen die Benutzer die Zeichen folgen manuell aktualisieren. Da die Zeichen folgen als nicht transparent gemeint sind, ist es möglicherweise nicht immer klar, wie Sie aktualisiert werden sollten.

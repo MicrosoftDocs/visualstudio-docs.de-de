@@ -1,5 +1,7 @@
 ---
 title: Schriftarten und Formatierungen für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr Überschrift Arten und Formatierungen für neue Features, die Sie für Visual Studio entwerfen, einschließlich der Verwendung der Umgebungs Schriftart.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd2e8a41ef4b9708df079e94bcac8b8c06189116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15ba4307cc2941f0d978674eb224b717fdd8aaba
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536109"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863521"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierung für Visual Studio
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Die Schriftart der Umgebung
@@ -21,14 +23,14 @@ ms.locfileid: "85536109"
 
 - **Umgebungs Schriftart** : die primäre Schriftart für die IDE (integrierte Entwicklungsumgebung), die für alle Schnittstellen Elemente, einschließlich Dialogfeldern, Menüs, Tool Fenstern und Dokument Fenster, verwendet wird. Standardmäßig ist die Umgebungs Schriftart an eine System Schriftart gebunden, die in den aktuellen Versionen von Windows als 9 pt Segoe UI angezeigt wird. Durch die Verwendung einer Schriftart für alle Schnittstellen Elemente wird eine konsistente Schriftart Darstellung in der gesamten IDE sichergestellt.
 
-- **Text-Editor** -Elemente, die sich im Code und anderen textbasierten Editoren befinden, können auf der Seite Text-Editor in Extras **> Optionen**angepasst werden.
+- **Text-Editor** -Elemente, die sich im Code und anderen textbasierten Editoren befinden, können auf der Seite Text-Editor in Extras **> Optionen** angepasst werden.
 
-- **Bestimmte** Auflistungen: Designer Fenster, die Benutzeranpassungen ihrer Schnittstellen Elemente bieten, können Schriftarten, die für Ihre Entwurfs Oberfläche spezifisch sind, auf Ihrer eigenen Einstellungsseite unter Extras **> Optionen**verfügbar machen.
+- **Bestimmte** Auflistungen: Designer Fenster, die Benutzeranpassungen ihrer Schnittstellen Elemente bieten, können Schriftarten, die für Ihre Entwurfs Oberfläche spezifisch sind, auf Ihrer eigenen Einstellungsseite unter Extras **> Optionen** verfügbar machen.
 
 ### <a name="editor-font-customization-and-resizing"></a>Schriftart Anpassung von Editoren und Ändern der Größe
  Benutzer vergrößern oder verkleinern die Größe und/oder Farbe des Texts im Editor, unabhängig von der allgemeinen Benutzeroberfläche. Da die Umgebungs Schriftart für Elemente verwendet wird, die möglicherweise innerhalb von oder als Teil eines Editors/Designers angezeigt werden, ist es wichtig, das erwartete Verhalten zu beachten, wenn eine dieser Schriftart Klassifizierungen geändert wird.
 
- Beim Erstellen von UI-Elementen, die im Editor angezeigt werden, aber nicht Teil des *Inhalts*sind, ist es wichtig, die Umgebungs Schriftart und nicht die Text Schriftart zu verwenden, damit die Größe der Elemente auf vorhersagbare Weise geändert wird.
+ Beim Erstellen von UI-Elementen, die im Editor angezeigt werden, aber nicht Teil des *Inhalts* sind, ist es wichtig, die Umgebungs Schriftart und nicht die Text Schriftart zu verwenden, damit die Größe der Elemente auf vorhersagbare Weise geändert wird.
 
 1. Ändern Sie für Code Text im Editor die Größe mit der Schriftart für den Code Text, und reagieren Sie auf die Zoomstufe des Editor Texts.
 
@@ -120,16 +122,16 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 **Prozeduraler Code:** Dabei `textBlock` ist ein zuvor definiertes TextBlock, das `label` eine zuvor definierte Bezeichnung ist:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
 **XAML:** Legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt fest.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>
 ```
 
@@ -139,16 +141,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Prozeduraler Code:** Dabei `textBlock` ist ein zuvor definiertes TextBlock, das `label` eine zuvor definierte Bezeichnung ist:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);
 ```
 
  **XAML:** Legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt fest.
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>
 ```
 
@@ -158,16 +160,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Prozeduraler Code:** Dabei `textBlock` ist ein zuvor definiertes TextBlock, das `label` eine zuvor definierte Bezeichnung ist:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);
 ```
 
  **XAML:** Legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt fest:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>
 ```
 
@@ -177,16 +179,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Prozeduraler Code:** Dabei `textBlock` ist ein zuvor definiertes TextBlock, das `label` eine zuvor definierte Bezeichnung ist:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);
 ```
 
  **XAML:** Legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt fest:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>
 ```
 
@@ -196,16 +198,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Prozeduraler Code:** Dabei `textBlock` ist ein zuvor definiertes TextBlock, das `label` eine zuvor definierte Bezeichnung ist:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);
 ```
 
  **XAML:** Legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt fest:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>
 ```
 
@@ -215,16 +217,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Prozeduraler Code:** Dabei `textBlock` ist ein zuvor definiertes TextBlock, das `label` eine zuvor definierte Bezeichnung ist:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);
 ```
 
  **XAML:** Legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt fest:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>
 ```
 
@@ -234,16 +236,16 @@ label.SetResourceReference(Label.StyleProperty,  
  **Prozeduraler Code:** Dabei `textBlock` ist ein zuvor definiertes TextBlock, das `label` eine zuvor definierte Bezeichnung ist:
 
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,  
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey); 
-label.SetResourceReference(Label.StyleProperty,  
+textBlock.SetResourceReference(TextBlock.StyleProperty,  
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey); 
+label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironmentBoldStyleKey);
 ```
 
  **XAML:** Legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt fest:
 
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> 
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>
 ```
 
@@ -299,7 +301,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  In diesem Fall wird die Schriftart von "Benutzerinformationen" und "Produktinformationen" nicht beachtet. In manchen Fällen könnte dies eine explizite Entwurfs Auswahl sein, aber es kann ein Fehler sein, wenn die explizite Schriftart nicht als Teil der Redline-Spezifikationen angegeben wird.
 
- Klicken Sie zum Zurücksetzen der Schriftart unter Extras **> Optionen > Umgebung > Schriftarten und Farben**auf "Standardwerte verwenden".
+ Klicken Sie zum Zurücksetzen der Schriftart unter Extras **> Optionen > Umgebung > Schriftarten und Farben** auf "Standardwerte verwenden".
 
 ## <a name="text-style"></a><a name="BKMK_TextStyle"></a> Textstil
  Der Textstil bezieht sich auf Schrift Grad, Gewichtung und Groß-/Kleinschreibung. Implementierungs Leit Fäden finden Sie in [der Umgebungs Schriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
@@ -321,7 +323,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Gruppen Felder|Kontrollkästchen|
 |Menüelemente|Optionsfelder|
 |Kontextmenüelemente|Listenfeld Elemente|
-|Schaltflächen|Statusleisten|
+|Tasten|Statusleisten|
 |Tabellen Bezeichnungen||
 |Spaltenüberschriften||
 |QuickInfos||
@@ -347,7 +349,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Das erste und letzte Wort, unabhängig von den Teilen der Sprache||
 |Präpositionen, die Teil eines Verb Ausdrucks sind|"Schließen aller Fenster" oder "Herunterfahren des Systems"|
 |Alle Buchstaben eines Akronyms|HTML, XML, URL, IDE, RGB|
-|Das zweite Wort in einem zusammengesetzten Wort, wenn es ein Substantiv oder ein richtiges Adjektiv ist, oder, wenn die Wörter die gleiche Gewichtung aufweisen|Querverweise, Software vor Microsoft, Lese-/Schreibzugriff, Laufzeit|
+|Das zweite Wort in einem zusammengesetzten Wort, wenn es ein Substantiv oder ein richtiges Adjektiv ist, oder, wenn die Wörter die gleiche Gewichtung aufweisen|Querverweise, Software vor Microsoft, Lese-/Schreibzugriff, Run-Time|
 
 |Kleinbuchstaben|Beispiele|
 |---------------|--------------|
@@ -389,7 +391,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>Kursiv
  Visual Studio verwendet weder kursiv noch kursiv formatierten Text.
 
-#### <a name="color"></a>„Color“ (Farbe)
+#### <a name="color"></a>Farbe
 
 - Blue ist für Hyperlinks (Navigation und Befehls Richtung) reserviert und sollte nie für die Ausrichtung verwendet werden.
 

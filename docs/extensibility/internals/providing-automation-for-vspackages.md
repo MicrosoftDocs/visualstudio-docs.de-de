@@ -1,5 +1,7 @@
 ---
 title: Bereitstellen von Automatisierung für VSPackages | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Automation für Ihre VSPackages bereitstellen, indem Sie VSPackage-spezifische Objekte implementieren und standardmäßige Automatisierungs Objekte implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705948"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875400"
 ---
 # <a name="providing-automation-for-vspackages"></a>Bereitstellen von Automatisierung für VSPackages
 Es gibt zwei Hauptmethoden zum Bereitstellen von Automatisierung für Ihre VSPackages: durch das Implementieren von VSPackage-spezifischen Objekten und durch Implementieren von Automation-Standardobjekten. Diese werden in der Regel verwendet, um das Automatisierungs Modell der Umgebung zu erweitern.
 
-## <a name="vspackage-specific-objects"></a>VSPackage-spezifische Objekte
+## <a name="vspackage-specific-objects"></a>VSPackage-Specific Objekte
  Für bestimmte Orte innerhalb des Automatisierungs Modells müssen Sie Automatisierungs Objekte bereitstellen, die für Ihr VSPackage eindeutig sind. Beispielsweise erfordern neue Projekte eindeutige Objekte, die nur von Ihrem VSPackage bereitstellt werden. Die Namen dieser Objekte werden in der Registrierung eingegeben und durch Aufrufe des Umgebungs `DTE` Objekts abgerufen.
 
  VSPackage-spezifische Objekte können auch abgerufen werden, wenn ein automatisierungsconsumer das Objekt verwendet, das durch die Object-Eigenschaft eines Standard Objekts bereitgestellt wird. Beispielsweise verfügt das-Standard `Window` Objekt über eine- `Object` Eigenschaft, die in der Regel als-Eigenschaft bekannt ist `Windows.Object` . Wenn Consumer den `Window.Object` in einem in Ihrem VSPackage implementierten Fenster aufzurufen, geben Sie ein bestimmtes Automatisierungs Objekt Ihres eigenen Entwurfs zurück.
@@ -29,7 +31,7 @@ Es gibt zwei Hauptmethoden zum Bereitstellen von Automatisierung für Ihre VSPac
 #### <a name="projects"></a>Projekte
  VSPackages können das Automatisierungs Modell für neue Projekttypen über ihre eigenen VSPackage-spezifischen Objekte erweitern. Der Hauptzweck der Bereitstellung neuer Automatisierungs Objekte für Ihr VSPackage besteht darin, Ihre eindeutigen Projekt Objekte von einem- <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> Objekt oder einem-Objekt zu unterscheiden <xref:VSLangProj80.VSProject2> . Diese Differenzierung ist praktisch, wenn Sie eine Möglichkeit bereitstellen möchten, den Projekttyp außer anderen Projekttypen auszulagern oder zu durchlaufen, wenn Sie in einer Projekt Mappe nebeneinander angezeigt werden. Weitere Informationen finden Sie unter verfügbar machen von [Projekt Objekten](../../extensibility/internals/exposing-project-objects.md).
 
-#### <a name="events"></a>Events
+#### <a name="events"></a>Ereignisse
  Die Ereignis Architektur der Umgebung bietet einen weiteren Ort, an dem Sie Ihre eigenen VSPackage-spezifischen Objekte anfügen können. Wenn Sie z. b. ihre eigenen eindeutigen Ereignis Objekte erstellen, können Sie das-Ereignis Modell der Umgebung für-Projekte erweitern. Sie können Ihre eigenen Ereignisse auch dann bereitstellen, wenn Ihrem eigenen Projekttyp ein neues Element hinzugefügt wird. Weitere Informationen finden Sie unter verfügbar machen von [Ereignissen](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).
 
 #### <a name="window-objects"></a>Fensterobjekte

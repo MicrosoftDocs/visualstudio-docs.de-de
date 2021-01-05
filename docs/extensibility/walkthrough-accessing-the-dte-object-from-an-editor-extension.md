@@ -1,5 +1,7 @@
 ---
 title: Zugreifen auf das DTE-Objekt aus einer Editor-Erweiterung
+description: Erfahren Sie, wie Sie mithilfe des Code Beispiels in dieser exemplarischen Vorgehensweise auf das DTE-Objekt aus einer Editor-Erweiterung zugreifen.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e37bdb21b7c8132f0dfb166d19e03d36e838245d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a0ee789590bd411fe7955cf739683d016164f49
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697660"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863703"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>Exemplarische Vorgehensweise: Zugreifen auf das DTE-Objekt aus einer Editor-Erweiterung
 
@@ -90,7 +92,7 @@ Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visua
 
 ::: moniker-end
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sprachdienst-und Editor-Erweiterungs Punkte](../extensibility/language-service-and-editor-extension-points.md)
 - [Starten von Visual Studio mit DTE](launch-visual-studio-dte.md)

@@ -1,5 +1,7 @@
 ---
 title: Visibilityitem-Element | Microsoft-Dokumentation
+description: Das visibilityitem-Element bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten. Einträge identifizieren einen Befehl oder ein Menü und einen zugeordneten Befehls Benutzeroberflächen Kontext.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698146"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863895"
 ---
 # <a name="visibilityitem-element"></a>Visibilityitem-Element
 Das- `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten. Jeder Eintrag identifiziert einen Befehl oder ein Menü sowie einen zugeordneten Befehls Benutzeroberflächen Kontext. Visual Studio erkennt Befehle, Menüs und Symbolleisten sowie deren Sichtbarkeit, ohne die VSPackages zu laden, die Sie definieren. Die IDE verwendet die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode, um zu bestimmen, ob ein Befehls Benutzeroberflächen Kontext aktiv ist.
@@ -57,14 +59,14 @@ Das- `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen u
 |-------------|-----------------|
 |[Visibilityschränkt-Element](../extensibility/visibilityconstraints-element.md)|Das `VisibilityConstraints` -Element bestimmt die statische Sichtbarkeit von Gruppen von Befehlen und Symbolleisten.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
  Die standardmäßigen Visual Studio-Benutzeroberflächen Kontexte werden im *Visual Studio SDK-Installationspfad*\visualstudiointegration\common\inc\vsshlids.h sowie in der <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> -Klasse und der- <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> Klasse definiert. In der-Klasse ist ein ausführlichere Satz von UI-Kontexten definiert <xref:Microsoft.VisualStudio.VSConstants> .
 
 ## <a name="example"></a>Beispiel
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```

@@ -1,5 +1,7 @@
 ---
 title: 'Test Bereich 4: Einchecken | Microsoft-Dokumentation'
+description: Dieser Testbereich des Quell Code Verwaltungs-Plug-ins umfasst das Senden aktualisierter Elemente an den Versionsspeicher mithilfe des Befehls Einchecken.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2386a217de228c5c47b467e6e083d978702927f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe0e7838c3bde048df2514c54e534cf7a9b3475
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704576"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875225"
 ---
 # <a name="test-area-4-check-in"></a>Testbereich 4: Einchecken
 Dieser Testbereich des Quell Code Verwaltungs-Plug-ins umfasst das Senden aktualisierter Elemente an den Versionsspeicher über den Befehl **Einchecken** .
@@ -25,11 +27,11 @@ Dieser Testbereich des Quell Code Verwaltungs-Plug-ins umfasst das Senden aktual
  Die folgenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Menü Pfade der Entwicklungsumgebung werden in den Testfällen verwendet.
 
 ##### <a name="check-in"></a>Einchecken:
- **Datei**, **Quell**Code Verwaltung, **Einchecken**.
+ **Datei**, **Quell** Code Verwaltung, **Einchecken**.
 
  **Datei**, **Einchecken**.
 
- Eincheck Kontext **Check In**Menü.
+ Eincheck Kontext Menü.
 
 ## <a name="common-expected-behavior"></a>Häufiges erwartetes Verhalten
 
@@ -42,29 +44,29 @@ Dieser Testbereich des Quell Code Verwaltungs-Plug-ins umfasst das Senden aktual
 ## <a name="test-cases"></a>Testfälle
  Im folgenden finden Sie spezifische Testfälle für den Check-in-Testbereich.
 
-### <a name="case-4a-modified-items"></a>Fall 4a: geänderte Elemente
+### <a name="case-4a-modified-items"></a>Fall 4a: Bearbeitete Elemente
  Beschreibt die Verwendung der Check-in-Aktion zum Aktualisieren einer Datei in der Quell Code Verwaltung, die geändert wurde.
 
 |Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|
 |------------|----------------|--------------------------------|
-|Ändern einer ausgecheckten Textdatei, Einchecken von Dateien (Dialogfeld**Einchecken** )|1. Erstellen Sie ein neues Projekt mit einer Textdatei.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. sehen Sie sich die Textdatei an, und ändern Sie Sie.<br />4. checken Sie über das Dialogfeld "Einchecken" ein (**Datei**, **Quell**Code Verwaltung, **Einchecken**).|Häufiges erwartetes Verhalten.|
+|Ändern einer ausgecheckten Textdatei, Einchecken von Dateien (Dialogfeld **Einchecken** )|1. Erstellen Sie ein neues Projekt mit einer Textdatei.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. sehen Sie sich die Textdatei an, und ändern Sie Sie.<br />4. checken Sie über das Dialogfeld "Einchecken" ein (**Datei**, **Quell** Code Verwaltung, **Einchecken**).|Häufiges erwartetes Verhalten.|
 |Ändern einer ausgecheckten Textdatei, Einchecken von Dateien (Fenster "**ausstehende Eincheck** Vorgänge")|1. Erstellen Sie ein neues Projekt mit einer Textdatei.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. sehen Sie sich die Textdatei an, und ändern Sie Sie.<br />4. checken Sie über das Fenster **ausstehende Eincheck** Vorgänge ein.|Häufiges erwartetes Verhalten.|
 
-### <a name="case-4b-adding-files"></a>Fall 4B: Hinzufügen von Dateien
+### <a name="case-4b-adding-files"></a>Fall 4b: Hinzufügen von Dateien
  Beim Hinzufügen einer Datei zu einem Projekt oder einem Element zu einer Projekt Mappe muss das Projekt oder die Projekt Mappe ebenfalls geändert werden. Daher wird auch die übergeordnete Datei ausgecheckt und muss eingecheckt werden, um die Addition abzuschließen.
 
 |Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|
 |------------|----------------|--------------------------------|
-|Fügen Sie eine Textdatei hinzu, und checken Sie alles ein (**Einchecken** -Dialogfeld).|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie dem Projekt eine Textdatei hinzu.<br />4. akzeptieren Sie das Projekt Auschecken, wenn Sie dazu aufgefordert werden.<br />5. Wählen Sie die Projekt Mappe in **Projektmappen-Explorer**aus.<br />6. checken Sie im Dialogfeld **Einchecken** ein.|Häufiges erwartetes Verhalten.|
-|Textdatei hinzufügen und alles einchecken (Fenster**ausstehende Eincheck** Vorgänge)|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie dem Projekt eine Textdatei hinzu.<br />4. akzeptieren Sie das Projekt Auschecken, wenn Sie dazu aufgefordert werden.<br />5. checken Sie die Projekt Mappe aus dem Fenster **ausstehende Eincheck** Vorgänge ein.|Häufiges erwartetes Verhalten|
+|Fügen Sie eine Textdatei hinzu, und checken Sie alles ein (**Einchecken** -Dialogfeld).|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie dem Projekt eine Textdatei hinzu.<br />4. akzeptieren Sie das Projekt Auschecken, wenn Sie dazu aufgefordert werden.<br />5. Wählen Sie die Projekt Mappe in **Projektmappen-Explorer** aus.<br />6. checken Sie im Dialogfeld **Einchecken** ein.|Häufiges erwartetes Verhalten.|
+|Textdatei hinzufügen und alles einchecken (Fenster **ausstehende Eincheck** Vorgänge)|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie dem Projekt eine Textdatei hinzu.<br />4. akzeptieren Sie das Projekt Auschecken, wenn Sie dazu aufgefordert werden.<br />5. checken Sie die Projekt Mappe aus dem Fenster **ausstehende Eincheck** Vorgänge ein.|Häufiges erwartetes Verhalten|
 
-### <a name="case-4c-adding-projects"></a>Fall 4C: Hinzufügen von Projekten
+### <a name="case-4c-adding-projects"></a>Fall 4c: Hinzufügen von Projekten
  Wenn Sie einer Projekt Mappe ein Projekt hinzufügen, muss die Projekt Mappe ebenfalls geändert werden. Daher wird die Projektmappendatei ebenfalls ausgecheckt und muss eingecheckt werden, um die Addition abzuschließen.
 
 |Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|
 |------------|----------------|--------------------------------|
-|Hinzufügen eines Projekts zu einer leeren Projekt Mappe unter Quell Code Verwaltung (Dialogfeld**Einchecken** )|1. Erstellen Sie eine leere Projekt Mappe.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie ein neues Projekt hinzu.<br />4. Wenn Sie dazu aufgefordert werden, sollten Sie die Lösung Auschecken.<br />5. checken Sie im Dialogfeld **Einchecken** ein.|Häufiges erwartetes Verhalten.|
-|Hinzufügen eines Projekts zu einer leeren Projekt Mappe unter Quell Code Verwaltung (Fenster**ausstehende Eincheck** Vorgänge)|1. Erstellen Sie eine leere Projekt Mappe.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie ein neues Projekt hinzu.<br />4. Wenn Sie dazu aufgefordert werden, sollten Sie die Lösung Auschecken.<br />5. checken Sie die Projekt Mappe aus dem Fenster **ausstehende Eincheck** Vorgänge ein.|Häufiges erwartetes Verhalten.|
+|Hinzufügen eines Projekts zu einer leeren Projekt Mappe unter Quell Code Verwaltung (Dialogfeld **Einchecken** )|1. Erstellen Sie eine leere Projekt Mappe.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie ein neues Projekt hinzu.<br />4. Wenn Sie dazu aufgefordert werden, sollten Sie die Lösung Auschecken.<br />5. checken Sie im Dialogfeld **Einchecken** ein.|Häufiges erwartetes Verhalten.|
+|Hinzufügen eines Projekts zu einer leeren Projekt Mappe unter Quell Code Verwaltung (Fenster **ausstehende Eincheck** Vorgänge)|1. Erstellen Sie eine leere Projekt Mappe.<br />2. Fügen Sie die Projekt Mappe der Quell Code Verwaltung hinzu.<br />3. Fügen Sie ein neues Projekt hinzu.<br />4. Wenn Sie dazu aufgefordert werden, sollten Sie die Lösung Auschecken.<br />5. checken Sie die Projekt Mappe aus dem Fenster **ausstehende Eincheck** Vorgänge ein.|Häufiges erwartetes Verhalten.|
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

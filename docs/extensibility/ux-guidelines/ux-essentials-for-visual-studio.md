@@ -1,5 +1,7 @@
 ---
 title: UX Essentials für Visual Studio | Microsoft-Dokumentation
+description: Lesen Sie diese bewährten Methoden für die Benutzer Darstellung für neue Features, die Sie für Visual Studio entwickeln, einschließlich Informationen zur Bildschirmauflösung.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698332"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864050"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 
@@ -59,7 +61,7 @@ ms.locfileid: "80698332"
 
 - Die Zielauflösung für Visual Studio ist **1366x768**. Dies ist die niedrigste Lösung, bei der wir eine *gute* Benutzerfunktion versprechen.
 
-- Die anfängliche Dialogfeld Höhe sollte **kleiner als 700 Pixel**sein, sodass Sie in die minimale Auflösung des IDE-Frames bei 96 dpi passt.
+- Die anfängliche Dialogfeld Höhe sollte **kleiner als 700 Pixel** sein, sodass Sie in die minimale Auflösung des IDE-Frames bei 96 dpi passt.
 
 ### <a name="high-density-displays"></a>Anzeige mit hoher Dichte
  Die Benutzeroberfläche in Visual Studio muss gut in allen dpi-Skalierungsfaktoren funktionieren, die von Windows standardmäßig unterstützt werden: 150%, 200% und 250%.
@@ -124,7 +126,7 @@ Ein etwas besseres, aber dennoch nicht wünschenswert ist das Einfügen von Eins
 
 ![Abbildung B: besser, aber immer noch ein Befehls leisten-Antimuster](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-Pattern-figureb")<br />Abbildung B: besser, aber immer noch ein Befehls leisten-Antimuster
 
-Im richtigen Ansatz in **Abbildung C**ist die Einstellung an eine Reihe von Befehlen gebunden. Es wird keine globale Einstellung festgelegt, und wir wechseln einfach zwischen vier Befehlen. Dies ist die einzige Situation, in der Befehle in der Symbolleiste zulässig sind.
+Im richtigen Ansatz in **Abbildung C** ist die Einstellung an eine Reihe von Befehlen gebunden. Es wird keine globale Einstellung festgelegt, und wir wechseln einfach zwischen vier Befehlen. Dies ist die einzige Situation, in der Befehle in der Symbolleiste zulässig sind.
 
 ![Abbildung C: korrekte Verwendung des Visual Studio-Befehls leisten Musters](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-Pattern-figurec")<br />Abbildung C: korrekte Verwendung des Visual Studio-Befehls leisten Musters
 

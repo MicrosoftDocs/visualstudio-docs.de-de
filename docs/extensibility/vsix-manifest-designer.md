@@ -1,5 +1,7 @@
 ---
 title: VSIX-Manifest-Designer | Microsoft-Dokumentation
+description: Erfahren Sie, wie der VSIX-Manifest-Designer eine VSIX-Paket Manifest-Datei ändert, mit der das Installations Verhalten für eine Visual Studio-Erweiterung festgelegt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +16,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697898"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863973"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX-Manifest-Designer
 Ändert eine VSIX-Paket Manifest-Datei, mit der das Installations Verhalten für eine Visual Studio-Erweiterung festgelegt wird.
 
  Der **VSIX-Manifest-Designer** wird dem zugrunde liegenden VSIX-Schema zugeordnet. Jedes Element im Schema kann mit einem entsprechenden Steuerelement im Designer festgelegt werden. Weitere Informationen zum Schema finden Sie in der [Referenz zu VSIX-Erweiterungs Schema 2,0](../extensibility/vsix-extension-schema-2-0-reference.md).
 
- Um den **VSIX-Manifest-Designer**zu öffnen, suchen Sie in **Projektmappen-Explorer**eine Datei vom Typ " *Source. Extension. vsixmanifest* ", und öffnen Sie die Datei. Wenn die Datei keine gültige XML-Datei enthält, wird der Manifest-Designer nicht geöffnet.
+ Um den **VSIX-Manifest-Designer** zu öffnen, suchen Sie in **Projektmappen-Explorer** eine Datei vom Typ " *Source. Extension. vsixmanifest* ", und öffnen Sie die Datei. Wenn die Datei keine gültige XML-Datei enthält, wird der Manifest-Designer nicht geöffnet.
 
 > [!NOTE]
 > Die Datei " *Source. Extension. vsixmanifest* " wird beim Erstellen des Pakets an die *Erweiterung ". vsixmanifest* " ausgegeben.
@@ -54,15 +56,15 @@ ms.locfileid: "80697898"
 
   Die Registerkarte **Metadaten** enthält die folgenden Steuerelemente.
 
-  **Beschreibung** Stellt eine Textbeschreibung der Erweiterung bereit, die im Erweiterungs- **Manager**angezeigt werden soll.
+  **Beschreibung** Stellt eine Textbeschreibung der Erweiterung bereit, die im Erweiterungs- **Manager** angezeigt werden soll.
 
   **Sprache** Gibt die Standardsprache für das Paket an, die den Textdaten im Manifest entspricht. Das- `Language` Attribut folgt der Common Language Runtime (CLR)-Gebiets Schema-Code Konvention für Ressourcenassemblys, z. b. en-US, en, fr-fr. Standardmäßig ist der wertneutral, was bedeutet, dass das Paket in jeder Sprachversion von Visual Studio ausgeführt wird.
 
   **Lizenz** Gibt die Textdatei an, die die Benutzerlizenz enthält (sofern vorhanden).
 
-  **Symbol** Gibt die Grafikdatei (*. png*, *. bmp*, *. JPEG*, *. ico*) an, die das Symbol enthält, das im **Erweiterungs-Manager**angezeigt werden soll, wenn ein Symbol vorhanden ist. Das Symbolbild muss eine Größe von 32 x 32 Pixel aufweisen, oder die Größe wird auf diese Dimensionen angepasst. Wenn kein Symbol angegeben wird, verwendet der **Erweiterungs-Manager** ein Standard Symbol.
+  **Symbol** Gibt die Grafikdatei (*. png*, *. bmp*, *. JPEG*, *. ico*) an, die das Symbol enthält, das im **Erweiterungs-Manager** angezeigt werden soll, wenn ein Symbol vorhanden ist. Das Symbolbild muss eine Größe von 32 x 32 Pixel aufweisen, oder die Größe wird auf diese Dimensionen angepasst. Wenn kein Symbol angegeben wird, verwendet der **Erweiterungs-Manager** ein Standard Symbol.
 
-  **Vorschaubild** Gibt die Grafikdatei (*PNG*, *BMP*, *. JPEG*, *. ico*) an, die das Vorschaubild enthält, das im **Erweiterungs-Manager**angezeigt werden soll, wenn ein Vorschaubild vorhanden ist. Das Vorschaubild muss 200 x 200 Pixel betragen. Wenn kein Vorschaubild angegeben wird, verwendet der **Erweiterungs-Manager** ein Standard Image.
+  **Vorschaubild** Gibt die Grafikdatei (*PNG*, *BMP*, *. JPEG*, *. ico*) an, die das Vorschaubild enthält, das im **Erweiterungs-Manager** angezeigt werden soll, wenn ein Vorschaubild vorhanden ist. Das Vorschaubild muss 200 x 200 Pixel betragen. Wenn kein Vorschaubild angegeben wird, verwendet der **Erweiterungs-Manager** ein Standard Image.
 
   **Tags** Fügt texttags hinzu, die für Such Hinweise verwendet werden sollen.
 

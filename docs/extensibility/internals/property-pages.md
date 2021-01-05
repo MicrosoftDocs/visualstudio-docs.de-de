@@ -1,5 +1,7 @@
 ---
 title: Eigenschaften Seiten | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Arbeiten mit Eigenschaften Seiten für den neuen Projekttyp im Visual Studio SDK, mit dem Benutzer Projekteigenschaften anzeigen und ändern können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706054"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875530"
 ---
 # <a name="property-pages"></a>Eigenschaftenseiten
 Mithilfe von Eigenschaften Seiten können Benutzer von der Projekt Konfiguration abhängige und unabhängige Eigenschaften anzeigen und ändern. Eine Schaltfläche für Eigenschaften **Seiten** ist im **Eigenschaften** Fenster oder auf Projektmappen-Explorer Symbolleiste für Objekte aktiviert, die eine Eigenschaften Seitenansicht des ausgewählten Objekts bereitstellen. Eigenschaften Seiten werden von der Umgebung erstellt und stehen für Projektmappen und Projekte zur Verfügung. Sie können jedoch auch für Projekt Elemente verfügbar gemacht werden, die Konfigurations abhängige Eigenschaften verwenden. Diese Funktion kann verwendet werden, wenn Dateien in einem Projekt unterschiedliche compilerswitcheinstellungen zum ordnungsgemäßen erstellen benötigen.
@@ -67,7 +69,7 @@ Mithilfe von Eigenschaften Seiten können Benutzer von der Projekt Konfiguration
 
    Sie können ein Projekt oder Projekte auf der Eigenschaften Seite der Projekt Mappe angeben, die gestartet wird, wenn der Benutzer F5 drückt oder im Menü Build die Option Ausführen auswählt. Dies funktioniert ähnlich wie das alte aktive Projekt in dem Sinne, dass sein Name in Projektmappen-Explorer mit fett formatierter Schriftart angezeigt wird.
 
-   Sie können das Startprojekt als Eigenschaft im Automatisierungs Modell abrufen, indem Sie aufrufen `DTE.Solution.SolutionBuild.StartupProjects` . In einem VSPackage werden die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Methode oder die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Methode aufgerufen. `IVsSolutionBuildManager` ist auf SID_SVsSolutionBuildManager als Dienst verfügbar `QueryService` . Weitere Informationen finden Sie unter [Projekt Konfigurationsobjekt](../../extensibility/internals/project-configuration-object.md) und Projektmappenkonfiguration. [Solution Configuration](../../extensibility/internals/solution-configuration.md)
+   Sie können das Startprojekt als Eigenschaft im Automatisierungs Modell abrufen, indem Sie aufrufen `DTE.Solution.SolutionBuild.StartupProjects` . In einem VSPackage werden die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Methode oder die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> Methode aufgerufen. `IVsSolutionBuildManager` ist auf SID_SVsSolutionBuildManager als Dienst verfügbar `QueryService` . Weitere Informationen finden Sie unter [Projekt Konfigurationsobjekt](../../extensibility/internals/project-configuration-object.md) und Projektmappenkonfiguration. [](../../extensibility/internals/solution-configuration.md)
 
 - Konfiguration des aktiven Projektmappenbuilds
 

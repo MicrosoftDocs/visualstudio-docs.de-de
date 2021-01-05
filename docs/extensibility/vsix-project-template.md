@@ -1,5 +1,7 @@
 ---
 title: VSIX-Projektvorlage | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die VSIX-Projektvorlage verwenden, um Visual Studio-Erweiterungen in ein VSIX-Projekt einzubinden, und veröffentlichen Sie das Paket dann auf dem Visual Studio Marketplace.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74791a77ee1c720fb60876a1efa6bd58fa94f68b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697936"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863871"
 ---
 # <a name="vsix-project-template"></a>VSIX-Projektvorlage
 
@@ -52,7 +54,7 @@ Sie können eine vorhandene Erweiterung oder eine Erweiterung, die noch nicht ü
 
 2. Erstellen Sie ein VSIX-Projekt mithilfe der **VSIX-Projekt** Vorlage.
 
-    " *Source. Extension. vsixmanifest* " wird im **Manifest-Designer**geöffnet.
+    " *Source. Extension. vsixmanifest* " wird im **Manifest-Designer** geöffnet.
 
 3. Wählen Sie auf der Registerkarte **Objekte** die Schaltfläche **neu** aus.
 
@@ -62,7 +64,7 @@ Sie können eine vorhandene Erweiterung oder eine Erweiterung, die noch nicht ü
 
 5. Führen Sie die folgenden Schritte aus, um eine Erweiterung oder ein Inhalts Element hinzuzufügen, das in der aktuellen Projekt Mappe enthalten ist (z. b. eine Element Vorlage oder eine kompilierte Assembly):
 
-   1. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt**Mappe aus.
+   1. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
    2. Wählen Sie in der Liste **Projekt** den Namen der Erweiterung aus.
 
@@ -70,7 +72,7 @@ Sie können eine vorhandene Erweiterung oder eine Erweiterung, die noch nicht ü
 
 6. Führen Sie die folgenden Schritte aus, um eine Erweiterung oder ein Inhalts Element hinzuzufügen, die nicht in der aktuellen Projekt Mappe enthalten ist:
 
-   1. Wählen Sie im Listenfeld **Quelle** die Option **Datei im Dateisystem**aus.
+   1. Wählen Sie im Listenfeld **Quelle** die Option **Datei im Dateisystem** aus.
 
    2. Geben Sie im Feld **Pfad** den vollständigen Pfad zur kompilierten oder komprimierten Erweiterungs Datei ein, oder verwenden Sie die Schaltfläche **Durchsuchen** , um zu der Datei zu navigieren.
 

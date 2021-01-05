@@ -1,5 +1,7 @@
 ---
 title: Hinzufügen von Referenzen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
+description: Erfahren Sie mehr über die Unterschiede zwischen dem Verpacken von Software als nuget-Paket oder als Software Development Kit, wenn in einem Visual Studio-Projekt darauf verwiesen wird.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad7fc9132647988aee46a2bb07e992505109d33c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50197eeda1828156113fbbfa507447484618861a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702433"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863767"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>Nuget im Vergleich zum SDK als Projekt Verweis
 
@@ -20,7 +22,7 @@ Dieser Artikel soll Entwicklern helfen, zu entscheiden, ob Sie Ihre Software als
 
 - [Nuget](/nuget) ist ein Open-Source-Paketverwaltungssystem, das den Prozess der Integration von Bibliotheken in ein Projekt vereinfacht. Für .net (einschließlich .net Core) ist nuget der von Microsoft unterstützte Mechanismus zur Freigabe von Code. Nuget definiert, wie Pakete für .NET erstellt, gehostet und genutzt werden, und stellt die Tools für jede dieser Rollen bereit. In Visual Studio fügen Sie einem Projekt nuget-Pakete hinzu, indem Sie die Benutzeroberfläche des [Paket-Managers](/nuget/consume-packages/install-use-packages-visual-studio) verwenden.
 
-- Ein [SDK](../extensibility/creating-a-software-development-kit.md) ist eine Sammlung von Dateien, die von Visual Studio als einzelnes Verweis Element behandelt werden. Im Dialogfeld Verweis-Manager in Visual Studio werden alle sdgkte aufgelistet, die für das aktuelle Projekt relevant sind, wenn Sie **Verweis hinzufügen**auswählen. Wenn Sie einem Projekt ein SDK hinzufügen, können Sie über IntelliSense, das Toolbox Fenster, die Designer, die Objektkatalog, MSBuild, Bereitstellung, Debuggen und Verpacken auf den gesamten Inhalt dieses SDK zugreifen.
+- Ein [SDK](../extensibility/creating-a-software-development-kit.md) ist eine Sammlung von Dateien, die von Visual Studio als einzelnes Verweis Element behandelt werden. Im Dialogfeld Verweis-Manager in Visual Studio werden alle sdgkte aufgelistet, die für das aktuelle Projekt relevant sind, wenn Sie **Verweis hinzufügen** auswählen. Wenn Sie einem Projekt ein SDK hinzufügen, können Sie über IntelliSense, das Toolbox Fenster, die Designer, die Objektkatalog, MSBuild, Bereitstellung, Debuggen und Verpacken auf den gesamten Inhalt dieses SDK zugreifen.
 
 ## <a name="which-mechanism-should-i-use"></a>Welche Vorgehensweise sollte ich verwenden?
 

@@ -1,5 +1,7 @@
 ---
 title: Vsct-XML-Schema Referenz | Microsoft-Dokumentation
+description: In den referenzartikeln zu vsct-XML-Schemas werden Befehls Tabellen-compilerschemas mit zulässigen untergeordneten Elementen und Attributen beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923a0c4b64fcae3a409a2298d6d481f6e1bb14db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697904"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863987"
 ---
 # <a name="vsct-xml-schema-reference"></a>Vsct-XML-Schema Referenz
 Stellt eine Tabelle mit Befehls Tabellen-compilerschemementen mit zulässigen untergeordneten Elementen und Attributen für jede bereit.

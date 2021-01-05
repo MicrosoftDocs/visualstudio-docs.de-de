@@ -1,5 +1,7 @@
 ---
 title: Entwurfsentscheidungen für die Quell Code Verwaltung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über verschiedene wichtige Entwurfsentscheidungen, die beim Implementieren der Quell Code Verwaltung für Projekte berücksichtigt werden müssen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c36bb2b50a72a52aeaeb7712f4ed711845b5e6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705247"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875517"
 ---
 # <a name="source-control-design-decisions"></a>Entwurfsentscheidungen bei der Quellcodeverwaltung
 Die folgenden Entwurfsentscheidungen sollten bei der Implementierung der Quell Code Verwaltung für Projekte berücksichtigt werden.
@@ -34,7 +36,7 @@ Die folgenden Entwurfsentscheidungen sollten bei der Implementierung der Quell C
 
 3. Wenn das Projekt oder der Editor <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> eine Datei aufruft, werden die dieser Datei zugeordneten speziellen Dateien nicht automatisch ausgecheckt. Übergeben Sie die speziellen Dateien zusammen mit der übergeordneten Datei. Die Umgebung erkennt die Beziehung zwischen allen Dateien, die übermittelt werden, und blendet die speziellen Dateien in der Benutzeroberfläche für das Auschecken entsprechend aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

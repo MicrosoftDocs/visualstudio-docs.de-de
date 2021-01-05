@@ -1,5 +1,7 @@
 ---
 title: Projekt Konfigurationsobjekt | Microsoft-Dokumentation
+description: Erfahren Sie, wie das Projekt Konfigurationsobjekt die Anzeige von Konfigurationsinformationen für die Benutzeroberfläche verwaltet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 001509b56e3bac6a8fd585eb0efe0bd57018acea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d91f640abc4fd91b68341e825b312b8bfb0d6f6
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706657"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875491"
 ---
 # <a name="project-configuration-object"></a>Projektkonfigurationsobjekt
 Das Projekt Konfigurationsobjekt verwaltet die Anzeige der Konfigurationsinformationen für die Benutzeroberfläche.
@@ -26,7 +28,7 @@ Das Projekt Konfigurationsobjekt verwaltet die Anzeige der Konfigurationsinforma
  Der Projekt Konfigurations Anbieter verwaltet die Projekt Konfigurationen. Die Umgebung und andere Pakete, um Zugriff auf die und das Abrufen von Informationen über die Konfigurationen eines Projekts zu erhalten, rufen Sie die Schnittstellen auf, die an das Projekt Konfigurations Anbieter Objekt angefügt
 
 > [!NOTE]
-> Projektmappenkonfigurationsdateien können nicht Programm gesteuert erstellt oder bearbeitet werden. Hierzu muss `DTE.SolutionBuilder` verwendet werden. Weitere [Solution Configuration](../../extensibility/internals/solution-configuration.md) Informationen finden Sie unter Projektmappenkonfiguration.
+> Projektmappenkonfigurationsdateien können nicht Programm gesteuert erstellt oder bearbeitet werden. Hierzu muss `DTE.SolutionBuilder` verwendet werden. Weitere [](../../extensibility/internals/solution-configuration.md) Informationen finden Sie unter Projektmappenkonfiguration.
 
  Um einen anzeigen Amen zu veröffentlichen, der in der Konfigurations Benutzeroberfläche verwendet werden soll, sollte das Projekt implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A> . Die-Umgebung Ruft auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> , wodurch eine Liste von Zeigern zurückgegeben wird, die `IVsCfg` Sie verwenden können, um die anzeigen Amen für die Konfigurations-und Platt Form Informationen zu erhalten, die in der Benutzeroberfläche der Umgebung aufgeführt werden Die aktive Konfiguration und Plattform werden durch die Konfiguration des Projekts festgelegt, die in der aktiven Projektmappenkonfiguration gespeichert ist. Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> Methode kann verwendet werden, um die aktive Projekt Konfiguration abzurufen.
 
