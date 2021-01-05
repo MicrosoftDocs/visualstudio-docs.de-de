@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines Ansichts Zusatz Elements, von Befehlen und Einstellungen | Microsoft-Dokumentation
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie den Visual Studio-Code-Editor mit Spalten Handbüchern erweitern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905037"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863069"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen eines Ansichts Zusatz Elements, von Befehlen und Einstellungen (Spalten Handbücher)
 Sie können den Visual Studio-Text-/Code-Editor mit Befehlen und Ansichts Effekten erweitern. In diesem Artikel erfahren Sie, wie Sie mit einer beliebten Erweiterungs Funktion (Spalten Handbücher) beginnen. Spalten Handbücher sind visuell helle Linien, die in der Ansicht des Text-Editors gezeichnet werden, um Ihnen die Verwaltung Ihres Codes auf bestimmte Spaltenbreiten zu erleichtern. Der formatierte Code kann insbesondere für Beispiele wichtig sein, die Sie in Dokumenten, in Blogbeiträgen oder in Fehlerberichten einschließen.
@@ -32,7 +34,7 @@ In dieser exemplarischen Vorgehensweise führen Sie folgende Aktionen aus:
   > In dieser exemplarischen Vorgehensweise fügen Sie eine große Menge an Code in einige Dateien ein, die von Visual Studio-Erweiterungs Vorlagen generiert werden. Diese exemplarische Vorgehensweise bezieht sich jedoch auf eine abgeschlossene Lösung auf GitHub mit anderen Erweiterungs Beispielen. Der abgeschlossene Code unterscheidet sich geringfügig von der Verwendung von echten Befehls Symbolen anstelle von generictemplate-Symbolen.
 
 ## <a name="get-started"></a>Erste Schritte
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Einrichten der Lösung
 Erstellen Sie zunächst ein VSIX-Projekt, fügen Sie ein Zusatzelement für die Editor-Ansicht hinzu, und fügen Sie dann einen Befehl hinzu (mit dem ein VSPackage zur Eingabe des Befehls hinzugefügt wird). Die grundlegende Architektur lautet wie folgt:
@@ -43,11 +45,11 @@ Erstellen Sie zunächst ein VSIX-Projekt, fügen Sie ein Zusatzelement für die 
 
   **VSIX**. Verwenden Sie den Befehl **File &#124; New...** , um ein Projekt zu erstellen. Wählen Sie im linken Navigationsbereich unter **c#** den Knoten **Erweiterbarkeit** aus, und wählen Sie im rechten Bereich **VSIX-Projekt** aus. Geben Sie den Namen **columnguides** ein, und wählen Sie **OK** , um das Projekt zu erstellen.
 
-  **Anzeige**Zusatz. Klicken Sie im Projektmappen-Explorer auf die Schaltfläche mit dem rechten Zeiger auf den Projekt Knoten. Wählen Sie den Befehl **&#124; neues Element hinzufügen...** aus, um ein neues Ansichts Zusatzelement hinzuzufügen. Wählen Sie im linken Navigationsbereich die Option **Erweiterbarkeit &#124; Editor** aus, und wählen Sie im rechten Bereich **Editor Viewport** -Zusatzelement aus. Geben Sie den Namen **columnguideadornment** als Elementnamen ein, und klicken Sie auf **Hinzufügen** , um ihn hinzuzufügen.
+  **Anzeige** Zusatz. Klicken Sie im Projektmappen-Explorer auf die Schaltfläche mit dem rechten Zeiger auf den Projekt Knoten. Wählen Sie den Befehl **&#124; neues Element hinzufügen...** aus, um ein neues Ansichts Zusatzelement hinzuzufügen. Wählen Sie im linken Navigationsbereich die Option **Erweiterbarkeit &#124; Editor** aus, und wählen Sie im rechten Bereich **Editor Viewport** -Zusatzelement aus. Geben Sie den Namen **columnguideadornment** als Elementnamen ein, und klicken Sie auf **Hinzufügen** , um ihn hinzuzufügen.
 
   Sie können sehen, dass diese Element Vorlage zwei Dateien zum Projekt hinzugefügt hat (sowie Verweise usw.): **ColumnGuideAdornment.cs** und **ColumnGuideAdornmentTextViewCreationListener.cs**. Die Vorlagen zeichnen ein Violettes Rechteck in der Ansicht. Im folgenden Abschnitt ändern Sie einige Zeilen im Ansichts erstellungslistener und ersetzen den Inhalt von **ColumnGuideAdornment.cs**.
 
-  **Befehle**. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten. Wählen Sie den Befehl **&#124; neues Element hinzufügen...** aus, um ein neues Ansichts Zusatzelement hinzuzufügen. Klicken Sie im linken Navigationsbereich auf **Erweiterbarkeit &#124; VSPackage** , und wählen Sie im rechten Bereich **benutzerdefinierter Befehl** aus. Geben Sie den Namen **columnguidecommands** als Elementname ein, und wählen Sie **Hinzufügen**aus. Zusätzlich zu mehreren verweisen wurden durch das Hinzufügen der Befehle und des Pakets auch **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**und **columnguidecommandspackage. vsct**hinzugefügt. Im folgenden Abschnitt ersetzen Sie den Inhalt der ersten und letzten Dateien, um die Befehle zu definieren und zu implementieren.
+  **Befehle**. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten. Wählen Sie den Befehl **&#124; neues Element hinzufügen...** aus, um ein neues Ansichts Zusatzelement hinzuzufügen. Klicken Sie im linken Navigationsbereich auf **Erweiterbarkeit &#124; VSPackage** , und wählen Sie im rechten Bereich **benutzerdefinierter Befehl** aus. Geben Sie den Namen **columnguidecommands** als Elementname ein, und wählen Sie **Hinzufügen** aus. Zusätzlich zu mehreren verweisen wurden durch das Hinzufügen der Befehle und des Pakets auch **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs** und **columnguidecommandspackage. vsct** hinzugefügt. Im folgenden Abschnitt ersetzen Sie den Inhalt der ersten und letzten Dateien, um die Befehle zu definieren und zu implementieren.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Einrichten des Ansichts erstellerstellers der Textansicht
 Öffnen Sie *ColumnGuideAdornmentTextViewCreationListener.cs* im Editor. Mit diesem Code wird ein Handler implementiert, wenn Visual Studio Text Ansichten erstellt. Es gibt Attribute, die Steuern, wann der Handler aufgerufen wird, abhängig von den Merkmalen der Ansicht.
@@ -505,7 +507,7 @@ Die Implementierung der Befehle besteht aus drei Teilen: ColumnGuideCommandsPack
 Der Paket Code enthält Code Bausteine, die für Visual Studio erforderlich sind, um zu ermitteln, ob die Erweiterung Befehle anbietet, und um zu ermitteln, wo die Befehle platziert werden sollen. Beim Initialisieren des Pakets wird die Implementierungs Klasse der Befehle instanziiert. Weitere Informationen zu Paketen in Bezug auf Befehle finden Sie unter [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md).
 
 ### <a name="a-common-commands-pattern"></a>Ein gemeinsames Befehls Muster
-Die Befehle in der Erweiterung der Spalten Handbücher sind ein Beispiel für ein sehr gängiges Muster in Visual Studio. Sie fügen verwandte Befehle in eine Gruppe ein, und Sie platzieren diese Gruppe in einem Hauptmenü, das häufig mit " `<CommandFlag>CommandWellOnly</CommandFlag>` " festgelegt wird, damit der Befehl unsichtbar wird.  Durch das Einfügen von Befehlen in die Hauptmenüs (z. b. **Bearbeiten**) erhalten Sie praktische Namen (z **. b. Edit. addcolumnguide**), die zum Suchen von Befehlen beim erneuten Zuweisen von Tasten Zuordnungen in den **Tools-Optionen**nützlich sind. Es ist auch hilfreich, wenn Sie Befehle im **Befehlsfenster**aufrufen.
+Die Befehle in der Erweiterung der Spalten Handbücher sind ein Beispiel für ein sehr gängiges Muster in Visual Studio. Sie fügen verwandte Befehle in eine Gruppe ein, und Sie platzieren diese Gruppe in einem Hauptmenü, das häufig mit " `<CommandFlag>CommandWellOnly</CommandFlag>` " festgelegt wird, damit der Befehl unsichtbar wird.  Durch das Einfügen von Befehlen in die Hauptmenüs (z. b. **Bearbeiten**) erhalten Sie praktische Namen (z **. b. Edit. addcolumnguide**), die zum Suchen von Befehlen beim erneuten Zuweisen von Tasten Zuordnungen in den **Tools-Optionen** nützlich sind. Es ist auch hilfreich, wenn Sie Befehle im **Befehlsfenster** aufrufen.
 
 Dann fügen Sie die Gruppe der Befehle zu Kontextmenüs oder Untermenüs hinzu, in denen Sie erwarten, dass der Benutzer die Befehle verwendet. Visual Studio behandelt `CommandWellOnly` nur ein insichtbarkeits-Flag für die Hauptmenüs. Wenn Sie dieselbe Gruppe von Befehlen in einem Kontextmenü oder Untermenü platzieren, sind die Befehle sichtbar.
 

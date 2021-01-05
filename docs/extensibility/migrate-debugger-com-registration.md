@@ -1,5 +1,7 @@
 ---
 title: COM-Klassen Registrierung für 64-Bit-Debugger migrieren | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie com-Klassen für Debugger-Erweiterungen bei msvsmon registrieren, ohne in HKEY_CLASSES_ROOT schreiben zu müssen.
+ms.custom: SEO-VS-2020
 ms.date: 11/10/2016
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
@@ -8,12 +10,12 @@ ms.author: greggm
 manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f28f8eb2935ed2dd8a848ccc3151b9f438fc437
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62433694"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862883"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>COM-Klassen Registrierung für 64-Bit-Debugger migrieren
 
@@ -21,7 +23,7 @@ Bei Debugger-Erweiterungen, die com-Klassen in HKEY_CLASSES_ROOT registrieren, i
 
 ## <a name="msvsmon-comclass-def"></a>msvsmon-ComClass-DEF
 
-Um dieses Verfahren zu verwenden, fügen Sie *neben msvsmon (INSTALLDIR: *.msvsmon-comclass-def.json* * \common7\ide\remotedebugger\x64 *) einen.msvsmon-comclass-def.jsfür die Datei hinzu.
+Um dieses Verfahren zu verwenden, fügen Sie *neben msvsmon (INSTALLDIR:* \common7\ide\remotedebugger\x64 *) einen.msvsmon-comclass-def.jsfür die Datei hinzu.
 
 Im folgenden finden Sie ein Beispiel für eine msvsmon-ComClass-DEF-Datei, die eine verwaltete und eine native Klasse registriert:
 

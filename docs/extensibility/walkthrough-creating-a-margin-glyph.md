@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Rand Symbols | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die Darstellung von Editor-Rändern mithilfe von benutzerdefinierten Editor-Erweiterungen anpassen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905050"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863082"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Exemplarische Vorgehensweise: Erstellen eines Rand Symbols
 Sie können die Darstellung der Editor Ränder anpassen, indem Sie benutzerdefinierte Editor-Erweiterungen verwenden. In dieser exemplarischen Vorgehensweise wird ein benutzerdefiniertes Symbol auf den Indikator Rand eingefügt, wenn das Wort "ToDo" in einem Code Kommentar angezeigt wird.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts
 
-1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `TodoGlyphTest` .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit** und dann **VSIX-Projekt** aus.) Benennen Sie die Projekt Mappe `TodoGlyphTest` .
 
 2. Fügen Sie ein Editor-Klassifizierungs Projekt Element hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -132,7 +134,7 @@ Sie können die Darstellung der Editor Ränder anpassen, indem Sie benutzerdefin
 
 1. Erstellen Sie die Projektmappe.
 
-2. Führen Sie das Projekt aus, indem Sie **F5**drücken. Eine zweite Instanz von Visual Studio wird gestartet.
+2. Führen Sie das Projekt aus, indem Sie **F5** drücken. Eine zweite Instanz von Visual Studio wird gestartet.
 
 3. Stellen Sie sicher, dass der Indikator Rand angezeigt wird. (Klicken Sie **im Menü Extras** auf **Optionen**. Vergewissern Sie sich, dass auf der Seite **Text-Editor** die Option **Indikator Rand** ausgewählt ist.)
 

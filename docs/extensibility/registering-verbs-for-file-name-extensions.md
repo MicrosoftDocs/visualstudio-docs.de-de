@@ -1,5 +1,7 @@
 ---
 title: Registrieren von Verben für Dateinamen Erweiterungen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mithilfe eines shellschlüssels ein Verb registrieren, das einem programmgesteuerten Bezeichner für eine Dateierweiterung zugeordnet ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701533"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863044"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrieren von Verben für Dateinamen Erweiterungen
 Die Zuordnung einer Dateinamenerweiterung zu einer Anwendung hat im Allgemeinen eine bevorzugte Aktion, die auftritt, wenn ein Benutzer auf eine Datei doppelklickt. Diese bevorzugte Aktion ist mit einem Verb verknüpft, z. b. öffnen, das der Aktion entspricht.
 
- Sie können Verben, die einem programmatischen Bezeichner (ProgID) für eine Erweiterung zugeordnet sind, mithilfe des shellschlüssels, der sich unter **HKEY_CLASSES_ROOT \{ ProgID} \Shell**befindet, registrieren. Weitere Informationen finden Sie unter [Dateitypen](/windows/desktop/shell/fa-file-types).
+ Sie können Verben, die einem programmatischen Bezeichner (ProgID) für eine Erweiterung zugeordnet sind, mithilfe des shellschlüssels, der sich unter **HKEY_CLASSES_ROOT \{ ProgID} \Shell** befindet, registrieren. Weitere Informationen finden Sie unter [Dateitypen](/windows/desktop/shell/fa-file-types).
 
 ## <a name="register-standard-verbs"></a>Standard Verben registrieren
  Das Betriebssystem erkennt die folgenden Standard Verben:
@@ -29,7 +31,7 @@ Die Zuordnung einer Dateinamenerweiterung zu einer Anwendung hat im Allgemeinen 
 
 - Bearbeiten
 
-- Abspielen
+- Play
 
 - Drucken
 
