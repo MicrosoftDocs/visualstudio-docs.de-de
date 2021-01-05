@@ -1,5 +1,7 @@
 ---
 title: Vorbereiten von Erweiterungen für Windows Installer Bereitstellung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Projekt vorbereiten, dessen Standardausgabe ein VSIX-Paket für die Einbindung in ein Setup-Projekt ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012216"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862900"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Vorbereiten von Erweiterungen für Windows Installer Bereitstellung
 Zum Bereitstellen eines VSIX-Pakets können Sie kein Windows Installer Paket (MSI) verwenden. Sie können jedoch den Inhalt eines VSIX-Pakets für die MSI-Bereitstellung extrahieren. In diesem Dokument wird gezeigt, wie ein Projekt vorbereitet wird, dessen Standardausgabe ein VSIX-Paket für die Einbindung in ein Setup-Projekt ist.
@@ -44,7 +46,7 @@ Zum Bereitstellen eines VSIX-Pakets können Sie kein Windows Installer Paket (MS
 
 ### <a name="to-extract-files-from-an-existing-vsix-package"></a>So extrahieren Sie Dateien aus einem vorhandenen VSIX-Paket
 
-1. Benennen Sie den um *. VSIX* -Datei, die die Erweiterung von *Dateiname. vsix* zum *filename.zip*enthält.
+1. Benennen Sie den um *. VSIX* -Datei, die die Erweiterung von *Dateiname. vsix* zum *filename.zip* enthält.
 
 2. Kopieren Sie den Inhalt der *ZIP* -Datei in ein Verzeichnis.
 
@@ -54,6 +56,6 @@ Zum Bereitstellen eines VSIX-Pakets können Sie kein Windows Installer Paket (MS
 
 5. Fügen Sie die verbleibenden Dateien dem Setup-Projekt hinzu.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Visual Studio-Installer-Bereitstellung](/previous-versions/2kt85ked(v=vs.120))
 - [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Aktion](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

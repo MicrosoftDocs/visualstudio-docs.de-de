@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anpassen der Text Ansicht | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie eine Textansicht anpassen, indem Sie eine der verschiedenen Eigenschaften in der Editor-Format-Karte ändern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904933"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862969"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Exemplarische Vorgehensweise: Anpassen der Textansicht
 Sie können eine Textansicht anpassen, indem Sie die folgenden Eigenschaften in der Editor-Format-Karte ändern:
@@ -33,11 +35,11 @@ Sie können eine Textansicht anpassen, indem Sie die folgenden Eigenschaften in 
 - Sichtbare Leerräume
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts
 
-1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `ViewPropertyTest` .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit** und dann **VSIX-Projekt** aus.) Benennen Sie die Projekt Mappe `ViewPropertyTest` .
 
 2. Fügen Sie dem Projekt eine Editor-Klassifizierungs Element Vorlage hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 

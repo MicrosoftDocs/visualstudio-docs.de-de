@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines SDK mit C++ | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie ein natives C++ Math Library-SDK erstellen, das SDK als Visual Studio-Erweiterung verpacken und es dann zum Erstellen einer App mithilfe dieser exemplarischen Vorgehensweise verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15fa0714097efda31b52f1d389d3a26cf581e506
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cc65fe72ed631a4bb3c0b22efb74aae9160e1cb
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905015"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862945"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Exemplarische Vorgehensweise: Erstellen eines SDK mithilfe von C++
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes C++ Math Library SDK erstellen, das SDK als Visual Studio-Erweiterung (VSIX) verpacken und dann zum Erstellen einer App verwenden. Die exemplarische Vorgehensweise ist in die folgenden Schritte unterteilt:
@@ -41,7 +43,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Projekt Mappe **"nativemath"**, und wählen Sie dann **Add**  >  **Neues Projekt**hinzufügen aus.
+5. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für die Projekt Mappe **"nativemath"**, und wählen Sie dann   >  **Neues Projekt** hinzufügen aus.
 
 6. Erweitern Sie in der Liste der Vorlagen die **Visual C++**, und wählen Sie dann die Vorlage **Windows-Runtime Komponenten** aus. Geben Sie im Feld **Name den Namen** an `NativeMathWRT` , und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -57,25 +59,25 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 
 ## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> So erstellen Sie das nativemathvsix-Erweiterungsprojekt
 
-1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Projekt Mappe **"nativemath"**, und wählen Sie dann **Add**  >  **Neues Projekt**hinzufügen aus.
+1. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für die Projekt Mappe **"nativemath"**, und wählen Sie dann   >  **Neues Projekt** hinzufügen aus.
 
-2. Erweitern Sie in der Liste der Vorlagen die Option **Visual c#**  >  -**Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt**aus. Geben Sie im Feld **Name den Namen** **nativemathvsix**an, und klicken Sie dann auf die Schaltfläche **OK** .
+2. Erweitern Sie in der Liste der Vorlagen die Option **Visual c#**  >  -**Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt** aus. Geben Sie im Feld **Name den Namen** **nativemathvsix** an, und klicken Sie dann auf die Schaltfläche **OK** .
 
-3. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für " **Source. Extension. vsixmanifest**", und wählen Sie dann **Code anzeigen**aus.
+3. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für " **Source. Extension. vsixmanifest**", und wählen Sie dann **Code anzeigen** aus.
 
 4. Verwenden Sie das folgende XML, um den vorhandenen XML-Code zu ersetzen.
 
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-5. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **nativemathvsix** , und wählen Sie dann **Add**  >  **Neues Element**hinzufügen aus.
+5. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **nativemathvsix** , und wählen Sie dann   >  **Neues Element** hinzufügen aus.
 
-6. Erweitern Sie in der Liste der **Visual c#-Elemente den Knoten** **Daten**, und wählen Sie dann **XML-Datei**aus. Geben Sie im Feld **Name den Namen** an `SDKManifest.xml` , und klicken Sie dann auf die Schaltfläche **OK** .
+6. Erweitern Sie in der Liste der **Visual c#-Elemente den Knoten** **Daten**, und wählen Sie dann **XML-Datei** aus. Geben Sie im Feld **Name den Namen** an `SDKManifest.xml` , und klicken Sie dann auf die Schaltfläche **OK** .
 
 7. Verwenden Sie diese XML-Datei, um den Inhalt der Datei zu ersetzen:
 
      [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
 
-8. Erstellen Sie in **Projektmappen-Explorer**unter dem Projekt **nativemathvsix** diese Ordnerstruktur:
+8. Erstellen Sie in **Projektmappen-Explorer** unter dem Projekt **nativemathvsix** diese Ordnerstruktur:
 
     ```xml
     \DesignTime
@@ -92,9 +94,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
                 \Neutral
     ```
 
-9. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für die Projekt Mappe **"nativemath"**, und wählen Sie dann **Ordner in Datei-Explorer öffnen**aus.
+9. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für die Projekt Mappe **"nativemath"**, und wählen Sie dann **Ordner in Datei-Explorer öffnen** aus.
 
-10. Kopieren Sie im **Datei-Explorer** *$solutionroot $ \nativemath\nativemath.h*, und fügen Sie ihn dann in **Projektmappen-Explorer**unter dem **nativemathvsix** -Projekt in den Ordner *$solutionroot $ \nativemathvsix\designtime\commonconfiguration\neutral\include \\ * ein.
+10. Kopieren Sie im **Datei-Explorer** *$solutionroot $ \nativemath\nativemath.h*, und fügen Sie ihn dann in **Projektmappen-Explorer** unter dem **nativemathvsix** -Projekt in den Ordner *$solutionroot $ \nativemathvsix\designtime\commonconfiguration\neutral\include \\* ein.
 
      Kopieren Sie *$solutionroot $ \Debug \ nativemath\nativemath.lib*, und fügen Sie ihn dann in den Ordner *$solutionroot $ \nativemathvsix\designtime\debug \\ \ x86* ein.
 
@@ -105,13 +107,13 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 
      Kopieren Sie *$solutionroot $ \Debug \ nativemathwrt\nativemathwrt.pri* , und fügen Sie Sie in den Ordner *$solutionroot $ \nativemathvsix\references\commonconfiguration\neutral* ein.
 
-11. Erstellen Sie im Ordner *$solutionroot $ \nativemathvsix\designtime\debug\x86 \\ * eine Textdatei mit dem Namen *nativemathsdk.*-Eigenschaften, und fügen Sie den folgenden Inhalt in die Datei ein:
+11. Erstellen Sie im Ordner *$solutionroot $ \nativemathvsix\designtime\debug\x86 \\* eine Textdatei mit dem Namen *nativemathsdk.*-Eigenschaften, und fügen Sie den folgenden Inhalt in die Datei ein:
 
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]
 
-12. Wählen Sie in der Menüleiste **View**  >  **Weitere Fenster**  >  **Eigenschaften** anzeigen aus (Tastatur: Wählen Sie die **F4** -Taste).
+12. Wählen Sie in der Menüleiste   >  **Weitere Fenster**  >  **Eigenschaften** anzeigen aus (Tastatur: Wählen Sie die **F4** -Taste).
 
-13. Wählen Sie in **Projektmappen-Explorer**die Datei **nativemathwrt. winmd** aus. Ändern Sie im **Eigenschaften** Fenster die Eigenschaft **Buildaktion** in **Inhalt**, und ändern Sie dann die Eigenschaft **in VSIX einschließen** in **true**.
+13. Wählen Sie in **Projektmappen-Explorer** die Datei **nativemathwrt. winmd** aus. Ändern Sie im **Eigenschaften** Fenster die Eigenschaft **Buildaktion** in **Inhalt**, und ändern Sie dann die Eigenschaft **in VSIX einschließen** in **true**.
 
      Wiederholen Sie diesen Vorgang für die Datei " **nativemath. h** ".
 
@@ -121,7 +123,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 
      Wiederholen Sie diesen Vorgang für die Datei **nativemathsdk.** -Eigenschaften.
 
-14. Wählen Sie in **Projektmappen-Explorer**die Datei **nativemath. h** aus. Ändern Sie im **Eigenschaften** Fenster die Eigenschaft **in VSIX einschließen** in **true**.
+14. Wählen Sie in **Projektmappen-Explorer** die Datei **nativemath. h** aus. Ändern Sie im **Eigenschaften** Fenster die Eigenschaft **in VSIX einschließen** in **true**.
 
      Wiederholen Sie diesen Vorgang für die **NativeMath.dll** Datei.
 
@@ -131,9 +133,9 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 
 15. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
-16. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **nativemathvsix** , und wählen Sie dann **Ordner in Datei-Explorer öffnen**aus.
+16. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **nativemathvsix** , und wählen Sie dann **Ordner in Datei-Explorer öffnen** aus.
 
-17. Navigieren Sie im **Datei-Explorer**zum Ordner *$solutionroot $ \nativemathvsix\bin\debug* , und führen Sie dann *nativemathvsix. vsix* aus, um mit der Installation zu beginnen.
+17. Navigieren Sie im **Datei-Explorer** zum Ordner *$solutionroot $ \nativemathvsix\bin\debug* , und führen Sie dann *nativemathvsix. vsix* aus, um mit der Installation zu beginnen.
 
 18. Wählen Sie die Schaltfläche **Installieren** aus, warten Sie, bis die Installation abgeschlossen ist, und öffnen Sie dann Visual Studio.
 
@@ -141,17 +143,17 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein System eigenes
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-2. Erweitern Sie in der Liste der Vorlagen **Visual C++**  >  **Windows Universal** , und wählen Sie dann **leere App**aus. Geben Sie im Feld **Name den Namen** **nativemathsdksample**ein, und klicken Sie dann auf die Schaltfläche **OK** .
+2. Erweitern Sie in der Liste der Vorlagen **Visual C++**  >  **Windows Universal** , und wählen Sie dann **leere App** aus. Geben Sie im Feld **Name den Namen** **nativemathsdksample** ein, und klicken Sie dann auf die Schaltfläche **OK** .
 
-3. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü für das Projekt **nativemathsdksample** , und wählen Sie dann Verweis **Hinzufügen**aus  >  **Reference**.
+3. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **nativemathsdksample** , und wählen Sie dann Verweis **Hinzufügen** aus  >  .
 
-4. Erweitern Sie im Dialogfeld **Verweis hinzufügen** in der Liste der Verweis Typen den Knoten **universelle Fenster**, und wählen Sie dann **Erweiterungen**aus. Aktivieren Sie abschließend das Kontrollkästchen **native Math SDK** , und klicken Sie dann auf die Schaltfläche **OK** .
+4. Erweitern Sie im Dialogfeld **Verweis hinzufügen** in der Liste der Verweis Typen den Knoten **universelle Fenster**, und wählen Sie dann **Erweiterungen** aus. Aktivieren Sie abschließend das Kontrollkästchen **native Math SDK** , und klicken Sie dann auf die Schaltfläche **OK** .
 
 5. Zeigen Sie die Projekteigenschaften für nativemathsdksample an.
 
-    Die Eigenschaften, die Sie in *nativemathsdk.* Properties definiert haben, wurden beim Hinzufügen des Verweises angewendet. Sie können überprüfen, ob die Eigenschaften angewendet wurden, indem Sie die Eigenschaft **VC + +-Verzeichnisse** der **Konfigurations Eigenschaften**des Projekts überprüfen.
+    Die Eigenschaften, die Sie in *nativemathsdk.* Properties definiert haben, wurden beim Hinzufügen des Verweises angewendet. Sie können überprüfen, ob die Eigenschaften angewendet wurden, indem Sie die Eigenschaft **VC + +-Verzeichnisse** der **Konfigurations Eigenschaften** des Projekts überprüfen.
 
-6. Öffnen Sie in **Projektmappen-Explorer**die Datei " **MainPage. XAML**", und ersetzen Sie dann den Inhalt mit dem folgenden XAML-Code:
+6. Öffnen Sie in **Projektmappen-Explorer** die Datei " **MainPage. XAML**", und ersetzen Sie dann den Inhalt mit dem folgenden XAML-Code:
 
     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]
 

@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie einem benutzerdefinierten Editor weitere Funktionen hinzufügen, nachdem Sie den Editor erstellt haben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414021"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863206"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor
 Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm weitere Funktionen hinzufügen.
@@ -34,7 +36,7 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
 
 3. Implementieren Sie eine Editorfactory durch Einrichten der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> Schnittstelle.
 
-     Weitere Informationen finden Sie unter [Editor factories](/previous-versions/visualstudio/visual-studio-2015/extensibility/editor-factories?preserve-view=true&view=vs-2015)editorfactorys.
+     Weitere Informationen finden Sie unter [](/previous-versions/visualstudio/visual-studio-2015/extensibility/editor-factories?preserve-view=true&view=vs-2015)editorfactorys.
 
 4. Entscheiden Sie, ob Sie möchten, dass der Editor die direkte Aktivierung oder die vereinfachte Einbettung verwendet, um das Dokument Ansichts Objekt Fenster zu verwalten.
 
@@ -138,9 +140,9 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
   > [!NOTE]
   > Die- `IOleInPlaceComponent` Schnittstelle wird verwendet, um die Zusammenführung von OLE 2-Menüs
 
-   Ihre `IOleCommandTarget` Implementierung verarbeitet Befehle wie **Ausschneiden** , **Kopieren** und **Einfügen**. Wenn `IOleCommandTarget` Sie implementieren, entscheiden Sie, ob Ihr Editor eine eigene *vsct* -Datei benötigt, um eine eigene Befehlsmenü Struktur zu definieren, oder ob Sie von definierte Standard Befehle implementieren kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In der Regel verwenden Editoren die Menüs der IDE und definieren ihre eigenen Symbolleisten. Es ist jedoch häufig notwendig, dass ein Editor zusätzlich zur Verwendung des Standard Befehlssatzes der IDE seine eigenen spezifischen Befehle definiert. Der Editor muss die verwendeten Standard Befehle deklarieren und dann alle neuen Befehle, Kontextmenüs, Menüs der obersten Ebene und Symbolleisten in einer *vsct* -Datei definieren. Wenn Sie einen direkten Aktivierungs-Editor erstellen, implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> und definieren Sie die Menüs und Symbolleisten für den Editor in einer *vsct* -Datei anstelle der OLE 2-Menü Zusammenführung.
+   Ihre `IOleCommandTarget` Implementierung verarbeitet Befehle wie **Ausschneiden**, **Kopieren** und **Einfügen**. Wenn `IOleCommandTarget` Sie implementieren, entscheiden Sie, ob Ihr Editor eine eigene *vsct* -Datei benötigt, um eine eigene Befehlsmenü Struktur zu definieren, oder ob Sie von definierte Standard Befehle implementieren kann [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In der Regel verwenden Editoren die Menüs der IDE und definieren ihre eigenen Symbolleisten. Es ist jedoch häufig notwendig, dass ein Editor zusätzlich zur Verwendung des Standard Befehlssatzes der IDE seine eigenen spezifischen Befehle definiert. Der Editor muss die verwendeten Standard Befehle deklarieren und dann alle neuen Befehle, Kontextmenüs, Menüs der obersten Ebene und Symbolleisten in einer *vsct* -Datei definieren. Wenn Sie einen direkten Aktivierungs-Editor erstellen, implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> und definieren Sie die Menüs und Symbolleisten für den Editor in einer *vsct* -Datei anstelle der OLE 2-Menü Zusammenführung.
 
-- Um die Überfüllung des Menübefehls in der Benutzeroberfläche zu verhindern, sollten Sie die vorhandenen Befehle in der IDE verwenden, bevor Sie neue Befehle erfinden. Freigegebene Befehle sind in " *sharedcmddef. vsct* " und " *shellcmddef. vsct* " definiert. Diese Dateien werden standardmäßig im Unterverzeichnis visualstudiointegration\common\inc der-Installation installiert [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] .
+- Um die Überfüllung des Menübefehls in der Benutzeroberfläche zu verhindern, sollten Sie die vorhandenen Befehle in der IDE verwenden, bevor Sie neue Befehle erfinden. Freigegebene Befehle sind in " *sharedcmddef. vsct* " und " *shellcmddef. vsct*" definiert. Diese Dateien werden standardmäßig im Unterverzeichnis visualstudiointegration\common\inc der-Installation installiert [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] .
 
 - `ISelectionContainer` kann sowohl eine einfache als auch eine Mehrfachauswahl Ausdrücken. Jedes ausgewählte Objekt wird als Objekt implementiert `IDispatch` .
 

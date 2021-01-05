@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie mithilfe der VSPackage-Projektvorlage einen einfachen benutzerdefinierten Editor in C++ erstellen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4713931d70fd91dd57b85bc6fc749e62e03eb20b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905922"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863124"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Editors
 Die VSPackage-Projektvorlage kann einen einfachen benutzerdefinierten Editor in C++ erstellen. Die VSPackage-Projektvorlage unterstützt nicht mehr c#-oder Visual Basic-Projekte. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).

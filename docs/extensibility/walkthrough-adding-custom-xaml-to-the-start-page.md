@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Start Seite | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie eine benutzerdefinierte Visual Studio-Startseite erstellen, die einen Webbrowser enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8f23b1331b2c083a38f6b11d9a4a3647474b2f04
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012073"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862788"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Startseite
 
@@ -67,7 +69,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine benutzerdefiniert
 
 2. Öffnen Sie in der experimentellen Instanz von Visual Studio die Seite Extras **/options/Umgebung** .
 
-3. Wählen Sie **Start**aus. Wählen Sie in der Liste **Start Seite anpassen** die *XAML* -Datei aus, und klicken Sie auf **OK**.
+3. Wählen Sie **Start** aus. Wählen Sie in der Liste **Start Seite anpassen** die *XAML* -Datei aus, und klicken Sie auf **OK**.
 
 4. Klicken Sie im Menü **Ansicht** auf **Startseite**.
 
@@ -81,13 +83,13 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie eine benutzerdefiniert
 
 7. Schließen Sie die experimentelle Instanz.
 
-Wählen Sie zum Anwenden der benutzerdefinierten Start **Tools**Seite unter Extras  >  **Optionen**  >  **Umgebung**die Option **Start**aus. Wählen Sie in der Liste **Start Seite anpassen** die *XAML* -Datei aus, und klicken Sie auf **OK**.
+Wählen Sie zum Anwenden der benutzerdefinierten Start Seite unter Extras  >  **Optionen**  >  **Umgebung** die Option **Start** aus. Wählen Sie in der Liste **Start Seite anpassen** die *XAML* -Datei aus, und klicken Sie auf **OK**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Die Visual Studio-Startseite enthält jetzt eine Registerkarte, auf der eine Registerkarte mit dem Webbrowser und die Registerkarte MyButton angezeigt wird. Sie können benutzerdefinierte Startseiten mit anderer Funktionalität erstellen, indem Sie das *Code Behind-* Modell zum Hinzufügen einer benutzerdefinierten DLL verwenden, wie unter [Hinzufügen eines Benutzer Steuer Elements zur Startseite](../extensibility/adding-user-control-to-the-start-page.md)gezeigt. Sie können benutzerdefinierte Startseiten für andere Benutzer freigeben, indem Sie die resultierende vsix-Datei auf der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website oder auf einer anderen Website oder Netzwerkfreigabe veröffentlichen. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md)
 - [WPF-Container Steuerelemente](/previous-versions/bb675291(v=vs.110))
