@@ -1,5 +1,7 @@
 ---
 title: Anwendungs Muster für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Unterschied zwischen Dokument Fenstern, Tool Fenstern und nicht modalem Dialogfeldern, einschließlich der Fenster Verwendungs Muster für neue Features für Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 036c95951fe3dc9e65a0f3338f75ae9867d721c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 709daa641e898f9d75f4bab340c8e5fd00d28a88
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698594"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716119"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Fenster Interaktionen
@@ -33,10 +35,10 @@ Nicht **modaldialogfelder** werden in Visual Studio nicht empfohlen. Bei den mei
 ||Dokument Fenster|Tool Fenster|Nicht modalem Dialogfeld|
 |-|---------------------|-----------------|---------------------|
 | **Position** | Ist immer innerhalb des Dokument Brunnens positioniert und wird nicht um die Ränder der IDE Andocken. Sie kann "gezogen" werden, sodass Sie getrennt von der Hauptshell schwebt. | Wird in der Regel an den Rändern der IDE angedockt, kann jedoch so angepasst werden, dass Sie unverankert, automatisch ausgeblendet (gelöst) oder innerhalb des Dokument Brunnens angedockt ist.|Großes gleitendes Fenster, getrennt von der IDE. |
-| **Commit-Modell** | *Verzögerter Commit*<br /><br /> Um die Daten in einem Dokument zu speichern, muss der Benutzer den Befehl " ** &gt; Speichern**", " **Speichern**unter" oder " **Alle speichern** " ausgeben. In einem Dokument Fenster ist das Konzept der darin enthaltenen Daten "dirgebunden" und dann ein Commit für einen der Save-Befehle. Beim Schließen eines Dokument Fensters werden alle Inhalte entweder auf dem Datenträger gespeichert oder gehen verloren. | *Sofortiger Commit*<br /><br /> Es ist kein Speichermodell vorhanden. Für Inspektor-Tool Fenster, die beim Bearbeiten einer Datei behilflich sind, muss die Datei im aktiven Editor oder Designer geöffnet sein, und der Editor oder Designer besitzt den Speicher. | *Verzögerter oder sofortiger Commit*<br /><br /> In den meisten Fällen erfordert ein großes, nicht modalem Dialogfeld eine Aktion, mit der Änderungen ausgeführt werden können, und ermöglicht einen "Abbrechen"-Vorgang, der alle in der Dialog Sitzung vorgenommenen Änderungen zurückführt.  Dies unterscheidet ein nicht modalem Dialogfeld in einem Tool Fenster, in dem das Tool Fenster immer über ein sofortiges Commit-Modell verfügt. |
+| **Commit-Modell** | *Verzögerter Commit*<br /><br /> Um die Daten in einem Dokument zu speichern, muss der Benutzer den Befehl " **&gt; Speichern**", " **Speichern** unter" oder " **Alle speichern** " ausgeben. In einem Dokument Fenster ist das Konzept der darin enthaltenen Daten "dirgebunden" und dann ein Commit für einen der Save-Befehle. Beim Schließen eines Dokument Fensters werden alle Inhalte entweder auf dem Datenträger gespeichert oder gehen verloren. | *Sofortiger Commit*<br /><br /> Es ist kein Speichermodell vorhanden. Für Inspektor-Tool Fenster, die beim Bearbeiten einer Datei behilflich sind, muss die Datei im aktiven Editor oder Designer geöffnet sein, und der Editor oder Designer besitzt den Speicher. | *Verzögerter oder sofortiger Commit*<br /><br /> In den meisten Fällen erfordert ein großes, nicht modalem Dialogfeld eine Aktion, mit der Änderungen ausgeführt werden können, und ermöglicht einen "Abbrechen"-Vorgang, der alle in der Dialog Sitzung vorgenommenen Änderungen zurückführt.  Dies unterscheidet ein nicht modalem Dialogfeld in einem Tool Fenster, in dem das Tool Fenster immer über ein sofortiges Commit-Modell verfügt. |
 | **Sichtbarkeit** | *Öffnen/erstellen (Datei) und schließen*<br /><br /> Das Öffnen eines Dokument Fenster erfolgt durch das Öffnen eines vorhandenen Dokuments oder das Verwenden einer Vorlage zum Erstellen eines neuen Dokuments. Es ist kein "Open \<specific editor> "-Befehl vorhanden. | *Ausblenden und anzeigen*<br /><br /> Einzel Instanz-Tool Fenster können ausgeblendet oder angezeigt werden. Inhalt und Status im Tool Fenster bleiben erhalten, wenn Sie in der Ansicht oder im verborgenen angezeigt werden. Tool Fenster mit mehreren Instanzen können geschlossen und ausgeblendet werden. Wenn ein Tool Fenster mit mehreren Instanzen geschlossen wird, werden Inhalt und Zustand innerhalb des Tool Fensters verworfen. | *Gestartet von einem Befehl*<br /><br /> Dialoge werden von einem aufgabenbasierten Befehl aus gestartet. |
 | **Verein** | *Mehrere Instanzen*<br /><br /> Mehrere Editoren können gleichzeitig geöffnet sein und verschiedene Dateien bearbeiten, während einige Editoren auch zulassen, dass dieselbe Datei in mehr als einem Editor geöffnet ist (mit dem **Fenster " &gt; Neues Fenster** ").<br /><br /> Ein einzelner Editor bearbeitet möglicherweise eine oder mehrere Dateien gleichzeitig (Projekt-Designer). | *Einzelne oder mehrere Instanzen*<br /><br /> Der Inhalt wird geändert, um den Kontext (wie im Eigenschaften Browser) widerzuspiegeln oder den Fokus/Kontext auf andere Fenster (Aufgabenliste Projektmappen-Explorer) zu verschieben.<br /><br /> Die Tool Fenster Single-Instance und MultiInstance müssen mit dem aktiven Dokument Fenster verknüpft werden, es sei denn, es gibt einen überzeugenden Grund, nicht zu. | *Einzel Instanz* |
-| **Beispiele** | **Text-Editoren**, wie der Code-Editor<br /><br /> **Entwurfs**Oberflächen, wie z. b. ein Formular-Designer oder eine Modellierungs Oberfläche<br /><br /> **Steuern von Layouts ähnlich**wie beim Manifest-Designer | Der **Projektmappen-Explorer** stellt eine Projekt Mappe und Projekte in der Projekt Mappe bereit.<br /><br /> Der **Server-Explorer** bietet eine hierarchische Ansicht der Server und Datenverbindungen, die der Benutzer im Fenster öffnen möchte. Wenn Sie ein Objekt aus der Daten Bank Hierarchie öffnen, wie z. b. eine Abfrage, wird ein Dokument Fenster geöffnet, und der Benutzer kann die Abfrage bearbeiten.<br /><br /> Im Eigenschaften **Browser** werden Eigenschaften für das Objekt angezeigt, das entweder in einem Dokument Fenster oder in einem anderen Tool Fenster ausgewählt ist. Die Eigenschaften werden entweder in einer hierarchischen Rasteransicht oder in komplexen Dialogfeld ähnlichen Steuerelementen angezeigt, und der Benutzer kann die Werte für diese Eigenschaften festlegen. | |
+| **Beispiele** | **Text-Editoren**, wie der Code-Editor<br /><br /> **Entwurfs** Oberflächen, wie z. b. ein Formular-Designer oder eine Modellierungs Oberfläche<br /><br /> **Steuern von Layouts ähnlich** wie beim Manifest-Designer | Der **Projektmappen-Explorer** stellt eine Projekt Mappe und Projekte in der Projekt Mappe bereit.<br /><br /> Der **Server-Explorer** bietet eine hierarchische Ansicht der Server und Datenverbindungen, die der Benutzer im Fenster öffnen möchte. Wenn Sie ein Objekt aus der Daten Bank Hierarchie öffnen, wie z. b. eine Abfrage, wird ein Dokument Fenster geöffnet, und der Benutzer kann die Abfrage bearbeiten.<br /><br /> Im Eigenschaften **Browser** werden Eigenschaften für das Objekt angezeigt, das entweder in einem Dokument Fenster oder in einem anderen Tool Fenster ausgewählt ist. Die Eigenschaften werden entweder in einer hierarchischen Rasteransicht oder in komplexen Dialogfeld ähnlichen Steuerelementen angezeigt, und der Benutzer kann die Werte für diese Eigenschaften festlegen. | |
 
 ## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Tool Fenster
 
@@ -77,7 +79,7 @@ Tool Fenster sind entweder eine Einzel Instanz oder eine mehrere Instanzen. Eini
 
 ![Tool Fenster, das den Befehl "neuer Fenster" aktiviert, wenn eine Instanz des Fensters aktiv ist](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Tool Fenster, das den Befehl "neuer Fenster" aktiviert, wenn eine Instanz des Fensters aktiv ist
 
-Einzel Instanz-Tool Fenster können ausgeblendet oder angezeigt werden, während Tool Fenster mit mehreren Instanzen geschlossen und ausgeblendet werden können. Alle Tool Fenster können angedockt, Tabstopps verknüpft, unverankert oder als untergeordnetes MDI (Multiple Document Interface)-Fenster (ähnlich einem Dokument Fenster) festgelegt werden. Alle Tool Fenster sollten auf die entsprechenden Fenster Verwaltungs Befehle im Menü "Fenster" reagieren:
+Einzel Instanz-Tool Fenster können ausgeblendet oder angezeigt werden, während Tool Fenster mit mehreren Instanzen geschlossen und ausgeblendet werden können. Alle Tool Fenster können angedockt, Tabstopps verknüpft, unverankert oder als untergeordnetes MDI-Fenster (Multiple-Document Interface) (ähnlich einem Dokument Fenster) festgelegt werden. Alle Tool Fenster sollten auf die entsprechenden Fenster Verwaltungs Befehle im Menü "Fenster" reagieren:
 
 ![Fenster Verwaltungs Befehle im Visual Studio-Menü "Fenster"](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Fenster Verwaltungs Befehle im Visual Studio-Menü "Fenster"
 
@@ -151,9 +153,9 @@ Beispiele für Navigier Bare Listen Tool Fenster sind die Projektmappen-Explorer
 | --- | --- |
 | Autos ||
 | Unmittelbar ||
-| Output | Das Ausgabefenster kann immer dann verwendet werden, wenn Sie Text Ereignisse oder den zu deklarierenden Status aufweisen. |
+| Ausgabe | Das Ausgabefenster kann immer dann verwendet werden, wenn Sie Text Ereignisse oder den zu deklarierenden Status aufweisen. |
 | Arbeitsspeicher ||
-| Breakpoints ||
+| Haltepunkte ||
 | Wird ausgeführt ||
 | Dokumente ||
 | Aufrufliste ||
@@ -182,7 +184,7 @@ Die Bearbeitung von Dokumenten erfordert eine konsistente Benutzer Leistung. Wä
 
 - Behalten Sie immer eine Auswahl im Fenster Projektmappen-Explorer oder einer ähnlichen aktiven Hierarchie bei.
 
-- Durch Doppelklicken auf ein Dokument in der Projektmappen-Explorer sollte die gleiche Aktion wie **geöffnet**ausgeführt werden.
+- Durch Doppelklicken auf ein Dokument in der Projektmappen-Explorer sollte die gleiche Aktion wie **geöffnet** ausgeführt werden.
 
 - Wenn mehr als ein Editor für einen Dokumenttyp verwendet werden kann, muss der Benutzer in der Lage sein, die Standardaktion für einen bestimmten Dokumenttyp mithilfe des Dialog Felds **Öffnen mit** zu überschreiben oder zurückzusetzen. Klicken Sie dazu mit der rechten Maustaste auf die Datei, und wählen Sie im Kontextmenü **Öffnen mit** aus.
 
@@ -337,7 +339,7 @@ Zu den geschichteten Dialogfeldern zählen Registerkarten, Dashboards und eingeb
 
 Im einfachsten Fall ist der Mechanismus zum Wechseln zwischen Gruppierungen ein Registerkarten-Steuerelement. Es stehen mehrere Alternativen zur Verfügung. Weitere Informationen zum Auswählen des am besten geeigneten Stils finden Sie unter priorisieren und Schichten.
 
-Das ** &gt; options** Dialogfeld Extras ist ein Beispiel für einen geschichteten Dialog mithilfe einer eingebetteten Struktur:
+Das **&gt; options** Dialogfeld Extras ist ein Beispiel für einen geschichteten Dialog mithilfe einer eingebetteten Struktur:
 
 ![Tools > Optionen ist ein Beispiel für ein geschichtetes Dialogfeld in Visual Studio.](../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Tools > Optionen ist ein Beispiel für ein geschichtetes Dialogfeld in Visual Studio.
 
@@ -410,13 +412,13 @@ Das Dialogfeld muss eine Standard-Steuerelement Schaltfläche enthalten. Zum Erm
 
 Vermeiden Sie die Auswahl einer dauerhaft destruktiven Aktion für den Standardbefehl. Wenn ein solcher Befehl vorhanden ist, wählen Sie stattdessen einen sichereren Befehl als Standard aus.
 
-#### <a name="access-keys"></a>Zugriffsschlüssel
-Verwenden Sie keine Zugriffsschlüssel für die Schaltflächen **OK**, **Abbrechen**oder **Hilfe** . Diese Schaltflächen werden standardmäßig Tastenkombinationen zugeordnet:
+#### <a name="access-keys"></a>Zugriffstasten
+Verwenden Sie keine Zugriffsschlüssel für die Schaltflächen **OK**, **Abbrechen** oder **Hilfe** . Diese Schaltflächen werden standardmäßig Tastenkombinationen zugeordnet:
 
-| Schaltflächenname | Tastenkombination |
+| Schaltflächenname | Tastenkombinationen |
 | --- | --- |
 | OK | EINGABETASTE |
-| Abbrechen | Esc |
+| Abbrechen | ESC |
 | Hilfe | F1 |
 
 #### <a name="imagery"></a>DN
@@ -436,7 +438,7 @@ Es gibt vor-und Nachteile für verschiedene Methoden der ebenenschnittstelle dur
 
 | Wechsel Mechanismus | Vorteile und geeignete Verwendung | Nachteile und ungeeignete Verwendung |
 | --- | --- | --- |
-| Registersteuerelement | Dialogseiten logisch in verknüpfte Sätze gruppieren<br /><br />Nützlich für weniger als fünf (oder die Anzahl der Registerkarten, die in einer Zeile über das Dialogfeld passen) Seiten verwandter Steuerelemente im Dialogfeld<br /><br />Registerkarten Bezeichnungen müssen kurz sein: ein oder zwei Wörter, mit denen der Inhalt leicht identifiziert werden kann<br /><br />Ein häufig verwendeter System Dialogstil<br /><br />Beispiel: ** &gt; Element Eigenschaften des Datei-Explorers** | Beschreibende Kurzbezeichnungen können schwierig sein.<br /><br />Skalieren Sie im Allgemeinen nicht die letzten fünf Registerkarten in einem Dialog<br /><br />Ungeeignet, wenn Sie über zu viele Registerkarten für eine Zeile verfügen (verwenden Sie eine Alternative Schichttechnik)<br /><br />Nicht erweiterbar |
+| Registersteuerelement | Dialogseiten logisch in verknüpfte Sätze gruppieren<br /><br />Nützlich für weniger als fünf (oder die Anzahl der Registerkarten, die in einer Zeile über das Dialogfeld passen) Seiten verwandter Steuerelemente im Dialogfeld<br /><br />Registerkarten Bezeichnungen müssen kurz sein: ein oder zwei Wörter, mit denen der Inhalt leicht identifiziert werden kann<br /><br />Ein häufig verwendeter System Dialogstil<br /><br />Beispiel: **&gt; Element Eigenschaften des Datei-Explorers** | Beschreibende Kurzbezeichnungen können schwierig sein.<br /><br />Skalieren Sie im Allgemeinen nicht die letzten fünf Registerkarten in einem Dialog<br /><br />Ungeeignet, wenn Sie über zu viele Registerkarten für eine Zeile verfügen (verwenden Sie eine Alternative Schichttechnik)<br /><br />Nicht erweiterbar |
 | Rand leisten Navigation | Einfaches Wechseln von Geräten, die mehr Kategorien als Registerkarten erfüllen können<br /><br />Flache Liste von Kategorien (keine Hierarchie)<br /><br />Dieser Ansatz ist erweiterbar.<br /><br />Beispiel: **anpassen... &gt; Befehl hinzufügen** | Keine gute Verwendung des horizontalen Raums, wenn weniger als drei Gruppen vorhanden sind<br /><br />Der Task eignet sich möglicherweise besser für eine Dropdown-Anwendung. |
 | Baumsteuerelement | Ermöglicht unbegrenzte Kategorien<br /><br />Ermöglicht die Gruppierung und/oder die Hierarchie von Kategorien.<br /><br />Dieser Ansatz ist erweiterbar.<br /><br />Beispiel: **Tool &gt; Optionen** | Stark schastte Hierarchien können zu einem übermäßigen horizontalen Bildlauf führen<br /><br />Visual Studio verfügt über eine Vielzahl von Struktur Ansichten |
 | Assistent | Hilft bei der Fertigstellung von Aufgaben, indem der Benutzer durch aufgabenbasierte, sequenzielle Schritte geleitet wird: der Assistent stellt eine allgemeine Aufgabe dar, und die einzelnen Bereiche stellen die Unteraufgaben dar, die zum Ausführen der Gesamtaufgabe erforderlich sind.<br /><br />Nützlich, wenn der Task die Benutzeroberflächen Grenzen überschreitet, als wenn der Benutzer andernfalls mehrere Editoren und Tool Fenster verwenden müsste, um die Aufgabe abzuschließen.<br /><br />Nützlich, wenn der Task Verzweigungen erfordert<br /><br />Nützlich, wenn der Task Abhängigkeiten zwischen den Schritten enthält<br /><br />Nützlich, wenn mehrere ähnliche Aufgaben mit einem Entscheidungs Verzweigungs Punkt in einem Dialog angezeigt werden können, um die Anzahl von unterschiedlichen ähnlichen Dialogfeldern zu verringern. | Ungeeignet für jeden Task, der keinen sequenziellen Workflow erfordert<br /><br />Benutzer können mit zu vielen Schritten überlastet und verwirrt werden.<br /><br />Die Assistenten verfügen über eine begrenzte Bildschirmfläche. |
@@ -477,7 +479,7 @@ Projekte sollten auch konsistente Interaktionsmodelle für Folgendes gewährleis
 ### <a name="drag-and-drop-interaction-model"></a>Interaktionsmodell für Drag & amp; Drop
 Projekte werden in der Regel als Verweis basiert klassifiziert (in der Lage, nur Verweise auf Projekt Elemente im Speicher beizubehalten), Verzeichnis basiert (nur Projekt Elemente, die physisch in der Hierarchie eines Projekts gespeichert sind) oder gemischt (in der Lage, Verweise oder physische Elemente beizubehalten). Die IDE unternimmt alle drei Projekttypen gleichzeitig innerhalb der **Projektmappen-Explorer**.
 
-Aus Drag & Drop-Sicht sollten die folgenden Eigenschaften für jeden Projekttyp innerhalb der **Projektmappen-Explorer**gelten:
+Aus Drag & Drop-Sicht sollten die folgenden Eigenschaften für jeden Projekttyp innerhalb der **Projektmappen-Explorer** gelten:
 
 - **Verweis basiertes Projekt:** Der wichtigste Punkt ist, dass das Projekt einen Verweis auf ein Element im Speicher durchläuft. Wenn ein Verweis basiertes Projekt als Quelle für einen Move-Vorgang fungiert, sollte nur der Verweis auf das Element aus dem Projekt entfernt werden. Das Element sollte nicht tatsächlich von der Festplatte gelöscht werden. Wenn ein Verweis basiertes Projekt als Ziel für einen verschiebe-oder Kopiervorgang fungiert, sollte es einen Verweis auf das ursprüngliche Quell Element hinzufügen, ohne eine private Kopie des Elements zu erstellen.
 
@@ -485,7 +487,7 @@ Aus Drag & Drop-Sicht sollten die folgenden Eigenschaften für jeden Projekttyp 
 
 - **Projekt mit gemischtem Ziel:** Aus einer Drag & Drop-Sicht basiert das Verhalten dieses Projekt Typs auf der Art des gezogenen Elements (entweder ein Verweis auf ein Element im Speicher oder auf das Element selbst). Das richtige Verhalten für Verweise und physische Elemente werden oben beschrieben.
 
-Wenn das **Projektmappen-Explorer**nur einen Projekttyp enthält, sind Drag & Drop-Vorgänge unkompliziert. Da jedes Projekt System in der Lage ist, ein eigenes Drag & Drop-Verhalten zu definieren, sollten bestimmte Richtlinien (basierend auf dem Drag & Drop-Verhalten von Windows-Explorer) befolgt werden, um eine vorhersagbare Benutzerfreundlichkeit zu gewährleisten:
+Wenn das **Projektmappen-Explorer** nur einen Projekttyp enthält, sind Drag & Drop-Vorgänge unkompliziert. Da jedes Projekt System in der Lage ist, ein eigenes Drag & Drop-Verhalten zu definieren, sollten bestimmte Richtlinien (basierend auf dem Drag & Drop-Verhalten von Windows-Explorer) befolgt werden, um eine vorhersagbare Benutzerfreundlichkeit zu gewährleisten:
 
 - Ein unveränderter Zieh Vorgang im **Projektmappen-Explorer** (wenn weder STRG-Taste noch UMSCHALTTASTE gedrückt gehalten werden) sollte zu einem Verschiebungs Vorgang führen.
 
@@ -601,7 +603,7 @@ In der folgenden Tabelle werden die Drag & amp; Drop-Vorgänge (sowie Ausschneid
 | Kopieren/Einfügen | `Source` | Behält das Original Element bei | Behält das Original Element bei |
 | Kopieren/Einfügen | Ergebnis | Das Element bleibt am ursprünglichen Speicherort im Speicher. | Das Element bleibt am ursprünglichen Speicherort im Speicher. |
 
-Diese Details sollten bei der Implementierung von Drag-in- **Projektmappen-Explorer**berücksichtigt werden:
+Diese Details sollten bei der Implementierung von Drag-in- **Projektmappen-Explorer** berücksichtigt werden:
 
 - Entwurf für Szenarien mit mehreren Auswahl.
 
@@ -629,6 +631,6 @@ Ein weiteres Problem, das Sie beachten sollten, ist die Behandlung von Verschieb
 
 Dadurch erhält der Benutzer die Möglichkeit, die Arbeit zu speichern, bevor das Ziel seine Kopien vornimmt. Eine neue Methode wurde `IVsHierarchyDropDataSource2::OnBeforeDropNotify` hinzugefügt, um diese Behandlung zu aktivieren.
 
-Das Ziel kopiert dann den Zustand des Elements im Speicher (ohne die ungespeicherten Änderungen im Editor, wenn der Benutzer **No**ausgewählt hat). Nachdem das Ziel den Kopiervorgang (in) abgeschlossen hat `IVsHierarchyDropDataSource::Drop` , erhält die Quelle die Möglichkeit, den Löschvorgang des Verschiebungs Vorgangs (in `IVsHierarchyDropDataSource::OnDropNotify` ) abzuschließen.
+Das Ziel kopiert dann den Zustand des Elements im Speicher (ohne die ungespeicherten Änderungen im Editor, wenn der Benutzer **No** ausgewählt hat). Nachdem das Ziel den Kopiervorgang (in) abgeschlossen hat `IVsHierarchyDropDataSource::Drop` , erhält die Quelle die Möglichkeit, den Löschvorgang des Verschiebungs Vorgangs (in `IVsHierarchyDropDataSource::OnDropNotify` ) abzuschließen.
 
-Alle Editoren mit nicht gespeicherten Änderungen sollten offen bleiben. Bei Dokumenten mit nicht gespeicherten Änderungen bedeutet dies, dass der Kopiervorgang des Verschiebungs Vorgangs durchgeführt wird, der Lösch Teil aber abgebrochen wird. In einem Mehrfachauswahl Szenario, bei dem der Benutzer **Nein**auswählt, sollten diese Dokumente mit nicht gespeicherten Änderungen nicht geschlossen oder entfernt werden, aber die nicht gespeicherten Änderungen sollten geschlossen und entfernt werden.
+Alle Editoren mit nicht gespeicherten Änderungen sollten offen bleiben. Bei Dokumenten mit nicht gespeicherten Änderungen bedeutet dies, dass der Kopiervorgang des Verschiebungs Vorgangs durchgeführt wird, der Lösch Teil aber abgebrochen wird. In einem Mehrfachauswahl Szenario, bei dem der Benutzer **Nein** auswählt, sollten diese Dokumente mit nicht gespeicherten Änderungen nicht geschlossen oder entfernt werden, aber die nicht gespeicherten Änderungen sollten geschlossen und entfernt werden.

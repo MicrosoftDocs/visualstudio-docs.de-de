@@ -18,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361650"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729391"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Verwenden von Code Maps zum Debuggen von Anwendungen
 
@@ -62,9 +62,9 @@ Ausführliche Informationen zu den Befehlen und Aktionen, die Sie beim Arbeiten 
 ## <a name="navigate-and-examine-code-from-the-map"></a>Code aus der Zuordnung navigieren und untersuchen
  Um die Code Definition für jedes Feld anzuzeigen, doppelklicken Sie auf das Feld auf der Karte, oder wählen Sie das Feld aus, und drücken Sie **F12**. Der grüne Pfeil wird zwischen den Elementen in der Zuordnung verschoben. Der Cursor im Code-Editor wird automatisch ebenfalls bewegt.
 
- ![Code Map &#45; untersuchen der Felddefinition](../modeling/media/codemapstoryboardpaint5.png)
+ ![Screenshot eines Code Map Fensters mit ausgewähltem Feld Verlauf und einem Code-Editor-Fenster, in dem alle Instanzen von History hervorgehoben sind.](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Code Map &#45; untersuchen der Felddefinition](../modeling/media/codemapstoryboardpaint5a.png)
+ ![Screenshot eines Code Map Fensters mit ausgewähltem Feld "paintobjects" und einem Code-Editor-Fenster, in dem alle Vorkommen von "maltobjects" markiert sind.](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > Sie können den grünen Pfeil in der Zuordnung auch verschieben, indem Sie den Cursor im Code-Editor bewegen.
@@ -81,24 +81,24 @@ Ausführliche Informationen zu den Befehlen und Aktionen, die Sie beim Arbeiten 
 
  Ändern Sie das Layout, um den Ablauf der Beziehungen neu anzuordnen und die Zuordnung besser lesbar zu machen. Sie können Elemente in der Zuordnung auch verschieben, indem Sie sie an andere Positionen ziehen.
 
- ![Code Map &#45; Layout ändern](../modeling/media/codemapstoryboardpaint7a.png)
+ ![Screenshot eines Code Map Fensters, in dem das Layoutmenü geöffnet und der Befehl Left to rgiht ausgewählt ist.](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > Das **inkrementelle Layout** ist standardmäßig aktiviert. Dadurch wird die Zuordnung so wenig wie möglich neu angeordnet, wenn Sie neue Elemente hinzufügen. Deaktivieren Sie das **inkrementelle Layout**, um die gesamte Zuordnung bei jedem Hinzufügen neuer Elemente neu anzuordnen.
 
- ![Code Map &#45; Layout ändern](../modeling/media/codemapstoryboardpaint7.png)
+ ![Screenshot eines Code Map Fensters mit den relationshiop-Pfeilen zwischen den Feldern, die von links nach rechts zeigen.](../modeling/media/codemapstoryboardpaint7.png)
 
  Überprüfen Sie diese Methoden. Doppelklicken Sie auf der Karte auf die **paintcanvas** -Methode, oder wählen Sie diese Methode aus, und drücken Sie **F12**. Sie erfahren, dass `history` und `paintObjects` von dieser Methode als leere Listen erstellt werden.
 
- ![Code Map &#45; untersuchen der Methoden Definition](../modeling/media/codemapstoryboardpaint8.png)
+ ![Screenshot eines Code Map Fensters, in dem die Pinsel Methode ausgewählt ist, und ein Code Ausschnitt Bild, das den markierten Name der malcanvas-Methode anzeigt.](../modeling/media/codemapstoryboardpaint8.png)
 
  Wiederholen Sie nun die gleichen Schritte, um die Definition der `clear`-Methode zu überprüfen. Sie erfahren, dass in `clear` einige Aufgaben mit `paintObjects` und `history` ausgeführt werden. Anschließend wird die `Repaint`-Methode aufgerufen.
 
- ![Code Map &#45; untersuchen der Methoden Definition](../modeling/media/codemapstoryboardpaint9.png)
+ ![Screenshot eines Code Map Fensters, bei dem die Clear-Methode ausgewählt ist, und ein Code Ausschnitt Bild, das den Code für die Clear-Methode anzeigt.](../modeling/media/codemapstoryboardpaint9.png)
 
  Überprüfen Sie nun die Definition der `addPaintObject`-Methode. Darin werden ebenfalls einige Aufgaben mit `history` und `paintObjects` ausgeführt. Auch darin wird `Repaint` aufgerufen.
 
- ![Code Map &#45; untersuchen der Methoden Definition](../modeling/media/codemapstoryboardpaint10.png)
+ ![Screenshot eines Code Map Fensters mit ausgewählter addpaintobject-Methode und einem Code Ausschnitt Bild, das den Code für die addpaintobject-Methode anzeigt.](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>Das Problem durch Prüfen der Zuordnung suchen
  Anscheinend wird von allen Methoden, die `history` und `paintObjects` ändern, `Repaint` aufgerufen. Von der `undo`-Methode wird `Repaint` jedoch nicht aufgerufen, obwohl von `undo` die gleichen Felder geändert werden. Daher denken Sie, dass Sie dieses Problem beheben können, indem Sie `Repaint` von `undo` aus aufrufen.
@@ -142,7 +142,7 @@ Ausführliche Informationen zu den Befehlen und Aktionen, die Sie beim Arbeiten 
 
  Nun sind Sie mit der Untersuchung fertig. Sie haben das Problem gefunden und erfolgreich korrigiert, indem Sie den Code zugeordnet haben. Außerdem verfügen Sie über eine Zuordnung, anhand der Sie im Code navigieren, sich an das Gelernte erinnern und die Schritte zur Behebung des Problems anzeigen können.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zuordnen von Methoden in der Aufrufliste beim Debuggen](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Visualisieren von Code](../modeling/visualize-code.md)

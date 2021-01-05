@@ -1,5 +1,7 @@
 ---
 title: Grafikframe-Analyse | Microsoft-Dokumentation
+description: Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 943436a64f50523905a03ed2a87e91508d1b7471
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f87686290842e0bbc3c575b5c72e3d1eeb24f351
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911480"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727722"
 ---
 # <a name="graphics-frame-analysis"></a>Grafikframe-Analyse
 Verwenden Sie die Grafikframe-Analyse in der Visual Studio-Grafikanalyse zum Analysieren und Optimieren der Renderingleistung ihres Direct3D-Spiels oder Ihrer -App.

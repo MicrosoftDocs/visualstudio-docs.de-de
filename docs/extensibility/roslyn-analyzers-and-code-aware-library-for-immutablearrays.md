@@ -1,7 +1,8 @@
 ---
 title: Roslyn-Analysen und Code abhängige Bibliotheken für immutablearrays
-titleSuffix: ''
+description: Erfahren Sie, wie Sie einen echten Roslyn-Analyzer erstellen, um häufige Fehler bei der Verwendung des nuget-Pakets "System. Collections. immutable" zu erfassen.
 ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037646"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715768"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn-Analysen und Code bewusste Bibliothek für immutablearrays
 
@@ -26,10 +27,10 @@ Der [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") unters
 Um dieses Beispiel zu erstellen, benötigen Sie Folgendes:
 
 * Visual Studio 2015 (keine Express Edition) oder eine höhere Version. Sie können die kostenlose [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/) verwenden.
-* [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Sie können auch bei der Installation von Visual Studio **Visual Studio-Erweiterungstools** unter **Allgemeine Tools** aktivieren, um das SDK gleichzeitig zu installieren. Wenn Sie Visual Studio bereits installiert haben, können Sie dieses SDK auch installieren, indem Sie **zum Hauptmenü**  >  **New Project (neues**  >  **Projekt**) wechseln, **c#** im linken Navigationsbereich auswählen und dann **Erweiterbarkeit**auswählen. Wenn Sie die Breadcrumb-Projektvorlage "**install the Visual Studio-Erweiterungstools**" auswählen, werden Sie aufgefordert, das SDK herunterzuladen und zu installieren.
-* [.NET Compiler Platform ("Roslyn") SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Sie können dieses SDK auch installieren, indem Sie **zum Hauptmenü**  >  **New Project (neues**  >  **Projekt**) wechseln, im linken Navigationsbereich **c#** auswählen und dann **Erweiterbarkeit**auswählen. Wenn Sie die Breadcrumb-Projektvorlage "**.NET Compiler Platform SDK herunterladen**" auswählen, werden Sie aufgefordert, das SDK herunterzuladen und zu installieren. Dieses SDK enthält die [Roslyn-Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Mit diesem nützlichen Tool können Sie herausfinden, welche Code Modelltypen Sie in Ihrem Analyzer suchen sollten. Die Analyse Infrastruktur Ruft den Code für bestimmte Code Modelltypen auf, sodass der Code nur bei Bedarf ausgeführt wird und sich nur auf die Analyse von relevantem Code konzentrieren kann.
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Sie können auch bei der Installation von Visual Studio **Visual Studio-Erweiterungstools** unter **Allgemeine Tools** aktivieren, um das SDK gleichzeitig zu installieren. Wenn Sie Visual Studio bereits installiert haben, können Sie dieses SDK auch installieren, indem Sie **zum Hauptmenü**  >  **New Project (neues**  >  **Projekt**) wechseln, **c#** im linken Navigationsbereich auswählen und dann **Erweiterbarkeit** auswählen. Wenn Sie die Breadcrumb-Projektvorlage "**install the Visual Studio-Erweiterungstools**" auswählen, werden Sie aufgefordert, das SDK herunterzuladen und zu installieren.
+* [.NET Compiler Platform ("Roslyn") SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Sie können dieses SDK auch installieren, indem Sie **zum Hauptmenü**  >  **New Project (neues**  >  **Projekt**) wechseln, im linken Navigationsbereich **c#** auswählen und dann **Erweiterbarkeit** auswählen. Wenn Sie die Breadcrumb-Projektvorlage "**.NET Compiler Platform SDK herunterladen**" auswählen, werden Sie aufgefordert, das SDK herunterzuladen und zu installieren. Dieses SDK enthält die [Roslyn-Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Mit diesem nützlichen Tool können Sie herausfinden, welche Code Modelltypen Sie in Ihrem Analyzer suchen sollten. Die Analyse Infrastruktur Ruft den Code für bestimmte Code Modelltypen auf, sodass der Code nur bei Bedarf ausgeführt wird und sich nur auf die Analyse von relevantem Code konzentrieren kann.
 
-## <a name="whats-the-problem"></a>Was ist das Problem?
+## <a name="whats-the-problem"></a>Wo liegt das Problem?
 
 Stellen Sie sich vor, Sie stellen eine Bibliothek mit immutablearray (z <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName> . b.) Unterstützung bereit. C#-Entwickler haben viele Möglichkeiten, mit .NET-Arrays zu arbeiten. Aufgrund der Natur von immutablearrays und Optimierungstechniken, die in der Implementierung verwendet werden, bewirken c#-Entwickler intuitions jedoch, dass Benutzer Ihrer Bibliothek einen unterbrochenen Code schreiben, wie unten erläutert. Außerdem werden die Fehler erst zur Laufzeit angezeigt, wenn die Benutzer in Visual Studio mit .net in Visual Studio verwendet werden.
 
@@ -63,7 +64,7 @@ Platzieren Sie die Einfügemarke des Editors in der Zeile, die deklariert `b1` .
 
 ## <a name="create-the-analyzer-project"></a>Erstellen des Analyzer-Projekts
 
-Klicken Sie im Hauptmenü auf **Datei**  >  **neu**  >  **Projekt**. Wählen Sie im Dialogfeld **Neues Projekt** unter **c#** -Projekte in der linken Navigationsleiste die Option **Erweiterbarkeit**aus, und wählen Sie im rechten Bereich die Vorlage **Analyzer mit Code Korrektur** aus. Geben Sie einen Namen ein, und bestätigen Sie den Dialog.
+Klicken Sie im Hauptmenü auf **Datei**  >  **neu**  >  **Projekt**. Wählen Sie im Dialogfeld **Neues Projekt** unter **c#** -Projekte in der linken Navigationsleiste die Option **Erweiterbarkeit** aus, und wählen Sie im rechten Bereich die Vorlage **Analyzer mit Code Korrektur** aus. Geben Sie einen Namen ein, und bestätigen Sie den Dialog.
 
 Die Vorlage öffnet eine *DiagnosticAnalyzer.cs* -Datei. Wählen Sie die Registerkarte Editor-Puffer aus. Diese Datei enthält eine Analyzer-Klasse (aus dem Namen, den Sie dem Projekt gegeben haben), der von abgeleitet ist `DiagnosticAnalyzer` (ein Roslyn-API-Typ). Ihre neue Klasse verfügt über eine `DiagnosticAnalyzerAttribute` , die ihre Analyse für die Programmiersprache c# relevant macht, sodass der Compiler den Analyzer ermittelt und lädt.
 
@@ -87,7 +88,7 @@ public override void Initialize(AnalysisContext context) {}
 
 Ein weiteres Beispiel: `RegisterCompilationStartAction` Ruft den Code zu Beginn einer Kompilierung zurück, was nützlich ist, wenn Sie den Zustand über viele Speicherorte erfassen müssen. Sie können beispielsweise eine Datenstruktur erstellen, um alle verwendeten Symbole zu erfassen, und jedes Mal, wenn der Analyzer für eine Syntax oder ein Symbol zurückgerufen wird, können Sie Informationen zu jedem Speicherort in der Datenstruktur speichern. Wenn Sie aufgrund der Kompilierung wieder aufgerufen werden, können Sie alle Speicherorte analysieren, die Sie gespeichert haben, z. b. um zu melden, welche Symbole der Code aus den einzelnen Anweisungen verwendet `using` .
 
-Wenn Sie die **Syntax Visualizer**verwenden, haben Sie gelernt, dass Sie aufgerufen werden möchten, wenn der Compiler einen objectkreationexpression verarbeitet. Mit diesem Code können Sie den Rückruf einrichten:
+Wenn Sie die **Syntax Visualizer** verwenden, haben Sie gelernt, dass Sie aufgerufen werden möchten, wenn der Compiler einen objectkreationexpression verarbeitet. Mit diesem Code können Sie den Rückruf einrichten:
 
 ```csharp
 context.RegisterSyntaxNodeAction(c => AnalyzeObjectCreation(c),
@@ -131,7 +132,7 @@ var b2 = new ImmutableArray<int> { 1, 2, 3, 4, 5 };
 Console.WriteLine("b2.Length = {0}", b2.Length);
 ```
 
-Die Codezeilen mit haben Wellenlinien `ImmutableArray` , da Sie das unveränderliche nuget-Paket erhalten und dem Code eine-Anweisung hinzufügen müssen `using` . Klicken Sie im **Projektmappen-Explorer** auf den Knoten mit der rechten Maustaste, und wählen Sie **nuget-Pakete verwalten**aus. Geben Sie im nuget-Manager "immutable" in das Suchfeld ein, und wählen Sie im linken Bereich das Element " **System. Collections. immutable** " (nicht " **Microsoft. BCL. immutable**") aus, und klicken Sie im rechten Bereich auf die Schaltfläche " **Installieren** ". Durch die Installation des Pakets wird ein Verweis auf die Projekt Verweise hinzugefügt.
+Die Codezeilen mit haben Wellenlinien `ImmutableArray` , da Sie das unveränderliche nuget-Paket erhalten und dem Code eine-Anweisung hinzufügen müssen `using` . Klicken Sie im **Projektmappen-Explorer** auf den Knoten mit der rechten Maustaste, und wählen Sie **nuget-Pakete verwalten** aus. Geben Sie im nuget-Manager "immutable" in das Suchfeld ein, und wählen Sie im linken Bereich das Element " **System. Collections. immutable** " (nicht " **Microsoft. BCL. immutable**") aus, und klicken Sie im rechten Bereich auf die Schaltfläche " **Installieren** ". Durch die Installation des Pakets wird ein Verweis auf die Projekt Verweise hinzugefügt.
 
 Sie sehen weiterhin rote Wellenlinien unter, platzieren Sie die Einfügemarke `ImmutableArray` in diesem Bezeichner, und drücken Sie **STRG** + **.** (Zeitraum), um das vorgeschlagene fixmenü anzuzeigen, und wählen Sie aus, ob Sie die entsprechende Anweisung hinzufügen möchten `using` .
 
@@ -141,11 +142,11 @@ Sie sehen weiterhin rote Wellenlinien unter, platzieren Sie die Einfügemarke `I
 
 Legen Sie in der ersten Instanz von Visual Studio am Anfang der Methode einen Haltepunkt fest, `AnalyzeObjectCreation` indem Sie **F9** mit der Einfügemarke in der ersten Zeile drücken.
 
-Starten Sie den Analyzer mit **F5**erneut, und öffnen Sie in der zweiten Instanz von Visual Studio Ihre Konsolenanwendung, die Sie zuletzt erstellt haben.
+Starten Sie den Analyzer mit **F5** erneut, und öffnen Sie in der zweiten Instanz von Visual Studio Ihre Konsolenanwendung, die Sie zuletzt erstellt haben.
 
 Sie kehren zur ersten Instanz von Visual Studio am Haltepunkt zurück, da der Roslyn-Compiler einen Objekt Erstellungs Ausdruck gesehen und in den Analyzer aufgerufen hat.
 
-**Erstellen Sie den Knoten zum Erstellen von Objekten.** Überspringen Sie die Zeile, durch die die `objectCreation` Variable durch Drücken von **F10**festgelegt wird, und Werten Sie im **direkt Fenster** den Ausdruck aus `"objectCreation.ToString()"` . Sie sehen, dass der Syntax Knoten, auf den die Variable verweist, der Code ist `"new ImmutableArray<int>()"` .
+**Erstellen Sie den Knoten zum Erstellen von Objekten.** Überspringen Sie die Zeile, durch die die `objectCreation` Variable durch Drücken von **F10** festgelegt wird, und Werten Sie im **direkt Fenster** den Ausdruck aus `"objectCreation.ToString()"` . Sie sehen, dass der Syntax Knoten, auf den die Variable verweist, der Code ist `"new ImmutableArray<int>()"` .
 
 **Get immutablearray<T- \> Typobjekt.** Sie müssen überprüfen, ob der erstellte Typ immutablearray ist. Zuerst erhalten Sie das Objekt, das diesen Typ darstellt. Sie überprüfen Typen mit dem Semantik Modell, um sicherzustellen, dass Sie genau den richtigen Typ haben, und Sie vergleichen die Zeichenfolge nicht von `ToString()` . Geben Sie die folgende Codezeile am Ende der-Funktion ein:
 
@@ -253,7 +254,7 @@ var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**Registrieren Sie Ihre Code Korrektur für die Glühbirnen-Benutzeroberfläche.** Wenn Sie Ihre Code Korrektur registrieren, wird Roslyn automatisch an die Benutzeroberfläche von Visual Studio Glühbirnen angeschlossen. Endbenutzern wird angezeigt, dass Sie **STRG**verwenden können + **.** (Zeitraum), wenn Ihre Analyse eine Wellenlinie für einen ungültigen `ImmutableArray<T>` Konstruktor verwendet. Da Ihr Code Korrektur-Anbieter nur ausgeführt wird, wenn ein Problem vorliegt, können Sie davon ausgehen, dass Sie über den Objekt Erstellungs Ausdruck verfügen, nach dem Sie suchen. Über den Kontext Parameter können Sie die neue Code Korrektur registrieren, indem Sie den folgenden Code am Ende der- `RegisterCodeFixAsync` Methode hinzufügen:
+**Registrieren Sie Ihre Code Korrektur für die Glühbirnen-Benutzeroberfläche.** Wenn Sie Ihre Code Korrektur registrieren, wird Roslyn automatisch an die Benutzeroberfläche von Visual Studio Glühbirnen angeschlossen. Endbenutzern wird angezeigt, dass Sie **STRG** verwenden können + **.** (Zeitraum), wenn Ihre Analyse eine Wellenlinie für einen ungültigen `ImmutableArray<T>` Konstruktor verwendet. Da Ihr Code Korrektur-Anbieter nur ausgeführt wird, wenn ein Problem vorliegt, können Sie davon ausgehen, dass Sie über den Objekt Erstellungs Ausdruck verfügen, nach dem Sie suchen. Über den Kontext Parameter können Sie die neue Code Korrektur registrieren, indem Sie den folgenden Code am Ende der- `RegisterCodeFixAsync` Methode hinzufügen:
 
 ```csharp
 context.RegisterCodeFix(
@@ -264,7 +265,7 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-Sie müssen die Einfügemarke des Editors im Bezeichner platzieren und `CodeAction` dann **STRG**verwenden + **.** (Zeitraum), um die entsprechende- `using` Anweisung für diesen Typ hinzuzufügen.
+Sie müssen die Einfügemarke des Editors im Bezeichner platzieren und `CodeAction` dann **STRG** verwenden + **.** (Zeitraum), um die entsprechende- `using` Anweisung für diesen Typ hinzuzufügen.
 
 Platzieren Sie dann die Einfügemarke des Editors in den `ChangeToImmutableArrayEmpty` Bezeichner, und verwenden Sie **STRG** + **.** erneut, um diesen Methodenstub für Sie zu generieren.
 
@@ -300,7 +301,7 @@ Als nächstes Ruft die Methode den Stamm des Dokuments ab, und da dies beliebige
 
 Sie können jetzt **F5** drücken, um den Analyzer in einer zweiten Instanz von Visual Studio auszuführen. Öffnen Sie das Konsolen Projekt, das Sie zuvor verwendet haben. Nun sollte die Glühbirne angezeigt werden, für die der neue Objekt Erstellungs Ausdruck gilt `ImmutableArray<int>` . Wenn Sie die **STRG**-Taste drücken + **.** (Zeitraum), dann wird der Code Fehler behoben, und Sie sehen eine automatisch generierte Code Differenz Vorschau auf der Glühbirnen-Benutzeroberfläche. Roslyn erstellt diese für Sie.
 
-**Pro-Tipp:** Wenn Sie die zweite Instanz von Visual Studio starten und die Glühbirne mit dem Code Fix nicht angezeigt wird, müssen Sie möglicherweise den Visual Studio-Komponenten Cache löschen. Wenn Sie den Cache löschen, erzwingt Visual Studio die erneute Untersuchung der Komponenten, daher sollte Visual Studio dann ihre neueste Komponente abrufen. Fahren Sie zuerst die zweite Instanz von Visual Studio herunter. Navigieren Sie dann in **Windows-Explorer**zu *%LocalAppData%\microsoft\visualstudio\16.0roslyn \\ *. ("16,0" ändert sich von Version zu Version in Visual Studio.) Löschen Sie das Unterverzeichnis *componentmodelcache*.
+**Pro-Tipp:** Wenn Sie die zweite Instanz von Visual Studio starten und die Glühbirne mit dem Code Fix nicht angezeigt wird, müssen Sie möglicherweise den Visual Studio-Komponenten Cache löschen. Wenn Sie den Cache löschen, erzwingt Visual Studio die erneute Untersuchung der Komponenten, daher sollte Visual Studio dann ihre neueste Komponente abrufen. Fahren Sie zuerst die zweite Instanz von Visual Studio herunter. Navigieren Sie dann in **Windows-Explorer** zu *%LocalAppData%\microsoft\visualstudio\16.0roslyn \\*. ("16,0" ändert sich von Version zu Version in Visual Studio.) Löschen Sie das Unterverzeichnis *componentmodelcache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Talk-Video und Code Projekt abschließen
 

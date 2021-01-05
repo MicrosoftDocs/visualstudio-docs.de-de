@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren der Benutzeroberfläche | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Code hinzufügen, um die Benutzeroberfläche zu aktualisieren, nachdem Sie einen neuen Befehl in Ihrem VSPackage implementiert haben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698885"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716028"
 ---
 # <a name="updating-the-user-interface"></a>Aktualisieren der Benutzeroberfläche
 Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um die Benutzeroberfläche mit dem Zustand ihrer neuen Befehle zu aktualisieren.
@@ -27,7 +29,7 @@ Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um d
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-    - Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> -Methode auf.
+    - Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>-Methode auf.
 
          Eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Schnittstelle kann <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> wie folgt vom Dienst abgerufen werden.
 
@@ -50,6 +52,6 @@ Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um d
 
          Beachten Sie, dass Sie die-Schnittstelle abrufen können, <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> indem Sie die- `QueryInterface` Methode für ein <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> Objekt aufrufen oder indem Sie die-Schnittstelle vom <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> Dienst abrufen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementierung](../extensibility/internals/command-implementation.md)

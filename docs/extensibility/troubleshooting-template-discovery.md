@@ -1,5 +1,7 @@
 ---
 title: Problembehandlung bei der Vorlagen Ermittlung in Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Diagnoseprotokollierung für die Problembehandlung bei der Bereitstellung benutzerdefinierter Projekte und Vorlagen im Visual Studio SDK aktivieren.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235042"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716045"
 ---
 # <a name="troubleshooting-template-installation"></a>Problembehandlung der Vorlagen Installation
 
@@ -57,7 +59,7 @@ Wenn bei der Bereitstellung der Projekt-oder Element Vorlagen Probleme auftreten
 
 Die Protokolldatei enthält die folgenden Spalten:
 
-- **Fullpathto Template**mit den folgenden Werten:
+- **Fullpathto Template** mit den folgenden Werten:
 
   - 1 für die manifestressourcenbasierte Bereitstellung
 

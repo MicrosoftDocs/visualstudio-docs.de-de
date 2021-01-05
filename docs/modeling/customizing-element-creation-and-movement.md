@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363119"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729339"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 
@@ -40,7 +40,7 @@ Obwohl sich die Erstellungs Vorgänge von den Kopier Vorgängen unterscheiden, f
 
 Eine EMD ist dafür verantwortlich zu entscheiden, wie ein Objekt oder eine Gruppe von Objekten an einer bestimmten Position im Modell zusammengeführt werden soll. Insbesondere wird entschieden, welche Beziehungen instanziiert werden müssen, um die zusammengeführte Gruppe mit dem Modell zu verknüpfen. Sie können Sie auch anpassen, um Eigenschaften festzulegen und zusätzliche Objekte zu erstellen.
 
-![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
+![Diagramm, das einen vor und nach dem Betrachten einer Struktur von Elementen und ihrer Verweis Beziehungen anzeigt, wenn ein E M D bestimmt, wie ein neues Element hinzugefügt wird.](../modeling/media/dsl-emd_merge.png)
 
 Eine EMD wird automatisch generiert, wenn Sie eine Embedding Relationship definieren. Diese Standard-EMD erstellt eine Instanz der Beziehung, wenn Benutzer der übergeordneten Instanz neue untergeordnete Instanzen hinzufügen. Sie können diese Standard-EMDs ändern, z. b. durch Hinzufügen von benutzerdefiniertem Code.
 
@@ -50,7 +50,7 @@ Sie können auch eigene EMDs in der DSL-Definition hinzufügen, um Benutzern das
 
 Sie können elementmergedirektiven zu Domänen Klassen, Domänen Beziehungen, Formen, Connectors und Diagrammen hinzufügen. Sie können Sie im DSL-Explorer unter der empfangenden Domänen Klasse hinzufügen oder suchen. Die empfangende Klasse ist die Domänen Klasse des Elements, das bereits im Modell vorhanden ist und auf das das neue oder kopierte Element zusammengeführt wird.
 
-![DSL-&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
+![Screenshot des DSL-Explorers, der anzeigt, dass ein E M D hinzugefügt wird, wenn "ExampleElement" als Indizierungs Klasse ausgewählt und die Option "gilt für Unterklassen" aktiviert](../modeling/media/dsl-emd_details.png)
 
 Bei der **Indizierungs Klasse** handelt es sich um die Domänen Klasse von Elementen, die in Member der empfangenden Klasse zusammengeführt werden können. Instanzen von Unterklassen der Indizierungs Klasse werden auch von dieser EMD zusammengeführt, es sei denn, Sie legen für die **Unterklassen** auf false fest.
 
@@ -318,7 +318,7 @@ Sie können eine Forward-Merge-Direktive in der Komponentenmodell-Projekt Mappe 
 
      Der nicht verfügbare Zeiger sollte nicht angezeigt werden, und Sie sollten in der Lage sein, den neuen **eingabeport** für den vorhandenen zu löschen. Wählen Sie den neuen **eingabeport** aus, und ziehen Sie ihn an einen anderen Punkt in der **Komponente**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Anpassen der Tools und der Toolbox](../modeling/customizing-tools-and-the-toolbox.md)

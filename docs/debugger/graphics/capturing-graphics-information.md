@@ -1,5 +1,7 @@
 ---
 title: Aufzeichnen von Grafikinformationen | Microsoft-Dokumentation
+description: Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual Studio-Grafikanalyse zum Diagnostizieren von Rendering- und Leistungsproblemen verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a11a5dc3a02959ff7bec4cfaac9aac2ca231b2ba
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736182"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727923"
 ---
 # <a name="capturing-graphics-information"></a>Aufzeichnen von Grafikinformationen
 Erfassen Sie Grafikinformationen aus Ihrer Direct3D-App, damit Sie die Visual Studio-Grafikanalyse zum Diagnostizieren von Rendering- und Leistungsproblemen verwenden können.

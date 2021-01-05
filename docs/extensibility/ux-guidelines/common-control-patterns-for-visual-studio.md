@@ -1,5 +1,7 @@
 ---
 title: Allgemeine Steuerelement Muster für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie, wie die allgemeinen Visual Studio-Steuerelemente den Windows-Desktop Interaktions Richtlinien und den besonderen Situationen folgen, die diese Richtlinien ergänzen.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698716"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715885"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Allgemeine Steuerelemente
@@ -152,7 +154,7 @@ In einem Dialogfeld, in dem andere gruppierte Bereiche vorhanden sind und die Ei
 
 Dadurch kann der Benutzer den Text im Feld auswählen, aber nicht bearbeiten. Diese Textfelder werden vom üblichen 3D-Meißel mit einem Füll Zeichen begrenzt `ButtonShadow` .
 
-Ein Textfeld kann aktiv (bearbeitbar) werden, wenn ein Benutzer ein zugeordnetes Steuerelement ändert, z. b. das Aktivieren/Deaktivieren eines Kontrollkästchens oder das auswählen/deaktivieren eines Options Felds. Beispielsweise wird auf der Seite Extras- ** &gt; Optionen** unten das Textfeld **Startseite** aktiviert, wenn das Kontrollkästchen **Standard verwenden** deaktiviert ist.
+Ein Textfeld kann aktiv (bearbeitbar) werden, wenn ein Benutzer ein zugeordnetes Steuerelement ändert, z. b. das Aktivieren/Deaktivieren eines Kontrollkästchens oder das auswählen/deaktivieren eines Options Felds. Beispielsweise wird auf der Seite Extras- **&gt; Optionen** unten das Textfeld **Startseite** aktiviert, wenn das Kontrollkästchen **Standard verwenden** deaktiviert ist.
 
 ![Schreib geschütztes Textfeld, in dem inaktive und aktive Zustände angezeigt werden](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Schreib geschütztes Textfeld, in dem inaktive und aktive Zustände angezeigt werden
 
@@ -302,7 +304,7 @@ Einige Schaltflächen sollten immer ein grafisches Bild verwenden und nie Text e
 | Funktion | Schaltfläche |
 | --- | --- |
 | Hinzufügen | ![Grafische Schaltfläche "Hinzufügen"](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| Remove (Entfernen) | ![Grafische Schaltfläche "Entfernen"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| Entfernen | ![Grafische Schaltfläche "Entfernen"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
 | Alle hinzufügen | ![Grafische Schaltfläche "Alles hinzufügen"](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
 | Alle entfernen | ![Grafische Schaltfläche "Alle entfernen"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Nach oben | ![Grafische Schaltfläche "Nach oben"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
@@ -314,7 +316,7 @@ Die Größenanpassung für grafische Schaltflächen ist identisch mit der Kurzve
 
 ![Darstellung eines grafischen Bilds auf der Schaltfläche mit und ohne transparente Farbe](../../extensibility/ux-guidelines/media/070703-15_graphicalbuttonspacing.png "070703-15_GraphicalButtonSpacing")<br />Darstellung eines grafischen Bilds auf der Schaltfläche mit und ohne transparente Farbe
 
-### <a name="hyperlinks"></a>Links
+### <a name="hyperlinks"></a>Hyperlinks
 Hyperlinks eignen sich gut für Navigations basierte Aktionen wie das Öffnen eines Hilfe Themas, modalen Dialog Felds oder Assistenten. Wenn ein Hyperlink für einen Befehl verwendet wird, sollte immer eine sichtbare und spürbare Änderung der Benutzeroberfläche angezeigt werden. Im Allgemeinen werden Aktionen, die für eine Aktion (z. b. speichern, Abbrechen und löschen) ausgeführt werden, besser über eine Schaltfläche kommuniziert.
 
 #### <a name="writing-style"></a>Schreibstil

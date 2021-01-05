@@ -1,5 +1,7 @@
 ---
 title: Angeben von Datei Handlern für Dateinamen Erweiterungen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mithilfe von OpenWithList und OpenWithProgIds ermitteln, welche Anwendung eine Dateierweiterung im Visual Studio SDK behandelt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699758"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715599"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Angeben von Dateihandlern für Dateierweiterungen
 Es gibt verschiedene Möglichkeiten, die Anwendung zu bestimmen, die eine Datei mit einer bestimmten Dateierweiterung verarbeitet. Die Verben OpenWithList und OpenWithProgIds sind zwei Methoden zum Angeben von Datei Handlern unter dem Registrierungs Eintrag für die Dateierweiterung.
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> Die Schlüssel zum Angeben von Anwendungen stammen aus der Liste unter HKEY_CLASSES_ROOT \applications.
+> Die Schlüssel zum Angeben von Anwendungen stammen aus der Liste unter HKEY_CLASSES_ROOT\Applications.
 
  Wenn Sie einen OpenWithList-Schlüssel hinzufügen, deklarieren Sie, dass Ihre Anwendung eine Dateierweiterung unterstützt, auch wenn eine andere Anwendung den Besitz der Erweiterung übernimmt. Dabei kann es sich um eine zukünftige Version der Anwendung oder eine andere Anwendung handeln.
 
@@ -47,12 +49,12 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |Erweiterung|ProductName. Erweiterung. VersionMajor. VersionMinor|
 
- Sie können verschiedene Anwendungen registrieren, die eine bestimmte Dateierweiterung öffnen können, indem Sie dem HKEY_CLASSES_ROOT \\ \openwithprogids-Schlüssel versionierte ProgIDs als Werte hinzufügen *\<extension>* . Dieser Registrierungsschlüssel enthält eine Liste der alternativen ProgIDs, die der Dateierweiterung zugeordnet sind. Die den aufgelisteten ProgIDs zugeordneten Anwendungen werden im Untermenü mit dem_Produktnamen_ **Öffnen**angezeigt. Wenn die gleiche Anwendung in den `OpenWithList` Schlüsseln und angegeben ist `OpenWithProgids` , führt das Betriebssystem die Duplikate zusammen.
+ Sie können verschiedene Anwendungen registrieren, die eine bestimmte Dateierweiterung öffnen können, indem Sie dem HKEY_CLASSES_ROOT \\ \openwithprogids-Schlüssel versionierte ProgIDs als Werte hinzufügen *\<extension>* . Dieser Registrierungsschlüssel enthält eine Liste der alternativen ProgIDs, die der Dateierweiterung zugeordnet sind. Die den aufgelisteten ProgIDs zugeordneten Anwendungen werden im Untermenü mit dem _Produktnamen_ **Öffnen** angezeigt. Wenn die gleiche Anwendung in den `OpenWithList` Schlüsseln und angegeben ist `OpenWithProgids` , führt das Betriebssystem die Duplikate zusammen.
 
 > [!NOTE]
 > Der `OpenWithProgids` Schlüssel wird nur in Windows XP unterstützt. Da andere Betriebssysteme diesen Schlüssel ignorieren, sollten Sie ihn nicht als einzige Registrierung für Datei Handler verwenden. Verwenden Sie diesen Schlüssel, um eine bessere Benutzer Leistung in Windows XP bereitzustellen.
 
- Fügen Sie die gewünschten ProgIDs als Werte des Typs REG_NONE hinzu. Der folgende Code enthält ein Beispiel für das Registrieren von ProgIDs für eine Dateierweiterung (.* ext*).
+ Fügen Sie die gewünschten ProgIDs als Werte des Typs REG_NONE hinzu. Der folgende Code enthält ein Beispiel für das Registrieren von ProgIDs für eine Dateierweiterung (.*ext*).
 
 ```
 HKEY_CLASSES_ROOT\
@@ -63,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- Die als Standardwert für die Dateierweiterung angegebene ProgID ist der Standarddatei Handler. Wenn Sie die ProgID für eine Dateierweiterung ändern, die mit einer früheren Version von ausgeliefert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wurde oder die von anderen Anwendungen übernommen werden kann, müssen Sie den `OpenWithProgids` Schlüssel für die Dateierweiterung registrieren und die neue ProgID in der Liste zusammen mit den alten ProgIDs, die Sie unterstützen, angeben. Beispiel:
+ Die als Standardwert für die Dateierweiterung angegebene ProgID ist der Standarddatei Handler. Wenn Sie die ProgID für eine Dateierweiterung ändern, die mit einer früheren Version von ausgeliefert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wurde oder die von anderen Anwendungen übernommen werden kann, müssen Sie den `OpenWithProgids` Schlüssel für die Dateierweiterung registrieren und die neue ProgID in der Liste zusammen mit den alten ProgIDs, die Sie unterstützen, angeben. Zum Beispiel:
 
 ```
 HKEY_CLASSES_ROOT\

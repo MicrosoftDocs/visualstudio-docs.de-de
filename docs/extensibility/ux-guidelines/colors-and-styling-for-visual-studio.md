@@ -1,5 +1,7 @@
 ---
 title: Farben und Stile für Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie, wie die Visual Studio-Benutzer Darstellung Farben als Kommunikations Tool verwendet, anstatt aus rein ästhetischen Gründen.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414268"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715664"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 
@@ -285,7 +287,7 @@ Nur eine Handvoll Systemfarben können für hoher Kontrast Designs verwendet wer
 
 Die Tabelle im [WPF-Teamblog: SystemColors Reference](/archive/blogs/wpf/systemcolors-reference) gibt den kompletten Satz von System Farbnamen und die entsprechenden Schattierungen an, die in jedem Design angezeigt werden.
 
-Wenn Sie diese begrenzte Anzahl von Farben auf die Benutzeroberfläche anwenden, wird *davon ausgegangen, dass Sie die in den "normalen" Designs enthaltenen* , geringfügigen Details verlieren. Im folgenden finden Sie ein Beispiel für eine Benutzeroberfläche mit subtilen grauen Farben, die zur Unterscheidung von Bereichen in einem Tool Fenster verwendet werden. Wenn Sie mit dem gleichen Fenster gekoppelt sind, das im hoher Kontrast Modus angezeigt wird, können Sie sehen, dass alle Hintergründe denselben Farbton haben und die Rahmen dieser Bereiche allein durch Border angegeben werden:
+Wenn Sie diese begrenzte Anzahl von Farben auf die Benutzeroberfläche anwenden, wird *davon ausgegangen, dass Sie die in den "normalen" Designs enthaltenen*, geringfügigen Details verlieren. Im folgenden finden Sie ein Beispiel für eine Benutzeroberfläche mit subtilen grauen Farben, die zur Unterscheidung von Bereichen in einem Tool Fenster verwendet werden. Wenn Sie mit dem gleichen Fenster gekoppelt sind, das im hoher Kontrast Modus angezeigt wird, können Sie sehen, dass alle Hintergründe denselben Farbton haben und die Rahmen dieser Bereiche allein durch Border angegeben werden:
 
 ![Beispiel für den Verlust von geringfügigen Details in hoher Kontrast](../../extensibility/ux-guidelines/media/030303-a_propertieswindow.png "030303-a_PropertiesWindow")<br />Beispiel für den Verlust von geringfügigen Details in hoher Kontrast
 
