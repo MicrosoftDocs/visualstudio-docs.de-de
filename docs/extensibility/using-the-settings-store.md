@@ -1,5 +1,7 @@
 ---
 title: Verwenden des Einstellungs Speicher | Microsoft-Dokumentation
+description: 'Erfahren Sie, wie Sie Daten aus dem Konfigurations Einstellungs Speicher lesen. diese Einstellungen sind schreibgeschützt: Visual Studio-und VSPackage-Einstellungen.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698518"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715911"
 ---
 # <a name="using-the-settings-store"></a>Verwenden des Einstellungsspeichers
 Es gibt zwei Arten von Einstellungs speichern:
@@ -31,7 +33,7 @@ Es gibt zwei Arten von Einstellungs speichern:
 
 1. Jede Visual Studio-Erweiterung beginnt mit einem VSIX-Bereitstellungs Projekt, das die Erweiterungs Ressourcen enthält. Erstellen Sie ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt mit dem Namen `SettingsStoreExtension` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** " unter **Visual c#/Erweiterbarkeit**.
 
-2. Fügen Sie nun eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **settingsstorecommand**hinzu. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl**aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in **SettingsStoreCommand.cs**. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .
+2. Fügen Sie nun eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **settingsstorecommand** hinzu. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#/Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in **SettingsStoreCommand.cs**. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md) .
 
 ## <a name="using-the-configuration-settings-store"></a>Verwenden des Speicher für Konfigurationseinstellungen
  In diesem Abschnitt wird gezeigt, wie Konfigurationseinstellungen erkannt und angezeigt werden.
@@ -79,9 +81,9 @@ Es gibt zwei Arten von Einstellungs speichern:
 
 1. Öffnen Sie Regedit.exe.
 
-2. Navigieren Sie zu HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0Exp_Config \installedproducts \\ .
+2. Navigieren Sie zu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\ .
 
     > [!NOTE]
-    > Stellen Sie sicher, dass Sie den Schlüssel sehen, der \ 14.0Exp_Config \ und Not \ 14 \\ . 0_Config enthält. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, befinden sich die Konfigurationseinstellungen in der Registrierungs Struktur "14.0Exp_Config".
+    > Stellen Sie sicher, dass Sie den Schlüssel sehen, der \ 14.0Exp_Config \ und Not \ 14.0_Config enthält \\ . Wenn Sie die experimentelle Instanz von Visual Studio ausführen, befinden sich die Konfigurationseinstellungen in der Registrierungs Struktur "14.0Exp_Config".
 
 3. Erweitern Sie den Knoten \installierte Produkte \. Wenn die Meldung in den vorherigen Schritten **Microsoft Windows Phone Entwicklertools installiert ist: true**, dann sollte \installierte Produkte \ einen Microsoft Windows Phone Entwicklertools-Knoten enthalten. Wenn die Nachricht **Microsoft Windows Phone Entwicklertools installiert ist: "false**", sollte "\installierte Produkte \" keinen Knoten "Microsoft Windows Phone Entwicklertools" enthalten.

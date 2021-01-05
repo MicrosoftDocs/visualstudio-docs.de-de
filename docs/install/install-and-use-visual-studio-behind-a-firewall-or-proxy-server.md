@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398994"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668364"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -155,7 +155,7 @@ Für installationsbezogene Probleme wird eine [**Livechat**](https://visualstudi
 Hier sind einige weitere Supportoptionen:
 
 * Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
-* Schlagen Sie ein Feature vor, verfolgen Sie Produktprobleme nach, und finden Sie Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/).
+* Schlagen Sie ein Feature vor, verfolgen Sie Produktprobleme nach, und finden Sie Antworten in der [Visual Studio-Entwicklercommunity](https://aka.ms/feedback/suggest?space=8).
 * Sie können Ihr [GitHub](https://github.com/)-Konto verwenden, um über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufzunehmen.
 
 ## <a name="see-also"></a>Siehe auch

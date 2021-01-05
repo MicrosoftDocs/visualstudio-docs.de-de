@@ -1,5 +1,7 @@
 ---
 title: Vereinfachte Einbettung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das vereinfachte einbetten, das in einem Editor aktiviert werden kann, wenn sein Dokument Ansichts Objekt ein untergeordnetes Element von Visual Studio ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9bc9619ae1ed75aed3656ff014296f7c7d88fa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700076"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715274"
 ---
 # <a name="simplified-embedding"></a>Vereinfachtes Einbetten
 Vereinfachte Einbettungen werden in einem Editor aktiviert, wenn das Dokument Ansichts Objekt (d. h. ein untergeordnetes Element von) übergeordnet ist [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , und die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> Schnittstelle wird implementiert, um Ihre Fenster Befehle zu verarbeiten. Vereinfachte Einbettungs Editoren können keine aktiven Steuerelemente hosten Die Objekte, die zum Erstellen eines Editors mit vereinfachter Einbettung verwendet werden, sind in der folgenden Abbildung dargestellt.

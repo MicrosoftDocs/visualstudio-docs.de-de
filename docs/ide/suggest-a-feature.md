@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114209"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668897"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Vorschlagen eines Features für Visual Studio
 
-Durch die neu eingeführte Benutzeroberfläche ist nun das Vorschlagen von Features in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com) möglich. Die bereits vorhandene Funktion zum Melden von Problemen ist weiterhin verfügbar. Dies ist eine neue Möglichkeit, mit der Sie direkt mit dem Engineeringworkflow von Visual Studio arbeiten können.
+Durch die neu eingeführte Benutzeroberfläche ist nun das Vorschlagen von Features in der [Visual Studio-Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) möglich. Die bereits vorhandene Funktion zum Melden von Problemen ist weiterhin verfügbar. Dies ist eine neue Möglichkeit, mit der Sie direkt mit dem Engineeringworkflow von Visual Studio arbeiten können.
 
 ![Schaltfläche „Feature vorschlagen“ in der Entwicklercommunity](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -25,7 +25,7 @@ Sie können einen Vorschlag für ein Feature auch direkt in Visual Studio einrei
 
 ![Menü „Vorschlag bereitstellen“ in Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Wenn Sie auf **Vorschlag bereitstellen** klicken, gelangen Sie zur [Entwicklercommunity](https://developercommunity.visualstudio.com) und können dort Ihren Vorschlag einreichen.
+Wenn Sie auf **Vorschlag bereitstellen** klicken, gelangen Sie zur [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) und können dort Ihren Vorschlag einreichen.
 
 ## <a name="user-voice"></a>Benutzerfeedback
 

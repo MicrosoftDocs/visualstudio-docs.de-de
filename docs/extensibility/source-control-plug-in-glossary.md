@@ -1,5 +1,7 @@
 ---
 title: Glossar für Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation
+description: Dieser Artikel enthält hilfreiche Begriffe und Definitionen, die sich auf die SDK-Dokumentation für das Quellcodeverwaltungs-Plug-in beziehen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699908"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715404"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossar für das Quellcodeverwaltungs-Plug-In
 Die folgenden hilfreichen Begriffe und Definitionen beziehen sich auf die SDK-Dokumentation für das Quellcodeverwaltungs-Plug-in.

@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852256"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668780"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Problembehandlung bei Fehlern mit Datenhaltepunkten
 Auf dieser Seite wird Schritt für Schritt beschrieben, wie Sie häufige Fehler bei Verwendung von „Bei Wertänderungen unterbrechen“ beheben.
@@ -81,7 +81,7 @@ Die Architektur (Plattformkonfiguration), auf der Ihr Programm ausgeführt wird,
 
 ## <a name="provide-feedback"></a>Feedback bereitstellen
 
-Wenn Sie uns Informationen zu Problemen oder Vorschläge zu diesem Feature zukommen lassen möchten, können Sie in der IDE „Hilfe“ > „Feedback senden“ > [Problem melden](../ide/how-to-report-a-problem-with-visual-studio.md) auswählen oder die [Entwicklercommunity](https://developercommunity.visualstudio.com/) nutzen.
+Wenn Sie uns Informationen zu Problemen oder Vorschläge zu diesem Feature zukommen lassen möchten, können Sie in der IDE „Hilfe“ > „Feedback senden“ > [Problem melden](../ide/how-to-report-a-problem-with-visual-studio.md) auswählen oder die [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) nutzen.
 
 ## <a name="see-also"></a>Siehe auch
 

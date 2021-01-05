@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: a2ccb54995107bbd22e961f14ff3755b4a6f543a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329444"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668078"
 ---
 # <a name="test-generation"></a>Testerzeugung
 
@@ -244,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Sie haben Fragen oder Anmerkungen?
 
-Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Posten Sie Ihre Ideen und Featureanfragen in der [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8).

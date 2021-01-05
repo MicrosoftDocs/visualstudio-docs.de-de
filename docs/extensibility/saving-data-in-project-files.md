@@ -1,5 +1,7 @@
 ---
 title: Speichern von Daten in Projektdateien | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Schnittstellen, die das verwaltete Paket Framework zum Speichern und Abrufen von Untertypen spezifischen Daten in der Projektdatei bereitstellt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd6cfaa450bc268665ae0f58109c99002da6152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4746ebb4a92d5c2688063336cb3772de8d72ee1b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701352"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715690"
 ---
 # <a name="save-data-in-project-files"></a>Speichern von Daten in Projektdateien
 Mit einem Projekt Untertyp können Untertypen spezifische Daten in der Projektdatei gespeichert und abgerufen werden. Das Managed Package Framework (MPF) stellt zwei Schnittstellen zum Ausführen dieser Aufgabe bereit:

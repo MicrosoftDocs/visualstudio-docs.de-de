@@ -1,6 +1,8 @@
 ---
 title: Aktualisieren von benutzerdefinierten Projekt-und Element Vorlagen für Visual Studio 2017
 titleSuffix: ''
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Projekt und eine Element Vorlage aus früheren Versionen des Visual Studio SDK für die Verwendung mit Visual Studio 2017 und höheren Versionen aktualisieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698858"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715976"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Aktualisieren des benutzerdefinierten Projekt-und Elementvorlagen für Visual Studio 2017
 
@@ -27,7 +29,7 @@ Wenn Sie ein Projekt oder eine Element Vorlage als Teil einer VSIX-Erweiterung e
 
 ## <a name="template-scanning"></a>Vorlagen Scan
 
-In früheren Versionen von Visual Studio hat **Devenv/Setup** oder **devenv/installvstemplates** den lokalen Datenträger durchsucht, um Projekt-und Element Vorlagen zu finden. Ab Visual Studio 2017 wird die Überprüfung nur für den Speicherort auf Benutzerebene durchgeführt. Der Standard Speicherort auf Benutzerebene ist **%UserProfile%\Documents \\<Visual Studio-Version \> \Vorlagen \\ **. Dieser Speicherort wird für Vorlagen verwendet, die vom Befehl **Project**  >  **Export Templates...** generiert werden, wenn die Option **Vorlage automatisch in Visual Studio importieren** im Assistenten ausgewählt ist.
+In früheren Versionen von Visual Studio hat **Devenv/Setup** oder **devenv/installvstemplates** den lokalen Datenträger durchsucht, um Projekt-und Element Vorlagen zu finden. Ab Visual Studio 2017 wird die Überprüfung nur für den Speicherort auf Benutzerebene durchgeführt. Der Standard Speicherort auf Benutzerebene ist **%UserProfile%\Documents \\<Visual Studio-Version \> \Vorlagen \\**. Dieser Speicherort wird für Vorlagen verwendet, die vom Befehl **Project**  >  **Export Templates...** generiert werden, wenn die Option **Vorlage automatisch in Visual Studio importieren** im Assistenten ausgewählt ist.
 
 Für andere (Nichtbenutzer-) Speicherorte müssen Sie eine Manifest-Datei (. vstman) einschließen, die den Speicherort und andere Eigenschaften der Vorlage angibt. Die vstman-Datei wird zusammen mit der VSTEMPLATE-Datei generiert, die für Vorlagen verwendet wird. Wenn Sie die Erweiterung mit einer vsix-Datei installieren, können Sie dies erreichen, indem Sie die Erweiterung in Visual Studio 2017 neu kompilieren. Wenn Sie jedoch eine MSI-Anwendung verwenden, müssen Sie die Änderungen manuell vornehmen. Eine Liste der Aktionen, die Sie ausführen müssen, um diese Änderungen vorzunehmen, finden Sie unter  **Upgrades für Erweiterungen, die mit installiert wurden. MSI** weiter unten auf dieser Seite.
 
@@ -188,7 +190,7 @@ Wenn Ihre Erweiterung eine MSI-basierte Bereitstellung ausführt, müssen Sie da
 
 Erstellen Sie separate Manifeste für Projekt-und Element Vorlagen, und Sie sollten wie oben beschrieben auf das Stamm Vorlagen Verzeichnis verweisen. Erstellen Sie ein Manifest pro Erweiterung und Gebiets Schema.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Problembehandlung bei Vorlagen Ermittlung](troubleshooting-template-discovery.md)
 - [Erstellen von benutzerdefinierten Projekt-und Element Vorlagen](creating-custom-project-and-item-templates.md)

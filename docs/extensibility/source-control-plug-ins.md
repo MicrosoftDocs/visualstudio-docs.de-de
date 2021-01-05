@@ -1,5 +1,7 @@
 ---
 title: Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation
+description: In den Artikeln in diesem Abschnitt wird die gesamte Schnittstellen Spezifikation beschrieben, mit der Quell Code Verwaltungssysteme in Visual Studio integriert werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699892"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715833"
 ---
 # <a name="source-control-plug-ins"></a>Quellcodeverwaltungs-Plug-Ins
 Der Abschnitt SDK-Referenz für das Quellcodeverwaltungs-Plug-in enthält die gesamte Schnittstellen Spezifikation, mit der Quell Code Verwaltungssysteme in integriert werden können [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Sie gibt die Syntax und die Semantik der verschiedenen Funktionen und Datentypen an, die das Quellcodeverwaltungs-Plug-in für die Schnittstelle mit der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) implementieren muss.

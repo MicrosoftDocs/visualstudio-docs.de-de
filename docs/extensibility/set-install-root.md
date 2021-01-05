@@ -1,5 +1,7 @@
 ---
 title: Installieren außerhalb des Ordners "Erweiterungen" mit VSIX v3 | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Installieren von Visual Studio SDK-Erweiterungs Objekten außerhalb des Ordners "Erweiterungen" und die gültigen Speicherorte.
+ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2c7d97dda9bba139ec613b367eedbc6307848a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bfb963122762c3185a964826a11dca5e771717
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700179"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716015"
 ---
 # <a name="install-outside-the-extensions-folder"></a>Installieren außerhalb des Ordners für Erweiterungen
 

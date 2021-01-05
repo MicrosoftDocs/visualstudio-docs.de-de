@@ -1,5 +1,7 @@
 ---
 title: Synchron automatisch geladene Erweiterungen
+description: Erfahren Sie mehr über das Standardverhalten ab Visual Studio 2019, das synchron zu überlappenden Paketen aus einer beliebigen Erweiterung blockiert.
+ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab62d235fd6ed4e47e765fc23868acd5c56efcb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699369"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715443"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Synchron automatisch geladene Erweiterungen
 
@@ -21,7 +23,7 @@ Synchron authentifikaterte Erweiterungen haben eine negative Auswirkung auf die 
 
 ![Warnung zur Erweiterungs Kompatibilität](media/extension-compatibility-warning-16-1.png.png)
 
-Sie können:
+Ihre Möglichkeiten:
 
 - Klicken Sie auf **synchrone** automatische Authentifizierung zulassen, um Erweiterungen von AutoLoad zuzulassen. Um diese Einstellung in Visual Studio-Optionen zu ändern, klicken Sie auf Umgebung und dann auf Erweiterungen, und aktivieren Sie dann das Kontrollkästchen synchrone Authentifizierung von Erweiterungen zulassen. 
 
@@ -42,7 +44,7 @@ Alle Erweiterungen, die alle Pakete in Benutzersitzungen synchron geladen haben,
 
 Administratoren können eine Gruppenrichtlinie aktivieren, um synchrone AutoLoad zuzulassen. Legen Sie hierzu eine registrierungsbasierte Richtlinie für den folgenden Schlüssel fest:
 
-**HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\synchronousautoload**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 Eintrag = **zulässig**
 

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 11caf55a8412477ac94d290add667b9393435fb6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807884"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668741"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio-Feedbackoptionen
 
@@ -34,7 +34,7 @@ Wenn Sie Probleme mit Visual Studio&mdash; wie Abstürze, schleppende Leistung o
 
 ![Symbol „Feedback senden“ in der Visual Studio 2019-IDE](./media/vs-2019/send-feedback-icon.png)
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8), auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Wenn Sie Probleme mit Visual Studio&mdash; wie Abstürze, schleppende Leistung o
 
 ![Symbol „Feedback senden“ in der Visual Studio 2019-IDE](./media/send-feedback-icon.png)
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8), auf der Sie sich anmelden können, um das Problem zu melden. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://deve
 
 Wenn Sie eine Idee oder einen Vorschlag zur Verbesserung von Visual Studio haben, lassen Sie es uns wissen, indem Sie das Tool **Feature vorschlagen** verwenden. Wählen Sie in Visual Studio das Feedbacksymbol in der oberen rechten Ecke aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Feature vorschlagen**.
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Übersicht: Vorschlagen einer Features](suggest-a-feature.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Übersicht: Vorschlagen einer Features](suggest-a-feature.md).
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://deve
 
 Wenn Sie eine Idee oder einen Vorschlag zur Verbesserung von Visual Studio haben, lassen Sie es uns wissen, indem Sie das Tool **Vorschlag senden** verwenden. Wählen Sie in Visual Studio das Feedbacksymbol neben dem Suchfeld aus, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Vorschlag senden**.
 
-Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://developercommunity.visualstudio.com), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Übersicht: Vorschlagen einer Features](suggest-a-feature.md).
+Anschließend öffnet Visual Studio die Seite [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8), auf der Sie sich anmelden können, um Ihre Idee mit anderen zu teilen. Weitere Informationen finden Sie unter [Übersicht: Vorschlagen einer Features](suggest-a-feature.md).
 
 ::: moniker-end
 

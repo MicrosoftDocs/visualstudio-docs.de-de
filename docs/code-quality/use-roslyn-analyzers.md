@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040640"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696623"
 ---
 # <a name="overview"></a>Übersicht
 
@@ -173,7 +173,7 @@ Sie können einen Großteil der Anpassung der Analyzer-Diagnose von **Projektmap
 
 ![Analyzers-Knoten in Projektmappen-Explorer](media/analyzers-expanded-in-solution-explorer.png)
 
-Im **Eigenschaften** Fenster können Sie die Eigenschaften einer Diagnose einschließlich der Beschreibung und des Standard schwere Grads anzeigen. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf die Regel, und wählen Sie **Eigenschaften** aus, oder wählen Sie die Regel aus, und drücken Sie dann **alt** + **Enter**
+Im **Eigenschaften** Fenster können Sie die Eigenschaften einer Diagnose einschließlich der Beschreibung und des Standard schwere Grads anzeigen. Um die Eigenschaften anzuzeigen, klicken Sie mit der rechten Maustaste auf die Regel, und wählen Sie **Eigenschaften** aus, oder wählen Sie die Regel aus, und drücken Sie dann **alt** + 
 
 ![Diagnose Eigenschaften in Eigenschaftenfenster](media/analyzer-diagnostic-properties.png)
 
@@ -333,7 +333,7 @@ Es gibt mehrere Möglichkeiten, Regel Verletzungen zu unterdrücken:
 
 - Über das Menü " **analysieren** "
 
-  Wählen **Analyze** Sie  >  in der Menüleiste die Option **Build analysieren und aktive Probleme unterdrücken** , um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
+  Wählen Sie  >  in der Menüleiste die Option **Build analysieren und aktive Probleme unterdrücken** , um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
 
 ::: moniker-end
 
@@ -341,7 +341,7 @@ Es gibt mehrere Möglichkeiten, Regel Verletzungen zu unterdrücken:
 
 - Über das Menü " **analysieren** "
 
-  Wählen **Analyze** Sie  >  in der Menüleiste Analyse **Ausführen Code Analyse und unterdrücken aktiver Probleme** aus, um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
+  Wählen Sie  >  in der Menüleiste Analyse **Ausführen Code Analyse und unterdrücken aktiver Probleme** aus, um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
 
 ::: moniker-end
 
@@ -361,7 +361,7 @@ Es gibt mehrere Möglichkeiten, Regel Verletzungen zu unterdrücken:
 
 - Aus der **Fehlerliste**
 
-  Wählen Sie die zu unterdrückenden Regeln aus, und klicken Sie dann mit **Suppress** der rechten Maustaste, und wählen Sie  >  **in Quelle unterdrücken/in Unterdrückungs Datei**.
+  Wählen Sie die zu unterdrückenden Regeln aus, und klicken Sie dann mit der rechten Maustaste, und wählen Sie  >  **in Quelle unterdrücken/in Unterdrückungs Datei**.
 
   - Wenn Sie **in Quelle** unterdrücken, wird das Dialogfeld **Vorschau der Änderungen** geöffnet, in dem eine Vorschau der c#- [#pragma Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warning](/dotnet/visual-basic/language-reference/directives/directives) -Direktive angezeigt wird, die dem Quellcode hinzugefügt wird.
 
@@ -382,7 +382,9 @@ Es gibt mehrere Möglichkeiten, Regel Verletzungen zu unterdrücken:
 
 Wenn Sie das Projekt in der Befehlszeile erstellen, werden Regelverstöße in der Buildausgabe angezeigt, wenn die folgenden Bedingungen erfüllt sind:
 
-- Die Analysen werden als nuget-Paket und nicht als VSIX-Erweiterung installiert.
+- Die Analysen werden mit dem .NET SDK oder als nuget-Paket installiert, nicht als VSIX-Erweiterung.
+
+  Für Analyzer, die mithilfe des .net SDKs installiert wurden, müssen Sie möglicherweise [die-Analysen aktivieren](../code-quality/install-net-analyzers.md). Bei Code Stilen können Sie auch [Code Stile beim Erstellen erzwingen](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) , indem Sie eine MSBuild-Eigenschaft festlegen.
 
 - Mindestens eine Regel wird im Code des Projekts verletzt.
 
@@ -411,7 +413,7 @@ Wenn Sie in einem .net Core-Projekt einen Verweis auf ein Projekt hinzufügen, d
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über Code Analysen in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Senden eines Code Analyzer-Fehlers](https://github.com/dotnet/roslyn-analyzers/issues)

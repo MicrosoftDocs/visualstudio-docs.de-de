@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 54bd53f5c63a2f126f4aeae264c4dff745633cf6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350809"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668312"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Problembehandlung bei der Visual Studio-Installation und bei Upgradefehlern
 
@@ -53,7 +53,7 @@ Mit der Reparatur werden viele gängige Updateprobleme behoben. Weitere Informat
 
 ### <a name="step-3---check-with-the-developer-community"></a>Schritt 3: Nachfragen in der Entwicklercommunity
 
-Suchen Sie in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/spaces/8/index.html) nach der Fehlermeldung. Andere Mitglieder der Community haben ggf. eine Lösung für Ihr Problem dokumentiert.
+Suchen Sie in der [Visual Studio-Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) nach der Fehlermeldung. Andere Mitglieder der Community haben ggf. eine Lösung für Ihr Problem dokumentiert.
 
 ### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Schritt 4: Löschen des Visual Studio-Installer-Verzeichnisses zum Beheben von Problemen mit Upgrades
 

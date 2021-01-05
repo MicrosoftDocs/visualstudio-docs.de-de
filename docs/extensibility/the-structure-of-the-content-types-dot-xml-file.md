@@ -1,5 +1,7 @@
 ---
 title: Die Struktur der [Content_Types]. XML-Datei | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Struktur der Inhaltstypen Datei, die Informationen zu den Arten von Inhalten in einem VSIX-Paket enthält.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012516"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715222"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Die Struktur der [Content_types].xml-Datei
 Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Studio verwendet die Datei [Content_Types]. XML, um das Paket zu installieren, aber die Datei selbst wird nicht installiert.
@@ -35,7 +37,7 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
 |-------------|-----------------|
 |`Types`|Enthält untergeordnete Elemente, die die Dateitypen im VSIX-Paket auflisten.|
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attribute
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
@@ -54,7 +56,7 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
 |-------------|-----------------|
 |`Default`|Beschreibt einen Inhaltstyp im VSIX-Paket. Jeder Dateityp im Paket muss über ein eigenes- `Default` Element verfügen.|
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attribute
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
