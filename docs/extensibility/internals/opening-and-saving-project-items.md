@@ -1,5 +1,7 @@
 ---
 title: Öffnen und Speichern von Projekt Elementen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die verschiedenen Ansätze zum Öffnen und Speichern von Dateien für den neuen Projekttyp in der Visual Studio-IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706972"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877636"
 ---
 # <a name="opening-and-saving-project-items"></a>Öffnen und Speichern von Projektelementen
 Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speichern Ihrer Projektdateien in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) verwalten. In den folgenden Themen werden die verschiedenen Ansätze zum Öffnen und Speichern von Dateien erörtert.
@@ -45,11 +47,11 @@ Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speiche
 
 - [Speichern eines Standarddokuments](../../extensibility/internals/saving-a-standard-document.md)
 
- Bietet eine ausführliche Erläuterung dazu, wie die IDE die Befehle " **Speichern**", " **Speichern**unter" und " **Alle speichern** " für ein Dokument verarbeitet, das in einem Standard-Editor geöffnet ist.
+ Bietet eine ausführliche Erläuterung dazu, wie die IDE die Befehle " **Speichern**", " **Speichern** unter" und " **Alle speichern** " für ein Dokument verarbeitet, das in einem Standard-Editor geöffnet ist.
 
 - [Speichern eines benutzerdefinierten Dokuments](../../extensibility/internals/saving-a-custom-document.md)
 
- Enthält ein Diagramm und eine ausführliche Erläuterung der Behandlung der Befehle **Speichern**, **Speichern**unter und **alle** Befehle für Dokumente, die in einem benutzerdefinierten Editor geöffnet werden.
+ Enthält ein Diagramm und eine ausführliche Erläuterung der Behandlung der Befehle **Speichern**, **Speichern** unter und **alle** Befehle für Dokumente, die in einem benutzerdefinierten Editor geöffnet werden.
 
 - [Bestimmen, welcher Editor eine Datei in einem Projekt öffnet](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 

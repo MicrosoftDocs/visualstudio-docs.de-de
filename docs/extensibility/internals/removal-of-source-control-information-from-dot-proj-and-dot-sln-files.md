@@ -1,5 +1,6 @@
 ---
 title: Entfernen von Quell Code Verwaltungsinformationen aus proj-und SLN-Dateien
+description: In der Quellcodeverwaltungs-Plug-in-API werden die SCC-Informationen in einem Mssccprj gespeichert. SCC-Datei anstelle der Projekt-und Projektmappendateien.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a5f9b6ac83df104c381d7100a5e8fda5ac48a61
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 798179a48c24c61fa40c2519624e22a077003b56
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034675"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876960"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Entfernen von Quell Code Verwaltungsinformationen aus proj-und SLN-Dateien
 

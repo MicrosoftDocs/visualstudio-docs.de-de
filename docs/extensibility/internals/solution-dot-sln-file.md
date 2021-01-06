@@ -1,5 +1,7 @@
 ---
 title: Lösung (. Sln)-Datei
+description: Erfahren Sie mehr über die SLN-Datei, bei der es sich um eine der Dateien handelt, die Zustandsinformationen für ein Projekt in Visual Studio verwaltet.
+ms.custom: SEO-VS-2020
 ms.date: 03/15/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4eee1f0a5e8371d239b3c33d10e1d9d7998095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 903b33d72d3a97eb4ed3f7ad0bc865999bee54cf
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705334"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877506"
 ---
 # <a name="solution-sln-file"></a>Projektmappendatei (. sln)
 
@@ -160,7 +162,7 @@ Jedes geladene VSPackage wird aufgezählt, um festzustellen, ob es Elemente enth
 
 Nur die SLN-Datei enthält Einträge in den `preSolution` `postSolution` Abschnitten und. Die SUO-Datei enthält keine ähnlichen Abschnitte, da diese Informationen für die Lösung erforderlich sind, um ordnungsgemäß geladen zu werden. Die SUO-Datei enthält benutzerspezifische Optionen, z. b. private Notizen, die nicht für die Freigabe oder Platzierung in der Quell Code Verwaltung vorgesehen sind.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [Datei mit Benutzeroptionen in Projektmappen (SUO)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

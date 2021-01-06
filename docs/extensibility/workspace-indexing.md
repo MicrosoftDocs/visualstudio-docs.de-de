@@ -1,5 +1,7 @@
 ---
 title: Arbeitsbereichindizierung in Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die arbeitsbereichindizierung, die Sammlung und persistente Speicherung von Daten zur Unterstützung umfassender IDE-Features für einen geöffneten Ordner Arbeitsbereich.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b5c069ce3ae993f2d2371bffae3ac58b286fa70
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952702"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877051"
 ---
 # <a name="workspace-indexing"></a>Arbeitsbereichindizierung
 
@@ -24,7 +26,7 @@ Es gibt drei Arten von Daten, die indiziert werden. Beachten Sie, dass der von D
 
 |Daten|Datei Scannertyp|Index Abfrage Ergebnistyp|Verwandte Typen|
 |--|--|--|--|
-|References|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
+|Referenzen|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
 |Symbole|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService>sollte anstelle von für Abfragen verwendet werden. `IIndexWorkspaceService`|
 |Datenwerte|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataValue>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataResult`1>||
 

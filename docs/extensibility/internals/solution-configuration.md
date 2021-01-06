@@ -1,5 +1,7 @@
 ---
 title: Projektmappenkonfiguration | Microsoft-Dokumentation
+description: Erfahren Sie, wie die vom Projekttyp unterstützten Projektmappenkonfigurationen implementiert werden, die das Verhalten des Starts (F5) und der Buildbefehle direkt steuern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c96b73747ef8b136a74a7256cde7fef8d1c42de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705377"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876027"
 ---
 # <a name="solution-configuration"></a>Projektmappenkonfiguration
 Projektmappenkonfigurationen speichern Eigenschaften auf Projektmappenebene. Sie leiten das Verhalten des **Starts** (F5 **) und der** Buildbefehle weiter. Standardmäßig wird mit diesen Befehlen die Debugkonfiguration erstellt und gestartet. Beide Befehle werden im Kontext einer Projektmappenkonfiguration ausgeführt. Dies bedeutet, dass der Benutzer mit dem Start und der Erstellung der aktiven Projekt Mappe mit den Einstellungen beginnen kann. Die Umgebung ist so konzipiert, dass Sie bei der Erstellung und Ausführung von Lösungen optimiert wird.
@@ -27,7 +29,7 @@ Projektmappenkonfigurationen speichern Eigenschaften auf Projektmappenebene. Sie
 
  Im folgenden wird erläutert, wie Sie die vom Projekttyp unterstützten Projektmappenkonfigurationen implementieren können:
 
-- Projekt
+- Project
 
    Zeigt die Namen der in der aktuellen Projekt Mappe gefundenen Projekte an.
 
@@ -45,7 +47,7 @@ Projektmappenkonfigurationen speichern Eigenschaften auf Projektmappenebene. Sie
 
    Wenn ein Projekt Plattformen nicht unterstützt, wird in der Spalte Plattform für dieses Projekt der Wert keine angezeigt, und ist deaktiviert.
 
-- Erstellen
+- Build
 
    Gibt an, ob das Projekt von der aktuellen Projektmappenkonfiguration erstellt wird. Nicht ausgewählte Projekte werden nicht erstellt, wenn die Buildbefehle auf Projektmappenebene trotz der Projekt Abhängigkeiten aufgerufen werden, die Sie enthalten. Projekte, die nicht für die Erstellung ausgewählt wurden, sind weiterhin in Debuggen, ausführen, packen und Bereitstellen der Lösung enthalten.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Start Seite | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie Benutzereinstellungen für Ihre Start Seite beibehalten, indem Sie eine Einstellung in der Registrierung speichern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903165"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876180"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf einer Start Seite
 
 Sie können die Benutzereinstellungen für die Start Seite persistent speichern. Mithilfe dieser exemplarischen Vorgehensweise können Sie ein Steuerelement erstellen, mit dem eine Einstellung in der Registrierung gespeichert wird, wenn der Benutzer auf eine Schaltfläche klickt, und diese Einstellung bei jedem Laden der Start Seite abruft. Da die Projektvorlage für Startseiten ein anpassbares Benutzer Steuerelement enthält und die standardmäßige XAML-Startseite dieses Steuerelement aufruft, müssen Sie die Startseite nicht ändern.
 
-Der Einstellungs Speicher, der in dieser exemplarischen Vorgehensweise instanziiert wird, ist eine Instanz der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> -Schnittstelle, die liest und in den folgenden Registrierungs Speicherort schreibt, wenn Sie aufgerufen wird: **hkcu\software\microsoft\visualstudio\14,0 \\ \<CollectionName> **
+Der Einstellungs Speicher, der in dieser exemplarischen Vorgehensweise instanziiert wird, ist eine Instanz der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> -Schnittstelle, die liest und in den folgenden Registrierungs Speicherort schreibt, wenn Sie aufgerufen wird: **hkcu\software\microsoft\visualstudio\14,0 \\ \<CollectionName>**
 
-Wenn Sie in der experimentellen Instanz von Visual Studio ausgeführt wird, werden in den Einstellungen " **hkcu\software\microsoft\visualstudio\14.0exp \\ \<CollectionName> ** " Lese-und Schreibvorgänge gespeichert.
+Wenn Sie in der experimentellen Instanz von Visual Studio ausgeführt wird, werden in den Einstellungen " **hkcu\software\microsoft\visualstudio\14.0exp \\ \<CollectionName>** " Lese-und Schreibvorgänge gespeichert.
 
 Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweitern von Benutzereinstellungen und-Optionen](../extensibility/extending-user-settings-and-options.md).
 
@@ -31,13 +33,13 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweit
 > [!NOTE]
 > Um dieser exemplarischen Vorgehensweise folgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 >
-> Sie können die Projektvorlage für Start Seiten mit dem **Erweiterungs-Manager**herunterladen.
+> Sie können die Projektvorlage für Start Seiten mit dem **Erweiterungs-Manager** herunterladen.
 
 ## <a name="set-up-the-project"></a>Einrichten des Projekts
 
 1. Erstellen Sie ein Start Seiten Projekt, wie unter [Erstellen einer benutzerdefinierten Startseite](creating-a-custom-start-page.md)beschrieben. Nennen Sie das Projekt **savemysettings**.
 
-2. Fügen Sie in **Projektmappen-Explorer**dem startpagecontrol-Projekt die folgenden Assemblyverweise hinzu:
+2. Fügen Sie in **Projektmappen-Explorer** dem startpagecontrol-Projekt die folgenden Assemblyverweise hinzu:
 
     - EnvDTE
 
@@ -55,11 +57,11 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweit
     Loaded="OnLoaded"
     ```
 
-5. Klicken Sie im Entwurfs Bereich auf den Hauptbereich des-Steuer Elements, **und drücken Sie**dann ENTF.
+5. Klicken Sie im Entwurfs Bereich auf den Hauptbereich des-Steuer Elements, **und drücken Sie** dann ENTF.
 
      Durch diesen Schritt <xref:System.Windows.Controls.Border> wird das-Element und alles darin entfernt, und es wird nur das Element der obersten Ebene beibehalten <xref:System.Windows.Controls.Grid> .
 
-6. Ziehen Sie aus der **Toolbox**ein- <xref:System.Windows.Controls.StackPanel> Steuerelement in das Raster.
+6. Ziehen Sie aus der **Toolbox** ein- <xref:System.Windows.Controls.StackPanel> Steuerelement in das Raster.
 
 7. Ziehen Sie nun eine <xref:System.Windows.Controls.TextBlock> , eine <xref:System.Windows.Controls.TextBox> und eine Schaltfläche in den <xref:System.Windows.Controls.StackPanel> .
 
@@ -77,7 +79,7 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweit
 
 1. Klicken Sie im XAML-Bereich mit der rechten Maustaste auf das- `Click` Attribut des- <xref:System.Windows.Controls.Button> Elements, und klicken Sie dann auf **zu Ereignis Handler navigieren**.
 
-     In diesem Schritt wird *MyControl.XAML.cs*geöffnet, und es wird ein Stub-Handler für das- `Button_Click` Ereignis erstellt.
+     In diesem Schritt wird *MyControl.XAML.cs* geöffnet, und es wird ein Stub-Handler für das- `Button_Click` Ereignis erstellt.
 
 2. Fügen Sie am Anfang der Datei die folgenden- `using` Direktiven hinzu.
 
@@ -150,9 +152,9 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweit
 
 6. Erstellen Sie das Benutzer Steuerelement.
 
-7. Öffnen Sie in **Projektmappen-Explorer**die Datei *Source. Extension. vsixmanifest*.
+7. Öffnen Sie in **Projektmappen-Explorer** die Datei *Source. Extension. vsixmanifest*.
 
-8. Legen Sie im Manifest-Editor den **Product Name** auf **Start Seite Meine Einstellungen speichern**fest.
+8. Legen Sie im Manifest-Editor den **Product Name** auf **Start Seite Meine Einstellungen speichern** fest.
 
      Mit dieser Funktion wird der Name der Startseite so festgelegt, dass Sie im Dialogfeld **Optionen** in der Liste **Startseite anpassen** angezeigt wird.
 
@@ -166,7 +168,7 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweit
 
 2. Klicken Sie **in der experimentellen Instanz im Menü Extras** auf **Optionen**.
 
-3. Klicken Sie im Knoten **Umgebung** auf **Start**, und wählen Sie dann in der Liste **Startseite anpassen** die Option **[installierte Erweiterung] Startseite Einstellungen speichern**aus.
+3. Klicken Sie im Knoten **Umgebung** auf **Start**, und wählen Sie dann in der Liste **Startseite anpassen** die Option **[installierte Erweiterung] Startseite Einstellungen speichern** aus.
 
      Klicken Sie auf **OK**.
 
@@ -174,7 +176,7 @@ Weitere Informationen zum Beibehalten von Einstellungen finden Sie unter [Erweit
 
 5. Klicken Sie auf der Start Seite auf die Registerkarte **MyControl** .
 
-6. Geben Sie im Textfeld **Cat**ein, und klicken Sie dann auf **meine Einstellung speichern**.
+6. Geben Sie im Textfeld **Cat** ein, und klicken Sie dann auf **meine Einstellung speichern**.
 
 7. Schließen Sie die Start Seite, und öffnen Sie Sie erneut.
 

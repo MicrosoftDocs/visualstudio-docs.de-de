@@ -1,5 +1,7 @@
 ---
 title: Übersicht über das Eigenschaften Fenster | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Schnittstellen, die für die Interaktion mit dem Eigenschaftenfenster in der Visual Studio-IDE in dieser Übersicht verwendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 445a43cec976f363873c89dfe9b8e05429aebaf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706034"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875894"
 ---
 # <a name="properties-window-overview"></a>Übersicht über Eigenschaftenfenster
 Das Fenster **Eigenschaften** wird zum Anzeigen von Eigenschaften für Objekte verwendet, die in den beiden Haupttypen von Windows in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) ausgewählt sind. Diese beiden Windows-Typen sind:

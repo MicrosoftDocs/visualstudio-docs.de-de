@@ -1,5 +1,7 @@
 ---
 title: Projektmappenbenutzeroptionen (. SUO-Datei | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Projektmappenbenutzeroptionen (. suo), die benutzerspezifische Lösungs Optionen in einer strukturierten Speicherdatei enthalten, die in einem binären Format gespeichert ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9469663d3ac258e1c568778894d8584c68c13632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705318"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876753"
 ---
 # <a name="solution-user-options-suo-file"></a>Datei mit Benutzeroptionen in Projektmappen (SUO)
 Die Benutzeroptionen für die Projekt Mappe (. suo) enthalten Optionen für benutzerspezifische Lösungen. Diese Datei sollte nicht in die Quell Code Verwaltung eingeklickt werden.
@@ -36,6 +38,6 @@ Die Benutzeroptionen für die Projekt Mappe (. suo) enthalten Optionen für benu
 
  Diese beiden Methoden, `SaveUserOptions` und `WriteUserOptions` , werden rekursiv für jeden Datenstrom aufgerufen, der in der SUO-Datei gespeichert werden soll. dabei wird der-Zeiger an übergeben `IVsSolutionPersistence` . Sie werden rekursiv aufgerufen, um das Schreiben mehrerer Streams in die SUO-Datei zu ermöglichen. Auf diese Weise werden die Benutzerinformationen mit der Projekt Mappe beibehalten und sind beim nächsten Öffnen der Lösung garantiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [Lösungen](../../extensibility/internals/solutions-overview.md)

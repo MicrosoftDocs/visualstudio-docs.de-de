@@ -1,5 +1,7 @@
 ---
 title: Abfrage zum Bearbeiten der Abfrage bearbeiten (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Rolle von Query-Edit Query-Save Ereignissen und deren Behandlung durch das VSPackage für die Quell Code Verwaltung.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c09ac0cb4f51b8f2484b95d403ff6d0445631479
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed1bb5d1f805f81ba4f124f425fbd93f706eb830
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705962"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875881"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>QueryEditQuerySave (Quellcodeverwaltungs-VSPackage)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editoren können Abfrage Edit Query Save-Ereignisse (QEQS) senden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Der Quellcodeverwaltungs-Stub implementiert den QEQS-Dienst, sodass er der Empfänger von QEQS-Ereignissen ist. Diese Ereignisse werden dann an das derzeit aktive Quellcodeverwaltungs-VSPackage delegiert. Das VSPackage für die aktive Quell Code Verwaltung implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> -Methode und die-Methode. Die Methoden der- `IVsQueryEditQuerySave2` Schnittstelle werden in der Regel unmittelbar vor dem erstmaligen Bearbeiten eines Dokuments und unmittelbar vor dem Speichern eines Dokuments aufgerufen.

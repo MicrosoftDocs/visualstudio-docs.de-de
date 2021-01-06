@@ -1,5 +1,7 @@
 ---
 title: Modell für Quell Code Verwaltungs Pakete | Microsoft-Dokumentation
+description: Dieses Modell stellt eine Implementierung der Quell Code Verwaltung dar. Der Artikel zeigt die Namen der Klassen, damit Sie leichter erkennen können, wie die Quell Code Verwaltung ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707070"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876688"
 ---
 # <a name="model-for-source-control-packages"></a>Modell für Quellcodeverwaltungspakete
 Das folgende Modell stellt ein Beispiel für eine Implementierung der Quell Code Verwaltung dar. Im Modell sehen Sie die Schnittstellen, die Sie implementieren müssen, und die Umgebungs Dienste, die Sie aufzurufen müssen. Wie alle Dienste auch, rufen Sie tatsächlich die Methoden einer bestimmten Schnittstelle auf, die Sie über den Dienst erhalten. Die Namen der Klassen werden identifiziert, damit Sie leichter erkennen können, wie die Quell Code Verwaltung ausgeführt wird.

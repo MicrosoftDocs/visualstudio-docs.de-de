@@ -1,5 +1,7 @@
 ---
 title: Übersicht über Lösungen
+description: Erfahren Sie mehr über die internale einer Lösung für Erweiterungs Entwickler, die mit Lösungen in Visual Studio-Erweiterungen arbeiten möchten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767db749d953855cd5c6f81f356a195c830aa838
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2888f2fd0b2c9b7bfb530cc3fd46708ca13422f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705301"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876726"
 ---
 # <a name="solutions-overview"></a>Übersicht über Lösungen
 
@@ -43,9 +45,9 @@ Wenn eine Projekt Mappe geöffnet wird, findet der folgende Prozess statt.
    Spezifische Informationen zur Verwendung dieser Dateien finden Sie in der [Lösung (). Sln)-Datei](../../extensibility/internals/solution-dot-sln-file.md) -und Projektmappenbenutzeroptionen [(. Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).
 
 > [!NOTE]
-> Wenn Sie eine neue Projektmappenkonfiguration erstellen möchten, die aus den Konfigurationen von zwei Projekten besteht und ein drittes aus dem Build ausschließt, müssen Sie die Eigenschaften Seiten-Benutzeroberfläche oder-Automatisierung verwenden. Sie können die Projektmappenbuild-Manager-Konfigurationen und ihre Eigenschaften nicht direkt ändern, aber Sie können den Projektmappenbuild-Manager mithilfe der- `SolutionBuild` Klasse von DTE im Automatisierungs Modell bearbeiten. Weitere Informationen zum Konfigurieren von Lösungen finden Sie [Solution Configuration](../../extensibility/internals/solution-configuration.md)unter Projektmappenkonfiguration.
+> Wenn Sie eine neue Projektmappenkonfiguration erstellen möchten, die aus den Konfigurationen von zwei Projekten besteht und ein drittes aus dem Build ausschließt, müssen Sie die Eigenschaften Seiten-Benutzeroberfläche oder-Automatisierung verwenden. Sie können die Projektmappenbuild-Manager-Konfigurationen und ihre Eigenschaften nicht direkt ändern, aber Sie können den Projektmappenbuild-Manager mithilfe der- `SolutionBuild` Klasse von DTE im Automatisierungs Modell bearbeiten. Weitere Informationen zum Konfigurieren von Lösungen finden Sie [](../../extensibility/internals/solution-configuration.md)unter Projektmappenkonfiguration.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>

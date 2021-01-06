@@ -1,5 +1,7 @@
 ---
 title: VSPackage-Funktionen der Quell Code Verwaltung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Features eines Quellcodeverwaltungs-VSPackages, einschließlich der Registrierungs-/Auswahldetails und über einige der Hauptfunktionen der Quell Code Verwaltung.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705018"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876219"
 ---
 # <a name="source-control-vspackage-features"></a>Funktionen von Quellcodeverwaltungs-VSPackages
-In diesem Abschnitt werden die verschiedenen Funktionen eines Quellcodeverwaltungs-VSPackages beschrieben. Er beschreibt die Registrierungs-und Auswahl Details für ein solches VSPackage und erläutert drei der wichtigsten Funktionen der Quell Code Verwaltung: Behandlung von Abfragen zum Bearbeiten von Abfrage speichern (QEQS)-Ereignissen, Symbol Ersetzung und benutzerdefinierte Benutzeroberfläche (UI) für die Quell Code Verwaltungsfunktionen.
+In diesem Abschnitt werden die verschiedenen Funktionen eines Quellcodeverwaltungs-VSPackages beschrieben. Er beschreibt die Registrierungs-und Auswahl Details für ein solches VSPackage und erläutert drei der wichtigsten Funktionen der Quell Code Verwaltung: Behandlung von Query-Edit Query-Save (QEQS)-Ereignissen, Symbol Ersetzung und benutzerdefinierte Benutzeroberfläche (UI) für die Quell Code Verwaltungsfunktionen.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 - [Registrierung und Auswahl](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
@@ -27,7 +29,7 @@ In diesem Abschnitt werden die verschiedenen Funktionen eines Quellcodeverwaltun
 
 - [QueryEditQuerySave](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- Erläutert die Rolle der Abfrage-und Bearbeitungs Ereignisse und deren Behandlung durch das VSPackage für die Quell Code Verwaltung.
+ Erläutert die Rolle Query-Edit Query-Save Ereignisse und deren Behandlung durch das VSPackage der Quell Code Verwaltung.
 
 - [Glyphensteuerung](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 

@@ -1,5 +1,7 @@
 ---
 title: Modell eines Legacy sprach Dienstanbieter | Microsoft-Dokumentation
+description: Verwenden Sie dieses Modell eines minimalen sprach Dienstanbieter für den Visual Studio-Kern-Editor als Leitfaden zum Erstellen eines eigenen sprach Dienstanbieter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707046"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876739"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell eines Legacysprachdiensts
 Ein Sprachdienst definiert die Elemente und Features für eine bestimmte Sprache und wird verwendet, um dem Editor spezifische Informationen für diese Sprache bereitzustellen. Der Editor muss z. b. die Elemente und Schlüsselwörter der Sprache kennen, um die Syntax Farbgebung zu unterstützen.
@@ -33,13 +35,13 @@ Ein Sprachdienst definiert die Elemente und Features für eine bestimmte Sprache
 
   ![Grafik zum Sprachdienst Modell](../../extensibility/media/vslanguageservicemodel.gif "vslanguageservicemodel") Basic-Sprachdienst Modell
 
-  Das Dokument Fenster hostet die *Dokument Ansicht* des Editors, in diesem Fall der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kern Editor. Die Dokument Ansicht und der Text Puffer befinden sich im Besitz des Editors. Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] über ein spezielles Dokument Fenster, das als *Code Fenster*bezeichnet wird. Das Code Fenster ist in einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> Objekt enthalten, das von der IDE erstellt und gesteuert wird.
+  Das Dokument Fenster hostet die *Dokument Ansicht* des Editors, in diesem Fall der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kern Editor. Die Dokument Ansicht und der Text Puffer befinden sich im Besitz des Editors. Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] über ein spezielles Dokument Fenster, das als *Code Fenster* bezeichnet wird. Das Code Fenster ist in einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> Objekt enthalten, das von der IDE erstellt und gesteuert wird.
 
-  Wenn eine Datei mit einer bestimmten Erweiterung geladen wird, sucht der Editor den Sprachdienst, der dieser Erweiterung zugeordnet ist, und übergibt das Code Fenster durch Aufrufen der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Der Sprachdienst gibt einen *Code Fenster-Manager*zurück, der die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle implementiert.
+  Wenn eine Datei mit einer bestimmten Erweiterung geladen wird, sucht der Editor den Sprachdienst, der dieser Erweiterung zugeordnet ist, und übergibt das Code Fenster durch Aufrufen der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode. Der Sprachdienst gibt einen *Code Fenster-Manager* zurück, der die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> Schnittstelle implementiert.
 
   In der folgenden Tabelle finden Sie eine Übersicht über die Objekte im Modell.
 
-| Komponente | Objekt | Funktion |
+| Komponente | Object | Funktion |
 |------------------| - | - |
 | Text Puffer | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Ein Unicode-Lese-/Schreib-Textstream. Es ist möglich, dass Text andere Codierungen verwendet. |
 | Codefenster | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Ein Dokument Fenster, das mindestens eine Textansicht enthält. Wenn [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sich im MDI-Modus (Multiple Document Interface) befindet, ist das Code Fenster ein untergeordnetes MDI-Element. |

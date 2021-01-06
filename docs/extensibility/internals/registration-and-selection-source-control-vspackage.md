@@ -1,5 +1,7 @@
 ---
 title: Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Quellcodeverwaltungs-VSPackage in Visual Studio registrieren und auswählen, welches Paket aus mehreren registrierten Quell Code Verwaltungs Paketen geladen werden soll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705719"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877363"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage)
 Ein Quellcodeverwaltungs-VSPackage muss registriert werden, um es für verfügbar zu machen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Wenn mehr als ein Quellcodeverwaltungs-VSPackage registriert ist, kann der Benutzer auswählen, welches VSPackage zu den entsprechenden Zeiten geladen werden soll. Weitere Informationen zu VSPackages und deren Registrierung finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md) .
@@ -24,7 +26,7 @@ Ein Quellcodeverwaltungs-VSPackage muss registriert werden, um es für verfügba
 ## <a name="registering-a-source-control-package"></a>Registrieren eines Quell Code Verwaltungs Pakets
  Das Quell Code Verwaltungspaket ist so registriert, dass [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es von der Umgebung gefunden und die unterstützten Funktionen abgefragt werden kann. Dies entspricht einem verzögerten Lade Schema, in dem eine Instanz eines Pakets nur erstellt wird, wenn seine Features oder Befehle erforderlich sind oder explizit angefordert werden.
 
- VSPackages platzieren Informationen in einem Versions spezifischen Registrierungsschlüssel HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *X. Y*, wobei *X* die Hauptversionsnummer und *Y* die neben Versionsnummer ist. Diese Vorgehensweise bietet die Möglichkeit, eine parallele Installation mehrerer Versionen von zu unterstützen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ VSPackages platzieren Informationen in einem Versions spezifischen Registrierungsschlüssel, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. Y*, wobei *x* die Hauptversionsnummer und *Y* die neben Versionsnummer ist. Diese Vorgehensweise bietet die Möglichkeit, eine parallele Installation mehrerer Versionen von zu unterstützen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche (User Interface, UI) unterstützt die Auswahl aus mehreren installierten Quellcodeverwaltungs-Plug-ins (über das Quellcodeverwaltungs-Adapter Paket) sowie von Quellcodeverwaltungs-VSPackages. Es kann immer nur ein aktives Quellcodeverwaltungs-Plug-in oder ein VSPackage vorhanden sein. Die IDE ermöglicht jedoch den Wechsel zwischen den Quellcodeverwaltungs-Plug-ins und VSPackages über einen automatischen lösungsbasierten Mechanismus zum Austauschen von Paketen. Es gibt einige Anforderungen an den Teil des VSPackage der Quell Code Verwaltung, um diesen Auswahlmechanismus zu aktivieren.
 

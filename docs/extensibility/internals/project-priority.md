@@ -1,5 +1,7 @@
 ---
 title: Projekt Priorität | Microsoft-Dokumentation
+description: Erfahren Sie mehr über das Prioritäts Schema, das von der Visual Studio-IDE verwendet wird, um das beste Projekt zum Öffnen eines Elements festzulegen, wenn das Element Mitglied von mehreren Projekten ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a75c1c333d88e1bf5524281bee8b2a683ca6c98e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1389668bbcd1239fbb1ae0e865478bf0e0f6a7e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706419"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877376"
 ---
 # <a name="project-priority"></a>Projektpriorität
 Ein Projekt Element ist in der Regel ein Member von nur einem Projekt in der Projekt Mappe. Aus diesem Grund kann die IDE leicht feststellen, welches Projekt zum Öffnen des Elements verwendet wird. Wenn ein Element jedoch Mitglied von mehr als einem Projekt ist, verwendet die IDE ein Prioritäts Schema, um das beste Projekt für das Öffnen des Elements zu bestimmen.

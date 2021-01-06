@@ -1,5 +1,7 @@
 ---
 title: Optimieren von Menüs und Symbolleisten Befehlen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio Befehls Verwirrung minimieren kann, die durch Hinzufügen von VSPackages und den entsprechenden Befehlen verursacht wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b35f3a87f819885685b54888031883f4c2776d04
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706916"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877597"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimieren von Menü- und Symbolleistenbefehlen
 Durch das Hinzufügen von VSPackages und die zugehörigen Befehle zu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kann eine überfüllte Benutzeroberfläche verursacht werden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet Möglichkeiten, um die Verwirrung von UI-Befehlen zu minimieren.

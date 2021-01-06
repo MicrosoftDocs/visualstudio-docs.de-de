@@ -1,5 +1,7 @@
 ---
 title: Unterstützung für Benutzereinstellungen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Persistenz von Einstellungs Kategorien mithilfe der Settings-APIs im Visual Studio SDK aktivieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9f6ee52e9ba87eb2f570a6e388dc98c050989c9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704789"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876518"
 ---
 # <a name="support-for-user-settings"></a>Unterstützung für Benutzereinstellungen
 Ein VSPackage kann eine oder mehrere Einstellungs Kategorien definieren, die Gruppen von Zustandsvariablen sind, die beibehalten werden, wenn ein Benutzer **im Menü Extras den Befehl** **Einstellungen importieren/exportieren** auswählt. Um diese Persistenz zu aktivieren, verwenden Sie die Einstellungs-APIs in der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -34,7 +36,7 @@ Ein VSPackage kann eine oder mehrere Einstellungs Kategorien definieren, die Gru
  Benutzerdefinierte Einstellungs Punkte werden in einem Registrierungs Eintrag am folgenden Speicherort erstellt: hklm\software\microsoft\visualstudio \\ *\<Version>* \usersettings \\ `<CSPName>` , wobei `<CSPName>` der Name des benutzerdefinierten Einstellungs Punkts ist, den das VSPackage unterstützt *\<Version>* , und die Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , z. b. 8,0.
 
 > [!NOTE]
-> Der Stammpfad von HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *\<Version>* kann mit einem alternativen Stamm überschrieben werden, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) initialisiert wird. Weitere Informationen finden Sie unter [Befehls Zeilenschalter](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Der Stammpfad von HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* kann mit einem alternativen Stamm überschrieben werden, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) initialisiert wird. Weitere Informationen finden Sie unter [Befehls Zeilenschalter](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
  Die Struktur des Registrierungs Eintrags wird im folgenden veranschaulicht:
 

@@ -1,5 +1,6 @@
 ---
 title: Verwenden einer Tastenkombination mit einer Editor-Erweiterung
+description: Erfahren Sie, wie Sie einer Textansicht mit einer Tastenkombination einen Ansichts Zusatz hinzufügen. Diese exemplarische Vorgehensweise basiert auf der Viewport-Zusatzelement-Editor-Vorlage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037457"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875842"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung
 Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. In der folgenden exemplarischen Vorgehensweise wird veranschaulicht, wie einer Textansicht mit einer Tastenkombination ein Ansichts Zusatzelement hinzugefügt wird. Diese exemplarische Vorgehensweise basiert auf der Ansichts-Editor-Vorlage Viewport und ermöglicht das Hinzufügen des Zusatz Elements mit dem Zeichen +.
@@ -26,7 +27,7 @@ Sie können in der Editor-Erweiterung auf Tastenkombinationen reagieren. In der 
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Erstellen eines Managed Extensibility Framework-Projekts (MEF)
 
-1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `KeyBindingTest` .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit** und dann **VSIX-Projekt** aus.) Benennen Sie die Projekt Mappe `KeyBindingTest` .
 
 2. Fügen Sie dem Projekt eine Editor-Text Zusatzelement Vorlage hinzu, und benennen Sie Sie `KeyBindingTest` . Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -78,7 +79,7 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Verarbeiten
 3. Die Klasse mit dem Namen keybindingcommandfilter sollte von Erben <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. Fügen Sie private Felder für die Textansicht, den nächsten Befehl in der Befehlskette und ein Flag hinzu, um darzustellen, ob der Befehls Filter bereits hinzugefügt wurde.
@@ -86,8 +87,8 @@ Vor Visual Studio 2017 Version 15,6 war die einzige Möglichkeit zum Verarbeiten
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. Fügen Sie einen Konstruktor hinzu, der die Textansicht festlegt.
@@ -198,7 +199,7 @@ Aktualisieren Sie zunächst die nuget-Verweise des Projekts, um auf die neueste 
 
 1. Klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **nuget-Pakete verwalten**.
 
-2. Wählen Sie im **nuget-Paket-Manager**die Registerkarte **Updates** aus, aktivieren Sie das Kontrollkästchen **alle Pakete auswählen** , und wählen Sie dann **Aktualisieren**aus.
+2. Wählen Sie im **nuget-Paket-Manager** die Registerkarte **Updates** aus, aktivieren Sie das Kontrollkästchen **alle Pakete auswählen** , und wählen Sie dann **Aktualisieren** aus.
 
 Der Befehls Handler ist eine Implementierung von <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601> , die den Befehl verarbeitet, indem das Zusatzelement instanziiert wird.
 

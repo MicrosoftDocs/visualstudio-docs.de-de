@@ -1,5 +1,7 @@
 ---
 title: Entwurfs Elemente der Quell Code Verwaltung VSPackage | Microsoft-Dokumentation
+description: Informieren Sie sich über die Struktur, die das VSPackage der Quell Code Verwaltung implementieren muss, sowie über die Schnittstellen und Dienste, die das VSPackage der Quell Code Verwaltung implementieren
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5e94829f781c058d9b0ea56cdec6c03c71ffe0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e586470208989dce070c92963fc215f1053559a4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705009"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877649"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Entwurfselemente von Quellcodeverwaltungs-VSPackages
 Die Themen in diesem Abschnitt beschreiben die Struktur, die das VSPackage der Quell Code Verwaltung für die umfassende Integration implementieren muss. Außerdem werden die Schnittstellen und Dienste aufgelistet, die vom VSPackage für die Quell Code Verwaltung implementiert werden können, sowie die Schnittstellen und Dienste, die das VSPackage der Quell Code Verwaltung von anderen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponenten zur Unterstützung des Quell Code Verwaltungsmodells verwenden kann.

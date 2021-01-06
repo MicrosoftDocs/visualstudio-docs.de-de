@@ -1,5 +1,7 @@
 ---
 title: Projekt Persistenz | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Persistenz beim Entwerfen Ihres Projekts, einschließlich der Verwendung von IPersistFileFormat, um sowohl Datei-als auch nicht dateibasierte Projekt Objekte beizubehalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706460"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877441"
 ---
 # <a name="project-persistence"></a>Projektpersistenz
 Persistenz ist ein wichtiger Entwurfs Aspekt für Ihr Projekt. In den meisten Projekten werden Projekt Elemente verwendet, die Dateien darstellen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt auch Projekte, deren Daten nicht Datei basiert sind. Die Dateien, die sich im Besitz des Projekts befinden, und die Projektdatei müssen persistent gespeichert werden. Die IDE weist das Projekt an, sich selbst oder ein Projekt Element zu speichern.

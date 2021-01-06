@@ -1,5 +1,7 @@
 ---
 title: Felder und Schnittstellen des Eigenschaften Fensters | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Auswahl, die bestimmt, welche Informationen im Eigenschaftenfenster basierend auf dem Fenster angezeigt werden, das in der Visual Studio-IDE den Fokus hat.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706166"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875764"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Felder und Schnittstellen des Eigenschaftenfensters
 Das Modell für die Auswahl, um zu bestimmen, welche Informationen im **Eigenschaften** Fenster angezeigt werden, basiert auf dem Fenster, das in der IDE den Fokus besitzt. Jedes Fenster und Objekt innerhalb des ausgewählten Fensters können das Auswahl Kontext Objekt in den globalen Auswahl Kontext übermittelt haben. Die Umgebung aktualisiert den globalen Auswahl Kontext mit Werten aus einem Fensterrahmen, wenn dieses Fenster den Fokus besitzt. Wenn sich der Fokus ändert, wird der Auswahl Kontext angezeigt.
 
 ## <a name="tracking-selection-in-the-ide"></a>Nachverfolgen der Auswahl in der IDE
- Der Fensterrahmen oder die Website, der im Besitz der IDE ist, verfügt über einen Dienst mit dem Namen <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . Die folgenden Schritte zeigen, wie eine Änderung in einer Auswahl, die durch den Benutzer bewirkt wird, dass der Fokus entweder auf ein anderes geöffnetes Fenster wechselt, oder das Auswählen eines anderen Projekt Elements in **Projektmappen-Explorer**implementiert wird, damit der im **Eigenschaften** Fenster angezeigte Inhalt geändert wird.
+ Der Fensterrahmen oder die Website, der im Besitz der IDE ist, verfügt über einen Dienst mit dem Namen <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . Die folgenden Schritte zeigen, wie eine Änderung in einer Auswahl, die durch den Benutzer bewirkt wird, dass der Fokus entweder auf ein anderes geöffnetes Fenster wechselt, oder das Auswählen eines anderen Projekt Elements in **Projektmappen-Explorer** implementiert wird, damit der im **Eigenschaften** Fenster angezeigte Inhalt geändert wird.
 
 1. Das-Objekt, das von Ihrem VSPackage erstellt wird, das im ausgewählten Fenster angezeigt wird <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> , um aufrufen zu können <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 

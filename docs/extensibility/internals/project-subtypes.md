@@ -1,5 +1,7 @@
 ---
 title: Projekt Untertypen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mit Projekt Untertypen das Verhalten der Projektsysteme von Visual Studio anpassen können. VSPackages implementieren Projekt Untertypen mithilfe von com-Aggregationen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528486db99ddf07b2a2d1e18dcee4fc46e8713b
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 05240ee72aef85e50d07c7a39df1c819f04933a2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426975"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876298"
 ---
 # <a name="project-subtypes"></a>Projektuntertypen
 Mit Projekt Untertypen können Sie das Verhalten der Projektsysteme von anpassen oder anpassen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Zu den Anpassungen gehören das Speichern zusätzlicher Daten in der Projektdatei, das Hinzufügen oder Filtern von Elementen im Dialogfeld **Neues Element hinzufügen** , das Steuern der Deserialisierung und Bereitstellung von Assemblys und das Erweitern des Dialog Felds **Eigenschaften Seiten** für Projekt VSPackages implementieren Projekt Untertypen mithilfe von com-Aggregationen.
