@@ -1,5 +1,7 @@
 ---
 title: Farbige Syntax in einem Legacy Sprachdienst Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die farbige Syntax Farbgebung in einem Legacy Sprachdienst unterstützen, indem Sie einen Parser oder einen Scanner bereitstellen, der die Typen von lexikalischen Elementen oder Token identifizieren kann.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704707"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877753"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Einfärben der Syntax in einem Legacysprachdienst
 Die farbliche Syntax Farbgebung ist eine Funktion, die bewirkt, dass unterschiedliche Elemente einer Programmiersprache in einer Quelldatei in unterschiedlichen Farben und Stilen angezeigt werden. Zur Unterstützung dieser Funktion müssen Sie einen Parser oder Scanner bereitstellen, der die Typen von lexikalischen Elementen oder Token in der Datei identifizieren kann. Viele Sprachen unterscheiden Schlüsselwörter, Trennzeichen (z. b. Klammern oder geschweifte Klammern) und Kommentare durch farbige Farbgebung.

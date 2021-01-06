@@ -1,5 +1,7 @@
 ---
 title: Migrieren eines Legacy sprach Dienstanbieter | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie einen Sprachdienst auf die neueste Version von Visual Studio aktualisieren, indem Sie das Projekt aktualisieren und eine "Source. Extension. vsixmanifest"-Datei hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707113"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877831"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrieren eines Legacysprachdiensts
 Sie können einen Legacy Sprachdienst zu einer späteren Version von Visual Studio migrieren, indem Sie das Projekt aktualisieren und dem Projekt eine Datei vom Typ "Source. Extension. vsixmanifest" hinzufügen. Der Sprachdienst selbst funktioniert weiterhin wie zuvor, da er vom Visual Studio-Editor angepasst wird.
@@ -53,13 +55,13 @@ Sie können einen Legacy Sprachdienst zu einer späteren Version von Visual Stud
 
 5. Das Fenster für das unidirektionale **Upgrade** wird angezeigt. Klicken Sie auf **OK**.
 
-6. Aktualisieren Sie die Projekteigenschaften. Öffnen Sie das **Projekteigenschaften** Fenster, indem Sie den Projekt Knoten im **Projektmappen-Explorer**auswählen, mit der rechten Maustaste klicken und **Eigenschaften**auswählen.
+6. Aktualisieren Sie die Projekteigenschaften. Öffnen Sie das **Projekteigenschaften** Fenster, indem Sie den Projekt Knoten im **Projektmappen-Explorer** auswählen, mit der rechten Maustaste klicken und **Eigenschaften** auswählen.
 
     - Ändern Sie auf der Registerkarte **Anwendung** das **Ziel Framework** in **4.6.1**.
 
-    - Geben Sie auf der Registerkarte **Debuggen** im Feld **externes Programm starten** ** \<Visual Studio installation path>\Common7\IDE\devenv.exe. ein.**
+    - Geben Sie auf der Registerkarte **Debuggen** im Feld **externes Programm starten** **\<Visual Studio installation path>\Common7\IDE\devenv.exe. ein.**
 
-         Geben Sie im Feld **Befehlszeilenargumente** den Text/**rootsuffix Exp**ein.
+         Geben Sie im Feld **Befehlszeilenargumente** den Text/**rootsuffix Exp** ein.
 
 7. Aktualisieren Sie die folgenden Verweise:
 
@@ -83,11 +85,11 @@ Sie können einen Legacy Sprachdienst zu einer späteren Version von Visual Stud
 
 10. Sie müssen eine "Source. Extension. vsixmanifest"-Datei hinzufügen.
 
-    - Kopieren Sie diese Datei aus einer vorhandenen Erweiterung in Ihr Projektverzeichnis. (Eine Möglichkeit, diese Datei zu erstellen, besteht darin, ein VSIX-Projekt zu erstellen (unter **Datei**, auf **neu**und dann auf **Projekt**. Klicken Sie unter Visual Basic oder c# auf **Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt**aus.)
+    - Kopieren Sie diese Datei aus einer vorhandenen Erweiterung in Ihr Projektverzeichnis. (Eine Möglichkeit, diese Datei zu erstellen, besteht darin, ein VSIX-Projekt zu erstellen (unter **Datei**, auf **neu** und dann auf **Projekt**. Klicken Sie unter Visual Basic oder c# auf **Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt** aus.)
 
     - Fügen Sie Ihrem Projekt die Datei hinzu.
 
-    - Legen Sie in den **Eigenschaften**der Datei den Wert für **Build Action** auf **None**fest.
+    - Legen Sie in den **Eigenschaften** der Datei den Wert für **Build Action** auf **None** fest.
 
     - Öffnen Sie die Datei mit dem **VSIX-Manifest-Editor**.
 
@@ -99,13 +101,13 @@ Sie können einen Legacy Sprachdienst zu einer späteren Version von Visual Stud
 
     - **Beschreibung**: ein Sprachdienst für reguläre Ausdrücke.
 
-    - Klicken Sie unter **Assets**auf **New**, wählen Sie den **Typ** **Microsoft. VisualStudio. VSPackage**aus, legen Sie die **Quelle** auf **ein Projekt in der aktuellen Projekt**Mappe fest, und legen Sie dann das **Projekt** auf **regexlangserv**fest.
+    - Klicken Sie unter **Assets** auf **New**, wählen Sie den **Typ** **Microsoft. VisualStudio. VSPackage** aus, legen Sie die **Quelle** auf **ein Projekt in der aktuellen Projekt** Mappe fest, und legen Sie dann das **Projekt** auf **regexlangserv** fest.
 
     - Speichern und schließen Sie die Datei.
 
-11. Erstellen Sie die Projektmappe. Die erstellten Dateien werden unter **%UserProfile%\appdata\local\microsoft\visualstudio\14.0exp\extensions\msit\ regexlangserv \\ **bereitgestellt.
+11. Erstellen Sie die Projektmappe. Die erstellten Dateien werden unter **%UserProfile%\appdata\local\microsoft\visualstudio\14.0exp\extensions\msit\ regexlangserv \\** bereitgestellt.
 
 12. Beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wurde geöffnet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweiterbarkeit von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-extensibility.md)

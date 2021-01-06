@@ -1,5 +1,6 @@
 ---
 title: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie Ihren eigenen Inhaltstyp mit einer Dateinamen Managed Extensibility Framework Erweiterung verknüpfen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034662"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877909"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung
 Sie können einen eigenen Inhaltstyp definieren und eine Dateinamenerweiterung mit dem Editor-Managed Extensibility Framework (MEF)-Erweiterungen verknüpfen. In einigen Fällen ist die Dateinamenerweiterung bereits durch einen Sprachdienst definiert. Wenn Sie es jedoch mit MEF verwenden möchten, müssen Sie es dennoch mit einem Inhaltstyp verknüpfen.
@@ -26,9 +27,9 @@ Sie können einen eigenen Inhaltstyp definieren und eine Dateinamenerweiterung m
 
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts
 
-1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `ContentTypeTest` .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit** und dann **VSIX-Projekt** aus.) Benennen Sie die Projekt Mappe `ContentTypeTest` .
 
-2. Wechseln Sie in der Datei **Source. Extension. vsixmanifest** zur Registerkarte **Objekte** , und legen Sie das Feld **Typ** auf **Microsoft. VisualStudio. MEFComponent**, das Feld **Quelle** auf **ein Projekt in der aktuellen**Projekt Mappe und das **Projekt** Feld auf den Namen des Projekts fest.
+2. Wechseln Sie in der Datei **Source. Extension. vsixmanifest** zur Registerkarte **Objekte** , und legen Sie das Feld **Typ** auf **Microsoft. VisualStudio. MEFComponent**, das Feld **Quelle** auf **ein Projekt in der aktuellen** Projekt Mappe und das **Projekt** Feld auf den Namen des Projekts fest.
 
 ## <a name="define-the-content-type"></a>Definieren des Inhaltstyps
 

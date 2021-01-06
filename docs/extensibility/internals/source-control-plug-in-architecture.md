@@ -1,5 +1,7 @@
 ---
 title: Quellcodeverwaltungs-Plug-in-Architektur | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie der Visual Studio-IDE Unterstützung der Quell Code Verwaltung hinzufügen, indem Sie ein Quellcodeverwaltungs-Plug-in implementieren und Anhängen
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f549ad2c4ee456860a08fbf20ccda813934a8582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705110"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878065"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architektur von Quellcodeverwaltungs-Plug-Ins
-Sie können der integrierten Entwicklungsumgebung (IDE) Unterstützung der Quell Code Verwaltung hinzufügen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] indem Sie ein Quellcodeverwaltungs-Plug-in implementieren und anfügen. Die IDE stellt über die klar definierte Quellcodeverwaltungs-Plug-in-API eine Verbindung mit dem Quellcodeverwaltungs-Plug-in her. Die IDE stellt die Versions Kontroll Features des Quell Code Verwaltungssystems bereit, indem eine Benutzeroberfläche (UI) bereitgestellt wird, die aus Symbolleisten und Menübefehlen besteht. Das Quellcodeverwaltungs-Plug-in implementiert die Funktionen der Quell Code Verwaltung.
+Sie können der integrierten Entwicklungsumgebung (IDE) Unterstützung der Quell Code Verwaltung hinzufügen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] indem Sie ein Quellcodeverwaltungs-Plug-in implementieren und anfügen. Die IDE stellt eine Verbindung mit dem Quellcodeverwaltungs-Plug-in über die klar definierte Quell Code Verwaltung Plug-In-API her. Die IDE stellt die Versions Kontroll Features des Quell Code Verwaltungssystems bereit, indem eine Benutzeroberfläche (UI) bereitgestellt wird, die aus Symbolleisten und Menübefehlen besteht. Das Quellcodeverwaltungs-Plug-in implementiert die Funktionen der Quell Code Verwaltung.
 
 ## <a name="source-control-plug-in-resources"></a>Quellcodeverwaltungs-Plug-in-Ressourcen
  Das Quellcodeverwaltungs-Plug-in stellt Ressourcen bereit, die Sie beim Erstellen und verbinden ihrer versionierungsanwendung mit der IDE unterstützen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Das Quellcodeverwaltungs-Plug-in enthält die API-Spezifikation, die von einem Quellcodeverwaltungs-Plug-in implementiert werden muss, damit es in die IDE integriert werden kann [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Außerdem enthält Sie ein Codebeispiel (geschrieben in C++), das ein Skelett-Quellcodeverwaltungs-Plug-in zum Veranschaulichen der Implementierung wichtiger Funktionen implementiert, die mit der Quellcodeverwaltungs-Plug-in-API kompatibel sind.
@@ -36,7 +38,7 @@ Sie können der integrierten Entwicklungsumgebung (IDE) Unterstützung der Quell
 
  Ein Quellcodeverwaltungs-Plug-in kann Änderungen an der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell und folglich weder an das Quell Code Verwaltungs Adapter Paket noch an die Benutzeroberfläche der Quell Code Verwaltung durchführen, die von der IDE bereitgestellt wird. Es muss die Flexibilität, die durch die Implementierung der verschiedenen API-Funktionen für Quellcodeverwaltungs-Plug-ins geboten wird, optimal nutzen, die zu einer integrierten Obergrenze für den Endbenutzer beitragen. Der Referenz Abschnitt der Plug-in-API-Dokumentation der Quell Code Verwaltung enthält Informationen für einige erweiterte Funktionen für die Quellcodeverwaltungs-Plug-ins. Um diese Features auszunutzen, muss das Quellcodeverwaltungs-Plug-in während der Initialisierung seine erweiterten Funktionen für die IDE deklarieren und bestimmte erweiterte Funktionen für jede Funktion implementieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Quellcodeverwaltungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)
 - [Glossar](../../extensibility/source-control-plug-in-glossary.md)
 - [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)

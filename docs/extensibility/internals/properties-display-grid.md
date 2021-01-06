@@ -1,5 +1,7 @@
 ---
 title: Eigenschaften Anzeige Raster | Microsoft-Dokumentation
+description: Erfahren Sie, wo sich die Felder Eigenschaftsnamen und Eigenschaftswerte im Raster des Eigenschaftenfenster befinden und wie Sie mit dem Raster beim Erweitern von Eigenschaften arbeiten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706188"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878026"
 ---
 # <a name="properties-display-grid"></a>Eigenschaften Anzeige Raster
 
@@ -29,7 +31,7 @@ Die Liste mit zwei Spalten zeigt Konfigurations unabhängige Eigenschaften, die 
 
 2. Legen Sie den- `pfHide` Parameter in <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> auf fest `TRUE` .
 
-Um Informationen per Push an das **Eigenschaften** Fenster zu Übertragung, verwendet die IDE <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wird von VSPackages für jedes Fenster aufgerufen, das auswählbare Objekte mit zugehörigen Eigenschaften enthält, die im **Eigenschaften** Fenster angezeigt werden sollen. **Projektmappen-Explorer**Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> aufrufen `GetProperty` mithilfe von [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) in der Projekt Hierarchie, um die durchsuchbaren Objekte in der Hierarchie abzurufen.
+Um Informationen per Push an das **Eigenschaften** Fenster zu Übertragung, verwendet die IDE <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wird von VSPackages für jedes Fenster aufgerufen, das auswählbare Objekte mit zugehörigen Eigenschaften enthält, die im **Eigenschaften** Fenster angezeigt werden sollen. **Projektmappen-Explorer** Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> aufrufen `GetProperty` mithilfe von [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) in der Projekt Hierarchie, um die durchsuchbaren Objekte in der Hierarchie abzurufen.
 
 Wenn das VSPackage keine __VSHPROPID unterstützt [. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>)versucht die IDE, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> mithilfe des Werts für __VSHPROPID zu verwenden [. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) , den das Hierarchie Element oder die Elemente bereitstellen.
 

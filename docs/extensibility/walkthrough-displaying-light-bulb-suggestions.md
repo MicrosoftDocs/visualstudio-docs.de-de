@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von Glühbirnen Vorschlägen | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie eine Glühbirne im Visual Studio-Editor erstellen, die auf dem aktuellen Wort angezeigt wird und zwei Empfohlene Aktionen enthält, indem Sie diese exemplarische Vorgehensweise verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
@@ -8,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508950"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877961"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Exemplarische Vorgehensweise: Anzeigen von Glühbirnen Vorschlägen
 Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine Reihe von Aktionen anzuzeigen, z. b. Fehlerbehebungen für Probleme, die von den integrierten Code Analysemodulen oder der Code Umgestaltung identifiziert werden.
 
- In den Visual c#-und Visual Basic-Editoren können Sie auch die .NET Compiler Platform ("Roslyn") verwenden, um eigene Code Analysen mit Aktionen zu schreiben und zu verpacken, die automatisch Glühbirnen anzeigen. Weitere Informationen finden Sie unter:
+ In den Visual c#-und Visual Basic-Editoren können Sie auch die .NET Compiler Platform ("Roslyn") verwenden, um eigene Code Analysen mit Aktionen zu schreiben und zu verpacken, die automatisch Glühbirnen anzeigen. Weitere Informationen finden Sie unter
 
 - [Gewusst wie: Schreiben einer c#-Diagnose und-Code Korrektur](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
@@ -41,7 +43,7 @@ Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine 
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Erstellen eines Managed Extensibility Framework-Projekts (MEF)
 
-1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `LightBulbTest` .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit** und dann **VSIX-Projekt** aus.) Benennen Sie die Projekt Mappe `LightBulbTest` .
 
 2. Fügen Sie dem Projekt eine **Editor-Klassifizierungs** Element Vorlage hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -222,8 +224,8 @@ Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine 
 2. Erstellen Sie zwei Klassen, die erste mit dem Namen `UpperCaseSuggestedAction` und die zweite mit dem Namen `LowerCaseSuggestedAction`. Beide Klassen implementieren <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.
 
     ```csharp
-    internal class UpperCaseSuggestedAction : ISuggestedAction
-    internal class LowerCaseSuggestedAction : ISuggestedAction
+    internal class UpperCaseSuggestedAction : ISuggestedAction
+    internal class LowerCaseSuggestedAction : ISuggestedAction
     ```
 
      Beide Klassen sind bis auf eine Ausnahme identisch: Die eine ruft <xref:System.String.ToUpper%2A> und die andere <xref:System.String.ToLower%2A> auf. In den folgenden Schritten wird nur die Klasse für die Umwandlung in Großbuchstaben behandelt; Sie müssen aber beide Klassen implementieren. Verwenden Sie diese Schritte als Muster für die Implementierung der Aktion zur Umwandlung in Kleinbuchstaben.
@@ -243,8 +245,8 @@ Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine 
 
     ```csharp
     private ITrackingSpan m_span;
-    private string m_upper;
-    private string m_display;
+    private string m_upper;
+    private string m_display;
     private ITextSnapshot m_snapshot;
     ```
 
@@ -288,7 +290,7 @@ Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine 
     {
         get { return false; }
     }
-    public string DisplayText
+    public string DisplayText
     {
         get { return m_display; }
     }
@@ -319,14 +321,14 @@ Glühbirnen sind Symbole im Visual Studio-Editor, die erweitert werden, um eine 
 9. Implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A>-Methode, indem Sie den Text im Bereich durch entsprechende Großbuchstaben ersetzen.
 
     ```csharp
-    public void Invoke(CancellationToken cancellationToken)
+    public void Invoke(CancellationToken cancellationToken)
     {
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);
     }
     ```
 
     > [!WARNING]
-    > Die Methode zum **aufrufen** der Glühbirnen Aktion erwartet nicht, dass die Benutzeroberfläche angezeigt wird. Wenn Ihre Aktion eine neue Benutzeroberfläche (z. b. ein Vorschau-oder Auswahl Dialogfeld) aufruft, zeigen Sie die Benutzeroberfläche nicht direkt in der **Aufruf** Methode an, sondern planen Sie die Anzeige der Benutzeroberfläche **nach der Rückgabe**des Aufrufs.
+    > Die Methode zum **aufrufen** der Glühbirnen Aktion erwartet nicht, dass die Benutzeroberfläche angezeigt wird. Wenn Ihre Aktion eine neue Benutzeroberfläche (z. b. ein Vorschau-oder Auswahl Dialogfeld) aufruft, zeigen Sie die Benutzeroberfläche nicht direkt in der **Aufruf** Methode an, sondern planen Sie die Anzeige der Benutzeroberfläche **nach der Rückgabe** des Aufrufs.
 
 10. Fügen Sie zum Durchführen der-Implementierung die `Dispose()` Methoden und hinzu `TryGetTelemetryId()` .
 

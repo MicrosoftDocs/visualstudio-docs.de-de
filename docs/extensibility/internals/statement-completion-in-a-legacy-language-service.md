@@ -1,5 +1,7 @@
 ---
 title: Anweisungs Vervollständigung in einem Legacy Sprachdienst | Microsoft-Dokumentation
+description: Erfahren Sie, wie die Anweisungs Vervollständigung funktioniert und wie Sie in einem VSPackage in Ihrem Legacy Sprachdienst implementiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbeb360cf5bc0f74d6b2d9b93086382dd35da988
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704942"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877766"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Anweisungsvervollständigung in einem Legacysprachdienst
 Die Anweisungs Vervollständigung ist der Prozess, mit dem der Sprachdienst Benutzern hilft, ein sprach Schlüsselwort oder Element zu beenden, das Sie im Kern-Editor eingegeben haben. In diesem Thema wird erläutert, wie die Anweisungs Vervollständigung funktioniert und wie Sie in Ihrem Sprachdienst implementiert wird.

@@ -1,5 +1,7 @@
 ---
 title: Architektur von Projekttypen | Microsoft-Dokumentation
+description: Dieser Artikel enthält Links zu Artikeln, die ausführliche Informationen zur Architektur von Projekttypen in Visual Studio enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e53929b1ec2ed9c73191bf16f1cedc84a53b58f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecde348ce52bdd354df61855d9907acf85900be2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706319"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877779"
 ---
 # <a name="project-types-architecture"></a>Architektur von Projekttypen
 Dieser Abschnitt enthält ausführliche Informationen zur Architektur von Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Gliederung | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Gliederungs Bereiche im Kontext eines sprach diensdienstanens oder ihrer eigenen Dateinamenerweiterung und ihres Inhaltstyps definiert und angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508924"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877896"
 ---
 # <a name="walkthrough-outlining"></a>Exemplarische Vorgehensweise: Gliedern
 Richten Sie sprachbasierte Funktionen wie Gliederung ein, indem Sie die Arten von Textbereichen definieren, die Sie erweitern oder reduzieren möchten. Sie können Bereiche im Kontext eines sprach diensdienstanbieter definieren oder eigene Dateinamen Erweiterungen und Inhaltstyp definieren und die Regions Definition nur auf diesen Typ anwenden oder die Regions Definitionen auf einen vorhandenen Inhaltstyp (z. b. "Text") anwenden. Diese exemplarische Vorgehensweise zeigt, wie Gliederungs Bereiche definiert und angezeigt werden.
