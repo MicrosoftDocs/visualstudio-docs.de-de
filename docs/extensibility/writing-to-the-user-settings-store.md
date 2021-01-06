@@ -1,5 +1,7 @@
 ---
 title: Schreiben in den Benutzer Einstellungs Speicher | Microsoft-Dokumentation
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie Visual Studio als externes Tool Notepad hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2019
 ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec4d9cdda975d0f80e9d8523ec18a19c24c9418a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55e17693bee1ced0354b21ee5cc736961a994c6f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906201"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876921"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Schreiben in den Speicher für Benutzereinstellungen
 Benutzereinstellungen sind beschreibbare Einstellungen wie diejenigen im Dialogfeld Extras **/Optionen** , Eigenschaften Fenster und bestimmte andere Dialogfelder. In Visual Studio-Erweiterungen können diese zum Speichern kleiner Datenmengen verwendet werden. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie in Visual Studio Notepad als externes Tool hinzufügen, indem Sie aus dem Benutzer Einstellungs Speicher lesen und darin schreiben.

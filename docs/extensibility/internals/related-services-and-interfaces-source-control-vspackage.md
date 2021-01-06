@@ -1,6 +1,7 @@
 ---
 title: Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
 titleSuffix: ''
+description: Erfahren Sie mehr über die Schnittstellen für die Quell Code Verwaltung VSPackage im Visual Studio SDK. Das Paket implementiert einige Schnittstellen und verwendet andere für die Quell Code Verwaltung.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af08c8e0ea15751f5d8e6c0a1a01549fdb9227c3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: af5c971b804e1c288bf710f6627c0e769e790ee1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034792"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876342"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
 
@@ -54,7 +55,7 @@ In diesem Abschnitt werden alle in der Quell Code Verwaltung enthaltenen VSPacka
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip> | Diese Schnittstelle wird verwendet, um Quick Infos für die Dateien der Quell Code Verwaltung in den Projekten abzurufen. | Quellcodeverwaltungs-VSPackage | Optional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl> | Diese Schnittstelle bietet Unterstützung für Namespace Erweiterungen. | Quellcodeverwaltungs-VSPackage | Optional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution> | Das VSPackage verwendet diese Schnittstelle, um eine Namespace Erweiterung in die Dialogfelder " **neu**", " **Öffnen**" oder " **Speichern** " zu integrieren. Folglich können Projekte bei der Erstellung automatisch zur Quell Code Verwaltung hinzugefügt oder der Quell Code Verwaltung hinzugefügt werden, wenn ein Speichervorgang wirksam ist. | Quellcodeverwaltungs-VSPackage | Optional |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | Das VSPackage verwendet diese Schnittstelle, um zusätzliche Glyphen als Symbole der Quell Code Verwaltung für Knoten in **Projektmappen-Explorer**zu definieren. | Quellcodeverwaltungs-VSPackage | Optional |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | Das VSPackage verwendet diese Schnittstelle, um zusätzliche Glyphen als Symbole der Quell Code Verwaltung für Knoten in **Projektmappen-Explorer** zu definieren. | Quellcodeverwaltungs-VSPackage | Optional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | Im Dialogfeld **Hinzufügen** für Webprojekte wird diese Schnittstelle verwendet. Es bietet Methoden zum Durchsuchen eines Quell Code Verwaltungs Speicher Orts und zum Öffnen eines Webprojekts, das zuvor im Quellcodeverwaltungs-Repository an diesem Speicherort hinzugefügt wurde. | Quellcodeverwaltungs-VSPackage | Empfohlen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Diese Schnittstelle bietet Unterstützung für das asynchrone Laden von Projekten aus der Quell Code Verwaltung. | Quellcodeverwaltungs-VSPackage | Optional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Diese Schnittstelle ermöglicht es Projekten, den Fortschritt des asynchronen Ladens zu beobachten, das von initiiert wird <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Project | Optional |

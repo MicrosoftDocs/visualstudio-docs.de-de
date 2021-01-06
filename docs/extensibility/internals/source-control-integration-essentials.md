@@ -1,5 +1,7 @@
 ---
 title: Integration der Quell Code Verwaltung | Microsoft-Dokumentation
+description: 'Erfahren Sie mehr über die beiden Typen der Integration der Quell Code Verwaltung, die Visual Studio unterstützt: ein Quellcodeverwaltungs-Plug-in und eine auf VSPackage basierende Quell Code Verwaltungs Lösung.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705238"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876037"
 ---
 # <a name="source-control-integration-essentials"></a>Grundlagen der Integration der Quellcodeverwaltung
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt zwei Arten der Integration der Quell Code Verwaltung: ein Quellcodeverwaltungs-Plug-in, das grundlegende Funktionen bereitstellt und mit der Quellcodeverwaltungs-Plug-in-API (ehemals MSSCCI-API) und einer VSPackage-basierten Lösung für die Quell Code Verwaltung erstellt wird, die robustere Funktionen bietet.
@@ -50,7 +52,7 @@ ms.locfileid: "80705238"
 
    Weitere Informationen finden Sie unter [Erstellen eines Quellcodeverwaltungs-VSPackages](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht](../../extensibility/internals/source-control-integration-overview.md)
 - [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

@@ -1,5 +1,7 @@
 ---
 title: Projekt "sonstige Dateien" | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die beiden Typen von Editoren, die zum Öffnen von Dateien in einem Visual Studio-Projekt verwendet werden können, und die Rolle des Projekts, um zu bestimmen, welcher Editor verwendet werden soll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707100"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876778"
 ---
 # <a name="miscellaneous-files-project"></a>Verschiedene Projektdateien
 Wenn ein Benutzer Projekt Elemente öffnet, weist die IDE dem Projekt "sonstige Dateien" alle Elemente zu, die keine Mitglieder einer Projekt Mappe sind.
 
  Projekte spielen eine bedeutende Rolle beim bestimmen, welcher Editor verwendet wird, wenn ein Benutzer ein Projekt Element öffnet. Ein Projekt kann so entworfen werden, dass bestimmte Dateien mit einem projektspezifischen Editor oder einem Standard Editor geöffnet werden.
 
- Für einen projektspezifischen Editor ist es in der Regel erforderlich, dass der Benutzer über besondere Kenntnisse verfügt oder besondere Schnittstellen aus dem Projekt verwendet. Weitere Informationen finden Sie unter Gewusst [wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md).
+ Für einen projektspezifischen Editor ist es in der Regel erforderlich, dass der Benutzer über besondere Kenntnisse verfügt oder besondere Schnittstellen aus dem Projekt verwendet. Weitere Informationen finden Sie unter Gewusst [wie: Öffnen von Project-Specific-Editoren](../../extensibility/how-to-open-project-specific-editors.md).
 
  Mit einem Standard-Editor kann eine beliebige Datei einer bestimmten Erweiterung in jedem Projekt geöffnet werden. Der Benutzer kann einige Standard-Editoren, z. b. den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Text-Editor, für Projekte anpassen, aber weiterhin sein öffentliches Zeichen beibehalten. Standard-Editoren werden mithilfe der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode erstellt.
 
@@ -35,7 +37,7 @@ Wenn ein Benutzer Projekt Elemente öffnet, weist die IDE dem Projekt "sonstige 
 
  Das Projekt "sonstige Dateien" erfordert nicht, dass der Benutzer es explizit mit dem Dialogfeld " **Neues Projekt** " erstellt. Außerdem verwaltet das Projekt "sonstige Dateien" eine Liste von Projekt Membern nicht dauerhaft. Es wird ein optionales Feature verwendet, um eine Liste der zuletzt verwendeten Dateien für jeden Benutzer aufzuzeichnen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

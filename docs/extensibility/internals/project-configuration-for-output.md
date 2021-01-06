@@ -1,5 +1,7 @@
 ---
 title: Projekt Konfiguration für Ausgabe | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Buildprozesse, die von jeder Konfiguration unterstützt werden können, sowie die Schnittstellen und Methoden, mit denen Ausgabe Elemente verfügbar gemacht werden können
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706672"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876323"
 ---
 # <a name="project-configuration-for-output"></a>Projektkonfiguration für die Ausgabe
 Jede Konfiguration kann einen Satz von Buildprozessen unterstützen, die Ausgabe Elemente wie z. b. ausführbare Dateien oder Ressourcen Dateien erstellen. Diese Ausgabe Elemente sind für den Benutzer Privat und können in Gruppen platziert werden, die Verwandte Ausgabetypen wie ausführbare Dateien (exe-, dll-, lib-) und Quelldateien (IDL-und h-Dateien) verknüpfen.

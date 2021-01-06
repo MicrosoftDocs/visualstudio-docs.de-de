@@ -1,5 +1,6 @@
 ---
 title: Unterstützung der Navigationsleiste in einem Legacy Sprachdienst
+description: Erfahren Sie, wie Sie die Navigationsleiste in einem Legacy Sprachdienst unterstützen. Die Navigationsleiste in der Editor-Ansicht zeigt die Typen und Member in der Datei an.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036560"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876544"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Unterstützen der Navigationsleiste in einem Legacysprachdienst
 In der Navigationsleiste am oberen Rand der Editor-Ansicht werden die Typen und Member in der Datei angezeigt. Typen werden in der linken Dropdown-Dropdown-Anzeige angezeigt, und die Elemente werden in der rechten Dropdown-Dropdown Anzeige angezeigt. Wenn der Benutzer einen Typ auswählt, wird die Einfügemarke in die erste Zeile des Typs eingefügt. Wenn der Benutzer einen Member auswählt, wird die Einfügemarke in die Definition des Members eingefügt. Die Dropdown Felder werden aktualisiert, um die aktuelle Position der Einfügemarke widerzuspiegeln.

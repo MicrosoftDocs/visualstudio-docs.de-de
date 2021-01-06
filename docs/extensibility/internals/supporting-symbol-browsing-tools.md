@@ -1,5 +1,7 @@
 ---
-title: Unterstützende Tools zum Durchsuchen von Symbolen | Microsoft-Dokumentation
+title: Unterstützen von Symbol-Browsing Tools | Microsoft-Dokumentation
+description: Visual Studio bietet Funktionen zum Durchsuchen von Symbolen in Visual Studio. Erfahren Sie, wie Sie diese Funktionen mit Bibliotheken für die Symbole in ihren Komponenten erweitern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +20,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704766"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876440"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Unterstützen von Tools zum Durchsuchen von Symbolen
 Die Tools " **Objektkatalog**", " **Klassenansicht**", " **Aufrufbrowser** " und " **Find Symbol Results** " bieten Funktionen für die Symbol Suche Diese Tools zeigen hierarchische Struktur Ansichten von Symbolen an und zeigen die Beziehungen zwischen den Symbolen in der Struktur an. Die Symbole können Namespaces, Objekte, Klassen, Klassenmember und andere Sprachelemente darstellen, die in verschiedenen Komponenten enthalten sind. Zu den Komponenten gehören Visual Studio-Projekte, externe .NET Framework Komponenten und Typbibliotheken (. tlb). Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).
 
-## <a name="symbol-browsing-libraries"></a>Symbole zum Durchsuchen von Bibliotheken
+## <a name="symbol-browsing-libraries"></a>Symbol-Browsing-Bibliotheken
  Als sprach Implementierung können Sie die Funktionen zum Durchsuchen von Symbolen durch Visual Studio erweitern, indem Sie Bibliotheken erstellen, mit denen die Symbole in ihren Komponenten nachverfolgt werden, und die Listen der Symbole für den Visual Studio-Objekt-Manager über eine Reihe von Schnittstellen bereitstellen. Eine Bibliothek wird von der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> Schnittstelle beschrieben. Der Objekt-Manager von Visual Studio antwortet auf Anforderungen für neue Daten aus den Tools zum Durchsuchen von Symbolen, indem er die Daten aus den Bibliotheken erhält und organisiert. Anschließend werden die Tools mit den angeforderten Daten aufgefüllt oder aktualisiert. Um einen Verweis auf den Visual Studio-Objekt-Manager zu erhalten, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> übergeben <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> Sie die Dienst-ID an die- `GetService` Methode.
 
  Jede Bibliothek muss beim Visual Studio-Objekt-Manager registriert werden, der die Informationen zu allen Bibliotheken sammelt. Um eine Bibliothek zu registrieren, müssen Sie die-Methode aufzurufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> . Abhängig vom Tool, von dem die Anforderung initiiert wird, sucht der Visual Studio-Objekt-Manager die entsprechende Bibliothek und fordert Daten an. Die Daten werden zwischen den Bibliotheken und dem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager in Listen von Symbolen übertragen, die von der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle beschrieben werden.

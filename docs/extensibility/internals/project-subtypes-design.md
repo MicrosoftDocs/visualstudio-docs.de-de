@@ -1,5 +1,7 @@
 ---
 title: Entwerfen von Projekt Untertypen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Projekt Untertypen VSPackages das Erweitern von Projekten basierend auf dem Microsoft-Build-Engine (MSBuild) ermöglichen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b939d197bfd7e58b555ca7698f08643e3d38ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9342d8f9f045eec2036c65a3ed2d823dfb4a7e42
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706445"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877428"
 ---
 # <a name="project-subtypes-design"></a>Entwurf von Projektuntertypen
 
@@ -92,7 +94,7 @@ Das Basisprojekt delegiert Aufrufe an unterstützende Schnittstellen, die von ei
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>|Ermöglicht dem Projekt Untertyp, beliebige strukturierte XML-Daten in der Projektdatei (. vbproj oder. csproj) beizubehalten. Diese Daten sind für MSBuild nicht sichtbar.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>|Ermöglicht dem Projekt Untertyp Folgendes:<br /><br /> -Hinzufügen neuer MSBuild-Eigenschaften, die persistent gespeichert werden sollen.<br />-Entfernen Sie unnötige Eigenschaften aus MSBuild.<br />-Abfrage für einen aktuellen Wert einer MSBuild-Eigenschaft.<br />: Ändert den aktuellen Wert einer MSBuild-Eigenschaft.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>

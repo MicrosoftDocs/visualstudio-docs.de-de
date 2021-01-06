@@ -1,5 +1,7 @@
 ---
 title: Service Essentials | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Dienste, die Schnittstellen für ein anderes VSPackage sind. Dienste in einem VSPackage können integrierte oder andere Dienste überschreiben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705500"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875803"
 ---
 # <a name="service-essentials"></a>Dienstgrundlagen
 Ein Dienst ist ein Vertrag zwischen zwei VSPackages. Ein VSPackage stellt einen bestimmten Satz von Schnittstellen für ein anderes VSPackage bereit, das verwendet werden soll. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ist selbst eine Sammlung von VSPackages, die Dienste für andere VSPackages bereitstellt.

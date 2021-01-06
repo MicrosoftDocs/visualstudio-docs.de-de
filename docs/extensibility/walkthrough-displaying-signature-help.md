@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen der Signatur Hilfe | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die Signatur Hilfe für Text Inhaltstyp anzeigen. Signatur Hilfe zeigt die Signatur einer Methode in einer QuickInfo an.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,28 +12,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904812"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876245"
 ---
 # <a name="walkthrough-display-signature-help"></a>Exemplarische Vorgehensweise: Anzeigen der Signatur Hilfe
-Mit der Signatur Hilfe (auch als *Parameter Info*bezeichnet) wird die Signatur einer Methode in einer QuickInfo angezeigt, wenn ein Benutzer das Parameter Listen-Startzeichen (in der Regel eine öffnende Klammer) eingibt. Wenn ein Parameter und Parameter Trennzeichen (in der Regel ein Komma) eingegeben werden, wird die QuickInfo aktualisiert, um den nächsten Parameter fett anzuzeigen. Auf folgende Weise können Sie die Signatur Hilfe definieren: im Kontext eines sprach dienstanzdienstanzdienstanbieter definieren Sie eine eigene Dateinamenerweiterung und einen Inhaltstyp und zeigen die Signatur Hilfe für diesen Typ an, oder Sie zeigen die Signatur Hilfe für einen vorhandenen Inhaltstyp an (z. b. "Text"). In dieser exemplarischen Vorgehensweise wird gezeigt, wie die Signatur Hilfe für den Inhaltstyp "Text" angezeigt wird.
+Mit der Signatur Hilfe (auch als *Parameter Info* bezeichnet) wird die Signatur einer Methode in einer QuickInfo angezeigt, wenn ein Benutzer das Parameter Listen-Startzeichen (in der Regel eine öffnende Klammer) eingibt. Wenn ein Parameter und Parameter Trennzeichen (in der Regel ein Komma) eingegeben werden, wird die QuickInfo aktualisiert, um den nächsten Parameter fett anzuzeigen. Auf folgende Weise können Sie die Signatur Hilfe definieren: im Kontext eines sprach dienstanzdienstanzdienstanbieter definieren Sie eine eigene Dateinamenerweiterung und einen Inhaltstyp und zeigen die Signatur Hilfe für diesen Typ an, oder Sie zeigen die Signatur Hilfe für einen vorhandenen Inhaltstyp an (z. b. "Text"). In dieser exemplarischen Vorgehensweise wird gezeigt, wie die Signatur Hilfe für den Inhaltstyp "Text" angezeigt wird.
 
  Die Signatur Hilfe wird in der Regel durch Eingabe eines bestimmten Zeichens ausgelöst, z. b. "(" (öffnende Klammer), und durch Eingabe eines anderen Zeichens, z. b. ")" (schließende Klammer). IntelliSense-Funktionen, die durch Eingabe eines Zeichens ausgelöst werden, können mithilfe eines Befehls Handlers für die Tastatureingaben (die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle) und eines handleranbieters implementiert werden, der die- <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> Schnittstelle implementiert. Um die Signatur Hilfe Quelle zu erstellen, die die Liste der Signaturen ist, die an der Signatur Hilfe beteiligt sind, implementieren Sie die <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> -Schnittstelle und einen Quell Anbieter, der die- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> Schnittstelle ausführt. Die Anbieter sind Managed Extensibility Framework Komponenten Komponenten (MEF), die für den Export der Quell-und Controller Klassen und das Importieren von Diensten und Brokern zuständig sind, z. b. das-Element, mit dem <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> Sie im Text Puffer navigieren können, und das-Element <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> , das die Signatur Hilfe Sitzung auslöst.
 
  In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie die Signatur Hilfe für einen hart codierten Satz von bezeichern einrichten. Bei vollständigen Implementierungen ist die Sprache für die Bereitstellung dieses Inhalts verantwortlich.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="creating-a-mef-project"></a>Erstellen eines MEF-Projekts
 
 #### <a name="to-create-a-mef-project"></a>So erstellen Sie ein MEF-Projekt
 
-1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `SignatureHelpTest` .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit** und dann **VSIX-Projekt** aus.) Benennen Sie die Projekt Mappe `SignatureHelpTest` .
 
 2. Fügen Sie dem Projekt eine Editor-Klassifizierungs Element Vorlage hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 

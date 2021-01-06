@@ -1,5 +1,7 @@
 ---
 title: Arbeitsbereiche in Visual Studio | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio einen Arbeitsbereich verwendet, um eine Sammlung von Dateien in einem geöffneten Ordner darzustellen, einschließlich der Arbeitsbereichs Anbieter und-Dienste.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952762"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876947"
 ---
 # <a name="workspaces"></a>Arbeitsbereiche
 
@@ -59,7 +61,7 @@ Die Leistungsfähigkeit der Arbeitsbereichs Einstellungen liegt bei "Bereichen",
 1. Alle weiteren übergeordneten Verzeichnisse bis einschließlich des Arbeitsbereichs Stamms.
 1. "Globale Einstellungen", die sich in einem Benutzerverzeichnis befinden.
 
-Das Ergebnis ist eine Instanz von <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> . Dieses Objekt enthält die Einstellungen für einen bestimmten Typ und kann zum Festlegen von Schlüsselnamen, die als gespeichert werden, abgefragt werden `string` . Die <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> Methoden und <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> Erweiterungs Methoden erwarten, dass der Aufrufer den Typ des angeforderten Einstellungs Werts kennt. Da die meisten Einstellungsdateien als _JSON_ -Dateien beibehalten werden, verwenden viele Aufrufe `string` , `bool` , `int` und Arrays dieser Typen. Objekttypen werden ebenfalls unterstützt. In diesen Fällen können Sie `IWorkspaceSettings` sich selbst als Typargument verwenden. Beispiel:
+Das Ergebnis ist eine Instanz von <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> . Dieses Objekt enthält die Einstellungen für einen bestimmten Typ und kann zum Festlegen von Schlüsselnamen, die als gespeichert werden, abgefragt werden `string` . Die <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> Methoden und <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> Erweiterungs Methoden erwarten, dass der Aufrufer den Typ des angeforderten Einstellungs Werts kennt. Da die meisten Einstellungsdateien als _JSON_ -Dateien beibehalten werden, verwenden viele Aufrufe `string` , `bool` , `int` und Arrays dieser Typen. Objekttypen werden ebenfalls unterstützt. In diesen Fällen können Sie `IWorkspaceSettings` sich selbst als Typargument verwenden. Zum Beispiel:
 
 ```json
 {
@@ -76,7 +78,7 @@ Das Ergebnis ist eine Instanz von <xref:Microsoft.VisualStudio.Workspace.Setting
 }
 ```
 
-Angenommen, diese Einstellungen befinden sich imVSWorkspaceSettings.jseines Benutzers _ auf, auf_die Daten wie folgt zugegriffen werden kann:
+Angenommen, diese Einstellungen befinden sich imVSWorkspaceSettings.jseines Benutzers _auf, auf_ die Daten wie folgt zugegriffen werden kann:
 
 ```csharp
 using System.Collections.Generic;
@@ -179,13 +181,13 @@ Die Erweiterbarkeit von Arbeitsbereichen ist hochgradig MEF-basiert, und Komposi
 
 ::: moniker range="vs-2017"
 
-Fehlerdetails finden Sie unter " _%LocalAppData%\microsoft\visualstudio\15.0_id \componentmodelcache\microsoft.VisualStudio.default.err_". Beheben Sie alle Fehler für Typen, die von ihrer Erweiterung implementiert werden.
+Fehlerdetails finden Sie unter " _%LocalAppData%\microsoft\visualstudio\ 15.0_id \componentmodelcache\microsoft.VisualStudio.default.err_". Beheben Sie alle Fehler für Typen, die von ihrer Erweiterung implementiert werden.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Fehlerdetails finden Sie unter " _%LocalAppData%\microsoft\visualstudio\16.0_id \componentmodelcache\microsoft.VisualStudio.default.err_". Beheben Sie alle Fehler für Typen, die von ihrer Erweiterung implementiert werden.
+Fehlerdetails finden Sie unter " _%LocalAppData%\microsoft\visualstudio\ 16.0_id \componentmodelcache\microsoft.VisualStudio.default.err_". Beheben Sie alle Fehler für Typen, die von ihrer Erweiterung implementiert werden.
 
 ::: moniker-end
 

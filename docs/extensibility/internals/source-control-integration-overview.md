@@ -1,5 +1,7 @@
 ---
 title: 'Integration der Quell Code Verwaltung: Übersicht | Microsoft-Dokumentation'
+description: 'Erfahren Sie mehr über die Unterschiede zwischen den beiden Möglichkeiten zum Integrieren der Quell Code Verwaltung in Visual Studio: ein Quellcodeverwaltungs-Plug-in und ein VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705120"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876011"
 ---
 # <a name="source-control-integration-overview"></a>Übersicht über die Integration der Quellcodeverwaltung
 In diesem Abschnitt werden die beiden Möglichkeiten zur Integration in die Visual Studio-Quell Code Verwaltung verglichen. ein Quellcodeverwaltungs-Plug-in und ein VSPackage, das eine Quell Code Verwaltungs Lösung bereitstellt und die neuen Funktionen der Quell Code Verwaltung hervorhebt. Visual Studio ermöglicht einen manuellen Wechsel zwischen VSPackages der Quell Code Verwaltung und Quellcodeverwaltungs-Plug-ins sowie automatischen lösungsbasierten wechseln.
@@ -73,7 +75,7 @@ In diesem Abschnitt werden die beiden Möglichkeiten zur Integration in die Visu
 
 - Das VSPackage ist nicht auf ein bestimmtes Quell Code Verwaltungsmodell beschränkt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Quellcodeverwaltung](../../extensibility/internals/source-control.md)
 - [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Erstellen eines Quellcodeverwaltungs-VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)

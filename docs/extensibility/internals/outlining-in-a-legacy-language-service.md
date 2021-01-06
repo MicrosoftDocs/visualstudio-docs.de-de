@@ -1,5 +1,7 @@
 ---
 title: Gliederung in einem Legacy Sprachdienst | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Gliederung durch die Implementierung von ausgeblendeten Regionen in einem Legacy Sprachdienst unterstützen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706809"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876830"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Gliederung in einem Legacysprachdienst
 Durch Gliederung kann ein komplexes Programm in eine Übersicht oder eine Gliederung reduziert werden. In c# können z. b. alle Methoden in eine einzelne Zeile reduziert werden, die nur die Methoden Signatur anzeigt. Außerdem können Strukturen und Klassen so reduziert werden, dass nur die Namen der Strukturen und Klassen angezeigt werden. Innerhalb einer einzelnen Methode kann eine komplexe Logik reduziert werden, um den gesamten Datenfluss anzuzeigen, indem nur die erste Zeile der Anweisungen angezeigt wird, z `foreach` `if` . b., und `while` .

@@ -1,5 +1,7 @@
 ---
 title: Speichern eines benutzerdefinierten Dokuments | Microsoft-Dokumentation
+description: Erfahren Sie mehr über den Prozess, der für ein benutzerdefiniertes Dokument für einen Projekttyp auftritt, den Sie der Visual Studio-IDE hinzufügen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04d588b4becfa778407269849032ea8ec56fb3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705615"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875678"
 ---
 # <a name="saving-a-custom-document"></a>Speichern eines benutzerdefinierten Dokuments
-Die Umgebung verarbeitet die Befehle " **Speichern**", " **Speichern**unter" und " **Alle speichern** ". Wenn ein Benutzer auf " **Speichern**", " **Speichern**unter" **oder "Alles speichern** " im Menü "Datei" klickt oder die Projekt **Mappe** schließt, was zu "Alles speichern" führt, wird der folgende Vorgang ausgeführt.
+Die Umgebung verarbeitet die Befehle " **Speichern**", " **Speichern** unter" und " **Alle speichern** ". Wenn ein Benutzer auf " **Speichern**", " **Speichern** unter" **oder "Alles speichern** " im Menü "Datei" klickt oder die Projekt **Mappe** schließt, was zu "Alles speichern" führt, wird der folgende Vorgang ausgeführt.
 
  ![Speichern des Kunden-Editors](../../extensibility/internals/media/private.gif "Privat") Speichern, speichern unter und Speichern der gesamten Befehls Behandlung für einen benutzerdefinierten Editor
 
@@ -41,6 +43,6 @@ Die Umgebung verarbeitet die Befehle " **Speichern**", " **Speichern**unter" und
     > [!NOTE]
     > Wenn Sie Ihre eigene Persistenz implementieren, achten Sie darauf, die-Methode aufzurufen, <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> um Zeit zu sparen. Mit dieser Methode wird überprüft, ob die Datei sicher gespeichert werden kann (z. b. wenn die Datei nicht schreibgeschützt ist).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)

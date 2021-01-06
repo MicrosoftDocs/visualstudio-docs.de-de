@@ -1,5 +1,7 @@
 ---
 title: Unterstützen der Quell Code Verwaltung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Visual Studio Datei Checkouts, Check-ins und andere Quell Code Verwaltungsvorgänge für Ihr Projekt oder Ihren Editor unterstützt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704730"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876453"
 ---
 # <a name="supporting-source-control"></a>Unterstützen der Quellcodeverwaltung
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt Datei Checkouts, Check-ins und andere Quell Code Verwaltungsvorgänge für Ihr Projekt oder Ihren Editor. Als Quell Code [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verwaltungs Client ist für die Interaktion mit einem Quell Code Verwaltungspaket wie konzipiert, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] das Archivierungs-, Versions-und Steuerungsfunktionen für einen dynamisch definierten Satz von Dateien bereitstellt.

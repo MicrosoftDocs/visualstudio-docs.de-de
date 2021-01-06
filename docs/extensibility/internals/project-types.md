@@ -1,5 +1,7 @@
 ---
 title: Projekttypen | Microsoft-Dokumentation
+description: Visual Studio enthält mehrere Projekttypen für Sprachen wie Visual c# und Visual Basic. Mit Visual Studio können Sie auch eigene Projekttypen erstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e38649f825e0dfa554d9fbc90c57f63370b31f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706265"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877194"
 ---
 # <a name="project-types"></a>Projekttypen
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] umfasst mehrere Projekttypen für Sprachen, wie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . b. und. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit können Sie auch eigene Projekttypen erstellen.
@@ -52,13 +54,13 @@ ms.locfileid: "80706265"
 
 - [Schachteln von Projekten](../../extensibility/internals/nesting-projects.md)
 
- Erläutert, wie Ihre Projekttypen die Schachtelung *unterstützen können*, sodass Projekte in **Projektmappen-Explorer**gruppiert werden können.
+ Erläutert, wie Ihre Projekttypen die Schachtelung *unterstützen können*, sodass Projekte in **Projektmappen-Explorer** gruppiert werden können.
 
 - [Aktualisieren von Projekten](../../extensibility/internals/upgrading-projects.md)
 
  Beschreibt, wie Ihr Projekttyp am Upgrade-Assistenten teilnehmen kann, um Projektdateien aus einer früheren Version von zu aktualisieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- [Aufbau](../../extensibility/internals/project-types-architecture.md)
+- [Architektur](../../extensibility/internals/project-types-architecture.md)
 
  Stellt ausführliche technische Informationen zu Projekttypen bereit.
 

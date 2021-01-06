@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Implementieren von Code Ausschnitten | Microsoft-Dokumentation'
+description: Sie können Code Ausschnitte erstellen und in eine Editor-Erweiterung einschließen. In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie Code Ausschnitte erstellen und registrieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
@@ -11,17 +13,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904717"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877116"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren von Code Ausschnitten
 Sie können Code Ausschnitte erstellen und in einer Editor-Erweiterung einschließen, damit Benutzer der Erweiterung Sie Ihrem eigenen Code hinzufügen können.
 
- Ein Code Ausschnitt ist ein Fragment von Code oder anderem Text, der in eine Datei eingebunden werden kann. Wenn Sie alle Ausschnitte anzeigen möchten **, die für** bestimmte Programmiersprachen registriert wurden, klicken Sie im Menü Extras auf **Code Ausschnitt-Manager**. Um einen Ausschnitt in eine Datei einzufügen, klicken Sie mit der rechten Maustaste auf den gewünschten Ausschnitt, klicken Sie auf Ausschnitt einfügen oder **Umschließen mit**, suchen Sie den gewünschten Ausschnitt, und doppelklicken Sie darauf. Drücken **Tab** Sie die Tab-oder **UMSCHALT** + **Registerkarte** , um die relevanten Teile des Code Ausschnitts zu ändern, und drücken Sie dann die **Eingabe** Taste oder **ESC** , um die Weitere Informationen finden Sie unter [Code Ausschnitte](../ide/code-snippets.md).
+ Ein Code Ausschnitt ist ein Fragment von Code oder anderem Text, der in eine Datei eingebunden werden kann. Wenn Sie alle Ausschnitte anzeigen möchten **, die für** bestimmte Programmiersprachen registriert wurden, klicken Sie im Menü Extras auf **Code Ausschnitt-Manager**. Um einen Ausschnitt in eine Datei einzufügen, klicken Sie mit der rechten Maustaste auf den gewünschten Ausschnitt, klicken Sie auf Ausschnitt einfügen oder **Umschließen mit**, suchen Sie den gewünschten Ausschnitt, und doppelklicken Sie darauf. Drücken  Sie die Tab-oder **UMSCHALT** + **Registerkarte** , um die relevanten Teile des Code Ausschnitts zu ändern, und drücken Sie dann die **Eingabe** Taste oder **ESC** , um die Weitere Informationen finden Sie unter [Code Ausschnitte](../ide/code-snippets.md).
 
  Ein Code Ausschnitt ist in einer XML-Datei mit der Dateinamenerweiterung ". Ausschnitt *" enthalten. Ein Code Ausschnitt kann Felder enthalten, die nach dem Einfügen des Ausschnitts hervorgehoben werden, damit der Benutzer Sie finden und ändern kann. Eine codeausschnittsdatei enthält auch Informationen zum **Code Ausschnitt-Manager** , sodass der Ausschnitt Name in der richtigen Kategorie angezeigt werden kann. Weitere Informationen zum Code Ausschnitt Schema finden Sie unter [Schema Referenz für Code Ausschnitte](../ide/code-snippets-schema-reference.md).
 
@@ -36,7 +38,7 @@ Sie können Code Ausschnitte erstellen und in einer Editor-Erweiterung einschlie
    Diese exemplarische Vorgehensweise basiert auf der exemplarischen Vorgehensweise [: Anweisungs Vervollständigung anzeigen](../extensibility/walkthrough-displaying-statement-completion.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-and-register-code-snippets"></a>Erstellen und Registrieren von Code Ausschnitten
  In der Regel sind Code Ausschnitte einem registrierten Sprachdienst zugeordnet. Sie müssen jedoch keine implementieren, <xref:Microsoft.VisualStudio.Package.LanguageService> um Code Ausschnitte zu registrieren. Geben Sie stattdessen einfach eine GUID in der codeausschnittsindexdatei an, und verwenden Sie dann die gleiche GUID in der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> , die Sie dem Projekt hinzufügen.
@@ -126,7 +128,7 @@ Sie können Code Ausschnitte erstellen und in einer Editor-Erweiterung einschlie
 
 4. Stellen Sie sicher, dass die Registerkarte **Assets** einen **VSPackage** -Inhaltstyp enthält und dass das **Projekt** auf den Namen des Projekts festgelegt ist.
 
-5. Wählen Sie das Projekt completiontest aus, und legen Sie im Eigenschaftenfenster die Option **pkgdef-Datei generieren** auf **true**fest. Speichern Sie das Projekt.
+5. Wählen Sie das Projekt completiontest aus, und legen Sie im Eigenschaftenfenster die Option **pkgdef-Datei generieren** auf **true** fest. Speichern Sie das Projekt.
 
 6. Fügen Sie `SnippetUtilities` dem Projekt eine statische Klasse hinzu.
 
@@ -232,7 +234,7 @@ Sie können Code Ausschnitte erstellen und in einer Editor-Erweiterung einschlie
 
 3. Klicken Sie mit der rechten Maustaste auf den Text, und klicken Sie dann auf **Ausschnitt einfügen**.
 
-4. Die Benutzeroberfläche der Ausschnitt Auswahl sollte mit einem Popup Fenster angezeigt werden, in dem die **Test Ersetzungs Felder**aufgeführt sind. Doppelklicken Sie auf das Popup.
+4. Die Benutzeroberfläche der Ausschnitt Auswahl sollte mit einem Popup Fenster angezeigt werden, in dem die **Test Ersetzungs Felder** aufgeführt sind. Doppelklicken Sie auf das Popup.
 
      Der folgende Code Ausschnitt sollte eingefügt werden.
 
@@ -241,11 +243,11 @@ Sie können Code Ausschnitte erstellen und in einer Editor-Erweiterung einschlie
     MessageBox.Show("second");
     ```
 
-     Drücken **Sie die Eingabe** Taste oder **ESC**nicht.
+     Drücken **Sie die Eingabe** Taste oder **ESC** nicht.
 
 5. Drücken Sie die **Tab-** Taste und die **UMSCHALT** + **Registerkarte** , um zwischen "First" und "Second" zu wechseln.
 
-6. Nehmen Sie die Einfügung durch Drücken der **Eingabe** Taste oder **ESC**an.
+6. Nehmen Sie die Einfügung durch Drücken der **Eingabe** Taste oder **ESC** an.
 
 7. Geben Sie in einem anderen Textabschnitt "Test" ein, und drücken Sie dann die **Tab**-Taste. Da "Test" die Code Ausschnitt Verknüpfung ist, sollte der Ausschnitt erneut eingefügt werden.
 

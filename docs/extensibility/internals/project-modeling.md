@@ -1,5 +1,7 @@
 ---
 title: Projekt Modellierung | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Standard Projekt Objekte, die zum Erstellen der Automatisierung für den neuen Projekttyp und den Pfad, dem die Projektautomatisierung folgt, erforderlich sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706553"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877415"
 ---
 # <a name="project-modeling"></a>Projektmodellierung
 Der nächste Schritt bei der Bereitstellung der Automatisierung für Ihr Projekt besteht darin, die Standard Projekt Objekte zu implementieren: die-und-Auflistungen <xref:EnvDTE.Projects> `ProjectItems` , das `Project` - <xref:EnvDTE.ProjectItem> Objekt und das-Objekt sowie die übrigen-Objekte, die für Diese Standardobjekte sind in der Datei "Dteinternal. h" definiert. Eine Implementierung der Standardobjekte wird im bscprj-Beispiel bereitgestellt. Diese Klassen können als Modelle verwendet werden, um eigene Standard Projekt Objekte zu erstellen, die gleichzeitig mit Projekt Objekten von anderen Projekttypen nebeneinander stehen.

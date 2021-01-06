@@ -1,5 +1,7 @@
 ---
 title: Projektkontext | Microsoft-Dokumentation
+description: Erfahren Sie, wie die Visual Studio-IDE den Projektkontext verwendet, um zu bestimmen, wie Vorgänge ausgeführt werden, wenn der Benutzer Projekte und Projekt Elemente hinzufügt oder damit arbeitet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e411f0bca361f96cdffcfd89498908fd21d441
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc4234481023592595de2df482d5ff6c2227a95e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706588"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877662"
 ---
 # <a name="project-context"></a>Projektkontext
 Wenn der Benutzer Projekte und Projekt Elemente hinzufügt oder damit arbeitet, verwendet die IDE das Konzept des Projekt Kontexts, um zu bestimmen, wie verschiedene Vorgänge ausgeführt werden sollen.

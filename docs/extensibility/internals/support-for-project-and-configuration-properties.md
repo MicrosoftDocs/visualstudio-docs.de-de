@@ -1,5 +1,7 @@
 ---
 title: Unterstützung für Projekt-und Konfigurations Eigenschaften | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Eigenschaften Seite für Ihren eigenen Projekttyp in der Visual Studio-IDE bereitstellen, in der erweiterte Eigenschaften für Projekte und Konfigurationen angezeigt werden können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fd5f15f16894faf6d47700e34db4d99a1fa3cb5a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012021"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876596"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Unterstützung für Projekt- und Konfigurationseigenschaften
 Das **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) kann Projekt-und Konfigurations Eigenschaften anzeigen. Sie können eine Eigenschaften Seite für Ihren eigenen Projekttyp bereitstellen, sodass der Benutzereigenschaften für Ihre Anwendung festlegen kann.
@@ -75,7 +77,7 @@ Das **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../code-quality/includ
 
  Das VSPackage, an das das Attribut angefügt wird, ist unwichtig. Wenn ein VSPackage bei registriert ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , wird die Klassen-ID (CLSID) eines beliebigen Objekts, das erstellt werden kann, so registriert, dass es von einem-Aufrufe erstellt werden <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> kann.
 
- Der Registrierungs Pfad eines Objekts, das erstellt werden kann, wird durch kombinieren <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , das Wort, die CLSID und die GUID des Objekt Typs bestimmt. Wenn `MyProjectPropertyPage` die Klasse eine GUID von {3c693da2-5bca-49b3-BD95-ffe0a39dd723} hat und userregistryroot HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp lautet, dann lautet der Registrierungs Pfad HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\clsid \\ {3c693da2-5bca-49b3-BD95-ffe0a39dd723}.
+ Der Registrierungs Pfad eines Objekts, das erstellt werden kann, wird durch kombinieren <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , das Wort, die CLSID und die GUID des Objekt Typs bestimmt. Wenn `MyProjectPropertyPage` die Klasse eine GUID von {3c693da2-5bca-49b3-BD95-ffe0a39dd723} hat und userregistryroot HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp ist, ist der Registrierungs Pfad HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\ {3c693da2-5bca-49b3-BD95-ffe0a39dd723}.
 
 ## <a name="project-and-configuration-property-attributes-and-layout"></a>Attribute und Layout von Projekt-und Konfigurations Eigenschaften
  Die <xref:System.ComponentModel.CategoryAttribute> <xref:System.ComponentModel.DisplayNameAttribute> Attribute, und <xref:System.ComponentModel.DescriptionAttribute> bestimmen Layout, Bezeichnung und Beschreibung der Projekt-und Konfigurations Eigenschaften auf einer generischen Eigenschaften Seite. Diese Attribute bestimmen die Kategorie, den anzeigen Amen und die Beschreibung der Option.
@@ -88,9 +90,9 @@ Das **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../code-quality/includ
  [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)]
  [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]
 
- Die `MyConfigProp` Konfigurations Eigenschaft wird auf der Eigenschaften Seite Konfiguration als **Meine config-Eigenschaft** in der Kategorie **My Category**angezeigt. Wenn die Option ausgewählt ist, wird im Beschreibungs Panel die Beschreibung, **meine Beschreibung**, angezeigt.
+ Die `MyConfigProp` Konfigurations Eigenschaft wird auf der Eigenschaften Seite Konfiguration als **Meine config-Eigenschaft** in der Kategorie **My Category** angezeigt. Wenn die Option ausgewählt ist, wird im Beschreibungs Panel die Beschreibung, **meine Beschreibung**, angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Hinzufügen und Entfernen von Eigenschaftenseiten](../../extensibility/adding-and-removing-property-pages.md)
 - [Projekte](../../extensibility/internals/projects.md)
 - [Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen der Anweisungs Vervollständigung | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie die sprachbasierte Anweisungs Vervollständigung für Klartext-Inhalte mithilfe dieser exemplarischen Vorgehensweise implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904796"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877155"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
 Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, indem Sie die Bezeichner definieren, für die Sie den Abschluss bereitstellen möchten, und dann eine Beendigungs Sitzung auslösen. Sie können die Anweisungs Vervollständigung im Kontext eines sprach diensdienstanbieter definieren, eine eigene Dateinamenerweiterung und einen Inhaltstyp definieren und dann den Abschluss nur für diesen Typ anzeigen. Oder Sie können den Abschluss für einen vorhandenen Inhaltstyp, z. –. "Klartext", auslassen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Anweisungs Vervollständigung für den Inhaltstyp "Klartext", der den Inhaltstyp von Textdateien darstellt, auslöst. Der Inhaltstyp "Text" ist der Vorgänger aller anderen Inhaltstypen, einschließlich Code-und XML-Dateien.
@@ -28,13 +30,13 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
  In dieser exemplarischen Vorgehensweise wird gezeigt, wie die Anweisungs Vervollständigung für einen hart codierten Satz von bezeichern implementiert wird. In vollständigen Implementierungen sind der Sprachdienst und die Sprachdokumentation für die Bereitstellung dieses Inhalts verantwortlich.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts
 
 #### <a name="to-create-a-mef-project"></a>So erstellen Sie ein MEF-Projekt
 
-1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `CompletionTest` .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit** und dann **VSIX-Projekt** aus.) Benennen Sie die Projekt Mappe `CompletionTest` .
 
 2. Fügen Sie dem Projekt eine Editor-Klassifizierungs Element Vorlage hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -172,7 +174,7 @@ Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, ind
 
    - Erlauben Sie, dass das Zeichen in den Puffer geschrieben wird, und starten Sie dann den Abschluss des-oder-Filters. (Dies wird von Druck Zeichen durchführen.)
 
-   - Commit für den Abschluss ausführen, lässt jedoch nicht zu, dass das Zeichen in den Puffer geschrieben wird. (Leerraum, **Tab**und **Eingabe** , wenn eine Vervollständigungs Sitzung angezeigt wird.)
+   - Commit für den Abschluss ausführen, lässt jedoch nicht zu, dass das Zeichen in den Puffer geschrieben wird. (Leerraum, **Tab** und **Eingabe** , wenn eine Vervollständigungs Sitzung angezeigt wird.)
 
    - Ermöglicht das Weitergeben des Befehls an den nächsten Handler. (Alle anderen Befehle)
 
