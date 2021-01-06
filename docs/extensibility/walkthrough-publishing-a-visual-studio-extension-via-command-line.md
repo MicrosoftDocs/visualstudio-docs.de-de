@@ -1,5 +1,7 @@
 ---
 title: Erweiterung mit Befehlszeile veröffentlichen
+description: Erfahren Sie, wie Sie die Befehlszeile verwenden, um eine Erweiterung für den Visual Studio Marketplace zu veröffentlichen, sodass Entwickler nach neuen und aktualisierten Erweiterungen suchen können.
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904667"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877922"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung über die Befehlszeile
 

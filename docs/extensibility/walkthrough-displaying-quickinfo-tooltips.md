@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von Quick Infos für QuickInfo | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie QuickInfo für Textinhalte anzeigen. QuickInfo zeigt Methoden Signaturen und Beschreibungen für einen Methodennamen an.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904831"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877935"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Exemplarische Vorgehensweise: Anzeigen von Quick Infos
 QuickInfo ist eine IntelliSense-Funktion, die Methoden Signaturen und Beschreibungen anzeigt, wenn ein Benutzer den Zeiger auf einen Methodennamen verschiebt. Sie können sprachbasierte Funktionen wie QuickInfo implementieren, indem Sie die Bezeichner definieren, für die QuickInfo-Beschreibungen bereitgestellt werden sollen, und dann eine QuickInfo erstellen, in der der Inhalt angezeigt werden soll. Sie können QuickInfo im Kontext eines sprach Dienstanbieter definieren, oder Sie können eine eigene Dateinamenerweiterung und einen Inhaltstyp definieren und die QuickInfo nur für diesen Typ anzeigen, oder Sie können QuickInfo für einen vorhandenen Inhaltstyp (z. b. "Text") anzeigen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie QuickInfo für den Inhaltstyp "Text" angezeigt wird.
@@ -38,13 +40,13 @@ QuickInfo ist eine IntelliSense-Funktion, die Methoden Signaturen und Beschreibu
   In diesem Beispiel verwendet die QuickInfo-Quelle eine hart codierte Liste von Methodennamen und Beschreibungen, aber in vollständigen Implementierungen sind der Sprachdienst und die Sprachdokumentation für die Bereitstellung dieses Inhalts verantwortlich.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 müssen Sie das Visual Studio SDK nicht aus dem Download Center installieren. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 müssen Sie das Visual Studio SDK nicht aus dem Download Center installieren. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Erstellen eines MEF-Projekts
 
 ### <a name="to-create-a-mef-project"></a>So erstellen Sie ein MEF-Projekt
 
-1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit**und dann **VSIX-Projekt**aus.) Benennen Sie die Projekt Mappe `QuickInfoTest` .
+1. Erstellen Sie ein c#-VSIX-Projekt. (Wählen Sie im Dialogfeld **Neues Projekt** die Option **Visual c#/Erweiterbarkeit** und dann **VSIX-Projekt** aus.) Benennen Sie die Projekt Mappe `QuickInfoTest` .
 
 2. Fügen Sie dem Projekt eine Editor-Klassifizierungs Element Vorlage hinzu. Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einer Editor-Element Vorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -57,7 +59,7 @@ QuickInfo ist eine IntelliSense-Funktion, die Methoden Signaturen und Beschreibu
 
 1. Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `TestQuickInfoSource`.
 
-2. Fügen Sie einen Verweis auf *Microsoft. VisualStudio. Language. IntelliSense*hinzu.
+2. Fügen Sie einen Verweis auf *Microsoft. VisualStudio. Language. IntelliSense* hinzu.
 
 3. Fügen Sie die folgenden Importe hinzu.
 
@@ -177,5 +179,5 @@ QuickInfo ist eine IntelliSense-Funktion, die Methoden Signaturen und Beschreibu
 
 4. Bewegen Sie den Mauszeiger über eines der Vorkommen von "Add". Die Signatur und die Beschreibung der `add` Methode sollten angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

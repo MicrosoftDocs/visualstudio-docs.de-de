@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341206"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903752"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Einstieg in Visual Studio und Unity
 
@@ -34,7 +34,7 @@ Visual Studio-Tools für Unity ist eine kostenlose Erweiterung, die Unterstützu
 > [!NOTE]
 > Dieses Installationshandbuch ist für Visual Studio vorgesehen. Wenn Sie Visual Studio Code verwenden, besuchen Sie die [Dokumentation zur Unity-Entwicklung mit vs Code](https://code.visualstudio.com/docs/other/unity).
 
-1. [Laden Sie den Visual Studio-Installer herunter](/docs/install/install-visual-studio.md), oder führen Sie ihn aus, wenn er bereits installiert
+1. [Laden Sie den Visual Studio-Installer herunter](/visualstudio/docs/install/install-visual-studio.md), oder führen Sie ihn aus, wenn er bereits installiert
 2. Klicken Sie für die gewünschte Version von Visual Studio auf **Ändern** (sofern bereits installiert) oder **Installieren** (für neue Installationen).
 3. Scrollen Sie auf der Registerkarte **Arbeits Auslastungen** zum Abschnitt **Gaming** , und wählen Sie die Arbeitsauslastung **Spieleentwicklung mit Unity** aus.
 
@@ -86,7 +86,7 @@ Standardmäßig sollte Unity bereits für die Verwendung von Visual Studio oder 
 
 4. Navigieren Sie bei Auswahl von **Durchsuchen...** zum Verzeichnis **Common7/IDE** in Ihrem Visual Studio-Installationsverzeichnis, und wählen Sie **devenv.exe** aus. Klicken Sie anschließend auf **Öffnen**.
 5. Sobald Visual Studio in der Liste **Externer Skript-Editor** ausgewählt ist, überprüfen Sie, ob das Kontrollkästchen **Editoranhängen** aktiviert ist.
-6. Schließen Sie das Dialogfeld **Einstellungen** , um die Konfiguration abzuschließen.
+6. Schließen Sie das Dialogfeld **Einstellungen**, um die Konfiguration abzuschließen.
 
 :::zone-end
 :::zone pivot="macos"
@@ -97,7 +97,7 @@ Standardmäßig sollte Unity bereits für die Verwendung von Visual Studio oder 
 
     ![Das Einstellungsmenü "externe Tools" im Unity-Editor unter macOS](../media/vsm/preferences-external-tools.png)
 
-4. Schließen Sie das Dialogfeld **Einstellungen** , um die Konfiguration abzuschließen.
+4. Schließen Sie das Dialogfeld **Einstellungen**, um die Konfiguration abzuschließen.
 
 :::zone-end
 

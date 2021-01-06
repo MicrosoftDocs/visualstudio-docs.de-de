@@ -1,5 +1,7 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von passenden geschweiften Klammern | Microsoft-Dokumentation'
+description: In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie geschweifte Klammern im Kontext einer Sprache definieren und entsprechende geschweifte Klammern auf den Text Inhaltstyp anwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904843"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877948"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Exemplarische Vorgehensweise: anzeigen passender geschweifter Klammern
 Implementieren Sie sprachbasierte Funktionen, wie z. b. die Klammer Zuordnung, indem Sie die geschweiften Klammern definieren, und fügen Sie den passenden geschweiften Klammern ein textmarkertag hinzu, wenn sich die Einfügemarke in einer der geschweiften Klammern befindet. Sie können geschweifte Klammern im Kontext einer Sprache definieren, eine eigene Dateinamenerweiterung und einen Inhaltstyp definieren und die Tags nur auf diesen Typ anwenden oder die Tags auf einen vorhandenen Inhaltstyp (z. b. "Text") anwenden. In der folgenden exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit dem Inhaltstyp "Text" übereinstimmende geschweifter Klammern anwenden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
- Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Es ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Erstellen eines Managed Extensibility Framework-Projekts (MEF)
 

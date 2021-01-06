@@ -1,5 +1,7 @@
 ---
 title: 'Test Bereich 2: aus Quell Code Verwaltung beziehen | Microsoft-Dokumentation'
+description: In diesem Testbereich werden Testfälle zum Abrufen von Elementen aus dem Versionsspeicher mit Get behandelt. Diese Testfälle können sowohl auf lokale als auch auf Webprojekte angewendet werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c213e2774730596db8b8e4f2d0691472495222e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704606"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877701"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Testbereich 2: Abrufen aus der Quellcodeverwaltung
 In diesem Testbereich werden Testfälle zum Abrufen von Elementen aus dem Versionsspeicher über den get-Befehl behandelt. Diese Testfälle können sowohl auf lokale als auch auf Webprojekte angewendet werden.
@@ -26,7 +28,7 @@ In diesem Testbereich werden Testfälle zum Abrufen von Elementen aus dem Versio
 
 ##### <a name="get-latest-version"></a>Aktuelle Version erhalten:
 
-- **Datei**, **Quell**Code Verwaltung, **aktuelle Version erhalten**.
+- **Datei**, **Quell** Code Verwaltung, **aktuelle Version erhalten**.
 
 - **Datei**, **aktuelle Version erhalten**.
 
@@ -47,11 +49,11 @@ In diesem Testbereich werden Testfälle zum Abrufen von Elementen aus dem Versio
 |Aktion|Test Schritte|Erwartete Ergebnisse zur Überprüfung|
 |------------|----------------|--------------------------------|
 |Neueste Version einer Datei, die nicht lokal vorhanden ist, erhalten|1. Erstellen Sie ein Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. Löschen der lokalen Kopie des Elements.<br />5. aktuellste Version des Elements erhalten (Kontextmenü, **neueste Version erhalten**).|Die Element Datei wird lokal abgerufen.|
-|Ruft eine Datei ab, die nicht lokal vorhanden ist.|1. Erstellen Sie ein Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. Löschen der lokalen Kopie des Elements.<br />5. beziehen Sie das Element (**Datei**, **Quell**Code Verwaltung, **Get** \<item> ).|Die Element Datei wird lokal abgerufen.|
+|Ruft eine Datei ab, die nicht lokal vorhanden ist.|1. Erstellen Sie ein Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. Löschen der lokalen Kopie des Elements.<br />5. beziehen Sie das Element (**Datei**, **Quell** Code Verwaltung, **Get** \<item> ).|Die Element Datei wird lokal abgerufen.|
 |Datei erhalten, die exklusiv ausgecheckt und lokal geändert wurde|1. Erstellen Sie ein Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. Überprüfen Sie das Projekt Element exklusiv.<br />5. ändern Sie die lokale Kopie.<br />6. aktuelle Version des Elements (**Datei**, **neueste Version von** \<item> ) erhalten. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />7. Klicken Sie im Warnungs Dialogfeld auf die Schaltfläche **ersetzen** .|**Aus Schritt 6 erneut ausführen**`:`<br /><br /> Dialogfeld "Warnung" zeigt an, dass die Datei ausgecheckt ist.<br /><br /> **Führen Sie erneut aus Schritt 7:**<br /><br /> Die geänderte lokale Datei wird durch die ursprüngliche Version aus dem Versionsspeicher ersetzt.<br /><br /> Die Datei ist Lese-/Schreibzugriff.|
 |Dient zum Anfordern und Ersetzen von Dateien, die ausgecheckt, freigegeben und lokal geändert werden.|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. sehen Sie sich das Projekt Element als freigegeben an.<br />5. ändern Sie die lokale Kopie.<br />6. aktuelle Version des Elements (**Datei**, **neueste Version von** \<item> ) erhalten. Wenn dieser Schritt erfolgreich ist, fahren Sie mit dem nächsten Schritt fort.<br />7. Klicken Sie im Dialogfeld "Warnung" auf **ersetzen** .|**Ergebnis aus Schritt 6:**<br /><br /> Dialogfeld "Warnung" zeigt an, dass die Datei ausgecheckt ist.<br /><br /> **Ergebnis aus Schritt 7:**<br /><br /> Die geänderte lokale Datei wird durch die ursprüngliche Version aus dem Versionsspeicher ersetzt.<br /><br /> Die Datei ist Lese-/Schreibzugriff.|
-|Ruft eine Datei ab, die lokal vorhanden ist, identisch mit der aktuellen Version im Versionsspeicher.|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. beziehen Sie das Element (**Datei**, **Quell**Code Verwaltung, **Get** \<item> ).|Die lokale Datei ist unverändert.|
-|Eine Projekt Mappe mit einem Projekt erhalten|1. Erstellen Sie eine Projekt Mappe mit einem Projekt.<br />2. Platzieren Sie die Projekt Mappe unter Quell Code Verwaltung.<br />3. löschen Sie alle Projektdateien lokal.<br />4. Holen Sie sich die Projekt**Mappe (Datei**, **Quell**Code Verwaltung, **Get**).|Alle gelöschten Dateien werden lokal wieder hergestellt.|
+|Ruft eine Datei ab, die lokal vorhanden ist, identisch mit der aktuellen Version im Versionsspeicher.|1. Erstellen Sie ein neues Projekt.<br />2. Fügen Sie dem Projekt ein Element hinzu.<br />3. Platzieren Sie das Projekt unter Quell Code Verwaltung.<br />4. beziehen Sie das Element (**Datei**, **Quell** Code Verwaltung, **Get** \<item> ).|Die lokale Datei ist unverändert.|
+|Eine Projekt Mappe mit einem Projekt erhalten|1. Erstellen Sie eine Projekt Mappe mit einem Projekt.<br />2. Platzieren Sie die Projekt Mappe unter Quell Code Verwaltung.<br />3. löschen Sie alle Projektdateien lokal.<br />4. Holen Sie sich die Projekt **Mappe (Datei**, **Quell** Code Verwaltung, **Get**).|Alle gelöschten Dateien werden lokal wieder hergestellt.|
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

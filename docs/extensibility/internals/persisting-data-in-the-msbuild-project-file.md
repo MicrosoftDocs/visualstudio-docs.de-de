@@ -1,5 +1,7 @@
 ---
 title: Beibehalten von Daten in der MSBuild-Projektdatei | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Daten in einer Projektdatei beibehalten und ipersistxmlfragment verwenden, um die Daten in der Projektdatei über Projekt Untertyp-Aggregations Ebenen hinweg beizubehalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83526007f676ae94ddce57936b627bcb4308c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706693"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878078"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Beibehalten von Daten in der MSBuild-Projektdatei
 Ein Projekt Untertyp muss möglicherweise Untertyp spezifische Daten für die spätere Verwendung in der Projektdatei beibehalten. Ein Projekt Untertyp verwendet die Persistenz von Projektdateien, um die folgenden Anforderungen zu erfüllen:
@@ -36,7 +38,7 @@ Ein Projekt Untertyp muss möglicherweise Untertyp spezifische Daten für die sp
 
     2. Konfigurations abhängige Daten.
 
-## <a name="persisting-build-related-information"></a>Beibehalten von buildbezogenen Informationen
+## <a name="persisting-build-related-information"></a>Persistente Build-Related Informationen
  Die Persistenz von Daten, die zum Erstellen eines Projekts hilfreich sind, wird über MSBuild behandelt. Das MSBuild-System verwaltet eine Master Tabelle mit Build-bezogenen Informationen. Projekt Untertypen sind für den Zugriff auf diese Daten verantwortlich, um Eigenschaftswerte zu erhalten und festzulegen. Projekt Untertypen können die Build-bezogene Datentabelle auch erweitern, indem Sie zusätzliche Eigenschaften hinzufügen, die persistent gespeichert werden sollen, und indem Sie Eigenschaften entfernen, sodass Sie nicht persistent sind.
 
  Zum Ändern der MSBuild-Daten ist ein Projekt Untertyp für das Abrufen des MSBuild-Eigenschaften Objekts aus dem Basisprojekt System über verantwortlich <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> ist eine Schnittstelle, die auf dem Kernprojekt System implementiert ist, und die aggregierten Projekt Untertypen Abfragen dafür durch Ausführen von `QueryInterface` .
@@ -76,5 +78,5 @@ Ein Projekt Untertyp muss möglicherweise Untertyp spezifische Daten für die sp
       </ProjectExtensions>
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Projektuntertypen](../../extensibility/internals/project-subtypes.md)

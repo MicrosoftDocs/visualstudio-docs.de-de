@@ -1,5 +1,7 @@
 ---
 title: Entwurfsentscheidungen für Projekttyp | Microsoft-Dokumentation
+description: Informieren Sie sich über das Element, die Dauerhaftigkeit von Projektdateien und die Verpflichtungen, die Sie vor der Erweiterung von Visual Studio durch Erstellen eines neuen Projekt Typs treffen müssen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706374"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877796"
 ---
 # <a name="project-type-design-decisions"></a>Entwurfsentscheidungen bei Projekttypen
 Bevor Sie einen neuen Projekttyp erstellen, müssen Sie für den Projekttyp einige Entwurfsentscheidungen treffen. Sie müssen entscheiden, welche Typen von Elementen in Ihren Projekten enthalten sein sollen, wie Projektdateien persistent gespeichert werden und welches Verpflichtungs Modell Sie verwenden werden.
@@ -56,7 +58,7 @@ Bevor Sie einen neuen Projekttyp erstellen, müssen Sie für den Projekttyp eini
 
  Wenn Datenobjekte mit dem transaktiven Modus geöffnet werden, werden Änderungen an einem temporären Speicherort im Arbeitsspeicher gespeichert, und es wird erst dann ein Commit ausgeführt, wenn der Benutzer die Datei manuell speichert. Zu diesem Zeitpunkt müssen alle Änderungen gleichzeitig erfolgen, oder es werden keine Änderungen vorgenommen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Projektpersistenz](../../extensibility/internals/project-persistence.md)
