@@ -4,17 +4,19 @@
   items:
     - name: Grundlegende Informationen zu Testtools
       href: improve-code-quality.md
-- name: Komponententest
-  items:
-    - name: Übersicht über Tools für Komponententests
+    - name: Komponententesttools und -aufgaben
       href: unit-test-your-code.md
+- name: Tutorials
+  items:
     - name: Erste Schritte
       href: getting-started-with-unit-testing.md
+- name: Komponententest
+  items:
     - name: Grundlagen zum Komponententest
       href: unit-test-basics.md
     - name: Ein Komponententestprojekt erstellen
       href: create-a-unit-test-project.md
-    - name: Befehl „Komponententests erstellen“
+    - name: Erstellen von Komponententests aus Code
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
