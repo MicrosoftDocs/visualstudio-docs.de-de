@@ -11,16 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6317f7a1f81e6eb6916c10b2f8ce0df91f57a7de
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 6853ef6040df943ac3050621a5b3a2528d599d9f
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329951"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756616"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Überblick über Microsoft IntelliTest
 
 IntelliTest ermöglicht es Ihnen, Fehler früh zu erkennen und reduziert die Kosten für die Wartung von Tests. Durch ein automatisiertes und transparentes Testvorgehen kann IntelliTest eine Kandidatensammlung von Tests für Ihren .NET-Code erzeugen. Die Erzeugung von Testsammlungen kann zusätzlich durch von Ihnen festgelegte *Eigenschaften für die Richtigkeit* gesteuert werden. IntelliTest entwickelt die Testsammlung sogar automatisch weiter, wenn sich der getestete Code weiterentwickelt.
+
+> [!NOTE]
+> IntelliTest ist nur in der Enterprise Edition verfügbar. Das Feature wird für C#-Code unterstützt, das auf .NET Framework abzielt. .NET Core und .NET Standard werden zurzeit nicht unterstützt.
 
 **Charakterisierungstests** Mit IntelliTest können Sie das Verhalten von Code bezüglich einer Sammlung herkömmlicher Komponententests bestimmen.
 Eine derartige Testsammlung kann als Regressionssammlung verwendet werden, die die Grundlage bildet, um das komplexe Thema der Refactoringlegacy und unbekannten Codes in Angriff zu nehmen.
