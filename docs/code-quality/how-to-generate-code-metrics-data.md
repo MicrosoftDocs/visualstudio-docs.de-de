@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434791"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069473"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
@@ -26,7 +26,7 @@ Sie können Codemetrikdaten auf drei Arten generieren:
 
 - Durch Aktivieren von [.NET-Code Qualitätsanalysen](#net-code-quality-analyzers-code-metrics-rules) und Aktivieren der vier Code metrikregeln (Wartbarkeit), die Sie enthält.
 
-- Durch Auswählen des Menübefehls [ **Analyze**  >  **Code Metrik berechnen**](#calculate-code-metrics-menu-command) in Visual Studio.
+- Durch Auswählen des Menübefehls [   >  **Code Metrik berechnen**](#calculate-code-metrics-menu-command) in Visual Studio.
 
 - In der [Befehlszeile](#command-line-code-metrics) für c#-und Visual Basic-Projekte.
 
@@ -39,15 +39,10 @@ Die .NET-Code Qualitätsanalysen enthalten mehrere Regeln für [codemetrikanalyt
 - [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
 - [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
-Diese Regeln sind standardmäßig deaktiviert, aber Sie können Sie über [**Projektmappen-Explorer**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) oder in einer [Regel Satz](using-rule-sets-to-group-code-analysis-rules.md) Datei aktivieren. Wenn Sie z. b. Regel CA1502 als Warnung aktivieren möchten, enthält die RuleSet-Datei den folgenden Eintrag:
+Diese Regeln sind standardmäßig deaktiviert, aber Sie können Sie über [**Projektmappen-Explorer**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) oder eine [Editor config](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) -Datei aktivieren. Wenn Sie z. b. Regel CA1502 als Warnung aktivieren möchten, enthält die Datei Editor config den folgenden Eintrag:
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
-    <Rule Id="CA1502" Action="Warning" />
-  </Rules>
-</RuleSet>
+```cs
+dotnet_diagnostic.CA1502.severity = warning
 ```
 
 ### <a name="configuration"></a>Konfiguration
@@ -74,13 +69,13 @@ Sie können die Schwellenwerte konfigurieren, bei denen die codemetrikregeln aus
 
 ## <a name="calculate-code-metrics-menu-command"></a>Menübefehl "Code Metrik berechnen"
 
-Generieren Sie Codemetriken für ein oder alle geöffneten Projekte in der IDE, indem Sie **Analyze** das  >  Menü **Code Metrik** analysieren verwenden.
+Generieren Sie Codemetriken für ein oder alle geöffneten Projekte in der IDE, indem Sie das  >  Menü **Code Metrik** analysieren verwenden.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generieren von Codemetrikergebnissen für eine gesamte Projekt Mappe
 
 Sie können Code Metrikergebnisse für eine gesamte Lösung auf eine der folgenden Arten generieren:
 
-- Wählen Sie in der Menüleiste **Analyse**  >  **Code Metrik** für Projekt Mappe berechnen aus  >  **For Solution**.
+- Wählen Sie in der Menüleiste **Analyse**  >  **Code Metrik** für Projekt Mappe berechnen aus  >  .
 
 - Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf die Lösung, und wählen Sie dann **Codemetriken berechnen** aus.
 
@@ -336,9 +331,9 @@ Beginnend mit Visual Studio 2019, Version 16,4 und Microsoft. Code Analysis. met
 Die `LinesOfCode` Metrik ist im neuen befehlszeilencodemetriktool präziser und zuverlässiger. Es ist unabhängig von CodeGen-unterschieden und ändert sich nicht, wenn sich das Toolset oder die Laufzeit ändert. Das neue Tool zählt tatsächliche Codezeilen, einschließlich leerer Zeilen und Kommentare.
 ::: moniker-end
 
-Andere Metriken wie `CyclomaticComplexity` und `MaintainabilityIndex` verwenden dieselben Formeln wie frühere Versionen von *Metrics.exe* , aber das neue Tool zählt die Anzahl der `IOperations` (logischen Quell Anweisungen) anstelle von Intermediate Language (IL)-Anweisungen. Die Zahlen unterscheiden sich geringfügig von den Werten, die von der Visual Studio-IDE und früheren Versionen von *Metrics.exe* generiert werden.
+Andere Metriken wie `CyclomaticComplexity` und `MaintainabilityIndex` verwenden dieselben Formeln wie frühere Versionen von *Metrics.exe*, aber das neue Tool zählt die Anzahl der `IOperations` (logischen Quell Anweisungen) anstelle von Intermediate Language (IL)-Anweisungen. Die Zahlen unterscheiden sich geringfügig von den Werten, die von der Visual Studio-IDE und früheren Versionen von *Metrics.exe* generiert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden des Fensters "Code Metrikergebnisse"](../code-quality/working-with-code-metrics-data.md)
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)
