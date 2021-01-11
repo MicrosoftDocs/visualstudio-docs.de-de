@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350867"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069499"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks- &gt; Element (Boots Trapper)
 Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests auf dem lokalen Computer, um sicherzustellen, dass alle erforderlichen Voraussetzungen für eine Anwendung installiert wurden.
@@ -142,7 +142,7 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 |`FileName`|Optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass es sich bei dem vom Registrierungsschlüssel erhaltenen Wert um einen Verzeichnispfad handelt und dieser Name angefügt wird. Wenn kein Wert angegeben wird, wird davon ausgegangen, dass der von der Registrierung zurückgegebene Wert der vollständige Pfad zu einer Datei ist.|
 |`SearchDepth`|Optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der durch den Wert des Registrierungsschlüssels angegeben wird.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Während die untergeordneten Elemente die auszuführenden `InstallChecks` Tests definieren, werden Sie nicht ausgeführt. Zum Ausführen der Tests müssen Sie `Command` Elemente unterhalb des- `Commands` Elements erstellen.
 
 ## <a name="example"></a>Beispiel
@@ -177,10 +177,20 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
  Verwenden Sie z. b. folgenden Code, um die Installation auf einem Computer zu blockieren, auf dem Windows 95 ausgeführt wird:
 
 ```xml
-<!-- Block install on Windows 95 -->
+    <!-- Block install on Windows 95 -->
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
 
+ Um das Ausführen von Installations Prüfungen zu überspringen, wenn eine FailIf-oder BypassIf-Bedingung erfüllt ist, verwenden Sie das beforeinstallchecks-Attribut.  Beispiel:
+
+```xml
+    <!-- Block install and do not evaluate install checks if user does not have admin privileges -->
+    <FailIf Property="AdminUser" Compare="ValueEqualTo" Value="false" String="AdminRequired" BeforeInstallChecks="true"/>
+```
+
+>[!NOTE]
+>Das- `BeforeInstallChecks` Attribut wird ab dem Release von Visual Studio 2019 Update 9 unterstützt.
+
 ## <a name="see-also"></a>Weitere Informationen
-- [\<Commands> gewisses](../deployment/commands-element-bootstrapper.md)
+- [\<Commands>-Element](../deployment/commands-element-bootstrapper.md)
 - [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)
