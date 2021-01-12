@@ -1,5 +1,7 @@
 ---
 title: Debuggen von Anwendungen | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie das Debuggen in Visual Studio für verschiedene Arten von Anwendungen verwenden können, z. B. für UWP-Apps, verwalteten Code, nativen Code, GPU-Code und Web-Apps.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535160"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727007"
 ---
 # <a name="debugging-applications"></a>Debuggen von Anwendungen
 Die folgenden Abschnitte befassen sich mit dem Debuggen für bestimmte Arten von Anwendungen. Verschiedene Anwendungstypen und Sprachen erfordern unterschiedliche Einstellungen und Techniken verursachen verschiedene Probleme, die debuggt werden müssen.

@@ -1,5 +1,7 @@
 ---
 title: Debuggen von WPF | Microsoft-Dokumentation
+description: Hier finden Sie eine Liste der Artikel mit Informationen zu zusätzlichen Features in Visual Studio, die das Debuggen von WPF-Anwendungen (Windows Presentation Foundation) vereinfachen.
+ms.custom: SEO-VS-2020
 ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cfe148f67d7fe21bd98d2442a4427270b84d5dd
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: bb68f1a89f09c2229a190098ebf47343d9784b72
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888433"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726721"
 ---
 # <a name="debugging-wpf"></a>Debuggen von WPF
 

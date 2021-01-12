@@ -1,5 +1,7 @@
 ---
 title: Debuggen von GPU-Code | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie C++-Code in Visual Studio debuggen, der auf der GPU (Graphics Processing Unit, Grafikprozessor) ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02900bc7e0d3746e465c8e4741036605a76190d4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 36359f8d5f2044c97e3479981290aff07d3f2e31
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599951"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727033"
 ---
 # <a name="debugging-gpu-code"></a>Debuggen von GPU-Code
 Sie können C++-Code debuggen, der im Grafikprozessor (Graphics Processing Unit, GPU) ausgeführt wird. Die GPU-Debugunterstützung in Visual Studio umfasst die Raceerkennung, das Starten von Prozessen bzw. Anfügen an Prozesse sowie die Integration in die Debugfenster.

@@ -1,5 +1,7 @@
 ---
 title: Debuggen von COM-Servern und -Containern | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie mehr über das Debuggen von COM-Servern und -Containern. Sie erfahren, wie Sie einen COM-Server und -Container in derselben Projektmappe, eine Server-App ohne Containerinformationen und eine SDI-App debuggen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9b1d4ceecae385ac6e5444c60f6634b260f2e887
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745680"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728975"
 ---
 # <a name="com-server-and-container-debugging"></a>Debuggen von COM-Servern und -Containern
 COM-Anwendungen führen eine Reihe von Tasks durch, die nicht direkt vom Programmierer gesteuert werden können. Zu den Bereichen, in denen ein unerwartetes Verhalten auftreten kann, gehören beispielsweise die Kommunikation zwischen DLLs, die Verwendungshäufigkeit von Objekten sowie Zwischenablageoperationen. In einem solchen Fall sollten Sie zunächst die Problemursache ermitteln.

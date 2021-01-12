@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074981"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815853"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Messen der Speicherauslastung in Visual Studio
 
@@ -124,7 +124,7 @@ Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein d
 
  Klicken Sie auf das Symbol ![Instanzsymbol](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon"), um die Instanzen eines ausgewählten Typs im oberen Bereich anzuzeigen.
 
- ![Ansicht „Instanzen“](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Screenshot: Instanzenansicht mit dem Arbeitsspeicherauslastungs-Tool von Visual Studio mit den Bereichen „Instanzen“, „Pfade zum Stamm“ und „Referenzierte Objekte“](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  Die Ansicht **Instanzen** zeigt die Instanzen des ausgewählten Objekts in der Momentaufnahme des oberen Bereichs an. Die Bereiche **Pfade zum Stamm** und **Referenzierte Objekte** zeigen die Objekte an, die auf die ausgewählte Instanz verweisen, sowie die Typen, auf die die ausgewählte Instanz verweist. Wenn der Debugger zu dem Zeitpunkt beendet wird, an dem die Momentaufnahme erstellt wurde, können Sie auf die Zelle **Wert** zeigen, um die Werte des Objekts in einer QuickInfo anzuzeigen.
 
@@ -139,7 +139,7 @@ Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein d
 
      Die Ansicht **Instanzen** zeigt jede Instanz des ausgewählten Typs an. Durch Auswahl einer Instanz wird die Aufrufliste angezeigt, welche die Erstellung der Instanz im Bereich **Belegungsaufrufliste** bewirkt hat.
 
-     ![Ansicht „Instanzen“](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Screenshot: Instanzenansicht mit dem Arbeitsspeicherauslastungs-Tool von Visual Studio mit den Bereichen „Instanzen“ und „Belegungsaufrufliste“](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Wählen Sie **Stapelansicht** im **Ansichtsmodus** , um den Zuweisungsstapel für den ausgewählten Typ anzuzeigen.
 

@@ -1,6 +1,7 @@
 ---
 title: Debuggen von UWP-Apps | Microsoft-Dokumentation
-ms.custom: ''
+description: Hier finden Sie Artikel zu Debugaufgaben für UWP-Apps (Universelle Windows-Plattform) im Visual Studio-Debugger.
+ms.custom: SEO-VS-2020
 ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 111a84471ca20659b9a8a4a00345c1c027a0472e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188266"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726708"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Debuggen von UWP-Apps (Universelle Windows-Plattform) in Visual Studio
 

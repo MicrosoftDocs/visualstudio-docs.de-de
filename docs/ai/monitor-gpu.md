@@ -10,22 +10,22 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 584b0035bf037a8dbf274450f56a359f803dc453
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 9d23e5890942943219990b1244c99f7b2c208dec
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099192"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726331"
 ---
 # <a name="monitoring-gpu-utilization"></a>Überwachen der GPU-Auslastung
 
 So überwachen Sie die GPU-Auslastung von Linux-Remotecomputern
 
-1. Erweitern Sie im **Server-Explorer** den Knoten **Remotecomputer** .
+1. Erweitern Sie im **Server-Explorer** den Knoten **Remotecomputer**.
 2. **Klicken Sie mit der rechten Maustaste** auf den Remotecomputer, den Sie überwachen möchten.
 
-    ![GPU-Wärmebild](media/monitor-gpu/gpu-heatmap-0.png)
+    ![Screenshot: Server-Explorer mit Ordnerstruktur für KI-Tools und der ausgewählten Option „Azure Demo“ mit einem Kontextmenü, in dem der Befehl „Wärmebild anzeigen“ geöffnet ist](media/monitor-gpu/gpu-heatmap-0.png)
 
-3. Klicken Sie auf **Wärmebild anzeigen** .
+3. Klicken Sie auf **Wärmebild anzeigen**.
 
-    ![GPU-Wärmebild](media/monitor-gpu/heatmap.png)
+    ![Screenshot: Wärmebildfenster der KI-Tools in Server-Explorer mit Zusammenfassung, Details und Wärmebilddaten für die GPUs der Azure DLVM-VM](media/monitor-gpu/heatmap.png)

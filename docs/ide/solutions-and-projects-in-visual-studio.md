@@ -1,8 +1,8 @@
 ---
-title: Projektmappen und Projekte
+title: Informationen zu Projektmappen und Projekten
 description: Erfahren Sie mehr über Visual Studio-Projekte und -Projektmappen, das Erstellen neuer Projekte aus einer Vorlage sowie das Anzeigen und Verwalten von Projekten im Projektmappen-Explorer.
-ms.custom: SEO-VS-2020
-ms.date: 12/15/2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
-ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
+ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97578252"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847049"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -49,9 +49,17 @@ Projektdateien basieren auf dem [MSBuild-XML-Schema](../msbuild/msbuild-project-
 > [!NOTE]
 > Der Code muss in Visual Studio nicht mithilfe von Projektmappen oder Projekten bearbeitet, erstellt und debuggt werden. Zum Debuggen öffnen Sie einfach in Visual Studio den Ordner, der die Quelldateien enthält, und beginnen mit dem Bearbeiten. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
+### <a name="create-new-projects"></a>Neue Projekte erstellen
+
+Die einfachste Methode zum Erstellen eines neuen Projekts besteht darin, eine Projektvorlage für den gewünschten Projekttyp zu verwenden. Eine Projektvorlage enthält mehrere grundlegende und vorab generierte Codedateien, Konfigurationsdateien, Objekte und Einstellungen. Verwenden Sie die Menüoptionen **Datei**  >  **Neu**  >  **Projekt**, um eine Projektvorlage auszuwählen. Weitere Informationen finden Sie unter [Erstellen eines neuen Projekts](create-new-project.md).
+
+Sie können auch eine benutzerdefinierte Projektvorlage erstellen, die Sie zum Erstellen neuer Projekte verwenden können. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
+
+Wenn Sie ein neues Projekt erstellen, speichert Visual Studio dieses am Standardspeicherort unter *%BENUTZERPROFIL%\source\repos*. Sie können diesen Speicherort unter **Extras**  >  **Optionen**  >  **Projekte und Projektmappen**  >  **Speicherorte** ändern. Weitere Informationen finden Sie unter [Dialogfeld „Optionen“: Projekte und Projektmappen > Speicherorte](./reference/projects-solutions-locations-options.md).
+
 ## <a name="solutions"></a>Projektmappen
 
-Projekte befinden sich in *Projektmappen*. Trotz der englischen Bezeichnung „Solution“ ist eine Projektmappe keine „Lösung“. Eine Projektmappe ist lediglich ein Container für ein oder mehrere zusammengehörige Projekte sowie Buildinformationen, Visual Studio-Fenstereinstellungen und jegliche weitere Dateien, die zu keinem bestimmten Projekt gehören. Eine Projektmappe wird von einer Textdatei (mit der Erweiterung *SLN*) in einem individuellen Format beschrieben. Dieses sollte nicht manuell bearbeitet werden.
+Projekte befinden sich in *Projektmappen*. Trotz der englischen Bezeichnung „Solution“ ist eine Projektmappe keine „Lösung“. Eine Projektmappe ist lediglich ein Container für ein oder mehrere zusammengehörige Projekte sowie Buildinformationen, Visual Studio-Fenstereinstellungen und jegliche weitere Dateien, die zu keinem bestimmten Projekt gehören.
 
 ### <a name="solution-file"></a>Projektmappendatei
 
@@ -62,36 +70,48 @@ Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (
 |.sln|Visual Studio-Projektmappe|Organisiert Projekte, Projektelemente und Projektmappenelemente in einer Projektmappe.|
 |.suo|Benutzeroptionen bei Projektmappen|Speichert Einstellungen und Anpassungen (z.B. Breakpoints) auf Benutzerebene.|
 
+> [!IMPORTANT]
+> Eine Projektmappe wird von einer Textdatei (mit der Erweiterung *SLN*) in einem individuellen Format beschrieben. Dieses sollte nicht manuell bearbeitet werden. Dementsprechend handelt es sich bei der *SUO*-Datei um eine versteckte Datei, die bei den Standardeinstellungen des Datei-Explorers nicht angezeigt wird. Aktivieren Sie das Feld **Ausgeblendete Elemente** in der **Menüansicht** des Datei-Explorers, damit ausgeblendete Dateien angezeigt werden.
+
 ### <a name="solution-folder"></a>Projektmappenordner
 
 Ein „Projektmappenordner“ ist ein virtueller Ordner, der sich nur im **Projektmappen-Explorer** befindet. In diesem Ordner können Sie Projekte in einer Projektmappe gruppieren. Wenn Sie eine Projektmappendatei auf einem Computer suchen möchten, klicken Sie auf **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte**. Weitere Informationen finden Sie unter [Dialogfeld „Optionen“: Projekte und Projektmappen > Speicherorte](./reference/projects-solutions-locations-options.md).
 
-## <a name="create-new-projects"></a>Neue Projekte erstellen
-
-Ein neues Projekt lässt sich am einfachsten über eine Projektvorlage für einen bestimmten Anwendungs- oder Websitetyp erstellen. Eine Projektvorlage besteht aus mehreren grundlegenden und vorab generierten Codedateien, Konfigurationsdateien, Objekten und Einstellungen. Diese Vorlagen finden Sie in dem Dialogfeld, in dem Sie ein neues Projekt erstellen (**Datei** > **Neu** > **Projekt**). Weitere Informationen finden Sie unter [Erstellen eines neuen Projekts in Visual Studio](create-new-project.md) und [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md).
-
-Wenn Sie Ihre Projekte häufig auf eine bestimmte Weise anpassen, können Sie eine benutzerdefinierte Projektvorlage erstellen, die Sie dann zum Erstellen neuer Projekte verwenden können. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
-
-Wenn Sie ein neues Projekt erstellen, wird es standardmäßig unter *%USERPROFILE%\source\repos* gespeichert. Sie können diesen Speicherort in der Einstellung **Projektspeicherort** unter **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte** ändern. Weitere Informationen finden Sie auf der Seite [„Projekte und Projektmappen“, Dialogfeld „Optionen“](./reference/projects-and-solutions-options-dialog-box.md).
+> [!TIP]
+> Ein Beispiel für die Erstellung eines Projekts und einer Projektmappe von Grund auf mit exemplarischen Anweisungen und Beispielcode finden Sie in der [Einführung in Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md).
 
 ## <a name="solution-explorer"></a>Projektmappen-Explorer
 
 Nachdem Sie ein neues Projekt erstellt haben, können Sie mit dem **Projektmappen-Explorer** Projekte und Projektmappen sowie zugehörige Elemente anzeigen und verwalten. Die folgende Abbildung zeigt den **Projektmappen-Explorer** mit einer C#-Projektmappe, die zwei Projekte enthält:
 
-![Projektmappen-Explorer](../ide/media/vs2015_solution_explorer.png)
+::: moniker range="vs-2017"
 
-Viele Menübefehle sind über das Kontextmenü verschiedener Elemente im **Projektmappen-Explorer** verfügbar. Diese Befehle umfassen das Erstellen eines Projekts, das Verwalten von NuGet-Paketen, das Hinzufügen einer Referenz, das Umbenennen einer Datei und das Ausführen von Tests, um nur einige zu nennen. Die Symbolleiste oben im **Projektmappen-Explorer** bietet Schaltflächen, mit denen Sie von einer Projektmappenansicht zu einer Ordneransicht wechseln, ausgeblendete Dateien anzeigen, alle Knoten reduzieren und viele weitere Aktionen ausführen können.
+![Screenshot: Projektmappen-Explorer mit zwei Projekten](../ide/media/vs2015_solution_explorer.png)
+
+Die Symbolleiste oben im **Projektmappen-Explorer** bietet Schaltflächen, mit denen Sie von einer Projektmappenansicht zu einer Ordneransicht wechseln, ausgeblendete Dateien anzeigen, alle Knoten reduzieren und viele weitere Aktionen ausführen können.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+![Screenshot: Projektmappen-Explorer mit zwei Projekten in Visual Studio 2019](../ide/media/solution-explorer.png)
+
+Die Symbolleiste oben im **Projektmappen-Explorer** enthält Schaltflächen, mit denen Sie von einer Projektmappenansicht zu einer Ordneransicht wechseln, ausstehende Änderungen filtern, alle Dateien anzeigen, alle Knoten reduzieren, [Eigenschaftenseiten](managing-project-and-solution-properties.md) anzeigen, eine Codevorschau im [Code-Editor](writing-code-in-the-code-and-text-editor.md) einsehen und viele weitere Funktionen verwenden können.
+
+::: moniker-end
+
+Viele Menübefehle sind im **Projektmappen-Explorer** über das Kontextmenü verfügbar, das Sie mithilfe eines Rechtsklicks auf verschiedene Elemente aufrufen können. Diese Befehle umfassen das Erstellen eines Projekts, das Verwalten von NuGet-Paketen, das Hinzufügen einer Referenz, das Umbenennen einer Datei und das Ausführen von Tests, um nur einige zu nennen.
 
 > [!TIP]
 > Wenn Sie den Projektmappen-Explorer geschlossen haben und diesen wieder öffnen möchten, klicken Sie in der Menüleiste auf **Fenster** > **Fensterlayout zurücksetzen**.
 
 Bei ASP.NET Core-Projekten können Sie die Schachtelung von Dateien im **Projektmappen-Explorer** anpassen. Weitere Informationen finden Sie unter [Anpassen der Dateischachtelung im Projektmappen-Explorer](file-nesting-solution-explorer.md).
 
-Eine Liste einiger der Symbole, die im Projektmappen-Explorer angezeigt werden, finden Sie unter [Symbole in der Klassenansicht und im Objektkatalog](class-view-and-object-browser-icons.md).
+## <a name="see-also"></a>Weitere Informationen
 
-## <a name="see-also"></a>Siehe auch
-
-- [Visual Studio-IDE](../get-started/visual-studio-ide.md)
+- [Einführung in Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
+- [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md)
+- [Gefilterte Projektmappen in Visual Studio](filtered-solutions.md)
 - [Portieren, Migrieren und Aktualisieren von Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Ressourcen für die Problembehandlung bei IDE-Fehlern in Visual Studio](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 - [Projekte und Projektmappen (Visual Studio für Mac)](/visualstudio/mac/projects-and-solutions)
-- [Hinzufügen und Entfernen von Projektelementen (Visual Studio für Mac)](/visualstudio/mac/add-and-remove-project-items)

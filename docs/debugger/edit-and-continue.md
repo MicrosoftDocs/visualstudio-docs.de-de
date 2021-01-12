@@ -1,6 +1,7 @@
 ---
 title: Bearbeiten von Code und Fortsetzen des Debuggens | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Verwenden Sie den Befehl „Bearbeiten und Fortfahren“ während des Debuggens in Visual Studio, damit Sie Änderungen an Ihrem Quellcode vornehmen können, während sich Ihr Programm im Unterbrechungsmodus befindet.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599635"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726539"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Bearbeiten von Code und Fortsetzen des Debuggens in Visual Studio (C#, VB, C++)
 Mit Bearbeiten und Fortfahren sparen Sie Zeit, weil Sie damit Änderungen am Quellcode vornehmen können, während sich ein Programm im Unterbrechungsmodus befindet. Wenn Sie die Ausführung des Programms fortsetzen, z. B. durch Auswählen eines Ausführungsbefehls wie **Weiter** oder **Schritt**, wendet „Bearbeiten und Fortfahren“ die Codeänderungen mit einigen Einschränkungen automatisch an. Auf diese Weise können Sie den Code während einer Debugsitzung ändern, ohne das Programm anzuhalten, komplett neu zu kompilieren und anschließend eine neue Debugsitzung zu starten.

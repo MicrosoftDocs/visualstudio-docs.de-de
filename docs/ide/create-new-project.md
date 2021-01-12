@@ -1,8 +1,8 @@
 ---
 title: Erstellen eines neuen Projekts
-description: Lernen Sie, in Visual Studio Schritt für Schritt ein neues Projekt zu erstellen.
+description: In diesem Artikel erfahren Sie, wie Sie ein neues Projekt in Visual Studio erstellen.
 ms.custom: SEO-VS-2020
-ms.date: 03/19/2019
+ms.date: 12/23/2020
 ms.topic: how-to
 f1_keywords:
 - vs.newproject
@@ -13,28 +13,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cba3c19ae939396132af8bb3c2ffee318b7007e
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dcbf39be441ba8237520fcc56ceec7946d688901
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006522"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846907"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Erstellen eines neuen Projekts in Visual Studio
+
+In diesem Artikel erfahren Sie, wie Sie schnell ein neues Projekt in Visual Studio erstellen.
 
 ::: moniker range="vs-2017"
 
 ## <a name="open-the-new-project-dialog"></a>Öffnen des Dialogfelds „Neues Projekt“
 
-Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio 2017 zu erstellen. Auf der Startseite können Sie den Namen einer Projektvorlage in das Feld **Projektvorlagen suchen** eingeben, oder Sie klicken auf den Link **Neues Projekt erstellen**, um das Dialogfeld **Neues Projekt** zu öffnen. Abgesehen von der Startseite können Sie ebenso in der Menüleiste auf **Datei** > **Neu** > **Projekt** oder in der Symbolleiste auf die Schaltfläche **Neues Projekt** klicken.
+Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio 2017 zu erstellen. Auf der Startseite können Sie den Namen einer Projektvorlage in das Feld **Projektvorlagen suchen** eingeben, oder klicken Sie auf den Link **Neues Projekt erstellen**, um das Dialogfeld **Neues Projekt** zu öffnen. Abgesehen von der Startseite können Sie ebenso in der Menüleiste auf **Datei**  >  **Neu**  >  **Projekt** oder in der Symbolleiste auf **Neues Projekt** klicken.
 
-![Startseite und „Datei“ > „Neu“ > „Projekt“](./media/vside-newproject1.png)
+![Screenshot: Menüleiste in Visual Studio mit den Optionen „Datei“ > „Neu“ > „Projekt“ ausgewählt](./media/vside-newproject1.png)
 
 ## <a name="select-a-template-type"></a>Auswählen eines Vorlagentyps
 
 Die verfügbaren Projektvorlagen werden im Dialogfeld **Neues Projekt** in einer Liste unter der Kategorie **Vorlagen** angezeigt. Vorlagen werden nach Programmiersprachen und Projekttypen sortiert, z.B. Visual C#, JavaScript und Azure Data Lake.
 
-![Dialogfeld "Neues Projekt"](./media/vside-newproject-templates-list.png)
+![Screenshot: Dialogfeld „Neues Projekt“ mit einer Liste der installierten Vorlagen](./media/vside-newproject-templates-list.png)
 
 > [!NOTE]
 > Der Aufbau der Liste der verfügbaren Sprachen und Projektvorlagen hängt von der Visual Studio-Version, die Sie ausführen, und den installierten Workloads ab. Informationen zum Installieren von zusätzlichen Workloads finden Sie unter [Ändern von Visual Studio durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten](../install/modify-visual-studio.md).
@@ -43,11 +45,11 @@ Zeigen Sie die Liste der Vorlagen für die Programmiersprache an, die Sie verwen
 
 Die folgende Abbildung zeigt die Projektvorlagen, die für Visual C# .NET Core-Projekte verfügbar sind:
 
-![Projektvorlagen](./media/new-project-dialog-net-core.png)
+![Screenshot: Dialogfeld „Neues Projekt“ mit einer Liste der auswählbaren Projektvorlagen](./media/new-project-dialog-net-core.png)
 
 ## <a name="configure-your-project"></a>Konfigurieren des Projekts
 
-Geben Sie in das Feld **Name** einen Namen für das neue Projekt ein. Sie können das Projekt entweder am Standardspeicherort auf Ihrem Computer speichern oder auf die Schaltfläche **Durchsuchen** klicken, um einen anderen Speicherort zu suchen. Sie können auch einen Namen für die Projektmappe wählen oder das neue Projekt einem Git-Repository hinzufügen (indem Sie **Zur Quellcodeverwaltung hinzufügen** auswählen).
+Geben Sie in das Feld **Name** einen Namen für das neue Projekt ein. Sie können das Projekt entweder am Standardspeicherort auf Ihrem Computer speichern oder auf die Schaltfläche **Durchsuchen** klicken, um einen anderen Speicherort zu suchen. Sie können auch einen Namen für die Projektmappe wählen oder das neue Projekt einem Git-Repository hinzufügen (indem Sie auf **Zur Quellcodeverwaltung hinzufügen** klicken).
 
 Klicken Sie auf **OK**, um die Projektmappe und das Projekt zu erstellen.
 
@@ -59,11 +61,11 @@ Klicken Sie auf **OK**, um die Projektmappe und das Projekt zu erstellen.
 
 Es gibt verschiedene Möglichkeiten, ein neues Projekt in Visual Studio 2019 zu erstellen. Beim ersten Öffnen von Visual Studio wird das Startfenster angezeigt, und dort können Sie **Neues Projekt erstellen** auswählen.
 
-![Erstellen eines neuen Projekts im Startfenster in VS 2019](media/vs-2019/start-window-create-new-project.png)
+:::image type="content" source="media/vs-2019/start-window-create-new-project.png" alt-text="Screenshot: Dialogfeld „Neues Projekt erstellen“ im Startfenster von Visual Studio 2019":::
 
-Wenn die Visual Studio-Entwicklungsumgebung bereits geöffnet ist, können Sie ein neues Projekt erstellen, indem Sie in der Menüleiste **Datei** > **Neu** > **Projekt** auswählen oder auf die Schaltfläche **Neues Projekt** auf der Symbolleiste klicken.
+Wenn die Visual Studio-Entwicklungsumgebung bereits geöffnet ist, können Sie ein neues Projekt erstellen, indem Sie in der Menüleiste **Datei** > **Neu** > **Projekt** auswählen. Sie können auch in der Symbolleiste auf **Neues Projekt** klicken oder **STRG** + **UMSCHALT** + **N** drücken.
 
-![Schaltfläche „Neues Projekt“ in Visual Studio 2019](media/vs-2019/new-project-button.png)
+:::image type="content" source="media/vs-2019/new-project-button.png" alt-text="Screenshot: Schaltfläche „Neues Projekt“ in Visual Studio 2019":::
 
 ## <a name="select-a-template-type"></a>Auswählen eines Vorlagentyps
 
@@ -71,27 +73,27 @@ Auf der Seite **Neues Projekt erstellen** wird links eine Liste der von Ihnen zu
 
 Wenn Sie nicht unter den zuletzt verwendeten Vorlagen auswählen, können Sie alle verfügbaren Projektvorlagen nach **Sprache** (z.B. C# oder C++), **Plattform** (z.B. Windows oder Azure) und **Projekttyp** (z.B. Desktop oder Web) filtern. Sie können außerdem Suchtext in das Suchfeld eingeben, um das Filtern der Vorlagen weiter einzugrenzen, z.B. **asp.net**.
 
-![Filter für Projektvorlagen in Visual Studio-2019](media/vs-2019/create-new-project-filters.png)
+:::image type="content" source="media/vs-2019/create-new-project-filters.png" alt-text="Screenshot: Projektvorlagenfilter in Visual Studio 2019":::
 
 Die Tags, die unter jeder Vorlage angezeigt werden, entsprechen den drei Dropdownfiltern (Sprache, Plattform und Projekttyp).
 
 > [!TIP]
-> Wenn Sie die gewünschte Vorlage nicht finden, fehlt möglicherweise ein Workload für Visual Studio. Um zusätzliche Workloads zu installieren, beispielsweise **Azure-Entwicklung** oder **Mobile-Entwicklung mit .NET**, klicken Sie auf den Link **Weitere Tools und Features installieren**, um den Visual Studio-Installer zu öffnen. Wählen Sie dort die Workloads, die Sie installieren möchten, und dann **Ändern** aus. Danach stehen weitere Projektvorlagen zur Wahl.
+> Wenn Sie die gewünschte Vorlage nicht finden, fehlt möglicherweise ein Workload für Visual Studio. Um zusätzliche Workloads zu installieren, beispielsweise **Azure-Entwicklung** oder **Mobile-Entwicklung mit .NET**, klicken Sie auf den Link **Weitere Tools und Features installieren**, um den Visual Studio-Installer zu öffnen. Wählen Sie dort die Workloads aus, die Sie installieren möchten, und klicken Sie dann auf **Ändern**. Danach stehen weitere Projektvorlagen zur Wahl.
 >
-> ![Link „Weitere Tools und Features installieren“ in VS 2019](media/vs-2019/install-more-tools-features.png)
+> :::image type="content" source="media/vs-2019/install-more-tools-features.png" alt-text="Screenshot: Link „Weitere Tools und Features installieren“ in Visual Studio 2019":::
 
 Wählen Sie eine Vorlage aus, und klicken Sie dann auf **Weiter**.
 
 ## <a name="configure-your-project"></a>Konfigurieren des Projekts
 
-Die Seite **Neues Projekt konfigurieren** weist Optionen zum Benennen Ihres Projekts (und der Projektmappe), zum Auswählen eines Speicherorts auf dem Datenträger und zum Auswählen einer Framework-Version auf (sofern das auf die ausgewählte Vorlage zutrifft).
+Auf der Seite **Neues Projekt konfigurieren** finden Sie Optionen zum Benennen Ihres Projekts (und der Projektmappe), zum Auswählen eines Speicherorts auf dem Datenträger und zum Auswählen einer Frameworkversion (sofern dies für die ausgewählte Vorlage möglich ist).
 
-![Seite „Neues Projekt konfigurieren“ in VS 2019](media/vs-2019/configure-new-project.png)
+:::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="Screenshot: Seite „Neues Projekt konfigurieren“ in Visual Studio 2019":::
 
 > [!NOTE]
 > Wenn Sie ein neues Projekt erstellen, während bereits ein Projekt oder eine Projektmappe in Visual Studio geöffnet ist, steht eine zusätzliche Konfigurationsoption zur Verfügung. Sie können sich entscheiden, eine neue Projektmappe zu erstellen oder das neue Projekt zur bereits geöffneten Projektmappe hinzuzufügen.
 >
-> ![Neue Projektmappe erstellen oder zu vorhandener Projektmappe hinzufügen in VS 2019](media/vs-2019/configure-new-project-solution.png)
+> :::image type="content" source="media/vs-2019/configure-new-project-solution.png" alt-text="Screenshot: Dialogfeld „Neue Projektmappe erstellen“ oder „Zu Projektmappe hinzufügen“ in Visual Studio 2019":::
 
 Klicken Sie auf **Erstellen**, um das neue Projekt zu erstellen.
 
@@ -99,8 +101,14 @@ Klicken Sie auf **Erstellen**, um das neue Projekt zu erstellen.
 
 ## <a name="add-additional-projects-to-a-solution"></a>Hinzufügen weiterer Projekte zu einer Projektmappe
 
-Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Projektmappenknoten, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus, um einer Projektmappe ein weiteres Projekt hinzuzufügen.
+Wenn Sie ein zusätzliches Projekt zu einer Projektmappe hinzufügen möchten, klicken Sie mit der rechten Maustaste auf den Projektmappenknoten im **Projektmappen-Explorer**, und wählen Sie dann **Hinzufügen**  >  **Neues Projekt** aus.
+
+> [!TIP]
+> Ein Beispiel für die Erstellung eines Projekts und einer Projektmappe von Grund auf mit exemplarischen Anweisungen und Beispielcode finden Sie in der [Einführung in Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Erstellen von Projektmappen und Projekten](creating-solutions-and-projects.md)
+- [Einführung in Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
+- [Arbeiten mit Projektmappen und Projekten](creating-solutions-and-projects.md)
+- [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md)
+- [Erstellen von Projekten (Visual Studio für Mac)](/visualstudio/mac/create-new-projects)

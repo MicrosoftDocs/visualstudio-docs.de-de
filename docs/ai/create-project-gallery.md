@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bcc1932bad5b34d9695257feb163654f6b99514
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6813e834af00330b4018f16d4a19be945be2be9
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371624"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726643"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Erstellen eines KI-Projekts aus dem Azure Machine Learning-Katalog in Visual Studio
 
@@ -52,12 +52,12 @@ Wenn Sie die [Visual Studio-Tools für KI](installation.md) installiert haben, l
 
 5. Visual Studio erstellt die Projektdatei (eine `.pyproj`-Datei auf dem Datenträger) zusammen mit anderen Dateien, die im Beispiel definiert sind. Mit der MNIST-Vorlage enthält das Projekt mehrere Dateien.
 
-    ![MNIST](media/create-project-gallery/azml-mnist.png)
+    ![Screenshot: Projektmappen-Explorer von Visual Studio mit den Dateien für das TensorFlowMNIST-Projekt und dem Code für „tf_mnist.py“ im Hauptfenster.](media/create-project-gallery/azml-mnist.png)
 
 6. Übermitteln Sie den Auftrag an Azure Machine Learning.
 
-    ![MNIST](media/create-project-gallery/submit-azml.png)
+    ![Screenshot: Projektmappen-Explorer von Visual Studio mit Kontextmenü für das TensorFlowMNIST-Projekt mit ausgewählter Option „Auftrag übermitteln“](media/create-project-gallery/submit-azml.png)
 
 7. Führen Sie diesen in einem Docker-Container oder auf Ihrem lokalen virtuellen Computer aus.
 
-    ![MNIST](media/create-project-gallery/azml-local.png)
+    ![Screenshot: Dialogfeld „Auftrag übermitteln“ mit „azureml:/local“ für „Cluster verwenden“ und „tf_mnist.py“ für „Startskript“](media/create-project-gallery/azml-local.png)

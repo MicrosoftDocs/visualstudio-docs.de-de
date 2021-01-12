@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235107"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729250"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Problembehandlung bei der Entwicklung von Visual Studio mit Docker
 
@@ -24,22 +24,15 @@ Wenn Sie mit Visual Studio-Containertools arbeiten, können Probleme beim Erstel
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>Die Freigabe von Volumes ist nicht aktiviert. Aktivieren Sie die Freigabe von Volumes in den Docker CE für Windows-Einstellungen (gilt nur für Linux-Container)
 
-So beheben Sie dieses Problem:
+Die Dateifreigabe muss nur verwaltet werden, wenn Sie Hyper-V mit Docker verwenden. Wenn Sie WSL 2 verwenden, sind die folgenden Schritte nicht notwendig, und die Dateifreigabeoption wird nicht angezeigt. So beheben Sie dieses Problem:
 
 1. Klicken Sie im Benachrichtigungsbereich mit der rechten Maustaste auf **Docker für Windows**, und wählen Sie dann **Einstellungen**.
-1. Wählen Sie **Freigegebene Laufwerke**, und geben Sie das Laufwerk an, auf dem sich das Projekt befindet.
+1. Klicken Sie auf **Ressourcen**  >  **Dateifreigabe**, und geben Sie den Ordner frei, auf den zugegriffen werden muss. Die Freigabe Ihres gesamten Systemlaufwerks ist ebenfalls möglich, davon wird jedoch abgeraten.
 
-> [!NOTE]
-> Wenn Dateien als freigegeben angezeigt werden, müssen Sie möglicherweise noch auf den Link „Anmeldeinformationen zurücksetzen...“ im unteren Bereich des Dialogfelds klicken, um die Freigabe des Volumes erneut zu aktivieren. Zur Fortsetzung nach dem Zurücksetzen der Anmeldeinformationen müssen Sie möglicherweise Visual Studio neu starten.
-
-![Freigegebene Laufwerke](media/troubleshooting-docker-errors/shareddrives.png)
+    ![Freigegebene Laufwerke](media/troubleshooting-docker-errors/docker-settings-image.png)
 
 > [!TIP]
-> Wenn die Einstellung **Shared Drives** (Freigegebene Laufwerke) nicht konfiguriert wurde, wird in Visual Studio-Versionen, die neuer als Version 15.6 von Visual Studio 2017 sind, eine Benachrichtigung angezeigt.
-
-### <a name="container-type"></a>Containertyp
-
-Wenn Sie Docker-Unterstützung zu einem Projekt hinzufügen, können Sie zwischen einem Windows- oder einem Linux-Container auswählen. Der Docker-Host muss den gleichen Containertyp ausführen. Wenn Sie den Containertyp in der ausgeführten Docker-Instanz ändern möchten, klicken Sie mit der rechten Maustaste auf der Taskleiste auf das Docker-Symbol, und wählen Sie **Switch to Windows containers** (Zu Windows-Containern wechseln) oder **Switch to Linux container** (Zu Linux-Containern wechseln) aus.
+> Visual Studio-Versionen, die neuer als Version 15.6 von Visual Studio 2017 sind, zeigen eine Eingabeaufforderung an, wenn **Freigegebene Laufwerke** nicht konfiguriert sind.
 
 ## <a name="unable-to-start-debugging"></a>Starten des Debuggens nicht möglich
 
@@ -83,15 +76,29 @@ Verwenden Sie in PowerShell die Funktion [Add-LocalGroupMember](/powershell/modu
 
 ## <a name="low-disk-space"></a>Wenig freier Speicherplatz
 
-Standardmäßig werden Images in Docker im Ordner *%ProgramData%/Docker/* gespeichert. Dieser befindet sich in der Regel auf dem Systemlaufwerk unter *C:\ProgramData\Docker\*. Damit Images keinen wichtigen Speicherplatz auf dem Systemlaufwerk beanspruchen, können Sie den Ordner zum Speichern von Images ändern.  Öffnen Sie über das Docker-Symbol in der Taskleiste die Docker-Einstellungen, klicken Sie auf **Daemon**, und ändern Sie **Einfach** in **Erweitert**. Fügen Sie im Bearbeitungsbereich die `graph`-Eigenschaft hinzu, und legen Sie einen Wert für den für Docker-Images gewünschten Speicherort fest:
+Standardmäßig werden Images in Docker im Ordner *%ProgramData%/Docker/* gespeichert. Dieser befindet sich in der Regel auf dem Systemlaufwerk unter *C:\ProgramData\Docker\*. Damit Images keinen wichtigen Speicherplatz auf dem Systemlaufwerk beanspruchen, können Sie den Ordner zum Speichern von Images ändern. Gehen Sie folgendermaßen vor:
+
+ 1. Klicken Sie mit der rechten Maustaste auf das Docker-Symbol in der Taskleiste, und wählen Sie dann **Einstellungen** aus.
+ 1. Klicken Sie auf **Docker-Engine**. 
+ 1. Fügen Sie im Bearbeitungsbereich die `graph`-Eigenschaft hinzu, und legen Sie einen Wert für den für Docker-Images gewünschten Speicherort fest:
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Screenshot für das Festlegen eines Speicherorts für Docker-Images](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Screenshot: Docker-Dateifreigabe](media/troubleshooting-docker-errors/docker-daemon-settings.png)
 
-Klicken Sie auf **Anwenden**, damit Docker neu gestartet wird. Durch diese Schritte wird die Konfigurationsdatei unter *%ProgramData%\docker\config\daemon.json* geändert. Bereits erstellte Images werden nicht verschoben.
+Klicken Sie auf **Apply & Restart** (Anwenden und neu starten). Durch diese Schritte wird die Konfigurationsdatei unter *%ProgramData%\docker\config\daemon.json* geändert. Bereits erstellte Images werden nicht verschoben.
+
+## <a name="container-type-mismatch"></a>Containertypkonflikt
+
+Wenn Sie Docker-Unterstützung zu einem Projekt hinzufügen, können Sie zwischen einem Windows- oder einem Linux-Container auswählen. Wenn der Docker-Serverhost nicht für die Ausführung auf demselben Containertyp wie das Projektziel konfiguriert ist, wird Ihnen wahrscheinlich ein Fehler ähnlich dem folgenden angezeigt:
+
+![Screenshot: Docker-Host- und -Projektkonflikt](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+
+So lösen Sie das Problem:
+
+- Klicken Sie mit der rechten Maustaste auf das Docker für Windows-Symbol bei den Taskleistensymbolen, und wählen Sie dann **Switch to Windows containers...** (Zu Windows-Containern wechseln...) oder **Switch to Linux containers...** (Zu Linux-Containern wechseln...) aus.
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub-Repository
 

@@ -1,9 +1,9 @@
 ---
 title: Erste Schritte mit Unittests
-description: Verwenden Sie Visual Studio, um Komponententests zu definieren und auszuführen, um die Integrität Ihres Codes zu gewährleisten, Code Coverage sicherzustellen und Fehler zu finden, bevor diese von Ihren Kunden erkannt werden.
+description: Verwenden Sie Visual Studio zum Definieren und Ausführen von Komponententests, um die Integrität des Codes zu gewährleisten, und zum Erkennen von Fehlern, bevor diese sich auf Ihre Kunden auswirken.
 ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441780"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756655"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
 Verwenden Sie Visual Studio, um Komponententests zu definieren und auszuführen, um die Integrität Ihres Codes zu gewährleisten, Code Coverage sicherzustellen und Fehler zu finden, bevor diese von Ihren Kunden erkannt werden. Führen Sie Ihre Komponententests regelmäßig durch, um sicherzustellen, dass Ihr Core ordnungsgemäß funktioniert.
+
+Für den Code und die Beispiele in diesem Artikel wird C# verwenden. Die Konzepte und Features gelten jedoch auch für .NET-Sprachen, C++, Python, JavaScript und TypeScript.
 
 ## <a name="create-unit-tests"></a>Erstellen von Komponententests
 
@@ -28,7 +30,7 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstell
 
 1. Öffnen Sie das Projekt, das Sie in Visual Studio testen möchten.
 
-   In diesem Artikel wird ein einfaches „Hallo Welt“-Projekt namens **HelloWorldCore** getestet, um einen Beispielkomponententest zu demonstrieren. Der Beispielcode für ein solches Projekt lautet wie folgt:
+   In diesem Artikel wird ein einfaches „Hallo Welt“-Projekt in C# namens **HelloWorldCore** getestet, um einen Beispielkomponententest zu demonstrieren. Der Beispielcode für ein solches Projekt lautet wie folgt:
 
    ```csharp
    namespace HelloWorldCore
@@ -44,7 +46,14 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstell
 
 1. Wählen Sie im **Projektmappen-Explorer** den Projektmappenknoten aus. Wählen Sie dann in der oberen Menüleiste **Datei** > **Hinzufügen** > **Neues Projekt** aus.
 
-1. Suchen Sie im Dialogfeld „Neues Projekt“ nach einer Komponententestprojektvorlage für das Testframework, das Sie verwenden möchten, und wählen Sie sie aus.
+1. Suchen Sie im Dialogfeld „Neues Projekt“ nach einer Komponententestprojektvorlage für das Testframework, das Sie verwenden möchten (z. B. „MSTest“), und wählen Sie sie aus.
+
+   Ab Version 14.8 von Visual Studio 2017 umfassen die .NET-Sprachen integrierte Vorlagen für „NUnit“ und „xUnit“. Für C++ müssen Sie ein Testframework auswählen, das von der Sprache unterstützt wird. Informationen zum Einrichten Ihres Testprojekts mit Python finden Sie unter [Einrichten von Komponententests in Python-Code](../python/unit-testing-python-in-visual-studio.md).
+
+   > [!TIP]
+   > Für C# können Sie Komponententestprojekte mithilfe einer schnelleren Methode aus Code erstellen. Weitere Informationen finden Sie unter [Erstellen von Komponententestprojekten und Testmethoden](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods). Für die Verwendung dieser Methode mit .NET Core oder .NET Standard ist Visual Studio 2019 erforderlich.
+
+   In der folgenden Abbildung wird ein MSTest-Komponententest veranschaulicht, der in .NET unterstützt wird.
 
    ::: moniker range=">=vs-2019"
 
@@ -58,7 +67,7 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstell
 
    ![Komponententestprojektvorlage in Visual Studio 2019](media/mstest-test-project-template.png)
 
-   Wählen Sie einen Namen für das Testprojekt aus, und klicken Sie dann auf **OK**.
+   Wählen Sie einen Namen für das Testprojekt aus (z. B. „HelloWorldTests“), und klicken Sie dann auf **OK**.
 
    ::: moniker-end
 
@@ -74,7 +83,9 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstell
 
 1. Fügen Sie der Komponententestmethode Code hinzu.
 
-   Für ein MSTest-Projekt können Sie beispielsweise den folgenden Code verwenden.
+   Sie können beispielsweise den folgenden Code verwenden, indem Sie die richtige Dokumentationsregisterkarte auswählen, die mit Ihrem Testframework übereinstimmt: MSTest, NUnit oder xUnit (werden nur in .NET unterstützt).
+
+   # <a name="mstest"></a>[MSTest](#tab/mstest)
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -103,7 +114,7 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstell
    }
    ```
 
-   Für ein NUnit-Projekt können Sie den folgenden Code verwenden.
+   # <a name="nunit"></a>[NUnit](#tab/nunit)
 
    ```csharp
    using NUnit.Framework;
@@ -136,8 +147,33 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstell
    }
    ```
 
-> [!TIP]
-> Weitere Informationen zum Erstellen von Komponententests finden Sie unter [Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+    # <a name="xunit"></a>[xUnit](#tab/xunit)
+
+    ```csharp
+    using System;
+    using Xunit;
+    using System.IO;
+    
+    namespace HelloWorldTests
+    {
+        public class UnitTest1
+        {
+            private const string Expected = "Hello World!";
+            [Fact]
+            public void Test1()
+            {
+                using (var sw = new StringWriter())
+                {
+                    Console.SetOut(sw);
+                    HelloWorldCore.Program.Main();
+    
+                    var result = sw.ToString().Trim();
+                    Assert.Equal(Expected, result);
+                }
+            }
+        }
+    }
+    ```
 
 ## <a name="run-unit-tests"></a>Komponententests ausführen
 
@@ -161,12 +197,12 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstell
 > [!TIP]
 > Sie können den [Test-Explorer](../test/run-unit-tests-with-test-explorer.md) verwenden, um im integrierten Testframework (MSTest) oder in Testframeworks von Drittanbietern Komponententests auszuführen. Sie können die Tests auch in Kategorien gruppieren, Filter auf die Testliste anwenden, und Wiedergabelisten von Tests erstellen, speichern und ausführen. Zudem können Sie Tests debuggen und die Leistung und Codeabdeckung von Tests analysieren.
 
-## <a name="view-live-unit-test-results"></a>Anzeigen der Ergebnisse von Liveunittests
+## <a name="view-live-unit-test-results-visual-studio-enterprise"></a>Anzeigen von Echtzeitergebnissen von Komponententests (Visual Studio Enterprise)
 
 Wenn Sie die Testframeworks MSTest, xUnit oder NUnit in Visual Studio 2017 oder höher verwenden, werden Live-Ergebnisse Ihrer Komponententests angezeigt.
 
 > [!NOTE]
-> Live Unit Testing ist nur in der Enterprise-Edition verfügbar.
+> Für die Ausführung dieser Schritte ist Visual Studio Enterprise erforderlich.
 
 1. Das Feature „Live Unit Testing“ aktivieren Sie im Menü **Testen**, indem Sie **Testen** > **Live Unit Testing** > **Starten** auswählen.
 
@@ -192,30 +228,25 @@ Wenn Sie die Testframeworks MSTest, xUnit oder NUnit in Visual Studio 2017 oder 
 
 Weitere Informationen zu Live Unit Testing finden Sie unter [Einführung in Live Unit Testing](../test/live-unit-testing-intro.md).
 
-## <a name="generate-unit-tests-with-intellitest"></a>Generieren von Unittests mit IntelliTest
-
-Wenn Sie IntelliTest ausführen, erkennen Sie, welche Tests zu einem Fehler führen, und können den erforderlichen Code hinzufügen, um die Fehler zu beseitigen. Sie können wählen, welche der generierten Tests in einem Testprojekt gespeichert werden sollen, um eine Regressionsreihe zu erstellen. Wenn Sie den Code ändern, führen Sie IntelliTest erneut aus, damit die generierten Tests mit den Codeänderungen synchronisiert werden. Weitere Informationen finden Sie unter [Generieren von Komponententests für Code mit IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
-
-> [!TIP]
-> IntelliTest ist nur für verwalteten Code verfügbar, der das .NET Framework unterstützt.
-
-![Erzeugen von Unittests mit IntelliTest](media/intellitest.png)
-
-## <a name="analyze-code-coverage"></a>Analysieren von Code Coverage
-
-Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests wie Komponententests tatsächlich getestet wird, verwenden Sie die Code Coverage-Funktion von Visual Studio. Um sich effektiv vor Fehlern zu schützen, sollten Sie die Tests für den Großteil Ihres Codes ausführen. Weitere Informationen finden Sie unter [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
-
 ## <a name="use-a-third-party-test-framework"></a>Verwenden des Testframeworks eines Drittanbieters
 
-Sie können Komponententests in Visual Studio auch über Testframeworks von Drittanbietern wie Boost, Google und NUnit ausführen. Verwenden Sie den **NuGet-Paket-Manager**, um das NuGet-Paket für das Framework Ihrer Wahl zu installieren. Als Alternative beinhaltet Visual Studio für die Frameworks NUnit und xUnit vorkonfigurierte Testprojektvorlagen, die die erforderlichen NuGet-Pakete beinhalten.
+Je nachdem, welche Programmiersprache Sie verwenden, können Sie Komponententests in Visual Studio auch über Testframeworks von Drittanbietern wie Boost, Google und NUnit ausführen. So verwenden Sie ein Framework eines Drittanbieters:
 
-So erstellen Sie Komponententest für das Framework [NUnit](https://nunit.org/):
+- Verwenden Sie den **NuGet-Paket-Manager**, um das NuGet-Paket für das Framework Ihrer Wahl zu installieren.
+
+- (.NET) Ab Version 14.6 von Visual Studio 2017 sind vorkonfigurierte Testprojektvorlagen für NUnit- und xUnit-Testframeworks in Visual Studio enthalten. Die Vorlagen enthalten außerdem die erforderlichen NuGet-Pakete zum Aktivieren der Unterstützung.
+
+- (C++) In Visual Studio 2017 und höheren Versionen sind einige Frameworks wie Boost bereits enthalten. Weitere Informationen finden Sie unter [Schreiben von Komponententests für C/C++ in Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
+
+So fügen Sie ein Komponententestprojekt hinzu:
 
 1. Öffnen Sie die Projektmappe, die den Code enthält, den Sie testen möchten.
 
 2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus.
 
-3. Wählen Sie die Projektvorlage **NUnit-Testprojekt** aus.
+3. Wählen Sie eine Vorlage für ein Komponententestprojekt aus.
+
+   Wählen Sie für dieses Beispiel die Vorlage [NUnit](https://nunit.org/) aus.
 
    ::: moniker range=">=vs-2019"
 
@@ -245,10 +276,10 @@ So erstellen Sie Komponententest für das Framework [NUnit](https://nunit.org/):
 
 6. Führen Sie den Test über den **Test-Explorer** aus, oder, indem Sie mit der rechten Maustaste auf den Testcode klicken und die Option **Tests ausführen** auswählen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="next-steps"></a>Nächste Schritte
 
-* [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-* [Befehl „Komponententests erstellen“](create-unit-tests-menu.md)
-* [Generieren von Komponententests für Code mit IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
-* [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md)
-* [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+> [!div class="nextstepaction"]
+> [Grundlagen zu Komponententest](../test/unit-test-basics.md)
+
+> [!div class="nextstepaction"]
+> [Erstellen und Ausführen von Komponententests für verwalteten Code](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
