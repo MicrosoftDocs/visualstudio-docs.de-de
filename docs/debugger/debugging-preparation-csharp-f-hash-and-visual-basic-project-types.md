@@ -1,6 +1,7 @@
 ---
 title: Vorbereitung zum Debuggen von C#-, F#- und VB-Projekten | Microsoft-Dokumentation
-ms.custom: seodec18
+description: In diesem Artikel finden Sie Informationen zur Vorbereitung des Debuggens der C#-, F#- und Visual Basic-Projekttypen, die mit den Visual Studio-Projektvorlagen erstellt werden.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90e108ddd64a9b520c8ae1d0c86e416dea64e5be
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1536c00f68232bb9e4aa92102b605b59ec58b196
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738119"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726851"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Vorbereitung des Debugvorgangs: C#-, F#- und Visual Basic-Projekttypen
 In den Themen dieses Abschnitts wird erläutert, wie Sie C#-, F#- und [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekttypen debuggen, die mithilfe der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektvorlagen erstellt wurden.

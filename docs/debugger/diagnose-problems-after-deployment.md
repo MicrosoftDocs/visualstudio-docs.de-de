@@ -1,5 +1,7 @@
 ---
 title: Diagnostizieren von Problemen nach der Bereitstellung | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie Probleme nach der Bereitstellung mithilfe von IntelliTrace in Visual Studio diagnostizieren. Außerdem erfahren Sie, wie Sie Buildinformationen in Ihr Release einfügen. Anschließend veröffentlichen und überwachen Sie Ihre App, um das Problem zu ermitteln.
+ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 9be00d1ad040f6daca52417e4ab6dfa93f0f44cf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928055"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726825"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostizieren von Problemen nach der Bereitstellung mithilfe von IntelliTrace (C#, Visual Basic)
 
@@ -183,7 +185,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
      ![Öffnen aus Quellcodeverwaltung und Erstellen eines neuen Arbeitsbereichs](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
-     Um einen Arbeitsbereich mit bestimmten Zuordnungen oder einen Namen zu erstellen, der nicht Ihrem Computernamen entspricht, wählen Sie **Verwalten**aus.
+     Um einen Arbeitsbereich mit bestimmten Zuordnungen oder einen Namen zu erstellen, der nicht Ihrem Computernamen entspricht, wählen Sie **Verwalten** aus.
 
      [Frage: Warum meldet Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?](#IneligibleWorkspace)
 
@@ -191,7 +193,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnose eines Leistungsproblems
 
-1. Unter **Leistungsverletzungen**überprüfen Sie die aufgezeichneten Leistungsereignisse, ihre Gesamtausführungszeiten und andere Ereignisinformationen. Sehen Sie sich anschließend die Details der Methoden näher an, die während eines bestimmten Leistungsereignisses aufgerufen wurden.
+1. Unter **Leistungsverletzungen** überprüfen Sie die aufgezeichneten Leistungsereignisse, ihre Gesamtausführungszeiten und andere Ereignisinformationen. Sehen Sie sich anschließend die Details der Methoden näher an, die während eines bestimmten Leistungsereignisses aufgerufen wurden.
 
      ![Informationen zum Leistungsereignis anzeigen](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -219,7 +221,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
 
 ### <a name="diagnose-an-exception"></a>Diagnose einer Ausnahme
 
-1. Überprüfen Sie unter **Ausnahmedaten**die aufgezeichneten Ausnahmeereignisse, deren Typen und Meldungen und wann die Ausnahmen aufgetreten sind. Um tiefer in den Code zu vorzudringen, starten Sie das Debuggen des letzten Ereignisses in einer Gruppe von Ausnahmen.
+1. Überprüfen Sie unter **Ausnahmedaten** die aufgezeichneten Ausnahmeereignisse, deren Typen und Meldungen und wann die Ausnahmen aufgetreten sind. Um tiefer in den Code zu vorzudringen, starten Sie das Debuggen des letzten Ereignisses in einer Gruppe von Ausnahmen.
 
      ![Debuggen von einem Ausnahmeereignis aus starten](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
@@ -357,7 +359,7 @@ Visual Studio 2017 und höhere Versionen enthalten nicht die *Buildinfo.config*-
     ```
 
 #### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a> Frage: Warum meldet Visual Studio, dass mein ausgewählter Arbeitsbereich ungültig ist?
- **Antwort:** Der ausgewählte Arbeitsbereich besitzt keine Zuordnungen zwischen dem Quellverwaltungsordner und einem lokalen Ordner. Um eine Zuordnung für diesen Arbeitsbereich zu erstellen, wählen Sie **Verwalten**aus. Andernfalls wählen Sie einen bereits zugeordneten Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich.
+ **Antwort:** Der ausgewählte Arbeitsbereich besitzt keine Zuordnungen zwischen dem Quellverwaltungsordner und einem lokalen Ordner. Um eine Zuordnung für diesen Arbeitsbereich zu erstellen, wählen Sie **Verwalten** aus. Andernfalls wählen Sie einen bereits zugeordneten Arbeitsbereich aus oder erstellen Sie einen neuen Arbeitsbereich.
 
  ![Öffnen aus Quellcodeverwaltung ohne zugeordneten Arbeitsbereich](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 

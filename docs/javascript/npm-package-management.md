@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: d2c7ec425767e432105bfcec493599197e2fd5ec
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781024"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815684"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Verwalten von NPM-Paketen in Visual Studio
 
@@ -55,7 +55,7 @@ Die npm-Pakete lassen sich bei Node.js-Projekten am einfachsten über das npm-Pa
 
 In diesem Fenster können Sie nach einem Paket suchen sowie Optionen angeben und installieren.
 
-![Suchen nach einem NPM-Paket](../javascript/media/search-package.png)
+![Screenshot: Dialogfeld „Neue NPM-Pakete installieren“ mit ausgewähltem Paket „azure 2.2.1-preview“ und angezeigten Details und Optionen zum Paket](../javascript/media/search-package.png)
 
 * **Abhängigkeitstyp**: Wählen Sie zwischen den Paketen **Standard**, **Entwicklung** und **Optional**. „Standard“ gibt an, dass es sich bei dem Pakte um eine Laufzeitabhängigkeit handelt, während „Entwicklung“ angibt, dass das Paket nur während der Entwicklung benötigt wird.
 * **Zu "package.json" hinzufügen**: Empfohlen. Diese konfigurierbare Option ist veraltet.
@@ -73,7 +73,7 @@ Der Fortschritt der Installation wird in der **npm**-Ausgabe im Fenster **Ausgab
 
 NPM-Pakete werden im Projektmappen-Explorer angezeigt. Die Einträge unter dem Knoten **NPM** stellt die Abhängigkeiten in der Datei *package.json* dar.
 
-![Suchen nach einem NPM-Paket](../javascript/media/solution-explorer-status.png)
+![Screenshot: NPM-Knoten im Projektmappen-Explorer mit Installationsstatus der NPM-Pakete](../javascript/media/solution-explorer-status.png)
 
 ### <a name="package-status"></a>Paketstatus
 
@@ -160,11 +160,11 @@ Wenn Sie die Datei speichern, fügt Visual Studio das Paket unter dem Knoten **D
 
 Bei Projekten, in die npm integriert ist, können Sie npm-Pakete mit `package.json` konfigurieren. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den npm-Knoten, und wählen Sie dann **package.json öffnen** aus.
 
-![Suchen nach einem NPM-Paket](../javascript/media/npm-add-package.png)
+![Screenshot: Projektmappen-Explorer mit ausgewähltem NPM-Knoten mit einem geöffneten Kontextmenü und der Option „Open package.json“ (package.json öffnen) ausgewählt](../javascript/media/npm-add-package.png)
 
 IntelliSense in *package.json* unterstützt Sie bei der Auswahl einer spezifischen Version eines npm-Pakets.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Installieren eines neuen npm-Pakets über den Projektmappen-Explorer" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Auswahl der npm-Paketversion" border="true":::
 
 Wenn Sie die Datei speichern, fügt Visual Studio das Paket unter dem Knoten **Dependencies/npm** (Abhängigkeiten/npm) im Projektmappen-Explorer hinzu. Wenn der Knoten nicht angezeigt wird, klicken Sie mit der rechten Maustaste auf die Datei **package.json**, und wählen Sie dann **Pakete wiederherstellen** aus.
 

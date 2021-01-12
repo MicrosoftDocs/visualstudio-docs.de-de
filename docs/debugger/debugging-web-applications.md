@@ -1,5 +1,7 @@
 ---
 title: Debuggen von Webanwendungen | Microsoft-Dokumentation
+description: In diesem Artikel finden Sie Links zu Ressourcen, die Sie beim Debuggen verschiedener Arten von Webanwendungen unterstützen, z. B. ASP.NET-, JavaScript-, TypeScript- oder AJAX-Skript-Apps.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600119"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728134"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
 
@@ -38,7 +40,7 @@ Dieser Artikel enthält Links, mit denen Sie verschiedene Arten von Webanwendung
 
 - Anzeigen von Skriptdokumenten
 
-  Im **Projektmappen-Explorer** können Sie Listen serverseitiger und clientseitiger Skriptdokumente anzeigen lassen. Sie können beliebige Skriptdokumente über den **Projektmappen-Explorer**öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen von Skriptdokumenten](../debugger/how-to-view-script-documents.md).
+  Im **Projektmappen-Explorer** können Sie Listen serverseitiger und clientseitiger Skriptdokumente anzeigen lassen. Sie können beliebige Skriptdokumente über den **Projektmappen-Explorer** öffnen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen von Skriptdokumenten](../debugger/how-to-view-script-documents.md).
 
 - Debuggen von AJAX-Skriptanwendungen
 

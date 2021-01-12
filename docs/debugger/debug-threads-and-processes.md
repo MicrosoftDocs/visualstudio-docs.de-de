@@ -1,5 +1,7 @@
 ---
 title: Tools zum Debuggen von Threads und Prozessen | Microsoft-Dokumentation
+description: In diesem Artikel werden Tools zum Debuggen von Threads und Prozessen in Visual Studio vorgestellt. Threads und Prozesse repräsentieren Anweisungssequenzen, die in einer spezifischen Reihenfolge ausgeführt werden müssen.
+ms.custom: SEO-VS-2020
 ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738377"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727150"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Tools zum Debuggen von Threads und Prozessen in Visual Studio
 *Threads* und *Prozesse* sind verwandte Konzepte der Informatik. Beide stellen Folgen von Anweisungen dar, die in einer bestimmten Reihenfolge ausgeführt werden müssen. Anweisungen von verschiedenen Threads oder Prozessen können aber parallel ausgeführt werden.

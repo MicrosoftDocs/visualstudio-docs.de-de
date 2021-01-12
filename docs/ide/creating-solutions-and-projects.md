@@ -1,8 +1,8 @@
 ---
-title: Erstellen von Projektmappen und Projekten
+title: Arbeiten mit Projektmappen und Projekten
 description: Erfahren Sie mehr über den Unterschied zwischen Projektmappen und Projekten und wie sie in Visual Studio verwendet werden können.
-ms.custom: SEO-VS-2020
-ms.date: 02/06/2018
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/23/2020
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
@@ -16,25 +16,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 88bbead675bcf8001e17fe731bc141ab90c42b98
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006444"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847067"
 ---
-# <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
+# <a name="work-with-solutions-and-projects"></a>Arbeiten mit Projektmappen und Projekten
 
 *Projekte* enthalten die Elemente, die zum Erstellen Ihrer App in Visual Studio erforderlich sind. Dabei handelt es sich z. B. um Quellcodedateien, Bitmaps, Symbole sowie Verweise auf Komponenten und Dienste. Wenn Sie ein neues Projekt erstellen, erstellt Visual Studio dafür eine *Projektmappe*. Danach können Sie der Projektmappe nach Bedarf weitere neue oder vorhandene Projekte hinzufügen. Projektmappen können außerdem Dateien enthalten, die zu keinem bestimmten Projekt gehören.
 
-![Hierarchie der Projektmappe bzw. des Projekts](./media/vside-proj-soln.png)
+![Diagramm: Projektmappe und Projekthierarchie](./media/vside-proj-soln.png)
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Erstellen von Projekten in Visual Studio für Mac](/visualstudio/mac/create-new-projects).
 
 Sie können Ihre Projektmappen und Projekte in dem Toolfenster **Projektmappen-Explorer** abrufen. Im untenstehenden Screenshot wird ein Beispiel für eine Projektmappe im **Projektmappen-Explorer** (**BikeSharing.Xamarin-UWP**) angezeigt, die zwei Projekte enthält: **BikeSharing.Clients.Core** und **BikeSharing.Clients.Windows**. In jedem Projekt sind mehrere Dateien, Ordner und Verweise enthalten. Der Name des *Startprojekts* – also das Projekt, das gestartet wird, wenn Sie die App ausführen – ist fett gedruckt. Sie können das Startprojekt selbst festlegen.
 
-![Projektmappen-Explorer mit Projekten](./media/vside-solution-explorer-projects.png)
+![Screenshot: Projektmappen-Explorer mit zwei Projekten](./media/vside-solution-explorer-projects.png)
 
 Visual Studio bietet eine Auswahl von Projektvorlagen, die Sie beim Starten unterstützen sollen. Sie können Projekte aber auch selbst gestalten, indem Sie alle notwendigen Dateien hinzufügen. Wenn Sie ein neues Projekt aus einer Vorlage erstellen, entsteht ein Projekt, dass alle für den Projekttyp benötigten Bestandteile enthält. Außerdem können Sie die Dateien umbenennen und nach Bedarf neuen oder vorhandenen Code sowie andere Ressourcen hinzufügen.
 
@@ -42,24 +42,27 @@ An dieser Stelle sollte erwähnt werden, dass Projektmappen und Projekte nicht u
 
 ## <a name="create-a-project-from-a-project-template"></a>Erstellen eines Projekts aus einer Projektvorlage
 
-Informationen zum Erstellen eines neuen Projekts aus einer Vorlage finden Sie unter [Erstellen eines neuen Projekts in Visual Studio](create-new-project.md).
+Informationen zum Auswählen einer Vorlage zum Erstellen eines neuen Projekts finden Sie unter [Erstellen eines neuen Projekts in Visual Studio](create-new-project.md). Ein Beispiel für die Erstellung eines Projekts und einer Projektmappe von Grund auf mit exemplarischen Anweisungen und Beispielcode finden Sie in der [Einführung in Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md).
 
 ## <a name="create-a-project-from-existing-code-files"></a>Erstellen eines Projekts aus vorhandenen Codedateien
 
 Auflistungen von Quellcodedateien können Sie dem Projekt bei Bedarf hinzufügen.
 
-1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt aus vorhandenem Code** aus.
+1. Klicken Sie im Menü auf **Datei**  >  **Neu**  >  **Project From Existing Code** (Projekt aus vorhandenem Code).
 
-1. Wählen Sie im Assistenten **Create Project from Existing Code Files** („Projekt aus vorhandenen Codedateien erstellen“) den gewünschten Projekttyp im Dropdown-Listenfeld **Welchen Typ von Projekt möchten Sie erstellen?** aus, und klicken Sie dann auf die Schaltfläche **Weiter**.
+1. Wählen Sie im Assistenten **Create Project from Existing Code Files** („Projekt aus vorhandenen Codedateien erstellen“) den gewünschten Projekttyp im Dropdown-Listenfeld **Ein Projekt welchen Typs möchten Sie erstellen?** aus, und klicken Sie dann auf **Weiter**.
 
-1. Wechseln Sie im Assistenten zum Speicherort der Dateien, und geben Sie dann einen Namen für das neue Projekt in das Feld **Name** ein. Wenn Sie diesen Vorgang abschlossen haben, klicken Sie auf die Schaltfläche **Fertig stellen**.
+1. Wechseln Sie im Assistenten zum Speicherort der Dateien, und geben Sie dann einen Namen für das neue Projekt in das Feld **Name** ein. Klicken Sie auf **Fertigstellen**, wenn Sie fertig sind.
 
 > [!NOTE]
 > Diese Option funktioniert am besten für relativ einfache Sammlungen von Dateien. Derzeit werden nur die Projekttypen C++, Apache Cordova, Visual Basic und C# unterstützt.
 
 ## <a name="add-files-to-a-solution"></a>Hinzufügen von Dateien zu einer Projektmappe
 
-Dateien, die für mehrere Projekt gelten, wie Infodateien zur Projektmappe oder andere Dateien, die eher auf Projektmappenebene als auf Projektebene abgelegt werden sollten, können Sie zur Projektmappe hinzufügen. Öffnen Sie das Kontextmenü des Projektmappenknotens im **Projektmappen-Explorer** mit einem Rechtsklick, und wählen Sie **Hinzufügen** > **Neues Element** oder **Hinzufügen** > **Vorhandenes Element** aus, um der Projektmappe ein Element hinzuzufügen.
+Dateien, die für mehrere Projekt gelten, wie Infodateien zur Projektmappe oder andere Dateien, die eher auf Projektmappenebene als auf Projektebene abgelegt werden sollten, können Sie zur Projektmappe hinzufügen. Öffnen Sie das Kontextmenü des Projektmappenknotens im **Projektmappen-Explorer** mit einem Rechtsklick, und wählen Sie **Hinzufügen**  >  **Neues Element** oder **Hinzufügen**  >  **Vorhandenes Element** aus, um der Projektmappe ein Element hinzuzufügen.
+
+> [!TIP]
+> Eine Projektmappendatei ist eine Struktur zum Organisieren von Projekten in Visual Studio. Sie enthält den Zustand dieser Informationen in zwei Dateien: eine *SLN*-Datei (eine textbasierte, freigegebene Datei) und eine *SUO*-Datei (binäre, versteckte und benutzerspezifische Projektmappenoptionen). Daher sollte eine Projektmappe nicht kopiert und umbenannt werden. Stattdessen empfiehlt es sich, eine neue Projektmappe zu erstellen, und vorhandene Elemente zu dieser hinzuzufügen.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Erstellen eines .NET-Projekts, das für eine bestimmte Version von .NET Framework vorgesehen ist
 
@@ -67,9 +70,9 @@ Bei der Erstellung eines .NET Framework-Projekts können Sie angeben, welche Ver
 
 ::: moniker range="vs-2017"
 
-Wählen Sie das **Framework**-Dropdownmenü im Dialogfeld **Neues Projekt** aus, um eine .NET Framework-Version anzugeben.
+Klicken Sie im Dialogfeld **Neues Projekt** auf das Dropdownmenü **Framework**, um eine .NET Framework-Version festzulegen.
 
-![Framework-Dropdownliste im Dialogfeld „Neues Projekt“](./media/vside-newproject-framework.png)
+![Screenshot: Dropdownmenü „Framework“ im Dialogfeld „Neues Projekt“](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > Sie müssen auf dem System .NET Framework 3.5 installiert haben, um auf frühere Frameworkversionen als .NET Framework 4 zugreifen zu können.
@@ -78,9 +81,9 @@ Wählen Sie das **Framework**-Dropdownmenü im Dialogfeld **Neues Projekt** aus,
 
 ::: moniker range=">=vs-2019"
 
-Wählen Sie das **Framework**-Dropdownmenü auf der Seite **Neues Projekt erstellen** aus, um eine .NET Framework-Version anzugeben.
+Klicken Sie auf der Seite **Neues Projekt erstellen** auf das Dropdownmenü **Framework**, um eine .NET Framework-Version festzulegen.
 
-![Frameworkauswahl in „Neues Projekt konfigurieren“](media/vs-2019/configure-new-project-framework.png)
+![Screenshot: Frameworkauswahl im Dialogfeld „Neues Projekt konfigurieren“](media/vs-2019/configure-new-project-framework.png)
 
 ::: moniker-end
 
@@ -90,11 +93,11 @@ Sie können auch leere Projektmappen ohne Projekt erstellen. Dies erweist sich u
 
 ### <a name="to-create-an-empty-solution"></a>So erstellen Sie eine leere Projektmappe
 
-1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+1. Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
 ::: moniker range="vs-2017"
 
-2. Klicken Sie im linken Bereich (**Vorlagen**) auf **Andere Projekttypen** > **Visual Studio-Projektmappen** in der erweiterten Liste.
+2. Klicken Sie im linken Bereich (**Vorlagen**) auf **Andere Projekttypen** > **Visual Studio-Projektmappen** in der erweiterten Liste.
 
 3. Wählen Sie im mittleren Bereich die Option **Leere Projektmappe** aus.
 
@@ -130,22 +133,28 @@ Gehen Sie zunächst zu **Extras** > **Optionen** > **Projekte und Projektmappen*
 
 ## <a name="delete-a-solution-project-or-item"></a>Löschen einer Projektmappe, eines Projekts oder eines Elements
 
-Sie können zwar Projektmappen und deren Inhalte dauerhaft löschen, jedoch funktioniert dies nicht über die Visual Studio-IDE. Wenn Sie Elemente aus Visual Studio löschen, werden sie nur aus der aktuellen Projektmappe oder dem aktuellen Projekt entfernt. Wenn Sie eine Projektmappe oder andere Komponenten dauerhaft von Ihrem System löschen möchten, verwenden Sie den Datei-Explorer, um den Ordner zu löschen, der die *SLN-* und *SUO-Projektmappendateien* enthält. Bevor Sie allerdings eine Projektmappe dauerhaft löschen, wird empfohlen, dass Sie sämtliche Projekte oder Dateien sichern, falls Sie diese noch einmal benötigen sollten.
+Sie können das Kontextmenü (Rechtsklick) verwenden, um Projektmappen, Projekte oder Elemente in Visual Studio zu löschen bzw. zu entfernen. Dadurch werden sie jedoch lediglich aus der aktuellen Projektmappe bzw. dem aktuellen Projekt gelöscht.
+
+Zum dauerhaften Löschen einer Projektmappe oder anderer Komponenten verwenden Sie den **Datei-Explorer** unter Windows, um den Ordner zu löschen, der die *SLN*- und *SUO*-Projektmappendateien enthält. (Bevor Sie eine Projektmappe löschen, sollten Sie Sicherungen Ihrer Projekte und Dateien für den Fall erstellen, dass Sie sie wieder benötigen.)
 
 > [!NOTE]
-> Die *SUO-Datei* wird ausgeblendet und nicht in den Standardeinstellungen des Datei-Explorers angezeigt. Aktivieren Sie das Feld **Ausgeblendete Elemente** in der **Menüansicht** des Datei-Explorers, damit ausgeblendete Dateien angezeigt werden.
+> Bei der *SUO*-Datei handelt es sich um eine versteckte Datei, die bei den Standardeinstellungen des Datei-Explorers nicht angezeigt wird. Aktivieren Sie das Feld **Ausgeblendete Elemente** in der **Menüansicht** des Datei-Explorers, damit ausgeblendete Dateien angezeigt werden.
 
 ### <a name="permanently-delete-a-solution"></a>Endgültiges Löschen einer Projektmappe
 
-1. Wählen Sie im **Projektmappen-Explorer** im Kontextmenü die zu löschende Projektmappe aus, und wählen Sie dann **Ordner in Datei-Explorer öffnen**.
+Mithilfe des Projektmappen-Explorers in Visual Studio können Sie auf den Datei-Explorer von Windows zugreifen. Gehen Sie folgendermaßen vor:
+
+1. Öffnen Sie im **Projektmappen-Explorer** per Rechtsklick das Kontextmenü der Projektmappe, die Sie löschen möchten, und wählen Sie dann **Ordner im Datei-Explorer öffnen** aus.
 
 1. Navigieren Sie im Datei-Explorer eine Ebene höher.
 
-1. Klicken Sie auf den Ordner, der die Projektmappe enthält, und drücken Sie dann die Taste **ENTF**.
+1. Wählen Sie den Ordner aus, der die Projektmappe enthält, und drücken Sie dann **ENTF**.
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Projektmappen und Projekte](../ide/solutions-and-projects-in-visual-studio.md)
+- [Einführung in Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
+- [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md)
+- [Gefilterte Projektmappen in Visual Studio](filtered-solutions.md)
 - [Microsoft's open source repositories on GitHub (Open Source-Repositorys von Microsoft auf GitHub)](https://github.com/Microsoft)
 - [Entwickler-Codebeispiele](https://code.msdn.microsoft.com/)
-- [Erstellen von Projekten (Visual Studio für Mac)](/visualstudio/mac/create-new-projects)
+- [Ressourcen für die Problembehandlung bei IDE-Fehlern in Visual Studio](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)

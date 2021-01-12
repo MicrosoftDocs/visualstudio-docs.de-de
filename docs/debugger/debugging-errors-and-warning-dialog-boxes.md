@@ -1,5 +1,7 @@
 ---
 title: Dialogfelder für Debugfehler und Warnungen | Microsoft-Dokumentation
+description: Hier finden Sie eine Liste der Dialogfelder für Fehler und Warnungen, die Ihnen beim Debuggen Ihrer Anwendung in Visual Studio begegnen können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 73432c1693db1543095643a998396967b7aa2bdf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599941"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726981"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Debugfehler und Warnmeldungen
 Es folgt eine Beschreibung der Fehler- und Warnmeldungen, die beim Debuggen einer Anwendung auftreten können.
