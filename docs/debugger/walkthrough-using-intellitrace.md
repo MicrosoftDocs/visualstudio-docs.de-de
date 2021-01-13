@@ -1,5 +1,6 @@
 ---
 title: Anzeigen von Ereignissen mit IntelliTrace | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie IntelliTrace in Visual Studio Enterprise zum Sammeln von Daten über bestimmte Ereignisse, Ereigniskategorien und einzelne Funktionsaufrufe sammeln.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fef839b5473881450581db77a885da158e67bbc
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929396"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815749"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Anzeigen von Ereignissen mit IntelliTrace in Visual Studio Enterprise (C#, Visual Basic)
 
@@ -60,17 +61,17 @@ Sie können ein Debugging nur mit IntelliTrace-Ereignissen durchführen. Intelli
 
 2. Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen > Fenster > IntelliTrace-Ereignisse**.
 
-    Wechseln Sie im Fenster **Diagnosetools** zur Registerkarte **Ereignisse** (es sollten drei Registerkarten vorhanden sein: **Ereignisse**, **Speicherauslastung**und **CPU-Auslastung**). Die Registerkarte **Ereignisse** zeigt eine chronologische Liste aller Ereignisse, die mit dem letzten Ereignis endet, bevor die Ausführung vom Debugger unterbrochen wurde. Es sollte ein Ereignis namens **Access WordSearchInputs.txt**angezeigt werden.
+    Wechseln Sie im Fenster **Diagnosetools** zur Registerkarte **Ereignisse** (es sollten drei Registerkarten vorhanden sein: **Ereignisse**, **Speicherauslastung** und **CPU-Auslastung**). Die Registerkarte **Ereignisse** zeigt eine chronologische Liste aller Ereignisse, die mit dem letzten Ereignis endet, bevor die Ausführung vom Debugger unterbrochen wurde. Es sollte ein Ereignis namens **Access WordSearchInputs.txt** angezeigt werden.
 
     Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.
 
-    ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")
+    ![Screenshot des Visual Studio-Codefensters. Die Ausführung wird an einem Haltepunkt angehalten, und auf der Registerkarte „Ereignisse“ im Fenster „Diagnosetools“ werden Ereignisse aufgelistet.](../debugger/media/intellitrace-update1.png)
 
 3. Wählen Sie das Ereignis aus, um die Details zu erweitern.
 
     Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.
 
-    ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")
+    ![Screenshot der Registerkarte „Ereignisse“ im Fenster der Diagnosetools von Visual Studio. Ein Ereignis ist ausgewählt und erweitert, um seine Details anzuzeigen.](../debugger/media/intellitraceupdate1-singleevent.png)
 
     Sie können den Link des Pfadnamens auswählen, um die Datei zu öffnen. Wenn der vollständige Pfadname nicht verfügbar ist, wird das Dialogfeld **Datei öffnen** angezeigt.
 
@@ -78,7 +79,7 @@ Sie können ein Debugging nur mit IntelliTrace-Ereignissen durchführen. Intelli
 
     Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.
 
-    ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")
+    ![Screenshot des Visual Studio-Codefensters. Die Ausführung ist an einem Haltepunkt angehalten, ein Ereignis ist ausgewählt, und die entsprechende Codezeile ist hervorgehoben.](../debugger/media/historicaldebugging-update1.png)
 
 4. Wenn Sie den Fehler nicht finden, überprüfen Sie andere Ereignisse, die zu dem Fehler geführt haben. Sie können auch veranlassen, dass IntelliTrace Aufrufinformationen aufzeichnet, damit Sie die Funktionsaufrufe schrittweise durchlaufen können.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184210"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761432"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -64,17 +64,17 @@ Wie zuvor erwähnt überspringt der Debugger standardmäßig verwaltete Eigensch
 
 Klicken Sie mit der rechten Maustaste auf eine Eigenschaft oder ein Feld, klicken Sie auf **Einzelschritt in Angabe**, und wählen Sie eine der verfügbaren Optionen aus.
 
-![Einzelschritt in Angabe](../debugger/media/dbg-tour-step-into-specific.png "Einzelschritt in Angabe")
+![Screenshot des Visual Studio-Debuggers mit einer hervorgehobenen Codezeile. Die Option „Einzelschritt in Angabe“ ist im Kontextmenü ausgewählt sowie die Path.set-Methode.](../debugger/media/dbg-tour-step-into-specific.png)
 
 In diesem Beispiel springt **Einzelschritt in Angabe** zum Code für `Path.set`.
 
-![Einzelschritt in Angabe](../debugger/media/dbg-tour-step-into-specific-2.png "Einzelschritt in Angabe")
+![Screenshot des Visual Studio-Debuggers mit dem Code für Path.set. Die Klammern, die die set-Funktion umschließen, sind gelb hervorgehoben.](../debugger/media/dbg-tour-step-into-specific-2.png)
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Schnelles Ausführen bis zu einer bestimmten Stelle im Code mithilfe der Maus
 
-Zeigen Sie auf eine Codezeile, während der Debugger ausgeführt wird, bis die Schaltfläche **Run to Click** (Ausführung bis Klick/Ausführung bis hier ausführen) ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick") auf der linken Seite angezeigt wird.
+Zeigen Sie auf eine Codezeile, während der Debugger ausgeführt wird, bis die Schaltfläche **Ausführung bis Klick** (Ausführung bis hier ausführen) ![Screenshot der Schaltfläche „Ausführung bis Klick“ des Visual Studio-Debuggers. Die Schaltfläche zeigt an, dass die Ausführung bis zu der Zeile ausgeführt werden soll, in der die Schaltfläche platziert ist.](../debugger/media/dbg-tour-run-to-click.png) links davon angezeigt wird.
 
-![Run to Click](../debugger/media/dbg-tour-run-to-click-2.png "Ausführung bis Klick") (Ausführen bis Klick)
+![Screenshot des Visual Studio-Debuggers mit der Schaltfläche „Ausführen bis Klick“, die gerade links von dem Aufruf der Update-Funktion angezeigt wird.](../debugger/media/dbg-tour-run-to-click-2.png)
 
 > [!NOTE]
 > Die Schaltfläche für die Aktion **Ausführung bis Klick** (Ausführung bis hier ausführen) ist ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] verfügbar.

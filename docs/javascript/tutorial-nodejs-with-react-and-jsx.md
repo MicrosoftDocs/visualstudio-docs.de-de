@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Node.js- und Express-Apps
-description: In diesem Tutorial erfahren Sie, wie Sie mithilfe von Node.js-Tools für Visual Studio eine App erstellen.
+description: Erfahren Sie, wie Sie ein Node.js-Webanwendungsprojekt aus einer Visual Studio-Vorlage erstellen.
 ms.custom: ''
 ms.date: 4/21/2020
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c6813e0ad482bb211269c9da3950842dda7f6abd
-ms.sourcegitcommit: a7f781d5a089e6aab6b073a07f3d4d2967af8aa6
+ms.openlocfilehash: 08e04407c5fc25a2835bd3209ffcd60fdc86d0b1
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760125"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815775"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -60,10 +60,10 @@ Webpack bündelt JavaScript-Dateien für die Ausführung in einem Browser, kann 
 * Sie müssen Visual Studio und die Workload für die Node.js-Entwicklung installiert haben.
 
     ::: moniker range=">=vs-2019"
-    Wenn Sie Visual Studio 2019 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    Wenn Sie Visual Studio 2019 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
     ::: moniker-end
 
     Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…** . Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
@@ -369,7 +369,7 @@ Ab Visual Studio 2019 ist ein Buildskript erforderlich. Sie können JSX beim Ers
 
 1. Klicken Sie in *server.js* auf den Bundsteg links neben der `staticPath`-Deklaration, um einen Haltepunkt festzulegen:
 
-    ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Screenshot des Visual Studio-Codefensters für server.js. Ein roter Punkt im linken Bundsteg zeigt an, dass für die staticPath-Deklaration ein Haltepunkt festgelegt ist.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
@@ -436,13 +436,13 @@ Verwenden Sie Chrome für dieses Szenario.
 
     Legen Sie den Breakpoint für *app-bundle.js* wie in der folgenden Abbildung veranschaulicht in der `render()`-Funktion fest:
 
-    ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Screenshot des Visual Studio-Codefensters für app-bundle.js. Ein roter Punkt im linken Bundsteg zeigt an, dass in der render-Funktion ein Haltepunkt festgelegt ist.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Drücken Sie **STRG**+**F**, um die `render()`-Funktion in der transpilierten Datei *app-bundle.js* zu suchen (oder klicken Sie auf **Bearbeiten** > **Suchen und Ersetzen** > **Schnellsuche**).
 
     Legen Sie den Breakpoint für *app.tsx* in der `render()`-Funktion in der `return`-Anweisung fest.
 
-    ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+    ![Screenshot des Visual Studio-Codefensters für app.tsx. Ein roter Punkt im linken Bundsteg zeigt an, dass für die return-Anweisung der render-Funktion ein Haltepunkt festgelegt ist.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
 2. Wenn Sie den Breakpoint in der *TSX*-Datei festlegen (statt in *app-bundle.js*), müssen Sie die Datei *webpack-config.js* aktualisieren. Ersetzen Sie den folgenden Code:
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330198"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833311"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -24,17 +24,17 @@ ms.locfileid: "96330198"
 
 Komponententests dienen dann am besten der Qualität Ihres Codes, wenn sie ein integraler Bestandteil des Softwareentwicklungsworkflows sind. Sobald Sie eine Funktion oder einen anderen Block mit Anwendungscode geschrieben haben, können Sie Komponententests erstellen, mit denen Sie das Verhalten des Codes bei der Eingabe von Standarddaten, falschen Daten und Daten an der Grenze des Gültigkeitsbereichs überprüfen können. Zudem bieten die Tests die Möglichkeit, alle im Code enthaltenen expliziten oder impliziten Annahmen zu überprüfen. Mit der *testgesteuerten Entwicklung* werden die Komponententests erstellt, bevor der Code geschrieben wird. So werden die Komponententests als Entwurfsdokumentation und als funktionale Spezifikationen der Funktionen verwendet.
 
-Sie können schnell generieren Testprojekte und Testmethoden im Code oder die Tests manuell erstellen, wenn Sie sie benötigen. Wenn Sie IntelliTest verwenden, um Ihren .NET-Code zu untersuchen, können Sie Testdaten und eine Suite von Komponententests generieren. Für jede Anweisung im Code wird eine Testeingabe generiert, die die betreffende Anweisung ausführt. Hier erfahren Sie, wie Sie [Komponententests für Ihren Code generieren](generate-unit-tests-for-your-code-with-intellitest.md).
-
 Mit dem Test-Explorer können auch Drittanbieter- und Open-Source-Komponententest-Frameworks ausgeführt werden, in denen Test-Explorer-Add-On-Schnittstellen implementiert sind. Sie können viele dieser Frameworks über den Visual Studio-Erweiterungs-Manager und die Visual Studio Gallery hinzufügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
+
+Sie können schnell generieren Testprojekte und Testmethoden im Code oder die Tests manuell erstellen, wenn Sie sie benötigen. Wenn Sie IntelliTest verwenden, um .NET-Code zu untersuchen, können Sie Testdaten und eine Suite von Komponententests generieren. Für jede Anweisung im Code wird eine Testeingabe generiert, die die betreffende Anweisung ausführt. Hier erfahren Sie, wie Sie [Komponententests für .NET Code generieren](generate-unit-tests-for-your-code-with-intellitest.md).
 
 ## <a name="get-started"></a>Erste Schritte
 
 Eine Einführung in Komponententests, in der Sie direkt in die Codierung eingeführt werden, finden Sie in diesen Themen:
 
-- [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für .NET-Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Exemplarische Vorgehensweise: Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Schreiben von Komponententests für C/C++ in Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -85,7 +85,7 @@ Der nun vorliegende Code kann getestet werden.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Erstellen von Komponententestprojekten und Testmethoden
 
-Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stubs aus Ihrem Code zu generieren. Sie können das Komponententestprojekt und die Tests je nach Ihren Anforderungen auch manuell erstellen. Wenn Sie Komponententests mit dem Framework eines Drittanbieters erstellen möchten, muss eine dieser Erweiterungen installiert sein: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) oder [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+Für C# ist es häufig schneller, das Komponententestprojekt und die Komponententest-Stubs aus Ihrem Code zu generieren. Sie können das Komponententestprojekt und die Tests je nach Ihren Anforderungen auch manuell erstellen. Wenn Sie Komponententests aus Code mit dem Framework eines Drittanbieters erstellen möchten, muss eine dieser Erweiterungen installiert sein: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) oder [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator). Wenn Sie kein C# verwenden, überspringen Sie diesen Abschnitt, und fahren Sie mit [Manuelles Erstellen des Komponententestprojekts und der Komponententests](#create-the-unit-test-project-and-unit-tests-manually) fort.
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generieren des Komponententestprojekts und der Komponententest-Stubs
 
@@ -101,7 +101,7 @@ Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stu
    ![Im Editorfenster das Kontextmenü anzeigen](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code zur Verfügung.
+   > Der Menübefehl **Komponententests erstellen** ist nur für C#-Code verfügbar.
    ::: moniker-end
 
 2. Klicken Sie auf **OK**, um die Komponententests mit den Standardeinstellungen erstellen. Sie können die Werte zum Erstellen und Benennen des Komponententestprojekts und der Komponententests jedoch ändern. Sie können den Code auswählen, der den Komponententestmethoden standardmäßig hinzugefügt wird.
@@ -264,7 +264,7 @@ Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie könn
 
 ::: moniker range="vs-2017"
 
-Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![Screenshot der Umschaltfläche für die parallele Testausführung auf der Visual Studio-Test-Explorer-Symbolleiste.](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
 ::: moniker-end
 

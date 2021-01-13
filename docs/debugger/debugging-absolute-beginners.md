@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77416394"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761250"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -78,7 +78,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, welchen Typ von App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
 
     Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...** . Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
 
@@ -229,17 +229,17 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 1. Zeigen Sie auf die `GalaxyType`-Variable auf der rechten Seite, und erweitern Sie `theGalaxy.GalaxyType` auf der linken Seite des Schraubenschlüsselsymbols. Sie können sehen, dass `GalaxyType` die Eigenschaft `MyGType` enthält und der Eigenschaftswert auf `Spiral` festgelegt ist.
 
-    ![Überprüfen einer Variable](../debugger/media/beginners-inspect-variable.png)
+    ![Screenshot des Visual Studio-Debuggers mit einer gelb hervorgehobenen Codezeile und einem unter der Eigenschaft „theGalaxy.GalaxyType“erweiterten Menü am Ende der Zeile.](../debugger/media/beginners-inspect-variable.png)
 
     Bei „Spiral“ handelt es sich um den Wert, der eigentlich in der Konsole hätte ausgegeben werden sollen. Es ist also ein guter Anfang, dass Sie während der Ausführung der App auf diesen Wert im Code zugreifen können. In diesem Szenario verwenden Sie die falsche API. Testen Sie nun, ob dieses Problem behoben werden kann, während der Code im Debugger ausgeführt wird.
 
 1. Zeigen Sie in diesem Code während des Debuggens auf das Ende von `theGalaxy.GalaxyType`, und ändern Sie den Wert in `theGalaxy.GalaxyType.MyGType`. Sie können diese Änderung zwar vornehmen, aber der Code-Editor zeigt einen Fehler an, der besagt, dass der Code nicht kompiliert werden kann.
 
-    ![Syntaxfehler](../debugger/media/beginners-edit.png)
+    ![Screenshot des Visual Studio-Debuggers mit einer rot hervorgehobenen Codezeile und einem Meldungsfeld „Bearbeiten und fortfahren“, bei dem die Schaltfläche „Bearbeiten“ ausgewählt ist.](../debugger/media/beginners-edit.png)
 
 1. Klicken Sie im Meldungsfeld **Bearbeiten und Fortfahren** auf **Bearbeiten**. Sie sehen nun eine Fehlermeldung im Fenster **Fehlerliste**. Der Fehler gibt an, dass `'object'` keine Definition für `MyGType` enthält.
 
-    ![Syntaxfehler](../debugger/media/beginners-no-definition.png)
+    ![Screenshot des Visual Studio-Debuggers mit einer rot hervorgehobenen Codezeile und einem Fenster „Fehlerliste“, in dem zwei Fehler aufgeführt sind.](../debugger/media/beginners-no-definition.png)
 
     Obwohl Sie jede Galaxie mit einem Objekt vom Typ `GType` (mit der Eigenschaft `MyGType`) festgelegt haben, erkennt der Debugger den Typ des `theGalaxy`-Objekts nicht als `GType`. Woran liegt das? Sehen Sie sich den Code an, mit dem der Galaxietyp festgelegt wird. Dabei werden Sie feststellen, dass die `GType`-Klasse eine `MyGType`-Eigenschaft enthält, aber dennoch stimmt etwas nicht. Die Lösung liegt in der Fehlermeldung zu `object`: Der Interpreter für die Sprache hält den Typ des Objekts für `object` anstatt für `GType`.
 
@@ -288,7 +288,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 1. Drücken Sie **F5**, und zeigen Sie erneut auf die Variable `type`. Wiederholen Sie diesen Schritt, bis der Wert `I` in der Variable `type` angezeigt wird.
 
-    ![Überprüfen einer Variable](../debugger/media/beginners-inspecting-data.png)
+    ![Screenshot des Visual Studio-Debuggers mit einer gelb hervorgehobenen Codezeile und einem kleinen Fenster, in dem der Wert der Variablen „type“ als „73 ‘I‘“ angezeigt wird.](../debugger/media/beginners-inspecting-data.png)
 
 1. Drücken Sie nun **F11** (**Debuggen** > **Einzelschritt**), oder klicken Sie auf die Schaltfläche **Einzelschritt** in der Debugsymbolleiste.
 
