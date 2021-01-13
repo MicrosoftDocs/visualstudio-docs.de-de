@@ -1,5 +1,7 @@
 ---
 title: Deaktivieren des Just-In-Time-Debuggers | Microsoft-Dokumentation
+description: Das Dialogfeld „Just-In-Time Debugger“ öffnet sich möglicherweise, wenn in einer App ein Fehler auftritt. Erfahren Sie, was Sie tun können, wenn dies geschieht, und Möglichkeiten, um dies zu verhindern.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 7904b4bbf56c0a547d9f7b1e94bb46af8dd48d98
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386120"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903895"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Deaktivieren des Just-In-Time-Debuggers
 

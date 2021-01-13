@@ -1,5 +1,7 @@
 ---
 title: Feststellen, in welcher DLL das Programm abstürzt | Microsoft-Dokumentation
+description: Verwenden Sie das Fenster „Module“, um zu ermitteln, welche externe DLL beim Absturz Ihrer Anwendung aktiv war. Sie können dies für eine System-DLL oder den Code einer anderen Person durchführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4432378e10590c2ba930edf0920b9146e450f96
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6eacc8865b3f531df8651ad77d99b319278e6cd1
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852073"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903389"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Vorgehensweise: Feststellen, in welcher DLL das Programm abstürzt (C#, C++, Visual, F#)
 

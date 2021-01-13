@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld „Haltepunkte auswählen“ | Microsoft-Dokumentation
+description: Enthält Informationen zum Dialogfeld „Haltepunkte auswählen“. Dieses Dialogfeld wird geöffnet, wenn Sie versuchen, in Visual Studio mithilfe von mehrdeutigen Eingaben im Dialogfeld „Neuer Haltepunkt“ einen Haltepunkt zu setzen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdec8c8d1b53f87e14700f5c14099cf0d2e6e392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 876cc88756f6230585dce72b984b7ac40390a7f4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745728"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729040"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Dialogfeld "Haltepunkte wählen"
 Das Dialogfeld **Haltepunkte wählen** wird geöffnet, wenn Sie versuchen, mithilfe von mehrdeutigen Eingaben im Dialogfeld **Neuer Haltepunkt** einen Haltepunkt zu setzen. Ein typisches Beispiel für eine mehrdeutige Eingabe ist ein überladener Funktionsname.

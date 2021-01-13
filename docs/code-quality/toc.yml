@@ -453,6 +453,12 @@
           href: how-to-generate-code-metrics-data.md
         - name: Arbeiten mit Codemetrikdaten
           href: working-with-code-metrics-data.md
+        - name: Ressourcen
+          items:
+            - name: Wartbarkeitsindexbereich und Bedeutung
+              href: code-metrics-maintainability-index-range-and-meaning.md
+            - name: Kopplung zwischen Klassen
+              href: code-metrics-class-coupling.md
 - name: C++-Codeanalyse
   items:
     - name: Analysieren von C- und C++-Code

@@ -1,5 +1,7 @@
 ---
 title: 'ASP.NET-Debugging: Systemanforderungen | Microsoft-Dokumentation'
+description: Informieren Sie sich über die Software- und Sicherheitsanforderungen für das lokale ASP.NET-Debuggen, wobei Visual Studio und die Web-App auf demselben Computer ausgeführt werden, und für das Remotedebuggen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2002d6ccbbe8f2cd3e186c49aca7a846568eedb2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745810"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729118"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET-Debugging: Systemanforderungen
 In diesem Thema werden die Software- und Sicherheitsanforderungen für die folgenden [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Debugszenarios beschrieben:
@@ -37,7 +39,7 @@ In diesem Thema werden die Software- und Sicherheitsanforderungen für die folge
 ## <a name="security-requirements"></a>Sicherheitsanforderungen
  Lokale Computer und Remotecomputer müssen sich beim Remotedebuggen in einer Domänen- oder Arbeitsgruppenkonfiguration befinden.
 
- Zum Debuggen des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Workerprozesses (gehostet von einem Anwendungspool) müssen Sie über eine entsprechende Berechtigung verfügen. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen vor IIS 6.0 werden standardmäßig als **ASPNET**-Benutzer ausgeführt. In IIS 6.0 und IIS 7.0 ist das Konto **NETZWERKDIENST** die Standardeinstellung. Wenn der Arbeitsprozess als **ASPNET**oder als **NETZWERKDIENST**ausgeführt wird, benötigen Sie zum Debuggen Administratorrechte.
+ Zum Debuggen des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Workerprozesses (gehostet von einem Anwendungspool) müssen Sie über eine entsprechende Berechtigung verfügen. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen vor IIS 6.0 werden standardmäßig als **ASPNET**-Benutzer ausgeführt. In IIS 6.0 und IIS 7.0 ist das Konto **NETZWERKDIENST** die Standardeinstellung. Wenn der Arbeitsprozess als **ASPNET** oder als **NETZWERKDIENST** ausgeführt wird, benötigen Sie zum Debuggen Administratorrechte.
 
  > [!IMPORTANT]
  > Ab Windows Server 2008 R2 empfiehlt es sich, die [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) als Identität für jeden Anwendungspool zu verwenden.

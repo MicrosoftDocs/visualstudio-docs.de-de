@@ -1,5 +1,7 @@
 ---
 title: Auf- und Zuklappen von Spy++-Strukturen | Microsoft-Dokumentation
+description: Es werden zwei Verfahren zum Erweitern und Reduzieren der Fenster-, Prozess- und Threadansicht beschrieben. Sie können im Fenster auf die Symbole klicken oder das Menü „Struktur“ verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a8735613ad4f84c45190a5d0fa21b71d3a2658
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c4939a77fffdd5701cf1b9b4ac50995ce6995bb2
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852086"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903427"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Vorgehensweise: Auf- und Zuklappen von Spy++-Strukturen
 Fenster-, Prozess- und Threadansicht können auf zwei Arten auf- und zugeklappt werden: durch Klicken auf die Symbole im Fenster oder über das **Strukturmenü**. Die Symbole „+“ und „–“ in der Struktur funktionieren wie im C++-Projektfenster.

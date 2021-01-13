@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324290"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762603"
 ---
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Veröffentlichen** (für Web Forms **Web-App veröffentlichen**) aus.
 
@@ -21,7 +21,7 @@ ms.locfileid: "89324290"
 
 1. Wählen Sie im Dialogfeld **Veröffentlichen** die Option **Ordner** aus, klicken Sie auf **Durchsuchen**, und erstellen Sie den neuen Ordner **C:\Publish**.
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![Screenshot des Dialogfelds „Veröffentlichungsziel auswählen“ in Visual Studio mit als Veröffentlichungsziel ausgewähltem Ordner „bin\Release\Publish“.](../media/remotedbg_publish_local.png)
 
     Wählen Sie für eine Web Forms-App im Dialogfeld „Veröffentlichen“ **Benutzerdefiniert** aus, geben Sie einen Profilnamen ein, und wählen Sie **OK** aus.
 
@@ -36,7 +36,7 @@ ms.locfileid: "89324290"
 
 1. Klicken Sie auf **Veröffentlichen**.
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![Screenshot der Registerkarte „Einstellungen“ im Dialogfeld „Veröffentlichen“. Die „Konfiguration“ ist auf „Debuggen“ festgelegt, und die Schaltfläche „Veröffentlichen“ ist ausgewählt.](../media/remotedbg_publish_debug_config.png)
 
     Die Anwendung veröffentlicht eine **Debugkonfiguration** des Projekts im lokalen Ordner. Der Status wird im Fenster „Ausgabe“ angezeigt.
 

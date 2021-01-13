@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238179"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815736"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>Verwenden des Code-Editors mit JavaScript
 
@@ -40,11 +40,11 @@ Sie können mithilfe der IDE neue Dateien zu Ihrem Projekt hinzufügen.
 
 IntelliSense ist eine wichtige Ressource beim Programmieren. Damit erhalten Sie Informationen zu verfügbaren Members eines Typs oder Parameterdetails für verschiedene Überladungen einer Methode. Wenn Sie beim folgenden Code `Router()` eingeben, werden die Argumenttypen angezeigt, die übergeben werden können. Dies wird als Signaturhilfe bezeichnet.
 
-![Verwendung von IntelliSense](../javascript/media/write-code-signature-checking.png)
+![Screenshot eines Visual Studio-Codefensters, in dem JavaScript-Code eingegeben wird. IntelliSense-Informationen werden für die Router()-Funktion angezeigt.](../javascript/media/write-code-signature-checking.png)
 
 Sie können IntelliSense auch verwenden, um Wörter zu vervollständigen, nachdem genug Zeichen eingegeben wurden, um sie eindeutig zu machen. Wenn Sie Ihren Cursor im folgenden Code am Ende der `data`-Zeichenfolge platzieren und `get` eingeben, zeigt IntelliSense Ihnen Funktionen an, die an einer früheren Stelle im Code oder in der Bibliothek eines Drittanbieters definiert wurden, die Sie zu dem Projekt hinzugefügt haben.
 
-![Verwendung von IntelliSense](../javascript/media/write-code-intellisense.png)
+![Screenshot eines Visual Studio-Codefensters, in dem das Wort „get“ eingegeben wird. IntelliSense-Informationen werden für alle Funktionen angezeigt, beginnend mit „get“.](../javascript/media/write-code-intellisense.png)
 
 Außerdem kann IntelliSense Ihnen Informationen zu Typen anzeigen, wenn Sie mit dem Cursor auf Programmierelemente zeigen.
 

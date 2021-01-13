@@ -1,5 +1,7 @@
 ---
 title: Registerkarte „Arbeitsspeicher“, Dialogfeld „Prozesseigenschaften“ | Microsoft-Dokumentation
+description: Verwenden Sie die Registerkarte „Arbeitsspeicher“ in den Prozesseigenschaften, um anzuzeigen, wie Arbeitsspeicher von einem Prozess verwendet wird. Sie enthält Informationen zum verwendeten, freigegebenen und virtuellen Speicherplatz.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931277"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903726"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Registerkarte "Arbeitsspeicher", Dialogfeld "Prozesseigenschaften"
 Über die Registerkarte **Arbeitsspeicher** können Sie anzeigen, wie Arbeitsspeicher von einem Prozess verwendet wird. Verschieben Sie den Fokus der Ansicht auf das Fenster [Prozessansicht](../debugger/processes-view.md), um das [Dialogfeld „Prozesseigenschaften“](../debugger/process-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Prozessknoten in der Struktur und anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.

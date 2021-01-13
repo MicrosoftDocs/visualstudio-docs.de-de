@@ -1,5 +1,7 @@
 ---
 title: Registerkarte „Klasse“, Dialogfeld „Fenstereigenschaften“ | Microsoft-Dokumentation
+description: Wählen Sie in Visual Studio die Registerkarte „Klasse“ aus, legen Sie den Fokus auf „Fensteransicht“ fest, wählen Sie einen Fensterknoten aus, und wählen Sie „Ansicht“ > „Eigenschaften“ aus, um das Dialogfeld „Fenstereigenschaften“ anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0917c9a038b42e6302ec1f1782f095ca397a92ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565012"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729027"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Registerkarte "Klasse", Dialogfeld "Fenstereigenschaften"
 Verwenden Sie die Registerkarte **Klasse**, um Informationen zur Klasse des ausgewählten Fensters anzuzeigen. Verschieben Sie den Fokus auf die [Fensteransicht](../debugger/windows-view.md), um das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Fensterknoten in der Struktur aus, und klicken Sie anschließend im Menü **Ansicht** auf **Eigenschaften**.

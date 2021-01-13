@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527921"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833337"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -282,7 +282,7 @@ Nachfolgend werden einige häufige durch den Benutzer verursachte Eingabefehler 
 
 Wenn Sie versuchen, eine Zahl durch 0 (null) zu dividieren, reagiert die Konsolen-App möglicherweise nicht mehr und zeigt Ihnen dann im Code-Editor, welcher Fehler aufgetreten ist.
 
-   ![Der Visual Studio-Code-Editor zeigt den Fehler „Division durch Null“ an](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Screenshot des Visual Studio-Code-Editors, der eine gelb hervorgehobene Zeile zeigt sowie einen „Unbehandelte Ausnahme“-Fehler für „Versuchte Division durch Null“.](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > In manchen Fällen friert die App nicht ein, und der Debugger zeigt keinen Fehler für die Division durch 0 (null) an. Stattdessen gibt die App womöglich ein unerwartetes, nicht numerisches Ergebnis zurück, z. B. ein Unendlichkeitssymbol. Nichtsdestotrotz gilt die folgende Codekorrektur.
@@ -311,7 +311,7 @@ Sie müssen den Code wie folgt bearbeiten, damit dieser Fehler verarbeitet werde
 
 Die App sollte Sie nun zur Eingabe einer anderen Zahl auffordern, wenn Sie versuchen, durch 0 zu dividieren. Diese Aufforderung wird so lange angezeigt, bis Sie eine andere Zahl als 0 eingeben.
 
-   ![Behoben: Fehler „Division durch Null“](./media/csharp-console-calculator-dividebyzero.png)
+   ![Screenshot des Visual Studio-Code-Editors, der den Code für die Switch-Anweisung mit der hinzugefügten Überprüfung auf den Eintrag eines Teilers ungleich Null zeigt.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Beheben des Fehlers „Format“
 

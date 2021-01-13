@@ -1,5 +1,7 @@
 ---
 title: Makros für die Berichterstellung | Microsoft-Dokumentation
+description: Enthält Informationen zu den Debugmakros „_RPTn“ und „_RPTFn“ aus „CRTDBG.H“ und zur Erstellung Ihrer eigenen Debugmakros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +24,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731390"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903791"
 ---
 # <a name="macros-for-reporting"></a>Makros für die Berichterstellung
 Sie können zum Debuggen anstelle von `printf`-Anweisungen die in CRTDBG.H definierten Makros **_RPTn** und **_RPTFn** verwenden. Sie müssen sie nicht in **#ifdef**-Blöcke einschließen, da sie automatisch aus dem Releasebuild entfernt werden, wenn **_DEBUG** nicht definiert ist.
 
 |Makro|Beschreibung|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei _RPT1 bis **_RPT4** fungiert die Meldungszeichenfolge als printf-Formatzeichenfolge für die Argumente.|
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Identisch mit **_RPTn**. Bei diesen Makros wird jedoch zusätzlich der Name der Datei und die Zeilennummer ausgegeben, in der sich das Makro befindet.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gibt eine Meldungszeichenfolge und 0 (null) bis vier Argumente aus. Bei **_RPT1** bis **_RPT4** fungiert die Meldungszeichenfolge als printf-Formatzeichenfolge für die Argumente.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF3**, **_RPTF4**|Identisch mit **_RPTn**. Bei diesen Makros wird jedoch zusätzlich der Name der Datei und die Zeilennummer ausgegeben, in der sich das Makro befindet.|
 
  Betrachten Sie das folgende Beispiel:
 

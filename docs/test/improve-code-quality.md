@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328690"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756642"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Einführung zu Testtools in Visual Studio
 
@@ -51,11 +51,17 @@ Visual Studio kann auch erweitert werden und ermöglicht Kompontenentestadapter 
 
 [Live Unit Testing](../test/live-unit-testing.md) führt automatisch Komponententests im Hintergrund aus und stellt die Code Coverage und die Testergebnisse im Code-Editor von Visual Studio grafisch dar.
 
+> [!NOTE]
+> Live Unit Testing ist nur in der Enterprise-Edition verfügbar und wird nur für .NET-Code unterstützt.
+
 ## <a name="intellitest"></a>IntelliTest
 
 IntelliTest generiert automatisch Komponententests und Testdaten für verwalteten Code. Mit IntelliTest wird die Abdeckung verbessert und der Aufwand zum Erstellen und Verwalten von Komponententests für neuen oder vorhandenen Code drastisch verringert.
 
 ![IntelliTest im Einsatz](media/devtest-intellitest.png)
+
+> [!NOTE]
+> IntelliTest ist nur in der Enterprise Edition verfügbar. Das Feature wird für C#-Code unterstützt, das auf .NET Framework abzielt. .NET Core und .NET Standard werden zurzeit nicht unterstützt.
 
 * [Generieren von Komponententests für Code mit IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest – One Test to rule them all (IntelliTest – Ein Test für alle)](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -64,6 +70,9 @@ IntelliTest generiert automatisch Komponententests und Testdaten für verwaltete
 ## <a name="code-coverage"></a>Codeabdeckung
 
 Die [Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) ermittelt, wie groß der Anteil des Projektcodes ist, der in codierten Tests wie Komponententests tatsächlich getestet wird. Um sich effektiv vor Fehlern zu schützen, sollten Sie die Tests für den Großteil Ihres Codes ausführen bzw. diesen „abdecken“.
+
+> [!NOTE]
+> Code Coverage ist nur in der Enterprise Edition verfügbar.
 
 Die Code Coverage-Analyse kann sowohl in verwaltetem als auch in nicht verwaltetem (nativem) Code angewendet werden.
 
@@ -77,9 +86,15 @@ Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Expl
 
 Mit [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) isolieren Sie den zu testenden Code, indem Sie andere Teile der Anwendung durch Stubs oder Shims ersetzen.
 
+> [!NOTE]
+> Microsoft Fakes ist nur in der Enterprise-Edition verfügbar und wird nur für .NET-Code unterstützt.
+
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Testen der Benutzeroberfläche mit programmierter UI und Selenium
 
 Tests für programmierte UI bieten die Möglichkeit, vollautomatisierte Tests zu erstellen, um die Funktionalität und das Verhalten der Benutzeroberfläche Ihrer Anwendung zu überprüfen. Sie können Benutzeroberflächentests für eine Vielzahl von Technologien automatisieren, so z.B. für XAML-basierte UWP-Apps, Browser-Apps und SharePoint-Apps.
+
+> [!NOTE]
+> Die programmierte Benutzeroberfläche (UI) ist eine veraltete Funktion.
 
 Egal, ob Sie sich für branchenführende Tests für programmierte UI oder für generische, browserbasierte UI-Tests mit Selenium entscheiden: Visual Studio stellt Ihnen alle Tools bereit, die Sie benötigen.
 
@@ -89,10 +104,6 @@ Egal, ob Sie sich für branchenführende Tests für programmierte UI oder für g
 * [Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Testen von UWP-Apps mit Tests der programmierten UI](test-uwp-app-with-coded-ui-test.md)
 * [Introduction to Creating Coded UI Tests with Visual Studio Enterprise (Einführung in die Erstellung von Tests der programmierter UI mit Visual Studio Enterprise)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
-
-## <a name="load-testing"></a>Auslastungstests
-
-[Auslastungstests](../test/quickstart-create-a-load-test-project.md) simulieren die Auslastung einer Serveranwendung durch Ausführen von Komponententests und Webleistungstests.
 
 ## <a name="related-scenarios"></a>Ähnliche Szenarios
 

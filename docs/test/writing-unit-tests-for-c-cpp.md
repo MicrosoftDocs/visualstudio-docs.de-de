@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649615"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729365"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -37,7 +37,7 @@ C++-Komponententestprojekte unterstützen [CodeLens](../ide/find-code-changes-an
 
 **Visual Studio 2017 und höher (alle Editionen)**
 
-- Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie einer Projektmappe hinzufügen können. Öffnen Sie dazu im **Projektmappen-Explorer**mit einem Rechtsklick auf den Projektmappenknoten das Kontextmenü, und klicken Sie auf**Neues Projekt hinzufügen**. Zusätzlich bietet er Optionen, die Sie unter **Tools** > **Optionen** konfigurieren können. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Google Test in Visual Studio](how-to-use-google-test-for-cpp.md).
+- Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie einer Projektmappe hinzufügen können. Öffnen Sie dazu im **Projektmappen-Explorer **mit einem Rechtsklick auf den Projektmappenknoten das Kontextmenü, und klicken Sie auf** Neues Projekt hinzufügen**. Zusätzlich bietet er Optionen, die Sie unter **Tools** > **Optionen** konfigurieren können. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Google Test in Visual Studio](how-to-use-google-test-for-cpp.md).
 
 - **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Sie ist in den **Test-Explorer** integriert, verfügt aber zurzeit nicht über eine Projektvorlage. Diese muss manuell konfiguriert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md).
 
@@ -85,7 +85,7 @@ Wenn der Testcode die Funktionen, die Sie testen möchten, nicht exportiert, kö
 
 Fügen Sie als Nächstes in der *CPP*-Datei in Ihrem Komponententest eine `#include`-Direktive für sämtliche Headerdateien hinzu, die die Typen und Funktionen deklarieren, die Sie testen möchten. Geben Sie `#include "` ein, um IntelliSense zu aktivieren, damit es Ihnen bei der Auswahl hilft. Wiederholen Sie diesen Vorgang für alle zusätzlichen Header.
 
-![Hinzufügen von include-Anweisungen](media/cpp-add-includes-test-project.png)
+![Screenshot des Projektmappen-Explorers, in dem gezeigt wird, wie eine #include-Anweisung hinzugefügt wird, wobei IntelliSense eine einzuschließende Headerdatei hervorhebt.](media/cpp-add-includes-test-project.png)
 
 Um nicht in jede include-Anweisung in der Quelldatei den vollständigen Pfad eingeben zu müssen, können Sie die erforderlichen Ordner unter **Projekt** > **Eigenschaften** > **C/C++**  > **Allgemein** > **Zusätzliche Includeverzeichnisse** hinzufügen.
 
@@ -96,7 +96,7 @@ Um nicht in jede include-Anweisung in der Quelldatei den vollständigen Pfad ein
 
 Die *.cpp*-Datei im Testprojekt enthält eine Stubklasse und eine Methode, die für Sie definiert sind. Sie zeigen ein Beispiel für das Schreiben von Testcode. Die Signaturen nutzen die Makros TEST_CLASS und TEST_METHOD. Deshalb können Sie die Methoden über das Fenster **Test-Explorer** finden.
 
-![Hinzufügen von include-Anweisungen](media/cpp-write-test-methods.png)
+![Screenshot des Fensters „Test-Explorer“, in dem die Codedatei „unittest1.cpp“ gezeigt wird, die eine Stubklasse und -methode enthält, die die Makros TEST_CLASS und TEST_METHOD verwenden.](media/cpp-write-test-methods.png)
 
 TEST_CLASS und TEST_METHOD sind Teil des [nativen Microsoft-Testframeworks](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Der **Test-Explorer** erkennt Testmethoden in anderen unterstützten Frameworks auf dieselbe Weise.
 

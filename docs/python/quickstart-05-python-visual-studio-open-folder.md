@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801671"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761276"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Schnellstart: Öffnen und Ausführen von Python-Code in einem Ordner
 
@@ -70,11 +70,11 @@ In diesem Fall müssen Sie der JSON-Datei mit der Startkonfiguration außerdem e
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Python-Startdatei ( *.py*), und wählen Sie **Einstellungen für Debuggen und Starten** aus.
 
-    ![Befehl „Einstellungen für Debuggen und Starten“ für eine Python-Datei](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![Screenshot der Ordneransicht im Projektmappen-Explorer mit ausgewählter Datei „contemplate-koans.py“ sowie ausgewählten Einstellungen für Debuggen und Starten im Kontextmenü.](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. Wählen Sie im angezeigten Dialogfeld **Debugger auswählen** die Option **Standard** und dann **Auswählen** aus.
 
-    ![Befehl „Einstellungen für Debuggen und Starten“ für eine Python-Datei](media/quickstart-open-folder/10-select-debugger.png)
+    ![Screenshot des Dialogfelds „Debugger auswählen“ mit ausgewähltem Standarddebugger sowie ausgewählter Schaltfläche „Auswählen“.](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
     > Wenn **Standard** nicht zur Auswahl zur Verfügung steht, vergewissern Sie sich, dass Sie eine Python-Datei ( *.py*) ausgewählt haben, als Sie den Befehl **Einstellungen für Debuggen und Starten** ausgewählt haben. Visual Studio bestimmt anhand des Dateityps, welche Debuggeroptionen angezeigt werden.

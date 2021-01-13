@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350721"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815632"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Veröffentlichen einer ASP.NET Core-App in Azure App Service mit Visual Studio unter Linux
 
@@ -52,11 +52,11 @@ In diesem Artikel wird beschrieben, wie Sie das Tool zum **Veröffentlichen** f�
 
 1. Im Dialogfeld **Azure App Service erstellen (Linux)** werden die Felder **App-Name**, **Ressourcengruppe** und **App Service-Plan** mit Daten aufgefüllt. Sie können diese Namen beibehalten oder ändern. Wählen Sie **Erstellen** aus, wenn Sie dazu bereit sind.
 
-    ![Azure App Service auswählen](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+    ![Screenshot: Dialogfeld „Azure App Service erstellen (Linux)“ mit Werten in den Feldern für „Name“, „Abonnement“, „Ressourcengruppe“ und „Hostingplan“](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
 1. Im Dialogfeld **Veröffentlichen** wurde die neu erstellte Instanz automatisch ausgewählt. Wenn Sie dazu bereit sind, klicken Sie auf **Fertig stellen**.
 
-    ![Azure App Service auswählen](../deployment/media/quickstart-publish-linux-select-instance.png)
+    ![Screenshot: Dialogfeld „Veröffentlichen“ mit Auswahl des neu erstellten Diensts „MyASpCoreWebAppOnAzure“ als App Service für die Veröffentlichung](../deployment/media/quickstart-publish-linux-select-instance.png)
 
 1. Wählen Sie **Veröffentlichen**. Visual Studio stellt die App in Azure App Service bereit, und die Web-App wird in Ihrem Browser geladen. Im Bereich **Veröffentlichen** werden in den Projekteigenschaften die Website-URL und andere Details angezeigt.
 

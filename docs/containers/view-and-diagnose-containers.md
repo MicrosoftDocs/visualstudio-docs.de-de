@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742780"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729222"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Anzeigen und Diagnostizieren von Containern und Images in Visual Studio
 
@@ -27,7 +27,7 @@ Mithilfe des Fensters **Container** können Sie anzeigen, was in den Containern 
 
 Das Fenster **Container** wird automatisch geöffnet, wenn Sie ein .NET-Containerprojekt starten. Drücken Sie **STRG**+**Q**, um das Visual Studio-Suchfeld zu aktivieren, geben Sie `Containers` ein, und wählen Sie das erste Element aus, um Ihre Container jederzeit in Visual Studio anzuzeigen. Sie können das **Containerfenster** auch über das Hauptmenü öffnen. Verwenden Sie den Menüpfad **Ansicht** > **Weitere Fenster** > **Container**.  
 
-![Screenshot: Registerkarte „Umgebung“ im Containerfenster](media/view-and-diagnose-containers/container-window.png)
+![Screenshot des Fensters „Container“ in Visual Studio mit einem ausgewählten Container im linken Bereich und der ausgewählten Registerkarte „Umgebung“ im rechten Bereich.](media/view-and-diagnose-containers/container-window.png)
 
 Auf der linken Seite wird die Liste der Container auf Ihrem lokalen Computer angezeigt. Die Container, die Ihrer Projektmappe zugeordnet sind, werden unter **Lösungscontainer** angezeigt. Auf der rechten Seite wird ein Bereich mit den Registerkarten **Umgebung**, **Ports**, **Protokolle** und **Dateien** angezeigt.
 
@@ -38,7 +38,7 @@ Auf der linken Seite wird die Liste der Container auf Ihrem lokalen Computer ang
 
 Auf der Registerkarte **Umgebung** werden die Umgebungsvariablen im Container angezeigt. Sie können diese Variablen auf vielerlei Weisen für den Container Ihrer App festlegen, z. B. in der Dockerfile, in einer ENV-Datei oder mithilfe der Option „-e“, wenn Sie einen Container mithilfe eines Docker-Befehls starten.
 
-![Screenshot: Registerkarte „Umgebung“ im Containerfenster](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Screenshot des Fensters „Container“ in Visual Studio, in dem die Umgebungsvariablen für den Container „WebApplication11“ angezeigt werden.](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > Änderungen an den Umgebungsvariablen werden nicht in Echtzeit wiedergegeben. Außerdem handelt es sich bei den Umgebungsvariablen auf dieser Registerkarte um Systemumgebungsvariablen im Container, die nicht den lokalen Benutzerumgebungsvariablen der App entsprechen.

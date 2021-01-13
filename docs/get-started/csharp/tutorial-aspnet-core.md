@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780972"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833324"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Erste Schritte mit C# und ASP.NET Core in Visual Studio
 
@@ -154,7 +154,7 @@ Diese Lösung verwendet das **Razor Pages**-Entwurfsmuster. Dieses unterscheidet
 
  1. Zeigen Sie die Datei **About.cshtml** im Code-Editor an.
 
-     ![Anzeigen der Datei „About.cshtml“ im Visual Studio-Code-Editor](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Screenshot: Erste zehn Zeilen der Datei „About.cshtml“ im Code-Editor von Visual Studio](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
  1. Wählen Sie die Datei **About.cshtml.cs** aus.
 
@@ -162,7 +162,7 @@ Diese Lösung verwendet das **Razor Pages**-Entwurfsmuster. Dieses unterscheidet
 
  1. Zeigen Sie die Datei **About.cshtml.cs** im Code-Editor an.
 
-     ![Anzeigen der Datei „About.cshtml“ im Visual Studio-Code-Editor](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Screenshot: Erste 18 Zeilen der Datei „About.cshtml.cs“ im Code-Editor von Visual Studio ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. Das Projekt enthält den Ordner **wwwroot**, der das Stammverzeichnis Ihrer Website ist. Erweitern Sie den Ordner, um den Inhalt anzuzeigen.
 

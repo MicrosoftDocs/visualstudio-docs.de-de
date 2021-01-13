@@ -1,6 +1,7 @@
 ---
 title: Verwalten von Ausnahmen mit dem Debugger | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Es wird beschrieben, wie Sie angeben, bei welchen Ausnahmen der Debugger eine Unterbrechung vornimmt, an welchem Punkt die Unterbrechung durch den Debugger erfolgen soll und wie Unterbrechungen verarbeitet werden.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -33,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348456"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903847"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit dem Debugger in Visual Studio
 
@@ -184,7 +185,7 @@ Wenn Sie eine Ausnahme zu den Ausnahmen für GPU-Speicherzugriff, JavaScript-Lau
 
 Ausnahmeeinstellungen werden in der SUO-Datei der Projektmappe beibehalten, sie gelten also für eine bestimmte Projektmappe. Sie können spezifische Ausnahmeeinstellungen nicht für andere Projektmappen wiederverwenden. Nun werden nur hinzugefügte Ausnahmen beibehalten, gelöschte Ausnahmen nicht. Die hinzugefügte Ausnahme ist weiterhin vorhanden, wenn Sie die Projektmappe schließen und erneut öffnen. Wenn Sie eine Ausnahme dagegen löschen und die Projektmappe anschließend schließen und wieder öffnen, wird die Ausnahme nicht mehr angezeigt.
 
-Das Fenster **Ausnahmeeinstellungen** unterstützt generische Ausnahmetypen in C#, aber nicht in Visual Basic. Um bei Ausnahmen wie `MyNamespace.GenericException<T>`eine Unterbrechung vorzunehmen, müssen Sie die Ausnahme als **MyNamespace.GenericException`1**hinzufügen. Wenn Sie eine Ausnahme wie den folgenden Code erstellt haben:
+Das Fenster **Ausnahmeeinstellungen** unterstützt generische Ausnahmetypen in C#, aber nicht in Visual Basic. Um bei Ausnahmen wie `MyNamespace.GenericException<T>`eine Unterbrechung vorzunehmen, müssen Sie die Ausnahme als **MyNamespace.GenericException`1** hinzufügen. Wenn Sie eine Ausnahme wie den folgenden Code erstellt haben:
 
 ```csharp
 public class GenericException<T> : Exception
@@ -216,9 +217,9 @@ So fügen Sie bedingte Ausnahmen hinzu:
 
    ![Zusätzliche Bedingungen für eine Ausnahme](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Geben Sie für jede Bedingungszeile den Namen des Moduls ein, und ändern Sie die Liste der Vergleichsoperatoren in **Equals** (gleich) oder **Not equals** (nicht gleich). Sie können Platzhalter ( **\\\*** ) im Namen angeben, um mehrere Module anzugeben.
+3. Geben Sie für jede Bedingungszeile den Namen des Moduls ein, und ändern Sie die Liste der Vergleichsoperatoren in **Equals** (gleich) oder **Not equals** (nicht gleich). Sie können Platzhalter (* *\\\** _) im Namen angeben, um mehrere Module anzugeben.
 
-4. Wenn Sie eine Bedingung löschen müssen, wählen Sie das **X** am Ende der Bedingungszeile aus.
+4. Wenn Sie eine Bedingung löschen müssen, wählen Sie das *X** am Ende der Bedingungszeile aus.
 
 ## <a name="see-also"></a>Siehe auch
 

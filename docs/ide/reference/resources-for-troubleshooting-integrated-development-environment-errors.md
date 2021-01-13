@@ -1,8 +1,8 @@
 ---
-title: Ressourcen für die Problembehandlung bei Fehlern
+title: Ressourcen für die Problembehandlung bei IDE-Fehlern
 description: Hier erfahren Sie, wie Sie mithilfe von Knowledge Base-Artikeln, Foren oder des Produktsupports IDE-Fehler beheben, deren Fehlermeldungen nicht informativ genug sind, um Ihnen beim Beheben eines Problems zu helfen.
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2020
+ms.date: 12/18/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -95,16 +95,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fdf18c67be8188bd03c498778fe8e6ad9409ee
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616582"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696545"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressourcen für die Problembehandlung bei Fehlern der integrierten Entwicklungsumgebung
+# <a name="resources-for-troubleshooting-ide-errors"></a>Ressourcen für die Problembehandlung bei IDE-Fehlern
 
-Es gibt nicht für alle Fehlermeldungen ein zugehöriges Hilfethema. Wenn Sie das Problem anhand der Informationen in der Fehlermeldung nicht lösen können, können Sie andere Ressourcen wie Knowledge Base-Artikel, Foren oder den Produktsupport konsultieren.
+Es gibt nicht für alle Fehlermeldungen ein zugehöriges Hilfethema. Wenn Sie das Problem anhand der Informationen in einer Fehlermeldung nicht lösen können, können Sie andere Ressourcen wie Knowledge Base-Artikel, Foren oder den Produktsupport konsultieren.
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Problembehandlung bei Visual Studio für Mac](/visualstudio/mac/troubleshooting).
@@ -115,9 +115,14 @@ Sie können die Knowledge Base (KB) online nach Artikeln zu Produktproblemen dur
 
 ## <a name="developer-forums"></a>Entwicklerforen
 
-In Foren können Sie mit anderen Entwicklern sowie mit Microsoft-Mitarbeitern interagieren. Wenn ein Fehler aufgetreten ist, für den Sie keine Lösung finden, können Sie eine entsprechende Frage in einem Forum veröffentlichen. Darüber hinaus können Sie Newsgroups nach Beiträgen durchsuchen, die von anderen Benutzern zum selben Problem veröffentlicht wurden.
+In Foren können Sie mit anderen Entwicklern sowie mit Microsoft-Mitarbeitern interagieren. Wenn ein Fehler aufgetreten ist, für den Sie keine Lösung finden, können Sie eine entsprechende Frage in einem Forum veröffentlichen. Darüber hinaus können Sie Foren nach Beiträgen durchsuchen, die von anderen Benutzern zum selben Problem veröffentlicht wurden.
 
-Sie können auf der Website der [Technischen Microsoft-Communitys](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) auf Foren, Blogs, Chats und andere Ressourcen zugreifen.
+Im Folgenden finden Sie eine Liste der Forumressourcen:
+
+- [Visual Studio auf Q&A](/answers/products/vs/)
+- [MSDN-Forum für Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio)
+- [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
+- [Reddit](https://www.reddit.com/r/VisualStudio)
 
 ## <a name="product-support"></a>Produktsupport
 
