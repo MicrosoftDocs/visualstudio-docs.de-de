@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: fbbd2278a59197601afe02e777e89245fc6bb421
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92210902"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97844764"
 ---
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und anschließend eine App zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Compiler, Codevervollständigungstools, grafische Designer und viele andere Features zur Erleichterung der Softwareentwicklung.
 
@@ -93,7 +93,7 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
 - [Visual Studio-Suche](../../ide/visual-studio-search.md)
 
-   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Die Visual Studio-Suche ( **STRG**+**Q** ) ist eine gute Möglichkeit, IDE-Features und Code schnell zu finden.
+   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Die Visual Studio-Suche (**STRG**+**Q**) ist eine gute Möglichkeit, IDE-Features und Code schnell zu finden.
 
    ::: moniker range="vs-2017"
 
@@ -173,12 +173,12 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
    Im Dialogfeld **Neues Projekt** werden mehrere *Projektvorlagen* angezeigt. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind.
 
-1. Wählen Sie unter **Visual C#** die Vorlagenkategorie **.NET Core** und anschließend die Vorlage **Konsolen-App (.NET Core)** aus. Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK** .
+1. Wählen Sie unter **Visual C#** die Vorlagenkategorie **.NET Core** und anschließend die Vorlage **Konsolen-App (.NET Core)** aus. Geben Sie **HelloWorld** im Textfeld **Name** ein, und klicken Sie auf **OK**.
 
    ![.NET Core-App-Vorlage](../media/overview-new-project-dialog.png)
 
    > [!NOTE]
-   > Wenn die Kategorie **.NET Core** nicht angezeigt wird, müssen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** installieren. Klicken Sie hierfür im Dialogfeld **Neues Projekt** unten links auf den Link **Visual Studio-Installer öffnen** . Nachdem der Visual Studio-Installer geöffnet wurde, wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Ändern** .
+   > Wenn die Kategorie **.NET Core** nicht angezeigt wird, müssen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** installieren. Klicken Sie hierfür im Dialogfeld **Neues Projekt** unten links auf den Link **Visual Studio-Installer öffnen**. Nachdem der Visual Studio-Installer geöffnet wurde, wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Ändern**.
 
    Visual Studio erstellt daraufhin das Projekt. Die Vorlage erstellt eine einfache „Hello World“-Anwendung, mit der die <xref:System.Console.WriteLine?displayProperty=nameWithType>-Methode aufgerufen wird, um die Literalzeichenfolge „Hello World!“ im Konsolenfenster (Programmausgabe).
 
@@ -198,7 +198,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
    Visual Studio erstellt die App, und es wird ein Konsolenfenster mit der Meldung **Hello World!** geöffnet. Sie haben nun eine funktionierende App!
 
-   ![Konsolenfenster](../media/overview-console-window.png)
+   ![Screenshot des „cmd.exe“-Konsolenfensters, in dem die Ausgabe „Hallo Welt!“ und „Drücken Sie eine beliebige Taste, um den Vorgang fortzusetzen“ angezeigt wird.](../media/overview-console-window.png)
 
 1. Drücken Sie eine beliebige Taste auf der Tastatur, um das Konsolenfenster zu schließen.
 
@@ -221,7 +221,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
    Visual Studio erstellt die App neu, und Sie werden im nun geöffneten Konsolenfenster zur Eingabe Ihres Namens aufgefordert.
 
-1. Geben Sie Ihren Namen im Konsolenfenster ein, und drücken Sie die **EINGABETASTE** .
+1. Geben Sie Ihren Namen im Konsolenfenster ein, und drücken Sie die **EINGABETASTE**.
 
    ![Konsolenfenstereingabe](../media/overview-console-input.png)
 
@@ -267,7 +267,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
    Visual Studio erstellt die App, und es wird ein Konsolenfenster mit der Meldung **Hello World!** geöffnet. Sie haben nun eine funktionierende App!
 
-   ![Konsolenfenster](../media/vs-2019/overview-console-window.png)
+   ![Screenshot der Microsoft Visual Studio-Debugging-Konsole, in der die Ausgabe „Hallo Welt“ und „Drücken Sie eine beliebige Taste, um das Fenster zu schließen“ angezeigt wird.](../media/vs-2019/overview-console-window.png)
 
 1. Drücken Sie eine beliebige Taste auf der Tastatur, um das Konsolenfenster zu schließen.
 
@@ -286,13 +286,13 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Führen Sie die App erneut aus, indem Sie **Debuggen** > **Ohne Debuggen starten** auswählen oder **STRG**+**F5** drücken.
+1. Führen Sie die App noch mal aus, indem Sie auf **Debuggen** > **Ohne Debuggen starten** klicken oder **STRG**+**F5** drücken.
 
    Visual Studio erstellt die App neu, und Sie werden im nun geöffneten Konsolenfenster zur Eingabe Ihres Namens aufgefordert.
 
-1. Geben Sie Ihren Namen im Konsolenfenster ein, und drücken Sie die **EINGABETASTE** .
+1. Geben Sie Ihren Namen im Konsolenfenster ein, und drücken Sie die **EINGABETASTE**.
 
-   ![Konsolenfenster](../media/vs-2019/overview-console-input.png)
+   ![Screenshot der Microsoft Visual Studio-Debugging-Konsole, in der die Aufforderung zur Eingabe eines Namens, die Eingabe und die Ausgabe „Hallo Georgette!“ angezeigt wird.](../media/vs-2019/overview-console-input.png)
 
 1. Drücken Sie eine beliebige Taste, um das Konsolenfenster zu schließen und das ausgeführte Programm zu beenden.
 
@@ -306,13 +306,13 @@ Benennen Sie zunächst die Variable `name` um:
 
 1. Doppelklicken Sie auf die Variable `name`, um sie auszuwählen.
 
-2. Geben Sie den neuen Namen ( **username** ) der Variable ein.
+2. Geben Sie den neuen Namen (**username**) der Variable ein.
 
    Achten Sie auf das graue Feld, das die Variable umgibt und auf die Glühbirne, die am Rand angezeigt wird.
 
 ::: moniker range="vs-2017"
 
-3. Klicken Sie auf das Glühbirnensymbol, um die verfügbaren [Schnellaktionen](../../ide/quick-actions.md) anzuzeigen. Klicken Sie auf **'name' in 'username' umbenennen** .
+3. Klicken Sie auf das Glühbirnensymbol, um die verfügbaren [Schnellaktionen](../../ide/quick-actions.md) anzuzeigen. Klicken Sie auf **'name' in 'username' umbenennen**.
 
    ![Umbenennen einer Aktion in Visual Studio](../media/rename-quick-action.png)
 
@@ -324,7 +324,7 @@ Benennen Sie zunächst die Variable `name` um:
 
 ::: moniker range=">=vs-2019"
 
-3. Klicken Sie auf das Glühbirnensymbol, um die verfügbaren [Schnellaktionen](../../ide/quick-actions.md) anzuzeigen. Klicken Sie auf **'name' in 'username' umbenennen** .
+3. Klicken Sie auf das Glühbirnensymbol, um die verfügbaren [Schnellaktionen](../../ide/quick-actions.md) anzuzeigen. Klicken Sie auf **'name' in 'username' umbenennen**.
 
    ![Umbenennen einer Aktion in Visual Studio](../media/vs-2019/rename-quick-action.png)
 
@@ -360,13 +360,13 @@ Benennen Sie zunächst die Variable `name` um:
 
    ![Refactoring „Inline temporär variabel“ in Visual Studio](../media/inline-temporary-variable-refactoring.png)
 
-9. Klicken Sie auf **Inline temporär variabel** , um den Code umzugestalten.
+9. Klicken Sie auf **Inline temporär variabel**, um den Code umzugestalten.
 
 ::: moniker range="vs-2017"
 
 10. Führen Sie das Programm erneut aus, indem Sie **STRG**+**F5** drücken. Die Ausgabe sieht in etwa folgendermaßen aus:
 
-    ![Konsolenfenster mit Programmausgabe](../media/overview-console-final.png)
+    Screenshot der „cmd.exe“-Konsole, in der die Aufforderung zur Eingabe eines Namens, die Eingabe und die Ausgabe „Hallo Georgette! Tag des Jahres: 151“ angezeigt wird.](../media/overview-console-final.png)
 
 ::: moniker-end
 
@@ -374,7 +374,7 @@ Benennen Sie zunächst die Variable `name` um:
 
 10. Führen Sie das Programm erneut aus, indem Sie **STRG**+**F5** drücken. Die Ausgabe sieht in etwa folgendermaßen aus:
 
-    ![Konsolenfenster mit Programmausgabe](../media/vs-2019/overview-console-final.png)
+    ![Screenshot der Microsoft Visual Studio-Debugging-Konsole, in der die Aufforderung zur Eingabe eines Namens, die Eingabe und die Ausgabe „Hallo Georgette! Tag des Jahres: 43“ angezeigt wird.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 
@@ -392,7 +392,7 @@ Legen Sie einen Breakpoint fest, um den Wert der Variable `username` zu sehen, w
 
 1. Starten Sie das Debuggen, indem Sie auf **Debuggen** > **Debuggen starten** klicken oder **F5** drücken.
 
-1. Wenn das Konsolenfenster angezeigt wird und Sie nach Ihrem Namen fragt, geben Sie diesen ein, und drücken Sie die **EINGABETASTE** .
+1. Wenn das Konsolenfenster angezeigt wird und Sie nach Ihrem Namen fragt, geben Sie diesen ein, und drücken Sie die **EINGABETASTE**.
 
    Der Fokus kehrt zum Code-Editor von Visual Studio zurück und die Codezeile mit dem Breakpoint wird gelb hervorgehoben. Das bedeutet, dass dies die nächste Codezeile ist, die vom Programm ausgeführt wird.
 
@@ -400,19 +400,19 @@ Legen Sie einen Breakpoint fest, um den Wert der Variable `username` zu sehen, w
 
    ![Variablenwert während des Debuggens in Visual Studio](../media/debugging-variable-value.png)
 
-1. Drücken Sie erneut **F5** , damit das Programm bis zum Abschluss ausgeführt wird.
+1. Drücken Sie erneut **F5**, damit das Programm bis zum Abschluss ausgeführt wird.
 
 Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Tour zu den Debuggerfeatures](../../debugger/debugger-feature-tour.md).
 
 ## <a name="customize-visual-studio"></a>Anpassen von Visual Studio
 
-Sie können die Benutzeroberfläche von Visual Studio personalisieren und beispielsweise das Standardfarbdesign ändern. So ändern Sie das Design in **Dunkel** :
+Sie können die Benutzeroberfläche von Visual Studio personalisieren und beispielsweise das Standardfarbdesign ändern. So ändern Sie das Design in **Dunkel**:
 
-1. Klicken Sie auf der Menüleiste auf **Extras** > **Optionen** , um das Dialogfeld **Optionen** zu öffnen.
+1. Klicken Sie auf der Menüleiste auf **Extras** > **Optionen**, um das Dialogfeld **Optionen** zu öffnen.
 
 ::: moniker range="vs-2017"
 
-2. Ändern Sie auf der Optionenseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel** , und klicken Sie dann auf **OK** .
+2. Ändern Sie auf der Optionenseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
 
    Das Farbdesign wird für die gesamte IDE in **Dunkel** geändert.
 
@@ -422,7 +422,7 @@ Sie können die Benutzeroberfläche von Visual Studio personalisieren und beispi
 
 ::: moniker range=">=vs-2019"
 
-2. Ändern Sie auf der Optionenseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel** , und klicken Sie dann auf **OK** .
+2. Ändern Sie auf der Optionenseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
 
    Das Farbdesign wird für die gesamte IDE in **Dunkel** geändert.
 

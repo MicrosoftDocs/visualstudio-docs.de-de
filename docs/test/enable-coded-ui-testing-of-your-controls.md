@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441403"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815762"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 
 Steuerelemente können besser getestet werden, wenn Sie Unterstützung für das Testframework der programmierten UI implementieren. Der Umfang der Unterstützung kann schrittweise erweitert werden. Beginnen Sie mit der Unterstützung von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung. Konfigurieren Sie anschließend den Test-Generator der programmierten UI so, dass die benutzerdefinierten Eigenschaften des Steuerelements erkannt werden. Stellen Sie benutzerdefinierte Klassen bereit, um den Zugriff auf diese Eigenschaften aus generiertem Code zu ermöglichen. Außerdem können Sie dazu beitragen, dass Aktionen vom Test-Generator der programmierten UI auf eine Art aufgezeichnet werden, die den Zweck der jeweiligen Aktion genauer widerspiegelt.
 
-![CUIT&#95;Full](../test/media/cuit_full.png)
+!Diagramm, das zeigt, wie Klassen in ChartControl durch die Klasse CreateAccessabilityInstance-Klasse zu Klassen in ChartControlExtensionPackage erweitert werden.](../test/media/cuit_full.png)
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Unterstützen von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung durch Implementieren von Barrierefreiheit
 
 Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelementen, die während einer Aufzeichnung gefunden werden, und generiert dann Code zur Wiedergabe dieser Sitzung. Wenn Barrierefreiheit vom Steuerelement nicht unterstützt wird, erfasst der Test-Generator der programmierten UI Aktionen wie z.B. Mausklicks anhand von Bildschirmkoordinaten. Bei der Wiedergabe des Tests werden diese Aktionen vom generierten Code an den gleichen Bildschirmkoordinaten ausgeführt. Wenn das Steuerelement bei der Wiedergabe des Tests an einer anderen Stelle auf dem Bildschirm angezeigt wird, kann der generierte Code die entsprechende Aktion nicht ausführen. Wenn Sie Barrierefreiheit für das Steuerelement nicht implementieren, kann dies möglicherweise zu Fehlern führen, wenn die Testwiedergabe auf unterschiedlichen Bildschirmkonfigurationen oder in unterschiedlichen Umgebungen erfolgt oder Änderungen am Benutzeroberflächenlayout vorgenommen wurden.
 
-![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![Screenshot des Aufzeichnungsfensters im Test-Generator der programmierten UI. Die Schaltfläche „Anhalten“ ist hervorgehoben, und in einer QuickInfo wird „Klicken Sie auf ‚ChartControl‘-Client“ angezeigt.](../test/media/cuit_recordnosupport.png)
 
 Wenn Sie Barrierefreiheit implementieren, wird diese vom Test-Generator der programmierten UI im Rahmen der Testaufzeichnung für das Erfassen von Informationen zum Steuerelement verwendet. Bei der anschließenden Ausführung des Tests erfolgt die Wiedergabe der entsprechenden Ereignisse durch den generierten Code auf dem Steuerelement, auch wenn sich dieses an einer anderen Stelle der Benutzeroberfläche befindet. Testautoren können mithilfe der grundlegenden Eigenschaften des Steuerelements auch Assert-Vorgänge erstellen.
 
-![CUIT&#95;Record](../test/media/cuit_record.png)
+![Screenshot des Aufzeichnungsfensters im Test-Generator der programmierten UI. Die Schaltfläche „Anhalten“ ist hervorgehoben, und in einer QuickInfo wird „Klicken Sie auf die Bezeichnung ‚A‘“ angezeigt.](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>So unterstützen Sie Aufzeichnung und Wiedergabe, Eigenschaftenvalidierung und Navigation für ein Windows Forms-Steuerelement
 Barrierefreiheit kann wie in der folgenden Prozedur dargestellt implementieren werden. Ein ausführliche Anleitung finden Sie unter <xref:System.Windows.Forms.AccessibleObject>.
 
-![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![Diagramm mit Klassen in ChartControl, die die Beziehung zwischen CreateAccessabilityInstance und der ChartControl.CurveLegend-Klasse darstellen.](../test/media/cuit_accessible.png)
 
 1. Implementieren Sie eine von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitete Klasse, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, um ein Objekt der Klasse zurückzugeben.
 
@@ -77,11 +77,11 @@ Barrierefreiheit kann wie in der folgenden Prozedur dargestellt implementieren w
 
 Nach dem Implementieren grundlegender Unterstützung für die Aufzeichnung und Wiedergabe sowie die Eigenschaftenvalidierung können Sie die benutzerdefinierten Eigenschaften des Steuerelements für Tests der programmierten UI verfügbar machen, indem Sie ein <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>-Plug-In implementieren. Beispielsweise wird von der folgenden Prozedur ein Eigenschaftenanbieter erstellt, mit dem Tests der programmierten UI auf die Zustandseigenschaft der untergeordneten CurveLegend-Steuerelemente des Diagrammsteuerelements zugreifen können:
 
-![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![Screenshot des Hauptfensters des Test-Generators der programmierten UI, das teilweise von einem Fenster „Assertionen hinzufügen“ verdeckt wird, in dem die Eigenschaft „Zustand“ eines Textsteuerelements ausgewählt ist.](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>So unterstützen Sie die Validierung benutzerdefinierter Eigenschaften
 
-![CUIT&#95;Props](../test/media/cuit_props.png)
+![Diagramm der Klassen in ChartControl und ChartControlExtension mit den hervorgehobenen Klassen ChartControlExtensionPackage und ChartControlIPropertyProvider.](../test/media/cuit_props.png)
 
 1. Überschreiben Sie die zugängliche <xref:System.Windows.Forms.AccessibleObject.Description%2A>-Eigenschaft des Kurvenlegendenobjekts, um Werte von Rich-Eigenschaften in der Beschreibungszeichenfolge zu übergeben. Trennen Sie mehrere Werte per Semikolon (;) voneinander ab.
 
@@ -149,7 +149,7 @@ Wenn ein Eigenschaftenanbieter für den Zugriff auf die benutzerdefinierten Eige
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>So fügen Sie eine spezialisierte Klasse zum Zugriff auf das Steuerelement hinzu
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
+![Diagramm der Klassen in ChartControl und ChartControlExtension mit der hervorgehobenen Klasse CurveLegend unter ChartControlExtensionPackage.](../test/media/cuit_codegen.png)
 
 1. Implementieren Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> abgeleitete Klasse, und fügen in der Sucheigenschaftenauflistung des Konstruktors den Typ des Steuerelements hinzu.
 
@@ -165,7 +165,7 @@ Beim Aufzeichnen eines Tests in Visual Studio werden alle Maus- und Tastaturerei
 
 ### <a name="to-support-intent-aware-actions"></a>So unterstützen Sie absichtbewusste Aktionen
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png)
+![Diagramm der Klassen ChartControl und ChartControlExtensionPackage mit der hervorgehobenen Klassen ChartControlActionFilter unter ChartControlExtensionPackage.](../test/media/cuit_actions.png)
 
 1. Implementieren Sie eine Aktionsfilterklasse, die von [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) abgeleitet ist und die Eigenschaften [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) und [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)) überschreibt.
 

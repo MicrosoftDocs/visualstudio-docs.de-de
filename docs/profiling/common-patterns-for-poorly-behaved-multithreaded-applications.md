@@ -1,5 +1,6 @@
 ---
 title: Häufige Muster von Multithread-Apps mit unerwünschtem Verhalten
+description: Erfahren Sie mehr über die gängigen Muster von Multithreadanwendungen mit unerwünschtem Verhalten, die in der Visual Studio-Parallelitätsschnellansicht enthalten sind.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808941"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815788"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
 
@@ -37,17 +38,17 @@ Weitere Informationen finden Sie im Abschnitt „Start with the problem (Beim Pr
 
 ## <a name="uneven-workload-distribution"></a>Ungleiche Arbeitslastverteilung
 
-![Ungleiche Arbeitsauslastung](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Screenshot eines Workloaddiagramms für parallele Threads in der Parallelitätsschnellansicht. Die Threads enden zu unterschiedlichen Zeiten, und weisen deshalb ein Treppenstufenmuster auf.](../profiling/media/unevenworkload_1.png)
 
 Bei einer unregelmäßigen Verteilung der Arbeitslast auf mehrere parallele Threads in einer Anwendung tritt nach Abschluss der Ausführung der Threads ein typisches Treppenmuster auf. Dieses wird in der obigen Abbildung gezeigt. Die Parallelitätsschnellansicht zeigt in der Regel sehr nahe beieinander liegende Startzeiten für die einzelnen parallelen Threads an. Normalerweise werden diese Threads jedoch nicht gleichzeitig, sondern unregelmäßig beendet. Dieses Muster deutet auf eine unregelmäßige Verteilung der Arbeitslast in einer Gruppe paralleler Threads hin, was sich negativ auf die Leistung auswirken kann. Die beste Methode, dieses Problem zu beheben, besteht darin, den Algorithmus erneut auszuwerten, mit dem die Arbeitslast auf die parallelen Threads aufgeteilt wurde.
 
 Wie in der folgenden Abbildung gezeigt wird, kann dieses Symptom von der Parallelitätsschnellansicht auch als graduelle Abstufung der CPU-Nutzung in der CPU-Auslastungsansicht dargestellt werden.
 
-![Ungleiche Arbeitsauslastung](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Screenshot der CPU-Nutzungsansicht in der Parallelitätsschnellansicht mit einem Treppenstufenmuster am Ende des CPU-Auslastungsdiagramms.](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>Überzeichnung
 
-![Überzeichnung](../profiling/media/oversubscription.png "Überzeichnung")
+![Screenshot eines Workloaddiagramms für alle aktiven Threads in der Parallelitätsschnellansicht. Eine Legende zeigt die mit „Ausführung“ und „Vorzeitiger Entfernung“ verbrachte Zeit.](../profiling/media/oversubscription.png)
 
 Im Falle einer Überzeichnung ist die Anzahl der aktiven Threads in einem Prozess größer als die Anzahl der verfügbaren logischen Kerne im System. Die obige Abbildung zeigt die Ergebnisse der Überzeichnung mit erheblicher vorzeitiger Entfernung der Zeilenbildung in allen aktiven Threads. Darüber hinaus zeigt die Legende, dass ein großer Prozentsatz der Zeit auf die vorzeitige Entfernung entfällt (84 Prozent in diesem Beispiel). Dies zeigt möglicherweise an, dass das System vom Prozess aufgefordert wird, mehr parallele Threads auszuführen, als logische Kerne vorhanden sind. Es kann jedoch auch sein, dass Ressourcen von anderen Prozessen im System verwendet werden, die eigentlich für diesen Prozess zur Verfügung stehen sollten.
 

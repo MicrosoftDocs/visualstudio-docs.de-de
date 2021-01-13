@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
-ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
+ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97050825"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761354"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Melden eines Problems mit Visual Studio oder Visual Studio-Installer
 
@@ -24,8 +24,9 @@ ms.locfileid: "97050825"
 Sie können ein Problem aus Visual Studio oder aus dem Installationsprogramm melden. Mit dem integrierten Feedbacktool können Sie problemlos Diagnoseinformationen hinzufügen, die den Visual Studio-Teams helfen, Probleme zu diagnostizieren und zu beheben. Im Folgenden finden Sie die Schritte zum Melden eines Problems.
 
 1. Wählen Sie in **Visual Studio** das Feedback-Symbol in der oberen rechten Ecke und dann „Ein Problem melden“ aus. Sie können das Feedback-Tool auch aus dem Menü **Hilfe** > **Feedback senden** > **Ein Problem melden** aufrufen.
-![Popupfenster „Problem melden“ auf der Visual Studio Developer Community-Website ](media/feedback-button.png)Alternativ können Sie ein Problem im **Visual Studio-Installer** melden, wenn Sie Visual Studio nicht installieren können oder nicht auf das Feedback-Tool in Visual Studio zugreifen können.  Wählen Sie im Installer das Feedback-Symbol in der oberen rechten Ecke und dann „Ein Problem melden“ aus.
-![Popupelement „Problem melden“ auf der Visual Studio Developer Community-Website](media/installer.png)
+![Screenshot, der das in der rechten oberen Ecke des Visual Studio-Fensters ausgewählte Feedbacksymbol zeigt sowie die im Kontextmenü ausgewählte Option „Problem melden“.](media/feedback-button.png)
+Alternativ können Sie ein Problem im **Visual Studio-Installer** melden, wenn Sie Visual Studio nicht installieren können oder nicht auf das Feedback-Tool in Visual Studio zugreifen können.  Wählen Sie im Installer das Feedback-Symbol in der oberen rechten Ecke und dann „Ein Problem melden“ aus.
+![Screenshot, der das in der rechten oberen Ecke des Visual Studio-Installers ausgewählte Feedbacksymbol zeigt sowie die im Kontextmenü ausgewählte Option „Problem melden“.](media/installer.png)
 
 1. Wenn Sie auf **Problem melden** klicken, wird Ihr Standardbrowser geöffnet, und Sie werden mit demselben Konto angemeldet, das Sie für die Anmeldung bei Visual Studio verwenden.
 
@@ -67,11 +68,11 @@ Wenn bei einem Issue wichtige Informationen fehlen, weisen wir den Status **Need
 
 1. Folgen Sie dem Link in der E-Mail zum Problembericht, oder navigieren Sie zur Startseite, um alle Berichte im Status **Weitere Informationen erforderlich** anzuzeigen.
 
-    ![Mein Feedback](../ide/media/feedback-my-feedback.png)
+    ![Screenshot der Startseite des Visual Studio-Feedbackfensters. Ein Feedbackelement ist aufgelistet, das mit der Bezeichnung „Weitere Informationen erforderlich“ in Rot markiert ist.](../ide/media/feedback-my-feedback.png)
 
 1. Wenn Sie den Link „Weitere Informationen bereitstellen“ im Problembericht auswählen, erfolgt die Navigation zu einem neuen Bildschirm. Von dort aus können Sie sehen, welche Informationen angefordert werden.
 
-   ![Mein Feedback](../ide/media/feedback-need-more-info.png)
+   ![Screenshot des Visual Studio-Feedbackfensters mit den Informationen, die von Microsoft zur Behebung des Problems angefordert werden.](../ide/media/feedback-need-more-info.png)
 
 1. Sie können durch das Hinzufügen von Kommentaren oder Anlagen und das Aufzeichnen von Schritten weitere Informationen bereitstellen. Dies funktioniert ähnlich wie das Melden neuer Probleme oder das Bereitstellen zusätzlicher Informationen beim Abstimmen für ein Problem.
 
@@ -81,9 +82,9 @@ Sie können diese Anforderungen auf dem Bildschirm **Mein Feedback** zusammen mi
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Suchen nach Lösungen oder Geben von Feedback
 
-Wenn Sie ein Problem nicht über Visual Studio melden möchten oder können, wurde es möglicherweise bereits gemeldet und eine Lösung auf der Website [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) veröffentlicht.
+Wenn Sie ein Problem nicht über Visual Studio melden möchten oder können, wurde es möglicherweise bereits gemeldet und eine Lösung auf der Website [Visual Studio Developer Community](https://developercommunity2.visualstudio.com/search?space=8) veröffentlicht.
 
-Wenn Sie kein Problem melden, sondern ein Feature vorschlagen möchten, besteht auch dazu eine Möglichkeit. Weitere Informationen finden Sie auf der Seite [Suggest a feature (Vorschlagen eines Features)](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Wenn Sie kein Problem melden, sondern ein Feature vorschlagen möchten, besteht auch dazu eine Möglichkeit. Weitere Informationen finden Sie auf der Seite [Suggest a feature (Vorschlagen eines Features)](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -91,5 +92,5 @@ Wenn Sie kein Problem melden, sondern ein Feature vorschlagen möchten, besteht 
 * [Visual Studio-Feedbackoptionen](../ide/feedback-options.md)
 * [Vorgehensweise: Melden eines Problems mit Visual Studio für Mac](/visualstudio/mac/report-a-problem)
 * [Melden eines Problems mit dem Visual C++-Toolset oder der -Dokumentation](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)
+* [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8)
 * [Developer Community data privacy (Datenschutz in der Entwicklercommunity)](developer-community-privacy.md)

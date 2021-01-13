@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098526"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833363"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -70,7 +70,7 @@ Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder eine
 
 - Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen** aus.
 
-- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![Screenshot der Umschaltfläche für die parallele Testausführung auf der Visual Studio-Test-Explorer-Symbolleiste. Wenn diese Schaltfläche ausgewählt ist, werden Tests parallel ausgeführt.](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
 Während der Testausführung wird die oben im Fenster **Test-Explorer** angezeigte Leiste **Erfolgreich/Fehlgeschlagen** animiert. Am Ende des Testlaufs wird die Leiste **Erfolgreich/Fehlgeschlagen** grün, wenn alle Tests erfolgreich verlaufen sind, oder rot, wenn ein Test fehlgeschlagen ist.
 ::: moniker-end
@@ -150,7 +150,7 @@ Im Test-Explorer können Sie Tests in eine Hierarchie gruppieren. Die Standardhi
 
 Sie können Ihre eigenen Hierarchie- und Gruppenebenen nach **Zustand** und dann **Klasse** definieren, indem Sie beispielsweise „Gruppieren nach“-Optionen in Ihrer bevorzugten Reihenfolge auswählen.
 
-![„Gruppieren nach“, „Zustand“ und dann „Klasse“](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![Screenshot des Visual Studio-Test-Explorers mit einer Testhierarchie in einem Bereich und dem Menü „Gruppieren nach“ im anderen mit aktivierten Optionen „Klasse“ und „Zustand“.](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen
@@ -207,7 +207,7 @@ Wählen Sie zum **Hinzufügen von Tests zu einer Wiedergabeliste** im Komponente
 
 **Wählen Sie zum Öffnen einer Wiedergabeliste** im Visual Studio-Menü **Test** > **Wiedergabeliste** aus. Anschließend können Sie entweder aus der Liste der zuletzt verwendeten Wiedergabelisten oder die Option **Wiedergabelistendatei öffnen** auswählen, um den Namen und Speicherort der Wiedergabeliste anzugeben.
 
-Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![Screenshot der Umschaltfläche für die parallele Testausführung auf der Visual Studio-Test-Explorer-Symbolleiste.](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Sie können eine Liste mit Tests erstellen und speichern, die als Gruppe ausgeführt oder angezeigt werden sollen. Wenn Sie eine Wiedergabeliste auswählen, werden die Tests in der Liste auf einer neuen Registerkarte im Test-Explorer angezeigt. Sie können einen Test zu mehr als einer Wiedergabeliste hinzufügen.
@@ -264,7 +264,7 @@ Verwenden Sie das folgende Format für xUnit. Stellen Sie sicher, dass ein Leerz
 
 Die [Gruppen](#test-explorer-groups) sind auch als Spalten im Test-Explorer verfügbar, wie „Merkmal“, „Stapelverfolgung“, „Fehlermeldung“ und „Vollständig qualifizierter Name“. Die meisten Spalten sind standardmäßig nicht sichtbar, und Sie können festlegen, welche Spalten Sie sehen und in welcher Reihenfolge sie angezeigt werden.
 
-![„Gruppieren nach“, „Zustand“ und dann „Klasse“](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![Screenshot des Visual Studio-Test-Explorers mit einem Menü mit ausgewählten „Spalten“ und einem Untermenü mit ausgewählten Optionen „Dauer“, „Merkmale“ und „Fehlermeldung“.](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtern, Sortieren und Neuordnen von Testspalten
 
