@@ -1,17 +1,17 @@
 ---
 title: Visual Studio Starteinstellungen für Containertools
 author: ghogen
-description: Übersicht über den Buildprozess für Containertools
+description: Hier erfahren Sie mehr über die Starteinstellungen für Containertools, die mit der Behandlung von containerisierten Apps durch Visual Studio zusammenhängen.
 ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780878"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846705"
 ---
 # <a name="container-tools-launch-settings"></a>Starteinstellungen für Containertools
 

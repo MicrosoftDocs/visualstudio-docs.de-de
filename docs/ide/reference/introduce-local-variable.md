@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568814"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833259"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Bereitstellen einer lokalen Variable in Visual Studio
 
@@ -47,7 +47,7 @@ Diese Codegenerierung gilt für:
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Klicken Sie auf die Schaltfläche ![Schraubendrehersymbol](media/screwdriver.png) die am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit dem hervorgehobenen Ausdruck platziert wurde.
+      - Klicken Sie auf die Schaltfläche ![Screenshot: Schraubendrehersymbol, das am linken Rand des Menüs „Schnellaktionen und Refactorings“ angezeigt wird](media/screwdriver.png) die am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit dem hervorgehobenen Ausdruck platziert wurde.
 
    ![Vorschau der Aktion zum Bereitstellen eines lokalen Elements](media/local-preview-cs.png)
 

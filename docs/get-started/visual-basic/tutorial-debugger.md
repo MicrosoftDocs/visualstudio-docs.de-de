@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Debuggen von Visual Basic-Code'
-description: Erfahren Sie, wie Sie den Visual Studio-Debugger starten, den Code durchlaufen und Daten überprüfen.
+description: Lernen Sie Funktionen des Visual Studio-Debuggers kennen, und erfahren Sie, wie Sie den Debugger starten, den Code durchlaufen und Daten in einer Visual Basic-Anwendung überprüfen.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ed0de3542822597c64e0866c04f719ed6c2ab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 000b46223811490695562159822f61240d0cea66
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027237"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847011"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Informationen zum Debuggen von Visual Basic-Code mit Visual Studio
 
@@ -167,7 +167,7 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
     Haltepunkte sind ein einfaches und wichtiges Feature zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
-2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche**Debuggen starten**![Debuggen starten](../../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
+2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche **Debuggen starten**![Debuggen starten](../../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
 
     ![Festlegen und Treffen eines Haltepunkts](../visual-basic/media/get-started-hit-breakpoint-vb.png)
 

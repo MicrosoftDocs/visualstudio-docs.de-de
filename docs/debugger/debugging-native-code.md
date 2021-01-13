@@ -1,5 +1,7 @@
 ---
 title: Debuggen von nativem Code | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über allgemeine Debuggingprobleme und Techniken für native Anwendungen in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738168"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728316"
 ---
 # <a name="debugging-native-code"></a>Debuggen von systemeigenem Code
 In diesem Abschnitt werden einige allgemeine Debugprobleme und -verfahren für systemeigene Anwendungen erörtert. Bei den in diesem Abschnitt behandelten Verfahren wird Programmiererfahrung vorausgesetzt. Informationen zur Verwendung des Visual Studio-Debuggers finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).

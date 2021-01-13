@@ -1,5 +1,7 @@
 ---
 title: Aufrufliste des Grafikereignisses | Microsoft-Dokumentation
+description: Mit der Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse können Sie Beziehungen zwischen problematischen Grafikereignissen und dem Quellcode Ihrer App zuordnen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735512"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727749"
 ---
 # <a name="graphics-event-call-stack"></a>Aufrufliste des Grafikereignisses
 Die Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse kann Ihnen die Zuordnung von Beziehungen zwischen Grafikereignissen und dem Quellcode Ihrer App erleichtern.
@@ -32,7 +34,7 @@ Die Aufrufliste des Grafikereignisses in der Visual Studio-Grafikanalyse kann Ih
 ### <a name="graphics-event-call-stack-information"></a>Informationen zur Aufrufliste des Grafikereignisses
  Die Aufrufliste unterstützt keine Frames vor dem Frame und keine benutzerdefinierten Ereignisse. Die Aufrufliste des Grafikereignisses wird in einem Tabellenformat angezeigt.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Name**|Ein Symbol, die eindeutig die Funktion identifiziert, die die Aufrufseite enthält. Das Debugsymbol für die Funktion wird angezeigt, wenn dieses verfügbar ist. Andernfalls wird der Offset der Funktion angezeigt.|
 |**Datei**|Der Dateiname der Quelldatei oder Bibliotheksdatei, die die Aufrufsite enthält.|

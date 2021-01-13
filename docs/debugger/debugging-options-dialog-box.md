@@ -1,5 +1,7 @@
 ---
 title: Debuggen, Dialogfeld „Optionen“ | Microsoft-Dokumentation
+description: Hier finden Sie Links, unter denen das Dialogfeld „Optionen“ für das allgemeine Debuggen, Just-In-Time-Debuggen, Debuggen von Ausgabefenstern und Symboldebuggen in Visual Studio beschrieben wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ae93f22249540da0121472ce07db52e3747abf85
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738151"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726903"
 ---
 # <a name="debugging-options-dialog-box"></a>Debuggen, Dialogfeld "Optionen"
 Im Ordner **Debuggen** im Dialogfeld **Optionen** des Menüs **Extras** sind die folgenden Seiten zum Festlegen der Debuggeroptionen enthalten.

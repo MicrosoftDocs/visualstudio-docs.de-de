@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fc6260bdac6f4313daddc1ca59f8541bc4fda7c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211127"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761302"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Optionen für Python in Visual Studio
 
@@ -75,7 +75,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | --- | --- | --- |
 | **Pfad der ausführbaren Conda-Datei** | (leer) | Gibt den exakten Pfad zur ausführbaren Datei *conda.exe* an, anstatt sich auf die standardmäßige Miniconda-Installation zu verlassen, die in der Python-Workload enthalten ist. Wenn hier ein anderer Pfad angegeben ist, hat dieser Vorrang vor der Standardinstallation und allen anderen ausführbaren Dateien vom Typ „conda.exe“, die ggf. in der Registrierung angegeben sind. Diese Einstellung kann beispielsweise geändert werden, wenn Sie manuell eine neuere Version von Anaconda oder Miniconda installieren oder anstelle der 64-Bit-Standarddistribution eine 32-Bit-Distribution verwenden möchten. |
 
-![Optionsdialogfeld von Python, Registerkarte „Sprachserver“](media/options-conda.png)
+![Screenshot des Dialogfelds „Optionen“ der Visual Studio-Tools, bei dem in den Python-Optionen „Conda“ ausgewählt ist und der Pfad für die ausführbaren Conda-Dateien im rechten Bereich angezeigt wird.](media/options-conda.png)
 
 ::: moniker-end
 
@@ -135,7 +135,7 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 | **Vervollständigungen aus Typeshed deaktivieren** | Aus | Visual Studio IntelliSense verwendet normalerweise eine gebündelte Version von Typeshed (eine Gruppe von Dateien mit der Erweiterung *.pyi*), um nach Typhinweisen für die Standardbibliothek sowie für Drittanbieterbibliotheken für Python 2 und Python 3 zu suchen. Wenn Sie diese Option festlegen, wird das gebündelte Typeshed-Verhalten deaktiviert. |
 | **Benutzerdefinierter Typeshed-Pfad** | (leer) | Wird diese Option festgelegt, verwendet Visual Studio anstelle der gebündelten Version die Typeshed-Dateien unter diesem Pfad. Ignorieren Sie diese Option, wenn **Vervollständigungen aus Typeshed deaktivieren** festgelegt ist. |
 
-![Optionsdialogfeld von Python, Registerkarte „Sprachserver“](media/options-language-server.png)
+![Screenshot des Dialogfelds „Optionen“ der Visual Studio-Tools, bei dem in den Python-Optionen „Sprachserver“ ausgewählt ist und die Sprachserveroptionen im rechten Bereich angezeigt werden.](media/options-language-server.png)
 
 ::: moniker-end
 
@@ -173,6 +173,6 @@ Zusätzliche Python-spezifische Optionen finden Sie auch auf der Registerkarte *
 
 (Registerkarte **Umgebung** > **Schriftarten und Farben** in der Gruppe **Text-Editor**.)
 
-Die Namen aller Python-Optionen sind mit dem Präfix **Python** versehen und damit selbsterklärend. Die Standardschriftart für alle Visual Studio-Farbdesigns ist 10 pt Consolas regulär (nicht fett). Die Standardfarben variieren je nach Design. In der Regel ändern Sie eine Schriftart oder Farbe, wenn Sie meinen, dass der Text mit den Standardeinstellungen schwer zu lesen ist.
+Die Namen aller Python-Optionen sind mit dem Präfix **Python** versehen und damit selbsterklärend. Die Standardschriftart für alle Visual Studio-Farbdesigns ist 10 pt Consolas Regular (nicht fett). Die Standardfarben variieren je nach Design. In der Regel ändern Sie eine Schriftart oder Farbe, wenn Sie meinen, dass der Text mit den Standardeinstellungen schwer zu lesen ist.
 
 ![Schriftarten- und Farboptionen für Python](media/options-fonts-and-colors.png)

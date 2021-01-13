@@ -1,6 +1,7 @@
 ---
 title: Bereitstellen von UWP-Apps | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Stellen Sie UWP-Apps (Universelle Windows-Plattform) über Visual Studio bereit. Geben Sie ein lokales Zielgerät oder ein Remotezielgerät für die Bereitstellung an. Erhalten Sie grundlegende Informationen zu Bereitstellungsoptionen.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188279"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728199"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Bereitstellen von UWP-Apps aus Visual Studio
 
@@ -68,7 +69,7 @@ Bei der Bereitstellung wird der Remotedebugger-Netzwerkkanal verwendet, um die A
 
 4. Wählen Sie für **Zielgerät** **Remotecomputer** aus.
 
-5. Klicken Sie unter **Remotecomputer**auf **Suchen**.
+5. Klicken Sie unter **Remotecomputer** auf **Suchen**.
 
 6. Sie können den Namen oder die IP-Adresse des Remotegeräts eingeben oder das Gerät im Dialogfeld **Remoteverbindung** auswählen.
 

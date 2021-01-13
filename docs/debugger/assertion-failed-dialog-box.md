@@ -1,5 +1,7 @@
 ---
 title: Assertionsfehler (Dialogfeld) | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über das Dialogfeld „Assertionsfehler“, bei dem es sich um ein Dialogfeld handelt, das unter Umständen auf der Debugger-Benutzeroberfläche von Visual Studio angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745770"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729079"
 ---
 # <a name="assertion-failed-dialog-box"></a>Assertionsfehler (Dialogfeld)
 Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm true lauten muss. Hat diese Bedingung nicht den Wert "true", schlägt die Assertion fehl, die Programmausführung wird unterbrochen, und das Dialogfeld "Assertionsfehler" wird geöffnet.

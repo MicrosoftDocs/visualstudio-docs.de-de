@@ -1,5 +1,6 @@
 ---
 title: Verwenden der SDK-Parallelitätsschnellansichtsmarker | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie das Parallelitätsschnellansichtsmarker-SDK in Visual Studio verwenden, um Spannen zu erstellen und Flags, Nachrichten und Warnungen zu schreiben.
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851579"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815606"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Vorgehensweise: Verwenden der SDK-Parallelitätsschnellansichtsmarker
 Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwendet werden, um Spannen zu erstellen und Flags, Nachrichten und Warnungen zu schreiben.
@@ -46,7 +47,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
     delete alertSpan;
     ```
 
-4. Wählen Sie auf der Menüleiste **Analysieren**, **Parallelitätsschnellansicht**, **Mit dem aktuellen Projekt beginnen**aus, um die Anwendung auszuführen und die Parallelitätsschnellansicht anzuzeigen. Die folgende Abbildung zeigt die drei Spannen und drei Marker in der Parallelitätsschnellansicht.
+4. Wählen Sie auf der Menüleiste **Analysieren**, **Parallelitätsschnellansicht**, **Mit dem aktuellen Projekt beginnen** aus, um die Anwendung auszuführen und die Parallelitätsschnellansicht anzuzeigen. Die folgende Abbildung zeigt die drei Spannen und drei Marker in der Parallelitätsschnellansicht.
 
      ![Parallelitätsschnellansicht mit drei Markern und Warnungen](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
@@ -70,7 +71,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
 
 6. Starten Sie das aktuelle Projekt, um die Parallelitätsschnellansicht anzuzeigen. Die zwei Markerreihen werden in ihren eigenen Bereichen in der Threadansicht angezeigt. In der folgenden Abbildung werden die zwei neuen Spannen gezeigt.
 
-     ![Parallelitätsschnellansicht mit drei benutzerdefinierten Markerreihen](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Screenshot der Threadsansicht in der Parallelitätsschnellansicht, die eine Markierung, ein Flag und eine Nachrichtenreihe mit einer Flagspanne und einer Nachrichtenspanne zeigt.](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>So verwenden Sie Visual Basic oder C\#
 
@@ -124,7 +125,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
     alertSpan.Leave();
     ```
 
-4. Wählen Sie auf der Menüleiste **Analysieren**, **Parallelitätsschnellansicht**, **Mit dem aktuellen Projekt beginnen**aus, um die Anwendung auszuführen und die Parallelitätsschnellansicht anzuzeigen. Die folgende Abbildung zeigt die drei Spannen und drei Marker in der Threadansicht der Parallelitätsschnellansicht.
+4. Wählen Sie auf der Menüleiste **Analysieren**, **Parallelitätsschnellansicht**, **Mit dem aktuellen Projekt beginnen** aus, um die Anwendung auszuführen und die Parallelitätsschnellansicht anzuzeigen. Die folgende Abbildung zeigt die drei Spannen und drei Marker in der Threadansicht der Parallelitätsschnellansicht.
 
      ![Parallelitätsschnellansicht mit Markern und Warnungen](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
@@ -164,7 +165,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
 
 6. Starten Sie das aktuelle Projekt, um die Parallelitätsschnellansicht anzuzeigen. Die drei Markerreihen werden in ihren eigenen Bereichen in der Threadansicht angezeigt. Die folgende Abbildung zeigt die drei neuen Spannen.
 
-     ![Parallelitätsschnellansicht mit drei benutzerdefinierten Markerreihen](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![Screenshot der Threadsansicht in der Parallelitätsschnellansicht, die eine Markierung, ein Flag und eine Nachrichtenreihe mit einer Nachricht, einer Warnung und einer Flagspanne zeigt.](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>Siehe auch
 - [SDK der Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer-sdk.md)

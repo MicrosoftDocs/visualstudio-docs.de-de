@@ -1,5 +1,7 @@
 ---
 title: Anzeigen und Ausblenden von Registergruppen | Microsoft-Dokumentation
+description: Im Fenster „Register“, das nach der Aktivierung von Debuggen auf Adressebene verfügbar ist, werden Register in Gruppen organisiert. Hier erfahren Sie, wie Sie festlegen, welche Gruppen angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a75af7d7ef279fdd3ca82ea9dced941106f0275
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c14d325d417606c6945d51d99461d34ccd9a4bc8
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852360"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903037"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Vorgehensweise: Anzeigen und Ausblenden von Registergruppen (C#, C++, Visual Basic, F#)
 

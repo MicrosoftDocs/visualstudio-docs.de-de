@@ -1,6 +1,7 @@
 ---
 title: Empfohlene Debuggereigenschafteneinstellungen für C# und VB | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Sehen Sie sich die Einstellungen für Build- und Kompilierungseigenschaften an, die für das gesamte verwaltete Debuggen identisch sein sollten. Andere Einstellungen können je nach Projekttyp variieren.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07c63a70de9d633ccd73d1d0d3bd23196d421543
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 57740c05e31bde2ae4e5143735e3bba1f3fc112c
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731373"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903804"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Verwaltetes Debuggen: Empfohlene Eigenschafteneinstellungen
 Bestimmte Eigenschaften sollten für alle Szenarios des verwalteten Debuggens gleich festgelegt werden.

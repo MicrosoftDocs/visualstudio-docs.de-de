@@ -1,5 +1,7 @@
 ---
 title: Informationen zu Microsoft Spy++ | Microsoft-Dokumentation
+description: Zeigen Sie das Dialogfeld „Informationen zu Microsoft Spy++“ in Visual Studio an, um Informationen zu Copyright, Version und Eigentum sowie andere Informationen zum Spy++-Debughilfsprogramm anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54877dfd5164cae2c256f21fc2886d779ecf64a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d3488e3eb21cdd564c17040e7d29868473575ac
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564267"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729131"
 ---
 # <a name="about-microsoft-spy"></a>Info
 Verwenden Sie dieses Dialogfeld, um Copyright-, Versions-, Besitz- und andere Informationen zu Spy++ anzuzeigen.

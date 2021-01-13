@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862788"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761211"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formatbezeichner in C# im Visual Studio-Debugger
 Sie können mit Formatbezeichnern das Format ändern, in dem ein Wert im Fenster **Überwachen** angezeigt wird. Formatbezeichner können im **Direktfenster**, im Fenster **Befehl**, in [Ablaufverfolgungspunkten](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints) und in den Quellcodefenstern verwendet werden. Wenn Sie einen Ausdruck in diesen Fenstern anhalten, wird das Ergebnis in einem [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) im angegebenen Format angezeigt.
@@ -52,7 +52,7 @@ Wir verwenden den folgenden Beispielcode:
 
 Fügen Sie beim Debuggen dem Fenster **Überwachung** die Variable `my_var1` hinzu, **Debuggen** > **Fenster** > **Überwachung** > **Überwachen 1**. Klicken Sie dann mit der rechten Maustaste auf die Variable, und wählen Sie **Hexadezimale Anzeige** aus. Im Fenster **Überwachung** wird jetzt der Wert 0x0065 angezeigt. Um diesen Wert als ganze Dezimalzahl und nicht als ganze Hexadezimalzahl anzuzeigen, geben Sie in der Spalte **Name** nach dem Variablennamen den Dezimalformatbezeichner **, d** ein. In der Spalte **Wert** wird jetzt **101** angezeigt.
 
-![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+![Screenshot: Visual Studio-Überwachungsfenster mit einer Zeile, die „my_var1, d“ mit dem Wert „101“ und dem Typ „int“ enthält](../debugger/media/watchformatcsharp.png)
 
 ::: moniker range=">= vs-2019" 
 

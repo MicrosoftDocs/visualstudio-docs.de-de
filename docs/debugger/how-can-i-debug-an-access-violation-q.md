@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0fb7e6f5ae71cf336f9fe206bc7b0208566b615
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 1786085e2f68a1d1196158ac56a62b87b80858be
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398570"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761367"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Wie erfolgt das Debuggen einer C++-Zugriffsverletzung?
 
@@ -76,7 +76,7 @@ int main() {
 
 Wenn Sie diesen Code in Visual Studio 2015 Update 1 ausführen, sollte das folgende Ausnahmedialogfeld angezeigt werden:
 
-![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+![Screenshot: Microsoft Visual Studio-Ausnahmedialogfeld mit einer Lesezugriffsverletzung für „A->B war nullptr“. Die Schaltfläche „Unterbrechen“ ist ausgewählt.](../debugger/media/accessviolationcplus.png)
 
 Wenn Sie nicht bestimmen können, warum der Zeiger eine Zugriffsverletzung verursacht hat, überwachen Sie den Code mithilfe der Ablaufverfolgung, um sicherzustellen, dass der Zeiger, der das Problem verursacht, ordnungsgemäß zugewiesen wurde.  Wenn er als Parameter übergeben wird, achten Sie darauf, dass die Übergabe ordnungsgemäß erfolgt und Sie nicht versehentlich eine [flache Kopie](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy) erstellen. Vergewissern Sie sich anschließend, dass die Werte nicht unbeabsichtigt im Programm geändert werden. Erstellen Sie zu diesem Zweck einen Datenhaltepunkt für den fraglichen Zeiger. So sorgen Sie dafür, dass er nicht an anderer Stelle im Programm geändert wird. Weitere Informationen zu Datenhaltepunkten finden Sie im Abschnitt über Datenhaltepunkte in [Using Breakpoints](../debugger/using-breakpoints.md).
 

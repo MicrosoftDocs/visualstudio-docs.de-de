@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 8be766e078a04d713ed69aa0b9cc464433dcb73d
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801177"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761393"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Erste Schritte mit R Tools für Visual Studio
 
@@ -62,7 +62,7 @@ Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installat
 
 1. Einige Befehle, z.B. `plot(1:100)`, öffnen ein neues Fenster in Visual Studio, wenn die Ausgabe nicht direkt im interaktiven Fenster angezeigt werden kann:
 
-    ![Darstellung eines Plots in Visual Studio](media/getting-started-07-plot-window.png)
+    ![Screenshot eines Visual Studio R-Plotfensters, das die Ausgabe der graph-Funktion plot(1:100) zeigt.](media/getting-started-07-plot-window.png)
 
 Mit dem interaktiven Fenster können Sie auch Ihre Versionsgeschichte überprüfen, Arbeitsbereiche laden und speichern, an den Debugger anfügen sowie mit Quellcodedateien interagieren, anstatt Kopieren und Einfügen zu verwenden. Weitere Informationen finden Sie unter [Arbeiten mit dem interaktiven R-Fenster](interactive-repl-for-r-in-visual-studio.md).
 
@@ -86,7 +86,7 @@ Als Beispiel erstellen die folgenden Schritte einen kleinen Code zum Erforschen 
 
 1. Wenn Ergebnisse schnell angezeigt werden sollen, wählen Sie den gesamten Code aus (**STRG**+**A**), drücken Sie **STRG**+**EINGABETASTE**, oder führen Sie einen Rechtsklick aus, und wählen Sie **Interaktiv ausführen** aus. Der gesamte ausgewählte Code wird im interaktiven Fenster ausgeführt, so als hätten Sie ihn manuell eingegeben, und das Ergebnis wird in einem Plotfenster angezeigt:
 
-    ![Darstellung eines Plots in Visual Studio](media/getting-started-08-plot1.png)
+    ![Screenshot eines Visual Studio R-Plotfensters, das einen Graph der Bevölkerungsdichte zeigt.](media/getting-started-08-plot1.png)
 
 1. Für eine einzelne Zeile drücken Sie einfach bei Bedarf **STRG**+**EINGABETASTE**, um diese im interaktiven Fenster auszuführen.
 
@@ -163,7 +163,7 @@ Ausführlichere Details finden Sie unter [Debugging](debugging-r-in-visual-studi
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In dieser exemplarischen Vorgehensweise haben Sie die Grundlagen von R-Projekten, die Verwendung des interaktiven Fensters, die Codebearbeitung und das Debuggen in Visual Studio kennengelernt. Um weitere Funktionen kennenzulernen, sehen Sie sich die folgenden Artikel sowie Artikel an , die im Inhaltsverzeichnis aufgeführt sind:
+In dieser exemplarischen Vorgehensweise haben Sie die Grundlagen von R-Projekten, die Verwendung des interaktiven Fensters, die Codebearbeitung und das Debuggen in Visual Studio kennengelernt. Um weitere Funktionen kennenzulernen, sehen Sie sich die folgenden Artikel sowie Artikel an, die im Inhaltsverzeichnis aufgeführt sind:
 
 - [Beispielprojekte](getting-started-samples.md)
 - [Bearbeiten von Code](editing-r-code-in-visual-studio.md)

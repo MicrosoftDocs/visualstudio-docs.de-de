@@ -1,5 +1,7 @@
 ---
 title: Debuggen von optimiertem Code | Microsoft-Dokumentation
+description: Erstellen Sie nach Möglichkeit kein Win32-Releaseziel, bis das Programm debuggt wird, da die Optimierung das Debuggen erschweren kann. Ausführlichere Informationen finden Sie in diesem Artikel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852386"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903180"
 ---
 # <a name="how-to-debug-optimized-code"></a>Vorgehensweise: Debuggen von optimiertem Code
 
@@ -58,7 +60,7 @@ ms.locfileid: "90852386"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>So aktivieren Sie die Optimierung in einer Debugbuildkonfiguration
 
-1. Wählen Sie beim Erstellen eines neuen Projekts `Win32 Debug` als Ziel aus. Verwenden Sie das `Win32``Debug`-Ziel, bis das Programm vollständig debuggt und für die Erstellung eines `Win32 Release`-Ziels bereit ist. Das `Win32 Debug`-Ziel wird nicht vom Compiler optimiert.
+1. Wählen Sie beim Erstellen eines neuen Projekts `Win32 Debug` als Ziel aus. Verwenden Sie das `Win32 Debug`-Ziel, bis das Programm vollständig debuggt und für die Erstellung eines `Win32 Release`-Ziels bereit ist. Das `Win32 Debug`-Ziel wird nicht vom Compiler optimiert.
 
 2. Wählen Sie das Projekt im Projektmappen-Explorer aus.
 

@@ -1,5 +1,6 @@
 ---
 title: Debuggen von Quelldateien/Eigenschaftenseiten von Projektmappen
+description: Öffnen Sie die Eigenschaftenseite „Quelldateien debuggen“ in Visual Studio, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf die betreffende Projektmappe klicken und „Eigenschaften“ > Allgemeine Eigenschaften“ auswählen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3057a6a94edb09018836493257e8d875d938b839
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: be57355c8fc38758080ebde344db0b4224bc3df8
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809543"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728524"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Quelldateien debuggen, Allgemeine Eigenschaften, Eigenschaftenseiten (Dialogfeld)
 Auf dieser Eigenschaftenseite wird angegeben, wo der Debugger beim Debuggen der Projektmappe nach Quelldateien sucht.

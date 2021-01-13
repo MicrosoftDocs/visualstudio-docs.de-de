@@ -1,5 +1,7 @@
 ---
 title: Grafikobjekttabelle | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Grafikobjekttabelle. Damit können Sie in Visual Studio-Grafikanalyse die Direct3D-Objekte erkennen, die einen Frame eines Spiels oder einer App unterstützen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735446"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727579"
 ---
 # <a name="graphics-object-table"></a>Grafikobjekttabelle
 Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direct3D-Objekte erkennen, die einen Frame Ihres Spiels oder Ihrer App unterstützen.

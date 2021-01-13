@@ -1,5 +1,7 @@
 ---
 title: Debuggen von Benutzercode mit nur eigenem Code | Microsoft-Dokumentation
+description: „Nur eigenen Code“ ist ein Debugfeature, das automatisch Aufrufe von Nichtbenutzercode überspringt. Hier erfahren Sie, wie Sie dieses Feature aktivieren, deaktivieren und verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: how-to
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c902147bd1b7761bb6fdab1bc577af6a1990bed
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536564"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903882"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Debuggen von Benutzercode mit nur eigenem Code
 
@@ -43,7 +45,7 @@ Im Fenster **Aufrufstapel** oder **Tasks** wird Nichtbenutzercode von „Nur eig
 ![Externer Codeframe im Fenster „Aufrufstapel“](../debugger/media/dbg_justmycode_externalcode.png "Frame mit externem Code")
 
 >[!TIP]
->Zum Öffnen von**Module**, **Aufrufstapel**, **Tasks** oder der meisten anderen Debugfenster müssen Sie sich in einer Debugsitzung befinden. Wählen Sie während des Debuggens unter **Debuggen** > **Fenster** die Fenster aus, die Sie öffnen möchten.
+>Zum Öffnen von **Module**, **Aufrufstapel**, **Tasks** oder der meisten anderen Debugfenster müssen Sie sich in einer Debugsitzung befinden. Wählen Sie während des Debuggens unter **Debuggen** > **Fenster** die Fenster aus, die Sie öffnen möchten.
 
 <a name="BKMK_Override_call_stack_filtering"></a> Um den Code in einem reduzierten Frame mit **[externem Code]** anzuzeigen, klicken Sie mit der rechten Maustaste in das Fenster **Aufrufstapel** oder **Tasks** und wählen Sie im Kontextmenü **Externen Code anzeigen** aus. Die erweiterten externen Codezeilen ersetzen den Frame mit **[externem Code]** .
 
@@ -141,20 +143,20 @@ Eine *.natjmc*-Datei ist eine XML-Datei mit der folgenden Syntax:
 
  **Modulelementattribute**
 
-|Attribut|Beschreibung|
+|Attribut|BESCHREIBUNG|
 |---------------|-----------------|
 |`Name`|Erforderlich. Der vollständige Pfad des Moduls oder der Module. Sie können die Windows-Platzhalterzeichen `?` (null oder ein Zeichen) und `*` (null oder mehr Zeichen) verwenden. Ein auf ein Objekt angewendeter<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> weist den Debugger an, alle Module in *\3rdParty\UtilLibs* auf einem Laufwerk als externen Code zu behandeln.|
 |`Company`|Dies ist optional. Der Name des Unternehmens, das das Modul veröffentlicht, das in die ausführbare Datei eingebettet ist. Sie können dieses Attribut verwenden, um die Module zu unterscheiden.|
 
  **Dateielementattribute**
 
-|Attribut|Beschreibung|
+|Attribut|BESCHREIBUNG|
 |---------------|-----------------|
 |`Name`|Erforderlich. Der vollständige Pfad der Quelldatei oder -dateien, die als externer Code behandelt werden sollen. Sie können die Windows-Platzhalterzeichen `?` und `*` verwenden, wenn Sie den Pfad angeben.|
 
  **Funktionselementattribute**
 
-|Attribut|Beschreibung|
+|Attribut|BESCHREIBUNG|
 |---------------|-----------------|
 |`Name`|Erforderlich. Der vollqualifizierte Name der Funktion, die als externer Code behandelt werden soll.|
 |`Module`|Dies ist optional. Der Name oder der vollständige Pfad zu dem Modul, das die Funktion enthält. Sie können dieses Attribut verwenden, um Funktionen mit demselben Namen zu unterscheiden.|
@@ -185,7 +187,7 @@ Eine *.natstepfilter*-Datei ist eine XML-Datei mit der folgenden Syntax:
 
 ```
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |`Function`|Erforderlich. Gibt eine oder mehreren Funktionen als Nichtbenutzerfunktionen an.|
 |`Name`|Erforderlich. Ein ECMA-262-formatierter regulärer Ausdruck, der den vollständigen Funktionsnamen angibt, der übereinstimmen muss. Zum Beispiel:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> teilt dem Debugger mit, dass alle Methoden in `MyNS::MyClass` als Nichtbenutzercode behandelt werden sollen. Bei der Übereinstimmung muss die Groß-/Kleinschreibung beachtet werden.|

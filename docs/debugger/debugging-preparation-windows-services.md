@@ -1,6 +1,7 @@
 ---
 title: Vorbereiten des Debuggens von Windows-Diensten | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Bereiten Sie das Debuggen von Windows-Diensten vor. Dabei handelt es sich um Programme, die unter Windows in Visual Studio im Hintergrund ausgeführt werden.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3161f6d2c328e8e33dd82ed206aa8aa20e654cc9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4fe922106181633f506147decc3b578e7dc6e704
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738086"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728212"
 ---
 # <a name="debugging-preparation-windows-services"></a>Vorbereitung des Debugvorgangs: Windows-Dienste
 Ein Windows-Dienst ist ein Programm, das unter Microsoft Windows im Hintergrund ausgeführt wird. Beispiele hierfür sind der Telnet-Dienst und der Windows-Zeitdienst, durch den die auf dem Computer angezeigte Systemuhrzeit aktualisiert wird. Da ein Windows-Dienst innerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht lauffähig ist, muss er im Kontext des Dienststeuerungs-Managers ausgeführt werden. Weitere Informationen finden Sie unter [Erstellen von Windows-Diensten](/dotnet/framework/windows-services/how-to-create-windows-services), [Debuggen von Windows-Dienstanwendungen](/dotnet/framework/windows-services/how-to-debug-windows-service-applications) und [Entwickeln von Windows-Dienstanwendungen](/dotnet/framework/windows-services/index).

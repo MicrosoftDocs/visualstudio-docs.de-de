@@ -1,6 +1,6 @@
 ---
 title: Debuggen von aktiven ASP.NET Azure Kubernetes Services
-description: Erfahren Sie, wie Sie Andockpunkte festlegen und Momentaufnahmen mit dem Momentaufnahmedebugger anzeigen.
+description: Hier erfahren Sie, wie Sie den Momentaufnahmedebugger in Visual Studio verwenden, um beim Debuggen von aktiven ASP.NET Azure Kubernetes Services Andockpunkte festzulegen und Momentaufnahmen zu erstellen.
 ms.custom: ''
 ms.date: 02/11/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350653"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846965"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET Azure Kubernetes Services mit dem Momentaufnahmedebugger
 

@@ -1,6 +1,7 @@
 ---
 title: Untersuchen von Variablen über die Fenster „Auto“ und „Lokale Variablen“ | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Untersuchen von Variablen in den Fenstern „Auto“ und „Lokale Variablen“ während des Debuggens in Visual Studio. In den Fenstern Auto und Lokale Variablen werden Variablenwerte während des Debuggens angezeigt.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,16 +16,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350744"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760912"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Untersuchen von Variablen über die Fenster „Auto“ und „Lokale Variablen“
 
-In den Fenstern **Auto** und **Lokale Variablen** werden Variablenwerte während des Debuggens angezeigt. Die Fenster sind nur während einer Debugsitzung verfügbar. Im Fenster **Auto** werden die Variablen angezeigt, die in der Nähe des aktuellen Haltepunkts verwendet werden. Im Fenster **Lokale Variablen** werden Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel aus der aktuellen Funktion oder Methode besteht. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Debugverfahren und -tools zum Schreiben von besserem Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
+In den Fenstern **Auto** und **Lokale Variablen** werden Variablenwerte während des Debuggens angezeigt. Die Fenster sind nur während einer Debugsitzung verfügbar. Im Fenster **Auto** werden die Variablen angezeigt, die in der Nähe des aktuellen Haltepunkts verwendet werden. Im Fenster **Lokale Variablen** werden Variablen angezeigt, die im lokalen Gültigkeitsbereich definiert sind, der in der Regel aus der aktuellen Funktion oder Methode besteht.
+
+> [!NOTE]
+> Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) sowie [Debugverfahren und -tools zum Schreiben von besserem Code](../debugger/write-better-code-with-visual-studio.md) lesen, bevor Sie diesen Artikel durchgehen.
 
  Das Fenster **Auto** ist für C#-, Visual Basic-, C++- und Python-Code, aber nicht für JavaScript oder F# verfügbar.
 
@@ -39,7 +43,7 @@ Wenn Sie das Fenster **Lokale Variablen** während des Debuggens öffnen möchte
 
 Arrays und Objekte werden in den Fenstern **Auto** und **Lokale Variablen** als Struktursteuerelemente angezeigt. Klicken Sie auf den Pfeil links neben dem Variablennamen, damit die Ansicht erweitert wird und die Felder und Eigenschaften angezeigt werden. Dies ist ein Beispiel für ein <xref:System.IO.FileStream?displayProperty=fullName>-Objekt im Fenster **Lokale Variablen**:
 
-![Lokale Variablen, FileStream](../debugger/media/locals-filestream.png "Lokale Variablen, FileStream")
+![Screenshot des Fensters „Lokale Variablen“, wobei die Datei auf den Wert „System.IO.FileStream“ festgelegt ist.](../debugger/media/locals-filestream.png)
 
 Ein roter Wert im Fenster **Lokale Variablen** oder **Auto** bedeutet, dass sich der Wert seit der letzten Auswertung geändert hat. Die Änderung kann aus einer vorherigen Debugsitzung stammen oder daran liegen, dass Sie den Wert im Fenster geändert haben.
 
@@ -116,7 +120,7 @@ Je nach Codesprache werden verschiedene Variablen im Fenster **Auto** angezeigt.
 
    Legen Sie den Haltepunkt auf die Zeile `c = 3;` fest, und starten Sie den Debugger. Wenn die Ausführung angehalten wird, wird Folgendes im Fenster **Auto** angezeigt:
 
-   ![Auto, C#](../debugger/media/autos-csharp.png "Auto, C#")
+   ![Screenshot des Fensters „Auto“ mit auf 0 festgelegtem Wert „c“.](../debugger/media/autos-csharp.png)
 
    `c` hat den Wert 0 (Null), weil die Zeile `c = 3` noch nicht ausgeführt wurde.
 
@@ -136,7 +140,7 @@ Je nach Codesprache werden verschiedene Variablen im Fenster **Auto** angezeigt.
 
     Legen Sie den Haltepunkt auf die Zeile `e = 5;` fest, und führen Sie den Debugger aus. Wenn die Ausführung beendet wird, wird Folgendes im Fenster **Auto** angezeigt:
 
-    ![Auto, C++](../debugger/media/autos-cplus.png "Auto, C++")
+    ![Screenshot des Fensters „Auto“, in dem die Zeile hervorgehoben ist, die den ganzzahligen Wert „c“ (int) mit einem Wert von 3 anzeigt.](../debugger/media/autos-cplus.png)
 
     Die Variable `e` wurde deinitialisiert. Dies liegt daran, dass die Zeile `e = 5` noch nicht ausgeführt wurde.
 

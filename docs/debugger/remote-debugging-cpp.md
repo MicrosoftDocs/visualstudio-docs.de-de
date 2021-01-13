@@ -1,5 +1,6 @@
 ---
 title: Remotedebuggen eines C++-Projekts | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Visual Studio C++-Anwendung von einem Remotecomputer aus debuggen, indem Sie diese schrittweisen Anleitungen befolgen.
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298737"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815801"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Remotedebuggen eines C++-Projekts in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer installieren und führen Sie die Remotetools auf dem Computer aus, auf dem Sie die App bereitstellen möchten, konfigurieren Sie das Projekt für die Verbindung mit dem Remotecomputer über Visual Studio, und stellen Sie die App dann bereit und führen sie aus.
@@ -63,7 +64,7 @@ Der Remotedebugger wird unter Windows 7 und höher (kein Smartphone) und Window
 
 4. Legen Sie **Zu startender Debugger** auf **Remote-Windows-Debugger** fest.
 
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+    ![Screenshot der Registerkarte „Debuggen“ in den Eigenschaften des Projektmappen-Explorers von Visual Studio. Die Eigenschaft „Zu startender Debugger“ ist auf „Remote-Windows-Debugger“ festgelegt.](../debugger/media/remotedebuggingcplus.png)
 
 5. Nehmen Sie die folgenden Änderungen an den Eigenschaften vor:
 
@@ -83,7 +84,7 @@ Der Remotedebugger wird unter Windows 7 und höher (kein Smartphone) und Window
 
 7. Aktivieren Sie für die Konfiguration **Debuggen** das Kontrollkästchen **Bereitstellen**.
 
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+    ![Screenshot des Konfigurations-Managers im Projektmappen-Explorer von Visual Studio. Die Konfiguration „Debuggen“ ist ausgewählt, und das Kontrollkästchen „Bereitstellen“ ist aktiviert.](../debugger/media/remotedebugcplusdeploy.png)
 
 8. Starten Sie das Debuggen (wählen Sie **Debuggen > Debuggen starten** aus, oder drücken Sie **F5**).
 

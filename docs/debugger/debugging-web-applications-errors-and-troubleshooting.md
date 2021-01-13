@@ -1,6 +1,7 @@
 ---
 title: 'Debuggen von Web-Apps: Fehler und Problembehandlung'
-ms.custom: seodec18
+description: Hier finden Sie Links zu Referenzseiten zum Debuggen von Webanwendungen, etwa eine Problembehandlungsseite und Seiten, auf denen mögliche Fehler beschrieben werden.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f827dd2bb8081787a4883b2d67ee41d8b6d43876
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188349"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726786"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debuggen von Webanwendungen: Fehler und Problembehandlung
 Beim Debuggen von Webanwendungen können folgende Fehler auftreten.

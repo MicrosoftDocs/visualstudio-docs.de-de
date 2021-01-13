@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863035"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761328"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Formatbezeichner für C++ im Visual Studio-Debugger
 Mit Formatbezeichnern können Sie das Format ändern, in dem ein Wert in den Fenstern **Überwachung**, **Auto** und **Lokal** angezeigt wird.
@@ -54,7 +54,7 @@ int main() {
 
 Fügen Sie beim Debuggen dem Fenster **Überwachung** die Variable `my_var1` hinzu, **Debuggen** > **Fenster** > **Überwachung** > **Überwachen 1**. Klicken Sie dann mit der rechten Maustaste auf die Variable, und wählen Sie **Hexadezimale Anzeige** aus. Im Fenster **Überwachung** wird jetzt der Wert 0x0065 angezeigt. Um diesen Wert als ein Zeichen und nicht als Integer auszudrücken, klicken Sie zunächst mit der rechten Maustaste, und deaktivieren Sie **Hexadezimale Anzeige**. Fügen Sie dann den Zeichenformatbezeichner **, c** in der Spalte **Name** nach dem Variablennamen hinzu. In der Spalte **Wert** wird jetzt **101 'e'** angezeigt.
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Screenshot: Visual Studio-Überwachungsfenster mit einer ausgewählten Zeile, die „my_var1.c“ mit dem Wert „101 'e'“ und dem Typ „int“ enthält](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 Sie können eine Liste der verfügbaren Formatbezeichner anzeigen und Formatbezeichner darin auswählen, indem Sie an den Wert im Fenster **Überwachung** ein Komma (,) anfügen. 

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Debuggen von C#-Code'
-description: Erfahren Sie, wie Sie den Visual Studio-Debugger starten, den Code durchlaufen und Daten überprüfen.
+description: Lernen Sie Funktionen des Visual Studio-Debuggers kennen und wie Sie den Debugger starten, den Code durchlaufen und Daten in einer C#-Anwendung überprüfen.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 04/23/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 435564a9bf4e90dd25ed5fee3a44d0578c201a99
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153061"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846940"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C#-Code mit Visual Studio
 
@@ -167,7 +167,7 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
     Haltepunkte sind ein einfaches und wichtiges Feature zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
-2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche**Debuggen starten**![Debuggen starten](../../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
+2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche **Debuggen starten**![Debuggen starten](../../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
 
     ![Festlegen und Treffen eines Haltepunkts](../csharp/media/get-started-set-breakpoint.gif)
 
@@ -187,7 +187,7 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
 
 1. Erweitern Sie die Variable `letters`, damit ihre Eigenschaften angezeigt werden. Dazu zählen auch alle in der Variable enthaltenen Elemente.
 
-     ![Einen Datentipp anzeigen](../csharp/media/get-started-view-data-tip.png "Einen Datentipp anzeigen")
+     ![Screenshot des Visual Studio-Debuggers mit hervorgehobener Anweisung „name+= letters [I]“ und einer Dropdownliste, in der die Elemente aus dem Buchstabenarray angezeigt werden.](../csharp/media/get-started-view-data-tip.png)
 
 1. Zeigen Sie als Nächstes auf die `name`-Variable. Daraufhin wird Ihnen der aktuelle Variablenwert angezeigt: eine leere Zeichenfolge.
 
@@ -197,7 +197,7 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
 
 1. Drücken Sie mehrmals auf **F10** (oder **Debuggen** > **Prozedurschritt**), um mehrmals die `for`-Schleife zu durchlaufen. Dabei pausiert der Debugger jedes Mal am Breakpoint, sodass Sie auf die `name`-Variable zeigen und ihren Wert überprüfen können.
 
-     ![Einen Datentipp anzeigen](../csharp/media/get-started-data-tip.gif "Einen Datentipp anzeigen")
+     ![Ein animierter Screenshot des Visual Studio-Debuggers, der den Effekt des Drückens der Tastenkombination F10 für einen „Prozedurschritt“ und das Iterieren durch eine Schleife während des Debuggens zeigt.](../csharp/media/get-started-data-tip.gif)
 
      Der Wert der Variable ändert sich bei jeder Iteration der `for`-Schleife, von `f` in `fr` in `fre` usw. Damit der Debugger die Schleife in diesem Szenario schneller durchläuft, können Sie stattdessen **F5** drücken oder **Debuggen** > **Fortsetzen** auswählen, um zum nächsten Breakpoint anstatt zur nächsten Anweisung zu springen.
 

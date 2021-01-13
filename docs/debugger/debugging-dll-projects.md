@@ -1,5 +1,7 @@
 ---
 title: Debuggen von DLL-Projekten | Microsoft-Dokumentation
+description: Debuggen Sie DDL-Dateien (Dynamic Link Library) in Visual Studio. Verwenden Sie Visual Studio, um DLLs zu erstellen, kompilieren, konfigurieren und debuggen.
+ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315069"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728498"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Debuggen von DLLs in Visual Studio (C#, C++, Visual Basic, F#)
 

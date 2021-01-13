@@ -1,6 +1,6 @@
 ---
 title: Ausdrücke im Debugger | Microsoft-Dokumentation
-description: „Bearbeiten und fortfahren“ ist für Visual C#-Projekte verfügbar. Hier erfahren Sie, welche Änderungen unterstützt werden und wie Sie steuern können, ob und wann Ihre Änderungen angewendet werden.
+description: Hier erfahren Sie, welche Sprachausdrücke von den Ausdrucksauswertungen im Visual Studio-Debugger nicht unterstützt werden.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 5b05af635ba7774cdb31291ad7c2b7eb52686bcf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862866"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846723"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Ausdrücke im Visual Studio-Debugger
 Der Visual Studio-Debugger beinhaltet eine Ausdrucksauswertung, die aktiv wird, wenn Sie einen Ausdruck in das Dialogfeld **Schnellüberwachung** , in das Fenster **Überwachen** oder in das Fenster **Direkt** eingeben. Die Ausdruckauswertung ist auch im Fenster **Haltepunkte** sowie an vielen anderen Stellen im Debugger aktiv.

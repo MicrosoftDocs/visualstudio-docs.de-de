@@ -1,5 +1,7 @@
 ---
 title: Debuggen mehrerer Prozesse | Microsoft-Dokumentation
+description: Debuggen mehrerer Prozesse in Visual Studio Sie können Prozesse starten und zwischen Prozessen wechseln, Prozesse anhalten, fortsetzen und deren Quellcode schrittweise durchlaufen sowie einzelne Prozesse beenden oder trennen.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 214025c2d128443223594fdb00fcf730e5a8091a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350601"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728630"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Debuggen mehrerer Prozesse (C#, Visual Basic, C++)
 
@@ -73,7 +75,7 @@ Weitere Informationen finden Sie unter [Anfügen an laufende Prozesse](../debugg
 
 In bestimmten Fällen müssen Sie möglicherweise den Startcode für eine App debuggen, die von einem anderen Prozess gestartet wird. Zu den Beispielen hierfür gehören Dienste und benutzerdefinierte Setupaktionen. Der Debugger kann gestartet und automatisch an die App angefügt werden.
 
-1. Starten Sie den Registrierungs-Editor von Windows, indem Sie *regedit.exe*ausführen.
+1. Starten Sie den Registrierungs-Editor von Windows, indem Sie *regedit.exe* ausführen.
 
 1. Navigieren Sie im Registrierungs-Editor zu **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options**.
 

@@ -1,6 +1,6 @@
 ---
 title: Livedebuggen von ASP.NET-Azure-VMs und Skalierungsgruppen
-description: Erfahren Sie, wie Sie Andockpunkte festlegen und Momentaufnahmen mit dem Momentaufnahmedebugger anzeigen.
+description: Hier erfahren Sie, wie Sie den Momentaufnahmedebugger in Visual Studio verwenden, um beim Debuggen von aktiven ASP.NET Azure-Anwendungen auf virtuellen Azure-Computern und in Skalierungsgruppen Andockpunkte festzulegen und Momentaufnahmen zu erstellen.
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809556"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846957"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET-Apps auf Azure-VMs und Azure-VMSS mit dem Momentaufnahmedebugger
 

@@ -34,27 +34,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae9ba7618416ae6db71861eebbff41d32035eb0
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 52c95749d5d7e2909fbff6da0a3a45bc36cd73c6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102583"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729326"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Breakpoints im Visual Studio-Debugger
 
 Breakpoints sind eines der wichtigsten Debugverfahren in der Toolbox eines Entwicklers. Sie können Breakpoints an den Stellen festlegen, an denen der Debugger die Ausführung unterbrechen soll. Sie können sich dann beispielsweise den Status von Codevariablen an einem bestimmten Breakpoint ansehen oder die Aufrufliste anzeigen.  Wenn Sie eine Warnung oder ein Problem bei der Verwendung von Breakpoints auflösen möchten, finden Sie unter [Troubleshooting für Breakpoints im Visual Studio-Debugger](../debugger/troubleshooting-breakpoints.md) weitere Informationen.
 
 > [!NOTE]
-> Wenn die Aufgabe oder das Problem, das Sie lösen möchten, bekannt ist, Sie aber nicht sicher sind, welche Art von Breakpoint Sie dazu verwenden müssen, finden Sie unter [Pausieren der Codeausführung](../debugger/find-your-debugging-task.md#pause-running-code) weitere Informationen.
+> Wenn die Aufgabe oder das Problem, das Sie lösen möchten, bekannt ist, Sie aber nicht sicher sind, welche Art von Breakpoint Sie dazu verwenden müssen, finden Sie unter [Häufig gestellte Fragen: Suchen Ihrer Debugfunktion](../debugger/find-your-debugging-task.md#pause-running-code) weitere Informationen.
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> Festlegen von Breakpoints im Quellcode
 
 Sie können einen Haltepunkt für jede beliebige Zeile mit ausführbarem Code festlegen. Im folgenden C#-Code könnte Sie beispielsweise einen Breakpoint in der Codezeile mit der Variablenzuweisung (`int testInt = 1`), der `for`-Schleife oder im Code innerhalb der `for`-Schleife festlegen. Sie können einen Breakpoint bei Methodensignaturen, Namespace-, Klassen- oder Variablendeklarationen festlegen, wenn keine Zuweisung und keine Getter oder Setter vorhanden sind.
 
-Wenn Sie einen Breakpoint im Quellcode festlegen möchten, klicken Sie links neben einer Codezeile auf den Rand. Sie können auch die entsprechende Zeile auswählen und **F9** drücken, auf **Debuggen**   >  **Haltepunkt ein/aus** klicken oder mit der rechten Maustaste klicken und **Haltepunkt**   >  **Haltepunkt einfügen** auswählen. Der Breakpoint wird als roter Punkt am linken Rand angezeigt.
+Wenn Sie einen Breakpoint im Quellcode festlegen möchten, klicken Sie links neben einer Codezeile auf den Rand. Sie können auch die entsprechende Zeile auswählen und **F9** drücken, auf **Debuggen**  >  **Haltepunkt ein/aus** klicken oder mit der rechten Maustaste klicken und **Haltepunkt**  >  **Haltepunkt einfügen** auswählen. Der Breakpoint wird als roter Punkt am linken Rand angezeigt.
 
-Bei den meisten Programmiersprachen, einschließlich C#, werden Breakpoints und die aktuelle Ausführungszeile automatisch hervorgehoben. Bei C++-Code können Sie die Hervorhebung für Breakpoints und die aktuelle Zeile aktivieren, indem Sie auf **Extras** (oder **Debuggen** ) > **Optionen**   >  **Debuggen**   >   **Bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren (nur C++)** klicken.
+Bei den meisten Programmiersprachen, einschließlich C#, werden Breakpoints und die aktuelle Ausführungszeile automatisch hervorgehoben. Bei C++-Code können Sie die Hervorhebung für Breakpoints und die aktuelle Zeile aktivieren, indem Sie auf **Extras** (oder **Debuggen**) > **Optionen**  >  **Debuggen**  >   **Bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren (nur C++)** klicken.
 
 ![Festlegen eines Breakpoints](../debugger/media/basicbreakpoint.png "Einfacher Breakpoint")
 
@@ -68,7 +68,7 @@ Wenn der Debugger am Breakpoint anhält, können Sie den aktuellen Status der Ap
 
 Im Folgenden finden Sie einige allgemeine Hinweise für das Arbeiten mit Breakpoints.
 
-- Bei einem Breakpoint handelt es sich um eine Umschaltfläche. Sie können auf sie klicken, **F9** drücken oder **Debuggen**   >  **Haltepunkt ein/aus** verwenden, um den Breakpoint zu löschen oder ihn neu einzufügen.
+- Bei einem Breakpoint handelt es sich um eine Umschaltfläche. Sie können auf sie klicken, **F9** drücken oder **Debuggen**  >  **Haltepunkt ein/aus** verwenden, um den Breakpoint zu löschen oder ihn neu einzufügen.
 
 - Wenn Sie einen Breakpoint deaktivieren möchten, ohne ihn zu löschen, bewegen Sie den Mauszeiger darauf, oder klicken Sie mit der rechten Maustaste auf ihn, und klicken Sie dann auf **Haltepunkt deaktivieren**. Deaktivierte Breakpoints werden am linken Rand oder im Fenster **Haltepunkte** ausgegraut angezeigt. Wenn Sie einen Breakpoint wieder aktiveren möchten, bewegen Sie den Mauszeiger darauf, oder klicken Sie mit der rechten Maustaste darauf, und klicken Sie auf **Haltepunkt aktivieren**.
 
@@ -90,9 +90,9 @@ Sie können steuern, wann und wo ein Haltepunkt ausgeführt wird, indem Sie Bedi
 
    ![Haltepunkteinstellungen](../debugger/media/breakpointsettings.png "Breakpointeinstellungen")
 
-2. Klicken Sie im Dropdown auf **Bedingter Ausdruck** , **Trefferanzahl** oder **Filter** , und legen Sie den Wert entsprechend fest.
+2. Klicken Sie im Dropdown auf **Bedingter Ausdruck**, **Trefferanzahl** oder **Filter**, und legen Sie den Wert entsprechend fest.
 
-3. Klicken Sie auf **Schließen** , oder drücken Sie **STRG**+**EINGABETASTE** , um das Fenster **Haltepunkteinstellungen** zu schließen. Alternativ können Sie im Fenster **Haltepunkte** auf **OK** klicken, um das Dialogfeld zu schließen.
+3. Klicken Sie auf **Schließen**, oder drücken Sie **STRG**+**EINGABETASTE**, um das Fenster **Haltepunkteinstellungen** zu schließen. Alternativ können Sie im Fenster **Haltepunkte** auf **OK** klicken, um das Dialogfeld zu schließen.
 
 Breakpoints, für die Bedingungen festgelegt wurden, werden im Quellcode und im Fenster **Haltepunkte** mit einem **+** -Symbol angezeigt.
 
@@ -123,7 +123,7 @@ Wenn Sie eine Haltepunktbedingung mit ungültiger Syntax festlegen, wird sofort 
 
 1. Legen Sie im Code an einer beliebigen Stelle nach der Erstellung des Objekts einen Breakpoint fest.
 
-2. Starten Sie das Debuggen, und klicken Sie auf **Debuggen**   >  **Fenster**   >  **Lokale Variablen** oder **ALT**+**4** , um das Fenster **Lokale Variablen** zu öffnen, wenn die Ausführung am Breakpoint angehalten wird.
+2. Starten Sie das Debuggen, und klicken Sie auf **Debuggen**  >  **Fenster**  >  **Lokale Variablen** oder **ALT**+**4**, um das Fenster **Lokale Variablen** zu öffnen, wenn die Ausführung am Breakpoint angehalten wird.
 
    Suchen Sie im Fenster **Lokale Variablen** nach der spezifischen Objektinstanz, klicken Sie mit der rechten Maustaste darauf, und klicken Sie dann auf **Objekt-ID erstellen**.
 
@@ -144,7 +144,7 @@ Wenn Sie eine Haltepunktbedingung mit ungültiger Syntax festlegen, wird sofort 
 
 Wenn Sie vermuten, dass eine Schleife im Code nach einer bestimmten Anzahl von Iterationen ein fehlerhaftes Verhalten aufweist, können Sie einen Breakpoint festlegen, um die Ausführung nach einer bestimmten Trefferanzahl anzuhalten, anstatt mehrmals **F5** zu drücken, um die Iteration zu erreichen.
 
-Klicken Sie im Fenster **Haltepunkteinstellungen** unter **Bedingungen** auf die Option **Trefferanzahl** , und geben Sie dann die Anzahl an Iterationen an. Im folgenden Beispiel wird der Breakpoint so festgelegt, dass er bei jeder weiteren Iteration beachtet wird:
+Klicken Sie im Fenster **Haltepunkteinstellungen** unter **Bedingungen** auf die Option **Trefferanzahl**, und geben Sie dann die Anzahl an Iterationen an. Im folgenden Beispiel wird der Breakpoint so festgelegt, dass er bei jeder weiteren Iteration beachtet wird:
 
 ![Breakpoint „Trefferanzahl“](../debugger/media/breakpointhitcount.png "Breakpoint „Trefferanzahl“")
 
@@ -152,7 +152,7 @@ Klicken Sie im Fenster **Haltepunkteinstellungen** unter **Bedingungen** auf die
 
 Sie können einen Haltepunkt so einschränken, dass dieser nur auf bestimmten Geräten oder in angegebenen Prozesse und Threads aktiviert wird.
 
-Klicken Sie im Fenster **Haltepunkteinstellungen** unter **Bedingungen** auf **Filter** , und geben Sie dann mindestens einen der folgenden Ausdrücke ein:
+Klicken Sie im Fenster **Haltepunkteinstellungen** unter **Bedingungen** auf **Filter**, und geben Sie dann mindestens einen der folgenden Ausdrücke ein:
 
 - MachineName = "name"
 - ProcessId = value
@@ -168,9 +168,9 @@ Sie können eine Ausführung anhalten, wenn eine Funktion aufgerufen wird. Dies 
 
 **So legen Sie einen Funktionsbreakpoint fest:**
 
-1. Klicken Sie auf **Debuggen**   >  **Neuer Haltepunkt**   >  **Funktionshaltepunkt** , oder drücken Sie **ALT**+**F9** > **STRG**+**B**.
+1. Klicken Sie auf **Debuggen**  >  **Neuer Haltepunkt**  >  **Funktionshaltepunkt**, oder drücken Sie **ALT**+**F9** > **STRG**+**B**.
 
-   Alternativ können Sie im Fenster **Haltepunkte** auch auf **Neu**   >  **Funktionshaltepunkt** klicken.
+   Alternativ können Sie im Fenster **Haltepunkte** auch auf **Neu**  >  **Funktionshaltepunkt** klicken.
 
 1. Geben Sie im Dialogfeld **Neuer Funktionshaltepunkt** den Funktionsname in das Feld **Funktionsname** ein.
 
@@ -205,7 +205,7 @@ Sie können eine Ausführung anhalten, wenn eine Funktion aufgerufen wird. Dies 
 
 2. Suchen Sie nach der Adresse der Instanz (z. B. `0xcccccccc`).
 
-3. Klicken Sie auf **Debuggen**   >  **Neuer Haltepunkt**   >  **Funktionshaltepunkt** , oder drücken Sie **ALT**+**F9** > **STRG**+**B**.
+3. Klicken Sie auf **Debuggen**  >  **Neuer Haltepunkt**  >  **Funktionshaltepunkt**, oder drücken Sie **ALT**+**F9** > **STRG**+**B**.
 
 4. Fügen Sie im Feld **Funktionsname** Folgendes hinzu, und wählen Sie die Sprache **C++** aus.
 
@@ -223,7 +223,7 @@ Datenbreakpoints unterbrechen die Ausführung, wenn sich die Eigenschaft eines b
 
 1. Starten Sie das Debuggen in einem .NET Core-Projekt, und warten Sie, bis ein Breakpoint erreicht wird.
 
-2. Klicken Sie in einem der Fenster **Auto** , **Überwachung** oder **Lokale Variablen** mit der rechten Maustaste auf eine Eigenschaft, und klicken Sie dann im Kontextmenü auf die Option **Bei Wertänderungen unterbrechen**.
+2. Klicken Sie in einem der Fenster **Auto**, **Überwachung** oder **Lokale Variablen** mit der rechten Maustaste auf eine Eigenschaft, und klicken Sie dann im Kontextmenü auf die Option **Bei Wertänderungen unterbrechen**.
 
     ![Verwaltete Datenbreakpoints](../debugger/media/managed-data-breakpoint.png "Verwalteter Datenbreakpoint")
 
@@ -242,9 +242,9 @@ Datenbreakpoints in .NET Core funktionieren für Folgendes nicht:
 
 **So legen Sie einen Datenbreakpoint fest:**
 
-1. Starten Sie das Debuggen in einem C++-Projekt, und warten Sie, bis ein Breakpoint erreicht wird. Klicken Sie im Menü **Debuggen** auf die Option **Neuer Haltepunkt**   >  **Datenhaltepunkt**.
+1. Starten Sie das Debuggen in einem C++-Projekt, und warten Sie, bis ein Breakpoint erreicht wird. Klicken Sie im Menü **Debuggen** auf die Option **Neuer Haltepunkt**  >  **Datenhaltepunkt**.
 
-    Alternativ können Sie im Fenster **Haltepunkte** auf **Neu**   >  **Datenhaltepunkt** klicken, oder mit der rechten Maustaste auf ein Element in einem der Fenster **Auto** , **Überwachung** oder **Lokale Variablen** klicken und dann im Kontextmenü auf die Option **Bei Wertänderungen unterbrechen** klicken.
+    Alternativ können Sie im Fenster **Haltepunkte** auf **Neu**  >  **Datenhaltepunkt** klicken, oder mit der rechten Maustaste auf ein Element in einem der Fenster **Auto**, **Überwachung** oder **Lokale Variablen** klicken und dann im Kontextmenü auf die Option **Bei Wertänderungen unterbrechen** klicken.
 
 2. Geben Sie im Feld **Adresse** eine Speicheradresse oder einen Ausdruck ein, der als Speicheradresse ausgewertet wird. Geben Sie beispielsweise `&avar` ein, um die Ausführung bei einer Änderung des Inhalts der Variable `avar` zu unterbrechen.
 
@@ -267,25 +267,25 @@ Unter folgenden Bedingungen funktionieren Datenbreakpoints nicht:
 
 Im Fenster **Haltepunkte** können Sie nach Breakpoints suchen, sie sortieren, filtern, aktivieren/deaktivieren oder entfernen. Sie können auch Bedingungen und Aktionen festlegen oder neue Funktions- oder Datenbreakpoints hinzufügen.
 
-Klicken Sie auf **Debuggen**   >  **Fenster**   >  **Haltepunkte** , oder drücken Sie **ALT**+**F9** oder **STRG**+**ALT**+**B** , um das Fenster **Haltepunkte** zu öffnen.
+Klicken Sie auf **Debuggen**  >  **Fenster**  >  **Haltepunkte**, oder drücken Sie **ALT**+**F9** oder **STRG**+**ALT**+**B**, um das Fenster **Haltepunkte** zu öffnen.
 
 ![Fenster „Haltepunkte“](../debugger/media/breakpointswindow.png "Haltepunkte(Fenster)")
 
-Klicken Sie auf die Option **Spalten anzeigen** , um die Spalten auszuwählen, die im Fenster **Haltepunkte** angezeigt werden sollen. Wählen Sie eine Spaltenüberschrift aus, um die Breakpointliste nach der entsprechenden Spalte zu sortieren.
+Klicken Sie auf die Option **Spalten anzeigen**, um die Spalten auszuwählen, die im Fenster **Haltepunkte** angezeigt werden sollen. Wählen Sie eine Spaltenüberschrift aus, um die Breakpointliste nach der entsprechenden Spalte zu sortieren.
 
 ### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Haltepunktbezeichnungen
 Sie können Bezeichnungen verwenden, um die Breakpointliste im Fenster **Haltepunkte** zu sortieren und zu filtern.
 
 1. Wenn Sie einem Breakpoint eine Bezeichnung hinzufügen möchten, klicken Sie im Quellcode oder im Fenster **Haltepunkte** mit der rechten Maustaste auf den Breakpoint, und klicken Sie dann auf **Bezeichnung bearbeiten**. Fügen Sie eine neue Bezeichnung hinzu, oder wählen Sie eine vorhandene aus, und klicken Sie dann auf **OK**.
-2. Sortieren Sie die Breakpointliste im Fenster **Haltepunkte** , indem Sie **Bezeichnungen** , **Bedingungen** oder andere Spaltenüberschriften auswählen. Sie können auswählen, welche Spalten angezeigt werden sollen, indem Sie in der Symbolleiste auf **Spalten anzeigen** klicken.
+2. Sortieren Sie die Breakpointliste im Fenster **Haltepunkte**, indem Sie **Bezeichnungen**, **Bedingungen** oder andere Spaltenüberschriften auswählen. Sie können auswählen, welche Spalten angezeigt werden sollen, indem Sie in der Symbolleiste auf **Spalten anzeigen** klicken.
 
 ### <a name="export-and-import-breakpoints"></a>Exportieren und Importieren von Haltepunkten
  Wenn Sie den Status und die Position Ihrer Breakpoints speichern oder freigeben möchten, können Sie diese Informationen exportieren oder importieren.
 
 - Wenn Sie einen einzelnen Breakpoint in eine XML-Datei exportieren möchten, klicken Sie im Quellcode oder im Fenster **Haltepunkte** mit der rechten Maustaste auf den Breakpoint, und klicken Sie auf **Exportieren** oder auf **Auswahl exportieren**. Wählen Sie einen Speicherort für den Export aus, und klicken Sie anschließend auf **Speichern**. Der Standardspeicherort ist der Projektmappenordner.
-- Wenn Sie mehrere Breakpoints exportieren möchten, klicken Sie im Fenster **Haltepunkte** auf die Kontrollkästchen neben den jeweiligen Breakpoints, oder geben Sie im Feld **Suche** ein Suchkriterium ein. Klicken Sie auf das Symbol **Alle Haltepunkte exportieren, die mit den aktuellen Suchkriterien übereinstimmen** , und speichern Sie die Datei.
-- Wenn Sie alle Breakpoints exportieren möchten, heben Sie die Auswahl für alle Kontrollkästchen auf, und lassen Sie das Feld **Suche** leer. Klicken Sie auf das Symbol **Alle Haltepunkte exportieren, die mit den aktuellen Suchkriterien übereinstimmen** , und speichern Sie die Datei.
-- Wenn Sie Breakpoints importieren möchten, klicken Sie im Fenster **Haltepunkte** auf das Symbol **Haltepunkte aus einer Datei importieren** , navigieren Sie zum Speicherort der XML-Datei, und klicken Sie auf **Öffnen**.
+- Wenn Sie mehrere Breakpoints exportieren möchten, klicken Sie im Fenster **Haltepunkte** auf die Kontrollkästchen neben den jeweiligen Breakpoints, oder geben Sie im Feld **Suche** ein Suchkriterium ein. Klicken Sie auf das Symbol **Alle Haltepunkte exportieren, die mit den aktuellen Suchkriterien übereinstimmen**, und speichern Sie die Datei.
+- Wenn Sie alle Breakpoints exportieren möchten, heben Sie die Auswahl für alle Kontrollkästchen auf, und lassen Sie das Feld **Suche** leer. Klicken Sie auf das Symbol **Alle Haltepunkte exportieren, die mit den aktuellen Suchkriterien übereinstimmen**, und speichern Sie die Datei.
+- Wenn Sie Breakpoints importieren möchten, klicken Sie im Fenster **Haltepunkte** auf das Symbol **Haltepunkte aus einer Datei importieren**, navigieren Sie zum Speicherort der XML-Datei, und klicken Sie auf **Öffnen**.
 
 ## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Festlegen von Breakpoints in Debuggerfenstern
 
@@ -297,9 +297,9 @@ Sie können auch Breakpoints in den Debuggerfenstern **Aufrufliste** und **Disas
 
 **So legen Sie einen Breakpoint im Aufruflistenfenster fest:**
 
-1. Das Debuggen muss pausiert sein, wenn Sie das Fenster **Aufrufliste** öffnen möchten. Klicken Sie auf **Debuggen**   >  **Fenster**   >  **Aufrufliste** , oder drücken Sie **STRG**+**ALT**+**C**.
+1. Das Debuggen muss pausiert sein, wenn Sie das Fenster **Aufrufliste** öffnen möchten. Klicken Sie auf **Debuggen**  >  **Fenster**  >  **Aufrufliste**, oder drücken Sie **STRG**+**ALT**+**C**.
 
-2. Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die aufrufende Funktion, und klicken Sie dann auf **Haltepunkt**   >  **Haltepunkt einfügen** , oder drücken Sie **F9**.
+2. Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die aufrufende Funktion, und klicken Sie dann auf **Haltepunkt**  >  **Haltepunkt einfügen**, oder drücken Sie **F9**.
 
    Am linken Rand der Aufrufliste wird neben dem Funktionsaufrufnamen ein Symbol für den Breakpoint angezeigt.
 
@@ -313,9 +313,9 @@ Weitere Informationen zur visuellen Nachverfolgung während der Codeausführung 
 
 ### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Festlegen eines Breakpoints im Disassemblierungsfenster
 
-1. Das Debuggen muss pausiert sein, wenn Sie das Fenster **Disassemblierung** öffnen möchten. Klicken Sie auf **Debuggen**   >  **Fenster**   >  **Disassemblierung** , oder drücken Sie **ALT**+**8**.
+1. Das Debuggen muss pausiert sein, wenn Sie das Fenster **Disassemblierung** öffnen möchten. Klicken Sie auf **Debuggen**  >  **Fenster**  >  **Disassemblierung**, oder drücken Sie **ALT**+**8**.
 
-2. Klicken Sie im Fenster **Disassemblierung** in Höhe der Anweisung, an der die Ausführung unterbrochen werden soll, auf den linken Rand. Sie können auch die entsprechende Zeile auswählen und **F9** drücken, oder mit der rechten Maustaste klicken und auf **Haltepunkt**   >  **Haltepunkt einfügen** klicken.
+2. Klicken Sie im Fenster **Disassemblierung** in Höhe der Anweisung, an der die Ausführung unterbrochen werden soll, auf den linken Rand. Sie können auch die entsprechende Zeile auswählen und **F9** drücken, oder mit der rechten Maustaste klicken und auf **Haltepunkt**  >  **Haltepunkt einfügen** klicken.
 
 ## <a name="see-also"></a>Siehe auch
 

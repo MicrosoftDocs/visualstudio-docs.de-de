@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 10/22/2020
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467543"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696622"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
@@ -26,7 +26,7 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Verwenden des Massenhinzufügens zum Zuweisen von Abonnements
 1. Melden Sie sich unter <https://manage.visualstudio.com> beim Verwaltungsportal für Visual Studio-Abonnements an.
 
-1. Navigieren Sie zur Registerkarte **Abonnenten verwalten** , um mehrere Abonnenten gleichzeitig hinzuzufügen. Klicken Sie auf die Registerkarte **Hinzufügen** , und wählen Sie im Dropdownmenü **Massenhinzufügen** aus.  
+1. Navigieren Sie zur Registerkarte **Abonnenten verwalten**, um mehrere Abonnenten gleichzeitig hinzuzufügen. Klicken Sie auf die Registerkarte **Hinzufügen**, und wählen Sie im Dropdownmenü **Massenhinzufügen** aus.  
 
 1. Die Funktion zum Massenhinzufügen verwendet eine Microsoft Excel-Vorlage zum Hochladen von Abonnenteninformationen. Wählen Sie im Dialogfeld „Upload Multiple Subscribers“ (Mehrere Abonnenten hochladen) **Herunterladen** aus, um die Vorlage herunterzuladen.
    > [!div class="mx-imgBorder"]
@@ -46,7 +46,7 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
     - Entfernen Sie Leerzeichen vor und nach Formularfeldern.
     - Stellen Sie sicher, dass Benutzernamen keine zusätzlichen Leerzeichen zwischen zweiteiligen Vor- und Nachnamen aufweisen (z.B. sollten zweiteilige Namen wie „Maggie May“ nicht mit doppelten Leerzeichen geschrieben werden („MaggieMay“), da das System die überflüssigen Leerzeichen nicht automatisch entfernt).
     - Stellen Sie sicher, dass alle erforderlichen Felder ausgefüllt sind. 
-    - Überprüfen Sie die Spalte **Fehlermeldung** .  Falls Fehler aufgeführt werden, lösen Sie diese, bevor Sie die Datei hochladen. 
+    - Überprüfen Sie die Spalte **Fehlermeldung**.  Falls Fehler aufgeführt werden, lösen Sie diese, bevor Sie die Datei hochladen. 
 
 1. Kehren Sie zum Portal für die Verwaltung von Visual Studio-Abonnements zurück. Wählen Sie im Dialogfeld **Mehrere Abonnenten hochladen** die Option **Durchsuchen** aus.
    > [!div class="mx-imgBorder"]
@@ -66,9 +66,9 @@ Um große Benutzergruppen hinzuzufügen, können Sie die Funktion zum Massenhinz
    1. Öffnen Sie die erstellte Excel-Datei, beheben Sie die Probleme, und speichern Sie die Datei.
    0. Kehren Sie zum Verwaltungsportal zurück, und schließen Sie die Fehlermeldung.
    0. Wählen Sie **Hinzufügen** aus.
-   0. Klicken Sie auf **Massenhinzufügen** .
+   0. Klicken Sie auf **Massenhinzufügen**.
    0. Da Sie die Excel-Datei bereits gespeichert haben, müssen Sie die Vorlage nicht herunterladen.  Wählen Sie **Durchsuchen** aus, suchen Sie nach der gerade gespeicherten Datei, und wählen Sie dann **Öffnen** aus.
-   0. Klicken Sie auf **OK** .
+   0. Klicken Sie auf **OK**.
 
 
     Wenn der Upload erfolgreich ausgeführt wurde, wird Ihnen eine Liste mit den Abonnenten und eine Bestätigungsmeldung angezeigt.
@@ -86,7 +86,7 @@ Durch die Verwendung dieser Funktion ist es einfacher, den Überblick über Ihre
 > - Gruppen müssen mindestens ein Mitglied enthalten.  Leere Gruppen werden nicht unterstützt.
 > - Gruppen müssen weniger als 1.000 Benutzer enthalten. 
 > - Alle Benutzer müssen auf oberster Ebene der Gruppe enthalten sein.  Geschachtelte Gruppen werden nicht unterstützt.
-> - Es werden nur vertrauenswürdige Vereinbarungen unterstützt.
+> - Es werden nur vertrauenswürdige Vereinbarungen unterstützt. (Nur Vereinbarungen, die zu viele Abonnements zuordnen dürfen, sind vertrauenswürdig.)
 > - Alle Mitglieder der Gruppe müssen über eine E-Mail-Adresse verfügen, die mit ihrem Azure AD-Konto verknüpft ist.
 > - Separate E-Mail-Adressen für Benachrichtigungen werden für Abonnements nicht unterstützt, die über Azure AD-Gruppen hinzugefügt wurden.  
 
@@ -97,9 +97,9 @@ Sehen Sie sich dieses Video an, oder lesen Sie weiter, um mehr über das Hinzuf�
 
 1. Melden Sie sich unter [https://manage.visualstudio.com](https://manage.visualstudio.com) beim Verwaltungsportal für Visual Studio-Abonnements an.
 
-2. Navigieren Sie zur Registerkarte **Abonnenten verwalten** , um mehrere Abonnenten gleichzeitig hinzuzufügen.
+2. Navigieren Sie zur Registerkarte **Abonnenten verwalten**, um mehrere Abonnenten gleichzeitig hinzuzufügen.
 
-3. Klicken Sie auf die Registerkarte **Hinzufügen** , und wählen Sie im Dropdownmenü die Option **Azure Active Directory-Gruppe** aus.  
+3. Klicken Sie auf die Registerkarte **Hinzufügen**, und wählen Sie im Dropdownmenü die Option **Azure Active Directory-Gruppe** aus.  
 
    > [!div class="mx-imgBorder"]
    > ![Auswahl zum Massenhinzufügen über Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Wählen Sie „Massenhinzufügen“ mit dem Azure AD-Feature aus, um Abonnenten aus Ihrer Azure Active Directory-Gruppe abzurufen.")
@@ -129,6 +129,12 @@ Antwort: Nein. Jedes Mitglied in der Gruppe erhält dasselbe Abonnement.
 
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>Frage: Kann ich die Detailinformationen zu einzelnen Abonnenten bearbeiten, die in einer Azure AD-Gruppe hinzugefügt werden?  
 Antwort: Nein. Wenn Sie die Informationen zu einem einzelnen Abonnenten ändern möchten, müssen Sie den Abonnenten aus der Azure AD-Sicherheitsgruppe entfernen und ihm individuell ein Abonnement zuweisen.  
+
+### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>Frage: Warum kann ich die Option zum Verwenden von Azure Active Directory-Gruppen zum Hinzufügen von Abonnenten nicht sehen?
+Antwort: Die Funktion ist zurzeit nur für Organisationen mit vertrauenswürdigen Vereinbarungen verfügbar.  Wählen Sie die Schaltfläche **Details** aus, um Ihre Vereinbarungsinformationen anzuzeigen.
+
+   > [!div class="mx-imgBorder"]
+   > ![Klicken Sie auf die Schaltfläche „Details“.](_img/assign-license-bulk/bulk-add-agreement.png "Klicken Sie auf die Schaltfläche „Details“, um anzuzeigen, welche Art von Vereinbarung Sie haben.")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Frage: Ich habe einen Benutzer zu meiner Azure AD-Sicherheitsgruppe hinzugefügt, dieser wird aber im Abonnementverwaltungsportal nicht als hinzugefügt angezeigt und hat kein Abonnement erhalten. Warum nicht?  
 Antwort: Abhängig von der Azure AD-Konfiguration Ihrer Organisation kann es bis zu 24 Stunden dauern, bis der Benutzer hinzugefügt wird. Falls seit dem Hinzufügen mehr als 24 Stunden vergangen sind, [wenden Sie sich an den Support](https://visualstudio.microsoft.com/support/support-overview-vs).  
