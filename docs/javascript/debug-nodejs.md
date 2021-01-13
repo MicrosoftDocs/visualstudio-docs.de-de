@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 369fa3c080705f552aed25ecef6bd87a3db43a64
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285191"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815619"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
@@ -29,7 +29,7 @@ Sie können mithilfe von Visual Studio JavaScript- und TypeScript-Code debuggen.
 
 1. Öffnen Sie zunächst Ihr Projekt in Visual Studio und anschließend eine serverseitige JavaScript-Datei (z. B. *server.js*). Klicken Sie dann auf den Bundsteg auf der linken Seite, um einen Breakpoint festzulegen:
 
-    ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Screenshot des Visual Studio-Codefensters mit JavaScript-Code. Ein roter Punkt im linken Bundsteg zeigt an, dass ein Haltepunkt festgelegt ist.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
@@ -107,7 +107,7 @@ Der Debugger benötigt Hilfe beim Identifizieren des richtigen Prozesses, um den
 
 1. Wechseln Sie zu Visual Studio, und legen Sie dann einen Breakpoint in Ihrem Quellcode fest, bei dem es sich um eine JavaScript-, TypeScript-, oder eine JSX-Datei handeln kann. (Legen Sie den Breakpoint in einer Codezeile fest, die Breakpoints zulässt, z. B. eine return-Anweisung oder eine var-Deklaration.)
 
-    ![Haltepunkt festlegen](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Screenshot des Visual Studio-Codefensters. Eine return-Anweisung ist ausgewählt, und ein roter Punkt im linken Bundsteg zeigt an, dass ein Haltepunkt festgelegt ist.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Verwenden Sie **STRG**+**F** (oder **Bearbeiten** > **Suchen und Ersetzen** > **Schnellsuche**), um den spezifischen Code in einer transpilierten Datei zu finden.
 

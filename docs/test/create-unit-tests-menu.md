@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441858"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756629"
 ---
-# <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Erstellen von Stubs für Unittestmethoden mit dem Befehl „Unittests erstellen“
+# <a name="create-unit-test-method-stubs-from-code"></a>Erstellen von Stubs für Komponententestmethoden aus Code
 
 Mit dem Befehl **Komponententests erstellen** werden Stubs für Komponententestmethoden erstellt. Diese Funktion ermöglicht die leichte Konfiguration von Testprojekten, Testklassen und des darin enthaltenen Testmethodenstubs.
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Der Menübefehl **Komponententests erstellen** steht nur für C#-Code für .NET Framework (aber nicht für .NET Core) zur Verfügung.
+> Der Menübefehl **Komponententests erstellen** steht nur für C#-Code für .NET Framework (aber nicht für .NET Core oder .NET Standard) zur Verfügung.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
@@ -38,6 +38,8 @@ Der Menübefehl **Komponententests erstellen** ist erweiterbar und kann zum Gene
 Beginnen Sie, indem Sie eine Methode, einen Typ oder einen Namespace im Code-Editor im zu testenden Projekt auswählen, klicken Sie mit der rechten Maustaste auf diesen, und wählen Sie dann **Komponententests erstellen** aus. Das Dialogfeld **Komponententests erstellen** wird geöffnet. Dort können Sie konfigurieren, wie die Tests erstellt werden sollen.
 
 ![Verwenden des Befehls „Unittests erstellen“](media/createunittestcommand.png)
+
+Wenn Sie keine Optionen für Frameworks für Komponententests für NUnit oder xUnit sehen, finden Sie weitere Informationen unter [Verwenden von Frameworks für Komponententests von Drittanbietern](#use-third-party-unit-test-frameworks).
 
 ## <a name="set-unit-test-traits"></a>Festlegen der Merkmale von Komponententests
 

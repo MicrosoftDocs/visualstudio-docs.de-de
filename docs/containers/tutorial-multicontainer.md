@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037210"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729287"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: Erstellen einer App mit mehreren Containern mit Docker Compose
 
@@ -46,11 +46,11 @@ Klicken Sie nicht auf **Docker-Unterstützung aktivieren**. Die Docker-Unterstü
 
 ::: moniker range="vs-2019"
 
-![Screenshot: Erstellen des Webprojekts](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Screenshot des Bildschirms zum Konfigurieren Ihres neuen Projekts für eine ASP.NET Core-Webanwendung, wobei die Felder „Projektname“ und „Projektmappenname“ auf „WebFrontEnd“ festgelegt sind.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
 Klicken Sie nicht auf **Docker-Unterstützung aktivieren**. Die Docker-Unterstützung fügen Sie erst später hinzu.
 
-![Screenshot: Erstellen des Webprojekts](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Screenshot des Bildschirms „Neue ASP.NET Core-Webanwendung erstellen“ mit ausgewählter Webanwendung. Die Option „Docker-Unterstützung aktivieren“ ist nicht aktiviert.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 

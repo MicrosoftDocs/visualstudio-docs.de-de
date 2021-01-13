@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298219"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729300"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debuggen von Apps in einem lokalen Docker-Container
 
@@ -94,12 +94,12 @@ Sie können die Anwendung in einem Container starten, um Änderungen schnell zu 
 
    Weitere Informationen finden Sie unter [Kompilieren einer Razor-Datei in ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true).
 
-1. Legen Sie die **Lösungskonfiguration** auf **Debuggen** fest. Drücken Sie dann **STRG**+**F5** , um Ihr Docker-Image zu erstellen und lokal auszuführen.
+1. Legen Sie die **Lösungskonfiguration** auf **Debuggen** fest. Drücken Sie dann **STRG**+**F5**, um Ihr Docker-Image zu erstellen und lokal auszuführen.
 
     Wenn das Containerimage erstellt wurde und in einem Docker-Container ausgeführt wird, startet Visual Studio die Web-App in Ihrem Standardbrowser.
 
-1. Wechseln Sie zur *Index* -Seite. Wir nehmen auf dieser Seite Änderungen vor.
-1. Kehren Sie zu Visual Studio zurück, und öffnen Sie *Index.cshtml* .
+1. Wechseln Sie zur *Index*-Seite. Wir nehmen auf dieser Seite Änderungen vor.
+1. Kehren Sie zu Visual Studio zurück, und öffnen Sie *Index.cshtml*.
 1. Fügen Sie den folgenden HTML-Inhalt am Ende der Datei hinzu, und speichern Sie dann die Änderungen.
 
     ```html
@@ -130,14 +130,14 @@ Häufig ist für Änderungen eine weitere Überprüfung erforderlich. Sie könne
 4. Drücken Sie F5, um das Debuggen zu starten und den Haltepunkt zu erreichen.
 5. Wechseln Sie zu Visual Studio, um den Haltepunkt anzuzeigen. Überprüfen Sie die Werte.
 
-   ![Haltepunkt](media/edit-and-refresh/breakpoint.png)
+   ![Screenshot, der einen Teil des Codes für „Index.cshtml.cs“ in Visual Studio zeigt, wobei links von einer gelb hervorgehobenen Codezeile ein Haltepunkt festgelegt ist.](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>Erstellen einer .NET Framework-Konsolen-App
 
 Wenn Sie Projekte der .NET Framework-Konsolen-App verwenden, wird die Option, Docker-Unterstützung ohne Orchestrierung hinzuzufügen, nicht unterstützt. Sie können weiterhin das folgende Verfahren verwenden, auch wenn Sie nur ein einzelnes Docker-Projekt verwenden.
 
 1. Erstellen Sie ein neues .NET Framework-Konsolen-App-Projekt.
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Hinzufügen** > **Unterstützung für Containerorchestrierung** aus.  Klicken Sie im angezeigten Dialogfeld auf **Docker Compose** . Dem Projekt wird eine Dockerfile-Datei hinzugefügt, und es wird ein Docker Compose-Projekt mit zugeordneten Unterstützungsdateien hinzugefügt.
+1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Hinzufügen** > **Unterstützung für Containerorchestrierung** aus.  Klicken Sie im angezeigten Dialogfeld auf **Docker Compose**. Dem Projekt wird eine Dockerfile-Datei hinzugefügt, und es wird ein Docker Compose-Projekt mit zugeordneten Unterstützungsdateien hinzugefügt.
 
 ### <a name="debug-with-breakpoints"></a>Debuggen mit Haltepunkten
 
@@ -152,7 +152,7 @@ Wenn Sie Projekte der .NET Framework-Konsolen-App verwenden, wird die Option, Do
 4. Drücken Sie F5, um das Debuggen zu starten und den Haltepunkt zu erreichen.
 5. Kehren Sie zu Visual Studio zurück, um den Haltepunkt anzuzeigen und die Werte zu überprüfen.
 
-   ![Haltepunkt](media/edit-and-refresh/breakpoint-console.png)
+   ![Screenshot des Codefensters für „Program.cs“ in Visual Studio, wobei links von einer gelb hervorgehobenen Codezeile ein Haltepunkt festgelegt ist.](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>Wiederverwendung von Containern
 

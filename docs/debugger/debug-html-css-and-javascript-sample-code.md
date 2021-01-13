@@ -1,5 +1,7 @@
 ---
 title: Debuggen von HTML- und CSS-Beispielcode | Microsoft-Dokumentation
+description: Enthält HTML- und CSS-Beispielcode, der für eine Schnellstartanleitung zum Debuggen verwendet wird. Die Fehler, die in der Schnellstartanleitung vorhanden sind, werden in diesem Artikel behoben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 245676d084485ee46647112f5409cdb1854d6913
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745547"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728910"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Debuggen von HTML- und CSS-Beispielcode
 

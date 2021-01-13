@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330107"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833272"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Testen Ihres Codes mit dem Test der programmierten UI
 
@@ -217,7 +217,7 @@ Vorgehensweise, wenn das Steuerelement den Fokus verliert und nicht mehr angezei
 
 Beim Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften müssen Sie manchmal die Tastatur verwenden. Wenn Sie beispielsweise versuchen, einen Test der programmierten UI aufzuzeichnen, der ein Kontextmenüsteuerelement verwendet, verliert die Liste der Menüelemente im Steuerelement den Fokus. Es wird dann nicht mehr angezeigt, wenn Sie versuchen, im **Coded UI-Test-Generator** das Tool **Assertionen hinzufügen** auszuwählen. Dieser Vorgang wird in der folgenden Abbildung veranschaulicht. Das Kontextmenü in Internet Explorer verliert den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, es mit **Add Assertions** (Assertionen hinzufügen) auszuwählen.
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
+![Screenshot, der das Tool „Assertionen hinzufügen“ im Coded UI-Test-Generator zeigt, das das Kontextmenü von Internet Explorer überlappt.](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 Wenn Sie die Tastatur zum Auswählen eines Steuerelements verwenden möchten, zeigen Sie mit der Maus auf das Steuerelement. Halten Sie anschließend gleichzeitig die **STRG-TASTE** und die **I-TASTE** gedrückt. Lassen Sie die Tasten los. Das Steuerelement wird durch den **Coded UI-Test-Generator** aufgezeichnet.
 
@@ -229,7 +229,7 @@ Unter Umständen müssen Sie Mauszeiger-Bewegungsereignisse wegen eines bestimmt
 
 Zeigen Sie beim Ausführen des Tests der programmierten UI auf das Steuerelement. Halten Sie anschließend auf der Tastatur gleichzeitig die Tasten **STRG**, **UMSCHALTTASTE** und **R** gedrückt. Lassen Sie die Tasten los. Vom **Coded UI-Test-Generator** wird ein Mauszeiger-Bewegungsereignis aufgezeichnet.
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png)
+![Screenshot der Befehlsleiste des Coded UI-Test-Generators mit ausgewähltem Pause-Symbol. In einem QuickInfo-Fenster wird die Position eines Mauszeigerbewegungs-Ereignisses der Maus („Hover“) gezeigt.](../test/media/codedui_hover.png)
 
 Nach dem Generieren der Testmethode wird der Datei *UIMap.Desinger.cs* ähnlicher Code wie im folgenden Beispiel hinzugefügt:
 

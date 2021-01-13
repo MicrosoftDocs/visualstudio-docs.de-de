@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928553"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696542"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Unterstützte Visual Studio-Features (Vorschau)
 
@@ -27,7 +27,7 @@ In der aktuellen [öffentlichen Betaversion](https://github.com/features/codespa
 Dies ist **nicht als vollständige Liste gedacht**, sondern zur Erläuterung der allgemeinen Funktionen von Visual Studio bei einer Verbindung mit einem Codespace.
 
 > [!NOTE]
-> Wenn Ihnen bei der Verwendung von Codespaces mit Visual Studio ein bestimmtes Feature fehlt, erstellen Sie unter https://developercommunity.visualstudio.com/ ein Issue, und teilen Sie uns dies mit. Dies hilft uns dabei, die meistgewünschten Features als vorrangig zu behandeln.
+> Wenn Ihnen bei der Verwendung von Codespaces mit Visual Studio ein bestimmtes Feature fehlt, raten wir Ihnen, in der [Visual Studio-Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) ein Issue zu erstellen und uns dies mitzuteilen. Dies hilft uns dabei, die meistgewünschten Features als vorrangig zu behandeln.
 
 > [!NOTE]
 > Die folgende Beschreibung von Features bezieht sich nur auf Visual Studio und nicht auf die beiden anderen GitHub Codespaces-Clients (Visual Studio Code und der Editor im Browser).
@@ -108,8 +108,8 @@ Noch nicht verfügbar:
 
 Beim Arbeiten mit Visual Studio mit einem verbundenen Codespace stehen Ihnen die gleichen Barrierefreiheitsfunktionen zur Verfügung wie beim lokalen Arbeiten.
 
-* Quellcodeverwaltung: vollständige Git-Unterstützung über das neue [Git-Fenster](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
-* Barrierefreiheit: Es liegt ein bekanntes Problem vor, bei dem Hilfstechnologien nicht auf das Appcasting einer debuggten App zugreifen können. Abgesehen von dieser Einschränkung wird nicht davon ausgegangen, dass Kompatibilitätsprobleme vorliegen, die nicht bereits in der lokalen Version von Visual Studio bestehen. Informieren Sie uns, wenn Sie Fehler finden, indem Sie auf der [Entwicklercommunity-Website](https://developercommunity.visualstudio.com/) ein Issue erstellen.
+* Quellcodeverwaltung: Umfassende Git-Unterstützung über die neue [integrierte Git-Benutzeroberfläche](../git-with-visual-studio.md).
+* Barrierefreiheit: Es liegt ein bekanntes Problem vor, bei dem Hilfstechnologien nicht auf das Appcasting einer debuggten App zugreifen können. Abgesehen von dieser Einschränkung wird nicht davon ausgegangen, dass Kompatibilitätsprobleme vorliegen, die nicht bereits in der lokalen Version von Visual Studio bestehen. Informieren Sie uns, wenn Sie Fehler finden, indem Sie auf der [Entwicklercommunity-Website](https://aka.ms/feedback/report?space=8) ein Issue erstellen.
 * Veröffentlichung: Das Veröffentlichen in Azure über GitHub Actions wird unterstützt.
 * Verbundene Dienste: AppInsights, Key Vault, Storage, SQL, Redis, Cosmos, OpenAPI und gRPC werden teilweise unterstützt.
 * Test-Explorer*: weitgehend unterstützt

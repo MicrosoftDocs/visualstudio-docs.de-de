@@ -1,5 +1,6 @@
 ---
 title: PerfTips | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie PerfTips des Visual Studio-Debuggers sowie integrierte Diagnosetools verwenden können, um die Leistung Ihrer App während des Debuggens zu überwachen und zu analysieren.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075469"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815827"
 ---
 # <a name="perftips"></a>PerfTips
 
@@ -33,7 +34,7 @@ Breakpoints und die zugehörigen Zeitsteuerungsdaten werden im Fenster **Diagnos
 
 In der folgenden Abbildung ist das Fenster **Diagnosetools** dargestellt.
 
-![Diagnosetools-Update1](../profiling/media/diagnostictools-update1.png "Diagnosetools-Update1")
+![Screenshot des Fensters „Diagnosetools“ im Visual Studio-Debugger mit der Zeitachse für Ereignisse und Diagrammen für Arbeitsspeicher- und CPU-Auslastung.](../profiling/media/diagnostictools-update1.png)
 
 - Die **Haltepunkt** -Zeitachse kennzeichnet die Haltepunkte, die während der Debugsitzung ermittelt wurden. Klicken Sie auf ein Ereignis, um die **Debugger** -Detailliste auszuwählen.
 
@@ -47,15 +48,15 @@ In der folgenden Abbildung ist das Fenster **Diagnosetools** dargestellt.
 
 So aktivieren oder deaktivieren Sie PerfTips:
 
-1. Wählen Sie im Menü **Debuggen** den Befehl **Optionen**aus.
+1. Wählen Sie im Menü **Debuggen** den Befehl **Optionen** aus.
 
-2. Markieren Sie **PerfTip für verstrichene Zeit beim Debuggen anzeigen**oder heben Sie die Auswahl auf.
+2. Markieren Sie **PerfTip für verstrichene Zeit beim Debuggen anzeigen** oder heben Sie die Auswahl auf.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Aktivieren oder deaktivieren Sie das Fenster „Diagnosetools“
 
 Zum Aktivieren oder deaktivieren das Fenster „Diagnosetools“:
 
-1. Wählen Sie im Menü **Debuggen** den Befehl **Optionen**aus.
+1. Wählen Sie im Menü **Debuggen** den Befehl **Optionen** aus.
 
 2. Aktivieren oder deaktivieren Sie **Aktivieren der Diagnosetools während des Debuggens**.
 

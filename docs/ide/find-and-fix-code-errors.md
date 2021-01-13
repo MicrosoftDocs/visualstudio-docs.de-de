@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 49da1f46ee5e182741d3aaa56432faac39bfe0f1
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386731"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833285"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -146,13 +146,13 @@ Weitere Informationen finden Sie unter [Verwenden von Breakpoints im Visual Stud
 
 Wenn der ausgeführte Code auf einen Haltepunkt trifft und anhält, wurde die gelb markierte Codezeile (die aktuelle Anweisung) noch nicht ausgeführt. In dieser Situation ist es empfehlenswert, die aktuelle Anweisung auszuführen und anschließend die geänderten Werte zu überprüfen. Sie können mehrere *step*-Befehle zum Ausführen von Code im Debugger verwenden. Ist der gekennzeichnete Code ein Methodenaufruf, durchlaufen Sie diesen schrittweise durch Drücken von **F11**. Sie können die Codezeile durch Drücken von **F10** auch *überspringen*. Zusätzliche Befehle und Details dazu, wie Code schrittweise durchlaufen wird, finden Sie unter [Navigate code with the debugger (Navigieren im Code mit dem Debugger)](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Visual Studio, Werteprüfung zur Laufzeit](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Screenshot des Visual Studio-Codefensters. Ein roter Punkt im linken Bundsteg zeigt einen Haltepunkt in der Codezeile an, die gelb markiert ist.](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
 Wie in der vorherigen Abbildung dargestellt, kann der Debugger mit **F10** oder **F11** zur nächsten Anweisung springen (da dies kein Methodenaufruf ist, bewirken beide Befehle dasselbe).
 
 Während der Debugger angehalten ist, können Sie die Variablen und Aufruflisten untersuchen, um herauszufinden, was gerade vorgeht. Liegen die Werte in den erwarteten Bereichen? Werden die Aufrufe in der richtigen Reihenfolge ausgeführt?
 
-![Visual Studio, Werteprüfung zur Laufzeit](../ide/media/vs_ide_gs_debug_inspect_value.png)
+![Screenshot des Visual Studio-Codefensters. In der gelb markierten Codezeile ist eine Variable ausgewählt, und eine Dropdownliste wird mit ihrem aktuellen Wert und den aktuellen Verweisen angezeigt.](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
 Zeigen Sie auf eine Variable, um den aktuellen Wert und die Verweise anzuzeigen. Wenn Sie einen nicht erwarteten Wert antreffen, enthält der vorhergehende oder der aufrufende Code möglicherweise einen Fehler. Weitere Informationen finden Sie unter [Tutorial: Weitere Informationen zum Debuggen mit Visual Studio](../debugger/debugger-feature-tour.md).
 

@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: a9242cdd4a09b7d0cb1cae1904800696dc9c3d82
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 650189c4418355ae06b296bac7e16eece0ea88ad
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099179"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727254"
 ---
 # <a name="monitor-with-tensorboard"></a>Überwachen mit TensorBoard
 
@@ -23,8 +23,8 @@ Sie können den Fortschritt des Trainings Ihres Modells mit TensorBoard verfolge
 
 1. Klicken Sie mit der rechten Maustaste auf Ihr Projekt, und klicken Sie dann auf **Run TensorBoard** (Ausführen von TensorBoard). Wählen Sie das Verzeichnis der ausgegebenen TensorBoard-Protokolle aus.
 
-    ![Ausführen von TensorBoard](media/monitor-tensorboard/run-tensorboard.png)
+    ![Screenshot: Projektmappen-Explorer in Visual Studio mit Auswahl des MNIST-Projekts. Ein Kontextmenü ist geöffnet, und der Befehl zum Ausführen von TensorBoard ist ausgewählt.](media/monitor-tensorboard/run-tensorboard.png)
 
 2. Beachten Sie, dass Fehler mit der Zeit abnehmen, was bedeutet, dass sich die Qualität verbessert.
 
-    ![Ausführen von TensorBoard](media/monitor-tensorboard/tensorboard.png)
+    ![Screenshot: TensorBoard-Hauptfenster mit grafischen Visualisierungen der Daten aus den TensorBoard-Protokollen](media/monitor-tensorboard/tensorboard.png)

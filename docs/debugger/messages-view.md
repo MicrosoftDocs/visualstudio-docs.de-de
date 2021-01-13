@@ -1,5 +1,7 @@
 ---
 title: Meldungsansicht | Microsoft-Dokumentation
+description: Fenster, Threads und Prozesse verfügen jeweils über einen zugeordneten Nachrichtendatenstrom, der in einem Meldungsansichtsfenster angezeigt werden kann. Es wird beschrieben, wie Sie eine Meldungsansicht öffnen und steuern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845850"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903402"
 ---
 # <a name="messages-view"></a>Meldungsansicht
 Jedes Fenster verfügt über einen zugehörigen Meldungsdatenstrom. In einem Meldungsansichtsfenster wird dieser Meldungsdatenstrom angezeigt. Angezeigt werden das Fensterhandle, der Meldungscode und die Meldung. Sie können eine Meldungsansicht auch für einen Thread oder einen Prozess erstellen. Dadurch können Sie Meldungen anzeigen, die an alle Fenster gesendet werden, die sich im Besitz eines bestimmten Prozesses oder Threads befinden. Dies ist besonders hilfreich für die Erfassung von Fensterinitialisierungsmeldungen.

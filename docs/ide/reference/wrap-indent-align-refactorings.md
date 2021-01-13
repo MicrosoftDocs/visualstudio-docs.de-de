@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093885"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761224"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Umschließen, Einziehen und Ausrichten von Refactorings
 
@@ -40,7 +40,7 @@ Dieses Refactoring gilt für:
 2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
 3. Wählen Sie **Aufrufkette umbrechen** oder **Aufrufkette umbrechen und ausrichten** aus, um das Refactoring zu akzeptieren.
 
-   ![Umschließen und Ausrichten von Aufrufketten](media/wrap-call-chain.png)
+   ![Screeenshot: Menü „Schnellaktionen und Refactorings“ in Visual Studio mit Auswahl von „Aufrufkette umbrechen“ und C#-Codeänderungen](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>Umschließen, Einziehen und Ausrichten von Parametern und Argumenten
 
@@ -85,7 +85,7 @@ Dieses Refactoring gilt für:
 2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
 3. Wählen Sie **Ausdruck umschließen** aus, um das Refactoring zu akzeptieren.
 
-   ![Umschließen und Ausrichten von Aufrufketten](media/wrap-binary-expression.png)
+   ![Screeenshot: Menü „Schnellaktionen und Refactorings“ in Visual Studio mit Auswahl von „Ausdruck umschließen“ und C#-Codeänderungen](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>Siehe auch
 

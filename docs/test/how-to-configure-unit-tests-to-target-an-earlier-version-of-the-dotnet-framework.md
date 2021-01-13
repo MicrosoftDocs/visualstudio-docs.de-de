@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441247"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833233"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 
@@ -62,7 +62,7 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 4. Verwenden Sie die Dropdownliste **Zielframework (alle Konfigurationen)** , um das Zielframework auf **.NET Framework 3.5** oder eine höhere Version zu ändern, wie es im Beispiel B der folgenden Abbildung gezeigt wird. Sie sollten keine Clientversion angeben.
 
-     ![Dropdownliste für Zielframework](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Screenshot des Dialogfelds „Erweiterte Compilereinstellungen“. Die Dropdownliste für das Zielframework ist hervorgehoben, und der Wert ist auf „.NET Framework 3.5“ festgelegt.](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Neuzuweisung für C#-Komponententestprojekte
 
@@ -74,7 +74,7 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 3. Wählen Sie auf der Registerkarte **Anwendung** die Option **Zielframework** aus. Wählen Sie aus der Dropdown-Liste **.NET Framework 3.5** oder eine höhere Version aus, wie in der folgenden Abbildung dargestellt wird. Sie sollten keine Clientversion angeben.
 
-   ![Dropdownliste für Zielframework](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Abbildung der Registerkarte „Anwendung“ im Eigenschaftenbereich des Projektmappen-Explorers, wo der Speicherort der Dropdownliste für Zielframeworks hervorgehoben ist.](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>Neuzuweisung für C++/CLI-Komponententestprojekte
 

@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579964"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833350"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App
 
@@ -124,7 +124,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
 1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **Seiten**, und wählen Sie die **About.cshtml**.
 
-   ![Auswählen der About-cshtml-Datei im Projektmappen-Explorer](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Screenshot: Anzeige der Dateien des HelloWorld-Projekts im Projektmappen-Explorer von Visual Studio. Der Ordner „Seiten“ ist erweitert, und die Datei „About.cshtml“ ist ausgewählt.](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Diese Datei entspricht der Seite mit der Bezeichnung **Info** in der Web-App, die im Webbrowser ausgeführt wird.
 
@@ -134,19 +134,19 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![HTML-Code für den Bereich „Weitere Informationen“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Ändern Sie den Text "„Weitere Informationen“ in „**Hallo Welt!** “.
+1. Ändern Sie den Text "„Weitere Informationen“ in „**Hallo Welt!**“.
 
    ![Ändern des standardmäßigen HTML-Codes für den Bereich „Weitere Informationen“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
 1. Erweitern Sie im **Projektmappen-Explorer** den Ordner **About.cshtml**, und wählen Sie die **About.cshtml.cs**. (Diese Datei entspricht auch der Seite **Info** in einem Webbrowser.)
 
-   ![Auswählen der About-cshtml-Datei im Projektmappen-Explorer](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Screenshot: Anzeige der Dateien des HelloWorld-Projekts im Projektmappen-Explorer von Visual Studio. „About.cshtml“ ist erweitert, und „About.cshtml.cs“ ist ausgewählt.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    Im Editor wird C#-Code mit Text für den Bereich „Anwendungsbeschreibung“ der Seite **Info** angezeigt.
 
    ![C#-Code für die Anwendung im Bereich „Anwendungsbeschreibung“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. Ändern Sie den Text „Anwendungsbeschreibung“ in „**Wie lautet meine Nachricht?** “.
+1. Ändern Sie den Text „Anwendungsbeschreibung“ in „**Wie lautet meine Nachricht?**“.
 
    ![Ändern des Standardnachrichtentexts im Bereich „Anwendungsbeschreibung“ im Visual Studio-Editor](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
@@ -187,7 +187,7 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
    ![Der HTML-Code in der Datei „Index.cshtml“ für die Startseite im Visual Studio-Editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. Ändern Sie den Text „Welcome“ in „**Hello World!** “.
+1. Ändern Sie den Text „Welcome“ in „**Hello World!**“.
 
    ![Ändern des HTML-Standardcodes, der „Welcome“ lautet, in „Hello World“ im Visual Studio-Editor](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
@@ -208,11 +208,11 @@ Damit haben Sie den Schnellstart erfolgreich abgeschlossen. Wir hoffen, dass Sie
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Fahren Sie mit dem folgenden Tutorial fort, um weitere Informationen zu erhalten:
+Fahren Sie für weitere Informationen mit dem folgenden Tutorial fort:
 
 > [!div class="nextstepaction"]
 > [Erste Schritte mit C# und ASP.NET in Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
 ## <a name="see-also"></a>Weitere Informationen
 
-[Veröffentlichen Ihrer Web-App in Azure App Service mit Visual Studio](../deployment/quickstart-deploy-to-azure.md)
+[Veröffentlichen einer Web-App in Azure App Service mit Visual Studio](../deployment/quickstart-deploy-to-azure.md)

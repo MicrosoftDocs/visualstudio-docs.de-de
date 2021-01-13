@@ -1,6 +1,7 @@
 ---
 title: JavaScript-Konsolenbefehle | Microsoft-Dokumentation
-ms.custom: ''
+description: Verwenden Sie Befehle zum Senden von Nachrichten und Durchführen anderer Aufgaben im JavaScript-Konsolenfenster. Dieser Artikel gilt für Node.js-Apps, UWP-Apps und Apache Cordova-Apps.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211273"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903908"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>JavaScript-Konsolenbefehle in Visual Studio
 
@@ -41,9 +42,9 @@ Sie können die längere Befehlsform `window.console.[command]` verwenden, wenn 
 > [!TIP]
 > Ältere Versionen von Visual Studio unterstützen nicht den vollständigen Satz von Befehlen. Wenden Sie IntelliSense auf das Console-Objekt an, um schnell Informationen zu unterstützten Befehle zu erhalten.
 
-|Befehl|Beschreibung|Beispiel|
+|Befehl|BESCHREIBUNG|Beispiel|
 |-------------|-----------------|-------------|
-|`assert(expression, message)`|Sendet eine Meldung, wenn `expression` als **false**ausgewertet wird.|`console.assert((x == 1), "assert message: x != 1");`|
+|`assert(expression, message)`|Sendet eine Meldung, wenn `expression` als **false** ausgewertet wird.|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|Löscht Skriptcode und Meldungen aus dem Konsolenfenster, einschließlich Skriptfehlermeldungen. Löscht keinen Skriptcode, den Sie in die Konsoleneingabeaufforderung eingegeben haben.|`console.clear();`|
 |`count(title)`|Sendet die Häufigkeit, mit der der count-Befehl im Konsolenfenster aufgerufen wurde. Jeder zu zählende Aufruf wird eindeutig durch optionale `title`identifiziert.<br /><br /> Der vorhandene Eintrag im Konsolenfenster wird durch den `title` -Parameter (falls vorhanden) identifiziert und durch den count-Befehl aktualisiert. Ein neuer Eintrag wird nicht erstellt.|`console.count();`<br /><br /> `console.count("inner loop");`|
 |`debug(message)`|Sendet `message` an das Konsolenfenster.<br /><br /> Dieser Befehl ist in console.log identisch.<br /><br /> Objekte, die mit dem Befehl übergeben werden, werden in einen Zeichenfolgenwert konvertiert.|`console.debug("logging message");`|
@@ -67,7 +68,7 @@ Sie können die längere Befehlsform `window.console.[command]` verwenden, wenn 
 ## <a name="miscellaneous-commands"></a>Verschiedene Befehle
 Diese Befehle stehen auch im JavaScript-Konsolenfenster zur Verfügung (sie sind im Code nicht verfügbar).
 
-|Befehl|Beschreibung|Beispiel|
+|Befehl|BESCHREIBUNG|Beispiel|
 |-------------|-----------------|-------------|
 |`$0`, `$1`, `$2`, `$3`, `$4`|Gibt das angegebene Element im Konsolenfenster zurück. `$0` gibt das Element zurück, das gegenwärtig in DOM Explorer ausgewählt ist. `$1` gibt das Element zurück, das zuvor in DOM Explorer ausgewählt wurde usw., bis zum vierten zuvor ausgewählten Element.|$3|
 |`$(id)`|Gibt ein Element anhand der ID zurück. Dies ist ein Kurzbefehl für `document.getElementById(id)`, wobei `id` eine Zeichenfolge ist, die die Element-ID darstellt.|`$("contenthost")`|

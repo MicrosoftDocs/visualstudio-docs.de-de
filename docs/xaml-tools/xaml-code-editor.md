@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329176"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833298"
 ---
 # <a name="xaml-code-editor"></a>XAML-Code-Editor
 
@@ -136,7 +136,7 @@ Weitere Informationen zur Änderungsnachverfolgung – mit Wellenlinien, die un
 
 Beim Bearbeiten von Code im XAML-Code-Editor haben Sie per Rechtsklick Zugriff auf ein Kontextmenü mit verschiedenen Funktionen. Die meisten dieser Funktionen sind allgemein in der Visual Studio-IDE verfügbar. Einige werden jedoch nur in einem Code-Editor im Fenster „Entwurf“ angezeigt.
 
-![Das Kontextmenü (Rechtsklick) des XAML-Code-Editors in Visual Studio](media/xaml-code-editor-right-click-menu.png "Screenshot: Kontextmenü (Rechtsklick) des XAML-Code-Editors in Visual Studio 2019")
+![Screenshot: Rechtsklick-Kontextmenü des XAML-Code-Editors in Visual Studio 2019](media/xaml-code-editor-right-click-menu.png)
 
 Funktionsweise und Verwendung der einzelnen Funktionen:
 
@@ -163,7 +163,7 @@ Mit der Scrollleiste können Sie nicht nur durch Ihren Code scrollen. Sie könne
 
 Oben in der Scrollleiste des Code-Editors befindet sich die Schaltfläche **Teilen**. Wenn Sie diese Option auswählen, können Sie einen weiteren Code-Editor-Bereich anzeigen. Das ist nützlich, weil die Bereiche unabhängig voneinander verwendet werden können. Somit können Sie Code an verschiedenen Stellen bearbeiten.
 
-![Der XAML-Code-Editor, nur mittlerer Bereich, in Visual Studio](media/code-editor-split-window-button.png "Screenshot: XAML-Code-Editor, nur mittlerer Bereich, in Visual Studio 2019")
+![Screenshot: Mittlerer Bereich des XAML-Code-Editors in Visual Studio 2019 mit hervorgehobener Schaltfläche „Teilen“ oben rechts](media/code-editor-split-window-button.png)
 
 Weitere Informationen zum Teilen eines Editorfensters finden Sie auf der Seite [Verwalten von Editorfenstern](../ide/how-to-manage-editor-windows.md).
 
