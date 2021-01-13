@@ -1,5 +1,7 @@
 ---
 title: Just-In-Time, Debuggen, Dialogfeld „Optionen“ | Microsoft-Dokumentation
+description: 'Mithilfe von Just-In-Time-Debuggen können Sie Programme debuggen, die außerhalb von Visual Studio gestartet werden. Hier erfahren Sie, wie Sie Just-In-Time-Debuggen für verschiedene Programmtypen aktivieren:'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b346cfdae8671f8f647d41065d5793184fefd3fb
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731611"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903869"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Debuggen, Dialogfeld "Optionen"
 Um die Seite **Just-In-Time** zu öffnen, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen** den Knoten **Debuggen**, und klicken Sie auf **Just-In-Time**. Auf dieser Seite können Sie das Just-In-Time-Debuggen für verwalteten Code, nativen Code und Skripts aktivieren. Weitere Informationen hierzu finden Sie unter [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md).

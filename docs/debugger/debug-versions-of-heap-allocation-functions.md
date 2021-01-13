@@ -1,5 +1,7 @@
 ---
 title: Debugversionen von Heapreservierungsfunktionen | Microsoft-Dokumentation
+description: Verwenden Sie Debugversionen der Heapzuordnungsfunktionen in der C-Laufzeitbibliothek. Diese Funktionen haben dieselben Namen wie die Releaseversionen, gefolgt vom Suffix „_dbg“.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e4be03c96f9c6ffdf8745ab8890e524ca98b4f4f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738373"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727072"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Debugversionen von Heapreservierungsfunktionen
 Die C-Laufzeitbibliothek umfasst spezielle Debugversionen der Heapreservierungsfunktionen. Diese Funktionen haben dieselben Namen wie die Releaseversionen, gefolgt vom Suffix _dbg. In diesem Thema werden die Unterschiede zwischen der Releaseversion und der _dbg-Version einer CRT-Funktion beschrieben, wobei `malloc` und `_malloc_dbg` als Beispiele verwendet werden.

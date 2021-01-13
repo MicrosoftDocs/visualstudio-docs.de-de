@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674789"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761263"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Anfügen an einen in einem Docker-Container ausgeführten Prozess 
 
@@ -34,7 +34,7 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem .
 
 1. Wählen Sie in Visual Studio **Debuggen > An den Prozess anhängen (STRG+ALT+P)** aus, um das Dialogfeld **An den Prozess anhängen** zu öffnen.
 
-![Menü „An den Prozess anhängen“](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Screenshot des Dialogfelds „An Prozess anhängen“ in Visual Studio, das den Verbindungstyp „Docker (Linux-Container)“ zeigt.](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. Legen Sie den **Verbindungstyp** auf **Docker (Linux-Container)** fest.
 3. Wählen Sie **Suchen...** aus, um das **Verbindungsziel** über das Dialogfeld **Docker-Container auswählen** festzulegen.
@@ -63,7 +63,7 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem .
 
 4. Wählen Sie den entsprechenden Containerprozess aus der Liste der **Verfügbaren Prozesse** und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses in Visual Studio zu beginnen.
 
-    ![Abgeschlossenes Menü „Anfügen“ für Docker](../debugger/media/docker-attach-complete.png "Abgeschlossenes Menü „Anfügen“ für Linux-Docker")
+    ![Screenshot des Dialogfelds „An Prozess anhängen“ in Visual Studio. Der Verbindungstyp ist auf „Docker (Linux-Container)“ festgelegt, und der dotnet-Prozess ist ausgewählt.](../debugger/media/docker-attach-complete.png "Abgeschlossenes Menü „Anfügen“ für Linux-Docker")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a> Anfügen an einen Prozess, der in einem Windows-Docker-Container ausgeführt wird
 
@@ -76,7 +76,7 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem W
 
 1. Wählen Sie in Visual Studio **Debuggen > An den Prozess anhängen** (oder **STRG+ALT+P**) aus, um das Dialogfeld **An den Prozess anhängen** zu öffnen.
 
-   ![Menü „An den Prozess anhängen“](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Screenshot des Dialogfelds „An Prozess anhängen“ in Visual Studio, das den Verbindungstyp „Docker (Windows-Container)“ zeigt.](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. Legen Sie den **Verbindungstyp** auf **Docker (Windows-Container)** fest.
 3. Wählen Sie **Suchen...** aus, um das **Verbindungsziel** über das Dialogfeld **Docker-Container auswählen** festzulegen.
@@ -93,6 +93,6 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem W
 
 4. Wählen Sie den entsprechenden Containerprozess aus der Liste der **Verfügbaren Prozesse** und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses zu beginnen.
 
-    ![Abgeschlossenes Menü „Anfügen“ für Docker](../debugger/media/docker-attach-complete-windows.png "Abgeschlossenes Menü „Anfügen“ für Windows-Docker")
+    ![Screenshot des Dialogfelds „An Prozess anhängen“ in Visual Studio. Der Verbindungstyp ist auf „Docker (Windows-Container)“ festgelegt, und der „dotnet.exe“-Prozess ist ausgewählt.](../debugger/media/docker-attach-complete-windows.png "Abgeschlossenes Menü „Anfügen“ für Windows-Docker")
 
-5.  Wählen Sie den entsprechenden Containerprozess aus der Liste der verfügbaren Prozesse und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses zu beginnen.
+5. Wählen Sie den entsprechenden Containerprozess aus der Liste der verfügbaren Prozesse und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses zu beginnen.

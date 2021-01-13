@@ -12,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190231"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815723"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Korrigieren von nicht erkennbaren dynamischen Parametern in einem Webleistungstest
 
@@ -190,13 +190,13 @@ Zur Demonstration eines auffindbaren und eines nicht auffindbaren dynamischen Pa
 
 3. Kehren Sie zum Webleistungstest-Ergebnisviewer zurück, und wählen Sie die Seite *JScriptQuery.aspx* mit dem Fehler aus. Wählen Sie anschließend die Registerkarte für die Anforderungen, überprüfen Sie, ob das Kontrollkästchen "Unformatierte Daten anzeigen" deaktiviert ist, führen Sie einen Bildlauf nach unten durch, und wählen Sie die Schnellsuche für "CustomQueryString".
 
-     ![Schnellsuche verwenden, um den dynamischen Parameter zu isolieren](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Screenshot der Registerkarte „Anforderung“ in der Webleistungs-Textergebnisanzeige. Ein QueryString-Parameter ist ausgewählt, und QuickFind ist in einem Kontextmenü hervorgehoben.](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. Da Sie den Test im Test-Editor überprüft haben, wissen Sie in diesem Fall, dass dem CustomQueryString-Parameter der Anforderung für *JScriptQuery.aspx* der Wert `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` zugewiesen wurde, und dass der vermutete dynamische Teil „1v0yhyiyr0raa2w4j4pwf5zl“ ist. Entfernen Sie in der Dropdownliste "Suchen nach" den fehlerverdächtigen Teil der Suchzeichenfolge. Die Zeichenfolge sollte "CustomQueryString=jScriptQueryString___" lauten.
 
      Dynamischen Parametern werden in einer der Anforderungen vor der fehlerhaften Anforderung Werte zugewiesen. Aktivieren Sie daher das Kontrollkästchen „Suchrichtung nach oben“, und wählen Sie „Weitersuchen“, bis die vorangehende Anforderung für *Querystring.aspx* im Bereich „Anforderung“ hervorgehoben wird. Dies sollte der Fall sein, nachdem Sie dreimal auf "Weitersuchen" geklickt haben.
 
-     ![Schnellsuche verwenden, um den dynamischen Parameter zu isolieren](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![Screenshot der Webleistungs-Textergebnisanzeige. Eine Abfragezeichenfolge ist ausgewählt, und ein Dialogfeld „Suchen“ wird ausgewählten Optionen „SearchUp“ und „Weitersuchen“ gezeigt.](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      Wie auf der Registerkarte "Antwort" und im zuvor implementierten JavaScript angezeigt wird, ist dem Abfragezeichenfolgen-Parameter "CustomQueryString" der Wert " jScriptQueryString___" zugewiesen, und zudem ist er mit dem zurückgegebenen Wert der sessionId-Variable verkettet.
 

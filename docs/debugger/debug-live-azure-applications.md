@@ -1,7 +1,7 @@
 ---
 title: Debuggen von aktiven ASP.NET Azure-Apps
 titleSuffix: Visual Studio Enterprise
-description: Erfahren Sie, wie Sie Andockpunkte festlegen und Momentaufnahmen mit dem Momentaufnahmedebugger anzeigen.
+description: Hier erfahren Sie, wie Sie den Momentaufnahmedebugger in Visual Studio verwenden, um beim Debuggen von aktiven ASP.NET Azure-Anwendungen Andockpunkte festzulegen und Momentaufnahmen zu erstellen.
 ms.custom: ''
 ms.date: 03/16/2018
 ms.topic: how-to
@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 526f7b7cc1af3dd5a370c74baa09cbab50b3d866
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 3393328999793a7e34fb3af9f7abea7430838f76
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879085"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846977"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debuggen von aktiven ASP.NET Azure-Apps mit dem Momentaufnahmedebugger
 

@@ -1,5 +1,7 @@
 ---
 title: Reservierungshooks und Speicherreservierungen von C-Laufzeitbibliotheken
+description: Hier erhalten Sie grundlegende Informationen zu Reservierungshooks und und Speicherreservierungen von C-Laufzeitbibliotheken beim Debuggen von Visual Studio. Hookfunktionen für Reservierungen müssen Blöcke vom Typ „_CRT_BLOCK“ explizit ignorieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851618"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729170"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Reservierungshooks und Speicherreservierungen von C-Laufzeitbibliotheken
 Eine wichtige Einschränkung bei Hookfunktionen für Belegungen ist die, dass sie `_CRT_BLOCK`-Blöcke explizit ignorieren müssen. Bei diesen Blöcken handelt es sich um die Speicherbelegungen, die von C-Laufzeitbibliotheksfunktionen intern vorgenommen werden, wenn Aufrufe an C-Laufzeitbibliotheksfunktionen gesendet werden, durch die interner Speicher belegt wird. Die `_CRT_BLOCK`-Blöcke können ignoriert werden, wenn Sie am Anfang der Belegungshookfunktion folgenden Code einfügen:

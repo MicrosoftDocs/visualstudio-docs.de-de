@@ -1,6 +1,7 @@
 ---
 title: Problembehandlung beim Debuggen von Momentaufnahmen | Microsoft-Dokumentation
-ms.custom: ''
+description: Hier finden Sie grundlegende Informationen zur Problembehandlung und zu bekannten Problemen beim Debuggen von Momentaufnahmen in Visual Studio. Laden Sie ICorProfiler, ohne Ausfallzeiten am Produktionsstandort zu verursachen.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5a76c1cae508acd08e5f077d466facf02e0211a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182871"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728643"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
-Wenn die in diesem Artikel beschriebenen Schritte Ihr Problem nicht lösen, können Sie in der [Entwicklercommunity](https://developercommunity.visualstudio.com/spaces/8/index.html) nach Ihrem Problem suchen oder ein neues Problem melden, indem Sie in Visual Studio auf **Hilfe** > **Feedback senden** > **Problem melden** klicken.
+Wenn die in diesem Artikel beschriebenen Schritte Ihr Problem nicht lösen, können Sie in der [Entwicklercommunity](https://aka.ms/feedback/suggest?space=8) nach Ihrem Problem suchen oder ein neues Problem melden, indem Sie in Visual Studio auf **Hilfe** > **Feedback senden** > **Problem melden** klicken.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problem: „Momentaufnahmedebugger anfügen“ führt zu einem HTTP-Statuscodefehler
 

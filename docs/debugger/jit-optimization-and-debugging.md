@@ -1,5 +1,7 @@
 ---
 title: JIT-Optimierung und -Debuggen | Microsoft-Dokumentation
+description: Optimierter Code ist schwieriger zu debuggen als nicht optimierter Code. Hier erfahren Sie mehr über die JIT-Optimierung sowie darüber, wann und wie Sie sie unterdrücken sollten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916236"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903921"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-Optimierung und -Debuggen
 Wenn Sie versuchen, Code zu debuggen, ist es einfacher, wenn der Code **NICHT** optimiert ist. Wenn der Code optimiert ist, nehmen der Compiler und die Runtime Änderungen am ausgegebenen CPU-Code vor, sodass er schneller ausgeführt wird, aber eine geringere direkte Zuordnung zum ursprünglichen Quellcode aufweist. Wenn die Zuordnung weniger direkt ist, können Debugger häufig nicht den Wert lokaler Variablen erkennen, und Codeschritte und Breakpoints funktionieren möglicherweise nicht wie erwartet.

@@ -1,5 +1,7 @@
 ---
 title: Debuggen von LINQ | Microsoft-Dokumentation
+description: Debuggen von Language Integrated Query (LINQ) in Visual Studio Anzeigen von LINQ-Ergebnissen Grundlegendes zu Verhaltensunterschieden beim schrittweisen Ausführen von LINQ-Code
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 903ffb5d3187da3bda961caca42cf7436a816b6d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509769"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728360"
 ---
 # <a name="debugging-linq"></a>Debuggen von LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt zwar das Debuggen von Language Integrated Query-Code (LINQ), aber es gelten einige Einschränkungen. Die meisten Debugfunktionen arbeiten mit LINQ-Anweisungen, z. B. für das schrittweise Ausführen, das Festlegen von Haltepunkten und das Anzeigen von Ergebnissen in Debuggerfenstern. In diesem Thema werden die Haupteinschränkungen des LINQ-Debuggens beschrieben.

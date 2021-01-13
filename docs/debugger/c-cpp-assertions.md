@@ -1,5 +1,7 @@
 ---
 title: C/C++-Assertionen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Funktionsweise von C/C++-Assertionen beim Debuggen in Visual Studio. Eine Assertion formuliert eine Bedingung, die an einer bestimmten Stelle im Programm „true“ lauten muss.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 0b585ce001692ab5b4451acc8d2938741bfacd78
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600213"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729066"
 ---
 # <a name="cc-assertions"></a>C/C++-Assertionen
 Eine Assertionsanweisung formuliert eine Bedingung, die an einer bestimmten Stelle im Programm "true" lauten muss. Wenn diese Bedingung nicht den Wert TRUE aufweist, kann die Assertion nicht durchgeführt werden, die Programmausführung wird unterbrochen, und das Dialogfeld [Assertionsfehler](../debugger/assertion-failed-dialog-box.md) wird geöffnet.

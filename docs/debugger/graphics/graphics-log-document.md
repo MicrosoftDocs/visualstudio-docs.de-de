@@ -1,5 +1,7 @@
 ---
 title: Grafikprotokolldokument | Microsoft-Dokumentation
+description: Hier finden Sie grundlegende Informationen zum Grafikprotokolldokument in Visual Studio, das die beim Ausführen Ihrer App in einer Grafikdiagnosesitzung aufgetretenen Grafikereignisse aufzeichnet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735517"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727657"
 ---
 # <a name="graphics-log-document"></a>Grafikprotokolldokument
 Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Grafikdiagnosesitzung aufgetretenen Grafikereignisse. Wenn das Prokotoll erstellt wurde, können Sie es in der Visual Studio-Grafikanalyse auf Renderings- und Leistungsprobleme durchsuchen.
@@ -61,7 +63,7 @@ Das Grafikprotokolldokument enthält die beim Ausführen Ihrer App in einer Graf
 
  Unter **Anzeigeinformationen** werden Informationen zu der Grafikkarte aufgeführt, die während der Erfassungssitzung verwendet wurde.
 
-|Eigenschaft|Beschreibung|
+|Eigenschaft|BESCHREIBUNG|
 |--------------|-----------------|
 |**Beschreibung**|Die Zeichenfolge für die Grafikkartenbeschreibung.|
 |**Anzeigespeicher**|Der Speicherplatz, der auf der Grafikkarte installiert ist.|

@@ -1,5 +1,7 @@
 ---
 title: Debuggen von Inlineassemblycode | Microsoft-Dokumentation
+description: Verwenden Sie beim Debuggen von Inlineassemblycode das Fenster „Disassemblierung“, um die Assemblyanweisungen anzuzeigen, und das Fenster „Register“, um die Registerwerte anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4366c84c87823d052452fa3fa81a3353e0c9e32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c40b8e35cd572c0075bb87f28fa1eda424cb2e8e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852399"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903934"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Vorgehensweise: Debuggen von Inline-Assemblycode
 

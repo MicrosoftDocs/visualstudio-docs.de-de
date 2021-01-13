@@ -13,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 62c2b69edf6868d1559df2a861a85e286f8ffa15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878916"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729209"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Problembehandlung beim Visual Studio-Emulator für Android
 Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen helfen, die bei der Verwendung des Visual Studio-Emulators für Android auftreten können.
@@ -70,7 +70,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 ## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> Fehler bei der Installation des Emulators
  Wenn Hyper-V auf Ihrem System nicht installiert ist, wird bei dem Versuch, den Emulator zu installieren, die folgende Meldung angezeigt: Sie müssen einen Computer verwenden, der HyperV unterstützt, und HyperV muss aktiviert sein.
 
- ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Screenshot einer Visual Studio-Meldung, die besagt, dass Setup für den Microsoft Visual Studio-Emulator für Android blockiert ist, weil der Computer kein Hyper-V unterstützt.](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > Diese Meldung betrifft sowohl den Visual Studio Emulator für Android als auch den Windows Phone-Emulator. Windows 8.1 und Windows 10 unterstützen den Emulator
@@ -135,7 +135,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
 - Öffnen Sie im Hyper-V-Manager den Manager für virtuelle Switches, und überprüfen Sie, ob zwei Netzwerkswitches vorhanden sind; überprüfen Sie, ob der erste der interne Switch und der zweite der externe Switch ist.
 
-     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
+     ![Screenshot des Managers für virtuelle Switches im Hyper-V-Manager. Ein neuer virtueller Switch ist hervorgehoben, und seine Eigenschaften zeigen an, dass es sich um einen externen Netzwerkswitch handelt.](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
      Wenn das Setup fehlerhaft ist und Sie Windows 10 verwenden, können Sie versuchen, [Netzwerkgeräte mit dem Befehl netcfg –d erneut zu installieren](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (Abschnitt 6).
 
@@ -182,7 +182,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
   6. Stellen Sie sicher, dass Sie Windows 8 Professional oder höher einsetzen (Windows Server 2008 wird nicht unterstützt). Windows Server 2012 wird unterstützt, Sie müssen jedoch die Desktopdarstellung aktivieren.
 
-     Sie können die Ereignisanzeige prüfen, um festzustellen, ob Hypervisor-Fehler vorliegen. Öffnen Sie dazu die Ereignisanzeige (drücken Sie **START**+**R** , und geben Sie anschließend `eventvwr` ein), klicken Sie auf **Windows-Protokolle** > **System** . Filtern Sie das Protokoll anschließend nach Ereignisquelle, indem Sie die Quelle auf **Hyper-V-Hypervisor** setzen. Führen Sie eine Fehlerprüfung durch, um die Ursache zu ermitteln.
+     Sie können die Ereignisanzeige prüfen, um festzustellen, ob Hypervisor-Fehler vorliegen. Öffnen Sie dazu die Ereignisanzeige (drücken Sie **START**+**R**, und geben Sie anschließend `eventvwr` ein), klicken Sie auf **Windows-Protokolle** > **System**. Filtern Sie das Protokoll anschließend nach Ereignisquelle, indem Sie die Quelle auf **Hyper-V-Hypervisor** setzen. Führen Sie eine Fehlerprüfung durch, um die Ursache zu ermitteln.
 
      Wenn Ihr Prozessor die Mindestanforderungen erfüllt, der Hypervisor jedoch weiterhin einen Fehler erzeugt, bringen Sie in Erfahrung, ob ein BIOS-Upgrade für Ihren Computer verfügbar ist. Sofern vorhanden, und Sie sich für eine Aktualisierung entscheiden, vergewissern Sie sich, dass Sie dabei alle Vorsichtsmaßnahmen des Herstellers beachten (z. B. indem Sie dafür sorgen, dass die BIOS-Firmware-Aktualisierung nicht durch einen Stromausfall unterbrochen wird, der dauerhaft zur Beschädigung des BIOS führen kann).
 
@@ -242,7 +242,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
      Nach der Deinstallation der Drittanbieterprodukte müssen Sie möglicherweise den internen Switch des Windows Phone-Emulators wiederherstellen. Vorgehensweise:
 
-  - Öffnen Sie Hyper-V und wechseln Sie zum Manager für virtuelle Switches. Erstellen Sie einen virtuellen Switch mit dem Namen „Windows Phone-Emulator, interner Switch“, und setzen Sie den Verbindungstyp auf **internes Netzwerk** .
+  - Öffnen Sie Hyper-V und wechseln Sie zum Manager für virtuelle Switches. Erstellen Sie einen virtuellen Switch mit dem Namen „Windows Phone-Emulator, interner Switch“, und setzen Sie den Verbindungstyp auf **internes Netzwerk**.
 
      ![Manager für virtuelle Switches](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_V_Switch_Man")
 
@@ -264,7 +264,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
 - Öffnen Sie den Registrierungs-Editor, indem Sie im Kontextmenü der Startschaltfläche **Ausführen** auswählen, im Dialogfeld `regedit` eingeben und **OK** auswählen.
 
-- Navigieren Sie links in der Ordnerstruktur zu *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* .
+- Navigieren Sie links in der Ordnerstruktur zu *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools*.
 
 - Ändern Sie die **Pfad** -Registrierungsvariable, damit Sie mit dem Pfad Ihres Android-SDK übereinstimmt.
 
@@ -290,11 +290,11 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
 
 3. Wählen Sie **Settings...** (Einstellungen...).
 
-4. Erweitern Sie den Prozessorknoten und wählen Sie **Kompatibilität** .
+4. Erweitern Sie den Prozessorknoten und wählen Sie **Kompatibilität**.
 
 5. Aktivieren Sie **Migrate to a physical computer with a different processor version** (Zu einem physischen Computer mit einer anderen Prozessorversion migrieren).
 
-6. Starten Sie den Dienst neu (unter **Actions** (Aktionen)) und versuchen Sie es erneut.
+6. Starten Sie den Dienst neu (unter **Actions**(Aktionen)) und versuchen Sie es erneut.
 
 ## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> Fehler beim Ausführen einer App, die Google Play-Dienste benötigt, durch den Emulator
  Der Emulator wird nicht mit den Bibliotheken für Google Play-Dienste bereitgestellt. Der Emulator unterstützt jedoch die Drag-and-Drop-Installation von flashbaren ZIP-Dateien.

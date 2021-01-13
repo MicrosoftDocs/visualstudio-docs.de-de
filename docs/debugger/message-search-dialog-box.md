@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld „Meldungssuche“ | Microsoft-Dokumentation
+description: Verwenden Sie „Meldungssuche“, um den Knoten für eine bestimmte Nachricht in der Meldungsansicht zu suchen und auszuwählen. Sie können nach Handle, Nachrichtentyp und Nachrichten-ID suchen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931298"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903050"
 ---
 # <a name="message-search-dialog-box"></a>Meldungssuche (Dialogfeld)
 Verwenden Sie dieses Dialogfeld, um den Knoten für eine bestimmte Nachricht in der [Meldungsansicht](../debugger/messages-view.md) zu suchen und auszuwählen. Verschieben Sie den Fokus in ein Meldungsansichtsfenster, um dieses Dialogfeld anzuzeigen. Klicken Sie dann im Menü **Suchen** auf **Meldung suchen**.
@@ -41,7 +43,7 @@ Verwenden Sie dieses Dialogfeld, um den Knoten für eine bestimmte Nachricht in 
 
  [Meldungsansicht](../debugger/messages-view.md) Zeigt den Meldungsstream an, der einem Fenster, einem Prozess oder einem Thread zugeordnet ist.
 
- [Spy++-Ansichten](../debugger/spy-increment-views.md) Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
+ [Spy++-Ansichten](../debugger/spy-increment-views.md): Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
  [Verwenden von Spy++](../debugger/using-spy-increment.md): Bietet eine Einführung in das Tool Spy++ und erläutert, wie es verwendet werden kann.
 

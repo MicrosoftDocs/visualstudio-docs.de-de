@@ -1,5 +1,6 @@
 ---
 title: GPU-Nutzung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie das Tool zur GPU-Nutzung im Leistungs-Profiler verwenden, um die allgemeine Hardwarenutzung Ihrer Direct3D-App besser zu verstehen.
 ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074968"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815651"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 
@@ -62,11 +63,11 @@ So generieren Sie einen GPU-Nutzungsbericht und zeigen diesen an
 
 1. Wählen Sie im unteren Bereich des Fensters „Diagnosesitzung“ den Link **Sammlung beenden** aus, oder klicken Sie oben links auf **Beenden**.
 
-   ![Screenshot des Fensters für die Diagnosesitzung](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![Screenshot eines Diagnosesitzungsfenster im GPU-Nutzungstool, das Frames pro Sekunde, die GPU-Auslastung, die Schaltfläche „Beenden“ und den Link „Sammlung beenden“ zeigt.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. Wählen Sie im oberen Bereich des Berichts einen Abschnitt aus einem der Diagramme, die das Problem anzeigt, das Sie untersuchen möchten. Ihre Auswahl kann bis zu 3 Sekunden lang sein. Längere Abschnitte werden am Anfang abgeschnitten.
 
-   ![Screenshot des Fensters für die Diagnosesitzung](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Screenshot eines Diagnosesitzungsfensters im GPU-Nutzungstool mit teilweise ausgewählter Diagnosesitzungs-Zeitachse.](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Um eine detaillierte Zeitachse für Ihre Auswahl anzuzeigen, wählen Sie im unteren Bereich des Berichts in der Meldung **...Klicken Sie hier, um detaillierte Informationen zur GPU-Nutzung für diesen Bereich anzuzeigen** den Link **Details anzeigen** aus.
 
@@ -84,7 +85,7 @@ Ab Visual Studio 2017 können Sie diese Daten mit [GPUView](/windows-hardware/dr
 
 ## <a name="use-the-gpu-usage-report"></a>Verwenden des GPU-Nutzungsberichts
 
-Im oberen Abschnitt des GPU-Nutzungsberichts werden Zeitachsen für CPU-Verarbeitungsvorgänge, GPU-Renderingvorgänge und GPU-Kopiervorgänge angezeigt. Diese Zeitachsen werden durch hellgraue vertikale Balken unterteilt, die die VSync der Anzeige angeben. Die Häufigkeit der Balken entspricht der Aktualisierungsrate einer der Anzeigen (ausgewählt mithilfe des Dropdownmenüs **Anzeige**), aus der die GPU-Nutzungsdaten erfasst wurden.
+Im oberen Abschnitt des GPU-Nutzungsberichts werden Zeitachsen für CPU-Verarbeitungsvorgänge, GPU-Renderingvorgänge und GPU-Kopiervorgänge angezeigt. Diese Zeitachsen werden durch hellgraue vertikale Balken unterteilt, die die vertikale Synchronisierung (vsync) der Anzeige darstellen. Die Häufigkeit der Balken entspricht der Aktualisierungsrate einer der Anzeigen (ausgewählt mithilfe des Dropdownmenüs **Anzeige**), aus der die GPU-Nutzungsdaten erfasst wurden.
 
 Da die Anzeige eine höhere Aktualisierungsrate als das Leistungsziel Ihrer App haben kann, besteht ggf. keine 1:1-Beziehung zwischen VSync und der Framerate, die Ihre App erreichen soll. Um das Leistungsziel zu erreichen, muss eine App alle Verarbeitungsvorgänge abschließen, das Rendering ausführen und einen `Present()`-Aufruf mit der angestrebten Framerate senden. Der gerenderte Frame wird jedoch erst bei der nächsten VSync nach `Present()` angezeigt.
 

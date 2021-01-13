@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld „Meldungseigenschaften“ | Microsoft-Dokumentation
+description: Unter „Meldungseigenschaften“ finden Sie weitere Informationen zu einer Meldung, die in der Meldungsansicht angezeigt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846114"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903063"
 ---
 # <a name="message-properties-dialog-box"></a>Dialogfeld "Meldungseigenschaften"
 Verwenden Sie dieses Dialogfeld, um mehr über eine bestimmte Meldung zu erfahren. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus in ein [Meldungsansichtsfenster](../debugger/messages-view.md). Wählen Sie einen beliebigen Meldungsknoten in der Struktur aus, und wählen Sie anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.
@@ -50,4 +52,4 @@ Verwenden Sie dieses Dialogfeld, um mehr über eine bestimmte Meldung zu erfahre
 
  [Spy++-Ansichten](../debugger/spy-increment-views.md): Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
- [Verwenden von Spy++](../debugger/using-spy-increment.md): Enthält eine Einführung in das Spy++-Tool und erläutert, wie es verwendet werden kann.
+ [Verwenden von Spy++](../debugger/using-spy-increment.md): Bietet eine Einführung in das Tool Spy++ und erläutert, wie es verwendet werden kann.

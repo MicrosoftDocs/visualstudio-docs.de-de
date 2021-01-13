@@ -1,5 +1,7 @@
 ---
 title: Hookfunktionen für Clientblöcke | Microsoft-Dokumentation
+description: Schreiben Sie eine Hookfunktion für Clientblöcke, um die Inhalte der in Blöcken vom Typ „_CLIENT_BLOCK“ gespeicherten Daten zu überprüfen oder zu melden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600194"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729014"
 ---
 # <a name="client-block-hook-functions"></a>Hookfunktionen für Clientblöcke
 Wenn Sie die in `_CLIENT_BLOCK`-Blöcken gespeicherten Daten überprüfen oder als Bericht ausgeben möchten, können Sie speziell für diesen Zweck eine Funktion schreiben. Der Prototyp dieser Funktion muss etwa wie der folgende, in CRTDBG.H definierte Prototyp aussehen:

@@ -1,5 +1,6 @@
 ---
 title: Remotedebuggen eines C#- oder VB-Projekts | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Visual Studio C#- oder Visual Basic-Anwendung von einem Remotecomputer aus debuggen, indem Sie diese schrittweisen Anleitungen befolgen.
 ms.custom:
 - remotedebugging"=
 - seodec18
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76364dd6817774c38daa62463cd5bc635075ba73
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298726"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815697"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Remotedebuggen eines C#- oder VB-Projekts in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung, die auf einem anderen Computer bereitgestellt wurde, installieren und führen Sie die Remotetools auf dem Computer aus, auf dem Sie die App bereitstellen möchten, konfigurieren Sie das Projekt für die Verbindung mit dem Remotecomputer über Visual Studio, und führen Sie die App dann aus.
@@ -57,17 +58,17 @@ Der Remotedebugger wird unter Windows 7 und höher (kein Smartphone) und Window
 ## <a name="remote-debug-the-project"></a><a name="remote_csharp"></a> Remotedebuggen des Projekts
 Der Debugger kann Visual C#- oder Visual Basic-Desktopanwendungen nicht auf einem Remotecomputer bereitstellen, aber Sie können diese trotzdem wie folgt remotedebuggen. Im folgenden Verfahren wird davon ausgegangen, dass Sie die Anwendung auf einem Computer mit dem Namen **MJO-DL** debuggen möchten, wie in der Abbildung gezeigt.
 
-1. Erstellen Sie ein WPF-Projekt mit dem Namen **MyWpf** .
+1. Erstellen Sie ein WPF-Projekt mit dem Namen **MyWpf**.
 
 2. Legen Sie einen leicht erreichbaren Haltepunkt an einer beliebigen Stelle im Code fest.
 
     Beispielsweise können Sie einen Haltepunkt in einem Schaltflächenhandler festlegen. Öffnen Sie hierzu die Datei „MainWindow.xaml“, und fügen Sie ein Schaltflächensteuerelement aus der Toolbox hinzu. Doppelklicken Sie dann auf die Schaltfläche, um ihren Handler zu öffnen.
 
-3. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt und dann auf **Eigenschaften** .
+3. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt und dann auf **Eigenschaften**.
 
 4. Wählen Sie auf der Seite **Eigenschaften** die Registerkarte **Debuggen** aus.
 
-    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")
+    ![Screenshot der Registerkarte „Debuggen“ in den Eigenschaften des Projektmappen-Explorers von Visual Studio. Die Eigenschaft „Remotecomputer verwenden“ ist auf „MJO-DL:4022“ festgelegt.](../debugger/media/remotedebuggercsharp.png)
 
 5. Stellen Sie sicher, dass das Textfeld **Arbeitsverzeichnis** leer ist.
 
@@ -85,7 +86,7 @@ Der Debugger kann Visual C#- oder Visual Basic-Desktopanwendungen nicht auf eine
 
 8. Erstellen Sie das Projekt.
 
-9. Erstellen Sie auf dem Remotecomputer einen Ordner mit dem gleichen Pfad wie der **Debug** -Ordner auf Ihrem Visual Studio-Computer: **\<source path>\MyWPF\MyWPF\bin\Debug** .
+9. Erstellen Sie auf dem Remotecomputer einen Ordner mit dem gleichen Pfad wie der **Debug**-Ordner auf Ihrem Visual Studio-Computer: **\<source path>\MyWPF\MyWPF\bin\Debug**.
 
 10. Kopieren Sie die ausführbare Datei, die Sie soeben erstellt haben, vom Visual Studio-Computer in den neu erstellten Ordner auf dem Remotecomputer.
 
@@ -94,11 +95,11 @@ Der Debugger kann Visual C#- oder Visual Basic-Desktopanwendungen nicht auf eine
 
     Sie können das Projekt manuell kopieren oder XCopy, Robocopy, PowerShell oder andere Optionen verwenden.
 
-11. Stellen Sie sicher, dass der Remotedebugger auf dem Zielcomputer ausgeführt wird (wenn dies nicht der Fall ist, suchen Sie im Menü **Start** nach **Remotedebugger** ). Das Remotedebuggerfenster sieht folgendermaßen aus.
+11. Stellen Sie sicher, dass der Remotedebugger auf dem Zielcomputer ausgeführt wird (wenn dies nicht der Fall ist, suchen Sie im Menü **Start** nach **Remotedebugger**). Das Remotedebuggerfenster sieht folgendermaßen aus.
 
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
+     ![Screenshot des Visual Studio 2017-Remotedebuggerfensters. Eine Aktion ist aufgelistet, die anzeigt, dass der Debugger auf dem Zielcomputer ausgeführt wird.](../debugger/media/remotedebuggerwindow.png)
 
-12. Starten Sie das Debuggen in Visual Studio ( **Debuggen > Debuggen starten** oder **F5** ).
+12. Starten Sie das Debuggen in Visual Studio (**Debuggen > Debuggen starten** oder **F5**).
 
 13. Geben Sie Netzwerkanmeldeinformationen ein, wenn Sie dazu aufgefordert werden, um eine Verbindung mit dem Remotecomputer herzustellen.
 
@@ -110,7 +111,7 @@ Der Debugger kann Visual C#- oder Visual Basic-Desktopanwendungen nicht auf eine
 
 15. Auf dem Visual Studio-Computer sollte angezeigt werden, dass die Ausführung am Haltepunkt angehalten wurde.
 
-    Wenn bestimmte Dateien, die keine Codedateien sind, von der Anwendung benötigt werden, müssen Sie diese in das Visual Studio-Projekt einbeziehen. Erstellen Sie einen Projektordner für die zusätzlichen Dateien (klicken Sie im **Projektmappen-Explorer** auf **Hinzufügen > Neuer Ordner** .) Fügen Sie die Dateien anschließend zum Ordner hinzu (klicken Sie im **Projektmappen-Explorer** auf **Hinzufügen > Vorhandenes Element** , und wählen Sie dann die Dateien aus). Legen Sie auf der Seite **Eigenschaften** der einzelnen Dateien die Option **In Ausgabeverzeichnis kopieren** auf **Immer kopieren** fest.
+    Wenn bestimmte Dateien, die keine Codedateien sind, von der Anwendung benötigt werden, müssen Sie diese in das Visual Studio-Projekt einbeziehen. Erstellen Sie einen Projektordner für die zusätzlichen Dateien (klicken Sie im **Projektmappen-Explorer** auf **Hinzufügen > Neuer Ordner**.) Fügen Sie die Dateien anschließend zum Ordner hinzu (klicken Sie im **Projektmappen-Explorer** auf **Hinzufügen > Vorhandenes Element**, und wählen Sie dann die Dateien aus). Legen Sie auf der Seite **Eigenschaften** der einzelnen Dateien die Option **In Ausgabeverzeichnis kopieren** auf **Immer kopieren** fest.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen
 

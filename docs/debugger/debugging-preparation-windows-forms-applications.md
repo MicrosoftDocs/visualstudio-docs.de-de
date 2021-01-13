@@ -1,6 +1,7 @@
 ---
 title: Vorbereiten des Debuggens von Windows Forms-Apps | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Führen Sie vorbereitende Schritte zum Debuggen von Windows Forms-Anwendungen aus. Diese werden mithilfe der Windows Forms-Projektvorlage in Visual Studio erstellt.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e98411a009ea4345b567cbc38e6cf94c037323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ccb195d6c4a35e4ca3b89c5505ab14c45a5d555
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916397"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726812"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Vorbereitung des Debugvorgangs: Windows Forms-Anwendungen
 Die Windows Forms-Projektvorlage erstellt eine Windows Forms-Anwendung. Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist einfach. Weitere Informationen finden Sie unter [Erstellen eines Windows Anwendungsprojekts](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).

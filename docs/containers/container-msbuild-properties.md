@@ -1,17 +1,17 @@
 ---
 title: 'Visual Studio-Containertools: Buildeigenschaften'
 author: ghogen
-description: Übersicht über den Buildprozess für Containertools
+description: Hier erfahren Sie, wie Sie die Buildeigenschaften des Containertools bearbeiten, um anzupassen, wie Visual Studio ein Containerprojekt erstellt und ausführt.
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8675bd0ea12b30ce678ce454bcedee457ddacd
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283202"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846739"
 ---
 # <a name="container-tools-build-properties"></a>Buildeigenschaften für Containertools
 

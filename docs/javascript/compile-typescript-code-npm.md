@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Kompilieren von TypeScript-Code mithilfe von npm
-description: Erfahren Sie, wie Sie TypeScript in Visual Studio erstellen und kompilieren.
+description: Hier erfahren Sie, wie Sie Ihren Visual Studio-Projekten mithilfe von Node Package Manager (npm) Typescript-Unterstützung hinzufügen.
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: add67535c0c3c9e4a48b95c2b9d5fe0717511797
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: be7bc30f260a492fbc783a8e730b1e550fcb4671
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414372"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846799"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Kompilieren von TypeScript-Code (Node.js)
 
@@ -35,17 +35,17 @@ Das [TypeScript-npm-Paket](https://www.npmjs.com/package/typescript) fügt TypeS
 
    Öffnen Sie im Projektmappen-Explorer im Bereich auf der rechten Seite die Datei *package.json* im Stammverzeichnis. Die aufgeführten Pakete entsprechen Paketen unter dem npm-Knoten im Projektmappen-Explorer. Weitere Informationen finden Sie unter [Verwalten von npm-Paketen](../javascript/npm-package-management.md).
 
-   Bei einem Node.js-Projekt können Sie das TypeScript-npm-Paket über die Befehlszeile oder die IDE installieren. Klicken Sie zur Installation über die IDE im Projektmappen-Explorer mit der rechten Maustaste auf den npm-Knoten, wählen Sie **Neues npm-Paket installieren** aus, suchen Sie nach **TypeScript** , und installieren Sie das Paket.
+   Bei einem Node.js-Projekt können Sie das TypeScript-npm-Paket über die Befehlszeile oder die IDE installieren. Klicken Sie zur Installation über die IDE im Projektmappen-Explorer mit der rechten Maustaste auf den npm-Knoten, wählen Sie **Neues npm-Paket installieren** aus, suchen Sie nach **TypeScript**, und installieren Sie das Paket.
 
-   Überprüfen Sie die Option **npm** im Fenster **Ausgabe** , um den Fortschritt bei der Paketinstallation anzuzeigen. Das installierte Paket wird im Projektmappen-Explorer unter dem Knoten **npm** angezeigt.
+   Überprüfen Sie die Option **npm** im Fenster **Ausgabe**, um den Fortschritt bei der Paketinstallation anzuzeigen. Das installierte Paket wird im Projektmappen-Explorer unter dem Knoten **npm** angezeigt.
 
-1. Wenn Ihr Projekt noch keine *.tsconfig* -Datei enthält, fügen Sie Ihrem Projektstamm eine solche Datei hinzu. Um die Datei hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript JSON-Konfigurationsdatei** aus und klicken Sie dann auf **Hinzufügen**.
+1. Wenn Ihr Projekt noch keine *.tsconfig*-Datei enthält, fügen Sie Ihrem Projektstamm eine solche Datei hinzu. Um die Datei hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Hinzufügen > Neues Element** aus. Wählen Sie die **TypeScript JSON-Konfigurationsdatei** aus und klicken Sie dann auf **Hinzufügen**.
 
    Visual Studio fügt die Datei *tsconfig.json* zum Projektstamm hinzu. Sie können mit dieser Datei für den TypeScript-Compiler [Optionen konfigurieren](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-1. Öffnen Sie die Datei *tsconfig.json* , und legen Sie die von Ihnen gewünschten Compileroptionen fest.
+1. Öffnen Sie die Datei *tsconfig.json*, und legen Sie die von Ihnen gewünschten Compileroptionen fest.
 
-   Im folgenden Beispiel wird eine einfache *tsconfig.json* -Datei dargestellt.
+   Im folgenden Beispiel wird eine einfache *tsconfig.json*-Datei dargestellt.
 
    ```json
    {
@@ -66,13 +66,13 @@ Das [TypeScript-npm-Paket](https://www.npmjs.com/package/typescript) fügt TypeS
    In diesem Beispiel:
    - *include* informiert den Compiler darüber, wo sich die TypeScript-Dateien (*.ts) befinden.
    - Die Option *outDir* gibt den Ausgabeordner für die einfachen JavaScript-Dateien an, die vom TypeScript-Compiler transpiliert werden.
-   - *sourceMap* gibt an, ob der Compiler *sourceMap* -Dateien generiert.
+   - *sourceMap* gibt an, ob der Compiler *sourceMap*-Dateien generiert.
 
    Die oben genannte Konfiguration bietet nur eine grundlegende Einführung in die Konfiguration von TypeScript. Informationen zu weiteren Optionen finden Sie unter [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
 ## <a name="build-the-application"></a>Erstellen der Anwendung
 
-1. Fügen Sie TypeScript-Dateien ( *.ts* ) oder TypeScript JSX-Dateien ( *.tsx* ) zu Ihrem Projekt hinzu, und fügen Sie dann TypeScript-Code hinzu. Hier sehen Sie ein einfaches Beispiel für TypeScript:
+1. Fügen Sie TypeScript-Dateien ( *.ts*) oder TypeScript JSX-Dateien ( *.tsx*) zu Ihrem Projekt hinzu, und fügen Sie dann TypeScript-Code hinzu. Hier sehen Sie ein einfaches Beispiel für TypeScript:
 
    ```typescript
    let message: string = 'Hello World';
@@ -88,7 +88,7 @@ Das [TypeScript-npm-Paket](https://www.npmjs.com/package/typescript) fügt TypeS
    },
    ```
 
-   Wenn Sie ein Drittanbietertool wie webpack zum Kompilieren verwenden müssen, können Sie Ihrer *package.json* -Datei ein befehlszeilenbasiertes Buildskript hinzufügen:
+   Wenn Sie ein Drittanbietertool wie webpack zum Kompilieren verwenden müssen, können Sie Ihrer *package.json*-Datei ein befehlszeilenbasiertes Buildskript hinzufügen:
 
    ```json
    "scripts": {
@@ -109,7 +109,7 @@ Das [TypeScript-npm-Paket](https://www.npmjs.com/package/typescript) fügt TypeS
 
    Obwohl die App bei der Ausführung automatisch kompiliert wird, sollten Sie sich etwas ansehen, das während des Buildvorgangs geschieht:
 
-   Wenn Sie Quellzuordnungsdateien generiert haben, öffnen Sie den in der *outDir* -Option angegebenen Ordner. Dort finden Sie die generierten \*.js-Dateien sowie die generierten \*js.map-Dateien.
+   Wenn Sie Quellzuordnungsdateien generiert haben, öffnen Sie den in der *outDir*-Option angegebenen Ordner. Dort finden Sie die generierten \*.js-Dateien sowie die generierten \*js.map-Dateien.
 
    Quellzuordnungsdateien werden zum [Debuggen](../javascript/debug-nodejs.md) benötigt.
 

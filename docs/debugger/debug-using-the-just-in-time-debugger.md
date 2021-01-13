@@ -1,5 +1,7 @@
 ---
 title: Debuggen mit dem Just-In-Time-Debugger | Microsoft-Dokumentation
+description: Debuggen mit dem Just-In-Time-Debugger in Visual Studio. Beim Just-In-Time-Debuggen kann Visual Studio automatisch gestartet werden, wenn Fehler oder ein Absturz in einer App auftreten.
+ms.custom: SEO-VS-2020
 ms.date: 09/24/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350575"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761341"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debuggen mit dem Just-In-Time-Debugger in Visual Studio
 
@@ -128,11 +130,11 @@ In diesem Beispiel erstellen Sie in Visual Studio eine C#-Konsolen-App, die eine
 
    Folgendes Befehlsfenster sollte angezeigt werden:
 
-   ![ThrowsNullException – Konsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullException – Konsole")
+   ![Screenshot der Konsole für „ThrowsNullException.exe“, die eine unbehandelte NULL-Verweis-Ausnahme auslöst (System.NullReferenceException).](../debugger/media/throwsnullexceptionconsole.png)
 
 1. Das Dialogfeld **Just-in-Time-Debugger auswählen** wird geöffnet.
 
-   ![Just-In-Time-Debugger – Dialogfeld](../debugger/media/justintimedialog.png "Just-In-Time-Debugger – Dialogfeld")
+   ![Screenshot des Dialogfelds „Just-in-Time-Debugger auswählen“, das angezeigt wird, nachdem die Ausnahme im Konsolenfenster von „ThrowsNullException.exe“ angezeigt wurde.](../debugger/media/justintimedialog.png)
 
    Wählen Sie unter **Verfügbare Debugger** die Option **Neue Instanz von \<your preferred Visual Studio version/edition>** aus, sofern diese noch nicht ausgewählt war.
 
@@ -140,7 +142,7 @@ In diesem Beispiel erstellen Sie in Visual Studio eine C#-Konsolen-App, die eine
 
    Das Projekt „ThrowsNullException“ wird in einer neuen Instanz von Visual Studio geöffnet, wobei die Ausführung in der Zeile angehalten wurde, die die Ausnahme ausgelöst hat:
 
-   ![Nullverweis – zweite Instanz](../debugger/media/nullreferencesecondinstance.png "Nullverweis – zweite Instanz")
+   ![Screenshot des Projekts „ThrowsNullException“ in Visual Studio, wobei die Zeile im Quellcode hervorgehoben ist, die die Ausnahme ausgelöst hat.](../debugger/media/nullreferencesecondinstance.png)
 
 Sie können an dieser Stelle mit dem Debuggen beginnen. Wenn Sie eine echte App debuggen, müssen Sie herausfinden, warum der Code die Ausnahme auslöst.
 

@@ -1,6 +1,7 @@
 ---
 title: Aktivieren des Debuggens von ASP.NET-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
+description: Erfahren Sie, wie Sie das Debuggen für ASP.NET- und ASP.NET Core-Apps in Visual Studio aktivieren. Sie können den Prozess auf einem IIS Express-Server oder einem lokalen IIS-Server ausführen.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2020
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3755489332bcc174e70e193a836db05e672907e1
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102570"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903596"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debuggen von ASP.NET- oder ASP.NET Core-Apps in Visual Studio
 
@@ -37,7 +38,7 @@ Der integrierte IIS Express-Server ist in Visual Studio enthalten. IIS Express i
 Sie können eine ASP.NET- oder ASP.NET Core-App auch auf einem lokalen IIS-Server (Version 8.0 oder höher) debuggen, der zum Ausführen der App konfiguriert ist. Sie müssen die folgenden Anforderungen erfüllen, um auf einem lokalen IIS-Server debuggen zu können:
 
 <a name="iis"></a>
-- Sofern noch nicht vorhanden, installieren Sie die Workload **ASP.NET und Webentwicklung**. (Führen Sie den Visual Studio-Installer erneut aus, klicken Sie auf **Ändern** , und fügen Sie diese Workload hinzu.)
+- Sofern noch nicht vorhanden, installieren Sie die Workload **ASP.NET und Webentwicklung**. (Führen Sie den Visual Studio-Installer erneut aus, klicken Sie auf **Ändern**, und fügen Sie diese Workload hinzu.)
 
    ::: moniker range="vs-2017"
    Suchen Sie in Visual Studio 2017 nach der Komponente **Entwicklungszeit-IIS-Unterstützung**. Stellen Sie sicher, dass sie beim Hinzufügen der Workload ausgewählt ist.
@@ -50,7 +51,7 @@ Sie können eine ASP.NET- oder ASP.NET Core-App auch auf einem lokalen IIS-Serve
 
 IIS Express ist die vorkonfigurierte Standardeinstellung. Wenn Sie auf einem lokalen IIS-Server debuggen, müssen Sie sicherstellen, dass Sie die [Anforderungen für Debuggen auf lokalen IIS-Servern](#iis) erfüllen.
 
-1. Klicken Sie in Visual Studio im **Projektmappen-Explorer** auf das ASP.NET-Projekt, dann auf das Symbol für **Eigenschaften** , und drücken Sie **ALT**+**EINGABETASTE**. Alternativ können Sie mit der rechten Maustaste auf das Projekt und anschließend mit der linken Maustaste auf **Eigenschaften** klicken.
+1. Klicken Sie in Visual Studio im **Projektmappen-Explorer** auf das ASP.NET-Projekt, dann auf das Symbol für **Eigenschaften**, und drücken Sie **ALT**+**EINGABETASTE**. Alternativ können Sie mit der rechten Maustaste auf das Projekt und anschließend mit der linken Maustaste auf **Eigenschaften** klicken.
 
 1. Wählen Sie die Registerkarte **Web** aus.
 
@@ -58,13 +59,13 @@ IIS Express ist die vorkonfigurierte Standardeinstellung. Wenn Sie auf einem lok
    - Wählen Sie für IIS Express die Option **IIS Express** im Dropdownmenü aus.
    - Für lokales IIS
      1. wählen Sie im Dropdownmenü die Option **Lokales IIS** aus.
-     1. Klicken Sie dann neben dem Feld **Projekt-URL** auf **Virtuelles Verzeichnis erstellen** , wenn Sie die App noch nicht in IIS eingerichtet haben.
+     1. Klicken Sie dann neben dem Feld **Projekt-URL** auf **Virtuelles Verzeichnis erstellen**, wenn Sie die App noch nicht in IIS eingerichtet haben.
 
 1. Wählen Sie unter **Debugger** die Option **ASP.NET** aus.
 
    ![ASP.NET-Debuggereinstellungen](media/dbg-aspnet-enable-debugging2.png "ASP.NET-Debuggereinstellungen")
 
-1. Verwenden Sie **Datei** > **Ausgewählte Elemente speichern** oder **STRG**+**S** , um jegliche Änderungen zu speichern.
+1. Verwenden Sie **Datei** > **Ausgewählte Elemente speichern** oder **STRG**+**S**, um jegliche Änderungen zu speichern.
 
 1. Legen Sie Haltepunkte für den Code fest, um die App in Ihrem Projekt zu debuggen. Stellen Sie in der Visual Studio-Symbolleiste sicher, dass die Konfiguration auf **Debuggen** festgelegt ist und dass der gewünschte Browser unter **IIS Express (\<Browser name>)** oder **Lokales IIS (\<Browser name>)** im Emulatorfeld angezeigt wird.
 
@@ -74,23 +75,23 @@ IIS Express ist die vorkonfigurierte Standardeinstellung. Wenn Sie auf einem lok
 
 IIS Express ist die vorkonfigurierte Standardeinstellung. Wenn Sie auf einem lokalen IIS-Server debuggen, müssen Sie sicherstellen, dass Sie die [Anforderungen für Debuggen auf lokalen IIS-Servern](#iis) erfüllen.
 
-1. Klicken Sie in Visual Studio im **Projektmappen-Explorer** auf das ASP.NET Core-Projekt, dann auf das Symbol für **Eigenschaften** , und drücken Sie **ALT**+**EINGABETASTE**. Alternativ können Sie mit der rechten Maustaste auf das Projekt und anschließend mit der linken Maustaste auf **Eigenschaften** klicken.
+1. Klicken Sie in Visual Studio im **Projektmappen-Explorer** auf das ASP.NET Core-Projekt, dann auf das Symbol für **Eigenschaften**, und drücken Sie **ALT**+**EINGABETASTE**. Alternativ können Sie mit der rechten Maustaste auf das Projekt und anschließend mit der linken Maustaste auf **Eigenschaften** klicken.
 
 1. Klicken Sie auf die Registerkarte **Debuggen**.
 
 1. Gehen Sie im Bereich **Eigenschaften** neben **Profil** wie folgt vor:
    - Wählen Sie für IIS Express die Option **IIS Express** im Dropdownmenü aus.
-   - Wählen Sie für lokales IIS den App-Namen im Dropdownmenü aus, oder klicken Sie auf **Neu** , erstellen Sie einen neuen Profilnamen, und klicken Sie dann auf **OK**.
+   - Wählen Sie für lokales IIS den App-Namen im Dropdownmenü aus, oder klicken Sie auf **Neu**, erstellen Sie einen neuen Profilnamen, und klicken Sie dann auf **OK**.
 
 1. Wählen Sie im Dropdownmenü neben **Starten** entweder **IIS Express** oder **IIS** aus.
 
 1. Stellen Sie sicher, dass **Browser starten** ausgewählt ist.
 
-1. Stellen Sie unter **Umgebungsvariablen** sicher, dass **ASPNETCORE_ENVIRONMENT** mit dem Wert **Development** vorhanden ist. Wenn das nicht der Fall ist, klicken Sie auf **Hinzufügen** , und fügen Sie die Umgebungsvariable hinzu.
+1. Stellen Sie unter **Umgebungsvariablen** sicher, dass **ASPNETCORE_ENVIRONMENT** mit dem Wert **Development** vorhanden ist. Wenn das nicht der Fall ist, klicken Sie auf **Hinzufügen**, und fügen Sie die Umgebungsvariable hinzu.
 
    ![ASP.NET Core-Debuggereinstellungen](../debugger/media/dbg-aspnet-enable-debugging3.png "ASP.NET Core-Debuggereinstellungen")
 
-1. Verwenden Sie **Datei** > **Ausgewählte Elemente speichern** oder **STRG**+**S** , um jegliche Änderungen zu speichern.
+1. Verwenden Sie **Datei** > **Ausgewählte Elemente speichern** oder **STRG**+**S**, um jegliche Änderungen zu speichern.
 
 1. Legen Sie Haltepunkte für den Code fest, um die App in Ihrem Projekt zu debuggen. Stellen Sie in der Visual Studio-Symbolleiste sicher, dass die Konfiguration auf **Debuggen** festgelegt ist und dass entweder **IIS Express** oder der neue IIS-Profilname im Emulatorfeld angezeigt wird.
 
@@ -102,21 +103,21 @@ Wenn der Haltepunkt beim lokalen IIS-Debuggen nicht erreicht wird, führen Sie d
 
 1. Starten Sie die Web-App über IIS, und stellen Sie sicher, dass sie ordnungsgemäß ausgeführt wird. Führen Sie die Web-App weiter aus.
 
-2. Klicken Sie in Visual Studio auf **Debuggen > An Prozess anhängen** , oder drücken Sie **STRG**+**ALT**+**P** , und stellen Sie eine Verbindung mit dem ASP.NET- oder ASP.NET Core-Prozess her (in der Regel **w3wp.exe** oder **dotnet.exe** ). Weitere Informationen finden Sie unter [Anfügen an Prozesse](attach-to-running-processes-with-the-visual-studio-debugger.md) und [Ermitteln des ASP.NET-Prozessnamens](how-to-find-the-name-of-the-aspnet-process.md).
+2. Klicken Sie in Visual Studio auf **Debuggen > An Prozess anhängen**, oder drücken Sie **STRG**+**ALT**+**P**, und stellen Sie eine Verbindung mit dem ASP.NET- oder ASP.NET Core-Prozess her (in der Regel **w3wp.exe** oder **dotnet.exe**). Weitere Informationen finden Sie unter [Anfügen an Prozesse](attach-to-running-processes-with-the-visual-studio-debugger.md) und [Ermitteln des ASP.NET-Prozessnamens](how-to-find-the-name-of-the-aspnet-process.md).
 
-Wenn Sie mit **An Prozess anfügen** eine Verbindung herstellen und den Haltepunkt erreichen können, aber nicht über **Debuggen** > **Debuggen starten** oder **F5** , ist vermutlich eine Einstellung in den Projekteigenschaften falsch konfiguriert. Wenn Sie eine HOSTS-Datei verwenden, überprüfen Sie, ob sie ordnungsgemäß konfiguriert ist.
+Wenn Sie mit **An Prozess anfügen** eine Verbindung herstellen und den Haltepunkt erreichen können, aber nicht über **Debuggen** > **Debuggen starten** oder **F5**, ist vermutlich eine Einstellung in den Projekteigenschaften falsch konfiguriert. Wenn Sie eine HOSTS-Datei verwenden, überprüfen Sie, ob sie ordnungsgemäß konfiguriert ist.
 
 ## <a name="configure-debugging-in-the-webconfig-file"></a>Konfigurieren des Debuggens in der Datei „web.config“
 
-ASP.NET-Projekte enthalten standardmäßig *web.config* -Dateien, die sowohl App-Konfiguration als auch Startinformationen und Debugeinstellungen enthalten. Die *web.config* -Dateien müssen ordnungsgemäß für das Debuggen konfiguriert werden. Die Einstellungen der **Eigenschaften** in den vorherigen Abschnitten nehmen Änderungen an den *web.config* -Dateien vor. Sie können sie aber auch manuell konfigurieren.
+ASP.NET-Projekte enthalten standardmäßig *web.config*-Dateien, die sowohl App-Konfiguration als auch Startinformationen und Debugeinstellungen enthalten. Die *web.config*-Dateien müssen ordnungsgemäß für das Debuggen konfiguriert werden. Die Einstellungen der **Eigenschaften** in den vorherigen Abschnitten nehmen Änderungen an den *web.config*-Dateien vor. Sie können sie aber auch manuell konfigurieren.
 
 > [!NOTE]
-> ASP.NET Core-Projekte enthalten zunächst keine *web.config* -Dateien. Stattdessen verwenden sie *appsettings.json* - und *launchSettings.json* -Dateien für die App-Konfiguration und Startinformationen. Beim Bereitstellen der App wird eine *web.config* -Datei oder mehrere Dateien im Projekt erstellt, jedoch enthalten diese in der Regel keine Debuginformationen.
+> ASP.NET Core-Projekte enthalten zunächst keine *web.config*-Dateien. Stattdessen verwenden sie *appsettings.json*- und *launchSettings.json*-Dateien für die App-Konfiguration und Startinformationen. Beim Bereitstellen der App wird eine *web.config*-Datei oder mehrere Dateien im Projekt erstellt, jedoch enthalten diese in der Regel keine Debuginformationen.
 
 > [!TIP]
-> Möglicherweise aktualisiert Ihr Bereitstellungsprozess die *web.config* -Einstellungen, stellen Sie also vor dem Debuggen sicher, dass die Datei *web.config* zum Debuggen konfiguriert ist.
+> Möglicherweise aktualisiert Ihr Bereitstellungsprozess die *web.config*-Einstellungen, stellen Sie also vor dem Debuggen sicher, dass die Datei *web.config* zum Debuggen konfiguriert ist.
 
-**So konfigurieren Sie eine *web.config* -Datei manuell zum Debuggen:**
+**So konfigurieren Sie eine *web.config*-Datei manuell zum Debuggen:**
 
 1. Öffnen Sie in Visual Studio die Datei *web.config* des ASP.NET-Projekts.
 
@@ -129,7 +130,7 @@ ASP.NET-Projekte enthalten standardmäßig *web.config* -Dateien, die sowohl App
    Das `compilation`-Element der Datei *web.config* sollte dem folgenden Beispiel ähneln:
 
    > [!NOTE]
-   > Dieses Beispiel ist eine partielle *web.config* -Datei. Normalerweise gibt es in den Elementen `configuration` und `system.web` zusätzliche XML-Abschnitte. Außerdem kann das Element `compilation` auch andere Attribute und Elemente enthalten.
+   > Dieses Beispiel ist eine partielle *web.config*-Datei. Normalerweise gibt es in den Elementen `configuration` und `system.web` zusätzliche XML-Abschnitte. Außerdem kann das Element `compilation` auch andere Attribute und Elemente enthalten.
 
    ```xml
    <configuration>
@@ -142,11 +143,11 @@ ASP.NET-Projekte enthalten standardmäßig *web.config* -Dateien, die sowohl App
    </configuration>
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] erkennt an *web.config* -Dateien vorgenommene Änderungen automatisch und wendet die neuen Konfigurationseinstellungen an. Sie müssen den Computer oder den IIS-Server nicht neu starten, damit die Änderungen wirksam werden.
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] erkennt an *web.config*-Dateien vorgenommene Änderungen automatisch und wendet die neuen Konfigurationseinstellungen an. Sie müssen den Computer oder den IIS-Server nicht neu starten, damit die Änderungen wirksam werden.
 
-Eine Website kann mehrere virtuelle Verzeichnisse und Unterverzeichnisse enthalten, die jeweils *web.config* -Dateien enthalten. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Apps erben Konfigurationseinstellungen von *web.config* -Dateien auf höheren Ebenen im URL-Pfad. Die hierarchischen Einstellungen der Datei *web.config* gelten für alle [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Apps, die sich in der Hierarchie unter ihnen befinden. Wenn eine andere Konfiguration in einer *web.config* -Datei festgelegt wird, die sich niedriger in der Hierarchie befindet, werden die Einstellungen der höheren Datei überschrieben.
+Eine Website kann mehrere virtuelle Verzeichnisse und Unterverzeichnisse enthalten, die jeweils *web.config*-Dateien enthalten. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Apps erben Konfigurationseinstellungen von *web.config*-Dateien auf höheren Ebenen im URL-Pfad. Die hierarchischen Einstellungen der Datei *web.config* gelten für alle [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Apps, die sich in der Hierarchie unter ihnen befinden. Wenn eine andere Konfiguration in einer *web.config*-Datei festgelegt wird, die sich niedriger in der Hierarchie befindet, werden die Einstellungen der höheren Datei überschrieben.
 
-Wenn Sie beispielsweise `debug="true"` in <em>www.microsoft.com/aaa/web.config</em> festlegen, erben alle Apps im Ordner *aaa* oder den in *aaa* enthaltenen Unterordnern diese Einstellung, es sei denn, eine dieser Apps überschreibt diese Einstellung mit einer eigenen *web.config* -Datei.
+Wenn Sie beispielsweise `debug="true"` in <em>www.microsoft.com/aaa/web.config</em> festlegen, erben alle Apps im Ordner *aaa* oder den in *aaa* enthaltenen Unterordnern diese Einstellung, es sei denn, eine dieser Apps überschreibt diese Einstellung mit einer eigenen *web.config*-Datei.
 
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>Veröffentlichen im Debugmodus mithilfe des Dateisystems
 
@@ -159,7 +160,7 @@ Es gibt verschiedene Möglichkeiten, Apps in IIS zu veröffentlichen. In diesen 
 
 3. Wählen Sie **IIS, FTP, usw.** aus, und klicken Sie dann auf **Veröffentlichen**.
 
-    ![Veröffentlichen in IIS](media/dbg-aspnet-local-iis.png "Veröffentlichen in IIS")
+    ![Screenshot des Dialogfelds „Veröffentlichungsziel auswählen“ in Visual Studio. IIS, FTP, Web Deploy ist ausgewählt, und die Schaltfläche „Veröffentlichen“ ist hervorgehoben.](media/dbg-aspnet-local-iis.png)
 
 4. Klicken Sie im Dialogfeld **CustomProfile** für die **Veröffentlichungsmethode** auf **Dateisystem**.
 
@@ -169,7 +170,7 @@ Es gibt verschiedene Möglichkeiten, Apps in IIS zu veröffentlichen. In diesen 
 
      ![Veröffentlichen in ASP.NET in IIS](media/dbg-aspnet-local-iis1.png "Veröffentlichen in ASP.NET in IIS")
 
-   - Klicken Sie für ASP.NET Core auf **Dateisystem** , wählen Sie den Ordner aus, den Sie für die App eingerichtet haben, und klicken Sie dann auf **Öffnen**.
+   - Klicken Sie für ASP.NET Core auf **Dateisystem**, wählen Sie den Ordner aus, den Sie für die App eingerichtet haben, und klicken Sie dann auf **Öffnen**.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -181,7 +182,7 @@ Es gibt verschiedene Möglichkeiten, Apps in IIS zu veröffentlichen. In diesen 
 
 1. Wählen Sie **Veröffentlichen**.
 
-    ![Veröffentlichen in IIS](media/dbg-aspnet-local-iis-select-site.png "Veröffentlichen in IIS")
+    ![Screenshot des Dialogfelds „Veröffentlichen“, bei dem die CustomProfile-App ausgewählt, die Schaltfläche „Veröffentlichen“ hervorgehoben und LastBuildConfiguration auf „Debuggen“ festgelegt ist.](media/dbg-aspnet-local-iis-select-site.png)
 
 > [!IMPORTANT]
 > Der Debugmodus verringert die Leistung Ihrer App erheblich. Legen Sie `debug="false"` in der Datei *web.config* und ein Releasebuild beim Bereitstellen einer Produktions-App oder beim Durchführen von Leistungsmessungen fest.

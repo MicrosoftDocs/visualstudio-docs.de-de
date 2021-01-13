@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Debuggen von C++-Code'
-description: Erfahren Sie, wie Sie den Visual Studio-Debugger starten, den Code durchlaufen und Daten überprüfen.
+description: Lernen Sie Funktionen des Visual Studio-Debuggers kennen, und erfahren Sie, wie Sie den Debugger starten, den Code durchlaufen und Daten in einer C++-Anwendung überprüfen.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4cc5d0b85ac1406f214784976ca23467a0e0eb6c
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77091807"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847105"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C++-Code mit Visual Studio
 
@@ -92,7 +92,7 @@ Zunächst müssen Sie ein Projekt für die C++-Konsolenanwendung erstellen. Der 
 
 1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **C++** und dann in der Liste der Plattformen **Windows** aus. 
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App**aus und klicken dann auf **Weiter**.
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App** aus und klicken dann auf **Weiter**.
 
    ![Auswählen der C++-Vorlage für die Konsolen-App](../debugger/media/vs-2019/get-started-create-console-project-cpp.png)
 
@@ -172,7 +172,7 @@ Zunächst müssen Sie ein Projekt für die C++-Konsolenanwendung erstellen. Der 
 
     Haltepunkte sind ein einfaches und wichtiges Feature zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
-2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche**Debuggen starten**![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
+2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche **Debuggen starten**![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debugging starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
 
     ![Festlegen und Treffen eines Haltepunkts](../debugger/media/get-started-set-breakpoint-cpp.png)
 

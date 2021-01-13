@@ -1,5 +1,6 @@
 ---
 title: Konvertieren von typeof in nameof
+description: Hier erfahren Sie, wie Sie mit dem Menü „Schnellaktionen und Refactorings“ in Visual Studio „typeof“ in „nameof“ in C# und GetType in NameOf in Visual Basic konvertieren.
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ce76b82e2ebc68634be7cf4d463f6b8216d81e06
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400323"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761198"
 ---
 # <a name="convert-typeof-to-nameof"></a>Konvertieren von `typeof` in `nameof`
 
@@ -39,11 +40,11 @@ Dieses Refactoring gilt für:
 3. Wählen Sie eine der folgenden Optionen aus:
 
     - C#
-      <br>Wählen Sie **Convert 'typeof' to 'nameof'** („typeof“ in „nameof“ konvertieren) aus: ![„typeof“ in „nameof“ konvertieren](media/convert-type-of.PNG)
+      <br>Wählen Sie **Convert 'typeof' to 'nameof'** („typeof“ in „nameof“ konvertieren) aus: ![Screeenshot des Menüs „Schnellaktionen und Refactorings“ in Visual Studio mit ausgewähltem „‘typeof‘ in ‚nameof‘ konvertieren“ und angezeigten C#-Codeänderungen.](media/convert-type-of.PNG)
 
     - Visual Basic
-      <br>Wählen Sie **Convert 'GetType' to 'NameOf'** („GetType“ in „NameOf“ konvertieren) aus: ![„typeof“ in „nameof“ konvertieren](media/convert-get-type.PNG)
+      <br>Wählen Sie **Convert 'GetType' to 'NameOf'** („GetType“ in „NameOf“ konvertieren) aus: ![Screeenshot des Menüs „Schnellaktionen und Refactorings“ in Visual Studio mit ausgewähltem „‘GetType‘ in ‚NameOf‘ konvertieren“ und angezeigten Visual Basic-Codeänderungen.](media/convert-get-type.PNG)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Refactoring](../refactoring-in-visual-studio.md)

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760925"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031041"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 
@@ -199,7 +199,7 @@ Um schnell einen aktiven Prozess zum Anhängen auszuwählen, geben Sie in Visual
 |Debuggen einer C#-, Visual Basic- oder C++-App auf dem lokalen Computer|Verwenden Sie entweder das Standarddebuggen (**F5**) oder **An den Prozess anhängen**.|*\<appname>.exe*|Verwenden Sie in den meisten Szenarien das Standarddebuggen und nicht **An den Prozess anhängen**.|
 |Remotedebuggen einer Windows-Desktop-App|Remotetools|Nicht zutreffend| Weitere Informationen finden Sie unter [Remotedebuggen einer C#- oder Visual Basic-App](../debugger/remote-debugging-csharp.md) oder [Remotedebuggen einer C++-App](../debugger/remote-debugging-cpp.md).|
 |Debuggen von .NET Core unter Linux|Verwenden von **An den Prozess anhängen**|*dotnet.exe* oder ein eindeutiger Prozessname|Weitere Informationen zur Verwendung von SSH finden Sie unter [Remotedebuggen von .NET Core unter Linux mit SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Weitere Informationen zu containerisierten Apps finden Sie unter [Anfügen an einen in einem Docker-Container ausgeführten Prozess](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
-|Debuggen einer containerisierten App|*dotnet.exe* oder ein eindeutiger Prozessname|Weitere Informationen finden Sie unter [Anfügen an einen in einem Docker-Container ausgeführten Prozess](../debugger/attach-to-process-running-in-docker-container.md).|
+|Debuggen einer containerisierten App|Verwenden von **An den Prozess anhängen**|*dotnet.exe* oder ein eindeutiger Prozessname|Weitere Informationen finden Sie unter [Anfügen an einen in einem Docker-Container ausgeführten Prozess](../debugger/attach-to-process-running-in-docker-container.md).|
 |Remotedebuggen von Python unter Linux|Verwenden von **An den Prozess anhängen**|*debugpy*|Weitere Informationen finden Sie unter [Remoteanfügen über Python Tools](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools).|
 |Debuggen einer ASP. NET-App auf dem lokalen Computer, nachdem Sie die App ohne den Debugger gestartet haben|Verwenden von **An den Prozess anhängen**|*iiexpress.exe*|Dies kann hilfreich sein, damit Ihre App schneller geladen wird, z. B. bei der Profilerstellung. |
 |Debuggen anderer unterstützter App-Typen für einen Serverprozess|Wenn es sich um einen Remoteserver handelt, verwenden Sie Remotetools und **An den Prozess anhängen**.|*chrome.exe*, *iexplore.exe* oder andere Prozesse|Verwenden Sie bei Bedarf den Ressourcenmonitor, um den Prozess zu identifizieren. Weitere Informationen finden Sie unter [Remote debugging (Remotedebuggen)](../debugger/remote-debugging.md).|
