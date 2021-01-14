@@ -10,22 +10,24 @@ user.type: subscriber
 tags: benefit, pluralsight
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 109a0f542ccf4f8d702ce4bc9d0d587a721d8747
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: d68ff15483241d5c6d1364aaa974031f4e1abe52
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915968"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147599"
 ---
 ## <a name="im-unable-to-activate-my-pluralsight-benefit"></a>Ich kann meinen Pluralsight-Vorteil nicht aktivieren.
 
 Je nachdem, über welches Visual Studio-Abonnement oder welche Programmmitgliedschaft Sie verfügen, sind Sie möglicherweise berechtigt, Pluralsight bis zu sechs Monate lang kostenlos zu nutzen.  
 
-## <a name="how-to-activate"></a>Wie Sie es aktivieren 
+## <a name="how-to-activate-your-pluralsight-benefit"></a>Vorgehensweise: Aktivieren Ihres Pluralsight-Vorteils
+  
 1. Melden Sie sich beim [Abonnementportal](https://my.visualstudio.com/benefits) an, und klicken Sie auf den Link „Aktivieren“ auf der Kachel für die Pluralsight-Vorteile im Abschnitt „Professional Development“ (Berufliche Entwicklung) der Seite „Benefits“ (Vorteile). 
 1. Sie werden zu der Seite zum Ausfüllen des Pluralsight-Abonnementregistrierungsformulars für die Vorteilsstufe umgeleitet, die in Ihrem Visual Studio-Abonnement enthalten ist. Hinweis: Die Registrierungsseite läuft nach wenigen Minuten ab. Wenn Sie den Registrierungsprozess nicht abschließen, bevor die Seite abläuft, kehren Sie zu Schritt 1 zurück. 
 1. Auf der Seite wird eine Bestätigung angezeigt, und Sie werden aufgefordert, ein Kennwort festzulegen. 
 1. Nachdem Sie Ihren Pluralsight-Vorteil aktiviert haben, ändert sich das Aussehen der Kachel im Visual Studio-Abonnementportal, sodass Sie den Status Ihres Abonnements nachverfolgen können. Möglicherweise müssen Sie das Portal aktualisieren, um dies zu sehen. 
 
-## <a name="more-information"></a>Weitere Informationen 
+## <a name="more-information-about-the-pluralsight-benefit"></a>Weitere Informationen zum Pluralsight-Vorteil
+
 Weitere Informationen zur Aktivierung, zur Berechtigung zur Nutzung dieses Vorteils und FAQs zum Pluralsight-Vorteil finden Sie [hier](https://docs.microsoft.com/visualstudio/subscriptions/vs-pluralsight).  
