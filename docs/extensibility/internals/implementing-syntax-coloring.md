@@ -1,5 +1,7 @@
 ---
 title: Implementieren von Syntax Farben | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Syntax Farben in Visual Studio mithilfe der Sprachdienst Funktionen von Managed Package Framework (MPF) implementieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905212"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204669"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren von Syntaxfarben
 Wenn der Sprachdienst die farbliche Syntax Markierung bereitstellt, konvertiert der Parser eine Textzeile in ein Array von kolorierbaren Elementen und gibt Tokentypen zurück, die diesen färb baren Elementen entsprechen. Der Parser sollte Tokentypen zurückgeben, die zu einer Liste von kolatable-Elementen gehören. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zeigt jedes kolorierbare Element im Code Fenster entsprechend der Attribute an, die vom Farb Zeichenfolgenobjekt dem entsprechenden Tokentyp zugewiesen werden.
@@ -62,7 +64,7 @@ Wenn der Sprachdienst die farbliche Syntax Markierung bereitstellt, konvertiert 
 ## <a name="managed-package-framework-colorizer"></a>Farbauswahl für Managed Package Framework
  Das Managed Package Framework (MPF) stellt alle Klassen bereit, die erforderlich sind, um eine Farbgebung zu implementieren. Ihre Sprachdienst Klasse sollte die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse erben und die erforderlichen Methoden implementieren. Sie müssen einen Scanner und einen Parser angeben, indem Sie die <xref:Microsoft.VisualStudio.Package.IScanner> -Schnittstelle implementieren und eine Instanz dieser Schnittstelle von der-Methode zurückgeben <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> (eine der Methoden, die in der-Klasse implementiert werden müssen <xref:Microsoft.VisualStudio.Package.LanguageService> ). Weitere Informationen finden Sie unter [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Gewusst wie: Verwenden von integrierten einfärbbaren Elementen](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Benutzerdefinierte einfärbbare Elemente](../../extensibility/internals/custom-colorable-items.md)
 - [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -1,5 +1,7 @@
 ---
 title: Parser und Scanner für Legacy Sprachdienste | Microsoft-Dokumentation
+description: Informieren Sie sich über den Legacy-Sprachdienst Parser und-Scanner, der Informationen zum angezeigten Code auswählt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707315"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204604"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 Der Parser ist das Herzstück des sprach Dienstanbieter. Die MPF-Sprachklassen (Managed Package Framework) erfordern einen sprach Parser, um Informationen zum angezeigten Code auszuwählen. Ein Parser trennt den Text in lexikalische Token und identifiziert diese Token nach Typ und Funktionalität.
 
-## <a name="discussion"></a>Diskussion (Discussion)
+## <a name="discussion"></a>Diskussion
  Im folgenden finden Sie eine c#-Methode.
 
 ```csharp
@@ -47,7 +49,7 @@ namespace MyNamespace
 |MyNamespace, MyClass, MyFunction, arg1, var1|Bezeichner|
 |MyNamespace|Namespace|
 |MyClass|class|
-|MyFunction|Methode|
+|MyFunction|method|
 |arg1|parameter|
 |var1|Lokale Variable (local variable)|
 
@@ -68,7 +70,7 @@ namespace MyNamespace
 > [!CAUTION]
 > Die- <xref:Microsoft.VisualStudio.Package.ParseRequest> Struktur enthält einen Verweis auf das- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt. Dieses <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Objekt kann nicht im Hintergrund Thread verwendet werden. Tatsächlich können viele der Basis-MPF-Klassen nicht im Hintergrund Thread verwendet werden. Hierzu gehören die <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.ViewFilter> Klassen,, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> und jede andere Klasse, die direkt oder indirekt mit der Ansicht kommuniziert.
 
- Dieser Parser analysiert in der Regel die gesamte Quelldatei, wenn Sie zum ersten Mal aufgerufen wird, oder wenn der analysieren Reason-Wert von <xref:Microsoft.VisualStudio.Package.ParseReason> angegeben wird. Nachfolgende Aufrufe der- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode verarbeiten einen kleinen Teil des analysierten Codes und können viel schneller ausgeführt werden, indem die Ergebnisse des vorherigen vollständigen Analyse Vorgangs verwendet werden. Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode kommuniziert die Ergebnisse des-Verarbeitungsvorgangs über das <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Objekt und das- <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt. Das- <xref:Microsoft.VisualStudio.Package.AuthoringSink> Objekt wird zum Erfassen von Informationen für einen bestimmten erfassenden Grund verwendet, z. b. Informationen zu den Spannen von übereinstimmenden geschweiften Klammern oder Methoden Signaturen, die Parameterlisten aufweisen. Stellt Auflistungen <xref:Microsoft.VisualStudio.Package.AuthoringScope> von Deklarationen und Methoden Signaturen bereit und unterstützt auch die Option Gehe zu erweiterter Bearbeitung (gehe**zu Definition**, **Gehe zu Deklaration**, **Gehe zu Verweis**).
+ Dieser Parser analysiert in der Regel die gesamte Quelldatei, wenn Sie zum ersten Mal aufgerufen wird, oder wenn der analysieren Reason-Wert von <xref:Microsoft.VisualStudio.Package.ParseReason> angegeben wird. Nachfolgende Aufrufe der- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode verarbeiten einen kleinen Teil des analysierten Codes und können viel schneller ausgeführt werden, indem die Ergebnisse des vorherigen vollständigen Analyse Vorgangs verwendet werden. Die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> -Methode kommuniziert die Ergebnisse des-Verarbeitungsvorgangs über das <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Objekt und das- <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt. Das- <xref:Microsoft.VisualStudio.Package.AuthoringSink> Objekt wird zum Erfassen von Informationen für einen bestimmten erfassenden Grund verwendet, z. b. Informationen zu den Spannen von übereinstimmenden geschweiften Klammern oder Methoden Signaturen, die Parameterlisten aufweisen. Stellt Auflistungen <xref:Microsoft.VisualStudio.Package.AuthoringScope> von Deklarationen und Methoden Signaturen bereit und unterstützt auch die Option Gehe zu erweiterter Bearbeitung (gehe **zu Definition**, **Gehe zu Deklaration**, **Gehe zu Verweis**).
 
 ### <a name="the-iscanner-scanner"></a>Der iScanner-Scanner
  Außerdem müssen Sie einen Scanner implementieren, der implementiert <xref:Microsoft.VisualStudio.Package.IScanner> . Da diese Überprüfung jedoch zeilenweise durch die- <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse verläuft, ist es in der Regel einfacher, Sie zu implementieren. Am Anfang jeder Zeile gibt der MPF der- <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse einen Wert an, der als Zustands Variable verwendet werden soll, die an den Scanner übermittelt wird. Am Ende jeder Zeile gibt der Scanner die aktualisierte Zustands Variable zurück. Der MPF speichert diese Zustandsinformationen für jede Zeile zwischen, sodass die Überprüfung von einer beliebigen Zeile aus beginnen kann, ohne am Anfang der Quelldatei beginnen zu müssen. Diese schnelle Überprüfung einer einzelnen Zeile ermöglicht es dem Editor, dem Benutzer schnelles Feedback zu geben.
@@ -127,11 +129,11 @@ namespace MyNamespace
  Weitere Informationen finden Sie unter [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="parsing-for-functionality-and-scope"></a>Die Funktionalität und der Bereich werden verarbeitet.
- Das Parsen von Funktionen und Bereichen erfordert mehr Aufwand als nur die Art der gefundenen Token zu identifizieren. Der Parser muss nicht nur den Tokentyp, sondern auch die Funktionalität identifizieren, für die das Token verwendet wird. Ein Bezeichner ist beispielsweise nur ein Name, aber in Ihrer Sprache kann ein Bezeichner der Name einer Klasse, eines Namespaces, einer Methode oder einer Variablen sein, je nach Kontext. Der allgemeine Typ des Tokens kann ein Bezeichner sein, aber der Bezeichner kann auch andere Bedeutungen haben, je nachdem, was er ist und wo er definiert ist. Diese Identifikation erfordert, dass der Parser ausführlichere Informationen zu der Sprache hat, die analysiert wird. An dieser Stelle <xref:Microsoft.VisualStudio.Package.AuthoringSink> kommt die Klasse ins Spiel. Die <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Klasse sammelt Informationen über Bezeichner, Methoden, übereinstimmende Sprachpaare (z. b. geschweifte Klammern und Klammern) und sprach Übersichten (ähnlich wie Sprachpaare, mit dem Unterschied, dass es drei Teile gibt, z. b. "" "" `foreach()` `{` und " `}` "). Darüber hinaus können Sie die- <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasse überschreiben, um die Code Identifizierung zu unterstützen, die bei der frühen Validierung von Haltepunkten verwendet wird, sodass der Debugger nicht geladen werden **Autos** muss, und das Fenster "Auto Debuggen", in dem lokale Variablen und Parameter automatisch angezeigt werden, wenn ein Programm gedebuggt wird
+ Das Parsen von Funktionen und Bereichen erfordert mehr Aufwand als nur die Art der gefundenen Token zu identifizieren. Der Parser muss nicht nur den Tokentyp, sondern auch die Funktionalität identifizieren, für die das Token verwendet wird. Ein Bezeichner ist beispielsweise nur ein Name, aber in Ihrer Sprache kann ein Bezeichner der Name einer Klasse, eines Namespaces, einer Methode oder einer Variablen sein, je nach Kontext. Der allgemeine Typ des Tokens kann ein Bezeichner sein, aber der Bezeichner kann auch andere Bedeutungen haben, je nachdem, was er ist und wo er definiert ist. Diese Identifikation erfordert, dass der Parser ausführlichere Informationen zu der Sprache hat, die analysiert wird. An dieser Stelle <xref:Microsoft.VisualStudio.Package.AuthoringSink> kommt die Klasse ins Spiel. Die <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Klasse sammelt Informationen über Bezeichner, Methoden, übereinstimmende Sprachpaare (z. b. geschweifte Klammern und Klammern) und sprach Übersichten (ähnlich wie Sprachpaare, mit dem Unterschied, dass es drei Teile gibt, z. b. "" "" `foreach()` `{` und " `}` "). Darüber hinaus können Sie die- <xref:Microsoft.VisualStudio.Package.AuthoringSink> Klasse überschreiben, um die Code Identifizierung zu unterstützen, die bei der frühen Validierung von Haltepunkten verwendet wird, sodass der Debugger nicht geladen werden  muss, und das Fenster "Auto Debuggen", in dem lokale Variablen und Parameter automatisch angezeigt werden, wenn ein Programm gedebuggt wird
 
  Das <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Objekt wird als Teil des-Objekts an den Parser übergeben <xref:Microsoft.VisualStudio.Package.ParseRequest> , und <xref:Microsoft.VisualStudio.Package.AuthoringSink> jedes Mal, wenn ein neues-Objekt erstellt wird, wird ein neues-Objekt erstellt <xref:Microsoft.VisualStudio.Package.ParseRequest> . Außerdem muss die- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode ein-Objekt zurückgeben <xref:Microsoft.VisualStudio.Package.AuthoringScope> , das verwendet wird, um verschiedene IntelliSense-Vorgänge zu verarbeiten. Das <xref:Microsoft.VisualStudio.Package.AuthoringScope> -Objekt verwaltet eine Liste von Deklarationen und eine Liste für-Methoden, von denen abhängig vom Grund für die-Verarbeitung jeweils eine Liste aufgefüllt wird. Die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse muss implementiert werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Übersicht über Legacysprachdienste](../../extensibility/internals/legacy-language-service-overview.md)
 - [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

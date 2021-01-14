@@ -1,5 +1,7 @@
 ---
 title: Innerhalb des Visual Studio SDK | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Erweiterungen im Visual Studio SDK, einschließlich Visual Studio-Architektur,-Komponenten,-Dienste,-Schemas und-Hilfsprogramme.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bbb1beb30677711b8b517262b48465e7529585
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707573"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205332"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
 
@@ -26,7 +28,7 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
 ## <a name="extensibility-architecture"></a>Erweiterbarkeits Architektur
  Die folgende Abbildung zeigt die Erweiterbarkeits Architektur von Visual Studio. VSPackages bieten Anwendungsfunktionen, die in der gesamten IDE als Dienste gemeinsam genutzt werden. Die Standard-IDE bietet auch eine Vielzahl von Diensten, wie z <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> . b., die Zugriff auf die IDE-windowingfunktionen bieten.
 
- ![Grafik zur Umgebungs Architektur](../../extensibility/internals/media/environment.gif "environment") Allgemeine Ansicht der Visual Studio-Architektur
+ ![Grafik zur Umgebungs Architektur](../../extensibility/internals/media/environment.gif "Environment") Allgemeine Ansicht der Visual Studio-Architektur
 
 ## <a name="vspackages"></a>VSPackages
  VSPackages sind Softwaremodule, die Visual Studio um Benutzeroberflächenelemente, Dienste, Projekte, Editoren und Designer erweitern. VSPackages sind die zentrale architektonische Einheit von Visual Studio. Weitere Informationen finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md).
@@ -47,7 +49,7 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
  Weitere Informationen finden Sie unter [Befehle, Menüs und Symbolleisten](../../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="menus-and-toolbars"></a>Menüs und Symbolleisten
- Menüs und Symbolleisten bieten Benutzern die Möglichkeit, Befehle aufzurufen. Menüs sind Zeilen oder Spalten von Befehlen, die normalerweise als einzelne Textelemente am oberen Rand eines Tool Fensters angezeigt werden. Untermenüs sind sekundäre Menüs, die angezeigt werden, wenn ein Benutzer auf Befehle klickt, die einen kleinen Pfeil enthalten. Kontextmenüs werden angezeigt, wenn ein Benutzer mit der rechten Maustaste auf bestimmte Benutzeroberflächen Elemente klickt. Einige allgemeine Menü Namen sind **File**, **Edit**, **View**und **Window**. Weitere Informationen finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
+ Menüs und Symbolleisten bieten Benutzern die Möglichkeit, Befehle aufzurufen. Menüs sind Zeilen oder Spalten von Befehlen, die normalerweise als einzelne Textelemente am oberen Rand eines Tool Fensters angezeigt werden. Untermenüs sind sekundäre Menüs, die angezeigt werden, wenn ein Benutzer auf Befehle klickt, die einen kleinen Pfeil enthalten. Kontextmenüs werden angezeigt, wenn ein Benutzer mit der rechten Maustaste auf bestimmte Benutzeroberflächen Elemente klickt. Einige allgemeine Menü Namen sind **File**, **Edit**, **View** und **Window**. Weitere Informationen finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).
 
  Symbolleisten sind Zeilen oder Spalten von Schaltflächen und anderen Steuerelementen, z. b. Kombinations Felder, Listenfelder und Textfelder. Symbolleisten Schaltflächen verfügen in der Regel über Symbolbilder, z. b. ein Ordnersymbol für einen **geöffneten Datei** Befehl oder einen Drucker für einen **Druck** Befehl. Allen Symbolleisten Elementen sind Befehle zugeordnet. Wenn Sie auf eine Symbolleisten Schaltfläche klicken, wird der zugehörige Befehl ausgeführt. Im Fall eines Dropdown-Steuer Elements wird jedes Element in der Dropdown Liste einem anderen Befehl zugeordnet. Einige Symbolleisten-Steuerelemente, z. b. ein Splitter Steuerelement, sind Hybride. Eine Seite des Steuer Elements ist eine Symbolleisten-Schaltfläche, und die andere Seite ist ein Pfeil nach unten, auf dem mehrere Befehle angezeigt werden, wenn darauf geklickt wird.
 
@@ -62,7 +64,7 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
 
  Einige der Tool Fenster werden in einem einzelnen Bereich nebeneinander angedockt, der das Projektmappen-Explorer Tool Fenster anzeigt und die anderen Tool Fenster verbirgt, indem Sie auf Registerkarten klicken. Die Abbildung zeigt zwei weitere Tool Fenster, das Fenster " **Fehlerliste** und **Ausgabe** ", das in einem einzelnen Bereich angedockt ist.
 
- Außerdem wird der Hauptdokument Bereich angezeigt, in dem mehrere Editor Fenster angezeigt werden. Obwohl Tool Fenster in der Regel nur eine Instanz haben (Sie können z. b. nur ein **Projektmappen-Explorer**öffnen), können Editor Fenster mehrere-Instanzen aufweisen, die jeweils zum Bearbeiten eines separaten Dokuments verwendet werden, aber alle im gleichen Bereich angedockt sind. Die Abbildung zeigt einen Dokumentbereich mit zwei Editor Fenstern, einem Formular-Designer-Fenster. Alle Fenster im Dokumentbereich sind durch Klicken auf Tabstopps verfügbar, aber das Editor Fenster, das EditorPane.cs-Datei enthält, ist sichtbar und aktiv.
+ Außerdem wird der Hauptdokument Bereich angezeigt, in dem mehrere Editor Fenster angezeigt werden. Obwohl Tool Fenster in der Regel nur eine Instanz haben (Sie können z. b. nur ein **Projektmappen-Explorer** öffnen), können Editor Fenster mehrere-Instanzen aufweisen, die jeweils zum Bearbeiten eines separaten Dokuments verwendet werden, aber alle im gleichen Bereich angedockt sind. Die Abbildung zeigt einen Dokumentbereich mit zwei Editor Fenstern, einem Formular-Designer-Fenster. Alle Fenster im Dokumentbereich sind durch Klicken auf Tabstopps verfügbar, aber das Editor Fenster, das EditorPane.cs-Datei enthält, ist sichtbar und aktiv.
 
  Wenn Sie Visual Studio erweitern, können Sie Tool Fenster erstellen, mit denen Visual Studio-Benutzer mit ihrer Erweiterung interagieren können. Sie können auch eigene Editoren erstellen, mit denen Visual Studio-Benutzer Dokumente bearbeiten können. Da Ihre Tool Fenster und Editoren in Visual Studio integriert werden, müssen Sie Sie nicht so programmieren, dass Sie auf einer Registerkarte ordnungsgemäß Andocken oder angezeigt werden. Wenn Sie in Visual Studio ordnungsgemäß registriert sind, verfügen Sie automatisch über die typischen Features von Tool Fenstern und Dokument Fenstern in Visual Studio. Weitere Informationen finden Sie unter [erweitern und Anpassen von Tool Fenstern](../../extensibility/extending-and-customizing-tool-windows.md).
 
@@ -87,9 +89,9 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
 
 In Visual Studio sind Projekte die Container, die Entwickler zum organisieren und Erstellen des Quellcodes und anderer Ressourcen verwenden. Mit Projekten können Sie Quellcode, Verweise auf Webdienste und Datenbanken sowie andere Ressourcen organisieren, erstellen, Debuggen und bereitstellen. VSPackages können das Visual Studio-Projekt System erweitern, indem Sie Projekttypen, Projekt Untertypen und benutzerdefinierte Tools bereitstellen.
 
-Projekte können auch zusammen in einer Projekt Mappe gesammelt werden, bei der es sich um eine Gruppierung von einem oder mehreren Projekten *handelt, die*zusammenarbeiten, um eine Anwendung zu erstellen. Projekt-und Statusinformationen, die sich auf die Lösung beziehen, werden in zwei Projektmappendateien gespeichert, der textbasierten [Projektmappendatei (. sln)](solution-dot-sln-file.md) und der Benutzer Option für die binäre Projekt [Mappe (. suo)](solution-user-options-dot-suo-file.md). Diese Dateien ähneln den in früheren Versionen von Visual Basic verwendeten Gruppen Dateien (. VBG) und den Arbeitsbereichs Dateien (. DSW) und Benutzeroptionen (. opt), die in früheren Versionen von C++ verwendet wurden.
+Projekte können auch zusammen in einer Projekt Mappe gesammelt werden, bei der es sich um eine Gruppierung von einem oder mehreren Projekten *handelt, die* zusammenarbeiten, um eine Anwendung zu erstellen. Projekt-und Statusinformationen, die sich auf die Lösung beziehen, werden in zwei Projektmappendateien gespeichert, der textbasierten [Projektmappendatei (. sln)](solution-dot-sln-file.md) und der Benutzer Option für die binäre Projekt [Mappe (. suo)](solution-user-options-dot-suo-file.md). Diese Dateien ähneln den in früheren Versionen von Visual Basic verwendeten Gruppen Dateien (. VBG) und den Arbeitsbereichs Dateien (. DSW) und Benutzeroptionen (. opt), die in früheren Versionen von C++ verwendet wurden.
 
-Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [Solutions](../../extensibility/internals/solutions-overview.md)Projektmappen.
+Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [](../../extensibility/internals/solutions-overview.md)Projektmappen.
 
 ## <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen
  Visual Studio enthält vordefinierte Projektvorlagen und Projekt Element Vorlagen. Sie können auch eigene Vorlagen erstellen oder Vorlagen aus der Community abrufen und Sie dann in Visual Studio integrieren. In der [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) finden Sie Vorlagen und Erweiterungen.

@@ -1,5 +1,7 @@
 ---
 title: Liste der verfügbaren Dienste | Microsoft-Dokumentation
+description: Anzeigen einer Liste der verfügbaren Dienste, die von Visual Studio und dem Visual Studio SDK unterstützt werden, einschließlich der Dienst-GUIDs zum Abrufen einer Schnittstelle für jeden Dienst.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302d4bcff647a74acc973c47e0b62e66c86e5859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707345"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204643"
 ---
 # <a name="list-of-available-services"></a>Liste der verfügbaren Dienste
 
@@ -54,8 +56,8 @@ Verwenden Sie die hier aufgelisteten oder von einer anderen Quelle (z. b. Sprach
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCallBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCallBrowser> | Nein | Ja | Ermöglicht einem VSPackage, eine neue **Aufrufbrowser** zu erstellen, die beim Debuggen verwendet wird. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | Ja | Ja | Ermöglicht einem VSPackage das Synchronisieren des **Klassenansicht** mit einem bestimmten Objekt. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | Ja | Ja | Bietet Unterstützung für das Mapping von Befehlsnamen zu GUIDs und zurück und das Ermitteln der Namen aller verfügbaren Befehle und Namen. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | Nein | Ja | Aktiviert ein VSPackage, um die **Code Definitions Ansicht**zu bearbeiten. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Ja | Ja | Interner Dienst. Darf nicht verwendet werden. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | Nein | Ja | Aktiviert ein VSPackage, um die **Code Definitions Ansicht** zu bearbeiten. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Ja | Ja | Interner Dienst. Nicht verwenden. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindow> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> | Ja | Ja | Ermöglicht den Zugriff auf ein Code Fenster, das ein oder mehrere Dokumente enthalten kann. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindowManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> | Ja | Ja | Aktiviert ein VSPackage, um dem Code Fenster Änderungen hinzuzufügen, z. b. Dropdown leisten. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow2> | Ja | Ja | Ermöglicht einem VSPackage das Ausführen eines Befehls über das **Befehlsfenster** und andernfalls das interagieren mit dem **Befehlsfenster**. |
@@ -93,7 +95,7 @@ Verwenden Sie die hier aufgelisteten oder von einer anderen Quelle (z. b. Sprach
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsLinkedUndoTransactionManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> | Ja | Ja | Bietet Zugriff auf den verknüpften rückgängig-Manager. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsMenuEditor> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMenuEditorFactory> | Ja | Ja | Ermöglicht einem Formular-Designer den Zugriff auf den freigegebenen Menü-Editor. Ivsmenueditor Factory kann nach abgefragt werden <xref:Microsoft.VisualStudio.Shell.Interop.IVsMenuEditor> . |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> | Ja | Ja | Ermöglicht einem VSPackage, einen "Kontext Behälter" zu erstellen, der verwendet wird, um Hilfe Schlüsselwörter für einen bestimmten Kontext zuzuordnen. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjBrowser> | Ja | Ja | Ermöglicht einem VSPackage, zu einem bestimmten Objekt im **Objektkatalog**zu navigieren. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjBrowser> | Ja | Ja | Ermöglicht einem VSPackage, zu einem bestimmten Objekt im **Objektkatalog** zu navigieren. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager> | Ja | Ja | Ermöglicht einem VSPackage, seinen Bibliotheks-Manager bei [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für die Verwaltung von Objekten zu registrieren, wie z. b. Namespaces, Klassen und Enumerationen. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectSearch> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectSearch> | Ja | Ja | Ermöglicht einem VSPackage, nach einem bestimmten Objekt zu suchen. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsOpenProjectOrSolutionDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsOpenProjectOrSolutionDlg> | Nein | Ja | Ermöglicht einem VSPackage, das Standard [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Dialogfeld zu verwenden, um ein Projekt oder eine Projekt Mappe zu öffnen. |
@@ -140,9 +142,9 @@ Verwenden Sie die hier aufgelisteten oder von einer anderen Quelle (z. b. Sprach
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | Ja | Ja | Ermöglicht den Zugriff auf eine Liste von Text spannen in einem Textbild oder-Puffer. Dieser Dienst wird in der Regel in einem Container von Dokumenten implementiert und verweist auf das aktuelle Dokument. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | Nein | Ja | Aktiviert ein VSPackage, um ein Dialogfeld anzuzeigen, das auf einen anderen Thread wartet (der zum warten auf Hintergrundaufgaben verwendet wird). |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | Nein | Ja | Ermöglicht einem VSPackage das Initiieren von Hintergrundaufgaben, die dann von verwaltet werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Ja | Ja | Bietet Zugriff auf die **Toolbox**der IDE. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Ja | Ja | Bietet Zugriff auf die **Toolbox** der IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | Ja | Ja | Ermöglicht einem VSPackage das Abrufen von Informationen aus **Toolbox** Elementen. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | Nein | Ja | Ermöglicht einem VSPackage das Registrieren eines Toolbox-Datenanbieters, ohne dass die Leistungskosten beim vorab laden der gesamten **Toolbox**anfallen. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | Nein | Ja | Ermöglicht einem VSPackage das Registrieren eines Toolbox-Datenanbieters, ohne dass die Leistungskosten beim vorab laden der gesamten **Toolbox** anfallen. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | Nein | Ja | Aktiviert ein VSPackage, um zu bestimmen, ob das Dialogfeld **Optionen** geöffnet ist, und um die Seite Sichtbarkeit der Seite alle Optionen zu aktualisieren. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | Nein | Ja | Ermöglicht einem VSPackage, Änderungen in den Dateien eines Projekts zu überwachen und die Batch Kontrolle über einen Quell Code Verwaltungs Anbieter bereitzustellen. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> | Ja | Ja | Ermöglicht einem VSPackage, die IDE über Änderungen an einer Auswahl zu informieren, die sich auf das aktuell ausgewählte Projekt Element auswirken können. |
@@ -158,6 +160,6 @@ Verwenden Sie die hier aufgelisteten oder von einer anderen Quelle (z. b. Sprach
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Ja | Ja | Ermöglicht einem VSPackage das Abrufen des Fensterrahmens, in dem sich das Paket oder der Teil des Pakets befinden könnte. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Ja | Ja | Ermöglicht den Zugriff auf XML-formatierte Dokumentationsdateien, die einer bestimmten Metadatendatei zugeordnet sind. |
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)

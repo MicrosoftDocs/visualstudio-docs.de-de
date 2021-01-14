@@ -1,5 +1,7 @@
 ---
 title: Verwalten von Konfigurationsoptionen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Projekt-und projektmappenkonfigurationseinstellungen in Visual Studio verwalten, um zu steuern, wie das Projekt erstellt, gepackt, bereitgestellt und ausgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707298"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204526"
 ---
 # <a name="managing-configuration-options"></a>Verwalten von Konfigurationsoptionen
 Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Projekt-und projektmappenkonfigurationseinstellungen verwalten, die bestimmen, wie das Projekt erstellt, gepackt, bereitgestellt und ausgeführt wird. In den folgenden Themen wird die Projekt-und Lösungs Konfiguration erläutert.
@@ -31,7 +33,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Projekt-und projektma
 
 - [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)
 
- Bietet Informationen dazu, was in Projektmappenkonfigurationen gespeichert wird und wie Lösungs Konfigurationen das Verhalten **Start** der Start **-und** Buildbefehle weiterleiten.
+ Bietet Informationen dazu, was in Projektmappenkonfigurationen gespeichert wird und wie Lösungs Konfigurationen das Verhalten  der Start **-und** Buildbefehle weiterleiten.
 
 - [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md)
 
@@ -39,7 +41,7 @@ Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Projekt-und projektma
 
 - [Projektkonfiguration beim Erstellen](../../extensibility/internals/project-configuration-for-building.md)
 
- Erläutert, wie eine Liste von Projektmappenkonfigurationen für eine bestimmte Lösung über **Solution Configurations** das Dialogfeld Projektmappenkonfigurationen verwaltet wird.
+ Erläutert, wie eine Liste von Projektmappenkonfigurationen für eine bestimmte Lösung über  das Dialogfeld Projektmappenkonfigurationen verwaltet wird.
 
 - [Projektkonfiguration für die Verwaltung der Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 
