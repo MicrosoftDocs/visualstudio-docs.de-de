@@ -1,5 +1,7 @@
 ---
 title: Initialisierungs Sequenz von Projekt Untertypen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Initialisierungs Sequenz in der Visual Studio-Umgebung für ein Projekt System, das von mehreren Projekt Untertypen aggregiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05a3c312f61dd2b2c63c3f38ef8bac2203b326db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707632"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204708"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Initialisierungssequenz von Projektuntertypen
 Die Umgebung erstellt ein Projekt durch Aufrufen der Basis-projektfactory-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . Die Erstellung eines Projekt unter Typs beginnt, wenn die Umgebung feststellt, dass die Projekttyp-GUID-Liste für die Erweiterung einer Projektdatei nicht leer ist. Die Projektdatei Erweiterung und die Projekt-GUID geben an, ob das Projekt ein- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder- [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekttyp ist Beispielsweise identifizieren die VBPROJ-Erweiterung und {F184B08F-C81C-45F6-A57F-5ABD9991F28F} ein [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt.
@@ -131,7 +133,7 @@ HRESULT HrCreateInnerProj
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - <xref:Microsoft.VisualStudio.Shell.Flavor>
 - [Projektuntertypen](../../extensibility/internals/project-subtypes.md)

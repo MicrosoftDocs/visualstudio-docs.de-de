@@ -1,5 +1,7 @@
 ---
 title: Legacy Sprachdienst-Grundlagen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die wesentlichen Features, die in Legacy Sprachdiensten zur Verfügung stehen, mit denen Sie eine Programmiersprache in Visual Studio integrieren können.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707421"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205137"
 ---
 # <a name="legacy-language-service-essentials"></a>Grundlagen zu Legacysprachdiensten
 Sie müssen einen Sprachdienst bereitstellen, um eine Programmiersprache in Visual Studio zu integrieren. In diesem Thema werden die in den Legacy Sprachdiensten verfügbaren Features erläutert.
@@ -30,7 +32,7 @@ Sie müssen einen Sprachdienst bereitstellen, um eine Programmiersprache in Visu
 
  Legacy Sprachdienste bieten die folgenden Features:
 
-|Funktion|BESCHREIBUNG|
+|Funktion|Beschreibung|
 |-------------|-----------------|
 |Farben für Syntax|Bewirkt, dass in der Editor-Ansicht verschiedene Farben und Schriftarten für die verschiedenen Elemente einer Sprache angezeigt werden. Diese Differenzierung erleichtert das Lesen und Bearbeiten von Dateien.<br /><br /> Allgemeine Informationen finden Sie unter [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Informationen zu diesem Feature im Managed Package Framework (MPF) finden Sie unter [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
 |Anweisungsvervollständigung|Schließt eine-Anweisung oder ein-Schlüsselwort ab, mit der der Benutzer begonnen hat. Mit der Anweisungs Vervollständigung können Benutzer schwierige Anweisungen leichter eingeben, mit weniger Typisierung und weniger Fehler Chancen.<br /><br /> Allgemeine Informationen finden Sie unter [Anweisungs Vervollständigung in einem Legacy Sprachdienst](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Informationen zu diesem Feature im MPF finden Sie unter [Wortvervollständigung in einem Legacy Sprachdienst](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
@@ -42,7 +44,7 @@ Sie müssen einen Sprachdienst bereitstellen, um eine Programmiersprache in Visu
 
  Die folgenden Funktionen beziehen sich auf die Unterstützung von Programmiersprachen, sind jedoch nicht Teil der Sprachdienste:
 
-| Funktion | BESCHREIBUNG |
+| Funktion | Beschreibung |
 |-----------------------| - |
-| Ausdrucks Auswertung | Unterstützt den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger durch Überprüfen von Breakpoints und Bereitstellen einer Liste von Ausdrücken, die **Autos** im Fenster Auto Debug angezeigt werden sollen.<br /><br /> Weitere Informationen finden Sie [unter Sprachdienst Unterstützung für das Debuggen](../../extensibility/internals/language-service-support-for-debugging.md). |
+| Ausdrucks Auswertung | Unterstützt den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger durch Überprüfen von Breakpoints und Bereitstellen einer Liste von Ausdrücken, die  im Fenster Auto Debug angezeigt werden sollen.<br /><br /> Weitere Informationen finden Sie [unter Sprachdienst Unterstützung für das Debuggen](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Tools zum Durchsuchen von Symbolen | Unterstützt **Objektkatalog**-, **Klassenansicht**-, **Aufrufbrowser**-und Such **Symbol Ergebnisse**. |

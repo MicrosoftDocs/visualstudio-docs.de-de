@@ -1,5 +1,7 @@
 ---
 title: Manifest from Resources | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mit dem Manifest from Resources Tool PNG-oder XAML-Dateien zu einer. imagemanifest-Datei hinzufügen, um Sie mit dem Visual Studio-Image Dienst zu verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536227"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204500"
 ---
 # <a name="manifest-from-resources"></a>Manifest aus Ressourcen
 Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von Bild Ressourcen (PNG-oder XAML-Dateien) annimmt und eine imagemanifest-Datei generiert, mit der diese Bilder mit dem Visual Studio-Image Dienst verwendet werden können. Darüber hinaus kann dieses Tool zum Hinzufügen von Bildern zu einem vorhandenen imagemanifest verwendet werden. Dieses Tool ist nützlich, wenn Sie einer Visual Studio-Erweiterung High-dpi-und Designunterstützung für Bilder hinzufügen möchten. Die generierte. imagemanifest-Datei sollte in einer Visual Studio-Erweiterung (VSIX-Datei) enthalten und bereitgestellt werden.
@@ -48,7 +50,7 @@ Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von 
 
 - ManifestFromResources/resources:D:\Images\Image1.png;D: \images\image1.XAML/Assembly: My. Assembly. Name/guidName: myImages/newGuids/newIds
 
-## <a name="notes"></a>Notizen
+## <a name="notes"></a>Hinweise
 
 - Das Tool unterstützt nur PNG-und XAML-Dateien. Alle anderen Bild-oder Dateitypen werden ignoriert. Für alle nicht unterstützten Typen, die beim Generieren der Ressourcen auftreten, wird eine Warnung generiert. Wenn keine unterstützten Images gefunden werden, nachdem das Tool die Ressourcenverarbeitung abgeschlossen hat, wird ein Fehler generiert.
 

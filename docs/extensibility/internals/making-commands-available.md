@@ -1,5 +1,7 @@
 ---
 title: Verfügbar machung von Befehlen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Verfügbarkeit von Befehlen steuern, die der Visual Studio-IDE in VSPackages hinzugefügt werden, indem Sie das verzögerte Laden, den Kontext und die Sichtbarkeit verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707333"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204539"
 ---
 # <a name="making-commands-available"></a>Verfügbar machung von Befehlen
 
@@ -45,13 +47,13 @@ Das folgende Beispiel zeigt die Definition eines Menübefehls aus einer vsct-Dat
 </Button>
 ```
 
-Wenn im Beispiel die übergeordnete Gruppe,, ein untergeordnetes Element `MyMenuGroup` eines Menüs der obersten Ebene, z. b **Tools** . im Menü Extras, ist, wird der Befehl in diesem Menü angezeigt, das Paket, das den Befehl ausführt, wird jedoch erst geladen, wenn ein Benutzer auf den Befehl klickt. Wenn Sie jedoch den-Befehl zum Implementieren der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle programmieren, können Sie das Laden des Pakets aktivieren, wenn das Menü, in dem der Befehl enthalten ist, erstmalig erweitert wird.
+Wenn im Beispiel die übergeordnete Gruppe,, ein untergeordnetes Element `MyMenuGroup` eines Menüs der obersten Ebene, z. b  . im Menü Extras, ist, wird der Befehl in diesem Menü angezeigt, das Paket, das den Befehl ausführt, wird jedoch erst geladen, wenn ein Benutzer auf den Befehl klickt. Wenn Sie jedoch den-Befehl zum Implementieren der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle programmieren, können Sie das Laden des Pakets aktivieren, wenn das Menü, in dem der Befehl enthalten ist, erstmalig erweitert wird.
 
 Beachten Sie, dass durch das verzögerte Laden auch die Startleistung verbessert werden kann.
 
 ## <a name="current-context-and-the-visibility-of-commands"></a>Aktueller Kontext und die Sichtbarkeit von Befehlen
 
-Sie können VSPackage-Befehle so programmieren, dass Sie sichtbar oder ausgeblendet werden, je nach dem aktuellen Zustand der VSPackage-Daten oder den aktuell relevanten Aktionen. Sie können das VSPackage aktivieren, um den Status seiner Befehle festzulegen, in der Regel mithilfe einer Implementierung der- <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> Methode aus der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. hierfür muss jedoch das VSPackage geladen werden, bevor der Code ausgeführt werden kann. Stattdessen empfiehlt es sich, die IDE zum Verwalten der Sichtbarkeit der Befehle zu aktivieren, ohne das Paket zu laden. Ordnen Sie zu diesem Zweck in der vsct-Datei Befehle einem oder mehreren speziellen UI-Kontexten zu. Diese UI-Kontexte werden durch eine GUID identifiziert, die als *Befehls Kontext-GUID*bezeichnet wird.
+Sie können VSPackage-Befehle so programmieren, dass Sie sichtbar oder ausgeblendet werden, je nach dem aktuellen Zustand der VSPackage-Daten oder den aktuell relevanten Aktionen. Sie können das VSPackage aktivieren, um den Status seiner Befehle festzulegen, in der Regel mithilfe einer Implementierung der- <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> Methode aus der- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle. hierfür muss jedoch das VSPackage geladen werden, bevor der Code ausgeführt werden kann. Stattdessen empfiehlt es sich, die IDE zum Verwalten der Sichtbarkeit der Befehle zu aktivieren, ohne das Paket zu laden. Ordnen Sie zu diesem Zweck in der vsct-Datei Befehle einem oder mehreren speziellen UI-Kontexten zu. Diese UI-Kontexte werden durch eine GUID identifiziert, die als *Befehls Kontext-GUID* bezeichnet wird.
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] überwacht Änderungen, die sich aus Benutzeraktionen ergeben, z. b. das Laden eines Projekts oder das Wechseln von der Bearbeitung zum Aufbau. Wenn Änderungen auftreten, wird die Darstellung der IDE automatisch geändert. In der folgenden Tabelle sind vier wichtige Kontexte der IDE-Änderungen aufgeführt, die von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] überwacht werden.
 
@@ -147,7 +149,7 @@ Beachten Sie auch, dass jeder Benutzeroberflächen Kontext wie folgt in einem se
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Hinzufügen eines Befehls zum Projektmappen-Explorer Symbolleiste](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

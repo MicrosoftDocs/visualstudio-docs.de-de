@@ -1,5 +1,7 @@
 ---
 title: Element Vervollständigung in einem Legacy Sprachdienst | Microsoft-Dokumentation
+description: Erfahren Sie, wie die IntelliSense-Member-Vervollständigungs-QuickInfo in einem Legacy Sprachdienst funktioniert und wie Sie vom Managed Package Framework (MPF) unterstützt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fbf88dab2f1ffad0b4a6e5dc6b2ad516c28afca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707195"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205800"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Membervervollständigung in einem Legacysprachdienst
 
@@ -44,7 +46,7 @@ Ein Element Abschluss Zeichen gibt an, dass ein Member einer Klasse, Struktur od
 
 Der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> -Befehl initiiert einen Aufruf der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> -Methode für die <xref:Microsoft.VisualStudio.Package.Source> -Klasse, und die- <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode ruft wiederum den <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methoden Parser mit dem analysieren-Grund für [ParseReason. Display Membership List](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>)auf.
 
-Der Parser bestimmt sowohl den Kontext der aktuellen Position als auch das Token unter oder unmittelbar vor der aktuellen Position. Basierend auf diesem Token wird eine Liste von Deklarationen angezeigt. Wenn Sie in c# z. b. die Einfügemarke für einen Klassenmember positionieren und Member **auflisten**auswählen, erhalten Sie eine Liste aller Member der Klasse. Wenn Sie die Einfügemarke nach einem Punkt positionieren, der auf eine Objekt Variable folgt, erhalten Sie eine Liste aller Member der Klasse, die das Objekt darstellt. Beachten Sie Folgendes: Wenn die Einfügemarke auf einem Element positioniert ist, wenn die Elementliste angezeigt wird, wird durch die Auswahl eines Elements aus der Liste der Member, auf dem sich die Einfügemarke befindet, durch den in der Liste angezeigten
+Der Parser bestimmt sowohl den Kontext der aktuellen Position als auch das Token unter oder unmittelbar vor der aktuellen Position. Basierend auf diesem Token wird eine Liste von Deklarationen angezeigt. Wenn Sie in c# z. b. die Einfügemarke für einen Klassenmember positionieren und Member **auflisten** auswählen, erhalten Sie eine Liste aller Member der Klasse. Wenn Sie die Einfügemarke nach einem Punkt positionieren, der auf eine Objekt Variable folgt, erhalten Sie eine Liste aller Member der Klasse, die das Objekt darstellt. Beachten Sie Folgendes: Wenn die Einfügemarke auf einem Element positioniert ist, wenn die Elementliste angezeigt wird, wird durch die Auswahl eines Elements aus der Liste der Member, auf dem sich die Einfügemarke befindet, durch den in der Liste angezeigten
 
 ### <a name="the-token-trigger"></a>Der tokenauslöse
 

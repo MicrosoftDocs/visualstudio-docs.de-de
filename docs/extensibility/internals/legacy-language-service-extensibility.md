@@ -1,5 +1,7 @@
 ---
 title: Erweiterbarkeit des Legacy sprach Dienstanbieter | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Struktur, Implementierung und Erweiterbarkeit von Legacy Sprachdiensten in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b5ec3de8d7b0b9466e162c3ee193c130634cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 313d1d7bb74ccb456173474f7f0e3140814755bd
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707407"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205072"
 ---
 # <a name="legacy-language-service-extensibility"></a>Erweiterbarkeit von Legacysprachdiensten
 Ein Sprachdienst bietet sprachspezifische Unterstützung für das Bearbeiten von Quellcode in der IDE.
