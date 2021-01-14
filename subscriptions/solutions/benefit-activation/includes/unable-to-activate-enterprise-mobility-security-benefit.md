@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: df582df95932ae82e9be319f347f79745e1ad277
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915974"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147627"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>Ich kann meinen EMS-Vorteil (Enterprise Mobility + Security) nicht aktivieren.
 
@@ -40,6 +40,6 @@ Rufen Sie Ihr Dashboard auf, und gehen Sie folgendermaßen vor, um Ihr neues Mic
 
 Sobald Sie Ihr Office 365 E3-Abonnement gelöscht und das als Ersatz dienende Microsoft 365 E5-Abonnement erstellt haben, ist Ihr Office 365 E3-Mandant 60 Tage lang verfügbar, damit Sie Ihre Daten migrieren können. 
 
-## <a name="more-information"></a>Weitere Informationen 
+## <a name="more-information-about-office-365-e3-subscriptions"></a>Weitere Informationen zu Office 365 E3-Abonnements
 
 [Hier erfahren Sie mehr](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365) über die Berechtigung, das Migrieren von Office 365 E3 zu Microsoft 365 und zu häufig gestellten Fragen.  
