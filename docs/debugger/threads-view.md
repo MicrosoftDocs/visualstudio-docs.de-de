@@ -1,5 +1,7 @@
 ---
 title: Threadansicht | Microsoft-Dokumentation
+description: In diesem Artikel wird die Ansicht „Threads“ des Spy++-Debugtools erläutert. Bei der Threadansicht handelt es sich um eine flache Aufführung aller Threads, die mit Fenstern in Ihrem System verknüpft sind.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929937"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150209"
 ---
 # <a name="threads-view"></a>Threadansicht
 Bei der Threadansicht handelt es sich um eine flache Aufführung aller Threads, die mit Fenstern in Ihrem System verknüpft sind. Für die einzelnen Threads wird jeweils Thread-ID und Modulname angezeigt. Prozesse werden nicht aufgeführt. Sie können den zu einem ausgewählten Thread gehörenden Prozess jedoch einfach finden.
@@ -38,7 +40,7 @@ Bei der Threadansicht handelt es sich um eine flache Aufführung aller Threads, 
  [Vorgehensweise: Anzeigen von Threadeigenschaften:](../debugger/how-to-display-thread-properties.md) In diesem Artikel wird erläutert, wie Sie weitere Informationen zu einem Thread anzeigen.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Spy++-Ansichten](../debugger/spy-increment-views.md) Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
+ [Spy++-Ansichten](../debugger/spy-increment-views.md): Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
  [Verwenden von Spy++](../debugger/using-spy-increment.md): Bietet eine Einführung in das Tool Spy++ und erläutert, wie es verwendet werden kann.
 

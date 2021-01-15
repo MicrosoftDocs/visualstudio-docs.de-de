@@ -1,5 +1,7 @@
 ---
 title: Sammeln zusätzlicher Leistungsdaten | Microsoft-Dokumentation
+description: In diesem Artikel finden Sie Links zu allgemeinen Aufgaben zum Erfassen zusätzlicher Leistungsdaten mit den Profilerstellungstools von Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4201895fd93d3fa3a9ccb9072382432d6f6e02be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b8dd95a9fbf4cba0841488132e3c2ab84f4f6385
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779700"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150404"
 ---
 # <a name="collect-additional-performance-data"></a>Sammeln zusätzlicher Leistungsdaten
 

@@ -1,5 +1,7 @@
 ---
 title: Sicherheitsüberlegungen zu Schnellansichten | Microsoft-Dokumentation
+description: Eine Schnellansicht für den Visual Studio-Debugger muss mit voller Vertrauenswürdigkeit ausgeführt werden. Beachten Sie beim Schreiben Ihrer eigenen Schnellansicht mögliche Sicherheitsbedrohungen, und treffen Sie entsprechende Vorkehrungen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187148"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149741"
 ---
 # <a name="visualizer-security-considerations"></a>Sicherheitsüberlegungen zu Schnellansichten
 Das Schreiben einer Schnellansicht kann potenzielle Sicherheitsrisiken nach sich ziehen. Bisher sind keine bekannten Angriffe auf diese potenziellen Sicherheitslücken bekannt. Trotzdem sollten Entwickler sich der Sicherheitsrisiken bewusst sein und angemessene Vorsichtsmaßnahmen treffen, wie im Folgenden beschrieben, um sich vor zukünftigen Angriffen zu schützen.

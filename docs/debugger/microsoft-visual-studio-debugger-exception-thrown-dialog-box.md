@@ -1,7 +1,8 @@
 ---
 title: Microsoft Visual Studio Debugger (Ausnahmeverweis) (Dialogfeld) | Microsoft-Dokumentation
 titleSuffix: ''
-ms.custom: seodec18
+description: 'In diesem Artikel erfahren Sie, wie Sie vorgehen müssen, wenn eine Ausnahme auftritt, die von Ihrem Programm verarbeitet werden muss. Sie haben folgende Möglichkeiten: Sie können den Debugger unterbrechen, die Ausführung fortsetzen oder die Ausnahme ignorieren.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c86c765ad8ebfbe36dcaca484f7da4121b7e297
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731208"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975276"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Debugger (Ausnahmeverweis) (Dialogfeld)
 Im Programm ist eine Ausnahme aufgetreten. In diesem Dialogfeld wird die Art der ausgelösten Ausnahme angezeigt. Die Ausnahme muss durch den Code behandelt werden. Folgende Optionen stehen für das Behandeln der Ausnahme zur Verfügung:

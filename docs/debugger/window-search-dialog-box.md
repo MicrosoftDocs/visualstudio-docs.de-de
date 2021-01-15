@@ -1,5 +1,7 @@
 ---
 title: Fenstersuche (Dialogfeld) | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie die Windows-Suche verwenden, um den Knoten für ein bestimmtes Fenster in der Fensteransicht zu suchen und auszuwählen. Außerdem finden Sie hier Beschreibungen der Einstellungen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900922"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148987"
 ---
 # <a name="window-search-dialog-box"></a>Dialogfeld "Fenstersuche"
 Verwenden Sie dieses Dialogfeld, um den Knoten für ein bestimmtes Fenster in der [Fensteransicht](../debugger/windows-view.md) zu suchen und auszuwählen. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus in das Fenster „Fensteransicht“. Wählen Sie dann im Menü **Suchen** die Option **Fenster suchen** aus.

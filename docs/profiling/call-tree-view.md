@@ -1,5 +1,7 @@
 ---
 title: Aufrufstrukturansicht | Microsoft-Dokumentation
+description: In diesem Artikel wird die Aufrufstrukturansicht erläutert, in der die Funktionsausführungspfade angezeigt werden, die von der Anwendung durchlaufen werden, für die die Profilerstellung durchgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 386f8e85c02fe73eab9801b3edf79ec0d0b178fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773334"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150781"
 ---
 # <a name="call-tree-view"></a>Aufrufstrukturansicht
 In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden. Der Stamm der Struktur ist der Einstiegspunkt in die Anwendung oder Komponente. Unter den einzelnen Funktionsknoten werden alle Funktionen aufgeführt, die von ihnen aufgerufen wurden. Zudem werden Leistungsdaten über diese Funktionsaufrufe angezeigt.
@@ -49,7 +51,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 
 - [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Leistungsberichtansichten](../profiling/performance-report-views.md)
 - [Grundlagen zu Instrumentationsdatenwerten](../profiling/understanding-instrumentation-data-values.md)
 - [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

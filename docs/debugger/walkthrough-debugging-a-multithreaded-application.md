@@ -1,5 +1,7 @@
 ---
 title: Anzeigen von Threads im Debugger | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie das Fenster „Threads“ verwenden, um Threads zu untersuchen und zu steuern. Sie können Threads gruppieren, sortieren, kennzeichnen, anhalten, fortsetzen und suchen sowie Spalten auswählen und Aufruflisten anzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821593"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149702"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Anzeigen von Threads im Visual Studio-Debugger mithilfe des Fensters „Threads“ (C#, Visual Basic, C++)
 Im Fenster **Threads** können Sie Threads in der gedebuggten Anwendung überprüfen und diese bearbeiten. Eine Schritt-für-Schritt-Anleitung zur Verwendung des Fensters **Threads** finden Sie unter [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters „Threads“](../debugger/how-to-use-the-threads-window.md).

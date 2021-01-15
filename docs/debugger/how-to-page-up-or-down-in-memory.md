@@ -1,5 +1,7 @@
 ---
 title: Bildlauf nach oben oder unten im Arbeitsspeicher | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie „Bildlauf nach oben“ oder „Bildlauf nach unten“ im Arbeitsspeicher verwenden, um die Arbeitsspeicherinhalte beim Debuggen in Visual Studio in einem Arbeitsspeicherfenster oder im Fenster „Disassemblierung“ anzuzeigen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4e4e2037e39df7ce343143ff64235f1de0364f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1fc586603caf18261654e5ec8ee437c0875616a7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852047"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148883"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Vorgehensweise: Bildlauf nach oben oder unten im Arbeitsspeicher
 

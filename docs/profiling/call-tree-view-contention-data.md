@@ -1,5 +1,7 @@
 ---
 title: 'Aufrufstrukturansicht: Konfliktdaten | Microsoft-Dokumentation'
+description: In diesem Artikel wird die Aufrufstrukturansicht erläutert, die Konfliktdaten für die Funktionsausführungspfade der Anwendung enthält, für die die Profilerstellung durchgeführt wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 974eeccbb1f4691c00fafad65fadef7c909a7ed2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779778"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150417"
 ---
 # <a name="call-tree-view---contention-data"></a>Aufrufstrukturansicht: Konfliktdaten
 In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, die in der mit einem Profil versehenen Anwendung durchlaufen wurden. Der Stamm der Struktur ist der Einstiegspunkt in die Anwendung oder Komponente. Jeder Funktionsknoten führt Folgendes auf: Alle von ihm aufgerufenen Funktionen, wie oft die Funktion blockiert wurde und wie lange die Funktion blockiert war, weil sie mit anderen Threads oder Prozessen um eine Ressource konkurriert hat.
@@ -33,7 +35,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 
  Durch das Festlegen eines Stammknotens wird sichergestellt, dass in der Ansicht lediglich die Teilstruktur des ausgewählten Knotens angezeigt wird. Um den Stammknoten auf den ursprünglichen Knoten zurückzusetzen, klicken Sie mit der rechten Maustaste in der Aufrufstrukturansicht, und klicken Sie dann auf **Stamm zurücksetzen**.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Exklusive blockierte Zeit %**|Wie lange die Instanzen dieser Funktion in diesem Ausführungspfad während der Profilerstellung nicht ausgeführt werden konnten. Diese Zeit enthält nicht die Zeit, für die untergeordnete Funktionen blockiert wurden, die von der Funktion aufgerufen wurden.|
 |**Exklusive blockierte Zeit %**|Der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der exklusiven blockierten Zeit für diese Funktion in diesem Ausführungspfad entspricht.|
@@ -45,16 +47,16 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 |**Inklusive blockierte Zeit %**|Der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der inklusiven blockierten Zeit für die Instanzen dieser Funktion in diesem Ausführungspfad entspricht.|
 |**Inklusive Konflikte %**|Die Gesamtanzahl von Konflikten, die Instanzen dieser Funktion in diesem Ausführungspfad blockiert haben. Diese Anzahl enthält die Konflikte von untergeordneten Funktionen, die von der Funktion aufgerufen wurden.|
 |**Inklusive Konflikte %**|Der Anteil aller Konflikte während der Profilerstellung, bei denen es sich um inklusive Konflikte der Instanzen dieser Funktion in diesem Ausführungspfad handelt.|
-|**Ebene**|Die Ebene der Funktion in der Aufrufstruktur. Nur in VSReport-Befehlszeilenberichten. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|Die Ebene der Funktion in der Aufrufstruktur. Nur in VSReport-Befehlszeilenberichten. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).|
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|
 |**Modulname**|Der Name des Moduls, das die Funktion enthält.|
 |**Modulpfad**|Der Pfad des Moduls, das die Funktion enthält.|
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
-|**Prozessname**|Der Prozessname.|
+|**Prozessname**|Der Name des Prozesses.|
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|
 
 ## <a name="see-also"></a>Siehe auch
-- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Aufrufstrukturansicht](../profiling/call-tree-view.md)
 - [Aufrufstrukturansicht: Instrumentierungsdaten des .NET-Arbeitsspeichers](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Aufrufstrukturansicht: Sampling](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

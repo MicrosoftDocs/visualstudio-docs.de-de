@@ -1,5 +1,7 @@
 ---
 title: Spy++-Hilfe | Microsoft-Dokumentation
+description: In diesem Artikel finden Sie Links zur Verwendung von Spy++ und den Ansichten von Spy++. Unter den Referenzlinks finden Sie ausführliche Informationen zu allen verfügbaren Spy++-Menübefehlen und -Dialogfeldern.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118096d536b9a4db50568ab138cd4695e1f3dcbe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f5e9caecb6d5ae2023bce9c1ef2ea0d73c66be3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929791"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148025"
 ---
 # <a name="spy-help"></a>Spy++-Hilfe
 Die Dokumentation für das Spy++-Hilfsprogramm enthält zwei Gruppen allgemeiner Themen zur Verwendung von Spy++ und zu den Spy++-Ansichten. Auf sie folgt die Spy++-Referenz, die weitere Details zu allen verfügbaren Menübefehlen und Dialogfeldern enthält.
@@ -28,18 +30,18 @@ Die Dokumentation für das Spy++-Hilfsprogramm enthält zwei Gruppen allgemeiner
 ## <a name="spy-reference"></a>Spy++-Referenz
  [Menübefehle](../debugger/menu-commands.md) Beschreibt die Befehle, die in den einzelnen Spy++-Menüs verfügbar sind.
 
- [Dialogfeld „Schriftart“](../debugger/font-dialog-box-microsoft-spy-increment-help.md) Wird verwendet, um die Schriftart zu konfigurieren, die in einem Spy++-Ansichtsfenster verwendet wird.
+ [Dialogfeld „Schriftart“](../debugger/font-dialog-box-microsoft-spy-increment-help.md): Wird verwendet, um die Schriftart zu konfigurieren, die in einem Spy++-Ansichtsfenster verwendet wird.
 
- [Suchtools für Spy++-Ansichten](../debugger/search-tools-for-spy-increment-views.md) Dialogfelder, die verwendet werden, um einen bestimmten Knoten in einem Spy++-Ansichtsfenster zu finden.
+ [Suchtools für Spy++-Ansichten](../debugger/search-tools-for-spy-increment-views.md): Dialogfelder, die verwendet werden, um einen bestimmten Knoten in einem Spy++-Ansichtsfenster zu finden.
 
- [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md) Wird verwendet, um die Eigenschaften eines in der Fensteransicht ausgewählten Fensters anzuzeigen.
+ [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md): Wird verwendet, um die Eigenschaften eines in der Fensteransicht ausgewählten Fensters anzuzeigen.
 
- [Dialogfeld „Meldungsoptionen“](../debugger/message-options-dialog-box.md) Wird verwendet, um auszuwählen, welche Meldungen in der Meldungsansicht ausgeführt werden sollen.
+ [Dialogfeld „Meldungsoptionen“](../debugger/message-options-dialog-box.md): Wird verwendet, um auszuwählen, welche Meldungen in der Meldungsansicht ausgeführt werden sollen.
 
- [Dialogfeld „Meldungseigenschaften“](../debugger/message-properties-dialog-box.md) Dient zum Anzeigen der Eigenschaften einer in der Meldungsansicht ausgewählten Meldung.
+ [Dialogfeld „Meldungseigenschaften“](../debugger/message-properties-dialog-box.md): Dient zum Anzeigen der Eigenschaften einer in der Meldungsansicht ausgewählten Meldung.
 
- [Dialogfeld „Prozesseigenschaften“](../debugger/process-properties-dialog-box.md) Dient zum Anzeigen der Eigenschaften eines in der Prozessansicht ausgewählten Prozesses.
+ [Dialogfeld „Prozesseigenschaften“](../debugger/process-properties-dialog-box.md): Dient zum Anzeigen der Eigenschaften eines in der Prozessansicht ausgewählten Prozesses.
 
- [Dialogfeld „Threadeigenschaften“](../debugger/thread-properties-dialog-box.md) Dient zum Anzeigen der Eigenschaften eines in der Threadansicht ausgewählten Threads.
+ [Dialogfeld „Threadeigenschaften“](../debugger/thread-properties-dialog-box.md): Dient zum Anzeigen der Eigenschaften eines in der Threadansicht ausgewählten Threads.
 
  [Andere Dialogfelder](../debugger/other-dialog-boxes.md) Dienen zum Anzeigen von Informationen über das Spy++-Programm.

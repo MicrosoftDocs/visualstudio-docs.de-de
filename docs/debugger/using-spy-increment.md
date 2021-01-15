@@ -1,5 +1,7 @@
 ---
 title: Verwenden von Spy++ | Microsoft-Dokumentation
+description: Spy++ („SPYXX.exe“) stellt eine grafische Ansicht der Prozesse, Threads, Fenster und Fenstermeldungen des Systems bereit. Hier finden Sie Links zu relevanten Artikeln.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f01167f00b3428bab52b4a6f2ab88d909e7b31f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929912"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150924"
 ---
 # <a name="using-spy"></a>Verwenden von Spy++
 Spy++ (SPYXX.EXE) ist ein Win32-basiertes Hilfsprogramm, das Ihnen eine grafische Ansicht der Prozesse, Threads, Fenster und Fenstermeldungen des Systems bietet. Dieser Abschnitt der Spy++-Hilfe umfasst die folgenden Hilfsartikel:

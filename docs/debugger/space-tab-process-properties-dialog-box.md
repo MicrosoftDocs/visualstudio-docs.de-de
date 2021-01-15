@@ -1,5 +1,7 @@
 ---
 title: Registerkarte „Speicherplatz“, Dialogfeld „Prozesseigenschaften“ | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie das Dialogfeld „Prozesseigenschaften“ in Spy++ beim Debuggen verwenden. Außerdem können Sie die in der Registerkarte „Speicherplatz“ verfügbaren Einstellungen überprüfen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929820"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149078"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Registerkarte "Speicherplatz", Dialogfeld "Prozesseigenschaften"
 Verwenden Sie die Registerkarte **Speicherplatz**, um den Adressraum eines Prozesses zu untersuchen. Verschieben Sie den Fokus der Ansicht auf das Fenster [Prozessansicht](../debugger/processes-view.md), um das [Dialogfeld „Prozesseigenschaften“](../debugger/process-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Prozessknoten in der Struktur aus, und wählend Sie anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.

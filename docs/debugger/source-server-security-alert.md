@@ -1,5 +1,7 @@
 ---
 title: Quellserver-Sicherheitswarnung | Microsoft-Dokumentation
+description: In diesem Artikel finden Sie Informationen zur Quellserver-Sicherheitswarnung im Visual Studio-Debugger. Achten Sie bei der Verwendung von Quellservern auf mögliche Sicherheitsbedrohungen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69511c2f83570abf37ef4bea8b71c8f59431a128
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bf62abb91411048f46bfe7240074bd86c119bcd4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729574"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149117"
 ---
 # <a name="source-server-security-alert"></a>Quellserver-Sicherheitswarnung
 Verwenden Sie bei Verwendung von Source Server nur Symboldateien, die aus bekannten und vertrauenswürdigen Quellen stammen.

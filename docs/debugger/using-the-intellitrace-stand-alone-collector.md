@@ -1,5 +1,7 @@
 ---
 title: Verwenden des eigenständigen IntelliTrace-Collectors | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie den eigenständigen IntelliTrace-Collector verwenden, um Daten ohne Installation von Visual Studio und ohne Änderung der Umgebung des Zielsystems zu erfassen.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0e0ce657c1cc0ed79d56e3daa90480ed0c1381
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536492"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150079"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Verwenden des eigenständigen IntelliTrace-Collectors (C#, Visual Basic)
 
@@ -28,7 +30,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 > [!NOTE]
 > Sie können IntelliTrace-Daten auf Remotecomputern auch für Web- und SharePoint-Anwendungen mithilfe des **Microsoft Monitoring Agent** im **Ablaufverfolgungs** modus erfassen.
 >
-> Sie können leistungsbezogene Ereignisse in den IntelliTrace-Daten erfassen, indem Sie den Agenten im **Überwachungs** modus ausführen. Der**Überwachungs** modus hat weniger Auswirkungen auf die Leistung als der **Ablaufverfolgungs** modus oder der **IntelliAblaufverfolgungs stand-alone collector**. Durch die Installation von Microsoft Monitoring Agent ändert sich nicht die Zielsystemumgebung. Siehe [Verwenden von Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Sie können leistungsbezogene Ereignisse in den IntelliTrace-Daten erfassen, indem Sie den Agenten im **Überwachungs** modus ausführen. Der **Überwachungs** modus hat weniger Auswirkungen auf die Leistung als der **Ablaufverfolgungs** modus oder der **IntelliAblaufverfolgungs stand-alone collector**. Durch die Installation von Microsoft Monitoring Agent ändert sich nicht die Zielsystemumgebung. Siehe [Verwenden von Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 > Der eigenständige IntelliTrace-Collector unterstützt keine Prozessmomentaufnahmen.
 
  **Anforderungen**
@@ -84,7 +86,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
    - **Microsoft Download Center** oder **my.visualstudio.com**:
 
-     1. Wählen Sie neben **IntelliTraceCollector.exe**die Option **Herunterladen**aus.
+     1. Wählen Sie neben **IntelliTraceCollector.exe** die Option **Herunterladen** aus.
 
      2. Speichern Sie „IntelliTraceCollector.exe“ im Collector-Verzeichnis, beispielsweise: **C:\IntelliTraceCollector**
 
@@ -155,7 +157,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
     1. Öffnen Sie ein PowerShell-Befehlsfenster als Administrator.
 
-        1. Wählen Sie **Start**, **Alle Programme**, **Zubehör**, **Windows PowerShell**aus.
+        1. Wählen Sie **Start**, **Alle Programme**, **Zubehör**, **Windows PowerShell** aus.
 
         2. Wählen Sie einen der folgenden Schritte aus:
 
@@ -163,7 +165,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
             - Unter 32-Bit-Betriebssystemen: öffnen Sie das Kontextmenü für **Windows PowerShell (x86)** . Wählen Sie **Als Administrator ausführen**.
 
-    2. Verwenden Sie im PowerShell-Befehlsfenster den Befehl **Import-Module** , um die **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**zu importieren.
+    2. Verwenden Sie im PowerShell-Befehlsfenster den Befehl **Import-Module** , um die **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll** zu importieren.
 
          Zum Beispiel:
 
@@ -201,7 +203,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
      1. Öffnen Sie die **Eigenschaften** für das ITRACE-Dateiverzeichnis.
 
-     2. Wählen Sie auf der Registerkarte **Sicherheit** die Option **Bearbeiten**, **Hinzufügen**aus.
+     2. Wählen Sie auf der Registerkarte **Sicherheit** die Option **Bearbeiten**, **Hinzufügen** aus.
 
      3. Stellen Sie sicher, dass im Feld **Diesen Objekttyp auswählen** die Option **Integrierte Sicherheitsprinzipale** angezeigt wird. Wenn sie nicht vorhanden ist, wählen Sie **Objekttypen**, um sie hinzuzufügen.
 
@@ -211,7 +213,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace-Diag
 
      6. Wählen Sie **Namen überprüfen** aus, um den Namen aufzulösen. Klicken Sie auf **OK**.
 
-     7. Stellen Sie sicher, dass der Anwendungspool über **Vollzugriff**verfügt.
+     7. Stellen Sie sicher, dass der Anwendungspool über **Vollzugriff** verfügt.
 
 ## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Daten von einer Webapp oder SharePoint-Anwendung sammeln
 

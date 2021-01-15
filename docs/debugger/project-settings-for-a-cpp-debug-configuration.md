@@ -1,6 +1,7 @@
 ---
 title: Projekteinstellungen für eine C++-Debugkonfiguration
-ms.custom: seodec18
+description: In diesem Artikel erfahren Sie, wie Sie die C- und C++-Debugkonfiguration in den Eigenschaftenseiten konfigurieren. Außerdem werden die Einstellungen und ihre Kategorien erläutert.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -112,12 +113,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bca39b97f6363d8b8fefcfd691b69baf85c32170
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450373"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975289"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Projekteinstellungen für eine C++-Debugkonfiguration
 Sie können die Projekteinstellungen für eine C- oder C++-Debugkonfiguration im Dialogfeld **Eigenschaftenseiten** entsprechend der folgenden Anweisung ändern: [ Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.
@@ -175,7 +176,7 @@ Sie können die Projekteinstellungen für eine C- oder C++-Debugkonfiguration im
 |**Zuordnungsdatei generieren** ([/MAP](/cpp/build/reference/map-generate-mapfile))|Weist den Linker an, während der Verknüpfung eine Zuordnungsdatei zu generieren. Die Standardeinstellung ist "Nein". Weitere Informationen hierzu finden Sie unter [/MAP (Zuordnungsdatei generieren)](/cpp/build/reference/map-generate-mapfile).|
 |**Zuordnungsdateiname** ([/MAP:](/cpp/build/reference/map-generate-mapfile)*Name*)|Bei Auswahl von "Zuordnungsdatei generieren" können Sie in diesem Feld die Zuordnungsdatei angeben. Weitere Informationen hierzu finden Sie unter [/MAP (Zuordnungsdatei generieren)](/cpp/build/reference/map-generate-mapfile).|
 |**Zuordnungsexporte** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Fügt exportierte Funktionen in die Zuordnungsdatei ein. Die Standardeinstellung ist "Nein". Weitere Informationen finden Sie unter [/MAPINFO (Daten in Zuordnungsdatei einfügen)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|
-|**Debugfähige Assembly** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Gibt die Einstellungen für die /ASSEMBLYDEBUG-Option des Linkers an. Dabei sind folgende Werte möglich:<br /><br /> -   **Das Attribut „Debuggable“ wurde nicht ausgegeben**.<br />-   **Problemnachverfolgung zur Laufzeit und deaktivierte Optimierungen (/ASSEMBLYDEBUG)** . Dies ist die Standardeinstellung.<br />-   **Keine Problemnachverfolgung zur Laufzeit und aktivierte Optimierungen (/ASSEMBLYDEBUG)** .<br />-    **\<Vom übergeordneten Projekt erben oder Projektstandard>**<br />Weitere Informationen finden Sie unter [/ASSEMBLYDEBUG (Add DebuggableAttribute) (/ASSEMBLYDEBUG (DebuggableAttribute hinzufügen))](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
+|**Debugfähige Assembly** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Gibt die Einstellungen für die /ASSEMBLYDEBUG-Option des Linkers an. Dabei sind folgende Werte möglich:<br /><br /> -   **Das Attribut „Debuggable“ wurde nicht ausgegeben**.<br />-   **Problemnachverfolgung zur Laufzeit und deaktivierte Optimierungen (/ASSEMBLYDEBUG)** . Dies ist die Standardeinstellung.<br />-   **Keine Problemnachverfolgung zur Laufzeit und aktivierte Optimierungen (/ASSEMBLYDEBUG)** .<br />-   **\<inherit from parent or project defaults>**.<br />Weitere Informationen finden Sie unter [/ASSEMBLYDEBUG (Add DebuggableAttribute) (/ASSEMBLYDEBUG (DebuggableAttribute hinzufügen))](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
 
  Sie können diese Einstellungen im Ordner "Konfigurationseigenschaften" (Kategorie "Debuggen") programmgesteuert über die Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings-Schnittstelle ändern. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
 

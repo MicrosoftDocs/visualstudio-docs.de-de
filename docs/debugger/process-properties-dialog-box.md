@@ -1,5 +1,7 @@
 ---
 title: Prozesseigenschaften (Dialogfeld) | Microsoft-Dokumentation
+description: 'In diesem Artikel erfahren Sie, wie Sie das Dialogfeld „Prozesseigenschaften“ verwenden, um mehr über einen Prozess zu erfahren, den Sie in der Ansicht „Prozesse“ auswählen. Das Dialogfeld umfasst vier Registerkarten: „Allgemein“, „Arbeitsspeicher“, „Auslagerungsdatei“ und „Speicherplatz“.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903755"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975107"
 ---
 # <a name="process-properties-dialog-box"></a>Dialogfeld "Prozesseigenschaften"
 Verwenden Sie dieses Dialogfeld, um mehr über einen bestimmten Prozess zu erfahren. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein Fenster [Prozessansicht](../debugger/processes-view.md). Wählen Sie einen beliebigen Prozessknoten in der Struktur aus, und wählend Sie anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.
@@ -39,8 +41,8 @@ Verwenden Sie dieses Dialogfeld, um mehr über einen bestimmten Prozess zu erfah
 
  [Suchen eines Prozesses in der Prozessansicht](../debugger/how-to-search-for-a-process-in-processes-view.md) erläutert, wie Sie in der Prozessansicht nach einem bestimmten Prozess suchen.
 
- [Prozessansicht](../debugger/processes-view.md) zeigt eine Strukturansicht der aktiven Prozesse an.
+ [Prozessansicht](../debugger/processes-view.md): Zeigt eine Strukturansicht der aktiven Prozesse an.
 
  [Spy++-Ansichten](../debugger/spy-increment-views.md) erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
- [Verwenden von Spy++](../debugger/using-spy-increment.md) bietet eine Einführung in das Tool Spy++ und dessen Verwendung.
+ [Verwenden von Spy++](../debugger/using-spy-increment.md): Bietet eine Einführung in das Tool Spy++ und erläutert, wie es verwendet werden kann.

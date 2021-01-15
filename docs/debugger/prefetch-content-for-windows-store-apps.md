@@ -1,5 +1,7 @@
 ---
 title: Debuggen von vorab abgerufenem Inhalt in UWP-Apps | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie ContentPrefetcher verwenden, um Windows zum Abrufen von Webinhalten im Voraus aufzufordern, damit Ihre UWP-App schneller reagiert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 65b889452a23bb970cbee4c65455679a3473abab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33eb7aa0559fc7a6170da658ccc9f00653968bb6
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348066"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975029"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Debuggen von UWP-Apps mithilfe von vorab abgerufenem Inhalt in Visual Studio
 

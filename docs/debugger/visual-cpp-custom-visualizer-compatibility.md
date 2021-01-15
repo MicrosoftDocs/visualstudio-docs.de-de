@@ -1,5 +1,7 @@
 ---
 title: Kompatibilität mit der benutzerdefinierten Visual C- und Visual C++-Schnellansicht
+description: Ein neues Feature von Visual Studio 2019 ist möglicherweise nicht mit älteren C/C++-Ausdrucksauswertungs-Add-Ins und benutzerdefinierten Schnellansichten kompatibel. In diesem Artikel finden Sie weitere Details.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.prod: visual-studio-dev16
 ms.topic: reference
@@ -16,12 +18,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 9fdd44be89fde2fbc26038c8b88fff405876264f
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dea92f6aad54b8c75c43a1078142595e17fa2ef6
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430618"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149793"
 ---
 # <a name="visual-cc-custom-visualizer-compatibility"></a>Kompatibilität mit der benutzerdefinierten Visual C- und Visual C++-Schnellansicht
 

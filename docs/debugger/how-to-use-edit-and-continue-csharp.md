@@ -1,5 +1,7 @@
 ---
 title: Verwenden von „Bearbeiten und Fortfahren“ (C#) | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie das Feature „Bearbeiten und fortfahren“ verwenden, um Änderungen an Ihrem Code im Unterbrechungsmodus während des Debuggens vorzunehmen und anzuwenden, ohne dass Sie die Debugsitzung in Visual Studio beenden und neu starten müssen.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851852"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150651"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Vorgehensweise: Verwenden von „Bearbeiten und Fortfahren“ [C#]
 Mit „Bearbeiten und Fortfahren“ können Sie beim Debuggen Änderungen an Ihrem Code im Unterbrechungsmodus vornehmen und diese auf den Code anwenden, ohne die Debugsitzung beenden und neu starten zu müssen.

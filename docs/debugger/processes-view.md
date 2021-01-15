@@ -1,5 +1,7 @@
 ---
 title: Prozessansicht | Microsoft-Dokumentation
+description: In der Prozessansicht wird eine Struktur aller aktiven Prozesse Ihres Systems angezeigt. In diesem Artikel erfahren Sie mehr über die Inhalte und Verwendungszwecke sowie Links zu weiteren Informationen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904227"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975133"
 ---
 # <a name="processes-view"></a>Prozessansicht
 In der Prozessansicht wird eine Struktur aller aktiven Prozesse Ihres Systems angezeigt. Die Prozess-ID und der Modulname werden angezeigt. Verwenden Sie die Prozessansicht, wenn Sie einen bestimmten Systemprozess untersuchen möchten, der in der Regel einem laufenden Programm entspricht. Prozesse werden durch Modulnamen identifiziert oder werden als „Systemprozesse“ bezeichnet.
@@ -42,7 +44,7 @@ In der Prozessansicht wird eine Struktur aller aktiven Prozesse Ihres Systems an
  [Anzeigen von Prozesseigenschaften](../debugger/how-to-display-process-properties.md) erläutert, wie Sie weitere Informationen zu einer Meldung anzeigen.
 
 ### <a name="related-sections"></a>Verwandte Abschnitte
- [Spy++-Ansichten](../debugger/spy-increment-views.md) erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
+ [Spy++-Ansichten](../debugger/spy-increment-views.md): Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
  [Verwenden von Spy++](../debugger/using-spy-increment.md) bietet eine Einführung in das Tool Spy++ und dessen Verwendung.
 

@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren der Ansicht | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie eine Ansicht im Spy++-Tool beim Debuggen in Visual Studio aktualisieren. Spy++ erstellt eine Momentaufnahme der Systemtabellen und aktualisiert eine Ansicht basierend auf diesen Informationen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d964f0a33b1944255fee2f9fdb7658b04aaedebb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 674eb33418aac8301cf19a0cbbefd15d90e24238
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852034"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148870"
 ---
 # <a name="how-to-refresh-the-view"></a>Vorgehensweise: Aktualisieren der Ansicht
 Spy++ erstellt eine „Momentaufnahme“ der Systemtabellen und aktualisiert eine Ansicht basierend auf diesen Informationen. Es ist wichtig, dass Sie die Systemansichten in regelmäßigen Abständen aktualisieren. Wenn Sie eine Spy++-Ansicht geöffnet und die Ansicht nicht aktualisiert haben, werden diese Prozesse, Threads und Fenster, die anschließend erstellt werden, nicht angezeigt. Außerdem werden möglicherweise Elemente angezeigt, die nicht mehr vorhanden sind. Der Befehl **Aktualisieren** ist für alle Ansichten mit Ausnahme der Ansicht „Meldungen“ verfügbar.

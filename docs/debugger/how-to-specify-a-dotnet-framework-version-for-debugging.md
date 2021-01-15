@@ -1,6 +1,7 @@
 ---
 title: Angeben einer .NET Framework-Version für das Debuggen | Microsoft-Dokumentation
-ms.custom: seodec18
+description: In diesem Artikel erfahren Sie, wie Sie eine ältere Version von .NET Framework für das Debuggen festlegen. Der Visual Studio-Debugger unterstützt das Debuggen sowohl älterer .NET Framework-Versionen als auch der aktuellen Version.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ae48670fceb78ff85f395852f0a31414f37e8cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349067"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149416"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Hier erfahren Sie mehr über das Angeben einer älteren .NET Framework-Version für das Debuggen (C#, Visual Basic, F#).
 

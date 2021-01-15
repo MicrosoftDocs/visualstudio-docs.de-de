@@ -1,8 +1,8 @@
 ---
-title: 'Visual Studio-Dokumentation: Neuerungen im November 2020 '
+title: 'Visual Studio-Dokumentation: Neuerungen im Dezember 2020 '
 titleSuffix: ''
-description: Neues in der Visual Studio-Dokumentation für November 2020
-ms.date: 12/04/2020
+description: Hier finden Sie die Neuerungen in der Visual Studio-Dokumentation für Dezember 2020.
+ms.date: 01/11/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,166 +15,83 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2926e5eb7d2b46309488d167402aee205f0f816c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8dfa3c6ec4655edf6313bea2e68b995ae8b3f9b0
+ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96843996"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98113566"
 ---
-# <a name="visual-studio-docs-whats-new-for-november-2020"></a>Visual Studio-Dokumentation: Neuerungen im November 2020
+# <a name="visual-studio-docs-whats-new-for-december-2021"></a>Visual Studio-Dokumentation: Neuerungen im Dezember 2020
 
-Willkommen bei den Neuerungen in der Visual Studio-Dokumentation für November 2020. Nachfolgend sind alle größeren Änderungen aufgelistet, die in diesem Zeitraum an der Dokumentation vorgenommen wurden. Informationen zu den Neuerungen in den vorherigen Monaten finden Sie im Artikel [Verlauf der Neuerungen](whats-new-visual-studio-docs-history.md).
+Willkommen bei den Neuerungen in der Visual Studio-Dokumentation für Dezember 2020. Nachfolgend sind alle größeren Änderungen aufgelistet, die in diesem Zeitraum an der Dokumentation vorgenommen wurden. Informationen zu den Neuerungen in den vorherigen Monaten finden Sie im Artikel [Verlauf der Neuerungen](whats-new-visual-studio-docs-history.md).
 
-## <a name="code-quality"></a>Codequalität
+## <a name="azure"></a>Azure
 
 **Neue Artikel**
 
-- [Aktivieren oder Installieren von .NET-Analysetools:](../code-quality/install-net-analyzers.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [Migrieren von FxCop-Analysetools zu .NET-Analysetools:](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [Migrieren von FxCop-Legacyanalysen (FxCop-Analysetools) zu .NET-Quellanalysen (.NET-Analysetools):](../code-quality/migrate-from-legacy-analysis-to-net-analyzers.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [Häufig gestellte Fragen im Zusammenhang mit FxCop- und .NET-Legacyanalysetools:](../code-quality/net-analyzers-faq.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
+- [Hinzufügen von Azure App Configuration mithilfe von verbundenen Visual Studio-Diensten](../azure/vs-azure-tools-connected-services-app-configuration.md) – Tutorial für App Configuration mithilfe der verbundenen Dienste
+
+## <a name="code-quality"></a>Codequalität
 
 **Aktualisierte Artikel**
 
-- [Häufig gestellte Fragen zur Codeanalyse:](../code-quality/analyzers-faq.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [FxCop-Regelportstatus:](../code-quality/fxcop-rule-port-status.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [Veraltete Regeln:](../code-quality/fxcop-unported-deprecated-rules.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [Nicht portierte Regeln, die möglicherweise portiert werden:](../code-quality/fxcop-unported-rules-may-get-ported.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [Nicht portierte Regeln:](../code-quality/fxcop-unported-rules.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [Installieren von Drittanbieteranalysetools:](../code-quality/install-roslyn-analyzers.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
-- [Übersicht:](../code-quality/use-roslyn-analyzers.md) Dokumentation zum Migrieren von FxCop-Analysetools zu .NET-Analysetools hinzugefügt
+- [Übersicht](../code-quality/use-roslyn-analyzers.md) – Buildprozess über die Befehlszeile mit editorconfig
+- [Aktivieren oder Installieren von .NET-Analysetools von Erstanbietern](../code-quality/install-net-analyzers.md)
+  - Die Dokumentation für die Migration von FxCop-Analysetools zu .NET-Analysetools wurde verdeutlicht.
+  - Das Inhaltsverzeichnis für .NET-Analysetools wurde neu angeordnet.
+- [Migrieren von FxCop-Analysetools zu .NET-Analysetools](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) – Die Dokumentation für die Migration von FxCop-Analysetools zu .NET-Analysetools wurde verdeutlicht.
 
 ## <a name="containers"></a>Container
 
 **Aktualisierte Artikel**
 
-- [Funktionsweise von Bridge to Kubernetes:](../containers/overview-bridge-to-kubernetes.md) Abschnitt zu Kubernetes-Berechtigungen
+- [Problembehandlung für die Visual Studio-Entwicklung mit Docker](../containers/troubleshooting-docker-errors.md) – Die Anleitung für die Problembehandlung für Docker für Visual Studio wurde aktualisiert.
 
 ## <a name="debugger"></a>Debugger
 
-**Neue Artikel**
-
-- [Anfügen an einen in einem Docker-Container ausgeführten Prozess:](../debugger/attach-to-process-running-in-docker-container.md) Dokumentation zum Anfügen an einen Prozess für Linux-Szenarios umgestaltet
-
 **Aktualisierte Artikel**
 
-- [Anfügen an laufende Prozesse mit dem Visual Studio Debugger:](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) Dokumentation zum Anfügen an einen Prozess für Linux-Szenarios umgestaltet
-- [Debuggen von .NET Core unter Linux mithilfe von SSH durch Anhängen an einen Prozess:](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md) Dokumentation zum Anfügen an einen Prozess für Linux-Szenarios umgestaltet
-
-## <a name="deployment"></a>Bereitstellung
-
-**Neue Artikel**
-
-- [Bereitstellen einer .NET-Desktopanwendung unter Windows mithilfe von ClickOnce:](../deployment/quickstart-deploy-using-clickonce-folder.md) Schnellstart von ClickOnce für .NET-Windows-Projekte hinzugefügt
-
-**Aktualisierte Artikel**
-
-- [Ein erster Einblick in die Bereitstellung in Visual Studio](../deployment/deploying-applications-services-and-components.md)
-  - Bearbeitungsdurchlauf
-  - Erkennbarkeit und Verknüpfung von Updates für .NET 5
-- [Bereitstellung in Visual Studio: In den Suchergebnissen angezeigter erforderlicher Seitentitel (einschließlich Marke, weniger als 60 Zeichen):](../deployment/index.yml) Erkennbarkeit und Verknüpfung von Updates für .NET 5
-- [Erstellen von ClickOnce-Anwendungen über die Befehlszeile:](../deployment/building-clickonce-applications-from-the-command-line.md) Schnellstart von ClickOnce für .NET-Windows-Anwendungen hinzugefügt
-- [Bereitstellen einer App in einem Ordner, IIS, Azure oder einem anderen Ziel:](../deployment/deploying-applications-services-and-components-resources.md) Schnellstart von ClickOnce für .NET-Windows-Projekte hinzugefügt
-- [Bereitstellen einer App in einem Ordner mithilfe von Visual Studio:](../deployment/quickstart-deploy-to-local-folder.md) Schnellstart von ClickOnce für .NET-Windows-Projekte hinzugefügt
-
-## <a name="designers"></a>Designer
-
-**Aktualisierte Artikel**
-
-- [Tutorial: Erste Schritte mit dem Windows Forms-Designer:](../designers/walkthrough-windows-forms-designer.md) Tippfehler korrigiert
+- [Häufig gestellte Fragen: Suchen nach der benötigten Debugfunktion in Visual Studio](../debugger/find-your-debugging-task.md) – Es wurden Informationen zum Suchen Ihrer Debugaufgabe und Übersichtsthemen hinzugefügt.
 
 ## <a name="get-started"></a>Erste Schritte
 
 **Aktualisierte Artikel**
 
-- [Erfahren Sie mehr über Projekte und Projektmappen:](../get-started/tutorial-projects-solutions.md) Alternativtext und Metadaten aktualisiert und Hinweis zu leerer Projektmappenvorlage hinzugefügt
-- [Tutorial: Öffnen eines Projekts von einem Repository aus:](../get-started/tutorial-open-project-from-repo.md) Hinweis und Link zu Artikel mit weiteren Informationen im Zusammenhang mit neuer Git-Benutzeroberfläche hinzugefügt
+- [Einführung in Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
+  - Die Abschnitte zu Projektmappen und Projekten wurden aktualisiert.
+  - „tutorial-projects-solutions.md“ wurde aktualisiert.
+  - Fehlt in den Menüoptionen
+- [Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio](../get-started/csharp/tutorial-console.md) – Tutorial für C#-Konsolen-Apps (Teil 2) gilt nur für Visual Studio 2019
 
 ## <a name="ide"></a>IDE
 
-**Neue Artikel**
-
-- [Arbeiten mit GitHub-Konten in Visual Studio:](./work-with-github-accounts.md) Seite zum Arbeiten mit GitHub und Informationen zur GitHub-Anmeldung auf anderen Seiten hinzugefügt
-- [Extrahieren einer Basisklasse:](./reference/extract-base-class.md) dotnet-Produktivitätsfeatures hinzugefügt
-- [Inlinemethode:](./reference/inline-method.md) dotnet-Produktivitätsfeatures hinzugefügt
-- [Festlegen einer Klasse als abstrakt:](./reference/make-class-abstract.md) dotnet-Produktivitätsfeatures hinzugefügt
-- [Verwenden von `new()`:](./reference/use-new.md) dotnet-Produktivitätsfeatures hinzugefügt
-- [Verwenden eines Musterabgleichs:](./reference/use-pattern-matching.md) dotnet-Produktivitätsfeatures hinzugefügt
-
 **Aktualisierte Artikel**
 
-- [Git-Benutzeroberfläche in Visual Studio](./git-with-visual-studio.md)
-  - Alternativtext und Metadaten aktualisiert
-  - Inhalt in Bezug auf neue Git-Benutzeroberfläche für die allgemeine Verfügbarkeit von Version 16.8 aktualisiert
-- [Neues in Visual Studio 2019](./whats-new-visual-studio-2019.md)
-  - Alternativtext und Metadaten aktualisiert
-  - Seite „Neues in Visual Studio 2019“ für allgemeine Verfügbarkeit von Version 16.8 aktualisiert
-- [Herstellen einer Verbindung mit Projekten in Team Explorer:](./connect-team-project.md) Team Explorer-Seite mit Hinweis und Link zu neuer Git-Benutzeroberfläche aktualisiert
-- [Arbeiten mit mehreren Benutzerkonten:](./work-with-multiple-user-accounts.md) Informationen zur GitHub-Anmeldung auf anderen Seiten hinzugefügt
-- [C++-Formatierungskonventionen für EditorConfig](./cpp-editorconfig-properties.md)
-  - Präfix für C++-EditorConfig-Einstellungen ist cpp_ und nicht _cpp_ _
-  - Falsches Zeichen aus C++-EditorConfig-Beispiel entfernt
-- [Konvertieren von `typeof` in `nameof`:](./reference/convert-typeof-to-nameof.md) dotnet-Produktivitätsfeatures hinzugefügt
-
-## <a name="install"></a>Installieren
-
-**Aktualisierte Artikel**
-
-- [Visual Studio-Buildnummern und -Veröffentlichungstermine](../install/visual-studio-build-numbers-and-release-dates.md)
-  - Daten zu Version 16.8.2 hinzugefügt
-  - Version 16.8.1 hinzugefügt
-  - Buildnummern für allgemeine Verfügbarkeit von Version 16.8 und mehr aktualisiert
-- [ Visual Studio-Images in Azure:](../install/using-visual-studio-vm.md) Veröffentlichungsdatum geändert und Revisionsversionen aktualisiert
-- [Arbeitsauslastung und Komponenten-IDs von Visual Studio:](../install/workload-and-component-ids.md) Dokumentation zu Komponenten für Version 16.8 aktualisiert
-- [Visual Studio Build Tools: Komponentenverzeichnis:](../install/workload-component-id-vs-build-tools.md) Dokumentation zu Komponenten für Version 16.8 aktualisiert
-- [Visual Studio Community: Komponentenverzeichnis:](../install/workload-component-id-vs-community.md) Dokumentation zu Komponenten für Version 16.8 aktualisiert
-- [Visual Studio Enterprise-Komponentenverzeichnis:](../install/workload-component-id-vs-enterprise.md) Dokumentation zu Komponenten für Version 16.8 aktualisiert
-- [Visual Studio Team Explorer: Komponentenverzeichnis:](../install/workload-component-id-vs-team-explorer.md) Dokumentation zu Komponenten für Version 16.8 aktualisiert
-- [Visual Studio Test Agent-Komponentenverzeichnis:](../install/workload-component-id-vs-test-agent.md) Dokumentation zu Komponenten für Version 16.8 aktualisiert
-- [Visual Studio Test Controller: Komponentenverzeichnis:](../install/workload-component-id-vs-test-controller.md) Dokumentation zu Komponenten für Version 16.8 aktualisiert
-- [Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver:](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) Fehlende Domäne hinzugefügt
-
-## <a name="msbuild"></a>MSBuild
-
-**Neue Artikel**
-
-- [Änderungswellen:](../msbuild/change-waves.md) MSBuild: Neues Thema zu Änderungswellen
-
-**Aktualisierte Artikel**
-
-- [Eigenschaftenfunktionen:](../msbuild/property-functions.md) Release 16.8
-- [Gemeinsame MSBuild-Projektelemente:](../msbuild/common-msbuild-project-items.md) Wiederherstellen von Inhalt für InternalsVisibleTo-Element
-
-## <a name="profiling"></a>Profilerstellung
-
-**Aktualisierte Artikel**
-
-- [Messen der Anwendungsleistung über die Befehlszeile:](../profiling/profile-apps-from-command-line.md) Dokumentation zur Profilerstellung über die Befehlszeile aktualisiert
+- [Projektmappen und Projekte in Visual Studio](./solutions-and-projects-in-visual-studio.md) – Die Abschnitte zu Projektmappen und Projekten wurden aktualisiert.
+- [Erstellen eines neuen Projekts in Visual Studio](./create-new-project.md)
+  - Der Alternativtext für Screenshots und Diagramme wurde optimiert.
+  - Es wurden weitere Updates an den Abschnitten zu Projektmappen und Projekten vorgenommen.
+- [Ressourcen für die Problembehandlung bei IDE-Fehlern](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) – Der veraltete Abschnitt zu Forumsressourcen wurde überarbeitet.
+- [Arbeiten mit Projektmappen und Projekten](./creating-solutions-and-projects.md) – Es wurden weitere Updates an den Abschnitten zu Projektmappen und Projekten vorgenommen.
+- [Melden eines Problems mit Visual Studio oder Visual Studio-Installer](./how-to-report-a-problem-with-visual-studio.md)
+  - Die Screenshots wurden aktualisiert.
+  - Es wurden Änderungen bezüglich der Entwicklercommunity vorgenommen.
+- [Tipps und Tricks zur Leistungssteigerung für Visual Studio](./visual-studio-performance-tips-and-tricks.md) – Der Abschnitt „Deaktivieren von Diagnosetools“ wurde aktualisiert.
 
 ## <a name="test"></a>Test
 
 **Aktualisierte Artikel**
 
-- [Ausführen von Komponententests mit dem Test-Explorer:](../test/run-unit-tests-with-test-explorer.md) Kurzer Abschnitt zur Wiedergabeliste im XML-Format wurde hinzugefügt
-- [Isolieren von getestetem Code mithilfe von Microsoft Fakes:](../test/isolating-code-under-test-with-microsoft-fakes.md) Dokumentation mit .NET Core-Unterstützung aktualisiert
-- [Verwenden von Shims zum Isolieren der Anwendung für Unittests:](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) Dokumentation mit .NET Core-Unterstützung aktualisiert
-
-## <a name="xaml-tools"></a>XAML-Tools
-
-**Aktualisierte Artikel**
-
-- [Verwenden von Entwurfszeitdaten mit dem XAML-Designer in Visual Studio](../xaml-tools/xaml-designtime-data.md)
-  - Abschnitt „Anforderungen“ für allgemeine Verfügbarkeit von Version 16.8 aktualisiert
-  - Abschnitt „Anforderungen“ wurde geändert
-  - Kommentar und Link zu allgemeiner Verfügbarkeit der Vorschauversion 16.8 aktualisiert
+- [Erste Schritte mit Komponententests](../test/getting-started-with-unit-testing.md) – Es wurden Ermittlungsarbeiten und andere Verbesserungen bezüglich Testtools vorgenommen.
+- [Einführung in Testtools in Visual Studio](../test/improve-code-quality.md) – Es wurden Ermittlungsarbeiten und andere Verbesserungen bezüglich Testtools vorgenommen.
+- [Testtools in Visual Studio: In den Suchergebnissen angezeigter erforderlicher Seitentitel (einschließlich Marke, weniger als 60 Zeichen):](../test/index.yml) – Es wurden Ermittlungsarbeiten und andere Verbesserungen bezüglich Testtools vorgenommen.
+- [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md) – Es wurde eine dynamische XML-Datei für eine Wiedergabeliste für verschiedene Frameworks hinzugefügt.
 
 ## <a name="community-contributors"></a>Mitwirkende in der Community
 
 Die folgenden Personen haben während dieses Zeitraums zu den Visual Studio-Dokumenten beigetragen. Vielen Dank! In [Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht](/contribute/) erfahren Sie, wie Sie an den Visual Studio-Dokumenten mitwirken können.
 
-- [alexvy86](https://github.com/alexvy86) - Alex Villarreal (1)
-- [andyrosa2](https://github.com/andyrosa2) (1)
-- [b099l3](https://github.com/b099l3) - Iain Smith (1)
-- [hyoshioka0128](https://github.com/hyoshioka0128) – Hiroshi Yoshioka (1)
-- [MrCull](https://github.com/MrCull) - Mark (1)
+- [surlydev](https://github.com/surlydev) – SurlyDev (2)
+- [nschonni](https://github.com/nschonni) – Nick Schonning (1)
+- [syohex](https://github.com/syohex) – Shohei YOSHIDA (1)

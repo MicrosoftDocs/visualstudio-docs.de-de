@@ -1,6 +1,8 @@
 ---
 title: Neues im Debugger in Visual Studio 2017 | Microsoft-Dokumentation
 titleSuffix: ''
+description: 'In diesem Artikel werden die neuen Features der Debuggerversion 15.5 beschrieben. Dazu gehören: Momentaufnahmen des ausgewählten Codes von Apps in der Produktionsumgebung und das IntelliTrace-Feature „Schritt zurück“.'
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.openlocfilehash: 986ebf20cd49569bfcaf471b9bef994dfe774437
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944217"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149403"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Neues im Debugger in Visual Studio 2017
 

@@ -1,5 +1,7 @@
 ---
 title: Threadeigenschaften (Dialogfeld) | Microsoft-Dokumentation
+description: In diesem Artikel wird das Dialogfeld „Threadeigenschaften“ des Spy++-Debugtools erläutert. Verwenden Sie dieses Dialogfeld, um mehr über einen bestimmten Thread zu erfahren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929717"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149130"
 ---
 # <a name="thread-properties-dialog-box"></a>Dialogfeld "Threadeigenschaften"
 Verwenden Sie dieses Dialogfeld, um mehr über einen bestimmten Thread zu erfahren. Verschieben zum Öffnen dieses Dialogfelds den Fokus auf ein [Threadansichtsfenster](../debugger/threads-view.md), oder öffnen Sie die [Meldungsansicht](../debugger/messages-view.md), und erweitern Sie eine Meldung. Wählen Sie in der Struktur einen beliebigen Threadknoten und anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.

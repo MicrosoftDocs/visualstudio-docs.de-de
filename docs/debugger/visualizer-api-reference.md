@@ -1,5 +1,7 @@
 ---
 title: Referenz zur Schnellansicht-API | Microsoft-Dokumentation
+description: Eine Schnellansicht zeigt eine bestimmte Art von Datenelement an und ermöglicht möglicherweise auch die Bearbeitung. Zum Erstellen einer Schnellansicht können Sie die Schnellansicht-API verwenden, die in diesem Artikel dokumentiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 37346c77b1488bb89ac071a0290f7b5219731591
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187215"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149767"
 ---
 # <a name="visualizer-api-reference"></a>Referenz zur Schnellansicht-API
 

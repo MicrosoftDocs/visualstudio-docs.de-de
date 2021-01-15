@@ -1,5 +1,7 @@
 ---
 title: Spy++-Referenz | Microsoft-Dokumentation
+description: In diesem Artikel finden Sie eine Liste von Links zu Referenzartikeln, in denen die einzelnen Menübefehle und Dialogfelder des Spy++-Debugtools erläutert werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902555"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98147973"
 ---
 # <a name="spy-reference"></a>Spy++-Referenz
 In den folgenden Abschnitten finden Sie Beschreibungen für jedes Spy++-Menü und -Dialogfeld:

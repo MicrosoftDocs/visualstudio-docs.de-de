@@ -1,6 +1,6 @@
 ---
 title: Extrahieren einer lokalen Funktion
-description: Wandeln Sie ein Codefragment in eine eigene Methode um, indem Sie den Code auswählen und STRG+R, STRG+M drücken.
+description: In diesem Artikel erfahren Sie, wie Sie ein Codefragment in eine eigenständige Funktion umwandeln, indem Sie den Code auswählen und dann STRG+R und STRG+M drücken.
 ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 031fbe22ec61837d489df7a6af923ef0cd2454c7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e007246b85671a0f4606bbdb3d1e9c4e0dc83541
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77519326"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129457"
 ---
 # <a name="extract-local-function-refactoring"></a>Refactoring des Extrahierens einer lokalen Funktion
 
@@ -37,7 +37,7 @@ Dieses Refactoring gilt für:
 
 3. Klicken Sie auf **Lokale Funktion extrahieren**.
 
-    ![Extrahieren einer lokalen Funktion](media/extract-local-function.png)
+    ![Screenshot: Visual Studio Code-Fenster mit einer hervorgehobenen Zeile, dem Menü „Schnellaktionen und Refactorings“ geöffnet und der Option „Lokale Funktion extrahieren“ ausgewählt](media/extract-local-function.png)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,7 @@
 ---
 title: Auslösen von Anhalte-, Fortsetzungs- oder Hintergrundereignissen beim Debuggen von UWP-Apps
+description: In diesem Artikel erfahren Sie, wie Sie Anhalte-, Fortsetzungs- und Hintergrundereignisse beim Debuggen von UWP-Apps (Universelle Windows-Plattform) in Visual Studio auslösen.
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 5cbdfb443d07b01f4de6f43fb98103339566cde2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 87b2718b6cd9db5b66635ca165253bd1e93f17d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808193"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150677"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Auslösen von Anhalte-, Fortsetzungs- und Hintergrundereignissen beim Debuggen von UWP-Apps in Visual Studio
 
 Wenn Sie nicht debuggen, steuert die Windows-PLM ( **Process Lifetime Management** , Prozessverwaltung für Lebensdauer) den Ausführungszustand der App, d. h. das Starten, Anhalten, Fortsetzen und Beenden der App als Reaktion auf Benutzeraktionen und den Gerätezustand. Wenn Sie debuggen, deaktiviert Windows diese Aktivierungsereignisse. In diesem Thema wird beschrieben, wie solche Ereignisse im Debugger ausgelöst werden.
 
-Außerdem wird in diesem Thema das Debuggen von **Hintergrundaufgaben**beschrieben. Hintergrundaufgaben ermöglichen das Ausführen bestimmte Vorgänge in einem Hintergrundprozess, selbst wenn Ihre App nicht ausgeführt wird. Sie können den Debugger verwenden, um die App in den Debugmodus zu versetzen und die Hintergrundaufgabe anschließend zu debuggen, ohne die Benutzeroberfläche zu starten.
+Außerdem wird in diesem Thema das Debuggen von **Hintergrundaufgaben** beschrieben. Hintergrundaufgaben ermöglichen das Ausführen bestimmte Vorgänge in einem Hintergrundprozess, selbst wenn Ihre App nicht ausgeführt wird. Sie können den Debugger verwenden, um die App in den Debugmodus zu versetzen und die Hintergrundaufgabe anschließend zu debuggen, ohne die Benutzeroberfläche zu starten.
 
 Weitere Informationen zur Verwaltung der Prozesslebensdauer und zu Hintergrundaufgaben finden Sie unter [Starten, Fortsetzen und Multitasking](/windows/uwp/launch-resume/index).
 
@@ -72,11 +74,11 @@ Weitere Informationen zur Verwaltung der Prozesslebensdauer und zu Hintergrundau
 
 2. Öffnen Sie die Debugeigenschaftenseite für das Startprojekt. Wählen Sie im Projektmappen-Explorer das Projekt aus. Klicken Sie im Menü **Debuggen** auf **Eigenschaften**.
 
-     Für C++-Projekte müssen Sie die **Konfigurationseigenschaften** erweitern und anschließend **Debugging**auswählen.
+     Für C++-Projekte müssen Sie die **Konfigurationseigenschaften** erweitern und anschließend **Debugging** auswählen.
 
 3. Führen Sie einen der folgenden Schritte aus:
 
-    - Wählen Sie für Visual C#- und Visual Basic-Projekte **Eigenen Code zunächst nicht starten sondern debuggen**aus.
+    - Wählen Sie für Visual C#- und Visual Basic-Projekte **Eigenen Code zunächst nicht starten sondern debuggen** aus.
 
          ![Eigenschaft zum Starten der Anwendung beim Debuggen in C#/VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
@@ -104,7 +106,7 @@ Weitere Informationen zur Verwaltung der Prozesslebensdauer und zu Hintergrundau
 
 2. Wählen Sie im Bereich **Aktionen** die Option **Ansicht** aus, und stellen Sie sicher, dass **Show Analytic and Debug Logs** (Analytische Protokolle und Debugprotokolle einblenden) aktiviert ist.
 
-3. Wählen Sie auf der Symbolleiste **Ereignisanzeige (Lokal)** die Knoten **Anwendungs- und Dienstprotokolle** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure**beschrieben.
+3. Wählen Sie auf der Symbolleiste **Ereignisanzeige (Lokal)** die Knoten **Anwendungs- und Dienstprotokolle** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure** beschrieben.
 
 4. Wählen Sie das **Diagnose** -Protokoll aus.
 

@@ -1,5 +1,7 @@
 ---
 title: Registerkarte „Prozess“, Dialogfeld „Fenstereigenschaften“ | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie die Registerkarte „Prozess“ des Dialogfelds „Fenstereigenschaften“ verwenden, um die ID des Threads, der das ausgewählte Fenster erstellt hat, und die ID des Prozesses anzuzeigen, zu dem der Thread gehört.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4056308f033ef61aa41456d287e7088c8bc6348b
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903742"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975068"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Registerkarte "Prozesse", Dialogfeld "Fenstereigenschaften"
 Verwenden Sie die Registerkarte **Prozess**, um den Prozess des ausgewählten Fensters zu identifizieren. Verschieben Sie den Fokus in das Fenster [Fensteransicht](../debugger/windows-view.md), um das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Fensterknoten in der Struktur aus, und klicken Sie anschließend im Menü **Ansicht** auf **Eigenschaften**.

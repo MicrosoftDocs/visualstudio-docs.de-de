@@ -1,5 +1,7 @@
 ---
 title: 'Ansicht der Aufrufer/Aufgerufenen: Konfliktdaten | Microsoft-Dokumentation'
+description: In diesem Artikel erfahren Sie, wie die Ansicht für Aufrufer/Aufgerufene Konfliktinformationen für eine ausgewählte Funktion und dessen übergeordneten und untergeordneten Funktionen im Leistungs-Explorer anzeigt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779739"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150911"
 ---
 # <a name="callercallee-view----contention-data"></a>Ansicht der Aufrufer/Aufgerufenen: Konfliktdaten
 In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine ausgewählte Funktion und deren übergeordnete und untergeordnete Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.
@@ -44,12 +46,12 @@ In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine 
 |**Modulname**|Der Name des Moduls, das die Funktion enthält.|
 |**Modulpfad**|Der Pfad des Moduls, das die Funktion enthält.|
 |**Prozess-ID**|Die Prozess-ID (PID) des Prozesses, in dem die Konflikte aufgetreten sind.|
-|**Prozessname**|Der Prozessname.|
-|**Name der Stammfunktion**|Der Name der aktuellen Funktion. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|
+|**Prozessname**|Der Name des Prozesses.|
+|**Name der Stammfunktion**|Name der aktuellen Funktion. Nur in [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilenberichten.|
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|
 
 ## <a name="see-also"></a>Siehe auch
-- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Aufrufer-/Aufgerufener-Ansicht](../profiling/caller-callee-view.md)
 - [Aufrufer-/Aufgerufener-Ansicht: Samplingdaten](../profiling/caller-callee-view-sampling-data.md)
 - [Aufrufer-/Aufgerufener-Ansicht – .NET-Speicherinstrumentierungsdaten](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
