@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting von Haltepunkten im Debugger | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Wenn ein Breakpoint deaktiviert ist oder nicht festgelegt werden konnte, wird er als leerer Kreis angezeigt. Hier finden Sie Informationen zu Problemen, die beim Festlegen von Breakpoints auftreten können.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: a07f92eccd7884ea3cc3871d04285a82cb5cb62e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535927"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148051"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Troubleshooting von Haltepunkten im Visual Studio-Debugger
 

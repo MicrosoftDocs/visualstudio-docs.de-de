@@ -1,5 +1,7 @@
 ---
 title: Installieren einer Schnellansicht | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie eine Schnellansicht installieren, damit Sie diese zum Debuggen in Visual Studio verwenden können.
+ms.custom: SEO-VS-2020
 ms.date: 06/10/2020
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 37b2da9418361144c740bed633eb755f7057936c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211364"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148961"
 ---
 # <a name="how-to-install-a-visualizer"></a>Vorgehensweise: Installieren einer Schnellansicht
 Nachdem Sie eine Schnellansicht erstellt haben, müssen Sie die Schnellansicht installieren, sodass sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zur Verfügung steht. Das Installieren einer Schnellansicht ist einfach.

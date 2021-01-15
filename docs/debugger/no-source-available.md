@@ -1,5 +1,7 @@
 ---
 title: Keine Quelle verfügbar | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie vorgehen können, wenn Ihr Projekt keinen Quellcode für den Code enthält, den Sie anzeigen möchten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f08ed499e61e54ffbc6508bc8353ea955d9a20c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8cf7bf067602586d90271eab1f9289a3b6b884ce
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730870"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975185"
 ---
 # <a name="no-source-available"></a>Keine Quelle verfügbar
 Das Projekt enthält keinen Quellcode für den Code, den Sie anzeigen möchten. Grund hierfür ist meist, dass Sie durch Doppelklicken ein Modul ausgewählt haben, für das im **Aufruflistenfenster** oder im **Threadfenster** kein Quellcode vorhanden ist. Sie können das Debuggen fortsetzen, jedoch das Quellcodefenster nicht zum Festlegen von Haltepunkten und zum Durchführen anderer Aktionen an dieser Position verwenden. Wenn Sie einen Haltepunkt setzen müssen, verwenden Sie stattdessen das **Disassemblierungsfenster**.

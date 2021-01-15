@@ -1,5 +1,7 @@
 ---
 title: Unterstützte Codeänderungen (C++) | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, welche Codeänderungen unterstützt werden, wenn Sie das Feature „Bearbeiten und fortfahren“ beim Debuggen eines C++-Projekts in Visual Studio verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629585"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150495"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
 Mit „Bearbeiten und Fortfahren“ für C++-Projekte können die meisten Arten von Codeänderungen behandelt werden. Einige Änderungen können während der Programmausführung jedoch nicht übernommen werden. Um diese Änderungen zu übernehmen, müssen Sie die Ausführung anhalten und eine neue Version des Codes erstellen.
@@ -116,7 +118,7 @@ Mit „Bearbeiten und Fortfahren“ für C++-Projekte können die meisten Arten 
 ### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Optionen des Linkers, durch die "Bearbeiten und Fortfahren" deaktiviert wird
  Die folgenden Optionen des Linkers deaktivieren Bearbeiten und Fortfahren:
 
-- Durch die Einstellung **/OPT:REF**, **/OPT:ICF**oder **/INCREMENTAL:NO** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
+- Durch die Einstellung **/OPT:REF**, **/OPT:ICF** oder **/INCREMENTAL:NO** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
 - Durch Festlegen von **/ORDER**, **/RELEASE** oder **/FORCE** wird „Bearbeiten und Fortfahren“ deaktiviert und folgende Warnung angezeigt:  

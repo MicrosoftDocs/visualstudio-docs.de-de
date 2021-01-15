@@ -1,6 +1,7 @@
 ---
 title: Debuggen eines Windows Form-Projekts | Microsoft-Dokumentation
-ms.custom: seodec18
+description: In diesem Artikel finden Sie eine exemplarische Vorgehensweise zum Erstellen und Debuggen einer Windows Forms-Anwendung. Dabei handelt es sich um eine gängige verwaltete Anwendung. Hierzu können Sie C#, Visual Basic, C++ oder F# verwenden.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599473"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148091"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Exemplarische Vorgehensweise: Debuggen eines Windows Forms-Projekts
 Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendungen. Ein solches Formular erstellt eine Windows-Standardanwendung. Sie können diese exemplarische Vorgehensweise mit Visual Basic, C# oder C++ ausführen.

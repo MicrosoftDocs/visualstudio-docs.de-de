@@ -1,5 +1,7 @@
 ---
 title: Unterstützte Codeänderungen (C# und Visual Basic) | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, welche Codeänderungen unterstützt werden, wenn Sie das Feature „Bearbeiten und fortfahren“ beim Debuggen eines C#- oder Visual Basic-Projekts in Visual Studio verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509418"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149208"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Unterstützte Codeänderungen (C# und Visual Basic)
 Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten. Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden. Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.

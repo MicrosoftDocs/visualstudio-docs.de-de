@@ -1,5 +1,7 @@
 ---
 title: Protokollieren von Informationen mit Ablaufverfolgungspunkten | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie Ablaufverfolgungspunkte zum Protokollieren von Informationen in der Ausgabe festlegen, ohne Änderungen an Ihrem Code vorzunehmen oder diesen anzuhalten. Hierzu müssen Sie lediglich eine Ausgabezeichenfolge unter dem Kontrollkästchen „Aktion“ in den Breakpointeinstellungen angeben.
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89561337"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150092"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Protokollieren von Informationen im Ausgabefenster mithilfe von Ablaufverfolgungspunkten in Visual Studio
 
@@ -53,7 +55,7 @@ Sie können Ablaufverfolgungspunkte festlegen, indem Sie eine Ausgabezeichenfolg
 
    ![Aktiviertes Kontrollkästchen „Bedingungen“](../debugger/media/checkedconditionsbox.png "Aktiviertes Kontrollkästchen „Bedingungen“")
 
-   Es gibt drei mögliche Bedingungen: **Bedingter Ausdruck** , **Filter** und **Trefferanzahl**.
+   Es gibt drei mögliche Bedingungen: **Bedingter Ausdruck**, **Filter** und **Trefferanzahl**.
 
 ## <a name="actions-menu"></a>Menü „Aktionen“
 
@@ -63,7 +65,7 @@ Wenn Sie z. B. den Wert der Variablen `counter` in der Ausgabekonsole anzeigen 
 
 ![Ausgabemeldung des Zählers](../debugger/media/counteroutputmessage.png "Ausgabemeldung des Zählers")
 
-Wenn Sie auf **Schließen** klicken und anschließend den Debugger für das Programm starten ( **F5** ), wird im Ausgabefenster die folgende Ausgabe angezeigt:
+Wenn Sie auf **Schließen** klicken und anschließend den Debugger für das Programm starten (**F5**), wird im Ausgabefenster die folgende Ausgabe angezeigt:
 
 ![Aktionsmeldung im Ausgabefenster](../debugger/media/actionsmessageinoutputwindow.png "Aktionsmeldung im Ausgabefenster")
 

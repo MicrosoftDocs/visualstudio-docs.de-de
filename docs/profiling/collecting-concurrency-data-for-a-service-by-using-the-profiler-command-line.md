@@ -1,5 +1,6 @@
 ---
 title: 'Profilerbefehlszeile: Abrufen von Parallelitätsdaten für einen Dienst'
+description: Dieser Artikel befasst sich mit der Erfassung von Ressourcenkonfliktdaten und Threadaktivitätsdaten mithilfe der Parallelitätsmethode der Profilerstellungstools von Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e2a12afd4374eef4607edef3854e96ac0fdcdf7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3b4d65490c0ae75c7ab17fd7764d499cb39824f7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811161"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148311"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Sammeln von Parallelitätsdaten für einen Dienst über die Profiler-Befehlszeile
 Mit der Parallelitätsmethode der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools können Sie Ressourcenkonfliktdaten und Threadaktivitätsdaten sammeln, die Auskunft über CPU-Auslastung, Threadkonflikte, Threadmigration, Synchronisierungsverzögerungen, überlappende E/A-Bereiche und andere Systemereignisse geben.

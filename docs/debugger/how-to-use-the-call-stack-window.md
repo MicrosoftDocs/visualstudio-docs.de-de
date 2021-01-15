@@ -1,6 +1,7 @@
 ---
 title: Anzeigen der Aufrufliste im Debugger | Microsoft-Dokumentation
-ms.custom: seodec18
+description: In diesem Artikel erfahren Sie, wie Sie das Fender „Aufrufliste“ verwenden, um die Funktions- oder Prozeduraufrufe anzuzeigen, die sich derzeit auf dem Stapel in Visual Studio befinden.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/29/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 206c79a47ec59e02206332d80d1afe935fb72bdc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348742"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150625"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>In diesem Artikel erhalten Sie Informationen zum Anzeigen der Aufrufliste und Verwenden des Fensters „Aufrufliste“ im Debugger.
 

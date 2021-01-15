@@ -1,5 +1,7 @@
 ---
 title: Festlegen von Debug- und Releasekonfigurationen | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie Debug- und Releasekonfigurationen in Visual Studio festlegen. Die Debugversion wird zum Debuggen und die Releaseversion für das endgültige Release verwendet.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599907"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149546"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 

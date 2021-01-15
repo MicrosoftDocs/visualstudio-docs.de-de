@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829868"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975146"
 ---
 # <a name="container-tools-in-visual-studio"></a>Containertools in Visual Studio
 
@@ -76,7 +76,7 @@ Sie können die Docker-Unterstützung während der Projekterstellung aktivieren,
 > [!NOTE]
 > Für .NET Framework-Projekte (nicht .NET Core) sind nur Windows-Container verfügbar.
 
-Sie können die Docker-Unterstützung einem vorhandenen Projekt hinzufügen, indem Sie im **Projektmappen-Explorer** die Option **Hinzufügen** > **Docker-Unterstützung** auswählen. Die Befehle **Hinzufügen > Docker-Unterstützung** und **Hinzufügen > Unterstützung für Containerorchestrator** befinden sich im ** Projektmappen-Explorer** im Kontextmenü des Projektknotens für ein ASP.NET Core-Projekt wie im folgenden Screenshot gezeigt:
+Sie können die Docker-Unterstützung einem vorhandenen Projekt hinzufügen, indem Sie im **Projektmappen-Explorer** die Option **Hinzufügen** > **Docker-Unterstützung** auswählen. Die Befehle **Hinzufügen > Docker-Unterstützung** und **Hinzufügen > Unterstützung für Containerorchestrator** befinden sich im **Projektmappen-Explorer** im Kontextmenü des Projektknotens für ein ASP.NET Core-Projekt wie im folgenden Screenshot gezeigt:
 
 ![Menüoption „Hinzufügen > Docker-Unterstützung“ in Visual Studio](./media/overview/add-docker-support-menu.png)
 
@@ -119,9 +119,9 @@ Wiederholen Sie den Vorgang für die anderen Projekte, die Sie mithilfe von Dock
 Zum Hinzufügen der Kubernetes-Unterstützung installieren Sie die [Visual Studio-Tools für Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Mit der Kubernetes-Unterstützung können Sie eine Verbindung zwischen Ihrem lokalen Projekt und einem Kubernetes-Cluster unter [Azure Kubernetes Service (AKS)](/azure/aks) aktivieren und dadurch Ihre Dienste unter AKS mithilfe von Visual Studio ändern und debuggen.  Dieser Dienst wird von [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio) bereitgestellt. Azure Dev Spaces ermöglicht Ihnen auch das Einrichten separater Verzweigungen Ihrer Kubernetes-Dienste, sogenannter *Dev Spaces*, für Entwicklungszwecke, sodass Sie Produktionsdienste effizient von Arbeitsversionen in der Entwicklung isolieren und unterschiedliche Änderungen sauber voneinander getrennt halten können.
+Mit der Kubernetes-Unterstützung können Sie eine Verbindung zwischen Ihrem lokalen Projekt und einem Kubernetes-Cluster unter [Azure Kubernetes Service (AKS)](/azure/aks) aktivieren und dadurch Ihre Dienste mithilfe von Visual Studio ändern und debuggen.  Dies wird von [Bridge to Kubernetes](overview-bridge-to-kubernetes.md) bereitgestellt. Bridge to Kubernetes ermöglicht Ihnen auch das Einrichten separater Verzweigungen Ihrer Kubernetes-Dienste für Entwicklungszwecke, sodass Sie Produktionsdienste effizient von Arbeitsversionen in der Entwicklung isolieren und unterschiedliche Änderungen sauber voneinander getrennt halten können.
 
-Wenn Sie Ihren Projekten Kubernetes-Unterstützung hinzufügen möchten, wählen Sie beim Hinzufügen der Unterstützung für die Containerorchestrierung die Option **Kubernetes/Helm** aus. Ihrem Projekt werden mehrere Dateien hinzugefügt, einschließlich *azds.yaml*, die Azure Dev Spaces konfiguriert, und Helm-Diagramme, die die Struktur Ihrer Kubernetes-Dienste beschreiben.
+Wenn Sie Ihren Projekten Kubernetes-Unterstützung hinzufügen möchten, wählen Sie beim Hinzufügen der Unterstützung für die Containerorchestrierung die Option **Kubernetes/Helm** aus. Mehrere Dateien werden zu Ihrem Projekt hinzugefügt, einschließlich Helm-Charts, die die Struktur Ihrer Kubernetes-Dienste beschreiben. Informationen zu den ersten Schritten mit Bridge to Kubernetes finden Sie unter [Verwenden von Bridge to Kubernetes](bridge-to-kubernetes.md).
 
 ## <a name="service-fabric-support"></a>Service Fabric-Unterstützung
 

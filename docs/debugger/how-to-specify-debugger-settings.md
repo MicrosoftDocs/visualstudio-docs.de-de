@@ -1,5 +1,7 @@
 ---
 title: Angeben von Debuggeneinstellungen | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie verschiedene Einstellungen für das Verhalten des Visual Studio-Debuggers festlegen, z. B. für die Anzeige von Variablen, die vorliegenden Warnungen und das Festlegen von Breakpoints.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851943"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150768"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Vorgehensweise: Angeben von Debuggereinstellungen
 Das Debugverhalten kann in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mithilfe verschiedener Einstellungen angepasst werden. Sie können z. B. festlegen, wie Variablen angezeigt werden sollen, ob bestimmte Warnungen ausgegeben werden, wie Haltepunkte festgelegt werden und welchen Einfluss Unterbrechungen auf gegenwärtig ausgeführte Programme haben. Die Debuggereinstellungen werden im Dialogfeld **Optionen** festgelegt.

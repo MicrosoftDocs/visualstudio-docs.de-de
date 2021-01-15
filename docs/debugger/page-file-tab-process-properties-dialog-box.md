@@ -1,5 +1,7 @@
 ---
 title: Registerkarte „Auslagerungsdatei“ und Dialogfeld „Prozesseigenschaften“ | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie die Registerkarte „Auslagerungsdatei“ der Prozesseigenschaften verwenden, um die Auslagerungsdatei eines Prozesses zu untersuchen. Außerdem werden die verfügbaren Einstellungen beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904106"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975055"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Registerkarte "Auslagerungsdatei", Dialogfeld "Prozesseigenschaften"
 Verwenden Sie die Registerkarte **Auslagerungsdatei**, um die Auslagerungsdatei eines Prozesses zu untersuchen. Verschieben Sie den Fokus der Ansicht auf das Fenster [Prozessansicht](../debugger/processes-view.md), um das [Dialogfeld „Prozesseigenschaften“](../debugger/process-properties-dialog-box.md) anzuzeigen. Klicken Sie zunächst auf einen beliebigen Prozessknoten in der Struktur und anschließend im Menü **Ansicht** auf **Eigenschaften**.

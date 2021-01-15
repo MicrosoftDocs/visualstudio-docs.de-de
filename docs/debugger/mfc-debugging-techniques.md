@@ -1,5 +1,7 @@
 ---
 title: MFC-Debugverfahren | Microsoft-Dokumentation
+description: 'In diesem Artikel werden Verfahren zum Debuggen von MFC-Programmen vorgestellt. Dazu gehören: programmierte Breakpoints, die Ablaufverfolgung, die Erkennung von Arbeitsspeicherverlusten, Objektspeicherabbilder und die Reduzierung der Programmgröße.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600245"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975120"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von MFC‑Programmen hilfreich sein:
@@ -117,7 +119,7 @@ MFC stellt Klassen und Funktionen bereit, mit deren Hilfe Speicherbereiche ermit
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Nachverfolgen der Speicherbelegung
 In MFC können Sie anstelle des Operators [new](/previous-versions/tz7sxz99(v=vs.140)) auch das **DEBUG_NEW** -Makro verwenden, um Speicherverluste aufzudecken. In der Debugversion des Programms werden durch `DEBUG_NEW` die Dateinamen und Zeilennummern jedes von ihm reservierten Objekts nachverfolgt. Wenn Sie eine Releaseversion des Programms kompilieren, wird `DEBUG_NEW` in eine einfache **new** -Operation aufgelöst, ohne dass Dateinamen und Zeilennummern aufgelöst werden. Folglich wird die Ausführungsgeschwindigkeit der Releaseversion des Programms nicht beeinträchtigt.
 
-Wenn Sie nicht das gesamte Programm umschreiben möchten, um `DEBUG_NEW` anstelle von **new**zu verwenden, können Sie dieses Makro in den Quellcodedateien definieren:
+Wenn Sie nicht das gesamte Programm umschreiben möchten, um `DEBUG_NEW` anstelle von **new** zu verwenden, können Sie dieses Makro in den Quellcodedateien definieren:
 
 ```cpp
 #define new DEBUG_NEW
@@ -426,7 +428,7 @@ Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die
 
 1. Wählen Sie im Projektmappen-Explorer das Projekt aus.
 
-2. Wählen Sie im Menü **Ansicht** die Option **Eigenschaftenseiten**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **Eigenschaftenseiten** aus.
 
 3. Zunächst erstellen Sie eine neue Projektkonfiguration.
 
@@ -448,9 +450,9 @@ Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die
 
    2. Erweitern Sie im Raster für die Projekteinstellungen ggf. **Projektstandards** .
 
-   3. Suchen Sie unter **Projektstandards**die Option **Verwendung von MFC**. Die aktuelle Einstellung wird in der rechten Spalte des Rasters angezeigt. Klicken Sie auf die aktuelle Einstellung, und ändern Sie diese in **MFC in einer statischen Bibliothek verwenden**.
+   3. Suchen Sie unter **Projektstandards** die Option **Verwendung von MFC**. Die aktuelle Einstellung wird in der rechten Spalte des Rasters angezeigt. Klicken Sie auf die aktuelle Einstellung, und ändern Sie diese in **MFC in einer statischen Bibliothek verwenden**.
 
-   4. Öffnen Sie im linken Bereich des Dialogfelds **Eigenschaftenseiten** den Ordner **C/C++** , und wählen Sie **Präprozessor**aus. Suchen Sie im Eigenschaftsraster die Option **Präprozessordefinitionen** , und ersetzen Sie "NDEBUG" durch "_DEBUG".
+   4. Öffnen Sie im linken Bereich des Dialogfelds **Eigenschaftenseiten** den Ordner **C/C++** , und wählen Sie **Präprozessor** aus. Suchen Sie im Eigenschaftsraster die Option **Präprozessordefinitionen** , und ersetzen Sie "NDEBUG" durch "_DEBUG".
 
    5. Öffnen Sie im linken Bereich des Dialogfelds **Eigenschaftenseiten** den Ordner **Linker** , und wählen Sie die Kategorie **Eingabe** aus. Suchen Sie im Eigenschaftsraster die Option **Zusätzliche Abhängigkeiten**. Geben Sie in der Einstellung **Zusätzliche Abhängigkeiten** "NAFXCWD.LIB" und "LIBCMT" ein.
 
@@ -464,7 +466,7 @@ Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die
 
    2. Markieren Sie die Datei, für die Debuginformationen festgelegt werden sollen.
 
-   3. Wählen Sie im Menü **Ansicht** die Option **Eigenschaftenseiten**aus.
+   3. Wählen Sie im Menü **Ansicht** die Option **Eigenschaftenseiten** aus.
 
    4. Öffnen Sie im Dialogfeld **Eigenschaftenseiten** unter dem Ordner **Konfigurationseinstellungen** den Ordner **C/C++** , und wählen Sie die Kategorie **Allgemein** aus.
 

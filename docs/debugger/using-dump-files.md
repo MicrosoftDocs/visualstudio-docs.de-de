@@ -1,6 +1,7 @@
 ---
 title: Verwenden von Speicherabbilddateien im Debugger | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Eine Speicherabbilddatei ist eine Momentaufnahme einer ausgeführten App und geladener Module. Achten Sie beim Erstellen von Speicherabbilddateien auf Situationen, in denen Sie über keinen Debugzugriff auf die App verfügen.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970624"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150872"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Speicherabbilddateien im Visual Studio-Debugger
 

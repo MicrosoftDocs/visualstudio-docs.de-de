@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833363"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150508"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -377,6 +377,16 @@ Sie können Tests im Test-Explorer ausführen, indem Sie mit der rechten Maustas
 > [!NOTE]
 > In einer abstrakten Klasse können Sie keinen Test ausführen, da Tests nur in abstrakten Klassen definiert werden und nicht instanziiert. Zum Ausführen von Tests in abstrakten Klassen müssen Sie eine Klasse erstellen, die von der abstrakten Klasse abgeleitet ist.
 
+::: moniker range=">=vs-2019"
+## <a name="test-audio-cue"></a>Testen des Audiohinweises
+Der Test-Explorer kann Sounds wiedergeben, wenn ein Testlauf abgeschlossen ist. Es gibt zwei Sounds: ein Sound, mit dem angegeben wird, dass der Testlauf mit allen durchlaufenen Tests erfolgreich war, und ein zweiter Sound, der angibt, dass der Testlauf mit mindestens einem fehlerhaften Test abgeschlossen wurde. Sie können diese Sounds im Windows 10-Standarddialogmenü „Sound“ einrichten. Dieses Feature ist ab Visual Studio 2019 Update 16.9 Preview 3 verfügbar.
+
+1. Öffnen Sie das Windows 10-Standardmenü „Sound“.
+2. Navigieren Sie zur Registerkarte **Sound**.
+3. Suchen Sie die **Microsoft Visual Studio**-Kategorie. Wählen Sie die Sounds **Test Run Succeeded** (Testlauf erfolgreich) oder **Test Run Failed** (Testlauf fehlgeschlagen), um die vordefinierten Sounds auszuwählen, oder navigieren Sie zu Ihrer eigenen Audiodatei.  
+![Windows 10-Sounddialogmenü](../test/media/default-windows-10-sound-dialog.png)
+
+::: moniker-end
 ## <a name="see-also"></a>Siehe auch
 
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)

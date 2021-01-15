@@ -1,6 +1,7 @@
 ---
 title: Starten einer Debugsitzung für eine UWP-App | Microsoft-Dokumentation
-ms.custom: seodec18
+description: In diesem Artikel erfahren Sie, wie Sie eine Visual Studio-Debugsitzung für eine UWP-App (Universelle Windows-Plattform) starten. Außerdem konfigurieren Sie die Debugsitzung und wählen die Methode für den Start der App aus.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -35,12 +36,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 003eaa7eefffaab9ff2b3c8c25a5ce5c0d41d43b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536551"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150365"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Starten einer Debugsitzung für eine UWP-App
 

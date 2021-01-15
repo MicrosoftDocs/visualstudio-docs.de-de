@@ -1,6 +1,7 @@
 ---
 title: Debuggen zur Entwurfszeit | Microsoft-Dokumentation
-ms.custom: ''
+description: In diesem Artikel erfahren Sie, wie Sie das Direktfenster zum Debuggen von Code zur Entwurfszeit verwenden, ohne die App auszuführen. Sie können eine Funktion ausführen und den Zustand überprüfen, wenn ein Breakpoint erreicht wird.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183560"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148846"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Debuggen zur Entwurfszeit in Visual Studio (C#, C++/CLI, Visual Basic, F#)
 

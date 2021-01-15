@@ -1,5 +1,7 @@
 ---
 title: Verwenden gespeicherter IntelliTrace-Daten | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie eine IntelliTrace-Datei (.iTrace) verwenden, um zu einem bestimmten Zeitpunkt der Ausführung mit dem Debuggen zu beginnen. Die Datei enthält Informationen, die IntelliTrace bei einer Ausführung Ihrer App aufgezeichnet hat.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911328"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150937"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Verwenden gespeicherter IntelliTrace-Daten (C#, Visual Basic, C++)
 
@@ -56,14 +58,14 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 - Wenn die ITRACE-Datei einem Team Foundation Server-Arbeitselement angefügt ist, führen Sie folgende Schritte im Arbeitselement durch:
 
-  - Suchen Sie in **Alle Links**die ITRACE-Datei. Öffnen Sie sie.
+  - Suchen Sie in **Alle Links** die ITRACE-Datei. Öffnen Sie sie.
 
     \- oder -
 
-  - Wählen Sie unter **Reproduktionsschritte**den Link **IntelliTrace** aus.
+  - Wählen Sie unter **Reproduktionsschritte** den Link **IntelliTrace** aus.
 
 > [!TIP]
-> Wenn Sie die IntelliTrace-Datei während des Debuggens geschlossen haben, können Sie sie einfach erneut öffnen. Wechseln Sie zum Menü **Debuggen** , wählen Sie die Option **IntelliTrace**, **Protokollzusammenfassung anzeigen**aus. Sie können **Protokollzusammenfassung anzeigen** auch im Fenster **IntelliTrace** auswählen. Dieser Befehl ist nur beim Debuggen mit IntelliTrace verfügbar.
+> Wenn Sie die IntelliTrace-Datei während des Debuggens geschlossen haben, können Sie sie einfach erneut öffnen. Wechseln Sie zum Menü **Debuggen** , wählen Sie die Option **IntelliTrace**, **Protokollzusammenfassung anzeigen** aus. Sie können **Protokollzusammenfassung anzeigen** auch im Fenster **IntelliTrace** auswählen. Dieser Befehl ist nur beim Debuggen mit IntelliTrace verfügbar.
 
 ## <a name="understand-the-intellitrace-log"></a><a name="Understand"></a> Verstehen des IntelliTrace-Protokolls
  Einige der folgenden Abschnitte in der ITRACE-Datei werden nur angezeigt, wenn Sie Daten von einer bestimmten Quelle, beispielsweise SharePoint-Anwendungen, gesammelt haben.
@@ -95,7 +97,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 ##### <a name="to-start-debugging-from-a-performance-event"></a>So starten Sie das Debuggen von einem Leistungsereignis aus
 
-1. Unter **Leistungsverletzungen**überprüfen Sie die aufgezeichneten Leistungsereignisse, ihre Gesamtausführungszeiten und andere Ereignisinformationen. Sehen Sie sich anschließend die Details der Methoden näher an, die während eines bestimmten Leistungsereignisses aufgerufen wurden.
+1. Unter **Leistungsverletzungen** überprüfen Sie die aufgezeichneten Leistungsereignisse, ihre Gesamtausführungszeiten und andere Ereignisinformationen. Sehen Sie sich anschließend die Details der Methoden näher an, die während eines bestimmten Leistungsereignisses aufgerufen wurden.
 
      ![Informationen zum Leistungsereignis anzeigen](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -126,11 +128,11 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 ##### <a name="to-start-debugging-from-an-exception"></a>So starten Sie das Debuggen aus einer Ausnahme heraus
 
-1. Überprüfen Sie unter **Ausnahmedaten**die aufgezeichneten Ausnahmeereignisse, deren Typen und Meldungen und wann die Ausnahmen aufgetreten sind. Um tiefer in den Code zu vorzudringen, starten Sie das Debuggen des letzten Ereignisses in einer Gruppe von Ausnahmen.
+1. Überprüfen Sie unter **Ausnahmedaten** die aufgezeichneten Ausnahmeereignisse, deren Typen und Meldungen und wann die Ausnahmen aufgetreten sind. Um tiefer in den Code zu vorzudringen, starten Sie das Debuggen des letzten Ereignisses in einer Gruppe von Ausnahmen.
 
      ![Debuggen von einem Ausnahmeereignis aus starten](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
-     Sie können auch einfach auf das Ereignis doppelklicken. Wenn die Ereignisse nicht gruppiert werden, wählen Sie **Dieses Ereignis debuggen**aus.
+     Sie können auch einfach auf das Ereignis doppelklicken. Wenn die Ereignisse nicht gruppiert werden, wählen Sie **Dieses Ereignis debuggen** aus.
 
      Wenn die Ausnahme im Anwendungscode aufgetreten ist, wechselt Visual Studio zu der Stelle, an der die Ausnahme aufgetreten ist.
 
@@ -211,9 +213,9 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>So starten Sie das Debuggen über einen bestimmten Thread
 
-1. Wählen Sie unter **Threadliste**einen Thread aus.
+1. Wählen Sie unter **Threadliste** einen Thread aus.
 
-2. Wählen Sie am unteren Rand von **Threadliste**die Option **Debuggen starten**aus. Sie können auch auf einen Thread doppelklicken.
+2. Wählen Sie am unteren Rand von **Threadliste** die Option **Debuggen starten** aus. Sie können auch auf einen Thread doppelklicken.
 
     Doppelklicken Sie auf **Hauptthread**, um das Debuggen vom Anfang der Anwendung aus zu starten. Siehe [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).
 
@@ -230,7 +232,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 1. Erweitern Sie **Testschritte-Raster**. Wählen Sie einen Testschritt aus.
 
-2. Wählen Sie am unteren Rand von **Testschritte-Raster**die Option **Debuggen starten**aus. Sie können auch auf einen Testschritt doppelklicken.
+2. Wählen Sie am unteren Rand von **Testschritte-Raster** die Option **Debuggen starten** aus. Sie können auch auf einen Testschritt doppelklicken.
 
      Hierdurch wird das Debuggen über das erste gültige IntelliTrace-Ereignis nach dem ausgewählten Testschritt gestartet.
 

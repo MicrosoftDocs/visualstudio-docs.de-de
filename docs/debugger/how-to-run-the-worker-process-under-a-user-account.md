@@ -1,6 +1,7 @@
 ---
 title: Ausführen eines Workerprozesses unter einem Benutzerkonto | Microsoft-Dokumentation
-ms.custom: seodec18
+description: In diesem Artikel erfahren Sie, wie Sie Ihren Computer so einrichten, dass Sie den ASP.NET-Workerprozess („aspnet_wp.exe“ oder „w3wp.exe“) unter einem Benutzerkonto in Visual Studio ausführen können.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24dc3be78534610492dfada954f74a883808b40b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349405"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148688"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto
 Um Ihren Computer so einzurichten, dass der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess (aspnet_wp.exe oder w3wp.exe) unter einem Benutzerkonto ausgeführt werden kann, führen Sie folgende Schritte aus:

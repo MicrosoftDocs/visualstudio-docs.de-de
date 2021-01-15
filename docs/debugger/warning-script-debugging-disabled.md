@@ -1,5 +1,7 @@
 ---
 title: 'Warnung: Skriptdebuggen deaktiviert | Microsoft-Dokumentation'
+description: In diesem Artikel wird die Warnung „Skriptdebuggen deaktiviert“ erläutert, die auftritt, wenn Sie versuchen, ein Skript zu debuggen, ohne das Debuggen von Skripts im Internet Explorer zuzulassen. Außerdem werden die Schritte zum Aktivieren dieser Funktion erläutert.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 7cc2e03a4efcf9a88675fd3c80f374ff78ba35bb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81648503"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149559"
 ---
 # <a name="warning-script-debugging-disabled"></a>Warnung: Skriptdebuggen deaktiviert
 Skriptdebuggen ist in Internet Explorer derzeit deaktiviert

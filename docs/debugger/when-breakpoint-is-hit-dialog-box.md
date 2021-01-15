@@ -1,5 +1,7 @@
 ---
 title: Dialogfeld „Beim Erreichen eines Haltepunktes“ | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie das Dialogfeld „Beim Erreichen eines Haltepunktes“ verwenden, um eine Aktion festzulegen, die ausgeführt wird, wenn ein Breakpoint erreicht wird. Sie können beispielsweise festlegen, dass eine Meldung ausgegeben werden soll und die Ausführung anschließend fortgesetzt werden soll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a528709769f599219a7b3df2b8157b0ee3a605b1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728148"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149312"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Dialogfeld "Beim Erreichen eines Haltepunktes"
 In diesem Dialogfeld können Sie die Aktion anpassen, die beim Erreichen eines Haltepunkts ausgeführt wird.

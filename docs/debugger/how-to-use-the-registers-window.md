@@ -1,6 +1,7 @@
 ---
 title: Anzeigen von Registerwerten im Debugger | Microsoft-Dokumentation
-ms.custom: seodec18
+description: In diesem Artikel erfahren Sie, wie Sie Registerwerte im Fenster „Register“ von Visual Studio anzeigen. Während des Debuggens ändern sich die Registerwerte, wenn Code in ihrer App ausgeführt wird.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348573"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148038"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Anzeigen von Registerwerten im Fenster „Register“ (C#, C++, Visual Basic, F#)
 

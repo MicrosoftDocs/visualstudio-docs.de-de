@@ -1,5 +1,7 @@
 ---
 title: Prozesssuche (Dialogfeld) | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie die Prozesssuche verwenden, um den Knoten für einen bestimmten Prozess in der Prozessansicht zu suchen und auszuwählen. Sie können die Prozess-ID, Modulzeichenfolge und Suchrichtung angeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903768"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975094"
 ---
 # <a name="process-search-dialog-box"></a>Dialogfeld "Prozesssuche"
 Verwenden Sie dieses Dialogfeld, um den Knoten für einen bestimmten Prozess in der [Prozessansicht](../debugger/processes-view.md) zu suchen und auszuwählen. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus in ein Fenster **Prozessansicht**. Wählen Sie im Menü **Suchen** dann die Option **Prozess suchen** aus.
@@ -33,7 +35,7 @@ Verwenden Sie dieses Dialogfeld, um den Knoten für einen bestimmten Prozess in 
 
  [Prozessansicht](../debugger/processes-view.md): Zeigt eine Strukturansicht der aktiven Prozesse an.
 
- [Spy++-Ansichten](../debugger/spy-increment-views.md) Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
+ [Spy++-Ansichten](../debugger/spy-increment-views.md) erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
  [Verwenden von Spy++](../debugger/using-spy-increment.md): Bietet eine Einführung in das Tool Spy++ und erläutert, wie es verwendet werden kann.
 

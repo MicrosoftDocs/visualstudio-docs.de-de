@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569698"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129470"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring des Extrahierens einer Methode
 
@@ -40,11 +40,11 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-       ![Hervorgehobener Code – C#](media/extractmethod-highlight-cs.png)
+       !Screenshot: C#-Code für die Program-Klasse mit einer hervorgehobenen Codezeile in der Main-Funktion](media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Hervorgehobener Code – Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Screenshot: Visual Basic-Code für Main Sub mit einer hervorgehobenen Codezeile](media/extractmethod-highlight-vb.png)
 
 2. Führen Sie dann eine der folgenden Aktionen aus:
 
@@ -63,15 +63,15 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-      ![Umbenennen einer Methode – C#](media/extractmethod-rename-cs.png)
+      ![!Screenshot: C#-Code für die Program-Klasse mit einem hervorgehobenen Methodennamen und dem Popupfenster „Umbenennen“ geöffnet](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![Umbenennen einer Methode – Visual Basic](media/extractmethod-rename-vb.png)
+      ![Screenshot: Visual Basic-Code für Main Sub mit einem hervorgehobenen Methodennamen und dem Popupfenster „Umbenennen“ geöffnet](media/extractmethod-rename-vb.png)
 
 3. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)

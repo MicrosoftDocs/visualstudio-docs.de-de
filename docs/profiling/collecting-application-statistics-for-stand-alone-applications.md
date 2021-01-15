@@ -1,5 +1,6 @@
 ---
 title: 'Profilerbefehlszeile: Sammeln von Statistiken einer eigenständigen App'
+description: In diesem Artikel erfahren Sie, wie Sie Anwendungsstatistiken für eigenständige Anwendungen mithilfe der Profiler-Befehlszeile in Visual Studio erfassen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 150a1a010a33a3b4fcfe0954ec70db2ff4de7816
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6567b0116227bf259eb3591bc6880a6841252869
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808915"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148300"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Sammeln von Anwendungsstatistiken für eigenständige Anwendungen über die Profilerbefehlszeile
 In diesem Abschnitt werden die Prozeduren und Optionen zum Sammeln von Leistungsstatistiken für eine Clientanwendung (eigenständig) mit der Samplingmethode über die Befehlszeile beschrieben.

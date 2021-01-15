@@ -1,5 +1,7 @@
 ---
 title: Suchen nach einem Thread in der Threadansicht | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie beim Debuggen in Visual Studio in der Ansicht „Threads“ des Spy++-Tools nach einem bestimmten Thread suchen, indem Sie die Thread-ID oder die Modulzeichenfolge als Suchkriterium verwenden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a2b4fe491939b6cf4224c211dcd03ec609be27
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92864c9d3c66a7547ef52a2694f6307d57a43304
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851982"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148532"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Vorgehensweise: Suchen nach einem Thread in der Threadansicht
 Sie können in der Threadansicht nach einem bestimmten Thread suchen, indem Sie die Thread-ID oder die Modulzeichenfolge als Suchkriterium verwenden. Sie können auch die anfängliche Richtung der Suche angeben. In den Feldern im Dialogfeld werden die Attribute des ausgewählten Threads in der Threadstruktur angezeigt.

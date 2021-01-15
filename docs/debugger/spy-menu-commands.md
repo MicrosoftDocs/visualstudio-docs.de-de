@@ -1,5 +1,7 @@
 ---
 title: Spy-Menübefehle | Microsoft-Dokumentation
+description: 'In diesem Artikel wird das Spy-Menü erläutert, das Befehle für die Arbeit mit Fenstern und Ansichten von Spy++ enthält. Zu den verfügbaren Befehlen gehören: „Fenster“, „Prozesse“, „Threads“, „Protokollmeldungen“ und „Fenster suchen“.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c737bef539e541d1dc1e130eb0c9dedb3e00f2c4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929757"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148129"
 ---
 # <a name="spy-menu-commands"></a>Befehle im Menü "Spy"
 Das Menü **Spy** enthält Befehle für das Arbeiten mit Spy++-Fenstern und -Ansichten.

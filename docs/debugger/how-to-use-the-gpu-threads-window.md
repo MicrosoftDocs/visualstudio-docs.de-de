@@ -1,5 +1,7 @@
 ---
 title: Verwenden von GPU-Threads im Debugger | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie das Fenster „GPU-Threads“ verwenden, um Threads zu untersuchen und mit diesen zu arbeiten, die auf der GPU in der Anwendung ausgeführt werden, die Sie in Visual Studio debuggen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348716"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150586"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Vorgehensweise: Verwenden des Fensters „GPU-Threads“ (C++)
 Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen und diese bearbeiten. Weitere Informationen zu den Anwendungen, die in der GPU ausgeführt werden, finden Sie unter [Übersicht über C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
@@ -52,7 +54,7 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
 
 ### <a name="to-display-the-gpu-threads-window"></a>So öffnen Sie das GPU-Threadfenster
 
-1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften**aus.
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften** aus.
 
 2. Wählen Sie im Fenster **Eigenschaftenseiten** für das Projekt unter **Konfigurationseigenschaften** die Option **Debuggen** aus.
 
