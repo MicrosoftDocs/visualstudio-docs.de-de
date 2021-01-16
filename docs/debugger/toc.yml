@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: Schreiben einer Berichtsfunktion für Laufzeitfehler
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: Angeben von Symbol- (PDB-) und Quelldateien im Debugger
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: Debuggen von Benutzercode
