@@ -1,5 +1,7 @@
 ---
 title: Erfassen von Ebeneninteraktionsdaten | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie Informationen zur Ebenenprofilerstellung für Anwendungen mit mehreren Ebenen sammeln, die über ADO.NET-Dienste mit Datenbanken kommunizieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7b2a2bb5efd86d052247825a29a06c7f5ad109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 768cb173bca578c440e3209fe7b7a1df60fab1be
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331593"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533679"
 ---
 # <a name="collect-tier-interaction-data"></a>Erfassen von Ebeneninteraktionsdaten
 
@@ -32,7 +34,7 @@ Profilerstellungsdaten für die Ebeneninteraktion können mit einer beliebigen V
 
 **Windows 8 und Windows Server 2012**
 
-Um Ebeneninteraktionsdaten für Windows 8-Desktop-Apps und Windows Server 2012-Apps zu erfassen, müssen Sie die Instrumentierungsmethode verwenden. Sie können Ebeneninteraktionsdaten nicht für UWP-Apps erfassen. Informationen hierzu finden Sie unter [Performance Tools on Windows 8 and Windows Server 2012 applications (Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen)](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einer anderen unterstützten Version von Windows einschließen.
+Um Ebeneninteraktionsdaten für Windows 8-Desktop-Apps und Windows Server 2012-Apps zu erfassen, müssen Sie die Instrumentierungsmethode verwenden. Sie können Ebeneninteraktionsdaten nicht für UWP-Apps erfassen. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). Sie können Ebeneninteraktionsdaten in alle Profilerstellungsmethoden einer anderen unterstützten Version von Windows einschließen.
 
 **Leistungs-Assistent**
 

@@ -1,5 +1,6 @@
 ---
 title: Abrufen von Zeitsteuerungsdaten für ASP.NET mithilfe der Instrumentierung
+description: Hier erfahren Sie, wie Sie mit VSPerfCmd detaillierte Leistungsdaten für eine ASP.NET-Webanwendung erfassen. Das Tool bietet Vollzugriff auf die Funktionalität der Profilerstellungstools.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: a73d81eaaef45a9ae97e733a8ae94805106a9ef8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1001e10d80b39df5072a6524f445c97418aa603b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809634"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205748"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Sammeln ausführlicher Zeitsteuerungsdaten für eine ASP.NET-Webanwendung über die Befehlszeile mit der Profiler-Instrumentierungsmethode
 In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführlicher Leistungsdaten für eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung unter Verwendung der Instrumentationsmethode und der Befehlszeile **VSPerfCmd** beschrieben.
@@ -37,7 +38,7 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführl
 
 ### <a name="profile-aspnet-web-applications"></a>Profilerstellung für ASP.NET-Webanwendungen
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Profilerstellung mit der Samplingmethode**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Profilerstellung der Speicherbelegung und Garbage Collection**|-   [Sammeln von Arbeitsspeicherdaten](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
@@ -45,7 +46,7 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführl
 
 ### <a name="profile-by-using-the-instrumentation-method"></a>Profilerstellung mit der Instrumentierungsmethode
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Profilerstellung für Dienste**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|

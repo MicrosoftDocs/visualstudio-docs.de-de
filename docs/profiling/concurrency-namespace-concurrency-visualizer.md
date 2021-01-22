@@ -1,5 +1,7 @@
 ---
 title: Concurrency-Namespace (Nebenläufigkeitsschnellansicht) | Microsoft-Dokumentation
+description: Verwenden Sie den Concurrency-Namespace, der Zugriff auf die Concurrency Runtime bietet (ein Nebenläufigkeitsframework für C++), um gleichzeitig ausgeführte Programme in C++ zu schreiben.
+custom.ms: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bdb9f2cee62c126f7a8b91fb7be57f558c9a7e5c
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63001082"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533432"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency-Namespace (Parallelitätsschnellansicht)
 Der `Concurrency`-Namespace stellt Klassen und Funktionen bereit, die Ihnen den Zugriff auf die Concurrency Runtime ermöglichen, ein Framework zur parallelen Programmierung für C++. Weitere Informationen finden Sie unter [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).
@@ -28,11 +30,11 @@ Der `Concurrency`-Namespace stellt Klassen und Funktionen bereit, die Ihnen den 
 namespace Concurrency;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Member
 
 ### <a name="namespaces"></a>Namespaces
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |----------|-----------------|
 |[diagnostic-Namespace](../profiling/diagnostic-namespace.md)|Der `diagnostics`-Namespace stellt Funktionen zum Ausgeben von Markern für Nebenläufigkeitsschnellansichten bereit.|
 
@@ -40,4 +42,4 @@ namespace Concurrency;
  **Header:** cvmarkersobj.h
 
 ## <a name="see-also"></a>Weitere Informationen
-- [C-Bibliotheksreferenz](../profiling/c-library-reference.md)
+- [C Bibliotheksreferenz](../profiling/c-library-reference.md)

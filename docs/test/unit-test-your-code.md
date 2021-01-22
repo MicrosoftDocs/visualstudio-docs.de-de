@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756590"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240282"
 ---
 # <a name="unit-test-tools-and-tasks"></a>Komponententesttools und -aufgaben
 
@@ -36,7 +36,7 @@ Zu den Komponententest-Tools gehören:
 
 * **Microsoft Fakes-Isolationsframework**: Das Microsoft Fakes-Isolationsframework kann Ersatzklassen und Methoden für den .NET-Code für die Produktion und das System erstellen, mit dem Abhängigkeiten im getesteten Code erstellt werden. Durch die Implementierung von Fakedelegaten für eine Funktion können Sie das Verhalten und die Ausgabe des Abhängigkeitsobjekts steuern.
 
-Sie können auch [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) verwenden, um Ihren .NET-Code zum Generieren von Testdaten und einer Sammlung von Komponententests zu untersuchen. Für jede Anweisung im Code wird eine Testeingabe generiert, die die betreffende Anweisung ausführt. Für jede bedingte Verzweigung im Code wird eine Fallanalyse ausgeführt.
+Für .NET können Sie auch [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) verwenden, um Ihren Code zu untersuchen und Testdaten sowie eine Sammlung von Komponententests zu generieren. Für jede Anweisung im Code wird eine Testeingabe generiert, die die betreffende Anweisung ausführt. Für jede bedingte Verzweigung im Code wird eine Fallanalyse ausgeführt.
 
 ## <a name="key-tasks"></a>Hauptaufgaben
 

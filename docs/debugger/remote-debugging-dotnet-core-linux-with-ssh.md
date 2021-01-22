@@ -1,5 +1,7 @@
 ---
 title: Debuggen von .NET Core unter Linux
+description: Debuggen Sie .NET Core unter Linux mithilfe von SSH (Secure Shell) durch Anfügen an einen Prozess. Bereiten Sie Ihre App für das Debuggen vor. Erstellen Sie die App, und stellen Sie sie bereit. Fügen Sie den Debugger an.
+ms.custom: SEO-VS-2020
 ms.date: 02/26/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b77d68e7f8876f7e0d038166f4b2a6517bb3cb
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671505"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204890"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Debuggen von .NET Core unter Linux mithilfe von SSH durch Anhängen an einen Prozess
 

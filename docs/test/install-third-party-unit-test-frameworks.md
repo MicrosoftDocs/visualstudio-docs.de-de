@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329977"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240308"
 ---
 # <a name="install-unit-test-frameworks"></a>Installieren von Komponententestframeworks
 
@@ -23,7 +23,7 @@ Der Visual Studio-Test-Explorer kann Tests aus beliebigen Frameworks für Kompon
 Eine Visual Studio-Projektmappe kann Komponententestprojekte enthalten, die verschiedene Frameworks verwenden und verschiedene Zielsprachen aufweisen.
 
 ::: moniker range=">=vs-2019"
-Für .NET sind [MSTest, NUnit und xUnit](getting-started-with-unit-testing.md) die von Visual Studio bereitgestellten und standardmäßig installierten Testframeworks.
+Für .NET sind [MSTest, NUnit und xUnit](getting-started-with-unit-testing.md) die von Visual Studio bereitgestellten und standardmäßig installierten Testframeworks. Für C++ werden andere Testframeworks bereitgestellt, z. B. CTest.
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) ist das Testframework von Visual Studio und wird standardmäßig installiert.

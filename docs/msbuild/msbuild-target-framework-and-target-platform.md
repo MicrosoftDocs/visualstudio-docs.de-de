@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 958f33a39126f8f48cf29bad1c25c7d962513ed0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049097"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533861"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild-Zielframework und -Zielplattform
 
-Ein Projekt kann erstellt werden, um in einem *Zielframework* , bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform* , bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 80x86-Prozessorfamilie („x86“) kompatibel ist. Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.
+Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform*, bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 80x86-Prozessorfamilie („x86“) kompatibel ist. Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.
 
 > [!IMPORTANT]
 > In diesem Artikel wird die alte Methode zum Angeben eines Zielframeworks beschrieben. Projekte im SDK-Format ermöglichen unterschiedliche Zielframeworks wie .NET Standard. Weitere Informationen finden Sie unter [Zielframeworks](/dotnet/standard/frameworks).
@@ -78,7 +78,7 @@ Das Zielframework wird in der `TargetFrameworkVersion`-Eigenschaft in einer Proj
 
 - `x86` steht für ein 32-Bit-Windows-Betriebssystem, das auf einem Intel 80x86-Prozessor oder einem vergleichbaren Prozessor ausgeführt wird.
 
-- `x64` steht für ein 64-Bit-Windows-Betriebssystem, das auf einem Intel x64-Prozessor oder einem vergleichbaren Prozessor ausgeführt wird.
+- `x64` steht für ein 64-Bit-Windows-Betriebssystem, das auf einem Intel-x64-Prozessor oder einem vergleichbaren Prozessor ausgeführt wird.
 
 - `Xbox` steht für die Microsoft Xbox 360-Plattform.
 

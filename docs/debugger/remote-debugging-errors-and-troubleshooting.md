@@ -1,5 +1,7 @@
 ---
 title: 'Remotedebuggen: Fehler und Problembehandlung | Microsoft-Dokumentation'
+description: Links zu häufigen Fehlern beim Remotedebuggen in Visual Studio. Hier erfahren Sie, wie Sie den Remotedebugger als Administrator ausführen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0260f939c8f6b7e5bed77ec42a4720adf0a4c720
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316136"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205657"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Remotedebuggen – Fehler und Problembehandlung
 

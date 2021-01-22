@@ -1,5 +1,7 @@
 ---
 title: Fenster (Registerkarte ), Fenstereigenschaften (Dialogfeld ) | Microsoft-Dokumentation
+description: Mithilfe der Registerkarte „Fenster“ der Windows-Eigenschaften können Sie Informationen zu den Fenstern anzeigen, die zu dem ausgewählten Fenster gehören. Informationen zu den Einstellungen finden Sie in diesem Artikel.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900782"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205397"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Registerkarte "Fenster", Dialogfeld "Fenstereigenschaften"
 Mit der Registerkarte **Fenster** können Sie Informationen zu Fenstern anzeigen, die mit dem ausgewählten Fenster in Zusammenhang stehen. Verschieben Sie den Fokus auf das [Fensteransichtsfenster](../debugger/windows-view.md), um das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Fensterknoten in der Struktur aus, und klicken Sie anschließend im Menü **Ansicht** auf **Eigenschaften**.

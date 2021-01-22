@@ -1,5 +1,7 @@
 ---
 title: Vergleichen von Leistungsdatendateien | Microsoft-Dokumentation
+description: Verwenden Sie Profilerstellungstools, um zwei Berichtsdateien (.vsp oder .vsps) miteinander zu vergleichen. Der Vergleich zeigt Unterschiede, Leistungsregressionen und Verbesserungen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777854"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533497"
 ---
 # <a name="compare-performance-data-files"></a>Vergleichen von Leistungsdatendateien
 
-Mit der Datendateivergleichsfunktion der Profilerstellungstools können Sie zwei Berichtsdateien (*VSP* bzw. *VSPS*) auswählen und einen Bericht generieren, der die Unterschiede, Leistungsregressionen und Verbesserungen zeigt, die zwischen den beiden Profilerstellungssitzungen aufgetreten sind.
+Mit der Datendateivergleichsfunktion der Profilerstellungstools können Sie zwei Berichtsdateien ( *.vsp* oder *.vsps*) auswählen und einen Bericht generieren, der die Unterschiede, Leistungsregressionen und Verbesserungen zeigt, die zwischen den beiden Profilerstellungssitzungen aufgetreten sind.
 
 Ein Vergleichsbericht von Datendateien aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools vergleicht die Ergebnisse einer Analyse in einer Profilerstellungs-Datendatei mit den Ergebnissen einer Baseline-Analyse in einer anderen Datendatei. Beide Datendateien müssen mit derselben Profilerstellungsmethode erstellt worden sein. Der Bericht der analysierten Vergleiche wird als *VSPS-Datei* gespeichert.
 

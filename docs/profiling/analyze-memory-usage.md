@@ -1,6 +1,7 @@
 ---
 title: Analysieren der Speicherauslastung
-ms.custom: seodec18
+description: Hier erfahren Sie mehr über die Tools, mit denen Sie Arbeitsspeicherverluste und ineffiziente Arbeitsspeicherauslastungen finden können. Zu diesen Tools zählen bspw. das Tool für die Arbeitsspeicherauslastung und das Tool für die .NET-Objektzuordnung.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918096"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205722"
 ---
 # <a name="analyze-memory-usage"></a>Analysieren der Speicherauslastung
 
@@ -31,7 +32,7 @@ C++-Entwickler können entweder auf die in den Debugger integrierte Version des 
 - [Analysieren der Speicherauslastung mithilfe des Debuggers](../profiling/memory-usage.md)
 - [Analysieren der Speicherauslastung ohne den Debugger](../profiling/memory-usage-without-debugging2.md)
 
-Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debugger verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools** ).
+Unter Windows 7 und höher können Sie die Profilerstellungstools ohne den Debugger verwenden. Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**).
 
 ## <a name="blogs-and-videos"></a>Blogs und Videos
 

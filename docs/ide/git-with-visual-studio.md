@@ -2,18 +2,18 @@
 title: Git-Benutzeroberfläche in Visual Studio
 titleSuffix: ''
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe der neuen integrierten Git-Benutzeroberfläche in Visual Studio 2019 Ihre Produktivität steigern können.
-ms.date: 11/16/2020
+ms.date: 01/15/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524094"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597407"
 ---
 # <a name="git-experience-in-visual-studio"></a>Git-Benutzeroberfläche in Visual Studio
 
@@ -92,7 +92,7 @@ Während Ihrer Arbeit werden Änderungen an Dateien in Ihrem Projekt von Visual 
 
 Wenn Sie bereit sind, Änderungen zu stagen, klicken Sie für jede zu stagende Datei auf die Schaltfläche **+** (Pluszeichen). Alternativ können Sie mit der rechten Maustaste auf eine Datei und dann auf **Stufe** klicken. Sie können auch alle geänderten Dateien mit einem Mausklick stagen, indem Sie die Schaltfläche **+** (Pluszeichen) oben im Abschnitt **Änderungen** zum Stagen aller Dateien verwenden.
 
-Wenn Sie eine Änderung stagen, erstellt Visual Studio den Abschnitt **Gestagete Änderungen**. Nur Änderungen im Abschnitt **Gestagete Änderungen** werden beim nächsten Commit hinzugefügt. Klicken Sie hierzu auf **Gestageter Commit**. Sie können Änderungen auch unstagen, indem Sie auf die Schaltfläche **–** (Minuszeichen) klicken. Der entsprechende Befehl für diese Aktion ist `git commit -m "Your commit message"`.
+Wenn Sie eine Änderung stagen, erstellt Visual Studio den Abschnitt **Gestagete Änderungen**. Nur Änderungen im Abschnitt **Gestagete Änderungen** werden beim nächsten Commit hinzugefügt. Klicken Sie hierzu auf **Gestageter Commit**. Der entsprechende Befehl für diese Aktion ist `git commit -m "Your commit message"`. Die Bereitstellung von Änderungen kann auch aufgehoben werden, indem Sie auf die Schaltfläche **–** (Minuszeichen) klicken. Der entsprechende Befehl für diese Aktion ist `git reset <file_path>`, um die Bereitstellung einer einzelnen Datei aufzuheben, oder `git reset <directory_path>`, um die Bereitstellung aller Dateien in einem Verzeichnis aufzuheben.
 
 Sie können sich auch dazu entscheiden, Ihre geänderten Dateien nicht zu stagen, indem Sie den Stagingbereich überspringen. In diesem Fall ermöglicht Visual Studio das Committen Ihrer Änderungen direkt ohne Staging. Geben Sie einfach Ihre Commitnachricht ein, und klicken Sie auf **Alle committen**. Der entsprechende Befehl für diese Aktion ist `git commit -a`.
 

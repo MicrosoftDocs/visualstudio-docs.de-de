@@ -1,5 +1,7 @@
 ---
 title: Attach | Microsoft-Dokumentation
+description: Verwenden Sie die Attach-Option von VSPerfCmd.exe, um mit dem Profilen des über die Prozess-ID (PID) angegebenen ausgeführten Prozesses zu beginnen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
@@ -9,15 +11,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 482b3e80bce796910860cb7eab1e5a0066854238
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c97dee50d58b49092d9b23a497192b29746e0c22
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329872"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205696"
 ---
 # <a name="attach"></a>Anfügen
-Die *VSPerfCmd.exe*-Option **Attach** beginnt die Profilerstellung von Stichproben für den laufenden Prozess, der durch die Prozess-ID (PID) angegeben wird.
+Die *VSPerfCmd.exe-Option* **Attach** beginnt mit der Samplingprofilerstellung für den ausgeführten Prozesses, der durch die Prozess-ID (PID) angegeben wird.
 
  Um **Attach** zu verwenden, müssen Sie die Methode **Sample** in der Option „Start“ angeben.
 
@@ -40,7 +42,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Start:** `Method` initialisiert die Befehlszeilen-Profilerstellungssitzung und legt die angegebene Profilerstellungsmethode fest.
 
- **TargetCLR:** Gibt die Version der .NET Framework-CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Version in einer Profilerstellungssitzung geladen wird. Standardmäßig wird für die zuerst geladene Version ein Profil erstellt.
+ **TargetCLR:** Gibt die Version der .NET Framework-CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Version in einer Profilerstellungssitzung geladen wird. Standardmäßig wird ein Profil für die zuerst geladene Version erstellt.
 
  **GlobalOn und GlobalOff**: Setzen die Profilerstellung fort (**GlobalOn**) oder unterbrechen sie (**GlobalOff**), aber nicht die Profilerstellungssitzung.
 
@@ -51,7 +53,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]: gibt die Anzahl und den Typ des Samplingintervalls an.
 
-- **Timer**: Sampelt alle `Cycles`-Prozessortaktzyklen. Wenn `Cycles` nicht angegeben ist, wird ein Intervall von 10.000.000 verwendet.
+- **Timer**: Sampelt alle `Cycles`-Prozessortaktzyklen. Wenn `Cycles` nicht angegeben ist, wird ein Intervall von 10.000.000 festgelegt.
 
 - **PF**: Sampelt alle `Events`-Seitenfehler. Wenn `Events` nicht angegeben ist, geschieht dies bei jedem 10. Seitenfehler.
 

@@ -1,5 +1,7 @@
 ---
 title: Debuggen von JavaScript mithilfe der Konsole | Microsoft-Dokumentation
+description: Verwenden Sie das Fenster „JavaScript-Konsole“ in Visual Studio, um mit JavaScript-Apps der universellen Windows-Plattform (UWP) zu interagieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211075"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205007"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Debuggen von JavaScript mithilfe der Konsole in Visual Studio
 
@@ -203,7 +205,7 @@ Wenn sich ein Programm im Unterbrechungsmodus befindet, können Sie im JavaScrip
 
 2. Wählen Sie in der Dropdownliste neben der Schaltfläche **Debuggen starten** auf der Symbolleiste **Debuggen** den Eintrag **Lokaler Computer** aus.
 
-3. Wählen Sie **Debuggen** > **Lokaler Computer**aus, oder drücken Sie F5.
+3. Wählen Sie **Debuggen** > **Lokaler Computer** aus, oder drücken Sie F5.
 
     Die App wechselt in den Unterbrechungsmodus, wenn die Ausführung die `updateImages()` -Funktion erreicht. Die aktuelle Zeile der Programmausführung wird gelb hervorgehoben.
 

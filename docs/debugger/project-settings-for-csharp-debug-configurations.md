@@ -1,6 +1,7 @@
 ---
 title: Projekteinstellungen für eine C#-Debugkonfiguration | Microsoft-Dokumentation
-ms.custom: seodec18
+description: Hier erfahren Sie, wie Sie die Projekteinstellungen für eine C#-Debugkonfiguration in Visual Studio über die Registerkarten „Debuggen“ und „Erstellen“ der Projekteigenschaftenseiten ändern.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: reference
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 262e46436f1391ae21df0ccdd3ca308eecb347da
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904011"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205566"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Projekteinstellungen für C#-Debugkonfigurationen
 

@@ -1,5 +1,6 @@
 ---
 title: Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer
+description: Verwenden Sie die Profilerstellungstools, um Daten zur Speicherbelegung und Objektlebensdauer zu sammeln, die beim Erkennen von Leistungsproblemen in Zusammenhang mit dem Arbeitsspeicher in Ihrer .NET-Anwendung helfen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809426"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533796"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET Framework-Speicherbelegung und -lebensdauer
 
@@ -45,7 +46,7 @@ Informationen zum Sammeln von .NET-Arbeitsspeicherdaten mit den Befehlszeilentoo
 
 ## <a name="to-collect-net-memory-data"></a>Sammeln von NET-Speicherdaten
 
-1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
 2. Klicken Sie im Dialogfeld **Eigenschaftenseiten** der *Leistungssitzung* auf die Registerkarte **Allgemein**, und aktivieren Sie das Kontrollkästchen **.NET-Objektzuordnungsinformationen auflisten**.
 
@@ -55,11 +56,11 @@ Informationen zum Sammeln von .NET-Arbeitsspeicherdaten mit den Befehlszeilentoo
 
 Weitere Optionen können Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** der Leistungssitzung angeben. So öffnen Sie dieses Dialogfeld
 
-- Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
+- Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
 Die Aufgaben in der folgenden Tabelle beschreiben Optionen, die Sie im Dialogfeld _Leistungssitzung_**Eigenschaftenseiten** angeben können, wenn Sie .NET-Arbeitsspeicherdaten sammeln.
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |Geben Sie auf der Seite **Allgemein** Namensdetails für die generierte Profilerstellungs-Datendatei (VSP) an.|- [Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Vorgehensweise: Dateinamensoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)|
 |Wählen Sie auf der Seite **Starten** die Anwendung aus, die gestartet werden soll, wenn mehrere EXE-Projekte in der Codeprojektmappe vorhanden sind.|- [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md)|

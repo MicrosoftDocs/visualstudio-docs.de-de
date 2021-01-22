@@ -1,5 +1,6 @@
 ---
 title: 'Profilerbefehlszeile: Abrufen von Zeitdaten für einen Dienst'
+description: Hier erfahren Sie, wie Sie die Instrumentierungsmethode über die Befehlszeile verwenden, um detaillierte Leistungsdaten für Windows-Dienste zu sammeln.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fa021ea7602b2268c720bf3e02bab0ed93af775
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5f4560b21213e3f50061e1f9424d634aeb7b52c2
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810756"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533822"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Sammeln ausführlicher Zeitsteuerungsdaten für Dienste über die Befehlszeile mit der Profiler-Instrumentierungsmethode
 In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführlicher Leistungsdaten für Windows-Dienste unter Verwendung der Instrumentationsmethode über die Befehlszeile beschrieben.
@@ -32,7 +33,7 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführl
 
 ### <a name="profile-windows-services"></a>Profilerstellung für Windows-Dienste
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Profilerstellung mit der Samplingmethode**|-   [Sammeln von Anwendungsstatistiken durch Sampling](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
 |**Profilerstellung der .NET-Speicherbelegung und Garbage Collection**|-   [Sammeln von .NET-Arbeitsspeicherdaten](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
@@ -40,7 +41,7 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführl
 
 ### <a name="profile-by-using-the-instrumentation-method"></a>Profilerstellung mit der Instrumentierungsmethode
 
-|Aufgabe|Verwandter Inhalt|
+|Aufgabe|Verwandte Inhalte|
 |----------|---------------------|
 |**Profilerstellung für eigenständige (Client-)Anwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Profilerstellung für ASP.NET-Webanwendungen**|-   [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentierung](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
