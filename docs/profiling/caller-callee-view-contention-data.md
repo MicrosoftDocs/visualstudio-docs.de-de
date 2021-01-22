@@ -1,6 +1,6 @@
 ---
 title: 'Ansicht der Aufrufer/Aufgerufenen: Konfliktdaten | Microsoft-Dokumentation'
-description: In diesem Artikel erfahren Sie, wie die Ansicht für Aufrufer/Aufgerufene Konfliktinformationen für eine ausgewählte Funktion und dessen übergeordneten und untergeordneten Funktionen im Leistungs-Explorer anzeigt.
+description: In diesem Artikel erfahren Sie, wie die Ansicht „Aufrufer/Aufgerufener“ Konfliktinformationen für eine ausgewählte Funktion und deren übergeordnete und untergeordnete Funktionen im Leistungs-Explorer anzeigt.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150911"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204799"
 ---
 # <a name="callercallee-view----contention-data"></a>Ansicht der Aufrufer/Aufgerufenen: Konfliktdaten
 In der Ansicht der Aufrufer/Aufgerufenen werden Konfliktinformationen für eine ausgewählte Funktion und deren übergeordnete und untergeordnete Funktionen angezeigt. Die Aufrufer-/Aufgerufener-Ansicht enthält drei Raster.

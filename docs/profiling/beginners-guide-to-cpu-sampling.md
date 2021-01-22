@@ -1,6 +1,7 @@
 ---
 title: Einführung in CPU-Sampling
-ms.custom: seodec18
+description: Hier erfahren Sie, wie die Visual Studio-Profilerstellungstools zeigen, wie viel Zeit die Funktionen in Ihrer Anwendung benötigen. Auf diese Weise decken die Tools Bereiche auf, in denen die Anwendung beschleunigt werden kann.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/27/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c61d407247910131deee9585d19a921f8cf76cca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330593"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205358"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Einführung in CPU-Sampling
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung von **Sampling**-Daten.
@@ -116,7 +117,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
 
 1. Ändern Sie den Code.
 
-2. Klicken Sie zum Öffnen des**Leistungs-Explorers** im Menü **Debuggen** auf **Profiler**, **Leistungs-Explorer** und anschließend auf **Leistungs-Explorer anzeigen**.
+2. Klicken Sie zum Öffnen des **Leistungs-Explorers** im Menü **Debuggen** auf **Profiler**, **Leistungs-Explorer** und anschließend auf **Leistungs-Explorer anzeigen**.
 
 3. Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf die Sitzung, die Sie erneut ausführen möchten, und klicken Sie anschließend auf **Mit Profilerstellung starten**.
 
@@ -125,7 +126,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
      Ein neues Berichtsfenster mit den Ergebnissen des Vergleichs wird geöffnet. Weitere Informationen zum Verwenden der Vergleichsansicht finden Sie unter [Vorgehensweise: Vergleichen der Leistungsdatendateien](../profiling/how-to-compare-performance-data-files.md).
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+- [Leistungs-Explorer](../profiling/performance-explorer.md)
 - [Erste Schritte](../profiling/getting-started-with-performance-tools.md)
 - [Übersichten](../profiling/overviews-performance-tools.md)
 - [Profilerstellung in Visual Studio](../profiling/index.yml)

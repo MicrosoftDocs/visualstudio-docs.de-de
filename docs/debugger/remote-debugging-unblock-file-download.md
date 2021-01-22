@@ -1,5 +1,7 @@
 ---
 title: Freischalten des Remotetooldownloads
+description: Hier erfahren Sie, wie Sie den Download der Remotetools unter Windows Server freischalten. Dies kann aufgrund der IE-Standardsicherheitseinstellungen recht zeitaufwändig sein.
+ms.custom: SEO-VS-2020
 ms.date: 07/19/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54d85ee7df7f4038cc78b10f83be79e524d3bfd2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903022"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205644"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Vorgehensweise: Freischalten des Downloads der Remotetools unter Windows Server
 
@@ -30,7 +32,7 @@ Zum Herunterladen der Tools unter Windows Server wird eine der folgenden Vorgehe
 
 * Führen Sie den Remotedebugger [auf einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon) auf Ihrem Visual Studio-Computer aus.
 
-* Laden Sie die Remotetools direkt unter Windows Server herunter, und akzeptieren Sie die Aufforderungen zum Hinzufügen von vertrauenswürdigen Websites. Moderne Websites enthalten häufig viele Drittanbieterressourcen. Möglicherweise werden Ihnen daher sehr viele Aufforderungen angezeigt. Außerdem müssen Umleitungs-URLs, sofern vorhanden, möglicherweise manuell hinzugefügt werden. Sie können einige der vertrauenswürdigen Websites bereits vor dem Download hinzufügen. Navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**, und fügen Sie die folgenden Websites hinzu.
+* Laden Sie die Remotetools direkt unter Windows Server herunter, und akzeptieren Sie die Aufforderungen zum Hinzufügen von vertrauenswürdigen Websites. Moderne Websites enthalten häufig viele Drittanbieterressourcen, die zu vielen Eingabeaufforderungen führen können. Außerdem müssen Umleitungs-URLs, sofern vorhanden, möglicherweise manuell hinzugefügt werden. Sie können einige der vertrauenswürdigen Websites bereits vor dem Download hinzufügen. Navigieren Sie zu **Internetoptionen > Sicherheit > Vertrauenswürdige Sites > Sites**, und fügen Sie die folgenden Websites hinzu.
 
   * visualstudio.microsoft.com
   * download.visualstudio.microsoft.com
@@ -55,4 +57,4 @@ Zum Herunterladen der Tools unter Windows Server wird eine der folgenden Vorgehe
 
     ![Dialogfeld zu blockierten Inhalten](../debugger/media/remotedbg-blocked-content.png)
 
-    Wenn Sie die Software herunterladen, werden Sie möglicherweise auch dazu aufgefordert, die Berechtigung zum Laden verschiedener Websiteskripts und -ressourcen zu erteilen. Es ist empfehlenswert, auf my.visualstudio.com die zusätzlichen Domänen hinzuzufügen, um sicherzustellen, dass die Anmeldung erfolgreich ist.
+    Wenn Sie die Software herunterladen, erhalten Sie mehr Anforderungen, die Berechtigung zum Laden verschiedener Websiteskripts und -ressourcen zu erteilen. Es ist empfehlenswert, auf my.visualstudio.com die zusätzlichen Domänen hinzuzufügen, um sicherzustellen, dass die Anmeldung erfolgreich ist.

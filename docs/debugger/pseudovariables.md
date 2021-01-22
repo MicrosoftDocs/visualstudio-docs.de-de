@@ -1,5 +1,7 @@
 ---
 title: Pseudovariablen | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über Pseudovariablen im Visual Studio-Debugger Pseudovariablen sind Begriffe, mit denen bestimmte Daten in einem Variablenfenster oder dem Dialogfeld „Schnellüberwachung“ angezeigt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776087"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205527"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariablen im Visual Studio-Debugger
 Pseudovariablen sind Begriffe, mit denen bestimmte Informationen in einem Variablenfenster oder im Dialogfeld **Schnellüberwachung** angezeigt werden. Eine Pseudovariable können Sie genauso wie eine normale Variable eingeben. Pseudovariablen sind jedoch keine Variablen und es gibt keine entsprechenden Variablennamen im Programm.

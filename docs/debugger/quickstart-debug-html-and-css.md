@@ -1,5 +1,7 @@
 ---
 title: Debuggen von HTML und CSS in UWP-Apps | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie HTML und CSS in UWP-Apps (Universelle Windows-Plattform) in Visual Studio debuggen. JavaScript-Debugfeatures werden für UWP-Apps unterstützt.
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211088"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205475"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debuggen von HTML und CSS in UWP-Apps in Visual Studio
 
@@ -149,7 +151,7 @@ In der folgenden Prozedur wird eine App mithilfe vom DOM Explorer interaktiv deb
 
     ![Debugzielliste auswählen](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Wählen Sie **Debuggen** > **Simulator**aus oder drücken Sie F5, um die Anwendung im Debugmodus auszuführen.
+8. Wählen Sie **Debuggen** > **Simulator** aus oder drücken Sie F5, um die Anwendung im Debugmodus auszuführen.
 
     Dadurch wird die Anwendung ausgeführt. Es wird jedoch ein fast gänzlich leeres Fenster angezeigt, da die Formatvorlage einige Fehler enthält. Das erste `FlipView` -Bild wird in einem kleinen Quadrat neben der Bildschirmmitte angezeigt.
 
@@ -182,7 +184,7 @@ In der folgenden Prozedur wird eine App mithilfe vom DOM Explorer interaktiv deb
 14. Doppelklicken Sie im Hauptfenster auf `width: 100px;height: 100px;`, drücken Sie die Taste **ENTF** und dann die **EINGABETASTE**. Nachdem Sie die EINGABETASTE gedrückt haben, werden die neuen Werte sofort in der App dargestellt, obwohl die Debugsitzung nicht angehalten wurde.
 
     > [!IMPORTANT]
-    > Ebenso wie die Attributwerte im Fenster "DOM Explorer" können Sie auch Werte aktualisieren, die auf den Registerkarten **Formatvorlagen**, **Berechnet**und **Layout** angezeigt werden.
+    > Ebenso wie die Attributwerte im Fenster "DOM Explorer" können Sie auch Werte aktualisieren, die auf den Registerkarten **Formatvorlagen**, **Berechnet** und **Layout** angezeigt werden.
 
 15. Wechseln Sie zur App, indem Sie darauf klicken oder ALT+TAB drücken.
 
@@ -243,9 +245,9 @@ Sie können beim Debuggen einer App DOM-Elemente auf drei Arten auswählen:
 
   ![Schaltfläche „Element auswählen“ in DOM Explorer](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
 
-  Wenn Sie auf **Element auswählen** klicken (oder STRG+B drücken), wird der Auswahlmodus geändert, sodass Sie ein Element im DOM Explorer auswählen können, indem Sie in der ausgeführten App auf dieses klicken. Nach einem Einzelklick wechselt der Modus wieder zum normalen Auswahlmodus zurück. Wenn Sie auf **Element auswählen**klicken, wird die Anwendung in den Vordergrund gestellt. Zudem wird der Cursor geändert, um den neuen Auswahlmodus wiederzugeben. Wenn Sie auf das konturierte Element klicken, kehrt der Dom Explorer mit dem ausgewählten Element in den Vordergrund zurück.
+  Wenn Sie auf **Element auswählen** klicken (oder STRG+B drücken), wird der Auswahlmodus geändert, sodass Sie ein Element im DOM Explorer auswählen können, indem Sie in der ausgeführten App auf dieses klicken. Nach einem Einzelklick wechselt der Modus wieder zum normalen Auswahlmodus zurück. Wenn Sie auf **Element auswählen** klicken, wird die Anwendung in den Vordergrund gestellt. Zudem wird der Cursor geändert, um den neuen Auswahlmodus wiederzugeben. Wenn Sie auf das konturierte Element klicken, kehrt der Dom Explorer mit dem ausgewählten Element in den Vordergrund zurück.
 
-  Bevor Sie **Element auswählen**auswählen, können Sie festlegen, ob die Elemente in der ausgeführten App mithilfe der Umschaltfläche **Webseiten-Markierungsfelder anzeigen** hervorgehoben werden sollen. Die folgende Abbildung zeigt diese Schaltfläche. Standardmäßig werden die Hervorhebungen angezeigt.
+  Bevor Sie **Element auswählen** auswählen, können Sie festlegen, ob die Elemente in der ausgeführten App mithilfe der Umschaltfläche **Webseiten-Markierungsfelder anzeigen** hervorgehoben werden sollen. Die folgende Abbildung zeigt diese Schaltfläche. Standardmäßig werden die Hervorhebungen angezeigt.
 
   ![Schaltfläche „Display web page highlights“ (Webseitenhervorhebungen anzeigen)](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")
 

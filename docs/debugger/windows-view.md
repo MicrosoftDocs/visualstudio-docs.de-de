@@ -1,5 +1,7 @@
 ---
 title: Fensteransicht | Microsoft-Dokumentation
+description: In der Fensteransicht wird eine Struktur aller Fenster und Steuerelemente angezeigt. Verwenden Sie sie als Ausgangspunkt, um Informationen zu relevanten Fenstern zu erhalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900857"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205371"
 ---
 # <a name="windows-view"></a>Fensteransicht
 Wenn Sie Spy + + zum ersten Mal öffnen, wird in der Fensteransicht eine Struktur aller Fenster und Steuerelemente im System angezeigt. Das Fensterhandle und der Klassenname werden angezeigt. Das aktuelle Desktopfenster befindet sich ganz oben in der Struktur. Alle anderen Fenster sind untergeordnete Fenster des Desktops und werden entsprechend der Standardfensterhierarchie aufgeführt. Gleichgeordnete Fenster werden in erweiterbaren Listen unter ihren übergeordneten Fenstern eingerückt angezeigt.
@@ -38,7 +40,7 @@ Wenn Sie Spy + + zum ersten Mal öffnen, wird in der Fensteransicht eine Struktu
  [How to: Anzeigefenstereigenschaften](../debugger/how-to-display-window-properties.md): m-Prozeduren zum Öffnen des Dialogfelds „Fenstereigenschaften“.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- [Spy++-Ansichten](../debugger/spy-increment-views.md): Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
+ [Spy++-Ansichten](../debugger/spy-increment-views.md) Erläutert die Spy++-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.
 
  [Verwenden von Spy++](../debugger/using-spy-increment.md): Bietet eine Einführung in das Tool Spy++ und erläutert, wie es verwendet werden kann.
 

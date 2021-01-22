@@ -1,5 +1,7 @@
 ---
 title: Analysieren des Energieverbrauchs in UWP-Apps | Microsoft-Dokumentation
+description: Verwenden Sie den Visual Studio-Profiler „Energieverbrauch“, um den Energie- und Strombedarf von UWP-Apps zu analysieren, die auf batteriebetriebenen Geräten ausgeführt werden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075456"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205787"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analysieren des Energieverbrauchs in UWP-Apps
 
@@ -40,7 +42,7 @@ Der Energieverbrauch-Profiler verwendet folgende Definitionen von *Strom* und *E
 
    Da Strom fließt, hat es auch eine Richtung (die Leistung kann in einem Zeitraum ansteigen oder abnehmen) und eine Geschwindigkeit (die Menge, mit der die Leistung ansteigt oder abnimmt).
 
-- *Energie* misst die Gesamtmenge der Leistung, entweder als Kapazität oder Potenzial, wie bei der Stromkapazität eines Akkus, oder als Gesamtsumme an Leistung über einen bestimmten Zeitraum. Die Einheit für Energie ist eine Wattstunde, d. h. die Menge an Strom eines Watts, die ständig eine Stunde lang angewendet wird. In der **Energiezusammenfassung**werden die Einheiten in Milliwattstunden **mW-h**dargestellt.
+- *Energie* misst die Gesamtmenge der Leistung, entweder als Kapazität oder Potenzial, wie bei der Stromkapazität eines Akkus, oder als Gesamtsumme an Leistung über einen bestimmten Zeitraum. Die Einheit für Energie ist eine Wattstunde, d. h. die Menge an Strom eines Watts, die ständig eine Stunde lang angewendet wird. In der **Energiezusammenfassung** werden die Einheiten in Milliwattstunden **mW-h** dargestellt.
 
 ![Energiekapazität, Energieverbrauch, verbrauchte Energie insgesamt](../profiling/media/energyprof_capcitypowerused.png)
 
@@ -93,7 +95,7 @@ if (performance && performance.mark) {
 
      ![„Energieverbrauch“ im Leistungs-Profiler auswählen](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2. Wählen Sie **Energieverbrauch** und dann **Starten**aus.
+2. Wählen Sie **Energieverbrauch** und dann **Starten** aus.
 
     > [!NOTE]
     > Wenn Sie den Profiler **Energieverbrauch** starten, wird möglicherweise das Fenster **Benutzerkontensteuerung** angezeigt, im dem Sie zur Eingabe Ihrer Berechtigung zur Ausführung von *VsEtwCollector.exe* aufgefordert werden. Klicken Sie auf **Ja**.
@@ -109,7 +111,7 @@ if (performance && performance.mark) {
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>Sammeln von Energieprofildaten für eine installierte App
  Das Energieverbrauchstool kann nur für UWP-Apps ausgeführt werden, die von einer Visual Studio-Projektmappe gestartet oder vom Microsoft Store installiert werden. Wenn eine Projektmappe in Visual Studio geöffnet ist, lautet das Standardziel **Startprojekt**. So verwenden Sie eine installierte App als Ziel
 
-1. Wählen Sie **Ziel ändern** und dann **Installierte App**aus.
+1. Wählen Sie **Ziel ändern** und dann **Installierte App** aus.
 
 2. Wählen Sie in der Liste **Installiertes App-Paket auswählen** das Ziel aus.
 
@@ -126,7 +128,7 @@ if (performance && performance.mark) {
 
 |Bild|Beschreibung|
 |-|-|
-|![Schritt 1](../profiling/media/procguid_1.png "ProcGuid_1")|Die Berichtsdatei heißt Report*JJJJMMTT-HHMM*.diagsession. Sie können den Namen ändern, wenn Sie den Bericht speichern.|
+|![Schritt 1](../profiling/media/procguid_1.png "ProcGuid_1")|Die Berichtsdatei heißt Report *JJJJMMTT-HHMM*.diagsession. Sie können den Namen ändern, wenn Sie den Bericht speichern.|
 |![Schritt 2](../profiling/media/procguid_2.png "ProcGuid_2")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|
 |![Schritt 3](../profiling/media/procguid_3.png "ProcGuid_3")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|
 |![Schritt 4](../profiling/media/procguid_4.png "ProcGuid_4")|Das Diagramm **Stromverbrauch** ist ein Liniendiagramm (mit mehreren Linien), in dem die Änderung in der Stromabgabe anzeigt wird, die durch eine Geräteressource während einer Profilerstellungssitzung verursacht wird. Der Energieverbrauchsprofiler verfolgt die von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verwendete Energie.|

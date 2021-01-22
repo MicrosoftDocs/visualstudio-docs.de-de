@@ -1,5 +1,7 @@
 ---
 title: Profilerstellung für eigenständige Anwendungen über die Befehlszeile | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie die Profilerstellungstools über die Befehlszeile verwenden, um Leistungsdaten für (eigenständige) Clientanwendungen zu sammeln.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f80f3e65969973202af08299b07ebfa420f3bd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 876c2a72f0929cffa3613026fa56a17d82786854
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557855"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533640"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Profilerstellung für eigenständige Anwendungen über die Befehlszeile
 In diesem Abschnitt werden die Prozeduren und die Optionen zum Erfassen von Leistungsdaten für eigenständige (Client-)Anwendungen unter Verwendung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools über die Befehlszeile beschrieben.
@@ -34,7 +36,7 @@ In diesem Abschnitt werden die Prozeduren und die Optionen zum Erfassen von Leis
 
 ## <a name="related-tasks"></a>Verwandte Aufgaben
 
-|Aufgabe|Verwandte Inhalte|
+|Aufgabe|Verwandter Inhalt|
 |----------|---------------------|
 |**Profilerstellung für ASP.NET-Anwendungen**|-   [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**Profilerstellung für Dienste**|-   [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)|

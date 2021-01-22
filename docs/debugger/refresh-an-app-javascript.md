@@ -1,5 +1,7 @@
 ---
 title: Aktualisieren einer UWP-App | Microsoft-Dokumentation
+description: Nehmen Sie während des Debuggens Änderungen an Ihrem Code vor, und aktualisieren Sie dann eine UWP-App (Universelle Windows-Plattform) mithilfe von JavaScript in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bce07008d285c6446d3fa8c79ce45c222c34bae
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348157"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204903"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Aktualisieren einer UWP-App in Visual Studio
 

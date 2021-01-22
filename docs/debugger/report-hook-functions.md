@@ -1,5 +1,7 @@
 ---
 title: Hookfunktionen für Berichte | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über Hookfunktionen für Berichte in Visual Studio. Eine mithilfe von _CrtSetReportHook installierte Hookfunktion für Berichte wird jedes Mal aufgerufen, wenn durch _CrtDbgReport ein Debugbericht generiert wird.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8dea558d2f125c1e64f46bb4fbf738434eda2394
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729868"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205618"
 ---
 # <a name="report-hook-functions"></a>Hookfunktionen für Berichte
 Eine mithilfe von [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook) installierte Hookfunktion für Berichte wird jedes Mal aufgerufen, wenn durch [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) ein Debugbericht generiert wird. Sie können mit dieser Funktion u. a. Berichte filtern, um bestimmte Reservierungstypen herauszustellen. Der Prototyp einer Hookfunktion für Berichte sollte etwa wie folgt aussehen:

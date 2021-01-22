@@ -1,5 +1,7 @@
 ---
 title: Debuggen von UWP-Apps auf Remotecomputern | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie mit Visual Studio eine UWP-App (Universelle Windows-Plattform) remote auf einem anderen Computer oder Gerät ausführen, debuggen, profilen und testen.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a28769237f0c1b0078e9c9c117695e68e5b521ac
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "92298710"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204955"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Debuggen von UWP-Apps auf Remotecomputern in Visual Studio
 

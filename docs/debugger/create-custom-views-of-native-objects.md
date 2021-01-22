@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d817c3600eaa82eb7f67489d5dadadaba3932f
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248060"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533965"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Erstellen benutzerdefinierter Ansichten von C++-Objekten im Debugger mit dem Natvis-Framework
 
@@ -166,6 +166,12 @@ Natvis-Visualisierungen verwenden C++-Ausdrücke, um anzuzeigende Datenelementen
 - Natvis-Ausdrücke lassen keine Funktionsauswertung oder Nebeneffekte zu. Funktionsaufrufe und Zuweisungsoperatoren werden ignoriert. Da [systeminterne Debuggerfunktionen](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) keine Nebeneffekte haben, können sie beliebig von jedem Natvis-Ausdruck aufgerufen werden, obwohl andere Funktionsaufrufe nicht zulässig sind.
 
 - Sie können die Anzeige eines Ausdrucks steuern, indem Sie einen der unter [Formatbezeichner in C++](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers) beschriebenen Formatbezeichner verwenden. Formatbezeichner werden ignoriert, wenn der Eintrag intern von Natvis verwendet wird, z. B. der `Size`-Ausdruck in einer [ArrayItems-Erweiterung](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
+
+>[!NOTE]
+> Da es sich bei dem NATVIS-Dokument um ein XML-Dokument handelt, können Sie in Ihren Ausdrücken die Operatoren kaufmännisches Und, Größer-als-Zeichen, Kleiner-als-Zeichen und Schiebeoperatoren nicht direkt verwenden. Sie müssen für diese Zeichen sowohl im Elementtext als auch in den Bedingungsanweisungen Escapezeichen verwenden. Beispiel:<br>
+> \<Item Name="HiByte"\>(byte)(_flags \&gt;\&gt; 24),x\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) == 0"\>"None"\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) != 0"\>"Some"\</Item\>
 
 ## <a name="natvis-views"></a>Natvis-Ansichten
 

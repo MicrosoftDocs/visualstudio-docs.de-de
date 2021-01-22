@@ -1,5 +1,7 @@
 ---
 title: 'Profilerbefehlszeile: Timingdatendetails für eine eigenständige App'
+description: Hier erfahren Sie, wie Sie die Instrumentierungsmethode über die Befehlszeile verwenden, um detaillierte Leistungsdaten für eine eigenständige Komponente zu sammeln.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331833"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533835"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Sammeln ausführlicher Zeitsteuerungsdaten für eine eigenständige Anwendung über die Profiler-Befehlszeile
 In diesem Abschnitt werden die Prozeduren und die Optionen zum Sammeln ausführlicher Leistungsdaten für eine (eigenständige) Client-Komponente unter Verwendung der Instrumentationsmethode über die Befehlszeile beschrieben.
