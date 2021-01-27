@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329535"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719655"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 
@@ -255,11 +255,11 @@ Sie können Shims auch für bestimmte Instanzen, für Konstruktoren und für Eig
 ## <a name="using-microsoft-fakes-in-the-ci"></a>Verwenden von Microsoft Fakes in der CI
 
 ### <a name="microsoft-fakes-assembly-generation"></a>Generieren einer Microsoft Fakes-Assembly
-Da für Microsoft Fakes Visual Studio Enterprise benötigt wird, setzt das Generieren von Fakes-Assemblys voraus, dass Sie Ihr Projekt mit der [Visual Studio-Buildaufgabe](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops) kompilieren.
+Da für Microsoft Fakes Visual Studio Enterprise benötigt wird, setzt das Generieren von Fakes-Assemblys voraus, dass Sie Ihr Projekt mit der [Visual Studio-Buildaufgabe](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true) kompilieren.
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> Alternativ können Sie Ihre Fakes-Assemblys in die CI einchecken und den [MSBuild-Aufgabe](../msbuild/msbuild-task.md?view=vs-2019) verwenden. In diesem Fall müssen Sie sicherstellen, dass Sie über einen Assemblyverweis zur generierten Fakes-Assembly in Ihrem Testprojekt verfügen, ähnlich dem folgenden Codeausschnitt:
+> Alternativ können Sie Ihre Fakes-Assemblys in die CI einchecken und den [MSBuild-Aufgabe](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true) verwenden. In diesem Fall müssen Sie sicherstellen, dass Sie über einen Assemblyverweis zur generierten Fakes-Assembly in Ihrem Testprojekt verfügen, ähnlich dem folgenden Codeausschnitt:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -273,10 +273,10 @@ Dieser Verweis muss insbesondere in Projekten im SDK-Format (.NET Core und .NET 
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Ausführen von Microsoft Fakes-Tests
-Solange Microsoft Fakes-Assemblys im konfigurierten Verzeichnis `FakesAssemblies` vorhanden sind (standardmäßig `$(ProjectDir)FakesAssemblies`), können Sie Tests unter Verwendung der [vstest-Aufgabe](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) ausführen.
+Solange Microsoft Fakes-Assemblys im konfigurierten Verzeichnis `FakesAssemblies` vorhanden sind (standardmäßig `$(ProjectDir)FakesAssemblies`), können Sie Tests unter Verwendung der [vstest-Aufgabe](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) ausführen.
 
 ::: moniker range=">=vs-2019"
-Für verteilte Tests mit der [vstest-Aufgabe](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) für .NET Core-Projekte unter Verwendung von Microsoft Fakes wird Visual Studio 2019 Update 9 Preview `20201020-06` oder höher benötigt.
+Für verteilte Tests mit der [vstest-Aufgabe](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) für .NET Core-Projekte unter Verwendung von Microsoft Fakes wird Visual Studio 2019 Update 9 Preview `20201020-06` oder höher benötigt.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d7fe5a8b2275248c0fc68f9237e9e259973c567b
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 8cb9143057bf0cfda85c835131204c6641199b48
+ms.sourcegitcommit: 10cb0b68f8cef219ea08eff9bc5f0afe1545c825
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801723"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699329"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Schritt 4: Ausführen von Code im Debugger
 
@@ -32,7 +32,7 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
-        numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
+        numspaces = int(20 * cos(rad) + 20)          # scale to 0-40 spaces
         st = ' ' * numspaces + 'o'                   # place 'o' after the spaces
         return st
 

@@ -1,5 +1,6 @@
 ---
 title: Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte | Microsoft-Dokumentation
+description: Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, in der ein Thread oder Prozess angehalten wurde, während er auf den Zugriff auf eine Ressource gewartet hat.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 185345c13134f4d2ec6086e6a66183e044c577ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 40d922d8728e53d0098ad67c8b8140f9045c32b0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771447"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722645"
 ---
 # <a name="summary-view---resource-contention-view"></a>Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte
 Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, in der ein Thread oder Prozess angehalten wurde, während er auf den Zugriff auf eine Ressource gewartet hat.
@@ -41,7 +42,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
 
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jeden Thread.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**ID**|Der Threadbezeichner.|
 |**Name**|Der Name des Prozesses, der den Thread besitzt.|
