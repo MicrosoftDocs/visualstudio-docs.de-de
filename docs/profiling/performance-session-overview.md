@@ -1,5 +1,6 @@
 ---
 title: Übersicht über Leistungssitzungen | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie die Leistungstools verwenden, um schneller produktiv arbeiten zu können und die Leistung Ihres Codes zu verbessern.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fcccf6a68afa26d8fe9ab5e5a4f40466822c689
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778465"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723269"
 ---
 # <a name="performance-session-overview"></a>Übersicht über Leistungssitzungen
 In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entwickler, die wenig Erfahrung mit Leistungsarbeit haben, werden lernen, wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools ihnen helfen, schnell produktiv zu werden und die Leistung ihres Codes zu steigern. Entwickler, die bereits Erfahrung mit der Profilerstellung haben, erhalten eine Übersicht über besondere Features und Vorgänge der Profilerstellungstools.
@@ -74,6 +75,6 @@ In dieser Übersicht werden die Grundlagen der Profilerstellung erläutert. Entw
 ## <a name="generate-a-report-of-the-results"></a>Erstellen eines Berichts mit den Ergebnissen
  Sie können die Zeilen jeder Leistungsberichtansicht in E-Mails und Kalkulationstabellen einfügen, und Sie können Berichte erstellen, die Daten für eine oder mehrere Ansichten enthalten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Übersichten](../profiling/overviews-performance-tools.md)
 - [Exemplarische Vorgehensweise: Identifizieren von Leistungsproblemen](beginners-guide-to-cpu-sampling.md)

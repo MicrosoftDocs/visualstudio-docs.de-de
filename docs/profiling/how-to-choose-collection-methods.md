@@ -1,5 +1,7 @@
 ---
 title: Auswählen von Sammlungsmethoden | Microsoft-Dokumentation
+description: Die Visual Studio Profilerstellungstools unterstützen drei Methoden für das Sammeln von Leistungsdaten. In diesem Artikel erfahren Sie, wie Sie die richtige Methode für Ihre Anwendung auswählen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851306"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801590"
 ---
 # <a name="how-to-choose-collection-methods"></a>Vorgehensweise: Auswählen von Sammlungsmethoden
 
@@ -84,7 +86,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>So wählen Sie die Sammlung von Parallelitätsdaten mithilfe der Eigenschaften der Leistungssitzung aus.
 
-1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
 2. Klicken Sie in den **Eigenschaftenseiten** auf **Allgemein**.
 

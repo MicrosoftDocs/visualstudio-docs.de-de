@@ -1,5 +1,6 @@
 ---
 title: Profilerstellung bei HPC-Clustern | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie ein Profil auf Berechnungsknoten von Microsoft Windows HPC-Clustern mithilfe der Samplingmethode für die Visual Studio-Profilerstellungstools erstellen können.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06a160adda25debe21d8262d9064c23849011dc9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772119"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720526"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profilerstellung bei HPC-Clustern (High Performance Computing)
 
@@ -54,8 +55,8 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 | | |
 |------------------| - |
 | *%HeadNode%* | Der Name des Hauptknotens für den Cluster. |
-| *%FxPath%* | Pfad zum .NET Framework 4-Installer. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe |
+| *%FxPath%* | Pfad zum .NET Framework 4-Installer. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe. |
+| *%ProfilerPath%* | Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe. |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profil auf einem HPC-Berechnungsknoten
 
@@ -136,11 +137,11 @@ Sie können die Eigenschaften von Leistungssitzungen ändern, die Sie für den H
 
 ### <a name="advanced-properties"></a>Erweiterte Eigenschaften
 
-| Eigenschaft | Beschreibung |
+| Eigenschaft | BESCHREIBUNG |
 |---------------------------------------| - |
 | **Projektname** | Der Name des aktuellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-Projekts oder -Lösung. |
 | **Bereinigen beim Beenden des Profilers** | Wenn TRUE, werden die Binärdateien entfernt, die in das Ausführungsverzeichnis bereitgestellt wurden. Durch das Benutzerprogramm erstellte Dateien und Verzeichnisse werden in diesem Schritt nicht entfernt. Wenn das Ausführungsverzeichnis und das Bereitstellungsverzeichnis von der IDE erstellt wurden, wird die IDE versuchen, diese zu entfernen. Dies geschieht nicht, wenn sie Dateien haben, die nicht von der IDE bereitgestellt wurden. |
-| **Zusätzliche bereitzustellende Dateien** | Gibt eine durch Semikolons getrennte Liste mit zusätzlichen Dateien auf den Berechnungsknoten an. Sie können auf die Schaltfläche klicken ( **...** ), um mithilfe des Dialogfelds mehrere Dateien auszuwählen. |
+| **Zusätzliche bereitzustellende Dateien** | Gibt eine durch Semikolons getrennte Liste mit zusätzlichen Dateien auf den Berechnungsknoten an. Sie können auf die Schaltfläche klicken (**...**), um mithilfe des Dialogfelds mehrere Dateien auszuwählen. |
 | **Mpiexec-Befehl** | Gibt die Anwendung an, die die MPI-Anwendung startet. Der Standardwert lautet **mpiexec.exe** |
 | **Mpiexec-Argumente** | Gibt die Argumente an, die an den Befehl mpiexec.exe übergeben werden sollen. |
 | **Angeforderte Knoten im Cluster** | Gibt die Anzahl der Knoten im Cluster an, auf denen die Anwendung ausgeführt wird. |

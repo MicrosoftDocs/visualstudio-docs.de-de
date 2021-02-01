@@ -1,5 +1,6 @@
 ---
 title: Timer | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur VSperfCmd.exe-Option „Timer“. Diese legt das Profilerstellungsereignis, für das ein Sampling durchgeführt wurde, auf Prozessortaktzyklen fest.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 908685b49a08b3084c31e768675e64bc087bc727
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778114"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722437"
 ---
-# <a name="timer"></a>Zeitgeber
-Die *VSPerfCmd.exe*-Option **Timer** legt das Profilerstellungsereignis fest, das für Prozessortaktzyklen Stichproben durchführt. Optional wird auch die Anzahl der Zyklen in einem Samplingintervall vom Standardwert 10.000.000 in einen anderen Wert geändert. Auf einen 1-GHz-Prozessor (ein Gigahertz) entsprechen 10.000.000 Prozessortaktzyklen ungefähr 100 Samples pro Sekunde. Die Mindestanzahl an Zyklen, die sich festlegen lässt, ist 50.000.
+# <a name="timer"></a>Timer
+Die *VSPerfCmd.exe* **Timer**-Option legt das Profilerstellungsereignis fest, das für Prozessortaktzyklen gesampelt wird, und optional wird die Anzahl der Zyklen in einem Sample vom Standard 10.000.000 auf einen anderen Wert geändert. Auf einen 1-GHz-Prozessor (ein Gigahertz) entsprechen 10.000.000 Prozessortaktzyklen ungefähr 100 Samples pro Sekunde. Die Mindestanzahl an Zyklen, die sich festlegen lässt, ist 50.000.
 
  **Timer** kann nur verwendet werden, wenn man die Sampling-Profilerstellungsmethode verwendet, und die Befehlszeile zusätzlich die **Launch** oder **Attach**-Option enthält.
 
@@ -50,7 +51,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 
  **Counter**[ **:** `Name,Reload,FriendlyName`]: legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator und das Samplingintervall auf `Reload` fest.
 
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]: erfasst .NET-Arbeitsspeicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]: erfasst .NET-Arbeitsspeicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.
 
 ## <a name="example"></a>Beispiel
  Dieses Beispiel zeigt, wie das Profiler-Samplingintervall auf 1.000.000 Prozessortaktzyklen festgelegt wird.

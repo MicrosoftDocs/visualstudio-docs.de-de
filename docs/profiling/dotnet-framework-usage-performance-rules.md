@@ -1,5 +1,7 @@
 ---
 title: Leistungsregeln für die .NET Framework-Verwendung | Microsoft-Dokumentation
+description: Hier lernen Sie die Leistungsregeln in der Kategorie „.NET Framework Usage“ (.NET Framework-Nutzung) kennen. Identifizieren Sie bestimmte Methoden, die optimiert werden können, sowie allgemeinere Nutzungsmuster.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532001"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801295"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Leistungsregeln für die .NET Framework-Verwendung
 Leistungsregeln in der Kategorie .NET Framework-Verwendung identifizieren bestimmte Methoden, die optimiert werden können, sowie allgemeinere Verwendungsschemas, z.B. die Garbage Collection und Sperrkonflikte, die auf Leistungsprobleme überprüft werden können.

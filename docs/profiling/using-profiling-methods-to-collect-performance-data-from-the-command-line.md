@@ -1,5 +1,6 @@
 ---
 title: Verwenden von Profilerstellungsmethoden der Befehlszeile zum Sammeln von Leistungsdaten
+description: In diesem Artikel erfahren Sie, wie die Auswahl von Profilerstellungstools der Befehlszeilentools in Visual Studio und entsprechende Optionen von Faktoren wie dem Anwendungstyp abhängt, für den Sie ein Profil erstellen.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b30aa723ea3014aec2bd05d4bd204b9427b3c218
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1796fad03d04ffb79ca1c8aeccc241ee3698f9f1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779973"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723243"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile
 Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools hängen von verschiedenen Faktoren ab, beispielsweise von der Art der Anwendung, für die ein Profil erstellt werden soll, von der Profilerstellungsmethode, die Sie verwenden möchten, sowie davon, ob die Zielanwendung in nativem Code oder in .NET Framework-Code geschrieben ist.
@@ -74,7 +75,7 @@ Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprv
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>Hinzufügen von Ebeneninteraktionsdaten zu einer Profilerstellung
  Das Hinzufügen von Ebeneninteraktionsdaten zu einer Profilerstellung erfordert bestimmte Verfahren der Befehlszeilenprofilerstellungstools. Siehe [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)

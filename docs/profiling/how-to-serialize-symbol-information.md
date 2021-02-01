@@ -1,5 +1,6 @@
 ---
 title: Serialisieren von Symbolinformationen | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie Symbole serialisieren können, die Sie benötigen, um Ihre Anwendung zu analysieren, und wie die Symbolserialisierung Symbole zur VSP-Datei hinzufügt.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d644960153a8e342f6442f3750420ea68a61b38f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0b7cdfa6e64380c966b62d6691f73719a3034e2d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851592"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722086"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Vorgehensweise: Serialisieren von Symbolinformationen
 Sie können Symbole serialisieren, die zum Analysieren Ihrer Anwendung erforderlich sind. Die Serialisierung von Symbolen fügt Symbole in die *VSP-Datei* ein. Durch das Einfügen von Symbolinformationen in die *VSP-Datei* können andere Personen einen Leistungsbericht analysieren, ohne Zugriff auf die Originalsymbole zu haben. Wenn Symbole nicht serialisiert werden, müssen die instrumentierte *EXE-* und *PDB-Dateien* zum Analysieren der *VSP-Datei* vorhanden sein.

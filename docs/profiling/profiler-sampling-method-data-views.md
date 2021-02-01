@@ -1,5 +1,6 @@
 ---
 title: Datenansichten der Profiler-Samplingmethode | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zu den Ansichten und Berichten für Profilerdatendateien, die mit der Samplingmethode generiert wurden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772160"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719434"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Datenansichten der Profiler-Samplingmethode
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profiler-Datendateien, die mit der Samplingmethode generiert werden.
@@ -68,7 +69,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
  Zeigt ein grafisches Diagramm der Beziehung zwischen einer ausgewählten Funktion und den Funktionen an, die die ausgewählte Funktion aufgerufen haben und von dieser aufgerufen wurden.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
-- [Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)
+- [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)
 
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Instrumentierungsmethode generiert werden.
 
@@ -76,5 +77,5 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die .NET-Speicherdaten enthalten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

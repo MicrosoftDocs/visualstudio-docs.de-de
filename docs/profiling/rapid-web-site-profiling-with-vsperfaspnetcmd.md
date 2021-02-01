@@ -1,5 +1,6 @@
 ---
 title: Schnelle Website-Profilerstellung mit VSPerfASPNETCmd | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie mit dem Befehlszeilentool VSPerfASPNETCmd ganz leicht ASP.NET-Webanwendungen profilen können.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +12,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a08604b95f49f55a5fea254447046d305d8feff9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771691"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720422"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Schnelle Websiteprofilerstellung mit VSPerfASPNETCmd
 
 Mit dem Befehlszeilentool **VSPerfASPNETCmd** können Sie problemlos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen profilen. Verglichen mit dem [VSPerfCmd](../profiling/vsperfcmd.md)-Befehlszeilentool stehen weniger Optionen zur Verfügung, müssen keine Umgebungsvariablen festgelegt werden und ein Neustart des Computers ist nicht erforderlich. Die Verwendung von **VSPerfASPNETCmd** ist die bevorzugte Methode für die Profilerstellung mit dem eigenständigen Profiler. Weitere Informationen finden Sie unter [Vorgehensweise: Installieren des eigenständigen Profilers](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
-> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Weitere Informationen finden Sie unter [Leistungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Weitere Informationen finden Sie unter [Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
  In einigen Szenarios, z.B. beim Sammeln von Parallelitätsdaten oder Anhalten und Fortsetzen von Profilerstellungen, ist **VSPerfCmd** die bevorzugte Profilerstellungsmethode.
 
@@ -40,19 +41,19 @@ Geben Sie zum Profilen einer [!INCLUDE[vstecasp](../code-quality/includes/vsteca
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Zum Sammeln von Anwendungsstatistiken mithilfe der Samplingmethode
  Das Sampling ist die standardmäßige Profilerstellungsmethode des Tools **VSPerfASPNETCmd** und muss nicht in der Befehlszeile angegeben werden. Mit der folgenden Befehlszeile werden Anwendungsstatistiken über die angegebene Webanwendung gesammelt:
 
- **vsperfaspnetcmd** *websiteUrl*
+ **vsperfaspnetcmd**  *websiteUrl*
 
- Ein Beispiel für eine auf einem lokalen Server gehostete *websiteurl* ist *http://localhost/MySite/default.aspx* . Ein Beispiel für eine externe Website ist *http://www.contoso.com* . Weitere Informationen finden Sie in den Beispiel-URLs in [Profilerstellung für eine Website ohne das Öffnen eines Projekts in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+ Ein Beispiel für eine auf einem lokalen Server gehostete *websiteurl* ist *http://localhost/MySite/default.aspx*. Ein Beispiel für eine externe Website ist *http://www.contoso.com* . Weitere Informationen finden Sie in den Beispiel-URLs in [Profilerstellung für eine Website ohne das Öffnen eines Projekts in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Sammeln von ausführlichen Zeitsteuerungsdaten mit der Instrumentierungsmethode
 
 Verwenden Sie die folgende Befehlszeile zum Sammeln ausführlicher Zeitsteuerungsdaten über eine dynamisch kompilierte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung:
 
-**vsperfaspnetcmd /trace** *websiteUrl*
+**vsperfaspnetcmd /trace**  *websiteUrl*
 
 Wenn Sie statisch kompilierte *DLL*-Dateien in Ihrer Webanwendung profilen möchten, müssen Sie die Dateien mithilfe des Befehlszeilentools [VSInstr](../profiling/vsinstr.md) instrumentieren. Der Vsperfaspnetcmd/Trace-Befehl wird Daten aus den instrumentierten Dateien enthalten.
 
-## <a name="to-collect-net-memory-data"></a>Sammeln von .NET-Speicherdaten
+## <a name="to-collect-net-memory-data"></a>Sammeln von NET-Speicherdaten
 
 Die **/Memory**-Option sammelt Daten zur Zuordnung von Objekten im .NET- Speicher und kann Daten über die Lebensdauer dieser Objekte sammeln. Sammeln von Speicherbelegungsdaten ist der Standardmodus der **/Memory**-Datenoption und muss nicht in der Befehlszeile angegeben werden.
 
@@ -64,14 +65,14 @@ Die **/Memory**-Option sammelt Daten zur Zuordnung von Objekten im .NET- Speiche
 
  Sie können auch die **/Trace**-Option verwenden, um ausführliche Zeitsteuerungsinformationen in die .NET-Speicherdaten einzuschließen:
 
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Erfassen von Ebeneninteraktionsdaten
 
 > [!WARNING]
 > Profilerstellungsdaten für die Ebeneninteraktion (Tier Interaction Profiling, TIP) können mit einer beliebigen Visual Studio-Edition erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in Visual Studio Enterprise angezeigt werden.
 >
-> Sie müssen zum Erfassen von TIP-Daten auf Windows 8 oder Windows Server 2012 die Instrumentierungsoption ( **/trace**) verwenden.
+> Sie müssen zum Erfassen von TIP-Daten auf Windows 8 oder Windows Server 2012 die Instrumentierungsoption (**/trace**) verwenden.
 
 Erfassen von Ebeneninteraktionsdaten mit Samplingdaten:
 
@@ -83,7 +84,7 @@ Sammeln von Ebeneninteraktionsdaten mit Instrumentationsdaten:
 
 Sammeln von Ebeneninteraktionsdaten mit .NET-Speicherdaten:
 
-**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Verwenden der /NoWait-Option
 
@@ -91,7 +92,7 @@ In der Standardeinstellung wird die Eingabeaufforderung nach einem **vsperfaspne
 
 So beginnen Sie mit der Profilerstellung:
 
-**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
 
 So beenden Sie die Profilerstellung:
 

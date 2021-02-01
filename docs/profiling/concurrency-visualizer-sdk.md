@@ -1,5 +1,7 @@
 ---
 title: SDK der Nebenläufigkeitsschnellansicht | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie mit dem Concurrency Visualizer-SDK Ihren Code für das Anzeigen von Markern instrumentieren. Marker sind Symbole, die in Concurrency Visualizer angezeigt werden, um Ereignisse zu markieren.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037353"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720981"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Parallelitätsschnellansichts-SDK
 Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläufigkeitsschnellansicht zusätzliche Informationen in der Nebenläufigkeitsschnellansicht anzeigen. Die zusätzlichen Daten lassen sich mit Phasen und Ereignissen in Ihrem Code zuordnen. Diese zusätzlichen Visualisierungen werden als *Marker* bezeichnet.  Eine exemplarische Vorgehensweise finden Sie unter [Introducing the Concurrency Visualizer SDK (Einführung in das Concurrency Visualizer SDK)](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).
@@ -31,7 +33,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>So fügen Sie einem C#- oder Visual Basic-Projekt Unterstützung für SDK hinzu
 
-1. Wählen Sie in der Menüleiste **Analysieren**,  **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.
+1. Wählen Sie in der Menüleiste **Analysieren**, **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.
 
 2. Wählen Sie das Projekt aus, in dem Sie auf das SDK zugreifen möchten, und wählen Sie anschließend die Schaltfläche **SDK zum ausgewählten Projekt hinzufügen** aus.
 
@@ -50,7 +52,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>So fügen Sie einem C++- oder C-Projekt Unterstützung für SDK hinzu
 
-1. Wählen Sie in der Menüleiste **Analysieren**,  **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.
+1. Wählen Sie in der Menüleiste **Analysieren**, **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.
 
 2. Wählen Sie das Projekt aus, in dem Sie auf das SDK zugreifen möchten, und wählen Sie anschließend die Schaltfläche **SDK zum ausgewählten Projekt hinzufügen** aus.
 
@@ -124,6 +126,6 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 |Titel|Beschreibung|
 |-----------|-----------------|
 |[C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C++|
-|[C-Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|
-|[Instrumentierung](/previous-versions/hh694104(v=vs.140))|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
-|[Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten|
+|[C Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|
+|[Instrumentation](/previous-versions/hh694104(v=vs.140))|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|
+|[Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Berichten der Profilerstellungs-Datendateien, die mithilfe der Parallelitätsmethode generiert werden und Threadausführungsdaten enthalten.|

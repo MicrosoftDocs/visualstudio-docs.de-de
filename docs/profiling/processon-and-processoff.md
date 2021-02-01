@@ -1,5 +1,6 @@
 ---
 title: ProcessOn und ProcessOff | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr darüber, wie mit den Unterbefehlen ProcessOff und ProcessOn von VSPerfCmd.exe die Profilerstellung für den angegebenen Prozess in einer Befehlszeilen-Profilerstellungssitzung angehalten bzw. fortgesetzt wird.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778387"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719447"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn und ProcessOff
 Die Unterbefehle **ProcessOff** und **ProcessOn** von „VSPerfCmd.exe“ halten die Profilerstellung für den angegebenen Prozess in einer Befehlszeilen-Profilerstellungssitzung an bzw. setzen sie fort. **ProcessOff** stoppt die Profilerstellung des Prozesses, und **ProcessOn** startet sie.

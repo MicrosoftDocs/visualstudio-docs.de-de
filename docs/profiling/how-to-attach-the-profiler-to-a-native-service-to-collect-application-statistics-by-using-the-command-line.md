@@ -1,5 +1,6 @@
 ---
 title: Anfügen des Profilers an nativen Dienst zum Abrufen von App-Statistiken
+description: Sammeln Sie mit den Visual Studio Profilerstellungstools über die Befehlszeile Leistungsstatistiken aus einem nativen Dienst.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb36988c17ecf55a5a53d14da03dc993b4d59250
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0fa6b1733d7c3d31d32294c3e08b29a072d37730
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808014"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801093"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line-vsperfcmd"></a>Vorgehensweise: Anfügen des Profilers an einen nativen Dienst zum Sammeln von Anwendungsstatistiken über die Befehlszeile (VSPerfCmd)
 In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an einen nativen Dienst angefügt wird, und wie Sie mit der Samplingmethode Leistungsstatistiken sammeln können.

@@ -1,5 +1,6 @@
 ---
 title: Zeilenansicht - .NET-Speichersamplingdaten | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung. In dieser werden die Anweisungen aufgelistet, die während der Profilerstellung Arbeitsspeicher belegt haben.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0033b3d50531bebe087f43930324db0431dee03f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774079"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721332"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zeilenansicht: Samplingdaten zum .NET-Speicher
 In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, die die Samplingmethode verwenden, werden die Anweisungen angezeigt, die während der Profilerstellungsausführung Arbeitsspeicher belegt haben. Die Spalten enthalten auch die Größe und Anzahl der Zuordnungen.
@@ -61,5 +62,5 @@ In der Zeilenansicht der Profilerstellungsdaten für die .NET-Speicherbelegung, 
 |**Exklusive Bytes**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|
 |**Exklusive Bytes %**|Der Prozentsatz aller Bytes im Speicher, die während der Profilerstellung und in dieser Zeile zugeordnet wurden.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Zeilenansicht](../profiling/lines-view-sampling-data.md)

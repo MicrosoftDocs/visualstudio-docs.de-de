@@ -1,5 +1,7 @@
 ---
 title: Anpassen von Spalten in Berichtsansichten | Microsoft-Dokumentation
+description: In den Ansichten der Leistungstools für Visual Studio können Sie Spalten hinzufügen, entfernen und neu anordnen, z. B. in den Ansichten „Funktionen“, „Prozess“ und „Aufrufer/Aufgerufener“.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 23b12ca396a91fad440dc057b67e258194732236
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851176"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800441"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Vorgehensweise: Anpassen von Spalten in Berichtsansichten
 Leistungstools in Visual Studio Team System Development Edition sind in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE), vollständig integriert, um eine reibungslose Benutzererfahrung anzubieten Die folgende Liste stellt für Ansichten dar, die durch Hinzufügen, Entfernen und Neuanordnen von Spalten angepasst werden können:

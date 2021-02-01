@@ -1,5 +1,7 @@
 ---
 title: Erstellen eines ETW-Berichts mit Profilerstellungstools | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie einen ETW-Bericht (Event Tracing for Windows, Ereignisablaufverfolgung für Windows) erstellen. Dieser Bericht enthält die in einer Visual Studio Profilerstellungstools-Leistungssitzung erfassten ETW-Ereignisse.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13de203a6a9082b33f5d68f8b4e2fbdc6f0e14b3
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c35a3e2d7da9472167c2ac20400fe3b3992b4883
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851189"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800484"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Vorgehensweise: Erstellen eines ETW-Berichts für Profilerstellungstools
 In einem ETW-Bericht werden die ETW-Ereignisse aufgeführt, die während einer Leistungssitzung der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools aufgezeichnet wurden. ETW-Daten werden in einer Binärdatei (*ETL*) erfasst. Weitere Informationen zu diesem Bericht finden Sie unter [Bericht der Ereignisablaufverfolgung für Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).

@@ -1,5 +1,7 @@
 ---
 title: Analysieren der Speicherauslastung für .NET-Objekte | Microsoft-Dokumentation
+description: Zeigen Sie mit dem .NET-Tool für die Speicherbelegung für Objekte an, wie viel Arbeitsspeicher Ihre App nutzt und für welche Codepfade die Speicherbelegung am höchsten ist.
+ms.custom: SEO-VS-2020
 ms.date: 12/9/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4c0d8b02f867797317ff762e7a23bec042f93318
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970223"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801494"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analysieren der Speicherauslastung mithilfe des .NET-Tools für die Objektzuordnung
 
@@ -124,7 +126,7 @@ Mit der Ansicht **Funktionen** können Sie sich Prozesse, Module und Funktionen 
   - **Automatische Größe (Bytes)**
   - **Durchschnittliche Größe (Bytes)**
 
-### <a name="collection"></a>Auflistung
+### <a name="collection"></a>Sammlung
 
 ![Die Ansicht „Sammlung“](../profiling/media/collectionlight.png "Die Ansicht „Sammlung“")
 

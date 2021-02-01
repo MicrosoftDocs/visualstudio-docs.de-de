@@ -1,5 +1,6 @@
 ---
 title: Instrumentierungsmethoden-Datenansichten | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Referenzinformationen zu den Ansichten und Berichten für Profilerdatendateien, die mit der Instrumentierungsmethode generiert wurden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +13,22 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18d7d2266ec21a3eee983474e433d72245658c43
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774162"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721540"
 ---
 # <a name="instrumentation-method-data-views"></a>Instrumentierungsmethoden-Datenansichten
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profiler-Datendateien, die mit der Instrumentierungsmethode generiert werden.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
-- [Summary View (Zusammenfassungsansicht)](../profiling/summary-view-instrumentation-data.md)
+- [Zusammenfassungsansicht](../profiling/summary-view-instrumentation-data.md)
 
  Führt die Funktionen auf, die die meiste Zeit in Anspruch genommen bzw. die meiste individuelle Arbeit ausgeführt haben.
 
-- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view-instrumentation-data.md)
+- [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)
 
  Zeigt die Ausführungspfade von Funktionen in einer hierarchischen Struktur an.
 
@@ -50,7 +51,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
 - [Prozessansicht](../profiling/process-view.md)
 
- Listet den Prozessstart, das Prozessende und die Lebensdauer für alle Prozesse auf, für die ein Profil erstellt wurde.
+ Diese Ansicht listet den Prozessstart, das Prozessende und die Lebensdauer für alle Prozesse auf, für die ein Profil erstellt wurde.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
@@ -65,5 +66,5 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Referenzinformationen zu den Ansichten und Berichten für Profiler-Datendateien, die mit der Threadkonfliktmethode generiert wurden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Grundlagen zu Instrumentationsdatenwerten](../profiling/understanding-instrumentation-data-values.md)

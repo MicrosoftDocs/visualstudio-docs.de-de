@@ -1,5 +1,6 @@
 ---
 title: Optimieren der Profilereinstellungen | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zum Leistungs-Profiler und zum Fenster „Diagnosetools“ in Visual Studio. Diese umfassen viele verschiedene Einstellungen, die sich auf die Gesamtleistung der Tools auswirken.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 482ee640f4b84348e00f2f3da42a4dbe13f73460
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400310"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722840"
 ---
 # <a name="optimizing-profiler-settings"></a>Optimieren der Profilereinstellungen
 

@@ -1,5 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zum Tool „VSPerfCmd.exe“. Dieses wird zum Starten und Beenden der Sammlung von Leistungsdaten verwendet. Außerdem erhalten Sie Informationen zu verschiedenen VSPerfCmd-Tooloptionen.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330008"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719187"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Das Tool *VSPerfCmd.exe* wird zum Starten und Beenden der Sammlung von Leistungsdaten verwendet. Es verwendet die folgende Syntax:

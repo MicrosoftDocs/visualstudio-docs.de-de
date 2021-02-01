@@ -1,5 +1,6 @@
 ---
 title: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Speicherdaten
+description: Verwenden Sie die Befehlszeilentools der Visual Studio Profilerstellungstools, um den Profiler an einen .NET Framework-Dienst anzufügen und Arbeitsspeicherdaten zu sammeln.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50a77d3cc8d2bb3df73542b273ec3697e0a9ccd9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e31404c07fb7093bb2bd1114340cdb87d3c8558a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811070"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800585"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an einen .NET Framework-Dienst zum Sammeln von Speicherdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet werden, um den Profiler an einen .NET Framework-Dienst anzufügen und Speicherdaten zu erfassen. Sie können Daten zur Anzahl und der Größe der Speicherbelegungen erfassen, und Sie können auch Daten zur Lebensdauer von Arbeitsspeicherobjekten erfassen.

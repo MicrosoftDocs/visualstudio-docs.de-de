@@ -1,5 +1,6 @@
 ---
 title: Ansicht „Threaddetails – Konfliktdaten < Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Ansicht „Threaddetails“. Diese enthält ein Zeitachsendiagramm der blockierenden Ereignisse im ausgewählten Thread einer Profilerstellung.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1cf1d9d7afeef8962026739116f75d4289d6283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778166"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718797"
 ---
 # <a name="thread-details-view---contention-data"></a>Threaddetailansicht: Konfliktdaten
 Die Ansicht "Threaddetails" enthält ein Zeitachsendiagramm der blockierenden Ereignisse im ausgewählten Thread einer Profilerstellung, die von Ressourcenkonflikten ausgelöst wurden. Ein blockierendes Ereignis tritt auf, wenn der Thread gezwungen wird, die Ausführung anzuhalten, da ein anderer Thread den Zugriff auf eine Ressource gesperrt hat.

@@ -1,5 +1,6 @@
 ---
 title: Anfügen des Profilers an eine native App und Sammeln von App-Statistiken
+description: Verwenden Sie die Visual Studio Profilerstellungstools, um den Profiler an eine native eigenständige Anwendung anzufügen, die gerade ausgeführt wird, und mit der Samplingmethode Leistungsstatistiken abzurufen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b696a9bddeee4dc7b309945aab66c1d9c801307
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 37914559f71748865e25b5512264f6597ae4ef42
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811083"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801646"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine native, eigenständige Anwendung und Sammeln von Anwendungsdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet werden, um den Profiler an eine ausgeführte eigenständige und native .NET Framework-(Client-)Anwendung anzufügen und Leistungsstatistik mithilfe der Samplingmethode zu sammeln.

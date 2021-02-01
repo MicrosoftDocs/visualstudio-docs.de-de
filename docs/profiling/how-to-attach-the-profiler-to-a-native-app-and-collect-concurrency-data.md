@@ -1,5 +1,6 @@
 ---
 title: Anfügen des Profilers an eine native App und Sammeln von Parallelitätsdaten
+description: Verwenden Sie Befehlszeilentools der Visual Studio Profilerstellungstools, um den Profiler an eine native eigenständige (C-/C++-)Anwendung anzufügen, die gerade ausgeführt wird, und Daten zu Threadkonflikten abzurufen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a853a8ff3d8ecdc89316edafc927ec93096f720f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd06783f50708e13c97f7bfe00a22be26739fd9c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811057"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801642"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine native, eigenständige Anwendung und Sammeln von Parallelitätsdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an eine aktive, native und eigenständige Anwendung (C/C++) angefügt wird und Daten zu Threadkonflikten erfasst werden.

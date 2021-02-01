@@ -1,5 +1,6 @@
 ---
 title: span-Klasse | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Span-Klasse, und Sie erfahren, wie damit eine Phase der Anwendung definiert werden kann. Außerdem lernen Sie die öffentlichen Konstruktoren der Span-Klasse und die Vererbungshierarchie kennen.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62979756"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720045"
 ---
 # <a name="span-class"></a>span-Klasse
 Definiert eine Phase der Anwendung.
@@ -32,7 +33,7 @@ class span;
 
 ### <a name="public-constructors"></a>Öffentliche Konstruktoren
 
-|name|Beschreibung|
+|Name|Beschreibung|
 |----------|-----------------|
 |[span::span-Konstruktor](../profiling/span-span-constructor.md)|Initialisiert eine neue Instanz der `span`-Klasse.|
 |[span::~span-Destruktor](../profiling/span-tilde-span-destructor.md)|Zerstört das `span`-Objekt und gibt seine Ressourcen frei.|
@@ -40,7 +41,7 @@ class span;
 ## <a name="inheritance-hierarchy"></a>Vererbungshierarchie
  `span`
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkersobj.h*
 
  **Namespace:** Concurrency::diagnostic

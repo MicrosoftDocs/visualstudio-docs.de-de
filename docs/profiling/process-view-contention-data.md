@@ -1,5 +1,6 @@
 ---
 title: Prozessansicht - Konfliktdaten | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Prozessansicht. Diese zeigt Konfliktdaten für die Prozesse und Threads an, die während der Profilerstellung ausgeführt wurden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778400"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719470"
 ---
 # <a name="process-view---contention-data"></a>Prozessansicht: Konfliktdaten
 Die Prozessansicht zeigt Konfliktdaten für die Prozesse und Threads, die während der Profilerstellung ausgeführt wurden.

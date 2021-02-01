@@ -1,5 +1,7 @@
 ---
 title: CvWriteAlert-Funktion | Microsoft-Dokumentation
+description: Dieser Artikel enthält Referenzinformationen für die Funktion CvWriteAlert des Concurrency Visualizer-SDK (C-Bibliothek).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb2cc6f7408fc5d9af0215dbccf166477876ac23
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332171"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686440"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert-Funktion
 Schreibt eine Warnung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht
@@ -57,14 +59,14 @@ HRESULT CvWriteAlertVA(
 #### <a name="parameters"></a>Parameter
  `argList`: eine Liste von Argumenten.
 
- `pMarkerSeries`: gültiger Markerreihenkontext. Darf nicht NULL sein.
+ `pMarkerSeries`: gültiger Markerreihenkontext. Lässt keine NULL-Werte zu.
 
- `pMessage`: die Formatzeichenfolge für die Meldung. Darf nicht NULL sein.
+ `pMessage`: die Formatzeichenfolge für die Meldung. Lässt keine NULL-Werte zu.
 
 ## <a name="return-value"></a>Rückgabewert
  S_OK, wenn die Meldung erfolgreich geschrieben wurde. Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkers.h*
 
  **Unicode:** CvWriteAlertW, CvWriteAlertVW

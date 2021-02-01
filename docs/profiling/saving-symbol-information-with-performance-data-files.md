@@ -1,5 +1,6 @@
 ---
 title: Speichern von symbolischen Informationen mittels Leistungsdatendateien | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie die Leistungseinstellungen für Projekte so festlegen können, dass Symbole in Ihrer Berichtsdatei gespeichert oder serialisiert werden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778296"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720214"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien
 
@@ -28,7 +29,7 @@ Wenn Sie die Visual Studio-IDE zur Analyse von Dateien verwenden und Ihre VSP-Da
 
 Sie können Symbole über die Visual Studio-IDE oder über die Befehlszeile serialisieren:
 
-- Zum Serialisieren von Symbolen im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE zeigen Sie auf **Extras** in der Menüleiste, und klicken Sie dann auf **Optionen**. Wählen Sie im Fenster **Optionen** **Leistungstools** aus, und aktivieren Sie das Kontrollkästchen **Symbolinformationen automatisch serialisieren**.
+- Zum Serialisieren von Symbolen im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE zeigen Sie auf **Extras** in der Menüleiste, und klicken Sie dann auf **Optionen**. Wählen Sie im Fenster **Optionen****Leistungstools** aus, und aktivieren Sie das Kontrollkästchen **Symbolinformationen automatisch serialisieren**.
 
 - PACKSYMBOLS ist die entsprechende Befehlszeilenoption, wenn Sie Berichtsdateien speichern. Zum Serialisieren von Symbolen geben Sie **vsperfreport /summary:all /packsymbols filename.vsp** ein.
 

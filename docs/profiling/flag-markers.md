@@ -1,5 +1,7 @@
 ---
 title: Flag-Marker | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Funktion von Flagmarkern in Visual Studio Concurrency Visualizer. Ein Flag-Marker stellt ein Ereignis dar, das zu einem bestimmten Zeitpunkt in einer App aufgetreten ist.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969950"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801474"
 ---
 # <a name="flag-markers"></a>Flag-Marker
 Ein Flag-Marker stellt ein Ereignis dar, das zu einem bestimmten Zeitpunkt in einer App aufgetreten ist. Ein Flag kann verschiedene Anwendungsereignisse darstellen. Ein Flag kann z.B. die Planung eines bestimmten Arbeitselements oder eine ausgelöste Ausnahme anzeigen. Runtimes wie die Task Parallel Library können auch Flags generieren.
@@ -30,7 +32,7 @@ Ein Flag-Marker stellt ein Ereignis dar, das zu einem bestimmten Zeitpunkt in ei
 
  ![Die fünf Farben der Kategoriemarker](../profiling/media/cvmarkercategory.png "CVMarkerCategory") Marker mit Kategorien
 
-## <a name="alerts"></a>Benachrichtigungen
+## <a name="alerts"></a>Alerts
  Eine Warnung ist ein rotfarbiges Flag, das ein wichtiges Anwendungsereignis wie etwa eine Ausnahme angibt.  So sieht eine Warnung aus:
 
  ![Warnungsmarker für die Parallelitätsschnellansicht](../profiling/media/cvmarkeralert.png "CVMarkerAlert") Ein Warnungsmarker

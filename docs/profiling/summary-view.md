@@ -1,5 +1,6 @@
 ---
 title: Zusammenfassungsansicht | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Zusammenfassungsansicht. Diese zeigt Informationen über die leistungsintensivsten Funktionen oder Objekte während einer Profilerstellung.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85546886"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719278"
 ---
 # <a name="summary-view"></a>Zusammenfassungsansicht
 Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten Funktionen oder Objekte in einem Profilerstellungslauf an. In dieser Ansicht wird anhand der Leistungsmetriken der Profilerstellungsmethode ein Zeitachsendiagramm und mindestens zwei Listen mit den leistungsintensivsten Funktionen oder Objekten dargestellt. Die Daten in dieser Ansicht sind von der verwendeten Profilerstellungsmethode abhängig (Sampling, Instrumentierung oder Parallelität) und davon, ob die .NET-Speicherreservierung erfasst wurde.

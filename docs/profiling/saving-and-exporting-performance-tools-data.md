@@ -1,5 +1,6 @@
 ---
 title: Speichern und Exportieren von Daten aus Leistungstools | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie gefilterte oder ungefilterte Ansichten der Profilerstellungs-Datendateien (.vsp) als Dateien mit analysierten Berichten (.vsps) speichern können.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b340abd81cef7183c2ba25af58ae432d8c80e6a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773898"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720151"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Speichern und Exportieren von Daten aus Leistungstools
 In diesem Artikel wird das Speichern und Exportieren von Leistungsdatendateien beschrieben.
@@ -26,7 +27,7 @@ In diesem Artikel wird das Speichern und Exportieren von Leistungsdatendateien b
 
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Speichern eines analysierten Leistungsberichts über den Leistungs-Explorer
 
-1. Klicken Sie unter **Berichte**mit der rechten Maustaste auf die Profilerstellungs-Datendatei, die Sie analysieren möchten, und klicken Sie anschließend auf **Analysierte Daten speichern**.
+1. Klicken Sie unter **Berichte** mit der rechten Maustaste auf die Profilerstellungs-Datendatei, die Sie analysieren möchten, und klicken Sie anschließend auf **Analysierte Daten speichern**.
 
 2. Legen Sie im Dialogfeld **Analysierte Daten speichern** das Verzeichnis fest und geben Sie den Dateinamen ein.
 
@@ -52,7 +53,7 @@ In diesem Artikel wird das Speichern und Exportieren von Leistungsdatendateien b
 
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Exportieren von Leistungsberichten aus dem Fenster „Leistungs-Explorer“
 
-1. Wählen Sie im **Leistungs-Explorer**den Bericht aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Exportieren**aus.
+1. Wählen Sie im **Leistungs-Explorer** den Bericht aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Exportieren** aus.
 
      Das Dialogfeld **Bericht exportieren** wird angezeigt.
 
@@ -60,7 +61,7 @@ In diesem Artikel wird das Speichern und Exportieren von Leistungsdatendateien b
 
 3. Geben Sie unter **Prefix report with**(Präfixreport mit) das Präfix an, dass Sie dem Berichtsnamen hinzufügen möchten.
 
-4. Geben Sie unter **Speicherort des exportierten Berichts**das Verzeichnis an.
+4. Geben Sie unter **Speicherort des exportierten Berichts** das Verzeichnis an.
 
 5. Wählen Sie unter **Format des exportierten Berichts**(durch Trennzeichen getrennt) (\*.csv\)) oder XML-Daten (\*.xml\)) aus.
 
@@ -80,7 +81,7 @@ In diesem Artikel wird das Speichern und Exportieren von Leistungsdatendateien b
 
 5. Geben Sie unter **Prefix report with**(Präfixreport mit) das Präfix an, dass Sie dem Berichtsnamen hinzufügen möchten.
 
-6. Geben Sie unter **Speicherort des exportierten Berichts**das Verzeichnis an.
+6. Geben Sie unter **Speicherort des exportierten Berichts** das Verzeichnis an.
 
 7. Wählen Sie unter **Format des exportierten Berichts** (durch Trennzeichen getrennt) (\*.csv) oder XML-Daten (\*.xml) aus.
 

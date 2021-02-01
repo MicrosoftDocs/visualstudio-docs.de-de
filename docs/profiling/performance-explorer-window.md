@@ -1,5 +1,6 @@
 ---
 title: Das Fenster „Leistungs-Explorer“ | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zum Fenster „Leistungs-Explorer“ in der integrierten Visual Studio-Entwicklungsumgebung (IDE). Hier können Sie mit den Visual Studio-Profilerstellungstools Leistungssitzungen konfigurieren und starten.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772438"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722814"
 ---
 # <a name="performance-explorer-window"></a>Das Fenster "Leistungs-Explorer"
 
@@ -50,7 +51,7 @@ Das Fenster **Leistungs-Explorer** enthält eine Strukturansicht, in dem die Bin
 
 - **Berichte**: Zeigt die Namen von Profilerstellungsdatendateien an, die für die Sitzung generiert werden. Klicken Sie mit der rechten Maustaste auf **Berichte**, um einen vorhandenen Bericht hinzuzufügen oder zwei Profiler-Datendateien zu vergleichen. Klicken Sie mit der rechten Maustaste auf einen Berichtsnamen, um eine Profilerstellungsdatendatei zu öffnen, entfernen oder exportieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
 [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)

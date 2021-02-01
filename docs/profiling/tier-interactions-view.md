@@ -1,5 +1,6 @@
 ---
 title: Ansicht „Ebeneninteraktionen“ | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Profilerstellung für die Ebeneninteraktion. Diese bietet weitere Informationen zu den Ausführungszeiten in Funktionen von Anwendungen mit mehreren Ebenen, die mit Datenbanken kommunizieren.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,18 +13,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778140"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722515"
 ---
-# <a name="tier-interactions-view"></a>Ansicht "Ebeneninteraktionen"
+# <a name="tier-interactions-view"></a>Ebeneninteraktionen (Ansicht)
 
 Die Profilerstellung für die Ebeneninteraktion bietet weitere Informationen zu den Ausführungszeiten in Funktionen von Anwendungen mit mehreren Ebenen, die über [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] mit Datenbanken kommunizieren. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt.
 
-**Voraussetzungen**
+**Anforderungen**
 
 - Visual Studio Enterprise
 
@@ -41,7 +42,7 @@ Die Ansicht „Ebeneninteraktionen“ zeigt Ebeneninteraktionsdaten in zwei Bere
 |------------|-----------------|
 |**Name**|– Bei einer Zeile der obersten Ebene ist es der Name des profilierten Prozesses oder der Webseite.<br />– Bei einer Datenbankverbindungszeile ist dies der Name des Servers, der die Datenbank hostet.|
 |**Datenbank**|Der Name der Datenbank (nur Datenbankverbindungszeilen).|
-|**Count**|Die Gesamtanzahl der Anforderungen, die vom Prozess, der Webseite oder der Datenbankverbindung generiert werden.|
+|**Anzahl**|Die Gesamtanzahl der Anforderungen, die vom Prozess, der Webseite oder der Datenbankverbindung generiert werden.|
 |**Verstrichene Zeit insgesamt**|Die Gesamtzeit, die für die Ausführung einer Anforderung vom Prozess, der Webseite oder der Datenbankverbindung aufgewendet wurde.|
 |**Maximal verstrichene Zeit**|Die maximale Zeit, die für die Ausführung einer Anforderung vom Prozess, der Webseite oder der Datenbankverbindung aufgewendet wurde.|
 |**Minimal verstrichene Zeit**|Die minimale Zeit, die für die Ausführung einer Anforderung vom Prozess, der Webseite oder der Datenbankverbindung aufgewendet wurde.|

@@ -1,5 +1,6 @@
 ---
 title: Leistungsberichtansichten | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zu Ansichten von Profilerstellungsdatendateien. Diese werden in der Visual Studio-IDE angezeigt.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772287"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722749"
 ---
 # <a name="performance-report-views"></a>Leistungsberichtansichten
 Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools. Ansichten von Profilerstellungs-Datendateien werden in der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-IDE angezeigt. Berichte werden mithilfe des [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilentools erstellt.
@@ -46,11 +47,11 @@ Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten d
 
 - [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)
 
- Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten
+ Referenzinformationen zu den Ansichten und Berichten der Profilerstellungs-Datendateien, die mithilfe der Parallelitätsmethode generiert werden und Threadausführungsdaten enthalten.
 
 - [Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)
 
  Referenzinformationen zur Interaktionsansicht und dem Bericht der Profilerstellungs-Datendateien, die Ebeneninteraktionsdaten enthalten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

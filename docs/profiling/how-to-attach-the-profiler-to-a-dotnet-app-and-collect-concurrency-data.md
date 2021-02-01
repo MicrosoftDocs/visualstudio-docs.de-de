@@ -1,5 +1,6 @@
 ---
 title: Anfügen eines Profilers an .NET zum Sammeln von Parallelitätsdaten
+description: Hier erfahren Sie, wie Sie Befehlszeilentools der Visual Studio Profilerstellungstools zum Anfügen des Profilers an eine aktuell ausgeführte .NET Framework-App verwenden, um Parallelitätsdaten für Prozesse und Threads abzurufen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e071df829d01d638fb268f4f52df2ce731f75c1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4d584d9d6cecc4d5df0f3c32172d4aeec9c02c97
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808037"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801132"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Parallelitätsdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie der Profiler mithilfe der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an eine ausgeführte eigenständige .NET Framework-(Client-)Anwendung angefügt wird und wie Parallelitätsdaten zu Prozessen und Threads gesammelt werden.
