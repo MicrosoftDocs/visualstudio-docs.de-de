@@ -1,5 +1,6 @@
 ---
 title: 'Profilerstellung über die Befehlszeile: Erstellen von Berichten'
+description: Hier erfahren Sie, wie Sie mit dem Befehlszeilentool VSPerfReport aus Profilerstellungs-Datendateien Berichte im XML- oder CSV-Format (durch Trennzeichen getrennte Datei) erstellen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb0f1fa0f9bbe760b1ea89074d02044cf26ab7d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1f57e372ec4fa3215a9f553403f513dc91b43016
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808824"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686245"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Erstellen von Profiler-Berichten über die Befehlszeile
 Mit dem Befehlszeilentool **VSPerfReport** können Sie Berichte im *XML*- oder *CSV*-Format aus Profilerstellungsdateien (*VSP*) erstellen. VSPerfReport-Berichtstypen entsprechen in den tabellenbasierten Ansichten der Schnittstelle für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sie können den Bericht filtern, sodass nur Ihr Code und nur ein Teil der Profilerstellungs-Datendatei angezeigt wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).

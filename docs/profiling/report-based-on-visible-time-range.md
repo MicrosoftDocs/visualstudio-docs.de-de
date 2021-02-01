@@ -1,5 +1,6 @@
 ---
 title: Auf sichtbarem Zeitraum basierender Bericht | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Ansicht „Profil“, die Berichte anzeigt, die auf dem Zeitbereich und den Kanälen basieren, die derzeit sichtbar sind.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63002348"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720370"
 ---
 # <a name="report-based-on-visible-time-range"></a>Auf sichtbarem Zeitraum basierender Bericht
 Die Profilansicht stellt Berichte dar, die auf dem derzeit sichtbaren Zeitbereich und den Kanälen basieren. Um sich Details für unterschiedliche Datenteilmengen anzeigen zu lassen, klicken Sie in der Legende auf „Elemente“.
 
  Weitere Informationen zu den Daten finden Sie in den nachfolgenden Tabellen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Es werden keine Threadaktivitäten angezeigt](../profiling/no-thread-activity-to-show-threads-view.md)
 - [Ausführungsprofilbericht](../profiling/execution-profile-report.md)
 - [Synchronisierungszeit](../profiling/synchronization-time.md)

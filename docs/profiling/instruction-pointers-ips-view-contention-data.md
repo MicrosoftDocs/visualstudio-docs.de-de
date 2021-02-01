@@ -1,5 +1,6 @@
 ---
 title: Anweisungszeigeransicht – Konfliktdaten | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Anweisungszeigeransicht (IPs-Ansicht) der Konfliktdaten. Diese führt Daten für die Assemblyanweisungen auf, deren Ausführung während der Profilerstellung blockiert wurde.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +12,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3877afb4beb48259d737112d61a36edc7a4fd4d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774311"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721592"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Anweisungszeigeransicht: Konfliktdaten
 Die Anweisungszeigeransicht (IPs-Ansicht) der Konfliktdaten führt Daten für die Assemblyanweisungen auf, die nicht während der Profilerstellung ausgeführt werden durften.
 
  In der nachstehenden Tabelle werden die Werte der Spalten in der Anweisungszeigeransicht erklärt.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Exklusive blockierte Zeit %**|Die blockierte Zeit in dieser Funktion|
 |**Exklusive blockierte Zeit %**|Der Prozentsatz der blockierten Zeit, während die Anweisung ausgeführt wurde|
@@ -36,7 +37,7 @@ Die Anweisungszeigeransicht (IPs-Ansicht) der Konfliktdaten führt Daten für di
 |**Modulname**|Der Name des Moduls, das die Anweisung enthält|
 |**Modulpfad**|Der Pfad des Moduls, das die Anweisung enthält|
 |**Prozess-ID**|Die Prozess-ID (PID) des Profilerstellungsprozesses.|
-|**Prozessname**|Der Prozessname.|
+|**Prozessname**|Der Name des Prozesses.|
 |**Quellanfangszeichen**|Der Offset des Zeichens der Quelldateizeile, an dem diese Anweisung beginnt|
 |**Quellendzeichen**|Der Offset des Zeichens der Quelldateizeile, an dem diese Anweisung endet|
 |**Quelldatei**|Die Quelldatei, die die Anweisung enthält|
@@ -44,7 +45,7 @@ Die Anweisungszeigeransicht (IPs-Ansicht) der Konfliktdaten führt Daten für di
 |**Quellendzeile**|Die Zeilennummer in der Quelldatei, bei der diese Anweisung endet|
 
 ## <a name="see-also"></a>Siehe auch
-- [How to: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
+- [Vorgehensweise: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)
 - [Anweisungszeigeransicht](../profiling/instruction-pointers-ips-view.md)
 - [Anweisungszeigeransicht: .NET-Speichersamplingdaten im Profiler](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 - [Anweisungszeigeransicht](../profiling/instruction-pointers-ips-view-sampling-data.md)

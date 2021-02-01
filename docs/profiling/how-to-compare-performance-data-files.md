@@ -1,5 +1,7 @@
 ---
 title: Vergleichen von Leistungsdatendateien | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie die Ergebnisse aus zwei verschiedenen Profiler-Datendateien (.vsp oder .vsps) vergleichen, um Unterschiede, Leistungsregressionen und Leistungsverbesserungen zu finden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 40988d23dd8e9b848ea410aa75f4d4c1f45d524d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851241"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800453"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Vorgehensweise: Vergleichen von Leistungsdatendateien
 Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.*vsp* oder .*vsps*) vergleichen, indem Sie einen Vergleichsbericht („Diff“) oder eine Ansicht erstellen. Der Vergleich zeigt die Unterschiede, Leistungsabnahmen und -verbesserungen, die von einer Profilerstellungssitzung in die andere aufgetreten sind.

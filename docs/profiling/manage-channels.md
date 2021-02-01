@@ -1,5 +1,6 @@
 ---
 title: Verwalten von Kanälen | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie die Kanäle für Ihren Prozess organisieren können, sodass Sie bestimmte Muster in der Threadansicht in Concurrency Visualizer untersuchen können.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64779240"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721267"
 ---
 # <a name="manage-channels"></a>Verwalten von Kanälen
 In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kanäle für den Prozess so organisieren, dass Sie bestimmte Muster untersuchen können. Sie können Kanäle sortieren, sie nach oben und unten verschieben oder sie ausblenden und wieder einblenden.
@@ -28,11 +29,11 @@ In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kan
 |Kriterien|Definition|
 |--------------|----------------|
 |Startzeit|Sortiert Threads nach ihren Startzeiten. Dies ist die standardmäßige Sortierreihenfolge.|
-|Endzeit|Sortiert Threads nach ihren Endzeiten.|
+|Beendigungszeit|Sortiert Threads nach ihren Endzeiten.|
 |Ausführung|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die Ausführung benötigt wird.|
-|Synchronisierung|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die Synchronisierung benötigt wird.|
+|Synchronization|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die Synchronisierung benötigt wird.|
 |E/A|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die E/A (Lesen und Schreiben von Daten) benötigt wird.|
-|Sleep|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für den Standbymodus benötigt wird.|
+|Standby|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für den Standbymodus benötigt wird.|
 |Paging|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für das Paging benötigt wird.|
 |Vorzeitige Entfernung|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die vorzeitige Entfernung benötigt wird.|
 |Benutzeroberflächenverarbeitung|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die Benutzeroberflächenverarbeitung benötigt wird.|
@@ -58,7 +59,7 @@ In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kan
 ## <a name="group-markers-by-thread"></a>Marker nach Threads gruppieren
  Wenn die Ablaufverfolgung Markerereignisse enthält, können Sie diesen Befehl verwenden, um Markerkanäle unter dem Thread, der die Markerereignisse generiert hat, zu gruppieren.  Die Datenträgerkanäle werden an das obere Ende der Kanalliste verschoben, und GPU-Kanäle werden ganz nach unten verschoben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)
 - [Aktivieren/Deaktivieren des Messmodus](../profiling/measure-mode-on-off.md)
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

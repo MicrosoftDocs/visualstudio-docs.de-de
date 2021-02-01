@@ -1,5 +1,7 @@
 ---
 title: Funktionsansicht – Konfliktdaten | Microsoft-Dokumentation
+description: Hier erhalten Sie ausführliche Informationen zur Funktionsberichtsansicht für Konfliktdaten, in der die Funktionen in der Profilerstellungsausführung aufgeführt sind, deren Ausführung während der Profilerstellungsausführung blockiert wurde.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780051"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801666"
 ---
 # <a name="functions-view---contention-data"></a>Funktionsansicht: Konfliktdaten
 Die Funktionsberichtansicht der Konfliktdatenlisten der Funktionen in der Profilerstellungsausführung, deren Ausführung während der Profilerstellung blockiert wurde.
 
  In der folgenden Tabelle werden die Werte erklärt, die in der Funktionsansicht einer Profilerstellungsdatendatei angezeigt werden, die anhand der Parallelitätsmethode erstellt wurde.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Exklusive blockierte Zeit %**|Der Zeitraum, in dem diese Funktion keinen Code im Text der Funktion ausführen konnte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.|
 |**Exklusive blockierte Zeit %**|Der Prozentsatz der gesamten blockierten Zeit in der Profilerstellung, für die nur diese Funktion blockiert wurde.|
@@ -39,7 +41,7 @@ Die Funktionsberichtansicht der Konfliktdatenlisten der Funktionen in der Profil
 |**Modulname**|Der Name des Moduls, das die Funktion enthält.|
 |**Modulpfad**|Der Pfad des Moduls, das die Funktion enthält.|
 |**Prozess-ID**|Der Prozess-ID (PID) des Prozesses, in dem die Funktion ausgeführt wurde.|
-|**Prozessname**|Der Prozessname.|
+|**Prozessname**|Der Name des Prozesses.|
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|
 
 ## <a name="see-also"></a>Siehe auch

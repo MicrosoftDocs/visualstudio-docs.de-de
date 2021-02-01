@@ -1,5 +1,6 @@
 ---
 title: Anfügen eines Profilers an .NET zum Sammeln von Speicherdaten
+description: Hier erfahren Sie, wie Sie mit Befehlszeilentools der Visual Studio Profilerstellungstools den Profiler an eine aktuell ausgeführte eigenständige .NET Framework-(Client-)App anfügen und Arbeitsspeicherdaten abrufen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88b3eedf8989b4c7421ecb7504b18997058a0204
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a80e4201f04565aaa163d58bca8e13ae715b09f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811109"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801111"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine eigenständige .NET Framework-Anwendung zum Sammeln von Arbeitsspeicherdaten über die Befehlszeile
 

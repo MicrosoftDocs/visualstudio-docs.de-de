@@ -1,5 +1,6 @@
 ---
 title: Objektlebensdaueransicht | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Objektlebensdaueransicht. Diese ist verfügbar, wenn die Option „Also collect .NET object lifetime data“ (Lebensdauerinformationen für .NET-Objekt ebenfalls erfassen) auf den Eigenschaftenseiten zur Leistungssitzung aktiviert ist.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,15 +18,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772623"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722866"
 ---
 # <a name="object-lifetime-view"></a>Objektlebensdaueransicht
-Die Objektlebensdaueransicht ist verfügbar, wenn die Option**Also collect .NET object lifetime data** (Lebensdauerinformationen für .NET-Objekt ebenfalls erfassen) auf den Eigenschaftenseiten zur **Leistungssitzung** aktiviert ist.
+Die Objektlebensdaueransicht ist verfügbar, wenn die Option **Also collect .NET object lifetime data** (Lebensdauerinformationen für .NET-Objekt ebenfalls erfassen) auf den Eigenschaftenseiten zur **Leistungssitzung** aktiviert ist.
 
  Der Garbage Collector von .NET Framework verwaltet die Belegung und Freigabe von Arbeitsspeicher für die Anwendung. Zur Optimierung der Leistung des Garbage Collectors wird der verwaltete Heap in drei Generationen unterteilt: 0, 1 und 2. Vom Garbage Collector der Runtime werden neue Objekte in Generation 0 gespeichert. Objekte, die nach den Garbage Collections noch vorhanden sind, werden höhergestuft und in den Generationen 1 und 2 gespeichert.
 
@@ -72,5 +73,5 @@ Die Objektlebensdaueransicht ist verfügbar, wenn die Option**Also collect .NET 
 |**Erfasste Heapinstanzen für große Objekte**|Die Anzahl der Instanzen von diesem Typ, die sich im Heap für große Objekte befanden und während der Profilerstellung erfasst wurden.|
 |**Erfasste Heapbytes für große Objekte**|Die Größe der Instanzen von diesem Typ in Byte, die sich im Heap für große Objekte befanden und während der Profilerstellung erfasst wurden.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)

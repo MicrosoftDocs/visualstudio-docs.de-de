@@ -1,5 +1,6 @@
 ---
 title: APIs für Profilerstellungstools | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie verwaltete oder native Methoden von APIs der Profilerstellungstools in Visual Studio einfügen können, um die Datensammlung während einer Profilerstellung zu steuern.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0b62f88903cab7ce3fcf9117e7159256d7adaf5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772076"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720500"
 ---
 # <a name="profiling-tools-apis"></a>APIs für Profilerstellungstools
 
@@ -38,6 +39,6 @@ In diesem ausführlichen Beispiel erhalten Sie Informationen zur Verwendung der 
 
 [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+- [Leistungs-Explorer](../profiling/performance-explorer.md)

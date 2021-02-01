@@ -1,5 +1,7 @@
 ---
 title: Ereignisse für benutzerdefinierte native ETW-Heap | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie mit einem benutzerdefinierten Heap den Mehraufwand für die Speicherbelegung reduzieren, aber dennoch dem Arbeitsspeicherprofiler Speicherbelegungsinformationen für die Belegungsanalyse zur Verfügung stellen.
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552968"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686323"
 ---
 # <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heaps
 
@@ -49,7 +51,7 @@ Eine Momentaufnahme aus dem [Speicherauslastungstool](../profiling/memory-usage.
 
 ![Windows-Heapzuordnung](media/heap-example-windows-heap.png)
 
-Durch die folgenden Schritte können wir dieses Tool zum Nachverfolgen von Speicherauslastung in unserem benutzerdefinierten Heap verwenden.
+Sie können dieses Tool auch zum Nachverfolgen der Speicherauslastung in Ihrem benutzerdefinierten Heap verwenden, indem Sie die folgenden Schritte ausführen.
 
 ## <a name="how-to-use"></a>Verwendung
 
@@ -135,7 +137,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="track-memory-usage"></a>Nachverfolgen der Speicherauslastung
+## <a name="track-memory-usage"></a>Nachverfolgen der Arbeitsspeicherauslastung
 Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](../profiling/memory-usage.md)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt.
 
 ![Aktivieren der Heap-Profilerstellung](media/heap-enable-heap.png)
@@ -155,6 +157,6 @@ Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwend
 > [!TIP]
 > Visual Studio enthält auch ein **Speicherauslastungstool** im **Leistungsprofilerstellungs-Toolset**, das in der Menüoption **Debuggen** > **Leistungsprofilerstellung** oder über die Tastenkombination **ALT**+**F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen** > **Windows** > **Diagnosetools anzeigen** oder mit der Tastenkombination **STRG**+**ALT**+**F2** aktiviert werden kann, enthält diese Funktion.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
 [Messen der Speicherauslastung in Visual Studio](../profiling/memory-usage.md)

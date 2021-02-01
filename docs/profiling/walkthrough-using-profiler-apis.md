@@ -1,5 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden von Profiler-APIs | Microsoft-Dokumentation'
+description: In diesem Artikel erfahren Sie, wie Sie die Profiler-APIs verwenden, um die Datenmenge zu begrenzen, die während der Profilerstellungsmethode „Instrumentierung“ erfasst werden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94276e294bfcf342cfc81b14005205a8f1e97949
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779882"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723087"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Exemplarische Vorgehensweise: Verwenden von Profiler-APIs
 

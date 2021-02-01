@@ -1,5 +1,6 @@
 ---
 title: Modulansicht – Profiler-Samplingdaten | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Modulansicht von Samplingdaten. In dieser werden Leistungsdaten, für die in den Profilerstellungsdaten ein Sampling durchgeführt wurde, nach Modulen gruppiert angezeigt.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772713"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722957"
 ---
 # <a name="modules-view---sampling-data"></a>Modulansicht: Samplingdaten
 In der Modulansicht der Samplingdaten werden die Leistungsdaten, für die in den Profilerstellungsdaten ein Sampling ausgeführt wurde, nach Modulen gruppiert angezeigt. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen des Moduls, für die ein Sampling ausgeführt wurde, werden unter dem Modulknoten aufgeführt.
@@ -38,10 +39,10 @@ In der Modulansicht der Samplingdaten werden die Leistungsdaten, für die in den
 |**Funktionszeilennummer**|Die Zeilennummer des Anfangs dieser Funktion in der Quelldatei.|
 |**Inklusive Samplings**|- Bei einer Funktion die Anzahl der Samplings, in der diese Funktion oder eine von dieser Funktion aufgerufene Funktion ausgeführt wurde (d.h. die Anzahl von Samplings in der Aufrufliste, in denen diese Funktion enthalten war).<br />- Bei einem Modul die Anzahl der Samplings, bei denen mindestens eine Funktion dieses Moduls ausgeführt wurde.<br />- Bei einer Zeile oder einer Anweisung die Anzahl der Samplings, in denen diese Zeile oder Anweisung ausgeführt wurde.|
 |**Inklusive Samplings in %**|- Bei einer Funktion oder einem Modul der Anteil aller Samplings, die während der Profilerstellung inklusiven Samplings dieser Funktion oder dieses Moduls entsprechen.<br />- Bei einer Zeile oder einer Anweisung der Anteil der Samplings, in denen während der Profilerstellung diese Zeile oder Anweisung ausgeführt wurde.|
-|**Exklusive Samplings**|- Bei einer Funktion die Anzahl der Samplings in der Aufrufliste, in denen diese Funktion direkt ausgeführt wurde (d.h. in denen sich die Funktion an erster Stelle in der Aufrufliste befand).<br />- Bei einem Modul die Summe der exklusiven Samplings der Funktionen im Modul.<br />- Bei einer Zeile oder einer Anweisung die Anzahl der Samplings, in denen diese Zeile oder Anweisung ausgeführt wurde.|
-|**Exklusive Samplings %**|- Bei einer Funktion oder einem Modul der Anteil aller Samplings, die während der Profilerstellung exklusiven Samplings dieser Funktion oder dieses Moduls entsprechen.<br />- Bei einer Zeile oder einer Anweisung der Anteil der Samplings, in denen während der Profilerstellung diese Zeile oder Anweisung ausgeführt wurde.|
+|**Exclusive Samplings**|- Bei einer Funktion die Anzahl der Samplings in der Aufrufliste, in denen diese Funktion direkt ausgeführt wurde (d.h. in denen sich die Funktion an erster Stelle in der Aufrufliste befand).<br />- Bei einem Modul die Summe der exklusiven Samplings der Funktionen im Modul.<br />- Bei einer Zeile oder einer Anweisung die Anzahl der Samplings, in denen diese Zeile oder Anweisung ausgeführt wurde.|
+|**Exklusive Samplings in %**|- Bei einer Funktion oder einem Modul der Anteil aller Samplings, die während der Profilerstellung exklusiven Samplings dieser Funktion oder dieses Moduls entsprechen.<br />- Bei einer Zeile oder einer Anweisung der Anteil der Samplings, in denen während der Profilerstellung diese Zeile oder Anweisung ausgeführt wurde.|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Modulansicht: Sampling](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Modulansicht: .NET-Speicherinstrumentierungsdaten](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Modulansicht](../profiling/modules-view-instrumentation-data.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Modulansicht: Konfliktdaten | Microsoft-Dokumentation'
+description: In diesem Artikel erhalten Sie Informationen zur Modulansicht von Konfliktdaten. Diese zeigt von den Modulen gruppierte Parallelitätsdaten an, für die in den Profilerstellungsdaten ein Sampling durchgeführt wurde.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780012"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723321"
 ---
 # <a name="modules-view---contention-data"></a>Modulansicht: Konfliktdaten
 Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitätsdaten an, die in den Profilerstellungsdaten abgefragt wurden. Jedes Modul ist der Stamm einer hierarchischen Struktur. Die Funktionen der Module, in denen Konfliktereignisse aufgetreten sind, werden unter dem Modulknoten aufgeführt.
@@ -25,7 +26,7 @@ Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitä
 
  Die folgende Tabelle beschreibt die Werte der Spalten in der Modulansicht der Konfliktdaten.
 
-|Spalte|Beschreibung|
+|Spalte|BESCHREIBUNG|
 |------------|-----------------|
 |**Exklusive blockierte Zeit %**|– Bei einer Funktion die Zeit, für die die Funktion keinen Code im Text der Funktion ausführen konnte. Diese umfasst nicht den Zeitaufwand für Funktionen, die von dieser Funktion aufgerufen wurden.<br />– Bei einem Modul die Summe der exklusiv blockierten Zeit der Funktionen im Modul.<br />– Bei einer Zeile oder einer Anweisung die Zeit, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|
 |**Exklusive blockierte Zeit %**|– Bei einer Funktion oder einem Modul der Anteil der gesamten blockierten Zeit während der Profilerstellung, die der exklusiven blockierten Zeit dieser Funktion oder dieses Moduls entspricht.<br />– Bei einer Zeile oder einer Anweisung der Anteil der blockierten Zeit während der Profilerstellung, für die diese Zeile oder Anweisung nicht ausgeführt werden konnte.|
@@ -40,7 +41,7 @@ Die Modulansicht der Konfliktdaten zeigt von den Modulen gruppierte Parallelitä
 |**Modulpfad**|Der Pfad des Moduls mit dem Modul, der Funktion, der Zeile oder dem Anweisungszeiger.|
 |**Name**|Der Name des Moduls oder der Funktion.|
 |**Prozess-ID**|Die Prozess-ID (PID) der Profilerstellung.|
-|**Prozessname**|Der Prozessname.|
+|**Prozessname**|Der Name des Prozesses.|
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|
 
 ## <a name="see-also"></a>Siehe auch

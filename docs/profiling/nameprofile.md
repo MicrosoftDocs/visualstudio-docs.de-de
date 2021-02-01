@@ -1,5 +1,6 @@
 ---
 title: NameProfile | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur NameProfile-Funktion. Diese weist einem angegebenen Prozess oder Thread eine Zeichenfolge zu. Die NameProfile-API ist außerdem nur für die Instrumentierungsprofilerstellung verfügbar.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 3bd210f1d92245889be8d18156c43e0cad7ee3db
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541699"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722918"
 ---
 # <a name="nameprofile"></a>NameProfile
 Die `NameProfile`-Funktion weist dem angegebenen Prozess oder Thread eine Zeichenfolge zu.

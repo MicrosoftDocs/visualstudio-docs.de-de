@@ -1,5 +1,6 @@
 ---
 title: Verschieben instrumentierter Binärdateien | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen dazu, wie während der Instrumentierung Tests für die Binärdatei ausgeführt werden, um die Anwendungsleistung zu messen.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fa5c3413e620e43a695e205a0523dce23e90b4
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ee94737f59f5c29aac47d686f68ade06131d0379
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851345"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720617"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Vorgehensweise: Verschieben instrumentierter Binärdateien
 
@@ -28,9 +29,9 @@ Während der Instrumentation werden Sonden in die Binärdatei eingeführt, um di
 
 ## <a name="to-relocate-instrumented-binary"></a>Verschieben von gemessenen Binärdateien
 
-1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie auf den **Eigenschaftenseiten**auf die Eigenschaften von **Binärdateien** .
+2. Klicken Sie auf den **Eigenschaftenseiten** auf die Eigenschaften von **Binärdateien** .
 
 3. Aktivieren Sie das Kontrollkästchen **Gemessene Binärdateien verschieben** .
 

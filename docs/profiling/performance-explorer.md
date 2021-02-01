@@ -1,5 +1,6 @@
 ---
 title: Leistungs-Explorer | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen dazu, wie es die Profilerstellungstools in Visual Studio Entwicklern ermöglichen, leistungsbezogene Codeprobleme zu messen, auszuwerten und zu beheben.
 ms.date: 06/19/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7a796ee0791fd96edf1e54954df47f2983df3ee4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778478"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722775"
 ---
 # <a name="performance-explorer"></a>Leistungs-Explorer
 
@@ -46,6 +47,6 @@ Um weitere Informationen zu aktuellen und weiterführenden Themen in Bezug auf L
 |**Programmgesteuertes Steuern der Profilerstellung:** Informationen zum Verwenden der verwalteten und nativen APIs der Profilerstellungstools zur direkten Steuerung der Datensammlung im Quellcode.|[APIs für Profilerstellungstools](../profiling/profiling-tools-apis.md)|
 |**Problembehandlung bei der Profilerstellung**|[Problembehandlung bei Leistungstools](../profiling/troubleshooting-performance-tools-issues.md)|
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

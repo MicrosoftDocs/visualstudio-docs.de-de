@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847049"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773340"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -102,10 +102,13 @@ Die Symbolleiste oben im **Projektmappen-Explorer** enthält Schaltflächen, mit
 
 Viele Menübefehle sind im **Projektmappen-Explorer** über das Kontextmenü verfügbar, das Sie mithilfe eines Rechtsklicks auf verschiedene Elemente aufrufen können. Diese Befehle umfassen das Erstellen eines Projekts, das Verwalten von NuGet-Paketen, das Hinzufügen einer Referenz, das Umbenennen einer Datei und das Ausführen von Tests, um nur einige zu nennen.
 
-> [!TIP]
-> Wenn Sie den Projektmappen-Explorer geschlossen haben und diesen wieder öffnen möchten, klicken Sie in der Menüleiste auf **Fenster** > **Fensterlayout zurücksetzen**.
-
 Bei ASP.NET Core-Projekten können Sie die Schachtelung von Dateien im **Projektmappen-Explorer** anpassen. Weitere Informationen finden Sie unter [Anpassen der Dateischachtelung im Projektmappen-Explorer](file-nesting-solution-explorer.md).
+
+> [!TIP]
+> Wenn Sie den Projektmappen-Explorer geschlossen haben und ihn wieder öffnen möchten, klicken Sie in der Menüleiste auf **Ansicht** > **Projektmappen-Explorer**, oder drücken Sie **STRG**+**ALT**+**L**. Wenn Sie seitliche Registerkarten geschlossen haben und diese an ihren Standardpositionen wiederherstellen möchten, klicken Sie in der Menüleiste auf **Fenster** > **Fensterlayout zurücksetzen**.
+
+> [!NOTE]
+> Laden Sie [**Visual Studio Image Library**](https://www.microsoft.com/download/details.aspx?id=35825) herunter, um die Anwendungsbilder und -symbole aus Visual Studio anzuzeigen.
 
 ## <a name="see-also"></a>Weitere Informationen
 

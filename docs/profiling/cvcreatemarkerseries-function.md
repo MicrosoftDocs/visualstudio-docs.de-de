@@ -1,5 +1,7 @@
 ---
 title: CvCreateMarkerSeries-Funktion | Microsoft-Dokumentation
+description: Dieser Artikel enthält Referenzinformationen für die Funktion CvCreateMarkerSeries des Concurrency Visualizer-SDK (C-Bibliothek).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc44e9e1a9a1d17d3f5b0f31515e2402e9512c55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a80d833396644fa6c2a025dc24b6db473b2b393
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332208"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686167"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries-Funktion
 Erstellt Markerreihen für einen angegebenen Anbieter.
@@ -39,16 +41,16 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 ```
 
 #### <a name="parameters"></a>Parameter
- `pProvider`: durch CvInitProvider bereits initialisiertes Anbieterobjekt. Darf nicht NULL sein.
+ `pProvider`: durch CvInitProvider bereits initialisiertes Anbieterobjekt. Lässt keine NULL-Werte zu.
 
  `pSeriesName` der Markerreihenname. Darf nicht NULL sein, aber eine leere Zeichenfolge ist zulässig.
 
- `ppMarkerSeries`: die Adresse einer Ausgabevariablen, mit der der Markerreihenkontext gespeichert wird. Darf nicht NULL sein.
+ `ppMarkerSeries`: die Adresse einer Ausgabevariablen, mit der der Markerreihenkontext gespeichert wird. Lässt keine NULL-Werte zu.
 
 ## <a name="return-value"></a>Rückgabewert
  S_OK, wenn Markerreihen erfolgreich erstellt wurden, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkers.h*
 
  **Unicode:** CvCreateMarkerSeriesW

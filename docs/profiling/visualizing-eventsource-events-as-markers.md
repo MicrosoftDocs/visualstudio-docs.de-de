@@ -1,5 +1,6 @@
 ---
 title: Visualisieren von EventSource-Ereignissen als Marker | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zu Concurrency Visualizer. Hier können EventSource-Ereignisse als Marker angezeigt werden. Zudem kann festgelegt werden, wie die Marker angezeigt werden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64811550"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723139"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
 Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marker angezeigt werden. Zudem kann festgelegt werden, wie die Marker angezeigt werden. Registrieren Sie die ETW-Anbieter-GUID über das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), um die EventSource-Marker anzuzeigen. In der Nebenläufigkeitsschnellansicht werden für die Darstellung von EventSource-Ereignissen als [Flag-Marker](../profiling/flag-markers.md), [Bereichsmarker](../profiling/span-markers.md) und [Meldungsmarker](../profiling/message-markers.md) Standardkonventionen verwendet. Durch Hinzufügen von benutzerdefinierten Feldern zu den Ereignissen, können Sie festlegen, wie EventSource-Ereignisse angezeigt werden. Weitere Informationen zu Markern finden Sie unter [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md). Weitere Informationen zu EventSource-Ereignissen finden Sie unter <xref:System.Diagnostics.Tracing>.
@@ -37,15 +38,15 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 |win:LogAlways|Normal|
 |win:Critical|Kritisch|
 |win:Error|Kritisch|
-|win:Warning|Hoch|
+|win:Warning|High|
 |win:Informational|Normal|
 |win:Verbose|Niedrig|
 |Greater than win:verbose|Niedrig|
 
-### <a name="series-name"></a>Reihenname
+### <a name="series-name"></a>Datenreihenname
  Der Taskname des Ereignisses wird für den Namen der Reihe verwendet. Der Name der Reihe ist leer, wenn für das Ereignis keine Task definiert wurde.
 
-### <a name="category"></a>Kategorie
+### <a name="category"></a>Category
  Wenn die Ebene win:Critical oder win:Error lautet, lautet die Kategorie Alert (-1). Andernfalls wird für die Kategorie der Standardwert (0) verwendet.
 
 ### <a name="text"></a>Text
@@ -59,11 +60,11 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 
 |cvType-Wert|Resultierender Markertyp|
 |------------------|---------------------------|
-|0|Nachricht|
+|0|`Message`|
 |1|Bereichsanfang|
 |2|Bereichsende|
 |3|Flag|
-|Alle anderen Werte|Nachricht|
+|Alle anderen Werte|`Message`|
 
 ### <a name="importance"></a>Wichtigkeit
  Mit dem Feld `cvImportance`, einem Byte, können Sie zwar die Wichtigkeitseinstellung für ein EventSource-Ereignis festlegen. Es wird jedoch empfohlen, die angezeigte Wichtigkeit eines Ereignisses über die Ebene festzulegen.
@@ -72,16 +73,16 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 |------------------------|---------------------------------------|
 |0|Normal|
 |1|Kritisch|
-|2|Hoch|
-|3|Hoch|
+|2|High|
+|3|High|
 |4|Normal|
 |5|Niedrig|
 |Alle anderen Werte|Niedrig|
 
-### <a name="series-name"></a>Reihenname
+### <a name="series-name"></a>Datenreihenname
  Verwenden Sie das Ereignisfeld `cvSeries`, eine Zeichenfolge, um den Reihennamen festzulegen, der von der Nebenläufigkeitsschnellansicht für ein EventSource-Ereignis festgelegt wird.
 
-### <a name="category"></a>Kategorie
+### <a name="category"></a>Category
  Verwenden Sie das Feld `cvCategory`, ein Byte, um die Kategorie festzulegen, die von der Nebenläufigkeitsschnellansicht für ein EventSource-Ereignis festgelegt wird.
 
 ### <a name="text"></a>Text
@@ -93,5 +94,5 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
 > [!NOTE]
 > Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)

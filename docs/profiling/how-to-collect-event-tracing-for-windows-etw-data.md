@@ -1,5 +1,7 @@
 ---
 title: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW) | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie mit der Ereignisablaufverfolgung für Windows (Event Tracing for Windows, ETW) ermitteln, wo in der Anwendung Leistungsprobleme auftreten. Hierfür zeigen Sie die Daten mit VSPerfReport.exe an.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1877ff6530dbe0bbc888824a6ae60215eca1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 853e27c51b626ef63a7e0924d4c0164a6386cda2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851267"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801554"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Vorgehensweise: Sammeln von Daten der Ereignisablaufverfolgung für Windows (ETW)
 
@@ -30,7 +32,7 @@ Ereignisablaufverfolgung für Windows (ETW) ist eine effiziente Ablaufverfolgung
 
 ## <a name="to-enable-event-trace-providers"></a>So aktivieren Sie Ereignisablaufverfolgungsanbieter
 
-1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
 2. Klicken Sie in den **Eigenschaftenseiten** auf die Eigenschaften **Windows-Ereignisse** .
 

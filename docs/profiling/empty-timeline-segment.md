@@ -1,5 +1,7 @@
 ---
 title: Leeres Zeitachsensegment | Microsoft-Dokumentation
+description: Hier erfahren Sie, warum in Visual Studio Concurrency Visualizer ein Teil einer Zeitachse für eine Kanalart möglicherweise leer ist (über einen weißen Hintergrund verfügt).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970108"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801434"
 ---
 # <a name="empty-timeline-segment"></a>Leeres Zeitachsensegment
 In der Nebenläufigkeitsschnellansicht hängt der Grund dafür, dass ein Abschnitt der Zeitachse leer ist (einen weißen Hintergrund aufweist) von der Art des Kanals ab.
@@ -30,6 +32,6 @@ In der Nebenläufigkeitsschnellansicht hängt der Grund dafür, dass ein Abschni
 
 - Bei einem Markerkanal ist der Grund der, dass keine Marker generiert wurden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
 - [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)

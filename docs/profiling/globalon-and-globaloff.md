@@ -1,5 +1,7 @@
 ---
 title: GlobalOn und GlobalOff | Microsoft-Dokumentation
+description: Sehen Sie sich die Optionen GlobalOn und GlobalOff in VSPerfCmd.exe an. Mit diesen Optionen wird die Profilerstellung für Prozesse und Threads in einer Profilerstellungssitzung in der Befehlszeile angehalten bzw. fortgesetzt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -9,15 +11,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776965"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801342"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn und GlobalOff
-Die *VSPerfCmd.exe*-Optionen **GlobalOff** und **GlobalOn** halten die Profilerstellung für alle Prozesse und Threads in einer Profilerstellungssitzung über die Befehlszeile an bzw. setzen sie fort.
+Die *VSPerfCmd.exe-Optionen* **GlobalOff** und **GlobalOn** halten die Profilerstellung für alle Prozesse und Threads in einer Profilerstellungssitzung über die Befehlszeile an bzw. setzen sie fort.
 
  Sie können **GlobalOff** und **GlobalOn** als die einzigen Optionen einer *VSPerfCmd.exe*-Befehlszeile angeben, oder Sie können sie in Befehlszeilen einschließen, die auch die Optionen **Start**, **Launch** (Starten) oder **Attach** (Anfügen) enthalten.
 

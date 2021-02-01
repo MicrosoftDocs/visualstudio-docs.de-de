@@ -1,5 +1,6 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur VSPerfCmd.exe-Option. Diese legt das Profilerstellungsereignis, für das ein Sampling durchgeführt wird, auf Systemaufrufereignisse fest.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 435393ac536eb70f2f3f6d38b16eaab645848704
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e8090a39426455e0f6d877c26a7f0a50f00f10c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778179"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719759"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
-Die *VSPerfCmd.exe*-Option **Sys** legt das Profilerstellungereignis fest, für das eine Stichprobe für die Anzahl der Systemaufrufe (Funktionsaufrufe des Betriebssystems von der Anwendung mit einem Profil) durchgeführt werden soll, und ändert optional die Anzahl der Systemaufrufe in einem Samplingintervall vom Standardwert 10 in einen anderen Wert.
+Die *VSPerfCmd.exe-Option* **Sys** legt das Profilerstellungsereignis fest, für das ein Sampling für Aufrufereignisse (Funktionsaufrufe des Betriebssystems der Anwendung mit einem Profil) durchgeführt werden soll, und ändert optional die Anzahl der Systemaufrufe (standardmäßig 10) in einem Samplingintervall.
 
  **Sys** kann nur in einer Befehlszeile verwendet werden, die auch die Optionen **Launch** (Starten) und **Attach** (Anfügen) enthält.
 
@@ -50,7 +51,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator und das Samplingintervall auf `Reload` fest.
 
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]: erfasst .NET-Arbeitsspeicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]: erfasst .NET-Arbeitsspeicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.
 
 ## <a name="example"></a>Beispiel
  Im folgenden Beispiel wird dargestellt, wie das Profilersamplingereignis auf Symstemaufrufe und das Samplingintervall auf 20 Aufrufe pro Beispiel festgelegt wird.

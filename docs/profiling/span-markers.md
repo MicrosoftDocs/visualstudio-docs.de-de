@@ -1,5 +1,6 @@
 ---
 title: Bereichsmarker | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zum Span-Marker. Dieser steht für eine sinnvolle Phase einer Anwendung. Außerdem sehen Sie hier ein Beispiel eines Span-Markers in Concurrency Visualizer.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69b48a5b1b551e2e29b9aa10e7f68ff0df0e379
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28fb9da2e838a17f5b014c3b1af4fc9ee5ab46d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62980965"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720110"
 ---
 # <a name="span-markers"></a>Bereichsmarker
 Ein Bereichsmarker stellt eine sinnvolle Phase einer Anwendung dar. Sie können beispielsweise mit einem Bereich ein Zeitintervall darstellen, in dem ein Arbeitselement verarbeitet wird. Seine Länge stellt die Dauer der Phase der entsprechenden Anwendung dar. Diese Abbildung zeigt einen Bereich in der Parallelitätsschnellansicht an:
