@@ -1,5 +1,7 @@
 ---
 title: Bericht der Ereignisablaufverfolgung für Windows (ETW) | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über den ETW-Bericht (Event Tracing for Windows, Ereignisablaufverfolgung für Windows), in dem die ETW-Ereignisse aufgeführt sind, die in einer Leistungssitzung der Visual Studio Profilerstellungstools erfasst wurden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e7167f2fb5c78a6fa8c3d83fb56c2c2eba217516
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779297"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801413"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Bericht der Ereignisablaufverfolgung für Windows (ETW)
 In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-Ereignisse aufgeführt, die in einer Leistungssitzung für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools aufgezeichnet wurden. ETW-Daten werden in einer Binärdatei (*ETL*) erfasst.
@@ -33,9 +35,9 @@ In dem Bericht „Ereignisablaufverfolgung für Windows (ETW)“ werden die ETW-
 
 |Spalte|Beschreibung|
 |------------|-----------------|
-|**Zeitstempel**|Gibt an, wann das Ereignis aufgetreten ist|
+|**Timestamp**|Gibt an, wann das Ereignis aufgetreten ist|
 |**Prozess-ID**|Gibt den Prozess an, der das Ereignis generiert hat|
 |**Thread-ID**|Gibt den Thread an, der das Ereignis generiert hat|
 |**Beschreibung**|Gibt den Ereignisanbieter an|
-|**Typ**|Gibt den Ereignistyp an|
+|**Type**|Gibt den Ereignistyp an|
 |**Eigenschaften**|Eigenschaften des Ereignisses Jedes Ereignis besteht aus einem durch Kommas abgetrennten Name/Wert-Paar in Klammern.|

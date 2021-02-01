@@ -1,5 +1,7 @@
 ---
 title: Zoomtool in der Kernansicht | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zum Zoomsteuerelement für die Ansicht „Kerne“. Dieses ermöglicht es Ihnen, die Ansicht für die Zeitachse zu vergrößern und zu verkleinern. Außerdem erhalten Sie Informationen zu anderen Zoommöglichkeiten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: df2ffebee150ae106003ed5113e4c7354458143c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553044"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720721"
 ---
 # <a name="cores-view-zoom-tool"></a>Zoomtool in der Kernansicht
 Das Zoomtool ist ein Schieberegler, mit dem Sie die Zeitachse vergrößern oder verkleinern können, um den Fokus auf besonders interessante Bereiche zu legen. Dieses Steuerelement zoomt auf die Mitte der aktuellen Ansicht, also sollten Sie diese vorher anpassen.

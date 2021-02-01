@@ -1,5 +1,6 @@
 ---
 title: Übersichten (Leistungstools) | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zu Konzepten und Terminologie für die Profilerstellungstools in Visual Studio. Verwenden Sie die Informationen, um die Leistungsmerkmale einer Anwendung während ihrer Entwicklung zu messen.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772666"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722827"
 ---
 # <a name="overviews-performance-tools"></a>Übersichten (Leistungstools)
 Dieser Abschnitt enthält konzeptionelle und terminologische Übersichten für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]- Profilerstellungstools, die Sie verwenden können, um die Leistungsmerkmale einer Anwendung in der Entwicklung zu messen.
@@ -56,7 +57,7 @@ Dieser Abschnitt enthält konzeptionelle und terminologische Übersichten für [
 
  Informationen zu Problemen und den erforderlichen Schritte zum Sammeln von Beispieldaten und zum Erstellen von sitzungsübergreifenden Profilen für Anwendungen auf [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Erste Schritte](../profiling/getting-started-with-performance-tools.md)
-- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+- [Leistungs-Explorer](../profiling/performance-explorer.md)

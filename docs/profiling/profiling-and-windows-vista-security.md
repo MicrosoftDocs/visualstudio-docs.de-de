@@ -1,5 +1,6 @@
 ---
 title: Profilerstellung und Sicherheit in Windows Vista | Microsoft-Dokumentation
+description: Je nach Einstellungen für die Benutzerzugriffsberechtigung, die zur Verfügung stehen, kann ein einzelner Benutzer über die Sicherheitsberechtigung zur Profilerstellung eines Prozesses auf dem Computer verfügen.
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778374"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719408"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilerstellung und Sicherheit in Windows Vista
 
@@ -45,7 +46,7 @@ Sie können eine Liste der Prozesse ansehen, die durch Festlegen der Sichtbarkei
 
   Wenn diese Option nicht ausgewählt ist, zeigt die Liste Prozesse in der aktuellen Sitzung an. Andernfalls zeigt die Liste Prozesse in allen Sitzungen an.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Übersichten](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

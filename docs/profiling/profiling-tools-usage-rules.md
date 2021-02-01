@@ -1,5 +1,6 @@
 ---
 title: Verwendungsregeln für Profilerstellungstools | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zu Leistungsregeln in der Nutzungskategorie der Profilerstellungstools. Diese bieten eine Anleitung für die Verwendung des Profiler zur effektivsten Datensammlung.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aeeb7e0a9061d72a07b718acde70b00dfcbba89
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: 8eba05a40e108d2fd1ba5107160088c5c30da299
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144674"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720474"
 ---
 # <a name="profiling-tools-usage-rules"></a>Verwendungsregeln für Profilerstellungstools
 Leistungsregeln in der Kategorie Verwendung der Profilerstellungstools bieten eine Anleitung für die Verwendung des Profiler zur effektivsten Datensammlung.

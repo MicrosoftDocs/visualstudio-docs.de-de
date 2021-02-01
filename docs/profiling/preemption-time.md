@@ -1,5 +1,6 @@
 ---
 title: Zeit für die vorzeitige Entfernung | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Zeit für die vorzeitige Entfernung. Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als Zeit für die vorzeitige Entfernung kategorisiert wird.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62935892"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719512"
 ---
 # <a name="preemption-time"></a>Zeit für die vorzeitige Entfernung
 Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als Speicherverwaltungszeit kategorisiert ist. Diese Kategorie impliziert, dass ein Thread aus einem der folgenden Gründe deaktiviert wird:
@@ -30,5 +31,5 @@ Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als 
 
   Die QuickInfo für ein vorzeitig entferntes Segment zeigt den Namen des Prozesses oder Threads an, durch die die vorzeitige Entfernung ausgelöst wurde. Dies impliziert allerdings nicht, dass der Prozess oder der Thread, der den Vorgang übernommen hat, auch wirklich während der vorzeitigen Entfernung ausgeführt wurde.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

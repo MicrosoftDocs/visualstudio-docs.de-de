@@ -1,6 +1,7 @@
 ---
 title: Anfügen von Leistungstools an laufende Prozesse
-ms.custom: seodec18
+description: Hier erfahren Sie, wie Sie den Visual Studio-Profiler zum Anfügen an einen oder Trennen von einem aktuell ausgeführten Prozess verwenden, um das Sampling und Sammeln von Leistungsdaten zu vereinfachen.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331135"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801154"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen von Leistungstools an laufende Prozesse und Trennen von Leistungstools von laufenden Prozessen
 Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu werden oder um von ihm getrennt zu werden, damit das Sampling und Sammeln von Leistungsdaten vereinfacht wird. Sie können diese Methode zum Erstellen eines Profils verwenden, wenn Sie das Sammeln von Daten über Anwendungsladezeiten vermeiden wollen oder nachdem es einen bestimmten Zustand erreicht hat.
@@ -49,7 +50,7 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
 
 2. Klicken Sie auf den Prozessnamen, mit dem eine Verbindung hergestellt werden soll.
 
-3. Klicken Sie auf **Anfügen**aus.
+3. Klicken Sie auf **Anfügen** aus.
 
 ### <a name="to-detach-from-a-running-process"></a>So trennen Sie den Profiler von einem laufenden Prozess
 
@@ -61,9 +62,9 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
 
 3. Klicken Sie auf **Trennen**.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
 - [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)
-- [Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [How to: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

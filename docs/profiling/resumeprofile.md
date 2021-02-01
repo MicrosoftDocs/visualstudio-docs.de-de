@@ -1,5 +1,6 @@
 ---
 title: ResumeProfile | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur ResumeProfile-Methode. Diese verringert den Suspend/Resume-Zähler für die angegebene Profilerstellungsebene.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b700359977e13e4664067ef62af4913d41cbabb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778309"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720240"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 Die `ResumeProfile`-Methode verringert den Suspend/Resume-Zähler für die angegebene Profilerstellungsebene.
@@ -103,5 +104,5 @@ void ExerciseResumeProfile()
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

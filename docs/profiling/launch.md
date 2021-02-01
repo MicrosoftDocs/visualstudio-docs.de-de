@@ -1,5 +1,6 @@
 ---
 title: Launch | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Option „Launch“. Diese startet den Profiler mit der Samplingmethode sowie die angegebene Anwendung.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bec7ebd26cc0522852276627d2c59161b51c809b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778608"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721423"
 ---
 # <a name="launch"></a>Starten
 Die Option **Launch** startet den Profiler mit der Beispielmethode sowie die angegebene Anwendung.
@@ -39,7 +40,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **ProcessOn:** `PID` und **ProcessOff**:`PID` Setzt die Profilerstellung für den angegebenen Prozess fort (**ProcessOn**) oder unterbricht sie (**ProcessOff**)
 
- **TargetCLR:** Gibt die Version der .NET Framework-CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Version in einer Profilerstellungssitzung geladen wird. Standardmäßig wird für die zuerst geladene Version ein Profil erstellt.
+ **TargetCLR:** Gibt die Version der .NET Framework-CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Version in einer Profilerstellungssitzung geladen wird. Standardmäßig wird ein Profil für die zuerst geladene Version erstellt.
 
 ## <a name="exclusive-options"></a>Ausschließliche Optionen
  Die folgende Option kann nur mit der Option **Launch** (Start) verwendet werden.

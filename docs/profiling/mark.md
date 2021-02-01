@@ -1,5 +1,6 @@
 ---
 title: Mark | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur VSPerfCmd.exe-Option „Mark“. Diese fügt die angegebenen Informationen in die Profilerstellungsdatendatei ein.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1d72cef3-bb09-4bbb-8864-6ea0ab623ff9
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3049a253dca37090d128748b71f278aa2f7e63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4554a994fe790d5e0ec46762e830576181b312dd
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330793"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722138"
 ---
 # <a name="mark"></a>Mark
-Über die *VSPerfCmd.exe*-Option **Mark** werden die angegeben Informationen in die Profilerstellungs-Datendatei eingefügt. Die Option „Mark“ kann in einem separaten VSPerfReport-Bericht oder in der Mark-Berichtsansicht der Benutzeroberfläche für die Profilerstellung aufgeführt werden. **Mark** kann verwendet werden, um Start- und Endpunkte in Berichten sowie Filter für die Ansicht anzugeben.
+Über die *VSPerfCmd.exe-Option* **Mark** (Markieren) werden die angegeben Informationen in die Profilerstellungs-Datendatei eingefügt. Die Option „Mark“ kann in einem separaten VSPerfReport-Bericht oder in der Mark-Berichtsansicht der Benutzeroberfläche für die Profilerstellung aufgeführt werden. **Mark** kann verwendet werden, um Start- und Endpunkte in Berichten sowie Filter für die Ansicht anzugeben.
 
  Die Option **Mark** (Markieren) muss als einzige Option in der Befehlszeile angegeben werden.
 

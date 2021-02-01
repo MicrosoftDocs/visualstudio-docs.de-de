@@ -1,5 +1,6 @@
 ---
 title: Nur eigenen Code (Threadansicht) | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie mit der Option „Nur eigenen Code“ die Aufrufliste nach Ihrem Code sowie der Ebene der aufgerufenen Funktionen filtern können.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a3924211d5ec42660357cef45714f672b0bef063
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62995341"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721475"
 ---
 # <a name="just-my-code-threads-view"></a>Nur mein Code (Threadansicht)
 Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene der aufgerufenen Funktionen.
@@ -26,6 +27,6 @@ Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene de
 
  In einigen Fällen kann durch diese Option auch der blockierende Aufruf herausgefiltert werden. Wenn Sie für diese Entscheidung die vollständigen Details zur Aufrufliste benötigen, löschen Sie diese Option, um die vollständige Aufrufliste verfügbar zu machen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
 - [Prozentsatz der Rauschunterdrückung](../profiling/noise-reduction-percentage.md)

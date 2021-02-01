@@ -1,5 +1,7 @@
 ---
 title: Marker für die Nebenläufigkeitsschnellansicht | Microsoft-Dokumentation
+description: 'In diesem Artikel erhalten Sie Informationen zu Markern in Concurrency Visualizer. Bei Markern handelt es sich um Symbole, die für von einer App erzeugte Ereignisse stehen. Es gibt drei Arten von Markern: Flags, Nachrichten und Spannen.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63001052"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720994"
 ---
 # <a name="concurrency-visualizer-markers"></a>Parallelitätsschnellansichtsmarker
 Marker sind in der Nebenläufigkeitsschnellansicht Symbole zur Darstellung der Ereignisse in einer App.  In der Regel generiert die App diese Ereignisse, um Phasen oder Vorkommen in einer Anwendung zu bestimmen.  Die Ereignisse können von der App oder von Bibliotheken und Laufzeiten generiert werden, die die App verwendet.
@@ -60,7 +62,7 @@ Marker sind in der Nebenläufigkeitsschnellansicht Symbole zur Darstellung der E
 ## <a name="markers-from-eventsource"></a>Marker aus EventSource
  Die Nebenläufigkeitsschnellansicht zeigt auch EventSource-Ereignisse an.  Weitere Informationen finden Sie unter [Visualisieren von EventSource-Ereignissen als Marker](../profiling/visualizing-eventsource-events-as-markers.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Flag-Marker](../profiling/flag-markers.md)
 - [Meldungsmarker](../profiling/message-markers.md)
 - [Bereichsmarker](../profiling/span-markers.md)

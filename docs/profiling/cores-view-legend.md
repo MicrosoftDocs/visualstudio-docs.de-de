@@ -1,5 +1,7 @@
 ---
 title: Legende der Kernansicht | Microsoft-Dokumentation
+description: In diesem Artikel wird die Legende der Ansicht „Kerne“ behandelt, die tabellarische Kontextwechseldaten und eine Threadauswahl bereitstellt. Außerdem erfahren Sie mehr über Kontextwechsel und Leistung.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553162"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720825"
 ---
 # <a name="cores-view-legend"></a>Legende der Kernansicht
 Die Legende der Kernansicht identifiziert jeden Thread durch Farbe und Namen. Sie enthält folgende Spalten: Anzahl der kernübergreifenden Kontextwechsel, Gesamtzahl der Kontextwechsel und Prozentsatz der Kontextwechsel, die durch Kerne verlaufen. Die Legende ist nach der Anzahl der kernübergreifenden Kontextwechsel in absteigender Reihenfolge angeordnet.

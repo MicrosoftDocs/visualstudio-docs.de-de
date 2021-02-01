@@ -1,5 +1,7 @@
 ---
 title: Ausführungszeit (Threadansicht) | Microsoft-Dokumentation
+description: Überprüfen Sie die Ausführungszeit in der Ansicht „Threads“ von Concurrency Visualizer. Die Ausführungszeit wird durch Segmente dargestellt, die zeigen, wann ein Thread aktiv auf einem logischen Kern arbeitet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0cf2a60fd194176b7cd9091f4e7dc7a758006f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f26df8f724d4a17f55ea54c3e7c61e5e1630e635
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969913"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801483"
 ---
 # <a name="execution-time-threads-view"></a>Ausführungszeit (Threadansicht)
 Diese Segmente auf der Zeitachse der Threadansicht stellen die Ausführungszeit dar, wenn der Thread aktiv an einem logischen Kern im System arbeitet.
@@ -28,6 +30,6 @@ Diese Segmente auf der Zeitachse der Threadansicht stellen die Ausführungszeit 
 
  Um ein herkömmliches Samplingprofil für alle Ausführungssegmente in der aktuellen Ansicht anzuzeigen, klicken Sie auf **Ausführung** im sichtbaren Zeitachsenprofil.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Ausführungsprofilbericht](../profiling/execution-profile-report.md)
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,6 @@
 ---
 title: Shutdown | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Option Shutdown. Diese wartet, bis ein aktuell geprofileter Prozess beendet oder getrennt wird. Anschließend schaltet sie den Profiler aus und schließt die Profilerstellungs-Datendatei.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64bad66491588178dc7d80655a8e517d6daed053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7a0bf796c91ce339c82f7f698ed63afe90f9c1c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330992"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720071"
 ---
 # <a name="shutdown"></a>Shutdown
 Die Option **Shutdown** (Herunterfahren) wartet darauf, dass ein aktueller Profilerstellungsprozess beendet oder getrennt wird. Anschließend deaktiviert die Option die Profilerstellung und schließt die Profilerstellungs-Datendatei. Die **Shutdown**-Option muss der letzte Befehl einer Profilerstellung sein.
@@ -33,7 +34,7 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 `Timeout`
 - (Optional) Die Option wird, wenn angegeben, nach der angegebenen Zeit in Sekunden zurückgegeben, ohne dass der Profiler deaktiviert oder die Profilerstellungs-Datendatei geschlossen wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)

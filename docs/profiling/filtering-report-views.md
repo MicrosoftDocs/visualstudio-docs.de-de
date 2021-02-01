@@ -1,5 +1,7 @@
 ---
 title: Filtern von Berichtsansichten | Microsoft-Dokumentation
+description: Wenden Sie in Visual Studio Filter auf Profilerstellungs-Datendateien an, um die in den Leistungsberichtsansichten angezeigten und in Berichtsdateien exportierten Profilerstellungsdaten einzuschränken.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6ba3e207b180b26ea4b53765926b16fb2e85d48
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779245"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801447"
 ---
 # <a name="filter-report-views"></a>Filtern von Berichtsansichten
 Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberichtansichten angezeigten und in Berichtsdateien exportierten Profilerstellungsdaten einzuschränken. Sie können einen Bericht auf die Daten zwischen Zeitstempelwerten einschränken, Sie können die Daten aber auch auf bestimmte Prozesse und Threads einschränken. Sie können Filter in einer Datei speichern und dann durch Importieren des gespeicherten Filters einen Filter für eine andere Profilerstellungs-Datendatei erstellen.
@@ -25,7 +27,7 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
 
  Weitere Informationen zum Ausschließen von System- und Drittanbietercode aus einem Bericht finden Sie unter [Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).
 
-## <a name="procedures"></a>Verfahren
+## <a name="procedures"></a>Prozeduren
 
 #### <a name="to-create-a-profiler-report-filter"></a>So erstellen Sie einen Profilerberichtsfilter
 
@@ -90,5 +92,5 @@ Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberic
 
 2. Geben Sie den Speicherort und den Dateinamen der zu speichernden Filterdatei (.vspf) an.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Anpassen von Berichtsansichten von Leistungstools](../profiling/customizing-performance-tools-report-views.md)

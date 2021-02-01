@@ -1,5 +1,6 @@
 ---
 title: Filter für die Leistungsberichtansicht | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Profilerberichtsansicht. Diese befindet sich oben im Leistungsberichtsfenster.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5642a8e153a4dfc7705d91d933397b6f8acb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 79fb4b7cf7a5df4b2077a2145172d24acdbf86cb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778453"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722736"
 ---
 # <a name="performance-report-view-filter"></a>Filter für die Leistungsberichtansicht
 Das Fenster für den **Filter für die Profilerstellungsberichtsansicht** befindet sich am oberen Rand des **Leistungsberichtsfensters**. Wenn es nicht angezeigt wird, klicken Sie auf die Schaltfläche **Filter anzeigen**.
@@ -37,6 +38,6 @@ Das Fenster für den **Filter für die Profilerstellungsberichtsansicht** befind
 
  Klicken Sie zum Speichern des Filters auf **Filter exportieren** in der Symbolleiste **Leistungsbericht**, und geben Sie dann einen Speicherort und einen Namen für die *VSPF*-Datei an. Um einen zuvor gespeicherten Filter zu laden, klicken Sie auf **Filter importieren**, und suchen Sie die gespeicherte Filterdatei. Filterdateien können auch verwendet werden, um Datendateien auf Computern zu filtern, auf denen eigenständigen Profilerstellungstools installiert sind. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

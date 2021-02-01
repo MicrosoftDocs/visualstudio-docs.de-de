@@ -1,5 +1,6 @@
 ---
 title: Ebeneninteraktions-Ansicht | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Profilerstellung für Ebeneninteraktionen. Hier erhalten Sie weitere Informationen zu den Ausführungszeiten von Funktionen in Anwendungen mit mehreren Ebenen, die mit Datenbanken kommunizieren.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b5fed31238fbc0e46d9982080b3acb1082e9f9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b358409b83a924672880cef5972ffbd3bd9a17f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778127"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722541"
 ---
 # <a name="tier-interaction-views"></a>Ebeneninteraktions-Ansicht
 
@@ -25,4 +26,4 @@ Ebeneninteraktionsansichten sind nur in Visual Studio Enterprise verfügbar.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
-[Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)
+[Ansicht "Ebeneninteraktionen"](../profiling/tier-interactions-view.md)

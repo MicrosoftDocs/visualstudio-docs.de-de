@@ -1,5 +1,6 @@
 ---
 title: Messmodus aktivieren/deaktivieren | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie das Tool zum Aktivieren und Deaktivieren des Messmodus verwenden können, um eine Zeitspanne auf einer Zeitachse exakt zu messen.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbe8ea27f16dc8b120380989c15b1838ea9260d0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62830823"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718992"
 ---
 # <a name="measure-mode-onoff"></a>Aktivieren/Deaktivieren des Messmodus
 Mithilfe dieses Tools können Sie die Dauer eines Zeitraums auf der Zeitachse genau messen. Klicken Sie auf die Schaltfläche „Messen“ (auf das Lineal), und bewegen Sie den Mauszeiger auf der Zeitachse, um den Messmodus zu aktivieren. Beachten Sie bei diesem Vorgang, dass der Bereich unterhalb des Zeigers in gelb hervorgehoben ist und die gemessene Zeit in der Symbolleiste im Bereich rechts neben der Schaltfläche angezeigt wird. Dieser Wert wird dynamisch berechnet, während Sie den Zeiger auf der Zeitachse bewegen, damit Sie unmittelbar sehen können, wie viel Zeit ein bestimmtes Ereignis in Anspruch nimmt. Wenn Sie die Maustaste loslassen, bleibt der Zeitwert weiterhin sichtbar.
 
  Sie können den Messvorgang zwar wiederholen, allerdings wird immer nur der neuste Messwert angezeigt. Klicken Sie erneut auf die Schaltfläche „Messen“, um den Messmodus zu deaktivieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Verwalten von Kanälen](../profiling/manage-channels.md)
 - [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

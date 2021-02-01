@@ -1,5 +1,6 @@
 ---
 title: ThreadOn und ThreadOff | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Unterbefehle ThreadOff und ThreadOn von VSPerfCmd.exe, die nur in Profilerstellungssitzungen in der Befehlszeile verfügbar sind, bei denen die Instrumentierungsmethode verwendet wird.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778153"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718771"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn und ThreadOff
-Die *VSPerfCmd.exe*-Unterbefehle **ThreadOff** und **ThreadOn** sind nur in Profilerstellungssitzungen über die Befehlszeile verfügbar, in denen die Instrumentierungsmethode verwendet wird. **ThreadOff** und **ThreadOn** halten die Profilerstellung für den angegebenen Thread an oder setzen diese fort. **ThreadOff** hält die Profilerstellung für den Thread an, und **ThreadOn** setzt diese fort.
+Die *VSPerfCmd.exe-Unterbefehle* **ThreadOff** und **ThreadOn** sind nur in Befehlszeilensitzungen zur Profilerstellung verfügbar, in denen die Instrumentierungsmethode verwendet wird. **ThreadOff** und **ThreadOn** halten die Profilerstellung für den angegebenen Thread an oder setzen diese fort. **ThreadOff** hält die Profilerstellung für den Thread an, und **ThreadOn** setzt diese fort.
 
  In den meisten Fällen geben Sie **ThreadOn** oder **ThreadOff** als einzige Option in einer *VSPerfCmd.exe*-Befehlszeile an. Sie können aber auch mit den Unterbefehlen **GlobalOn**, **GlobalOff**, **ProcessOn** und **ProcessOff** kombiniert werden.
 

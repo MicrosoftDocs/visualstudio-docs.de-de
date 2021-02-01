@@ -1,5 +1,7 @@
 ---
 title: Erste Schritte mit Leistungstools | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die verschiedenen Möglichkeiten, die Visual Studio für das Sammeln, Anzeigen und Analysieren von Codeleistungsdaten bietet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4f168c4c88ba12ff1f1c9bd0543e9d2b74ae095c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779206"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801511"
 ---
 # <a name="getting-started-with-performance-tools"></a>Erste Schritte mit Leistungstools
 
@@ -31,7 +33,7 @@ Wählen Sie **Debuggen** > **Leistungsprofiler**, und wählen Sie **Leistungs-As
 
 Wählen Sie **Debuggen** > **Profiler** > **Leistungs-Explorer**, um eine Leistungsprofilerstellungssitzung manuell anzugeben und zu konfigurieren. Verwenden Sie den Ordner **Ziele** und die **Eigenschaftenseiten** im **Leistungs-Explorer**, um Sitzungen zu konfigurieren. Anweisungen zur Vorgehensweise finden Sie unter [Manuelles Erstellen von Leistungssitzungen](../profiling/how-to-manually-create-performance-sessions.md).
 
-**Weitere Informationen:**
+**Weitere Informationen finden Sie in den folgenden Artikeln:**
 
 - [Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

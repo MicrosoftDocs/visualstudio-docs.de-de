@@ -1,5 +1,7 @@
 ---
 title: Funktionsdetailansicht | Microsoft-Dokumentation
+description: Im Leistungs-Explorer erfahren Sie mehr über das Fenster „Function Details View“ (Funktionsdetailansicht), das Balkendiagramm „Kostenverteilung“, die Tabelle „Funktionsleistungsdetails“ und das Fenster „Funktionscodeansicht“.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa53ba1d2e805f744d6a817c65b77428d757a25
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e812f0fdef46d0ac5ef42788c2f854922a7375c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536993"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801260"
 ---
 # <a name="function-details-view"></a>Funktionsdetailansicht
 Im Fenster **Funktionsdetailansicht** werden folgende Informationen angezeigt:

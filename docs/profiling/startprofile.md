@@ -1,5 +1,6 @@
 ---
 title: StartProfile | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur StartProfile-Funktion. Dies legt den Zähler für eine angegebene Profilerstellungsebene auf 1 (an) fest.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1522cdfadb5de20a2413f584c710baca15883f9c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778257"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719837"
 ---
 # <a name="startprofile"></a>StartProfile
 Die `StartProfile`-Funktion legt den Zähler für die angegebene Profilerstellungsebene auf 1 (ON) fest.
@@ -107,5 +108,5 @@ void ExerciseStartProfile()
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

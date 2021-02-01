@@ -1,5 +1,6 @@
 ---
 title: Ansichten für Ressourcenkonfliktdaten | Microsoft-Dokumentation
+description: Dieser Artikel enthält Referenzinformationen zu den Ansichten und Berichten für Profilerdatendateien, die Profilerstellungsdaten für Threadkonflikte enthalten.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771529"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720331"
 ---
 # <a name="resource-contention-data-views"></a>Ansichten für Ressourcenkonfliktdaten
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profilerdatendateien, die Profilerstellungsdaten für Threadkonflikte enthalten.
@@ -27,7 +28,7 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
 
  Zeigt eine grafische Zeitachse für Profilerstellungsdaten an und listet die Funktionen und Ressourcen auf, die bei den meisten blockierenden Ereignissen beteiligt waren.
 
-- [Aufrufstrukturansicht – Profiler-Instrumentationsdaten](../profiling/call-tree-view-contention-data.md)
+- [Aufrufstrukturansicht](../profiling/call-tree-view-contention-data.md)
 
  Zeigt eine hierarchische Struktur an, die die Ausführungspfade und Ressourcenkonfliktdaten von Funktionen während der Profilerstellung darstellt.
 
