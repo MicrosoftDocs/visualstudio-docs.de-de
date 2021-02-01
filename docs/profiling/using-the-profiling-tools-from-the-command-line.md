@@ -1,5 +1,6 @@
 ---
 title: Verwenden der Profilerstellungstools über die Befehlszeile | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie mithilfe der Befehlszeilentools der Profilerstellungstools in Visual Studio Profile für Anwendungen erstellen und die Profilerstellung mithilfe von Batchdateien und Skripts automatisieren können.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dea893340c038909057dd652472c10c8264786a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d6e159e28a1401548f0cda7b795a5bbe70a257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328350"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723230"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>Verwenden der Profilerstellungstools über die Befehlszeile
 Mithilfe der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools können Sie über die Eingabeaufforderung für Anwendungen Profile erstellen und die Profilerstellung mithilfe von Batchdateien und Skripts automatisieren. Darüber hinaus können Sie über eine Eingabeaufforderung auch Berichtsdateien erstellen. Sie können Daten auf Computern, auf denen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nicht installiert ist, mithilfe des einfachen eigenständigen Profilers sammeln.
@@ -40,5 +41,5 @@ Mithilfe der Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/v
 ## <a name="reference"></a>Verweis
 - [Referenz zu Profilerstellungstools für die Befehlszeile](../profiling/command-line-profiling-tools-reference.md)
 
-## <a name="see-also"></a>Weitere Informationen
-- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Siehe auch
+- [Leistungs-Explorer](../profiling/performance-explorer.md)

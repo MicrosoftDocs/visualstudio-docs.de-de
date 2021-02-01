@@ -1,5 +1,7 @@
 ---
 title: CvIsEnabled-Funktion | Microsoft-Dokumentation
+description: Dieser Artikel enthält Referenzinformationen für die Funktion CvIsEnabled des Concurrency Visualizer-SDK (C-Bibliothek).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57f1bb96480fe054c729b11a3fabd311407fa858
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330056"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686479"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled-Funktion
 Ermittelt, ob der angegebene ETW-Anbieter durch eine Sitzung aktiviert wurde.
@@ -42,12 +44,12 @@ HRESULT CvIsEnabledEx(
 
  `level`: die Wichtigkeitsstufe.
 
- `pProvider`: gültiges Anbieterobjekt. Darf nicht NULL sein.
+ `pProvider`: gültiges Anbieterobjekt. Lässt keine NULL-Werte zu.
 
 ## <a name="return-value"></a>Rückgabewert
  S_OK, wenn der Anbieter derzeit aktiviert ist. S_FALSE, wenn der Anbieter derzeit deaktiviert ist. Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit dem Makro FAILED, ob Fehler vorliegen und anschließend ob S_OK/S_FALSE vorliegt.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkers.h*
 
 ## <a name="see-also"></a>Siehe auch

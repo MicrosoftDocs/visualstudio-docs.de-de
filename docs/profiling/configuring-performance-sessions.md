@@ -1,5 +1,7 @@
 ---
 title: Konfigurieren von Leistungssitzungen | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie die Visual Studio Profilerstellungstools so konfigurieren, dass sie die gewünschten Leistungsdaten erfassen. In diesem Artikel sind die allgemeinen Aufgaben sowie Links enthalten.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf1c372ffcb3ad3a0ebf102827565853947e2b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 52e2575e034dbabe5e380857edd95e4bc46f56d2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777867"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721020"
 ---
 # <a name="configure-performance-sessions"></a>Konfigurieren von Leistungssitzungen
-Mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profilerstellungstools können Sie eine Vielzahl von Leistungsdaten für eine große Anzahl von Anwendungstypen sammeln. In diesem Abschnitt erfahren Sie, wie Sie den Leistungsassistententen und die Eigenschaften der Leistungssitzung sowie der Zielbinärdatei einsetzen, um Profilerstellungstools für das Sammeln von für Sie interessanten Daten zu konfigurieren. Die Konfigurationseigenschaften von Profilerstellungstools lassen sich außerdem dazu verwenden, um zu steuern, wie viele Daten während einer Profilerstellung gesammelt werden. Weitere Informationen finden Sie unter [Control data collection (Steuern der Datensammlung)](../profiling/controlling-data-collection.md).
+Mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profilerstellungstools können Sie eine Vielzahl von Leistungsdaten für eine große Anzahl von Anwendungstypen sammeln. In diesem Abschnitt erfahren Sie, wie Sie mit dem Leistungs-Assistenten und den Eigenschaften der Leistungssitzung sowie der Zielbinärdatei die Profilerstellungstools für das Sammeln von für Sie interessanten Daten konfigurieren. Die Konfigurationseigenschaften von Profilerstellungstools lassen sich außerdem dazu verwenden, um zu steuern, wie viele Daten während einer Profilerstellung gesammelt werden. Weitere Informationen finden Sie unter [Control data collection (Steuern der Datensammlung)](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
 > In vielen Fällen können Sie mithilfe der Standardeigenschaften des Leistungsassistenten das Sammeln von Profilerstellungsdaten effizient steuern. Weitere Informationen finden Sie unter [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md) und [Erste Schritte](../profiling/getting-started-with-performance-tools.md).
@@ -38,5 +40,5 @@ Mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profilers
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>Weitere Informationen
-- [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Siehe auch
+- [Leistungs-Explorer](../profiling/performance-explorer.md)

@@ -1,5 +1,7 @@
 ---
 title: CvReleaseMarkerSeries-Funktion | Microsoft-Dokumentation
+description: Dieser Artikel enthält Referenzinformationen für die Funktion CvReleaseMarkerSeries des Concurrency Visualizer-SDK (C-Bibliothek).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db5dac77fbbc51c9f1c0e24173dcc8ca1d68c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a69f60a991b9d88e6969992edbfe8eabdb7bd116
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332188"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686453"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries-Funktion
 Gibt Markerreihen frei. Verwenden Sie keine freigegebenen Markerreihenobjekte, da die Anwendung andernfalls möglicherweise abstürzt. Wenn Markerreihen nicht freigegeben werden, führt dies zu einem Arbeitsspeicherverlust.
@@ -36,7 +38,7 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="return-value"></a>Rückgabewert
  S_OK, wenn Markerreihen erfolgreich freigegeben wurden, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkers.h*
 
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,7 @@
 ---
 title: Anpassen von Berichtsansichten von Leistungstools | Microsoft-Dokumentation
+description: In diesem Abschnitt finden Sie Möglichkeiten, wie Sie Berichte anpassen können, die mit den Profilerstellungstools in Visual Studio erstellt wurden.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 57a3dddbefcf0b5a0220da282674fa781f102030
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777763"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686193"
 ---
 # <a name="customize-performance-tools-report-views"></a>Anpassen von Berichtsansichten von Leistungstools
 In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools generiert werden.
@@ -33,5 +35,5 @@ In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCL
 ## <a name="related-sections"></a>Verwandte Abschnitte
 - [Leistungsberichtansichten:](../profiling/performance-report-views.md) beschreiben die Ansichten, die Sie zum Analysieren von Profilerstellungsdaten verwenden können.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

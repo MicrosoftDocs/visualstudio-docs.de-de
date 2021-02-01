@@ -1,5 +1,7 @@
 ---
 title: CvLeaveSpan-Funktion | Microsoft-Dokumentation
+description: Dieser Artikel enthält Referenzinformationen für die Funktion CvLeaveSpan des Concurrency Visualizer-SDK (C-Bibliothek).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 113d6aafbd09f6b726613405a8c1eb82f9e202e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1dcd98a8233f8080d03650c3989805ee9ec7289
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330040"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686583"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan-Funktion
 Markiert das Ende der Spanne.
@@ -31,12 +33,12 @@ HRESULT CvLeaveSpan(
 ```
 
 #### <a name="parameters"></a>Parameter
- `pSpan`: durch vorherigen Aufruf von CvEnterSpan* zurückgegebenes span-Objekt. Darf nicht NULL sein.
+ `pSpan`: durch vorherigen Aufruf von CvEnterSpan* zurückgegebenes span-Objekt. Lässt keine NULL-Werte zu.
 
 ## <a name="return-value"></a>Rückgabewert
  S_OK, wenn die Meldung erfolgreich geschrieben wurde. Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkers.h*
 
 ## <a name="see-also"></a>Siehe auch

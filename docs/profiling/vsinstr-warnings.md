@@ -1,6 +1,7 @@
 ---
 title: VSInstr-Warnungen | Microsoft-Dokumentation
 ms.date: 11/04/2016
+description: In diesem Artikel erhalten Sie Informationen zu Warnungen, die vom VSInstr.exe-Tool ausgegeben werden. Außerdem erfahren Sie, wie Sie die NOWARN-Option zusammen mit den Warnungsnummern verwenden, um die Anzeige der Warnung zu unterdrücken.
 ms.topic: reference
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af98372102da49e7553d2f2992f3804cf0a619e
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330538"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723126"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr-Warnungen
 Die folgende Tabelle enthält die vom Tool *VSInstr.exe* ausgegebenen Warnungen. Sie können die NOWARN-Option zusammen mit den Warnungsnummern verwenden, um die Anzeige der Warnung zu unterdrücken.

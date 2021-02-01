@@ -1,5 +1,6 @@
 ---
 title: VSPerfCLREnv | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie mit dem Tool VSPerfCLREnv Umgebungsvariablen festlegen, die zum Profilen einer .NET Framework-Anwendung erforderlich sind.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 828768b59e4ab465e4723d399d406b994fa8c8ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1aa0d4a476c64ec20f0a378398cfb95e364a07e3
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330426"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719213"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -101,7 +102,7 @@ Um die Profilerstellung für einen verwalteten Dienst wie die ASP.NET-Webanwendu
 
 |Option|Beschreibung|
 |------------|-----------------|
-|**Off**|Löscht Umgebungsvariablen für die Standard-.NET-Profilerstellung. Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv-Optionen zum Festlegen der Profiler-Umgebungsvariablen verwendet wurden.|
+|**Deaktiviert**|Löscht Umgebungsvariablen für die Standard-.NET-Profilerstellung. Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv-Optionen zum Festlegen der Profiler-Umgebungsvariablen verwendet wurden.|
 |**GlobalOff**|Löscht Umgebungsvariablen für die globale .NET-Profilerstellung. Verwenden Sie diese Option, wenn die Anwendung vom Betriebssystem anstatt vom Profiler gestartet wurde.|
 
 ## <a name="remarks"></a>Bemerkungen
@@ -110,6 +111,6 @@ Diese Optionen sind für die Profilerstellung einer verwalteten Anwendung nicht 
 
 Wenn während der Profilerstellung nicht die richtige Umgebung festgelegt wurde, wird während der Analyse eine Warnung ausgegeben und die Namen der verwalteten Funktionen werden nicht ordnungsgemäß aufgelöst.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 [Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

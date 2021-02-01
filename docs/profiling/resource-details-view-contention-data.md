@@ -1,5 +1,6 @@
 ---
 title: Ressourcendetailansicht – Konfliktdaten | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Ansicht „Ressourcendetails“, die ein Zeitachsendiagramm mit den Blockierungsereignissen enthält, die durch Konflikte in Bezug auf eine ausgewählte Ressourcen ausgelöst wurden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 45babe50e794e0831fd0e93048b32feaf18be87a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771592"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720357"
 ---
 # <a name="resource-details-view---contention-data"></a>Ressourcendetailansicht – Konfliktdaten
 Die Ansicht Ressourcendetails enthält ein Zeitachsendiagramm der blockierenden Ereignisse, die von Konflikten ausgewählter Ressourcen ausgelöst wurden. Ein blockierendes Ereignis tritt auf, wenn der Thread gezwungen wird, die Ausführung anzuhalten, da ein anderer Thread den Zugriff auf die Ressource gesperrt hat.
 
  Diese Ansicht stellt die Ausführungszeitachse jedes Threads als horizontalen Balken und die blockierenden Ereignisse als senkrechten Balken für den Thread dar. Bei Bedarf können Sie einen Teil eines Zeitachsenbereichs vergrößern, um die einzelnen Ereignisse anzuzeigen. Um den Ausführungspfad (Aufrufliste) der Funktionen anzuzeigen, die zum Ereignis geführt haben, klicken Sie auf die Ereignisleiste. Die Funktionen werden im Fenster **Aufrufliste** angezeigt. Wenn der Quellcode für eine Funktion verfügbar ist, können Sie auf den Funktionsnamen klicken, um die Quelldatei in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Oberfläche zu bearbeiten.
 
-## <a name="procedures"></a>Verfahren
+## <a name="procedures"></a>Prozeduren
 
 #### <a name="to-magnify-a-timeline-segment"></a>So vergrößern Sie ein Zeitachsensegment
 

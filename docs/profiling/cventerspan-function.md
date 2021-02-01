@@ -1,5 +1,7 @@
 ---
 title: CvEnterSpan-Funktion | Microsoft-Dokumentation
+description: Dieser Artikel enthält Referenzinformationen für die Funktion CvEnterSpan des Concurrency Visualizer-SDK (C-Bibliothek).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a68d58d6a9b2564c732605075811e8bc99721f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328969"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686518"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan-Funktion
 Kennzeichnet den Anfang einer neuen Spanne.
@@ -108,16 +110,16 @@ HRESULT CvEnterSpanExVA(
 
  `level`: die Wichtigkeitsstufe der Spanne.
 
- `pMarkerSeries`: gültiger Markerreihenkontext. Darf nicht NULL sein.
+ `pMarkerSeries`: gültiger Markerreihenkontext. Lässt keine NULL-Werte zu.
 
- `pMessage`: die Nachrichtenformatzeichenfolge. Darf nicht NULL sein.
+ `pMessage`: die Nachrichtenformatzeichenfolge. Lässt keine NULL-Werte zu.
 
  `ppSpan`: die Adresse der Variablen, in der das resultierende span-Objekt gespeichert wird. Die Adresse darf nicht NULL sein. Die Variable kann einen beliebigen Wert aufweisen.
 
 ## <a name="return-value"></a>Rückgabewert
  S_OK, wenn die Meldung erfolgreich geschrieben wurde. Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkers.h*
 
  **Unicode:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW

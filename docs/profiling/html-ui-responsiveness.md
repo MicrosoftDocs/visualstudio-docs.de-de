@@ -1,5 +1,6 @@
 ---
 title: Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie Leistungsprobleme in Ihren Apps mithilfe des Profilers für die Reaktionsfähigkeit von Benutzeroberflächen (UI Responsiveness Profiler) isolieren. Dabei handelt es sich um ein Leistungstool für universelle Windows-Apps.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331410"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721878"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Profilers für die Reaktionsfähigkeit der Benutzeroberflächen beschrieben, einem Leistungstool für universelle Windows-Apps.
@@ -58,7 +59,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 
          Sie können diese Option zum Analysieren der Leistung von Apps verwenden, die auf Ihrem Computer installiert sind, wenn Sie keinen Zugriff auf den Quellcode haben. Diese Option kann auch nützlich sein, um die Leistung einer App außerhalb der eigenen App-Entwicklung zu analysieren.
 
-3. Wählen Sie unter **Verfügbare Tools**das Tool **HTML-UI-Reaktionsfähigkeit**aus, und wählen Sie dann **Starten**aus.
+3. Wählen Sie unter **Verfügbare Tools** das Tool **HTML-UI-Reaktionsfähigkeit** aus, und wählen Sie dann **Starten** aus.
 
 4. Wenn Sie den Benutzeroberflächen-Reaktionsfähigkeits-Profiler starten, werden Sie im Fenster „Benutzerkontensteuerungsfenster“ eventuell aufgefordert, die Berechtigung zur Ausführung von Visual Studio ETW Collector.exe anzugeben. Klicken Sie auf **Ja**.
 
@@ -66,7 +67,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
 
 5. Wechseln Sie mittels der Tastenkombination ALT+TAB zu Visual Studio.
 
-6. Um die Profilerstellung für die App zu beenden und vom Profiler erfasste Daten anzuzeigen, wählen Sie **Auflistung beenden**aus.
+6. Um die Profilerstellung für die App zu beenden und vom Profiler erfasste Daten anzuzeigen, wählen Sie **Auflistung beenden** aus.
 
 ## <a name="isolate-an-issue"></a>Isolieren eines Problems
  Im folgenden Abschnitt sind Vorschläge enthalten, die Ihnen beim Isolieren von Leistungsproblemen helfen sollen. Eine schrittweise Erklärung der Vorgehensweise zum Identifizieren und Beheben von Leistungsproblemen mithilfe einer Beispiel-App für Leistungstests finden Sie unter [Exemplarische Vorgehensweise: Verbesserung der Reaktionsfähigkeit der Benutzeroberfläche (HTML)](html-ui-responsiveness.md).
@@ -169,7 +170,7 @@ if (performance.mark && performance.measure) {
 
  ![Benutzermaßereignis in der Zeitleistendetailansicht](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
 
-## <a name="analyze-data"></a>Analysieren von Daten
+## <a name="analyze-data"></a>Daten analysieren
  In den folgenden Abschnitten sind Informationen enthalten, die Ihnen das Interpretieren der im Profiler angezeigten Daten erleichtern sollen.
 
 ### <a name="view-the-diagnostic-session-timeline"></a><a name="Ruler"></a> Anzeigen einer Zeitachse für die Diagnosesitzung
@@ -188,7 +189,7 @@ if (performance.mark && performance.measure) {
 - Ein Navigationsereignis, das auftritt, wenn Sie zu einer anderen Seite navigieren. In einer QuickInfo für das Ereignis wird die URL der Zielseite angezeigt.
 
 ### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Anzeigen der CPU-Auslastung
- Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert, um die folgenden spezifischen Kategorien darzustellen: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Format**, **Rendern**und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#profiler-event-reference) in diesem Thema.
+ Das Diagramm der CPU-Auslastung ermöglicht das Identifizieren von Zeiträumen mit übermäßiger CPU-Aktivität. Es stellt Informationen über die durchschnittliche CPU-Auslastung der App über einen bestimmten Zeitraum dar. Die Informationen sind farbcodiert, um die folgenden spezifischen Kategorien darzustellen: **Laden**, **Skripterstellung**, Garbage Collection (**GC**), **Format**, **Rendern** und **Bilddekodierung**. Weitere Informationen über diese Kategorien finden Sie unter [Profiler event reference](#profiler-event-reference) in diesem Thema.
 
  Im CPU-Auslastungsdiagramm wird die Zeit angezeigt, die auf allen App-Threads aufgewendet wird. Dabei werden die CPU-Auslastungs-Werte für eine oder mehrere CPUs in einem einzelnen Prozentwert zusammengefasst. Der CPU-Auslastungswert überschreitet möglicherweise 100 Prozent, wenn mehr als eine CPU verwendet wird.
 
@@ -293,7 +294,7 @@ if (performance.mark && performance.measure) {
  Um Benutzermaße auszufiltern, deaktivieren Sie die Option **Benutzermaße** . Benutzermaße sind Ereignisse der obersten Ebene ohne untergeordnete Elemente.
 
 ### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> Ereignisse nach Frame gruppieren
- Sie können Ereignisse, die in der Zeitachsendetailansicht angezeigt werden, in einzelnen Frames gruppieren. Diese Frameereignisse sind toolgenerierte Ereignisse und stellen Ereigniscontainer der obersten Ebene für alle Aufgaben des UI-Threads dar, die zwischen Paint-Ereignissen auftreten. Um diese Ansicht zu aktivieren, wählen Sie **Ereignisse der obersten Ebene nach Frames gruppieren**aus.
+ Sie können Ereignisse, die in der Zeitachsendetailansicht angezeigt werden, in einzelnen Frames gruppieren. Diese Frameereignisse sind toolgenerierte Ereignisse und stellen Ereigniscontainer der obersten Ebene für alle Aufgaben des UI-Threads dar, die zwischen Paint-Ereignissen auftreten. Um diese Ansicht zu aktivieren, wählen Sie **Ereignisse der obersten Ebene nach Frames gruppieren** aus.
 
  ![Ereignisse auf der obersten Ebene gruppieren](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")
 
@@ -325,7 +326,7 @@ if (performance.mark && performance.measure) {
 
   In dieser Tabelle werden die Ereignisse und die entsprechenden Beschreibungen aufgeführt:
 
-|event|Ereigniskategorie|Tritt auf bei|
+|Ereignis|Ereigniskategorie|Auftreten bei folgendem Vorgang|
 |-----------|--------------------|-----------------|
 |CSS-Analyse|Laden|Neuer CSS-Inhalt wurde gefunden, und es wurde versucht, den CSS-Inhalt zu analysieren.|
 |HTML-Analyse|Laden|Neuer HTML-Inhalt wurde gefunden, und es wurde versucht, den Inhalt in Knoten zu analysieren und in die DOM-Struktur einzufügen.|
@@ -337,17 +338,17 @@ if (performance.mark && performance.measure) {
 |Medienabfragelistener|Skripterstellung|Eine registrierte Medienabfrage wurde ungültig, was zur Ausführung der zugeordneten Listener geführt hat.|
 |Mutationsbeobachter|Skripterstellung|Mindestens ein beobachtetes DOM-Element wurde geändert, was zur Ausführung eines einem MutationObserver zugeordneten Rückrufs geführt hat.|
 |Skriptauswertung|Skripterstellung|Ein neues SCRIPT-Element wurde im DOM gefunden, und es wurde versucht, das Skript zu analysieren und auszuführen.|
-|Zeitgeber|Skripterstellung|Ein geplanter Zeitgeber ist verstrichen, und dies führt zur Ausführung der zugeordneten Rückruffunktion.|
+|Timer|Skripterstellung|Ein geplanter Zeitgeber ist verstrichen, und dies führt zur Ausführung der zugeordneten Rückruffunktion.|
 |Asynchrone Rückruffunktion der Windows Runtime|Skripterstellung|Ein asynchroner Vorgang, der eine `Promise` -Rückruffunktion ausgelöst hat, wurde von einem Windows Runtime-Objekt abgeschlossen.|
 |Windows Runtime-Ereignis|Skripterstellung|Ein Ereignis, das auf einem Windows Runtime-Objekt aufgetreten ist, hat einen registrierten Listener ausgelöst.|
 |Garbage Collection|GC|Es wurde Zeit für die Erfassung von Speicher für Objekte aufgewendet, die nicht mehr verwendet wurden.|
 |CSS-Berechnung|Format|Es wurden Änderungen am DOM vorgenommen, für die die Formateigenschaften aller betroffenen Elemente neu berechnet werden musste.|
 |Layout|Format|Es wurden Änderungen am DOM vorgenommen, für die die Größe und/oder die Position aller betroffenen Elemente neu berechnet werden musste.|
-|Farbe|Rendern|Es wurden visuelle Änderungen am DOM vorgenommen, und es wurde versucht, Teile der Seite erneut zu rendern.|
-|Ebene rendern|Rendern|Es wurden visuelle Änderungen an einem unabhängig gerenderten Fragment des DOM (Ebene genannt) vorgenommen, und für die Änderungen muss ein Teil der Seite gerendert werden.|
+|Farbe|Darstellung|Es wurden visuelle Änderungen am DOM vorgenommen, und es wurde versucht, Teile der Seite erneut zu rendern.|
+|Ebene rendern|Darstellung|Es wurden visuelle Änderungen an einem unabhängig gerenderten Fragment des DOM (Ebene genannt) vorgenommen, und für die Änderungen muss ein Teil der Seite gerendert werden.|
 |Bilddekodierung|Bilddekodierung|Ein Bild wurde im DOM eingefügt, und es wurde versucht, das Bild vom ursprünglichen Format in eine Bitmap zu dekomprimieren und zu decodieren.|
-|Frame|N/V|Es wurden optische Änderungen am DOM vorgenommen, durch die ein Neuzeichnen der betroffenen Teile der Seite erforderlich wurde. Dies ist ein toolgeneriertes Ereignis für die Gruppierung.|
-|Benutzermaß|N/V|Ein App-spezifisches Szenario wurde während der Verwendung der `performance.measure` -Methode gemessen. Dies ist ein toolgeneriertes Ereignis, das für die Analyse von Code verwendet wird.|
+|Frame|Nicht zutreffend|Es wurden optische Änderungen am DOM vorgenommen, durch die ein Neuzeichnen der betroffenen Teile der Seite erforderlich wurde. Dies ist ein toolgeneriertes Ereignis für die Gruppierung.|
+|Benutzermaß|Nicht zutreffend|Ein App-spezifisches Szenario wurde während der Verwendung der `performance.measure` -Methode gemessen. Dies ist ein toolgeneriertes Ereignis, das für die Analyse von Code verwendet wird.|
 
 ## <a name="additional-information"></a>Zusätzliche Informationen
 
@@ -357,5 +358,5 @@ if (performance.mark && performance.measure) {
 
 - Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](/previous-versions/windows/apps/hh781217\(v\=win.10\)).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

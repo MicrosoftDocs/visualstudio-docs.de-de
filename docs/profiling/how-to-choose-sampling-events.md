@@ -1,5 +1,7 @@
 ---
 title: Auswählen von Samplingereignissen | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie das Samplingereignis so einstellen, dass es Ihren Anforderungen entspricht, und wie Sie die Anzahl der Zyklen zwischen den Samplingereignissen festlegen. Zu den verfügbaren Ereignissen gehören Taktzyklen und Seitenfehler.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ed97fd205ffc0c969d0cad39d962cd8cdeb4e2eb
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851293"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801569"
 ---
 # <a name="how-to-choose-sampling-events"></a>Vorgehensweise: Auswählen von Samplingereignissen
 Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sammeln standardmäßig Leistungsdaten in einem Intervall, das als eine Anzahl von Prozesszyklen angegeben wird, die vom profilierten Prozess verwendet wird. Die Anzahl von Zyklen in einem Intervall beträgt standardmäßig 10.000.000, was ungefähr 0,01 Sekunden auf einem 1-GHz-Computer entpricht. Sie können die Anzahl von Zyklen in einem Intervall sowie das Beispielereignis ändern. Die folgenden Beispielereignisse sind verfügbar:
@@ -42,7 +44,7 @@ Die Profilerstellungstools [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
 
 ### <a name="to-select-a-sample-event"></a>So wählen Sie ein Beispielereignis aus
 
-1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
+1. Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
 2. Klicken Sie in den **Eigenschaftenseiten** auf die Eigenschaften **Sampling**.
 

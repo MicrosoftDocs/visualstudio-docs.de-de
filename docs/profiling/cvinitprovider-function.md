@@ -1,5 +1,7 @@
 ---
 title: CvInitProvider-Funktion | Microsoft-Dokumentation
+description: Dieser Artikel enthält Referenzinformationen für die Funktion CvInitProvider des Concurrency Visualizer-SDK (C-Bibliothek).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d1b41d9d62bbf5a159ec3a9d60f4e2edf5cc115
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329565"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686505"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider-Funktion
 Initialisiert Markeranbieter. Muss vor anderen Funktionen des SDK für die Nebenläufigkeitsschnellansicht aufgerufen werden.
@@ -32,14 +34,14 @@ HRESULT CvInitProvider(
 ```
 
 #### <a name="parameters"></a>Parameter
- `pGuid`: die Anbieter-GUID. Darf nicht NULL sein.
+ `pGuid`: die Anbieter-GUID. Lässt keine NULL-Werte zu.
 
- `ppProvider`: die Adresse einer Ausgabevariablen, mit der der Anbieterkontext gespeichert wird. Darf nicht NULL sein.
+ `ppProvider`: die Adresse einer Ausgabevariablen, mit der der Anbieterkontext gespeichert wird. Lässt keine NULL-Werte zu.
 
 ## <a name="return-value"></a>Rückgabewert
  S_OK, wenn der Anbieter erfolgreich initialisiert wurde, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkers.h*
 
 ## <a name="see-also"></a>Siehe auch

@@ -1,5 +1,6 @@
 ---
 title: Synchronisierungszeit | Microsoft-Dokumentation
+description: Hier erfahren Sie mehr über die Segmente in der Zeitachse, die als Synchronisierung kategorisierten Blockierungszeiten zugeordnet sind.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae73f7b9a9838a006dce47bf44b0ed46aa0b84fa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0e8c2243d01a5801b6846445995bbdfdcff78c9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62965309"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719824"
 ---
 # <a name="synchronization-time"></a>Synchronisierungszeit
 Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als Synchronisierung kategorisiert sind. Wenn ein Thread bei der Synchronisierung als „blockiert“ markiert wird, wird eine der folgenden Optionen impliziert:
@@ -28,5 +29,5 @@ Diese Segmente in der Zeitachse werden der Blockierungszeit zugeordnet, die als 
 
   Überprüfen Sie die Liste der blockierten Aufrufe und die Profilberichte sorgfältig, um die Ursache für die Blockierung des Threads nachzuvollziehen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Threadansicht](../profiling/threads-view-parallel-performance.md)

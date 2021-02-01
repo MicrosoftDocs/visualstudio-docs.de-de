@@ -18,18 +18,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94904000"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773341"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Symbole in der Klassenansicht und im Objektkatalog
 
 Die **Klassenansicht** und der **Objektkatalog** zeigen Symbole an, die Codeentitäten darstellen, z.B. Namespaces, Klassen, Funktionen und Variablen. In der folgenden Tabelle werden die Symbole dargestellt und beschrieben.
 
-|Symbol|BESCHREIBUNG|Symbol|Beschreibung|
+|Symbol|Beschreibung|Symbol|Beschreibung|
 |----------|-----------------|----------|-----------------|
 |![Symbol "Namespace"](../ide/media/vxnamespace_icon.gif)|Namespace|![Symbol "Deklaration"](../ide/media/vxmethod_icon.gif)|Methode oder Funktion|
 |![Symbol "Klasse"](../ide/media/vxclass_icon.gif)|Klasse|![Symbol "Operator"](../ide/media/vxoperator_icon.gif)|Operator|
@@ -65,6 +65,9 @@ Die folgenden Signalsymbole gelten für alle zuvor erwähnten Symbole und geben 
 
 > [!NOTE]
 > Wenn Ihr Projekt in einer Quellcodeverwaltungs-Datenbank enthalten ist, werden möglicherweise zusätzliche Signalsymbole angezeigt, um den Quellcodestatus anzugeben, z.B. eingecheckt oder ausgecheckt.
+
+> [!TIP]
+> Laden Sie [**Visual Studio Image Library**](https://www.microsoft.com/download/details.aspx?id=35825) herunter, um mehr von den Anwendungsbildern und -symbolen aus Visual Studio anzuzeigen.
 
 ## <a name="see-also"></a>Siehe auch
 

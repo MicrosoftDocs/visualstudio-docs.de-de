@@ -1,5 +1,6 @@
 ---
 title: Anfügen eines Profilers an ASP.NET zum Sammeln von Speicherdaten
+description: Verwenden Sie die Visual Studio Profilerstellungstools, um den Profiler an eine ASP.NET-Webanwendung anzufügen und Daten zur Anzahl und Größe der .NET Framework-Speicherbelegungen abzurufen.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 22a3f7d20b02839ae677b12e5ce8454e63358914
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 918a370df43e2754721dd715ea6e2559e14160f8
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807975"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801599"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Speicherdaten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools den Profiler an eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung anfügen und Daten zur Anzahl und Größe der .NET Framework-Speicherbelegungen sammeln können. Sie können außerdem Daten zur Lebensdauer von .NET Framework-Arbeitsspeicherobjekten erfassen.
@@ -56,7 +57,7 @@ In diesem Artikel wird beschrieben, wie Sie mit den Befehlszeilentools der [!INC
 
 5. Starten Sie den Profiler. Typ:
 
-    **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
+    **VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
    - Mit der Option **/start:sample** wird der Profiler initialisiert.
 

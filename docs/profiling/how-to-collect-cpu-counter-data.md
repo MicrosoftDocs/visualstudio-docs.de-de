@@ -1,5 +1,7 @@
 ---
 title: Sammeln von CPU-Indikatordaten | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie CPU-(Hardware-)Ereigniszähler zum Sammeln von hardwarespezifischen Leistungsdaten verwenden. Außerdem sind in diesem Artikel die verschiedenen Ereignistypen aufgeführt.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851280"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801564"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Vorgehensweise: Sammeln von CPU-Indikatordaten
 
@@ -30,9 +32,9 @@ Es treten zwei Typen von CPU-Indikatorereignissen auf:
 
 - Plattformereignisse: CPU-Ereignisse, die mit einem bestimmten CPU verbunden sind.
 
-  Portable Ereignisse enthalten allgemeine Ereignisse, z.B. zurückgezogene Anweisungen und nicht angehaltene Zyklen, CPU-Pufferereignisse, verzweigte Ereignisse sowie L2-Cache-Ereignisse. Die verfügbaren Plattformereignisindikatoren werden durch den Hersteller des Prozessors bestimmt.
+Portable Ereignisse enthalten allgemeine Ereignisse, z.B. zurückgezogene Anweisungen und nicht angehaltene Zyklen, CPU-Pufferereignisse, verzweigte Ereignisse sowie L2-Cache-Ereignisse. Die verfügbaren Plattformereignisindikatoren werden durch den Hersteller des Prozessors bestimmt.
 
-  Ereigniskategorien können von portablen und Plattfomindikatoren gemeinsam genutzt werden. Die folgenden Datenkategorien gelten z.B. häufig für beide Typen:
+Ereigniskategorien können von portablen und Plattfomindikatoren gemeinsam genutzt werden. Die folgenden Datenkategorien gelten z.B. häufig für beide Typen:
 
 - Speicherereignisse
 
@@ -40,7 +42,7 @@ Es treten zwei Typen von CPU-Indikatorereignissen auf:
 
 - Verzweigungsereignisse
 
-  Sie können Leistungsindikatordaten auf zwei Arten im Profiler sammeln:
+Sie können Leistungsindikatordaten auf zwei Arten im Profiler sammeln:
 
 - Sammeln Sie Daten aus einem oder mehrere Leistungsindikatoren, wenn Sie ein Profil durch Instrumentation erstellen.
 

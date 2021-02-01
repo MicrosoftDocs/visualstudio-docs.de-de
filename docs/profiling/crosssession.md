@@ -1,5 +1,7 @@
 ---
 title: CrossSession | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie mit der Option CrossSession von VSPerfCmd.exe zulassen, dass der Profiler Daten aus jeder Konsolensitzung sammelt. Sie müssen außerdem die Option Start angeben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
@@ -9,15 +11,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 019a7b74deb70176f214aefdcec4db86cec86829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a20ada8a7ca8d0ca8c34c2c6d730c37cdca09b7
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331164"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686208"
 ---
 # <a name="crosssession"></a>CrossSession
-Über die *VSPerfCmd.exe*-Option **CrossSession** kann der Profiler Daten aus jeder Konsolensitzung sammeln. Die Option **CrossSession** muss zusammen mit der Option **Start** verwendet werden.
+Mit der *VSPerfCmd.exe-Option* **CrossSession** kann der Profiler Daten aus jeder Konsolensitzung sammeln. Die Option **CrossSession** muss zusammen mit der Option **Start** verwendet werden.
 
  Anstelle von **CrossSession** können Sie die Abkürzung **CS** verwenden.
 
@@ -37,7 +39,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 
  **Attach:** _PID_[ **,** _PID_] startet die Profilerstellung für die angegebenen Prozesse.
 
- **Detach**[ **:** _PID_[,_PID_]] beendet die Profilerstellung für die angegebenen Prozesse.
+ **Detach**[**:**_PID_[,_PID_]] beendet die Profilerstellung für die angegebenen Prozesse.
 
 ## <a name="example"></a>Beispiel
  In diesem Beispiel wird mit der Option **CrossSession** eine Anwendung angefügt, die in einer anderen Konsolensitzung gestartet wurde.

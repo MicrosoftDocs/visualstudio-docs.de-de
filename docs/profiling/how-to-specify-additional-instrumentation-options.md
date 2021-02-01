@@ -1,5 +1,6 @@
 ---
 title: Angeben zusätzlicher Instrumentierungsoptionen | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie Binärdateien über die Visual Studio-IDE oder mithilfe von Befehlszeilentools instrumentieren können.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42c5500d03e815bad1666da7b52918479715e861
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: aaa6a222ca320ff9e8e3d117c2218e170d67d683
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851813"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721852"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen
 
