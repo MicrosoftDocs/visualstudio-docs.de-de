@@ -1,5 +1,6 @@
 ---
 title: Neuerungen bei der Profilerstellung in Visual Studio 2017 | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zu den Diagnosetools. Diese beinhalten neue Visualisierungen, um Ihnen bei der Identifizierung von Problemen in Ihrer App zu helfen, die behoben werden müssen.
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 57ccf59de6ce5d18aab0a461cff91875cc74486d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71128341"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723100"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevs_dev15"></a>Neuerungen bei den Profilerstellungstools in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 

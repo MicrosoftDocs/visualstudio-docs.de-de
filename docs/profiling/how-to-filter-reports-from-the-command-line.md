@@ -1,5 +1,7 @@
 ---
 title: Filtern von Berichten über die Befehlszeile | Microsoft-Dokumentation
+description: Verwenden Sie VSPerfReport.exe, um die Berichterstellung auf einen bestimmten Zeitraum oder ausgewählte Prozesse und Threads zu beschränken. In diesem Artikel werden die entsprechenden Optionen beschrieben.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6408975e8a3d7189db26913f3de75ad1c7c595
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 968b02569c123326710482705146844ef393dfa6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851137"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801201"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Vorgehensweise: Filtern von Berichten über die Befehlszeile
 Mithilfe von Optionen für den Befehl **VSPerfReport** können Sie Berichte nach einem bestimmten Zeitsegment der Profilerstellungsdatei filtern oder die Daten auf einen oder mehr Prozesse oder Threads beschränken. Weitere Informationen zu diesem Befehl finden Sie unter [VSPerfReport](../profiling/vsperfreport.md).
