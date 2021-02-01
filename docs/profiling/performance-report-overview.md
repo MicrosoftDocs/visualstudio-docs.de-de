@@ -1,5 +1,6 @@
 ---
 title: Leistungsberichtübersicht | Microsoft-Dokumentation
+description: Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster „Leistungsbericht“ der IDE der Visual Studio Team System Development Edition anzeigen.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 95fbb51cbcc4d2467b9d1636c7e9f61232791d62
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772231"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722762"
 ---
 # <a name="performance-report-overview"></a>Leistungsberichtübersicht
 Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leistungsbericht** der integrierten Entwicklungsumgebung (integrated Development Environment (IDE)) der Visual Studio Team System Development Edition anzeigen. Die Profilerstellungsdaten werden in VSP- und VSPS-Dateien gespeichert. In den Anzeigefenstern für Berichte können Sie Leistungsprobleme der Anwendung anzeigen und analysieren.
@@ -73,7 +74,7 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
  Die Zuordnungsansicht ist verfügbar, wenn **.NET-Objektzuordnung sammeln** auf der Seite **Allgemein** im Eigenschaftendialogfeld **Leistungssitzung** ausgewählt wurde. Informationen hierzu finden Sie unter [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md). Die Zuordnungsansicht listet die .NET-Objekte auf, die von der Anwendung oder Komponente zugeordnet wurden. Wenn eine Objektzeile erweitert wird, wird eine Aufrufstruktur angezeigt. Die Aufrufstruktur zeigt die Ausführungspfade, die zur Erstellung des Objekts geführt haben. Informationen werden auch über die Anzahl der inklusiven und exklusiven Zuordnungen für jede Funktion in der Aufrufstruktur angezeigt. Die Zuordnungsansicht kann den Ausführungspfad einer Funktion, die die größte Anzahl an Objekten zugeordnet hat, auch erweitern und hervorheben. Um den aktivsten Pfad anzuzeigen, klicken Sie mit der rechten Maustaste auf die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**. Weitere Informationen finden Sie unter [Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) und [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md).
 
 ### <a name="objects-lifetime-view"></a>Objektlebensdaueransicht
- Die Objektlebensdaueransicht ist verfügbar, wenn **.NET Objekt-Zuordnungsinformationen auflisten** und **Lebensdauerinformationen für .NET-Objekte auflisten**  auf der Seite **Allgemein** des Eigenschaftendialogfelds **Leistungssitzung** ausgewählt wurden.
+ Die Objektlebensdaueransicht ist verfügbar, wenn **.NET Objekt-Zuordnungsinformationen auflisten** und **Lebensdauerinformationen für .NET-Objekte auflisten** auf der Seite **Allgemein** des Eigenschaftendialogfelds **Leistungssitzung** ausgewählt wurden.
 
  Die Objektlebensdaueransicht zeigt die Gesamtanzahl der Instanzen der einzelnen Typen und die Anzahl der Objekte, die in jeder Erstellung der Garbage Collection gesammelt wurden. Weitere Informationen finden Sie unter [Objektlebensdaueransicht](../profiling/object-lifetime-view.md).
 
@@ -94,6 +95,6 @@ Sie können die Profilerstellungsdaten einer Leistungssitzung im Fenster **Leist
 
 - **Exportieren**: speichert den aktuellen Bericht im CVS-Format oder als XML-formatierte Datei mit Optionen, die verschiedenen Ansichten zu speichern.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
 - [Leistungsberichtansichten](../profiling/performance-report-views.md)

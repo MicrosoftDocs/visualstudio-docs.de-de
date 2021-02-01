@@ -1,5 +1,6 @@
 ---
 title: StopProfile | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur StopProfile-Funktion. Dies legt den Zähler für eine angegebene Profilerstellungsebene auf 0 (aus) fest.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f2cfffe78264f5721bbf3f3434199a542ec1ce14
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778231"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722684"
 ---
 # <a name="stopprofile"></a>StopProfile
 Die `StopProfile`-Funktion setzt den Zähler für die angegebene Profilerstellungsebene auf 0 (OFF).
@@ -107,5 +108,5 @@ void ExerciseStopProfile()
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Referenz für Profiler-APIs in Visual Studio (nativ)](../profiling/visual-studio-profiler-api-reference-native.md)

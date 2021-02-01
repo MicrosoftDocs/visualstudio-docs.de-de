@@ -1,5 +1,7 @@
 ---
 title: diagnostic-Namespace | Microsoft-Dokumentation
+description: Verwenden Sie den Diagnosenamespace, um Concurrency Visualizer-Marker auszugeben. Der Diagnosenamespace ist Teil des Concurrency-Namespace.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20b25e2974f4b0e4a6bbf6cf02c411fde3f3de1a
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330259"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686544"
 ---
 # <a name="diagnostic-namespace"></a>Diagnostic-Namespace
 Der `diagnostics`-Namespace stellt Funktionen zum Ausgeben von Markern für Nebenläufigkeitsschnellansichten bereit.
@@ -39,11 +41,11 @@ namespace diagnostic;
 
 ### <a name="enumerations"></a>Enumerationen
 
-|name|Beschreibung|
+|Name|Beschreibung|
 |----------|-----------------|
 |[marker_importance-Enumeration](../profiling/marker-importance-enumeration.md)|Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkersobj.h*
 
  **Namespace:** Parallelität

@@ -1,5 +1,6 @@
 ---
 title: Es werden keine Threadaktivitäten angezeigt (Threadansicht) | Microsoft-Dokumentation
+description: In diesem Artikel erhalten Sie Informationen zur Threadansicht. Im aktuell angezeigten Zeitbereich werden keine Aktivitäten angezeigt.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27298b03a03edf99a12a6d067a22ca8ba17faef0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62794467"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722879"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Es können keine Threadaktivitäten angezeigt werden (Threadansicht)
 In diesem Bereich werden Daten zu den eingeblendeten Threads im aktuell sichtbaren Zeitbereich angezeigt.
@@ -32,5 +33,5 @@ In diesem Bereich werden Daten zu den eingeblendeten Threads im aktuell sichtbar
 
 - Stellen Sie sicher, dass die Rauschunterdrückung auf einen niedrigen Schwellenwert festgelegt ist.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
