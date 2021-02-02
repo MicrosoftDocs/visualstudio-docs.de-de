@@ -1,20 +1,21 @@
 ---
 title: Wie kaufe ich Visual Studio-Abonnements?
-description: Hier erfahren Sie mehr zu Ihren Möglichkeiten, wie Sie Visual Studio-Abonnements erwerben können.
-ms.faqid: group4_1
+description: Hier erfahren Sie mehr zu Ihren Möglichkeiten, Visual Studio-Abonnements zu erwerben.
+ms.faqid: q4_1
 ms.topic: include
-ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
+ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
+ms.date: 01/12/2021
+ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
 ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104426"
+ms.locfileid: "99104514"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Wie kaufe ich Visual Studio-Abonnements?
+
 Visual Studio-Abonnements können über verschiedene Kanäle erworben werden. Dazu zählen u. a. die  [Volumenlizenzierung](https://www.microsoft.com/licensing/default), der  [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) und der [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
 
 [Vergleichen Sie die Abonnementvorteile und Preise](https://visualstudio.microsoft.com/vs/pricing/) , um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Sehen Sie sich die [Seite mit den Abonnementvorteilen](https://visualstudio.microsoft.com/vs/benefits/) an, die Sie bei der Entscheidung unterstützt, welches Abonnement das richtige für Sie ist.   
@@ -35,4 +36,4 @@ Mit Monatsabonnements können Sie Visual Studio und Azure DevOps ohne einen lang
 Weitere Informationen zur [Abrechnung von monatlichen Visual Studio-Abonnements](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) 
 
 ### <a name="volume-licensing"></a>Volumenlizenzprogramme 
-Volumenlizenzierungsabonnements sind verfügbar, wenn eine Organisation eine große Anzahl von Abonnements kaufen muss. Weitere Informationen zum Kauf im Rahmen einer Volumenlizenzierung finden Sie [hier](https://www.microsoft.com/licensing/how-to-buy/how-to-buy).  
+Volumenlizenzierungsabonnements sind verfügbar, wenn eine Organisation eine große Anzahl von Abonnements kaufen muss. Weitere Informationen zum Kauf im Rahmen einer Volumenlizenzierung finden Sie [hier](https://www.microsoft.com/licensing/how-to-buy/how-to-buy).
