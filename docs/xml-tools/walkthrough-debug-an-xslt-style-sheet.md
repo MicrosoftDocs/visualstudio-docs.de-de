@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
+ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351335"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925891"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets
 
@@ -24,7 +24,7 @@ Anhand der Schritte in dieser exemplarischen Vorgehensweise wird die Verwendung 
 Als Vorbereitung für diese exemplarische Vorgehensweise kopieren Sie zunächst die beiden [Beispieldateien](#sample-files) auf Ihren lokalen Computer. Eine der Dateien ist das Stylesheet, die andere die XML-Datei, die wir als Eingabe für das Stylesheet verwenden werden. In dieser exemplarischen Vorgehensweise findet das verwendete Stylesheet alle Bücher, deren Kosten unter dem durchschnittlichen Buchpreis liegen.
 
 > [!NOTE]
-> Der XSLT-Debugger ist nur in der Enterprise Edition von Visual Studio verfügbar.
+> Der XSLT-Debugger ist nur in den Visual Studio-Editionen „Professional“ und „Enterprise“ verfügbar.
 
 ## <a name="start-debugging"></a>Debugging starten
 
