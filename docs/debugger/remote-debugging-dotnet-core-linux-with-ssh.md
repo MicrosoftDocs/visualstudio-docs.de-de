@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204890"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224352"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Debuggen von .NET Core unter Linux mithilfe von SSH durch Anhängen an einen Prozess
 
-Ab Visual Studio 2017 können Sie .NET Core-Prozesse, die auf einer Linux-Bereitstellung (lokal oder remote) ausgeführt werden, über SSH anfügen. In diesem Artikel wird beschrieben, wie Sie Debuggen einrichten und wie es erfolgt. Weitere Informationen zu Debuggingszenarios mit Docker-Containern finden Sie stattdessen unter [Anfügen an einen in einem Docker-Container ausgeführten Prozess](../debugger/attach-to-process-running-in-docker-container.md).
+Ab Visual Studio 2017 können Sie .NET Core-Prozesse, die auf einer Linux-Bereitstellung (lokal oder remote) ausgeführt werden, über SSH anfügen. In diesem Artikel wird beschrieben, wie Sie Debuggen einrichten und wie es erfolgt. Weitere Informationen zu Debuggingszenarios mit Docker-Containern finden Sie stattdessen unter [Anfügen an einen in einem Docker-Container ausgeführten Prozess](../debugger/attach-to-process-running-in-docker-container.md) und unter [Containertools](../containers/edit-and-refresh.md). Informationen zum Debuggen von Linux in WSL 2 über Visual Studio (ohne Anfügen an den Prozess) finden Sie unter [Debuggen von .NET Core-Apps in WSL 2 mit Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
