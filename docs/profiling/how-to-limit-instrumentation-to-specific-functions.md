@@ -1,5 +1,7 @@
 ---
 title: Einschränken der Instrumentierung auf bestimmte Funktionen | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie die Instrumentierung und Datensammlung auf mindestens eine Funktion einschränken, indem Sie die Optionen auf der Seite „Erweitert“ oder auf den Eigenschaftenseiten der Zielbinärdatei einstellen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2316c0c3fe0b74bbd7b3e80324284f37dff0e64
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850994"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883331"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen
 Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen einschränken, indem Sie die Optionen unter der Seite **Erweitert** der **Leistungssitzung** oder die Zielbinärdateieigenschaften einstellen.
@@ -42,10 +44,10 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace` **::** `FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\** * gibt alle Funktionen im Namespace „MyNS“ an.
+    `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace` **::** `FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\** _ gibt alle Funktionen im Namespace „MyNS“ an.
 
    > [!NOTE]
-   > Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (siehe [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), und geben Sie dann **vsinstr /DumpFuncs** ein.
+   > Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis der Profilerstellungstools (weitere Informationen finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), und geben Sie dann _ *vsinstr /DumpFuncs** ein.
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>So beschränken Sie die Instrumentierung auf eine bestimmte Funktion in einer Binärdatei
 
@@ -61,10 +63,10 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace` **::** `FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\** * gibt alle Funktionen im Namespace „MyNS“ an.
+    `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace` **::** `FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\** _ gibt alle Funktionen im Namespace „MyNS“ an.
 
    > [!NOTE]
-   > Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (siehe [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), und geben Sie dann **vsinstr /DumpFuncs** ein.
+   > Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis der Profilerstellungstools (weitere Informationen finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), und geben Sie dann _ *vsinstr /DumpFuncs** ein.
 
 ## <a name="see-also"></a>Siehe auch
 - [Steuerung der Datensammlung](../profiling/controlling-data-collection.md)

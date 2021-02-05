@@ -1,5 +1,7 @@
 ---
 title: Manuelles Erstellen von Leistungssitzungen | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie eine Leistungssitzung erstellen, ohne ein Projekt in Visual Studio zu öffnen.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b918c201509829ad4194da415441ddd9506638a1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1a368da7a69d921c7e7a55922fb89774ce192b08
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851007"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883458"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Vorgehensweise: Manuelles Erstellen von Leistungssitzungen
 Sie können manuell eine Leistungssitzung erstellen. Sie brauchen dafür kein Projekt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] öffnen. Weitere Informationen finden Sie unter [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md).

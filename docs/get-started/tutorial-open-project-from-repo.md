@@ -1,8 +1,8 @@
 ---
-title: 'Tutorial: Öffnen eines Projekts von einem Repository aus'
-description: Hier erfahren Sie, wie Sie ein Projekt mithilfe von Visual Studio in einem Git- oder Azure DevOps-Repository öffnen.
+title: 'Tutorial: Öffnen eines Projekts aus einem Repository in Visual Studio 2019'
+description: Hier erfahren Sie, wie Sie ein Projekt mithilfe von Visual Studio 2019 in einem Git- oder Azure DevOps-Repository öffnen.
 ms.custom: get-started
-ms.date: 11/10/2020
+ms.date: 01/25/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,192 +14,195 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 91fb06a50fe0c992d3018aee31cfc963544f8b97
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+monikerRange: vs-2019
+ms.openlocfilehash: 3d78cf00230398b3ed059e68902af890144fde4a
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436080"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104718"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Öffnen eines Projekts von einem Repository aus
 
 In diesem Tutorial verwenden Sie Visual Studio, um erstmalig eine Verbindung mit einem Repository herzustellen und dann ein Projekt darin zu öffnen.
 
-::: moniker range="vs-2017"
-
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads) kostenlos herunterladen.
-
-::: moniker-end
 
 ## <a name="open-a-project-from-a-github-repo"></a>Öffnen eines Projekts von einem GitHub-Repository aus
 
-::: moniker range="vs-2017"
+Auf welche Weise Sie Projekte aus einem GitHub-Repository mithilfe von Visual Studio 2019 öffnen können, hängt von der Version ab, die Sie verwenden. Insbesondere für [**Version 16.8**](/visualstudio/releases/2019/release-notes/) oder höher stehen Ihnen neue, umfassender integrierte [Git-Funktionen in Visual Studio](../ide/git-with-visual-studio.md) zur Verfügung.
 
-1. Öffnen Sie Visual Studio 2017.
+Aber unabhängig davon, welche Version Sie installiert haben, können Sie Projekte aus einem GitHub-Repository immer mit Visual Studio öffnen.
 
-1. Klicken Sie in der oberen Menüleiste auf **Datei** > **Öffnen** > **Aus Quellcodeverwaltung öffnen**.
+#### <a name="168-and-later"></a>[16.8 und höher](#tab/vs168later)
 
-   Der Bereich **Team Explorer – Verbinden** wird geöffnet.
-
-    ![Team Explorer-Fenster in der Visual Studio-IDE](./media/open-proj-repo-team-explorer.png)
-
-1. Wählen Sie im Abschnitt **Lokale Git-Repositorys** die Option **Klonen** aus.
-
-    ![Auswählen von „Klonen“ im Abschnitt „Lokale Git-Repositorys“](./media/open-proj-repo-local-git-repo-clone.png)
-
-1. Geben Sie die URL Ihres Repositorys in das Feld **_Geben Sie die URL eines zu klonenden Git ein._ *ein, oder fügen Sie diese ein, und drücken Sie die* EINGABETASTE**. (Melden Sie sich im Falle einer entsprechenden Aufforderung bei GitHub an.)
-
-   Nach dem Klonen Ihres Repositorys durch Visual Studio wird Team Explorer geschlossen und der Projektmappen-Explorer geöffnet. Die Meldung *Klicken Sie oben auf "Projektmappen und Ordner", um eine Liste mit Projektmappen anzuzeigen.* wird angezeigt. Wählen Sie **Projektmappen und Ordner** aus.
-
-   ![Auswählen von „Projektmappen und Ordner“ im Projektmappen-Explorer](./media/open-proj-repo-github-solutions-folders.png)
-
-1. Ist eine Projektmappendatei verfügbar, wird sie im Flyoutmenü „Projektmappen und Ordner“ angezeigt. Wählen Sie sie aus, und Visual Studio öffnet die Projektmappe.
-
-   ![Auswählen des gewünschten Elements in der Dropdownliste des Projektmappen-Explorers](./media/open-proj-repo-github-solutions-folders-picker.png)
-
-   Enthält das Repository keine Projektmappendatei (insbesondere eine SLN-Datei), wird im Flyoutmenü „Keine Projektmappen gefunden.“ angezeigt. Sie können im Ordnermenü jedoch auf eine beliebige Datei doppelklicken, um sie im Visual Studio-Code-Editor zu öffnen.
-
-### <a name="review-your-work"></a>Überprüfen Ihrer Arbeit
-
-Sehen Sie sich die folgende Animation an, um Ihre Arbeit zu überprüfen, die Sie im Rahmen des vorherigen Abschnitts verrichtet haben.
-
-   ![Animation zum Öffnen eines Projekts in einem GitHub-Repository mithilfe von Visual Studio](./media/open-project-from-github.gif)
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-> [!NOTE]
-> Wenn Sie die neue integrierte Git-Benutzeroberfläche in Visual Studio 2019 testen möchten, stellen Sie sicher, dass Sie ein Update auf [**Version 16.8**](/visualstudio/releases/2019/release-notes/) durchgeführt haben. Weitere Informationen finden Sie auf der Seite [Neue Git-Funktion in Visual Studio](../ide/git-with-visual-studio.md).
+#### <a name="clone-a-github-repo-and-then-open-a-project"></a>Klonen eines GitHub-Repositorys und anschließendes Öffnen eines Projekts
 
 1. Öffnen Sie Visual Studio 2019.
 
-1. Wählen Sie im Startfenster **Code klonen oder auschecken** aus.
+1. Klicken Sie im Startfenster auf **Repository klonen**.
 
-   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Screenshot des Dialogfelds „Repository klonen“ in Visual Studio 2019, Version 16.8 und höher](../ide/media/vs-2019/clone-repository.png)
 
-1. Geben Sie den Repositoryspeicherort ein, und klicken Sie dann auf **Klonen**.
+1. Geben Sie den Speicherort des Repositorys ein, und klicken Sie auf **Klonen**.
 
-   ![Ansicht des Fensters „Code klonen oder auschecken“](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![Screenshot des Dialogfelds „Repository klonen“ in Visual Studio 2019, Version 16.8 und höher, in das Sie die URL zu einem Git-Repository eingeben](../ide/media/vs-2019/clone-repository-enter-location.png)
+
+1. Sie werden möglicherweise im Dialogfeld **Git-Benutzerinformationen** darum gebeten, Ihre Anmeldedaten einzugeben. Sie können entweder Ihre Daten hinzufügen oder die bereitgestellten Standarddaten bearbeiten.
+
+   ![Screenshot des Dialogfelds „Git-Benutzerinformationen“ in Visual Studio 2019, Version 16.8 und höher, in das Sie Ihre Kontoinformationen eingeben oder in dem Sie diese bearbeiten](../ide/media/vs-2019/git-user-information-dialog.png)
+
+    Klicken Sie auf **Speichern**, um die Informationen ihrer globalen GITCONFIG-Datei hinzuzufügen. Sie können dies auch auf einen späteren Zeitpunkt verschieben, indem Sie auf **Abbrechen** klicken.
+
+    Anschließend lädt Visual Studio automatisch die Projektmappe aus dem Repository und öffnet sie.
+
+   ![Screenshot eines Projekts in Git, das im Projektmappen-Explorer in Visual Studio 2019, Version 16.8 und höher, geöffnet ist](../ide/media/vs-2019/git-solution-explorer.png )
+
+1. Wenn Ihr Repository mehrere Projektmappen enthält, werden diese im Projektmappen-Explorer angezeigt. Sie können die Liste der Projektmappen abrufen, indem Sie im Projektmappen-Explorer auf die Schaltfläche **Darstellung wechseln** klicken.
+
+   ![Screenshot eines Projekts in Git, das im Projektmappen-Explorer in Visual Studio 2019, Version 16.8 und höher, geöffnet ist und bei dem die Schaltfläche „Darstellung wechseln“ hervorgehoben ist](../ide/media/vs-2019/git-solution-explorer-switch-views.png)
+
+   Im Projektmappen-Explorer haben Sie dann die Möglichkeit, das Stammverzeichnis in der **Ordneransicht** zu öffnen oder eine Projektmappendatei auszuwählen, die geöffnet werden soll.
+
+   ![Screenshot einer SLN-Datei in Git, die im Projektmappen-Explorer geöffnet ist, nachdem Sie in Visual Studio 2019, Version 16.8 und höher auf die Schaltfläche „Darstellung wechseln“ geklickt haben](../ide/media/vs-2019/git-solution-explorer-view-solution.png)
+
+    Klicken Sie noch einmal auf die Schaltfläche **Darstellung wechseln**, um die Darstellung zu wechseln.
+
+    > [!TIP]
+    > Sie können auch das **Git**-Menü in der Visual Studio-IDE verwenden, um ein Repository zu klonen und ein Projekt zu öffnen.
+    >
+    > ![Screenshot des Git-Menüs in Visual Studio 2019, Version 16.8 und höher](../ide/media/vs-2019/git-menu-clone-create-git-repository.png)
+
+#### <a name="open-a-project-locally-from-a-previously-cloned-github-repo"></a>Lokales Öffnen eines Projekts aus einem zuvor geklonten GitHub-Repository
+
+1. Öffnen Sie Visual Studio 2019.
+
+1. Klicken Sie im Startfenster auf **Projekt oder Projektmappe öffnen**.
+
+    Dann öffnet Visual Studio eine Instanz des Datei-Explorers, in der Sie die Projektmappe oder das Projekt suchen und öffnen können.
+
+   ![Screenshot des Fensters „Projekt oder Projektmappe öffnen“ in Visual Studio 2019, Version 16.8 und höher](../ide/media/vs-2019/open-local-project-from-cloned-repo.png)
+
+    Wenn Sie das Projekt oder die Projektmappe vor Kurzem geöffnet haben, wählen Sie sie im Abschnitt **Zuletzt verwendete öffnen** aus, um sie direkt noch einmal zu öffnen.
+
+    > [!TIP]
+    > Sie können auch das **Git**-Menü in der Visual Studio-IDE verwenden, um lokale Ordner und Dateien aus einem Repository zu öffnen, das Sie zuvor geklont haben.
+    >
+    > ![Screenshot des Git-Menüs in Visual Studio 2019, Version 16.8 und höher, in dem die Option „Local Repositories“ (Lokale Repositorys) erweitert ist](../ide/media/vs-2019/git-menu-local-repositories.png)
+
+
+    Legen Sie los!
+
+#### <a name="167-and-earlier"></a>[16.7 und niedriger](#tab/vs167earlier)
+
+#### <a name="clone-a-github-repo-and-then-open-a-project"></a>Klonen eines GitHub-Repositorys und anschließendes Öffnen eines Projekts
+
+1. Öffnen Sie Visual Studio 2019.
+
+1. Klicken Sie im Startfenster auf **Code klonen oder auschecken**.
+
+   ![Screenshot des Fensters „Neues Projekt erstellen“ in Visual Studio 2019, Version 16.7 und niedriger](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. Geben Sie den Speicherort des Repositorys ein, und klicken Sie auf **Klonen**.
+
+   ![Screenshot des Fensters „Code klonen oder auschecken“ in Visual Studio 2019, Version 16.7 und niedriger](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    Visual Studio öffnet das Projekt aus dem Repository.
 
-1. Ist eine Projektmappendatei verfügbar, wird sie im Flyoutmenü „Projektmappen und Ordner“ angezeigt. Wählen Sie sie aus, und Visual Studio öffnet die Projektmappe.
+1. Ist eine Projektmappendatei verfügbar, wird sie im Flyoutmenü „Projektmappen und Ordner“ angezeigt. Wenn Sie auf diese klicken, öffnet Visual Studio die Projektmappe.
 
-   ![Auswählen des gewünschten Elements in der Dropdownliste des Projektmappen-Explorers](./media/open-proj-repo-github-solutions-folders-picker.png)
+   ![Screenshot der Dropdownliste „Projektmappen-Explorer“ in Visual Studio 2019, Version 16.7 und niedriger](./media/open-proj-repo-github-solutions-folders-picker.png)
 
-   Enthält das Repository keine Projektmappendatei (insbesondere eine SLN-Datei), wird im Flyoutmenü „Keine Projektmappen gefunden.“ angezeigt. Sie können im Ordnermenü jedoch auf eine beliebige Datei doppelklicken, um sie im Visual Studio-Code-Editor zu öffnen.
+   Enthält das Repository keine Projektmappendatei (genauer gesagt keine SLN-Datei), wird im Flyoutmenü die Meldung „Keine Projektmappen gefunden“ angezeigt. Sie können im Ordnermenü jedoch auf eine beliebige Datei doppelklicken, um sie im Visual Studio-Code-Editor zu öffnen.
 
-::: moniker-end
+    Legen Sie los!
 
-## <a name="open-a-project-from-an-azure-devops-repo"></a>Öffnen eines Projekts von einem Azure DevOps-Repository aus
+---
 
-::: moniker range="vs-2017"
+## <a name="connect-to-an-azure-devops-server"></a>Herstellen einer Verbindung mit einem Azure DevOps-Server
 
-1. Öffnen Sie Visual Studio 2017.
+Was Sie sehen, wenn Sie mithilfe von Visual Studio 2019 eine Verbindung mit einem Azure DevOps-Server herstellen, hängt von der verwendeten Version ab. Insbesondere für [**Version 16.8**](/visualstudio/releases/2019/release-notes/) oder höher haben wir die Benutzeroberfläche geändert, sodass Ihnen neue, umfassender integrierte [Git-Funktionen in Visual Studio](../ide/git-with-visual-studio.md) zur Verfügung stehen.
 
-1. Wählen Sie auf der oberen Menüleiste **Datei** > **Öffnen** > **Aus Quellcodeverwaltung öffnen** aus.
+Unabhängig davon, welche Version Sie installiert haben, können Sie mithilfe von Visual Studio jederzeit eine Verbindung mit einem Azure DevOps-Server herstellen.
 
-   Der Bereich **Team Explorer – Verbinden** wird geöffnet.
-
-    ![Team Explorer-Fenster in der Visual Studio-IDE](./media/open-proj-repo-team-explorer.png)
-
-1. Es gibt zwei Möglichkeiten zum Herstellen einer Verbindung mit dem Azure DevOps-Repository:
-
-      - Wählen Sie im Abschnitt **Anbieter für gehostete Dienste** die Option **Verbinden...** aus.
-
-        ![Abschnitt „Anbieter für gehostete Dienste“ im Team Explorer-Fenster in der Visual Studio-IDE](./media/open-proj-repo-azure-devops.png)
-
-      - Wählen Sie in der Dropdownliste **Verbindungen verwalten** die Option **Verbindung mit einem Projekt herstellen...** aus.
-
-        ![Abschnitt „Verbindungen verwalten“ im Team Explorer-Fenster in der Visual Studio-IDE](./media/open-proj-repo-azuredevops-manage-connections.png)
-
-1. Wählen Sie im Dialogfeld **Verbindung mit einem Projekt herstellen** das Repository, mit dem Sie eine Verbindung herstellen möchten, und anschließend die Option **Klonen** aus.
-
-      ![Dialogfeld „Verbindung mit einem Projekt herstellen“ in Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
-
-    > [!NOTE]
-    > Die im Listenfeld angezeigten Elemente hängen von den Azure DevOps-Repositorys ab, auf die Sie Zugriff haben.
-
-1. Nach dem Klonen Ihres Repositorys durch Visual Studio wird Team Explorer geschlossen und der Projektmappen-Explorer geöffnet. Die Meldung *Klicken Sie oben auf "Projektmappen und Ordner", um eine Liste mit Projektmappen anzuzeigen.* wird angezeigt. Wählen Sie **Projektmappen und Ordner** aus.
-
-      ![Benachrichtigung „Projektmappen und Ordner“ im Team Explorer in Visual Studio](./media/open-proj-repo-solutions-folders.png)
-
-   Eine Projektmappendatei (insbesondere eine SLN-Datei) wird im Flyoutmenü „Projektmappen und Ordner“ angezeigt. Wählen Sie sie aus, und Visual Studio öffnet die Projektmappe.
-
-   Enthält das Repository keine Projektmappendatei, wird im Flyoutmenü „Keine Projektmappen gefunden.“ angezeigt. Sie können im Ordnermenü jedoch auf eine beliebige Datei doppelklicken, um sie im Visual Studio-Code-Editor zu öffnen.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
+#### <a name="168-and-later"></a>[16.8 und höher](#tab/vs168later)
 
 1. Öffnen Sie Visual Studio 2019.
 
-1. Wählen Sie im Startfenster **Code klonen oder auschecken** aus.
+1. Klicken Sie im Startfenster auf **Repository klonen**.
 
-   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Screenshot des Dialogfelds „Repository klonen“ in Visual Studio 2019, Version 16.8 und höher für Azure DevOps](../ide/media/vs-2019/clone-repository.png)
 
 1. Klicken Sie im Abschnitt **Repository durchsuchen** auf **Azure DevOps**.
 
-   ![Ansicht des Fensters „Code klonen oder auschecken“](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+    ![Screenshot des Abschnitts „Repository durchsuchen“ im Dialogfeld „Verbindung mit einem Projekt herstellen“ in Visual Studio 2019, Version 16.8 und höher](../ide/media/vs-2019/browse-repository-azure-devops.png)
+
+1. Melden Sie sich mit Ihrem Konto an, wenn ein Anmeldefenster angezeigt wird.
+
+1. Klicken Sie im Dialogfeld **Verbindung mit einem Projekt herstellen** erst auf das Repository, mit dem Sie eine Verbindung herstellen möchten, und anschließend auf **Klonen**.
+
+      ![Screenshot des Dialogfelds „Verbindung mit einem Projekt herstellen“ in Visual Studio 2019, Version 16.8 und höher](../ide/media/vs-2019/connect-project-azure-devops.png)
+
+      > [!TIP]
+      > Wenn keine vorausgefüllte Liste der Repositorys angezeigt wird, mit denen eine Verbindung hergestellt werden soll, klicken Sie auf **Azure DevOps Server hinzufügen**, um eine Server-URL einzugeben. Alternativ wird Ihnen möglicherweise die Eingabeaufforderung „Keine Server gefunden“ angezeigt, die Links zum Hinzufügen eines vorhandener Azure DevOps Server-Instanz oder zum Erstellen eines Azure DevOps-Kontos enthält.
+
+   Im nächsten Schritt öffnet Visual Studio den **Projektmappen-Explorer**, in dem die Ordner und Dateien angezeigt werden.
+
+1. Wählen Sie die Registerkarte **Team Explorer** aus, damit die Azure DevOps-Aktionen angezeigt werden.
+
+      ![Screenshot des Dialogfelds „Team Explorer“ in Visual Studio 2019, Version 16.8 und höher](../ide/media/vs-2019/team-explorer-azure-devops.png)
+
+#### <a name="167-and-earlier"></a>[16.7 und niedriger](#tab/vs167earlier)
+
+1. Öffnen Sie Visual Studio 2019.
+
+1. Klicken Sie im Startfenster auf **Code klonen oder auschecken**.
+
+   ![Screenshot des Fensters „Neues Projekt erstellen“ in Visual Studio 2019, Version 16.7 und niedriger](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. Klicken Sie im Abschnitt **Repository durchsuchen** auf **Azure DevOps**.
+
+   ![Screenshot des Fensters „Code klonen oder auschecken“ mit dem Abschnitt „Repository durchsuchen“, in dem Azure DevOps in Visual Studio 2019, Version 16.7 und niedriger aufgeführt wird](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    Melden Sie sich mit Ihrem Konto an, wenn ein Anmeldefenster angezeigt wird.
 
-1. Wählen Sie im Dialogfeld **Verbindung mit einem Projekt herstellen** das Repository, mit dem Sie eine Verbindung herstellen möchten, und anschließend die Option **Klonen** aus.
+1. Klicken Sie im Dialogfeld **Verbindung mit einem Projekt herstellen** erst auf das Repository, mit dem Sie eine Verbindung herstellen möchten, und anschließend auf **Klonen**.
 
-      ![Dialogfeld „Verbindung mit einem Projekt herstellen“ in Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+      ![Screenshot des Dialogfelds „Verbindung mit einem Projekt herstellen“ in Visual Studio 2019, Version 16.7 und niedriger](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
     > Die im Listenfeld angezeigten Elemente hängen von den Azure DevOps-Repositorys ab, auf die Sie Zugriff haben.
 
    Nach Abschluss des Klonvorgangs öffnet Visual Studio den **Team Explorer** und eine Benachrichtigung wird angezeigt.
 
-     ![Das Team Explorer-Fenster in Visual Studio nach dem Klonvorgang](./media/vs-2019/clone-complete-azure-devops.png)
+     ![Screenshot des Fensters „Team Explorer“ in Visual Studio 2019, Version 16.7 und niedriger, nachdem der Klonvorgang abgeschlossen ist](./media/vs-2019/clone-complete-azure-devops.png)
 
-1. Klicken Sie auf den Link **Ordneransicht anzeigen**, um Ihre Ordner und Dateien anzuzeigen.
+1. Klicken Sie auf den Link **Ordneransicht anzeigen**, damit Ihre Ordner und Dateien angezeigt werden.
 
-     ![Der Abschnitt „Projektmappen“ des Team Explorer-Fensters in Visual Studio nach dem Klonvorgang](./media/vs-2019/show-folder-view-azure-devops.png)
+     ![Screenshot des Abschnitts „Projektmappen“ im Fenster „Team Explorer“ in Visual Studio 2019, Version 16.7 und niedriger, nachdem der Klonvorgang abgeschlossen ist](./media/vs-2019/show-folder-view-azure-devops.png)
 
      Visual Studio öffnet den **Projektmappen-Explorer**.
 
-1. Klicken Sie auf den Link **Projektmappen und Ordner**, um nach einer zu öffnenden Projektmappendatei (eine SLN-Datei) zu suchen.
+1. Klicken Sie auf den Link **Projektmappen und Ordner**, um nach einer Projektmappendatei (d. h. einer SLN-Datei) zu suchen, die geöffnet werden soll.
 
-      ![Benachrichtigung „Projektmappen und Ordner“ im Team Explorer in Visual Studio](./media/open-proj-repo-solutions-folders.png)
+      ![Screenshot der Benachrichtigung „Projektmappen und Ordner“ vom Team Explorer in Visual Studio 2019, Version 16.7 und niedriger](./media/open-proj-repo-solutions-folders.png)
 
    Wenn Ihr Repository keine Projektmappendatei enthält, wird die Meldung „Keine Projektmappen gefunden“ angezeigt. Sie können im Ordnermenü jedoch auf eine beliebige Datei doppelklicken, um sie im Visual Studio-Code-Editor zu öffnen.
 
-::: moniker-end
+---
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Wenn Sie mit dem Codieren mit Visual Studio loslegen möchten, können Sie sich die ausführlichen Informationen in einem der folgenden sprachspezifischen Tutorials ansehen:
 
-- [Visual Studio-Tutorials | **C#** ](./csharp/index.yml)
+- [Visual Studio-Tutorials | **C#**](./csharp/index.yml)
 - [Visual Studio-Tutorials | **Visual Basic**](./visual-basic/index.yml)
-- [Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
+- [Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio | **Python**](../python/index.yml)
 - [Visual Studio | **JavaScript**, **TypeScript** und **Node.js**](../javascript/index.yml)
 
 ## <a name="see-also"></a>Siehe auch
 
-::: moniker range="vs-2017"
-
-- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Erste Schritte mit Azure Repos und Visual Studio)
-- [Microsoft Learn: Get started with Azure DevOps](/learn/modules/get-started-with-devops/) (Microsoft Learn: Erste Schritte mit Azure DevOps)
-- [Neue Git-Funktionen in Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 - [Neue Git-Benutzeroberfläche in Visual Studio](../ide/git-with-visual-studio.md)
 - [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Erste Schritte mit Azure Repos und Visual Studio)
 - [Microsoft Learn: Get started with Azure DevOps](/learn/modules/get-started-with-devops/) (Microsoft Learn: Erste Schritte mit Azure DevOps)
-
-::: moniker-end

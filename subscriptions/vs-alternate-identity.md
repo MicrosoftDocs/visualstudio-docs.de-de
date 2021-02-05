@@ -2,17 +2,17 @@
 title: Identitäten für Visual Studio-Abonnenten
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 10/21/2019
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Hinzufügen einer alternativen Identität zu Ihrem Visual Studio-Abonnement, die für Azure DevOps und Azure verwendet werden kann
-ms.openlocfilehash: d7820707758cd06209a412b2a860de81cb08c054
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 200f299ba4e487e40572e54f1066ed6ac079e7d1
+ms.sourcegitcommit: b0ecf9bb0d887bc0a900578089bf41ab8dddbb78
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353174"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99488664"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identitäten für Visual Studio-Abonnenten
 Wenn Sie ein Visual Studio-Abonnement aktivieren, wird die Identität (oder das Konto) damit verknüpft, die Sie während der Aktivierung des Abonnements verwendet haben. Dadurch können Sie im [Visual Studio-Portal für Abonnenten](https://my.visualstudio.com?wt.mc_id=o~msft~docs), in Azure DevOps und in Azure erkannt werden.
@@ -25,9 +25,10 @@ In Azure wird der Status Ihres Visual Studio-Abonnements überprüft, wenn Sie I
 Innerhalb des [Visual Studio-Portals für Abonnenten](https://my.visualstudio.com?wt.mc_id=o~msft~docs) können Sie zusätzlich zu der Identität, die Sie für die Aktivierung verwendet haben, eine **alternative Identität** hinzufügen. Es ist möglich, eine alternative Identität hinzuzufügen, wenn Sie ein Microsoft-Konto verwendet haben, um Ihr Abonnement zu aktivieren. So können Sie auch ein Geschäfts-, Schul- oder Unikonto (das Sie zum Anmelden in Visual Studio, Microsoft 365 oder bei Ihrem Geschäfts-, Schul- oder Uninetzwerk verwenden) hinzufügen und auf Azure DevOps über Ihr persönliches sowie über Ihr Geschäfts-, Schul- oder Unikonto zugreifen.
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>Hinzufügen eines alternativen Kontos zu Ihrem Abonnement
-Wenn Sie Ihrem Visual Studio-Abonnement ein alternatives Konto hinzufügen, haben Sie Zugriff auf Abonnementvorteile wie Azure DevOps und Azure, obwohl Sie eine andere Identität als die dem Abonnement zugewiesene verwenden. In der Vergangenheit war diese Funktion nur verfügbar, wenn Ihr Visual Studio-Konto einem Microsoft-Konto zugewiesen war. Jetzt wurde diese Funktion auf Geschäfts-, Schul- oder Unikonten in Azure Active Directory (Azure AD) erweitert.
+Wenn Sie Ihrem Visual Studio-Abonnement ein alternatives Konto hinzufügen, haben Sie Zugriff auf bestimmte Abonnementvorteile wie Azure DevOps und Azure oder können sich bei der Visual Studio-IDE mit einer anderen Identität als die dem Abonnement zugewiesene anmelden. In der Vergangenheit war diese Funktion nur verfügbar, wenn Ihr Visual Studio-Konto einem Microsoft-Konto zugewiesen war. Jetzt wurde diese Funktion auf Geschäfts-, Schul- oder Unikonten in Azure Active Directory (Azure AD) erweitert.
 
-Dadurch wird dem anderen Konto keine Kopie des Abonnements zur Verfügung gestellt. Stattdessen haben Sie die Möglichkeit, auf beide Vorteile über verschiedene Konten zuzugreifen.
+> [!NOTE]
+> Mit einer alternativen ID können Sie diese zweite ID nur verwenden, um Azure-Gutschriften und Azure DevOps zu aktivieren und sich bei der Visual Studio-IDE anzumelden.  Sie können eine alternative ID nicht verwenden, um sich unter <https://my.visualstudio.com> beim Abonnementportal anzumelden.  Sie müssen weiterhin die ID verwenden, der das Abonnement zugewiesen ist, um sich beim Portal anzumelden. 
 
 Sie können für alle Abonnements ein Geschäfts-, Schul- oder Unikonto hinzufügen, damit Sie mit dem Konto alle Vorteile nutzen können, für die eine Anmeldung erforderlich ist (Visual Studio-IDE, Azure DevOps und Azure).
 

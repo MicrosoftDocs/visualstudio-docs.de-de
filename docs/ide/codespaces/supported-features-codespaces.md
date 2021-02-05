@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
+ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696542"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251439"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Unterstützte Visual Studio-Features (Vorschau)
 
@@ -73,6 +73,7 @@ Die meisten Anwendungstypen und Projektkonfigurationen werden unterstützt. Sie 
 Noch nicht verfügbar:
 
 * Benutzeroberflächen-Designer: WinForms-, WPF-, und Ressourcen-Designer
+* Die App-Umwandlung für WinForms- und WPF-Projekte ist nur unter einem Featureflag verfügbar.
 * Visual Basic- und F#-Projekte
 * Projekte für das .NET Framework
 * Docker Compose-Projekte
@@ -108,7 +109,7 @@ Noch nicht verfügbar:
 
 Beim Arbeiten mit Visual Studio mit einem verbundenen Codespace stehen Ihnen die gleichen Barrierefreiheitsfunktionen zur Verfügung wie beim lokalen Arbeiten.
 
-* Quellcodeverwaltung: Umfassende Git-Unterstützung über die neue [integrierte Git-Benutzeroberfläche](../git-with-visual-studio.md).
+* Quellcodeverwaltung: Umfassende Git-Unterstützung über die neue [integrierte Git-Benutzeroberfläche](../git-with-visual-studio.md). Damit Git-Submodule in einem Codespace geklont werden, müssen Sie möglicherweise `git submodule update` über das Terminal ausführen.
 * Barrierefreiheit: Es liegt ein bekanntes Problem vor, bei dem Hilfstechnologien nicht auf das Appcasting einer debuggten App zugreifen können. Abgesehen von dieser Einschränkung wird nicht davon ausgegangen, dass Kompatibilitätsprobleme vorliegen, die nicht bereits in der lokalen Version von Visual Studio bestehen. Informieren Sie uns, wenn Sie Fehler finden, indem Sie auf der [Entwicklercommunity-Website](https://aka.ms/feedback/report?space=8) ein Issue erstellen.
 * Veröffentlichung: Das Veröffentlichen in Azure über GitHub Actions wird unterstützt.
 * Verbundene Dienste: AppInsights, Key Vault, Storage, SQL, Redis, Cosmos, OpenAPI und gRPC werden teilweise unterstützt.

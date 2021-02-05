@@ -1,5 +1,7 @@
 ---
 title: Installieren des eigenständigen Profilers | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie den eigenständigen Profiler installieren, der ohne eine Visual Studio-Installation ausgeführt werden kann. Es gibt Situationen, in denen Visual Studio nicht installiert werden sollte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4005a7af5af1582f31b6c706be150a504355f3d2
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 8f13edc60a2c05d50e2118e24344bf9d475e3f5f
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851150"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883617"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Vorgehensweise: Installieren des eigenständigen Profilers
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet einen befehlszeilenbasierten, eigenständigen Profiler, der ohne eine Installation der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE ausgeführt werden kann. Diese Situation tritt auf, wenn auf einem Computer keine Entwicklungsumgebung installiert ist oder nicht installiert werden kann. Sie sollten beispielsweise keine Entwicklungsumgebung auf einem Produktionswebserver installieren.
