@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c4c4bbc468403aaf94aca1b5133a732e0c050b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837475"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Ruft eine Computer abhängige Darstellung des Bereichs physischer Adressen ab, der einem Stapel Rahmen zugeordnet ist.
@@ -28,14 +28,14 @@ Ruft eine Computer abhängige Darstellung des Bereichs physischer Adressen ab, d
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetPhysicalStackRange ( 
+HRESULT GetPhysicalStackRange ( 
    UINT64* paddrMin,
    UINT64* paddrMax
 );
 ```
 
 ```csharp
-int GetPhysicalStackRange ( 
+int GetPhysicalStackRange ( 
    out ulong paddrMin,
    out ulong paddrMax
 );

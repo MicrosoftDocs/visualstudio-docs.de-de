@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204604"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839559"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 Der Parser ist das Herzstück des sprach Dienstanbieter. Die MPF-Sprachklassen (Managed Package Framework) erfordern einen sprach Parser, um Informationen zum angezeigten Code auszuwählen. Ein Parser trennt den Text in lexikalische Token und identifiziert diese Token nach Typ und Funktionalität.
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  Das <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Objekt wird als Teil des-Objekts an den Parser übergeben <xref:Microsoft.VisualStudio.Package.ParseRequest> , und <xref:Microsoft.VisualStudio.Package.AuthoringSink> jedes Mal, wenn ein neues-Objekt erstellt wird, wird ein neues-Objekt erstellt <xref:Microsoft.VisualStudio.Package.ParseRequest> . Außerdem muss die- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode ein-Objekt zurückgeben <xref:Microsoft.VisualStudio.Package.AuthoringScope> , das verwendet wird, um verschiedene IntelliSense-Vorgänge zu verarbeiten. Das <xref:Microsoft.VisualStudio.Package.AuthoringScope> -Objekt verwaltet eine Liste von Deklarationen und eine Liste für-Methoden, von denen abhängig vom Grund für die-Verarbeitung jeweils eine Liste aufgefüllt wird. Die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse muss implementiert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Übersicht über Legacysprachdienste](../../extensibility/internals/legacy-language-service-overview.md)
 - [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

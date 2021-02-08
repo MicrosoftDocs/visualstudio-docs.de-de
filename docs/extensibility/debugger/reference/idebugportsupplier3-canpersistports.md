@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2914d56f2d74629a30bc63bad281bb0cdcdc0de8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840339"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 Diese Methode bestimmt, ob der Port Lieferant Ports (durch das Schreiben auf den Datenträger) zwischen den Aufrufen des Debuggers beibehalten kann.
@@ -28,11 +28,11 @@ Diese Methode bestimmt, ob der Port Lieferant Ports (durch das Schreiben auf den
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT CanPersistPorts();
+HRESULT CanPersistPorts();
 ```
 
 ```csharp
-int CanPersistPorts();
+int CanPersistPorts();
 ```
 
 ## <a name="parameters"></a>Parameter

@@ -1,24 +1,24 @@
 ---
-title: Verwenden von Cloud Services (erweiterter Support) (Vorschau)
+title: Verwenden von Cloud Services (erweiterter Support, Vorschau)
 description: Weitere Informationen zum Erstellen und Bereitstellen einer Cloud Services (erweiterter Support) mithilfe Azure Resource Manager in Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841132"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Erstellen und Bereitstellen für Cloud Services (erweiterter Support) in Visual Studio (Vorschau)
 
-Ab [Visual Studio 2019 Version 16,9](https://visualstudio.microsoft.com/vs/preview) (derzeit in der Vorschau Phase) können Sie mit Clouddiensten arbeiten, indem Sie Azure Resource Manager verwenden, wodurch die Wartung und Verwaltung von Azure-Ressourcen erheblich vereinfacht und optimiert wird. Dies wird durch einen neuen Azure-Dienst ermöglicht, der als *Cloud Services (erweiterter Support)* bezeichnet wird. Sie können einen vorhandenen clouddienst in Cloud Services veröffentlichen (erweiterter Support). Informationen zu diesem Azure-Dienst finden Sie in der [Dokumentation zu Cloud Services (erweiterter Support)](/azure/cloud-services-extended-support/overview).
+Ab [Visual Studio 2019 Version 16,9](https://visualstudio.microsoft.com/vs/preview) (derzeit in der Vorschau Phase) können Sie mit Clouddiensten arbeiten, indem Sie Azure Resource Manager verwenden, wodurch die Wartung und Verwaltung von Azure-Ressourcen erheblich vereinfacht und optimiert wird. Dies wird durch einen neuen Azure-Dienst ermöglicht, der als *Cloud Services (erweiterter Support)* bezeichnet wird. Sie können einen vorhandenen Clouddienst in Cloud Services (erweiterter Support) veröffentlichen. Informationen zu diesem Azure-Dienst finden Sie unter [Grundlegendes zu Azure Cloud Services (erweiterter Support)](/azure/cloud-services-extended-support/overview).
 
 ## <a name="publish-to-cloud-services-extended-support"></a>In Cloud Services veröffentlichen (erweiterter Support)
 
@@ -30,7 +30,7 @@ Beim Veröffentlichen in Cloud Services (erweiterter Support) gibt es einige Unt
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>So veröffentlichen Sie ein klassisches Azure-clouddienstprojekt in Cloud Services (erweiterter Support)
 
-1. Cloud Services (erweiterter Support) befindet sich derzeit in der Vorschau Phase. Registrieren Sie das Feature wie folgt für Ihr Abonnement:
+1. Cloud Services (erweiterter Support) befindet sich derzeit in der Vorschauphase. Registrieren Sie das Feature wie folgt für Ihr Abonnement:
 
    ```azurepowershell-interactive
    Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
@@ -48,7 +48,7 @@ Beim Veröffentlichen in Cloud Services (erweiterter Support) gibt es einige Unt
 
 1. **Abonnement wählen**: Wählen Sie das Abonnement aus, das Sie für Ihre Bereitstellung verwenden möchten.
 
-1. Wählen Sie **weiter** aus, um zur Seite **Einstellungen** zu wechseln.
+1. Wählen Sie **Weiter** aus, um zur Seite **Einstellungen** zu gelangen.
 
    ![Allgemeine Einstellungen](./media/cloud-services-extended-support/publish-settings.png)
 
@@ -62,34 +62,34 @@ Beim Veröffentlichen in Cloud Services (erweiterter Support) gibt es einige Unt
 
 1. **Dienstkonfiguration**: Wählen Sie entweder **Cloud** oder **Lokal** aus.
 
-1. **Speicherkonto** : Wählen Sie das für diese Bereitstellung zu verwendende Speicherkonto aus, oder **Erstellen Sie neu** , um ein Speicherkonto zu erstellen. Die Region wird für jedes Speicherkonto in Klammern angezeigt. Es wird empfohlen, für das Speicherkonto den gleichen Rechenzentrumsstandort wie für den Clouddienst zu verwenden (Erweiterte Einstellungen).
+1. **Speicherkonto**: Wählen Sie das für diese Bereitstellung zu verwendende Speicherkonto aus, oder verwenden Sie die Option **Neu erstellen**, um ein Speicherkonto zu erstellen. Die Region für das Speicherkonto wird jeweils in Klammern angezeigt. Es wird empfohlen, für das Speicherkonto den gleichen Rechenzentrumsstandort wie für den Clouddienst zu verwenden (Erweiterte Einstellungen).
 
    Das Azure-Speicherkonto speichert das Paket für die Bereitstellung der Anwendung.
 
 1. **Key Vault** : Geben Sie den Schlüssel Tresor an, der die geheimen Schlüssel für diesen Cloud-Dienst enthält (erweiterter Support). Diese Option ist aktiviert, wenn Remote Desktop aktiviert ist, oder wenn der Konfiguration Zertifikate hinzugefügt werden.
 
-1. **Remotedesktop für alle Rollen aktivieren**: Aktivieren Sie diese Option, wenn Sie eine Remoteverbindung mit dem Dienst herstellen möchten. Sie werden aufgefordert, Anmelde Informationen anzugeben.
+1. **Remotedesktop für alle Rollen aktivieren**: Aktivieren Sie diese Option, wenn Sie eine Remoteverbindung mit dem Dienst herstellen möchten. Sie werden zur Angabe von Anmeldeinformationen aufgefordert.
 
-   ![Remote Desktop Einstellungen](./media/cloud-services-extended-support/remote-desktop-configuration.png)
+   ![Remotedesktopeinstellungen](./media/cloud-services-extended-support/remote-desktop-configuration.png)
 
-1. Wählen Sie **weiter** aus, um zur Seite **Diagnose Einstellungen** zu wechseln.
+1. Wählen Sie **Weiter** aus, um zur Seite **Diagnoseeinstellungen** zu gelangen.
 
    ![Diagnoseeinstellungen](./media/cloud-services-extended-support/diagnostics-settings.png)
 
    Die Diagnose ermöglicht Ihnen das Beheben von Problemen mit einem Azure-clouddienst (erweiterter Support). Informationen zur Diagnose finden Sie unter [Konfigurieren der Diagnose für Azure Cloud Services und Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) . Weitere Informationen zu Application Insights finden Sie unter [Was ist Application Insights?](/azure/application-insights/app-insights-overview).
 
-1. Wählen Sie **weiter** aus, um zur Seite **Zusammenfassung** zu wechseln.
+1. Wählen Sie **Weiter** aus, um zur Seite **Zusammenfassung** zu gelangen.
 
    ![Zusammenfassung](./media/cloud-services-extended-support/publish-summary.png)
 
-1. **Zielprofil**: Sie können sich entscheiden, ein Veröffentlichungsprofil auf der Grundlage der von Ihnen ausgewählten Einstellungen zu erstellen. Sie können beispielsweise ein Profil für eine Testumgebung und ein weiteres für die Produktion verwenden. Um dieses Profil zu speichern, wählen Sie das Symbol **Speichern**. Der Assistent erstellt das Profil und speichert es im Visual Studio-Projekt. Um den Profilnamen zu ändern, öffnen Sie die Liste **Ziel Profil** , und wählen Sie dann **verwalten...** aus.
+1. **Zielprofil**: Sie können sich entscheiden, ein Veröffentlichungsprofil auf der Grundlage der von Ihnen ausgewählten Einstellungen zu erstellen. Sie können beispielsweise ein Profil für eine Testumgebung und ein weiteres für die Produktion verwenden. Um dieses Profil zu speichern, wählen Sie das Symbol **Speichern**. Der Assistent erstellt das Profil und speichert es im Visual Studio-Projekt. Öffnen Sie zum Ändern des Profilnamens die Liste **Zielprofil**, und wählen Sie anschließend **Verwalten…** aus.
 
    > [!Note]
    > Das Veröffentlichungs Profil wird in Projektmappen-Explorer in Visual Studio angezeigt, und die Profileinstellungen werden in eine Datei mit der Erweiterung *azurepubxml* geschrieben. Einstellungen werden als Attribute der XML-Tags gespeichert.
 
-1. Nachdem Sie alle Einstellungen für die Bereitstellung Ihres Projekts konfiguriert haben, wählen Sie unten im Dialogfeld **Veröffentlichen** aus. Sie können den Prozessstatus im Fenster Ausgabe des **Azure-Aktivitäts Protokolls** in Visual Studio überwachen. Wählen Sie den Link **im Portal öffnen zu aus** . 
+1. Nachdem Sie alle Einstellungen für die Bereitstellung Ihres Projekts konfiguriert haben, wählen Sie unten im Dialogfeld **Veröffentlichen** aus. Sie können den Prozessstatus in Visual Studio im Ausgabefenster **Azure-Aktivitätsprotokoll** überwachen. Wählen Sie den Link **im Portal öffnen zu aus** . 
 
-Herzlichen Glückwunsch! Sie haben Ihr clouddienst-Projekt (Erweitertes Support) in Azure veröffentlicht. Wenn Sie mit denselben Einstellungen erneut veröffentlichen möchten, können Sie das Veröffentlichungs Profil wieder verwenden, oder Sie können diese Schritte wiederholen, um ein neues zu erstellen. Die Azure Resource Manager (Arm)-Vorlage und die Parameter, die für die Bereitstellung verwendet werden, werden im Ordner " *bin/ \<configuration\> /Publish* " gespeichert.
+Glückwunsch! Sie haben Ihr clouddienst-Projekt (Erweitertes Support) in Azure veröffentlicht. Wenn Sie eine weitere Veröffentlichung mit den gleichen Einstellungen vornehmen möchten, können Sie das Veröffentlichungsprofil wiederverwenden oder die angegebenen Schritte wiederholen, um ein neues zu erstellen. Die Azure Resource Manager (Arm)-Vorlage und die Parameter, die für die Bereitstellung verwendet werden, werden im Ordner " *bin/ \<configuration\> /Publish* " gespeichert.
 
 ## <a name="clean-up-azure-resources"></a>Bereinigen von Azure-Ressourcen
 
@@ -97,4 +97,4 @@ Wechseln Sie zum Bereinigen der Azure-Ressourcen, die Sie in diesem Tutorial ers
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Richten Sie Continuous Integration (CI) mithilfe der Schaltfläche **Konfigurieren** auf dem Bildschirm **veröffentlichen** ein. Weitere Informationen finden Sie unter [Azure Pipelines-Dokumentation](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
+Richten Sie mithilfe der Schaltfläche **Konfigurieren** auf dem Bildschirm **Veröffentlichen** Continuous Integration (CI) ein. Weitere Informationen finden Sie in der [Dokumentation zu Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).

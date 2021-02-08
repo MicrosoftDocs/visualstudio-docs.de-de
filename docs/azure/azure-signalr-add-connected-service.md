@@ -2,18 +2,18 @@
 title: Hinzufügen von Azure signalr mithilfe verbundene Dienste | Microsoft-Dokumentation
 description: Hinzufügen von Azure signalr zu ihrer App mithilfe von Visual Studio zum Hinzufügen eines verbundenen Dienstanbieter
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4576c2eb15097860870b78fbca0faf727c3eae74
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a3b76115e7d5cfe484c9aea00246e4d42acf6268
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841158"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Hinzufügen von Azure signalr mithilfe von Visual Studio verbundene Dienste
 

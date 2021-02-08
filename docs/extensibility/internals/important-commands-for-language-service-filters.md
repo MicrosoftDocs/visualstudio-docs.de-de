@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4eaa85eab9d9691125afce28d51c61d464e56cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839832"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Wichtige Befehle für Sprachdienstfilter
 Wenn Sie einen voll funktionsfähigen Sprachdienst Filter erstellen möchten, sollten Sie die folgenden Befehle verarbeiten. Die vollständige Liste der Befehls Bezeichner wird in der <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> -Enumeration für verwalteten Code und die Header Datei stdidcmd. h für nicht verwalteten [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Code definiert. Sie finden die Datei "stdidcmd. h" im *Visual Studio SDK-Installationspfad*\visualstudiointegration\common\inc.
@@ -28,7 +28,7 @@ Wenn Sie einen voll funktionsfähigen Sprachdienst Filter erstellen möchten, so
 > [!NOTE]
 > Es ist nicht erforderlich, für jeden Befehl in der folgenden Tabelle zu filtern.
 
-|Befehl|Beschreibung|
+|Get-Help|Beschreibung|
 |-------------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wird gesendet, wenn der Benutzer mit der rechten Maustaste klickt. Dieser Befehl gibt an, dass es an der Zeit ist, ein Kontextmenü anzugeben. Wenn Sie diesen Befehl nicht verarbeiten, stellt der Text-Editor ein Standardkontext Menü ohne sprachspezifische Befehle bereit. Wenn Sie Ihre eigenen Befehle in dieses Menü einschließen möchten, behandeln Sie den Befehl, und zeigen Sie selbst ein Kontextmenü an.|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wird normalerweise gesendet, wenn der Benutzer STRG + J eingibt. Ruft die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode für auf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , um das Feld Anweisungs Vervollständigung anzuzeigen.|
@@ -40,5 +40,5 @@ Wenn Sie einen voll funktionsfähigen Sprachdienst Filter erstellen möchten, so
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wird normalerweise gesendet, wenn der Benutzer STRG + LEERTASTE eingibt. Mit diesem Befehl wird dem Sprachdienst mitgeteilt, dass die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> Methode für den aufgerufen wird <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Wird von einem Menü gesendet, in der **Regel im Menü** " **Bearbeiten** ", um die Auswahl zu **kommentieren** oder die **Auskommentierung der Auswahl** <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Gibt an, dass der Benutzer den markierten Text auskommentieren möchte. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> gibt an, dass der Benutzer die Auskommentierung des ausgewählten Texts aufheben möchte. Diese Befehle können nur vom Sprachdienst implementiert werden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)

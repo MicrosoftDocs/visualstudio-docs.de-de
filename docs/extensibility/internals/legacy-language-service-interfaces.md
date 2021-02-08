@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839598"
 ---
 # <a name="legacy-language-service-interfaces"></a>Schnittstellen von Legacysprachdiensten
 Für eine bestimmte Programmiersprache kann jeweils nur eine Instanz eines sprach Dienstanbieter vorhanden sein. Ein einzelner Sprachdienst kann jedoch mehr als einen Editor verarbeiten.
@@ -43,7 +43,7 @@ Für eine bestimmte Programmiersprache kann jeweils nur eine Instanz eines sprac
 ## <a name="additional-language-service-interfaces"></a>Zusätzliche Sprachdienst Schnittstellen
  Andere Schnittstellen können mit Ihrem Sprachdienst bereitgestellt werden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fordert für jede Instanz des Text Puffers eine separate Instanz dieser Schnittstellen an. Daher sollten Sie jede dieser Schnittstellen in einem eigenen-Objekt implementieren. In der folgenden Tabelle sind Schnittstellen aufgeführt, für die eine Instanz pro Text Puffer Instanz erforderlich ist.
 
-|Schnittstelle|Beschreibung|
+|Schnittstelle|BESCHREIBUNG|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Verwaltet Code Fenster-Zusatzelemente, wie z. b. die Dropdown Leiste. Sie können diese Schnittstelle mithilfe der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Methode erhalten. Es ist ein <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> pro Code Fenster vorhanden.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Farmiert sprach Schlüsselwörter und Trennzeichen. Sie können diese Schnittstelle mithilfe der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Methode erhalten. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> wird zur zeichnungszeit aufgerufen. Vermeiden Sie eine rechenintensive Arbeit innerhalb von <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> oder Leistungseinbußen.|
@@ -52,6 +52,6 @@ Für eine bestimmte Programmiersprache kann jeweils nur eine Instanz eines sprac
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Ermöglicht das Ändern der Textansicht mithilfe des Befehls Handlers. Die Klasse, in der Sie die- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Schnittstelle implementieren, muss auch die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle implementieren. Die Textansicht Ruft das- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Objekt ab, indem das-Objekt abgefragt <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> wird, das an die-Methode weitergegeben wird <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> . Es sollte ein- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Objekt für jede Ansicht vorhanden sein.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Fängt die Befehle ab, die vom Benutzer in das Code Fenster eingetippt werden. Überwachen der Ausgabe der <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Implementierung, um benutzerdefinierte Vervollständigungs Informationen bereitzustellen und Änderungen anzuzeigen<br /><br /> Um <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> das Objekt an die Textansicht zu übergeben, geben Sie an <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> .|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Prüfliste: Erstellen eines Legacysprachdiensts](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

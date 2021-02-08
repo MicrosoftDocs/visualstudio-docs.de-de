@@ -2,18 +2,18 @@
 title: Fügen Sie Azure-Anwendung Insights mithilfe verbundene Dienste | Microsoft-Dokumentation
 description: Hinzufügen von Azure-Anwendung Insights zu ihrer App mithilfe von Visual Studio zum Hinzufügen eines verbundenen Dienstanbieter
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 1317f41c9463ab645e6dd3ba281f11b9246720a8
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5b93d5b15cbbd3ffcb1f8afb65afe6e1c2c371b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841223"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Fügen Sie Azure-Anwendung Insights mithilfe von Visual Studio hinzu verbundene Dienste
 

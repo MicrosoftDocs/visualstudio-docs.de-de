@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 86173253c947be5de8600e15b68a6f08504803a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839845"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Initialisierungssequenz von Projektuntertypen
 Die Umgebung erstellt ein Projekt durch Aufrufen der Basis-projektfactory-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . Die Erstellung eines Projekt unter Typs beginnt, wenn die Umgebung feststellt, dass die Projekttyp-GUID-Liste für die Erweiterung einer Projektdatei nicht leer ist. Die Projektdatei Erweiterung und die Projekt-GUID geben an, ob das Projekt ein- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] oder- [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekttyp ist Beispielsweise identifizieren die VBPROJ-Erweiterung und {F184B08F-C81C-45F6-A57F-5ABD9991F28F} ein [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt.
@@ -133,7 +133,7 @@ HRESULT HrCreateInnerProj
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Flavor>
 - [Projektuntertypen](../../extensibility/internals/project-subtypes.md)

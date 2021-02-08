@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db43ed4dc178cf5080822e2dc387b5faa4bc5cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79f134d48e61aeee536d584dda2b4c0a7254e0a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840495"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 Diese Methode gibt die Anzahl von Argument Typen zurück, die diesem-Objekt zugeordnet sind.
@@ -28,14 +28,14 @@ Diese Methode gibt die Anzahl von Argument Typen zurück, die diesem-Objekt zuge
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetTypeArgumentCount(
-   UINT* uCount
+HRESULT GetTypeArgumentCount(
+   UINT* uCount
 );
 ```
 
 ```csharp
-int GetTypeArgumentCount(
-   out uint uCount
+int GetTypeArgumentCount(
+   out uint uCount
 );
 ```
 

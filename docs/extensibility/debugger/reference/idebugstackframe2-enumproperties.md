@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 500701be7b6f2aedffceaaaa819ecbd253a58e36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837709"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Erstellt einen Enumerator für Eigenschaften, die dem Stapel Rahmen zugeordnet sind, z. b. lokale Variablen.
@@ -28,7 +28,7 @@ Erstellt einen Enumerator für Eigenschaften, die dem Stapel Rahmen zugeordnet s
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT EnumProperties ( 
+HRESULT EnumProperties ( 
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,
    UINT                      nRadix,
    REFIID                    refiid,
@@ -39,7 +39,7 @@ HRESULT EnumProperties ( 
 ```
 
 ```csharp
-int EnumProperties ( 
+int EnumProperties ( 
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,
    uint                        nRadix,
    ref Guid                    refiid,

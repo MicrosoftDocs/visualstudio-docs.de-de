@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836695"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption-Funktion
 Diese Funktion legt Optionen fest, mit denen das Verhalten des Quellcodeverwaltungs-Plug-ins gesteuert wird.
@@ -48,7 +48,7 @@ in Einstellungen für die Option.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Die Option wurde erfolgreich festgelegt.|
 |SCC_I_SHARESUBPROJOK|Wird zurückgegeben `nOption` , wenn was war `SCC_OPT_SHARESUBPROJ` , und das Quellcodeverwaltungs-Plug-in ermöglicht der IDE, den Zielordner festzulegen.|
@@ -59,7 +59,7 @@ in Einstellungen für die Option.
 
  Zusammenfassung der Optionen und ihrer Werte:
 
-|`nOption`|`dwValue`|BESCHREIBUNG|
+|`nOption`|`dwValue`|Beschreibung|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Aktiviert/deaktiviert hintergrundereignisqueuing.|
 |`SCC_OPT_USERDATA`|Beliebiger Wert|Gibt einen Benutzer Wert an, der an die [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) -Rückruffunktion übermittelt werden soll.|
