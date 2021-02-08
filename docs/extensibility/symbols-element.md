@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 173da18ca3b38dd64b8a2594c03abd83987f58f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839321"
 ---
 # <a name="symbols-element"></a>Symbols-Element
 Definiert GUIDs und IDs, die von anderen vsct-Elementen verwendet werden. Bei nicht verwaltetem Code stammen diese Informationen in der Regel aus den Header Dateien, die durch das [extern-Element](../extensibility/extern-element.md)angegeben werden. Verwalteter Code verwendet die untergeordneten Elemente des Symbols-Elements, um diese Informationen zu definieren.
@@ -47,14 +47,14 @@ Definiert GUIDs und IDs, die von anderen vsct-Elementen verwendet werden. Bei ni
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |GuidSymbol|Definiert ein GUID-Symbol. "Guidsymbol" hat zwei erforderliche Attribute: "Name" und "Value". Der Name ist der Name des Symbols, und der Wert ist der Wert der GUID als Zeichenfolge.<br /><br /> Beispiel: \<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
 |IDSymbol|Definiert ein Symbol. Idsymbol verfügt über zwei erforderliche Attribute: Name und Wert. Der Name ist der Name des Symbols, und der Wert ist der Wert des Symbols als Zeichenfolge.<br /><br /> Beispiel: \<IDSymbol name="MyMenuGroup" value="0x1020" />|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[CommandTable-Element](../extensibility/commandtable-element.md)|Das Stamm Element der vsct-Datei.|
 

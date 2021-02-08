@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837202"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage)
 Ein Quellcodeverwaltungs-VSPackage muss registriert werden, um es für verfügbar zu machen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Wenn mehr als ein Quellcodeverwaltungs-VSPackage registriert ist, kann der Benutzer auswählen, welches VSPackage zu den entsprechenden Zeiten geladen werden soll. Weitere Informationen zu VSPackages und deren Registrierung finden Sie unter [VSPackages](../../extensibility/internals/vspackages.md) .

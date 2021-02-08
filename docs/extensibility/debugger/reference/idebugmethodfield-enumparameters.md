@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13df02cf5870e630c4aecb34e9295d218ba7a0eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c164fa08f4195d685bf7dd2faa120ff030e44c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727200"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837722"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Erstellt einen Enumerator für die Parameter der Methode.
@@ -28,7 +28,7 @@ Erstellt einen Enumerator für die Parameter der Methode.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT EnumParameters( 
+HRESULT EnumParameters( 
    IEnumDebugFields** ppParams
 );
 ```

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3bdb124b-c582-47ba-b465-13c6a1cdb702
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40d21dcc9b1da0e1e2250adcfad59b3ef46a2113
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b10a09aeab6012981fd464694c641aaf6bba4951
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842237"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ IEEVisualizerService : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Ruft die Anzahl der benutzerdefinierten Viewer ab, die dieser Dienst kennt.|
 |[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|Ruft die Liste der benutzerdefinierten Viewer ab.|
@@ -47,7 +47,7 @@ IEEVisualizerService : IUnknown
 |[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Ruft die Anzahl der Wert Zeichenfolgen ab, die für die angegebene Eigenschaft oder das angegebene Feld angezeigt werden sollen.|
 
 ## <a name="remarks"></a>Bemerkungen
- In der IDE wird die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle verwendet, um zu bestimmen, ob benutzerdefinierte Viewer oder typvisualisierungen für die Eigenschaft vorhanden sind. Durch das Erstellen eines schnell Ansichts Dienstanbieter (mit "" "" "" "" "" "" "" "" "" "" "" "," "" "" " [") "](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)," "und" " `IDebugProperty3` unterstützen typvisualisierungen. [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+ In der IDE wird die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle verwendet, um zu bestimmen, ob benutzerdefinierte Viewer oder typvisualisierungen für die Eigenschaft vorhanden sind. Durch das Erstellen eines schnell Ansichts Dienstanbieter (mit "" "" "" "" "" "" "" "" "" "" "" "," "" "" " [") "](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)," "und" " `IDebugProperty3` unterstützen typvisualisierungen. [](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 
  Wenn ein EE benutzerdefinierte Viewer hat, die er implementiert, kann der EE die `CLSID` e dieser benutzerdefinierten Viewer an das Ende der von [getcustomviewerlist](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)zurückgegebenen Liste anfügen. Dies ermöglicht es einem EE, beide typvisualisierungen und ihre eigenen benutzerdefinierten Viewer zu unterstützen. Stellen Sie sicher, dass [getcustomviewercount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) das Hinzufügen von benutzerdefinierten Viewern widerspiegelt.
 

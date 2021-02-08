@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d22b10085baefeb3a0286c1b4edcb5876c0dac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3080d5beb111fffa0725fba3278cc0fb93f25381
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842536"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 Diese Schnittstelle stellt einen Haltepunkt dar, der an einen Code Speicherort gebunden ist.
@@ -37,7 +37,7 @@ IDebugBoundBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBoundBreakpoint2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Ruft den ausstehenden Breakpoint ab, von dem der angegebene gebundene Breakpoint erstellt wurde.|
 |[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Ruft den Zustand dieses gebundenen halte Punkts ab.|

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe3969002c64ab361de76012c432e2bb5c61b5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 331fba87de68b3cf5e135e0b6f633874236bec38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842406"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 Bestimmt, ob ein benutzerdefiniertes Attribut für dieses Feld vorhanden ist, und gibt, sofern vorhanden, die Attributinformationen zurück.
@@ -26,7 +26,7 @@ Bestimmt, ob ein benutzerdefiniertes Attribut für dieses Feld vorhanden ist, un
 ## <a name="syntax"></a>Syntax
 
 ```
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
@@ -38,14 +38,14 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle werden die Methoden der **idebugcustomattributequery** -Schnittstelle angezeigt.
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Bestimmt, ob ein benutzerdefiniertes Attribut anhand des Namens vorhanden ist.|
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Ruft die Attributinformationen für das angegebene benutzerdefinierte Attribut ab.|
 
  Zusätzlich zu den **idebugcustomattributequery** -Methoden `IDebugCustomAttributeQuery2` implementiert die folgende Methode:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Ruft einen Enumerator für alle benutzerdefinierten Attribute ab, die an dieses Feld angefügt sind.|
 

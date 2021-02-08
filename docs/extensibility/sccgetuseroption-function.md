@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e4bc3e4bf6acef8ff8de1cdcecb2596dcf6d86e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844553"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption-Funktion
 Diese Funktion Ruft eine Vielzahl Benutzer spezifischer Optionen ab.
@@ -25,10 +25,10 @@ Diese Funktion Ruft eine Vielzahl Benutzer spezifischer Optionen ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-SCCRTN SccGetUserOption(
-   LPVOID pContext,
-   LONG nOption,
-   LPLONG lpVal
+SCCRTN SccGetUserOption(
+   LPVOID pContext,
+   LONG nOption,
+   LPLONG lpVal
 );
 ```
 
@@ -48,7 +48,7 @@ vorgenommen Wert, der Option zugeordnet ist.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Die Option wurde erfolgreich abgerufen.|
 |SCC_E_OPNOTSUPPORTED|Die Option wird nicht unterstützt.|
@@ -57,7 +57,7 @@ vorgenommen Wert, der Option zugeordnet ist.
 ## <a name="remarks"></a>Bemerkungen
  Die folgenden Optionen werden von diesem Befehl unterstützt:
 
-|Benutzer Option|BESCHREIBUNG|
+|Benutzer Option|Beschreibung|
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer eine lokale Version der Dateien auschecken möchte. `lpVal` wird zugewiesen `SCC_USEROPT_COLV_YES` (Benutzer möchte lokale Dateien Auschecken) oder `SCC_USEROPT_COLV_NO` .|
 

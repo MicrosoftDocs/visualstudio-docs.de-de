@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837244"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrieren von Projekt- und Elementvorlagen
 Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-und Projekt Element Vorlagen befinden. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet die Registrierungsinformationen, die den Projekttypen zugeordnet sind, um zu bestimmen, was in den Dialogfeldern **Neues Projekt hinzufügen** und **Neues Element hinzufügen** angezeigt werden soll.
@@ -39,7 +39,7 @@ Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Name|Typ|BESCHREIBUNG|
+|Name|type|Beschreibung|
 |----------|----------|-----------------|
 |@|REG_SZ|Standardname der Projekte dieser Art.|
 |DisplayName|REG_SZ|Die Ressourcen-ID des Namens, der von der Satelliten-DLL abgerufen werden soll, die unter Packages registriert ist.|
@@ -57,7 +57,7 @@ Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-
 "SortPriority"=dword:00000064
 ```
 
-| Name | Typ | BESCHREIBUNG |
+| Name | type | Beschreibung |
 |--------------------------|-----------| - |
 | @ | REG_SZ | Ressourcen-ID für Element Vorlagen hinzufügen. |
 | Templatesdir | REG_SZ | Der Pfad der Projekt Elemente, die im Dialogfeld für den Assistenten zum **Hinzufügen eines neuen Elements** angezeigt werden. |
@@ -84,7 +84,7 @@ Projekttypen müssen die Verzeichnisse registrieren, in denen sich Ihre Projekt-
 "SortPriority"=dword:00000064
 ```
 
-|Name|Typ|BESCHREIBUNG|
+|Name|type|Beschreibung|
 |----------|----------|-----------------|
 |Commonfindfilesfilter|REG_DWORD|Macht den Filter zu einem der allgemeinen Filter im Dialogfeld **in Dateien suchen** . Allgemeine Filter sind in der Filterliste aufgeführt, bevor Filter als "Allgemein" gekennzeichnet sind.|
 |Commonopenfilesfilter|REG_DWORD|Macht den Filter zu einem der allgemeinen Filter im Dialogfeld **Datei öffnen** . Allgemeine Filter sind in der Filterliste aufgeführt, bevor Filter als "Allgemein" gekennzeichnet sind.|

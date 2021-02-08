@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ac1c51ac694acadd2efb0cd7d1c5a3f1d66ebc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eac3973bf28a14340b720a51fc291b914822f3d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836916"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList-Funktion
 Diese Funktion bestimmt, welche Verzeichnisse und (optional) Dateien in der Quell Code Verwaltung gespeichert werden, wenn eine Liste der zu untersuchenden Verzeichnisse angegeben wird.
@@ -25,7 +25,7 @@ Diese Funktion bestimmt, welche Verzeichnisse und (optional) Dateien in der Quel
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-SCCRTN SccPopulateDirList(
+SCCRTN SccPopulateDirList(
    LPVOID        pContext,
    LONG          nDirs,
    LPCSTR*       lpDirPaths,
@@ -63,7 +63,7 @@ in Eine Kombination von Werten, die die Verarbeitung der Verzeichnisse steuern (
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Der Vorgang wurde erfolgreich abgeschlossen.|
 |SCC_E_UNKNOWNERROR|Ein Fehler ist aufgetreten.|

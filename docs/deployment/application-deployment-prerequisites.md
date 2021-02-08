@@ -18,21 +18,21 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c87b0f6ded2960054cb553dbeb85681aa447668b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: fe8312a4dcaa2efb0b783e89540e5ff9f71f15e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837800"
 ---
 # <a name="application-deployment-prerequisites"></a>Vorbedingungen für die Anwendungsbereitstellung
 
 Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen Sie zunächst alle Komponenten installieren, von denen die Anwendung auf den Zielcomputer angewiesen ist. Beispielsweise weisen die meisten mit erstellten Anwendungen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eine Abhängigkeit von der .NET Framework auf. In diesem Fall muss die richtige Version der Common Language Runtime auf dem Zielcomputer vorhanden sein, bevor die Anwendung installiert wird.
 
- Sie können diese erforderlichen Komponenten im **Dialog Feld** erforderliche Komponenten auswählen und die .NET Framework und alle anderen verteilbaren Komponenten als Teil der-Installation installieren. Dieses Vorgehen wird als *Bootstrapping* bezeichnet. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert ein ausführbares Windows-Programm mit dem Namen *Setup.exe* , das auch als *Boots Trapper* bezeichnet wird. Der Bootstrapper installiert diese erforderlichen Komponenten, bevor die Anwendung ausgeführt wird. Weitere Informationen zum Auswählen dieser Voraussetzungen finden Sie unter [Voraussetzungen (Dialogfeld](../ide/reference/prerequisites-dialog-box.md)).
+ Sie können diese erforderlichen Komponenten im **Dialog Feld** erforderliche Komponenten auswählen und die .NET Framework und alle anderen verteilbaren Komponenten als Teil der-Installation installieren. Dieses Vorgehen wird als *Bootstrapping* bezeichnet. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert ein ausführbares Windows-Programm mit dem Namen *Setup.exe*, das auch als *Boots Trapper* bezeichnet wird. Der Bootstrapper installiert diese erforderlichen Komponenten, bevor die Anwendung ausgeführt wird. Weitere Informationen zum Auswählen dieser Voraussetzungen finden Sie unter [Voraussetzungen (Dialogfeld](../ide/reference/prerequisites-dialog-box.md)).
 
  Jede erforderliche Komponente ist ein Bootstrapperpaket. Ein Bootstrapperpaket ist eine Gruppe von Verzeichnissen und Dateien, die die Manifestressourcen enthalten, die beschreiben, wie die erforderlichen Komponenten installiert werden. Wenn die erforderlichen Komponenten für die Anwendung nicht im Dialogfeld **Erforderliche Komponenten** aufgeführt sind, können Sie benutzerdefinierte Bootstrapperpakete erstellen und Visual Studio hinzufügen. Dann können Sie die erforderlichen Komponenten im Dialogfeld **Erforderliche Komponenten** auswählen. Weitere Informationen finden Sie unter [Erstellen von Bootstrapperpaketen](../deployment/creating-bootstrapper-packages.md).
 
@@ -59,7 +59,7 @@ Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen
 |.NET Framework 4 Client Profile|.NET Framework 4 Client Profile<br /><br /> Windows Installer 3.1|
 |.NET Framework 4|.NET Framework 4<br /><br /> Windows Installer 3.1|
 
- Bei der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung verweist die Seite *Publish.htm* , die vom [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Webpublishing-Assistenten generiert wird, auf einen Link, mit dem nur die Anwendung installiert wird, oder auf einen Link, mit dem die Anwendung und die Bootstrappingkomponenten installiert werden.
+ Bei der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung verweist die Seite *Publish.htm*, die vom [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Webpublishing-Assistenten generiert wird, auf einen Link, mit dem nur die Anwendung installiert wird, oder auf einen Link, mit dem die Anwendung und die Bootstrappingkomponenten installiert werden.
 
  Wenn Sie den Boots Trapper mithilfe des ClickOnce-Veröffentlichungs-Assistenten oder der Seite "veröffentlichen" in Visual Studio generieren, wird der *Setup.exe* automatisch signiert. Wenn Sie jedoch das Zertifikat des Kunden zum Signieren des Bootstrappers verwenden möchten, können Sie die Datei später signieren.
 
@@ -69,7 +69,7 @@ Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen
  Als Alternative zum Bootstrapping können Sie Komponenten mit einem elektronischen Softwareverteilungssystem wie Microsoft Systems Management Server (SMS) vorab bereitstellen.
 
 ## <a name="bootstrapper-setupexe-command-line-arguments"></a>Bootstrapper-Befehlszeilenargumente („Setup.exe“)
- Der *Setup.exe* von generierteSetup.exe[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und die MSBuild-Aufgaben unterstützen den folgenden Satz von Befehlszeilen Argumenten. Alle anderen Argumente werden an das Anwendungsinstallations Programm weitergeleitet.
+ Der  von generierteSetup.exe[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und die MSBuild-Aufgaben unterstützen den folgenden Satz von Befehlszeilen Argumenten. Alle anderen Argumente werden an das Anwendungsinstallations Programm weitergeleitet.
 
  Wenn Sie bootstrapperoptionen ändern, müssen Sie den Boots Trapper ohne Vorzeichen ändern und dann die Bootstrapperdatei später signieren.
 
@@ -84,6 +84,6 @@ Damit die Anwendung erfolgreich installiert und ausgeführt werden kann, müssen
 ## <a name="operating-system-support"></a>Betriebssystemunterstützung
  Der Visual Studio-Boots Trapper wird auf Windows Server 2008 Server Core oder Windows Server 2008 R2 Server Core nicht unterstützt, da er eine Serverumgebung mit geringer Wartung mit eingeschränkter Funktionalität bereitstellt. Die Server Core-Installationsoption unterstützt z. b. nur das .NET Framework 3,5 Server Core-Profil, das die Visual Studio-Funktionen, die von der vollständigen .NET Framework abhängen, nicht ausführen kann.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1efae18f15588f4dacf3409ea95e30af05397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2794e915efe35c2fee593d677ffd228c055a565a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836734"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo-Funktion
 Diese Funktion ruft Statusinformationen für einen Satz ausgewählter Dateien unter Quell Code Verwaltung ab.
@@ -53,7 +53,7 @@ in Ein Array von Namen von Dateien, die abgefragt werden sollen.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Die Abfrage war erfolgreich.|
 |SCC_E_ACCESSFAILURE|Beim Zugriff auf das Quell Code Verwaltungssystem ist ein Problem aufgetreten, das wahrscheinlich auf Netzwerk-oder Konfliktprobleme zurückzuführen ist. Es wird empfohlen, eine Wiederholung auszuführen.|

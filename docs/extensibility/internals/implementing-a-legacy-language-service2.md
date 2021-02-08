@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: f870da49cdf82203e7dd435601f93a75cb16dccd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839962"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>Implementieren eines Legacy sprach Dienstanbieter 2
 Um einen Sprachdienst mithilfe von Managed Package Framework (MPF) zu implementieren, müssen Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.LanguageService> -Klasse ableiten und die folgenden abstrakten Methoden und Eigenschaften implementieren:
@@ -195,7 +195,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>In der LanguageService-Klasse
 
-|Methode|Zurückgegebene Klasse|BESCHREIBUNG|
+|Methode|Zurückgegebene Klasse|Beschreibung|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Zur Unterstützung benutzerdefinierter Ergänzungen für die Textansicht.|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|, Um benutzerdefinierte Dokumenteigenschaften zu unterstützen.|
@@ -212,7 +212,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>In der Source-Klasse
 
-|Methode|Zurückgegebene Klasse|BESCHREIBUNG|
+|Methode|Zurückgegebene Klasse|Beschreibung|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Zum Anpassen der Anzeige von IntelliSense-Vervollständigungs Listen (diese Methode wird in der Regel nicht überschrieben).|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Zur Unterstützung von Markern in der Fehlerliste Aufgabenliste insbesondere Unterstützung für Features, die über das Öffnen der Datei hinausgehen und in die Zeile springen, die den Fehler verursacht hat.|
@@ -222,7 +222,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>In der AuthoringScope-Klasse
 
-|Methode|Zurückgegebene Klasse|BESCHREIBUNG|
+|Methode|Zurückgegebene Klasse|Beschreibung|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Stellt eine Liste von Deklarationen bereit, z. b. Member oder Typen. Diese Methode muss implementiert werden, kann jedoch einen NULL-Wert zurückgeben. Wenn diese Methode ein gültiges-Objekt zurückgibt, muss das-Objekt eine Instanz Ihrer Version der- <xref:Microsoft.VisualStudio.Package.Declarations> Klasse sein.|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Stellt eine Liste von Methoden Signaturen für einen angegebenen Kontext bereit. Diese Methode muss implementiert werden, kann jedoch einen NULL-Wert zurückgeben. Wenn diese Methode ein gültiges-Objekt zurückgibt, muss das-Objekt eine Instanz Ihrer Version der- <xref:Microsoft.VisualStudio.Package.Methods> Klasse sein.|

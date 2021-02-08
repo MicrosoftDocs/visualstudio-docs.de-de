@@ -4,17 +4,17 @@ description: Dieser Artikel enthält eine Übersicht über die Aufgabenlisten-Be
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f5f5fdd51e4aa13df66470534303f7fba19e44ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841665"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Erstellen und Ausführen der Aufgabenlisten-Beispiel-App
 

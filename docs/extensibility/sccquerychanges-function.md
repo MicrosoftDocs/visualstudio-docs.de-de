@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836721"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges-Funktion
 Diese Funktion Listet eine angegebene Liste von Dateien auf, die Informationen über Namensänderungen für jede Datei über eine Rückruffunktion bereitstellt.
@@ -25,7 +25,7 @@ Diese Funktion Listet eine angegebene Liste von Dateien auf, die Informationen �
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-SCCRTN SccQueryChanges(
+SCCRTN SccQueryChanges(
    LPVOID           pContext,
    LONG             nFiles,
    LPCSTR*          lpFileNames,
@@ -58,7 +58,7 @@ in Der Wert, der unverändert an die Rückruffunktion übermittelt wird.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Der Abfrageprozess wurde erfolgreich abgeschlossen.|
 |SCC_E_PROJNOTOPEN|Das Projekt wurde nicht in der Quell Code Verwaltung geöffnet.|

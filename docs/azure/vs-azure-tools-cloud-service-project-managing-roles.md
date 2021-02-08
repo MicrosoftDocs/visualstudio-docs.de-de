@@ -2,17 +2,17 @@
 title: Verwalten von Rollen in Azure-Clouddiensten
 description: Erfahren Sie, wie Sie Rollen in Azure-Clouddiensten mit Visual Studio hinzufügen und entfernen.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8e932084f9bf3d4631b2fae027224f8973602f13
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b4cf637f9ee148f945815cbebf76b15a151f6ba9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844475"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Verwalten von Rollen in Azure-Clouddiensten mit Visual Studio
 Nach dem Erstellen des Azure-Clouddiensts können Sie ihm neue Rollen hinzufügen oder vorhandene Rollen daraus entfernen. Darüber hinaus können Sie ein vorhandenes Projekt importieren und es in eine Rolle konvertieren. Sie können z. B. eine ASP.NET-Webanwendung importieren und sie als Webrolle festlegen.

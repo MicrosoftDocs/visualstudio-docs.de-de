@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 67c01aa9ecb3661235670866d92b29d7d8eef543
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875153"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837277"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrieren der Befehlshandler von Interop-Assemblys
 Ein VSPackage muss bei registriert werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit die integrierte Entwicklungsumgebung (IDE) die Befehle ordnungsgemäß weiterleitet.
@@ -52,7 +52,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 
  In der folgenden Tabelle werden die Felder von beschrieben \<*Resource Information*> .
 
-| Element | BESCHREIBUNG |
+| Element | Beschreibung |
 |---------------------------| - |
 | \<*Path to Resource DLL*> | Dies ist der vollständige Pfad zur Ressourcen-DLL, die die Menü Ressource enthält, oder diese ist leer. Dies gibt an, dass die Ressourcen-DLL des VSPackages verwendet werden soll (wie im Paket Unterschlüssel angegeben, in dem das VSPackage selbst registriert ist).<br /><br /> Es ist üblich, dieses Feld leer zu lassen. |
 | \<*Menu Resource ID*> | Dies ist die Ressourcen-ID der `CTMENU` Ressource, die alle Benutzeroberflächen Elemente für das VSPackage enthält, wie aus einer [vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) -Datei kompiliert. |

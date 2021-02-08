@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 5226f9a3464786f85ad9d5348226e82e070cf57e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839585"
 ---
 # <a name="legacy-language-service-overview"></a>Übersicht über Legacysprachdienste
 Ein Sprachdienst bietet Editor Unterstützung, mit der bestimmte Features implementiert werden können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Die Dienst Klassen für das Managed Package Framework (MPF) bieten vollständige Unterstützung für häufig verwendete Features und partielle Unterstützung für andere Funktionen.
@@ -91,6 +91,6 @@ Ein Sprachdienst bietet Editor Unterstützung, mit der bestimmte Features implem
 
 - [Überprüfen von Haltepunkten in einem Legacysprachdienst](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Implementieren eines Legacysprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Erweiterbarkeit von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-extensibility.md)

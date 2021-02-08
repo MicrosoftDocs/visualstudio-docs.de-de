@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbf566e593bb1ddbc31c70de1570d746a14fbdcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836942"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject-Funktion
 Diese Funktion öffnet ein vorhandenes Quell Code Verwaltungsprojekt oder erstellt ein neues Projekt.
@@ -78,7 +78,7 @@ in Signalisiert, ob ein neues Projekt erstellt werden muss, wenn das Projekt dem
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Erfolg beim Öffnen des Projekts.|
 |SCC_E_INITIALIZEFAILED|Das Projekt konnte nicht initialisiert werden.|

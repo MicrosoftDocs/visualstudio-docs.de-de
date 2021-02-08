@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 47471f2743e705b06fb9a1bda6752b24a7836d1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8662e3c18f568e60ac98e5468acc3da28966505c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842445"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Ruft die benutzerdefinierten Attribute Bytes ab, wenn der Name des benutzerdefinierten Attributs angegeben ist.
@@ -28,7 +28,7 @@ Ruft die benutzerdefinierten Attribute Bytes ab, wenn der Name des benutzerdefin
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetCustomAttributeByName( 
+HRESULT GetCustomAttributeByName( 
    LPCOLESTR pszCustomAttributeName,
    BYTE*     ppBlob,
    DWORD*    pdwLen

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 281787da3499c081fbbe6f59b7b8175a4dbf24d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844566"
 ---
 # <a name="sccgetprojpath-function"></a>Sccgetprojpath-Funktion
 Diese Funktion fordert den Benutzer zur Eingabe eines Projekt Pfads auf, der eine Zeichenfolge ist, die nur für das Quellcodeverwaltungs-Plug-in sinnvoll ist. Sie wird aufgerufen, wenn der Benutzer ist:
@@ -89,7 +89,7 @@ in Wenn dies der Wert ist `TRUE` , kann das Quellcodeverwaltungs-Plug-in die `lp
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Das Projekt wurde erfolgreich erstellt oder abgerufen.|
 |SCC_I_OPERATIONCANCELED|Der Vorgang wurde abgebrochen.|
@@ -111,7 +111,7 @@ in Wenn dies der Wert ist `TRUE` , kann das Quellcodeverwaltungs-Plug-in die `lp
 
  Wenn der Benutzer ein neues Projekt erstellt, das unter Quell Code Verwaltung eingefügt werden soll, wird es vom Quellcodeverwaltungs-Plug-in möglicherweise nicht im Quell Code Verwaltungssystem erstellt, wenn `SccGetProjPath` aufgerufen wird. Stattdessen wird die Zeichenfolge zusammen mit einem Wert ungleich 0 (null) zurück `pbNew` geben, der angibt, dass das Projekt im Quell Code Verwaltungssystem erstellt wird.
 
- Wenn beispielsweise ein Benutzer im Assistenten für **neue Projekte** in Visual Studio das Projekt der Quell Code Verwaltung hinzufügt, ruft Visual Studio diese Funktion auf, und das Plug-in bestimmt, ob es in Ordnung ist, ein neues Projekt im Quell Code Verwaltungssystem zu erstellen, das das Visual Studio-Projekt enthält. Wenn der Benutzer vor dem Abschließen des Assistenten auf **Abbrechen** klickt, wird das Projekt nicht erstellt. Wenn der Benutzer auf **OK**klickt, wird Visual Studio aufgerufen `SccOpenProject` und übergeben, `SCC_OPT_CREATEIFNEW` und das Projekt mit der Quell Code Verwaltung wird zu diesem Zeitpunkt erstellt.
+ Wenn beispielsweise ein Benutzer im Assistenten für **neue Projekte** in Visual Studio das Projekt der Quell Code Verwaltung hinzufügt, ruft Visual Studio diese Funktion auf, und das Plug-in bestimmt, ob es in Ordnung ist, ein neues Projekt im Quell Code Verwaltungssystem zu erstellen, das das Visual Studio-Projekt enthält. Wenn der Benutzer vor dem Abschließen des Assistenten auf **Abbrechen** klickt, wird das Projekt nicht erstellt. Wenn der Benutzer auf **OK** klickt, wird Visual Studio aufgerufen `SccOpenProject` und übergeben, `SCC_OPT_CREATEIFNEW` und das Projekt mit der Quell Code Verwaltung wird zu diesem Zeitpunkt erstellt.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [API-Funktionen der Quellcodeverwaltungs-Plug-in](../extensibility/source-control-plug-in-api-functions.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839122"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1
   Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene Projektelementtypen erstellen. In dieser exemplarischen Vorgehensweise erstellen Sie ein Projektelement, das einem SharePoint-Projekt hinzugefügt werden kann, um eine benutzerdefinierte Aktion auf einer SharePoint-Website zu erstellen. Durch die benutzerdefinierte Aktion wird dem Menü **Website Aktionen** der SharePoint-Website ein Menü Element hinzugefügt.
@@ -175,7 +175,7 @@ ms.locfileid: "96915270"
 
 4. Bearbeiten Sie die 16x16-Version der Symboldatei so, dass sich das Symbol leicht von anderen unterscheiden lässt, und speichern Sie dann die Symboldatei.
 
-5. Wählen **Solution Explorer** Sie in Projektmappen-Explorer **CustomAction_SolutionExplorer. ico** aus.
+5. Wählen Sie in Projektmappen-Explorer **CustomAction_SolutionExplorer. ico** aus.
 
 6. Wählen Sie im Fenster **Eigenschaften** den Pfeil neben der Eigenschaft **Buildaktion** aus.
 
@@ -315,7 +315,7 @@ ms.locfileid: "96915270"
     > [!NOTE]
     > Dieser Wert entspricht dem `ItemTemplate`-Element in der Datei "extension.vsixmanifest". Dieses Element identifiziert den Unterordner im VSIX-Paket, der die Projektelementvorlage enthält. Weitere Informationen finden Sie unter [ItemTemplate-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
+7. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 8. Wählen Sie in der Liste **Projekt** die Option **ItemTemplate** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -328,13 +328,13 @@ ms.locfileid: "96915270"
     > [!NOTE]
     > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-11. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
+11. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 12. Wählen Sie in der Liste **Projekt** die Option **ProjectItemDefinition** aus.
 
 13. Klicken Sie auf die Schaltfläche **OK** .
 
-14. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass das Projekt ohne Fehler kompiliert wird.
+14. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  dass das Projekt ohne Fehler kompiliert wird.
 
 15. Überprüfen Sie, ob der Buildausgabeordner für das Projekt "CustomActionProjectItem" die Datei "CustomActionProjectItem.vsix" enthält.
 
@@ -385,7 +385,7 @@ ms.locfileid: "96915270"
 
      Sie können dieses Kontextmenü verwenden, um zusätzliche Optionen oder Befehle für Entwickler bereitzustellen, z. B. zum Anzeigen eines Designers für die benutzerdefinierte Aktion.
 
-13. Wählen Sie in der Menüleiste **View**  >  **Ausgabe** anzeigen aus.
+13. Wählen Sie in der Menüleiste   >  **Ausgabe** anzeigen aus.
 
      Das Fenster **Ausgabe** wird geöffnet.
 
@@ -437,7 +437,7 @@ ms.locfileid: "96915270"
 
 #### <a name="to-clean-up-the-development-computer"></a>So bereinigen Sie den Entwicklungscomputer
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras   >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 

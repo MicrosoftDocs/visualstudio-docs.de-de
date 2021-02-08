@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6a9c2cc5d8827f6419472e5fd84add4d9c9f5228
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837176"
 ---
 # <a name="references-element-visual-studio-templates"></a>References-Element (Visual Studio-Vorlagen)
 Gruppiert die Assemblyverweise, die von der Vorlage Projekten hinzugefügt werden.
@@ -47,17 +47,17 @@ Gruppiert die Assemblyverweise, die von der Vorlage Projekten hinzugefügt werde
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|[Referenz](../extensibility/reference-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird. Es muss ein oder mehrere- `Reference` Elemente in einem-Element vorhanden sein `References` .|
+|[Verweis](../extensibility/reference-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird. Es muss ein oder mehrere- `Reference` Elemente in einem-Element vorhanden sein `References` .|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Gibt den Inhalt der Vorlage an.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `References` ist ein optionales untergeordnetes Element von `TemplateContent`.
 
  Das `Reference` -Element und das- `References` Element können nur in *. vstemplate* -Dateien mit dem- `Type` Attribut Wert verwendet werden `Item` .

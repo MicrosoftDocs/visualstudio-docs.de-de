@@ -12,15 +12,15 @@ helpviewer_keywords:
 - spelling checker, documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85294b21e9fd1f52f5cc707fc6824a87530e3cda
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9afbb96cce5848894c83c8780e5855eadc0e59d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836136"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Gewusst wie: Programm gesteuertes Überprüfen der Rechtschreibung in Dokumenten
   Verwenden Sie die-Methode, um die Rechtschreibung in einem Dokument zu überprüfen <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> . Diese Methode gibt einen booleschen Wert zurück, der angibt, ob der angegebene Parameter korrekt geschrieben ist.
@@ -34,6 +34,6 @@ ms.locfileid: "96848312"
      [!code-vb[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#113)]
      [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Optionale Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)
