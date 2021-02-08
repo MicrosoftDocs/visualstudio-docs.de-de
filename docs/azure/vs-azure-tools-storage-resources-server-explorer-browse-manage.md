@@ -3,17 +3,17 @@ title: Durchsuchen und Verwalten von Speicherressourcen
 description: Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 70656b71df09f5635ebfb5d4532256e8f0d3dd35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843851"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Durchsuchen und Verwalten von Speicherressourcen mit dem Server-Explorer
 
@@ -23,7 +23,7 @@ ms.locfileid: "94902219"
 
 Wenn Sie die Azure-Tools für Microsoft Visual Studio installiert haben, können Sie Blob-, Warteschlangen- und Tabellendaten von Ihren Speicherkonten für Azure aus anzeigen. Der Knoten Azure **Storage** in Server-Explorer zeigt Daten an, die sich in Ihrem lokalen speicheremulatorkonto und ihren anderen Azure-Speicher Konten befinden.
 
-Um Server-Explorer in Visual Studio anzuzeigen, wählen Sie in der Menüleiste **View** die Option  >  **Server-Explorer** anzeigen aus. Der Knoten **Storage** zeigt alle Speicherkonten an, die unter jedem Azure-Abonnement oder -Zertifikat vorhanden sind, mit dem Sie verbunden sind. Wird das Speicherkonto nicht angezeigt, befolgen Sie die Anweisungen am [Ende des Artikels](#add-storage-accounts-by-using-server-explorer), um das Konto hinzuzufügen.
+Um Server-Explorer in Visual Studio anzuzeigen, wählen Sie in der Menüleiste die Option  >  **Server-Explorer** anzeigen aus. Der Knoten **Storage** zeigt alle Speicherkonten an, die unter jedem Azure-Abonnement oder -Zertifikat vorhanden sind, mit dem Sie verbunden sind. Wird das Speicherkonto nicht angezeigt, befolgen Sie die Anweisungen am [Ende des Artikels](#add-storage-accounts-by-using-server-explorer), um das Konto hinzuzufügen.
 
 Ab dem Azure SDK 2.7 können Sie auch den Cloud-Explorer zum Anzeigen und Verwalten von Azure-Ressourcen verwenden. Weitere Informationen finden Sie unter [Verwalten von Azure-Ressourcen mit Cloud-Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 

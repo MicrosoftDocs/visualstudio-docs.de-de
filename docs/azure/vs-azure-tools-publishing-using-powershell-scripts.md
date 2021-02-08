@@ -3,17 +3,17 @@ title: Verwenden von PowerShell zum Veröffentlichen in Entwicklungs-und Testumg
 description: Erhalten Sie Informationen zum Veröffentlichen für Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts in Visual Studio.
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e0486e3a13b1c6b6ba421c5c0a97788f514413e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843955"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Veröffentlichung in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts
 
@@ -147,7 +147,7 @@ Wenn Sie eine Website mit mehreren Bereitstellungsumgebungen (als Slots bezeichn
 
 Wenn Sie noch nie zuvor ein Windows PowerShell-Skript ausgeführt haben, müssen Sie zuerst die Ausführungsrichtlinie festlegen, damit die Ausführung von Skripts ermöglicht wird. Die Richtlinie ist eine Sicherheitsmaßnahme, die die Ausführung von Windows PowerShell-Skripts durch Benutzer verhindert, die von Schadsoftware oder Viren betroffen sein könnten, die eine Skriptausführung beinhalten.
 
-### <a name="run-the-script"></a>Führen Sie das Skript aus.
+### <a name="run-the-script"></a>Ausführen des Skripts
 
 1. Erstellen Sie das Web Deploy-Paket für Ihr Projekt. Web Deploy-Pakete sind komprimierte Archive (ZIP-Dateien), die Dateien enthalten, die Sie auf Ihre Website oder den virtuellen Computer kopieren möchten. In Visual Studio können Sie Web Deploy-Pakete für beliebige Webanwendungen erstellen.
 

@@ -2,17 +2,17 @@
 title: Publish-WebApplicationVM | Microsoft Docs
 description: Erfahren Sie, wie eine Webanwendung auf einem virtuellen Computer bereitgestellt wird. Dieses Skript erstellt die erforderlichen Ressourcen in Ihrem Azure-Abonnement, wenn sie noch nicht vorhanden sind.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 61055a21e3360419639494ee6dcd47f88440f94e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6bd9659adec2d1d88a7a02c7985fc0f823c5d811
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844007"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell-Skript)
 Stellt eine Webanwendung auf einem virtuellen Computer bereit. Das Skript erstellt die erforderlichen Ressourcen in Ihrem Azure-Abonnement, wenn sie noch nicht vorhanden sind.
@@ -105,7 +105,7 @@ Falls "true", werden Nachrichten vom Skript in den Ausgabedatenstrom ausgegeben.
 | Pipelineeingabe akzeptieren? |false |
 | Platzhalterzeichen akzeptieren? |false |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 Eine ausführliche Erläuterung der Verwendung des Skripts zum Erstellen von Entwicklungs- und Testumgebungen finden Sie unter [Verwenden von Windows PowerShell-Skripts zum Veröffentlichen in Entwicklungs- und Testumgebungen](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 In der JSON-Konfigurationsdatei sind die Details angegeben, was bereitgestellt werden muss. Dazu zählen die Informationen, die Sie beim Erstellen des Projekts angegeben haben, z. B. der Name, die Affinitätsgruppe, das VHD-Image und die Größe des virtuellen Computers. Dazu zählen außerdem die Endpunkte auf dem virtuellen Computer, die Datenbanken, die bereitgestellt werden sollen, und Webbereitstellungsparameter. Der folgende Code zeigt ein Beispiel einer JSON-Konfigurationsdatei:

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840118"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
 Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durchsuchen, sodass der Benutzer diese auf die gleiche Weise wie Visual Studio bearbeiten kann. Der Benutzer kann background, sizes, dpi, High Contrast und andere Einstellungen ändern. Das Tool zeigt außerdem ladeinformationen für jedes Bild Manifest an und zeigt Quell Informationen für jedes Bild im Bild Manifest an. Dieses Tool eignet sich für folgende Aktionen:
@@ -74,7 +74,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |-|-|
 |Importieren|Importiert die Symbole der angegebenen Manifest-Datei für die Verwendung im aktuellen Manifest.|
 |Guid|Das Symbol stellt eine GUID dar und muss mit der GUID-Formatierung identisch sein.|
-|ID|Das Symbol stellt eine ID dar und muss eine nicht negative Ganzzahl sein.|
+|id|Das Symbol stellt eine ID dar und muss eine nicht negative Ganzzahl sein.|
 |String|Das Symbol stellt einen beliebigen Zeichen folgen Wert dar.|
 
  Bei Symbolen wird die Groß-/Kleinschreibung beachtet und mithilfe der Syntax $ (Symbol Name) auf Sie verwiesen:
@@ -113,7 +113,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |**Attribut**|**Definition**|
 |-|-|
 |Guid|Benötigten Der GUID-Teil des bilmonikers.|
-|ID|Benötigten Der ID-Teil des bilmonikers.|
+|id|Benötigten Der ID-Teil des bilmonikers.|
 |Allowcolorinversion|[Optional, Standardwert true] Gibt an, ob das Bild seine Farben Programm gesteuert invertiert werden kann, wenn es in einem dunklen Hintergrund verwendet wird.|
 
  **Quelle**
@@ -149,7 +149,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |**Attribut**|**Definition**|
 |-|-|
 |type|Benötigten Der Typ der systemeigenen Ressource, entweder XAML oder PNG|
-|ID|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
+|id|Benötigten Der ganzzahlige ID-Teil der systemeigenen Ressource.|
 
  **ImageList**
 
@@ -165,7 +165,7 @@ Das Visual Studio-Bildbibliothek-Viewer-Tool kann Bild Manifeste laden und Durch
 |**Attribut**|**Definition**|
 |-|-|
 |Guid|Benötigten Der GUID-Teil des bilmonikers.|
-|ID|Benötigten Der ID-Teil des bilmonikers.|
+|id|Benötigten Der ID-Teil des bilmonikers.|
 |Extern|[Optional, Standard false] Gibt an, ob der bilmoniker auf ein Bild im aktuellen Manifest verweist.|
 
  Der Moniker für das enthaltene Bild muss nicht auf ein Bild verweisen, das im aktuellen Manifest definiert ist. Wenn das enthaltene Bild in der Bildbibliothek nicht gefunden werden kann, wird an seiner Stelle ein leeres Platzhalter Bild verwendet.

@@ -2,17 +2,17 @@
 title: Erstellen eines Azure-Clouddienstprojekts
 description: Erfahren Sie, wie Sie ein Azure-Clouddienstprojekt mit Visual Studio erstellen.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 667d3a0a4e4642c348f6a0dd6663a30fcf704d14
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d652172bde2ecd3aea4bb027e46173eaa5fe7b17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844501"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Erstellen eines Azure-Clouddienstprojekts mit Visual Studio
 
@@ -58,10 +58,10 @@ In diesem Abschnitt wird das Erstellen eines Azure-Clouddienstprojekts in Visual
 
 Das Visual Studio-Azure-Projekt weist Zuordnungen zu den Rollenprojekten in der Projektmappe auf. Das Projekt enthält zudem die *Dienstdefinitionsdatei* und die *Dienstkonfigurationsdatei*:
 
-- **Dienst Definitionsdatei** : definiert die Lauf Zeit Einstellungen für Ihre Anwendung, einschließlich der erforderlichen Rollen, Endpunkte und der Größe des virtuellen Computers.
+- **Dienstdefinitionsdatei:** Definiert die Laufzeiteinstellungen für Ihre Anwendung wie etwa erforderliche Rollen, Endpunkte und Größe des virtuellen Computers.
 - **Dienstkonfigurationsdatei:** Konfiguriert, wie viele Instanzen einer Rolle ausgeführt werden, und die Werte der für eine Rolle definierten Einstellungen.
 
-Weitere Informationen zu diesen Dateien finden Sie unter [Konfigurieren der Rollen für einen Azure-Clouddienst mit Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
+Weitere Informationen zu diesen Dateien finden Sie unter [Konfigurieren der Rollen für einen Azure-clouddienst mit Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Verwalten von Rollen in Azure-Clouddienstprojekten mit Visual Studio](./vs-azure-tools-cloud-service-project-managing-roles.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844748"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 Ruft eine Liste der Codepfade für eine angegebene Position in einer Quelldatei ab.
@@ -28,7 +28,7 @@ Ruft eine Liste der Codepfade für eine angegebene Position in einer Quelldatei 
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT EnumCodePaths( 
+HRESULT EnumCodePaths( 
    LPCOLESTR            pszHint,
    IDebugCodeContext2*  pStart,
    IDebugStackFrame2*   pFrame,
@@ -39,7 +39,7 @@ HRESULT EnumCodePaths( 
 ```
 
 ```csharp
-int EnumCodePaths( 
+int EnumCodePaths( 
    string                 pszHint,
    IDebugCodeContext2     pStart,
    IDebugStackFrame2      pFrame,
@@ -51,7 +51,7 @@ int EnumCodePaths( 
 
 ## <a name="parameters"></a>Parameter
 `pszHint`\
-in Das Wort unter dem Cursor in der **Quell** -oder disassemblyansicht in der IDE. **Disassembly**
+in Das Wort unter dem Cursor in der **Quell** -oder disassemblyansicht in der IDE. 
 
 `pStart`\
 in Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das den aktuellen Code Kontext darstellt.
@@ -60,7 +60,7 @@ in Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcode
 in Ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) -Objekt, das den dem aktuellen Haltepunkt zugeordneten Stapel Rahmen darstellt.
 
 `fSource`\
-in Ungleich NULL ( `TRUE` ), wenn in der **Quell** Ansicht, oder 0 (NULL `FALSE` ) (), wenn in der disassemblyansicht. **Disassembly**
+in Ungleich NULL ( `TRUE` ), wenn in der **Quell** Ansicht, oder 0 (NULL `FALSE` ) (), wenn in der disassemblyansicht. 
 
 `ppEnum`\
 vorgenommen Gibt ein [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) -Objekt zurück, das eine Liste der Codepfade enthält.

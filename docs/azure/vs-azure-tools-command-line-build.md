@@ -2,17 +2,17 @@
 title: Build per Befehlszeile für Azure | Microsoft Docs
 description: Build per Befehlszeile für Azure
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 64c18ea8b572d8481b2b2d04f8a8e16f21afc44a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b60e076c50c9465f54c3c05dda0318f56fa5e9ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844267"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Erstellen von Azure-Projekten über die Befehlszeile
 Mithilfe der Microsoft-Build-Engine (MSBuild) können Sie Produkte in Build-Laborumgebungen erstellen, in denen Visual Studio nicht installiert ist. Von MSBuild wird ein XML-Format für Projektdateien verwendet, das erweiterbar ist und von Microsoft vollständig unterstützt wird. Mit dem MSBuild-Dateiformat können Sie beschreiben, welche Elemente für Plattformen und Konfigurationen erstellt werden müssen.

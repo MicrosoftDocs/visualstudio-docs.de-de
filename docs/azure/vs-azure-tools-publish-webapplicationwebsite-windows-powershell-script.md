@@ -3,17 +3,17 @@ title: Veröffentlichen einer Web-App mithilfe eines PowerShell-Skripts
 description: Informationen zum Veröffentlichen eines Webprojekts auf einer Azure-Website. Dieses Skript erstellt die erforderlichen Ressourcen in Ihrem Azure-Abonnement, wenn sie noch nicht vorhanden sind.
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 0a6657f8a6da751614d7d7da3f526aeebd817d5c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 858ed37d6530900e7474748e1443badc1843e199
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843968"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell-Skript)
 ## <a name="syntax"></a>Syntax
@@ -89,7 +89,7 @@ Falls "true", werden Nachrichten vom Skript in den Ausgabedatenstrom ausgegeben.
 | Pipelineeingabe akzeptieren? |false |
 | Platzhalterzeichen akzeptieren? |false |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 Eine ausführliche Erläuterung der Verwendung des Skripts zum Erstellen von Entwicklungs- und Testumgebungen finden Sie unter [Verwenden von Windows PowerShell-Skripts zum Veröffentlichen in Entwicklungs- und Testumgebungen](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 In der JSON-Konfigurationsdatei sind die Details angegeben, was bereitgestellt werden muss. Dazu zählen die Informationen, die Sie beim Erstellen des Projekts angegeben haben, z. B. den Namen und Benutzernamen für die Website. Sie umfassen auch die bereitzustellende Datenbank, sofern vorhanden. Der folgende Code zeigt ein Beispiel einer JSON-Konfigurationsdatei:

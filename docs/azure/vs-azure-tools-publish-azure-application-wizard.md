@@ -2,17 +2,17 @@
 title: Veröffentlichen eines Azure-Clouddiensts
 description: Erfahren Sie, wie die verschiedenen Einstellungen im Visual Studio-Assistenten zum Veröffentlichen von Azure-Anwendungen konfiguriert werden
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844059"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Verwenden des Visual Studio-Assistenten zum Veröffentlichen von Azure-Anwendungen
 
@@ -51,7 +51,7 @@ Je nach Art des von Ihnen verwendeten Visual Studio-Projekts können Sie auf ein
 
 ![Allgemeine Einstellungen](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**Clouddienst**: Wählen Sie in der Dropdownliste entweder einen vorhandenen Clouddienst aus, oder wählen Sie **&lt;Neu erstellen&gt;** aus, und erstellen Sie einen Clouddienst. Das Datencenter wird für jeden Clouddienst in Klammern angezeigt. Es wird empfohlen, für den Clouddienst den gleichen Datencenter-Speicherort wie für das Speicherkonto zu verwenden (Erweiterte Einstellungen).
+**Clouddienst** : Wählen Sie in der Dropdown Liste einen vorhandenen clouddienst aus, oder wählen Sie **&lt; neue>erstellen** aus, und erstellen Sie einen clouddienst. Das Datencenter wird für jeden Clouddienst in Klammern angezeigt. Es wird empfohlen, für den Clouddienst den gleichen Datencenter-Speicherort wie für das Speicherkonto zu verwenden (Erweiterte Einstellungen).
 
 **Umgebung**: Wählen Sie entweder **Produktion** oder **Staging** aus. Wählen Sie die Stagingumgebung, wenn Sie die Anwendung in einer Testumgebung bereitstellen möchten.
 
