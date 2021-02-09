@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 172f3ea546565554c5f0701b81a88b9ca99b4100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881099"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;Abhängigkeits &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert die Version der zu installierenden Anwendung und den Speicherort des Anwendungs Manifests.
@@ -80,13 +80,13 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 ## <a name="dependentassembly"></a>dependentAssembly
  Erforderlich. Dieses Element enthält das- `assemblyIdentity` Element. In der folgenden Tabelle werden die von `dependentAssembly` unterstützten Attribute angezeigt.
 
-| attribute | Beschreibung |
+| attribute | BESCHREIBUNG |
 |------------------| - |
-| `preRequisite` | Optional. Gibt an, dass diese Assembly bereits im GAC vorhanden sein soll. Gültige Werte sind `true` und `false`. Wenn `true` , und die angegebene Assembly nicht im GAC vorhanden ist, kann die Anwendung nicht ausgeführt werden. |
-| `visible` | Optional. Identifiziert die Anwendungs Identität der obersten Ebene, einschließlich ihrer Abhängigkeiten. Wird intern von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zum Verwalten des Anwendungs Speichers und der Aktivierung verwendet. |
+| `preRequisite` | Dies ist optional. Gibt an, dass diese Assembly bereits im GAC vorhanden sein soll. Gültige Werte sind `true` und `false`. Wenn `true` , und die angegebene Assembly nicht im GAC vorhanden ist, kann die Anwendung nicht ausgeführt werden. |
+| `visible` | Dies ist optional. Identifiziert die Anwendungs Identität der obersten Ebene, einschließlich ihrer Abhängigkeiten. Wird intern von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zum Verwalten des Anwendungs Speichers und der Aktivierung verwendet. |
 | `dependencyType` | Erforderlich. Die Beziehung zwischen dieser Abhängigkeit und der Anwendung. Gültige Werte sind:<br /><br /> -   `install`. Die Komponente stellt eine separate Installation aus der aktuellen Anwendung dar.<br />-   `preRequisite`. Die Komponente ist für die aktuelle Anwendung erforderlich. |
-| `codebase` | Optional. Der vollständige Pfad zum Anwendungs Manifest. |
-| `size` | Optional. Die Größe des Anwendungs Manifests (in Bytes). |
+| `codebase` | Dies ist optional. Der vollständige Pfad zum Anwendungs Manifest. |
+| `size` | Dies ist optional. Die Größe des Anwendungs Manifests (in Bytes). |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentAssembly` -Elements. Der Inhalt von `assemblyIdentity` muss mit dem im Anwendungs Manifest beschriebenen identisch sein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . In der folgenden Tabelle werden die Attribute des- `assemblyIdentity` Elements angezeigt.
@@ -97,8 +97,8 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 |`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|
 |`publicKeyToken`|Erforderlich. Gibt eine hexadezimale Zeichenfolge mit 16 Zeichen an, die die letzten 8 Bytes des SHA-1-Hashs des öffentlichen Schlüssels darstellt, unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel, der zum Signieren verwendet wird, muss 2048 Bit oder größer sein.|
 |`processorArchitecture`|Erforderlich. Gibt den Mikroprozessor an. Gültige Werte sind `x86` 32-Bit-Windows und `IA64` für 64-Bit-Windows.|
-|`Language`|Optional. Gibt die zwei teiligen Sprachcodes der Assembly an. Beispielsweise en-US, die für Englisch (USA) steht. Der Standardwert ist `neutral`. Dieses Element befindet sich im- `asmv2` Namespace.|
-|`type`|Optional. Aus Gründen der Abwärtskompatibilität mit der parallelen Installation von Windows. Der einzige zulässige Wert ist `win32` .|
+|`Language`|Dies ist optional. Gibt die zwei teiligen Sprachcodes der Assembly an. Beispielsweise en-US, die für Englisch (USA) steht. Der Standardwert ist `neutral`. Dieses Element befindet sich im- `asmv2` Namespace.|
+|`type`|Dies ist optional. Aus Gründen der Abwärtskompatibilität mit der parallelen Installation von Windows. Der einzige zulässige Wert ist `win32` .|
 
 ## <a name="hash"></a>hash
  Das- `hash` Element ist ein optionales untergeordnetes Element des- `file` Elements. Das `hash` -Element weist keine Attribute auf.
@@ -125,7 +125,7 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  Das- `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element des- `hash` Elements. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Bereitstellungs Manifeste verfügen in der Regel über ein einzelnes- `assemblyIdentity` Element, das den Namen und die Version des Anwendungs Manifests identifiziert.
 
 ## <a name="example-1"></a>Beispiel 1
@@ -184,4 +184,4 @@ Identifiziert die Version der zu installierenden Anwendung und den Speicherort d
 
 ## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
-- [\<dependency> gewisses](../deployment/dependency-element-clickonce-application.md)
+- [\<dependency>-Element](../deployment/dependency-element-clickonce-application.md)

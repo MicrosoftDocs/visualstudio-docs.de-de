@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53cd7d4b5302652fc371f27b76d7e789a6942640
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 8a19ec1d5c615e31e62961707ad8f76f1386eb3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880657"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent-Element (Visual Studio-Vorlagen)
 
@@ -46,13 +46,13 @@ Element Hierarchie:
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Gibt an, ob die Projekt Mappe erstellt werden soll, wenn ein Projekt aus der Vorlage erstellt wird.|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Legt die Organisation und den Inhalt von Vorlagen für mehrere Projekte fest.|
 |[Projekt](../extensibility/project-element-visual-studio-templates.md)|Optionales Element.<br /><br /> Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden sollen.|
@@ -62,11 +62,11 @@ Element Hierarchie:
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, die Element Vorlage oder Starter Kit.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `TemplateContent` ist ein erforderliches Element.
 
 ## <a name="example"></a>Beispiel

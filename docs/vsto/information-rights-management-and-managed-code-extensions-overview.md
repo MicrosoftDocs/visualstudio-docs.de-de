@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc300ac83674b8faf2bd4c0fc6128f60c28ee92b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8fc6a37a327c26ec46777575c3976c227e2d1de9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881489"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code
   Microsoft Office Word und Microsoft Office Excel enthalten Informationen Rights Management (unm), eine Funktion, mit der Sie verhindern können, dass nicht autorisierte Personen vertrauliche Informationen anzeigen oder ändern. Ausführliche Informationen über die Funktionsweise von Informationen Rights Management finden Sie in der Hilfe zu einer bestimmten Office-Anwendung.

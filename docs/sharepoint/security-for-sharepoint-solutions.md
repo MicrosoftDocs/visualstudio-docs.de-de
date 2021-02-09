@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 588b2af3672851bf7f452287d8383aa2d319347d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881580"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicherheit für SharePoint-Lösungen
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst die folgenden Funktionen, um die Sicherheit von SharePoint-Anwendungen zu verbessern.

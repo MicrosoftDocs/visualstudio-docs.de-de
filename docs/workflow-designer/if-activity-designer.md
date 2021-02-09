@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2daa2ab6e3f41d5447204db573b8ae228d617fdf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 93f36a3c2b587718fe6889688baa50224f663c1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881359"
 ---
 # <a name="if-activity-designer"></a>If-Aktivitätsdesigner
 
@@ -27,13 +27,13 @@ Die <xref:System.Activities.Statements.If>-Aktivität wertet eine Bedingung aus 
 
 In der folgenden Tabelle werden die nützlichsten Eigenschaften der <xref:System.Activities.Statements.If>-Aktivität aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|Wahr|Die Bedingung, die die auszuführende untergeordnete Aktivität bestimmt. Um das festzulegen <xref:System.Activities.Statements.If.Condition%2A> , geben Sie im **if** -Aktivitäts Designer oder im Eigenschaften Raster einen Visual Basic Ausdruck im Feld **Bedingung** ein.|
-|<xref:System.Activities.Statements.If.Else%2A>|FALSE|Die Aktivität, die ausgeführt werden soll, wenn <xref:System.Activities.Statements.If.Condition%2A> **false** ist. Um eine Aktivität hinzuzufügen, die von der <xref:System.Activities.Statements.If.Else%2A> Verzweigung ausgeführt wird, legen Sie eine Aktivität aus der **Toolbox** im **if** -Aktivitäts Designer auf dem Feld **else** mit dem Hinweis Text "Aktivität hier ablegen" ab.|
-|<xref:System.Activities.Statements.If.Then%2A>|FALSE|Die Aktivität, die ausgeführt werden soll, wenn <xref:System.Activities.Statements.If.Condition%2A> **true** ist. Um eine Aktivität hinzuzufügen, die von der <xref:System.Activities.Statements.If.Then%2A> Verzweigung ausgeführt wird, legen Sie eine Aktivität aus der **Toolbox** im **if** -Aktivitäts Designer auf dem Feld **Then** mit dem Hinweis Text "Aktivität hier ablegen" ab.|
+|<xref:System.Activities.Statements.If.Condition%2A>|Richtig|Die Bedingung, die die auszuführende untergeordnete Aktivität bestimmt. Um das festzulegen <xref:System.Activities.Statements.If.Condition%2A> , geben Sie im **if** -Aktivitäts Designer oder im Eigenschaften Raster einen Visual Basic Ausdruck im Feld **Bedingung** ein.|
+|<xref:System.Activities.Statements.If.Else%2A>|Falsch|Die Aktivität, die ausgeführt werden soll, wenn <xref:System.Activities.Statements.If.Condition%2A> **false** ist. Um eine Aktivität hinzuzufügen, die von der <xref:System.Activities.Statements.If.Else%2A> Verzweigung ausgeführt wird, legen Sie eine Aktivität aus der **Toolbox** im **if** -Aktivitäts Designer auf dem Feld **else** mit dem Hinweis Text "Aktivität hier ablegen" ab.|
+|<xref:System.Activities.Statements.If.Then%2A>|Falsch|Die Aktivität, die ausgeführt werden soll, wenn <xref:System.Activities.Statements.If.Condition%2A> **true** ist. Um eine Aktivität hinzuzufügen, die von der <xref:System.Activities.Statements.If.Then%2A> Verzweigung ausgeführt wird, legen Sie eine Aktivität aus der **Toolbox** im **if** -Aktivitäts Designer auf dem Feld **Then** mit dem Hinweis Text "Aktivität hier ablegen" ab.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sequenz](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

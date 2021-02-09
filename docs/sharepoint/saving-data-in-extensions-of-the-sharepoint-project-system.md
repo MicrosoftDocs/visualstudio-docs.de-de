@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint projects, saving string data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 579289a7ba5afa1eb50bdf5f1dbb105fc2a6b01e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881567"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Speichern von Daten in Erweiterungen des SharePoint-Projekt Systems
   Wenn Sie das SharePoint-Projekt System erweitern, können Sie Zeichen folgen Daten speichern, die nach dem Schließen eines SharePoint-Projekts beibehalten werden. Die Daten sind in der Regel mit einem bestimmten Projekt Element oder dem Projekt selbst verknüpft.
@@ -56,7 +56,7 @@ ms.locfileid: "95440648"
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
 - [Konvertieren zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

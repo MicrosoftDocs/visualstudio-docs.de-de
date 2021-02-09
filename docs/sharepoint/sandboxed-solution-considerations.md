@@ -17,15 +17,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23424c1681a9967d9d50df47f9e67ec895a308a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970464"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881606"
 ---
 # <a name="sandboxed-solution-considerations"></a>Überlegungen zu Sandkastenlösungen
   *Sandkasten Lösungen* sind eine Funktion in Microsoft SharePoint 2010, mit der Website Sammlungs Benutzer ihre eigenen benutzerdefinierten Code Lösungen hochladen können. Eine gängige Sandkasten Lösung ist, dass Benutzer ihre eigenen Webparts hochladen.

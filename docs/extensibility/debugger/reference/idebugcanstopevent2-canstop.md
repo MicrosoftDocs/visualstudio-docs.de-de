@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2915938c966bac7f842d0745c973c7d0b7033e2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d3563fb46b9117ff7f142c5822c708deda34fda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880995"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 Benachrichtigt die Debug-Engine (de), ob Sie am aktuellen Code Speicherort anhalten oder die Ausführung einfach fortsetzen möchten.
@@ -28,13 +28,13 @@ Benachrichtigt die Debug-Engine (de), ob Sie am aktuellen Code Speicherort anhal
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT CanStop ( 
+HRESULT CanStop ( 
    BOOL fCanStop
 );
 ```
 
 ```csharp
-int CanStop ( 
+int CanStop ( 
    int fCanStop
 );
 ```

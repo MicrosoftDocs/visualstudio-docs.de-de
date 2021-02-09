@@ -12,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd2685b7fee0534e56c55e2c865d1d7f16423de5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 35d101a1d8db82e366ec706b3d10fdcac0cdcbaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881411"
 ---
 # <a name="walkthroughs-using-word"></a>Exemplarische Vorgehensweisen mit Word
   Die folgenden exemplarischen Vorgehensweisen zeigen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Automatisieren von Microsoft Office Word und Anpassen der Benutzeroberfläche (User Interface, UI) verwenden können.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb5e4f9e32017cfb493aae00a24f9f8184605d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6ebb698fc839a93547d15828b250bd436260e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881034"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 Diese Schnittstelle stellt die Informationen dar, die einen gebundenen Haltepunkt beschreiben.
@@ -37,7 +37,7 @@ IDebugBreakpointResolution2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBreakpointResolution2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Ruft den Typ des Breakpoints ab, der durch diese Auflösung dargestellt wird.|
 |[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Ruft die Informationen zur breakpointauflösung ab, die diesen Haltepunkt beschreiben.|

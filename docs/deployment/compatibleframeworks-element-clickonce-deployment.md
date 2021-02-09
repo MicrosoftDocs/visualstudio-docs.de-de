@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6b0a87e36a176a01b8f243c4646e2711220f807f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881177"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleframe- &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann.
@@ -47,9 +47,9 @@ Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung instal
 
  In der folgenden Tabelle werden die Attribute aufgelistet, die das- `compatibleFrameworks` Element unterstützt.
 
-|attribute|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`S` `upportUrl`|Optional. Gibt eine URL an, unter der die bevorzugte kompatible .NET Framework Version heruntergeladen werden kann.|
+|`S` `upportUrl`|Dies ist optional. Gibt eine URL an, unter der die bevorzugte kompatible .NET Framework Version heruntergeladen werden kann.|
 
 ## <a name="framework"></a>Framework
  Erforderlich. In der folgenden Tabelle werden die Attribute aufgelistet, die das- `framework` Element unterstützt.
@@ -74,5 +74,5 @@ Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung instal
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)

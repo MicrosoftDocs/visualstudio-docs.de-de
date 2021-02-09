@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a5703958db5d981391c11ae0baceaf83231d3c7
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 7e32bc03728916d7990938e36faa8bb7533357bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881528"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Beispiele und exemplarische Vorgehensweisen für SharePoint
   Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen die Syntax, die Struktur und die Verfahren, die Sie zum Erstellen von SharePoint-Lösungen benötigen.

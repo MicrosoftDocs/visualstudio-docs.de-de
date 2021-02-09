@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, samples
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1bb4a374194c2d8ea94d24923675ec3f5b3d2601
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d9625e845f73496946b463d2dc3f1a13c47f94c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881515"
 ---
 # <a name="sharepoint-development-samples"></a>Beispiele für die SharePoint-Entwicklung
   Sie können Visual Studio verwenden, um Beispiele für SharePoint-Anwendungen aus der [MSDN Code Gallery](https://code.msdn.microsoft.com/)herunterzuladen und zu installieren.
