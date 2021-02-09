@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a791f94e46e16369392465e075ade92a833e2868
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847712"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Exemplarische Vorgehensweise: Erstellen einer externen Liste in SharePoint mithilfe von Geschäftsdaten
 
@@ -96,7 +96,7 @@ Zum Abschließen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:
 
      Dem Projekt wird eine DBML-Datei hinzugefügt, und der objektrelationaler Designer (O/R-Designer) wird geöffnet.
 
-8. Wählen Sie in der Menüleiste **View**  >  **Server-Explorer** anzeigen aus.
+8. Wählen Sie in der Menüleiste   >  **Server-Explorer** anzeigen aus.
 
 9. Erweitern Sie in **Server-Explorer** den Knoten, der die AdventureWorks-Beispieldatenbank darstellt, und erweitern Sie dann den Knoten **Tabellen** .
 
@@ -122,7 +122,7 @@ Das **Business Data Connectivity-Modell** Projekt fügt dem Modell eine Standard
 
 Fügen Sie dem Modell eine Entität hinzu. Sie können Entitäten aus der Visual Studio- **Toolbox** auf den BDC-Designer hinzufügen.
 
-1. Wählen Sie in der Menüleiste **View**  >  **Toolbox** anzeigen aus.
+1. Wählen Sie in der Menüleiste   >  **Toolbox** anzeigen aus.
 
 2. Fügen Sie auf der Registerkarte **BusinessDataConnectivity** der **Toolbox** eine **Entität** in den BDC-Designer ein.
 
@@ -148,7 +148,7 @@ Fügen Sie der Entität "Contact" mithilfe des Fensters " **BDC-Methoden Details
 
 1. Wählen Sie im BDC-Designer die **Contact** -Entität aus.
 
-2. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
+2. Wählen Sie in der Menüleiste   >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
 
      Das Fenster BDC-Methoden Details wird geöffnet.
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 669ef527e65e56612199b8303f7cc99e8b993b50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846399"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architektur von Quellcodeverwaltungs-Plug-Ins
 Sie können der integrierten Entwicklungsumgebung (IDE) Unterstützung der Quell Code Verwaltung hinzufügen, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] indem Sie ein Quellcodeverwaltungs-Plug-in implementieren und anfügen. Die IDE stellt eine Verbindung mit dem Quellcodeverwaltungs-Plug-in über die klar definierte Quell Code Verwaltung Plug-In-API her. Die IDE stellt die Versions Kontroll Features des Quell Code Verwaltungssystems bereit, indem eine Benutzeroberfläche (UI) bereitgestellt wird, die aus Symbolleisten und Menübefehlen besteht. Das Quellcodeverwaltungs-Plug-in implementiert die Funktionen der Quell Code Verwaltung.

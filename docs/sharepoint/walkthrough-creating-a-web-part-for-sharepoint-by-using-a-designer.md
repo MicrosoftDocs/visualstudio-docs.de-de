@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 02a0eb7c9279aef1fd2821d44a6f3cc4a0008356
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847751"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint mithilfe eines Designers
 
@@ -71,7 +71,7 @@ Entwerfen Sie das Webpart, indem Sie Steuerelemente aus der **Toolbox** der Ober
 
 1. Wählen Sie im Visual Web Developer-Designer die Registerkarte **Entwurf** aus, um zu Designansicht zu wechseln.
 
-2. Wählen Sie in der Menüleiste **View**  >  **Toolbox** anzeigen aus.
+2. Wählen Sie in der Menüleiste   >  **Toolbox** anzeigen aus.
 
 3. Wählen Sie im Knoten **Standard** der **Toolbox** das Steuerelement **CheckBoxList** aus, und führen Sie dann einen der folgenden Schritte aus:
 

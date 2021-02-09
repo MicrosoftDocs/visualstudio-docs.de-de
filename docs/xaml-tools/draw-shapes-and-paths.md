@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 2e815b3e4959727dab282fcbe0fcd1f82890bf8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847348"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
 
@@ -26,7 +26,7 @@ Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hohe
 
 ## <a name="draw-a-shape"></a>Zeichnen einer Form
 
-Formen finden Sie im Fenster **Objekte** .
+Formen finden Sie im Fenster **Objekte**.
 
 :::image type="content" source="media/blend-shapes.png" alt-text="Screenshot der Kategorie &quot;Formen&quot; im Fenster &quot;Objekte&quot; in Blend für Visual Studio":::
 
@@ -38,11 +38,11 @@ Ziehen Sie die gewünschte Form auf die Zeichenfläche. Anschließend können Si
 
 Ein Pfad besteht aus einer Reihe von miteinander verbundenen Linien und Kurven. Verwenden Sie einen Pfad, um interessante Formen zu erstellen, die nicht im Fenster **Objekte** verfügbar sind.
 
-Sie können einen Pfad mit einer Linie, einem Stift oder einem Zeichenstift zeichnen. Diese Tools finden Sie im Fenster **Tools** .
+Sie können einen Pfad mit einer Linie, einem Stift oder einem Zeichenstift zeichnen. Diese Tools finden Sie im Fenster **Tools**.
 
 ### <a name="draw-a-straight-line"></a>Zeichnen einer geraden Linie
 
-Verwenden Sie das Tool **Stift** oder die **Linie** .
+Verwenden Sie das Tool **Stift** oder die **Linie**.
 
 **Verwenden des Tools „Stift“**
 
@@ -54,7 +54,7 @@ Ziehen Sie auf der Zeichenfläche vom gewünschten Anfangspunkt der Linie, und l
 
 ### <a name="draw-a-curve"></a>Zeichnen einer Kurve
 
-Verwenden Sie das Tool **Stift** .
+Verwenden Sie das Tool **Stift**.
 
 Klicken Sie einmal auf die Zeichenfläche, um den Ausgangspunkt einer Linie zu definieren, und ziehen Sie dann bei gedrückter Maustaste den Mauszeiger, um die gewünschte Kurve zu erstellen.
 
@@ -62,29 +62,29 @@ Wenn Sie den Pfad schließen möchten, klicken Sie auf den ersten Punkt der Lini
 
 ### <a name="change-the-shape-of-a-curve"></a>Ändern der Form einer Kurve
 
-Verwenden Sie das Tool **Direktauswahl** .
+Verwenden Sie das Tool **Direktauswahl**.
 
 Klicken Sie auf die Form, und ziehen Sie dann einen beliebigen Punkt der Form, um die Kurvenformen zu ändern.
 
 ### <a name="draw-a-free-form-path"></a>Zeichnen eines Freihandformpfads
 
-Verwenden Sie das Tool **Zeichenstift** .
+Verwenden Sie das Tool **Zeichenstift**.
 
 Zeichnen Sie auf der Zeichenfläche einen Freihandformpfad genau so, als würden Sie einen echten Zeichenstift verwenden.
 
 ### <a name="remove-part-of-a-path"></a>Entfernen eines Pfadsegments
 
-Verwenden Sie das Tool **Direktauswahl** .
+Verwenden Sie das Tool **Direktauswahl**.
 
 Wählen Sie den Pfad aus, der das Segment enthält, das Sie löschen möchten, und klicken Sie dann auf die Schaltfläche **Löschen** .
 
 ### <a name="remove-a-point-in-a-path"></a>Entfernen eines Punkts in einem Pfad
 
-Verwenden Sie das Tool **Auswahl** , um den Pfad auszuwählen. Verwenden Sie dann den **Stift** , um auf den Punkt zu klicken, den Sie entfernen möchten.
+Verwenden Sie das Tool **Auswahl**, um den Pfad auszuwählen. Verwenden Sie dann den **Stift**, um auf den Punkt zu klicken, den Sie entfernen möchten.
 
 ### <a name="add-a-point-to-a-path"></a>Hinzufügen eines Punkts zu einem Pfad
 
-Verwenden Sie das Tool **Auswahl** , um den Pfad auszuwählen. Verwenden Sie den **Stift** , um an eine beliebige Stelle auf dem Pfad zu klicken, an der Sie den Punkt hinzufügen möchten.
+Verwenden Sie das Tool **Auswahl**, um den Pfad auszuwählen. Verwenden Sie den **Stift**, um an eine beliebige Stelle auf dem Pfad zu klicken, an der Sie den Punkt hinzufügen möchten.
 
 ## <a name="convert-a-shape-to-a-path"></a>Konvertieren von Formen in Pfade
 
@@ -101,7 +101,7 @@ Sie können Pfade und Formen zu einem einzelnen Pfad kombinieren.
 
 ![Kombinieren von Pfaden](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|Aktion|
+|Zahl|Aktion|
 |-|-|
 |![Zwei Formen vor dem Vereinen](../designers/media/b1_1.png)|Zwei Formen vor dem Vereinen|
 |![Vereinigen](../designers/media/b1_2.png)|Vereinigen|

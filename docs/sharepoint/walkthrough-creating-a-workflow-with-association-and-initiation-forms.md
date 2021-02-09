@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847738"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen
   Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines grundlegenden sequenziellen Workflows, der die Verwendung von Zuordnungs-und Initiierungs Formularen einschließt. Hierbei handelt es sich um ASPX-Formulare, die das Hinzufügen von Parametern zu einem Workflow ermöglichen, wenn er dem SharePoint-Administrator (dem Zuordnungs Formular) zuerst zugeordnet ist, und wenn der Workflow vom Benutzer gestartet wird (Initiierungs Formular).
@@ -84,7 +84,7 @@ ms.locfileid: "95970441"
 
 6. Wählen Sie im **Projektmappen-Explorer** den Projektknoten aus.
 
-7. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+7. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 8. Erweitern Sie unter **Visual c#** oder **Visual Basic** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 

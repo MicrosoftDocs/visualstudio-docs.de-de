@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847829"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das odata für SharePoint anzeigt
   SharePoint 2010 macht seine Listen Daten mithilfe von odata verfügbar. In SharePoint wird der odata-Dienst vom Rest-Dienst listData. svc implementiert. Diese exemplarische Vorgehensweise veranschaulicht, wie ein SharePoint-Webpart erstellt wird, das eine Silverlight-Anwendung hostet. Die Silverlight-Anwendung zeigt die SharePoint-Ankündigungs Listen Informationen mithilfe von "listData. svc" an. Weitere Informationen finden Sie unter [SharePoint Foundation-Rest-Schnittstelle](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) und [Open Data Protocol](https://www.odata.org/).
@@ -86,7 +86,7 @@ ms.locfileid: "96914789"
 
 5. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
-6. Fügen Sie dem Projekt eine neue Datenquelle auf Grundlage des SharePoint-Dienstanbieter hinzu. Wählen Sie hierzu in der Menüleiste die Option **View**  >  **Weitere Windows**-  >  **Datenquellen** anzeigen aus.
+6. Fügen Sie dem Projekt eine neue Datenquelle auf Grundlage des SharePoint-Dienstanbieter hinzu. Wählen Sie hierzu in der Menüleiste die Option   >  **Weitere Windows**-  >  **Datenquellen** anzeigen aus.
 
      Das Fenster **Datenquellen** zeigt alle verfügbaren SharePoint-Listen Daten an, z. b. Tasks, Ankündigungen und Kalender.
 
