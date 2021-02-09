@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889563"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Zusammenführen von XML in Funktions-und Paket Manifesten
   Funktionen und Pakete werden durch [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Manifest-Dateien definiert. Diese gepackten Manifeste stellen eine Kombination aus Daten dar, die von Designern generiert werden, und benutzerdefinierte Daten, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] die von Benutzern in der Zum Zeitpunkt der Paket Erstellung werden [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die benutzerdefinierten [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Anweisungen mit dem vom Designer bereitgestellten zusammengeführt, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] um die gepackte Manifest-Datei zu bilden [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Ähnliche Elemente, mit den Ausnahmen, die später in mergeausnahmen notiert werden, werden zusammengeführt, um [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Validierungs Fehler zu vermeiden, nachdem Sie die Dateien in SharePoint bereitgestellt haben, und um die Manifest-Dateien zu verkleinern und effizienter zu gestalten.
@@ -50,9 +50,9 @@ ms.locfileid: "96304229"
 |Elementname|Eindeutiger Schlüssel|
 |------------------|----------------|
 |Feature (alle Attribute)|*Attribut Name* (jeder Attribut Name des Feature-Elements ist ein eindeutiger Schlüssel.)|
-|ElementFile|Speicherort|
-|Elementmanifests/Element Manifest|Speicherort|
-|Eigenschaften/Eigenschaft|Key|
+|ElementFile|Standort|
+|Elementmanifests/Element Manifest|Standort|
+|Eigenschaften/Eigenschaft|Schlüssel|
 |Customupgradeaction|Name|
 |Customupgradebug-Parameter|Name|
 
@@ -65,21 +65,21 @@ ms.locfileid: "96304229"
 |Elementname|Eindeutiger Schlüssel|
 |------------------|----------------|
 |Lösung (alle Attribute)|*Attribut Name* (jeder Attribut Name des projektmappenelements ist ein eindeutiger Schlüssel.)|
-|ApplicationResourceFiles/ApplicationResourceFile|Speicherort|
-|Assemblys/Assembly|Speicherort|
-|ClassResources/ClassResource|Speicherort|
-|DwpFiles/DwpFile|Speicherort|
-|Featuremanifeste/FeatureManifest|Speicherort|
-|Ressourcen/Ressource|Speicherort|
-|RootFiles/RootFile|Speicherort|
-|SiteDefinitionManifests/SiteDefinitionManifest|Speicherort|
-|WebTempFile|Speicherort|
-|TemplateFiles/TemplateFile|Speicherort|
+|ApplicationResourceFiles/ApplicationResourceFile|Standort|
+|Assemblys/Assembly|Standort|
+|ClassResources/ClassResource|Standort|
+|DwpFiles/DwpFile|Standort|
+|Featuremanifeste/FeatureManifest|Standort|
+|Ressourcen/Ressource|Standort|
+|RootFiles/RootFile|Standort|
+|SiteDefinitionManifests/SiteDefinitionManifest|Standort|
+|WebTempFile|Standort|
+|TemplateFiles/TemplateFile|Standort|
 |Solutionabhängigkeit|SolutionID|
 
 ## <a name="manually-add-deployed-files"></a>Manuell bereitgestellte Dateien hinzufügen
  Einige Manifest-Elemente, wie z. b. ApplicationResourceFile und DwpFiles, geben einen Speicherort an, der einen Dateinamen enthält. Durch das Hinzufügen eines Datei namens Eintrags zur Manifest-Vorlage wird jedoch nicht die zugrunde liegende Datei zum Paket hinzugefügt. Sie müssen die Datei dem Projekt hinzufügen, um Sie in das Paket einzuschließen, und die zugehörige Eigenschaft des Bereitstellungs Typs entsprechend festlegen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)

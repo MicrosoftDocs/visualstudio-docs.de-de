@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5fcc1117c88f19eaae7633698dee1698a8108fdb
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: bd996539e5f0291bb31e153771735399a8874701
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889511"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Verweis (Erweiterbarkeit von SharePoint-Tools)
 
@@ -35,6 +35,6 @@ Enthält die Referenz Dokumentation für das *spdata* -Datei Schema.
 
 Enthält die API-Referenz Dokumentation zum Erweitern der SharePoint-Tools in Visual Studio.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

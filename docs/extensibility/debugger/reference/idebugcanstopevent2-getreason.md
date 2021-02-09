@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59e611c3ed69528f92a6085cf74aa44efed09144
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aadf18dbf45f8b10791c69ed4f189c38491636d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890291"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 Ruft den Grund ab, warum die Debug-Engine (de) beendet werden soll.
@@ -28,13 +28,13 @@ Ruft den Grund ab, warum die Debug-Engine (de) beendet werden soll.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetReason( 
+HRESULT GetReason( 
    CANSTOP_REASON* pcr
 );
 ```
 
 ```csharp
-int GetReason( 
+int GetReason( 
    out enum_CANSTOP_REASON pcr
 );
 ```

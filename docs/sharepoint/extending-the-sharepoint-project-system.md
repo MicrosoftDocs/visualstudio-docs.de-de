@@ -1,6 +1,6 @@
 ---
 title: Erweitern des SharePoint-Projekt Systems | Microsoft-Dokumentation
-description: Erweitern Sie das SharePoint-Projekt System. Erfahren Sie, wie Sie das SharePoint-Projekt System erweitern. Erfahren Sie mehr über allgemeine Entwicklungsaufgaben.
+description: Erweitern des SharePoint-Projektsystems. Erfahren Sie, wie Sie das SharePoint-Projekt System erweitern. Erfahren Sie mehr über allgemeine Entwicklungsaufgaben.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5a81fef67cc6816f16a074494005a61d647abeab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889680"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Erweitern des SharePoint-Projektsystems
   Sie können SharePoint-Lösungen erstellen, indem Sie eine Reihe von Projektvorlagen und Element Vorlagen in Visual Studio verwenden. Diese Vorlagen erfüllen die Anforderungen vieler Entwicklungsszenarien, Sie können jedoch einige Fälle ermitteln, in denen Sie keine erforderliche Funktionalität bereitstellen. In diesen Fällen können Sie das SharePoint-Projekt System erweitern.
@@ -50,7 +50,7 @@ ms.locfileid: "94672547"
 
 - Konvertieren Sie ein Objekt im SharePoint-Projekt System in ein entsprechendes Objekt im Visual Studio-Automatisierungs Objektmodell oder im Integrations Objektmodell (oder umgekehrt). Weitere Informationen finden Sie unter " [KONVER" zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Erweitern von SharePoint-Projekt Elementen](../sharepoint/extending-sharepoint-project-items.md)
 - [Erweitern von SharePoint-Projekten](../sharepoint/extending-sharepoint-projects.md)

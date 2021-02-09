@@ -14,15 +14,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f87889c13021a7c0a43b58564210db34301abdf4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b2aed6102b6aed5938ecfab826363e62dcfac48a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889420"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Gewusst wie: Erstellen von Ereignis Handlern in Office-Projekten
   Es gibt mehrere Möglichkeiten zum Erstellen von Ereignis Handlern in Visual Basic und c#. In der Entwurfs Ansicht können Sie die Standard Ereignishandler für Steuerelemente erstellen, indem Sie auf das Steuerelement doppelklicken oder im Fenster "Ereignisse" im Fenster " **Eigenschaften** " Handler für ein beliebiges Ereignis im Steuerelement erstellen. Wenn Sie jedoch in der Code Ansicht sind, möchten Sie möglicherweise nicht zu Designansicht wechseln, um einen Ereignishandler zu erstellen.
@@ -44,7 +44,7 @@ ms.locfileid: "96846700"
 
 ### <a name="to-create-an-event-handler-in-c"></a>So erstellen Sie einen Ereignishandler in C\#
 
-1. Erstellen Sie den Ereignis Delegaten im **Startup** -Ereignis der-Klasse, indem Sie den qualifizierten Ereignis Namen, gefolgt von einem Leerzeichen, eingeben und **+=** anschließend ohne Leerzeichen eingeben. Zum Beispiel:
+1. Erstellen Sie den Ereignis Delegaten im **Startup** -Ereignis der-Klasse, indem Sie den qualifizierten Ereignis Namen, gefolgt von einem Leerzeichen, eingeben und **+=** anschließend ohne Leerzeichen eingeben. Beispiel:
 
      `this.<object name>.<event name> +=`
 
@@ -52,7 +52,7 @@ ms.locfileid: "96846700"
 
      Visual Studio schließt die Codezeile automatisch ab, erstellt den Ereignishandler und verschiebt die Einfügemarke in den neu erstellten Ereignishandler.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Schreiben von Code in Office-Lösungen](../vsto/writing-code-in-office-solutions.md)
 - [Exemplarische Vorgehensweise: Program mieren gegen Ereignisse eines NamedRange-Steuer Elements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)
