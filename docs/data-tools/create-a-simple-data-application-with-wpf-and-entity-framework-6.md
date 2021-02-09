@@ -8,19 +8,19 @@ dev_langs:
 - CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859189"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 
-In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine grundlegende "Forms over Data"-Anwendung in Visual Studio erstellen. Die APP verwendet SQL Server localdb, die Northwind-Datenbank, Entity Framework 6 (nicht Entity Framework Core) und Windows Presentation Foundation für .NET Framework (nicht .net Core). Es zeigt, wie Sie eine einfache Datenbindung mit einer Master/Detail-Ansicht durchführen können. Außerdem enthält Sie einen benutzerdefinierten Bindungs Navigator mit Schaltflächen für "weiter", "nach **Delete** oben", " **an den Anfang** **", "** an den Anfang **", "** **Move Next** **an den Ende** "
+In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine grundlegende "Forms over Data"-Anwendung in Visual Studio erstellen. Die APP verwendet SQL Server localdb, die Northwind-Datenbank, Entity Framework 6 (nicht Entity Framework Core) und Windows Presentation Foundation für .NET Framework (nicht .net Core). Es zeigt, wie Sie eine einfache Datenbindung mit einer Master/Detail-Ansicht durchführen können. Außerdem enthält Sie einen benutzerdefinierten Bindungs Navigator mit Schaltflächen für "weiter", "nach oben", " **an den Anfang** **", "** an den Anfang **", "**  **an den Ende**"
 
 Der Schwerpunkt dieses Artikels liegt auf der Verwendung von Data Tools in Visual Studio. es wird nicht versucht, die zugrunde liegenden Technologien in beliebiger Tiefe zu erläutern. Dabei wird davon ausgegangen, dass Sie über eine grundlegende Vertrautheit mit XAML, Entity Framework und SQL verfügen. In diesem Beispiel wird auch die Architektur Model-View-ViewModel (MVVM) nicht veranschaulicht, die für WPF-Anwendungen standardmäßig verwendet wird. Sie können diesen Code jedoch mit wenigen Änderungen in Ihre eigene MVVM-Anwendung kopieren.
 
@@ -32,7 +32,7 @@ In diesem Beispiel werden SQL Server Express localdb-und Northwind-Beispieldaten
 
 2. Installieren Sie die Beispieldatenbank Northwind, indem Sie die folgenden Schritte ausführen:
 
-    1. Öffnen Sie in Visual Studio das Fenster **SQL Server-Objekt-Explorer** . ( **SQL Server-Objekt-Explorer** wird als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** im **Visual Studio-Installer** installiert.) Erweitern Sie den Knoten **SQL Server** . Klicken Sie mit der rechten Maustaste auf die localdb-Instanz, und wählen Sie **neue Abfrage**.
+    1. Öffnen Sie in Visual Studio das Fenster **SQL Server-Objekt-Explorer** . (**SQL Server-Objekt-Explorer** wird als Teil der Arbeitsauslastung für die **Datenspeicherung und-Verarbeitung** im **Visual Studio-Installer** installiert.) Erweitern Sie den Knoten **SQL Server** . Klicken Sie mit der rechten Maustaste auf die localdb-Instanz, und wählen Sie **neue Abfrage**.
 
        Ein Abfrage-Editor-Fenster wird geöffnet.
 
@@ -60,7 +60,7 @@ In diesem Beispiel werden SQL Server Express localdb-und Northwind-Beispieldaten
 
 ## <a name="create-the-model"></a>Erstellen des Modells
 
-1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Wählen Sie im linken Bereich unter dem Knoten c# die Option **Daten** aus, und wählen Sie im mittleren Bereich die Option **ADO.NET Entity Data Model** aus.
+1. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie   >  **Neues Element** hinzufügen aus. Wählen Sie im linken Bereich unter dem Knoten c# die Option **Daten** aus, und wählen Sie im mittleren Bereich die Option **ADO.NET Entity Data Model** aus.
 
    ![Neues Element Entity Framework Modell](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -70,7 +70,7 @@ In diesem Beispiel werden SQL Server Express localdb-und Northwind-Beispieldaten
 
 3. Geben Sie auf dem nächsten Bildschirm Ihre localdb-Verbindung mit Northwind (z. b. (localdb) \mssqllocaldb) ein, oder wählen Sie Sie aus, und klicken Sie auf **weiter**.
 
-4. Wählen Sie auf der nächsten Seite des Assistenten die Tabellen, gespeicherten Prozeduren und anderen Datenbankobjekte aus, die im Entity Framework Modell enthalten sein sollen. Erweitern Sie den Knoten dbo in der Strukturansicht, und wählen Sie **Kunden** , **Bestellungen** und **Bestell Details** aus. Belassen Sie die Standardeinstellungen, und klicken Sie auf **Fertig** stellen
+4. Wählen Sie auf der nächsten Seite des Assistenten die Tabellen, gespeicherten Prozeduren und anderen Datenbankobjekte aus, die im Entity Framework Modell enthalten sein sollen. Erweitern Sie den Knoten dbo in der Strukturansicht, und wählen Sie **Kunden**, **Bestellungen** und **Bestell Details** aus. Belassen Sie die Standardeinstellungen, und klicken Sie auf **Fertig** stellen
 
     ![Datenbankobjekte für das Modell auswählen](../data-tools/media/raddata-choose-ef-objects.png)
 
@@ -116,7 +116,7 @@ Es ist möglich, ihren eigenen Datenbindung-Code zu schreiben, aber es ist viel 
         </Grid.RowDefinitions>
     ```
 
-5. Öffnen Sie nun die Datei " *MainWindow. XAML* ", sodass Sie Sie im Designer anzeigen. Dies bewirkt, dass das Fenster **Datenquellen** als Option im Visual Studio-Fensterrand neben der **Toolbox** angezeigt wird. Klicken Sie auf die Registerkarte, um das Fenster zu öffnen, oder drücken Sie **UMSCHALT** + **alt** + **D** , oder wählen Sie **View**  >  **andere Windows** -  >  **Datenquellen** anzeigen aus. Jede Eigenschaft in der Customers-Klasse wird in einem eigenen Textfeld angezeigt. Klicken Sie zuerst auf den Pfeil im Kombinations Feld **Customers** , und wählen Sie **Details** aus. Ziehen Sie dann den Knoten auf den mittleren Teil der Entwurfs Oberfläche, damit der Designer weiß, dass er in der mittleren Zeile angezeigt werden soll. Wenn Sie ihn falsch angeben, können Sie die Zeile später in der XAML manuell angeben. Standardmäßig werden die Steuerelemente vertikal in einem Raster Element platziert, aber an diesem Punkt können Sie Sie im Formular anordnen. Beispielsweise kann es sinnvoll sein, das Textfeld **Name** oberhalb der Adresse zu platzieren. Die Beispielanwendung für diesen Artikel ordnet die Felder neu an und ordnet Sie in zwei Spalten an.
+5. Öffnen Sie nun die Datei " *MainWindow. XAML* ", sodass Sie Sie im Designer anzeigen. Dies bewirkt, dass das Fenster **Datenquellen** als Option im Visual Studio-Fensterrand neben der **Toolbox** angezeigt wird. Klicken Sie auf die Registerkarte, um das Fenster zu öffnen, oder drücken Sie **UMSCHALT** + **alt** + **D** , oder wählen Sie   >  **andere Windows**-  >  **Datenquellen** anzeigen aus. Jede Eigenschaft in der Customers-Klasse wird in einem eigenen Textfeld angezeigt. Klicken Sie zuerst auf den Pfeil im Kombinations Feld **Customers** , und wählen Sie **Details** aus. Ziehen Sie dann den Knoten auf den mittleren Teil der Entwurfs Oberfläche, damit der Designer weiß, dass er in der mittleren Zeile angezeigt werden soll. Wenn Sie ihn falsch angeben, können Sie die Zeile später in der XAML manuell angeben. Standardmäßig werden die Steuerelemente vertikal in einem Raster Element platziert, aber an diesem Punkt können Sie Sie im Formular anordnen. Beispielsweise kann es sinnvoll sein, das Textfeld **Name** oberhalb der Adresse zu platzieren. Die Beispielanwendung für diesen Artikel ordnet die Felder neu an und ordnet Sie in zwei Spalten an.
 
      ![Kundendaten Quellen Bindung an einzelne Steuerelemente](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -150,7 +150,7 @@ Es ist möglich, ihren eigenen Datenbindung-Code zu schreiben, aber es ist viel 
 
 Die von Visual Studio erstellte Standardanordnung ist für Ihre Anwendung nicht ideal. Deshalb stellen wir die endgültige XAML hier bereit, um Sie in Ihren Code zu kopieren. Sie benötigen auch einige "Formulare" (die tatsächlich Raster sind), damit der Benutzer einen neuen Kunden oder eine Bestellung hinzufügen kann. Um einen neuen Kunden und eine Bestellung hinzufügen zu können, benötigen Sie einen separaten Satz von Textfeldern, die nicht an die Daten gebunden sind `CollectionViewSource` . Sie steuern, welches Raster der Benutzer zu einem beliebigen Zeitpunkt sieht, indem Sie die Visible-Eigenschaft in den Handlermethoden festlegen. Schließlich fügen Sie jeder Zeile im Raster Orders eine Lösch Schaltfläche hinzu, um dem Benutzer zu ermöglichen, eine einzelne Bestellung zu löschen.
 
-Fügen Sie zunächst diese Stile dem- `Windows.Resources` Element in " *MainWindow. XAML* " hinzu:
+Fügen Sie zunächst diese Stile dem- `Windows.Resources` Element in " *MainWindow. XAML*" hinzu:
 
 ```xaml
 <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">
@@ -427,7 +427,7 @@ Fügen Sie diese Handlermethoden der MainWindow-Klasse in *MainWindow.XAML.cs* h
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-Drücken Sie **F5** , um mit dem Debuggen zu beginnen. Im Raster werden Kunden-und Bestelldaten angezeigt, und die Navigations Schaltflächen sollten erwartungsgemäß funktionieren. Klicken Sie auf **Commit** , um dem Modell einen neuen Kunden hinzuzufügen, nachdem Sie die Daten eingegeben haben. Klicken Sie auf " **Abbrechen** ", um ein neues Kunden-oder neues Bestellformular zu sichern, ohne die Daten zu speichern. Sie können Änderungen an vorhandenen Kunden und Aufträgen direkt in den Textfeldern vornehmen, und diese Änderungen werden automatisch in das Modell geschrieben.
+Drücken Sie **F5**, um mit dem Debuggen zu beginnen. Im Raster werden Kunden-und Bestelldaten angezeigt, und die Navigations Schaltflächen sollten erwartungsgemäß funktionieren. Klicken Sie auf **Commit** , um dem Modell einen neuen Kunden hinzuzufügen, nachdem Sie die Daten eingegeben haben. Klicken Sie auf " **Abbrechen** ", um ein neues Kunden-oder neues Bestellformular zu sichern, ohne die Daten zu speichern. Sie können Änderungen an vorhandenen Kunden und Aufträgen direkt in den Textfeldern vornehmen, und diese Änderungen werden automatisch in das Modell geschrieben.
 
 ## <a name="see-also"></a>Siehe auch
 

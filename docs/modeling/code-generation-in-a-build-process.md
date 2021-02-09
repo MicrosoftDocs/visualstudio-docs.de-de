@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, transforming by using msbuild
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a785bf0fc337d1934efe4f47adaac7efe7f1f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861802"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Aufrufen von Text Transformation im Buildprozess
 
@@ -301,7 +301,7 @@ Wenn Sie eine enthaltene Datei oder eine andere von der Vorlage gelesene Datei a
 
 - [Lauf Zeit Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md) werden zur Laufzeit in der Anwendung transformiert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 ::: moniker range="vs-2017"
 

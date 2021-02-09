@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 40a620023dad754e3de4fedb9bc4fdbe7b7835a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861230"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Vorgehensweise: Erstellen eines Produktmanifests
 Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie ein Bootstrapperpaket erstellen. Ein Bootstrapperpaket enthält eine einzelne Produkt Manifest-Datei, aber ein Paket Manifest für jedes Gebiets Schema. Das Paket Manifest enthält Lokalisierungs spezifische Aspekte des Pakets. Hierzu gehören Zeichen folgen, Endbenutzer-Lizenzverträge und Sprachpakete.
@@ -38,7 +38,7 @@ Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie 
 
 1. Erstellen Sie ein Verzeichnis für das Bootstrapperpaket. In diesem Beispiel wird c:\packageverwendet.
 
-2. Erstellen Sie in Visual Studio eine neue XML-Datei mit dem Namen *product.xml* , und speichern Sie Sie im Ordner *c:\Package* .
+2. Erstellen Sie in Visual Studio eine neue XML-Datei mit dem Namen *product.xml*, und speichern Sie Sie im Ordner *c:\Package* .
 
 3. Fügen Sie folgenden XML-Code hinzu, um den XML-Namespace und den Produktcode für das Paket zu beschreiben. Ersetzen Sie den Produktcode durch einen eindeutigen Bezeichner für das Paket.
 
@@ -66,7 +66,7 @@ Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie 
 
 6. Kopieren Sie die *CorePackage.msi* Datei, oder verschieben Sie Sie in den Ordner *c:\Package* .
 
-7. Fügen Sie XML hinzu, um das Paket mithilfe von Boots Trapper-Befehlen zu installieren. Der Boots Trapper fügt der *MSI* -Datei automatisch das Flag **/QN** hinzu, das im Hintergrund installiert wird. Wenn es sich bei der Datei um eine *exe* -Datei handelt, führt der Boots Trapper die *exe* -Datei mithilfe der Shell aus. Der folgende XML-Code zeigt keine Argumente für *CorePackage.msi* an, aber Sie können das Befehlszeilenargument in das- `Arguments` Attribut einfügen.
+7. Fügen Sie XML hinzu, um das Paket mithilfe von Boots Trapper-Befehlen zu installieren. Der Boots Trapper fügt der *MSI* -Datei automatisch das Flag **/QN** hinzu, das im Hintergrund installiert wird. Wenn es sich bei der Datei um eine *exe*-Datei handelt, führt der Boots Trapper die *exe* -Datei mithilfe der Shell aus. Der folgende XML-Code zeigt keine Argumente für *CorePackage.msi* an, aber Sie können das Befehlszeilenargument in das- `Arguments` Attribut einfügen.
 
     ```xml
     <Commands>

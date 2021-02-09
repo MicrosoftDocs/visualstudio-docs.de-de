@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861841"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können dem Benutzer im Diagramm und im sprach-Explorer angezeigt werden, und Sie können über Programmcode darauf zugreifen. Eigenschaften unterscheiden sich jedoch in der Art und Weise, in der ihre Werte gespeichert werden.
@@ -24,7 +24,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
 ## <a name="kinds-of-domain-properties"></a>Arten von Domänen Eigenschaften
  In der DSL-Definition können Sie die **Art** einer Domänen Eigenschaft festlegen, wie in der folgenden Tabelle aufgeführt:
 
-|Art der Domänen Eigenschaft|Beschreibung|
+|Art der Domänen Eigenschaft|BESCHREIBUNG|
 |-|-|
 |**Standard** (Standard)|Eine Domänen Eigenschaft, die im *Speicher* gespeichert und in eine Datei serialisiert wird.|
 |**Berechnet**|Eine schreibgeschützte Domänen Eigenschaft, die nicht im Speicher gespeichert wird, sondern aus anderen Werten berechnet wird.<br /><br /> Beispielsweise `Person.Age` könnte aus berechnet werden `Person.BirthDate` .<br /><br /> Sie müssen den Code bereitstellen, der die Berechnung ausführt. In der Regel berechnen Sie den Wert aus anderen Domänen Eigenschaften. Sie können jedoch auch externe Ressourcen verwenden.|
@@ -68,7 +68,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
     }  }
     ```
 
-8. Wenn Sie **Art** auf **benutzerdefinierten Speicher** festlegen, müssen Sie auch eine-Methode bereitstellen `Set` . Zum Beispiel:
+8. Wenn Sie **Art** auf **benutzerdefinierten Speicher** festlegen, müssen Sie auch eine-Methode bereitstellen `Set` . Beispiel:
 
     ```
     void SetAgeValue(int value)
@@ -92,7 +92,7 @@ Alle Domänen Eigenschaften in einer domänenspezifischen Sprache (DSL) können 
 
 - Allerdings sollten alle externen Ressourcen, z. b. Datenbank-oder Dateiinhalte, oder Objekte außerhalb des Stores aktualisiert werden. Dadurch wird sichergestellt, dass Sie synchron mit den Werten im Speicher aufbewahrt werden.
 
-  Zum Beispiel:
+  Beispiel:
 
 ```
 void SetAgeValue(int value)
@@ -109,7 +109,7 @@ void SetAgeValue(int value)
 
  Weitere Informationen zu Transaktionen finden Sie unter [navigieren und Aktualisieren eines Modells im Programm Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Eigenschaften von Domäneneigenschaften](../modeling/properties-of-domain-properties.md)

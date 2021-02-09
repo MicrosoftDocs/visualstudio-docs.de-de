@@ -6,19 +6,19 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c2aa1e49c0465fcf75917f0d9bd134962794c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861750"
 ---
 # <a name="code-maps-for-c-projects"></a>Code Maps für C++-Projekte
 
-Wenn Sie ausführlichere Code Maps für C++-Projekte erstellen möchten, aktivieren Sie für diese Projekte die Compileroption zum Durchsuchen von Informationen (**/FR**). Andernfalls werden Sie anhand einer Meldung aufgefordert, diese Option festzulegen. Bei Auswahl von **OK**wird die Option nur für die aktuelle Code Map festgelegt. Sie können angeben, dass die Meldung für alle späteren Code Maps ausgeblendet werden soll.
+Wenn Sie ausführlichere Code Maps für C++-Projekte erstellen möchten, aktivieren Sie für diese Projekte die Compileroption zum Durchsuchen von Informationen (**/FR**). Andernfalls werden Sie anhand einer Meldung aufgefordert, diese Option festzulegen. Bei Auswahl von **OK** wird die Option nur für die aktuelle Code Map festgelegt. Sie können angeben, dass die Meldung für alle späteren Code Maps ausgeblendet werden soll.
 
 Wenn Sie eine Projektmappe öffnen, die Visual C++-Projekte enthält, könnte die Aktualisierung der IntelliSense-Datenbank etwas Zeit beanspruchen. Während dieser Zeit sind Sie möglicherweise nicht in der Lage, Code Maps für Header Dateien (*. h* oder) zu erstellen, `#include` bis die Aktualisierung der IntelliSense-Datenbank abgeschlossen ist. Sie können den Status der Aktualisierung in der Statusleiste von Visual Studio überwachen.
 
@@ -26,7 +26,7 @@ Wenn Sie eine Projektmappe öffnen, die Visual C++-Projekte enthält, könnte di
 
    ![Abhängigkeitsdiagramm für nativen Code](../modeling/media/dependencygraphgeneral_nativecode.png)
 
-- Um Abhängigkeiten zwischen den aktuell geöffneten Datei und zugehörige Quelldateien und Headerdateien anzuzeigen, öffnen Sie die Quelldatei oder die Header-Datei. Öffnen Sie das Kontextmenü "Datei" an einer beliebigen Stelle in der Datei. Wählen Sie **Diagramm für Includedateien generieren**aus.
+- Um Abhängigkeiten zwischen den aktuell geöffneten Datei und zugehörige Quelldateien und Headerdateien anzuzeigen, öffnen Sie die Quelldatei oder die Header-Datei. Öffnen Sie das Kontextmenü "Datei" an einer beliebigen Stelle in der Datei. Wählen Sie **Diagramm für Includedateien generieren** aus.
 
    ![Abhängigkeitsdiagramm der ersten Ebene für H-Datei](../modeling/media/dependencygraph_native_firstlevel.png)
 
@@ -40,7 +40,7 @@ Diese Elemente werden für C- und C++-Code nicht unterstützt:
 
 Diese Probleme können auftreten, wenn Sie Code Maps für C-und C++-Code erstellen:
 
-|**Problem**|**Mögliche Ursache**|**Lösung**|
+|**Problem**|**Mögliche Ursache**|**Auflösung**|
 |-|-|-|
 |Fehler beim Generieren der Code Map.|Kein Projekt in der Projektmappe wurde erfolgreich erstellt.|Korrigieren Sie die aufgetretenen Buildfehler, und generieren Sie dann die Code Map erneut.|
 |Visual Studio reagiert nicht mehr, wenn Sie versuchen, eine Code Map über das Menü **Architektur** zu generieren.|Die Programmdatenbankdatei (.pdb) ist möglicherweise beschädigt.<br /><br /> In einer PDB-Datei werden Debuginformationen gespeichert, z. B. Typ, Methode und Quelldateiinformationen.|Erstellen Sie die Projektmappe neu, und versuchen Sie es dann erneut.|

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b5e3d8b8cf0b2c74a5b5a862539bbf3b201b4ffd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859436"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Arbeiten mit Daten in Visual Studio
 
@@ -78,7 +78,7 @@ Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integr
 
 ::: moniker range=">=vs-2019"
 
-Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio unter **Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für** Projekt Mappe verwalten). Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote im [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen oder zu Erweiterungen Erweiterungen **Extensions**  >  **Verwalten** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Viele Datenbankanbieter und Drittanbieter unterstützen die Visual Studio-Integration von nuget-Paketen. Sie können die Angebote auf nuget.org oder über den nuget-Paket-Manager in Visual Studio unter **Suchen (Extras**  >  **nuget-Paket-Manager**  >  **nuget-Pakete für** Projekt Mappe verwalten). Andere Daten Bankprodukte werden in Visual Studio als Erweiterung integriert. Sie können diese Angebote im [Visual Studio Marketplace](https://marketplace.visualstudio.com/) durchsuchen oder zu Erweiterungen Erweiterungen   >  **Verwalten** navigieren und dann im linken Bereich des Dialog Felds **Online** auswählen. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 

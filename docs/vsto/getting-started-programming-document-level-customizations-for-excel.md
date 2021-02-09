@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Excel projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: de5d7529e0bd8bc99eb4f375a31dab9ea9520234
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860723"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Einstieg in das Programmieren von Anpassungen auf Dokument Ebene für Excel
   Wenn Sie gerade erst mit dem Erstellen von Anpassungen auf Dokument Ebene für Microsoft Office Excel mithilfe von Visual Studio beginnen, müssen Sie Folgendes wissen.
@@ -66,7 +66,7 @@ ms.locfileid: "96846037"
 
  Eine Liste der Themen, die Sie durch einige der allgemeinen Aufgaben in Excel-Projekten führen, finden Sie unter [Allgemeine Aufgaben bei der Office-Programmierung](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
 - [Excel-Lösungen](../vsto/excel-solutions.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853151"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Erstellen eines grundlegenden Projekt Systems, Teil 2
 In der ersten exemplarischen Vorgehensweise dieser Reihe, der [Erstellung eines grundlegenden Projekt Systems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md), wird gezeigt, wie ein einfaches Projekt System erstellt wird. In dieser exemplarischen Vorgehensweise wird das grundlegende Projekt System durch Hinzufügen einer Visual Studio-Vorlage, einer Eigenschaften Seite und anderer Features erstellt. Sie müssen die erste Exemplarische Vorgehensweise durchlaufen, bevor Sie diese starten.
@@ -85,7 +85,7 @@ Mithilfe einer Visual Studio-Vorlage (*VSTEMPLATE* -Datei) anstelle einer grundl
     </VSTemplate>
     ```
 
-5. Wählen Sie im Fenster **Eigenschaften** alle fünf Dateien im Ordner *\\ templates\project\simpleproject \\* aus, und legen Sie die Buildaktion auf **zipproject** fest. **Build Action**
+5. Wählen Sie im Fenster **Eigenschaften** alle fünf Dateien im Ordner *\\ templates\project\simpleproject \\* aus, und legen Sie die Buildaktion auf **zipproject** fest. 
 
     ![Einfacher Projektordner](../extensibility/media/simpproj2.png "SimpProj2")
 
@@ -211,7 +211,7 @@ In diesem Abschnitt wird gezeigt, wie ein untergeordneter Konsolen Knoten für d
 
 1. Benennen Sie den Ordner *\\ templates\project\simpleproject \\* in *\\ templates\project\consoleapp \\* um.
 
-2. Wählen Sie im Fenster **Eigenschaften** alle fünf Dateien im Ordner *\\ templates\project\consoleapp \\* aus, und stellen Sie sicher, dass die Buildaktion auf **zipproject** festgelegt ist. **Build Action**
+2. Wählen Sie im Fenster **Eigenschaften** alle fünf Dateien im Ordner *\\ templates\project\consoleapp \\* aus, und stellen Sie sicher, dass die Buildaktion auf **zipproject** festgelegt ist. 
 
 3. Fügen Sie in der simpleproject. VSTEMPLATE-Datei am Ende des \<TemplateData> Abschnitts direkt vor dem schließenden-Tag die folgende Zeile hinzu.
 
@@ -281,7 +281,7 @@ Wenn Sie ein Projekt erstellen, indem Sie eine Visual Studio-Vorlage im Dialogfe
 
 - $safeprojectname $ ist der Name, der von einem Benutzer im Dialogfeld **Neues Projekt** bereitgestellt wird, um alle unsicheren Zeichen und Leerzeichen zu entfernen.
 
-  Eine umfassende Liste der Vorlagen Parameter finden Sie unter [Vorlagen Parameter](../ide/template-parameters.md).
+  Eine vollständige Liste der Vorlagenparameter finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).
 
 ### <a name="to-substitute-project-template-parameters"></a>So ersetzen Sie Projektvorlagen Parameter
 

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 721527b71e12b2c6143fa952d663cccc2786b34f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b9393c8e01cb304b6a89ac9b400f3efc29d8c056
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861911"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>API-Referenz für Modellierungs-SDK für Visual Studio
 
@@ -22,7 +22,7 @@ Das Visual Studio-SDK für Visualisierung und Modellierung bietet die Plattform,
 
 Dieser Abschnitt enthält Referenzmaterial für Namespaces, deren Namen mit "Microsoft. VisualStudio. Modeling" beginnen.
 
-|Namespace|Content|
+|Namespace|Inhalt|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|Klassen wie ModelElement, das die Basisklasse aller Domänen Klassen ist, die Sie in einer DSL definieren.|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|Klassen, die einen Teil einer DSL-Definition bilden.|
@@ -44,6 +44,6 @@ Dieser Abschnitt enthält Referenzmaterial für Namespaces, deren Namen mit "Mic
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Ermöglicht das Definieren von Kontextmenü Befehlen (Kontextmenü).|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Ermöglicht das Definieren von Validierungs Einschränkungen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)

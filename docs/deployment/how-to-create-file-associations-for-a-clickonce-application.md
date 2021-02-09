@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4b74e20d21ad2c67eed36add90051119c7b8b56e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861165"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Vorgehensweise: Erstellen von Dateizuordnungen für eine ClickOnce-Anwendung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können mit einer oder mehreren Dateinamen Erweiterungen verknüpft werden, sodass die Anwendung automatisch gestartet wird, wenn der Benutzer eine Datei dieser Typen öffnet. Das Hinzufügen von Unterstützung für Dateinamen Erweiterungen zu einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ist einfach.
@@ -56,6 +56,6 @@ ms.locfileid: "94350035"
     Weitere Informationen finden Sie unter [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="see-also"></a>Weitere Informationen
-- [\<fileAssociation> gewisses](../deployment/fileassociation-element-clickonce-application.md)
+- [\<fileAssociation>-Element](../deployment/fileassociation-element-clickonce-application.md)
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
