@@ -13,15 +13,15 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d8fce7cc0fdbba49e0e247a6a65336105e149b6d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 75dc5b2f3f207603320a773ebd71f5d6d3f81b8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918619"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Vorgehensweise: Installieren des Visual Studio-Tools für die weitervertreibbare Office-Laufzeit
   Die Visual Studio 2010-Tools für Office-Laufzeit muss auf jedem Computer installiert sein, auf dem Projektmappen ausgeführt werden, die mithilfe der Microsoft Office Developer Tools in erstellt wurden [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Die Laufzeit wird automatisch installiert, wenn Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und Microsoft Office installieren. Weitere Informationen finden Sie unter [Visual Studio-Tools for Office Runtime Installation Szenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
@@ -53,7 +53,7 @@ ms.locfileid: "96846531"
 
      Die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] enthält Sprachpakete. Wenn Sie für Windows andere Spracheinstellungen als Englisch festgelegt haben, können Sie Laufzeitmeldungen in der Sprache anzeigen, die Sie für Windows verwenden. Wenn Endbenutzer [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installieren und dann die Projektmappen auf Windows-Installationen ausführen, die andere Spracheinstellungen als Englisch verwenden, werden Laufzeitmeldungen entsprechend in derselben Sprache wie Windows angezeigt. In einigen Fällen benötigen Sie möglicherweise zusätzliche Language Packs. Beispielsweise können Sie weitere Sprachpakete benötigen, wenn in Ihrer Windows-Version mehr als eine Spracheinstellung verwendet wird, oder wenn Sie auf eine andere Sprache umstellen, nachdem Sie bereits installiert haben [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Sprachpakete finden Sie unter [Microsoft Visual Studio 2010 Tools für das Microsoft Office System (Version 4,0 Runtime) Language Pack](https://www.microsoft.com/download/details.aspx?id=54246).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

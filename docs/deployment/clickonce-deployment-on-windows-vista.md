@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccac1cd234a0f83810ff2596e1763209d95a8325
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918452"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>ClickOnce-Bereitstellung unter Windows Vista
 
@@ -36,9 +36,9 @@ Visual Studio bietet die folgenden Optionen für die Generierung von Manifesten:
 
    Dies ist die Standardeinstellung (es sei denn, Sie verwenden ClickOnce). Diese Einstellung unterstützt die übliche Art und Weise, in der Visual Studio unter Windows Vista funktioniert, mit der Generierung eines internen und eines externen Manifests mithilfe von `AsInvoker` .
 
-- Verwenden Sie ein externes Manifest. Generieren eines externen Manifests mithilfe von " *app. Manifest* ".
+- Verwenden Sie ein externes Manifest. Generieren eines externen Manifests mithilfe von " *app. Manifest*".
 
-   Dadurch wird nur das externe Manifest generiert, indem die Informationen in " *app. Manifest* " verwendet werden. Wenn Sie eine Anwendung mithilfe von ClickOnce oder Registration-Free com veröffentlichen, fügt Visual Studio dem Projekt die Datei " *app. Manifest* " hinzu und fügt diese Option hinzu.
+   Dadurch wird nur das externe Manifest generiert, indem die Informationen in " *app. Manifest*" verwendet werden. Wenn Sie eine Anwendung mithilfe von ClickOnce oder Registration-Free com veröffentlichen, fügt Visual Studio dem Projekt die Datei " *app. Manifest* " hinzu und fügt diese Option hinzu.
 
 - Verwenden Sie kein Manifest. Erstellen Sie die Anwendung ohne ein Manifest.
 
@@ -52,8 +52,8 @@ Visual Studio bietet die folgenden Optionen für die Generierung von Manifesten:
 
   * Weitere Informationen zum Konfigurieren von Visual Basic Projekten für die Generierung von Manifesten finden Sie unter [Seite "Anwendung", Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
-## <a name="see-also"></a>Siehe auch
-- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>Weitere Informationen
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Benutzerberechtigungen und Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

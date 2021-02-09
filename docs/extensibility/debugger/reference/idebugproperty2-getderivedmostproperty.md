@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2086aded4361049d722ec36ba1d470ed8f7ac6e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f91b00d2f448aea2f187e37813782ce568ad859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916045"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Ruft die abgeleitete Eigenschaft einer Eigenschaft ab.
@@ -28,13 +28,13 @@ Ruft die abgeleitete Eigenschaft einer Eigenschaft ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetDerivedMostProperty ( 
+HRESULT GetDerivedMostProperty ( 
    IDebugProperty2** ppDerivedMost
 );
 ```
 
 ```csharp
-int GetDerivedMostProperty ( 
+int GetDerivedMostProperty ( 
    out IDebugProperty2 ppDerivedMost
 );
 ```

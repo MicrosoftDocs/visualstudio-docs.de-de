@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50785a4f37b4f3e9e6eaae1bb2a58dcf206af672
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8bbd2fff30ab59d14c8aa2762d8cca942063bd79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361913"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918346"
 ---
 # <a name="properties-of-image-shapes"></a>Eigenschaften von Bildformen
 
@@ -45,9 +45,9 @@ Weitere Informationen finden Sie unter Vorgehens [Weise beim Definieren einer Do
 
 Bildformen verfügen über die Eigenschaften, die in der folgenden Tabelle aufgeführt sind.
 
-|Eigenschaft|BESCHREIBUNG|Standard|
+|Eigenschaft|Beschreibung|Standard|
 |-|-|-|
-|Füllfarbe|Die Füllfarbe dieser Form.|White|
+|Füllfarbe|Die Füllfarbe dieser Form.|Weiß|
 |Füllverlaufs Modus|Der Füllverlaufs Modus dieser Form.|Horizontal|
 |Hat Standard Verbindungspunkte|Wenn `True` , verwendet die Form die oberen, unteren, linken und rechten Verbindungspunkte im generierten Designer.|Falsch|
 |Umriss Farbe|Die Kontur Farbe dieser Form.|Schwarz|
@@ -63,7 +63,7 @@ Bildformen verfügen über die Eigenschaften, die in der folgenden Tabelle aufge
 |Name|Der Name dieser Form.|Aktueller Name|
 |Namespace|Der Namespace, der mit dieser Form verbunden ist.|Aktueller Namespace|
 |QuickInfo-Typ|Die Stelle, an der die QuickInfo definiert ist (Fixed, Variable oder None). Wenn Sie festgelegt ist, wird der Wert der `Fixed Tooltip Text` Eigenschaft als QuickInfo verwendet. wenn die Variable ist, wird die QuickInfo in benutzerdefiniertem Code definiert.|Keine|
-|Hinweise|Informelle Notizen, die dieser Form zugeordnet sind.|\<none>|
+|Notizen|Informelle Notizen, die dieser Form zugeordnet sind.|\<none>|
 |Anfängliche Höhe|Die Anfangshöhe dieser Form in Zoll.|1|
 |Anfängliche Breite|Die ursprüngliche Breite dieser Form in Zoll.|1.5|
 |Verfügbar gemachte Füllfarbe als Eigenschaft<br /><br /> Offen gelegter Füllverlaufs Modus<br /><br /> Verfügbar gemachte Umriss Farbe als Eigenschaft<br /><br /> Darstellung des Gliederungs Bindestrich Stils als Eigenschaft<br /><br /> Verfügbar gemachte Gliederungs Stärke als Eigenschaft<br /><br /> Macht Textfarbe verfügbar.|Wenn `True` der Wert ist, kann der Benutzer die angegebene Eigenschaft einer Form festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Form Definition, und **Klicken Sie auf** verfügbar machen|Falsch|
@@ -73,6 +73,6 @@ Bildformen verfügen über die Eigenschaften, die in der folgenden Tabelle aufge
 |Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Element verwendet wird.|\<none>|
 |Image|Der Pfad zur Bilddatei, die für diese Form verwendet wird.|\<none>|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

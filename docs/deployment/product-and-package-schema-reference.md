@@ -24,22 +24,22 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918369"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenz zum Produkt- und Paketschema
 Eine *Produktdatei* ist ein XML-Manifest, in dem alle externen Abhängigkeiten beschrieben werden, die von einer-Anwendung benötigt werden [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Beispiele für externe Abhängigkeiten sind der .NET Framework und die Microsoft Data Access Components (MDAC). Eine Paketdatei ähnelt einer Produktdatei, wird jedoch verwendet, um die Kultur abhängigen Komponenten einer Abhängigkeit zu installieren, z. b. lokalisierte Assemblys, Lizenzverträge und Dokumentation.
 
  Die Produkt-und Paketdatei besteht entweder aus einem-Element oder einem-Element der obersten Ebene `Product` `Package` , die jeweils die folgenden Elemente enthalten.
 
-|Element|BESCHREIBUNG|Attribute|
+|Element|Beschreibung|Attribute|
 |-------------|-----------------|----------------|
 |[\<Product>-Element](../deployment/product-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für Produktdateien.|Keine|
 |[\<Package>-Element](../deployment/package-element-bootstrapper.md)|Erforderliches Element der obersten Ebene für Paketdateien.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
