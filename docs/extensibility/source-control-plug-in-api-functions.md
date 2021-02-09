@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927937"
 ---
 # <a name="source-control-plug-in-api-functions"></a>API-Funktionen von Quellcodeverwaltungs-Plug-Ins
 Die Quellcodeverwaltungs-Plug-in-API bietet die folgenden Funktionen, die in Übereinstimmung mit dieser API vom Quellcodeverwaltungs-Plug-in implementiert werden müssen. Die Signaturen der einzelnen Funktionen und der Semantik, die den Bitflags und anderen Parametern zugeordnet sind, werden in dieser Referenz ausführlich beschrieben.

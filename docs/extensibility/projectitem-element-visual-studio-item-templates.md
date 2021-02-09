@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 201f6e7845f1294892836de4cca24195fb0f1596
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928236"
 ---
-# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem-Element (Visual Studio-Element Vorlagen)
+# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem-Element (Visual Studio-Projektelementvorlagen)
 Gibt eine Datei an, die in der Element Vorlage enthalten ist.
 
 > [!NOTE]
@@ -48,9 +48,9 @@ Gibt eine Datei an, die in der Element Vorlage enthalten ist.
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attribute
 
-| Attribut | Beschreibung |
+| attribute | Beschreibung |
 |---------------------| - |
 | `SubType` | Optionales Attribut.<br /><br /> Gibt den Untertyp eines Elements in einer Element Vorlage mit mehreren Dateien an. Dieser Wert wird verwendet, um den Editor zu bestimmen, der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Öffnen des Elements verwendet. |
 | `CustomTool` | Optionales Attribut.<br /><br /> Legt das CustomTool für das Element in der Projektdatei fest. |
@@ -72,7 +72,7 @@ Gibt eine Datei an, die in der Element Vorlage enthalten ist.
 
  Ein `string` , der den Namen einer Datei in der *ZIP* -Datei der Vorlage darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `ProjectItem` ist ein optionales untergeordnetes Element von `TemplateContent` .
 
  Das- `TargetFileName` Attribut kann zum Umbenennen von Dateien mit Parametern verwendet werden. Wenn z. b. die Datei " *MyFile. vb* " im Stammverzeichnis der *ZIP* -Datei der Vorlage vorhanden ist, Sie jedoch möchten, dass die Datei basierend auf dem Dateinamen, der vom Benutzer im Dialogfeld " **Neues Element hinzufügen** " angegeben wird, benannt wird, verwenden Sie den folgenden XML-Code:

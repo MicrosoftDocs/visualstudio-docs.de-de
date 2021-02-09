@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99aaf5070646bbbb95c6be98eb8ac2f7a5948ff2
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f62e3a4f33193f36e76b1286ae3d35d26706b3ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928093"
 ---
 # <a name="simplified-embedding"></a>Vereinfachtes Einbetten
 Vereinfachte Einbettungen werden in einem Editor aktiviert, wenn das Dokument Ansichts Objekt (d. h. ein untergeordnetes Element von) übergeordnet ist [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , und die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> Schnittstelle wird implementiert, um Ihre Fenster Befehle zu verarbeiten. Vereinfachte Einbettungs Editoren können keine aktiven Steuerelemente hosten Die Objekte, die zum Erstellen eines Editors mit vereinfachter Einbettung verwendet werden, sind in der folgenden Abbildung dargestellt.
@@ -29,7 +29,7 @@ Vereinfachte Einbettungen werden in einem Editor aktiviert, wenn das Dokument An
 
  Alle Schnittstellen, die zum Erstellen eines Editors mit vereinfachter Einbettung implementiert werden, sind im- `CYourEditorDocument` Objekt enthalten. Wenn Sie jedoch mehrere Sichten von Dokument Daten unterstützen möchten, teilen Sie die Schnittstellen auf separate Daten und Objekte anzeigen, wie in der folgenden Tabelle aufgeführt.
 
-|Schnittstelle|Speicherort der Schnittstelle|Verwendung|
+|Schnittstelle|Speicherort der Schnittstelle|Zweck|
 |---------------|---------------------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Sicht|Stellt eine Verbindung mit dem übergeordneten Fenster bereit.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Sicht|Behandelt Befehle.|

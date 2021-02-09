@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 778602cc29049d855c418fd8fa416feb1ad8e9fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f03bef276d4f4aada1a173c45defd100e4becbf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928690"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Diese Schnittstelle stellt die Anfangsposition einer Code Anweisung dar. Für die meisten Lauf Zeit Architekturen kann ein Code Kontext als Adresse im ausführungsstream eines Programms betrachtet werden.
@@ -25,7 +25,7 @@ Diese Schnittstelle stellt die Anfangsposition einer Code Anweisung dar. Für di
 ## <a name="syntax"></a>Syntax
 
 ```
-IDebugCodeContext2 : IDebugMemoryContext2
+IDebugCodeContext2 : IDebugMemoryContext2
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
@@ -37,7 +37,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden in der [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Ruft den Dokument Kontext ab, der dem aktiven Code Kontext entspricht.|
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Ruft die Sprachinformationen für diesen Code Kontext ab.|

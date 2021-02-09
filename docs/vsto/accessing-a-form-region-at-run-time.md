@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], accessing at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d0276405c023717c88f334d6231939d59f79ee4e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 62d8236b987afbb7dc9d5e4462b79ffb4fe00bc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928873"
 ---
 # <a name="access-a-form-region-at-run-time"></a>Zugreifen auf einen Formular Bereich zur Laufzeit
 
@@ -74,7 +74,7 @@ ms.locfileid: "96847415"
 
  Weitere Informationen zum Erstellen von Eigenschaften in Visual Basic finden Sie unter Vorgehens [Weise: Erstellen einer Eigenschaft (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Richtlinien zum Erstellen von Outlook-Formular Bereichen](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Gewusst wie: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

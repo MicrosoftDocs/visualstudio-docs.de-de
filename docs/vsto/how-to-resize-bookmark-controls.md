@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Bookmark control, resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 55fe398b277586404c91ef7cb172f7ce3a9c98ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927846"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Gewusst wie: Ändern der Größe von Bookmark-Steuerelementen
   Die Größe eines <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelements legen Sie fest, wenn Sie es einem Microsoft Office Word-Dokument hinzufügen. Sie können dessen Größe aber auch zu einem späteren Zeitpunkt ändern.

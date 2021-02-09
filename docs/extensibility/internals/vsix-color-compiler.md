@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e50cd1f1c8c3ff7f86cd00e4b384f548c7ec9d21
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929198"
 ---
 # <a name="vsix-color-compiler"></a>VSIX-Farbcompiler
 Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, die eine XML-Datei verwendet, die Farben für vorhandene Visual Studio-Designs darstellt, und Sie in eine pkgdef-Datei konvertiert, sodass diese Farben in Visual Studio verwendet werden können. Da es einfach ist, Unterschiede zwischen XML-Dateien zu vergleichen, ist dieses Tool nützlich, um benutzerdefinierte Farben in der Quell Code Verwaltung zu verwalten. Sie kann auch in Buildumgebungen eingebunden werden, sodass die Ausgabe des Builds eine gültige pkgdef-Datei ist.
@@ -107,7 +107,7 @@ Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, d
 
 |**Attribut**|**Definition**|
 |-|-|
-|Typ|Benötigten Der Typ der Farbe. Folgende Werte sind möglich:<br /><br /> *CT_INVALID:* Die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* Ein unformatierten ARGB-Wert.<br /><br /> *CT_COLORINDEX:* Verwenden Sie nicht.<br /><br /> *CT_SYSCOLOR:* Eine Windows-System Farbe aus syscolor.<br /><br /> *CT_VSCOLOR:* Eine Visual Studio-Farbe aus __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Die automatische Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* Verwenden Sie nicht.<br /><br /> *CT_TRACK_BACKGROUND:* Verwenden Sie nicht.|
+|type|Benötigten Der Typ der Farbe. Folgende Werte sind möglich:<br /><br /> *CT_INVALID:* Die Farbe ist ungültig oder nicht festgelegt.<br /><br /> *CT_RAW:* Ein unformatierten ARGB-Wert.<br /><br /> *CT_COLORINDEX:* Verwenden Sie nicht.<br /><br /> *CT_SYSCOLOR:* Eine Windows-System Farbe aus syscolor.<br /><br /> *CT_VSCOLOR:* Eine Visual Studio-Farbe aus __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Die automatische Farbe.<br /><br /> *CT_TRACK_FOREGROUND:* Verwenden Sie nicht.<br /><br /> *CT_TRACK_BACKGROUND:* Verwenden Sie nicht.|
 |`Source`|Benötigten Der Wert der in Hexadezimal Darstellung dargestellten Farbe.|
 
  Alle Werte, die von der __VSCOLORTYPE-Enumeration unterstützt werden, werden vom Schema im Type-Attribut unterstützt. Es wird jedoch empfohlen, nur CT_RAW und CT_SYSCOLOR zu verwenden.
@@ -135,7 +135,7 @@ Das Visual Studio-Erweiterungs Farben-Compilertool ist eine Konsolenanwendung, d
 
  **Argumente**
 
-|**SwitchName**|**Notizen**|**Erforderlich oder optional**|
+|**SwitchName**|**Hinweise**|**Erforderlich oder optional**|
 |-|-|-|
 |Unbenannte Datei (XML-Datei)|Dies ist der erste unbenannte Parameter und der Pfad zur XML-Datei, die konvertiert werden soll.|Erforderlich|
 |Unbenannte Datei (pkgdef-Datei)|Dies ist der zweite unbenannte Parameter und der Ausgabepfad für die generierte pkgdef-Datei.<br /><br /> Standard: \<XML Filename> . pkgdef|Optional|

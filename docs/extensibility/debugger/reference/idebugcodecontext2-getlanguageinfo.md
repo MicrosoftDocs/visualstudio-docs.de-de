@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 465cc07b3ca75835afe0737fb22ba403acc4098b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6719968d2e828340b16f84f3195f722803d8d9d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928730"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 Ruft die Sprachinformationen für diesen Code Kontext ab.
@@ -28,14 +28,14 @@ Ruft die Sprachinformationen für diesen Code Kontext ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetLanguageInfo( 
+HRESULT GetLanguageInfo( 
    BSTR* pbstrLanguage,
    GUID* pguidLanguage
 );
 ```
 
 ```csharp
-int GetLanguageInfo( 
+int GetLanguageInfo( 
    ref string pbstrLanguage,
    ref Guid pguidLanguage
 );
