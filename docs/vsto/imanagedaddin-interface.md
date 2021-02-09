@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920440"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin-Schnittstelle
   Implementieren Sie die IManagedAddin-Schnittstelle, um eine Komponente zu erstellen, die verwaltete VSTO-Add-ins lädt. Diese Schnittstelle wurde im 2007-Microsoft Office System hinzugefügt.
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. Die Anwendung ermittelt VSTO-Add-Ins, indem sie Einträge unter dem folgenden Registrierungsschlüssel sucht:
 
-    **HKEY_CURRENT_USER \software\microsoft\office \\ *\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     Jeder Eintrag unter diesem Registrierungsschlüssel entspricht einer eindeutigen ID des VSTO-Add-Ins. In der Regel ist dies der Name der VSTO-Add-In-Assembly.
 
 2. Die Anwendung sucht unter dem Eintrag für jedes VSTO-Add-In nach einem `Manifest` -Eintrag.
 
-    Verwaltete VSTO-Add-Ins können den vollständigen Pfad eines Manifests im `Manifest` Eintrag unter **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \Addins \\ _\<add-in ID>_ **speichern. Ein Manifest ist eine Datei (normalerweise eine XML-Datei), die Informationen zum Laden des VSTO-Add-Ins bereitstellt.
+    Verwaltete VSTO-Add-Ins können den vollständigen Pfad eines Manifests im `Manifest` Eintrag unter **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_** speichern. Ein Manifest ist eine Datei (normalerweise eine XML-Datei), die Informationen zum Laden des VSTO-Add-Ins bereitstellt.
 
 3. Wenn die Anwendung einen `Manifest` -Eintrag findet, versucht sie, eine Ladekomponenten für verwaltete VSTO-Add-Ins zu laden. Die Anwendung versucht, ein COM-Objekt zu erstellen, das die IManagedAddin-Schnittstelle implementiert.
 

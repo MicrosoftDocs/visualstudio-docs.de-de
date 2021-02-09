@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 15b212a8b7dde85e66b18b78d356bdb31c62836a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921896"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Aktualisieren von Outlook-Formular Bereichen bei der Migration zu .NET Framework 4,5
 

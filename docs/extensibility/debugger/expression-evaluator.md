@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8223e39eb804684fede50ceb2f7c859e198a272
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 4addc7b1f62c7528e845b34842c0fd85ba66148a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921395"
 ---
 # <a name="expression-evaluator"></a>Expression evaluator (Ausdrucksauswertung)
 Die Ausdrucks Auswertung (EE) untersuchen die Syntax einer Sprache, um Variablen und Ausdrücke zur Laufzeit zu analysieren und auszuwerten, sodass Sie vom Benutzer angezeigt werden können, wenn sich die IDE im unterbrechen Modus befindet.
@@ -42,5 +42,5 @@ Die Ausdrucks Auswertung (EE) untersuchen die Syntax einer Sprache, um Variablen
 ## <a name="implementation-notes"></a>Hinweise zur Implementierung
  Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debug-engines erwarten mit der Ausdrucks Auswertung mithilfe von CLR-Schnittstellen (Common Language Runtime). Daher muss eine Ausdrucks Auswertung, die mit debuggingmodulen arbeitet, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die CLR unterstützen (eine vollständige Liste aller CLR-Debugschnittstellen finden Sie in debugref.doc, die Teil von ist [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] ).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)

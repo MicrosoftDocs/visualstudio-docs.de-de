@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: e03c33de81727c333db8f662232e669e37e78f59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921756"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debuggen oder Deaktivieren von Projektcode im XAML-Designer
 
@@ -37,7 +37,7 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 
 1. Wählen Sie im Dialogfeld des Ausnahmefehlers den Link **Klicken Sie hier, um den Designer neu zu laden** aus.
 
-2. Wählen Sie in der Menü **Debug** Leiste  >  **Debuggen Debuggen starten** , um die Anwendung zu erstellen und auszuführen.
+2. Wählen Sie in der Menü Leiste  >  **Debuggen Debuggen starten** , um die Anwendung zu erstellen und auszuführen.
 
      Wenn die Anwendung erfolgreich erstellt wurde und ausgeführt wird, wird die Ausnahme zur Entwurfszeit ggf. durch Projektcode verursacht, der im Designer ausgeführt wird.
 
@@ -63,7 +63,7 @@ Wenn Projektcode deaktiviert ist, zeigt Visual Studio Platzhalter an. Visual Stu
 
      Dies ist der Prozess für den XAML-Designer in der ersten Instanz von Visual Studio.
 
-8. Klicken Sie in der ersten Instanz von Visual Studio auf der Menüleiste auf **Debug**  >  **Debuggen Debuggen starten** .
+8. Klicken Sie in der ersten Instanz von Visual Studio auf der Menüleiste auf   >  **Debuggen Debuggen starten**.
 
      Sie können den Code nun schrittweise durchlaufen, der im Designer ausgeführt wird.
 
@@ -98,6 +98,6 @@ Um die Anzeigeoptionen für Steuerelemente zu ändern, klicken Sie auf das Symbo
 
 Wenn Sie **Nur Plattformsteuerelemente anzeigen** auswählen, werden alle benutzerdefinierten Steuerelemente, die von SDKs, Kunden-Benutzersteuerelementen usw. stammen, nicht vollständig gerendert. Stattdessen werden sie durch Fallbacksteuerelemente ersetzt, um die Größe und Position des Steuerelements zu zeigen.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 
 - [Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio](designing-xaml-in-visual-studio.md)

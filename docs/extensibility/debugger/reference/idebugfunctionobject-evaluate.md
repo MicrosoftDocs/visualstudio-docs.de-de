@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 529a5f67c808efa258bc0cb9899f546dbb90d431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94285bc0ca36d4a55c3cd3a3483f6e20f6914271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920980"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 Ruft die-Funktion auf und gibt den resultierenden Wert als-Objekt zurück.
@@ -28,7 +28,7 @@ Ruft die-Funktion auf und gibt den resultierenden Wert als-Objekt zurück.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT Evaluate( 
+HRESULT Evaluate( 
    IDebugObject** ppParams,
    DWORD          dwParams,
    DWORD          dwTimeout,
