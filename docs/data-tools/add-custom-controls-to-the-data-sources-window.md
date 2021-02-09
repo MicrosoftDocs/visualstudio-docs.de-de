@@ -15,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+manager: jmartens
+ms.openlocfilehash: 5591dc9c3422918fa8f9c605105ea10c8fbc447d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867424"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 
@@ -40,7 +40,7 @@ Zum Hinzufügen oder Entfernen von Steuerelementen aus der Liste der verfügbare
 2. Klicken Sie im Fenster **Datenquellen** auf ein Element, das Teil einer Datenquelle ist, die Sie dem-Fenster hinzugefügt haben, und klicken Sie dann auf das Dropdown Menü für das Element.
 
    > [!TIP]
-   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es **View** , indem Sie  >  **andere Windows** -  >  **Datenquellen** anzeigen auswählen.
+   > Wenn das Fenster Datenquellen nicht geöffnet ist, öffnen Sie es , indem Sie  >  **andere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
 3. Klicken Sie im Dropdown Menü auf **Anpassen**. Eines der folgenden Dialogfelder wird geöffnet:
 
@@ -90,7 +90,7 @@ So fügen Sie der Liste der zugeordneten Steuerelemente Steuerelemente hinzu:
     > [!NOTE]
     > Nur Steuerelemente, die sich innerhalb der aktuellen Projekt Mappe oder in einer referenzierten Assembly befinden, können der Liste der zugeordneten Steuerelemente hinzugefügt werden. (Die Steuerelemente müssen auch eines der Daten Bindungs Attribute in der vorherigen Tabelle implementieren.) Zum Binden von Daten an ein benutzerdefiniertes Steuerelement, das im Datenquellen Fenster nicht verfügbar ist, ziehen Sie das Steuerelement aus der **Toolbox** auf die Entwurfs Oberfläche, und ziehen Sie dann das Element, an das die Bindung erfolgen soll, aus dem **Datenquellen** Fenster auf das Steuerelement.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Anpassungsoptionen für Daten Benutzeroberfläche (Dialogfeld)](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

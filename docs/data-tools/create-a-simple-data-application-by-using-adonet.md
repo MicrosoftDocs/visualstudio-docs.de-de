@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867190"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
@@ -88,9 +88,9 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 
 |Steuerelemente für das Navigationsformular|Eigenschaften|
 | - |----------------|
-|Taste|Name = btnGoToAdd|
-|Taste|Name = btnGoToFillOrCancel|
-|Taste|Name = btnExit|
+|Schaltfläche|Name = btnGoToAdd|
+|Schaltfläche|Name = btnGoToFillOrCancel|
+|Schaltfläche|Name = btnExit|
 
 **NewCustomer-Formular**
 
@@ -100,12 +100,12 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
-|Taste|Name = btnCreateAccount|
+|Schaltfläche|Name = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpOrderDate|
-|Taste|Name = btnPlaceOrder|
-|Taste|Name = btnAddAnotherAccount|
-|Taste|Name = btnAddFinish|
+|Schaltfläche|Name = btnPlaceOrder|
+|Schaltfläche|Name = btnAddAnotherAccount|
+|Schaltfläche|Name = btnAddFinish|
 
 **FillOrCancel-Formular**
 
@@ -114,20 +114,20 @@ Erstellen Sie die-Beispieldatenbank, indem Sie die folgenden Schritte ausführen
 |Steuerelemente für das FillOrCancel-Formular|Eigenschaften|
 | - |----------------|
 |TextBox|Name = txtOrderID|
-|Taste|Name = btnFindByOrderID|
+|Schaltfläche|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|
-|Taste|Name = btnCancelOrder|
-|Taste|Name = btnFillOrder|
-|Taste|Name = btnFinishUpdates|
+|Schaltfläche|Name = btnCancelOrder|
+|Schaltfläche|Name = btnFillOrder|
+|Schaltfläche|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Die Verbindungszeichenfolge speichern
 Wenn die Anwendung versucht, eine Verbindung zur Datenbank zu öffnen, muss die Anwendung Zugriff auf die Verbindungszeichenfolge haben. Um zu vermeiden, dass die Zeichenfolge manuell in jedes Formular eingegeben wird, speichern Sie die Zeichenfolge in der *App.config* -Datei im Projekt, und erstellen Sie eine Methode, die die Zeichenfolge zurückgibt, wenn die Methode von einem beliebigen Formular in der Anwendung aufgerufen wird.
 
-Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften** auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG** + **A** , **STRG** + **C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
+Sie finden die Verbindungs Zeichenfolge, indem Sie in **Server-Explorer** mit der rechten Maustaste auf die **Verkaufs** Datenverbindung klicken und **Eigenschaften** auswählen. Suchen Sie die **ConnectionString** -Eigenschaft, und verwenden Sie dann **STRG** + **A**, **STRG** + **C** , um die Zeichenfolge auszuwählen und in die Zwischenablage zu kopieren.
 
 1. Wenn Sie c# verwenden, erweitern Sie in **Projektmappen-Explorer** den Knoten **Eigenschaften** unter dem Projekt, und öffnen Sie dann die Datei **Settings. Settings** .
-    Wenn Sie Visual Basic verwenden, klicken Sie in **Projektmappen-Explorer** auf **alle Dateien anzeigen** , erweitern Sie den Knoten **mein Projekt** , und öffnen Sie dann die Datei **Settings. Settings** .
+    Wenn Sie Visual Basic verwenden, klicken Sie in **Projektmappen-Explorer** auf **alle Dateien anzeigen**, erweitern Sie den Knoten **mein Projekt** , und öffnen Sie dann die Datei **Settings. Settings** .
 
 2. Geben Sie in der Spalte **Name den Namen** ein `connString` .
 
@@ -233,7 +233,7 @@ Führen Sie die folgenden Schritte aus, um die Formular Logik von "fllorcancel" 
 
 ## <a name="test-your-application"></a>Testen Ihrer Anwendung
 
-Drücken Sie die **F5** -Taste, um die Anwendung zu erstellen und zu testen, nachdem Sie die einzelnen Click-Ereignishandler programmiert und die Programmierung beendet haben.
+Drücken Sie die **F5**-Taste, um die Anwendung zu erstellen und zu testen, nachdem Sie die einzelnen Click-Ereignishandler programmiert und die Programmierung beendet haben.
 
 ## <a name="see-also"></a>Siehe auch
 
