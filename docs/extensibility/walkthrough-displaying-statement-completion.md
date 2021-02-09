@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 95c797de1e68b275fa1a36ec8fa1f97f665cfd18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873917"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung
 Sie können die sprachbasierte Anweisungs Vervollständigung implementieren, indem Sie die Bezeichner definieren, für die Sie den Abschluss bereitstellen möchten, und dann eine Beendigungs Sitzung auslösen. Sie können die Anweisungs Vervollständigung im Kontext eines sprach diensdienstanbieter definieren, eine eigene Dateinamenerweiterung und einen Inhaltstyp definieren und dann den Abschluss nur für diesen Typ anzeigen. Oder Sie können den Abschluss für einen vorhandenen Inhaltstyp, z. –. "Klartext", auslassen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Anweisungs Vervollständigung für den Inhaltstyp "Klartext", der den Inhaltstyp von Textdateien darstellt, auslöst. Der Inhaltstyp "Text" ist der Vorgänger aller anderen Inhaltstypen, einschließlich Code-und XML-Dateien.

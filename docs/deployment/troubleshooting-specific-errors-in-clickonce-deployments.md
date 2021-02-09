@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4697aa4869535d63c522ae25c978dd89bfe51697
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876172"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung auftreten können, und es werden die Schritte zum Beheben der einzelnen Probleme beschrieben.
@@ -91,7 +91,7 @@ In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei d
  Um privatePath (Fusion-probingpfade) verwenden zu können, muss die Anwendung die Berechtigung "volle Vertrauenswürdigkeit" anfordern. Ändern Sie das Anwendungs Manifest, um volle Vertrauenswürdigkeit anzufordern, und wiederholen Sie dann den Vorgang.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Während der Deinstallation wird die Meldung "Fehler beim Deinstallieren der Anwendung" angezeigt.
- Diese Meldung gibt in der Regel an, dass die Anwendung bereits entfernt wurde oder dass der Speicher beschädigt ist. Nachdem Sie auf " **OK** " geklickt haben, wird der Eintrag " **Programm hinzufügen/entfernen** " entfernt.
+ Diese Meldung gibt in der Regel an, dass die Anwendung bereits entfernt wurde oder dass der Speicher beschädigt ist. Nachdem Sie auf " **OK**" geklickt haben, wird der Eintrag " **Programm hinzufügen/entfernen** " entfernt.
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Während der Installation wird eine Meldung angezeigt, die besagt, dass die Platt Form Abhängigkeiten nicht installiert sind.
  Im globalen Assemblycache (GAC) fehlt eine Voraussetzung, die die Anwendung benötigt, um ausgeführt zu werden.
@@ -139,6 +139,6 @@ In diesem Artikel werden die folgenden allgemeinen Fehler aufgelistet, die bei d
 | Die Anwendung ist zu groß, um in teilweiser Vertrauenswürdigkeit online auszuführen. Wenden Sie sich an den Hersteller der Anwendung oder an den Systemadministrator. | Eine Anwendung, die mit teilweiser Vertrauenswürdigkeit ausgeführt wird, darf nicht größer als die Hälfte der Größe des Online Anwendungs Kontingents sein, das standardmäßig 250 MB beträgt. |
 
 ## <a name="see-also"></a>Weitere Informationen
-- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
 - [Problembehandlung für Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

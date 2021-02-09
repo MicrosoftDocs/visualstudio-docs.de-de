@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91d9cac6b695ba2a0d34da776fa79ba62ba2e015
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7283d8a2996d5ab4dfc52cde446170e7632c27c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876081"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 Erstellt einen Enumerator für die von dieser Klasse implementierten Schnittstellen.
@@ -28,7 +28,7 @@ Erstellt einen Enumerator für die von dieser Klasse implementierten Schnittstel
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT EnumInterfacesImplemented( 
+HRESULT EnumInterfacesImplemented( 
    IEnumDebugFields** ppEnum
 );
 ```

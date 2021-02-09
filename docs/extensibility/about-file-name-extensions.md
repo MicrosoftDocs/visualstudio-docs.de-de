@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ef0c942e88c10b4f814dc103702edc08229fb9b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c3f938eb31c06e1e88af21b058b4475bc192d49c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874408"
 ---
 # <a name="about-file-name-extensions"></a>Informationen zu Dateinamen Erweiterungen
 Wenn Sie eine Dateierweiterung eines VSPackage registrieren, ordnen Sie es einer Version von zu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Dies ist wichtig, wenn auf einem Computer mehr als eine Version von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installiert ist.
@@ -37,6 +37,6 @@ HKEY_CLASSES_ROOT\
 
  In bestimmten Fällen sollte die mit einer Dateierweiterung verknüpfte ProgID nicht geändert werden. Beispielsweise ist die ProgID für die *. htm* -Dateierweiterung (ProgID = HTMLFILE) an mehreren Stellen im Betriebssystem hart codiert und in der Zuordnung zu *htm* -und *HTML* -Dateien allgemein bekannt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Registrieren von Dateinamen Erweiterungen für parallele bereit Stellungen](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Angeben von Datei Handlern für Dateinamen Erweiterungen](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

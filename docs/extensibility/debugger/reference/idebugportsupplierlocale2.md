@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d59f46bdde06addf5454700eb45e64c3b452d78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874282"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 Stellt Gebiets Schema Unterstützung für einen Port Lieferanten bereit.
@@ -30,9 +30,9 @@ IDebugPortSupplierLocale2 : IUnknown
  Ein benutzerdefinierter Port Lieferant implementiert diese Schnittstelle, um das Gebiets Schema festzulegen.
 
 ## <a name="methods"></a>Methoden
- In der folgenden Tabelle sind die Methoden von **IDebugPortSupplierLocale2**aufgeführt.
+ In der folgenden Tabelle sind die Methoden von **IDebugPortSupplierLocale2** aufgeführt.
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Legt das Gebiets Schema für den Port Lieferanten fest.|
 

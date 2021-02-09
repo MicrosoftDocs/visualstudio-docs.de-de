@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: fc6c05b925c8dac5c488ce3eea79ca683b590b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876419"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Entwerfen mithilfe von XAML in Visual Studio und Blend für Visual Studio
 
 Visual Studio und Blend für Visual Studio sind visuelle Tools zum Erstellen ansprechender Benutzeroberflächen und Rich-Media-Umgebungen mit XAML für eine Vielzahl von App-Typen. Beide integrierten Entwicklungsumgebungen (IDE) teilen sich eine Reihe von Funktionen, wie z.B. einen visuellen XAML-Editor (Designer). Blend für Visual Studio, das die WPF-und UWP-Plattformen unterstützt, stellt zusätzliche Tools zum Entwerfen von visuellen Zuständen und zum Erstellen von Animationen bereit.
 
-Sie können zwischen Visual Studio und Blend für Visual Studio wechseln. Sie können sogar in beiden IDEs dasselbe Projekt geöffnet haben. Änderungen an XAML-Dateien in einer IDE lassen sich beim Wechsel zur anderen IDE automatisch neu laden. Sie können das Neuladen Verhalten **Steuern, indem Sie**  >  **Options**  >  **Environment**  >  in beiden IDE zu Extras Optionen Umgebungs **Dokumente** navigieren.
+Sie können zwischen Visual Studio und Blend für Visual Studio wechseln. Sie können sogar in beiden IDEs dasselbe Projekt geöffnet haben. Änderungen an XAML-Dateien in einer IDE lassen sich beim Wechsel zur anderen IDE automatisch neu laden. Sie können das Neuladen Verhalten **Steuern, indem Sie**  >    >    >  in beiden IDE zu Extras Optionen Umgebungs **Dokumente** navigieren.
 
 ## <a name="installation"></a>Installation
 
@@ -44,7 +44,7 @@ Für die meisten grundlegenden Entwicklungsaufgaben teilen sich Visual Studio un
 
 - **Debuggen:** Sie können in [Visual Studio](inspect-xaml-properties-while-debugging.md) Debuggen und [Blend für Visual Studio](../xaml-tools/debug-xaml-in-blend.md). Hierzu gehören auch das Festlegen von Haltepunkten im Code zum Debuggen einer laufenden app und das Verwenden von [Hot Upload](../xaml-tools/xaml-hot-reload.md) zum Ändern des XAML-Codes, während die app ausgeführt wird. Für ein einheitliches Debugerlebnis in Visual Studio beinhaltet Blend für Visual Studio die meisten der Debugfenster und -symbolleisten von Visual Studio.
 
-- **Datei neu laden:** Sie können Ihre XAML-Dateien entweder in Visual Studio oder Blend für Visual Studio bearbeiten. Bearbeitete Dateien, die gespeichert wurden, werden automatisch neu geladen, wenn Sie zwischen den IDES wechseln. Sie können das Neuladen Verhalten **Steuern, indem Sie**  >  **Options**  >  **Environment**  >  in beiden IDE zu Extras Optionen Umgebungs **Dokumente** navigieren.
+- **Datei neu laden:** Sie können Ihre XAML-Dateien entweder in Visual Studio oder Blend für Visual Studio bearbeiten. Bearbeitete Dateien, die gespeichert wurden, werden automatisch neu geladen, wenn Sie zwischen den IDES wechseln. Sie können das Neuladen Verhalten **Steuern, indem Sie**  >    >    >  in beiden IDE zu Extras Optionen Umgebungs **Dokumente** navigieren.
 
 - **Synchronisierte Layouts und Einstellungen:** Entwurfs Anpassungs Tool Fensterlayouts und Einstellungen Einstellungen für Visual Studio oder Blend für Visual Studio werden auf Ihren Geräten und Versionen synchronisiert, wenn Sie sich mit demselben Personalisierungs Konto anmelden. Weitere Informationen finden Sie unter[Synchronisieren von Visual Studio-Einstellungen auf mehreren Computern](../ide/synchronized-settings-in-visual-studio.md).
 
@@ -62,7 +62,7 @@ Verwenden Sie Blend für Visual Studio für die folgenden Aufgaben, um Ihre Prod
 
 Informationen zu erweiterten XAML-Designs finden Sie unter [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über XAML](xaml-overview.md)
 - [Übersicht über Blend für Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876315"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Vorgehensweise: Angeben einer Support-URL für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung kann eine Reihe von Voraussetzungen testen, die auf dem Client Computer verfügbar sein müssen, damit die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ausgeführt werden kann. Zu diesen Abhängigkeiten gehören die erforderliche Mindestversion des .NET Framework, die Version des Betriebssystems und alle Assemblys, die im globalen Assemblycache (Global Assembly Cache, GAC) vorinstalliert werden müssen. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]kann jedoch keine dieser erforderlichen Komponenten installieren. Wenn eine Voraussetzung nicht gefunden wird, wird die Installation einfach angehalten, und es wird ein Dialogfeld angezeigt, in dem die Gründe für die Installation
@@ -67,7 +67,7 @@ Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitste
      </dependency>
    ```
 
-5. Optional. Öffnen Sie für Anwendungen, die auf die .NET Framework 4 abzielen, das Bereitstellungs Manifest (die *Anwendungs* Datei) für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung in einem Text-Editor.
+5. Dies ist optional. Öffnen Sie für Anwendungen, die auf die .NET Framework 4 abzielen, das Bereitstellungs Manifest (die *Anwendungs* Datei) für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung in einem Text-Editor.
 
 6. Fügen Sie für eine .NET Framework 4-Voraussetzung das-Attribut dem- `supportUrl` `compatibleFrameworks` Element hinzu:
 
@@ -86,6 +86,6 @@ Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitste
 ## <a name="see-also"></a>Weitere Informationen
 - [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks> gewisses](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks>-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)

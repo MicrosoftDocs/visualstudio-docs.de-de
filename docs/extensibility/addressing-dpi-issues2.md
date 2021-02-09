@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876159"
 ---
 # <a name="address-dpi-issues"></a>Behandeln von dpi-Problemen
 Eine zunehmende Anzahl von Geräten wird mit "hochauflösende" Bildschirmen ausgeliefert. Diese Bildschirme verfügen in der Regel über 200 Pixel pro Zoll (PPI). Beim Arbeiten mit einer Anwendung auf diesen Computern müssen Inhalte zentral hochskaliert werden, um den Anforderungen der Anzeige des Inhalts in der normalen Anzeige Entfernung für das Gerät gerecht zu werden. Ab 2014 ist das primäre Ziel für die Anzeige mit hoher Dichte Mobile Computergeräte (Tablets, Clamshell-Laptops und Telefone).

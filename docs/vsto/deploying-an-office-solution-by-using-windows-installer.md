@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875418"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Stellen Sie eine Office-Projekt Mappe mithilfe Windows Installer
 
@@ -312,14 +312,14 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
 | Office-Version<br /><br /> | InstallShield-Konfigurationspfad<br /><br /> |
 |----------------------------| - |
 | 32 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Installationsprogramme pro Computer basierend auf der Windows-Version**
 
 | Windows-Version<br /><br /> | InstallShield-Konfigurationspfad<br /><br /> |
 |-----------------------------| - |
 | 32 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64-Bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 Bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Für ein Installationsprogramm für 64-Bit-Windows sind zwei Registrierungs Pfade erforderlich, da es Benutzern möglich ist, 32-Bit-und 64-Bit-Versionen von Office auf einem Computer auszuführen, auf dem 64-Bit-Windows ausgeführt wird.
@@ -504,7 +504,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 
    Nachdem der Build abgeschlossen wurde, können Sie die *setup.exe* -Datei des Projekts **officeaddinsetup** am folgenden Speicherort suchen: <em>officeaddinsetupprojectroot</em>**\officeaddinsetup\express \\ \singleimage\diskimages\disk1**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Office-Lösungs Voraussetzungen für die Bereitstellung](/previous-versions/bb608617(v=vs.110))
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)

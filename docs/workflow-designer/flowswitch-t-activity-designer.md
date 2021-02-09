@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eff69f1da5d2bc8c5f397b0cc6d21492a0a8d20
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6f61dd3f14ba527e9f5be0e009825902e683fb1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435794"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876562"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T>-Aktivitätsdesigner
 
@@ -32,7 +32,7 @@ Die- <xref:System.Activities.Statements.FlowSwitch%601> Aktivität enthält eine
 
 ### <a name="using-the-flowswitcht-activity-designer"></a>Verwenden des FlowSwitch- \<T> Aktivitäts Designers
 
-Der **FlowSwitch \<T>** -Aktivitäts Designer befindet sich in der Kategorie **Flussdiagramm** der **Toolbox** , auf die Sie zugreifen können, indem Sie auf der linken Seite der Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X** drücken.
+Der **FlowSwitch \<T>** -Aktivitäts Designer befindet sich in der Kategorie **Flussdiagramm** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf der linken Seite der Workflow-Designer auf die Registerkarte **Toolbox** klicken. Sie können auch im Menü **Ansicht** die Option **Toolbox** auswählen oder **STRG** + **alt** + **X** drücken.
 
 Der **FlowSwitch \<T>** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer Oberfläche innerhalb eines **Flowchart** -Aktivitäts Designers abgelegt werden. Verwenden Sie das Fenster **Typen auswählen** , das angezeigt wird, um den Typ (der durch den generischen Parameter des Codes verknüpft ist) anzugeben, der <xref:System.Activities.Statements.FlowSwitch%601> aus der Auswertung von abgerufen wurde <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> . Diese Prozedur erstellt eine- <xref:System.Activities.Statements.FlowSwitch%601> Aktivität mit der Bezeichnung **Switch** innerhalb der- <xref:System.Activities.Statements.Flowchart> Aktivität. Der-Wert <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> kann im Feld **Ausdruck** des Fensters **Eigenschaften** eingegeben werden, indem Sie auf die Stelle klicken, an der der Hinweis Text "VB-Ausdruck eingeben" lautet.
 
@@ -42,13 +42,13 @@ Bewegen Sie den Mauszeiger über den **FlowSwitch \<T>** -Aktivitäts Designer, 
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.FlowSwitch%601>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder in der Designeroberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Wahr|Gibt den Ausdruck an, der ausgewertet wird, um zu bestimmen, zu welchem der <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>-Fälle im Ausführungspfad gewechselt werden soll.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|FALSE|Gibt eine eindeutige Zuordnung von möglichen Ergebnissen an, die durch die Auswertung von <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> für einen Satz von <xref:System.Activities.Statements.FlowNode>-Objekten ermittelt wurden.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Wahr|Gibt die Zuordnung an, wenn das Auswertungsergebnis von <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> mit keinem der Werte übereinstimmt, die im <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>-Objekt enthalten sind.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Richtig|Gibt den Ausdruck an, der ausgewertet wird, um zu bestimmen, zu welchem der <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>-Fälle im Ausführungspfad gewechselt werden soll.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|Falsch|Gibt eine eindeutige Zuordnung von möglichen Ergebnissen an, die durch die Auswertung von <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> für einen Satz von <xref:System.Activities.Statements.FlowNode>-Objekten ermittelt wurden.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Richtig|Gibt die Zuordnung an, wenn das Auswertungsergebnis von <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> mit keinem der Werte übereinstimmt, die im <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>-Objekt enthalten sind.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Flussdiagramm](../workflow-designer/flowchart-activity-designers.md)
 - [Flussdiagramm](../workflow-designer/flowchart-activity-designer.md)

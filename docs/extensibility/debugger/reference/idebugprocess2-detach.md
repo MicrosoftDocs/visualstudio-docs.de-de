@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6418a7f628eef4e00ea0555c07122555eb6d600c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874086"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Trennt den Debugger von diesem Prozess, indem alle Programme im Prozess getrennt werden.
@@ -28,8 +28,8 @@ Trennt den Debugger von diesem Prozess, indem alle Programme im Prozess getrennt
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT Detach( 
-   void 
+HRESULT Detach( 
+   void 
 );
 ```
 
