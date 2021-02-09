@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527984"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888692"
 ---
 # <a name="ribbon-object-model-overview"></a>Übersicht über das Ribbon-Objektmodell
   Der stellt [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ein stark typisiertes Objektmodell zur Verfügung, mit dem Sie die Eigenschaften von Menü Band Steuerelementen zur Laufzeit erhalten und festlegen können. Beispielsweise können neue Menüsteuerelemente dynamisch ausgefüllt oder Steuerelemente kontextbezogen angezeigt und ausgeblendet werden. Zudem besteht die Möglichkeit, einem Menüband Registerkarten, Gruppen und Steuerelemente hinzuzufügen. Dies muss jedoch vor dem Laden des Menübands durch die Office-Anwendung erfolgen. Weitere Informationen finden [Sie unter Festlegen von Eigenschaften, die](#SettingReadOnlyProperties)schreibgeschützt werden.
@@ -36,7 +36,7 @@ ms.locfileid: "97527984"
 ## <a name="ribbon-events"></a><a name="RibbonEvents"></a> Menü Band Ereignisse
  Die Menü **Band** Klasse enthält die folgenden drei Ereignisse:
 
-|Ereignis|BESCHREIBUNG|
+|event|Beschreibung|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Wird ausgelöst, wenn die Office-Anwendung die Menü Band Anpassung lädt. Der <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> Ereignishandler wird der Menüband-Codedatei automatisch hinzugefügt. Führen Sie beim Laden des Menübands mithilfe dieses Ereignishandlers benutzerdefinierten Code aus.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Ermöglicht das Zwischenspeichern von Bildern in der Menü Band Anpassung beim Laden des Menübands. Sie können einen geringfügigen Leistungsgewinn erzielen, wenn Sie Code schreiben, um die Menüband-Bilder in diesem Ereignishandler zwischenzuspeichern. Weitere Informationen finden Sie unter <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
@@ -54,10 +54,10 @@ ms.locfileid: "97527984"
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
-|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
+|**Dropdown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**Galerie**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
-|**Gruppieren**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
+|**Gruppe**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menü**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Trennzeichen**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
@@ -170,9 +170,9 @@ ms.locfileid: "97527984"
 ## <a name="ribbon-control-events"></a>Menü Band Steuerungs Ereignisse
  Jede Steuerelementklasse beinhaltet mindestens ein Ereignis. In der folgenden Tabelle werden diese Ereignisse beschrieben.
 
-|Ereignis|BESCHREIBUNG|
+|event|Beschreibung|
 |-----------|-----------------|
-|Klicken Sie im Menüband auf|Tritt beim Klicken auf ein Steuerelement auf.|
+|Klicken|Tritt beim Klicken auf ein Steuerelement auf.|
 |TextChanged|Tritt beim Ändern des Texts in einem Bearbeitungs- oder Kombinationsfeld auf.|
 |ItemsLoading|Tritt auf, wenn die Items-Auflistung des-Steuer Elements von Office angefordert wird. Office speichert die Items-Auflistung zwischen, bis der Code die Eigenschaften des Steuer Elements ändert oder die-Methode aufgerufen wird <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> .|
 |ButtonClick|Tritt beim Klicken auf eine Schaltfläche in <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> oder <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> auf.|
@@ -181,7 +181,7 @@ ms.locfileid: "97527984"
 
  Die Ereignishandler für diese Ereignisse besitzen die folgenden zwei Parameter.
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |*sen*|Ein <xref:System.Object>, das das Steuerelement darstellt, durch das das Ereignis ausgelöst wurde.|
 |*e*|Ein <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>, das ein <xref:Microsoft.Office.Core.IRibbonControl> enthält. Greifen Sie mithilfe dieses Steuerelements auf eine beliebige Eigenschaft zu, die im von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellten Menüband-Objektmodell nicht verfügbar ist.|

@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7379038d1c2bf203f7787e69408ddd9b2e30f372
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 9554cad786669ae4aa3b9aa84ecd6b996ee196f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888471"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für die Bereitstellung durch Dritte
 Nicht alle Entwickler, die ClickOnce-bereit Stellungen erstellen, planen, die Anwendungen selbst bereitzustellen. Viele von Ihnen Verpacken einfach Ihre Anwendung mithilfe von ClickOnce und übergeben die Dateien dann an einen Kunden, z. b. ein großes Unternehmen. Der Kunde ist der Verantwortliche, der für das Hosting der Anwendung im Netzwerk zuständig ist. In diesem Thema werden einige der Probleme erläutert, die in Versionen des .NET Framework vor Version 3,5 in solchen bereit Stellungen auftreten. Anschließend wird eine neue Lösung beschrieben, die mit dem neuen Feature "Manifest für Vertrauensstellung verwenden" in der .NET Framework 3,5 bereitgestellt wird. Schließlich schließt er mit empfohlenen Strategien zum Erstellen von ClickOnce-bereit Stellungen für Kunden, die weiterhin ältere Versionen des .NET Framework verwenden.
@@ -52,7 +52,7 @@ Nicht alle Entwickler, die ClickOnce-bereit Stellungen erstellen, planen, die An
  Selbst wenn der Entwickler und der Kunde der Meinung sind, dass der Kunde das Anwendungs Manifest Signieren soll, lösen Sie dadurch andere Probleme aus, die die Identität der Anwendung umschließen, insbesondere, da Sie für die Bereitstellung vertrauenswürdiger Anwendungen gilt. (Weitere Informationen zu dieser Funktion finden Sie unter [Übersicht über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).) Beispielsweise möchte Adventure Works seine Client Computer so konfigurieren, dass jede von der Microsoft Corporation bereitgestellte Anwendung mit voller Vertrauenswürdigkeit ausgeführt wird. Wenn Adventure Works das Bereitstellungs Manifest signiert, verwendet ClickOnce die Sicherheits Signatur von Adventure work, um die Vertrauens Ebene der Anwendung zu bestimmen.
 
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Erstellen von Kunden Bereitstellungen mithilfe des Anwendungs Manifests für die Vertrauensstellung
- ClickOnce im .NET Framework 3,5 enthält ein neues Feature, das Entwicklern und Kunden eine neue Lösung für das Szenario bietet, in dem die Manifeste signiert werden sollen. Das ClickOnce-Anwendungs Manifest unterstützt ein neues Element mit dem Namen `<useManifestForTrust>` , das es Entwicklern ermöglicht, anzugeben, dass die digitale Signatur des Anwendungs Manifests zum Treffen von Vertrauens Entscheidungen verwendet werden soll. Der Entwickler verwendet ClickOnce-pakettools – z. b. *Mage.exe* , *MageUI.exe* und Visual Studio –, um dieses Element in das Anwendungs Manifest aufzunehmen, sowie den Verleger Namen und den Namen der Anwendung in das Manifest einzubetten.
+ ClickOnce im .NET Framework 3,5 enthält ein neues Feature, das Entwicklern und Kunden eine neue Lösung für das Szenario bietet, in dem die Manifeste signiert werden sollen. Das ClickOnce-Anwendungs Manifest unterstützt ein neues Element mit dem Namen `<useManifestForTrust>` , das es Entwicklern ermöglicht, anzugeben, dass die digitale Signatur des Anwendungs Manifests zum Treffen von Vertrauens Entscheidungen verwendet werden soll. Der Entwickler verwendet ClickOnce-pakettools – z. b. *Mage.exe*, *MageUI.exe* und Visual Studio –, um dieses Element in das Anwendungs Manifest aufzunehmen, sowie den Verleger Namen und den Namen der Anwendung in das Manifest einzubetten.
 
  Bei Verwendung `<useManifestForTrust>` von muss das Bereitstellungs Manifest nicht mit einem Authenticode-Zertifikat signiert werden, das von einer Zertifizierungsstelle ausgestellt wurde. Stattdessen kann Sie mit einem selbst signierten Zertifikat signiert werden. Ein selbst signiertes Zertifikat wird vom Kunden oder dem Entwickler mithilfe der Standard-.NET Framework SDK-Tools generiert und dann mithilfe der standardmäßigen ClickOnce-Bereitstellungs Tools auf das Bereitstellungs Manifest angewendet. Weitere Informationen finden Sie unter [Makecert](/windows/desktop/SecCrypto/makecert).
 
@@ -99,7 +99,7 @@ Nicht alle Entwickler, die ClickOnce-bereit Stellungen erstellen, planen, die An
 
  Der Nachteil dieser Methode besteht darin, dass der Kunde die .NET Framework SDK-Tools installieren und einen Entwickler oder Systemadministrator verwenden muss, der für die Verwendung durch den Entwickler zuständig ist. Einige Kunden benötigen möglicherweise eine Lösung, bei der nur wenig oder gar kein technischer Aufwand erforderlich ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Bereitstellen von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die keine erneute Signierung erfordert und Brandinginformationen beibehält](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
