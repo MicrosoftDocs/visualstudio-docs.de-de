@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2849b815c38555be6b149544bb9d9953fe85ec4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894399"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange-Steuerelement
   Das- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement ist ein Bereich, der nur erstellt wird, wenn ein nicht wiederholtes Schema Element einer Zelle in Microsoft Office Excel zugeordnet wird. Dies ist beispielsweise der Fall, wenn das- `maxOccurs` Attribut eines Schema Elements 1 ist. Nachdem der von Visual Studio zugeordnete XML-Bereich erstellt wurde, können Sie ihn direkt programmieren, ohne das Excel-Objektmodell durchlaufen zu müssen. Sie können ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Steuerelement nur in Excel löschen, wenn die Element Zuordnung entfernt wird.

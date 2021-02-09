@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c322e320e193acd25a011cc85173c1c80e2d29d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: ebdc1dc529e73e17ba55a0b4766f11dced4addcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893645"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Projektkonfiguration für die Verwaltung der Bereitstellung
 Die Bereitstellung ist das physische Verschieben der Ausgabe Elemente aus einem Buildprozess an den erwarteten Speicherort zum Debuggen und installieren. Beispielsweise könnte eine Webanwendung auf einem lokalen Computer erstellt und dann auf dem Server platziert werden.

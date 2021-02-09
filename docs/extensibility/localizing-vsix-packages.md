@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: d55acd30a0ea5381e9b14cf10c952c5626922c22
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893606"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 
@@ -59,7 +59,7 @@ Wenn Sie eine vsixlangpack-Datei erstellen, müssen Sie die- `Include in Vsix` E
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
 
 Das folgende Beispiel zeigt relevante Teile einer Datei *Erweiterung. vsixmanifest* . Die Datei enthält auch die entsprechende Datei *Erweiterung. vsixlangpack* für Spanisch. Die Werte aus dem Language Pack ersetzen die Werte aus dem Manifest, wenn das Visual Studio-Gebiets Schema des Ziel Computers auf Spanisch festgelegt ist.
 
@@ -103,7 +103,7 @@ Das folgende Beispiel zeigt relevante Teile einer Datei *Erweiterung. vsixmanife
 
 ## <a name="see-also"></a>Siehe auch
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[VSIX-Sprachpaket Schema 2,0 Referenz](vsix-language-pack-schema-2-0-reference.md)|Ein VSIX-Sprachpaket beschreibt die Lokalisierungs Informationen einer VSIX-Bereitstellungs Datei.|
 |[Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)|Beschreibt die Struktur und den Inhalt eines VSIX-Pakets.|

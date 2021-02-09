@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c18b73b22d1ce4d4b2a7720d3d80081b4e2c075c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893398"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Exemplarische Vorgehensweise: Hinzufügen von Funktionen zu einem benutzerdefinierten Editor
 Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm weitere Funktionen hinzufügen.
@@ -53,7 +53,7 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
         > [!NOTE]
         > Ruft `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> , um einen Zeiger auf zu erhalten `IVsFileChangeEx` .
 
-7. Koordinieren Sie Dokument Bearbeitungs Ereignisse mit der Quell Code Verwaltung. Führen Sie die folgenden Schritte aus:
+7. Koordinieren Sie Dokument Bearbeitungs Ereignisse mit der Quell Code Verwaltung. Folgen Sie diesen Schritten:
 
     1. Rufen Sie einen Zeiger auf auf, `IVsQueryEditQuerySave2` indem Sie `QueryService` für aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -65,13 +65,13 @@ Nachdem Sie einen benutzerdefinierten Editor erstellt haben, können Sie ihm wei
 
          Diese Methode fordert den Benutzer auf, die Datei zu speichern, wenn Sie nicht gespeichert wurde, oder wenn Sie sich seit der letzten Speicherung geändert hat.
 
-8. Aktivieren Sie das Fenster **Eigenschaften** , um Eigenschaften für Text anzuzeigen, der im Editor ausgewählt ist. Führen Sie die folgenden Schritte aus:
+8. Aktivieren Sie das Fenster **Eigenschaften** , um Eigenschaften für Text anzuzeigen, der im Editor ausgewählt ist. Folgen Sie diesen Schritten:
 
     1. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>Jedes Mal, wenn die Textauswahl geändert wird, wird die Implementierung von übergeben <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .
 
     2. Rufen Sie `QueryService` für <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> den Dienst auf, um einen Zeiger auf zu erhalten <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Ermöglicht Benutzern das ziehen und Ablegen von Elementen zwischen dem Editor und der **Toolbox** oder zwischen externen Editoren (z. b. Microsoft Word) und der **Toolbox**. Führen Sie die folgenden Schritte aus:
+9. Ermöglicht Benutzern das ziehen und Ablegen von Elementen zwischen dem Editor und der **Toolbox** oder zwischen externen Editoren (z. b. Microsoft Word) und der **Toolbox**. Folgen Sie diesen Schritten:
 
     1. Implementieren Sie `IDropTarget` im Editor, um die IDE zu warnen, dass der Editor ein Ablage Ziel ist.
 

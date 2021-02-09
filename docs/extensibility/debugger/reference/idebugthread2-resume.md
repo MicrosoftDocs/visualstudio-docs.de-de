@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3899dea7c33946588de4308f42b948ede703361a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6156becc782adb054af37cf24efd64915729149c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893723"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Nimmt die Ausführung eines Threads wieder auf.
@@ -28,13 +28,13 @@ Nimmt die Ausführung eines Threads wieder auf.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT Resume ( 
+HRESULT Resume ( 
    DWORD *pdwSuspendCount
 );
 ```
 
 ```csharp
-int Resume ( 
+int Resume ( 
    out uint pdwSuspendCount
 );
 ```

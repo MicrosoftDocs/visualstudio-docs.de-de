@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505b0c0b05fa0f14578d770abec6c43ed6b80b01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6e42111ca0c8b357a7f8841511cf935694a30b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893060"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 Diese Schnittstelle stellt die Informationen dar, die erforderlich sind, um beliebige Haltepunkt Typen zu erstellen und zu binden. Es handelt sich um eine Erweiterung von [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).
@@ -37,7 +37,7 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den von [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)geerbten Methoden macht die- `IDebugBreakpointRequest3` Schnittstelle die folgende Methode verfügbar.
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Ruft die Haltepunkt-Anforderungs Informationen ab, die diese breakpointanforderung beschreiben.|
 

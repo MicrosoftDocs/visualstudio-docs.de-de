@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71da1241863e41529af33bdd5e45dcf0a8bfbdb1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6d718178bf7490d29c0668d892add4c302b8925a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893632"
 ---
 # <a name="include-element"></a>Include-Element
 Das Include-Element gibt eine Datei an, die sich im angegebenen Includepfad befinden kann, damit Sie in die aktuelle Datei eingefügt werden kann.  Alle definierten Symbole und Typen werden Teil des kompilierten Ergebnisses.
@@ -36,20 +36,20 @@ Das Include-Element gibt eine Datei an, die sich im angegebenen Includepfad befi
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |href|Erforderlich. Der Pfad zur Header Datei:<br /><br /> href = "stdidcmd. h"|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
-|Keine.|Keine.|
+|Keine.|Keine|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Commandtable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen – d. h. Menü Elemente, Menüs, Symbolleisten und Kombinations Felder –, die ein VSPackage für die IDE bereitstellt.|
 

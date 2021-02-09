@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e2285706f2d15c5497a83d27c95cd613191e0fe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893970"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Bereitstellen von COM-Komponenten mit ClickOnce
 Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe. Komponenten müssen global registriert werden und können daher unerwünschte Nebeneffekte zwischen überlappenden Anwendungen verursachen. Diese Situation ist in .NET Framework Anwendungen in der Regel kein Problem, da Komponenten vollständig für eine Anwendung isoliert sind oder nebeneinander kompatibel sind. Mit Visual Studio können Sie isolierte COM-Komponenten auf dem Betriebssystem Windows XP oder höher bereitstellen.
@@ -37,7 +37,7 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 ## <a name="registration-free-com"></a>COM ohne Registrierung
  Com (com) ist eine neue Technologie für die Bereitstellung und Aktivierung isolierter COM-Komponenten. Dabei werden die Typbibliothek-und Registrierungsinformationen aller Komponenten, die in der Regel in der Systemregistrierung installiert werden, in eine XML-Datei, die als Manifest bezeichnet wird, in demselben Ordner wie die Anwendung gespeichert.
 
- Das Isolieren einer COM-Komponente erfordert, dass Sie auf dem Computer des Entwicklers registriert ist, aber nicht auf dem Computer des Endbenutzers registriert werden muss. Um eine COM-Komponente zu isolieren, müssen Sie lediglich die **isolierte** Eigenschaft des Verweises auf " **true** " festlegen. Standardmäßig ist diese Eigenschaft auf **false** festgelegt, was darauf hinweist, dass Sie als registrierter com-Verweis behandelt werden soll. Wenn diese Eigenschaft auf **true** gesetzt ist, wird zum Zeitpunkt der Erstellung ein Manifest für diese Komponente generiert. Außerdem bewirkt dies, dass die entsprechenden Dateien während der Installation in den Anwendungsordner kopiert werden.
+ Das Isolieren einer COM-Komponente erfordert, dass Sie auf dem Computer des Entwicklers registriert ist, aber nicht auf dem Computer des Endbenutzers registriert werden muss. Um eine COM-Komponente zu isolieren, müssen Sie lediglich die **isolierte** Eigenschaft des Verweises auf " **true**" festlegen. Standardmäßig ist diese Eigenschaft auf **false** festgelegt, was darauf hinweist, dass Sie als registrierter com-Verweis behandelt werden soll. Wenn diese Eigenschaft auf **true** gesetzt ist, wird zum Zeitpunkt der Erstellung ein Manifest für diese Komponente generiert. Außerdem bewirkt dies, dass die entsprechenden Dateien während der Installation in den Anwendungsordner kopiert werden.
 
  Wenn der Manifest-Generator auf einen isolierten COM-Verweis stößt, listet er alle `CoClass` Einträge in der Typbibliothek der Komponente auf, wobei jeder Eintrag mit den entsprechenden Registrierungsdaten abgeglichen und Manifest-Definitionen für alle COM-Klassen in der Typbibliotheks Datei erzeugt werden.
 
@@ -97,7 +97,7 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
     Ein **VB6Hello** -Verweis wird in der Verweis Liste angezeigt.
 
-6. Zeigen Sie auf die **Toolbox** , wählen Sie ein **Schalt** Flächen-Steuerelement aus, und ziehen Sie es in das Formular **Form1** .
+6. Zeigen Sie auf die **Toolbox**, wählen Sie ein **Schalt** Flächen-Steuerelement aus, und ziehen Sie es in das Formular **Form1** .
 
 7. Legen Sie im Fenster **Eigenschaften** die **Text** -Eigenschaft der Schaltfläche auf **Hello** fest.
 
@@ -139,7 +139,7 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
 2. Geben Sie im Veröffentlichungs-Assistenten einen Speicherort auf dem Datenträger des lokalen Computers an, auf den Sie zugreifen und die veröffentlichten Dateien untersuchen können.
 
-3. Klicken Sie auf **Fertig stellen** , um die Anwendung zu veröffentlichen.
+3. Klicken Sie auf **Fertig stellen**, um die Anwendung zu veröffentlichen.
 
    Wenn Sie die veröffentlichten Dateien untersuchen, werden Sie feststellen, dass die Datei "sysmon. ocx" enthalten ist. Das-Steuerelement ist vollständig für diese Anwendung isoliert, was bedeutet, dass die Anwendung nicht beeinträchtigt werden kann, wenn der Computer des Endbenutzers eine andere Anwendung verwendet, die eine andere Version des-Steuer Elements verwendet.
 
@@ -173,5 +173,5 @@ Die Bereitstellung von Legacy-COM-Komponenten war bisher eine schwierige Aufgabe
 
   Es gibt verschiedene Szenarien, in denen die com-Registrierung auf dem Computer des Entwicklers erforderlich ist, auch wenn die Bereitstellung der Anwendung keine Registrierung erfordert. Die- `Isolated` Eigenschaft erfordert, dass die COM-Komponente auf dem Computer des Entwicklers registriert wird, um das Manifest während des Builds automatisch zu generieren. Es gibt keine Registrierungs Erfassungs Funktionen, die die Selbstregistrierung während des Builds aufrufen. Außerdem werden alle Klassen, die nicht explizit in der Typbibliothek definiert sind, im Manifest nicht berücksichtigt. Wenn eine COM-Komponente mit einem bereits vorhandenen Manifest verwendet wird, z. b. ein nativer Verweis, muss die Komponente möglicherweise nicht zur Entwicklungszeit registriert werden. Die Registrierung ist jedoch erforderlich, wenn es sich bei der Komponente um ein ActiveX-Steuerelement handelt und Sie Sie in die **Toolbox** und den Windows Forms-Designer einschließen möchten.
 
-## <a name="see-also"></a>Siehe auch
-- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>Weitere Informationen
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)

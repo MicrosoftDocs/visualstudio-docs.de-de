@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892826"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Mit dieser Methode wird ein Prozess mithilfe der Debug-Engine (de) gestartet.
@@ -28,7 +28,7 @@ Mit dieser Methode wird ein Prozess mithilfe der Debug-Engine (de) gestartet.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT LaunchSuspended ( 
+HRESULT LaunchSuspended ( 
    LPCOLESTR             pszMachine,
    IDebugPort2*          pPort,
    LPCOLESTR             pszExe,
