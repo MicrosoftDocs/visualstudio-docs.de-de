@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853084"
 ---
 # <a name="creating-a-custom-start-page"></a>Erstellen einer benutzerdefinierten Start Seite
 
@@ -77,7 +77,7 @@ Legen Sie die primäre Instanz von Visual Studio nicht so fest, dass die benutze
 
 3. Geben Sie an einer Visual Studio-Eingabeaufforderung **devenv/rootsuffix Exp** ein, um eine experimentelle Instanz von Visual Studio zu öffnen.
 
-4. Wechseln Sie in der experimentellen Instanz zur Seite **Tools** Extras  >  **Optionen**  >  **Umgebung**  >  **Start** , und wählen Sie die XAML-Datei aus der Dropdown Liste **Start Seite anpassen** aus.
+4. Wechseln Sie in der experimentellen Instanz zur Seite Extras  >  **Optionen**  >  **Umgebung**  >  **Start** , und wählen Sie die XAML-Datei aus der Dropdown Liste **Start Seite anpassen** aus.
 
 5. Klicken Sie im Menü **Ansicht** auf **Startseite**.
 
@@ -87,7 +87,7 @@ Legen Sie die primäre Instanz von Visual Studio nicht so fest, dass die benutze
 
 - Nachdem Sie die Startseite getestet und als stabil festgestellt haben, verwenden Sie im Dialogfeld **Optionen** die Option **Startseite anpassen** , um Sie in der primären Instanz von Visual Studio als Startseite auszuwählen.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Start Seite](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [Hinzufügen eines Benutzer Steuer Elements zur Start Seite](../extensibility/adding-user-control-to-the-start-page.md)

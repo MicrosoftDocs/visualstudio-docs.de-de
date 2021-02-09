@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860040"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
@@ -310,7 +310,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 Weitere Informationen finden Sie unter [Aktivieren der Erstellung von Codemetriken im Legacy Modus](https://github.com/dotnet/roslyn-analyzers/pull/1841).
 
-### <a name="previous-versions"></a>Vorherige Versionen
+### <a name="previous-versions"></a>Frühere Versionen
 
 ::: moniker range=">=vs-2019"
 Visual Studio 2015 enthielt ein befehlszeilencodemetriktool, das auch als *Metrics.exe* bezeichnet wurde. Diese vorherige Version des Tools hat eine binäre Analyse, d. h. eine assemblybasierte Analyse, durchgeführt. Die neuere Version des *Metrics.exe* Tools analysiert stattdessen Quellcode. Da es sich bei dem neueren *Metrics.exe* Tool um Quell Code basiert handelt, können sich die Metrikergebnisse der Befehlszeilen Code von der Visual Studio-IDE und früheren Versionen von *Metrics.exe* unterscheiden. Ab Visual Studio 2019 analysiert die Visual Studio-IDE Quellcode wie das Befehlszeilen Tool, und die Ergebnisse müssen identisch sein.

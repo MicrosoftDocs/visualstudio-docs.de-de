@@ -11,21 +11,21 @@ helpviewer_keywords:
 - full solution analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9690e50ccbe927702ef1b3e7e99545c07cdced41
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7a6a7253d4104fbcde09b96b86f5f83a864677cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860398"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>Konfigurieren der Live Code Analyse für .net
 
 Visual Studio führt eine Reihe von Live-Code Analysen aus, die auch als *Hintergrundanalyse* bezeichnet werden, während Sie Quelldateien im Editor bearbeiten. Einige davon sind minimal Analysen für eine akzeptable Visual Studio-IDE-Bearbeitungsumgebung. Einige davon sind für eine verbesserte Reaktionsfähigkeit von IDE-Features vorgesehen. Ein Teil davon besteht darin, zusätzliche IDE-Funktionen wie Diagnose-und Code Korrekturen von Roslyn-Analyzern zu aktivieren. Basierend auf der-Funktionalität können diese Analysen wie folgt gruppiert werden:
 
-- **Hintergrund Berechnung der Diagnose** : Analyse zum Berechnen von Fehlern, Warnungen und Vorschlägen in den Quelldateien. Diese Diagnosen werden als Einträge in der Fehlerliste und als Wellenlinien im Editor angezeigt. Sie können in zwei Kategorien eingeteilt werden:
+- **Hintergrund Berechnung der Diagnose**: Analyse zum Berechnen von Fehlern, Warnungen und Vorschlägen in den Quelldateien. Diese Diagnosen werden als Einträge in der Fehlerliste und als Wellenlinien im Editor angezeigt. Sie können in zwei Kategorien eingeteilt werden:
   - C#-und Visual Basic-Compilerdiagnose
   - Roslyn Analyzer-Diagnose, die Folgendes umfasst:
 
@@ -33,7 +33,7 @@ Visual Studio führt eine Reihe von Live-Code Analysen aus, die auch als *Hinter
     - Integrierte ZS-Analysen für Code Qualitäts Vorschläge
     - Drittanbieter-Analyzer-Pakete, die für Projekte in der aktuellen Projekt Mappe [installiert](./install-roslyn-analyzers.md) werden.
 
-- **Weitere Hintergrundanalysen** : Analyse zur Verbesserung der Reaktionsfähigkeit und Visual Studio-Interaktion für IDE-Features. Beispiele für derartige Analysen:
+- **Weitere Hintergrundanalysen**: Analyse zur Verbesserung der Reaktionsfähigkeit und Visual Studio-Interaktion für IDE-Features. Beispiele für derartige Analysen:
   - Hintergrundverarbeitung von geöffneten Dateien.
   - Hintergrund Kompilierung von Projekten mit geöffneten Dateien zum Erkennen von Symbolen, um die Reaktionsfähigkeit bestimmter IDE-Features zu verbessern.
   - Die Syntax und Symbol Caches werden aufgebaut.
@@ -53,9 +53,9 @@ Der Standardbereich jeder Hintergrundanalyse wurde optimiert, um die optimale Be
 
 Ab Visual Studio 2019 Version 16,5 können Benutzer den Umfang der gesamten Live-Code Analyse, einschließlich der Diagnose Berechnung, für c#-und Visual Basic-Projekte explizit anpassen. Folgende Analysebereiche sind verfügbar:
 
-- **Aktuelles Dokument** : minimiert den Gültigkeitsbereich der Live-Code Analyse, sodass er nur für die aktuelle oder sichtbare Datei im Editor ausgeführt wird.
-- **Geöffnete Dokumente** : Standard-Live Code Analysebereich, wie im obigen Abschnitt beschrieben.
-- **Gesamte Lösung** : maximiert den Gültigkeitsbereich für die Live-Code Analyse, der für alle Dateien und Projekte in der gesamten Projekt Mappe ausgeführt werden soll.
+- **Aktuelles Dokument**: minimiert den Gültigkeitsbereich der Live-Code Analyse, sodass er nur für die aktuelle oder sichtbare Datei im Editor ausgeführt wird.
+- **Geöffnete Dokumente**: Standard-Live Code Analysebereich, wie im obigen Abschnitt beschrieben.
+- **Gesamte Lösung**: maximiert den Gültigkeitsbereich für die Live-Code Analyse, der für alle Dateien und Projekte in der gesamten Projekt Mappe ausgeführt werden soll.
 
 Sie können einen der oben genannten benutzerdefinierten Analysebereiche im Dialogfeld Extras Optionen auswählen, indem Sie die folgenden Schritte ausführen:
 
@@ -68,7 +68,7 @@ Sie können einen der oben genannten benutzerdefinierten Analysebereiche im Dial
 ![Analysebereich.](./media/background-analysis-scope.png)
 
 > [!NOTE]
-> Vor Visual Studio 2019 Version 16,5 können Benutzer den Analysebereich für die Diagnose Berechnung an die gesamte Projekt Mappe anpassen, indem Sie das Kontrollkästchen **vollständige projektmappenanalyse aktivieren** **unter Extras**  >  **Optionen**  >  **Text-Editor**  >  **c#** oder **einfache**  >  Registerkarte " **erweitert** " verwenden. Es gibt keine Unterstützung für das Minimieren des Bereichs der Hintergrundanalyse in früheren Visual Studio-Versionen.
+> Vor Visual Studio 2019 Version 16,5 können Benutzer den Analysebereich für die Diagnose Berechnung an die gesamte Projekt Mappe anpassen, indem Sie das Kontrollkästchen **vollständige projektmappenanalyse aktivieren** **unter Extras**  >  **Optionen**  >  **Text-Editor**  >  **c#** oder **einfache**  >  Registerkarte "**erweitert** " verwenden. Es gibt keine Unterstützung für das Minimieren des Bereichs der Hintergrundanalyse in früheren Visual Studio-Versionen.
 
 ## <a name="automatically-minimize-live-code-analysis-scope"></a>Live Code Analysebereich automatisch minimieren
 

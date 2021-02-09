@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d46ed89880c41cbcaa6982c386e2ff8f115f8de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860112"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Gewusst wie: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 
@@ -37,7 +37,7 @@ Nachdem Sie eine Eincheck Richtlinie für verwalteten Code angegeben haben, kön
 
 ## <a name="to-open-the-check-in-policy-editor"></a>So öffnen Sie den Editor für Check-in-Richtlinien
 
-1. Klicken Sie in Team Explorer mit der rechten Maustaste auf den Projektnamen, zeigen Sie auf **Projekteinstellungen** , und klicken Sie dann auf **Quell** Code Verwaltung.
+1. Klicken Sie in Team Explorer mit der rechten Maustaste auf den Projektnamen, zeigen Sie auf **Projekteinstellungen**, und klicken Sie dann auf **Quell** Code Verwaltung.
 
 1. Wählen Sie im Dialogfeld **Quell** Code Verwaltung die Registerkarte **Check-in-Richtlinie** aus.
 
@@ -51,7 +51,7 @@ Nachdem Sie eine Eincheck Richtlinie für verwalteten Code angegeben haben, kön
 
 Aktivieren oder deaktivieren Sie die folgenden Optionen:
 
-|Option|BESCHREIBUNG|
+|Option|Beschreibung|
 |------------|-----------------|
 |**Erzwingen Sie den Eincheck Vorgang, sodass nur Dateien enthalten sind, die Teil der aktuellen Projekt Mappe sind.**|Die Code Analyse kann nur für Dateien ausgeführt werden, die in den Projektmappen-und Projekt Konfigurationsdateien Diese Richtlinie stellt sicher, dass der gesamte Code, der Teil einer Lösung ist, analysiert wird.|
 |**C/C++-Code Analyse erzwingen (/analyze)**|Erfordert, dass alle C-oder C++-Projekte mit der/analyze-Compileroption erstellt werden, um die Code Analyse auszuführen, bevor Sie eingeglichen werden können.|

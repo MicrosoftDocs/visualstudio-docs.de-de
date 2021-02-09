@@ -10,15 +10,15 @@ helpviewer_keywords:
 - datasets, configuring
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f625b17841fe63b0c42dcfb82c2e859d6406e776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859124"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Gewusst wie: Erstellen und Konfigurieren von Datasets in Visual Studio
 
@@ -86,11 +86,11 @@ In diesem Verfahren wird gezeigt, wie Sie eine Tabelle aus derselben Datenbank h
 
 2. Ziehen Sie eine <xref:System.Data.DataTable> Klasse von der Registerkarte **DataSet** der **Toolbox** auf den **DataSet-Designer**.
 
-3. Fügen Sie Spalten hinzu, um die Datentabelle zu definieren. Klicken Sie mit der rechten Maustaste auf die Tabelle, und wählen Sie Spalte **Hinzufügen**  >  **Column** Verwenden Sie das Fenster **Eigenschaften** , um den Datentyp der Spalte und ggf. einen Schlüssel festzulegen.
+3. Fügen Sie Spalten hinzu, um die Datentabelle zu definieren. Klicken Sie mit der rechten Maustaste auf die Tabelle, und wählen Sie Spalte **Hinzufügen**  >   Verwenden Sie das Fenster **Eigenschaften** , um den Datentyp der Spalte und ggf. einen Schlüssel festzulegen.
 
 Eigenständige Tabellen müssen `Fill` Logik in eigenständigen Tabellen implementieren, damit Sie Sie mit Daten füllen können. Informationen zum Auffüllen von eigenständigen Datentabellen finden Sie unter Auffüllen [eines Datasets aus einem DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Beziehungen in DataSets](../data-tools/relationships-in-datasets.md)

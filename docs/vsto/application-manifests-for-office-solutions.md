@@ -11,22 +11,22 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5a16d0f438d06cbfa48538bb3e370ed9b334ad16
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b3fbea6df2b66a108a048332e28a623bdaa95786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839027"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Anwendungs Manifeste für Office-Lösungen
   Ein Anwendungsmanifest ist eine XML-Datei, die die Assemblys beschreibt, die in einer Microsoft Office-Projektmappe geladen werden. Die Microsoft Office Entwicklungs Tools in Visual Studio verwenden das [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Schema des Anwendungs Manifests, das in der [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md) -Referenz definiert ist.
 
  Anwendungsmanifeste für Office-Projektmappen verwenden die folgenden [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Elemente und -Attribute.
 
-|Element|BESCHREIBUNG|Attributes|
+|Element|BESCHREIBUNG|Attribute|
 |-------------|-----------------|----------------|
 |[&#60;Assembly&#62; Element &#40;ClickOnce-Anwendung&#41;](../deployment/assembly-element-clickonce-deployment.md)|Erforderlich. Ein Element der obersten Ebene.|**manifestVersion**|
 |[&#60;assemblyIdentity-&#62; Element &#40;ClickOnce-Anwendung&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Erforderlich. Gibt die primäre Assembly der [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Anwendung an.|**name**<br /><br /> **version**<br /><br /> **PublicKeyToken**<br /><br /> **ProcessorArchitecture**<br /><br /> **language**|
@@ -69,7 +69,7 @@ ms.locfileid: "96847922"
 </addIn>
 ```
 
-|Element|BESCHREIBUNG|Attributes|
+|Element|BESCHREIBUNG|Attribute|
 |-------------|-----------------|----------------|
 |[&#60;customhostspezifiziertes&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/customhostspecified-element-office-development-in-visual-studio.md)|Erforderlich. Markiert das Manifest ausdrücklich als Office-Projektmappe.|Keine|
 |[&#60;Add-&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|Erforderlich. Speichert Einstiegspunkte in einem einzelnen Namespace.|Keine|
@@ -102,7 +102,7 @@ ms.locfileid: "96847922"
 
  `OutlookAddIn1.dll.manifest`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)

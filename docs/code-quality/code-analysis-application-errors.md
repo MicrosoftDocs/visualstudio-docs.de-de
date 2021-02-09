@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0f5c217e8d043d0363b66a63c84c78829f640065
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860580"
 ---
 # <a name="code-analysis-application-errors"></a>Anwendungsfehler bei der Codeanalyse
 
@@ -41,12 +41,12 @@ Dieser Abschnitt ist ein Verweis auf die Fehlermeldungen, die vom Tool für die 
 |[CA0058](ca0058.md)|Referenzierte Assemblys können nicht geladen werden.|
 |[CA0059](ca0059.md)|Fehler beim Wechseln der Befehlszeile.|
 |[CA0060](ca0060.md)|Die indirekt referenzierten Assemblys können nicht geladen werden.|
-|[CA0061](ca0061.md)|Die Regel " *RuleId* " konnte nicht gefunden werden.|
-|[CA0062](ca0062.md)|Die Regel " *RuleId* ", auf die im Regelsatz " *RuleSetName* " verwiesen wird, wurde nicht gefunden.|
+|[CA0061](ca0061.md)|Die Regel "*RuleId*" konnte nicht gefunden werden.|
+|[CA0062](ca0062.md)|Die Regel "*RuleId*", auf die im Regelsatz "*RuleSetName*" verwiesen wird, wurde nicht gefunden.|
 |[CA0063](ca0063.md)|Fehler beim Laden der Regel Satz Datei oder einer der abhängigen Regel Satz Dateien.|
 |[CA0064](ca0064.md)|Es wurde keine Analyse ausgeführt, da der angegebene Regelsatz keine FxCop-Regeln enthielt.|
-|[CA0065](ca0065.md)|Nicht unterstütztes metadatenkonstrukt: der Typ " *Typname* " enthält sowohl eine Eigenschaft als auch ein Feld mit demselben Namen " *propertyfieldname* ".|
-|[CA0066](ca0066.md)|Der für **für/TargetFrameworkVersion entspricht** angegebene Wert " *versionID* " ist keine erkannte Version.|
+|[CA0065](ca0065.md)|Nicht unterstütztes metadatenkonstrukt: der Typ "*Typname*" enthält sowohl eine Eigenschaft als auch ein Feld mit demselben Namen "*propertyfieldname*".|
+|[CA0066](ca0066.md)|Der für **für/TargetFrameworkVersion entspricht** angegebene Wert "*versionID*" ist keine erkannte Version.|
 |[CA0067](ca0067.md)|Das Verzeichnis wurde nicht gefunden.|
 |[CA0068](ca0068.md)|Für die Zielassembly *"Assemblyname"* konnten keine Debuginformationen gefunden werden.|
 |[CA0069](ca0069.md)|Alternative Plattform verwenden. *FrameworkVersion1* wurde nicht gefunden. Verwenden Sie stattdessen *FrameworkVersion2* . Um optimale Analyseergebnisse zu erzielen, stellen Sie sicher, dass die richtige Framework-Version installiert ist.|

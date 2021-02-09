@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eb6e5a1ba304627c08828b6ad7bff7f6accd3980
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859111"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Erstellen eines Windows Forms zum Suchen von Daten
 
@@ -81,7 +81,7 @@ Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei w
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-    - Klicken Sie auf **Neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
 5. Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.
 
@@ -91,7 +91,7 @@ Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei w
 
 8. Wählen Sie die Tabelle **Customers** aus, und klicken Sie anschließend auf **Fertig stellen**.
 
-     **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers** -Tabelle wird im **Datenquellenfenster** angezeigt.
+     **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers**-Tabelle wird im **Datenquellenfenster** angezeigt.
 
 ## <a name="create-the-form"></a> Erstellen eines Formulars
 
@@ -125,7 +125,7 @@ Mit dem Dialogfeld **Suchkriterien** -Generator können Sie der ursprünglichen 
     > [!NOTE]
     > Zugriffs-und OLE DB Datenquellen verwenden das Fragezeichen ('? ') zum Angeben von Parametern, sodass die WHERE-Klausel wie folgt aussieht: `WHERE City = ?` .
 
-4. Klicken Sie auf **OK** , um das Dialogfeld **Suchkriterien-Generator** zu schließen.
+4. Klicken Sie auf **OK**, um das Dialogfeld **Suchkriterien-Generator** zu schließen.
 
      Dem Formular wird ein **FillByCityToolStrip** hinzugefügt.
 
@@ -133,7 +133,7 @@ Mit dem Dialogfeld **Suchkriterien** -Generator können Sie der ursprünglichen 
 
 Wenn Sie die Anwendung ausführen, wird das Formular geöffnet, und der Parameter wird als Eingabe bereit genommen:
 
-1. Drücken Sie **F5** , um die Anwendung auszuführen.
+1. Drücken Sie **F5**, um die Anwendung auszuführen.
 
 2. Geben Sie **London** in das Textfeld **City** ein, und klicken Sie dann auf **FillByCity**.
 
@@ -147,6 +147,6 @@ Je nach den Anforderungen der Anwendung können nach dem Erstellen eines paramet
 
 - Hinzufügen oder Entfernen von Datenbankobjekten aus dem Dataset durch Bearbeiten. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

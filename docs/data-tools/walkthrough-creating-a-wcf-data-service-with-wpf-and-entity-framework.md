@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858188"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst mit WPF und Entity Framework
 In dieser exemplarischen Vorgehensweise wird dargestellt, wie ein einfacher [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] erstellt wird, der in einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung gehostet wird, und wie dann von einer Windows Forms-Anwendung aus darauf zugegriffen wird.
@@ -80,7 +80,7 @@ Im nächsten Schritt erstellen Sie einen [!INCLUDE[adonet_edm](../data-tools/inc
 
 ### <a name="to-create-the-entity-data-model"></a>So erstellen Sie das Entity Data Model
 
-1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+1. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Daten** und anschließend das Element **ADO.NET Entity Data Model** aus.
 
@@ -116,7 +116,7 @@ Im nächsten Schritt erstellen und testen Sie den Datendienst.
 
 ### <a name="to-create-the-data-service"></a>So erstellen Sie den Datendienst
 
-1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+1. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Web** und anschließend das Element **WCF Data Service 5.6**.
 
@@ -154,7 +154,7 @@ Im ersten Schritt fügen Sie ein Windows Forms-Projekt zur Projekt Mappe hinzu u
 
 ### <a name="to-create-the-client-application"></a>So erstellen Sie die Clientanwendung
 
-1. Wählen Sie in der Menüleiste Datei, **Add**  >  **Neues Projekt** hinzufügen aus.
+1. Wählen Sie in der Menüleiste Datei,   >  **Neues Projekt** hinzufügen aus.
 
 2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual Basic** oder **Visual c#** , wählen Sie den Knoten **Windows** aus, und wählen Sie dann **Windows Forms Anwendung** aus.
 
@@ -180,7 +180,7 @@ Im nächsten Schritt konfigurieren Sie eine Datenquelle, um die Datenbindung an 
 
 ### <a name="to-enable-data-binding-to-the-service"></a>So aktivieren Sie die Datenbindung zum Dienst
 
-1. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **Datenquellen** anzeigen aus.
+1. Wählen Sie in der Menüleiste   >  **andere Windows**-  >  **Datenquellen** anzeigen aus.
 
    Das Fenster **Datenquellen** wird geöffnet.
 
@@ -238,7 +238,7 @@ Im nächsten Schritt erstellen Sie die Benutzeroberfläche, auf der die Daten au
 
 8. Markieren Sie in dem in Schritt 4 hinzugefügten Code den Text `http://localhost:53161/NorthwindCustomers.svc/`, und ersetzen Sie diesen durch die soeben kopierte URL.
 
-9. Wählen Sie in der Menüleiste **Debug**  >  **Debuggen Debuggen starten** aus, um die Anwendung auszuführen. Die Kundeninformationen werden angezeigt.
+9. Wählen Sie in der Menüleiste   >  **Debuggen Debuggen starten** aus, um die Anwendung auszuführen. Die Kundeninformationen werden angezeigt.
 
    Sie verfügen nun über eine funktionierende Anwendung, die eine Liste der Kunden aus dem NorthwindCustomers-Dienst anzeigt. Wenn Sie weitere Daten über den Dienst bereitstellen möchten, können Sie das [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] so bearbeiten, dass zusätzliche Tabellen aus der Northwind-Datenbank eingebunden werden.
 
@@ -284,11 +284,11 @@ In diesem Schritt passen Sie die Anwendung an, um die Daten nach der Stadt des K
 
 4. Ersetzen Sie im vorherigen Code den Text `http://localhost:53161/NorthwindCustomers.svc` durch die URL aus dem `Form1_Load`-Ereignishandler.
 
-5. Wählen Sie in der Menüleiste **Debug**  >  **Debuggen Debuggen starten** aus, um die Anwendung auszuführen.
+5. Wählen Sie in der Menüleiste   >  **Debuggen Debuggen starten** aus, um die Anwendung auszuführen.
 
 6. Geben Sie im Textfeld die Zeichenfolge **London** ein, und klicken Sie dann auf die Schaltfläche. Nur die Kunden aus London werden angezeigt.
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [How to: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
