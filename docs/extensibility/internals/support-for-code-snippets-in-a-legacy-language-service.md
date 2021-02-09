@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 16f0df8a21621b93655935b3cfa27a4b62df63ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888146"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützen von Codeausschnitten in einem Legacysprachdienst
 Ein Code Ausschnitt ist ein Code Ausschnitt, der in die Quelldatei eingefügt wird. Der Code Ausschnitt selbst ist eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Ausschnitt eingefügt wurde, und können je nach Kontext, in dem der Ausschnitt eingefügt wird, unterschiedliche Werte aufweisen. Unmittelbar nachdem der Ausschnitt eingefügt wurde, kann der Sprachdienst den Ausschnitt formatieren.
@@ -85,7 +85,7 @@ Ein Code Ausschnitt ist ein Code Ausschnitt, der in die Quelldatei eingefügt wi
 
  Die folgenden Ersetzungs Elemente können im Pfad abgelegt werden, der im- \<DirPath> Tag in der Indexdatei gespeichert ist.
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |LCID|Gebiets Schema-ID.|
 |InstallRoot|Der Stamm Installationsordner für Visual Studio, z. b. c:\Programme\Microsoft Visual Studio 8.|

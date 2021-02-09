@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4e3d7ad3f19aedc59288d6799e97d91499939c9
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 23541124e48df0c3760d38ff8205f086281034fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887041"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>Erweitern des Objektmodells des Basis Projekts
 
@@ -33,6 +33,6 @@ Mit einem Projekt Untertyp kann das Automatisierungs Objektmodell des Basis Proj
 
 - Configuration. Properties: diese Sammlung macht die Konfigurations abhängigen Eigenschaften des Projekts für eine bestimmte Konfiguration verfügbar (z. b. Debug). Weitere Informationen finden Sie unter <xref:EnvDTE.Configuration>. Ein Projekt Untertyp kann mithilfe von Automatisierungsextendern seine Eigenschaften zu dieser Auflistung hinzufügen. Die- <xref:EnvDTE80.IInternalExtenderProvider> Schnittstelle, die auf dem Hauptprojekt-Untertyp Aggregator implementiert ist, stellt das-Objekt für die CATID `VSHPROPID_CfgBrowseObjectCATID` (entsprechend einem `itemid` Wert von [vsitemid) zur Auswahl. Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> Schnittstelle wird verwendet, um ein Konfigurations Such Objekt von einem anderen zu unterscheiden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

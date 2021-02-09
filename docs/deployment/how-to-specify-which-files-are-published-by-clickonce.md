@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dca403e2b4b7ac9b572e73db397433b1fae1b1ae
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d093438dc30bee08abbc45c6cf3c2555fbe208c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887483"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Vorgehensweise: Angeben der mit ClickOnce veröffentlichten Dateien
 Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung werden alle nicht-Code Dateien im Projekt zusammen mit der Anwendung bereitgestellt. In einigen Fällen möchten Sie möglicherweise bestimmte Dateien nicht veröffentlichen oder müssen bestimmte Dateien auf der Grundlage von Bedingungen installieren. Visual Studio bietet die Funktionen zum Ausschließen von Dateien, zum Markieren von Dateien als Datendateien oder erforderliche Komponenten und zum Erstellen von Dateigruppen für die bedingte Installation.
@@ -37,9 +37,9 @@ Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 
  Dateien, bei **denen die Eigenschaft** Buildvorgang auf **Inhalt** festgelegt ist, werden als Anwendungs Dateien festgelegt und als standardmäßig eingeschlossen gekennzeichnet. Sie können als Datendateien eingeschlossen, ausgeschlossen oder gekennzeichnet werden. Folgende Ausnahmen gelten:
 
-- Datendateien wie SQL-Datenbankdateien ( *MDF* -und *MDB* -Dateien) und XML-Dateien werden standardmäßig als Datendateien gekennzeichnet.
+- Datendateien wie SQL-Datenbankdateien (*MDF* -und *MDB*-Dateien) und XML-Dateien werden standardmäßig als Datendateien gekennzeichnet.
 
-- Verweise auf Assemblys ( *dll* -Dateien) werden wie folgt festgelegt, wenn Sie den Verweis hinzufügen: Wenn " **lokal kopieren** " auf " **false** " festgelegt ist, wird es standardmäßig als erforderliche Assembly (erforderliche Komponente **(Voraussetzung (Auto)** ) gekennzeichnet, die vor der Installation der Anwendung im GAC vorhanden sein muss Wenn " **lokal kopieren** " auf " **true** " gesetzt ist, wird die Assembly standardmäßig als Anwendungsassembly markiert ( **include (Auto)** ) und wird bei der Installation in den Anwendungsordner kopiert. Ein COM-Verweis wird nur dann im Dialogfeld **Anwendungs Dateien** (als *ocx* -Datei) angezeigt, wenn die **isolierte** Eigenschaft auf **true** festgelegt ist. Standardmäßig wird der Wert eingeschlossen.
+- Verweise auf Assemblys (*dll* -Dateien) werden wie folgt festgelegt, wenn Sie den Verweis hinzufügen: Wenn " **lokal kopieren** " auf " **false**" festgelegt ist, wird es standardmäßig als erforderliche Assembly (erforderliche Komponente **(Voraussetzung (Auto)**) gekennzeichnet, die vor der Installation der Anwendung im GAC vorhanden sein muss Wenn " **lokal kopieren** " auf " **true**" gesetzt ist, wird die Assembly standardmäßig als Anwendungsassembly markiert (**include (Auto)**) und wird bei der Installation in den Anwendungsordner kopiert. Ein COM-Verweis wird nur dann im Dialogfeld **Anwendungs Dateien** (als *ocx* -Datei) angezeigt, wenn die **isolierte** Eigenschaft auf **true** festgelegt ist. Standardmäßig wird der Wert eingeschlossen.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>So fügen Sie dem Dialogfeld "Anwendungs Dateien" Dateien hinzu
 
@@ -79,7 +79,7 @@ Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 
 3. Klicken Sie auf die Schaltfläche **Anwendungs Dateien** , um das Dialogfeld **Anwendungs Dateien** zu öffnen.
 
-4. Wählen Sie im Dialogfeld **Anwendungs Dateien** die Anwendungsassembly ( *dll* -Datei) aus, die Sie als Voraussetzung markieren möchten. Beachten Sie, dass Ihre Anwendung über einen Verweis auf die Anwendungsassembly verfügen muss, damit Sie in der Liste angezeigt wird.
+4. Wählen Sie im Dialogfeld **Anwendungs Dateien** die Anwendungsassembly (*dll* -Datei) aus, die Sie als Voraussetzung markieren möchten. Beachten Sie, dass Ihre Anwendung über einen Verweis auf die Anwendungsassembly verfügen muss, damit Sie in der Liste angezeigt wird.
 
 5. Wählen Sie im Feld **Veröffentlichungs Status** in der Dropdown Liste die Option **Voraussetzung** aus.
 

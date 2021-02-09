@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888172"
 ---
 # <a name="module_info"></a>MODULE_INFO
 Beschreibt ein bestimmtes Modul (dll, exe oder Assembly).
@@ -28,7 +28,7 @@ Beschreibt ein bestimmtes Modul (dll, exe oder Assembly).
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-typedef struct tagMODULE_INFO { 
+typedef struct tagMODULE_INFO { 
    MODULE_INFO_FIELDS dwValidFields;
    BSTR               m_bstrName;
    BSTR               m_bstrUrl;
@@ -45,7 +45,7 @@ typedef struct tagMODULE_INFO { 
 ```
 
 ```csharp
-public struct MODULE_INFO { 
+public struct MODULE_INFO { 
    public uint     dwValidFields;
    public string   m_bstrName;
    public string   m_bstrUrl;
@@ -110,7 +110,7 @@ public struct MODULE_INFO { 
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

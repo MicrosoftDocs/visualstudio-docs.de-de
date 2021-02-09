@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f55e99d9df10ef2f96761a9436597d227cf0cd93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886690"
 ---
 # <a name="mssccprjscc-file"></a>Mssccprj. SCC-Datei
 Wenn Sie eine Visual Studio-Projekt Mappe oder ein Projekt in der Quell Code Verwaltung mithilfe der IDE platzieren, empfängt die IDE zwei wichtige Informationen. Die Informationen stammen aus dem Quellcodeverwaltungs-Plug-in in Form von Zeichen folgen. Diese Zeichen folgen "", "" "" "" "" "" "" "" "" "" "" "" " Die IDE ruft diese Zeichen folgen in der Regel beim ersten Mal durch Aufrufen von [sccgetprojpath](../extensibility/sccgetprojpath-function.md)ab und speichert Sie dann in der Projekt Mappe oder Projektdatei für zukünftige Aufrufe von [sccopenproject](../extensibility/sccopenproject-function.md). Wenn Sie in die Projekt Mappe und die Projektdateien eingebettet sind, werden die Zeichen folgen "AUXPATH" und "ProjName" nicht automatisch aktualisiert, wenn ein Benutzer Projektmappen und Projektdateien, die sich in der Versionskontrolle befinden, verzweigt, verzweigt oder kopiert. Um sicherzustellen, dass die Projektmappen-und Projektdateien auf Ihren richtigen Speicherort in der Versionskontrolle zeigen, müssen die Benutzer die Zeichen folgen manuell aktualisieren. Da die Zeichen folgen als nicht transparent gemeint sind, ist es möglicherweise nicht immer klar, wie Sie aktualisiert werden sollten.

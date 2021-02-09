@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44e0bc66d9f385a41f0f43af7217738e40e69126
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887119"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Diese Schnittstelle beschreibt einen Port. Diese Beschreibung wird verwendet, um den Port einem Port Lieferanten hinzuzufügen.
@@ -37,7 +37,7 @@ IDebugPortRequest2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugPortRequest2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Ruft den Namen des zu erstellenden Ports ab.|
 

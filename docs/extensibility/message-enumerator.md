@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7d4607afd9b46d35db416baed73007c67a7832
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 00d6b3e27b87e4bac8cee196a60e7fc934f6187d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886742"
 ---
 # <a name="message-enumerator"></a>Nachrichtenenumerator
 Die folgenden Flags werden für die- `TEXTOUTPROC` Funktion verwendet, bei der es sich um eine Rückruffunktion handelt, die die IDE beim Aufrufen von [sccopenproject](../extensibility/sccopenproject-function.md) bereitstellt (Weitere Informationen zur Rückruffunktion finden Sie unter [lptextoutproc](../extensibility/lptextoutproc.md) ).

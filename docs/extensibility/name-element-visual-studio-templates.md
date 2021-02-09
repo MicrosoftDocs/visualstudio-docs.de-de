@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 109832586483bacb753f96b9a27c0f756ab7a6d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886638"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name-Element (Visual Studio-Vorlagen)
 Gibt den Namen der Vorlage an, wie er im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
@@ -43,7 +43,7 @@ Gibt den Namen der Vorlage an, wie er im Dialogfeld **Neues Projekt** oder **Neu
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Package`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Eine GUID, die die Visual Studio-Paket-ID angibt.|
 |`ID`|Optionales Attribut für erweiterte Benutzer Szenarien.<br /><br /> Gibt die Visual Studio-Ressourcen-ID an.|
@@ -62,7 +62,7 @@ Gibt den Namen der Vorlage an, wie er im Dialogfeld **Neues Projekt** oder **Neu
 
  Der Text gibt den Namen der Vorlage an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `Name` ist ein erforderliches untergeordnetes Element von `TemplateData`.
 
 ## <a name="example"></a>Beispiel

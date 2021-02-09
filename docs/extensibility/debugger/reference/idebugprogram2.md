@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 150746197be4945b012717bef08e18ea57168177
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c262f123e56bf9ed9751ad8b9e7d91770cbd2df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887106"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Diese Schnittstelle stellt ein Programm dar, das in einem Prozess ausgeführt wird.
@@ -37,7 +37,7 @@ IDebugProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProgram2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Listet die Threads auf, die in diesem Programm ausgeführt werden.|
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Ruft den Namen des Programms ab.|
