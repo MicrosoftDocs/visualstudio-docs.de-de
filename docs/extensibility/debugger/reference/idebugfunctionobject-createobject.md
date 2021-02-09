@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: beb00bcf932b19ed4e489456236957c55d909ce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6085e974f58346eba7b38e76e5588b34fc3ff2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929984"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Erstellt ein-Objekt mithilfe eines Konstruktors.
@@ -28,7 +28,7 @@ Erstellt ein-Objekt mithilfe eines Konstruktors.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT CreateObject( 
+HRESULT CreateObject( 
    IDebugFunctionObject* pConstructor,
    DWORD                 dwArgs,
    IDebugObject*         pArgs[],

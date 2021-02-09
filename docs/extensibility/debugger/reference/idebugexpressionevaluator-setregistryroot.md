@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5151d337618409970b61e515cd4428467a7fe25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930342"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Diese Methode legt den Registrierungs Stamm fest. Wird für Paralleles Debuggen verwendet.
@@ -28,7 +28,7 @@ Diese Methode legt den Registrierungs Stamm fest. Wird für Paralleles Debuggen 
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT SetRegistryRoot ( 
+HRESULT SetRegistryRoot ( 
    LPCOLESTR ustrRegistryRoot
 );
 ```
@@ -47,7 +47,7 @@ in Der neue Registrierungs Stamm.
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
- Der angegebene Registrierungs Stamm wird in der Regel festgelegt, wenn die Ausdrucks Auswertung zuerst instanziiert wird, und verweist auf den Registrierungsschlüssel für eine bestimmte Version von Visual Studio (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ *X. y*, wobei *x. y* eine Versionsnummer ist).
+ Der angegebene Registrierungs Stamm wird in der Regel festgelegt, wenn die Ausdrucks Auswertung zuerst instanziiert wird, und verweist auf den Registrierungsschlüssel für eine bestimmte Version von Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*, wobei *x. y* eine Versionsnummer ist).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

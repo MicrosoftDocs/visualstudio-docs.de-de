@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929783"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Ruft eine Liste der Pfade, die nach Symbolen durchsucht werden, sowie die Ergebnisse der Suche der einzelnen Pfade ab.
@@ -86,7 +86,7 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 
 **c:\symbols\user32.pdb... Die Datei wurde nicht gefunden.** 
  **c:\winnt\symbols\user32.pdb... Die Version stimmt nicht mit ab.** 
- ** \\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Symbole geladen.**
+ **\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Symbole geladen.**
 
 ## <a name="see-also"></a>Weitere Informationen
 
