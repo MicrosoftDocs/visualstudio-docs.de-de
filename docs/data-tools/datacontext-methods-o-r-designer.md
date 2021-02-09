@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30091a5bfd613ba9bd3738731e23153565ec4c8e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 64b5643704024ee689a011f5285b41be818dc5cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858968"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext-Methoden (O/R-Designer)
 
@@ -51,7 +51,7 @@ Wenn Sie gespeicherte Prozeduren und Funktionen aus dem **Server-Explorer** oder
 
 Objekte, die Sie aus der Datenbank auf die O/R-Designer-Oberfläche ziehen, werden automatisch basierend auf dem Namen der Objekte in der Datenbank benannt. Wenn Sie das gleiche Objekt mehrmals ziehen, wird am Ende des neuen Namens eine Zahl hinzugefügt, die die Namen unterscheidet. Wenn Namen von Datenbankobjekten Leerzeichen oder in Visual Basic oder C# nicht unterstützte Zeichen enthalten, wird das entsprechende Zeichen durch einen Unterstrich ersetzt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

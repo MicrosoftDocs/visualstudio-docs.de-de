@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858838"
 ---
 # <a name="hierarchical-update"></a>Hierarchisches Update
 
@@ -89,7 +89,7 @@ Der generierte Speichern-Code enthält eine Codezeile, die die Methode `Customer
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>So aktualisieren Sie den Code für einen Commit der Änderungen zu den verknüpften Tabellen vor dem Speichern
 
-1. Doppelklicken Sie auf <xref:System.Windows.Forms.BindingNavigator> auf **Speichern** , um **Form1** im Code-Editor zu öffnen.
+1. Doppelklicken Sie auf <xref:System.Windows.Forms.BindingNavigator> auf **Speichern**, um **Form1** im Code-Editor zu öffnen.
 
 2. Fügen Sie eine Codezeile ein, um die `OrdersBindingSource.EndEdit`-Methode nach der Zeile aufzurufen, die die `CustomersBindingSource.EndEdit`-Methode aufruft. Der Code im Click-Ereignis **Speichern** sollte etwa wie folgt aussehen:
 
@@ -127,6 +127,6 @@ Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften der- 
 |*TableName* `TableAdapter` Property|Stellt einen dar `TableAdapter` . Der generierte `TableAdapterManager` enthält eine-Eigenschaft für jeden, der von `TableAdapter` ihm verwaltet wird. Beispielsweise wird ein DataSet mit einer Customers-und Orders-Tabelle mit einem generiert, `TableAdapterManager` das die-Eigenschaft und die-Eigenschaft enthält `CustomersTableAdapter` `OrdersTableAdapter` .|
 |`UpdateOrder` -Eigenschaft|Steuert die Reihenfolge der einzelnen INSERT-, Update-und DELETE-Befehle. Legen Sie diesen Wert auf einen der Werte in der- `TableAdapterManager.UpdateOrderOption` Enumeration fest.<br /><br /> Standardmäßig `UpdateOrder` ist auf **InsertUpdateDelete** festgelegt. Dies bedeutet, dass Einfügungen, Updates und Löschungen für alle Tabellen im DataSet durchgeführt werden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

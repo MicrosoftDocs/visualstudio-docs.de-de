@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 941cbd78ef94fa186b28391bfd3a888f66c91274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f16d4bc03d2f2562321caa0e57e61dd0b597cfdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858591"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Mindestens eines der ausgewählten Datenbankobjekte gibt ein Schema zurück, das nicht mit dem Schema der Zielklasse übereinstimmt.
 
@@ -27,7 +27,7 @@ Wenn Sie Datenbankobjekte auf vorhandene Entitätsklassen ziehen, müssen die vo
 
 1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
-2. Wählen Sie ein Datenbankobjekt aus, das Daten zurückgibt, die mit dem Schema der Zielklasse übereinstimmen (die Klasse, auf der das Datenbankobjekt im **O/R-Designer**abgelegt wird).
+2. Wählen Sie ein Datenbankobjekt aus, das Daten zurückgibt, die mit dem Schema der Zielklasse übereinstimmen (die Klasse, auf der das Datenbankobjekt im **O/R-Designer** abgelegt wird).
 
 ## <a name="see-also"></a>Weitere Informationen
 

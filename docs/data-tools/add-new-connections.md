@@ -6,19 +6,19 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32fbd3462f6a496d681f76480c3eb4451f325b35
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ddcc5dd06a4e71d445c94c860b2a3ab92429ab2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859384"
 ---
 # <a name="add-new-connections"></a>Neue Verbindungen hinzufügen
 
-Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Datenbankinhalte und-Schemas mithilfe von **Server-Explorer** , **Cloud-Explorer** oder **SQL Server-Objekt-Explorer** untersuchen. Die Funktionalität dieser Fenster überschneidet sich in gewisser Weise. Die grundlegenden Unterschiede lauten:
+Sie können die Verbindung mit einer Datenbank oder einem Dienst testen und Datenbankinhalte und-Schemas mithilfe von **Server-Explorer**, **Cloud-Explorer** oder **SQL Server-Objekt-Explorer** untersuchen. Die Funktionalität dieser Fenster überschneidet sich in gewisser Weise. Die grundlegenden Unterschiede lauten:
 
 - Server-Explorer
 

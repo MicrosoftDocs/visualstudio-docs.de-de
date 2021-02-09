@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858474"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Exemplarische Vorgehensweise: Speichern von Daten im Rahmen einer Transaktion
 
@@ -58,7 +58,7 @@ Der erste Schritt besteht darin, eine **Windows Forms Anwendung** zu erstellen.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **SavingDataInATransactionWalkthrough** , und wählen Sie dann **OK** aus.
+4. Nennen Sie das Projekt **SavingDataInATransactionWalkthrough**, und wählen Sie dann **OK** aus.
 
      Das Projekt **SavingDataInATransactionWalkthrough** wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.
 
@@ -76,9 +76,9 @@ In diesem Schritt wird mithilfe des **Assistenten zum Konfigurieren von Datenque
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         \- oder -
+         - oder -
 
-    - Klicken Sie auf **neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu starten und eine Verbindung mit der Datenbank Northwind herzustellen.
+    - Klicken Sie auf **neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu starten und eine Verbindung mit der Datenbank Northwind herzustellen.
 
 5. Wenn für die Datenbank ein Kennwort erforderlich ist, wählen Sie die Option zum einschließen sensibler Daten aus, und klicken Sie dann auf **weiter**.
 
@@ -169,9 +169,9 @@ Der Befehl für das Abgleichen zugehöriger Daten lautet wie folgt:
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-Drücken Sie **F5** , um die Anwendung auszuführen.
+Drücken Sie **F5**, um die Anwendung auszuführen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [How to: save data by using a transaction (Vorgehensweise: Speichern von Daten mithilfe einer Transaktion)](../data-tools/save-data-by-using-a-transaction.md)
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

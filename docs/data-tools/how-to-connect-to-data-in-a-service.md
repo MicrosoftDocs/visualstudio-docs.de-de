@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d8e3692f376a502a2cd924fa9604eddab445333f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858760"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst
 
@@ -59,7 +59,7 @@ Nach Abschluss des Assistenten wird dem Projekt ein Dienst Verweis hinzugefügt,
 
 Wenn Sie der Anwendung Funktionen hinzufügen möchten, wählen Sie im Fenster **Datenquellen** ein Element aus, und ziehen Sie es auf ein Formular, um gebundene Steuerelemente zu erstellen. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von WPF-Steuerelementen an einen WCF-Datendienst](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
 - [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

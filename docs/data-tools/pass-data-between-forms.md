@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858565"
 ---
 # <a name="pass-data-between-forms"></a>Übergeben von Daten zwischen Formularen
 
@@ -75,7 +75,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **PassingDataBetweenForms** , und wählen Sie dann **OK** aus.
+4. Nennen Sie das Projekt **PassingDataBetweenForms**, und wählen Sie dann **OK** aus.
 
      Das Projekt **PassingDataBetweenForms** wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.
 
@@ -93,7 +93,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-    - Klicken Sie auf **Neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
 6. Falls die Datenbank ein Kennwort erfordern sollte und die Option für die Einbeziehung vertraulicher Daten aktiviert ist, wählen Sie die Option aus, und klicken Sie dann auf **Weiter**.
 
@@ -121,7 +121,7 @@ Erstellen Sie ein zweites Formular, an das Daten übergeben werden.
 
 1. Wählen Sie aus dem Menü **Projekt** die Option **Windows Form hinzufügen** aus.
 
-2. Übernehmen Sie den Standardnamen **Form2** , und klicken Sie auf **Hinzufügen**.
+2. Übernehmen Sie den Standardnamen **Form2**, und klicken Sie auf **Hinzufügen**.
 
 3. Ziehen Sie den Hauptknoten **Orders** aus dem **Datenquellenfenster** auf **Form2**.
 
@@ -137,11 +137,11 @@ Fügen Sie Form2 eine TableAdapter-Abfrage hinzu, um die Bestellungen für den a
 
 1. Doppelklicken Sie im **Projektmappen-Explorer** auf die Datei **NorthwindDataSet.xsd**.
 
-2. Klicken Sie mit der rechten Maustaste auf **OrdersTableAdapter** , und wählen Sie **Abfrage hinzufügen** aus.
+2. Klicken Sie mit der rechten Maustaste auf **OrdersTableAdapter**, und wählen Sie **Abfrage hinzufügen** aus.
 
-3. Übernehmen Sie die Standardeinstellung für **SQL-Anweisung verwenden** , und klicken Sie anschließend auf **Weiter**.
+3. Übernehmen Sie die Standardeinstellung für **SQL-Anweisung verwenden**, und klicken Sie anschließend auf **Weiter**.
 
-4. Übernehmen Sie die Standardeinstellung für **SELECT-Anweisung, die Zeilen zurückgibt** , und klicken Sie anschließend auf **Weiter**.
+4. Übernehmen Sie die Standardeinstellung für **SELECT-Anweisung, die Zeilen zurückgibt**, und klicken Sie anschließend auf **Weiter**.
 
 5. Fügen Sie eine WHERE-Klausel zur Abfrage hinzu, sodass `Orders` auf Grundlage der `CustomerID` zurückgeben wird. Die Abfrage müsste ungefähr wie folgt aussehen:
 
@@ -158,13 +158,13 @@ Fügen Sie Form2 eine TableAdapter-Abfrage hinzu, um die Bestellungen für den a
 
 7. Geben Sie für den **datatablemethod-Namen ausfüllen den Namen ein** `FillByCustomerID` .
 
-8. Löschen Sie die Option **DataTable zurückgeben** , und klicken Sie anschließend **Weiter**.
+8. Löschen Sie die Option **DataTable zurückgeben**, und klicken Sie anschließend **Weiter**.
 
 9. Klicken Sie auf **Fertig stellen**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Erstellen Sie eine Methode auf Form2, an die Daten übergeben werden.
 
-1. Klicken Sie mit der rechten Maustaste auf **Form2** , und klicken Sie auf **Code anzeigen** , um **Form2** im **Code-Editor** zu öffnen.
+1. Klicken Sie mit der rechten Maustaste auf **Form2**, und klicken Sie auf **Code anzeigen**, um **Form2** im **Code-Editor** zu öffnen.
 
 2. Fügen Sie den folgenden Code zu **Form2** nach der `Form2_Load`-Methode hinzu:
 
@@ -188,9 +188,9 @@ Fügen Sie Form2 eine TableAdapter-Abfrage hinzu, um die Bestellungen für den a
 
 ## <a name="run-the-app"></a>Ausführen der App
 
-- Drücken Sie **F5** , um die Anwendung auszuführen.
+- Drücken Sie **F5**, um die Anwendung auszuführen.
 
-- Doppelklicken Sie einen Kundendatensatz in **Form1** , sodass dieser in **Form2** mit den Bestellungen dieses Kunden geöffnet wird.
+- Doppelklicken Sie einen Kundendatensatz in **Form1**, sodass dieser in **Form2** mit den Bestellungen dieses Kunden geöffnet wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -200,6 +200,6 @@ Entsprechend den Anforderungen an Ihre Anwendung können Sie nach dem Übergeben
 
 - Hinzufügen einer Funktion für das Zurückspeichern von Daten in der Datenbank. Weitere Informationen finden Sie unter [Speichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

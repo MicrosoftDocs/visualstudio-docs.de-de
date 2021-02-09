@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436809"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859566"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Verwenden des Fensters "Code Metrikergebnisse"
 
@@ -32,7 +32,7 @@ Das Fenster **Code Metrikergebnisse** wird automatisch angezeigt, wenn Sie Code 
 
 Sie können das Fenster Code Metrikergebnisse mithilfe einer der folgenden Menü Sequenzen anzeigen:
 
-- Wählen Sie im Menü **analysieren** die Option **Windows** -  >  **Codemetrikergebnisse** aus.
+- Wählen Sie im Menü **analysieren** die Option **Windows**-  >  **Codemetrikergebnisse** aus.
 
 - Wählen Sie im Menü **Ansicht** die Option **andere** Ergebnisse der Windows-  >  **Codemetriken** aus.
 
@@ -92,7 +92,7 @@ Weitere Informationen zu Azure Boards Arbeitsaufgaben finden Sie unter [Arbeitse
 
 1. Klicken Sie mit der rechten Maustaste auf das Ergebnis.
 
-2. Zeigen Sie auf **Arbeits Element erstellen** , und klicken Sie dann auf den Typ des Arbeits Elements, das Sie erstellen möchten ( **Fehler** , **Aufgabe** usw.).
+2. Zeigen Sie auf **Arbeits Element erstellen**, und klicken Sie dann auf den Typ des Arbeits Elements, das Sie erstellen möchten (**Fehler**, **Aufgabe** usw.).
 
 3. Vervollständigen Sie das Arbeits Element Formular, indem Sie alle erforderlichen Felder ausfüllen.
 
@@ -108,7 +108,7 @@ Weitere Informationen zu Azure Boards Arbeitsaufgaben finden Sie unter [Arbeitse
 
 4. Klicken Sie im Menü **Datei** auf **Alle speichern** , um das Arbeits Element zu speichern.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)
 - [Gewusst wie: Generieren von Codemetrikdaten](../code-quality/how-to-generate-code-metrics-data.md)

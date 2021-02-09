@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518621"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859345"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
 
@@ -34,7 +34,7 @@ Im Kontext der Datenbindung stellt eine Datenquelle die Daten im Arbeitsspeicher
 
 | Datenquelle | Drag & Drop-Unterstützung im **Windows Forms-Designer** | Drag & Drop-Unterstützung im **WPF-Designer** | Drag & Drop-Unterstützung im **Silverlight-Designer** |
 | - | - | - | - |
-| Dataset | Ja | Ja | Nein  |
+| Dataset | Ja | Ja | Nein |
 | Entity Data Model | Ja<sup>1</sup> | Ja | Ja |
 | LINQ to SQL-Klassen | Nein<sup>2</sup> | Nein<sup>2</sup> | Nein<sup>2</sup> |
 | Dienste (einschließlich [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF-Dienste und Webdienste) | Ja | Ja | Ja |
@@ -47,7 +47,7 @@ Im Kontext der Datenbindung stellt eine Datenquelle die Daten im Arbeitsspeicher
 
 ## <a name="data-sources-window"></a>Datenquellenfenster
 
-Datenquellen stehen dem Projekt als Elemente im Fenster **Datenquellen** zur Verfügung. Dieses Fenster ist sichtbar, wenn eine Formular Entwurfs Oberfläche das aktive Fenster in Ihrem Projekt ist, oder Sie können es öffnen (wenn ein Projekt geöffnet ist), **View** indem Sie  >  **andere Windows** -  >  **Datenquellen** anzeigen auswählen. Sie können Elemente aus diesem Fenster ziehen, um Steuerelemente zu erstellen, die an die zugrunde liegenden Daten gebunden sind. Außerdem können Sie die Datenquellen konfigurieren, indem Sie mit der rechten Maustaste klicken.
+Datenquellen stehen dem Projekt als Elemente im Fenster **Datenquellen** zur Verfügung. Dieses Fenster ist sichtbar, wenn eine Formular Entwurfs Oberfläche das aktive Fenster in Ihrem Projekt ist, oder Sie können es öffnen (wenn ein Projekt geöffnet ist), indem Sie  >  **andere Windows**-  >  **Datenquellen** anzeigen auswählen. Sie können Elemente aus diesem Fenster ziehen, um Steuerelemente zu erstellen, die an die zugrunde liegenden Daten gebunden sind. Außerdem können Sie die Datenquellen konfigurieren, indem Sie mit der rechten Maustaste klicken.
 
 ![Datenquellenfenster](../data-tools/media/raddata-data-sources-window.png)
 
@@ -59,7 +59,7 @@ In der folgenden Tabelle sind einige der gängigsten Aufgaben aufgeführt, die S
 
 |Aufgabe|Weitere Informationen|
 |----------| - |
-|Öffnen Sie das Fenster **Datenquellen**.|Öffnen Sie im Editor eine Entwurfs Oberfläche, und **View** wählen Sie  >  **Datenquellen** anzeigen aus.|
+|Öffnen Sie das Fenster **Datenquellen**.|Öffnen Sie im Editor eine Entwurfs Oberfläche, und wählen Sie  >  **Datenquellen** anzeigen aus.|
 |Fügen Sie dem Projekt eine Datenquelle hinzu.|[Hinzufügen neuer Datenquellen](../data-tools/add-new-data-sources.md)|
 |Legen Sie das Steuerelement fest, das erstellt wird, wenn Sie ein Element vom Fenster **Datenquellen** in den Designer ziehen.|[Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Ändern Sie die Liste der Steuerelemente, die Elementen im Fenster **Datenquellen** zugeordnet sind.|[Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

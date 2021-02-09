@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7945e3f76084b72a26bb2e7e1f46fca6193b5477
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1ce11b59ad7f38de4c71fa13371da16225b5b843
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858409"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Die Verbindungszeichenfolge enthält Anmeldeinformationen mit einem Klartext-Kennwort und verwendet keine integrierte Sicherheit.
 
@@ -28,11 +28,11 @@ Beim Arbeiten mit Datenverbindungen, die vertrauliche Informationen enthalten (i
 
 ## <a name="save-options"></a>Speicheroptionen
 
-- Um die Verbindungs Zeichenfolge mit den vertraulichen Informationen zu speichern, wählen Sie **Ja**aus.
+- Um die Verbindungs Zeichenfolge mit den vertraulichen Informationen zu speichern, wählen Sie **Ja** aus.
 
    Die Verbindungszeichenfolge wird als Anwendungseinstellung gespeichert. Die Verbindungszeichenfolge enthält die vertraulichen Informationen als Klartext. Die vertraulichen Informationen sind nicht in der DBML-Datei enthalten.
 
-- Wenn Sie die Verbindungs Zeichenfolge ohne vertrauliche Informationen speichern möchten, wählen Sie **Nein**aus.
+- Wenn Sie die Verbindungs Zeichenfolge ohne vertrauliche Informationen speichern möchten, wählen Sie **Nein** aus.
 
    Die Verbindungszeichenfolge wird als Anwendungseinstellung gespeichert, jedoch ohne das Kennwort.
 
