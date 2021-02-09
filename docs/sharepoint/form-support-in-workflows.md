@@ -12,15 +12,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: adf5de014c7921130bd6f3ecd3cf8c5bb5daa92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876679"
 ---
 # <a name="form-support-in-workflows"></a>Formular Unterstützung in Workflows
   In einem Workflow können vier Arten von Formularen verwendet werden: Association, Initiierung, Aufgabe und Änderung. Diese Formular Typen können entweder auf einem ASPX-Formular oder auf einem InfoPath-Formular basieren. Die Unterstützungs Ebene, die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] für ein bestimmtes Formular bereitstellt, hängt von verschiedenen Faktoren ab, die in den folgenden Tabellen beschrieben werden. Weitere Informationen zu Workflow Formular Typen finden Sie unter [Übersicht über Workflow Formulare](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14)).

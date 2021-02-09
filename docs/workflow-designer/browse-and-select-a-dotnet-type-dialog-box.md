@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a7ffb9e100a621019a5d0ced855575a05708ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875301"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Dialogfeld '.NET-Typ suchen und auswählen'
 
@@ -41,7 +41,7 @@ Dieses Dialogfeld wird in einer Reihe von Benutzerszenarien wie dem Folgendem ei
 
 1. Geben Sie im Feld **Typname** den Namen des Typs ein, den Sie verwenden möchten.
 
-2. Führen Sie einen der folgenden Schritte aus:
+2. Führen Sie eines der folgenden Verfahren aus:
 
     - Sobald der Name des Typs, den Sie verwenden möchten, in der Struktur im Feld **Typname** angezeigt wird, doppelklicken Sie auf den Typ, um ihn auszuwählen.
 

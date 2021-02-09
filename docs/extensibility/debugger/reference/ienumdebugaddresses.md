@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875795"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Diese Schnittstelle stellt eine Auflistung von Objekten dar, die die [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Schnittstelle implementieren.
@@ -37,7 +37,7 @@ IEnumDebugAdresses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
  Diese Schnittstelle implementiert die folgenden Methoden.
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[Nächste](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|Ruft den nächsten Satz von [idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) -Objekten aus der-Enumeration ab.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|Überspringt eine angegebene Anzahl von Einträgen.|

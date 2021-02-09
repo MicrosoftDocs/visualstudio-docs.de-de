@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, changing formatting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 088b24a93cb82cc7807a996c26c9b2bbbabec04e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 62b9f94bfa423b149fef6abb984a03536d0e3d8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875314"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Gewusst wie: Programm gesteuertes Ändern der Formatierung in Arbeitsblatt Zeilen, die ausgewählte Zellen enthalten
   Sie können die Schriftart einer gesamten Zeile, die eine ausgewählte Zelle enthält, so ändern, dass der Text fett formatiert ist.
@@ -72,7 +72,7 @@ ms.locfileid: "96847948"
  [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]
  [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)
 - [Gewusst wie: Programm gesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [Gewusst wie: Programm gesteuertes Kopieren von Daten und Formatierungen zwischen Arbeitsblättern](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)
