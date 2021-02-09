@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e6ef918b55d8b311380264d688085b0d2803601
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63b42df8181ca12da1be2aca6faf1346406b621f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877433"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 Erstellt einen Enumerator für die Klassen, die in dieser Klasse eingefügt werden.

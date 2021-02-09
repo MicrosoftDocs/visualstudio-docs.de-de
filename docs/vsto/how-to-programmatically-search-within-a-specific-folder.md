@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], searching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fa569a2c301cb495f109a612d817937159c257c6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a9c7861698e678ca6d8332e3940c3ae49ff423f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877875"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Gewusst wie: Programm gesteuertes suchen innerhalb eines bestimmten Ordners
   In diesem Codebeispiel `Find` werden die `FindNext` -Methode und die-Methode verwendet, um Text im Feld Betreff von e-Mail-Nachrichten im **Posteingang** zu suchen. Diese Methode verwendet einen Zeichen folgen Filter, um den Buchstaben T als Anfangsbuchstaben des Texts zu überprüfen `Subject` .
