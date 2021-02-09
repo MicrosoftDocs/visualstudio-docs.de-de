@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, samples
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: caf3178355697b8dba997dbcb66dfa8ef5569e36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926572"
 ---
 # <a name="office-development-samples"></a>Office-Entwicklungs Beispiele
   Visual Studio enthält Beispielanwendungen, die veranschaulichen, wie die Microsoft Office Developer Tools verwendet werden, um Office-Projektmappen zu erstellen. Im Code dieser Beispiele werden die Syntax, Struktur und Techniken zum Erstellen von Office-Projektmappen veranschaulicht.

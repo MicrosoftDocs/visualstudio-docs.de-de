@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927222"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Freigegebene Farben für Visual Studio
 Wenn Sie die Benutzeroberfläche entwerfen, die allgemeine Visual Studio-shellelemente verwendet, oder wenn Sie möchten, dass das Schnittstellen Element mit ähnlichen Features konsistent ist, verwenden Sie vorhandene Tokennamen in Paket Definitions Dateien, um Farben auszuwählen und zuzuweisen. Dadurch wird sichergestellt, dass Ihre Benutzeroberfläche mit der gesamten Visual Studio-Umgebung konsistent ist und automatisch angepasst wird, wenn Designs hinzugefügt oder aktualisiert werden.
@@ -1868,7 +1868,7 @@ Visual Studio unterstützt Tags, mit deren Hilfe ein Benutzer suchbare Schlüsse
 | --- | --- |
 | ... für die Benutzeroberfläche, die Tagging unterstützt. | ... für jede andere Art von Benutzeroberfläche. |
 
-#### <a name="tags"></a>`Tags`
+#### <a name="tags"></a>Tags
 
 **Tag: Standardstatus**
 

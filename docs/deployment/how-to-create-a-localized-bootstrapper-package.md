@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927586"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Vorgehensweise: Erstellen eines lokalisierten Bootstrappakets
-Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versionen des Boots Trapper-Pakets erstellen, indem Sie für jedes Gebiets Schema zwei weitere Dateien erstellen: eine Datei mit Software-Lizenzbedingungen (z *. b. "EULA. RTF* ") und ein Paket Manifest ( *package.xml* ).
+Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versionen des Boots Trapper-Pakets erstellen, indem Sie für jedes Gebiets Schema zwei weitere Dateien erstellen: eine Datei mit Software-Lizenzbedingungen (z *. b. "EULA. RTF*") und ein Paket Manifest (*package.xml*).
 
  Visual Studio 2010 umfasst standardmäßig nur lokalisierte Bootstrapperpakete für .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 und F# Runtime 4.0. Mit den folgenden drei Schritten können Sie lokalisierte Pakete für andere Bootstrapper erstellen.
 
@@ -30,10 +30,10 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
 2. Erstellen Sie eine Datei, die die Softwarelizenzbedingungen für das Bootstrapperpaket enthält, und legen Sie diese in dem neuen Ordner ab.
 
-3. Erstellen Sie ein Paket Manifest mit dem Namen *package.xml* , aktualisieren Sie die Zeichen folgen und die Kultur, und fügen Sie die Datei in den neuen Ordner ein. Wenn Sie bereits ein Bootstrapperpaket von Visual Studio in der Zielsprache erstellt haben, können Sie die Visual Studio-Datei *package.xml* kopieren und in diesem Schritt ändern.
+3. Erstellen Sie ein Paket Manifest mit dem Namen *package.xml*, aktualisieren Sie die Zeichen folgen und die Kultur, und fügen Sie die Datei in den neuen Ordner ein. Wenn Sie bereits ein Bootstrapperpaket von Visual Studio in der Zielsprache erstellt haben, können Sie die Visual Studio-Datei *package.xml* kopieren und in diesem Schritt ändern.
 
 > [!NOTE]
-> Wenn Sie ein Setup-Projekt zur Bereitstellung von Anwendungen verwenden, können Sie Ihre Anwendung durch Ändern der **Localization** -Eigenschaft lokalisieren.
+> Wenn Sie ein Setup-Projekt zur Bereitstellung von Anwendungen verwenden, können Sie Ihre Anwendung durch Ändern der **Localization**-Eigenschaft lokalisieren.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -66,7 +66,7 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
 2. Erstellen Sie eine Datei, die die Softwarelizenzbedingungen für das Bootstrapperpaket enthält, und legen Sie diese in dem neuen Ordner ab.
 
-3. Erstellen Sie ein Paketmanifest mit dem Namen *package.xml* , und legen Sie die Datei in dem neuen Ordner ab. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Paket Manifests](../deployment/how-to-create-a-package-manifest.md).
+3. Erstellen Sie ein Paketmanifest mit dem Namen *package.xml*, und legen Sie die Datei in dem neuen Ordner ab. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines Paket Manifests](../deployment/how-to-create-a-package-manifest.md).
 
 4. Aktualisieren Sie den Abschnitt `<Strings>` des Paketmanifests so, dass die Zeichenfolgen die korrekte Sprache für das Gebietsschema aufweisen.
 
@@ -76,7 +76,7 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>So erstellen Sie ein Bootstrapperpaket für .NET Framework 3.5 Service Pack 1 lokalisiert in Französisch
 
-1. Erstellen Sie einen Ordner mit dem Namen " *fr* ". Der Ordnername muss mit dem Gebietsschemanamen übereinstimmen.
+1. Erstellen Sie einen Ordner mit dem Namen " *fr*". Der Ordnername muss mit dem Gebietsschemanamen übereinstimmen.
 
      Erstellen Sie auf 32-Bit-Computern den Ordner im Ordner " *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1 \\* ".
 
@@ -88,7 +88,7 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
 4. Aktualisieren Sie den Abschnitt `<Strings>` des Paketmanifests so, dass die Fehlerzeichenfolgen auf Französisch sind.
 
-5. Ändern `<String Name="Culture">` Sie den Wert in " *fr* ".
+5. Ändern `<String Name="Culture">` Sie den Wert in " *fr*".
 
 6. Speichern Sie die *package.xml* Datei.
 

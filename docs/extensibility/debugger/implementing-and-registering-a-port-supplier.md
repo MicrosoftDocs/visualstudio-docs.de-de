@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5bce26a00a525ed93e27b531b36aca1fc04dce4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d5639c45fd6dff6702ebc197d46c2eafe482e1d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926360"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Implementieren und Registrieren eines Port Anbieters
 Die Rolle eines Port Lieferanten besteht im nachverfolgen und Bereitstellen von Ports, die wiederum Prozesse verwalten. Wenn ein Port erstellt werden muss, wird der Port Lieferant mithilfe von CoCreate mit der GUID des portanbieters instanziiert (der Sitzungs-Debug-Manager [SDM] verwendet den vom Benutzer ausgewählten Port Anbieter oder den vom Projekt System angegebenen Port Lieferanten). Der SDM ruft dann [canaddport](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) auf, um zu überprüfen, ob Ports hinzugefügt werden können. Wenn ein Port hinzugefügt werden kann, wird ein neuer Port angefordert, indem [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) aufgerufen und ein [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) übergeben wird, der den Port beschreibt. `AddPort` Gibt einen neuen von einer [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) -Schnittstelle dargestellten Port zurück.
@@ -61,7 +61,7 @@ RemoveMetric(metrictypePortSupplier,
 
  Ein Port Lieferant kann seinen Namen und die GUID über die Methoden " [getportsuppliername](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) " und " [getportsupplierid](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)" angeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Implementieren eines Port Anbieters](../../extensibility/debugger/implementing-a-port-supplier.md)
 - [SDK-Hilfsprogramme zum Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Port Lieferanten](../../extensibility/debugger/port-suppliers.md)

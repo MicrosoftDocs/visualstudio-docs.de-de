@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927404"
 ---
 # <a name="trusted-application-deployment-overview"></a>Überblick über die Bereitstellung vertrauenswürdiger Anwendungen
 Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen, die mithilfe der Technologie für die Bereitstellung einer vertrauenswürdigen Anwendung erweiterte Berechtigungen aufweisen.
@@ -36,7 +36,7 @@ Dieses Thema bietet einen Überblick über die Bereitstellung von [!INCLUDE[ndpt
 ## <a name="trusted-application-deployment-basics"></a>Grundlagen der Bereitstellung einer vertrauenswürdigen Anwendung
  Die folgende Tabelle zeigt die Objekte und die Rollen, die an der Bereitstellung einer vertrauenswürdigen Anwendung beteiligt sind.
 
-|Objekt oder Rolle|BESCHREIBUNG|
+|Objekt oder Rolle|Beschreibung|
 |--------------------|-----------------|
 |administrator|Die Entität in der Organisation, die verantwortlich für das Aktualisieren und Verwalten von Clientcomputern ist|
 |trust manager|Das Subsystem innerhalb der Common Language Runtime (CLR), das verantwortlich für das Erzwingen der Anwendungssicherheit auf Clientcomputern ist.|
@@ -79,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um die Bereitstellung einer vertrauensw�
 
 - Der <xref:System.Security.Cryptography?displayProperty=fullName> -Namespace.
 
-- *CertMgr.exe* , die eine Komponente von Internet Explorer ist und daher unter Windows 98 und allen späteren Versionen vorhanden ist. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, die eine Komponente von Internet Explorer ist und daher unter Windows 98 und allen späteren Versionen vorhanden ist. Weitere Informationen finden Sie unter [Certmgr.exe (Certificate Manager-Tool)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Erstellen einer ClickOnce-Anwendung
  Bei einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung handelt es sich um eine .NET Framework Client Anwendung in Kombination mit Manifest-Dateien, die die Anwendung beschreiben und Installationsparameter angeben Sie können Ihr Programm in eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mithilfe des Befehls **Veröffentlichen** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]verwandeln. Alternativ können Sie alle erforderlichen Dateien für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Bereitstellung mithilfe von Tools, die in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]enthalten sind, generieren. Ausführliche Schritte zur Bereitstellung finden Sie unter Exemplarische Vorgehensweise [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

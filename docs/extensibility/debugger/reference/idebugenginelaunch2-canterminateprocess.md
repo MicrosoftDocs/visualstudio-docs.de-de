@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7973454d-c957-4123-a0ee-80ebcdbbd2d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91c68e0a0e314015c1f2e6df2a96243c6ce854e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f6f174685ad544a53548a8818a08165d46679b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927040"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 Bestimmt, ob ein Prozess beendet werden kann.
@@ -28,13 +28,13 @@ Bestimmt, ob ein Prozess beendet werden kann.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT CanTerminateProcess ( 
+HRESULT CanTerminateProcess ( 
    IDebugProcess2* pProcess
 );
 ```
 
 ```csharp
-int CanTerminateProcess ( 
+int CanTerminateProcess ( 
    IDebugProcess2 pProcess
 );
 ```

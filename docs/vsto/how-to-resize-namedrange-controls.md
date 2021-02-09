@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, resizing in Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 043def019d30ee629e672a081cd5aea73bca4304
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 1e3ba042f5adda5b41e434e37e0cc7ea25725fa6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927690"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Gewusst wie: Ändern der Größe von Name Drange-Steuerelementen
   Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.NamedRange> -Steuerelements festlegen, wenn Sie es zu einem Microsoft Office Excel-Dokument hinzufügen. Möglicherweise möchten Sie jedoch zu einem späteren Zeitpunkt die Größe ändern.

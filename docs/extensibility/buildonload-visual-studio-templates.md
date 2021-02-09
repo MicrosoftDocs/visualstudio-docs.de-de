@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37df139f890a7717287db675a3a4b7e4b250dbf3
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5fe0fa745ef611395abe6244c0e207271b182cb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671604"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927326"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad-Attribut und-Element
 
@@ -52,7 +52,7 @@ Element Hierarchie:
 
 Ein Textwert ist für das **BuildOnLoad** -Element erforderlich. Der Text muss entweder `true` oder sein `false` , um anzugeben, ob das Projekt sofort nach der Erstellung erstellt werden soll.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **BuildOnLoad** ist ein optionales Attribut. Standardwert: `false`.
 
@@ -85,7 +85,7 @@ Im folgenden Beispiel werden die Metadaten für eine c#-Vorlage veranschaulicht,
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Buildprojectonload-Element](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent-Element](../extensibility/templatecontent-element-visual-studio-templates.md)
