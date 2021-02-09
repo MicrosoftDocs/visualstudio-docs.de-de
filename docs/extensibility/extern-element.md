@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862095"
 ---
 # <a name="extern-element"></a>Extern-Element
 Das extern-Element verweist auf alle externen Header Dateien (*. h*), die zur Kompilierzeit mit der *vsct* -Datei zusammengeführt werden sollen. Die zusammen zuführenden Dateien müssen sich auf dem Includepfad befinden, der dem VSCT-Compiler übergeben wird oder auf den von einem [include-Element](../extensibility/include-element.md)verwiesen wird. Die Dateien können andere *vsct* -Dateien oder C++-Header Dateien sein.
@@ -43,14 +43,14 @@ Das extern-Element verweist auf alle externen Header Dateien (*. h*), die zur Ko
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |href|Erforderlich. Der Pfad zur Header Datei:<br /><br /> href = "stdidcmd. h"|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
-|language|Optional. Die Standardsprache aller [\<Strings>](../extensibility/strings-element.md) Elemente in der Befehls Tabelle:<br /><br /> language = "en-US"|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|language|Dies ist optional. Die Standardsprache aller [\<Strings>](../extensibility/strings-element.md) Elemente in der Befehls Tabelle:<br /><br /> language = "en-US"|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Keine.|Keine.|
+|Keine.|Keine|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

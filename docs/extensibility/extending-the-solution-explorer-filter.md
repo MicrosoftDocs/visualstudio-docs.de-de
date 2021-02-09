@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862121"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Erweitern des Projektmappen-Explorer Filters
 Sie können **Projektmappen-Explorer** Filter Funktionalität erweitern, um unterschiedliche Dateien anzuzeigen oder auszublenden. Beispielsweise können Sie einen Filter erstellen, der nur c#-klassenfactorydateien im **Projektmappen-Explorer** anzeigt, wie in dieser exemplarischen Vorgehensweise veranschaulicht.

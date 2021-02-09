@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8e682c3d3312be5c4f4639fc2642a398e321fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859878"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 
@@ -44,11 +44,11 @@ Um einen benutzerdefinierten Regelsatz für ein Azure devops-Projekt zu erstelle
 
 2. Klicken Sie im **Ordner** Bereich mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **neuer Ordner**.
 
-3. Klicken Sie im Hauptbereich der Quell Code Verwaltung mit der rechten Maustaste auf **neuer Ordner** , klicken Sie auf **Umbenennen** , und geben Sie einen Namen für den Regelsatz Ordner ein.
+3. Klicken Sie im Hauptbereich der Quell Code Verwaltung mit der rechten Maustaste auf **neuer Ordner**, klicken Sie auf **Umbenennen**, und geben Sie einen Namen für den Regelsatz Ordner ein.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>So erstellen Sie einen Eincheck Richtlinien-Regelsatz
 
-1. Zeigen Sie im Menü **Datei** auf **Neu** , und klicken Sie dann auf **Datei**.
+1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Datei**.
 
 2. Klicken Sie in der Liste **Kategorien** auf **Allgemein**.
 
@@ -75,11 +75,11 @@ Um einen benutzerdefinierten Regelsatz für ein Azure devops-Projekt zu erstelle
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>So geben Sie die Regel Satz Datei als Check-in-Richtlinie an
 
-1. Zeigen Sie im Menü **Team** auf **Projekteinstellungen** , und klicken Sie dann auf **Quell** Code Verwaltung.
+1. Zeigen Sie im Menü **Team** auf **Projekteinstellungen**, und klicken Sie dann auf **Quell** Code Verwaltung.
 
-2. Klicken Sie auf **Eincheck Richtlinie** , und klicken Sie dann auf **Hinzufügen**.
+2. Klicken Sie auf **Eincheck Richtlinie**, und klicken Sie dann auf **Hinzufügen**.
 
-3. Doppelklicken Sie in der Liste **Eincheck Richtlinie** auf **Code Analyse** , und stellen Sie sicher, dass das Kontrollkästchen **Code Analyse für verwalteten Code erzwingen** aktiviert ist.
+3. Doppelklicken Sie in der Liste **Eincheck Richtlinie** auf **Code Analyse**, und stellen Sie sicher, dass das Kontrollkästchen **Code Analyse für verwalteten Code erzwingen** aktiviert ist.
 
 4. Klicken Sie in der Liste **diesen Regelsatz ausführen** auf **\<Select Rule Set from Source Control>** .
 

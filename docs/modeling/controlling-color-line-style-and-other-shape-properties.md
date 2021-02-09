@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 759c7def23cf8ac0df33a75d25eb5bcbcf44b209
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 68eda84ec014dec2931e2c35a04dec1ed878e6c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861659"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Steuern von Farbe, Linienstil und anderen Eigenschaften von Formen
 
@@ -23,7 +23,7 @@ Einige Formeigenschaften, z. b. Farbe, können "verfügbar" sein. Das heißt, da
 ## <a name="exposing-a-property"></a>Verfügbar machen einer Eigenschaft
  Einige Formeigenschaften, z. b. Farbe, können mit dem Wert einer Domänen Eigenschaft verknüpft werden.
 
- Wählen Sie in der DSL-Definition eine Form, einen Connector oder eine Diagramm Klasse aus. Wählen Sie im Kontextmenü die Option verfügbar **Hinzufügen**aus, und wählen Sie dann die gewünschte Eigenschaft aus, z. b. Füllfarbe.
+ Wählen Sie in der DSL-Definition eine Form, einen Connector oder eine Diagramm Klasse aus. Wählen Sie im Kontextmenü die Option verfügbar **Hinzufügen** aus, und wählen Sie dann die gewünschte Eigenschaft aus, z. b. Füllfarbe.
 
  Die Form verfügt jetzt über eine Domänen Eigenschaft, die Sie im Programmcode oder als Benutzer festlegen können.
 

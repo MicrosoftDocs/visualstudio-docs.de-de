@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e0c96c93e3583a7d2877a5f4f7bd70561b650b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23629c2503fd14a758cf3f68f2576db601dd39cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861854"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Auswählen einer Lösungsvorlage für eine domänenspezifische Sprache
 Um eine domänenspezifische Sprachlösung zu erstellen, wählen Sie eine der Lösungs Vorlagen aus, die im Domain-Specific-sprach-Designer-Assistenten verfügbar sind. Indem Sie die Vorlage auswählen, die der Sprache am ehesten ähnelt, die Sie erstellen möchten, können Sie die Änderungen minimieren, die Sie an der Start Lösung vornehmen müssen.

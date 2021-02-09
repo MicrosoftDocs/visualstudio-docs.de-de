@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 84acec58ed78884f0b037950fa25ce40f6adcbfc
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: 96a0c0b7fa1f2c703cefde31070ed98c5edddcb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859761"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>Migration von der Legacy Analyse (FxCop) zur Quell Analyse (.net-Analyzers)
 
@@ -47,6 +47,6 @@ Weitere Informationen zum Konfigurieren der .net-Analyzers finden Sie unter:
 
 - Weitere Informationen zum Konfigurieren von Analysemodulen mithilfe von vordefinierten Regeln mit Editor config oder einer Regel Satz Datei finden Sie unter [Aktivieren einer Kategorie von Regeln](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Migrieren von FxCop-Analysen zu .net-Analysemodulen](migrate-from-fxcop-analyzers-to-net-analyzers.md)
+- [Migrieren von FxCop-Analysetools zu .NET-Analysetools](migrate-from-fxcop-analyzers-to-net-analyzers.md)
