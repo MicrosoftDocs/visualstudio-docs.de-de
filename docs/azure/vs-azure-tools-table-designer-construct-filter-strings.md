@@ -2,17 +2,17 @@
 title: Erstellen von Filterzeichenfolgen für den Tabellen-Designer | Microsoft Docs
 description: Erstellen von Filterzeichenfolgen für den Tabellen-Designer
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846204"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Erstellen von Filterzeichenfolgen für den Tabellen-Designer
 ## <a name="overview"></a>Übersicht
@@ -23,7 +23,7 @@ Die WCF Data Services basieren auf dem [Open Data Protocol](https://www.odata.or
 ## <a name="comparison-operators"></a>Vergleichsoperatoren
 Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstützt:
 
-| Logischer Operator | BESCHREIBUNG | Filterzeichenfolge (Beispiel) |
+| Logischer Operator | Beschreibung | Filterzeichenfolge (Beispiel) |
 | --- | --- | --- |
 | eq |Gleich |Ort eq 'Redmond' |
 | gt |Größer als |Preis gt 20 |
@@ -31,7 +31,7 @@ Die folgenden logischen Operatoren werden für alle Eigenschaftentypen unterstü
 | lt |Kleiner als |Preis lt 20 |
 | le |Kleiner als oder gleich |Preis le 100 |
 | ne |Ungleich |Ort ne 'London' |
-| und |Und |Preis le 200 and Preis gt 3,5 |
+| und |And |Preis le 200 and Preis gt 3,5 |
 | oder |oder |Preis le 3,5 or Preis gt 200 |
 | not |Not |not isAvailable |
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b7335e3c5b15365680d70486f5f8ec8d19e90af4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846490"
 ---
 # <a name="source-control-design-decisions"></a>Entwurfsentscheidungen bei der Quellcodeverwaltung
 Die folgenden Entwurfsentscheidungen sollten bei der Implementierung der Quell Code Verwaltung für Projekte berücksichtigt werden.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - searching contacts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6813a137558a245c66d4b24deac07b1a6a77796a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: afe17292db70f2d2fdd16e7c7b388343fbf9db9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841945"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Gewusst wie: Programm gesteuertes Suchen eines bestimmten Kontakts
   Dieses Beispiel durchsucht einen Outlook-Kontaktordner über den Vor- und Nachnamen nach einem bestimmten Kontakt. Im Beispiel wird vorausgesetzt, dass ein Kontakt namens **John Evans** im Kontaktordner vorhanden ist.

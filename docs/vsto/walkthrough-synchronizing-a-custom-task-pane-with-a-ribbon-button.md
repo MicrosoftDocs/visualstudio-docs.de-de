@@ -22,15 +22,15 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9ac8c4ef96a421ece6c0591d4340d570d71c08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846282"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Menü Band Schaltfläche
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein benutzerdefinierter Aufgabenbereich erstellt wird, den Benutzer durch Klicken auf eine UMSCHALT Fläche auf dem Menüband ausblenden oder anzeigen können. Sie sollten immer ein UI-Element erstellen, z. B. eine Schaltfläche, auf die Benutzer klicken können, um Ihren benutzerdefinierten Aufgabenbereich anzeigen oder ausblenden zu können, da Microsoft Office-Anwendung keine Standardmethode für Benutzer bereitstellen, um benutzerdefinierte Aufgabenbereiche anzuzeigen oder auszublenden.

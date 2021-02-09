@@ -11,15 +11,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b655a7bb6ab4b9ab971c0edd775aa8f29150dead
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b22870cdb038adee84adc0fd7a56c269cb048626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841912"
 ---
 # <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Ungültige Eigenschaften in der OFS-Datei für die Message-Klasse.
 

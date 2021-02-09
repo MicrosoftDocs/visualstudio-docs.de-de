@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def9407d309e5f673d0a7a2cdc3710fae557be50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847842"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite
 
@@ -75,7 +75,7 @@ Fügen Sie dem Projekt ein **Anwendungs Seiten** Element hinzu, um eine Anwendun
 
 Das Element Anwendungsseite ermöglicht Ihnen die Verwendung eines Designers, um der Anwendungsseite ASP.NET-Steuerelemente hinzuzufügen. Dieser Designer ist mit dem in Visual Web Developer verwendeten Designer identisch. Fügen Sie der **Quell** Ansicht des Designers eine Bezeichnung, eine Optionsfeld Liste und eine Tabelle hinzu, und legen Sie dann die Eigenschaften genauso fest wie beim Entwerfen einer beliebigen Standard-ASP.NET-Seite.
 
-1. Wählen Sie in der Menüleiste **View**  >  **Toolbox** anzeigen aus.
+1. Wählen Sie in der Menüleiste   >  **Toolbox** anzeigen aus.
 
 2. Führen Sie im Knoten Standard der **Toolbox** einen der folgenden Schritte aus:
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848011"
 ---
 # <a name="strings-element"></a>Strings-Element
 Das Strings-Element muss mindestens ein untergeordnetes **ButtonText** -Element enthalten. Alle anderen untergeordneten Elemente sind optional. Ungültige XML-Zeichen wie z. b. ' & ' und ' < ' müssen als Entitäten (' &amp; ' und ' &lt; ' usw.) codiert werden.
@@ -41,11 +41,11 @@ Das Strings-Element muss mindestens ein untergeordnetes **ButtonText** -Element 
 
 |attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|language|Optional. Language = ".".|
+|language|Dies ist optional. Language = ".".|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |Folgendes|Mithilfe dieses Felds und der fünf folgenden Textfelder in einer Befehls Definition können Sie den Text angeben, der in verschiedenen Menüs angezeigt wird. Standardmäßig wird das `ButtonText` Feld in den Menü Controllern angezeigt. Das `ButtonText` Feld wird auch zur Standardeinstellung, wenn die anderen Textfelder leer sind. Das `ButtonText` Feld darf nicht leer sein, auch wenn die anderen Textfelder angegeben werden.|
 |ToolTip Text|Das- `ToolTipText` Feld gibt den Text an, der in der QuickInfo für ein Menü Element angezeigt wird.<br /><br /> Wenn das `ToolTipText` Feld leer ist, `ButtonText` wird das Feld verwendet.|
@@ -56,7 +56,7 @@ Das Strings-Element muss mindestens ein untergeordnetes **ButtonText** -Element 
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Button-Element](../extensibility/button-element.md)|Definiert ein Element, mit dem der Benutzer interagieren kann.|
 |[Menu-Element](../extensibility/menu-element.md)|Definiert ein einzelnes Menü Element.|

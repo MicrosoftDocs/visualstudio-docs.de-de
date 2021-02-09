@@ -14,15 +14,15 @@ helpviewer_keywords:
 - workbooks, ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ce099c7cf531e4fa9acfe725959023e579577c8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847439"
 ---
 # <a name="work-with-ranges"></a>Arbeiten mit Bereichen
   Die <xref:Microsoft.Office.Tools.Excel.NamedRange>-Klasse und die <xref:Microsoft.Office.Interop.Excel.Range>-Klasse enthalten die Methoden und Eigenschaften, die Sie zum Ausführen von Aufgaben mit Bereichen verwenden.

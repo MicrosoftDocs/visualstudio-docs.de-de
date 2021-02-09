@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], calendars
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 38bf1aa02d72621bc1bcc7376a15ea975feb0860
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0651b392563ff90cb349a3a8e737717bf375bea6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847582"
 ---
 # <a name="work-with-calendar-items"></a>Arbeiten mit Kalenderelementen
   Die <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> -Klasse enthält die Methoden und Eigenschaften, die Sie zum Ausführen von Aufgaben mit Kalenderelementen verwenden.
