@@ -14,15 +14,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896761"
 ---
 # <a name="actions-pane-overview"></a>Übersicht über den Aktionsbereich
   Ein Aktionsbereich ist ein anpassbarer Aufgabenbereich für **Dokument Aktionen** , der an ein bestimmtes Microsoft Office Word-Dokument oder eine Microsoft Office Excel-Arbeitsmappe angefügt wird. Der Aktionsbereich wird im Aufgabenbereich Office zusammen mit anderen integrierten Aufgabenbereichen gehostet, wie z. b. dem Aufgabenbereich **XML-Quelle** in Excel oder dem Aufgabenbereich **Formatvorlagen und Formatierung** in Word. Sie können Windows Forms-Steuerelemente oder WPF-Steuerelemente verwenden, um die Benutzeroberfläche des Aktionsbereichs zu gestalten.
@@ -150,7 +150,7 @@ ms.locfileid: "96844828"
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Verwenden von WPF-Steuerelementen in Office-Lösungen](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Office-Benutzeroberflächen Anpassung](../vsto/office-ui-customization.md)
 - [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)

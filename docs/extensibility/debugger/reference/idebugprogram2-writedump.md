@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265c77acdb15069c1fcd7f33d93d4ff74a528eca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896148"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Schreibt ein dump in eine Datei.
@@ -28,14 +28,14 @@ Schreibt ein dump in eine Datei.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT WriteDump( 
+HRESULT WriteDump( 
    DUMPTYPE  DumpType,
    LPCOLESTR pszDumpUrl
 );
 ```
 
 ```csharp
-int WriteDump( 
+int WriteDump( 
    enum_DUMPTYPE  DumpType,
    string         pszDumpUrl
 );

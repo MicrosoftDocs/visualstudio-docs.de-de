@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e72922b348c8744f10037e199e93f735ff4be8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee551ba78ceb91c2622af217d8863597e028be9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896011"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Ruft Informationen über den Viewer für diesen Eigenschaftentyp ab, um diesen Viewer zu instanziieren.
@@ -28,18 +28,18 @@ Ruft Informationen über den Viewer für diesen Eigenschaftentyp ab, um diesen V
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetManagedViewerCreationData(
-   BSTR*                  assemName,
-   IEEDataStorage**       assemBytes,
-   IEEDataStorage**       assemPdb,
-   BSTR*                  className,
-   ASSEMBLYLOCRESOLUTION* alr,
-   BOOL*                  replacementOk
+HRESULT GetManagedViewerCreationData(
+   BSTR*                  assemName,
+   IEEDataStorage**       assemBytes,
+   IEEDataStorage**       assemPdb,
+   BSTR*                  className,
+   ASSEMBLYLOCRESOLUTION* alr,
+   BOOL*                  replacementOk
 );
 ```
 
 ```csharp
-int GetManagedViewerCreationData(
+int GetManagedViewerCreationData(
    out string                     assemName,
    out IEEDataStorage             assemBytes,
    out IEEDataStorage             assemPdb,

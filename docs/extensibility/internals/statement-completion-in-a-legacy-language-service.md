@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 815b47a700e87852596d7a65e341953f65b66cf9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894828"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Anweisungsvervollständigung in einem Legacysprachdienst
 Die Anweisungs Vervollständigung ist der Prozess, mit dem der Sprachdienst Benutzern hilft, ein sprach Schlüsselwort oder Element zu beenden, das Sie im Kern-Editor eingegeben haben. In diesem Thema wird erläutert, wie die Anweisungs Vervollständigung funktioniert und wie Sie in Ihrem Sprachdienst implementiert wird.

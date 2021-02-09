@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895777"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1
 Haben Sie schon einmal gedacht, wie Sie Ihren eigenen Projekttyp erstellen? Fragen Sie sich, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen? Werfen wir einen Blick auf die Praxis, und sehen wir uns an, was tatsächlich passiert.
@@ -89,7 +89,7 @@ devenv /installvstemplates
  Je niedriger die Zahl der Priorität ist, desto höher ist die Position in der Struktur.
 
 ##### <a name="developeractivity"></a>Developeractivity
- Wenn dieser Unterschlüssel vorhanden ist, wird die Position des Stamm Knotens über das Dialogfeld Entwicklereinstellungen gesteuert. Ein auf ein Objekt angewendeter
+ Wenn dieser Unterschlüssel vorhanden ist, wird die Position des Stamm Knotens über das Dialogfeld Entwicklereinstellungen gesteuert. Beispiel:
 
  Developeractivity REG_SZ VC #
 
