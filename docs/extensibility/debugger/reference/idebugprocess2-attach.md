@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874177"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Fügt den Sitzungs-Debug-Manager (SDM) an den Prozess an.
@@ -28,20 +28,20 @@ Fügt den Sitzungs-Debug-Manager (SDM) an den Prozess an.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT Attach( 
-   IDebugEventCallback2* pCallback,
-   GUID*                 rgguidSpecificEngines,
-   DWORD                 celtSpecificEngines,
-   HRESULT*              rghrEngineAttach
+HRESULT Attach( 
+   IDebugEventCallback2* pCallback,
+   GUID*                 rgguidSpecificEngines,
+   DWORD                 celtSpecificEngines,
+   HRESULT*              rghrEngineAttach
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugEventCallback2 pCallback,
-   Guid[]               rgguidSpecificEngines,
-   uint                 celtSpecificEngines,
-   int[]                rghrEngineAttach
+int Attach( 
+   IDebugEventCallback2 pCallback,
+   Guid[]               rgguidSpecificEngines,
+   uint                 celtSpecificEngines,
+   int[]                rghrEngineAttach
 );
 ```
 
@@ -61,7 +61,7 @@ in Die Anzahl der Debug-engines im `rgguidSpecificEngines` Array und die Größe
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. In der folgenden Tabelle werden andere mögliche Werte angezeigt.
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Der angegebene Prozess ist bereits an den Debugger angefügt.|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Während der Anfüge Prozedur ist ein Sicherheits Verstoß aufgetreten.|

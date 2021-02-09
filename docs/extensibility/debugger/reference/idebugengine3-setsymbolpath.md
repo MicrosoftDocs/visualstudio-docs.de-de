@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fbe5128900fa10147c747cbcba4129e96d4c4ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aee3b02acfa54cbe9d947be8cb781725ebb4d071
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874295"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 Legt den Pfad oder die Pfade fest, die nach Debugsymbolen durchsucht werden.
