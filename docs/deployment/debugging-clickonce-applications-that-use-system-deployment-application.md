@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: d6a014afff6c26b8cfe8f4f7fae508f78ef5905f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912246"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Debuggen von ClickOnce-Anwendungen, die System.Deployment.Application verwenden
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] können Sie mit der Bereitstellung konfigurieren, wie eine Anwendung aktualisiert wird. Wenn Sie jedoch erweiterte Bereitstellungs Features verwenden und anpassen müssen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , müssen Sie auf das von bereitgestellte Bereitstellungs Objektmodell zugreifen <xref:System.Deployment.Application> . Sie können die <xref:System.Deployment.Application> APIs für erweiterte Aufgaben verwenden, wie z. b.:
@@ -49,7 +49,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 4. Fügen Sie den archivierten Quell Speicherort den Eigenschaften für diese neue Projekt Mappe hinzu. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten Projekt Mappe, und klicken Sie dann auf **Eigenschaften** Wählen Sie im Dialogfeld **Eigenschaften Seiten** die Option **Quelldateien debuggen** aus, und fügen Sie dann das Verzeichnis des archivierten Quellcodes hinzu. Andernfalls findet der Debugger die veralteten Quelldateien, da die Quelldatei Pfade in der PDB-Datei aufgezeichnet werden. Wenn der Debugger veraltete Quelldateien verwendet, wird eine Meldung angezeigt, die besagt, dass die Quelle nicht stimmt.
 
-5. Stellen Sie sicher, dass der Debugger die *PDB* -Dateien finden kann. Wenn Sie diese mit der Anwendung bereitgestellt haben, findet der Debugger diese automatisch. Sie sucht immer zuerst neben der fraglichen Assembly. Andernfalls müssen Sie den Archivpfad zu den **Symbol Datei Standorten (. pdb)** hinzufügen (um auf diese Option zuzugreifen, klicken Sie im **Menü Extras** auf **Optionen** , öffnen Sie den Knoten **Debuggen** , und klicken Sie auf **Symbole** ).
+5. Stellen Sie sicher, dass der Debugger die *PDB* -Dateien finden kann. Wenn Sie diese mit der Anwendung bereitgestellt haben, findet der Debugger diese automatisch. Sie sucht immer zuerst neben der fraglichen Assembly. Andernfalls müssen Sie den Archivpfad zu den **Symbol Datei Standorten (. pdb)** hinzufügen (um auf diese Option zuzugreifen, klicken Sie im **Menü Extras** auf **Optionen**, öffnen Sie den Knoten **Debuggen** , und klicken Sie auf **Symbole**).
 
 6. Debuggen Sie, was zwischen den `CheckForUpdate` `Download` / `Update` Methoden aufrufen und passiert.
 
@@ -78,5 +78,5 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
    Verwenden Sie die- <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> Eigenschaft, um die APIs nur aufzurufen, <xref:System.Deployment.Application> Wenn die Anwendung bereitgestellt wird. die APIs sollten beim Debuggen in nicht aufgerufen werden [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:System.Deployment.Application>

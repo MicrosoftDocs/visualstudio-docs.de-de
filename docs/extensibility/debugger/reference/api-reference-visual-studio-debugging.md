@@ -7,22 +7,22 @@ helpviewer_keywords:
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a2df6d82099a927664620e19096107f283afada
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912035"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API-Referenz (Visual Studio-Debugging)
 Der Referenz Abschnitt enthält eine konzeptionelle Übersicht über die API, eine Anleitung, die die Syntax und Verwendung für alle API-Elemente sowie eine Reihe von Codebeispielen zeigt. Alle Verweise sind alphabetisch nach Kategorie aufgelistet.
 
  In der folgenden Tabelle werden die `HRESULT` von-Methoden zurückgegebenen allgemeinen Werte angezeigt.
 
-|Name|BESCHREIBUNG|value|
+|Name|BESCHREIBUNG|Wert|
 |----------|-----------------|-----------|
 |S_OK|Erfolg.|0x00000000|
 |E_UNEXPECTED|Unerwarteter Fehler.|0x8000FFFF|

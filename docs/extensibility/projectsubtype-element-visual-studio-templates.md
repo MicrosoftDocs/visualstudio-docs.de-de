@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2ee2e267461d37456c9a2e64c43ae104d19ee615
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911762"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType-Element (Visual Studio-Vorlagen)
 Klassifiziert die Vorlage in eine Unterkategorie des Werts, der im-Element angegeben ist `ProjectType` .
@@ -55,7 +55,7 @@ Klassifiziert die Vorlage in eine Unterkategorie des Werts, der im-Element angeg
 
  Dieser Wert gibt die Unterkategorie der Vorlage an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `ProjectSubType` ist ein optionales untergeordnetes Element von `TemplateData`.
 
  Das- `ProjectSubType` Element stellt eine Unterkategorie für das [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) -Element bereit. Dieser Wert kann Folgendes umfassen:

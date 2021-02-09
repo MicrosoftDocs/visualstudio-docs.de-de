@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911233"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Ändern des Erscheinungs Bilds eines Befehls
 Sie können Ihrem Benutzer Feedback geben, indem Sie die Darstellung eines Befehls ändern. Beispielsweise kann es sein, dass ein Befehl anders aussieht, wenn er nicht verfügbar ist. Sie können Befehle verfügbar oder nicht verfügbar machen, Sie ausblenden oder anzeigen oder im Menü aktivieren oder deaktivieren.
@@ -86,7 +86,7 @@ Um das Aussehen eines Befehls zu ändern, führen Sie eine der folgenden Aktione
 
 8. **Im Menü Extras** sollte nun **neuer Text** angezeigt werden. Klicken Sie auf **neuer Text**. Der Befehl sollte nun abgeblendet sein.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a90c8de2fca62ef303ce8055993d8e2f6d230493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910889"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType-Element (Visual Studio-Vorlagen)
 Kategorisiert die Projektvorlage, sodass Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** unter der angegebenen Gruppe angezeigt wird.
@@ -63,7 +63,7 @@ Kategorisiert die Projektvorlage, sodass Sie im Dialogfeld **Neues Projekt** ode
 
 - `Web`: Gibt an, dass die Vorlage ein Webprojekt oder-Element erstellt. Wenn das `ProjectType` Element diesen Wert enthält, wird die Sprache des Projekts oder Elements im [ProjectSubType-Element (Visual Studio-Vorlagen)](../extensibility/projectsubtype-element-visual-studio-templates.md)definiert.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `ProjectType` ist ein erforderliches untergeordnetes Element von `TemplateData`.
 
  Der Wert des- `ProjectType` Elements gibt an, wo sich die Vorlage im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** befindet. Beispielsweise wird `ProjectType` `CSharp` im Dialogfeld **Neues Projekt** unter dem Knoten **Visual c#** eine Vorlage mit dem Wert angezeigt.

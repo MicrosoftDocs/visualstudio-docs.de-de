@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddfe9d70cafc6acf7526c8819cb9ae3f46ea8022
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910558"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Dokument Schutz in Projektmappen auf Dokument Ebene
   Sie können die Schutz Features von Microsoft Office Word und Microsoft Office Excel in Projekten auf Dokument Ebene verwenden. Diese Features blockieren nicht autorisierte Benutzer daran, Änderungen an geschützten Teilen eines Dokuments vorzunehmen.
@@ -54,7 +54,7 @@ ms.locfileid: "96846193"
 ## <a name="setting-the-password"></a>Festlegen des Kennworts
  Visual Studio aktiviert automatisch den Schutz, aber standardmäßig wird kein Kennwort bereitstellt. Wenn Sie möchten, dass der Dokument Schutz ein Kennwort hat, müssen Sie es vor dem Bereitstellen der Lösung hinzufügen. Durch das Hinzufügen eines Kennworts können autorisierte Benutzer den Schutz aus dem Dokument entfernen. ohne Kennwort kann der Schutz nicht einfach entfernt werden. Ausführliche Informationen zum Festlegen eines Kennworts finden Sie in der Hilfe zu einer bestimmten Office-Anwendung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Programm gesteuertes schützen von Dokumenten und Teilen von Dokumenten](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
 - [Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)

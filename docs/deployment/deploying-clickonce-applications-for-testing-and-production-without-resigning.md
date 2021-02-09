@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5644a890a8705c68852cb5f67e4d998e12338dc
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4d5d7244f70852dee29813834fc427c888df9c1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912150"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Bereitstellen von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren
 In diesem Artikel wird eine Funktion von ClickOnce beschrieben, die in der .NET Framework Version 3,5 eingeführt wurde, die die Bereitstellung von ClickOnce-Anwendungen von mehreren Netzwerk Standorten aus ermöglicht, ohne dass die ClickOnce-Manifeste neu signiert oder geändert werden
@@ -63,6 +63,6 @@ In diesem Artikel wird eine Funktion von ClickOnce beschrieben, die in der .NET 
 ## <a name="create-a-deployment"></a>Erstellen einer Bereitstellung
  Eine Schritt-für-Schritt-Anleitung zum Erstellen von bereit Stellungen, die von verschiedenen Netzwerk Standorten aus bereitgestellt werden können, finden Sie unter Exemplarische Vorgehensweise [: Manuelles Bereitstellen einer ClickOnce-Anwendung, für die keine erneute Signierung erforderlich](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)ist
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [*MageUI.exe* (Manifest Generation and Editing Tool, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
