@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: c1a6e424fe76b94321ca79ab08496cd160969890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867528"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu DataSets in n-schichtigen Anwendungen
 
@@ -28,7 +28,7 @@ Sie können die Funktionalität eines Datasets erweitern, indem Sie eine partiel
 
 Der Code, mit dem ein Dataset definiert wird, wird jedes Mal generiert, wenn Änderungen an der datasetdefinition (im typisierten DataSet) vorgenommen werden. Dieser Code wird auch generiert, wenn Sie während der Ausführung eines Assistenten, der die Konfiguration eines Datasets ändert, Änderungen vornehmen. Um zu verhindern, dass Ihr Code während der erneuten Generierung eines Datasets gelöscht wird, fügen Sie der partiellen Klassendatei des Datasets Code hinzu.
 
-Nachdem Sie den DataSet-und TableAdapter-Code getrennt haben, ist das Ergebnis standardmäßig eine diskrete Klassendatei in jedem Projekt. Das ursprüngliche Projekt enthält eine Datei mit dem Namen *DatasetName. Designer. vb* (oder *DatasetName.Designer.cs* ), die den TableAdapter-Code enthält. Das Projekt, das in der **DataSet-Projekt** Eigenschaft festgelegt ist, verfügt über eine Datei namens *DatasetName. DataSet. Designer. vb* (oder *DatasetName.DataSet.Designer.cs* ). Diese Datei enthält den DataSet-Code.
+Nachdem Sie den DataSet-und TableAdapter-Code getrennt haben, ist das Ergebnis standardmäßig eine diskrete Klassendatei in jedem Projekt. Das ursprüngliche Projekt enthält eine Datei mit dem Namen *DatasetName. Designer. vb* (oder *DatasetName.Designer.cs*), die den TableAdapter-Code enthält. Das Projekt, das in der **DataSet-Projekt** Eigenschaft festgelegt ist, verfügt über eine Datei namens *DatasetName. DataSet. Designer. vb* (oder *DatasetName.DataSet.Designer.cs*). Diese Datei enthält den DataSet-Code.
 
 > [!NOTE]
 > Beim Trennen von Datasets und TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
@@ -65,7 +65,7 @@ Nachdem Sie den DataSet-und TableAdapter-Code getrennt haben, ist das Ergebnis s
     }
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)

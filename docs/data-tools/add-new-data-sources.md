@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867437"
 ---
 # <a name="add-new-data-sources"></a>Hinzufügen neuer Datenquellen
 
@@ -53,7 +53,7 @@ Sie erstellen und bearbeiten Datenquellen mithilfe des **Assistenten zum Konfigu
 Nachdem Sie eine Datenquelle erstellt haben, wird Sie im Fenster **Datenquellen** Tool angezeigt.
 
 > [!TIP]
-> Um das Fenster **Datenquellen** zu öffnen, stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann **UMSCHALT** + **alt** + **D** , oder wählen Sie **View**  >  **andere Windows** -  >  **Datenquellen** anzeigen aus.
+> Um das Fenster **Datenquellen** zu öffnen, stellen Sie sicher, dass das Projekt geöffnet ist, und drücken Sie dann **UMSCHALT** + **alt** + **D** , oder wählen Sie   >  **andere Windows**-  >  **Datenquellen** anzeigen aus.
 
 Sie können eine Datenquelle aus dem **Datenquellen** Fenster auf eine Formular Entwurfs Oberfläche oder ein Steuerelement ziehen. Dies bewirkt, dass Code Bausteine generiert werden, in dem die Daten aus dem Datenspeicher angezeigt werden.
 
@@ -97,7 +97,7 @@ Sie können eine Datenquelle mit den folgenden Diensttypen erstellen:
 
 - [WCF-Dienste](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- WEB SERVICES
+- Webdienste
 
     > [!NOTE]
     > Die Elemente, die im **Datenquellen** Fenster angezeigt werden, sind abhängig von den Daten, die vom Dienst zurückgegeben werden. Einige Dienste stellen möglicherweise nicht genügend Informationen bereit, damit der **Assistent zum Konfigurieren von Datenquellen** bindbare Objekte erstellen kann. Wenn der Dienst beispielsweise ein nicht typisiertes DataSet zurückgibt, werden beim Beenden des Assistenten keine Elemente im **Datenquellen** Fenster angezeigt. Dies ist darauf zurückzuführen, dass nicht typisierte Datasets kein Schema bereitstellen und der Assistent daher nicht über genügend Informationen zum Erstellen der Datenquelle verfügt.
@@ -118,7 +118,7 @@ Wenn Sie an ein Objekt in einer Assembly oder einem Projekt binden möchten, das
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Datenquelle für eine SharePoint-Liste
 
-Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über WCF Data Services verfügbar. Daher ist das Erstellen einer SharePoint-Datenquelle mit dem Erstellen einer Datenquelle aus einem Dienst identisch. Durch Auswahl des **SharePoint** -Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen. Hierfür ist das SharePoint SDK erforderlich.
+Sie können eine Datenquelle aus einer SharePoint-Liste erstellen, indem Sie den **Assistenten zum Konfigurieren von Datenquellen** ausführen und den Datenquellentyp **SharePoint** auswählen. SharePoint macht Daten über WCF Data Services verfügbar. Daher ist das Erstellen einer SharePoint-Datenquelle mit dem Erstellen einer Datenquelle aus einem Dienst identisch. Durch Auswahl des **SharePoint**-Elements im **Assistenten zum Konfigurieren von Datenquellen** wird das Dialogfeld **Dienstverweis hinzufügen** geöffnet, in dem Sie durch Zeigen auf den SharePoint-Server eine Verbindung mit dem SharePoint-Datendienst herstellen. Hierfür ist das SharePoint SDK erforderlich.
 
 ## <a name="see-also"></a>Siehe auch
 

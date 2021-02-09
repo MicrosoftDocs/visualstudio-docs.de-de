@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 3da0c4e9835c9b6f6498aa28b82f2e631d1717ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867411"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Binden von Windows Forms-Steuerelementen an Daten in Visual Studio
 
@@ -33,7 +33,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Windo
 ![Datenquellen-Zieh Vorgang](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Wenn das Fenster **Datenquellen** nicht sichtbar ist, können Sie es öffnen, indem **View** Sie  >  **andere Windows**  >  - **Datenquellen** anzeigen auswählen oder **UMSCHALT** + **alt** + **D** drücken. Sie müssen ein Projekt in Visual Studio geöffnet haben, um das Fenster **Datenquellen** anzuzeigen.
+> Wenn das Fenster **Datenquellen** nicht sichtbar ist, können Sie es öffnen, indem Sie  >  **andere Windows**  >  -**Datenquellen** anzeigen auswählen oder **UMSCHALT** + **alt** + **D** drücken. Sie müssen ein Projekt in Visual Studio geöffnet haben, um das Fenster **Datenquellen** anzuzeigen.
 
 Vor dem Ziehen von Elementen können Sie den Steuer Elementtyp festlegen, an den die Bindung erfolgen soll. Abhängig davon, ob Sie die Tabelle selbst oder eine einzelne Spalte auswählen, werden unterschiedliche Werte angezeigt.  Sie können auch benutzerdefinierte Werte festlegen. Für eine **Tabelle bedeutet das** , dass jede Spalte an ein separates Steuerelement gebunden ist.
 
@@ -82,7 +82,7 @@ Die folgende Abbildung zeigt die standardmäßigen Daten gebundenen Steuerelemen
 
 Beachten Sie auch, dass jedes Steuerelement über ein Smarttag verfügt. Dieses Tag ermöglicht Anpassungen, die nur für dieses Steuerelement gelten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binding controls to data in Visual Studio (Binden von Steuerelementen an Daten in Visual Studio)](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Datenbindung in Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

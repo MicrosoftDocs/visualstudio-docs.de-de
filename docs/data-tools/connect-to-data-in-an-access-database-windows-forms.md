@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 156acfd56789ec13201738e72c6df283e257e94f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eeaafdca1a3a4d6fb73ca275c4fc97ce67094d8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867268"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Herstellen einer Verbindung mit Daten in einer Access-Datenbank
 
@@ -27,7 +27,7 @@ Mithilfe von Visual Studio können Sie eine Verbindung mit einer Access-Datenban
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Um diese Prozeduren verwenden zu können, benötigen Sie ein Windows Forms-oder WPF-Projekt und entweder eine Access-Datenbank ( *. accdb* -Datei) oder eine Access 2000-2003-Datenbank ( *MDB* -Datei). Führen Sie die Prozedur aus, die dem Dateityp entspricht.
+Um diese Prozeduren verwenden zu können, benötigen Sie ein Windows Forms-oder WPF-Projekt und entweder eine Access-Datenbank (*. accdb* -Datei) oder eine Access 2000-2003-Datenbank (*MDB* -Datei). Führen Sie die Prozedur aus, die dem Dateityp entspricht.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Erstellen eines Datasets für eine ACCDB-Datei
 
@@ -35,7 +35,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken he
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
-2. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Windows** -  >  **Datenquellen** aus.
+2. Um das Fenster **Datenquellen** zu öffnen, wählen Sie im Menü **Ansicht** die Option **Weitere Windows**-  >  **Datenquellen** aus.
 
    ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
@@ -53,7 +53,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit Datenbanken he
 
 7. Wenn die **Datenquelle** nicht auf die **Microsoft Access-Datenbankdatei** festgelegt ist, wählen Sie die Schaltfläche **ändern** .
 
-   Das Dialogfeld **Datenquelle ändern** wird geöffnet. Wählen Sie in der Liste der Datenquellen die Option **Microsoft Access-Datenbankdatei** aus. Wählen Sie in der Dropdown-Dropdown- **Datei des Datenanbieters** **.NET Framework Datenanbieter für OLE DB aus** , und klicken Sie dann auf **OK**.
+   Das Dialogfeld **Datenquelle ändern** wird geöffnet. Wählen Sie in der Liste der Datenquellen die Option **Microsoft Access-Datenbankdatei** aus. Wählen Sie in der Dropdown-Dropdown- **Datei des Datenanbieters** **.NET Framework Datenanbieter für OLE DB aus**, und klicken Sie dann auf **OK**.
 
 8. Wählen Sie neben **Name der Datenbankdatei** die Option **Durchsuchen** aus, navigieren Sie zu Ihrer *ACCDB* -Datei, und wählen Sie **Öffnen** aus.
 
@@ -77,7 +77,7 @@ Stellen Sie mithilfe des folgenden Verfahrens eine Verbindung mit mit Access 200
 
 1. Öffnen Sie in Visual Studio ein Windows Forms-oder WPF-Anwendungsprojekt.
 
-2. Wählen Sie im Menü **Ansicht** die Option **Weitere Windows** -  >  **Datenquellen** aus.
+2. Wählen Sie im Menü **Ansicht** die Option **Weitere Windows**-  >  **Datenquellen** aus.
 
    ![Weitere Windows-Datenquellen anzeigen](../data-tools/media/viewdatasources.png)
 
@@ -113,11 +113,11 @@ Das soeben erstellte Dataset ist im **Datenquellen** Fenster verfügbar. Sie kö
 
 - Wählen Sie im Fenster **Datenquellen** die Option Elemente aus, und ziehen Sie diese auf das Formular oder die Entwurfs Oberfläche (siehe Übersicht über das [Binden von Windows Forms Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) oder [WPF-Datenbindung](/dotnet/desktop-wpf/data/data-binding-overview)).
 
-- Öffnen Sie die Datenquelle im **DataSet-Designer** , um die Objekte, aus denen das Dataset besteht, zu bearbeiten oder dem Dataset Objekte hinzuzufügen.
+- Öffnen Sie die Datenquelle im **DataSet-Designer**, um die Objekte, aus denen das Dataset besteht, zu bearbeiten oder dem Dataset Objekte hinzuzufügen.
 
 - Fügen Sie dem- <xref:System.Data.DataTable.ColumnChanging> Ereignis oder dem- <xref:System.Data.DataTable.RowChanging> Ereignis der Datentabellen im DataSet eine Validierungs Logik hinzu (siehe [Validieren von Daten in Datasets](../data-tools/validate-data-in-datasets.md)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen von Verbindungen](../data-tools/add-new-connections.md)
 - [Übersicht über die WPF-Datenbindung](/dotnet/framework/wpf/data/data-binding-overview)
