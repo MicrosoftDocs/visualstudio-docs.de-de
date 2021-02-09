@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3de9b8f7ef30cffbdd78399dc831060e413ba51b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa8e8d9e07510a10b1b32534f3323dab4c84a22
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899112"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 Eine-Struktur, die einen benutzerdefinierten Viewer oder eine typschnell Ansicht identifiziert.
@@ -28,24 +28,24 @@ Eine-Struktur, die einen benutzerdefinierten Viewer oder eine typschnell Ansicht
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-typedef struct tagDEBUG_CUSTOM_VIEWER {
-    DWORD dwID;
-    BSTR  bstrMenuName;
-    BSTR  bstrDescription;
-    GUID  guidLang;
-    GUID  guidVendor;
-    BSTR  bstrMetric;
-} DEBUG_CUSTOM_VIEWER;
+typedef struct tagDEBUG_CUSTOM_VIEWER {
+    DWORD dwID;
+    BSTR  bstrMenuName;
+    BSTR  bstrDescription;
+    GUID  guidLang;
+    GUID  guidVendor;
+    BSTR  bstrMetric;
+} DEBUG_CUSTOM_VIEWER;
 ```
 
 ```csharp
-public struct DEBUG_CUSTOM_VIEWER {
-    public uint   dwID;
-    public string bstrMenuName;
-    public string bstrDescription;
-    public Guid   guidLang;
-    public Guid   guidVendor;
-    public string bstrMetric;
+public struct DEBUG_CUSTOM_VIEWER {
+    public uint   dwID;
+    public string bstrMenuName;
+    public string bstrDescription;
+    public Guid   guidLang;
+    public Guid   guidVendor;
+    public string bstrMetric;
 };
 ```
 
@@ -78,7 +78,7 @@ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

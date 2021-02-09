@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41abd2b5a48f6e5e126747326e9815f3c2f46787
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0d214764e8067e1165eeacc044bddc1994230562
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899674"
 ---
 # <a name="t4-assembly-directive"></a>T4-Assemblydirektive
 
@@ -38,7 +38,7 @@ In einer Visual Studio-Textvorlage für die Entwurfszeit `assembly` lädt die-Di
 
 - Absoluter Pfad der Assembly
 
-  Sie können die `$(variableName)` -Syntax verwenden, um auf die Visual Studio `$(SolutionDir)` -Variablen, z. b., und `%VariableName%` auf Umgebungsvariablen zu verweisen. Zum Beispiel:
+  Sie können die `$(variableName)` -Syntax verwenden, um auf die Visual Studio `$(SolutionDir)` -Variablen, z. b., und `%VariableName%` auf Umgebungsvariablen zu verweisen. Beispiel:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -90,6 +90,6 @@ In einer Visual Studio-Textvorlage für die Entwurfszeit `assembly` lädt die-Di
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [T4-Include-Direktive](../modeling/t4-include-directive.md)

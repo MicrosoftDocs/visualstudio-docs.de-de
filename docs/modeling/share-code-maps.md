@@ -6,15 +6,15 @@ ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324f8fe7ee34f469d31ad1ce6cf6bd25ab97f225
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363769"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899816"
 ---
 # <a name="share-code-maps"></a>Freigeben von Code Maps
 
@@ -24,7 +24,7 @@ Code Maps können als Teil eines Visual Studio-Projekts, als Bild oder als XPS-D
 
 Verwenden Sie das Menü **Datei** , um die Code Map zu speichern.
 
-Oder
+- oder -
 
 Um die Zuordnung als Teil eines bestimmten Projekts zu speichern, wählen Sie auf der Karten Symbolleiste die Option  >  **Move \<CodeMapName> . dgml in** freigeben aus, und wählen Sie dann das Projekt aus, in dem Sie die Zuordnung speichern möchten.
 
@@ -59,6 +59,6 @@ Wenn Sie eine Code Map als XPS-Datei exportieren, können Sie Sie in XML-oder XA
 
 3. Benennen Sie die Code Map. Stellen Sie sicher, dass das Feld **Dateityp** auf **XPS-Dateien ( \* . Xps)** festgelegt ist. Wählen Sie **Speichern** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zuordnen von Abhängigkeiten zu Code Maps](../modeling/map-dependencies-across-your-solutions.md)

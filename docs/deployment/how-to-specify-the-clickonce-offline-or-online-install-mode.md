@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5236d73bb965d4f25634ad9e61a52608c9030146
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 918cb7e60f4e3fed2beee024d51b94499b14b632
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900419"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Vorgehensweise: Angeben des Offline- oder Onlineinstallationsmodus von ClickOnce
-Der `Install Mode` für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung bestimmt, ob die Anwendung offline oder online verfügbar ist. Wenn Sie auswählen, dass **die Anwendung nur online verfügbar ist** , muss der Benutzer Zugriff auf den [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Veröffentlichungs Speicherort (entweder eine Webseite oder eine Dateifreigabe) haben, um die Anwendung auszuführen. Wenn Sie auswählen, dass **die Anwendung auch offline verfügbar ist** , fügt die Anwendung dem **Startmenü** und **dem Dialogfeld** "Software" Einträge hinzu. der Benutzer kann die Anwendung ausführen, wenn er nicht verbunden ist.
+Der `Install Mode` für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung bestimmt, ob die Anwendung offline oder online verfügbar ist. Wenn Sie auswählen, dass **die Anwendung nur online verfügbar ist**, muss der Benutzer Zugriff auf den [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Veröffentlichungs Speicherort (entweder eine Webseite oder eine Dateifreigabe) haben, um die Anwendung auszuführen. Wenn Sie auswählen, dass **die Anwendung auch offline verfügbar ist**, fügt die Anwendung dem **Startmenü** und **dem Dialogfeld** "Software" Einträge hinzu. der Benutzer kann die Anwendung ausführen, wenn er nicht verbunden ist.
 
 Der `Install Mode` kann auf der Seite **veröffentlichen** des **Projekt-Designers** festgelegt werden.
 
