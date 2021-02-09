@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dd7d1ce463377daa2800d5c3e635adc71935d9d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883167"
 ---
 # <a name="property-pages"></a>Eigenschaftenseiten
 Mithilfe von Eigenschaften Seiten können Benutzer von der Projekt Konfiguration abhängige und unabhängige Eigenschaften anzeigen und ändern. Eine Schaltfläche für Eigenschaften **Seiten** ist im **Eigenschaften** Fenster oder auf Projektmappen-Explorer Symbolleiste für Objekte aktiviert, die eine Eigenschaften Seitenansicht des ausgewählten Objekts bereitstellen. Eigenschaften Seiten werden von der Umgebung erstellt und stehen für Projektmappen und Projekte zur Verfügung. Sie können jedoch auch für Projekt Elemente verfügbar gemacht werden, die Konfigurations abhängige Eigenschaften verwenden. Diese Funktion kann verwendet werden, wenn Dateien in einem Projekt unterschiedliche compilerswitcheinstellungen zum ordnungsgemäßen erstellen benötigen.

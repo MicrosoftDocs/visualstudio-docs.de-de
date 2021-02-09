@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c9706f7c9cd5b25a3644af2f324fda01f448fa17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883401"
 ---
 # <a name="error-codes"></a>Fehlercodes
 Wenn eine API-Funktion für Quellcodeverwaltungs-Plug-ins einen Fehler zurückgibt, wird davon ausgegangen, dass Sie einen der folgenden Fehlercodes erwartet. Alle Fehler sind negativ, Warnungen oder Informations Fehlercodes sind positiv, und der Erfolg ist 0.
 
-|Fehlercode|Wert|BESCHREIBUNG|
+|Fehlercode|Wert|Beschreibung|
 |----------------|-----------|-----------------|
 |`SCC_I_SHARESUBPROJOK`|7|Plug-in unterstützt das Hinzufügen von Dateien aus der Quell Code Verwaltung in zwei Schritten. Weitere Informationen finden Sie unter [sccsetoption](../extensibility/sccsetoption-function.md).|
 |`SCC_I_FILEDIFFERS`|6|Die lokale Datei unterscheidet sich von der Datei in der Quellcode-Verwaltungs Datenbank (z. b. kann [sccdiff](../extensibility/sccdiff-function.md) diesen Wert zurückgeben).|

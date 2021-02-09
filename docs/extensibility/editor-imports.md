@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: aef66be9797967b8c551ad4d1674c0b7be7aad81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883479"
 ---
 # <a name="editor-imports"></a>Editor Importe
 Sie können eine Reihe von Editor Diensten, Factorys und Brokern importieren, die ihre Erweiterung mit unterschiedlichen Arten von Zugriff auf den Kern-Editor bereitstellen. Beispielsweise können Sie den importieren, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> für einen bestimmten Inhaltstyp ein bereitzustellen. (Mit diesem Navigator können Sie verschiedene Arten von Such Vorgängen in einem Text Puffer ausführen.)
@@ -96,7 +96,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Ein <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent> für ein <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
 |<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Ruft den automatischen Einzug durch die- <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider> Objekte ab.|
 |<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|Verwaltet die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> für einen <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> .|
-|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|Eine <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>.|
+|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>.|
 |<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|Generiert RTF-formatierten Text aus einer Reihe von Momentaufnahme spannen.|
 |<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|Ein <xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer> für ein <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
 |<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|Ein <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> zum Formatieren von Textzeilen in einer Ansicht.|

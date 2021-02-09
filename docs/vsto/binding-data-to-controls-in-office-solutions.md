@@ -17,15 +17,15 @@ helpviewer_keywords:
 - controls, data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 459c50b5f8135756f85de852a62de44b3878148d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882478"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Binden von Daten an Steuerelemente in Office-Projektmappen
   Sie können Windows Forms-Steuerelemente und *Hoststeuerelemente* auf einem Microsoft Office Word-Dokument oder einem Microsoft Office Excel-Arbeitsblatt an eine Datenquelle binden, sodass die Steuerelemente die Daten automatisch anzeigen. Sie können Daten sowohl in Projekten auf Anwendungsebene als auch in Projekten auf Dokumentebene an Steuerelemente binden.
@@ -99,7 +99,7 @@ ms.locfileid: "96844425"
 
  Weitere Informationen finden Sie unter Gewusst [wie: Aktualisieren einer Datenquelle mit Daten eines Host Steuer](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)Elements.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Datenbindung und Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [Gewusst wie: Erstellen eines einfach gebundenen Steuer Elements in einem Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

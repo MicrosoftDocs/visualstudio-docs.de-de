@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d07b5272a31a0c649e12f353aefaa7c63c335eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882660"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die von einem Workflow abgeleitete Daten einem Workflow Projekt anzeigt. Es baut auf dem Projekt auf, das im Thema Exemplarische Vorgehensweise [: Erstellen eines Workflows mit Zuordnungs-und Initiierungs Formularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)beschrieben wird.
@@ -103,7 +103,7 @@ ms.locfileid: "96915660"
 
 #### <a name="to-code-the-application-page"></a>So codieren Sie die Anwendungsseite
 
-1. Wählen Sie den Knoten " **ApplicationPage1. aspx** " aus, und wählen Sie dann in der Menüleiste Code **anzeigen** aus,  >  **Code** um den Code hinter der Anwendungsseite anzuzeigen.
+1. Wählen Sie den Knoten " **ApplicationPage1. aspx** " aus, und wählen Sie dann in der Menüleiste Code **anzeigen** aus,  >   um den Code hinter der Anwendungsseite anzuzeigen.
 
 2. Ersetzen **Sie die using** -Anweisung oder die **Import** -Anweisung (abhängig von ihrer Programmiersprache) am Anfang der Klasse mit folgendem:
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 31cbde4f-0bba-497a-9969-d2c342ef4a7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2df1d7ea073854d6c2576ca46a25d776249dcca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a70722adbfd281d08bf544fbfb038f253afd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883680"
 ---
 # <a name="ienumdebugprocesses2reset"></a>IEnumDebugProcesses2::Reset
 Setzt die Enumeration auf das erste Element zurück.

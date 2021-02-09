@@ -10,24 +10,24 @@ helpviewer_keywords:
 - Domain-Specific Language, swimlane
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fef3b2115be499197030a4ce7fd49b1dd849de12
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 61994a25b5fa862a2014e2dd5b57a0c47130e6ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882985"
 ---
 # <a name="properties-of-swimlanes"></a>Eigenschaften von Verantwortlichkeitsbereichen
 Sie können einem Diagramm Verantwortlichkeits Bereiche hinzufügen. Swimlanes unterteilen ein Diagramm in vertikale oder horizontale Bereiche. Sie können andere Formen definieren, die in Swimlanes angezeigt werden. Weitere Informationen finden Sie unter Vorgehens [Weise beim Definieren einer Domain-Specific Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Swimlanes verfügen über die Eigenschaften, die in der folgenden Tabelle aufgeführt sind.
 
-|Eigenschaft|BESCHREIBUNG|Standard|
+|Eigenschaft|Beschreibung|Standard|
 |-|-|-|
-|Füllfarbe für Text|Die Füllfarbe für den Text der swimlane.|White|
+|Füllfarbe für Text|Die Füllfarbe für den Text der swimlane.|Weiß|
 |Füllfarbe für Header|Die Füllfarbe für den Header der swimlane.|DarkGray|
 |Trennzeichen Farbe|Die Farbe der Trennlinie.|Hellgrau|
 |Trennlinien Stil|Der Stil der Trennlinie ( `Solid` , `Dash` , `Dot` , `DashDot` , `DashDotDot` oder `Custom` ).|`Dash`|
@@ -42,7 +42,7 @@ Sie können einem Diagramm Verantwortlichkeits Bereiche hinzufügen. Swimlanes u
 |Name|Der Name dieser swimlane.|Aktueller Name|
 |Namespace|Der Namespace, der mit dieser Swimlane verbunden ist.|Aktueller Namespace|
 |QuickInfo-Typ|Wie die QuickInfo definiert wird ( `fixed` , `variable` oder `none` ). Wenn `fixed` , dann wird der Wert der- `Fixed Tooltip Text` Eigenschaft verwendet. Wenn `variable` , dann wird die QuickInfo in benutzerdefiniertem Code definiert.|\<none>|
-|Hinweise|Informelle Notizen, die dieser Swimlane zugeordnet sind.|\<none>|
+|Notizen|Informelle Notizen, die dieser Swimlane zugeordnet sind.|\<none>|
 |Ausrichtung|Horizontale oder vertikale Ausrichtung.|Vertical|
 |Anfängliche Höhe|Die Anfangshöhe dieser Swimlane in Zoll. Gilt nur für horizontale Swimlanes.|0|
 |Anfängliche Breite|Die ursprüngliche Breite dieser Swimlane in Zoll. Gilt nur für vertikale Swimlanes.|0|
@@ -52,6 +52,6 @@ Sie können einem Diagramm Verantwortlichkeits Bereiche hinzufügen. Swimlanes u
 |Fester QuickInfo-Text|Der Text, der für eine fixierte QuickInfo verwendet wird.|\<none>|
 |Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für diese Swimlane verwendet wird.|\<none>|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

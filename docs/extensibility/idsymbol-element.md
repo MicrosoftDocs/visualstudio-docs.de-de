@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 830324e708ff83fbcbbbdb98d261130e92c7ba00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883193"
 ---
 # <a name="idsymbol-element"></a>Idsymbol-Element
 Das- `IDSymbol` Element enthält die ID des GUID: ID-Paars, das ein Menü, eine Gruppe oder einen Befehl darstellt. Die GUID stammt aus dem übergeordneten `GuidSymbol` Element. Das- `IDSymbol` Element verfügt über ein- `name` Attribut, das einen anzeigen Amen für die ID bereitstellt, die im-Attribut enthalten ist `value` .
@@ -34,7 +34,7 @@ Das- `IDSymbol` Element enthält die ID des GUID: ID-Paars, das ein Menü, eine 
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |name|Erforderlich. Name des ID-Symbols.|
 |value|Erforderlich. Numerischer ID-Wert des ID-Symbols.|
@@ -44,7 +44,7 @@ Das- `IDSymbol` Element enthält die ID des GUID: ID-Paars, das ein Menü, eine 
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Guidsymbol-Element](../extensibility/guidsymbol-element.md)|Enthält die GUID des GUID: ID-Paars, das ein Menü, eine Gruppe oder einen Befehl darstellt. Gruppiert `IDSymbol`-Elemente.|
 

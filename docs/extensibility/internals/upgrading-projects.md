@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5b399feb80da56ef70b18a1b11b05c7f6cc3795f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883154"
 ---
 # <a name="upgrading-projects"></a>Aktualisieren von Projekten
 
@@ -52,7 +52,7 @@ Nachdem alle relevanten globalen Dateien aktualisiert wurden, kann jede projektf
 > [!NOTE]
 > Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Methode stellt keinen SVsUpgradeLogger-Dienst bereit. Dieser Dienst kann durch Aufrufen von abgerufen werden <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> .
 
-## <a name="best-practices"></a>Bewährte Methoden
+## <a name="best-practices"></a>Empfehlungen
 
 Verwenden <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Sie den Dienst, um zu prüfen, ob Sie eine Datei bearbeiten können, bevor Sie Sie bearbeiten, und Sie können Sie speichern, bevor Sie gespeichert wird. Dies hilft Ihren Sicherungs-und upgradeimplementierungen bei der Behandlung von Projektdateien in der Quell Code Verwaltung, Dateien mit unzureichenden Berechtigungen usw.
 
