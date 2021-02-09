@@ -16,15 +16,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f137dbe88b8b3ecf51f17e0f19f61368359087fa
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9f50475f52ca2ec08894a3c1c0375e78d2b5620b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917542"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Gewusst wie: Hinzufügen eines Formular Bereichs zu einem Outlook-Add-in-Projekt
   Erstellen Sie einen Formularbereich, um ein Standard- oder benutzerdefiniertes Microsoft Office Outlook-Formular mithilfe des Assistenten **Neuer Outlook-Formularbereich** zu erweitern. Sie können einen neuen Formularbereich erstellen und die Benutzeroberfläche in Visual Studio entwerfen oder einen in Outlook entworfenen Formularbereich importieren und Visual Basic- oder C#-Code hinzufügen.
@@ -66,7 +66,7 @@ ms.locfileid: "96845062"
 
 11. Wählen Sie auf der Seite **Geben Sie die Meldungsklassen an, von denen dieser Formularbereich angezeigt wird** die Outlook-Standardnachrichtenklassen aus, oder geben Sie die Namen von mindestens einer benutzerdefinierten Nachrichtenklasse ein. Klicken Sie anschließend auf **Fertig stellen**. Weitere Informationen finden Sie unter [Zuordnen eines Formular Bereichs zu einer Outlook-Nachrichten Klasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zugreifen auf einen Formular Bereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook-Lösungen](../vsto/outlook-solutions.md)
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)

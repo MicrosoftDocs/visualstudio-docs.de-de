@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917347"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Bedarfs gesteuertes herunterladen von Assemblys mit der ClickOnce-
 Standardmäßig werden alle in einer-Anwendung enthaltenen Assemblys [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] heruntergeladen, wenn die Anwendung zum ersten Mal ausgeführt wird. Allerdings haben Sie möglicherweise Teile der Anwendung, die von einer kleinen Gruppe von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application>-Namespace verwenden, wenn diese von der Common Language Runtime (CLR) angefordert werden.

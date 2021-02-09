@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f967235eed7e563b01b96cd9ed19d0aa5975b1fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916984"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Exemplarische Vorgehensweise: Anpassen der Textansicht
 Sie können eine Textansicht anpassen, indem Sie die folgenden Eigenschaften in der Editor-Format-Karte ändern:

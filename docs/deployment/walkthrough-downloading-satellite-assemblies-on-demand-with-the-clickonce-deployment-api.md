@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 59c468e28321c01993cd2f4b119218fb29bc6020
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917309"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Bedarfs gesteuertes herunterladen von Satellitenassemblys mit der ClickOnce
 Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenassemblys konfiguriert werden. Eine *Satellitenassembly* ist eine Assembly, die Anwendungsressourcen für eine andere Kultur als die Standardkultur der Anwendung enthält.
@@ -56,7 +56,7 @@ Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenas
 
 4. Klicken Sie auf die Registerkarte **Dateien** .
 
-5. Klicken Sie auf die Schaltfläche mit den **Auslassungszeichen** ( **...** ), und wählen Sie das Verzeichnis aus, das alle Assemblys und Dateien der Anwendung enthält, einschließlich der Satellitenassemblys, die Sie mit *Resgen.exe* generiert haben. (Eine Satellitenassembly weist einen Namen in der Form *\<isoCode>\ApplicationName.resources.dll* auf, wobei \<isoCode> eine sprach Kennung im RFC 1766-Format ist.)
+5. Klicken Sie auf die Schaltfläche mit den **Auslassungszeichen** (**...**), und wählen Sie das Verzeichnis aus, das alle Assemblys und Dateien der Anwendung enthält, einschließlich der Satellitenassemblys, die Sie mit *Resgen.exe* generiert haben. (Eine Satellitenassembly weist einen Namen in der Form *\<isoCode>\ApplicationName.resources.dll* auf, wobei \<isoCode> eine sprach Kennung im RFC 1766-Format ist.)
 
 6. Klicken Sie auf **Auffüllen** , um die Dateien zu Ihrer Bereitstellung hinzuzufügen.
 

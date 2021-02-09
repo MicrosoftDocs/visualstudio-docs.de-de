@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bdd080e87e8fad44c7b8943d0d017749b8c30b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0e8895f45524526fc8007ff909a9c541e9899b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917262"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die keine erneute Signierung erfordert und Brandinginformationen beibehält
 Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erstellen und Sie dann einem Kunden zum Veröffentlichen und Bereitstellen zuweisen, musste der Kunde das Bereitstellungs Manifest traditionell aktualisieren und neu signieren. Obwohl dies in den meisten Fällen immer noch die bevorzugte Methode ist, können Sie mit dem .NET Framework 3,5 bereit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Stellungen erstellen, die von Kunden bereitgestellt werden können, ohne ein neues Bereitstellungs Manifest generieren zu müssen. Weitere Informationen finden Sie unter Bereitstellen [von ClickOnce-Anwendungen für Test-und Produktionsserver ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -69,7 +69,7 @@ Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx
    ```
 
-6. Generieren Sie das Bereitstellungs Manifest mit einem *Mage.exe* aufzurufenden. Standardmäßig wird *Mage.exe* die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung vonMage.exeals installierte Anwendung markiert, sodass Sie online und offline ausgeführt werden kann. Um die Anwendung nur verfügbar zu machen, wenn der Benutzer online ist, verwenden Sie das- `-i` Argument mit dem Wert `f` . Da diese Anwendung das Feature für mehrere bereit Stellungen nutzt, schließen Sie das `-providerUrl` Argument in *Mage.exe* aus. (In Versionen der .NET Framework vor Version 3,5 führt der Ausschluss `-providerUrl` für eine Offline Anwendung zu einem Fehler.)
+6. Generieren Sie das Bereitstellungs Manifest mit einem *Mage.exe* aufzurufenden. Standardmäßig wird  die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung vonMage.exeals installierte Anwendung markiert, sodass Sie online und offline ausgeführt werden kann. Um die Anwendung nur verfügbar zu machen, wenn der Benutzer online ist, verwenden Sie das- `-i` Argument mit dem Wert `f` . Da diese Anwendung das Feature für mehrere bereit Stellungen nutzt, schließen Sie das `-providerUrl` Argument in *Mage.exe* aus. (In Versionen der .NET Framework vor Version 3,5 führt der Ausschluss `-providerUrl` für eine Offline Anwendung zu einem Fehler.)
 
    ```cmd
    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest
@@ -113,7 +113,7 @@ Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
    MageUI.exe
    ```
 
-6. Erstellen Sie ein neues Anwendungs Manifest, indem Sie im Menü **Datei** , **neu** und **Anwendungs Manifest** auswählen.
+6. Erstellen Sie ein neues Anwendungs Manifest, indem Sie im Menü **Datei**, **neu** und **Anwendungs Manifest** auswählen.
 
 7. Geben Sie auf der Registerkarte Standard **Name** den Namen und die Versionsnummer dieser Bereitstellung ein. Geben Sie außerdem einen Wert für **Publisher** an, der als Ordnername für den Verknüpfungs Link der Anwendung im Startmenü bei der Bereitstellung verwendet wird.
 
@@ -127,15 +127,15 @@ Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
 
 12. Wählen Sie die Registerkarte **erforderliche Berechtigungen** aus, und wählen Sie die Vertrauens Ebene aus, die Ihre Anwendung für die Bestätigung benötigt. Der Standardwert ist " **volle Vertrauens** Würdigkeit", der für die meisten Anwendungen geeignet ist.
 
-13. Wählen Sie im Menü **Datei** , **Speichern** aus, und speichern Sie das Anwendungs Manifest. Sie werden aufgefordert, das Anwendungs Manifest zu signieren, wenn Sie es speichern.
+13. Wählen Sie im Menü **Datei**, **Speichern** aus, und speichern Sie das Anwendungs Manifest. Sie werden aufgefordert, das Anwendungs Manifest zu signieren, wenn Sie es speichern.
 
-14. Wenn Sie über ein Zertifikat verfügen, das als Datei auf Ihrem Dateisystem gespeichert ist, verwenden Sie die Option **als Zertifikat Datei signieren** , und wählen Sie das Zertifikat aus dem Dateisystem mithilfe der Schaltfläche mit den Auslassungs Punkten ( **...** ) aus.
+14. Wenn Sie über ein Zertifikat verfügen, das als Datei auf Ihrem Dateisystem gespeichert ist, verwenden Sie die Option **als Zertifikat Datei signieren** , und wählen Sie das Zertifikat aus dem Dateisystem mithilfe der Schaltfläche mit den Auslassungs Punkten (**...**) aus.
 
      - oder -
 
      Wenn Ihr Zertifikat in einem Zertifikat Speicher gespeichert ist, auf den von Ihrem Computer aus zugegriffen werden kann, wählen Sie die **Option gespeichertes Zertifikat signieren** aus, und wählen Sie das Zertifikat aus der Liste aus.
 
-15. Wählen Sie im Menü **Datei** , **neu** und **Bereitstellungs Manifest** aus, um das Bereitstellungs Manifest zu erstellen, und geben Sie dann auf der Registerkarte **Name** einen Namen und eine Versionsnummer ein (in diesem Beispiel **1.0.0.0** ).
+15. Wählen Sie im Menü **Datei**, **neu** und **Bereitstellungs Manifest** aus, um das Bereitstellungs Manifest zu erstellen, und geben Sie dann auf der Registerkarte **Name** einen Namen und eine Versionsnummer ein (in diesem Beispiel **1.0.0.0** ).
 
 16. Wechseln Sie zur Registerkarte **Update** , und geben Sie an, wie oft diese Anwendung aktualisiert werden soll. Wenn Ihre Anwendung die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs-API verwendet, um nach Updates zu suchen, deaktivieren Sie das Kontrollkästchen **diese Anwendung sollte nach Updates suchen**.
 

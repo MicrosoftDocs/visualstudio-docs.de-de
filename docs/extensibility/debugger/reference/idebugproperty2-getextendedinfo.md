@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916055"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Ruft erweiterte Informationen für die-Eigenschaft ab.
@@ -28,14 +28,14 @@ Ruft erweiterte Informationen für die-Eigenschaft ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetExtendedInfo ( 
+HRESULT GetExtendedInfo ( 
    REFGUID* guidExtendedInfo,
    VARIANT* pExtendedInfo
 );
 ```
 
 ```csharp
-int GetExtendedInfo ( 
+int GetExtendedInfo ( 
    ref Guid guidExtendedInfo,
    out object pExtendedInfo
 );

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917294"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung
 Jede ClickOnce-Anwendung, die auf einer *exe* -Datei basiert, kann im Hintergrund durch ein benutzerdefiniertes Installationsprogramm installiert und aktualisiert werden. Ein benutzerdefiniertes Installationsprogramm kann während der Installation benutzerdefinierte Benutzeroberflächen implementieren, einschließlich benutzerdefinierter Dialogfelder für Sicherheits-und Wartungsvorgänge. Zum Ausführen von Installations Vorgängen verwendet das benutzerdefinierte Installationsprogramm die- <xref:System.Deployment.Application.InPlaceHostingManager> Klasse. Diese exemplarische Vorgehensweise veranschaulicht das Erstellen eines benutzerdefinierten Installationsprogramms, das eine ClickOnce-Anwendung im Hintergrund installiert.
@@ -79,4 +79,4 @@ Jede ClickOnce-Anwendung, die auf einer *exe* -Datei basiert, kann im Hintergrun
 
 ## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
-- [\<entryPoint> gewisses](../deployment/entrypoint-element-clickonce-application.md)
+- [\<entryPoint>-Element](../deployment/entrypoint-element-clickonce-application.md)

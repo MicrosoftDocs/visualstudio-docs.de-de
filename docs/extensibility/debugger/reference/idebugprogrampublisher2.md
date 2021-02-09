@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 430cd05c66311971ad3cdbf60e170478810899ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916192"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Diese Schnittstelle ermöglicht einem Debugmodul (de) oder benutzerdefinierten Port Zulieferern das Registrieren von Programmen für das Debuggen.
@@ -48,7 +48,7 @@ Diese Schnittstelle implementiert die folgenden Methoden:
 ## <a name="remarks"></a>Bemerkungen
 Diese Schnittstelle macht Programme und Programmknoten verfügbar (d. h., veröffentlicht sie) für die Verwendung durch des und den Sitzungs-Debug-Manager (SDM). Um auf veröffentlichte Programme und Programmknoten zuzugreifen, verwenden Sie die [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) -Schnittstelle. Dies ist die einzige Möglichkeit, wie Visual Studio erkennen kann, dass ein Programm gedeppt wird.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
@@ -89,6 +89,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

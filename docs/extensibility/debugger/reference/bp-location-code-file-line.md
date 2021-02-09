@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a94425c86e59e360814df2053f003948af6e674
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916269"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 Enthält die Daten für den Speicherort eines Breakpoints in einer bestimmten Zeile in einer Code Quelldatei.
