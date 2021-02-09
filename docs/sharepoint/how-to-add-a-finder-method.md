@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], Finder method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b7e2bb74278194878ed4496c12c918707cdc1e6e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879682"
 ---
 # <a name="how-to-add-a-finder-method"></a>Gewusst wie: Hinzufügen einer Finder-Methode
   Um den BDC-Dienst (Business Data Connectivity) zum Anzeigen einer Liste von Entitäten in einem Webpart oder einer Liste zu aktivieren, müssen Sie eine *Finder* -Methode erstellen. Eine Finder-Methode ist eine spezielle Methode, die eine Auflistung von Entitäts Instanzen zurückgibt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -35,7 +35,7 @@ ms.locfileid: "96915088"
 
     Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
+2. Wählen Sie in der Menüleiste   >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
 
     Das Fenster **BDC-Methoden Details** wird geöffnet. Weitere Informationen zum Details-Fenster der **BDC-Methode** finden Sie unter Übersicht über die [BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md).
 
