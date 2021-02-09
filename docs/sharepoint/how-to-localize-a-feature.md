@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4a3c427f207f6aac9f6a827eb6c24b799d635b46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913597"
 ---
 # <a name="how-to-localize-a-feature"></a>How to: Lokalisieren eines Features
   Standardmäßig verwenden Funktions Titel und Beschreibungen hart codierte Zeichen folgen Werte. Um den Titel und die Beschreibung der Funktion zu lokalisieren, ersetzen Sie die Zeichen folgen durch Ausdrücke, die auf lokalisierte Ressourcen verweisen.
@@ -59,7 +59,7 @@ ms.locfileid: "96305199"
 
      Der lokalisierte Titel und die Beschreibung der Funktion werden in der Anwendung angezeigt. Zum Anzeigen lokalisierter Ressourcen muss auf dem SharePoint-Server ein Sprachpaket installiert sein, das der Kultur der Ressourcendatei entspricht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Lokalisieren von SharePoint-Lösungen](../sharepoint/localizing-sharepoint-solutions.md)
 - [How to: Hinzufügen einer Ressourcendatei](../sharepoint/how-to-add-a-resource-file.md)
 - [How to: Lokalisieren von ASPX-Markup](../sharepoint/how-to-localize-aspx-markup.md)

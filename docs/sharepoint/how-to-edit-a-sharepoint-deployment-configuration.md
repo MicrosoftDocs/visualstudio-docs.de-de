@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 59354537f0c1f22534395da1e0ed3db3929a14a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913648"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Vorgehensweise: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration
   Sie können eine Bereitstellungs Konfiguration erstellen oder eine vorhandene Bereitstellungs Konfiguration ändern. Beispielsweise können Sie einen einzelnen Schritt ausführen oder die Reihenfolge der Schritte im Bereitstellungs Prozess ändern. Möglicherweise möchten Sie Bereitstellungs Konfigurationen erstellen oder ändern, da die integrierten und Programm gesteuert hinzugefügten Konfigurationen nicht geändert werden können.

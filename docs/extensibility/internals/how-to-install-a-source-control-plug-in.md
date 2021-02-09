@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912750"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Gewusst wie: Installieren eines Quellcodeverwaltungs-Plug-ins
 Das Erstellen eines Quellcodeverwaltungs-Plug-ins umfasst drei Schritte:
@@ -37,7 +37,7 @@ Das Erstellen eines Quellcodeverwaltungs-Plug-ins umfasst drei Schritte:
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>So registrieren Sie die Quellcodeverwaltungs-Plug-in-dll
 
-1. Fügen Sie unter dem **HKEY_LOCAL_MACHINE** Schlüssel im **Software** Unterschlüssel, der den Unterschlüssel für den Firmennamen, gefolgt von ihrem Produktnamen Unterschlüssel, zwei Einträge hinzu. Das Muster ist **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ Wert \<entry>**  =  *value*. Die beiden Einträge werden immer als **sccservername** und **sccserverpath** bezeichnet. Jede ist eine reguläre Zeichenfolge.
+1. Fügen Sie unter dem **HKEY_LOCAL_MACHINE** Schlüssel im **Software** Unterschlüssel, der den Unterschlüssel für den Firmennamen, gefolgt von ihrem Produktnamen Unterschlüssel, zwei Einträge hinzu. Das Muster ist **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ Wert \<entry>**  =  . Die beiden Einträge werden immer als **sccservername** und **sccserverpath** bezeichnet. Jede ist eine reguläre Zeichenfolge.
 
     Wenn der Name Ihres Unternehmens beispielsweise Microsoft lautet und das Quell Code Verwaltungs Produkt SourceSafe heißt, wird dieser Registrierungs Pfad **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**. In diesem Unterschlüssel ist der erste Eintrag, **sccservername**, eine vom Benutzer lesbare Zeichenfolge, die Ihr Produkt benennt. Der zweite Eintrag, **sccserverpath**, ist der vollständige Pfad zu der Quellcodeverwaltungs-Plug-in-dll, mit der die IDE eine Verbindung herstellen soll. Im folgenden finden Sie Beispiel Registrierungseinträge:
 
