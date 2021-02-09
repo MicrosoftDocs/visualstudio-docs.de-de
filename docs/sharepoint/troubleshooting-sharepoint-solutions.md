@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6b0e031e96d2543ae0bb109f243824125f431a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892293"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Problembehandlung bei SharePoint-Lösungen
   Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow Lösungen](/previous-versions/bb386166(v=vs.100)).
@@ -259,7 +259,7 @@ ms.locfileid: "95970286"
 ### <a name="resolution"></a>Lösung
  Dies geschieht, weil die Funktion zum automatischen Zurückziehen die Lösung zurückzieht, nachdem Sie eine Debugsitzung einer SharePoint-Lösung geschlossen haben. Die Zurückziehen löscht die Listendefinition aus SharePoint, jedoch nicht die Instanz der Liste. Die zugrunde liegende Listendefinition ist für die Listeninstanz erforderlich.
 
- Um dieses Problem zu beheben, stellen Sie die Projekt Mappe bereit, indem Sie in der Menüleiste die Option **Build** bereitstellen auswählen  >  **Deploy**. (Debuggen Sie die Projekt Mappe nicht, indem Sie die Taste **F5** drücken.) Löschen Sie dann die Listen Instanz in SharePoint.
+ Um dieses Problem zu beheben, stellen Sie die Projekt Mappe bereit, indem Sie in der Menüleiste die Option **Build** bereitstellen auswählen  >  . (Debuggen Sie die Projekt Mappe nicht, indem Sie die Taste **F5** drücken.) Löschen Sie dann die Listen Instanz in SharePoint.
 
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>Die ursprüngliche SharePoint-Lösung wird durch eine exportierte Version ersetzt.
  Wenn Sie eine SharePoint-Lösung exportieren, die Projektmappe in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] importieren und dann wieder auf der gleichen Website bereitstellen, von der sie exportiert wurde, wird die ursprüngliche SharePoint-Lösung ersetzt. Dieses Problem tritt nicht auf, wenn Sie die Projektmappe auf einem Server bereitstellen, auf dem die ursprüngliche Projektmappe nicht aktiviert ist.

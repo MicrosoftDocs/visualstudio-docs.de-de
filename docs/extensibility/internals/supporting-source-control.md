@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6923eb7a534a4cacf8062883d073ddddc9395e17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892553"
 ---
 # <a name="supporting-source-control"></a>Unterstützen der Quellcodeverwaltung
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt Datei Checkouts, Check-ins und andere Quell Code Verwaltungsvorgänge für Ihr Projekt oder Ihren Editor. Als Quell Code [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Verwaltungs Client ist für die Interaktion mit einem Quell Code Verwaltungspaket wie konzipiert, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] das Archivierungs-, Versions-und Steuerungsfunktionen für einen dynamisch definierten Satz von Dateien bereitstellt.

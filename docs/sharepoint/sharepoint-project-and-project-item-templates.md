@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8482a6185f670ce1bb340ff40fe277b751a39c06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892332"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint-Projekt-und Projekt Element Vorlagen
   In den folgenden Abschnitten werden die in SharePoint verfügbaren Projekte und Projektelementvorlagen sowie deren Verwendung beschrieben.
@@ -49,7 +49,7 @@ ms.locfileid: "95970375"
 
 - Ein Ordner **Verweise** , in dem alle Assemblyverweise im Projekt aufgelistet sind.
 
-- Ein **Featureordner, der eine** Featurekonfigurationsdatei enthält, mit der Features für SharePoint Server bereitgestellt werden. *.feature*
+- Ein **Featureordner, der eine** Featurekonfigurationsdatei enthält, mit der Features für SharePoint Server bereitgestellt werden. 
 
 - Ein **Paket** Ordner, der eine *Package. Package* -Datei enthält, die zum Bereitstellen der Lösung in SharePoint verwendet wird.
 

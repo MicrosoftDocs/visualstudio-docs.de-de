@@ -13,15 +13,15 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 86aea9800d0eaad4c36d5598e52dd7a35f3a7534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892176"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Verwenden von Modulen zum Einbinden von Dateien in eine Projektmappe
   Manchmal kann es vorkommen, dass Sie Dateien auf dem SharePoint-Server unabhängig vom Dateityp bereitstellen möchten, z. B. neue Masterseiten. Zu diesem Zweck können Sie *Module* verwenden (nicht zu verwechseln mit [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]-Codemodulen). Module sind Container für Dateien in einer SharePoint-Lösung. Wenn die Lösung bereitgestellt wird, werden die Dateien im Modul in die angegebenen Ordner auf dem SharePoint-Server kopiert.
