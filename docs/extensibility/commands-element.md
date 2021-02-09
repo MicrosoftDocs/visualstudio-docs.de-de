@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 90670188e3ce1aa621e53c69bad6f795ff30fd8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887431"
 ---
 # <a name="commands-element"></a>Commands-Element
 Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar. Die Auflistung kann bis zu fünf Unterabschnitte aufweisen, wie im folgenden dargestellt: Menüs, Gruppen, Schaltflächen, Combos und Bitmaps.
@@ -44,13 +44,13 @@ Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar. Die Aufli
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
-|package|Eine GUID, die das VSPackage identifiziert, das die Befehle bereitstellt.<br /><br /> Beispiel: Package = "guidVsPackage1Pkg".|
+|Paket|Eine GUID, die das VSPackage identifiziert, das die Befehle bereitstellt.<br /><br /> Beispiel: Package = "guidVsPackage1Pkg".|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Menüs-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die von einem VSPackage implementiert werden.|
 |[Groups-Element](../extensibility/groups-element.md)|Enthält Einträge, die die Befehls Gruppen in einem VSPackage definieren.|
@@ -60,7 +60,7 @@ Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar. Die Aufli
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Commandtable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die die Befehle darstellen, die ein VSPackage für die IDE bereitstellt. Mögliche Elemente sind Menü Elemente, Menüs, Symbolleisten und Kombinations Felder.|
 
@@ -90,6 +90,6 @@ Stellt die Auflistung von Befehlen auf der VSPackage-Symbolleiste dar. Die Aufli
 <Commands>
 ```
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 - [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

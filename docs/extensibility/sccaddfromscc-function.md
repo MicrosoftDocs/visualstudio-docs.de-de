@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701251"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886612"
 ---
 # <a name="sccaddfromscc-function"></a>Sccaddfromscc-Funktion
 Diese Funktion ermöglicht es dem Benutzer, Dateien zu suchen, die sich bereits im Quell Code Verwaltungssystem befinden, und diese Dateien anschließend zu einem Teil des aktuellen Projekts zu machen. Diese Funktion kann z. b. eine gemeinsame Header Datei in das aktuelle Projekt übernehmen, ohne die Datei zu kopieren. Das Rückgabe Array von Dateien, `lplpFileNames` , enthält die Liste der Dateien, die der Benutzer dem IDE-Projekt hinzufügen möchte.
@@ -53,7 +53,7 @@ in Ein Handle für das IDE-Fenster, das vom Quellcodeverwaltungs-Plug-in als üb
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Die Dateien wurden erfolgreich gefunden und dem Projekt hinzugefügt.|
 |SCC_I_OPERATIONCANCELED|Der Vorgang wurde ohne Auswirkung abgebrochen.|

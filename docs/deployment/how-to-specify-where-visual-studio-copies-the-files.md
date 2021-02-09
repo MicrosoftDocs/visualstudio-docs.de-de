@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb659b2191e156aac303678374fe726856d9a77
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 50f3e5d8500e57dd336919a5da58af094db97169
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887418"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Vorgehensweise: Angeben des Speicherorts, an den Visual Studio die Dateien kopiert
 Beim Veröffentlichen einer Anwendung mithilfe von ClickOnce, gibt die Eigenschaft `Publish Location` den Speicherort an, unter dem die Anwendungsdateien und das Anwendungsmanifest abgelegt werden. Dabei kann es sich um einen Dateipfad oder den Pfad zu einem FTP-Server handeln.
@@ -42,11 +42,11 @@ Beim Veröffentlichen einer Anwendung mithilfe von ClickOnce, gibt die Eigenscha
 
 3. Geben Sie in das Feld **Ort der Veröffentlichung** den Ort für die Veröffentlichung in einem der folgenden Formate ein:
 
-   - Geben Sie zum Veröffentlichen in einer Dateifreigabe oder einem Datenträger Pfad den Pfad entweder mithilfe eines UNC-Pfads ( *\\ \server\applicationname* ) oder eines Dateipfads ( *c:\Deploy\ApplicationName* ) ein.
+   - Geben Sie zum Veröffentlichen in einer Dateifreigabe oder einem Datenträger Pfad den Pfad entweder mithilfe eines UNC-Pfads (*\\ \server\applicationname*) oder eines Dateipfads (*c:\Deploy\ApplicationName*) ein.
 
    - Um auf einem FTP-Server zu veröffentlichen, geben Sie den Pfad im Format <em>FTP://FTP.Microsoft.com/ \<ApplicationName> </em>ein.
 
-     Beachten Sie, dass im Feld **Ort der Veröffentlichung** Text angegeben sein muss, damit die Schaltfläche zum Durchsuchen ( **...** ) funktioniert.
+     Beachten Sie, dass im Feld **Veröffentlichungsort** der Text vorhanden sein muss, damit die Schaltfläche zum Durchsuchen (**..**.) funktioniert.
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

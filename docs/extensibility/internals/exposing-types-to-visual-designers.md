@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887093"
 ---
 # <a name="expose-types-to-visual-designers"></a>Verfügbar machen von Typen für visuelle Designer
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muss zur Entwurfszeit über Zugriff auf Klassen-und Typdefinitionen verfügen, um einen visuellen Designer anzuzeigen. Klassen werden aus einem vordefinierten Satz von Assemblys geladen, die den gesamten Abhängigkeits Satz des aktuellen Projekts (Verweise zuzüglich ihrer Abhängigkeiten) enthalten. Es kann auch erforderlich sein, dass visuelle Designer auf Klassen und Typen zugreifen können, die in Dateien definiert sind, die von benutzerdefinierten Tools generiert werden.
@@ -45,7 +45,7 @@ ms.locfileid: "96479524"
 
      Wenn ein temporäres PE kompiliert wird, ist die einzige für den Compiler bereitgestellte Quelldatei die Ausgabe des benutzerdefinierten Tools. Daher muss ein benutzerdefiniertes Tool, das ein temporäres PE verwendet, Ausgabedateien generieren, die unabhängig von anderen Dateien im Projekt kompiliert werden können.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Einführung in das BuildManager-Objekt](/previous-versions/8f9kffa8(v=vs.140))
 - [Implementieren von Einzel Datei-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)
 - [Registrieren von Einzel Datei-Generatoren](../../extensibility/internals/registering-single-file-generators.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887366"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Erstellen eines grundlegenden Projekt Systems, Teil 1
 In Visual Studio sind Projekte die Container, mit denen Entwickler Quell Code Dateien und andere Ressourcen organisieren. Projekte werden in der **Projektmappen-Explorer** als untergeordnete Elemente der Projektmappen angezeigt. Mit Projekten können Sie Quellcode organisieren, erstellen, Debuggen und bereitstellen und Verweise auf Webdienste, Datenbanken und andere Ressourcen erstellen.
@@ -63,7 +63,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quell Code Da
  Außerdem müssen Sie den Quellcode für das [verwaltete Paket Framework für Projekte](https://github.com/tunnelvisionlabs/MPFProj10)herunterladen. Extrahieren Sie die Datei an einen Speicherort, der für die Lösung zugänglich ist, die Sie erstellen möchten.
 
 ## <a name="create-a-basic-project-type"></a>Erstellen eines grundlegenden Projekt Typs
- Erstellen Sie ein c#-VSIX-Projekt mit dem Namen **simpleproject**. (**Datei**  >  **Neu**  >  **Project** und dann **Visual c#**  >  **Extensibility**  >  **VSIX Project**). Fügen Sie eine Visual Studio-Paket-Projekt Element Vorlage hinzu (Klicken Sie auf dem **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie neues Element **Hinzufügen** aus. wechseln Sie  >  **New Item** dann zu **Erweiterbarkeit**  >  **Visual Studio-Paket** Nennen Sie die Datei *simpleprojectpackage*.
+ Erstellen Sie ein c#-VSIX-Projekt mit dem Namen **simpleproject**. (**Datei**  >  **Neu**  >  **Project** und dann **Visual c#**  >  **Extensibility**  >  **VSIX Project**). Fügen Sie eine Visual Studio-Paket-Projekt Element Vorlage hinzu (Klicken Sie auf dem **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie neues Element **Hinzufügen** aus. wechseln Sie  >  dann zu **Erweiterbarkeit**  >  **Visual Studio-Paket** Nennen Sie die Datei *simpleprojectpackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Erstellen einer grundlegenden Projektvorlage
  Nun können Sie dieses grundlegende VSPackage ändern, um den neuen Projekttyp " *. MyProj* " zu implementieren. Um ein Projekt zu erstellen, das auf dem Projekttyp *. MyProj* basiert, muss Visual Studio wissen, welche Dateien, Ressourcen und Verweise dem neuen Projekt hinzugefügt werden sollen. Um diese Informationen bereitzustellen, fügen Sie Projektdateien in einem Projektvorlagen Ordner ein. Wenn ein Benutzer das *MyProj* -Projekt verwendet, um ein Projekt zu erstellen, werden die Dateien in das neue Projekt kopiert.
@@ -105,7 +105,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quell Code Da
    > [!IMPORTANT]
    > Dies ist nicht die endgültige Form des *Program.cs* -Codes. die Ersetzungs Parameter werden in einem späteren Schritt behandelt. Möglicherweise werden Kompilierungsfehler angezeigt, aber solange die **BuildAction** -Datei der Datei **Inhalt** ist, sollten Sie in der Lage sein, das Projekt wie gewohnt zu erstellen und auszuführen.
 
-7. Speichern Sie die Datei.
+7. Speichern Sie die Datei .
 
 8. Kopieren Sie die Datei *AssemblyInfo.cs* aus dem Ordner *Properties* in den Ordner *project\simpleproject* .
 
@@ -154,7 +154,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quell Code Da
     </Project>
     ```
 
-11. Speichern Sie die Datei.
+11. Speichern Sie die Datei .
 
 12. Legen Sie im Fenster **Eigenschaften** die **Buildaktion** von *AssemblyInfo.cs*, *Program.cs*, *simpleproject. ico* und *simpleproject. MyProj* auf **Content** fest, und legen Sie Ihre include-Eigenschaft **in VSIX** -Eigenschaften auf **true** fest.
 
@@ -638,4 +638,4 @@ Templates
 
     ![Befehl Einfaches Projekt](../extensibility/media/simpleprojcommand.png "Simpleprojcommand")
 
-   Herzlichen Glückwunsch! Sie haben ein grundlegendes verwaltetes Projekt System implementiert.
+   Glückwunsch! Sie haben ein grundlegendes verwaltetes Projekt System implementiert.
