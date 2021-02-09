@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897864"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 
@@ -86,7 +86,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Es gibt auch andere Methoden zum Zugreifen auf Links. Zum Beispiel:
+ Es gibt auch andere Methoden zum Zugreifen auf Links. Beispiel:
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -110,7 +110,7 @@ Sie können Code schreiben, um Modellelemente zu erstellen und zu löschen, dere
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> Zugreifen auf Klassen Informationen
- Sie können Informationen zu den Klassen, Beziehungen und anderen Aspekten der DSL-Definition erhalten. Zum Beispiel:
+ Sie können Informationen zu den Klassen, Beziehungen und anderen Aspekten der DSL-Definition erhalten. Beispiel:
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -201,13 +201,13 @@ using (Transaction t =
 
  Es gibt drei Möglichkeiten, wie Sie eine Instanz einer Beziehung erstellen können. Jede dieser drei Methoden hat denselben Effekt:
 
-- Legen Sie die-Eigenschaft des Quell Rollen Players fest. Zum Beispiel:
+- Legen Sie die-Eigenschaft des Quell Rollen Players fest. Beispiel:
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Legen Sie die-Eigenschaft des Ziel Rollen Players fest. Zum Beispiel:
+- Legen Sie die-Eigenschaft des Ziel Rollen Players fest. Beispiel:
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -217,7 +217,7 @@ using (Transaction t =
 
        Die Multiplizität dieser Rolle ist `0..*` , daher fügen wir der Auflistung hinzu.
 
-- Erstellen Sie explizit eine Instanz der Beziehung. Zum Beispiel:
+- Erstellen Sie explizit eine Instanz der Beziehung. Beispiel:
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -484,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Partitionen speichern
  Wenn ein Modell geladen wird, wird das zugehörige Diagramm gleichzeitig geladen. In der Regel wird das Modell in "Store. DefaultPartition" geladen, und der Diagramm Inhalt wird in eine andere Partition geladen. In der Regel wird der Inhalt der einzelnen Partitionen geladen und in einer separaten Datei gespeichert.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md)

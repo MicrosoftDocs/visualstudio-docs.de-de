@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898259"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Einfärben der Syntax in einem Legacysprachdienst
 Die farbliche Syntax Farbgebung ist eine Funktion, die bewirkt, dass unterschiedliche Elemente einer Programmiersprache in einer Quelldatei in unterschiedlichen Farben und Stilen angezeigt werden. Zur Unterstützung dieser Funktion müssen Sie einen Parser oder Scanner bereitstellen, der die Typen von lexikalischen Elementen oder Token in der Datei identifizieren kann. Viele Sprachen unterscheiden Schlüsselwörter, Trennzeichen (z. b. Klammern oder geschweifte Klammern) und Kommentare durch farbige Farbgebung.

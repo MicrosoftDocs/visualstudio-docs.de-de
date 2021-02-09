@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e167a974dde1b98d43f7515581658f1ea549df9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896826"
 ---
 # <a name="project-modeling"></a>Projektmodellierung
 Der nächste Schritt bei der Bereitstellung der Automatisierung für Ihr Projekt besteht darin, die Standard Projekt Objekte zu implementieren: die-und-Auflistungen <xref:EnvDTE.Projects> `ProjectItems` , das `Project` - <xref:EnvDTE.ProjectItem> Objekt und das-Objekt sowie die übrigen-Objekte, die für Diese Standardobjekte sind in der Datei "Dteinternal. h" definiert. Eine Implementierung der Standardobjekte wird im bscprj-Beispiel bereitgestellt. Diese Klassen können als Modelle verwendet werden, um eigene Standard Projekt Objekte zu erstellen, die gleichzeitig mit Projekt Objekten von anderen Projekttypen nebeneinander stehen.

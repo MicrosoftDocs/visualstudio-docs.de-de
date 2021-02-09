@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: db0c417c40a2f2d02adef9c7a9e7274f95592015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898277"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs von Visual Studio-Befehlen
 Die GUID-und ID-Werte der Befehle, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, werden in vsct-Dateien definiert, die als Teil des Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -62,7 +62,7 @@ Die GUID-und ID-Werte der Befehle, die in der integrierten Entwicklungsumgebung 
 
      Es gibt keine zuverlässige Möglichkeit, nach dynamischem Text zu suchen. Suchen Sie stattdessen eine Gruppe, die den gewünschten Befehl hostet, indem Sie [GUIDs und IDs von Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) , [GUIDs und IDs von Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)verwenden und nach der ID dieser Gruppe suchen. Wenn die Befehls Definition nicht die Gruppe als über [geordnetes Element](../../extensibility/parent-element.md)hat, suchen Sie *sharedcmdplace. vsct* und *shellcmdplace. vsct* (oder *vsdbgcmdplace. vsct* für Debugger-Befehle) für ein- `<CommandPlacement>` Element, das das übergeordnete Element des Befehls festlegt. Die Ordner " *sharedcmdplace. vsct*", " *shellcmdplace. vsct*" und " *vsdbgcmdplace. vsct* " befinden sich im Ordner " *\<Visual Studio SDK installation path\> \visualstudiointegration\common\inc \\* ".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Vsct-XML-Schema Referenz](../../extensibility/vsct-xml-schema-reference.md)

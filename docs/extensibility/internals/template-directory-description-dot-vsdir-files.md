@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898241"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)
 Eine Vorlagen Verzeichnis Beschreibungsdatei (VSDIR) ist eine Textdatei, die es der integrierten Entwicklungsumgebung (IDE) ermöglicht, Ordner, Wizard. VSZ-Dateien und Vorlagen Dateien anzuzeigen, die dem Projekt in Dialogfeldern zugeordnet sind. Der Inhalt enthält einen Datensatz pro Datei oder Ordner. Alle VSDIR-Dateien an einem Speicherort, auf den verwiesen wird, werden zusammengeführt, obwohl im Allgemeinen nur eine VSDIR-Datei bereitgestellt wird, um mehrere Ordner, Assistenten oder Vorlagen Dateien zu beschreiben.

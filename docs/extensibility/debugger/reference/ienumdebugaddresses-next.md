@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88deefddc5b479d7173c4de1c574c4da92631e97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5faba8562363d5f84cdf5cbe6dafff2aa71a0a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717634"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897110"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 Diese Methode gibt den nächsten Satz von Elementen aus der-Enumeration zurück.

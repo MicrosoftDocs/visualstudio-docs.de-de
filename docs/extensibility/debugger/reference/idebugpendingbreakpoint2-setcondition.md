@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4683d944f2489b8b21ff545c86e3d867283d644a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b343b718e393d7a26005fb3587eb9b60527bb0d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897350"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 Legt die dem ausstehenden Breakpoint zugeordnete Bedingung fest oder ändert diese.
@@ -29,13 +29,13 @@ Legt die dem ausstehenden Breakpoint zugeordnete Bedingung fest oder ändert die
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT SetCondition( 
+HRESULT SetCondition( 
    BP_CONDITION bpCondition
 );
 ```
 
 ```csharp
-int SetCondition( 
+int SetCondition( 
    BP_CONDITION bpCondition
 );
 ```
