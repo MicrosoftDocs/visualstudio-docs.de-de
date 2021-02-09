@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900479"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Designs
 
@@ -99,11 +99,11 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
 
 2. Klicken Sie im Editor auf **Datei** und dann auf **Speichern unter**.
 
-3. Klicken Sie im Dialogfeld **Speichern unter** auf die Dropdownliste **Dateityp** , und wählen Sie **Alle Dateien** aus.
+3. Klicken Sie im Dialogfeld **Speichern unter** auf die Dropdownliste **Dateityp**, und wählen Sie **Alle Dateien** aus.
 
 4. Geben Sie im Feld **Dateiname** einen Namen für die Datei ein, und fügen Sie dem Ende des Namens *.manifest* an. Beispiel: *themes.manifest*.
 
-5. Klicken Sie auf die Schaltfläche **Ordner durchsuchen** , wählen Sie einen beliebigen Ordner aus, und klicken Sie dann auf **Speichern**.
+5. Klicken Sie auf die Schaltfläche **Ordner durchsuchen**, wählen Sie einen beliebigen Ordner aus, und klicken Sie dann auf **Speichern**.
 
     > [!NOTE]
     > Im verbleibenden Verfahren wird davon ausgegangen, dass der Name dieser Datei *themes.manifest* ist und auf dem Computer im Verzeichnis *C:\temp* gespeichert wird.

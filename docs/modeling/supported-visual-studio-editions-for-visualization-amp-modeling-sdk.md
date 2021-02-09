@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 714b3d018e2522c9f6acf3b15ffec82a0b5d49ec
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 14c23df472361fdee0bc657eb277d3a6bef4be73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899690"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Unterstützte Visual Studio-Versionen für das Visualisierungs- und Modellierungs-SDK
 

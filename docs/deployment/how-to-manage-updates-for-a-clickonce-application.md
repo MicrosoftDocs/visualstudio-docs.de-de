@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc2fd7b9e58cac0b013c511e17a6a9744e87ca39
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 03b8b3899a90588ca747ca93c0ff6bd7279e1bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351179"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900554"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Vorgehensweise: Verwalten von Updates für eine ClickOnce-Anwendung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können automatisch oder Programm gesteuert nach Updates suchen. Als Entwickler haben Sie viele Flexibilität bei der Angabe, wann und wie Update Überprüfungen durchgeführt werden, ob Updates obligatorisch sind und wo die Anwendung nach Updates suchen soll.
@@ -63,7 +63,7 @@ ms.locfileid: "94351179"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **für die Anwendung auf Updates prüfen** ausgewählt ist.
 
-5. Wählen Sie im **Abschnitt wählen Sie aus, wann die Anwendung nach Updates suchen soll aus** , **nachdem die Anwendung gestartet** wurde. Die Anwendung wird auf diese Weise schneller gestartet, und es wird im Hintergrund nach Updates gesucht, und der Benutzer wird nur benachrichtigt, wenn ein Update verfügbar ist. Nach der Installation werden Updates erst wirksam, wenn die Anwendung neu gestartet wird.
+5. Wählen Sie im **Abschnitt wählen Sie aus, wann die Anwendung nach Updates suchen soll aus**, **nachdem die Anwendung gestartet** wurde. Die Anwendung wird auf diese Weise schneller gestartet, und es wird im Hintergrund nach Updates gesucht, und der Benutzer wird nur benachrichtigt, wenn ein Update verfügbar ist. Nach der Installation werden Updates erst wirksam, wenn die Anwendung neu gestartet wird.
 
 6. Aktivieren Sie im Abschnitt geben Sie an, **wie häufig die Anwendung nach Updates suchen soll** die Option **jedes Mal aktivieren, wenn die Anwendung** ausgeführt wird (Standard), oder **Aktivieren Sie alle** , und geben Sie eine Zahl und ein Zeitintervall ein.
 
@@ -77,7 +77,7 @@ ms.locfileid: "94351179"
 
 4. Vergewissern Sie sich, dass im Dialogfeld **Anwendungs Updates** das Kontrollkästchen **Anwendung sollte nach Updates suchen** aktiviert ist.
 
-5. Aktivieren Sie das Kontrollkästchen **mindestens erforderliche Version für diese Anwendung angeben** , und geben Sie dann die Nummern für **Haupt** -und **neben** Version, **Build** und **Revision** für die Anwendung ein.
+5. Aktivieren Sie das Kontrollkästchen **mindestens erforderliche Version für diese Anwendung angeben** , und geben Sie dann die Nummern für **Haupt**-und **neben** Version, **Build** und **Revision** für die Anwendung ein.
 
 ### <a name="to-specify-a-different-update-location"></a>So geben Sie einen anderen Aktualisierungs Speicherort an
 

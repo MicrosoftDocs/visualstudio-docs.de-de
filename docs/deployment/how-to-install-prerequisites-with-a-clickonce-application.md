@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 09337ee164c8b740e9aa8a044c4a9df385f01016
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900563"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung
 Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen erfordern, dass die richtige Version der .NET Framework auf einem Computer installiert ist, bevor Sie ausgeführt werden können. viele Anwendungen haben ebenfalls andere Voraussetzungen. Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung können Sie einen Satz von erforderlichen Komponenten auswählen, der zusammen mit der Anwendung verpackt werden soll. Zum Zeitpunkt der Installation wird für jede erforderliche Komponente eine Überprüfung durchgeführt, um festzustellen, ob Sie bereits vorhanden ist. Wenn dies nicht der Fall ist, wird er vor der Installation der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung installiert.
@@ -44,7 +44,7 @@ Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
 
 2. Wählen Sie den Bereich **veröffentlichen** aus.
 
-3. Klicken Sie auf die Schaltfläche erforderliche **Prerequisites** Komponenten, **um das Dialog** Feld erforderliche Komponenten anzuzeigen
+3. Klicken Sie auf die Schaltfläche erforderliche  Komponenten, **um das Dialog** Feld erforderliche Komponenten anzuzeigen
 
 4. Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.
 
@@ -58,7 +58,7 @@ Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung
 
 2. Wählen Sie den Bereich **veröffentlichen** aus.
 
-3. Klicken Sie auf die Schaltfläche erforderliche **Prerequisites** Komponenten, **um das Dialog** Feld erforderliche Komponenten anzuzeigen
+3. Klicken Sie auf die Schaltfläche erforderliche  Komponenten, **um das Dialog** Feld erforderliche Komponenten anzuzeigen
 
 4. Stellen Sie im Dialogfeld **Erforderliche Komponenten** sicher, dass das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen** aktiviert ist.
 

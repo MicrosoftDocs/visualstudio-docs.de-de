@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 1dbde9c270e0b83a5d85ef3b95c8fb438e43e1b1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+manager: jmartens
+ms.openlocfilehash: d42a7509ceef03d2e74f470d7d4ab0efb5913e13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900840"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 

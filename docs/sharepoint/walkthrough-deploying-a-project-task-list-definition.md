@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c70a3458a8f54cc4437e00517445917cf92f6aa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901036"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Exemplarische Vorgehensweise: Bereitstellen einer Aufgabenlisten Definition für Projekte
 
@@ -45,7 +45,7 @@ Erstellen Sie ein SharePoint-Listen Projekt, und ordnen Sie die Listen Definitio
 
 3. Geben Sie die lokale SharePoint-Website an, die Sie für das Debugging verwenden, wählen Sie das Optionsfeld **als Farm Lösung** bereitstellen aus, und klicken Sie dann auf die Schaltfläche **Fertig** stellen
 
-4. Öffnen Sie das Kontextmenü für das Projekt, und wählen **Add** Sie dann  >  **Neues Element** hinzufügen aus.
+4. Öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann  >  **Neues Element** hinzufügen aus.
 
 5. Wählen Sie im Bereich **Vorlagen** die **Liste** Vorlage aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
@@ -138,7 +138,7 @@ Nachdem Sie die Projektaufgaben Liste erstellt und getestet haben, können Sie S
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>So stellen Sie die Projektaufgaben Liste auf dem lokalen System bereit
 
-Wählen Sie in der Visual Studio-Menüleiste erstellen Projekt Mappe **Erstellen** aus  >  **Deploy Solution**.
+Wählen Sie in der Visual Studio-Menüleiste erstellen Projekt Mappe **Erstellen** aus  >  .
 
 Visual Studio wieder verwendet den IIS-Anwendungs Pool, zieht alle vorhandenen Versionen der Projekt Mappe zurück, kopiert die Projektmappenpaketdatei (*. wsp*) nach SharePoint und aktiviert dann seine Features. Sie können jetzt die Projekt Mappe in SharePoint verwenden. Weitere Informationen zu Bereitstellungs Konfigurationsschritten finden Sie unter Gewusst [wie: Bearbeiten einer SharePoint-Bereitstellungs Konfiguration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900435"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten
 Nachdem Sie im Anwendungs Manifest Änderungen an den Bereitstellungs Eigenschaften für Windows Forms Anwendungen, Windows Presentation Foundation Anwendungen (XBAP) oder Office-Projektmappen vorgenommen haben, müssen Sie sowohl die Anwendungs-als auch die Bereitstellungs Manifeste mit einem Zertifikat signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.
@@ -33,7 +33,7 @@ Nachdem Sie im Anwendungs Manifest Änderungen an den Bereitstellungs Eigenschaf
  Ein weiteres Szenario, in dem Sie die Manifeste neu signieren können, ist, wenn Ihre Kunden die Anwendungs-und Bereitstellungs Manifeste mit Ihrem eigenen Zertifikat signieren möchten.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Erneutes Signieren der Anwendungs- und Bereitstellungsmanifeste
- Bei diesem Verfahren wird davon ausgegangen, dass Sie bereits Änderungen an der Anwendungs Manifest-Datei ( *. Manifest* ) vorgenommen haben. Weitere Informationen finden Sie unter Vorgehens [Weise: Ändern von Bereitstellungs Eigenschaften](/previous-versions/cc442869(v=vs.110)).
+ Bei diesem Verfahren wird davon ausgegangen, dass Sie bereits Änderungen an der Anwendungs Manifest-Datei (*. Manifest*) vorgenommen haben. Weitere Informationen finden Sie unter Vorgehens [Weise: Ändern von Bereitstellungs Eigenschaften](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Zum erneuten Signieren der Anwendung und der Bereitstellungs Manifeste mit Mage.exe
 
@@ -69,10 +69,10 @@ Nachdem Sie im Anwendungs Manifest Änderungen an den Bereitstellungs Eigenschaf
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Kopieren Sie optional das Master Bereitstellungs Manifest ( *Publish \\ \<appname> . Application* ) in Ihr Versions Bereitstellungs Verzeichnis ( *publish\anwendungsdateien \\ \<appname> _ \<version>* ).
+5. Kopieren Sie optional das Master Bereitstellungs Manifest (*Publish \\ \<appname> . Application*) in Ihr Versions Bereitstellungs Verzeichnis (*publish\anwendungsdateien \\ \<appname> _ \<version>*).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Aktualisieren und erneutes Signieren der Anwendungs-und Bereitstellungs Manifeste
- Bei diesem Verfahren wird davon ausgegangen, dass Sie bereits Änderungen an ihrer Anwendungs Manifest-Datei ( *. Manifest* ) vorgenommen haben, aber dass andere Dateien aktualisiert wurden. Wenn Dateien aktualisiert werden, muss der Hash, der die Datei darstellt, ebenfalls aktualisiert werden.
+ Bei diesem Verfahren wird davon ausgegangen, dass Sie bereits Änderungen an ihrer Anwendungs Manifest-Datei (*. Manifest*) vorgenommen haben, aber dass andere Dateien aktualisiert wurden. Wenn Dateien aktualisiert werden, muss der Hash, der die Datei darstellt, ebenfalls aktualisiert werden.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>So können Sie die Anwendungs-und Bereitstellungs Manifeste mit Mage.exe aktualisieren und erneut signieren
 
@@ -112,13 +112,13 @@ Nachdem Sie im Anwendungs Manifest Änderungen an den Bereitstellungs Eigenschaf
 
 6. Fügen Sie die Dateierweiterung *.* Bereitstellen der Dateien mit Ausnahme der Dateien für die Anwendung und das Bereitstellungs Manifest wieder hinzu.
 
-7. Kopieren Sie optional das Master Bereitstellungs Manifest ( *Publish \\ \<appname> . Application* ) in Ihr Versions Bereitstellungs Verzeichnis ( *publish\anwendungsdateien \\ \<appname> _ \<version>* ).
+7. Kopieren Sie optional das Master Bereitstellungs Manifest (*Publish \\ \<appname> . Application*) in Ihr Versions Bereitstellungs Verzeichnis (*publish\anwendungsdateien \\ \<appname> _ \<version>*).
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Übersicht über bereit Stellungen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
+- [Übersicht über das Bereitstellen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
 - [Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
