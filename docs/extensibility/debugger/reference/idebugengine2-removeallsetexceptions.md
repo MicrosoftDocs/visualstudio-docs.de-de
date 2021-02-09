@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae5ac703f1d0bd374131a4f5de397f39cf0ba209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca4fbf706fb9172aea2ac7a1304f1643a0061dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878954"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 Entfernt die Liste der Ausnahmen, die die IDE für eine bestimmte Lauf Zeit Architektur oder-Sprache festgelegt hat.
@@ -28,13 +28,13 @@ Entfernt die Liste der Ausnahmen, die die IDE für eine bestimmte Lauf Zeit Arch
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT RemoveAllSetExceptions( 
+HRESULT RemoveAllSetExceptions( 
    REFGUID guidType
 );
 ```
 
 ```csharp
-int RemoveAllSetExceptions( 
+int RemoveAllSetExceptions( 
    ref Guid guidType
 );
 ```

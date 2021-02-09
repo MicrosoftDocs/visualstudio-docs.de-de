@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7784b077093660eb5f9c9a0bf471a8965811ba72
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa29746a692357b5ecb1edf7697620b91c045974
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879162"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehlen zu einer Start Seite
 
@@ -112,6 +112,6 @@ Sie können den- `vscom:` Alias verwenden, um Visual Studio-Befehle an XAML-Steu
 
  Ein Beispiel finden Sie unter Exemplarische Vorgehensweise [: Speichern von Benutzereinstellungen auf einer Start Seite](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen des Benutzer Steuer Elements zur Start Seite](../extensibility/adding-user-control-to-the-start-page.md)

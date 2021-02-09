@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce139dd22361d9914693cbe8ad723656ab7d4f26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 485875f2ca4cd54c41d959ffaf769368db265243
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879045"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informiert eine Debug-Engine (de) darüber, dass das angegebene Programm atypisch beendet wurde und dass die de alle Verweise auf das Programm bereinigen und ein Programm zerstörungsereignis senden soll.
@@ -28,13 +28,13 @@ Informiert eine Debug-Engine (de) darüber, dass das angegebene Programm atypisc
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT DestroyProgram( 
+HRESULT DestroyProgram( 
    IDebugProgram2* pProgram
 );
 ```
 
 ```cpp
-int DestroyProgram( 
+int DestroyProgram( 
    IDebugProgram2 pProgram
 );
 ```

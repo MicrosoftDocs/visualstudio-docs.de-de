@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 489aea2ba5b12dafa161ce70a49f81f60b38ba5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878759"
 ---
 # <a name="create-a-source-control-plug-in"></a>Erstellen eines Quellcodeverwaltungs-Plug-ins
 Das Visual Studio SDK bietet Ressourcen, mit denen Sie der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) Funktionen zur Quell Code Verwaltung hinzufügen können. Sie können jede Plug-in-dll verwenden, die der in dieser Dokumentation beschriebenen Quellcodeverwaltungs-Plug-in-API entspricht.
@@ -29,7 +29,7 @@ Das Visual Studio SDK bietet Ressourcen, mit denen Sie der [!INCLUDE[vsprvs](../
 
  Beschreibt, wie Sie ein Quellcodeverwaltungs-Plug-in installieren und die derzeit verfügbaren API-Versionen für Quellcodeverwaltungs-Plug-ins hervorheben.
 
-- [Architektur](../../extensibility/internals/source-control-plug-in-architecture.md)
+- [Aufbau](../../extensibility/internals/source-control-plug-in-architecture.md)
 
  Erläutert die Integration eines Quellcodeverwaltungs-Plug-ins in die IDE mithilfe eines Architektur Diagramms [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
