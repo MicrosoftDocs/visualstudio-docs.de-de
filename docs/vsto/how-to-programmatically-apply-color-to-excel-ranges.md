@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, applying color
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 63a38bb4fb6f8f8ab35b9e1104a1b93d6d757446
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7ab1681cf402fc45b81b49b77a84973be83729c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910103"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Gewusst wie: Programm gesteuertes Anwenden von Farben auf Excel-Bereiche
   Verwenden Sie ein- <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein System eigenes Excel-Bereichs Objekt, um eine Farbe auf Text in einem Zellen Bereich anzuwenden.
@@ -52,7 +52,7 @@ ms.locfileid: "96848000"
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
 - [Name Drange-Steuerelement](../vsto/namedrange-control.md)
 - [Gewusst wie: Programm gesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

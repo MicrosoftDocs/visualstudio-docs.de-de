@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7f207a4c86a9c76f009341f96a7d562da1e8fb33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910953"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName-Element (Visual Studio-Vorlagen)
 Gibt an, ob das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt System im Dialogfeld **Neues Element** oder **Neues Projekt** hinzufügen einen Standardnamen für die Vorlage generiert.
@@ -54,7 +54,7 @@ Gibt an, ob das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projek
 
  Der Text muss entweder `true` oder sein `false` , um anzugeben, ob im Dialogfeld **Neues Element hinzufügen** oder **Neues Projekt** ein Standardname für die Vorlage generiert werden soll.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `ProvideDefaultName` ist ein optionales Element. Standardwert: `true`.
 
  Wenn das `ProvideDefaultName` -Element ist `false` , enthalten die Felder " **Name** " in den Dialogfeldern **Neues Element hinzufügen** und **Neues Projekt** den Wert `<Enter_name>` .

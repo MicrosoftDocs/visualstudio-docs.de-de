@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910299"
 ---
 # <a name="excel-object-model-overview"></a>Übersicht über das Excel-Objektmodell
   Zum Entwickeln von Lösungen, die Microsoft Office Excel verwenden, können Sie mit den Objekten des Excel-Objektmodells interagieren. In diesem Thema werden die wichtigsten Objekte vorgestellt:
@@ -68,13 +68,13 @@ ms.locfileid: "96847688"
 
  Da die Daten in einem Excel-Dokument sehr strukturiert sind, ist das Objektmodell hierarchisch und unkompliziert. Excel stellt Hunderte von Objekten bereit, mit denen Sie interagieren können. Sie können jedoch einen guten Einstieg in das Objektmodell erzielen, indem Sie sich auf eine kleine Teilmenge der verfügbaren Objekte konzentrieren. Dazu gehören die folgenden vier Objekte:
 
-- Anwendung
+- Application
 
 - Arbeitsmappe
 
 - Worksheet
 
-- Bereich
+- Range
 
   Diese vier Objekte und ihre Member decken einen Großteil der Aufgaben ab, die mit Excel erledigt werden können.
 

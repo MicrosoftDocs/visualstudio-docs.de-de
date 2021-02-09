@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d790f12d3fc21bbae7373470746af2ebfe6dc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e13d02cb08f957636a81bf4a985f1d7006b6c2ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908091"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 Gibt an, wie der Typ eines [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekts interpretiert werden soll.

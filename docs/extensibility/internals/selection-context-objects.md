@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911105"
 ---
 # <a name="selection-context-objects"></a>Auswahlkontextobjekte
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) verwendet ein globales Auswahl Kontext Objekt, um zu bestimmen, was in der IDE angezeigt werden soll. Für jedes Fenster in der IDE kann ein eigenes Auswahl Kontext Objekt in den globalen Auswahl Kontext übermittelt werden. Die IDE aktualisiert den globalen Auswahl Kontext mit Werten aus einem Fenster, wenn dieses Fenster den Fokus besitzt. Weitere Informationen finden Sie unter [Feedback an den Benutzer](../../extensibility/internals/feedback-to-the-user.md).

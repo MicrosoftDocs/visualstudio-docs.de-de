@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1009df1ce71e5ab46c0e9d100a79562f77460c0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911779"
 ---
 # <a name="project-persistence"></a>Projektpersistenz
 Persistenz ist ein wichtiger Entwurfs Aspekt für Ihr Projekt. In den meisten Projekten werden Projekt Elemente verwendet, die Dateien darstellen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt auch Projekte, deren Daten nicht Datei basiert sind. Die Dateien, die sich im Besitz des Projekts befinden, und die Projektdatei müssen persistent gespeichert werden. Die IDE weist das Projekt an, sich selbst oder ein Projekt Element zu speichern.

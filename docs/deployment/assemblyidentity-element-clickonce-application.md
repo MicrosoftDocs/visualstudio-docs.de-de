@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 92b5c1d323634bbb242cdccb54890908d5668803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911389"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;AssemblyIdentity- &gt; Element (ClickOnce-Anwendung)
 Identifiziert die in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung bereitgestellte Anwendung.
@@ -44,11 +44,11 @@ Identifiziert die in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das `assemblyIdentity`-Element ist erforderlich. Sie enthält keine untergeordneten Elemente und weist die folgenden Attribute auf.
 
-|attribute|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`Name`|Erforderlich. Identifiziert den Namen der Anwendung.<br /><br /> Wenn `Name` Sonderzeichen (z. b. einfache oder doppelte Anführungszeichen) enthält, kann die Anwendung möglicherweise nicht aktiviert werden.|
 |`Version`|Erforderlich. Gibt die Versionsnummer der Anwendung im folgenden Format an: `major.minor.build.revision`|
-|`publicKeyToken`|Optional. Gibt eine hexadezimale Zeichenfolge mit 16 Zeichen an, die die letzten 8 Bytes des `SHA-1` Hashwerts des öffentlichen Schlüssels darstellt, unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel, der zum Signieren des Katalogs verwendet wird, muss 2048 Bit oder größer sein.<br /><br /> Das Signieren einer Assembly wird zwar empfohlen, ist aber optional, aber dieses Attribut ist erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie einen Wert aus einer selbst signierten Assembly kopieren oder einen "Dummy"-Wert aller Nullen verwenden.|
+|`publicKeyToken`|Dies ist optional. Gibt eine hexadezimale Zeichenfolge mit 16 Zeichen an, die die letzten 8 Bytes des `SHA-1` Hashwerts des öffentlichen Schlüssels darstellt, unter dem die Anwendung oder Assembly signiert ist. Der öffentliche Schlüssel, der zum Signieren des Katalogs verwendet wird, muss 2048 Bit oder größer sein.<br /><br /> Das Signieren einer Assembly wird zwar empfohlen, ist aber optional, aber dieses Attribut ist erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie einen Wert aus einer selbst signierten Assembly kopieren oder einen "Dummy"-Wert aller Nullen verwenden.|
 |`processorArchitecture`|Erforderlich. Gibt den Prozessor an. Gültige Werte sind `msil` für alle Prozessoren, `x86` für 32-Bit-Windows, `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itanium-Prozessoren.|
 |`language`|Erforderlich. Gibt die zwei teiligen Sprachcodes (z. b `en-US` .) der Assembly an. Dieses Element befindet sich im- `asmv2` Namespace. Wenn nicht angegeben, ist der Standardwert `neutral` .|
 
@@ -71,4 +71,4 @@ Identifiziert die in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 
 ## <a name="see-also"></a>Siehe auch
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
-- [\<assemblyIdentity> gewisses](../deployment/assemblyidentity-element-clickonce-deployment.md)
+- [\<assemblyIdentity>-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)

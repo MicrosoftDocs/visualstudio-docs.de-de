@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 266974cf4f92b2356c7ddc603715388ce119256d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 62f9d7a9b9482190700680825865465cdfe341b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911979"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Ruft die Klassen mit dem angegebenen Attribut in einem angegebenen Modul ab.

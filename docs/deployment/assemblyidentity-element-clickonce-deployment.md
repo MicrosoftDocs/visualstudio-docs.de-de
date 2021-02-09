@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: bc689c80d033c6b92178f020c0d3273f6ec86ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911344"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;AssemblyIdentity- &gt; Element (ClickOnce-Bereitstellung)
 Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.
@@ -68,6 +68,6 @@ Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/inc
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
-- [\<assemblyIdentity> gewisses](../deployment/assemblyidentity-element-clickonce-application.md)
+- [\<assemblyIdentity>-Element](../deployment/assemblyidentity-element-clickonce-application.md)

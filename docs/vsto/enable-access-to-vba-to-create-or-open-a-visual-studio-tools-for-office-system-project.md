@@ -16,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910521"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Aktivieren des Zugriffs auf VBA zum Erstellen oder Öffnen einer Visual Studio-Tools für das Microsoft Office System Projekt
 
@@ -109,7 +109,7 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 7. Öffnen Sie das Dropdown Menü neben **Visual Basic for Applications**, und klicken Sie dann auf **aus Arbeitsplatz ausführen**.
 
-8. Klicken Sie auf **Weiter**.
+8. Klicken Sie auf **Continue**(Weiter).
 
 9. Klicken Sie auf **Schließen**.
 
@@ -125,5 +125,5 @@ Sie müssen den Zugriff auf das Visual Basic for Applications (VBA)-Projekt Syst
 
 5. Wählen Sie **Fehler in meiner Office-Installation erkennen und reparieren aus**, und klicken Sie dann auf **Installieren**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

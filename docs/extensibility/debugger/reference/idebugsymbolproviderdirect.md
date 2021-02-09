@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd1201007b27d3c7c51b5b0d862b36ba0549429b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29f0e7e3d2fefe0f47dc971ebff273bf2745a5ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909430"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 Stellt einen Symbol Anbieter dar, der direkten Zugriff auf Metadaten und Kern Symbol Schnittstellen hat.
@@ -29,7 +29,7 @@ IDebugSymbolProviderDirect: IUnknown
 ## <a name="methods"></a>Methoden
  Diese Schnittstelle implementiert die folgenden Methoden:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Ruft den Anwendungs Domänen Bezeichner anhand der debugadresse ab.|
 |[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Ruft Informationen zu den Modulen in der Symbolgruppe ab.|

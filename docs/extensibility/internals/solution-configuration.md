@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910982"
 ---
 # <a name="solution-configuration"></a>Projektmappenkonfiguration
 Projektmappenkonfigurationen speichern Eigenschaften auf Projektmappenebene. Sie leiten das Verhalten des **Starts** (F5 **) und der** Buildbefehle weiter. Standardmäßig wird mit diesen Befehlen die Debugkonfiguration erstellt und gestartet. Beide Befehle werden im Kontext einer Projektmappenkonfiguration ausgeführt. Dies bedeutet, dass der Benutzer mit dem Start und der Erstellung der aktiven Projekt Mappe mit den Einstellungen beginnen kann. Die Umgebung ist so konzipiert, dass Sie bei der Erstellung und Ausführung von Lösungen optimiert wird.
@@ -47,7 +47,7 @@ Projektmappenkonfigurationen speichern Eigenschaften auf Projektmappenebene. Sie
 
    Wenn ein Projekt Plattformen nicht unterstützt, wird in der Spalte Plattform für dieses Projekt der Wert keine angezeigt, und ist deaktiviert.
 
-- Build
+- Erstellen
 
    Gibt an, ob das Projekt von der aktuellen Projektmappenkonfiguration erstellt wird. Nicht ausgewählte Projekte werden nicht erstellt, wenn die Buildbefehle auf Projektmappenebene trotz der Projekt Abhängigkeiten aufgerufen werden, die Sie enthalten. Projekte, die nicht für die Erstellung ausgewählt wurden, sind weiterhin in Debuggen, ausführen, packen und Bereitstellen der Lösung enthalten.
 

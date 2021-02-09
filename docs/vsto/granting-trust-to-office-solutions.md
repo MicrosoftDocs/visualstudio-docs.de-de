@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f98f3154a0708ce7a01603968f0f5774dd86f40e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848325"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910230"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Gewähren von Vertrauenswürdigkeit für Office-Lösungen
   Gewähren von Vertrauenswürdigkeit für Office-Projektmappen bedeutet, dass die Sicherheitsrichtlinien der einzelnen Zielcomputer so geändert werden, dass die Projektmappenassembly, das Anwendungs Manifest, das Bereitstellungs Manifest Die Vertrauensstellung kann der Office-Projekt Mappe entweder von Ihnen oder dem Endbenutzer erteilt werden.
@@ -47,7 +47,7 @@ ms.locfileid: "96848325"
 
  Administratoren können die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Vertrauensstellungs Aufforderung deaktivieren oder verlangen, dass die Eingabeaufforderung nur bei Lösungen auftritt, die mit einem Authenticode-Zertifikat signiert sind. Weitere Informationen zum Ändern dieser Einstellungen für die Zonen "MyComputer", "LocalIntranet", "Internet", "Vertrauensstellungs Sites" und "untrustdsites" finden Sie unter Gewusst [wie: Konfigurieren des ClickOnce-Eingabe](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)Aufforderungs Verhaltens.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
 - [Gewähren von Vertrauenswürdigkeit für Dokumente](../vsto/granting-trust-to-documents.md)

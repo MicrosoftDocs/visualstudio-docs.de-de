@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 958c38d6650c7152efef9fe72481a46a70090660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0088bc80d53b450db2e2c0f73ff9dadd6b8e51e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909671"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 Ruft die Speicher Bytes ab, die physisch den Wert eines Verweises enthalten. Für zukünftige Verwendung reserviert.
@@ -28,13 +28,13 @@ Ruft die Speicher Bytes ab, die physisch den Wert eines Verweises enthalten. Fü
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetMemoryBytes ( 
+HRESULT GetMemoryBytes ( 
    IDebugMemoryBytes2** ppMemoryBytes
 );
 ```
 
 ```csharp
-int GetMemoryBytes ( 
+int GetMemoryBytes ( 
    out IDebugMemoryBytes2 ppMemoryBytes
 );
 ```
