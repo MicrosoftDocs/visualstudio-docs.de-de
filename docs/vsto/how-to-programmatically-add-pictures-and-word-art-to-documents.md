@@ -16,15 +16,15 @@ helpviewer_keywords:
 - WordArt, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 596f7ea7586ee70ae740dc237d83b7a4b40fa83f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910186"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Bildern und Word-Grafiken zu Dokumenten
   Sie können Ihren Dokumenten zur Entwurfszeit oder zur Laufzeit Bilder und Zeichnungsobjekte hinzufügen. Mithilfe von WordArt können Sie Microsoft Office Word-Dokumenten dekorativen Text hinzufügen. Diese Spezialeffekte für Text sind Zeichnungsobjekte, die Sie anpassen und in Ihr Dokument einfügen können.
@@ -102,7 +102,7 @@ ms.locfileid: "96844048"
 
 - Ein Bild mit dem Namen *SamplePicture.jpg* muss auf Laufwerk C vorhanden sein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)
 - [Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Gewusst wie: Programm gesteuertes Wiederherstellen der Auswahl nach Such Vorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)

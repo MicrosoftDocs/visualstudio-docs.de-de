@@ -9,15 +9,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom gestures
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9da8272f115efe4c6708bcc4d5cd0203697bfdd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908896"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen
 
@@ -85,7 +85,7 @@ Wenn Sie eine VSIX erstellen möchten, die Befehle, Ebenenvalidierungssteuerelem
 
     3. Wählen Sie bei **Quelle** die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.
 
-    4. Speichern Sie die Datei.
+    4. Speichern Sie die Datei .
 
 5. Kehren Sie zum Befehls-oder gestenhandlerprojekt zurück, und fügen Sie die folgenden Projekt Verweise hinzu:
 
@@ -248,7 +248,7 @@ Beachten Sie die folgenden Punkte zu Gestenhandlern:
 
      **OnDragDrop** - Wird aufgerufen, wenn der Benutzer ein Element im Diagramm ablegt.
 
-- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Zum Beispiel:
+- Das erste Argument für jede Methode ist `IShape`, aus der Sie das Ebenenelement abrufen können. Beispiel:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -263,6 +263,6 @@ Beachten Sie die folgenden Punkte zu Gestenhandlern:
 
 - Handler für einige Typen von gezogenen Elementen sind bereits definiert. Der Benutzer kann z. b. Elemente aus Projektmappen-Explorer in ein Abhängigkeits Diagramm ziehen. Sie können keinen Ziehhandler für diese Elementtypen definieren. In diesen Fällen werden die `DragDrop` -Methoden nicht aufgerufen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

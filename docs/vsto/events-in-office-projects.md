@@ -31,15 +31,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 381d6ffad2afadd90278577ad0e247a2f20ec375
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7bf4da3f0b2dd9cbab960a779690aa752744cdae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910324"
 ---
 # <a name="events-in-office-projects"></a>Ereignisse in Office-Projekten
   Jede Office-Projektvorlage generiert automatisch mehrere Ereignishandler. Die Ereignishandler für Anpassungen auf Dokumentebene unterscheiden sich geringfügig von Ereignishandlern für VSTO-Add-Ins.
@@ -154,7 +154,7 @@ ms.locfileid: "96848182"
 > [!NOTE]
 > Sie können für Outlook erzwingen, dass das <xref:Microsoft.Office.Tools.AddInBase.Shutdown> -Ereignis beim Beenden ausgelöst wird, indem Sie dies in der Registrierung ändern. Aber wenn ein Administrator diese Einstellung zurücksetzt, wird der Code, den Sie der `ThisAddIn_Shutdown` -Methode hinzufügen, beim Beenden von Outlook nicht mehr ausgeführt. Weitere Informationen finden Sie unter [Shutdown-Änderungen für Outlook 2010](/previous-versions/office/developer/office-2010/ee720183(v=office.14)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)

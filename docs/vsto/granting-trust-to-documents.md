@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e2871741d7297b6efabf53bb6f258355c41cac49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910253"
 ---
 # <a name="grant-trust-to-documents"></a>Gewähren von Vertrauenswürdigkeit für Dokumente
   Ein Projekt auf Dokumentebene verfügt über die gleichen Sicherheitsanforderungen wie Projekte auf Anwendungsebene: Signieren der Manifeste mit einem Zertifikat oder durch Klicken auf die vertrauenswürdige Eingabeaufforderung. Darüber hinaus muss sich das Dokument oder die Arbeitsmappe in einem Verzeichnis befinden, das als vertrauenswürdiger Speicherort festgelegt ist.
@@ -45,7 +45,7 @@ ms.locfileid: "96847740"
 
 - Sie können das Dokument oder die Arbeitsmappe einer Projektmappe auf Dokumentebene im selben Verzeichnis wie die Assembly oder in einem anderen Verzeichnis speichern. Beispielsweise könnte sich das Dokument auf einem SharePoint-Server befinden, und die Assembly könnte auf einer Dateifreigabe im Netzwerk vorhanden sein. Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer Office-Projekt Mappe auf Dokument Ebene auf einem SharePoint-Server mithilfe von ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewähren von Vertrauenswürdigkeit für Office-Lösungen](../vsto/granting-trust-to-office-solutions.md)
 - [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
