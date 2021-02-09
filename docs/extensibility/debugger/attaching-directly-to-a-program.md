@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80ee40d60b5a7511c3f44c22c16e02751d9f1f36
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f1b23cd7c09f3eeac2bfe85de882ff42affaa652
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920081"
 ---
 # <a name="attach-directly-to-a-program"></a>Direkt an ein Programm anfügen
 Benutzer, die Programme in einem Prozess debuggen möchten, der bereits ausgeführt wird, führen in der Regel folgenden Vorgang aus:

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfafb48aea95cd3ea79997fb2c84621396af210c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919844"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 Registriert ein Programm, das mit dem Port, auf dem er ausgeführt wird, dedeentschlbelt werden kann.
@@ -28,13 +28,13 @@ Registriert ein Programm, das mit dem Port, auf dem er ausgeführt wird, dedeent
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT AddProgramNode( 
+HRESULT AddProgramNode( 
    IDebugProgramNode2* pProgramNode
 );
 ```
 
 ```csharp
-int AddProgramNode( 
+int AddProgramNode( 
    IDebugProgramNode2 pProgramNode
 );
 ```

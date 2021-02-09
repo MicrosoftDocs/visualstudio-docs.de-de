@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: dc0b4548ffa4e5efa75734b5528a7021cf122bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921919"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Vorgehensweise: Ändern der Position einer Registerkarte im Menüband
   Mithilfe des Registerkarten Auflistungs- **Editors** können Sie die Reihenfolge von benutzerdefinierten Registerkarten auf einem Menüband ändern. Sie können benutzerdefinierte Registerkarten vor oder nach einer integrierten Registerkarte im Menüband positionieren. Eine integrierte Registerkarte ist eine Registerkarte, die sich bereits auf dem Menüband einer Microsoft Office-Anwendung befindet. Beispielsweise ist die Registerkarte " **Daten** " eine integrierte Registerkarte in Excel.
@@ -58,7 +58,7 @@ ms.locfileid: "96846765"
 
      Eine Liste der Steuerelement-IDs finden Sie in den [Hilfedateien von Office 2010: überflüssige Office-Steuer](https://www.microsoft.com/download/details.aspx?id=6627)Element Bezeichner.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

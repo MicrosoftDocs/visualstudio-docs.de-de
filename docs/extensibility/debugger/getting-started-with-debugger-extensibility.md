@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6949b9b8a9168915c64bc6183f6b1391a1c79220
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 2c3861527a3b049f4c72803f9ef40fe7b4bf0778
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921238"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Einstieg in die Erweiterbarkeit des Debuggers
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Stellt die Informationen bereit, die Sie zum Erstellen und Anpassen von Debugger-Komponenten benötigen, die zum Debuggen von Programmen in der Umgebung verwendet werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

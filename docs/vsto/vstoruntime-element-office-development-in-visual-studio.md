@@ -12,15 +12,15 @@ helpviewer_keywords:
 - vstoRuntime element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921748"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `vstoRuntime` -Element des `vstav3` -Namespace enthält eine unterstützte Version der Visual Studio Tools for Office-Laufzeit für eine bestimmte Office-Projektmappe.
@@ -43,7 +43,7 @@ ms.locfileid: "91584359"
 |---------------|-----------------|
 |`release`|Erforderlich. Die Releaseversion der Visual Studio Tools for Office-Laufzeit.|
 |`version`|Erforderlich. Versionsnummer der Visual Studio Tools for Office-Laufzeit.|
-|`supportUrl`|Optional. Link zum Installationspfad der Visual Studio Tools for Office-Laufzeit.|
+|`supportUrl`|Dies ist optional. Link zum Installationspfad der Visual Studio Tools for Office-Laufzeit.|
 
  `vstoRuntime` enthält keine Elemente.
 

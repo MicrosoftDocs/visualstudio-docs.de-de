@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921413"
 ---
 # <a name="expression-evaluator-architecture"></a>Architektur der Ausdrucks Auswertung
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ ms.locfileid: "96560160"
 ### <a name="for-example"></a>Beispiel:
  Nachdem ein Haltepunkt in einem laufenden Programm gedrückt wurde, wählt der Benutzer eine Variable im Dialogfeld **schnell Überwachung** aus. In diesem Dialogfeld werden der Name, der Wert und der Typ der Variablen angezeigt. Der Benutzer kann in der Regel den Wert ändern.
 
- Wenn das Dialogfeld **schnell Überwachung** angezeigt wird, wird der Name der Variablen, die untersucht wird, als Text an "Parametertext" gesendet. [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Dies gibt ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Objekt zurück, das den analysierten Ausdruck darstellt, in diesem Fall die-Variable. [Evaluatesync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) wird dann aufgerufen, um ein Objekt zu schaffen, `IDebugProperty2` das den Wert und Typ der Variablen sowie den Namen der Variablen darstellt. Diese Informationen werden angezeigt.
+ Wenn das Dialogfeld **schnell Überwachung** angezeigt wird, wird der Name der Variablen, die untersucht wird, als Text an "Parametertext" gesendet. [](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Dies gibt ein [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) -Objekt zurück, das den analysierten Ausdruck darstellt, in diesem Fall die-Variable. [Evaluatesync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) wird dann aufgerufen, um ein Objekt zu schaffen, `IDebugProperty2` das den Wert und Typ der Variablen sowie den Namen der Variablen darstellt. Diese Informationen werden angezeigt.
 
  Wenn der Benutzer den Wert der Variablen ändert, wird [setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) mit dem neuen Wert aufgerufen, der den Wert der Variablen im Arbeitsspeicher ändert, sodass er verwendet wird, wenn das Programm die Ausführung fortsetzt.
 
@@ -53,7 +53,7 @@ ms.locfileid: "96560160"
 
  [Schnittstellen für die Schlüssel Ausdrucks Auswertung](../../extensibility/debugger/key-expression-evaluator-interfaces.md) Beschreibt die entscheidenden Schnittstellen, die erforderlich sind, wenn ein EE zusammen mit dem Auswertungs Kontext geschrieben wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Anzeigen von lokalen Variablen](../../extensibility/debugger/displaying-locals.md)
 - [Ändern des Werts eines lokalen](../../extensibility/debugger/changing-the-value-of-a-local.md)
