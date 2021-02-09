@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c410d9290b7e377654a9cff87f8df7524a1b7149
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866878"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 
@@ -65,7 +65,7 @@ In dieser exemplarischen Vorgehensweise werden SQL Server Express localdb-und No
 
        Nach kurzer Zeit wird die Ausführung der Abfrage abgeschlossen und die Datenbank Northwind erstellt.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
 
 Erstellen Sie zunächst eine neue Windows Forms Anwendung:
 
@@ -81,7 +81,7 @@ Erstellen Sie zunächst eine neue Windows Forms Anwendung:
 
 ## <a name="create-the-northwind-dataset"></a>Erstellen des Northwind-Datasets
 
-Erstellen Sie als nächstes ein DataSet mit dem Namen **NorthwindDataSet** :
+Erstellen Sie als nächstes ein DataSet mit dem Namen **NorthwindDataSet**:
 
 1. Wählen Sie im Menü **Daten** die Option **neue Datenquelle hinzufügen** aus.
 
@@ -199,21 +199,21 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 5. Klicken Sie mit der rechten Maustaste auf die Tabelle **Customers** , und wählen Sie dann **Tabellendaten anzeigen** aus.
 
-6. Ändern Sie im ersten Datensatz ( **ALFKI** ) **ContactName** in **Maria Anders2**.
+6. Ändern Sie im ersten Datensatz (**ALFKI**) **ContactName** in **Maria Anders2**.
 
     > [!NOTE]
     > Navigieren Sie zu einer anderen Zeile, um einen Commit für die Änderung auszuführen.
 
 7. Wechseln Sie in das laufende Formular von "Configuration Manager Walkthrough".
 
-8. Ändern Sie im ersten Datensatz im Formular ( **ALFKI** ) **ContactName** in **Maria Anders1**.
+8. Ändern Sie im ersten Datensatz im Formular (**ALFKI**) **ContactName** in **Maria Anders1**.
 
-9. Klicken Sie auf die Schaltfläche **Speichern**.
+9. Wählen Sie die Schaltfläche **Speichern** aus.
 
      Der Parallelitätsfehler wird ausgelöst, und das Meldungsfeld wird angezeigt.
 
    Wenn Sie **Nein** auswählen, wird das Update abgebrochen, und das DataSet wird mit den Werten aktualisiert, die derzeit in der Datenbank gespeichert sind. Wenn Sie **Ja** auswählen, wird der vorgeschlagene Wert in die Datenbank geschrieben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

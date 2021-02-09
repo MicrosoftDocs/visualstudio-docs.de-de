@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4bc36bca3cc5bd13b3dcfad5ebed66eca7eeb019
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fee2c42e6ec84280f4090a8ae1dfea83a81ee369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866826"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer
-Der **objektrelationaler Designer** ( **O/R-Designer** ) unterstützt das Konzept der Vererbung einer einzelnen Tabelle, da es häufig in relationalen Systemen implementiert wird. Bei der Vererbung einer einzelnen Tabelle gibt es eine einzelne Datenbanktabelle, die Felder sowohl für übergeordnete Informationen als auch für untergeordnete Informationen enthält. Bei relationalen Daten enthält eine Unterscheidungsspalte den Wert, der festlegt, zu welcher Klasse ein bestimmter Datensatz gehört.
+Der **objektrelationaler Designer** (**O/R-Designer**) unterstützt das Konzept der Vererbung einer einzelnen Tabelle, da es häufig in relationalen Systemen implementiert wird. Bei der Vererbung einer einzelnen Tabelle gibt es eine einzelne Datenbanktabelle, die Felder sowohl für übergeordnete Informationen als auch für untergeordnete Informationen enthält. Bei relationalen Daten enthält eine Unterscheidungsspalte den Wert, der festlegt, zu welcher Klasse ein bestimmter Datensatz gehört.
 
 Angenommen, eine `Persons` Tabelle enthält alle Personen, die von einem Unternehmen verwendet werden. Einige Personen sind Mitarbeiter, andere Führungskräfte. Die `Persons` Tabelle enthält eine Spalte mit dem Namen `EmployeeType` , die für die Manager den Wert 1 und für Mitarbeiter den Wert 2 aufweist. Dies ist die diskriminatorspalte. In diesem Szenario können Sie eine Unterklasse von Mitarbeitern erstellen und die Klasse nur mit Datensätzen füllen, die einen `EmployeeType`-Wert von 2 aufweisen. Sie können aus der jeweiligen Klasse auch die nicht zutreffenden Spalten entfernen.
 
@@ -32,10 +32,10 @@ Das Erstellen eines Objektmodells, das Vererbung verwendet (und sich auf relatio
 
 3. Ziehen Sie eine zweite Kopie der Tabelle auf den **O/R-Designer** , und benennen Sie Sie um. Sie dient als abgeleitete Klasse bzw. Unterklasse.
 
-4. Klicken Sie in der **Toolbox** auf der Registerkarte **Objektrelationaler Designer** auf **Vererbung** , klicken Sie dann auf die Unterklasse (die umbenannte Tabelle), und stellen Sie eine Verbindung mit der Basisklasse her.
+4. Klicken Sie in der **Toolbox** auf der Registerkarte **Objektrelationaler Designer** auf **Vererbung**, klicken Sie dann auf die Unterklasse (die umbenannte Tabelle), und stellen Sie eine Verbindung mit der Basisklasse her.
 
     > [!NOTE]
-    > Klicken Sie in der **Toolbox** auf das Element **Vererbung** , und lassen Sie die Maustaste los. Klicken Sie auf die zweite Kopie der in Schritt 3 erstellten Klasse, und klicken Sie dann auf die erste Klasse, die Sie in Schritt 2 erstellt haben. Der Pfeil auf der Vererbungs Zeile verweist auf die erste Klasse.
+    > Klicken Sie in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie auf die zweite Kopie der in Schritt 3 erstellten Klasse, und klicken Sie dann auf die erste Klasse, die Sie in Schritt 2 erstellt haben. Der Pfeil auf der Vererbungs Zeile verweist auf die erste Klasse.
 
 5. Löschen Sie in jeder Klasse die Objekteigenschaften, die nicht angezeigt werden sollen und die nicht für Zuordnungen verwendet werden. Wenn Sie versuchen, die für Zuordnungen verwendeten Objekteigenschaften zu löschen, erhalten Sie einen Fehler: [die Eigenschaft \<property name> kann nicht gelöscht werden, weil \<association name> Sie an der Zuordnung teilnimmt ](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
@@ -52,7 +52,7 @@ Das Erstellen eines Objektmodells, das Vererbung verwendet (und sich auf relatio
 
 10. Wahlweise können Sie auch die Eigenschaft **Vererbungsstandard** festlegen, um in einer Vererbungshierarchie einen Typ zu kennzeichnen, der beim Laden von Spalten verwendet wird, die keinem definierten Vererbungscode entsprechen. Anders ausgedrückt: Wenn ein Datensatz in der Unterscheidungs Spalte einen Wert enthält, der nicht mit dem Wert in den Eigenschaften der **Diskriminatorwert der abgeleiteten Klasse** oder den **Basisklassen-Diskriminatorwert** -Eigenschaften identisch ist, lädt der Datensatz in den als **Vererbungs Standard** bezeichneten Typ.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

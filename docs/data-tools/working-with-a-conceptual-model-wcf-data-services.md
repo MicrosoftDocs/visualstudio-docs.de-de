@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ef5745f974848da75b4dcc0c42b59b38aa61cd0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997874"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866111"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Arbeiten mit einem konzeptionellen Modell (WCF Data Services)
 
@@ -27,7 +27,7 @@ Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell
 
 Sie können konzeptionelle Modelle für WCF Data Services-Anwendungen verwenden. In den folgenden Themen wird gezeigt, wie Daten über ein konzeptionelles Modell abgefragt werden.
 
-| Thema | BESCHREIBUNG |
+| Thema | Beschreibung |
 | - | - |
 | [Vorgehensweise: Ausführen von Datendienst Abfragen](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Zeigt, wie ein Datendienst aus einer .NET-Anwendung abgefragt wird. |
 | [Gewusst wie: Projizieren von Abfrage Ergebnissen](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Zeigt, wie die von einer Datendienstabfrage zurückgegebene Datenmenge reduziert wird. |
@@ -36,18 +36,18 @@ Wenn Sie ein konzeptionelles Modell verwenden, können Sie definieren, welche Ar
 
 In den folgenden Themen wird erläutert, wie Sie WCF Data Services-Anwendungen Validierung hinzufügen.
 
-|Thema|BESCHREIBUNG|
+|Thema|Beschreibung|
 |-----------|-----------------|
 |[Vorgehensweise: Abfangen von Datendienst Nachrichten](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Zeigt, wie einem Datendienstvorgang Validierung hinzugefügt wird.|
 
  In den folgenden Themen wird veranschaulicht, wie durch das Ausführen von Vorgängen für Entitäten Daten erstellt, aktualisiert und gelöscht werden.
 
-|Thema|BESCHREIBUNG|
+|Thema|Beschreibung|
 |-----------|-----------------|
 |[Vorgehensweise: Hinzufügen, ändern und Löschen von Entitäten](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Zeigt, wie Entitätsdaten in einem Datendienst erstellt, aktualisiert und gelöscht werden.|
 |[Gewusst wie: Definieren von Entitäts Beziehungen](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Zeigt, wie Beziehungen in einem Datendienst erstellt oder geändert werden.|
 
 ## <a name="see-also"></a>Weitere Informationen
 
-- [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Abfragen des Datendiensts](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

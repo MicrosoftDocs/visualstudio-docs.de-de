@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 92e1a03a9a72b550c77aa734c4a9ff2d0b184839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866605"
 ---
 # <a name="create-relationships-between-datasets"></a>Erstellen von Beziehungen zwischen Datasets
 Datasets, die Verwandte Datentabellen enthalten, verwenden- <xref:System.Data.DataRelation> Objekte zum Darstellen einer über-/Unterordnungsbeziehung zwischen den Tabellen und zum Zurückgeben von verknüpften Datensätzen voneinander. Durch das Hinzufügen verknüpfter Tabellen zu Datasets mithilfe des **Assistenten zum Konfigurieren von Datenquellen** oder des **DataSet-Designer** wird das Objekt erstellt und konfiguriert <xref:System.Data.DataRelation> .
@@ -106,6 +106,6 @@ Beziehungen zwischen Datentabellen werden in der **DataSet-Designer** als Zeilen
 
 2. Wählen Sie im Menü **Daten** den Befehl **Relation Labels anzeigen** aus, um den Beziehungs Namen anzuzeigen. Löschen Sie diesen Befehl, um den Beziehungs Namen auszublenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

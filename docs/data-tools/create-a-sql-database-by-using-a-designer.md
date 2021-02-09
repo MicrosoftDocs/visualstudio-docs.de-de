@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867203"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Create a database and add tables in Visual Studio (Erstellen einer Datenbank und Hinzufügen von Tabellen in Visual Studio)
 
@@ -35,9 +35,9 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die in Visu
 
 1. Erstellen Sie ein neues Projekt **Windows Forms app (.NET Framework)** , und nennen Sie es **SampleDatabaseWalkthrough**.
 
-2. Wählen Sie in der Menüleiste die Option **Projekt**  >  **Neues Element hinzufügen**aus.
+2. Wählen Sie in der Menüleiste die Option **Projekt**  >  **Neues Element hinzufügen** aus.
 
-3. Scrollen Sie in der Liste der Element Vorlagen nach unten, und wählen Sie **Dienst basierte Datenbank**aus.
+3. Scrollen Sie in der Liste der Element Vorlagen nach unten, und wählen Sie **Dienst basierte Datenbank** aus.
 
    ![Dialogfeld "Elementvorlagen"](../data-tools/media/raddata-vsitemtemplates.png)
 
@@ -45,9 +45,9 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die in Visu
 
 ### <a name="add-a-data-source"></a>Hinzufügen einer Datenquelle
 
-1. Wenn das **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es, indem Sie **UMSCHALT** + **alt** + **D** drücken oder **View**  >  in der Menüleiste**andere Windows**-  >  **Datenquellen** anzeigen auswählen.
+1. Wenn das **Datenquellen** Fenster nicht geöffnet ist, öffnen Sie es, indem Sie **UMSCHALT** + **alt** + **D** drücken oder   >  in der Menüleiste **andere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
-1. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen**aus.
+1. Wählen Sie im **Datenquellen** Fenster die Option **neue Datenquelle hinzufügen** aus.
 
    ![Hinzufügen einer neuen Datenquelle in Visual Studio](media/add-new-data-source.png)
 
@@ -59,7 +59,7 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die in Visu
 
 1. Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** aus die Datei **SampleDatabase. mdf** in der Dropdown Liste aus, und klicken Sie dann auf **weiter**.
 
-1. Wählen Sie auf der Seite **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern die** Option **weiter**aus.
+1. Wählen Sie auf der Seite **Verbindungs Zeichenfolge in der Anwendungs Konfigurationsdatei speichern die** Option **weiter** aus.
 
 1. Auf der Seite **Datenbankobjekte auswählen** sehen Sie eine Meldung, die besagt, dass die Datenbank keine Objekte enthält. Klicken Sie auf **Fertig stellen**.
 
@@ -67,9 +67,9 @@ Um diese exemplarische Vorgehensweise abzuschließen, benötigen Sie die in Visu
 
 Sie können die Verbindungs Zeichenfolge für die Datei *SampleDatabase. mdf* anzeigen, indem Sie die Eigenschaftenfenster der Datenverbindung öffnen:
 
-- Wählen **View**Sie  >  **SQL Server-Objekt-Explorer** Ansicht aus, um das Fenster **SQL Server-Objekt-Explorer** zu öffnen. Erweitern Sie **(localdb) \mssqllocaldb**  >  -**Datenbanken**, klicken Sie mit der rechten Maustaste auf *SampleDatabase. mdf* , und wählen Sie **Eigenschaften**aus.
+- Wählen Sie  >  **SQL Server-Objekt-Explorer** Ansicht aus, um das Fenster **SQL Server-Objekt-Explorer** zu öffnen. Erweitern Sie **(localdb) \mssqllocaldb**  >  -**Datenbanken**, klicken Sie mit der rechten Maustaste auf *SampleDatabase. mdf* , und wählen Sie **Eigenschaften** aus.
 
-- Sie können auch **View**  >  **Server-Explorer**auswählen, wenn dieses Fenster nicht bereits geöffnet ist. Öffnen Sie die Eigenschaftenfenster, indem Sie den Knoten **Datenverbindungen** erweitern, klicken Sie mit der rechten Maustaste auf *SampleDatabase. mdf*, und wählen Sie dann **Eigenschaften**aus.
+- Sie können auch **View**  >  **Server-Explorer** auswählen, wenn dieses Fenster nicht bereits geöffnet ist. Öffnen Sie die Eigenschaftenfenster, indem Sie den Knoten **Datenverbindungen** erweitern, klicken Sie mit der rechten Maustaste auf *SampleDatabase. mdf*, und wählen Sie dann **Eigenschaften** aus.
 
   > [!TIP]
   > Wenn Sie den Knoten Datenverbindungen nicht erweitern können oder die Verbindung SampleDatabase. mdf nicht aufgeführt ist, wählen Sie auf der Server-Explorer Symbolleiste die Schaltfläche **Verbindung mit Datenbank herstellen** aus. Stellen Sie im Dialogfeld **Verbindung hinzufügen** sicher, dass unter **Datenquelle** **Microsoft SQL Server Datenbankdatei** ausgewählt ist, und wählen Sie dann die Datei SampleDatabase. mdf aus, und wählen Sie Sie aus. Schließen Sie die Verbindung hinzu, indem Sie auf **OK klicken**.
@@ -80,7 +80,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
 ### <a name="create-the-customers-table"></a>Erstellen der Tabelle "Customers"
 
-1. Erweitern Sie in **Server-Explorer**den Knoten **Datenverbindungen** , und erweitern Sie dann den Knoten **SampleDatabase. mdf** .
+1. Erweitern Sie in **Server-Explorer** den Knoten **Datenverbindungen** , und erweitern Sie dann den Knoten **SampleDatabase. mdf** .
 
    Wenn Sie den Knoten Datenverbindungen nicht erweitern können oder die Verbindung SampleDatabase. mdf nicht aufgeführt ist, wählen Sie auf der Server-Explorer Symbolleiste die Schaltfläche **Verbindung mit Datenbank herstellen** aus. Stellen Sie im Dialogfeld **Verbindung hinzufügen** sicher, dass unter **Datenquelle** **Microsoft SQL Server Datenbankdatei** ausgewählt ist, und wählen Sie dann die Datei SampleDatabase. mdf aus, und wählen Sie Sie aus. Schließen Sie die Verbindung hinzu, indem Sie auf **OK klicken**.
 
@@ -97,9 +97,9 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
    |`ContactName`|`nvarchar (50)`|True (ausgewählt)|
    |`Phone`|`nvarchar (24)`|True (ausgewählt)|
 
-4. Klicken Sie mit der rechten Maustaste auf die `CustomerID` Zeile, und wählen Sie dann **Primärschlüssel festlegen**aus.
+4. Klicken Sie mit der rechten Maustaste auf die `CustomerID` Zeile, und wählen Sie dann **Primärschlüssel festlegen** aus.
 
-5. Klicken Sie mit der rechten Maustaste auf die Standardzeile ( `Id` ), und wählen Sie dann **Löschen**aus.
+5. Klicken Sie mit der rechten Maustaste auf die Standardzeile ( `Id` ), und wählen Sie dann **Löschen** aus.
 
 6. Benennen Sie die Tabelle "Customers", indem Sie die erste Zeile im Skriptbereich entsprechend dem folgenden Beispiel aktualisieren:
 
@@ -111,9 +111,9 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
    ![Tabellen-Designer](../data-tools/media/table-designer.png)
 
-7. Wählen Sie in der oberen linken Ecke **Tabellen-Designer**die Option **Aktualisieren**aus.
+7. Wählen Sie in der oberen linken Ecke **Tabellen-Designer** die Option **Aktualisieren** aus.
 
-8. Wählen Sie im Dialogfeld **Vorschau der Daten Bank Updates** die Option **Datenbank aktualisieren**aus.
+8. Wählen Sie im Dialogfeld **Vorschau der Daten Bank Updates** die Option **Datenbank aktualisieren** aus.
 
    Die Customers-Tabelle wird in der lokalen Datenbankdatei erstellt.
 
@@ -136,9 +136,9 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
    CREATE TABLE [dbo].[Orders]
    ```
 
-4. Wählen Sie in der oberen linken Ecke des **Tabellen-Designer**die Option **Aktualisieren**aus.
+4. Wählen Sie in der oberen linken Ecke des **Tabellen-Designer** die Option **Aktualisieren** aus.
 
-5. Wählen Sie im Dialogfeld **Vorschau der Daten Bank Updates** die Option **Datenbank aktualisieren**aus.
+5. Wählen Sie im Dialogfeld **Vorschau der Daten Bank Updates** die Option **Datenbank aktualisieren** aus.
 
    Die Tabelle Orders wird in der lokalen Datenbankdatei erstellt. Wenn Sie den Knoten **Tabellen** in Server-Explorer erweitern, werden die beiden Tabellen angezeigt:
 
@@ -146,7 +146,7 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
 
 ### <a name="create-a-foreign-key"></a>Erstellen eines fremd Schlüssels
 
-1. Klicken Sie im Kontext Bereich auf der rechten Seite des Tabellen-Designer Rasters für die Tabelle Orders mit der rechten Maustaste auf **Fremdschlüssel** , und wählen Sie **neuen Fremdschlüssel hinzufügen**aus.
+1. Klicken Sie im Kontext Bereich auf der rechten Seite des Tabellen-Designer Rasters für die Tabelle Orders mit der rechten Maustaste auf **Fremdschlüssel** , und wählen Sie **neuen Fremdschlüssel hinzufügen** aus.
 
    ![Hinzufügen eines fremd Schlüssels in Tabellen-Designer in Visual Studio](../data-tools/media/add-foreign-key.png)
 
@@ -158,25 +158,25 @@ In diesem Abschnitt erstellen Sie zwei Tabellen, einen Primärschlüssel in jede
    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
    ```
 
-4. Wählen Sie in der oberen linken Ecke des **Tabellen-Designer**die Option **Aktualisieren**aus.
+4. Wählen Sie in der oberen linken Ecke des **Tabellen-Designer** die Option **Aktualisieren** aus.
 
-5. Wählen Sie im Dialogfeld **Vorschau der Daten Bank Updates** die Option **Datenbank aktualisieren**aus.
+5. Wählen Sie im Dialogfeld **Vorschau der Daten Bank Updates** die Option **Datenbank aktualisieren** aus.
 
    Der Fremdschlüssel wird erstellt.
 
 ## <a name="populate-the-tables-with-data"></a>Auffüllen der Tabellen mit Daten
 
-1. Erweitern Sie in **Server-Explorer** oder **SQL Server-Objekt-Explorer**den Knoten für die Beispieldatenbank.
+1. Erweitern Sie in **Server-Explorer** oder **SQL Server-Objekt-Explorer** den Knoten für die Beispieldatenbank.
 
-2. Öffnen Sie das Kontextmenü für den Knoten **Tabellen** , wählen Sie **Aktualisieren**aus, und erweitern Sie dann den Knoten **Tabellen** .
+2. Öffnen Sie das Kontextmenü für den Knoten **Tabellen** , wählen Sie **Aktualisieren** aus, und erweitern Sie dann den Knoten **Tabellen** .
 
-3. Öffnen Sie das Kontextmenü für die Tabelle Customers, und wählen Sie dann **Tabellendaten anzeigen**aus.
+3. Öffnen Sie das Kontextmenü für die Tabelle Customers, und wählen Sie dann **Tabellendaten anzeigen** aus.
 
 4. Fügen Sie für einige Kunden die gewünschten Daten hinzu.
 
     Sie können fünf beliebige Zeichen für die Kunden-IDs angeben, wählen Sie aber mindestens eine aus, an die Sie sich noch erinnern können, um sie später in dieser Prozedur zu verwenden.
 
-5. Öffnen Sie das Kontextmenü für die Tabelle Orders, und wählen Sie dann **Tabellendaten anzeigen**aus.
+5. Öffnen Sie das Kontextmenü für die Tabelle Orders, und wählen Sie dann **Tabellendaten anzeigen** aus.
 
 6. Fügen Sie Daten für einige Aufträge hinzu.
 

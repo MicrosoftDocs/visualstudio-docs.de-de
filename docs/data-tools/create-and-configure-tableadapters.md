@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a9ab54b358125e45cfb0d6a4df30989cf679ab2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867138"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 
@@ -51,7 +51,7 @@ Wenn Sie einen neuen TableAdapter aus der Toolbox ziehen, wenn die **DataSet-Des
 
 - Sie haben die Möglichkeit, eine neue gespeicherte Prozedur in der zugrunde liegenden Datenbank zu erstellen, wenn Sie über die richtigen Berechtigungen für die Datenbank verfügen. Wenn Sie nicht über diese Berechtigungen verfügen, ist dies keine Option.
 
-- Sie können auch vorhandene gespeicherte Prozeduren für die Befehle **Select** , **Insert** , **Update** und **Delete** des TableAdapter ausführen. Die gespeicherte Prozedur, die dem **Update** -Befehl zugewiesen ist, wird z. b. ausgeführt, wenn die- `TableAdapter.Update()` Methode aufgerufen wird.
+- Sie können auch vorhandene gespeicherte Prozeduren für die Befehle **Select**, **Insert**, **Update** und **Delete** des TableAdapter ausführen. Die gespeicherte Prozedur, die dem **Update** -Befehl zugewiesen ist, wird z. b. ausgeführt, wenn die- `TableAdapter.Update()` Methode aufgerufen wird.
 
 Ordnen Sie die Parameter der ausgewählten gespeicherten Prozedur den entsprechenden Spalten in der Datentabelle zu. Wenn Ihre gespeicherte Prozedur z. b. einen Parameter mit dem Namen akzeptiert, der `@CompanyName` an die `CompanyName` Spalte in der Tabelle übergeben wird, legen Sie die **Quell Spalte** des- `@CompanyName` Parameters auf fest `CompanyName` .
 
@@ -117,6 +117,6 @@ Im folgenden Beispiel wird gezeigt, wie Sie eine zusätzliche Abfrage namens abr
     > [!NOTE]
     > Wenn Sie ein **Abfrage** Objekt direkt auf den **DataSet-Designer** ziehen, wird eine Methode erstellt, die nur einen Skalarwert (Single) zurückgibt. Die von Ihnen ausgewählte Abfrage oder gespeicherte Prozedur gibt möglicherweise mehr als einen einzelnen Wert zurück, die vom Assistenten erstellte Methode gibt jedoch nur einen einzelnen Wert zurück. Beispielsweise kann die Abfrage die erste Spalte der ersten Zeile der zurückgegebenen Daten zurückgeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

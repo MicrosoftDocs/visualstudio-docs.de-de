@@ -7,21 +7,21 @@ ms.topic: error-reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 66acc8486bcb261bb97a1611ff0c6753caa65dee
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 94e9f1f91aa5c879e0e3ed0034e0d1f554901513
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866371"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Diese verknüpfte Methode ist die Sicherungsmethode für die folgenden standardmäßigen Methoden zum Einfügen, Aktualisieren oder Löschen.
 
 Diese verwandte Methode ist die Unterstützungs Methode für die folgenden Standard- `Insert` ,- `Update` oder- `Delete` Methoden. Wenn sie gelöscht wird, werden die entsprechenden Methoden ebenfalls gelöscht. Möchten Sie den Vorgang fortsetzen?
 
-Die ausgewählte `DataContext` Methode wird derzeit als eine der `Insert` `Update` Methoden, oder `Delete` für eine der Entitäts Klassen im **O/R-Designer**verwendet. Das Löschen der ausgewählten Methode bewirkt, dass die Entitäts Klasse, die diese Methode verwendet hat, zum standardmäßigen Laufzeitverhalten für das Einfügen, aktualisieren oder löschen während eines Updates zurückkehrt.
+Die ausgewählte `DataContext` Methode wird derzeit als eine der `Insert` `Update` Methoden, oder `Delete` für eine der Entitäts Klassen im **O/R-Designer** verwendet. Das Löschen der ausgewählten Methode bewirkt, dass die Entitäts Klasse, die diese Methode verwendet hat, zum standardmäßigen Laufzeitverhalten für das Einfügen, aktualisieren oder löschen während eines Updates zurückkehrt.
 
 ## <a name="selected-method-options"></a>Optionen für ausgewählte Methoden
 

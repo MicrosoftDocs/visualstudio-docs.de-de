@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ee4bb5e56c5ae9ffb5f5266c8ef80804c8e96597
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866982"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools in Visual Studio
 
@@ -32,7 +32,7 @@ Die Entity Framework Tools werden im Rahmen der Arbeitsauslastung für die **Dat
 
 Dabei handelt es sich um die spezifischen Tools, die Entity Framework Tools in Visual Studio bilden:
 
-- Mit dem [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** ( **Entity Designer** ) können Sie Entitäten, Zuordnungen, Zuordnungen und Vererbungs Beziehungen visuell erstellen und ändern. Der- **Entity Designer** generiert auch [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] objektebenencode.
+- Mit dem [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** (**Entity Designer**) können Sie Entitäten, Zuordnungen, Zuordnungen und Vererbungs Beziehungen visuell erstellen und ändern. Der- **Entity Designer** generiert auch [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] objektebenencode.
 
 - Sie können den **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Assistenten** verwenden, um ein konzeptionelles Modell aus einer vorhandenen Datenbank zu generieren und der Anwendung Daten bankverbindungs Informationen hinzuzufügen.
 
@@ -49,7 +49,7 @@ Die-Tools generieren oder ändern eine *edmx* -Datei. Diese *edmx* -Datei enthä
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-| Titel | BESCHREIBUNG |
+| Titel | Beschreibung |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Beschreibt [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] die Verwendung von Tools, die [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] bereitstellt, um-Anwendungen zu erstellen. |
 | [Entity Data Model](/dotnet/framework/data/adonet/entity-data-model) | Enthält Links und Informationen zum Arbeiten mit Daten, die von Anwendungen verwendet werden, die auf basieren [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] . |

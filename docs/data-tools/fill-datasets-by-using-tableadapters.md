@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866904"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Füllen von Datasets mit TableAdapters
 
@@ -37,7 +37,7 @@ Eine TableAdapter-Komponente füllt ein DataSet mit Daten aus der Datenbank auf 
 
 Ausführliche Informationen zu TableAdapter-Vorgängen finden Sie direkt in einem der folgenden Themen:
 
-|Thema|BESCHREIBUNG|
+|Thema|Beschreibung|
 |-----------|-----------------|
 |[Erstellen und Konfigurieren eines TableAdapters](../data-tools/create-and-configure-tableadapters.md)|Verwenden der Designer zum Erstellen und Konfigurieren von TableAdapters|
 |[Erstellen von parametrisierten TableAdapter-Abfragen](../data-tools/create-parameterized-tableadapter-queries.md)|So ermöglichen Sie Benutzern das Bereitstellen von Argumenten für TableAdapter-Prozeduren oder-Abfragen|
@@ -87,11 +87,11 @@ Mit TableAdapters wird die Funktionalität von Standarddaten Adaptern erweitert,
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter-Methoden und -Eigenschaften
 
-Die TableAdapter-Klasse ist kein .NET-Typ. Dies bedeutet, dass Sie Sie nicht in der Dokumentation oder der **Objektkatalog** nachschlagen können. Sie wird zur Entwurfszeit erstellt, wenn Sie einen der zuvor erwähnten Assistenten verwenden. Der Name, der einem TableAdapter bei der Erstellung zugewiesen wird, basiert auf dem Namen der Tabelle, mit der Sie arbeiten. Wenn Sie z. b. einen TableAdapter auf der Grundlage einer Tabelle in einer Datenbank mit dem Namen erstellen `Orders` , wird der TableAdapter benannt `OrdersTableAdapter` . Sie können den Klassennamen für den TableAdapter ändern, indem Sie die **Name** -Eigenschaft im **DataSet-Designer** verwenden.
+Die TableAdapter-Klasse ist kein .NET-Typ. Dies bedeutet, dass Sie Sie nicht in der Dokumentation oder der **Objektkatalog** nachschlagen können. Sie wird zur Entwurfszeit erstellt, wenn Sie einen der zuvor erwähnten Assistenten verwenden. Der Name, der einem TableAdapter bei der Erstellung zugewiesen wird, basiert auf dem Namen der Tabelle, mit der Sie arbeiten. Wenn Sie z. b. einen TableAdapter auf der Grundlage einer Tabelle in einer Datenbank mit dem Namen erstellen `Orders` , wird der TableAdapter benannt `OrdersTableAdapter` . Sie können den Klassennamen für den TableAdapter ändern, indem Sie die **Name**-Eigenschaft im **DataSet-Designer** verwenden.
 
 Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften von TableAdapters:
 
-|Member|BESCHREIBUNG|
+|Member|Beschreibung|
 |------------|-----------------|
 |`TableAdapter.Fill`|Füllt die zugeordnete Datentabelle des TableAdapter mit den Ergebnissen des TableAdapter- `SELECT` Befehls auf.|
 |`TableAdapter.Update`|Sendet Änderungen an die Datenbank zurück und gibt eine ganze Zahl zurück, die die Anzahl der von der Aktualisierung betroffenen Zeilen darstellt. Weitere Informationen finden Sie unter [Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -139,6 +139,6 @@ Im folgenden finden Sie die häufig verwendeten Methoden und Eigenschaften der- 
 
 Wenn Sie Daten Befehle verwenden, bei denen eine CommandType-Eigenschaft auf festgelegt <xref:System.Data.CommandType.Text> ist, sollten Sie die von einem Client gesendeten Informationen sorgfältig überprüfen, bevor Sie Sie an die Datenbank übergeben. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in eine Datenbank übertragen, sollten Sie stets überprüfen, ob die Informationen gültig sind. Es wird empfohlen, nach Möglichkeit immer parametrisierte Abfragen oder gespeicherte Prozeduren zu verwenden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Datasettools](../data-tools/dataset-tools-in-visual-studio.md)
