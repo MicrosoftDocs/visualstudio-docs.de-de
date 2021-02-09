@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b9000290b146275ca495b49211c9823422b0a32f
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838694"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Exemplarische Vorgehensweise: Erstellen eines SDK mit c# oder Visual Basic
 In dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie ein einfaches Math Library SDK mithilfe von Visual c# erstellen und das SDK dann als Visual Studio-Erweiterung (VSIX) verpacken. Führen Sie die folgenden Schritte aus:
