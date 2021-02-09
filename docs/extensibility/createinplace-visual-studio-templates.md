@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fa138923f8d23c59613ce1bbc51460fd3c8c9acb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671981"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870336"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Kreatanplace-Element (Visual Studio-Vorlagen)
 Gibt an, ob das Projekt erstellt und die Parameter Ersetzung am angegebenen Speicherort durchgeführt werden soll, oder ob die Parameter Ersetzung an einem temporären Speicherort durchgeführt und das Projekt am angegebenen Speicherort gespeichert werden soll.
@@ -55,7 +55,7 @@ Gibt an, ob das Projekt erstellt und die Parameter Ersetzung am angegebenen Spei
 
  Der Text muss entweder `true` oder `false` sein. Gibt `true` an, dass das Projekt erstellt und die Parameter Ersetzung an der im Dialogfeld **Neues Projekt** angegebenen Position ausgeführt wird. Wenn `false` der Wert ist, wird die Parameter Ersetzung an einem temporären Speicherort durchgeführt, und das Projekt wird dann an den angegebenen Speicherort kopiert.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `CreateInPlace` ist ein optionales Element. Standardwert: `true`.
 
 ## <a name="example"></a>Beispiel
