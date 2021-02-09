@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 419fa9f917358ae19a073b5f864ee76d92c33e75
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 5b8b3a1482a01f0fcef6a8a64fcb3ec0a0023850
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918306"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce-Bereitstellungsbeispiele und exemplarische Vorgehensweisen
 Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen die Syntax, die Struktur und die Verfahren, die Sie zum Bereitstellen von Windows Forms-, Windows Presentation Foundation (WPF)- und Konsolenanwendungen verwendet werden.
@@ -39,6 +39,6 @@ Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und sch
 |[Assemblys bei Bedarf mit der ClickOnce-Bereitstellungs-API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Hinweise zum Markieren bestimmter Assemblys in der Anwendung als "optional" sowie zum Herunterladen dieser Assemblys mithilfe von Klassen im <xref:System.Deployment.Application>-Namespace.|
 |[Bedarfs gesteuertes herunterladen von Assemblys mit der ClickOnce-Bereitstellungs-API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Erklärt, wie Anwendungsassemblys erst bei der ersten Verwendung durch die Anwendung heruntergeladen werden.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Exemplarische Vorgehensweisen für Visual Studio](/previous-versions/szatc41e(v=vs.110))

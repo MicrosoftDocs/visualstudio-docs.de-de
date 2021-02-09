@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding comments
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a39c02cfb7b170fd923e8e7409a0f4215d67583
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5f0fba5169be71718993fbc271faf64fdac9fb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918485"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Gewusst wie: Programm gesteuertes Hinzufügen von Kommentaren zu Text in Dokumenten
   Die Comments-Eigenschaft der Document-Klasse fügt einen Kommentar zu einem Textbereich in einem Microsoft Office Word-Dokument hinzu.
@@ -49,6 +49,6 @@ ms.locfileid: "96844594"
 ## <a name="robust-programming"></a>Stabile Programmierung
  Zum Ändern der Benutzerinitialen, die Word Kommentaren hinzufügt, verwenden Sie die Eigenschaft <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Programm gesteuertes Entfernen aller Kommentare aus Dokumenten](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Dokument Host Element](../vsto/document-host-item.md)

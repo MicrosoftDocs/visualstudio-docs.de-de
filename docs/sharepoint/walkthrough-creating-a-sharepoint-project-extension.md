@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914867"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918756"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie eine Erweiterung für SharePoint-Projekte erstellen. Sie können eine Projekt Erweiterung zum reagieren auf Ereignisse auf Projektebene verwenden, z. b. Wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird. Sie können auch benutzerdefinierte Eigenschaften hinzufügen oder reagieren, wenn sich ein Eigenschafts Wert ändert. Im Gegensatz zu Projekt Element Erweiterungen können Projekt Erweiterungen nicht einem bestimmten SharePoint-Projekttyp zugeordnet werden. Wenn Sie eine Projekt Erweiterung erstellen, wird die Erweiterung geladen, wenn eine beliebige Art von SharePoint-Projekt in geöffnet wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -116,7 +116,7 @@ ms.locfileid: "96914867"
      [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
      [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
 
-## <a name="build-the-solution"></a>Erstellen der Projektmappe
+## <a name="build-the-solution"></a>Erstellen Sie die Lösung.
  Erstellen Sie als nächstes die Projekt Mappe, um sicherzustellen, dass Sie fehlerfrei kompiliert wird.
 
 #### <a name="to-build-the-solution"></a>So erstellen Sie die Projektmappe
@@ -157,7 +157,7 @@ ms.locfileid: "96914867"
 
 10. Klicken Sie in der Menüleiste auf **Datei**  >  **Alle speichern** , wenn Sie fertig sind, und schließen Sie dann den Manifest-Designer.
 
-11. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass das Projekt ohne Fehler kompiliert wird.
+11. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  dass das Projekt ohne Fehler kompiliert wird.
 
 12. Öffnen Sie in **Projektmappen-Explorer** das Kontextmenü für das Projekt **ProjectExtensionPackage** , und wählen Sie **im Datei-Explorer** die Schaltfläche Ordner öffnen aus.
 

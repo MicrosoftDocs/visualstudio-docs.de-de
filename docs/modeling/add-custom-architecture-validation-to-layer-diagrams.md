@@ -8,16 +8,16 @@ helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bd5f17e7e8c12da1d4e01738c26650a3df4760fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919324"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen
 
@@ -33,7 +33,7 @@ Sie können die Ebenenvalidierungserweiterung in eine Visual Studio-Integrations
 > [!WARNING]
 > Nachdem Sie ein Überprüfungsprojekt erstellt haben, kopieren Sie den [Beispielcode](#example) am Ende dieses Themas und bearbeiten diesen dann Ihren Anforderungen entsprechend.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -82,9 +82,9 @@ Wenn Sie eine VSIX erstellen möchten, die Ebenenvalidierungssteuerelemente, Bef
 
 2. Suchen oder erstellen Sie ein **VSIX-Projekt** in der Projekt Mappe. Ein VSIX-Projekt enthält eine Datei mit dem Namen **source.extension.vsixmanifest**.
 
-3. Wählen Sie in **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts die Option **als Startprojekt festlegen**aus.
+3. Wählen Sie in **Projektmappen-Explorer** im Kontextmenü des VSIX-Projekts die Option **als Startprojekt festlegen** aus.
 
-4. Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Ebenenvalidierungsprojekt als MEF-Komponente hinzu:
+4. Fügen Sie in **source.extension.vsixmanifest** unter **Objekte** das Ebenenvalidierungsprojekt als MEF-Komponente hinzu:
 
     1. Wählen Sie **Neu**.
 
@@ -221,7 +221,7 @@ Die Validierung wird in einem separaten Prozess ausgeführt. Daher werden die Ha
 
 Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Dialogfeld Debuggen angezeigt wird, wählen Sie die Haupt Instanz von Visual Studio aus.
 
-Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungs Feld angezeigt wird, wechseln Sie zur Haupt Instanz von Visual Studio, und klicken Sie im Menü **Debuggen** auf **an den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.
+Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungs Feld angezeigt wird, wechseln Sie zur Haupt Instanz von Visual Studio, und klicken Sie im Menü **Debuggen** auf **an den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe** aus.
 
 Starten Sie die experimentelle Instanz immer mit STRG+F5 (**Starten ohne Debugging**).
 

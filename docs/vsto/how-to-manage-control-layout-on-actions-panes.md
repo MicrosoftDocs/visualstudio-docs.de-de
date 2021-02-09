@@ -13,15 +13,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918596"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Gewusst wie: Verwalten des Steuerelement Layouts in Aktionsbereichen
   Ein Aktionsbereich wird standardmäßig rechts von einem Dokument oder Arbeitsblatt angedockt. Sie kann jedoch Links, oben oder unten angedockt werden. Wenn Sie mehrere Benutzer Steuerelemente verwenden, können Sie Code schreiben, um die Benutzer Steuerelemente im Aktionsbereich ordnungsgemäß zu stapeln. Weitere Informationen finden Sie unter [Übersicht über den Aktions](../vsto/actions-pane-overview.md)Bereich.
@@ -67,7 +67,7 @@ ms.locfileid: "96848247"
 
 - Ein Word-Projekt auf Dokument Ebene mit einem Aktionsbereich, der mehrere Benutzer Steuerelemente oder Bereiche des Bereichs "Bereich von Bereichen" enthält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)
 - [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)

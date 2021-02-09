@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4496187fd2e8f86a64e85afc8a4cb00eb589696a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b31108b73707cdd45e4f38adf4417b60caf9270
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918291"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 Ruft den angegebenen Prozess ab, der auf einem Port ausgeführt wird.
@@ -28,14 +28,14 @@ Ruft den angegebenen Prozess ab, der auf einem Port ausgeführt wird.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetProcess( 
+HRESULT GetProcess( 
    AD_PROCESS_ID    ProcessId,
    IDebugProcess2** ppProcess
 );
 ```
 
 ```csharp
-int GetProcess( 
+int GetProcess( 
    AD_PROCESS_ID      ProcessId,
    out IDebugProcess2 ppProcess
 );
