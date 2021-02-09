@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Unprotect method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86140e5595fc539a06a9eb8381e50b503e31708d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 85f659248528d0d7cf4357ffe2d1c2c5f88df9e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526634"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906759"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Vorgehensweise: Programm gesteuertes Entfernen des Schutzes von Arbeitsblättern
   Sie können den Schutz programmgesteuert aus einem Microsoft Office Excel-Arbeitsblatt entfernen.

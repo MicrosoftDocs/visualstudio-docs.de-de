@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 47991a3d1140893c4695e4edb7b76b808ab2917a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907731"
 ---
 # <a name="command-routing-algorithm"></a>Befehls Weiterleitungs Algorithmus
 In Visual Studio werden Befehle von einer Reihe unterschiedlicher Komponenten behandelt. Befehle werden vom innersten Kontext, der auf der aktuellen Auswahl basiert, zum äußersten (auch als globaler Kontext bezeichnet) weitergeleitet. Weitere Informationen finden Sie unter [Command Availability](../../extensibility/internals/command-availability.md).
@@ -44,5 +44,5 @@ In Visual Studio werden Befehle von einer Reihe unterschiedlicher Komponenten be
 
 8. Global: Wenn ein Befehl nicht von den zuvor erwähnten Kontexten behandelt wurde, versucht Visual Studio, ihn an das VSPackage weiterzuleiten, das einen Befehl besitzt, der die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle implementiert. Wenn das VSPackage nicht bereits geladen wurde, wird es nicht geladen, wenn Visual Studio die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode aufruft. Das VSPackage wird nur geladen, wenn die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> Methode aufgerufen wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Befehls Entwurf](../../extensibility/internals/command-design.md)
