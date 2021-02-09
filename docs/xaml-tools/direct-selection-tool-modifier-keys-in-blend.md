@@ -8,19 +8,19 @@ ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb98ae063824b29bc3bb8719a034defdeec5293
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 08d26dc394e859862b85f5009a9427f34576fd5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920237"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Direktauswahlwerkzeug in Blend für Visual Studio
 
-In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie die Form eines vorhandenen Pfads mit dem **Direktauswahl** -Tool ![Direktauswahl-Tool](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) bearbeiten können. Sie können mit dem **Stiftwerkzeug** Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen oder zwei vorhandene Pfade verbinden.
+In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie die Form eines vorhandenen Pfads mit dem **Direktauswahl**-Tool ![Direktauswahl-Tool](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) bearbeiten können. Sie können mit dem **Stiftwerkzeug** Punkte auf einem vorhandenen Pfad hinzufügen oder von ihm entfernen oder zwei vorhandene Pfade verbinden.
 
 |Aufgabe|Aktion|Zeiger|
 | - |-------------|-------------|
@@ -35,7 +35,7 @@ In der folgenden Tabelle sind Tastenkombinationen aufgeführt, mit denen Sie die
 |Ein Segment in eine Kurve umwandeln, die die Position des Mauszeigers schneidet|Bewegen Sie den Mauszeiger über ein Segment auf einem Pfad, halten Sie **ALT** gedrückt, und ziehen Sie dann das Segment.|![Ein Segment in eine Kurve umwandeln, die die Position des Mauszeigers schneidet](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Zeiger zum Konvertieren von Segmenten|
 |Die ausgewählte Tangente unabhängig von der anderen Seite anpassen|Wählen Sie einen Punkt oder ein Segment direkt aus, halten Sie **ALT** gedrückt, und ziehen Sie dann einen Tangentenendpunkt.|![Die ausgewählte Tangente unabhängig von der anderen Seite anpassen](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> Zeiger zum Konvertieren von Tangenten|
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zusatztasten der Zeichenflächen](../xaml-tools/artboard-modifier-keys-in-blend.md)
 - [Stifttool-Zusatztasten](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 927779e6d58de9eeaacd43b6b03f837dbc3281e2
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 7b8025f7212d28d2cfce482f67ef672a472993bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920109"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Anzeigen von Daten in Blend für Visual Studio
 
@@ -43,10 +43,10 @@ Wenn die Beispieldaten beim Ausführen der Anwendung auf Ihren Seiten angezeigt 
 
 Wenn Sie bereits Klassen erstellt haben, die die Struktur Ihrer Daten beschreiben, können Sie hieraus die Beispieldaten generieren.
 
-Öffnen Sie zum Generieren von Beispieldaten aus einer Klasse ein XAML-Dokument, klicken Sie im Bereich **Daten** auf die Schaltfläche **Beispieldaten erstellen** ![Beispieldaten erstellen Symbol](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) und anschließend auf **Beispieldaten aus Klasse erstellen** .
+Öffnen Sie zum Generieren von Beispieldaten aus einer Klasse ein XAML-Dokument, klicken Sie im Bereich **Daten** auf die Schaltfläche **Beispieldaten erstellen** ![Beispieldaten erstellen Symbol](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) und anschließend auf **Beispieldaten aus Klasse erstellen**.
 
 **Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zusammenführen von Datenbindungen mit Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)
