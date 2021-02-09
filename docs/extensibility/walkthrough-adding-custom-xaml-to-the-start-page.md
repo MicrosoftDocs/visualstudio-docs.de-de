@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8f23b1331b2c083a38f6b11d9a4a3647474b2f04
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 47c83906b84263af966737a309de0b5096031f94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926870"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Startseite
 

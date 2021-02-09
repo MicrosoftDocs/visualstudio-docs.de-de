@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6b3864528ee90c22a1e7122eeaf1969f613cc8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bd0c78853a41c7efa7907fd1004277862721dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928418"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 Gibt ein Code Kontext Objekt zurück, das einem angegebenen Bezeichner für den Code Speicherort entspricht.
@@ -28,14 +28,14 @@ Gibt ein Code Kontext Objekt zurück, das einem angegebenen Bezeichner für den 
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetCodeContext( 
+HRESULT GetCodeContext( 
    UINT64               uCodeLocationId,
    IDebugCodeContext2** ppCodeContext
 );
 ```
 
 ```csharp
-int GetCodeContext( 
+int GetCodeContext( 
    ulong                  uCodeLocationId,
    out IDebugCodeContext2 ppCodeContext
 );

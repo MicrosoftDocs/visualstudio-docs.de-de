@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11b0e4cd7c851e65edf299f45ec97273804c25d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e8e9ea277ee5e383c6d61528183f43dd01a0040
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928860"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 Diese Schnittstelle stellt eine Klasse als Typ dar.
@@ -25,7 +25,7 @@ Diese Schnittstelle stellt eine Klasse als Typ dar.
 ## <a name="syntax"></a>Syntax
 
 ```
-IDebugClassField : IDebugContainerField
+IDebugClassField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
@@ -37,7 +37,7 @@ IDebugClassField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden in den Schnittstellen [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) und [idebugcontainerfield](../../../extensibility/debugger/reference/idebugcontainerfield.md) implementiert diese Schnittstelle Folgendes:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|Erstellt einen Enumerator für die Basisklassen dieser Klasse.|
 |[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|Bestimmt, ob eine bestimmte Schnittstelle in der Klasse definiert ist.|

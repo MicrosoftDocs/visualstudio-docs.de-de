@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cef6cd23a1e5ff1e00e2d4d93313ee1e9355ece2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927560"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Vorgehensweise: Erstellen eines Paketmanifests
 Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie ein Bootstrapperpaket verwenden. Ein Bootstrapperpaket enthält eine einzelne Produkt Manifest-Datei, aber ein Paket Manifest für jedes Gebiets Schema. Gemeinsam genutzte Funktionen über verschiedene lokalisierte Versionen hinweg sollten in das Produkt Manifest gelangen.
@@ -40,7 +40,7 @@ Zum Bereitstellen der erforderlichen Komponenten für die Anwendung können Sie 
 
 2. Erstellen Sie ein Unterverzeichnis mit dem Namen des Gebiets Schemas, z. b. " *en* " für Englisch.
 
-3. Erstellen Sie in Visual Studio eine XML-Datei mit dem Namen *package.xml* , und speichern Sie Sie im Ordner *c:\package\en* .
+3. Erstellen Sie in Visual Studio eine XML-Datei mit dem Namen *package.xml*, und speichern Sie Sie im Ordner *c:\package\en* .
 
 4. Fügen Sie XML hinzu, um den Namen des Bootstrapperpakets, die Kultur für dieses lokalisierte Paket Manifest und den optionalen Lizenzvertrag aufzulisten. Der folgende XML-Code verwendet die Variablen `DisplayName` und `Culture` , die in einem späteren Element definiert sind.
 

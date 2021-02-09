@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c230d1dae4b6ff9552a8ff464d3128eac9be1482
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926845"
 ---
 # <a name="sccaddfilesfromscc-function"></a>Sccaddfilesfromscc-Funktion
 Diese Funktion fügt eine Liste von Dateien aus der Quell Code Verwaltung dem aktuell geöffneten Projekt hinzu.
@@ -78,7 +78,7 @@ in Der Kommentar, der auf jede der hinzugefügten Dateien angewendet werden soll
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|Das Projekt ist nicht geöffnet.|
 |SCC_E_OPNOTPERFORMED|Die Verbindung ist nicht mit dem Projekt identisch, das von angegeben wird. `lpAuxProjPath.`|

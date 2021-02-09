@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52bb2505e70d39e6cd861190db6eab9fa29e7aa7
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: cf1d717f423768f9dc53972c2a482e2eab913d81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761347"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928210"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Gewusst wie: verfügbar machen von Listen von Symbolen, die von der Bibliothek für den Objekt-Manager bereitgestellt werden
 Die Tools zum Durchsuchen von Symbolen, **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Suchen nach Symbol Ergebnissen**, übergeben Anforderungen für neue Daten an den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager. Der Objekt-Manager sucht nach den entsprechenden Bibliotheken und fordert neue Listen von Symbolen an. Die Bibliotheken reagieren durch Bereitstellen angeforderter Daten an den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager über die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager ruft die Methoden in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> -Schnittstelle auf, um die Daten abzurufen, und verwendet Sie, um die Ansichten der Symbol Suchtools aufzufüllen oder zu aktualisieren.

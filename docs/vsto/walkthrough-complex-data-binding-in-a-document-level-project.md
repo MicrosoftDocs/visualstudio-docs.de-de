@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927664"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: komplexe Datenbindung in einem Projekt auf Dokument Ebene
   In dieser exemplarischen Vorgehensweise werden die Grundlagen der komplexen Datenbindung in einem Projekt auf Dokument Ebene veranschaulicht. Sie können mehrere Zellen in einem Microsoft Office Excel-Arbeitsblatt an Felder in der Northwind-SQL Server Datenbank binden.
@@ -177,7 +177,7 @@ ms.locfileid: "97527123"
 
 1. Wählen Sie eine Zelle innerhalb des Listen Objekts aus.
 
-    Am Ende der Liste wird eine neue Zeile mit einem Sternchen (* *\** _) in der ersten Zelle der neuen Zeile angezeigt.
+    Am Ende der Liste wird eine neue Zeile mit einem Sternchen ( **\*** ) in der ersten Zelle der neuen Zeile angezeigt.
 
 2. Fügen Sie die folgenden Informationen in die leere Zeile ein.
 
@@ -187,7 +187,7 @@ ms.locfileid: "97527123"
 
 ### <a name="to-delete-rows"></a>Löschen von Zeilen
 
-- Klicken Sie mit der rechten Maustaste auf die Zahl 16 (Zeile 16) auf der linken Seite des Arbeitsblatts, und klicken Sie dann auf _ * löschen * *.
+- Klicken Sie mit der rechten Maustaste auf die Zahl 16 (Zeile 16) auf der linken Seite des Arbeitsblatts, und klicken Sie dann auf **Löschen**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>So sortieren Sie die Zeilen in der Liste
 

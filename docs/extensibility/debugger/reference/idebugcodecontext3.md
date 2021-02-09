@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3f81168d9af7fbbb93b5c59f3ab19a17107b56b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14bcfb7498ad22156ae18998ebe5958aad1b9026
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928756"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 Erweitert die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Schnittstelle, um das Abrufen von Modul-und Prozessschnittstellen zu ermöglichen.
@@ -35,7 +35,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 ## <a name="methods"></a>Methoden
  Zusätzlich zu den Methoden der- `IDebugCodeContext2` Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Ruft einen Verweis auf die-Schnittstelle des Debug-Moduls ab.|
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Ruft einen Verweis auf die-Schnittstelle des Debugprozesses ab.|
