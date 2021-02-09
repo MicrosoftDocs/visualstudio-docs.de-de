@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f27bc3f261e66791f41034923989b2cd61e09db6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904775"
 ---
 # <a name="debug-tasks"></a>Debuggen von Tasks
 Zum Debuggen eines Programms muss es gestartet werden, und es muss eine Debug-Engine (DE) angefügt werden. Andernfalls muss die DE an ein zuvor gestartetes Programm angefügt werden. Nach dem Anfügen muss die DE bestimmte Startereignisse generieren. Als Antwort versucht das Debugpaket, die Breakpoints zu binden, die in der IDE festgelegt wurden. Wenn das Programm auf einen gebundenen Breakpoint trifft, wird es angehalten und wartet auf eine Benutzereingabe.

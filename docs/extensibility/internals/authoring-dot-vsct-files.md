@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 3c484c08b3335d51283f1f6e1a7b29757a2271aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906061"
 ---
 # <a name="author-vsct-files"></a>Vsct-Dateien erstellen
 In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von Menü Elementen, Symbolleisten und anderen Elementen der Benutzeroberfläche zur integrierten Entwicklungsumgebung (IDE) von Visual Studio erstellen. Gehen Sie folgendermaßen vor, wenn Sie einem Visual Studio-Paket (VSPackage), das noch keine *vsct* -Datei enthält, Benutzeroberflächen Elemente hinzufügen.
@@ -229,7 +229,7 @@ In diesem Dokument wird gezeigt, wie Sie eine *vsct* -Datei zum Hinzufügen von 
 
 7. Verwenden Sie das-Element, um den Menütext zu lokalisieren `LocCanonicalName` . Weitere Informationen finden Sie unter dem [Strings](../../extensibility/strings-element.md) -Element.
 
-   Einige Menü-und Schaltflächen Typen enthalten spezielles Verhalten. In der folgenden Liste werden einige spezielle Menü-und Schaltflächen Typen beschrieben. Informationen zu anderen Typen finden Sie `types` in den Attribut Beschreibungen in den [Menü](../../extensibility/menu-element.md)-, [Combo](../../extensibility/combo-element.md) [Schalt](../../extensibility/button-element.md)Flächen-und Kombinations Elementen.
+   Einige Menü-und Schaltflächen Typen enthalten spezielles Verhalten. In der folgenden Liste werden einige spezielle Menü-und Schaltflächen Typen beschrieben. Informationen zu anderen Typen finden Sie `types` in den Attribut Beschreibungen in den [Menü](../../extensibility/menu-element.md)-, [](../../extensibility/combo-element.md) [Schalt](../../extensibility/button-element.md)Flächen-und Kombinations Elementen.
 
    - Kombinations Feld: ein Kombinations Feld ist eine Dropdown Liste, die auf einer Symbolleiste verwendet werden kann. Wenn Sie der Benutzeroberfläche Kombinations Felder hinzufügen möchten, erstellen Sie ein [Combos](../../extensibility/combos-element.md) -Element im- `Commands` Element. Fügen Sie dann dem- `Combos` Element ein- `Combo` Element für jedes hinzu zufügende Kombinations Feld hinzu. `Combo` -Elemente verfügen über dieselben Attribute und untergeordneten Elemente wie `Button` -Elemente sowie über `DefaultWidth` -und- `idCommandList` Attribute. Das `DefaultWidth` -Attribut legt die Breite in Pixel fest, und das- `idCommandList` Attribut verweist auf eine Befehls-ID, die zum Auffüllen des Kombinations Felds verwendet wird.
 

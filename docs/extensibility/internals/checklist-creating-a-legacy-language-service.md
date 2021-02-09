@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 823d46453ac6ad4a1a5a42c1f7d18a079b39d12d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189991"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905863"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Prüfliste: Erstellen eines Legacy sprach Dienstanbieter
 In der folgenden Prüfliste werden die grundlegenden Schritte zusammengefasst, die Sie ausführen müssen, um einen Sprachdienst für den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kern Editor zu erstellen. Um Ihren Sprachdienst in zu integrieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , müssen Sie eine Debug-Ausdrucks Auswertung erstellen. Weitere Informationen finden Sie unter [Schreiben einer CLR-Ausdrucks Auswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) in der [Visual Studio-Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md).

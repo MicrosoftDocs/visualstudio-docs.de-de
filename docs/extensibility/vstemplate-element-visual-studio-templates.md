@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973e2ede7e97d1e7710e6571d520be3d8919b9d9
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5f15b21ccb52cf7aa7c857c0b6b523c02fd65461
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905723"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate-Element (Visual Studio-Vorlagen)
 Enthält alle Metadaten über die Projektvorlage, die Element Vorlage oder Starter Kit.
@@ -40,7 +40,7 @@ Enthält alle Metadaten über die Projektvorlage, die Element Vorlage oder Start
 
 ### <a name="attributes"></a>Attribute
 
-| attribute | BESCHREIBUNG |
+| attribute | Beschreibung |
 |-----------| - |
 | `Type` | Identifiziert die Vorlage als Projektvorlage oder Element Vorlage. Dieses Attribut kann den Wert oder aufweisen `Project` `Item` . |
 | `Version` | Gibt eine Versionsnummer für die Vorlage an. Vorlagen in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] haben einen- `Version` Attribut Wert von `3.0.0` . |
@@ -57,7 +57,7 @@ Enthält alle Metadaten über die Projektvorlage, die Element Vorlage oder Start
 ### <a name="parent-elements"></a>Übergeordnete Elemente
  Keine.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Das- `VSTemplate` Element ist das Stamm Element von *. vstemplate* -Dateien.
 
 ## <a name="example"></a>Beispiel

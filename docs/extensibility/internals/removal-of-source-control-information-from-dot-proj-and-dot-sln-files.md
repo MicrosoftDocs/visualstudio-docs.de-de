@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 798179a48c24c61fa40c2519624e22a077003b56
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 03b1c3f6e2c1cc6852ea443788bb336a03c3330f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905801"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Entfernen von Quell Code Verwaltungsinformationen aus proj-und SLN-Dateien
 

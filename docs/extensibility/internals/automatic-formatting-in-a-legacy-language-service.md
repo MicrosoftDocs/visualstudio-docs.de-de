@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651cecb20604069c6e8ccc5a5c7b983ab43d7384
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: de54f43ca8abc7547609882647e014cb3695da33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906057"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Automatische Formatierung in einem Legacy Sprachdienst
 Bei der automatischen Formatierung fügt ein Sprachdienst automatisch einen Code Ausschnitt ein, wenn ein Benutzer damit beginnt, ein bekanntes Code Konstrukt einzugeben.

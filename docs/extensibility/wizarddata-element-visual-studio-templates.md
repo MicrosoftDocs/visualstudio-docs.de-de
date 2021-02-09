@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6839a4ac8e53ec70fc88d23525985e8d1b7cccd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904515"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData-Element (Visual Studio-Vorlagen)
 
@@ -65,7 +65,7 @@ Ein Textwert ist optional.
 
 Dieser Text gibt den benutzerdefinierten XML-Code an, der an die im [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) -Element angegebene benutzerdefinierte Assistenten Erweiterung übergeben werden soll.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Alle XML-Daten können in diesem Element angegeben werden. Der XML-Code wird als Parameter an die benutzerdefinierte Assistenten Erweiterung übergeben, sodass die Erweiterung den Inhalt dieses Elements verwenden kann. Für diese Daten wird keine Validierung durchgeführt.
 
