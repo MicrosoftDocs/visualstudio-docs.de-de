@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5def7f6cc4ac5ced91ca0a273ce750003dca20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72993a4a02ce7d25858bf3bd4f0690e0d30f5a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923107"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Diese Schnittstelle stellt ein Textdokument dar.
@@ -25,7 +25,7 @@ Diese Schnittstelle stellt ein Textdokument dar.
 ## <a name="syntax"></a>Syntax
 
 ```
-IDebugDocumentText2 : IDebugDocument2
+IDebugDocumentText2 : IDebugDocument2
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
@@ -37,7 +37,7 @@ IDebugDocumentText2 : IDebugDocument2
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden der- `IDebugDocument2` Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Ruft die Größe des Texts an dieser Position im Dokument ab.|
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Ruft den Text an der angegebenen Position im Dokument ab.|

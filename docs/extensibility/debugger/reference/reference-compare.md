@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd36ad090a0b354744becf7140ff0d0785588eb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922874"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
 Gibt den Typ des Vergleichs für Verweise an.
@@ -28,7 +28,7 @@ Gibt den Typ des Vergleichs für Verweise an.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-enum enum_REFERENCE_COMPARE { 
+enum enum_REFERENCE_COMPARE { 
    REF_COMPARE_EQUAL        = 0x0001,
    REF_COMPARE_LESS_THAN    = 0x0002,
    REF_COMPARE_GREATER_THAN = 0x0003
@@ -37,7 +37,7 @@ typedef DWORD REFERENCE_COMPARE;
 ```
 
 ```csharp
-public enum enum_REFERENCE_COMPARE { 
+public enum enum_REFERENCE_COMPARE { 
    REF_COMPARE_EQUAL        = 0x0001,
    REF_COMPARE_LESS_THAN    = 0x0002,
    REF_COMPARE_GREATER_THAN = 0x0003

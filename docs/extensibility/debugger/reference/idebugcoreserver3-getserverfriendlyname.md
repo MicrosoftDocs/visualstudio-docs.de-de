@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06956af7120b81d93a32c11066744c11ad12f30b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923204"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Ruft einen anzeigen Amen für den Server ab.
@@ -28,14 +28,14 @@ Ruft einen anzeigen Amen für den Server ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetServerFriendlyName(
-   BSTR* pbstrName
+HRESULT GetServerFriendlyName(
+   BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetServerFriendlyName(
-   out string pbstrName
+int GetServerFriendlyName(
+   out string pbstrName
 );
 ```
 

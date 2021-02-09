@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5845ce7f512a24d341f73afa9f9905339dda87cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922965"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 Diese Struktur enthält Informationen zu Prozessen, die auf einem Computer ausgeführt werden.
@@ -28,18 +28,18 @@ Diese Struktur enthält Informationen zu Prozessen, die auf einem Computer ausge
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-typedef struct tagPROVIDER_PROCESS_DATA {
-   PROVIDER_FIELDS    Fields;
-   PROGRAM_NODE_ARRAY ProgramNodes;
-   BOOL               fIsDebuggerPresent;
-} PROVIDER_PROCESS_DATA;
+typedef struct tagPROVIDER_PROCESS_DATA {
+   PROVIDER_FIELDS    Fields;
+   PROGRAM_NODE_ARRAY ProgramNodes;
+   BOOL               fIsDebuggerPresent;
+} PROVIDER_PROCESS_DATA;
 ```
 
 ```csharp
-public struct PROVIDER_PROCESS_DATA {
-   public uint               Fields;
-   public PROGRAM_NODE_ARRAY ProgramNodes;
-   public int                fIsDebuggerPresent;
+public struct PROVIDER_PROCESS_DATA {
+   public uint               Fields;
+   public PROGRAM_NODE_ARRAY ProgramNodes;
+   public int                fIsDebuggerPresent;
 }
 ```
 

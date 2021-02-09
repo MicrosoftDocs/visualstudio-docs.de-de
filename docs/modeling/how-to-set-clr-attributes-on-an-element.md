@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df9f8b16edcbe575ebac67f4acde9111a9511b85
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8e566eafce9b5763830c00659a860e6329671bcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922655"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Gewusst wie: Festlegen von CLR-Attributen für ein Element
 Benutzerdefinierte Attribute sind spezielle Attribute, die Domänen Elementen, Formen, Connectors und Diagrammen hinzugefügt werden können. Sie können beliebige Attribute hinzufügen, die von der- `System.Attribute` Klasse erben.
@@ -43,6 +43,6 @@ Benutzerdefinierte Attribute sind spezielle Attribute, die Domänen Elementen, F
 
      `[`*AttributeName* `(` *Parameter Name* `=` *Typ*`)]`
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))
