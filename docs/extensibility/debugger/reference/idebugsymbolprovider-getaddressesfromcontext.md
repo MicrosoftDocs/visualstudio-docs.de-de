@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9a7b3f9096bbbef1c4de2161c6bb3b6a4c59e4d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897194"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Mit dieser Methode wird ein Dokument Kontext einem Array von debugadressen zugeordnet.
@@ -28,7 +28,7 @@ Mit dieser Methode wird ein Dokument Kontext einem Array von debugadressen zugeo
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetAddressesFromContext( 
+HRESULT GetAddressesFromContext( 
    IDebugDocumentContext2* pDocContext,
    BOOL                    fStatmentOnly,
    IEnumDebugAddresses**   ppEnumBegAddresses,

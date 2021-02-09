@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d7d7e664f0c39a46e1d84df0c5a0842c7270c942
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896899"
 ---
 # <a name="project-model-core-components"></a>Hauptkomponenten eines Projektmodells
 Die folgenden Tabellen erweitern das Projekt Modell. Die Tabellen enthalten kurze Beschreibungen der im Modell identifizierten Schnittstellen und Dienste sowie der Schnittstellen und Dienste, die bestimmten Objekten zugeordnet sind. Außerdem beschreiben die Tabellen weitere Schnittstellen, die bei der Erstellung und Wartung von Projekten optional sind, abhängig von den Anforderungen des jeweiligen Projekt Typs.

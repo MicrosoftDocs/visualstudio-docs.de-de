@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898310"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Gewusst wie: Verwenden integrierter, Färb baren Elemente
 Vor der Verwendung der integrierten färb baren Elemente müssen Sie zunächst ein Signal an die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) senden, dass Sie keine eigenen, benutzerdefinierten Elemente bereitstellen, die in diesem Fall <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> Objekte sind. Hierzu legen Sie einen Registrierungs Eintrag für den Sprachdienst fest.

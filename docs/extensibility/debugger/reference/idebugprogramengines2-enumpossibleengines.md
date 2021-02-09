@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898997"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Gibt die GUIDs für alle möglichen debugengines (de) zurück, die das Programm debuggen können.
@@ -28,7 +28,7 @@ Gibt die GUIDs für alle möglichen debugengines (de) zurück, die das Programm 
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT EnumPossibleEngines( 
+HRESULT EnumPossibleEngines( 
    DWORD  celtBuffer,
    GUID*  rgguidEngines,
    DWORD* pceltEngines
@@ -36,7 +36,7 @@ HRESULT EnumPossibleEngines( 
 ```
 
 ```csharp
-int EnumPossibleEngines( 
+int EnumPossibleEngines( 
    uint      celtBuffer,
    GUID[]    rgguidEngines,
    ref DWORD pceltEngines

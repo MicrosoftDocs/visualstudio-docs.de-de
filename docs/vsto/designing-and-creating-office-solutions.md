@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: df634a7c242819e4f41a6fddeae4099a3d25fae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897640"
 ---
 # <a name="design-and-create-office-solutions"></a>Entwerfen und Erstellen von Office-Lösungen
 
@@ -93,7 +93,7 @@ Visual Studio stellt Projektvorlagen bereit, mit denen Sie mehrere unterschiedli
 ## <a name="referenced-assemblies"></a>Assemblys, auf die verwiesen wird
  Eine Assembly kann auf andere Assemblys verweisen, die in den Verweisen des Projekts aufgelistet sind. Eine Assembly in einem Projekt auf Dokumentebene kann jedoch auf keine andere Assembly in einem Projekt auf Dokumentebene verweisen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)
