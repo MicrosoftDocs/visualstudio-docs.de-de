@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: f328f2112073c082e276683d32d6ca06276b9829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974190"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848194"
 ---
 # <a name="command-flag-eelement"></a>Eelement für Befehlsflag
 Ändert das übergeordnete Element.
@@ -37,7 +37,7 @@ ms.locfileid: "94974190"
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |Allowparametriams|Gibt an, dass Benutzer Befehlsparameter im **Befehls** Fenster eingeben können, wenn Sie den kanonischen Namen des Befehls eingeben.<br /><br /> Gültig für: `Button`|
 |AlwaysCreate|Das Menü wird auch dann erstellt, wenn es keine Gruppen oder Schaltflächen enthält.<br /><br /> Gültig für: `Menu`|
@@ -71,10 +71,10 @@ ms.locfileid: "94974190"
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Buttons-Element](../extensibility/buttons-element.md)|Stellt eine Gruppe für [Schaltflächen Element](../extensibility/button-element.md) Elemente bereit.|
 |[Menüs-Element](../extensibility/menus-element.md)|Definiert alle Menüs, die von einem VSPackage implementiert werden.|
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 - [Visual Studio-Befehls Tabelle (. Vsct-Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2eb7abf897cf4891f08228dd5f0c918f580a1ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850660"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Beschreibt die Eigenschaften eines Threads.
@@ -28,7 +28,7 @@ Beschreibt die Eigenschaften eines Threads.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-typedef struct _tagTHREADPROPERTIES { 
+typedef struct _tagTHREADPROPERTIES { 
    THREADPROPERTY_FIELDS dwFields;
    DWORD                 dwThreadId;
    DWORD                 dwSuspendCount;
@@ -40,7 +40,7 @@ typedef struct _tagTHREADPROPERTIES { 
 ```
 
 ```csharp
-public struct THREADPROPERTIES { 
+public struct THREADPROPERTIES { 
    public uint   dwFields;
    public uint   dwThreadId;
    public uint   dwSuspendCount;
@@ -83,7 +83,7 @@ public struct THREADPROPERTIES { 
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5c2204a1f8c4bef17256e98ed04dcf4b195c3aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850820"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 Im folgenden sind die Schnittstellen f체r die Symbol Behandlung f체r das aufgef체hrt [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
@@ -27,7 +27,7 @@ Im folgenden sind die Schnittstellen f체r die Symbol Behandlung f체r das aufgef�
 ## <a name="discussion"></a>Diskussion
  Diese Schnittstellen werden verwendet, um Variablen in einer-R체ckruf Stapel w채hrend des Break-Modus auszuwerten. Sie werden nur f체r Common Language Runtime Symbol Anbieter (SP) implementiert.
 
-|Schnittstelle|Implementiert von|BESCHREIBUNG|
+|Schnittstelle|Implementiert von|Beschreibung|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|Stellt die Adresse eines Elements dar.|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|Stellt die Adresse eines Elements dar und bietet Zugriff auf die Prozess-ID.|
@@ -60,5 +60,5 @@ Im folgenden sind die Schnittstellen f체r die Symbol Behandlung f체r das aufgef�
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|Stellt eine Auflistung von [idebugcustomattribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) -Objekten dar.|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|Stellt eine Auflistung von [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekten dar.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

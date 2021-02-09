@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848096"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Angeben von Dateihandlern für Dateierweiterungen
 Es gibt verschiedene Möglichkeiten, die Anwendung zu bestimmen, die eine Datei mit einer bestimmten Dateierweiterung verarbeitet. Die Verben OpenWithList und OpenWithProgIds sind zwei Methoden zum Angeben von Datei Handlern unter dem Registrierungs Eintrag für die Dateierweiterung.
@@ -65,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- Die als Standardwert für die Dateierweiterung angegebene ProgID ist der Standarddatei Handler. Wenn Sie die ProgID für eine Dateierweiterung ändern, die mit einer früheren Version von ausgeliefert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wurde oder die von anderen Anwendungen übernommen werden kann, müssen Sie den `OpenWithProgids` Schlüssel für die Dateierweiterung registrieren und die neue ProgID in der Liste zusammen mit den alten ProgIDs, die Sie unterstützen, angeben. Zum Beispiel:
+ Die als Standardwert für die Dateierweiterung angegebene ProgID ist der Standarddatei Handler. Wenn Sie die ProgID für eine Dateierweiterung ändern, die mit einer früheren Version von ausgeliefert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wurde oder die von anderen Anwendungen übernommen werden kann, müssen Sie den `OpenWithProgids` Schlüssel für die Dateierweiterung registrieren und die neue ProgID in der Liste zusammen mit den alten ProgIDs, die Sie unterstützen, angeben. Beispiel:
 
 ```
 HKEY_CLASSES_ROOT\
