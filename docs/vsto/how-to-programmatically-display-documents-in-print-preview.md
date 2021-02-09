@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], displaying in print preview
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 69c5014958d137b534a283b0d07fa048966092be
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 14005f465fd4394e86450017530de457a97b3d4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885546"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Gewusst wie: Programm gesteuertes Anzeigen von Dokumenten in der Seitenansicht
   Wenn Ihre Projektmappe einen Bericht generiert, können Sie dem Benutzer den Bericht im Seitenansichtsmodus anzeigen.

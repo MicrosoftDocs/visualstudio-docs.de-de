@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: ae31e9d40dd0d399a4272eeb3ec28692d01a99b3
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: a5ec356513122752486a197fbe5bb420d6f4a6c9
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147687"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541019"
 ---
 ## <a name="how-do-i-activate-my-monthly-azure-devtest-individual-credit"></a>Wie aktiviere ich meine persönliche monatliche Azure-Dev/Test-Gutschrift? 
 

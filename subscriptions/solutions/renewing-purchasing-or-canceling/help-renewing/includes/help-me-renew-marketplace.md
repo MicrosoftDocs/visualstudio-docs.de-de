@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: renewing
 subscription.type: cloud
 sap.id: b324c31f-5d44-4cc2-537a-9c354bc5fbfc
-ms.openlocfilehash: 5c54e25592c4227f9aaa89595d628217dd80767d
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 309a69f7a516ca608cd6321d6bb38e1137426167
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916040"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541225"
 ---
 ## <a name="renewing-subscriptions-through-visual-studio-marketplace"></a>Verlängern von Abonnements über den Visual Studio Marketplace 
 

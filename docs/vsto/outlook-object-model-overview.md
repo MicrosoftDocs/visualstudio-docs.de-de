@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 316ead76be1f84fccc6f675b204587008e8a194a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885299"
 ---
 # <a name="outlook-object-model-overview"></a>Übersicht über das Outlook-Objektmodell
   Zum Entwickeln von VSTO-Add-Ins für Microsoft Office Outlook können Sie mit den Objekten interagieren, die vom Outlook-Objektmodell bereitgestellt werden. Das Outlook-Objektmodell stellt Klassen und Schnittstellen bereit, die Elemente der Benutzeroberfläche darstellen. Das <xref:Microsoft.Office.Interop.Outlook.Application> -Objekt stellt beispielsweise die gesamte Anwendung, das <xref:Microsoft.Office.Interop.Outlook.Folder> -Objekt einen Ordner mit E-Mails oder anderen Elementen und das <xref:Microsoft.Office.Interop.Outlook.MailItem> -Objekt eine E-Mail dar.
@@ -133,7 +133,7 @@ ms.locfileid: "97528055"
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)|Enthält Themen, die das Ausführen von Aufgaben mit Kontakten veranschaulichen.|
 |[Arbeiten mit e-Mail-Elementen](../vsto/working-with-mail-items.md)|Enthält Themen, die das Ausführen von Aufgaben mit Mailelementen veranschaulichen.|

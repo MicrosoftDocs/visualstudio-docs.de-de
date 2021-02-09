@@ -16,15 +16,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], replacing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9567ea197c9a181141aeb52db0cca56ad4776237
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e82aef0fc473b0ed11bcc9fce15b6426d5b91b4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885390"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente
   Es gibt drei Hauptmethoden zum Einfügen von Text in Microsoft Office Word-Dokumente:

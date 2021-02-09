@@ -12,15 +12,15 @@ helpviewer_keywords:
 - comments, worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 33ae98f6b6e4508f76323b0b06dab3693f0ac5d0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7de75a1846aa7261a723c87297511b7461c49f47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885507"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Gewusst wie: Programm gesteuertes Anzeigen von Arbeitsblatt Kommentaren
   Sie können Kommentare in Microsoft Office Excel-Arbeitsblättern programmgesteuert anzeigen und ausblenden.

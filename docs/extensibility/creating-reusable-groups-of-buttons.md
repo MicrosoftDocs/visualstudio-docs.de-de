@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 62873d57da04f94ce1cdda16c5fe4801af5d19c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884922"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Erstellen wiederverwendbarer Gruppen von Schaltflächen
 Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer in einem Menü oder einer Symbolleiste angezeigt werden. Alle Befehls Gruppen können wieder verwendet werden, indem Sie im Abschnitt commandplacement der *vsct* -Datei anderen übergeordneten Menüs zugewiesen werden.
@@ -30,7 +30,7 @@ Eine Befehlsgruppe ist eine Auflistung von Befehlen, die immer in einem Menü od
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen `ReusableButtons` . Weitere Informationen finden Sie unter [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **reusablecommand** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *ReusableCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierte Befehls Element Vorlage mit dem Namen **reusablecommand** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie   >  **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefinierter Befehl** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *ReusableCommand.cs*.
 
 3. Wechseln Sie in der *vsct* -Datei zum Abschnitt "Symbole", und suchen Sie das Element "guidsymbol", das Gruppen und Befehle für das Projekt enthält. Der Name sollte "guidre-ablecommandpackagecmdset" lauten.
 

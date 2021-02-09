@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884532"
 ---
 # <a name="createpkgdef-utility"></a>Das Dienstprogramm "| atepkgdef"
 Nimmt eine DLL-Datei für eine Visual Studio-Erweiterung als Parameter an und erstellt eine *pkgdef* -Datei für die *dll* -Datei. Die *pkgdef* -Datei enthält alle Informationen, die andernfalls bei der Installation der Erweiterung in die Systemregistrierung geschrieben werden.
@@ -47,7 +47,7 @@ Erzwingt **die Registrierung** mit dem Assemblydienstprogramm.
 **&lt;AssemblyPath&gt;**\
 Der Pfad der *dll* -Datei, aus der die *pkgdef*-Datei generiert werden soll.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 Die Erweiterungs Bereitstellung mithilfe von *pkgdef* -Dateien ersetzt die Registrierungsanforderungen früherer Versionen von Visual Studio.
 
 ::: moniker range=">=vs-2019"
@@ -84,5 +84,5 @@ Wenn der Installationsordner *%VSInstallDir%\common7\ide\Extensions \\* lautet, 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Das Hilfsprogramm "| ateexpinstance](../../extensibility/internals/createexpinstance-utility.md)
