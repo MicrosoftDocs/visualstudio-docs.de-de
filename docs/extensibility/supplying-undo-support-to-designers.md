@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 9e8b7ea0dc29e4f8df9113963a95c363998c758d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850467"
 ---
 # <a name="supply-undo-support-to-designers"></a>Unterstützung für die Bereitstellung für Designer
 

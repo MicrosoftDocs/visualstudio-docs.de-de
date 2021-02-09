@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebb3b16504a76c516408f997486279f52256294f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850712"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 Beschreibt den Zeilen-und Spalten Speicherort im angegebenen Text.
@@ -28,14 +28,14 @@ Beschreibt den Zeilen-und Spalten Speicherort im angegebenen Text.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-typedef struct _tagTEXT_POSITION { 
+typedef struct _tagTEXT_POSITION { 
    DWORD dwLine;
    DWORD dwColumn;
 } TEXT_POSITION;
 ```
 
 ```csharp
-public struct TEXT_POSITION { 
+public struct TEXT_POSITION { 
    public uint dwLine;
    public uint dwColumn;
 };
@@ -83,7 +83,7 @@ Diese Struktur wird als Parameter an die folgenden Methoden übergeben:
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
