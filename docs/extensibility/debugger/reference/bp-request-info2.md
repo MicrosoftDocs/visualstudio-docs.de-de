@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04d1db2ca8176678d8a72a84ede2bddcbfa2f152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ad3c5492143f97559770c57d528971ac84f22fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903275"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
 Enthält die Informationen, die zum Implementieren eines Breakpoints erforderlich sind, einschließlich der Hersteller-GUID, der Einschränkung und des Ablauf Verfolgungs Punkts.
@@ -28,7 +28,7 @@ Enthält die Informationen, die zum Implementieren eines Breakpoints erforderlic
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-typedef struct _BP_REQUEST_INFO2 {
+typedef struct _BP_REQUEST_INFO2 {
     BPREQI_FIELDS   dwFields;
     GUID            guidLanguage;
     BP_LOCATION     bpLocation;
@@ -42,11 +42,11 @@ typedef struct _BP_REQUEST_INFO2 {
     GUID            guidVendor;
     BSTR            bstrConstraint;
     BSTR            bstrTracepoint;
-} BP_REQUEST_INFO2;
+} BP_REQUEST_INFO2;
 ```
 
 ```csharp
-public struct BP_REQUEST_INFO2 {
+public struct BP_REQUEST_INFO2 {
     public uint           dwFields;
     public Guid           guidLanguage;
     public BP_LOCATION    bpLocation;

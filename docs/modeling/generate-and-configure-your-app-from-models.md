@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a0b83d3ac7be95c42ca0c4e53a188569bb5770
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9299880c2d06cf323351a234239bed71597072a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902712"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generieren und Konfigurieren von Apps aus Modellen
 Sie können Teile Ihrer Anwendung aus einem Modell generieren oder konfigurieren.
@@ -72,7 +72,7 @@ Sie können Teile Ihrer Anwendung aus einem Modell generieren oder konfigurieren
 
      Ein UML-Klassendiagramm beispielsweise ist eine Auflistung von Feldern und Pfeilen. Mit dieser Schreibweise können Sie theoretisch alles definieren. Jedoch empfehlen wir nicht, dass Sie das Klassendiagramm verwenden, es sei denn, Sie beschreiben tatsächlich einen Satz von Typen. Beispielsweise können Sie Klassendiagramme anpassen, um verschiedene Arten von Webseiten zu beschreiben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)
 - [Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md)

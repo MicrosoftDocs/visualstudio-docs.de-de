@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902184"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Erstellen eines Windows Forms Toolbox-Steuer Elements
 
@@ -26,19 +26,19 @@ Mit der Windows Forms Toolbox-Steuerelement Vorlage, die in der Visual Studio-Er
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das vs SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Download Center. Sie ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-the-toolbox-control"></a>Erstellen des Toolbox-Steuer Elements
 
-Mit der Windows Forms Toolbox-Steuerelement Vorlage wird ein nicht definiertes Benutzer Steuerelement erstellt und die gesamte Funktionalität bereitstellt, die zum Hinzufügen des Steuer Elements zur **Toolbox**erforderlich ist.
+Mit der Windows Forms Toolbox-Steuerelement Vorlage wird ein nicht definiertes Benutzer Steuerelement erstellt und die gesamte Funktionalität bereitstellt, die zum Hinzufügen des Steuer Elements zur **Toolbox** erforderlich ist.
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Erstellen einer Erweiterung mit einem Windows Forms Toolbox-Steuerelement
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen `MyWinFormsControl` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine **Windows Forms Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `Counter` . Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element**hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **Windows Forms Toolbox-Steuer** Element aus.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine **Windows Forms Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `Counter` . Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie   >  **Neues Element** hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **Windows Forms Toolbox-Steuer** Element aus.
 
-3. Dadurch wird ein Benutzer Steuerelement, ein `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> zum Platzieren des Steuer Elements in der **Toolbox**und ein **Microsoft. VisualStudio. ToolboxControl** -Asset-Eintrag im VSIX-Manifest für die Bereitstellung hinzugefügt.
+3. Dadurch wird ein Benutzer Steuerelement, ein `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> zum Platzieren des Steuer Elements in der **Toolbox** und ein **Microsoft. VisualStudio. ToolboxControl** -Asset-Eintrag im VSIX-Manifest für die Bereitstellung hinzugefügt.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Erstellen einer Benutzeroberfläche für das Steuerelement
 
@@ -46,11 +46,11 @@ Das `Counter` -Steuerelement erfordert zwei untergeordnete Steuerelemente: a <xr
 
 #### <a name="to-build-the-user-interface"></a>So erstellen Sie die Benutzeroberfläche
 
-1. Doppelklicken Sie in **Projektmappen-Explorer**auf *counter.cs* , um Sie im Designer zu öffnen.
+1. Doppelklicken Sie in **Projektmappen-Explorer** auf *counter.cs* , um Sie im Designer zu öffnen.
 
 2. **Klicken Sie hier.** Schaltfläche, die standardmäßig eingeschlossen ist, wenn Sie die Windows Forms Toolbox-Steuerelement Vorlage hinzufügen.
 
-3. Ziehen Sie aus der **Toolbox**ein `Label` -Steuerelement und dann ein `Button` Steuerelement unterhalb der Entwurfs Oberfläche.
+3. Ziehen Sie aus der **Toolbox** ein `Label` -Steuerelement und dann ein `Button` Steuerelement unterhalb der Entwurfs Oberfläche.
 
 4. Ändern Sie die Größe des gesamten Benutzer Steuer Elements auf 150, 50 Pixel, und ändern Sie die Größe des Schaltflächen-Steuer Elements auf 50, 20 Pixel.
 
@@ -80,16 +80,16 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 3. Erstellen Sie die folgenden öffentlichen Eigenschaften Deklarationen.
 
     ```csharp
-    public int Value {
+    public int Value {
         get { return currentValue; }
     }
 
-    public string Message {
+    public string Message {
         get { return displayText; }
         set { displayText = value; }
     }
 
-    public bool ShowReset {
+    public bool ShowReset {
         get { return btnReset.Visible; }
         set { btnReset.Visible = value; }
     }
@@ -101,7 +101,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 4. Fügen Sie den folgenden Code in das- `Load` Ereignis für das-Steuerelement ein.
 
     ```csharp
-    private void Counter_Load(object sender, EventArgs e)
+    private void Counter_Load(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = Message + Value;
@@ -114,7 +114,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 5. Erstellen Sie die folgende öffentliche Methode, um den-Wert zu erhöhen.
 
     ```csharp
-    public void Increment()
+    public void Increment()
     {
         currentValue++;
         label1.Text = displayText + Value;
@@ -126,7 +126,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 6. Fügen Sie der Steuerelement Klasse eine Deklaration für das- `Incremented` Ereignis hinzu.
 
     ```csharp
-    public event EventHandler Incremented;
+    public event EventHandler Incremented;
     ```
 
     Aufrufer können diesem Ereignishandler hinzufügen, um auf Änderungen im Wert des Zählers zu reagieren.
@@ -134,7 +134,7 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 7. Kehren Sie zur Entwurfs Ansicht zurück, und doppelklicken Sie auf die Schaltfläche **Zurücksetzen** , um den `btnReset_Click` Ereignishandler zu generieren Füllen Sie ihn dann wie im folgenden Beispiel gezeigt aus.
 
     ```csharp
-    private void btnReset_Click(object sender, EventArgs e)
+    private void btnReset_Click(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = displayText + Value;
@@ -142,13 +142,13 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
     ```
 
-8. Ändern Sie direkt oberhalb der Klassendefinition in der `ProvideToolboxControl` -Attributdeklaration den Wert des ersten Parameters von `"MyWinFormsControl.Counter"` in `"General"`. Dadurch wird der Name der Elementgruppe festgelegt, die das Steuerelement in der **Toolbox**hostet.
+8. Ändern Sie direkt oberhalb der Klassendefinition in der `ProvideToolboxControl` -Attributdeklaration den Wert des ersten Parameters von `"MyWinFormsControl.Counter"` in `"General"`. Dadurch wird der Name der Elementgruppe festgelegt, die das Steuerelement in der **Toolbox** hostet.
 
     Das folgende Beispiel zeigt das `ProvideToolboxControl` -Attribut und die angepasste Klassendefinition.
 
     ```csharp
     [ProvideToolboxControl("General", false)]
-    public partial class Counter : UserControl
+    public partial class Counter : UserControl
     ```
 
 ### <a name="test-the-control"></a>Testen des Steuerelements
@@ -163,9 +163,9 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
 2. Erstellen Sie in der experimentellen Instanz von Visual Studio ein **Windows Forms-Anwendungs** Projekt.
 
-3. Doppelklicken Sie in **Projektmappen-Explorer**auf *Form1.cs* , um Sie im Designer zu öffnen, wenn Sie nicht bereits geöffnet ist.
+3. Doppelklicken Sie in **Projektmappen-Explorer** auf *Form1.cs* , um Sie im Designer zu öffnen, wenn Sie nicht bereits geöffnet ist.
 
-4. In der **Toolbox**sollte das `Counter` Steuerelement im Abschnitt **Allgemein** angezeigt werden.
+4. In der **Toolbox** sollte das `Counter` Steuerelement im Abschnitt **Allgemein** angezeigt werden.
 
 5. Ziehen `Counter` Sie ein-Steuerelement auf das Formular, und wählen Sie es aus. Die `Value` `Message` Eigenschaften, und werden `ShowReset` im Fenster **Eigenschaften** sowie in den Eigenschaften, die von geerbt werden, angezeigt <xref:System.Windows.Forms.UserControl> .
 
@@ -210,13 +210,13 @@ Das-Steuerelement macht `Counter` eine Methode verfügbar, um den Zähler zu erh
 
 17. Klicken Sie auf **Zurücksetzen**.
 
-    Der Indikatorensatz wird auf **0**zurückgesetzt.
+    Der Indikatorensatz wird auf **0** zurückgesetzt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Wenn Sie ein **Toolbox** -Steuerelement erstellen, erstellt Visual Studio eine Datei namens *Projektname. vsix* im Ordner "" \bin\debug\ "des Projekts. Sie können das-Steuerelement bereitstellen, indem Sie die *VSIX* -Datei in ein Netzwerk oder auf eine Website hochladen. Wenn ein Benutzer die *VSIX* -Datei öffnet, wird das Steuerelement installiert und der Visual Studio- **Toolbox** auf dem Computer des Benutzers hinzugefügt. Alternativ dazu können **Sie die** *VSIX* -Datei in [Visual Studio Marketplace](https://marketplace.visualstudio.com/) hochladen, damit Benutzer Sie finden können, indem Sie im Dialogfeld Extras  >  **Erweiterungen und Updates** suchen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Erstellen eines WPF-Toolbox-Steuer Elements](../extensibility/creating-a-wpf-toolbox-control.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7776c7fa35cd7ac06dec60ced3604cb67c96da4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903204"
 ---
 # <a name="extend-the-status-bar"></a>Erweitern der Statusleiste
 Sie können die Visual Studio-Statusleiste unten in der IDE verwenden, um Informationen anzuzeigen.
@@ -114,7 +114,7 @@ Sie können die Visual Studio-Statusleiste unten in der IDE verwenden, um Inform
 
 1. Die Statusleiste zeigt eine Schleifen Animation an, die entweder einen Vorgang mit langer Ausführungszeit anzeigt (z. b. das entwickeln mehrerer Projekte in einer Projekt Mappe). Wenn diese Animation nicht angezeigt wird, stellen Sie sicher, dass Sie über die richtigen **Tools**-  >  **options** Einstellungen verfügen:
 
-     Wechseln Sie zu **Tools** Extras  >  **Optionen**  >  Registerkarte **Allgemein** , und deaktivieren Sie **visuelle Darstellung automatisch basierend auf der Client Leistung anpassen**. Aktivieren Sie dann die unter Option umfassende **visuelle Client Darstellung aktivieren**. Sie sollten jetzt in der Lage sein, die Animation anzuzeigen, wenn Sie das Projekt in ihrer experimentellen Instanz von Visual Studio erstellen.
+     Wechseln Sie zu Extras  >  **Optionen**  >  Registerkarte **Allgemein** , und deaktivieren Sie **visuelle Darstellung automatisch basierend auf der Client Leistung anpassen**. Aktivieren Sie dann die unter Option umfassende **visuelle Client Darstellung aktivieren**. Sie sollten jetzt in der Lage sein, die Animation anzuzeigen, wenn Sie das Projekt in ihrer experimentellen Instanz von Visual Studio erstellen.
 
      In diesem Verfahren wird die standardmäßige Visual Studio-Animation angezeigt, die das Projekt oder die Projekt Mappe bildet.
 

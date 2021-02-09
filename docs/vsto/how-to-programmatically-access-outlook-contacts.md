@@ -11,15 +11,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], searching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7b82595aa3a09076b91211ba4ab45145b02ebcd9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903733"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Gewusst wie: Programm gesteuertes zugreifen auf Outlook-Kontakte
   In diesem Beispiel werden alle Kontakte gesucht, deren Nachnamen eine angegebene Such Zeichenfolge enthalten.
@@ -36,7 +36,7 @@ ms.locfileid: "96844686"
 
 - Kontakte, deren Nachname die Zeichenfolge "**na"** (z. b. "Tzipi Butnaru") im Ordner " **Contacts** " enthalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)
 - [Gewusst wie: Programm gesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Gewusst wie: Programm gesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

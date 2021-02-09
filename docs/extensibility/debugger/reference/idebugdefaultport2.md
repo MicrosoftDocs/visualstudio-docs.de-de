@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f560a3dabefb0a8dede6520dcd8fd47f609a7780
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fca0b999f4c5878debbdee556431d56b7977c719
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901849"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Diese Schnittstelle bietet verschiedene Methoden für den Zugriff auf die Server-und Benachrichtigungsfunktionen eines Ports.
@@ -37,7 +37,7 @@ IDebugDefaultPort2 : IDebugPort2
 ## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
  Zusätzlich zu den in [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)definierten Methoden implementiert diese Schnittstelle die folgenden Methoden:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Ruft die Port Benachrichtigungs Schnittstelle von diesem Port ab.|
 |[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Ruft die Schnittstelle zum Server ab, der diesen Port gehostet.|

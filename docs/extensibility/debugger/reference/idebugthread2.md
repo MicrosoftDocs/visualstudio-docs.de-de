@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1965ff1b4cfa89e4584c194942dec7ae486473ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3eb4710e3073ee49aa9660aa322b4638c4c0d24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901613"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 Diese Schnittstelle stellt einen Thread dar, der in einem Programm ausgeführt wird.
@@ -41,7 +41,7 @@ IDebugThread2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugThread2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|Ruft eine Liste der Stapel Rahmen für diesen Thread ab.|
 |[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|Ruft den Namen des Threads ab.|

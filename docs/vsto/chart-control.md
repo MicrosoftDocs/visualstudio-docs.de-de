@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Chart control [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 45de5170ca8a8b7e8a71521e18523e73ebc24046
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 3530e0821d4569381f610f44ae541c04b484b469
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903778"
 ---
 # <a name="chart-control"></a>Diagramm Steuerelement
   Das <xref:Microsoft.Office.Tools.Excel.Chart>-Steuerelement ist ein Diagrammobjekt, das Ereignisse verfügbar macht. Beim Hinzufügen eines Diagramms zu einem Arbeitsblatt erstellt Visual Studio ein <xref:Microsoft.Office.Tools.Excel.Chart>-Objekt, für das Sie direkt programmieren können, ohne das Objektmodell von Microsoft Office Excel zu durchlaufen.
@@ -74,7 +74,7 @@ ms.locfileid: "96847824"
 
 - <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
 - [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)

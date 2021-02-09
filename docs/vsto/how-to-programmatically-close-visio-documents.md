@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], closing Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5117714564fe4d8a52dad6f3663f870ce39209ad
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c1592bd500103a2db42934ab8f81392a5f1fa0d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903692"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>Gewusst wie: Programm gesteuertes schließen von Visio-Dokumenten
   Sie können das aktive Microsoft Office Visio-Dokument schließen, indem Sie die `Microsoft.Office.Interop.Visio.Document.Close`-Methode verwenden.
@@ -38,7 +38,7 @@ ms.locfileid: "96848269"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Visio-Lösungen](../vsto/visio-solutions.md)
 - [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)
 - [Gewusst wie: Programm gesteuertes Erstellen neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)

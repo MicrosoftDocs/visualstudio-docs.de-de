@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7fdadad602a256b4740b4c4204704ca73864d612
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903016"
 ---
 # <a name="custom-tools"></a>Benutzerdefinierte Tools
 Mithilfe von *benutzerdefinierten Tools* können Sie ein Tool einem Element in einem Projekt zuordnen und dieses Tool ausführen, wenn die Datei gespeichert wird. Bestimmte benutzerdefinierte Tools, die manchmal auch als *Einzel Datei-Generatoren* bezeichnet werden, werden häufig verwendet, um Konvertierer zu implementieren, die Code aus Daten generieren und umgekehrt. Beispielsweise erstellen Einzel Datei [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] -Generatoren und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus den *. Settings* -und *RESX* -Dateien. Der generierte Quellcode stellt stark typisierten Zugriff auf die Daten in den *. Settings* -und *RESX* -Dateien bereit. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen und unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht. Ihre eigenen Projekttypen können auch benutzerdefinierte Tools unterstützen.
@@ -45,7 +45,7 @@ Mithilfe von *benutzerdefinierten Tools* können Sie ein Tool einem Element in e
 
  Zeigt, wie eine Projekt Element Eigenschaft (z. b. der Autor einer Quelldatei) in der Projektdatei gespeichert wird.
 
-## <a name="reference"></a>Referenz
+## <a name="reference"></a>Verweis
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Stellt Details zum bereit <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> , das eine einzelne Eingabedatei in eine einzelne Ausgabedatei transformiert, die kompiliert oder einem Projekt hinzugefügt werden kann.
 
  <xref:EnvDTE.ProjectItem> Erläutert die- `ProjectItem` Schnittstelle, die ein Element in einem Projekt darstellt.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 550baf52347c1128ef50509e7787861355c9428f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903402"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks- &gt; Element (Boots Trapper)
 Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests auf dem lokalen Computer, um sicherzustellen, dass alle erforderlichen Voraussetzungen für eine Anwendung installiert wurden.
@@ -74,73 +74,73 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 ## <a name="assemblycheck"></a>AssemblyCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . `AssemblyCheck`Der Boots Trapper stellt für jede Instanz von sicher, dass die durch das-Element identifizierte Assembly im globalen Assemblycache (GAC) vorhanden ist. Sie enthält keine Elemente und verfügt über die folgenden Attribute.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Property`|Erforderlich. Der Name der Eigenschaft, in der das Ergebnis gespeichert werden soll. Auf diese Eigenschaft kann von einem Test unterhalb des- `InstallConditions` Elements verwiesen werden, das ein untergeordnetes `Command` Element des-Elements ist. Weitere Informationen finden Sie unter [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
 |`Name`|Erforderlich. Der voll qualifizierte Name der zu Überprüfung enden Assembly.|
 |`PublicKeyToken`|Erforderlich. Die abgekürzte Form des öffentlichen Schlüssels, der dieser Assembly mit starkem Namen zugeordnet ist. Alle im GAC gespeicherten Assemblys müssen einen Namen, eine Version und einen öffentlichen Schlüssel aufweisen.|
 |`Version`|Erforderlich. Die Version der Assembly.<br /><br /> Die Versionsnummer hat das Format \<*major version*> . \<*minor version*> . \<*build version*> . \<*revision version*> .|
-|`Language`|Optional. Die Sprache einer lokalisierten Assembly. Der Standardwert ist `neutral`.|
-|`ProcessorArchitecture`|Optional. Der Computer Prozessor, der Ziel dieser Installation ist. Der Standardwert ist `msil`.|
+|`Language`|Dies ist optional. Die Sprache einer lokalisierten Assembly. Der Standardwert ist `neutral`.|
+|`ProcessorArchitecture`|Dies ist optional. Der Computer Prozessor, der Ziel dieser Installation ist. Der Standardwert ist `msil`.|
 
 ## <a name="externalcheck"></a>ExternalCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `ExternalCheck` führt der Boots Trapper das benannte externe Programm in einem separaten Prozess aus und speichert den Exitcode in der durch angegebenen Eigenschaft `Property` . `ExternalCheck` ist nützlich, um komplexe Abhängigkeits Überprüfungen zu implementieren, oder wenn die einzige Möglichkeit zum Überprüfen, ob eine Komponente vorhanden ist, instanziiert wird.
 
  `ExternalCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Property`|Erforderlich. Der Name der Eigenschaft, in der das Ergebnis gespeichert werden soll. Auf diese Eigenschaft kann von einem Test unterhalb des- `InstallConditions` Elements verwiesen werden, das ein untergeordnetes `Command` Element des-Elements ist. Weitere Informationen finden Sie unter [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
 |`PackageFile`|Erforderlich. Das auszuführende externe Programm. Das Programm muss Teil des Setup Verteilungs Pakets sein.|
-|`Arguments`|Optional. Gibt Befehlszeilenargumente für die ausführbare Datei an, die von benannt wird `PackageFile` .|
+|`Arguments`|Dies ist optional. Gibt Befehlszeilenargumente für die ausführbare Datei an, die von benannt wird `PackageFile` .|
 
 ## <a name="filecheck"></a>FileCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `FileCheck` bestimmt der Boots Trapper, ob die benannte Datei vorhanden ist, und gibt die Versionsnummer der Datei zurück. Wenn die Datei keine Versionsnummer hat, legt der Boots Trapper die Eigenschaft mit dem Namen `Property` auf 0 fest. Wenn die Datei nicht vorhanden ist, `Property` wird auf keinen Wert festgelegt.
 
  `FileCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
-| attribute | BESCHREIBUNG |
+| attribute | Beschreibung |
 |-----------------| - |
 | `Property` | Erforderlich. Der Name der Eigenschaft, in der das Ergebnis gespeichert werden soll. Auf diese Eigenschaft kann von einem Test unterhalb des- `InstallConditions` Elements verwiesen werden, das ein untergeordnetes `Command` Element des-Elements ist. Weitere Informationen finden Sie unter [\<Commands>Element](../deployment/commands-element-bootstrapper.md). |
 | `FileName` | Erforderlich. Der Name der zu suchenden Datei. |
 | `SearchPath` | Erforderlich. Der Datenträger oder Ordner, in dem nach der Datei gesucht werden soll. Dabei muss es sich um einen relativen Pfad handeln, wenn `SpecialFolder` zugewiesen wird. andernfalls muss es sich um einen absoluten Pfad handeln. |
-| `SpecialFolder` | Optional. Ein Ordner, der für Windows oder für eine besondere Bedeutung hat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Der Standardwert ist die Interpretation `SearchPath` als absoluter Pfad. Gültige Werte sind:<br /><br /> `AppDataFolder`. Der Anwendungsdatenordner für diese [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, spezifisch für den aktuellen Benutzer.<br /><br /> `CommonAppDataFolder`. Der Ordner "Anwendungsdaten", der von allen Benutzern verwendet wird.<br /><br /> `CommonFilesFolder`. Der Ordner "gemeinsame Dateien" für den aktuellen Benutzer.<br /><br /> `LocalDataAppFolder`. Der Datenordner für nicht roaminganwendungen.<br /><br /> `ProgramFilesFolder`. Der standardmäßige Programmdateien-Ordner für 32-Bit-Anwendungen.<br /><br /> `StartUpFolder`. Der Ordner, der alle Anwendungen enthält, die beim Systemstart gestartet wurden.<br /><br /> `SystemFolder`. Der Ordner, der 32-Bit-System-DLLs enthält.<br /><br /> `WindowsFolder`. Der Ordner, der die Windows-Systeminstallation enthält.<br /><br /> `WindowsVolume`. Laufwerk oder Partition, das die Windows-Systeminstallation enthält. |
-| `SearchDepth` | Optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der von `SpecialFolder` und **SearchPath** angegeben wird. |
+| `SpecialFolder` | Dies ist optional. Ein Ordner, der für Windows oder für eine besondere Bedeutung hat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Der Standardwert ist die Interpretation `SearchPath` als absoluter Pfad. Gültige Werte sind:<br /><br /> `AppDataFolder`. Der Anwendungsdatenordner für diese [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, spezifisch für den aktuellen Benutzer.<br /><br /> `CommonAppDataFolder`. Der Ordner "Anwendungsdaten", der von allen Benutzern verwendet wird.<br /><br /> `CommonFilesFolder`. Der Ordner "gemeinsame Dateien" für den aktuellen Benutzer.<br /><br /> `LocalDataAppFolder`. Der Datenordner für nicht roaminganwendungen.<br /><br /> `ProgramFilesFolder`. Der standardmäßige Programmdateien-Ordner für 32-Bit-Anwendungen.<br /><br /> `StartUpFolder`. Der Ordner, der alle Anwendungen enthält, die beim Systemstart gestartet wurden.<br /><br /> `SystemFolder`. Der Ordner, der 32-Bit-System-DLLs enthält.<br /><br /> `WindowsFolder`. Der Ordner, der die Windows-Systeminstallation enthält.<br /><br /> `WindowsVolume`. Laufwerk oder Partition, das die Windows-Systeminstallation enthält. |
+| `SearchDepth` | Dies ist optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der von `SpecialFolder` und **SearchPath** angegeben wird. |
 
 ## <a name="msiproductcheck"></a>MsiProductCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `MsiProductCheck` prüft der Boots Trapper, ob die angegebene Microsoft Windows Installer Installation bis zum Abschluss ausgeführt wurde. Der Eigenschafts Wert wird abhängig vom Status des installierten Produkts festgelegt. Ein positiver Wert gibt an, dass das Produkt installiert ist, 0 oder-1 gibt an, dass es nicht installiert ist. (Weitere Informationen finden Sie in der Windows Installer SDK-Funktion MsiQueryFeatureState.) . Wenn Windows Installer nicht auf dem Computer installiert ist, `Property` wird nicht festgelegt.
 
  `MsiProductCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Property`|Erforderlich. Der Name der Eigenschaft, in der das Ergebnis gespeichert werden soll. Auf diese Eigenschaft kann von einem Test unterhalb des- `InstallConditions` Elements verwiesen werden, das ein untergeordnetes `Command` Element des-Elements ist. Weitere Informationen finden Sie unter [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
 |`Product`|Erforderlich. Die GUID für das installierte Produkt.|
-|`Feature`|Optional. Der GUID für eine bestimmte Funktion der installierten Anwendung.|
+|`Feature`|Dies ist optional. Der GUID für eine bestimmte Funktion der installierten Anwendung.|
 
 ## <a name="registrycheck"></a>RegistryCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `RegistryCheck` prüft der Boots Trapper, ob der angegebene Registrierungsschlüssel vorhanden ist oder ob er den angegebenen Wert aufweist.
 
  `RegistryCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Property`|Erforderlich. Der Name der Eigenschaft, in der das Ergebnis gespeichert werden soll. Auf diese Eigenschaft kann von einem Test unterhalb des- `InstallConditions` Elements verwiesen werden, das ein untergeordnetes `Command` Element des-Elements ist. Weitere Informationen finden Sie unter [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Erforderlich. Der Name des Registrierungsschlüssels.|
-|`Value`|Optional. Der Name des abzurufenden Registrierungs Werts. Standardmäßig wird der Text des Standardwerts zurückgegeben. `Value` muss entweder eine Zeichenfolge oder ein DWORD sein.|
+|`Value`|Dies ist optional. Der Name des abzurufenden Registrierungs Werts. Standardmäßig wird der Text des Standardwerts zurückgegeben. `Value` muss entweder eine Zeichenfolge oder ein DWORD sein.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
  Dieses Element ist ein optionales untergeordnetes Element von `InstallChecks` . Für jede Instanz von `RegistryFileCheck` ruft der Boots Trapper die Version der angegebenen Datei ab und versucht zunächst, den Pfad zu der Datei aus dem angegebenen Registrierungsschlüssel abzurufen. Dies ist besonders nützlich, wenn Sie eine Datei in einem Verzeichnis suchen möchten, das als Wert in der Registrierung angegeben ist.
 
  `RegistryFileCheck` enthält keine Elemente und verfügt über die folgenden Attribute.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Property`|Erforderlich. Der Name der Eigenschaft, in der das Ergebnis gespeichert werden soll. Auf diese Eigenschaft kann von einem Test unterhalb des- `InstallConditions` Elements verwiesen werden, das ein untergeordnetes `Command` Element des-Elements ist. Weitere Informationen finden Sie unter [\<Commands>Element](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Erforderlich. Der Name des Registrierungsschlüssels. Der Wert wird als Pfad zu einer Datei interpretiert, es sei denn, das- `File` Attribut ist festgelegt. Wenn dieser Schlüssel nicht vorhanden ist, `Property` wird nicht festgelegt.|
-|`Value`|Optional. Der Name des abzurufenden Registrierungs Werts. Standardmäßig wird der Text des Standardwerts zurückgegeben. `Value` muss eine Zeichenfolge sein.|
-|`FileName`|Optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass es sich bei dem vom Registrierungsschlüssel erhaltenen Wert um einen Verzeichnispfad handelt und dieser Name angefügt wird. Wenn kein Wert angegeben wird, wird davon ausgegangen, dass der von der Registrierung zurückgegebene Wert der vollständige Pfad zu einer Datei ist.|
-|`SearchDepth`|Optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der durch den Wert des Registrierungsschlüssels angegeben wird.|
+|`Value`|Dies ist optional. Der Name des abzurufenden Registrierungs Werts. Standardmäßig wird der Text des Standardwerts zurückgegeben. `Value` muss eine Zeichenfolge sein.|
+|`FileName`|Dies ist optional. Der Name einer Datei. Wenn angegeben, wird davon ausgegangen, dass es sich bei dem vom Registrierungsschlüssel erhaltenen Wert um einen Verzeichnispfad handelt und dieser Name angefügt wird. Wenn kein Wert angegeben wird, wird davon ausgegangen, dass der von der Registrierung zurückgegebene Wert der vollständige Pfad zu einer Datei ist.|
+|`SearchDepth`|Dies ist optional. Die Tiefe, in der die Unterordner nach der benannten Datei durchsucht werden sollen. Die Suche erfolgt ausführlich. Der Standardwert ist 0, wodurch die Suche auf den Ordner der obersten Ebene beschränkt wird, der durch den Wert des Registrierungsschlüssels angegeben wird.|
 
 ## <a name="remarks"></a>Bemerkungen
  Während die untergeordneten Elemente die auszuführenden `InstallChecks` Tests definieren, werden Sie nicht ausgeführt. Zum Ausführen der Tests müssen Sie `Command` Elemente unterhalb des- `Commands` Elements erstellen.
@@ -158,7 +158,7 @@ Das- `InstallChecks` Element unterstützt das Starten einer Vielzahl von Tests a
 ## <a name="installconditions"></a>InstallConditions
  Wenn `InstallChecks` ausgewertet wird, werden Eigenschaften erzeugt. Die Eigenschaften werden dann von verwendet, `InstallConditions` um zu bestimmen, ob ein Paket installiert, umgangen oder fehlschlägt. In der folgenden Tabelle sind die aufgeführt `InstallConditions` :
 
-|Bedingung|BESCHREIBUNG|
+|Bedingung|Beschreibung|
 |-|-|
 |`FailIf`|Wenn eine `FailIf` Bedingung als "true" ausgewertet wird, schlägt das Paket fehl. Die restlichen Bedingungen werden nicht ausgewertet.|
 |`BypassIf`|Wenn eine `BypassIf` Bedingung als "true" ausgewertet wird, wird das Paket umgangen. Die restlichen Bedingungen werden nicht ausgewertet.|

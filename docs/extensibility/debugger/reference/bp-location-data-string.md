@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 75f881feaaa2068abd98d771a63024f20435d98f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce47dc9a3fac9ee56b801e4d2681668f4467f532
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902159"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 Wird verwendet, um Daten Breakpoints festzulegen, die auf einer Zeichenfolge basieren, die der Benutzer aus der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) eingeben kann.
@@ -51,7 +51,7 @@ Die Anzahl der Elemente in der Daten Zeichenfolge, in der der Breakpoint auftrit
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

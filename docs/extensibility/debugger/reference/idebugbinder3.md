@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa85872337fdc1f7519d0de98cffe1436ef41c67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 673e4a4f18488b973984319310c139e104524a47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901886"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ IDebugBinder3 : IDebugBinder
 ## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
  Zusätzlich zu den Methoden, die von der [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle bereitgestellt werden, implementiert diese Schnittstelle Folgendes:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Ruft ein Speicher Objekt ab, das den Speicher darstellt, an den dieses-Objekt gebunden ist.|
 |[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Ruft die Ausnahme ab, die diesem-Objekt zugeordnet ist (falls vorhanden).|

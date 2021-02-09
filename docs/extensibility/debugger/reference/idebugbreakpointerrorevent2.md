@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09cb93f0f16420e56104f371d9caab262873390f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901863"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass ein ausstehender Haltepunkt aufgrund einer Warnung oder eines Fehlers nicht an ein geladenes Programm gebunden werden konnte.
@@ -37,7 +37,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBreakpointErrorEvent2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Ruft die [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) -Schnittstelle ab, die die Warnung oder den Fehler beschreibt.|
 
