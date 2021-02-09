@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879175"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Hinzufügen eines Benutzer Steuer Elements zur Start Seite
 
@@ -185,13 +185,13 @@ Um dieses Steuerelement für das Startseiten Projekt verfügbar zu machen, füge
 
 3. Geben Sie an einer Visual Studio-Eingabeaufforderung **devenv/rootsuffix Exp** ein, um eine experimentelle Instanz von Visual Studio zu öffnen.
 
-4. Wechseln Sie in der experimentellen Instanz zur Seite **Tools** Extras  >  **Optionen**  >  **Umgebung**  >  **Start** , und wählen Sie die XAML-Datei aus der Dropdown Liste **Start Seite anpassen** aus.
+4. Wechseln Sie in der experimentellen Instanz zur Seite Extras  >  **Optionen**  >  **Umgebung**  >  **Start** , und wählen Sie die XAML-Datei aus der Dropdown Liste **Start Seite anpassen** aus.
 
 5. Klicken Sie im Menü **Ansicht** auf **Startseite**.
 
     Die benutzerdefinierte Startseite sollte angezeigt werden. Wenn Sie Dateien ändern möchten, müssen Sie die experimentelle Instanz schließen, die Änderungen durchführen, die geänderten Dateien kopieren und einfügen und dann die experimentelle Instanz erneut öffnen, um die Änderungen anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [WPF-Container Steuerelemente](/previous-versions/bb675291(v=vs.110))
 - [Exemplarische Vorgehensweise: Hinzufügen von benutzerdefiniertem XAML zur Start Seite](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

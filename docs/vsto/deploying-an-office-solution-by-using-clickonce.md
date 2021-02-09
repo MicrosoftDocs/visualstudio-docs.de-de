@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: da527da4504d4c2d9375aee0209b0e261fe5fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877932"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Bereitstellen einer Office-Projekt Mappe mithilfe von ClickOnce
   Wenn Sie ClickOnce verwenden, können Sie die Office-Projektmappe in weniger Schritten bereitstellen. Wenn Sie Updates veröffentlichen, erkennt die Projektmappe sie automatisch und installiert sie. Für ClickOnce ist es jedoch erforderlich, die Projektmappe für jeden Benutzer eines Computers separat zu installieren. Daher sollten Sie die Verwendung von Windows Installer (*. msi*) in Erwägung gezogen, wenn die Projekt Mappe von mehreren Benutzern auf dem gleichen Computer ausgeführt wird.
@@ -284,7 +284,7 @@ ms.locfileid: "96845647"
 
 1. Kopieren Sie im Ordner **%USERPROFILE%\Documents\Visual Studio 2013 \ project\excelworkbook\excelworkbook** die Zertifikat Datei **ExcelWorkbook_TemporaryKey. pfx** , und fügen Sie Sie in den Ordner *publishfolder* **\anwendungsdateien\excelarbeitsmappe** Ordner " \_ _fistrecentpublishedversion_ " ein.
 
-2. Öffnen Sie die Visual Studio-Eingabeaufforderung, und ändern Sie dann die Verzeichnisse in den Ordner **c:\publish\anwendungsdateien\excelarbeitsmappe** \_ _MostRecentPublishedVersion_ (z. b. **c:\publish\anwendungsdateien \ ExcelWorkbook_1_0_0_4**).
+2. Öffnen Sie die Visual Studio-Eingabeaufforderung, und ändern Sie dann die Verzeichnisse in den Ordner **c:\publish\anwendungsdateien\excelarbeitsmappe** \_  (z. b. **c:\publish\anwendungsdateien \ ExcelWorkbook_1_0_0_4**).
 
 3. Signieren Sie das geänderte Anwendungsmanifest, indem Sie den folgenden Befehl ausführen:
 
@@ -306,7 +306,7 @@ ms.locfileid: "96845647"
 
      Die Meldung "ExcelWorkbook.vsto erfolgreich signiert" wird angezeigt.
 
-5. Kopieren Sie die Datei " *ExcelWorkbook. VSTO* " in das Verzeichnis " **c:\publish\Application files\excelworkbook**" \_ _MostRecentVersionNumber_ .
+5. Kopieren Sie die Datei " *ExcelWorkbook. VSTO* " in das Verzeichnis " **c:\publish\Application files\excelworkbook**" \_  .
 
 ## <a name="put-the-document-of-a-solution-onto-a-server-thats-running-sharepoint-document-level-customizations-only"></a><a name="SharePoint"></a> Speichern des Dokuments einer Projekt Mappe auf einem Server, auf dem SharePoint ausgeführt wird (nur Anpassungen auf Dokument Ebene)
  Sie können die Anpassung auf Dokumentebene für Endbenutzer mithilfe von SharePoint veröffentlichen. Wenn Benutzer die SharePoint-Site aufrufen und das Dokument öffnen, installiert die Laufzeit automatisch die Projektmappe aus dem freigegebenen Netzwerkordner auf den lokalen Computer des Benutzers. Nachdem die Projektmappe lokal installiert wurde, funktioniert die Anpassung sogar dann, wenn das Dokument an eine andere Stelle kopiert wird, z. B. auf den Desktop.
@@ -458,7 +458,7 @@ ms.locfileid: "96845647"
 > [!NOTE]
 > Lokale Daten werden für nur eine vorherige Version einer Projektmappe gespeichert. Wenn Sie ein Rollback für zwei Versionen ausführen, werden lokale Daten nicht beibehalten. Weitere Informationen zu lokalen Daten finden Sie unter [zugreifen auf lokale und Remote Daten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)
 - [Veröffentlichen von Office-Lösungen](../vsto/deploying-an-office-solution-by-using-clickonce.md)

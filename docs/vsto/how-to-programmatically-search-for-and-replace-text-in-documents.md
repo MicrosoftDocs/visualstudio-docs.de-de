@@ -15,15 +15,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text searches
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad77da419f70a8e513bf152ced41cccdd0474a8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f3ef1a32d145169db815915ee93d03893943e71f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877901"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Gewusst wie: Programm gesteuertes suchen und Ersetzen von Text in Dokumenten
   Das <xref:Microsoft.Office.Interop.Word.Find>-Objekt ist ein Element des <xref:Microsoft.Office.Interop.Word.Selection>- und des <xref:Microsoft.Office.Interop.Word.Range>-Objekts, und Sie können eines dieser Objekte verwenden, um in Microsoft Office Word-Dokumenten nach Text zu suchen. Der Befehl "Ersetzen" ist eine Erweiterung des Befehls "Suchen".

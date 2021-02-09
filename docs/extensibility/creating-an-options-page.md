@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877485"
 ---
 # <a name="create-an-options-page"></a>Erstellen einer Optionsseite
 
@@ -39,7 +39,7 @@ In dieser exemplarischen Vorgehensweise wird eine einfache Seite Extras/Optionen
 
 1. Jede Visual Studio-Erweiterung beginnt mit einem VSIX-Bereitstellungs Projekt, das die Erweiterungs Ressourcen enthält. Erstellen Sie ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt mit dem Namen `MyToolsOptionsExtension` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Fügen Sie ein VSPackage hinzu, indem Sie eine Visual Studio-Paket Element Vorlage namens hinzufügen `MyToolsOptionsPackage` . Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Navigieren Sie im **Dialogfeld Neues Element hinzufügen** zu **Visual c# Elemente**  >  **Erweiterbarkeit** , und wählen Sie dann **Visual Studio-Paket** aus. Ändern Sie im Feld **Name** am unteren Rand des Dialog Felds den Dateinamen in `MyToolsOptionsPackage.cs` . Weitere Informationen zum Erstellen eines VSPackage finden Sie unter [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Fügen Sie ein VSPackage hinzu, indem Sie eine Visual Studio-Paket Element Vorlage namens hinzufügen `MyToolsOptionsPackage` . Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie   >  **Neues Element** hinzufügen aus. Navigieren Sie im **Dialogfeld Neues Element hinzufügen** zu **Visual c# Elemente**  >  **Erweiterbarkeit** , und wählen Sie dann **Visual Studio-Paket** aus. Ändern Sie im Feld **Name** am unteren Rand des Dialog Felds den Dateinamen in `MyToolsOptionsPackage.cs` . Weitere Informationen zum Erstellen eines VSPackage finden Sie unter [Erstellen einer Erweiterung mit einem VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>So erstellen Sie das Eigenschaften Raster "Extras Optionen"
 
@@ -268,6 +268,6 @@ In dieser exemplarischen Vorgehensweise wird eine einfache Seite Extras/Optionen
 
      Ein Meldungs Feld zeigt den aktuellen Wert von an `OptionInteger` .
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 
 - [Optionen und Options Seiten](../extensibility/internals/options-and-options-pages.md)

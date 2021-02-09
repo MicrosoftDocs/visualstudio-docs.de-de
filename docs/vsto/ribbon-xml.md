@@ -22,15 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879292"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   Das Element "Menüband (XML)" ermöglicht das Anpassen eines Menübands mithilfe von XML. Verwenden Sie das Element Menüband (XML), wenn Sie das Menüband auf eine Weise anpassen möchten, die vom Element Menüband (visueller Designer) nicht unterstützt wird. Einen Vergleich dazu, was Sie mit den einzelnen Elementen tun können, finden Sie unter [Übersicht über das Menüband](../vsto/Ribbon-overview.md).
@@ -115,7 +115,7 @@ ms.locfileid: "97528415"
 
  In der folgende Tabelle werden die Standardelemente in der Menüband-XML-Datei beschrieben.
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |**customUI**|Stellt das benutzerdefinierte Menüband im VSTO-Add-in-Projekt dar.|
 |**Band**|Stellt das Menüband dar.|
@@ -125,7 +125,7 @@ ms.locfileid: "97528415"
 
  Diese Elemente verfügen über Attribute, die die Darstellung und das Verhalten des benutzerdefinierten Menübands angeben. In der folgende Tabelle werden die Standardattribute in der Menüband-XML-Datei beschrieben.
 
-|Attribut|Übergeordnetes Element|Beschreibung|
+|attribute|Übergeordnetes Element|Beschreibung|
 |---------------|--------------------|-----------------|
 |**onLoad**|**customUI**|Bezeichnet eine Methode, die aufgerufen wird, wenn die Anwendung das Menüband lädt.|
 |**idMso**|**Zeche**|Gibt eine integrierte Registerkarte an, die im Menüband angezeigt werden soll.|
@@ -139,7 +139,7 @@ ms.locfileid: "97528415"
 
  Die folgende Tabelle beschreibt die Standardmethoden in dieser Klasse.
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |`GetCustomUI`|Gibt den Inhalt der Menüband-XML-Datei zurück. Microsoft Office Anwendungen rufen diese Methode auf, um eine XML-Zeichenfolge abzurufen, die die Benutzeroberfläche des benutzerdefinierten Menübands definiert. Diese Methode implementiert die Methode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Hinweis:** `GetCustomUI` sollte nur implementiert werden, um den Inhalt der Menüband-XML-Datei zurückzugeben. Sie sollte nicht zum Initialisieren des VSTO-Add-Ins verwendet werden.   Insbesondere sollten nicht versuchen, Dialogfelder oder andere Fenster in Ihrer `GetCustomUI` Implementierung anzuzeigen. Andernfalls verhält sich das benutzerdefinierte Menüband möglicherweise nicht ordnungsgemäß. Wenn Sie Code ausführen müssen, der Ihr VSTO-Add-In initialisiert, fügen Sie den Code dem `ThisAddIn_Startup` -Ereignishandler hinzu.|
 |`OnLoad`|Weist den Parameter <xref:Microsoft.Office.Core.IRibbonControl> dem Feld `Ribbon` zu. Microsoft Office Anwendungen diese Methode beim Laden des benutzerdefinierten Menübands aufruft. Sie können dieses Feld verwenden, um das benutzerdefinierte Menüband dynamisch zu aktualisieren. Weitere Informationen finden Sie im technischen Artikel [Anpassen der Menüband-Benutzeroberfläche von Office (2007) für Entwickler (Teil 1 von 3)](/previous-versions/office/developer/office-2007/aa338202(v=office.12)).|

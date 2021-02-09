@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: be772075be27cc8d6e58b6b54bb281a127f4677f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878122"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Vorgehensweise: Hinzufügen eines benutzerdefinierten SharePoint-Knotens zu Server-Explorer
   Sie können benutzerdefinierte Knoten unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer** hinzufügen. Dies ist hilfreich, wenn Sie zusätzliche SharePoint-Komponenten anzeigen möchten, die nicht standardmäßig in **Server-Explorer** angezeigt werden. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e811ce2e387c299ff3655799bf35185c1d2029b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29756b3be6d2c46d39b581dd3db0af61bfaa18f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878928"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 Entfernt die angegebene Ausnahme, sodass Sie nicht mehr von der Debug-Engine verarbeitet wird.
@@ -28,13 +28,13 @@ Entfernt die angegebene Ausnahme, sodass Sie nicht mehr von der Debug-Engine ver
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT RemoveSetException( 
+HRESULT RemoveSetException( 
    EXCEPTION_INFO* pException
 );
 ```
 
 ```csharp
-int RemoveSetException( 
+int RemoveSetException( 
    EXCEPTION_INFO[] pException
 );
 ```

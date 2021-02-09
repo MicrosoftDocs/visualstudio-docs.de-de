@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a2c8cac705f4e6ae8d72f3a2e9bd5ec4c8ed68bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877472"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings- &gt; Element (Boots Trapper)
 Definiert lokalisierte Zeichen folgen für Produktnamen, Paketnamen und Installations Fehlermeldungen.
@@ -49,7 +49,7 @@ Definiert lokalisierte Zeichen folgen für Produktnamen, Paketnamen und Installa
 
  `String` weist das folgende Attribut auf.
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Name`|Erforderlich. Der Name der Zeichenfolge.|
 
@@ -76,4 +76,4 @@ Definiert lokalisierte Zeichen folgen für Produktnamen, Paketnamen und Installa
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [\<Package> gewisses](../deployment/package-element-bootstrapper.md)
+- [\<Package>-Element](../deployment/package-element-bootstrapper.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5cebadb35ae5d4cddcd0d4bfb4763979937318
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 469749c28acdb90e835082dd05010102ab50e52b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877615"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und die Bereitstellung einen Dateityp enthält, den Windows nicht erkennt (z. b. eine Microsoft Word-Datei), lehnt IIS die Übertragung dieser Datei ab, und die Bereitstellung kann nicht erfolgreich ausgeführt werden.
@@ -33,7 +33,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 
  Obwohl diese Einschränkung keine Probleme beim Herunterladen von Kerndateien (z. b. Manifeste und Assemblys) verursachen sollte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , kann diese Einschränkung verhindern, dass Sie im Rahmen ihrer Anwendung enthaltene Datendateien herunterladen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . In [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] können Sie diesen Fehler beheben, indem Sie den Handler entfernen, der das Herunterladen solcher Dateien aus dem IIS-Konfigurations-Manager untersagt. Weitere Informationen finden Sie in der Dokumentation zum IIS-Server.
 
- Einige Webserver blockieren möglicherweise Dateien mit Erweiterungen wie " *. dll* ", " *. config* " und " *. mdf* ". Windows-basierte Anwendungen enthalten in der Regel Dateien mit einigen dieser Erweiterungen. Wenn ein Benutzer versucht, eine Anwendung auszuführen, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] die auf eine blockierte Datei auf einem Webserver zugreift, führt dies zu einem Fehler. Anstatt alle Dateierweiterungen zu entsperren, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] veröffentlicht jede Anwendungsdatei standardmäßig mit einer Dateierweiterung *.* Daher muss der Administrator den Webserver nur so konfigurieren, dass die Blockierung der folgenden drei Dateierweiterungen blockiert wird:
+ Einige Webserver blockieren möglicherweise Dateien mit Erweiterungen wie " *. dll*", " *. config*" und " *. mdf*". Windows-basierte Anwendungen enthalten in der Regel Dateien mit einigen dieser Erweiterungen. Wenn ein Benutzer versucht, eine Anwendung auszuführen, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] die auf eine blockierte Datei auf einem Webserver zugreift, führt dies zu einem Fehler. Anstatt alle Dateierweiterungen zu entsperren, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] veröffentlicht jede Anwendungsdatei standardmäßig mit einer Dateierweiterung *.* Daher muss der Administrator den Webserver nur so konfigurieren, dass die Blockierung der folgenden drei Dateierweiterungen blockiert wird:
 
 - *. Anwendung*
 
@@ -43,7 +43,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 
   Sie können diese Option jedoch deaktivieren, indem Sie im [Dialog Feld "Veröffentlichungs Optionen](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))" die Option **". Bereitstellungs Dateierweiterung verwenden** " deaktivieren. in diesem Fall müssen Sie den Webserver so konfigurieren, dass alle in der Anwendung verwendeten Dateierweiterungen entsperrt werden.
 
-  Sie müssen die *. Manifest* -, *Application* -und *.* -Bereitstellung konfigurieren, z. b. Wenn Sie IIS verwenden, bei dem Sie die .NET Framework nicht installiert haben, oder wenn Sie einen anderen Webserver (z. b. Apache) verwenden.
+  Sie müssen die *. Manifest*-, *Application*-und *.*-Bereitstellung konfigurieren, z. b. Wenn Sie IIS verwenden, bei dem Sie die .NET Framework nicht installiert haben, oder wenn Sie einen anderen Webserver (z. b. Apache) verwenden.
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce und Secure Sockets Layer (SSL)
  Eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung funktioniert problemlos über SSL, es sei denn, Internet Explorer löst eine Aufforderung zum SSL-Zertifikat aus. Die Eingabeaufforderung kann ausgelöst werden, wenn ein Problem mit dem Zertifikat vorliegt, z. b. wenn die Standortnamen nicht stimmen oder das Zertifikat abgelaufen ist. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Stellen Sie sicher, dass das Zertifikat auf dem neuesten Stand ist und dass die Zertifikat Daten mit den Standortdaten übereinstimmen, um die Arbeit über eine SSL-Verbindung zu vereinfachen.
@@ -94,9 +94,9 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
  Wenn Sie Visual Studio verwenden, um eine ClickOnce-Anwendung zu veröffentlichen, können Sie kein zugeordnetes Laufwerk als Installations Speicherort angeben. Sie können jedoch die ClickOnce-Anwendung so ändern, dass Sie von einem zugeordneten Laufwerk aus mithilfe des Manifest-Generators und-Editors (Mage.exe und MageUI.exe) installiert wird. Weitere Informationen finden Sie unter [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) und [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).
 
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll wird für die Installation von Anwendungen nicht unterstützt
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] unterstützt die Installation von Anwendungen von einem beliebigen HTTP 1,1-Webserver oder-Dateiserver. FTP, die Dateiübertragungsprotokoll, wird für die Installation von Anwendungen nicht unterstützt. Sie können FTP nur zum Veröffentlichen von Anwendungen verwenden. In der folgenden Tabelle werden diese Unterschiede zusammengefasst:
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] unterstützt die Installation von Anwendungen von einem beliebigen HTTP 1,1-Webserver oder-Dateiserver. FTP, die File Transfer Protocol, wird für die Installation von Anwendungen nicht unterstützt. Sie können FTP nur zum Veröffentlichen von Anwendungen verwenden. In der folgenden Tabelle werden diese Unterschiede zusammengefasst:
 
-| URL-Typ | BESCHREIBUNG |
+| URL-Typ | Beschreibung |
 |----------| - |
 | ftp:// | Sie können eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mithilfe dieses Protokolls veröffentlichen. |
 | http:// | Sie können eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mithilfe dieses Protokolls installieren. |
@@ -112,7 +112,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
  Standardmäßig ist auf Windows Server keine FrontPage-Servererweiterungen installiert. Wenn Sie verwenden möchten, um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf einem Windows Server-Webserver zu veröffentlichen, der HTTP mit FrontPage-Servererweiterungen verwendet, müssen Sie zuerst FrontPage-Servererweiterungen installieren. Sie können die Installation mithilfe des Verwaltungs Tools Server verwalten in Windows Server ausführen.
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: gesperrte Inhaltstypen
- IIS on [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] sperrt alle Dateitypen außer für bestimmte bekannte Inhaltstypen (z *. b. htm* , *HTML* , *txt* usw.). Um die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen mit diesem Server zu ermöglichen, müssen Sie die IIS-Einstellungen ändern, um das Herunterladen von Dateien vom Typ " *. Application* ", " *Manifest* " und anderen benutzerdefinierten, von der Anwendung verwendeten Dateitypen zuzulassen.
+ IIS on [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] sperrt alle Dateitypen außer für bestimmte bekannte Inhaltstypen (z *. b. htm*, *HTML*, *txt* usw.). Um die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen mit diesem Server zu ermöglichen, müssen Sie die IIS-Einstellungen ändern, um das Herunterladen von Dateien vom Typ " *. Application*", " *Manifest*" und anderen benutzerdefinierten, von der Anwendung verwendeten Dateitypen zuzulassen.
 
  Wenn Sie die Bereitstellung über einen IIS-Server ausführen, führen Sie *inetmgr.exe* aus, und fügen Sie neue Dateitypen für die Standard Webseite hinzu:
 
@@ -130,7 +130,7 @@ Wenn Sie Internetinformationsdienste (IIS) unter Windows Server verwenden und di
 ## <a name="http-compression-issues"></a>HTTP-Komprimierungs Probleme
  Mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] können Sie Downloads ausführen, die die HTTP-Komprimierung verwenden, eine Webserver Technologie, die den gzip-Algorithmus zum Komprimieren eines Datenstroms verwendet, bevor der Datenstrom an den Client gesendet wird. Der Client – in diesem Fall [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] – dekomprimiert den Stream, bevor die Dateien gelesen werden.
 
- Wenn Sie IIS verwenden, können Sie die HTTP-Komprimierung problemlos aktivieren. Wenn Sie die HTTP-Komprimierung aktivieren, ist Sie jedoch nur für bestimmte Dateitypen aktiviert – HTML-und Textdateien. Um die Komprimierung für Assemblys ( *. dll* ), XML ( *XML),* Bereitstellungs Manifeste ( *. Application* ) und Anwendungs *Manifeste (. Manifest* ) zu aktivieren, müssen Sie diese Dateitypen der Liste der Typen hinzufügen, die von IIS komprimiert werden sollen. Bis Sie die Dateitypen der Bereitstellung hinzufügen, werden nur Text-und HTML-Dateien komprimiert.
+ Wenn Sie IIS verwenden, können Sie die HTTP-Komprimierung problemlos aktivieren. Wenn Sie die HTTP-Komprimierung aktivieren, ist Sie jedoch nur für bestimmte Dateitypen aktiviert – HTML-und Textdateien. Um die Komprimierung für Assemblys (*. dll*), XML (*XML),* Bereitstellungs Manifeste (*. Application*) und Anwendungs *Manifeste (. Manifest*) zu aktivieren, müssen Sie diese Dateitypen der Liste der Typen hinzufügen, die von IIS komprimiert werden sollen. Bis Sie die Dateitypen der Bereitstellung hinzufügen, werden nur Text-und HTML-Dateien komprimiert.
 
  Ausführliche Anweisungen für IIS finden Sie unter [Angeben zusätzlicher Dokumenttypen für die HTTP-Komprimierung](https://support.microsoft.com/help/234497).
 
