@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: cdef39a0ab07d4cb9c9f42cf897bd7728934b88d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915748"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Ausführung von Anwendungsupdates durch ClickOnce
 ClickOnce verwendet die Datei Versionsinformationen, die im Bereitstellungs Manifest einer Anwendung angegeben sind, um zu entscheiden, ob die Anwendungs Dateien aktualisiert werden sollen. Nachdem ein Update begonnen hat, verwendet ClickOnce eine Technik namens *dateipatching* , um das redundante herunterladen von Anwendungs Dateien zu vermeiden.
@@ -37,6 +37,6 @@ ClickOnce verwendet die Datei Versionsinformationen, die im Bereitstellungs Mani
 
  Das Patchen von Dateien funktioniert nicht für Dateien, die als Daten gekennzeichnet sind und im Datenverzeichnis gespeichert werden. Diese werden immer heruntergeladen, unabhängig von der Hash Signatur der Datei. Weitere Informationen zum Datenverzeichnis finden Sie unter [zugreifen auf lokale und Remote Daten in ClickOnce-Anwendungen](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

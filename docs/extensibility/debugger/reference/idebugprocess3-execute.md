@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: baa607e62732cdf0e04413e07966658bb6a0b8f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4a697a4677b6bedef376e602c4327dff66ead53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915416"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Setzt die Ausführung dieses Prozesses mit dem Status "beendet" fort. Alle vorherigen Ausführungs Zustände (z. b. ein Schritt) werden gelöscht, und der Prozess beginnt erneut mit der Ausführung.
@@ -31,14 +31,14 @@ Setzt die Ausführung dieses Prozesses mit dem Status "beendet" fort. Alle vorhe
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT Execute(
-   IDebugThread2* pThread
+HRESULT Execute(
+   IDebugThread2* pThread
 );
 ```
 
 ```csharp
-int Execute(
-   IDebugThread2 pThread
+int Execute(
+   IDebugThread2 pThread
 );
 ```
 
