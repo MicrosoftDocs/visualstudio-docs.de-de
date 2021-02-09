@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715976"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893404"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Aktualisieren des benutzerdefinierten Projekt-und Elementvorlagen für Visual Studio 2017
 

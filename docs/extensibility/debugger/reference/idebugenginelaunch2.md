@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee77cbd680df2c851d53aac298605023227fa6f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4485001341399d3830864a30b64fec24a77c5a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892722"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 Wird von einer Debug-Engine (de) zum Starten und Beenden von Programmen verwendet.
@@ -25,7 +25,7 @@ Wird von einer Debug-Engine (de) zum Starten und Beenden von Programmen verwende
 ## <a name="syntax"></a>Syntax
 
 ```
-IDebugEngineLaunch2 : IDebugEngine2
+IDebugEngineLaunch2 : IDebugEngine2
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
@@ -37,7 +37,7 @@ IDebugEngineLaunch2 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugEngineLaunch2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Starten eines Prozesses mithilfe von de.|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Nimmt die Prozess Ausführung wieder auf.|

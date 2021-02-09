@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734afefd97e61867076d487acbcf67f10f54e672
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893567"
 ---
 # <a name="scchistory-function"></a>SccHistory-Funktion
 Diese Funktion zeigt den Verlauf der angegebenen Dateien an.
@@ -63,7 +63,7 @@ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Der Versionsverlauf wurde erfolgreich abgerufen.|
 |SCC_I_RELOADFILE|Das Quell Code Verwaltungssystem änderte die Datei auf dem Datenträger, während der Verlauf abgerufen wurde (z.b. durch Abrufen einer alten Version), sodass die IDE diese Datei erneut laden sollte.|

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 957488adb36c54355b4fe47577a7cd5b2407864f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893515"
 ---
 # <a name="troubleshooting-vspackages"></a>Problembehandlung bei VSPackages
 Im folgenden finden Sie häufige Probleme, die Sie möglicherweise mit Ihrem VSPackage und Tipps zum Beheben der Probleme haben.

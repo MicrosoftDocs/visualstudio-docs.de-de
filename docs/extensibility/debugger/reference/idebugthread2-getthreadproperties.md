@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c547ad049fa36231ce108a6cfc406233b972ff2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893775"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Ruft die Eigenschaften ab, die diesen Thread beschreiben.

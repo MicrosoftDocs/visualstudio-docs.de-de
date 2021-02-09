@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 855326085a51ec6590bd1b3f0e1e5565c53396cb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 192418439bc25e6ac1b969483c0c48a030caa024
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894074"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Vorgehensweise: Verwenden des Ausdrucks-Editors
 
@@ -55,6 +55,6 @@ Der **Ausdrucks-Editor** verhält sich wie folgt:
 
      Eine alternative Möglichkeit, einen Ausdruck einzugeben oder zu bearbeiten, ist das Klicken auf die Auslassungs Punkte neben dem Eigenschaftsnamen im Eigenschaften Raster. Durch Auswahl der Auslassungs Punkte wird der **Ausdrucks-Editor** als Dialogfeld geöffnet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

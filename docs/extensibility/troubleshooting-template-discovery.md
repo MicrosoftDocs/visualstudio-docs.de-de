@@ -6,15 +6,15 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 23e30ddb5f43a755fc2dc0206509e403e802c3e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893489"
 ---
 # <a name="troubleshooting-template-installation"></a>Problembehandlung der Vorlagen Installation
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dadaf6ce4728dfac8d4052804cbed70ee7cefcd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6fb30d4846c24638f87989d2a7a716df06b0523b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437904"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894113"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Vorgehensweise: Verwenden der Suche im Workflow-Designer
 
@@ -35,7 +35,7 @@ Die Schnellsuche findet Folgendes im Designer:
 
 ### <a name="use-quick-find"></a>Schnellsuche verwenden
 
-1. Wenn der Workflow-Designer geöffnet ist, **drücken Sie** **STRG + F** , oder wählen Sie die Option zum  >  **Suchen und ersetzen** von  >  **Schnellsuche**.
+1. Wenn der Workflow-Designer geöffnet ist, **drücken Sie** **STRG + F**, oder wählen Sie die Option zum  >  **Suchen und ersetzen** von  >  **Schnellsuche**.
 
 2. Geben Sie den Suchbegriff in **das Textfeld Suchen nach** ein, und klicken Sie auf **weiter** suchen.
 
@@ -49,7 +49,7 @@ In Dateien suchen sucht Zeichen folgen in Workflow Dateien, einschließlich XAML
 
 ### <a name="use-find-in-files"></a>Verwenden von "in Dateien suchen"
 
-1. Drücken Sie in Visual Studio **STRG** + **UMSCHALT** + **F** , oder wählen Sie in Dateien **Suchen**  >  **und ersetzen**  >  **Suchen aus**.
+1. Drücken Sie in Visual Studio **STRG** + **UMSCHALT** + **F**, oder wählen Sie in Dateien **Suchen**  >  **und ersetzen**  >  **Suchen aus**.
 
 2. Geben Sie das Suchelement in **das Textfeld Suchen nach** ein, und klicken Sie auf **alle** suchen.
 

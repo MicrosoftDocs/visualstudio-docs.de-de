@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8dc5e402fcf3bedabe2b0f7fe606dfe807525ab
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a427b14db5be8081352ce54bf13900fa826202b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894009"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Vorgehensweise: Verwenden des Variablen-Designers
 
@@ -38,7 +38,7 @@ Der Variablen-Designer dient zum Erstellen von Variablen in Datenbindungsszenari
     > [!NOTE]
     > Wählen Sie zum Löschen einer Variablen die Variable aus, indem Sie darauf klicken, und drücken Sie dann die ENTF **-Taste.**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden des Workflow-Designers](developing-applications-with-the-workflow-designer.md)
 - [Variablen und Argumente](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

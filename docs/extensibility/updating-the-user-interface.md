@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: fd088d6887e7c7b60ea5a4101de050149583c5a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893450"
 ---
 # <a name="updating-the-user-interface"></a>Aktualisieren der Benutzeroberfläche
 Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um die Benutzeroberfläche mit dem Zustand ihrer neuen Befehle zu aktualisieren.
@@ -29,7 +29,7 @@ Nachdem Sie einen Befehl implementiert haben, können Sie Code hinzufügen, um d
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-    - Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>-Methode auf.
+    - Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> -Methode auf.
 
          Eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> Schnittstelle kann <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> wie folgt vom Dienst abgerufen werden.
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, data sources
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4df11976832359363c639a49dd767e7e87b41a26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894438"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Host Steuer Elements
   Sie können ein Hoststeuerelement an eine Datenquelle binden und die Datenquelle mit den Änderungen aktualisieren, die im Steuerelement an den Daten vorgenommen werden. In diesem Prozess gibt es zwei Hauptschritte:
