@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38d855ebe34c54d06159ecd958a8b1d31ae0131f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888913"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung
 Aus einem VSPackage können Sie Features wie Menübefehle zum Editor hinzufügen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einer Textansicht im Editor ein Zusatzelement hinzugefügt wird, indem ein Menübefehl aufgerufen wird.

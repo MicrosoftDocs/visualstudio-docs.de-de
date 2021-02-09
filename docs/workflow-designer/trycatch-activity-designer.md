@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1396a60cda1e4e1ad372a73b9c2130d450d746
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 23d9f1b0037600c6612a413cce7b089f6adbc7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889303"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch-Aktivitätsdesigner
 
@@ -33,7 +33,7 @@ Greifen Sie in der Kategorie **Fehlerbehandlung** der **Toolbox** auf den **tryc
 
 Der **trycatch** -Aktivitäts Designer kann aus der **Toolbox** gezogen und auf der Workflow-Designer-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, z. b. in einer <xref:System.Activities.Statements.Sequence> . Hierdurch erstellen Sie eine <xref:System.Activities.Statements.TryCatch>-Aktivität mit dem <xref:System.Activities.Activity.DisplayName%2A>-Standardwert TryCatch. Der <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des **trycatch** -Aktivitäts Designers oder im Feld **Display Name** des Eigenschaften Rasters bearbeitet werden. Die anderen Eigenschaften müssen auf der Oberfläche des **trycatch** -Aktivitäts Designers bearbeitet werden.
 
-Klicken Sie in der rechten oberen Ecke des **trycatch** -Designers auf die Schaltfläche erweitern, um die Felder **ausprobieren** , **fängt** und **schließlich** in der erweiterten Ansicht anzuzeigen. Um einen catch hinzuzufügen, klicken Sie auf die Schaltfläche **neuen Catch hinzufügen** im **trycatch** -Designer. Die Schaltfläche nimmt die Form eines Kombinationsfelds an. Wählen Sie einen Ausnahmetyp aus, und drücken Sie die EINGABETASTE, um den Catch hinzuzufügen. Nach dem Hinzufügen eines **catch** -Blocks wird der catch-Bereich erweitert, und eine Aktivität kann im catch abgelegt werden, um die Ausführungs Logik für den catch zu definieren. Auf der rechten Seite des erweiterten Catch-Bereichs befindet sich ein Textfeld. In dieses Textfeld können Sie den Namen einer Ausnahmevariablen eingeben. Die Exception-Variable kann nur für Aktivitäten innerhalb desselben **catch** verwendet werden.
+Klicken Sie in der rechten oberen Ecke des **trycatch** -Designers auf die Schaltfläche erweitern, um die Felder **ausprobieren**, **fängt** und **schließlich** in der erweiterten Ansicht anzuzeigen. Um einen catch hinzuzufügen, klicken Sie auf die Schaltfläche **neuen Catch hinzufügen** im **trycatch** -Designer. Die Schaltfläche nimmt die Form eines Kombinationsfelds an. Wählen Sie einen Ausnahmetyp aus, und drücken Sie die EINGABETASTE, um den Catch hinzuzufügen. Nach dem Hinzufügen eines **catch**-Blocks wird der catch-Bereich erweitert, und eine Aktivität kann im catch abgelegt werden, um die Ausführungs Logik für den catch zu definieren. Auf der rechten Seite des erweiterten Catch-Bereichs befindet sich ein Textfeld. In dieses Textfeld können Sie den Namen einer Ausnahmevariablen eingeben. Die Exception-Variable kann nur für Aktivitäten innerhalb desselben **catch** verwendet werden.
 
 Der **trycatch** -Designer unterstützt das Bearbeiten von **catch** nicht. Wenn Sie den Ausnahmetyp ändern möchten, müssen Sie den **catch** löschen und einen neuen hinzufügen. Ein **catch** kann gelöscht werden, indem Sie ihn auswählen und löschen oder indem Sie im Kontextmenü **Löschen** auswählen, auf das Sie mit der rechten Maustaste klicken.
 
@@ -41,15 +41,15 @@ Der **trycatch** -Designer unterstützt das Bearbeiten von **catch** nicht. Wenn
 
 In der folgenden Tabelle sind die Eigenschaften aufgeführt, <xref:System.Activities.Statements.TryCatch> und es wird beschrieben, wie Sie im Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.TryCatch>-Aktivität an. Der Standardwert ist TryCatch.|
-|<xref:System.Activities.Statements.TryCatch.Try%2A>|FALSE|Die Aktivität wird erstmalig ausgeführt wird, wenn <xref:System.Activities.Statements.TryCatch> ausgeführt wird.|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|FALSE|Die Auflistung der **catch** -Elemente, die geprüft werden soll, wenn die <xref:System.Activities.Statements.TryCatch.Try%2A> Aktivität eine Ausnahme auslöst.<br /><br /> Sie müssen mindestens eine Aktivität in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung oder eine Aktivität im <xref:System.Activities.Statements.TryCatch.Finally%2A>-Block hinzufügen.|
-|<xref:System.Activities.Statements.TryCatch.Finally%2A>|FALSE|Die Aktivität, die ausgeführt werden soll, wenn die Ausführung von <xref:System.Activities.Statements.TryCatch.Try%2A> und aller erforderlichen Aktivitäten in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung abgeschlossen wurde.<br /><br /> Sie müssen mindestens eine Aktivität in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung oder eine Aktivität im <xref:System.Activities.Statements.TryCatch.Finally%2A>-Block hinzufügen.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.TryCatch>-Aktivität an. Der Standardwert ist TryCatch.|
+|<xref:System.Activities.Statements.TryCatch.Try%2A>|Falsch|Die Aktivität wird erstmalig ausgeführt wird, wenn <xref:System.Activities.Statements.TryCatch> ausgeführt wird.|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|Falsch|Die Auflistung der **catch** -Elemente, die geprüft werden soll, wenn die <xref:System.Activities.Statements.TryCatch.Try%2A> Aktivität eine Ausnahme auslöst.<br /><br /> Sie müssen mindestens eine Aktivität in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung oder eine Aktivität im <xref:System.Activities.Statements.TryCatch.Finally%2A>-Block hinzufügen.|
+|<xref:System.Activities.Statements.TryCatch.Finally%2A>|Falsch|Die Aktivität, die ausgeführt werden soll, wenn die Ausführung von <xref:System.Activities.Statements.TryCatch.Try%2A> und aller erforderlichen Aktivitäten in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung abgeschlossen wurde.<br /><br /> Sie müssen mindestens eine Aktivität in der <xref:System.Activities.Statements.TryCatch.Catches%2A>-Auflistung oder eine Aktivität im <xref:System.Activities.Statements.TryCatch.Finally%2A>-Block hinzufügen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Sammlung](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)
-- [Schale](../workflow-designer/throw-activity-designer.md)
+- [Throw](../workflow-designer/throw-activity-designer.md)

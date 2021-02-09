@@ -13,15 +13,15 @@ helpviewer_keywords:
 - text files, opening as workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5f471161a8563718f69f14ea341ab099fbf138d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 47582718128fc9818bb42571e3f33c0190a32d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888744"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Gewusst wie: Programm gesteuertes Öffnen von Textdateien als Arbeitsmappen
   Sie können eine Textdatei als-Arbeitsmappe öffnen. Sie müssen den Namen der Textdatei übergeben, die Sie öffnen möchten. Sie können mehrere optionale Parameter angeben, z. b. die Zeilennummer, mit der die Verarbeitung beginnen soll, und das Spalten Format der Daten in der Datei.

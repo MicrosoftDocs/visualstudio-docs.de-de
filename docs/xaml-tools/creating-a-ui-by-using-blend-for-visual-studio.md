@@ -9,21 +9,21 @@ f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889264"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Übersicht über Blend für Visual Studio
 
 Blend für Visual Studio unterstützt Sie beim Erstellen von XAML-basierten Windows- und Web-Anwendungen. Es bietet die gleiche einfache XAML-Entwurfsumgebung wie Visual Studio und fügt visuelle Designer für erweiterte Aufgaben hinzu, z. B. Animationen und Verhalten. Einen Vergleich zwischen Blend und Visual Studio finden Sie unter [Entwerfen von XAML in Visual Studio und Blend für Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md).
 
-Blend für Visual Studio ist eine Komponente von Visual Studio. Wählen Sie für die Installation von Blend im **Visual Studio-Installer** entweder die Workload **Entwicklung für die universelle Windows-Plattform** oder **.NET Desktopentwicklung** . Beide Workloads umfassen die Komponente „Blend für Visual Studio“.
+Blend für Visual Studio ist eine Komponente von Visual Studio. Wählen Sie für die Installation von Blend im **Visual Studio-Installer** entweder die Workload **Entwicklung für die universelle Windows-Plattform** oder **.NET Desktopentwicklung**. Beide Workloads umfassen die Komponente „Blend für Visual Studio“.
 
 ![Komponenten der UWP-Workload](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![Komponenten der Workload „.NET Desktopentwicklung“](media/installer-dotnet-desktop.png)
 
@@ -31,7 +31,7 @@ Wenn Sie mit Blend für Visual Studio nicht vertraut sind, nehmen Sie sich einen
 
 ## <a name="tools-panel"></a>Werkzeugbereich
 
-Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in Ihrer Anwendung Objekte erstellen und ändern. Der Bereich **Extras** wird auf der linken Seite im XAML-Designer angezeigt, wenn Sie eine *.XAML* -Datei geöffnet haben.
+Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in Ihrer Anwendung Objekte erstellen und ändern. Der Bereich **Extras** wird auf der linken Seite im XAML-Designer angezeigt, wenn Sie eine *.XAML*-Datei geöffnet haben.
 
 Die Objekte werden erstellt, indem Sie ein Werkzeug auswählen und die Objekte mit der Maus auf die Zeichenfläche ziehen.
 
@@ -44,7 +44,7 @@ Die Objekte werden erstellt, indem Sie ein Werkzeug auswählen und die Objekte m
 
 ### <a name="selection-tools"></a>Auswahltools
 
-Wählen Sie Objekte und Pfade aus. Verwenden Sie das Werkzeug **Direktauswahl** , um geschachtelte Objekte und Pfadsegmente auszuwählen.
+Wählen Sie Objekte und Pfade aus. Verwenden Sie das Werkzeug **Direktauswahl**, um geschachtelte Objekte und Pfadsegmente auszuwählen.
 
 ### <a name="view-tools"></a>Ansichtstools
 
@@ -64,7 +64,7 @@ Sie ermöglichen den Zugriff auf das Fenster „Objekt“ und die Anzeige des zu
 
 ## <a name="assets-window"></a>Objektfenster
 
-Das **Objektfenster** enthält alle verfügbaren Steuerelemente und ähnelt der **Toolbox** in Visual Studio. Zusätzlich zu den Steuerelementen befinden sich alle zur Zeichenfläche hinzufügbaren Objekte im **Objektfenster** , einschließlich Stile, Medien, Verhalten und Effekte. Wenn Sie das **Objektfenster** öffnen möchten, wählen Sie entweder **Ansicht** > **Objektfenster** aus, oder Sie drücken **STRG**+**ALT**+**X** .
+Das **Objektfenster** enthält alle verfügbaren Steuerelemente und ähnelt der **Toolbox** in Visual Studio. Zusätzlich zu den Steuerelementen befinden sich alle zur Zeichenfläche hinzufügbaren Objekte im **Objektfenster**, einschließlich Stile, Medien, Verhalten und Effekte. Wenn Sie das **Objektfenster** öffnen möchten, wählen Sie entweder **Ansicht** > **Objektfenster** aus, oder Sie drücken **STRG**+**ALT**+**X**.
 
 ![Screenshot: Objektfenster in Blend für Visual Studio](media/blend-assets-window.png)
 

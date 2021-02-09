@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 301fe17f3ad12bfd1e150d9bf48180be6cb62adc
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 3c43f2063062d96b8ab635e3d9786aead4b4c150
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889043"
 ---
 # <a name="commandplacements-element"></a>Commandplacement-Element
 Das commandplacement-Element gruppiert commandplacement-Elemente und andere commandplacement-Gruppierungen.
@@ -43,18 +43,18 @@ Das commandplacement-Element gruppiert commandplacement-Elemente und andere comm
 
 |attribute|Beschreibung|
 |---------------|-----------------|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |CommandPlacements|Gruppiert commandplacement-Elemente und andere commandplacement-Gruppierungen.|
 |[Commandplacement-Element](../extensibility/commandplacement-element.md)|Ermöglicht das Einschließen von Schaltflächen, Gruppen und Menüs in mehr als eine Gruppe oder ein Menü.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Commandtable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen.|
 

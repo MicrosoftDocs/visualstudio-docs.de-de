@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1a65e99712658567996598d2190447ff09cf9b05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888887"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Gewusst wie: zulassen, dass Code hinter Dokumenten mit eingeschränkten Berechtigungen ausgeführt wird
   Sie können die Funktion Information Rights Management (unm) von Microsoft Office verwenden, um die Berechtigungen für ein Dokument oder eine Arbeitsmappe einzuschränken. Standardmäßig darf der Code hinter einem eingeschränkten Microsoft Office Word-Dokument oder Microsoft Office Excel-Arbeitsmappe nicht ausgeführt werden. Sie können den Standardwert ändern, sodass die Erweiterungen des verwalteten Codes auf das Objektmodell zugreifen können und die Lösung funktioniert.
@@ -49,7 +49,7 @@ ms.locfileid: "96844893"
 
    Word oder Excel ermöglicht den programmgesteuerten Zugriff auf das Objektmodell.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Verwaltung von Informationsrechten und Erweiterungen von verwalteten Code](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Dokument Schutz in Projektmappen auf Dokument Ebene](../vsto/document-protection-in-document-level-solutions.md)
 - [Kenn Wort Schutz für Office-Dokumente](../vsto/password-protection-on-office-documents.md)
