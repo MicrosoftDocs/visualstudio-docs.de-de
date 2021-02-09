@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dab01c1e956ced7e6894b951ab16f4ce68eb778b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64717948f6406d1c6e9a5c1fabfec4b3a16bf116
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870258"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 Diese Schnittstelle beschreibt ein Array Symbol oder einen Typ.
@@ -25,7 +25,7 @@ Diese Schnittstelle beschreibt ein Array Symbol oder einen Typ.
 ## <a name="syntax"></a>Syntax
 
 ```
-IDebugArrayField : IDebugContainerField
+IDebugArrayField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer
@@ -37,7 +37,7 @@ IDebugArrayField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden in den Schnittstellen [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) und [idebugcontainerfield](../../../extensibility/debugger/reference/idebugcontainerfield.md) implementiert diese Schnittstelle Folgendes:
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetNumberOfElements](../../../extensibility/debugger/reference/idebugarrayfield-getnumberofelements.md)|Ruft die Anzahl der Elemente im Array ab.|
 |[GetElementType](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|Ruft den Typ des Elements im Array ab.|

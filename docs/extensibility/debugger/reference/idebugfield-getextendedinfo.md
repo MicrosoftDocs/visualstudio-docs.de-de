@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911556cb615e373d620b496fb31e5d6093b7cc37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869933"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Diese Methode erhält erweiterte Informationen zu einem Feld.
@@ -28,7 +28,7 @@ Diese Methode erhält erweiterte Informationen zu einem Feld.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetExtendedInfo( 
+HRESULT GetExtendedInfo( 
    REFGUID guidExtendedInfo,
    BYTE**  prgBuffer,
    DWORD*  pdwLen
@@ -47,7 +47,7 @@ int GetExtendedInfo(
 `guidExtendedInfo`\
 in Wählt die Informationen aus, die zurückgegeben werden sollen. Gültige Werte sind:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |`guidConstantValue`|Der-Wert als Bytefolge.|
 |`guidConstantType`|Der Typ als Typsignatur.|

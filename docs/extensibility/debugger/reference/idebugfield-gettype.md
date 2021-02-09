@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e052155524c962894af021bf5afdec50d182d68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbfb21abc8feaa95a8842707a56add513eaa6875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869803"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 Diese Methode ruft den Typ des Felds ab.
@@ -28,7 +28,7 @@ Diese Methode ruft den Typ des Felds ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetType( 
+HRESULT GetType( 
    IDebugField** ppType
 );
 ```

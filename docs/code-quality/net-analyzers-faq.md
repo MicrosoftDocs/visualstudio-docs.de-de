@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code analysis FAQ
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d581ef60ebfe9ff5aeceae4c16ee4294eae5d850
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 951e9b951f1d90077fe29506e9c288fb19f2d5ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867762"
 ---
 # <a name="frequently-asked-questions-about-legacy-fxcop-and-net-analyzers"></a>Häufig gestellte Fragen zu den Legacy-FxCop-und .net-Analyzern
 
@@ -60,8 +60,8 @@ Informationen dazu, welche Legacy Analyse Regeln an .net-Analyzers portiert wurd
 
 Wenn das Projekt die Buildoption verwendet, um Warnungen als Fehler zu behandeln, werden möglicherweise Analyzer-Warnungen als Fehler angezeigt. Um zu verhindern, dass Code Analyse Warnungen als Fehler behandelt werden, führen Sie die Schritte unter Häufig gestellte Fragen zu [Code Analysen](../code-quality/analyzers-faq.md#treat-warnings-as-errors)aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über .NET Compiler Platform-Analysetools](roslyn-analyzers-overview.md)
-- [Migrieren zu .net-Analyzern](migrate-from-legacy-analysis-to-net-analyzers.md)
-- [Installieren von .net-Analyzern](install-net-analyzers.md)
+- [Migrieren zu .NET-Analysetools](migrate-from-legacy-analysis-to-net-analyzers.md)
+- [Installieren von .NET-Analysetools](install-net-analyzers.md)
