@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 863a9b1cdb68218539045c9154fc18d845495222
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902886"
 ---
 # <a name="running-document-table"></a>Aktive Dokumenttabelle
 Die IDE verwaltet die Liste aller gegenwärtig geöffneten Dokumente in einer internen Struktur, die als Running Document Table (RDT) bezeichnet wird. Diese Liste enthält alle geöffneten Dokumente im Speicher, unabhängig davon, ob diese Dokumente gerade bearbeitet werden. Bei einem Dokument handelt es sich um ein beliebiges Element, das gespeichert wird, einschließlich Dateien in einem Projekt oder in der Hauptprojekt Datei (z. b. eine vcxproj-Datei).
@@ -29,7 +29,7 @@ Die IDE verwaltet die Liste aller gegenwärtig geöffneten Dokumente in einer in
 ## <a name="elements-of-the-running-document-table"></a>Elemente der laufenden dokumententabelle
  Die Ausführung der dokumententabelle enthält die folgenden Einträge.
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |Dokumentmoniker|Eine Zeichenfolge, die das Dokument Datenobjekt eindeutig identifiziert. Dies wäre der absolute Dateipfad für ein Projekt System, das Dateien verwaltet (z. b. c:\myproject\meinedatei). Diese Zeichenfolge wird auch für Projekte verwendet, die in anderen speichern als Dateisystemen gespeichert werden, z. b. gespeicherte Prozeduren in einer-Datenbank. In diesem Fall kann das Projekt System eine eindeutige Zeichenfolge erfinden, die erkannt und ggf. analysiert werden kann, um zu bestimmen, wie das Dokument gespeichert werden soll.|
 |Hierarchie Besitzer|Das Hierarchie Objekt, das das Dokument besitzt, wie von einer- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Schnittstelle dargestellt.|

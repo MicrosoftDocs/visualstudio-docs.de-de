@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 97c82254516c78a3aff9884e91e44adc45b95981
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902979"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Benutzerdefinierte Benutzeroberfläche (Quellcodeverwaltungs-VSPackage)
 Ein VSPackage deklariert seine Menü Elemente und deren Standardzustände über die Visual Studio-Befehls Tabellen Datei (*vsct*). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]In der integrierten Entwicklungsumgebung (IDE) werden die Menü Elemente in Ihren Standard Zuständen angezeigt, bis das VSPackage geladen wurde. Anschließend wird die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> Methode aufgerufen, um Menü Elemente zu aktivieren oder zu deaktivieren.
@@ -57,7 +57,7 @@ Ein VSPackage deklariert seine Menü Elemente und deren Standardzustände über 
 | Toolfenster | Das VSPackage der Quell Code Verwaltung Blendet alle Tool Fenster aus, die es besitzt, wenn es inaktiv ist. |
 | Quellcodeverwaltungs-VSPackage-spezifische Options Seiten | Mit dem Registrierungsschlüssel " **hklm\software\microsoft\visualstudio\x.y\toolsoptionspages\visibilitycmduicontexts** " kann ein VSPackage die Kontexte festlegen, in denen die Options Seiten angezeigt werden müssen. Ein Registrierungs Eintrag unter diesem Schlüssel muss mithilfe der Dienst-ID (SID) des Quell Code Verwaltungs Dienstanbieter erstellt werden, und ihm muss ein DWORD-Wert von 1 zugewiesen werden. Wenn ein UI-Ereignis in einem Kontext auftritt, bei dem das VSPackage der Quell Code Verwaltung bei registriert ist, wird das VSPackage aufgerufen, wenn es aktiv ist. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>

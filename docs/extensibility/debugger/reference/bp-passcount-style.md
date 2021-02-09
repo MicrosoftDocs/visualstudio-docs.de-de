@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0148a92ee37a4f9885c9c12a5076ff966051d20b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902118"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
 Gibt die Bedingung an, die der Breakpoint-Durchlauf Anzahl zugeordnet ist, die bewirkt, dass der Breakpoint ausgelöst wird.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902966"
 ---
 # <a name="custom-parameters"></a>Benutzerdefinierte Parameter
 Benutzerdefinierte Parameter steuern den Vorgang eines Assistenten, nachdem ein Assistent gestartet wurde. Eine verwandte *VSZ* -Datei stellt ein Array von benutzerdefinierten Parametern bereit, die von der integrierten Entwicklungsumgebung (IDE) verpackt und beim Start des Assistenten als Zeichen folgen Array an den Assistenten übermittelt werden. Der Assistent analysiert dann das Array von Zeichen folgen und verwendet die Informationen, um die tatsächliche Ausführung des Assistenten zu steuern. Auf diese Weise kann ein Assistent die Funktionalität abhängig vom Inhalt der *VSZ* -Datei anpassen.
@@ -43,8 +43,8 @@ Param="PROJECT_TYPE = CSPROJ"
 
  Weitere Informationen finden Sie in der [Assistenten Datei (VSZ-Datei)](../../extensibility/internals/wizard-dot-vsz-file.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
-- [Kontext Parameter](../../extensibility/internals/context-parameters.md)
+- [Kontextparameter](../../extensibility/internals/context-parameters.md)
 - [The](../../extensibility/internals/wizards.md)
 - [Assistenten Datei (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

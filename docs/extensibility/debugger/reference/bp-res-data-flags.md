@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0b687a54ddc1ed111b664a819dacfed6709196d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a90b8e9ffdc8009802c7e4c88927f69737eb83e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901962"
 ---
 # <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 Gibt an, ob der Daten Breakpoint emuliert oder in Hardware implementiert wird.

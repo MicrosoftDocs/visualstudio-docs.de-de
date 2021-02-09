@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7df029be478fef3cf1e9b6138456986016465d5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903014"
 ---
 # <a name="custom-colorable-items"></a>Benutzerdefinierte färb Bare Elemente
 Sie können die Liste der Typen für die Farbgebung (z. b. Schlüsselwörter und Kommentare) überschreiben, indem Sie benutzerdefinierte kolorierbare Elemente als Teil Ihres sprach Dienstanbieter implementieren.
@@ -66,7 +66,7 @@ Sie können die Liste der Typen für die Farbgebung (z. b. Schlüsselwörter und
 
     Ein Beispiel für das Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> -Schnittstelle und der- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> Schnittstelle finden Sie unter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Modell eines Legacy sprach Dienstanbieter](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [Syntax Farbgebung in benutzerdefinierten Editoren](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Syntax Farbgebung in einem Legacy Sprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

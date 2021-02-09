@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903240"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Diese Schnittstelle wird verwendet, um den Sitzungs-Debug-Manager (SDM) zu Fragen, ob er am aktuellen Code Speicherort angehalten werden soll.
@@ -39,7 +39,7 @@ IDebugCanStopEvent2 : IUknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugCanStopEvent2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Ruft den Grund für dieses Ereignis ab.|
 |[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Gibt an, ob das Programm, das gedebuggt wird, an der Position dieses Ereignisses angehalten werden soll (und ein Ereignis senden soll, das den Grund für das Beenden beschreibt), oder die Ausführung einfach|

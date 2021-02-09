@@ -16,15 +16,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903801"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Code in VSTO-Add-Ins aus anderen Office-Projektmappen aufzurufen
   Sie können ein Objekt in Ihrem VSTO-Add-In für andere Projektmappen, einschließlich anderer Microsoft Office-Projektmappen, verfügbar machen. Dies ist hilfreich, wenn Ihr VSTO-Add-In einen Dienst bereitstellt, der durch andere Projektmappen verwendet werden soll. Wenn Sie z. b. über ein VSTO-Add-in für Microsoft Office Excel verfügen, das Berechnungen für Finanzdaten von einem Webdienst ausführt, können andere Lösungen diese Berechnungen ausführen, indem Sie das Excel-VSTO-Add-in zur Laufzeit aufrufen.
@@ -144,7 +144,7 @@ utilities.ImportData();
 
  Wenn Sie in diesem Beispiel versuchen, den Wert der COMAddIn. Object-Eigenschaft in die- `AddInUtilities` Klasse und nicht in die- `IAddInUtilities` Schnittstelle umzuwandeln, löst der Code eine aus <xref:System.InvalidCastException> .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Exemplarische Vorgehensweise: Abrufen von Code in einem VSTO-Add-in aus VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Entwickeln von Office-Lösungen](../vsto/developing-office-solutions.md)
