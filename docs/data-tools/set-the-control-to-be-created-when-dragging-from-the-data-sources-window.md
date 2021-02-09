@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6b4d1782a82a1eb2147d540b1799f5152c4f2308
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858435"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll
 
@@ -39,11 +39,11 @@ In diesem Kontext bezieht sich der Begriff *Objekt* auf ein benutzerdefiniertes 
 2. Wählen Sie im Fenster **Datenquellen** das Element aus, das die festzulegende Datentabelle oder das Objekt darstellt.
 
    > [!TIP]
-   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, können Sie es öffnen, indem **View** Sie  >  **andere Windows** -  >  **Datenquellen** anzeigen auswählen.
+   > Wenn das Fenster **Datenquellen** nicht geöffnet ist, können Sie es öffnen, indem Sie  >  **andere Windows**-  >  **Datenquellen** anzeigen auswählen.
 
 3. Klicken Sie auf das Dropdownmenü für das Element, und klicken Sie im Menü auf eines der folgenden Elemente:
 
-    - Klicken Sie auf **Details** , um jedes Datenfeld in einem separaten Steuerelement anzuzeigen. Wenn Sie das Datenelement in den Designer ziehen, werden für jede Spalte bzw. jede Eigenschaft der übergeordneten Datentabelle oder des Objekts ein anderes datengebundenes Steuerelement sowie Bezeichnungen für jedes Steuerelement erstellt.
+    - Klicken Sie auf **Details**, um jedes Datenfeld in einem separaten Steuerelement anzuzeigen. Wenn Sie das Datenelement in den Designer ziehen, werden für jede Spalte bzw. jede Eigenschaft der übergeordneten Datentabelle oder des Objekts ein anderes datengebundenes Steuerelement sowie Bezeichnungen für jedes Steuerelement erstellt.
 
     - Wählen Sie ein anderes Steuerelement in der Liste, z.B. **DataGrid** oder **List** in einer WPF-Anwendung, oder **DataGridView** in einer Windows Forms-Anwendung aus, um alle Daten in einem einzelnen Steuerelement anzuzeigen.
 
@@ -71,6 +71,6 @@ Bevor Sie ein Element, das eine Spalte oder eine Eigenschaft eines Objekts im Fe
 
      Wenn Sie kein Steuerelement für die Spalte oder Eigenschaft erstellen möchten, wählen Sie im Dropdown Menü die Option **keine** aus. Dies ist nützlich, wenn Sie die übergeordnete Tabelle oder das Objekt in den Designer ziehen, aber die Spalte oder die Eigenschaft nicht einschließen möchten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

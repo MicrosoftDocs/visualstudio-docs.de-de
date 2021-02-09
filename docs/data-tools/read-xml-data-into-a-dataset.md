@@ -19,23 +19,23 @@ helpviewer_keywords:
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858552"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
 
 ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser exemplarischen Vorgehensweise erstellen Sie eine Windows-Anwendung, die XML-Daten in ein Dataset lädt. Das DataSet wird dann in einem- <xref:System.Windows.Forms.DataGridView> Steuerelement angezeigt. Schließlich wird ein XML-Schema, das auf dem Inhalt der XML-Datei basiert, in einem Textfeld angezeigt.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
 
-Erstellen Sie ein neues **Windows Forms-App** -Projekt für c# oder Visual Basic. Benennen Sie das Projekt mit " **leseringxml** ".
+Erstellen Sie ein neues **Windows Forms-App** -Projekt für c# oder Visual Basic. Benennen Sie das Projekt mit " **leseringxml**".
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generieren der XML-Datei, die in das DataSet eingelesen werden soll
 
@@ -43,7 +43,7 @@ Da sich diese exemplarische Vorgehensweise auf das Lesen von XML-Daten in ein Da
 
 1. Wählen Sie im Menü **Projekt** den Eintrag **Neues Element hinzufügen** aus.
 
-2. Wählen Sie **XML-Datei** aus, benennen Sie die Datei **authors.xml** , und wählen Sie dann **Hinzufügen**.
+2. Wählen Sie **XML-Datei** aus, benennen Sie die Datei **authors.xml**, und wählen Sie dann **Hinzufügen**.
 
    Die XML-Datei wird in den Designer geladen und ist zum Bearbeiten bereit.
 
@@ -166,7 +166,7 @@ In diesem Schritt erstellen Sie ein neues Dataset mit dem Namen `authors` . Weit
 
 Die Schaltfläche **XML lesen** liest die XML-Datei in das DataSet. Anschließend werden Eigenschaften für das Steuerelement festgelegt <xref:System.Windows.Forms.DataGridView> , die es an das DataSet binden.
 
-1. Wählen **Solution Explorer** Sie in Projektmappen-Explorer **Form1** aus, und wählen Sie dann auf der Symbolleiste **Projektmappen-Explorer** die Schaltfläche **Designer anzeigen** aus.
+1. Wählen Sie in Projektmappen-Explorer **Form1** aus, und wählen Sie dann auf der Symbolleiste **Projektmappen-Explorer** die Schaltfläche **Designer anzeigen** aus.
 
 2. Wählen Sie die Schaltfläche **XML lesen** aus.
 

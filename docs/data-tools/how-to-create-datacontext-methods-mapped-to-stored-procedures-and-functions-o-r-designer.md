@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4cb02a7fc7fdcbb4ff3c9c3750e722ff0fe031a5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2f9b003deb7bc4c564be62d8e7ca486c88cee8a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858734"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Vorgehensweise: Erstellen von DataContext-Methoden, die zu gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)
 
@@ -52,7 +52,7 @@ Sie können Methoden erstellen, <xref:System.Data.Linq.DataContext> indem Sie ge
 > [!NOTE]
 > Weitere Informationen zum Ändern des Rückgabe Typs vorhandener <xref:System.Data.Linq.DataContext> Methoden finden Sie unter Gewusst [wie: Ändern des Rückgabe Typs einer DataContext-Methode (O/R-Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md)

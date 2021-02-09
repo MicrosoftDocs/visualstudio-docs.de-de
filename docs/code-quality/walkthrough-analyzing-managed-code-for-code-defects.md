@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, analyzing
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859605"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Exemplarische Vorgehensweise: Verwenden der statischen Code Analyse zum Ermitteln von Code Fehlern
 
@@ -29,7 +29,7 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt aus der Vorlage **Klassenbibliothek (.NET Framework)** .
 
-1. Nennen Sie das Projekt " **CodeAnalysisManagedDemo** ".
+1. Nennen Sie das Projekt " **CodeAnalysisManagedDemo**".
 
 1. Nachdem das Projekt erstellt wurde, öffnen Sie die Datei *Class1.cs* .
 
@@ -77,7 +77,7 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
 ::: moniker-end
 
-6. Klicken Sie im Menü **Datei** auf **ausgewählte Elemente speichern** , und schließen Sie dann die Eigenschaften Seiten.
+6. Klicken Sie im Menü **Datei** auf **ausgewählte Elemente speichern**, und schließen Sie dann die Eigenschaften Seiten.
 
 7. Klicken Sie im Menü **Erstellen** auf **CodeAnalysisManagedDemo erstellen**.
 
@@ -166,7 +166,7 @@ In diesem Artikel wird beschrieben, wie Sie die Legacy Analyse verwenden, um Ihr
 
     1. Wählen Sie im **Fehlerliste** die Warnung aus.
 
-    1. Wählen Sie im Kontextmenü (Kontextmenü) die Option **Suppress**  >  **in Unterdrückungs Datei** unterdrücken aus.
+    1. Wählen Sie im Kontextmenü (Kontextmenü) die Option   >  **in Unterdrückungs Datei** unterdrücken aus.
 
 1. Erstellen Sie das Projekt neu.
 

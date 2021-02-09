@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 137d8970ebfc70dcf102fa70d7bcf18d81677535
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859267"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 
@@ -39,7 +39,7 @@ In der folgenden Tabelle werden die Aufgaben aufgeführt, die durch Ziehen von E
 |----------| - |
 |Erstellen von neuen datengebundenen Steuerelementen<br /><br /> Binden Sie vorhandenen Steuerelemente an Daten.|[Binden von WPF-Steuerelementen an ein Dataset](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Erstellen von Steuerelementen, die verknüpfte Daten in Beziehungen zwischen übergeordneten und untergeordneten Elementen anzeigen: Wenn der Benutzer einen übergeordneten Datensatz in einem Steuerelement auswählt, werden in einem anderen Steuerelement verknüpfte untergeordnete Daten für den ausgewählten Datensatz angezeigt.|[Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)|
-|Erstellen einer *Nachschlagetabelle* , in der Informationen aus einer Tabelle auf der Grundlage des Werts eines Fremdschlüsselfelds in einer anderen Tabelle angezeigt werden.|[Erstellen von Nachschlagetabellen in WPF-Anwendungen](../data-tools/create-lookup-tables-in-wpf-applications.md)|
+|Erstellen einer *Nachschlagetabelle*, in der Informationen aus einer Tabelle auf der Grundlage des Werts eines Fremdschlüsselfelds in einer anderen Tabelle angezeigt werden.|[Erstellen von Nachschlagetabellen in WPF-Anwendungen](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |Binden eines Steuerelements an ein Bild in einer Datenbank|[Binden von Steuerelementen an Bilder aus einer Datenbank](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
 ## <a name="valid-drop-targets"></a>Gültige Ablageziele
@@ -57,7 +57,7 @@ In der folgenden Tabelle sind die [!INCLUDE[TLA#tla_titlexaml](../data-tools/inc
 | Dataset | Ja | Ja |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Ja | Ja |
 | Dienst | Ja | Nein |
-| Object | Ja | Nein  |
+| Object | Ja | Nein |
 
 ### <a name="datasets"></a>Datasets
 
@@ -108,6 +108,6 @@ Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlas
 
 - Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, erstellt das XAML das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement an das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ea872d96e59365f3dbef5dc3568641c30e51606
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 609af4ef71a6ed73bd1d9599d76d8eb64073efd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858695"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Vorgehensweise: Aktivieren/Deaktivieren der Pluralisierung (O/R-Designer)
 Wenn Sie Datenbankobjekte mit Namen, die in s oder IES enden, von **Server-Explorer** oder **Datenbank-Explorer** auf die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)ziehen, werden die Namen der generierten Entitäts Klassen standardmäßig von Plural in Singular geändert. Damit soll verdeutlicht werden, dass die instanziierte Entitätsklasse einem einzigen Datensatz zugeordnet ist. Das Hinzufügen einer `Customers` Tabelle zum **O/R-Designer** führt beispielsweise dazu, dass eine Entitäts Klasse mit dem Namen erstellt `Customer` wird, da die Klasse nur Daten für einen einzelnen Kunden enthält.
@@ -40,7 +40,7 @@ Wenn Sie Datenbankobjekte mit Namen, die in s oder IES enden, von **Server-Explo
 
 5. Legen Sie die **Pluralisierung von Namen** auf **aktiviert**  =  **true** fest, um pluralisierungs Regeln auf die Klassennamen von Objekten anzuwenden, die dem **O/R-Designer** hinzugefügt wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

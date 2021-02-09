@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dc1d82b0267e5e0655f3ebef8eb08806ad319a8
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9ce4057378db357345869d10e933929ae31ee573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859215"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
 
 Im Dialogfeld **Dienst Verweis konfigurieren** können Sie das Verhalten der Windows Communication Foundation (WCF)-Dienste konfigurieren.
 
-Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen-Explorer** , und wählen Sie **Dienstverweis konfigurieren** aus, um auf das Dialogfeld **Dienstverweis konfigurieren** zuzugreifen. Sie können auch auf das Dialogfeld zugreifen, indem Sie im Dialogfeld **Dienstverweis hinzufügen** auf die Schaltfläche **Erweitert** klicken.
+Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen-Explorer**, und wählen Sie **Dienstverweis konfigurieren** aus, um auf das Dialogfeld **Dienstverweis konfigurieren** zuzugreifen. Sie können auch auf das Dialogfeld zugreifen, indem Sie im Dialogfeld **Dienstverweis hinzufügen** auf die Schaltfläche **Erweitert** klicken.
 
 ## <a name="task-list"></a>Aufgabenliste
 
@@ -41,7 +41,7 @@ Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen
 
 - Wählen Sie die Typen aus den Listen **Sammlungstyp** und **Wörterbuchsammlungstyp** aus, um Listen- oder Wörterbuchsammlungstypen für einen WCF-Client anzugeben.
 
-- Deaktivieren Sie das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden** , um die Typfreigabe zu deaktivieren. Aktivieren Sie zum Aktivieren der Typfreigabe für eine Teilmenge an referenzierten Assemblys das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden** , klicken Sie auf **Typen in folgenden Assemblys, auf die verwiesen wird, wiederverwenden** , und wählen Sie die gewünschten Verweise in der Liste **Assemblys, auf die verwiesen wird** aus.
+- Deaktivieren Sie das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**, um die Typfreigabe zu deaktivieren. Aktivieren Sie zum Aktivieren der Typfreigabe für eine Teilmenge an referenzierten Assemblys das Kontrollkästchen **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**, klicken Sie auf **Typen in folgenden Assemblys, auf die verwiesen wird, wiederverwenden**, und wählen Sie die gewünschten Verweise in der Liste **Assemblys, auf die verwiesen wird** aus.
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
@@ -105,7 +105,7 @@ Zeigt das Dialogfeld **Webverweis hinzufügen** an.
 > [!NOTE]
 > Die Schaltfläche **Webverweis hinzufügen** ist nur verfügbar, wenn das Dialogfeld **Dienst Verweis konfigurieren** im Dialog **Feld Dienstverweis hinzufügen** angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [How to: Add a reference to a web service (Vorgehensweise: Hinzufügen eines Verweises auf einen Webdienst)](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

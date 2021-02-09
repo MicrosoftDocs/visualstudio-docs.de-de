@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1db0f53ffc049d8844d7447461c4c33a0492a2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858240"
 ---
 # <a name="validate-data-in-datasets"></a>Überprüfen von Daten in Datasets
 Beim Validieren von Daten wird bestätigt, dass die Werte, die in Datenobjekte eingegeben werden, den Einschränkungen im Schema eines Datasets entsprechen. Der Überprüfungsprozess bestätigt auch, dass diese Werte den Regeln entsprechen, die für Ihre Anwendung eingerichtet wurden. Es empfiehlt sich, Daten vor dem Senden von Aktualisierungen an die zugrunde liegende Datenbank zu validieren. Dadurch werden Fehler sowie die potenzielle Anzahl von Roundtrips zwischen einer Anwendung und der Datenbank reduziert.
@@ -66,7 +66,7 @@ Wenn Ihre Anwendung ein typisiertes DataSet verwendet, können Sie stark typisie
 
 ## <a name="data-update-events"></a>Daten Aktualisierungs Ereignisse
 
-|event|BESCHREIBUNG|
+|event|Beschreibung|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|Der Wert in einer Spalte wird geändert. Das Ereignis übergibt die Zeile und die Spalte zusammen mit dem vorgeschlagenen neuen Wert.|
 |<xref:System.Data.DataTable.ColumnChanged>|Der Wert in einer Spalte wurde geändert. Das Ereignis übergibt die Zeile und die Spalte zusammen mit dem vorgeschlagenen Wert an Sie.|

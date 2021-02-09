@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858448"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Speichern von Daten mit den TableAdapter-DBDirect-Methoden
 
@@ -69,7 +69,7 @@ Der erste Schritt besteht darin, eine **Windows Forms Anwendung** zu erstellen.
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **TableAdapterDbDirectMethodsWalkthrough** , und wählen Sie dann **OK** aus.
+4. Nennen Sie das Projekt **TableAdapterDbDirectMethodsWalkthrough**, und wählen Sie dann **OK** aus.
 
      Das Projekt **TableAdapterDbDirectMethodsWalkthrough** wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.
 
@@ -91,9 +91,9 @@ Dieser Schritt verwendet den **Assistenten zum Konfigurieren von Datenquellen** 
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-         \- oder -
+         - oder -
 
-    - Klicken Sie auf **Neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
 5. Wenn für die Datenbank ein Kennwort erforderlich ist, wählen Sie die Option zum einschließen sensibler Daten aus, und klicken Sie dann auf **weiter**.
 
@@ -115,7 +115,7 @@ Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Hinzufügen von Schaltflächen, die die einzelnen TableAdapter DbDirect-Methoden aufruft
 
-1. Ziehen Sie drei <xref:System.Windows.Forms.Button>-Steuerelemente aus der **Toolbox** auf **Form1** (unter **RegionDataGridView** ).
+1. Ziehen Sie drei <xref:System.Windows.Forms.Button>-Steuerelemente aus der **Toolbox** auf **Form1** (unter **RegionDataGridView**).
 
 2. Legen Sie die folgenden Eigenschaften für **Name** und **Text** auf jeder Schaltfläche fest.
 
@@ -136,7 +136,7 @@ Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>-Steuerelement
 
 ### <a name="to-add-code-to-update-records-in-the-database"></a>Hinzufügen von Code für die Aktualisierung von Datensätzen in der Datenbank
 
-1. Doppelklicken Sie **UpdateButton** , sodass ein Ereignishandler für Click-Ereignis erstellt wird, und öffnen Sie das Formular im Code-Editor.
+1. Doppelklicken Sie **UpdateButton**, sodass ein Ereignishandler für Click-Ereignis erstellt wird, und öffnen Sie das Formular im Code-Editor.
 
 2. Ersetzen Sie den Ereignishandler `UpdateButton_Click`durch den folgenden Code:
 
@@ -170,6 +170,6 @@ Abhängig von den Anforderungen Ihrer Anwendung können Sie nach dem Erstellen e
 
 - Hinzufügen weiterer Tabellen zum Dataset durch Auswählen von **DataSet mit Assistent konfigurieren** aus dem **Datenquellenfenster**. Sie können Steuerelemente hinzufügen, die zugehörige Daten anzeigen, indem Sie die entsprechenden Knoten auf das Formular ziehen. Weitere Informationen finden Sie unter [Beziehungen in Datasets](relationships-in-datasets.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

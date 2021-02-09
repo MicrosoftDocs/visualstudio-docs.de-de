@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20ff0e4764acf4f2f0f8dea77ed815a9aa430abe
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4226be60f91fb1b9d55e279be2a697861c3f9566
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858799"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Vorgehensweise: Ändern des Rückgabetyps für eine DataContext-Methode (O/R-Designer)
 Der Rückgabetyp einer <xref:System.Data.Linq.DataContext> Methode (basierend auf einer gespeicherten Prozedur oder Funktion erstellt) unterscheidet sich abhängig davon, wo Sie die gespeicherte Prozedur oder Funktion im **O/R-Designer** ablegen. Wenn Sie ein Element direkt auf einer vorhandene Entitätsklasse ablegen, wird eine <xref:System.Data.Linq.DataContext>-Methode erstellt, die über den Rückgabetyp dieser Entitätsklasse verfügt (wenn das Schema der Daten, die von der gespeicherten Prozedur oder Funktion zurückgegeben wurden, mit der Form der Entitätsklasse übereinstimmt). Wenn Sie ein Element in einem leeren Bereich des **O/R-Designers** ablegen, <xref:System.Data.Linq.DataContext> wird eine Methode erstellt, die einen automatisch generierten Typ zurückgibt. Sie können den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode ändern, wenn Sie sie dem Methodenbereich hinzugefügt haben. Um den Rückgabetyp einer <xref:System.Data.Linq.DataContext>-Methode zu überprüfen oder zu ändern, markieren Sie sie und klicken im Fenster **Eigenschaften** auf die Eigenschaft **Rückgabetyp**.
@@ -41,7 +41,7 @@ Der Rückgabetyp einer <xref:System.Data.Linq.DataContext> Methode (basierend au
 
 3. Speichern Sie die *DBML* -Datei.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

@@ -13,25 +13,25 @@ helpviewer_keywords:
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: da4db396d718fcd8b88b476278a2470663b58a8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859475"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen
 Sie können die Funktionalität eines TableAdapters erweitern, indem Sie eine partielle Klassendatei für den TableAdapter erstellen und diesem Code hinzufügen (anstatt der Datei " *DatasetName. DataSet. Designer* " Code hinzuzufügen). Partielle Klassen ermöglichen das Aufteilen von Code für eine bestimmte Klasse in mehrere physische Dateien. Weitere Informationen finden Sie unter [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) oder [Partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
 
 Der Code, der einen TableAdapter definiert, wird jedes Mal generiert, wenn Änderungen am TableAdapter im Dataset vorgenommen werden. Dieser Code wird auch generiert, wenn während der Ausführung eines Assistenten, der die Konfiguration des TableAdapters ändert, Änderungen vorgenommen werden. Um zu verhindern, dass Ihr Code während der erneuten Generierung eines TableAdapters gelöscht wird, fügen Sie der partiellen Klassendatei des TableAdapter Code hinzu.
 
-Nachdem Sie den DataSet-und TableAdapter-Code getrennt haben, ist das Ergebnis standardmäßig eine diskrete Klassendatei in jedem Projekt. Das ursprüngliche Projekt enthält eine Datei mit dem Namen *DatasetName. Designer. vb* (oder *DatasetName.Designer.cs* ), die den TableAdapter-Code enthält. Das Projekt, das in der **DataSet-Projekt** Eigenschaft festgelegt ist, verfügt über eine Datei namens *DatasetName. DataSet. Designer. vb* (oder *DatasetName.DataSet.Designer.cs* ), die den DataSet-Code enthält.
+Nachdem Sie den DataSet-und TableAdapter-Code getrennt haben, ist das Ergebnis standardmäßig eine diskrete Klassendatei in jedem Projekt. Das ursprüngliche Projekt enthält eine Datei mit dem Namen *DatasetName. Designer. vb* (oder *DatasetName.Designer.cs*), die den TableAdapter-Code enthält. Das Projekt, das in der **DataSet-Projekt** Eigenschaft festgelegt ist, verfügt über eine Datei namens *DatasetName. DataSet. Designer. vb* (oder *DatasetName.DataSet.Designer.cs*), die den DataSet-Code enthält.
 
 > [!NOTE]
-> Bei einer Aufteilung von DataSets und TableAdapters (durch Festlegen der **DataSet-Projekt** -Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
+> Bei einer Aufteilung von DataSets und TableAdapters (durch Festlegen der **DataSet-Projekt**-Eigenschaft) werden vorhandene partielle DataSet-Klassen in dem Projekt nicht automatisch verschoben. Vorhandene partielle DataSet-Klassen müssen manuell in das DataSet-Projekt verschoben werden.
 
 > [!NOTE]
 > Das DataSet bietet Funktionen zum Erstellen von <xref:System.Data.DataTable.ColumnChanging> -und- <xref:System.Data.DataTable.RowChanging> Ereignis Handlern, wenn eine Überprüfung erforderlich ist. Weitere Informationen finden Sie unter [Hinzufügen von Validierungen zu einem n-Tier-DataSet](../data-tools/add-validation-to-an-n-tier-dataset.md).
@@ -67,7 +67,7 @@ Nachdem Sie den DataSet-und TableAdapter-Code getrennt haben, ist das Ergebnis s
     }
     ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Übersicht über N-Tier-Daten Anwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Hinzufügen von Code zu DataSets in N-Tier-Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
