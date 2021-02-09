@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924493"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Die Datei DslDefinition.dsl
 
@@ -277,7 +277,7 @@ Jedes Verbindungstool kann einen bestimmten Verbindungsgenerator aufrufen. Wie i
 
 Mit keinem der beiden Tooltypen werden Formen oder Konnektoren direkt konstruiert. Jedes Tool instanziiert eine Domänenklasse oder eine Domänenbeziehung. Die Form- und Konnektorzuordnungen bestimmen dann, wie diese Domänenklasse oder Domänenbeziehung dargestellt wird.
 
-## <a name="paths"></a>Paths
+## <a name="paths"></a>Pfade
 
 Domänenpfade treten in der Datei "DslDefinition.dsl" an verschiedenen Stellen auf. Diese Pfade geben eine Reihe von Links von einem Element in einem Modell (d. h. einer Instanz der domänenspezifischen Sprache) zu einem anderen an. Die Pfadsyntax ist einfach, aber ausführlich.
 
@@ -467,7 +467,7 @@ Die serialisierte Datei enthält:
 
 (Die Verbindungsbeziehung hat ihre eigenen XML-Klassendaten, die ihre Element- und Attributnamen bereitstellen.)
 
-Wenn das **omitelement** -Attribut auf "true" festgelegt ist, wird der Beziehungs Rollenname weggelassen, der die serialisierte Datei abkürzt und eindeutig ist, wenn die beiden Klassen nicht mehr als eine Beziehung aufweisen. Zum Beispiel:
+Wenn das **omitelement** -Attribut auf "true" festgelegt ist, wird der Beziehungs Rollenname weggelassen, der die serialisierte Datei abkürzt und eindeutig ist, wenn die beiden Klassen nicht mehr als eine Beziehung aufweisen. Beispiel:
 
 ```xml
 <component name="Component3">
@@ -579,7 +579,7 @@ Eine minimale Konnektorzuordnung verweist auf einen Konnektor und eine Beziehung
 
 Konnektorzuordnungen können auch Decorator-Zuordnungen enthalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)

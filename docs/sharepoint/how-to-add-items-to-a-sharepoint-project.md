@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4a32d38b20b93cf215cb53c2c2d2b8767418de24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923496"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Gewusst wie: Hinzufügen von Elementen zu einem SharePoint-Projekt
   SharePoint-Lösungen enthalten ein oder mehrere Projekte, die jeweils mehrere SharePoint-Projekt Elemente enthalten. Nachdem Sie eine SharePoint-Projekt Mappe geöffnet oder erstellt haben, können Sie diesen Projekten entweder neue oder vorhandene Elemente hinzufügen. Neue Workflow Projekte verfügen beispielsweise über ein Standardformular mit dem Namen default. aspx, Sie können dieses Formular jedoch durch ein neues oder anderes Formular ersetzen oder ein weiteres ASPX-Formular hinzufügen.
@@ -48,6 +48,6 @@ ms.locfileid: "94850727"
 
 4. Navigieren Sie zu dem Ordner mit dem Element, das Sie hinzufügen möchten, wählen Sie es aus, und klicken Sie dann auf die Schaltfläche **Hinzufügen** .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [SharePoint-Projekt-und Projekt Element Vorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

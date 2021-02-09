@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75001da1829f6dafdac68359d1b0f6c7c14ed266
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ccb5a216aa9a43581327b04d4b6b56f49f9b2bae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924643"
 ---
 # <a name="t4-template-directive"></a>T4-Vorlagendirektive
 
@@ -70,7 +70,7 @@ Gültige Werte:
 
 `true`
 
-`false` (Standard)
+`false` (Standardwert)
 
 Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
@@ -90,7 +90,7 @@ Gültige Werte:
 
 `true`
 
-`false` (Standard)
+`false` (Standardwert)
 
 `trueFromBase`
 
@@ -98,7 +98,7 @@ Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvo
 
 Da der Typ dieser Eigenschaft vom Typ des Hosts abhängt, ist sie nur nützlich, wenn Sie eine Textvorlage schreiben, für die ein bestimmter Host verwendet werden muss. Dies gilt für [Entwurfszeit Vorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md), jedoch nicht für [Lauf Zeit Vorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Wenn `hostspecific` ist `true` und Sie Visual Studio verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Zum Beispiel:
+Wenn `hostspecific` ist `true` und Sie Visual Studio verwenden, können Sie `this.Host` in IServiceProvider umwandeln, um auf Visual Studio-Funktionen zuzugreifen. Sie können den absoluten Pfad einer Datei im Projekt auch mithilfe von `Host.ResolvePath(filename)` abrufen. Beispiel:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -130,13 +130,13 @@ Beispiel:
 
 Gültige Werte:
 
-`C#` (Standard)
+`C#` (Standardwert)
 
 `VB`
 
 Das- `language` Attribut gibt die Sprache ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) an, die für den Quellcode in-Anweisungs-und Ausdrucks Blöcken verwendet werden soll. Die Zwischencodedatei, von der die Ausgabe generiert wird, verwendet diese Sprache. Diese Sprache bezieht sich nicht auf die Sprache, die von der Vorlage generiert wird, wobei es sich um eine beliebige Art von Text handeln kann.
 
-Zum Beispiel:
+Beispiel:
 
 ```vb
 <#@ template language="VB" #>
@@ -247,7 +247,7 @@ Beispiel:
 
 Gültige Werte:
 
-`true` (Standard)
+`true` (Standardwert)
 
 `false`
 
@@ -263,7 +263,7 @@ Beispiel:
 
 Gültige Werte:
 
-`public` (Standard)
+`public` (Standardwert)
 
 `internal`
 

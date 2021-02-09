@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ebec7f6b1f6d777ce7b3b914ac5c1d5629190fcc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923576"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Vorgehensweise: Hinzufügen und Entfernen von Featureabhängigkeiten
   Die SharePoint-Funktion kann von anderen Features für Funktionen oder Daten abhängen. In diesen Fällen können Sie diese anderen Features als Abhängigkeiten für ihre Funktion markieren. Auf diese Weise wird vom SharePoint-Server sichergestellt, dass abhängige Features aktiviert werden, bevor das Feature aktiviert wird.

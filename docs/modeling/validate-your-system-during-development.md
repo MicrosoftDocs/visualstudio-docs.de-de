@@ -8,15 +8,15 @@ helpviewer_keywords:
 - dependency diagrams
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a803b2fb7eb7c682e29ae0d17698ef673927d751
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bac26664a2ef98cffbd60eee0647b39dd1108675
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924304"
 ---
 # <a name="validate-your-system-during-development"></a>Überprüfen des Systems während der Entwicklung
 
@@ -40,7 +40,7 @@ Verwenden Sie die folgenden Aufgaben, um Ihre Software zu überprüfen:
 |**Videos**|![Link zu Video ](../data-tools/media/playvideo.gif) [Channel 9: Doug 7: Code Verständnis und System Entwurf mit Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![Link zu Video ](../data-tools/media/playvideo.gif) [Channel 9: Architektur einer Anwendung](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
 |**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio-Erweiterbarkeit](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)
 - [Analyse und Modell Architektur](../modeling/analyze-and-model-your-architecture.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e6771482925a935d1b6424412d4176db5e9ad6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923482"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Gewusst wie: Hinzufügen und entfernen zugeordneter Ordner
   Einige häufig verwendete Ordner in SharePoint, z. b. Bilder und Layouts, sind tief in die Datei Hierarchie eingebettet. Sie können diese Ordner einem SharePoint-Projekt zuordnen, um leichter auf diese Ordner zuzugreifen. Zugeordnete Ordner sind Ordner im SharePoint-Projekt, die dem physischen Speicherort der Dateien in der Installation von SharePoint Server entsprechen.

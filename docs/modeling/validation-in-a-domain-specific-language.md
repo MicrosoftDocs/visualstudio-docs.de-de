@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924256"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validierung in einer domänenspezifischen Sprache
 Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) können Sie Validierungseinschränkungen definieren, um zu überprüfen, ob das vom Benutzer erstellte Modell sinnvoll ist. Wenn Benutzer in Ihrer DSL beispielsweise einen Stammbaum von Personen und deren Vorfahren zeichnen können, könnten Sie eine Einschränkung schreiben, mit der sichergestellt wird, dass die Geburtstage der Kinder nach denen der Eltern liegen.
@@ -84,7 +84,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
 
     Mit "ValidationCategories" wird angegeben, wann die Methode ausgeführt wird.
 
-   Zum Beispiel:
+   Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -179,7 +179,7 @@ public partial class Person
 
  Zu den Nachteilen gehört, dass die Verwaltung der kombinierten Methode schwieriger ist und dass alle Einschränkungen die gleichen `ValidationCategories` aufweisen müssen. Daher empfiehlt es sich, jede Einschränkung möglichst in einer gesonderten Methode zu belassen.
 
- **Übergeben von Werten in den Kontextcache.**  Der Kontextparameter weist ein Wörterbuch auf, in das Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Zum Beispiel:
+ **Übergeben von Werten in den Kontextcache.**  Der Kontextparameter weist ein Wörterbuch auf, in das Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -195,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Wenn Sie als Multiplizität einer Rolle in einer Domänenbeziehung 1..* oder 1..1 festlegen, der Benutzer aber keinen Link mit dieser Beziehung erstellt, wird eine Validierungsfehlermeldung angezeigt.
 
- Wenn Ihre DSL beispielsweise die Klassen Person und Town und eine Beziehung personlivesintown mit der Beziehung 1 hat **. \\** _ in der Rolle "Ort", wird für jede Person, die keine Stadt hat, eine Fehlermeldung angezeigt.
+ Wenn Ihre DSL beispielsweise die Klassen Person und Town und eine Beziehung personlivesintown mit der Beziehung 1 hat **. \\** * in der Rolle "Ort" wird für jede Person, die keine Stadt hat, eine Fehlermeldung angezeigt.
 
 ## <a name="running-validation-from-program-code"></a>Ausführen der Validierung über den Programmcode
  Sie können die Validierung ausführen, indem Sie auf einen ValidationController zugreifen oder ihn erstellen. Wenn die Fehler im Fehler Fenster für den Benutzer angezeigt werden sollen, verwenden Sie den validationcontroller, der an die docdata Ihres Diagramms angehängt ist. Wenn Sie beispielsweise einen Menübefehl schreiben, ist `CurrentDocData.ValidationController` in der Befehlssatzklasse verfügbar:
@@ -215,7 +215,7 @@ partial class MyLanguageCommandSet
 
  Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Zum Beispiel:
+ Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -235,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Ausführen der Validierung bei einer Änderung
  Wenn Sie sicherstellen möchten, dass der Benutzer sofort gewarnt wird, sobald das Modell ungültig wird, können Sie ein Speicherereignis definieren, das die Validierung ausführt. Weitere Informationen zu Speicher Ereignissen finden Sie unter [Ereignishandler verbreiten Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Fügen Sie dem Projekt _ *dslpackage** zusätzlich zum Validierungscode eine benutzerdefinierte Codedatei mit Inhalt ähnlich dem folgenden Beispiel hinzu. In diesem Code wird der an das Dokument angefügte `ValidationController` verwendet. Dieser Controller zeigt die Validierungs Fehler in der Visual Studio-Fehlerliste an.
+ Fügen Sie dem **dslpackage** -Projekt neben dem Validierungscode eine benutzerdefinierte Codedatei mit Inhalt ähnlich dem folgenden Beispiel hinzu. In diesem Code wird der an das Dokument angefügte `ValidationController` verwendet. Dieser Controller zeigt die Validierungs Fehler in der Visual Studio-Fehlerliste an.
 
 ```csharp
 using System;
@@ -336,7 +336,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > Stellen Sie sicher, dass der Benutzer weiß, dass die Änderung angepasst oder zurückgesetzt wurde. Verwenden Sie beispielsweise `System.Windows.Forms.MessageBox.Show("message").`.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Ereignishandler propagieren Änderungen außerhalb des Modells](../modeling/event-handlers-propagate-changes-outside-the-model.md)

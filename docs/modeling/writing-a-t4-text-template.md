@@ -10,15 +10,15 @@ helpviewer_keywords:
 - text templates, functions that generate text
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: eb988854cb1bc049e024bf204553dd715e652a4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923989"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 Eine Textvorlage enthält den Text, der aus ihr generiert wird. Eine Vorlage, die eine Webseite erstellt, enthält z \<html> . b. "..." und alle anderen Standardteile einer HTML-Seite. In die Vorlage eingefügt werden *Kontroll Blöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
@@ -157,7 +157,7 @@ private int Square(int i)
  Weitere Informationen zu Kontroll Blöcken finden Sie unter [Text Vorlagen-Kontroll Blöcke](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Klassenfunktionsblöcke können Textblöcke enthalten
- Sie können eine Methode schreiben, durch die Text generiert wird. Zum Beispiel:
+ Sie können eine Methode schreiben, durch die Text generiert wird. Beispiel:
 
 ```
 List of Squares:
@@ -187,7 +187,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- Verwenden Sie absolute Pfadnamen oder standardmäßige Makronamen im Pfadnamen. Zum Beispiel:
+ Verwenden Sie absolute Pfadnamen oder standardmäßige Makronamen im Pfadnamen. Beispiel:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -268,7 +268,7 @@ Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. W
 ## <a name="editing-templates"></a>Bearbeiten von Vorlagen
  Spezialisierte Textvorlagen-Editoren können aus dem Onlinekatalog des Erweiterungs-Managers heruntergeladen werden. Klicken Sie **im Menü Extras** auf **Erweiterungs-Manager**. Klicken Sie auf **Online** Katalog, und verwenden Sie dann das Suchtool.
 
-## <a name="related-topics"></a>Zugehörige Themen
+## <a name="related-topics"></a>Verwandte Themen
 
 |Aufgabe|Thema|
 |-|-|

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 330a2a8f4173ddb22303064ee7f97ee025d05758
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924474"
 ---
 # <a name="understanding-the-dsl-code"></a>Grundlegendes zum DSL-Code
 
@@ -72,7 +72,7 @@ Drücken Sie **F5** , und experimentieren Sie, wenn Sie mit dieser Lösungs Vorl
 
  (Im Beispiel der Komponentenprojektmappe trägt einer der Verbindungs-Generatoren den Namen "ConnectionBuilder". Dies ist ein Zufall, da die Domänenbeziehung "Connection" genannt wurde.)
 
- Die Beziehung wird in der *Beziehungs* `Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Zum Beispiel:
+ Die Beziehung wird in der *Beziehungs* `Builder.Connect()` Methode erstellt. Die Standardversion überprüft, ob die Quell- und Zielmodellelemente akzeptiert werden können und instanziiert dann die Beziehung. Beispiel:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
