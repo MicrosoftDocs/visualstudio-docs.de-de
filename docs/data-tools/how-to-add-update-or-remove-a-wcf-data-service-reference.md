@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e6c289038c3f8cb9d1586ae4a1f7a84b563239f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8d728df5f8af5dff5a7ea2456e1d40d47ddc7f76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866891"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
 
@@ -51,13 +51,13 @@ Mit dem Knoten **verbundene Dienste** in **Projektmappen-Explorer** können Sie 
 
      Sie können auch die URL aus der **Adress** Liste auswählen, in der die vorherigen 15 URLs gespeichert sind, bei denen gültige Dienst Metadaten gefunden wurden.
 
-     Eine Statusanzeige wird angezeigt, wenn die Suche ausgeführt wird. Sie können die Suche jederzeit abbrechen, indem Sie auf " **Abbrechen** " klicken.
+     Eine Statusanzeige wird angezeigt, wenn die Suche ausgeführt wird. Sie können die Suche jederzeit abbrechen, indem Sie auf " **Abbrechen**" klicken.
 
 1. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
 
 1. Geben Sie im Feld **Namespace** den Namespace ein, der für den Verweis verwendet werden soll.
 
-1. Klicken Sie auf **OK** , um dem Projekt den Verweis hinzuzufügen.
+1. Klicken Sie auf **OK**, um dem Projekt den Verweis hinzuzufügen.
 
      Es wird ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der *app.config* Datei hinzugefügt.
 ::: moniker-end
@@ -80,7 +80,7 @@ Mit dem Knoten **verbundene Dienste** in **Projektmappen-Explorer** können Sie 
 
      Sie können auch die URL aus der **URI** -Liste auswählen, in der die vorherigen 15 URLs gespeichert sind, bei denen gültige Dienst Metadaten gefunden wurden.
 
-     Eine Statusanzeige wird angezeigt, wenn die Suche ausgeführt wird. Sie können die Suche jederzeit abbrechen, indem Sie auf " **Abbrechen** " klicken.
+     Eine Statusanzeige wird angezeigt, wenn die Suche ausgeführt wird. Sie können die Suche jederzeit abbrechen, indem Sie auf " **Abbrechen**" klicken.
 
 1. Erweitern Sie in der Liste **Dienste** den Knoten für den Dienst, den Sie verwenden möchten, und wählen Sie eine Entitätenmenge aus.
 
@@ -108,7 +108,7 @@ Mit dem Knoten **verbundene Dienste** in **Projektmappen-Explorer** können Sie 
 
 1. Geben Sie im Feld **Namespace** den Namespace ein, der für den Verweis verwendet werden soll.
 
-1. Klicken Sie auf **OK** , um dem Projekt den Verweis hinzuzufügen.
+1. Klicken Sie auf **OK**, um dem Projekt den Verweis hinzuzufügen.
 
     Ein Dienst Client (Proxy) generiert, und Metadaten, die den Dienst beschreiben, werden der *app.config* Datei hinzugefügt.
 ::: moniker-end
@@ -158,6 +158,6 @@ Wenn ein Dienst Verweis nicht mehr verwendet wird, können Sie ihn aus der Proje
     > [!NOTE]
     > Jeglicher Code, der auf den Dienst Verweis verweist, muss manuell entfernt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Windows Communication Foundation Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

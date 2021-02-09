@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ee06ef21be4076a1a0dee6319155144c468bafd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 52bd4f95160165ee67c0a35816d094238786bc38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866566"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 
@@ -35,7 +35,7 @@ Standardmäßig `DBDirect` werden Methoden auf einem TableAdapter erstellt, der 
 > [!NOTE]
 > Wenn Sie einen TableAdapter konfigurieren, muss die Haupt Abfrage genügend Informationen für die `DBDirect` zu erstellenden Methoden bereitstellen. Wenn ein TableAdapter z. b. so konfiguriert ist, dass Daten aus einer Tabelle abgefragt werden, für die keine Primärschlüssel Spalte definiert ist, werden keine `DBDirect` Methoden generiert.
 
-|TableAdapter-DBDirect-Methode|BESCHREIBUNG|
+|TableAdapter-DBDirect-Methode|Beschreibung|
 | - |-----------------|
 |`TableAdapter.Insert`|Fügt einer Datenbank neue Datensätze hinzu und ermöglicht es Ihnen, einzelne Spaltenwerte als Methoden Parameter zu übergeben.|
 |`TableAdapter.Update`|Aktualisiert vorhandene Datensätze in einer Datenbank. Die `Update` -Methode übernimmt die ursprünglichen und neuen Spaltenwerte als Methoden Parameter. Die ursprünglichen Werte werden verwendet, um den ursprünglichen Datensatz zu suchen, und die neuen Werte werden zum Aktualisieren dieses Datensatzes verwendet.<br /><br /> Die- `TableAdapter.Update` Methode wird auch verwendet, um Änderungen in einem Dataset an die Datenbank zurück zustimmen, indem ein <xref:System.Data.DataSet> , <xref:System.Data.DataTable> , <xref:System.Data.DataRow> oder ein Array von <xref:System.Data.DataRow> s als Methoden Parameter verwendet wird.|
@@ -78,6 +78,6 @@ Standardmäßig `DBDirect` werden Methoden auf einem TableAdapter erstellt, der 
 
 Sie müssen über die Berechtigung zum Ausführen der ausgewählten `INSERT` , `UPDATE` oder `DELETE` für die-Tabelle in der-Datenbank verfügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)

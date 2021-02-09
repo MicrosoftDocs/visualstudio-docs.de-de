@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 30f6d338b4e27677c14dfa4e5ff8793e67f4c6ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867112"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das die einfache Datenbindung unterstützt
 
@@ -83,7 +83,7 @@ Der erste Schritt besteht darin, eine **Windows Forms Anwendung** zu erstellen:
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **SimpleControlWalkthrough** , und wählen Sie dann **OK** aus.
+4. Nennen Sie das Projekt **SimpleControlWalkthrough**, und wählen Sie dann **OK** aus.
 
      Das Projekt **SimpleControlWalkthrough** wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.
 
@@ -95,7 +95,7 @@ In dieser exemplarischen Vorgehensweise wird ein einfaches Daten Bindungs Steuer
 
 2. Geben Sie **PhoneNumberBox** in den Bereich Name ein, und klicken Sie anschließend auf **Hinzufügen**.
 
-     Das **PhoneNumberBox** -Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
+     Das **PhoneNumberBox**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
 
 ## <a name="design-the-phonenumberbox-control"></a>Entwerfen des PhoneNumberBox-Steuer Elements
 
@@ -105,7 +105,7 @@ Diese exemplarische Vorgehensweise wird auf die vorhandene erweitert <xref:Syste
 
 2. Klicken Sie auf das Smarttag auf das soeben gezogene <xref:System.Windows.Forms.MaskedTextBox>-Objekt, und klicken Sie dann auf **Maske festlegen**.
 
-3. Wählen Sie **Telefonnummer** im Dialogfeld **Eingabeformat** aus, und klicken Sie auf **OK** , um die Maske festzulegen.
+3. Wählen Sie **Telefonnummer** im Dialogfeld **Eingabeformat** aus, und klicken Sie auf **OK**, um die Maske festzulegen.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Hinzufügen des erforderlichen Daten Bindungs Attributs
 
@@ -134,7 +134,7 @@ In diesem Schritt wird der Assistent zum **Konfigurieren von Datenquellen** verw
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-    - Klicken Sie auf **Neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
 5. Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.
 
@@ -154,13 +154,13 @@ Im **Datenquellen** Fenster können Sie das Steuerelement festlegen, das vor dem
 
 2. Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.
 
-3. Klicken Sie auf den Dropdownpfeil auf dem Knoten **Customers** , und wählen Sie **Details** aus der Steuerelementliste aus.
+3. Klicken Sie auf den Dropdownpfeil auf dem Knoten **Customers**, und wählen Sie **Details** aus der Steuerelementliste aus.
 
-4. Klicken Sie auf den Dropdownpfeil auf der Spalte **Phone** , und wählen Sie **Anpassen** aus.
+4. Klicken Sie auf den Dropdownpfeil auf der Spalte **Phone**, und wählen Sie **Anpassen** aus.
 
 5. Wählen Sie im Dialogfeld **Data UI Customization Options** (Optionen für die Anpassung der Datenbenutzeroberfläche) in der Liste **Zugeordnete Steuerelemente** den Eintrag **PhoneNumberBox** aus.
 
-6. Klicken Sie auf den Dropdownpfeil auf der Spalte **Phone** , und wählen Sie **PhoneNumberBox** aus.
+6. Klicken Sie auf den Dropdownpfeil auf der Spalte **Phone**, und wählen Sie **PhoneNumberBox** aus.
 
 ## <a name="add-controls-to-the-form"></a>Hinzufügen von Steuerelementen zu dem Formular
 
@@ -172,7 +172,7 @@ Auf dem Formular werden datengebundene Steuerelemente mit beschreibenden Bezeich
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-Drücken Sie **F5** , um die Anwendung auszuführen.
+Drücken Sie **F5**, um die Anwendung auszuführen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -182,7 +182,7 @@ Entsprechend den Anforderungen an Ihre Anwendung können Sie nach der Erstellung
 
 - Erstellen von Steuerelementen, die komplexere Datenbindungsszenarien unterstützen. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) , und [Erstellen eines Windows Forms Benutzer Steuer Elements, das die Datenbindung für die Suche unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

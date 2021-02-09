@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79e5c529c1aefb4777e174489fc8fd1ca95a4111
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b440e8c47afdec6e0b04b5f48a35e15fe48e1875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866800"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Vorgehensweise: Erstellen von LINQ to SQL-Klassen, die Tabellen und Ansichten zugeordnet sind (O/R-Designer)
 
@@ -34,7 +34,7 @@ Standardmäßig erstellt die [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecd
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>So erstellen Sie LINQ to SQL-Klassen, die Datenbanktabellen oder -ansichten zugeordnet sind
 
-1. Erweitern Sie unter **Server** oder im **Datenbank-Explorer** den Knoten **Tabellen** oder **Ansichten** , und suchen Sie die Datenbanktabelle oder -ansicht, die Sie in Ihrer Anwendung verwenden möchten.
+1. Erweitern Sie unter **Server** oder im **Datenbank-Explorer** den Knoten **Tabellen** oder **Ansichten**, und suchen Sie die Datenbanktabelle oder -ansicht, die Sie in Ihrer Anwendung verwenden möchten.
 
 2. Ziehen Sie die Tabelle oder Sicht auf den **O/R-Designer**.
 
@@ -46,24 +46,24 @@ Nachdem Sie Entitäts Klassen mit dem **O/R-Designer** erstellt haben, können S
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>So erstellen Sie eine Objektdatenquelle auf Grundlage von LINQ to SQL-Entitätsklassen
 
-1. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen** , um ein Projekt zu erstellen.
+1. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**, um ein Projekt zu erstellen.
 
 2. Um das Fenster **Datenquellen** zu öffnen, klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.
 
 3. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
-4. Klicken Sie auf der Seite **Datenquellentyp auswählen** auf **Objekt** , und klicken Sie dann auf **Weiter**.
+4. Klicken Sie auf der Seite **Datenquellentyp auswählen** auf **Objekt**, und klicken Sie dann auf **Weiter**.
 
 5. Erweitern Sie die Knoten, suchen und wählen Sie die Klasse aus.
 
     > [!NOTE]
     > Wenn die Klasse **Customer** nicht verfügbar ist, beenden Sie den Assistenten, erstellen Sie das Projekt, und führen Sie den Assistenten erneut aus.
 
-6. Klicken Sie auf **Fertig stellen** , um die Datenquelle zu erstellen, und fügen Sie die Entitätsklasse **Customer** zum Fenster **Datenquellen** hinzu.
+6. Klicken Sie auf **Fertig stellen**, um die Datenquelle zu erstellen, und fügen Sie die Entitätsklasse **Customer** zum Fenster **Datenquellen** hinzu.
 
 7. Ziehen Sie Elemente aus dem Fenster **Datenquellen** auf ein Formular.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

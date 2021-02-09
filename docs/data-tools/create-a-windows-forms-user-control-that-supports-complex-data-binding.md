@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Visual Studio], complex data binding
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 25bdda6a1b62f47c752a2975fa3acfd1379a470c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867147"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt
 
@@ -83,7 +83,7 @@ Da in dieser exemplarischen Vorgehensweise ein komplexes, Daten bindbares Steuer
 
 1. Geben Sie **ComplexDataGridView** in den Bereich **Name** ein, und klicken Sie anschließend auf **Hinzufügen**.
 
-    Das **ComplexDataGridView** -Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
+    Das **ComplexDataGridView**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
 
 ## <a name="design-the-complexdatagridview-control"></a>Entwerfen des ComplexDataGridView-Steuer Elements
 
@@ -93,7 +93,7 @@ Um dem Benutzer Steuerelement ein hinzuzufügen <xref:System.Windows.Forms.DataG
 
 Für komplexe Steuerelemente, die Datenbindung unterstützen, können Sie das <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> implementieren:
 
-1. Wechseln Sie für das **ComplexDataGridView** -Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** die Option **Code** aus.)
+1. Wechseln Sie für das **ComplexDataGridView**-Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** die Option **Code** aus.)
 
 1. Ersetzen Sie den Code in `ComplexDataGridView` durch folgenden Code:
 
@@ -116,7 +116,7 @@ Verwenden Sie den Assistenten zum **Konfigurieren von Datenquellen** , um eine D
 
    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-   - Klicken Sie auf **Neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+   - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
 5. Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.
 
@@ -136,7 +136,7 @@ Im **Datenquellen** Fenster können Sie das Steuerelement festlegen, das vor dem
 
 1. Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.
 
-1. Klicken Sie auf den Dropdownpfeil für den Knoten **Customers** , und wählen Sie **Anpassen**.
+1. Klicken Sie auf den Dropdownpfeil für den Knoten **Customers**, und wählen Sie **Anpassen**.
 
 1. Wählen Sie im Dialogfeld **Optionen für die Anpassung der Datenbenutzeroberfläche** in der Liste **Zugeordnete Steuerelemente** den Eintrag **ComplexDataGridView** aus.
 
@@ -148,7 +148,7 @@ Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-Drücken Sie **F5** , um die Anwendung auszuführen.
+Drücken Sie **F5**, um die Anwendung auszuführen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -158,7 +158,7 @@ Entsprechend den Anforderungen an Ihre Anwendung können Sie nach der Erstellung
 
 - Erstellen von Steuerelementen, die Nachschlageszenarien unterstützen. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms Benutzer Steuer Elements, das die Datenbindung für die Suche unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: bdbfba867fd1fa898ff376d3d1e60f33f58c32a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866592"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 
@@ -43,7 +43,7 @@ Wenn Sie Dataset-Tabellen an Steuerelemente auf einer Windows Form-oder XAML-Sei
 
 Wenn Sie mit TableAdapters vertraut sind, können Sie direkt zu einem der folgenden Themen springen:
 
-|Thema|BESCHREIBUNG|
+|Thema|Beschreibung|
 |-----------|-----------------|
 |[Einfügen neuer Datensätze in eine Datenbank](../data-tools/insert-new-records-into-a-database.md)|Ausführen von Aktualisierungen und Einfügungen mithilfe von TableAdapters oder Befehls Objekten|
 |[Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Ausführen von Updates mit TableAdapters|
@@ -127,7 +127,7 @@ Die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft eines <xref:System.Data.D
 
 In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.DataRowState>-Enumeration aufgeführt:
 
-|DataRowState-Wert|BESCHREIBUNG|
+|DataRowState-Wert|Beschreibung|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|Die Zeile wurde einer <xref:System.Data.DataRowCollection> als Element hinzugefügt. (Eine Zeile in diesem Zustand hat keine entsprechende ursprüngliche Version, da Sie nicht vorhanden war, als die letzte <xref:System.Data.DataRow.AcceptChanges%2A> Methode aufgerufen wurde).|
 |<xref:System.Data.DataRowState.Deleted>|Die Zeile wurde mit <xref:System.Data.DataRow.Delete%2A> eines <xref:System.Data.DataRow>-Objekts gelöscht.|
@@ -141,7 +141,7 @@ In Datasets werden mehrere Datensatzversionen verwaltet. Die <xref:System.Data.D
 
 In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.DataRowVersion>-Enumeration aufgeführt:
 
-|DataRowVersion-Wert|BESCHREIBUNG|
+|DataRowVersion-Wert|Beschreibung|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|Die aktuelle Version eines Datensatzes enthält alle Änderungen, die seit dem letzten Aufruf des Datensatzes durchgeführt wurden <xref:System.Data.DataRow.AcceptChanges%2A> . Falls die Zeile gelöscht wurde, ist keine aktuelle Version vorhanden.|
 |<xref:System.Data.DataRowVersion.Default>|Der Standardwert eines Datensatzes, wie er durch das Dataset-Schema oder die Datenquelle definiert wurde.|
@@ -274,7 +274,7 @@ In einer Update-Anweisung müssen Sie sowohl die neuen Werte (die in den Datensa
 > [!NOTE]
 > Sie können auch selbst Werte für die `Parameters`-Auflistung im Code festlegen. Dies erfolgt in der Regel in einem Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis des Datenadapters.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Erstellen und Konfigurieren eines TableAdapters](create-and-configure-tableadapters.md)
