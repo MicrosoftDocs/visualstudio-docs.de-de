@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f94a93e8797922ef7629853e8261383984bb3ef9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885624"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Gewusst wie: Definieren eines SharePoint-Projekt Elementtyps
   Definieren Sie einen Projekt Elementtyp, wenn Sie ein benutzerdefiniertes SharePoint-Projekt Element erstellen möchten. Weitere Informationen finden Sie unter [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md).

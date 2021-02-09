@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d53117456318039837a371f68745b4688cbbd087
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884701"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Kommentieren von Code in einem Legacy Sprachdienst
 Programmiersprachen bieten in der Regel die Möglichkeit, den Code zu kommentieren oder zu kommentieren. Ein Kommentar ist ein Textabschnitt, der zusätzliche Informationen über den Code bereitstellt, aber während der Kompilierung oder Interpretation ignoriert wird.
@@ -63,6 +63,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Funktionen von Legacy Sprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registrieren eines Legacy sprach Dienstanbieter](../../extensibility/internals/registering-a-legacy-language-service1.md)

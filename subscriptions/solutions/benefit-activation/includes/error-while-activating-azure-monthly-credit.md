@@ -1,5 +1,5 @@
 ---
-title: Wenn ich versuche, meine monatliche Azure-Gutschrift zu aktivieren, tritt ein Fehler auf.
+title: Fehler beim Aktivieren der monatlichen Azure-Gutschrift
 description: Wenn ich versuche, die in meinem Visual Studio-Abonnement enthaltene monatliche Azure-Gutschrift zu aktivieren, tritt ein Fehler auf.
 ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 5670ff0fd3ac14a2b7b26f3098c9ed1060a4efac
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 91014bf9e942d874316cf74b9631d23426a61ea1
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915983"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541182"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>Wenn ich versuche, meine monatliche Azure-Gutschrift zu aktivieren, tritt ein Fehler auf.
 

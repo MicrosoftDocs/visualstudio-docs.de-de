@@ -19,15 +19,15 @@ helpviewer_keywords:
 - columns [Office development in Visual Studio], ungrouping
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: eaa0bbcc2c26a36e43e862cbe5a8f117c2a1fb26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885416"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Gewusst wie: Programm gesteuertes Gruppieren von Zeilen in einem Arbeitsblatt
   Sie können eine oder mehrere ganze Zeilen gruppieren. Um eine Gruppe in einem Arbeitsblatt zu erstellen, verwenden Sie ein- <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement oder ein System eigenes Excel-Bereichs Objekt.

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884688"
 ---
 # <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
 Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können mehrere Konfigurationen unterstützen, die erstellt, gedebuggten, ausgeführt und/oder bereitgestellt werden können. Eine Konfiguration ist ein Buildtyp, der mit einem benannten Satz von Eigenschaften beschrieben wird, in der Regel compilerswitches und Dateispeicher Orte. Standardmäßig enthalten neue Lösungen zwei Konfigurationen: *Debug* und *Release*. Diese Konfigurationen können mithilfe ihrer Standardeinstellungen angewendet oder geändert werden, um Ihre spezifischen Anforderungen an Projektmappen und/oder Projektanforderungen zu erfüllen. Einige Pakete können auf zwei Arten erstellt werden: als ActiveX-Editor oder als direkte Komponente. Projekte müssen jedoch nicht mehrere Konfigurationen unterstützen. Wenn nur eine Konfiguration verfügbar ist, wird diese Konfiguration allen Lösungs Konfigurationen zugeordnet.
@@ -35,7 +35,7 @@ Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können
 |------------------------|----------------------|----------------------|
 |*Debuggen*|\<Debug Win32 settings>|\<Debug Win64 settings>|
 |*Release*|\<Release Win32 settings>|\<Release Win64 settings>|
-|*MyConfig*|N/V|\<MyConfig Win64 settings>|
+|*MyConfig*|–|\<MyConfig Win64 settings>|
 
 > [!NOTE]
 > Sie können keine *myconfig* -Projektmappenkonfiguration erstellen, die eine Win32-Plattform ausschließt, es sei denn, das Projekt, auf das Sie abzielen, unterstützt
@@ -70,7 +70,7 @@ Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können
 
   Weitere Informationen zu den Schnittstellen von Konfigurationsobjekten und Konfigurations Anbieter Objekten im vorherigen Diagramm finden Sie unter [Project Configuration Object](../../extensibility/internals/project-configuration-object.md). Außerdem bietet die [Projekt Konfiguration für die Erstellung](../../extensibility/internals/project-configuration-for-building.md) Weitere Informationen zum Konfigurations-Generator und zum Erstellen von Abhängigkeits Objekt-Schnittstellen, und die [Projekt Konfiguration zum Verwalten der Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md) beschreibt die Schnittstellen, die an den Konfigurations Bereitsteller und die Bereitstellungs Abhängigkeits Objekte angehängt sind Zum Schluss beschreibt die [Projekt Konfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md) die Schnittstellen der Ausgabe Gruppe und der Ausgabe Objekte sowie die Verwendung von Eigenschaften Seiten, um Konfigurations abhängige Eigenschaften anzuzeigen und festzulegen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>
 - [Projekt Konfiguration zum aufbauen](../../extensibility/internals/project-configuration-for-building.md)
 - [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)

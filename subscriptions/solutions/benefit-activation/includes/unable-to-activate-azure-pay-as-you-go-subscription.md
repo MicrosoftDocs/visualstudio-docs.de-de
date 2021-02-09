@@ -1,5 +1,5 @@
 ---
-title: Ich kann mein Azure Dev/Test Pay-As-You-Go-Abonnement nicht aktivieren.
+title: Aktivieren des Azure Dev/Test Pay-As-You-Go-Abonnement nicht möglich
 description: Ich kann das in meinem Visual Studio-Abonnement enthaltene Azure Dev/Test Pay-As-You-Go-Abonnement nicht aktivieren.
 ms.topic: include
 ms.assetid: 6ad8bb6e-e571-450e-860b-acf1e78921d7
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure, dev-test
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 2a6e02721512d9780cd94d2d9601fe7099eac956
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 83907b80a67193230a31d9bad155ce72bd02a373
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147338"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541160"
 ---
 ## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>Ich kann mein Azure Dev/Test Pay-As-You-Go-Abonnement nicht aktivieren.
 

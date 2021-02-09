@@ -1,5 +1,5 @@
 ---
-title: Die Seite kann nicht angezeigt werden.
+title: Die Seite kann nicht angezeigt werden
 description: Die Seite kann im Visual Studio-Abonnementportal nicht angezeigt werden.
 ms.topic: include
 ms.assetid: aef07dc7-29cc-406e-9373-0b808facb35b
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: portal-error
 subscription.type: vl, cloud, retail, partner
 sap.id: 8250612f-7446-20c5-7473-16d089f2280d
-ms.openlocfilehash: cce93705509278c62db011db1f8cab60d6207b21
-ms.sourcegitcommit: cfc984316ded3396db6722ad90f9378dfb7661ff
+ms.openlocfilehash: d8646c451d857446f9b20254d3716b5582fc3963
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98024216"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541150"
 ---
 ## <a name="were-sorry-to-hear-that-youre-experiencing-an-issue-with-a-page-not-being-displayed-while-using-the-visual-studio-subscriptions-portal"></a>Es tut uns leid zu hören, dass eine Seite im Visual Studio-Abonnementportal nicht angezeigt werden kann. 
 

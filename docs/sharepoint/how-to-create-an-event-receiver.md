@@ -16,17 +16,17 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849882"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885702"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Vorgehensweise: Erstellen eines Ereignis Empfängers
+# <a name="how-to-create-an-event-receiver"></a>Vorgehensweise: Erstellen eines Ereignisempfängers
   Durch das Erstellen von *Ereignis Empfängern* können Sie Antworten, wenn ein Benutzer mit SharePoint-Elementen, z. b. Listen oder Listenelementen, interagiert. Beispielsweise kann der Code in einem Ereignis Empfänger ausgelöst werden, wenn ein Benutzer den Kalender ändert oder einen Namen aus einer Kontaktliste löscht. In diesem Thema erfahren Sie, wie Sie einen Ereignis Empfänger zu einer Listen Instanz hinzufügen.
 
  Um diese Schritte ausführen zu können, müssen die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Windows-und SharePoint-Editionen installiert und unterstützt werden. Da für dieses Beispiel ein SharePoint-Projekt erforderlich ist, müssen Sie auch das Verfahren im Thema Exemplarische Vorgehensweise [: Erstellen einer Websites palte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)abgeschlossen haben.
@@ -40,7 +40,7 @@ ms.locfileid: "94849882"
 
 2. Wählen Sie in **Projektmappen-Explorer** den SharePoint-Projekt Knoten aus, der als " **Clinic**" bezeichnet wird.
 
-3. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+3. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 4. Erweitern Sie unter **Visual c#** oder **Visual Basic** den Knoten **SharePoint** , und wählen Sie dann das Element **2010** aus.
 

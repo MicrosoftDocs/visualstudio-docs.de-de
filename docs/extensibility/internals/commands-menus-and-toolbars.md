@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad763e748fc20a9704df48b17a5d3d8d40c3883c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 49ae9c27b27a1b3e32338521315007903d9e6825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884766"
 ---
 # <a name="commands-menus-and-toolbars"></a>Befehle, Menüs und Symbolleisten
 Mit Menüs und Symbolleisten können Benutzer auf Befehle in Ihrem VSPackage zugreifen. Befehle sind Funktionen, mit denen Aufgaben wie das Drucken eines Dokuments, das Aktualisieren einer Ansicht oder das Erstellen einer neuen Datei ausgeführt werden können. Menüs und Symbolleisten stellen eine praktische Methode für die grafische Darstellung von Befehlen für Benutzer dar. In der Regel sind verwandte Befehle zusammen im gleichen Menü oder auf derselben Symbolleiste gruppiert.

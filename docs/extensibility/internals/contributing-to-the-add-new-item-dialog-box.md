@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94a13890f0b5e60b1da204b89a01c1cadc6d00c4
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e3fdc5705cad0ec696a520350042d7f18aaec146
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884636"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Mitwirken zum Dialogfeld "Neues Element hinzufügen"
 Ein Projekt Untertyp kann ein neues Element Verzeichnis für das Dialogfeld **Neues Element hinzufügen** bereitstellen, indem Sie unter dem **Projekt** Registrierungs Unterschlüssel die Option **Element Vorlagen hinzufügen** registrieren.
@@ -43,6 +43,6 @@ Ein Projekt Untertyp kann ein neues Element Verzeichnis für das Dialogfeld **Ne
 
  Sie können Elemente im Dialogfeld **Neues Element hinzufügen** filtern, indem Sie die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> Schnittstelle für das Projekt Untertyp-Aggregator-Objekt implementieren. Beispielsweise kann ein Projekt Untertyp, der ein Datenbankprojekt durch das aggregierten eines [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekts implementiert, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bestimmten Elemente im Dialogfeld **Neues Element hinzufügen** filtern, indem Sie Filter implementiert und wiederum Datenbankprojekt spezifische Elemente hinzufügen, indem Sie in unterstützt `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> . Weitere Informationen zum Filtern und Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzu** fügen finden [Sie unter Hinzufügen von Elementen zum Dialogfeld "Neues Element hinzu](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)fügen".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [CATIDs für Objekte, die in der Regel zum Erweitern von Projekten verwendet werden](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

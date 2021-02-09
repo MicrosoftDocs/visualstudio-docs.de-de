@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a1ba70336b54ce2ce4c4df6678984db9de8bf8
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 49fd3ca9b625b9dec179ec37603e875cfdd296c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885130"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Vorgehensweise: Abrufen von Informationen zu Abfragezeichenfolgen in einer ClickOnce-Onlineanwendung
 Die *Abfragezeichenfolge* ist der Teil einer URL, die mit einem Fragezeichen (?) beginnt und die willkürliche Informationen im Format *name=value* enthält. Angenommen, Sie verfügen über eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mit dem Namen `WindowsApp1` , die Sie auf `servername`hosten, und Sie möchten einen Wert für die Variable `username` bei Anwendungsstart übergeben. Die URL könnte folgendermaßen aussehen:

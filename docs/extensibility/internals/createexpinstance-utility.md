@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 7959c0047fee87c92e5359b4f8f2918a7e9f27de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884584"
 ---
 # <a name="createexpinstance-utility"></a>Das Hilfsprogramm "| ateexpinstance
 Verwenden Sie das Hilfsprogramm "| **ateexpinstance** ", um eine experimentelle Instanz von Visual Studio zu erstellen, zurückzusetzen oder zu löschen. Sie können die experimentelle Instanz verwenden, um Visual Studio-Erweiterungen zu Debuggen und zu testen, ohne das zugrunde liegende Produkt ändern
@@ -43,7 +43,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **/RootSuffix** Das Suffix, das an den Namen des experimentellen Instanzverzeichnisses angehängt werden soll.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Wenn Sie an einer Visual Studio-Erweiterung arbeiten, können Sie F5 drücken, um die standardmäßige experimentelle Instanz zu öffnen und die aktuelle Erweiterung zu installieren. Wenn keine experimentelle Instanz verfügbar ist, erstellt Visual Studio eine mit den Standardeinstellungen.
 
  Der Standard Speicherort der experimentellen Instanz hängt von der Versionsnummer von Visual Studio ab. Für Visual Studio 2015 lautet der Speicherort beispielsweise *%LocalAppData%\microsoft\visualstudio\14.0exp \\*. Alle Dateien im Verzeichnis Speicherort werden als Teil dieser Instanz betrachtet. Alle zusätzlichen experimentellen Instanzen werden nicht von Visual Studio geladen, es sei denn, der Verzeichnisname wird in den Standard Speicherort geändert.
@@ -56,5 +56,5 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **CreateExpInstance.exe/Reset/VSInstance = 14,0/RootSuffix = Exp**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [VSPackages](../../extensibility/internals/vspackages.md)

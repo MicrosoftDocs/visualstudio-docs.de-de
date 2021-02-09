@@ -1,5 +1,5 @@
 ---
-title: Ich kann meinen EMS-Vorteil (Enterprise Mobility + Security) nicht aktivieren.
+title: Aktivieren des EMS-Vorteils (Enterprise Mobility + Security) nicht möglich
 description: Ich kann den in meinem Visual Studio-Abonnement enthaltenen EMS-Vorteil (Enterprise Mobility + Security) nicht aktivieren.
 ms.topic: include
 ms.assetid: 104e6ef4-5bb1-4f26-af7c-a6925e3665c7
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 1d9d2aa2d8b86fc6a2481955d8d06967637415ab
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147627"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541096"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>Ich kann meinen EMS-Vorteil (Enterprise Mobility + Security) nicht aktivieren.
 

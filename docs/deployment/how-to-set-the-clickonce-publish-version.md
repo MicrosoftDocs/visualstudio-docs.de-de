@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 06f15504-6385-40a6-b01d-cd90ca36dc73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 100c3cd12a3011d35445ac885333802e28b4a92f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 71d74d8b16e058b150187a231a1f3a7323c0c612
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885026"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Vorgehensweise: Festlegen der ClickOnce-Veröffentlichungsversion
 Die- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` Eigenschaft bestimmt, ob die Anwendung, die Sie veröffentlichen, als Update behandelt wird. Jedes Mal, wenn die Version erhöht wird, wird die Anwendung als Update veröffentlicht.
@@ -39,7 +39,7 @@ Die- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish 
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
-3. Erhöhen Sie im Feld **Veröffentlichungs Version** die Versionsnummern **Major** , **Minor** , **Build** oder **Revision** .
+3. Erhöhen Sie im Feld **Veröffentlichungs Version** die Versionsnummern **Major**, **Minor**, **Build** oder **Revision** .
 
     > [!NOTE]
     > Sie sollten nie eine Versionsnummer Dekrement. Dies kann zu unvorhersehbarem Update Verhalten führen.
