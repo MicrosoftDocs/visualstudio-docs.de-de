@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21e0e35b43fc3b94a8d029c97f56bd573ebac95f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883310"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Gewusst wie: Verwenden von Assistenten mit Projektvorlagen
 
@@ -40,7 +40,7 @@ Sie beginnen mit dem Erstellen einer benutzerdefinierten Vorlage mit dem Projekt
    > [!NOTE]
    > Möglicherweise werden Sie aufgefordert, das Visual Studio SDK zu installieren. Weitere Informationen finden Sie unter [Installieren des Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Fügen Sie ein neues VSIX-Projekt in derselben Projekt Mappe wie das Projektvorlagen Projekt hinzu (Wählen Sie in **Projektmappen-Explorer** den Knoten Projekt Mappe aus, klicken Sie mit der rechten Maustaste, und wählen Sie neues Projekt **Hinzufügen**  >  **New Project** aus, und suchen Sie nach "VSIX". Nennen Sie Sie **myprojectwizard.**
+2. Fügen Sie ein neues VSIX-Projekt in derselben Projekt Mappe wie das Projektvorlagen Projekt hinzu (Wählen Sie in **Projektmappen-Explorer** den Knoten Projekt Mappe aus, klicken Sie mit der rechten Maustaste, und wählen Sie neues Projekt **Hinzufügen**  >   aus, und suchen Sie nach "VSIX". Nennen Sie Sie **myprojectwizard.**
 
 3. Legen Sie das VSIX-Projekt als Startprojekt fest. Wählen Sie in **Projektmappen-Explorer** den Knoten VSIX-Projekt aus, klicken Sie mit der rechten Maustaste, und wählen Sie **als Startprojekt festlegen** aus.
 
@@ -60,7 +60,7 @@ In diesem Verfahren wird gezeigt, wie Sie einen benutzerdefinierten Assistenten 
 
 1. Richten Sie das VSIX-Projekt ein, damit eine Assembly erstellt werden kann.
 
-2. Wählen Sie in **Projektmappen-Explorer** den Knoten VSIX-Projekt aus. Unten **Projektmappen-Explorer** sollte das Fenster **Eigenschaften** angezeigt werden. Wenn dies nicht der Fall ist **View**, wählen Sie  >  **Eigenschaften Fenster** anzeigen aus, oder drücken Sie **F4**. Wählen Sie im Fenster **Eigenschaften** die folgenden Felder aus `true` :
+2. Wählen Sie in **Projektmappen-Explorer** den Knoten VSIX-Projekt aus. Unten **Projektmappen-Explorer** sollte das Fenster **Eigenschaften** angezeigt werden. Wenn dies nicht der Fall ist , wählen Sie  >  **Eigenschaften Fenster** anzeigen aus, oder drücken Sie **F4**. Wählen Sie im Fenster **Eigenschaften** die folgenden Felder aus `true` :
 
    - **Assembly in VSIX-Container einschließen**
 

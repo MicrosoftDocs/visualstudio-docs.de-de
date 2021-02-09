@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 074f5b8a3ed31587b86b172ad2da000b7b81e9c3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4244fb83d4792786baeb99693dc0fee04624d37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882725"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Gewusst wie: Hinzufügen eines Kontextmenü Elements zu SharePoint-Projekten
   Sie können einem SharePoint-Projekt ein Kontextmenü Element hinzufügen. Das Menü Element wird angezeigt, wenn ein Benutzer mit der rechten Maustaste auf einen Projekt Knoten in **Projektmappen-Explorer** klickt.
@@ -53,7 +53,7 @@ ms.locfileid: "94850064"
 ## <a name="deploy-the-extension"></a>Bereitstellen der Erweiterung
  Zum Bereitstellen der Erweiterung erstellen [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sie ein Erweiterungspaket (VSIX) für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von SharePoint-Projekten](../sharepoint/extending-sharepoint-projects.md)
 - [Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

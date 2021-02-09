@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 600408231e5085009e5edc546535ca8e5110fc6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882556"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblys in der Visual Studio-Tools für Office-Laufzeit
   Wenn Sie ein Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] -Assemblys hinzu, die für den Projekttyp und das Ziel-.NET Framework des Projekts verwendet werden. In den Office-Erweiterungen für .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]und [!INCLUDE[net_v45](includes/net-v45-md.md)]sind verschiedene Assemblys vorhanden. Weitere Informationen zu den Office-Erweiterungen finden Sie unter [Visual Studio-Tools for Office Runtime Overview](visual-studio-tools-for-office-runtime-overview.md).
@@ -28,7 +28,7 @@ ms.locfileid: "96848299"
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-net_v45"></a>Assemblys in den Office-Erweiterungen für die .NET Framework 4 und die [!INCLUDE[net_v45](includes/net-v45-md.md)]
  In der folgenden Tabelle sind die Assemblys aufgeführt, die in Office-Erweiterungen für [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] und [!INCLUDE[net_v45](includes/net-v45-md.md)]enthalten sind. Dokumentation zu den Namespaces und Typen in diesen Assemblys finden Sie unter [verwaltete Referenz &#40;Office-Entwicklung in Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md).
 
-|Assemblyname|BESCHREIBUNG|
+|Assemblyname|Beschreibung|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.dll|Stellt folgende Typen bereit:<br /><br /> -Typen zum Erstellen von Menü Band Anpassungen und Smarttags. **Hinweis:**      Smarttags sind in [!INCLUDE[Excel_14_short](includes/excel-14-short-md.md)] und veraltet [!INCLUDE[Word_14_short](includes/word-14-short-md.md)] .<br />-Typen zum Erstellen von Aktionsbereichen in Anpassungen auf Dokument Ebene und benutzerdefinierten Aufgabenbereichen in VSTO-Add-Ins.|
 |Microsoft.Office.Tools.Excel.dll|Stellt Schnittstellen bereit, die Hostelemente und Hoststeuerelemente für Excel-Projekte und unterstützende Typen darstellen. Weitere Informationen finden Sie unter [Automatisieren von Excel mithilfe von erweiterten Objekten](automating-excel-by-using-extended-objects.md).|
@@ -41,7 +41,7 @@ ms.locfileid: "96848299"
 
  Projekte, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](includes/net-v45-md.md)] abzielen, verweisen auch auf die folgenden Assemblys. Diese Assemblys sind nicht Teil der verteilbaren [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] . Vielmehr handelt es sich um abhängige Assemblys, die mit Ihrer Lösung bereitgestellt werden müssen. Standardmäßig werden sie in den Ausgabeordner für die Erstellung für das Projekt kopiert (die Eigenschaft **Lokale Kopie** für diese Assemblys wird auf **True** festgelegt). Wenn Sie das Projekt mithilfe von ClickOnce bereitstellen, sind diese Assemblys im generierten Paket enthalten.
 
-|Assemblyname|BESCHREIBUNG|
+|Assemblyname|Beschreibung|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.v4.0.Utilities.dll|Stellt die Basisklassen für die generierte `ThisAddIn` -Klasse in VSTO-Add-In-Projekten und die generierte Menübandklasse in allen Projekten bereit.|
 |Microsoft.Office.Tools.Excel.v4.0.Utilities.dll|Stellt folgende Typen bereit:<br /><br /> -Basisklassen für die generierten- `ThisWorkbook` und- `Sheet` Klassen in Projekten auf Dokument Ebene für Excel.<br />-Windows Forms Steuerelemente, die Sie für Arbeitsblätter in Excel-Projekten verwenden können.|
@@ -51,7 +51,7 @@ ms.locfileid: "96848299"
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Assemblys in den Office-Erweiterungen für den .NET Framework 3,5
  In der folgenden Tabelle sind die Assemblys aufgeführt, die in den Office-Erweiterungen für .NET Framework 3.5. enthalten sind. Dokumentation zu den Namespaces und Klassen in diesen Assemblys finden Sie im folgenden Referenz Abschnitt in der Visual Studio 2008-Dokumentation: [http://go.microsoft.com/fwlink/?LinkId=160658](managed-reference-office-development-in-visual-studio.md) .
 
-|Assemblyname|BESCHREIBUNG|
+|Assemblyname|Beschreibung|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.v9.0.dll|Stellt folgende Typen bereit:<br /><br /> -Die Microsoft. Office. Tools. AddIn-Basisklasse für VSTO-Add-Ins.<br />-Klassen zum Erstellen von Menü Band Anpassungen und Smarttags. **Hinweis:**      Smarttags sind in [!INCLUDE[Excel_14_short](includes/excel-14-short-md.md)] und veraltet [!INCLUDE[Word_14_short](includes/word-14-short-md.md)] .<br />-Klassen zum Erstellen von Aktionsbereichen in Anpassungen auf Dokument Ebene und benutzerdefinierten Aufgabenbereichen in VSTO-Add-Ins.|
 |Microsoft.Office.Tools.Excel.v9.0.dll|Stellt Hostelemente und Hoststeuerelemente für Excel-Lösungen bereit. Weitere Informationen finden Sie unter [Automatisieren von Excel mithilfe von erweiterten Objekten](automating-excel-by-using-extended-objects.md).|
@@ -63,6 +63,6 @@ ms.locfileid: "96848299"
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Stellt folgende Typen bereit:<br /><br /> -Die- <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse, die Sie zum programmgesteuerten Anfügen von Anpassungsassemblys an Dokumente und zum Zugriff auf die zwischengespeicherten Daten in Dokumenten verwenden können. Weitere Informationen finden Sie unter [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />: Mehrere Klassen, die die Hierarchie der zwischengespeicherten Daten in einer Anpassung auf Dokument Ebene darstellen. Weitere Informationen finden Sie unter [zugreifen auf Daten in Dokumenten auf dem Server](accessing-data-in-documents-on-the-server.md).|
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Stellt folgende Typen bereit:<br /><br /> -Die Klassen "Microsoft. VisualStudio. Tools. Office. Runtime. Security. AddInSecurityEntry" und "Microsoft. VisualStudio. Tools. Office. Runtime. Security. UserInclusionList", die Sie verwenden können, um Benutzer Aufnahme Listeneinträge zu erstellen, um Office-Projektmappen, die auf .NET Framework 3,5 abzielen, eine Vertrauensstellung zu gewähren.<br />-Andere Typen, die Teil der Visual Studio-Tools für die Office-Lauf Zeit Infrastruktur sind und nicht für die direkte Verwendung im Code vorgesehen sind.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Visual Studio-Tools für Office-Laufzeit](visual-studio-tools-for-office-runtime-overview.md)
 - [Visual Studio-Tools für Installationsszenarien für Office-Runtime](visual-studio-tools-for-office-runtime-installation-scenarios.md)

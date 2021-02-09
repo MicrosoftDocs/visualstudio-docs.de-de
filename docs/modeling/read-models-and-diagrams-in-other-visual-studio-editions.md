@@ -9,15 +9,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a8049471e9e172496381df016c6155410f3bc244
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882933"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
 
@@ -57,7 +57,7 @@ Wenn Sie ein Modell und seine Diagramme in einer Version von Visual Studio öff
 
 Sie können diese Änderungen speichern. Wenn Sie die Änderungen für andere Benutzer sichtbar machen möchten, müssen Sie mindestens die aktualisierten **Layoutdateien** senden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)

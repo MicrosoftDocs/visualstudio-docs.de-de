@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 237cd28bffece4517e80b979602ac8d2ed357aa2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882686"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Gewusst wie: Hinzufügen einer bestimmten Finder-Methode
   Sie können eine einzelne Entitäts Instanz zurückgeben, indem Sie eine *bestimmte Finder* -Methode erstellen. Der Business Data Connectivity (BDC)-Dienst führt die spezifische Finder-Methode aus, wenn ein Benutzer eine Entität in einem Geschäftsdaten-Webpart oder einer externen Liste auswählt. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -35,7 +35,7 @@ ms.locfileid: "94849727"
 
     Weitere Informationen zum Hinzufügen einer Entität zum **BDC-Designer** in Visual Studio finden Sie unter Gewusst [wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Wählen Sie in der Menüleiste **View** die Option  >  **Weitere Fenster** anzeigen, **Details der BDC-Methode** aus.
+2. Wählen Sie in der Menüleiste die Option  >  **Weitere Fenster** anzeigen, **Details der BDC-Methode** aus.
 
     Das Fenster **BDC-Methoden Details** wird geöffnet. Weitere Informationen zu diesem Fenster finden Sie unter [Übersicht über die Entwurfs Tools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -87,7 +87,7 @@ ms.locfileid: "94849727"
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)
 - [Gewusst wie: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)
