@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e9509d7bc0f8141b01ed1a0a600fa5d77a6d6916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839375"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage-Element (Visual Studio-Vorlagen)
 Gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
@@ -55,7 +55,7 @@ Gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Ne
 
  Der Text muss entweder `true` oder lauten `false` und gibt an, ob das Kontrollkästchen **Master Seite auswählen** im Dialogfeld **Neues Element hinzufügen** aktiviert ist.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `SupportsMasterPage` ist ein optionales Element. Standardwert: `false`.
 
  Das- `SupportsMasterPage` Element ist nur für Webelement Vorlagen verfügbar.
