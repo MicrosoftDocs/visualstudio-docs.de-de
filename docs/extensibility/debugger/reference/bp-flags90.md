@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95992d32df6b05c182b5b0ca505bc288294e282c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923225"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
 Listet gültige Werte für optionale Flags auf. Die optionalen Flags können verwendet werden, um zusätzliche Informationen anzugeben, wenn Sie einen Haltepunkt festlegen. Diese Enumeration erweitert die [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) Enumeration.
@@ -65,7 +65,7 @@ Gibt an, dass der Breakpoint von der Debug-Engine verarbeitet werden soll, dass 
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
 Wird von der systemeigenen Debug-Engine verwendet, um zu bestimmen, ob der Schritt Zustand gelöscht werden soll. Dies unterscheidet sich von BP90_FLAG_DONT_STOP, da BP90_FLAG_DONT_STOP nicht festgelegt ist, wenn der Ablauf Verfolgungs Punkt ein Makro ausführt.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 Header: Msdbg90. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

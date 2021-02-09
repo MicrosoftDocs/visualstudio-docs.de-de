@@ -8,21 +8,21 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff49c1950e81098633fab92ffbbdf25020945a1e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 2697e3d17e289297bcad57155c1c9ea6f1880acc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922716"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator
 Die folgenden Prozeduren veranschaulichen, wie ein Klick auf eine Form oder einen symboldecorator abgefangen wird. Sie können Klicks, Doppelklicks, Drags und andere Gesten abfangen und das Element dann antworten.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>So fangen Sie Klicks auf Formen ab
- Schreiben Sie im DSL-Projekt in einer Code Datei, die von den generierten Code Dateien getrennt ist, eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie `OnDoubleClick()` oder eine der anderen Methoden mit einem Namen, der mit beginnt `On...` . Zum Beispiel:
+ Schreiben Sie im DSL-Projekt in einer Code Datei, die von den generierten Code Dateien getrennt ist, eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie `OnDoubleClick()` oder eine der anderen Methoden mit einem Namen, der mit beginnt `On...` . Beispiel:
 
 ```csharp
 public partial class MyShape // change
@@ -229,7 +229,7 @@ namespace Company.CompartmentDrag
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
+ /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
  /// </summary>
  public partial class ClassShape
  {
@@ -395,7 +395,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md)
 - [Eigenschaften von Decorators](../modeling/properties-of-decorators.md)

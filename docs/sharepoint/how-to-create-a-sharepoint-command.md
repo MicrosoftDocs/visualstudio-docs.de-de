@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923351"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Vorgehensweise: Erstellen eines SharePoint-Befehls
   Wenn Sie das Server Objektmodell in einer SharePoint-Tools-Erweiterung verwenden möchten, müssen Sie einen benutzerdefinierten *SharePoint-Befehl* erstellen, um die API aufzurufen. Sie definieren den SharePoint-Befehl in einer Assembly, die das Server Objektmodell direkt abrufen kann.
@@ -79,7 +79,7 @@ ms.locfileid: "94850701"
 ## <a name="deploying-the-command"></a>Bereitstellen des Befehls
  Zum Bereitstellen des Befehls fügen Sie die befehlsassembly in das gleiche [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (*VSIX*) mit der Erweiterungsassembly ein, die den Befehl verwendet. Außerdem müssen Sie in der Datei Extension. vsixmanifest einen Eintrag für die befehlsassembly hinzufügen. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Vorgehensweise: Ausführen eines SharePoint-Befehls](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
