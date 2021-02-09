@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925829"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Schema Referenz für das Visual Studio-Vorlagen Manifest
 Dieses Schema beschreibt das Format der *vstman*-Dateien (Visual Studio-Vorlagen Manifest), die für Visual Studio-Projekt-oder-Element Vorlagen generiert werden. Das Schema beschreibt auch den Speicherort und andere relevante Informationen zur Vorlage.
@@ -32,7 +32,7 @@ Dieses Schema beschreibt das Format der *vstman*-Dateien (Visual Studio-Vorlagen
 
 - **Version**: eine Zeichenfolge, die die Version des Vorlagen Manifests darstellt. Erforderlich.
 
-- **Locale**: eine Zeichenfolge, die das Gebiets Schema oder die Gebiets Schemas des Vorlagen Manifests darstellt. Der Gebiets Schema Wert gilt für alle Vorlagen. Sie müssen für jedes Gebiets Schema ein separates Manifest verwenden. Optional.
+- **Locale**: eine Zeichenfolge, die das Gebiets Schema oder die Gebiets Schemas des Vorlagen Manifests darstellt. Der Gebiets Schema Wert gilt für alle Vorlagen. Sie müssen für jedes Gebiets Schema ein separates Manifest verwenden. Dies ist optional.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -41,7 +41,7 @@ Dieses Schema beschreibt das Format der *vstman*-Dateien (Visual Studio-Vorlagen
 - **Vstemplatedir** Optionale.
 
 ### <a name="parent-element"></a>Übergeordnetes Element
- Keine.
+ Keine
 
 ## <a name="vstemplatecontainer"></a>Vstemplatecontainer
  Der Container der Vorlagen Manifest-Elemente. Ein Manifest weist einen Vorlagen Container für jede Vorlage auf, die er definiert.
@@ -70,11 +70,11 @@ Dieses Schema beschreibt das Format der *vstman*-Dateien (Visual Studio-Vorlagen
 
 - **RelativePath**: der Pfad der Vorlage. Es kann nur ein Eintrag pro Pfad vorhanden sein, sodass der erste für alle Manifeste gewinnt.
 
-- **LocalizedName**: ein **namedescriptionicon** -Element, das den lokalisierten Namen angibt. Optional.
+- **LocalizedName**: ein **namedescriptionicon** -Element, das den lokalisierten Namen angibt. Dies ist optional.
 
-- **Sortor der**: eine Zeichenfolge, die die Sortierreihenfolge angibt. Optional.
+- **Sortor der**: eine Zeichenfolge, die die Sortierreihenfolge angibt. Dies ist optional.
 
-- **Parameterfolderoverridename**: der überschriebene Name des übergeordneten Ordners. Optional. Dieses Element hat ein **Name** -Attribut, bei dem es sich um einen Zeichen folgen Wert handelt, der den Namen angibt.
+- **Parameterfolderoverridename**: der überschriebene Name des übergeordneten Ordners. Dies ist optional. Dieses Element hat ein **Name** -Attribut, bei dem es sich um einen Zeichen folgen Wert handelt, der den Namen angibt.
 
 ### <a name="parent-element"></a>Übergeordnetes Element
  **Vstemplatemanifest**
@@ -84,9 +84,9 @@ Dieses Schema beschreibt das Format der *vstman*-Dateien (Visual Studio-Vorlagen
 
 ### <a name="attributes"></a>Attribute
 
-- **Package**: ein Zeichen folgen Wert, der das Paket angibt. Optional.
+- **Package**: ein Zeichen folgen Wert, der das Paket angibt. Dies ist optional.
 
-- **ID**: ein Zeichen folgen Wert, der die ID angibt. Optional.
+- **ID**: ein Zeichen folgen Wert, der die ID angibt. Dies ist optional.
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df52ca75ef99fe98158cb5f874e59fe4ee0c47b4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 74e7aab4cbc012afbf045672dbf4af248ada4c61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925621"
 ---
 # <a name="how-to-create-an-application-page"></a>How to: Erstellen einer Anwendungsseite
   Sie können eine ASP.NET-Webseite für eine oder mehrere SharePoint-Websites erstellen. Diese Seiten werden in SharePoint als Anwendungs Seiten bezeichnet. Anders als bei einer Website Seite enthält eine Anwendungsseite Code, der hinter der Seite ausgeführt wird. Weitere Informationen finden Sie unter [Erstellen von Anwendungs Seiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
@@ -33,7 +33,7 @@ ms.locfileid: "94849856"
 
 2. Wählen Sie im **Projektmappen-Explorer** den Projektknoten aus.
 
-3. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+3. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 4. Erweitern Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **SharePoint** , und wählen Sie dann das Element **2010** aus.
 
@@ -49,6 +49,6 @@ ms.locfileid: "94849856"
 
      Die Codedatei wird angezeigt, wenn Sie den Knoten für die ASP.net-Auslagerungs Datei erweitern und abhängig von der Sprache des Projekts eine *CS* -oder *VB* -Erweiterung haben. Ein End-to-End-Beispiel zum Erstellen einer Anwendungsseite finden Sie unter Exemplarische Vorgehensweise [: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Anwendungsseiten für SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Exemplarische Vorgehensweise: Erstellen einer SharePoint-Anwendungsseite](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

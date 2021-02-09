@@ -20,15 +20,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], associate external content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: e726e8b5702a656b340401c9a2db26e40be1a37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925570"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Gewusst wie: Erstellen einer Zuordnung zwischen Entitäten
   Sie können Beziehungen zwischen Entitäten in Ihrem Business Data Connectivity (BDC)-Modell definieren, indem Sie Zuordnungen erstellen. Visual Studio generiert Methoden, die Consumer des Modells mit Informationen zu den einzelnen Zuordnungen bereitstellen. Diese Methoden können von SharePoint-Webparts, Listen oder benutzerdefinierten Anwendungen genutzt werden, um Daten Beziehungen in einer Benutzeroberfläche (UI) anzuzeigen.
@@ -47,7 +47,7 @@ ms.locfileid: "94849843"
 
     1. Wählen Sie in der Spalte **Quell-ID** der **bezeichnerzuordnungs** Tabelle den Bezeichner neben jedem passenden Typdeskriptor aus, der in der Spalte **Feld** angezeigt wird.
 
-         Wählen Sie z. b **Source ID** . in der Spalte Quell `ContactID` -ID neben dem `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` Typdeskriptor und dem `ReadItem.salesOrder.SalesOrder.ContactID` Typdeskriptor aus.
+         Wählen Sie z. b  . in der Spalte Quell `ContactID` -ID neben dem `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` Typdeskriptor und dem `ReadItem.salesOrder.SalesOrder.ContactID` Typdeskriptor aus.
 
 4. Wenn Sie eine Fremdschlüssel Zuordnung erstellen möchten, deaktivieren Sie das Kontrollkästchen **ist Fremdschlüssel** Zuordnung.
 
@@ -63,7 +63,7 @@ ms.locfileid: "94849843"
 
      Beispiele für Association Navigator-Methoden finden Sie unter [Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen einer Zuordnung zwischen Entitäten](../sharepoint/creating-an-association-between-entities.md)
 - [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)

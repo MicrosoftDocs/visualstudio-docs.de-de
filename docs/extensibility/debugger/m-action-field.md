@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 925141733356ac7730e2708673ebdad793fd465b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5bd2d826f1612be3bc3747cdaee9818d4ecc870
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738435"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925321"
 ---
 # <a name="m_action-field"></a>m_action Feld
 Der Delegat, der den Code darstellt, der im-Objekt ausgeführt werden soll <xref:System.Threading.Tasks.Task> .

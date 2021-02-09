@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 38c560cf75fad8887dabdaab38004b10ae0ffc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97864050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926131"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials für Visual Studio
 
@@ -156,7 +156,7 @@ Im richtigen Ansatz in **Abbildung C** ist die Einstellung an eine Reihe von Bef
 
    ![Das Ignorieren des Color-Dienes und die Verwendung von "Weitere Informationen" für Hyperlinks sind Visual Studio-Antimuster.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Das Ignorieren des Color-Dienes und die Verwendung von "Weitere Informationen" für Hyperlinks sind Visual Studio-Antimuster.
 
-**Bessere Lösung:** Stellen Sie die Frage ein, die der Benutzer durch Klicken auf den Link Fragen würde. Zum Beispiel:
+**Bessere Lösung:** Stellen Sie die Frage ein, die der Benutzer durch Klicken auf den Link Fragen würde. Beispiel:
 
 - Funktionsweise von Windows Azure-Diensten
 

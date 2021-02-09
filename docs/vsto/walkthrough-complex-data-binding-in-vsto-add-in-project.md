@@ -14,15 +14,15 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b15343c69c3c656d42300e15aab4946860de8926
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925522"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: komplexe Datenbindung in einem VSTO-Add-in-Projekt
   Sie können in VSTO-Add-In-Projekten Daten an Hoststeuerelemente und Windows Forms-Steuerelemente binden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Microsoft Office Excel-Arbeitsblatt zur Laufzeit Steuerelemente hinzugefügt und diese Steuerelemente an Daten gebunden werden.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a5f4e9805eec8fd5d0089f1b8348253523d9056f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925014"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Vorgehensweise: Registrieren einer Bibliothek mit dem Objekt-Manager
 Symbole: durch Browsen von Tools wie **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Symbol Ergebnisse** suchen können Sie Symbole in Ihrem Projekt oder in externen Komponenten anzeigen. Zu den Symbolen zählen Namespaces, Klassen, Schnittstellen, Methoden und andere Sprachelemente. Die Bibliotheken verfolgen diese Symbole und machen Sie für den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Objekt-Manager verfügbar, der die Tools mit den Daten füllt.

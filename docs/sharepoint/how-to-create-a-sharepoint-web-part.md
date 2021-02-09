@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f15cd788d19540bdea416b36ab0f8e8d8aa95e3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925598"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>How to: Erstellen eines SharePoint-Webparts
+# <a name="how-to-create-a-sharepoint-web-part"></a>Vorgehensweise: Erstellen eines SharePoint-Webparts
   Sie können ein Webpart erstellen und anpassen, indem Sie einem SharePoint-Projekt ein **Webpartelement** hinzufügen und dann die Codedatei für das Webpart oder mithilfe eines Designers bearbeiten. Weitere Informationen finden Sie unter Gewusst [wie: Erstellen eines SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ### <a name="to-create-a-sharepoint-web-part"></a>So erstellen Sie ein SharePoint-Webpart
@@ -49,7 +49,7 @@ ms.locfileid: "94903701"
 
      Ein Beispiel finden Sie unter Exemplarische Vorgehensweise [: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [How to: Erstellen eines SharePoint-Webparts mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
 - [Exemplarische Vorgehensweise: Erstellen eines Webparts für SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 3d123cfbd37c254522fe52bbb941afeb363d3fbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925757"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Bedingte Attribute des vsct-XML-Schemas
 Sie können bedingte Attribute auf alle Listen und Elemente anwenden. Logische Operatoren und Symbol Erweiterungs Ausdrücke werden als true oder false ausgewertet. True gibt an, dass die zugeordnete Liste oder das zugehörige Element in der resultierenden Ausgabe enthalten ist.

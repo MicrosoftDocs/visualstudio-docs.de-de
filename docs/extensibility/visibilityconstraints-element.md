@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50f23847da8f6d56da6763146efd147aebca8c6
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: bb6047c98031c484f6a0a51ab2a393a2a46bb2a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926087"
 ---
 # <a name="visibilityconstraints-element"></a>Visibilityschränkt-Element
 Das visibilityschränkt-Element bestimmt die statische Sichtbarkeit von Gruppen von Befehlen und Symbolleisten. Die Sichtbarkeit wird zuerst von der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) gesteuert, ohne das VSPackage zu laden.
@@ -41,7 +41,7 @@ Das visibilityschränkt-Element bestimmt die statische Sichtbarkeit von Gruppen 
 
 |attribute|Beschreibung|
 |---------------|-----------------|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
