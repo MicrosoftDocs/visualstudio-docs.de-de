@@ -13,15 +13,15 @@ helpviewer_keywords:
 - workbooks, saving backup copies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbc228a703d6c9224fda545a93132ccb45c94b0f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3a4f46a679e04c921aafd9a7774949d56c0925f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842007"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Vorgehensweise: Programm gesteuertes Speichern von Arbeitsmappen
   Es gibt mehrere Möglichkeiten, eine Arbeitsmappe zu speichern. Sie können eine Arbeitsmappe speichern, ohne den Pfad zu ändern. Wenn die Arbeitsmappe noch nicht gespeichert wurde, sollten Sie sie unter Angabe eines Pfads speichern. Ohne expliziten Pfad speichert Microsoft Office Excel die Datei unter dem bei der Erstellung angegebenen Namen im aktuellen Ordner. Sie können auch eine Kopie der Arbeitsmappe speichern, ohne die geöffnete Arbeitsmappe im Arbeitsspeicher zu ändern.

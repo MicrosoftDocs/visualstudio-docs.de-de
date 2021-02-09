@@ -9,13 +9,13 @@ helpviewer_keywords:
 - disable code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 6a1f1466caa921d46ce4701f5074b98f3d5ba051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860385"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Quell Code Analyse für .net deaktivieren
 
@@ -49,7 +49,7 @@ Klicken Sie zum Öffnen dieser Seite in **Projektmappen-Explorer** mit der recht
 
 Fügen Sie der [Projektdatei](../ide/solutions-and-projects-in-visual-studio.md#project-file)mindestens eine der folgenden MSBuild-Eigenschaften hinzu, um die Quell Code Analyse für Analyzers zu deaktivieren.
 
-| MSBuild-Eigenschaft | BESCHREIBUNG | Standard |
+| MSBuild-Eigenschaft | Beschreibung | Standard |
 | - | - | - |
 | `RunAnalyzersDuringBuild` | Steuert, ob Analysen zum Zeitpunkt der Erstellung ausgeführt werden. | `true` |
 | `RunAnalyzersDuringLiveAnalysis` | Steuert, ob Analysen Code zur Entwurfszeit Live analysieren. | `true` |
@@ -69,7 +69,7 @@ Beispiele:
 
 ## <a name="source-analysis"></a>Quellanalyse
 
-Sie können die [Quell Analyse](roslyn-analyzers-overview.md) in Visual Studio 2017 nicht deaktivieren. Wenn Sie Analysefehler aus dem **Fehlerliste** löschen möchten, können Sie alle aktuellen Verstöße unterdrücken, indem Sie **Analyze**  >  in der Menüleiste analysieren **Code Analyse ausführen und aktive Probleme unterdrücken** auswählen. Weitere Informationen finden Sie unter unter [drücken von Verletzungen](use-roslyn-analyzers.md#suppress-violations).
+Sie können die [Quell Analyse](roslyn-analyzers-overview.md) in Visual Studio 2017 nicht deaktivieren. Wenn Sie Analysefehler aus dem **Fehlerliste** löschen möchten, können Sie alle aktuellen Verstöße unterdrücken, indem Sie   >  in der Menüleiste analysieren **Code Analyse ausführen und aktive Probleme unterdrücken** auswählen. Weitere Informationen finden Sie unter unter [drücken von Verletzungen](use-roslyn-analyzers.md#suppress-violations).
 
 Ab Visual Studio 2019 Version 16,3 können Sie die Quell Code Analyse deaktivieren oder bei Bedarf ausführen. Sie sollten ein Upgrade auf Visual Studio 2019 durchführen.
 

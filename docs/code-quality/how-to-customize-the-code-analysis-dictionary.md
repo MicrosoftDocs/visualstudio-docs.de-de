@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 10466acedcd5c7f5fda835d66e654128a556d0a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860099"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Gewusst wie: Anpassen des Codeanalysewörterbuchs
 
 Bei der Code Analyse wird ein integriertes Wörterbuch verwendet, um Bezeichner in Ihrem Code auf Fehler in der Schreibweise, in grammatischem Fall und in anderen Benennungs Konventionen der .net-Entwurfs Richtlinien zu überprüfen. Sie können eine benutzerdefinierte Wörterbuch-XML-Datei erstellen, um Begriffe, Abkürzungen und Akronyme zum integrierten Wörterbuch hinzuzufügen, zu entfernen oder zu ändern.
 
-Angenommen, Ihr Code enthielt eine Klasse mit dem Namen " **doorklokker** ". Bei der Code Analyse wird der Name als Verbund mit zwei Wörtern identifiziert: **Door** und **klokker**. Anschließend wird eine Warnung ausgegeben, dass " **klokker** " nicht richtig geschrieben wurde. Um die Code Analyse zu erzwingen, um die Rechtschreibprüfung zu erkennen, können Sie dem Benutzerwörterbuch den Begriff " **klokker** " hinzufügen
+Angenommen, Ihr Code enthielt eine Klasse mit dem Namen " **doorklokker**". Bei der Code Analyse wird der Name als Verbund mit zwei Wörtern identifiziert: **Door** und **klokker**. Anschließend wird eine Warnung ausgegeben, dass " **klokker** " nicht richtig geschrieben wurde. Um die Code Analyse zu erzwingen, um die Rechtschreibprüfung zu erkennen, können Sie dem Benutzerwörterbuch den Begriff " **klokker** " hinzufügen
 
 ## <a name="to-create-a-custom-dictionary"></a>So erstellen Sie ein Benutzerwörterbuch
 

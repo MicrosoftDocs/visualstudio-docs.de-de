@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9f061d9d10d66857a0b2506d13d6d6671f7df401
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860039"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Gewusst wie: Erzwingen von wart barem Code mit einer Eincheck Richtlinie für die Code Analyse
 
@@ -59,7 +59,7 @@ Administratoren der Versionskontrolle für Team Foundation können den Check-in-
 
 3. Klicken Sie auf **OK**. Die neue Eincheck Richtlinie gilt jetzt für künftige Eincheck Vorgänge.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Codemetrikwerte](../code-quality/code-metrics-values.md)
 - [Erstellen und Verwenden von Eincheck Richtlinien für die Code Analyse](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

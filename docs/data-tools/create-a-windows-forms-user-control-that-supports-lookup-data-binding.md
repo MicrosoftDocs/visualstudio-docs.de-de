@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859072"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das Nachschlagedatenbindung unterstützt
 
@@ -84,7 +84,7 @@ Der erste Schritt besteht darin, ein **Windows Forms Anwendungs** Projekt zu ers
 
 3. Wählen Sie im mittleren Bereich den **Windows Forms App** -Projekttyp aus.
 
-4. Nennen Sie das Projekt **LookupControlWalkthrough** , und wählen Sie dann **OK** aus.
+4. Nennen Sie das Projekt **LookupControlWalkthrough**, und wählen Sie dann **OK** aus.
 
      Das Projekt **LookupControlWalkthrough** wird erstellt und dem **Projektmappen-Explorer** hinzugefügt.
 
@@ -96,7 +96,7 @@ In dieser exemplarischen Vorgehensweise wird aus einem **Benutzersteuerelement**
 
 2. Geben `LookupBox` Sie in den Bereich **Name** ein, und klicken Sie dann auf **Hinzufügen**.
 
-     Das **LookupBox** -Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
+     Das **LookupBox**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
 
 ## <a name="design-the-lookupbox-control"></a>Entwerfen des LookupBox-Steuer Elements
 
@@ -106,7 +106,7 @@ Um das LookupBox-Steuerelement zu entwerfen, ziehen Sie ein <xref:System.Windows
 
 Implementieren Sie für Nachschlagesteuerelemente, die Datenbindung unterstützen, das <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.
 
-1. Wechseln Sie für das **LookupBox** -Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** den Befehl **Code** aus.)
+1. Wechseln Sie für das **LookupBox**-Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** den Befehl **Code** aus.)
 
 2. Ersetzen Sie den Code in `LookupBox` durch folgenden Code:
 
@@ -129,7 +129,7 @@ In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen*
 
     - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-    - Klicken Sie auf **Neue Verbindung** , um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
 5. Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.
 
@@ -153,7 +153,7 @@ Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Form
 
 4. Klicken Sie im Knoten **Orders** auf den Dropdownpfeil, und wählen Sie in der Steuerelementliste die Option **Details** aus.
 
-5. Klicken Sie in der Spalte **CustomerID** (im Knoten **Orders** ) auf den Dropdownpfeil, und wählen Sie **Anpassen** aus.
+5. Klicken Sie in der Spalte **CustomerID** (im Knoten **Orders**) auf den Dropdownpfeil, und wählen Sie **Anpassen** aus.
 
 6. Wählen Sie im Dialogfeld **Data UI Customization Options** (Optionen für die Anpassung der Datenbenutzeroberfläche) in der Liste **Zugeordnete Steuerelemente** den Eintrag **LookupBox** aus.
 
@@ -175,10 +175,10 @@ Damit wird die Datenbindung so eingerichtet, dass der Wert für `CompanyName` au
 
 ## <a name="run-the-application"></a>Ausführen der Anwendung
 
-- Drücken Sie **F5** , um die Anwendung auszuführen.
+- Drücken Sie **F5**, um die Anwendung auszuführen.
 
 - Navigieren Sie durch einige Datensätze, und prüfen Sie, ob im `LookupBox`-Steuerelement der Wert von `CompanyName` angezeigt wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

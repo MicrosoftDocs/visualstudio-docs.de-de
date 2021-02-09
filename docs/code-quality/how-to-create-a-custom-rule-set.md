@@ -10,15 +10,15 @@ helpviewer_keywords:
 - rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: dda89e9822e361438346300a2f60c05bcfd64d6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860151"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
@@ -63,7 +63,7 @@ Im Dialogfeld " **neue Datei** " können Sie eine neue Regel Satz Datei erstelle
 
 2. Wählen Sie im Dialogfeld **neue Datei** auf der linken Seite die Kategorie **Allgemein** aus, und wählen Sie dann **Code Analyse-Regelsatz** aus.
 
-3. Klicken Sie auf **Öffnen**.
+3. Wählen Sie **Öffnen** aus.
 
    Die neue *RuleSet* -Datei wird im Regelsatz-Editor geöffnet.
 

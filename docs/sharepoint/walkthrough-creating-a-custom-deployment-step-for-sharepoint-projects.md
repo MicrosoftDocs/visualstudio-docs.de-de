@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839135"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungs Schritts für SharePoint-Projekte
   Wenn Sie ein SharePoint-Projekt bereitstellen, führt Visual Studio eine Reihe von Bereitstellungs Schritten in einer bestimmten Reihenfolge aus. Visual Studio enthält viele integrierte Bereitstellungs Schritte, aber Sie können auch eigene erstellen.
@@ -209,7 +209,7 @@ ms.locfileid: "96914932"
     > [!NOTE]
     > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
+7. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 8. Wählen Sie in der Liste **Projekt** den Eintrag **DeploymentStepExtension** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -222,11 +222,11 @@ ms.locfileid: "96914932"
     > [!NOTE]
     > Dieses Element gibt eine benutzerdefinierte Erweiterung an, die Sie in die Visual Studio-Erweiterung einschließen möchten. Weitere Informationen finden Sie unter [Asset-Element (VSX-Schema)](/previous-versions/dd393737(v=vs.110)).
 
-11. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
+11. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 12. Wählen Sie in der Liste **Projekt** die Option **SharePointCommands** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-13. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass die Projekt Mappe ohne Fehler kompiliert wird.
+13. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  dass die Projekt Mappe ohne Fehler kompiliert wird.
 
 14. Stellen Sie sicher, dass der Buildausgabeordner für das Projekt UpgradeDeploymentStep nun die Datei UpgradeDeploymentStep. vsix enthält.
 
@@ -452,7 +452,7 @@ ms.locfileid: "96914932"
 
     - Die Spalten Telefon und **e-Mail-Adresse** des **Unternehmens** werden in dieser Ansicht der Liste nicht angezeigt.
 
-      Die **Upgrade** upgradebereitstellungskonfiguration ändert die vorhandene **Employees** -Listen Instanz auf der SharePoint-Website. Wenn Sie anstelle der **upgradekonfiguration** die **Standard** Bereitstellungs Konfiguration verwendet haben, wird ein Bereitstellungs Konflikt auftreten. Visual Studio löst den Konflikt durch Ersetzen der **Mitarbeiter** Liste aus, und das Element für Andy, der Einrichtungen-Manager, würde gelöscht werden.
+      Die  upgradebereitstellungskonfiguration ändert die vorhandene **Employees** -Listen Instanz auf der SharePoint-Website. Wenn Sie anstelle der **upgradekonfiguration** die **Standard** Bereitstellungs Konfiguration verwendet haben, wird ein Bereitstellungs Konflikt auftreten. Visual Studio löst den Konflikt durch Ersetzen der **Mitarbeiter** Liste aus, und das Element für Andy, der Einrichtungen-Manager, würde gelöscht werden.
 
 ## <a name="clean-up-the-development-computer"></a>Bereinigen des Entwicklungs Computers
  Nachdem Sie das Testen des Schritts zur Upgradebereitstellung abgeschlossen haben, entfernen Sie die Listen Instanz und Listen Definition von der SharePoint-Website, und entfernen Sie die Erweiterung für die Bereitstellungs Schritte aus Visual Studio.
@@ -475,7 +475,7 @@ ms.locfileid: "96914932"
 
 #### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras   >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 

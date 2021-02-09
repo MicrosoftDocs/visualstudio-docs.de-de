@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: be9a6840c3b41b442e5019e08c4d2f4d2fa5c3dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858994"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio
 
@@ -28,13 +28,13 @@ Wenn Sie Elemente aus dem [Datenquellen Fenster](add-new-data-sources.md#data-so
 
 ::: moniker range="vs-2017"
 
-Sie können die Art und Weise anpassen, in der diese Bezeichnungen erstellt werden, indem Sie die Werte **SmartCaptionExpression** , **smartcaptionreplace** und **SmartCaptionSuffix** im Registrierungsschlüssel **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** festlegen.
+Sie können die Art und Weise anpassen, in der diese Bezeichnungen erstellt werden, indem Sie die Werte **SmartCaptionExpression**, **smartcaptionreplace** und **SmartCaptionSuffix** im Registrierungsschlüssel **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** festlegen.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Sie können die Art und Weise anpassen, in der diese Bezeichnungen erstellt werden, indem Sie die Werte **SmartCaptionExpression** , **smartcaptionreplace** und **SmartCaptionSuffix** im Registrierungsschlüssel **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** festlegen.
+Sie können die Art und Weise anpassen, in der diese Bezeichnungen erstellt werden, indem Sie die Werte **SmartCaptionExpression**, **smartcaptionreplace** und **SmartCaptionSuffix** im Registrierungsschlüssel **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** festlegen.
 
 ::: moniker-end
 
@@ -140,6 +140,6 @@ In der folgenden Tabelle sind die internen Standardeinstellungen für diese Regi
 
     Wenn Sie Elemente das nächste Mal aus dem **Datenquellen** Fenster ziehen, werden die Beschriftungs Bezeichnungen mit unveränderten Beschriftungen erstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
