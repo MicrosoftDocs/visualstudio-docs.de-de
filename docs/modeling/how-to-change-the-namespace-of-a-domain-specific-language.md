@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29835e993d287c981ad1c4014af3dc276891af5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890499"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Vorgehensweise: Ändern des Namespace einer domänenspezifischen Sprache
 
@@ -25,13 +25,13 @@ Sie können den Namespace einer domänenspezifischen Sprache ändern. Nehmen Sie
 
 ## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>So ändern Sie den Namespace einer domänenspezifischen Sprache
 
-1. Wählen Sie im **DSL-Explorer**den Knoten **DSL** aus.
+1. Wählen Sie im **DSL-Explorer** den Knoten **DSL** aus.
 
 2. Ändern Sie im **Eigenschaften** Fenster die Eigenschaft **Namespace** .
 
 3. Speichern Sie die Projekt Mappe, und transformieren Sie die Vorlagen.
 
-4. Wählen Sie im Menü **Projekt** die Option **DSL-Eigenschaften**aus.
+4. Wählen Sie im Menü **Projekt** die Option **DSL-Eigenschaften** aus.
 
    Die Eigenschaften für das Projekt werden angezeigt.
 
@@ -49,12 +49,12 @@ Sie können den Namespace einer domänenspezifischen Sprache ändern. Nehmen Sie
 
 10. Setzen Sie die experimentelle Instanz von Visual Studio zurück.
 
-    1. Löschen Sie **\Users \\ **_{Your Name}_**\appdata\local\microsoft\visualstudio \\ \* Exp**.
+    1. Löschen Sie **\Users \\**_{Your Name}_**\appdata\local\microsoft\visualstudio \\ \* Exp**.
 
-    2. Wählen Sie im Windows- **Startmenü** **Alle Programme**aus,  >  **Microsoft Visual Studio**  >  **Tools**  >  **die experimentelle Instanz**2010 SDK-Tools zurücksetzen.
+    2. Wählen Sie im Windows- **Startmenü** **Alle Programme** aus,  >  **Microsoft Visual Studio**  >    >  **die experimentelle Instanz** 2010 SDK-Tools zurücksetzen.
 
-11. Wählen Sie im Menü **Erstellen** die Option Projekt Mappe **neu erstellen**aus.
+11. Wählen Sie im Menü **Erstellen** die Option Projekt Mappe **neu erstellen** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Glossar für domänenspezifische Sprach Tools](/previous-versions/bb126564(v=vs.100))

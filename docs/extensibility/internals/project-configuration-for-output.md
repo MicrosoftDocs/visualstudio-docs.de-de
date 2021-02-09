@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6817dbd534d272924e5020b1c4c48753dcd70a54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890668"
 ---
 # <a name="project-configuration-for-output"></a>Projektkonfiguration für die Ausgabe
 Jede Konfiguration kann einen Satz von Buildprozessen unterstützen, die Ausgabe Elemente wie z. b. ausführbare Dateien oder Ressourcen Dateien erstellen. Diese Ausgabe Elemente sind für den Benutzer Privat und können in Gruppen platziert werden, die Verwandte Ausgabetypen wie ausführbare Dateien (exe-, dll-, lib-) und Quelldateien (IDL-und h-Dateien) verknüpfen.

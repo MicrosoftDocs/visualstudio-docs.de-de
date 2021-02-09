@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891188"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Diese Schnittstelle benachrichtigt einen Listener (in der Regel der Sitzungs-Debug-Manager [SDM] oder eine Debug-Engine) über Prozess-und Programm Erstellung und Zerstörung an einem bestimmten Port. Diese Informationen können verwendet werden, um eine Echtzeitansicht der Prozesse und Programme anzuzeigen, die auf dem Port ausgeführt werden.
@@ -37,7 +37,7 @@ IDebugPortEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle wird die-Methode von gezeigt `IDebugPortEvents2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Sendet Ereignisse, die die Erstellung und Zerstörung von Prozessen und Programmen auf dem Port beschreiben.|
 

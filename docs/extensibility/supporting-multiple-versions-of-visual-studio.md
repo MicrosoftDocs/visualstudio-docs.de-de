@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d1309c6fcda2b27efdc78e7b31189d3a58edfb8
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 52b8bf1be57e10790d91d4712e56d707621cc7df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889940"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Unterstützen mehrerer Versionen von Visual Studio
 Der Begriff *nebeneinander* bedeutet, dass Sie mehrere Versionen eines Produkts auf demselben Computer installieren und verwalten können. Für VSPackages bedeutet dies, dass ein Benutzer mehrere Visual Studio-Versionen auf demselben Computer installiert haben kann. Es ist jedoch nicht möglich, parallele Versionen ihrer VSPackages in eine einzelne Version von Visual Studio zu laden.

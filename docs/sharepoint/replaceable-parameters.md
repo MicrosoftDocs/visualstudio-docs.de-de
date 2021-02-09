@@ -14,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload: office
-ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3eb6e737a1f939e05e6a6be7f2c9ba950fc411d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970249"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889498"
 ---
 # <a name="replaceable-parameters"></a>Austauschbare Parameter
   Ersetzbare Parameter oder *Token* können innerhalb von Projektdateien verwendet werden, um Werte für SharePoint-Lösungs Elemente bereitzustellen, deren tatsächliche Werte zur Entwurfszeit nicht bekannt sind. Sie ähneln den Standardvorlagen Token in der Funktion [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Weitere Informationen finden Sie unter [Vorlagen Parameter](../ide/template-parameters.md).

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8cb23eeee53990113d779e241adb8dcf1ab0cf16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890304"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit
 Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu steuern, ob Endbenutzer die Möglichkeit haben, ClickOnce-Anwendungen zu installieren, z. b. Windows Forms Anwendungen, Windows Presentation Foundation Anwendungen, Konsolen Anwendungen, WPF-Browser Anwendungen und Office-Projektmappen. Sie konfigurieren die Vertrauensstellungs-Eingabeaufforderung, indem Sie auf jedem Computer des Endbenutzers Registrierungsschlüssel festlegen.
@@ -228,7 +228,7 @@ Sie können die ClickOnce-Vertrauensstellungs Aufforderung konfigurieren, um zu 
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Übersicht über bereit Stellungen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
+- [Übersicht über das Bereitstellen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
 - [Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

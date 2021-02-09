@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 541f8b51d4ce56b167abd3ecdb28d08bec0c02c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891266"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 Gibt den Namen der abzurufenden Dateien an.

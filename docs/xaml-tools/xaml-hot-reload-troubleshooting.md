@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 4e13fd71c9d53ef49d7f7372986bfabc29c62747
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890447"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Problembehandlung beim Neuladen von XAML im laufenden Betrieb
 
@@ -51,7 +51,7 @@ XAML Hot Neuladen erfordert, dass die Umgebungsvariable zum `ENABLE_XAML_DIAGNOS
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Überprüfen Sie, ob die MSBuild-Eigenschaften richtig sind
 
-Standardmäßig sind Quell Informationen in einer Debugkonfiguration enthalten. Sie wird von MSBuild-Eigenschaften in ihren Projektdateien (z. b. *. csproj) gesteuert. Für WPF ist die-Eigenschaft `XamlDebuggingInformation` , die auf festgelegt werden muss `True` . Bei UWP ist die-Eigenschaft `DisableXbfLineInfo` , die auf festgelegt werden muss `False` . Zum Beispiel:
+Standardmäßig sind Quell Informationen in einer Debugkonfiguration enthalten. Sie wird von MSBuild-Eigenschaften in ihren Projektdateien (z. b. *. csproj) gesteuert. Für WPF ist die-Eigenschaft `XamlDebuggingInformation` , die auf festgelegt werden muss `True` . Bei UWP ist die-Eigenschaft `DisableXbfLineInfo` , die auf festgelegt werden muss `False` . Beispiel:
 
 WPF:
 

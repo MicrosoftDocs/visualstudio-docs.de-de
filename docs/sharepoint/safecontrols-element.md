@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControls element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23e31e3df59d6d580ac94ffcb83f7a17e186a267
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889446"
 ---
 # <a name="safecontrols-element"></a>SafeControls-Element
   Eine Auflistung von ASPX-Steuerelementen und Webparts, die für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher eingestuft werden.
@@ -40,13 +40,13 @@ ms.locfileid: "95440674"
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[SafeControl](../sharepoint/safecontrol-element.md)|Optionales Element.<br /><br /> Stellt ein aspx-Steuerelement oder Webpart dar, das für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher eingestuft wird.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Stellt ein SharePoint-Projekt Element dar. Dieses Element ist das erforderliche Stamm Element der *spdata* -Datei.|
 

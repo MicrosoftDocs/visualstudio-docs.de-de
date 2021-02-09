@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControl element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f08046666ff00d4a0e5489bc78c0c70967774f08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889472"
 ---
 # <a name="safecontrol-element"></a>SafeControl-Element
   Stellt ein aspx-Steuerelement oder Webpart dar, das für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher eingestuft wird.
@@ -40,7 +40,7 @@ ms.locfileid: "95440622"
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |**Assembly**|Optionales **xs: String** -Attribut.<br /><br /> Der Name der Assembly, in der das aspx-Steuerelement oder Webpart definiert ist. Standardmäßig verwendet dieses Attribut den ersetzbaren Parameter **$SharePoint. Project. AssemblyFullName $ für den Assemblynamen** . Weitere Informationen finden Sie unter [Ersetzbare Parameter](../sharepoint/replaceable-parameters.md).|
 |**Issafe**|Optionales **xs: Boolean** -Attribut.<br /><br /> Gibt an, ob das aspx-Steuerelement oder Webpart sicher ist, dass nicht vertrauenswürdige Benutzer darauf zugreifen können.|
@@ -54,7 +54,7 @@ ms.locfileid: "95440622"
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |["SafeControls](../sharepoint/safecontrols-element.md)|Stellt eine Auflistung von ASPX-Steuerelementen und Webparts dar, die für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher gekennzeichnet sind.|
 

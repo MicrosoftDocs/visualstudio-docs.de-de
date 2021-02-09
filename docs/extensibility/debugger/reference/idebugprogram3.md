@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9da63d54f64a4ef7592fdbc4d36e2b31220f82df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d22a58021a744cc71b8df3acb8e577d853aa2829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889992"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Diese Schnittstelle stellt ein Programm dar, das in einem Prozess ausgeführt wird und die [Ausführung](../../../extensibility/debugger/reference/idebugprogram2-execute.md) durch Bereitstellen von Thread Informationen erweitert.
@@ -35,7 +35,7 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProgram3` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Führt das Programm aus. Der Thread wird zurückgegeben, um den Debuggerinformationen zu dem Thread zu übergeben, den der Benutzer beim Ausführen anzeigen kann.|
 
