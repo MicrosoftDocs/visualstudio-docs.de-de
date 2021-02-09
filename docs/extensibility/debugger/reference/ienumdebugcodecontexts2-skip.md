@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3451a3eb-bf5b-4ec5-acc9-aa5a24363801
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6a1f63f5e3a6a84d6752707de5c81b4549085662
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6fecf3b8bf4b96834a19d6dc13ce63d7a72ea7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929406"
 ---
 # <a name="ienumdebugcodecontexts2skip"></a>IEnumDebugCodeContexts2::Skip
 Überspringt die angegebene Anzahl von Elementen.

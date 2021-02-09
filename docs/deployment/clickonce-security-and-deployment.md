@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8bb0bdeae09f22a2b45e3029fbc9097c00911d2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930017"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce-Sicherheit und -Bereitstellung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist eine Bereitstellungs Technologie, mit der Sie selbst Aktualisier Ende Windows-basierte Anwendungen erstellen können, die mit minimaler Benutzerinteraktion installiert und ausgeführt werden können. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bietet vollständige Unterstützung für das Veröffentlichen und Aktualisieren von Anwendungen, die mit ClickOnce-Technologie bereitgestellt werden, wenn Sie Ihre Projekte mit Visual Basic und Visual c# entwickelt haben Weitere Informationen zum Bereitstellen von Visual C++ Anwendungen finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
@@ -40,7 +40,7 @@ ms.locfileid: "94382675"
   In der Vergangenheit haben diese Probleme manchmal dazu geführt, dass Entwickler Webanwendungen anstelle von Windows-basierten Anwendungen erstellen konnten, sodass Sie eine umfassende Benutzeroberfläche für eine einfache Installation aufopferungs. Mithilfe von Anwendungen, die mit bereitgestellt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] werden, können Sie über das Beste beider Technologien verfügen.
 
 ## <a name="what-is-a-clickonce-application"></a>Was ist eine ClickOnce-Anwendung?
- Eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ist eine beliebige Windows Presentation Foundation ( *. XBAP* ), Windows Forms ( *. exe* ), Konsolenanwendung ( *. exe* ) oder eine Office-Projekt Mappe ( *. dll* ), die mithilfe der-Technologie veröffentlicht wurde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Sie können eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung auf drei verschiedene Arten veröffentlichen: über eine Webseite, über eine Netzwerkdatei Freigabe oder über Medien wie eine CD-ROM. Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung kann auf dem Computer des Endbenutzers installiert und lokal ausgeführt werden, auch wenn der Computer offline ist, oder Sie kann in einem reinen Online Modus ausgeführt werden, ohne dass auf dem Computer des Endbenutzers eine permanente Installation erfolgt. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung ist eine beliebige Windows Presentation Foundation (*. XBAP*), Windows Forms (*. exe*), Konsolenanwendung (*. exe*) oder eine Office-Projekt Mappe (*. dll*), die mithilfe der-Technologie veröffentlicht wurde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Sie können eine- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung auf drei verschiedene Arten veröffentlichen: über eine Webseite, über eine Netzwerkdatei Freigabe oder über Medien wie eine CD-ROM. Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung kann auf dem Computer des Endbenutzers installiert und lokal ausgeführt werden, auch wenn der Computer offline ist, oder Sie kann in einem reinen Online Modus ausgeführt werden, ohne dass auf dem Computer des Endbenutzers eine permanente Installation erfolgt. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen können selbst aktualisiert werden. Sie können nach neueren Versionen suchen, sobald Sie verfügbar werden, und automatisch alle aktualisierten Dateien ersetzen. Der Entwickler kann das Aktualisierungsverhalten festlegen. Der Netzwerkadministrator kann ebenfalls Aktualisierungsstrategien steuern und eine Aktualisierung z.B. als obligatorisch kennzeichnen. Updates können auch vom Endbenutzer oder von einem Administrator auf eine frühere Version zurückgesetzt werden. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "94382675"
  Authenticode-Zertifikate werden verwendet, um die Echtheit des Herausgebers der Anwendung zu überprüfen. Durch die Verwendung von Authenticode für die Anwendungs Bereitstellung hilft ClickOnce dabei, ein schädliches Programm daran zu hindern, sich selbst als ein legitimer Programm aus einer etablierten vertrauenswürdigen Quelle darzustellen. Optional können Zertifikate auch zum Signieren der Anwendungs-und Bereitstellungs Manifeste verwendet werden, um nachzuweisen, dass die Dateien nicht manipuliert wurden. Weitere Informationen finden Sie unter [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md). Zertifikate können auch verwendet werden, um Client Computer so zu konfigurieren, dass Sie eine Liste der vertrauenswürdigen Herausgeber aufweisen. Wenn eine Anwendung von einem vertrauenswürdigen Herausgeber stammt, kann Sie ohne Benutzereingriff installiert werden. Weitere Informationen finden Sie unter [Übersicht über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).
 
 ### <a name="code-access-security"></a>Codezugriffssicherheit
- Mit der Code Zugriffssicherheit wird der Zugriff von Code auf geschützte Ressourcen beschränkt. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet" auswählen, um die Berechtigungen einzuschränken. Verwenden Sie die Seite **Sicherheit** im **Projekt-Designer** , um die für die Anwendung geeignete Zone anzufordern. Sie können auch Anwendungen mit eingeschränkten Berechtigungen debuggen, um die Endbenutzer Funktionen zu emulieren. Weitere Informationen finden Sie unter [Code Zugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md).
+ Mit der Code Zugriffssicherheit wird der Zugriff von Code auf geschützte Ressourcen beschränkt. In den meisten Fällen können Sie die Zonen "Internet" oder "Lokales Intranet" auswählen, um die Berechtigungen einzuschränken. Verwenden Sie die Seite **Sicherheit** im **Projekt-Designer** , um die für die Anwendung geeignete Zone anzufordern. Sie können auch Anwendungen mit eingeschränkten Berechtigungen debuggen, um die Endbenutzer Funktionen zu emulieren. Weitere Informationen finden Sie unter [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../deployment/code-access-security-for-clickonce-applications.md).
 
 ### <a name="clickonce-trust-prompt"></a>ClickOnce-Vertrauensaufforderung
  Wenn die Anwendung mehr Berechtigungen anfordert, als die Zone zulässt, kann der Endbenutzer aufgefordert werden, eine Entscheidung über die Vertrauenswürdigkeit zu treffen. Der Endbenutzer kann entscheiden, ob ClickOnce-Anwendungen, wie z. b. Windows Forms Anwendungen, Windows Presentation Foundation Anwendungen, Konsolen Anwendungen, XAML-Browser Anwendungen und Office-Projektmappen vertrauenswürdig sind. Weitere Informationen finden Sie unter Gewusst [wie: Konfigurieren des Verhaltens der ClickOnce-Vertrauens Aufforderung](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
@@ -62,7 +62,7 @@ ms.locfileid: "94382675"
  Die grundlegende [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungs Architektur basiert auf zwei XML-Manifest-Dateien: einem Anwendungs Manifest und einem Bereitstellungs Manifest. Die Dateien werden verwendet, um zu beschreiben, wo die ClickOnce-Anwendungen installiert werden, wie Sie aktualisiert werden und wann Sie aktualisiert werden.
 
 ### <a name="publish-clickonce-applications"></a>Veröffentlichen von ClickOnce-Anwendungen
- Das Anwendungs Manifest beschreibt die Anwendung selbst. Dies schließt die Assemblys, die Abhängigkeiten und Dateien aus, aus denen die Anwendung besteht, die erforderlichen Berechtigungen und den Speicherort, an dem Updates verfügbar sein werden. Der Anwendungsentwickler Ersteller das Anwendungs Manifest mithilfe des Veröffentlichungs-Assistenten in Visual Studio oder der Manifest Generation and Editing Tool ( *Mage.exe* ) in der [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Das Anwendungs Manifest beschreibt die Anwendung selbst. Dies schließt die Assemblys, die Abhängigkeiten und Dateien aus, aus denen die Anwendung besteht, die erforderlichen Berechtigungen und den Speicherort, an dem Updates verfügbar sein werden. Der Anwendungsentwickler Ersteller das Anwendungs Manifest mithilfe des Veröffentlichungs-Assistenten in Visual Studio oder der Manifest Generation and Editing Tool (*Mage.exe*) in der [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Weitere Informationen finden Sie unter Gewusst [wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  In dem Bereitstellungsmanifest wird die Bereitstellung der Anwendung beschrieben. Dies umfasst den Speicherort des Anwendungs Manifests und die Version der Anwendung, die von Clients ausgeführt werden soll.
 
@@ -93,7 +93,7 @@ ms.locfileid: "94382675"
 ## <a name="clickonce-tools"></a>ClickOnce-Tools
  In der folgenden Tabelle sind die Tools aufgeführt, die Sie zum generieren, bearbeiten, Signieren und erneuten Signieren der Anwendungs-und Bereitstellungs Manifeste verwenden können.
 
-|Tool|Beschreibung|
+|Tool|BESCHREIBUNG|
 |----------|-----------------|
 |[Seite "Sicherheit", Projekt-Designer](../ide/reference/security-page-project-designer.md)|Signiert die Anwendungs-und Bereitstellungs Manifeste.|
 |[Seite "Veröffentlichen", Projekt-Designer](../ide/reference/publish-page-project-designer.md)|Generiert und bearbeitet die Anwendungs-und Bereitstellungs Manifeste für Visual Basic-und Visual c#-Anwendungen.|
@@ -113,7 +113,7 @@ ms.locfileid: "94382675"
 |Chrome|3,5|
 |Microsoft Edge|3,5|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Bereitstellung unter Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)

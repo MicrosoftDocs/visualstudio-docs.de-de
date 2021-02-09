@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bf8fa94c-6d9d-4e4f-ac08-3b44ba5ace68
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 73c9a02f5b114d49afffec2b349ce6621871f789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47bf93f9c52625c44835873298f5f5c348c2dd27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929497"
 ---
 # <a name="idebugportex2terminateprocess"></a>IDebugPortEx2::TerminateProcess
 Beendet einen Prozess.
@@ -28,13 +28,13 @@ Beendet einen Prozess.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT TerminateProcess( 
+HRESULT TerminateProcess( 
    IDebugProcess2* pPortProcess
 );
 ```
 
 ```csharp
-int TerminateProcess( 
+int TerminateProcess( 
    IDebugProcess2 pPortProcess
 );
 ```

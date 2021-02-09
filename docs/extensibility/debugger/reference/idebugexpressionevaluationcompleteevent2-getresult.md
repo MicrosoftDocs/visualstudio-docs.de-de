@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d9ad3e22-b6b2-421e-9a43-6bb8c70d12a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d3af0affa1c6d98a8209a6a72913f9c2bccf1fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9abc7ce472543b6d2fd6e82fbd5a01f97e4d1784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930446"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 Ruft das Ergebnis der Ausdrucks Auswertung ab.
@@ -28,13 +28,13 @@ Ruft das Ergebnis der Ausdrucks Auswertung ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetResult( 
+HRESULT GetResult( 
    IDebugProperty2** ppResult
 );
 ```
 
 ```csharp
-int GetResult( 
+int GetResult( 
    out IDebugProperty2 ppResult
 );
 ```
