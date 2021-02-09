@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 14f6add337ecfae3ab0dc5aa77a72962f2a0a915
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851594"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Vorgehensweise: Erstellen eines SharePoint-Webparts mithilfe eines Designers
   Sie können ein Webpart erstellen, indem Sie einem SharePoint-Projekt ein Element für ein **visuelles Webpart** hinzufügen. Dadurch wird der Visual Web Developer-Designer in Visual Studio geöffnet, in dem Sie Steuerelemente und Code zum Webpart hinzufügen können. Visuelle Webparts funktionieren genauso wie Webparts. Der einzige Unterschied ist, dass Sie visuelle Webparts im Visual Web Developer-Designer entwerfen.
@@ -45,7 +45,7 @@ ms.locfileid: "94903714"
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>So fügen Sie einem vorhandenen SharePoint-Projekt ein visuelles Webpart hinzu
 
-1. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+1. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Office/SharePoint** aus.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff3730d3903b71db78c8ecbc025bfe44d6e37f7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853031"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 Stellt optionale Flags bereit, die beim Festlegen eines halte Punkts zum Angeben zusätzlicher Informationen verwendet werden können.
@@ -59,7 +59,7 @@ Wird für den `dwFlags` Member der [BP_REQUEST_INFO](../../../extensibility/debu
 
 Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

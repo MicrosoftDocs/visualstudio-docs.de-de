@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853051"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 Gibt den Fehlertyp eines Breakpoints an.
@@ -99,7 +99,7 @@ Diese Werte können mit einem bitweisen kombiniert `OR` und für den `dwType` Me
 
 Ein breakpointfehlertyp besteht aus einem Typ und einem Schweregrad. Dies bedeutet, dass ein breakpointfehlertyp nie nur ein Typ (z `BPET_TYPE_ERROR` . b.,) oder ein Schweregrad (z `BPET_SEV_GENERAL` . b.) allein ist. `BPET_GENERAL_WARNING` und `BPET_GENERAL_ERROR` stellen vordefinierte Werte für Allgemeine Warn-und Fehler Breakpoints bereit.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

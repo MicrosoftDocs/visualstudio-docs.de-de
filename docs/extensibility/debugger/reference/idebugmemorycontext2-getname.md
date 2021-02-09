@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 8c212556-7d9e-4d68-b2a9-8212f50d0287
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8a13c078340eafcff9440e41afd468ba95f9849
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9076e9a1edbc80a1387e83078b97671c3013fe27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727455"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851178"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 Ruft den vom Benutzer anzeigbaren Namen für diesen Kontext ab.
@@ -29,7 +29,7 @@ Ruft den vom Benutzer anzeigbaren Namen für diesen Kontext ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    BSTR* pbstrName
 );
 ```

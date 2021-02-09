@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a21fa2ec6d48bb1d6bf17bbc0d2ebf0d90a25a9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ddba5665ead15bb623193412bafa7d6eaa8aa16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851217"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 Fügt dem aktuellen Kontext den angegebenen Wert hinzu und gibt einen neuen Kontext zurück.
@@ -29,7 +29,7 @@ Fügt dem aktuellen Kontext den angegebenen Wert hinzu und gibt einen neuen Kont
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT Add( 
+HRESULT Add( 
    UINT64                 dwCount,
    IDebugMemoryContext2** ppMemCxt
 );

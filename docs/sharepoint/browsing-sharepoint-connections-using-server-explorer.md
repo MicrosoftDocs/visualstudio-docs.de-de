@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b188d95e6478e488fc896b0622fb8d145ef2a741
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851607"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Durchsuchen von SharePoint-Verbindungen mit dem Server-Explorer
   Sie können nun lokale SharePoint-Verbindungen im **Server-Explorer** durchsuchen. Mithilfe dieses Verfahrens können Sie die Komponenten einer SharePoint-Website in Ihrem System durchlaufen. Komponenten von SharePoint-Websites wie Listendefinitionen und Inhaltstypen werden in einem Knoten namens **SharePoint-Verbindungen** in der Strukturansicht des **Server-Explorers** angezeigt. Zum Anzeigen des **Server-Explorers** müssen Sie in der Menüleiste auf **Ansicht** > **Server-Explorer** klicken. Neben dem Anzeigen der Komponenten der SharePoint-Website können Sie auch Elemente entfernen, ihre Eigenschaften anzeigen oder die Strukturansicht aktualisieren, indem Sie die Befehle im Kontextmenü verwenden.

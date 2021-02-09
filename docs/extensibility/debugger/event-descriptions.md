@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea477d3d21cd3b7a1a5352c736dc2f78195b99a4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a2d4ee971e2c53c9431982ef33483471a50c54bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915608"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851308"
 ---
 # <a name="event-descriptions"></a>Ereignis Beschreibungen
 Jeder Ereignistyp hat einen bestimmten Zweck.
 
 ## <a name="events-and-the-reasons-for-their-use"></a>Ereignisse und die Gründe für deren Verwendung
 
-|Ereignis|Beschreibung|
+|event|Beschreibung|
 |-----------|-----------------|
 |Dokument Ereignisse aktivieren|Tritt auf, wenn das Debug-Modul (de) möchte, dass die IDE öffnet oder ein Dokument in den Vordergrund bringt.|
 |Haltepunkt-oder breakpointfehlerereignisse|Wird gesendet, wenn ein Breakpoint gebunden ist oder wenn ein Haltepunkt nicht gebunden werden kann und ein Fehler zurückgegeben wird.|
@@ -34,7 +34,7 @@ Jeder Ereignistyp hat einen bestimmten Zweck.
 |Dokument Text Ereignisse|Tritt auf, wenn Text in einem Dokument geändert wird. Diese Ereignisse werden nicht durch die- `IDebugEventCallBack2::Event` Methode gesendet.|
 |Engine-Erstellungs Ereignisse|Wird gesendet, wenn eine Engine erstmalig erstellt wird.|
 |Einstiegspunkt Ereignisse|Wird gesendet, wenn das decodierende Programm seinen Initialisierungs Code ausgeführt hat und den ersten Benutzer Einstiegspunkt erreicht hat.|
-|Ausnahme Ereignisse|Wird gesendet, wenn ein ausgelaufendes Programm auf eine Ausnahme trifft.|
+|Ausnahmeereignisse|Wird gesendet, wenn ein ausgelaufendes Programm auf eine Ausnahme trifft.|
 |Ereignisse beim Abschluss der Ausdrucks Auswertung|Wird gesendet, wenn die asynchrone Ausdrucks Auswertung beendet ist.|
 |Symbol Ereignisse suchen|Wird gesendet, wenn der Benutzer den Benutzer zum Suchen von Symbolen für ein Modul auffordern muss.|
 |Ereignisse beim Laden vervollständigen|Wird nur gesendet, wenn die anfängliche Programm Last fertiggestellt ist und der erste Code im Programm ausgeführt wird.|

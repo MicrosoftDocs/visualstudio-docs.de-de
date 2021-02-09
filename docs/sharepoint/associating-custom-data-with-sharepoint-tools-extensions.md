@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db32c05b4a1f4536e71b4ef233758f747a958327
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851714"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Zuordnen von benutzerdefinierten Daten zu SharePoint-Tools-Erweiterungen
   Sie können bestimmten Objekten in Erweiterungen von SharePoint-Tools benutzerdefinierte Daten hinzufügen. Dies ist hilfreich, wenn Sie Daten in einem Teil ihrer Erweiterung haben, auf den Sie später über anderen Code in ihrer Erweiterung zugreifen möchten. Anstatt eine benutzerdefinierte Methode zum Speichern und Zugreifen auf Daten zu implementieren, können Sie die Daten mit einem Objekt in ihrer Erweiterung verknüpfen und die Daten später aus demselben Objekt abrufen.
@@ -82,7 +82,7 @@ ms.locfileid: "94850402"
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Programmierkonzepte und Features für Erweiterungen für SharePoint-Tools](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Aktionsprojekt Elements mit einer Element Vorlage, Teil 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
