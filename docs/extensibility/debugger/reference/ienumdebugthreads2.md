@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbe047c08f8e91264163d028c1b40d94cde97fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e3771545d4a5fe545382344d17ed5ea929999d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852777"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 Diese Schnittstelle listet die Threads auf, die in der aktuellen Debugsitzung ausgeführt werden.
@@ -37,7 +37,7 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugThreads2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[Nächste](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Ruft eine angegebene Anzahl von Threads in der enumerationssequenz ab.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Überspringt eine angegebene Anzahl von Threads in einer enumerationssequenz.|

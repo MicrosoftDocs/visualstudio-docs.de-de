@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d7647575-0e06-4190-88f5-ca40b82209a4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56cb234e2295c5c9c08c2a2e9271e1c173524875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d4ee145d900a79a48db44f95a125e87bd10f67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851243"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 Diese Schnittstelle stellt Bytes des Arbeitsspeichers dar.
@@ -37,7 +37,7 @@ IDebugMemoryBytes2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugMemoryBytes2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|Liest eine Byte Sequenz, beginnend an einem angegebenen Speicherort.|
 |[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|Schreibt `dwCount` bytes, beginnend bei `pStartContext` .|

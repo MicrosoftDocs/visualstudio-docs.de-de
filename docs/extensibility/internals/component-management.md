@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 44ee1a3afe313cdc11bb28e0a24a89e3e3ad7f0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852725"
 ---
 # <a name="component-management"></a>Komponenten Verwaltung
 Aufgaben Einheiten in der Windows Installer werden als Windows Installer Komponenten (manchmal als "wics" oder "nur Komponenten" bezeichnet) bezeichnet. Eine GUID identifiziert jedes WIC, bei dem es sich um die grundlegende Einheit für die Installation und die Verweis Zählung für Setups handelt, die Windows Installer verwenden.
@@ -49,6 +49,6 @@ Aufgaben Einheiten in der Windows Installer werden als Windows Installer Kompone
 
      Wenn Sie dies tun, werden die freigegebenen Schlüssel überschrieben, wenn ein anderes VSPackage mit Versions Angabe installiert wird. Nachdem Sie die zweite Version entfernt haben, ist die Datei, auf die der Schlüssel verweist, nicht mehr vorhanden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Auswählen zwischen freigegebenen und versionierten VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage-Setup Szenarien](../../extensibility/internals/vspackage-setup-scenarios.md)

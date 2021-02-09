@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851685"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Übersicht über die BDC-Modell Entwurfs Tools
   Sie können ein BDC-Modell (Business Data Connectivity) mit dem BDC-Designer, dem Fenster der **BDC-Methoden Details** und dem **BDC-Explorer** entwerfen.
@@ -53,14 +53,14 @@ ms.locfileid: "94850311"
 
  Im Fenster " **BDC** -Methoden Details" können Sie schnell Finder-, spezifische Finder-, Ersteller-, Updater-und Deleter-Methoden generieren. Wenn Sie diese Methoden generieren, fügt Visual Studio der Methode Metadaten, z. b. Parameter, Instanzen und Typdeskriptoren, hinzu. Sie können diese Metadaten ändern, um ihr bestimmtes Szenario zu erfüllen.
 
- Um das Fenster " **Details der BDC-Methode** " zu öffnen, wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
+ Um das Fenster " **Details der BDC-Methode** " zu öffnen, wählen Sie in der Menüleiste   >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
 
  Um Methoden im Fenster " **BDC-Methoden Details** " anzuzeigen, wählen Sie die Entität im BDC-Designer aus. Die Methoden der ausgewählten Entität werden im Fenster " **BDC** -Methoden Details" angezeigt. Wenn Sie keine Entität im BDC-Designer auswählen, werden im Fenster " **BDC-Methoden Details** " keine Informationen angezeigt.
 
  Erweitern oder reduzieren Sie Knoten im Fenster **Details der BDC-Methode** , um Parameter, Instanzen und Filter Deskriptoren zu definieren. Verwenden Sie den **BDC-Explorer** , um Typdeskriptoren zu definieren.
 
 ## <a name="bdc-explorer"></a>BDC-Explorer
- Der **BDC-Explorer** zeigt die Elemente an, die das Modell bilden. Um den **BDC-Explorer** zu öffnen, klicken Sie in der **View** Menüleiste auf  >  **anderen Windows**  >  **BDC-Explorer** anzeigen. Um das Modell zu durchsuchen, erweitern Sie die Knoten im **BDC-Explorer**. Jeder Knoten stellt ein Element im XML-Code der Modelldatei dar.
+ Der **BDC-Explorer** zeigt die Elemente an, die das Modell bilden. Um den **BDC-Explorer** zu öffnen, klicken Sie in der Menüleiste auf  >  **anderen Windows**  >  **BDC-Explorer** anzeigen. Um das Modell zu durchsuchen, erweitern Sie die Knoten im **BDC-Explorer**. Jeder Knoten stellt ein Element im XML-Code der Modelldatei dar.
 
  Wenn Sie Knoten im **BDC-Explorer** auswählen, werden die Eigenschaften der einzelnen Knoten, die Sie auswählen, im **Eigenschaften** Fenster angezeigt. Viele dieser Eigenschaften entsprechen Attributen in der Modelldatei. Sie können das Modell durchsuchen, indem Sie im oberen Bereich des **BDC-Explorers** das Suchfeld verwenden.
 
@@ -75,7 +75,7 @@ ms.locfileid: "94850311"
 
  Weitere Informationen finden Sie unter Gewusst [wie: Definieren des Typdeskriptors für einen Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)
 - [Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)

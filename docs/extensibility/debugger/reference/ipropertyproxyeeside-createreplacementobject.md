@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30e2b8037059824bd514024e6fb86561406895c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852829"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Erstellt eine Kopie eines Datenobjekts, das spezifisch für die-Ausdrucks Auswertung (EE) ist.
@@ -28,16 +28,16 @@ Erstellt eine Kopie eines Datenobjekts, das spezifisch für die-Ausdrucks Auswer
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT CreateReplacementObject(
-   IEEDataStorage*  dataIn,
-   IEEDataStorage** dataOut
+HRESULT CreateReplacementObject(
+   IEEDataStorage*  dataIn,
+   IEEDataStorage** dataOut
 );
 ```
 
 ```csharp
-int CreateReplacementObject(
-   IEEDataStorage     dataIn,
-   out IEEDataStorage dataOut
+int CreateReplacementObject(
+   IEEDataStorage     dataIn,
+   out IEEDataStorage dataOut
 );
 ```
 

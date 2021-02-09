@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851438"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Erstellen eines WPF-Toolbox-Steuer Elements
 
@@ -33,7 +33,7 @@ Ab Visual Studio 2015 installieren Sie das Visual Studio SDK nicht aus dem Downl
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen `MyToolboxControl` . Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine **WPF-Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `MyToolboxControl` . Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **WPF-Toolbox-Steuer** Element aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *MyToolboxControl.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine **WPF-Toolbox-Steuer** Element Vorlage mit dem Namen hinzu `MyToolboxControl` . Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie   >  **Neues Element** hinzufügen aus. Navigieren Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **WPF-Toolbox-Steuer** Element aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Namen der Befehlsdatei in *MyToolboxControl.cs*.
 
     Die Lösung enthält jetzt ein Benutzer Steuerelement, ein, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> das das Steuerelement der **Toolbox** hinzufügt, und einen **Microsoft. VisualStudio. ToolboxControl** -Asset-Eintrag im VSIX-Manifest für die Bereitstellung.
 

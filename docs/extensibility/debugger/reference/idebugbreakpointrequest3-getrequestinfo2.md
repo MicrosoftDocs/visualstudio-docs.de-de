@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 33942e4a-0a0a-49e8-a693-004954f6d38a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5febf664da9cd69dbd88b70056d9eac953bf581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a11a317b4f14d94670a454a97be321b3097cffeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852985"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Diese Methode ruft die Haltepunkt-Anforderungs Informationen ab, die diese breakpointanforderung beschreiben.
@@ -28,9 +28,9 @@ Diese Methode ruft die Haltepunkt-Anforderungs Informationen ab, die diese break
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetRequestInfo2(
-   BPREQI_FIELDS      dwFields,
-   BP_REQUEST_INFO2*  bBPRequestInfo
+HRESULT GetRequestInfo2(
+   BPREQI_FIELDS      dwFields,
+   BP_REQUEST_INFO2*  bBPRequestInfo
 );
 ```
 

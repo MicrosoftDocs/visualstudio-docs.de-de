@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e586470208989dce070c92963fc215f1053559a4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 24a9b8dfa8036603c035a9112eb29688eab7ff25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852608"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Entwurfselemente von Quellcodeverwaltungs-VSPackages
 Die Themen in diesem Abschnitt beschreiben die Struktur, die das VSPackage der Quell Code Verwaltung für die umfassende Integration implementieren muss. Außerdem werden die Schnittstellen und Dienste aufgelistet, die vom VSPackage für die Quell Code Verwaltung implementiert werden können, sowie die Schnittstellen und Dienste, die das VSPackage der Quell Code Verwaltung von anderen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponenten zur Unterstützung des Quell Code Verwaltungsmodells verwenden kann.

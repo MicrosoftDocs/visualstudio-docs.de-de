@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d20a1180e1162e7de3aee1c5d69facf8c193910
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12016ae7d03913d1880015a6b8cf318b14c94af5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851074"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Diese Schnittstelle stellt eine Position im Adressraum des Computers dar, auf dem das gedestete Programm ausgeführt wird.
@@ -37,7 +37,7 @@ IDebugMemoryContext2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugMemoryContext2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|Ruft den vom Benutzer anzeigbaren Namen für diesen Kontext ab.|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|Ruft Informationen ab, die diesen Kontext beschreiben.|

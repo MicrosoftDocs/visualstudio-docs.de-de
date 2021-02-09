@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1961aaf45478f25ed8eb55d8eda91a5c4eafc4dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852946"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Ruft den Wert ab, auf den als eine Reihe von aufeinander folgenden Bytes gezeigt wird.
@@ -28,7 +28,7 @@ Ruft den Wert ab, auf den als eine Reihe von aufeinander folgenden Bytes gezeigt
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetBytes( 
+HRESULT GetBytes( 
    DWORD  dwStart,
    DWORD  dwCount,
    BYTE*  pBytes,

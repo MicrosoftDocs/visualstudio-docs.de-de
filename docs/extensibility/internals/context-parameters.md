@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852621"
 ---
 # <a name="context-parameters"></a>Kontextparameter
 In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) können Sie Assistenten zu den Dialogfeldern **Neues Projekt**, **Neues Element hinzu** fügen oder **Unterprojekt hinzufügen** hinzufügen. Die hinzugefügten Assistenten sind im Menü **Datei** verfügbar, oder Sie klicken mit der rechten Maustaste auf ein Projekt in **Projektmappen-Explorer**. Die IDE übergibt Kontext Parameter an die Implementierung des Assistenten. Die Kontext Parameter definieren den Status des Projekts, wenn der Assistent von der IDE aufgerufen wird.
@@ -60,7 +60,7 @@ In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten
 | `InstallationDirectory` | Verzeichnispfad der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Installation. |
 | `Silent` | Boolescher Wert, der angibt, ob der Assistent im Hintergrund ausgeführt werden soll, als ob auf **Fertig** stellen geklickt wurde ( `TRUE` ). |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md)
