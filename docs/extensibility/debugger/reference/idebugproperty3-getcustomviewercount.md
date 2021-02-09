@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16cb623f58668362e5e308e1d66dfd6ca7c0fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffdca7e4a556a72c8fb7f3f533e69d47fa289732
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896089"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Ruft die Anzahl der benutzerdefinierten Viewer ab, die möglicherweise für diese Eigenschaft verfügbar sind.

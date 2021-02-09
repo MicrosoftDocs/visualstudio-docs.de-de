@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 65217e8b-15a6-4446-92b0-4cff1c6220f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 61a23eb1fcb3cbae9e478f35b3ac1fdb6abaf407
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895478"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Optionaler Vergleich des lokalen Projektordners mit dem Speicher der Quellcodeverwaltung
 In der Quellcodeverwaltungs-Plug-in-API 1,2 wird der Vergleich zwischen dem lokalen Projektordner und der Quell Code Verwaltung mithilfe der Funktionen [sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) und [sccdirdiff](../../extensibility/sccdirdiff-function.md)durchgeführt.

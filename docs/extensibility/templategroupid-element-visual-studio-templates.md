@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d9db0d2744648901a9389bd2d2805d8c6a4073ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895361"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID-Element (Visual Studio-Vorlagen)
 Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses Element ist wichtig, wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) auf festgelegt ist `false` . Wenn [ShowByDefault (Visual Studio-Vorlagen)](../extensibility/showbydefault-visual-studio-templates.md) auf festgelegt ist `true` , ist eine Element Vorlage in allen Projekttypen verfügbar.
@@ -55,7 +55,7 @@ Gibt an, in welcher Art von Projekt eine Elementvorlage angezeigt wird. Dieses E
 
  Der Text gibt einen Bezeichner für eine Kategorie von Elementvorlagen an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `TemplateGroupID` ist ein Element.
 
  Der Wert des- `TemplateGroupID` Elements wird zusammen mit der Projekt Systemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<version number>* \projects \\ ) zum Filtern von Vorlagen verwendet, die im Dialogfeld **Neues Element hinzufügen** angezeigt werden.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cd49644e670df42f4630af987a5e9152b4f6c95
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d43737467ca063cfcfa6ef99cb8df5a31395c3ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895444"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-1"></a>Parameter Informationen in einem Legacy Sprachdienst 1
 Der IntelliSense-Parameter Info QuickInfo bietet Benutzern Hinweise dazu, wo Sie sich in einem Sprachkonstrukt befinden.

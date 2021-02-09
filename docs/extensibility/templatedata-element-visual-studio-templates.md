@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 423bcc7b3d902488f268b2d0706cb5126125f37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895387"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData-Element (Visual Studio-Vorlagen)
 Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
@@ -47,7 +47,7 @@ Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues 
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-| Element | BESCHREIBUNG |
+| Element | Beschreibung |
 | - | - |
 | [Name](../extensibility/name-element-visual-studio-templates.md) | Erforderliches Element.<br /><br /> Gibt den Namen der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird. |
 | [Beschreibung](../extensibility/description-element-visual-studio-templates.md) | Erforderliches Element.<br /><br /> Gibt die Beschreibung der Vorlage an, wie Sie im Dialogfeld **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird. |
@@ -74,11 +74,11 @@ Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues 
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, die Element Vorlage oder Starter Kit.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `TemplateData` ist ein erforderliches Element.
 
  Wenn Sie kein optionales Element einschließen, wird der Standardwert für dieses Element verwendet.

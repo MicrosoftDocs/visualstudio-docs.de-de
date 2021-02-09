@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 997f4e32007af641b24ba933d2c891e447382786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895829"
 ---
 # <a name="extend-projects"></a>Erweitern von Projekten
 Projekte und Projektmappen sind die Möglichkeiten, wie Visual Studio Code-und Ressourcen Dateien in Kompilierungs-und Bereitstellungs Einheiten organisiert. Weitere Informationen zu Projekten in [Projekten (Visual Studio SDK)](../extensibility/extending-projects.md)finden Sie hier.

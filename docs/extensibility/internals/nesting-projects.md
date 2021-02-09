@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 464538d7f7be68737715cb6fd10fda4017a5556a
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 306099f1fc65a211943e4fb25a5cd73ad6195ea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895673"
 ---
 # <a name="nesting-projects"></a>Schachteln von Projekten
 Unternehmens Anwendungsentwickler, die ihr vs-Paket verwenden, können ähnliche Projekttypen in mithilfe der Projekt Schachtelung bequem gruppieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  Beispielsweise verwendet das Enterprise-Vorlagen Projekt für die Gruppierung von Projekten in Kategorien. Geschäfts Fassaden Projekte, Webbenutzer Oberflächen Projekte usw. werden in einer Kategorie zusammengefasst.
@@ -41,5 +41,5 @@ Unternehmens Anwendungsentwickler, die ihr vs-Paket verwenden, können ähnliche
 - [Implementieren der Befehlsbehandlung für geschachtelte Projekte](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtern des AddItem-Dialogfelds für geschachtelte Projekte](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Kontextparameter](../../extensibility/internals/context-parameters.md)
+- [Kontext Parameter](../../extensibility/internals/context-parameters.md)
 - [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

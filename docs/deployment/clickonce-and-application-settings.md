@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e51b850fa10ac660fbc3bd3a06428ddb92a060c4
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 96491dc192b6578abd725d5d69b7c9093e92b20c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896389"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce und Anwendungseinstellungen
 Anwendungseinstellungen für Windows Forms erleichtern das Erstellen, speichern und Verwalten von benutzerdefinierten Einstellungen für Anwendungen und Benutzer auf dem Client. Im folgenden Dokument wird beschrieben, wie Anwendungs Einstellungsdateien in einer ClickOnce-Anwendung funktionieren und wie ClickOnce Einstellungen migriert, wenn der Benutzer auf die nächste Version aktualisiert wird.
@@ -29,7 +29,7 @@ Anwendungseinstellungen für Windows Forms erleichtern das Erstellen, speichern 
  Die folgenden Informationen gelten nur für den Standardanbieter für Anwendungseinstellungen, die- <xref:System.Configuration.LocalFileSettingsProvider> Klasse. Wenn Sie einen benutzerdefinierten Anbieter angeben, legt dieser Anbieter fest, wie seine Daten gespeichert werden und wie seine Einstellungen zwischen den Versionen aktualisiert werden. Weitere Informationen zu Anwendungs Einstellungs Anbietern finden Sie unter [Architektur der Anwendungseinstellungen](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
 ## <a name="application-settings-files"></a>Dateien für Anwendungseinstellungen
- Die Anwendungseinstellungen verbrauchen zwei Dateien: *\<app>.exe.config* und *user.config* , wobei *App* der Name Ihrer Windows Forms Anwendung ist. *user.config* wird auf dem Client erstellt, wenn die Anwendung zum ersten Mal benutzerspezifische Einstellungen speichert. *\<app>.exe.config* hingegen vor der Bereitstellung vorhanden ist, wenn Sie Standardwerte für Einstellungen definieren. Diese Datei wird von Visual Studio automatisch angezeigt, wenn Sie den **Veröffentlichungs** Befehl verwenden. Wenn Sie die ClickOnce-Anwendung mit *Mage.exe* oder *MageUI.exe* erstellen, müssen Sie sicherstellen, dass diese Datei in den anderen Dateien Ihrer Anwendung enthalten ist, wenn Sie das Anwendungs Manifest auffüllen.
+ Die Anwendungseinstellungen verbrauchen zwei Dateien: *\<app>.exe.config* und *user.config*, wobei *App* der Name Ihrer Windows Forms Anwendung ist. *user.config* wird auf dem Client erstellt, wenn die Anwendung zum ersten Mal benutzerspezifische Einstellungen speichert. *\<app>.exe.config* hingegen vor der Bereitstellung vorhanden ist, wenn Sie Standardwerte für Einstellungen definieren. Diese Datei wird von Visual Studio automatisch angezeigt, wenn Sie den **Veröffentlichungs** Befehl verwenden. Wenn Sie die ClickOnce-Anwendung mit *Mage.exe* oder *MageUI.exe* erstellen, müssen Sie sicherstellen, dass diese Datei in den anderen Dateien Ihrer Anwendung enthalten ist, wenn Sie das Anwendungs Manifest auffüllen.
 
  In einer Windows Forms Anwendung, die nicht mit ClickOnce bereitgestellt wird, wird die *\<app>.exe.config* Datei einer Anwendung im Anwendungsverzeichnis gespeichert, während die *user.config* Datei im Ordner " **Dokumente und Einstellungen** " des Benutzers gespeichert wird. In einer ClickOnce-Anwendung befindet sich *\<app>.exe.config* im Anwendungsverzeichnis innerhalb des ClickOnce-Anwendungs Caches, und *user.config* im ClickOnce-Datenverzeichnis für diese Anwendung.
 
@@ -54,8 +54,8 @@ Wenn Sie Ihre eigene Wrapper Klasse für Anwendungseinstellungen erstellt haben 
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce-und Roamingeinstellungen
  ClickOnce funktioniert nicht mit den Roamingeinstellungen, mit denen Ihre Einstellungsdatei auf die Computer in einem Netzwerk folgen kann. Wenn Sie Roamingeinstellungen benötigen, müssen Sie entweder einen Anwendungs Einstellungs Anbieter implementieren, der Einstellungen über das Netzwerk speichert, oder eigene benutzerdefinierte Einstellungs Klassen zum Speichern von Einstellungen auf einem Remote Computer entwickeln. Weitere Informationen zu Einstellungs Anbietern finden Sie unter [Architektur der Anwendungseinstellungen](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
-## <a name="see-also"></a>Siehe auch
-- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>Weitere Informationen
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Übersicht über Anwendungseinstellungen](/dotnet/framework/winforms/advanced/application-settings-overview)
 - [Übersicht über den ClickOnce-Cache](../deployment/clickonce-cache-overview.md)
 - [Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

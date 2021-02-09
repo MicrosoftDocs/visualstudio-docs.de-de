@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895751"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -362,7 +362,7 @@ Wählen Sie in der IDE unter dem Menü Element Hilfe die Option **Debughilfe Kon
 
 In der folgenden Tabelle ist jede Zeichenfolge, die zwischen eckigen Klammern steht, ein Platzhalter, der durch einen anerkannten Wert ersetzt werden muss. In \<meta name="Microsoft.Help.Locale" content="[language code]" /> muss "[Sprachcode]" z. b. durch einen Wert wie "en-US" ersetzt werden.
 
-| Property (HTML-Darstellung) | BESCHREIBUNG |
+| Property (HTML-Darstellung) | Beschreibung |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | Legt ein Gebiets Schema für dieses Thema fest. Wenn dieses Tag in einem Thema verwendet wird, muss es nur einmal verwendet werden, und es muss über alle anderen Microsoft-Hilfe Tags eingefügt werden. Wenn dieses Tag nicht verwendet wird, wird der Textkörper des Themas mithilfe der Wörter Trennung indiziert, die dem Gebiets Schema des Produkts zugeordnet ist, sofern angegeben. Andernfalls wird die Wörter Trennung "en-US" verwendet. Dieses Tag entspricht der ISOC RFC 4646. Um sicherzustellen, dass die Microsoft-Hilfe ordnungsgemäß funktioniert, verwenden Sie diese Eigenschaft anstelle des allgemeinen sprach Attributs. |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | Legt ein Gebiets Schema für dieses Thema fest, wenn auch andere Gebiets Schemas verwendet werden. Wenn dieses Tag in einem Thema verwendet wird, muss es nur einmal verwendet werden. Verwenden Sie dieses Tag, wenn der Katalog Inhalte in mehr als einer Sprache enthält. Mehrere Themen in einem Katalog können dieselbe ID aufweisen, aber jeder muss eine eindeutige topiclocale angeben. Das Thema, das ein topiclocale angibt, das mit dem Gebiets Schema des Katalogs übereinstimmt, ist das Thema, das im Inhaltsverzeichnis angezeigt wird. Allerdings werden alle Sprachversionen des Themas in den Suchergebnissen angezeigt. |
@@ -447,7 +447,7 @@ Hinweis: die von "{n}" notierten Variablen weisen Code Abhängigkeiten auf. Wenn
 
 **Branding.xml**
 
-| Element | BESCHREIBUNG |
+| Element | Beschreibung |
 | - | - |
 | Feature: | **Redusiblearea** |
 | Verwendung: | Erweitern des Inhalts Steuer Elements "reduziert" |
@@ -565,7 +565,7 @@ Die branding.js Datei enthält JavaScript, das von den Visual Studio Help Viewer
 
 Das Branding-Paket enthält eine Reihe von htm-Dateien, die Szenarien für die Kommunikation von Schlüsselinformationen zur Unterstützung von Inhalts Benutzern unterstützen, z. b. eine Startseite, die einen Abschnitt enthält, in dem beschrieben wird, welche Inhalts Sätze installiert werden, und Seiten, die dem Benutzer mitteilen, wenn Themen in der lokalen Diese HTM-Dateien können pro Produkt geändert werden.  ISO-Shell-Anbieter können das standardmäßige brandingpaket übernehmen und das Verhalten und den Inhalt dieser Seiten ändern, um Ihre Anforderungen zu erfassen.  Diese Dateien verweisen auf das jeweilige brandingpaket, damit die brandingtags den entsprechenden Inhalt aus der branding.xml Datei erhalten.
 
-|**File**|**Verwenden Sie**|**Quelle der angezeigten Inhalte**|
+|**Datei**|**Verwenden Sie**|**Quelle der angezeigten Inhalte**|
 |-|-|-|
 |homepage.htm|Dies ist eine Seite, auf der der aktuell installierte Inhalt und jede andere Meldung angezeigt wird, die dem Benutzer für seinen Inhalt zur Verfügung steht.  Diese Datei enthält das zusätzliche Meta-Daten Attribut "Microsoft.Help.ID" Content = "-1", mit dem dieser Inhalt am oberen Rand des lokalen Inhalts Inhaltsverzeichnis platziert wird.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, Tag \<HomePageTitle>|
@@ -599,7 +599,7 @@ Branding. CSS-Dateien enthalten Definitionen für die Visual Studio-Themen Präs
 
 Visual Studio-Inhalt zeigt ein Visual Studio-Logo und andere Grafiken an.  Die komplette Liste der Grafikdateien im Visual Studio Help Viewer-Branding-Paket ist unten dargestellt.
 
-|**File**|**Verwenden Sie**|**Beispiele**|
+|**Datei**|**Verwenden Sie**|**Beispiele**|
 |-|-|-|
 |clear.gif|Wird zum Rendering des redusible-Bereichs verwendet.||
 |footer_slice.gif|Footer-Präsentation||
@@ -696,7 +696,7 @@ Wenn Sie die oben beschriebenen Schritte verwenden und erweitern, kann VSPs ihre
 
 ### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Hinzufügen von Hilfe zur Visual Studio Shell (integriert und isoliert)
 
-**Einführung**
+**Introduction (Einführung)**
 
 In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie Hilfe Inhalte in eine Visual Studio Shell-Anwendung integrieren und dann bereitstellen.
 

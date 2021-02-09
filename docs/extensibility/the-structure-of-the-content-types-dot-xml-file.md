@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 38348661946be3894332d49177f972410563b716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895206"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Die Struktur der [Content_types].xml-Datei
 Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Studio verwendet die Datei [Content_Types]. XML, um das Paket zu installieren, aber die Datei selbst wird nicht installiert.
@@ -33,32 +33,32 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
 
 ### <a name="root-element"></a>Root-Element
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |`Types`|Enthält untergeordnete Elemente, die die Dateitypen im VSIX-Paket auflisten.|
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Xmlns`|(Erforderlich) Der Speicherort des Schemas, das für diese [Content_Types]. XML-Datei verwendet wird.|
 
 ### <a name="attribute-name-attribute"></a>{Attribut Name} Versehen
 
-| Wert | BESCHREIBUNG |
+| Wert | Beschreibung |
 | - | - |
 | `http://schemas.openformats.org/package/2006/content-types` | Der Speicherort des Inhaltstypen Schemas. |
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Das `Types`-Element kann eine beliebige Anzahl von `Default`-Elementen enthalten.
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |`Default`|Beschreibt einen Inhaltstyp im VSIX-Paket. Jeder Dateityp im Paket muss über ein eigenes- `Default` Element verfügen.|
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|BESCHREIBUNG|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`Extension`|Die Dateinamenerweiterung einer Datei im VSIX-Paket.|
 |`ContentType`|Beschreibt die Art des Inhalts, der der Dateinamenerweiterung zugeordnet ist.|
@@ -66,7 +66,7 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
 ### <a name="attribute-name-attribute"></a>{Attribut Name} Versehen
  In Visual Studio werden die folgenden `ContentType` Werte für die zugeordneten `Extension` Typen erkannt.
 
-|Durchwahl|ContentType|
+|Erweiterung|ContentType|
 |---------------|-----------------|
 |txt|text/plain|
 |pkgdef|text/plain|
@@ -85,7 +85,7 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
 
 ## <a name="example"></a>Beispiel
 
-### <a name="description"></a>BESCHREIBUNG
+### <a name="description"></a>Beschreibung
  In der folgenden [Content_Types]. XML-Datei wird ein typisches VSIX-Paket beschrieben.
 
 ### <a name="code"></a>Code

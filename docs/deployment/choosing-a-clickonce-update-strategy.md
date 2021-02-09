@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d546b48ffbbb4d44fb5f2ced11f41826370403e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895075"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Auswählen einer Strategie für die ClickOnce-Aktualisierung
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kann automatische Anwendungsupdates bereitstellen. Eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung liest in regelmäßigen Abständen die Bereitstellungsmanifestdatei, um zu prüfen, ob Anwendungsupdates verfügbar sind. Falls verfügbar, wird die neue Version der Anwendung heruntergeladen und ausgeführt. Aus Leistungsgründen werden nur die Dateien heruntergeladen, die sich geändert haben.
@@ -45,7 +45,7 @@ ms.locfileid: "94437603"
 
  Um diese Updatestrategie zu aktivieren, klicken Sie im Dialogfeld **Anwendungsupdates** im Bereich **Zeitpunkt auswählen, wann die Anwendung auf Updates überprüfen soll** auf **Nach dem Starten der Anwendung**. Geben Sie dann im Abschnitt **Häufigkeit der Überprüfung auf Updates angeben** ein Updateintervall an.
 
- Dies entspricht der im Folgenden dargestellten Änderung des **Update** -Elements im Bereitstellungsmanifest:
+ Dies entspricht der im Folgenden dargestellten Änderung des **Update**-Elements im Bereitstellungsmanifest:
 
 ```xml
 <!-- When to check for updates -->
@@ -63,7 +63,7 @@ ms.locfileid: "94437603"
 
  Um diese Updatestrategie zu aktivieren, klicken Sie im Dialogfeld **Anwendungsupdates** im Bereich **Zeitpunkt auswählen, wann die Anwendung auf Updates überprüfen soll** auf **Vor Start der Anwendung**.
 
- Dies entspricht der im Folgenden dargestellten Änderung des **Update** -Elements im Bereitstellungsmanifest:
+ Dies entspricht der im Folgenden dargestellten Änderung des **Update**-Elements im Bereitstellungsmanifest:
 
 ```xml
 <!-- When to check for updates -->
@@ -82,9 +82,9 @@ ms.locfileid: "94437603"
 > [!NOTE]
 > Auch wenn mit den anderen Updatestrategien Updates als obligatorisch gekennzeichnet werden können, ist es nur mit der Aktivierung von **Vor Start der Anwendung** möglich, das Ausführen einer älteren Version zu verhindern. Wenn das obligatorische Update beim Start ermittelt wird, muss der Benutzer entweder das Update akzeptieren oder die Anwendung schließen.
 
- Um ein Update als obligatorisch zu kennzeichnen, klicken Sie im Dialogfeld **Anwendungsupdates** auf **Geben Sie die mindestens erforderliche Version für diese Anwendung an**. Geben Sie anschließend die Veröffentlichungsversion an ( **Hauptversion** , **Nebenversion** , **Build** , **Revision** ). Sie gibt die niedrigste Versionsnummer der Anwendung an, die installiert werden kann.
+ Um ein Update als obligatorisch zu kennzeichnen, klicken Sie im Dialogfeld **Anwendungsupdates** auf **Geben Sie die mindestens erforderliche Version für diese Anwendung an**. Geben Sie anschließend die Veröffentlichungsversion an (**Hauptversion**, **Nebenversion**, **Build**, **Revision**). Sie gibt die niedrigste Versionsnummer der Anwendung an, die installiert werden kann.
 
- Dies entspricht dem Festlegen des **minimumRequiredVersion** -Attributs des **Deployment** -Elements im Bereitstellungsmanifest, z.B.:
+ Dies entspricht dem Festlegen des **minimumRequiredVersion**-Attributs des **Deployment**-Elements im Bereitstellungsmanifest, z.B.:
 
 ```xml
 <deployment install="true" minimumRequiredVersion="1.0.0.0">
@@ -95,7 +95,7 @@ ms.locfileid: "94437603"
 
  Um das Updateintervall anzugeben, legen Sie im Dialogfeld **Anwendungsupdates** die Eigenschaften unter **Häufigkeit der Überprüfung auf Updates angeben** fest.
 
- Dies entspricht dem Festlegen des **maximumAge** - und **unit** -Attributs des **Update** -Elements im Bereitstellungsmanifest.
+ Dies entspricht dem Festlegen des **maximumAge**- und **unit**-Attributs des **Update**-Elements im Bereitstellungsmanifest.
 
  So können Sie beispielsweise angeben, dass die Anwendung bei jedem Ausführen, einmal die Woche oder einmal im Monat eine Überprüfung durchführt. Wenn zum angegebenen Zeitpunkt keine Netzwerkverbindung vorhanden ist, wird die Suche nach Updates beim nächsten Ausführen der Anwendung durchgeführt.
 
@@ -120,9 +120,9 @@ ms.locfileid: "94437603"
 
  Wenn Sie die Bereitstellung vertrauenswürdiger Anwendungen verwenden, wird keine Eingabeaufforderung für Vertrauensebenen angezeigt. Weitere Informationen finden Sie unter [Übersicht über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:System.Deployment.Application>
-- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Ausführung von Anwendungsupdates durch ClickOnce](../deployment/how-clickonce-performs-application-updates.md)
