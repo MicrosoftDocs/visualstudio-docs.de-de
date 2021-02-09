@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d01485a6044122baf460eede90470c5cc1478323
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913005"
 ---
 # <a name="bp_type"></a>BP_TYPE
 Gibt an, ob sich der Haltepunkt an einem Code Speicherort befindet, ob es sich um einen Daten Speicherort handelt oder ob es sich um einen anderen Haltepunkt

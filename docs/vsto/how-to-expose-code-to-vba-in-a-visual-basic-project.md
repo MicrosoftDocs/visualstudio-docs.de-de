@@ -15,15 +15,15 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 61f94ebb5ed0c5e76693ddc8c0717b6adf9222f3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 69ef8b47ac4038b466d0ebf859832bd4363403cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913489"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Gewusst wie: verfügbar machen von Code für VBA in einem Visual Basic Projekt
   Sie können Code in einem [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] Projekt zum Visual Basic for Applications (VBA-Code) verfügbar machen, wenn Sie möchten, dass die beiden Code Typen miteinander interagieren.
@@ -117,7 +117,7 @@ ms.locfileid: "96845985"
 
 9. Erstellen Sie das Projekt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
 - [Kombinieren von VBA und Anpassungen auf Dokument Ebene](../vsto/combining-vba-and-document-level-customizations.md)

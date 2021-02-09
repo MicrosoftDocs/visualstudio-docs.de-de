@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913674"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Vorgehensweise: Importieren einer Master Seite oder eines Designs
   Sie können Seiten auf Ihrer SharePoint-Website ein konsistentes Erscheinungsbild bereit halten, indem Sie Masterseiten und Designs erstellen und verwenden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bietet keine Vorlagen für diese Elemente, Sie können Sie jedoch in SharePoint Designer erstellen und dann in importieren [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Weitere Informationen finden Sie unter [Baustein: Seiten und Benutzeroberfläche](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) auf der Microsoft-Website.
@@ -31,7 +31,7 @@ ms.locfileid: "94903493"
 
      Weitere Informationen zum Erstellen eines SharePoint-Projekts finden Sie unter [SharePoint-Projekt-und Projekt Element Vorlagen](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+2. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 3. Erweitern Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
@@ -85,7 +85,7 @@ ms.locfileid: "94903493"
     > [!NOTE]
     > Da Designs nur auf die Website Sammlungs Ebene angewendet werden, wird empfohlen, dass Sie den Bereich eines Designs nicht auf " **Site**" festlegen. Fehler können auftreten, wenn ein Design in einer unter Website verwendet wird.
 
-12. Wählen Sie in der Menüleiste **Erstellen** Projekt Mappe erstellen aus  >  **Deploy Solution**.
+12. Wählen Sie in der Menüleiste **Erstellen** Projekt Mappe erstellen aus  >  .
 
 13. Um zu überprüfen, ob die Dateien ordnungsgemäß bereitgestellt wurden, öffnen Sie die SharePoint-Website, wählen Sie das Menü **Website Aktionen** aus, wählen Sie den Befehl **Site Einstellungen** aus, und wählen Sie dann entweder den Link **Master Seiten** **oder den Link** Designs.
 

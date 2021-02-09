@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 22fe46e2876b14551637dd97712e1728816b020e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913707"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Vorgehensweise: Bereitstellen und Veröffentlichen einer SharePoint-Lösung auf einer lokalen SharePoint-Website
   Sie können SharePoint-Lösungen auf einem lokalen SharePoint-Server auf dem Entwicklungs Computer bereitstellen oder veröffentlichen. Beim Bereitstellungs Prozess wird die *wsp* -Datei auf den SharePoint-Server kopiert, die Projekt Mappe installiert und anschließend die Funktionen aktiviert. Beim Veröffentlichungsprozess wird die *wsp* -Datei nur auf den SharePoint-Server kopiert und installiert. Sie müssen Sie manuell aktivieren, um Sie in SharePoint zu aktivieren.
