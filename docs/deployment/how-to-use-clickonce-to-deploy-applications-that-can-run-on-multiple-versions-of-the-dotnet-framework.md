@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67dcee1fac0b5ec082a7f92285c6c0ac2523800a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c87ed73d2c3a26ecc4522c6497ac71e33e46a6c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889121"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Vorgehensweise: Verwenden von ClickOnce zum Bereitstellen von Anwendungen, die unter mehreren Versionen von .NET Framework ausgeführt werden können
 Mithilfe der ClickOnce-Bereitstellungs Technologie können Sie eine Anwendung bereitstellen, die mehrere Versionen der .NET Framework als Ziel hat. Dies erfordert, dass Sie die Anwendungs-und Bereitstellungs Manifeste generieren und aktualisieren.
@@ -106,7 +106,7 @@ Mithilfe der ClickOnce-Bereitstellungs Technologie können Sie eine Anwendung be
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
-- [\<compatibleFrameworks> gewisses](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<dependency> gewisses](../deployment/dependency-element-clickonce-application.md)
+- [\<compatibleFrameworks>-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency>-Element](../deployment/dependency-element-clickonce-application.md)
 - [ClickOnce-Bereitstellungs Manifest](../deployment/clickonce-deployment-manifest.md)
 - [Konfigurationsdateischema](/dotnet/framework/configure-apps/file-schema/index)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01a46f54bfbce6126c16fa418d5c4bef53afd09b
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533920"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889004"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung
 
@@ -70,7 +70,7 @@ In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung verwendet, di
 
 6. Wählen Sie den Verleger aus, den Sie zum Hochladen der Erweiterung verwenden möchten. Sie können den Verleger ändern, indem Sie auf die auf der linken Seite aufgeführten Verleger Namen klicken. Klicken Sie auf **neue Erweiterung** , und wählen Sie **Visual Studio**.
 
-7. In **1: Hochladen der Erweiterung** können Sie auswählen, dass Sie eine VSIX-Datei direkt in Visual Studio Marketplace hochladen oder einfach einen Link zu ihrer eigenen Website hinzufügen. In diesem Beispiel wird die Erweiterung *testpublish. vsix* hochgeladen. Ziehen Sie die Erweiterung per Drag & Drop, oder **Klicken Sie** auf den Link klicken, um die Datei zu suchen. Suchen Sie die Erweiterung im Ordner "\bin\release" des Projekts.  Klicken Sie auf **Weiter**.
+7. In **1: Hochladen der Erweiterung** können Sie auswählen, dass Sie eine VSIX-Datei direkt in Visual Studio Marketplace hochladen oder einfach einen Link zu ihrer eigenen Website hinzufügen. In diesem Beispiel wird die Erweiterung *testpublish. vsix* hochgeladen. Ziehen Sie die Erweiterung per Drag & Drop, oder **Klicken Sie** auf den Link klicken, um die Datei zu suchen. Suchen Sie die Erweiterung im Ordner "\bin\release" des Projekts.  Klicken Sie auf **Continue**(Weiter).
 
 8. In **2: Geben Sie Erweiterungs Details** an. einige Felder werden automatisch aus der Datei " *Source. Extension. vsixmanifest* " aus der Erweiterung aufgefüllt. Weitere Details finden Sie unten:
 
@@ -92,7 +92,7 @@ In diesem Artikel wird eine standardmäßige VSPackage-Erweiterung verwendet, di
 
     * Die **Unterstützte Visual Studio-Edition** ermöglicht Ihnen die Auswahl der Editionen von Visual Studio, in denen Ihre Erweiterung funktioniert. Die Erweiterung wird nur für diese Editionen installiert.
 
-    * **Art:** Der häufigste Erweiterungstyp **ist Extras**.
+    * **Typ**. Der häufigste Erweiterungstyp **ist Extras**.
 
     * **Kategorien**. Wählen Sie bis zu drei aus, die für Ihre Erweiterung am besten geeignet sind.
 
@@ -160,7 +160,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die neue Releaseversion ihrer E
 
     - **Unterstützte Visual Studio-Edition** \* ermöglicht Ihnen die Auswahl der Editionen von Visual Studio, in denen Ihre Erweiterung funktioniert. Die Erweiterung wird nur in diesen Editionen installiert.
 
-    - **Art:** Der häufigste Erweiterungstyp **ist Extras**.
+    - **Typ**. Der häufigste Erweiterungstyp **ist Extras**.
 
     - **Kategorien**. Wählen Sie bis zu drei aus, die für Ihre Erweiterung am besten geeignet sind.
 

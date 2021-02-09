@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], moving items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7b247df68827767a53d8d066f4750dfa9da52ac7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 770f056dc681e1ee2cd6704f9bd1d42afae4957b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888861"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Gewusst wie: Programm gesteuertes Verschieben von Elementen in Outlook
   In diesem Beispiel werden ungelesene e-Mail-Nachrichten aus dem **Posteingang** in den Ordner **Test** verschoben Im Beispiel werden nur Nachrichten mit dem Wort **Test** im- `Subject` Feld verschoben.

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - workbooks, moving worksheets in
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 165ac8f440b33d68dc70530731a5528ae23726b0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 427f3f47e141d9c3ae17bab4b253389c68d4dc1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888783"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Gewusst wie: Programm gesteuertes Verschieben von Arbeitsblättern in Arbeitsmappen
   Sie können die Position von Arbeitsblättern relativ zu anderen Arbeitsblättern in einer Arbeitsmappe programmgesteuert ändern. Wenn Sie keine Position für das zu verschiebende Blatt angeben, erstellt Excel eine neue Arbeitsmappe, in der das Blatt enthalten ist.

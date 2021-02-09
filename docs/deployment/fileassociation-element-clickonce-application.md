@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7435a4e4973ee0a000555e9508328a76f7aa59a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889147"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation- &gt; Element (ClickOnce-Anwendung)
 Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll.
@@ -49,7 +49,7 @@ Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll.
 |`progid`|Erforderlich. Ein Name, der den Dateityp eindeutig identifiziert.|
 |`defaultIcon`|Erforderlich. Gibt das Symbol an, das für Dateien mit dieser Erweiterung verwendet werden soll. Die Symbol Datei muss mithilfe des- [ \<file> Elements](../deployment/file-element-clickonce-application.md) innerhalb des [-Elements angegeben werden, das \<assembly> ](../deployment/assembly-element-clickonce-application.md) dieses Element enthält.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Dieses Element muss einen XML-Namespace Verweis auf "urn: Schemas-Microsoft-com: ClickOnce. v1" enthalten. Wenn das- `<fileAssociation>` Element verwendet wird, muss es hinter dem- `<application>` Element in seinem übergeordneten [ \<assembly> Element](../deployment/assembly-element-clickonce-application.md)stehen.
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vorhandene Dateizuordnungen werden von nicht überschrieben. Allerdings kann eine ClickOnce-Anwendung die Dateierweiterung nur für den aktuellen Benutzer überschreiben. Nachdem diese ClickOnce-Anwendung deinstalliert wurde, löscht ClickOnce die Datei Zuordnung für den Benutzer, und die Zuordnung pro Computer ist wieder aktiv.
@@ -80,5 +80,5 @@ Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll.
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [ClickOnce-Anwendungs Manifest](../deployment/clickonce-application-manifest.md)
