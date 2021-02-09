@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: da5817711c7131868c4bad22bbe93447119d19d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924516"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie durch benutzerdefinierten Programmcode definiert, den Sie möglicherweise schreiben. Der meiste Programmcode in der DSL-Lösung wird aus dieser Datei generiert.
@@ -134,7 +134,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  Konfigurieren Sie die Multiplizität einer Rolle entweder durch Eingabe des Diagramms oder durch Ändern der- `Multiplicity` Eigenschaft im **Eigenschaften** Fenster. In der folgenden Tabelle werden die Einstellungen für diese Eigenschaft beschrieben.
 
-|Multiplizitätstyp|Beschreibung|
+|Multiplizitätstyp|BESCHREIBUNG|
 |-|-|
 |0.. * (null bis viele)|Jede Instanz der Domänen Klasse kann über mehrere Instanzen der Beziehung oder keine Instanzen der Beziehung verfügen.|
 |0.. 1 (null bis eins)|Jede Instanz der Domänen Klasse kann nicht mehr als eine Instanz der Beziehung oder keine Instanzen der Beziehung aufweisen.|
@@ -150,6 +150,6 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei sowie
 
  Eine abgeleitete Beziehung spezialisiert ihre Basis Beziehung. Die Domänen Klassen, mit denen Sie verknüpft ist, sollten von oder den gleichen Klassen abgeleitet werden, die durch die Basis Beziehung verknüpft sind. Wenn eine Verknüpfung der abgeleiteten Beziehung in einem Modell erstellt wird, handelt es sich um eine Instanz der abgeleiteten und der Basis Beziehungen. Sie können im Programmcode zum umgekehrten Ende der Verknüpfung navigieren, indem Sie die Eigenschaften verwenden, die entweder von der Basis oder von der abgeleiteten Klasse generiert werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

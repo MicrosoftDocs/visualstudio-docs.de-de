@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: eec1468fc2e0c51d7dea7aa5f3ffa808b484ec87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923568"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Vorgehensweise: Hinzufügen und Entfernen von Features und Elementen zu einem Paket mit dem Paket-Explorer
   Zum Konfigurieren eines Pakets für die Bereitstellung von SharePoint-Elementen und-Features können Sie den Paket-Explorer verwenden. Sie können die SharePoint-Projekt Elemente und-Funktionen in der wsp-Datei anpassen.
@@ -34,7 +34,7 @@ ms.locfileid: "96915348"
 
 #### <a name="to-open-the-packaging-explorer"></a>So öffnen Sie den Paket-Explorer
 
-1. Wählen Sie in der Menüleiste **View** die Option  >  **anderen Windows**-  >  **Paket-Explorer** anzeigen aus.
+1. Wählen Sie in der Menüleiste die Option  >  **anderen Windows**-  >  **Paket-Explorer** anzeigen aus.
 
      Der **Paket-Explorer** wird in der **Toolbox** angezeigt.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 718ca7b5abf2a7730470475caf2cdf5c200b23b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924101"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Direktivenprozessors
 
@@ -659,7 +659,7 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
    | Name | Typ | Daten |
    |-|-|-|
    | (Standardwert) | REG_SZ | (Wert nicht festgelegt) |
-   | Klasse | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | CodeBase | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      Wenn Sie die Assembly im GAC gespeichert haben, sollten die Werte wie folgt aussehen:
@@ -667,7 +667,7 @@ In diesem Abschnitt fügen Sie der Registrierung unter demselben Pfad einen Schl
    | Name | Typ | Daten |
    |-|-|-|
    | (Standardwert) | REG_SZ | (Wert nicht festgelegt) |
-   | Klasse | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
 
 6. Starten Sie Visual Studio neu.

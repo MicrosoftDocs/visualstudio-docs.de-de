@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: fa3fd0fd16f33342e362432e0193a92e0e981b04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924004"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Arbeiten mit dem DSL-(Domain-Specific Languge)-Explorer
 Der **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Strukturansicht an. Weitere Informationen zu den meisten Elementen im DSL-Explorer finden Sie unter Vorgehens [Weise beim Definieren einer Domain-Specific Sprache](../modeling/how-to-define-a-domain-specific-language.md).
@@ -43,6 +43,6 @@ Der **DSL-Explorer** zeigt verschiedene Arten von Informationen in einer Struktu
 
 - **XML-Serialisierungsverhalten**. Serialisierungseinstellungen für das Modell. Weitere Informationen zur Serialisierung finden Sie unter [Anpassen von File Storage und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

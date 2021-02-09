@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, utility methods
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0015e68f7d78c2b33eaeb9e0bfb404acaed834
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: fcc879a19d3dfcd9e1e8e1bcd79f0488a312e96c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924576"
 ---
 # <a name="text-template-utility-methods"></a>Hilfsprogrammmethoden für Textvorlagen
 
@@ -121,7 +121,7 @@ Die-Eigenschaft `this.Host` kann Zugriff auf Eigenschaften bereitstellen, die vo
 
 `<#@template ... hostspecific="true" #>`
 
-Der Typ von `this.Host` hängt vom Hosttyp ab, in dem die Vorlage ausgeführt wird. In einer Vorlage, die in Visual Studio ausgeführt wird, können Sie in umwandeln, `this.Host` `IServiceProvider` um Zugriff auf Dienste wie z. b. die IDE zu erhalten. Zum Beispiel:
+Der Typ von `this.Host` hängt vom Hosttyp ab, in dem die Vorlage ausgeführt wird. In einer Vorlage, die in Visual Studio ausgeführt wird, können Sie in umwandeln, `this.Host` `IServiceProvider` um Zugriff auf Dienste wie z. b. die IDE zu erhalten. Beispiel:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

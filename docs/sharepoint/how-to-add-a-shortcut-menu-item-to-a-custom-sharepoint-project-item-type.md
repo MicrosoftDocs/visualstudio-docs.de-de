@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2916b806c6e149a9c0cbe2495a7edabcfc883e7e
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 0679233a727e716debe5d925a22cd256d250a28f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923704"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Gewusst wie: Hinzufügen eines Kontextmenü Elements zu einem benutzerdefinierten SharePoint-Projekt Elementtyp
   Wenn Sie einen benutzerdefinierten SharePoint-Projekt Elementtyp definieren, können Sie dem Projekt Element ein Kontextmenü Element hinzufügen. Das Menü Element wird angezeigt, wenn ein Benutzer mit der rechten Maustaste auf das Projekt Element in **Projektmappen-Explorer** klickt.
@@ -57,7 +57,7 @@ ms.locfileid: "94850077"
 
  Erstellen Sie zum Bereitstellen des Projekt Elements ein [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] Erweiterungspaket (VSIX) für die Assembly, die Vorlage und alle anderen Dateien, die Sie mit dem Projekt Element verteilen möchten. Weitere Informationen finden Sie unter Bereitstellen [von Erweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [Gewusst wie: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projekt Elementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen](../sharepoint/defining-custom-sharepoint-project-item-types.md)

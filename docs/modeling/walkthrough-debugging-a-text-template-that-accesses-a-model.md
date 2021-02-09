@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924116"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Exemplarische Vorgehensweise: Debuggen einer Textvorlage, die auf ein Modell zugreift
 Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder hinzufügen, treten möglicherweise Fehler auf, wenn die Engine die Vorlage in den Quellcode umwandelt oder den generierten Code kompiliert. In der folgenden exemplarischen Vorgehensweise werden einige Dinge veranschaulicht, die Sie zum Debuggen einer Textvorlage ausführen können.
@@ -22,7 +22,7 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
 > [!NOTE]
 > Weitere Informationen zu Textvorlagen im Allgemeinen finden Sie unter [Code Generierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md). Weitere Informationen zum Debuggen von Textvorlagen finden Sie unter Exemplarische Vorgehensweise [: Debuggen einer Textvorlage](debugging-a-t4-text-template.md).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer domänenspezifischen Sprachlösung
+## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer Domain-Specific-Sprachlösung
  In diesem Verfahren erstellen Sie eine domänenspezifische Sprachlösung mit folgenden Merkmalen:
 
 - Name: "tbuggingtestlanguage"
@@ -33,7 +33,7 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
 
 - Firmenname: fabrikam
 
-  Weitere Informationen zum Erstellen einer domänenspezifischen Sprachlösung finden Sie unter Gewusst [wie: Erstellen einer domänenspezifischen Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Weitere Informationen zum Erstellen einer domänenspezifischen Sprachlösung finden Sie unter Vorgehens [Weise: Erstellen einer Domain-Specific-Sprachlösung](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Erstellen einer Textvorlage
  Fügen Sie der Projekt Mappe eine Textvorlage hinzu.
@@ -89,7 +89,7 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
     #>
     ```
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf DebugTest.tt, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf DebugTest.tt, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
 
      Im Fenster **Fehlerliste** wird dieser Fehler angezeigt:
 
@@ -111,7 +111,7 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf DebugTest.tt, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
+5. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf DebugTest.tt, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
 
      Nun transformiert das System die Textvorlage und generiert die entsprechende Ausgabedatei. Im Fenster **Fehlerliste** werden keine Fehler angezeigt.
 
@@ -153,7 +153,7 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
     #>
     ```
 
-2. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf DebugTest.tt, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
+2. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf DebugTest.tt, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
 
      Das Fenster **Fehlerliste** wird angezeigt, und es wird einer der folgenden Fehler angezeigt:
 
@@ -208,6 +208,6 @@ Wenn Sie Textvorlagen in einer domänenspezifischen Sprachlösung ändern oder h
     #>
     ```
 
-5. Klicken Sie in **Projektmappen-Explorer**mit der rechten Maustaste auf DebugTest.tt, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
+5. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf DebugTest.tt, und klicken Sie dann auf **benutzerdefiniertes Tool ausführen**.
 
      Nun transformiert das System die Textvorlage und generiert die entsprechende Ausgabedatei. Im Fenster **Fehlerliste** werden keine Fehler angezeigt.

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 57f3785fe232b20123475bd85be2be7148e5b87e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924346"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Connectors zur Darstellung des Modells
 
@@ -86,7 +86,7 @@ Wenn Sie die Eigenschaften Variable nur unter der Programmsteuerung und nicht vo
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Verwenden von onchildkonfiguriertem, um die Eigenschaften einer Form zu initialisieren
 
-Um die Eigenschaften einer Form bei der ersten Erstellung festzulegen, wird die Überschreibung `OnChildConfigured()` in einer partiellen Definition ihrer Diagramm Klasse festgelegt. Die Diagramm Klasse wird in ihrer DSL-Definition angegeben, und der generierte Code befindet sich in " **dsl\generated code\diagram.cs**". Zum Beispiel:
+Um die Eigenschaften einer Form bei der ersten Erstellung festzulegen, wird die Überschreibung `OnChildConfigured()` in einer partiellen Definition ihrer Diagramm Klasse festgelegt. Die Diagramm Klasse wird in ihrer DSL-Definition angegeben, und der generierte Code befindet sich in " **dsl\generated code\diagram.cs**". Beispiel:
 
 ```csharp
 partial class MyLanguageDiagram

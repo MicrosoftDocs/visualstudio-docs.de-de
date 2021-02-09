@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbaeaff14d365f41bff73c29e678a08130b03dc0
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 43386f3ba450058d6aaf8ab180e331d2f303a235
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925580"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>How to: Erstellen eines Benutzersteuerelements für eine SharePoint-Anwendungsseite oder ein SharePoint-Webpart
   Sie können benutzerdefinierte Benutzersteuerelemente erstellen, die benutzerdefinierte Funktionalität für die SharePoint-Lösung bereitstellen, und Sie können diese Funktion im Projekt wiederverwenden. Sie können die Benutzersteuerelemente in einem Webpart oder einer Anwendungsseite verwenden, weitere ASP.NET- und SharePoint-Steuerelemente hinzufügen und Eigenschaften sowie Methoden für das Steuerelement definieren. Weitere Informationen zu Benutzer Steuerelementen finden Sie unter [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungs Seiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) und Benutzer Steuerelemente [und Server Steuerelemente in SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -34,7 +34,7 @@ ms.locfileid: "94903675"
 
 2. Wählen Sie im **Projektmappen-Explorer** den Projektknoten aus.
 
-3. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+3. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 

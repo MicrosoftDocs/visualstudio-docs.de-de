@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 77ffd8b6cd913b79249862a875b6267848a131af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923362"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Vorgehensweise: Erstellen eines BDC-Modells
   Sie können ein BDC (Business Data Connectivity)-Modell erstellen, indem Sie die Vorlage für diesen Vorlagentyp verwenden und dann das Modell zu einem SharePoint-Projekt hinzufügen. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md). Weitere Informationen zum Entwerfen des Modells finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -49,7 +49,7 @@ ms.locfileid: "94850675"
 
      Ein leeres SharePoint-Projekt wurde erstellt.
 
-5. Wählen Sie in der Menüleiste **Projekt**  >  **Neues Element hinzufügen** aus.
+5. Wählen Sie in der Menüleiste **Projekt** > **Neues Element hinzufügen** aus.
 
 6. Wählen Sie im Dialogfeld **Neues Element hinzufügen** den Knoten **Office/SharePoint** aus.
 
@@ -59,7 +59,7 @@ ms.locfileid: "94850675"
 
      Dem Projekt wird ein **Business Data Connectivity-Modell** Element hinzugefügt. Standardmäßig wird das Modell im BDC-Designer angezeigt. Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [How to: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [How to: Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen mithilfe einer Ressourcendatei](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

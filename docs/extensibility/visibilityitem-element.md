@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 16615dfdbfd7e9762046e37899ecf23619837ae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926019"
 ---
 # <a name="visibilityitem-element"></a>Visibilityitem-Element
 Das- `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten. Jeder Eintrag identifiziert einen Befehl oder ein Menü sowie einen zugeordneten Befehls Benutzeroberflächen Kontext. Visual Studio erkennt Befehle, Menüs und Symbolleisten sowie deren Sichtbarkeit, ohne die VSPackages zu laden, die Sie definieren. Die IDE verwendet die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode, um zu bestimmen, ob ein Befehls Benutzeroberflächen Kontext aktiv ist.
@@ -48,7 +48,7 @@ Das- `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen u
 |guid|Erforderlich. Der GUID des GUID-/ID-befehlsbezeichners.|
 |id|Erforderlich. Die ID des GUID-/ID-befehlsbezeichners.|
 |context|Erforderlich. Der UI-Kontext, in dem der Befehl sichtbar ist.|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine
@@ -59,7 +59,7 @@ Das- `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen u
 |-------------|-----------------|
 |[Visibilityschränkt-Element](../extensibility/visibilityconstraints-element.md)|Das `VisibilityConstraints` -Element bestimmt die statische Sichtbarkeit von Gruppen von Befehlen und Symbolleisten.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Die standardmäßigen Visual Studio-Benutzeroberflächen Kontexte werden im *Visual Studio SDK-Installationspfad*\visualstudiointegration\common\inc\vsshlids.h sowie in der <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> -Klasse und der- <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> Klasse definiert. In der-Klasse ist ein ausführlichere Satz von UI-Kontexten definiert <xref:Microsoft.VisualStudio.VSConstants> .
 
 ## <a name="example"></a>Beispiel

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [text templates]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7e6b824d53c37ef922b8c9580c87a478aef93586
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924065"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 
@@ -105,7 +105,7 @@ Die Datei sollte Teil des Projekts sein, damit die Vorlage sie lesen kann, aber 
 
 ### <a name="add-a-test-code-file"></a>Fügen Sie eine Testcodedatei hinzu
 
-Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Zum Beispiel:
+Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Beispiel:
 
 ```csharp
 using System;
@@ -146,7 +146,7 @@ Fügen Sie eine Textvorlagen Datei hinzu, und legen Sie die Ausgabe Erweiterung 
 
 4. Ändern Sie in der Output-Direktive das Erweiterungsattribut in ".cs", sodass die Vorlage eine C#-Datei generiert. In einem Visual Basic-Projekt würden Sie es in ".vb" ändern.
 
-5. Speichern Sie die Datei. In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:
+5. Speichern Sie die Datei . In dieser Phase sollte die Textvorlagendatei diese Zeilen enthalten:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -430,7 +430,7 @@ In dieser exemplarischen Vorgehensweise wird der Programmcode eigentlich aus ein
 
 Wenn Sie Vorlagentransformations- oder Kompilierungsfehler in der **Fehlerliste** sehen oder die Ausgabedatei nicht korrekt generiert wurde, können Sie die Textvorlage mit den unter [Generieren von Dateien mit dem Hilfsprogramm „TextTransform“](../modeling/generating-files-with-the-texttransform-utility.md) beschriebenen Techniken entsprechend korrigieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)

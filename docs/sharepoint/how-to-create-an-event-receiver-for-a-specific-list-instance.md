@@ -13,15 +13,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 664a7ac4e763b2378cf30603c417aacde27c2e47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925492"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Gewusst wie: Erstellen eines Ereignis Empfängers für eine bestimmte Listen Instanz
   Ein List instance-Ereignis Empfänger antwortet auf Ereignisse, die in einer beliebigen Instanz einer Listen Definition auftreten. Obwohl die Ereignis Empfänger Vorlage nicht das Ziel einer bestimmten Listen Instanz ermöglicht, können Sie einen Ereignis Empfänger ändern, der auf eine Listen Definition festgelegt ist, um auf Ereignisse in einer bestimmten Listen Instanz zu reagieren.
@@ -88,6 +88,6 @@ ms.locfileid: "94849895"
 
      Beachten Sie, dass der Ereignis Empfänger in der neuen Ankündigung nicht auslöst, da der Empfänger so konfiguriert ist, dass er nur auf Ereignisse in der benutzerdefinierten Ankündigungs Listen Instanz ( **testannouncements**) antwortet.
 
-## <a name="see-also"></a>Siehe auch
-- [Vorgehensweise: Erstellen eines Ereignis Empfängers](../sharepoint/how-to-create-an-event-receiver.md)
+## <a name="see-also"></a>Weitere Informationen
+- [Vorgehensweise: Erstellen eines Ereignisempfängers](../sharepoint/how-to-create-an-event-receiver.md)
 - [Entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md)

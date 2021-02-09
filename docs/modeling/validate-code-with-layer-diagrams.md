@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924322"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Überprüfen von Code mit Abhängigkeitsdiagrammen
 
@@ -202,7 +202,7 @@ Informationen zum Verwalten von Fehlern im Fenster Fehlerliste finden Sie unter 
 
 In der folgenden Tabelle sind Ebenenvalidierungsprobleme und entsprechende Auflösungen aufgeführt. Diese Probleme unterscheiden sich von Fehlern, die das Ergebnis von Konflikten zwischen Code und Entwurf sind. Weitere Informationen zu diesen Fehlern finden Sie unter [Beheben von ebenenvalidierungsproblemen](#troubleshoot-layer-validation-issues).
 
-|**Problem**|**Mögliche Ursache**|**Lösung**|
+|**Problem**|**Mögliche Ursache**|**Auflösung**|
 |-|-|-|
 |Validierungsfehler treten nicht wie erwartet auf.|Die Validierung funktioniert nicht in Abhängigkeits Diagrammen, die aus anderen Abhängigkeits Diagrammen in Projektmappen-Explorer kopiert werden und sich im gleichen Modellierungsprojekt befinden. Abhängigkeits Diagramme, die auf diese Weise kopiert werden, enthalten die gleichen Verweise wie das ursprüngliche Abhängigkeits Diagramm.|Fügen Sie dem Modellierungsprojekt ein neues Abhängigkeits Diagramm hinzu.<br /><br /> Kopieren Sie die Elemente aus dem Quell Abhängigkeits Diagramm in das neue Diagramm.|
 
@@ -236,7 +236,7 @@ Im folgenden Abschnitt wird die Syntax beschrieben, die in diesen Fehlern verwen
 | DV3001: **fehlender Link** | Schicht '*Layername*' ist mit '*artefakt'* verknüpft, das nicht gefunden werden kann. Möglicherweise fehlt ein Assemblyverweis. |
 | DV9001: es **wurden interne Fehler bei der Architekturanalyse gefunden** . | Die Ergebnisse sind möglicherweise nicht vollständig. Weitere Informationen finden Sie im ausführlichen Buildereignisprotokoll oder im Ausgabefenster. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Live-Abhängigkeits Validierung in Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)
