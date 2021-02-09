@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bf4cfbaf23ad9c1e545af25614722cd52c493df7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0138fcd73ddf07202a9111ec2b3d17dcc0fb7a0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879422"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office Word-Tastatur, Einstellungen, Dialogfeld "Optionen"
   Microsoft Office Word und Visual Studio behandeln Tastenkombinationen. Die gleiche Tastenkombination kann für verschiedene Befehle in Word und in Visual Studio stehen. Wenn Word in einem Projekt auf Dokument Ebene in Visual Studio geöffnet ist, empfängt jeweils nur eine Anwendung die Tastenkombinationen. Standardmäßig empfängt Visual Studio alle Tastenkombinationen, Sie können Sie jedoch erhalten, wenn das Dokument den Fokus besitzt, indem Sie **dynamisches Tastatur Schema** auswählen.

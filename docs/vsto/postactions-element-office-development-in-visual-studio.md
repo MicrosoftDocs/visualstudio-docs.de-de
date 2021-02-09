@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <postActions> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: da0c3ee640d7ae4ec1b61df7a60893a7e1428cd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879435"
 ---
 # <a name="ltpostactionsgt-element-office-development"></a>&lt;postActions- &gt; Element (Office-Entwicklung)
   Das `postActions` -Element des `vstav3` -Namespace enthält alle `postAction` -Elemente, die Aktionen nach der Bereitstellung beschreiben, die ausgeführt werden, nachdem Office-Projektmappen installiert sind.
@@ -46,7 +46,7 @@ ms.locfileid: "91583709"
  `postActions` weist das folgende Element auf:
 
 ### <a name="postaction"></a>postAction
- Optional. Die Rolle des- `postAction` Elements im- `vstav3` Namespace wird in [&#60;postAction&#62;-Elements &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)definiert.
+ Dies ist optional. Die Rolle des- `postAction` Elements im- `vstav3` Namespace wird in [&#60;postAction&#62;-Elements &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)definiert.
 
 ## <a name="post-deployment-action-example"></a>Beispiel für eine Aktion nach der Bereitstellung
 
