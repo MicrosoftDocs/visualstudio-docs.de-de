@@ -15,15 +15,15 @@ helpviewer_keywords:
 - attachments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d33c2c820f03d7fb40c953165f62943e44648082
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 516b6b680b8718747490a8afd9cdd2f823e996e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880462"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Gewusst wie: Programm gesteuertes Speichern von Anlagen von Outlook-e-Mail
 

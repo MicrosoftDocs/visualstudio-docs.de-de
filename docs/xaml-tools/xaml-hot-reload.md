@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 11257561deecdbce4606207c3d59012a6d7c3d09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880319"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Schreiben und Debuggen von ausgeführtem XAML-Code mit XAML Hot Reload in Visual Studio
 

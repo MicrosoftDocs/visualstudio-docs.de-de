@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881008"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass ein gebundener Haltepunkt an ein geladenes Programm gebunden wurde.
@@ -37,7 +37,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBreakpointUnboundEvent2` .
 
-|Methode|BESCHREIBUNG|
+|Methode|Beschreibung|
 |------------|-----------------|
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Ruft den Breakpoint ab, der ungebunden wurde.|
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Ruft den Grund für die Bindung des Breakpoints ab.|

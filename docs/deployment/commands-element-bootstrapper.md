@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f53ca683e40be8e3cc428d013d2b8d3c8c5773e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881229"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commands- &gt; Element (Boots Trapper)
 Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des- `InstallChecks` Elements beschrieben werden, und deklariert das Paket, das der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Boots Trapper installieren soll, wenn der Test fehlschlägt.
@@ -70,9 +70,9 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das `Commands`-Element ist erforderlich. Das Element weist das folgende Attribut auf.
 
-|attribute|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
-|`Reboot`|Optional. Bestimmt, ob das System neu gestartet werden soll, wenn eines der Pakete einen Neustart-Exitcode zurückgibt. In der folgenden Liste werden die gültigen Werte angezeigt:<br /><br /> `Defer`. Der Neustart wird bis zu einem späteren Zeitpunkt verzögert.<br /><br /> `Immediate`. Verursacht einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben hat.<br /><br /> `None`. Bewirkt, dass alle Neustart Anforderungen ignoriert werden.<br /><br /> Der Standardwert ist `Immediate`.|
+|`Reboot`|Dies ist optional. Bestimmt, ob das System neu gestartet werden soll, wenn eines der Pakete einen Neustart-Exitcode zurückgibt. In der folgenden Liste werden die gültigen Werte angezeigt:<br /><br /> `Defer`. Der Neustart wird bis zu einem späteren Zeitpunkt verzögert.<br /><br /> `Immediate`. Verursacht einen sofortigen Neustart, wenn eines der Pakete einen Neustart-Exitcode zurückgegeben hat.<br /><br /> `None`. Bewirkt, dass alle Neustart Anforderungen ignoriert werden.<br /><br /> Der Standardwert ist `Immediate`.|
 
 ## <a name="command"></a>Get-Help
  Das `Command`-Element ist ein untergeordnetes Element des `Commands`-Elements. Ein- `Commands` Element kann ein oder mehrere- `Command` Elemente aufweisen. Das Element weist folgende Attribute auf.
@@ -80,11 +80,11 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 |attribute|Beschreibung|
 |---------------|-----------------|
 |`PackageFile`|Erforderlich. Der Name des zu installierenden Pakets, wenn eine oder mehrere der durch angegebenen Bedingungen `InstallConditions` false zurückgeben. Das Paket muss in derselben Datei mit einem-Element definiert werden `PackageFile` .|
-|`Arguments`|Optional. Ein Satz von Befehlszeilen Argumenten, die an die Paketdatei übergeben werden sollen.|
-|`EstimatedInstallSeconds`|Optional. Die geschätzte Zeit (in Sekunden), die für die Installation des Pakets benötigt wird. Dieser Wert bestimmt die Größe der Statusanzeige, die der Boots Trapper dem Benutzer anzeigt. Der Standardwert ist 0 (null). in diesem Fall wird keine Zeit Schätzung angegeben.|
-|`EstimatedDiskBytes`|Optional. Die geschätzte Menge an Speicherplatz (in Bytes), die das Paket nach Abschluss der Installation einnimmt. Dieser Wert wird bei Anforderungen an den Festplatten Speicherplatz verwendet, die dem Benutzer vom Boots Trapper angezeigt werden. Der Standardwert ist 0 (null). in diesem Fall zeigt der Boots Trapper keine Anforderungen an den Festplatten Speicherplatz an.|
-|`EstimatedTempBytes`|Optional. Die geschätzte Menge an temporärem Speicherplatz (in Bytes), die das Paket benötigt.|
-|`Log`|Optional. Der Pfad zu der Protokolldatei, die das Paket generiert, relativ zum Stammverzeichnis des Pakets.|
+|`Arguments`|Dies ist optional. Ein Satz von Befehlszeilen Argumenten, die an die Paketdatei übergeben werden sollen.|
+|`EstimatedInstallSeconds`|Dies ist optional. Die geschätzte Zeit (in Sekunden), die für die Installation des Pakets benötigt wird. Dieser Wert bestimmt die Größe der Statusanzeige, die der Boots Trapper dem Benutzer anzeigt. Der Standardwert ist 0 (null). in diesem Fall wird keine Zeit Schätzung angegeben.|
+|`EstimatedDiskBytes`|Dies ist optional. Die geschätzte Menge an Speicherplatz (in Bytes), die das Paket nach Abschluss der Installation einnimmt. Dieser Wert wird bei Anforderungen an den Festplatten Speicherplatz verwendet, die dem Benutzer vom Boots Trapper angezeigt werden. Der Standardwert ist 0 (null). in diesem Fall zeigt der Boots Trapper keine Anforderungen an den Festplatten Speicherplatz an.|
+|`EstimatedTempBytes`|Dies ist optional. Die geschätzte Menge an temporärem Speicherplatz (in Bytes), die das Paket benötigt.|
+|`Log`|Dies ist optional. Der Pfad zu der Protokolldatei, die das Paket generiert, relativ zum Stammverzeichnis des Pakets.|
 
 ## <a name="installconditions"></a>InstallConditions
  Das- `InstallConditions` Element ist ein untergeordnetes `Command` Element des-Elements. Jedes `Command` Element kann höchstens ein Element aufweisen `InstallConditions` . Wenn kein- `InstallConditions` Element vorhanden ist, wird das von angegebene Paket `Condition` immer ausgeführt.
@@ -99,7 +99,7 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 |`Property`|Erforderlich. Der Name der zu testenden Eigenschaft. Die-Eigenschaft muss zuvor durch ein untergeordnetes Element des-Elements definiert worden sein `InstallChecks` . Weitere Informationen finden Sie unter [\<InstallChecks>Element](../deployment/installchecks-element-bootstrapper.md).|
 |`Compare`|Erforderlich. Der Typ des auszuführenden Vergleichs. In der folgenden Liste werden die gültigen Werte angezeigt:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
 |`Value`|Erforderlich. Der Wert, der mit der Eigenschaft verglichen werden soll.|
-|`Schedule`|Optional. Der Name eines `Schedule` Tags, der definiert, wann diese Regel ausgewertet werden soll.|
+|`Schedule`|Dies ist optional. Der Name eines `Schedule` Tags, der definiert, wann diese Regel ausgewertet werden soll.|
 
 ## <a name="failif"></a>FailIf
  Das `FailIf` -Element ist ein untergeordnetes Element des `InstallConditions` -Elements und beschreibt eine positive Bedingung, unter der die Installation beendet werden soll. Jedes `InstallConditions` Element kann über 0 (null) oder mehr `FailIf` Elemente verfügen.
@@ -111,8 +111,8 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 |`Property`|Erforderlich. Der Name der zu testenden Eigenschaft. Die-Eigenschaft muss zuvor durch ein untergeordnetes Element des-Elements definiert worden sein `InstallChecks` . Weitere Informationen finden Sie unter [\<InstallChecks>Element](../deployment/installchecks-element-bootstrapper.md).|
 |`Compare`|Erforderlich. Der Typ des auszuführenden Vergleichs. In der folgenden Liste werden die gültigen Werte angezeigt:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
 |`Value`|Erforderlich. Der Wert, der mit der Eigenschaft verglichen werden soll.|
-|`String`|Optional. Der Text, der dem Benutzer bei einem Fehler angezeigt werden soll.|
-|`Schedule`|Optional. Der Name eines `Schedule` Tags, der definiert, wann diese Regel ausgewertet werden soll.|
+|`String`|Dies ist optional. Der Text, der dem Benutzer bei einem Fehler angezeigt werden soll.|
+|`Schedule`|Dies ist optional. Der Name eines `Schedule` Tags, der definiert, wann diese Regel ausgewertet werden soll.|
 
 ## <a name="exitcodes"></a>ExitCodes
  Das- `ExitCodes` Element ist ein untergeordnetes `Command` Element des-Elements. Das- `ExitCodes` Element enthält ein oder mehrere- `ExitCode` Elemente, die bestimmen, was die Installation als Reaktion auf einen Exitcode eines Pakets tun soll. Unterhalb eines-Elements kann ein optionales-Element vorhanden sein `ExitCode` `Command` . `ExitCodes` weist keine Attribute auf.
@@ -124,8 +124,8 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 |---------------|-----------------|
 |`Value`|Erforderlich. Der Exitcodewert, auf den dieses `ExitCode` Element angewendet wird.|
 |`Result`|Erforderlich. Gibt an, wie die Installation auf diesen Exitcode reagieren soll. In der folgenden Liste werden die gültigen Werte angezeigt:<br /><br /> `Success`. Gibt an, dass das Paket erfolgreich installiert wurde.<br /><br /> `SuccessReboot`. Gibt das Paket als erfolgreich installiert an und weist das System an, neu zu starten.<br /><br /> `Fail`. Markiert das Paket als fehlgeschlagen.<br /><br /> `FailReboot`. Gibt das Paket als fehlerhaft an und weist das System an, neu zu starten.|
-|`String`|Optional. Der Wert, der dem Benutzer als Reaktion auf diesen Exitcode angezeigt werden soll.|
-|`FormatMessageFromSystem`|Optional. Bestimmt, ob die vom System bereitgestellte Fehlermeldung verwendet werden soll, die dem Exitcode entspricht, oder verwendet den in bereitgestellten Wert `String` . Gültige Werte sind. Dies bedeutet, dass `true` der vom System bereitgestellte Fehler verwendet wird, und `false` , was bedeutet, dass die von bereitgestellte Zeichenfolge verwendet wird `String` . Der Standardwert ist `false`. Wenn diese Eigenschaft ist `false` , aber `String` nicht festgelegt ist, wird der vom System bereitgestellte Fehler verwendet.|
+|`String`|Dies ist optional. Der Wert, der dem Benutzer als Reaktion auf diesen Exitcode angezeigt werden soll.|
+|`FormatMessageFromSystem`|Dies ist optional. Bestimmt, ob die vom System bereitgestellte Fehlermeldung verwendet werden soll, die dem Exitcode entspricht, oder verwendet den in bereitgestellten Wert `String` . Gültige Werte sind. Dies bedeutet, dass `true` der vom System bereitgestellte Fehler verwendet wird, und `false` , was bedeutet, dass die von bereitgestellte Zeichenfolge verwendet wird `String` . Der Standardwert ist `false`. Wenn diese Eigenschaft ist `false` , aber `String` nicht festgelegt ist, wird der vom System bereitgestellte Fehler verwendet.|
 
 ## <a name="example"></a>Beispiel
  Im folgenden Codebeispiel werden Befehle zum Installieren des .NET Framework 2,0 definiert.
@@ -205,6 +205,6 @@ Das `Commands` -Element implementiert Tests, die von den Elementen unterhalb des
 </Commands>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Produkt-und Paket Schema Referenz](../deployment/product-and-package-schema-reference.md)
-- [\<InstallChecks> gewisses](../deployment/installchecks-element-bootstrapper.md)
+- [\<InstallChecks>-Element](../deployment/installchecks-element-bootstrapper.md)

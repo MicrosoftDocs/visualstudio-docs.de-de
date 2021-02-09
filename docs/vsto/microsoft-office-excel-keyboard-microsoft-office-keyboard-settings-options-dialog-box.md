@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 914b86e6e2b27d18e2089d44ce97810f82294c5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880345"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel-Tastatur, Einstellungen, Dialogfeld "Optionen"
   Microsoft Office in Excel und Visual Studio werden Tastenkombinationen behandelt. Die gleiche Tastenkombination kann für verschiedene Befehle in Excel und in Visual Studio stehen. Wenn Excel in einem Projekt auf Dokument Ebene in Visual Studio geöffnet ist, empfängt jeweils nur eine Anwendung die Tastenkombinationen. Standardmäßig empfängt Visual Studio alle Tastenkombinationen, aber Sie können Excel-Befehle empfangen, wenn das Dokument den Fokus besitzt, indem Sie **dynamisches Tastatur Schema** auswählen.
