@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4bb44fbb263bb12aba04c06f1248ae25aa9d546f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839544"
 ---
 # <a name="making-commands-available"></a>Verfügbar machung von Befehlen
 
@@ -149,7 +149,7 @@ Beachten Sie auch, dass jeder Benutzeroberflächen Kontext wie folgt in einem se
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen eines Befehls zum Projektmappen-Explorer Symbolleiste](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

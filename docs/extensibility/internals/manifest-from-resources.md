@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839427"
 ---
 # <a name="manifest-from-resources"></a>Manifest aus Ressourcen
 Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von Bild Ressourcen (PNG-oder XAML-Dateien) annimmt und eine imagemanifest-Datei generiert, mit der diese Bilder mit dem Visual Studio-Image Dienst verwendet werden können. Darüber hinaus kann dieses Tool zum Hinzufügen von Bildern zu einem vorhandenen imagemanifest verwendet werden. Dieses Tool ist nützlich, wenn Sie einer Visual Studio-Erweiterung High-dpi-und Designunterstützung für Bilder hinzufügen möchten. Die generierte. imagemanifest-Datei sollte in einer Visual Studio-Erweiterung (VSIX-Datei) enthalten und bereitgestellt werden.
@@ -27,7 +27,7 @@ Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von 
 
  **Argumente**
 
-|**SwitchName**|**Notizen**|**Erforderlich oder optional**|
+|**SwitchName**|**Hinweise**|**Erforderlich oder optional**|
 |-|-|-|
 |/resources|Eine durch Semikolons getrennte Liste von Bildern oder Verzeichnissen. Diese Liste sollte immer die vollständige Liste der Images enthalten, die im Manifest enthalten sein werden. Wenn nur eine partielle Liste angegeben wird, gehen die Einträge, die nicht eingeschlossen werden, verloren.<br /><br /> Wenn eine bestimmte Ressourcen Datei ein Bildstreifen ist, teilt das Tool Sie in separate Bilder auf, bevor jedes untergeordnete Element dem Manifest hinzugefügt wird.<br /><br /> Wenn das Image eine PNG-Datei ist, wird empfohlen, den Namen so zu formatieren, dass das Tool die richtigen Attribute für das Bild ausfüllen kann: \<Name> . \<Width> . \<Height> . PNG.|Erforderlich|
 |/Assembly|Der Name der verwalteten Assembly (ohne die Erweiterung) oder der Lauf Zeit Pfad der systemeigenen Assembly, die die Ressourcen hostet (relativ zum Lauf Zeit Speicherort des Manifests).|Erforderlich|
@@ -50,7 +50,7 @@ Das Manifest from Resources Tool ist eine Konsolenanwendung, die eine Liste von 
 
 - ManifestFromResources/resources:D:\Images\Image1.png;D: \images\image1.XAML/Assembly: My. Assembly. Name/guidName: myImages/newGuids/newIds
 
-## <a name="notes"></a>Hinweise
+## <a name="notes"></a>Notizen
 
 - Das Tool unterstützt nur PNG-und XAML-Dateien. Alle anderen Bild-oder Dateitypen werden ignoriert. Für alle nicht unterstützten Typen, die beim Generieren der Ressourcen auftreten, wird eine Warnung generiert. Wenn keine unterstützten Images gefunden werden, nachdem das Tool die Ressourcenverarbeitung abgeschlossen hat, wird ein Fehler generiert.
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b00eb3e410c7fd3d10d2aef7fcfbf637ea04e41a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839572"
 ---
 # <a name="list-of-available-services"></a>Liste der verfügbaren Dienste
 
@@ -57,7 +57,7 @@ Verwenden Sie die hier aufgelisteten oder von einer anderen Quelle (z. b. Sprach
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | Ja | Ja | Ermöglicht einem VSPackage das Synchronisieren des **Klassenansicht** mit einem bestimmten Objekt. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | Ja | Ja | Bietet Unterstützung für das Mapping von Befehlsnamen zu GUIDs und zurück und das Ermitteln der Namen aller verfügbaren Befehle und Namen. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | Nein | Ja | Aktiviert ein VSPackage, um die **Code Definitions Ansicht** zu bearbeiten. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Ja | Ja | Interner Dienst. Nicht verwenden. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | Ja | Ja | Interner Dienst. Darf nicht verwendet werden. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindow> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> | Ja | Ja | Ermöglicht den Zugriff auf ein Code Fenster, das ein oder mehrere Dokumente enthalten kann. |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindowManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> | Ja | Ja | Aktiviert ein VSPackage, um dem Code Fenster Änderungen hinzuzufügen, z. b. Dropdown leisten. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCommandWindow> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommandWindow2> | Ja | Ja | Ermöglicht einem VSPackage das Ausführen eines Befehls über das **Befehlsfenster** und andernfalls das interagieren mit dem **Befehlsfenster**. |
@@ -160,6 +160,6 @@ Verwenden Sie die hier aufgelisteten oder von einer anderen Quelle (z. b. Sprach
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Ja | Ja | Ermöglicht einem VSPackage das Abrufen des Fensterrahmens, in dem sich das Paket oder der Teil des Pakets befinden könnte. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Ja | Ja | Ermöglicht den Zugriff auf XML-formatierte Dokumentationsdateien, die einer bestimmten Metadatendatei zugeordnet sind. |
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)

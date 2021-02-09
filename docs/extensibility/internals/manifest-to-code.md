@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ca43ac07bbdcec98cd204cb2720ac9f2cdef1f1
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839414"
 ---
 # <a name="manifest-to-code"></a>Manifest für Code
 Das Manifest to Code Tool ist eine Konsolenanwendung, die eine imagemanifest-Datei für den Visual Studio-Image Dienst annimmt und eine Wrapper Datei oder Dateien generiert, um auf die Werte des Image Manifests in C++-, c#-, VB-oder vsct-Dateien für Visual Studio-Erweiterungen zu verweisen. Dieses Tool generiert Wrapper Dateien, die verwendet werden können, um Bilder aus dem Visual Studio-Image Dienst direkt anzufordern, oder um die Manifestressourcen über APIs zu übergeben, wenn der Code keine eigenen Benutzeroberflächen und Rendering behandelt.
@@ -27,7 +27,7 @@ Das Manifest to Code Tool ist eine Konsolenanwendung, die eine imagemanifest-Dat
 
  **Argumente**
 
-|**SwitchName**|**Notizen**|**Erforderlich oder optional**|
+|**SwitchName**|**Hinweise**|**Erforderlich oder optional**|
 |-|-|-|
 |/Manifest|Der Pfad zum Bild Manifest, das verwendet wird, um den Code Wrapper zu erstellen oder zu aktualisieren.|Erforderlich|
 |/Language|Die Sprache, in der der Code Wrapper generiert werden soll.<br /><br /> Gültige Werte: cpp, C++, CS, CSharp, c#, VB oder vsct bei den Werten wird die Groß-/Kleinschreibung nicht beachtet.<br /><br /> Bei der vsct-Sprachoption werden die Optionen/monikerClass,/classAccess und/Namespace ignoriert.|Erforderlich|
@@ -47,7 +47,7 @@ Das Manifest to Code Tool ist eine Konsolenanwendung, die eine imagemanifest-Dat
 
 - ManifestToCode/Manifest: D:\MyManifest.imagemanifest/Language: vsct/imageIdClass: myimageids
 
-## <a name="notes"></a>Hinweise
+## <a name="notes"></a>Notizen
 
 - Es wird empfohlen, dass Sie dieses Tool mit Bild Manifesten verwenden, die vom Manifest from Resources Tool generiert wurden.
 
