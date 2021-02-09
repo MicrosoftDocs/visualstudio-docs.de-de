@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: b12aaade85964eb1c331bd96f2fbea522670bcc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892319"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Exemplarische Vorgehensweisen zu SharePoint-Entwicklungen
   In den folgenden exemplarischen Vorgehensweisen wird das Entwickeln und Bereitstellen von SharePoint-Lösungen mithilfe von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] veranschaulicht.
@@ -55,7 +55,7 @@ ms.locfileid: "95970317"
 |[Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Veranschaulicht das Erstellen eines grundlegenden sequenziellen Workflows mit Zuordnungs- und Initiierungsformularen.|
 |[Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem Workflow](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Veranschaulicht, wie einem Workflowprojekt eine Anwendungsseite hinzugefügt wird, auf der von einem Workflow abgeleitete Daten angezeigt werden.|
 |[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Website-Workflowaktivität](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Veranschaulicht das Erstellen einer benutzerdefinierten Aktivität für einen Workflow auf Websiteebene.|
-|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Zeigt das Migrieren eines wieder verwendbaren Workflows von SharePoint Designer zu Visual Studio.|
+|[Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows aus SharePoint Designer in Visual Studio 2010](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Zeigt das Migrieren eines wieder verwendbaren Workflows von SharePoint Designer zu Visual Studio.|
 
 ## <a name="application-pages"></a>Anwendungsseiten
 
@@ -70,7 +70,7 @@ ms.locfileid: "95970317"
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Erstellen einer externen Liste in SharePoint mithilfe von Geschäftsdaten](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Zeigt, wie ein Modell für den BDC-Dienst erstellt wird, das Informationen zu Kontakten in einer Beispieldatenbank zurückgibt.|
 
-## <a name="packaging-and-deployment"></a>Verpacken und Bereitstellung
+## <a name="packaging-and-deployment"></a>Verpacken und Bereitstellen
 
 |Thema|Beschreibung|
 |-----------|-----------------|

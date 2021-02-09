@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892072"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Gewusst wie: Programm gesteuertes automatisches Auffüllen von Bereichen mit inkrementellen Änderungs Daten
   Mit der- <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Methode des- <xref:Microsoft.Office.Interop.Excel.Range> Objekts können Sie einen Bereich in einem Arbeitsblatt mit Werten automatisch auffüllen. In den meisten Fällen <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> wird die-Methode verwendet, um inkrementelle steigende oder abnehmende Werte in einem Bereich zu speichern. Sie können das Verhalten angeben, indem Sie eine optionale Konstante aus der- <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> Enumeration bereitstellen.
@@ -54,7 +54,7 @@ ms.locfileid: "96847207"
 
 - Spalte D soll eine Reihe von Zahlen enthalten, die für jede Zeile um zwei erhöht werden. Geben Sie für die Anfangswerte **4** in Zelle D1 und **6** in Zelle D2 ein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
 - [Gewusst wie: Programm gesteuertes verweisen auf Arbeitsblatt Bereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [Gewusst wie: Programm gesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

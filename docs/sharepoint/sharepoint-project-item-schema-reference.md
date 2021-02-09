@@ -22,15 +22,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892280"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Schema Referenz für SharePoint-Projekt Elemente
   Visual Studio verwendet das SharePoint-Projekt Element Schema, um den Inhalt von *spdata* -Dateien zu validieren. Eine *spdata* -Datei gibt den Inhalt und das Verhalten eines SharePoint-Projekt Elements an. Weitere Informationen zum Inhalt von SharePoint-Projekt Elementen finden Sie unter [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -39,7 +39,7 @@ ms.locfileid: "95442546"
 
  Das root-Element ist das [ProjectItem](../sharepoint/projectitem-element.md) -Element. In der folgenden Tabelle werden alle durch das Schema definierten Elemente beschrieben.
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Stellt eine Auflistung benutzerdefinierter Datenelemente dar, die dem SharePoint-Projekt Element zugeordnet sind.|
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Stellt ein benutzerdefiniertes Datenelement dar, das dem SharePoint-Projekt Element im Schlüssel-Wert-Format zugeordnet ist. Sowohl der Schlüssel als auch der Wert müssen Zeichen folgen sein.|
@@ -53,5 +53,5 @@ ms.locfileid: "95442546"
 |[SafeControl](../sharepoint/safecontrol-element.md)|Stellt ein aspx-Steuerelement oder Webpart dar, das für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher eingestuft wird.|
 |["SafeControls](../sharepoint/safecontrols-element.md)|Stellt eine Auflistung von ASPX-Steuerelementen und Webparts dar, die für jeden Benutzer auf einer beliebigen ASPX-Seite auf der SharePoint-Website als sicher gekennzeichnet sind.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Element Vorlagen und Projektvorlagen für SharePoint-Projekt Elemente](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

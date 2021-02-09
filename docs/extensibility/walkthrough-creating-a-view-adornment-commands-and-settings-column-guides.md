@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d9bf88212ccc6e00dfbca14912eb15e17d106a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892449"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen eines Ansichts Zusatz Elements, von Befehlen und Einstellungen (Spalten Handbücher)
 Sie können den Visual Studio-Text-/Code-Editor mit Befehlen und Ansichts Effekten erweitern. In diesem Artikel erfahren Sie, wie Sie mit einer beliebten Erweiterungs Funktion (Spalten Handbücher) beginnen. Spalten Handbücher sind visuell helle Linien, die in der Ansicht des Text-Editors gezeichnet werden, um Ihnen die Verwaltung Ihres Codes auf bestimmte Spaltenbreiten zu erleichtern. Der formatierte Code kann insbesondere für Beispiele wichtig sein, die Sie in Dokumenten, in Blogbeiträgen oder in Fehlerberichten einschließen.

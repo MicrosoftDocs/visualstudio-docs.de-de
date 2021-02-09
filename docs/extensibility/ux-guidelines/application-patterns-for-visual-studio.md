@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709daa641e898f9d75f4bab340c8e5fd00d28a88
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 1d647a1dbd3bc6bf99f9803870c7b58ead358b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97716119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892592"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Anwendungsmuster für Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Fenster Interaktionen
@@ -37,7 +37,7 @@ Nicht **modaldialogfelder** werden in Visual Studio nicht empfohlen. Bei den mei
 | **Position** | Ist immer innerhalb des Dokument Brunnens positioniert und wird nicht um die Ränder der IDE Andocken. Sie kann "gezogen" werden, sodass Sie getrennt von der Hauptshell schwebt. | Wird in der Regel an den Rändern der IDE angedockt, kann jedoch so angepasst werden, dass Sie unverankert, automatisch ausgeblendet (gelöst) oder innerhalb des Dokument Brunnens angedockt ist.|Großes gleitendes Fenster, getrennt von der IDE. |
 | **Commit-Modell** | *Verzögerter Commit*<br /><br /> Um die Daten in einem Dokument zu speichern, muss der Benutzer den Befehl " **&gt; Speichern**", " **Speichern** unter" oder " **Alle speichern** " ausgeben. In einem Dokument Fenster ist das Konzept der darin enthaltenen Daten "dirgebunden" und dann ein Commit für einen der Save-Befehle. Beim Schließen eines Dokument Fensters werden alle Inhalte entweder auf dem Datenträger gespeichert oder gehen verloren. | *Sofortiger Commit*<br /><br /> Es ist kein Speichermodell vorhanden. Für Inspektor-Tool Fenster, die beim Bearbeiten einer Datei behilflich sind, muss die Datei im aktiven Editor oder Designer geöffnet sein, und der Editor oder Designer besitzt den Speicher. | *Verzögerter oder sofortiger Commit*<br /><br /> In den meisten Fällen erfordert ein großes, nicht modalem Dialogfeld eine Aktion, mit der Änderungen ausgeführt werden können, und ermöglicht einen "Abbrechen"-Vorgang, der alle in der Dialog Sitzung vorgenommenen Änderungen zurückführt.  Dies unterscheidet ein nicht modalem Dialogfeld in einem Tool Fenster, in dem das Tool Fenster immer über ein sofortiges Commit-Modell verfügt. |
 | **Sichtbarkeit** | *Öffnen/erstellen (Datei) und schließen*<br /><br /> Das Öffnen eines Dokument Fenster erfolgt durch das Öffnen eines vorhandenen Dokuments oder das Verwenden einer Vorlage zum Erstellen eines neuen Dokuments. Es ist kein "Open \<specific editor> "-Befehl vorhanden. | *Ausblenden und anzeigen*<br /><br /> Einzel Instanz-Tool Fenster können ausgeblendet oder angezeigt werden. Inhalt und Status im Tool Fenster bleiben erhalten, wenn Sie in der Ansicht oder im verborgenen angezeigt werden. Tool Fenster mit mehreren Instanzen können geschlossen und ausgeblendet werden. Wenn ein Tool Fenster mit mehreren Instanzen geschlossen wird, werden Inhalt und Zustand innerhalb des Tool Fensters verworfen. | *Gestartet von einem Befehl*<br /><br /> Dialoge werden von einem aufgabenbasierten Befehl aus gestartet. |
-| **Verein** | *Mehrere Instanzen*<br /><br /> Mehrere Editoren können gleichzeitig geöffnet sein und verschiedene Dateien bearbeiten, während einige Editoren auch zulassen, dass dieselbe Datei in mehr als einem Editor geöffnet ist (mit dem **Fenster " &gt; Neues Fenster** ").<br /><br /> Ein einzelner Editor bearbeitet möglicherweise eine oder mehrere Dateien gleichzeitig (Projekt-Designer). | *Einzelne oder mehrere Instanzen*<br /><br /> Der Inhalt wird geändert, um den Kontext (wie im Eigenschaften Browser) widerzuspiegeln oder den Fokus/Kontext auf andere Fenster (Aufgabenliste Projektmappen-Explorer) zu verschieben.<br /><br /> Die Tool Fenster Single-Instance und MultiInstance müssen mit dem aktiven Dokument Fenster verknüpft werden, es sei denn, es gibt einen überzeugenden Grund, nicht zu. | *Einzel Instanz* |
+| **Instances** | *Mehrere Instanzen*<br /><br /> Mehrere Editoren können gleichzeitig geöffnet sein und verschiedene Dateien bearbeiten, während einige Editoren auch zulassen, dass dieselbe Datei in mehr als einem Editor geöffnet ist (mit dem **Fenster " &gt; Neues Fenster** ").<br /><br /> Ein einzelner Editor bearbeitet möglicherweise eine oder mehrere Dateien gleichzeitig (Projekt-Designer). | *Einzelne oder mehrere Instanzen*<br /><br /> Der Inhalt wird geändert, um den Kontext (wie im Eigenschaften Browser) widerzuspiegeln oder den Fokus/Kontext auf andere Fenster (Aufgabenliste Projektmappen-Explorer) zu verschieben.<br /><br /> Die Tool Fenster Single-Instance und MultiInstance müssen mit dem aktiven Dokument Fenster verknüpft werden, es sei denn, es gibt einen überzeugenden Grund, nicht zu. | *Einzel Instanz* |
 | **Beispiele** | **Text-Editoren**, wie der Code-Editor<br /><br /> **Entwurfs** Oberflächen, wie z. b. ein Formular-Designer oder eine Modellierungs Oberfläche<br /><br /> **Steuern von Layouts ähnlich** wie beim Manifest-Designer | Der **Projektmappen-Explorer** stellt eine Projekt Mappe und Projekte in der Projekt Mappe bereit.<br /><br /> Der **Server-Explorer** bietet eine hierarchische Ansicht der Server und Datenverbindungen, die der Benutzer im Fenster öffnen möchte. Wenn Sie ein Objekt aus der Daten Bank Hierarchie öffnen, wie z. b. eine Abfrage, wird ein Dokument Fenster geöffnet, und der Benutzer kann die Abfrage bearbeiten.<br /><br /> Im Eigenschaften **Browser** werden Eigenschaften für das Objekt angezeigt, das entweder in einem Dokument Fenster oder in einem anderen Tool Fenster ausgewählt ist. Die Eigenschaften werden entweder in einer hierarchischen Rasteransicht oder in komplexen Dialogfeld ähnlichen Steuerelementen angezeigt, und der Benutzer kann die Werte für diese Eigenschaften festlegen. | |
 
 ## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Tool Fenster
@@ -415,7 +415,7 @@ Vermeiden Sie die Auswahl einer dauerhaft destruktiven Aktion für den Standardb
 #### <a name="access-keys"></a>Zugriffstasten
 Verwenden Sie keine Zugriffsschlüssel für die Schaltflächen **OK**, **Abbrechen** oder **Hilfe** . Diese Schaltflächen werden standardmäßig Tastenkombinationen zugeordnet:
 
-| Schaltflächenname | Tastenkombinationen |
+| Schaltflächenname | Tastenkombination |
 | --- | --- |
 | OK | EINGABETASTE |
 | Abbrechen | ESC |
@@ -514,7 +514,7 @@ Der Benutzer sollte immer in der Lage sein, die Auswirkungen eines Drag & Drop-V
 | ![Symbol „Keine Ablage“ für Maus](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Kein Drop | Das Element kann nicht am angegebenen Speicherort abgelegt werden. |
 | ![Symbol "Kopieren" für Maus](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Kopieren | Das Element wird in den Ziel Speicherort kopiert. |
 | ![Symbol "Verschieben" für Maus](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Move | Das Element wird an den Ziel Speicherort verschoben. |
-| ![Symbol "Verweis hinzufügen" für Maus](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Hinzuzufügender Verweis | Dem Ziel Speicherort wird ein Verweis auf das ausgewählte Element hinzugefügt. |
+| ![Symbol "Verweis hinzufügen" für Maus](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Verweis hinzufügen | Dem Ziel Speicherort wird ein Verweis auf das ausgewählte Element hinzugefügt. |
 
 #### <a name="reference-based-projects"></a>Verweis basierte Projekte
  In der folgenden Tabelle werden die Drag & amp; Drop-Vorgänge (sowie Ausschneide-, Kopier-und Einfügevorgänge) zusammengefasst, die basierend auf der Art des Quell Elements und der Modifizierertasten, die für referenzierte Ziel Projekte gedrückt wurden, ausgeführt werden sollen:

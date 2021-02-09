@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 286a448ee33f57d2e3a3282dc8d72b11a843a9c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6013770e3a334e7924cafe4563d437d4f7730bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892683"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 Beendet alle Threads, die in diesem Programm ausgeführt werden.
@@ -28,8 +28,8 @@ Beendet alle Threads, die in diesem Programm ausgeführt werden.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT Stop( 
-   void 
+HRESULT Stop( 
+   void 
 );
 ```
 

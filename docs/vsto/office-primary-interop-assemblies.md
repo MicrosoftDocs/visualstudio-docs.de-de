@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office primary interop assemblies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 190c5785be9d17ee0a25d16ad6342368b658f252
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2041c1d8b39f88f611cee09f17c498ea54130122
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892059"
 ---
 # <a name="office-primary-interop-assemblies"></a>Primäre Interop-Assemblys in Office
 
