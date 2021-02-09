@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 3fdbd9220ef82102dd66f10ab7f15570118bae9a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904542"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX-Erweiterungs Schema 2,0-Referenz
 In einer VSIX-Bereitstellungs Manifest-Datei wird der Inhalt eines VSIX-Pakets beschrieben. Das Dateiformat wird durch ein Schema geregelt. Version 2,0 dieses Schemas unterstützt das Hinzufügen von benutzerdefinierten Typen und Attributen.  Das Schema des Manifests ist erweiterbar. Das Manifest-Lade Modul ignoriert XML-Elemente und-Attribute, die es nicht versteht.

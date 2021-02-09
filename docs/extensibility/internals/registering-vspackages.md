@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4d7ae70766b7e0d2d8eedb5d79d97159839146
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 111debccd1623901790c83e743469327ffdd667e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905839"
 ---
 # <a name="registering-vspackages"></a>Registrieren von VSPackages
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stützt sich auf pkgdef-Dateien, um ein VSPackage zu beschreiben und zu suchen. Eine pkgdef-Datei enthält alle Registrierungsinformationen, die andernfalls der Systemregistrierung hinzugefügt würden. Verwaltete VSPackages werden durch Hinzufügen von Attributen zum Quellcode und anschließendem Ausführen des [Dienstprogramms "| atepkgdef](../../extensibility/internals/createpkgdef-utility.md) " für die resultierende Assembly registriert, um eine pkgdef-Datei zu generieren.

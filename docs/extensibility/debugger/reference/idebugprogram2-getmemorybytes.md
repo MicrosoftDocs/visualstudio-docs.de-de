@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cc0be42ace78dbd46fd64ce42f446a9449998b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 279333dc85a225a679efd205805ccee282b11260
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906223"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 Ruft die vom Programm belegten Arbeitsspeicher Bytes ab.
@@ -28,13 +28,13 @@ Ruft die vom Programm belegten Arbeitsspeicher Bytes ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetMemoryBytes( 
+HRESULT GetMemoryBytes( 
    IDebugMemoryBytes2** ppMemoryBytes
 );
 ```
 
 ```csharp
-int GetMemoryBytes( 
+int GetMemoryBytes( 
    out IDebugMemoryBytes2 ppMemoryBytes
 );
 ```

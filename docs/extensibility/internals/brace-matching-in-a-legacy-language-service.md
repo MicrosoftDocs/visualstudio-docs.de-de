@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 2bfcb9fdd7eff132d02c7d14be729cd871c8dd8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905924"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Übereinstimmung von Klammern in einem Legacy Sprachdienst
 Mit der Übereinstimmung mit geschweiften Klammern können Entwickler Sprachelemente nachverfolgen, die gleichzeitig auftreten müssen, z. b. Klammern und geschweifte Klammern. Wenn ein Entwickler eine schließende geschweifte Klammer eingibt, wird die öffnende geschweifte Klammer hervorgehoben.
@@ -42,7 +42,7 @@ Mit der Übereinstimmung mit geschweiften Klammern können Entwickler Sprachelem
 ## <a name="enable-support-for-brace-matching"></a>Unterstützung für übereinstimmende Klammern aktivieren
  Mit dem <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> -Attribut können die Registrierungseinträge **matchgeschweiften**, **matchbracesatcaret** und **showmatchingbrace** festgelegt werden, mit denen die entsprechenden Eigenschaften der-Klasse festgelegt werden <xref:Microsoft.VisualStudio.Package.LanguagePreferences> . Die Eigenschaften der Spracheinstellungen können auch vom Benutzer festgelegt werden.
 
-|Registrierungseintrag|Eigenschaft|BESCHREIBUNG|
+|Registrierungseintrag|Eigenschaft|Beschreibung|
 |--------------------|--------------|-----------------|
 |Matchgeschweifte Klammern|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Aktiviert die Übereinstimmung mit Klammern.|
 |Matchbracesatcaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Aktiviert die geschweifter Klammer, wenn die Einfügemarke verschoben wird.|
