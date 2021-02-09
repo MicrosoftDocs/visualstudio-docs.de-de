@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], Outlook solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 86fa849641894576f141ce9bc76eccaf72424d47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882439"
 ---
 # <a name="outlook-solutions"></a>Outlook-Projektmappen
   Visual Studio stellt Projektvorlagen bereit, die Sie zum Erstellen von VSTO-Add-Ins für Microsoft Office Outlook verwenden können. Mit VSTO-Add-Ins können Sie Outlook automatisieren, Outlook-Features erweitern oder die Benutzeroberfläche (User Interface, UI) von Outlook anpassen. Weitere Informationen zu VSTO-Add-Ins finden Sie unter [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
@@ -68,7 +68,7 @@ ms.locfileid: "97527548"
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Übersicht über das Outlook-Objektmodell](../vsto/outlook-object-model-overview.md)|Bietet einen Überblick über die Objekte, die vom Outlook-Objektmodell bereitgestellt werden.|
 |[Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)|Erläutert die von Visual Studio bereitgestellten Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.|

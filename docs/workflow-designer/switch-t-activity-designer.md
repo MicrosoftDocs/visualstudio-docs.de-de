@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6bdf05878c08b1c175b78ff2205b74c4ea5669b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 35dcc390dcf58e02a2c7c1fa2dba62840d433785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882309"
 ---
 # <a name="switcht-activity-designer"></a>Switch\<T>-Aktivitätsdesigner
 
@@ -38,10 +38,10 @@ Im folgenden finden Sie die Eigenschaften des **Switch \><T** -Designers. Alle d
 
 In der folgenden Tabelle werden die nützlichsten Eigenschaften der <xref:System.Activities.Statements.Switch%601>-Aktivität aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Gibt den optionalen Anzeigenamen des <xref:System.Activities.Statements.Switch%601>-Aktivitätsdesigners an. Der Standardwert ist Switch<Int32 \> . Der Wert kann im **Eigenschaften** Fenster oder direkt im Designer Header bearbeitet werden.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Wahr|Gibt den Ausdruck an, mit dem die Schlüssel in der Auflistung der Fälle verglichen wurden, um zu bestimmen, welcher Fall auszuführen ist.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den optionalen Anzeigenamen des <xref:System.Activities.Statements.Switch%601>-Aktivitätsdesigners an. Der Standardwert ist Switch<Int32 \> . Der Wert kann im **Eigenschaften** Fenster oder direkt im Designer Header bearbeitet werden.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Richtig|Gibt den Ausdruck an, mit dem die Schlüssel in der Auflistung der Fälle verglichen wurden, um zu bestimmen, welcher Fall auszuführen ist.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Gibt die Aktivität an, die ausgeführt werden soll, wenn keine Übereinstimmung gefunden wird. Klicken Sie im Designer auf die Schaltfläche **Aktivität hinzufügen** , um das **Standard** Feld zu öffnen, in dem die Aktivität abgelegt werden kann.|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Gibt die Fälle an, die ausgewertet werden sollen. Um einen Fall hinzuzufügen, klicken Sie auf die Schaltfläche **neuen Fall hinzufügen** am unteren Rand des **Switch \<T>** -Designers. Die Schaltfläche ändert sich in ein Textfeld (Kombinations Feld, wenn der generische Typ, der beim Hinzufügen des Schalters ausgewählt wurde, \<T> String oder Enum ist). Nach dem Hinzufügen eines Schlüssels im Feld **Fall Wert** wird der Case-Bereich erweitert, und es kann eine Aktivität mit dem Hinweis Text "Aktivität hier ablegen" abgelegt werden, um die Ausführungs Logik für die Groß-/Kleinschreibung zu definieren.|
 
@@ -57,6 +57,6 @@ Es gibt zwei Möglichkeiten, einen Fall zu löschen:
 
 Beachten Sie, dass Sie den Fall selbst markieren müssen, um ihn zu löschen. Wenn Sie die Aktivität in einem Fall markieren und löschen, wird nur Aktivität, nicht der Fall gelöscht.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)

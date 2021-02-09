@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8e2a1f542e89851cb430f8d80934933351e9349e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882270"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Buildprojectonload-Element (Visual Studio-Vorlagen)
 Erstellt nur neue Projekte, die Sie erstellen und zu einer Projekt Mappe hinzufügen. Die gesamte Lösung wird nicht erstellt.
@@ -55,7 +55,7 @@ Element Hierarchie:
 
  Der Text muss entweder `true` oder sein `false` , um anzugeben, ob nur das neue Projekt erstellt werden soll, wenn es aus der Vorlage erstellt wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `BuildProjectOnLoad` ist ein optionales Element. Standardwert: `false`.
 
 ## <a name="example"></a>Beispiel
@@ -86,7 +86,7 @@ Element Hierarchie:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [BuildOnLoad-Attribut und-Element](buildonload-visual-studio-templates.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

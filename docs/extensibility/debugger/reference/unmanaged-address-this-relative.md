@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c19109215a9e8824f1648860c39ccb33836ca93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879994"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Diese Struktur stellt eine Adresse dar, die relativ zu einem `this` Zeiger ist ( `Me` in Visual Basic).
