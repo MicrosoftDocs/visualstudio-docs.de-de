@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f932c6c02bf8b3e60487b781dd3211f6019d49c9
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: b637c4cf1b065426bb4070d2e08bf59984c8ff23
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902356"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 
@@ -75,19 +75,19 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Shader-Designer für 
 
 Die Symbolleisten des Shader-Designers enthalten Befehle, die Sie bei der Arbeit mit DGSL-Shader-Diagrammen unterstützen.
 
-Befehle, die den Zustand des Shader-Designers beeinflussen, finden Sie auf der Symbolleiste **Shader-Designer-Modus** im Visual Studio-Hauptfenster. Designtools und -befehle befinden sich auf der **Shader-Designer** -Symbolleiste auf der Shader-Designer-Entwurfsoberfläche.
+Befehle, die den Zustand des Shader-Designers beeinflussen, finden Sie auf der Symbolleiste **Shader-Designer-Modus** im Visual Studio-Hauptfenster. Designtools und -befehle befinden sich auf der **Shader-Designer**-Symbolleiste auf der Shader-Designer-Entwurfsoberfläche.
 
-So sieht die **Shader-Designer-Modus** -Symbolleiste aus:
+So sieht die **Shader-Designer-Modus**-Symbolleiste aus:
 
 ![Modale Shader-Designer-Symbolleiste](../designers/media/digit-dsd-modal-toolbar.png)
 
-In dieser Tabelle werden die Elemente der **Shader-Designer-Modus** -Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
+In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
 |Element der Symbolleiste|Beschreibung|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Interaktion mit Knoten und Kanten im Diagramm. In diesem Modus können Sie Knoten auswählen und verschieben oder löschen. Zudem können Sie Kanten einrichten oder unterbrechen.|
-|**Schwenken**|Ermöglicht das Bewegen eines Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie ihn.<br /><br /> Im **Auswahl** -Modus können Sie den **Schwenken** -Modus durch Gedrückthalten der **STRG** -TASTE vorübergehend aktivieren.|
-|**Zoomen**|Ermöglicht das Anzeigen von mehr oder weniger Details des Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie im **Zoom** -Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswählen** -Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie dazu **STRG** gedrückt.|
+|**Schwenken**|Ermöglicht das Bewegen eines Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der **STRG**-TASTE vorübergehend aktivieren.|
+|**Zoomen**|Ermöglicht das Anzeigen von mehr oder weniger Details des Shader-Diagramms relativ zum Fensterrahmen. Wählen Sie im **Zoom**-Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswählen**-Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie dazu **STRG** gedrückt.|
 |**Mit Zoom anpassen**|Zeigt das gesamte Shader-Diagramm im Fensterrahmen an.|
 |**Real-Time Rendering Mode** (Echtzeit-Renderingmodus)|Bei aktiviertem Rendering in Echtzeit, zeichnet Visual Studio die Entwurfsoberfläche auch dann neu, wenn keine Benutzeraktion ausgeführt wird. Ein hilfreicher Modus, bei der Arbeit mit Shadern, die sich im Laufe der Zeit ändern.|
 |**Vorschau mit Kugel**|Wenn diese aktiviert ist, wird ein Modell einer Kugel für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|
@@ -98,14 +98,14 @@ In dieser Tabelle werden die Elemente der **Shader-Designer-Modus** -Symbolleist
 |**Vorschau mit Ebene**|Wenn diese aktiviert ist, wird ein Modell einer Ebene für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|
 |**Werkzeugkasten**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|
 |**Eigenschaften**|Zeigt das Fenster **Eigenschaften** entweder an oder blendet es aus.|
-|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren** : Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als** : Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik-Engines** : Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11** : Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP** : Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht** : Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz** : Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
+|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|
 
 > [!TIP]
 > Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.
 
 ### <a name="work-with-nodes-and-connections"></a>Arbeiten mit Knoten und Verbindungen
 
-Verwenden Sie den Modus **Auswählen** , um Knoten hinzuzufügen, zu entfernen, neu anzuordnen, zu verbinden und zu konfigurieren. So werden diese grundlegenden Vorgänge ausgeführt:
+Verwenden Sie den Modus **Auswählen**, um Knoten hinzuzufügen, zu entfernen, neu anzuordnen, zu verbinden und zu konfigurieren. So werden diese grundlegenden Vorgänge ausgeführt:
 
 #### <a name="to-perform-basic-operations-in-select-mode"></a>Ausführen von grundlegenden Vorgängen im Modus „Auswählen“
 
@@ -131,7 +131,7 @@ Damit Sie verstehen, wie ein Shader in Ihrer App angezeigt wird, können Sie kon
 
 Der Shader-Designer umfasst sechs Formen (eine Kugel, einen Würfel, einen Zylinder, einen Kegel, eine Teekanne und eine Ebene), die Sie für die Vorschau Ihrer Shader verwenden können. Je nach Shader bieten Ihnen bestimmte Formen möglicherweise eine bessere Vorschau.
 
-Wählen Sie auf der **Shader-Designer-Modi** -Symbolleiste die gewünschte Form aus.
+Wählen Sie auf der **Shader-Designer-Modi**-Symbolleiste die gewünschte Form aus.
 
 #### <a name="textures-and-material-parameters"></a>Texturen und Materialparameter
 
@@ -147,12 +147,12 @@ Die folgende Tabelle enthält die Shaderparameter, die Sie ändern können:
 
 |Parameter|Eigenschaften|
 |---------------|----------------|
-|**Textur 1** - **Textur 8**|**Zugriff** :                             **Öffentlich** , sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname** : Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|
-|**Material (Umgebung)**|**Zugriff** :                             **Öffentlich** , sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert** : Die diffuse Farbe des aktuellen Pixels aufgrund indirekter oder Umgebungsbeleuchtung.|
-|**Material (Diffus)**|**Zugriff** : **Öffentlich** , sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert** : Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung streut.|
-|**Material (Selbstleuchtend)**|**Zugriff** :                              **Öffentlich** , sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert** : Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|
-|**Material (Glanz)**|**Zugriff** :                              **Öffentlich** , sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert** : Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung reflektiert.|
-|**Material (Glanzkraft)**|**Zugriff** :                             **Öffentlich** , sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert** : Der Exponent, mit dem die Intensität von Glanzlichtern auf dem aktuellen Pixel definiert wird.|
+|**Textur 1** - **Textur 8**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|
+|**Material (Umgebung)**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die diffuse Farbe des aktuellen Pixels aufgrund indirekter oder Umgebungsbeleuchtung.|
+|**Material (Diffus)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung streut.|
+|**Material (Selbstleuchtend)**|**Zugriff**:                              **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|
+|**Material (Glanz)**|**Zugriff**:                              **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung reflektiert.|
+|**Material (Glanzkraft)**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Der Exponent, mit dem die Intensität von Glanzlichtern auf dem aktuellen Pixel definiert wird.|
 
 #### <a name="time-based-effects"></a>Zeitbasierte Effekte
 
@@ -170,7 +170,7 @@ Halten Sie hierzu **ALT** gedrückt, wählen Sie einen beliebigen Punkt auf der 
 
 Bevor Sie einen Shader in Ihrer App verwenden können, müssen Sie ihn in ein Format exportieren, das DirectX versteht.
 
-Sie können Shader als HLSL-Quellcode oder als kompilierten Shader-Bytecode exportieren. HLSL-Quellcode wird in eine Textdatei exportiert, die über die Erweiterung *.hlsl* verfügt. Shader-Bytecode kann entweder in eine unformatierte Binärdatei exportiert werden, die über die Erweiterung *.cso* verfügt, oder in eine C++-Headerdatei ( *.h* ), die den Shader-Bytecode in ein Array codiert.
+Sie können Shader als HLSL-Quellcode oder als kompilierten Shader-Bytecode exportieren. HLSL-Quellcode wird in eine Textdatei exportiert, die über die Erweiterung *.hlsl* verfügt. Shader-Bytecode kann entweder in eine unformatierte Binärdatei exportiert werden, die über die Erweiterung *.cso* verfügt, oder in eine C++-Headerdatei (*.h*), die den Shader-Bytecode in ein Array codiert.
 
 Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).
 
@@ -178,12 +178,12 @@ Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehenswei
 
 |Get-Help|Tastenkombinationen|
 |-------------| - |
-|In den Modus **Auswählen** wechseln|**STRG**+**G** , **STRG**+**Q**<br /><br /> **S**|
-|In den Modus **Zoom** wechseln|**STRG**+**G** , **STRG**+**Z**<br /><br /> **Z**|
-|In den Modus **Schwenken** wechseln|**STRG**+**G** , **STRG**+**P**<br /><br /> **K**|
+|In den Modus **Auswählen** wechseln|**STRG**+**G**, **STRG**+**Q**<br /><br /> **S**|
+|In den Modus **Zoom** wechseln|**STRG**+**G**, **STRG**+**Z**<br /><br /> **Z**|
+|In den Modus **Schwenken** wechseln|**STRG**+**G**, **STRG**+**P**<br /><br /> **K**|
 |Alles auswählen|**STRG**+**A**|
 |Die aktuelle Auswahl löschen|**Löschen**|
-|Brechen Sie die aktuelle Auswahl ab.|**Escape** ( **ESC** )|
+|Brechen Sie die aktuelle Auswahl ab.|**Escape** (**ESC**)|
 |Vergrößern|**STRG**+**Mausrad vorwärts**<br /><br /> Pluszeichen ( **+** )|
 |Verkleinern|**STRG**+**Mausrad rückwärts**<br /><br /> Minuszeichen ( **-** )|
 |Die Entwurfsoberfläche nach oben schwenken|**Mausrad rückwärts**<br /><br /> **BildAb**|

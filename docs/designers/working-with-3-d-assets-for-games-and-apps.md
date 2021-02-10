@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 8b622200832e42aa3900061125fe08271f5f3458
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896350"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Arbeiten mit 3D-Objekten für Spiele und Apps
 
@@ -25,7 +25,7 @@ In diesem Artikel werden die Visual Studio-Tools beschrieben, die Sie verwenden 
 
 ## <a name="directx-app-development-in-visual-studio"></a>DirectX-App-Entwicklung in Visual Studio
 
-In einer DirectX-App werden normalerweise Programmierlogik, die DirectX-API und HLSL-Programme (High Level Shading Language) mit Audio- und visuellen 3D-Objekten kombiniert. So können Sie von vielfältigen Multimediafunktionen profitieren. Visual Studio enthält Tools, die Sie verwenden können, um mit Bildern und Texturen, 3D-Modellen und Shadern zu arbeiten, ohne die IDE verlassen zu müssen. Visual Studio-Tools sind insbesondere für Folgendes geeignet: zum Erstellen von *Platzhalter* -Objekten, mit denen Sie Code testen oder Prototypen erstellen können, bevor Sie produktionsbereite Objekte in Auftrag geben, und zum Prüfen und Ändern produktionsbereiter Objekte, wenn Sie Ihre Anwendung debuggen.
+In einer DirectX-App werden normalerweise Programmierlogik, die DirectX-API und HLSL-Programme (High Level Shading Language) mit Audio- und visuellen 3D-Objekten kombiniert. So können Sie von vielfältigen Multimediafunktionen profitieren. Visual Studio enthält Tools, die Sie verwenden können, um mit Bildern und Texturen, 3D-Modellen und Shadern zu arbeiten, ohne die IDE verlassen zu müssen. Visual Studio-Tools sind insbesondere für Folgendes geeignet: zum Erstellen von *Platzhalter*-Objekten, mit denen Sie Code testen oder Prototypen erstellen können, bevor Sie produktionsbereite Objekte in Auftrag geben, und zum Prüfen und Ändern produktionsbereiter Objekte, wenn Sie Ihre Anwendung debuggen.
 
 Im Folgenden finden Sie weitere Informationen über die Objektarten, mit denen Sie in Visual Studio arbeiten können.
 

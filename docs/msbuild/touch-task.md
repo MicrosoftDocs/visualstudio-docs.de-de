@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbd31edfa72368a85361032e9875b234585a07
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b31beb15ddfd1078d72c247535e2bc835b8c31e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902651"
 ---
 # <a name="touch-task"></a>Touch-Aufgabe
 

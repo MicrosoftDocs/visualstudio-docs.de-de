@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 251c47b9-de32-414b-a138-bf45290af12e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba80c4d52491a70a7bb8e294c9dd6ca2c9664ec3
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: b8e9f0868cb774ee82c79ba190acddebf63193cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901386"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName-Aufgabe
 
-Erstellt einen Manifestnamen im Visual Basic-Stil aus einem angegebenen *RESX* -Dateinamen oder aus einer anderen Ressource.
+Erstellt einen Manifestnamen im Visual Basic-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
 
 ## <a name="parameters"></a>Parameter
 
@@ -43,7 +43,7 @@ Erstellt einen Manifestnamen im Visual Basic-Stil aus einem angegebenen *RESX* -
 
 ## <a name="remarks"></a>Hinweise
 
- Die Aufgabe [CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) bestimmt den richtigen Manifestressourcennamen, der einer bestimmten *RESX* - oder einer anderen Ressourcendatei zugewiesen werden soll. Die Aufgabe stellt einen logischen Namen für eine Ressourcendatei bereit und fügt sie dann an einen Ausgabeparameter als Metadatenelement an.
+ Die Aufgabe [CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) bestimmt den richtigen Manifestressourcennamen, der einer bestimmten *RESX*- oder einer anderen Ressourcendatei zugewiesen werden soll. Die Aufgabe stellt einen logischen Namen für eine Ressourcendatei bereit und fügt sie dann an einen Ausgabeparameter als Metadatenelement an.
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 

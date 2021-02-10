@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: ffc7f8a80e86779f2cc419f841a3b80280f39c9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896402"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Registerkarte "Fenster", Dialogfeld "Fenstereigenschaften"
 Mit der Registerkarte **Fenster** können Sie Informationen zu Fenstern anzeigen, die mit dem ausgewählten Fenster in Zusammenhang stehen. Verschieben Sie den Fokus auf das [Fensteransichtsfenster](../debugger/windows-view.md), um das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Fensterknoten in der Struktur aus, und klicken Sie anschließend im Menü **Ansicht** auf **Eigenschaften**.

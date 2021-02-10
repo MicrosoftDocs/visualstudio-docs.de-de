@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 252690a94392fa408066619169e355e7a29454e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906335"
 ---
 # <a name="window-properties-dialog-box"></a>Fenstereigenschaften (Dialogfeld)
 Verwenden Sie dieses Dialogfeld, um mehr über ein bestimmtes Fenster zu erfahren. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus in das Fenster [Fensteransicht](../debugger/windows-view.md). Wählen Sie einen beliebigen Fensterknoten in der Struktur aus, und klicken Sie anschließend im Menü **Ansicht** auf **Eigenschaften**.

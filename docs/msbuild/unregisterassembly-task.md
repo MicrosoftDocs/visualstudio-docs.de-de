@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 068073b2d84d95ad3d86abe582691be0dd4af895
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 23fe04834ebd66bae2bce50a63f7db9cb8281f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902510"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly-Aufgabe
 

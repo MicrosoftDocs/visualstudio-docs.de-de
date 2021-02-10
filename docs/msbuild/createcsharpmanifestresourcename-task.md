@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f13293a6967456b153d14464b65182153eca2549
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 3406a5f61c9a4aa1c9e2a3c6388741c3ae0fa0f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901453"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName-Aufgabe
 
-Erstellt einen Manifestnamen im C#-Stil aus einem angegebenen *RESX* -Dateinamen oder aus einer anderen Ressource.
+Erstellt einen Manifestnamen im C#-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
 
 ## <a name="parameters"></a>Parameter
 
@@ -43,7 +43,7 @@ Erstellt einen Manifestnamen im C#-Stil aus einem angegebenen *RESX* -Dateinamen
 
 ## <a name="remarks"></a>Hinweise
 
- Die Aufgabe [CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) bestimmt den richtigen Manifestressourcennamen, der einer bestimmten *RESX* - oder einer anderen Ressourcendatei zugewiesen werden soll. Die Aufgabe stellt einen logischen Namen für eine Ressourcendatei bereit und fügt sie dann an einen Ausgabeparameter als Metadatenelement an.
+ Die Aufgabe [CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) bestimmt den richtigen Manifestressourcennamen, der einer bestimmten *RESX*- oder einer anderen Ressourcendatei zugewiesen werden soll. Die Aufgabe stellt einen logischen Namen für eine Ressourcendatei bereit und fügt sie dann an einen Ausgabeparameter als Metadatenelement an.
 
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
