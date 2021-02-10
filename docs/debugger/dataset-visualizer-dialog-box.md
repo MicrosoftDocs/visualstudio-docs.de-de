@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: dfbede03-805b-4f88-a645-b479450e6cb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ca676ec343588d3e473da2ddbf37dd814e29b73d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865721"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dataset-Schnellansicht (Dialogfeld)
 Mit der DataSet-Schnellansicht können Sie den Inhalt eines DataSet-, DataTable-, DataView- oder DataViewManager-Objekts anzeigen. Sie können auf diese Schnellansicht zugreifen, indem Sie auf das Symbol mit dem Vergrößerungsglas klicken, das neben dem Wert eines dieser Objekte in einem Debuggervariablenfenster oder in einem DataTip angezeigt wird.

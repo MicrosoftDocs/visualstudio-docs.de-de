@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae94a7cb9572a0975dc1c3717275c384c2e45978
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 466c64f3b055eef3629f0f4666529f1be4247f42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861334"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (Konstruktor)
 Erstellt eine Instanz der `VsgDbg`-Klasse mit oder ohne das Vorbereiten einer In-App-Komponente der Grafikdiagnose, um Grafikinformationen standardmäßig aktiv zu erfassen und aufzuzeichnen, basierend auf dem angegebenen booleschen Parameter.

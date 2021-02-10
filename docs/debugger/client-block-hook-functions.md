@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: f21c197e-565d-4e3f-9b27-4c018c9b87fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0378f2260a9bf71cf7ac1192b7eb7a2259d8ace2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865877"
 ---
 # <a name="client-block-hook-functions"></a>Hookfunktionen für Clientblöcke
 Wenn Sie die in `_CLIENT_BLOCK`-Blöcken gespeicherten Daten überprüfen oder als Bericht ausgeben möchten, können Sie speziell für diesen Zweck eine Funktion schreiben. Der Prototyp dieser Funktion muss etwa wie der folgende, in CRTDBG.H definierte Prototyp aussehen:

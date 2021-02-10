@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1d4ceecae385ac6e5444c60f6634b260f2e887
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d5591ce205f60fbdf63181106233ba04d7b23dd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865851"
 ---
 # <a name="com-server-and-container-debugging"></a>Debuggen von COM-Servern und -Containern
 COM-Anwendungen führen eine Reihe von Tasks durch, die nicht direkt vom Programmierer gesteuert werden können. Zu den Bereichen, in denen ein unerwartetes Verhalten auftreten kann, gehören beispielsweise die Kommunikation zwischen DLLs, die Verwendungshäufigkeit von Objekten sowie Zwischenablageoperationen. In einem solchen Fall sollten Sie zunächst die Problemursache ermitteln.

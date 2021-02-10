@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7267e90c2fe3e4617fe2bec8bb177baf42ce37b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 76fc0d0dafac542ffde8656c643ec01b7ce23a39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861672"
 ---
 # <a name="setenv-task"></a>SetEnv-Aufgabe
 
@@ -34,13 +34,13 @@ Legt den Wert einer bestimmten Umgebungsvariable fest oder löscht ihn.
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der **SetEnv** -Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der **SetEnv**-Aufgabe beschrieben.
 
-|Parameter|Beschreibung|
+|Parameter|BESCHREIBUNG|
 |---------------|-----------------|
-|**Name**|Erforderlicher **String** -Parameter.<br /><br /> Der Name einer Umgebungsvariablen.|
-|**OutputEnvironmentVariable**|Optionaler **String** -Ausgabeparameter.<br /><br /> Enthält den Wert, der der Umgebungsvariablen zugewiesen ist, die durch den Parameter **Name** angegeben wird.|
-|**Präfix**|Erforderlicher `Boolean`-Parameter.<br /><br /> Wenn `true`, wird der Wert des **Value** -Parameters vor dem Wert der Umgebungsvariablen verkettet, die durch den **Name** -Parameter angegeben wird. Anschließend wird der Umgebungsvariable das Ergebnis zugewiesen. Wenn `false`, wird der Umgebungsvariablen nur der Wert des **Value** -Parameters zugewiesen.|
+|**Name**|Erforderlicher **String**-Parameter.<br /><br /> Der Name einer Umgebungsvariablen.|
+|**OutputEnvironmentVariable**|Optionaler **String**-Ausgabeparameter.<br /><br /> Enthält den Wert, der der Umgebungsvariablen zugewiesen ist, die durch den Parameter **Name** angegeben wird.|
+|**Präfix**|Erforderlicher `Boolean`-Parameter.<br /><br /> Wenn `true`, wird der Wert des **Value**-Parameters vor dem Wert der Umgebungsvariablen verkettet, die durch den **Name**-Parameter angegeben wird. Anschließend wird der Umgebungsvariable das Ergebnis zugewiesen. Wenn `false`, wird der Umgebungsvariablen nur der Wert des **Value**-Parameters zugewiesen.|
 |**Ziel**|Optionaler **String** -Parameter.<br /><br /> Gibt den Ort an, an dem eine Umgebungsvariable gespeichert wird. Geben Sie „User“ oder „Machine“ an.<br /><br /> Weitere Informationen finden Sie unter [EnvironmentVariableTarget-Enumeration](xref:System.EnvironmentVariableTarget).|
 |**Wert**|Optionaler **String** -Parameter.<br /><br /> Der Wert, der der Umgebungsvariablen zugewiesen ist, die durch den Parameter **Name** angegeben wird. Die Variable wird gelöscht wenn **Value** leer und die Variable vorhanden ist. Wenn die Variable vorhanden ist, tritt kein Fehler auf, obwohl der Vorgang nicht ausgeführt werden kann.<br /><br /> Weitere Informationen finden Sie unter [Environment::SetEnvironmentVariable-Methode](xref:System.Environment.SetEnvironmentVariable%2A).|
 

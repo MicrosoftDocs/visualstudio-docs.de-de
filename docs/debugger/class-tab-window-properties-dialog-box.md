@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e1d7126fe795e269ee619e03daf2b81d6458f2e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729027"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857814"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Registerkarte "Klasse", Dialogfeld "Fenstereigenschaften"
 Verwenden Sie die Registerkarte **Klasse**, um Informationen zur Klasse des ausgewählten Fensters anzuzeigen. Verschieben Sie den Fokus auf die [Fensteransicht](../debugger/windows-view.md), um das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Fensterknoten in der Struktur aus, und klicken Sie anschließend im Menü **Ansicht** auf **Eigenschaften**.

@@ -4,18 +4,18 @@ description: Hier erfahren Sie, wie Sie mit Visual Studio Tools für KI ein Repo
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 303c410bf519561844d95cc13fa036534ddb2aa7
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: cd89b0dfd2d5a9e4ea1cefde15e038e41a4b3faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841522"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonen eines Repositorys in Python-Code in Visual Studio
 

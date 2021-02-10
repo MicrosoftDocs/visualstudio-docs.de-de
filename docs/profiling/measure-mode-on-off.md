@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fbd99736-9ea8-47d2-af51-7e3a4e9c29c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe8ea27f16dc8b120380989c15b1838ea9260d0
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3b6aa7fd52845ca59c237350bdf264108015a0bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851945"
 ---
 # <a name="measure-mode-onoff"></a>Aktivieren/Deaktivieren des Messmodus
 Mithilfe dieses Tools können Sie die Dauer eines Zeitraums auf der Zeitachse genau messen. Klicken Sie auf die Schaltfläche „Messen“ (auf das Lineal), und bewegen Sie den Mauszeiger auf der Zeitachse, um den Messmodus zu aktivieren. Beachten Sie bei diesem Vorgang, dass der Bereich unterhalb des Zeigers in gelb hervorgehoben ist und die gemessene Zeit in der Symbolleiste im Bereich rechts neben der Schaltfläche angezeigt wird. Dieser Wert wird dynamisch berechnet, während Sie den Zeiger auf der Zeitachse bewegen, damit Sie unmittelbar sehen können, wie viel Zeit ein bestimmtes Ereignis in Anspruch nimmt. Wenn Sie die Maustaste loslassen, bleibt der Zeitwert weiterhin sichtbar.

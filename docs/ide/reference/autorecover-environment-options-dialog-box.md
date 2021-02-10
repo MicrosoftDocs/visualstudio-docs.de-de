@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836487"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoWiederherstellen, Umgebung, Dialogfeld „Optionen“
 
@@ -38,10 +38,10 @@ Um dieses Dialogfeld zu öffnen, navigieren Sie zu **Extras** > **Optionen** > *
 
 ::: moniker range="vs-2019"
 
-Verwenden Sie diese Option, um anzupassen, wie oft eine Datei automatisch im Editor gespeichert wird. Für zuvor gespeicherte Dateien speichert Visual Studio 2019 Version 16.2 oder höher eine Kopie der Datei unter **_%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[Projektname]_* _. Wenn es sich um eine neue Datei handelt und diese noch nicht gespeichert wurde, wird sie von Visual Studio mit einem zufällig generierten Dateinamen automatisch gespeichert.
+Verwenden Sie diese Option, um anzupassen, wie oft eine Datei automatisch im Editor gespeichert wird. Für zuvor gespeicherte Dateien speichert Visual Studio 2019 Version 16.2 oder höher eine Kopie der Datei unter ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[Projektname]***. Wenn es sich um eine neue Datei handelt und diese noch nicht gespeichert wurde, wird sie von Visual Studio mit einem zufällig generierten Dateinamen automatisch gespeichert.
 
 > [!NOTE]
-> Wenn Sie Visual Studio 2019 Version 16.1 oder früher verwenden, ist der Speicherort _%USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[Projektname]*. Weitere Informationen finden Sie auf der Seite [Verlauf der Versionshinweisen zu Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/).
+> Wenn Sie Visual Studio 2019 Version 16.1 oder früher verwenden, ist der Speicherort unter *%USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[Projektname]* . Weitere Informationen finden Sie auf der Seite [Verlauf der Versionshinweisen zu Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/).
 
 ::: moniker-end
 

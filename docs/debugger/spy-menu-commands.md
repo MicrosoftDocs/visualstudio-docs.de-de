@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 802549be-dbd8-4df0-a18b-971900eaa769
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c737bef539e541d1dc1e130eb0c9dedb3e00f2c4
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: af8a0cb8e102369398046f2c4a27cd54073e3f26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861295"
 ---
 # <a name="spy-menu-commands"></a>Befehle im Menü "Spy"
 Das Menü **Spy** enthält Befehle für das Arbeiten mit Spy++-Fenstern und -Ansichten.

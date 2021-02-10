@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ab8a723b69f4c5930c91a10719a2107ad83003
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ba53fefcc5d29cb47bd3a6912ad7af34dd8deabb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850385"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio
 
@@ -40,18 +40,18 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio für Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
-> In Abhängigkeit der von Ihnen gewählten Einstellungen kann sich die Benutzeroberfläche Ihrer Visual Studio Edition von dem unterscheiden, was in diesem Thema beschrieben wird. Klicken Sie auf **Extras** > **Einstellungen importieren/exportieren** und dann auf **Alle Einstellungen zurücksetzen** , um Ihre Einstellungen z.B. in **Allgemein** oder **Visual C++** zu ändern.
+> In Abhängigkeit der von Ihnen gewählten Einstellungen kann sich die Benutzeroberfläche Ihrer Visual Studio Edition von dem unterscheiden, was in diesem Thema beschrieben wird. Klicken Sie auf **Extras** > **Einstellungen importieren/exportieren** und dann auf **Alle Einstellungen zurücksetzen**, um Ihre Einstellungen z.B. in **Allgemein** oder **Visual C++** zu ändern.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>So können Sie eine gesamte Projektmappe erstellen, neu erstellen oder bereinigen
 
 1. Wählen Sie im **Projektmappen-Explorer** die Projektmappe aus, oder öffnen Sie sie.
 
-2. Wählen Sie dann auf der Menüleiste **Erstellen** , gefolgt von einem der folgenden Befehle aus:
+2. Wählen Sie dann auf der Menüleiste **Erstellen**, gefolgt von einem der folgenden Befehle aus:
 
     - Wählen Sie **Erstellen** oder **Projektmappe erstellen** aus, um nur diejenigen Projektdateien und Komponenten zu kompilieren, die sich seit dem letzten Build geändert haben.
 
         > [!NOTE]
-        > Der Befehl **Erstellen** wandelt sich in **Projektmappe erstellen** , wenn eine Projektmappe mehr als ein Projekt enthält.
+        > Der Befehl **Erstellen** wandelt sich in **Projektmappe erstellen**, wenn eine Projektmappe mehr als ein Projekt enthält.
 
     - Wählen Sie **Projektmappe neu erstellen** aus, um die Projektmappe zu „bereinigen“ und anschließend alle Projektdateien und Komponenten zu erstellen.
 
@@ -69,19 +69,19 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>So erstellen Sie nur das Startprojekt und seine Abhängigkeiten
 
-1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen** .
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 2. Klappen Sie im Dialogfeld **Optionen** den Knoten **Projekte und Projektmappen** auf, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.
 
      Das Dialogfeld **Erstellen und Ausführen** > **Projekte und Projektmappen** > **Optionen** wird geöffnet.
 
-3. Aktivieren Sie das Kontrollkästchen **Nur Startprojekte und Abhängigkeiten zur Laufzeit ausführen** .
+3. Aktivieren Sie das Kontrollkästchen **Nur Startprojekte und Abhängigkeiten zur Laufzeit ausführen**.
 
      Wenn dieses Kontrollkästchen aktiviert ist, werden nur das aktuelle Startprojekt und seine Abhängigkeiten erstellt, wenn Sie einen der folgenden Schritte ausführen:
 
-    - Wählen Sie auf der Menüleiste **Debuggen** > **Starten** ( **F5** ) aus.
+    - Wählen Sie auf der Menüleiste **Debuggen** > **Starten** (**F5**) aus.
 
-    - Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** ( **STRG**+**UMSCHALT**+**B** )aus.
+    - Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** (**STRG**+**UMSCHALT**+**B**)aus.
 
     Wenn dieses Kontrollkästchen deaktiviert ist, werden alle Projekte, ihre Abhängigkeiten und die Projektmappendateien erstellt, wenn Sie einen der vorstehenden Befehle ausführen. Standardmäßig ist dieses Kontrollkästchen deaktiviert.
 
@@ -111,7 +111,7 @@ Führen Sie einen der folgenden Schritte aus:
 
 - Wählen Sie auf der Menüleiste **Erstellen** > **Abbrechen** aus.
 
-- Drücken Sie **STRG**+**Pause** .
+- Drücken Sie **STRG**+**Pause**.
 
 ## <a name="see-also"></a>Siehe auch
 

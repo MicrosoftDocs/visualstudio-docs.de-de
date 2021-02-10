@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b71c91dbcc420fd4cc89a5e86fb976cca738bdcc
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 84d5f85584403cc18cd00708a8d4698723d614ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857609"
 ---
 # <a name="crt-debugging-techniques"></a>CRT-Debugverfahren
 Die folgenden Debugverfahren können beim Debuggen von Programmen hilfreich sein, die die C-Laufzeitbibliothek verwenden.

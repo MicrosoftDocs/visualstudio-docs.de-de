@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 611060e018307eb55d6d575d5cd008bed6f0a2be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860879"
 ---
 # <a name="msbuild-reference"></a>MSBuild-Referenz
 
@@ -55,13 +55,13 @@ Bei MSBuild handelt es sich um das Buildsystem für Visual Studio. Die folgenden
  Beschreibt die Argumente und Schalter, die mit „MSBuild.exe“ verwendet werden können.
 
 - [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md)\
- Beschreibt die in MSBuild verfügbare *TARGETS* -Datei.
+ Beschreibt die in MSBuild verfügbare *TARGETS*-Datei.
 
 - [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md)\
  Listet die Metadaten auf, die zusammen mit den einzelnen Elementen erstellt werden.
 
 - [MSBuild-Antwortdateien](../msbuild/msbuild-response-files.md)\
- Erläutert die *RSP* -Dateien, die Befehlszeilenschalter enthalten.
+ Erläutert die *RSP*-Dateien, die Befehlszeilenschalter enthalten.
 
 - [Zusätzliche Ressourcen](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)\
  Enthält Links zu Websites und Newsgroups von MSBuild.

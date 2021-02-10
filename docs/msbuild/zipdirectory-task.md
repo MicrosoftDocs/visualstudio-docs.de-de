@@ -21,19 +21,19 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d6b897a33dacdbd52beaabdd9289a010df92a85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847881"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory-Aufgabe
 
-Erstellt ein *ZIP* -Archiv aus den Inhalten eines Verzeichnisses.
+Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 
 >[!NOTE]
 >Die `ZipDirectory`-Aufgabe ist nur in MSBuild 15.8 und höher verfügbar.
@@ -44,9 +44,9 @@ Erstellt ein *ZIP* -Archiv aus den Inhalten eines Verzeichnisses.
 
 |Parameter|Beschreibung|
 |---------------|-----------------|
-|`DestinationFile`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter<br /><br /> Der vollständige Pfad der *ZIP* -Datei, die erstellt werden soll.|
+|`DestinationFile`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter<br /><br /> Der vollständige Pfad der *ZIP*-Datei, die erstellt werden soll.|
 |`Overwrite`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, wird die Zieldatei überschrieben, sofern sie vorhanden ist. Wird standardmäßig auf `false` festgelegt.|
-|`SourceDirectory`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Legt das Verzeichnis fest, aus dem ein *ZIP* -Archiv erstellt werden soll.|
+|`SourceDirectory`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Legt das Verzeichnis fest, aus dem ein *ZIP*-Archiv erstellt werden soll.|
 
 ## <a name="remarks"></a>Hinweise
 
@@ -54,7 +54,7 @@ Erstellt ein *ZIP* -Archiv aus den Inhalten eines Verzeichnisses.
 
 ## <a name="example"></a>Beispiel
 
- Im folgenden Beispiel (sofern es als importierte *TARGETS* -Datei verwendet wird) wird nach dem Erstellen des Projekts ein *ZIP* -Archiv aus dem Ausgabeverzeichnis erstellt. Normalerweise würde die `$(OutputPath)`-Eigenschaft in einer MSBuild-Projektdatei definiert werden. Daher erzeugt eine Projektdatei, die die folgende Datei importiert, das ZIP-Archiv `output.zip`:
+ Im folgenden Beispiel (sofern es als importierte *TARGETS*-Datei verwendet wird) wird nach dem Erstellen des Projekts ein *ZIP*-Archiv aus dem Ausgabeverzeichnis erstellt. Normalerweise würde die `$(OutputPath)`-Eigenschaft in einer MSBuild-Projektdatei definiert werden. Daher erzeugt eine Projektdatei, die die folgende Datei importiert, das ZIP-Archiv `output.zip`:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

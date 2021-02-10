@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287245"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572992"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Verwenden von Google Test für C++ in Visual Studio
 
@@ -65,7 +65,7 @@ Fügen Sie Ihrer *CPP*-Testdatei alle erforderlichen `#include`-Anweisungen hinz
 
 ## <a name="write-and-run-tests"></a>Schreiben und Ausführen von Tests
 
-Sie können nun Google Test-Tests schreiben und ausführen. Weitere Informationen über die Testmakros finden Sie unter [Google Test primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Weitere Informationen zum Ermitteln, Ausführen und Gruppieren Ihrer Tests mithilfe des **Test-Explorers** finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md).
+Sie können nun Google Test-Tests schreiben und ausführen. Weitere Informationen über die Testmakros finden Sie unter [Google Test primer (Einführung in Google Test)](https://github.com/google/googletest/blob/master/docs/primer.md). Weitere Informationen zum Ermitteln, Ausführen und Gruppieren Ihrer Tests mithilfe des **Test-Explorers** finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>Weitere Informationen
 

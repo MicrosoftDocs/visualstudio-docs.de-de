@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5d75574e29118beacb6312d2dd013a19894a176
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 681e86a8483790a91a6a7e75eef95b5033042e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861542"
 ---
 # <a name="summary-view---sampling-data"></a>Zusammenfassungsansicht: Samplingdaten
 Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten Funktionen in einem Profilerstellungslauf. Weitere Informationen, einschließlich einer Beschreibung der Benachrichtigungslinks und Berichtslisten, finden Sie unter [Zusammenfassungsansicht](../profiling/summary-view.md).
