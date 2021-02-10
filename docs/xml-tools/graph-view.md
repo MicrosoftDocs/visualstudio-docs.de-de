@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6abff7accf5e1990792b52f1fdf6a013edd0f9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 39a988ed4742f34fa2a3e6e2680d5eec8ccd2b07
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879305"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 
@@ -31,7 +31,7 @@ Auf der Entwurfsoberfläche der Diagrammansicht wird der Inhalt des [Arbeitsbere
 
 Per Doppelklick auf einen Knoten in der Diagrammansicht öffnen Sie den XML-Editor.
 
-Verwenden Sie die XSD-Designer-Symbolleiste oder die **ENTF** -TASTE, um ausgewählte Knoten aus dem Arbeitsbereich zu löschen.
+Verwenden Sie die XSD-Designer-Symbolleiste oder die **ENTF**-TASTE, um ausgewählte Knoten aus dem Arbeitsbereich zu löschen.
 
 Wenn die Entwurfsoberfläche leer ist, werden der XML-Editor, der **XML-Schema-Explorer** und das Wasserzeichen angezeigt. Das *Wasserzeichen* ist eine Liste von Links zu allen Ansichten des XSD-Designers.
 
@@ -116,7 +116,7 @@ Die folgenden XSD-Symbolleistenschaltflächen sind aktiviert, wenn die Diagramma
 
 ## <a name="panscroll"></a>Schwenken/Bildlauf
 
-Sie können die Entwurfsoberfläche mit den Bildlaufleisten oder durch Drücken der **STRG** -TASTE und gleichzeitiges Klicken und Ziehen der Maus schwenken. Wenn Sie die Entwurfsoberfläche mittels Klicken und Ziehen schwenken, wird der Cursor als vier sich kreuzende und in unterschiedliche Richtungen weisende Pfeile angezeigt.
+Sie können die Entwurfsoberfläche mit den Bildlaufleisten oder durch Drücken der **STRG**-TASTE und gleichzeitiges Klicken und Ziehen der Maus schwenken. Wenn Sie die Entwurfsoberfläche mittels Klicken und Ziehen schwenken, wird der Cursor als vier sich kreuzende und in unterschiedliche Richtungen weisende Pfeile angezeigt.
 
 ## <a name="undoredo"></a>Rückgängig/Wiederholen
 
@@ -134,11 +134,11 @@ Die Zoomfunktion befindet sich in der unteren rechten Ecke der Diagrammansicht.
 
 Der Zoomfaktor kann wie folgt gesteuert werden:
 
-- Halten Sie die **STRG** -TASTE gedrückt, und drehen Sie das Mausrad, während Sie die Maus über die Oberfläche der Diagrammansicht bewegen.
+- Halten Sie die **STRG**-TASTE gedrückt, und drehen Sie das Mausrad, während Sie die Maus über die Oberfläche der Diagrammansicht bewegen.
 
 - Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
 
-Der Zoomschieberegler ist nicht transparent, wenn Sie ihn auswählen, mit der Maus darauf zeigen oder mit der **STRG** -TASTE und dem Mausrad zoomen. Ansonsten ist er transparent.
+Der Zoomschieberegler ist nicht transparent, wenn Sie ihn auswählen, mit der Maus darauf zeigen oder mit der **STRG**-TASTE und dem Mausrad zoomen. Ansonsten ist er transparent.
 
 ## <a name="xml-editor-integration"></a>Integration des XML-Editors
 

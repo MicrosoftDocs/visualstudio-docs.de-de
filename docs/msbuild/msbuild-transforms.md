@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ba6a71373026a5a41905efc7c91520a9f6b7c5c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878206"
 ---
 # <a name="msbuild-transforms"></a>MSBuild-Transformationen
 
@@ -28,13 +28,13 @@ Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine an
 
 Transformationen werden nicht auf willkürliche Art und Weise erstellt, sondern sind auf eine spezielle Syntax beschränkt, in der alle Transformationsmodifizierer dem Format %(\<ItemMetaDataName>) entsprechen müssen. Alle Elementmetadaten können als Transfomationsmodifizierer verwendet werden, einschließlich des bekannten Elementmetadatenelements, das jedem Element bei der Erstellung zugewiesen wird. Eine vollständige Liste bekannter Metadaten finden Sie unter [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md).
 
-Im folgenden Beispiel wird eine Liste mit *RESX* -Dateien in eine Liste mit *RESOURCES* -Dateien transformiert. Der Transformationsmodifizierer %(dateiname) gibt an, dass jeder *RESOURCES* -Datei derselbe Dateiname wie der zugehörigen *RESX* -Datei zugeordnet wird.
+Im folgenden Beispiel wird eine Liste mit *RESX*-Dateien in eine Liste mit *RESOURCES*-Dateien transformiert. Der Transformationsmodifizierer %(dateiname) gibt an, dass jeder *RESOURCES*-Datei derselbe Dateiname wie der zugehörigen *RESX*-Datei zugeordnet wird.
 
 ```xml
 @(RESXFile->'%(filename).resources')
 ```
 
-Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx* , *Form2.resx* und *Form3.resx* sind, lauten die Ausgaben in der transformierten Liste *Form1.resources* , *Form2.resources* und *Form3.resources*.
+Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx*, *Form2.resx* und *Form3.resx* sind, lauten die Ausgaben in der transformierten Liste *Form1.resources*, *Form2.resources* und *Form3.resources*.
 
 > [!NOTE]
 > Sie können eine benutzerdefinierte Trennlinie für eine transformierte Elementliste auf dieselbe Weise angeben, wie Sie eine Trennlinie für eine Standardelementliste angeben. Verwenden Sie beispielsweise das folgende XML, um eine transformierte Elementliste durch ein Komma („,“) anstatt durch das standardmäßige Semikolon („;“) zu trennen: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -47,7 +47,7 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx* , 
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- Wenn die Elemente, die in der `RESXFile`-Elementliste enthalten sind, beispielsweise *Project1\Form1.resx* , *Project1\Form2.resx* und *Project1\Form3.text* sind, lauten die Ausgaben in der transformierten Liste *Toolset\Form1.resx* , *Toolset\Form2.resx* und *Toolset\Form3.text*.
+ Wenn die Elemente, die in der `RESXFile`-Elementliste enthalten sind, beispielsweise *Project1\Form1.resx*, *Project1\Form2.resx* und *Project1\Form3.text* sind, lauten die Ausgaben in der transformierten Liste *Toolset\Form1.resx*, *Toolset\Form2.resx* und *Toolset\Form3.text*.
 
 ## <a name="dependency-analysis"></a>Abhängigkeitsanalyse
 
@@ -71,7 +71,7 @@ Wenn die Elemente in der @(resxfile)-Elementliste beispielsweise *Form1.resx* , 
 
 ### <a name="description"></a>Beschreibung
 
- Im folgenden Beispiel wird eine MSBuild-Projektdatei dargestellt, die die Transformationen verwendet. Es wird angenommen, dass nur eine *XSD* -Datei im Verzeichnis *c:\sub0\sub1\sub2\sub3* vorhanden ist, und dass das Arbeitsverzeichnis *c:\sub0 lautet*.
+ Im folgenden Beispiel wird eine MSBuild-Projektdatei dargestellt, die die Transformationen verwendet. Es wird angenommen, dass nur eine *XSD*-Datei im Verzeichnis *c:\sub0\sub1\sub2\sub3* vorhanden ist, und dass das Arbeitsverzeichnis *c:\sub0 lautet*.
 
 ### <a name="code"></a>Code
 

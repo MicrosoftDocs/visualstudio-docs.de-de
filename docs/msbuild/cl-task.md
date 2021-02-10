@@ -20,23 +20,23 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 542d84f4c0279c1f76fa1ea29a244e78c53b394d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878434"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
 
-Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert ausführbare Dateien ( *EXE* ), Dynamic-Link Library-Dateien ( *DLL* ) oder Codemoduldateien ( *NETMODULE* ). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options), [Verwenden von MSBuild über die Befehlszeile](/cpp/build/msbuild-visual-cpp) und [Verwenden des Microsoft C++-Toolsets über die Befehlszeile](/cpp/build/building-on-the-command-line).
+Umschließt das Microsoft C++-Compilertool (*cl.exe*). Der Compiler generiert ausführbare Dateien (*EXE*), Dynamic-Link Library-Dateien (*DLL*) oder Codemoduldateien (*NETMODULE*). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options), [Verwenden von MSBuild über die Befehlszeile](/cpp/build/msbuild-visual-cpp) und [Verwenden des Microsoft C++-Toolsets über die Befehlszeile](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parameter
 
- Im Folgenden werden die Parameter der **CL** -Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
+ Im Folgenden werden die Parameter der **CL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.
 
 - **AdditionalIncludeDirectories**
 
@@ -58,7 +58,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler String[]-Parameter.
 
-   Gibt ein Verzeichnis an, das der Compiler durchsucht, um Dateiverweise aufzulösen, die an die **#using** -Anweisung übergeben wurden.
+   Gibt ein Verzeichnis an, das der Compiler durchsucht, um Dateiverweise aufzulösen, die an die **#using**-Anweisung übergeben wurden.
 
    Weitere Informationen finden Sie unter [/AI (Metadatenverzeichnisse festlegen)](/cpp/build/reference/ai-specify-metadata-directories).
 
@@ -66,7 +66,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler String-Parameter.
 
-   Eine Zeichenfolge, die immer in der Befehlszeile ausgegeben wird. Ihr Standardwert ist „ **/c** “.
+   Eine Zeichenfolge, die immer in der Befehlszeile ausgegeben wird. Ihr Standardwert ist „ **/c**“.
 
 - **AssemblerListingLocation**
 
@@ -92,7 +92,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
   - **All** -  **/FAcs**
 
-    Weitere Informationen finden Sie unter den Optionen **/FA** , **/FAc** , **/FAs** und **/FAcs** in [/FA, /Fa (Listingdatei)](/cpp/build/reference/fa-fa-listing-file).
+    Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listingdatei)](/cpp/build/reference/fa-fa-listing-file).
 
 - **BasicRuntimeChecks**
 
@@ -206,7 +206,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler String-Parameter.
 
-   Wählt den Typ der Debuginformationen aus, der für Ihr Programm erstellt wird, und ob diese Informationen in Objektdateien ( *OBJ* ) oder in einer Programmdatenbank (PDB) gespeichert werden sollen.
+   Wählt den Typ der Debuginformationen aus, der für Ihr Programm erstellt wird, und ob diese Informationen in Objektdateien (*OBJ*) oder in einer Programmdatenbank (PDB) gespeichert werden sollen.
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
@@ -268,7 +268,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler String-Parameter.
 
-   Ermöglicht es Ihnen, Informationen über interne Compilerfehler (ICE) direkt an Microsoft zu senden. Standardmäßig lautet die Einstellung in IDE-Builds **Prompt** und in Befehlszeilenbuilds **Queue** .
+   Ermöglicht es Ihnen, Informationen über interne Compilerfehler (ICE) direkt an Microsoft zu senden. Standardmäßig lautet die Einstellung in IDE-Builds **Prompt** und in Befehlszeilenbuilds **Queue**.
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
@@ -330,7 +330,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Bei `true` wird das verlässliche Modell für Gleitkommaausnahmen aktiviert. Ausnahmen werden sofort ausgelöst, wenn sie auftreten.
 
-   Weitere Informationen finden Sie unter der Option / **fp:except** in [/fp (Gleitkommaverhalten festlegen)](/cpp/build/reference/fp-specify-floating-point-behavior).
+   Weitere Informationen finden Sie unter der Option /**fp:except** in [/fp (Gleitkommaverhalten festlegen)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
 - **FloatingPointModel**
 
@@ -368,7 +368,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler **String[]** -Parameter.
 
-   Weist den Präprozessor an, eine oder mehrere angegebene **#using** -Datei zu verarbeiten.
+   Weist den Präprozessor an, eine oder mehrere angegebene **#using**-Datei zu verarbeiten.
 
    Weitere Informationen finden Sie unter [/FU (Name der expliziten #using-Datei)](/cpp/build/reference/fu-name-forced-hash-using-file).
 
@@ -384,7 +384,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler `Boolean`-Parameter.
 
-   Bei `true` werden vom Compiler Dokumentationskommentare in Quellcodedateien verarbeitet, und für jede derartige Quellcodedatei mit Dokumentationskommentaren wird eine *XDC* -Datei erstellt.
+   Bei `true` werden vom Compiler Dokumentationskommentare in Quellcodedateien verarbeitet, und für jede derartige Quellcodedatei mit Dokumentationskommentaren wird eine *XDC*-Datei erstellt.
 
    Weitere Informationen finden Sie unter [/doc (Dokumentationskommentare verarbeiten) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Siehe auch den Parameter **XMLDocumentationFileName** in dieser Tabelle.
 
@@ -398,7 +398,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
 - **InlineFunctionExpansion**
 
-   Optionaler **String** -Parameter.
+   Optionaler **String**-Parameter.
 
    Gibt die Ebene der Inlinefunktionserweiterung für den Build an.
 
@@ -440,7 +440,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
 - **ObjectFileName**
 
-   Optionaler **String** -Parameter.
+   Optionaler **String**-Parameter.
 
    Gibt einen Namen für die Objektdatei (OBJ) oder das Verzeichnis an, der anstelle des Standardwerts verwendet werden soll.
 
@@ -456,7 +456,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler `Boolean`-Parameter.
 
-   Bei `true` wird der Name der Standard-C-Laufzeitbibliothek in der Objektdatei ( *OBJ* ) weggelassen. Standardmäßig legt der Compiler den Namen der Bibliothek in der *OBJ* -Datei ab, um den Linker zur richtigen Bibliothek zu leiten.
+   Bei `true` wird der Name der Standard-C-Laufzeitbibliothek in der Objektdatei (*OBJ*) weggelassen. Standardmäßig legt der Compiler den Namen der Bibliothek in der *OBJ*-Datei ab, um den Linker zur richtigen Bibliothek zu leiten.
 
    Weitere Informationen finden Sie unter [/Zl (Kein Standardbibliotheksname)](/cpp/build/reference/zl-omit-default-library-name).
 
@@ -478,7 +478,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
 - **Optimization**
 
-   Optionaler **String** -Parameter.
+   Optionaler **String**-Parameter.
 
    Gibt die verschiedenen Codeoptimierungen für Geschwindigkeit und Größe an.
 
@@ -496,9 +496,9 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
 - **PrecompiledHeader**
 
-   Optionaler **String** -Parameter.
+   Optionaler **String**-Parameter.
 
-   Erstellt oder verwendet eine vorkompilierte Headerdatei ( *PCH* ) während des Builds.
+   Erstellt oder verwendet eine vorkompilierte Headerdatei (*PCH*) während des Builds.
 
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
@@ -512,7 +512,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
 - **PrecompiledHeaderFile**
 
-   Optionaler **String** -Parameter.
+   Optionaler **String**-Parameter.
 
    Gibt den Namen einer vorkompilierten Headerdatei an, die erstellt oder verwendet werden soll.
 
@@ -520,7 +520,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
 - **PrecompiledHeaderOutputFile**
 
-   Optionaler **String** -Parameter.
+   Optionaler **String**-Parameter.
 
    Gibt einen Pfadnamen für einen vorkompilierten Header an, der anstelle des Standardpfadnamens verwendet wird.
 
@@ -552,7 +552,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler `String`-Parameter.
 
-   Gibt den Namen der Ausgabedatei an, in die der **PreprocessToFile** -Parameter die vorverarbeitete Ausgabe schreibt.
+   Gibt den Namen der Ausgabedatei an, in die der **PreprocessToFile**-Parameter die vorverarbeitete Ausgabe schreibt.
 
    Weitere Informationen finden Sie unter [/Fi (Ausgabedateinamen vorverarbeiten)](/cpp/build/reference/fi-preprocess-output-file-name).
 
@@ -576,7 +576,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Optionaler `Integer`-Parameter.
 
-   Gibt die maximale Anzahl von Prozessoren an, die in einer Kompilierung mit mehreren Prozessoren verwendet werden. Verwenden Sie diesen Parameter in Kombination mit dem Parameter **MultiProcessorCompilation** .
+   Gibt die maximale Anzahl von Prozessoren an, die in einer Kompilierung mit mehreren Prozessoren verwendet werden. Verwenden Sie diesen Parameter in Kombination mit dem Parameter **MultiProcessorCompilation**.
 
 - **ProgramDataBaseFileName**
 
@@ -786,7 +786,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Gibt ein Array von Elementen an, die die *Read-Datei-Nachverfolgungsprotokolle* darstellen.
 
-   Ein Read-Datei-Nachverfolgungsprotokoll ( *TLOG* ) enthält die Namen der Eingabedateien, die von einer Aufgabe gelesen und vom Projektbuildsystem verwendet werden, um inkrementelle Builds zu unterstützen. Weitere Informationen finden Sie unter den Parametern **TrackerLogDirectory** und **TrackFileAccess** in dieser Tabelle.
+   Ein Read-Datei-Nachverfolgungsprotokoll (*TLOG*) enthält die Namen der Eingabedateien, die von einer Aufgabe gelesen und vom Projektbuildsystem verwendet werden, um inkrementelle Builds zu unterstützen. Weitere Informationen finden Sie unter den Parametern **TrackerLogDirectory** und **TrackFileAccess** in dieser Tabelle.
 
 - **TLogWriteFiles**
 
@@ -794,7 +794,7 @@ Umschließt das Microsoft C++-Compilertool ( *cl.exe* ). Der Compiler generiert 
 
    Gibt ein Array von Elementen an, die die *Write-Datei-Nachverfolgungsprotokolle* darstellen.
 
-   Ein Write-Datei-Nachverfolgungsprotokoll ( *TLOG* ) enthält die Namen der Ausgabedateien, die von einer Aufgabe geschrieben und vom Projektbuildsystem verwendet werden, um inkrementelle Builds zu unterstützen. Weitere Informationen finden Sie unter den Parametern **TrackerLogDirectory** und **TrackFileAccess** in dieser Tabelle.
+   Ein Write-Datei-Nachverfolgungsprotokoll (*TLOG*) enthält die Namen der Ausgabedateien, die von einer Aufgabe geschrieben und vom Projektbuildsystem verwendet werden, um inkrementelle Builds zu unterstützen. Weitere Informationen finden Sie unter den Parametern **TrackerLogDirectory** und **TrackFileAccess** in dieser Tabelle.
 
 - **TrackFileAccess**
 

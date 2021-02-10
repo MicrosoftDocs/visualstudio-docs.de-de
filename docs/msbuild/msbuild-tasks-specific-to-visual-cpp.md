@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1d1a40c9e173ec6dd7cf07e0af0ca68f58efbb0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 82ba5ad3beb8a676df23cc69184c8766bca72f77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049032"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878265"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>Spezifische MSBuild-Aufgaben für C++
 
@@ -39,27 +39,27 @@ Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wi
 
 |Titel|Beschreibung|
 |-----------|-----------------|
-|[BscMake-Aufgabe](../msbuild/bscmake-task.md)|Führt das Microsoft-Wartungshilfsprogramm zum Durchsuchen von Informationen aus ( *bscmake.exe* ).|
-|[CL-Aufgabe](../msbuild/cl-task.md)|Umschließt das C++-Compilertool ( *cl.exe* ).|
+|[BscMake-Aufgabe](../msbuild/bscmake-task.md)|Führt das Microsoft-Wartungshilfsprogramm zum Durchsuchen von Informationen aus (*bscmake.exe*).|
+|[CL-Aufgabe](../msbuild/cl-task.md)|Umschließt das C++-Compilertool (*cl.exe*).|
 |[CPPClean-Aufgabe](../msbuild/cppclean-task.md)|Löscht die temporären Dateien, die MSBuild erstellt, wenn ein C++-Projekt erstellt wird.|
-|[ClangCompile-Aufgabe](../msbuild/clangcompile-task.md)|Umschließt das C++-Compilertool ( *clang.exe* ).|
-|[CustomBuild-Aufgabe](../msbuild/custombuild-task.md)|Umschließt das C++-Compilertool ( *cmd.exe* ).|
+|[ClangCompile-Aufgabe](../msbuild/clangcompile-task.md)|Umschließt das C++-Compilertool (*clang.exe*).|
+|[CustomBuild-Aufgabe](../msbuild/custombuild-task.md)|Umschließt das C++-Compilertool (*cmd.exe*).|
 |[FXC-Aufgabe](../msbuild/fxc-task.md)|Verwenden Sie HLSL-Shader-Compiler im Buildprozess.|
 |[GetOutOfDateItems](../msbuild/getoutofdateitems-task.md)|Liest alte Nachverfolgungsprotokolle, schreibt neue Nachverfolgungsprotokolle und gibt Elemente zurück, die nicht auf dem neuesten Stand sind. (Hilfsaufgabe)|
 |[GetOutputFileName](../msbuild/getoutputfilename-task.md)|Ruft Ausgabedateinamen für CL und andere Tools ab, die nur die Angabe des Ausgabeverzeichnisses oder des vollständigen Dateinamens zulassen. (Hilfsaufgabe)|
-|[LIB-Aufgabe](../msbuild/lib-task.md)|Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung ( *lib.exe* ).|
-|[Link-Aufgabe](../msbuild/link-task.md)|Umschließt das C++-Linkertool ( *link.exe* ).|
-|[MIDL-Aufgabe](../msbuild/midl-task.md)|Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language) ( *midl.exe* ).|
-|[MT-Aufgabe](../msbuild/mt-task.md)|Umschließt das Microsoft-Manifesttool ( *mt.exe* ).|
+|[LIB-Aufgabe](../msbuild/lib-task.md)|Umschließt das 32-Bit-Tool von Microsoft zur Bibliotheksverwaltung (*lib.exe*).|
+|[Link-Aufgabe](../msbuild/link-task.md)|Umschließt das C++-Linkertool (*link.exe*).|
+|[MIDL-Aufgabe](../msbuild/midl-task.md)|Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language) (*midl.exe*).|
+|[MT-Aufgabe](../msbuild/mt-task.md)|Umschließt das Microsoft-Manifesttool (*mt.exe*).|
 |[MultiToolTask-Aufgabe](../msbuild/multitooltask-task.md)|Keine Beschreibung|
 |[ParallelCustomBuild-Aufgabe](../msbuild/parallelcustombuild-task.md)|Führen Sie parallele Instanzen der [CustomBuild Aufgabe](../msbuild/custombuild-task.md) aus.|
-|[RC-Aufgabe](../msbuild/rc-task.md)|Umschließt das Microsoft Windows-Ressourcencompilertool ( *rc.exe* ).|
+|[RC-Aufgabe](../msbuild/rc-task.md)|Umschließt das Microsoft Windows-Ressourcencompilertool (*rc.exe*).|
 |[SetEnv-Aufgabe](../msbuild/setenv-task.md)|Legt den Wert einer bestimmten Umgebungsvariable fest oder löscht ihn.|
 |[TrackedVCToolTask-Basisklasse](../msbuild/trackedvctooltask-base-class.md)|Erbt von [VCToolTask](../msbuild/vctooltask-base-class.md).|
 |[VCMessage-Aufgabe](../msbuild/vcmessage-task.md)|Protokolliert Warn- und Fehlermeldungen während eines Builds. (Nicht erweiterbar. Nur zur internen Verwendung.)|
 |[VCToolTask-Basisklasse](../msbuild/vctooltask-base-class.md)|Erbt von [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask).|
-|[XDCMake-Aufgabe](../msbuild/xdcmake-task.md)|Umschließt das XML-Dokumentationstool ( *xdcmake.exe* ), das die XML-Dokument-Kommentardateien ( *.xdc* ) in einer *XML* -Datei zusammengeführt.|
-|[XSD-Aufgabe](../msbuild/xsd-task.md)|Umschließt das XML-Schemadefinitionstool ( *xsd.exe* ), das Schema- oder Klassendateien aus einer Quelle generiert. *Siehe Hinweis weiter unten.*|
+|[XDCMake-Aufgabe](../msbuild/xdcmake-task.md)|Umschließt das XML-Dokumentationstool (*xdcmake.exe*), das die XML-Dokument-Kommentardateien ( *.xdc*) in einer *XML*-Datei zusammengeführt.|
+|[XSD-Aufgabe](../msbuild/xsd-task.md)|Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassendateien aus einer Quelle generiert. *Siehe Hinweis weiter unten.*|
 |[MSBuild-Referenz](../msbuild/msbuild-reference.md)|Beschreibt die Elemente des MSBuild-Systems.|
 |[Aufgaben](../msbuild/msbuild-tasks.md)|Beschreibt die Aufgaben, die Einheiten von Code darstellen, die kombiniert werden können, um einen Build zu erstellen.|
 |[Schreiben von Aufgaben](../msbuild/task-writing.md)|Beschreibt das Erstellen einer Aufgabe.|

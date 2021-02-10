@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 635fc18965361967269b7260b6abaab279ffb52d
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 636fbabbede90d9a1c686a2252aef712b4789c18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878720"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen
 
@@ -39,10 +39,10 @@ Es können mehrere Buildkonfigurationen für eine Projektmappe erstellt werden. 
 
 Sie können das Dialogfeld **Konfigurations-Manager** verwenden, um neue Buildkonfigurationen zu erstellen oder um vorhandene auszuwählen oder zu ändern.
 
-Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die Projektmappe, und klicken Sie dann auf **Konfigurations-Manager** , um das Dialogfeld **Konfigurations-Manager** zu öffnen.
+Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für die Projektmappe, und klicken Sie dann auf **Konfigurations-Manager**, um das Dialogfeld **Konfigurations-Manager** zu öffnen.
 
 > [!NOTE]
-> Wenn der Befehl **Konfigurations-Manager** nicht im Kontextmenü angezeigt wird, suchen Sie auf der Menüleiste im Menü **Erstellen** . Wenn der Befehl dort ebenfalls nicht angezeigt wird, klicken Sie auf der Menüleiste auf **Extras** > **Optionen** , und erweitern Sie anschließend im linken Bereich des Dialogfelds **Optionen** die Optionen **Projekte und Projektmappen** > **Allgemein** , und aktivieren Sie im rechten Bereich das Kontrollkästchen **Erweiterte Buildkonfigurationen anzeigen** .
+> Wenn der Befehl **Konfigurations-Manager** nicht im Kontextmenü angezeigt wird, suchen Sie auf der Menüleiste im Menü **Erstellen**. Wenn der Befehl dort ebenfalls nicht angezeigt wird, klicken Sie auf der Menüleiste auf **Extras** > **Optionen**, und erweitern Sie anschließend im linken Bereich des Dialogfelds **Optionen** die Optionen **Projekte und Projektmappen** > **Allgemein**, und aktivieren Sie im rechten Bereich das Kontrollkästchen **Erweiterte Buildkonfigurationen anzeigen**.
 
 Sie können im Dialogfeld **Konfigurations-Manager** die Dropdownliste **Konfiguration der aktuellen Projektmappe** verwenden, um eine Projektmappen-weite Buildkonfiguration auszuwählen, eine vorhandene zu ändern oder eine neue Konfiguration zu erstellen. Sie können die Dropdownliste **Aktive Projektmappenplattform** verwenden, um die Plattform auszuwählen, auf die die Konfiguration ausgerichtet ist, eine vorhandene zu ändern, oder eine neue Plattform hinzuzufügen. Im Bereich **Projektkontexte** werden die Projekte in der Projektmappe aufgeführt. Für jedes Projekt können Sie eine projektspezifische Konfiguration und Plattform auswählen, vorhandene ändern oder eine neue Konfiguration erstellen bzw. eine neue Plattform hinzufügen. Sie können auch Kontrollkästchen aktivieren, die angeben, ob jedes Projekt bei Verwendung der Projektmappe-weiten Konfiguration zum Erstellen oder Bereitstellen der Projektmappe eingeschlossen wird.
 
@@ -56,7 +56,7 @@ Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden S
 
 ## <a name="create-a-project-configuration"></a>Erstellen einer Projektkonfiguration
 
-1. Öffnen Sie das Dialogfeld **Konfigurations-Manager** .
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
 2. Wählen Sie in der Spalte **Projekt** ein Projekt aus.
 
@@ -72,7 +72,7 @@ Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden S
 
 ## <a name="rename-a-project-configuration"></a>Umbenennen einer Projektkonfiguration
 
-1. Öffnen Sie das Dialogfeld **Konfigurations-Manager** .
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
 2. Wählen Sie in der Spalte **Projekt** das Projekt aus, das über die Projektkonfiguration verfügt, die Sie umbenennen möchten.
 
@@ -88,7 +88,7 @@ Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden S
 
 ### <a name="to-create-a-solution-wide-build-configuration"></a>So erstellen Sie eine Projektmappen-weite Buildkonfiguration
 
-1. Öffnen Sie das Dialogfeld **Konfigurations-Manager** .
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
 2. Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die Option **Neu** aus.
 
@@ -98,11 +98,11 @@ Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden S
 
 4. Wenn Sie die Einstellungen aus einer bereits vorhandenen Projektmappenkonfiguration verwenden möchten, wählen Sie eine Konfiguration aus der Dropdownliste **Copy settings from** (Einstellungen kopieren von) aus.
 
-5. Um Projektkonfigurationen gleichzeitig zu erstellen, aktivieren Sie das Kontrollkästchen **Neue Projektkonfigurationen erstellen** .
+5. Um Projektkonfigurationen gleichzeitig zu erstellen, aktivieren Sie das Kontrollkästchen **Neue Projektkonfigurationen erstellen**.
 
 ### <a name="to-rename-a-solution-wide-build-configuration"></a>So benennen Sie eine Projektmappen-weite Buildkonfiguration um
 
-1. Öffnen Sie das Dialogfeld **Konfigurations-Manager** .
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
 2. Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die Option **Bearbeiten** aus.
 
@@ -114,11 +114,11 @@ Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden S
 
 ### <a name="to-modify-a-solution-wide-build-configuration"></a>So ändern Sie eine Projektmappen-weite Buildkonfiguration
 
-1. Öffnen Sie das Dialogfeld **Konfigurations-Manager** .
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
 2. Wählen Sie in der Dropdownliste **Konfiguration der aktuellen Projektmappe** die gesuchte Konfiguration aus.
 
-3. Wählen Sie im Bereich **Projektkontexte** für jedes Projekt die gewünschte **Konfiguration** und **Plattform** aus, und klicken Sie auf **Erstellen** oder **Bereitstellen** .
+3. Wählen Sie im Bereich **Projektkontexte** für jedes Projekt die gewünschte **Konfiguration** und **Plattform** aus, und klicken Sie auf **Erstellen** oder **Bereitstellen**.
 
 ## <a name="see-also"></a>Siehe auch
 

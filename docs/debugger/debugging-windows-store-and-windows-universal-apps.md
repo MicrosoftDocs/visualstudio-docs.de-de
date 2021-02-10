@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 111a84471ca20659b9a8a4a00345c1c027a0472e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: ffaa1a5188d3bb9b401d7b9b889e548158f4ae3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872247"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Debuggen von UWP-Apps (Universelle Windows-Plattform) in Visual Studio
 

@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a281b90b3dabe2b1d91c43a27ee5f9c858f96c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873826"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -23,7 +23,7 @@ Wenn Sie diese exemplarische Vorgehensweise durchführen, werden Sie mit einigen
 
 ## <a name="install-the-sample-application"></a>Installieren der Beispielanwendung
 
-Laden Sie das Beispiel [Introduction to Building WPF Applications (Einführung in das Erstellen von WPF-Anwendungen)](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419) herunter. Entscheiden Sie sich zwischen C# und Visual Basic. Wenn der Download der *ZIP* -Datei abgeschlossen ist, extrahieren Sie diese. Öffnen Sie dann die Datei *ExpenseItIntro.sln* mit Visual Studio.
+Laden Sie das Beispiel [Introduction to Building WPF Applications (Einführung in das Erstellen von WPF-Anwendungen)](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419) herunter. Entscheiden Sie sich zwischen C# und Visual Basic. Wenn der Download der *ZIP*-Datei abgeschlossen ist, extrahieren Sie diese. Öffnen Sie dann die Datei *ExpenseItIntro.sln* mit Visual Studio.
 
 ## <a name="create-a-custom-build-configuration"></a>Erstellen einer benutzerdefinierten Buildkonfiguration
 
@@ -33,13 +33,13 @@ Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds 
 
 ### <a name="create-a-build-configuration"></a>Erstellen einer Buildkonfiguration
 
-1. Öffnen Sie das Dialogfeld **Konfigurations-Manager** .
+1. Öffnen Sie das Dialogfeld **Konfigurations-Manager**.
 
    ![Menü "Erstellen", Konfigurations-Manager-Befehl](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. 2\. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<New...\>** aus.
 
-1. Geben Sie im Dialogfeld **Neue Projektmappenkonfiguration** den Namen `Test` für die neue Konfiguration ein, kopieren Sie die Einstellungen aus der vorhandenen **Debug** -Konfiguration, und wählen Sie dann die Schaltfläche **OK** aus.
+1. Geben Sie im Dialogfeld **Neue Projektmappenkonfiguration** den Namen `Test` für die neue Konfiguration ein, kopieren Sie die Einstellungen aus der vorhandenen **Debug**-Konfiguration, und wählen Sie dann die Schaltfläche **OK** aus.
 
    ![Dialogfeld "Neue Projektmappenkonfiguration"](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
@@ -55,7 +55,7 @@ Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds 
 
    ![Konfigurations-Manager mit Testkonfiguration](../ide/media/buildwalk_configmanagertestconfig.png)
 
-1. Klicken Sie auf **Schließen** .
+1. Klicken Sie auf **Schließen**.
 
 Sie können die aktive Projektmappenkonfiguration schnell überprüfen oder ändern, indem Sie die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** verwenden.
 
@@ -67,7 +67,7 @@ Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfigura
 
 ### <a name="build-the-solution"></a>Erstellen Sie die Lösung.
 
-- Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** , oder drücken Sie **STRG**+**UMSCHALT**+**B** .
+- Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen**, oder drücken Sie **STRG**+**UMSCHALT**+**B**.
 
     Im Fenster **Ausgabe** wird das Ergebnis des Builds angezeigt. Der Buildvorgang war erfolgreich.
 
@@ -75,11 +75,11 @@ Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfigura
 
 Als Nächstes wird Code eingeführt, der eine Warnung auslöst und vom Compiler generiert werden soll.
 
-1. Öffnen Sie die Datei *ExpenseReportPage.xaml.cs* im C#-Projekt. Fügen Sie folgenden Code in die **ExpenseReportPage** -Methode ein: `int i;`.
+1. Öffnen Sie die Datei *ExpenseReportPage.xaml.cs* im C#-Projekt. Fügen Sie folgenden Code in die **ExpenseReportPage**-Methode ein: `int i;`.
 
     oder
 
-    Öffnen Sie im Visual Basic-Projekt die Datei *ExpenseReportPage.xaml.vb* . Fügen Sie im benutzerdefinierten Konstruktor **Public Sub New** den folgenden Code hinzu: `Dim i`.
+    Öffnen Sie im Visual Basic-Projekt die Datei *ExpenseReportPage.xaml.vb*. Fügen Sie im benutzerdefinierten Konstruktor **Public Sub New** den folgenden Code hinzu: `Dim i`.
 
 1. Erstellen Sie die Projektmappe.
 
@@ -99,7 +99,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
      Der **Projekt-Designer** wird geöffnet.
 
-1. Klicken Sie auf die Seite **Erstellen** , und geben Sie im Feld **Warnungen unterdrücken** die Warnungsnummer **0168** an.
+1. Klicken Sie auf die Seite **Erstellen**, und geben Sie im Feld **Warnungen unterdrücken** die Warnungsnummer **0168** an.
 
      ![Seite "Erstellen", Projekt-Designer](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
@@ -119,7 +119,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
      Der **Projekt-Designer** wird geöffnet.
 
-3. Aktivieren Sie auf der Seite **Kompilieren** das Kontrollkästchen **Alle Warnungen deaktivieren** .
+3. Aktivieren Sie auf der Seite **Kompilieren** das Kontrollkästchen **Alle Warnungen deaktivieren**.
 
      ![Seite "Kompilieren", Projekt-Designer](../ide/media/buildwalk_vbsuppresswarnings.png)
 
@@ -142,17 +142,17 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>Ändern der Informationsmenge im Ausgabefenster
 
-1. Öffnen Sie das Dialogfeld **Optionen** .
+1. Öffnen Sie das Dialogfeld **Optionen**.
 
      ![Befehl "Optionen" im Menü "Tools"](../ide/media/exploreide-toolsoptionsmenu.png)
 
-1. Wählen Sie die Kategorie **Projekte und Projektmappen** , und wählen Sie dann die Seite **Erstellen und Ausführen** aus.
+1. Wählen Sie die Kategorie **Projekte und Projektmappen**, und wählen Sie dann die Seite **Erstellen und Ausführen** aus.
 
 1. Wählen Sie in der Liste **Ausführlichkeit der MSBuild-Projektbuildausgabe** die Option **Normal** und dann die Schaltfläche **OK** aus.
 
 1. Wählen Sie in der Menüleiste **Build** > **Projektmappe bereinigen** aus.
 
-1. Erstellen Sie die Projektmappe, und überprüfen Sie dann die Informationen im Fenster **Ausgabe** .
+1. Erstellen Sie die Projektmappe, und überprüfen Sie dann die Informationen im Fenster **Ausgabe**.
 
      Die Buildinformationen umfassen die Uhrzeit, zu der der Build gestartet wurde (am Anfang), und die Reihenfolge, in der die Dateien verarbeitet wurden. Diese Informationen umfassen auch die von Visual Studio beim Build ausgeführt Compeliersyntax.
 
@@ -173,7 +173,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Angeben eines Releasebuilds für Visual Basic
 
-1. Öffnen Sie den **Projekt-Designer** .
+1. Öffnen Sie den **Projekt-Designer**.
 
      ![Menü "Ansicht", Befehl "Eigenschaftenseiten"](../ide/media/buildwalk_viewpropertypages.png)
 
@@ -196,7 +196,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
 ### <a name="specify-a-release-build-for-c"></a>Angeben eines Releasebuilds für C\#
 
-1. Öffnen Sie den **Projekt-Designer** .
+1. Öffnen Sie den **Projekt-Designer**.
 
      ![Menü "Ansicht", Befehl "Eigenschaftenseiten"](../ide/media/buildwalk_viewpropertypages.png)
 

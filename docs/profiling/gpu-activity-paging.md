@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 95284ac5-3492-4f7b-a79f-7d2840a07679
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bdf1fcffad90155baba8f92d11e31d1b316710b
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 4467d2a885f4076461110fe288b4e80169158ede
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877095"
 ---
 # <a name="gpu-activity-paging"></a>GPU-Aktivität (Paging)
 Die Segmente der **GPU-Aktivität (Paging)** in der Registerkarte **Threads** stellen Zeiten dar, zu denen die GPU Paging-Anforderungen verarbeitet hat.  Die Länge eines Segments stellt den Zeitraum dar, in dem die GPU ein DMA-Paging-Paket (direkter Speicherzugriff) verarbeitet hat. In der Regel werden Paging-Pakete mit der Übertragung von Arbeitsspeicher zwischen CPU und GPU zugeordnet.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f26c3c1b8256597c795fa8bcd815fd605f895fa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878382"
 ---
 # <a name="msbuild-task-reference"></a>Referenz zu MSBuild-Tasks
 
@@ -55,7 +55,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [AspNetCompiler-Aufgabe](../msbuild/aspnetcompiler-task.md)
 
- Umfasst *aspnet_compiler.exe* , wobei es sich um ein Hilfsprogramm zum Vorkompilieren von ASP.NET-Anwendungen handelt.
+ Umfasst *aspnet_compiler.exe*, wobei es sich um ein Hilfsprogramm zum Vorkompilieren von ASP.NET-Anwendungen handelt.
 
 - [AssignCulture-Aufgabe](../msbuild/assignculture-task.md)
 
@@ -87,7 +87,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [CreateCSharpManifestResourceName-Aufgabe](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Erstellt einen Manifestnamen im C#-Stil aus einem angegebenen *RESX* -Dateinamen oder aus einer anderen Ressource.
+ Erstellt einen Manifestnamen im C#-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
 
 - [CreateItem-Aufgabe](../msbuild/createitem-task.md)
 
@@ -99,7 +99,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [CreateVisualBasicManifestResourceName-Aufgabe](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Erstellt einen Manifestnamen im Visual Basic-Stil aus einem angegebenen *RESX* -Dateinamen oder aus einer anderen Ressource.
+ Erstellt einen Manifestnamen im Visual Basic-Stil aus einem angegebenen *RESX*-Dateinamen oder aus einer anderen Ressource.
 
 - [Csc-Aufgabe](../msbuild/csc-task.md)
 
@@ -155,7 +155,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [GenerateResource-Aufgabe](../msbuild/generateresource-task.md)
 
- Konvertiert *TXT* - und *RESX* -Dateien in binäre *RESOURCES* -Dateien der Common Language Runtime.
+ Konvertiert *TXT*- und *RESX*-Dateien in binäre *RESOURCES*-Dateien der Common Language Runtime.
 
 - [GenerateTrustInfo-Aufgabe](../msbuild/generatetrustinfo-task.md)
 
@@ -183,7 +183,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [LC-Aufgabe](../msbuild/lc-task.md)
 
- Generiert eine *LICENSE* -Datei aus einer *LICX* -Datei.
+ Generiert eine *LICENSE*-Datei aus einer *LICX*-Datei.
 
 - [MakeDir-Aufgabe](../msbuild/makedir-task.md)
 
@@ -223,7 +223,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - ResGen-Aufgabe
 
- Veraltet. Verwenden Sie die [GenerateResource-Aufgabe](../msbuild/generateresource-task.md), um *TXT* - und *RESX* -Dateien in und aus binären *RESOURCES* -Dateien der Common Language Runtime zu konvertieren.
+ Veraltet. Verwenden Sie die [GenerateResource-Aufgabe](../msbuild/generateresource-task.md), um *TXT*- und *RESX*-Dateien in und aus binären *RESOURCES*-Dateien der Common Language Runtime zu konvertieren.
 
 - [ResolveAssemblyReference-Aufgabe](../msbuild/resolveassemblyreference-task.md)
 
@@ -231,7 +231,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [ResolveComReference-Aufgabe](../msbuild/resolvecomreference-task.md)
 
- Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer *TLB* -Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf.
+ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer *TLB*-Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf.
 
 - [ResolveKeySource-Aufgabe](../msbuild/resolvekeysource-task.md)
 
@@ -267,7 +267,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [Unzip-Aufgabe](../msbuild/unzip-task.md)
 
- Entzippt ein *ZIP* -Archiv am angegebenen Speicherort.
+ Entzippt ein *ZIP*-Archiv am angegebenen Speicherort.
 
 - [UpdateManifest-Aufgabe](../msbuild/updatemanifest-task.md)
 
@@ -307,7 +307,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [ZipDirectory-Aufgabe](../msbuild/zipdirectory-task.md)
 
- Erstellt ein *ZIP* -Archiv aus den Inhalten eines Verzeichnisses.
+ Erstellt ein *ZIP*-Archiv aus den Inhalten eines Verzeichnisses.
 
 ## <a name="see-also"></a>Siehe auch
 

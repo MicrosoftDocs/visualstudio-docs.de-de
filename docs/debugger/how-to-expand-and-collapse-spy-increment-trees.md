@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4939a77fffdd5701cf1b9b4ac50995ce6995bb2
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 852eaf8dad8160566656d20189ada99378b63a0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877667"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Vorgehensweise: Auf- und Zuklappen von Spy++-Strukturen
 Fenster-, Prozess- und Threadansicht können auf zwei Arten auf- und zugeklappt werden: durch Klicken auf die Symbole im Fenster oder über das **Strukturmenü**. Die Symbole „+“ und „–“ in der Struktur funktionieren wie im C++-Projektfenster.
