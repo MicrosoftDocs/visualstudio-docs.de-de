@@ -11,15 +11,15 @@ helpviewer_keywords:
 - postAction element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0490e9423cb747782029eb0fd7254407adb3a607
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955761"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `postAction` -Element des `vstav3` -Namespace enthält alle `entrypoint` -Elemente und alle `postActionData` -Elemente, die Aktionen nach der Bereitstellung zugeordnet sind, die ausgeführt werden, sobald Office-Projektmappen installiert sind.
@@ -43,10 +43,10 @@ ms.locfileid: "85546938"
  `postAction` hat die folgenden Elemente:
 
 ### <a name="entrypoint"></a>entryPoint
- Optional. Die Rolle des- `entryPoint` Elements im- `vstav3` Namespace wird in [&#60;entryPoints&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)definiert.
+ Dies ist optional. Die Rolle des- `entryPoint` Elements im- `vstav3` Namespace wird in [&#60;entryPoints&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)definiert.
 
 ### <a name="postactiondata"></a>postActionData
- Optional. Die Rolle des- `postActionData` Elements im- `vstav3` Namespace wird in [&#60;postaktiondata&#62;-Elements &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)definiert.
+ Dies ist optional. Die Rolle des- `postActionData` Elements im- `vstav3` Namespace wird in [&#60;postaktiondata&#62;-Elements &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)definiert.
 
 ## <a name="post-deployment-action-example"></a>Beispiel für eine Aktion nach der Bereitstellung
 

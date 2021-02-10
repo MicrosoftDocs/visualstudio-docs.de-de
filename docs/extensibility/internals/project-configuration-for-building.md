@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: b8891d5e68623312049e60730b0239bf7c06e83c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954474"
 ---
 # <a name="project-configuration-for-building"></a>Projektkonfiguration beim Erstellen
 Die Liste der Projektmappenkonfigurationen für eine bestimmte Projekt Mappe wird im Dialogfeld Projektmappenkonfigurationen verwaltet.

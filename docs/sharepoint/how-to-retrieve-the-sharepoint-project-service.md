@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint project service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 553b4ae3b7ecfa9fa49065824020ebdcecf77215
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 6ae4000bb0ef147a8f601ce80483b9f2ecbe2de8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955228"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Vorgehensweise: Abrufen des SharePoint-Projekt Dienstanbieter
   Sie können in den folgenden Lösungs Typen auf den SharePoint-Projekt Dienst zugreifen:
@@ -101,7 +101,7 @@ ms.locfileid: "96304447"
 
   In einer Visual Studio-Erweiterung, die auf ein- <xref:EnvDTE80.DTE2> Objekt zugreifen kann, können Sie ein- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> Objekt mit der- <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> Methode eines-Objekts anfordern <xref:Microsoft.VisualStudio.Shell.ServiceProvider> . Weitere Informationen finden Sie unter " [erhalten eines Dienstanbieter" aus dem DTE-Objekt](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md)
 - [Vorgehensweise: erhalten eines Dienstanbieter](../extensibility/how-to-get-a-service.md)
 - [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../extensibility/how-to-use-wizards-with-project-templates.md)

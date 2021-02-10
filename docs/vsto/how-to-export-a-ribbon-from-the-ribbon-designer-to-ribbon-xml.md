@@ -18,15 +18,15 @@ helpviewer_keywords:
 - exporting Ribbon
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2a0511fd103345859f96b18f333465106505057a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953980"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Gewusst wie: Exportieren eines Menübands aus dem Menüband-Designer in Menüband-XML
   Das Element " **Menüband (visueller Designer)** " unterstützt nicht alle möglichen Typen der Menü Band Anpassung. Um das Menüband auf Erweiterte Weise anzupassen, können Sie das Menüband aus dem Designer in Menüband-XML exportieren und den XML-Code direkt bearbeiten.
@@ -67,7 +67,7 @@ ms.locfileid: "96844139"
 
      Weitere Informationen zum Schreiben von Rückruf Methoden und zum Verwenden des RibbonX-Programmiermodells finden Sie unter [Menüband-XML](../vsto/ribbon-xml.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

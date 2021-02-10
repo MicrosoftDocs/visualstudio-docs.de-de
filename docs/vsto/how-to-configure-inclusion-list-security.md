@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954019"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Vorgehensweise: Konfigurieren der Sicherheit für die Aufnahme Liste
   Wenn Sie über Administrator Berechtigungen verfügen, können Sie die Vertrauensstellungs Aufforderung so konfigurieren, dass Endbenutzer die Möglichkeit haben, Office-Projektmappen [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] zu installieren, indem Sie eine Vertrauensstellungs Entscheidung für die Aufnahme Liste speichern. Informationen zu Inklusions Listen finden Sie unter Vertrauen von Office-Projektmappen [mithilfe von Inklusions Listen](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -57,10 +57,10 @@ ms.locfileid: "96846726"
     |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**Nicht treudsites**|**Disabled**|
-    |**MyComputer**|**Aktiviert**|
-    |**LocalIntranet**|**Aktiviert**|
-    |**TrustedSites**|**Aktiviert**|
+    |**Nicht treudsites**|**Deaktiviert**|
+    |**MyComputer**|**Enabled**|
+    |**LocalIntranet**|**Enabled**|
+    |**TrustedSites**|**Enabled**|
 
      Standardmäßig hat das **Internet** den Wert **AuthenticodeRequired** , und der Wert von **untreudsites** ist **deaktiviert**.
 
@@ -115,7 +115,7 @@ ms.locfileid: "96846726"
 
     |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|
-    |**Nicht treudsites**|**Disabled**|
+    |**Nicht treudsites**|**Deaktiviert**|
     |**Internet**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -172,11 +172,11 @@ ms.locfileid: "96846726"
 
     |Zeichen folgen Wert-Unterschlüssel|Wert|
     |-------------------------|-----------|
-    |**Nicht treudsites**|**Disabled**|
-    |**Internet**|**Disabled**|
-    |**MyComputer**|**Disabled**|
-    |**LocalIntranet**|**Disabled**|
-    |**TrustedSites**|**Disabled**|
+    |**Nicht treudsites**|**Deaktiviert**|
+    |**Internet**|**Deaktiviert**|
+    |**MyComputer**|**Deaktiviert**|
+    |**LocalIntranet**|**Deaktiviert**|
+    |**TrustedSites**|**Deaktiviert**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>So deaktivieren Sie die Aufnahme Liste Programm gesteuert
 
@@ -209,6 +209,6 @@ ms.locfileid: "96846726"
 
 3. Erstellen Sie die Anwendung, und führen Sie sie aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vertrauen von Office-Projektmappen mithilfe von Inklusions Listen](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)

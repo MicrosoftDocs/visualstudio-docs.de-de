@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItemFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a7c6dd7fc46dc8616eddc164bcf2ec801657cb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955137"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile-Element
   Stellt eine SharePoint-Datei (z. b. eine featureelementdatei) dar, die beim Bereitstellen in SharePoint in das Projekt Element eingeschlossen werden soll.
@@ -44,7 +44,7 @@ ms.locfileid: "95440804"
 |---------------|-----------------|
 |**Quelle**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Name der Datei, die mit dem Projekt Element bereitgestellt werden soll.|
 |**Target**|Optionales **xs: String** -Attribut.<br /><br /> Der Pfad, in dem die Datei in SharePoint in Relation zum Stamm Ordner der Bereitstellung bereitgestellt wird. Der Stamm Ordner der Bereitstellung wird durch den Bereitstellungstyp bestimmt, der durch das **Type** -Attribut angegeben wird. Wenn das **Ziel** Attribut nicht angegeben ist, wird die Datei in einem Ordner mit dem Namen bereitgestellt, der im **Quell** Attribut angegeben ist.<br /><br /> Weitere Informationen finden Sie in den Beschreibungen für den **Bereitstellungs Pfad** und die **Bereitstellungs** Stamm Eigenschaften von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
-|**Type**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Bereitstellungstyp für die Datei. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung der Eigenschaft " **Bereitstellungstyp** " von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
+|**Typ**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Bereitstellungstyp für die Datei. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung der Eigenschaft " **Bereitstellungstyp** " von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine
