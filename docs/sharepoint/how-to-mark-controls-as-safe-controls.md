@@ -13,15 +13,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: bf7e2f2c5b0de59a5f1cac91f0df9cefbf15bda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964705"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente
   Aus Sicherheitsgründen unterscheidet SharePoint zwischen websteuer Elementen, die vor Skript Injektion und websteuer Elementen geschützt sind. Auf geschützte Steuerelemente oder *sichere Steuerelemente* kann von nicht vertrauenswürdigen Benutzern zugegriffen werden. Sie können Steuerelemente als sicher in der Eigenschaft Safe Control Entries eines SharePoint-Projekt Elements oder im **Paket-Designer** markieren, wenn Sie dem Paket eine Assembly hinzufügen. Weitere Informationen finden Sie unter
@@ -65,7 +65,7 @@ ms.locfileid: "96304512"
 
      Notieren Sie sich den Namespace des Steuer Elements, da er später verwendet wird.
 
-3. Wählen Sie in der Menüleiste **Build**-Projekt Mappe erstellen aus,  >  **Build Solution** um das Projekt zu erstellen.
+3. Wählen Sie in der Menüleiste **Build**-Projekt Mappe erstellen aus,  >   um das Projekt zu erstellen.
 
 4. Erstellen Sie eine weitere SharePoint-Lösung.
 
@@ -87,7 +87,7 @@ ms.locfileid: "96304512"
 
 12. Geben Sie die Werte für die Eigenschaften in der folgenden Tabelle ein.
 
-    |Eigenschaftenname|Wert|
+    |Eigenschaftsname|Wert|
     |-------------------|-----------|
     |Namespace|Der voll qualifizierte Namespace für das Steuerelement, z. b **. BdcModelProject1. VisualWebPart1**.|
     |Typname|Schaltfläche1|
@@ -104,7 +104,7 @@ ms.locfileid: "96304512"
 
 15. Geben Sie die Werte für die Eigenschaften in der folgenden Tabelle ein.
 
-    |Eigenschaftenname|Wert|
+    |Eigenschaftsname|Wert|
     |-------------------|-----------|
     |Namespace|Der voll qualifizierte Namespace für das Steuerelement, z. b **. BdcModelProject1. VisualWebPart1**.|
     |Typname|TextBox1|
@@ -114,6 +114,6 @@ ms.locfileid: "96304512"
 
 16. Wählen Sie die **Tab** -Taste, und klicken Sie dann auf die Schaltfläche **OK** , um das Dialogfeld zu schließen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8502b3d5058294efe102564453bb23a3eb3b98
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971608"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>So erstellen Sie eine Ressource und wenden Sie an
 
@@ -44,11 +44,11 @@ Wenn Sie eine neue Ressource von einer vorhandenen Eigenschaft, einem vorhandene
 
     - Damit die Ressource nur für das aktuelle Dokument zur Verfügung steht, wählen Sie **Dieses Dokument** aus.
 
-    - Um die Ressource nur für das Element zur Verfügung zu stellen, aus dem die Ressource oder die dazugehörigen untergeordneten Elemente erstellt wurden, wählen Sie **Dieses Dokument** und anschließend in der Dropdownliste **Element** : **Name** aus.
+    - Um die Ressource nur für das Element zur Verfügung zu stellen, aus dem die Ressource oder die dazugehörigen untergeordneten Elemente erstellt wurden, wählen Sie **Dieses Dokument** und anschließend in der Dropdownliste **Element**: **Name** aus.
 
-    - Wenn die Ressource in einer [Ressourcenverzeichnisdatei](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) definiert werden soll, die in anderen Projekten wiederverwendet werden kann, klicken Sie auf **Ressourcenverzeichnis** . Wählen Sie dann eine vorhandene Ressourcenverzeichnisdatei, z.B. **StandardStyles.xaml** , aus der Dropdownliste aus.
+    - Wenn die Ressource in einer [Ressourcenverzeichnisdatei](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) definiert werden soll, die in anderen Projekten wiederverwendet werden kann, klicken Sie auf **Ressourcenverzeichnis**. Wählen Sie dann eine vorhandene Ressourcenverzeichnisdatei, z.B. **StandardStyles.xaml**, aus der Dropdownliste aus.
 
-5. Klicken Sie auf **OK** , um die Ressource zu erstellen und auf das Element anzuwenden, aus dem Sie sie erstellt haben.
+5. Klicken Sie auf **OK**, um die Ressource zu erstellen und auf das Element anzuwenden, aus dem Sie sie erstellt haben.
 
 ## <a name="apply-a-resource-to-an-element-or-property"></a>Anwenden einer Ressource auf ein Element oder auf eine Eigenschaft
 
@@ -65,7 +65,7 @@ Wenn Sie eine neue Ressource von einer vorhandenen Eigenschaft, einem vorhandene
      > [!NOTE]
      > Mit **Vorlage bearbeiten** werden Steuerelementvorlagen angewendet. Mit **Zusätzliche Vorlagen bearbeiten** werden andere Vorlagentypen angewendet.
 
-     Sie können Ressourcen anwenden, wenn sie kompatibel sind. Beispielsweise können Sie eine Pinselressource auf die **Vordergrund** -Eigenschaft eines Steuerelements [TextBox](xref:Windows.UI.Xaml.Controls.TextBox) anwenden.
+     Sie können Ressourcen anwenden, wenn sie kompatibel sind. Beispielsweise können Sie eine Pinselressource auf die **Vordergrund**-Eigenschaft eines Steuerelements [TextBox](xref:Windows.UI.Xaml.Controls.TextBox) anwenden.
 
 ## <a name="edit-a-resource"></a>Bearbeiten einer Ressource
 

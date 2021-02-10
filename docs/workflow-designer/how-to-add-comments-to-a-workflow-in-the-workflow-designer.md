@@ -9,16 +9,16 @@ f1_keywords:
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 0fe5b766c0c5545a1cc3839e29d71e3f3b7a1f39
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9417dd0084b381d8fc997a90b4690c49191f4785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437956"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971699"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Vorgehensweise: Hinzufügen von Kommentaren zu einem Workflow im Workflow-Designer
 
@@ -65,13 +65,13 @@ Um das Erstellen größerer, komplizierterer Workflows zu vereinfachen, ermögli
 
    Alle Anmerkungen werden in den Designer der Aktivität angezeigt.
 
-1. Wenn Sie alle Anmerkungen außerhalb der Aktivitäts Designer anzeigen möchten, klicken Sie mit der rechten Maustaste auf die Aktivität, **und wählen Sie Anmerkungen aus** , und **blenden Sie alle Anmerkungen** aus.
+1. Wenn Sie alle Anmerkungen außerhalb der Aktivitäts Designer anzeigen möchten, klicken Sie mit der rechten Maustaste auf die Aktivität, **und wählen Sie Anmerkungen aus**, und **blenden Sie alle Anmerkungen** aus.
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Bearbeiten oder Löschen einer Anmerkung für eine Aktivität
 
 1. Klicken Sie mit der rechten Maustaste auf eine Aktivität, die eine Anmerkung enthält.
 
-1. Wählen Sie **Anmerkungen** , Anmerkung **Bearbeiten** oder **Anmerkung löschen** aus.
+1. Wählen Sie **Anmerkungen**, Anmerkung **Bearbeiten** oder **Anmerkung löschen** aus.
 
    Die Anmerkung wird zum Bearbeiten oder löschen geöffnet.
 
