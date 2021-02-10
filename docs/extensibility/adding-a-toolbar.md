@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 62d32a07ec046bc42d69818346450e5a94a668ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951328"
 ---
 # <a name="add-a-toolbar"></a>Hinzufügen einer Symbolleiste
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Visual Studio-IDE eine Symbolleiste hinzufügen.
@@ -91,5 +91,5 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie der Visual Studio-
 
 7. Nun sollte die Symbolleiste als Symbol auf der rechten Seite des Symbols in Dateien suchen angezeigt werden. Wenn Sie auf das Symbol klicken, sollte ein Meldungs Feld mit dem Text **toolbartestcommandpackage angezeigt werden. In idetoolbar. toolbartestcommand. MenuItemCallBack ()**.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
