@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936001"
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK-Hilfsprogramme für das Debuggen
 Diese Funktionen und Deklarationen sind globale Hilfsfunktionen zum Implementieren von Debug-engines, Ausdrucks Auswertung und Symbol Anbietern in C++.
@@ -49,7 +49,7 @@ HRESULT GetMetric(
 );
 ```
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |pszmachine|in Name eines möglicherweise Remote Computers, dessen Register geschrieben wird ( `NULL` d.h. lokaler Computer).|
 |pszType|in Einer der metriktypen.|
@@ -72,7 +72,7 @@ HRESULT SetMetric(
 );
 ```
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |pszType|in Einer der metriktypen.|
 |guidsection|in GUID eines bestimmten Moduls, Auswerters, Ausnahme, usw. Dies gibt einen unter Abschnitt unter einem Metriktyp für ein bestimmtes Element an.|
@@ -93,7 +93,7 @@ HRESULT RemoveMetric(
 );
 ```
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |pszType|in Einer der metriktypen.|
 |guidsection|in GUID eines bestimmten Moduls, Auswerters, Ausnahme, usw. Dies gibt einen unter Abschnitt unter einem Metriktyp für ein bestimmtes Element an.|
@@ -113,7 +113,7 @@ HRESULT EnumMetricSections(
 );
 ```
 
-|Parameter|BESCHREIBUNG|
+|Parameter|Beschreibung|
 |---------------|-----------------|
 |pszmachine|in Name eines möglicherweise Remote Computers, dessen Register geschrieben wird ( `NULL` d.h. lokaler Computer).|
 |pszType|in Einer der metriktypen.|
@@ -123,7 +123,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="expression-evaluator-functions"></a>Funktionen der Ausdrucks Auswertung
 
-|Funktion|BESCHREIBUNG|
+|Funktion|Beschreibung|
 |--------------|-----------------|
 |GetEEMetric|Ruft einen Metrikwert aus der Registrierung ab.|
 |"-Metrik"|Legt den angegebenen Metrikwert in der Registrierung fest.|
@@ -132,7 +132,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="exception-functions"></a>Ausnahme Funktionen
 
-|Funktion|BESCHREIBUNG|
+|Funktion|Beschreibung|
 |--------------|-----------------|
 |Getexceptionmetric|Ruft einen Metrikwert aus der Registrierung ab.|
 |"Abtexceptionmetric"|Legt den angegebenen Metrikwert in der Registrierung fest.|
@@ -141,7 +141,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="symbol-provider-functions"></a>Funktionen des Symbol Anbieters
 
-|Funktion|BESCHREIBUNG|
+|Funktion|Beschreibung|
 |--------------|-----------------|
 |Getspmetric|Ruft einen Metrikwert aus der Registrierung ab.|
 |Setspmetric|Legt den angegebenen Metrikwert in der Registrierung fest.|
@@ -149,7 +149,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="enumeration-functions"></a>Enumerationsfunktionen
 
-|Funktion|BESCHREIBUNG|
+|Funktion|Beschreibung|
 |--------------|-----------------|
 |Enummetricabschnitte|Listet alle Metriken für einen angegebenen Metriktyp auf.|
 |Enumdebugengine|Listet die registrierten Debug-engines auf.|
@@ -166,7 +166,7 @@ HRESULT EnumMetricSections(
 |metrictypeexception|Alle ausnahmemetriken.|
 |metricttypeer-Erweiterung|Alle Erweiterungen der Ausdrucks Auswertung.|
 
-|Debug-Engine-Eigenschaften|BESCHREIBUNG|
+|Debug-Engine-Eigenschaften|Beschreibung|
 |-----------------------------|-----------------|
 |metricaddressbp|Legen Sie ihn auf ungleich NULL fest, um die Unterstützung für Adress Haltepunkte anzugeben.|
 |metricalwaysloadlocal|Legen Sie auf einen Wert ungleich 0 fest, um die Debug-Engine immer lokal zu laden.|
@@ -202,13 +202,13 @@ HRESULT EnumMetricSections(
 |metricincompatiblelist|Registrierungsschlüssel, der Einträge enthält, die GUIDs für Debug-engines angeben, die mit dieser Debug-Engine nicht kompatibel sind.|
 |metricdisablejitoptimization|Legen Sie diese Einstellung auf ungleich NULL fest, um anzugeben, dass just-in-Time-Optimierungen (für verwalteten Code) während des Debuggens deaktiviert werden sollen.|
 
-|Eigenschaften der Ausdrucks Auswertung|BESCHREIBUNG|
+|Eigenschaften der Ausdrucks Auswertung|Beschreibung|
 |-------------------------------------|-----------------|
 |metricengine|Enthält die Anzahl der Debug-engines, die die angegebene Ausdrucks Auswertung unterstützen.|
 |metricpreloadmodules|Legen Sie diese Einstellung auf ungleich NULL fest, um anzugeben, dass Module vorab geladen werden sollen, wenn eine Ausdrucks Auswertung für ein Programm gestartet wird.|
 |metricthisobjectname|Legen Sie diese Einstellung auf den "This"-Objektnamen fest.|
 
-|Erweiterungs Eigenschaften der Ausdrucks Auswertung|BESCHREIBUNG|
+|Erweiterungs Eigenschaften der Ausdrucks Auswertung|Beschreibung|
 | - |-----------------|
 |metricextensiondll|Der Name der dll, die diese Erweiterung unterstützt.|
 |metricextensionregisterssupported|Liste der unterstützten Register.|
@@ -216,18 +216,18 @@ HRESULT EnumMetricSections(
 |metricextensiontypessupported|Liste der unterstützten Typen.|
 |metricextensiontypesentrypoint|Einstiegspunkt für den Zugriff auf Typen.|
 
-|Eigenschaften von Port Lieferanten|BESCHREIBUNG|
+|Eigenschaften von Port Lieferanten|Beschreibung|
 |------------------------------|-----------------|
 |metricportpickerclsid|Die CLSID der Port Auswahl (ein Dialogfeld, mit dem der Benutzer Ports auswählen und Ports für das Debuggen hinzufügen kann).|
 |metricdiszuzuforderungserenteredports|Ein Wert ungleich 0 (null), wenn die vom Benutzer eingegebenen Ports nicht zum Port Lieferanten hinzugefügt werden können (Dadurch wird das Dialogfeld "Port Auswahl" im Grunde schreibgeschützt).|
 |metricpidbase|Die Basis Prozess-ID, die vom Port Lieferanten beim Zuordnen von Prozess-IDs verwendet wird.|
 
-|Vordefinierte SP-Speichertypen|BESCHREIBUNG|
+|Vordefinierte SP-Speichertypen|Beschreibung|
 |-------------------------------|-----------------|
 |storetypeer-Datei|Die Symbole werden in einer separaten Datei gespeichert.|
 |storetypeer Metadata|Die Symbole werden als Metadaten in einer Assembly gespeichert.|
 
-|Sonstige Eigenschaften|BESCHREIBUNG|
+|Sonstige Eigenschaften|Beschreibung|
 |------------------------------|-----------------|
 |metricshownonusercode|Legen Sie diese Einstellung auf ungleich NULL fest, um Nichtbenutzer Code anzuzeigen.|
 |metricjustmycodestepping|Legen Sie diese Einstellung auf ungleich NULL fest, um anzugeben, dass die Schrittfolge nur im Benutzercode erfolgen kann.|
@@ -263,7 +263,7 @@ HRESULT EnumMetricSections(
 
 |Platzhalter|BESCHREIBUNG|
 |-----------------|-----------------|
-|*[Registrierungsschlüssel]*|`HKEY_CURRENT_USER` oder `HKEY_LOCAL_MACHINE`|
+|*[Registrierungsschlüssel]*|`HKEY_CURRENT_USER` oder `HKEY_LOCAL_MACHINE`.|
 |*[Version Root]*|Die Version von Visual Studio (z. b `7.0` `7.1` ., oder `8.0` ). Dieser Stamm kann jedoch auch mithilfe des **/rootsuffix** -Schalters geändert werden, um **devenv.exe**. Bei VSIP ist dieser Modifizierer in der Regel " **Exp**", sodass der Versions Stamm z. b. "8.0 Exp" lautet.|
 |*[metrikroot]*|Dies ist entweder `AD7Metrics` oder `AD7Metrics(Debug)` , abhängig davon, ob die Debugversion von "dbgmetric. lib" verwendet wird. **Hinweis:**  Unabhängig davon, ob dbgmetric. lib verwendet wird, sollte diese Benennungs Konvention befolgt werden, wenn Sie Unterschiede zwischen Debug-und Releaseversionen haben, die in der Registrierung widergespiegelt werden müssen.|
 |*[metrikentyp]*|Der Typ der zu schreibenden Metrik: `Engine` , `ExpressionEvaluator` , `SymbolProvider` usw. Diese werden alle als in dbgmetric. h als definiert `metricTypeXXXX` , wobei `XXXX` der spezifische Typname ist.|

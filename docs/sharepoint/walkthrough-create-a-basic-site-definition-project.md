@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937705"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts für eine Website Definition
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine grundlegende Site Definition erstellen, die ein visuelles Webpart mit einigen Steuerelementen enthält. Aus Gründen der Übersichtlichkeit hat das visuelle Webpart, das Sie erstellen, nur wenige Steuerelemente. Sie können jedoch anspruchsvollere SharePoint-Website Definitionen erstellen, die mehr Funktionalität enthalten.
@@ -75,7 +75,7 @@ ms.locfileid: "96913853"
 
 9. Erweitern Sie unter **Visual c#** oder **Visual Basic** den Knoten **SharePoint** , und wählen Sie dann den Knoten **2010** aus.
 
-10. Wählen Sie im Bereich **Vorlagen** die Vorlage **Site Definition** aus, belassen Sie **Name** den Namen **SiteDefinition1**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
+10. Wählen Sie im Bereich **Vorlagen** die Vorlage **Site Definition** aus, belassen Sie  den Namen **SiteDefinition1**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 
 ## <a name="create-a-visual-web-part"></a>Erstellen eines visuellen Webparts
  Erstellen Sie als nächstes ein visuelles Webpart, das auf der Hauptseite der Website Definition angezeigt wird.

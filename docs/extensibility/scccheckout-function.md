@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ed809e33a80bf2903c88550e97b28b1e0178bcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4112190e145242da591fa3d8e4db7d054bd07466
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943139"
 ---
 # <a name="scccheckout-function"></a>Scccheckout-Funktion
 Wenn eine Liste der voll qualifizierten Dateinamen angegeben wird, werden Sie von dieser Funktion auf das lokale Laufwerk überprüft. Der Kommentar gilt für alle Dateien, die ausgecheckt werden. Das Kommentar Argument kann eine `null` Zeichenfolge sein.
@@ -68,7 +68,7 @@ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Das Auschecken war erfolgreich.|
 |SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei befindet sich nicht unter Quell Code Verwaltung.|

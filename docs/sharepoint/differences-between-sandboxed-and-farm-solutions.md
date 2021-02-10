@@ -14,15 +14,15 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cea66f313a8c6c8ad7fc390a3ca126d92139725c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948777"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Unterschiede zwischen Sandkasten-und Farm Lösungen
   Wenn Sie eine SharePoint-Lösung kompilieren, wird Sie auf dem SharePoint-Server bereitgestellt, und ein Debugger wird zum Debuggen angefügt. Der Prozess, der zum Debuggen der Projekt Mappe verwendet wird, hängt von der Einstellung der Sandkasten Lösungs Eigenschaft ab: Sandkasten Lösung oder Farm Lösung.
@@ -40,7 +40,7 @@ ms.locfileid: "94672781"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt den Debugger nur an die w3wp-oder SPUCWorkerProcess-Prozesse an, die die aktuelle Website ausführen. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Außerdem werden die verwalteten com Plus-und Workflow-debugengines angefügt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [SharePoint-Lösungen Debuggen](../sharepoint/debugging-sharepoint-solutions.md)
 - [Erstellen und Debuggen von SharePoint-Lösungen](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Überlegungen zu Sandkastenlösungen](../sharepoint/sandboxed-solution-considerations.md)

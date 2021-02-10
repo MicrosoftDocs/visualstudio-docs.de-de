@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0d39d4e4f795ddecab21765db43ba1a2f629dd7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 0a5520a8a47b4b356a79832b619395f86e8231d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993853"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945785"
 ---
 # <a name="group-element"></a>Group-Element
 Definiert eine VSPackage-Befehlsgruppe.
@@ -40,14 +40,14 @@ Definiert eine VSPackage-Befehlsgruppe.
 |---------------|-----------------|
 |guid|Erforderlich. GUID des GUID-/ID-befehlsbezeichners.|
 |id|Erforderlich. ID des GUID-/ID-befehlsbezeichners.|
-|priority|Optional. Ein numerischer Wert, der die Priorität angibt.|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|priority|Dies ist optional. Ein numerischer Wert, der die Priorität angibt.|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|Parent|Optional. Das übergeordnete Element der Schaltfläche.|
+|Parent|Dies ist optional. Das übergeordnete Element der Schaltfläche.|
 |Anmerkung|Optionaler Kommentar.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d9045f9874c966ec0b9780b3ba2876912e433fbf
-ms.sourcegitcommit: 208f75ad89ad91b994701bb5cbc0a251fbaa3604
+ms.openlocfilehash: 37742f1a9adda219e359d734b80f44679509ee03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846334"
 ---
 # <a name="add-new-item-command"></a>Befehl "Neues Element hinzufügen"
 Fügt der aktuellen Projektmappe ein neues Projektmappenelement wie eine HTM-, CSS-, TXT- oder Framesetdatei hinzu und öffnet dieses.

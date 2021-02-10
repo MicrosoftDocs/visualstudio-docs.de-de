@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e20d3f83d6e68211d1b48f63747bea80ee6b25d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876328"
 ---
 # <a name="messages-view"></a>Meldungsansicht
 Jedes Fenster verfügt über einen zugehörigen Meldungsdatenstrom. In einem Meldungsansichtsfenster wird dieser Meldungsdatenstrom angezeigt. Angezeigt werden das Fensterhandle, der Meldungscode und die Meldung. Sie können eine Meldungsansicht auch für einen Thread oder einen Prozess erstellen. Dadurch können Sie Meldungen anzeigen, die an alle Fenster gesendet werden, die sich im Besitz eines bestimmten Prozesses oder Threads befinden. Dies ist besonders hilfreich für die Erfassung von Fensterinitialisierungsmeldungen.

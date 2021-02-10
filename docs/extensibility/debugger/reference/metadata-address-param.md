@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0319cfc6f2be817a25126e67cdc470bc727a4ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbb6e709ab1b6ee92ad9a27ed3061642665c7f39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938719"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 Diese Struktur stellt einen Parameter einer Methode oder Funktion dar.

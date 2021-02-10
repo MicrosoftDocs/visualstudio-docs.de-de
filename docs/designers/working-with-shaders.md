@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce08d475c75f197180417dcf94f9d52f59fb2e7b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: bff5aee4337a464498fc4ac027eb05b2da912b61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844891"
 ---
 # <a name="work-with-shaders"></a>Arbeiten mit Shadern
 
@@ -25,7 +25,7 @@ Sie können den diagrammbasierten Shader-Designer in Visual Studio verwenden, um
 
 Ein *Shader* ist ein Programm, das Grafikberechnungen durchführt, z.B. Vertextransformationen oder Pixelfarben, und üblicherweise auf dem Grafikprozessor (Graphics Processing Unit; GPU) statt auf der CPU ausgeführt wird. Da die meisten Phasen der herkömmlichen Grafikpipeline mit festen Funktionen nun durch Shaderprogramme ausgeführt werden, können Sie diese verwenden, um eine Pipeline zu erstellen, die an die Anforderungen Ihrer App angepasst ist.
 
-Die häufigsten Shader sind *Vertexshader* , die Berechnungen pro Vertex durchführen und die Transformation mit festen Funktionen sowie die Beleuchtungsszenarios von nicht programmierbarer Grafikhardware ersetzt, und *Pixelshader* , die Berechnungen pro Pixel durchführen, um die Farbe eines Pixels zu bestimmen, und die Farbmischerschaltung mit festen Funktionen in nicht programmierbarer Grafikhardware ersetzt. Für moderne Grafikhardware sind weitere Shader möglich: *Hüllenshader* , *Domänenshader* und *Geometrieshader* für Grafikberechnungen sowie *Computeshader* für nicht-grafische Berechnungen. Keine dieser Phasen ist in nicht programmierbarer Grafikhardware verfügbar. Shaders wurden ursprünglich mithilfe einer Assembly-ähnlichen Sprache erstellt, die datenparallele (SIMD) und grafikzentrierte (Skalarprodukt) Anweisungen bereitstellt. Mittlerweile werden Shader üblicherweise mithilfe von C-ähnlichen Sprachen auf hoher Ebene wie HLSL (High Level Shader Language) erstellt.
+Die häufigsten Shader sind *Vertexshader*, die Berechnungen pro Vertex durchführen und die Transformation mit festen Funktionen sowie die Beleuchtungsszenarios von nicht programmierbarer Grafikhardware ersetzt, und *Pixelshader*, die Berechnungen pro Pixel durchführen, um die Farbe eines Pixels zu bestimmen, und die Farbmischerschaltung mit festen Funktionen in nicht programmierbarer Grafikhardware ersetzt. Für moderne Grafikhardware sind weitere Shader möglich: *Hüllenshader*, *Domänenshader* und *Geometrieshader* für Grafikberechnungen sowie *Computeshader* für nicht-grafische Berechnungen. Keine dieser Phasen ist in nicht programmierbarer Grafikhardware verfügbar. Shaders wurden ursprünglich mithilfe einer Assembly-ähnlichen Sprache erstellt, die datenparallele (SIMD) und grafikzentrierte (Skalarprodukt) Anweisungen bereitstellt. Mittlerweile werden Shader üblicherweise mithilfe von C-ähnlichen Sprachen auf hoher Ebene wie HLSL (High Level Shader Language) erstellt.
 
 Sie können den Shader-Designer verwenden, um Pixelshader interaktiv statt durch das Eingeben und Kompilieren von Code zu erstellen. Im Shader-Designer wird ein Shader durch eine Anzahl von Knoten definiert, der Daten und Vorgänge darstellt, sowie durch Verbindungen zwischen Knoten, die den Fluss von Datenwerten und Zwischenergebnisse über den Shader darstellen. Durch diesen Ansatz und die Echtzeitvorschau im Shader-Designer können Sie die Ausführung des Shaders einfacher visualisieren und durch Experimente interessante Shadervariationen entdecken.
 

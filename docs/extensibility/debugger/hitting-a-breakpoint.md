@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc796689b56518948c62196407ddeaefe3ea822f
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 808bf95631bb4106d071c29d7af233d071ef5229
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947722"
 ---
 # <a name="hit-a-breakpoint"></a>Treffen eines Haltepunkts
 Der folgende Abschnitt beschreibt den Prozess, in dem die Debug-Engine (de) während der Ausführung oder beim Ausführen des Vorgangs einen Haltepunkt erreicht:
@@ -29,5 +29,5 @@ Der folgende Abschnitt beschreibt den Prozess, in dem die Debug-Engine (de) wäh
 
 2. Der Session Debug Manager (SDM) ruft [IDebugBreakpointEvent2::: enumbreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) auf, um den Treffer Haltepunkt zu erhalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debugger-Ereignisse aufzurufen](../../extensibility/debugger/calling-debugger-events.md)

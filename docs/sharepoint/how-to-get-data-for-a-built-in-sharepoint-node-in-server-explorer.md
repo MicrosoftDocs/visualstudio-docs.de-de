@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3a975374b82b10c0e29d74bcf68d7bce3225a967
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: c49f091477d204b7ed81a6f89fb24a56b2d60669
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945109"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Gewusst wie: erhalten von Daten für einen integrierten SharePoint-Knoten in Server-Explorer
   Für jeden integrierten SharePoint-Knoten in **Server-Explorer** können Sie Daten für die zugrunde liegende SharePoint-Komponente, die der Knoten darstellt, erhalten. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

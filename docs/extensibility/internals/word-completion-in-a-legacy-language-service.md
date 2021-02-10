@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b3625719987afc94deda314fa61d7a8cc2c1c843
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943367"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Wortvervollständigung in einem Legacysprachdienst
 Die Wortvervollständigung füllt die fehlenden Zeichen für ein teilweise typisiertes Wort aus. Wenn nur ein möglicher Abschluss vorhanden ist, wird das Wort abgeschlossen, wenn das Abschluss Zeichen eingegeben wird. Wenn das partielle Wort mit mehr als einer Möglichkeit übereinstimmt, wird eine Liste der möglichen Vervollständigungen angezeigt. Bei einem Abschluss Zeichen kann es sich um ein beliebiges Zeichen handeln, das nicht für Bezeichner verwendet wird.

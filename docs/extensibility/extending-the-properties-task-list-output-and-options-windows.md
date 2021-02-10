@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938134"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Erweitern der Fenster Eigenschaften, Aufgabenliste, Ausgabe und Optionen
 Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie Informationen zu Ihrem Tool Fenster in eine neue **options** Seite und eine neue Einstellung auf der **Eigenschaften** Seite integrieren und wie Sie in die **Aufgabenliste** -und **Ausgabe** Fenster schreiben.
@@ -484,13 +484,13 @@ Sie können auf ein beliebiges Tool Fenster in Visual Studio zugreifen. In diese
 
 1. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz wird geöffnet.
 
-2. Öffnen Sie das **Fenster "todowindow** " (**View**  >  **Weitere Fenster**"  >  **todowindow**" anzeigen).
+2. Öffnen Sie das **Fenster "todowindow** " (  >  **Weitere Fenster**"  >  **todowindow**" anzeigen).
 
 3. Geben Sie im Textfeld etwas ein, und klicken Sie dann auf **Hinzufügen**.
 
      Ein Fälligkeitsdatum, das 2 Tage nach dem heutigen Tag dem Listenfeld hinzugefügt wird. Es werden keine Fehler generiert, und der **Aufgabenliste** (**View**  >  **Aufgabenliste**) sollte keine Einträge enthalten.
 
-4. Ändern Sie **nun die Einstellung auf der** TODO-Seite Extras-  >  **Optionen**  >  **ToDo** von **2** zurück auf **0**.
+4. Ändern Sie **nun die Einstellung auf der** TODO-Seite Extras-  >  **Optionen**  >   von **2** zurück auf **0**.
 
 5. Geben Sie im **Fenster Fenster** einen anderen Text ein, und klicken Sie dann erneut auf **Hinzufügen** . Dadurch wird ein Fehler und ein Eintrag in der **Aufgabenliste** ausgelöst.
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ffc6c7be-3f22-4624-9ffc-0122fe72b6ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 622cbebdb4073dfd9b4237e9dfbcb8bbf4a506de
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b44777f41c4fac3d36cb79222d48a93c5c1cf0b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888003"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 
@@ -46,7 +46,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 
 ## <a name="return-value"></a>Rückgabewert
 
- Ein **HRESULT** , bei dem **SUCCEEDED** festgelegt ist, wenn der Nachverfolgungskontext erstellt wurde
+ Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn der Nachverfolgungskontext erstellt wurde
 
 ## <a name="requirements"></a>Anforderungen
 

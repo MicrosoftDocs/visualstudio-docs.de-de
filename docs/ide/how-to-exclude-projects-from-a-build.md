@@ -8,15 +8,15 @@ ms.topic: how-to
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0e164c24770048495d16da852523b3dd50a43a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: aaa36e7089be12cb0775b3300a134eb77b2eb618
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878668"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Vorgehensweise: Ausschließen von Projekten aus einem Build
 
@@ -32,7 +32,7 @@ Weitere Informationen finden Sie unter [Grundlagen der Buildkonfigurationen](../
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>So entfernen Sie ein Projekt temporär aus der aktiven Projektmappenkonfiguration
 
-1. Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager** .
+1. Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager**.
 
 2. Suchen Sie in der Tabelle **Projektkontexte** nach dem aus dem Build auszuschließenden Projekt.
 
@@ -42,13 +42,13 @@ Weitere Informationen finden Sie unter [Grundlagen der Buildkonfigurationen](../
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>So erstellen Sie eine ein Projekt ausschließende Projektmappenkonfiguration
 
-1. Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager** .
+1. Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager**.
 
 2. 2\. Wählen Sie in der Liste **Konfiguration der aktuellen Projektmappe** den Eintrag **\<New>** aus.
 
 3. Geben Sie im Feld **Name** einen Namen für die Projektmappenkonfiguration ein.
 
-4. Wählen Sie in der Liste **Copy settings from** (Einstellungen kopieren von) die Projektmappenkonfiguration aus, auf der die neue Konfiguration (beispielsweise **Debug** ) basieren soll, und wählen Sie dann die Schaltfläche **OK** aus.
+4. Wählen Sie in der Liste **Copy settings from** (Einstellungen kopieren von) die Projektmappenkonfiguration aus, auf der die neue Konfiguration (beispielsweise **Debug**) basieren soll, und wählen Sie dann die Schaltfläche **OK** aus.
 
 5. Deaktivieren Sie im Dialogfeld **Konfigurations-Manager** das Kontrollkästchen in der Spalte **Erstellen** für das Projekt, das Sie ausschließen möchten, und wählen Sie dann die Schaltfläche **Schließen** aus.
 
@@ -58,7 +58,7 @@ Weitere Informationen finden Sie unter [Grundlagen der Buildkonfigurationen](../
 
 ## <a name="skipped-projects"></a>Übersprungene Projekte
 
-Projekte können während des Builds übersprungen werden, weil Sie nicht auf dem neuesten Stand sind oder von der Konfiguration ausgeschlossen sind. Visual Studio verwendet MSBuild, um Ihre Projekte zu erstellen. MSBuild erstellt nur dann ein Ziel, wenn die Ausgabe älter ist als die Eingabe, wie durch die Zeitstempel der Datei festgelegt. Um einen erneuten Buildvorgang zu erzwingen, verwenden Sie den Befehl **Build** > **Projektmappe neu erstellen** .
+Projekte können während des Builds übersprungen werden, weil Sie nicht auf dem neuesten Stand sind oder von der Konfiguration ausgeschlossen sind. Visual Studio verwendet MSBuild, um Ihre Projekte zu erstellen. MSBuild erstellt nur dann ein Ziel, wenn die Ausgabe älter ist als die Eingabe, wie durch die Zeitstempel der Datei festgelegt. Um einen erneuten Buildvorgang zu erzwingen, verwenden Sie den Befehl **Build** > **Projektmappe neu erstellen**.
 
 Im Bereich **Build** des Fensters **Ausgabe** meldet Visual Studio die Anzahl der Projekte, die auf dem neuesten Stand sind, die Anzahl, die erfolgreich erstellt wurde, die Anzahl, die fehlgeschlagen ist, und die Anzahl, die übersprungen wurde. Die Anzahl übersprungener Projekte umfasst keine Projekte, die nicht erstellt wurden, weil sie auf dem neuesten Stand sind. Wenn Projekte von der aktiven Konfiguration ausgeschlossen werden, werden Sie während des Builds übersprungen. In der Buildausgabe wird eine Meldung angezeigt, die besagt, dass das Projekt übersprungen wird:
 

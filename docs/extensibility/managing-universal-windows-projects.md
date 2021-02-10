@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943243"
 ---
 # <a name="manage-universal-windows-projects"></a>Universelle Windows-Projekte verwalten
 

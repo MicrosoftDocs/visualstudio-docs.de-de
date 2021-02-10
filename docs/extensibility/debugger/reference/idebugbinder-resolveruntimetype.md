@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bdbff651618365f3b68a142a6cb1e76836876a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dad51c2741296f9d666a352a5e5a6aa0a3e9cf61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938225"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Diese Methode bestimmt den Lauf Zeittyp eines Objekts.
@@ -28,7 +28,7 @@ Diese Methode bestimmt den Lauf Zeittyp eines Objekts.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT ResolveRuntimeType( 
+HRESULT ResolveRuntimeType( 
    IDebugObject* pObject,
    IDebugField** ppResolved
 );

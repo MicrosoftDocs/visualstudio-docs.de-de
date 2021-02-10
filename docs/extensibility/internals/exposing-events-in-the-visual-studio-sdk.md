@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946643"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Verfügbar machen von Ereignissen im Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ermöglicht das Quellen Ereignis mithilfe von Automation. Es wird empfohlen, Ereignisse für Projekte und Projekt Elemente zu beziehen.
@@ -54,7 +54,7 @@ ms.locfileid: "96480537"
 
  **Automationprojectitemevents** = gibt das- `AutomationProjectItemsEvents` Objekt zurück.
 
-|Name|type|Bereich|BESCHREIBUNG|
+|Name|type|Range|BESCHREIBUNG|
 |----------|----------|-----------|-----------------|
 |Standard (@)|REG_SZ|Nicht verwendet|Nicht verwendet. Sie können das Datenfeld für die-Dokumentation verwenden.|
 |*Automationproject\vents*|REG_SZ|Der Name des Ereignis Objekts.|Nur der Schlüssel Name ist relevant. Sie können das Datenfeld für die-Dokumentation verwenden.<br /><br /> Dieses Beispiel stammt aus dem grundlegenden Projektbeispiel.|
@@ -70,7 +70,7 @@ ms.locfileid: "96480537"
 
  *AutomationEvents. h* und *AutomationEvents. cpp* enthalten Deklarationen und Implementierungen der Klassen in der folgenden Tabelle.
 
-|Klasse|BESCHREIBUNG|
+|Class|BESCHREIBUNG|
 |-----------|-----------------|
 |`CAutomationEvents`|Implementiert ein Ereignis Stamm Objekt, das aus dem-Objekt abgerufen wird `DTE.Events` .|
 |`CProjectsEventsContainer` und `CProjectItemsEventsContainer`|Implementieren Sie die Ereignis Quell Objekte, die die entsprechenden Ereignisse auslösen.|
@@ -110,5 +110,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  Ereignis Objekte werden vom gleichen zentralen Speicherort, dem- `DTE.Events` Objekt, abgerufen. Auf diese Weise werden alle Ereignis Objekte gruppiert, sodass ein Endbenutzer nicht das gesamte Objektmodell durchsuchen muss, um nach einem bestimmten Ereignis zu suchen. Dadurch können Sie auch Ihre spezifischen VSPackage-Objekte bereitstellen, anstatt ihren eigenen Code für systemweite Ereignisse zu implementieren. Für Endbenutzer, die ein Ereignis für Ihre `ProjectItem` Schnittstelle finden müssen, ist es jedoch nicht sofort klar, von wo aus das Ereignis Objekt abgerufen wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

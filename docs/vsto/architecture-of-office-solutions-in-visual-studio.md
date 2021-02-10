@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], architecture
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0ca40ed18639caae3250ddc1dc2a664b11780f7a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7fde9e49c2c4210dc8415b3ffff39fa1d4abca70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948608"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektur von Office-Projektmappen in Visual Studio
   Die Themen in diesem Abschnitt enthalten Informationen zur Funktionsweise von Lösungen, die mit den Office Developer Tools in Visual Studio erstellt wurden.

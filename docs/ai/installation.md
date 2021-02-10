@@ -4,18 +4,18 @@ description: Beschreibt, wie Visual Studio Tools for AI installiert werden.
 keywords: KI, Visual Studio
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841444"
 ---
 # <a name="installation"></a>Installation
 
@@ -34,7 +34,7 @@ Sie können die Tools aus [Visual Studio Marketplace](https://marketplace.visual
 2. Wählen Sie im Dialogfeld **Erweiterungen und Updates** auf der linken Seite **Online** aus.
 3. Geben Sie im Suchfeld oben rechts "tools for ai" ein.
 4. Wählen Sie **Visual Studio Tools for AI** aus den Ergebnissen aus.
-5. Klicken Sie auf **Herunterladen**.
+5. Wählen Sie **Herunterladen** aus.
 
 ## <a name="prepare-your-local-machine"></a>Vorbereiten Ihres lokalen Computers
 Bevor Sie Deep Learning-Modelle auf Ihrem lokalen Computer einrichten, stellen Sie sicher, dass die zutreffenden Anforderungen installiert sind. Prüfen Sie dabei auch, ob Sie die neusten Treiber und Bibliotheken für Ihre NVIDIA-GPU (falls vorhanden) installiert haben. Stellen Sie außerdem sicher, dass Python und Python-Bibliotheken wie NumPy und SciPy sowie passende Deep Learning-Frameworks, die Sie für das Projekt verwenden möchten, wie Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch und Chainer installiert sind.

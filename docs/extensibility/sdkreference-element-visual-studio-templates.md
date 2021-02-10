@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a1272a4765559fcfcde1aa60c57099b5d707f46
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3ab748a309bf57af79753596ede11b371589faa8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941562"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference-Element (Visual Studio-Vorlagen)
 Gibt an, dass die Elementvorlage eine SDK-Referenz verwendet.
@@ -44,12 +44,12 @@ Gibt an, dass die Elementvorlage eine SDK-Referenz verwendet.
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|[Referenz](../extensibility/reference-element-visual-studio-templates.md)|Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.|
+|[Verweis](../extensibility/reference-element-visual-studio-templates.md)|Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.|
 
 ## <a name="text-value"></a>Textwert
  Ein Textwert ist erforderlich.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Dieser Text gibt die SDK-Referenz an, die einem Projekt beim Instanziieren der Elementvorlage hinzugefügt werden soll.
 
 ```xml

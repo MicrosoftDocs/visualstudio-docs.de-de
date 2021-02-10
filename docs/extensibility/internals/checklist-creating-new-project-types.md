@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 0a8cdeb250b81a39a5d9350da61a872ef43ae23b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944497"
 ---
 # <a name="checklist-create-new-project-types"></a>Prüfliste: Erstellen neuer Projekttypen
 Um einen neuen Projekttyp zu erstellen, müssen Sie mehrere Aufgaben ausführen. Die folgende Checkliste enthält eine Anleitung für diese Aufgaben:

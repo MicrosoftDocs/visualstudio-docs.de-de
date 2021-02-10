@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4390c09c-fc73-4cc3-ab8e-6f07a7d70be2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed625d98cc4f3fe793ba0982771b0a57ff189526
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 44855237adb4eb9edfb7d4ee383ff5777cf4b6b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872013"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Dialogfeld „Bearbeiten und Fortsetzen“
 (Nur nativ) Dieses Dialogfeld wird angezeigt, wenn Sie während des Debuggens Code bearbeitet haben und die Codeänderungen von der Funktion **Bearbeiten und Fortfahren** übernommen werden können. Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).

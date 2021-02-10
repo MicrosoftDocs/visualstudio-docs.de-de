@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8241188b484447f94c60aa0e0c9bf05e477dd39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878278"
 ---
 # <a name="msbuild-task"></a>MSBuild-Aufgabe
 
@@ -47,8 +47,8 @@ Erstellt MSBuild-Projekte aus einem anderen MSBuild-Projekt.
 |`SkipNonexistentTargets`|Optionaler `Boolean`-Parameter.<br /><br /> Wenn der Wert `true` ist, werden Projektdateien übersprungen, die vorhanden sind, aber nicht das benannte `Targets`-Element enthalten. Ansonsten verursachen Projekte dieser Art einen Fehler. Eingeführt in MSBuild 15.5.|
 | `StopOnFirstFailure` | Optionaler `Boolean`-Parameter.<br /><br /> Wenn `true`, wenn eines der Projekte nicht erstellt werden kann, werden keine weiteren Projekte erstellt. Dies wird zurzeit nicht unterstützt, wenn Sie gleichzeitig (mit mehreren Prozessoren) erstellen. |
 | `TargetAndPropertyListSeparators` | Optionaler `String[]`-Parameter.<br /><br /> Gibt eine Liste mit Zielen und Eigenschaften als `Project`-Elementmetadaten an. Bei Trennzeichen werden vor der Verarbeitung die Escapezeichen entfernt. So wird z.B. % 3 b (';' mit Escapezeichen) behandelt, als wäre es ein ';' ohne Escapezeichen. |
-| `TargetOutputs` | Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Ausgaben der erstellten Ziele von allen Projektdateien zurück. Es werden nur die Ausgaben der angegebenen Ziele zurückgegeben, jedoch keine Ausgaben, die möglicherweise für Ziele vorhanden sind, von denen diese Ziele abhängen.<br /><br /> Der `TargetOutputs`-Parameter enthält zudem die folgenden Metadaten:<br /><br /> -   `MSBuildSourceProjectFile`: Die MSBuild-Projektdatei, die das Ziel enthält, das die Ausgaben festlegt.<br />-   `MSBuildSourceTargetName`: Das Ziel, das die Ausgaben festlegt. **Hinweis** :  Wenn Sie die Ausgaben einzelner Projektdateien oder Ziele separat ermitteln möchten, führen Sie die `MSBuild`-Aufgabe für jede Projektdatei und jedes Ziel einzeln aus. Wenn Sie die `MSBuild`-Aufgabe zum Erstellen aller Projektdateien nur einmal ausführen, werden die Ausgaben aller Ziele in einem Array zusammengefasst. |
-| `Targets` | Optionaler `String`-Parameter.<br /><br /> Das Ziel oder die Ziele, die in den Projektdateien erstellt werden sollen. Verwenden Sie Semikolons, um eine Liste von Zielnamen zu trennen. Sind in der `MSBuild` Aufgabe keine Ziele angegeben, werden die in den Projektdateien angegebenen Standardziele erstellt. **Hinweis** :  Die jeweiligen Ziele müssen in allen Projektdateien auftreten. Wenn dies nicht der Fall ist, tritt ein Buildfehler auf. |
+| `TargetOutputs` | Optionaler schreibgeschützter <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die Ausgaben der erstellten Ziele von allen Projektdateien zurück. Es werden nur die Ausgaben der angegebenen Ziele zurückgegeben, jedoch keine Ausgaben, die möglicherweise für Ziele vorhanden sind, von denen diese Ziele abhängen.<br /><br /> Der `TargetOutputs`-Parameter enthält zudem die folgenden Metadaten:<br /><br /> -   `MSBuildSourceProjectFile`: Die MSBuild-Projektdatei, die das Ziel enthält, das die Ausgaben festlegt.<br />-   `MSBuildSourceTargetName`: Das Ziel, das die Ausgaben festlegt. **Hinweis**:  Wenn Sie die Ausgaben einzelner Projektdateien oder Ziele separat ermitteln möchten, führen Sie die `MSBuild`-Aufgabe für jede Projektdatei und jedes Ziel einzeln aus. Wenn Sie die `MSBuild`-Aufgabe zum Erstellen aller Projektdateien nur einmal ausführen, werden die Ausgaben aller Ziele in einem Array zusammengefasst. |
+| `Targets` | Optionaler `String`-Parameter.<br /><br /> Das Ziel oder die Ziele, die in den Projektdateien erstellt werden sollen. Verwenden Sie Semikolons, um eine Liste von Zielnamen zu trennen. Sind in der `MSBuild` Aufgabe keine Ziele angegeben, werden die in den Projektdateien angegebenen Standardziele erstellt. **Hinweis**:  Die jeweiligen Ziele müssen in allen Projektdateien auftreten. Wenn dies nicht der Fall ist, tritt ein Buildfehler auf. |
 | `ToolsVersion` | Optionaler `String`-Parameter.<br /><br /> Gibt die `ToolsVersion` an, die verwendet werden muss, um Projekte zu erstellen, die an diese Aufgabe übergeben werden.<br /><br /> Hierdurch kann eine MSBuild-Aufgabe ein Projekt kompilieren, das auf eine andere Version von .NET Framework ausgerichtet ist als im Projekt angegeben. Gültige Werte sind `2.0`, `3.0` und `3.5`. Der Standardwert ist `3.5`sein. |
 
 ## <a name="remarks"></a>Hinweise

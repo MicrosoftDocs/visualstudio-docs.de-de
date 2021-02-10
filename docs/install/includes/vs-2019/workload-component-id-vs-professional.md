@@ -5,17 +5,17 @@ description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs, um Visual St
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1612245ed8c0f8d49beefc2012a50bd7c414cba7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: efda248f78cb606c57175b3c164960f2a78fa8c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881695"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Visual Studio-Kern-Editor (in Visual Studio Professional 2019 enthalten)
 

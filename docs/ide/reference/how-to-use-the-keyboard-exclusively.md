@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
-ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
+ms.openlocfilehash: 7daa0bfc6f67bd0dc9fee0775ba8dce591ce8148
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92156560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852530"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Vorgehensweise: Ausschließliches Verwenden der Tastatur
 
@@ -43,45 +43,45 @@ Eine vollständige Liste der Tastenkombinationen für Befehle in Visual Studio f
 
 So fügen Sie ein Steuerelement aus der Toolbox einem Formular oder Designer hinzu, ohne die Maus zu verwenden
 
-1. Klicken Sie auf der Menüleiste auf **Ansicht** > **Toolbox** .
+1. Klicken Sie auf der Menüleiste auf **Ansicht** > **Toolbox**.
 
-2. Wechseln Sie mit **STRG**+**NACH-OBEN-TASTE** oder **STRG**+**NACH-UNTEN-TASTE** zwischen den Abschnitten in der Registerkarte der **Toolbox** .
+2. Wechseln Sie mit **STRG**+**NACH-OBEN-TASTE** oder **STRG**+**NACH-UNTEN-TASTE** zwischen den Abschnitten in der Registerkarte der **Toolbox**.
 
-3. Drücken Sie die **NACH-OBEN-TASTE** oder die **NACH-UNTEN-TASTE** , um zwischen den Steuerelementen in einem Abschnitt zu wechseln.
+3. Drücken Sie die **NACH-OBEN-TASTE** oder die **NACH-UNTEN-TASTE**, um zwischen den Steuerelementen in einem Abschnitt zu wechseln.
 
-4. Nachdem Sie das Steuerelement ausgewählt haben, verwenden Sie die **EINGABETASTE** , um das Steuerelement dem Formular oder Designer hinzuzufügen.
+4. Nachdem Sie das Steuerelement ausgewählt haben, verwenden Sie die **EINGABETASTE**, um das Steuerelement dem Formular oder Designer hinzuzufügen.
 
 ## <a name="dialog-box-options"></a>Dialogfeld „Optionen“
 
 So wechseln Sie in einem Dialogfeld zwischen den Optionen und ändern die Einstellungen der Optionen, indem Sie ausschließlich die Tastatur verwenden
 
-1. Verwenden Sie **TAB** oder **SHIFT**+**TAB** , um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.
+1. Verwenden Sie **TAB** oder **SHIFT**+**TAB**, um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.
 
 2. So ändern Sie die Einstellungen der Optionen
 
-   - Verwenden Sie für Optionsfelder die **NACH-OBEN-TASTE** und **NACH-UNTEN-TASTE** , um die Auswahl zu ändern.
+   - Verwenden Sie für Optionsfelder die **NACH-OBEN-TASTE** und **NACH-UNTEN-TASTE**, um die Auswahl zu ändern.
 
-   - Drücken Sie für Kontrollkästchen die **LEERTASTE** , um diese zu aktivieren oder zu deaktivieren.
+   - Drücken Sie für Kontrollkästchen die **LEERTASTE**, um diese zu aktivieren oder zu deaktivieren.
 
-   - Verwenden Sie für Dropdownlisten **ALT**+**NACH-UNTEN-TASTE** , um Elemente anzuzeigen, und verwenden Sie dann die **NACH-OBEN-TASTE** und **NACH-UNTEN-TASTE** , um das ausgewählte Element zu ändern.
+   - Verwenden Sie für Dropdownlisten **ALT**+**NACH-UNTEN-TASTE**, um Elemente anzuzeigen, und verwenden Sie dann die **NACH-OBEN-TASTE** und **NACH-UNTEN-TASTE**, um das ausgewählte Element zu ändern.
 
-   - Drücken Sie für Schaltflächen **EINGABE** , um diese aufzurufen.
+   - Drücken Sie für Schaltflächen **EINGABE**, um diese aufzurufen.
 
-   - Verwenden Sie für Raster die Pfeiltasten zum Navigieren. Verwenden Sie für Dropdownlisten in Rastern **UMSCHALT**+**ALT**+**NACH-UNTEN-TASTE** , um Elemente anzuzeigen, und verwenden Sie dann die **NACH-OBEN-TASTE** und **NACH-UNTEN-TASTE** , um das ausgewählte Element zu ändern.
+   - Verwenden Sie für Raster die Pfeiltasten zum Navigieren. Verwenden Sie für Dropdownlisten in Rastern **UMSCHALT**+**ALT**+**NACH-UNTEN-TASTE**, um Elemente anzuzeigen, und verwenden Sie dann die **NACH-OBEN-TASTE** und **NACH-UNTEN-TASTE**, um das ausgewählte Element zu ändern.
 
 ## <a name="navigate-between-windows-and-files"></a>Wechseln zwischen Fenstern und Dateien
 
-- Verwenden Sie den Tastaturkurzbefehl **STRG**+**TAB** , um den IDE-Navigator mit **Aktive Dateien** anzuzeigen und dann in einem Editor oder Designer zwischen Dateien zu wechseln. Drücken Sie **EINGABE** , um zur markierten Datei zu navigieren.
+- Verwenden Sie den Tastaturkurzbefehl **STRG**+**TAB**, um den IDE-Navigator mit **Aktive Dateien** anzuzeigen und dann in einem Editor oder Designer zwischen Dateien zu wechseln. Drücken Sie **EINGABE**, um zur markierten Datei zu navigieren.
 
-- Verwenden Sie den Tastaturkurzbefehl **ALT**+**F7** , um den IDE-Navigator mit **Aktive Toolfenster** anzuzeigen und dann zwischen angedockten Toolfenstern zu wechseln. Wählen Sie **EINGABE** , um zum hervorgehobenen Fenster zu navigieren.
+- Verwenden Sie den Tastaturkurzbefehl **ALT**+**F7**, um den IDE-Navigator mit **Aktive Toolfenster** anzuzeigen und dann zwischen angedockten Toolfenstern zu wechseln. Wählen Sie **EINGABE**, um zum hervorgehobenen Fenster zu navigieren.
 
 ## <a name="move-and-dock-tool-windows"></a>Verschieben und Andocken von Toolfenstern
 
 1. Navigieren Sie zum Toolfenster, dass Sie verschieben möchten, und setzen Sie dort den Fokus.
 
-2. Klicken Sie im Menü **Fenster** auf die Option **Andockbar** .
+2. Klicken Sie im Menü **Fenster** auf die Option **Andockbar**.
 
-3. Drücken Sie **ALT**+**LEERTASTE** , und klicken Sie dann auf **Verschieben** .
+3. Drücken Sie **ALT**+**LEERTASTE**, und klicken Sie dann auf **Verschieben**.
 
    Die Führungsraute fürs Andocken wird angezeigt.
 
@@ -93,7 +93,7 @@ So wechseln Sie in einem Dialogfeld zwischen den Optionen und ändern die Einste
 
    Der Umriss des Toolfensters wird an der neuen Dockstelle angezeigt.
 
-6. Drücken Sie die **EINGABETASTE** .
+6. Drücken Sie die **EINGABETASTE**.
 
    Das Toolfenster springt zur neuen angedockten Stelle.
 

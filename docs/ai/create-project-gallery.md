@@ -4,18 +4,18 @@ description: Erstellen eines Projekts mithilfe des Beispiels aus dem Azure Machi
 keywords: KI, Visual Studio, Azure Machine Learning
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: a6813e834af00330b4018f16d4a19be945be2be9
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e6c5b8201b39f82e4c4645196ca543e2567b6e19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841548"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Erstellen eines KI-Projekts aus dem Azure Machine Learning-Katalog in Visual Studio
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 51039c71c97614cb9e43df263b3d7155c9cb86f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947800"
 ---
 # <a name="custom-document-properties-overview"></a>Übersicht über benutzerdefinierte Dokumenteigenschaften
 
@@ -52,7 +52,7 @@ Diese Eigenschaft enthält eine Zeichenfolge, die Details zum Bereitstellungs Ma
 
   Die *SolutionId* ist eine GUID, die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] von zum Identifizieren der Lösung verwendet wird. Die *SolutionId* wird automatisch generiert, wenn Sie das Projekt erstellen. Der **vstolocal** -Begriff gibt an, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dass die Assembly aus demselben Ordner wie das Dokument geladen werden soll.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md)

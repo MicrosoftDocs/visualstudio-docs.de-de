@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bed07019b3651ba7b0fe2959d06f0634374bb31a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941930"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menü Elemente
 Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine Tastenkombination an einen benutzerdefinierten Menübefehl zu binden. In diesem Thema wird erläutert, wie einer benutzerdefinierten Schaltfläche, einem Menü Element oder einem Symbolleisten Befehl eine Tastenkombination zugeordnet wird und wie die Tastatur Zuordnung im Standard-Editor angewendet oder auf einen benutzerdefinierten Editor beschränkt wird.
@@ -33,7 +33,7 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>So überprüfen Sie die Verfügbarkeit einer Tastenkombination
 
-1. **Tools**  >  Wählen Sie im Fenster Extras **Optionen**  >  **Umgebung** die Option **Tastatur** aus.
+1.   >  Wählen Sie im Fenster Extras **Optionen**  >  **Umgebung** die Option **Tastatur** aus.
 
 2. Stellen Sie sicher, dass **Use New Shortcut in** auf **Global** festgelegt ist.
 
@@ -107,5 +107,5 @@ Fügen Sie der *vsct* -Datei für das Paket einfach einen Eintrag hinzu, um eine
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)

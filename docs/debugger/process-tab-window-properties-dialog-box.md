@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb464429-4e7c-4919-98b5-1aaafe89bb5f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4056308f033ef61aa41456d287e7088c8bc6348b
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 0ed68cd77329ef34c15a85a470a219b9b0899464
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891487"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Registerkarte "Prozesse", Dialogfeld "Fenstereigenschaften"
 Verwenden Sie die Registerkarte **Prozess**, um den Prozess des ausgewählten Fensters zu identifizieren. Verschieben Sie den Fokus in das Fenster [Fensteransicht](../debugger/windows-view.md), um das [Dialogfeld „Fenstereigenschaften“](../debugger/window-properties-dialog-box.md) anzuzeigen. Wählen Sie einen beliebigen Fensterknoten in der Struktur aus, und klicken Sie anschließend im Menü **Ansicht** auf **Eigenschaften**.

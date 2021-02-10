@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, site workflows
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937718"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Website-Workflowaktivität
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine benutzerdefinierte Aktivität für einen Workflow auf Website Ebene mithilfe von erstellt wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . (Workflows auf Website Ebene gelten für den gesamten Standort, nicht nur für eine Liste auf der Website.) Die benutzerdefinierte Aktivität erstellt eine Sicherungs Ankündigungsliste und kopiert dann den Inhalt der Ankündigungsliste in diese.
@@ -94,7 +94,7 @@ ms.locfileid: "96913955"
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4. Speichern Sie das Projekt, und wählen Sie dann in der Menüleiste **Build**-Projekt Mappe erstellen aus  >  **Build Solution**.
+4. Speichern Sie das Projekt, und wählen Sie dann in der Menüleiste **Build**-Projekt Mappe erstellen aus  >  .
 
      Class1 wird als benutzerdefinierte Aktion in der **Toolbox** auf der Registerkarte "" der " **kündigt-Sicherung** " angezeigt.
 

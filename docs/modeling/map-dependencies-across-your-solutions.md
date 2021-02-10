@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dependency graphs
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946526"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Zuordnen von Abhängigkeiten zu Code Maps
 
@@ -187,7 +187,7 @@ Angenommen, Sie verfügen über einen Code Review, der in einigen Dateien mit au
 
    Wenn Sie Elemente anzeigen möchten, die sich im Code befinden, aber nicht in der Zuordnung angezeigt werden, klicken Sie auf das Symbol untergeordnete Elemente **erneut abrufen** ![ ](../modeling/media/dependencygraph_deletednodesicon.png) in der oberen linken Ecke einer Gruppe.
 
-6. Um weitere Elemente im Zusammenhang mit den auf der Code Map dargestellten anzuzeigen, wählen Sie ein Element aus, wählen Sie **Verwandte anzeigen** auf der Symbolleiste der Code Map aus, und wählen Sie dann den Typ verwandter Elemente aus, die der Code Map hinzugefügt werden sollen. Wählen Sie alternativ ein oder mehrere Elemente aus, öffnen Sie das Kontextmenü, und wählen Sie dann die Option **anzeigen** für den Typ verwandter Elemente aus, die der Karte hinzugefügt werden sollen. Zum Beispiel:
+6. Um weitere Elemente im Zusammenhang mit den auf der Code Map dargestellten anzuzeigen, wählen Sie ein Element aus, wählen Sie **Verwandte anzeigen** auf der Symbolleiste der Code Map aus, und wählen Sie dann den Typ verwandter Elemente aus, die der Code Map hinzugefügt werden sollen. Wählen Sie alternativ ein oder mehrere Elemente aus, öffnen Sie das Kontextmenü, und wählen Sie dann die Option **anzeigen** für den Typ verwandter Elemente aus, die der Karte hinzugefügt werden sollen. Beispiel:
 
     Für eine **Assembly** wählen Sie Folgendes aus:
 
@@ -238,7 +238,7 @@ Angenommen, Sie verfügen über einen Code Review, der in einigen Dateien mit au
 
    ![Verwenden des Filterbereichs zum Vereinfachen der Anzeige](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Video: Nachvollziehen des Codeentwurfs mit Visual Studio 2015 Code Maps](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)

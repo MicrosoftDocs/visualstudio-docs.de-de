@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 51b430a18a3d0934c16de19cbde82177a5f21f12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836461"
 ---
 # <a name="build-events-page-project-designer-c"></a>Seite "Buildereignisse", Projekt-Designer (C#)
 
-Verwenden Sie die Seite **Buildereignisse** des **Projekt-Designers** , um die Anweisungen der Buildkonfiguration anzugeben. Außerdem können Sie die Bedingungen angeben, unter denen sämtliche Postbuildereignisse ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md) und [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Verwenden Sie die Seite **Buildereignisse** des **Projekt-Designers**, um die Anweisungen der Buildkonfiguration anzugeben. Außerdem können Sie die Bedingungen angeben, unter denen sämtliche Postbuildereignisse ausgeführt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md) und [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
@@ -41,7 +41,7 @@ Dieses Steuerelement kann auf dieser Seite nicht bearbeitet werden. Eine Beschre
 
 **Befehlszeile für Präbuildereignis**
 
-Gibt sämtliche Befehle an, die vor dem Start des Buildvorgangs ausgeführt werden sollen. Klicken Sie auf **Präbuild bearbeiten...** , um das [Dialogfeld „Befehlszeile für Präbuildereignis“/„Befehlszeile für Postbuildereignis“](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) anzuzeigen. In dieses Feld können Sie lange Befehle eingeben.
+Gibt sämtliche Befehle an, die vor dem Start des Buildvorgangs ausgeführt werden sollen. Klicken Sie auf **Präbuild bearbeiten...**, um das [Dialogfeld „Befehlszeile für Präbuildereignis“/„Befehlszeile für Postbuildereignis“](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) anzuzeigen. In dieses Feld können Sie lange Befehle eingeben.
 
 > [!NOTE]
 > Präbuildereignisse werden nicht ausgeführt, wenn das Projekt auf dem neuesten Stand ist, und es wird kein Build gestartet.
@@ -79,7 +79,7 @@ dann ist die Projektdateieinstellung wie folgt:
 </PropertyGroup>
 ```
 
-Für .NET Core-Projekte fügt Visual Studio 2019 (und Visual Studio 2017 mit den neuesten Updates) den Einstellungen **PreBuildEvent** und **PostBuildEvent** ein MSBuild-Ziel namens `PreBuild` oder `PostBuild` hinzu. Diese Ziele verwenden die **BeforeTargets** - und **AfterTargets** -Attribute, die von MSBuild erkannt werden. Beispielsweise generiert Visual Studio für das vorherige Beispiel nun den folgenden Code:
+Für .NET Core-Projekte fügt Visual Studio 2019 (und Visual Studio 2017 mit den neuesten Updates) den Einstellungen **PreBuildEvent** und **PostBuildEvent** ein MSBuild-Ziel namens `PreBuild` oder `PostBuild` hinzu. Diese Ziele verwenden die **BeforeTargets**- und **AfterTargets**-Attribute, die von MSBuild erkannt werden. Beispielsweise generiert Visual Studio für das vorherige Beispiel nun den folgenden Code:
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

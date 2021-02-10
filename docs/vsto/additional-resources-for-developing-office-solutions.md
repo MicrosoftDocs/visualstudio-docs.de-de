@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, additional resources
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 828cd2c451e531eeecda7574b5750bc3bb7023b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: dd1b1862d3215698ee17ed152bba6d4d569667ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945070"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Zusätzliche Ressourcen zum Entwickeln von Office-Projektmappen
   Die Microsoft Office-Entwicklertools in Visual Studio stellen nur eine von vielen Methoden zum Erweitern von Office-Anwendungen dar. Office-Anwendungen verfügen auch über einige integrierte Features, z. B. Open XML-Formate, die nicht von den Office-Entwicklertools in Visual Studio oder in dieser Dokumentation behandelt werden.
@@ -34,5 +34,5 @@ Das zentrale Portal mit den aktuellsten Ressourcen für Office-Entwickler (nicht
 
 Der Bereich der MSDN Library, in dem Sie Artikel und Referenzdokumentation zum Entwickeln von Lösungen für mehrere Versionen von Office finden (nicht spezifisch für Office-Entwicklung mit Visual Studio).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zusätzliche Unterstützung für Fehler in Office-Projektmappen](../vsto/additional-support-for-errors-in-office-solutions.md)

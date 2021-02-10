@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint project service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75f8a2072e81936c4c1c691261e301aae37b0191
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: cc0eca8005c4eee6e1eb89c410b50be5d0228ec6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946331"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Konvertieren zwischen SharePoint-Projekt Systemtypen und anderen Visual Studio-Projekttypen
   In einigen Fällen verfügen Sie möglicherweise über ein Objekt im SharePoint-Projekt System, und Sie möchten die Features eines entsprechenden Objekts im Visual Studio-Automatisierungs Objektmodell oder im Integrations Objektmodell verwenden oder umgekehrt. In diesen Fällen können Sie die- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> Methode des SharePoint-Projekt diendiensdienstanbieter verwenden, um das Objekt in ein anderes Objektmodell zu konvertieren.
@@ -49,7 +49,7 @@ ms.locfileid: "94850480"
 
 - Code, der die `projectService_ProjectAdded` Methode zum Behandeln des- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> Ereignisses eines- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> Objekts registriert. Ein Beispiel finden Sie unter Gewusst [wie: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md)
 - [Vorgehensweise: Abrufen des SharePoint-Projekt Dienstanbieter](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)

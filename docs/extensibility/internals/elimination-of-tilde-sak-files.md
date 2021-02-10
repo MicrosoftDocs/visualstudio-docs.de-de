@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 61b446416bc944b53d38b07b3a58358a333744b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946682"
 ---
 # <a name="elimination-of-sak-files"></a>Beseitigung von ~ Sak-Dateien
 In der Quellcodeverwaltungs-Plug-in-API 1,2 wurden die *~ Sak* -Dateien durch funktionsflags und neue Funktionen ersetzt, die erkennen, ob ein Quellcodeverwaltungs-Plug-in die *Mssccprj* -Datei und freigegebene Auscheck Vorgänge unterstützt.
@@ -52,5 +52,5 @@ Für Plug-ins, die erweiterte Funktionen unterstützen, die in der Quellcodeverw
 > [!NOTE]
 > Wenn dieser Registrierungsschlüssel auf *DWORD: 00000000* festgelegt ist, entspricht er dem Schlüssel, der nicht vorhanden ist, und Visual Studio versucht weiterhin, die temporären Dateien zu erstellen. Wenn der Registrierungsschlüssel jedoch auf *DWORD: 00000001* festgelegt ist, versucht Visual Studio nicht, die temporären Dateien zu erstellen. Stattdessen wird davon ausgegangen, dass das Quellcodeverwaltungs-Plug-in die Datei " *Mssccprj. SCC* " nicht unterstützt und keine freigegebenen Auscheck Vorgänge unterstützt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Neuerungen in der Quellcodeverwaltungs-Plug-in-API, Version 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

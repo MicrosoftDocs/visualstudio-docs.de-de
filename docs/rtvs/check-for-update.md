@@ -5,15 +5,15 @@ ms.date: 07/23/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c6b351af7426af2b11d23cf3f5f437fa4c228c97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75843742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885871"
 ---
 # <a name="rtvs-current-version"></a>Aktuelle Version von RTVS
 

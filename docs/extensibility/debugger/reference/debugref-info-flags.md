@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01a26b6e10fae095bcf7284a6b5dbc12394d2541
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938992"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 Gibt an, welche Informationen über ein debugverweisobjekt abgerufen werden.

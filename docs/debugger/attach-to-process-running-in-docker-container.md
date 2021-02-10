@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857928"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Anfügen an einen in einem Docker-Container ausgeführten Prozess 
 
@@ -52,13 +52,13 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem .
     > [!NOTE]
     > Es gibt zwei Möglichkeiten, eine Remoteverbindung mit einem aktiven Prozess in einem Docker-Container herzustellen. Die erste Option, die Verwendung von SSH, ist ideal, wenn Sie keine Docker-Tools auf Ihrem lokalen Computer installiert haben.  Wenn Sie die Docker-Tools lokal installiert haben und Sie über einen Docker-Daemon verfügen, der so konfiguriert ist, dass er Remoteanforderungen akzeptiert, probieren Sie die zweite Option mit einem Docker-Daemon aus.
 
-    1. **_So stellen Sie über SSH eine Verbindung mit einem Remotecomputer her:_* _
-        1. Klicken Sie auf *Hinzufügen…* , um eine Verbindung mit einem Remotesystem herzustellen.<br/>
+    1. ***So stellen Sie über SSH eine Verbindung mit einem Remotecomputer her***
+        1. Wählen Sie **Hinzufügen...** aus, um eine Verbindung mit einem Remotesystem herzustellen.<br/>
         ![Herstellen einer Verbindung mit einem Remotesystem](../debugger/media/connect-remote-system.png "Herstellen einer Verbindung mit einem Remotesystem")
         1. Wählen Sie einen aktiven Container zum Anfügen aus, nachdem die Verbindung mit SSH oder dem Daemon erfolgreich hergestellt wurde, und drücken Sie auf **OK**.
 
-    1. **_So legen Sie das Ziel auf einen Remotecontainer fest, der einen Prozess über einen [Docker-Daemon](https://docs.docker.com/engine/reference/commandline/dockerd/) ausführt:_* _
-        1. Geben Sie die Daemonadresse (d. h. über TCP, IP usw.) unter *Docker-Host (Optional)* an, und klicken Sie auf den Link „Aktualisieren“.
+    1. ***So legen Sie das Ziel auf einen Remotecontainer fest, der einen Prozess über einen [Docker-Daemon ausführt](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+        1. Geben Sie die Daemonadresse (d. h. über TCP, IP usw.) unter **Docker-Host (Optional)** an, und klicken Sie auf den Link „Aktualisieren“.
         1. Wählen Sie einen aktiven Container zum Anfügen aus, nachdem die Verbindung mit dem Daemon erfolgreich hergestellt wurde, und drücken Sie auf **OK**.
 
 4. Wählen Sie den entsprechenden Containerprozess aus der Liste der **Verfügbaren Prozesse** und dann die Option **Anfügen** aus, um mit dem Debuggen Ihres C#-Containerprozesses in Visual Studio zu beginnen.
@@ -86,8 +86,8 @@ Sie können den Visual Studio-Debugger an einen Prozess anfügen, der in einem W
 
    Das Festlegen des Ziels auf einen Remotecontainer über SSH ist derzeit nicht verfügbar und kann nur über einen Docker-Daemon erfolgen.
 
-    **_So legen Sie das Ziel auf einen Remotecontainer fest, der einen Prozess über einen [Docker-Daemon](https://docs.docker.com/engine/reference/commandline/dockerd/) ausführt:_* _
-    1. Geben Sie die Daemonadresse (d. h. über TCP, IP usw.) unter *Docker-Host (Optional)* an, und klicken Sie auf den Link „Aktualisieren“.
+    ***So legen Sie das Ziel auf einen Remotecontainer fest, der einen Prozess über einen [Docker-Daemon ausführt](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+    1. Geben Sie die Daemonadresse (d. h. über TCP, IP usw.) unter **Docker-Host (Optional)** an, und klicken Sie auf den Link „Aktualisieren“.
 
     1. Wählen Sie einen aktiven Container zum Anfügen aus, nachdem die Verbindung mit dem Daemon erfolgreich hergestellt wurde, und wählen Sie „OK“ aus.
 

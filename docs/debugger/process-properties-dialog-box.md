@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: c0036067bd2d7e45d50db0a8d4207851aa75b296
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891520"
 ---
 # <a name="process-properties-dialog-box"></a>Dialogfeld "Prozesseigenschaften"
 Verwenden Sie dieses Dialogfeld, um mehr über einen bestimmten Prozess zu erfahren. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein Fenster [Prozessansicht](../debugger/processes-view.md). Wählen Sie einen beliebigen Prozessknoten in der Struktur aus, und wählend Sie anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.

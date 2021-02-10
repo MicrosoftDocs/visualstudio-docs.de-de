@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893164"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit dem Debugger in Visual Studio
 
@@ -217,9 +217,9 @@ So fügen Sie bedingte Ausnahmen hinzu:
 
    ![Zusätzliche Bedingungen für eine Ausnahme](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Geben Sie für jede Bedingungszeile den Namen des Moduls ein, und ändern Sie die Liste der Vergleichsoperatoren in **Equals** (gleich) oder **Not equals** (nicht gleich). Sie können Platzhalter (* *\\\** _) im Namen angeben, um mehrere Module anzugeben.
+3. Geben Sie für jede Bedingungszeile den Namen des Moduls ein, und ändern Sie die Liste der Vergleichsoperatoren in **Equals** (gleich) oder **Not equals** (nicht gleich). Sie können Platzhalter ( **\\\*** ) im Namen angeben, um mehrere Module anzugeben.
 
-4. Wenn Sie eine Bedingung löschen müssen, wählen Sie das *X** am Ende der Bedingungszeile aus.
+4. Wenn Sie eine Bedingung löschen müssen, wählen Sie das **X** am Ende der Bedingungszeile aus.
 
 ## <a name="see-also"></a>Siehe auch
 

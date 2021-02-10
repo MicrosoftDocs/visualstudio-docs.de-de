@@ -14,15 +14,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 028530014afdc78ab6c9c0483c3d443195383793
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942307"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Gemeinsame Entwicklung von Office-Lösungen
   Mehrere Entwickler können wie in anderen Visual Studio-Projekten an einem Office-Projekt arbeiten. Visual Studio sucht die Microsoft Office Installation ordnungsgemäß auf den einzelnen Computern, auch wenn Office an verschiedenen Standorten installiert ist. Es gibt jedoch einige wichtige Überlegungen, die zu beachten sind.
@@ -44,7 +44,7 @@ ms.locfileid: "96845803"
 
  Die temporären Zertifikate, die automatisch zur Buildzeit generiert werden, werden nicht durch Kenn Wörter gesichert. Die Zertifikate enthalten den Anmelde Namen des Entwicklers und andere persönliche Informationen. Wenn Sie Anpassungen bereitstellen, die mit temporären Zertifikaten signiert sind, können andere möglicherweise auf diese Informationen zugreifen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Sichere Office-Lösungen](../vsto/securing-office-solutions.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)
 - [Erstellen von Office-Lösungen](../vsto/building-office-solutions.md)

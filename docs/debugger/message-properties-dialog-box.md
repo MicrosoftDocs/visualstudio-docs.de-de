@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: eee5d21e013dd43a361a229a3189cc44d6294e70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891747"
 ---
 # <a name="message-properties-dialog-box"></a>Dialogfeld "Meldungseigenschaften"
 Verwenden Sie dieses Dialogfeld, um mehr über eine bestimmte Meldung zu erfahren. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus in ein [Meldungsansichtsfenster](../debugger/messages-view.md). Wählen Sie einen beliebigen Meldungsknoten in der Struktur aus, und wählen Sie anschließend im Menü **Ansicht** die Option **Eigenschaften** aus.

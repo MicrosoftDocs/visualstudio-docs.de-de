@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 2ce96da36a8c6eff0fda71d8a5d077721876ab8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943347"
 ---
 # <a name="keybinding-element"></a>KeyBinding-Element
 Das KeyBinding-Element gibt Tastenkombinationen für die Befehle an.
@@ -42,18 +42,18 @@ Das KeyBinding-Element gibt Tastenkombinationen für die Befehle an.
 |id|Erforderlich.|
 |Editor|Erforderlich. Die Editor-GUID gibt den Bearbeitungs Kontext an, für den diese Tastenkombination aktiviert wird. Der Wert des globalen Bindungs Bereichs ist "guidVSStd97".|
 |key1|Erforderlich. Zu den gültigen Werten gehören alle typbaren alphanumerischen Werte und zweistellige hexadezimal Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
-|mod1|Optional. Eine beliebige Kombination von **STRG**, **alt** und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
-|Schlüssel2|Optional. Zu den gültigen Werten gehören alle typbaren alphanumerischen Werte und zweistellige hexadezimal Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
-|mod2|Optional. Eine beliebige Kombination von **STRG**, **alt** und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
-|Emulator|Optional.|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|mod1|Dies ist optional. Eine beliebige Kombination von **STRG**, **alt** und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
+|Schlüssel2|Dies ist optional. Zu den gültigen Werten gehören alle typbaren alphanumerischen Werte und zweistellige hexadezimal Werte, denen 0x und [VK_constants](/windows/desktop/inputdev/virtual-key-codes)vorangestellt sind.|
+|mod2|Dies ist optional. Eine beliebige Kombination von **STRG**, **alt** und **UMSCHALT** durch Leerzeichen voneinander getrennt.|
+|Emulator|Dies ist optional.|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
 |Parent||
-|Annotation||
+|Anmerkung||
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

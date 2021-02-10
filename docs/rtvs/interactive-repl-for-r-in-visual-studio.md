@@ -5,15 +5,15 @@ ms.date: 06/28/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0355f1017bb661b4f72325fb74f60653f69cd182
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62815007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878175"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Arbeiten mit dem R Interactive-Fenster
 
@@ -89,7 +89,7 @@ Ein Unterschied ist, dass, wenn Sie beginnen, etwas in der aktuellen Zeile einzu
 
 Die Versionsgeschichte im interaktiven Fenster arbeitet intelligent mit den Anweisungen eines anderen mehrzeiligen Codeblocks zusammen. Wenn Sie mithilfe der NACH-OBEN- und NACH-UNTEN-TASTEN durch die Versionsgeschichte browsen, werden mehrzeilige Codeblöcke als ganze Einheit abgerufen und als aktueller Eintrag dargestellt. Zu diesem Zeitpunkt navigieren die Pfeiltasten Zeile für Zeile durch den Codeblock, bis das obere oder untere Ende erreicht ist. Am oberen Rand des Codeblocks ruft die NACH-OBEN-TASTE das vorherige Element in der Versionsgeschichte ab. Am unteren Rand ruft die NACH-UNTEN-TASTE das nächste Element ab.
 
-Durch dieses Verhalten erfolgt eine Anpassung, wenn das letzte Element in der Versionsgeschichte mit der Tastenkombination NACH-OBEN-TASTE und **Eingabetaste**erneut ausgeführt wird, wobei die Bearbeitung eines mehrzeiligen Codeblocks durch Drücken der NACH-OBEN-TASTE natürlich zugelassen wird, damit Sie darin navigieren können.
+Durch dieses Verhalten erfolgt eine Anpassung, wenn das letzte Element in der Versionsgeschichte mit der Tastenkombination NACH-OBEN-TASTE und **Eingabetaste** erneut ausgeführt wird, wobei die Bearbeitung eines mehrzeiligen Codeblocks durch Drücken der NACH-OBEN-TASTE natürlich zugelassen wird, damit Sie darin navigieren können.
 
 Verwenden Sie zur Vermeidung einer Navigation in mehrzeiligen Codeblöcken die Schaltflächen der Symbolleiste oder **Alt**+**Nach oben** und **Alt**-**Nach unten**, damit alle Blöcke als einzelne Zeilen behandelt werden.
 

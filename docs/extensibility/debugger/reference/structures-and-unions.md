@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f477b46083b5abd5b8e93593cc728b660b58d9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 6b055446e6bdf147c99cf96b48c03bfcfdd2eda2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845764"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938693"
 ---
 # <a name="structures-and-unions"></a>Structures and Unions
 Im folgenden finden Sie Strukturen und Unions im Visual Studio-debuggingsdk.
@@ -134,12 +134,12 @@ Im folgenden finden Sie Strukturen und Unions im Visual Studio-debuggingsdk.
 
 - [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) Beschreibt eine Adresse, die relativ zu einem `this` Zeiger ist ( `Me` in Visual Basic).
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
  Header: msdbg. h, sh. h oder EE. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

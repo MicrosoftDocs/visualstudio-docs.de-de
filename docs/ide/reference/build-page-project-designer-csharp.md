@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136874"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836448"
 ---
 # <a name="build-page-project-designer-c"></a>Seite "Erstellen", Projekt-Designer (C#)
 
-Verwenden Sie die Seite **Erstellen** des **Projekt-Designers** , um die Buildkonfigurationseigenschaften des Projekts anzugeben. Diese Seite bezieht sich nur auf [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekte.
+Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkonfigurationseigenschaften des Projekts anzugeben. Diese Seite bezieht sich nur auf [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekte.
 
-Um auf die Seite **Erstellen** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe** ) im **Projektmappen-Explorer** . Wählen Sie anschließend im Menü **Ansicht** , **Eigenschaftenseiten** aus. Sobald der Projekt-Designer angezeigt wird, wählen Sie die Registerkarte **Erstellen** aus.
+Um auf die Seite **Erstellen** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe**) im **Projektmappen-Explorer**. Wählen Sie anschließend im Menü **Ansicht**, **Eigenschaftenseiten** aus. Sobald der Projekt-Designer angezeigt wird, wählen Sie die Registerkarte **Erstellen** aus.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -40,11 +40,11 @@ Die folgenden Optionen ermöglichen es Ihnen, die anzuzeigende bzw. zu ändernde
 
 **Konfiguration**
 
-Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Es stehen die Einstellungen **Aktiv (Debuggen)** (Standard), **Debuggen** , **Release** oder **Alle Konfigurationen** zur Verfügung.
+Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Es stehen die Einstellungen **Aktiv (Debuggen)** (Standard), **Debuggen**, **Release** oder **Alle Konfigurationen** zur Verfügung.
 
 **Plattform**
 
-Gibt an, welche Plattformeinstellungen angezeigt oder geändert werden sollen. Die Standardeinstellung ist **Aktiv (Any CPU)** . Sie können die aktive Plattform mit dem **Konfigurations-Manager** ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).
+Gibt an, welche Plattformeinstellungen angezeigt oder geändert werden sollen. Die Standardeinstellung ist **Aktiv (Any CPU)**. Sie können die aktive Plattform mit dem **Konfigurations-Manager** ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Allgemein
 
@@ -64,7 +64,7 @@ Definiert TRACE als Symbol in allen Quellcodedateien Ihrer App. Die Auswahl dies
 
 **Zielplattform**
 
-Gibt den Prozessor an, für den die Ausgabedatei konfiguriert ist. Wählen Sie für jeden Intel-kompatiblen 32-Bit-Prozessor **x86** , für jeden Intel-kompatiblen 64-Bit-Prozessor **x64** und für ARM-Prozessoren **ARM** aus, oder wählen Sie **Any CPU** , um anzugeben, dass jeder Prozessor zulässig ist. **Any CPU** (Beliebige CPU) ist der Standardwert für Projekte, da die Anwendung hiermit auf möglichst vielen Geräten ausgeführt werden kann.
+Gibt den Prozessor an, für den die Ausgabedatei konfiguriert ist. Wählen Sie für jeden Intel-kompatiblen 32-Bit-Prozessor **x86**, für jeden Intel-kompatiblen 64-Bit-Prozessor **x64** und für ARM-Prozessoren **ARM** aus, oder wählen Sie **Any CPU**, um anzugeben, dass jeder Prozessor zulässig ist. **Any CPU** (Beliebige CPU) ist der Standardwert für Projekte, da die Anwendung hiermit auf möglichst vielen Geräten ausgeführt werden kann.
 
 Weitere Informationen finden Sie unter [/platform (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
 
@@ -127,7 +127,7 @@ Die folgenden Einstellungen werden verwendet, um die Ausgabeoptionen für den Bu
 
 **Ausgabepfad**
 
-Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder wählen Sie die Schaltfläche **Durchsuchen** , um einen Pfad anzugeben. Der Pfad ist relativ. Wenn Sie einen absoluten Pfad eingeben, wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet bin\Debug\ oder bin\Release\\.
+Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder wählen Sie die Schaltfläche **Durchsuchen**, um einen Pfad anzugeben. Der Pfad ist relativ. Wenn Sie einen absoluten Pfad eingeben, wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet bin\Debug\ oder bin\Release\\.
 
 Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Mit dem Befehl **Erstellen** im Menü **Debuggen** (F5) wird der Build unabhängig vom angegebenen **Ausgabepfad** am Debugspeicherort abgelegt. Mit dem Befehl **Erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md).
 

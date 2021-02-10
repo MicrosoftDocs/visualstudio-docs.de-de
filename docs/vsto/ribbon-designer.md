@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940916"
 ---
 # <a name="ribbon-designer"></a>Multifunktionsleisten-Designer
   Der Menüband-Designer ist ein visueller Entwurfzeichnungsbereich. Verwenden Sie den Menüband-Designer, um dem Menüband einer Microsoft Office Anwendung benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzuzufügen.
@@ -145,7 +145,7 @@ ms.locfileid: "97528005"
 |**ButtonGroup**|Eine Gruppe, die mindestens eine Schaltfläche, eine Umschaltfläche, ein Menü, eine Trennschaltfläche und einen Katalog beinhaltet. Einer Gruppe oder einem Menü kann eine Schaltflächengruppe oder eine Gruppe hinzugefügt werden.|
 |**CheckBox**|Ein Feld, das zum Aktivieren oder Deaktivieren einer Option aktiviert oder deaktiviert ist.|
 |**ComboBox**|Ein Bearbeitungsfeld mit einem angehängten Listenfeld. Benutzer können ihre Auswahl entweder eingeben oder auswählen. Im Feld wird die aktuelle Auswahl angezeigt. Verwenden <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> Sie die-Eigenschaft, um Elemente zur Laufzeit vor oder nach dem Laden des Menübands in die Office-Anwendung hinzuzufügen und zu entfernen.|
-|**DropDown**|Eine Liste der Elemente, die von Benutzern ausgewählt werden können. In eine Dropdownliste kann kein neues Element eingegeben werden.<br /><br /> Fügen Sie der Liste mithilfe der <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A>-Eigenschaft Elemente hinzu. Elemente können während der Laufzeit hinzugefügt und entfernt werden.<br /><br /> Fügen Sie der Liste mithilfe der <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A>-Eigenschaft Schaltflächen hinzu. Sie können jedoch keine Schaltflächen zur Laufzeit hinzufügen und entfernen, nachdem das Menüband in die Office-Anwendung geladen wurde.|
+|**Dropdown**|Eine Liste der Elemente, die von Benutzern ausgewählt werden können. In eine Dropdownliste kann kein neues Element eingegeben werden.<br /><br /> Fügen Sie der Liste mithilfe der <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A>-Eigenschaft Elemente hinzu. Elemente können während der Laufzeit hinzugefügt und entfernt werden.<br /><br /> Fügen Sie der Liste mithilfe der <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A>-Eigenschaft Schaltflächen hinzu. Sie können jedoch keine Schaltflächen zur Laufzeit hinzufügen und entfernen, nachdem das Menüband in die Office-Anwendung geladen wurde.|
 |**EditBox**|Ein Feld, in das der Benutzer Text eingeben kann.|
 |**Galerie**|Ein Menü mit einem visuellen Auswahlarray oder -raster, in dem Benutzer eine Auswahl treffen können. Das Layout der Auswahl im Menü kann gesteuert werden. Verwenden Sie die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>-Eigenschaft und die <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>-Eigenschaft, um die Anzahl der Zeilen und Spalten anzugeben, in denen die Elemente und Schaltflächen des Katalogs angezeigt werden.|
 |**Label**|Text, den Sie verwenden können, um Steuerelemente auf dem Menüband zu identifizieren.|
@@ -177,7 +177,7 @@ ms.locfileid: "97528005"
 
  Die für alle Steuerelemente verwendbaren Tastenkombinationen werden in der folgenden Tabelle angezeigt.
 
-|Aktion|Tastenkombinationen|
+|Aktion|Tastenkombination|
 |------------|-----------------------|
 |Verschieben eines Steuerelements vor das vorherige Steuerelement in der Liste.|**STRG** + Nach **oben**<br /><br /> **STRG** + **Links**|
 |Verschieben eines Steuerelements hinter das nächste Steuerelement in der Liste.|**STRG** + **Nach unten**<br /><br /> **STRG** + **Rechts**|
@@ -193,7 +193,7 @@ ms.locfileid: "97528005"
 
  Die Tastenkombinationen gelten nur für das Microsoft Office-Menü; <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> und <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> werden in der folgenden Tabelle angezeigt.
 
-|Aktion|Tastenkombinationen|
+|Aktion|Tastenkombination|
 |------------|-----------------------|
 |Auswählen des übergeordneten Steuerelements, falls der Dropdownbereich geöffnet ist und im Dropdownbereich ein Steuerelement ausgewählt ist.|**Left**|
 |Schließen des Dropdownbereichs, falls der Dropdownbereich geöffnet ist und das übergeordnete Steuerelement ausgewählt ist.|**Left**|

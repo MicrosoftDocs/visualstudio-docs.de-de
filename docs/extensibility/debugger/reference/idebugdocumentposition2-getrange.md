@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a923691afdfe145931ab31d0e9bbc6142e7c8d1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd0a08889507c03ec1a8c5c72a615edfb195e7d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946851"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 Ruft den Bereich für diese Dokument Position ab.
@@ -28,14 +28,14 @@ Ruft den Bereich für diese Dokument Position ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetRange( 
+HRESULT GetRange( 
    TEXT_POSITION* pBegPosition,
    TEXT_POSITION* pEndPosition
 );
 ```
 
 ```csharp
-int GetRange( 
+int GetRange( 
    TEXT_POSITION[] pBegPosition,
    TEXT_POSITION[] pEndPosition
 );

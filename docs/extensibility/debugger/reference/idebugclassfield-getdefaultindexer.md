@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b223f85ff7453eba5777b3a6bde85350d7864e1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948347"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Ruft den Namen des Standardindexers ab.
@@ -28,7 +28,7 @@ Ruft den Namen des Standardindexers ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetDefaultIndexer( 
+HRESULT GetDefaultIndexer( 
    BSTR* pbstrIndexer
 );
 ```

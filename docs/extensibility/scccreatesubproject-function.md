@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74354e05b16830f599dd706fbe48aadd75b11a18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943126"
 ---
 # <a name="scccreatesubproject-function"></a>Scckreatesubproject-Funktion
 Diese Funktion erstellt ein Unterprojekt mit dem angegebenen Namen unter einem vorhandenen übergeordneten Projekt, das durch das-Argument angegeben wird `lpParentProjPath` .
@@ -68,7 +68,7 @@ in Der vorgeschlagene Unterprojekt Name (bis SCC_PRJPATH_SIZE, einschließlich d
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Das Unterprojekt wurde erfolgreich erstellt.|
 |SCC_E_INITIALIZEFAILED|Das übergeordnete Projekt konnte nicht initialisiert werden.|
@@ -92,7 +92,7 @@ in Der vorgeschlagene Unterprojekt Name (bis SCC_PRJPATH_SIZE, einschließlich d
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Technische Hinweise zu "scckreatesubproject" und "sccgetparser ProjectPath"
  Das Hinzufügen von Projektmappen und Projekten zur Quell Code Verwaltung wurde in Visual Studio vereinfacht, um zu minimieren, wie oft ein Benutzer aufgefordert wird, Speicherorte im Quell Code Verwaltungssystem auszuwählen. Diese Änderungen werden von Visual Studio aktiviert, wenn ein Quellcodeverwaltungs-Plug-in sowohl die neuen Funktionen `SccCreateSubProject` als auch unterstützt `SccGetParentProjectPath` . Der folgende Registrierungs Eintrag kann jedoch verwendet werden, um diese Änderungen zu deaktivieren und zur vorherigen Version von Visual Studio (Quellcodeverwaltungs-Plug-in-API Version 1,1) zurückzukehren:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] "Donotkreatesolutionrootfolderinsourcecontrol" = DWORD: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "Donotkreatesolutionrootfolderinsourcecontrol" = DWORD: 00000001**
 
  Wenn dieser Registrierungs Eintrag nicht vorhanden ist oder auf DWORD: 00000000 festgelegt ist, versucht Visual Studio, die neuen Funktionen und zu verwenden `SccCreateSubProject` `SccGetParentProjectPath` .
 

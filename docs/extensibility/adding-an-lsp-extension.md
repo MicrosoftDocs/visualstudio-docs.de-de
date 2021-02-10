@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939291"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Hinzufügen der Sprachserverprotokollerweiterung
 
@@ -45,7 +45,7 @@ Weitere Informationen zum Erstellen eines Beispiel sprach Servers oder zum Integ
 
 Die folgenden Tabellen zeigen, welche LSP-Funktionen in Visual Studio unterstützt werden:
 
-Nachricht | Bietet Unterstützung in Visual Studio
+`Message` | Bietet Unterstützung in Visual Studio
 --- | ---
 initialisieren | ja
 initialisiert | ja
@@ -500,6 +500,6 @@ Ja, aber nicht alle Features funktionieren ordnungsgemäß. Das ultimative Ziel 
 
 Weitere Informationen finden Sie [hier](walkthrough-publishing-a-visual-studio-extension.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen](../ide/adding-visual-studio-editor-support-for-other-languages.md)

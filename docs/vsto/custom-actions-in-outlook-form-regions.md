@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947879"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Benutzerdefinierte Aktionen in Outlook-Formular Bereichen
   Aktionen zeigen Schaltflächen an, die es Benutzern ermöglichen, auf ein Microsoft Office Outlook-Element zu antworten. Um z. b. auf ein e-Mail-Element zu antworten, klicken Benutzer auf die Schaltflächen **Antwort**, **alle Antworten** oder Aktion **weiterleiten** . Jede dieser Aktionen erstellt ein neues e-Mail-Element und füllt die Felder des Elements mithilfe der Informationen aus dem ursprünglichen Element auf.
@@ -42,7 +42,7 @@ ms.locfileid: "96848195"
 |--------------|-----------------|
 |**AddressLike**|Gibt an, wie das Zielformular adressiert wird.|
 |**Text**|Gibt an, wie der Text des ursprünglichen Elements an das Zielformular angefügt wird.|
-|**Aktiviert**|Gibt an, ob die benutzerdefinierte Aktion aktiviert ist. Wenn diese Eigenschaft auf **false** festgelegt ist, wird die benutzerdefinierte Aktion deaktiviert.|
+|**Enabled**|Gibt an, ob die benutzerdefinierte Aktion aktiviert ist. Wenn diese Eigenschaft auf **false** festgelegt ist, wird die benutzerdefinierte Aktion deaktiviert.|
 |**Methode**|Gibt den Typ der Antwort an, die beim Ausführen der benutzerdefinierten Aktion verfügbar ist. Die benutzerdefinierte Aktion kann das Formular senden, das Formular öffnen oder den Benutzer zur Eingabe auffordern, ob das Formular gesendet oder geöffnet werden soll.|
 |**Name**|Gibt den internen Namen an, den Sie verwenden können, um auf diese benutzerdefinierte Aktion im Code zu verweisen.|
 |**ShowOnRibbon**|Gibt an, ob die benutzerdefinierte Aktion auf dem Menüband des ursprünglichen Elements angezeigt werden soll.|
@@ -53,7 +53,7 @@ ms.locfileid: "96848195"
 ## <a name="customize-a-custom-action-at-run-time"></a>Anpassen einer benutzerdefinierten Aktion zur Laufzeit
  Mithilfe von Code können Sie auch der benutzerdefinierten Aktion Verhalten hinzufügen. Beispielsweise können Sie Code hinzufügen, der die Namen der e-Mail-Empfänger annimmt und diese Namen als Teilnehmer in einem neuen Termin Element hinzufügt. Behandeln Sie hierzu das [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) -Ereignis des [MailItem-Objekts](/office/vba/api/Outlook.MailItem).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
 - [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Zuordnen eines Formular Bereichs zu einer Outlook-Nachrichten Klasse](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

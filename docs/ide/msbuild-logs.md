@@ -9,7 +9,7 @@ helpviewer_keywords:
 - msbuild logs"
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880488"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Behandeln von MSBuild-Problemen und Erstellen von Protokollen
 
@@ -118,8 +118,8 @@ Eine Datei „Msbuild.binlog“ wird in dem Verzeichnis erstellt, von dem aus Si
 
 ## <a name="create-a-detailed-log"></a>Erstellen eines detaillierten Protokolls
 
-1. Wechseln Sie im Visual Studio-Hauptmenü zu **Extras** > **Optionen** > **Projekte und Projektmappen** >**Erstellen und ausführen** .
-1. Legen Sie **Ausführlichkeit der Protokolldatei des MSBuild-Projektbuilds** in beiden Kombinationsfeldern auf **Detailliert** fest. Das erste steuert die Buildausführlichkeit im **Ausgabefenster** , und das zweite steuert die Buildausführlichkeit in der Datei „\<projectname\>.log“, die während des Buildvorgangs im Zwischenverzeichnis der einzelnen Projekte erstellt wird.
+1. Wechseln Sie im Visual Studio-Hauptmenü zu **Extras** > **Optionen** > **Projekte und Projektmappen** >**Erstellen und ausführen**.
+1. Legen Sie **Ausführlichkeit der Protokolldatei des MSBuild-Projektbuilds** in beiden Kombinationsfeldern auf **Detailliert** fest. Das erste steuert die Buildausführlichkeit im **Ausgabefenster**, und das zweite steuert die Buildausführlichkeit in der Datei „\<projectname\>.log“, die während des Buildvorgangs im Zwischenverzeichnis der einzelnen Projekte erstellt wird.
 2. Geben Sie an einer Visual Studio Developer-Eingabeaufforderung einen der folgenden Befehle ein, und setzen Sie dabei die tatsächlichen Werte für Pfad und Konfiguration ein:
 
     ```cmd

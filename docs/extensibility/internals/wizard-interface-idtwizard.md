@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e87759a979d0c680018d99a1e18a12e645f430c6
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: dc33d2fb37db7e021ce1752c642492a80956b61f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935936"
 ---
 # <a name="wizard-interface-idtwizard"></a>Assistentenschnittstelle (IDTWizard)
 Die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) verwendet die- <xref:EnvDTE.IDTWizard> Schnittstelle für die Kommunikation mit Assistenten. Assistenten müssen diese Schnittstelle implementieren, um in der IDE installiert werden zu können.
@@ -66,7 +66,7 @@ STDMETHOD(Execute)(THIS_
     ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [Kontextparameter](../../extensibility/internals/context-parameters.md)
+- [Kontext Parameter](../../extensibility/internals/context-parameters.md)
 - [Benutzerdefinierte Parameter](../../extensibility/internals/custom-parameters.md)
 - [The](../../extensibility/internals/wizards.md)
 - [Assistentendatei (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

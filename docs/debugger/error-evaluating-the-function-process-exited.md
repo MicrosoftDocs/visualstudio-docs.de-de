@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871636"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Fehler: Der Zielprozess wurde mit dem Code &#39;Code&#39; beim Auswerten der Funktion &#39;function&#39; beendet
 
@@ -28,7 +28,7 @@ Ein häufiger Grund für dieses Problem ist, dass es zu einer Stapelüberlaufaus
 
 Für dieses Problem gibt es zwei mögliche Lösungen.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Lösung 1: Verhindern, dass der Debugger die Eigenschaftengetter- oder ToString-Methode aufruft 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Lösung 1: Verhindern, dass der Debugger die Eigenschaftengetter- oder ToString-Methode aufruft 
 
 In der Fehlermeldung wird der Name der Funktion angegeben, die der Debugger aufzurufen versucht hat. Mithilfe des Namens der Funktion können Sie versuchen, diese Funktion im Fenster **Direkt** erneut auszuwerten, um die Auswertung zu debuggen. Das Debuggen ist beim Auswerten über das Fenster **Direkt** (im Gegensatz zu impliziten Auswertungen über die Fenster **Auto/Lokal/Überwachung**) möglich, weil der Debugger bei unbehandelten Ausnahmen unterbricht.
 

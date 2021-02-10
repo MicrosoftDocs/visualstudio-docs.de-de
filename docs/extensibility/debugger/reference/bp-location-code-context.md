@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 4dcb8ffb1a1debcf6aeeca8dc4d21c1ab5f18b90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a51665a22a01c17256c41d45d2970bea0f617140
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948386"
 ---
 # <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
 Beschreibt den Speicherort eines Breakpoints, der direkt an eine Adresse im debuggten Programm gebunden ist.

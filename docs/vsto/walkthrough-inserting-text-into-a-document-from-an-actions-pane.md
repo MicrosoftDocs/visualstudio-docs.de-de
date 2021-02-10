@@ -15,15 +15,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937380"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie ein Aktionsbereich in einem Microsoft Office Word-Dokument erstellt wird. Der Aktionsbereich enthält zwei Steuerelemente, die Eingaben erfassen und dann den Text an das Dokument senden.
@@ -115,7 +115,7 @@ ms.locfileid: "97524169"
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**GetName**|
-    |**Size**|**130, 20**|
+    |**Größe**|**130, 20**|
 
 5. Fügen Sie dem Aktionsbereich-Steuerelement ein zweites **Label** -Steuerelement hinzu, und ändern Sie die **Text** -Eigenschaft in **Address**.
 
@@ -124,9 +124,9 @@ ms.locfileid: "97524169"
     |Eigenschaft|Wert|
     |--------------|-----------|
     |**Name**|**getAddress**|
-    |**Akzeptiert die Rückgabe**|**Wahr**|
-    |**Mehrzeilig**|**Wahr**|
-    |**Size**|**130, 40**|
+    |**Akzeptiert die Rückgabe**|**True**|
+    |**Mehrzeilig**|**True**|
+    |**Größe**|**130, 40**|
 
 7. Fügen Sie dem Aktionsbereich-Steuerelement ein **Schalt** Flächen-Steuerelement hinzu, und ändern Sie die folgenden Eigenschaften.
 

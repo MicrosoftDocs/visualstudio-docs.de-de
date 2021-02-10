@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1893ffac03aba345589274475f81abd44b5b7b5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936820"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 Ruft den `this` ( `Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] )-Zeiger des-Objekts ab, das die-Methode enthält.
@@ -28,7 +28,7 @@ Ruft den `this` ( `Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprv
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetThis( 
+HRESULT GetThis( 
    IDebugClassField** ppClass
 );
 ```

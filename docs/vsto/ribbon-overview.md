@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940864"
 ---
 # <a name="ribbon-overview"></a>Übersicht über Menüband
   Das Menüband ist eine Möglichkeit, verwandte Befehle so zu organisieren, dass Sie leichter zu finden sind. Befehle werden als Steuerelemente auf dem Menüband angezeigt. Steuerelemente sind in *Gruppen* entlang eines horizontalen Streifens am oberen Rand eines Anwendungsfensters angeordnet. Verwandte Gruppen sind auf Registerkarten organisiert.
@@ -117,7 +117,7 @@ ms.locfileid: "97527980"
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-|Titel|BESCHREIBUNG|
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Gewusst wie: Starten der Anpassung des Menübands](../vsto/how-to-get-started-customizing-the-ribbon.md)|Zeigt, wie Sie das Menüband einer Microsoft Office-Anwendung anpassen und einem Office-Projekt ein **Menüband (visueller Designer)** oder ein **Menüband (XML)** -Element hinzufügen.|
 |[Menüband-Designer](../vsto/ribbon-designer.md)|Beschreibt, wie Sie mit dem Menüband-Designer dem Menüband einer Microsoft Office Anwendung benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzufügen können.|

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c203e83a595562e604d8c32b09056c8544bfd1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735992"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938971"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 Diese Methode konvertiert entweder einen Objekt Speicherort oder eine Speicheradresse in einen Speicher Kontext.
@@ -28,7 +28,7 @@ Diese Methode konvertiert entweder einen Objekt Speicherort oder eine Speicherad
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetMemoryContext( 
+HRESULT GetMemoryContext( 
    IDebugField*           pField,
    DWORD                  dwConstant,
    IDebugMemoryContext2** ppMemCxt

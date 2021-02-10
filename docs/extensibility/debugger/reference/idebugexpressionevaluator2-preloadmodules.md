@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6998b847d400c9eb5e999a7299f5bedec0982253
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948295"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Lädt die vom angegebenen Symbol Anbieter bezeichneten Module vorab.

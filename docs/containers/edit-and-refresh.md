@@ -3,18 +3,18 @@ title: Debuggen von Apps in einem lokalen Docker-Container | Microsoft-Dokumenta
 description: Erfahren Sie, wie Sie eine in einem lokalen Docker-Container ausgeführte App ändern, den Container über das Feature zum Bearbeiten und Aktualisieren aktualisieren und dann Haltepunkte für das Debuggen festlegen.
 ms.author: ghogen
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3eafb6f3ef345da4316fdbe5d6b96a25d7dc90a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867632"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debuggen von Apps in einem lokalen Docker-Container
 

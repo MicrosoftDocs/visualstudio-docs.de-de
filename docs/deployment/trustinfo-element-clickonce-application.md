@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945018"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;-Element (ClickOnce-Anwendung)
 Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendung auf dem Clientcomputer erforderlich sind.
@@ -89,7 +89,7 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      Erforderlich. Bezeichnet die Version der Berechtigung. Normalerweise ist dieser Wert `1`.
 
 ## <a name="ipermission"></a>IPermission
- Optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das- `IPermission` Element identifiziert vollständig eine Berechtigungs Klasse in der .NET Framework. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.
+ Dies ist optional. Dieses Element ist ein untergeordnetes Element des `PermissionSet` -Elements. Das- `IPermission` Element identifiziert vollständig eine Berechtigungs Klasse in der .NET Framework. Das `IPermission` -Element besitzt die folgenden Attribute, kann aber zusätzliche Attribute aufweisen, die den Eigenschaften der Berechtigungsklasse entsprechen. In der Security.config-Datei finden Sie Beispiele, mit denen Sie die Syntax einer bestimmten Berechtigung ermitteln können.
 
 - `class`
 
@@ -119,14 +119,14 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      In diesem Beispiel schränkt die Deklaration für <xref:System.Security.Permissions.EnvironmentPermission> die Anwendung auf das ausschließliche Lesen der Umgebungsvariablen USERNAME ein, während die Deklaration für <xref:System.Security.Permissions.FileDialogPermission> der Anwendung die uneingeschränkte Verwendung aller <xref:System.Windows.Forms.FileDialog> -Klassen erlaubt.
 
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
- Optional. Bezeichnet den allen Assemblys erteilten Berechtigungssatz. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.
+ Dies ist optional. Bezeichnet den allen Assemblys erteilten Berechtigungssatz. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.
 
 - `permissionSetReference`
 
      Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der die Standardberechtigung bildet. Der Berechtigungssatz wird im `PermissionSet` -Element deklariert.
 
 ## <a name="assemblyrequest"></a>assemblyRequest
- Optional. Bezeichnet die Berechtigungen für eine bestimmte Assembly. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.
+ Dies ist optional. Bezeichnet die Berechtigungen für eine bestimmte Assembly. Dieses Element ist ein untergeordnetes Element des `applicationRequestMinimum` -Elements und weist folgende Attribute auf.
 
 - `Name`
 
@@ -137,14 +137,14 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
      Erforderlich. Bezeichnet die ID des Berechtigungssatzes, der für diese Assembly erforderlich ist. Der Berechtigungssatz wird im `PermissionSet` -Element deklariert.
 
 ## <a name="requestedprivileges"></a>requestedPrivileges
- Optional. Dieses Element ist ein untergeordnetes Element des `security` -Elements und enthält das `requestedExecutionLevel` -Element. Dieses Element weist keine Attribute auf.
+ Dies ist optional. Dieses Element ist ein untergeordnetes Element des `security` -Elements und enthält das `requestedExecutionLevel` -Element. Dieses Element weist keine Attribute auf.
 
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel
- Optional. Bezeichnet die Sicherheitsstufe, die von der Anwendung für die Ausführung angefordert wird. Dieses Element hat keine untergeordneten Elemente und weist folgende Attribute auf.
+ Dies ist optional. Bezeichnet die Sicherheitsstufe, die von der Anwendung für die Ausführung angefordert wird. Dieses Element hat keine untergeordneten Elemente und weist folgende Attribute auf.
 
 - `Level`
 
-   Erforderlich. Bezeichnet die Sicherheitsstufe, die von der Anwendung angefordert wird. Mögliche Werte:
+   Erforderlich. Bezeichnet die Sicherheitsstufe, die von der Anwendung angefordert wird. Dabei sind folgende Werte möglich:
 
    `asInvoker`, es werden keine zusätzlichen Berechtigungsstufen angefordert. Für diese Stufe sind keine zusätzlichen Eingaben für die Vertrauensstellung erforderlich.
 
@@ -156,9 +156,9 @@ Beschreibt die Mindestsicherheitsberechtigungen, die zum Ausführen der Anwendun
 
 - `uiAccess`
 
-   Optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.
+   Dies ist optional. Gibt an, ob die Anwendung Zugriff auf geschützte Elemente der Benutzeroberfläche benötigt. Die Werte sind `true` und `false`, und der Standardwert ist „false“. Nur signierte Anwendungen sollten den Wert „true“ haben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung mehr Berechtigungen anfordert, als der Clientcomputer standardmäßig erteilt, fragt der Trust-Manager der Common Language Runtime beim Benutzer nach, ob er der Anwendung die höhere Vertrauensstellung einräumen möchte. Wenn er ablehnt, wird die Anwendung nicht ausgeführt; andernfalls wird sie mit den angeforderten Berechtigungen ausgeführt.
 
  Alle mithilfe von `defaultAssemblyRequest` und `assemblyRequest` angeforderten Berechtigungen werden ohne Nachfrage beim Benutzer erteilt, wenn das Bereitstellungsmanifest eine gültige Vertrauenslizenz aufweist.

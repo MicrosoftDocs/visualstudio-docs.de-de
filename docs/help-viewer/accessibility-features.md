@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7ada860eb82b6c391e04e7431d6625c876174654
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944354"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Barrierefreiheitsfunktionen von Help Viewer
 Microsoft ist bestrebt, seine Produkte und Dienste so benutzerfreundlich wie möglich zu gestalten. Dieses Thema enthält Informationen zu Funktionen, Produkten und Diensten, durch die Benutzer barrierefrei auf Microsoft Help Viewer und die dazugehörigen Funktionen zugreifen können.
@@ -34,7 +34,7 @@ Sie können die Breite des Navigations- oder Dokumentfensters ändern, indem Sie
 ## <a name="help-viewer-position"></a>Help Viewer-Position
 Sie können den Help Viewer neu anordnen, indem Sie die zugehörige Titelleiste an eine andere Position ziehen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Tastenkombinationen (Help Viewer)](../help-viewer/shortcut-keys.md)

@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: f43b3e529d7e56af7639df1118baa64f0d594e6c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+manager: jmartens
+ms.openlocfilehash: 768c19f78102bf19346867beda967a069c1d182e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844956"
 ---
 # <a name="windows-forms-designer-overview"></a>Übersicht über Windows Forms-Designer
 
@@ -35,7 +35,7 @@ Mit dem-Designer können Sie folgende Aktionen ausführen:
 - Wählen Sie mehrere Steuerelemente aus, indem Sie entweder **UMSCHALT** oder **STRG** auswählen, während Sie klicken. Wenn Sie **UMSCHALT** + Klick verwenden, ist das erste ausgewählte Steuerelement das bestimmende Steuerelement beim Ausrichten oder Bearbeiten der Größe. Bei Verwendung von **STRG** + Klick ist das zuletzt ausgewählte Steuerelement das bestimmende, sodass sich das bestimmende Steuerelement mit jedem neu hinzugefügten Steuerelement ändert. Alternativ können Sie mehrere Steuerelemente auswählen, indem Sie ein Auswahlrechteck um die Steuerelemente ziehen, die Sie auswählen möchten.
 
 > [!NOTE]
-> Verwenden Sie Windows Forms-Designer und nicht den Ressourcen-Editor, um Änderungen an der Ressourcendatei ( *. resx* ) eines Formulars vorzunehmen. Wenn Sie eine formularbasierte RESX-Datei bearbeiten, wird eine Warnung angezeigt, dass Änderungen, die Sie im Ressourcen-Editor vornehmen, verloren gehen können. Dies liegt daran, dass der Windows Forms-Designer die RESX-Datei generiert.
+> Verwenden Sie Windows Forms-Designer und nicht den Ressourcen-Editor, um Änderungen an der Ressourcendatei (*. resx*) eines Formulars vorzunehmen. Wenn Sie eine formularbasierte RESX-Datei bearbeiten, wird eine Warnung angezeigt, dass Änderungen, die Sie im Ressourcen-Editor vornehmen, verloren gehen können. Dies liegt daran, dass der Windows Forms-Designer die RESX-Datei generiert.
 
 ## <a name="see-also"></a>Weitere Informationen
 

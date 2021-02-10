@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e041c692a833b7d0a1891c078388a3f5b2d11e4
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 1f898bcb040b5b46144fd7c4f3fc2260b480872d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945941"
 ---
 # <a name="launch-based-attachment"></a>Start basierte Anlage
 Die Start basierte Anlage zu einem Programm erfolgt automatisch. Wenn der Prozess, in dem das Programm gehostet wird, von der SDM gestartet wird, folgt die Start basierte Anlage einem Pfad, der dem der manuellen Anlage-Methode ähnelt. Weitere Informationen finden [Sie unter Anfügen an das Programm](../../extensibility/debugger/attaching-to-the-program.md).

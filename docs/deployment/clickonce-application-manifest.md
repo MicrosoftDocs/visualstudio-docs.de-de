@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccd8389859de3ffce7b04e2da648b2ac2e807a79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936183"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce-Anwendungsmanifest
 Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifest ist eine XML-Datei, in der eine Anwendung beschrieben wird, die mithilfe von bereitgestellt wird [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
@@ -36,10 +36,10 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs
 | [\<trustInfo>-Element](../deployment/trustinfo-element-clickonce-application.md) | Gibt die Sicherheitsanforderungen der Anwendung an. | Keine |
 | [\<entryPoint>-Element](../deployment/entrypoint-element-clickonce-application.md) | Erforderlich. Identifiziert den Einstiegspunkt für den Anwendungscode. | `name` |
 | [\<dependency>-Element](../deployment/dependency-element-clickonce-application.md) | Erforderlich. Gibt jede Abhängigkeit an, die für die Ausführung der Anwendung erforderlich ist. Gibt optional Assemblys an, die vorinstalliert werden müssen. | Keine |
-| [\<file>-Element](../deployment/file-element-clickonce-application.md) | Optional. Identifiziert jede nicht Assemblydatei, die von der Anwendung verwendet wird. Kann COM-Isolationsdaten (Component Object Model) enthalten, die der Datei zugeordnet sind. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation>-Element](../deployment/fileassociation-element-clickonce-application.md) | Optional. Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<file>-Element](../deployment/file-element-clickonce-application.md) | Dies ist optional. Identifiziert jede nicht Assemblydatei, die von der Anwendung verwendet wird. Kann COM-Isolationsdaten (Component Object Model) enthalten, die der Datei zugeordnet sind. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation>-Element](../deployment/fileassociation-element-clickonce-application.md) | Dies ist optional. Gibt eine Dateierweiterung an, die der Anwendung zugeordnet werden soll. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs Manifest-Datei identifiziert eine mithilfe von bereitgestellte Anwendung [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Weitere Informationen zu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] finden Sie unter [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md).
 
 ## <a name="file-location"></a>Dateispeicherort
@@ -116,5 +116,5 @@ Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungs
 </Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

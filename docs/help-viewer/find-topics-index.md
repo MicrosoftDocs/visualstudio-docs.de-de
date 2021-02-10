@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 34eb02621c42282fdd5ec1656edcb175351a1f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944223"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Suchen Sie Themen mithilfe des Help Viewer-Indexes
 
@@ -78,7 +78,7 @@ Wenn Sie keinen Eintrag zu dem von Ihnen eingegebenen Wort oder Satz finden, ver
 
     Wenn Sie beispielsweise den Begriff „erstellen“ eingegeben haben, versuchen Sie es stattdessen mit „anlegen“.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Suchen nach Themen im Inhaltsverzeichnis](../help-viewer/find-topics-toc.md)
 - [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)

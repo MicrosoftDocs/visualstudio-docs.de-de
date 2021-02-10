@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d8e04b7549d1b6a458f0993804946502f55f0165
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942281"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Gewusst wie: Hinzufügen eines Dialog Feld-Start Programms zu einer Menü Bandgruppe
   Sie können einer beliebigen Gruppe auf einem Menüband ein Dialogfeld-Start Programm hinzufügen. Ein Dialogfeld-Start Programm ist ein kleines Symbol, das in einer Gruppe angezeigt wird. Benutzer klicken auf dieses Symbol, um verwandte Dialogfelder oder Aufgabenbereiche zu öffnen, die weitere Optionen für die Gruppe bereitstellen.
@@ -37,7 +37,7 @@ ms.locfileid: "96844932"
 
      Fügen Sie dem- <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> Ereignis der-Gruppe Code hinzu, um ein benutzerdefiniertes oder integriertes Dialogfeld zu öffnen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Menüband](../vsto/ribbon-overview.md)
 - [Zugreifen auf das Menüband zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Office-Entwicklungs Beispiele und Exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)

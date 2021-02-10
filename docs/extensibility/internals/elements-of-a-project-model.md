@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f786ae8e0725c7c1b6f0683a779a65f015ac2a75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946747"
 ---
 # <a name="elements-of-a-project-model"></a>Elemente eines Projekt Modells
 Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] haben eine grundlegende Struktur gemeinsam: das Projekt Modell für den Projekttyp. In Ihrem Projekt Modell, bei dem es sich um das VSPackage handelt, das Sie entwickeln, erstellen Sie Objekte, die ihren Entwurfsentscheidungen entsprechen und zusammen mit der von der IDE bereitgestellten globalen Funktionalität funktionieren. Obwohl Sie steuern, wie ein Projekt Element beibehalten wird, Steuern Sie z. b. die Benachrichtigung, dass eine Datei beibehalten werden muss. Wenn ein Benutzer den Fokus auf ein geöffnetes Projekt Element setzt und im Menü **Datei** in der Menüleiste die Option **Speichern** auswählt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , muss der Projekttyp Code den Befehl aus der IDE abfangen, die Datei persistent speichern und die Benachrichtigung an die IDE zurücksenden, dass die Datei nicht mehr geändert wird.
@@ -42,7 +42,7 @@ Die Schnittstellen und Implementierungen aller Projekte in [!INCLUDE[vsprvs](../
 
   Projekte können Befehle unterstützen und müssen daher die- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle implementieren, um am Befehls Routing über die Befehls Kontext-GUIDs teilnehmen zu können.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Verwenden von HierUtil7-Projektklassen zum Implementieren eines Projekt Typs (C++)](/previous-versions/bb166212(v=vs.100))
 - [Projekt Modell-Kernkomponenten](../../extensibility/internals/project-model-core-components.md)

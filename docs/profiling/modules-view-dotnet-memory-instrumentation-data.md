@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6a0a42fdc83891b96bb3fe036ebf7515e3d6a42
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4ffa80d938556c33dc8eafec3068aef257219071
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879812"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Modulansicht: .NET-Speicherinstrumentierungsdaten
 In der Modulansicht der .NET-Speicherbelegungsdaten, die mithilfe der Instrumentationsmethode erfasst wurden, werden die Arbeitsspeicher- und Zeitsteuerungsdaten nach den Modulen gruppiert, die während der Profilerstellung ausgeführt wurden. Die Profilerstellungsdaten für die Funktionen des Moduls werden unter dem Modulknoten aufgeführt.

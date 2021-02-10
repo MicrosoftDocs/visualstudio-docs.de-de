@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating files at run time
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937952"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 
@@ -109,7 +109,7 @@ Der Language-Parameter hängt von der Sprache des Projekts ab.
 
 ### <a name="plain-content"></a>Reiner Inhalt
 
-Bearbeiten Sie die **TT** -Datei so, dass Sie den Text enthält, der von der Anwendung generiert werden soll. Zum Beispiel:
+Bearbeiten Sie die **TT** -Datei so, dass Sie den Text enthält, der von der Anwendung generiert werden soll. Beispiel:
 
 ```html
 <html><body>
@@ -121,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Eingebetteter Programmcode
 
-Sie können Programmcode zwischen `<#` und einfügen `#>` . Zum Beispiel:
+Sie können Programmcode zwischen `<#` und einfügen `#>` . Beispiel:
 
 ```csharp
 <table>
@@ -435,8 +435,8 @@ Entwurfszeit Vorlagen: Wenn Sie eine Vorlage verwenden möchten, um Code zu gene
 
 Lauf Zeit Vorlagen können in jeder Anwendung verwendet werden, in der die Vorlagen und deren Inhalt zur Kompilierzeit bestimmt werden. Wenn Sie jedoch eine Visual Studio-Erweiterung schreiben möchten, die Text aus Vorlagen generiert, die zur Laufzeit geändert werden, finden Sie weitere Informationen unter [Aufrufen von Text Transformation in einer vs-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Code Generierung und T4-Text Vorlagen](../modeling/code-generation-and-t4-text-templates.md)
+- [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
 - [T4-Toolbox](http://olegsych.com/T4Toolbox/)

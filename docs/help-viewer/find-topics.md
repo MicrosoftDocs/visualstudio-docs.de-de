@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944133"
 ---
 # <a name="how-to-search-for-topics"></a>Vorgehensweise: Suchen nach Themen
 
@@ -31,7 +31,7 @@ Klicken Sie im **Help Viewer**-Fenster auf die Registerkarte **Suche**, oder dr�
     > [!NOTE]
     > Im Dialogfeld **Viewer-Optionen** können Sie zusätzliche Einstellungen angeben, z.B. die maximale Anzahl der Suchergebnisse, die gleichzeitig angezeigt werden sollen, oder ob englischsprachige Inhalte enthalten sein dürfen, wenn das primäre Gebietsschema nicht Englisch ist.
 
-3. Drücken Sie die **Eingabe** Taste.
+3. Drücken Sie die **EINGABETASTE**.
 
      Eine Suche gibt standardmäßig maximal 200 Treffer zurück. Diese werden im Suchergebnisbereich angezeigt. Je nach Inhalt werden möglicherweise zusätzliche Versionsinformationen zu jedem Treffer angezeigt.
 
@@ -77,7 +77,7 @@ Der Suchalgorithmus wendet bestimmte Kriterien an, um einen höheren oder niedri
 
 Häufig auftretende Wörter oder Ziffern, die manchmal als Stoppwörter bezeichnet werden, werden bei der Volltextsuche automatisch ignoriert. Wenn Sie beispielsweise nach dem Ausdruck „übergeben durch“ suchen, zeigen die Suchergebnisse Themen an, die das Wort „übergeben“ enthalten, ignorieren aber das Wort „durch“.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Logische Operatoren in Suchausdrücken](../help-viewer/logical-operators-search-expressions.md)
 - [Gewusst wie: Suchen von Themen im Index](../help-viewer/find-topics-index.md)

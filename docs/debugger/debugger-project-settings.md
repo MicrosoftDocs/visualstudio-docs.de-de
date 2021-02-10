@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3a5ba7a1e215fddd5b1127859948496e9b4e1d
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: a3f517e54ba96ecf81b1ac533cf734f2b0a0eb5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873040"
 ---
 # <a name="debugger-project-settings"></a>Debuggerprojekteinstellungen
 Der Debugvorgang wird außerdem von bestimmten Projekteinstellungen beeinflusst. Diese Einstellungen bestimmen beispielsweise Folgendes: Welche Verzeichnisse vom Debugger durchsucht werden, mit welchem Befehl bzw. welchen Befehlsargumenten das Programm gestartet wird und welche Art von Debuginformationen für das Programm erstellt werden. Sie können diese Einstellungen im Dialogfeld **Eigenschaftenseiten** ändern.

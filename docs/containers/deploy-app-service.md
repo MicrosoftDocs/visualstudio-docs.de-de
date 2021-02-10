@@ -3,18 +3,18 @@ title: Bereitstellen eines ASP.NET Core-Containers in Azure App Service
 description: Erfahren Sie, wie Sie Visual Studio-Containertools zum Bereitstellen einer ASP.NET Core-Web-App in einem Docker-Container in Azure App Service verwenden.
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: c0f45f14bc8b363a0c7c4e298effa67c5fccde18
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859644"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Bereitstellen eines ASP.NET Core-Containers in Azure App Service mit Visual Studio
 
@@ -42,7 +42,7 @@ Die folgenden Schritte führen Sie durch die Erstellung einer einfachen ASP.NET 
 1. Wählen Sie im Menü von Visual Studio **Datei > Neu > Projekt** aus.
 2. Wählen Sie im Abschnitt **Vorlagen** des Dialogfelds **Neues Projekt** die Option **Visual C# > Web** aus.
 3. Wählen Sie **ASP.NET Core-Webanwendung** aus.
-4. Weisen Sie Ihrer neuen Anwendung einen Namen zu (oder übernehmen Sie den Standardnamen), und wählen Sie **OK**aus.
+4. Weisen Sie Ihrer neuen Anwendung einen Namen zu (oder übernehmen Sie den Standardnamen), und wählen Sie **OK** aus.
 5. Wählen Sie **Webanwendung** aus.
 6. Aktivieren Sie das Kontrollkästchen **Docker-Unterstützung aktivieren**.
 7. Wählen Sie den Containertyp **Linux** aus, und klicken Sie auf **OK**. Windows-Container werden nicht für die Bereitstellung in Azure App Service unterstützt.
@@ -50,7 +50,7 @@ Die folgenden Schritte führen Sie durch die Erstellung einer einfachen ASP.NET 
 ::: moniker range=">= vs-2019"
 1. Wählen Sie im Startfenster von Visual Studio die Option **Neues Projekt erstellen**.
 1. Wählen Sie **ASP.NET Core-Webanwendung** und dann **Weiter** aus.
-1. Weisen Sie Ihrer neuen Anwendung einen Namen zu (oder übernehmen Sie den Standardnamen), und wählen Sie **Erstellen**aus.
+1. Weisen Sie Ihrer neuen Anwendung einen Namen zu (oder übernehmen Sie den Standardnamen), und wählen Sie **Erstellen** aus.
 1. Wählen Sie eine **Webanwendung** aus.
 1. Wählen Sie im Kontrollkästchen **Für HTTPS konfigurieren** aus, ob Sie SSL unterstützen möchten.
 1. Aktivieren Sie das Kontrollkästchen **Docker-Unterstützung aktivieren**.
