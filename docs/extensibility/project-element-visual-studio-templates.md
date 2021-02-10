@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959453"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project-Element (Visual Studio-Vorlagen)
 Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden sollen.
@@ -44,9 +44,9 @@ Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden soll
 ## <a name="attributes-and-elements"></a>Attribute und Elemente
  In den folgenden Abschnitten werden attribute-Elemente sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|attribute|Beschreibung|
 |---------------|-----------------|
 |`File`|Erforderliches Attribut.<br /><br /> Gibt den Namen der Projektdatei in der *ZIP* -Datei der Vorlage an.|
 |`ReplaceParameters`|Optionales Attribut.<br /><br /> Ein boolescher Wert, der angibt, ob die Projektdatei Parameterwerte aufweist, die beim Erstellen eines Projekts aus der Vorlage ersetzt werden müssen. Der Standardwert ist `false`.|
@@ -62,11 +62,11 @@ Gibt die Dateien oder Verzeichnisse an, die dem Projekt hinzugefügt werden soll
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Erforderliches Element.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `Project` ist ein optionales untergeordnetes Element von `TemplateContent`.
 
  Das `Project` -Element wird zur Angabe eines Projekts verwendet und ist daher nur in Projektvorlagen gültig.

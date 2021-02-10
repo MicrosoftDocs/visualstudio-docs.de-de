@@ -18,21 +18,21 @@ helpviewer_keywords:
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: c822b6e8cbce1279a14c5a947d70208fc7f5480a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958374"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Seite "Kompilieren", Projekt-Designer (Visual Basic)
 
 Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranweisungen festzulegen. Sie können auch erweiterte Compileroptionen und Präbuild- oder Postbuildereignisse auf dieser Seite angeben.
 
-Um auf die Seite **Kompilieren** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe** ) im **Projektmappen-Explorer** . Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Sobald der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** .
+Um auf die Seite **Kompilieren** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe**) im **Projektmappen-Explorer**. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Sobald der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -45,7 +45,7 @@ Die folgenden Eigenschaften ermöglichen es Ihnen, die anzuzeigende bzw. zu änd
 
 **Konfiguration**
 
-Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Die Einstellungen sind **Debuggen** (Standard), **Freigeben** oder **Alle Konfigurationen** . Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md) und [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).
+Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Die Einstellungen sind **Debuggen** (Standard), **Freigeben** oder **Alle Konfigurationen**. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md) und [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).
 
 **Plattform**
 
@@ -57,19 +57,19 @@ Mithilfe der folgenden Einstellungen können Sie die Compilerkonfigurationsoptio
 
 **Buildausgabepfad**
 
-Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** , um einen Pfad auszuwählen. Beachten Sie, dass der Pfad relativ ist. Bei der Eingabe eines absoluten Pfads wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet „bin\Debug\ oder bin\Release\\“.
+Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder klicken Sie auf die Schaltfläche **Durchsuchen**, um einen Pfad auszuwählen. Beachten Sie, dass der Pfad relativ ist. Bei der Eingabe eines absoluten Pfads wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet „bin\Debug\ oder bin\Release\\“.
 
 Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Mit dem Befehl **Erstellen** im Menü **Debuggen** (F5) wird der Build unabhängig vom angegebenen **Ausgabepfad** am Debugspeicherort abgelegt. Mit dem Befehl **Erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben.
 
 **Option Explicit**
 
-Gibt an, ob implizite Deklaration von Variablen zugelassen werden. Wählen Sie **Ein** , um die explizite Variablendeklaration festzulegen. Dadurch meldet der Compiler Fehler, wenn Variablen nicht deklariert werden, bevor sie verwendet werden. Wählen Sie **Aus** , um implizite Deklaration von Variablen zuzulassen.
+Gibt an, ob implizite Deklaration von Variablen zugelassen werden. Wählen Sie **Ein**, um die explizite Variablendeklaration festzulegen. Dadurch meldet der Compiler Fehler, wenn Variablen nicht deklariert werden, bevor sie verwendet werden. Wählen Sie **Aus**, um implizite Deklaration von Variablen zuzulassen.
 
 Diese Einstellung entspricht der Compileroption [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
 Wenn eine Quellcodedatei eine [Option Explicit-Anweisung](/dotnet/visual-basic/language-reference/statements/option-explicit-statement) enthält, setzt der Wert `On` oder `Off` in der Anweisung die Einstellung **Option Explicit** auf der **Seite „Kompilieren“** außer Kraft.
 
-Wenn Sie ein neues Projekt erstellen, wird die **Option Explicit** -Einstellung in der Seite **Kompilieren** auf den Wert der **Option Explicit** -Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen** . Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen** , und klicken Sie dann auf **VB Defaults** . Die ursprüngliche Standardeinstellung **Option Explicit** in **VB Defaults** ist **Ein** .
+Wenn Sie ein neues Projekt erstellen, wird die **Option Explicit**-Einstellung in der Seite **Kompilieren** auf den Wert der **Option Explicit**-Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Explicit** in **VB Defaults** ist **Ein**.
 
 Das Festlegen der **Option Explicit** auf `Off` ist eine bewährte Methode. Sie könnten den Namen einer Variable an einem oder mehreren Orten falsch buchstabieren, wodurch unerwartete Ergebnisse auftreten würden, wenn das Programm ausgeführt wird.
 
@@ -89,11 +89,11 @@ Ein Objekt wird spät gebunden, wenn es einer Eigenschaft oder Methode einer Var
 
 Implizite Objekttypfehler treten auf, wenn ein entsprechender Typ nicht für eine deklarierte Variable hergeleitet werden kann, also wir ein Typ von `Object` hergeleitet. Dies tritt vorwiegend auf, wenn Sie eine `Dim`-Anweisung verwenden, um eine Variable ohne die Verwendung einer `As`-Klausel deklarieren und `Option Infer` deaktiviert ist. Weitere Informationen finden Sie unter [Option Strict-Anweisung](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Infer-Anweisung](/dotnet/visual-basic/language-reference/statements/option-infer-statement) und in der [Visual Basic-Sprachspezifikation](/dotnet/visual-basic/reference/language-specification).
 
-Die **Option Strict** -Einstellung entspricht der [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict)-Compileroption.
+Die **Option Strict**-Einstellung entspricht der [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict)-Compileroption.
 
 Wenn eine Quellcodedatei eine [Option Strict-Anweisung](/dotnet/visual-basic/language-reference/statements/option-strict-statement) enthält, setzt der Wert `On` oder `Off` in der Anweisung die Einstellung **Option Strict** auf der **Seite „Kompilieren“** außer Kraft.
 
-Wenn Sie ein Projekt erstellen, wird die **Option Strict** -Einstellung in der Seite **Kompilieren** auf den Wert der **Option Strict** -Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen** . Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen** , und klicken Sie dann auf **VB Defaults** . Die ursprüngliche Standardeinstellung **Option Strict** in **VB Defaults** ist **Ein** .
+Wenn Sie ein Projekt erstellen, wird die **Option Strict**-Einstellung in der Seite **Kompilieren** auf den Wert der **Option Strict**-Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Strict** in **VB Defaults** ist **Ein**.
 
 **Einzelne Option Strict-Warnungen**
 
@@ -107,7 +107,7 @@ Der Abschnitt **Warnungskonfigurationen** auf der Seite **Kompilieren** verfügt
 
 Wenn Sie **Option Strict** auf **Ein** festlegen, werden alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt. Wenn Sie **Option Strict** auf **Aus** festlegen werden alle drei Einstellungen auf **Keine** festgelegt.
 
-Sie können individuell jede Warnungskonfigurationseinstellung auf **Keine** , **Warnung** oder **Fehler** festlegen. Wenn alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt sind, erscheint `On` im `Option strict`-Feld. Wenn alle drei Einstellungen auf **Keine** festgelegt sind, erscheint `Off` im Feld. Für jede andere Kombination dieser Einstellungen erscheint **(benutzerdefiniert)** .
+Sie können individuell jede Warnungskonfigurationseinstellung auf **Keine**, **Warnung** oder **Fehler** festlegen. Wenn alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt sind, erscheint `On` im `Option strict`-Feld. Wenn alle drei Einstellungen auf **Keine** festgelegt sind, erscheint `Off` im Feld. Für jede andere Kombination dieser Einstellungen erscheint **(benutzerdefiniert)**.
 
 **Option Compare**
 
@@ -117,7 +117,7 @@ Diese Einstellung entspricht der Compileroption [/optioncompare](/dotnet/visual-
 
 Wenn eine Quellcodedatei eine [Option Compare-Anweisung](/dotnet/visual-basic/language-reference/statements/option-compare-statement) enthält, setzt der Wert `Binary` oder `Text` in der Anweisung die Einstellung **Option Compare** auf der **Seite „Kompilieren“** außer Kraft.
 
-Wenn Sie ein Projekt erstellen, wird die **Option Compare** -Einstellung in der Seite **Kompilieren** auf den Wert der **Option Compare** -Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen** . Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen** , und klicken Sie dann auf **VB Defaults** . Die ursprüngliche Standardeinstellung **Option Compare** in **VB Defaults** ist **Binär** .
+Wenn Sie ein Projekt erstellen, wird die **Option Compare**-Einstellung in der Seite **Kompilieren** auf den Wert der **Option Compare**-Einstellung im Dialogfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Compare** in **VB Defaults** ist **Binär**.
 
 **Option Infer**
 
@@ -127,11 +127,11 @@ Diese Einstellung entspricht der Compileroption [/optioninfer](/dotnet/visual-ba
 
 Wenn eine Quellcodedatei eine [Option Infer-Anweisung](/dotnet/visual-basic/language-reference/statements/option-infer-statement) enthält, setzt der Wert `On` oder `Off` in der Anweisung die Einstellung **Option Infer** auf der **Seite „Kompilieren“** außer Kraft.
 
-Wenn Sie ein neues Projekt erstellen, ist die Einstellung **Option Infer** auf der Registerkarte **Kompilieren** auf die Einstellung **Option Infer** im Textfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen** . Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen** , und klicken Sie dann auf **VB Defaults** . Die ursprüngliche Standardeinstellung **Option Infer** in **VB Defaults** ist **Ein** .
+Wenn Sie ein neues Projekt erstellen, ist die Einstellung **Option Infer** auf der Registerkarte **Kompilieren** auf die Einstellung **Option Infer** im Textfeld **Optionen** festgelegt. Um die Einstellung in diesem Dialogfeld anzuzeigen oder zu ändern, klicken Sie im Menü **Extras** auf **Optionen**. Erweitern Sie im Dialogfeld **Optionen****Projekte und Lösungen**, und klicken Sie dann auf **VB Defaults**. Die ursprüngliche Standardeinstellung **Option Infer** in **VB Defaults** ist **Ein**.
 
 **Ziel-CPU**
 
-Gibt den Prozessor an, für den die Ausgabedatei konfiguriert ist. Geben Sie für jeden Intel-kompatiblen 32-Bit-Prozessor **x86** , für jeden Intel-kompatiblen 64-Bit-Prozessor **x64** und für ARM-Prozessoren **ARM** oder **Any CPU** ein, um anzugeben, dass jeder Prozessor zulässig ist. **Any CPU** (Beliebige CPU) ist der Standardwert für neue Projekte, da die Anwendung hiermit auf der größten Anzahl von Hardwaretypen ausgeführt werden kann.
+Gibt den Prozessor an, für den die Ausgabedatei konfiguriert ist. Geben Sie für jeden Intel-kompatiblen 32-Bit-Prozessor **x86**, für jeden Intel-kompatiblen 64-Bit-Prozessor **x64** und für ARM-Prozessoren **ARM** oder **Any CPU** ein, um anzugeben, dass jeder Prozessor zulässig ist. **Any CPU** (Beliebige CPU) ist der Standardwert für neue Projekte, da die Anwendung hiermit auf der größten Anzahl von Hardwaretypen ausgeführt werden kann.
 
 Weitere Informationen finden Sie unter [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
@@ -151,9 +151,9 @@ Dieses Kontrollkästchen ist nur verfügbar, wenn die folgenden Bedingungen zutr
 
 **Warnungskonfigurationen**
 
-In dieser Tabelle sind Buildbedingungen und die jeweils entsprechenden Benachrichtigungsstufen **Keine** , **Warnung** oder **Fehler** aufgeführt.
+In dieser Tabelle sind Buildbedingungen und die jeweils entsprechenden Benachrichtigungsstufen **Keine**, **Warnung** oder **Fehler** aufgeführt.
 
-Während der Kompilierung werden standardmäßig alle Compilerwarnungen der Aufgabenliste hinzugefügt. Wählen Sie **Alle Warnungen deaktivieren** aus, um den Compiler anzuweisen, keine Warnungen oder Fehler auszugeben. Wählen Sie **Alle Warnungen als Fehler behandeln** , wenn Sie möchten, dass der Compiler Warnungen als Fehler behandelt, die behoben werden müssen.
+Während der Kompilierung werden standardmäßig alle Compilerwarnungen der Aufgabenliste hinzugefügt. Wählen Sie **Alle Warnungen deaktivieren** aus, um den Compiler anzuweisen, keine Warnungen oder Fehler auszugeben. Wählen Sie **Alle Warnungen als Fehler behandeln**, wenn Sie möchten, dass der Compiler Warnungen als Fehler behandelt, die behoben werden müssen.
 
 **Alle Warnungen deaktivieren**
 
@@ -187,7 +187,7 @@ Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Buildereignisse** z
 
 **Erweiterte Kompilierungsoptionen**
 
-Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Erweiterte Compileroptionen** zuzugreifen. Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** , um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte. Weitere Informationen finden Sie im [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
+Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Erweiterte Compileroptionen** zuzugreifen. Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte. Weitere Informationen finden Sie im [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="see-also"></a>Siehe auch
 

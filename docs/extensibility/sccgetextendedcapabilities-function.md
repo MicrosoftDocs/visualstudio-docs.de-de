@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1256c9110fe538b4a5d52b165c71216b6537f2c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958413"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Sccgetextendedfunctions-Funktion
 Diese Funktion gibt zusätzliche Funktionen zurück, die vom Quellcodeverwaltungs-Plug-in unterstützt werden.

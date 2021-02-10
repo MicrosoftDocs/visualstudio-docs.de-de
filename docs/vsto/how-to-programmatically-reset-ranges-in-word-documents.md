@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, resetting in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b87d157344f1302d4b1ee910ee2dda449bbea5a1
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 562b4dab6c26af12760190b01ff460c7080a3bb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958777"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Gewusst wie: Programm gesteuertes Zurücksetzen von Bereichen in Word-Dokumenten
   Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> , um die Größe eines vorhandenen Bereichs in einem Microsoft Office Word-Dokument zu ändern.
