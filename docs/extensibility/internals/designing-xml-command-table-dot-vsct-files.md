@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963496"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML-Befehls Tabellen Dateien (vsct-Dateien) entwerfen
 Eine XML-Befehls Tabellen Datei (*vsct*) beschreibt das Layout und die Darstellung von Befehls Elementen für ein VSPackage. Befehls Elemente enthalten Schaltflächen, Kombinations Felder, Menüs, Symbolleisten und Gruppen von Befehls Elementen. In diesem Artikel werden XML-Befehls Tabellen Dateien, deren Auswirkungen auf Befehls Elemente und Menüs und deren Erstellung beschrieben.
@@ -123,5 +123,5 @@ Sie können den *vsct.exe* Compiler verwenden, um eine vorhandene *CTO* -Datei i
 
  Führen Sie das Tool mit dem Befehl " **/Reset**" aus. Beachten Sie, dass dieses Tool alle registrierten VSPackages, die normalerweise nicht mit installiert wurden, aus der experimentellen Hive entfernt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)

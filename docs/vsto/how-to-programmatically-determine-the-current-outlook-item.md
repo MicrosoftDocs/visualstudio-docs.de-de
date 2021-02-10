@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], current item
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 10b8bd8103e80040519b9e3c5546f892da326202
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 720028528c036bf4485ca529f735fd26b1ff6e9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963834"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Gewusst wie: Programm gesteuertes bestimmen des aktuellen Outlook-Elements
   Dieses Beispiel verwendet das `Explorer.SelectionChange` -Ereignis, um den Namen des aktuellen Ordners und einige Informationen über das ausgewählte Element anzuzeigen. Der Code zeigt dann das ausgewählte Element an.
