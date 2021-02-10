@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29400e82dcd7b0d5cd9062679610b50bfaab191d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528010"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971686"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Veröffentlichungs-Assistent (Office-Entwicklung in Visual Studio)
   Verwenden Sie den **Veröffentlichungs-Assistenten** , um Projektmappendateien an einen angegebenen Speicherort zu kopieren, die Manifest-Dateien zu erstellen und ein Setup Programm zu erstellen.

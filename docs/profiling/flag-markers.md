@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: fc7e8d9a7c39a0bb7953c309adb9f2abb1c0dc43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916714"
 ---
 # <a name="flag-markers"></a>Flag-Marker
 Ein Flag-Marker stellt ein Ereignis dar, das zu einem bestimmten Zeitpunkt in einer App aufgetreten ist. Ein Flag kann verschiedene Anwendungsereignisse darstellen. Ein Flag kann z.B. die Planung eines bestimmten Arbeitselements oder eine ausgelöste Ausnahme anzeigen. Runtimes wie die Task Parallel Library können auch Flags generieren.

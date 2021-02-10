@@ -14,22 +14,22 @@ helpviewer_keywords:
 - ListObject control, validating data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e60f19da0d36c5a57f0151318d6d76b43a80de37
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: dbb6582f6211f851b4734f4e9a074ce5c0bd8d8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961377"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Gewusst wie: Validieren von Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugefügt wird
   Benutzer können einem <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement, das an Daten gebunden ist, neue Zeilen hinzufügen. Sie können die Daten des Benutzers überprüfen, bevor Sie Änderungen in einem Commit an die Datenquelle übertragen.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="data-validation"></a>Datenüberprüfung
+## <a name="data-validation"></a>Datenvalidierung
  Sobald einem <xref:Microsoft.Office.Tools.Excel.ListObject> , das an Daten gebunden ist, eine Zeile hinzugefügt wird, wird das <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> -Ereignis ausgelöst. Sie können dieses Ereignis behandeln, um Ihre Datenüberprüfung durchzuführen. Wenn die Anwendung beispielsweise erfordert, dass der Datenquelle nur Mitarbeiter zwischen 18 und 65 hinzugefügt werden können, müssen Sie überprüfen, ob das eingegebene Alter innerhalb dieses Bereichs liegt, bevor die Zeile hinzugefügt wird.
 
 > [!NOTE]

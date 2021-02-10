@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f1a6abfbafcbafb9daa52fdc6af85156700efef7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948946"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint-Lösungen Debuggen
   SharePoint-Lösungen können mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers gedebuggt werden. Wenn Sie das Debuggen starten, werden [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Projektdateien auf dem SharePoint-Server bereitgestellt, und anschließend wird eine Instanz der SharePoint-Website im Webbrowser geöffnet. In den folgenden Abschnitte wird erklärt, wie SharePoint-Anwendungen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gedebuggt werden.
@@ -150,5 +150,5 @@ ms.locfileid: "94672859"
 
  Weitere Informationen zu anderen SharePoint-Registrierungs Schlüsseln finden Sie unter [Debugerweiterungen für die SharePoint-Tools in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Problembehandlung bei SharePoint-Lösungen](../sharepoint/troubleshooting-sharepoint-solutions.md)

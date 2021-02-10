@@ -5,17 +5,17 @@ ms.date: 05/12/2020
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: dcc5d9746a556af54ea206528fcb9a402e25d700
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916586"
 ---
 Visual Studio kann Python-Anwendungen sowohl lokal als auch remote (siehe [Remotedebuggen](../../../debugger/remote-debugging.md)) auf einem Windows-Computer starten und debuggen. Mithilfe der [debugpy-Bibliothek](https://pypi.org/project/debugpy/) kann das Remotedebuggen auch auf einem anderen Betriebssystem, einem anderen Gerät oder in einer anderen Python-Implementierung als CPython ausgeführt werden.
 

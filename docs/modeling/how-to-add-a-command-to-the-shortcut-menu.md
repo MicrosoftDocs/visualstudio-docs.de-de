@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 063c0a5cfcf5136e53750e4405e8619bf3154ee2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963301"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Gewusst wie: Hinzufügen eines Befehls zum Kontextmenü
 
@@ -141,7 +141,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
 2. Suchen Sie das `ProvideMenuResource`-Attribut.
 
-3. Erhöhen Sie den `version`-Parameter des Attributs. Es ist der zweite Parameter. Auf Wunsch können Sie den Parameternamen explizit angeben, um sich an den Zweck zu erinnern. Zum Beispiel:
+3. Erhöhen Sie den `version`-Parameter des Attributs. Es ist der zweite Parameter. Auf Wunsch können Sie den Parameternamen explizit angeben, um sich an den Zweck zu erinnern. Beispiel:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -161,7 +161,7 @@ Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.Comma
 
 2. Erstellen Sie in **dslpackage** einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs` .
 
-3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
+3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Beispiel:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -359,7 +359,7 @@ Die **OnStatus-Methode wird nicht aufgerufen**:
 
 - Stellen Sie sicher, dass frühere Versionen des Pakets deinstalliert wurden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Gewusst wie: Ändern eines Standardmenü Befehls](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

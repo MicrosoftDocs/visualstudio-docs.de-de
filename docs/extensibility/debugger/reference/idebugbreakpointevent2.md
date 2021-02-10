@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59bdef49f5c7b9c4dc345ba1862f3f08042428e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2076f4c98748d33542b4457f236711c38936aea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952303"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 Die Debug-Engine (de) sendet diese Schnittstelle an den Sitzungs-Debug-Manager (SDM), wenn ein Programm an einem Haltepunkt angehalten wird.

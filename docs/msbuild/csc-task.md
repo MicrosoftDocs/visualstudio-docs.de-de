@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901340"
 ---
 # <a name="csc-task"></a>Csc-Aufgabe
 
-Umschließt *csc.exe* und erzeugt ausführbare Dateien ( *EXE* -Dateien), Dynamic Link Libraries ( *DLL* -Dateien) und Codemodule ( *NETMODULE* -Dateien). Weitere Informationen zu *csc.exe* finden Sie unter [C#-Compileroptionen](/dotnet/csharp/language-reference/compiler-options/index).
+Umschließt *csc.exe* und erzeugt ausführbare Dateien (*EXE*-Dateien), Dynamic Link Libraries (*DLL*-Dateien) und Codemodule (*NETMODULE*-Dateien). Weitere Informationen zu *csc.exe* finden Sie unter [C#-Compileroptionen](/dotnet/csharp/language-reference/compiler-options/index).
 
 ## <a name="parameters"></a>Parameter
 
@@ -67,7 +67,7 @@ In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.
 | `Optimize` | Optionaler `Boolean`-Parameter.<br /><br /> Wenn der Wert `true` ist, werden Optimierungen aktiviert. Wenn der Wert `false` ist, werden Optimierungen deaktiviert. Weitere Informationen finden Sie unter [-optimize (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option). |
 | `OutputAssembly` | Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Namen der Ausgabedatei an. Weitere Informationen finden Sie unter [-out (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option). |
 | `OutputRefAssembly` | Optionaler `String`-Parameter.<br /><br /> Gibt den Namen der ausgegebenen Referenzassemblydatei an. Weitere Informationen finden Sie unter [-refout (C# Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option). |
-| `PdbFile` | Optionaler `String`-Parameter.<br /><br /> Gibt den Dateinamen der Debuginformationen an. Der Standardname ist der Ausgabedateiname mit einer *PDB* -Erweiterung. |
+| `PdbFile` | Optionaler `String`-Parameter.<br /><br /> Gibt den Dateinamen der Debuginformationen an. Der Standardname ist der Ausgabedateiname mit einer *PDB*-Erweiterung. |
 | `Platform` | Optionaler `String`-Parameter.<br /><br /> Gibt die Prozessorplattform an, die das Ziel der Ausgabedatei darstellen soll. Dieser Parameter kann den Wert `x86`, `x64` oder `anycpu` haben. Der Standardwert ist `anycpu`. Weitere Informationen finden Sie unter [-platform (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option). |
 | `References` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bewirkt, dass die Aufgabe öffentliche Typinformationen aus den angegebenen Elementen in das aktuelle Projekt importiert. Weitere Informationen finden Sie unter [-reference (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Sie können einen C#-Verweisalias in einer MSBuild-Datei angeben, indem Sie die Metadaten `Aliases` zum ursprünglichen „Verweis“-Element hinzufügen. Angenommen, Sie möchten den Alias „LS1“ in der folgenden CSC-Befehlszeile festlegen:<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> In diesem Fall verwenden Sie:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
 | `Resources` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Bettet eine .NET Framework-Ressource in die Ausgabedatei ein.<br /><br /> Elemente, die an diesen Parameter übergeben werden, können optionale Metadateneinträge mit dem Namen `LogicalName` und `Access` enthalten. `LogicalName` entspricht dem `identifier`-Parameter des `/resource`-Switches, und `Access` entspricht dem `accessibility-modifier`-Parameter. Weitere Informationen finden Sie unter [-resource (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). |
@@ -80,9 +80,9 @@ In der folgenden Tabelle werden die Parameter der `Csc` -Aufgabe beschrieben.
 | `WarningLevel` | Optionaler `Int32`-Parameter.<br /><br /> Gibt die vom Compiler anzuzeigende Warnstufe an. Weitere Informationen finden Sie unter [-warn (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option). |
 | `WarningsAsErrors` | Optionaler `String`-Parameter.<br /><br /> Gibt eine Liste mit Warnungen an, die als Fehler behandelt werden sollen. Weitere Informationen finden Sie unter[-warnaserror (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Dieser Parameter überschreibt den `TreatWarningsAsErrors`-Parameter. |
 | `WarningsNotAsErrors` | Optionaler `String`-Parameter.<br /><br /> Gibt eine Liste mit Warnungen an, die nicht als Fehler behandelt werden sollen. Weitere Informationen finden Sie unter[-warnaserror (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Dieser Parameter ist nur dann nützlich, wenn der `TreatWarningsAsErrors`-Parameter auf `true` gesetzt ist. |
-| `Win32Icon` | Optionaler `String`-Parameter.<br /><br /> Fügt der Assembly eine *ICO* -Datei hinzu, die der Ausgabedatei im **Datei-Explorer** das gewünschte Aussehen verleiht. Weitere Informationen finden Sie unter [-win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
+| `Win32Icon` | Optionaler `String`-Parameter.<br /><br /> Fügt der Assembly eine *ICO*-Datei hinzu, die der Ausgabedatei im **Datei-Explorer** das gewünschte Aussehen verleiht. Weitere Informationen finden Sie unter [-win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
 | `Win32Manifest` | Optionaler `String`-Parameter.<br /><br /> Gibt das Win32-Manifest an, das eingeschlossen werden sollen. |
-| `Win32Resource` | Optionaler `String`-Parameter.<br /><br /> Fügt eine Win32-Ressource ( *RES* -Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie unter [-win32res (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
+| `Win32Resource` | Optionaler `String`-Parameter.<br /><br /> Fügt eine Win32-Ressource (*RES*-Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie unter [-win32res (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

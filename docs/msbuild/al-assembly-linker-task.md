@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d59251240abc7ca39b3819adf2324bf5bb9cef0a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3d99c33a74512b380d7b5260d5b7e747c6a39e41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923871"
 ---
 # <a name="al-assembly-linker-task"></a>AL-Aufgabe (Assembly Linker)
 
@@ -54,7 +54,7 @@ Die AL-Aufgabe schließt *AL.exe* ein, ein Tool, das mit dem Windows Software De
 | `KeyContainer` | Optionaler `String`-Parameter.<br /><br /> Gibt einen Container an, der ein Schlüsselpaar enthält. Dieser wird zum Signieren der Assembly (d. h. zum Zuweisen eines starken Namens zur Assembly) verwendet, indem ein öffentlicher Schlüssel in das Assemblymanifest eingefügt wird. Dann wird die endgültige Assembly von der Aufgabe mit dem privaten Schlüssel signiert. Weitere Informationen finden Sie in der Dokumentation zur Option `/keyn[ame]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `KeyFile` | Optionaler `String`-Parameter.<br /><br /> Legt eine Datei fest, die ein Schlüsselpaar oder einfach einen öffentlichen Schlüssel zum Signieren einer Assembly enthält. Der Compiler fügt den öffentlichen Schlüssel in das Assemblymanifest ein und signiert anschließend die endgültige Assembly mit dem privaten Schlüssel. Weitere Informationen finden Sie in der Dokumentation zur Option `/keyf[ile]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `LinkResources` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Verknüpft die angegebenen Ressourcendateien mit einer Assembly. Die Ressource wird Teil der Assembly, aber die Datei wird nicht kopiert. An Elemente, die an diesen Parameter übergeben werden, sind möglicherweise die optionalen `LogicalName`-, `Target`- und `Access`-Metadaten angefügt. Mit den `LogicalName`-Metadaten wird der interne Bezeichner für die Ressource angegeben. Die `Target`-Metadaten können angeben, in welchen Pfad und mit welchem Dateinamen die Aufgabe die Datei kopiert, bevor sie diese neue Datei in die Assembly kompiliert. Die `Access`-Metadaten können auf `private` festgelegt werden, damit die Ressource für andere Assemblys nicht sichtbar ist. Weitere Informationen finden Sie in der Dokumentation zur Option `/link[resource]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `MainEntryPoint` | Optionaler `String`-Parameter.<br /><br /> Legt den vollqualifizierten Namen ( *Klasse.Methode* ) der Methode fest, die als Einstiegspunkt verwendet werden soll, wenn ein Modul in eine ausführbare Datei konvertiert wird. Dieser Parameter entspricht der Option `/main` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
+| `MainEntryPoint` | Optionaler `String`-Parameter.<br /><br /> Legt den vollqualifizierten Namen (*Klasse.Methode*) der Methode fest, die als Einstiegspunkt verwendet werden soll, wenn ein Modul in eine ausführbare Datei konvertiert wird. Dieser Parameter entspricht der Option `/main` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `OutputAssembly` | Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Ausgabeparameter<br /><br /> Legt den Namen der von dieser Aufgabe generierten Datei fest. Dieser Parameter entspricht der Option `/out` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Platform` | Optionaler `String`-Parameter.<br /><br /> Schränkt ein, auf welcher Plattform dieser Code ausgeführt werden kann. Mögliche Werte: `x86`, `Itanium`, `x64` oder `anycpu`. Der Standardwert ist `anycpu`. Dieser Parameter entspricht der Option `/platform` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `ProductName` | Optionaler `String`-Parameter.<br /><br /> Legt eine Zeichenfolge für das Feld `Product` in der Assembly fest. Weitere Informationen finden Sie in der Dokumentation zur Option `/prod[uct]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
@@ -68,9 +68,9 @@ Die AL-Aufgabe schließt *AL.exe* ein, ein Tool, das mit dem Windows Software De
 | `Title` | Optionaler `String`-Parameter.<br /><br /> Legt eine Zeichenfolge für das Feld `Title` in der Assembly fest. Weitere Informationen finden Sie in der Dokumentation zur Option `/title` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `ToolPath` | Optionaler `String`-Parameter.<br /><br /> Legt den Speicherort fest, von wo aus die Aufgabe die zugrunde liegende ausführbare Datei (Al.exe) lädt. Wenn dieser Parameter nicht angegeben ist, verwendet die Aufgabe den SDK-Installationspfad der Version des Frameworks, die von MSBuild ausgeführt wird. |
 | `Trademark` | Optionaler `String`-Parameter.<br /><br /> Legt eine Zeichenfolge für das Feld `Trademark` in der Assembly fest. Weitere Informationen finden Sie in der Dokumentation zur Option `/trade[mark]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `Version` | Optionaler `String`-Parameter.<br /><br /> Legt Versionsinformationen für diese Assembly fest. Das Format der Zeichenfolge ist *major.minor.build.revision* . Der Standardwert ist 0. Weitere Informationen finden Sie in der Dokumentation zur Option `/v[ersion]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `Win32Icon` | Optionaler `String`-Parameter.<br /><br /> Fügt eine *ICO* -Datei in die Assembly ein. Die *ICO* -Datei verleiht der Ausgabedatei in Datei-Explorer das gewünschte Aussehen. Dieser Parameter entspricht der Option `/win32icon` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `Win32Resource` | Optionaler `String`-Parameter.<br /><br /> Fügt eine Win32-Ressource ( *RES* -Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie in der Dokumentation zur Option `/win32res` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
+| `Version` | Optionaler `String`-Parameter.<br /><br /> Legt Versionsinformationen für diese Assembly fest. Das Format der Zeichenfolge ist *major.minor.build.revision*. Der Standardwert ist 0. Weitere Informationen finden Sie in der Dokumentation zur Option `/v[ersion]` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
+| `Win32Icon` | Optionaler `String`-Parameter.<br /><br /> Fügt eine *ICO*-Datei in die Assembly ein. Die *ICO*-Datei verleiht der Ausgabedatei in Datei-Explorer das gewünschte Aussehen. Dieser Parameter entspricht der Option `/win32icon` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
+| `Win32Resource` | Optionaler `String`-Parameter.<br /><br /> Fügt eine Win32-Ressource (*RES*-Datei) in die Ausgabedatei ein. Weitere Informationen finden Sie in der Dokumentation zur Option `/win32res` in [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

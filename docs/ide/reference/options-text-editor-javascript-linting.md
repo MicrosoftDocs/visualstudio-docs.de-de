@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0458495920b603ebbfc2befb733bd8618cea5310
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932344"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Dialogfeld „Optionen“: Text-Editor \> JavaScript/TypeScript \> Linting
 
-Verwenden Sie die Seite **Linting** im Dialogfeld **Optionen** , um Optionen zur Analyse von Code im Code-Editor festzulegen. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Linting** erweitern.
+Verwenden Sie die Seite **Linting** im Dialogfeld **Optionen**, um Optionen zur Analyse von Code im Code-Editor festzulegen. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Linting** erweitern.
 
 ## <a name="eslint-settings"></a>ESLint-Einstellungen
 

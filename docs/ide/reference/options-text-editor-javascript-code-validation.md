@@ -9,19 +9,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3335f4bc5d59b7b4aab3e7341d9f1574d095eeb
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0dc6fbde896a2f043040c93710ca48bc95193127
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932552"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Dialogfeld „Optionen“: Text-Editor \> JavaScript/TypeScript \> Codevalidierung
 
-Verwenden Sie die Seite **Codevalidierung** des Dialogfelds **Optionen** , um Einstellungen zu ändern, die beeinflussen, wie JavaScript Fehler behandelt. Sie gelangen auf die Seite **Codevalidierung** , indem Sie in der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** > **JavaScript/TypeScript** > **Codevalidierung** erweitern.
+Verwenden Sie die Seite **Codevalidierung** des Dialogfelds **Optionen**, um Einstellungen zu ändern, die beeinflussen, wie JavaScript Fehler behandelt. Sie gelangen auf die Seite **Codevalidierung**, indem Sie in der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** > **JavaScript/TypeScript** > **Codevalidierung** erweitern.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

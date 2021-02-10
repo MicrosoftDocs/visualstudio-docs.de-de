@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d72471e5-4c8e-4a0a-a52e-3cd91df87b2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ef8fd7d149a489458f28a7e276476c8fa09776
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 5dab398253d85f521b78d1416e72eb6f0ec2e6f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922522"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Es kann keine Datenträgeraktivität angezeigt werden (Threadansicht)
 Für die E/A-Kanäle des Datenträgers kann für den aktuellen Zeitraum keine Datenträgeraktivität angezeigt werden. Datenträgeraktivität kann angezeigt werden, wenn Sie verkleinern oder scrollen. Stellen Sie außerdem sicher, dass keine Datenträgerkanäle ausgeblendet sind.

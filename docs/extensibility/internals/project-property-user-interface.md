@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: da60258f41665bbbb5510eb73b4fbca0a88809ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970178"
 ---
 # <a name="project-property-user-interface"></a>Benutzeroberfläche für Projekteigenschaften
 

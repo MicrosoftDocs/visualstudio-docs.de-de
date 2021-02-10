@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 4f31ad26b6efffa540ecae6a61f0f7ff12115cef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933803"
 ---
 # <a name="warning-task"></a>Warnungsaufgabe
 

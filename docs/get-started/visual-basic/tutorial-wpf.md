@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944367"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Erstellen einer einfachen Anwendung mit Visual Basic
 
@@ -45,7 +45,7 @@ Wenn Sie Visual Studio zum ersten Mal öffnen, werden Sie zur Anmeldung aufgefor
 
 ![Dialogfeld „Einstellungen auswählen“](../media/exploreide-settings.png)
 
-Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart** werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
 ![Visual Studio 2017 IDE mit übernommenen allgemeinen Einstellungen](../media/exploreide-idewithgeneralsettings.png)
 
@@ -71,7 +71,7 @@ Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein 
 
      ![Vorlage für eine WPF-App im Visual Studio-Dialogfeld „Neues Projekt“](media/exploreide-newproject-vb.png)
 
-Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:
+Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Die folgenden Elemente werden in **Projektmappen-Explorer** angezeigt:
 
 ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../media/exploreide-hellowpfappfiles.png)
 
@@ -87,7 +87,7 @@ Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, worau
 
 3. Geben Sie dem Projekt auf dem nächsten Bildschirm den Namen **HelloWPFApp**, und wählen Sie **Erstellen** aus.
 
-Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Die folgenden Elemente werden in **Projektmappen-Explorer**angezeigt:
+Visual Studio erstellt das „HelloWPFApp“-Projekt und die Projektmappe, woraufhin im **Projektmappen-Explorer** verschiedene Dateien angezeigt werden. Der **WPF-Designer** zeigt eine Entwurfsansicht und eine XAML-Ansicht der Datei *MainWindow.xaml* in einer geteilten Ansicht an. Ziehen Sie den Teiler, um mehr oder weniger der jeweiligen Ansichten anzuzeigen. Sie können auch nur die visuelle Ansicht oder nur die XAML-Ansicht anzeigen. Die folgenden Elemente werden in **Projektmappen-Explorer** angezeigt:
 
 ![Projektmappen-Explorer mit geladenen HelloWPFApp-Dateien](../media/vs-2019/exploreide-hellowpfappfiles.png)
 
@@ -244,7 +244,7 @@ Zu Beginn dieses Tutorials wurde *MainWindow.xaml* in *Greetings.xaml* umbenannt
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>Angeben von „Greetings.xaml“ als Start-URI
 
-1. Öffnen Sie im **Projektmappen-Explorer**die Datei *Application.xaml*.
+1. Öffnen Sie im **Projektmappen-Explorer** die Datei *Application.xaml*.
 
 2. Ändern Sie `StartupUri="MainWindow.xaml"` zu `StartupUri="Greetings.xaml"`, und speichern Sie dann die Änderungen.
 

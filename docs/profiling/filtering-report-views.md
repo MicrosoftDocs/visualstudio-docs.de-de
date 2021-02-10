@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ba3e207b180b26ea4b53765926b16fb2e85d48
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: a6f4ea9b713cf582a13ce2105bcc5bfd32754d3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916724"
 ---
 # <a name="filter-report-views"></a>Filtern von Berichtsansichten
 Sie können Profilerstellungs-Datendateien filtern, um die in den Leistungsberichtansichten angezeigten und in Berichtsdateien exportierten Profilerstellungsdaten einzuschränken. Sie können einen Bericht auf die Daten zwischen Zeitstempelwerten einschränken, Sie können die Daten aber auch auf bestimmte Prozesse und Threads einschränken. Sie können Filter in einer Datei speichern und dann durch Importieren des gespeicherten Filters einen Filter für eine andere Profilerstellungs-Datendatei erstellen.

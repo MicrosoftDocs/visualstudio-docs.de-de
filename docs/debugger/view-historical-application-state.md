@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67825529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933101"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Untersuchen von vorherigen App-Zuständen mithilfe des IntelliTrace-Features „Schritt zurück“ in Visual Studio (Visual Studio Enterprise)
 
@@ -95,9 +95,9 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 Im IntelliTrace-Modus zum ausschließlichen Verwenden von Ereignissen ist das Aktivieren des verlaufsbezogenen Debuggens von Einzelschritten und Breakpoints nicht gestattet. IntelliTrace erfasst jedoch nur Daten in den Fenstern **Locals** (Lokale) und **Autos**, falls diese geöffnet sind. Es werden zudem ausschließlich Daten erfasst, die erweitert sind und sich in der Ansicht befinden. Im Modus zum ausschließlichen Verwenden von Ereignissen haben Sie selten eine vollständige Ansicht der Variablen und komplexen Objekte. Zusätzlich werden die Ausdrucksauswertung und das Anzeigen von Daten im **Überwachungsfenster** nicht unterstützt.
 
-Wenn sich IntelliTrace im Ereignis- und Momentaufnahmemodus befindet, wird die gesamte Momentaufnahme des Anwendungsprozesses erfasst, einschließlich der komplexen Objekte. In einer Codezeile werden die gleichen Informationen wie beim Anhalten an einem Breakpoint (dabei ist es egal, ob Sie die Informationen zuvor erweitert hatten). Die Ausdrucksauswertung wird auch beim Anzeigen einer Momentaufnahme unterstützt.  
+Wenn sich IntelliTrace im Ereignis- und Momentaufnahmemodus befindet, wird die gesamte Momentaufnahme des Anwendungsprozesses erfasst, einschließlich der komplexen Objekte. In einer Codezeile werden die gleichen Informationen wie beim Anhalten an einem Breakpoint (dabei ist es egal, ob Sie die Informationen zuvor erweitert hatten). Die Ausdrucksauswertung wird auch beim Anzeigen einer Momentaufnahme unterstützt.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Wie wirkt sich dieses Feature auf die Leistung aus? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Wie wirkt sich dieses Feature auf die Leistung aus? 
 
 Die Auswirkung auf die gesamte Steppingleistung hängt von Ihrer Anwendung ab. Der Mehraufwand, der für das Erstellen einer Momentaufnahme aufgewendet werden muss, beträgt etwa 30 ms. Wenn eine Momentaufnahme erstellt wird, wird der App-Prozess aufgespalten, und die verzweigte Kopie wird angehalten. Wenn Sie eine Momentaufnahme anzeigen, fügt Visual Studio diese zur verzweigten Kopie des Prozesses hinzu. Visual Studio kopiert für jede Momentaufnahme nur die Seitentabelle und legt Copy-on-Write für Seiten fest (beim Schreibvorgang kopieren). Wenn sich Objekte auf dem Heap zwischen den Debuggerschritten mit zugeordneten Momentaufnahmen ändern, wird die jeweilige Seitentabelle daraufhin kopiert, wodurch nur minimale Arbeitsspeicherkosten entstehen. Sollte Visual Studio erkennen, dass nicht genügend Arbeitsspeicher zum Erstellen einer Momentaufnahme verfügbar ist, wird keine erstellt.
 

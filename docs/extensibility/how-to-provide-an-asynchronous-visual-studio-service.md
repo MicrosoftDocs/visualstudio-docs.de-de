@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11639e178f93a1ebfe2fc5231ee2b35df1b63196
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4cbdd539437bce6f160dfa8661f514bf9f40b134
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965329"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Vorgehensweise: Bereitstellen eines asynchronen Visual Studio-Dienstanbieter
 Wenn Sie einen Dienst abrufen möchten, ohne den UI-Thread zu blockieren, sollten Sie einen asynchronen Dienst erstellen und das Paket in einem Hintergrund Thread laden. Zu diesem Zweck können Sie <xref:Microsoft.VisualStudio.Shell.AsyncPackage> anstelle eines verwenden <xref:Microsoft.VisualStudio.Shell.Package> und den Dienst mit den speziellen asynchronen Methoden des asynchronen Pakets hinzufügen.

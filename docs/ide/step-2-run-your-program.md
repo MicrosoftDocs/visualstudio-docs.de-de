@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950847"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Schritt 2: Ausführen Ihrer Picture Viewer-App
 
@@ -34,12 +34,12 @@ Im Folgenden wird erläutert, wie Sie Ihre App ausführen können.
     - Klicken Sie in der Symbolleiste auf **Debugging starten**, die wie folgt aussieht:
 
       ![Symbolleistenschaltfläche „Debugging starten“](../ide/media/express_icondebug.png)<br>
-      **_Debugging starten_* _ _(Symbolleistenschaltfläche)*
+      ***Debugging starten** _ _(Symbolleistenschaltfläche)*
 
 1. Visual Studio führt Ihre App aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt. Im folgenden Screenshot wird die App gezeigt, die Sie soeben erstellt haben. Die App wird ausgeführt, und Sie werden sie schon bald erweitern.
 
      ![Ausgeführte Windows Forms-App](../ide/media/express_firstrun.png)<br>
-**_Windows Forms-App_* _, _wird ausgeführt*
+***Windows Forms-App** _, _wird ausgeführt*
 
 1. Wechseln Sie zurück zur integrierten Entwicklungsumgebung (IDE) von Visual Studio, und sehen Sie sich die neue Symbolleiste an. Wenn Sie eine Anwendung ausführen, werden weitere Schaltflächen in der Symbolleiste angezeigt. Mit diesen Schaltflächen können Sie Aktionen durchführen, wie z. B. die App beenden und starten. Außerdem helfen sie Ihnen bei der Ermittlung von Fehlern. In diesem Beispiel verwenden Sie die Symbolleiste lediglich zum Starten und Beenden der App.
 

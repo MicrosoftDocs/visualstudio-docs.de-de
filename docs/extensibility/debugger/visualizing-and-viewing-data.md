@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61c2094564ea20c1073a198c3da162862c543e65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965355"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisieren und Anzeigen von Daten
 Typvisualisierungen und benutzerdefinierte Viewer stellen Daten auf eine Weise dar, die für einen Entwickler schnell sinnvoll ist. Die Ausdrucks Auswertung (EE) kann typvisualisierungen von Drittanbietern unterstützen und eigene benutzerdefinierte Viewer bereitstellen.

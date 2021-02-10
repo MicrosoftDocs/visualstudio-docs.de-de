@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c3a0d22019a0c7722b135392c53c7f9bfbcaab69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914109"
 ---
 # <a name="import-element-msbuild"></a>Import-Element (MSBuild)
 
@@ -47,7 +47,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Project`|Erforderliches Attribut.<br /><br /> Der Pfad der zu importierenden Projektdatei. Der Pfad kann Platzhalter enthalten. Die entsprechenden Dateien werden in sortierter Reihenfolge importiert. Mit dieser Funktion können Sie Code einem Projekt hinzufügen, indem Sie einfach die Codedatei einem Verzeichnis hinzufügen.|
 |`Condition`|Optionales Attribut.<br /><br /> Eine auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
@@ -68,7 +68,7 @@ Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.
 
  Mithilfe des `Import` -Elements können Sie Code wiederverwenden, der in vielen Projektdateien verwendet wird. Dies erleichtert die Verwaltung des Codes, da jedes von Ihnen ausgeführte Update für den freigegebenen Code an alle Projekte weitergegeben wird, die ihn importieren.
 
- Gemäß Konvention werden freigegebene importierte Projektdateien als *TARGETS* -Dateien gespeichert, es handelt sich jedoch um MSBuild-Standardprojektdateien. MSBuild hindert Sie nicht daran, ein Projekt zu importieren, das eine andere Dateinamenerweiterung aufweist. Es wird jedoch empfohlen, aus Konsistenzgründen die Erweiterung *TARGETS* zu verwenden.
+ Gemäß Konvention werden freigegebene importierte Projektdateien als *TARGETS*-Dateien gespeichert, es handelt sich jedoch um MSBuild-Standardprojektdateien. MSBuild hindert Sie nicht daran, ein Projekt zu importieren, das eine andere Dateinamenerweiterung aufweist. Es wird jedoch empfohlen, aus Konsistenzgründen die Erweiterung *TARGETS* zu verwenden.
 
  Relative Pfade in importierten Projekten werden relativ zum Verzeichnis des importierenden Projekts interpretiert (mit einigen wenigen Ausnahmen, die weiter unten beschrieben werden). Wenn eine Projektdatei in verschiedene Projektdateien an unterschiedliche Speicherorte importiert wird, werden daher die relativen Pfade in der importierten Projektdatei unterschiedlich für jedes importierte Projekt interpretiert. Dazu gibt es zwei Ausnahmen: In `Import`-Elementen wird der Pfad immer relativ zum Projekt interpretiert, das das `Import`-Element enthält. `UsingTask` interpretiert den relativen Pfad für das `AssemblyFile`-Attribut immer relativ zur Datei, die das `UsingTask`-Element enthält.
 

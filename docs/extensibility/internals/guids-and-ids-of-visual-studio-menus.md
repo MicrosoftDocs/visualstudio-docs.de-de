@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970269"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUIDs und IDs von Visual Studio-Menüs
 In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Visual Studio-Menüleiste aufgelistet. Diese Werte werden in *vsct* -Dateien definiert, die als Teil des Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -34,11 +34,11 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Gruppen in der Visual Studio-Menüleiste
  Zum Hinzufügen eines Menüs zur Menüleiste legen Sie eine dieser Gruppen als übergeordnetes Element fest.
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Datei/Bearbeitung/Ansicht|IDG_VS_MM_FILEEDITVIEW|
-|Refactoring|IDG_VS_MM_REFACTORING:|
-|Projekt|IDG_VS_MM_PROJECT|
+|Umgestaltung|IDG_VS_MM_REFACTORING:|
+|Project|IDG_VS_MM_PROJECT|
 |Erstellen|IDG_VS_MM_BUILDDEBUGRUN|
 |Format/Tools|IDG_VS_MM_TOOLSADDINS|
 |Fenster/Hilfe/Community|IDG_VS_MM_WINDOWHELP|
@@ -48,13 +48,13 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>Menüs in der Visual Studio-Menüleiste
  Zum Hinzufügen einer Gruppe zu einem vorhandenen Visual Studio-Menü legen Sie eines der folgenden Menüs als übergeordnetes Element fest. Untermenüs sind nicht in dieser Liste enthalten.
 
-|Menü|ID|
+|Menü|id|
 |----------|--------|
 |Datei|IDM_VS_MENU_FILE|
 |Bearbeiten|IDM_VS_MENU_EDIT|
 |Sicht|IDM_VS_MENU_VIEW|
 |Refactoring|IDM_VS_MENU_REFACTORING|
-|Projekt|IDM_VS_MENU_PROJECT|
+|Project|IDM_VS_MENU_PROJECT|
 |Erstellen|IDM_VS_MENU_BUILD|
 |Format|IDM_VS_MENU_FORMAT|
 |Tools|IDM_VS_MENU_TOOLS|
@@ -69,7 +69,7 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 
 ### <a name="file-menu-groups"></a>Datei Menü Gruppen
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Neu/offen|IDG_VS_FILE_FILE|
 |Hinzufügen|IDG_VS_FILE_ADD|
@@ -85,27 +85,27 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 
 ### <a name="edit-menu-groups"></a>Menü Gruppen bearbeiten
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Rückgängig/Wiederholen|IDG_VS_EDIT_UNDOREDO|
 |Ausschneiden/Kopieren/Einfügen|IDG_VS_EDIT_CUTCOPY|
-|Auswählen|IDG_VS_EDIT_SELECT|
+|Select|IDG_VS_EDIT_SELECT|
 |GoTo|IDG_VS_EDIT_GOTO|
 |Suchen|IDG_VS_EDIT_FIND|
-|Objekte|IDG_VS_EDIT_OBJECTS|
+|erzwingen|IDG_VS_EDIT_OBJECTS|
 |OLE-Verben|IDG_VS_EDIT_OLEVERBS|
 |Befehlszeile|IDG_VS_EDIT_COMMANDWELL|
 
 ### <a name="refactor-menu-groups"></a>Umgestalten von Menü Gruppen
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Allgemein|IDG_REFACTORING_COMMON|
-|Fortgeschrittene|IDG_REFACTORING_ADVANCED|
+|Erweitert|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Menü Gruppen anzeigen
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Formular Code|IDG_VS_VIEW_FORMCODE|
 |Browser|IDG_VS_VIEW_BROWSER|
@@ -116,7 +116,7 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 |Code Browser|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|
 |Entwicklungsfenster|IDG_VS_VIEW_DEV_WINDOWS|
 |Symbolleisten|IDG_VS_VIEW_TOOLBARS|
-|Sonderzeichen|IDG_VS_VIEW_SYMBOLNAVIGATE|
+|Symbole|IDG_VS_VIEW_SYMBOLNAVIGATE|
 |Navigieren|IDG_VS_VIEW_NAVIGATE|
 |Small Navigate|IDG_VS_VIEW_SMALLNAVIGATE|
 |Objektkatalog|IDG_VS_VIEW_OBJBRWSR|
@@ -126,7 +126,7 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 
 ### <a name="project-menu-groups"></a>Projekt Menü Gruppen
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Sonstige hinzufügen|IDG_VS_PROJ_MISCADD|
 |Hinzufügen|IDG_VS_PROJ_ADD|
@@ -138,7 +138,7 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 
 ### <a name="build-menu-groups"></a>Build-Menü Gruppen
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Lösung|IDG_VS_BUILD_SOLUTION|
 |Auswahl|IDG_VS_BUILD_SELECTION|
@@ -148,7 +148,7 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 
 ### <a name="tools-menu-groups"></a>Menü Gruppen "Extras"
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Befehlszeile|IDG_VS_TOOLS_CMDLINE|
 |Codeausschnitte|IDG_VS_TOOLS_SNIPPETS|
@@ -160,7 +160,7 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 
 ### <a name="window-menu-groups"></a>Fenstermenü Gruppen
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Neu|IDG_VS_WINDOW_NEW|
 |Andocken/schließen|IDG_VS_DOCKCLOSE|
@@ -171,7 +171,7 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 
 ### <a name="help-menu-groups"></a>Hilfe Menü Gruppen
 
-|Group|ID|
+|Group|id|
 |-----------|--------|
 |Beispiele|IDG_VS_HELP_SAMPLES|
 |Support|IDG_VS_HELP_SUPPORT|
@@ -215,7 +215,7 @@ In diesem Artikel werden die GUID-und ID-Werte der Menüs und Gruppen in der Vis
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [GUIDs und IDs von Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 - [GUIDs und IDs von Visual Studio-Befehlen](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

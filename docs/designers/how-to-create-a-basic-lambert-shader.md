@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1677de15006dcf3bbe2f7a6b925be247518f752
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2aa4f3676708a99abba0a4706ecb524f1c14b212
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917024"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Vorgehensweise: Erstellen eines einfachen Lambert-Shaders
 
@@ -31,7 +31,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
 
 2. Trennen Sie den Knoten **Farbpunkt** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Farbpunkt** und anschließend auf **Link aufheben**. Lassen Sie das Terminal **Alpha** verbunden.
 
-3. Fügen Sie einen Knoten **Lambert** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Hilfsprogramme** auf **Lambert** , und verschieben Sie es auf die Entwurfsoberfläche. Der Lambert-Knoten berechnet anhand der Umgebungs- und diffusen Lichtparameter die gesamte diffuse Lichteinwirkung des Pixels.
+3. Fügen Sie einen Knoten **Lambert** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Hilfsprogramme** auf **Lambert**, und verschieben Sie es auf die Entwurfsoberfläche. Der Lambert-Knoten berechnet anhand der Umgebungs- und diffusen Lichtparameter die gesamte diffuse Lichteinwirkung des Pixels.
 
 4. Verbinden Sie den Knoten **Farbpunkt** mit dem Knoten **Lambert**. Verschieben Sie im Modus **Auswählen** das Terminal **RGB** des Knotens **Farbpunkt** auf das Terminal **Diffuses Licht** des Knotens **Lambert**. Diese Verbindung versorgt den Lambert-Knoten mit der interpolierten diffusen Farbe des Pixels.
 

@@ -5,18 +5,18 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72983662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912425"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 

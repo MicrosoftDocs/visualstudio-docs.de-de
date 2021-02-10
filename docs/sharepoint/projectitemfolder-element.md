@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItemFolder element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: d1a5b5086ef90b9d8399a6f0f76bdee77c07288e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950574"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder-Element
   Stellt einen zugeordneten Ordner dar.
@@ -42,7 +42,7 @@ ms.locfileid: "95440791"
 |attribute|Beschreibung|
 |---------------|-----------------|
 |**Ziel**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Pfad des Ordners in der SharePoint-Installation, dem der zugeordnete Ordner entspricht, relativ zum Stamm Ordner der Bereitstellung. Der Stamm Ordner der Bereitstellung wird durch den Bereitstellungstyp bestimmt, der durch das **Type** -Attribut angegeben wird.<br /><br /> Weitere Informationen finden Sie in den Beschreibungen für den **Bereitstellungs Pfad** und die **Bereitstellungs** Stamm Eigenschaften von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
-|**Type**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Bereitstellungstyp für den zugeordneten Ordner. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung der Eigenschaft " **Bereitstellungstyp** " von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
+|**Typ**|Erforderliches **xs: String** -Attribut.<br /><br /> Der Bereitstellungstyp für den zugeordneten Ordner. Weitere Informationen zu den möglichen Werten finden Sie in der Beschreibung der Eigenschaft " **Bereitstellungstyp** " von SharePoint-Projekt Elementen in [entwickeln von SharePoint-Lösungen](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine

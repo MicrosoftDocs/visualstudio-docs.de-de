@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 04168d6f648a9219c40f81aa042cbc778429ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951003"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Schritt 1: Erstellen eines Windows Forms-App-Projekts
 
@@ -29,7 +29,7 @@ Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows For
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Das Dialogfeld sollte in etwa wie auf dem folgenden Screenshot dargestellt aussehen.
 
-     ![Dialogfeld „Neues Projekt“](../ide/media/newprojectdialogcallouts.png)<br/>_Dialogfeld* **_Neues Projekt_* _
+     ![Dialogfeld „Neues Projekt“](../ide/media/newprojectdialogcallouts.png)<br/>_Dialogfeld* ***Neues Projekt** _
 
 2. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich **Visual C#** oder **Visual Basic** aus, und klicken Sie dann auf **Windows-Desktop**.
 
@@ -107,7 +107,7 @@ Visual Studio erstellt eine Projektmappe für die App. Eine Projektmappe fungier
      Klicken Sie alternativ in der Symbolleiste auf die im folgenden Bild gezeigte Schaltfläche **Alle speichern**.
 
      Schaltfläche ![Alle speichern](../ide/media/express_iconsaveall.png) in der Symbolleiste<br/>
-     _Symbolleistenschaltfläche* **_Alle speichern_* _
+     _Symbolleistenschaltfläche* ***Alle speichern** _
 
      Visual Studio fügt automatisch den Ordnernamen und den Projektnamen ein und speichert das Projekt dann im Projektordner.
 

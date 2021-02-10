@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fe538a7efd884ef87ba815a6300dfa80a94dc3b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f6e29f2c65ec7503f06baca4af4c6772090d5eb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952290"
 ---
 # <a name="how-to-troubleshoot-services"></a>Vorgehensweise: Problembehandlung bei Diensten
 Es gibt mehrere häufige Probleme, die auftreten können, wenn Sie versuchen, einen Dienst zu erhalten:

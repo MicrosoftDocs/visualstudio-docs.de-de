@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958452"
 ---
 # <a name="saving-a-standard-document"></a>Speichern eines Standarddokuments
 Die Umgebung verarbeitet die Befehle "Speichern", "Speichern unter" und "Alle speichern". Wenn ein Benutzer " **Speichern**", " **Speichern** unter" oder " **Alle speichern** " im Menü "Datei" auswählt oder die Projekt **Mappe** schließt, was zu " **Alles speichern**" führt, wird der folgende Vorgang ausgeführt.

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 449f06c2-e9aa-4236-ab1e-c45c25452b2e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ed7bf0e831153d1120789d97b2a27aa77822a6b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c06e012f84f1f18805ca458289c023679d0593d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912548"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource-Aufgabe
 

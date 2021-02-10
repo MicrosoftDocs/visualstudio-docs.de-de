@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 54ab09809b99c18977125a124bc53d50d3d6c90c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941553"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate
 
@@ -38,7 +38,7 @@ Es gibt drei Optionen, Zertifikate in einer Offlineumgebung zu installieren oder
 
 Wenn Sie ein Netzwerklayout erstellen, werden die erforderlichen Zertifikate in den Ordner „Zertifikate“ heruntergeladen. Sie können die Zertifikate manuell installieren, indem Sie auf die Zertifikatdateien doppelklicken und anschließend den Zertifikat-Manager-Assistenten durchlaufen. Wenn Sie nach einem Kennwort gefragt werden, lassen Sie es leer.
 
-**Update** : Für Visual Studio 2017 Version 15.8 Preview 2 oder höher können Sie die Zertifikate manuell installieren, indem Sie mit der rechten Maustaste auf jede der Zertifikatdateien klicken, „Zertifikat installieren“ auswählen und anschließend den Zertifikat-Manager-Assistenten durchlaufen.
+**Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher können Sie die Zertifikate manuell installieren, indem Sie mit der rechten Maustaste auf jede der Zertifikatdateien klicken, „Zertifikat installieren“ auswählen und anschließend den Zertifikat-Manager-Assistenten durchlaufen.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Wenn Sie die Bereitstellung von Visual Studio in einer Offlineumgebung für Clie
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Update** : Für Visual Studio 2017 Version 15.8 Preview 2 oder höher erstellen Sie die Batchdatei mit den folgenden Befehlen:
+   **Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher erstellen Sie die Batchdatei mit den folgenden Befehlen:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -150,7 +150,7 @@ Die drei P12-Dateien in diesem Ordner enthalten jeweils ein Zwischen- und ein St
   * Ein Stammzertifikat: **Microsoft Root Certificate Authority**
     * Erforderlich. Dieses Zertifikat ist in allen Systemen unter Windows 7 oder höher enthalten.
 
-**Update** : Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden. Diese Zertifikate werden in CER-Dateien anstelle von. P12 gespeichert.
+**Update**: Für Visual Studio 2017 Version 15.8 Preview 2 oder höher müssen im Visual Studio-Installer nur die Stammzertifikate auf dem System installiert werden. Diese Zertifikate werden in CER-Dateien anstelle von. P12 gespeichert.
 
 ::: moniker-end
 
@@ -179,20 +179,20 @@ Wenn eine Signatur in einer Onlineumgebung überprüft wird, werden Windows-APIs
 Eine Möglichkeit, das installierte System zu prüfen, sind die folgenden Schritte:
 
 1. Führen Sie **mmc.exe** aus.<br/>
-  a. Klicken Sie auf **Datei** und dann auf **Snap-In hinzufügen/entfernen** .<br/>
-  b. Doppelklicken Sie auf **Zertifikate** , dann auf **Computerkonto** und anschließend auf **Weiter** .<br/>
-  c. Klicken Sie auf **Lokaler Computer** , dann auf **Fertig stellen** und anschließend auf **OK** .<br/>
+  a. Klicken Sie auf **Datei** und dann auf **Snap-In hinzufügen/entfernen**.<br/>
+  b. Doppelklicken Sie auf **Zertifikate**, dann auf **Computerkonto** und anschließend auf **Weiter**.<br/>
+  c. Klicken Sie auf **Lokaler Computer**, dann auf **Fertig stellen** und anschließend auf **OK**.<br/>
   d. Erweitern Sie **Zertifikate (Lokaler Computer)** .<br/>
-  e. Erweitern Sie **Vertrauenswürdige Stammzertifizierungsstellen** , und klicken Sie dann auf **Zertifikate** .<br/>
+  e. Erweitern Sie **Vertrauenswürdige Stammzertifizierungsstellen**, und klicken Sie dann auf **Zertifikate**.<br/>
     * Überprüfen Sie die Liste auf erforderliche Stammzertifikate.<br/>
 
-   f. Erweitern Sie **Zwischenzertifizierungsstellen** , und klicken Sie auf **Zertifikate** .<br/>
+   f. Erweitern Sie **Zwischenzertifizierungsstellen**, und klicken Sie auf **Zertifikate**.<br/>
     * Überprüfen Sie diese Liste auf erforderliche Zwischenzertifikate.<br/>
 
-2. Klicken Sie auf **Datei** und dann auf **Snap-In hinzufügen/entfernen** .<br/>
-  a. Doppelklicken Sie auf **Zertifikate** , dann auf **Eigenes Benutzerkonto** , **Fertig stellen** und anschließend auf **OK** .<br/>
-  b. Erweitern Sie **Zertifikate – Aktueller Benutzer** .<br/>
-  c. Erweitern Sie **Zwischenzertifizierungsstellen** , und klicken Sie auf **Zertifikate** .<br/>
+2. Klicken Sie auf **Datei** und dann auf **Snap-In hinzufügen/entfernen**.<br/>
+  a. Doppelklicken Sie auf **Zertifikate**, dann auf **Eigenes Benutzerkonto**, **Fertig stellen** und anschließend auf **OK**.<br/>
+  b. Erweitern Sie **Zertifikate – Aktueller Benutzer**.<br/>
+  c. Erweitern Sie **Zwischenzertifizierungsstellen**, und klicken Sie auf **Zertifikate**.<br/>
     * Überprüfen Sie diese Liste auf erforderliche Zwischenzertifikate.<br/>
 
 Wenn sich die Zertifikatnamen nicht in der Spalte **Ausgestellt für** befinden, müssen Sie installiert werden.  Wenn sich ein Zwischenzertifikat nur im Speicher des Zwischenzertifikats **Aktueller Benutzer** befindet, steht es nur für den angemeldeten Benutzer zur Verfügung. Sie sollten es für andere Benutzer herunterladen.

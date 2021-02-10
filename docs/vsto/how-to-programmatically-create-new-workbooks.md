@@ -12,15 +12,15 @@ helpviewer_keywords:
 - workbooks, creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: daaaedc60988d7f523865d3979207dd1fe43e029
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 13acd34d9883cfdc7df201dff193d261252f8a9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523145"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963990"
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>Vorgehensweise: Programm gesteuertes Erstellen neuer Arbeitsmappen
   Wenn Sie eine Arbeitsmappe programmgesteuert erstellen, ist diese ein systemeigenes <xref:Microsoft.Office.Interop.Excel.Workbook>-Objekt und kein <xref:Microsoft.Office.Tools.Excel.Workbook>-Hostelement.

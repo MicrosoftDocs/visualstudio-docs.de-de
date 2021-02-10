@@ -14,15 +14,15 @@ helpviewer_keywords:
 - outlining code
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 04a2156723bc33e25a658814b9348655f7ba86d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909066"
 ---
 # <a name="outlining"></a>Gliedern
 
@@ -35,21 +35,21 @@ Bereiche am Gliederungsrand werden auch hervorgehoben, wenn Sie mit der Maus auf
 
 Wenn Sie mit Code mit Rand arbeiten, können Sie die Bereiche erweitern, an denen Sie arbeiten, sie reduzieren, wenn Sie fertig sind, und dann mit anderen Bereichen fortfahren. Wenn Sie die Gliederung nicht anzeigen möchten, können Sie mit dem Befehl **Gliederung entfernen** die Gliederungsinformationen entfernen, ohne damit zugrunde liegenden Code zu beeinträchtigen.
 
-Diese Aktionen werden durch die Befehle **Rückgängig** und **Wiederholen** im Menü **Bearbeiten** beeinflusst. Bei den Befehlen **Kopieren** , **Ausschneiden** und **Einfügen** sowie bei Drag & Drop-Vorgängen werden Gliederungsinformationen beibehalten, der Zustand des zuklappbaren Bereichs jedoch nicht. Wenn Sie beispielsweise einen zugeklappten Bereich kopieren, wird der kopierte Text beim Vorgang **Einfügen** als aufgeklappter Bereich eingefügt.
+Diese Aktionen werden durch die Befehle **Rückgängig** und **Wiederholen** im Menü **Bearbeiten** beeinflusst. Bei den Befehlen **Kopieren**, **Ausschneiden** und **Einfügen** sowie bei Drag & Drop-Vorgängen werden Gliederungsinformationen beibehalten, der Zustand des zuklappbaren Bereichs jedoch nicht. Wenn Sie beispielsweise einen zugeklappten Bereich kopieren, wird der kopierte Text beim Vorgang **Einfügen** als aufgeklappter Bereich eingefügt.
 
 > [!CAUTION]
 > Wenn Sie einen gegliederten Bereich ändern, geht die Gliederung möglicherweise verloren. Beispielsweise wird durch Löschvorgänge oder **Suchen und Ersetzen** das Ende des Bereichs möglicherweise gelöscht.
 
-Die folgenden Befehle befinden sich im Untermenü **Bearbeiten** > **Gliedern** .
+Die folgenden Befehle befinden sich im Untermenü **Bearbeiten** > **Gliedern**.
 
 |name|Beschreibung|
 |-|-|
-|Aktuelles Element umschalten|( **STRG**+**M** , **STRG**+**H** ): Reduziert einen ausgewählten Codeblock, der normalerweise nicht für eine Gliederung verfügbar wäre, beispielsweise einen `if`-Block. Verwenden Sie die Option **Gliederung in aktuellem Element entfernen** , oder drücken Sie **STRG**+**M** , **STRG**+**U** , um den benutzerdefinierten Bereich zu entfernen. Nicht in Visual Basic verfügbar.|
-|Gliederungserweiterung umschalten| **STRG**+**M** , **STRG**+**M** kehrt den aktuellen Zustand (ausgeblendet oder erweitert) des innersten Gliederungsbereichs um, wenn sich der Cursor in einem verschachtelten reduzierten Bereich befindet.|
-|Alle Gliederungen umschalten|( **STRG**+**M** , **STRG**+**L** ): Legt alle Bereiche auf denselben reduzierten oder erweiterten Zustand fest. Wenn einige Bereiche erweitert und andere reduziert sind, werden die reduzierten Bereiche erweitert.|
-|Gliederung entfernen|( **STRG**+**M** , **STRG**+**P** ): Entfernt alle Gliederungsinformationen für das gesamte Dokument.|
-|Gliederung in aktuellem Element entfernen|( **STRG**+**M** , **STRG**+**U** ): Entfernt die Gliederungsinformationen für den aktuell ausgewählten benutzerdefinierten Bereich. Nicht in Visual Basic verfügbar.|
-|Nur Definitionen anzeigen|( **STRG**+**M** , **STRG**+**O** ): Reduziert die Members aller Typen.|
+|Aktuelles Element umschalten|(**STRG**+**M**, **STRG**+**H**): Reduziert einen ausgewählten Codeblock, der normalerweise nicht für eine Gliederung verfügbar wäre, beispielsweise einen `if`-Block. Verwenden Sie die Option **Gliederung in aktuellem Element entfernen**, oder drücken Sie **STRG**+**M**, **STRG**+**U**, um den benutzerdefinierten Bereich zu entfernen. Nicht in Visual Basic verfügbar.|
+|Gliederungserweiterung umschalten| **STRG**+**M**, **STRG**+**M** kehrt den aktuellen Zustand (ausgeblendet oder erweitert) des innersten Gliederungsbereichs um, wenn sich der Cursor in einem verschachtelten reduzierten Bereich befindet.|
+|Alle Gliederungen umschalten|(**STRG**+**M**, **STRG**+**L**): Legt alle Bereiche auf denselben reduzierten oder erweiterten Zustand fest. Wenn einige Bereiche erweitert und andere reduziert sind, werden die reduzierten Bereiche erweitert.|
+|Gliederung entfernen|(**STRG**+**M**, **STRG**+**P**): Entfernt alle Gliederungsinformationen für das gesamte Dokument.|
+|Gliederung in aktuellem Element entfernen|(**STRG**+**M**, **STRG**+**U**): Entfernt die Gliederungsinformationen für den aktuell ausgewählten benutzerdefinierten Bereich. Nicht in Visual Basic verfügbar.|
+|Nur Definitionen anzeigen|(**STRG**+**M**, **STRG**+**O**): Reduziert die Members aller Typen.|
 |Block reduzieren:\<logical boundary>|(C++) Reduziert einen Bereich in der Funktion mit der Einfügemarke. Wenn beispielsweise die Einfügemarke innerhalb einer Schleife platziert ist, wird die Schleife ausgeblendet.|
 |Alle reduzieren in:\<logical structures>|(C++) Reduziert alle Strukturen innerhalb der Funktion.|
 

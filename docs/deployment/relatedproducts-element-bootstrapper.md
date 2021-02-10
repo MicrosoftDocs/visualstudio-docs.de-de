@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a7987306d9f7fc25f9f9b783d5b0966ac5015ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949687"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts- &gt; Element (Boots Trapper)
 Mit dem- `RelatedProducts` Element werden andere Produkte definiert, die entweder von abhängen oder im aktuellen Produkt enthalten sind.
@@ -85,4 +85,4 @@ Mit dem- `RelatedProducts` Element werden andere Produkte definiert, die entwede
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-- [\<Product> gewisses](../deployment/product-element-bootstrapper.md)
+- [\<Product>-Element](../deployment/product-element-bootstrapper.md)

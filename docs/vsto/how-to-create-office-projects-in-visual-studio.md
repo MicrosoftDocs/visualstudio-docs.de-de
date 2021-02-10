@@ -21,15 +21,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1d0bd242f3a57031442cb0b39e62a28c01ad1a6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962391"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Gewusst wie: Erstellen von Office-Projekten in Visual Studio
   Sie können verwenden [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , um VSTO-Add-Ins und Anpassungen auf Dokument Ebene für Microsoft Office-Anwendungen zu erstellen. Weitere Informationen zu diesen Projekttypen finden Sie unter Übersicht über die Entwicklung von Office-Projektmappen [&#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -160,7 +160,7 @@ ms.locfileid: "96844373"
 
      Weitere Informationen zum Hinzufügen eines Dokuments zu den vertrauenswürdigen Speicherorten finden Sie auf der Microsoft Office Online Website [erstellen, entfernen oder Ändern eines vertrauenswürdigen Speicher Orts für Ihre Dateien](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Übersicht über Office-Projektvorlagen](../vsto/office-project-templates-overview.md)
 - [Gemeinsame Entwicklung von Office-Lösungen](../vsto/collaborative-development-of-office-solutions.md)
 - [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d58f9f29d88d7988b4ead3c2d96eadbbf95a8f46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966265"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Protokollierung in einer Multiprozessorumgebung
 

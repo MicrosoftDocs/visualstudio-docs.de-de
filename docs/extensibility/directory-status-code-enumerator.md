@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af72b9e14695cb954084abebc3a3c336c90af73d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c6d5eb64cf4883c2e977b41e77fc2243aca2ee34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968254"
 ---
 # <a name="directory-status-code-enumerator"></a>Verzeichnis Statuscode-Enumerator
 Der `SccDirStatus` Enumerator enthält benannte Konstante Werte, die den Status eines Verzeichnisses im Quell Code Verwaltungssystem angeben. Diese Enumeration wird von [sccdirqueryinfo](../extensibility/sccdirqueryinfo-function.md)verwendet. Dies wurde in Version 1,2 der Quellcodeverwaltungs-Plug-in-API eingeführt.

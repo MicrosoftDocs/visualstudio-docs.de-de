@@ -26,15 +26,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 24a4318400f808c57c041e09877e5aef9a2c3c36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958712"
 ---
 # <a name="program-document-level-customizations"></a>Program mieren von Anpassungen auf Dokument Ebene
   Wenn Sie Microsoft Office Word oder Microsoft Office Excel mit einer Anpassung auf Dokumentebene erweitern, können Sie die folgenden Aufgaben ausführen:

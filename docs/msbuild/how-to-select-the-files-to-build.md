@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2f324fb3999c94d8f26e329859e095f31740c76c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914230"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 
@@ -66,13 +66,13 @@ Die folgenden Beispiele basieren auf einem Projekt, das Grafikdateien in den fol
 
 *Project\Images\ImgJpgs\Img1*
 
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle *JPG* -Dateien im Verzeichnis *Images* bzw. in Unterverzeichnissen ein
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle *JPG*-Dateien im Verzeichnis *Images* bzw. in Unterverzeichnissen ein
 
 - Verwenden Sie das folgende `Include`-Attribut:
 
     `Include="Images\**\*.jpg"`
 
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle *JPG* -Dateien ein, die mit *img* beginnen
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle *JPG*-Dateien ein, die mit *img* beginnen
 
 - Verwenden Sie das folgende `Include`-Attribut:
 
@@ -144,7 +144,7 @@ Das folgende Codebeispiel zeigt ein Projekt, das alle Eingabedateien separat ein
 
 ## <a name="example-2"></a>Beispiel 2
 
-Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS* -Dateien einzuschließen.
+Das folgende Codebeispiel verwendet einen Platzhalter, um alle *CS*-Dateien einzuschließen.
 
 ```xml
 <Project DefaultTargets="Compile"

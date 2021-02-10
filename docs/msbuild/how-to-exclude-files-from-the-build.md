@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e838460f1e42f34e92a99198b9d4a0e34ce71dcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914376"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Vorgehensweise: Ausschließen von Dateien aus dem Buildvorgang
 
@@ -38,7 +38,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
 
  Wenn Sie Platzhalter verwendet haben, um alle Dateien in einem Verzeichnis oder einer geschachtelten Gruppe von Verzeichnissen als Eingaben für einen Buildvorgang einzuschließen, gibt es möglicherweise eine oder mehrere Dateien im Verzeichnis oder ein Verzeichnis in einer geschachtelten Gruppe von Verzeichnissen, die Sie nicht einschließen möchten. So verwenden Sie das Attribut `Exclude` zum Ausschließen eines Elements aus der Elementliste.
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>So schließen Sie alle *CS* - oder *VB* -Dateien außer *Form2* ein
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>So schließen Sie alle *CS*- oder *VB*-Dateien außer *Form2* ein
 
 - Ändern Sie eines der folgenden Attribute `Include` und `Exclude`:
 
@@ -52,7 +52,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
     ```
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>So schließen Sie alle *CS* - oder *VB* -Dateien außer *Form2* und *Form3* ein
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>So schließen Sie alle *CS*- oder *VB*-Dateien außer *Form2* und *Form3* ein
 
 - Ändern Sie eines der folgenden Attribute `Include` und `Exclude`:
 
@@ -66,7 +66,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>So schließen Sie alle *JPG* -Dateien in Unterverzeichnisse des Verzeichnisses *Images* ein, außer den Dateien im *Version2* -Verzeichnis
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>So schließen Sie alle *JPG*-Dateien in Unterverzeichnisse des Verzeichnisses *Images* ein, außer den Dateien im *Version2*-Verzeichnis
 
 - Verwenden Sie die folgenden Attribute `Include` und `Exclude`:
 
@@ -83,7 +83,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
 
  Wenn es Elemente gibt, die Sie einschließen möchten, z.B. in einem Debugebuild, aber nicht in einem Releasebuild, können Sie das Element `Condition` verwenden, um die Bedingungen anzugeben, unter denen Sie das Element einschließen möchten.
 
-#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>So schließen Sie die *Formula.vb* -Datei nur in Releasebuilds ein
+#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>So schließen Sie die *Formula.vb*-Datei nur in Releasebuilds ein
 
 - Verwenden Sie Attribut `Condition`, das ähnlich des Folgenden ist:
 
@@ -95,7 +95,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
 
 ## <a name="example"></a>Beispiel
 
- Das folgende Codebeispiel erstellt ein Projekt mit allen *CS* -Dateien im Verzeichnis, außer *Form2.cs* .
+ Das folgende Codebeispiel erstellt ein Projekt mit allen *CS*-Dateien im Verzeichnis, außer *Form2.cs*.
 
 ```xml
 <Project DefaultTargets="Compile"

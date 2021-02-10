@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], opening documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 994afc6f0d8d9bb76aff56097d0a18b8c3f940d9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 81d134c88d93b3da3b0f0e6c3ded3cbe0d6d3f89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951679"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Gewusst wie: Programm gesteuertes Öffnen vorhandener Dokumente
   Die- <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> Methode öffnet das vorhandene Microsoft Office Word-Dokument, das durch einen voll qualifizierten Pfad und Dateinamen angegeben wird. Diese Methode gibt einen zurück <xref:Microsoft.Office.Interop.Word.Document> , der das geöffnete Dokument darstellt.

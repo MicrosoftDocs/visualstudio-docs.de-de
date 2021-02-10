@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c85e3d371bfd729d55e9d17a6c8de61924e35f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a056f3a7d986ca9abcf82edd3a77aac013665976
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960818"
 ---
 # <a name="send-the-required-events"></a>Erforderliche Ereignisse senden
 Verwenden Sie dieses Verfahren, um erforderliche Ereignisse zu senden.
@@ -36,7 +36,7 @@ Verwenden Sie dieses Verfahren, um erforderliche Ereignisse zu senden.
 5. Wenn die zu decodierende Anwendung gestartet wird, senden Sie ein [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) -Ereignis Objekt an SDM, wenn die erste Anweisung des Codes in der Lauf Zeit Architektur gerade ausgeführt wird. Dieses Ereignis ist immer ein anhalteereignis. Wenn Sie in die Debugsitzung eintreten, wird die IDE bei diesem Ereignis beendet.
 
 > [!NOTE]
-> Viele Sprachen verwenden globale Initialisierer oder externe, vorkompilierte Funktionen (aus der CRT-Bibliothek oder _Main) am Anfang des Codes. Wenn die Sprache des Programms, das Sie Debuggen, einen dieser Elementtypen vor dem ersten Einstiegspunkt enthält, wird dieser Code ausgeführt, und das Einstiegspunkt Ereignis wird gesendet, wenn der Benutzer Einstiegspunkt **main** , z `WinMain` . b. Main oder, erreicht wird.
+> Viele Sprachen verwenden globale Initialisierer oder externe, vorkompilierte Funktionen (aus der CRT-Bibliothek oder _Main) am Anfang des Codes. Wenn die Sprache des Programms, das Sie Debuggen, einen dieser Elementtypen vor dem ersten Einstiegspunkt enthält, wird dieser Code ausgeführt, und das Einstiegspunkt Ereignis wird gesendet, wenn der Benutzer Einstiegspunkt  , z `WinMain` . b. Main oder, erreicht wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Aktivieren eines deaktivierte Programms](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

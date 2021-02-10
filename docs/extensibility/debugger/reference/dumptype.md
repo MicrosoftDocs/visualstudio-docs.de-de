@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953733"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Gibt an, wie viel von einem Programmzustand (z. b. das Ausführen von Threads, Stapel Rahmen und aktuelle Anweisungs Adresse) zum Absichern angezeigt werden soll.

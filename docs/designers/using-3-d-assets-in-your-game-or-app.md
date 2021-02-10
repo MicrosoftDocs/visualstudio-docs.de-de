@@ -14,15 +14,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9dff2cd6b762b2f81581963de6186cdd36e3ab
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 18294a9a6b6a0b967748d6a00817e4194e4cc32f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948530"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Vorgehensweise: Verwenden von 3D-Objekten in Spielen oder Apps
 
@@ -73,9 +73,9 @@ Nachstehend sind die drei Elementtypen für die Inhaltspipeline und ihre zugeord
 
 |Elementtyp|Typen der Quelldatei|Format der Ausgabedatei|
 |---------------| - | - |
-|**Bildinhaltspipeline**|Portable Network Graphics ( *.png* )<br /><br /> JPEG ( *.jpg* , *.jpeg* , *.jpe* , *.jfif* )<br /><br /> Direct Draw Surface ( *.dds* )<br /><br /> Graphics Interchange Format ( *.gif* )<br /><br /> Bitmap ( *.bmp* , *.dib* )<br /><br /> Tagged Image File Format ( *.tif* , *.tiff* )<br /><br /> Targa ( *.tga* )|DirectDraw Surface ( *.dds* )|
-|**Meshinhaltspipeline**|AutoDesk FBX-Austauschdatei ( *.fbx* )<br /><br /> Collada DAE-Datei ( *.dae* )<br /><br /> Wavefront OBJ-Datei ( *.obj* )|3D-Mesh-Datei ( *.cmo* )|
-|**Shaderinhaltspipeline**|Visual Shader-Diagramm ( *.dgsl* )|Compiled Shader Output ( *.cso* )|
+|**Bildinhaltspipeline**|Portable Network Graphics ( *.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format ( *.gif*)<br /><br /> Bitmap ( *.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
+|**Meshinhaltspipeline**|AutoDesk FBX-Austauschdatei (*.fbx*)<br /><br /> Collada DAE-Datei (*.dae*)<br /><br /> Wavefront OBJ-Datei (*.obj*)|3D-Mesh-Datei ( *.cmo*)|
+|**Shaderinhaltspipeline**|Visual Shader-Diagramm (*.dgsl*)|Compiled Shader Output (*.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Konfigurieren der Eigenschaften von Objektinhaltspipelines
 
@@ -100,8 +100,8 @@ Wenn Sie zur Erstellung einer Texturressource das Tool für Bildinhaltspipelines
 |Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Komprimieren**|Gibt den Komprimierungstyp an, der für die Ausgabedatei verwendet wird.<br /><br /> Verfügbare Optionen:<br /><br /> -   **Keine Komprimierung**<br />-   **BC1_UNORM-Komprimierung**<br />-   **BC1_UNORM_SRGB-Komprimierung**<br />-   **BC2_UNORM-Komprimierung**<br />-   **BC2_UNORM_SRGB-Komprimierung**<br />-   **BC3_UNORM-Komprimierung**<br />-   **BC3_UNORM_SRGB-Komprimierung**<br />-   **BC4_UNORM-Komprimierung**<br />-   **BC4_SNORM-Komprimierung**<br />-   **BC5_UNORM-Komprimierung**<br />-   **BC5_SNORM-Komprimierung**<br />-   **BC6H_UF16-Komprimierung**<br />-   **BC6H_SF16-Komprimierung**<br />-   **BC7_UNORM-Komprimierung**<br />-   **BC7_UNORM_SRGB-Komprimierung**<br /><br /> Informationen darüber, welche Komprimierungsformate von den verschiedenen Versionen von DirectX unterstützt werden, finden Sie unter [Programmierhandbuch für DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
-|Konvertieren in ein vorab multipliziertes Alphaformat.|**Ja** , um das Bild in ein vorab multipliziertes Alphaformat in der Ausgabedatei zu konvertieren, andernfalls **Nein**. Nur die Ausgabedatei wird geändert, das Quellbild bleibt unverändert.|
-|**MIPS generieren**|**Ja** , um eine vollständige MIP-Kette zum Zeitpunkt der Erstellung zu generieren und in die Ausgabedatei einzuschließen; andernfalls **Nein**. Falls Sie **Nein** auswählen und die Quelldatei bereits eine Mipmap-Kette enthält, verfügt die Ausgabedatei über eine MIP-Kette; andernfalls hat die Ausgabedatei keine MIP-Kette.|
+|Konvertieren in ein vorab multipliziertes Alphaformat.|**Ja**, um das Bild in ein vorab multipliziertes Alphaformat in der Ausgabedatei zu konvertieren, andernfalls **Nein**. Nur die Ausgabedatei wird geändert, das Quellbild bleibt unverändert.|
+|**MIPS generieren**|**Ja**, um eine vollständige MIP-Kette zum Zeitpunkt der Erstellung zu generieren und in die Ausgabedatei einzuschließen; andernfalls **Nein**. Falls Sie **Nein** auswählen und die Quelldatei bereits eine Mipmap-Kette enthält, verfügt die Ausgabedatei über eine MIP-Kette; andernfalls hat die Ausgabedatei keine MIP-Kette.|
 |**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguration der Mesh-Inhaltspipeline

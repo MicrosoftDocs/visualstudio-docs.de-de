@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2513eb99940d45d11bc2360581cbba455e864da2
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f8a85c87b14057372254f755e4c414aa089e5a55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955241"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Programmierkonzepte und Features für Erweiterungen für SharePoint-Tools
   Es gibt mehrere wichtige Programmier Konzepte und-Features, die sich auf die SharePoint-Tools in Visual Studio beziehen. Diese Konzepte und Features spielen bei den meisten Erweiterungen von SharePoint-Tools eine wichtige Rolle.
@@ -38,7 +38,7 @@ ms.locfileid: "96305024"
 
  Beschreibt, wie benutzerdefinierte Daten bestimmten Objekttypen in Erweiterungen von SharePoint-Tools zugeordnet werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

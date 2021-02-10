@@ -14,15 +14,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6f4774b8f5ba55d54e05e3a9ef18f8ea13fd48fc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f35649db5f61cb545bb3550980b3d6b9a8742cd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527895"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966499"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Project
   In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie ein VSTO-Add-in für Microsoft Office Projekt erstellen. Die Features, die Sie in dieser Art von Projektmappe erstellen, sind für die Anwendung selbst verfügbar. Dabei spielt es keine Rolle, welche Projekte geöffnet sind. Weitere Informationen finden Sie unter [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO-&#41;](../vsto/office-solutions-development-overview-vsto.md).

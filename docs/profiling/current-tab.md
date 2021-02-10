@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65261d6304ead5ade7c28f40495fa68afb0c2171
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 4125a40ea0be18cceb99e7f3a8118a10d26a5437
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955865"
 ---
 # <a name="current-tab"></a>Registerkarte „Aktuell“
 Bei der Auswahl eines CPU-Threadsegments wird durch Klicken auf die Registerkarte **Aktuell** eine Aufrufliste (sofern vorhanden) angezeigt, die dem aktuellen Auswahlpunkt auf der Zeitachse am ehesten entspricht.  In diesem Fall wird der Auswahlpunkt durch einen schwarzen Pfeil oder ein Caretzeichen oberhalb der Zeitachse dargestellt. Wenn ein Blockierungssegment ausgewählt wird, wird das Caretzeichen nicht angezeigt, weil keine Ausführung stattgefunden hat. Das Segment wird aber dennoch hervorgehoben, und eine Aufrufliste wird angezeigt.

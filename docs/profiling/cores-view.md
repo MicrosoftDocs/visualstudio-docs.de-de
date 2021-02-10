@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b124cc2f609ab7a113fd28f7086172169138d5f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c4f04fd5021e0ac11cd04e2e04df96da19af1c77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951666"
 ---
 # <a name="cores-view"></a>Kernansicht
 Die **Kernansicht** zeigt, wie die Threadausführung den logischen Prozessorkernen zugeordnet wurde (wählen Sie **Analysieren** > **Nebenläufigkeitsschnellansicht** aus, um die Nebenläufigkeitsschnellansicht zu starten). Beim Schreiben von Serveranwendungen kann diese Ansicht nützlich sein: Optimieren Sie die Cacheleistung, indem Sie Threadaffinität oder Threadpoolverwaltung einsetzen. Manchmal kann sich auch die Prüfung von Fällen als hilfreich erweisen, in denen die Verwendung von Threadaffinität das Problem kernübergreifender Migration noch verstärkt hat. Die Kernansicht verfügt über zwei Komponenten: ein Diagramm und eine Legende.

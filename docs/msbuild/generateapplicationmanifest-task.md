@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2af490f27ab1cdecfe57da9253aff6c4247c7223
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914884"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest-Aufgabe
 

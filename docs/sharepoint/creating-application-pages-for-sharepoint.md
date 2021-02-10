@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949180"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Erstellen von Anwendungsseiten für SharePoint
   Eine *Anwendungsseite* ist eine ASP.NET-Webseite, die für die Verwendung auf einer SharePoint-Website konzipiert ist. Anwendungs Seiten sind ein spezieller Typ der ASP.NET-Seite. Der Hauptunterschied zwischen einer Anwendungsseite und einer standardmäßigen ASP.NET-Seite besteht darin, dass eine Anwendungsseite Inhalte enthält, die mit einer SharePoint-Master Seite zusammengeführt werden. Eine Master Seite ermöglicht es Anwendungs Seiten, dasselbe Aussehen und Verhalten wie andere Seiten auf einer Website zu verwenden.
@@ -73,7 +73,7 @@ ms.locfileid: "94850441"
 
  Sie können explizit ändern, welche Master Seite von der Anwendungsseite verwendet wird, indem Sie das- `MasterPageFile` Attribut des Application- `Page` Elements festlegen. (Beispiel: `MasterPageFile="~/_layouts/applicationv4.master"` ). Tatsächlich müssen Sie dieses Attribut festlegen, wenn dynamische Masterseiten auf dem SharePoint-Server nicht aktiviert sind. Weitere Informationen zu Masterseiten in SharePoint finden Sie unter [Masterseiten](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Ausführliche Informationen zur SharePoint Foundation-Entwicklung](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [ASP.net Übersicht](/aspnet/overview)
 - [ASP.NET-Webseiten 2](/aspnet/web-pages/index)

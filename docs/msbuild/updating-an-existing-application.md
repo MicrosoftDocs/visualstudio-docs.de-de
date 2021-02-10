@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bde46ef959e0d005c9ab90ef8d2807ed240571
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: bd7f47466074536c9088840e726f768f62f9346b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965927"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualisieren einer vorhandenen Anwendung für MSBuild 15
 
@@ -71,7 +71,7 @@ Verweisen Sie auf das Paket „Microsoft.Build.Locator“, um sicherzustellen, d
 
 ### <a name="ensure-output-is-clean"></a>Sicherstellen einer sauberen Ausgabe
 
-Erstellen Sie Ihr Projekt, und überprüfen Sie das Ausgabeverzeichnis, um sicherzustellen, dass es keine *Microsoft.Build.\*.dll* -Assemblys enthält (außer der im nächsten Schritt hinzugefügten *Microsoft.Build.Locator.dll* ).
+Erstellen Sie Ihr Projekt, und überprüfen Sie das Ausgabeverzeichnis, um sicherzustellen, dass es keine *Microsoft.Build.\*.dll*-Assemblys enthält (außer der im nächsten Schritt hinzugefügten *Microsoft.Build.Locator.dll*).
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Hinzufügen eines Paketverweises für Microsoft.Build.Locator
 

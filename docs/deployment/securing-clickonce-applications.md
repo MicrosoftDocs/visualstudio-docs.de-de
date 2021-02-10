@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cb992355378e6e124cadef3383633a52a9111c2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: aa698fc0ac0e46fa645ede54d6608b79dd031655
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949661"
 ---
 # <a name="secure-clickonce-applications"></a>Sichern von ClickOnce-Anwendungen
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen unterliegen in .NET Framework Einschränkungen in Bezug auf die Codezugriffssicherheit, um den Zugriff zu begrenzen, den Code auf geschützte Ressourcen und Vorgänge hat. Daher ist es wichtig, dass Sie sich mit dem Thema Codezugriffssicherheit auseinandersetzen und diese Kenntnisse beim Schreiben von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen anwenden. Die Anwendungen können Zonen mit voller Vertrauenswürdigkeit oder teilweise vertrauenswürdige Zonen verwenden, z. B. die Internet- und Intranetzonen, um den Zugriff einzuschränken.
@@ -79,5 +79,5 @@ ms.locfileid: "94350546"
  Visual Studio umfasst die kostenlose [PreEmptive Protection – Dotfuscator Community](../ide/dotfuscator/index.md), die Sie verwenden können, um Ihre ClickOnce-Anwendungen mithilfe von Codeobfuskation und aktiver Schutzmaßnahmen zu schützen.  Weitere Informationen finden Sie [im Abschnitt „ClickOnce“ des Dotfuscator Community Edition User Guide](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
 ## <a name="see-also"></a>Weitere Informationen
-- [ClickOnce-Sicherheit und-Bereitstellung](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)
 - [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

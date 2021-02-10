@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951510"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Hinzufügen eines Untermenüs zu einem Menü
 Diese exemplarische Vorgehensweise basiert auf der Demo in [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , indem gezeigt wird, wie ein Untermenü zum Menü **Testmenü** hinzugefügt wird.
@@ -125,7 +125,7 @@ Diese exemplarische Vorgehensweise basiert auf der Demo in [Hinzufügen eines Me
     }
     ```
 
-3. Fügen Sie `SubItemCallback()` hinzu. Dies ist die Methode, die aufgerufen wird, wenn auf den neuen Befehl im Untermenü geklickt wird.
+3. Fügen Sie `SubItemCallback()`hinzu. Dies ist die Methode, die aufgerufen wird, wenn auf den neuen Befehl im Untermenü geklickt wird.
 
     ```csharp
     private void SubItemCallback(object sender, EventArgs e)
@@ -155,7 +155,7 @@ Diese exemplarische Vorgehensweise basiert auf der Demo in [Hinzufügen eines Me
 
 5. Klicken Sie im Menü **Testmenü** auf **Untermenü** , und klicken Sie dann auf **Unterbefehl testen**. Ein Meldungs Feld sollte angezeigt werden, und der Text "Test Befehl in TestCommand. subitemcallback ()" wird angezeigt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Hinzufügen eines Menüs zur Visual Studio-Menüleiste](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
 - [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

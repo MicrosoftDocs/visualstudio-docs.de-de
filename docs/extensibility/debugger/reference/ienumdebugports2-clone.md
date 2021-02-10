@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d5ce77e8-bb99-409a-98fa-20fe5a0de25e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87842dfdb3de6ce120967bbbff785a1ec84f9ba4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db95ef169357faf621f3257154b63dabea1477f1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957061"
 ---
 # <a name="ienumdebugports2clone"></a>IEnumDebugPorts2::Clone
 Gibt eine Kopie der aktuellen Enumeration als ein separates Objekt zurück.

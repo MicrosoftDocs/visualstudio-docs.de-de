@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 94050565e6c5619781434c7a18307bfbf80b51f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933673"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referenz zu MSBuild-Tasks für WPF
 
@@ -59,7 +59,7 @@ Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch ei
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Bettet mindestens eine Ressource ( *JPG* , *ICO* , *BMP* , XAML im Binärformat und andere Erweiterungstypen) in eine *RESOURCES* -Datei ein.
+ Bettet mindestens eine Ressource (*JPG*, *ICO*, *BMP*, XAML im Binärformat und andere Erweiterungstypen) in eine *RESOURCES*-Datei ein.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -67,7 +67,7 @@ Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch ei
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Fügt dem Anwendungsmanifest ( *\<projectname>.exe.manifest* ) das Element **\<hostInBrowser />** hinzu, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
+ Fügt dem Anwendungsmanifest ( *\<projectname>.exe.manifest*) das Element **\<hostInBrowser />** hinzu, wenn ein XAML-Browseranwendungsprojekt (XBAP) erstellt wird.
 
 ## <a name="see-also"></a>Siehe auch
 

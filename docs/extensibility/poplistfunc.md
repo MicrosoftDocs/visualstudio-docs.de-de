@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: ddf641cf309eb5b5352904da2ac07b64b0886f97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967357"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Dieser Rückruf wird von der IDE für [sccpopulatelist](../extensibility/sccpopulatelist-function.md) bereitgestellt und wird vom Quellcodeverwaltungs-Plug-in verwendet, um eine Liste der Dateien oder Verzeichnisse (auch für die Funktion bereitgestellt) zu aktualisieren `SccPopulateList` .
@@ -54,7 +54,7 @@ typedef BOOL (*POPLISTFUNC) (
 |`TRUE`|Das Plug-in kann diese Funktion weiterhin aufrufen.|
 |`FALSE`|Es ist ein Problem auf der IDE-Seite aufgetreten (z. b. eine nicht genügend Arbeitsspeicher Situation). Das Plug-in sollte den Vorgang abbrechen.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Für jede Datei, die das Quellcodeverwaltungs-Plug-in der Datei Liste hinzufügen oder aus ihr löschen möchte, wird diese Funktion aufgerufen, wobei der übergeben wird `lpFileName` . Das- `fAddRemove` Flag gibt eine neue Datei an, die der Liste hinzugefügt werden soll, oder eine alte zu löschende Datei. Der- `nStatus` Parameter gibt den Status der Datei an. Wenn das SCC-Plug-in das Hinzufügen und Löschen von Dateien abgeschlossen hat, wird der [sccpopulatelist](../extensibility/sccpopulatelist-function.md) -Befehl zurückgegeben.
 
 > [!NOTE]

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a18302067749e3b4fc70b08519056dc391d3dca4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936885"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Messen der Anwendungsleistung durch Analyse der CPU-Nutzung
 
@@ -158,7 +158,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 Externer Code umfasst Funktionen in System- und Frameworkkomponenten, die vom Code ausgeführt werden, den Sie schreiben. Externer Code umfasst Funktionen, die die App starten und beenden, die Benutzeroberfläche zeichnen, das Threading steuern und der App andere hardwarenahe Dienste bereitstellen. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb das CPU-Auslastungstool die externen Funktionen einer Benutzermethode im Knoten **[Externer Code]** sammelt.
 
-Wenn Sie die Aufrufpfade von externem Code anzeigen möchten, wählen Sie aus der Liste **Filteransicht** die Option **Externen Code anzeigen** und dann **Übernehmen**aus.
+Wenn Sie die Aufrufpfade von externem Code anzeigen möchten, wählen Sie aus der Liste **Filteransicht** die Option **Externen Code anzeigen** und dann **Übernehmen** aus.
 
 ![Anzeigen der Filteransicht und anschließendes Anzeigen von externem Code](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 

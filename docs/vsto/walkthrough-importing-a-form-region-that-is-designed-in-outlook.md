@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], importing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9b65502bbf29f6e0df7435f6a27d3c51e8082e41
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969151"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Exemplarische Vorgehensweise: Importieren eines in Outlook entworfenen Formular Bereichs
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein Formularbereich in Microsoft Office Outlook entworfen und anschließend mithilfe des Assistenten **Neuer Formularbereich** in ein Outlook VSTO-Add-In-Projekt importiert wird. Durch das Entwerfen des Formularbereichs in Outlook ist es möglich, dass systemeigene Outlook-Steuerelemente zum Formularbereich hinzugefügt werden können, die Outlook-Daten binden. Nachdem Sie den Formularbereich importiert haben, können Sie die Ereignisse der einzelnen Steuerelemente behandeln.

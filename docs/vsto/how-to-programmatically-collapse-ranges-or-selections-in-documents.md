@@ -16,15 +16,15 @@ helpviewer_keywords:
 - collapsing ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cba19d8cb6c26defcbb7cf39f461a45bf217b5a5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9b063244c8ac611d3a864b9cc3753b5cd8460474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964289"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Gewusst wie: Programm gesteuertes reduzieren von Bereichen oder Auswahlen in Dokumenten
   Wenn Sie mit einem <xref:Microsoft.Office.Interop.Word.Range> - oder <xref:Microsoft.Office.Interop.Word.Selection> -Objekt arbeiten, möchten Sie die Auswahl vor dem Einfügen von Text möglicherweise auf eine Einfügemarke setzen, um das Überschreiben vorhandenen Texts zu vermeiden. Sowohl das <xref:Microsoft.Office.Interop.Word.Range> -Objekt als auch das- <xref:Microsoft.Office.Interop.Word.Selection> Objekt verfügen über eine Collapse-Methode, die die- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> Enumerationswerte verwendet:
@@ -89,7 +89,7 @@ ms.locfileid: "96847649"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Programm gesteuertes Einfügen von Text in Word-Dokumente](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Gewusst wie: Programm gesteuertes definieren und Auswählen von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Gewusst wie: Programm gesteuertes Abrufen von Start-und Endzeichen in Bereichen](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)

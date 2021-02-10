@@ -15,15 +15,15 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], updating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ca8cf2774b7a24ec3bef40418b6a2157bf0f992
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 584d2414235ca70bd8a8fbcb6d2b4e2a31a1828b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965745"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Anwendungs-und Bereitstellungs Manifeste in Office-Lösungen
   Ein Anwendungsmanifest ist eine XML-Datei, über die Informationen bereitgestellt werden, mit denen eine Office-Projektmappe nach ihren Assemblys sucht und diese aktualisiert. Ein Anwendungsmanifest kann zusammen mit einem Bereitstellungsmanifest verwendet werden. Dabei handelt es sich um eine XML-Datei, die auf dem Server gespeichert ist und die Informationen bereitstellt, die zum Auffinden der aktuellsten Version des Anwendungsmanifests und der Assemblys verwendet werden.
@@ -42,7 +42,7 @@ ms.locfileid: "96844711"
 
  Weitere Informationen zur Funktionsweise von Manifesten mit Office-Lösungen finden Sie unter Bereitstellen [einer Office](../vsto/deploying-an-office-solution.md)-Projekt Mappe.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Architektur von Anpassungen auf Dokument Ebene](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)

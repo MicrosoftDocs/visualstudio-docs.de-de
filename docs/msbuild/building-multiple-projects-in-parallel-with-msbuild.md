@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: c8e90a649a11933e4281140299bf9ee1b564a212
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939629"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Paralleles Erstellen von mehreren Projekten mit MSBuild
 
@@ -30,11 +30,11 @@ Sie können MSBuild verwenden, um mehrere Projekte schneller zu erstellen, indem
 - den <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A>-Aufgabenparameter in einer MSBuild-Aufgabe
 
 > [!NOTE]
-> Der Schalter **-verbosity** ( **-v** ) in einer Befehlszeile kann die Buildleistung ebenfalls beeinflussen. Die Buildleistung verringert sich möglicherweise, wenn die Ausführlichkeit der Buildprotokollinformationen auf die Einstellung "Detailliert" oder "Diagnose" festgelegt ist, die beide für die Problembehandlung verwendet werden. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) und [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).
+> Der Schalter **-verbosity** (**-v**) in einer Befehlszeile kann die Buildleistung ebenfalls beeinflussen. Die Buildleistung verringert sich möglicherweise, wenn die Ausführlichkeit der Buildprotokollinformationen auf die Einstellung "Detailliert" oder "Diagnose" festgelegt ist, die beide für die Problembehandlung verwendet werden. Weitere Informationen finden Sie unter [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) und [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="-maxcpucount-switch"></a>-maxcpucount-Schalter
 
-Wenn Sie den Schalter `-maxcpucount` oder die kurze Form `-m` verwenden, kann MSBuild die angegebene Anzahl von *MSBuild.exe* -Prozessen erstellen, die parallel ausgeführt werden können. Diese Prozesse werden auch als "Arbeitsprozesse" bezeichnet. Jeder Arbeitsprozess verwendet einen anderen Kern oder Prozessor, soweit verfügbar, um ein Projekt zu der gleichen Zeit zu erstellen wie andere verfügbare Prozessoren. Wenn Sie zum Beispiel diesen Schalter auf den Wert "4" festlegen, erstellt MSBuild vier Arbeitsprozesse zum Erstellen des Projekts.
+Wenn Sie den Schalter `-maxcpucount` oder die kurze Form `-m` verwenden, kann MSBuild die angegebene Anzahl von *MSBuild.exe*-Prozessen erstellen, die parallel ausgeführt werden können. Diese Prozesse werden auch als "Arbeitsprozesse" bezeichnet. Jeder Arbeitsprozess verwendet einen anderen Kern oder Prozessor, soweit verfügbar, um ein Projekt zu der gleichen Zeit zu erstellen wie andere verfügbare Prozessoren. Wenn Sie zum Beispiel diesen Schalter auf den Wert "4" festlegen, erstellt MSBuild vier Arbeitsprozesse zum Erstellen des Projekts.
 
 Wenn Sie den Schalter `-maxcpucount` verwenden, ohne einen Wert anzugeben, verwendet MSBuild alle Prozessoren des Computers.
 

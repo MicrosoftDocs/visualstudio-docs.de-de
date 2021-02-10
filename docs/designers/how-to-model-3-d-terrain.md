@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54010c46d121fd4221500afb3038013626939a1b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 969dd229d8d6cd6bdbe9d53eaabd63f1eedd6570
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930849"
 ---
 # <a name="how-to-model-3d-terrain"></a>Vorgehensweise: Modellieren eines 3D-Geländes
 
@@ -33,7 +33,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
 
 1. Erstellen Sie ein 3D-Modell, mit dem Sie arbeiten können. Weitere Informationen zum Hinzufügen eines Modells zu Ihrem Projekt finden Sie im Abschnitt „Erste Schritte“ unter [Modell-Editor](../designers/model-editor.md).
 
-2. Fügen Sie eine Fläche in die Szene ein. Klicken Sie in der **Toolbox** unter **Formen** auf **Ebene** , und verschieben Sie es auf die Entwurfsoberfläche.
+2. Fügen Sie eine Fläche in die Szene ein. Klicken Sie in der **Toolbox** unter **Formen** auf **Ebene**, und verschieben Sie es auf die Entwurfsoberfläche.
 
     > [!TIP]
     > Sie können das Ebenenobjekt auf der Entwurfsoberfläche umrahmen, um damit einfacher arbeiten zu können. Klicken Sie im Modus **Auswählen** auf das Ebenenobjekt und anschließend auf der Symbolleiste des Modell-Editors auf die Schaltfläche **Rahmenobjekt**
@@ -42,7 +42,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
 
 4. Unterteilen Sie die Ebene. Klicken Sie im Flächenauswahlmodus die Ebene einmal an, um sie auswählen zu können. Klicken Sie anschließend auf die Oberfläche der Ebene, um ihre einzige Fläche auszuwählen. Klicken Sie auf der Symbolleiste des Modell-Editors auf **Fläche unterteilen**. Dadurch werden neue Schnittpunkte auf der Oberfläche der Ebene hinzugefügt, die sie in vier gleichgroße Teile aufteilen.
 
-5. Erstellen Sie weitere Unterteilungen. Klicken Sie zweimal auf **Fläche unterteilen** , während die neuen Flächen noch ausgewählt sind. Dadurch werden insgesamt 64 Flächen erstellt. Sie können dem Gelände sogar noch mehr Details verleihen, indem Sie mehr Unterteilungen erstellen.
+5. Erstellen Sie weitere Unterteilungen. Klicken Sie zweimal auf **Fläche unterteilen**, während die neuen Flächen noch ausgewählt sind. Dadurch werden insgesamt 64 Flächen erstellt. Sie können dem Gelände sogar noch mehr Details verleihen, indem Sie mehr Unterteilungen erstellen.
 
 6. Gehen Sie in den Punktauswahlmodus. Wählen Sie auf der Symbolleiste des Modell-Editors **Punkt auswählen** aus.
 

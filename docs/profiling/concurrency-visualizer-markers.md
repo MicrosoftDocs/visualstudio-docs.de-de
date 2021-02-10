@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c3ff013f546393447b8303575489164a3a7be00a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941137"
 ---
 # <a name="concurrency-visualizer-markers"></a>Parallelitätsschnellansichtsmarker
 Marker sind in der Nebenläufigkeitsschnellansicht Symbole zur Darstellung der Ereignisse in einer App.  In der Regel generiert die App diese Ereignisse, um Phasen oder Vorkommen in einer Anwendung zu bestimmen.  Die Ereignisse können von der App oder von Bibliotheken und Laufzeiten generiert werden, die die App verwendet.

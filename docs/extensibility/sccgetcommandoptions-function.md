@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965199"
 ---
 # <a name="sccgetcommandoptions-function"></a>Sccgetcommandoptions-Funktion
 Diese Funktion fordert den Benutzer auf, erweiterte Optionen für einen angegebenen Befehl zu erhalten.

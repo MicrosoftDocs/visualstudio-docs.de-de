@@ -12,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4736b357017f5ff5244af8f078457b0289994e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962416"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Exemplarische Vorgehensweisen für Daten in Office-Lösungen
   In den folgenden exemplarischen Vorgehensweisen wird das Arbeiten mit Daten in Anpassungen auf Dokumentebene und in VSTO-Add-Ins für Microsoft Office Word und Microsoft Office Excel veranschaulicht.
@@ -49,7 +49,7 @@ ms.locfileid: "96845582"
 
 - Exemplarische Vorgehensweise [: Ändern von zwischengespeicherten Daten in einer Arbeitsmappe auf einem Server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) Veranschaulicht, wie ein DataSet, das in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, geändert werden kann, ohne Excel zu starten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweisen mit Word](../vsto/walkthroughs-using-word.md)
 - [Exemplarische Vorgehensweisen mit Excel](../vsto/walkthroughs-using-excel.md)
 - [Exemplarische Vorgehensweisen zur Anpassung von Office](../vsto/office-ui-customization-walkthroughs.md)

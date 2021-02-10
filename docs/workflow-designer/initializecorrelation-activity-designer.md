@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9591ef604fcf9374e9aa498e74c5a7761459589f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959791"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation-Aktivitätsdesigner
 
@@ -41,16 +41,16 @@ Um das Dialogfeld **Korrelation initialisieren** anzuzeigen, in dem Sie das Korr
 
 In der folgenden Tabelle sind die Eigenschaften aufgeführt, <xref:System.ServiceModel.Activities.InitializeCorrelation> und es wird beschrieben, wie Sie im Designer verwendet werden. Diese Eigenschaften können im **Eigenschaften** Fenster oder auf Workflow-Designer-Oberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.ServiceModel.Activities.InitializeCorrelation>-Aktivität. Der Standardwert lautet InitializeCorrelation.<br /><br /> Obwohl die Verwendung eines nicht standardmäßigen Werts für den benutzerfreundlichen nicht <xref:System.Activities.Activity.DisplayName%2A> unbedingt erforderlich ist, wird empfohlen.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|Das <xref:System.ServiceModel.Activities.CorrelationHandle>-Objekt, das verwendet wurde, um Workflowaktivitäten in der Korrelation zuzuordnen.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Ein Wörterbuch von Korrelationsdaten, die Nachrichten mit der Workflowinstanz verknüpft.<br /><br /> Verwenden Sie das Dialogfeld **Korrelation initialisieren** , um zu konfigurieren <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Weitere Informationen zum Dialogfeld dieses Dialogfeld verwenden finden Sie im Artikel typauflistungs- [Editor](../workflow-designer/type-collection-editor-dialog-box.md) .|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der Anzeigename der <xref:System.ServiceModel.Activities.InitializeCorrelation>-Aktivität. Der Standardwert lautet InitializeCorrelation.<br /><br /> Obwohl die Verwendung eines nicht standardmäßigen Werts für den benutzerfreundlichen nicht <xref:System.Activities.Activity.DisplayName%2A> unbedingt erforderlich ist, wird empfohlen.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|Falsch|Das <xref:System.ServiceModel.Activities.CorrelationHandle>-Objekt, das verwendet wurde, um Workflowaktivitäten in der Korrelation zuzuordnen.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|Falsch|Ein Wörterbuch von Korrelationsdaten, die Nachrichten mit der Workflowinstanz verknüpft.<br /><br /> Verwenden Sie das Dialogfeld **Korrelation initialisieren** , um zu konfigurieren <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Weitere Informationen zum Dialogfeld dieses Dialogfeld verwenden finden Sie im Artikel typauflistungs- [Editor](../workflow-designer/type-collection-editor-dialog-box.md) .|
 
 ## <a name="see-also"></a>Weitere Informationen
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Empfangen](../workflow-designer/receive-activity-designer.md)
+- [Medizinisch](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Senden](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

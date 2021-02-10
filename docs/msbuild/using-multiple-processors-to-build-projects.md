@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c1560b40fe94af8dae5223981dd8e0c790320085
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946370"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Verwenden mehrerer Prozessoren für die Erstellung von Projekten
 
@@ -38,7 +38,7 @@ MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit 
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++-Projektdateien (.vcproj) und Projektmappendateien (.sln)
 
- Sowohl C++-Projekt- als auch -Projektmappendateien ( *.vcxproj* und *.sln* ) können an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Für C++-Projekte wird VCWrapperProject aufgerufen, und anschließend wird das interne MSBuild-Projekt erstellt. Für C++-Projektmappen wird SolutionWrapperProject, und anschließend wird das interne MSBuild-Projekt erstellt. In beiden Fällen wird das resultierende Projekt auf die gleiche Weise behandelt wie jedes andere MSBuild-Projekt.
+ Sowohl C++-Projekt- als auch -Projektmappendateien ( *.vcxproj* und *.sln*) können an die [MSBuild-Aufgabe](../msbuild/msbuild-task.md) übergeben werden. Für C++-Projekte wird VCWrapperProject aufgerufen, und anschließend wird das interne MSBuild-Projekt erstellt. Für C++-Projektmappen wird SolutionWrapperProject, und anschließend wird das interne MSBuild-Projekt erstellt. In beiden Fällen wird das resultierende Projekt auf die gleiche Weise behandelt wie jedes andere MSBuild-Projekt.
 
 ## <a name="multi-process-execution"></a>Multiprozessausführung
 

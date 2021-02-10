@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 0384ee6cbfa749589e15ab073cc31ffebb53985e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912529"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference-Aufgabe
 
-Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer *TLB* -Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf.
+Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer *TLB*-Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf.
 
 ## <a name="parameters"></a>Parameter
 
@@ -50,7 +50,7 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 |`SdkToolsPath`|Optionaler <xref:System.String?displayProperty=fullName>-Parameter.<br /><br /> Wenn `ExecuteAsTool``true` ist, muss dieser Parameter auf den Pfad der SDK-Tools für die Zielframeworkversion festgelegt werden.|
 |`StateFile`|Optionaler `String`-Parameter.<br /><br /> Gibt die Cachedatei für die Zeitstempel von COM-Komponenten an. Falls nicht vorhanden, erstellt jede Ausführung alle Wrapper neu.|
 |`TargetFrameworkVersion`|Optionaler `String`-Parameter.<br /><br /> Gibt die Zielframeworkversion des Projekts an.<br /><br /> Der Standardwert ist `String.Empty`. Was bedeutet, dass nicht nach einem Verweis auf Grundlage des Zielframeworks gefiltert werden kann.|
-|`TargetProcessorArchitecture`|Optionaler `String`-Parameter.<br /><br /> Gibt die bevorzugte Zielprozessorarchitektur an. Wird nach der Übersetzung an das Flag *tlbimp.exe* /machine übergeben.<br /><br /> Der Parameterwert sollte ein Member des Typs <xref:Microsoft.Build.Utilities.ProcessorArchitecture> sein.|
+|`TargetProcessorArchitecture`|Optionaler `String`-Parameter.<br /><br /> Gibt die bevorzugte Zielprozessorarchitektur an. Wird nach der Übersetzung an das Flag *tlbimp.exe*/machine übergeben.<br /><br /> Der Parameterwert sollte ein Member des Typs <xref:Microsoft.Build.Utilities.ProcessorArchitecture> sein.|
 |`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt den Typbibliothek-Dateipfad zu COM-Verweisen an. In diesem Parameter enthaltene Elemente können Elementmetadaten enthalten. Weitere Informationen finden Sie im Abschnitt [TypeLibFiles-Elementmetadaten](#typelibfiles-item-metadata) weiter unten.|
 |`TypeLibNames`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die aufzulösenden Typbibliotheksnamen an. In diesem Parameter enthaltene Elemente müssen einige Elementmetadaten enthalten. Weitere Informationen finden Sie im Abschnitt [TypeLibNames-Elementmetadaten](#typelibnames-item-metadata) weiter unten.|
 |`WrapperOutputDirectory`|Optionaler `String`-Parameter.<br /><br /> Der Speicherort auf dem Datenträger für die generierte Interop-Assembly. Wenn diese Elementmetadaten nicht angegeben werden, verwendet der Task den absoluten Pfad des Verzeichnisses, in dem sich die Projektdatei befindet.|

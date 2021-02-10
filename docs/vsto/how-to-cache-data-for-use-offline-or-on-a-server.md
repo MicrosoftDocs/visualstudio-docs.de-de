@@ -16,15 +16,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], offline use
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ab53676d6c00fdda3bb7f4554321f0c0550e5748
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954045"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Gewusst wie: Zwischenspeichern von Daten zur Offline Verwendung oder auf einem Server
   Sie können ein Datenelement markieren, das im Dokument zwischengespeichert werden soll, damit es offline verfügbar ist. Dies ermöglicht es auch, dass die Daten im Dokument durch anderen Code manipuliert werden, wenn das Dokument auf einem Server gespeichert wird.
@@ -61,7 +61,7 @@ ms.locfileid: "96844321"
 
 4. Legen Sie im Fenster **Eigenschaften** die **modifizierereigenschaft** auf **Public** fest (Standardmäßig ist Sie **intern**).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Daten zwischenspeichern](../vsto/caching-data.md)
 - [Vorgehensweise: Programm gesteuertes Zwischenspeichern einer Datenquelle in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Vorgehensweise: Zwischenspeichern von Daten in einem Kenn Wort geschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)

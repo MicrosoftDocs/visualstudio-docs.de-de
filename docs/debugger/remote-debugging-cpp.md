@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934649"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Remotedebuggen eines C++-Projekts in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer installieren und führen Sie die Remotetools auf dem Computer aus, auf dem Sie die App bereitstellen möchten, konfigurieren Sie das Projekt für die Verbindung mit dem Remotecomputer über Visual Studio, und stellen Sie die App dann bereit und führen sie aus.

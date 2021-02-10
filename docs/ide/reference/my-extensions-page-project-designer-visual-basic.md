@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5030664722bfbea6d05320dad2932f09a4f4c93c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 4548f254106457d4b15de2a4fdf2822518bce8d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967240"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Seite "My-Erweiterungen", Projekt-Designer (Visual Basic)
 Verwenden Sie die Seite **My-Erweiterungen** des **Projekt-Designers**, um `My`-Namespaceerweiterungen in Ihrem Projekt zu verwalten. Mithilfe von `My`-Namespaceerweiterungen können Sie den `My`-Namespace so anpassen, dass Ihre eigenen benutzerdefinierten Member hinzugefügt werden. Informationen zum Erstellen der benutzerdefinierten `My`-Namespaceerweiterungen finden Sie unter [Erweitern des My-Namespaces in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

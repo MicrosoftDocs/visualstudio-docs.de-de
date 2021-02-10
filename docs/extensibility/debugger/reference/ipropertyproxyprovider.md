@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6082b06e6235a93b0e198d973b40efb728bd815
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962131"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Diese Schnittstelle stellt eine Proxy Schnittstelle bereit, um die Daten eines Objekts anzuzeigen und zu ändern.

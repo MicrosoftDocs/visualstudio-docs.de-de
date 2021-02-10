@@ -17,15 +17,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f1c383b5367b2966b9fd082b2d47570264b4d191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955774"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Zwischengespeicherte Daten in Anpassungen auf Dokument Ebene
   Das Hauptziel der Anpassungen auf Dokument Ebene besteht darin, Daten von der Sicht in Office-Dokumenten zu trennen. Daten bezieht sich auf die im Dokument gespeicherten Informationen, einschließlich Zahlen und Text. Die Ansicht bezieht sich auf die Benutzeroberfläche und das Objektmodell von Microsoft Office Word und Microsoft Office Excel.
@@ -62,6 +62,6 @@ ms.locfileid: "96847896"
 |Welche Arten von Daten können gespeichert werden?|Ein beliebiges öffentliches Objekt in der Anpassungsassembly, das bestimmte Anforderungen erfüllt. Weitere Informationen finden Sie unter zwischen [Speichern von Daten](../vsto/caching-data.md).|Beliebige XML-Daten.|
 |Können Sie auf die Daten zugreifen, ohne Microsoft Office Anwendungen zu starten?|Ja, mithilfe der- <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasse, die von bereitgestellt wird [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Ja, mithilfe von Klassen im- <xref:System.IO.Packaging> Namespace oder mit dem Open XML-Format-SDK.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)
 - [Architektur von Office-Projektmappen in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

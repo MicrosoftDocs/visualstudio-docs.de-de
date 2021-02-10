@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6c3f6238-b9f0-4325-b8b0-de61090bd0a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41557eb7df3da8a6322a3951520918ffb158b57a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: bf6bc7cf353a8a1da7854a350f352e69013eb52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966096"
 ---
 # <a name="task-base-class"></a>Aufgabenbasisklasse
 

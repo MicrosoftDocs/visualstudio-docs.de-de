@@ -5,16 +5,16 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4a735c374216b1810b3abd99ffab89000cec8b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eb7535430248f519654c09924541a6900336cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933088"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Installieren von Debugsymbolen für Python-Interpreter
 

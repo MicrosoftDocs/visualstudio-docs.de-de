@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, user controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e9d2f3a99e3e43ebf40208bf8dfc01d5ac92dca
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949128"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten
   In Visual Studio können Sie benutzerdefinierte, wiederverwendbare Steuerelemente für in SharePoint ausgeführte Anwendungsseiten und Webparts erstellen. Diese Steuerelemente werden als Benutzersteuerelemente bezeichnet. Ein Benutzersteuerelement ist ein zusammengesetztes Steuerelement, das ähnlich wie eine ASP.NET-Webseite funktioniert: Sie können einem Benutzersteuerelement vorhandene Webserver-Steuerelemente und Markup hinzufügen und Eigenschaften und Methoden für das Steuerelement definieren. Anschließend können Sie all dies in ASP.NET-Webseiten einbetten, wo es als Einheit fungiert.

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9d448adb2ba898eabdbac304c0087176e6ed7119
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918990"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Übersicht über die Festlegung von Zielversionen mit MSBuild
 
@@ -42,7 +42,7 @@ Mit MSBuild können Sie eine Anwendung kompilieren, die auf verschiedenen Versio
 
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)
 
- Ein Toolset umfasst die Tools, Aufgaben und Ziele, die verwendet werden, um die Anwendung zu erstellen. Ein Toolset umfasst Compiler wie *csc.exe* und *vbc.exe* , die Datei mit allgemeinen Zielen ( *microsoft.common.targets* ) und die Datei mit allgemeinen Aufgaben ( *microsoft.common.tasks* ). Das 4.5-Toolset kann verwendet werden, um auf die .NET Framework-Versionen 2.0, 3.0, 3.5, 4 und 4.5 abzuzielen. Das 2.0-Toolset kann dagegen nur für .NET Framework Version 2.0 verwendet werden. Weitere Informationen finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Ein Toolset umfasst die Tools, Aufgaben und Ziele, die verwendet werden, um die Anwendung zu erstellen. Ein Toolset umfasst Compiler wie *csc.exe* und *vbc.exe*, die Datei mit allgemeinen Zielen (*microsoft.common.targets*) und die Datei mit allgemeinen Aufgaben (*microsoft.common.tasks*). Das 4.5-Toolset kann verwendet werden, um auf die .NET Framework-Versionen 2.0, 3.0, 3.5, 4 und 4.5 abzuzielen. Das 2.0-Toolset kann dagegen nur für .NET Framework Version 2.0 verwendet werden. Weitere Informationen finden Sie unter [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Verweisassemblys
 

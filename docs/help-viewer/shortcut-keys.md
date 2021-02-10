@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 24f13e61f783b041134dc38a4c9bc1690421b6cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951133"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tastenkombinationen (Help Viewer)
 
@@ -28,7 +28,7 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Allgemeine Anwendung|**BRaum**|Überall außer in den Bearbeitungsfeldern anstelle von **EINGABE** verwenden|
 |Allgemeine Anwendung|**F1**|Öffnet die **Hilfe** zum aktuellen UI-Element|
 |Allgemeine Anwendung|**F11**|Wechselt zwischen der Vollbild- und der normalen Ansicht|
-|Symbolleiste|**RÜCKTASTE**<br /><br /> -ODER-<br /><br /> **Alt** + **Pfeil nach links**|Vorherige Seite anzeigen|
+|Symbolleiste|**RÜCKTASTE**<br /><br /> ODER<br /><br /> **Alt** + **Pfeil nach links**|Vorherige Seite anzeigen|
 |Symbolleiste|**Alt** + **Pfeil nach rechts**|Nächste Seite anzeigen|
 |Symbolleiste|**Alt** + **Startseite**|Startseite von **Help Reviewer** anzeigen|
 |Symbolleiste|**STRG** + **S**|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte **„Inhalt“**)|
@@ -38,17 +38,17 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Symbolleiste|**STRG** + **F2**|Zeigt eine Druckvorschau der aktuellen Seite an|
 |Symbolleiste|**STRG** + **O**|Öffnet das Dialogfeld **Viewer-Optionen**|
 |Symbolleiste|**STRG**+**UMSCHALT**+**M**|Öffnet die Registerkarte **Inhalt verwalten**|
-|Navigation|**Alt** + **C**<br /><br /> -ODER-<br /><br /> **STRG** + **UMSCHALT** + **C**|Öffnet die Registerkarte **Inhalt**.|
-|Navigation|**Alt** + **I**<br /><br /> -ODER-<br /><br /> **STRG** + **UMSCHALT** + **I**|Öffnet die Registerkarte **Index**|
-|Navigation|**Alt** + **F**<br /><br /> -ODER-<br /><br /> **STRG**+**UMSCHALT**+**F**|Öffnet die Registerkarte **Favoriten**|
-|Navigation|**Alt** + **S**<br /><br /> -ODER-<br /><br /> **STRG**+E<br /><br /> -ODER-<br /><br /> **STRG** + **UMSCHALT** + **S**|Öffnet die Registerkarte **Suche**.|
-|Navigation|**Alt** + **M**<br /><br /> -ODER-<br /><br /> **STRG**+**UMSCHALT**+**M**|Öffnet die Registerkarte **Inhalt verwalten**|
-|Thema|**MENÜTASTE**<br /><br /> oder<br /><br /> **UMSCHALT** + **F10**|Öffnet das Kontextmenü für das aktuelle UI-Element|
+|Navigation|**Alt** + **C**<br /><br /> ODER<br /><br /> **STRG** + **UMSCHALT** + **C**|Öffnet die Registerkarte **Inhalt**.|
+|Navigation|**Alt** + **I**<br /><br /> ODER<br /><br /> **STRG** + **UMSCHALT** + **I**|Öffnet die Registerkarte **Index**|
+|Navigation|**Alt** + **F**<br /><br /> ODER<br /><br /> **STRG**+**UMSCHALT**+**F**|Öffnet die Registerkarte **Favoriten**|
+|Navigation|**Alt** + **S**<br /><br /> ODER<br /><br /> **STRG**+E<br /><br /> ODER<br /><br /> **STRG** + **UMSCHALT** + **S**|Öffnet die Registerkarte **Suche**.|
+|Navigation|**Alt** + **M**<br /><br /> ODER<br /><br /> **STRG**+**UMSCHALT**+**M**|Öffnet die Registerkarte **Inhalt verwalten**|
+|Thema|**MENÜTASTE**<br /><br /> ODER<br /><br /> **UMSCHALT** + **F10**|Öffnet das Kontextmenü für das aktuelle UI-Element|
 |Thema|**NACH-OBEN-TASTE**|Scrollt Zeile für Zeile zum Anfang des Dokuments|
 |Thema|**NACH-UNTEN-TASTE**|Scrollt Zeile für Zeile zum Anfang des Dokuments|
-|Thema|**Bild-auf**|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
-|Thema|**Bild-ab**|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
-|Thema|**Startseite**|Springt zum Anfang des Dokuments|
+|Thema|**BILD-AUF**|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
+|Thema|**BILD-AB**|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|
+|Thema|**Home**|Springt zum Anfang des Dokuments|
 |Thema|**ENDE**|Springt zum Ende des Dokuments|
 |Thema|**STRG**+**F**|Finden von Suchtext auf dieser Seite|
 |Thema|**F5**|Aktualisiert die aktuelle Seite|
@@ -60,14 +60,14 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |Thema|**STRG**+**TAB**|Wechselt von links nach rechts zwischen Registerkarten|
 |Thema|**STRG** + **UMSCHALT** + **Registerkarte**|Wechselt von rechts nach links zwischen Registerkarten|
 |Thema|**STRG** + **W**|Schließt die aktuelle Registerkarte|
-|Thema|**STRG** + ** _Zahl_**|Wechselt zu einer bestimmten Registerkarte, wobei **_Zahl_** zwischen 1 und 9 liegt und angibt, zu welcher Registerkarte gewechselt werden soll|
+|Thema|**STRG** + **_Zahl_**|Wechselt zu einer bestimmten Registerkarte, wobei **_Zahl_** zwischen 1 und 9 liegt und angibt, zu welcher Registerkarte gewechselt werden soll|
 |Thema|**STRG** + **Alt** + **F4**|Schließt andere Inhaltsregisterkarten|
 |Thema|**STRG** + **UMSCHALT** + **Plus Zeichen**|Zoomt um 10 % heran|
 |Thema|**STRG** + **Minus Zeichen**|Zoomt um 10 % heraus|
-|Thema|**STRG** + **0** (null)|Ändert den Zoom auf 100 %|
-|Index|**Registerkarte**|Ändert den Fokus vom Schlüsselworteintrag zur Schlüsselwortliste|
+|Thema|**STRG**+**0** (null)|Ändert den Zoom auf 100 %|
+|Index|**TABULATORTASTE**|Ändert den Fokus vom Schlüsselworteintrag zur Schlüsselwortliste|
 |Index|**STRG** + **K**|Wechselt zwischen Einträgen, die das Schlüsselwort enthalten, das Sie angeben, und Einträgen, die mit dem Schlüsselwort beginnen, das Sie angeben|
-|Favoriten|**STRG** + **UMSCHALT** + **Del** ENTF|Löscht Ihren Browserverlauf|
+|Favoriten|**STRG** + **UMSCHALT** +  ENTF|Löscht Ihren Browserverlauf|
 |Favoriten|**ENTF**|Löscht das angegebene Elementname|
 |Favoriten|**STRG** + **N**|Erstellt einen Ordner in den **Favoriten**.|
 |Favoriten|**F2**|Benennt den angegebenen Favoriten oder Ordner um|
@@ -102,18 +102,18 @@ Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den **Mic
 |-|-|
 |**Alt** + **D**|Ändert die Inhaltsinstallationsquelle in einen Datenträger|
 |**Alt** + **O**|Ändert die Inhaltsinstallationsquelle in Online|
-|**Registerkarte**|Ändert den Fokus in das Textfeld **Lokaler Speicherpfad**|
-|**Registerkarte**|Ändert den Fokus auf die Schaltfläche **Verschieben**|
+|**TABULATORTASTE**|Ändert den Fokus in das Textfeld **Lokaler Speicherpfad**|
+|**TABULATORTASTE**|Ändert den Fokus auf die Schaltfläche **Verschieben**|
 |**Alt** + **V**|Öffnet das Dialogfeld **Inhalt verschieben**|
 |**STRG** + **Alt** + **F**|Ändert den Fokus auf das Textfeld **Filterdokumentation**|
-|**Registerkarte**|Ändert den Fokus auf die Dokumentationsliste|
+|**TABULATORTASTE**|Ändert den Fokus auf die Dokumentationsliste|
 |Pfeil nach **oben** und **nach unten**|Scrollt durch die Dokumentationsliste|
 |**BRaum**|Fügt das Element der Liste **Ausstehende Änderungen** hinzu|
-|**Registerkarte**|Ändert den Fokus auf die Liste **Ausstehende Änderungen**|
+|**TABULATORTASTE**|Ändert den Fokus auf die Liste **Ausstehende Änderungen**|
 |Pfeil nach **oben** und **nach unten**|Scrollt durch die Liste **Ausstehende Änderungen**|
 |**BRaum**|Entfernt ein Element aus der Liste **Ausstehende Änderungen**|
 |**Alt** + **T**|Wendet alle ausstehenden Änderungen an|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Barrierefreiheitsfunktionen von Help Viewer](accessibility-features.md)

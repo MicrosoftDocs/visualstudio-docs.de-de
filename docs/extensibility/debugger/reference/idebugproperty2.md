@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721227"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962196"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Diese Schnittstelle stellt eine Stapel Rahmen Eigenschaft, eine Programmdokument Eigenschaft oder eine andere Eigenschaft dar. Die-Eigenschaft ist normalerweise das Ergebnis einer Ausdrucks Auswertung.

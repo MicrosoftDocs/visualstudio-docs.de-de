@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 6a899bcc132b9229c1046dee5793278f79ea9e5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948894"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Bereitstellen von Erweiterungen für die SharePoint-Tools in Visual Studio
 
@@ -128,7 +128,7 @@ In den folgenden Prozeduren wird beschrieben, wie Sie für jedes dieser Elemente
 
 3. Wählen Sie in der Liste **Typ** den Eintrag **Microsoft. VisualStudio. ProjectTemplate** oder **Microsoft. VisualStudio. ItemTemplate** aus.
 
-4. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
+4. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 5. Wählen Sie in der Liste **Projekt** den Namen des Projekts aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -267,7 +267,7 @@ Das folgende Beispiel zeigt den Inhalt einer Erweiterung. vsixmanifest-Datei fü
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erweitern des SharePoint-Projektsystems](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Erweitern des Knotens „SharePoint-Verbindungen“ im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

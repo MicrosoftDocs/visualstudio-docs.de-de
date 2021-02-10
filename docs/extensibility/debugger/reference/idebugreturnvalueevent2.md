@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0afc4284795ae8dcae7b41d9207ddc6e7c11e67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bc76d7e7aaf9e443fc1dec08d83b3eb9e343e0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963054"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, nachdem eine Funktion durchlaufen wurde.

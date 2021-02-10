@@ -15,19 +15,19 @@ f1_keywords:
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a127263bc9bf94997585d07bff1b8d317b282e91
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 27b2c5765f041252e62defd15a3c7b6d7b460b43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932461"
 ---
 # <a name="options-dialog-box-text-editor--javascript--formatting"></a>Dialogfeld „Optionen“: Text-Editor \> JavaScript \> Formatierung
 
-Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen** , um Optionen zur Formatierung von Code im Code-Editor festzulegen. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Formatierung** erweitern.
+Verwenden Sie die Seite **Formatierung** im Dialogfeld **Optionen**, um Optionen zur Formatierung von Code im Code-Editor festzulegen. Öffnen Sie diese Seite, indem Sie auf der Menüleiste auf **Extras** > **Optionen** klicken und anschließend den Bereich **Text-Editor** >  **JavaScript/TypeScript** > **Formatierung** erweitern.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

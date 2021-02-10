@@ -12,15 +12,15 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8fc572f6fc5c0444fda619af5af49c6c2e52ac5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949115"
 ---
 # <a name="create-sharepoint-features"></a>SharePoint-Features erstellen
   Sie können eine SharePoint-Funktion verwenden, um verwandte SharePoint-Projekt Elemente zur einfacheren Bereitstellung zu gruppieren. Mithilfe des SharePoint-Funktions-Designers können Sie Features erstellen, Bereiche festlegen und andere Features als Abhängigkeiten markieren. Der Designer generiert auch ein Manifest, das eine XML-Datei ist, in der die einzelnen Features beschrieben werden.
@@ -42,8 +42,8 @@ ms.locfileid: "94850584"
 
 |Eigenschaft|BESCHREIBUNG|
 |--------------|-----------------|
-|Titel|Optional. Der Standard Titel der Funktion ist auf *SolutionName* *FeatureName* festgelegt.|
-|BESCHREIBUNG|Optional. Die Beschreibung des SharePoint-Features.|
+|Titel|Dies ist optional. Der Standard Titel der Funktion ist auf *SolutionName* *FeatureName* festgelegt.|
+|BESCHREIBUNG|Dies ist optional. Die Beschreibung des SharePoint-Features.|
 |Bereich|Erforderlich. Wenn eine Funktion mithilfe von **Projektmappen-Explorer** erstellt wird, wird der Gültigkeitsbereich standardmäßig auf Web festgelegt.<br /><br /> -Farm: aktiviert eine Funktion für eine gesamte Server Farm.<br /><br /> -Site: aktiviert eine Funktion für alle Websites in einer Website Sammlung.<br /><br /> -Web: aktiviert eine Funktion für eine bestimmte Website.<br /><br /> -WebApplication: aktiviert eine Funktion für alle Websites in einer Webanwendung.|
 |Elemente in der Lösung|Alle SharePoint-Elemente, die der Funktion hinzugefügt werden können.|
 |Elemente in der Funktion|Die SharePoint-Projekt Elemente, die der Funktion hinzugefügt wurden.|
@@ -54,7 +54,7 @@ ms.locfileid: "94850584"
 ## <a name="add-feature-dependencies"></a>Funktions Abhängigkeiten hinzufügen
  Sie können das Featuremanifest so konfigurieren, dass bestimmte Features vom SharePoint-Server aktiviert werden, bevor das Feature aktiviert wird. Wenn die SharePoint-Funktion z. b. von anderen Features für Funktionen oder Daten abhängt, kann der SharePoint-Server zunächst versuchen, eine der Features zu aktivieren, von denen ihre Funktion abhängt. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen und Entfernen von Featureabhängigkeiten](../sharepoint/how-to-add-and-remove-feature-dependencies.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Anpassen einer SharePoint-Funktion](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Gewusst wie: Hinzufügen und Entfernen von Elementen zu SharePoint-Features](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
 - [Vorgehensweise: Hinzufügen und Entfernen von Featureabhängigkeiten](../sharepoint/how-to-add-and-remove-feature-dependencies.md)

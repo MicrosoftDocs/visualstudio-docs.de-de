@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6b3bb4c1a17cd5d1481be2fa942686bce3861bb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918919"
 ---
 # <a name="msbuild-tasks"></a>MSBuild-Aufgaben
 
@@ -69,7 +69,7 @@ Eine Buildplattform muss während des Buildprozesses eine beliebige Anzahl von A
 
 ## <a name="overridden-tasks"></a>Überschriebene Aufgaben
 
- MSBuild sucht an verschiedenen Speicherorten nach Aufgaben. Beim ersten Speicherort handelt es sich um Dateien mit der Erweiterung *.OverrideTasks* , die in den .NET Framework-Verzeichnissen gespeichert sind. Aufgaben in diesen Dateien überschreiben alle anderen Aufgaben mit denselben Namen, einschließlich Aufgaben in der Projektdatei. Beim zweiten Speicherort handelt es sich um Dateien mit der Erweiterung *.Tasks* , die in den .NET Framework-Verzeichnissen gespeichert sind. Wird die Aufgabe in keinem dieser beiden Speicherorte gefunden, so wird die Aufgabe in der Projektdatei verwendet.
+ MSBuild sucht an verschiedenen Speicherorten nach Aufgaben. Beim ersten Speicherort handelt es sich um Dateien mit der Erweiterung *.OverrideTasks*, die in den .NET Framework-Verzeichnissen gespeichert sind. Aufgaben in diesen Dateien überschreiben alle anderen Aufgaben mit denselben Namen, einschließlich Aufgaben in der Projektdatei. Beim zweiten Speicherort handelt es sich um Dateien mit der Erweiterung *.Tasks*, die in den .NET Framework-Verzeichnissen gespeichert sind. Wird die Aufgabe in keinem dieser beiden Speicherorte gefunden, so wird die Aufgabe in der Projektdatei verwendet.
 
 ## <a name="see-also"></a>Siehe auch
 

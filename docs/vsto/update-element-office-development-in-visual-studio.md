@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <update> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968761"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Update- &gt; Element (Office-Entwicklung in Visual Studio)
   Das- `update` Element gibt das Intervall an, in dem die Projekt Mappe nach Updates sucht.

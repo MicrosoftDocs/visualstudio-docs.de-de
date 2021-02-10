@@ -5,17 +5,17 @@ ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 375f56d8a367c6d5cb090e10069b714b5a3843f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969541"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Kompilieren von TypeScript-Code (ASP.NET Core)
 

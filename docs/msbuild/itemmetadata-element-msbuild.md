@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aba274068d8cba4f22526fdefac36d6c75f9f1e2
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9f48c57769ff6f969e68a50418b017d9928149fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913812"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata-Element (MSBuild)
 
@@ -44,7 +44,7 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 

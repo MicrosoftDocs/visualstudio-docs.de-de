@@ -16,15 +16,15 @@ helpviewer_keywords:
 - GenerateDeploymentManifest task [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a35804a1523b3387061b4666cd483a9c3b0476
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 436aeb1b318aaa98d8a8cc9d8dac6baf4dd3c6c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914762"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest-Aufgabe
 

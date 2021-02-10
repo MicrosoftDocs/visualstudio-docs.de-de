@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26de14b4c5e23334da85d49d5192ec332e418af8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961923"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 Diese Struktur stellt die Adresse einer Methode einer Klasse dar.

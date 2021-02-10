@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 00ee9f41695078d8bea5daacf1c0ccfd392a64cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948868"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Definieren von benutzerdefinierten SharePoint-Projekt Elementtypen
   Definieren Sie einen neuen SharePoint-Projekt Elementtyp, wenn Sie eine neue Art von SharePoint-Projekt Element erstellen möchten. Beispielsweise enthält Visual Studio keine SharePoint-Projekt Elemente zum Hinzufügen von Feldern oder benutzerdefinierten Aktionen zu einer SharePoint-Website. Sie können eigene Typen von SharePoint-Projekt Elementen definieren, um Felder, benutzerdefinierte Aktionen oder andere Typen von SharePoint-Komponenten zu erstellen.
@@ -42,7 +42,7 @@ ms.locfileid: "94672833"
 
  Um auf eine bestimmte Instanz des Projekt Elementtyps zuzugreifen, behandeln Sie eines der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> Ereignisse des *projectItemTypeDefinition* -Parameters in der Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> Methode. Um z. b. zu ermitteln, ob ein Projekt Element des benutzerdefinierten Typs einem Projekt hinzugefügt wird, behandeln Sie das- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> Ereignis. Weitere Informationen finden Sie unter Gewusst [wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [Gewusst wie: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projekt Elementtyp](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu einem benutzerdefinierten SharePoint-Projekt Elementtyp](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)

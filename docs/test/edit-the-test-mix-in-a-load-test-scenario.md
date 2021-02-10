@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: d6681b8aead05a180df04b1c3953002aa832a281
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 99cc7f629fe28bb241033113bdecca043d67f032
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926793"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Bearbeiten der Testmischung zum Angeben, welche Webleistungstests, Komponententests und Tests der programmierten UI in ein Auslastungstestszenario einbezogen werden sollen
 

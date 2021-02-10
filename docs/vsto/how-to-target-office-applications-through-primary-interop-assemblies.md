@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 11a0db0e23cf5512a6568ba5b66e0c18e563bd12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962378"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Gewusst wie: Ausrichten von Office-Anwendungen über primäre Interop-Assemblys
   Wenn Sie ein neues Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die primären Interopassemblys (PIAs) von Microsoft Office hinzu, die zum Erstellen des Projekts erforderlich sind. Verweise auf andere PIAs müssen in den folgenden Szenarien hinzugefügt werden:

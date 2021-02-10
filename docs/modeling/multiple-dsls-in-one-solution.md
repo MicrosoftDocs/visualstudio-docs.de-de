@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fbadc93f6245427284ea10c1cdd7cf99c5a7f68
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 10eeee4d36e6a28bb6cd872573c500bbdf6dca14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950345"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Mehrere DSLs in einer Projektmappe
 
@@ -56,7 +56,7 @@ Sie können verschiedene Techniken für die Integration mehrerer DSLs nutzen. We
 
    Die resultierende VSIX installiert beide DSLs. Sie können Sie mit F5 testen oder _yourvsixproject_**\bin\debug \\ \* . vsix** bereitstellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Integrieren von Modellen mit Visual Studio-ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Gewusst wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)

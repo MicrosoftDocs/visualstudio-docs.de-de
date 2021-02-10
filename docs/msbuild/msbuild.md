@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: dbf938e61cc1567beb682847821595f5ca6cc026
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905475"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Die Microsoft-Build-Engine ist eine Plattform zum Erstellen von Anwendungen. Diese Engine, die auch als MSBuild bezeichnet wird, stellt ein XML-Schema für Projektdateien bereit, mit dem sich steuern lässt, wie die Buildplattform Software und Prozesse erstellt und verarbeitet. Visual Studio verwendet MSBuild, MSBuild ist jedoch nicht von Visual Studio abhängig. Wenn Sie *msbuild.exe* im Projekt oder in der Projektmappendatei aufrufen, können Sie Produkte in Umgebungen orchestrieren und erstellen, in denen Visual Studio nicht installiert ist.
 
- Visual Studio verwendet MSBuild, um verwaltete Projekte zu laden und zu erstellen. Die Projektdateien in Visual Studio ( *CSPROJ* -, *VBPROJ* -, *VCXPROJ* -Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Alle erforderlichen Einstellungen und Buildprozesse werden für die reguläre Entwicklungsarbeit in Visual Studio-Projekte importiert. Sie können diese jedoch in Visual Studio oder mithilfe eine XML-Editors erweitern oder ändern.
+ Visual Studio verwendet MSBuild, um verwaltete Projekte zu laden und zu erstellen. Die Projektdateien in Visual Studio (*CSPROJ*-, *VBPROJ*-, *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Alle erforderlichen Einstellungen und Buildprozesse werden für die reguläre Entwicklungsarbeit in Visual Studio-Projekte importiert. Sie können diese jedoch in Visual Studio oder mithilfe eine XML-Editors erweitern oder ändern.
 
  Weitere Informationen zu MSBuild für C++ finden Sie unter [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -55,7 +55,7 @@ Dieser Artikel enthält eine Übersicht über MSBuild. Ein Einführungstutorial 
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>Verwenden von MSBuild an einer Eingabeaufforderung
 
- Um MSBuild an einer Eingabeaufforderung auszuführen, übergeben Sie eine Projektdatei mit den entsprechenden Befehlszeilenoptionen an *MSBuild.exe*. Über Befehlszeilenoptionen können Sie Eigenschaften festlegen, bestimmte Ziele ausführen und weitere Optionen für die Steuerung des Buildprozesses festlegen. Beispielsweise verwenden Sie die folgende Befehlszeilensyntax zum Erstellen der Datei *MyProj.proj* , deren `Configuration`-Eigenschaft auf `Debug` festgelegt ist.
+ Um MSBuild an einer Eingabeaufforderung auszuführen, übergeben Sie eine Projektdatei mit den entsprechenden Befehlszeilenoptionen an *MSBuild.exe*. Über Befehlszeilenoptionen können Sie Eigenschaften festlegen, bestimmte Ziele ausführen und weitere Optionen für die Steuerung des Buildprozesses festlegen. Beispielsweise verwenden Sie die folgende Befehlszeilensyntax zum Erstellen der Datei *MyProj.proj*, deren `Configuration`-Eigenschaft auf `Debug` festgelegt ist.
 
 ```cmd
 MSBuild.exe MyProj.proj -property:Configuration=Debug
@@ -156,7 +156,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 ## <a name="use-msbuild-in-visual-studio"></a>Verwenden von MSBuild in Visual Studio
 
- Visual Studio verwendet das MSBuild-Projektdateiformat zum Speichern von Erstellungsinformationen zu verwalteten Projekten. Die Projekteinstellungen, die mithilfe der Visual Studio-Schnittstelle hinzugefügt oder geändert werden, werden in der *.\*proj* -Datei gespeichert, die für das jeweilige Projekt generiert wird. Visual Studio erstellt verwaltete Projekte mithilfe einer gehosteten Instanz von MSBuild. Das bedeutet, dass ein verwaltetes Projekt mit demselben Ergebnis entweder in Visual Studio oder über eine Befehlszeile erstellt werden kann (auch wenn Visual Studio nicht installiert ist).
+ Visual Studio verwendet das MSBuild-Projektdateiformat zum Speichern von Erstellungsinformationen zu verwalteten Projekten. Die Projekteinstellungen, die mithilfe der Visual Studio-Schnittstelle hinzugefügt oder geändert werden, werden in der *.\*proj*-Datei gespeichert, die für das jeweilige Projekt generiert wird. Visual Studio erstellt verwaltete Projekte mithilfe einer gehosteten Instanz von MSBuild. Das bedeutet, dass ein verwaltetes Projekt mit demselben Ergebnis entweder in Visual Studio oder über eine Befehlszeile erstellt werden kann (auch wenn Visual Studio nicht installiert ist).
 
  Ein Tutorial zur Verwendung von MSBuild in Visual Studio finden Sie unter [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md).
 

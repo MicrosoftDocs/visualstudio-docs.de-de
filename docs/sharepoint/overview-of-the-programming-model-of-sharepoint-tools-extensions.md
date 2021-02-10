@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: b823aecff4f05208094bd98b559a661c7f23fc5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970529"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Übersicht über das Programmiermodell von Erweiterungen für SharePoint-Tools
   Wenn Sie eine Erweiterung für die SharePoint-Tools in Visual Studio erstellen, beginnen Sie damit, indem Sie eine oder mehrere Erweiterungsschnittstellen implementieren, die von den SharePoint-Tools verfügbar gemacht werden. In den meisten Fällen verwenden Sie auch andere von den SharePoint-Tools bereitgestellte Typen, um Funktionen in der Erweiterung zu implementieren. Für einige Szenarien können Sie auch Typen in anderen Objektmodellen verwenden, die von Visual Studio und SharePoint bereitgestellt werden. Sie müssen den Zweck der einzelnen Objektmodelle verstehen und wissen, wie Sie diese miteinander kombinieren können, um Erweiterungen für die SharePoint-Tools zu erstellen.
@@ -32,7 +32,7 @@ ms.locfileid: "96305130"
 
  Um die SharePoint-Tools zu erweitern, implementieren Sie eine oder mehrere Erweiterungsschnittstellen, die von Visual Studio bereitgestellt werden. Sie müssen auch das <xref:System.ComponentModel.Composition.ExportAttribute> sowie bei Bedarf weitere für die SharePoint-Tools spezifische Attribute auf Ihre Schnittstellenimplementierung anwenden. In der folgenden Tabelle sind die Schnittstellen aufgeführt, die Sie zum Erweitern der SharePoint-Tools implementieren können.
 
-|Interface|Beschreibung|
+|Schnittstelle|BESCHREIBUNG|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|Implementieren Sie diese Schnittstelle, um einen neuen Typ von SharePoint-Projektelement zu definieren. Ein Beispiel finden Sie unter Gewusst [wie: Definieren eines SharePoint-Projekt Elementtyps](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|Implementieren Sie diese Schnittstelle, um einen SharePoint-Projektelementtyp zu erweitern, der in Visual Studio bereits installiert ist. Ein Beispiel finden Sie unter Gewusst [wie: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).|
@@ -104,12 +104,12 @@ ms.locfileid: "96305130"
 
  Sie können APIs aus beiden Objektmodellen in einer SharePoint-Tools-Erweiterung verwenden. Beide Objektmodelle haben jedoch bestimmte Vor- und Nachteile im Kontext der SharePoint-Tools-Erweiterungen. Weitere Informationen finden Sie unter " [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)".
 
-|Objektmodell|Beschreibung|
+|Objektmodell|BESCHREIBUNG|
 |------------------|-----------------|
 |Serverobjektmodell|Das Serverobjektmodell bietet Zugriff auf alle Funktionen, die [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] programmgesteuert verfügbar machen. Dieses Objektmodell wurde für SharePoint-Lösungen entworfen, die auf dem SharePoint-Server ausgeführt werden. Der Großteil dieses Objektmodells wird in der *Microsoft.SharePoint.dll* -Assembly definiert. Weitere Informationen zum Server Objektmodell finden [Sie unter Verwenden des SharePoint Foundation Server-Side-Objektmodells](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Clientobjektmodell|Das Clientobjektmodell ist eine Teilmenge des Serverobjektmodells und kann verwendet werden, um die SharePoint-Daten auf einem Remoteclient oder einem Server zu verarbeiten. Beim Entwurf wurde darauf geachtet, die Anzahl der Roundtrips zu minimieren, die zum Ausführen häufiger Aufgaben notwendig ist. Der Großteil des Client Objektmodells wird in den *Microsoft.SharePoint.Client.dll* -und *Microsoft.SharePoint.Client.Runtime.dll* Assemblys definiert. Weitere Informationen zum Client Objektmodell finden Sie unter [verwaltetes Client Objektmodell](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Erweitern der SharePoint-Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Verwenden des SharePoint-Projekt Dienstanbieter](../sharepoint/using-the-sharepoint-project-service.md)

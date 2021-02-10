@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8fb1aa194688533855b7c5bd1d58a4e3b97ac749
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948841"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Entwerfen eines Business Data Connectivity-Modells
   Sie können ein Modell für den Business Data Connectivity (BDC)-Dienst entwickeln, indem Sie einer Modelldatei Entitäten und Methoden hinzufügen. Eine Entität beschreibt eine Auflistung von Datenfeldern. Beispielsweise kann eine Entität eine Tabelle in einer Datenbank darstellen. Eine Methode führt eine Aufgabe aus, z. b. das Hinzufügen, löschen oder Aktualisieren von Daten, die von den Entitäten dargestellt Weitere Informationen finden Sie unter [integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -33,7 +33,7 @@ ms.locfileid: "94672651"
 ## <a name="add-methods"></a>Methoden hinzufügen
  Der BDC-Dienst ruft Methoden in Ihrem Modell auf, wenn Benutzerinformationen in einer Liste oder einem Webpart, die auf Ihrem Modell basiert, anzeigen, hinzufügen, aktualisieren oder löschen. Sie müssen dem Modell für jede Aufgabe, die der Benutzer ausführen kann, eine Methode hinzufügen. Erstellen Sie Methoden, indem Sie einen der fünf grundlegenden Methoden Typen aus dem Details-Fenster der **BDC-Methode** auswählen. In der folgenden Tabelle werden die fünf grundlegenden Methoden eines BDC-Modells beschrieben.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |Finder|Gibt eine Auflistung von Entitäts Instanzen zurück. Wird aufgerufen, wenn der Benutzer die Liste oder das WebPart öffnet. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md).|
 |Spezifischer Finder|Gibt eine bestimmte Entitäts Instanz zurück. Wird aufgerufen, wenn ein Benutzer die Details eines bestimmten Elements in einer Liste anzeigt. Weitere Informationen finden Sie unter Gewusst [wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md).|
@@ -113,7 +113,7 @@ ms.locfileid: "94672651"
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung|
+|Titel|BESCHREIBUNG|
 |-----------|-----------------|
 |[Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md)|Beschreibt die Tools, die Sie verwenden können, um ein Modell für den BDC visuell zu entwerfen.|
 |[Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md)|Zeigt, wie dem Modell externe Inhaltstypen oder Entitäten hinzugefügt werden.|

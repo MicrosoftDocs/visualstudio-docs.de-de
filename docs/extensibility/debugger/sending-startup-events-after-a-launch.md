@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e5263c696f9f76c71463538d56414702e616a670
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960844"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Start Ereignisse nach einem Start senden
 Nachdem die Debug-Engine (de) an das Programm angefügt wurde, sendet Sie eine Reihe von Start Ereignissen an die Debugsitzung zurück.
@@ -45,6 +45,6 @@ Nachdem die Debug-Engine (de) an das Programm angefügt wurde, sendet Sie eine R
 
   Wenn der Code geladen und zur Ausführung bereit ist, aber bevor Code ausgeführt wird, sendet der de das SDM-Ereignis " [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) Load Complete". Wenn das Programm nicht bereits ausgeführt wird, sendet der de ein [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) -Einstiegspunkt Ereignis, das signalisiert, dass das Programm den Haupteinstiegspunkt erreicht hat und zum Debuggen bereit ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Kontrolle der Ausführung](../../extensibility/debugger/control-of-execution.md)
 - [Debugtasks](../../extensibility/debugger/debugging-tasks.md)

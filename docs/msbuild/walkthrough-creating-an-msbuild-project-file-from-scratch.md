@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2d3d0462382ddcc86a23c7e25162fb429b9f9893
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967539"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei
 
@@ -345,13 +345,13 @@ Die Projektdatei sollte nun dem folgenden Code ähneln:
 
 5. Löschen Sie die Anwendung Greetings, indem Sie **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings** eingeben.
 
-     Dadurch wird die Clean-Aufgabe ausgeführt, um die Anwendung mit dem angegebenen **AssemblyName** -Eigenschaftswert `Greetings` zu entfernen.
+     Dadurch wird die Clean-Aufgabe ausgeführt, um die Anwendung mit dem angegebenen **AssemblyName**-Eigenschaftswert `Greetings` zu entfernen.
 
 6. Wenn Sie überprüfen möchten, ob der Ordner *\Bin\\* jetzt leer ist, geben Sie **dir Bin** ein.
 
 7. Typ **msbuild**.
 
-     Zwar ist keine Projektdatei angegeben, doch erstellt MSBuild die Datei *helloworld.csproj* , da der aktuelle Ordner nur eine Projektdatei enthält. Auf diese Weise wird die Anwendung *MSBuildSample* im Ordner *\Bin\\* erstellt.
+     Zwar ist keine Projektdatei angegeben, doch erstellt MSBuild die Datei *helloworld.csproj*, da der aktuelle Ordner nur eine Projektdatei enthält. Auf diese Weise wird die Anwendung *MSBuildSample* im Ordner *\Bin\\* erstellt.
 
      Wenn Sie überprüfen möchten, ob der Ordner *\Bin\\* die Anwendung *MSBuildSample* enthält, geben Sie **dir Bin** ein.
 

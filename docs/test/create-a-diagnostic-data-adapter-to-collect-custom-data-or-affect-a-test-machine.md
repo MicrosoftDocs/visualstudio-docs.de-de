@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: e73942509ca39d845c2a79f616ace311651be006
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: fe1adfc62e0b8b9045ec87c1a78cdd56412ff320
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964471"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Erstellen eines Adapters für diagnostische Daten zum Sammeln von benutzerdefinierten Daten oder Beeinflussen eines Testcomputers
 

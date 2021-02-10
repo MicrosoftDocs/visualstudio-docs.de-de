@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b35bcb6fcd1dc2ac3826d5dccb17ff764979321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996174"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968748"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach-Aktivitätsdesigners
 
@@ -43,12 +43,12 @@ Der **ParallelForEach \<T>** -Aktivitäts Designer kann aus der **Toolbox** gezo
 
 In der folgenden Tabelle werden die nützlichsten Eigenschaften der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **ParallelForEach \<Int32>**. Der Wert kann optional im **Eigenschaften** Raster oder direkt im Header des Aktivitäts Designers bearbeitet werden.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Die Aktivität, die für jedes Element in der Auflistung ausgeführt werden soll. Um die-Aktivität hinzuzufügen, legen Sie <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> eine Aktivität aus der Toolbox in das Feld **Body** mit dem Hinweis Text "Aktivität hier ablegen" des **ParallelForEach \<T>** -Aktivitäts Designers ab.|
-|**TypeArgument**|True|Der Typ der Elemente in der Auflistung, die <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> durch den generischen Parameter *T* angegeben werden. Standardmäßig ist **TypeArgument** auf **Int32** festgelegt. Um den Typ T im **ParallelForEach- \><T** -Aktivitäts Designer zu ändern, ändern Sie den Wert des Kombinations Felds **TypeArgument** im Eigenschaften Raster.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Die Auflistung, deren Elemente durchlaufen werden. Um den festzulegen, geben Sie im Feld <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> **Werte** des **foreach<T \>** -Aktivitäts Designers im Feld mit dem Hinweis Text "VB-Ausdruck eingeben" oder im Feld " **Werte** " im Fenster " **Eigenschaften** " einen Visual Basic Ausdruck ein.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Gibt den benutzerfreundlichen Anzeigenamen des Aktivitätsdesigners im Header an. Der Standardwert ist **ParallelForEach \<Int32>**. Der Wert kann optional im **Eigenschaften** Raster oder direkt im Header des Aktivitäts Designers bearbeitet werden.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Falsch|Die Aktivität, die für jedes Element in der Auflistung ausgeführt werden soll. Um die-Aktivität hinzuzufügen, legen Sie <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> eine Aktivität aus der Toolbox in das Feld **Body** mit dem Hinweis Text "Aktivität hier ablegen" des **ParallelForEach \<T>** -Aktivitäts Designers ab.|
+|**TypeArgument**|Richtig|Der Typ der Elemente in der Auflistung, die <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> durch den generischen Parameter *T* angegeben werden. Standardmäßig ist **TypeArgument** auf **Int32** festgelegt. Um den Typ T im **ParallelForEach- \><T** -Aktivitäts Designer zu ändern, ändern Sie den Wert des Kombinations Felds **TypeArgument** im Eigenschaften Raster.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Richtig|Die Auflistung, deren Elemente durchlaufen werden. Um den festzulegen, geben Sie im Feld <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> **Werte** des **foreach<T \>** -Aktivitäts Designers im Feld mit dem Hinweis Text "VB-Ausdruck eingeben" oder im Feld " **Werte** " im Fenster " **Eigenschaften** " einen Visual Basic Ausdruck ein.|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Die Auswertung erfolgt nach Abschluss der einzelnen Iterationen. Ergibt die Auswertung True, werden die geplanten ausstehenden Iterationen abgebrochen. Wenn diese Eigenschaft nicht festgelegt ist, werden alle geplanten Anweisungen bis zur Beendigung ausgeführt.|
 
 Standardmäßig hat der Schleifeniterator die Bezeichnung "item". Sie können den Namen der Iteratorvariablen im Feld **foreach** des **ParallelForEach \<T>** -Aktivitäts Designers ändern. Der Schleifeniterator kann in den untergeordneten Elementen der <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität in Ausdrücken verwendet werden.

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7f16e05ecbd211652dbf5fb511211627a09137df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993730"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952264"
 ---
 # <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen eines Dienstanbieter
 Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden können. Um einen Dienst bereitzustellen, muss ein VSPackage den Dienst bei Visual Studio registrieren und den Dienst hinzufügen.

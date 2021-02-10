@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e46252cea550a2caaa81c92853220db4fa2b5b1a
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5473fffa00723735b022412e7f37f184e043df4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963444"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>Ermitteln des Befehlsstatus mithilfe von Interop-Assemblys
 Ein VSPackage muss den Status der Befehle nachverfolgen, die er verarbeiten kann. Die Umgebung kann nicht bestimmen, wann ein Befehl, der in Ihrem VSPackage behandelt wird, aktiviert oder deaktiviert wird. Es liegt in der Verantwortung des VSPackages, die Umgebung über Befehls Zustände zu informieren, z. b. den Status allgemeiner Befehle wie **Ausschneiden**, **Kopieren** und **Einfügen**.
@@ -35,6 +35,6 @@ Ein VSPackage muss den Status der Befehle nachverfolgen, die er verarbeiten kann
 ## <a name="status-notification-failure"></a>Status Benachrichtigungs Fehler
  Wenn das VSPackage fehlschlägt, um die Umgebung über eine Änderung des Befehls Zustands zu benachrichtigen, kann die Benutzeroberfläche in einen inkonsistenten Zustand versetzt werden. Denken Sie daran, dass die Befehle des Menüs oder des Kontextmenüs vom Benutzer auf einer Symbolleiste abgelegt werden können. Daher reicht es nicht aus, die Benutzeroberfläche zu aktualisieren, wenn ein Menü oder ein Kontextmenü geöffnet wird.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Hinzufügen von Elementen der Benutzeroberfläche durch VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementierung](../../extensibility/internals/command-implementation.md)

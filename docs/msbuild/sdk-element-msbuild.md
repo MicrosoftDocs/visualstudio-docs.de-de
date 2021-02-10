@@ -16,15 +16,15 @@ helpviewer_keywords:
 - <Sdk> element [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cd5f66cc6500a3320e0da962985f5b7fff1e86dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937900"
 ---
 # <a name="sdk-element-msbuild"></a>SDK-Element (MSBuild)
 
@@ -45,7 +45,7 @@ Verweist auf ein MSBuild-Projekt SDK.
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Projekt-SDK.|
 |`Version`|Optionales Attribut.<br /><br /> Die Version des Projekt-SDK.|

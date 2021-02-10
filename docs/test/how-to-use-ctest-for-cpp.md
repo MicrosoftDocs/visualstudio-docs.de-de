@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 01/23/2020
 ms.topic: how-to
 ms.author: corob
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 5ed713e8b216d64816abd9e25d4d84ce53c44499
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 23d235d4b18c9909868cf890e31d835b3f7ea948
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969281"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Verwenden von CTest für C++ in Visual Studio 2017 und höher
 

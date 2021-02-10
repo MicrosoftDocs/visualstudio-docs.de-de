@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b120d4433bafb5f248a268b140d940b3c6e2da
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 440a7e48414e2eddcbb0911ba3e8a6605deea22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964783"
 ---
 # <a name="multiple-categories-are-present"></a>Es sind mehrere Kategorien vorhanden
 Es wurde ein Abschnitt ausgewählt, der mehr als eine Art der Aktivität für einen bestimmten Zeitraum enthält. Beachten Sie, dass zwei Farbbalken angezeigt werden, einer vertikal auf den anderen gestapelt. Diese Farben stellen nur die beiden häufigsten Aktivitäten im angegebenen Zeitraum dar. Die Häufigkeit dieser zwei Aktivitäten wird relativ zueinander als Drittel oder Hälften des vertikalen Balkens angezeigt. Um weitere Details anzuzeigen, vergrößern Sie diesen Abschnitt der Threadansicht.

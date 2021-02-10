@@ -11,13 +11,13 @@ dev_langs:
 - VB
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: e07d4a0872f2e93e568bb540edb89e026d25d935
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 6bf3bd24b4a232899c64f6c0ecd819b0fe0f83a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961312"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer
 
@@ -27,11 +27,11 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
-1. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** aus, erweitern Sie den Knoten **Windows Desktop** , und wählen Sie dann die Vorlage **WPF-Anwendung** aus.
+1. Wählen Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** aus, erweitern Sie den Knoten **Windows Desktop**, und wählen Sie dann die Vorlage **WPF-Anwendung** aus.
 
-1. Geben Sie dem Projekt den Namen **BindingTest** , und wählen Sie anschließend die Schaltfläche **OK** .
+1. Geben Sie dem Projekt den Namen **BindingTest**, und wählen Sie anschließend die Schaltfläche **OK**.
 
-1. Öffnen Sie die Datei **MainWindow.xaml.cs** (oder **MainWindow.xaml.vb** ), und fügen Sie den folgenden Code hinzu. In C# fügen Sie den Code im Namespace `BindingTest` hinzu (vor der letzten schließenden Klammer in der Datei). Fügen Sie in Visual Basic einfach die neue Klasse hinzu.
+1. Öffnen Sie die Datei **MainWindow.xaml.cs** (oder **MainWindow.xaml.vb**), und fügen Sie den folgenden Code hinzu. In C# fügen Sie den Code im Namespace `BindingTest` hinzu (vor der letzten schließenden Klammer in der Datei). Fügen Sie in Visual Basic einfach die neue Klasse hinzu.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -67,29 +67,29 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
 
    Durch diesen Code wird der Wert „0“ (null) als Standardelementanzahl mithilfe des [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata)-Objekts festgelegt.
 
-1. Klicken Sie im Menü **Datei** auf die Option **Erstellen** > **Projektmappe erstellen** .
+1. Klicken Sie im Menü **Datei** auf die Option **Erstellen** > **Projektmappe erstellen**.
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>So binden Sie die ItemCount-Eigenschaft an ein TextBlock-Steuerelement
 
-1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für **MainWindow.xaml** , und wählen Sie **Ansicht-Designer** aus.
+1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für **MainWindow.xaml**, und wählen Sie **Ansicht-Designer** aus.
 
 1. Klicken Sie in der Toolbox auf ein [Raster](xref:Windows.UI.Xaml.Controls.Grid)-Steuerelement, um es dem Formular hinzuzufügen.
 
-1. Wenn Sie `Grid` ausgewählt haben, klicken Sie im Eigenschaftenfenster auf **Neu** neben der **DataContext** -Eigenschaft.
+1. Wenn Sie `Grid` ausgewählt haben, klicken Sie im Eigenschaftenfenster auf **Neu** neben der **DataContext**-Eigenschaft.
 
-1. Vergewissern Sie sich, dass im Dialogfeld **Objekt auswählen** das Kontrollkästchen **Alle Assemblys anzeigen** deaktiviert ist, wählen Sie dann **ShoppingCart** unter dem **BindingTest** -Namespace aus, und klicken Sie anschließend auf die Schaltfläche **OK** .
+1. Vergewissern Sie sich, dass im Dialogfeld **Objekt auswählen** das Kontrollkästchen **Alle Assemblys anzeigen** deaktiviert ist, wählen Sie dann **ShoppingCart** unter dem **BindingTest**-Namespace aus, und klicken Sie anschließend auf die Schaltfläche **OK**.
 
-     Die folgende Abbildung zeigt das Dialogfeld **Objekt auswählen** mit der ausgewählten Option **ShoppingCart** .
+     Die folgende Abbildung zeigt das Dialogfeld **Objekt auswählen** mit der ausgewählten Option **ShoppingCart**.
 
      ![Dialogfeld „Objekt auswählen“](../designers/media/blendselectobject.png)
 
 1. Wählen Sie in der **Toolbox** ein `TextBlock`-Steuerelement aus, um es dem Formular hinzuzufügen.
 
-1. Wenn Sie das `TextBlock`-Steuerelement ausgewählt haben, wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker rechts neben der **Text** -Eigenschaft aus, und klicken anschließend auf **Datenbindung erstellen** . (Der Eigenschaftenmarker sieht wie ein kleines Feld aus.)
+1. Wenn Sie das `TextBlock`-Steuerelement ausgewählt haben, wählen Sie im Eigenschaftenfenster den Eigenschaftenmarker rechts neben der **Text**-Eigenschaft aus, und klicken anschließend auf **Datenbindung erstellen**. (Der Eigenschaftenmarker sieht wie ein kleines Feld aus.)
 
-1. Wählen Sie im Dialogfeld „Datenbindung erstellen“ im Feld **Pfad** die **ItemCount: (int32)** -Eigenschaft aus, und klicken Sie dann auf **OK** .
+1. Wählen Sie im Dialogfeld „Datenbindung erstellen“ im Feld **Pfad** die **ItemCount: (int32)**-Eigenschaft aus, und klicken Sie dann auf **OK**.
 
-     Die folgende Abbildung zeigt das Dialogfeld **Datenbindung erstellen** , wobei die Eigenschaft **ItemCount** ausgewählt ist.
+     Die folgende Abbildung zeigt das Dialogfeld **Datenbindung erstellen**, wobei die Eigenschaft **ItemCount** ausgewählt ist.
 
      ![Dialogfeld „Datenbindung erstellen“](../designers/media/xaml_create_data_binding.png)
 

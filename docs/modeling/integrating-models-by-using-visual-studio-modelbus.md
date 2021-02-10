@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f0c1d076edc09f7978dcc188b167ce953f631068
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957412"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrieren von Modellen mit Visual Studio-ModelBus
 
@@ -516,7 +516,7 @@ Wenn Sie mit der rechten Maustaste auf das DSL-Definitions Diagramm klicken, kli
 
 - In **DslPackage\source.Extention.tt** `|ModelBusAdapter|` wird als MEF-Komponente hinzugefügt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Gewusst wie: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)

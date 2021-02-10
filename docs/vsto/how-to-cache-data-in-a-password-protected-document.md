@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845998"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954032"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Vorgehensweise: Zwischenspeichern von Daten in einem Kenn Wort geschützten Dokument
   Wenn Sie dem Daten Cache in einem Dokument oder einer Arbeitsmappe, das mit einem Kennwort geschützt ist, Daten hinzufügen, werden Änderungen an den zwischengespeicherten Daten nicht automatisch gespeichert. Sie können Änderungen an den zwischengespeicherten Daten speichern, indem Sie zwei Methoden in Ihrem Projekt überschreiben.
@@ -75,7 +75,7 @@ ms.locfileid: "96845998"
 ### <a name="compile-the-code"></a>Kompilieren des Codes
  Fügen Sie diesen Code der- `ThisWorkbook` Klasse in Ihrem Projekt hinzu. Dieser Code setzt voraus, dass das Kennwort in einem Feld mit dem Namen gespeichert wird `securelyStoredPassword` .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Daten zwischenspeichern](../vsto/caching-data.md)
 - [Gewusst wie: Zwischenspeichern von Daten zur Offline Verwendung oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Vorgehensweise: Programm gesteuertes Zwischenspeichern einer Datenquelle in einem Office-Dokument](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377bae52f506c1cb9ac0f6b2d4136faaab0b50ad
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c1baef0936cfe37d09fb8c65f2675bb9f4208f45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963405"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>VSCT-Dateien (Visual Studio Command Table)
 Eine Befehls Tabellen-Konfigurationsdatei ist eine Textdatei, die den Satz von Befehlen beschreibt, die ein VSPackage enthält. Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Befehls tabellencompiler (vsct) kompiliert XML-basierte Konfigurationsdateien (vsct-Dateien) in binäre Befehls Tabellenausgabe Dateien (CTO). Die resultierenden CTO-Dateien sind identisch mit denen, die mit dem CTC-Compiler (Command Table) erstellt werden, um CTC-Konfigurationsdateien zu kompilieren. XML-basierte vsct-Dateien haben jedoch einige Vorteile, z. b. XML-Editor und XML-IntelliSense.

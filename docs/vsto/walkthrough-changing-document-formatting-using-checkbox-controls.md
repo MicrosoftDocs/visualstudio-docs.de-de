@@ -15,15 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527251"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958660"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Exemplarische Vorgehensweise: Ändern der Dokument Formatierung mit CheckBox-Steuerelementen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Windows Forms Steuerelemente in einer Anpassung auf Dokument Ebene für Microsoft Office Word verwendet werden, um die Textformatierung zu ändern.

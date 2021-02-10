@@ -18,15 +18,15 @@ helpviewer_keywords:
 - HasVstoObject method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 465e28ed0c632bba45fac1670dd40cd90ef417f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970373"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit
   Sie können ein VSTO-Add-In verwenden, um Word-Dokumente und Excel-Arbeitsmappen wie folgt anzupassen:
@@ -123,7 +123,7 @@ ms.locfileid: "96847823"
 
  Die `HasVstoObject`-Methode ist nützlich, falls Code nur ausgeführt werden soll, wenn ein bestimmtes Office-Objekt über ein erweitertes Objekt verfügt. Wenn Sie z. b. über ein Word-VSTO-Add-in verfügen, das das Ereignis behandelt, <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> um verwaltete Steuerelemente aus einem Dokument zu entfernen, bevor es gespeichert wird, verwenden Sie die- `HasVstoObject` Methode, um zu bestimmen, ob das Dokument erweitert wurde. Wenn das Dokument nicht erweitert wurde, kann es keine verwalteten Steuerelemente enthalten, und der Ereignishandler kann zurückgeben, ohne zu versuchen, Steuerelemente im Dokument zu bereinigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - document properties [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4897008f102600bd222a21761237acc4bcb62a30
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0080c9b0ddd7ffba4730a8cfb305bc34b6ba1690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964315"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Gewusst wie: Erstellen und Ändern von benutzerdefinierten Dokumenteigenschaften
   Die oben aufgeführten Microsoft Office-Anwendung bieten integrierte Eigenschaften, die mit Dokumenten gespeichert werden. Darüber hinaus können Sie benutzerdefinierte Dokumenteigenschaften erstellen und ändern, falls Sie zusätzliche Informationen mit dem Dokument speichern möchten.
@@ -39,7 +39,7 @@ ms.locfileid: "96844295"
 ## <a name="robust-programming"></a>Stabile Programmierung
  Beim Versuch, auf die `Value` -Eigenschaft für nicht definierte Eigenschaften zuzugreifen, wird eine Ausnahme ausgelöst.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Program mieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
 - [Program mieren von Anpassungen auf Dokument Ebene](../vsto/programming-document-level-customizations.md)
 - [Gewusst wie: Lesen von und Schreiben in Dokumenteigenschaften](../vsto/how-to-read-from-and-write-to-document-properties.md)

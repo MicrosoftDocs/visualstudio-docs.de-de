@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 3ea9300c96cf63c932d88335c0ca0f9fd4542f72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954773"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Glyphe-Steuerelement (Quellcodeverwaltungs-VSPackage)
 Ein Teil der umfassenden Integration, der für Quell Code Verwaltungs-VSPackages verfügbar ist, ist die Möglichkeit, eigene Symbole anzuzeigen, um den Status von Elementen unter Quell Code Verwaltung anzuzeigen.
@@ -36,7 +36,7 @@ Ein Teil der umfassenden Integration, der für Quell Code Verwaltungs-VSPackages
 
  Die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A> Methode wird von verwendet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , um eine Liste von Bildern zu erhalten, die verschiedene Quell Code Verwaltungs Zustände anzeigen. Das VSPackage der Quell Code Verwaltung kehrt der IDE ein Handle für die Bildliste für seine benutzerdefinierten Symbole hinzu. Die IDE erstellt an dieser Stelle eine Kopie der Bildliste und verwendet Sie später, um die anzuzeigenden Symbole auszuwählen. Wenn die neue Schnittstelle nicht unterstützt wird oder die `IVsSccGlyphs::GetCustomGlyphList` Methode zurückgibt `E_NOTIMPL` , ruft die IDE die Symbole aus der Standardliste der von bereitgestellten Symbole ab [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

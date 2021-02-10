@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], counting characters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 42e80cf1a466867fbb7394181efe28bcfe3631e4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: fda6d3bb553470a914d55fa5aa24d1db8b2365e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964159"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Gewusst wie: Programm gesteuertes zählen von Zeichen in Dokumenten
   Das erste Zeichen in einem Dokument befindet sich an der Zeichenposition 0, die der Position der Einfügemarke entspricht. Die Position des letzten Zeichens ist gleich der Gesamtanzahl von Zeichen im Dokument. Sie können die Anzahl von Zeichen in einem Dokument mithilfe der <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> -Eigenschaft der <xref:Microsoft.Office.Interop.Word.Characters> -Auflistung ermitteln.

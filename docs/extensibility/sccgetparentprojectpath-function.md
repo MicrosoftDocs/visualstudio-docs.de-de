@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f258558207f86ff76746d18aa432fe4c5850290
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958400"
 ---
 # <a name="sccgetparentprojectpath-function"></a>Sccgetparser ProjectPath-Funktion
 Diese Funktion bestimmt den übergeordneten Projektpfad eines angegebenen Projekts. Diese Funktion wird aufgerufen, wenn der Benutzer ein Visual Studio-Projekt zur Quell Code Verwaltung hinzufügt.
@@ -92,7 +92,7 @@ in Zeichenfolge, die den Projektpfad identifiziert (bis SCC_PRJPATH_SIZE, einsch
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Technische Hinweise zu "scckreatesubproject" und "sccgetparser ProjectPath"
  Das Hinzufügen von Projektmappen und Projekten zur Quell Code Verwaltung wurde in Visual Studio vereinfacht, um zu minimieren, wie oft ein Benutzer aufgefordert wird, Speicherorte im Quell Code Verwaltungssystem auszuwählen. Diese Änderungen werden von Visual Studio aktiviert, wenn ein Quellcodeverwaltungs-Plug-in sowohl die neuen Funktionen als auch [scckreatesubproject](../extensibility/scccreatesubproject-function.md) und die-Funktion unterstützt `SccGetParentProjectPath` . Der folgende Registrierungs Eintrag kann jedoch verwendet werden, um diese Änderungen zu deaktivieren und zum vorherigen Visual Studio-Verhalten (Quellcodeverwaltungs-Plug-in-API Version 1,1) zurückzukehren:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] "Donotkreatesolutionrootfolderinsourcecontrol" = DWORD: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "Donotkreatesolutionrootfolderinsourcecontrol" = DWORD: 00000001**
 
  Wenn dieser Registrierungs Eintrag nicht vorhanden ist oder auf DWORD: 00000000 festgelegt ist, versucht Visual Studio, die neuen Funktionen und zu verwenden `SccCreateSubProject` `SccGetParentProjectPath` .
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7384bad2096f98a646487d5d97eed3d387c7de1
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 78d5f4f00a81fccf573e69797b9d528ee61ffdc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932058"
 ---
 # <a name="prerequisites-dialog-box"></a>Dialogfeld "Erforderliche Komponenten"
 
@@ -33,7 +33,7 @@ Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Pro
 
 |Element|BESCHREIBUNG|
 |-------------|-----------------|
-|**Setupprogramm zur Installation erforderlicher Komponenten erstellen**|Dies schließt die erforderlichen Komponenten im Setupprogramm ( *Setup.exe* ) der Anwendung ein, die je nach Abhängigkeit vor der Anwendung installiert werden. Diese Option ist standardmäßig ausgewählt. Wenn die Option nicht ausgewählt wurde, wird *Setup.exe* nicht erstellt.|
+|**Setupprogramm zur Installation erforderlicher Komponenten erstellen**|Dies schließt die erforderlichen Komponenten im Setupprogramm (*Setup.exe*) der Anwendung ein, die je nach Abhängigkeit vor der Anwendung installiert werden. Diese Option ist standardmäßig ausgewählt. Wenn die Option nicht ausgewählt wurde, wird *Setup.exe* nicht erstellt.|
 |**Auswählen der für die Installation erforderlichen Komponenten**|Gibt an, ob Komponenten wie .NET Framework- und C++-Laufzeitbibliotheken installiert werden sollen.<br /><br />Indem Sie das Kontrollkästchen neben **SQL Server 2012 Express** aktivieren, legen Sie z.B. fest, dass vom Setupprogramm überprüft werden muss, ob diese Komponente auf dem Zielcomputer installiert ist. Außerdem installiert es die Komponente, wenn diese noch nicht vorhanden ist.<br /><br />Ausführliche Informationen über die einzelnen erforderlichen Pakete finden Sie unter [Informationen über erforderliche Komponenten](#prerequisites-information).|
 |**Erforderliche Komponenten von der Website des Komponentenherstellers herunterladen**|Dies gibt an, dass die erforderlichen Komponenten von der Website des Herstellers installiert werden müssen. Dies ist die Standardoption.|
 |**Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**|Dies gibt an, dass die erforderlichen Komponenten vom gleichen Speicherort wie die Anwendung installiert werden müssen. Dadurch werden alle erforderlichen Pakete an den Speicherort für die Veröffentlichung kopiert. Damit diese Option funktioniert, müssen sich die erforderlichen Pakete auf dem Entwicklungscomputer befinden.|

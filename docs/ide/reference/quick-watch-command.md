@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9670ac3a-8f2f-4874-974d-cb87d3b0cde1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6185418364e8b22e1f473308b2db9899c8778d13
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 5557fb9ca4c362f764cac04441add4fea0433856
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304172"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958192"
 ---
 # <a name="quick-watch-command"></a>Befehl "Aktuellen Wert anzeigen"
 Zeigt den ausgewählten oder angegebenen Text im Feld „Ausdruck“ des Fensters [Schnellüberwachung](../../debugger/watch-and-quickwatch-windows.md) an. Sie können dieses Dialogfeld verwenden, um den aktuellen Wert einer Variablen, eines Ausdrucks oder den Inhalt eines Registers zu berechnen, der vom Debugger erkannt wird. Darüber hinaus können Sie den Wert jeder nicht konstanten Variablen oder den Inhalt jedes Registers ändern.

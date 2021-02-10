@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bddf5e46fe066a79beb64570d6bf6ec1fedda68c
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6303efce016a9e678e4c9e8aa62c91aa116e44f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436117"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914219"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Vorgehensweise: Verwenden von MSBuild-Projekt SDKs
 
@@ -125,9 +125,9 @@ Der NuGet-basierte SDK-Resolver unterstützt die Angabe einer Version in der Dat
 
 Nur eine Version jedes Projekt-SDK kann während eines Builds verwendet werden. Wenn Sie auf zwei unterschiedliche Versionen desselben Projekt-SDK verweisen, gibt MSBuild eine Warnung aus. Sie sollten **keine** Version in Ihren Projekten angeben, wenn die Datei *global.json* eine Versionsangabe enthält.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
-- [Anpassen Ihres Builds](../msbuild/customize-your-build.md)
+- [Customize your build (Anpassen Ihres Builds)](../msbuild/customize-your-build.md)
 - [Pakete, Metadaten und Frameworks](/dotnet/core/packages)
 - [Erweiterungen des CSPROJ-Formats für .NET Core](/dotnet/core/tools/csproj)
