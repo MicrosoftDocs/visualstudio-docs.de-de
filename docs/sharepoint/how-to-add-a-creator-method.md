@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4079fb5be612421bfa4a0b6dc53c3003a1c65e61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934883"
 ---
 # <a name="how-to-add-a-creator-method"></a>Gewusst wie: Hinzufügen einer Creator-Methode
   Eine Creator-Methode fügt der Datenquelle einer Entität neue Daten hinzu. Der Business Data Connectivity (BDC)-Dienst ruft diese Methode auf, wenn Benutzer die Schaltfläche **Neues Element** auf dem **Menüband** einer Liste auswählen, die auf dem Modell basiert. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +33,7 @@ ms.locfileid: "96915452"
 
 1. Wählen Sie im **BDC-Designer** eine Entität aus.
 
-2. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  > **BDC-Methoden Details** anzeigen aus.
+2. Wählen Sie in der Menüleiste   >  **andere Windows**-  > **BDC-Methoden Details** anzeigen aus.
 
     Das Fenster **BDC-Methoden Details** wird geöffnet. Weitere Informationen zu diesem Fenster finden Sie unter [Übersicht über die Entwurfs Tools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md).
 

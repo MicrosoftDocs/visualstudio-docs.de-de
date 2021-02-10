@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935299"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen
 
@@ -119,13 +119,13 @@ Textvorlagen ermöglichen es Ihnen, den Inhalt der generierten Datei mithilfe vo
 
    Beachten Sie, dass Anweisungen in `<#...#>` eingeschlossen sind und einzelne Ausdrücke in `<#=...#>`. Weitere Informationen finden Sie unter [Schreiben einer T4-Text Vorlage](../modeling/writing-a-t4-text-template.md).
 
-   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. `"C#"` ist die Standardoption.
+   Wenn Sie den generierenden Code in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] schreiben, sollte die `template`-Direktive `language="VB"` enthalten. `"C#"` ist die Standardeinstellung.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debuggen einer T4-Textvorlage für die Entwurfszeit
 
 So debuggen Sie eine Textvorlage
 
-- Fügen Sie `debug="true"` in die `template`-Anweisung ein. Zum Beispiel:
+- Fügen Sie `debug="true"` in die `template`-Anweisung ein. Beispiel:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -274,7 +274,7 @@ Der Typ von `this.Host` (in VB `Me.Host`) ist `Microsoft.VisualStudio.TextTempla
 
 ### <a name="getting-data-from-visual-studio"></a>Erhalten von Daten aus Visual Studio
 
-Um in Visual Studio bereitgestellte Dienste zu verwenden, legen Sie das `hostSpecific` -Attribut fest, und laden Sie die `EnvDTE` Assembly. Import `Microsoft.VisualStudio.TextTemplating` , das die `GetCOMService()` Erweiterungsmethode enthält.  Sie können dann IServiceProvider.GetCOMService() verwenden, um auf DTE und andere Dienste zuzugreifen. Zum Beispiel:
+Um in Visual Studio bereitgestellte Dienste zu verwenden, legen Sie das `hostSpecific` -Attribut fest, und laden Sie die `EnvDTE` Assembly. Import `Microsoft.VisualStudio.TextTemplating` , das die `GetCOMService()` Erweiterungsmethode enthält.  Sie können dann IServiceProvider.GetCOMService() verwenden, um auf DTE und andere Dienste zuzugreifen. Beispiel:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -355,7 +355,7 @@ Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr
    | | |
    |-|-|
    | **Benutzerdefiniertes Tool =** | **TextTemplatingFileGenerator** |
-   | **Buildvorgang =** | **Keine** |
+   | **Buildvorgang =** | **None** |
 
 5. Fügen Sie am Anfang der Datei die folgenden Zeilen ein:
 
@@ -368,7 +368,7 @@ Eine hilfreiche Funktion von Vorlagen ist, dass sie den generierten Dateien sehr
 
     Legen Sie das `extension`-Attribut auf die Dateinamenerweiterung für den zu generierenden Dateityp fest, z. B. `.cs`, `.resx` oder `.xml`.
 
-6. Speichern Sie die Datei.
+6. Speichern Sie die Datei .
 
     Eine untergeordnete Datei mit der angegebenen Erweiterung wird erstellt. Die Eigenschaften entsprechen dem Dateityp. Beispielsweise **wäre die Eigenschaft** Buildvorgang einer CS-Datei " **Compile**".
 
@@ -390,6 +390,6 @@ Informationen finden Sie unter [Richtlinien zum Schreiben von T4-Text Vorlagen](
 |Transformieren Sie die Daten in das Format einer domänenspezifischen Sprache.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Richtlinien für das Verfassen von T4-Textvorlagen](../modeling/guidelines-for-writing-t4-text-templates.md)

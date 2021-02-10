@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office primary interop assemblies, installing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 15a55650f2e4a434343c9128cc8f28117b54288e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 432b2a74eb7ea4753cd110956c9dc9313e1a5d6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934818"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Gewusst wie: Installieren von primären Interop-Assemblys in Office
   Installieren Sie die primären Interop-Assemblys (PIAs) für Microsoft Office bei der Installation von Office.
@@ -36,7 +36,7 @@ ms.locfileid: "96845881"
     > [!WARNING]
     > In der Standardeinstellung werden die PIA in Ihre Lösung eingebettet, wenn Sie Sie erstellen, damit Sie PIAs nicht als Voraussetzung für die Verwendung des VSTO-Add-Ins oder der Anpassung an Benutzer verteilen müssen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Primäre Interopassemblys für Office](../vsto/office-primary-interop-assemblies.md)
 - [Gewusst wie: Ausrichten von Office-Anwendungen über primäre Interop-Assemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Vorgehensweise: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b0780007361115aa485b91db70cc413029a6f8f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 0ed45d631697d37db8da49e459e80f1b5a43a373
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935130"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 
@@ -186,7 +186,7 @@ Jeder Ereignistyp entspricht einer Sammlung in "Store. eventmanagerdirectory". S
 |Transaktioncommit||
 |Transaktionrolledback||
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md)
 - [Beispielcode: Leitungs Diagramme](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

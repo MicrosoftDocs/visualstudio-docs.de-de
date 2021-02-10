@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b7ee201494ed849062458afdcd41c2aed1b83b42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935390"
 ---
 # <a name="customize-the-properties-window"></a>Anpassen des Eigenschaftenfenster
 
@@ -190,7 +190,7 @@ Sie können auch eine grafische Darstellung des Eigenschafts Werts bereitstellen
 > [!NOTE]
 > Fügen Sie den Code in einer separaten Codedatei im **DSL** -Projekt hinzu.
 
-Zum Beispiel:
+Beispiel:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -228,7 +228,7 @@ Zum Definieren einer Liste von Standardwerten fügen Sie der Domänen Eigenschaf
 (typeof(MyTypeConverter))]
 ```
 
-Definieren Sie eine Klasse, die sich von <xref:System.ComponentModel.TypeConverter> ableitet. Fügen Sie den Code in einer separaten Datei im **DSL** -Projekt hinzu. Zum Beispiel:
+Definieren Sie eine Klasse, die sich von <xref:System.ComponentModel.TypeConverter> ableitet. Fügen Sie den Code in einer separaten Datei im **DSL** -Projekt hinzu. Beispiel:
 
 ```csharp
 /// <summary>
@@ -321,6 +321,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935416"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 Mit der unveränderlichkeits-API des Visual Studio-Visualisierungs-und Modellierungs-SDKs kann ein Programm ein Domänen spezifisches DSL-Modell (Domain-Specific Language) sperren, sodass es gelesen, aber nicht geändert werden kann. Diese schreibgeschützte Option kann z. b. verwendet werden, damit ein Benutzer die Kollegen bitten kann, ein DSL-Modell zu kommentieren und zu überprüfen, es jedoch nicht möglich ist, die ursprüngliche zu ändern.
@@ -82,7 +82,7 @@ partition.SetLocks(Locks.Delete);
 |Keine|Keine Einschränkung.|
 |Eigenschaft|Domänen Eigenschaften von Elementen können nicht geändert werden. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänen Klasse in einer Beziehung generiert werden.|
 |Hinzufügen|Neue Elemente und Verknüpfungen können nicht in einer Partition oder einem Speicher erstellt werden.<br /><br /> Gilt nicht für `ModelElement` .|
-|Verschieben|Das Element kann nicht zwischen Partitionen verschoben werden `element.IsLocked(Move)` , wenn true ist, oder wenn `targetPartition.IsLocked(Move)` true ist.|
+|Move|Das Element kann nicht zwischen Partitionen verschoben werden `element.IsLocked(Move)` , wenn true ist, oder wenn `targetPartition.IsLocked(Move)` true ist.|
 |Löschen|Ein Element kann nicht gelöscht werden, wenn diese Sperre für das Element selbst oder für eines der Elemente festgelegt wird, an die der Löschvorgang weitergegeben werden soll, z. b. eingebettete Elemente und Formen.<br /><br /> Sie können verwenden `element.CanDelete()` , um zu ermitteln, ob ein Element gelöscht werden kann.|
 |Neu anordnen|Die Reihenfolge der Links auf einem das RolePlayer kann nicht geändert werden.|
 |Das RolePlayer|Der Satz von Links, die von diesem Element stammen, kann nicht geändert werden. Beispielsweise können neue Elemente unter diesem Element nicht eingebettet werden. Dies wirkt sich nicht auf Verknüpfungen aus, für die dieses Element das Ziel ist.<br /><br /> Wenn dieses Element ein Link ist, sind die Quelle und das Ziel nicht betroffen.|
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  Diese Methoden werden aufgerufen, wenn ein Aufruf `SetLocks()` von für einen Speicher, eine Partition oder ein ModelElement erfolgt. In jeder Methode erhalten Sie einen vorgeschlagenen Satz von Sperren. Sie können die vorgeschlagene Menge zurückgeben, oder Sie können Sperren hinzufügen oder subtrahieren.
 
- Zum Beispiel:
+ Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
