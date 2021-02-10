@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ddb05a3-8c6b-448b-8488-2751c1e5abcc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63462aedfb1d7a2c03fe6ff5d59495358c52194e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 809af327fc2bb608647a76575736bd0e2b00c5b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922038"
 ---
 # <a name="ui-processing-time"></a>Benutzeroberflächenverarbeitungszeit
 Diese Segmente in der Zeitachse werden den Blockierungszeiten zugeordnet, die als Benutzeroberflächenverarbeitungszeit kategorisiert sind. Das bedeutet, dass ein Thread Windows-Meldungen verteilt oder andere Vorgänge an der Benutzeroberfläche ausführt. Dabei wurde ein Thread in einer API blockiert, die die Parallelitätsschnellansicht als Benutzeroberflächenverarbeitung erfasst. APIs wie `GetMessage()` und `MsgWaitForMultipleObjects()` gehören zu dieser Gruppe.
