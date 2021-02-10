@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940344"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package- &gt; Element (Boots Trapper)
 Das `Package` -Element ist das XML-Element der obersten Ebene in einer Paketdatei.
@@ -145,11 +145,11 @@ Das `Package` -Element ist das XML-Element der obersten Ebene in einer Paketdate
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
  Das `Package`-Element ist erforderlich. Es verfügt über die folgenden Attribute:
 
-| attribute | BESCHREIBUNG |
+| attribute | Beschreibung |
 |--------------------| - |
 | `Culture` | Erforderlich. Definiert die Kultur für dieses Paket, das die zu verwendende Sprache bestimmt. Dieses Attribut ist ein Schlüssel für das- `Strings` Element, das kulturspezifische Zeichen folgen für Produktnamen und Fehlermeldungen während der Installation auflistet. |
 | `Name` | Erforderlich. Der Name des Pakets, das dem Entwickler in einem Tool wie angezeigt wird [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Dieses Attribut ist ein Schlüssel in das- `Strings` Element, das ein-Element enthalten sollte, dessen-Eigenschaft und-Eigenschaft `String` entsprechend `Name` `Culture` den `Name` -und-Eigenschaften von festgelegt werden `Culture` `Package` . |
-| `LicenseAgreement` | Optional. Gibt den Namen der Datei im Verteilungs Paket an, die den End-User Lizenzvertrag (EULA) enthält.  Bei dieser Datei kann es sich entweder um *Klartext (* ( *RTF* ) |
+| `LicenseAgreement` | Dies ist optional. Gibt den Namen der Datei im Verteilungs Paket an, die den End-User Lizenzvertrag (EULA) enthält.  Bei dieser Datei kann es sich entweder um *Klartext (* (*RTF*) |
 
 ## <a name="example"></a>Beispiel
  Das folgende Codebeispiel zeigt eine komplette Paketdatei zum erneuten Verteilen des .NET Framework 2,0.

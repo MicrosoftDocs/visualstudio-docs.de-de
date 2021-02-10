@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 337fd73dbe46a97b6f154dfba1714ede834f1e69
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c9e6960cdd84e518b2d58eb77c25278bd52475d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941436"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Gewusst wie: Hinzufügen eines Drag & Drop-Handlers
 
@@ -130,7 +130,7 @@ Sie können die Formate ermitteln, in denen die Quellinformationen beim Ziehen v
 
   - diagrammventargs. Data. getdataformats ()-listet die Formate auf, in denen Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).
 
-  - `diagramEventArgs.Data.GetData(format)` -Decodiert das gezogene Objekt im angegebenen Format. Wandeln Sie das Objekt in den geeigneten Typ um. Zum Beispiel:
+  - `diagramEventArgs.Data.GetData(format)` -Decodiert das gezogene Objekt im angegebenen Format. Wandeln Sie das Objekt in den geeigneten Typ um. Beispiel:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -407,7 +407,7 @@ namespace Company.CompartmentDrag  // EDIT.
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
+ /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
  /// </summary>
  public partial class ClassShape
  {
@@ -571,7 +571,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Anpassen des Kopierverhaltens](../modeling/customizing-copy-behavior.md)
 - [Bereitstellen von domänenspezifischen Sprachlösungen](msi-and-vsix-deployment-of-a-dsl.md)

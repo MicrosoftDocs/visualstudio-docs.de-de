@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0f0a1c6bda564367497306a572f7e9f4012031
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 335f41abf0ca2914ca603f7adbce7dea98eee028
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940487"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Vorgehensweise: Angeben eines Links für technischen Support
 Beim Veröffentlichen einer- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung identifiziert die Eigenschaft **Support-URL** eine Webseite oder eine Dateifreigabe, mit der Benutzerinformationen zur Anwendung erhalten können. Diese Eigenschaft ist optional. Wenn diese Option angegeben ist, wird die URL **im Dialogfeld** "Software" der Anwendung angezeigt.

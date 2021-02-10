@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8907018c7f5b131747e802902d88a02ca95c2cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fdfdabf66c48a875f3b4316ac22e1911c141275c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350971"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940526"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
-Sie können mit *SignTool.exe* ein Setupprogramm ( *setup.exe* ) signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.
+Sie können mit *SignTool.exe* ein Setupprogramm (*setup.exe*) signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.
 
  Standardmäßig verfügt ClickOnce über signierte Manifeste und ein signiertes Setupprogramm. Wenn Sie jedoch später die Parameter des Setupprogramms ändern möchten, müssen Sie das Setupprogramm später signieren. Wenn Sie die Parameter nach dem Signieren des Setupprogramms ändern, wird die Signatur beschädigt.
 
@@ -38,7 +38,7 @@ Sie können mit *SignTool.exe* ein Setupprogramm ( *setup.exe* ) signieren. Durc
 
 1. Installieren Sie das Zertifikat, mit dem Sie das Manifest signieren möchten, auf dem Entwicklungscomputer.
 
-2. Wählen Sie das Projekt in **Projektmappen-Explorer** aus.
+2. Wählen Sie das Projekt im **Projektmappen-Explorer** aus.
 
 3. Klicken Sie im Menü **Projekt** auf **Eigenschaften** von *ProjectName* .
 

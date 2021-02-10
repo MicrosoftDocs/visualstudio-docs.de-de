@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941358"
 ---
 # <a name="properties-of-domain-properties"></a>Eigenschaften von Domäneneigenschaften
 Eine *Domänen Eigenschaft* ist eine Funktion eines Modell Elements, das einen Wert enthalten kann. So kann die Domänenklasse `Person` beispielsweise die Eigenschaften `Name` und `BirthDate` aufweisen. In der DSL-Definition werden die Domäneneigenschaften im Domänenklassenfeld im Diagramm und unter der Domänenklasse im DSL-Explorer aufgelistet. Weitere Informationen finden Sie unter Vorgehens [Weise beim Definieren einer Domain-Specific Sprache](../modeling/how-to-define-a-domain-specific-language.md).
@@ -46,10 +46,10 @@ Eine *Domänen Eigenschaft* ist eine Funktion eines Modell Elements, das einen W
 |**Ist UI-schreibgeschützt**|Falls `True` gilt, kann der Wert der Domäneneigenschaft nicht mit der Benutzeroberfläche geändert werden. Er kann weiterhin durch die Programme festgelegt werden, und er wird im Eigenschaftenfenster angezeigt.<br /><br /> Wenn Sie die Domänen Eigenschaft für den Benutzer ausblenden möchten **, legen Sie** durchsuchbar fest. Wenn Sie den Zugriff nach Programmen steuern möchten, legen Sie **Setter-Zugriffsmodifizierer** fest.|`False`|
 |**Kind**|Die Art der Domäneneigenschaft (`Normal`, `Calculated` oder `CustomStorage`). Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speicher Eigenschaften](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
 |**Name**|Der Name dieser Domäneneigenschaft. Dies muss ein gültiger Bezeichner sein, z. b. " **songtitle**".|\<none>|
-|**Notizen**|Informelle Hinweise, die mit dieser Domäneneigenschaft verknüpft sind.|\<none>|
+|**Hinweise**|Informelle Hinweise, die mit dieser Domäneneigenschaft verknüpft sind.|\<none>|
 |**Setter-Zugriffsmodifizierer**|Der Zugriffsmodifizierer für den Setter. Dieser steuert den Umfang, in welchem der Programmcode die Eigenschaft festlegen kann.|`public`|
 |**Typ**|Der Typ der Eigenschaft. Um die Liste der verfügbaren Typen hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Stamm der DSL im DSL-Explorer, und klicken Sie dann auf **externen Typ hinzufügen**.|`String`|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

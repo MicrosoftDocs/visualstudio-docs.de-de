@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 6fb50018dccbe03512c8ab6e5f07c17dbcee307d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941332"
 ---
 # <a name="properties-of-domain-relationships"></a>Eigenschaften von Domänenbeziehungen
 Die Eigenschaften in der folgenden Tabelle sind einer Domänen Beziehung zugeordnet. Weitere Informationen zu Domänen Beziehungen finden Sie Untergrund Legendes zu [Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md). Weitere Informationen zur Verwendung dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer Domain-Specific Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Eigenschaft|BESCHREIBUNG|Standard|
+|Eigenschaft|Beschreibung|Standard|
 |-|-|-|
 |Zugriffsmodifizierer|Die Zugriffsebene der Domänen Beziehung ( `public` oder `internal` ).|`public`|
 |Benutzerdefinierte Attribute|Wird verwendet, um der Quell Code Klasse Attribute hinzuzufügen, die aus der Domänen Beziehung generiert werden.|\<none>|
@@ -33,11 +33,11 @@ Die Eigenschaften in der folgenden Tabelle sind einer Domänen Beziehung zugeord
 |Ist Einbettungen|`True`Gibt an, dass die Domänen Beziehung eine Embedding Relationship ist. `False`Gibt an, dass die Beziehung eine Verweis Beziehung ist.|\<both>|
 |Name|Der Name der Domänen Beziehung.|Aktueller Name|
 |Namespace|Der Namespace, der der Domänen Beziehung zugeordnet ist.|Aktueller Namespace|
-|Hinweise|Informelle Hinweise, die mit der Domänen Beziehung verknüpft sind.|\<none>|
+|Notizen|Informelle Hinweise, die mit der Domänen Beziehung verknüpft sind.|\<none>|
 |Beschreibung|Die Beschreibung, die verwendet wird, um Code zu dokumentieren, und wird in der Benutzeroberfläche des generierten Designers verwendet.|\<none>|
 |Anzeigename|Der Name, der im generierten Designer für die Domänen Beziehung angezeigt wird.|\<none>|
 |Hilfsschlüsselwort|Das optionale Schlüsselwort, das zum Indizieren der F1-Hilfe für die Domänen Beziehung verwendet wird.|\<none>|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

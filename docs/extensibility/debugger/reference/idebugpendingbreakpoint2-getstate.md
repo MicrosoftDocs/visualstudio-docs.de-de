@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: e88d543f-2e83-4ba7-86ca-f874e39955ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ad65ff6fcebb18ac1b8852c08195e9a8b062749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93aae8aea0216adfff533aa9aacd3c5c925e362c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940292"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 Ruft den Zustand des ausstehenden halte Punkts ab.
@@ -29,13 +29,13 @@ Ruft den Zustand des ausstehenden halte Punkts ab.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT GetState( 
+HRESULT GetState( 
    PENDING_BP_STATE_INFO* pState
 );
 ```
 
 ```csharp
-int GetState( 
+int GetState( 
    PENDING_BP_STATE_INFO[] pState
 );
 ```
