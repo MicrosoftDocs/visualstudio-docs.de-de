@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 828a08cfe2841595e0ed3a9f1e3d79973a6e6756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943380"
 ---
 # <a name="wizards"></a>Assistenten
 Nachdem Sie einen Assistenten erstellt haben, möchten Sie ihn in der Regel der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) hinzufügen, damit er von anderen Benutzern verwendet werden kann. Der hinzugefügte Assistent wird dann in den Dialogfeldern **Neues Projekt hinzufügen** oder **Neues Element hinzufügen** angezeigt. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf eine geöffnete Projekt Mappe, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt** oder **Neues Element**, um die Dialogfelder **Neues Projekt hinzufügen** oder **Neues Element hinzufügen** anzuzeigen.
@@ -43,7 +43,7 @@ Nachdem Sie einen Assistenten erstellt haben, möchten Sie ihn in der Regel der 
 
  Beschreibt die `IDTWizard` Schnittstelle, die Assistenten implementieren müssen, damit Sie in der IDE funktioniert.
 
-- [Kontextparameter](../../extensibility/internals/context-parameters.md)
+- [Kontext Parameter](../../extensibility/internals/context-parameters.md)
 
  Erläutert, wie Assistenten implementiert werden und was geschieht, wenn die IDE Kontext Parameter an die-Implementierung übergibt.
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 339d424dd0b09404fc135a119606d47cf7570be3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944094"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -92,7 +92,7 @@ Die Symbolleiste im **Help Viewer-Fenster** enthält die folgenden Schaltfläche
 
 - Das kleine Dreieck auf der rechten Seite öffnet eine Liste von Registerkarten, einschließlich Themen Registerkarten und der Registerkarte **Inhalt verwalten** . Sie können einen Registerkarten Namen auswählen, um ihn als aktive Registerkarte zu erstellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Microsoft Help Viewer Installation](../help-viewer/installation.md)
 - [Help Viewer-Administrator Handbuch](../help-viewer/administrator-guide.md)

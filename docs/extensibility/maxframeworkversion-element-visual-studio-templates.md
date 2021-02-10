@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 09ddccece8261a331277d1c143054305f0d08d7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943204"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Maxframeworkversion-Element (Visual Studio-Vorlagen)
 
@@ -57,7 +57,7 @@ Gibt die maximale Version der .NET Framework an, die für die Vorlage erforderli
 
  Der Text muss die höchste Versionsnummer des .NET Framework sein, der von der Vorlage zugelassen wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 `MaxFrameworkVersion` ist ein optionales Element. Das `MaxFrameworkVersion` Element sollte weggelassen werden, es sei denn, es ist erforderlich, damit der unterstützte Bereich von .NET Framework Versionen für die Vorlage nicht versehentlich beschränkt wird. Er sollte auch weggelassen werden, wenn .NET Framework nicht auf die Vorlage anwendbar ist.
 

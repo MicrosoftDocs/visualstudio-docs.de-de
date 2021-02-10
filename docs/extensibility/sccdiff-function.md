@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b68df68ce7fa4ad5cbc98db256204ddf8623d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943113"
 ---
 # <a name="sccdiff-function"></a>Sccdiff-Funktion
 Diese Funktion zeigt die Unterschiede zwischen der aktuellen Datei (auf dem lokalen Datenträger) und der zuletzt eingecheckten Version im Quell Code Verwaltungssystem an (oder überprüft Sie optional).
@@ -58,7 +58,7 @@ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Die Arbeitskopie und die Server Version sind identisch.|
 |SCC_I_FILESDIFFERS|Die Arbeitskopie unterscheidet sich von der Version unter Quell Code Verwaltung.|

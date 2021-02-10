@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942801"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Steuern der Sichtbarkeit eines Symbols oder Decorator-Elements
 Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer domänenspezifischen Sprache (DSL) angezeigt wird. Sie können festlegen, dass der Decorator abhängig vom Zustand der Eigenschaften im Modell angezeigt und ausgeblendet wird. Beispielsweise können in einer Form, die eine Person darstellt, verschiedene Symbole angezeigt werden, die abhängig vom Geschlecht der Person, der Anzahl der untergeordneten Elemente usw. angezeigt werden.
@@ -90,7 +90,7 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
 6. Beachten Sie den Namespace, die Klasse und die Methode, die fehlen.  Beispiel: Company. FamilyTree. Person. getdecoratorcontrolvalue ().
 
-7. Schreiben Sie in einer separaten Codedatei eine partielle Klassendefinition, die die fehlende Methode enthält. Zum Beispiel:
+7. Schreiben Sie in einer separaten Codedatei eine partielle Klassendefinition, die die fehlende Methode enthält. Beispiel:
 
     ```
     namespace Company.FamilyTree
@@ -105,7 +105,7 @@ Ein *Decorator* ist ein Symbol oder eine Textzeile, die auf einer Form in einer 
 
 8. Erstellen Sie die Projekt Mappe neu.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Definieren von Formen und Konnektoren](../modeling/defining-shapes-and-connectors.md)
 - [Festlegen eines Hintergrundbilds für ein Diagramm](../modeling/setting-a-background-image-on-a-diagram.md)

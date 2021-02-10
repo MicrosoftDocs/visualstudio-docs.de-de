@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944302"
 ---
 # <a name="help-viewer-administrator-guide"></a>Administratorhandbuch für Help Viewer
 
@@ -60,7 +60,7 @@ Im folgenden Beispiel werden englische Inhalte für Visual Studio auf einem Clie
 
 #### <a name="to-install-english-content-from-the-internet"></a>So installieren Sie englischsprachige Inhalte über das Internet
 
-1. Klicken Sie auf **Start** und dann auf **Ausführen**.
+1. Wählen Sie **Start** und dann **Ausführen** aus.
 
 2. Geben Sie folgenden Pfad ein:
 
@@ -99,7 +99,7 @@ Bevor Sie die grundlegenden Inhalte erstellen können, müssen Sie alle lokalen 
 
 4. Klicken Sie zum Deinstallieren auf **Aktualisieren**.
 
-5. Navigieren Sie zu *%ProgramData%\microsoft\helplibrary2\catalogs\visualstudio15* , und vergewissern Sie sich, dass der Ordner nur die Datei *catalogType.xml*enthält.
+5. Navigieren Sie zu *%ProgramData%\microsoft\helplibrary2\catalogs\visualstudio15* , und vergewissern Sie sich, dass der Ordner nur die Datei *catalogType.xml* enthält.
 
    Nachdem Sie alle zuvor installierten lokalen Visual Studio-Hilfeinhalte entfernt haben, können Sie die grundlegenden Inhalte herunterladen.
 
@@ -131,7 +131,7 @@ Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern b
 
 1. Erstellen Sie eine Netzwerkfreigabe, und kopieren Sie die Hilfeinhalte dorthin.
 
-     Kopieren Sie z. b. den Inhalt in *c:\vshelp* in * \\ \myserver\vshelp*.
+     Kopieren Sie z. b. den Inhalt in *c:\vshelp* in *\\ \myserver\vshelp*.
 
 2. Erstellen Sie eine *BAT-Datei* für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen. Beispiel:
 
@@ -143,7 +143,7 @@ Anschließend müssen Sie den Inhalt so verpacken, dass er auf Clientcomputern b
 
 3. Führen Sie die *bat* -Datei auf den lokalen Computern aus, auf denen Sie die Hilfe Inhalte installieren möchten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Befehlszeilenargumente für den Hilfe Inhalts-Manager](../help-viewer/command-line-arguments.md)
 - [Über schreibungen durch den Hilfe Inhalts-Manager](../help-viewer/behavior-overrides.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Help Viewer, installing
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0161cafe9f9c09f11774da7d6e3e449a9ac4d068
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 8b966ee38298f35b78722d2fe7e43b86773d5e68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878981"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944146"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installieren von Microsoft Help Viewer
 
@@ -44,7 +44,7 @@ Zudem können Sie Microsoft Help Viewer ganz leicht über das Suchfeld installie
 
    ![Schaltfläche „Installieren”](media/installation/install.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Help Viewer und Offline Inhalt für SQL Server](/sql/sql-server/sql-server-help-installation)

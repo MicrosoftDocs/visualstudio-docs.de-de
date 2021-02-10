@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba08e4ec32aceaf6c265714848939cc6ad9c66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944642"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 Diese Schnittstelle stellt einen Stream von Anweisungen dar.

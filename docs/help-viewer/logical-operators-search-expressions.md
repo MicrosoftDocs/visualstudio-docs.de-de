@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878929"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944081"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Logische und erweiterte Operatoren in Suchausdrücken
 
-Sie können logische Operatoren und erweiterte Such Operatoren verwenden, um die Suche nach Hilfe Inhalten in **Help Viewer**zu verfeinern.
+Sie können logische Operatoren und erweiterte Such Operatoren verwenden, um die Suche nach Hilfe Inhalten in **Help Viewer** zu verfeinern.
 
 ## <a name="logical-operators"></a>Logische Operatoren
 
@@ -31,7 +31,7 @@ Mit logischen Operatoren können Sie angeben, wie viele Suchausdrücke in einer 
 |Suchen nach|Verwendung|Beispiel|Ergebnis|
 |-------------------|---------|-------------|------------|
 |Beide Begriffe im gleichen Artikel|AND|dib UND palette|Themen, die sowohl „Dib“ als auch „Palette“ enthalten.|
-|Einer der Begriffe in einem Artikel|oder|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
+|Einer der Begriffe in einem Artikel|ODER|Raster ODER Vektor|Themen, die entweder „Raster“ oder „Vektor“ enthalten.|
 |Erster Begriff ohne den zweiten Begriff im gleichen Artikel|NICHT|„Betriebssystem“ NICHT DOS|Themen, die „Betriebssystem“ aber nicht „DOS“ enthalten.|
 |Beide Begriffe nah beieinander in einem Artikel|NEAR|Benutzer NAH Kernel|Themen mit „Benutzer“ in der Nähe von „Kernel“.|
 
@@ -68,7 +68,7 @@ Mit dem Operator `code:` können Sie nach Inhalt von einer der Programmiersprach
 > [!NOTE]
 > Der Operator `code:` findet nur Inhalt, der mit einem Programmiersprachenbezeichner markiert ist, und keinen Inhalt, der generisch als Code markiert ist.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Vorgehensweise: Suchen nach Themen](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

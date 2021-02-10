@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 928637d8103a69eafd3bda4446a55bb7523f83a8
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 451e0bab9568d794205e38e3573265c20c259961
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943334"
 ---
 # <a name="keybindings-element"></a>KeyBinding-Element
 Das KeyBinding-Element gruppiert KeyBinding-Elemente und andere keybindungs Gruppierungen.
@@ -41,18 +41,18 @@ Das KeyBinding-Element gruppiert KeyBinding-Elemente und andere keybindungs Grup
 
 |attribute|Beschreibung|
 |---------------|-----------------|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[KeyBinding-Element](../extensibility/keybinding-element.md)|Gibt Tastenkombinationen für die Befehle an.|
 |[Tasten Zuordnungen](../extensibility/keybindings-element.md)|Gruppiert KeyBinding-Elemente und andere keybindungs Gruppierungen.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[Commandtable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen.|
 
@@ -67,6 +67,6 @@ Das KeyBinding-Element gruppiert KeyBinding-Elemente und andere keybindungs Grup
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [KeyBinding-Element](../extensibility/keybinding-element.md)
 - [Vsct-Dateien (Visual Studio-Befehls Tabelle)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

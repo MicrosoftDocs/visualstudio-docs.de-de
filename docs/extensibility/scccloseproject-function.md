@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a54193b23015135b6112655fe48d79d3de74e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943152"
 ---
 # <a name="scccloseproject-function"></a>Scccloseproject-Funktion
 Diese Funktion schließt ein Projekt und markiert das Ende einer bestimmten Sitzung.
@@ -36,7 +36,7 @@ SCCRTN SccCloseProject (
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|BESCHREIBUNG|
+|Wert|Beschreibung|
 |-----------|-----------------|
 |SCC_OK|Das Projekt wurde erfolgreich geschlossen.|
 |SCC_E_PROJNOTOPEN|Zurzeit ist kein Projekt geöffnet.|
