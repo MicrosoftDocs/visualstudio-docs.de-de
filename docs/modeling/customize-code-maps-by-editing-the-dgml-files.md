@@ -19,15 +19,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 47613a2f74ce1c89a6b032e46fa18b978c1c5f0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945291"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Anpassen von Code Maps durch Bearbeiten der DGML-Dateien
 
@@ -49,7 +49,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
     Suchen Sie den `<Nodes>`-Abschnitt, um eine neue Gruppe hinzuzufügen. Fügen Sie ein neues `<Node/>`-Element hinzu.
 
-3. Fügen Sie im `<Node/>`-Element ein `Group`-Attribut hinzu, um anzugeben, ob die Gruppe erweitert oder reduziert angezeigt werden soll. Zum Beispiel:
+3. Fügen Sie im `<Node/>`-Element ein `Group`-Attribut hinzu, um anzugeben, ob die Gruppe erweitert oder reduziert angezeigt werden soll. Beispiel:
 
    ```xml
    <Nodes>
@@ -66,7 +66,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
    - Ein `Category`-Attribut, das eine `Contains`-Beziehung zwischen dem Gruppencodeelement und seinem untergeordneten Codeelement angibt
 
-     Zum Beispiel:
+     Beispiel:
 
    ```xml
    <Links>
@@ -98,7 +98,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
     Stroke="StrokeValue"
     ```
 
-     Zum Beispiel:
+     Beispiel:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -203,7 +203,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
     Shape="ShapeFilePathLocation"
     ```
 
-     Zum Beispiel:
+     Beispiel:
 
     ```xml
     <Nodes>
@@ -238,7 +238,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     Zum Beispiel:
+     Beispiel:
 
     ```xml
     <Links>
@@ -268,7 +268,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 2. Fügen Sie im `<Style/>`-Element ein `<Condition/>`-Element mit einem `Expression`-Attribut hinzu, um einen Ausdruck anzugeben, von dem ein boolescher Wert zurückgegeben wird.
 
-    Zum Beispiel:
+    Beispiel:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -316,7 +316,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 3. Fügen Sie in der nächsten Zeile nach dem `<Condition/>`-Element mindestens ein `<Setter/>`-Element hinzu, um ein `Property`-Attribut anzugeben, sowie ein festes `Value`-Attribut oder ein berechnetes `Expression`-Attribut, das auf die Map, auf die Codeelemente oder auf die Links angewendet werden soll, von der bzw. von denen die Bedingung erfüllt wird.
 
-    Zum Beispiel:
+    Beispiel:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -444,7 +444,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 1. Öffnen Sie die DGML-Datei in einem Text- oder XML-Editor.
 
-2. Suchen Sie das `<Node/>`-Element für dieses Codeelement. Geben Sie den Namen der Eigenschaft und ihren Wert an. Zum Beispiel:
+2. Suchen Sie das `<Node/>`-Element für dieses Codeelement. Geben Sie den Namen der Eigenschaft und ihren Wert an. Beispiel:
 
     ```xml
     <Nodes>
@@ -466,7 +466,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 2. Suchen Sie das `<Link/>`-Element, das sowohl den Namen des Quellcodeelements als auch den Namen des Zielcodeelements enthält.
 
-3. Geben Sie im `<Node/>`-Element den Namen der Eigenschaft und deren Wert an. Zum Beispiel:
+3. Geben Sie im `<Node/>`-Element den Namen der Eigenschaft und deren Wert an. Beispiel:
 
     ```xml
     <Links>
@@ -491,7 +491,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 - Suchen Sie das `<Node/>`-Element für das gewünschte Codeelement.
 
-- Fügen Sie im `<Node/>`-Element ein `Category`-Attribut hinzu, um den Namen der Kategorie anzugeben. Zum Beispiel:
+- Fügen Sie im `<Node/>`-Element ein `Category`-Attribut hinzu, um den Namen der Kategorie anzugeben. Beispiel:
 
     ```xml
     <Nodes>
@@ -513,7 +513,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 2. Suchen Sie das `<Link/>`-Element, das sowohl den Namen des Quellcodeelements als auch den Namen des Zielcodeelements enthält.
 
-3. Fügen Sie im `<Link/>`-Element ein `Category`-Attribut hinzu, um den Namen der Kategorie anzugeben. Zum Beispiel:
+3. Fügen Sie im `<Link/>`-Element ein `Category`-Attribut hinzu, um den Namen der Kategorie anzugeben. Beispiel:
 
     ```xml
     <Links>
@@ -535,7 +535,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
 2. Fügen Sie ein `<Category/>`-Element für die übergeordnete Kategorie hinzu, und fügen Sie anschließend dem `BasedOn`-Element der untergeordneten Kategorie das `<Category/>`-Attribut hinzu.
 
-     Zum Beispiel:
+     Beispiel:
 
     ```xml
     <Nodes>
@@ -584,7 +584,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
      > [!NOTE]
      > Pro Element kann nur ein `Reference`-Attribut verwendet werden.
 
-     Zum Beispiel:
+     Beispiel:
 
    ```xml
    <Nodes>
@@ -609,7 +609,7 @@ Bearbeiten Sie die DGML-Datei der Code Map in einem Text- oder XML-Editor. Wenn 
 
       4. Verwenden Sie das- `Label` Attribut, um den Anzeige Text im Kontextmenü **Gehe zu Verweis** des Code Elements anzugeben.
 
-      Zum Beispiel:
+      Beispiel:
 
    ```xml
    <Nodes>

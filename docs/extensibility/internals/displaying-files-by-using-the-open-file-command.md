@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 96f92aa921c7bb78511ed685d846e288518258fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946825"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Anzeigen von Dateien mit dem Befehl "Datei öffnen"
 In den folgenden Schritten wird beschrieben, wie die IDE den Befehl **Open File** behandelt, der im Menü **Datei** in verfügbar ist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Die Schritte beschreiben auch, wie Projekte auf Aufrufe reagieren sollen, die aus diesem Befehl stammen.
@@ -53,7 +53,7 @@ In den folgenden Schritten wird beschrieben, wie die IDE den Befehl **Open File*
 
 5. Das Projekt hat dann die Möglichkeit, die Datei mit einem projektspezifischen Editor oder einem Standard-Editor zu öffnen. Weitere Informationen finden Sie unter Gewusst [wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md) und Gewusst [wie: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Anzeigen von Dateien mit dem Befehl "Öffnen mit"](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 - [Öffnen und Speichern von Projekt Elementen](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Gewusst wie: Öffnen von projektspezifischen Editoren](../../extensibility/how-to-open-project-specific-editors.md)

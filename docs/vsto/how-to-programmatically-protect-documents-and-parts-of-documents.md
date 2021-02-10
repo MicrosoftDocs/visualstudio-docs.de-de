@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word documents, protection
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1dbb001a8c350b376f30047dbafbf747f043e91d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a3301abf4807c02e1ed3e330e27c609a721bf48d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527772"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946149"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Gewusst wie: Programm gesteuertes schützen von Dokumenten und Teilen von Dokumenten
   Sie können Schutz zu einem Microsoft Office Word-Dokument hinzufügen, um zu verhindern, dass Benutzer irgendwelche Änderungen an dem Dokument vornehmen können.

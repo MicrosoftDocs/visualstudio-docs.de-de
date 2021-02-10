@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2bcbce3c97830663b43a94191d84d81418b423
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1b03b7a4941609462fca27bebf67d8ad2a8f7044
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944920"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Erstellen einer Erweiterung mit einem Tool Fenster
 
@@ -29,13 +29,13 @@ In diesem Verfahren erfahren Sie, wie Sie mithilfe der VSIX-Projektvorlage und d
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen **firstwindow**. Sie finden die VSIX-Projektvorlage im Dialogfeld " **Neues Projekt** ", indem Sie nach "VSIX" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine Tool Fenster-Element Vorlage mit dem Namen **MyWindow** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **Add**  >  **Neues Element** hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefiniertes Tool Fenster** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Dateinamen des Tool Fensters in *MyWindow.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine Tool Fenster-Element Vorlage mit dem Namen **MyWindow** hinzu. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie   >  **Neues Element** hinzufügen aus. Wechseln Sie im Dialogfeld **Neues Element hinzufügen** zu **Visual c#**  >  -**Erweiterbarkeit** , und wählen Sie **benutzerdefiniertes Tool Fenster** aus. Ändern Sie im Feld **Name** am unteren Rand des Fensters den Dateinamen des Tool Fensters in *MyWindow.cs*.
 
 3. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
    Die experimentelle Instanz von Visual Studio wird angezeigt. Weitere Informationen über die experimentelle Instanz finden Sie in [der experimentellen Instanz](../extensibility/the-experimental-instance.md).
 
-4. Wechseln Sie in der experimentellen Instanz zu **View**  >  **Weitere Fenster** anzeigen.
+4. Wechseln Sie in der experimentellen Instanz zu   >  **Weitere Fenster** anzeigen.
 
    Ein Menü Element für " **MyWindow**" sollte angezeigt werden. Klicken Sie auf diese Schaltfläche.
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 476e187a0e4c3cefde7f09124fbbd21374e2175c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945694"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden-Element (Visual Studio-Vorlagen)
 
@@ -63,7 +63,7 @@ Ein Textwert ist erforderlich.
 
 Der Text muss entweder `true` oder sein `false` , um anzugeben, ob die Vorlage in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 `Hidden` ist ein optionales Element.
 
@@ -98,7 +98,7 @@ Im folgenden Beispiel werden die Metadaten für eine c#-Vorlage veranschaulicht.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
 - [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 24ffc64876e015ba2139022698576e04b12625e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945642"
 ---
 # <a name="properties-window-object-list"></a>Objektliste des Eigenschaftenfensters
 Die Objektliste im **Eigenschaften** Fenster ist eine Dropdown Liste, mit der Sie die Auswahl in andere Objekte ändern können, die in einem oder mehreren ausgewählten Fenstern verfügbar sind. Wenn Sie ein anderes Objekt aus dieser Liste auswählen, wird ein Rückruf von ausgelöst <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> , um die Umgebung darüber zu informieren, dass ein neues-Objekt ausgewählt wurde. Die im **Eigenschaften** Fenster angezeigten Informationen werden dann geändert, um die Eigenschaften anzuzeigen, die dem neu ausgewählten Objekt zugeordnet sind.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00e13da257c5477b3834ebb85bf6d481fe699362
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 171e9da3b25aa33ad3921f4ec5f841429490be72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944614"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]

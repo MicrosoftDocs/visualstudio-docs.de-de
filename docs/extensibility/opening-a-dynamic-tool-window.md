@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 1998091559f78ed7c7eb8d9585206cf0217d8b2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863509"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946591"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Öffnen eines dynamischen Tool Fensters
 Tool Fenster werden in der Regel über einen Befehl in einem Menü oder eine entsprechende Tastenkombination geöffnet. Manchmal benötigen Sie jedoch ein Tool Fenster, das geöffnet wird, wenn ein bestimmter UI-Kontext zutrifft, und wird geschlossen, wenn der UI-Kontext nicht mehr zutrifft. Diese Arten von Tool Fenstern werden als *dynamisch* oder *automatisch sichtbar* bezeichnet.

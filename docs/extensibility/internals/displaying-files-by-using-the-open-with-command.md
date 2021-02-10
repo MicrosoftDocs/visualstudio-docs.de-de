@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946721"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Anzeigen von Dateien mit dem Befehl "Öffnen mit"
 Ein Projekt kann die IDE bitten, das Dialogfeld **Öffnen mit** anzuzeigen. Diese Anforderung fordert den Benutzer auf, eine Datei zu öffnen, die über eine Auswahl von Standard-Editoren verfügt. Dieser Prozess wird in den folgenden Schritten beschrieben:
@@ -33,7 +33,7 @@ Ein Projekt kann die IDE bitten, das Dialogfeld **Öffnen mit** anzuzeigen. Dies
 
 3. Sobald der Benutzer im Dialogfeld **Öffnen mit** ein Element auswählt, öffnet die IDE das Dokument durch Aufrufen der- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode. Weitere Informationen finden Sie unter Gewusst [wie: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Öffnen und Speichern von Projekt Elementen](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Anzeigen von Dateien mit dem Befehl "Datei öffnen"](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 - [Vorgehensweise: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)

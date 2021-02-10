@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c63510083f227f617b2a11ddec07510ffd792433
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: e12c418365ad7127823a115aa1ed66b06ff6e156
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994354"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945811"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Einstieg in Roslyn-Analysen
 

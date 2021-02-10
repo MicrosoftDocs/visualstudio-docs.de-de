@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 912c8fc9b5920411304310c44cdc264968472d4e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9cfa8a3cda3f6bb2f564efe745a11863cf4d0e8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945304"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
 
@@ -70,7 +70,7 @@ Das Visual Studio-Modellierungs-und-Visualisierungs-SDK (vmsdk) bietet mehrere E
 |Integrieren Sie mehrere DSLs, damit Sie als Teil einer Anwendung funktionieren.|Weitere Informationen finden [Sie unter Integrieren von Modellen mit Visual Studio-ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|
 |Erlauben Sie, dass Ihre DSL von Drittanbietern erweitert wird, und Steuern Sie die Erweiterung.|[Erweitern von DSL mittels MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
 - [Schreiben von Code zum Anpassen einer Domain-Specific Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
