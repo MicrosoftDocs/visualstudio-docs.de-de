@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5e4b124-1e30-47c8-a511-80084a02dba5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2e23ad4f673e4e150ea677d993c5b36a4e386c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d7b6508a635edf3dc328f79a06a386efce07aae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949583"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 Diese Schnittstelle stellt einen analysierten Ausdruck dar, der für das Binden und auswerten bereit ist.
@@ -40,11 +40,11 @@ IDebugExpression2 : IUnknown
 |Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Wertet diesen Ausdruck asynchron aus.|
-|[Abbruch](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|Beendet die asynchrone Ausdrucks Auswertung.|
+|[Abbrechen](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|Beendet die asynchrone Ausdrucks Auswertung.|
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|Wertet diesen Ausdruck synchron aus.|
 
 ## <a name="remarks"></a>Bemerkungen
- Wenn ein Programm angehalten wurde, erhält der Sitzungs-Debug-Manager (SDM) einen Stapel Rahmen von der de mit einem aufzurufenden [enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)-Aufrufs. Der SDM ruft dann [getexpressioncontext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) auf, um die [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle zu erhalten. Darauf folgt ein aufruftertext [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) zum Erstellen der- `IDebugExpression2` Schnittstelle, die den analysierten Ausdruck darstellt, der für die Auswertung bereit ist.
+ Wenn ein Programm angehalten wurde, erhält der Sitzungs-Debug-Manager (SDM) einen Stapel Rahmen von der de mit einem aufzurufenden [enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)-Aufrufs. Der SDM ruft dann [getexpressioncontext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) auf, um die [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) -Schnittstelle zu erhalten. Darauf folgt ein aufruftertext [](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) zum Erstellen der- `IDebugExpression2` Schnittstelle, die den analysierten Ausdruck darstellt, der für die Auswertung bereit ist.
 
  Der SDM ruft entweder [evaluatesync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) auf, um den Ausdruck tatsächlich auszuwerten und einen Wert zu erhalten.
 

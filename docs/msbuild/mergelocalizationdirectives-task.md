@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 69a7c6a472023dd8bd41b087b3749e5451382a5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950305"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives-Aufgabe
 
@@ -36,15 +36,15 @@ Die <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives>-Aufgabe fü
 | Parameter | Beschreibung |
 |------------------------------| - |
 | `GeneratedLocalizationFiles` | Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt die Liste der Dateien mit Lokalisierungsrichtlinien für einzelne Dateien im XAML-Binärformat an. |
-| `OutputFile` | Erforderlicher **String** -Ausgabeparameter.<br /><br /> Gibt den Ausgabepfad der kompilierten Lokalisierungsrichtlinien-Assembly an. |
+| `OutputFile` | Erforderlicher **String**-Ausgabeparameter.<br /><br /> Gibt den Ausgabepfad der kompilierten Lokalisierungsrichtlinien-Assembly an. |
 
 ## <a name="remarks"></a>Hinweise
 
-Sie können dem XAML-Inhalt Lokalisierungsattribute und -kommentare hinzufügen. Mit WPF-Lokalisierungsunterstützung (Windows Presentation Foundation) können Sie Lokalisierungsattribute und -kommentare entfernen und in einer von der generierten Assembly separaten *LOC* -Datei ablegen. Verwenden Sie hierzu das **LocalizationPropertyStorage** -Attribut. Weitere Informationen zu Lokalisierungsattributen und -kommentaren sowie **LocalizationPropertyStorage** finden Sie unter [Lokalisierungsattribute und -kommentare](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+Sie können dem XAML-Inhalt Lokalisierungsattribute und -kommentare hinzufügen. Mit WPF-Lokalisierungsunterstützung (Windows Presentation Foundation) können Sie Lokalisierungsattribute und -kommentare entfernen und in einer von der generierten Assembly separaten *LOC*-Datei ablegen. Verwenden Sie hierzu das **LocalizationPropertyStorage**-Attribut. Weitere Informationen zu Lokalisierungsattributen und -kommentaren sowie **LocalizationPropertyStorage** finden Sie unter [Lokalisierungsattribute und -kommentare](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel werden die Lokalisierungskommentare mehrerer XAML-Binärformatdateien in einer einzelnen *LOC* -Datei zusammengeführt.
+Im folgenden Beispiel werden die Lokalisierungskommentare mehrerer XAML-Binärformatdateien in einer einzelnen *LOC*-Datei zusammengeführt.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
