@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da230a2da87b2dd3e3a85ce3ec6c914e829ccc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936937"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -23,7 +23,7 @@ ms.locfileid: "80736941"
 
  Im folgenden finden Sie die Ausdrucks Evaluierungs Schnittstellen für das [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debuggingsdk.
 
-## <a name="discussion"></a>Diskussion (Discussion)
+## <a name="discussion"></a>Diskussion
  Diese Schnittstellen werden verwendet, um Ausdrücke in einer-Rückruf Stapel während des Break-Modus auszuwerten. Sie werden nur für Common Language Run-Time Expression Auswertungen (EE) implementiert.
 
  Jede Schnittstelle in der Tabelle zeigt die Komponente an, die Sie aus der folgenden Liste implementieren kann:
@@ -59,7 +59,7 @@ ms.locfileid: "80736941"
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|Bietet die Möglichkeit, ein [ieevisualizerservice](../../../extensibility/debugger/reference/ieevisualizerservice.md) -Objekt zu erstellen.|
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|Stellt eine Auflistung von [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekten dar.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Schreiben einer CLR-Ausdrucksauswertung](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Typschnellansicht und benutzerdefinierter Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

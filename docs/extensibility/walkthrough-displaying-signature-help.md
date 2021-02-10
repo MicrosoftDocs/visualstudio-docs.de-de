@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8933822ee5bb63b341ff51296ba2884fef2aeb75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935910"
 ---
 # <a name="walkthrough-display-signature-help"></a>Exemplarische Vorgehensweise: Anzeigen der Signatur Hilfe
 Mit der Signatur Hilfe (auch als *Parameter Info* bezeichnet) wird die Signatur einer Methode in einer QuickInfo angezeigt, wenn ein Benutzer das Parameter Listen-Startzeichen (in der Regel eine öffnende Klammer) eingibt. Wenn ein Parameter und Parameter Trennzeichen (in der Regel ein Komma) eingegeben werden, wird die QuickInfo aktualisiert, um den nächsten Parameter fett anzuzeigen. Auf folgende Weise können Sie die Signatur Hilfe definieren: im Kontext eines sprach dienstanzdienstanzdienstanbieter definieren Sie eine eigene Dateinamenerweiterung und einen Inhaltstyp und zeigen die Signatur Hilfe für diesen Typ an, oder Sie zeigen die Signatur Hilfe für einen vorhandenen Inhaltstyp an (z. b. "Text"). In dieser exemplarischen Vorgehensweise wird gezeigt, wie die Signatur Hilfe für den Inhaltstyp "Text" angezeigt wird.

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937408"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Exemplarische Vorgehensweise: einfache Datenbindung in einem Projekt auf Dokument Ebene
   In dieser exemplarischen Vorgehensweise werden die Grundlagen der Datenbindung in einem Projekt auf Dokument Ebene veranschaulicht. Ein einzelnes Datenfeld in einer SQL Server Datenbank wird in Microsoft Office Excel an einen benannten Bereich gebunden. Die exemplarische Vorgehensweise zeigt auch, wie Sie Steuerelemente hinzufügen, mit denen Sie durch alle Datensätze in der Tabelle scrollen können.

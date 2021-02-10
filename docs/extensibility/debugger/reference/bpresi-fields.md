@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d82650fabf467d44b1bd5eba01599c5cb5e40bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938262"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
 Gibt die Informationen an, die zur erfolgreichen Auflösung eines Breakpoints abgerufen werden sollen.
@@ -66,7 +66,7 @@ Diese Flags werden auch verwendet, um anzugeben, welche Felder der `BP_RESOLUTIO
 
 Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

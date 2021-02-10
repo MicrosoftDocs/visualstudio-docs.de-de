@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d205203797d8bd50c7b3132df86fbff9dbad1771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937692"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint
   Die folgenden Verfahren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Website Spalten – oder *Felder*– sowie einen Inhaltstyp erstellen, der die Websites Palten verwendet. Außerdem wird gezeigt, wie eine Liste erstellt wird, in der der neue Inhaltstyp verwendet wird.
@@ -89,7 +89,7 @@ ms.locfileid: "96914009"
 
 #### <a name="to-add-site-columns"></a>So fügen Sie Site Spalten hinzu
 
-1. Fügen Sie eine neue Website Spalte hinzu. Klicken Sie hierzu in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **Clinic** , und wählen Sie dann **Add**  >  **Neues Element** hinzufügen aus.
+1. Fügen Sie eine neue Website Spalte hinzu. Klicken Sie hierzu in **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **Clinic** , und wählen Sie dann   >  **Neues Element** hinzufügen aus.
 
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Website Spalte** aus, ändern Sie den Namen in **patientName**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.
 

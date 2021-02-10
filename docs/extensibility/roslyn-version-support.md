@@ -8,15 +8,15 @@ helpviewer_keywords:
 - roslyn package versions
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: f76a8dcdbb644fe456c62fca7de6fb7afe96d556
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935890"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.Net-compilerplattform-Paket Versions Referenz
 
@@ -26,7 +26,7 @@ Um z. b. sicherzustellen, dass die benutzerdefinierte Analyse für alle Versione
 
 | Roslyn-Paketversion | Mindestens unterstützte Visual Studio-Version |
 | - | - |
-| 3.x | Visual Studio 2019 |
+| 3.x | Visual Studio 2019 |
 | 2.10.0 | Visual Studio 2017 Version 15.9 |
 | 2.9.0 | Visual Studio 2017 Version 15.8 |
 | 2.8.2 | Visual Studio 2017-Version 15.7 |

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937679"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Exemplarische Vorgehensweise: Aufrufen des SharePoint-Client Objektmodells in einer Server-Explorer-Erweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie das SharePoint-Client Objektmodell aus einer Erweiterung für den Knoten **SharePoint-Verbindungen** in **Server-Explorer** aufgerufen wird. Weitere Informationen zur Verwendung des SharePoint-Client Objektmodells finden Sie unter " [Aufrufe in die SharePoint-Objekt Modelle](../sharepoint/calling-into-the-sharepoint-object-models.md)".
@@ -210,11 +210,11 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
     > [!NOTE]
     > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
+7. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 8. Wählen Sie in der Liste **Projekt** die Option **WebPartNodeExtension** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-9. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass die Projekt Mappe ohne Fehler kompiliert wird.
+9. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  dass die Projekt Mappe ohne Fehler kompiliert wird.
 
 10. Stellen Sie sicher, dass der Buildausgabeordner für das WebPartNode-Projekt jetzt die Datei WebPartNode. vsix enthält.
 
@@ -235,7 +235,7 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
 
 #### <a name="to-test-the-extension"></a>So testen Sie die Erweiterung
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Server-Explorer **anzeigen** aus  >  **Server Explorer**.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Server-Explorer **anzeigen** aus  >  .
 
 2. Vergewissern Sie sich, dass die SharePoint-Website, die Sie für Tests verwenden möchten, unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer** angezeigt wird. Wenn Sie nicht aufgeführt ist, führen Sie die folgenden Schritte aus:
 
@@ -268,7 +268,7 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
 
 #### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras   >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 
