@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 323d118b73649c8c23d9b4a2e3ace2fd2fc6fdea
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f8a298f19f247c45740e87074804755f6ca691ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969866"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für Zielplattformen
 
@@ -37,9 +37,9 @@ Mit dem **Konfigurations-Manager** können Sie für ein Projekt schnell eine neu
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>So konfigurieren Sie ein Projekt für eine 64-Bit-Plattform
 
-1. Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager** .
+1. Klicken Sie in der Menüleiste auf **Build** > **Konfigurations-Manager**.
 
-2. Wählen Sie in der Liste **Aktive Projektmappenplattform** eine 64-Bit-Plattform als Zielplattform für die Projektmappe aus, und klicken Sie dann auf die Schaltfläche **Schließen** .
+2. Wählen Sie in der Liste **Aktive Projektmappenplattform** eine 64-Bit-Plattform als Zielplattform für die Projektmappe aus, und klicken Sie dann auf die Schaltfläche **Schließen**.
 
     1. Wählen Sie **Neu** aus, wenn die gewünschte Plattform nicht in der Liste **Aktive Projektmappenplattform** angezeigt wird.
 
@@ -55,7 +55,7 @@ Mit dem **Konfigurations-Manager** können Sie für ein Projekt schnell eine neu
 Es werden die Eigenschaften für alle Projekte mit der 64-Bit-Plattform als Zielplattform aktualisiert, und der nächste Build des Projekts wird für 64-Bit-Plattformen optimiert.
 
 > [!NOTE]
-> Der Plattformname **Win32** wird für C++-Projekte verwendet und bedeutet **x86** . Visual Studio berücksichtigt sowohl Plattformen auf Projekt- als auch auf Projektmappenebene, wobei die Projektplattformen aus den sprachspezifischen Projektsystemen stammen. In C++-Projekten werden **Win32** und **x64** verwendet, aber in Projektmappenplattformen werden **x86** und **x64** verwendet. Wenn Sie **x86** als Projektmappenkonfiguration wählen, wählt Visual Studio für C++-Projekte die Plattform **Win32** aus. Um Plattformeinstellungen auf Projekt- und Projektmappenebene einzusehen, öffnen Sie den **Konfigurations-Manager** , und notieren Sie sich die beiden Plattformeinstellungen. Die Plattform auf Projektmappenebene wird in der Dropdownliste **Aktive Projektmappenplattform** angezeigt. Die Tabelle zeigt für jedes Projekt die Plattform auf Projektebene.
+> Der Plattformname **Win32** wird für C++-Projekte verwendet und bedeutet **x86**. Visual Studio berücksichtigt sowohl Plattformen auf Projekt- als auch auf Projektmappenebene, wobei die Projektplattformen aus den sprachspezifischen Projektsystemen stammen. In C++-Projekten werden **Win32** und **x64** verwendet, aber in Projektmappenplattformen werden **x86** und **x64** verwendet. Wenn Sie **x86** als Projektmappenkonfiguration wählen, wählt Visual Studio für C++-Projekte die Plattform **Win32** aus. Um Plattformeinstellungen auf Projekt- und Projektmappenebene einzusehen, öffnen Sie den **Konfigurations-Manager**, und notieren Sie sich die beiden Plattformeinstellungen. Die Plattform auf Projektmappenebene wird in der Dropdownliste **Aktive Projektmappenplattform** angezeigt. Die Tabelle zeigt für jedes Projekt die Plattform auf Projektebene.
 > ![Screenshot der Projektmappenplattform und Projektplattform](media/project-platform-win32.png)
 
 ## <a name="target-platforms-in-the-project-designer"></a>Zielplattformen im Projekt-Designer

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7e807a5673f27da6a852fd2c83347d1348f1f6fd
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 065a904047630d15a8e9ed167a6a4a2764858387
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970321"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Gewusst wie: Hinzufügen von XmlMappedRange-Steuerelementen zu Arbeitsblättern
   Wenn Sie ein XML-Element einer Zelle in Microsoft Office Excel zuordnen, fügt Visual Studio dem Arbeitsblatt automatisch ein-Steuerelement hinzu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> .
@@ -62,7 +62,7 @@ ms.locfileid: "96844412"
     > [!NOTE]
     > Wenn Sie ein übergeordnetes Element aus dem **XML-Quell** Aufgabenbereich ziehen, wird ein- <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement erstellt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [XmlMappedRange-Steuerelement](../vsto/xmlmappedrange-control.md)
 - [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)
 - [Übersicht über Host Elemente und Host Steuerelemente](../vsto/host-items-and-host-controls-overview.md)

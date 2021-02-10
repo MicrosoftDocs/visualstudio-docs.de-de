@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 601e40762adc665f6241bb00a4b683b81e7fbd80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970022"
 ---
 # <a name="properties-window-buttons"></a>Schaltflächen des Eigenschaftenfensters
 Abhängig von der Entwicklungssprache und dem Produkttyp werden standardmäßig bestimmte Schaltflächen auf der Symbolleiste für das **Eigenschaften** Fenster angezeigt. In allen Fällen werden die Schaltflächen **kategorisiert**, **alphabetisch**, **Eigenschaften und Eigenschaften** **Seiten** angezeigt. In Visual c# und Visual Basic wird auch die Schaltfläche **Ereignisse** angezeigt. In bestimmten Visual C++ Projekten werden die Schaltflächen " **VC + +** " und " **VC Overrides** " angezeigt. Für andere Projekttypen können zusätzliche Schaltflächen angezeigt werden. Weitere Informationen zu Schaltflächen im **Eigenschaften** Fenster finden Sie unter [Eigenschaften Fenster](../../ide/reference/properties-window.md).

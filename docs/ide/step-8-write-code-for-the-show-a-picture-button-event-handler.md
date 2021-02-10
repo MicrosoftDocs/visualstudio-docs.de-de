@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5718bd976952557d9ff5f92a0522a672757a54e8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9ed9e315bc4373fc2de9e31f0cbdd98ea274b404
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969671"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e38649f825e0dfa554d9fbc90c57f63370b31f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1825d526fd9026100abcf68a1381d1be47dd44b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970113"
 ---
 # <a name="project-types"></a>Projekttypen
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] umfasst mehrere Projekttypen für Sprachen, wie [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . b. und. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mit können Sie auch eigene Projekttypen erstellen.
@@ -60,7 +60,7 @@ ms.locfileid: "97877194"
 
  Beschreibt, wie Ihr Projekttyp am Upgrade-Assistenten teilnehmen kann, um Projektdateien aus einer früheren Version von zu aktualisieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- [Architektur](../../extensibility/internals/project-types-architecture.md)
+- [Aufbau](../../extensibility/internals/project-types-architecture.md)
 
  Stellt ausführliche technische Informationen zu Projekttypen bereit.
 

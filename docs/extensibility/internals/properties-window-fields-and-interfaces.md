@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875764"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970009"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Felder und Schnittstellen des Eigenschaftenfensters
 Das Modell für die Auswahl, um zu bestimmen, welche Informationen im **Eigenschaften** Fenster angezeigt werden, basiert auf dem Fenster, das in der IDE den Fokus besitzt. Jedes Fenster und Objekt innerhalb des ausgewählten Fensters können das Auswahl Kontext Objekt in den globalen Auswahl Kontext übermittelt haben. Die Umgebung aktualisiert den globalen Auswahl Kontext mit Werten aus einem Fensterrahmen, wenn dieses Fenster den Fokus besitzt. Wenn sich der Fokus ändert, wird der Auswahl Kontext angezeigt.

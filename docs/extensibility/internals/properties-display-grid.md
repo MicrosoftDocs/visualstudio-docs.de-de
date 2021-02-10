@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0dd336701fc25497fdecba8b5b9860a02447558d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970048"
 ---
 # <a name="properties-display-grid"></a>Eigenschaften Anzeige Raster
 

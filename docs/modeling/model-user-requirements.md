@@ -9,15 +9,15 @@ helpviewer_keywords:
 - stories
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d55e549d2dccdc047cbf4449392cc090a569f85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970581"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 
@@ -62,7 +62,7 @@ Beachten Sie, dass die meisten Diagrammtypen für andere Zwecke verwendet werden
 
 Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.
 
-Viele Geschäftsregeln sind Einschränkungen der Beziehungen zwischen den konzeptionellen Klassen. Sie können diese *statischen Geschäftsregeln* als Kommentare schreiben, die mit den entsprechenden Klassen in einem konzeptionellen Klassendiagramm verknüpft sind. Zum Beispiel:
+Viele Geschäftsregeln sind Einschränkungen der Beziehungen zwischen den konzeptionellen Klassen. Sie können diese *statischen Geschäftsregeln* als Kommentare schreiben, die mit den entsprechenden Klassen in einem konzeptionellen Klassendiagramm verknüpft sind. Beispiel:
 
 ![Regel in an Order-Klasse angefügtem Kommentar.](../modeling/media/uml_reqmcd2.png)
 
@@ -98,7 +98,7 @@ Wenn ein Restaurant ein Gericht löscht, während ein Kunde eine Mahlzeit bestel
 
 Weitere Informationen zum Entwickeln von Code, der Service Qualitätsanforderungen entspricht, finden Sie unter [Modellieren der Architektur Ihrer APP](../modeling/model-your-app-s-architecture.md) .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)
 - [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)

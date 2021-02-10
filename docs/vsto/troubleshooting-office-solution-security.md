@@ -11,15 +11,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89ca980b378ee71d1db9b373459c8b7309f0ecc2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 04b68a8207dad1edf83462a8284a69c73c668006
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969203"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Behandeln von Problemen mit der Sicherheit von Office
   Dieses Thema enthält Tipps zum Lösen allgemeiner Probleme, die bei der Arbeit mit dem Sichern von Office-Lösungen auftreten können.

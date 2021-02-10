@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969008"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Hinzufügen von Elementen zum Dialogfeld "Neues Element hinzufügen"
 Der Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzufügen** wird mit den Registrierungs Schlüsseln gestartet. Wie in den folgenden Registrierungs Einträgen gezeigt, enthält der Abschnitt **additemtemplates** den Pfad und den Namen des Verzeichnisses, in dem die im Dialogfeld **Neues Element hinzufügen** verfügbaren Elemente abgelegt werden.
@@ -37,7 +37,7 @@ Der Prozess zum Hinzufügen von Elementen zum Dialogfeld **Neues Element hinzuf�
 
  **SortPriority** = DWORD: 00000064
 
-| Name | Typ | Daten (aus *RGS* -Datei) | BESCHREIBUNG |
+| Name | type | Daten (aus *RGS* -Datei) | BESCHREIBUNG |
 |------------------|-----------| - | - |
 | @ (Standard) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | Ressourcen-ID für **Element Vorlagen hinzufügen** . |
 | Val templatesdir | REG_SZ | % TEMPLATE_PATH% \\ &lt; someprojectitems&gt; | Der Pfad der Projekt Elemente, die im Dialogfeld für den Assistenten zum **Hinzufügen eines neuen Elements** angezeigt werden. |

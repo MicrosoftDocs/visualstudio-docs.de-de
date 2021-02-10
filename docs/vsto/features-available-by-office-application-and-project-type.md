@@ -19,15 +19,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 05a17b373f409e91f9360cbd3ba92f88bd3f48e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970399"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Verfügbare Funktionen nach Office-Anwendung und Projekttyp
   Visual Studio verfügt über mehrere Arten von Projektvorlagen, die unterschiedliche Geschäftsszenarien für Microsoft Office-Anwendungen unterstützen, z. B.:
@@ -52,7 +52,7 @@ ms.locfileid: "96847805"
 ## <a name="features-available-in-different-project-types"></a>In unterschiedlichen Projekttypen verfügbare Funktionen
  In der folgenden Tabelle ist aufgeführt, für welche Projekttypen die jeweilige Funktion bereitgestellt wird.
 
-|Funktion|Projekttypen, die die Funktion bereitstellen|Weitere nützliche Informationen|
+|Funktion|Projekttypen, die die Funktion bereitstellen|Weitere Informationsquellen|
 |-------------|--------------------------------------------|---------------------|
 |Aktionsbereich|Projekte auf Dokumentebene|[Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)|
 |ClickOnce-Bereitstellung.|VS-Projekte und Projekte auf Dokumentebene|[Bereitstellen einer Office-Projekt Mappe](../vsto/deploying-an-office-solution.md)|
@@ -68,7 +68,7 @@ ms.locfileid: "96847805"
 |Menübandanpassungen|Projekte auf Dokumentebene<br /><br /> VSTO-Add-In-Projekte für die folgenden Anwendungen:<br /><br /> -Excel<br />-InfoPath (nur InfoPath 2013 und InfoPath 2010)<br />-Outlook<br />-PowerPoint<br />-Projekt<br />-Visio<br />-Word|[Übersicht über Menüband](../vsto/ribbon-overview.md)|
 |Visueller Dokumentdesigner|Projekte auf Dokumentebene|[Office-Projekte in der Visual Studio-Umgebung](../vsto/office-projects-in-the-visual-studio-environment.md)|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Beginnen Sie &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Übersicht über die Entwicklung von Office-Lösungen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Übersicht über den Aktionsbereich](../vsto/actions-pane-overview.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970217"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs und IDs von Visual Studio-Symbolleisten
 In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthalten sind, sowie die darin enthaltenen Gruppen. Diese Werte werden in *vsct* -Dateien definiert, die als Teil des Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -40,18 +40,18 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 
  Nur Gruppen können direkt von Symbolleisten abgeleitet werden. Um eine Gruppe hinzuzufügen, legen Sie das übergeordnete Element auf die GUID und die ID der Symbolleiste fest. Um einer Symbolleiste eine Schaltfläche hinzuzufügen, legen Sie das übergeordnete Element auf der Symbolleiste auf eine Gruppe fest.
 
-|Symbolleiste|ID|
+|Symbolleiste|id|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
 |Erstellen|IDM_VS_TOOL_BUILD|
 |Text-Editor|IDM_VS_TOOL_TEXTEDITOR|
-|Debug|guidvsdebuggroup: IDM_DEBUG_TOOLBAR|
+|Debuggen|guidvsdebuggroup: IDM_DEBUG_TOOLBAR|
 |Debugspeicherort|guidvsdebuggroup: IDM_DEBUG_CONTEXT_TOOLBAR|
 
 ### <a name="special-toolbars"></a>Besondere Symbolleisten
  Diese Symbolleisten werden von der Visual Studio-IDE definiert, Sie dienen jedoch spezialisierten Funktionen und dienen nicht zum Hosten von Befehls Gruppen.
 
-|Symbolleiste|ID|
+|Symbolleiste|id|
 |-------------|--------|
 |Befehl zum Hinzufügen|IDM_VS_TOOL_ADDCOMMAND|
 |Nicht definiert|IDM_VS_TOOL_UNDEFINED|
@@ -69,7 +69,7 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 |Ausschneiden/Kopieren|IDG_VS_TOOLSB_CUTCOPY|
 |Rückgängig/Wiederholen|IDG_VS_TOOLSB_UNDOREDO|
 |Ausführen/erstellen|IDG_VS_TOOLSB_RUNBUILD|
-|Suchen|IDG_VS_TOOLSB_SEARCH|
+|Suchen,|IDG_VS_TOOLSB_SEARCH|
 |Windows|IDG_VS_TOOLSB_WINDOWS|
 |Neue Fenster|IDG_VS_TOOLSB_NEWWINDOWS|
 |Laden/Speichern|IDG_VS_WINDOWUI_LOADSAVE|
@@ -88,7 +88,7 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |Einziehen|IDG_VS_EDITTOOLBAR_INDENT|
-|Anmerkungen|IDG_VS_EDITTOOLBAR_COMMENT|
+|Kommentar|IDG_VS_EDITTOOLBAR_COMMENT|
 |Lesezeichen|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>Debug-Symbolleisten Gruppen
@@ -121,7 +121,7 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 |Klassenansicht|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
 |Objektkatalog|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|
 |Objektkatalog|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|
-|Output|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
+|Ausgabe|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
 |Suchen und Ersetzen|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|
 |Suchergebnisse: 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
 |Suchergebnisse 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|
@@ -136,7 +136,7 @@ In diesem Thema werden die GUID-und ID-Werte der Symbolleisten aufgelistet, die 
 |Arbeitsspeicher 1-4|guidvsdebuggroup: IDM_MEMORY_WINDOW_TOOLBAR1... 0:|IDG_MEMORY_EXPRESSION1.. 0:<br /><br /> IDG_MEMORY_COLUMNS1.. 0:|
 |Prozesse|guidvsdebuggroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Hinzufügen eines Menü Controllers zu einer Symbolleiste](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [Hinzufügen einer Symbolleiste zu einem Tool Fenster](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [GUIDs und IDs von Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

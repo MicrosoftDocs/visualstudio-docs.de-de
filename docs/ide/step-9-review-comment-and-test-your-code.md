@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479302"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969619"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Schritt 9: Überprüfen, Kommentieren und Testen des Codes
 
@@ -74,17 +74,17 @@ Sie haben soeben ein funktionierendes Programm erstellt, und obwohl es noch nich
 1. Speichern Sie Ihre App, indem Sie auf die Symbolleistenschaltfläche **Alle speichern** klicken (siehe Screenshot), bevor Sie Ihre Anwendung ausführen.
 
      Schaltfläche ![Alle speichern](../ide/media/express_iconsaveall.png) in der Symbolleiste<br>_Schaltfläche* 
-**_Alle speichern_* _
+***Alle speichern** _
 
      Alternativ können Sie zum Speichern der App in der Menüleiste auf **Datei** > **Alle speichern** klicken oder **STRG**+**UMSCHALT**+**S** drücken. Es ist empfehlenswert, früh und häufig zu speichern.
 
      Wenn die App ausgeführt wird, sollte sie wie im folgenden Bild aussehen.
 
-     ![Bildanzeigeprogramm](../ide/media/express_pictureviewerdonerun.png)<br>**_Bildanzeige_* _
+     ![Bildanzeigeprogramm](../ide/media/express_pictureviewerdonerun.png)<br>***Bildanzeigeprogramm***
 
 ## <a name="to-test-your-app"></a>Testen der App
 
-1. Drücken Sie _ *F5**, oder klicken Sie auf der Symbolleiste auf die Schaltfläche **Debuggen starten**.
+1. Drücken Sie die **F5-TASTE**, oder klicken Sie auf der Symbolleiste auf die Schaltfläche **Debuggen starten**.
 
 1. Klicken Sie auf die Schaltfläche **Bild anzeigen**, um den Code auszuführen, den Sie soeben geschrieben haben. Zuerst öffnet die App das Dialogfeld **Datei öffnen**. Überprüfen Sie, ob Ihre Filter in der Dropdownliste **Dateityp** unten im Dialogfeld angezeigt werden. Navigieren Sie dann zu einem Bild, und öffnen Sie es. Normalerweise befinden sich Beispielbilder, die mit dem Betriebssystem Windows ausgeliefert werden, im Ordner *Eigene Bilder\Beispielbilder* unter dem Ordner *Eigene Dokumente*.
 
