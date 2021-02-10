@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960779"
 ---
 # <a name="session-debug-manager"></a>Sitzungs-Debug-Manager
 Der sitzungsdebug-Manager (SDM) verwaltet eine beliebige Anzahl von Debugmodulen (de), die eine beliebige Anzahl von Programmen in mehreren Prozessen auf einer beliebigen Anzahl von Computern Debuggen. Die SDM ist nicht nur ein Debug Engine Multiplexer, sondern bietet eine einheitliche Ansicht der Debugsitzung für die IDE.
@@ -38,7 +38,7 @@ Der sitzungsdebug-Manager (SDM) verwaltet eine beliebige Anzahl von Debugmodulen
 
  Der SDM verfolgt das aktuelle Programm, den Thread oder den Stapel Rahmen nicht. Prozess-, Programm-und Thread Informationen werden in Verbindung mit bestimmten debuggingereignissen an die SDM gesendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Debug-Engine](../../extensibility/debugger/debug-engine.md)
 - [Debugger-Komponenten](../../extensibility/debugger/debugger-components.md)
 - [Debugger-Kontexte](../../extensibility/debugger/debugger-contexts.md)

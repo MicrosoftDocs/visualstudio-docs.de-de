@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], updating entity instances
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: fff7083305d4e19495b81525c8a67a42c5ff6c70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967500"
 ---
 # <a name="how-to-add-an-updater-method"></a>Gewusst wie: Hinzufügen einer Updater-Methode
   Sie können es Benutzern ermöglichen, Geschäftsdaten in einer externen SharePoint-Liste zu aktualisieren, indem Sie eine *Updater* -Methode erstellen. Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +33,7 @@ ms.locfileid: "96915374"
 
 1. Wählen Sie im BDC-Designer eine Entität aus.
 
-2. Wählen Sie in der Menüleiste **View**  >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
+2. Wählen Sie in der Menüleiste   >  **andere Windows**-  >  **BDC-Methoden Details** anzeigen aus.
 
     Das Fenster BDC-Methoden Details wird geöffnet. Weitere Informationen zu diesem Fenster finden Sie unter [Übersicht über die BDC-Modell Entwurfs Tools](../sharepoint/bdc-model-design-tools-overview.md).
 

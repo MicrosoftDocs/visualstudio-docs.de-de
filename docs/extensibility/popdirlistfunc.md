@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 805d7a5c9250bc511692c497bc9083852dad2301
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: da499ee9bbdcdff95456a4e4d5f5dc63f2acfb2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967396"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Dies ist eine Rückruffunktion, die der [sccpopulatedirlist](../extensibility/sccpopulatedirlist-function.md) -Funktion übergeben wird, um eine Auflistung von Verzeichnissen und (optional) Dateinamen zu aktualisieren, die sich unter Quell Code Verwaltung befinden.
@@ -58,7 +58,7 @@ in Vollständiger lokaler Pfad zu einem Verzeichnis-oder Dateinamen, der sich un
 |SCC_I_OPERATIONCANCELED|Beendet die Verarbeitung.|
 |SCC_E_xxx|Jeder geeignete Quell Code Verwaltungsfehler sollte die Verarbeitung verhindern.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  Wenn der- `fOptions` Parameter der `SccPopulateDirList` Funktion das- `SCC_PDL_INCLUDEFILES` Flag enthält, enthält die Liste möglicherweise Dateinamen und Verzeichnisnamen.
 
 ## <a name="see-also"></a>Weitere Informationen

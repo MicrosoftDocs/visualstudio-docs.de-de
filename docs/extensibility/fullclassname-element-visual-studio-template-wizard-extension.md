@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d23bb194dfadd202cf2899b1834f3b6ceeaa2b3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672742"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968202"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName-Element (Assistenten Erweiterung für Visual Studio-Vorlagen)
 Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle implementiert.
@@ -45,7 +45,7 @@ Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle impleme
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|Beschreibung|
+|Element|BESCHREIBUNG|
 |-------------|-----------------|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Enthält die Registrierungs Elemente zum Anpassen des Vorlagen-Assistenten.|
 
@@ -54,7 +54,7 @@ Der voll qualifizierte Name der Klasse, die die- `IWizard` Schnittstelle impleme
 
  Dieser Text gibt die Klasse an, die die- `IWizard` Schnittstelle implementiert. Die angegebene Klasse muss in der Assembly vorhanden sein, die durch das [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) -Element angegeben wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `FullClassName` ist ein erforderliches untergeordnetes Element von `WizardExtension`.
 
 ## <a name="example"></a>Beispiel

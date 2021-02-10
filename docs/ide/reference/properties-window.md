@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1be1d4fa9f1b088547bb21dfb64254209783d7e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3ff6435aa006de851a14f4f04570d086a86a5999
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967981"
 ---
 # <a name="properties-window"></a>Eigenschaftenfenster
 
@@ -48,7 +48,7 @@ Eigenschaftenseiten\
 Zeigt das Dialogfeld **Eigenschaftenseiten** oder **Projekt-Designer** für das ausgewählte Element an. Unter **Eigenschaftenseiten** wird entweder eine Teilmenge, dieselbe Menge oder eine Obermenge der im Eigenschaftenfenster verfügbaren Eigenschaften angezeigt. Über diese Schaltfläche werden die Eigenschaften angezeigt und bearbeitet, die sich auf die aktive Konfiguration des Projekts beziehen.
 
 Eigenschaften\
-Zeigt die Eigenschaften für ein Objekt an. Viele Objekte verfügen außerdem über Ereignisse, die im**Eigenschaftenfenster** angezeigt werden können.
+Zeigt die Eigenschaften für ein Objekt an. Viele Objekte verfügen außerdem über Ereignisse, die im **Eigenschaftenfenster** angezeigt werden können.
 
 Nach Eigenschaftsquelle sortieren\
 Gruppiert Eigenschaften nach Quelle, z. B. Vererbung, geltende Formate und Bindungen. Nur verfügbar, wenn XAML-Dateien im Designer bearbeitet werden.

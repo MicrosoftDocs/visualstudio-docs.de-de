@@ -19,32 +19,32 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960324"
 ---
 # <a name="xsd-task"></a>XSD-Aufgabe
 
-Umschließt das XML-Schemadefinitionstool ( *xsd.exe* ), das Schema- oder Klassendateien aus einer Quelle generiert.
+Umschließt das XML-Schemadefinitionstool (*xsd.exe*), das Schema- oder Klassendateien aus einer Quelle generiert.
 
 > [!NOTE]
 > Ab Visual Studio 2017 ist die Unterstützung von C++-Projekten für *xsd.exe* veraltet. Sie können die APIs **Microsoft.VisualC.CppCodeProvider** weiterhin verwenden, indem Sie die Datei *CppCodeProvider.dll* manuell dem globalen Assemblycache hinzufügen.
 
 ## <a name="parameters"></a>Parameter
 
- In der folgenden Tabelle werden die Parameter der **XSD** -Aufgabe beschrieben.
+ In der folgenden Tabelle werden die Parameter der **XSD**-Aufgabe beschrieben.
 
 - **AdditionalOptions**
 
      Optionaler **String** -Parameter.
 
-     Eine Liste von Optionen, wie in der Befehlszeile angegeben. Beispiel: /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD** -Aufgabenparameter repräsentiert werden.
+     Eine Liste von Optionen, wie in der Befehlszeile angegeben. Beispiel: /\<option1> /\<option2> /\<option#>. Verwenden Sie diesen Parameter, um Optionen anzugeben, die nicht durch einen anderen **XSD**-Aufgabenparameter repräsentiert werden.
 
 - **GenerateFromSchema**
 
@@ -80,7 +80,7 @@ Umschließt das XML-Schemadefinitionstool ( *xsd.exe* ), das Schema- oder Klasse
 
 - **SuppressStartupBanner**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.
 
