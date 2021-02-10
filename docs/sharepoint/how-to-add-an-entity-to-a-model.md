@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], adding an entity
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0efd7a6fc0d6254dbfd3cbda538ffe0e30585453
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 1d900639463f727a23c4fafab6f077f787c5ca04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959973"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Gewusst wie: Hinzufügen einer Entität zu einem Modell
   Um eine Entität zu erstellen, fügen Sie ein Entitäts Steuerelement aus der Visual Studio- **Toolbox** auf dem Business Data Connectivity (BDC)-Designer hinzu.

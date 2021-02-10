@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 0a34fa9fd362f7a344dc13f1c557f8362e9e10b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968462"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName-Element (Visual Studio-Vorlagen)
 Gibt den Namen an, den das Visual Studio-Projekt System für das Projekt oder Element generiert, wenn es erstellt wird.
@@ -56,7 +56,7 @@ Gibt den Namen an, den das Visual Studio-Projekt System für das Projekt oder El
 
  Dieser Text gibt den Standardnamen des Projekts oder Elements an.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
  `DefaultName` ist ein optionales Element.
 
  Bei-Projekten gibt dieses Element den Namen des Verzeichnisses an, in dem das Projekt auf dem Datenträger gespeichert wird. Für-Elemente wird der Dateiname der Quelldatei angegeben.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b4d181a6310e1ff924f060e906093d3c28d60ede
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959921"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Vorgehensweise: Anpassen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Zielen
   Mithilfe von MSBuild-Zielen an einer Eingabeaufforderung können Sie anpassen, wie Visual Studio SharePoint-Paketdateien (*. wsp*) erstellt. Beispielsweise können Sie die MSBuild-Eigenschaften anpassen, um das Verpackungs zwischen Verzeichnis und die MSBuild-Elementgruppen zu ändern, die die aufgelisteten Dateien angeben.
@@ -62,7 +62,7 @@ ms.locfileid: "94903649"
 
 #### <a name="to-customize-the-afterlayout-target"></a>So passen Sie das AfterLayout-Ziel an
 
-1. Wählen Sie in der Menüleiste **Datei Datei**  >  **Öffnen** aus  >  **File**.
+1. Wählen Sie in der Menüleiste **Datei Datei**  >  **Öffnen** aus  >  .
 
 2. Navigieren Sie im Dialogfeld **Datei öffnen** zum Projektordner, wählen Sie die Datei CustomLayout. Target aus, und klicken Sie dann auf die Schaltfläche **Öffnen** .
 

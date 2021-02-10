@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01ae4894d76e22f619bf498b4ac6a53f1232b5d5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57c33dc89bdec39b62dbec6a74a152ba816dda88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961351"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Exemplarische Vorgehensweise: Ändern von zwischengespeicherten Daten in einer Arbeitsmappe auf einem Server
   Diese exemplarische Vorgehensweise veranschaulicht, wie ein DataSet, das in einer Microsoft Office Excel-Arbeitsmappe zwischengespeichert ist, geändert wird, ohne Excel mit der-Klasse zu starten <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> .

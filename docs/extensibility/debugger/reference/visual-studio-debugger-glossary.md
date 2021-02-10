@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0cc5a8b75fd089318434cadea185f8070616cd8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961195"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossar zum Visual Studio-Debugger
 Im [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debuggingsdk werden die folgenden Begriffe verwendet:
 
-## <a name="terms"></a>Bestimmungen
+## <a name="terms"></a>Begriffe
  gebundener Haltepunkt eine Abstraktion für einen Haltepunkt, der im Code festgelegt ist. Zwischen einem gebundenen Haltepunkt und einer breakpointanweisung im Codestream besteht eine eins-zu-eins-Beziehung. Wenn Code entladen wird, wird die Bindung gebundener Haltepunkte möglicherweise aufgehoben.
 
  Kausalität bietet die Möglichkeit, einen logischen Ausführungs Thread über mehrere physische Threads, Prozesse und Computer hinweg zu verfolgen und die aufrufsliste dieses logischen Threads an einem beliebigen Punkt in der Lebensdauer des Threads zu rekonstruieren.
@@ -68,5 +68,5 @@ Im [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debuggingsdk 
 
   Warnung Haltepunkt eine Abstraktion zum Beschreiben einer Warnung an einem ausstehenden Breakpoint. Ein Warnungs Haltepunkt beschreibt einen Grund, warum der ausstehende Breakpoint noch nicht an einen Code Speicherort gebunden ist. Dies kann daran liegen, dass der Code für den vom ausstehenden Breakpoint beschriebenen Speicherort noch nicht geladen wurde, oder aus einem anderen Grund.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Visual Studio Debugger-Erweiterbarkeit](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
