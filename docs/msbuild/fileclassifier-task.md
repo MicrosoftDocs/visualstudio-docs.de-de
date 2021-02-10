@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 0f030a240bf02b3261ce903803095b83555a4531
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957360"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier-Aufgabe
 
@@ -38,14 +38,14 @@ Der <xref:Microsoft.Build.Tasks.Windows.FileClassifier>-Task klassifiziert eine 
 |`CLRResourceFiles`|Nicht verwendet.|
 |`CLRSatelliteEmbeddedResource`|Nicht verwendet.|
 |`Culture`|Optionaler **String** -Parameter.<br /><br /> Legt die Kultur für den Build fest. Dieser Wert kann **NULL** sein, wenn der Build nicht lokalisierbar ist. Wenn der Wert **NULL** ist, ist der Standardwert der von **CultureInfo.InvariantCulture** zurückgegebene Wert in Kleinbuchstaben.|
-|`MainEmbeddedFiles`|Optionaler **ITaskItem[]** -Ausgabeparameter.<br /><br /> Gibt die nicht lokalisierbaren Ressourcen an, die in die Hauptassembly eingebettet sind.|
-|`OutputType`|Erforderlicher **String** -Parameter.<br /><br /> Gibt den Dateityp an, der in die angegebenen Quelldateien eingebettet werden soll. Gültige Werte sind **exe** , **winexe** , oder **library** .|
-|`SatelliteEmbeddedFiles`|Optionaler **ITaskItem[]** -Ausgabeparameter.<br /><br /> Gibt die lokalisierbaren Dateien an, die für die durch den **Culture** -Parameter angegebene Kultur in die Satellitenassembly eingebettet werden.|
+|`MainEmbeddedFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Gibt die nicht lokalisierbaren Ressourcen an, die in die Hauptassembly eingebettet sind.|
+|`OutputType`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Dateityp an, der in die angegebenen Quelldateien eingebettet werden soll. Gültige Werte sind **exe**, **winexe**, oder **library**.|
+|`SatelliteEmbeddedFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Gibt die lokalisierbaren Dateien an, die für die durch den **Culture**-Parameter angegebene Kultur in die Satellitenassembly eingebettet werden.|
 |`SourceFiles`|Erforderlicher **ITaskItem[]** -Parameter.<br /><br /> Gibt die Liste der zu klassifizierenden Dateien an.|
 
 ## <a name="remarks"></a>Hinweise
 
-Wenn der **Culture** -Parameter nicht festgelegt ist, sind alle mit dem **SourceFiles** -Parameter angegebenen Ressourcen nicht lokalisierbar; andernfalls sind sie lokalisierbar, es sei denn, sie sind mit einem **Localizable** -Attribut verknüpft, das auf **false** festgelegt ist.
+Wenn der **Culture**-Parameter nicht festgelegt ist, sind alle mit dem **SourceFiles**-Parameter angegebenen Ressourcen nicht lokalisierbar; andernfalls sind sie lokalisierbar, es sei denn, sie sind mit einem **Localizable**-Attribut verknüpft, das auf **false** festgelegt ist.
 
 ## <a name="example"></a>Beispiel
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea19089fe8660b1169d790e25ed7ccf845404238
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 38e357ca4aa715861839f7f5ca168eafdc66f5ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957438"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
@@ -53,7 +53,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 
 4. Navigieren Sie unter **zu Modellierungsprojekt hinzufügen** zu einem vorhandenen Modellierungsprojekt in der Projekt Mappe, und wählen Sie es aus.
 
-     Oder
+     - oder -
 
      Wählen Sie **Neues Modellierungsprojekt erstellen** aus, um der Projekt Mappe ein neues Modellierungsprojekt hinzuzufügen.
 
@@ -158,7 +158,7 @@ Bevor Sie ein Abhängigkeits Diagramm erstellen, stellen Sie sicher, dass die Pr
 
 - [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Editions Unterstützung für Architektur-und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Video: Überprüfen der Architekturabhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

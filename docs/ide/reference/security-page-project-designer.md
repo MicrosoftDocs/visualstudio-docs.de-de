@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7080c1a2ce77d26987f81acaa0a751887f9f574e
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 426179eb20fcb71ac02039c3b2be20dab6f685b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350256"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957854"
 ---
 # <a name="security-page-project-designer"></a>Seite "Sicherheit", Projekt-Designer
 
@@ -36,7 +36,7 @@ Klicken Sie zum Aufrufen der Seite **Sicherheit** zunächst im **Projektmappen-E
 Bestimmt, ob die Sicherheitseinstellungen schon zur Entwurfszeit aktiviert sind Sobald diese Option deaktiviert wird, sind alle anderen Optionen auf der Seite **Sicherheit** nicht mehr verfügbar.
 
 > [!NOTE]
-> Wenn Sie eine Anwendung über den **Veröffentlichungs** -Assistenten veröffentlichen, wird diese Option automatisch aktiviert.
+> Wenn Sie eine Anwendung über den **Veröffentlichungs**-Assistenten veröffentlichen, wird diese Option automatisch aktiviert.
 
 Wenn Sie diese Option auswählen, müssen Sie sich zwischen zwei Optionsfeldern entscheiden: **Dies ist eine voll vertrauenswürdige Anwendung** oder **Dies ist eine teilweise vertrauenswürdige Anwendung**.
 

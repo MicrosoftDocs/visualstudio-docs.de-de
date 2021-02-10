@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe27eb7dcfb8a984fceaee0700e1df44b6de4ef1
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 943b634114c28f6f914926c74861a902c663523e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956164"
 ---
 # <a name="properties-of-diagrams"></a>Eigenschaften von Diagrammen
 Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten Designer angezeigt werden. Beispielsweise können Sie im Diagramm eine Standardfarbe für Text angeben.
@@ -29,7 +29,7 @@ Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten D
 
 |Eigenschaft|BESCHREIBUNG|Standard|
 |-|-|-|
-|Füllfarbe|Die Füllfarbe für das Diagramm.|White|
+|Füllfarbe|Die Füllfarbe für das Diagramm.|Weiß|
 |Textfarbe|Die Farbe des Texts, der im Diagramm angezeigt wird.|Schwarz|
 |Zugriffsmodifizierer|Der Zugriffsmodifizierer der-Klasse (Public oder Internal).|Öffentlich|
 |Benutzerdefinierte Attribute|Wird verwendet, um der generierten Code Klasse Attribute hinzuzufügen.|\<none>|
@@ -40,13 +40,13 @@ Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten D
 |Name|Der Name dieses Diagramms.|Aktueller Name|
 |Namespace|Der Namespace, der mit diesem Diagramm verbunden ist.|Aktueller Namespace|
 |Dargestellte Klasse|Die Stamm Domänen Klasse, die dieses Diagramm darstellt.|Aktuelle Stamm Klasse, falls zutreffend|
-|Hinweise|Informelle Notizen, die diesem Element zugeordnet sind.|\<none>|
+|Notizen|Informelle Notizen, die diesem Element zugeordnet sind.|\<none>|
 |Macht die Füllfarbe als Eigenschaft verfügbar.|Wenn `True` der Wert ist, kann der Benutzer die Füllfarbe des Diagramms des generierten Designers festlegen. Klicken Sie zum Festlegen dieser Eigenschaft mit der rechten Maustaste auf die Form Diagramm, und klicken **Sie auf verfügbar machen.**|Falsch|
 |Macht Textfarbe als Eigenschaft verfügbar.|Wenn `True` der Wert ist, kann der Benutzer die Textfarbe des Diagramms im generierten Designer festlegen. Klicken Sie zum Festlegen dieser Eigenschaft mit der rechten Maustaste auf die Form Diagramm, und klicken **Sie auf verfügbar machen.**|Falsch|
-|Beschreibung|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<none>|
+|BESCHREIBUNG|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<none>|
 |Anzeigename|Der Name, der im generierten Designer für dieses Diagramm angezeigt wird.|\<none>|
 |Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Diagramm verwendet wird.|\<none>|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Glossar für domänenspezifische Sprach Tools](/previous-versions/bb126564(v=vs.100))

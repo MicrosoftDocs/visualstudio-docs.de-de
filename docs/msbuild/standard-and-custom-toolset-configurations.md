@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048186"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956099"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardmäßige und benutzerdefinierte Toolsetkonfigurationen
 
@@ -76,7 +76,7 @@ Visual Studio 2017 und höhere Versionen verwenden keinen Registrierungsschlüss
 
 ## <a name="custom-toolset-definitions"></a>Benutzerdefinierte Toolsetdefinitionen
 
- Wenn ein Standardtoolset die Buildanforderungen nicht erfüllt, können Sie ein benutzerdefiniertes Toolset erstellen. Angenommen, Sie haben ein Buildlaborszenario, in dem Sie ein eigenes System zum Erstellen von C++-Projekten benötigen. Mit einem benutzerdefinierten Toolset können Sie dem `ToolsVersion`-Attribut beim Erstellen von Projekten oder Ausführen von *MSBuild.exe* benutzerdefinierte Werte zuweisen. Auf diese Weise können Sie die `$(MSBuildToolsPath)`-Eigenschaft verwenden, um *TARGETS* -Dateien von diesem Verzeichnis zu importieren, sowie benutzerdefinierte Toolseteigenschaften definieren, die für jedes Projekt verwendet werden können, das dieses Toolset verwendet.
+ Wenn ein Standardtoolset die Buildanforderungen nicht erfüllt, können Sie ein benutzerdefiniertes Toolset erstellen. Angenommen, Sie haben ein Buildlaborszenario, in dem Sie ein eigenes System zum Erstellen von C++-Projekten benötigen. Mit einem benutzerdefinierten Toolset können Sie dem `ToolsVersion`-Attribut beim Erstellen von Projekten oder Ausführen von *MSBuild.exe* benutzerdefinierte Werte zuweisen. Auf diese Weise können Sie die `$(MSBuildToolsPath)`-Eigenschaft verwenden, um *TARGETS*-Dateien von diesem Verzeichnis zu importieren, sowie benutzerdefinierte Toolseteigenschaften definieren, die für jedes Projekt verwendet werden können, das dieses Toolset verwendet.
 
  Geben Sie ein benutzerdefiniertes Toolset in der Konfigurationsdatei für *MSBuild.exe* an (oder für das benutzerdefinierte Tool, das die MSBuild-Engine hostet, wenn dies bei Ihnen zutrifft). Beispielsweise kann die Konfigurationsdatei für *MSBuild.exe* die folgende Toolsetdefinition enthalten, wenn Sie ein Toolset mit dem Namen *MyCustomToolset* definieren möchten.
 
