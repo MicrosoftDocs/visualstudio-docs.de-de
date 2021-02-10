@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 898bb0f3a923cfeac863b365e4746a63ccbc4c91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935325"
 ---
 # <a name="define-shapes-and-connectors"></a>Definieren von Formen und Connectors
 
@@ -36,7 +36,7 @@ Diese Muster werden nicht erzwungen, sie werden allerdings stärker unterstützt
 
 Die folgenden Formtypen stehen zur Verfügung:
 
-|Formtyp|Beschreibung|
+|Formtyp|BESCHREIBUNG|
 |-|-|
 |Geometrie-Form|Allgemeine rechteckige oder elliptische Form. Sie können Decorator-Elemente für Texte und Symbole an bestimmten Positionen relativ zu den Begrenzungen der Form anzeigen. Sie können auch Formen in Geometrie Formen Schachteln.|
 |Depot-Form|Ein Rechteck, das einen Header und Depots enthält, wie beispielsweise eine UML-Klasse. Dabei kann jedes Depot eine Liste mit Textzeilen enthalten.<br /><br /> Die Zeilen stellen normalerweise die Elemente dar, die unter dem Element eingebettet sind, das durch die Form repräsentiert wird. Erstellen Sie zum Beispiel eine DSL mithilfe der Lösungsvorlage für Klassendiagramme.|

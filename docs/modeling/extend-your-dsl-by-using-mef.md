@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935065"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 
@@ -131,7 +131,7 @@ Wenn Sie Zugriff auf eine MEF-fähige DSL haben, die von Ihnen oder einer andere
 
    - Diese Assembly weist in der Regel einen Namen auf, der auf ".Dsl.dll" endet.
 
-   - Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei unter dem Verzeichnis **DSL \\ bin \\ \** _
+   - Wenn Sie Zugriff auf das DSL-Projekt haben, können Sie die Assemblydatei unter dem Verzeichnis- **DSL- \\ bin \\ \*** suchen.
 
    - Wenn Sie Zugriff auf die DSL-vsix-Datei haben, können Sie die Assembly suchen, indem Sie die Dateinamenerweiterung der VSIX-Datei in ". zip" ändern. Dekomprimieren der ZIP-Datei.
 
@@ -147,7 +147,7 @@ Wenn Sie Zugriff auf eine MEF-fähige DSL haben, die von Ihnen oder einer andere
 
    - System.Windows.Forms.dll
 
-4. Erstellen Sie ein neues Projekt _ *VSIX Project**.
+4. Erstellen Sie ein neues **VSIX-Projekt** Projekt.
 
 5. Klicken Sie in **Projektmappen-Explorer** mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **als Startprojekt festlegen** aus.
 
@@ -159,11 +159,11 @@ Wenn Sie Zugriff auf eine MEF-fähige DSL haben, die von Ihnen oder einer andere
 
    1. Klicken Sie in **Source. Extension. vsixmanifest** auf **Verweis hinzufügen** .
 
-   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** , und suchen Sie dann die vsix-Datei der DSL. Die vsix-Datei wird in der DSL-Lösung in **dslpackage \\ bin \\ \** _ erstellt.
+   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** , und suchen Sie dann die vsix-Datei der DSL. Die vsix-Datei wird in der DSL-Lösung im **dslpackage \\ - \\ \* bin** erstellt.
 
        Dadurch können Benutzer die DSL und die Erweiterung gleichzeitig installieren. Wenn der Benutzer die DSL bereits installiert hat, wird nur Ihre Erweiterung installiert.
 
-9. Überprüfen und aktualisieren Sie die anderen Felder von _ * Source. Extension. vsixmanifest * *. Klicken Sie auf **Editionen auswählen** , und überprüfen Sie, ob die richtigen Visual Studio-Editionen festgelegt
+9. Überprüfen und aktualisieren Sie die anderen Felder von **Source. Extension. vsixmanifest**. Klicken Sie auf **Editionen auswählen** , und überprüfen Sie, ob die richtigen Visual Studio-Editionen festgelegt
 
 10. Fügen Sie dem Klassen Bibliotheksprojekt Code hinzu. Verwenden Sie die Beispiele im nächsten Abschnitt als Leitfaden.
 
@@ -374,7 +374,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

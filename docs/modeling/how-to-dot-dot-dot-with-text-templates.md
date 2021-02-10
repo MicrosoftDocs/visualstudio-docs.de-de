@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c5b5e1f4e7488253112eb33905fe534be3591782
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934896"
 ---
 # <a name="how-to--with-text-templates"></a>Gewusst wie: ... mit Textvorlagen
 Textvorlagen in Visual Studio bieten eine nützliche Möglichkeit zum Erstellen von Text beliebiger Art. Sie können Textvorlagen verwenden, um zur Laufzeit Text als Teil der Anwendung zu generieren, und zur Entwurfszeit, um einen Teil des Projekt Codes zu generieren. In diesem Thema werden die am häufigsten gestellten "Gewusst wie...?" zusammengefasst. Anfragen.
@@ -73,14 +73,14 @@ Wenn Sie die Methoden selbst schreiben:
 
 ### <a name="generate-files-from-a-complex-model"></a>Generieren von Dateien aus einem komplexen Modell
 
-- Es empfiehlt sich, eine domänenspezifische Sprache (DSL) zu erstellen, um das Modell darzustellen. Dies erleichtert das Schreiben von Vorlagen, da Sie Typen und Eigenschaften verwenden, die die Namen der Elemente in Ihrem Modell widerspiegeln. Es ist nicht erforderlich, die Datei zu analysieren oder XML-Knoten zu navigieren. Zum Beispiel:
+- Es empfiehlt sich, eine domänenspezifische Sprache (DSL) zu erstellen, um das Modell darzustellen. Dies erleichtert das Schreiben von Vorlagen, da Sie Typen und Eigenschaften verwenden, die die Namen der Elemente in Ihrem Modell widerspiegeln. Es ist nicht erforderlich, die Datei zu analysieren oder XML-Knoten zu navigieren. Beispiel:
 
      `foreach (Book book in this.Library) { ... }`
 
      Weitere Informationen finden Sie unter [Getting Started with Domain-Specific Languages](../modeling/getting-started-with-domain-specific-languages.md) und [Code-Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Daten aus Visual Studio
- Wenn Sie in Visual Studio bereitgestellte Dienste verwenden möchten, legen Sie das `hostSpecific` -Attribut fest, und laden Sie die `EnvDTE` Assembly. Zum Beispiel:
+ Wenn Sie in Visual Studio bereitgestellte Dienste verwenden möchten, legen Sie das `hostSpecific` -Attribut fest, und laden Sie die `EnvDTE` Assembly. Beispiel:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 01867bf4c5d3e9c60ad4a2ba0ed76c45eca055c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935585"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Anpassen der Elementerstellung und -verschiebung
 
@@ -232,7 +232,7 @@ In benutzerdefiniertem mergecode können Sie definieren, was geschieht, wenn der
 
 5. Überprüfen Sie den Inhalt von " **dsl\generated files\domainclasses.cs**". Suchen Sie nach Methoden mit dem Namen, `MergeRelate` und überprüfen Sie Ihren Inhalt Dies hilft Ihnen beim Schreiben Ihrer eigenen Versionen.
 
-6. Schreiben Sie in einer neuen Codedatei eine partielle Klasse für die empfangende Klasse, und überschreiben Sie die- `MergeRelate` Methode. Denken Sie daran, die Basis Methode aufzurufen. Zum Beispiel:
+6. Schreiben Sie in einer neuen Codedatei eine partielle Klasse für die empfangende Klasse, und überschreiben Sie die- `MergeRelate` Methode. Denken Sie daran, die Basis Methode aufzurufen. Beispiel:
 
     ```csharp
     partial class ExampleModel

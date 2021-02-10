@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b3ae5ea3c24ea72c911f686c7a0a92191785d9d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935377"
 ---
 # <a name="customizing-the-model-explorer"></a>Anpassen des Modell-Explorers
 Sie können das Aussehen und Verhalten des Explorers für Ihren domänenspezifischen sprach Designer wie folgt ändern:
@@ -113,6 +113,6 @@ Sie können das Aussehen und Verhalten des Explorers für Ihren domänenspezifis
 
      Im Explorer sollte nur ein **Actors** -Knoten angezeigt werden, und der Knoten **comments** sollte nicht angezeigt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](/previous-versions/bb126564(v=vs.100))

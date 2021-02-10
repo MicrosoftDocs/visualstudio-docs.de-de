@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, hiding controls when printing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d87da5c22969fc355fe473e9505c61429b8023f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934805"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Gewusst wie: Ausblenden von Steuerelementen auf Arbeitsblättern beim Drucken
   Wenn Sie ein Microsoft Office Excel-Dokument drucken, das Windows Forms Steuerelemente enthält, werden die Steuerelemente auf dem gedruckten Arbeitsblatt angezeigt. Sie können die Steuerelemente ausblenden, wenn Sie ein Arbeitsblatt drucken.
@@ -43,7 +43,7 @@ ms.locfileid: "96846492"
 
 3. Legen Sie im Fenster **Eigenschaften** die- <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> Eigenschaft auf **false** fest.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Übersicht über Windows Forms Steuerelemente in Office-Dokumenten](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Gewusst wie: Hinzufügen von Windows Forms-Steuerelementen zu Office-Dokumenten](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, debugging
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b197fd52972162acbc6e7d6882507f943b2a560c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935351"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debuggen einer T4-Textvorlage
 Sie können Haltepunkte in den Textvorlagen festlegen. Zum Debuggen einer Entwurfszeit Textvorlage speichern Sie die Textvorlagen Datei, und wählen Sie dann im Kontextmenü der Datei in Projektmappen-Explorer die Option **T4-Vorlage Debuggen** aus. Um eine Laufzeit-Textvorlage zu debuggen, müssen Sie einfach die Anwendung debuggen, zu der sie gehört.
