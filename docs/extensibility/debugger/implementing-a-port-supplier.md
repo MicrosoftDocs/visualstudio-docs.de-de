@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72963660e4f50a72cdbc04bab4833b397d15fc27
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 8bec31bb49433b7058ca7021091582f89933f0b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947683"
 ---
 # <a name="implement-a-port-supplier"></a>Implementieren eines Port Anbieters
 Ein Port Lieferant liefert Ports für die Anforderung an den Sitzungs-Debug-Manager (SDM). Ein Port Lieferant muss implementiert werden, wenn ein Debuggen auf einen nicht-DCOM-Computer oder ein neues Gerät unterstützt wird. Wenn Sie z. b. das Debuggen auf einem Mobiltelefon bereitstellen möchten, können Sie einen Port Lieferanten einrichten, der Ports bereitstellt, die eine Verbindung mit dem Mobiltelefon herstellen (z. b. über IR oder eine Zell Verbindung) und die Prozesse und Programme auflisten, die auf dem Telefon ausgeführt werden.
@@ -33,5 +33,5 @@ Ein Port Lieferant liefert Ports für die Anforderung an den Sitzungs-Debug-Mana
 ## <a name="related-sections"></a>Verwandte Abschnitte
  [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md) beschreibt die wichtigsten Architekturkonzepte für das Debuggen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
  [Erweiterbarkeit von Visual Studio-Debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

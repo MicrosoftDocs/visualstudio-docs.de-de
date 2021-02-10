@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c04b8d700d7739f0e4ef1fba259aab0595cea28c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947813"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen
 Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcomputer so konfigurieren, dass Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen mit einer höheren Vertrauensebene ausgeführt werden ohne den Benutzer dazu aufzufordern. Die folgenden Verfahren zeigen, wie das Befehlszeilentool CertMgr.exe verwendet wird, um das Zertifikat des Herausgebers zum Speicher für vertrauenswürdige Herausgeber auf einem Clientcomputer hinzuzufügen.
@@ -40,7 +40,7 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
 
 1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.
 
-2. Exportieren Sie das Zertifikat in das Format Base64 X. 509 ( *. CER* ). Weitere Informationen zu Zertifikat Formaten finden Sie unter [Exportieren eines Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exportieren Sie das Zertifikat in das Format Base64 X. 509 (*. CER*). Weitere Informationen zu Zertifikat Formaten finden Sie unter [Exportieren eines Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:
 
@@ -50,7 +50,7 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
 
 1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.
 
-2. Exportieren Sie das Zertifikat in das Format Base64 X. 509 ( *. CER* ). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exportieren Sie das Zertifikat in das Format Base64 X. 509 (*. CER*). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:
 
@@ -58,12 +58,12 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
 
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
 - [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Übersicht über bereit Stellungen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
+- [Übersicht über das Bereitstellen vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)
 - [Gewusst wie: Aktivieren von ClickOnce-Sicherheitseinstellungen](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
