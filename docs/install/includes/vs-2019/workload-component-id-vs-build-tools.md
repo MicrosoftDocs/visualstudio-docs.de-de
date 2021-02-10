@@ -5,17 +5,17 @@ description: Verwenden von Arbeitsauslastungs- und Komponenten-IDs in Visual Stu
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 8b99b3e92ace96fcf87f7fb5a4e575cb0ca15ee5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fcf85223bbec03594fc64e221b23b5f99c704abf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437422"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881930"
 ---
 ## <a name="azure-development-build-tools"></a>Buildtools zur Azure-Entwicklung
 
@@ -226,7 +226,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Buildvoraussetzungen für
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | Empfohlen
 Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.UWP.VC.ARM64 | C++-Unterstützung für die Universelle Windows-Plattform für v142-Buildtools (ARM64) | 16.3.29207.166 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019 C++-ARM-Buildtools (v14.28) | 16.8.30509.167 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019 C++ ARM-Buildtools (v14.28) | 16.8.30509.167 | Optional
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 – VS 2019 C++-ARM64-Buildtools (v14.28) | 16.8.30509.167 | Optional
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++-x64/x86-Buildtools (v14.28) | 16.8.30509.167 | Optional
 Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 - VS 2017 C++ ARM-Buildtools (v14.16) | 16.8.30509.167 | Optional

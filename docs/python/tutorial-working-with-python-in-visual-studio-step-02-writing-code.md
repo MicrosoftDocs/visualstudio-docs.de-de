@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ca28446377c2e04766f70c9146e09dc47b8f089
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62430031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882777"
 ---
 # <a name="step-2-write-and-run-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
@@ -47,7 +47,7 @@ Obwohl Projektdateien im **Projektmappen-Explorer** verwaltet werden, arbeiten S
     > [!Tip]
     > Da eine Entwicklungsumgebung eine sehr persönliche Angelegenheit ist, bietet Visual Studio Ihnen die vollständige Steuerung über das Aussehen und Verhalten von Visual Studio. Klicken Sie auf den Menübefehl **Extras** > **Optionen**, um die Einstellungen der Registerkarten **Umgebung** und **Text-Editor** zu untersuchen. Standardmäßig wird Ihnen eine begrenzte Anzahl von Optionen angezeigt. Klicken Sie auf **Alle Einstellungen anzeigen** am unteren Rand des Dialogfelds, um jede Option für alle Programmiersprachen anzuzeigen.
 
-1. Führen Sie den Code aus, den Sie bis zu diesem Zeitpunkt geschrieben haben, indem Sie **STRG**+**F5** drücken oder das Menüelement **Debuggen** > **Starten ohne Debuggen**n. Visual Studio warnt Sie, wenn noch Fehler in Ihrem Code vorliegen.
+1. Führen Sie den Code aus, den Sie bis zu diesem Zeitpunkt geschrieben haben, indem Sie **STRG**+**F5** drücken oder das Menüelement **Debuggen** > **Starten ohne Debuggen** n. Visual Studio warnt Sie, wenn noch Fehler in Ihrem Code vorliegen.
 
 1. Wenn Sie das Programm ausführen, wird ein Konsolenfenster angezeigt, das die Ergebnisse anzeigt, genau wie bei der Ausführung eines Python-Interpreters mit *PythonApplication1.py* über die Befehlszeile. Drücken Sie eine Taste, um das Fenster zu schließen und zum Visual Studio-Editor zurückzukehren.
 
