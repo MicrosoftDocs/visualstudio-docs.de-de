@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949089"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Erstellen von SharePoint-Lösungs Paketen
   Mithilfe des Paket-Designers können Sie Bereitstellungspakete erstellen und anpassen. Beispielsweise können Sie SharePoint-Projektelemente und -Funktionen hinzufügen, den IIS-Server zurücksetzen, Funktionsaktivierungsbereiche festlegen und Funktionsabhängigkeiten identifizieren. Der Designer generiert außerdem ein Manifest, eine XML-Datei, die jedes Paket beschreibt.
@@ -38,10 +38,10 @@ ms.locfileid: "94850558"
 |Eigenschaft des Paket-Designers|Beschreibung der Standardeinstellung|
 |-------------------------------|------------------------------------|
 |Name|Erforderlich. Der Standardname des Pakets ist auf *ProjectName* festgelegt.|
-|Webserver zurücksetzen|Optional. Wählen Sie diese Option aus, wenn Sie den Webserver neu starten möchten, nachdem die *wsp* -Datei auf dem SharePoint-Server installiert wurde.|
-|Bereitstellungsservertyp|Optional. Stellt den Typ des Servers dar, auf dem das Paket gehostet wird. Wenn diese Einstellung nicht festgelegt ist, wird standardmäßig Webfrontend verwendet.<br /><br /> ApplicationServer: Beschreibt einen Server, der Dienste hostet.<br /><br /> Webfrontend: Beschreibt einen Server, der Websites hostet.|
+|Webserver zurücksetzen|Dies ist optional. Wählen Sie diese Option aus, wenn Sie den Webserver neu starten möchten, nachdem die *wsp* -Datei auf dem SharePoint-Server installiert wurde.|
+|Bereitstellungsservertyp|Dies ist optional. Stellt den Typ des Servers dar, auf dem das Paket gehostet wird. Wenn diese Einstellung nicht festgelegt ist, wird standardmäßig Webfrontend verwendet.<br /><br /> ApplicationServer: Beschreibt einen Server, der Dienste hostet.<br /><br /> Webfrontend: Beschreibt einen Server, der Websites hostet.|
 |Elemente in der Lösung|Alle SharePoint-Projektelemente und -Funktionen, die dem Paket hinzugefügt werden können.|
-|Elemente in diesem Paket|Optional. Alle SharePoint-Elemente und -Funktionen, die Sie im Paket bereitstellen möchten.|
+|Elemente in diesem Paket|Dies ist optional. Alle SharePoint-Elemente und -Funktionen, die Sie im Paket bereitstellen möchten.|
 
 ## <a name="configure-the-packaging-process"></a>Konfigurieren des Paket Erstellungs Prozesses
  Nachdem Sie SharePoint-Lösungen in Visual Studio entwickelt haben, können Sie anpassen, wie die Projekte gepackt werden.
@@ -73,7 +73,7 @@ ms.locfileid: "94850558"
 ## <a name="package-folder-structure"></a>Paketordnerstruktur
  Wenn Sie das SharePoint-Projekt Verpacken, wird für Sie eine *wsp* -Datei im Ordner *solutionfolder\bin \\ \<BuildConfiguration>* erstellt. Wenn sich Ihre Projekt Mappe beispielsweise in " *c:\Visual Studio 2013 \ Projects\ListDefinition1* " befindet und die Buildkonfiguration auf "Release" festgelegt ist, befindet sich die *wsp* -Datei unter " *c:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Anpassen eines SharePoint-Lösungs Pakets](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Vorgehensweise: Hinzufügen und Entfernen von Features und Elementen zu einem Paket mit dem Paket-Designer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [Vorgehensweise: Erstellen eines SharePoint-Lösungs Pakets mithilfe von MSBuild-Aufgaben](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

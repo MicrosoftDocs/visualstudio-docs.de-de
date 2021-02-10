@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948998"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Erstellen von Websitedefinitionen für SharePoint
   Mit dem SharePoint-Projekt für eine Websitedefinition in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] können Sie eine *Websitedefinition* erstellen, die als Grundlage für eine neue SharePoint-Website dient. Diese Definitionen bestimmen nicht nur die Darstellung und das Verhalten der SharePoint-Website, sondern auch die Standardinhalte und -funktionen. In der Definition können Sie vorkonfigurierte Listen, Inhaltstypen, Ereignisempfänger, Images und andere Elemente platzieren. SharePoint enthält einige Websitedefinitionen wie beispielsweise BLOG. Wenn Sie eine Website basierend auf der BLOG-Websitedefinition erstellen, enthält die Website die Listen, Webparts und andere Elemente, die für eine Blogwebsite erforderlich sind.

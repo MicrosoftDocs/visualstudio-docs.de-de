@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd0dfa3a12c675463c46e93aa0d5b25e8b4bd4b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948855"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungs Paketen
   Nachdem Sie eine SharePoint-Projekt Mappe in Visual Studio entwickelt haben, können Sie die zugehörige Paketdatei (. wsp) entweder auf einem lokalen SharePoint-Server bereitstellen oder auf einem Remote-oder lokalen SharePoint-Server veröffentlichen. Wenn Sie die Dateien bereitstellen, können Sie anpassen, wie die Paketdateien (. wsp) bereitgestellt werden.
@@ -47,7 +47,7 @@ ms.locfileid: "94672664"
 ## <a name="customize-the-deployment-process"></a>Anpassen des Bereitstellungs Prozesses
  In der folgenden Tabelle werden die beiden Bereitstellungs Konfigurationen angezeigt, die Sie beim Debuggen und Bereitstellen einer SharePoint-Lösung verwenden können.
 
-|Bereitstellungskonfiguration|Beschreibung|
+|Bereitstellungskonfiguration|BESCHREIBUNG|
 |------------------------------|-----------------|
 |Standard|Die Standard Bereitstellungs Konfiguration. Die folgenden Bereitstellungs Schritte werden ausgeführt:<br /><br /> 1. führen Sie den Befehl vor der Bereitstellung aus.<br />2. verwenden Sie den IIS-Anwendungs Pool.<br />3. ziehen Sie die Lösung zurück.<br />4. Fügen Sie eine Lösung hinzu.<br />5. Aktivieren Sie Features.<br />6. führen Sie den Befehl nach der Bereitstellung aus.<br /><br /> Wenn ein Paket deinstalliert wird, werden die folgenden Schritte ausgeführt.<br /><br /> 1. verwenden Sie den IIS-Anwendungs Pool.<br />2. ziehen Sie die Lösung zurück.|
 |Keine Aktivierung|Bei dieser Bereitstellungs Konfiguration werden die gleichen Schritte wie bei der Standardkonfiguration ausgeführt, der Aktivierungs Schritt wird jedoch ausgelassen.|
@@ -66,5 +66,5 @@ ms.locfileid: "94672664"
 ### <a name="upgrade-published-packages"></a>Aktualisieren veröffentlichter Pakete
  Wenn Sie Änderungen an einem SharePoint-Projekt in Visual Studio nach der Veröffentlichung vornehmen, muss das veröffentlichte Paket aktualisiert werden, um die Änderungen einzuschließen. Ein Paket muss einen eindeutigen Namen aufweisen, um es erfolgreich zu aktualisieren. Wenn auf der SharePoint-Website ein Paket mit demselben Namen gefunden wird, das beim Aktualisieren einer vorhandenen Anwendung auftreten kann, werden Sie durch einen Fehler auf den Dateinamen Konflikt benachrichtigt, und Sie können das Paket umbenennen. Nach der erneuten Veröffentlichung wird das neue Paket auf der SharePoint-Website angezeigt, und Sie können ein Upgrade durchgeführt werden. Ein aktualisiertes Paket aktualisiert die Lösung mithilfe von Daten aus dem älteren Paket und aktiviert die Lösung dann in SharePoint. Weitere Informationen finden Sie unter Vorgehens [Weise: bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungen auf einem Remote Server](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
