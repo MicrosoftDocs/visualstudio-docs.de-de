@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc48d305e287fcb77407fbbf5ba52888b25dca6
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 89ecd1d0f7697a38ef7318ddf93a91a4397b5d72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934063"
 ---
 # <a name="usedcommands-element"></a>UsedCommands-Element
 Das usedcommands-Element gruppiert usedcommand-Elemente und andere usedcommands-Gruppierungen.
@@ -42,17 +42,17 @@ Das usedcommands-Element gruppiert usedcommand-Elemente und andere usedcommands-
 
 |attribute|Beschreibung|
 |---------------|-----------------|
-|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[UsedCommand-Element](../extensibility/usedcommand-element.md)|Der Befehl, der von anderem Code implementiert wird.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
-|Element|BESCHREIBUNG|
+|Element|Beschreibung|
 |-------------|-----------------|
 |[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen (z. b. Menü Elemente, Menüs, Symbolleisten und Kombinations Felder), die ein VSPackage für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) bereitstellt.|
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a5c14196211a638cd830ac6df39570288aa831
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a1b02fca5d37d7e75cd7c32527bb09358425e626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932539"
 ---
 # <a name="how-to-implement-nested-projects"></a>Gewusst wie: Implementieren von in einem Projekt unter fallenen Projekten
 
@@ -91,5 +91,5 @@ In den folgenden Themen werden verschiedene weitere Konzepte behandelt, die bei 
 - [Hinzufügen von Elementen zum Dialogfeld "Neues Element hinzufügen"](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Registrieren von Projekt-und Element Vorlagen](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Kontext Parameter](../../extensibility/internals/context-parameters.md)
+- [Kontextparameter](../../extensibility/internals/context-parameters.md)
 - [Assistenten Datei (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

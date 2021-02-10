@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bb340721c9f446b740c2723dc3f6dc05452e74de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77cce7a6780c816fbee0ade1c795cb1174e3e7f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933452"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Diese Methode gibt den Wert zurück, der dem Namen einer Enumerationskonstante zugeordnet ist.

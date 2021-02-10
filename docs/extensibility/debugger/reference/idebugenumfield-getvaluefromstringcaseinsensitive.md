@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0eb781cd9e7a9073a45418c3793dc6ba026ec45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933348"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 Diese Methode verwendet die Suche ohne Beachtung der Groß-/Kleinschreibung, um den Wert zurückzugeben, der dem Namen einer Enumerationskonstante zugeordnet ist

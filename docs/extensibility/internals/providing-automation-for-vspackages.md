@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 4d5a0bd912dadf6b8f90aabd846c6ac44534c917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934076"
 ---
 # <a name="providing-automation-for-vspackages"></a>Bereitstellen von Automatisierung für VSPackages
 Es gibt zwei Hauptmethoden zum Bereitstellen von Automatisierung für Ihre VSPackages: durch das Implementieren von VSPackage-spezifischen Objekten und durch Implementieren von Automation-Standardobjekten. Diese werden in der Regel verwendet, um das Automatisierungs Modell der Umgebung zu erweitern.

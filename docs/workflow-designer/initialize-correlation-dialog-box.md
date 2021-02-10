@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a35911fef39315580f402e174b0f32d443a33cf
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a41511f9bfb381eeb422cc9cf7ec015d55ceff70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931512"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Korrelation initialisieren (Dialogfeld)
 
@@ -34,6 +34,6 @@ In der folgenden Tabelle werden die Benutzeroberflächen Elemente des Dialog Fel
 
 Klicken Sie im **InitializeCorrelation** -Aktivitäts Designer auf **Ansicht** , oder wählen Sie <xref:System.ServiceModel.Activities.InitializeCorrelation> in Workflow-Designer eine Aktivität aus. Klicken Sie dann auf die Schaltfläche mit den Auslassungs Punkten neben der- <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> Eigenschaft im Eigenschaften Raster.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

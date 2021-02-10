@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fc52153ca71320ebe2ebc1e1a12780e37cac08e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3f37c862768dd0d72ba66d435478faed9bee8ef3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931486"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow-Aktivitätsdesigner
 
@@ -37,11 +37,11 @@ Der **terminateworkflow** -Aktivitäts Designer kann aus der **Toolbox** gezogen
 
 In der folgenden Tabelle werden die <xref:System.Activities.Statements.TerminateWorkflow>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster bearbeitet werden, und einige von Ihnen können auf Workflow-Designer Oberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.TerminateWorkflow>-Aktivität. Der Standardwert ist TerminateWorkflow. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
-|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|Die Ausnahme, die beim Beenden des Workflows ausgelöst werden soll. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|
-|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|Die Ursache für das Beenden des Workflows. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der Anzeigename der <xref:System.Activities.Statements.TerminateWorkflow>-Aktivität. Der Standardwert ist TerminateWorkflow. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|
+|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|Falsch|Die Ausnahme, die beim Beenden des Workflows ausgelöst werden soll. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|
+|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|Falsch|Die Ursache für das Beenden des Workflows. Legen Sie diese Eigenschaft im Eigenschaftenraster fest.|
 
 ## <a name="see-also"></a>Weitere Informationen
 
