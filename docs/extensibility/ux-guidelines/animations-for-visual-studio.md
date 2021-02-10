@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: a7e8ea6514f29b99975b9e291d6a09ed2a0ad54e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934011"
 ---
 # <a name="animations-for-visual-studio"></a>Animationen für Visual Studio
 ## <a name="animation-fundamentals"></a>Grundlagen der Animation
@@ -126,7 +126,7 @@ Veranschaulichen komplexer und variabler Informationen:
 
 - Benutzer Fokus und-Auswahl
 
-- Fortschritt
+- Status
 
 - Errors
 

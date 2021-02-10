@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: c20a92e847f120850d7cbd424cc073018903911d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914464"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930823"
 ---
 # <a name="breakpoint-related-methods"></a>Methoden im Zusammenhang mit Breakpoints
 Eine Debug-Engine (de) muss die Einstellung von Haltepunkten unterstützen. Das Visual Studio-debuggen unterstützt die folgenden Typen von Breakpoints:

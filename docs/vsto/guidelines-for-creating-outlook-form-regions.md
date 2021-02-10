@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933608"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Richtlinien zum Erstellen von Outlook-Formular Bereichen
   Anhand der folgenden Informationen können Formularbereiche optimiert und mögliche Probleme vermieden werden:
@@ -42,7 +42,7 @@ ms.locfileid: "96848091"
 ## <a name="use-form-region-names"></a><a name="UsingFormRegions"></a> Verwenden von Formular Bereichs Namen
  Der Formularbereich wird mit mehreren Namen beschrieben. Es ist wichtig, den Unterschied zwischen diesen Namen und den jeweiligen Einfluss auf den Formularbereich zu kennen. In der folgenden Tabelle wird jeder Name beschrieben.
 
-|Formularbereichsname|BESCHREIBUNG|
+|Formularbereichsname|Beschreibung|
 |----------------------|-----------------|
 |Formularbereichs-Elementname|Der Name, den Sie für das **Outlook-Formularbereich** -Element im Dialogfeld **Neues Element hinzufügen** angeben. Dies ist der Name der Formularbereich-Codedatei, die im **Projektmappen-Explorer** angezeigt wird.|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> -Eigenschaft|Dieser Name wird auf der Seite **Geben Sie eine Beschreibung ein, und wählen Sie die Anzeigeeinstellungen aus** des Assistenten **Neuer Outlook-Formularbereich** angegeben. Dieser Name wird als **FormRegionName** -Eigenschaft im Fenster **Eigenschaften** angezeigt.<br /><br /> Verwenden Sie die <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> -Eigenschaft, um die Bezeichnung anzugeben, durch die der Formularbereich in der Outlook-Benutzeroberfläche identifiziert wird. In separaten Formularbereichen wird dieser Name als Schaltfläche auf dem Menüband des Outlook-Elements angezeigt.<br /><br /> In benachbarten Formularbereichen wird dieser Name als Headertext über dem Formularbereich angezeigt.|
@@ -86,9 +86,9 @@ ms.locfileid: "96848091"
 
   Das **Seitensymbol** wird auf dem Menüband eines Inspektors für Elemente angezeigt, die über folgende Formularbereiche verfügen: „Separat“, „Ersetzung“ oder „Alle ersetzen“.
 
-  Das **Fenster** Symbol wird im Benachrichtigungsbereich und im **Alt** + Dialogfeld alt-**Registerkarte** für geöffnete Elemente angezeigt, die die Formular Bereiche Ersetzung und alle ersetzen anzeigen.
+  Das **Fenster** Symbol wird im Benachrichtigungsbereich und im  + Dialogfeld alt-**Registerkarte** für geöffnete Elemente angezeigt, die die Formular Bereiche Ersetzung und alle ersetzen anzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Zugreifen auf einen Formular Bereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)
 - [Erstellen von Outlook-Formular Bereichen](../vsto/creating-outlook-form-regions.md)
 - [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formular Bereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)

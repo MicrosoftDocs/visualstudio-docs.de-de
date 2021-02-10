@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 951b83f425f1e7171c519fced3fa3a4644279621
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934141"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testleitfaden für Quellcodeverwaltungs-Plug-Ins
 In diesem Artikel finden Sie einen Leitfaden für das Testen Ihrer Quellcodeverwaltungs-Plug-Ins mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Außerdem erhalten Sie einen umfassenden Überblick über die gängigsten Testbereiche sowie über einige andere komplexe Bereiche, die sich als problematisch erweisen könnten. Diese Übersicht soll jedoch nicht als umfassende Liste von Testfällen verstanden werden.

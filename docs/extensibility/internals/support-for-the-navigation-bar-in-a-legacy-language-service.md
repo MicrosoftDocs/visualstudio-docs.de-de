@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932578"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Unterstützen der Navigationsleiste in einem Legacysprachdienst
 In der Navigationsleiste am oberen Rand der Editor-Ansicht werden die Typen und Member in der Datei angezeigt. Typen werden in der linken Dropdown-Dropdown-Anzeige angezeigt, und die Elemente werden in der rechten Dropdown-Dropdown Anzeige angezeigt. Wenn der Benutzer einen Typ auswählt, wird die Einfügemarke in die erste Zeile des Typs eingefügt. Wenn der Benutzer einen Member auswählt, wird die Einfügemarke in die Definition des Members eingefügt. Die Dropdown Felder werden aktualisiert, um die aktuelle Position der Einfügemarke widerzuspiegeln.

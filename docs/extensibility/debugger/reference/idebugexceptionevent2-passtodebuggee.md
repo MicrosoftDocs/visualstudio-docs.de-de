@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aec6f460295b59b2b5455b83d5b0be554bca24fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03ce1499863197ed71ef38fcae6a256b1ca319a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933263"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 Gibt an, ob die Ausnahme an das Programm weitergegeben werden soll, das beim Fortsetzen der Ausführung deentschlgt wird, oder, wenn die Ausnahme verworfen werden soll.
@@ -28,14 +28,14 @@ Gibt an, ob die Ausnahme an das Programm weitergegeben werden soll, das beim For
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT PassToDebuggee(
-   BOOL fPass
+HRESULT PassToDebuggee(
+   BOOL fPass
 );
 ```
 
 ```csharp
-int PassToDebuggee(
-   int fPass
+int PassToDebuggee(
+   int fPass
 );
 ```
 

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2ba7234ee0c5a4ab8096c020cb44345f17830540
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931213"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod-Aktivitätsdesigner
 
@@ -35,15 +35,15 @@ Greifen Sie in der Kategorie **Primitives** der **Toolbox** auf den **InvokeMeth
 
 In der folgenden Tabelle sind die Eigenschaften aufgeführt, <xref:System.Activities.Statements.InvokeMethod> und es wird beschrieben, wie Sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaften Raster bearbeitet werden, und einige können auf Workflow-Designer Oberfläche bearbeitet werden.
 
-|Eigenschaftenname|Erforderlich|Verwendung|
+|Eigenschaftenname|Erforderlich|Verbrauch|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|FALSE|Der Anzeigename der <xref:System.Activities.Statements.InvokeMethod>-Aktivität. Der Standardwert lautet InvokeMethod.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht unbedingt erforderlich ist, empfiehlt es sich, einen zu verwenden.|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Wahr|Der Name der Methode, die bei Ausführung der Aktivität aufgerufen werden soll. Die aufgerufene Methode muss als **öffentlich** deklariert werden. Diese Eigenschaft kann auf der Designer Oberfläche bearbeitet werden und ist obligatorisch.|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|FALSE|Die Parameterauflistung der aufgerufenen Methode. Die Parameter müssen der Auflistung in derselben Reihenfolge wie in der Methodensignatur hinzugefügt werden. Um das Dialogfeld " **Parameter** " anzuzeigen, in dem Sie diese Eigenschaft festlegen können, klicken Sie im Eigenschaften Raster **auf die Schalt** Fläche mit den Auslassungs Punkten. Klicken Sie auf die Schaltfläche **Argument erstellen** , um die Parameter hinzuzufügen.|
-|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|FALSE|Der Rückgabewert des Methodenaufrufs.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Wahr|Gibt an, ob die Methode asynchron aufgerufen wird. Der Standardwert ist **False**.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|FALSE|Das Objekt, das die aufzurufende Methode enthält. Diese Eigenschaft kann in der Designeroberfläche bearbeitet werden.<br /><br /> Es muss entweder das <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Objekt oder der <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>-Typ festgelegt werden.|
-|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|FALSE|Der <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Typ. Diese Eigenschaft kann in der Designeroberfläche bearbeitet werden. Diese Eigenschaft muss nur festgelegt werden, wenn die aufgerufene Methode statisch ist.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falsch|Der Anzeigename der <xref:System.Activities.Statements.InvokeMethod>-Aktivität. Der Standardwert lautet InvokeMethod.<br /><br /> Obwohl der <xref:System.Activities.Activity.DisplayName%2A> nicht unbedingt erforderlich ist, empfiehlt es sich, einen zu verwenden.|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Richtig|Der Name der Methode, die bei Ausführung der Aktivität aufgerufen werden soll. Die aufgerufene Methode muss als **öffentlich** deklariert werden. Diese Eigenschaft kann auf der Designer Oberfläche bearbeitet werden und ist obligatorisch.|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|Falsch|Die Parameterauflistung der aufgerufenen Methode. Die Parameter müssen der Auflistung in derselben Reihenfolge wie in der Methodensignatur hinzugefügt werden. Um das Dialogfeld " **Parameter** " anzuzeigen, in dem Sie diese Eigenschaft festlegen können, klicken Sie im Eigenschaften Raster **auf die Schalt** Fläche mit den Auslassungs Punkten. Klicken Sie auf die Schaltfläche **Argument erstellen** , um die Parameter hinzuzufügen.|
+|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|Falsch|Der Rückgabewert des Methodenaufrufs.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Richtig|Gibt an, ob die Methode asynchron aufgerufen wird. Der Standardwert ist **False**.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|Falsch|Das Objekt, das die aufzurufende Methode enthält. Diese Eigenschaft kann in der Designeroberfläche bearbeitet werden.<br /><br /> Es muss entweder das <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Objekt oder der <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>-Typ festgelegt werden.|
+|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|Falsch|Der <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Typ. Diese Eigenschaft kann in der Designeroberfläche bearbeitet werden. Diese Eigenschaft muss nur festgelegt werden, wenn die aufgerufene Methode statisch ist.|
 
 Verwenden Sie zum Übergeben von Parametern als c#- **out** -Parameter (z. b. `Method1(out myParam))` **OutArgument** anstelle von **InOutArgument** ).
 
@@ -61,7 +61,7 @@ Die resultierende Ausnahme hat den Typ <xref:System.Activities.InvalidWorkflowEx
 
 Diese Einschränkung gilt nicht für <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> und <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> . Dabei handelt es sich nicht um Workflow Argumente, die daher nicht in der-Auflistung <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> der- <xref:System.Activities.Statements.InvokeMethod> Aktivität in der-Methode registriert sind <xref:System.Activities.Activity.CacheMetadata%2A> .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Primitive](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
