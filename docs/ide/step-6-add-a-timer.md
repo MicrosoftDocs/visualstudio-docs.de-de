@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2684b197fc32b33081c8ecdfa8139b3c8f14e752
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 77daa47cdd6336849903202233392d3eecc33c1a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868893"
 ---
 # <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen von Timern
 Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuerelement hinzu. Ein solcher Timer wartet eine angegebene Anzahl von Millisekunden und löst anschließend ein Ereignis aus, das als *Tick* bezeichnet wird. Dies ist nützlich für den Start einer Aktion oder die regelmäßige Wiederholung eine Aktion. In diesem Fall verwenden Sie einen Zeitgeber, um dem Spieler zu ermöglichen, zwei Symbole auszuwählen, und um die beiden Symbole nach einer kurzen Zeit wieder auszublenden, sofern sie nicht übereinstimmen.
@@ -30,12 +30,12 @@ Als Nächstes fügen Sie dem Spiel ein <xref:System.Windows.Forms.Timer>-Steuere
 1. Wählen Sie **Timer** in der Toolbox des **Windows Forms-Designers** (in der Kategorie **Komponenten**) aus, und drücken Sie anschließend die **EINGABETASTE**, oder doppelklicken Sie auf den Timer, um dem Formular ein Timer-Steuerelement hinzuzufügen. Das Symbol des Timers mit dem Namen **Timer1** wird in einem Bereich unterhalb des Formulars angezeigt, wie in der folgenden Abbildung dargestellt.
 
      ![Zeitgeber](../ide/media/express_timer.png)<br/>
-**_Zeitgeber_* _
+***Zeitgeber***
 
     > [!NOTE]
     > Wenn die Toolbox leer ist, haben Sie zuvor möglicherweise nicht den Formular-Designer aktiviert, sondern den Code für das Formular.
 
-2. Wählen Sie das Symbol *Timer1*, um den Timer auszuwählen. Im Fenster **Eigenschaften** wechseln Sie von der Anzeige der Ereignisse zur Anzeige der Eigenschaften. Legen Sie die **Interval**-Eigenschaft des Timers auf **750** fest, ohne den Wert **FALSE** der **Enabled**-Eigenschaft zu ändern. Die Eigenschaft **Interval** gibt an, wie lange der Timer zwischen *Ticks* wartet bzw. wann das <xref:System.Windows.Forms.Timer.Tick>-Ereignis auslöst werden soll. Mit dem Wert „750“ wartet der Timer eine Dreiviertelsekunde (750 Millisekunden), bevor er das Tick-Ereignis auslöst. Sie rufen die <xref:System.Windows.Forms.Timer.Start>-Methode für den Start des Zeitgeber nur auf, nachdem der Spieler das zweite Bezeichnungsfeld auswählt hat.
+2. Wählen Sie das Symbol **Timer1**, um den Timer auszuwählen. Im Fenster **Eigenschaften** wechseln Sie von der Anzeige der Ereignisse zur Anzeige der Eigenschaften. Legen Sie die **Interval**-Eigenschaft des Timers auf **750** fest, ohne den Wert **FALSE** der **Enabled**-Eigenschaft zu ändern. Die Eigenschaft **Interval** gibt an, wie lange der Timer zwischen *Ticks* wartet bzw. wann das <xref:System.Windows.Forms.Timer.Tick>-Ereignis auslöst werden soll. Mit dem Wert „750“ wartet der Timer eine Dreiviertelsekunde (750 Millisekunden), bevor er das Tick-Ereignis auslöst. Sie rufen die <xref:System.Windows.Forms.Timer.Start>-Methode für den Start des Zeitgeber nur auf, nachdem der Spieler das zweite Bezeichnungsfeld auswählt hat.
 
 3. Wählen Sie das Symbol des Timer-Steuerelements im **Windows Forms-Designer** aus, und drücken Sie dann die **EINGABETASTE**, oder doppelklicken Sie auf den Timer, um einen leeren Tick-Ereignishandler hinzuzufügen. Ersetzen Sie entweder den Code durch den folgenden Code, oder geben Sie den folgenden Code manuell in den Ereignishandler ein.
 

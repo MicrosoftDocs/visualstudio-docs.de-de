@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 061e667196ce1577206ad76939e20daf3db131c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "65679204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840885"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Schnellstart: Informationen zum Debuggen in C# oder Visual Basic mithilfe des Visual Studio-Debuggers
 

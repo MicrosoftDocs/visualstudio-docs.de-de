@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350510"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870518"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic, C++)
 
@@ -242,7 +242,7 @@ Zuerst benötigen Sie ein Projekt für eine Multithreadanwendung. Im Folgenden w
 
 3. Suchen Sie im Quellcode-Editor die Zeile, die den Haltepunkt enthält.
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Ermitteln des Threadmarkers  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>Ermitteln des Threadmarkers  
 
 1. Wählen Sie beim Debuggen auf der Symbolleiste die Schaltfläche **Threads in Quelle anzeigen** aus ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 

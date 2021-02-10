@@ -2,19 +2,19 @@
 title: Bereitstellen eines ASP.NET Core-Docker-Containers in Docker Hub | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie Visual Studio-Containertools zum Bereitstellen einer ASP.NET Core-Web-App in Docker Hub verwenden.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e51088d135d0d2cdcc5d1bcca71f72fed8b73fd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867658"
 ---
 # <a name="deploy-to-docker-hub"></a>Bereitstellen in Docker Hub
 

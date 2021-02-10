@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 8569231ee1b9f19752bf58691b41ec74789bb761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868997"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogfeld „Erweiterte Buildeinstellungen“ (C#)
 
-Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Designers** , um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld kann nur für C#-Projekte verwendet werden.
+Verwenden Sie das Dialogfeld **Erweiterte Buildeinstellungen** des **Projekt-Designers**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld kann nur für C#-Projekte verwendet werden.
 
 ## <a name="general"></a>Allgemein
 
@@ -90,7 +90,7 @@ Weitere Informationen finden Sie unter [/debug (C# Compiler Options)](/dotnet/cs
 
 **Dateianordnung**
 
-Gibt die Größe der Abschnitte in der Ausgabedatei an. Gültige Werte sind **512** , **1024** , **2048** , **4096** und **8192** . Diese Werte werden in Bytes angegeben. Jeder Abschnitt wird auf einer Grenze angeordnet, die ein Mehrfaches des Werts ist, wodurch die Größe der Ausgabedatei beeinflusst wird. Weitere Informationen finden Sie unter [/filealign (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+Gibt die Größe der Abschnitte in der Ausgabedatei an. Gültige Werte sind **512**, **1024**, **2048**, **4096** und **8192**. Diese Werte werden in Bytes angegeben. Jeder Abschnitt wird auf einer Grenze angeordnet, die ein Mehrfaches des Werts ist, wodurch die Größe der Ausgabedatei beeinflusst wird. Weitere Informationen finden Sie unter [/filealign (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
 
 **Basisadresse der Bibliothek**
 

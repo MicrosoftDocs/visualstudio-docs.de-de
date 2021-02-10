@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 0c4fd6d5214211318e2271418425a117a73eb0ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871883"
 ---
 # <a name="edit-and-continue-c"></a>Bearbeiten und Fortfahren (C++)
 Sie können „Bearbeiten und fortfahren“ in C++-Projekten verwenden. Weitere Informationen zu den Einschränkungen von „Bearbeiten und fortfahren“ finden Sie unter [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md).

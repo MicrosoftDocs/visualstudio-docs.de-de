@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479471"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868854"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular
 
@@ -34,7 +34,7 @@ Eine Komponente ist in gewisser Hinsicht mit einem Steuerelement vergleichbar. Z
 
 1. Doppelklicken Sie auf **OpenFileDialog**, um dem Formular eine Komponente mit dem Namen **openFileDialog1** hinzuzufügen. Doppelklicken Sie in der **Toolbox** auf **ColorDialog**, um dem Formular eine Komponente mit dem Namen **colorDialog1** hinzuzufügen. (Sie verwenden diese Komponente im nächsten Lernprogrammschritt.) Unten im **Windows Forms-Designer** sollte ein Bereich angezeigt werden (unterhalb des Formulars **Picture Viewer**), das wie im folgenden Bild gezeigt ein Symbol für jede der beiden hinzugefügten Dialogfeldkomponenten enthält.
 
-     ![Dialogfeldkomponenten](../ide/media/express_dialogsadded.png)<br>**_Dialogkomponenten_* _ _*
+     ![Dialogfeldkomponenten](../ide/media/express_dialogsadded.png)<br>***Dialogkomponenten** _ _*
 
 1. Wählen Sie das Symbol **openFileDialog1** im unteren Bereich des **Windows Forms-Designers** aus. Legen Sie zwei Eigenschaften fest:
 
