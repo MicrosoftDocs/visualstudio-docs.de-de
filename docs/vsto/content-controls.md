@@ -37,15 +37,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947996"
 ---
 # <a name="content-controls"></a>ContentControl-Elemente
   Inhaltssteuerelemente bieten Ihnen eine Möglichkeit, Dokumente und Vorlagen zu entwerfen, die die folgenden Features aufweisen:
@@ -206,7 +206,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-bind-events-for-content-controls"></a>Daten Bindungs Ereignisse für Inhalts Steuerelemente
  Alle Inhaltssteuerelemente stellen einen Satz von Ereignissen bereit, die Sie behandeln können, um datenbezogene Aufgaben auszuführen. Sie können z. B. überprüfen, ob der Text in einem Steuerelement bestimmte Kriterien erfüllt, bevor die Datenquelle aktualisiert wird. Die folgende Tabelle listet die Inhaltssteuerelement-Ereignisse auf, die mit der Datenbindung zusammenhängen.
 
-|Aufgabe|Ereignis|
+|Aufgabe|event|
 |----------|-----------|
 |Ausführen von Code , kurz bevor Word automatisch den Text in einem Inhaltssteuerelement aktualisiert, das an einen benutzerdefinierten XML-Abschnitt gebunden ist.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|
 |Ausführen von Code, kurz bevor Word automatisch die Daten in einem benutzerdefinierten XML-Abschnitt aktualisiert, der an ein Inhaltssteuerelement gebunden ist (d. h. nachdem sich der Text im Inhaltssteuerelement ändert).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|
@@ -236,7 +236,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)
 - [Gewusst wie: Hinzufügen von Inhalts Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhalts Steuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)

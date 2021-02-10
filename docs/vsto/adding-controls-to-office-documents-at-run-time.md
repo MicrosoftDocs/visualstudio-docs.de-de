@@ -21,15 +21,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 5d49c7fa9224b2d527956536cb0c56b016f6b52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948647"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit
   Sie können einem Microsoft Office Word-Dokument und einer Microsoft Office Excel-Arbeitsmappe Steuerelemente zur Laufzeit hinzufügen. Sie können sie auch zur Laufzeit entfernen. Steuerelemente, die Sie zur Laufzeit hinzufügen oder entfernen, heißen *dynamische Steuerelemente*.
@@ -139,7 +139,7 @@ Wenn ein Dokument gespeichert und anschließend geschlossen wird, werden alle dy
   [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
   [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)
 - [Beibehalten dynamischer Steuerelemente in Office-Dokumenten](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)

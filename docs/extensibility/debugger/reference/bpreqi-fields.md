@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c0e10b6c253c61a9e68e0cf161201f7d2520ae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52710a9b17bb4e5c1c0b04b44507a466fc538bc2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948373"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
 Gibt die Informationen an, die über eine Breakpoint-Anforderung abgerufen werden sollen.

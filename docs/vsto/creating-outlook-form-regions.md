@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba2c4412b344a37e1b1db74cdddea8c5b60b69d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947892"
 ---
 # <a name="create-outlook-form-regions"></a>Erstellen von Outlook-Formular Bereichen
   Formularbereiche können zum Anpassen von Microsoft Office Outlook-Formularen verwendet werden. Visual Studio bietet erweiterte Tools, die Ihnen das Entwerfen, Entwickeln und Debuggen von Formularbereichen erleichtern.
@@ -153,7 +153,7 @@ ms.locfileid: "96847961"
 ### <a name="handle-form-region-events"></a><a name="HandlingFormRegionEvents"></a> Behandeln von Formular Bereichs Ereignissen
  Das **Outlook-Formular Bereichs** Element fügt automatisch die folgenden drei Ereignishandler zur Formular Bereich-Codedatei hinzu.
 
-|Ereignis|BESCHREIBUNG|
+|event|BESCHREIBUNG|
 |-----------|-----------------|
 |FormRegionInitializing|Tritt auf, bevor der Formularbereich initialisiert wird. Sie können die Bedingungen in diesem Ereignishandler überprüfen, um zu ermitteln, ob Outlook den Formularbereich anzeigen soll. Weitere Informationen finden Sie unter Gewusst [wie: verhindern der Anzeige eines Formular Bereichs in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|
 |FormRegionShowing|Tritt nach dem Erstellen einer Instanz des Formularbereichs, jedoch vor dem Anzeigen des Formularbereichs auf.|

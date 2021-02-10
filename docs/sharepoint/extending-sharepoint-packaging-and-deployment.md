@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd4967e38738018f9b30365575a2dcb9e8970963
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948751"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Erweiterte SharePoint-Paket Erstellung und-Bereitstellung
   Sie können den Paketerstellungs- und Bereitstellungsprozess für SharePoint-Projekte erweitern.
@@ -54,7 +54,7 @@ ms.locfileid: "94672586"
 ## <a name="customize-validation-rules"></a>Anpassen von Validierungsregeln
  Vor dem Bereitstellen eines Lösungspakets (.wsp) können Sie benutzerdefinierte Funktions- und Paketvalidierungsregeln erstellen, um sicherzustellen, dass die Funktion oder das Paket gültig ist. Beispielsweise können Sie Entwicklern Informationen, Warnungen oder Fehler melden, um sie beim Beheben von Validierungsproblemen zu unterstützen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von benutzerdefinierten Feature- und Paketvalidierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: Ausführen von Code bei der Ausführung von Bereitstellungs Schritten](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungs Schritts für SharePoint-Projekte](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Vorgehensweise: Erstellen von benutzerdefinierten Funktions-und Paket Validierungsregeln für SharePoint-Lösungen](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

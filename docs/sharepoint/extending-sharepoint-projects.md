@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8efeb704bb247e653af0ee062efcc71ad390c5ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948660"
 ---
 # <a name="extend-sharepoint-projects"></a>Erweitern von SharePoint-Projekten
   Erstellen Sie eine Projekt Erweiterung, wenn Sie Features auf Projektebene von SharePoint-Projekten anpassen möchten. Beispielsweise können Sie benutzerdefinierte Projekteigenschaften hinzufügen oder auf Ereignisse auf Projektebene reagieren, die ausgelöst werden, wenn der Benutzer eine SharePoint-Projekt Mappe in Visual Studio entwickelt.
@@ -42,7 +42,7 @@ ms.locfileid: "94672638"
 
  Um auf eine bestimmte Projekt Instanz zuzugreifen, behandeln Sie eines der <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> Ereignisse des *ProjectService* -Parameters in der Implementierung der- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> Methode. Um z. b. zu ermitteln, wann ein SharePoint-Projekt zu einer Projekt Mappe hinzugefügt wird, behandeln Sie das- <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> Ereignis. Weitere Informationen finden Sie unter Vorgehens [Weise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Erstellen einer SharePoint-Projekt Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu SharePoint-Projekten](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [Gewusst wie: Hinzufügen einer Eigenschaft zu SharePoint-Projekten](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e8486120b0f08077bc30c2a5177a8aba915c37f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948673"
 ---
 # <a name="extend-sharepoint-project-items"></a>Erweitern von SharePoint-Projekt Elementen
   Erstellen Sie eine Projekt Element Erweiterung, wenn Sie einer Art von SharePoint-Projekt Element, das bereits in Visual Studio installiert ist, Funktionen hinzufügen möchten. Sie können z. b. eine Erweiterung für die integrierten **Ereignis Empfänger** -oder **Listen Definitions** Projekt Elemente in Visual Studio erstellen, oder Sie können eine Erweiterung für einen benutzerdefinierten Projekt Elementtyp erstellen. Sie können auch eine Erweiterung für alle Typen von SharePoint-Projekt Elementen erstellen.
@@ -66,7 +66,7 @@ ms.locfileid: "94672573"
 |Webpart|Microsoft. VisualStudio. SharePoint. WebPart|
 |Workflow Zuordnungs Formular|Microsoft. VisualStudio. SharePoint. Workflow Association|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Vorgehensweise: Erstellen einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [Gewusst wie: Hinzufügen eines Kontextmenü Elements zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [Gewusst wie: Hinzufügen einer Eigenschaft zu einer SharePoint-Projekt Element Erweiterung](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)

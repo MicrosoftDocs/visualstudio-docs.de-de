@@ -55,15 +55,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, errors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e307c839dfb0aa764ccd0aa5727f009635ecabce
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 37676b419bac620460e6c10e121e002739317315
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948621"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Zusätzliche Unterstützung für Fehler in Office-Projektmappen
 
@@ -93,7 +93,7 @@ Bietet Zugriff auf Knowledge Base-Artikel, Downloads und Updates, Support-WebCas
 
 Enthält Links zu weiteren Ressourcen, um mehr über die Entwicklung von Office-Projektmappen und Office-Entwicklung mit Visual Studio zu erfahren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Beheben von Fehlern in Office-Projektmappen](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Behandeln von Problemen mit der Sicherheit von Office](../vsto/troubleshooting-office-solution-security.md)
