@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925386"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen einer Multithread-App mithilfe des Fensters „Threads“ (C#, Visual Basic, C++)
 
@@ -163,7 +163,7 @@ Die Spalte **Position** zeigt an, wo die einzelnen Threads im Quellcode vorkomme
 Neben **Kennzeichnen**, **Kennzeichnung aufheben** und **Kennzeichnung aller Threads aufheben** enthält das Kontextmenü für **Thread**-Elemente Folgendes:
 
 - Die Schaltfläche **Threads in Quelle anzeigen**.
-- **Hexadezimale Anzeige**: Ändert die **Thread-ID**s im Fenster **Threads** aus einem dezimalen in ein hexadezimales Format.
+- **Hexadezimale Anzeige**: Ändert die **Thread-ID** s im Fenster **Threads** aus einem dezimalen in ein hexadezimales Format.
 - [Zu Thread wechseln](#switch-to-another-thread): Schaltet die Ausführung sofort auf diesen Thread um.
 - **Umbenennen**: Ändert den Threadnamen.
 - Die Befehle [Einfrieren und Reaktivieren](#bkmk_freeze).

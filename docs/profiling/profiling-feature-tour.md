@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 849b9d7bd6aca3fa56cb0106bea844ce1fa56b73
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929107"
 ---
 # <a name="first-look-at-profiling-tools"></a>Einführung in Profilerstellungstools
 
@@ -31,11 +31,11 @@ Informationen zur Unterstützung der Profilerstellungstools für die verschieden
 
 ## <a name="measure-performance-while-debugging"></a>Messen der Leistung beim Debuggen
 
-Die Profilerstellungstools, auf die Sie während einer Debugsitzung zugreifen können, stehen im Fenster „Diagnosetools“ zur Verfügung. Das Fenster „Diagnosetools“ wird automatisch angezeigt, wenn Sie es nicht deaktiviert haben. Klicken Sie auf **Debuggen/Windows/Diagnosetools anzeigen** , um das Fenster aufzurufen. Wenn das Fenster geöffnet ist, können Sie Tools auswählen, für die Sie Daten sammeln möchten.
+Die Profilerstellungstools, auf die Sie während einer Debugsitzung zugreifen können, stehen im Fenster „Diagnosetools“ zur Verfügung. Das Fenster „Diagnosetools“ wird automatisch angezeigt, wenn Sie es nicht deaktiviert haben. Klicken Sie auf **Debuggen/Windows/Diagnosetools anzeigen**, um das Fenster aufzurufen. Wenn das Fenster geöffnet ist, können Sie Tools auswählen, für die Sie Daten sammeln möchten.
 
 ![Fenster „Diagnosetools“](../profiling/media/prof-tour-diagnostic-tools.png "Diagnosetools")
 
-Während Sie Debuggen, können Sie das **Diagnosetools** -Fenster zum Analysieren der CPU und Speicherauslastung verwenden, und Sie können Ereignisse anzeigen, die Leistungsbezogene Informationen zeigen.
+Während Sie Debuggen, können Sie das **Diagnosetools**-Fenster zum Analysieren der CPU und Speicherauslastung verwenden, und Sie können Ereignisse anzeigen, die Leistungsbezogene Informationen zeigen.
 
 ![Zusammenfassung „Diagnosetools“](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Diagnosetools: Zusammenfassung")
 
@@ -47,13 +47,13 @@ Zu den Tools, die im Fenster „Diagnosetools“ oder während einer Debugsitzun
 - [PerfTips](../profiling/perftips.md)
 
 > [!NOTE]
-> Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools** ). Sie können die [Post-Mortem](#post_mortem)-Tools mit Windows 7 und höher verwenden. 
+> Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Debugger auszuführen (Fenster **Diagnosetools**). Sie können die [Post-Mortem](#post_mortem)-Tools mit Windows 7 und höher verwenden. 
 
 ## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> Messen der Leistung in Releasebuilds
 
 Tools im Leistungs-Profiler dienen zur Analyse der **Releasebuilds**. Im Leistungs-Profiler können Sie Diagnoseinformationen sammeln, während die App ausgeführt wird, und anschließend die gesammelten Informationen überprüfen, nachdem die App angehalten wurde (eine Post-Mortem-Analyse).
 
-Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2** ).
+Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2**).
 
 ![Leistungs-Profiler](../profiling/media/prof-tour-performance-profiler.png "Leistungs-Profiler")
 
@@ -91,7 +91,7 @@ PerfTips zeigt dieselben Ereignisse an, die auch in der Ansicht **Ereignisse** d
 
 Mit dem CPU-Auslastungstool können Sie die Analyse der Leistung Ihrer App starten. So erfahren Sie mehr über die CPU-Ressourcen, die Ihre App in Anspruch nimmt. Sie können das [in den Debugger integrierte CPU-Auslastungstool](../profiling/beginners-guide-to-performance-profiling.md) oder das [Post-Mortem-CPU-Auslastungstool](../profiling/cpu-usage.md) verwenden.
 
-Wenn Sie das in den Debugger integrierte CPU-Auslastungstool verwenden, öffnen Sie das Fenster „Diagnosetool“ (wenn es geschlossen ist, wählen Sie **Debuggen/Fenster/Diagnosetools anzeigen** ). Öffnen Sie beim Debuggen die Ansicht **Zusammenfassung** , und wählen Sie **CPU-Profilerstellung aufzeichnen** aus.
+Wenn Sie das in den Debugger integrierte CPU-Auslastungstool verwenden, öffnen Sie das Fenster „Diagnosetool“ (wenn es geschlossen ist, wählen Sie **Debuggen/Fenster/Diagnosetools anzeigen**). Öffnen Sie beim Debuggen die Ansicht **Zusammenfassung**, und wählen Sie **CPU-Profilerstellung aufzeichnen** aus.
 
 ![Aktivieren der CPU-Auslastung in den Diagnosetools](../profiling/media/prof-tour-enable-cpu-profiling.png "Diagnosetools: CPU-Auslastung aktivieren")
 
@@ -122,17 +122,17 @@ Wenn Sie auf einen der Pfeillinks klicken, erhalten Sie eine Differenzansicht de
 
 ![Differenzansicht „Heap“ in den Diagnosetools](../profiling/media/prof-tour-mem-usage-diff-heap.png "Diagnosetools: Differenzansicht „Heap“")
 
-Wenn Sie statt in der Ansicht **Speicherauslastung** auf den Link auf der linken Seite klicken, ist die Heapansicht nach der Objektanzahl organisiert. Die Objekte eines bestimmten Typs, der die Zahl am meisten erhöht hat, werden oben angezeigt (sortiert nach der Spalte **Anzahlunterschied** ).
+Wenn Sie statt in der Ansicht **Speicherauslastung** auf den Link auf der linken Seite klicken, ist die Heapansicht nach der Objektanzahl organisiert. Die Objekte eines bestimmten Typs, der die Zahl am meisten erhöht hat, werden oben angezeigt (sortiert nach der Spalte **Anzahlunterschied**).
 
 ## <a name="analyze-resource-consumption-xaml"></a>Analysieren des Ressourcenverbrauchs (XAML)
 
-In XAML-Apps, z.B. Windows Desktop WPF-Apps und UWP-Apps, können Sie mit der Anwendungszeitachse den Ressourcenverbrauch analysieren. Sie können analysieren, wie viel Zeit Ihre Anwendung zum Vorbereiten von Benutzeroberflächenframes (Layout und Render), von Netzwerk- und Datenträgeranforderungen sowie in Szenarios wie Starten von Anwendungen, Laden von Seiten und Ändern von Fenstergrößen benötigt. Wählen Sie die **Anwendungszeitachse** im Leistungsprofiler aus und anschließend **Starten** , um das Tool zu verwenden. Navigieren Sie in Ihrer App zum Szenario mit einem vermuteten Ressourcenverbrauch-Problem, und wählen Sie anschließend **Auflistung beenden** zum Generieren des Berichts aus.
+In XAML-Apps, z.B. Windows Desktop WPF-Apps und UWP-Apps, können Sie mit der Anwendungszeitachse den Ressourcenverbrauch analysieren. Sie können analysieren, wie viel Zeit Ihre Anwendung zum Vorbereiten von Benutzeroberflächenframes (Layout und Render), von Netzwerk- und Datenträgeranforderungen sowie in Szenarios wie Starten von Anwendungen, Laden von Seiten und Ändern von Fenstergrößen benötigt. Wählen Sie die **Anwendungszeitachse** im Leistungsprofiler aus und anschließend **Starten**, um das Tool zu verwenden. Navigieren Sie in Ihrer App zum Szenario mit einem vermuteten Ressourcenverbrauch-Problem, und wählen Sie anschließend **Auflistung beenden** zum Generieren des Berichts aus.
 
 Geringe Framerates im Diagramm **Visueller Durchsatz** entsprechen möglicherweise visuellen Problemen, die Sie beim Ausführen der App sehen. Auf ähnliche Weise können hohe Zahlen des Diagramms **Auslastung des UI-Thread** Problemen mit der Reaktionsfähigkeit der Benutzeroberfläche entsprechen. Im Bericht können Sie den Zeitraum mit einem vermuteten Leistungsproblem auswählen, und anschließend die detaillierten UI-Threadaktivitäten in der Zeitachsendetailansicht (unten) überprüfen.
 
 ![Profilerstellungstool für die Anwendungszeitachse](../profiling/media/prof-tour-application-timeline.gif "Profilerstellungstour für die Anwendungszeitachse")
 
-In der Zeitachsendetailansicht finden Sie Informationen wie den Typ der Aktivität (oder das beteiligte Benutzeroberflächenelement) sowie die Dauer der Aktivität. In der Abbildung benötigt beispielsweise ein **Layout** -Ereignis für ein Grid-Steuerelement 57,53 ms.
+In der Zeitachsendetailansicht finden Sie Informationen wie den Typ der Aktivität (oder das beteiligte Benutzeroberflächenelement) sowie die Dauer der Aktivität. In der Abbildung benötigt beispielsweise ein **Layout**-Ereignis für ein Grid-Steuerelement 57,53 ms.
 
 Weitere Informationen finden Sie unter [Anwendungszeitachse](../profiling/application-timeline.md).
 
@@ -140,7 +140,7 @@ Weitere Informationen finden Sie unter [Anwendungszeitachse](../profiling/applic
 
 ## <a name="examine-application-events"></a>Untersuchen von Anwendungsereignissen
 
-Die generische [Ereignisanzeige](../profiling/events-viewer.md) zeigt die Aktivität Ihrer Anwendung in Form einer Liste von Ereignissen wie Laden von Modulen, Starten von Threads und die Systemkonfiguration an. Dadurch können Sie die Leistung Ihrer Anwendung direkt im Profiler von Visual Studio besser diagnostizieren. Dieses Tool ist im Leistungs-Profiler verfügbar. Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2** ).
+Die generische [Ereignisanzeige](../profiling/events-viewer.md) zeigt die Aktivität Ihrer Anwendung in Form einer Liste von Ereignissen wie Laden von Modulen, Starten von Threads und die Systemkonfiguration an. Dadurch können Sie die Leistung Ihrer Anwendung direkt im Profiler von Visual Studio besser diagnostizieren. Dieses Tool ist im Leistungs-Profiler verfügbar. Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2**).
 
 Das Tool zeigt jedes Ereignis in einer Listenansicht. Spalten enthalten Informationen zu jedem Ereignis, wie z. B. Ereignisname, Zeitstempel und Prozess-ID.
 
@@ -148,7 +148,7 @@ Das Tool zeigt jedes Ereignis in einer Listenansicht. Spalten enthalten Informat
 
 ## <a name="analyze-asynchronous-code-net"></a>Analysieren von asynchronem Code (.NET)
 
-Mit dem Tool [.NET Async](../profiling/analyze-async.md) können Sie die Leistung von asynchronem Code in Ihrer Anwendung analysieren. Dieses Tool ist im Leistungs-Profiler verfügbar. Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2** ).
+Mit dem Tool [.NET Async](../profiling/analyze-async.md) können Sie die Leistung von asynchronem Code in Ihrer Anwendung analysieren. Dieses Tool ist im Leistungs-Profiler verfügbar. Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2**).
 
 Das Tool zeigt jeden asynchronen Vorgang in einer Listenansicht. Sie sehen für einen asynchronen Vorgang Informationen wie Startzeit, Endzeit und Gesamtzeit.
 
@@ -156,7 +156,7 @@ Das Tool zeigt jeden asynchronen Vorgang in einer Listenansicht. Sie sehen für 
 
 ## <a name="analyze-database-performance-net-core"></a>Analysieren der Datenbankleistung (.NET Core)
 
-Bei .NET Core-Apps, die mit ADO.NET oder Entity Framework Core arbeiten, können Sie mit dem Tool [Datenbank](../profiling/analyze-database.md) die Datenbankabfragen aufzeichnen, die Ihre Anwendung während einer Diagnosesitzung durchführt. Sie können anschließend Informationen zu einzelnen Abfragen analysieren, um Möglichkeiten zur Verbesserung der Leistung Ihrer App zu finden. Dieses Tool ist im Leistungs-Profiler verfügbar. Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2** ).
+Bei .NET Core-Apps, die mit ADO.NET oder Entity Framework Core arbeiten, können Sie mit dem Tool [Datenbank](../profiling/analyze-database.md) die Datenbankabfragen aufzeichnen, die Ihre Anwendung während einer Diagnosesitzung durchführt. Sie können anschließend Informationen zu einzelnen Abfragen analysieren, um Möglichkeiten zur Verbesserung der Leistung Ihrer App zu finden. Dieses Tool ist im Leistungs-Profiler verfügbar. Öffnen Sie den Leistungs-Profiler durch Wählen von **Debuggen** > **Leistungs-Profiler** (oder drücken Sie **ALT+F2**).
 
 Das Tool zeigt jede Abfrage in einer Listenansicht. Es werden Informationen wie die Startzeit und Dauer der Abfrage angezeigt.
 
@@ -172,9 +172,9 @@ In Ihren UWP-Apps können Sie die **Analyse der Benutzeroberfläche** im Fenster
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analysieren der GPU-Nutzung (Direct3D)
 
-In Direct3D-Apps (Direct3D-Komponenten müssen in C++ vorhanden sein) können Sie Aktivitäten auf der GPU überprüfen und Leistungsprobleme analysieren. Weitere Informationen erhalten Sie unter [GPU-Nutzung](./gpu-usage.md). Wählen Sie die **GPU-Nutzung** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, für das Sie ein Profil erstellen wollen, und wählen Sie anschließend **Auflistung beenden** , um einen Bericht zu generieren.
+In Direct3D-Apps (Direct3D-Komponenten müssen in C++ vorhanden sein) können Sie Aktivitäten auf der GPU überprüfen und Leistungsprobleme analysieren. Weitere Informationen erhalten Sie unter [GPU-Nutzung](./gpu-usage.md). Wählen Sie die **GPU-Nutzung** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, für das Sie ein Profil erstellen wollen, und wählen Sie anschließend **Auflistung beenden**, um einen Bericht zu generieren.
 
-Wenn Sie einen Zeitraum im Diagramm und **Details anzeigen** auswählen, wird eine detaillierte Ansicht wird im unteren Bereich angezeigt. In der Detailansicht können Sie überprüfen, wie viel Aktivität auf jeder CPU und GPU vorhanden ist. Wählen Sie Ereignisse im untersten Bereich aus, um Popups in der Zeitachse aufzurufen. Wählen Sie z.B. das **Vorhanden** -Ereignis aus, um die **Vorhanden** -Aufruf-Popups anzuzeigen. (Die hellgrauen vertikalen VSync-Zeilen informieren darüber, ob für bestimmte **Present** -Aufrufe ein VSync-Ereignis fehlt. Es muss ein **Present** -Aufruf zwischen je zwei VSync-Ereignissen vorliegen, damit die App kontinuierlich 60 FPS erreicht.)
+Wenn Sie einen Zeitraum im Diagramm und **Details anzeigen** auswählen, wird eine detaillierte Ansicht wird im unteren Bereich angezeigt. In der Detailansicht können Sie überprüfen, wie viel Aktivität auf jeder CPU und GPU vorhanden ist. Wählen Sie Ereignisse im untersten Bereich aus, um Popups in der Zeitachse aufzurufen. Wählen Sie z.B. das **Vorhanden**-Ereignis aus, um die **Vorhanden**-Aufruf-Popups anzuzeigen. (Die hellgrauen vertikalen VSync-Zeilen informieren darüber, ob für bestimmte **Present**-Aufrufe ein VSync-Ereignis fehlt. Es muss ein **Present**-Aufruf zwischen je zwei VSync-Ereignissen vorliegen, damit die App kontinuierlich 60 FPS erreicht.)
 
 ![Profilerstellungstool „GPU-Nutzung“](../profiling/media/prof-tour-gpu-usage.png "Diagramm „GPU-Auslastung“")
 

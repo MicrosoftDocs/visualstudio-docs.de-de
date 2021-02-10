@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b97b57adb6fd87fa539e9dae7c37d6c5c8f2ddd6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: be95611d7d1c931e1b349e7a8c6dc0be75c7c832
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930979"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Vorgehensweise: Erstellen und Ändern von MIP-Ebenen
 Dieses Dokument veranschaulicht, wie Sie die **Bildbearbeitung** verwenden, um *MIP-Ebenen* für den Detaillierungsgrad (LOD) des Texturraums zu generieren und zu ändern.
@@ -36,7 +36,7 @@ Um Spezialeffekte zu erzielen oder die Bildqualität auf bestimmten Detailebenen
 
 #### <a name="to-modify-an-individual-mip-level"></a>So ändern Sie eine einzelne MIP-Ebene
 
-1. Wählen Sie die MIP-Ebene aus, die Sie ändern möchten. Klicken Sie auf der Symbolleiste **Bildbearbeitungsmodus** auf die Schaltflächen **Zur nächsten MIP-Ebene wechseln** und **Zur vorherigen MIP-Ebene wechseln** , um zwischen den MIP-Ebenen zu navigieren.
+1. Wählen Sie die MIP-Ebene aus, die Sie ändern möchten. Klicken Sie auf der Symbolleiste **Bildbearbeitungsmodus** auf die Schaltflächen **Zur nächsten MIP-Ebene wechseln** und **Zur vorherigen MIP-Ebene wechseln**, um zwischen den MIP-Ebenen zu navigieren.
 
 2. Nachdem Sie die MIP-Ebene ausgewählt haben, die Sie ändern möchten, können Sie die Zeichenwerkzeuge verwenden, um sie zu ändern, ohne den Inhalt anderer MIP-Ebenen zu ändern. Die Zeichenwerkzeuge sind auf der Symbolleiste **Bildbearbeitung** verfügbar. Nachdem Sie ein Tool ausgewählt haben, können Sie seine Eigenschaften im Fenster **Eigenschaften** ändern. Informationen zu den Zeichentools und ihren Eigenschaften finden Sie unter [Bildbearbeitung](../designers/image-editor.md).
 

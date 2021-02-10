@@ -6,15 +6,15 @@ ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 289562b1aebe981b0829a1adac107a607163a859
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: ee0ac916bcc13e6bc89485171b2ce145b31dd919
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932565"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Generieren von Vergleichsoperatoren für Typen, die IComparable implementieren
 
@@ -26,7 +26,7 @@ Diese Codegenerierung gilt für:
 
 **Hintergrund:** Sie verfügen über einen Typ, der IComparable implementiert. Wir fügen die Vergleichsoperatoren automatisch hinzu.
 
-**Vorteile** : Wenn Sie einen Werttyp implementieren, sollten Sie erwägen, die **Equals** -Methode zu überschreiben, um eine bessere Leistung als mit der Standardimplementierung der Equals-Methode in ValueType zu erzielen.
+**Vorteile**: Wenn Sie einen Werttyp implementieren, sollten Sie erwägen, die **Equals**-Methode zu überschreiben, um eine bessere Leistung als mit der Standardimplementierung der Equals-Methode in ValueType zu erzielen.
 
 ## <a name="how-to"></a>Vorgehensweise
 

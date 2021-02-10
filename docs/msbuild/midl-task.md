@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932011"
 ---
 # <a name="midl-task"></a>MIDL-Aufgabe
 
@@ -41,7 +41,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 ## <a name="parameters"></a>Parameter
 
- Im Folgenden werden die Parameter der **MIDL** -Aufgabe beschrieben. Die meisten Aufgabenparameter und einige andere Parameter entsprechen einer Befehlszeilenoption.
+ Im Folgenden werden die Parameter der **MIDL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige andere Parameter entsprechen einer Befehlszeilenoption.
 
 - **AdditionalIncludeDirectories**
 
@@ -61,7 +61,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **ApplicationConfigurationMode**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, dann können Sie einige ACF-Schlüsselwörter in der IDL-Datei benutzen.
 
@@ -103,7 +103,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
      Optionaler **String** -Parameter.
 
-     Gibt den Dateinamen für die generierte *dlldata* -Datei für eine Proxy-DLL an.
+     Gibt den Dateinamen für die generierte *dlldata*-Datei für eine Proxy-DLL an.
 
      Weitere Informationen finden Sie unter der Option **/dlldata** in der [MIDL-Befehlszeilenreferenz](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -125,7 +125,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **ErrorCheckAllocations**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, stellen Sie sicher, das keine Fehler aufgrund von unzureichendem Arbeitsspeicher aufgetreten sind.
 
@@ -133,7 +133,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **ErrorCheckBounds**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, dann wird die Größe der konform-variierenden und variierenden Arrays mit der Übertragungslängenspezifikation abgeglichen.
 
@@ -141,7 +141,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **ErrorCheckEnumRange**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, wird überprüft, ob sich die Enumerationswerte im zulässigen Bereich befinden.
 
@@ -149,7 +149,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **ErrorCheckRefPointers**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, stellen Sie sicher, dass keine NULL-Verweiszeiger an die Client-Stubs übergeben werden.
 
@@ -157,7 +157,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **ErrorCheckStubData**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, wird ein Stub generiert, das Unmarshalling-Ausnahmen auf Serverseite erkennt, und überträgt sie zurück an den Client.
 
@@ -195,7 +195,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **GenerateStublessProxies**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, werden vollständig interpretierte Stubs mit Proxys ohne Stubs für Objektschnittstellen generiert.
 
@@ -203,9 +203,9 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **GenerateTypeLibrary**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
-     Wenn `true`, dann wird keine Typbibliotheksdatei ( *.tlb* ) generiert.
+     Wenn `true`, dann wird keine Typbibliotheksdatei ( *.tlb*) generiert.
 
      Weitere Informationen finden Sie unter der Option **/notlb** in der [MIDL-Befehlszeilenreferenz](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -219,9 +219,9 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **IgnoreStandardIncludePath**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
-     Wenn `true`, dann sucht die MIDL-Aufgabe nur in den angegebenen Verzeichnissen mithilfe des Schalters **AdditonalIncludeDirectories** , und ignoriert das aktuelle Verzeichnis und die durch die Umgebungsvariable „INCLUDE“ angegebenen Verzeichnisse.
+     Wenn `true`, dann sucht die MIDL-Aufgabe nur in den angegebenen Verzeichnissen mithilfe des Schalters **AdditonalIncludeDirectories**, und ignoriert das aktuelle Verzeichnis und die durch die Umgebungsvariable „INCLUDE“ angegebenen Verzeichnisse.
 
      Weitere Informationen finden Sie unter der Option **/no_def_idir** in der [MIDL-Befehlszeilenreferenz](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -235,7 +235,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **LocaleID**
 
-     Optionaler **int** -Parameter.
+     Optionaler **int**-Parameter.
 
      Gibt den *Gebietsschemabezeichner* an, der den Gebrauch von internationalen Zeichen in der Eingabedatei, dem Dateinamen und den Verzeichnispfaden ermöglicht. Geben Sie einen dezimalen Gebietsschemabezeichner an.
 
@@ -243,7 +243,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **MkTypLibCompatible**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, dann muss das Format der Eingabedatei mit *mktyplib.exe* Version 2.03 kompatibel sein.
 
@@ -299,7 +299,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
      Optionaler **String** -Parameter.
 
-     Gibt die Zuweisung ( *Komprimierungsebene* ) der Strukturen im Zielsystem an.
+     Gibt die Zuweisung (*Komprimierungsebene*) der Strukturen im Zielsystem an.
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 
@@ -315,7 +315,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **SuppressCompilerWarnings**
 
-     Optionaler **Boolean** -Parameter.
+     Optionaler **Boolean**-Parameter.
 
      Wenn `true`, dann werden Warnmeldungen aus der MIDL-Aufgabe unterdrückt.
 
@@ -331,7 +331,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **TargetEnvironment**
 
-     Optionaler **String** -Parameter.
+     Optionaler **String**-Parameter.
 
      Gibt die Umgebung an, in der die Anwendung ausgeführt wird.
 
@@ -354,7 +354,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **TypeLibFormat**
 
-     Optionaler **String** -Parameter.
+     Optionaler **String**-Parameter.
 
      Gibt das Format der Typbibliotheksdatei an.
 
@@ -369,7 +369,7 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **TypeLibraryName**
 
-     Optionaler **String** -Parameter.
+     Optionaler **String**-Parameter.
 
      Gibt den Namen der Typbibliotheksdatei an.
 
@@ -403,9 +403,9 @@ Umschließt das MIDL-Compilertool (Microsoft Interface Definition Language), *mi
 
 - **WarningLevel**
 
-     Optionaler **String** -Parameter.
+     Optionaler **String**-Parameter.
 
-     Gibt den Schweregrad ( *Warnstufe* ) von auszugebenden Warnungen an. Für den Wert 0 wird keine Warnung ausgegeben. Andernfalls wird eine Warnung ausgegeben, wenn ihre Warnstufe numerisch kleiner als oder gleich der angegebene Wert ist.
+     Gibt den Schweregrad (*Warnstufe*) von auszugebenden Warnungen an. Für den Wert 0 wird keine Warnung ausgegeben. Andernfalls wird eine Warnung ausgegeben, wenn ihre Warnstufe numerisch kleiner als oder gleich der angegebene Wert ist.
 
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.
 

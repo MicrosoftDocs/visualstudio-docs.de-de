@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 36d96eacc0fbc88a3fcf082493e064a77c5c403a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933816"
 ---
 # <a name="when-element-msbuild"></a>When-Element (MSBuild)
 
@@ -54,7 +54,7 @@ Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |Bedingung|Erforderliches Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 

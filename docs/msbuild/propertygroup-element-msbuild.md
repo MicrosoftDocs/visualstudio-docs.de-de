@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 5182708e848587439795f5d6c04d87382b36f84a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931993"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup-Element (MSBuild)
 
@@ -48,7 +48,7 @@ Enthält eine Reihe von benutzerdefinierten [Eigenschaft](../msbuild/property-el
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |Bedingung|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 
@@ -56,7 +56,7 @@ Enthält eine Reihe von benutzerdefinierten [Eigenschaft](../msbuild/property-el
 
 |Element|Beschreibung|
 |-------------|-----------------|
-|[Eigenschaft](../msbuild/property-element-msbuild.md)|Optionales Element.<br /><br /> Ein benutzerdefinierter Eigenschaftenname, der den Wert der Eigenschaft enthält. Es kann kein oder mehrere *Eigenschafts* -Elemente in einem `PropertyGroup`-Element geben.|
+|[Eigenschaft](../msbuild/property-element-msbuild.md)|Optionales Element.<br /><br /> Ein benutzerdefinierter Eigenschaftenname, der den Wert der Eigenschaft enthält. Es kann kein oder mehrere *Eigenschafts*-Elemente in einem `PropertyGroup`-Element geben.|
 
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

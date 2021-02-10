@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419275"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924877"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C\#
 
@@ -44,7 +44,7 @@ Wenn Sie Visual Studio zum ersten Mal öffnen, werden Sie zur Anmeldung aufgefor
 
 ![Dialogfeld „Einstellungen auswählen“](../media/exploreide-settings.png)
 
-Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+Wenn sich Visual Studio öffnet, werden Toolfenster, die Menüs, Symbolleisten und der Hauptfensterbereich angezeigt. Mit **Schnellstart** werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer dort angezeigt, wo sich die **Startseite** befindet. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
 
 ![Visual Studio 2017-IDE mit übernommenen allgemeinen Einstellungen](../media/exploreide-idewithgeneralsettings.png "Screenshot: Visual Studio 2017-IDE mit übernommenen allgemeinen Einstellungen")
 
@@ -277,7 +277,7 @@ Zu Beginn dieses Tutorials wurde *MainWindow.xaml* in *Greetings.xaml* umbenannt
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>Angeben von „Greetings.xaml“ als Start-URI
 
-1. Öffnen Sie im **Projektmappen-Explorer**die Datei *App.xaml*.
+1. Öffnen Sie im **Projektmappen-Explorer** die Datei *App.xaml*.
 
 1. Ändern Sie `StartupUri="MainWindow.xaml"` zu `StartupUri="Greetings.xaml"`, und speichern Sie dann die Änderungen.
 
@@ -300,7 +300,7 @@ Wenn Sie einige Haltepunkte hinzufügen, können Sie den Code während des Debug
 
 1. Öffnen Sie *Greetings.xaml.cs*, und wählen Sie die folgende Zeile aus: `MessageBox.Show("Hello.")`
 
-1. Fügen Sie einen Haltepunkt hinzu, indem Sie im Menü **Debuggen**und dann **Haltepunkt umschalten**auswählen.
+1. Fügen Sie einen Haltepunkt hinzu, indem Sie im Menü **Debuggen** und dann **Haltepunkt umschalten** auswählen.
 
      Am äußeren linken Rand des Editorfensters wird ein roter Kreis neben der Codezeile angezeigt.
 
