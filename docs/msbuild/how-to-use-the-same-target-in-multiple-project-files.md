@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 5c351b7f676dec678bd4f070a1f8fb9af97c5d28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914122"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Vorgehensweise: Verwenden desselben Ziels in mehreren Projektdateien
 
@@ -42,7 +42,7 @@ Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projekt
 
  Wenn MSBuild ein `Import`-Element erreicht, wird das importierte Projekt effektiv an der Stelle des `Import`-Elements in das importierende Projekt eingefügt. Aus diesem Grund kann der Speicherort des `Import`-Elements Auswirkungen auf die Werte der Eigenschaften und Elemente haben. Die Eigenschaften und Elemente, die durch das importierte Projekt festgelegt wurden, und die Eigenschaften und Elemente, die vom importierten Projekt verwendet werden, müssen bekannt sein.
 
- Wenn das Projekt erstellt wird, werden zunächst alle Eigenschaften ausgewertet, gefolgt von den Elementen. Folgendes XML definiert z.B. die importierte Projektdatei *MyCommon.targets* :
+ Wenn das Projekt erstellt wird, werden zunächst alle Eigenschaften ausgewertet, gefolgt von den Elementen. Folgendes XML definiert z.B. die importierte Projektdatei *MyCommon.targets*:
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -56,7 +56,7 @@ Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projekt
 </Project>
 ```
 
- Folgendes XML definiert *MyApp.proj* , worüber *MyCommon.targets* importiert wird:
+ Folgendes XML definiert *MyApp.proj*, worüber *MyCommon.targets* importiert wird:
 
 ```xml
 <Project
@@ -87,7 +87,7 @@ Das `Import`-Element wird verwendet, um eine Projektdatei in eine andere Projekt
 
 ## <a name="example-1"></a>Beispiel 1
 
- Im folgenden Codebeispiel wird die Datei *MyCommon.targets* dargestellt, die im zweiten Codebeispiel importiert wird. Die *TARGETS* -Datei wertet Eigenschaften des importierten Projekts für die Konfiguration des Builds aus.
+ Im folgenden Codebeispiel wird die Datei *MyCommon.targets* dargestellt, die im zweiten Codebeispiel importiert wird. Die *TARGETS*-Datei wertet Eigenschaften des importierten Projekts für die Konfiguration des Builds aus.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

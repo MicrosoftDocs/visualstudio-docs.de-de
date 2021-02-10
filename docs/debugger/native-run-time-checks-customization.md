@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b5f5aa55ac9d8c13da605a09986569c534a30bf
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 33c3da5387c67e14ced99918273800709b3b67b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913118"
 ---
 # <a name="native-run-time-checks-customization"></a>Anpassen der systemeigenen Laufzeitüberprüfung
 Bei der Kompilierung mit **/RTC** (Run-Time Checks, Laufzeitüberprüfungen) oder mit dem `runtime_checks`-Pragma stellt die C-Laufzeitbibliothek native Laufzeitüberprüfungen zur Verfügung. In einigen Fällen können Sie die Laufzeitüberprüfung anpassen:

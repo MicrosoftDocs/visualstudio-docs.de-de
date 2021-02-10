@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8aeff804-0183-4588-8218-52e107a5382e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f28a0f8bd60ad169715ba72b6fab957e7699a5b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b3e2bda0a6ed746c5e518b046b2165f0aff2e38b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915916"
 ---
 # <a name="zoom-control-utilization-view"></a>Zoomsteuerelement (Auslastungsansicht)
 Mit dem Zoomsteuerelement können Sie das CPU-Auslastungsdiagramm vergrößern, um den Fokus auf Bereiche von besonderem Interesse zu legen. Dieses Steuerelement vergrößert den Mittelpunkt der Ansicht. Daher sollten Sie den gewünschten Bereich zentrieren, bevor Sie vergrößern.

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca5b74b32faba4937a821503af3665d1ec1d72c9
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b67483c82e19c51da776d6ec40066ba5223a238a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912515"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles-Aufgabe
 

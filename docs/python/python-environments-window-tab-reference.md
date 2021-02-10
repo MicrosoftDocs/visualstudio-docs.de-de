@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: d00f8cc05e4a2a2ce1e947207997cc2e46d9d9f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912378"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referenz zu den Registerkarten im Fenster „Python-Umgebungen“
 
@@ -66,7 +66,7 @@ Startskripts enthalten Code, der vom **interaktiven** Fenster automatisch gelade
 
 ## <a name="configure-tab"></a>Registerkarte „Konfigurieren“
 
-Wenn die Registerkarte**Konfigurieren** verfügbar ist, enthält sie die in der folgenden Tabelle beschriebenen Details. Wenn diese Registerkarte nicht vorhanden ist, bedeutet dies, dass alle Details von Visual Studio automatisch verwaltet werden.
+Wenn die Registerkarte **Konfigurieren** verfügbar ist, enthält sie die in der folgenden Tabelle beschriebenen Details. Wenn diese Registerkarte nicht vorhanden ist, bedeutet dies, dass alle Details von Visual Studio automatisch verwaltet werden.
 
 ::: moniker range="vs-2017"
 ![Registerkarte „Konfigurieren“ von Python-Umgebungen](media/environments/environments-configure-tab.png)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 989bcd560c2c5cd9a7d8c571208bfab84adbd493
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6c0beb70379d8b79a3e1826ba74f34202eea19f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914457"
 ---
 # <a name="how-to-clean-a-build"></a>Vorgehensweise: Bereinigen eines Builds
 
@@ -28,7 +28,7 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
 
 ## <a name="create-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente
 
- Standardmäßig wird die beim Kompilieren eines Projekts erstellte *EXE* -Datei im selben Verzeichnis wie das Projekt und die Quelldateien platziert. Die Ausgabeelemente werden jedoch üblicherweise in einem separaten Verzeichnis erstellt.
+ Standardmäßig wird die beim Kompilieren eines Projekts erstellte *EXE*-Datei im selben Verzeichnis wie das Projekt und die Quelldateien platziert. Die Ausgabeelemente werden jedoch üblicherweise in einem separaten Verzeichnis erstellt.
 
 ### <a name="to-create-a-directory-for-output-items"></a>Erstellen eines Verzeichnisses für Ausgabeelemente
 
@@ -57,7 +57,7 @@ Wenn Sie einen Build bereinigen, werden alle Zwischen- und Ausgabedateien gelös
 
  Das folgende Codebeispielprojekt enthält ein neues Ziel, `Clean`, das die `RemoveDir`-Aufgabe verwendet, um ein Verzeichnis und alle enthaltenen Dateien und Verzeichnisse zu löschen. In diesem Beispiel erstellt `Compile` ebenfalls ein separates Verzeichnis für die Ausgabeelemente, die gelöscht werden, wenn der Build bereinigt wird.
 
- `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **-target** , um ein anderes Ziel anzugeben. Beispiel:
+ `Compile` wird als Standardziel definiert und wird darum automatisch verwendet, wenn Sie kein anderes Ziel bzw. keine anderen Ziele angeben. Verwenden Sie den Befehlszeilenschalter **-target**, um ein anderes Ziel anzugeben. Beispiel:
 
  `msbuild <file name>.proj -target:Clean`
 

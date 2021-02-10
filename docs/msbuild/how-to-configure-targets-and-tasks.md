@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31537ea44e5c49a4fd98229a5886ca99a1464409
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 22dcb7a209b8a62aaeb3c036b1013e7ad3d21597
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914437"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Vorgehensweise: Konfigurieren von Zielen und Aufgaben
 
@@ -112,7 +112,7 @@ Im Gegensatz zu anderen Aufgabenparametern sind `MSBuildRuntime` und `MSBuildArc
 Die Parameter `MSBuildRuntime` und `MSBuildArchitecture` bieten die flexibelste Möglichkeit, um den Zielkontext festzulegen, zugleich ist der Umfang aber am stärksten begrenzt. Einerseits können sie ihren Wert aus dem vollen Umfang an Eigenschaften ableiten, die zur Auswertungs- und Buildzeit verfügbar sind, da sie auf der Aufgabeninstanz selbst festgelegt werden und nicht ausgewertet werden, bis die Aufgabe ausgeführt wird. Andererseits gelten diese Parameter nur für eine bestimmte Instanz einer Aufgabe in einem bestimmten Ziel.
 
 > [!NOTE]
-> Aufgabenparameter werden im Kontext des übergeordneten Knotens ausgewertet, nicht im Kontext des Aufgabenhosts. Umgebungsvariablen, die von der Laufzeit oder Architektur abhängen (wie der Speicherort der *Programme* ) ergeben bei der Auswertung den Wert, der dem übergeordneten Knoten entspricht. Wenn dieselbe Umgebungsvariable jedoch direkt von der Aufgabe gelesen wird, wird sie ordnungsgemäß im Kontext des Aufgabenhosts ausgewertet.
+> Aufgabenparameter werden im Kontext des übergeordneten Knotens ausgewertet, nicht im Kontext des Aufgabenhosts. Umgebungsvariablen, die von der Laufzeit oder Architektur abhängen (wie der Speicherort der *Programme*) ergeben bei der Auswertung den Wert, der dem übergeordneten Knoten entspricht. Wenn dieselbe Umgebungsvariable jedoch direkt von der Aufgabe gelesen wird, wird sie ordnungsgemäß im Kontext des Aufgabenhosts ausgewertet.
 
 ## <a name="see-also"></a>Siehe auch
 

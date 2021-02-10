@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 863cd741833082ddfac400d86edeba574b4dcb09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917893"
 ---
 # <a name="lines-view---contention-data"></a>Zeilenansicht: Konfliktdaten
 In der Zeilenansicht der Konfliktdaten werden die Leistungsdaten für die Anweisungen aufgeführt, die ausgeführt wurden, als die Samplings bei der Profilerstellung erfasst wurden. In einer Quelldatei kann eine Anweisung mehrere Zeilen umfassen, und eine einzelne Zeile kann mehr als eine Anweisung enthalten.

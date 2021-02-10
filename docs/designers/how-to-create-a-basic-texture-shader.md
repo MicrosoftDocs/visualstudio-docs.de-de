@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93696dfe9fbf3b8db1d4be137ced6798b3a60aae
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 832d8aac861163c0d1c6b56c340502e32b2f555b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915672"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Vorgehensweise: Erstellen eines Basistexturshaders
 
@@ -31,13 +31,13 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
 
 2. Löschen Sie den Knoten **Punktfarbe**. Wählen Sie im Modus **Auswählen** den Knoten **Farbpunkt** aus, und klicken Sie anschließend in der Menüleiste auf **Bearbeiten** > **Löschen**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.
 
-3. Fügen Sie einen Knoten **Textursample** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Textur** auf **Textursample** , und verschieben Sie es auf die Entwurfsoberfläche.
+3. Fügen Sie einen Knoten **Textursample** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Textur** auf **Textursample**, und verschieben Sie es auf die Entwurfsoberfläche.
 
-4. Fügen Sie einen Knoten **Texturkoordinate** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Textur** auf **Texturkoordinate** , und verschieben Sie es auf die Entwurfsoberfläche.
+4. Fügen Sie einen Knoten **Texturkoordinate** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Textur** auf **Texturkoordinate**, und verschieben Sie es auf die Entwurfsoberfläche.
 
-5. Wählen Sie eine Textur zum Anwenden aus. Klicken sie im Modus **Auswählen** auf den Knoten **Textursample** , und geben Sie im Fenster **Eigenschaften** die zu verwendende Textur an, indem Sie die Eigenschaft **Dateiname** verwenden.
+5. Wählen Sie eine Textur zum Anwenden aus. Klicken sie im Modus **Auswählen** auf den Knoten **Textursample**, und geben Sie im Fenster **Eigenschaften** die zu verwendende Textur an, indem Sie die Eigenschaft **Dateiname** verwenden.
 
-6. Machen Sie die Textur öffentlich verfügbar. Klicken Sie auf den Knoten **Textursample** , und stellen Sie im Fenster **Eigenschaften** die Eigenschaft **Zugriff** auf **Öffentlich**. Sie können nun die Textur von einem anderen Tool wie dem **Modell-Editor** festlegen.
+6. Machen Sie die Textur öffentlich verfügbar. Klicken Sie auf den Knoten **Textursample**, und stellen Sie im Fenster **Eigenschaften** die Eigenschaft **Zugriff** auf **Öffentlich**. Sie können nun die Textur von einem anderen Tool wie dem **Modell-Editor** festlegen.
 
 7. Verbinden Sie die Texturkoordinaten mit dem Textursample. Verschieben Sie im Modus **Auswählen** das Terminal **Ausgabe** des Knotens **Texturkoordinate** auf das Terminal **UV** des Knotens **Textursample**. Diese Verbindung prüft die Textur an den angegebenen Koordinaten.
 

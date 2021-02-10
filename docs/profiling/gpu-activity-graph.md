@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: d7c769af-95fb-49a3-b5ab-deafecee46fa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bccf4869a1197306017b443b00670cc123300a48
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 46f3e4ce7f155679bc3c701af90ff51e0fb20239
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907272"
 ---
 # <a name="gpu-activity-graph"></a>GPU-Aktivitätsdiagramm
 Das GPU-Aktivitätsdiagramm in der Parallelitätsschnellansicht zeigt die Ebene der DirectX-Aktivität auf dem System durch die Anzahl der DirectX-Engines an, die mit der Zeit verwendet werden.  Im Diagramm wird nicht angezeigt, welche bestimmte Engines verwendet wurden.  Eine Engine wird als „verwendet“ betrachtet, wenn sie GPU-Aufgaben verarbeitet.

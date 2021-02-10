@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d9eb6e9-2e47-40f2-bf9c-464caa703dc9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 731036cb59891f9dd9093431200a1152ed35ff2a
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 9beb80eb997a844e7358b13f3fa8911de42af685
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913213"
 ---
 # <a name="how-to-display-process-properties"></a>Vorgehensweise: Anzeigen von Prozesseigenschaften
 Um mehr über einen Prozess zu erfahren, der in der [Prozessansicht](../debugger/processes-view.md) aufgeführt ist, verwenden Sie das Dialogfeld [Prozesseigenschaften](../debugger/process-properties-dialog-box.md).

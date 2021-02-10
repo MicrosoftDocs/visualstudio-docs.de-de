@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7f8a4e39d38f81684b5d090152ec720d45438b3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907465"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen eines Inlinetasks
 
@@ -50,9 +50,9 @@ Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **
 
 1. Erstellen Sie in Visual Studio ein neues Projekt mit der **Windows Forms-Anwendungsvorlage** für C#. Geben Sie im Feld **Name**`InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. *D:\\* . Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** **InlineTasks** lautet.
 
-3. Klicken Sie auf **OK** , um die neue Projektdatei zu erstellen.
+3. Klicken Sie auf **OK**, um die neue Projektdatei zu erstellen.
 
-3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den **InlineTasks** -Projektknoten und anschließend auf **Projekt entladen**.
+3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den **InlineTasks**-Projektknoten und anschließend auf **Projekt entladen**.
 
 4. Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten und anschließend auf **InlineTasks.csproj bearbeiten**.
 
@@ -96,7 +96,7 @@ Verwenden Sie zum Erstellen und Ausführen der Aufgaben Visual Studio und das **
 
 ##### <a name="to-run-the-hello-task"></a>So führen Sie die „Hallo“-Aufgabe aus
 
-1. Klicken Sie auf **Start** > **Programme**. Suchen Sie anschließend den Ordner **Visual Studio-Tools** , und klicken Sie auf **Visual Studio-Eingabeaufforderung**.
+1. Klicken Sie auf **Start** > **Programme**. Suchen Sie anschließend den Ordner **Visual Studio-Tools**, und klicken Sie auf **Visual Studio-Eingabeaufforderung**.
 
 2. Suchen Sie im **Eingabeaufforderungsfenster** nach dem Ordner mit der Projektdatei, in diesem Fall *D:\InlineTasks\InlineTasks\\* .
 

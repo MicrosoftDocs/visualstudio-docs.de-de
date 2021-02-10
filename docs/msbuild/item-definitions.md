@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 754080defd50bc10af501fdbaf509bafe549dcbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913968"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
 
 MSBuild 2.0 aktiviert die statische Deklaration von Elementen in Projektdateien mithilfe des Elements [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Metadaten können jedoch nur auf Elementebene hinzugefügt werden, auch wenn die Metadaten für alle Elemente gleich sind. In MSBuild 3.5 wurde das Projektelement [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) eingeführt, das diese Einschränkung aufhebt. Mit *ItemDefinitionGroup* können Sie einen Satz von Elementdefinitionen festlegen, um allen Elementen im benannten Elementtyp Standardwerte für Metadaten hinzuzufügen.
 
-Das *ItemDefinitionGroup* -Element wird unmittelbar nach dem [Project](../msbuild/project-element-msbuild.md)-Element der Projektdatei angezeigt. Elementdefinitionen bieten die folgenden Funktionen:
+Das *ItemDefinitionGroup*-Element wird unmittelbar nach dem [Project](../msbuild/project-element-msbuild.md)-Element der Projektdatei angezeigt. Elementdefinitionen bieten die folgenden Funktionen:
 
 - Sie können globale Standardmetadaten für Elemente außerhalb eines Ziels definieren. Das heißt, für alle Elemente des angegebenen Typs gelten die gleichen Metadaten.
 
@@ -76,7 +76,7 @@ Die Werte der in ItemDefinitionGroup definierten Metadaten können aus verschied
 
 - Umgebungsvariable
 
-- Globale Eigenschaft (aus der *MSBuild.exe* -Befehlszeile)
+- Globale Eigenschaft (aus der *MSBuild.exe*-Befehlszeile)
 
 - Reservierte Eigenschaft
 

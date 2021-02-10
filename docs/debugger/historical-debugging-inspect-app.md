@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d51327f67429071d08f6dfd02c0ec0a1fc55822f
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 87987beed3750d8eda5d680b561a46b0866473b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398700"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908411"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Untersuchen der App mit verlaufsbezogenem Debuggen (C#, Visual Basic, C++)
 

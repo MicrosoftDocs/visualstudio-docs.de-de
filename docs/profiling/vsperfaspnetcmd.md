@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: f9e9f895-57bb-41e8-8bd1-cdaa738ec220
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b594141d6209c8ede9171df880e7523b81a34775
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 1d886284a130d9c103d2f0d8a6bc24d2ebd69b6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911626"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 Mit dem Befehlszeilentool **VSPerfASPNetCmd.exe** können Sie ein Profil für ASP.NET-Websites erstellen, ohne dass Sie Umgebungsvariablen festlegen und ohne dass Sie Ihren Computer neu starten müssen. Verwenden Sie statt [VSPerfCmd](../profiling/vsperfcmd.md)**VSPerfASPNetCmd.exe**, wenn Sie eine ASP.NET-Website profilen. Dann benötigen Sie nicht die zusätzlichen Funktionen, die **VSPerfCmd** bereitstellt. Weitere Informationen zu **VSPerfASPNETCmd** finden Sie unter [Schnelle Website-Profilerstellung mit VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNETCmd** ist das bevorzugte Befehlszeilentool, wenn mit dem eigenständigen Profiler ein Profil für ASP.NET-Websites erstellt wird.

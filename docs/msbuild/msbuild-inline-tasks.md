@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 4a90a5a251169bc9b41dea5bfddcfa2f8459af28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046333"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919053"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
 
@@ -28,7 +28,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
  In MSBuild 15.8 wurde [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) hinzugefügt, womit plattformübergreifende .NET Standard-Inlineaufgaben erstellt werden können.  Wenn Sie Inlineaufgaben in .NET Core verwenden müssen, müssen Sie RoslynCodeTaskFactory verwenden.
 ## <a name="the-structure-of-an-inline-task"></a>Struktur von Inlineaufgaben
 
- Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elementen enthalten. Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS* -Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
+ Inlineaufgaben sind in [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elementen enthalten. Die Inlineaufgabe und das `UsingTask`-Element, in dem sie enthalten ist, befinden sich in der Regel in einer *TARGETS*-Datei und werden bei Bedarf in andere Projektdateien importiert. Im Folgenden finden Sie eine einfache Inlineaufgabe. Beachten Sie, dass mit dieser Aufgabe keine Aktionen ausgeführt werden.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

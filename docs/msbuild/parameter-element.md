@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7aa8809cbce8f07e18666afb1734026fdc9694b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 728618a6d9ff174d4d4bf7cdc20516433d06036b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918862"
 ---
 # <a name="parameter-element"></a>Parameter-Element
 
@@ -48,7 +48,7 @@ Enthält Informationen über einen bestimmten Parameter für eine Aufgabe, die v
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`ParameterType`|Optionales Attribut.<br /><br /> Der .NET-Typ des Parameters, z.B. „`System.String`“.|
 |`Output`|Optionales boolesches Attribut.<br /><br /> Wenn `true`, ist dieser Parameter ein Ausgabeparameter für die Aufgabe. In der Standardeinstellung ist der Wert `false`.|

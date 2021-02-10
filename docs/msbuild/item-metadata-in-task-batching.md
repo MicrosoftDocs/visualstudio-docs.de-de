@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d67f740857dc93b997e206c43dd52d9887f3e9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913889"
 ---
 # <a name="item-metadata-in-task-batching"></a>Elementmetadaten bei der Batchverarbeitung von Aufgaben
 
@@ -85,7 +85,7 @@ Die [Message Task](../msbuild/message-task.md) zeigt die folgenden Informationen
 
 ## <a name="divide-several-item-lists-into-batches"></a>Unterteilen mehrerer Elementlisten in Batches
 
-MSBuild kann mehrere Elementlisten anhand derselben Metadaten in Batches unterteilen. Dadurch können verschiedene Elementlisten einfacher in Batches unterteilt werden, um mehrere Assemblys zu erstellen. Beispielsweise kann eine Elementliste mit *CS* -Dateien, die in ein Anwendungs- und ein Assemblybatch unterteilt sind, sowie eine Elementliste mit Ressourcendateien, die in ein Anwendungs- und ein Assemblybatch unterteilt sind, vorhanden sein. In diesem Fall können Sie die Batchverarbeitung nutzen, um diese Elementlisten an eine Aufgabe zu übergeben und sowohl die Anwendung als auch die Assembly zu erstellen.
+MSBuild kann mehrere Elementlisten anhand derselben Metadaten in Batches unterteilen. Dadurch können verschiedene Elementlisten einfacher in Batches unterteilt werden, um mehrere Assemblys zu erstellen. Beispielsweise kann eine Elementliste mit *CS*-Dateien, die in ein Anwendungs- und ein Assemblybatch unterteilt sind, sowie eine Elementliste mit Ressourcendateien, die in ein Anwendungs- und ein Assemblybatch unterteilt sind, vorhanden sein. In diesem Fall können Sie die Batchverarbeitung nutzen, um diese Elementlisten an eine Aufgabe zu übergeben und sowohl die Anwendung als auch die Assembly zu erstellen.
 
 > [!NOTE]
 > Wenn eine Elementliste, die an eine Aufgabe übergeben wird, keine Elemente mit dem Metadatenelement enthält, auf das verwiesen wird, werden sämtliche Elemente in dieser Elementliste an jeden Batch übergeben.

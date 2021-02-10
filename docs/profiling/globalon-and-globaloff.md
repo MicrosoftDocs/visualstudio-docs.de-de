@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: c940cc06142fc69460ed1e4a32303a6e3f919164
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907287"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn und GlobalOff
 Die *VSPerfCmd.exe-Optionen* **GlobalOff** und **GlobalOn** halten die Profilerstellung für alle Prozesse und Threads in einer Profilerstellungssitzung über die Befehlszeile an bzw. setzen sie fort.

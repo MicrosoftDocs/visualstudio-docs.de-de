@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c91a016d91addc4f9e4b06acb32614bd6f6a162
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f3b6d98e715d0c86af6948f2fcc502e94dfde56a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910828"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Dialogfeld „Optionen“: Projekte und Projektmappen \> Erstellen und Ausführen
 
-In diesem Dialogfeld können Sie die maximale Anzahl von C++- oder C#-Projekten, die gleichzeitig erstellt werden können, bestimmte standardmäßige Buildverhaltensweisen und einige Buildprotokolleinstellungen angeben. Klicken Sie zum Zugriff auf diese Optionen auf **Extras** > **Optionen** , erweitern Sie **Projekte und Projektmappen** , und klicken Sie auf **Erstellen und Ausführen** .
+In diesem Dialogfeld können Sie die maximale Anzahl von C++- oder C#-Projekten, die gleichzeitig erstellt werden können, bestimmte standardmäßige Buildverhaltensweisen und einige Buildprotokolleinstellungen angeben. Klicken Sie zum Zugriff auf diese Optionen auf **Extras** > **Optionen**, erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Erstellen und Ausführen**.
 
 **Maximale Anzahl paralleler Projektbuilds**
 

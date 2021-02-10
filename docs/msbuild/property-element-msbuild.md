@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 617a6d3712b137d76334d4063f36a1b8dde1d101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918851"
 ---
 # <a name="property-element-msbuild"></a>Property-Element (MSBuild)
 
@@ -45,7 +45,7 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jede Eigenschaf
 
 ### <a name="attributes"></a>Attribute
 
-|attribute|Beschreibung|
+|Attribut|Beschreibung|
 |---------------|-----------------|
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen).|
 

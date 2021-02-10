@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 8add274d74d9d8d7d72f2808a2b0100c66a19717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912200"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Anzeigen von DLLs und ausführbaren Dateien im Fenster „Module“ (C#, C++, Visual Basic, F#)
 

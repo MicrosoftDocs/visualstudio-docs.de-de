@@ -10,16 +10,16 @@ f1_keywords:
 ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ae9e1af2cd68b3d3d2ff829fca1dbcab8d7098b4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 5770c02efacd70b681e32ad029c813babd21bfc3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916785"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Äußerst hohes Maß an Paging von aktivem Speicher auf den Datenträger
 

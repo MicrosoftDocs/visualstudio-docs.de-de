@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ebeb885d427cf6a9a6ca80d4d0ad572b23d7f685
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917792"
 ---
 # <a name="manage-channels"></a>Verwalten von Kanälen
 In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kanäle für den Prozess so organisieren, dass Sie bestimmte Muster untersuchen können. Sie können Kanäle sortieren, sie nach oben und unten verschieben oder sie ausblenden und wieder einblenden.
