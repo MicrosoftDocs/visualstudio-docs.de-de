@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952095"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unterschiedlichen Konfigurationen. Zu den wichtigsten zusammengesetzten Mustern in Visual Studio in Bezug auf die Konsistenz gehören:
@@ -70,7 +70,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 ### <a name="other-charting-considerations"></a>Weitere Überlegungen zu Diagramm
 
-#### <a name="color"></a>Farbe
+#### <a name="color"></a>Color
  Es gibt eine bestimmte Palette von Diagramm Farben, die für die Verwendung in Visual Studio definiert sind. Die Palette ist für die Haupttypen der Farbblindheit zugänglich, und die Farben können auch dann unterschieden werden, wenn Sie als sehr schmale Farb Scheiben verwendet werden. Sie können diese Farben in beliebiger Kombination für beliebige Diagramm-oder Diagrammtypen in der Benutzeroberfläche verwenden. Sie müssen nicht alle sieben Farben verwenden, wenn Sie nicht die vielen unterschiedlichen Farben benötigen. Diese Farben wurden nicht für die Verwendung mit beliebigen Vordergrund Elementen entworfen. Platzieren Sie Text oder Symbole nicht oberhalb dieser Farben. Diese Farbtöne sollten hart codiert und für die Benutzeranpassung unter Extras **> Optionen** verfügbar gemacht werden (siehe verfügbar machen [von Farben für Endbenutzer](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Muster|Hex|RGB|
@@ -163,7 +163,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
     - Durable
 
-    - Automatic
+    - Automatische
 
     - Bei Bedarf
 
@@ -274,7 +274,7 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 - Region
 
-#### <a name="scope"></a>`Scope`
+#### <a name="scope"></a>Bereich
  Die wichtigste Komponente der Auswahl ist die Sicherstellung, dass der Benutzer weiß, in welchem Fenster Sie arbeiten (Aktivierung) und wo sich der Fokus befindet (Auswahl). Visual Studio erweitert die Fenster Verwaltungsfunktionen in Windows, das Aktivierungs Schema ist jedoch identisch: bei der Interaktion mit einem Fenster wird der Fokus auf das Fenster erweitert. Visual Studio verfügt über zwei Indikatoren für die Aktivierung: einen für Dokument Fenster und einen für Tool Fenster.
 
  Für Dokument Fenster wird das aktive Fenster durch eine Registerkarte des Dokument Fensters angezeigt, die sich im Vordergrund befindet und seine Hintergrundfarbe ändert:
@@ -439,9 +439,9 @@ Zusammengesetzte Muster kombinieren Interaktions-und Entwurfs Elemente in unters
 
 | Object | Auswahl |
 |--------|------------|
-| Liste | Zusammenhängenden |
-| Liste | Zusammenhang losen |
-| Liste | Region |
+| List | Zusammenhängenden |
+| List | Zusammenhang losen |
+| List | Region |
 
  Wenn Sie in einer Liste auf einmal klicken, wird die Zeile mit dem Klick angezeigt. Wenn der Benutzer auf eine Listen Zelle klickt, die eine direkte Bearbeitung unterstützt, wird die Zelle auch sofort für die direkte Bearbeitung aktiviert. Andernfalls wird die gesamte Zeile sofort ausgewählt und eine Hervorhebung angezeigt.
 

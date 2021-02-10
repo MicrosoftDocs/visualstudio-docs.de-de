@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd50f81a75ce3ca189c47db12f1f4024b244856
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953707"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 Testet, ob dieses Objekt ein NULL-Verweis ist.
@@ -28,7 +28,7 @@ Testet, ob dieses Objekt ein NULL-Verweis ist.
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-HRESULT IsNullReference( 
+HRESULT IsNullReference( 
    BOOL* pfIsNull
 );
 ```

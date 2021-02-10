@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 74d57ae4beca074fbf7711ea3d732d903d8faa4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952680"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projekt Elementtyps
   Mithilfe des Projekt Elements **Business Data Connectivity-Modell** können Sie ein Modell für den Business Data Connectivity (BDC)-Dienst in SharePoint erstellen. Wenn Sie mit diesem Projektelement ein Modell erstellen, werden die Daten Benutzern im Modell standardmäßig nicht angezeigt. Sie müssen zusätlzlich eine externe Liste in SharePoint erstellen, damit Benutzer die Daten einsehen können.
@@ -180,7 +180,7 @@ ms.locfileid: "95970405"
     > [!NOTE]
     > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
+7. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 8. Wählen Sie in der Liste **Projekt** die **Option BdcProjectItemExtension** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -233,7 +233,7 @@ ms.locfileid: "95970405"
 
 12. Wählen Sie in der beendeten Instanz von Visual Studio die **F5** -Taste, oder klicken Sie in der Menüleiste auf **Debuggen**  >  **fortsetzen** , um das Debuggen des Projekts fortzusetzen.
 
-13. Wählen Sie in der experimentellen Instanz von Visual Studio die **F5** -Taste, oder wählen Sie in der Menüleiste **Debug**  >  **Debuggen Debuggen starten** aus, um das Projekt **TestBDCModel** zu erstellen, bereitzustellen und auszuführen.
+13. Wählen Sie in der experimentellen Instanz von Visual Studio die **F5** -Taste, oder wählen Sie in der Menüleiste   >  **Debuggen Debuggen starten** aus, um das Projekt **TestBDCModel** zu erstellen, bereitzustellen und auszuführen.
 
      Im Webbrowser wird die Standardseite der für das Debugging angegebenen SharePoint-Website geöffnet.
 
@@ -247,7 +247,7 @@ ms.locfileid: "95970405"
 
 18. Die experimentelle Instanz von Visual Studio fügt dem Projekt "TestBDCModel" eine Listen Instanz mit dem Namen **Entity1DataList** hinzu, und die Instanz generiert außerdem eine Funktion mit dem Namen **Feature2** für die Listen Instanz.
 
-19. Drücken Sie die Taste **F5** , oder wählen Sie in der Menüleiste **Debug**  >  **Debuggen Debuggen starten** aus, um das Projekt TestBDCModel zu erstellen, bereitzustellen und auszuführen.
+19. Drücken Sie die Taste **F5** , oder wählen Sie in der Menüleiste   >  **Debuggen Debuggen starten** aus, um das Projekt TestBDCModel zu erstellen, bereitzustellen und auszuführen.
 
      Im Webbrowser wird die Standardseite der SharePoint-Website geöffnet, die zum Debugging verwendet wird.
 
@@ -282,7 +282,7 @@ ms.locfileid: "95970405"
 
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>So entfernen Sie die Projektelementerweiterung aus Visual Studio
 
-1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
+1. Wählen Sie in der experimentellen Instanz von Visual Studio auf der Menüleiste Extras   >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952589"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Exemplarische Vorgehensweise: Importieren eines wiederverwendbaren Workflows in SharePoint Designer
 
@@ -184,13 +184,13 @@ ms.locfileid: "95970184"
 
 8. Löschen Sie in **Projektmappen-Explorer** den Ordner **importierte Dateien** .
 
-9. Löschen Sie *Elements.xml* in der DateiElements.xml`InstantiationURL="_layouts/IniErkflIP.sspx"` .
+9. Löschen Sie  in der DateiElements.xml`InstantiationURL="_layouts/IniErkflIP.sspx"` .
 
-10. Wählen **Solution Explorer** Sie in Projektmappen-Explorer **WorkflowImportProject1** aus, und wählen Sie dann in der Menüleiste **Projekt**  >  **als Startprojekt festlegen** aus, um **WorkflowImportProject1** als Start Element festzulegen.
+10. Wählen Sie in Projektmappen-Explorer **WorkflowImportProject1** aus, und wählen Sie dann in der Menüleiste **Projekt**  >  **als Startprojekt festlegen** aus, um **WorkflowImportProject1** als Start Element festzulegen.
 
      Dadurch wird die Liste sofort angezeigt, wenn Sie das Projekt Debuggen.
 
-11. Da durch die wieder **verwendbare SharePoint 2010-Workflow Vorlage importieren** nicht die Zuordnungs Eigenschaftswerte für den importierten Workflow importiert werden, müssen Sie diese eingeben. Gehen Sie dazu wie folgt vor:
+11. Da durch die wieder **verwendbare SharePoint 2010-Workflow Vorlage importieren** nicht die Zuordnungs Eigenschaftswerte für den importierten Workflow importiert werden, müssen Sie diese eingeben. Gehen Sie dazu folgendermaßen vor:
 
     1. Wählen Sie in **Projektmappen-Explorer** den Knoten **SPD_Workflow_TestFT** aus.
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 384d71d6f88e8cd792585bb097594fa7b1e38c64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953746"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Stellt die Gründe dar, warum " **Bearbeiten und Fortfahren** " nicht verfügbar ist.
@@ -28,7 +28,7 @@ ms.locfileid: "80737170"
 ## <a name="syntax"></a>Syntax
 
 ```cpp
-enum tagEncUnavailableReason {
+enum tagEncUnavailableReason {
     ENCUN_NONE,
     ENCUN_INTEROP,
     ENCUN_SQLCLR,
@@ -37,11 +37,11 @@ enum tagEncUnavailableReason {
     ENCUN_ATTACH,
     ENCUN_WIN64
 };
-typedef enum tagEncUnavailableReason EncUnavailableReason;
+typedef enum tagEncUnavailableReason EncUnavailableReason;
 ```
 
 ```csharp
-public enum EncUnavailableReason {
+public enum EncUnavailableReason {
     ENCUN_NONE,
     ENCUN_INTEROP,
     ENCUN_SQLCLR,

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 16a4178231c575f590a13b8205cd872668f46143
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951939"
 ---
 # <a name="layout-for-visual-studio"></a>Layout für Visual Studio
 Die Mehrzahl der Visual Studio-Dialogfelder sind das [Layout des Hilfsprogramm-Dialog](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)Felds, bei dem es sich um die Dialogfelder mit dem standardmäßigen [Windows-Desktop-Dialog](/windows/desktop/uxguide/win-dialog-box) Wenn Visual Studio zum Aktualisieren seiner Benutzeroberfläche wechselt, haben einige der spezifischere Dialoge einen neuen Entwurf, der Sie als Produkt definierende Oberfläche festlegt. Diese Design [Dialogfelder](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) haben eine Design Darstellung.

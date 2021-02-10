@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952667"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Exemplarische Vorgehensweise: Erweitern von Server-Explorer zum Anzeigen von Webparts
   In Visual Studio können Sie den Knoten **SharePoint-Verbindungen** von **Server-Explorer** verwenden, um Komponenten auf SharePoint-Sites anzuzeigen. Allerdings werden in **Server-Explorer** standardmäßig einige Komponenten nicht angezeigt. In dieser exemplarischen Vorgehensweise erweitern Sie **Server-Explorer** , sodass der Webpartkatalog auf jeder verbundenen SharePoint-Website angezeigt wird.
@@ -295,7 +295,7 @@ ms.locfileid: "95970211"
     > [!NOTE]
     > Dieser Wert entspricht dem `MefComponent`-Element in der Datei "extension.vsixmanifest". Von diesem Element wird der Name einer Erweiterungsassembly im VSIX-Paket angegeben. Weitere Informationen finden Sie unter [MEFComponent-Element (VSX-Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7. Wählen Sie **Source** in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
+7. Wählen Sie  in der Liste Quelle **ein Projekt in der aktuellen Projekt** Mappe aus.
 
 8. Wählen Sie in der Liste **Projekt** die Option **WebPartNodeExtension** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
@@ -312,7 +312,7 @@ ms.locfileid: "95970211"
 
 12. Wählen Sie in der Liste **Projekt** die Option **webpartcommands** aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-13. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  **Build Solution** dass die Projekt Mappe ohne Fehler kompiliert wird.
+13. Wählen Sie in der Menüleiste Buildprojektmappe **Erstellen** aus, und vergewissern Sie sich,  >  dass die Projekt Mappe ohne Fehler kompiliert wird.
 
 14. Stellen Sie sicher, dass der Buildausgabeordner für das WebPartNode-Projekt jetzt die Datei WebPartNode. vsix enthält.
 
@@ -333,7 +333,7 @@ ms.locfileid: "95970211"
 
 #### <a name="to-test-the-extension"></a>So testen Sie die Erweiterung
 
-1. Wählen Sie in der experimentellen Instanz von in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] der Menüleiste Server-Explorer **anzeigen** aus  >  **Server Explorer**.
+1. Wählen Sie in der experimentellen Instanz von in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] der Menüleiste Server-Explorer **anzeigen** aus  >  .
 
 2. Führen Sie die folgenden Schritte aus, wenn die SharePoint-Website, die Sie zum Testen verwenden möchten, nicht unter dem Knoten **SharePoint-Verbindungen** in **Server-Explorer** angezeigt wird:
 
@@ -362,7 +362,7 @@ ms.locfileid: "95970211"
 
 #### <a name="to-uninstall-the-extension"></a>So deinstallieren Sie die Erweiterung
 
-1. Wählen Sie in der experimentellen Instanz von in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] der Menüleiste Extras **Tools**  >  **Erweiterungen und Updates** aus.
+1. Wählen Sie in der experimentellen Instanz von in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] der Menüleiste Extras   >  **Erweiterungen und Updates** aus.
 
      Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.
 

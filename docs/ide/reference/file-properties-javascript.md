@@ -25,21 +25,21 @@ f1_keywords:
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: c54ce24025f9ec15bc03d02825e961f9a03f3715
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952953"
 ---
 # <a name="file-properties-javascript"></a>Dateieigenschaften, JavaScript
 
 Sie können Dateieigenschaften verwenden, um anzugeben, welche Aktionen das Projektsystem für die Dateien ausführen soll. Sie können Dateieigenschaften z.B. festlegen, um anzugeben, ob eine Datei als Ressourcendatei zum Paket hinzugefügt werden soll.
 
-Sie können eine beliebige Datei im Projektmappen-Explorer auswählen und deren Eigenschaften im Eigenschaftenfenster überprüfen. JavaScript-Dateien haben vier Eigenschaften: **In Ausgabeverzeichnis kopieren** , **Package Action** , **Dateiname** und **Dateipfad** .
+Sie können eine beliebige Datei im Projektmappen-Explorer auswählen und deren Eigenschaften im Eigenschaftenfenster überprüfen. JavaScript-Dateien haben vier Eigenschaften: **In Ausgabeverzeichnis kopieren**, **Package Action**, **Dateiname** und **Dateipfad**.
 
 ## <a name="file-properties"></a>Dateieigenschaften
 Dieser Abschnitt beschreibt die Eigenschaften, die JavaScript-Dateien gemeinsam haben.
@@ -50,13 +50,13 @@ Diese Eigenschaft gibt die Bedingungen an, unter denen die ausgewählte Quelldat
 ### <a name="package-action"></a>Paketaktion
 Die Eigenschaft **Paketaktion** gibt an, welche Aktionen Visual Studio für eine Datei durchführt, wenn ein Build ausgeführt wird. **Paketaktion** kann einen der folgenden Werte haben:
 
-- **Keine** : Die Datei ist nicht im Paketmanifest enthalten. Ein Beispiel ist eine Textdatei, die Dokumentation enthält, z.B. eine Readme-Datei.
+- **Keine**: Die Datei ist nicht im Paketmanifest enthalten. Ein Beispiel ist eine Textdatei, die Dokumentation enthält, z.B. eine Readme-Datei.
 
-- **Inhalt** : Die Datei ist im Paketmanifest enthalten. Dies ist z.B. der Standardwert für eine HTM-, JS, CSS, Image, Audio- oder Video-Datei.
+- **Inhalt**: Die Datei ist im Paketmanifest enthalten. Dies ist z.B. der Standardwert für eine HTM-, JS, CSS, Image, Audio- oder Video-Datei.
 
-- **Manifest** : Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird die Datei für die Eingabe verwendet, während das Paketmanifest generiert wird. Dies ist der Standardwert für die Datei „package.appxmanifest“.
+- **Manifest**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird die Datei für die Eingabe verwendet, während das Paketmanifest generiert wird. Dies ist der Standardwert für die Datei „package.appxmanifest“.
 
-- **Ressource** : Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird der Inhalt der Datei in der Indexdatei der Paketressource (Package Resource Index, PRI) indiziert, die in das Paketmanifest aufgenommen wird. Sie wird normalerweise für Ressourcendateien verwendet.
+- **Ressource**: Die Datei ist nicht im Paketmanifest enthalten. Stattdessen wird der Inhalt der Datei in der Indexdatei der Paketressource (Package Resource Index, PRI) indiziert, die in das Paketmanifest aufgenommen wird. Sie wird normalerweise für Ressourcendateien verwendet.
 
 Der Standardwert für **Paketaktion** richtet sich nach der Erweiterung der Datei, die Sie der Projektmappe hinzufügen.
 

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952186"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Allgemeine Steuerelemente
@@ -304,7 +304,7 @@ Einige Schaltflächen sollten immer ein grafisches Bild verwenden und nie Text e
 | Funktion | Schaltfläche |
 | --- | --- |
 | Hinzufügen | ![Grafische Schaltfläche "Hinzufügen"](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| Entfernen | ![Grafische Schaltfläche "Entfernen"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| Remove (Entfernen) | ![Grafische Schaltfläche "Entfernen"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
 | Alle hinzufügen | ![Grafische Schaltfläche "Alles hinzufügen"](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
 | Alle entfernen | ![Grafische Schaltfläche "Alle entfernen"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Nach oben | ![Grafische Schaltfläche "Nach oben"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
@@ -316,7 +316,7 @@ Die Größenanpassung für grafische Schaltflächen ist identisch mit der Kurzve
 
 ![Darstellung eines grafischen Bilds auf der Schaltfläche mit und ohne transparente Farbe](../../extensibility/ux-guidelines/media/070703-15_graphicalbuttonspacing.png "070703-15_GraphicalButtonSpacing")<br />Darstellung eines grafischen Bilds auf der Schaltfläche mit und ohne transparente Farbe
 
-### <a name="hyperlinks"></a>Hyperlinks
+### <a name="hyperlinks"></a>Links
 Hyperlinks eignen sich gut für Navigations basierte Aktionen wie das Öffnen eines Hilfe Themas, modalen Dialog Felds oder Assistenten. Wenn ein Hyperlink für einen Befehl verwendet wird, sollte immer eine sichtbare und spürbare Änderung der Benutzeroberfläche angezeigt werden. Im Allgemeinen werden Aktionen, die für eine Aktion (z. b. speichern, Abbrechen und löschen) ausgeführt werden, besser über eine Schaltfläche kommuniziert.
 
 #### <a name="writing-style"></a>Schreibstil

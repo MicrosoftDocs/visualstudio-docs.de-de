@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f6f20074b3609bce8e661baed5fded1d0d367c53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952017"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Auswertungstools für Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Handwerkliche Prüfliste für Visual Studio
@@ -41,7 +41,7 @@ ms.locfileid: "97863456"
 
 - Stellen Sie sicher, dass alle Bezeichnungen Satz-oder titelfall sind und dass kein Text vollständig klein geschrieben ist.
 
-    ||Richtig.|Falsch|
+    ||Richtig|Falsch|
     |-|-------------|---------------|
     |**Befehls Text (alle)**|Satzfall:<br /><br /> **Verzeichnisname:**|Verzeichnis Name:|
     |**Schaltflächen Text (Client)**|Titelfall:<br /><br /> **[Als Standard festlegen]**|als Standard festlegen|
@@ -165,7 +165,7 @@ ms.locfileid: "97863456"
 
 - Vergewissern Sie sich, dass Schaltflächen, Befehle und Befehls Verknüpfungen, die eine sekundäre Benutzeroberfläche starten, mit der mehr Benutzereingaben erfasst werden, mit Auslassungs Zeichen **[...]** enden müssen
 
-#### <a name="hyperlinks"></a>Hyperlinks
+#### <a name="hyperlinks"></a>Links
 
 - Stellen Sie sicher, dass ein Hyperlink-Steuerelement nicht rot blinkt Dies ist ein Indikator, dass der Color-Dienst nicht verwendet wird.
 
