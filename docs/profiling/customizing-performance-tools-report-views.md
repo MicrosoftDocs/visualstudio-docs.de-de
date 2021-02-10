@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 57a3dddbefcf0b5a0220da282674fa781f102030
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 1be2c43d876124945cce6cb9e3ae9605b8127394
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941085"
 ---
 # <a name="customize-performance-tools-report-views"></a>Anpassen von Berichtsansichten von Leistungstools
 In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools generiert werden.

@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 7aabfa91f7f6c6204919c4a06d2d3080b5174c5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942580"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung mit der Django-App
 

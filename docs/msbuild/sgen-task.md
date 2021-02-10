@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de2437306dba50a1f93b0b94d86af6351b17c0b6
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 476255e92326b7e9dae950512a5d27871ede2cc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937848"
 ---
 # <a name="sgen-task"></a>SGen-Aufgabe
 
-Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool ( *Sgen.exe* ). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool (*Sgen.exe*). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 ## <a name="parameters"></a>Parameter
 
@@ -49,7 +49,7 @@ Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly
 | `SerializationAssemblyName` | Optionaler `String`-Parameter.<br /><br /> Gibt den Namen der generierten Serialisierungsassembly an. |
 | `ShouldGenerateSerializer` | Erforderlicher `Boolean` -Parameter.<br /><br /> Wenn `true`, sollte die SGen-Aufgabe eine Serialisierungsassembly generieren. |
 | `Timeout` | Optionaler `Int32`-Parameter.<br /><br /> Gibt die Zeitdauer in Millisekunden an, nach der die ausführbare Datei der Aufgabe beendet wird. Der Standardwert ist `Int.MaxValue`. Dieser gibt an, dass es kein Zeitlimit gibt. |
-| `ToolPath` | Optionaler `String`-Parameter.<br /><br /> Legt den Speicherort fest, von wo aus die Aufgabe die zugrunde liegende ausführbare Datei ( *sgen.exe* ) lädt. Wenn dieser Parameter nicht angegeben ist, verwendet die Aufgabe den SDK-Installationspfad der Version des Frameworks, die von MSBuild ausgeführt wird. |
+| `ToolPath` | Optionaler `String`-Parameter.<br /><br /> Legt den Speicherort fest, von wo aus die Aufgabe die zugrunde liegende ausführbare Datei (*sgen.exe*) lädt. Wenn dieser Parameter nicht angegeben ist, verwendet die Aufgabe den SDK-Installationspfad der Version des Frameworks, die von MSBuild ausgeführt wird. |
 | `Types` | Optionaler `String[]`-Parameter.<br /><br /> Ruft eine Liste der spezifischen Typen ab, für die Serialisierungscode generiert werden soll, oder legt sie fest. SGen generiert nur für diese Typen Serialisierungscode. |
 | `UseProxyTypes` | Erforderlicher `Boolean` -Parameter.<br /><br /> Wenn `true`, generiert die SGen-Aufgabe Serialisierungscode ausschließlich für die Proxytypen des XML-Webdiensts. |
 

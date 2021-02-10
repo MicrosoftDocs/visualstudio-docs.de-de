@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945161"
 ---
 # <a name="python-item-templates"></a>Python-Elementvorlagen
 
@@ -43,7 +43,7 @@ Die folgende Tabelle erklärt kurz die Auswirkung jeder Elementvorlage in einem 
 | **Unterstützungsdateien für Workerrollen** | Ein *bin*-Ordner im Projektstammverzeichnis (unabhängig vom ausgewählten Ordner im Projekt). Der Ordner enthält ein Standardbereitstellungs- und Startskript sowie eine *web.config*-Datei für Workerrollen in Azure-Clouddiensten. Die Vorlage enthält auch eine *readme.html*-Datei, die die Details erläutert. |
 | **„web.config“ für Azure (FastCGI)** | *web.config*-Datei, die Einträge für Apps enthält, die mit einem [WSGI](https://wsgi.readthedocs.io/en/latest/)-Objekt eingehende Verbindungen verarbeiten. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird. Weitere Informationen finden Sie unter [Konfigurieren von Apps für IIS](configure-web-apps-for-iis-windows.md). |
 | **„web.config“ für Azure (HttpPlatformHandler)** | *web.config*-Datei, die Einträge für die Apps enthält, die an einem Socket für eingehende Verbindungen lauschen. Diese Datei wird in der Regel in das Stammverzeichnis eines Webservers bereitgestellt, auf dem IIS ausgeführt wird, z.B. Azure App Service. Weitere Informationen finden Sie unter [Konfigurieren von Apps für IIS](configure-web-apps-for-iis-windows.md). |
-| **„web.config“ für statische Azure-Dateien** | -*web.config*Datei, die in der Regel einem *static*-Ordner (oder einem anderen Ordner, der statische Elemente enthält) hinzugefügt wird, um die Python-Verarbeitung für diesen Ordner zu deaktivieren. Diese Konfigurationsdatei funktioniert in Verbindung mit einer der oben genannten FastCGI- oder HttpPlatformHandler-Konfigurationsdateien. Weitere Informationen finden Sie unter [Konfigurieren von Apps für IIS](configure-web-apps-for-iis-windows.md). |
+| **„web.config“ für statische Azure-Dateien** | -*web.config* Datei, die in der Regel einem *static*-Ordner (oder einem anderen Ordner, der statische Elemente enthält) hinzugefügt wird, um die Python-Verarbeitung für diesen Ordner zu deaktivieren. Diese Konfigurationsdatei funktioniert in Verbindung mit einer der oben genannten FastCGI- oder HttpPlatformHandler-Konfigurationsdateien. Weitere Informationen finden Sie unter [Konfigurieren von Apps für IIS](configure-web-apps-for-iis-windows.md). |
 | **„web.config“ für das Remotedebuggen in Azure** | Veraltet (wurde für das Remotedebuggen unter Azure App Service für Windows verwendet, das nicht mehr unterstützt wird). |
 
 ## <a name="see-also"></a>Weitere Informationen

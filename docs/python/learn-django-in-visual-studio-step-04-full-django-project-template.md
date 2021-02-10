@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3c0a0f0f4e009d689a69e840b31281e65bc5a0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62961684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942554"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Django-Webprojekt“
 

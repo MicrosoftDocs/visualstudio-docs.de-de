@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d91e587f354efe14db7cd669fa89a0f4658a538
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90097306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942593"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -38,7 +38,7 @@ Eine Django-App ist ein separates Python-Paket, das einen Satz von zugehörigen 
 
 Eine Django-App beginnt normalerweise mit einen Standardsatz von Dateien. Visual Studio bietet Elementvorlagen, um eine Django-App in einem Django-Projekt zusammen mit einem integrierten Menübefehl zu initialisieren, der demselben Zweck dient:
 
-- Vorlagen: Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Hinzufügen** > **Neues Element** aus. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Vorlage**Django 1.9-App** aus, geben Sie den Namen der App im Feld **Name** an, und wählen Sie **OK** aus.
+- Vorlagen: Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Hinzufügen** > **Neues Element** aus. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Vorlage **Django 1.9-App** aus, geben Sie den Namen der App im Feld **Name** an, und wählen Sie **OK** aus.
 
 - Integrierter Befehl: Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Hinzufügen** > **Django-App** aus. Dieser Befehl fordert Sie auf, einen Namen einzugeben, und erstellt eine Django 1.9-App.
 

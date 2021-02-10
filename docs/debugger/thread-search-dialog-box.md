@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: afcbbcb1990f27a09ec74814b67dbdd77bc28ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940617"
 ---
 # <a name="thread-search-dialog-box"></a>Dialogfeld "Threadsuche"
 Verwenden Sie dieses Dialogfeld, um den Knoten für einen bestimmten Thread in der [Threadansicht](../debugger/threads-view.md) zu suchen und auszuwählen. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein **Threadansichtsfenster**. Wählen Sie im Menü **Suchen** die Option **Thread suchen** aus.
