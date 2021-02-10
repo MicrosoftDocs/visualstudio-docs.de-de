@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, advanced packaging tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 03980eea9d16cde2b6f079e0b33973958fed7a7f
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c79c3d19dbd4b72bab9facdd81542fdc0620e1a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965862"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Gewusst wie: Hinzufügen eines Projekt Ausgabe Verweises
   Wenn Sie nicht-SharePoint-projekterassemblys (oder XAP-Dateien in Silverlight-Projekten) in SharePoint bereitstellen möchten, fügen Sie Sie als Projekt Ausgabe Verweis hinzu.
@@ -42,7 +42,7 @@ ms.locfileid: "94849869"
 
 6. Wählen Sie den Pfeil neben **Projekt Name** aus, wählen Sie den Namen des nicht-SharePoint-Projekt Elements aus, und klicken Sie dann auf die Schaltfläche **OK** .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [Gewusst wie: Markieren von Steuerelementen als sichere Steuerelemente](../sharepoint/how-to-mark-controls-as-safe-controls.md)
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

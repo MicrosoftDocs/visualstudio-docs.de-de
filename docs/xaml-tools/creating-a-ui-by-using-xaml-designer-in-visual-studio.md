@@ -14,13 +14,13 @@ ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: 132a5aef33b501ad17a2a089684cfe927321b2e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966486"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer
 
@@ -109,7 +109,7 @@ Deaktiviert den [Projektcode](debugging-or-disabling-project-code-in-xaml-design
 
 ### <a name="xaml-view"></a>XAML-Ansicht
 
-In der **XAML** -Ansicht ist das Fenster mit dem XAML-Editor das aktive Fenster, und der XAML-Editor ist Ihr primäres Entwicklungstool. Die Extensible Application Markup Language (XAML) stellt ein deklaratives, auf XML basierendes Vokabular bereit, mit dem die Benutzeroberfläche einer Anwendung festgelegt werden kann. Die XAML-Ansicht enthält IntelliSense und automatische Formatierung, Syntaxhervorhebung und Tagnavigation. In der folgenden Abbildung wird die XAML-Ansicht mit einem geöffneten IntelliSense-Menü dargestellt:
+In der **XAML**-Ansicht ist das Fenster mit dem XAML-Editor das aktive Fenster, und der XAML-Editor ist Ihr primäres Entwicklungstool. Die Extensible Application Markup Language (XAML) stellt ein deklaratives, auf XML basierendes Vokabular bereit, mit dem die Benutzeroberfläche einer Anwendung festgelegt werden kann. Die XAML-Ansicht enthält IntelliSense und automatische Formatierung, Syntaxhervorhebung und Tagnavigation. In der folgenden Abbildung wird die XAML-Ansicht mit einem geöffneten IntelliSense-Menü dargestellt:
 
 ![XAML-Ansicht](media/xaml-editor.png)
 
@@ -125,8 +125,8 @@ Das Fenster „Dokumentgliederung“ in Visual Studio ist ähnelt dem Fenster [O
 
 - [Erstellen von Animationen](animate-objects-in-xaml-designer.md) (nur Blend für Visual Studio).
 
-Um das Dokument Gliederungs Fenster in Visual Studio anzuzeigen, wählen Sie in **View** der Menüleiste die Option  >  **Weitere Windows** -  >  **Dokument** Gliederung anzeigen aus.
-Um das Fenster Objekte und Zeitachsen in Blend für Visual Studio anzuzeigen, wählen Sie in der Menüleiste Dokument Gliederung **anzeigen** aus  >  **Document Outline** .
+Um das Dokument Gliederungs Fenster in Visual Studio anzuzeigen, wählen Sie in der Menüleiste die Option  >  **Weitere Windows**-  >  **Dokument** Gliederung anzeigen aus.
+Um das Fenster Objekte und Zeitachsen in Blend für Visual Studio anzuzeigen, wählen Sie in der Menüleiste Dokument Gliederung **anzeigen** aus  >  .
 
 ![Screenshot: Fenster „Dokumentgliederung“ in Visual Studio](media/document-outline-window.png)
 
@@ -146,7 +146,7 @@ Sperrt oder entsperrt Zeichenflächenelemente. Gesperrte Elemente können nicht 
 
 ## <a name="properties-window"></a>Eigenschaftenfenster
 
-Im Fenster **Eigenschaften** können Sie Eigenschaftswerte für Steuerelemente festlegen. Das Fenster sieht so aus:
+Im Fenster **Eigenschaften** können Sie Eigenschaftswerte für Steuerelemente festlegen. Hier sehen Sie, wie es aussieht:
 
 ![Eigenschaftenfenster](media/xaml-designer-properties-window.png)
 
@@ -154,8 +154,8 @@ Am oberen Rand des Fensters " **Eigenschaften** " befinden sich verschiedene Opt
 
 - Sie können den Namen des aktuell ausgewählten Elements im Feld **Name** ändern.
 - In der linken oberen Ecke gibt es ein Symbol, welches das aktuell ausgewählte Element darstellt.
-- Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie** , **Name** oder auf **Quelle** in der Liste **Anordnen nach** .
-- Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse** . Es wird ein Blitz angezeigt.
+- Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie**, **Name** oder auf **Quelle** in der Liste **Anordnen nach** .
+- Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse**. Es wird ein Blitz angezeigt.
 - Wenn Sie nach einer Eigenschaft suchen möchten, beginnen Sie mit der Eingabe des Namens der Eigenschaft im Suchfeld. Im Fenster **Eigenschaften** werden die Eigenschaften angezeigt, die mit Ihrer Suche übereinstimmen, während Sie Ihre Eingabe vornehmen.
 
 Einige Eigenschaften ermöglichen es Ihnen, erweiterte Eigenschaften festzulegen, indem Sie eine Nach-Unten-Schaltfläche auswählen.
@@ -164,7 +164,7 @@ Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der
 
 Weitere Informationen zur Verwendung von Eigenschaften und zur Behandlung von Ereignissen finden Sie unter [Einführung in Steuerelemente und Muster](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Weitere Informationen
 
 - [Arbeiten mit Elementen im XAML-Designer](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [So erstellen Sie eine Ressource und wenden Sie an](../xaml-tools/how-to-create-and-apply-a-resource.md)

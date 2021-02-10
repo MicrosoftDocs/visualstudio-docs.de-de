@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72938f316be22cd9b2eab2d7dab893c9370fb0ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965849"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Vorgehensweise: Festlegen von SharePoint-Bereitstellungs Befehlen
   Sie können den Bereitstellungs Prozess anpassen, indem Sie Befehle vor und nach der Bereitstellung festlegen. Diese Befehle werden vor und nach anderen Bereitstellungs Aktionen ausgeführt, wenn Sie SharePoint-Lösungen aus Visual Studio debuggen.
@@ -44,5 +44,5 @@ ms.locfileid: "96304383"
 
      Wenn Sie z. b. den Verzeichnis Inhalt nach Abschluss der Bereitstellung auflisten möchten, geben Sie **dir** ein. Wenn Sie eine MSBuild-Variable zum Kopieren der Assembly aus dem Buildverzeichnis verwenden möchten, geben Sie **Copy $ (TargetPath) c:\deploymentdirectory** ein.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Packen und Bereitstellen von SharePoint-Lösungen](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968943"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Vorgehensweise: Programm gesteuertes Zwischenspeichern einer Datenquelle in einem Office-Dokument
   Sie können dem Daten Cache in einem Dokument Programm gesteuert ein Datenobjekt hinzufügen, indem Sie die- `StartCaching` Methode eines-Host Elements aufrufen, <xref:Microsoft.Office.Tools.Word.Document> z <xref:Microsoft.Office.Tools.Excel.Workbook> . b <xref:Microsoft.Office.Tools.Excel.Worksheet> ., oder. Entfernen Sie ein Datenobjekt aus dem Daten Cache, indem Sie die- `StopCaching` Methode eines-Host Elements aufrufen.
@@ -56,7 +56,7 @@ ms.locfileid: "96845011"
     > [!NOTE]
     > Ruft nicht `StopCaching` vom-Ereignishandler für das- `Shutdown` Ereignis eines Dokuments oder Arbeitsblatts auf. Wenn das- `Shutdown` Ereignis ausgelöst wird, ist es zu spät, den Daten Cache zu ändern. Weitere Informationen zum `Shutdown` Ereignis finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Daten zwischenspeichern](../vsto/caching-data.md)
 - [Gewusst wie: Zwischenspeichern von Daten zur Offline Verwendung oder auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

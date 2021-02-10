@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b0148a7c42b359906cd316b45dfdf2898e6313
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7a12607a6e4f603c86e7714ff87db085d3bf3b9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965940"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension-Basisklasse
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967110"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Leitfaden zu Visual Studio Enterprise
 Wenn Sie Zeit sparen möchten, während Sie Visual Studio für Ihr Unternehmen einrichten, sind Sie hier genau richtig. Dieser Leitfaden bietet Tipps, die Sie beim Installieren und Aktualisieren von Visual Studio in gängigen Unternehmensszenarien unterstützen. Sie erhalten auch Hinweise zur Lösung von Problemen, und Sie erfahren, wie Sie ein Problem melden, wenn Sie weitere Hilfe benötigen. 

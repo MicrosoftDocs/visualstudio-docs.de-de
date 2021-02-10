@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965797"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Zugreifen auf Daten in Dokumenten auf dem Server
   Sie können für die Daten in einer Anpassung auf Dokument Ebene programmieren, ohne das Objektmodell von Microsoft Office Word oder Microsoft Office Excel verwenden zu müssen. Dies bedeutet, dass Sie auf Daten zugreifen können, die in einem Dokument auf einem Server enthalten sind, auf dem Word oder Excel nicht installiert ist. Beispielsweise kann der Code auf einem Server (z. b. auf einer [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Seite) die Daten in einem Dokument anpassen und das angepasste Dokument an einen Endbenutzer senden. Wenn der Endbenutzer das Dokument öffnet, bindet der Daten Bindungs Code in der Projektmappenassembly die angepassten Daten an das Dokument. Dies ist möglich, da die Daten im Dokument von der Benutzeroberfläche getrennt sind. Weitere Informationen finden Sie unter [zwischengespeicherte Daten in Anpassungen auf Dokument Ebene](../vsto/cached-data-in-document-level-customizations.md).
@@ -79,7 +79,7 @@ ms.locfileid: "96847623"
 ## <a name="access-typed-datasets-in-the-cache"></a>Zugreifen auf typisierte Datasets im Cache
  Wenn Sie auf die Daten in einem typisierten DataSet sowohl aus einer Office-Projekt Mappe als auch aus einer Anwendung außerhalb von Office zugreifen möchten, z. b. eine Windows Forms Anwendung oder ein- [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Projekt, müssen Sie das typisierte DataSet in einer separaten Assembly definieren, auf die in beiden Projekten verwiesen wird. Wenn Sie das typisierte DataSet mit dem Assistenten zum Konfigurieren von **Datenquellen** oder dem **DataSet-Designer** jedem Projekt hinzufügen, werden die typisierten Datasets in den beiden Projekten vom .NET Framework als verschiedene Typen behandelt. Weitere Informationen zum Erstellen von typisierten Datasets finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md)
 - [Zwischengespeicherte Daten in Anpassungen auf Dokument Ebene](../vsto/cached-data-in-document-level-customizations.md)

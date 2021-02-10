@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c9bd5b9ec57e652dd7a57ee3434a2525eeeedbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 139893c7bb993180fd35aec1e02559f317ef8156
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968527"
 ---
 # <a name="task_state_faulted-field"></a>TASK_STATE_FAULTED Feld
 Die Aufgabe wurde aufgrund eines Ausnahmefehlers abgeschlossen.
@@ -35,5 +35,5 @@ Die Aufgabe wurde aufgrund eines Ausnahmefehlers abgeschlossen.
 ## <a name="remarks"></a>Bemerkungen
  Wenn das [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) -Feld diesen Wert enthält, <xref:System.Threading.Tasks.Task.Status%2A> gibt die-Eigenschaft zurück <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)
