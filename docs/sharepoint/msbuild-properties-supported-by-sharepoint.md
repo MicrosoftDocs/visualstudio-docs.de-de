@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, MSBuild properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 20458cc7047e913e13f4594380d4b4946b44ec17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938511"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Von SharePoint unterstützte MSBuild-Eigenschaften
   Jede [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaft, die in der Datei "Microsoft. VisualStudio. SharePoint. targets", in der Projektdatei oder in der Projekt Benutzerdatei definiert ist, kann in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekten verwendet werden. Zusätzlich zu den allgemeinen [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaften, die vom Projekt bereitgestellt werden, definiert SharePoint zusätzliche Eigenschaften, die für SharePoint-Projekte spezifisch sind.
@@ -29,7 +29,7 @@ ms.locfileid: "96305147"
 ## <a name="msbuild-properties-specific-to-sharepoint"></a>Für SharePoint spezifische MSBuild-Eigenschaften
  In der folgenden Tabelle werden die [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Eigenschaften aufgelistet, die speziell für SharePoint-Projekte in gelten [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Es sind andere Eigenschaften vorhanden, Sie sind jedoch für die interne Verwendung vorgesehen.
 
-|Eigenschaftenname|Beschreibung|
+|Eigenschaftenname|BESCHREIBUNG|
 |-------------------|-----------------|
 |Sharepointsiteurl|Eine Zeichenfolge, die [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] für die SharePoint-Site darstellt.|
 |Sandboxedsolution|Ein boolescher Wert, der angibt, ob die Projekt Mappe eine Sandkasten Lösung ist.|
@@ -53,6 +53,6 @@ ms.locfileid: "96305147"
 > [!NOTE]
 > Sie können entweder die [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Variablen Syntax `$(` *propertyName* `)` oder die Syntax `%` *propertyName* der Umgebungsvariablen verwenden `%` , um eine Eigenschaft anzugeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [MSBuild-Referenz](../msbuild/msbuild-reference.md)

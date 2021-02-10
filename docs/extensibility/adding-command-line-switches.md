@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939226"
 ---
 # <a name="add-command-line-switches"></a>Befehls Zeilenschalter hinzufügen
 Sie können Befehls Zeilenschalter hinzufügen, die für das VSPackage gelten, wenn *devenv.exe* ausgeführt wird. Verwenden <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> Sie, um den Namen des Schalters und seine Eigenschaften zu deklarieren. In diesem Beispiel wird der Schalter "mySwitch" für eine Unterklasse von VSPackage mit dem Namen " **addcommandswitchpackage** " ohne Argumente und dem automatischen Laden des VSPackages hinzugefügt.
@@ -74,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)
 - [Das Dienstprogramm "| atepkgdef"](../extensibility/internals/createpkgdef-utility.md)
-- [Pkgdef-Dateien](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [. Pkgdef-Dateien](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

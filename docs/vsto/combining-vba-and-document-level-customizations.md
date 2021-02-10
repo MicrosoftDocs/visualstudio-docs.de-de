@@ -23,15 +23,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c5f66042dad7051c856aa6158ea0a666a81e9b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938524"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Kombinieren von VBA und Anpassungen auf Dokument Ebene
   Sie können VBA-Code (Visual Basic for Applications) in einem Dokument verwenden, das Teil einer Dokumentebenenanpassung für Microsoft Office Word oder Microsoft Office Excel ist. Sie können VBA-Code im Dokument über die Anpassungsassembly aufrufen, oder Sie können für Ihr Projekt die Aktivierung des VBA-Codes im Dokument konfigurieren, um Code in der Anpassungsassembly aufzurufen.
@@ -85,7 +85,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]
 > Diese Funktion kann in Word-Vorlagenprojekten nicht verwendet werden. Sie kann nur in Word-Dokument-, Excel-Arbeitsmappen- oder Excel-Vorlagenprojekten verwendet werden.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
  Bevor Sie VBA-Code zum Aufrufen aus der Anpassungsassembly aktivieren können, muss das Projekt die folgenden Anforderungen erfüllen:
 
 - Das Dokument muss eine der folgenden Dateinamenerweiterungen haben:
@@ -251,7 +251,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Nachdem Sie die **Eigenschaften** - oder **ReferenceAssemblyFromVbaProject** -Eigenschaft festgelegt haben, wird in einer Fehlermeldung angegeben, dass die vom <xref:System.Reflection.AssemblyVersionAttribute> -Element angegebene Versionsnummer ungültig ist.|Stellen Sie sicher, dass die <xref:System.Reflection.AssemblyVersionAttribute> Deklaration in der *AssemblyInfo.cs* -oder *AssemblyInfo. vb* -Datei in Ihrem Projekt auf eine gültige Versionsnummer der Assembly festgelegt ist. Informationen zu gültigen Assemblyversionsnummern finden Sie unter der <xref:System.Reflection.AssemblyVersionAttribute> -Klasse.|
 |Nachdem Sie die Anpassungsassembly umbenannt haben, funktioniert der VBA-Code nicht mehr, mit dem Aufrufe für die Anpassungsassembly durchgeführt werden.|Wenn Sie den Namen der Anpassungsassembly ändern, nachdem Sie diese für den VBA-Code verfügbar gemacht haben, ist der Link zwischen dem VBA-Projekt im Dokument und Ihrer Anpassungsassembly beschädigt. Um dieses Problem zu beheben, ändern Sie die **ReferenceFromVbaAssembly** -Eigenschaft im Projekt in **False** und dann zurück in **True**. Ersetzen Sie anschließend alle Verweise auf den alten Assemblynamen im VBA-Code durch den neuen Assemblynamen.|
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Gewusst wie: verfügbar machen von Code für VBA in einem Visual Basic Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [Gewusst wie: verfügbar machen von Code für VBA in einem Visual C-&#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [Exemplarische Vorgehensweise: Abrufen von Code aus VBA in einem Visual Basic Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

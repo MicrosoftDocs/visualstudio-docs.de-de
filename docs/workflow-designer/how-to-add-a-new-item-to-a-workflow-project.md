@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e0cc4b24462583a5f704f47c16e6e8d30456512b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938459"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Gewusst wie: Hinzufügen eines neuen Elements zu einem Workflow Projekt
 
@@ -23,7 +23,7 @@ Nachdem Sie ein Workflow Projekt erstellt haben, können Sie dem Projekt Workflo
 
 In der folgenden Tabelle sind die Windows Workflow Foundation (WF)-Elemente aufgelistet, die Sie einem Workflow Projekt hinzufügen können:
 
-| Name | BESCHREIBUNG |
+| Name | Beschreibung |
 |-| - |
 | Aktivität | Eine Aktivität, die aus anderen Aktivitäten besteht. Wenn Sie dieses Element auswählen, wird dem Projekt die gleiche XAML-Datei hinzugefügt wie beim Auswählen der Vorlage **Aktivitäts Bibliothek** für ein neues Projekt. Weitere Informationen zu diesem Verfahren finden Sie unter [Erstellen eines Workflow Projekts](creating-a-workflow-project.md). |
 | Aktivitätsdesigner | Ein Designer, mit dem die Behandlung einer Aktivität zur Entwurfszeit angepasst wird. Durch die Auswahl dieses Elements werden dem Projekt die gleichen Dateien hinzugefügt wie beim Auswählen der Vorlage **Aktivitäts Designer Bibliothek** für ein neues Projekt. |
@@ -45,6 +45,6 @@ In der folgenden Tabelle sind die Windows Workflow Foundation (WF)-Elemente aufg
 
 1. Wählen Sie **Hinzufügen** aus, um das Element dem Projekt hinzuzufügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Erstellen eines Workflow Projekts](../workflow-designer/creating-a-workflow-project.md)

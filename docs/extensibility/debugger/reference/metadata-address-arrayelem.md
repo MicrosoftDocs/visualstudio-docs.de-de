@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67e39eb8b03dd6f75ac39155bd744e03084beb0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eef5b203c65ca85cfd9b20e613f53128803e088b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938746"
 ---
 # <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 

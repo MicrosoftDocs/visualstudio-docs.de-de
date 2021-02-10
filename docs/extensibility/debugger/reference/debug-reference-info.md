@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e31205f52151679f932877c9c4fdc56907ea59e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e491054ffbdfa9e19cb8bed995b2f369ac1a885
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939174"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 Beschreibt einen-Verweis.
