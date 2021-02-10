@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80904e95c1561dd20ed2a6cc9ad561e6c18ee93a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2418e958c027fea7fd39c93b0d5abbd95d64435b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960792"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion-Methode
 Legt das TASK_STATE_WAIT_COMPLETION_NOTIFICATION Zustands Bit fest oder löscht dieses.
@@ -42,7 +42,7 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ## <a name="remarks"></a>Bemerkungen
  Der Debugger legt dieses Bit fest, um den asynchronen Methoden Text auszulagern. Wenn `enabled` ist `true` , muss diese Methode nur für eine Aufgabe aufgerufen werden, die noch nicht abgeschlossen wurde. Wenn `enabled` `false` den Wert hat, kann diese Methode für abgeschlossene Aufgaben aufgerufen werden. In beiden Ereignissen sollte Sie nur für Aufgaben im Promise-Stil verwendet werden.
 
-## <a name="requirements"></a>Requirements (Anforderungen)
+## <a name="requirements"></a>Anforderungen
 
 ## <a name="see-also"></a>Weitere Informationen
 - [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2457f6e18af75a515c0e27889ffecea521670db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962092"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
 Gibt die debugstartflags an.

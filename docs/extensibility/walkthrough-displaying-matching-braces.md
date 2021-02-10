@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f89c6303dc8ca9e48fb212a3ae889251b34ece91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961728"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Exemplarische Vorgehensweise: anzeigen passender geschweifter Klammern
 Implementieren Sie sprachbasierte Funktionen, wie z. b. die Klammer Zuordnung, indem Sie die geschweiften Klammern definieren, und fügen Sie den passenden geschweiften Klammern ein textmarkertag hinzu, wenn sich die Einfügemarke in einer der geschweiften Klammern befindet. Sie können geschweifte Klammern im Kontext einer Sprache definieren, eine eigene Dateinamenerweiterung und einen Inhaltstyp definieren und die Tags nur auf diesen Typ anwenden oder die Tags auf einen vorhandenen Inhaltstyp (z. b. "Text") anwenden. In der folgenden exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mit dem Inhaltstyp "Text" übereinstimmende geschweifter Klammern anwenden.

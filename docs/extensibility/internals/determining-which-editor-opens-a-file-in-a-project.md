@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 48d642c8a3b7883507c06453c0025badc299ce75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963418"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Bestimmen, welcher Editor eine Datei in einem Projekt öffnet
 Wenn ein Benutzer eine Datei in einem Projekt öffnet, durchläuft die Umgebung einen Abruf Vorgang und öffnet schließlich den entsprechenden Editor oder Designer für diese Datei. Das erste Verfahren, das von der Umgebung verwendet wird, ist für Standard-und benutzerdefinierte Editoren identisch. Die Umgebung verwendet eine Vielzahl von Kriterien, wenn abgefragt wird, welcher Editor zum Öffnen einer Datei verwendet werden soll, und das VSPackage muss sich während dieses Vorgangs mit der Umgebung koordinieren.
@@ -41,7 +41,7 @@ Wenn ein Benutzer eine Datei in einem Projekt öffnet, durchläuft die Umgebung 
 
  Die Umgebung überprüft nun die interne Liste der registrierten Editoren, um die neu registrierte Editorfactory für *RTF* -Dateien zu finden. Die Umgebung ruft Ihre Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> -Methode auf und übergibt den zu erstellenden Dateinamen und Ansichtstyp.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>
 - <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>

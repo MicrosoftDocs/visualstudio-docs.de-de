@@ -6,21 +6,21 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f13128bc552ffdb31b3f4a9315a3f9aa3543b0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285003"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962690"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Arbeiten mit dem interaktiven Node.js-Fenster
 
-Node.js-Tools für Visual Studio umfassen ein interaktives Fenster für die installierte Node.js-Runtime. In diesem Fenster können Sie JavaScript-Code eingeben und die Ergebnisse sofort sehen. Außerdem können Sie npm-Befehle ausführen, um mit dem aktuellen Projekt zu interagieren. Das interaktive Fenster ist auch als eine REPL (**R**ead/**E**valuate/**P**rint **L**oop) bekannt.
+Node.js-Tools für Visual Studio umfassen ein interaktives Fenster für die installierte Node.js-Runtime. In diesem Fenster können Sie JavaScript-Code eingeben und die Ergebnisse sofort sehen. Außerdem können Sie npm-Befehle ausführen, um mit dem aktuellen Projekt zu interagieren. Das interaktive Fenster ist auch als eine REPL (**R** ead/**E** valuate/**P** rint **L** oop) bekannt.
 
 ## <a name="open-the-interactive-window"></a>Öffnen des interaktiven Fensters
 

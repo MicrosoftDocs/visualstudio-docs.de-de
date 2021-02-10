@@ -15,15 +15,15 @@ helpviewer_keywords:
 - recent file list, Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbcad553ade6234d3a688c8f718a0dd6e6cda509
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 75405c7a2e02189e205edf6615c5d95a8f1d023c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963145"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Gewusst wie: Programm gesteuertes Auflisten zuletzt verwendeter Arbeitsmappendateien
   Die- <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Eigenschaft gibt eine Auflistung zurück, die die Namen aller Dateien enthält, die in der Microsoft Office Excel-Liste der zuletzt verwendeten Dateien angezeigt werden. Die Länge der Liste variiert je nach der Anzahl der Dateien, die der Benutzer für die Beibehaltung ausgewählt hat. Die Ergebnisse können in einem Bereich angezeigt werden.
