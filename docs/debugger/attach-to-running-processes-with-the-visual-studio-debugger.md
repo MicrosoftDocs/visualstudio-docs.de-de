@@ -26,19 +26,19 @@ helpviewer_keywords:
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 3a76aff1c17988f61b5f89e2e8d20ef7129efcae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866007"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 
-Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Nachdem der Prozess ausgeführt wird, wählen Sie **Debuggen** > **An den Prozess anhängen** aus, oder drücken Sie in Visual Studio **STRG**+**ALT**+**P**, und verwenden Sie das Dialogfeld **An den Prozess anhängen**, um den Debugger an den Prozess anzuhängen.
+Sie können den Visual Studio-Debugger an einen laufenden Prozess auf einem lokalen oder Rmotecomputer anfügen. Sobald der Prozess ausgeführt wird, wählen Sie **Debuggen** > **An den Prozess anhängen** aus, oder drücken Sie in Visual Studio **STRG**+**ALT**+**P**, und verwenden Sie das Dialogfeld **An den Prozess anhängen**, um den Debugger an den Prozess anzuhängen.
 
 Sie können **An den Prozess anhängen** verwenden, um laufende Apps auf lokalen oder Remotecomputern zu debuggen, um mehrere Prozesse gleichzeitig zu debuggen, um Apps zu debuggen, die nicht in Visual Studio erstellt wurden, oder um Apps zu debuggen, die Sie nicht von Visual Studio aus mit dem angehängten Debugger gestartet haben. Wenn Sie z. B. eine App ohne den Debugger ausführen und eine Ausnahme auslösen, dann können Sie den Debugger an den Prozess anhängen, der die App ausführt, und mit dem Debuggen beginnen.
 

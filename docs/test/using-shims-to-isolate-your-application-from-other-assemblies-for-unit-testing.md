@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598210"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006406"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Verwenden von Shims zum Isolieren der Anwendung für Unittests
 
@@ -30,7 +30,7 @@ Eine Übersicht und eine Schnellstartanleitung finden Sie unter [Isolieren von g
 - Visual Studio Enterprise
 - Ein .NET Framework-Projekt
 ::: moniker range=">=vs-2019"
-- Die Unterstützung von Projekten im .NET Core- und SDK-Format ist in Visual Studio 2019 Update 6 als Vorschaufeature enthalten und in Update 8 standardmäßig aktiviert. Weitere Informationen finden Sie unter [Microsoft Fakes für .NET Core- und SDK-Projekte](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- Die Unterstützung von Projekten im .NET Core-, .NET 5.0- und SDK-Format ist in Visual Studio 2019 Update 6 als Vorschaufeature enthalten und in Update 8 standardmäßig aktiviert. Weitere Informationen finden Sie unter [Microsoft Fakes für .NET Core- und SDK-Projekte](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Beispiel: Der Y2K-Fehler
@@ -71,7 +71,7 @@ Fügen Sie zunächst eine Fakes-Assemblys hinzu:
 1. Im **Projektmappen-Explorer**: 
     - Erweitern Sie für ein älteres .NET Framework-Projekt (kein SDK-Format) den Knoten **Verweise** Ihres Projekts für den Komponententest.
     ::: moniker range=">=vs-2019"
-    - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework oder .NET Core unter **Assemblys**, **Projekte** oder **Pakete** den Knoten **Abhängigkeiten**, um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
+    - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework, .NET Core oder .NET 5.0 unter **Assemblys**, **Projekte** oder **Pakete** den Knoten **Abhängigkeiten**, um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
     ::: moniker-end
     - Wenn Sie in Visual Basic arbeiten, müssen Sie auf der Symbolleiste im **Projektmappen-Explorer** auf **Alle Dateien anzeigen** klicken, um den Knoten **Verweise** anzuzeigen.
 
@@ -524,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Einschränkungen
 
-Shims können nicht für alle Typen in der .NET-Basisklassenbibliothek **mscorlib** und **System** in .NET Framework und in **System.Runtime** in .NET Core verwendet werden.
+Shims können nicht für alle Typen in der .NET-Basisklassenbibliothek **mscorlib** und **System** in .NET Framework und in **System.Runtime** in .NET Core oder .NET 5.0 verwendet werden.
 
 ## <a name="see-also"></a>Weitere Informationen
 

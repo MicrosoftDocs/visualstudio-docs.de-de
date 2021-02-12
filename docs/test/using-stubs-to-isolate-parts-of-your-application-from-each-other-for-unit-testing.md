@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598561"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006441"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
 
@@ -152,7 +152,7 @@ Um Stubs zu verwenden, müssen Sie zuerst Stub-Typen aus den Schnittstellendefin
 1. Im **Projektmappen-Explorer**: 
     - Erweitern Sie für ein älteres .NET Framework-Projekt (kein SDK-Format) den Knoten **Verweise** Ihres Projekts für den Komponententest.
     ::: moniker range=">=vs-2019"
-    - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework oder .NET Core unter **Assemblys**, **Projekte** oder **Pakete** den Knoten **Abhängigkeiten**, um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
+    - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework, .NET Core oder .NET 5.0 unter **Assemblys**, **Projekte** oder **Pakete** den Knoten **Abhängigkeiten**, um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
     ::: moniker-end
     - Wenn Sie in Visual Basic arbeiten, müssen Sie auf der Symbolleiste im **Projektmappen-Explorer** auf **Alle Dateien anzeigen** klicken, um den Knoten **Verweise** anzuzeigen.
 

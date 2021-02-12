@@ -8,19 +8,19 @@ ms.prod: visual-studio-windows
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 6989de1c5b4542998d048e5eadd47f48dc7e05b1
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99181996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951926"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>Tutorial: Öffnen eines Projekts aus einem Repository in Visual Studio 2017
 
@@ -43,7 +43,7 @@ In diesem Tutorial verwenden Sie Visual Studio 2017, um erstmalig eine Verbindun
 
     ![Auswählen von „Klonen“ im Abschnitt „Lokale Git-Repositorys“](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. Geben Sie die URL Ihres Repositorys in das Feld **_Geben Sie die URL eines zu klonenden Git ein._ *ein, oder fügen Sie diese ein, und drücken Sie die* EINGABETASTE**. (Melden Sie sich im Falle einer entsprechenden Aufforderung bei GitHub an.)
+1. Geben oder fügen Sie die URL Ihres Repositorys in das Feld ***Geben Sie die URL eines zu klonenden Git ein** _ ein, und drücken Sie dann die _*EINGABETASTE**. (Melden Sie sich im Falle einer entsprechenden Aufforderung bei GitHub an.)
 
    Nach dem Klonen Ihres Repositorys durch Visual Studio wird Team Explorer geschlossen und der Projektmappen-Explorer geöffnet. Die Meldung *Klicken Sie oben auf "Projektmappen und Ordner", um eine Liste mit Projektmappen anzuzeigen.* wird angezeigt. Wählen Sie **Projektmappen und Ordner** aus.
 

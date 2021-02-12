@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e7e7672ca93c47370f746358203c37826a1b3ad3
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719655"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006425"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 
@@ -36,7 +36,7 @@ Es gibt zwei Arten von Fakes:
 - Visual Studio Enterprise
 - Ein .NET Framework-Projekt
 ::: moniker range=">=vs-2019"
-- Die Unterstützung von Projekten im .NET Core- und SDK-Format ist in Visual Studio 2019 Update 6 als Vorschaufeature enthalten und in Update 8 standardmäßig aktiviert. Weitere Informationen finden Sie unter [Microsoft Fakes für .NET Core- und SDK-Projekte](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+- Die Unterstützung von Projekten im .NET Core-, .NET 5.0- und SDK-Format ist in Visual Studio 2019 Update 6 als Vorschaufeature enthalten und in Update 8 standardmäßig aktiviert. Weitere Informationen finden Sie unter [Microsoft Fakes für .NET Core- und SDK-Projekte](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
 ::: moniker-end
 
 > [!NOTE]
@@ -88,7 +88,7 @@ Eine ausführlichere Beschreibung finden Sie unter [Use stubs to isolate parts o
    1. Im **Projektmappen-Explorer**: 
        - Erweitern Sie für ein älteres .NET Framework-Projekt (kein SDK-Format) den Knoten **Verweise** Ihres Projekts für den Komponententest.
        ::: moniker range=">=vs-2019"
-       - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework oder .NET Core unter **Assemblys**, **Projekte** oder **Pakete** den Knoten **Abhängigkeiten**, um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
+       - Erweitern Sie bei einem Projekt im SDK-Format für .NET Framework, .NET Core oder .NET 5.0 unter **Assemblys**, **Projekte** oder **Pakete** den Knoten **Abhängigkeiten**, um die gewünschte Assembly zu finden, die Sie als Fakes-Assembly verwenden möchten.
        ::: moniker-end
        - Wenn Sie in Visual Basic arbeiten, müssen Sie auf der Symbolleiste im **Projektmappen-Explorer** auf **Alle Dateien anzeigen** klicken, um den Knoten **Verweise** anzuzeigen.
    2. Wählen Sie die Assembly aus, in der die Klassendefinitionen enthalten sind, für die Sie Shims erstellen möchten. Wenn Sie z.B. einen Shim für **DateTime** erstellen möchten, klicken Sie auf **System.dll**.
@@ -269,21 +269,21 @@ Da für Microsoft Fakes Visual Studio Enterprise benötigt wird, setzt das Gener
 </Project>
 ```
 
-Dieser Verweis muss insbesondere in Projekten im SDK-Format (.NET Core und .NET Framework) manuell hinzugefügt werden, weil Assemblyverweise Ihrem Testprojekt jetzt implizit hinzugefügt werden. Wenn Sie diesen Ansatz nutzen, müssen Sie dafür sorgen, dass die Fakes-Assembly bei einer Änderung der übergeordneten Assembly aktualisiert wird.
+Dieser Verweis muss insbesondere in Projekten im SDK-Format (.NET Core, .NET 5.0 und .NET Framework) manuell hinzugefügt werden, weil Assemblyverweise Ihrem Testprojekt jetzt implizit hinzugefügt werden. Wenn Sie diesen Ansatz nutzen, müssen Sie dafür sorgen, dass die Fakes-Assembly bei einer Änderung der übergeordneten Assembly aktualisiert wird.
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Ausführen von Microsoft Fakes-Tests
 Solange Microsoft Fakes-Assemblys im konfigurierten Verzeichnis `FakesAssemblies` vorhanden sind (standardmäßig `$(ProjectDir)FakesAssemblies`), können Sie Tests unter Verwendung der [vstest-Aufgabe](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) ausführen.
 
 ::: moniker range=">=vs-2019"
-Für verteilte Tests mit der [vstest-Aufgabe](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) für .NET Core-Projekte unter Verwendung von Microsoft Fakes wird Visual Studio 2019 Update 9 Preview `20201020-06` oder höher benötigt.
+Für verteilte Tests mit dem [vstest-Task](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) für .NET Core- und .NET 5.0-Projekte mit Microsoft Fakes wird Visual Studio 2019 Update 9 Preview `20201020-06` oder höher benötigt.
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Umstellen Ihrer .NET Framework-Testprojekte mit Verwendung von Microsoft Fakes auf .NET Framework- oder .NET Core-Projekte im SDK-Format
-Für eine Umstellung auf .NET Core sind minimale Änderungen in Ihrem .NET Framework-Setup für Microsoft Fakes erforderlich. Folgende Fälle müssen berücksichtigt werden:
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects"></a>Umstellen Ihrer .NET Framework-Testprojekte mit Microsoft Fakes auf .NET Framework-, .NET Core- oder .NET 5.0-Projekte im SDK-Format
+Für eine Umstellung auf .NET Core oder .NET 5.0 sind minimale Änderungen in Ihrem .NET Framework-Setup für Microsoft Fakes erforderlich. Folgende Fälle müssen berücksichtigt werden:
 - Wenn Sie eine benutzerdefinierte Projektvorlage verwenden, müssen Sie sicherstellen, dass diese im SDK-Format vorliegt und in ein kompatibles Zielframework kompiliert wird.
-- Bestimmte Typen sind in verschiedenen Assemblys in .NET Framework und .NET Core vorhanden (beispielsweise wird `System.DateTime` in `System`/`mscorlib` in .NET Framework und in `System.Runtime` in .NET Core verwendet). In einem solchen Szenario müssen Sie die Assembly für Fakes ändern.
+- Bestimmte Typen sind in verschiedenen Assemblys in .NET Framework, .NET Core und .NET 5.0 vorhanden (beispielsweise wird `System.DateTime` in `System`/`mscorlib` in .NET Framework und in `System.Runtime` in .NET Core und .NET 5.0 verwendet). In einem solchen Fall müssen Sie die Assembly für Fakes ändern.
 - Wenn ein Assemblyverweis auf eine Fakes-Assembly und das Testprojekt vorhanden ist, wird möglicherweise eine der folgenden ähnliche Warnung zu einem fehlenden Verweis angezeigt:
   ```
   (ResolveAssemblyReferences target) ->
@@ -299,12 +299,12 @@ Für eine Umstellung auf .NET Core sind minimale Änderungen in Ihrem .NET Frame
 - Microsoft Fakes-Tests können mit allen verfügbaren Microsoft.TestPlatform-NuGet-Paketen ausgeführt werden.
 - Code Coverage wird für Testprojekte mit Verwendung von Microsoft Fakes in Visual Studio Enterprise 2015 und höher unterstützt.
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>Microsoft Fakes in .NET Framework- und .NET Core-Projekten mit SDK-Format
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-projects"></a>Microsoft Fakes in .NET Framework-, .NET Core- und .NET 5.0-Projekten mit SDK-Format
 - Das Generieren von Microsoft Fakes-Assemblys ist in Visual Studio Enterprise 2019 Update 6 als Vorschaufeature enthalten und in Update 8 standardmäßig aktiviert.
 - Microsoft Fakes-Tests für Projekte mit .NET Framework als Ziel können mit allen verfügbaren Microsoft.TestPlatform-NuGet-Paketen ausgeführt werden.
-- Microsoft Fakes-Tests für Projekte mit .NET Core als Ziel können mit Microsoft.TestPlatform-NuGet-Paketen der Version [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) und höher ausgeführt werden.
+- Microsoft Fakes-Tests für Projekte mit .NET Core oder .NET 5.0 als Ziel können mit Microsoft.TestPlatform-NuGet-Paketen der Version [16.9.0-preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) und höher ausgeführt werden.
 - Code Coverage wird für .NET Framework-Testprojekte mit Verwendung von Microsoft Fakes in Visual Studio Enterprise 2015 und höher unterstützt.
-- Die Unterstützung von Code Coverage für .NET Core-Testprojekte mit Verwendung von Microsoft Fakes befindet sich derzeit in der Entwicklung.
+- Code Coverage wird für .NET Core- oder .NET 5.0-Testprojekte mit Microsoft Fakes ab Visual Studio 2019 Update 9 unterstützt.
 
 
 ## <a name="in-this-section"></a>In diesem Abschnitt

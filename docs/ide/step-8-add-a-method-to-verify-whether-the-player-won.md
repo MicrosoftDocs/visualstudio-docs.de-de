@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 68a4848f00153206b87dd3e5893bbaaeccf3b358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868750"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat
 Sie haben ein unterhaltsames Spiel erstellt, aber es benötigt noch eine zusätzliche Funktion. Das Spiel soll enden, wenn der Spieler gewonnen hat. Sie müssen also eine `CheckForWinner()`-Methode hinzufügen, mit der überprüft wird, ob der Spieler gewonnen hat.
@@ -45,10 +45,10 @@ Sie haben ein unterhaltsames Spiel erstellt, aber es benötigt noch eine zusätz
 3. Speichern Sie das Programm, und führen Sie es aus. Spielen Sie das Spiel, und finden Sie alle übereinstimmenden Symbolpaare. Wenn Sie gewonnen haben, zeigt das Programm eine **MessageBox** mit einem Glückwunsch an (wie im folgenden Screenshot dargestellt) und schließt diese dann.
 
      ![Vergleichsspiel mit MessageBox](../ide/media/express_tut4step8.png)<br/>
-**_Vergleichsspiel_* _ _mit* ***MessageBox**_
+***Vergleichsspiel** _ _mit* ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
-- Den nächsten Schritt des Tutorials finden Sie unter _*[Schritt 9: Ausprobieren weiterer Features](../ide/step-9-try-other-features.md)**.
+- Den nächsten Schritt des Tutorials finden Sie unter **[Schritt 9: Ausprobieren weiterer Features](../ide/step-9-try-other-features.md)** .
 
 - Wenn Sie zum vorherigen Tutorialschritt zurückkehren möchten, klicken Sie auf [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: ede73e06575a91cf9bdf8115942c27b1ce4e2841
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914462"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Vorgehensweise: Erstellen von bestimmten Zielen in Projektmappen mit MSBuild.exe
 
@@ -43,7 +43,7 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 Wenn Sie die für Sie verfügbaren Optionen überprüfen möchten, können Sie hierfür eine von MSBuild bereitgestellte Debugoption verwenden. Legen Sie die Umgebungsvariable `MSBUILDEMITSOLUTION=1` fest, und erstellen Sie Ihre Projektmappe. Dadurch wird eine MSBuild-Datei namens *\<SolutionName>.sln.metaproj* generiert, die die interne MSBuild-Ansicht der Projektmappe zur Buildzeit anzeigt. Anhand dieser Ansicht können Sie feststellen, welche Ziele für das Build verfügbar sind.
 
-Erstellen Sie mit dieser Umgebungsvariable nur dann Ziele, wenn Sie diese interne Ansicht benötigen. Diese Einstellung kann zu Problemen beim Erstellen von Projekten in Ihrer Projektmappe führen.
+Erstellen Sie mit dieser Umgebungsvariable nur dann Ziele, wenn Sie diese interne Ansicht benötigen. Diese Einstellung kann zu Problemen beim Erstellen von Projekten in Ihrer Projektmappe führen. Sehen Sie stattdessen im [Binärprotokoll](obtaining-build-logs-with-msbuild.md#save-a-binary-log) nach.
 
 ## <a name="see-also"></a>Weitere Informationen
 

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948009"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -138,7 +138,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
 6. Ändern Sie den Dateinamen per Rechtsklick zu *BankAccount.cs* und wählen Sie **Umbenennen** in **Projektmappen-Explorer**.
 
-7. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
+7. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen** aus, oder drücken Sie **STRG** + **UMSCHALT** + **B**.
 
 Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in diesem Artikel beziehen sich auf die `Debit`-Methode. Die `Debit`-Methode wird aufgerufen, wenn von einem Konto Geld abgehoben wird.
 
@@ -187,7 +187,7 @@ Erstellen Sie eine Testklasse, um die `BankAccount`-Klasse zu überprüfen. Sie 
 
 ### <a name="rename-a-file-and-class"></a>Umbenennen einer Datei und Klasse
 
-1. Wählen Sie zum Umbenennen der Datei im **Projektmappen-Explorer** im BankTests-Projekt die Datei *UnitTest1.cs* aus. Klicken Sie im Kontextmenü auf die Option **Umbenennen**, und benennen Sie dann die Datei in *BankAccountTests.cs* um.
+1. Wählen Sie zum Umbenennen der Datei im **Projektmappen-Explorer** im BankTests-Projekt die Datei *UnitTest1.cs* aus. Wählen Sie im Kontextmenü die Option **Umbenennen** aus, oder drücken Sie **F2**, und benennen Sie dann die Datei in *BankAccountTests.cs* um.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ Erstellen Sie eine Testklasse, um die `BankAccount`-Klasse zu überprüfen. Sie 
 
 ::: moniker range=">=vs-2019"
 
-2. Um die Klasse umzubenennen, setzen Sie im Code-Editor den Cursor auf `UnitTest1`, klicken Sie mit der rechten Maustaste, und wählen Sie **Umbenennen** aus. Geben Sie **BankAccountTests** ein, und drücken Sie dann die **EINGABETASTE**.
+2. Zeigen Sie im Code-Editor mit dem Cursor auf `UnitTest1`, klicken Sie mit der rechten Maustaste, und wählen Sie dann **Umbenennen** aus (oder drücken Sie **F2**), um die Klasse umzubenennen. Geben Sie **BankAccountTests** ein, und drücken Sie dann die **EINGABETASTE**.
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ Eine Testmethode muss die folgenden Anforderungen erfüllen:
 
 ## <a name="build-and-run-the-test"></a>Den Test erstellen und ausführen
 
-1. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.
+1. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen** aus, oder drücken Sie **STRG** + **UMSCHALT** + **B**.
 
-2. Wenn der **Test-Explorer** nicht geöffnet ist, öffnen Sie ihn, indem Sie in der oberen Menüleiste **Testen** > **Windows** > **Test-Explorer** auswählen.
+2. Wenn der **Test-Explorer** nicht geöffnet ist, öffnen Sie ihn, indem Sie in der oberen Menüleiste **Testen** > **Windows** > **Test-Explorer** auswählen oder **STRG** + **E**, **T** drücken.
 
-3. Wählen Sie **Alle ausführen** aus, um den Test auszuführen.
+3. Wählen Sie **Alle ausführen** aus, oder drücken Sie **STRG** + **R**, **V**, um den Test auszuführen.
 
    Während der Test ausgeführt wird, gibt die Statusleiste am oberen Rand des Fensters **Test-Explorer** den aktuellen Status an. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich sind, oder rot, sofern bei einem der Tests ein Fehler auftritt.
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Erneutes Ausführen des Tests
 
-Wählen Sie im **Test-Explorer** **Alle ausführen** aus, um den Test erneut auszuführen. Wenn die rote oder grüne Statusleiste grün wird, war der Test erfolgreich.
+Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus, oder drücken Sie **STRG** + **R**, **V**, um den Test erneut auszuführen. Wenn die rote oder grüne Statusleiste grün wird, war der Test erfolgreich.
 
 ![Test-Explorer in Visual Studio 2019, der erfolgreiche Tests anzeigt](media/test-explorer-banktests-passed.png)
 

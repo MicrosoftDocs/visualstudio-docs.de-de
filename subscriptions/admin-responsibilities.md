@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Aufgaben von Abonnementadministratoren.
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467465"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511292"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Übersicht über die Aufgaben eines Administrators
 Als Administrator können Sie Abonnements für Ihre Organisation verwalten.  Die Administratorrolle trägt auch die Verantwortung dafür, dass die Abonnements in Übereinstimmung mit den Lizenzbedingungen verwaltet werden. In diesem Artikel werden die Verantwortlichkeiten, Vorteile und Einschränkungen der Administratorrolle beschrieben.
@@ -41,6 +41,7 @@ Mithilfe von Visual Studio-Abonnements können Entwickler Softwaretools installi
 - [Dokumentation zu Azure DevOps](/azure/devops/)
 - [Azure-Dokumentation](/azure/)
 - [Dokumentation zu Microsoft 365](/microsoft-365/)
+- [Verwaltungs- und Abonnementsupport für Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zu den Aufgaben von Administratoren:

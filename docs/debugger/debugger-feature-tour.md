@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 5bfa190f3bbc2a4f8b34d42d62b0ccc9b293674a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873131"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -93,7 +93,7 @@ Mit diesem Befehl wird die Ausführung der App so lange fortgesetzt (und der Deb
 
 ## <a name="run-to-cursor"></a>Ausführen bis Cursor
 
-Wenn Sie Code bearbeiten (anstatt ihn im Debugger anzuhalten), klicken Sie mit der rechten Maustaste auf eine Codezeile in Ihrer App, und wählen Sie dann **Ausführen bis Cursor** aus. Dadurch wird das Debuggen gestartet und ein temporärer Breakpoint in der aktuellen Codezeile festgelegt.
+Wenn Sie Code bearbeiten (anstatt ihn im Debugger anzuhalten), klicken Sie mit der rechten Maustaste auf eine Codezeile in Ihrer App, und wählen Sie dann **Ausführen bis Cursor** aus, oder drücken Sie **STRG** und die F-Tasten bis **F10**. Dadurch wird das Debuggen gestartet und ein temporärer Breakpoint in der aktuellen Codezeile festgelegt.
 
 ![Ausführen bis Cursor](../debugger/media/dbg-tour-run-to-cursor.png "Ausführen bis Cursor")
 
@@ -108,7 +108,7 @@ Dieser Befehl ist nützlich, wenn Sie Code bearbeiten und schnell einen temporä
 
 ## <a name="restart-your-app-quickly"></a>Schnelles Neustarten Ihrer App
 
-Klicken Sie in der Symbolleiste „Debuggen“ auf **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "App neu starten") (**STRG + UMSCHALT + F5**).
+Wählen Sie in der Symbolleiste „Debuggen“ die Option **Neu starten** > ![App neu starten](../debugger/media/dbg-tour-restart.png "App neu starten") aus, oder drücken Sie **STRG+UMSCHALT+F5**.
 
 Durch das Klicken auf **Neu starten** sparen Sie im Vergleich zum Beenden der App und dem erneuten Starten des Debuggers Zeit. Der Debugger hält am ersten Breakpoint an, der bei der Codeausführung erreicht wird.
 
