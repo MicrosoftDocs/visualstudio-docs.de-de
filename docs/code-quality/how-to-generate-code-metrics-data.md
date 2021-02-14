@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860040"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496261"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Gewusst wie: Generieren von Codemetrikdaten
 
@@ -279,7 +279,7 @@ Wenn Sie das nuget-Paket nicht installieren möchten, können Sie die ausführba
 1. Klonen Sie das Repository [dotnet/Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers) .
 2. Öffnen Sie Developer-Eingabeaufforderung für Visual Studio als Administrator.
 3. Führen Sie im Stamm **Verzeichnis des Roslyn-Analyzers-** Repository den folgenden Befehl aus: `Restore.cmd`
-4. Wechseln Sie in das Verzeichnis *src\tools*.
+4. Wechseln Sie in das Verzeichnis *src\tools\metrics*.
 5. Führen Sie den folgenden Befehl aus, um das Projekt " **Metrics. csproj** " zu erstellen:
 
    ```shell
@@ -310,7 +310,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 Weitere Informationen finden Sie unter [Aktivieren der Erstellung von Codemetriken im Legacy Modus](https://github.com/dotnet/roslyn-analyzers/pull/1841).
 
-### <a name="previous-versions"></a>Frühere Versionen
+### <a name="previous-versions"></a>Vorherige Versionen
 
 ::: moniker range=">=vs-2019"
 Visual Studio 2015 enthielt ein befehlszeilencodemetriktool, das auch als *Metrics.exe* bezeichnet wurde. Diese vorherige Version des Tools hat eine binäre Analyse, d. h. eine assemblybasierte Analyse, durchgeführt. Die neuere Version des *Metrics.exe* Tools analysiert stattdessen Quellcode. Da es sich bei dem neueren *Metrics.exe* Tool um Quell Code basiert handelt, können sich die Metrikergebnisse der Befehlszeilen Code von der Visual Studio-IDE und früheren Versionen von *Metrics.exe* unterscheiden. Ab Visual Studio 2019 analysiert die Visual Studio-IDE Quellcode wie das Befehlszeilen Tool, und die Ergebnisse müssen identisch sein.
