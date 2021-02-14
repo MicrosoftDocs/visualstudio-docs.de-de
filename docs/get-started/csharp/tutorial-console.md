@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909353"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -49,13 +49,13 @@ Zunächst müssen Sie ein Projekt für die C#-Anwendung erstellen. Der Projektty
 2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
    (Alternativ können Sie die Tastenkombination **STRG**+**UMSCHALT**+**N** verwenden.)
 
-3. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **C#** auf, und wählen Sie **.NET Core** aus. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei *_Calculator_*.
+3. Klappen Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **C#** auf, und wählen Sie **.NET Core** aus. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie die Datei **_Calculator_**.
 
    ![Projektvorlage „Console App (.NET Core)“ im Dialogfeld „Neues Projekt“ in der Visual Studio-IDE](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>Hinzufügen einer Workload (optional)
 
-Wenn die Projektvorlage *Console App (.NET Core)* (Konsolen-App (.NET Core)) nicht angezeigt wird, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Gehen Sie folgendermaßen vor:
+Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Core)) fehlt, fügen Sie einfach die Workload **Plattformübergreifende .NET Core-Entwicklung** hinzu. Gehen Sie folgendermaßen vor:
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1: Verwenden des Dialogfelds „Neues Projekt“
 

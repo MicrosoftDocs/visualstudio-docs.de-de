@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Zugriff auf GitHub Enterprise als Teil von Visual Studio-Abonnements.
-ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537902"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511357"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio-Abonnements mit GitHub Enterprise 
 
@@ -85,7 +85,7 @@ Antwort:  Sie erhalten mit GitHub Enterprise alle Vorteile eines Visual Studio-S
 - Antworten auf Fragen zu einer Vielzahl von GitHub-Themen finden Sie unter [GitHub-Hilfe](https://help.github.com).
 - Benötigen Sie weitere Hilfe?  Wenden Sie sich an den [GitHub-Support](https://support.github.com/).
 - Hilfe von anderen GitHub-Benutzern finden Sie im [GitHub-Community-Forum](https://github.community/).
-- Wenn Sie Unterstützung beim Vertrieb, bei Abonnements und Konten sowie bei der Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport für Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- Hilfe bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements finden Sie auf der Seite [Hilfe erhalten](https://my.visualstudio.com/GetHelp).
 - Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 - Erhalten Sie [technischen Support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) für GitHub Enterprise.   
 

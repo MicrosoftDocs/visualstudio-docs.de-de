@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199771b1cda2049d6508832d7d2264558104a566
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935702"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aktualisieren von Visual Studio mit einem minimalen Offlinelayout
 
@@ -67,6 +67,8 @@ Dieses Tool erstellt Updatelayouts ab Visual Studio 2017 (15.9). Das Layout kan
 * **verify:** Verwenden Sie diesen Befehl, um zu bestimmen, ob der Layoutordner beschädigt ist.
 * **Problemlösung:** Verwenden Sie diesen Befehl, um Fehlerbehebungen für den beschädigten Layoutordner durchzuführen, einschließlich des Ersetzens jeglicher fehlender Pakete aus dem Layoutordner.
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>Optionen 
 
 |Optionen    |BESCHREIBUNG    |Erforderlich/Optional |Beispiel |
@@ -81,6 +83,26 @@ Dieses Tool erstellt Updatelayouts ab Visual Studio 2017 (15.9). Das Layout kan
 |--includeRecommended    |Enthält die empfohlenen Komponenten für alle zu installierenden Workloads, aber keine optionalen Komponenten.    |Optional    |Für eine bestimmte Workload: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> Zur Anwendung aller Workloads: --includeRecommended |
 |--includeOptional |Enthält die optionalen Komponenten für alle zu installierenden Workloads, einschließlich der empfohlenen Komponenten.    |Optional    |Für eine bestimmte Workload: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> Zur Anwendung aller Workloads: --includeOptional |
 
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>Optionen 
+
+|Optionen    |BESCHREIBUNG    |Erforderlich/Optional |Beispiel |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt;Verzeichnis&gt; |Gibt ein Verzeichnis an, in dem ein minimales Offlinelayout erstellt werden soll.       |Erforderlich        |--targetLocation c:\VSLayout\ |
+|--baseVersion &lt;Version&gt;|Das minimale Offlinelayout wird ab dieser Version generiert.   |Erforderlich|--baseVersion 15.0.0 |
+|--targetVersion &lt;Version&gt;|Das minimale Offlinelayout wird bis zu und einschließlich dieser Version generiert.|Erforderlich|--targetVersion 15.9.31|
+|--languages    |Gibt die Sprachen an, die in das minimale Offlinelayout eingeschlossen werden sollen. Es können mehrere Werte angegeben werden, die dann durch Leerzeichen voneinander getrennt werden müssen.    |Erforderlich    |--languages en-US fr-FR |
+|--productId &lt;ID&gt;    |Die ID des Produkts, für das das minimale Offlinelayout generiert werden soll. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Erforderlich|--productId Microsoft.VisualStudio.Product.Enterprise |
+|--filePath    |Der Dateipfad der MinimalLayout.json-Datei eines bereits erstellten Layouts. Diese Option wird nur mit dem regenerate-Befehl verwendet.     |Für den regenerate-Befehl erforderlich    |--filePath C:\VSLayout\minimalLayout.json <br><br> **Beachten Sie, dass der regenerate-Befehl nur --filePath als Option akzeptiert.** |
+|--add &lt;mindestens eine Workload- oder Komponenten-ID&gt;    |Gibt mindestens eine Workload- oder Komponenten-ID an, die hinzugefügt werden soll. Zusätzliche Komponenten können global hinzugefügt werden, wenn Sie --includeRecommended und/oder <br> –-includeOptional verwenden. Es können mehrere Workload- oder Komponenten-IDs angegeben werden, die durch ein Leerzeichen voneinander getrennt werden müssen.    |Optional    |--add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio |
+|--includeRecommended    |Enthält die empfohlenen Komponenten für alle zu installierenden Workloads, aber keine optionalen Komponenten.    |Optional    |Für eine bestimmte Workload: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> Zur Anwendung aller Workloads: --includeRecommended |
+|--includeOptional |Enthält die optionalen Komponenten für alle zu installierenden Workloads, einschließlich der empfohlenen Komponenten.    |Optional    |Für eine bestimmte Workload: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> Zur Anwendung aller Workloads: --includeOptional |
+
+::: moniker-end
+
 ### <a name="generating-a-minimal-layout"></a>Generieren eines minimalen Layouts
 
 > [!IMPORTANT]
@@ -91,6 +113,8 @@ Erstellen Sie mithilfe des **generate**-Befehls ein minimales Layout für Ihre s
 Bevor Sie das Layout erstellen, können Sie sich die Gesamtgröße des Downloads und die Anzahl der darin eingeschlossenen Pakete anzeigen lassen, indem Sie den **preview**-Befehl verwenden. Dieser Befehl akzeptiert dieselben Optionen wie der **generate**-Befehl, und die Details werden in die Konsole geschrieben.
 
 Im Folgenden sehen Sie einige Beispiele, wie eine Vorschau für ein minimales Layout angezeigt werden kann und wie es generiert und erneut generiert werden kann:
+
+::: moniker range="vs-2019"
 
 - Zuerst sehen Sie hier ein Beispiel, wie Sie eine Vorschau für ein Layout für die Visual Studio Enterprise-Versionen 16.4.0 bis 16.4.4 nur für die Sprache Englisch anzeigen können.
 
@@ -123,6 +147,44 @@ Im Folgenden sehen Sie einige Beispiele für die Verwendung des **generate**-Bef
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- Zuerst sehen Sie hier ein Beispiel, wie Sie eine Vorschau für ein Layout für die Visual Studio Enterprise-Versionen 15.0.0 bis 15.9.31 anzeigen können (nur für die Sprache Englisch).
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- Hier sehen Sie, wie Sie dasselbe Layout mit einer Workload generieren.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- Hier wiederum sehen Sie, wie Sie ein minimales Offlinelayout mithilfe einer vorhandenen Antwortdatei erneut generieren. 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+Im Folgenden sehen Sie einige Beispiele für die Verwendung des **generate**-Befehls:
+
+- Hier sehen Sie, wie Sie eine zusätzliche Workload hinzufügen und nur die empfohlenen Pakete einschließen. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- Schließlich sehen Sie hier, wie Sie mehrere Sprachen in Ihr minimales Layout einschließen würden. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>Verwalten eines minimalen Layouts
 

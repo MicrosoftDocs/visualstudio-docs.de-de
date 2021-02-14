@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950899"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Schritt 11: Ausführen Ihrer Picture Viewer-App und Ausprobieren weiterer Features
 
@@ -29,8 +29,8 @@ Ihre Picture Viewer-App ist fertig und bereit zur Ausführung. Sie können Ihre 
 
 1. Bevor Sie ein Bild öffnen, wählen Sie die Schaltfläche **Hintergrundfarbe festlegen** aus. Das Dialogfeld **Farbe** wird geöffnet.
 
-     ![Dialogfeld „Farbe“](../ide/media/express_colordialog.png)<br/>
-*Dialogfeld* ***Farbe***
+     ![Dialogfeld „Farbe“](../ide/media/express_colordialog.png)<br/>_Dialogfeld* 
+***Farbe** _
 
 1. Wählen Sie eine Farbe aus, um die PictureBox-Hintergrundfarbe festzulegen. Sehen Sie sich die `backgroundButton_Click()`- oder `BackgroundButton_Click()`-Methode genau an, um zu verstehen, wie sie funktioniert.
 

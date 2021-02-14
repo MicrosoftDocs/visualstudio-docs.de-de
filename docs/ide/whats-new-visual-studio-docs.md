@@ -1,97 +1,115 @@
 ---
-title: 'Visual Studio-Dokumentation: Neuerungen im Dezember 2020 '
+title: 'Visual Studio-Dokumentation: Neuerungen im Januar 2021'
 titleSuffix: ''
-description: Hier finden Sie die Neuerungen in der Visual Studio-Dokumentation für Dezember 2020.
-ms.date: 01/11/2021
+description: Neues in der Visual Studio-Dokumentation (Januar 2021)
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
 ms.assetid: 89844796-621B-4EF5-9D76-197084B011CB
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfa3c6ec4655edf6313bea2e68b995ae8b3f9b0
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 17b307e248e18710a93669116ccf032e533145f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960493"
 ---
-# <a name="visual-studio-docs-whats-new-for-december-2021"></a>Visual Studio-Dokumentation: Neuerungen im Dezember 2020
+# <a name="visual-studio-docs-whats-new-for-january-2021"></a>Visual Studio-Dokumentation: Neuerungen im Januar 2021
 
-Willkommen bei den Neuerungen in der Visual Studio-Dokumentation für Dezember 2020. Nachfolgend sind alle größeren Änderungen aufgelistet, die in diesem Zeitraum an der Dokumentation vorgenommen wurden. Informationen zu den Neuerungen in den vorherigen Monaten finden Sie im Artikel [Verlauf der Neuerungen](whats-new-visual-studio-docs-history.md).
+Willkommen bei den Neuerungen in der Visual Studio-Dokumentation für Januar 2021. Nachfolgend sind alle größeren Änderungen aufgelistet, die in diesem Zeitraum an der Dokumentation vorgenommen wurden. Informationen zu den Neuerungen in den vorherigen Monaten finden Sie im Artikel [Verlauf der Neuerungen](whats-new-visual-studio-docs-history.md).
 
 ## <a name="azure"></a>Azure
 
 **Neue Artikel**
 
-- [Hinzufügen von Azure App Configuration mithilfe von verbundenen Visual Studio-Diensten](../azure/vs-azure-tools-connected-services-app-configuration.md) – Tutorial für App Configuration mithilfe der verbundenen Dienste
+- [Erstellen und Bereitstellen in Cloud Services (erweiterter Support) in Visual Studio (Vorschauversion)](../azure/cloud-services-extended-support.md): erweiterter Support für Cloud Services, keine Vorlage
 
 ## <a name="code-quality"></a>Codequalität
 
-**Aktualisierte Artikel**
+**Neue Artikel**
 
-- [Übersicht](../code-quality/use-roslyn-analyzers.md) – Buildprozess über die Befehlszeile mit editorconfig
-- [Aktivieren oder Installieren von .NET-Analysetools von Erstanbietern](../code-quality/install-net-analyzers.md)
-  - Die Dokumentation für die Migration von FxCop-Analysetools zu .NET-Analysetools wurde verdeutlicht.
-  - Das Inhaltsverzeichnis für .NET-Analysetools wurde neu angeordnet.
-- [Migrieren von FxCop-Analysetools zu .NET-Analysetools](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) – Die Dokumentation für die Migration von FxCop-Analysetools zu .NET-Analysetools wurde verdeutlicht.
-
-## <a name="containers"></a>Container
-
-**Aktualisierte Artikel**
-
-- [Problembehandlung für die Visual Studio-Entwicklung mit Docker](../containers/troubleshooting-docker-errors.md) – Die Anleitung für die Problembehandlung für Docker für Visual Studio wurde aktualisiert.
+- [Codemetriken: Kopplung zwischen Klassen](../code-quality/code-metrics-class-coupling.md): Aktualisierung der Codemetriken
+- [Codemetriken: Bereich und Bedeutung des Wartbarkeitsindexes](../code-quality/code-metrics-maintainability-index-range-and-meaning.md): Aktualisierung der Codemetriken
 
 ## <a name="debugger"></a>Debugger
 
+**Neue Artikel**
+
+- [Debuggen von .NET Core-Apps in WSL 2 mit Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md): .NET Core-Debugging für WSL 2
+
 **Aktualisierte Artikel**
 
-- [Häufig gestellte Fragen: Suchen nach der benötigten Debugfunktion in Visual Studio](../debugger/find-your-debugging-task.md) – Es wurden Informationen zum Suchen Ihrer Debugaufgabe und Übersichtsthemen hinzugefügt.
+- [Erstellen benutzerdefinierter Ansichten von C++-Objekten im Debugger mit dem Natvis-Framework](../debugger/create-custom-views-of-native-objects.md): Präzisierung der XML-Formatierung für Sonderzeichen in Natvis
+- [Sicherheitswarnung: Das Anfügen an einen Prozess, der einem nicht vertrauenswürdigen Benutzer gehört, kann gefährlich sein. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md): Updates für das Anfügen an einen nicht vertrauenswürdigen Prozess
+
+## <a name="deployment"></a>Bereitstellung
+
+**Aktualisierte Artikel**
+
+- [&lt;InstallChecks&gt;-Element (Bootstrapper)](../deployment/installchecks-element-bootstrapper.md): Aktualisierte Dokumentation für das Bootstrapperpaket, die das neue BeforeInstallChecks-Element beinhaltet
+
+## <a name="extensibility"></a>Erweiterungen
+
+**Aktualisierte Artikel**
+
+- [Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung](../extensibility/walkthrough-publishing-a-visual-studio-extension.md): [PUBLIC_MOVE]-Commit vom öffentlichen PR 6214
 
 ## <a name="get-started"></a>Erste Schritte
 
+**Neue Artikel**
+
+- [Tutorial: Öffnen eines Projekts aus einem Repository in Visual Studio 2017](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md): Tutorial „Öffnen eines Projekts aus einem Repository“ aktualisiert
+
 **Aktualisierte Artikel**
 
-- [Einführung in Projekte und Projektmappen](../get-started/tutorial-projects-solutions.md)
-  - Die Abschnitte zu Projektmappen und Projekten wurden aktualisiert.
-  - „tutorial-projects-solutions.md“ wurde aktualisiert.
-  - Fehlt in den Menüoptionen
-- [Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio](../get-started/csharp/tutorial-console.md) – Tutorial für C#-Konsolen-Apps (Teil 2) gilt nur für Visual Studio 2019
+- [Tutorial: Öffnen eines Projekts aus einem Repository](../get-started/tutorial-open-project-from-repo.md): Tutorial „Öffnen eines Projekts aus einem Repository“ aktualisiert
 
 ## <a name="ide"></a>IDE
 
+**Neue Artikel**
+
+- [F1-Hilfemenü für JavaScript in Visual Studio](./not-in-toc/default-f1-javascript.md): F1-Standardseiten für JS und TS hinzugefügt
+- [F1-Hilfemenü für TypeScript in Visual Studio](./not-in-toc/default-f1-typescript.md): F1-Standardseiten für JS und TS hinzugefügt
+
 **Aktualisierte Artikel**
 
-- [Projektmappen und Projekte in Visual Studio](./solutions-and-projects-in-visual-studio.md) – Die Abschnitte zu Projektmappen und Projekten wurden aktualisiert.
-- [Erstellen eines neuen Projekts in Visual Studio](./create-new-project.md)
-  - Der Alternativtext für Screenshots und Diagramme wurde optimiert.
-  - Es wurden weitere Updates an den Abschnitten zu Projektmappen und Projekten vorgenommen.
-- [Ressourcen für die Problembehandlung bei IDE-Fehlern](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) – Der veraltete Abschnitt zu Forumsressourcen wurde überarbeitet.
-- [Arbeiten mit Projektmappen und Projekten](./creating-solutions-and-projects.md) – Es wurden weitere Updates an den Abschnitten zu Projektmappen und Projekten vorgenommen.
-- [Melden eines Problems mit Visual Studio oder Visual Studio-Installer](./how-to-report-a-problem-with-visual-studio.md)
-  - Die Screenshots wurden aktualisiert.
-  - Es wurden Änderungen bezüglich der Entwicklercommunity vorgenommen.
-- [Tipps und Tricks zur Leistungssteigerung für Visual Studio](./visual-studio-performance-tips-and-tricks.md) – Der Abschnitt „Deaktivieren von Diagnosetools“ wurde aktualisiert.
+- [Projektmappen und Projekte in Visual Studio](./solutions-and-projects-in-visual-studio.md): Link zur Visual Studio-Imagebibliothek hinzugefügt
+
+## <a name="install"></a>Installieren
+
+**Aktualisierte Artikel**
+
+- [Visual Studio-Buildnummern und -Releasetermine](../install/visual-studio-build-numbers-and-release-dates.md): Updates am Patch Tuesday
+
+## <a name="msbuild"></a>MSBuild
+
+**Aktualisierte Artikel**
+
+- [MSBuild-Glossar](../msbuild/msbuild-glossary.md): Schlüsselbegriffe des Glossars in H2 geändert
+
+## <a name="profiling"></a>Profilerstellung
+
+**Neue Artikel**
+
+- [Visualisieren von .NET-Leistungsindikatoren über den Visual Studio-Profiler](../profiling/dotnet-counters-tool.md): Dokumentation für das .NET Counters-Tool hinzugefügt
 
 ## <a name="test"></a>Test
 
 **Aktualisierte Artikel**
 
-- [Erste Schritte mit Komponententests](../test/getting-started-with-unit-testing.md) – Es wurden Ermittlungsarbeiten und andere Verbesserungen bezüglich Testtools vorgenommen.
-- [Einführung in Testtools in Visual Studio](../test/improve-code-quality.md) – Es wurden Ermittlungsarbeiten und andere Verbesserungen bezüglich Testtools vorgenommen.
-- [Testtools in Visual Studio: In den Suchergebnissen angezeigter erforderlicher Seitentitel (einschließlich Marke, weniger als 60 Zeichen):](../test/index.yml) – Es wurden Ermittlungsarbeiten und andere Verbesserungen bezüglich Testtools vorgenommen.
-- [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md) – Es wurde eine dynamische XML-Datei für eine Wiedergabeliste für verschiedene Frameworks hinzugefügt.
+- [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md): Abschnitt „Testen des Audiohinweises“ hinzugefügt
 
 ## <a name="community-contributors"></a>Mitwirkende in der Community
 
 Die folgenden Personen haben während dieses Zeitraums zu den Visual Studio-Dokumenten beigetragen. Vielen Dank! In [Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht](/contribute/) erfahren Sie, wie Sie an den Visual Studio-Dokumenten mitwirken können.
 
-- [surlydev](https://github.com/surlydev) – SurlyDev (2)
-- [nschonni](https://github.com/nschonni) – Nick Schonning (1)
-- [syohex](https://github.com/syohex) – Shohei YOSHIDA (1)
+- [ericmutta](https://github.com/ericmutta): Eric Mutta (1)
+- [saip106](https://github.com/saip106): Sai Gudigundla (1)

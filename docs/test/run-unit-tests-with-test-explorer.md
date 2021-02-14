@@ -7,15 +7,15 @@ f1_keywords:
 - vs.unittesting.testexplorer.overview
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 05a850b0c88a39366805ff892fb698f637b3bbe1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836331"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -34,7 +34,7 @@ Visual Studio enthält die Komponententest-Frameworks von Microsoft für sowohl 
 
 ## <a name="run-tests-in-test-explorer"></a>Ausführen von Tests im Test-Explorer
 
-Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster** und dann **Test-Explorer** aus.
+Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü **Test** zuerst **Fenster** und dann **Test-Explorer** aus, oder drücken Sie **STRG** + **E**, **T**.
 
 ::: moniker range="vs-2017"
 ![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Sie können über die Symbolleiste **Test-Explorer** die meisten Aktionen zum Su
 ::: moniker range="vs-2017"
 Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder einen Satz ausgewählter Tests ausführen. Führen Sie einen der folgenden Schritte aus:
 
-- Wählen Sie zum Ausführen aller Tests in einer Projektmappe **Alle ausführen** aus.
+- Wählen Sie **Alle ausführen** aus, oder drücken Sie **STRG**+**R**, **V**, um alle Tests in einer Projektmappe auszuführen.
 
 - Klicken Sie zum Ausführen aller Tests in einer Standardgruppe auf **Ausführen**, und wählen Sie dann im Menü die Gruppe aus.
 
-- Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen** aus.
+- Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen** aus, oder drücken Sie **STRG**+**R**, **T**.
 
 - Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![Screenshot der Umschaltfläche für die parallele Testausführung auf der Visual Studio-Test-Explorer-Symbolleiste. Wenn diese Schaltfläche ausgewählt ist, werden Tests parallel ausgeführt.](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
@@ -77,11 +77,11 @@ Während der Testausführung wird die oben im Fenster **Test-Explorer** angezeig
 ::: moniker range=">=vs-2019"
 Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder einen Satz ausgewählter Tests ausführen. Führen Sie einen der folgenden Schritte aus:
 
-- Wählen Sie zum Ausführen aller Tests in einer Projektmappe das Symbol **Alle ausführen** aus.
+- Wählen Sie das Symbol **Alle ausführen** aus, oder drücken Sie **STRG**+**R**, **V**, um alle Tests in einer Projektmappe auszuführen.
 
 - Klicken Sie zum Ausführen aller Tests in einer Standardgruppe auf das Symbol **Ausführen**, und wählen Sie dann im Menü die Gruppe aus.
 
-- Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen** aus.
+- Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen** aus, oder drücken Sie **STRG**+**R**, **T**.
 
 - Wenn einzelne Tests keine Abhängigkeiten aufweisen, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über das Eigenschaftenmenü auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 ::: moniker-end
@@ -130,7 +130,7 @@ Bei einem fehlgeschlagenen Test wird im Detailbereich außerdem Folgendes angeze
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Anzeigen des Quellcodes einer Testmethode
 
-Wählen Sie zum Anzeigen des Quellcodes einer Testmethode im Visual Studio-Editor den Test und anschließend im Kontextmenü **Test öffnen** (Tastatur: **F12**) aus.
+Wählen Sie zum Anzeigen des Quellcodes einer Testmethode im Visual Studio-Editor den Test und anschließend im Kontextmenü **Test öffnen** aus, oder drücken Sie **F12**.
 
 ## <a name="group-and-filter-the-test-list"></a>Gruppieren und Filtern der Testliste
 

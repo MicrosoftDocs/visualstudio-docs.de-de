@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: Häufig gestellte Fragen zur Abrechnung von Cloudabonnements.
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353420"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572875"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Häufig gestellte Fragen zur Abrechnung von Visual Studio-Cloudabonnements
 Denken Sie daran, die [Vorteile und Preise von Cloudabonnements zu vergleichen](https://visualstudio.microsoft.com/vs/pricing/), um die Vorteile jedes Visual Studio-Abonnements zu verstehen. Dabei werden die Cloud- und Standardabonnements verglichen, Details zu den Vorteilen für Abonnenten bereitgestellt und vieles mehr.
@@ -28,6 +28,9 @@ Einige Arten von Azure-Abonnements, einschließlich der [kostenlosen Testversion
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>Frage: Muss ich andere Azure-Dienste kaufen?
 Antwort: Nein. Wenn Sie über Azure nur Visual Studio-Cloudabonnements kaufen möchten, können Sie dies tun.
+
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>Frage: Wo kann ich meine Abrechnungs- und Nutzungsdaten einsehen?
+Antwort:  Hier erhalten Sie Informationen zur [Einsicht Ihrer Rechnung und Ihres Verbrauchs](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date).
 
 ## <a name="enterprise-agreement-ea-customers"></a>Enterprise Agreement-Kunden
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Frage: Kann ich ein Business Agreement verwenden, um Visual Studio-Cloudabonnements zu kaufen?

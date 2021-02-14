@@ -8,15 +8,15 @@ helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: c83b13b852b9ae53bd2218a62b6681478369df1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970516"
 ---
 # <a name="get-started-with-unit-testing"></a>Erste Schritte mit Unittests
 
@@ -180,13 +180,13 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Komponententestprojekt erstell
 1. Öffnen Sie den [Test-Explorer](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Klicken Sie oben in der Menüleiste auf **Test** > **Test-Explorer**, um den Test-Explorer zu öffnen.
+   Wählen Sie oben in der Menüleiste **Test** > **Test-Explorer** aus, oder drücken Sie **STRG** + **E**, **T**, um den Test-Explorer zu öffnen.
    ::: moniker-end
    ::: moniker range="vs-2017"
    Klicken Sie oben in der Menüleiste auf **Test** > **Windows** > **Test-Explorer**, um den Test-Explorer zu öffnen.
    ::: moniker-end
 
-1. Die Komponententests führen Sie aus, indem Sie auf **Alle ausführen** klicken.
+1. Führen Sie die Komponententests aus, indem Sie **Alle ausführen** auswählen oder **STRG** + **R**, **V** drücken.
 
    ![Ausführen von Komponententests im Test-Explorer](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,7 +274,7 @@ So fügen Sie ein Komponententestprojekt hinzu:
 
    ![Hinzufügen von Code zur Codedatei für Ihren Komponententest](media/vs-2019/unit-test-method.png)
 
-6. Führen Sie den Test über den **Test-Explorer** aus, oder, indem Sie mit der rechten Maustaste auf den Testcode klicken und die Option **Tests ausführen** auswählen.
+6. Führen Sie den Test über den **Test-Explorer** aus, oder klicken Sie mit der rechten Maustaste auf den Testcode, und wählen Sie die Option **Tests ausführen** aus (oder drücken Sie **STRG** + **R**, **T**).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

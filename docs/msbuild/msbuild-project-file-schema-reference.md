@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 549e78309ef5fc5e9baf4237f9eca8c7484bc198
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b3451101d6ab2483960731281763167c0cd1629c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918975"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenz zum MSBuild-Projektdateischema
 
 Stellt eine Tabelle mit allen XML-Schemaelementen von MSBuild sowie ihren verfügbaren Attributen und untergeordneten Elementen bereit.
 
- MSBuild verwendet Projektdateien, um der Build-Engine anzuzeigen, was wie erstellt werden soll. MSBuild-Projektdateien sind XML-Dateien, für die das MSBuild-XML-Schema gilt. Dieser Abschnitt beschreibt die XML-Schemadefinitionsdatei ( *XSD* ) für MSBuild.
+ MSBuild verwendet Projektdateien, um der Build-Engine anzuzeigen, was wie erstellt werden soll. MSBuild-Projektdateien sind XML-Dateien, für die das MSBuild-XML-Schema gilt. Dieser Abschnitt beschreibt die XML-Schemadefinitionsdatei (*XSD*) für MSBuild.
 
 Der Schemalink ist in MSBuild-Projektdateien ab Visual Studio 2017 nicht erforderlich. Wenn er vorhanden ist, sollte er unabhängig der Version von Visual Studio ` http://schemas.microsoft.com/developer/msbuild/2003` sein.
 
@@ -50,7 +50,7 @@ Der Schemalink ist in MSBuild-Projektdateien ab Visual Studio 2017 nicht erford
 |[Output-Element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Bedingung<br /><br /> Artikelname<br /><br /> PropertyName<br /><br /> TaskParameter|
 |[Parameter-Element](../msbuild/parameter-element.md)|--|Output<br /><br /> ParameterType<br /><br /> Erforderlich|
 |[ParameterGroup-Element](../msbuild/parametergroup-element.md)|*Parameter*|--|
-|[Project-Element (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> Importieren<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
+|[Project-Element (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> Importieren<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> Sdk<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
 |[ProjectExtensions-Element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
 |[Property-Element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Bedingung|
 |[PropertyGroup-Element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Eigenschaft*|Bedingung|

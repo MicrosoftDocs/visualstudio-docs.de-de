@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 58f46f80a90cce116b985def0377ef80f5a671c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950665"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Schritt 5: Hinzufügen von Steuerelementen zum Formular
 
@@ -45,7 +45,7 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein <xref
 
 1. Wählen Sie im Formular **TableLayoutPanel** aus, und fügen Sie dem Formular anschließend ein CheckBox-Steuerelement hinzu. Doppelklicken Sie in der **Toolbox** auf das Element **CheckBox**, um der nächsten freien Zelle in der Tabelle ein neues CheckBox-Steuerelement hinzuzufügen. Da ein PictureBox-Steuerelement die ersten beiden Zellen im TableLayoutPanel einnimmt, wird das CheckBox-Steuerelement der linken unteren Zelle hinzugefügt. Wählen Sie die Eigenschaft **Text** aus, und geben Sie wie in der folgenden Abbildung dargestellt das Wort **Stretch** ein.
 
-    ![TextBox-Steuerelement mit Stretch-Eigenschaft](../ide/media/express_pictureviewercheckbox.png)<br/>**_TextBox_* _ _-Steuerelement mit* ***Stretch**_ _-Eigenschaft*
+    ![TextBox-Steuerelement mit Stretch-Eigenschaft](../ide/media/express_pictureviewercheckbox.png)<br/>***TextBox** _-_Steuerelement mit* ***Stretch**_ _-Eigenschaft*
 
 1. Wählen Sie das Steuerelement **TableLayoutPanel** im Formular aus, und wechseln Sie dann zur Gruppe **Container** in der **Toolbox** (wo Sie das TableLayoutPanel-Steuerelement abgerufen haben). Doppelklicken Sie auf das Element **FlowLayoutPanel**, um der letzten Zelle (unten rechts) ein neues Steuerelement hinzuzufügen. Docken Sie dann das FlowLayoutPanel-Element im TableLayoutPanel-Steuerelement an. Hierzu klicken Sie entweder in der Aufgabenliste des FlowLayoutPanel-Elements auf **In übergeordnetem Container andocken** oder legen die **Dock**-Eigenschaft des Steuerelements auf **Fill** fest.
 
@@ -76,7 +76,7 @@ In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein <xref
 
    Die Schaltflächen sollten jetzt die richtige Größe aufweisen und in der richtigen Reihenfolge angezeigt werden. (Sofern alle vier Schaltflächen ausgewählt sind, können Sie alle vier **AutoSize**-Eigenschaften gleichzeitig ändern.) Im folgenden Bild werden die vier Schaltflächen gezeigt.
 
-    ![Bildanzeigeprogramm mit vier Schaltflächen](../ide/media/express_autosize.png)<br/>**_Bildanzeigeprogramm_* _ _mit vier Schaltflächen*
+    ![Bildanzeigeprogramm mit vier Schaltflächen](../ide/media/express_autosize.png)<br/>***Bildanzeigeprogramm** _ _mit vier Schaltflächen*
 
 1. Führen Sie jetzt Ihr Programm aus, damit die Änderungen widergespiegelt werden.
 

@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Einstellungen u. a. für Sprachen, Kontakte und die Abonnementebene im Verwaltungsportal festlegen.
-ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467439"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511344"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Festlegen der Vertragseinstellungen im Verwaltungsportal
 Superadministratoren können bestimmte Einstellungen im Verwaltungsportal festlegen, die global auf alle Verträge angewendet werden.  Diese Einstellungen füllen automatisch die Abonnementdaten für Ihre Administratoren aus, wenn diese Abonnenten hinzufügen, und können ausschließlich von Superadministratoren global geändert werden.  
@@ -73,7 +73,7 @@ Antwort:  Weitere Informationen finden Sie im Artikel [Anfordern von Unterstütz
 Antwort:  Wenn keine E-Mail-Adresse für die Einstellung **Contact email address** (E-Mail-Adresse des Kontakts) festgelegt wird, erhalten alle Administratoren, die im Vertrag festgehalten sind, die Anfrage. 
 
 ## <a name="resources"></a>Ressourcen
-- [Support für die Verwaltung von Visual Studio und Abonnements](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Verwaltungs- und Abonnementsupport für Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](/visualstudio/)

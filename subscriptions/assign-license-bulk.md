@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: how-to
 description: Erfahren Sie, wie Administratoren Lizenzen über die Funktion zum Massenhinzufügen oder mithilfe von Microsoft Azure Active Directory-Gruppen mehreren Abonnenten zuweisen können.
-ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 995859dce259b3a4edf968fac98723e226cf59d5
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696622"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511370"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Zuweisen von Abonnements zu mehreren Benutzern
 Im Verwaltungsportal für Abonnements können Sie Benutzer einzeln oder in großen Gruppen hinzufügen.  Informationen zum Hinzufügen von einzelnen Benutzern finden Sie unter [Hinzufügen einzelner Benutzer](assign-license.md).
@@ -137,7 +137,7 @@ Antwort: Die Funktion ist zurzeit nur für Organisationen mit vertrauenswürdige
    > ![Klicken Sie auf die Schaltfläche „Details“.](_img/assign-license-bulk/bulk-add-agreement.png "Klicken Sie auf die Schaltfläche „Details“, um anzuzeigen, welche Art von Vereinbarung Sie haben.")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Frage: Ich habe einen Benutzer zu meiner Azure AD-Sicherheitsgruppe hinzugefügt, dieser wird aber im Abonnementverwaltungsportal nicht als hinzugefügt angezeigt und hat kein Abonnement erhalten. Warum nicht?  
-Antwort: Abhängig von der Azure AD-Konfiguration Ihrer Organisation kann es bis zu 24 Stunden dauern, bis der Benutzer hinzugefügt wird. Falls seit dem Hinzufügen mehr als 24 Stunden vergangen sind, [wenden Sie sich an den Support](https://visualstudio.microsoft.com/support/support-overview-vs).  
+Antwort: Abhängig von der Azure AD-Konfiguration Ihrer Organisation kann es bis zu 24 Stunden dauern, bis der Benutzer hinzugefügt wird. Wenn bereits mehr als 24 Stunden vergangen sind, besuchen Sie den [Verwaltungs- und Abonnementsupport für Visual Studio](https://my.visualstudio.com/gethelp).  
 
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](/visualstudio/)

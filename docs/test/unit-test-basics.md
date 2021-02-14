@@ -8,15 +8,15 @@ f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 755affbf52aa31539b35af4520f5a8d17254f776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962729"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Ausführen von Tests im Test-Explorer
 
-Wenn Sie das Testprojekt erstellen, werden die Tests im **Test-Explorer** angezeigt. Falls der **Test-Explorer** nicht geöffnet ist, klicken Sie im Visual Studio-Menü auf **Test** > **Fenster** > **Test-Explorer**.
+Wenn Sie das Testprojekt erstellen, werden die Tests im **Test-Explorer** angezeigt. Falls der **Test-Explorer** nicht geöffnet ist, wählen Sie im Visual Studio-Menü **Test** zuerst **Fenster** und dann **Test-Explorer** aus, oder drücken Sie **STRG** + **E**, **T**.
 
 ::: moniker range="vs-2017"
 ![Komponententest-Explorer](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ Mithilfe der **Test-Explorer**-Symbolleiste können Sie die Tests ermitteln, org
 ![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen** auswählen, um eine Teilmenge der Tests auszuführen. Wählen Sie einen Test aus, um die Details dieses Tests im Testdetailbereich anzuzeigen. Klicken Sie im Kontextmenü auf **Test öffnen** (auf der Tastatur: **F12**), um den Quellcode für den ausgewählten Test anzuzeigen.
+Wählen Sie **Alle ausführen** aus, oder drücken Sie **STRG** + **R**, **V**, um alle Tests auszuführen. Wenn Sie **Ausführen** auswählen oder **STRG** + **R**, **T** drücken, können Sie die auszuführenden Tests auswählen. Wählen Sie einen Test aus, um die Details dieses Tests im Testdetailbereich anzuzeigen. Klicken Sie im Kontextmenü auf **Test öffnen** (auf der Tastatur: **F12**), um den Quellcode für den ausgewählten Test anzuzeigen.
 
 ::: moniker range="vs-2017"
 

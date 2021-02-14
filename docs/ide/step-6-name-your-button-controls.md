@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868880"
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 
@@ -35,7 +35,7 @@ Das Formular enthält vier Schaltflächen, und die IDE hat ihnen folgende Namen 
 
 1. Wählen Sie im Formular die Schaltfläche **Schließen** aus. (Wenn alle Schaltflächen noch ausgewählt sind, drücken Sie die **ESC-TASTE**, um die Auswahl aufzuheben.) Scrollen Sie im Fenster **Eigenschaften**, bis Sie die Eigenschaft **(Name)** sehen. (Die Eigenschaft **(Name)** befindet sich oben in der Liste, wenn die Eigenschaften alphabetisch sortiert sind.) Ändern Sie den Namen wie im folgenden Screenshot gezeigt in **closeButton**.
 
-    ![Eigenschaftenfenster mit closeButton-Name](../ide/media/express_setnameproperty.png)<br>**_Eigenschaftenfenster_* _ _mit dem Namen* ***closeButton**_ _*
+    ![Eigenschaftenfenster mit closeButton-Name](../ide/media/express_setnameproperty.png)<br>***Eigenschaftenfenster** __ mit* dem _Namen* ***closeButton**_
 
     > [!NOTE]
     > Versuchen Sie, den Namen der Schaltfläche in **close Button** (Schaltfläche schließen) zu ändern, sodass ein Leerzeichen zwischen den Wörtern „close“ und „Button“ steht. Daraufhin zeigt die IDE eine Fehlermeldung an: „Der Eigenschaftswert ist ungültig.“ Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.
@@ -48,7 +48,7 @@ Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die S
    Auf dieser Registerkarte wird die Codedatei wie im folgenden Screenshot dargestellt hinter dem Formular angezeigt.
 
     ![Form1.cs-Registerkarte mit Visual C&#35;-Code](../ide/media/express_showbuttoncode.png)<br>
-**_Form1.cs_* _ _Registerkarte mit C#-Code*
+***Form1.cs** _ _Registerkarte mit C#-Code*
 
     > [!NOTE]
     > Möglicherweise zeigt die Registerkarte „Form1.cs“ oder „Form1.vb“ **showButton** als **ShowButton** an.
