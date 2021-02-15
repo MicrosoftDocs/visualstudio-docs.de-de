@@ -190,8 +190,8 @@
           href: ide/creating-solutions-and-projects.md
         - name: "Öffnen eines Projekts aus einem Repository in Visual Studio\_2017"
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Öffnen eines Projekts aus einem Repository in Visual Studio
-          href: get-started/tutorial-open-project-from-repo.md
+        - name: "Öffnen eines Projekts aus einem Repository in Visual Studio\_2019"
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Portieren, Migrieren und Aktualisieren von Projekten'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
         - name: Verwalten von Projekt- und Projektmappeneigenschaften
@@ -980,7 +980,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Verweis
+- name: Referenz
   items:
     - name: Tastenkombinationen
       items:
