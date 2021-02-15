@@ -1,17 +1,17 @@
 ---
 title: Verbundene Dienste
-description: Hinzufügen von Azure-Datenspeicher, Authentifizierung und Pushbenachrichtigungen zu mobilen Apps über Visual Studio für Mac
+description: Hier erfahren Sie, wie Sie den Azure-Datenspeicher, die Authentifizierung und Pushbenachrichtigungen über Visual Studio für Mac zu einer plattformübergreifenden Anwendung hinzufügen.
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: 8a1287d82096677d20a498756de3d2a9f5af259b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad6007283b3c56a8d0e5902cc2b9bdc445f220
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938767"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847093"
 ---
 # <a name="connected-services-walkthrough"></a>Exemplarische Vorgehensweise für verbundene Dienste
 

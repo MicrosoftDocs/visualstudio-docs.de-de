@@ -28,18 +28,6 @@
       href: tutorial-wpf.md
     - name: Erstellen einer Windows Forms-App
       href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: 'Videotutorial: Erstellen einer ASP.NET Core-Web-App'
-      items:
-        - name: 1. Installieren von Visual Studio
-          href: tutorial-aspnet-core-ef-step-01.md
-        - name: 2. Erstellen Ihrer ersten ASP.NET Core-Web-App
-          href: tutorial-aspnet-core-ef-step-02.md
-        - name: 3. Arbeit mit Daten
-          href: tutorial-aspnet-core-ef-step-03.md
-        - name: 4. Verfügbar machen einer Web-API
-          href: tutorial-aspnet-core-ef-step-04.md
-        - name: 5. Bereitstellen Ihrer ASP.NET Core-App in Azure
-          href: tutorial-aspnet-core-ef-step-05.md
 - name: Kennenlernen von Visual Studio
   expanded: true
   items:

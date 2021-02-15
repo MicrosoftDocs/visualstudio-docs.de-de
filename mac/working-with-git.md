@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493230"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616176"
 ---
 # <a name="working-with-git"></a>Arbeiten mit Git
 
@@ -59,9 +59,9 @@ Damit können Sie die folgenden Aktionen ausführen:
 
 ## <a name="switching-branches"></a>Wechseln von Branches
 
-Der erste in einem Repository erstellte Branch wird standardmäßig als **Masterbranch** bezeichnet. Es gibt keine technischen Unterschiede zwischen dem Masterbranch und allen anderen. Der Masterbranch wird aber in Entwicklungsteams am häufigsten als „Live“- oder „Produktionsbranch“ bezeichnet.
+Der erste in einem Repository erstellte Branch wird standardmäßig als **Mainbranch** bezeichnet. Es gibt keine technischen Unterschiede zwischen dem Mainbranch und allen anderen. Der Mainbranch wird aber in Entwicklungsteams am häufigsten als „Live“- oder „Produktionsbranch“ bezeichnet.
 
-Durch das Branchen von Master (oder jedem anderen Branch) kann eine eigenständige Entwicklungslinie erstellt werden. Diese neue Version des Masterbranchs kann unabhängig von der Liveversion bereitgestellt werden. Branches werden in der Softwareentwicklung häufig für Funktionen so verwendet.
+Durch das Branchen von Main (oder jedem anderen Branch) kann eine eigenständige Entwicklungslinie erstellt werden. Diese neue Version des Mainbranchs kann unabhängig von der Liveversion bereitgestellt werden. Branches werden in der Softwareentwicklung häufig für Funktionen so verwendet.
 
 Benutzer können für jedes Repository beliebig viele Branches erstellen. Es wird aber empfohlen, einen Branch wieder zu löschen, wenn er nicht mehr gebraucht wird, damit das Repository aufgeräumt bleibt.
 
