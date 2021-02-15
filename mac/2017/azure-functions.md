@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189796"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727462"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -91,10 +91,10 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie dann **Veröffentlichen > In Azure veröffentlichen** aus:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image5.png)
+1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie dann **Veröffentlichen > In Azure veröffentlichen** aus:  ![Screenshot aus Azure Functions, der das ausgewählte Projekt „AF-httptrigger“ sowie die im Kontextmenü markierten Befehle „Veröffentlichen“ und „In Azure veröffentlichen“ zeigt](media/azure-functions-image5.png)
 2. Wenn Sie Ihr Azure-Konto bereits mit Visual Studio für Mac verbunden haben, wird eine Liste der verfügbaren App-Dienste angezeigt. Wenn Sie sich nicht angemeldet haben, werden Sie dazu aufgefordert.
 3. Im Dialogfeld **In Azure App Service veröffentlichen** können Sie entweder einen vorhandenen App-Dienst auswählen oder einen neuen erstellen, indem Sie auf **Neu** klicken.
-4. Geben Sie Ihre Einstellungen im Dialogfeld **Neuen App-Dienst erstellen** ein:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
+4. Geben Sie Ihre Einstellungen im Dialogfeld **Neuen App-Dienst erstellen** ein:  ![Screenshot des Fensters „Neuer App-Dienst“ in Azure Functions mit den Einstellungen zum Erstellen eines neuen App-Diensts in Azure](media/azure-functions-image7.png)
 
     |Einstellung  |Beschreibung  |
     |---------|---------|
@@ -108,18 +108,18 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 
 5. Klicken Sie auf **Weiter**, um ein Speicherkonto zu erstellen. Für die Functions-Laufzeit ist ein Azure-Speicherkonto erforderlich. Klicken Sie auf **Benutzerdefiniert**, um ein allgemeines Speicherkonto zu erstellen oder eine bereits vorhandenes Speicherkonto zu verwenden:
 
-    ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image8.png)
+    ![Screenshot des Bildschirms zum Konfigurieren des Speicherkontos in Azure Functions. Die Option „Benutzerdefiniert“ ist für das Speicherkonto ausgewählt, und Kontoname sowie Kontotyp sind ausgefüllt.](media/azure-functions-image8.png)
 
 6. Klicken Sie auf **Erstellen**, um mit diesen Einstellungen eine Funktions-App und zugehörige Ressourcen in Azure zu erstellen und Ihren Funktionsprojektcode bereitzustellen.
 
 7. Während der Veröffentlichung werden Sie möglicherweise in einem Dialogfeld aufgefordert, damit Sie Ihre „Functions-Version in Azure aktualisieren“. Klicken Sie auf **Ja**:
 
-    ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image12.png)
+    ![Screenshot des Dialogfelds „Functions-Version in Azure aktualisieren“ mit der Aufforderung „Update Azure application settings to match local Functions versions“ (Azure-Anwendungseinstellungen zum Angleich an lokale Functions-Version aktualisieren)](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > Es gibt einen Fehler in der Version 7.6 von Visual Studio für Mac, bei dem `FUNCTIONS_EXTENSION_VERSION` nicht korrekt auf „beta“ gesetzt ist, was bedeutet, dass Ihre Funktion möglicherweise nicht ausgeführt wird. Um dies zu beheben, wechseln Sie zu den [Functions-App-Einstellungen](#function-app-settings) und ändern den Wert für `FUNCTIONS_EXTENSION_VERSION` von „-1“ in „beta“.
 
-## <a name="function-app-settings"></a>Einstellungen für Funktions-Apps
+## <a name="function-app-settings"></a>Funktions-App-Einstellungen
 
 Alle Einstellungen, die Sie in der Datei local.settings.json hinzugefügt haben, müssen auch der Funktions-App in Azure hinzugefügt werden. Diese Einstellungen werden nicht automatisch hochgeladen, wenn Sie das Projekt veröffentlichen.
 

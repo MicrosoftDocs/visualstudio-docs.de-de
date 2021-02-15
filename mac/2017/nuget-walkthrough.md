@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950412"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729430"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Einschließen eines NuGet-Pakets in Ihr Projekt
 
@@ -76,7 +76,7 @@ Paketupdates können entweder alle auf einmal durchgeführt werden, indem Sie mi
 
 Klicken Sie mit der rechten Maustaste auf **Pakete**, um auf das Kontextmenü zuzugreifen:
 
-![Paketmenü](media/nuget-walkthrough-PackagesMenu.png)
+![Screenshot mit dem ausgewählten Paketknoten und dem Kontextmenü, das mit Rechtsklick ausgewählt wurde, mit den Befehlen für „Pakete hinzufügen“, „Update“, „Wiederherstellen“, „Aktualisieren“](media/nuget-walkthrough-PackagesMenu.png)
 
 * **Pakete hinzufügen**: Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
 * **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.
@@ -86,7 +86,7 @@ Die Optionen „Aktualisieren“ und „Wiederherstellen“ sind auch auf Projek
 
 Sie können auch mit der rechten Maustaste auf die einzelnen Pakete klicken, um auf das Kontextmenü zuzugreifen:
 
-![Paketmenü](media/nuget-walkthrough-PackageMenu.png)
+![Screenshot mit ausgewähltem eindeutigem Paket und das Kontextmenü, das mit Rechtsklick ausgewählt wurde, mit Befehlen für „Update“, „Entfernen“ und „Aktualisieren“](media/nuget-walkthrough-PackageMenu.png)
 
 * **Versionsnummer**: Die Versionsnummer ist ein deaktiviertes Menüelement, das nur zu Informationszwecken dient.
 * **Aktualisieren**: Überprüft den Quellserver und lädt eine neuere Version herunter (falls vorhanden).
@@ -102,11 +102,11 @@ Navigieren Sie in Visual Studio für Mac zu **Visual Studio > Einstellungen > Nu
 
 Klicken Sie auf **Hinzufügen**, um eine neue Quelle festzulegen. Geben Sie einen Anzeigenamen und die URL (oder den Dateipfad) zur Paketquelle an. Wenn es sich bei der Quelle um einen sicheren Webserver handelt, geben Sie auch einen Benutzernamen und ein Kennwort an, andernfalls lassen Sie diese Einträge leer:
 
-![Hinzufügen von Paketquellen](media/nuget-walkthrough-PackageSource2.png)
+![Screenshot des Dialogfelds „Paketquelle hinzufügen“ mit den Feldern für Name, Speicherort, Benutzername und Kennwort.](media/nuget-walkthrough-PackageSource2.png)
 
 Verschiedene Quellen können bei der Suche nach Paketen angegeben werden:
 
-![Hinzufügen von Paketquellen](media/nuget-walkthrough-PackageSource3.png)
+![Screenshot des Bildschirms „Pakete hinzufügen“, auf dem eine Dropdownliste der Quellen angezeigt wird, die bei der Suche nach Paketen ausgewählt werden können](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Quellcodeverwaltung
 

@@ -1,16 +1,18 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erweitern von Visual Studio für Mac'
+description: Hier erfahren Sie, wie Sie ein einfaches Erweiterungspaket für Visual Studio für Mac erstellen, das einen neuen Befehl im Menü „Bearbeiten“ erstellt.
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985027"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876193"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Exemplarische Vorgehensweise: Erweitern von Visual Studio für Mac
 
@@ -22,7 +24,7 @@ Dieses Beispiel verwendet den Add-In-Maker. Der Add-In-Maker erstellt eine neue 
 
    ![Screenshot Visual Studio für Mac](media/extending-visual-studio-mac-addin3.png)
 
-2. Installieren Sie das _Erweiterungspaket „Add-In-Maker“_ mit dem Erweiterungs-Manager. Klicken Sie im Menü von Visual Studio auf **Erweiterungen...** .
+2. Installieren Sie das _Erweiterungspaket „Add-In-Maker“_ mit dem Erweiterungs-Manager. Klicken Sie im Menü von Visual Studio auf **Erweiterungen...**.
 
    ![Registerkarte „Add-In-Manager“](media/extending-visual-studio-mac-addin4.png)
 
@@ -136,6 +138,6 @@ Dieses Beispiel verwendet den Add-In-Maker. Der Add-In-Maker erstellt eine neue 
 
     ![Screenshot vom Einfügen des Datums](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 
 - [Erstellen Ihrer ersten Erweiterung (Visual Studio unter Windows)](/visualstudio/extensibility/extensibility-hello-world)

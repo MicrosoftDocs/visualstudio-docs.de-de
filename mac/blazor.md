@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 30e9a62e8bf0364a76cbd43995cbb77c1a5bd0c4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584034"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729417"
 ---
-# <a name="create-no-locblazor-web-apps"></a>Erstellen von Blazor-Web-Apps
+# <a name="create-blazor-web-apps"></a>Erstellen von Blazor-Web-Apps
 
 Dieser Leitfaden bietet eine Einführung in die Erstellung Ihrer ersten Blazor-Web-App. Weitere ausführliche Anweisungen finden Sie unter [Einführung in ASP.NET Core für Blazor](/aspnet/core/blazor/index).
 
-ASP.NET Core für Blazor unterstützt zwei verschiedene Hostingoptionen: Blazor WebAssembly (WASM) oder Blazor Server. Visual Studio für Mac unterstützt beide Hostingmodelle. Visual Studio für Mac 8.4 und höher unterstützt Blazor Server, Visual Studio für Mac 8.6 oder höher unterstützt beide Optionen. Weitere Informationen zu den Blazor-Hostingmodellen finden Sie unter [ASP.NET Core-Hostingmodelle für Blazor](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Unterstützung für das Debuggen von Blazor WebAssembly-Projekten in Visual Studio für Mac ist in der Vorschauversion von v8.8 verfügbar (über den Updatekanal für Vorschauen im Menü **Visual Studio > Nach Updates suchen...** ).
+ASP.NET Core für Blazor unterstützt zwei verschiedene Hostingoptionen: Blazor WebAssembly (WASM) oder Blazor Server. Visual Studio für Mac unterstützt beide Hostingmodelle. Visual Studio für Mac 8.4 und höher unterstützt Blazor Server, Visual Studio für Mac 8.6 oder höher unterstützt beide Optionen. Weitere Informationen zu den Blazor-Hostingmodellen finden Sie unter [ASP.NET Core-Hostingmodelle für Blazor](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1&preserve-view=true). Unterstützung für das Debuggen von Blazor WebAssembly-Projekten in Visual Studio für Mac ist in der Vorschauversion von v8.8 verfügbar (über den Updatekanal für Vorschauen im Menü **Visual Studio > Nach Updates suchen...** ).
 
 Was ist Blazor? Blazor ist ein Framework zum Erstellen von interaktiven, clientseitigen Webbenutzeroberflächen mit .NET, das den Webentwicklern folgende Vorteile bietet:
 
@@ -32,12 +32,12 @@ Was ist Blazor? Blazor ist ein Framework zum Erstellen von interaktiven, clients
 * Bleiben Sie mit Visual Studio unter Windows, Linux und macOS produktiv.
 * Setzen Sie auf gebräuchliche Sprachen, Frameworks und Tools, die stabil, funktionsreich und einfach zu verwenden sind.
 
-## <a name="create-a-new-no-locblazor-webassembly-project"></a>Erstellen eines neuen Blazor WebAssembly-Projekts
+## <a name="create-a-new-blazor-webassembly-project"></a>Erstellen eines neuen Blazor WebAssembly-Projekts
 1. Wählen Sie im **Startfenster** die Option **Neu** aus, um ein neues Projekt zu erstellen:
 
    ![Startfenster von Visual Studio für Mac mit hervorgehobener Auswahl von „Neu“](media/blazor-new-project.png)
 
-1. Wählen Sie im Dialogfeld **Neues Projekt** die Option **.NET Core** > **App** > **Blazor WebAssembly-App** aus, und klicken Sie dann auf **Weiter**: ![Dialogfeld „Vorlage für neues Projekt auswählen“ mit ausgewählter Blazor- Server-App-Vorlage](media/blazor-wasm-project-template.png)
+1. Wählen Sie im Dialogfeld **Neues Projekt** die Option **.NET Core** > **App** > **Blazor WebAssembly-App** aus, und klicken Sie dann auf **Weiter**: ![Screenshot des Dialogfelds „Neues Projekt“ mit hervorgehobener App ::no-loc(Blazor WebAssembly)::: im App-Bereich unter ASP.NET Core und der hervorgehoben Schaltfläche „Weiter“](media/blazor-wasm-project-template.png)
 
 1. Wählen Sie .NET Core 3.1 als Zielframework und anschließend **Weiter** aus. 
    ![Dialogfeld „Neue Blazor WebAssembly- App konfigurieren“ mit ausgewähltem Zielframework „.NET Core 3.1“](media/blazor-wasm-select-target-framework.png)
@@ -53,12 +53,12 @@ Was ist Blazor? Blazor ist ein Framework zum Erstellen von interaktiven, clients
 
    ![Blazor-Web-App in Microsoft Edge](media/blazor-new-app-in-edge.png)
 
-## <a name="creating-a-new-no-locblazor-server-project"></a>Erstellen eines neuen Blazor Server-Projekts
+## <a name="creating-a-new-blazor-server-project"></a>Erstellen eines neuen Blazor Server-Projekts
 
 1. Wählen Sie im **Startfenster** die Option **Neu** aus, um ein neues Projekt zu erstellen:
 
    ![Startfenster von Visual Studio für Mac mit hervorgehobener Auswahl von „Neu“](media/blazor-new-project.png)
-1. Wählen Sie im Dialogfeld **Neues Projekt** die Option **.NET Core** > **App** > **Blazor Server-App** aus, und klicken Sie dann auf **Weiter**: ![Dialogfeld „Vorlage für neues Projekt auswählen“ mit ausgewählter Blazor- Server-App-Vorlage](media/blazor-project-template.png)
+1. Wählen Sie im Dialogfeld **Neues Projekt** die Option **.NET Core** > **App** > **Blazor Server-App** aus, und klicken Sie dann auf **Weiter**: ![Screenshot des Dialogfelds „Neues Projekt“ mit hervorgehobener Server-App Blazor im App-Bereich unter ASP.NET Core und der hervorgehoben Schaltfläche „Weiter“](media/blazor-project-template.png)
 
 1. Wählen Sie .NET Core 3.1 als Zielframework und anschließend **Weiter** aus. 
    ![Dialogfeld „Neue Blazor- Server-App konfigurieren“ mit ausgewähltem Zielframework „.NET Core 3.1“](media/blazor-select-target-framework.png)
@@ -73,7 +73,7 @@ Was ist Blazor? Blazor ist ein Framework zum Erstellen von interaktiven, clients
 
    ![Blazor-Web-App in Microsoft Edge](media/blazor-new-app-in-edge.png)
 
-## <a name="no-locblazor-support-in-visual-studio-for-mac"></a>Blazor-Unterstützung in Visual Studio für Mac
+## <a name="blazor-support-in-visual-studio-for-mac"></a>Blazor-Unterstützung in Visual Studio für Mac
 
 Visual Studio für Mac (ab Version 8.4) enthält neue Features, mit denen Sie neue Blazor Server-Projekte erstellen können. Außerdem unterstützt der Dienst die Standardfeatures wie das Kompilieren, Ausführen und Debuggen von Blazor-Projekten. In Visual Studio für Mac 8.6 wurde Unterstützung für das Erstellen, Kompilieren und Ausführen von Blazor WebAssembly-Projekten hinzugefügt.
 
@@ -84,7 +84,7 @@ Visual Studio für Mac unterstützt das Bearbeiten von RAZOR-Dateien. Dieser Dat
 
 ![Editor-Fenster für Visual Studio für Mac mit IntelliSense für Blazor](media/blazor-intellisense.png)
 
-### <a name="publishing-no-locblazor-applications-to-azure-app-service"></a>Veröffentlichen von Blazor-Anwendungen in Azure App Service
+### <a name="publishing-blazor-applications-to-azure-app-service"></a>Veröffentlichen von Blazor-Anwendungen in Azure App Service
 Sie können Blazor-Anwendungen auch direkt in Azure App Service veröffentlichen. Wenn Sie kein Azure-Konto besitzen, um Ihre Blazor-App in Azure auszuführen, können Sie sich [hier für ein kostenloses Konto registrieren](https://azure.microsoft.com/free). Dieses Konto bietet zudem 12 Monate lang eine kostenlose Nutzung beliebter Dienste, kostenloses Azure-Guthaben über 200 USD und über 25 immer kostenlose Dienste.
 
 ![Visual Studio für Mac mit Azure-Veröffentlichungserfahrung](media/blazor-azure-publish.png)
@@ -115,7 +115,7 @@ Dieser Ordner enthält statische Dateien, z. B. HTML-, JavaScript- und CSS-Date
 
 Diese Datei enthält den Einstiegspunkt für das Programm. Weitere Informationen finden Sie unter [ASP.NET Core-Webhost](/aspnet/core/fundamentals/host/web-host).
 
-### <a name="no-locblazor-server-app-specific-files"></a>Spezifische Dateien für die Blazor-Server-App
+### <a name="blazor-server-app-specific-files"></a>Spezifische Dateien für die Blazor-Server-App
 #### <a name="app-settings"></a>App-Einstellungen
 
 Die Datei *appSettings.json* enthält Konfigurationsdaten wie Verbindungszeichenfolgen.
