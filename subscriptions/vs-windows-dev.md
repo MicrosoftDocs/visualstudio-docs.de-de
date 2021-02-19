@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: Hier erfahren Sie mehr über das Windows-Entwicklerkonto, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537720"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089592"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Windows-Entwicklerkonto in Visual Studio-Abonnements
 Mit Ihrem Windows-Entwicklerkonto, das in ausgewählten Visual Studio-Abonnements enthalten ist, können Sie kostenlose und kostenpflichtige Windows-Apps an den Windows Store übermitteln.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 Um Ihr Windows-Entwicklerkonto zu verwenden, müssen Sie ein Konto einrichten oder sich mit einem bereits vorhandenen anmelden.
+
+> [!IMPORTANT]
+> Zum Erstellen eines Windows-Entwicklerkontos ist die Verwendung eines Microsoft-Kontos (MSA) erforderlich.  Die Verwendung von Azure Active Directory-Konten wird nicht unterstützt.  
 
 Es wird empfohlen, dass Sie dafür ein privates Browserfenster erstellen.  Erstellen Sie beispielsweise in Google Chrome ein neues Inkognito-Fenster.  Erstellen Sie im Internet Explorer ein neues InPrivate-Fenster.
 
