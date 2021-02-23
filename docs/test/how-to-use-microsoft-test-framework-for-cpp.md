@@ -1,19 +1,19 @@
 ---
 title: Verwenden des Microsoft-Komponententest-Frameworks für C++
 description: Verwenden Sie das Microsoft-Komponententestframework für C++, um Komponententests für Ihren C++-Code zu erstellen.
-ms.date: 01/08/2020
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a76c6ac83956cd1e6514ff958278d0b4cbcf0d2f
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85287115"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563431"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -42,21 +42,23 @@ In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer 
 
 1. Fügen Sie eine C++-Komponententestdatei hinzu:
 
-   - Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer**, und wählen Sie **Hinzufügen** > **Neues Element** > **C++-Datei (cpp)** aus.
+   1. Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer**, und wählen Sie **Hinzufügen** > **Neues Element** aus.
+
+   1. Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **C++-Datei (.cpp)** aus, geben Sie dieser einen geeigneten Namen, und klicken Sie auf **Hinzufügen**.
 
 ## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a> So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien
 
-Wenn der zu testende Code nicht die Funktionen exportiert, die Sie testen möchten, können Sie die Ausgabedatei ( **.obj**- oder **.lib**) zu den Abhängigkeiten des Testprojekts hinzufügen. Ändern Sie die Eigenschaften des Testprojekts, um die Header und die Bibliotheks- oder Objektdateien einzuschließen, die für die Komponententests erforderlich sind.
+Wenn der zu testende Code nicht die Funktionen exportiert, die Sie testen möchten, können Sie die Ausgabedatei ( *.obj*- oder *.lib*) zu den Abhängigkeiten des Testprojekts hinzufügen. Ändern Sie die Eigenschaften des Testprojekts, um die Header und die Bibliotheks- oder Objektdateien einzuschließen, die für die Komponententests erforderlich sind.
 
 1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Testprojekt, und wählen Sie **Eigenschaften** aus. Das Fenster mit den Projekteigenschaften wird geöffnet.
 
 1. Rufen Sie die Seite **Konfigurationseigenschafen** > **Linker** > **Eingabe** auf, und wählen Sie **Zusätzliche Abhängigkeiten** aus.
 
-   Wählen Sie **Bearbeiten** aus, und fügen Sie dann die Namen der **.obj**- oder **.lib**-Dateien hinzu. Verwenden Sie nicht die vollständigen Pfadnamen.
+   Wählen Sie **Bearbeiten** aus, und fügen Sie dann die Namen der *.obj*- oder *.lib*-Dateien hinzu. Verwenden Sie nicht die vollständigen Pfadnamen.
 
 1. Rufen Sie die Seite **Konfigurationseigenschaften** > **Linker** > **Allgemein** auf, und wählen Sie **Zusätzliche Bibliotheksverzeichnisse** aus.
 
-   Wählen Sie **Bearbeiten** aus, und fügen Sie den Verzeichnispfad der **.obj**- oder **.lib**-Dateien hinzu. Der Pfad befindet sich normalerweise im Buildordner des zu testenden Projekts.
+   Wählen Sie **Bearbeiten** aus, und fügen Sie den Verzeichnispfad der *.obj*- oder *.lib*-Dateien hinzu. Der Pfad befindet sich normalerweise im Buildordner des zu testenden Projekts.
 
 1. Rufen Sie die Seite **Konfigurationseigenschaften** > **VC++-Verzeichnisse** auf, und wählen Sie **Includeverzeichnisse** aus.
 
@@ -108,7 +110,7 @@ TEST_METHOD(Method1)
 
 ### <a name="c-trait-attribute-macros"></a>C++-Merkmalsattributmakros
 
-Die folgenden vordefinierten Merkmale befinden sich in `CppUnitTest.h`. Weitere Informationen finden Sie unter [Referenz für die C++-API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
+Die folgenden vordefinierten Merkmale befinden sich in *`CppUnitTest.h`* . Weitere Informationen finden Sie unter [Referenz für die C++-API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Makro|Beschreibung|
 |-|-----------------|

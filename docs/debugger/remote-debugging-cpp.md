@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934649"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335262"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Remotedebuggen eines C++-Projekts in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer installieren und führen Sie die Remotetools auf dem Computer aus, auf dem Sie die App bereitstellen möchten, konfigurieren Sie das Projekt für die Verbindung mit dem Remotecomputer über Visual Studio, und stellen Sie die App dann bereit und führen sie aus.
@@ -99,7 +99,7 @@ Der Remotedebugger wird unter Windows 7 und höher (kein Smartphone) und Window
     > [!TIP]
     > Alternativ können die Dateien in einem getrennten Schritt bereitgestellt werden. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **mymfc**, und wählen Sie dann **Bereitstellen** aus.
 
-    Wenn Sie Dateien verwenden, die keine Codedateien, aber für die Anwendung erforderlich sind, können Sie diese unter **Zusätzlich bereitzustellende Dateien** auf der Seite **Windows-Remotedebugger** angeben.
+    Wenn Sie Dateien verwenden, die keine Codedateien, aber für die Anwendung erforderlich sind, können Sie diese in einer durch Semikolons getrennten Liste unter **Zusätzlich bereitzustellende Dateien** auf der Seite **Windows-Remotedebugger** angeben.
 
     Alternativ dazu können Sie die Dateien in Ihr Projekt einschließen und die Eigenschaft **Inhalt** auf der Seite **Eigenschaften** für jede Datei auf **Ja** festlegen. Diese Dateien werden in das **Bereitstellungsverzeichnis** kopiert, das auf der Seite **Windows-Remotedebugger** angegeben wird. Sie können auch den **Elementtyp** in **Datei kopieren** ändern und zusätzliche Eigenschaften angeben, wenn die Dateien in einen Unterordner des **Bereitstellungsverzeichnisses** kopiert werden müssen.
 
