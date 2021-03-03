@@ -5,9 +5,6 @@ ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - project templates, debugging
@@ -20,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcd4375b475106b0428f21057f5b44fc8bee8700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d91d18208a2d05fc4d4b60da98e3e3f8e3c0c835
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872423"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683056"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Vorbereitung des Debugvorgangs: C++-Projekttypen
 In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die mithilfe von [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Projektvorlagen erstellt wurden.
@@ -40,8 +37,6 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
 - [Debuggen einer in C oder C++ geschriebenen Win32-Anwendung](#BKMK_To_debug_a_C_or_C___Win32_application)
 
 - [Manuelles Festlegen einer Debugkonfiguration](#BKMK_To_manually_set_a_Debug_configuration)
-
-  [Windows Forms-Anwendungen (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
 ## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> Empfohlene Eigenschafteneinstellungen
  Bestimmte Eigenschaften sollten für alle Szenarios des nicht verwalteten Debuggens gleich festgelegt werden. Die folgenden Tabellen zeigen die empfohlenen Eigenschafteneinstellungen. Die hier nicht aufgeführten Einstellungen können je nach verwaltetem Projekttyp unterschiedlich sein. Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
@@ -97,22 +92,8 @@ In diesem Abschnitt wird das Debuggen grundlegender Projekttypen erläutert, die
 
    [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="windows-forms-applications-net"></a><a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms-Anwendungen (.NET)
- Die Vorlage der **Windows Forms-Anwendung (.NET)** erstellt eine [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]-Windows Forms-Anwendung. Weitere Informationen finden Sie unter [Vorgehensweise: Create a New Windows Forms Application Project (Vorgehensweise: Erstellen Sie ein Windows-Anwendungsprojekt)](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
-
- Das Debuggen dieses Anwendungstyps in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ist mit dem Debuggen in verwalteten Windows Forms-Anwendungen vergleichbar.
-
- Wenn Sie ein Windows Forms-Projekt mit der Projektvorlage erstellen, werden die erforderlichen Einstellungen für die Debug- und Releasekonfigurationen automatisch durch [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] festgelegt. Wenn erforderlich, können Sie diese Einstellungen im Dialogfeld **Eigenschaftenseiten von \<project name>** ändern. Weitere Informationen finden Sie unter [Set debug and release configurations in Visual Studio (Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../debugger/how-to-set-debug-and-release-configurations.md).
-
- Weitere Informationen finden Sie unter [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
-
- Eine weitere Möglichkeit zum Debuggen einer Windows Forms-Anwendung besteht darin, die Anwendung außerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu starten und dann eine Verbindung zu ihr herzustellen. Weitere Informationen finden Sie unter [Attach to running processes with the Visual Studio debugger (Anfügen an laufende Prozesse mit dem Visual Studio Debugger)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
-
- [Inhalt](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
-
 ## <a name="see-also"></a>Siehe auch
 - [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Attach to running processes with the Visual Studio debugger (Anfügen an laufende Prozesse mit dem Visual Studio Debugger)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Set debug and release configurations in Visual Studio (Festlegen von Debug- und Releasekonfigurationen in Visual Studio)](../debugger/how-to-set-debug-and-release-configurations.md)
-- [How to: Create a New Windows Forms Application Project (Vorgehensweise: Erstellen Sie ein Windows-Anwendungsprojekt)](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

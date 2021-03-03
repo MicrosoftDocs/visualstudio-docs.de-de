@@ -2,7 +2,7 @@
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Mac) | Microsoft-Dokumentation
 description: Zeigen Sie das Änderungsprotokoll für Visual Studio-Tools für Unity (Mac) an. Sie erhalten eine Übersicht von Version 1.0.0.0 bis 2.7.0.0 und höher.
 ms.custom: ''
-ms.date: 12/18/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,93 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
-ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
+ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97917910"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683379"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Mac)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="2920"></a>2.9.2.0
+Veröffentlicht: 2. März 2021
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Behebt die Suche im Unity-Meldungs Dialogfeld
+
+  - Es wurden Stabilitätsprobleme mit dem Unity-Projekt TreeView korrigiert.
+
+- **Debuggen:**
+
+  - Korrigieren der Behandlung bedingter Haltepunkte.
+
+## <a name="2910"></a>2.9.1.0
+Veröffentlicht: 9. Februar 2021
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Unterstützung für das Ausführen und Debuggen von Unity-Tests aus der IDE
+
+- **Auswertung:**
+
+  - Zu lokalen Elementen hinzugefügt `Active Scene` , die Stamm Spielobjekte zeigen.
+
+  - `this.gameObject`Zu den lokalen Elementen hinzugefügt, da diese häufig in Unity-Projekten verwendet werden.
+
+  - `Children`-Und- `Components` Gruppen zu allen Instanzen hinzugefügt `GameObject` , sodass Sie problemlos alle Objekt Hierarchien anzeigen können.
+
+  - `Scene Path`Zu allen Instanzen hinzugefügt `GameObject` , um die Position in der Szene anzuzeigen.
+
+  - Unterstützung für `JobEntityBatch` /Lambdas bei Verwendung von Entitäten mit Quell-Generatoren hinzugefügt.
+
+  - Verbesserte Unterstützung für das Anzeigen von großen Arrays (mithilfe von indexbucketing).
+
+  - Fehlende Unity-Nachrichten für 2019,4-API hinzugefügt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Beheben von Stabilitätsproblemen mit dem Dialogfeld "Unity-Meldung
+
+  - Es wurden verschiedene Probleme mit der Benutzeroberfläche für nicht-deu Sprachen behoben.
+
+  - Beheben von Stabilitätsproblemen bei der [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) Diagnose.
+
+- **Debuggen:**
+
+  - Beheben von Problemen bei der VM-Trennung bei der Verwendung von `Trace` Methoden.
+
+- **Auswertung:**
+
+  - Korrigiert: das Filtern veralteter Eigenschaften, die Ausnahmen auslösen.
+
+## <a name="2900"></a>2.9.0.0
+Veröffentlicht: 20. Januar 2021
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Unterstützung für `raytrace shaders` `UXML` -und-Dateien hinzugefügt `USS` .
+
+  - Aktualisierte Unity-Nachrichten-API (für alle als coroutines verwendeten Methoden).
+
+  - Aktualisierte Android SDK Erkennung.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Korrigieren Sie die [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) Diagnose, und geben Sie falsche Warnungen für coroutines und an `AssetPostprocessor.OnAssignMaterialModel` .
 
 ## <a name="2840"></a>2.8.4.0
 Veröffentlicht: 15. Dezember 2020

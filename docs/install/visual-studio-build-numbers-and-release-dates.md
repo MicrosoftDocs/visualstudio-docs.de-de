@@ -5,19 +5,19 @@ description: Eine Liste der nach Datum sortierten veröffentlichten Versionen vo
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 1/21/2021
+ms.date: 2/10/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 263a8bd8e2452944920a664e7dc70295e9cbf011
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21c74207df3026922d54837882c496f5f13f6530
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939772"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335229"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -29,32 +29,38 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.19 | Release | 10. Februar 2021 | 16.4.31009.304 |
+| 16.7.12 | Freigabe | 10. Februar 2021 | 16.7.31009.191 |
+| 16.8.5 | Release | 9\. Februar 2021 | 16.8.31005.135 |
+| 16.9.0 | Vorschauversion 4 | 9\. Februar 2021 | 16.9.31004.235 | 
+| 16.7.11 | Release | 9\. Februar 2021 | 16.7.30928.143 |
+| 16.4.18 | Release | 9\. Februar 2021 | 16.4.30928.142 |
 | 16.9.0 | Vorschauversion 3 | 21. Januar 2021 | 16.9.30914.41 |
-| 16.8.4 | Freigabe | 12. Januar 2021 | 16.8.30907.101 |
+| 16.8.4 | Release | 12. Januar 2021 | 16.8.30907.101 |
 | 16.7.10 | Release | 12. Januar 2021 | 16.7.30816.78 |
 | 16.4.17 | Release | 12. Januar 2021 | 16.4.30816.121 |
-| 16.0.22 | Release | 12. Januar 2021 | 16.0.28803.916 |
+| 16.0.22 | Freigabe | 12. Januar 2021 | 16.0.28803.916 |
 | 16.0.21 | Release | 8\. Dezember 2020 | 16.0.28803.902 |
 | 16.9.0 | Vorschau 2 | 8\. Dezember 2020 | 16.9.30803.129 |
-| 16.8.3 | Release | 8\. Dezember 2020 | 16.8.30804.86 |
-| 16.7.9 | Release | 8\. Dezember 2020 | 16.7.30802.117 |
-| 16.4.16 | Release | 8\. Dezember 2020 | 16.4.30802.185 |
-| 16.8.2 | Freigabe | 19. November 2020 | 16.8.30717.126 |
+| 16.8.3 | Freigabe | 8\. Dezember 2020 | 16.8.30804.86 |
+| 16.7.9 | Freigabe | 8\. Dezember 2020 | 16.7.30802.117 |
+| 16.4.16 | Freigabe | 8\. Dezember 2020 | 16.4.30802.185 |
+| 16.8.2 | Release | 19. November 2020 | 16.8.30717.126 |
 | 16.8.1 | Release | 12. November 2020 | 16.8.30711.63 |
 | 16.9.0 | Vorschauversion 1 | 10. November 2020 | 16.9.30709.64 |
-| 16.7.8 | Freigabe | 10. November 2020 | 16.7.30704.19 |
-| 16.4.15 | Freigabe | 10. November 2020 | 16.4.30703.110 |
-| 16.0.20 | Freigabe | 10. November 2020 | 16.0.28803.868 |
-| 16.8.0 | Release | 10. November 2020 | 16.8.30709.132 |
+| 16.7.8 | Release | 10. November 2020 | 16.7.30704.19 |
+| 16.4.15 | Release | 10. November 2020 | 16.4.30703.110 |
+| 16.0.20 | Release | 10. November 2020 | 16.0.28803.868 |
+| 16.8.0 | Freigabe | 10. November 2020 | 16.8.30709.132 |
 | 16.8.0 | Vorschau 6 | 27. Oktober 2020 | 16.8.30626.31 |
 | 16.7.7 | Release | 27. Oktober 2020 | 16.7.30621.155 |
 | 16.8.0 | Preview 5 | 20. Oktober 2020 | 16.8.30615.102 |
 | 16.7.6 | Release | 13. Oktober 2020 | 16.7.30611.23 |
 | 16.8.0 | Preview 4 | 13. Oktober 2020 | 16.8.30608.117 |
-| 16.0.19 | Freigabe | 13. Oktober 2020 | 16.0.28803.846 |
-| 16.4.14 | Release | 13. Oktober 2020 | 16.4.30607.51 |
+| 16.0.19 | Release | 13. Oktober 2020 | 16.0.28803.846 |
+| 16.4.14 | Freigabe | 13. Oktober 2020 | 16.4.30607.51 |
 | 16.8.0 | Preview 3.2 | 29. September 2020 | 16.8.30524.135 |
-| 16.7.5 | Release | 29. September 2020 |  16.7.30523.141 |
+| 16.7.5 | Freigabe | 29. September 2020 |  16.7.30523.141 |
 | 16.8.0 | Preview 3.1 | 22. September 2020 | 16.8.30516.212 |
 | 16.7.4 | Release | 21. September 2020 | 16.7.30517.126 |
 | 16.8.0 | Vorschauversion 3 | 14. September 2020 | 16.8.30509.190 |
@@ -204,6 +210,8 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.33 | Freigabe | 10. Februar 2021 | 15.9.28307.1401 |
+| 15.9.32 | Freigabe | 9\. Februar 2021 | 15.9.28307.1382 |
 | 15.9.31 | Freigabe | 12. Januar 2021 | 15.9.28307.1342 |
 | 15.9.30 | Freigabe | 8\. Dezember 2020 | 15.9.28307.1321 |
 | 15.9.29 | Freigabe | 10. November 2020 | 15.9.28307.1300 |

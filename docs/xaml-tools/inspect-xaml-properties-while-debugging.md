@@ -2,7 +2,7 @@
 title: Prüfen von XAML-Eigenschaften beim Debuggen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie beim Debuggen die Visual Tree-und Live Property Explorer-Tools verwenden, um XAML-Eigenschaften zu überprüfen und eine Strukturansicht der Benutzeroberflächen Elemente zu erhalten
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2019
+ms.date: 03/02/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881372"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683450"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Überprüfen von XAML-Eigenschaften beim Debuggen
 
@@ -34,7 +34,17 @@ Wir beginnen mit einer sehr einfachen WPF-Anwendung, die über eine Listenansich
 
 ### <a name="create-the-project"></a>Erstellen des Projekts
 
-1. Erstellen Sie eine neue c#-WPF-Anwendung (**Datei**  >  **"New**  >  **Project**", geben Sie "c# WPF" ein, und wählen Sie entweder **WPF-App (.net Core)** oder **WPF-App (.NET Framework)**) aus. Nennen Sie sie **TestXAML**.
+::: moniker range="vs-2019"
+
+1. Erstellen Sie eine neue c#-WPF-**Anwendung (** > **Neues** > **Projekt** erstellen, geben Sie "c# WPF" ein, wählen Sie die Projektvorlage **WPF-Anwendung** aus, benennen Sie das Projekt mit dem Namen **testxaml**, und überprüfen Sie dann, ob **.net Core 3,1** in der Dropdown Liste **Ziel Framework** angezeigt
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. Erstellen Sie eine neue c#-WPF-Anwendung (**Datei**  >  "**New**  >  **Project**", geben Sie "c# WPF" ein, und wählen Sie **WPF-App (.NET Framework)**) aus. Nennen Sie sie **TestXAML**.
+
+::: moniker-end
 
 1. Ändern Sie „MainWindow.xaml“ wie folgt:
 

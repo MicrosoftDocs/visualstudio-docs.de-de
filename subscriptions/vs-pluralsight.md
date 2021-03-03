@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 12/02/2020
 ms.topic: how-to
 description: Erfahren Sie mehr über das Pluralsight-Schulungsabonnement, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537980"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542989"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight-Schulungsvorteile in Visual Studio-Abonnements
 
@@ -95,6 +95,9 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Frage: Ich habe ein Visual Studio Enterprise-Abonnement, aber ich sehe die Pluralsight-Kachel nicht auf der Seite mit den Vorteilen. Wo liegt der Fehler?
 Antwort: Nicht alle Visual Studio Enterprise-Abonnements enthalten die Pluralsight-Vorteile.  Sehen Sie in der [Berechtigungstabelle](#eligibility) nach, ob Ihr Abonnement berechtigt ist.
+
+### <a name="q-can-i-use-the-pluralsight-benefit-more-than-once"></a>Frage: Kann ich den Pluralsight-Vorteil mehr als einmal nutzen?  
+Antwort:  Der Pluralsight-Vorteil wird in ausgewählten Visual Studio-Abonnements gemeinsam mit dem Abonnement verlängert. Wenn Sie beispielsweise ein Jahresabonnement abgeschlossen haben, das jährlich verlängert wird, profitieren Sie so lange von diesem Vorteil, bis das Abonnement gekündigt wird. Wenn Sie ein Abonnement mit einer Laufzeit von mehreren Jahren abgeschlossen haben, ist der Pluralsight-Vorteil so lange verfügbar, wie das Abonnement besteht.  Wenn dieses Abonnement verlängert wird, können Sie auch weiter von dem Vorteil profitieren.  Wenn Sie das Verlängerungsdatum ermitteln möchten, besuchen Sie <https://my.visualstudio.com/subscriptions>, klicken Sie auf *Supportinformationen*, und suchen Sie das „Gültig bis“-Datum. 
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Frage: Habe ich Zugriff auf benutzerdefinierte Wiedergabelisten oder -Kanäle mit Lernressourcen?
 Antwort: Ja. Als Visual Studio-Abonnent erhalten Sie im Rahmen Ihres Pluralsight-Schulungsvorteils Zugriff auf ausgewählte Rollen, Lernpfade und benutzerdefinierte Kanäle (Playlists). Die ausgewählten Inhalte wurden speziell von Microsoft und Pluralsight zusammengestellt und sind auf das Lernen wichtiger Interessenbereiche ausgerichtet. Aktivieren Sie Ihren Pluralsight-Vorteil über Ihr Visual Studio-Abonnementportal (<https://my.visualstudio.com/benefits>), um Zugriff auf diese und andere Inhalte auf der Pluralsight-Startseite zu erhalten.
