@@ -2,7 +2,7 @@
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
 description: Zeigen Sie das Änderungsprotokoll für Visual Studio-Tools für Unity (Windows) an. Sie erhalten eine Übersicht von Version 1.0.0.0 bis 4.7.0.0 und höher.
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,76 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671245"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683483"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="4910"></a>4.9.1.0
+Veröffentlicht: 2. März 2021
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Auswertung:**
+
+  - Zu lokalen Elementen hinzugefügt `Active Scene` , die Stamm Spielobjekte zeigen.
+
+  - `this.gameObject`Zu den lokalen Elementen hinzugefügt, da diese häufig in Unity-Projekten verwendet werden.
+
+  - `Children`-Und- `Components` Gruppen zu allen Instanzen hinzugefügt `GameObject` , sodass Sie problemlos alle Objekt Hierarchien anzeigen können.
+
+  - `Scene Path`Zu allen Instanzen hinzugefügt `GameObject` , um die Position in der Szene anzuzeigen.
+
+  - Unterstützung für `JobEntityBatch` /Lambdas bei Verwendung von Entitäten mit Quell-Generatoren hinzugefügt.
+
+  - Verbesserte Unterstützung für das Anzeigen von großen Arrays (mithilfe von indexbucketing).
+  
+  - Fehlende Unity-Nachrichten für 2019,4-API hinzugefügt.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Es wurden verschiedene Probleme mit der Benutzeroberfläche für nicht-deu Sprachen behoben.
+
+  - Beheben von Stabilitätsproblemen bei der [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) Diagnose.
+  
+- **Debuggen:**
+
+  - Beheben von Problemen bei der VM-Trennung bei der Verwendung von `Trace` Methoden.
+
+- **Auswertung:**
+
+  - Korrigiert: das Filtern veralteter Eigenschaften, die Ausnahmen auslösen.
+
+## <a name="4900"></a>4.9.0.0
+Veröffentlicht: 20. Januar 2021
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+  - Unterstützung für `raytrace shaders` `UXML` -und-Dateien hinzugefügt `USS` .
+
+  - Hinzugefügte `.vsconfig` Generierungs Unterstützung. Visual Studio sollte nun erkennen, welche Komponenten fehlen, und Sie auffordern, Sie bei der Verwendung von Unity-Projekten zu installieren.
+
+  - Aktualisierte Unity-Nachrichten-API (für alle als coroutines verwendeten Methoden).
+
+  - Aktualisierte Android SDK Erkennung.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+  - Korrigieren der Prozess Aktualisierung bei Verwendung des Dialog Felds zur Instanzauswahl.
+
+  - Korrigieren Sie die [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) Diagnose, und geben Sie falsche Warnungen für coroutines und an `AssetPostprocessor.OnAssignMaterialModel` .
 
 ## <a name="4820"></a>4.8.2.0
 Veröffentlicht: 10. November 2020

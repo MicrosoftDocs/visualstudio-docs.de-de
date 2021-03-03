@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39d151528c5fda1bd4700fecd0d5c8843ced50a1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844332"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683238"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debuggen eines Azure-Clouddiensts oder virtuellen Computers in Visual Studio
 
@@ -21,7 +21,7 @@ Visual Studio bietet verschiedene Optionen für das Debuggen von Azure-Clouddien
 
 ## <a name="debug-your-cloud-service-on-your-local-computer"></a>Debuggen des Clouddiensts auf dem lokalen Computer
 
-Sie können Zeit und Geld sparen, wenn Sie den Azure-Compute-Emulator zum Debuggen Ihres Clouddiensts auf einem lokalen Computer verwenden. Durch lokales Debuggen eines Diensts vor der Bereitstellung können Sie die Zuverlässigkeit und Leistung verbessern, ohne für die Computezeit bezahlen zu müssen. Allerdings können einige Fehler nur auftreten, wenn Sie einen Clouddienst in Azure selbst ausführen. Sie können diese Fehler debuggen, wenn Sie Remotedebuggen beim Veröffentlichen Ihres Diensts aktivieren und dann den Debugger zu einer Rolleninstanz hinzufügen.
+Sie können Zeit und Geld sparen, indem Sie den Azure-Server Emulator zum Debuggen Ihres clouddiensts auf einem lokalen Computer verwenden. Durch lokales Debuggen eines Diensts vor der Bereitstellung können Sie die Zuverlässigkeit und Leistung verbessern, ohne für die Computezeit bezahlen zu müssen. Allerdings können einige Fehler nur auftreten, wenn Sie einen Clouddienst in Azure selbst ausführen. Sie können diese Fehler debuggen, wenn Sie Remotedebuggen beim Veröffentlichen Ihres Diensts aktivieren und dann den Debugger zu einer Rolleninstanz hinzufügen.
 
 Der Emulator simuliert den Azure-Computedienst und wird in Ihrer lokalen Umgebung ausgeführt, sodass Sie den Clouddienst vor der Bereitstellung testen und debuggen können. Der Emulator behandelt den Lebenszyklus der Rolleninstanzen und bietet Zugriff auf simulierte Ressourcen wie lokalen Speicher. Beim Debuggen oder Ausführen des Diensts in Visual Studio wird der Emulator automatisch als Hintergrundanwendung gestartet und dann der Dienst für den Emulator bereitgestellt. Mit dem Emulator können Sie Ihren Dienst anzeigen, wenn er in der lokalen Umgebung ausgeführt wird. Sie können die vollständige Version oder die Express-Version des Emulators ausführen. (Ab Azure 2,3 ist die Express-Version des Emulators der Standard.) Siehe [Verwenden von Emulator Express zum lokalen ausführen und Debuggen eines clouddiensts](vs-azure-tools-emulator-express-debug-run.md).
 
