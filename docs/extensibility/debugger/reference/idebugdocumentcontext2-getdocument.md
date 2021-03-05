@@ -1,4 +1,5 @@
 ---
+description: Ruft das Dokument ab, das diesen Dokument Kontext enthält.
 title: 'IDebugDocumentContext2:: GetDocument | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7cf55175134a570afbb22791bab51602cd49eba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02921f44d1d9e41affbee4e4e9732117a0470272
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851282"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160185"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 Ruft das Dokument ab, das diesen Dokument Kontext enthält.

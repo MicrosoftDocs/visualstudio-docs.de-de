@@ -1,4 +1,5 @@
 ---
+description: Weist den Programm Verleger an, dass ein Debugger vorhanden ist und ausgeführt wird.
 title: 'IDebugProgramPublisher2:: setdebug-vorhanden | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef671690cdf9f0c6b84d3585aef3b23a6bbd8ba9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3db8703ed05fd4a386b9265998de2f27017d0d76
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959505"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161286"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Weist den Programm Verleger an, dass ein Debugger vorhanden ist und ausgeführt wird.

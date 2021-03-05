@@ -1,4 +1,5 @@
 ---
+description: Erstellt einen ausstehenden Haltepunkt in der Debug-Engine (de).
 title: 'IDebugEngine2:: kreateperdingbreakpoint | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93534a40d523c7b67a769ebea319463cf59e4b7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c364778fa857049139c058f144651edc28bb4692
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879019"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160160"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Erstellt einen ausstehenden Haltepunkt in der Debug-Engine (de).

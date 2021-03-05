@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle erweitert IDebugStackFrame2, um abgefangene Ausnahmen zu verarbeiten.
 title: IDebugStackFrame3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d70095db80b8bbd349509de2858b641c520b0623
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961182"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159769"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Diese Schnittstelle erweitert [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , um abgefangene Ausnahmen zu verarbeiten.
@@ -54,7 +55,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  Eine Debug-Engine gibt an, dass Sie das Abfangen von Ausnahmen unterstützt, indem "metricexceptions" zur Laufzeit mithilfe der-Funktion auf den Wert 1 festgelegt wird `SetMetric` . Weitere Informationen finden Sie unter [SDK-Hilfsprogramme für das Debuggen](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

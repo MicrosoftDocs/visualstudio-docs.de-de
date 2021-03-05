@@ -1,4 +1,5 @@
 ---
+description: Fügt eine Debug-Engine (de) an ein Programm oder eine Programmdatei an.
 title: 'IDebugEngine2:: Attach | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a780ab04e693fd2868579efbf015aef25e0cca32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948308"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160147"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Fügt eine Debug-Engine (de) an ein Programm oder eine Programmdatei an. Wird vom Sitzungs-Debug-Manager (SDM) aufgerufen, wenn der Prozess Prozess interne Ausführung in SDM erfolgt.
@@ -61,7 +62,7 @@ in Anzahl der Programme und/oder Programmknoten in den `pProgram` -und- `rgpProg
 in Das [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das zum Senden von debuggingereignissen an SDM verwendet werden soll.
 
 `dwReason`\
-in Ein Wert aus der [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) Enumeration, die den Grund für das Anfügen dieser Programme angibt. Weitere Informationen finden Sie im Abschnitt mit Hinweisen.
+in Ein Wert aus der [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) Enumeration, die den Grund für das Anfügen dieser Programme angibt. Weitere Informationen finden Sie im Abschnitt "Hinweise".
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.

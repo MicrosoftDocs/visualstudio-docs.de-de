@@ -1,4 +1,5 @@
 ---
+description: 'IDebugProgramNode2:: getprogramname Ruft den Namen des Programms ab.'
 title: 'IDebugProgramNode2:: getprogramname | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b8c84f90373743fb94fa0fe7115656642e0384a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88a4bc58f5d91cdb52482f4dc862446cfc9e7eb1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898515"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161384"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 Ruft den Namen des Programms ab.
