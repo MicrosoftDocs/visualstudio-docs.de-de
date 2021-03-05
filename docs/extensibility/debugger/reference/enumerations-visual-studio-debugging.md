@@ -1,4 +1,5 @@
 ---
+description: Im folgenden finden Sie Enumerationen für das Visual Studio-debuggingsdk.
 title: Enumerationen (Visual Studio-Debuggen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45b26a6d5bc2a9bdb32d5a8412458e6a126486d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21813818436e62eb7e9fc16a393af69a613d6d58
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937126"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144142"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumerations (Visual Studio Debugging)
 Im folgenden finden Sie Enumerationen für das [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debuggingsdk.
@@ -169,7 +170,7 @@ Im folgenden finden Sie Enumerationen für das [!INCLUDE[vsprvs](../../../code-q
 
 - [Thread State](../../../extensibility/debugger/reference/threadstate.md) Gibt den Status des Threads an.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h, sh. h oder EE. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

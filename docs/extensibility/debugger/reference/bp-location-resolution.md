@@ -1,4 +1,5 @@
 ---
+description: Beschreibt die Auflösung eines Breakpoints an einer bestimmten Position.
 title: BP_LOCATION_RESOLUTION | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: e8b6e022d14f663be24c92a7a8cce9a06959747b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80ed7f4f0206542e5f6a4289aba1d833eef5937a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902154"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144220"
 ---
 # <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
 Beschreibt die Auflösung eines Breakpoints an einer bestimmten Position.
@@ -32,14 +33,14 @@ typedef struct _BP_LOCATION_RESOLUTION {
 } BP_LOCATION_RESOLUTION;
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `pResolution`\
 Das [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) -Objekt, das den Typ des Breakpoints und dessen Auflösungsinformationen bestimmt.
 
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

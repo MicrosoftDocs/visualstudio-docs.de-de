@@ -1,4 +1,5 @@
 ---
+description: Gibt den Speicherorttyp des Breakpoints für eine Haltepunkt Anforderung an.
 title: BP_LOCATION_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 735acca4d4b2e2881c49a236dadae44aaa3cc1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1ccf81393e42cc79b0ef93703b4a2327207baf6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902142"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144194"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 Gibt den Speicherorttyp des Breakpoints für eine Haltepunkt Anforderung an.
@@ -121,7 +122,7 @@ Ein breakpointtyp besteht aus einem breakpointtyp und einem lokationstyp. Dies b
 
 `BPT_CODE` und `BPT_DATA` sind Member der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) -Enumeration.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

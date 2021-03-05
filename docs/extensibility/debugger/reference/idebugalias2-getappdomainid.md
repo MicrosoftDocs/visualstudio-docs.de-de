@@ -1,4 +1,5 @@
 ---
+description: Ruft den Bezeichner für die Anwendungsdomäne ab.
 title: 'IDebugAlias2:: getappdomainid | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c50473e12399e3977de55e67c7251d5783eecfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f5bd0d6a96ad41409b87433599fe693fc86c1cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947124"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143869"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 Ruft den Bezeichner für die Anwendungsdomäne ab.

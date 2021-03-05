@@ -1,4 +1,5 @@
 ---
+description: Diese Methode ruft ein idebugfunctionobject-Objekt ab, das verwendet wird, um Funktionsparameter zu erstellen.
 title: 'Idebugbinder:: getfunctionobject | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7128c97c60b5743ea9759a9449b82e4e909a686
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9868edafb18a129d119a818d9e51363d4964afa2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939031"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143649"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 Diese Methode ruft ein [idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) -Objekt ab, das verwendet wird, um Funktionsparameter zu erstellen.

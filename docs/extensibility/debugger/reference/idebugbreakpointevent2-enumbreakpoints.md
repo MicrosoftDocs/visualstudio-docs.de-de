@@ -1,4 +1,5 @@
 ---
+description: Erstellt einen Enumerator für alle Breakpoints, die an der aktuellen Codeposition ausgelöst werden.
 title: 'IDebugBreakpointEvent2:: enumbreakpoints | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaf3cac6d49ef2d09a9952ac41b2bb36262fbc7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bccb263fbdfebe1a83dab5f2ce5f570338b6d2e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899047"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143352"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 Erstellt einen Enumerator für alle Breakpoints, die an der aktuellen Codeposition ausgelöst werden.

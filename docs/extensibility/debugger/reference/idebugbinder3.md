@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle ermöglicht den Zugriff auf Typen, Aliase und benutzerdefinierte Visualisierungs Dienste.
 title: IDebugBinder3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673e4a4f18488b973984319310c139e104524a47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f6be3b149450ec84158acc533230102fce5a67e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901886"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143609"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugBinder3 : IDebugBinder
 ## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
  Zusätzlich zu den Methoden, die von der [idebugbinder](../../../extensibility/debugger/reference/idebugbinder.md) -Schnittstelle bereitgestellt werden, implementiert diese Schnittstelle Folgendes:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Ruft ein Speicher Objekt ab, das den Speicher darstellt, an den dieses-Objekt gebunden ist.|
 |[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Ruft die Ausnahme ab, die diesem-Objekt zugeordnet ist (falls vorhanden).|
@@ -51,7 +52,7 @@ IDebugBinder3 : IDebugBinder
 |[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Ruft eine Schnittstelle zu einem schnell Ansichts Dienst ab.|
 |[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Konvertiert entweder einen Objekt Speicherort oder eine 64-Bit-Speicheradresse in einen Speicher Kontext.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: EE. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

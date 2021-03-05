@@ -1,4 +1,5 @@
 ---
+description: Ruft den Typ des Elements im Array ab.
 title: 'Idebugarrayfield:: GetElementType | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44b49cbcd52137b31dd456c4cf45bb3fe8ead947
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9624a04ae70c8d29abd9b8af5b597b583efb7834
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944650"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143843"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Ruft den Typ des Elements im Array ab.

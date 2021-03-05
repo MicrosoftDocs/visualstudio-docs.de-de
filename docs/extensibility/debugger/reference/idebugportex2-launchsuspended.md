@@ -1,4 +1,5 @@
 ---
+description: Hiermit wird eine ausführbare Datei gestartet.
 title: 'IDebugPortEx2:: launchangeh alten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cfaf6dd332f17bd934a55f700e4d28096fba8b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5982ad665333aa4d11e2098d3b148db88e77c32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844774"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142823"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Hiermit wird eine ausführbare Datei gestartet.

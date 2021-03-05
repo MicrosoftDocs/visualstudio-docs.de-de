@@ -1,4 +1,5 @@
 ---
+description: Beschreibt den Speicherort eines Breakpoints, der direkt an eine Adresse im debuggten Programm gebunden ist.
 title: BP_LOCATION_CODE_CONTEXT | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: a51665a22a01c17256c41d45d2970bea0f617140
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b84e71c3102071dcdd0bcb5be9b539144c19047
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948386"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144402"
 ---
 # <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
 Beschreibt den Speicherort eines Breakpoints, der direkt an eine Adresse im debuggten Programm gebunden ist.
@@ -32,14 +33,14 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 } BP_LOCATION_CODE_CONTEXT;
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `pCodeContext`\
 Das [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das die Position des Breakpoints im Code identifiziert.
 
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

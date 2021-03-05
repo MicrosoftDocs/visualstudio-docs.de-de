@@ -1,4 +1,5 @@
 ---
+description: Ruft den Breakpoint ab, der ungebunden wurde.
 title: 'IDebugBreakpointUnboundEvent2:: getbreakpoint | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cfc913ed80244c0f6cb323dc37a5b0faa8716b1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e8b44714e7d0e70d388226eb7a30e9f75c39f174
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143310"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 Ruft den Breakpoint ab, der ungebunden wurde.

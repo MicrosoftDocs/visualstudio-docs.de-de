@@ -1,4 +1,5 @@
 ---
+description: Wird verwendet, um Daten Breakpoints festzulegen, die auf einer Zeichenfolge basieren, die der Benutzer aus der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) eingeben kann.
 title: BP_LOCATION_DATA_STRING | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: ce47dc9a3fac9ee56b801e4d2681668f4467f532
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e4a250843ebbb6ab7680040e3aa296699e184ee
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902159"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144350"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
 Wird verwendet, um Daten Breakpoints festzulegen, die auf einer Zeichenfolge basieren, die der Benutzer aus der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) eingeben kann.
@@ -35,7 +36,7 @@ typedef struct _BP_LOCATION_DATA_STRING {
 } BP_LOCATION_DATA_STRING;
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `pThread`\
 Das [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) -Objekt, das den Thread darstellt, in dem der Breakpoint auftritt.
 
@@ -51,7 +52,7 @@ Die Anzahl der Elemente in der Daten Zeichenfolge, in der der Breakpoint auftrit
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Die Debug-Engine (de) sendet diese Schnittstelle an den Sitzungs-Debug-Manager (SDM), wenn ein Programm an einem Haltepunkt angehalten wird.
 title: IDebugBreakpointEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2076f4c98748d33542b4457f236711c38936aea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3ff9d1f83baeec275f285caa4aaca692e20958d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952303"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143336"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 Die Debug-Engine (de) sendet diese Schnittstelle an den Sitzungs-Debug-Manager (SDM), wenn ein Programm an einem Haltepunkt angehalten wird.
@@ -41,7 +42,7 @@ IDebugBreakpointEvent2 : IUnknown
 |------------|-----------------|
 |[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|Erstellt einen Enumerator für alle Breakpoints, die an der aktuellen Codeposition ausgelöst werden.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

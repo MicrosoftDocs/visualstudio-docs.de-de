@@ -1,4 +1,5 @@
 ---
+description: Ruft den Alias ab, der diesem-Objekt zugeordnet ist, sofern vorhanden.
 title: 'IDebugObject2:: getalias | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f2fa330b98a37f3946ef19bc2f5641b5b525d88
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c2ac683a5fb4d694b7cf3ab84849b9d7c7df7a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953486"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143128"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 Ruft den Alias ab, der diesem-Objekt zugeordnet ist, sofern vorhanden.

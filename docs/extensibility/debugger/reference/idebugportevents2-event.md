@@ -1,4 +1,5 @@
 ---
+description: Diese Methode sendet Ereignisse, die die Erstellung und Zerstörung von Prozessen und Programmen an einem Port angeben.
 title: 'IDebugPortEvents2:: Event | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcf8a827f09c1b8d0e83b92f7729635cbb0f7f18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc975c2f48c560d0f15f08a6cc957c67ecc13808
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896174"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142907"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Diese Methode sendet Ereignisse, die die Erstellung und Zerstörung von Prozessen und Programmen an einem Port angeben.
