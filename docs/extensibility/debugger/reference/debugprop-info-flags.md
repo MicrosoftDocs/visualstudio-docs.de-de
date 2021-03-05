@@ -1,4 +1,5 @@
 ---
+description: Gibt an, welche Informationen über ein Debug-Eigenschaften Objekt abgerufen werden sollen.
 title: DEBUGPROP_INFO_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 745ecf4efa661c31e230a25d23cfd66cb5d5bb51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63467e93b80648e6a00728dc66971b7c9b3c9b24
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939122"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170522"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 Gibt an, welche Informationen über ein Debug-Eigenschaften Objekt abgerufen werden sollen.
@@ -117,7 +118,7 @@ Diese Werte werden auch für den `dwFields` -Member der `DEBUG_PROPERTY_INFO` -S
 
 Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

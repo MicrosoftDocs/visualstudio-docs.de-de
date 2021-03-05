@@ -1,4 +1,5 @@
 ---
+description: Gibt an, wie der Typ eines idebugfield-Objekts interpretiert werden soll.
 title: dwTYPE_KIND | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e13d02cb08f957636a81bf4a985f1d7006b6c2ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f51a84951cdfe09e13454035c3219324e9a68368
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908091"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170327"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 Gibt an, wie der Typ eines [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekts interpretiert werden soll.
@@ -58,7 +59,7 @@ Die `TYPE_INFO` Union sollte als [BUILT_TYPE](../../../extensibility/debugger/re
 ## <a name="remarks"></a>Bemerkungen
 Die Werte dieser Enumeration `dwKind` werden im-Feld der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Struktur angezeigt und werden verwendet, um zu bestimmen, wie das `type` Unionmember interpretiert werden soll. Die- `TYPE_INFO` Struktur wird durch einen Aufrufen der [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
