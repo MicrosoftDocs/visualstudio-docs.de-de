@@ -1,4 +1,5 @@
 ---
+description: Fügt dem aktuellen Kontext den angegebenen Wert hinzu und gibt einen neuen Kontext zurück.
 title: 'IDebugMemoryContext2:: Add | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ddba5665ead15bb623193412bafa7d6eaa8aa16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59daddd38daff2f04f12bc0d1be4e06ec90cf723
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851217"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166423"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 Fügt dem aktuellen Kontext den angegebenen Wert hinzu und gibt einen neuen Kontext zurück.

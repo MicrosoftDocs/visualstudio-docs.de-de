@@ -1,4 +1,5 @@
 ---
+description: Stellt Gebiets Schema Unterstützung für einen Port Lieferanten bereit.
 title: IDebugPortSupplierLocale2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d59f46bdde06addf5454700eb45e64c3b452d78
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c29bd3fb882be6529daa0d26ab4cde23c11d0bc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874282"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167060"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 Stellt Gebiets Schema Unterstützung für einen Port Lieferanten bereit.
@@ -32,11 +33,11 @@ IDebugPortSupplierLocale2 : IUnknown
 ## <a name="methods"></a>Methoden
  In der folgenden Tabelle sind die Methoden von **IDebugPortSupplierLocale2** aufgeführt.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Legt das Gebiets Schema für den Port Lieferanten fest.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: portpriv. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

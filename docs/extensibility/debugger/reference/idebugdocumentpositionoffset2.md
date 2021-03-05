@@ -1,4 +1,5 @@
 ---
+description: Stellt eine Position in einer Quelldatei als Zeichen Offset dar.
 title: IDebugDocumentPositionOffset2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69fbdef70fc9c95ef571ce0ce796199292417ca0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dee28d7f19f6398863476afbab8eb9b3cdbbb60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933556"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167320"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 Stellt eine Position in einer Quelldatei als Zeichen Offset dar.
@@ -32,14 +33,14 @@ IDebugDocumentPositionOffset2 : IUnknown
 ## <a name="methods"></a>Methoden
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugDocumentPositionOffset2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Ruft den Bereich für die aktuelle Dokument Position ab.|
 
 ## <a name="remarks"></a>Bemerkungen
  Dadurch werden dieselben Informationen wie [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) zurückgegeben, jedoch in `char` Offsets vom Anfang des Dokuments. Dadurch wird das Dokument so dargestellt, wie es auf einem Datenträger vorhanden ist, d. h. ein eindimensionales Array von Zeichen, anstelle der Zeilen-und Spalten Informationen, die normalerweise zurückgegeben werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

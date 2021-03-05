@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle beschreibt eine-Methode.
 title: Idebugmethodfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95f79062c4ca2452d6ed271660841fccb8adfca3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05a90252241dd51e1c567847891cf681c88d8fba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941813"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166306"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 Diese Schnittstelle beschreibt eine-Methode.
@@ -51,7 +52,7 @@ IDebugMethodField : IDebugContainerField
 ## <a name="remarks"></a>Bemerkungen
  Eine Methode kann sowohl Parameter als auch lokale Variablen enthalten.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

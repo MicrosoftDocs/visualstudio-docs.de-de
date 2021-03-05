@@ -1,4 +1,5 @@
 ---
+description: Legt den Wert dieser Eigenschaft auf den Wert des angegebenen Verweises fest.
 title: 'IDebugProperty2:: setvalueasreference | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2ed6cbf32d807734714f25453e33fe8bdd7fac0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5b9529a4e4cd56a2b354eaa7f847db4d9d82be1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961793"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166748"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Legt den Wert dieser Eigenschaft auf den Wert des angegebenen Verweises fest.

@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn eine Eigenschaft, die einem bestimmten Dokument zugeordnet ist, zerstört wird.
 title: IDebugPropertyDestroyEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b09fb8c644adb5464519f0f30bd8deff0be821ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34f5a726d8d77a3d12f1d390f70f7bbc30a3abb4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900090"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167996"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn eine Eigenschaft, die einem bestimmten Dokument zugeordnet ist, zerstört wird.
@@ -37,14 +38,14 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle wird die-Methode von gezeigt `IDebugPropertyDestroyEvent2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Ruft die Eigenschaft ab, die zerstört werden soll.|
 
 ## <a name="remarks"></a>Bemerkungen
  Ausführliche Informationen dazu, warum diese Ereignisse verwendet werden, finden Sie in den Hinweisen zu [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

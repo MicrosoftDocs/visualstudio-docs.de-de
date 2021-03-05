@@ -1,4 +1,5 @@
 ---
+description: Ruft die Größe des Texts an dieser Position im Dokument ab.
 title: 'IDebugDocumentText2:: GetSize | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ecb8257d2428222fd18d6cafdfde950cb743f293
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91dd1b2a510589ab048bd1bd290b0ab4aabe571b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844865"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167307"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Ruft die Größe des Texts an dieser Position im Dokument ab.

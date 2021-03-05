@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt die Funktionen bereit, die das erhalten und Festlegen einer Eigenschaft ermöglichen.
 title: Idebugpropertyfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 303ff1820d0213766ec5ad186ce7b9a3483c0bfa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 097d73485773052afa1e9852293211084a225099
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909851"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167905"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Diese Schnittstelle stellt die Funktionen bereit, die das erhalten und Festlegen einer Eigenschaft ermöglichen.
@@ -45,7 +46,7 @@ IDebugPropertyField : IDebugContainerField
 ## <a name="remarks"></a>Bemerkungen
  Eine Eigenschaft ist ein verwaltetes Code Konzept und stellt eine Methode dar, die als Variable behandelt wird. Eigenschaften sind in nicht verwaltetem C++ nicht vorhanden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
