@@ -1,4 +1,5 @@
 ---
+description: Ruft den anzeigbaren Namen des Dokuments ab, das diesen Dokument Kontext enthält.
 title: 'IDebugDocumentContext2:: GetName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7619f15e995aeb8d70897d74686a0e79d2532da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4e75cd6b963965a245055ff8fa0849e39339af1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947046"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146209"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 Ruft den anzeigbaren Namen des Dokuments ab, das diesen Dokument Kontext enthält.

@@ -1,4 +1,5 @@
 ---
+description: Der Referenz Abschnitt enthält eine konzeptionelle Übersicht über die API, eine Anleitung, die die Syntax und Verwendung für alle API-Elemente sowie eine Reihe von Codebeispielen zeigt.
 title: API-Referenz (Visual Studio-Debuggen) | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912035"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144636"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API-Referenz (Visual Studio-Debugging)
 Der Referenz Abschnitt enthält eine konzeptionelle Übersicht über die API, eine Anleitung, die die Syntax und Verwendung für alle API-Elemente sowie eine Reihe von Codebeispielen zeigt. Alle Verweise sind alphabetisch nach Kategorie aufgelistet.

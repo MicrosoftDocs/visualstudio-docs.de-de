@@ -1,4 +1,5 @@
 ---
+description: Der Delegat, der den Code darstellt, der im System. Threading. Tasks. Task-Objekt ausgeführt werden soll.
 title: m_action Feld | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5bd2d826f1612be3bc3747cdaee9818d4ecc870
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e23baa6682d478c825ce443009e499e2619dd94
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925321"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145494"
 ---
 # <a name="m_action-field"></a>m_action Feld
 Der Delegat, der den Code darstellt, der im-Objekt ausgeführt werden soll <xref:System.Threading.Tasks.Task> .

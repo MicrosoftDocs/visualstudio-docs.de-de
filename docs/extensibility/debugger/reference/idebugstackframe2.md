@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen einzelnen Stapel Rahmen in einer-Rückruf Stapel in einem bestimmten Thread dar.
 title: IDebugStackFrame2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7241c697baf7810d961f4cc3aba71d469bad4582
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5ec53e89afb43187c641058620df53c4a61d6cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963561"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145910"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Diese Schnittstelle stellt einen einzelnen Stapel Rahmen in einer-Rückruf Stapel in einem bestimmten Thread dar.
@@ -53,7 +54,7 @@ IDebugStackFrame2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Diese Schnittstelle wird nur abgerufen, wenn das gedestete Programm an einem Haltepunkt angehalten wurde (entweder durch einen Benutzer Satz-Haltepunkt oder eine Ausnahme verursacht). Über diese Schnittstelle kann ein Ausdrucks Kontext zum Auswerten von Ausdrücken abgerufen werden, eine Liste der Register kann zurückgegeben werden, oder die Aufrufliste kann abgerufen und überprüft werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

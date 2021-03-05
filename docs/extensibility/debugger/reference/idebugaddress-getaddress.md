@@ -1,4 +1,5 @@
 ---
+description: Gibt eine-Struktur zurück, die ein-Objekt und seinen Speicherort innerhalb seines Bereichs oder Containers beschreibt.
 title: 'Idebugaddress:: GetAddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df4eb1278a0fe436899c1da989c4c63cfa98cac3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52c52d12d8c357f4dbadeef673a3dc4474713ce9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853011"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145442"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 Gibt eine-Struktur zurück, die ein-Objekt und seinen Speicherort innerhalb seines Bereichs oder Containers beschreibt.

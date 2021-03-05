@@ -1,4 +1,5 @@
 ---
+description: Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.
 title: Asyncvoidmethodbuilder. objectidfordebugger-Eigenschaft | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bde9c1dee2f380d73ca47de3ab6c3618a7c1b89e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b66c40bd7c2cb289c4d17a719260b1098c24133f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921642"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145507"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Asyncvoidmethodbuilder. objectidfordebugger-Eigenschaft
 Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.

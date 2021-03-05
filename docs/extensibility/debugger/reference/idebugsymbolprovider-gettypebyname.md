@@ -1,4 +1,5 @@
 ---
+description: Diese Methode ordnet einem Symboltyp einen Symbolnamen zu.
 title: 'Idebugsymbolprovider:: gettypeer byname | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 565a202d3b63a8c501864099940f5ca16da96077
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9223639fa82bffa2f55a7692e1ec4a2576e66d45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894867"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145754"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Diese Methode ordnet einem Symboltyp einen Symbolnamen zu.
