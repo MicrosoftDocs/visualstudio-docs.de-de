@@ -1,4 +1,5 @@
 ---
+description: Stellt eine Prüfsumme für ein debugdokument dar und ermöglicht die Übergabe der Prüfsumme zwischen Komponenten.
 title: IDebugDocumentChecksum2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca8a33626ad68dcac690ca288d4bc375679a4e3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5b39f381817cd98fd94b1c746cbdccde31e0b1f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880774"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165565"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 Stellt eine Prüfsumme für ein debugdokument dar und ermöglicht die Übergabe der Prüfsumme zwischen Komponenten.
@@ -32,11 +33,11 @@ IDebugDocumentChecksum2 : IUnknown
 ## <a name="methods"></a>Methoden
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugDocumentChecksum2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Ruft die Prüfsumme des Dokuments und den Algorithmusbezeichner anhand der maximalen Anzahl von Bytes ab, die verwendet werden sollen.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt eine abstrakte Position einer Funktion in einem Quelldokument dar.
 title: IDebugFunctionPosition2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e05cc09d2c252ddeaadc3cfa1b40e1a5797b6d79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a5717023eea18060834d1beade25199d5b0c3f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920910"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165526"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Diese Schnittstelle stellt eine abstrakte Position einer Funktion in einem Quelldokument dar.
@@ -37,7 +38,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugFunctionPosition2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Ruft den Namen der Funktion ab, zu der diese Position relativ ist.|
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Ruft den Offset vom Anfang der Funktion ab.|
@@ -45,7 +46,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Die durch diese Schnittstelle dargestellte Position ist Text basiert, insbesondere eine [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

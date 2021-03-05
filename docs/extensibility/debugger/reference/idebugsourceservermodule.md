@@ -1,4 +1,5 @@
 ---
+description: Stellt die Quell Server Informationen dar, die in einer PDB-Datei enthalten sind.
 title: Idebugsourceservermodule | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dfc4b3defc0b74c1e22c45670209682692a4807
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74fa5f3aafea5f709777bbead81743c7c5aef358
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837696"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164642"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 Stellt die Quell Server Informationen dar, die in einer PDB-Datei enthalten sind.
@@ -32,11 +33,11 @@ IDebugSourceServerModule : IUnknown
 ## <a name="methods"></a>Methoden
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugSourceServerModule` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Ruft ein Array von Quell Server Informationen ab.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

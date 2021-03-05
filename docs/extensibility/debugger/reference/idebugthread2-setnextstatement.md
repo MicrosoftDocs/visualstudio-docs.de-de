@@ -1,4 +1,5 @@
 ---
+description: Legt den aktuellen Anweisungs Zeiger auf den angegebenen Code Kontext fest.
 title: 'IDebugThread2:: SetNextStatement | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c8a7aff8c6e902b20c5569e2553aececae835ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d29b351662ce5cb8aeda9a1f65e278349a0a3b18
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893710"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164473"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Legt den aktuellen Anweisungs Zeiger auf den angegebenen Code Kontext fest.
@@ -51,7 +52,7 @@ in Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcode
 ## <a name="return-value"></a>Rückgabewert
  Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben. In der folgenden Tabelle werden andere mögliche Werte angezeigt.
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Die nächste Anweisung darf sich nicht in einem Stapel Rahmen befinden, der tiefer auf dem Frame Stapel liegt.|
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Die Next-Anweisung ist keinem Frame im Stapel zugeordnet.|
