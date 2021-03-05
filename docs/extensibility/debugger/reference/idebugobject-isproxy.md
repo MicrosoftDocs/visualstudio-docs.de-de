@@ -1,4 +1,5 @@
 ---
+description: Bestimmt, ob es sich bei dem Objekt um einen transparenten Proxy handelt.
 title: 'Idebugobject:: isproxy | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 216d1e0e007376b88b8befd2bf654a65192b13c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9cc2bc45a1e4cfe3e71f07bd2305aa0c7f1fde8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953642"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161490"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 Bestimmt, ob es sich bei dem Objekt um einen transparenten Proxy handelt.
