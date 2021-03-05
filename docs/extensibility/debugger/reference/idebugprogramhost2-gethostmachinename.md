@@ -1,4 +1,5 @@
 ---
+description: Ruft den Namen des Computers ab, auf dem der Prozess ausgeführt wird, auf dem dieses Programm gehostet wird.
 title: 'IDebugProgramHost2:: gethostmachinename | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 575481951ffb662452d5cb6635f91bfb11ea6432
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ba8a2598af54f700ec85f3e3856b29166f2613
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898750"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145247"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
 Ruft den Namen des Computers ab, auf dem der Prozess ausgeführt wird, auf dem dieses Programm gehostet wird.

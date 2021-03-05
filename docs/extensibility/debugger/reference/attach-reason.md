@@ -1,4 +1,5 @@
 ---
+description: Gibt den Grund für das Anfügen der Debug-Engine (de) an einen Programmknoten an.
 title: ATTACH_REASON | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4baf13945b85cff334aa6392a50f6a80fdf50961
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6fa83fb537f05a2c073e3693dab964fa58af464
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950437"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144610"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
 Gibt den Grund für das Anfügen der Debug-Engine (de) an einen Programmknoten an.
@@ -57,7 +58,7 @@ Anfügen aufgrund einer Benutzer Anforderung.
 ## <a name="remarks"></a>Bemerkungen
 Diese Werte werden als Parameter für die [Anfüge](../../../extensibility/debugger/reference/idebugengine2-attach.md) -und [Anfüge](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) Methoden verwendet.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 368fd5bc9c8b7e2659c86b6e3dc69a609da37617
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867892"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144662"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Aktivieren oder Installieren von .NET-Analysetools von Erstanbietern
 
@@ -26,7 +26,7 @@ Die Analysetools für die .NET-Compilerplattform (Roslyn) untersuchen Ihren C#- 
 
 Sie können die .net-Analysen von erst Anbietern auf eine der folgenden Arten aktivieren oder installieren:
 
-- **Aktivieren über das .NET SDK**: ab Visual Studio 2019 16,8 und .net 5,0 sind diese Analysen im [.NET SDK enthalten](/dotnet/fundamentals/code-analysis/overview). Die Analyse ist standardmäßig für Projekte aktiviert, die auf .net 5,0 oder höher ausgerichtet sind. Sie können die Code Analyse für Projekte aktivieren, die auf frühere .NET-Versionen abzielen, indem Sie die- `EnableNETAnalyzers` Eigenschaft auf festlegen `true` . Sie können die Code Analyse für Ihr Projekt auch deaktivieren, indem Sie `EnableNETAnalyzers` auf festlegen `false` .
+- **Aktivieren über das .NET SDK**: ab Visual Studio 2019 16,8 und .net 5,0 sind diese Analysen im [.NET SDK enthalten](/dotnet/fundamentals/code-analysis/overview). Die Analyse ist standardmäßig für Projekte aktiviert, die auf .net 5,0 oder höher ausgerichtet sind. Sie können die Code Analyse für Projekte aktivieren, die auf frühere .NET-Versionen abzielen, indem Sie die Eigenschaft MSBuild [enablenetanalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) auf festlegen `true` . Sie können die Code Analyse für Ihr Projekt auch deaktivieren, indem Sie `EnableNETAnalyzers` auf festlegen `false` .
 
 - **Installieren Sie als nuget-Paket**: Wenn Sie nicht zum .net 5 + SDK wechseln möchten oder wenn Sie ein auf einem nuget-Paket basierendes Modell bevorzugen, sind die Analysetools auch im `Microsoft.CodeAnalysis.NetAnalyzers` [nuget-Paket](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) in Visual Studio 2019 verfügbar.  Möglicherweise bevorzugen Sie ein Paket basiertes Modell für Bedarfs gesteuerte Versions Aktualisierungen. Wenn Sie Visual Studio 2017 verwenden, installieren Sie stattdessen die neueste `2.9.x` Version des `Microsoft.CodeAnalysis.FxCopAnalyzers` [nuget-Pakets](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) .
 

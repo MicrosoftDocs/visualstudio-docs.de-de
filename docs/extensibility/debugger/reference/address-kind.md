@@ -1,4 +1,5 @@
 ---
+description: Gibt die Arten von Adressen an.
 title: ADDRESS_KIND | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d909694afcec033401b730011633a9da0fafbc18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12a47edf2b9eca9cd99a5b11531f78e080572d54
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912147"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144649"
 ---
 # <a name="address_kind"></a>ADDRESS_KIND
 Gibt die Arten von Adressen an.
@@ -87,7 +88,7 @@ Ein Rückgabewert, der durch die [METADATA_ADDRESS_RETVAL](../../../extensibilit
 ## <a name="remarks"></a>Bemerkungen
 Die [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) -Methode gibt die [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur zurück, die eine Vereinigung möglicher Strukturen, die [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur enthält. Das `dwKind` -Feld der `DEBUG_ADDRESS_UNION` -Struktur enthält den `ADDRESS_KIND` Wert und beschreibt, wie das Union-Feld interpretiert wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: In diesem Thema werden die internen Member der System. Runtime. CompilerServices. asynctaskmethodbuilder-Klasse beschrieben.
 title: 'Asynctaskmethodbuilder &lt; TResult &gt; -Struktur: interne Member | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41cb409495b28b7dc2bc796859da413a32b90d85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35e1ca4d19727383bdd7c957bc59fd6b6568c9f5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921638"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145650"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>Asynctaskmethodbuilder &lt; TResult &gt; -Struktur: interne Member
 In diesem Thema werden die internen Member der- <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> Klasse beschrieben. Allgemeine Informationen zu dieser Klasse finden Sie im <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> Referenz Thema.
@@ -37,7 +38,7 @@ In diesem Thema werden die internen Member der- <xref:System.Runtime.CompilerSer
 
 ## <a name="internal-members"></a>Interne Member
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |----------|-----------------|
 |[Objectidfordebugger-Eigenschaft](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.|
 |[m_task Feld](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Stellt die verzögert initialisierte erstellter Aufgabe dar.|

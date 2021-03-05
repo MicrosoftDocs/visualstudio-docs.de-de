@@ -1,4 +1,5 @@
 ---
+description: Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.
 title: Asynctaskmethodbuilder. objectidfordebugger-Eigenschaft | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e3e34d0811d2111dfff6c19b1605b78286bcc3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3f53a681d886d5fa59dd037f9cdf23da62284da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904815"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145715"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Asynctaskmethodbuilder. objectidfordebugger-Eigenschaft
 Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.

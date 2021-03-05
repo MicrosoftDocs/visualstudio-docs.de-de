@@ -1,4 +1,5 @@
 ---
+description: Die Debug-Engine (de) verwendet diese Schnittstelle, um ein Dokument anzufordern, das geladen werden soll.
 title: IDebugActivateDocumentEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ec3168a7e104e20bbb53607b4bd7a6acd8e79e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 557cb86765c06c8589f30a013a1087764f3f909e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904658"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145455"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 Die Debug-Engine (de) verwendet diese Schnittstelle, um ein Dokument anzufordern, das geladen werden soll.
@@ -45,7 +46,7 @@ IDebugActivateDocumentEvent2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Ein typisches Szenario, in dem diese Schnittstelle verwendet wird, wenn im Skriptcode auf einer HTML-Seite ein Analysefehler auftritt, sendet das Skript de diese Schnittstelle an SDM, damit das Dokument mit dem Analysefehler angezeigt werden kann.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

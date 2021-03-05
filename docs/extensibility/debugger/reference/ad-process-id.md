@@ -1,4 +1,5 @@
 ---
+description: Gibt die Prozess-ID an, bei der es sich entweder um eine System-ID oder eine GUID handeln kann.
 title: AD_PROCESS_ID | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 303c05b241347922a4253ef3654e06bed8e824ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c56bc1941bcff5d70dbcf0cb3a126c1f434d3f24
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952420"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144675"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
 Gibt die Prozess-ID an, bei der es sich entweder um eine System-ID oder eine GUID handeln kann.
@@ -47,7 +48,7 @@ public struct AD_PROCESS_ID {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `ProcessIdType`\
 Ein Wert aus der [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Enumeration, der angibt, wie die `ProcessId` Union interpretiert werden soll (oder für verwalteten Code, auf den der Member der Struktur zugreifen soll).
 
@@ -76,7 +77,7 @@ Und werden von den folgenden Methoden zurückgegeben:
 
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
