@@ -1,4 +1,5 @@
 ---
+description: Ruft den Wert ab, auf den als eine Reihe von aufeinander folgenden Bytes gezeigt wird.
 title: 'Idebugpointerobject:: GetBytes | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1961aaf45478f25ed8eb55d8eda91a5c4eafc4dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51d5e4cf65c9e72dada225e042f7d3d11e9b4b4c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852946"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169677"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Ruft den Wert ab, auf den als eine Reihe von aufeinander folgenden Bytes gezeigt wird.

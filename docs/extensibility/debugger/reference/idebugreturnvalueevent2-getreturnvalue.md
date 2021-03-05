@@ -1,4 +1,5 @@
 ---
+description: Ruft den Wert ab, der beim Durchlaufen von oder über einer Funktion zurückgegeben wird.
 title: 'IDebugReturnValueEvent2:: GetReturnValue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a11b3af2f0580f91c61eb0476b5b4d7564f4b2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a24ffa74e8b245cfd65d637d467fc4623a70d8f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883778"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168936"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 Ruft den Wert ab, der beim Durchlaufen von oder über einer Funktion zurückgegeben wird.

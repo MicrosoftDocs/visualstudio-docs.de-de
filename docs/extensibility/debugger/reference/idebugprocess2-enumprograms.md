@@ -1,4 +1,5 @@
 ---
+description: Ruft eine Liste aller Programme ab, die in diesem Prozess enthalten sind.
 title: 'IDebugProcess2:: enumprograms | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da4e2b03e6b16c69296daf4de35f9d381f7e4e93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14b3644063a71818f9619a2856237d0c01cdc648
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884753"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168256"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
 Ruft eine Liste aller Programme ab, die in diesem Prozess enthalten sind.

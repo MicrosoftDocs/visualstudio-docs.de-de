@@ -1,4 +1,5 @@
 ---
+description: Ermöglicht Debug-engines das Remote Lesen von Metrikeinstellungen.
 title: IDebugSettingsCallback2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 696f5eb00781c8f46ef099db1000b36a972a95dc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7053c45ba86f4bea54befc3bde67d831cc9c822e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875808"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168659"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 Ermöglicht Debug-engines das Remote Lesen von Metrikeinstellungen.
@@ -32,7 +33,7 @@ Diese Schnittstelle wird durch den Ereignis Rückruf des sitzungsdebug-Managers 
 ## <a name="methods"></a>Methoden
 In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugSettingsCallback2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|Listet die verfügbaren Ausdrucksauswertungen unter Berücksichtigung der Sprach-und Hersteller Bezeichner auf.|
 |[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|Ruft ein lokales Objekt der Ausdrucks Auswertung ab, wenn die Metrik angegeben ist.|
@@ -44,7 +45,7 @@ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugSettingsCallba
 |[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|Ruft den eindeutigen Bezeichner einer Metrik anhand des Namens ab.|
 |[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|Ruft die Wert Zeichenfolge der Metrik mit dem angegebenen Namen ab.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

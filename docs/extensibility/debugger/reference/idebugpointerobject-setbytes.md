@@ -1,4 +1,5 @@
 ---
+description: Legt den Wert fest, auf den aus einer Reihe von aufeinander folgenden Bytes gezeigt wird.
 title: 'Idebugpointerobject:: SetBytes | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 57f1a077923a174ece5323256ad474dda3ec685f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31feb63e4f9d246161ced3483f487b2877ee5e1e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952277"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169664"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 Legt den Wert fest, auf den aus einer Reihe von aufeinander folgenden Bytes gezeigt wird.

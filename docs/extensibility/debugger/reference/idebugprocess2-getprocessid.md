@@ -1,4 +1,5 @@
 ---
+description: Ruft die GUID für diesen Prozess ab.
 title: 'IDebugProcess2:: GetProcessID | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df7b90d4096f651e0f055f9c92343df2a2712fe9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d93225a676efe2a5af6a6064f4251c1a9cb02b2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894893"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168165"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 Ruft die GUID für diesen Prozess ab.
