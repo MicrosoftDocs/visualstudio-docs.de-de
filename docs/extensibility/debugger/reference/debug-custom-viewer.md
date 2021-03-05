@@ -1,4 +1,5 @@
 ---
+description: Eine-Struktur, die einen benutzerdefinierten Viewer oder eine typschnell Ansicht identifiziert.
 title: DEBUG_CUSTOM_VIEWER | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fa8e8d9e07510a10b1b32534f3323dab4c84a22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46133d2b2800977b0819835f578b04569c4f5ce8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899112"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151056"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 Eine-Struktur, die einen benutzerdefinierten Viewer oder eine typschnell Ansicht identifiziert.
@@ -49,7 +50,7 @@ public struct DEBUG_CUSTOM_VIEWER {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwID`\
 Eine ID zur Unterscheidung mehrerer Viewer oder schnell Ansichten, die von einem solchen implementiert werden `GUID` .
 
@@ -71,7 +72,7 @@ Die Metrik, unter der der benutzerdefinierte Viewer oder die typschnell Ansicht 
 ## <a name="remarks"></a>Bemerkungen
 Eine Liste dieser Struktur wird durch einen Aufrufen der [getcustomviewerlist](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) -Methode zurückgegeben (und durch Erweiterung die [getcustomviewerlist](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) -Methode).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

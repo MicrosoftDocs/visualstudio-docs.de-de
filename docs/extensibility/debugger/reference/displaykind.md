@@ -1,4 +1,5 @@
 ---
+description: Listet die gültigen Werte auf, die die Arten von Informationen darstellen, die von einem idebugfield-Objekt übernommen und dem Benutzer angezeigt werden.
 title: Display Kind | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62421ad9bf03c3b8eb21539f2f53fd8a632498ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5632c6844a38f1891070311fe3c7c65a0220def5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953772"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151023"
 ---
 # <a name="displaykind"></a>DisplayKind
 Listet die gültigen Werte auf, die die Arten von Informationen darstellen, die von einem [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt übernommen und dem Benutzer angezeigt werden.
@@ -54,7 +55,7 @@ Der Name des Felds.
 `DisplayKind_Type`\
 Der Feldtyp.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: EE. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

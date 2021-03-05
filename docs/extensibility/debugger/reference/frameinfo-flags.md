@@ -1,4 +1,5 @@
 ---
+description: Gibt die Informationen an, die über ein Stapel Rahmen Objekt abgerufen werden sollen.
 title: FRAMEINFO_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcdb555e4355d6f22c8218f98899c01b3b3e2e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4029212aae6d4557e17c42a0c0e024a83c94b0a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904785"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150821"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 Gibt die Informationen an, die über ein Stapel Rahmen Objekt abgerufen werden sollen.
@@ -199,7 +200,7 @@ Diese Flags werden an die [enumframeinfo](../../../extensibility/debugger/refere
 
 Diese Flags werden auch verwendet, um anzugeben, welche Felder der [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Struktur verwendet und gültig sind, wenn die Struktur zurückgegeben wird. Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

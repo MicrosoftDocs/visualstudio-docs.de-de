@@ -1,4 +1,5 @@
 ---
+description: Ruft eine Liste der Stapel Rahmen für diesen Thread ab.
 title: 'IDebugThread2:: enumframeinfo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a254de60995eb5e7902eda80cf50c4af227a756f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9ad740de00338596de622cbce1028768ddda638
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940279"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149339"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Ruft eine Liste der Stapel Rahmen für diesen Thread ab.

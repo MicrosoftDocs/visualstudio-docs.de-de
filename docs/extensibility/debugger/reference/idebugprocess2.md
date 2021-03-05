@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen Prozess dar, der auf einem Port ausgeführt wird.
 title: IDebugProcess2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd644a728f049cf8b94f22ef961464b8bfcb5816
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 131eacba321bac70c75b77faf33b18aae0135e55
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891071"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150262"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Diese Schnittstelle stellt einen Prozess dar, der auf einem Port ausgeführt wird. Wenn der Port der lokale Port ist, `IDebugProcess2` stellt normalerweise einen physischen Prozess auf dem lokalen Computer dar.
@@ -41,7 +42,7 @@ IDebugProcess2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProcess2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|Ruft eine Beschreibung des Prozesses ab.|
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|Listet die Programme auf, die in diesem Prozess enthalten sind.|
@@ -61,7 +62,7 @@ IDebugProcess2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Eine `IDebugProcess2` enthält mindestens eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstelle.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

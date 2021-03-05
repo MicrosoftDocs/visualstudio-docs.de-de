@@ -1,4 +1,5 @@
 ---
+description: Diese Methode ruft eine IDebugPortNotify2-Schnittstelle für diesen Port ab.
 title: 'IDebugDefaultPort2:: getportnotify | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26e269e37eddf37aafb87c9e479feb0047bfce70
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd0d49275188eed1cebb7b1af3ee4dfcbb79cbe4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934304"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150652"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 Diese Methode ruft eine [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) -Schnittstelle für diesen Port ab.

@@ -1,4 +1,5 @@
 ---
+description: Mit dieser Methode wird die Sprache festgelegt, unter der der Prozess gehostet wird.
 title: 'IDebugProcess3:: Einstellungs Sprache | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d2a95a5f8181b7b58198a8a56b7fb0037ef0bc1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926259"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150119"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Mit dieser Methode wird die Sprache festgelegt, unter der der Prozess gehostet wird. Diese Sprache kann dann von der Debug-Engine (de) zum Laden der entsprechenden Ausdrucks Auswertung verwendet werden.

@@ -1,4 +1,5 @@
 ---
+description: Gibt die Art des Felds an, das in einem idebugfield-Objekt enthalten ist.
 title: FIELD_KIND | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a18739ebe30a41e9dca837287d58db57795f878b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519b18f9e4b0329ded9b17ec0152f36e37377df0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874368"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150860"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 Gibt die Art des Felds an, das in einem [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt enthalten ist.
@@ -229,7 +230,7 @@ Wird von einem Aufrufen der [getkind](../../../extensibility/debugger/reference/
 
 Abhängig von der Art des Felds kann [QueryInterface](/cpp/atl/queryinterface) für die [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle aufgerufen werden, um eine spezifischere Form der-Schnittstelle zu erhalten. Wenn [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) z. b. zurückgibt `FIELD_TYPE_METHOD` , können Sie `QueryInterface` auf ich aufrufen, `DebugField` um die [idebugmethodfield](../../../extensibility/debugger/reference/idebugmethodfield.md) -Schnittstelle abzurufen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

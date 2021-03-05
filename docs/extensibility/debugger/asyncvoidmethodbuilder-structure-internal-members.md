@@ -1,4 +1,5 @@
 ---
+description: In diesem Thema werden die internen Member der System. Runtime. CompilerServices. asyncvoidmethodbuilder-Klasse beschrieben.
 title: 'Asyncvoidmethodbuilder-Struktur: interne Member | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edb0e11f80743289f8318c9fe7d331e6528f8107
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad209fb94a9857fe0596f1e25b0dec844d03ca8f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921617"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151143"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>Asyncvoidmethodbuilder-Struktur: interne Member
 In diesem Thema werden die internen Member der- <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> Klasse beschrieben. Allgemeine Informationen zu dieser Klasse finden Sie im <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> Referenz Thema.
@@ -37,7 +38,7 @@ In diesem Thema werden die internen Member der- <xref:System.Runtime.CompilerSer
 
 ## <a name="internal-members"></a>Interne Member
 
-|Name|Beschreibung|
+|Name|BESCHREIBUNG|
 |----------|-----------------|
 |[Objectidfordebugger-Eigenschaft](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Ruft ein Objekt ab, das verwendet werden kann, um diesen Generator für den Debugger eindeutig zu identifizieren.|
 |[m_objectIdForDebugger Feld](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Stellt das verzögert initialisierte Objekt dar, das vom Debugger verwendet wird, um diesen Generator eindeutig zu identifizieren.|

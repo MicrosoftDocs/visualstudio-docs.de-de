@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn ein Modul geladen oder entladen wird.
 title: IDebugModuleLoadEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dbc1cda72aa868bc5bcf68215e4c3815f520d1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59b5e9e7619434b9ff4d914fc7b955ebbab4ace2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929640"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149846"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn ein Modul geladen oder entladen wird.
@@ -37,14 +38,14 @@ IDebugModuleLoadEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle wird die-Methode von gezeigt `IDebugModuleLoadEvent2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Ruft das Modul ab, das geladen oder entladen wird.|
 
 ## <a name="remarks"></a>Bemerkungen
  Visual Studio verwendet dieses Ereignis, um das Fenster " **Module** " auf dem neuesten Stand zu halten.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

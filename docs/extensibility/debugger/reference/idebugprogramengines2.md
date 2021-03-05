@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird von Programmknoten verwendet, um alle möglichen debugengines (de) anzugeben, die das Programm debuggen können.
 title: IDebugProgramEngines2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c74b265331b67564856baa003632d8d778bfb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c19b4dc3967cf7001144d38114a1f873776cb2b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898893"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149586"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Diese Schnittstelle wird von Programmknoten verwendet, um alle möglichen debugengines (de) anzugeben, die das Programm debuggen können.
@@ -37,7 +38,7 @@ IDebugProgramEngines2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProgramEngines2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[EnumPossibleEngines](../../../extensibility/debugger/reference/idebugprogramengines2-enumpossibleengines.md)|Gibt alle möglichen des an, mit denen das Programm debuggt werden kann.|
 |[SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)|Wählt den de aus, der zum Debuggen dieses Programms verwendet wird.|
@@ -45,7 +46,7 @@ IDebugProgramEngines2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Nachdem eine de vom Benutzer ausgewählt wurde, wird diese Auswahl beim Programmknoten [durch Aufrufen von](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md)"" auf "" festgelegt. Die ausgewählte Engine wird zur Engine, die von [getengineinfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)zurückgegeben wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
