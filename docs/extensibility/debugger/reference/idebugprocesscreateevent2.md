@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird gesendet, wenn ein Prozess gestartet wird.
 title: IDebugProcessCreateEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f41d483d51c96cb7a5273f89f691639fd40dcaea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40720b1e236a239037cbef81cf00a2e985e9581e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861126"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169144"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 Diese Schnittstelle wird gesendet, wenn ein Prozess gestartet wird.
@@ -34,7 +35,7 @@ IDebugProcessCreateEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
  Der von de oder der benutzerdefinierte Port Lieferant erstellt und sendet dieses Ereignis Objekt, um die Erstellung eines Prozesses zu melden. Der de sendet dieses Ereignis mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Rückruffunktion, die von der SDM bereitgestellt wird, wenn Sie an das Programm angefügt wird, das gedeppt wird. Der benutzerdefinierte Port Lieferant sendet dieses Ereignis mithilfe der [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) -Schnittstelle.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

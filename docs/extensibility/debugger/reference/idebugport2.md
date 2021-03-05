@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen debugsport auf einem Computer dar.
 title: IDebugPort2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f78db8ba9a29b40d111dc5a82827395b100302b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861139"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169482"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Diese Schnittstelle stellt einen debugsport auf einem Computer dar.
@@ -39,7 +40,7 @@ IDebugPort2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugPort2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|Gibt den Portnamen zurück.|
 |[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|Gibt den Port Bezeichner zurück.|
@@ -51,7 +52,7 @@ IDebugPort2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Der lokale Port ermöglicht den Zugriff auf alle Prozesse und Programme, die auf dem lokalen Computer ausgeführt werden. Andere Ports stellen möglicherweise eine serielle Kabelverbindung mit einem Windows CE basierten Gerät oder eine Netzwerkverbindung mit einem nicht-DCOM-Computer dar. Die `IDebugPort2` -Schnittstelle wird verwendet, um den Namen und den Bezeichner eines Ports zu suchen und alle Prozesse aufzulisten, die auf dem Port ausgeführt werden. Funktionen zum Starten und Beenden von Prozessen auf dem Port werden in der- `IDebugPortEx2` Schnittstelle implementiert.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

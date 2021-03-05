@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen Haltepunkt dar, der für die Bindung an einen Code Speicherort bereit ist.
 title: IDebugPendingBreakpoint2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05e66a0066abca5fb657960f2042b738a10e59ca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877407"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169729"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Diese Schnittstelle stellt einen Haltepunkt dar, der für die Bindung an einen Code Speicherort bereit ist.
@@ -37,7 +38,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugPendingBreakpoint2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Bestimmt, ob dieser ausstehende Breakpoint an einen Code Speicherort gebunden werden kann.|
 |[Zwick](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Bindet diesen ausstehenden Breakpoint an einen oder mehrere Code Speicherorte.|
@@ -56,7 +57,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  Ein ausstehender Haltepunkt kann potenziell mehr als einen gebundenen Haltepunkt ergeben. Ein Haltepunkt in einer C++-Vorlage könnte z. b. einen gebundenen Haltepunkt für jede eindeutige Instanz dieser Vorlage erstellen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

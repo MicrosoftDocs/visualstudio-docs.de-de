@@ -1,4 +1,5 @@
 ---
+description: Ruft den Server ab, auf dem der Prozess ausgeführt wird.
 title: 'IDebugProcess2:: GetServer | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3e8a1553d374f7eaddaace3e3a2ad4a0c882b20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fba7af19093d853d227241187242a24bf9bd8cdb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890070"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169196"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 Ruft den Server ab, auf dem der Prozess ausgeführt wird.

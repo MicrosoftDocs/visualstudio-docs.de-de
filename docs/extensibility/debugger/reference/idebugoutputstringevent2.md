@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, um eine Zeichenfolge auszugeben.
 title: IDebugOutputStringEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 604eace2f5f4be7a35b6f4b736722b435cf06928
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953304"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169950"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, um eine Zeichenfolge auszugeben.
@@ -48,7 +49,7 @@ IDebugOutputStringEvent2 : IUnknown
 
  Verwenden Sie [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) , um eine Fehlermeldung zu senden, für die keine Antwort erforderlich ist.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

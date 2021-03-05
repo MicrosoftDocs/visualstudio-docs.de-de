@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen Symbol Anbieter dar, der Symbole und Typen bereitstellt und Sie als Felder zurückgibt.
 title: Idebugsymbolprovider | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8485497f9a5f0c6a04090755e6848bf8ed916ab3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0488520f8bde0ccd2638636810cb0055a7f3f4b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909573"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168425"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Diese Schnittstelle stellt einen Symbol Anbieter dar, der Symbole und Typen bereitstellt und Sie als Felder zurückgibt.
@@ -57,7 +58,7 @@ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugSymbolProvider
 ## <a name="remarks"></a>Bemerkungen
 Diese Schnittstelle ordnet Dokument Positionen debugadressen zu und umgekehrt.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

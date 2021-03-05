@@ -1,4 +1,5 @@
 ---
+description: Ruft die debugadresse ab, die einer bestimmten debugadresse in einer Methode folgt.
 title: 'Idebugsymbolprovider:: getnextaddress | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a370cf4591146a31627b80f6358a3d3f9202e306
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d177d03daef4f8d3344941658b85f71551af126b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888224"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168412"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Ruft die debugadresse ab, die einer bestimmten debugadresse in einer Methode folgt.
