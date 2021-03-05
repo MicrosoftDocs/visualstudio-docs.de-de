@@ -1,4 +1,5 @@
 ---
+description: Fügen Sie eine Sitzung an ein Programm an.
 title: 'IDebugProgramEx2:: Attach | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30818627f8ebc293e444b43adb0590db077da4a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa9a66bdec3da9b6d18772b4ff2c85a7874bde6c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898840"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150145"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 Fügen Sie eine Sitzung an ein Programm an.

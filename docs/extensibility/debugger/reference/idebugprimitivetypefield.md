@@ -1,4 +1,5 @@
 ---
+description: Stellt einen primitiven typenumerationswert aus einer idebugfield-Schnittstelle dar.
 title: Idebugprimitivetypeer-Feld | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65ebc0a4c029cdb748ebfadff41f83d0cbb2ab75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ba0fd92098d8089f6d80573c1db53e0b7e003b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874190"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150301"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 Stellt einen primitiven typenumerationswert aus einer [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle dar.
@@ -29,11 +30,11 @@ IDebugPrimitiveTypeField : IDebugField
 ## <a name="methods"></a>Methoden
  Zusätzlich zu den Methoden für die [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle implementiert diese Schnittstelle die folgende Methode:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|Ruft den primitiven Typ ab, der diesem Feld zugeordnet ist.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

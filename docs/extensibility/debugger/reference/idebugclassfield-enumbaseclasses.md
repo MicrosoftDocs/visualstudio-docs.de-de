@@ -1,4 +1,5 @@
 ---
+description: Erstellt einen Enumerator für die Basisklassen dieser Klasse.
 title: 'Idebugclassfield:: enumbaseclasses | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8648890e030799b985a4e917be8caf85292528a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d5ef86e5f4fea89b376404703000c8bd7e861a0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947098"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150717"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 Erstellt einen Enumerator für die Basisklassen dieser Klasse.

@@ -1,4 +1,5 @@
 ---
+description: Gibt an, wie viel von einem Programmzustand (z. b. das Ausführen von Threads, Stapel Rahmen und aktuelle Anweisungs Adresse) zum Absichern angezeigt werden soll.
 title: Dumptype | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cef9f90c1f08dac742a6f01a4dd48f6bff76848b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953733"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150977"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Gibt an, wie viel von einem Programmzustand (z. b. das Ausführen von Threads, Stapel Rahmen und aktuelle Anweisungs Adresse) zum Absichern angezeigt werden soll.
@@ -52,7 +53,7 @@ Gibt ein großes, Abbild Abbild an.
 ## <a name="remarks"></a>Bemerkungen
 Wird als Argument an die " [Write-Dump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) "-Methode übermittelt.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

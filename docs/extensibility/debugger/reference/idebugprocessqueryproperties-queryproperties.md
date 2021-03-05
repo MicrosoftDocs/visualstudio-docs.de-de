@@ -1,4 +1,5 @@
 ---
+description: Diese Methode fragt einen angegebenen Eigenschafts Wert des Debugprozesses ab.
 title: 'Idebugprocessqueryproperties:: queryproperties | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b7a1bb22b163c06b24db57b15824b82243af4b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 215606f12eb14c4a4b8db8313356a363dea5247e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900164"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149612"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Diese Methode fragt einen angegebenen Eigenschafts Wert des Debugprozesses ab.

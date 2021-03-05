@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt ein Modul dar, das alternative Positionen von Symbolen und JustMyCode-Zuständen unterstützt.
 title: IDebugModule3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ced8edcc97ad4ab8ff4db430cea57a2533cb30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955520"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149877"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 Diese Schnittstelle stellt ein Modul dar, das alternative Positionen von Symbolen und JustMyCode-Zuständen unterstützt.
@@ -47,7 +48,7 @@ IDebugModule3 : IDebugModule2
 ## <a name="remarks"></a>Bemerkungen
  Visual Studio ist der typische Consumer dieser Schnittstelle.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

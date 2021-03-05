@@ -1,4 +1,5 @@
 ---
+description: Gibt Flags an, die die Ausdrucks Auswertung steuern.
 title: Evalflags | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 073dac8de37edddc1b748c52258047cd2d85e218
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 531d155104475b84d881358711a6aa3f1d0bf2ce
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937074"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150938"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Gibt Flags an, die die Ausdrucks Auswertung steuern.
@@ -79,7 +80,7 @@ Diese Flags werden als Argument an die Methoden [evaluateasync](../../../extensi
 
 Diese Flags können mit einem bitweisen OR kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

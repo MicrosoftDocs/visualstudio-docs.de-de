@@ -1,4 +1,5 @@
 ---
+description: Stellt einen Symbol Anbieter dar, der direkten Zugriff auf Metadaten und Kern Symbol Schnittstellen hat.
 title: Idebugsymbolproviderdirect | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29f0e7e3d2fefe0f47dc971ebff273bf2745a5ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d60af5be925341e5421badb4c3e6e3dae97903b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909430"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149313"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 Stellt einen Symbol Anbieter dar, der direkten Zugriff auf Metadaten und Kern Symbol Schnittstellen hat.
@@ -29,7 +30,7 @@ IDebugSymbolProviderDirect: IUnknown
 ## <a name="methods"></a>Methoden
  Diese Schnittstelle implementiert die folgenden Methoden:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Ruft den Anwendungs Domänen Bezeichner anhand der debugadresse ab.|
 |[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Ruft Informationen zu den Modulen in der Symbolgruppe ab.|
@@ -41,7 +42,7 @@ IDebugSymbolProviderDirect: IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Diese Schnittstelle kann anstelle der meisten anderen Symbol Anbieter Schnittstellen verwendet werden. Er bietet direkten Zugriff auf die Metadaten und `CorSym` Schnittstellen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

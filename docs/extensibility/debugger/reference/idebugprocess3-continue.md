@@ -1,4 +1,5 @@
 ---
+description: Setzt die Ausführung dieses Prozesses mit dem Status "beendet" fort. Alle vorherigen Ausführungs Zustände (z. b. ein Schritt) werden beibehalten, und der Prozess wird erneut ausgeführt.
 title: 'IDebugProcess3:: Continue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60ac7109b9f92a4ed7eecf57095c44fc4208b9f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e003193a189017b9aeacf6a983756d219b10195
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891058"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149773"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Setzt die Ausführung dieses Prozesses mit dem Status "beendet" fort. Alle vorherigen Ausführungs Zustände (z. b. ein Schritt) werden beibehalten, und der Prozess wird erneut ausgeführt.

@@ -1,4 +1,5 @@
 ---
+description: Ermöglicht der Visual Studio-Benutzeroberfläche das Anzeigen von Text im Abschnitt Transport Informationen des Dialog Felds an den Prozess anhängen.
 title: IDebugPortSupplierDescription2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3db59d4938911d0c47f0122a8727be8f1c8acd67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c3cd8d6fbeaf020ea772c9bd5cae783b6e8d127
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840196"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150379"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 Ermöglicht der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche, Text innerhalb des Abschnitts **Transport Informationen** im Dialogfeld **an den Prozess anhängen** anzuzeigen.
@@ -36,7 +37,7 @@ IDebugPortSupplierDescription2 : IUnknown
 |------------|-----------------|
 |[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Ruft die Beschreibungs-und Beschreibungs Metadaten für den Port Lieferanten ab.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

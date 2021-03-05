@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt ein Programm dar, das in einem Prozess ausgeführt wird und die Ausführung durch Bereitstellen von Thread Informationen erweitert.
 title: IDebugProgram3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d22a58021a744cc71b8df3acb8e577d853aa2829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c16184a017e5e97f81afbab5d4d2579796e4217
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149599"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Diese Schnittstelle stellt ein Programm dar, das in einem Prozess ausgeführt wird und die [Ausführung](../../../extensibility/debugger/reference/idebugprogram2-execute.md) durch Bereitstellen von Thread Informationen erweitert.
@@ -35,11 +36,11 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugProgram3` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Führt das Programm aus. Der Thread wird zurückgegeben, um den Debuggerinformationen zu dem Thread zu übergeben, den der Benutzer beim Ausführen anzeigen kann.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

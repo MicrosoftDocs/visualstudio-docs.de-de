@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn das Programm, das gedebuggt wird, einen Einzelschritt, einen Prozedur Schritt oder einen Schritt aus einer Zeile des Quellcodes oder der Anweisung oder Anweisung abschließt.
 title: IDebugStepCompleteEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71e9089dc2f0e4f6eec78e904987fc1d865ed90f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f366b9eb1d9406ba5207016ca97ea40d1fd48529
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897224"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149534"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn das Programm, das gedebuggt wird, einen Einzelschritt, einen Prozedur Schritt oder einen Schritt aus einer Zeile des Quellcodes oder der Anweisung oder Anweisung abschließt.
@@ -37,7 +38,7 @@ IDebugStepCompleteEvent2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Nachdem der Schritt abgeschlossen ist, wird das Programm, das gedebuggt wird, wieder angehalten, und die IDE aktualisiert alle zugehörigen Fenster.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

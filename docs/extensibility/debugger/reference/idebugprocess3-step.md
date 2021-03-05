@@ -1,4 +1,5 @@
 ---
+description: Bewirkt, dass der Prozess eine Anweisung oder eine Anweisung schrittweise durch nimmt.
 title: 'IDebugProcess3:: Step | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69f7c1736f786b2c59678826b71f7f9349629057
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b85df970c073fa2203873733073c5b6b85cabe06
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926244"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150132"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Bewirkt, dass der Prozess eine Anweisung oder eine Anweisung schrittweise durch nimmt.

@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt eine Funktion dar.
 title: Idebugfunctionobject | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1462c30f1012eb1002f692672fc470cac3b39a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e9a579212a34a10fc9999867d88dfbd277a9c3fe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921006"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150587"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugFunctionObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden, die von [idebugobject](../../../extensibility/debugger/reference/idebugobject.md)geerbt werden, stellt die- `IDebugFunctionObject` Schnittstelle die folgenden Methoden zur Verfügung.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)|Erstellt ein Primitives Datenobjekt.|
 |[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)|Erstellt ein-Objekt mithilfe eines Konstruktors.|
@@ -52,7 +53,7 @@ IDebugFunctionObject : IDebugObject
 ## <a name="remarks"></a>Bemerkungen
  Diese Schnittstelle ermöglicht der Ausdrucks Auswertung das darstellen von Funktionen in einer Analyse Struktur. Die `Create` Methoden in dieser Schnittstelle werden verwendet, um-Objekte zu erstellen, die die Eingabeparameter für die Methode darstellen. Die Funktion kann dann durch Aufrufen der Methode [Auswerten](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) ausgeführt werden, die ein Objekt zurückgibt, das den Rückgabewert der Funktion darstellt.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: EE. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
