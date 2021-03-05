@@ -1,4 +1,5 @@
 ---
+description: Gibt an, welche Informationen über ein idebugfield-Objekt abgerufen werden sollen.
 title: FIELD_INFO_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8cec892d65dc4e5d081063fa6b31def06fb7f85c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 024c12d5112398e055141a8db4995f2801ca5401
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936911"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170288"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
 Gibt an, welche Informationen über ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Objekt abgerufen werden sollen.
@@ -70,7 +71,7 @@ Diese Werte werden auch im- `dwFields` Member der `FIELD_INFO` -Struktur verwend
 
 Diese Flags können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

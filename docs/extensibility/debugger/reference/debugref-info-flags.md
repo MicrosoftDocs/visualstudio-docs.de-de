@@ -1,4 +1,5 @@
 ---
+description: Gibt an, welche Informationen über ein debugverweisobjekt abgerufen werden.
 title: DEBUGREF_INFO_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01a26b6e10fae095bcf7284a6b5dbc12394d2541
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da408e159f654f9eb707e71710a178d22881d715
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170509"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 Gibt an, welche Informationen über ein debugverweisobjekt abgerufen werden.
@@ -91,7 +92,7 @@ Wird für den- `dwFields` Member der `DEBUG_REFERENCE_INFO` -Struktur verwendet,
 
 Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

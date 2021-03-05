@@ -1,4 +1,5 @@
 ---
+description: Enthält Informationen über eine Debug-Eigenschaft.
 title: DEBUG_PROPERTY_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899088"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170587"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Enthält Informationen über eine Debug-Eigenschaft.
@@ -51,7 +52,7 @@ public struct DEBUG_PROPERTY_INFO {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwValidFields`\
 Eine Kombination von Flags aus der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 
@@ -78,7 +79,7 @@ Eine Eigenschaft ist ein Objekt einer hierarchischen Natur, das einen Namen, ein
 
 Diese Struktur wird an die [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) -Methode übermittelt, wo Sie ausgefüllt ist. Diese Struktur wird auch als Teil einer Liste dieser Struktur von der [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) -Schnittstelle zurückgegeben, die wiederum von einem Rückruf der [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) -Methode und der [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) -Methode zurückgegeben wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Beschreibt einen-Verweis.
 title: DEBUG_REFERENCE_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e491054ffbdfa9e19cb8bed995b2f369ac1a885
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e210875f88a7c8246eff3bfcf0721d6866602b7e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939174"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170535"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 Beschreibt einen-Verweis.
@@ -51,7 +52,7 @@ public struct DEBUG_REFERENCE_INFO {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwFields`\
 Eine Kombination von Flags aus der [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 
@@ -76,7 +77,7 @@ Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur wird an einen auffüllenden Befehl der [getreferenceinfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) -Methode übergeben. Diese Struktur wird auch als Teil einer Liste von der [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) -Schnittstelle zurückgegeben, die wiederum von einem aufzurufenden [enumchildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) -Methode zurückgegeben wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

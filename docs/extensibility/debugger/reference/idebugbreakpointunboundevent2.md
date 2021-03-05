@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass ein gebundener Haltepunkt an ein geladenes Programm gebunden wurde.
 title: IDebugBreakpointUnboundEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c23c060883ca3d2682659112bdc55de001e80e4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881008"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170223"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass ein gebundener Haltepunkt an ein geladenes Programm gebunden wurde.
@@ -37,7 +38,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBreakpointUnboundEvent2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Ruft den Breakpoint ab, der ungebunden wurde.|
 |[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Ruft den Grund für die Bindung des Breakpoints ab.|
@@ -45,7 +46,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Wenn eine Debug-Engine-dll oder-Klasse entladen wird, müssen alle Haltepunkte, die an den Code in diesem Modul gebunden waren, an das Debuggingprogramm gebunden werden. Eine `IDebugBreakpointUnboundEvent2` wird für jeden ungebundenen Haltepunkt gesendet.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

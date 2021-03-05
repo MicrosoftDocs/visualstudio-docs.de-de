@@ -1,4 +1,5 @@
 ---
+description: Beschreibt eine disassemblierungsanweisung für die integrierte Entwicklungsumgebung (IDE), die angezeigt werden soll.
 title: Disassemblydata | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49e8f151aa01037a0bc18161fbe94a00488394db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6053647d43563e7369793982c72683002ae0df5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953837"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170457"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Beschreibt eine disassemblierungsanweisung für die integrierte Entwicklungsumgebung (IDE), die angezeigt werden soll.
@@ -63,7 +64,7 @@ public struct DisassemblyData {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwFields`\
 Die [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) Konstante, die angibt, welche Felder ausgefüllt werden.
 

@@ -1,4 +1,5 @@
 ---
+description: Gibt die Flags für die Disassembly an.
 title: DISASSEMBLY_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fe1515616d6781613961fa11d87005a479c70fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3aeaf00e7073cd1146dcc5856684ed7209e7d800
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939018"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170483"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 Gibt die Flags für die Disassembly an.
@@ -74,7 +75,7 @@ Wird als `dwFlags` Member der [disassemblydata](../../../extensibility/debugger/
 
 Diese Flags können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
