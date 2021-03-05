@@ -1,4 +1,5 @@
 ---
+description: Beschreibt einen Stapel Rahmen.
 title: FrameInfo | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1d52989d5687e922e0cb0ab306efc5321ffecef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8830e3917198cda10d9e4e0fb8919b1b56e84e9e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904754"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144090"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Beschreibt einen Stapel Rahmen.
@@ -63,7 +64,7 @@ public struct FRAMEINFO {
 } FRAMEINFO;
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `m_dwValidFields`\
 Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 
@@ -106,7 +107,7 @@ Ungleich NULL ( `TRUE` ), wenn der Stapel Rahmen vom Sitzungs-Debug-Manager (SDM
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur wird an die [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) -Methode, die ausgefüllt werden soll, übermittelt. Diese Struktur ist auch in einer Liste enthalten, die in der [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) -Schnittstelle enthalten ist, die wiederum von einem Rückruf der [enumframeinfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) -Methode zurückgegeben wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass ein ausstehender Haltepunkt erfolgreich an ein geladenes Programm gebunden wurde.
 title: IDebugBreakpointBoundEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149b3f4d474c0304fab26f9ff3f772440ae761ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3969010a59e66a8931c7f99d337b6f2ad373ccc4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948334"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143570"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass ein ausstehender Haltepunkt erfolgreich an ein geladenes Programm gebunden wurde.
@@ -37,7 +38,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBreakpointBoundEvent2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|Ruft den ausstehenden Haltepunkt ab, der gebunden wird.|
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|Erstellt einen Enumerator von Breakpoints, die an dieses Ereignis gebunden wurden.|
@@ -45,7 +46,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Wenn ein Breakpoint gebunden ist, wird ein Ereignis an die SDM gesendet. Wenn der Breakpoint nicht gebunden werden kann, wird ein [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) gesendet. Andernfalls wird eine `IDebugBreakpointBoundEvent2` gesendet.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

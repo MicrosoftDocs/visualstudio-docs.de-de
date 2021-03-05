@@ -1,4 +1,5 @@
 ---
+description: Mit dieser Schnittstelle kann der Sitzungs-Debug-Manager (SDM) die Programme und Prozesse steuern, die auf einem Port ausgeführt werden.
 title: IDebugPortEx2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2ff055f730d193b5294b98129e073a21428f8ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54da202e6bbaf08216b921afbde2e39f1da3a788
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919907"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142790"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 Mit dieser Schnittstelle kann der Sitzungs-Debug-Manager (SDM) die Programme und Prozesse steuern, die auf einem Port ausgeführt werden.
@@ -37,7 +38,7 @@ IDebugPortEx2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugPortEx2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)|Hiermit wird eine ausführbare Datei gestartet.|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)|Nimmt die Ausführung eines Prozesses wieder auf.|
@@ -51,7 +52,7 @@ IDebugPortEx2 : IUnknown
 
  Wenn gewünscht, kann eine Debug-Engine (de) in der [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) -Schnittstelle, die an [launchangeh](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) alten wird, nach dieser Schnittstelle suchen und das Programm mit [launchangeh](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) alten starten. Dies ist jedoch nicht zwingend erforderlich, und eine de kann alle Aktionen ausführen, die erforderlich sind, um das Anforderungs Programm zu starten.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: portpriv. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

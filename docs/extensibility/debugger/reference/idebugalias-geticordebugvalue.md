@@ -1,4 +1,5 @@
 ---
+description: Ruft eine verwaltete Code Schnittstelle ab, die den diesem Alias zugeordneten Wert darstellt.
 title: 'Idebugalias:: geticorentbugvalue | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba5456ba3beabb1d5418d739be2aa74838daa41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b809e16fefb9306da842f39d93bdb3dd0f7b404f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947176"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143934"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Ruft eine verwaltete Code Schnittstelle ab, die den diesem Alias zugeordneten Wert darstellt.

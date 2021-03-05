@@ -1,4 +1,5 @@
 ---
+description: Stellt eine angepasste Benutzeroberfläche zum Auswählen des Ports dar.
 title: Idebugportpicker | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd4f85bfdfb58baff3301c2d858f52933f16d1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 335a954603505d064f32e8f901ce428d6cb8dfa1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958595"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142635"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 Stellt eine angepasste Benutzeroberfläche zum Auswählen des Ports dar.
@@ -37,7 +38,7 @@ IDebugPortPicker : IUnknown
 |[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|Zeigt das angegebene Dialogfeld an, in dem der Benutzer einen Port auswählen kann.|
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Legt den Dienstanbieter fest.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

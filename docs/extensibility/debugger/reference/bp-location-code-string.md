@@ -1,4 +1,5 @@
 ---
+description: Dient zum Festlegen von Code Breakpoints basierend auf einer Zeichenfolge, die der Benutzer aus der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) eingeben kann.
 title: BP_LOCATION_CODE_STRING | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 98b85a1b27255902f4cfba9923beda4305ca03d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9508a4a83894757fb47e35d8db7334bfb144ff59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923216"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144376"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 Dient zum Festlegen von Code Breakpoints basierend auf einer Zeichenfolge, die der Benutzer aus der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) eingeben kann.
@@ -33,7 +34,7 @@ typedef struct _BP_LOCATION_CODE_STRING {
 } BP_LOCATION_CODE_STRING;
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `bstrContext`\
 Der Kontext des Breakpoints innerhalb des Codes, in der Regel ein Methoden-oder Funktionsname, wie er in einer-aufrufsstapel angezeigt wird.
 
@@ -43,7 +44,7 @@ Die Zeichenfolge, die der Benutzer eingibt, um den Code Breakpoint zu beschreibe
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle bindet ein Symbolfeld, das normalerweise vom Symbol Anbieter zurückgegeben wird, an einen Speicher Kontext oder ein Objekt, das den aktuellen Wert des Symbols enthält.
 title: Idebugbinder | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: febe22338ddeaf275b37ae09c76921c91ec509da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925111"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143622"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugBinder : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBinder` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[Zwick](../../../extensibility/debugger/reference/idebugbinder-bind.md)|Ruft den Arbeitsspeicher Kontext oder das Objekt ab, das den aktuellen Wert des Symbols enthält.|
 |[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|Bestimmt den Lauf Zeittyp eines Objekts.|
@@ -51,7 +52,7 @@ IDebugBinder : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Diese Schnittstelle gibt Objekte zurück, die von der Ausdrucks Auswertung in Analyse Strukturen verwendet werden. Die Ausdrucks Auswertung analysiert einen Ausdruck mithilfe des Symbol Anbieters, um die Symbole im Ausdruck in Instanzen von [idebugfield](../../../extensibility/debugger/reference/idebugfield.md)zu konvertieren, in denen jedes Symbol in Bezug auf den Typ und die Position im Quellcode beschrieben wird. Die [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md) -Methode konvertiert `IDebugField` Objekte in [idebugobject](../../../extensibility/debugger/reference/idebugobject.md) -Objekte, die einen Symboltyp mit einem tatsächlichen Wert im Arbeitsspeicher verbinden oder binden. Diese `IDebugObject` Objekte werden dann zur späteren Auswertung in einer Analyse Struktur gespeichert.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: EE. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

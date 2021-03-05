@@ -1,4 +1,5 @@
 ---
+description: Beschreibt die Anzahl und die Bedingungen, auf die ein bedingter Breakpoint ausgelöst wird.
 title: BP_PASSCOUNT | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99e250dab652ff0d63033f8b40423e76975eeee5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c1e44ede0f39b3d1b33967311365508da6a701d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902088"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144155"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
 Beschreibt die Anzahl und die Bedingungen, auf die ein bedingter Breakpoint ausgelöst wird.
@@ -41,7 +42,7 @@ public struct BP_PASSCOUNT {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwPassCount`\
 Gibt an, wie oft über den Haltepunkt übergeben werden soll, bevor es ausgelöst wird.
 
@@ -53,7 +54,7 @@ Diese Struktur ist ein Member der [BP_REQUEST_INFO](../../../extensibility/debug
 
 Diese Struktur wird auch als Parameter an die[setpasscount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) -Methode und die[setpasscount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) -Methode übergeben.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

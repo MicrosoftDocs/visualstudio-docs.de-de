@@ -1,4 +1,5 @@
 ---
+description: Ruft die Haltepunkt Anforderung ab, die zum Erstellen dieses ausstehenden Breakpoints verwendet wurde.
 title: 'IDebugPendingBreakpoint2:: getbreakpointrequest | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbe9f8e5e5f4b6d416b3179aadf25e89543cdba3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85395fe88aaf29658695323f437eba08379cfce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934265"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143063"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Ruft die Haltepunkt Anforderung ab, die zum Erstellen dieses ausstehenden Breakpoints verwendet wurde.

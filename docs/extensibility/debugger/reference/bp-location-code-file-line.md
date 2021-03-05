@@ -1,4 +1,5 @@
 ---
+description: Enthält die Daten für den Speicherort eines Breakpoints in einer bestimmten Zeile in einer Code Quelldatei.
 title: BP_LOCATION_CODE_FILE_LINE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 1a94425c86e59e360814df2053f003948af6e674
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ad3452e0fce6ec7339fe2d8e67a2aee4585828c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916269"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144389"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 Enthält die Daten für den Speicherort eines Breakpoints in einer bestimmten Zeile in einer Code Quelldatei.
@@ -33,7 +34,7 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 } BP_LOCATION_CODE_FILE_LINE;
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `bstrContext`\
 Der Kontext des Breakpoints, in der Regel ein Methoden-oder Funktionsname, wie er in einer-aufrufsstapel angezeigt wird.
 
@@ -43,7 +44,7 @@ Das [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdo
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur ist ein Member der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

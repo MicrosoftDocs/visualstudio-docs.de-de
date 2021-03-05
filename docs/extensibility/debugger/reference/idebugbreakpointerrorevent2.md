@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass ein ausstehender Haltepunkt aufgrund einer Warnung oder eines Fehlers nicht an ein geladenes Programm gebunden werden konnte.
 title: IDebugBreakpointErrorEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89342f5d26c5aeec41222bba12a29f534798782b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901863"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143355"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Diese Schnittstelle weist den sitzungsdebug-Manager (SDM) darauf hin, dass ein ausstehender Haltepunkt aufgrund einer Warnung oder eines Fehlers nicht an ein geladenes Programm gebunden werden konnte.
@@ -37,7 +38,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBreakpointErrorEvent2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Ruft die [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) -Schnittstelle ab, die die Warnung oder den Fehler beschreibt.|
 
@@ -46,7 +47,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 
  Wenn beispielsweise die dem ausstehenden Breakpoint zugeordnete Bedingung nicht analysiert oder ausgewertet werden kann, wird eine Warnung gesendet, dass der ausstehende Haltepunkt zu diesem Zeitpunkt nicht gebunden werden kann. Dies kann vorkommen, wenn der Code für den Breakpoint noch nicht geladen wurde.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

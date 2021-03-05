@@ -1,4 +1,5 @@
 ---
+description: Gibt die Bedingung an, die der Breakpoint-Durchlauf Anzahl zugeordnet ist, die bewirkt, dass der Breakpoint ausgelöst wird.
 title: BP_PASSCOUNT_STYLE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0148a92ee37a4f9885c9c12a5076ff966051d20b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e216b61d6fed41571baa7f68201d96f84532fc3a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902118"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144168"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
 Gibt die Bedingung an, die der Breakpoint-Durchlauf Anzahl zugeordnet ist, die bewirkt, dass der Breakpoint ausgelöst wird.
@@ -62,7 +63,7 @@ Gibt eine Modulo-Anzahl an. Wenn beispielsweise die Anzahl der Pass-Werte vom Ty
 ## <a name="remarks"></a>Bemerkungen
 Wird für den `stylePassCount` Member der [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) Struktur verwendet, der wiederum ein Member der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) -und [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen ist.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
