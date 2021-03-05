@@ -1,4 +1,5 @@
 ---
+description: Entfernt einen angegebenen Programmknoten von der Verfügbarkeit zu debugengines (des) und vom Sitzungs-Debug-Manager (SDM).
 title: 'IDebugProgramPublisher2:: unpublishprogramnode | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69afe6dba5db73b2b2af80031612ada5b18ae0a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32c1384eadbf4e11a31534fccce21ab271000643
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916185"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166995"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Entfernt einen angegebenen Programmknoten von der Verfügbarkeit zu debugengines (des) und vom Sitzungs-Debug-Manager (SDM).

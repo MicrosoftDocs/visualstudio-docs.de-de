@@ -1,4 +1,5 @@
 ---
+description: Diese Methode gibt einen angeforderten Dienst zurück.
 title: 'IDebugBinder3:: geteeservice | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5156f905eb5891be64d0718e8aeff4c3c404663b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ecd439ba1af40a54512c3ef15efb4728c8c54a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891253"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167671"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Diese Methode gibt einen angeforderten Dienst zurück.

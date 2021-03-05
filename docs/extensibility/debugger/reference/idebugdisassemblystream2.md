@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen Stream von Anweisungen dar.
 title: IDebugDisassemblyStream2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 760d77ced3cc07da2dd02c21cf3ed0200df14231
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944642"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166566"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 Diese Schnittstelle stellt einen Stream von Anweisungen dar.
@@ -51,7 +52,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Der disassemblystream kann erstellt werden, um den gesamten Adressraum oder nur eine Funktion oder ein Modul innerhalb des Raums darzustellen. Jede Anweisung wird durch eine [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) -Struktur dargestellt, die durch einen Aufrufder [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) -Methode zurückgegeben wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen Haltepunkt dar, der an einen Code Speicherort gebunden ist.
 title: IDebugBoundBreakpoint2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3080d5beb111fffa0725fba3278cc0fb93f25381
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2726a2422c49335d9c95e7d500381ad1fdc0108
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842536"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167476"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 Diese Schnittstelle stellt einen Haltepunkt dar, der an einen Code Speicherort gebunden ist.
@@ -37,7 +38,7 @@ IDebugBoundBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugBoundBreakpoint2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Ruft den ausstehenden Breakpoint ab, von dem der angegebene gebundene Breakpoint erstellt wurde.|
 |[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Ruft den Zustand dieses gebundenen halte Punkts ab.|
@@ -49,7 +50,7 @@ IDebugBoundBreakpoint2 : IUnknown
 |[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)|Legt die mit diesem gebundenen Haltepunkt verknüpfte Durchlauf Anzahl fest oder ändert diese.|
 |[Löschen](../../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Löscht den Haltepunkt.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

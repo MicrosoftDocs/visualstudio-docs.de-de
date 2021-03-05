@@ -1,4 +1,5 @@
 ---
+description: Gibt den Namen zurück, der dem angegebenen Token bei Angabe seines Metadatenobjekts zugeordnet ist.
 title: 'Idebugcomplussymbolprovider:: GetNameFromToken | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4e3a99e35bd16f9986d1c4e9c59578a39cda1f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 698f8f90d40623a1162d597777aae24dd002d934
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880852"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167359"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 Gibt den Namen zurück, der dem angegebenen Token bei Angabe seines Metadatenobjekts zugeordnet ist.
