@@ -1,4 +1,5 @@
 ---
+description: Gibt den Grund für die Bindung eines Breakpoints an.
 title: BP_UNBOUND_REASON | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c4750b4d1a9c1f972c0445dfcf3ea2f4fa5be328
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 857f07e70809200567b6c2f79c5a22aff78b4af8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842654"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162549"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 Gibt den Grund für die Bindung eines Breakpoints an.
@@ -62,7 +63,7 @@ Der Haltepunkt wird als fehlerhaft festgelegt, nachdem er gebunden wurde. Dies g
 ## <a name="remarks"></a>Bemerkungen
 Wird von der [geverrat](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Bestimmt, ob die angegebene Methode über Zeilen Informationen verfügt.
 title: 'IDebugComPlusSymbolProvider2:: functionhaslineingefo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6492f0899592074e003f49afb06fd9bf7303ddc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61c774c911f7b84ccba592cd73a04d13799da4d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954981"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163446"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 Bestimmt, ob die angegebene Methode über Zeilen Informationen verfügt.

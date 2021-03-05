@@ -1,4 +1,5 @@
 ---
+description: Gibt die Struktur der Haltepunkt Auflösung an.
 title: BP_RESOLUTION_LOCATION | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c2032c15430fb4038ecdeab2050b47a59c932c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87fef44d02911e84952f6eb8ab09dd9a1360dea6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881073"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162562"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 Gibt die Struktur der Haltepunkt Auflösung an.
@@ -48,7 +49,7 @@ public struct BP_RESOLUTION_LOCATION {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `bpType`\
 Ein Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) -Enumeration, der angibt, wie die Union oder Member interpretiert werden sollen `bpResLocation` `unionmemberX` .
 
@@ -113,7 +114,7 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

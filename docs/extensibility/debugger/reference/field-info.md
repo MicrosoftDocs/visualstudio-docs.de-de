@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur beschreibt eine lokale Variable, einen Parameter oder ein anderes Feld.
 title: FIELD_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358c6c9a192ddd4d71f26a0f2f795ae012bc2c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47b7c7cb3a77d0ad925b044130901dd481b99943
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941839"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162432"
 ---
 # <a name="field_info"></a>FIELD_INFO
 Diese Struktur beschreibt eine lokale Variable, einen Parameter oder ein anderes Feld.
@@ -47,7 +48,7 @@ public struct FIELD_INFO {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwFields`\
 Eine Kombination von Flags aus der [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Enumeration, die angibt, welche Member ausgefüllt werden.
 
@@ -66,7 +67,7 @@ Eine Kombination von Flags aus der [FIELD_MODIFIERS](../../../extensibility/debu
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur wird an die [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) -Methode, in der Sie ausgefüllt ist, übermittelt.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

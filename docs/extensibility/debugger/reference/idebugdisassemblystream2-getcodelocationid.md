@@ -1,4 +1,5 @@
 ---
+description: Gibt einen Bezeichner für den Code Speicherort für einen bestimmten Code Kontext zurück.
 title: 'IDebugDisassemblyStream2:: getcodelta-ID | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8437dd2c98373c770d6f537e0ec9714100e3c4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c1c3a6f7a9f2e2a0617f1322d17073a9dcc7c32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901826"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162926"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 Gibt einen Bezeichner für den Code Speicherort für einen bestimmten Code Kontext zurück.

@@ -1,4 +1,5 @@
 ---
+description: Gibt den Namen der abzurufenden Dateien an.
 title: GETNAME_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 541f8b51d4ce56b167abd3ecdb28d08bec0c02c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9811312188e63017e074d12be6dfa67ab6929aa6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891266"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162445"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 Gibt den Namen der abzurufenden Dateien an.
@@ -77,7 +78,7 @@ Ruft die URL der Startseite für Prozesse ab.
 ## <a name="remarks"></a>Bemerkungen
 Diese Werte werden als Parameter an die Methoden [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)und [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) übermittelt, um anzugeben, welche Art von Name zurückgegeben werden soll.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

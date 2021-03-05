@@ -1,4 +1,5 @@
 ---
+description: Die IDebugBreakPointRequest2-Schnittstelle stellt die Informationen dar, die zum Erstellen und Binden von Haltepunkten erforderlich sind.
 title: IDebugBreakpointRequest2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31b7cfe2480fa3b16a4d3c8c08185194fec6b79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e7d13c945de1358265a5eb92769192ce736be49
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951198"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162354"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 Diese Schnittstelle stellt die Informationen dar, die erforderlich sind, um beliebige Haltepunkt Typen zu erstellen und zu binden.
@@ -45,7 +46,7 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Nachdem das Programm, das gedebuggt wurde, geladen wurde, bindet ein [Bindungs](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) Vorgang einen ausstehenden Haltepunkt an den angeforderten Speicherort im Programm.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
