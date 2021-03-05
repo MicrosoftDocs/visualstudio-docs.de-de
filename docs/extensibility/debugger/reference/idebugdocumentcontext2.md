@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt eine Position in einem Quelldatei Dokument dar.
 title: IDebugDocumentContext2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64db2446496d2083d34eefc92afabc3ca541442e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa46f2c8becc7359bb08046369c9349861c63314
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946968"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162809"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Diese Schnittstelle stellt eine Position in einem Quelldatei Dokument dar.
@@ -48,7 +49,7 @@ IDebugDocumentContext2 : IUnknown
 |[Vergleichen](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Vergleicht diesen Dokument Kontext mit einem angegebenen Array von Dokument Kontexten.|
 |[Seek](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Verschiebt den Dokument Kontext um eine angegebene Anzahl von Anweisungen oder Zeilen.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

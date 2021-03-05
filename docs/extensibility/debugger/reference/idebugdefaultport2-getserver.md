@@ -1,4 +1,5 @@
 ---
+description: Diese Methode erhält eine Schnittstelle für den Server, auf dem sich dieser Port befindet.
 title: 'IDebugDefaultPort2:: GetServer | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e046dbad9329ae377cef6864b7bc71b2ea6a538b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d5bfd242cd3f441bf094f94e41a78e240f1ec46
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894945"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162978"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 Diese Methode erhält eine Schnittstelle für den Server, auf dem sich dieser Port befindet.

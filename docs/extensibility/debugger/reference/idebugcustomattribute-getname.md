@@ -1,4 +1,5 @@
 ---
+description: Ruft den Namen des benutzerdefinierten Attributs ab.
 title: 'Idebugcustomattribute:: GetName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5aade49d77861d6aacdf955a167aeccbbaca4071
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 313408639b0a93faef0c63c0add92dc1ca2e947b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928431"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163056"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Ruft den Namen des benutzerdefinierten Attributs ab.

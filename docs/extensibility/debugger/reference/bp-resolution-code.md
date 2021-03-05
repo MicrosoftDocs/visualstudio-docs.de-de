@@ -1,4 +1,5 @@
 ---
+description: Beschreibt den Speicherort eines Code Breakpoints.
 title: BP_RESOLUTION_CODE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f888c5cbee5747562af070d310a9ca5d8eea913
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6c6b306fcb9bfec0f2c88b861507da9123c390
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901975"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162653"
 ---
 # <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
 Beschreibt den Speicherort eines Code Breakpoints.
@@ -39,14 +40,14 @@ public struct BP_RESOLUTION_CODE {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `pCodeContext`\
 Das [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das die Position des Breakpoints im Code identifiziert.
 
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur ist ein Member der [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Struktur, der wiederum ein Member der [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur ist, die von der [getresolutioninfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) -Methode zurückgegeben wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

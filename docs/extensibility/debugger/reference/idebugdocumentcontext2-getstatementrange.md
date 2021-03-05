@@ -1,4 +1,5 @@
 ---
+description: Ruft den Bereich der Datei Anweisung des Dokument Kontexts ab.
 title: 'IDebugDocumentContext2:: getstatuementrange | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a0b37014433b670b24d466374682ee9a3654638
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c23de6f76ac4aa205ac50636775ee019da34137a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946995"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162874"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 Ruft den Bereich der Datei Anweisung des Dokument Kontexts ab.

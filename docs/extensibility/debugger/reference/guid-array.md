@@ -1,4 +1,5 @@
 ---
+description: Beschreibt ein Array eindeutiger Bezeichner für verfügbare Debug-engines.
 title: GUID_ARRAY | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ad4d1ba6a0aa0489b7f2c80e0ffe59cd35b2e58
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbdc8465bef0795649fef5b169a221a3e7b7178c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904734"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162419"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
 Beschreibt ein Array eindeutiger Bezeichner für verfügbare Debug-engines.
@@ -41,7 +42,7 @@ public struct GUID_ARRAY
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwCount`\
 Anzahl der eindeutigen Bezeichner im Array.
 
@@ -51,7 +52,7 @@ Ein Array, das eindeutige Bezeichner enthält.
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur wird von der [getenginefilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

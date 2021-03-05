@@ -1,4 +1,5 @@
 ---
+description: Gibt die Informationen an, die bei einer fehlgeschlagenen Auflösung eines Breakpoints abgerufen werden sollen.
 title: BPERESI_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 287e6750ceaafc705c5d49bd5cd27201f16a692f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e26b5a7285c2e5c9135429777b4b58f35252e550
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876094"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162523"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 Gibt die Informationen an, die bei einer fehlgeschlagenen Auflösung eines Breakpoints abgerufen werden sollen.
@@ -76,7 +77,7 @@ Diese Werte werden auch verwendet, um anzugeben, welche Felder in der `BP_ERROR_
 
 Diese Werte können mit einem bitweisen kombiniert werden `OR` .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
