@@ -1,4 +1,5 @@
 ---
+description: Diese Methode konvertiert eine Ausdrucks Zeichenfolge in einen analysierten Ausdruck.
 title: Idebugexpressionevaluator::P Arse | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: abcc66eb8a0f1419d447dfbd0081b39583e2941e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6a586c7e7cac1a4ef034b7941840db59d376180
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930290"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152493"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Diese Methode konvertiert eine Ausdrucks Zeichenfolge in einen analysierten Ausdruck.

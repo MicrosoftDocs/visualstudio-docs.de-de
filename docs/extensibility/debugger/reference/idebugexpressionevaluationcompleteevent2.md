@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn die asynchrone Ausdrucks Auswertung beendet ist.
 title: IDebugExpressionEvaluationCompleteEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74e31339b48e49869ce76ce9a3b20a14dcb0acf5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a56cb564470263c9ae98fb0adda84881f25209c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930459"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152597"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn die asynchrone Ausdrucks Auswertung beendet ist.
@@ -37,7 +38,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugExpressionEvaluationCompleteEvent2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)|Ruft den ursprünglichen Ausdruck ab.|
 |[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|Ruft das Ergebnis der Ausdrucks Auswertung ab.|
@@ -47,7 +48,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 
  Wenn die Auswertung nicht erfolgreich war, `DEBUG_PROPINFO_VALUE` werden die `DEBUG_PROPINFO_ATTRIB` Flags und nicht in der [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Struktur festgelegt, die von [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) zurückgegeben wird (das [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt wird von der de erstellt und im Ereignis zurückgegeben, `IDebugExpressionEvaluationCompleteEvent2` Wenn die Auswertung fehlgeschlagen ist).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

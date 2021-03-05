@@ -1,4 +1,5 @@
 ---
+description: Diese Methode vergleicht dieses Feld mit dem angegebenen Feld auf Gleichheit.
 title: 'Idebugfield:: Equal | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c19e8860fb9ed9cbd65efe7fa72fd920a01622ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2bf9b3e4bbb988621e3b65e855b07322fba1795
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915476"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152090"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 Diese Methode vergleicht dieses Feld mit dem angegebenen Feld auf Gleichheit.

@@ -1,4 +1,5 @@
 ---
+description: Diese Methode ruft Anzeigeinformationen über das Feld ab.
 title: 'Idebugfield:: GetInfo | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21d80f222bdea8a8e17a9b74eefb7885cab0c289
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c681fef38377f0ce8e74b45dba065b5eae39462c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869907"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151934"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 Diese Methode ruft Anzeigeinformationen über das Feld ab.

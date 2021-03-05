@@ -1,4 +1,5 @@
 ---
+description: Stellt eine Funktion dar und erweitert die idebugfunctionobject-Schnittstelle.
 title: IDebugFunctionObject2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 304269ba2a4f556cfe931157c445d7b4fc86f489
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86ceda2742f82cae172c22d12f2753936779171f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929939"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151817"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -44,13 +45,13 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="methods"></a>Methoden
  Diese Schnittstelle implementiert die folgenden Methoden:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Erstellt ein-Objekt, das einen Konstruktor mit den angegebenen Auswertungs Kennzeichen-Einstellungen und einem Timeout Wert verwendet.|
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Erstellt ein Zeichen folgen Objekt mit der angegebenen Länge.|
 |[Evaluieren](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Ruft die-Funktion auf und gibt den resultierenden Wert als-Objekt zurück.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: EE. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

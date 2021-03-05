@@ -1,4 +1,5 @@
 ---
+description: Diese registrierte Schnittstelle ermöglicht es dem sitzungsdebug-Manager (SDM), Informationen zu Programmen zu erhalten, die über die IDebugProgramPublisher2-Schnittstelle veröffentlicht wurden.
 title: IDebugProgramProvider2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 788c4add42b70107ea2960ae5682a2e2cc815d59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0102aa650d9739ae862f1357a1560842ae2fa59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959622"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151440"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Diese registrierte Schnittstelle ermöglicht es dem sitzungsdebug-Manager (SDM), Informationen zu Programmen zu erhalten, die über die [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) -Schnittstelle "veröffentlicht" wurden.
@@ -46,7 +47,7 @@ Die com- `CoCreateInstance` Funktion wird mit dem `CLSID` des Programm Anbieters
 ## <a name="remarks"></a>Bemerkungen
 Normalerweise wird diese Schnittstelle von einem Prozess verwendet, um die Programme zu ermitteln, die in diesem Prozess ausgeführt werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

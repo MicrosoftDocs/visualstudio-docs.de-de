@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen analysierten Ausdruck dar, der für das Binden und auswerten bereit ist.
 title: IDebugExpression2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d7b6508a635edf3dc328f79a06a386efce07aae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fe6a6955f5d8d4ae42d51e3623b0c4f966dc416
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949583"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152662"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 Diese Schnittstelle stellt einen analysierten Ausdruck dar, der für das Binden und auswerten bereit ist.
@@ -50,7 +51,7 @@ IDebugExpression2 : IUnknown
 
  In einer Implementierung von `IDebugExpressionContext2::ParseText` verwendet de die com- `CoCreateInstance` Funktion, um eine Ausdrucks Auswertung zu instanziieren und eine [idebugexpressionevaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) -Schnittstelle zu erhalten (siehe das Beispiel in der- `IDebugExpressionEvaluator` Schnittstelle). Das de-Element [ruft dann](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) die Analyse auf, um eine [idebugparamesetdexpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) -Schnittstelle zu erhalten. Diese Schnittstelle wird in der Implementierung von `IDebugExpression2::EvaluateSync` und verwendet `IDebugExpression2::EvaluateAsync` , um die Auswertung durchzuführen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

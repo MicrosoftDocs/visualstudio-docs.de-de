@@ -1,4 +1,5 @@
 ---
+description: Ruft die Speicher Bytes ab, die physisch den Wert eines Verweises enthalten.
 title: 'IDebugReference2:: getmemorybytes | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0088bc80d53b450db2e2c0f73ff9dadd6b8e51e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8d5e12b5c26bb5216fdba173dcc4cbb284f27d7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909671"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151362"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 Ruft die Speicher Bytes ab, die physisch den Wert eines Verweises enthalten. Für zukünftige Verwendung reserviert.

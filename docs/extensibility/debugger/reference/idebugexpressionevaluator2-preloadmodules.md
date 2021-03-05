@@ -1,4 +1,5 @@
 ---
+description: Lädt die vom angegebenen Symbol Anbieter bezeichneten Module vorab.
 title: IDebugExpressionEvaluator2::P reloadmodules | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6998b847d400c9eb5e999a7299f5bedec0982253
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e341843350abd218f2b9fb33cdb5ad489e62951
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948295"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152376"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Lädt die vom angegebenen Symbol Anbieter bezeichneten Module vorab.

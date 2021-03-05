@@ -1,4 +1,5 @@
 ---
+description: Ermöglicht, dass der Prozess über Port Ereignisse benachrichtigt wird.
 title: 'IDebugProgramProvider2:: watchforproviderevents | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f105bdb8cd73812c4c6f5efdf6b2a102df490a39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb00d177cfdb5fe8451b914926f29f591d8f924d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959648"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151479"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Ermöglicht, dass der Prozess über Port Ereignisse benachrichtigt wird.

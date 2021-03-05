@@ -1,4 +1,5 @@
 ---
+description: Stellt eine Ausdrucks Auswertung (EE) mit einer erweiterten Parserstruktur dar.
 title: IDebugExpressionEvaluator3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d37d1afb33642d352a86c197cdcb72afef5330
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3732e1262424fbe54de835848642f7ab1c78d7e9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915537"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152155"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
@@ -39,7 +40,7 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 |------------|-----------------|
 |[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Konvertiert eine Ausdrucks Zeichenfolge in einen analysierten Ausdruck, wenn der Symbol Anbieter und die Adresse des Auswertungs Rahmens angegeben sind.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: EE. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
