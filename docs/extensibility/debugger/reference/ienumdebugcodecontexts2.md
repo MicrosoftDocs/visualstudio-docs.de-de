@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle listet die der Debugsitzung zugeordneten Code Kontexte oder ein bestimmtes Programm oder Dokument auf.
 title: IEnumDebugCodeContexts2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dee04516d8bc8d72859509a9f721455d858a433
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82e3583333c784fffa55abf2e86f5a7335aeb7c1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929393"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226929"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 Diese Schnittstelle listet die der Debugsitzung zugeordneten Code Kontexte oder ein bestimmtes Programm oder Dokument auf.
@@ -39,7 +40,7 @@ IEnumDebugCodeContexts2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugCodeContexts2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[Nächste](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Ruft eine angegebene Anzahl von Code Kontexten in einer enumerationssequenz ab.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Überspringt eine angegebene Anzahl von Code Kontexten in einer enumerationssequenz.|

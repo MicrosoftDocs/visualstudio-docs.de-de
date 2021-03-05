@@ -1,4 +1,5 @@
 ---
+description: Überspringt die angegebene Anzahl von Elementen in der Enumeration der Prozesse.
 title: 'IEnumDebugProcesses2:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aa54972695dfbed3f5c054bd98fe590f0c81d57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22f033ac1f7ec42fd6ce621e73dae9102e8621ed
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883679"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226123"
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
 Überspringt die angegebene Anzahl von Elementen.

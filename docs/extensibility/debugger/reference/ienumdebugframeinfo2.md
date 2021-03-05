@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle listet frameInfo-Strukturen auf.
 title: IEnumDebugFrameInfo2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c347b7cebd9b1417cd0a8e772cd8a247e975ea97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956286"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226383"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Diese Schnittstelle listet [frameInfo](../../../extensibility/debugger/reference/frameinfo.md) -Strukturen auf.

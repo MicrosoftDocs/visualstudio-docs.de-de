@@ -1,4 +1,5 @@
 ---
+description: Überspringt die angegebene Anzahl von frameInfo-Elementen.
 title: 'IEnumDebugFrameInfo2:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1771648cf59cf5ba6e469e152e5558a91da46349
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 991169ce1e830dfafca348b3e38737b489a1258c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932814"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226409"
 ---
 # <a name="ienumdebugframeinfo2skip"></a>IEnumDebugFrameInfo2::Skip
 Überspringt die angegebene Anzahl von Elementen.
