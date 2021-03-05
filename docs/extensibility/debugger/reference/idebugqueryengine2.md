@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle ermöglicht es dem sitzungsdebug-Manager (SDM), eine Schnittstelle abzurufen, die die Debug-Engine (de) darstellt.
 title: IDebugQueryEngine2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b555ac218ceee1d376c9f7cf3c9df87f7c2e2da0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8e4cd9358cf63188ec88f4ec4a613aebf9d4f79
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909769"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151401"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Diese Schnittstelle ermöglicht es dem sitzungsdebug-Manager (SDM), eine Schnittstelle abzurufen, die die Debug-Engine (de) darstellt.
@@ -44,7 +45,7 @@ IDebugQueryEngine2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Diese Schnittstelle wird in der Regel in dem Objekt implementiert, das die [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Schnittstelle implementiert, um Kausalität geordnete schrittweise durchlaufen von Funktionen zu unterstützen. Das heißt, wenn der Debugger eine Funktion ausführt, ist die nächste auszuführende Funktion möglicherweise nicht die vorherige Funktion auf dem Stapel, sondern eine Funktion in einem anderen Thread. Eine Definition der "Kausalität" finden Sie im [Visual Studio-Debugger-Glossar](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

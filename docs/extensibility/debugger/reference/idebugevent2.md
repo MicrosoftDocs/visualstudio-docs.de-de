@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird verwendet, um sowohl wichtige Debuginformationen, wie z. b. das Anhalten an einem Haltepunkt, als auch nicht kritische Informationen, wie z. b. eine Debugmeldung,
 title: IDebugEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ff87d79d45c90a3307d5f28a2aa6109033f4a59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e162e276fc93c9e2c0d4333ac0f5c2630f75618e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933335"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152948"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Diese Schnittstelle wird verwendet, um sowohl wichtige Debuginformationen, wie z. b. das Anhalten an einem Haltepunkt, als auch nicht kritische Informationen, wie z. b. eine Debugmeldung,
@@ -37,14 +38,14 @@ IDebugEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugEvent2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Ruft die Attribute für dieses Debugereignis ab.|
 
 ## <a name="remarks"></a>Bemerkungen
  Die spezifischeren Ereignis Schnittstellen, wie z. b. [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), werden nicht von der IDebugEvent2-Schnittstelle abgeleitet, sondern stattdessen als separate Schnittstelle für dasselbe Objekt implementiert `IDebugEvent2` .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

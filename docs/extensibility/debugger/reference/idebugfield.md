@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt ein Feld dar, d. h. eine Beschreibung eines Symbols oder Typs.
 title: Idebugfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869764"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151843"
 ---
 # <a name="idebugfield"></a>IDebugField
 Diese Schnittstelle stellt ein Feld dar, d. h. eine Beschreibung eines Symbols oder Typs.
@@ -37,7 +38,7 @@ IDebugField : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugField` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Ruft Informationen über das Symbol oder den Typ ab.|
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Ruft die Art des Felds ab.|
@@ -62,7 +63,7 @@ weather stormy;
 
  Gibt an, ob ein Feld ein Symbol oder einen Typ darstellt, indem [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) aufgerufen und das [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Ergebnis überprüft wird. Wenn das- `FIELD_KIND_TYPE` Bit festgelegt ist, ist das Feld ein-Typ, und wenn das- `FIELD_KIND_SYMBOL` Bit festgelegt ist, ist es ein Symbol.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

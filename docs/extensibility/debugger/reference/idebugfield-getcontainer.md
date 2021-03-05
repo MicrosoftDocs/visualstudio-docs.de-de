@@ -1,4 +1,5 @@
 ---
+description: Diese Methode ruft den Container eines Felds ab.
 title: 'Idebugfield:: getContainer | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9d14a5666db03c9ebd701d5e1145c3f14465e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39be9de82e6356b16562ca4b45ea67bb40e3764f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915398"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151999"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Diese Methode ruft den Container eines Felds ab.

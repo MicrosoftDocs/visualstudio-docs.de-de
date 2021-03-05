@@ -1,4 +1,5 @@
 ---
+description: Ruft ein Dienst Objekt unter Berücksichtigung des eindeutigen Bezeichners ab.
 title: 'IDebugExpressionEvaluator2:: GetService | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb0f822011a5f54cf97e58f53ec1cf03b5d26a23
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4a522cefec514baf8b7d8219846587f18c37559a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926337"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152363"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Ruft ein Dienst Objekt unter Berücksichtigung des eindeutigen Bezeichners ab.

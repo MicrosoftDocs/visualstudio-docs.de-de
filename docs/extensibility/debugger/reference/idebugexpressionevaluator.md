@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt die Ausdrucks Auswertung dar.
 title: Idebugexpressionevaluator | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c12dc405f08851e55040c3097e5d7f409030f61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2e1fb465155bac2aa4be2b0d0a041715bf63bfa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934330"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152350"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ Um diese Schnittstelle zu erhalten, instanziieren Sie die Ausdrucks Auswertung `
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
 In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugExpressionEvaluator` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Konvertiert eine Ausdrucks Zeichenfolge in einen analysierten Ausdruck.|
 |[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Ruft die lokalen Variablen, Argumente und andere Eigenschaften einer Methode ab.|
@@ -53,7 +54,7 @@ In einer typischen Situation instanziiert die Debug-Engine (de) die Ausdrucks Au
 
 Nachdem der EE instanziiert wurde, ruft der de-Ausdruck [auf, um](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) den Ausdruck zu analysieren und in einem [idebugzisedexpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) -Objekt zu speichern. Später wertet ein [aufrufsausdruck für evaluatesync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) den Ausdruck aus.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: EE. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
