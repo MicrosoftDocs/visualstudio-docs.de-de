@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur gibt Informationen zu einem Feldtyp an, der aus Metadaten entnommen wurde.
 title: BUILT_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35ae5661127c0e19e87c96a47a2985161beae7c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd9f5984861b0f56e4a46b4f793a38bbb3bafa60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874381"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170984"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 Diese Struktur gibt Informationen zu einem Feldtyp an, der aus Metadaten entnommen wurde.
@@ -43,7 +44,7 @@ public struct BUILT_TYPE {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `ulAppDomainID`\
 Die ID der Anwendung, von der das Symbol stammt. Hiermit wird eine Instanz der Anwendung eindeutig identifiziert.
 
@@ -56,7 +57,7 @@ Ein [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Obj
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur wird als Teil der Union in der [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) -Struktur angezeigt, wenn das- `dwKind` Feld der- `TYPE_INFO` Struktur auf festgelegt ist `TYPE_KIND_BUILT` (ein Wert aus der [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Enumeration).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

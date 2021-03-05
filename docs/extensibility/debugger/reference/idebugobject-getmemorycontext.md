@@ -1,4 +1,5 @@
 ---
+description: Ruft den Arbeitsspeicher Kontext ab, der die Adresse des Werts des-Objekts darstellt.
 title: 'Idebugobject:: getmemorycontext | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2c7dbdace7c40ccba25cdce0306e6f0998489f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fabcee7bc0f4501f1440345b648fb93dab84d16
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920783"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172111"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 Ruft den Arbeitsspeicher Kontext ab, der die Adresse des Werts des-Objekts darstellt.

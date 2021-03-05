@@ -1,4 +1,5 @@
 ---
+description: Wählt verschiedene Typen von Konstruktoren aus.
 title: CONSTRUCTOR_ENUM | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fe47e53b1b95f69c80fd248f59de4cf23bf9c88
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e3a8eaae37b304c438c18ec2a683c19da00ab16
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913011"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170795"
 ---
 # <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 Wählt verschiedene Typen von Konstruktoren aus.
@@ -56,7 +57,7 @@ Wählt statische Konstruktoren aus.
 ## <a name="remarks"></a>Bemerkungen
 Übergeben als Argument an die [enumconstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) -Methode.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt eine Stapel Rahmen Eigenschaft, eine Programmdokument Eigenschaft oder eine andere Eigenschaft dar.
 title: IDebugProperty2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42cdd3f9e5fd1d92e007bb9a15cf9e1fa5e44e83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962196"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171451"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Diese Schnittstelle stellt eine Stapel Rahmen Eigenschaft, eine Programmdokument Eigenschaft oder eine andere Eigenschaft dar. Die-Eigenschaft ist normalerweise das Ergebnis einer Ausdrucks Auswertung.
@@ -69,7 +70,7 @@ IDebugProperty2 : IUnknown
 
  Die IDE kann die `IDebugProperty2` -Schnittstelle verwenden, um Benutzern das Durchsuchen und Ändern von Eigenschaften zur Laufzeit zu ermöglichen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Beschreibt verschiedene Attribute für eine IDebugProperty2-oder IDebugReference2-Schnittstelle.
 title: DBG_ATTRIB_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f467c9ac66bc249974f919a48a1527bebb26f361
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899161"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170717"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 Beschreibt verschiedene Attribute für eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -oder [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) -Schnittstelle. Member der [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Struktur.
@@ -165,7 +166,7 @@ public const int DBG_ATTRIB_CHILD_ALL            = 0x0000ff0000000000,
 public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
  `DBG_ATTRIB_NONE`\
  Gibt keine Attribute an.
 
@@ -307,7 +308,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 
  Das- `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` Flag ist ein Hinweis auf, [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] um die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) -Schnittstelle von der [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Schnittstelle abzurufen und [getcustomviewerlist](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) für eine Liste benutzerdefinierter Viewer aufzurufen.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

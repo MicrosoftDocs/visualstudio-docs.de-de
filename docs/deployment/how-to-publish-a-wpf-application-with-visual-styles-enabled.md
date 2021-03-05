@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 285d624debed6dc498e3d274af2839137b5094d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900479"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171278"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Designs
 
@@ -110,9 +110,9 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>So fügen Sie die Manifestdatei in die ausführbare Datei der veröffentlichten Projektmappe ein
 
-1. Öffnen Sie die **Visual Studio-Eingabeaufforderung**.
+1. Öffnen Sie **Developer-Eingabeaufforderung für Visual Studio**.
 
-    Weitere Informationen zum Öffnen der **Visual Studio-Eingabeaufforderung** finden Sie unter [Eingabe Aufforderungen](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Weitere Informationen zum Öffnen von Developer-Eingabeaufforderung für Visual Studio finden Sie unter [Developer-Eingabeaufforderung und Developer PowerShell](../ide/reference/command-prompt-powershell.md).
 
    > [!NOTE]
    > In den verbleibenden Schritten werden die folgenden Annahmen über die Projektmappe gemacht:
@@ -179,7 +179,7 @@ Durch visuelle Stile kann die Darstellung von allgemeinen Steuerelementen auf Gr
 
 ## <a name="see-also"></a>Weitere Informationen
 
--[Problembehandlung bei bestimmten Fehlern in ClickOnce-bereit Stellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Übersicht über visuelle Stile](/windows/desktop/Controls/visual-styles-overview)
 - [Aktivieren von visuellen Stilen](/windows/desktop/Controls/cookbook-overview)
-- [Eingabeaufforderungen](/dotnet/framework/tools/developer-command-prompt-for-vs)
+- [Developer-Eingabeaufforderung und Developer PowerShell](../ide/reference/command-prompt-powershell.md)

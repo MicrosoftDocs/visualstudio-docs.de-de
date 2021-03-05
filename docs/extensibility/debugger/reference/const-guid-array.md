@@ -1,4 +1,5 @@
 ---
+description: Eine-Struktur, die eine Liste der GUID enthält.
 title: CONST_GUID_ARRAY | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2893b6a1e977b84fba3161a33a5342f94ccc030
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3caa4518872abbb2164e523b30679621d2bf319c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900286"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170808"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
 Eine-Struktur, die eine Liste von `GUID` s enthält.
@@ -41,7 +42,7 @@ public struct CONST_GUID_ARRAY {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwCount`\
 Anzahl von `GUID` s im `Members` Array.
 
@@ -53,7 +54,7 @@ Diese Struktur wird an die [publishprogram](../../../extensibility/debugger/refe
 
 Der Besitzer einer Instanz dieser Struktur ist dafür verantwortlich, zugeordneten Arbeitsspeicher freizugeben.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

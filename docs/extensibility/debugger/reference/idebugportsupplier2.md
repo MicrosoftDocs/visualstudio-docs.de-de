@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt Ports für den Sitzungs-Debug-Manager (SDM) bereit.
 title: IDebugPortSupplier2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840365"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172038"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Diese Schnittstelle stellt Ports für den Sitzungs-Debug-Manager (SDM) bereit.
@@ -60,7 +61,7 @@ Eine Debug-Engine interagiert in der Regel nicht mit einem Port Lieferanten.
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
 In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugPortSupplier2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Ruft den Namen des Port Anbieters ab.|
 |[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Ruft den Bezeichner des Port Anbieters ab.|
@@ -73,7 +74,7 @@ In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugPortSupplier2`
 ## <a name="remarks"></a>Bemerkungen
 Ein Port Lieferant kann sich selbst anhand des Namens und der ID identifizieren, Ports hinzufügen und entfernen und alle Ports auflisten, die der Port Lieferant bereitstellt.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

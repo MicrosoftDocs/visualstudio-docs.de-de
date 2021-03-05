@@ -1,4 +1,5 @@
 ---
+description: Eine-Struktur, die ein Array von Zeichen folgen beschreibt.
 title: BSTR_ARRAY | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d16eb78cdb6c6b9e665dda8410f46d4cf61ee69a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5fb882bb31f6fd525d00dc134e042e9bce9398f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882211"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170971"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 Eine-Struktur, die ein Array von Zeichen folgen beschreibt.
@@ -41,7 +42,7 @@ struct BSTR_ARRAY {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwCount`\
 Anzahl der Zeichen folgen im `Members` Array.
 
@@ -53,7 +54,7 @@ Diese Struktur wird von der [enumpersistedports](../../../extensibility/debugger
 
  [Nur C++] Jede einzelne Zeichenfolge muss mit freigegeben werden `SysFreeString` , und das `Members` Array muss mit freigegeben werden `CoTaskMemFree` .
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

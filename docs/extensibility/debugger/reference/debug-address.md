@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur stellt eine Adresse dar.
 title: DEBUG_ADDRESS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e02f78e82c87bceb10b71bcb303a78f25a9a623e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a13a83b5622053593702409c44b6481ba76d17d8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899116"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170678"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
 Diese Struktur stellt eine Adresse dar.
@@ -45,7 +46,7 @@ public struct DEBUG_ADDRESS {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `ulAppDomainID`\
 Die Prozess-ID.
 
@@ -75,7 +76,7 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 }
 ```
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

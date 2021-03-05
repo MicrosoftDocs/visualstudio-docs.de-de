@@ -1,4 +1,5 @@
 ---
+description: Beschreibt verschiedene Arten von Adressen.
 title: DEBUG_ADDRESS_UNION | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76fc15389242de1011851492e3a68dc001534582
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea2999e85c721ce2582a781b8914241076470710
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899136"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170704"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 Beschreibt verschiedene Arten von Adressen.
@@ -52,7 +53,7 @@ public struct DEBUG_ADDRESS_UNION {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `dwKind`\
 Ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Enumeration, der angibt, wie die Union interpretiert werden soll.
 
@@ -134,7 +135,7 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: sh. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
