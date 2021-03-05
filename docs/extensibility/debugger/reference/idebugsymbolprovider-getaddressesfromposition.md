@@ -1,4 +1,5 @@
 ---
+description: Mit dieser Methode wird eine Dokument Position einem Array von debugadressen zugeordnet.
 title: 'Idebugsymbolprovider:: getaddressesfromposition | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15838ff1efe9cba6920b98a8b7f00cb62f2fc3b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4437055ccd693b40fe4f1f7d6364d9601c827a3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956463"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159678"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Mit dieser Methode wird eine Dokument Position einem Array von debugadressen zugeordnet.
