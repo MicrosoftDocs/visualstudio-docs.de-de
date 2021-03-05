@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle beschreibt ein Array Symbol oder einen Typ.
 title: Idebugarrayfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64717948f6406d1c6e9a5c1fabfec4b3a16bf116
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3926bb47e1ea8a91289a7454f289cd3806e97f7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870258"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158721"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 Diese Schnittstelle beschreibt ein Array Symbol oder einen Typ.
@@ -37,13 +38,13 @@ IDebugArrayField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden in den Schnittstellen [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) und [idebugcontainerfield](../../../extensibility/debugger/reference/idebugcontainerfield.md) implementiert diese Schnittstelle Folgendes:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetNumberOfElements](../../../extensibility/debugger/reference/idebugarrayfield-getnumberofelements.md)|Ruft die Anzahl der Elemente im Array ab.|
 |[GetElementType](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|Ruft den Typ des Elements im Array ab.|
 |[GetRank](../../../extensibility/debugger/reference/idebugarrayfield-getrank.md)|Ruft den Rang des Arrays ab.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Ruft den Rang des Arrays ab, d. h. die Anzahl der Dimensionen.
 title: 'Idebugarrayobject:: GetRank | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5fe662f6e6ed2db50fb905ad8918a7b7216853f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a246cda3f5b9395ae013b4bca9d4d27d6f8a5c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870102"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158539"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 Ruft den Rang des Arrays ab, d. h. die Anzahl der Dimensionen.

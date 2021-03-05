@@ -1,4 +1,5 @@
 ---
+description: Im folgenden finden Sie die Ausdrucks Evaluierungs Schnittstellen für das Visual Studio-debuggingsdk.
 title: Ausdrucks Bewertungs Schnittstellen | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d380fcce087fad3dc6b101e78cbc514ba19b1052
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936937"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158734"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 > [!IMPORTANT]
@@ -34,7 +35,7 @@ ms.locfileid: "99936937"
 
 - Visual Studio (VS)
 
-|Schnittstelle|Implementiert von|Beschreibung|
+|Schnittstelle|Implementiert von|BESCHREIBUNG|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Stellt einen numerischen Alias für eine Variable dar.|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Stellt einen numerischen Alias für eine Variable dar und ermöglicht einer Ausdrucks Auswertung (EE) das Abrufen der Anwendungsdomäne für den Alias.|

@@ -1,4 +1,5 @@
 ---
+description: Ruft einen Enumerator für alle Elemente des Arrays ab.
 title: 'Idebugarrayobject:: getElements | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a93e75be0e3a7b3c86e75b29a13b2cabe5a4573
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33840f3f5d5a65cf1ed929049f0b85801724a5c9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870167"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158552"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 Ruft einen Enumerator für alle Elemente des Arrays ab.

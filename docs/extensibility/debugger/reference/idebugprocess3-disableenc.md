@@ -1,4 +1,5 @@
 ---
+description: Diese Methode deaktiviert die Bearbeitung und Fortsetzung für diesen Prozess (und alle darin enthaltenen Programme) explizit.
 title: IDebugProcess3::D isableumc | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5cfd425e6b992d8d933edd45f27d6fb4c8161a1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffedebd14f720e006c0bec2044afe80901762b52
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891045"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158487"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Diese Methode deaktiviert die Bearbeitung und Fortsetzung für diesen Prozess (und alle darin enthaltenen Programme) explizit. Ein benutzerdefinierter Port Lieferant sollte immer zurückgeben `E_NOTIMPL` .

@@ -1,4 +1,5 @@
 ---
+description: Gibt den Ausnahmezustand an.
 title: EXCEPTION_STATE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f804f9a47314bfd239e6904286122776977e92e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ff9edf1ef12d219b865815585035151e664e67a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936924"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158747"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
 Gibt den Ausnahmezustand an.
@@ -129,7 +130,7 @@ Diese Werte werden auch an die [setallexceptions](../../../extensibility/debugge
 
 Diese Flags können mit einem bitweisen OR kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
