@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion bestimmt den übergeordneten Projektpfad eines angegebenen Projekts.
 title: Sccgetparser ProjectPath-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958400"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220611"
 ---
 # <a name="sccgetparentprojectpath-function"></a>Sccgetparser ProjectPath-Funktion
 Diese Funktion bestimmt den übergeordneten Projektpfad eines angegebenen Projekts. Diese Funktion wird aufgerufen, wenn der Benutzer ein Visual Studio-Projekt zur Quell Code Verwaltung hinzufügt.

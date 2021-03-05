@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion Ruft ein Status Ereignis in der Warteschlange ab.
 title: Sccgetevents-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4502dd1cdf5cb23f317cd29bee74460c5911482c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 069e9399a91a39d8005d9137bd19f4032773b24a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220793"
 ---
 # <a name="sccgetevents-function"></a>Sccgetevents-Funktion
 Diese Funktion Ruft ein Status Ereignis in der Warteschlange ab.

@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion löscht Dateien aus dem Quell Code Verwaltungssystem.
 title: SC| Move-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67b0691c3f58ad859051f0018e7b32a5a4e087da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f55b82ae428870f1d5a08feaa3ae1ef7eb0b5f4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836708"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221417"
 ---
 # <a name="sccremove-function"></a>SccRemove-Funktion
 Diese Funktion löscht Dateien aus dem Quell Code Verwaltungssystem.
@@ -68,7 +69,7 @@ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Der Löschvorgang war erfolgreich.|
 |SCC_E_FILENOTCONTROLLED|Die ausgewählte Datei befindet sich nicht unter Quell Code Verwaltung.|

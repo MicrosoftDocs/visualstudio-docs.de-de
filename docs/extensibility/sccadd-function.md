@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion fügt dem Quell Code Verwaltungssystem neue Dateien hinzu.
 title: Sccadd-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f654429f8c3faefe05a6410a3c732a6a4b1d083b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926858"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221722"
 ---
 # <a name="sccadd-function"></a>Sccadd-Funktion
 Diese Funktion fügt dem Quell Code Verwaltungssystem neue Dateien hinzu.
@@ -68,7 +69,7 @@ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Der Vorgang zum Hinzufügen war erfolgreich.|
 |SCC_E_FILEALREADYEXISTS|Die ausgewählte Datei befindet sich bereits in der Quell Code Verwaltung.|

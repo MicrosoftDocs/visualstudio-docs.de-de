@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion Ruft das Tool zur Verwaltung der Quell Code Verwaltung auf.
 title: Sccrunscc-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836760"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221365"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc-Funktion
 Diese Funktion Ruft das Tool zur Verwaltung der Quell Code Verwaltung auf.
@@ -53,7 +54,7 @@ in Array ausgewählter Dateinamen.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Das Tool zur Verwaltung der Quell Code Verwaltung wurde erfolgreich aufgerufen.|
 |SCC_I_OPERATIONCANCELED|Der Vorgang wurde abgebrochen.|

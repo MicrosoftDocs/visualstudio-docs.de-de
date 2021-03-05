@@ -1,4 +1,5 @@
 ---
+description: Gibt an, welche Art von Informationen für einen Prozess abgerufen werden sollen.
 title: PROCESS_INFO_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 451a6ea5334006bb23e8961595f4de85c985b8ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5869ede1e43cc6b47f271691de51b948d72a7849
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895946"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222106"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 Gibt an, welche Art von Informationen für einen Prozess abgerufen werden sollen.

@@ -1,4 +1,5 @@
 ---
+description: Gibt eine Kopie der aktuellen Modul Enumeration als separates Objekt zurück.
 title: 'IEnumDebugModules2:: Clone | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f008cef55d45257ddd18dec69d6e72be8095ed57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 699afcaabdf88ca8b2b6ea60b6ad06dfcb12e3bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932827"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224888"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 Gibt eine Kopie der aktuellen Enumeration als ein separates Objekt zurück.

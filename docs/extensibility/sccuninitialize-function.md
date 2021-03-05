@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion bereinigt alle Zuordnungen oder geöffneten Verbindungen, die durch einen vorherigen sccinitialize-aufrufungstyp erstellt wurden, um das Quellcodeverwaltungs-Plug-in zu schließen.
 title: Sccuninitialize-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7de3572b17bf47859a64451149a269988c91e5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 187451aba5151c95d8947bd4f5a1419894cc65e7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836682"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221326"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize-Funktion
 Diese Funktion bereinigt alle Zuordnungen oder geöffneten Verbindungen, die durch einen vorherigen [sccinitialize](../extensibility/sccinitialize-function.md) -aufrufungstyp erstellt wurden, um das Quellcodeverwaltungs-Plug-in zu schließen.
@@ -38,7 +39,7 @@ in Der Zeiger auf die Kontext Struktur des Quellcodeverwaltungs-Plug-ins, die in
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Die Bereinigung wurde erfolgreich abgeschlossen.|
 

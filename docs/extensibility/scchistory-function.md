@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion zeigt den Verlauf der angegebenen Dateien an.
 title: Scchistory-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b7e1cd6fa6d5b9b3a5ab42cd1b4cafec215deca
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893567"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220572"
 ---
 # <a name="scchistory-function"></a>SccHistory-Funktion
 Diese Funktion zeigt den Verlauf der angegebenen Dateien an.
@@ -63,7 +64,7 @@ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Der Versionsverlauf wurde erfolgreich abgerufen.|
 |SCC_I_RELOADFILE|Das Quell Code Verwaltungssystem änderte die Datei auf dem Datenträger, während der Verlauf abgerufen wurde (z.b. durch Abrufen einer alten Version), sodass die IDE diese Datei erneut laden sollte.|

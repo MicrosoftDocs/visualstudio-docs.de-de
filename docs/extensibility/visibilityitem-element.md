@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16615dfdbfd7e9762046e37899ecf23619837ae2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fa4c2910a1f694a822d2a31b5ad537c8104f99c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926019"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221300"
 ---
 # <a name="visibilityitem-element"></a>Visibilityitem-Element
 Das- `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen und Symbolleisten. Jeder Eintrag identifiziert einen Befehl oder ein Menü sowie einen zugeordneten Befehls Benutzeroberflächen Kontext. Visual Studio erkennt Befehle, Menüs und Symbolleisten sowie deren Sichtbarkeit, ohne die VSPackages zu laden, die Sie definieren. Die IDE verwendet die- <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode, um zu bestimmen, ob ein Befehls Benutzeroberflächen Kontext aktiv ist.
@@ -33,8 +33,8 @@ Das- `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen u
 
 ```xml
 <VisibilityItem
-  guid ="="cmdGuidMyProductCommands"
-  id=="cmdidAddWidget"
+  guid="cmdGuidMyProductCommands"
+  id="cmdidAddWidget"
   context="guidNotViewSourceMode"/>
 ```
 
@@ -48,7 +48,7 @@ Das- `VisibilityItem` Element bestimmt die statische Sichtbarkeit von Befehlen u
 |guid|Erforderlich. Der GUID des GUID-/ID-befehlsbezeichners.|
 |id|Erforderlich. Die ID des GUID-/ID-befehlsbezeichners.|
 |context|Erforderlich. Der UI-Kontext, in dem der Befehl sichtbar ist.|
-|Bedingung|Dies ist optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Bedingung|Optional. Siehe [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Untergeordnete Elemente
  Keine

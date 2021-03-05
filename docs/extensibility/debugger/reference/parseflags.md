@@ -1,4 +1,5 @@
 ---
+description: Gibt an, wie ein Ausdruck analysiert wird.
 title: Parameeflags | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78890f088646842435198fa839c0f88cba5483b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 192e4de399540ce189bbf52cbb0f615b2b9bc855
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880189"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222145"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Gibt an, wie ein Ausdruck analysiert wird.

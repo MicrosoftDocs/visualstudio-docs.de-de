@@ -1,4 +1,5 @@
 ---
+description: Mit dieser Funktion wird eine Liste der voll qualifizierten Verzeichnisse für Ihren aktuellen Status überprüft.
 title: Sccdirqueryinfo-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d15809623067d9612eb2648d593264d61f08f6e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da0d42e2ef65aefc03e2813f32189876d0c07da1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943087"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220819"
 ---
 # <a name="sccdirqueryinfo-function"></a>Sccdirqueryinfo-Funktion
 Mit dieser Funktion wird eine Liste der voll qualifizierten Verzeichnisse für Ihren aktuellen Status überprüft.
@@ -53,7 +54,7 @@ in Ein Array von voll qualifizierten Pfaden der Verzeichnisse, die abgefragt wer
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Die Abfrage war erfolgreich.|
 |SCC_E_OPNOTSUPPORTED|Das Quell Code Verwaltungssystem unterstützt diesen Vorgang nicht.|

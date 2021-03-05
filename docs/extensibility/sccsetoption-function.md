@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion legt Optionen fest, mit denen das Verhalten des Quellcodeverwaltungs-Plug-ins gesteuert wird.
 title: Sccsetoption-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836695"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221378"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption-Funktion
 Diese Funktion legt Optionen fest, mit denen das Verhalten des Quellcodeverwaltungs-Plug-ins gesteuert wird.
@@ -48,7 +49,7 @@ in Einstellungen für die Option.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Die Option wurde erfolgreich festgelegt.|
 |SCC_I_SHARESUBPROJOK|Wird zurückgegeben `nOption` , wenn was war `SCC_OPT_SHARESUBPROJ` , und das Quellcodeverwaltungs-Plug-in ermöglicht der IDE, den Zielordner festzulegen.|
@@ -59,7 +60,7 @@ in Einstellungen für die Option.
 
  Zusammenfassung der Optionen und ihrer Werte:
 
-|`nOption`|`dwValue`|Beschreibung|
+|`nOption`|`dwValue`|BESCHREIBUNG|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Aktiviert/deaktiviert hintergrundereignisqueuing.|
 |`SCC_OPT_USERDATA`|Beliebiger Wert|Gibt einen Benutzer Wert an, der an die [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) -Rückruffunktion übermittelt werden soll.|

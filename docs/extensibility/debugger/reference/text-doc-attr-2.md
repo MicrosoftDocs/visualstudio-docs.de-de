@@ -1,4 +1,5 @@
 ---
+description: Beschreibt die Attribute eines Dokuments.
 title: TEXT_DOC_ATTR_2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7113cfead52348a1d1a85973b90014ca53226ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8351753c5e8da9a320bd93c17e8138dedaff03d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850725"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221859"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 Beschreibt die Attribute eines Dokuments.
@@ -36,7 +37,7 @@ const TEXT_DOC_ATTR_2 TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
  `TEXT_DOC_ATTR_READONLY_2`\
  Gibt an, dass das Dokument schreibgeschützt ist.
 
