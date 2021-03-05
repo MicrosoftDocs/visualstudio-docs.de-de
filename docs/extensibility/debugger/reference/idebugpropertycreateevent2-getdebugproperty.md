@@ -1,4 +1,5 @@
 ---
+description: Ruft die neue-Eigenschaft ab.
 title: 'IDebugPropertyCreateEvent2:: getdebug Property | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c041a9dca28dfbd0b1138e45809143e87d0809db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c550f6e1b872c994738ebf1d66a771f88d39fbb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876068"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168061"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Ruft die neue-Eigenschaft ab.
