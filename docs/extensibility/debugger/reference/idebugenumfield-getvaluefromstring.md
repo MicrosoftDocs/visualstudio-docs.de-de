@@ -1,4 +1,5 @@
 ---
+description: Diese Methode gibt den Wert zurück, der dem Namen einer Enumerationskonstante zugeordnet ist.
 title: 'Idebugenenfield:: getvaluefromstring | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77cce7a6780c816fbee0ade1c795cb1174e3e7f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a4ab2950667ba9268335f2e0dbca1c0ce5183bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933452"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153299"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Diese Methode gibt den Wert zurück, der dem Namen einer Enumerationskonstante zugeordnet ist.
