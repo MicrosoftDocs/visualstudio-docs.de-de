@@ -1,4 +1,5 @@
 ---
+description: Gibt an, wie eine Prozess-ID in der AD_PROCESS_ID Struktur interpretiert werden soll.
 title: AD_PROCESS_ID_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72bca5a909b7a001bf12779e54953d403134995b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f56ca1db0462a85bd68b193147f5dd3a46c6bee9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948412"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164343"
 ---
 # <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
 Gibt an, wie eine Prozess-ID in der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur interpretiert werden soll.
@@ -52,7 +53,7 @@ Die Prozess-ID ist eine GUID. Verwenden Sie das- `ProcessId.guidProcessId` Feld 
 ## <a name="remarks"></a>Bemerkungen
 Wird für den `ProcessIdType` Member der [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur verwendet, um den Typ der Prozess-ID zu identifizieren, der in der Struktur enthalten ist. Bestimmt, wie die `ProcessId` Union in der-Struktur interpretiert wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

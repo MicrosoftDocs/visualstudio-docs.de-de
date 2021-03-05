@@ -1,4 +1,5 @@
 ---
+description: Subtrahiert den angegebenen Wert aus dem aktuellen Kontext und gibt einen neuen Kontext zurück.
 title: 'IDebugMemoryContext2:: Subtract | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71e3191384a0ee45778cb7ee37b7e55e5f673578
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d77a0fcd4d791eefe98ae908bdf86ba49bec519
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851087"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165006"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Subtrahiert den angegebenen Wert aus dem aktuellen Kontext und gibt einen neuen Kontext zurück.

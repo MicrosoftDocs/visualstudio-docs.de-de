@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt die Anfangsposition einer Code Anweisung dar.
 title: IDebugCodeContext2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f03bef276d4f4aada1a173c45defd100e4becbf4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 228b6e84ca2f85803c4a248b966698b822bb572f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928690"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164096"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Diese Schnittstelle stellt die Anfangsposition einer Code Anweisung dar. Für die meisten Lauf Zeit Architekturen kann ein Code Kontext als Adresse im ausführungsstream eines Programms betrachtet werden.
@@ -37,7 +38,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden in der [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Ruft den Dokument Kontext ab, der dem aktiven Code Kontext entspricht.|
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Ruft die Sprachinformationen für diesen Code Kontext ab.|
@@ -45,7 +46,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 ## <a name="remarks"></a>Bemerkungen
  Der Hauptunterschied zwischen einer `IDebugCodeContext2` Schnittstelle und einer [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) -Schnittstelle besteht darin, dass ein `IDebugCodeContext2` immer Anweisungs orientiert ist. Dies bedeutet, dass eine `IDebugCodeContext2` immer auf den Anfang einer Anweisung zeigt, während ein `IDebugMemoryContext2` auf ein beliebiges Byte des Speichers in der Lauf Zeit Architektur verweisen kann. `IDebugCodeContext2` wird nicht durch die grundlegende Speichergröße (in der Regel Byte), sondern durch Anweisungen inkrementiert.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

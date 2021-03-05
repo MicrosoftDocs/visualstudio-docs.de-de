@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn die Verarbeitung eines abgefangenen Ereignisses von de abgeschlossen wurde.
 title: IDebugInterceptExceptionCompleteEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98f8653d851eb338a96f969d73a2514b555f400
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93440facf13a230cd746400832afcb48971cd557
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890278"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165292"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn die Verarbeitung eines abgefangenen Ereignisses von de abgeschlossen wurde.
@@ -37,14 +38,14 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Die- `IDebugInterceptExceptionCompleteEvent2` Schnittstelle implementiert die folgenden Methoden.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Gibt den eindeutigen Wert zurück, der der behandelten Ausnahme zugeordnet ist.|
 
 ## <a name="remarks"></a>Bemerkungen
  Dieses Ereignis wird von [intercepteption TException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) gesendet, wenn die Verarbeitung einer abgefangenen Ausnahme von dieser Methode erfolgreich abgeschlossen wurde.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

@@ -1,4 +1,5 @@
 ---
+description: Legt den Namen des Threads fest.
 title: 'IDebugThread2:: SetThreadName | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f49a15486551a91538bebe8fa900d165fdbb78b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71d1f135009b3196efd044ce4d4ff71d73f60955
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911877"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164460"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 Legt den Namen des Threads fest.

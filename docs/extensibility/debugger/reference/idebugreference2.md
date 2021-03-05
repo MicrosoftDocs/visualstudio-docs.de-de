@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt einen Verweis auf eine Stapel Rahmen Eigenschaft oder eine andere Eigenschaft dar.
 title: IDebugReference2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883804"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165851"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Diese Schnittstelle stellt einen Verweis auf eine Stapel Rahmen Eigenschaft oder eine andere Eigenschaft dar.
@@ -40,7 +41,7 @@ IDebugReference2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugReference2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Ruft die [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) -Struktur ab, die diesen Verweis beschreibt.|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Legt den Wert dieses Verweises aus einer Zeichenfolge fest.|
@@ -65,7 +66,7 @@ IDebugReference2 : IUnknown
 
  Eine `IDebugProperty2` Schnittstelle kann als Wert mit einem Namen, einem Typ und einer Adresse betrachtet werden. Eine `IDebugReference2` kann andererseits als Typ und als Adresse betrachtet werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

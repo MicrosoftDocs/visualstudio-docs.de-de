@@ -1,4 +1,5 @@
 ---
+description: Erstellt einen Enumerator für die von dieser Klasse implementierten Schnittstellen.
 title: 'Idebugclassfield:: enuminterfacesimplementiert | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7283d8a2996d5ab4dfc52cde446170e7632c27c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f90bf6efc3a34e4f6b9f60ef5bdadb0640f495b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876081"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164317"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 Erstellt einen Enumerator für die von dieser Klasse implementierten Schnittstellen.

@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt eine Klasse als Typ dar.
 title: Idebugclassfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e9ea277ee5e383c6d61528183f43dd01a0040
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c8f566d7decc344dda17700da6712ff78120a1c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928860"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164174"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 Diese Schnittstelle stellt eine Klasse als Typ dar.
@@ -37,7 +38,7 @@ IDebugClassField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden in den Schnittstellen [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) und [idebugcontainerfield](../../../extensibility/debugger/reference/idebugcontainerfield.md) implementiert diese Schnittstelle Folgendes:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|Erstellt einen Enumerator für die Basisklassen dieser Klasse.|
 |[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|Bestimmt, ob eine bestimmte Schnittstelle in der Klasse definiert ist.|
@@ -48,7 +49,7 @@ IDebugClassField : IDebugContainerField
 |[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|Ruft den Namen des Standardindexers ab.|
 |[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|Erstellt einen Enumerator für die unter aufgefügten Enumeratoren dieser Klasse.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

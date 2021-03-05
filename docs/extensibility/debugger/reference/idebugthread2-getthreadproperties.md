@@ -1,4 +1,5 @@
 ---
+description: Ruft die Eigenschaften ab, die diesen Thread beschreiben.
 title: 'IDebugThread2:: getthreadproperties | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c547ad049fa36231ce108a6cfc406233b972ff2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 293607e30fa8c5d1f4367b23a1f4904f94aa0bed
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893775"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164525"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Ruft die Eigenschaften ab, die diesen Thread beschreiben.

@@ -1,4 +1,5 @@
 ---
+description: Ruft den Namen des Standardindexers ab.
 title: 'Idebugclassfield:: getdefaultindexer | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b223f85ff7453eba5777b3a6bde85350d7864e1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29ebdcab870ba18d38fa6957d37f09abb65db000
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948347"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164213"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Ruft den Namen des Standardindexers ab.

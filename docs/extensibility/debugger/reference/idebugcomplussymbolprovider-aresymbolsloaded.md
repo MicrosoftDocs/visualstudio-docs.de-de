@@ -1,4 +1,5 @@
 ---
+description: Bestimmt, ob die Debugsymbole für das angegebene Modul geladen werden, wenn der Anwendungs Domänen Bezeichner angegeben ist.
 title: 'Idebugcomplussymbolprovider:: aresymbolsloaded | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df11531cc90081aad45b887066ce0799af771747
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e071f18442f66711b59c1063e7c2770ed772c60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928717"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163979"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Bestimmt, ob die Debugsymbole für das angegebene Modul geladen werden, wenn der Anwendungs Domänen Bezeichner angegeben ist.

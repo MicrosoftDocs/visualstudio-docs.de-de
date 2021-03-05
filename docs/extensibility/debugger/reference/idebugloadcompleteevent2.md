@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn ein Programm geladen wird, aber bevor Code ausgeführt wird.
 title: IDebugLoadCompleteEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c6713dc0e34ae0823cfbfb5db5c539b5073e3b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 430b112a0fff4a0bbd009c4e0eba7c055842f823
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890252"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165305"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Diese Schnittstelle wird von der Debug-Engine (de) an den Sitzungs-Debug-Manager (SDM) gesendet, wenn ein Programm geladen wird, aber bevor Code ausgeführt wird.
@@ -34,7 +35,7 @@ IDebugLoadCompleteEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer
  Das de-Objekt erstellt und sendet dieses Ereignis Objekt, um zu melden, dass ein Programm erfolgreich geladen wurde. Das Ereignis wird mithilfe der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Rückruffunktion gesendet, die von der SDM bereitgestellt wird, wenn Sie an das Programm angefügt wird, das gedeppt wird.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
