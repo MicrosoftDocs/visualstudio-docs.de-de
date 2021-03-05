@@ -1,4 +1,5 @@
 ---
+description: Erstellt eine Instanz einer Debug-Engine auf dem Server.
 title: 'IDebugCoreServer3:: kreateingestanceinzuserver | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b76c37d767ae38a33d537a96f9ad8f7087503ed2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc3a24e28c378bda34034822aedf4d35e5a6313e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909963"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154677"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Erstellt eine Instanz einer Debug-Engine auf dem Server.

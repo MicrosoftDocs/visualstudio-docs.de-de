@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird verwendet, um den Sitzungs-Debug-Manager (SDM) zu Fragen, ob er am aktuellen Code Speicherort angehalten werden soll.
 title: IDebugCanStopEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903240"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154846"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Diese Schnittstelle wird verwendet, um den Sitzungs-Debug-Manager (SDM) zu Fragen, ob er am aktuellen Code Speicherort angehalten werden soll.
@@ -39,7 +40,7 @@ IDebugCanStopEvent2 : IUknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugCanStopEvent2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Ruft den Grund für dieses Ereignis ab.|
 |[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Gibt an, ob das Programm, das gedebuggt wird, an der Position dieses Ereignisses angehalten werden soll (und ein Ereignis senden soll, das den Grund für das Beenden beschreibt), oder die Ausführung einfach|
@@ -49,7 +50,7 @@ IDebugCanStopEvent2 : IUknown
 ## <a name="remarks"></a>Bemerkungen
  Diese Schnittstelle wird von der de gesendet, wenn der Benutzer eine Funktion durchführt und die Datei keine Debuginformationen findet oder wenn die Debuginformationen vorhanden sind, aber der de-Code nicht weiß, ob der Quellcode für diese Position angezeigt werden kann.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

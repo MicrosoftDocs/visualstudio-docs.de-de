@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle ermöglicht den Zugriff auf Informationen über den Server, in dem der Prozess ausgeführt wird.
 title: IDebugCoreServer3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6faa47bc107c8d00864307bdb6802908e085652
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1328a97742a4672cdc71805c4c674d66fe05e817
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928469"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154612"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Diese Schnittstelle ermöglicht den Zugriff auf Informationen über den Server, in dem der Prozess ausgeführt wird.
@@ -37,7 +38,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden in der [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) -Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|Ruft den Namen des Servers ab.|
 |[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Ruft eine benutzerfreundliche Version des Server namens ab.|
@@ -51,7 +52,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="remarks"></a>Bemerkungen
  Ein benutzerdefinierter Port Lieferant empfängt die [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) -Schnittstelle bei einem [Ereignis Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md). Die- `IDebugCoreServer3` Schnittstelle kann von dieser Schnittstelle abgerufen werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

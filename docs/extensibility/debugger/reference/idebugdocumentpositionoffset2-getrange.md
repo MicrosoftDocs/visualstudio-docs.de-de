@@ -1,4 +1,5 @@
 ---
+description: Ruft den Bereich für die aktuelle Dokument Position ab.
 title: 'IDebugDocumentPositionOffset2:: GetRange | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ecb1e4aace5fb0c4f8c76b53a597b5b4b62110f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c56ac73d85f9cfbfdc17d40da9f0fec415e057d7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879032"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154235"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Ruft den Bereich für die aktuelle Dokument Position ab.

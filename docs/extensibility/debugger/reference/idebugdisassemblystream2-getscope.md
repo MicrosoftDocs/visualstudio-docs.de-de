@@ -1,4 +1,5 @@
 ---
+description: Ruft den Gültigkeitsbereich des disassemblystreams ab.
 title: 'IDebugDisassemblyStream2:: GetScope | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28c0d07dd389814c0aa06792f4509ed9da1b4ef9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b112975649ec477a036826e3dc938ba756615c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901680"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154456"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 Ruft den Gültigkeitsbereich des disassemblystreams ab.

@@ -1,4 +1,5 @@
 ---
+description: Die Debug-Engine (de) sendet diese Schnittstelle an den Sitzungs-Debug-Manager (SDM), wenn eine Instanz von de erstellt wird.
 title: IDebugEngineCreateEvent2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a6aebd8a27f4eb9962abbcd593c947c04a17854
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6155324150b963a5fd26ccecc1244e0792f448bc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916282"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153650"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 Die Debug-Engine (de) sendet diese Schnittstelle an den Sitzungs-Debug-Manager (SDM), wenn eine Instanz von de erstellt wird.
@@ -41,7 +42,7 @@ IDebugEngineCreateEvent2 : IUnknown
 |------------|-----------------|
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Ruft das-Objekt ab, das die neu erstellte Debug-Engine (de) darstellt.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

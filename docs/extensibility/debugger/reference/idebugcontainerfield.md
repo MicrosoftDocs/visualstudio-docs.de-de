@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle stellt ein Symbol oder einen Typ dar, der ein Container für andere Symbole oder Typen ist.
 title: Idebugcontainerfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7ed9e573236f0bdeff9c9a8433af322a5a5f79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 752eb7d77035a25ad1d0ddc8aec45afe95d898c7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928496"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154781"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Diese Schnittstelle stellt ein Symbol oder einen Typ dar, der ein Container für andere Symbole oder Typen ist.
@@ -37,14 +38,14 @@ IDebugContainerField : IDebugField
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den Methoden für die [idebugfield](../../../extensibility/debugger/reference/idebugfield.md) -Schnittstelle implementiert diese Schnittstelle die folgende Methode:
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|Erstellt einen Enumerator für die Felder des Containers.|
 
 ## <a name="remarks"></a>Bemerkungen
  Arrays (Container für Variablen), Klassen (Container für Methoden und Variablen) und Methoden (Container für Parameter und lokale Variablen) sind Beispiele für Container.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
