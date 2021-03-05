@@ -1,4 +1,5 @@
 ---
+description: Beschreibt den Computer, auf dem der Debugger ausgeführt wird.
 title: COMPUTER_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 548306e1c9ef488025fd88132a27bb841194375a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81dee41b0ffc45ae6e0403e732c27d030026fb07
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900280"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170906"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
 Beschreibt den Computer, auf dem der Debugger ausgeführt wird.
@@ -43,7 +44,7 @@ public struct COMPUTER_INFO
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `wProcessorArchitecture`\
 Gibt die Architektur des Mikroprozessors an.
 
@@ -56,7 +57,7 @@ Die Versionsnummer des Betriebssystems.
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur wird von der [getcomputerinfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) -Methode zurückgegeben.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

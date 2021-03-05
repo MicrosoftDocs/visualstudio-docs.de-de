@@ -1,4 +1,5 @@
 ---
+description: Stellt einen Parameter für einen generischen Typ mit verwaltetem Code dar.
 title: Idebuggenericparamfield | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad01730f7f1d1e8e155cd1df44f75fbf88c73a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4ab1cd79826e2f9f07a4f325d701be4e9eb9c9d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838642"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172570"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 Stellt einen Parameter für einen generischen Typ mit verwaltetem Code dar.
@@ -41,7 +42,7 @@ IDebugGenericParamField : IDebugField
 |[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|Ruft den Namen dieses generischen Parameters ab.|
 |[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Ruft den Typ oder den Methoden Besitzer dieses generischen Parameters ab.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: sh. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

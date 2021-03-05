@@ -1,4 +1,5 @@
 ---
+description: Ermöglicht es einer Ausdrucks Auswertung (EE), eine Meldung im Ausgabefenster des Debuggers anzuzeigen.
 title: Idebugiabcallback | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83243899bdc11c58e76c35b6d9eb7b9555794374
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0ef2072967aad5f2cd012283b0c6f4ac7b9b3be
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838655"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172557"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
@@ -42,7 +43,7 @@ IDebugIDECallback : IUnknown
 |------------|-----------------|
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|Sendet die angegebene Meldungs Zeichenfolge an das Ausgabefenster des Debuggers.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: EE. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

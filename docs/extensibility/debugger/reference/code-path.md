@@ -1,4 +1,5 @@
 ---
+description: Beschreibt eine Methode oder einen Funktions Aufruf.
 title: CODE_PATH | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4bba942b0740fba98e88a3cddcecfcd43d7d215
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ecdbbfdbcffbb8b1aa6246e2e99ef6eabfa1f19
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900309"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170958"
 ---
 # <a name="code_path"></a>CODE_PATH
 Beschreibt eine Methode oder einen Funktions Aufruf.
@@ -41,7 +42,7 @@ public struct CODE_PATH {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 `bstrName`\
 Der Name des Codepfade.
 
@@ -51,7 +52,7 @@ Das [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecon
 ## <a name="remarks"></a>Bemerkungen
 Diese Struktur wird verwendet, um Schritt-für-Schritt-Funktionen zu implementieren. [Enumcodepath](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) gibt alle Aufrufe von der aktuellen Position im debuggten Programm zurück. Diese Struktur stellt einen solchen-Rückruf dar.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop

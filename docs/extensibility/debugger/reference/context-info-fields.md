@@ -1,4 +1,5 @@
 ---
+description: Gibt an, welche Informationen über einen Speicher Kontext abgerufen werden sollen.
 title: CONTEXT_INFO_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c0d67afa2b20e239180848ef1e68d0f0a0c3079
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 401195d5b03f87ba1ea5c66811570a720e53bdae
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912955"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170769"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 Gibt an, welche Informationen über einen Speicher Kontext abgerufen werden sollen.
@@ -78,7 +79,7 @@ Diese Flags werden auch verwendet, um anzugeben, welche Felder der `CONTEXT_INFO
 
 Diese Werte können mit einem bitweisen OR kombiniert werden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 Header: msdbg. h
 
 Namespace: Microsoft. VisualStudio. Debugger. Interop
