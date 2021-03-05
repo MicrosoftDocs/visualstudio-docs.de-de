@@ -1,4 +1,5 @@
 ---
+description: Das addin-Element des vstav3-Namespace enthält spezifische Informationen für Microsoft Office VSTO-Add-Ins und Anpassungen auf Dokument Ebene, die mit Visual Studio entwickelt wurden.
 title: '&lt;AddIn- &gt; Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cfc59475b01fbf42c387b4a7a5ca533b313a322
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896734"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227384"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn- &gt; Element (Office-Entwicklung in Visual Studio)
   Das **AddIn** -Element des- `vstav3` Namespace enthält Informationen, die spezifisch für Microsoft Office VSTO-Add-Ins und Anpassungen auf Dokument Ebene sind, die mit Visual Studio entwickelt wurden.
@@ -63,14 +64,14 @@ ms.locfileid: "99896734"
  Erforderlich. Das **Update** -Element wird in [&#60;Update&#62;-Elements &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)beschrieben.
 
 ### <a name="postactions"></a>postActions
- Dies ist optional. Das **postActions** -Element wird in [&#60;postActions&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)beschrieben.
+ Optional. Das **postActions** -Element wird in [&#60;postActions&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)beschrieben.
 
 ### <a name="application"></a>application
  Erforderlich. Das **Application** -Element wird in [&#60;Application&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md)beschrieben.
 
 ## <a name="document-level-customization-example"></a>Beispiel für eine Anpassung auf Dokument Ebene
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Codebeispiel wird das **AddIn** -Element in einer Office-Projekt Mappe auf Dokument Ebene veranschaulicht, die mit bereitgestellt wird [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code
@@ -134,7 +135,7 @@ ms.locfileid: "99896734"
 
 ## <a name="vsto-add-in-example"></a>Beispiel für ein VSTO-Add-in
 
-### <a name="description"></a>Beschreibung
+### <a name="description"></a>BESCHREIBUNG
  Im folgenden Codebeispiel wird das **AddIn** -Element in einer Office-Projekt Mappe auf Anwendungsebene veranschaulicht, die mit bereitgestellt wird [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] . Dieses Codebeispiel ist Teil eines größeren Beispiels, das in [Anwendungs Manifesten für Office](../vsto/application-manifests-for-office-solutions.md)-Projektmappen bereitgestellt wird.
 
 ### <a name="code"></a>Code

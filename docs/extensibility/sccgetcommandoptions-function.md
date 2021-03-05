@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion fordert den Benutzer auf, erweiterte Optionen für einen angegebenen Befehl zu erhalten.
 title: Sccgetcommandoptions-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965199"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220806"
 ---
 # <a name="sccgetcommandoptions-function"></a>Sccgetcommandoptions-Funktion
 Diese Funktion fordert den Benutzer auf, erweiterte Optionen für einen angegebenen Befehl zu erhalten.

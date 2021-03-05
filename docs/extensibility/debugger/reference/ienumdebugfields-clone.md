@@ -1,4 +1,5 @@
 ---
+description: Diese Methode gibt eine Kopie der aktuellen feldenumeration als ein separates Objekt zurück.
 title: 'Ienumentbugfields:: Clone | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2a9cc66e0e3b56d27c71147bd1b77ee3e559b6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 965bc201646c7e068c58f9238dccba9a9e587d26
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896952"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224901"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Diese Methode gibt eine Kopie der aktuellen Enumeration als separates Objekt zurück.

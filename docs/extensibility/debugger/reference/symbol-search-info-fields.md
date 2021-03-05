@@ -1,4 +1,5 @@
 ---
+description: Gibt die Art der abzurufenden Symbol Informationen an.
 title: SYMBOL_SEARCH_INFO_FIELDS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38d3c7fe6333783dde092674657ea78d146d53aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bce694110c76fb831dea14026e1810c7c318edd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846594"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221872"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Gibt die Art der abzurufenden Symbol Informationen an.

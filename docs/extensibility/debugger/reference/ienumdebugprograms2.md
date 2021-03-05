@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle listet die Programme auf, die in der aktuellen Debugsitzung ausgeführt werden.
 title: IEnumDebugPrograms2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b0a593d6168b7d34f97802a0b3b1b0a5c141821
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890746"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224225"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Diese Schnittstelle listet die Programme auf, die in der aktuellen Debugsitzung ausgeführt werden.
@@ -37,7 +38,7 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugPrograms2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[Nächste](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Ruft eine angegebene Anzahl von Programmen in einer enumerationssequenz ab.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Überspringt eine angegebene Anzahl von Programmen in einer enumerationssequenz.|

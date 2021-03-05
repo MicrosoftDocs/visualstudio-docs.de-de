@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion schließt ein Projekt und markiert das Ende einer bestimmten Sitzung.
 title: Scccloseproject-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4a54193b23015135b6112655fe48d79d3de74e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3fb9208619639a8f1c767cbf12a2de0ed24768f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943152"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220871"
 ---
 # <a name="scccloseproject-function"></a>Scccloseproject-Funktion
 Diese Funktion schließt ein Projekt und markiert das Ende einer bestimmten Sitzung.
@@ -36,7 +37,7 @@ SCCRTN SccCloseProject (
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Das Projekt wurde erfolgreich geschlossen.|
 |SCC_E_PROJNOTOPEN|Zurzeit ist kein Projekt geöffnet.|

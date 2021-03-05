@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion fordert den Benutzer zur Eingabe eines Projekt Pfads auf, der eine Zeichenfolge ist, die nur für das Quellcodeverwaltungs-Plug-in sinnvoll ist.
 title: Sccgetprojpath-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a08c09e1b04cf5e5f826520efcf64ead9113be
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844566"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220702"
 ---
 # <a name="sccgetprojpath-function"></a>Sccgetprojpath-Funktion
 Diese Funktion fordert den Benutzer zur Eingabe eines Projekt Pfads auf, der eine Zeichenfolge ist, die nur für das Quellcodeverwaltungs-Plug-in sinnvoll ist. Sie wird aufgerufen, wenn der Benutzer ist:
@@ -89,7 +90,7 @@ in Wenn dies der Wert ist `TRUE` , kann das Quellcodeverwaltungs-Plug-in die `lp
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Das Projekt wurde erfolgreich erstellt oder abgerufen.|
 |SCC_I_OPERATIONCANCELED|Der Vorgang wurde abgebrochen.|

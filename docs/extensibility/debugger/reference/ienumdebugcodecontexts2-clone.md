@@ -1,4 +1,5 @@
 ---
+description: Gibt eine Kopie der aktuellen Code Kontexte-Enumeration als separates Objekt zurück.
 title: 'IEnumDebugCodeContexts2:: Clone | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a877fcda76cca704e12d228cf4e51ab070aa5c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbbfe0436cbe9234d4e5b21a1de242ea823c0aa7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929510"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224966"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 Gibt eine Kopie der aktuellen Enumeration als ein separates Objekt zurück.

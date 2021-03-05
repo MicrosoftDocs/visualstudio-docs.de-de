@@ -1,4 +1,5 @@
 ---
+description: Enthält ein Array von-Objekten, die relevante Programme beschreiben.
 title: PROGRAM_NODE_ARRAY | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4803698aba910bc910fa36bf5c4f7e23ab82d247
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 282d96a221c0422da14427b71f1727c65b826fd7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912715"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222054"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
 Enthält ein Array von-Objekten, die relevante Programme beschreiben.
@@ -41,7 +42,7 @@ public struct tagPROGRAM_NODE_ARRAY {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
  `dwCount`\
  Anzahl der Objekte im `Members` Array.
 

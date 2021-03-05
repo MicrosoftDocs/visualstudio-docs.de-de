@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion benennt eine Datei in das Quell Code Verwaltungssystem um.
 title: Sccrename-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836747"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221339"
 ---
 # <a name="sccrename-function"></a>SccRename-Funktion
 Diese Funktion benennt eine Datei in das Quell Code Verwaltungssystem um.
@@ -53,7 +54,7 @@ in Der voll qualifizierte Dateiname der Datei, die umbenannt wird.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Der Umbenennungs Vorgang wurde erfolgreich abgeschlossen.|
 |SCC_E_PROJNOTOPEN|Das Projekt ist nicht unter Quell Code Verwaltung geöffnet.|

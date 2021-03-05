@@ -1,4 +1,5 @@
 ---
+description: Enthält Informationen zu einem Prozess.
 title: PROCESS_INFO | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76b8e36b6a6792b51552cb4203adebdc101cd808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5557e4171bdeb51ae1ac954870a85227a8c4c92
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963015"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222093"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 Enthält Informationen zu einem Prozess.
@@ -55,7 +56,7 @@ public struct PROCESS_INFO {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
  `Fields`\
  Eine Kombination von Flags aus der [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) Enumeration, die angeben, welche Felder ausgefüllt werden.
 

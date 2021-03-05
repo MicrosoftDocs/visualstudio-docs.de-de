@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion Ruft eine Vielzahl Benutzer spezifischer Optionen ab.
 title: Sccgetuseroption-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e4bc3e4bf6acef8ff8de1cdcecb2596dcf6d86e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c137630e4a29fc534e9bfced16cffe862e07a046
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844553"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220624"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption-Funktion
 Diese Funktion Ruft eine Vielzahl Benutzer spezifischer Optionen ab.
@@ -48,7 +49,7 @@ vorgenommen Wert, der Option zugeordnet ist.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Die Option wurde erfolgreich abgerufen.|
 |SCC_E_OPNOTSUPPORTED|Die Option wird nicht unterstützt.|
@@ -57,7 +58,7 @@ vorgenommen Wert, der Option zugeordnet ist.
 ## <a name="remarks"></a>Bemerkungen
  Die folgenden Optionen werden von diesem Befehl unterstützt:
 
-|Benutzer Option|Beschreibung|
+|Benutzer Option|BESCHREIBUNG|
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|Bestimmt, ob der Benutzer eine lokale Version der Dateien auschecken möchte. `lpVal` wird zugewiesen `SCC_USEROPT_COLV_YES` (Benutzer möchte lokale Dateien Auschecken) oder `SCC_USEROPT_COLV_NO` .|
 

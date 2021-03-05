@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur gibt Informationen zu einem Feldtyp an, der aus einem PDB-Symbol entnommen wurde.
 title: PDB_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df6a41801f4cce272d896776745ac0cc507d0e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced96c1241c64abc764a052046e5ecab1a986bdc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890018"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222132"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
@@ -44,7 +45,7 @@ public struct PDB_TYPE {
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 
 `ulAppDomainID`\
 Die ID der Anwendung, von der das Symbol stammt. Hiermit wird eine Instanz der Anwendung eindeutig identifiziert.
