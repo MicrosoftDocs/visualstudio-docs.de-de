@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle bietet Multithread-Debugunterstützung.
 title: IDebugEngineProgram2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f630614dbe49e87b5a9905ceabbf717269c98ea2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea46ccad8f357cb868a445a8836280abf7c224e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892605"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153377"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 Diese Schnittstelle bietet Multithread-Debugunterstützung.
@@ -46,7 +47,7 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Visual Studio ruft diese Schnittstelle als Reaktion auf ein [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) -Ereignis auf und legt den Status "nach Thread Schritt überwachen" und "Überwachung der Ausdrucks Auswertung auf Thread" des Programms fest. " [Beenden](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) " wird immer dann aufgerufen, wenn das Programm beendet werden soll. Diese Methode gibt dem Programm die Möglichkeit, alle Threads zu beenden.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

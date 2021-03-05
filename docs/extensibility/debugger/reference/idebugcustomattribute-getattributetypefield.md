@@ -1,4 +1,5 @@
 ---
+description: Ruft den Typ der benutzerdefinierten Attribut Klasse ab.
 title: 'Idebugcustomattribute:: getattributetypefield | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fa72b6dfc02f29e5efd8d3e04f98f078cba66a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9ea62b012cd58aac44e5a2d37d4dc6e3b35ca92
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928444"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154521"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 Ruft den Typ der benutzerdefinierten Attribut Klasse ab.

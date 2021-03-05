@@ -1,4 +1,5 @@
 ---
+description: Ruft das Feld ab, an das das benutzerdefinierte Attribut angefügt wird.
 title: 'Idebugcustomattribute:: gettientfield | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9845954a2be9ec57edb6ca555fb89a6ad20f7d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4af4569b64a41fc84a09c7e8f2ce0a8f6b42e86
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842471"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154508"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 Ruft das Feld ab, an das das benutzerdefinierte Attribut angefügt wird.

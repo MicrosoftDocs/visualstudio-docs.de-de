@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle wird verwendet, um Visual Studio über Änderungen am Quelldokument zu benachrichtigen, die von der Debug-Engine bereitgestellt werden.
 title: IDebugDocumentTextEvents2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bcbe6e44923172c3eac4da605848e972216837cc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904010"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154183"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Diese Schnittstelle wird verwendet, um Visual Studio über Änderungen am Quelldokument zu benachrichtigen, die von der Debug-Engine bereitgestellt werden.
@@ -37,7 +38,7 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IDebugDocumentTextEvents2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|Gibt an, dass das gesamte Dokument zerstört wurde.|
 |[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|Benachrichtigt das Debugpaket, dass Text in das Dokument eingefügt wurde.|
@@ -49,7 +50,7 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="remarks"></a>Bemerkungen
  Nur Debug-engines, die eigene Dokumente bereitstellen, nutzen die- `IDebugDocumentTextEvent2` Schnittstelle. Ein Beispiel hierfür wäre eine Skript-Debug-Engine. Beim Interpretieren von Skripts kann neuer Quellcode generiert werden, der nicht in einer Datenträger Datei vorhanden ist und nur der "de" bekannt ist.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop

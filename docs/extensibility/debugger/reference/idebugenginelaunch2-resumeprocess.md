@@ -1,4 +1,5 @@
 ---
+description: Nimmt die Prozess Ausführung wieder auf.
 title: 'IDebugEngineLaunch2:: resumeprocess | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cfd5e6c09c86a4c12c9fc8bbc3d0212887af279
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e868d81647e85e90728d0de73143a89fb8e0b0f0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892813"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153572"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 Nimmt die Prozess Ausführung wieder auf.

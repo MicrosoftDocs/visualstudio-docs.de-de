@@ -1,4 +1,5 @@
 ---
+description: Stellt eine einzelne Debug-Engine (de) dar, die das Debuggen eines oder mehrerer Module steuert.
 title: IDebugEngine3 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a985acc5a949ead841239d56c8b067967531fb1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d91098a1f0a7f2df579a347fccb01239fdfeebe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927053"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153668"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 Stellt eine einzelne Debug-Engine (de) dar, die das Debuggen eines oder mehrerer Module steuert.
@@ -37,7 +38,7 @@ IDebugEngine3 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  Zusätzlich zu den von [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)geerbten Methoden macht die- `IDebugEngine3` Schnittstelle die folgenden Methoden verfügbar.
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Legt den Pfad oder die Pfade fest, die von der de für die Suche nach Debugsymbolen verwendet werden.|
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Lädt die Symbole für alle Module, deren Symbole noch nicht geladen wurden.|
@@ -45,7 +46,7 @@ IDebugEngine3 : IDebugEngine2
 |[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Legt die de GUID aus den Metriken fest.|
 |[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Legen Sie alle aktuell ausstehenden Ausnahmen in einem angegebenen Zustand fest.|
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  Header: msdbg. h
 
  Namespace: Microsoft. VisualStudio. Debugger. Interop
