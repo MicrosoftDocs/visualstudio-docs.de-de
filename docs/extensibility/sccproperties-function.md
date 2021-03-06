@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion zeigt Quell Code Verwaltungs Eigenschaften für eine Datei oder ein Projekt an.
 title: Sccproperties-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68694388f49d59c7e8e872f0fc70994130e2990
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 410febfbbb79cb352b6247139a11b1c49f3cde9c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836773"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220533"
 ---
 # <a name="sccproperties-function"></a>SccProperties-Funktion
 Diese Funktion zeigt Quell Code Verwaltungs Eigenschaften für eine Datei oder ein Projekt an.
@@ -48,7 +49,7 @@ in Der voll qualifizierte Pfadname der Datei oder des Projekts.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Eigenschaften wurden erfolgreich angezeigt.|
 |SCC_I_RELOADFILE|Das Versionskontrollsystem hat die Dateieigenschaften geändert, sodass die IDE diese Datei erneut laden soll.|

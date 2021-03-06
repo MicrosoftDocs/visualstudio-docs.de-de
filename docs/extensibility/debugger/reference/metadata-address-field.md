@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur stellt die Adresse eines Felds einer Klasse oder Struktur dar.
 title: METADATA_ADDRESS_FIELD | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 686eeff2012c02442d166966fff32abc0b1cdf32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96171b41f8788da0772ac2657c9a10d84af96b94
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961975"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222418"
 ---
 # <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
@@ -40,7 +41,7 @@ public struct METADATA_ADDRESS_FIELD {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 
 `tokField`\
 Die ID des Feld Tokens.

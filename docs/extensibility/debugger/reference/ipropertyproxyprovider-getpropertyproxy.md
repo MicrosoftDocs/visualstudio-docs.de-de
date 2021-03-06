@@ -1,4 +1,5 @@
 ---
+description: Ruft die eigenschaftenproxyschnittstelle für die angegebene Proxy-ID ab.
 title: 'Ipropertyproxyprovider:: getpropertyproxy | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7efff35e46ed0849045cf6c743a5a26c3d86bcd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9212e9c7d0392bf9c4d6229ba76e40ea21f0686
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962144"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222587"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 Ruft die eigenschaftenproxyschnittstelle für die angegebene Proxy-ID ab.

@@ -1,4 +1,5 @@
 ---
+description: Gibt die gewünschten Eigenschaften an, die von einem Programmanbieter abgerufen werden sollen.
 title: PROVIDER_FLAGS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 849046b3a365f58785ea23c9801c567bf566ff39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8851dffa0de1155edf401c0d0b0feadda199a5e9
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922953"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222028"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
 Gibt die gewünschten Eigenschaften an, die von einem Programmanbieter abgerufen werden sollen.

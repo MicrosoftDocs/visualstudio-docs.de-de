@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion zeigt die Unterschiede zwischen dem aktuellen lokalen Verzeichnis auf dem Client Datenträger und dem entsprechenden Projekt unter Quell Code Verwaltung an.
 title: Sccdirdiff-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98a843c061941765404397186af74ab71923a9da
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929211"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221599"
 ---
 # <a name="sccdirdiff-function"></a>Sccdirdiff-Funktion
 Diese Funktion zeigt die Unterschiede zwischen dem aktuellen lokalen Verzeichnis auf dem Client Datenträger und dem entsprechenden Projekt unter Quell Code Verwaltung an.
@@ -58,7 +59,7 @@ in Plug-in-spezifische Optionen für die Quell Code Verwaltung.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Das Verzeichnis auf dem Datenträger ist mit dem Projekt in der Quell Code Verwaltung identisch.|
 |SCC_I_FILESDIFFER|Das Verzeichnis auf dem Datenträger unterscheidet sich von dem Projekt in der Quell Code Verwaltung.|

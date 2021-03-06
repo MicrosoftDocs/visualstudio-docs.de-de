@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle bietet die Möglichkeit, den Wert eines Objekts über eine typschnell Ansicht zu ändern.
 title: Ieevisualizerdataprovider | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726ae6c0f56f177a6baa6f463e843378fdc0acea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c2bea2a99b259ac255a4244501ee246fd83e8b5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890824"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222886"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -42,7 +43,7 @@ IEEVisualizerDataProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Methoden in der Vtable-Reihenfolge
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|Bestimmt, ob es möglich ist, das Objekt (und danach seinen Wert) zu aktualisieren, das diese Schnellansicht darstellt.|
 |[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|Erzwingt eine erneute Auswertung des-Objekts für diese Schnellansicht.|

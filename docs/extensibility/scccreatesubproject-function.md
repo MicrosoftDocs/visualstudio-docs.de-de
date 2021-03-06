@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion erstellt ein Unterprojekt mit dem angegebenen Namen unter einem vorhandenen übergeordneten Projekt, das durch das lpparentprojpath-Argument angegeben wird.
 title: Scckreatesubproject-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943126"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221612"
 ---
 # <a name="scccreatesubproject-function"></a>Scckreatesubproject-Funktion
 Diese Funktion erstellt ein Unterprojekt mit dem angegebenen Namen unter einem vorhandenen übergeordneten Projekt, das durch das-Argument angegeben wird `lpParentProjPath` .
@@ -68,7 +69,7 @@ in Der vorgeschlagene Unterprojekt Name (bis SCC_PRJPATH_SIZE, einschließlich d
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Das Unterprojekt wurde erfolgreich erstellt.|
 |SCC_E_INITIALIZEFAILED|Das übergeordnete Projekt konnte nicht initialisiert werden.|

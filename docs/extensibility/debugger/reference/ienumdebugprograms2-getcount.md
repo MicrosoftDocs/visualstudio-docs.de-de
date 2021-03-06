@@ -1,4 +1,5 @@
 ---
+description: Gibt die Anzahl der Elemente in der Programme-Enumeration zurück.
 title: 'IEnumDebugPrograms2:: GetCount | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d70e40416c83f6013f7735963f106d0bcb573f42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f0d6fb47478a75e9636f7da3f4097c01e7bd378b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925020"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224368"
 ---
 # <a name="ienumdebugprograms2getcount"></a>IEnumDebugPrograms2::GetCount
 Gibt die Anzahl der Elemente in der-Enumeration zurück.

@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur stellt die Adresse einer lokalen Variablen innerhalb eines Bereichs dar (in der Regel eine Funktion oder Methode).
 title: METADATA_ADDRESS_LOCAL | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d5d4e9ee9808c25bb0df570ac451c061067904c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fba3b02fde05655413f5826fa2a32645b5dc95f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938757"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222405"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
@@ -44,7 +45,7 @@ public struct METADATA_ADDRESS_LOCAL {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 
 `tokMethod`\
 Die ID der Methode oder Funktion, zu der die lokale Variable gehört.

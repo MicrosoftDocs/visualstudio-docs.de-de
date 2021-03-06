@@ -1,4 +1,5 @@
 ---
+description: Wenn eine Liste lokaler Dateien angegeben ist, bestimmt diese Funktion, welche Dateien sich von den entsprechenden Versionen in der Quell Code Verwaltungs Datenbank unterscheiden.
 title: Sccenumchangedfiles-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e871f244082374bcf24ea49062cdcefd6e08d888
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9349172ac60f1e02f82327424cdbc3a3b1d4f865
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942996"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221534"
 ---
 # <a name="sccenumchangedfiles-function"></a>Sccenumchangedfiles-Funktion
 Wenn eine Liste lokaler Dateien angegeben ist, bestimmt diese Funktion, welche Dateien sich von den entsprechenden Versionen in der Quell Code Verwaltungs Datenbank unterscheiden.
@@ -58,7 +59,7 @@ in Array der lokalen Dateinamen, die überprüft werden sollen.
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Operation erfolgreich abgeschlossen.|
 |SCC_UNSPECIFIEDERROR|Allgemeiner Fehler.|
