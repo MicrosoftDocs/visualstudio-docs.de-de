@@ -1,4 +1,5 @@
 ---
+description: Diese Methode überspringt die angegebene Anzahl von Elementen in der Enumeration der Adressen.
 title: 'Ienumdebug-Adressen:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0921d2b65aedb94c15c66ad878aa66bff73dbe2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ae1b23c28f98d90649e701b7ff96b2394a9894b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923047"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222652"
 ---
 # <a name="ienumdebugaddressesskip"></a>IEnumDebugAddresses::Skip
 Diese Methode überspringt die angegebene Anzahl von Elementen.

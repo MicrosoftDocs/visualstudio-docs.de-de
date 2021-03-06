@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur stellt eine native Adresse dar.
 title: NATIVE_ADDRESS | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3f655bf3def231790cf77f007575301f794dc02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e243982eefbfbb8aab5797bf40031aa5d8aca4c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911742"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222184"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 
@@ -40,7 +41,7 @@ public struct NATIVE_ADDRESS {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
 
 `unknown`\
 Die native Adresse (die Bedeutung von hängt von der Laufzeit und dem Betriebssystem ab).

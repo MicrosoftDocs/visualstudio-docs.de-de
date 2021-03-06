@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion beendet einen Batch von Quell Code Verwaltungs Vorgängen.
 title: Sccendbatch-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85d49fcd9920c442aa1736f1fb0f3e46ccd4eba0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4ea8ec19fcfe55da0666383408c2addbd42f2e6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943048"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221573"
 ---
 # <a name="sccendbatch-function"></a>Sccendbatch-Funktion
 Diese Funktion beendet einen Batch von Quell Code Verwaltungs Vorgängen. Diese Batches dürfen nicht eingebettet werden.
@@ -34,7 +35,7 @@ SCCRTN SccEndBatch(void);
 ## <a name="return-value"></a>Rückgabewert
  Es wird erwartet, dass die Plug-in-Implementierung der Quell Code Verwaltung diese Funktion einen der folgenden Werte zurückgibt:
 
-|Wert|Beschreibung|
+|Wert|BESCHREIBUNG|
 |-----------|-----------------|
 |SCC_OK|Der Batch der Vorgänge wurde erfolgreich abgeschlossen.|
 |SCC_E_UNKNOWNERROR|Nicht spezifischer Fehler.|

@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur stellt einen Parameter einer Methode oder Funktion dar.
 title: METADATA_ADDRESS_PARAM | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbb6e709ab1b6ee92ad9a27ed3061642665c7f39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3317981def12a72cf98dad850d5509bd3e64520a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938719"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222379"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 Diese Struktur stellt einen Parameter einer Methode oder Funktion dar.
@@ -43,7 +44,7 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
  `tokMethod`\
  Die ID der Methode, zu der der Parameter gehört.
 

@@ -1,4 +1,5 @@
 ---
+description: Diese Funktion gibt zusätzliche Funktionen zurück, die vom Quellcodeverwaltungs-Plug-in unterstützt werden.
 title: Sccgetextendedfunctions-Funktion | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1256c9110fe538b4a5d52b165c71216b6537f2c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1409753559088c0f8129ebacd17387bfb7d111e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958413"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220780"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Sccgetextendedfunctions-Funktion
 Diese Funktion gibt zusätzliche Funktionen zurück, die vom Quellcodeverwaltungs-Plug-in unterstützt werden.

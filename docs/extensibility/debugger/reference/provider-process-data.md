@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur enthält Informationen zu Prozessen, die auf einem Computer ausgeführt werden.
 title: PROVIDER_PROCESS_DATA | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5845ce7f512a24d341f73afa9f9905339dda87cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f49ef1c2990fe578738356cbe5db19cbc1c159ab
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922965"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221989"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 Diese Struktur enthält Informationen zu Prozessen, die auf einem Computer ausgeführt werden.
@@ -43,7 +44,7 @@ public struct PROVIDER_PROCESS_DATA {
 }
 ```
 
-## <a name="members"></a>Member
+## <a name="members"></a>Members
  `Fields`\
  Eine Kombination von Flags aus der [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) Enumeration, die angibt, welche Felder ausgefüllt werden.
 

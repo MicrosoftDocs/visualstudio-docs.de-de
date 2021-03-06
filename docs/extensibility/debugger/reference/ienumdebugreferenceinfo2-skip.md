@@ -1,4 +1,5 @@
 ---
+description: Überspringt die angegebene Anzahl von DEBUG_REFERENCE_INFO Elementen.
 title: 'IEnumDebugReferenceInfo2:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9d2d3c5ebcd110d9bc6997b067e252a7efb8c22
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a263c9c3cbb08620c90905d24b61da42f542b9bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954708"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224160"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
 Überspringt die angegebene Anzahl von Elementen.

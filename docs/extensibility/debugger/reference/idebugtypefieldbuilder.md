@@ -1,4 +1,5 @@
 ---
+description: Stellt die Fähigkeit dar, ein Feld zu erstellen, das einen Typ darstellt.
 title: Idebugtypefieldbuilder | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a94f3f88d85d1e74ce7b1d67e1ef3d44546132
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1bc4f58470792cac8bdb68ede4ddf37567bac208
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965693"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223107"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 Stellt die Fähigkeit dar, ein Feld zu erstellen, das einen Typ darstellt.

@@ -1,4 +1,5 @@
 ---
+description: Diese Methode überspringt die angegebene Anzahl von idebugobject-Elementen.
 title: 'Ienumdebugobjects:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b413ee0e7679d9f13af6392760ed523b2c9f706
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 962083242b5b178ddf39e21328917d09dc0ed09a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957087"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224641"
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
 Diese Methode überspringt die angegebene Anzahl von Elementen.

@@ -1,4 +1,5 @@
 ---
+description: Setzt die Enumeration der portsuppliers auf das erste Element zurück.
 title: 'IEnumDebugPortSuppliers2:: Reset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8bcf4575282e845e96085b23b283e99c22a81039
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d39d2e26de04dfb3417f4ebd673634d22194519
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954747"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224498"
 ---
 # <a name="ienumdebugportsuppliers2reset"></a>IEnumDebugPortSuppliers2::Reset
 Setzt die Enumeration auf das erste Element zurück.
