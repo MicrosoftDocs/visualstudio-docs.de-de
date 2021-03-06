@@ -1,4 +1,5 @@
 ---
+description: Gibt die Anzahl der Elemente in der Enumeration der gebundenen Haltepunkte zurück.
 title: 'IEnumDebugBoundBreakpoints2:: GetCount | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 059ac49ebec0d8a7ef1a9aa54dab085a2cbf525c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30467eaf8c40cdfa100585893a513fd5d856601e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875691"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225018"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
 Gibt die Anzahl der Elemente in der-Enumeration zurück.

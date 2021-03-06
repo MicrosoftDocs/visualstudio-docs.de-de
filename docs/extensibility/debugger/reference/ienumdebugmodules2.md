@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle zählt eine Liste von Modulen auf.
 title: IEnumDebugModules2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfcd594ab8764cedb8cbe2ea312675f884ae2338
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33853804078d5f32aba6fda6dac409cf2a24de0a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957152"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224758"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 Diese Schnittstelle zählt eine Liste von Modulen auf.

@@ -1,4 +1,5 @@
 ---
+description: Überspringt die angegebene Anzahl von Elementen in der Fehler breakpointenumeration.
 title: 'IEnumDebugErrorBreakpoints2:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0d7bf485886dc85ca0546cea6c3f90ffa14724d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba483127602db54a403b7666e5869bd4d1f02d86
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919825"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226669"
 ---
 # <a name="ienumdebugerrorbreakpoints2skip"></a>IEnumDebugErrorBreakpoints2::Skip
 Überspringt die angegebene Anzahl von Elementen.
