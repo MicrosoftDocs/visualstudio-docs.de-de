@@ -1,4 +1,5 @@
 ---
+description: Diese Struktur gibt Informationen zu einem Feldtyp an, der aus Metadaten entnommen wurde.
 title: METADATA_TYPE | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d41716dcbc1aefba52f6507bb624973f36025af0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8f0c8341213dfbe15dcf9a6f5a5fc421c0ebab3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938731"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225486"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 Diese Struktur gibt Informationen zu einem Feldtyp an, der aus Metadaten entnommen wurde.

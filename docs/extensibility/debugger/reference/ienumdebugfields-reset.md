@@ -1,4 +1,5 @@
 ---
+description: Diese Methode setzt die Fields-Enumeration auf das erste Element zurück.
 title: 'Ienumentbugfields:: Reset | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cbe3ecaf681a0fb88dab46b9c2dac2110b7beb4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fedc24c3f51a2a4cbdfae9464f13791f9d8ec1d1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919686"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226604"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Diese Methode setzt die Enumeration auf das erste Element zurück.

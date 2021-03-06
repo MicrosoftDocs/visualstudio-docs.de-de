@@ -1,4 +1,5 @@
 ---
+description: Diese Schnittstelle listet die gebundenen Haltepunkte auf, die einem ausstehenden Haltepunkt oder Haltepunkt gebundenen Ereignis zugeordnet sind.
 title: IEnumDebugBoundBreakpoints2 | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d52aad69397be315cf9c06b5f49a2c55d2fce28
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e861465e2abf18a42af75d420dc58075d19ff253
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929523"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224992"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 Diese Schnittstelle listet die gebundenen Haltepunkte auf, die einem ausstehenden Haltepunkt oder Haltepunkt gebundenen Ereignis zugeordnet sind.
@@ -43,7 +44,7 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
  In der folgenden Tabelle sind die Methoden von aufgeführt `IEnumDebugBoundBreakpoints2` .
 
-|Methode|Beschreibung|
+|Methode|BESCHREIBUNG|
 |------------|-----------------|
 |[Nächste](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|Ruft eine angegebene Anzahl gebundener Haltepunkte in einer enumerationssequenz ab.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|Überspringt eine angegebene Anzahl gebundener Haltepunkte in einer enumerationssequenz.|

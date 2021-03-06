@@ -1,4 +1,5 @@
 ---
+description: Diese Methode überspringt die angegebene Anzahl von Elementen in der Fields-Enumeration.
 title: 'Ienumentbugfields:: Skip | Microsoft-Dokumentation'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6cb65a0ba084f1c9003e8aebe406a77686edbb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54241fe231af6f9ba73cafe6d351fee60c9b4b51
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932781"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226578"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 Diese Methode überspringt die angegebene Anzahl von Elementen.
