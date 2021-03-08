@@ -980,7 +980,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Produkte und Dienste von Microsoft für Barrierefreiheit
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Referenz
+- name: Verweis
   items:
     - name: Tastenkombinationen
       items:
@@ -1070,6 +1070,8 @@
       items:
         - name: Aufrufhierarchie
           href: ide/reference/call-hierarchy.md
+        - name: Eingabeaufforderung und PowerShell für Entwickler
+          href: ide/reference/command-prompt-powershell.md
         - name: Vorschau der Änderungen
           href: ide/preview-changes.md
         - name: 'Toolboxelemente auswählen, WPF-Komponenten'
