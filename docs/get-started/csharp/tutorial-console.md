@@ -2,7 +2,7 @@
 title: 'Tutorial: Erstellen einer einfachen C#-Konsolen-App'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie eine C#-Konsolen-App in Visual Studio erstellen.
 ms.custom: seodec18, get-started
-ms.date: 02/18/2020
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40e3d82c21e88b2d2144abf5902858eda1b1c293
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909353"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682823"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Erstellen einer einfachen C#-Konsolen-App in Visual Studio
 
@@ -83,14 +83,14 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
 
    ![Anzeigen des Fensters „Neues Projekt erstellen“](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann aus der Liste der Plattformen **Windows** aus. 
+1. Wählen Sie im Fenster **Neues Projekt erstellen** in der Liste der Sprachen **C#** aus. Wählen Sie anschließend in der Liste der Plattformen **Windows** und in der Liste der Projekttypen **Konsole** aus. 
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** und dann **Weiter** aus.
+   Nachdem Sie die Sprach-, Plattform- und Projekttypfilter angewendet haben, wählen Sie die Vorlage **Konsolenanwendung** und dann **Weiter** aus.
 
-   ![Auswählen der C#-Vorlage für die Konsolen-App (.NET Framework)](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+    :::image type="content" source="./media/vs-2019/csharp-create-new-project-console-net-core.png" alt-text="Auswählen der C#-Vorlage für die Konsolen-App (.NET Framework)":::
 
    > [!NOTE]
-   > Wenn Sie die **Konsolen-App (.NET Core)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
+   > Wenn die Vorlage **Konsolenanwendung** nicht angezeigt wird, können Sie sie im Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
    >
    > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -100,12 +100,16 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***Calculator* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***Calculator* ein. Klicken Sie dann auf **Weiter**.
 
-   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „Calculator“](./media/vs-2019/csharp-name-your-calculator-project.png)
+    :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „Calculator“":::
+   
+1. Im Fenster **Zusätzliche Informationen** sollte **.NET Core 3.1** bereits als Zielframework ausgewählt sein. Falls nicht, wählen Sie **.NET Core 3.1** aus. Wählen Sie anschließend **Erstellen** aus.
+
+    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="Sicherstellen, dass im Fenster „Zusätzliche Informationen“ .NET Core 3.1 ausgewählt ist":::
 
    Visual Studio öffnet Ihr neues Projekt, das den Standardcode „Hallo Welt“ enthält.
-   
+
 ::: moniker-end
 
 ## <a name="create-the-app"></a>Erstellen der App

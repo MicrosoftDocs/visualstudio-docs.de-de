@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3ce27c692e96423bbec89914caeab3afd3e62ba4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947918"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684163"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Remotedebuggen von ASP.NET Core in IIS in Azure in Visual Studio
 
@@ -58,10 +58,12 @@ Das Debuggen zwischen zwei über einen Proxy verbundenen Computern wird nicht un
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Erstellen der ASP.NET Core-Anwendung auf dem Visual Studio-Computer
 
-1. Erstellen Sie eine neue ASP.NET Core-Anwendung.
+1. Erstellen Sie eine neue ASP.NET Core-Webanwendung.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie in Visual Studio 2019 **STRG+Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie **Vorlagen** und dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Nennen Sie das Projekt im Dialogfeld, das nun geöffnet wird, **MyASPApp**, und wählen Sie dann **Erstellen** aus. Wählen Sie dann die Option **Webanwendung (Model-View-Controller)** aus, und klicken Sie auf **Erstellen**.
+    Wählen Sie im Startfenster von Visual Studio 2019 die Option **Neues Projekt erstellen** aus. Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**. Geben Sie **Web-App** ein, wählen Sie als Sprache **C#** und anschließend **ASP.NET Core-Webanwendung (Model View Controller)** aus, und klicken Sie dann auf **Weiter**. Geben Sie dem Projekt im nächsten Bildschirm den Namen **MyASPApp**, und klicken Sie dann auf **Weiter**.
+
+    Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Wählen Sie in Visual Studio 2017 **Datei > Neu > Projekt** und dann **Visual C# > Web > ASP.NET Core-Webanwendung** aus. Wählen Sie im Abschnitt zu den ASP.NET Core-Vorlagen **Webanwendung (Model-View-Controller)** aus. Stellen Sie sicher, dass ASP.NET Core 2.1 ausgewählt ist, dass **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierungs** auf **Keine Authentifizierungs** festgelegt ist. Geben Sie dem Projekt den Namen **MyASPApp**.

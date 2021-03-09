@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49560ac3293c416719b9addc1cbadf1b0c04f438
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 626f86c2a1d370a7f31e47f86d8adafc3f905672
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866085"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684234"
 ---
 # <a name="assertions-in-managed-code"></a>Assertionen in verwaltetem Code
 Mithilfe einer Assertion oder einer `Assert`-Anweisung wird eine Bedingung überprüft, die Sie als Argument der `Assert`-Anweisung angeben. Wenn die Bedingung als "Tue" ausgewertet wird, erfolgt keine Aktion. Wenn die Bedingung auf "False" ausgewertet wird, schlägt die Assertion fehl. Wenn das Programm mit einem Debugbuild ausgeführt wird, wechselt es in den Unterbrechungsmodus.
@@ -173,7 +173,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );
 ```
 
- Beim zweiten und dritten Argument (sofern vorhanden) muss es sich um Zeichenfolgen handeln. Wenn Sie die <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>- oder <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode mit zwei oder drei Argumenten aufrufen, ist das erste Argument eine Bedingung. Die Methode überprüft die Bedingung und gibt die als zweites und drittes Argument übergebenen Zeichenfolgen zurück, wenn das Ergebnis "False" lautet. Im folgenden Beispiel wird die Verwendung der <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName>- und <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>-Methoden mit zwei Argumenten veranschaulicht:
+  Beim zweiten und dritten Argument (sofern vorhanden) muss es sich um Zeichenfolgen handeln. Wenn Sie die <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>- oder <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode mit zwei oder drei Argumenten aufrufen, ist das erste Argument eine Bedingung. Die Methode überprüft die Bedingung und gibt die als zweites und drittes Argument übergebenen Zeichenfolgen zurück, wenn das Ergebnis "False" lautet. Im folgenden Beispiel wird die Verwendung der <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName>- und <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>-Methoden mit zwei Argumenten veranschaulicht:
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space")
@@ -185,7 +185,7 @@ Debug.Assert ( stacksize > 0, "Out of stack space" );
 Trace.Assert ( stacksize > 0, "Out of stack space" );
 ```
 
- Im folgenden Beispiel werden die <xref:System.Diagnostics.Debug.Assert%2A>- und <xref:System.Diagnostics.Trace.Assert%2A>-Methoden veranschaulicht:
+  Im folgenden Beispiel wird die Verwendung der <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName>- und <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName>-Methoden mit drei Argumenten veranschaulicht:
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space. Bytes left:" , Format(size, "G"))

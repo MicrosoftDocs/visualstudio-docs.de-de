@@ -2,7 +2,7 @@
 title: 'Tutorial: Erste Schritte mit Visual Basic'
 description: Erfahren Sie anhand einer exemplarischen Vorgehensweise, wie Sie Visual Basic-Konsolenanwendungen in Visual Studio erstellen.
 ms.custom: seodec18, get-started
-ms.date: 09/11/2019
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915033"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682611"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Erste Schritte mit Visual Basic in Visual Studio
 
@@ -84,14 +84,14 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
 
    ![Anzeigen des Fensters „Neues Projekt erstellen“](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **Visual Basic** und dann aus der Liste der Plattformen **Windows** aus. 
+1. Wählen Sie im Fenster **Neues Projekt erstellen** in der Liste der Sprachen **Visual Basic** aus. Wählen Sie anschließend in der Liste der Plattformen **Windows** und in der Liste der Projekttypen **Konsole** aus.
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** und dann **Weiter** aus.
+   Nachdem Sie die Sprach-, Plattform- und Projekttypfilter angewendet haben, wählen Sie die Vorlage **Konsolenanwendung** und dann **Weiter** aus.
 
-   ![Auswählen der Visual Basic-Vorlage für die Konsolen-App (.NET Framework)](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="Auswählen der Visual Basic-Vorlage für die Konsolenanwendung":::
 
    > [!NOTE]
-   > Wenn Sie die **Konsolen-App (.NET Core)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
+   > Wenn die Vorlage **Konsolenanwendung** nicht angezeigt wird, können Sie sie im Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
    >
    > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -101,9 +101,13 @@ Wenn Ihnen die Projektvorlage **Console App (.NET Core)** (Konsolen-App (.NET Co
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***WhatIsYourName* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***WhatIsYourName* ein. Klicken Sie dann auf **Weiter**.
 
-   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „WhatIsYourName“](./media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „WhatIsYourName“":::
+
+1. Im Fenster **Zusätzliche Informationen** sollte **.NET Core 3.1** bereits als Zielframework ausgewählt sein. Falls nicht, wählen Sie **.NET Core 3.1** aus. Wählen Sie anschließend **Erstellen** aus.
+
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="Sicherstellen, dass im Fenster „Zusätzliche Informationen“ .NET Core 3.1 ausgewählt ist":::
 
    Visual Studio öffnet Ihr neues Projekt.
 
@@ -208,11 +212,13 @@ Erstellen wir eine App, die Sie nach Ihrem Namen fragt und ihn anschließend zus
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus. 
 
-1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **Visual Basic** und dann aus der Liste der Plattformen **Windows** aus. 
+1. Wählen Sie im Fenster **Neues Projekt erstellen** in der Liste der Sprachen **Visual Basic** aus. Wählen Sie anschließend in der Liste der Plattformen **Windows** und in der Liste der Projekttypen **Konsole** aus.
 
-1. Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** und dann **Weiter** aus.
+1. Nachdem Sie die Sprach-, Plattform- und Projekttypfilter angewendet haben, wählen Sie die Vorlage **Konsolenanwendung** und dann **Weiter** aus.
 
-   Geben Sie anschließend *CalculateThis* im Feld **Projektname** im Fenster **Neues Projekt konfigurieren** ein. Wählen Sie als Nächstes **Erstellen** aus.
+   Geben Sie anschließend *CalculateThis* im Feld **Projektname** im Fenster **Neues Projekt konfigurieren** ein. Klicken Sie dann auf **Weiter**.
+
+1. Im Fenster **Zusätzliche Informationen** sollte **.NET Core 3.1** bereits als Zielframework ausgewählt sein. Falls nicht, wählen Sie **.NET Core 3.1** aus. Wählen Sie anschließend **Erstellen** aus.
 
 1. Geben Sie zwischen den Zeilen `Module Program` und `End Module` den folgenden Code ein:
 
@@ -255,7 +261,7 @@ Visual Studio ist eine integrierte Zusammenstellung von Entwicklertools, die die
 
 ### <a name="what-is-a-console-app"></a>Was ist eine Konsolen-App?
 
-Eine Konsolen-App nimmt eine Eingabe und zeigt die Ausgabe in einem Befehlszeilenfenster (Konsole) an.
+Eine Konsolenanwendung akzeptiert eine Eingabe und zeigt eine Ausgabe in einem Befehlszeilenfenster, das auch als Konsole bezeichnet wird.
 
 ### <a name="what-is-net-core"></a>Was ist .NET Core?
 

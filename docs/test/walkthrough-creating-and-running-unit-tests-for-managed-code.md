@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6ab205b7f651f8bb5954bee4998602c79fd78e7
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948009"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683929"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -55,9 +55,14 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Core)** , und klicken Sie dann auf **Weiter**.
+3. Wählen Sie die C#-Projektvorlage **Konsolen-App** für .NET Core aus, und klicken Sie dann auf **Weiter**.
 
-4. Benennen Sie das Projekt **Bank**, und klicken Sie dann auf **Erstellen**.
+   > [!NOTE]
+   > Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, können Sie sie im Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus. Wählen Sie anschließend im Visual Studio-Installer die Workload **Plattformübergreifende .NET Core-Entwicklung** aus.
+
+4. Geben Sie dem Projekt den Namen **Bank**, und klicken Sie dann auf **Weiter**.
+
+   Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    Das Projekt „Bank“ wird erstellt und im **Projektmappen-Explorer** angezeigt, und der Code-Editor mit der Datei *Program.cs* wird geöffnet.
 
@@ -163,11 +168,14 @@ Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in die
 
 ::: moniker range=">=vs-2019"
 
-2. Wählen Sie die C#-Projektvorlage **MSTest Test Project (.NET Core)** aus, und klicken Sie dann auf **Weiter**.
+2. Geben Sie im Suchfeld **Komponententest** ein, wählen Sie als Sprache **C#** und dann die C#-Vorlage **Komponententestprojekt** für .NET Core aus, und klicken Sie anschließend auf **Weiter**.
 
-3. Geben Sie dem Projekt den Namen **ToDoApi**.
+   > [!NOTE]
+   > In Visual Studio 2019, Version 16.9 wurde der Name der MSTest-Projektvorlage von **MSTest-Komponententestprojekt (.NET Core)** in **Komponententestprojekt** geändert.
 
-4. Klicken Sie auf **Erstellen**.
+3. Geben Sie dem Projekt den Namen **BankTests**, und klicken Sie auf **Weiter**.
+
+4. Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    Das Projekt **BankTests** wird der Projektmappe **Bank** hinzugefügt.
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838733"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682601"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Einführung in Projekte und Projektmappen
 
@@ -189,9 +189,14 @@ Fügen Sie Ihrer Projektmappe einen Komponententest hinzu. Beginnen Sie diesmal 
 
 2. Geben Sie im Dialogfeld **Neues Projekt hinzufügen** oben in das Suchfeld den Text **Komponententest** ein, und klicken Sie dann unter **Sprache** auf **C#**.
 
-3. Wählen Sie die Projektvorlage **MSTest Test Project (.NET Core)** (MSTest-Testprojekt (.NET Core)), und klicken Sie dann auf **Weiter**.
+3. Wählen Sie die Projektvorlage **Komponententestprojekt** für .NET Core aus, und klicken Sie auf **Weiter**.
 
-4. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf **Erstellen**.
+   > [!NOTE]
+   > In Visual Studio 2019, Version 16.9 wurde der Name der MSTest-Projektvorlage von **MSTest-Komponententestprojekt (.NET Core)** in **Komponententestprojekt** geändert. In diesem Update wurden verschiedene Schritte in der Projekterstellung geändert.
+
+4. Geben Sie dem Projekt den Namen **QuickTest**, und klicken Sie anschließend auf **Weiter**.
+
+5. Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    Daraufhin wird dem **Projektmappen-Explorer** ein zweites Projekt hinzugefügt, und im Editor wird eine Datei mit dem Namen *UnitTest1.cs* geöffnet.
 

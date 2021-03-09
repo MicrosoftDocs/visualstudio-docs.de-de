@@ -1,17 +1,17 @@
 ---
-ms.date: 09/22/2020
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924997"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750359"
 ---
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und anschließend eine App zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Compiler, Codevervollständigungstools, grafische Designer und viele andere Features zur Erleichterung der Softwareentwicklung.
 
@@ -217,7 +217,7 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Führen Sie die App erneut aus, indem Sie **Debuggen** > **Ohne Debuggen starten** auswählen oder **STRG**+**F5** drücken.
+1. Führen Sie die App noch mal aus, indem Sie auf **Debuggen** > **Ohne Debuggen starten** klicken oder **STRG**+**F5** drücken.
 
    Visual Studio erstellt die App neu, und Sie werden im nun geöffneten Konsolenfenster zur Eingabe Ihres Namens aufgefordert.
 
@@ -237,17 +237,23 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
 1. Wählen Sie **Neues Projekt erstellen** aus.
 
-   ![„Neues Projekt erstellen“ im Startfenster von Visual Studio](../media/vs-2019/start-window-create-new-project.png)
+    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Screenshot: Fenster „Neues Projekt erstellen“ in Visual Studio 2019":::
 
-   Das Fenster **Neues Projekt erstellen** wird geöffnet und zeigt verschiedene *Vorlagen* für Projekte an. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind.
+   Das Fenster **Neues Projekt erstellen** wird geöffnet und zeigt verschiedene *Vorlagen* für Projekte an. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp benötigt werden.
 
-1. Geben Sie **.NET Core Konsole** in das Suchfeld ein, um die gewünschte Vorlage zu finden. Die Liste mit den verfügbaren Vorlagen wird automatisch nach den eingegebenen Schlüsselwörtern gefiltert. Sie können die Vorlagenergebnisse noch weiter filtern, indem Sie in der Dropdownliste **Sprache** die Option **C#** auswählen. Wählen Sie die Vorlage **Konsolen-App (.NET Core)** und anschließend **Weiter** aus.
+1. Geben Sie **.NET Core Konsole** in das Suchfeld ein, um die gewünschte Vorlage zu finden. Die Liste mit den verfügbaren Vorlagen wird automatisch nach den eingegebenen Schlüsselwörtern gefiltert. Sie können die Vorlagenergebnisse weiter filtern, indem Sie in der Dropdownliste **Alle Sprachen** die Einstellung **C#** , in der Liste **Alle Plattformen** die Einstellung **Windows** und in der Liste **Alle Projekttypen** die Einstellung **Konsole** auswählen.
 
-    ![Erstellen eines neuen Projekts in Visual Studio](../media/vs-2019/create-new-project.png)
+    Wählen Sie die Vorlage **Konsolenanwendung** aus, und klicken Sie anschließend auf **Weiter**.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** die Zeichenfolge **HelloWorld** ein, ändern Sie optional das Verzeichnis für Ihre Projektdateien, und wählen Sie anschließend **Erstellen** aus.
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Screenshot: Fenster „Neues Projekt erstellen“ in Visual Studio 2019 zur Auswahl der gewünschten Vorlage":::
 
-   ![Konfigurieren eines neuen Projekts in Visual Studio](../media/vs-2019/configure-new-project.png)
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** die Zeichenfolge **HelloWorld** ein, ändern Sie optional das Verzeichnis für Ihre Projektdateien (das standardmäßige Gebietsschema lautet `C:\Users\<name>\source\repos`), und klicken Sie dann auf **Weiter**.
+
+    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Screenshot: Fenster „Neues Projekt konfigurieren“ in Visual Studio 2019 zur Eingabe des Projektnamens":::
+
+1. Vergewissern Sie sich, dass im Fenster **Zusätzliche Informationen** im Dropdownmenü **Zielframework** die Einstellung **.NET Core 3.1** angezeigt wird, und klicken Sie dann auf **Erstellen**.
+
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Screenshot: Fenster „Zusätzliche Informationen“ in Visual Studio 2019 zur Auswahl der gewünschten .NET Core-Frameworkversion":::
 
    Visual Studio erstellt daraufhin das Projekt. Die Vorlage erstellt eine einfache „Hello World“-Anwendung, mit der die <xref:System.Console.WriteLine?displayProperty=nameWithType>-Methode aufgerufen wird, um die Literalzeichenfolge „Hello World!“ im Konsolenfenster (Programmausgabe).
 

@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943730"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683954"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Exemplarische Vorgehensweise: Testgesteuerte Entwicklung mit dem Test-Explorer
 
@@ -26,7 +26,11 @@ In dieser exemplarische Vorgehensweise wird veranschaulicht, wie eine getestete 
 
 1. Erstellen Sie ein C#-Projekt für eine **Klassenbibliothek (.NET Standard)**. Dieses Projekt enthält den Code, den Sie testen möchten. Geben Sie dem Projekt den Namen **MyMath**.
 
-2. Fügen Sie in derselben Projektmappe ein neues **MSTest-Testprojekt (.NET Core)** hinzu. Geben Sie dem Testprojekt den Namen **MathTests**.
+2. Fügen Sie in derselben Projektmappe ein neues MSTest-Testprojekt hinzu.
+
+   In Visual Studio 2019, Version 16.9 wurde der Name der MSTest-Projektvorlage von **MSTest-Testprojekt (.NET Core)** in **Komponententestprojekt** geändert.
+
+   Geben Sie dem Testprojekt den Namen **MathTests**.
 
    ![Neue Code- und Testprojekte](../test/media/test-driven-development-ide.png)
 

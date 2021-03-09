@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbde477e076203625e35ebf0109ed344679563f8
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925386"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683312"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen einer Multithread-App mithilfe des Fensters „Threads“ (C#, Visual Basic, C++)
 
@@ -44,12 +44,14 @@ Erstellen Sie das folgende Multithread-App-Projekt für die Verwendung in diesem
 
    Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** oder **C++** und dann in der Liste der Plattformen **Windows** aus. 
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** oder für C++ **Konsolen-App** aus, und klicken Sie dann auf **Weiter**.
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie **Konsolen-App** für .NET Core oder für C++ und dann **Weiter** aus.
 
    > [!NOTE]
-   > Wenn die richtige Vorlage nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+   > Wenn die richtige Vorlage nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** oder **Desktopentwicklung mit C++** aus, und klicken Sie dann auf **Anpassen**.
 
-   Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *MyThreadWalkthroughApp* ein. Wählen Sie anschließend **Erstellen** aus.
+   Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *MyThreadWalkthroughApp* ein. Klicken Sie anschließend je nach verfügbarer Option entweder auf **Weiter** oder auf **Erstellen**.
+
+   Wählen Sie für .NET Core entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -58,7 +60,7 @@ Erstellen Sie das folgende Multithread-App-Projekt für die Verwendung in diesem
    - Wählen Sie für eine C#-App unter **Visual C#** die Option **Windows-Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus.
    - Klicken Sie für eine C++-App unter **Visual C++** auf **Windows-Desktop**, und wählen Sie dann im mittleren Bereich **Windows-Konsolenanwendung** aus.
 
-   Wenn die Projektvorlage **Konsolen-App (.NET Core)** oder für C++ **Konsolen-App (.NET Framework)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen...** , um den Visual Studio-Installer zu öffnen. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+   Wenn die Projektvorlage **Konsolen-App (.NET Framework)** oder für C++ die Projektvorlage **Konsolen-App** nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen**, um den Visual Studio-Installer zu öffnen. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
 
    Geben Sie dann einen Namen wie *MyThreadWalkthroughApp* ein, und klicken Sie auf **OK**.
 
@@ -147,7 +149,7 @@ Wählen Sie ein Flagsymbol aus, um den Threadzustand je nach aktuellem Status in
 
 Sie können auch mit der rechten Maustaste auf eine Zeile klicken und **Kennzeichnen**, **Kennzeichnung aufheben** oder **Kennzeichnung aller Threads aufheben** im Kontextmenü auswählen.
 
-Die Symbolleiste des Fensters **Threads** weist auch eine Schaltfläche **Nur gekennzeichnete Threads anzeigen** auf, bei der es sich um das rechte der beiden Flagsymbole handelt. Sie funktioniert genauso wie die Schaltfläche auf der Symbolleiste **Debugspeicherort**, und beide Schaltflächen steuern die Anzeige an beiden Speicherorten.
+Die Symbolleiste des Fensters **Threads** umfasst außerdem eine Schaltfläche **Nur gekennzeichnete Threads anzeigen**, bei der es sich um das rechte der beiden Flagsymbole handelt. Sie funktioniert genauso wie die Schaltfläche auf der Symbolleiste **Debugspeicherort**, und beide Schaltflächen steuern die Anzeige an beiden Speicherorten.
 
 ### <a name="other-threads-window-features"></a>Features des Fensters „Andere Threads“
 

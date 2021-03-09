@@ -2,19 +2,19 @@
 title: Arbeiten mit mehreren Benutzerkonten
 description: Hier erfahren Sie, wie Sie alle Ihre Microsoft-Konten zu Visual Studio hinzufügen können, um von einem beliebigen Konto aus auf Ressourcen zuzugreifen, ohne sich bei jedem Konto einzeln anmelden zu müssen.
 ms.custom: SEO-VS-2020
-ms.date: 11/16/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960454"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683792"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
@@ -65,7 +65,7 @@ Erstellen Sie ein neues Projekt zur **ASP.NET Core-Webanwendung**, um dies in Ak
 
 ::: moniker range=">=vs-2019"
 
-Erstellen Sie ein neues Projekt zur **ASP.NET Core-Webanwendung**, um dies in Aktion zu sehen. Klicken Sie auf der Seite **Neue ASP.NET Core-Webanwendung erstellen** auf die Vorlage **Webanwendung**, und wählen Sie unter **Authentifizierung** **Ändern** aus.
+Um einen Eindruck zu erhalten, erstellen Sie ein neues Projekt vom Typ **ASP.NET Core-Web-App**. Wählen Sie auf der Seite **Neue ASP.NET Core-Webanwendung erstellen** in der Dropdownliste **ASP.NET Core 3.1** aus. Wählen Sie die Vorlage **Webanwendung** aus, und klicken Sie anschließend unter **Authentifizierung** auf **Ändern**.
 
 ::: moniker-end
 

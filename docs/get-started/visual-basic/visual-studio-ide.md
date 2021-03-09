@@ -1,7 +1,7 @@
 ---
 title: Übersicht für Visual Basic-Entwickler
 description: Erfahren Sie mehr über die Verwendung von Visual Studio zum Bearbeiten, Debuggen und Erstellen von Code sowie zum anschließenden Veröffentlichen einer App als Visual Basic-Entwickler.
-ms.date: 11/15/2018
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
 - get-started
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d771fac2cf494e92cbc27fdbdca0b78af97b67e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944393"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682951"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Willkommen in der Visual Studio-IDE | Visual Basic
 
@@ -200,13 +200,13 @@ In diesem Abschnitt erstellen Sie ein einfaches Projekt, um einige Dinge auszupr
 
 ::: moniker range="vs-2017"
 
-[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
+[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren. Hierbei handelt es sich um Gruppen von Funktionen, die für die bevorzugte Programmiersprache oder Plattform benötigt werden. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/downloads), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
+[Laden Sie zunächst Visual Studio herunter](https://visualstudio.microsoft.com/downloads), und installieren Sie es auf Ihrem System. Mit dem modularen Installationsprogramm können Sie *Workloads* auswählen und installieren. Hierbei handelt es sich um Gruppen von Funktionen, die für die bevorzugte Programmiersprache oder Plattform benötigt werden. Damit Sie die Schritte zum [Erstellen eines Programms](#create-a-program) ausführen können, müssen Sie während der Installation die Workload **Plattformübergreifende .NET Core-Entwicklung** auswählen.
 
 ::: moniker-end
 
@@ -230,9 +230,10 @@ So ändern Sie das Design in **Dunkel**:
 
 ::: moniker range=">=vs-2019"
 
-1. Öffnen Sie Visual Studio. Wählen Sie im Startfenster **Ohne Code fortfahren** aus.
+1. Öffnen Sie Visual Studio. Wählen Sie im Startfenster die Option **Ohne Code fortfahren** aus.
 
-   ![Startfenster in Visual Studio 2019](media/vs-2019/continue-without-code.png)
+
+    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="Screenshot: Startfenster in Visual Studio 2019 mit hervorgehobenem Link „Ohne Code fortfahren“":::
 
    Die IDE wird geöffnet.
 
@@ -264,9 +265,9 @@ Als nächstes konfigurieren wir Visual Studio so, dass es Umgebungseinstellungen
 
 1. Klicken Sie in der Menüleiste auf **Extras** > **Einstellungen importieren und exportieren**.
 
-2. Klicken Sie im **Assistenten zum Importieren und Exportieren von Einstellungen** auf der ersten Seite auf **Alle Einstellungen zurücksetzen** und dann auf **Weiter**.
+2. Klicken Sie im **Assistenten zum Importieren und Exportieren von Einstellungen** auf der ersten Seite auf **Alle Einstellungen zurücksetzen** und anschließend auf **Weiter**.
 
-3. Wählen Sie auf der Seite **Aktuelle Einstellungen speichern** eine Option zum Speichern oder Nichtspeichern Ihrer aktuellen Einstellungen, und wählen Sie dann **Weiter**. (Wenn Sie keine Einstellungen angepasst haben, wählen Sie **Nein, einfach die Einstellungen zurücksetzen meine aktuellen Einstellungen überschreiben**.)
+3. Wählen Sie auf der Seite **Aktuelle Einstellungen speichern** eine Option zum Speichern oder Nichtspeichern Ihrer aktuellen Einstellungen, und klicken Sie dann auf **Weiter**. (Wenn Sie keine Einstellungen angepasst haben, wählen Sie **Nein, einfach die Einstellungen zurücksetzen meine aktuellen Einstellungen überschreiben**.)
 
 4. Wählen Sie auf der Seite **Standardsammlung von Eigenschaften auswählen** die Option **Visual Basic** aus, und klicken Sie dann auf **Fertig stellen**.
 
@@ -344,21 +345,25 @@ Darum werden wir mit Ihnen jetzt ein einfaches Programm erstellen.
 
 ::: moniker range=">=vs-2019"
 
-1. Wählen Sie auf der Visual Studio-Menüleiste **Datei** > **Neues Projekt** aus.
+1. Wählen Sie auf der Visual Studio-Menüleiste **Datei** > **Neu** > **Projekt** aus. (Alternativ können Sie die Tastenkombination **STRG**+**UMSCHALT**+**N** verwenden.)
 
-   ![„Datei“ > „Neu“ > „Projekt“ in der Menüleiste](media/vs-2019/file-new-project.png)
+    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="Screenshot: Auswahl „Datei“ > „Neu“ > „Projekt“ über die Visual Studio 2019-Menüleiste":::
 
-   Das Fenster **Neues Projekt erstellen** wird geöffnet und zeigt verschiedene *Vorlagen* für Projekte an. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp erforderlich sind.
+   Das Fenster **Neues Projekt erstellen** wird geöffnet und zeigt verschiedene *Vorlagen* für Projekte an. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp benötigt werden.
 
-1. Geben Sie **.NET Core Konsole** in das Suchfeld ein, um die gewünschte Vorlage zu finden. Die Liste mit den verfügbaren Vorlagen wird automatisch nach den eingegebenen Schlüsselwörtern gefiltert. Sie können die Vorlagenergebnisse noch weiter filtern, indem Sie in der Dropdownliste **Sprache** die Option **Visual Basic** auswählen.
+1. Geben Sie **.NET Core Konsole** in das Suchfeld ein, um die gewünschte Vorlage zu finden. Die Liste mit den verfügbaren Vorlagen wird automatisch nach den eingegebenen Schlüsselwörtern gefiltert. Sie können die Vorlagenergebnisse weiter filtern, indem Sie in der Dropdownliste **Alle Sprachen** die Einstellung **Visual Basic**, in der Liste **Alle Plattformen** die Einstellung **Windows** und in der Liste **Alle Projekttypen** die Einstellung **Konsole** auswählen.
 
-1. Wählen Sie die Vorlage **Konsolen-App (.NET Core)** und anschließend **Weiter** aus.
+   Wählen Sie die Vorlage **Konsolenanwendung** aus, und klicken Sie anschließend auf **Weiter**.
 
-   ![Erstellen eines neuen Projekts in Visual Studio](media/vs-2019/create-new-project.png)
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Screenshot: Fenster „Neues Projekt erstellen“ in Visual Studio 2019 zur Auswahl der gewünschten Vorlage":::
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** die Zeichenfolge **HelloWorld** ein, ändern Sie optional das Verzeichnis für Ihre Projektdateien, und wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** die Zeichenfolge **HelloWorld** ein, ändern Sie optional das Verzeichnis für Ihre Projektdateien (das standardmäßige Gebietsschema lautet `C:\Users\<name>\source\repos`), und klicken Sie dann auf **Weiter**.
 
-   ![Konfigurieren eines neuen Projekts in Visual Studio](media/vs-2019/configure-new-project.png)
+    :::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="Screenshot: Fenster „Neues Projekt konfigurieren“ in Visual Studio 2019 zur Eingabe des Projektnamens":::
+
+1. Vergewissern Sie sich, dass im Fenster **Zusätzliche Informationen** im Dropdownmenü **Zielframework** die Einstellung **.NET Core 3.1** angezeigt wird, und klicken Sie dann auf **Erstellen**.
+
+    :::image type="content" source="media/vs-2019/create-project-additional-info.png" alt-text="Screenshot: Fenster „Zusätzliche Informationen“ in Visual Studio 2019 zur Auswahl der gewünschten .NET Core-Frameworkversion":::
 
    Visual Studio erstellt daraufhin das Projekt. Die Vorlage erstellt eine einfache „Hello World“-Anwendung, mit der die <xref:System.Console.WriteLine?displayProperty=nameWithType>-Methode aufgerufen wird, um die Literalzeichenfolge „Hello World!“ im Konsolenfenster (Programmausgabe).
 

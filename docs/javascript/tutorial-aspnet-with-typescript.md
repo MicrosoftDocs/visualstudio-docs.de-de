@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 411fbd757eb063202136eba5c1e5fbec27f56523
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960428"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683643"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: Erstellen einer ASP.NET Core-App mit TypeScript in Visual Studio
 
@@ -69,18 +69,18 @@ In diesem Tutorial beginnen Sie mit einem einfachen Projekt, das Code für eine 
 1. Erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**. Wählen Sie im Startfenster **Neues Projekt erstellen** aus. Wählen Sie **C#** in der Dropdownliste für die Programmiersprache aus. Geben Sie **ASP.NET** in das Suchfeld ein, und wählen Sie dann die Option **ASP.NET Core-Webanwendung** aus. Wählen Sie **Weiter** aus.
+    Wählen Sie im Startfenster von Visual Studio 2019 die Option **Neues Projekt erstellen** aus. Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**. Geben Sie **Web-App** ein, wählen Sie als Sprache **C#** und anschließend **ASP.NET Core-Webanwendung (Model View Controller)** aus, und klicken Sie dann auf **Weiter**. Benennen Sie das Projekt im nächsten Bildschirm, und klicken Sie dann auf **Weiter**.
 
-    Geben Sie einen Namen für das Projekt aus, und klicken Sie dann auf **Erstellen**.
+    Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** , und wählen Sie **.NET Core** aus. Wählen Sie im mittleren Bereich **ASP.NET Core-Webanwendung – C#** und anschließend **OK** aus.
+
+    Wählen Sie im angezeigten Dialogfeld die Option **Webanwendung (Model View Controller, MVC)** aus, und klicken Sie dann auf **Erstellen** (oder **OK**).
+
+    ![Auswählen der MVC-Vorlage](../javascript/media/aspnet-core-ts-mvc-template.png)
     ::: moniker-end
     Wenn Ihnen die Projektvorlage **ASP.NET Core-Webanwendung** fehlt, müssen Sie die Workload **ASP.NET und Webentwicklung** hinzufügen. Ausführliche Anweisungen dazu finden Sie in den [Voraussetzungen](#prerequisites).
-
-1. Wählen Sie im angezeigten Dialogfeld die Option **Webanwendung (Model View Controller, MVC)** aus, und klicken Sie dann auf **Erstellen** (oder **OK**).
-
-   ![Auswählen der MVC-Vorlage](../javascript/media/aspnet-core-ts-mvc-template.png)
 
     Visual Studio erstellt die neue Projektmappe und öffnet das Projekt im rechten Bereich.
 

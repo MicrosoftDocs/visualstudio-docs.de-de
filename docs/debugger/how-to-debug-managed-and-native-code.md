@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d001e89993b90f6e8b7b33f43a5c06a1ffd7cd1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899416"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683328"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Debuggen von C# und C++ in derselben Debugsitzung
 
@@ -126,9 +126,11 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG+Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, und klicken Sie auf **Vorlagen**, und wählen Sie dann **Konsolen-App (.NET Core)** oder **Konsolen-App (.NET Framework)** für C# aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG+Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, und klicken Sie auf **Vorlagen**. Wählen Sie anschließend **Konsolen-App** für .NET Core oder **Konsolen-App (.NET Framework)** für C# aus. Wählen Sie im angezeigten Dialogfeld **Weiter** aus.
 
-    Geben Sie dann einen Namen wie **Anruf_App_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
+    Geben Sie dann einen Namen wie **Mixed_Mode_Calling_App** ein, und klicken Sie je nach verfügbarer Option entweder auf **Weiter** oder auf **Erstellen**.
+
+    Wählen Sie für .NET Core entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus.
@@ -136,7 +138,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
     Geben Sie dann einen Namen wie **Anruf_App_im_gemischten_Modus** ein, und klicken Sie auf **OK**.
     ::: moniker-end
 
-    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
+    Wenn die richtige Projektvorlage nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen**,um den Visual Studio-Installer zu öffnen. Wählen Sie je nach Zielframework die Workload **Plattformübergreifende .NET Core-Entwicklung** oder **.NET-Desktopentwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
     > [!NOTE]
     > Sie können das neue verwaltete Projekt auch Ihrer vorhandenen C++-Projektmappe hinzufügen. Wir erstellen das Projekt in einer neuen Projektmappe, um das Debuggen im gemischten Modus schwieriger zu gestalten.
