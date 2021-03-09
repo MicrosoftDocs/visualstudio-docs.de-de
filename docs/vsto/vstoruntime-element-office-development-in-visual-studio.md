@@ -1,6 +1,7 @@
 ---
 title: '&lt;vstoRuntime- &gt; Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
+description: Das vstoRuntime-Element des vstav3-Namespace enthält eine unterstützte Version der Visual Studio-Tools für Office-Laufzeit für eine bestimmte Office-Projekt Mappe.
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c856836bd2ba107a2fa6c3017c5ecb2694fcf6b
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921748"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102468571"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime- &gt; Element (Office-Entwicklung in Visual Studio)
   Das `vstoRuntime` -Element des `vstav3` -Namespace enthält eine unterstützte Version der Visual Studio Tools for Office-Laufzeit für eine bestimmte Office-Projektmappe.
@@ -39,11 +40,11 @@ ms.locfileid: "99921748"
 
  Das `vstoRuntime` -Element weist folgende Attribute auf.
 
-|attribute|Beschreibung|
+|attribute|BESCHREIBUNG|
 |---------------|-----------------|
 |`release`|Erforderlich. Die Releaseversion der Visual Studio Tools for Office-Laufzeit.|
 |`version`|Erforderlich. Versionsnummer der Visual Studio Tools for Office-Laufzeit.|
-|`supportUrl`|Dies ist optional. Link zum Installationspfad der Visual Studio Tools for Office-Laufzeit.|
+|`supportUrl`|Optional. Link zum Installationspfad der Visual Studio Tools for Office-Laufzeit.|
 
  `vstoRuntime` enthält keine Elemente.
 
@@ -57,7 +58,7 @@ ms.locfileid: "99921748"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Anwendungs Manifeste für Office-Lösungen](../vsto/application-manifests-for-office-solutions.md)
 - [Bereitstellungs Manifeste für Office-Lösungen](../vsto/deployment-manifests-for-office-solutions.md)
