@@ -1,5 +1,6 @@
 ---
 title: IManagedAddin-Schnittstelle
+description: Implementieren Sie die IManagedAddin-Schnittstelle, um eine Komponente zu erstellen, die verwaltete VSTO-Add-ins lädt.
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 614cf7e8d0e682d894328fb764c6d64b855d2834
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920440"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469787"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin-Schnittstelle
   Implementieren Sie die IManagedAddin-Schnittstelle, um eine Komponente zu erstellen, die verwaltete VSTO-Add-ins lädt. Diese Schnittstelle wurde im 2007-Microsoft Office System hinzugefügt.
@@ -84,5 +85,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Diese CLSID wird auch von *VSTOLoader.dll* in der verwendet [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Wenn Sie IManagedAddin zum Erstellen eines eigenen VSTO-Add-in-Lade-und einer Laufzeitkomponente verwenden, können Sie die Komponente daher nicht auf Computern bereitstellen, auf denen VSTO-Add-Ins ausgeführt werden, die auf basieren [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Referenz zur nicht verwalteten API &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
