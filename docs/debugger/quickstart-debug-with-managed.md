@@ -12,29 +12,37 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 061e667196ce1577206ad76939e20daf3db131c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f790d30dc97d5549737c3c1cd003086477ce984f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840885"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683018"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Schnellstart: Informationen zum Debuggen in C# oder Visual Basic mithilfe des Visual Studio-Debuggers
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit C# oder Visual Basic mithilfe des Visual Studio-Debuggers
 
 Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
+## <a name="create-a-new-project"></a>Erstellen eines neuen Projekts
 
 1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Core) erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+    Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann aus der Liste der Plattformen **Windows** aus.
+
+    Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App** für .NET Core und dann **Weiter** aus.
+
+    Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
+
+    Wenn die Projektvorlage **Konsolen-App** für .NET Core nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen**, um den Visual Studio-Installer zu öffnen. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#****.NET Core** und dann im mittleren Bereich **Konsolen-App (.NET Core)** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
-    ::: moniker-end
 
-     Wenn die Vorlage **Konsolen-App (.NET Core)** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Wählen Sie die Workloads **.NET-Desktopentwicklung** und **.NET Core** aus, und klicken Sie anschließend auf **Ändern**.
+    Wenn die Vorlage **Konsolen-App (.NET Core)** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
+    ::: moniker-end
 
     Visual Studio erstellt daraufhin das Projekt.
 
@@ -56,7 +64,7 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
     End Module
     ```
 
-    durch den folgenden:
+    durch diesen Code:
 
     ```csharp
     class Program
@@ -136,7 +144,7 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
 
 2. Drücken Sie dann **F5**, oder klicken Sie auf **Debuggen > Debuggen starten**.
 
-    ![Erreichen eines Breakpoints](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Treffen eines Haltepunkts")
+    ![Treffen eines Haltepunkts](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Treffen eines Haltepunkts")
 
     Der Debugger hält an dem Breakpoint an, den Sie festlegen. Der gelbe Pfeil deutet auf die Anweisung, bei der der Debugger und die App-Ausführung ausgesetzt werden. Die Zeile mit dem Funktionsaufruf `doWork` wurde noch nicht ausgeführt.
 
@@ -145,7 +153,7 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
 
 ## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der ab Visual Studio 2017 verfügbar ist.
+Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren bewegt werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der ab Visual Studio 2017 verfügbar ist.
 
 Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `c1.AddLast(20)`, bis die grüne Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick") angezeigt wird, und klicken Sie dann auf diese.
 
@@ -155,17 +163,17 @@ Dann wird die App weiter ausgeführt, ruft `doWork` auf, und wird bei der Codeze
 
 Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchzugehen. Weitere ausführliche Anweisungen finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Untersuchen von Variablen in einem Datentipp
+## <a name="inspect-variables-in-a-data-tip"></a>Untersuchen von Variablen in einem Datentipp
 
 1. Zeigen Sie in der aktuellen Codezeile (zu erkennen an dem gelben Ausführungszeiger) mit der Maus auf das `c1`-Objekt, um Datentipps anzuzeigen.
 
-    ![Anzeigen eines Datentipps](../debugger/media/dbg-qs-data-tip-csharp.png "Anzeigen eines Datentipps")
+    ![Einen Datentipp anzeigen](../debugger/media/dbg-qs-data-tip-csharp.png "Einen Datentipp anzeigen")
 
-    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.
+    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die zugehörigen Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.
 
-2. Erweitern Sie den Datentipp, um die Eigenschaftswerte des `c1`-Objekts einzusehen.
+2. Erweitern Sie den Datentipp, um die aktuellen Eigenschaftswerte des `c1`-Objekts anzuzeigen.
 
-3. Wenn Sie den Datentipp anheften möchten, damit bei der Codeausführung weiterhin der Wert von `c1` angezeigt wird, klicken Sie auf das Stecknadelsymbol. (Sie können den angehefteten Datentipp an eine geeignete Stelle verschieben.)
+3. Wenn Sie den Datentipp anheften möchten, damit der Wert von `c1` bei der Codeausführung weiterhin angezeigt wird, klicken Sie auf das Stecknadelsymbol. (Sie können den angehefteten Datentipp an eine geeignete Stelle verschieben.)
 
 ## <a name="edit-code-and-continue-debugging"></a>Bearbeiten von Code und Fortsetzen des Debuggens
 
