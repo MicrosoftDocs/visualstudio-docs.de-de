@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741c22e8116d47a51a75369b5b114725c1f64bf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eac51637b3f3b732f1293337080ef851f34c459
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909270"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682736"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C#-Code mit Visual Studio
 
@@ -91,17 +91,19 @@ Zunächst müssen Sie ein Projekt für die .NET Core-Konsolenanwendung erstellen
 
 1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann aus der Liste der Plattformen **Windows** aus. 
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** und dann **Weiter** aus.
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App** für .NET Core und dann **Weiter** aus.
 
-   ![Auswählen der C#-Vorlage für die Konsolen-App (.NET Core)](../csharp/media/vs-2019/get-started-create-console-project.png)
+   ![Auswählen der C#-Vorlage für die Konsolen-App](../csharp/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > Wenn Sie die **Konsolen-App (.NET Core)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus. Wählen Sie anschließend im Visual Studio-Installer die Workload **Plattformübergreifende .NET Core-Entwicklung** aus.
+   > Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, können Sie sie im Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus. Wählen Sie anschließend im Visual Studio-Installer die Workload **Plattformübergreifende .NET Core-Entwicklung** aus.
 
-1. Geben Sie anschließend im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** den Namen *GetStartedDebugging* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie anschließend im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** den Namen *GetStartedDebugging* ein. Klicken Sie dann auf **Weiter**.
+
+1. Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    Visual Studio öffnet Ihr neues Projekt.
-   
+
 ::: moniker-end
 
 ## <a name="create-the-application"></a>Erstellen der Anwendung

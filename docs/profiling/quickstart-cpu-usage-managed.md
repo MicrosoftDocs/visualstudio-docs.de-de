@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fc8eeccdb020d07ff48965d9eb3d5df1dafa7da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861645"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683547"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (C#, Visual Basic)
 
@@ -45,12 +45,14 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
    Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** oder **Visual Basic** und dann in der Liste der Plattformen **Windows** aus.
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** und dann **Weiter** aus.
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App** für .NET Core und dann **Weiter** aus.
 
    > [!NOTE]
-   > Wenn Sie die **Konsolen-App (.NET Core)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus. Wählen Sie anschließend im Visual Studio-Installer die Workload **Plattformübergreifende .NET Core-Entwicklung** aus.
+   > Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, können Sie sie im Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus. Wählen Sie anschließend im Visual Studio-Installer die Workload **Plattformübergreifende .NET Core-Entwicklung** aus.
 
-   Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *MyProfilerApp* ein. Wählen Sie anschließend **Erstellen** aus.
+   Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *MyProfilerApp* ein. Klicken Sie dann auf **Weiter**.
+
+   Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    ::: moniker-end
 

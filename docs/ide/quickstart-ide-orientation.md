@@ -3,19 +3,19 @@ title: 'Schnellstart: Einführung in die Visual Studio-IDE'
 description: Hier erfahren Sie mehr über einige Fenster, Menüs und andere Benutzeroberflächenfeatures der integrierten Entwicklungsumgebung (IDE) von Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
-ms.date: 02/21/2019
+ms.date: 03/02/2021
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945499"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683964"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Schnellstart: Ein erster Blick auf die Visual Studio-IDE
 
@@ -83,15 +83,25 @@ Erstellen Sie ein neues Projekt, um die Features in Visual Studio besser kennenz
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   Ein Dialogfeld mit dem Titel **Neues Projekt erstellen** wird geöffnet. Hier können Sie nach Projektvorlagen suchen, sie filtern und sie auswählen. Außerdem wird hier eine Liste mit Ihren zuletzt verwendeten Projektvorlagen angezeigt.
+    :::image type="content" source="../get-started/media/vs-2019/start-window-create-new-project.png" alt-text="Screenshot: Fenster „Neues Projekt erstellen“ in Visual Studio 2019":::
 
-1. Geben Sie im Suchfeld am oberen Rand **Konsole** ein, um die Liste mit den Projekttypen nach Einträgen zu filtern, die das Wort „Konsole“ enthalten. Grenzen Sie die Suchergebnisse weiter ein, indem Sie unter **Sprache** die Option **C#** (oder eine andere Programmiersprache) auswählen.
+   Das Fenster **Neues Projekt erstellen** wird geöffnet und zeigt verschiedene *Vorlagen* für Projekte an. Eine Vorlage enthält die grundlegenden Dateien und Einstellungen, die für einen bestimmten Projekttyp benötigt werden.
 
-   ![Dialogfeld „Neues Projekt“ in Visual Studio 2019](media/vs-2019/create-a-new-project.png)
+   Hier können Sie nach Projektvorlagen suchen, sie filtern und sie auswählen. Außerdem wird hier eine Liste mit Ihren zuletzt verwendeten Projektvorlagen angezeigt.
 
-1. Wenn Sie C#, Visual Basic oder F# als Programmiersprache ausgewählt haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** aus, und klicken Sie auf **Weiter**. (Falls Sie eine andere Programmiersprache ausgewählt haben, wählen Sie einfach eine beliebige Vorlage aus. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
+1. Geben Sie im Suchfeld am oberen Rand **Konsole** ein, um die Liste mit den Projekttypen nach Einträgen zu filtern, die das Wort „Konsole“ enthalten. Grenzen Sie die Suchergebnisse weiter ein, indem Sie in der Dropdownliste **Alle Sprachen** die Option **C#** (oder eine andere Programmiersprache) auswählen.
 
-1. Übernehmen Sie auf der Seite **Neues Projekt konfigurieren** die Standardwerte für Projektname und Speicherort, und wählen Sie anschließend **Erstellen** aus.
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Screenshot: Fenster „Neues Projekt erstellen“ in Visual Studio 2019 zur Auswahl der gewünschten Vorlage":::
+
+1. Wenn Sie C#, Visual Basic oder F# als Programmiersprache ausgewählt haben, wählen Sie die Vorlage **Konsolenanwendung** aus, und klicken Sie auf **Weiter**. (Falls Sie eine andere Programmiersprache ausgewählt haben, wählen Sie einfach eine beliebige Vorlage aus. Die Benutzeroberfläche, die angezeigt wird, ist für alle Programmiersprachen ähnlich.)
+
+1. Übernehmen Sie auf der Seite **Neues Projekt konfigurieren** die Standardwerte für Projektname und Speicherort, und klicken Sie anschließend auf **Weiter**.
+
+    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Screenshot: Fenster „Neues Projekt konfigurieren“ in Visual Studio 2019 zur Eingabe des Projektnamens":::
+
+1. Vergewissern Sie sich, dass im Fenster **Zusätzliche Informationen** im Dropdownmenü **Zielframework** die Einstellung **.NET Core 3.1** angezeigt wird, und klicken Sie dann auf **Erstellen**.
+
+    :::image type="content" source="../get-started/media/vs-2019/create-project-additional-info.png" alt-text="Screenshot: Fenster „Zusätzliche Informationen“ in Visual Studio 2019 zur Auswahl der gewünschten .NET Core-Frameworkversion":::
 
 ::: moniker-end
 

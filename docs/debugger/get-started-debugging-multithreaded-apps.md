@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc5232d616466ec5aa0916d5d1ad9e7bd5b1247c
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870518"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684121"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Erste Schritte zum Debuggen von Multithreadanwendungen (C#, Visual Basic, C++)
 
@@ -48,12 +48,14 @@ Zuerst benötigen Sie ein Projekt für eine Multithreadanwendung. Im Folgenden w
 
    Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste mit den Sprachen die Option **C#** , **C++** oder **Visual Basic** und dann in der Liste mit den Plattformen **Windows** aus. 
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** oder für C++ **Konsolen-App** aus, und klicken Sie dann auf **Weiter**.
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App** für .NET Core oder C++ und dann **Weiter** aus.
 
    > [!NOTE]
-   > Wenn die richtige Vorlage nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+   > Wenn die richtige Vorlage nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** oder **Desktopentwicklung mit C++** aus, und klicken Sie dann auf **Anpassen**.
 
-   Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *MyThreadWalkthroughApp* ein. Wählen Sie anschließend **Erstellen** aus.
+   Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *MyThreadWalkthroughApp* ein. Klicken Sie anschließend je nach verfügbarer Option entweder auf **Weiter** oder auf **Erstellen**.
+
+   Wählen Sie für ein .NET Core-Projekt entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -63,7 +65,7 @@ Zuerst benötigen Sie ein Projekt für eine Multithreadanwendung. Im Folgenden w
    - Wählen Sie für eine Visual Basic-App unter **Visual Basic** die Option **Windows-Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus.
    - Klicken Sie für eine C++-App unter **Visual C++** auf **Windows-Desktop**, und wählen Sie dann im mittleren Bereich **Windows-Konsolenanwendung** aus.
 
-   Wenn die Projektvorlage **Konsolen-App (.NET Core)** oder für C++ **Konsolen-App (.NET Framework)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen...** , um den Visual Studio-Installer zu öffnen. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+   Wenn die Projektvorlage **Konsolen-App (.NET Framework)** oder für C++ die Projektvorlage **Konsolen-App** nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen**, um den Visual Studio-Installer zu öffnen. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
 
    Geben Sie dann einen Namen wie *MyThreadWalkthroughApp* ein, und klicken Sie auf **OK**.
 

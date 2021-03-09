@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea87135b1f60c7ae65a8bc25399604151ab2fcee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d411465869cc960631063d09752d38536af94119
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887808"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683614"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Erste Schritte mit Live Unit Testing
 
@@ -113,20 +113,26 @@ Im nächsten Schritt wird das Komponententestprojekt zum Testen der StringLibrar
 
 4. Klicken Sie auf **OK**, um das Projekt zu erstellen.
 
+   > [!NOTE]
+   > In dieser Einführung wird das Live Unit Testing mit dem MSTest-Testframework verwendet. Sie können auch die xUnit- und NUnit-Testframeworks verwenden.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Geben Sie **Komponententest** in das Vorlagensuchfeld ein, und wählen Sie dann die Vorlage **MSTest-Testprojekt (.NET Core)** aus. Klicken Sie auf **Weiter**.
+2. Geben Sie im Suchfeld für Vorlagen **Komponententest** ein, wählen Sie als Sprache **C#** und dann die Vorlage **Komponententestprojekt** für .NET Core aus. Klicken Sie auf **Weiter**.
 
-3. Nennen Sie das Projekt **StringLibraryTests**.
+   > [!NOTE]
+   > In Visual Studio 2019, Version 16.9 wurde der Name der MSTest-Projektvorlage von **MSTest-Komponententestprojekt (.NET Core)** in **Komponententestprojekt** geändert.
 
-4. Klicken Sie auf **Erstellen**, um das Projekt zu erstellen.
+3. Geben Sie dem Projekt den Namen **StringLibraryTests**, und klicken Sie auf **Weiter**.
 
-::: moniker-end
+4. Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    > [!NOTE]
    > In dieser Einführung wird das Live Unit Testing mit dem MSTest-Testframework verwendet. Sie können auch die xUnit- und NUnit-Testframeworks verwenden.
+
+::: moniker-end
 
 5. Das Komponententestprojekt kann nicht automatisch auf die Klassenbibliothek zugreifen, die getestet wird. Sie erteilen der Testbibliothek Zugriff, indem Sie eine Referenz auf das Klassenbibliotheksprojekt hinzufügen. Klicken Sie hierzu erst mit der rechten Maustaste auf das Projekt `StringLibraryTests` und anschließend mit der Linken auf **Hinzufügen** > **Verweis**. Stellen Sie sicher, dass im Dialogfeld **Verweis-Manager** die Registerkarte **Projektmappe** ausgewählt ist, und wählen Sie wie in der folgenden Abbildung gezeigt das Projekt „StringLibrary“ aus.
 

@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66610eef4419b71cd41c8a7708b43b30bff4cc80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872520"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683044"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Vorbereitung des Debugvorgangs: Konsolenprojekte (C# , C++ , Visual Basic, F# )
 
-Mit Ausnahme einiger zusätzlicher Punkte wie dem Festlegen von Befehlszeilenargumenten und Anhalten der App zum Debuggen ist die Vorbereitung für das Debuggen eines Konsolenprojekts der Vorbereitung für das Debuggen eines Windows-Projekts sehr ähnlich. Weitere Informationen finden Sie unter [Vorbereitung des Debugvorgangs: Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md) und [Vorbereitung des Debugvorgangs: Windows Forms-Anwendungen (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Wegen der Ähnlichkeit aller Konsolenanwendungen deckt dieses Thema die folgenden Projekttypen ab:
+Mit Ausnahme einiger zusätzlicher Punkte wie dem Festlegen von Befehlszeilenargumenten und Anhalten der App zum Debuggen ist die Vorbereitung für das Debuggen eines Konsolenprojekts der Vorbereitung für das Debuggen eines Windows-Projekts sehr ähnlich. Weitere Informationen finden Sie unter [Vorbereitung des Debugvorgangs: Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md). Wegen der Ähnlichkeit aller Konsolenanwendungen deckt dieses Thema die folgenden Projekttypen ab:
 
 - C#-, Visual Basic- und F#-Konsolenanwendungen
 

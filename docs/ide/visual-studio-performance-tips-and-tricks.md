@@ -2,19 +2,19 @@
 title: Tipps zum Verbessern der Leistung
 description: Hier erfahren Sie, wie Sie nicht verwendete Visual Studio-Features optimieren, um die Leistung zu verbessern.
 ms.custom: SEO-VS-2020
-ms.date: 12/14/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873865"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683762"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -142,6 +142,10 @@ Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform 
 - **Entfernen von Workloads**
 
     Sie können den Visual Studio-Installer verwenden, um Workloads zu entfernen, die nicht mehr verwendet werden. Dadurch kann Ihre Start- und Laufzeitkosten zu optimieren, indem Pakete und Assemblys übersprungen werden, die nicht mehr benötigt werden.
+
+- **Hinzufügen nicht nachverfolgter Dateien zur lokalen GITIGNORE-Datei**
+
+    Visual Studio führt den Git-Befehl `git status` mit nicht verfolgten Dateien aus, um ein nahtloses Benutzererlebnis zu gewährleisten, wenn neue Dateien in ein Repository hinzugefügt werden. Bei einer großen Anzahl nicht verfolgter Dateien kann `git status` sehr viel zusätzlichen Arbeitsspeicher belegen. Um diese Dateien zu ignorieren und die Leistung von `git status` zu verbessern, können Sie diese Dateien oder Ordner zu Ihrer lokalen GITIGNORE-Datei hinzufügen. Wechseln Sie zum Zugriff auf die Datei zu **Git** > **Einstellungen** > **Git-Repositoryeinstellungen**. Klicken Sie anschließend im Abschnitt **Git-Dateien** auf **Hinzufügen**, um eine GITIGNORE-Datei zu erstellen, oder klicken Sie auf **Bearbeiten**, wenn Sie bereits über eine solche Datei verfügen.
 
 ## <a name="force-a-garbage-collection"></a>Erzwingen einer Garbage Collection
 

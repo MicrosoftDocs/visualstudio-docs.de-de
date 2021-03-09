@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 338e53d576e9f4d73b32c3f432223480d9e708c3
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942827"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683939"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Erstellen einer Vue.js-Anwendung mit Node.js-Tools für Visual Studio
 
@@ -68,20 +68,22 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
 
 #### <a name="create-an-empty-project"></a>Erstellen eines leeren Projekts
 
-1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
+* Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, den Namen **client-app** ein, und wählen Sie dann **Erstellen** aus.
+    Wählen Sie im Startfenster von Visual Studio 2019 die Option **Neues Projekt erstellen** aus. Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**. Geben Sie **Web-App** ein, wählen Sie als Sprache **C#** und anschließend **ASP.NET Core – leer** aus, und klicken Sie dann auf **Weiter**. Geben Sie dem Projekt im nächsten Bildschirm den Namen **Client-App**, und klicken Sie auf **Weiter**.
+
+    Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** , und wählen Sie dann **Web** aus. Wählen Sie im mittleren Bereich **ASP.NET Core-Webanwendung** aus, geben Sie den Namen **client-app** ein, und wählen Sie dann **OK** aus.
+
+    Wählen Sie **Leer** aus, und klicken Sie dann auf **OK**.
+
+    Visual Studio erstellt das Projekt, das im Projektmappen-Explorer (rechter Bereich) geöffnet wird.
     ::: moniker-end
 
     Wenn die Projektvorlage **ASP.NET Core-Webanwendung** nicht vorhanden ist, installieren Sie zunächst die Workload **ASP.NET und Webentwicklung** und die Entwicklungsworkload .**NET Core**. Klicken Sie zum Installieren der Workloads auf den Link **Visual Studio-Installer öffnen** im linken Bereich des Dialogfelds **Neues Projekt** (wählen Sie **Datei** > **Neu** > **Projekt** aus). Der Visual Studio-Installer wird gestartet. Wählen Sie die erforderlichen Workloads aus.
-
-1. Wählen Sie **Leer** aus, und klicken Sie dann auf **OK**.
-
-    Visual Studio erstellt das Projekt, das im Projektmappen-Explorer (rechter Bereich) geöffnet wird.
 
 #### <a name="configure-the-project-startup-file"></a>Konfigurieren der Startdatei des Projekts
 

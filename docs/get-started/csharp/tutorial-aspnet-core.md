@@ -3,7 +3,7 @@ title: 'Tutorial: Erste Schritte mit C# und ASP.NET Core'
 titleSuffix: ''
 description: Dieser Artikel enthält eine ausführliche Anleitung zum Erstellen einer ASP.NET Core-Web-App mit C# in Visual Studio.
 ms.custom: seodec18, get-started
-ms.date: 05/29/2019
+ms.date: 02/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956359"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683129"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Erste Schritte mit C# und ASP.NET Core in Visual Studio
 
@@ -106,16 +106,16 @@ Wenn Ihnen die Projektvorlage **ASP.NET Core-Webanwendung** fehlt, fügen Sie ei
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   ![Fenster „Neues Projekt erstellen“ anzeigen](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="Fenster „Neues Projekt erstellen“ anzeigen":::
 
-1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *ASP.NET* ein. Wählen Sie anschließend in der Liste der Sprachen **C#** und dann aus der Liste der Plattformen **Windows** aus.
+1. Wählen Sie im Fenster **Neues Projekt erstellen** in der Liste der Sprachen **C#** aus. Wählen Sie anschließend in der Liste der Plattformen **Windows** und in der Liste der Projekttypen **Web** aus.
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **ASP.NET Core-Webanwendung** und dann **Weiter** aus.
+      Nachdem Sie die Sprach-, Plattform- und Projekttypfilter angewendet haben, wählen Sie die Vorlage **ASP.NET Core-Web-App** und dann **Weiter** aus.
 
-   ![Wählen Sie die C#-Vorlage für die ASP.NET Core-Webanwendung aus](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Auswählen der C#-Vorlage für die ASP.NET Core-Web-App":::
 
    > [!NOTE]
-   > Wenn die Vorlage **ASP.NET Core-Webanwendung** nicht angezeigt wird, können Sie sie über das Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
+   > Wenn die Vorlage **ASP.NET Core-Web-App** nicht angezeigt wird, können Sie sie über das Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
    >
    > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -125,15 +125,21 @@ Wenn Ihnen die Projektvorlage **ASP.NET Core-Webanwendung** fehlt, fügen Sie ei
    >
    > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Speichern Sie Ihre Arbeit, wenn Sie dazu aufgefordert werden. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise "[Projekt erstellen](#create-a-project)" zurück.
 
-1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***MyCoreApp* ein. Wählen Sie anschließend **Erstellen** aus.
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname***MyCoreApp* ein. Klicken Sie dann auf **Weiter**.
 
-   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „MyCoreApp“](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „MyCoreApp“":::
 
-1. Überprüfen Sie im Fenster **Neue ASP.NET Core-Webanwendung erstellen**, ob **ASP.NET Core 3.0** im oberen Dropdownmenü angezeigt wird. Wählen Sie dann **Webanwendung** aus; diese Option beinhaltet Razor Pages-Beispielseiten. Wählen Sie als Nächstes **Erstellen** aus.
+1. Überprüfen Sie im Fenster **Zusätzliche Informationen**, ob im oberen Dropdownmenü **.NET Core 3.1** angezeigt wird. Beachten Sie, dass Sie die Docker-Unterstützung aktivieren können, indem Sie das Kontrollkästchen aktivieren. Sie können außerdem Authentifizierungsunterstützung hinzufügen, indem Sie auf die Schaltfläche zum Ändern der Authentifizierung klicken. Dort können Sie unter folgenden Optionen wählen:
+    - Keine: Keine Authentifizierung.
+    - Einzelne Konten: Diese werden in einer lokalen oder Azure-basierten Datenbank gespeichert.
+    - Microsoft Identity Platform: Mit dieser Option werden Active Directory, Azure AD oder Microsoft 365 für die Authentifizierung verwendet.
+    - Windows: Geeignet für Intranetanwendungen.
+    
+    Lassen Sie das Kontrollkästchen **Docker aktivieren** deaktiviert, und wählen Sie als Authentifizierungstyp **Keine** aus. Wählen Sie anschließend **Erstellen**.
 
-   ![Fenster „Neue ASP.NET Core-Webanwendung erstellen“](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="Stellen Sie im Fenster „Zusätzliche Informationen“ sicher, dass .NET Core 3.1 ausgewählt ist, und übernehmen Sie alle Standardwerte.":::
 
-   Visual Studio öffnet Ihr neues Projekt.
+   Visual Studio öffnet das neue Projekt.
 
 ::: moniker-end
 

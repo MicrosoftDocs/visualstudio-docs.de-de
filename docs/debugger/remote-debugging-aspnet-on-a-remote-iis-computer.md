@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b288836b3868f561e86a801d5d26f7d59dd17535
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b4eabfe35671b3cda0e2df71163b7c91695b264
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908271"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683072"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Remotedebuggen von ASP.NET Core auf einem IIS-Remotecomputer in Visual Studio
 
@@ -57,7 +57,9 @@ Dieser Artikel enthält Schritte zum Einrichten einer Basiskonfiguration von IIS
 1. Erstellen Sie eine neue ASP.NET Core-Webanwendung.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie in Visual Studio 2019 **STRG+Q** ein, um das Suchfeld zu öffnen. Geben Sie **asp.net** ein, und klicken Sie auf **Vorlagen** sowie auf **Neue ASP.NET Core-Webanwendung erstellen**. Nennen Sie das Projekt im Dialogfeld, das nun geöffnet wird, **MyASPApp**, und wählen Sie dann **Erstellen** aus. Wählen Sie dann die Option **Webanwendung (Model-View-Controller)** aus, und klicken Sie auf **Erstellen**.
+    Wählen Sie im Startfenster von Visual Studio 2019 die Option **Neues Projekt erstellen** aus. Wenn das Startfenster nicht geöffnet ist, klicken Sie auf **Datei** > **Startfenster**. Geben Sie **Web-App** ein, wählen Sie als Sprache **C#** und anschließend **ASP.NET Core-Webanwendung (Model View Controller)** aus, und klicken Sie dann auf **Weiter**. Geben Sie dem Projekt im nächsten Bildschirm den Namen **MyASPApp**, und klicken Sie dann auf **Weiter**.
+
+    Wählen Sie entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Wählen Sie in Visual Studio 2017 **Datei > Neu > Projekt** und dann **Visual C# > Web > ASP.NET Core-Webanwendung** aus. Wählen Sie im Abschnitt zu den ASP.NET Core-Vorlagen **Webanwendung (Model-View-Controller)** aus. Stellen Sie sicher, dass ASP.NET Core 2.1 ausgewählt ist, dass **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierungs** auf **Keine Authentifizierungs** festgelegt ist. Geben Sie dem Projekt den Namen **MyASPApp**.
@@ -90,7 +92,7 @@ Wenn Sie die Software herunterladen, erhalten Sie möglicherweise Anforderungen 
     > [!NOTE]
     > Wenn das System nicht über eine Internetverbindung verfügt, beziehen und installieren Sie *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* , bevor Sie das Paket „.NET Core Windows Server Hosting“ installieren.
 
-3. Starten Sie das System neu, oder führen Sie über eine Eingabeaufforderung **net stop was /y** gefolgt von **net start w3svc** aus, um eine Änderung am Systempfad zu übernehmen.
+2. Starten Sie das System neu, oder führen Sie über eine Eingabeaufforderung **net stop was /y** gefolgt von **net start w3svc** aus, um eine Änderung am Systempfad zu übernehmen.
 
 ## <a name="choose-a-deployment-option"></a>Auswählen einer Bereitstellungsoption
 

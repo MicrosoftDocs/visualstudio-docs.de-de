@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5fd3d8e17d90cde50f583dfc0393debf460de7f6
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904946"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684077"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debugverfahren und -tools zum Schreiben von besserem Code
 
@@ -42,22 +42,26 @@ Der folgende Code enthält einige Fehler, die Sie mithilfe der Visual Studio-IDE
 
 So erstellen Sie die App:
 
-1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss, je nachdem, welchen Typ von App Sie erstellen möchten, entweder die Workload **Plattformübergreifende .NET Core-Entwicklung** oder die Workload **.NET-Desktopentwicklung** installiert sein.
+1. Sie müssen Visual Studio und die Workload **Plattformübergreifende .NET Core-Entwicklung** installiert haben.
 
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
 
-    Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...** . Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** oder die Workload **.NET-Desktopentwicklung** aus, und klicken Sie auf **Anpassen**.
+    Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...** . Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
 1. Öffnen Sie Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Wählen Sie im Startfenster **Neues Projekt erstellen** aus. Geben Sie im Suchfeld den Begriff **Konsole** ein, und wählen Sie dann entweder **Konsolen-App (.NET Core)** oder **Konsolen-App (.NET Framework)** aus. Wählen Sie **Weiter** aus. Geben Sie einen Projektnamen wie **Console_Parse_JSON** ein, und klicken Sie dann auf **Erstellen**.
+    Wählen Sie im Startfenster **Neues Projekt erstellen** aus. Geben Sie im Suchfeld **Konsole** ein, und wählen Sie dann die Vorlage **Konsolen-App** für .NET Core aus. Wählen Sie **Weiter** aus. Geben Sie einen Projektnamen wie etwa **Console_Parse_JSON** ein, und klicken Sie anschließend je nach verfügbarer Option entweder auf **Weiter** oder auf **Erstellen**.
+
+    Wählen Sie für .NET Core entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
+
+    Wenn die Projektvorlage **Konsolen-App** für .NET Core nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen**, um den Visual Studio-Installer zu öffnen. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** auf die Option **Konsolen-App** und dann im mittleren Bereich entweder auf **Konsolen-App (.NET Core)** oder auf **Konsolen-App (.NET Framework)** . Geben Sie einen Namen wie **Console_Parse_JSON** ein, und klicken Sie auf **OK**.
-    ::: moniker-end
+    Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** die Einstellung **Konsolen-App** und dann im mittleren Bereich **Konsolen-App (.NET Core)** aus. Geben Sie einen Namen wie **Console_Parse_JSON** ein, und klicken Sie auf **OK**.
 
-    Wenn die Projektvorlage **Konsolen-App (.NET Core)** oder **Konsolen-App (.NET Framework)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Get Tools and Features** (Tools und Features abrufen), wodurch der Visual Studio-Installer geöffnet wird. Wählen Sie entweder die Workload **Plattformübergreifende .NET Core-Entwicklung** oder die Workload **.NET-Desktopentwicklung** aus, und klicken Sie dann auf **Anpassen**.
+    Wenn die Projektvorlage **Konsolen-App (.NET Core)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Tools und Features abrufen**, um den Visual Studio-Installer zu öffnen. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
+    ::: moniker-end
 
     Visual Studio erstellt das Konsolenprojekt, das im Projektmappen-Explorer (rechter Bereich) angezeigt wird.
 

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8f739ab99f060005f7bbfebc400c424c50ba7d5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884285"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684125"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Exemplarische Vorgehensweise: Debuggen einer parallelen Anwendung in Visual Studio (C#, Visual Basic, C++)
 
@@ -70,14 +70,16 @@ In dieser exemplarischen Vorgehensweise wird das Debuggen einer parallelen Anwen
 
    Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-   Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste mit den Sprachen die Option **C#** , **C++** oder **Visual Basic** und dann in der Liste mit den Plattformen **Windows** aus. 
+   Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste mit den Sprachen die Option **C#** , **C++** oder **Visual Basic** und dann in der Liste mit den Plattformen **Windows** aus.
 
-   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** oder für C++ **Konsolen-App** aus, und klicken Sie dann auf **Weiter**.
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie **Konsolen-App** für .NET Core oder C++ und dann **Weiter** aus.
 
    > [!NOTE]
-   > Wenn die richtige Vorlage nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+   > Wenn die richtige Vorlage nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** oder **Desktopentwicklung mit C++** aus, und klicken Sie dann auf **Anpassen**.
 
-   Geben Sie im Fenster **Neues Projekt konfigurieren** einen Namen ein, oder verwenden Sie im Feld **Projektname** den Standardnamen. Wählen Sie anschließend **Erstellen** aus.
+   Geben Sie im Fenster **Neues Projekt konfigurieren** einen Namen ein, oder verwenden Sie im Feld **Projektname** den Standardnamen. Klicken Sie anschließend je nach verfügbarer Option entweder auf **Weiter** oder auf **Erstellen**.
+
+   Wählen Sie für .NET Core entweder das empfohlene Zielframework (.NET Core 3.1) oder .NET 5 aus, und klicken Sie dann auf **Erstellen**.
 
    ::: moniker-end
    ::: moniker range="vs-2017"

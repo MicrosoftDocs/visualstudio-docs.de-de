@@ -3,16 +3,16 @@ title: Visual Studio-Tools für Docker mit ASP.NET
 author: ghogen
 description: Erfahren Sie mehr über die Verwendung von Visual Studio 2019-Tools und Docker für Windows.
 ms.author: ghogen
-ms.date: 02/01/2019
+ms.date: 02/22/2021
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.openlocfilehash: 3a2c0d9ac31857fb2389455b0262373414981c5b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88186301"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750567"
 ---
 Mit Visual Studio können Sie .NET-, ASP.NET- und ASP.NET Core-Apps in Containern mühelos erstellen, debuggen, ausführen und anschließend in Azure Container Registry (ACR), Docker Hub, Azure App Service oder Ihrer eigenen Containerregistrierung veröffentlichen. In diesem Artikel veröffentlichen wir eine ASP.NET Core-App in ACR.
 
@@ -29,10 +29,10 @@ Lesen Sie vor der Installation von Docker zunächst [Docker Desktop for Windows:
 
 ## <a name="add-a-project-to-a-docker-container"></a>Hinzufügen eines Projekts zu einem Docker-Container
 
-1. Erstellen Sie mithilfe der Vorlage **ASP.NET Core-Webanwendung** ein neues Projekt. Wenn Sie statt .NET Core lieber .NET Framework verwenden möchten, wählen Sie **ASP.NET Web Application (.NET Framework)** (ASP.NET-Webanwendung [.NET Framework]) aus.
-1. Klicken Sie auf **Webanwendung**, und stellen Sie sicher, dass das Kontrollkästchen neben **Docker-Unterstützung aktivieren** aktiviert ist.
+1. Erstellen Sie mithilfe der Vorlage **ASP.NET Core-Web-App** ein neues Projekt. Wenn Sie anstelle von .NET Core lieber .NET Framework verwenden möchten, wählen Sie **ASP.NET-Webanwendung (.NET Framework)** aus.
+1. Vergewissern Sie sich, dass im Bildschirm **Zusätzliche Informationen** das Kontrollkästchen **Docker-Unterstützung aktivieren** aktiviert ist.
 
-   ![Kontrollkästchen „Enable Docker Support“ (Docker-Unterstützung aktivieren)](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+   ![Kontrollkästchen „Enable Docker Support“ (Docker-Unterstützung aktivieren)](../../media/container-tools/vs-2019/webapp-additional-information-31-docker.png)
 
    Im Screenshot wird .NET Core verwendet. Mit .NET Framework sieht der Bildschirm etwas anders aus.
 
@@ -108,7 +108,7 @@ Sobald der Entwicklungs- und Debugzyklus der App abgeschlossen ist, können Sie 
 
 1. Geben Sie die gewünschten Werte im Feld **Neue Azure-Containerregistrierung erstellen** ein.
 
-    | Einstellung      | Empfohlener Wert  | Beschreibung                                |
+    | Einstellung      | Vorgeschlagener Wert  | Beschreibung                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS-Präfix** | Global eindeutiger Name | Name, der Ihre Containerregistrierung eindeutig identifiziert. |
     | **Abonnement** | Auswählen Ihres Abonnements | Das zu verwendende Azure-Abonnement. |

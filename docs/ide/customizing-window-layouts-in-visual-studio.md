@@ -2,7 +2,7 @@
 title: Anpassen von Fensterlayouts
 description: Erfahren Sie, wie die Merkmale von Windows angepasst werden, um Layouts zu erstellen, die für verschiedene Entwicklungsworkflows am besten geeignet sind.
 ms.custom: SEO-VS-2020
-ms.date: 07/31/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910859"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682587"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 
@@ -163,7 +163,17 @@ Erstellen Sie zunächst eine Testprojektmappe mit zwei Projekten, die jeweils ü
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>Erstellen eines Benutzeroberflächenprojekts und individuelles Anpassen des Layouts
 
+::: moniker range="vs-2017"
+
 1. Erstellen Sie ein neues C# **WPF-App** Projekt. Stellen Sie sich vor, dass Sie in diesem Projekt eine Benutzeroberfläche entwickeln werden. Sie möchten den Platz für das Designerfenster maximieren und andere Toolfenster aus dem Weg räumen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Erstellen Sie ein neues Projekt vom Typ **WPF-Anwendung** für C#. Stellen Sie sich vor, dass Sie in diesem Projekt eine Benutzeroberfläche entwickeln werden. Sie möchten den Platz für das Designerfenster maximieren und andere Toolfenster aus dem Weg räumen.
+
+::: moniker-end
 
 2. Wenn Sie über mehrere Monitore verfügen, ziehen Sie das Fenster **Projektmappen-Explorer** und das Fenster **Eigenschaften** auf den zweiten Monitor. Versuchen Sie, wenn Ihnen nur ein Monitor zur Verfügung steht, alle Fenster außer dem Designerfenster zu schließen.
 

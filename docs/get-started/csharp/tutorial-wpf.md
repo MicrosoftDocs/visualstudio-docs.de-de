@@ -2,7 +2,7 @@
 title: Hallo Welt-App mit WPF in C#
 description: Erstellen Sie eine einfache Windows Desktop.NET-App in C# mit Visual Studio mit dem Windows Presentation Foundation (WPF) UI-Framework.
 ms.custom: seodec18, get-started
-ms.date: 08/09/2019
+ms.date: 02/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924877"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682857"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Erstellen einer einfachen Anwendung mit C\#
 
@@ -80,16 +80,17 @@ Wenn Sie eine Anwendung in Visual Studio erstellen, erstellen Sie zunächst ein 
 
    ![Fenster „Neues Projekt erstellen“ anzeigen](../../get-started/media/vs-2019/start-window-create-new-project.png "Screenshot: Fenster „Neues Projekt erstellen“")
 
-1. Suchen Sie in der Anzeige **Neues Projekt erstellen** nach „WPF“, und wählen Sie dann **WPF-App (.NET Core)** und anschließend **Weiter** aus.
+1. Suchen Sie im Bildschirm **Neues Projekt erstellen** nach „WPF“, und wählen Sie dann **WPF-App** und anschließend **Weiter** aus.
 
-   ![Vorlage für eine WPF-App im Dialogfeld „Neues Projekt erstellen“](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Screenshot: WPF-App-Vorlage im Dialogfeld „Neues Projekt erstellen“")
+   :::image type="content" source="media/vs-2019/explore-ide-new-project-csharp-vs-2019.png" alt-text="WPF-Anwendungsvorlage im Dialogfeld „Neues Projekt erstellen“":::
 
-   > [!NOTE]
-   > Möglicherweise finden Sie zwei WPF-Desktopvorlagen, eine für .NET Framework und eine weitere für .NET Core. Die .NET Core ist ab Visual Studio 2019 Version 16.3 verfügbar. Sie können eine beliebige Vorlage für dieses Tutorial verwenden, es wird jedoch empfohlen, .NET Core für neue Entwicklungen zu verwenden.
+1. Geben Sie dem Projekt im nächsten Bildschirm den Namen **HelloWPFApp**, und wählen Sie **Erstellen** aus.
 
-1. Geben Sie dem Projekt auf dem nächsten Bildschirm den Namen **HelloWPFApp**, und wählen Sie **Erstellen** aus.
+   :::image type="content" source="./media/vs-2019/explore-ide-name-project.png" alt-text="Projekt „HelloWPFApp“ nennen":::
 
-   ![Projekt „HelloWPFApp“ nennen](./media/vs-2019/exploreide-nameproject.png "Screenshot: Fenster zum Benennen des Projekts")
+1. Im Fenster **Zusätzliche Informationen** sollte **.NET Core 3.1** bereits als Zielframework ausgewählt sein. Falls nicht, wählen Sie **.NET Core 3.1** aus. Wählen Sie anschließend **Erstellen** aus.
+
+   :::image type="content" source="./media/vs-2019/wpf-target-framework.png" alt-text="Sicherstellen, dass im Fenster „Zusätzliche Informationen“ .NET Core 3.1 ausgewählt ist":::
 
 ::: moniker-end
 
