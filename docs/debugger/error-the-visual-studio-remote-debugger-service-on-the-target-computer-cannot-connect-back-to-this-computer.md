@@ -1,4 +1,5 @@
 ---
+description: Dieser Fehler besagt, dass der Remotedebugdienst unter einem Benutzerkonto ausgeführt wird, das beim Versuch, eine Verbindung mit dem Computer herzustellen, von dem aus Sie debuggen, nicht authentifiziert werden kann.
 title: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann die Verbindung mit diesem Computer nicht wiederherstellen
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef556e19946789abb5805727ccc42c1a9230d9af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a08f1a7638233e2633a34287aad500ee81245be6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871259"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146690"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Fehler: Der Visual Studio Remote Debugger-Dienst auf dem Zielcomputer kann die Verbindung mit diesem Computer nicht wiederherstellen
 Dieser Fehler besagt, dass der Remotedebugdienst unter einem Benutzerkonto ausgeführt wird, das beim Versuch, eine Verbindung mit dem Computer herzustellen, von dem aus Sie debuggen, nicht authentifiziert werden kann. Dieser Fehler kann auftreten, wenn Remotedebuggen mit der Legacydebug-Engine erfolgt und der Remotedebugger als Dienst ausgeführt wird.

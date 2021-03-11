@@ -1,6 +1,6 @@
 ---
 title: Debuggen eines selbstgehosteten WCF-Diensts | Microsoft-Dokumentation
-Description: Erfahren Sie, wie das Debuggen eines selbstgehosteten WCF-Diensts erfolgt. Die einfachste Möglichkeit (die aber nicht immer verfügbar ist) besteht darin, Visual Studio so zu konfigurieren, dass sowohl Client als auch Server gestartet werden.
+description: Erfahren Sie, wie das Debuggen eines selbstgehosteten WCF-Diensts erfolgt. Die einfachste Möglichkeit (die aber nicht immer verfügbar ist) besteht darin, Visual Studio so zu konfigurieren, dass sowohl Client als auch Server gestartet werden.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edcf359bd54774647ff1a5957d741fec25b60a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cd11966347cd90576eb78a59f6c7eb96cc697ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915810"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155080"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Vorgehensweise: Debuggen eines lokal gehosteten WCF-Diensts
 Ein *lokal gehosteter Dienst* ist ein WCF-Dienst, der nicht innerhalb von IIS, WCF-Diensthost oder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server ausgeführt wird. Der einfachste Weg zum Debuggen eines lokal gehosteten WCFs besteht darin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] für das Starten sowohl von Client als auch Server zu konfigurieren, wenn Sie im Menü **Debuggen** den Befehl **Debuggen starten** auswählen.

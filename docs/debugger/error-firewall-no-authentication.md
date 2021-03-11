@@ -1,4 +1,5 @@
 ---
+description: Die Internetverbindungsfirewall auf dem Remotecomputer wurde nicht für das Remotedebuggen eingerichtet.
 title: Firewall und „Keine Authentifizierung“ | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd1b0bc56c0316d3a79cf59f744a7e2b0a2aece
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2bb46b09af4f87ac93fd7001ff1de02a782ae263
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871610"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146989"
 ---
 # <a name="error-firewall-no-authentication"></a>Fehler: Firewall und „Keine Authentifizierung“
 Die Internetverbindungsfirewall auf dem Remotecomputer wurde nicht für das Remotedebuggen eingerichtet. Für das Remotedebuggen mit `No Authentication` muss der Ausnahmenliste die Datei msvsmon.exe hinzugefügt werden. Es ist möglicherweise auch erforderlich, einige IPSEC-Anschlüsse zu öffnen.

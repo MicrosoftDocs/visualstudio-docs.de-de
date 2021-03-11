@@ -1,4 +1,5 @@
 ---
+description: Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht
 title: marker_series::write_message-Methode | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5610cc623476fa395fae7bf68c2ffa127c96e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71a7e1783e470ee5ca1b7f1f18cd3d06cf1b5f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927898"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223874"
 ---
 # <a name="marker_serieswrite_message-method"></a>marker_series::write_message-Methode
 Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht
@@ -54,7 +55,7 @@ void write_message(
 
  `_Category`: die Kategorie.
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
  **Header:** *cvmarkersobj.h*
 
  **Namespace:** Concurrency::diagnostic

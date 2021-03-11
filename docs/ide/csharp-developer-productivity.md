@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3ac2e91ed9166a2eb8bdc4a19f2143c4fc71640
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942944"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161312"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Produktivitätsleitfaden für Visual Studio für C#-Entwickler
 
@@ -41,7 +41,7 @@ Einige Erweiterungen bieten auch Tastaturschemas an:
 
 Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 
-| Tastenkombination (Alle Profile) | Befehl | Beschreibung |
+| Tastenkombination (Alle Profile) | Get-Help | Beschreibung |
 |-|-|-|
 | **STRG**+**T** | Gehe zu allen | Navigieren zu einer beliebigen Datei-/Typ-/Member-/Symboldeklaration |
 | **F12** (oder **Strg**+**Klicken**) | Gehe zu Definition | Navigieren zum Ort, an dem ein Symbol definiert ist |
@@ -52,7 +52,7 @@ Im Folgenden finden Sie beliebte Tastenkombinationen für Visual Studio:
 | **STRG**+**D** | Zeile duplizieren | Die Codezeile, in der sich der Cursor befindet, wird dupliziert (verfügbar in **Visual Studio 2017 Version 15.6** und höher) |
 | **UMSCHALT**+**ALT**+ **+** / **-** | Erweitern/Reduzieren | Erweitert oder reduziert die aktuelle Auswahl im Editor (verfügbar in **Visual Studio 2017 Version 15.5** und höher) |
 | **UMSCHALTTASTE** + **ALT-TASTE** +  **.** | Nächste übereinstimmende Einfügemarken einfügen | Fügt eine Auswahl und die Einfügemarke an der nächsten Position ein, die der aktuellen Auswahl entspricht (verfügbar in **Visual Studio 2017-Version 15.8** und höher) |
-| **STRG**+**Q** | Suchen, | Durchsuchen aller Visual Studio-Einstellungen |
+| **STRG**+**Q** | Suchen | Durchsuchen aller Visual Studio-Einstellungen |
 | **F5** | Debugging starten | Debugging der Anwendung starten |
 | **Strg**+**F5** | Ohne Debuggen ausführen | Anwendung lokal ausführen, ohne Debuggen |
 | **Strg**+**K**,**D** (Standardprofil) oder **Strg**+**E**,**D** (C#-Profil) | Dokument formatieren | Bereinigt Formatierungsverstöße in Ihrer Datei anhand Ihrer Einstellungen für Zeilenumbruch, Abstand und Einzug |
@@ -143,10 +143,23 @@ Sie können auch [FxCop-Analysetools](../code-quality/install-fxcop-analyzers.md
 
 Mehrere Communitymitglieder haben kostenlose Erweiterungen geschrieben, die zusätzliche Codeüberprüfungen hinzufügen:
 
+::: moniker range="vs-2017"
+
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
 - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
 - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 - [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2019)
+- [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019)
+- [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
+- [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/)
+
+::: moniker-end
 
 ![Refactorings in Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
@@ -154,7 +167,7 @@ Mehrere Communitymitglieder haben kostenlose Erweiterungen geschrieben, die zus�
 
 Visual Studio weist viele Features zum Suchen und [Navigieren in Ihrer Codebasis](../ide/navigating-code.md) auf.
 
-| Feature | Tastenkombination | Details oder Verbesserungen |
+| Komponente | Verknüpfung | Details oder Verbesserungen |
 |- | - | -|
 | Alle Verweise suchen | **Umschalt**+**F12**| Ergebnisse werden farbig hervorgehoben und können nach Projekt, Definition und Verweistyp (z.B. „read“ (Lesen) oder „write“ (Schreiben)) gruppiert werden. Sie können Ergebnisse auch „sperren“. |
 | Gehe zu Implementierung | **Strg**+**F12** | Mit „Gehe zu Definition“ für das Schlüsselwort `override` können Sie zum überschriebenen Member navigieren. |
@@ -181,7 +194,7 @@ Ab Visual Studio 2017 gibt es zahlreiche Verbesserungen im Bereich der Funktione
 
 - [Live Unit Testing](../test/live-unit-testing.md) führt laufend Tests aus, die durch Ihre Codeänderungen beeinflusst werden, und aktualisiert Inline-Editor-Symbole, um Sie über den Status Ihres Tests zu informieren. Schließen Sie bestimmte Tests oder Testprojekte in Ihren aktiven Testsatz ein oder von diesem aus. (Nur Visual Studio Enterprise-Edition)
 
-## <a name="debugging"></a>Debugging
+## <a name="debugging"></a>Debuggen
 
 Funktionen zum Debuggen in Visual Studio:
 
@@ -226,7 +239,7 @@ Sie können mithilfe von Git oder der TFVC Ihren Code in Visual Studio speichern
 
 Hier ist eine Liste an Editor- und Produktivitätsfeatures zum einfacheren Schreiben von Code. Einige Features müssen aktiviert werden, da sie standardmäßig deaktiviert sind (sie führen möglicherweise Indizierungen auf dem Computer durch, sind kontrovers oder derzeit experimentell).
 
-| Feature | Details | Vorgehensweise zum Aktivieren |
+| Funktion | Details | Vorgehensweise zum Aktivieren |
 |-|-|-|
 | Suchen von Dateien im Projektmappen-Explorer | Markiert die aktive Datei im **Projektmappen-Explorer** | **Extras** > **Optionen** > **Projekte und Projektmappen** > **Aktives Element im Projektmappen-Explorer überwachen** |
 | Hinzufügen von using-Direktiven für Typen in Referenzassemblys und NuGet-Paketen | Zeigt eine Fehlerglühbirne mit einer Codefehlerbehebung zum Installieren eines NuGet-Pakets für einen nicht referenzierten Typ an. | **Extras** > **Optionen** > **Text-Editor** > **C#**  > **Erweitert** > **using-Direktiven für Typen in Referenzassemblys vorschlagen** und **using-Direktiven für Typen in NuGet-Paketen vorschlagen** |

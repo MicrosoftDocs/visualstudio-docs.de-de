@@ -1,6 +1,6 @@
 ---
 title: Debuggen von ASP.NET-Ausnahmen | Microsoft-Dokumentation
-Description: Lernen Sie, wie Sie den Debugger so konfigurieren, dass er bei unbehandelten Ausnahmen in Ihrer ASP.NET-Anwendung angehalten wird. Sie können sicherstellen, dass die Unterbrechung in Nicht-Systemcode auftritt.
+description: Lernen Sie, wie Sie den Debugger so konfigurieren, dass er bei unbehandelten Ausnahmen in Ihrer ASP.NET-Anwendung angehalten wird. Sie können sicherstellen, dass die Unterbrechung in Nicht-Systemcode auftritt.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebf53569e2c104b49acdadba36203f9d6409e215
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913253"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160420"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Vorgehensweise: Debuggen von ASP.NET-Ausnahmen
 Das Debuggen von Ausnahmen ist ein wichtiger Teil bei der Entwicklung einer robusten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung. Allgemeine Informationen zum Debuggen von Ausnahmen finden Sie unter [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md).

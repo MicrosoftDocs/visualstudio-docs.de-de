@@ -1,5 +1,6 @@
 ---
 title: 'DA0013: Umfangreiche Verwendung von String.Split/String.Substring | Microsoft-Dokumentation'
+description: Aufrufe der System.String.Split-Methode oder der System.String.Substring-Methode machen einen großen Teil der Profilerstellungsdaten aus.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5ec92544809a83825451494b01fd62a0868ee4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f4426a7bc249efacbd200ccd9847954a38e853e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916799"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469910"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Umfangreiche Verwendung von String.Split oder String.Substring
 

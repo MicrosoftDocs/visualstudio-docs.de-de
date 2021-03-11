@@ -1,5 +1,6 @@
 ---
 title: 'DA0039: Sehr hohes Maß an Sperrkonflikten | Microsoft-Dokumentation'
+description: Die zusammen mit den Profilerstellungsdaten erfassten Systemleistungsdaten deuten darauf hin, dass während der Anwendungsausführung ein übermäßig hohes Maß an Sperrkonflikten aufgetreten ist.
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4504a05eb8f3835f65c144c8a073304f2761b237
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 656f9dbc3994ed47e6d7cd8077191b23aa9ead6a
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886352"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465921"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Sehr hohes Maß an Sperrkonflikten
 

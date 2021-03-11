@@ -1,7 +1,7 @@
 ---
 title: Debuggen einer App, die nicht Teil einer Visual Studio-Projektmappe ist
 titleSuffix: ''
-Description: Informationen zum Debuggen einer App, die nicht Teil einer Visual Studio-Projektmappe ist. Möglicherweise können Sie den Visual Studio-Debugger anfügen.
+description: Informationen zum Debuggen einer App, die nicht Teil einer Visual Studio-Projektmappe ist. Möglicherweise können Sie den Visual Studio-Debugger anfügen.
 ms.custom: SEO-VS-2020
 ms.date: 02/21/2020
 ms.topic: how-to
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bbe6cac5d74d3767948f0c117539b95cbba570f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f201121eb65f7c045ac42783ac71b2d49fafd802
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913422"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155002"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Debuggen einer App, die nicht Teil einer Visual Studio-Projektmappe ist (C++, C#, Visual Basic, F#)
 
