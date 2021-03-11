@@ -1,4 +1,5 @@
 ---
+description: Sie können Tastenkombinationen für Visual Studio-Befehle nachschlagen, diese Tastenkombinationen anpassen und sie dann exportieren, damit andere Benutzer sie verwenden können.
 title: Identifizieren und Anpassen von Tastenkombinationen
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d78a86c64cd85ea8738ec9038c5e64642ca950
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935949"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221248"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
 
@@ -43,7 +44,7 @@ Wenn eine Tastenkombinationen einem Befehl im *globalen* Kontext und in keinem a
 
 ## <a name="identify-a-keyboard-shortcut"></a>Nachschlagen einer Tastenkombination
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
@@ -63,7 +64,7 @@ Wenn eine Tastenkombinationen einem Befehl im *globalen* Kontext und in keinem a
 
 ## <a name="customize-a-keyboard-shortcut"></a>Anpassen einer Tastenkombination
 
-1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus.
+1. Klicken Sie in der Menüleiste auf **Extras** > **Optionen**.
 
 2. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Tastatur**.
 
@@ -147,6 +148,6 @@ Standardmäßig werden die Tastenkombinationen in einer Datei im Ordner *%USERPR
 
    ![Nur angepasste Tastenkombinationen importieren](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Barrierefreiheitsfeatures in Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

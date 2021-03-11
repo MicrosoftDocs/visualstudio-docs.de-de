@@ -1,6 +1,6 @@
 ---
 title: Debuggen von Windows-API-Funktionen | Microsoft-Dokumentation
-Description: Erfahren Sie, wie Sie eine Windows-API-Funktion debuggen, in der NT-Symbole geladen sind. Sie verwenden im 32-Bit-Code die ergänzte Form des Funktionsnamens, um den Breakpoint festzulegen.
+description: Erfahren Sie, wie Sie eine Windows-API-Funktion debuggen, in der NT-Symbole geladen sind. Sie verwenden im 32-Bit-Code die ergänzte Form des Funktionsnamens, um den Breakpoint festzulegen.
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/03/2020
 ms.topic: how-to
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bd0a31f99812efefe937ce179b8f23d66c38d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d84bdc20ab4601798e1f967c1352468e750fa9bd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904291"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155212"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Wie können Funktionen der Windows-API gedebuggt werden?
 Wenn Sie eine Windows API-Funktion debuggen möchten, in der NT-Symbole geladen sind, müssen Sie wie im Folgenden beschrieben vorgehen.

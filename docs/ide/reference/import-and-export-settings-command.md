@@ -1,4 +1,5 @@
 ---
+description: Importiert oder exportiert Visual Studio-Einstellungen oder setzt diese zurück.
 title: Befehl Einstellungen importieren und exportieren
 ms.date: 11/21/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f2ea4811af2c44277b9a6dc285972c5267b28d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852452"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223671"
 ---
 # <a name="import-and-export-settings-command"></a>Befehl Einstellungen importieren und exportieren
 
@@ -30,21 +31,21 @@ Importiert oder exportiert Visual Studio-Einstellungen oder setzt diese zurück.
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>Schalter
+## <a name="switches"></a>Switches
 
 /export:`filename`
 
-Dies ist optional. Exportiert die aktuellen Einstellungen in eine angegebene Datei
+(Optional) Exportiert die aktuellen Einstellungen in eine angegebene Datei
 
 /import:`filename`
 
-Dies ist optional. Importiert die aktuellen Einstellungen in eine angegebene Datei
+(Optional) Importiert die aktuellen Einstellungen in eine angegebene Datei
 
 /reset
 
-Dies ist optional. Setzt die aktuellen Einstellungen zurück
+(Optional) Setzt die aktuellen Einstellungen zurück
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn Sie diesen Befehl ohne Schalter ausführen, wird der Assistent **Einstellungen importieren und exportieren** geöffnet. Weitere Informationen finden Sie unter [Synchronisieren der Einstellungen](../synchronized-settings-in-visual-studio.md) und [Umgebungseinstellungen](../environment-settings.md).
 

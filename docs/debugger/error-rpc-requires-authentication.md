@@ -1,4 +1,5 @@
 ---
+description: Der Visual Studio-Debugger kann keine Verbindung mit dem Remotecomputer herstellen.
 title: RPC verlangt Authentifizierung | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09901453fc602deaa509ceb15e4c571764d407a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f22998bc1c71a242b985739b2b92ba9743535d83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871373"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146716"
 ---
 # <a name="error-rpc-requires-authentication"></a>Fehler: RPC verlangt Authentifizierung
 Der Visual Studio-Debugger kann keine Verbindung mit dem Remotecomputer herstellen. Auf dem lokalen Computer ist eine RPC-Richtlinie aktiviert, die das Remotedebugging verhindert.

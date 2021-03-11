@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: Informationen zum Suchen und Herunterladen von Microsoft-Softwaretiteln in Visual Studio-Abonnements
-ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c53429f7fe7d88c1c75642d9f820c8a6fa444eb9
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92903633"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249283"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Herunterladen von Softwaretiteln in Visual Studio-Abonnements
 Je nachdem, über welches Visual Studio-Abonnement Sie verfügen, können Sie auf eine Vielzahl von Softwaretiteln zurückgreifen.  In diesem Artikel wird erläutert, wie Sie die benötigte Software suchen und finden, um Ihr Abonnement optimal zu nutzen. 
@@ -33,7 +33,7 @@ Wenn Sie z. B. **Visual Studio 2019** aus der Liste mit den Entwicklertools aus
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019: Downloads](_img/subscriber-downloads/vs2019-product-list.png "Wenn Sie ein Produkt auswählen, wird eine Liste der verfügbaren Versionen angezeigt.")
 
-Mithilfe der verfügbaren Dropdownmenüs können Sie ganz einfach eine Architektur, Ihre bevorzugte Sprache und den Dateityp auswählen. Wählen Sie Ihre bevorzugten Optionen aus, und klicken Sie dann auf **Herunterladen** , um mit dem Herunterladen des Produkts zu beginnen.
+Mithilfe der verfügbaren Dropdownmenüs können Sie ganz einfach eine Architektur, Ihre bevorzugte Sprache und den Dateityp auswählen. Wählen Sie Ihre bevorzugten Optionen aus, und klicken Sie dann auf **Herunterladen**, um mit dem Herunterladen des Produkts zu beginnen.
 
 > [!NOTE]
 > Nicht alle Titel sind in allen Architekturen, Sprachen oder Dateiformaten verfügbar.  
@@ -51,6 +51,9 @@ Im Bereich „Details“ können Sie die Registerkarte **Schlüssel** auswählen
 Sie können den blauen Schlüssel **Schlüssel abrufen** auswählen, um einen Product Key für den Download abzurufen. Alternativ können Sie, wenn Sie sich bereits im Bereich „Details“ befinden, auf der Registerkarte **Schlüssel** die Option **Claim key** (Schlüssel beanspruchen) auswählen.
 > [!div class="mx-imgBorder"]
 > ![Anfordern von Product Keys für Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Wählen Sie „Schlüssel beanspruchen“ aus, um verbleibende Schlüssel zu beanspruchen.")
+
+## <a name="resources"></a>Ressourcen
+- [Support für Visual Studio-Abonnements](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>Siehe auch
 - [Dokumentation zu Visual Studio](/visualstudio/)
