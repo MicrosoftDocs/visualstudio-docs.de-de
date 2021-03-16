@@ -119,6 +119,10 @@
           href: customizing-code-coverage-analysis.md
         - name: Problembehandlung bei der Code Coverage
           href: troubleshooting-code-coverage.md
+    - name: Migration
+      items:
+        - name: Upgrade von MSTestV1 auf MSTestV2
+          href: mstest-update-to-mstestv2.md
 - name: Live Unit Testing
   items:
     - name: Einführung
